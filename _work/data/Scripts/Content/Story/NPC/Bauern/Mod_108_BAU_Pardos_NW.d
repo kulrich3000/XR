@@ -1,7 +1,7 @@
 instance Mod_108_BAU_Pardos_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Pardos"; 
+	name 		= "pardos"; 
 	guild 		= GIL_NONE;
 	id 			= 108;
 	voice 		= 3;

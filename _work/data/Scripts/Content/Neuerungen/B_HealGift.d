@@ -53,12 +53,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Pflanzengift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Pflanzen.");
+					Print	("You are immune to the poison of plants.");
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.");
+					Print	("Your resistance to plant toxins has increased.");
 
 					Gewaechsgift += 1;
 
@@ -68,7 +68,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -121,12 +121,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Pilzgift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Pilzen.");
+					Print	("You're immune to the poison of mushrooms.");
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.");
+					Print	("Your resistance to plant toxins has increased.");
 
 					Gewaechsgift += 1;
 
@@ -136,7 +136,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -189,12 +189,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Pflanzengift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Pflanzen.");
+					Print	("You are immune to the poison of plants.");
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.");
+					Print	("Your resistance to plant toxins has increased.");
 
 					Gewaechsgift += 1;
 
@@ -204,7 +204,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -257,12 +257,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Pilzgift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Pilzen.");
+					Print	("You're immune to the poison of mushrooms.");
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.");
+					Print	("Your resistance to plant toxins has increased.");
 
 					Gewaechsgift += 1;
 
@@ -272,7 +272,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -325,12 +325,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Pilzgift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Pilzen.");
+					Print	("You're immune to the poison of mushrooms.");
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.");
+					Print	("Your resistance to plant toxins has increased.");
 
 					Gewaechsgift += 1;
 
@@ -340,7 +340,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -393,12 +393,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Pflanzengift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Pflanzen.");
+					Print	("You are immune to the poison of plants.");
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.");
+					Print	("Your resistance to plant toxins has increased.");
 
 					Gewaechsgift += 1;
 
@@ -408,7 +408,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -461,12 +461,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Pflanzengift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Pflanzen.");
+					Print	("You are immune to the poison of plants.");
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.");
+					Print	("Your resistance to plant toxins has increased.");
 
 					Gewaechsgift += 1;
 
@@ -476,7 +476,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -529,12 +529,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Pilzgift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Pilzen.");
+					Print	("You're immune to the poison of mushrooms.");
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.");
+					Print	("Your resistance to plant toxins has increased.");
 
 					Gewaechsgift += 1;
 
@@ -544,7 +544,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -596,12 +596,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Blutfliegengift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Blutfliegen.");
+					Print	("You're immune to the venom of blood flies.");
 				};
 
 				if (Tiergift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.");
+					Print	("Your resistance to animal toxins has increased.");
 
 					Tiergift += 1;
 
@@ -611,7 +611,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -663,12 +663,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Sumpfgasdrohnengift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Sumpfgasdrohnen.");
+					Print	("You're immune to the poison of swamp gas drones.");
 				};
 
 				if (Tiergift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.");
+					Print	("Your resistance to animal toxins has increased.");
 
 					Tiergift += 1;
 
@@ -678,7 +678,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -730,12 +730,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Minecrawlergift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Minecrawlern.");
+					Print	("You're immune to the poison of minecrawlers.");
 				};
 
 				if (Tiergift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.");
+					Print	("Your resistance to animal toxins has increased.");
 
 					Tiergift += 1;
 
@@ -745,7 +745,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -797,12 +797,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Minecrawlergift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Minecrawlern.");
+					Print	("You're immune to the poison of minecrawlers.");
 				};
 
 				if (Tiergift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.");
+					Print	("Your resistance to animal toxins has increased.");
 
 					Tiergift += 1;
 
@@ -812,7 +812,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -864,12 +864,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Sumpfhaigift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Sumpfhaien.");
+					Print	("You're immune to the poison of swamp sharks.");
 				};
 
 				if (Tiergift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.");
+					Print	("Your resistance to animal toxins has increased.");
 
 					Tiergift += 1;
 
@@ -879,7 +879,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -931,12 +931,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Sumpfgasdrohnengift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Sumpfgasdrohnen.");
+					Print	("You're immune to the poison of swamp gas drones.");
 				};
 
 				if (Tiergift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.");
+					Print	("Your resistance to animal toxins has increased.");
 
 					Tiergift += 1;
 
@@ -946,7 +946,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -998,12 +998,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Blutfliegengift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Blutfliegen.");
+					Print	("You're immune to the venom of blood flies.");
 				};
 
 				if (Tiergift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.");
+					Print	("Your resistance to animal toxins has increased.");
 
 					Tiergift += 1;
 
@@ -1013,7 +1013,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -1065,12 +1065,12 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Minecrawlergift += 1;
 
-					Print	("Du bist Immun gegenüber dem Gift von Minecrawlern.");
+					Print	("You're immune to the poison of minecrawlers.");
 				};
 
 				if (Tiergift < 4)
 				{
-					Print	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.");
+					Print	("Your resistance to animal toxins has increased.");
 
 					Tiergift += 1;
 
@@ -1080,7 +1080,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 						{
 							Gift += 1;
 
-							Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+							Print	("Your resistance to toxins has increased.");
 						};
 					};
 				};
@@ -1129,13 +1129,13 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Giftdampf += 1;
 
-					Print	("Deine Resistenzen gegenüber giftigen Dämpfen sind gestiegen.");
+					Print	("Your resistance to poisonous vapours has increased.");
 				}
 				else if (Giftdampf < 4)
 				{
 					Giftdampf += 1;
 
-					Print	("Du hast die höchste Widerstandkraft gegenüber giftigen Dämpfen erreicht.");
+					Print	("You have the highest resistance to poisonous vapors.");
 				};
 
 				if ((Gewaechsgift+Tiergift+Giftdampf)%3 == 0)
@@ -1144,7 +1144,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 					{
 						Gift += 1;
 
-						Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+						Print	("Your resistance to toxins has increased.");
 					};
 				};
 			};
@@ -1192,13 +1192,13 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Giftdampf += 1;
 
-					Print	("Deine Resistenzen gegenüber giftigen Dämpfen sind gestiegen.");
+					Print	("Your resistance to poisonous vapours has increased.");
 				}
 				else if (Giftdampf < 4)
 				{
 					Giftdampf += 1;
 
-					Print	("Du hast die höchste Widerstandkraft gegenüber giftigen Dämpfen erreicht.");
+					Print	("You have the highest resistance to poisonous vapors.");
 				};
 
 				if ((Gewaechsgift+Tiergift+Giftdampf)%3 == 0)
@@ -1207,7 +1207,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 					{
 						Gift += 1;
 
-						Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+						Print	("Your resistance to toxins has increased.");
 					};
 				};
 			};
@@ -1255,13 +1255,13 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Giftdampf += 1;
 
-					Print	("Deine Resistenzen gegenüber giftigen Dämpfen sind gestiegen.");
+					Print	("Your resistance to poisonous vapours has increased.");
 				}
 				else if (Giftdampf < 4)
 				{
 					Giftdampf += 1;
 
-					Print	("Du hast die höchste Widerstandkraft gegenüber giftigen Dämpfen erreicht.");
+					Print	("You have the highest resistance to poisonous vapors.");
 				};
 
 				if ((Gewaechsgift+Tiergift+Giftdampf)%3 == 0)
@@ -1270,7 +1270,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 					{
 						Gift += 1;
 
-						Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+						Print	("Your resistance to toxins has increased.");
 					};
 				};
 			};
@@ -1318,13 +1318,13 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 				{
 					Giftdampf += 1;
 
-					Print	("Deine Resistenzen gegenüber giftigen Dämpfen sind gestiegen.");
+					Print	("Your resistance to poisonous vapours has increased.");
 				}
 				else if (Giftdampf < 4)
 				{
 					Giftdampf += 1;
 
-					Print	("Du hast die höchste Widerstandkraft gegenüber giftigen Dämpfen erreicht.");
+					Print	("You have the highest resistance to poisonous vapors.");
 				};
 
 				if ((Gewaechsgift+Tiergift+Giftdampf)%3 == 0)
@@ -1333,7 +1333,7 @@ FUNC VOID B_HealGift (var int GiftHeal, var int KrankheitHeal)
 					{
 						Gift += 1;
 
-						Print	("Deine Widerstandskraft gegenüber Giften ist gestiegen.");
+						Print	("Your resistance to toxins has increased.");
 					};
 				};
 			};

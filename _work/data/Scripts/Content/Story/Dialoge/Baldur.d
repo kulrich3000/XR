@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Baldur_Hi (C_INFO)
 	information	= Info_Mod_Baldur_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Wie kann man dich nennen?";
+	description	= "Hello! What do they call you?";
 };
 
 FUNC INT Info_Mod_Baldur_Hi_Condition()
@@ -16,15 +16,15 @@ FUNC INT Info_Mod_Baldur_Hi_Condition()
 
 FUNC VOID Info_Mod_Baldur_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baldur_Hi_15_00"); //Hallo! Wie kann man dich nennen?
-	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_01"); //Ich bin Baldur, Jäger im Dienste der Druiden und Waldläufer.
-	AI_Output(hero, self, "Info_Mod_Baldur_Hi_15_02"); //Waldläufer? Druiden? Was ...
-	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_03"); //Waldläufer sind eigentlich auch Jäger, aber sie haben sich zum Teil auf Nahkampf festgelegt.
-	AI_Output(hero, self, "Info_Mod_Baldur_Hi_15_04"); //Und die Druiden?
-	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_05"); //Das sind die Oberhäupter der Waldläufer. Und auch aller Jäger.
-	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_06"); //Weise Männer, die sich auch in Heilkunde und Magie auskennen.
-	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_07"); //Sie jagen nicht und kämpfen selten, sind naturverbunden und beten zu Adanos.
-	AI_Output(hero, self, "Info_Mod_Baldur_Hi_15_08"); //Interessant! Danke für deine Auskunft.
+	AI_Output(hero, self, "Info_Mod_Baldur_Hi_15_00"); //Hello! What do they call you?
+	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_01"); //I am Baldur, hunter in the service of the druids and rangers.
+	AI_Output(hero, self, "Info_Mod_Baldur_Hi_15_02"); //Ranger? Druids? What...?
+	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_03"); //Rangers are also hunters, but they are partly committed to close combat.
+	AI_Output(hero, self, "Info_Mod_Baldur_Hi_15_04"); //And the Druids?
+	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_05"); //These are the leaders of the Rangers. And also all hunters.
+	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_06"); //Wise men who know their way around medicine and magic.
+	AI_Output(self, hero, "Info_Mod_Baldur_Hi_08_07"); //They don't hunt and fight rarely, they are nature-loving and pray to Adanos.
+	AI_Output(hero, self, "Info_Mod_Baldur_Hi_15_08"); //Interesting! Thanks for the information.
 };
 
 INSTANCE Info_Mod_Baldur_CyrcoMine (C_INFO)
@@ -35,7 +35,7 @@ INSTANCE Info_Mod_Baldur_CyrcoMine (C_INFO)
 	information	= Info_Mod_Baldur_CyrcoMine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "He Baldur! Du warst doch vorhin beim Kampf dabei.";
+	description	= "Hey Baldur! You were in the fight earlier.";
 };
 
 FUNC INT Info_Mod_Baldur_CyrcoMine_Condition()
@@ -48,10 +48,10 @@ FUNC INT Info_Mod_Baldur_CyrcoMine_Condition()
 
 FUNC VOID Info_Mod_Baldur_CyrcoMine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baldur_CyrcoMine_15_00"); //He Baldur! Du warst doch vorhin beim Kampf dabei.
-	AI_Output(self, hero, "Info_Mod_Baldur_CyrcoMine_08_01"); //Das will  ich meinen! Diese Bande haben wir aber aufgemischt!
-	AI_Output(hero, self, "Info_Mod_Baldur_CyrcoMine_15_02"); //Hast du Lust auf eine zweite Runde? Hab noch 'ne Mission.
-	AI_Output(self, hero, "Info_Mod_Baldur_CyrcoMine_08_03"); //Ne, lass mal. Hab mich am Arm verletzt. Besser nicht.
+	AI_Output(hero, self, "Info_Mod_Baldur_CyrcoMine_15_00"); //Hey Baldur! You were in the fight earlier.
+	AI_Output(self, hero, "Info_Mod_Baldur_CyrcoMine_08_01"); //That's what I mean! That's a bunch we've got!
+	AI_Output(hero, self, "Info_Mod_Baldur_CyrcoMine_15_02"); //You up for another round? I got another mission.
+	AI_Output(self, hero, "Info_Mod_Baldur_CyrcoMine_08_03"); //No, let it go. I hurt my arm. Better not.
 };
 
 INSTANCE Info_Mod_Baldur_Felle (C_INFO)
@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Baldur_Felle (C_INFO)
 	information	= Info_Mod_Baldur_Felle_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Alchemist braucht frische Felle.";
+	description	= "The alchemist needs fresh skins.";
 };
 
 FUNC INT Info_Mod_Baldur_Felle_Condition()
@@ -75,10 +75,10 @@ FUNC INT Info_Mod_Baldur_Felle_Condition()
 
 FUNC VOID Info_Mod_Baldur_Felle_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baldur_Felle_15_00"); //Der Alchemist braucht frische Felle.
-	AI_Output(self, hero, "Info_Mod_Baldur_Felle_08_01"); //Da liegt ein Haufen. Bedien dich.
-	AI_Output(hero, self, "Info_Mod_Baldur_Felle_15_02"); //Ich nehm mal 10 Stück.
-	AI_Output(self, hero, "Info_Mod_Baldur_Felle_08_03"); //Nur zu. Brauch ich sie nicht runterschleppen.
+	AI_Output(hero, self, "Info_Mod_Baldur_Felle_15_00"); //The alchemist needs fresh skins.
+	AI_Output(self, hero, "Info_Mod_Baldur_Felle_08_01"); //There's a pile of them. Help yourself.
+	AI_Output(hero, self, "Info_Mod_Baldur_Felle_15_02"); //I'll have 10 pieces.
+	AI_Output(self, hero, "Info_Mod_Baldur_Felle_08_03"); //Go right ahead. I don't need to drag her down.
 
 	AI_GotoWP	(hero, "WP_JL_14");
 
@@ -87,7 +87,7 @@ FUNC VOID Info_Mod_Baldur_Felle_Info()
 	CreateInvItems	(hero, ItAt_Wolffur, 5);
 	CreateInvItems	(hero, ItAt_WargFur, 5);
 
-	B_ShowGivenThings	("5 Wolf- und Wargfelle erhalten");
+	B_ShowGivenThings	("5 Wolf- and warning furs preserved");
 };
 
 INSTANCE Info_Mod_Baldur_AlterMann (C_INFO)
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Baldur_AlterMann (C_INFO)
 	information	= Info_Mod_Baldur_AlterMann_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wegen altem Mann im Wald fragen.";
+	description	= "Ask about old man in the woods.";
 };
 
 FUNC INT Info_Mod_Baldur_AlterMann_Condition()
@@ -116,54 +116,54 @@ FUNC VOID Info_Mod_Baldur_AlterMann_Info()
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN01");
 
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_00"); //Ahh, du meinst den alten Mann des Waldes. Ja, etwas weiß ich über ihn.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_01"); //Er soll Jahrhunderte alt sein und die Tiere des Waldes Rund um Khorata behüten.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_02"); //Zwar sagt man, er sei blind, jedoch gleichzeitig auch magisch begabt.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_03"); //Mehr fällt mir gerade nicht ein. Vielleicht weiß ein anderer mehr.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_00"); //Ahh, you mean the old man of the woods. Yeah, I know something about him.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_01"); //It is said to be centuries old and to protect the animals of the forest around Khorata.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_02"); //It is said that he is blind, but at the same time he has a magical talent.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_03"); //That's all I can think of right now. Maybe someone else knows more.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Von dem ersten Waldläufer erfuhr ich nicht viel Neues. Der alte Mann des Waldes, behütet die Tiere, er ist uralt, blind und magisch begabt. Vielleicht weiß ein anderer Waldläufer mehr.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "From the first ranger I didn't get much new information. The old man of the forest, protecting the animals, he is ancient, blind and magical. Maybe another ranger knows more.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 1)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN02");
 
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_04"); //Der alte Mann des Waldes? Ja, ich hörte er solle einst ein Diener Adanos gewesen sein.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_05"); //Wobei unklar ist, ob er ein Waldläufer war wie wir, ein Magier des Wassers, oder ein Verwandlungsmagier.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_06"); //Seine magischen Fähigkeiten, wie auch seine starke Bindung zur Tier- und Pflanzenwelt zeugen davon, dass er von allem etwas hat.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_04"); //The old man of the forest? Yes, I heard he was once a servant of Adano.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_05"); //It is unclear whether he was a ranger like us, a magician of water, or a transforming mage.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_06"); //His magical abilities, as well as his strong attachment to the animal and plant world are proof that he has something of everything.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Beim 2ten Waldläufer erfuhr ich auch nicht viel wissenswertes. Der alte Mann des Waldes soll Adanos und der Schöpfung verbunden sein, allem voran der Tier und Pflanzenwelt.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "At the 2nd ranger I also didn't learn much worth knowing. The old man of the forest is said to be connected with Adanos and creation, especially the animals and plants.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 2)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN03");
 
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_07"); //Tja, viel kann ich dir nicht über ihn verraten.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_08"); //Das Problem besteht auch darin, dass er mit keinem Menschen spricht, nicht mal mit uns, auch, wenn wir eigentlich ähnliche Ziele verfolgen.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_09"); //Allein mit den Tieren des Waldes unterhält er sich.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_10"); //Tja, wenn ich ein Keiler wäre, könnte ich dir bestimmt mehr über ihn verraten.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_07"); //Well, I can't tell you much about him.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_08"); //The problem is also that he does not talk to anyone, not even us, even if we are pursuing similar goals.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_09"); //Alone with the animals of the forest he entertains himself.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_10"); //Well, if I were a boar, I'm sure I could tell you more about him.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, das könnte ein wichtiger Hinweis gewesen sein. Der alte Mann des Waldes meidet Menschen gänzlich, spricht nur mit Tieren.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, this could have been an important clue. The old man of the forest completely avoids humans, only speaks to animals.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 3)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN04");
 
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_11"); //Der alte Mann des Waldes? Nun, er soll in enger Beziehung zur Tier- und Pflanzenwelt stehen.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_12"); //Man sagt, er leite Rudeltiere wie Keiler, oder Wölfe dazu an, den Wald gegen Eindringlinge zu beschützen.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_13"); //Selbst, so sagt man, fände man ihn häufig in Gestalt eines grünen Wolfes vor.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_11"); //The old man of the forest? Well, he's supposed to be closely related to the fauna and flora.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_12"); //It is said that he leads pack animals such as boar or wolves to protect the forest against intruders.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_13"); //Even it is said that it is often found in the shape of a green wolf.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Er soll vor allem auch größere Rudeltiere wie Keiler und Wölfe dazu anleiten den Wald gegen Eindringlinge zu beschützen.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Above all, he should also instruct larger pack animals such as boar and wolves to protect the forest against intruders.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 4)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN05");
 
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_14"); //Du interessierst dich für Geschichten über den alten Mann des Waldes?
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_15"); //Nun, viel weiß ich nicht über diesen mystischen Kauz.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_16"); //Er soll sich meistens im dunklen Wald aufhalten, aber auch immer in der Nähe von Gewässern, wie Seen.
-		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_17"); //Selten hat ihn jemand zu Gesicht bekommen ...
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_14"); //You're interested in stories about the old man of the forest?
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_15"); //Well, I don't know much about this mystical oddball.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_16"); //It is said to reside mostly in the dark forest, but also near water bodies such as lakes.
+		AI_Output(self, hero, "Info_Mod_Baldur_AlterMann_08_17"); //Rarely has someone seen him....
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Man findet ihn höchst wahrscheinlich im dichten Wald Khorata’s in der Nähe eines Sees.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "It is most likely to be found in Khorata's dense forest near a lake.");
 	};
 
 	Mod_BDT_AlterWaldMann += 1;

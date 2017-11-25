@@ -1,7 +1,7 @@
 instance Mod_7334_HS_Typ_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königliches Hunderfutter";
+	name 		= "Royal dog food";
 	guild 		= GIL_OUT;
 	id 			= 7334;
 	voice 		= 6;

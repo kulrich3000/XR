@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Undead(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Untoter Drache";
+	name							=	"Undead Dragon";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_UNDEAD;
 	level							=	100;
@@ -90,7 +90,7 @@ INSTANCE Dragon_Undead_Mini	(Mst_Default_Dragon_Undead)
 {
 	B_SetVisuals_Dragon_Undead();
 	flags				   			= 	0;
-	name							=	"Kleiner Untoter Drache";
+	name							=	"Small Undead Dragon";
 	level							=	40;
 
 	Mdl_SetModelScale(self, 0.5, 0.5, 0.5);

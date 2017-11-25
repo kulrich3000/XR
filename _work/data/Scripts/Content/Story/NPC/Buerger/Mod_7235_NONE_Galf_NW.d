@@ -1,7 +1,7 @@
 instance Mod_7235_NONE_Galf_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Galf"; 
+	name 		= "eel"; 
 	guild 		= GIL_PAL;
 	id 			= 7235;
 	voice 		= 9;

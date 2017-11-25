@@ -15,19 +15,19 @@ FUNC INT Info_Mod_Saturas_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_00"); //Was machst du hier? Augenblick mal ... du!?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_00"); //What are you doing here? Wait a minute... you!?
 
 	B_ReadySpell	(self, SPL_Icecube, SPL_Cost_IceCube);
 
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Hi_15_01"); //Ähh, ich ...
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_02"); //Nach dem, was du dir im neuen Lager geleistet hast, wagst du dich tatsächlich her?!
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_03"); //Sei froh, dass Milten für dich gebürgt hat und du ein Vertrauter von Xardas bist, dem höchsten Priester Beliars.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_04"); //Und würden die Umstände vom Fall der Barriere für uns nicht im Dunkeln liegen und somit deine Einflussnahme darauf auch nicht völlig ausschließen, ...
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_05"); //... dann solltest du noch in diesem Augenblick zu Eis erstarren und von Blitzen in tausend Stücke zersprengt werden.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Hi_15_01"); //Uh, I--
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_02"); //After what you've achieved in the new camp, do you really dare to come here?!
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_03"); //Be glad that Milten has vouched for you and that you are a confidant of Xardas, the highest priest of Beliar.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_04"); //And would the circumstances of the fall of the barrier for us not lie in the dark and therefore your influence on it not completely exclude,...
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_05"); //... you should freeze to ice and be blown to pieces by lightning.
 
 	AI_RemoveWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_06"); //Pass also von nun an gut auf, was du machst!
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Hi_14_06"); //So from now on, take good care of what you're doing!
 };
 
 INSTANCE Info_Mod_Saturas_NW_Soeldner (C_INFO)
@@ -38,7 +38,7 @@ INSTANCE Info_Mod_Saturas_NW_Soeldner (C_INFO)
 	information	= Info_Mod_Saturas_NW_Soeldner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich gehöre zu den Söldnern.";
+	description	= "I'm with the mercenaries.";
 };
 
 FUNC INT Info_Mod_Saturas_NW_Soeldner_Condition()
@@ -52,8 +52,8 @@ FUNC INT Info_Mod_Saturas_NW_Soeldner_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Soeldner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Soeldner_15_00"); //Ich gehöre zu den Söldnern.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Soeldner_14_01"); //Dann seh' dich hier ruhig um, aber mach keinen Unfug.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Soeldner_15_00"); //I'm with the mercenaries.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Soeldner_14_01"); //Then take a good look around, but don't do anything stupid.
 };
 
 INSTANCE Info_Mod_Saturas_NW_RDW (C_INFO)
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Saturas_NW_RDW (C_INFO)
 	information	= Info_Mod_Saturas_NW_RDW_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich gehöre zum Ring des Wassers.";
+	description	= "I belong to the Ring of Water.";
 };
 
 FUNC INT Info_Mod_Saturas_NW_RDW_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mod_Saturas_NW_RDW_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_RDW_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_RDW_15_00"); //Ich gehöre zum Ring des Wassers.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_RDW_14_01"); //Du hast dich also uns angeschlossen. Ich hoffe du machst keinen Unfug.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_RDW_15_00"); //I belong to the Ring of Water.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_RDW_14_01"); //So you joined us. I hope you're not fooling around.
 };
 
 INSTANCE Info_Mod_Saturas_NW_Brief (C_INFO)
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Saturas_NW_Brief (C_INFO)
 	information	= Info_Mod_Saturas_NW_Brief_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab einen Brief von Xardas für dich.";
+	description	= "I got a letter for you from Xardas.";
 };
 
 FUNC INT Info_Mod_Saturas_NW_Brief_Condition()
@@ -105,13 +105,13 @@ FUNC INT Info_Mod_Saturas_NW_Brief_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Brief_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Brief_15_00"); //Ich hab hier einen Brief von Xardas für dich.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Brief_15_00"); //I got a letter from Xardas for you.
 
 	B_GiveInvItems	(hero, self, XardasLetterForSaturas_Geoeffnet, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Brief_14_01"); //Sehr interessant. Gut, du kannst hier bleiben, solltest du jedoch Unfug machen werde ich dich töten.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Brief_14_01"); //Very interesting. Well, you can stay here, but if you make mischief, I will kill you.
 };
 
 INSTANCE Info_Mod_Saturas_NW_Portal (C_INFO)
@@ -122,7 +122,7 @@ INSTANCE Info_Mod_Saturas_NW_Portal (C_INFO)
 	information	= Info_Mod_Saturas_NW_Portal_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe von einem Portal gehört.";
+	description	= "I heard about a portal.";
 };
 
 FUNC INT Info_Mod_Saturas_NW_Portal_Condition()
@@ -136,13 +136,13 @@ FUNC INT Info_Mod_Saturas_NW_Portal_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Portal_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Portal_15_00"); //Ich habe von einem Portal gehört.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Portal_14_01"); //Das ist richtig, wir haben bei unseren Ausgrabungen ein Portal gefunden.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Portal_14_02"); //Allerdings ist es verschlossen und wir haben noch keinen Weg gefunden es zu öffnen.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Portal_15_00"); //I heard about a portal.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Portal_14_01"); //That's right, we found a portal during our excavations.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Portal_14_02"); //However, it's locked and we haven't found a way to open it yet.
 
 	Log_CreateTopic	(TOPIC_MOD_PORTAL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PORTAL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Saturas hat das Gerücht um ein Portal bestätigt und gesagt, das sie noch keinen Weg gefunden haben das Portal zu öffnen.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Saturas has confirmed the rumor about a portal and said that they have not yet found a way to open the portal.");
 };
 
 INSTANCE Info_Mod_Saturas_NW_DurchsPortal (C_INFO)
@@ -153,7 +153,7 @@ INSTANCE Info_Mod_Saturas_NW_DurchsPortal (C_INFO)
 	information	= Info_Mod_Saturas_NW_DurchsPortal_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich auch durchs Portal gehen wenn es geöffnet ist?";
+	description	= "Can I go through the portal when it is open?";
 };
 
 FUNC INT Info_Mod_Saturas_NW_DurchsPortal_Condition()
@@ -166,10 +166,10 @@ FUNC INT Info_Mod_Saturas_NW_DurchsPortal_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_DurchsPortal_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_DurchsPortal_15_00"); //Kann ich auch durchs Portal gehen wenn es geöffnet ist?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_DurchsPortal_14_01"); //Du kannst mitkommen, aber du solltest aufpassen. Wir wissen nicht was uns dort erwartet.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_DurchsPortal_15_00"); //Can I go through the portal when it is open?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_DurchsPortal_14_01"); //You can come with me, but you should be careful. We don't know what awaits us there.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Saturas hat mir gestattet mit durchs Portal zu gehen sobald es geöffnet ist.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Saturas allowed me to go through the portal as soon as it was opened.");
 };
 
 INSTANCE Info_Mod_Saturas_NW_WieOeffnen (C_INFO)
@@ -180,7 +180,7 @@ INSTANCE Info_Mod_Saturas_NW_WieOeffnen (C_INFO)
 	information	= Info_Mod_Saturas_NW_WieOeffnen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was können wir tun um das Tor zu öffnen?";
+	description	= "What can we do to open the gate?";
 };
 
 FUNC INT Info_Mod_Saturas_NW_WieOeffnen_Condition()
@@ -193,11 +193,11 @@ FUNC INT Info_Mod_Saturas_NW_WieOeffnen_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_WieOeffnen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_WieOeffnen_15_00"); //Was können wir tun um das Tor zu öffnen?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_WieOeffnen_14_01"); //Geh mal zu Nefarius, er ist gerade dabei die Inschriften in den Wänden zu übersetzen.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_WieOeffnen_14_02"); //Vielleicht hat er inzwischen etwas Neues herausgefunden.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_WieOeffnen_15_00"); //What can we do to open the gate?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_WieOeffnen_14_01"); //Go to Nefarius, he's about to translate the inscriptions on the walls.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_WieOeffnen_14_02"); //Maybe he's come up with something new by now.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Saturas hat mich zu Nefarius geschickt. Ich soll mich bei ihm erkundigen ob es was neues gibt.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Saturas sent me to Nefarius. I'm supposed to check with him to see if there's anything new.");
 };
 
 INSTANCE Info_Mod_Saturas_NW_Argez (C_INFO)
@@ -221,36 +221,36 @@ FUNC INT Info_Mod_Saturas_NW_Argez_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Argez_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_00"); //Ah, da wäre noch eine Sache, bei der du uns helfen kannst.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_01"); //Dafür, dass ich dich so enttäuscht habe, hast du jetzt ganz schön viel zu tun für mich.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_02"); //Sieh es als Wiedergutmachung.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_03"); //Nun aber zur Sache: Vor kurzem hat es vor den Stadtmauern Khorinis' eine schwere magische Anomalie gegeben.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_04"); //Sie war so stark, dass die Mächtigsten unter den Magiern von jähen Visionen heimgesucht wurden.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_05"); //Wodurch wurde diese Anomalie ausgelöst?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_06"); //Das herauszufinden wird deine Aufgabe sein. Aber ich befürchte das Schlimmste.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_07"); //Die Art der Magie fühlte sich ... dunkel an, auch wenn ich Vergleichbares noch nie gespürt habe.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_08"); //Zusammen mit der Intensität vermute ich, dass sich zu jenem Zeitpunkt einer unserer stärksten Feinde kurz vor der Stadt aufgehalten hat.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_09"); //Sollte es sich bestätigen, wären die Menschen dort nicht mehr sicher.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_10"); //Woher weißt du, dass die Anomalie vor den Stadtmauern von Khorinis aufgetreten ist?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_11"); //Ich war einer derjenigen, die von der Vision überrascht wurden.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_12"); //Sie war zu undeutlich, um sie genau lokalisieren zu können, aber ich erkannte deutlich die Stadtmauern in nur wenigen Metern Entfernung.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_13"); //Du musst herausfinden, wer oder was diese Anomalie ausgelöst hat!
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_14"); //(ironisch) Kein Problem. Ich schätze, ich frage mal rum, wer dort in letzter Zeit schwarze Magie angewandt hat.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_15"); //Ein wenig mehr Ernst, bitte.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_16"); //Es gibt ein einfaches Mittel zum Aufspüren von magischen Anomalien. Ich habe es in diesem Tempel gefunden.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_00"); //Ah, there's one more thing you can help us with.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_01"); //For disappointing you so badly, you've got a lot of work to do for me now.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_02"); //Consider it restitution.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_03"); //But let's get to the point: A severe magical anomaly recently occurred outside the walls of Khorini's city walls.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_04"); //It was so strong that the mightiest of the magicians were haunted by sudden visions.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_05"); //What triggered this anomaly?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_06"); //Finding out will be your job. But I fear the worst.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_07"); //The kind of magic felt like.... even though I've never felt anything like it before.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_08"); //Together with the intensity, I suspect that at that time one of our strongest enemies was just outside the city.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_09"); //If it were true, the people there would no longer be safe.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_10"); //How do you know the anomaly occurred outside the walls of Khorinis?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_11"); //I was one of those surprised by the vision.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_12"); //It was too vague to be able to locate them precisely, but I clearly recognized the city walls only a few metres away.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_13"); //You need to find out who or what caused this anomaly!
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_14"); //(ironic) No problem. Guess I'll just ask around who's been using black magic there lately.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_15"); //A little more serious, please.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_16"); //There's a simple means of detecting magical anomalies. I found it in this temple.
 
 	B_GiveInvItems	(self, hero, ItAm_Anomalie, 1);
 
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_17"); //Ich will das Amulett zurück haben, also verkaufe es bloß nicht und pass darauf auf!
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_18"); //Um es zu benutzen, musst du es lediglich anlegen. Sobald du dich der Stelle näherst, an der die Anomalie ausgelöst wurde, wirst du eine Vision des Hergangs erhalten.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_19"); //Diese ist hoffentlich eindeutiger als die, die wir Magier erlebt haben.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_20"); //Kein Problem. Ich laufe also mit dem Ding hier einfach die Stadtmauer von Khorinis ab?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_21"); //Das sollte genügen, ja. Je früher du dich darum kümmerst, desto besser.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_22"); //Schon verstanden.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_17"); //I want the amulet back, so don't sell it and take care of it!
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_18"); //To use it, all you have to do is put it on. As soon as you approach the location where the anomaly was triggered, you will receive a vision of the process.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_19"); //This is hopefully more explicit than the ones we have experienced.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_20"); //No problem. So I just walk this thing around the city walls of Khorinis?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez_14_21"); //That should do it, yes. The sooner you take care of it, the better.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez_15_22"); //Roger that.
 
 	Log_CreateTopic	(TOPIC_MOD_DUNKLEMAGIE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DUNKLEMAGIE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DUNKLEMAGIE, "Irgendwo vor den Stadtmauern von Khorinis hat es eine schwere magische Anomalie gegeben. Saturas hat mir aufgetragen, die Stadtmauern von außen abzulaufen. Um die Anomalie orten zu können, muss ich das Amulett des Unsichtbaren tragen. Sobald ich am richtigen Ort stehe, wird es dafür sorgen, dass ich einen kurzen Blick in die Vergangenheit werfen kann.");
+	B_LogEntry	(TOPIC_MOD_DUNKLEMAGIE, "Somewhere outside the walls of Khorinis there has been a severe magical anomaly. Satan told me to leave the city walls from the outside. To locate the anomaly, I have to wear the Invisible Man's amulet. As soon as I'm in the right place, it will make sure that I can take a quick look at the past.");
 };
 
 INSTANCE Info_Mod_Saturas_NW_Argez2 (C_INFO)
@@ -261,7 +261,7 @@ INSTANCE Info_Mod_Saturas_NW_Argez2 (C_INFO)
 	information	= Info_Mod_Saturas_NW_Argez2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe herausgefunden, wer für die Anomalie verantwortlich ist.";
+	description	= "I found out who's responsible for the anomaly.";
 };
 
 FUNC INT Info_Mod_Saturas_NW_Argez2_Condition()
@@ -275,29 +275,29 @@ FUNC INT Info_Mod_Saturas_NW_Argez2_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Argez2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_00"); //Ich habe herausgefunden, wer für die Anomalie verantwortlich ist.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_01"); //Tatsächlich? Wer ist es?
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_02"); //Sein Name ist Argez. Ich habe ihn vor Khorinis getroffen und ihm geholfen, in die Stadt zu gelangen.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_03"); //An der Stelle der Anomalie stand plötzlich ein Zombie, der uns angriff, und er verteidigte uns mit diesem Zauber.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_04"); //Du hast ihm in die Stadt geholfen?
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_05"); //Er gab vor, sein Gedächtnis verloren zu haben. Ich habe nichts Böses in ihm erkannt, im Gegenteil.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_06"); //Hmm, eine verdächtige Persönlichkeit allemal.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_07"); //(überlegt) Meinst du, du schaffst es, ihn zu mir zu bringen? Ich würde mich zu gern mit ihm unterhalten.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_08"); //Ich glaube nicht, dass das ein Problem wäre.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_09"); //Sehr gut. Um dir und ihm einen weiten Weg zurück zu ersparen, habe ich diese Spruchrolle angefertigt.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_00"); //I found out who's responsible for the anomaly.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_01"); //Is that so? Who is it?
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_02"); //His name is Argez. I met him in front of Khorinis and helped him get into town.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_03"); //The anomaly was suddenly replaced by a zombie that attacked us and he defended us with this spell.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_04"); //You helped him into town?
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_05"); //He pretended to have lost his memory. I saw nothing evil in him, on the contrary.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_06"); //Hmm, a suspicious personality once and for all.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_07"); //Do you think you can bring him to me? I'd love to talk to him.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_08"); //I don't think that would be a problem.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_09"); //Very good. Very good. To save you and him a long way back, I made this scroll.
 
 	B_GiveInvItems	(self, hero, ItSc_ArgezToSaturas, 1);
 
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_10"); //Nutze sie, wenn du ihn dazu gebracht hast dich zu begleiten.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_11"); //Ach, bevor du gehst, hätte ich gern mein Amulett zurück.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_10"); //Use it when you get him to come with you.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_11"); //Oh, before you go, I'd like my amulet back.
 
 	if (Npc_HasItems(hero, ItAm_Anomalie) == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_12"); //Hier ist es.
+		AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_12"); //Here it is here.
 
 		B_GiveInvItems	(hero, self, ItAm_Anomalie, 1);
 
-		AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_13"); //Danke. Bis später.
+		AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_13"); //Thanks. See you later.
 
 		B_GivePlayerXP	(250);
 
@@ -305,15 +305,15 @@ FUNC VOID Info_Mod_Saturas_NW_Argez2_Info()
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_14"); //Tut mir Leid, ich habe es nicht mehr.
-		AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_15"); //(wütend) Bei Beliar, wie konnte ich dir nur vertrauen? Du kannst dir sicher sein, dass dies das letzte Mal war!
+		AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez2_15_14"); //Sorry, I don't have it anymore.
+		AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez2_14_15"); //By Beliar, how could I trust you? You can be sure this was the last time!
 
 		B_GivePlayerXP	(200);
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_DUNKLEMAGIE, LOG_SUCCESS);
 
-	B_LogEntry	(TOPIC_MOD_ARGEZ, "Saturas will sich nun Argez wegen der Anomalie vorknöpfen. Ich soll ihn bitten, den Wassermagier aufzusuchen.");
+	B_LogEntry	(TOPIC_MOD_ARGEZ, "Saturnas wants to go after Argez because of the anomaly. I'm to ask him to see the Water Magician.");
 };
 
 INSTANCE Info_Mod_Saturas_NW_Argez3 (C_INFO)
@@ -337,7 +337,7 @@ FUNC INT Info_Mod_Saturas_NW_Argez3_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Argez3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez3_14_00"); //Du schon wieder. Aber du bringst diesen Argez mit.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez3_14_00"); //It's you again. But you bring this Argez.
 
 	B_GivePlayerXP	(100);
 
@@ -369,8 +369,8 @@ FUNC INT Info_Mod_Saturas_NW_Argez4_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Argez4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez4_14_00"); //Nefarius hat nach dir gefragt. Er meinte, du könntest ihm vielleicht weiterhelfen.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez4_15_01"); //Dann werde ich ihn mal besuchen.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Argez4_14_00"); //Nefarius asked for you. He said you might be able to help him.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Argez4_15_01"); //I'll go see him sometime.
 };
 
 INSTANCE Info_Mod_Saturas_NW_Gefangen (C_INFO)
@@ -381,7 +381,7 @@ INSTANCE Info_Mod_Saturas_NW_Gefangen (C_INFO)
 	information	= Info_Mod_Saturas_NW_Gefangen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles in Ordnung?";
+	description	= "Are you all right?";
 };
 
 FUNC INT Info_Mod_Saturas_NW_Gefangen_Condition()
@@ -395,16 +395,16 @@ FUNC INT Info_Mod_Saturas_NW_Gefangen_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Gefangen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_00"); //Alles in Ordnung?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_01"); //Ja, es geht. Danke, dass du uns gerettet hast. Wir stehen tief in deiner Schuld.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_02"); //Was war mit der Garde Innos?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_03"); //Als sie uns überwältigt hatten gingen vier der Gardisten durch das Portal um eine mächtige Waffe zu bergen.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_04"); //Wie lange ist das her?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_05"); //Etwa zwei Stunden.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_06"); //Ich muss die Garde aufhalten bevor sie das Schwert bergen.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_07"); //Dann solltest du dich beeilen, denn die Gardisten waren gut organisiert.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_08"); //Ich werde sofort ducrh das Portal gehen.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_09"); //Viel Glück.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_00"); //Are you all right?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_01"); //Yeah, it's okay. Thank you for saving us. We are deeply indebted to you.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_02"); //What about the guard Innos?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_03"); //When they overpowered us, four of the guards went through the portal to retrieve a powerful weapon.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_04"); //How long ago was that?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_05"); //About two hours.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_06"); //I must stop the guards before they retrieve the sword.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_07"); //Then you better hurry, because the guardsmen were well organized.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Gefangen_15_08"); //I'm going to ducrh the portal immediately.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Gefangen_14_09"); //Good luck to you.
 };
 
 INSTANCE Info_Mod_Saturas_NW_Goetter (C_INFO)
@@ -415,7 +415,7 @@ INSTANCE Info_Mod_Saturas_NW_Goetter (C_INFO)
 	information	= Info_Mod_Saturas_NW_Goetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du über die Götterwaffen?";
+	description	= "What do you know about the gods' weapons?";
 };
 
 FUNC INT Info_Mod_Saturas_NW_Goetter_Condition()
@@ -429,13 +429,13 @@ FUNC INT Info_Mod_Saturas_NW_Goetter_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Goetter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Goetter_15_00"); //Was weißt du über die Götterwaffen?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Goetter_14_01"); //Den alten Überlieferungen zufolge soll es drei dieser Artefakte geben. Für jeden Gott eine.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Goetter_14_02"); //Diese Waffen sollen auf die drei Gebiete von Khorinis verteilt worden sein. Diesen Teil, das Minental und Jharkendar.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Goetter_14_03"); //Wir haben von Jharkendar noch nicht viel erforscht, aber in den Inschriften ist die Rede von einem Tempel Adanos'. Dort wirst du sicher eine dieser Waffen finden.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Goetter_14_04"); //Bei der anderen Waffe handelt es sich wohl um den Heiligen Hammer der Feuermagier. Dieser befindet sich zum Glück bereits in unserem Besitz.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Goetter_15_00"); //What do you know about the gods' weapons?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Goetter_14_01"); //According to the old traditions, there are supposed to be three of these artifacts. One for each God.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Goetter_14_02"); //These weapons are said to have been distributed to the three territories of Khorinis. This part, the Minental and Jharkendar.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Goetter_14_03"); //We haven't done much research on Jharkendar yet, but the inscriptions mention a temple of Adanos. I'm sure you'll find one of those weapons there.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Goetter_14_04"); //The other weapon is probably the Sacred Hammer of Fire Magicians. Fortunately, this is already in our possession.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Jede der Götterwaffen ist einem Gott zuzuorden. Die Waffe Beliars habe ich bereits in meinem Besitz. Die Waffe Innos' ist der heilige Hammer der Feuermagier. Und die Waffe Adanos' soll in Jharkendar in einem Tempel Adanos' zu finden sein.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Each of the gods' weapons belongs to a god. I already have the weapon Beliars in my possession. The weapon Innos' is the holy hammer of fire magicians. And the weapon Adanos' is said to be found in Jharkendar in a temple of Adanos'.");
 };
 
 INSTANCE Info_Mod_Saturas_AW_Member_08 (C_INFO)
@@ -458,46 +458,46 @@ FUNC INT Info_Mod_Saturas_AW_Member_08_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_08_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_00"); //Ich spüre eine starke Erschütterung des Kräftegleichgewichtes und werde von schlimmen Vorahnungen geplagt.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_01"); //Mach dich bitte auf den Weg und versuche herauszufinden, was auf dem Weidenplateau und der Umgebung geschehen ist.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_02"); //Und hör dich am besten auch in der Taverne um, bestimmt gibt es dort auch Informationen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_03"); //Doch bevor du dich auf diese weitere Mission begibst, erscheint es mir an der rechten Zeit, dich in unsere Reihen aufzunehmen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_04"); //Du hast viel für unsere Gemeinschaft getan und dich als würdig erwiesen ein Magier des Wassers du werden.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_05"); //Auch soll es dir dazu verhelfen deine weiteren Prüfungen im Sinne Adanos bestehen zu können.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_06"); //Es steht dir aber natürlich frei den Weg des Wasserkriegers zu beschreiten, um mit Magie und Schwert gleichermaßen zu streiten ...
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_00"); //I feel a strong vibration of the balance of power and am plagued by bad premonitions.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_01"); //Please make your way and try to find out what happened on the pasture plateau and the surrounding area.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_02"); //And be sure to check around in the tavern as well, there will certainly be information there.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_03"); //But before you embark on this further mission, it seems to me to be the right time to welcome you into our ranks.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_04"); //You have done much for our fellowship and you have proven yourself worthy to become a magician of water.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_05"); //It should also help you to pass your further examinations in the sense of Adano.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_14_06"); //Of course, you are free to choose the path of the water warrior to fight with magic and sword...
 
 	Mod_WM_Boeden = 12;
 
 	Log_CreateTopic	(TOPIC_MOD_ADANOS_UNHEIL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ADANOS_UNHEIL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Saturas wird von dunklen Vorahnungen geplagt. Ich soll auf Weidenplateau und Umgebung auskundschaften, was geschehen ist. Auch in der Taverne könnte es Informationen geben.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Satan is plagued by dark premonitions. I'm to explore the pasture plateau and the surrounding area to find out what happened. There may also be information in the tavern.");
 
 	Info_ClearChoices	(Info_Mod_Saturas_AW_Member_08);
 
-	Info_AddChoice	(Info_Mod_Saturas_AW_Member_08, "Ich wähle den Weg des Kriegers.", Info_Mod_Saturas_AW_Member_08_B);
-	Info_AddChoice	(Info_Mod_Saturas_AW_Member_08, "Ich wähle den Weg der Magiers.", Info_Mod_Saturas_AW_Member_08_A);
+	Info_AddChoice	(Info_Mod_Saturas_AW_Member_08, "I choose the way of the warrior.", Info_Mod_Saturas_AW_Member_08_B);
+	Info_AddChoice	(Info_Mod_Saturas_AW_Member_08, "I choose the way of the magicians.", Info_Mod_Saturas_AW_Member_08_A);
 };
 
 FUNC VOID Info_Mod_Saturas_AW_Member_08_B()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_B_15_00"); //Ich wähle den Weg des Kriegers.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_B_14_01"); //Wenn das dein Wunsch ist, so wende dich an Ethan. Er wird die weiteren Schritte mit dir begehen.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_B_15_00"); //I choose the way of the warrior.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_B_14_01"); //If that is your wish, contact Ethan. He will take the next steps with you.
 
 	Info_ClearChoices	(Info_Mod_Saturas_AW_Member_08);
 };
 
 FUNC VOID Info_Mod_Saturas_AW_Member_08_A()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_A_15_00"); //Ich wähle den Weg der Magiers.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_01"); //So sei es. Dann leiste nun das Zeugnis zur Verbundenheit mit dem Wasser und sprich die Worte des Eides:
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_02"); //Ich schwöre bei den Mächten der Götter ... und bei der Kraft des heiligen Wassers ...
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_A_15_03"); //Ich schwöre bei den Mächten der Götter ... und bei der Kraft des heiligen Wassers ...
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_04"); //... dass mein Wissen und Handeln von nun an und auf ewig mit dem Wasser verbunden sei ...
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_A_15_05"); //... dass mein Wissen und Handeln von nun an und auf ewig mit dem Wasser verbunden sei ...
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_06"); //... bis ich einkehre in Beliars Reich und der Quell des Lebens versiegt.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_A_15_07"); //... bis ich einkehre in Beliars Reich und der Quell des Lebens versiegt.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_08"); //Es ist vollbracht. Von nun an wirst du als Magier des Wassers unserer Gemeinschaft dienen und dem Willen Adanos folgen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_09"); //Hier, ich übergebe dir deine Robe des Wassers und den Stab eines Magiers.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_A_15_00"); //I choose the way of the magicians.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_01"); //So be it. Then bear witness to your affection for water and say the words of the oath:
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_02"); //I swear by the powers of the gods... and the power of holy water....
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_A_15_03"); //I swear by the powers of the gods... and the power of holy water....
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_04"); //... that my knowledge and actions will be connected to the water from now on and forever...
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_A_15_05"); //... that my knowledge and actions will be connected to the water from now on and forever...
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_06"); //... and the fountain of life.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_08_A_15_07"); //... and the fountain of life.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_08"); //It is done. From now on, you will serve as a magician of the water of our community and follow Adano's will.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_09"); //Here, I give you your robe of water and the wand of a magician.
 
 	CreateInvItems	(self, ItAr_KDW_L_Addon, 1);
 	B_GiveInvItems	(self, hero, ItAr_KDW_L_Addon, 1);
@@ -511,7 +511,7 @@ FUNC VOID Info_Mod_Saturas_AW_Member_08_A()
 
 	Mod_Gilde = 10;
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_10"); //Möge Adanos dich jederzeit geleiten und dir den rechten Weg weisen das Gleichgewicht zu wahren.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_08_A_14_10"); //May Adanos guide you at all times and show you the right way to keep your balance.
 
 	Info_ClearChoices	(Info_Mod_Saturas_AW_Member_08);
 };
@@ -524,7 +524,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_09 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_09_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Toten erheben sich aus ihren Gräbern.";
+	description	= "The dead rise from their graves.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_09_Condition()
@@ -538,8 +538,8 @@ FUNC INT Info_Mod_Saturas_AW_Member_09_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_09_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_09_15_00"); //Die Toten erheben sich aus ihren Gräbern. Unter ihnen scheinen sich Kreaturen zu bewegen, die sie anführen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_09_14_01"); //Was sagst du da?! Welche üblen Dämonen treiben da ihr Unwesen …? Versuch unbedingt mehr herauszufinden. Wir forschen indes in den Schriften.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_09_15_00"); //The dead rise from their graves. Among them, creatures seem to move that lead them.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_09_14_01"); //What are you saying?! What evil demons are they doing? Try to find out more. We do research in the writings.
 
 	Mod_WM_DaySave = Wld_GetDay();
 
@@ -563,7 +563,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_10 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_10_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Auf dem Weidenplateau stehen gigantische Kreaturen (...)";
+	description	= "On the pasture plateau are gigantic creatures (...) )";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_10_Condition()
@@ -577,9 +577,9 @@ FUNC INT Info_Mod_Saturas_AW_Member_10_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_10_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_10_15_00"); //Auf dem Weidenplateau stehen gigantische Kreaturen, die von Horden kleinerer dämonischer Geschöpfe umgeben werden, welche ihnen untertan scheinen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_10_14_01"); //Um Adanos Willen! Was du berichtest ist in höchstem Ausmaße beunruhigend. Denn auch diese Kreaturen werden vermutlich ihren Meister haben ...
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_10_14_02"); //Versuch dich auf den Bauernhöfen in der Umgebung des Plateaus umzuhören. Wir brauchen unbedingt noch mehr Hinweise.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_10_15_00"); //On the pasture plateau are gigantic creatures surrounded by hordes of smaller demonic creatures that seem to be subdued.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_10_14_01"); //For Adano's sake! What you're reporting is extremely disturbing. Because also these creatures will probably have their master....
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_10_14_02"); //Try listening on the farms around the plateau. We really need more clues.
 
 	Mod_WM_DaySave = Wld_GetDay();
 
@@ -619,12 +619,12 @@ FUNC INT Info_Mod_Saturas_AW_Member_11_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_11_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_00"); //Im Rahmen unserer Nachforschungen haben wir sehr beunruhigendes herausgefunden. Es hatte mich bereits bei der Reinigung der Böden überrascht, dass so wenige Kreaturen entstanden.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_01"); //Es scheint so, als hätte eine uns bis jetzt noch unbekannte Macht, sowohl die Magie Beliars, als auch – und das würde die Stärke dieser Kreaturen erklären – die Macht Innos aufgenommen, vereint und für dieses abscheuliche Werk eingesetzt.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_11_15_02"); //Wie ist nun vorzugehen?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_03"); //Wie bereits erwähnt haben wohl auch diese Kreaturen ihre Meister, die sie herbeiriefen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_04"); //Um Kontrolle über solch mächtige Geschöpfe ausüben zu können, dürften sich die Urheber nicht zu weit von diesen fortbewegen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_05"); //Höre und schaue dich aufmerksam in der Nähe des Weidenplateaus und den Bauernhöfen um. Es muss irgendwelche Anhaltspunkte geben.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_00"); //In our investigations, we found something very disturbing. It had surprised me already during the cleaning of the floors that so few creatures arose.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_01"); //It seems as if a power unknown to us so far, both the magic of Beliar and - and this would explain the strength of these creatures - the power of Inno have taken hold, united and used it for this abominable work.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_11_15_02"); //What should we do now?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_03"); //As mentioned above, these creatures have their masters as well, who called them here.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_04"); //In order to exercise control over such powerful creatures, the creators should not move too far away from them.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_11_14_05"); //Listen and take a close look around the pasture plateau and farms. There must be some sort of clue.
 
 	Mod_WM_Boeden = 14;
 };
@@ -650,22 +650,22 @@ FUNC INT Info_Mod_Saturas_AW_Member_12_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_12_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_12_14_00"); //Du siehst aber gar nicht gut aus. Ein schwarzer Schatten scheint auf dir zu liegen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_12_14_01"); //Geh erst ins Kloster, beschaffe dir Heilung bei Pyrokar und komm dann wieder zu mir, um mir zu berichten, was vorgefallen war.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_12_14_00"); //You don't look so good. There seems to be a black shadow on top of you.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_12_14_01"); //First go to the monastery, get yourself healed at Pyrokar and then come back to me to tell me what had happened.
 
 	AI_StopProcessInfos	(self);
 };
 
 FUNC VOID Info_Mod_Saturas_AW_HexenTalk()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_00"); //Nun, es sind magisch begabte Frauen, die mit den dunklen Mächten verbunden sind.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_01"); //Im Gegensatz zu gewöhnlichen Dämonen-Magiern, die sich nur der Macht  ihres Gottes Beliar bedienen, sind sie viel stärker mit den Sphären des dämonischen verbunden.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_02"); //Sie haben die Existenz gewöhnlicher Menschen hinter sich gelassen und gingen eine feste, dauerhafte Bindung mit dämonischen Mächten ein.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_03"); //Wobei der Grad dieser Verbundenheit von dem jeweiligen Hexenclan abhängt.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_HexenTalk_15_04"); //Es gibt mehrere Clans?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_05"); //Ja, einige Quellen berichten davon.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_06"); //Während manche sich lediglich hin und wieder der  Verwandlungszauber bedienen um ihre menschliche Form  zu wandeln, oder in Tiergestalt Schaden anzurichten, verweilen andere einen großen Teil ihrer Existenz in einer Gestalt, die nicht der menschlichen entspricht.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_07"); //Allen gemein ist jedoch, dass sie lange Zeit über unerkannt unter normalen Menschen leben können, diese beeinflussen, sogar kurzzeitig fast völlige Kontrolle über sie ausüben können und Schadenszauber in ihrer Umgebung wirken.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_00"); //Well, they're magically gifted women associated with the dark powers.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_01"); //In contrast to ordinary demon magicians, who only use the power of their god Beliar, they are much more strongly connected to the demonic spheres.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_02"); //They have left the existence of ordinary people behind them and entered into a firm, lasting bond with demonic powers.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_03"); //The degree of this connection depends on the respective witch clan.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_HexenTalk_15_04"); //There are several clans?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_05"); //Yes, some sources report on it.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_06"); //While some only occasionally use the metamorphosis spell to transform their human form, or to inflict damage on animals, others spend much of their existence in a form that does not correspond to the human form.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_HexenTalk_14_07"); //What they all have in common, however, is that for a long time they can live undetectedly among normal people, influence them, exercise almost complete control over them for a short time, and cast damage spells in their surroundings.
 
 	Mod_WM_Hexeninfos = 2;
 
@@ -680,7 +680,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_13 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_13_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe etwas herausgefunden.";
+	description	= "I found out something.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_13_Condition()
@@ -695,11 +695,11 @@ FUNC INT Info_Mod_Saturas_AW_Member_13_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_13_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_13_15_00"); //Ich habe etwas herausgefunden.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_13_14_01"); //Ja? Berichte.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_13_15_02"); //Auf Khorinis scheint es Frauen zu geben, die der dunklen Magie mächtig sind. Ich glaube es handelt sich um Hexen. So meinte zumindest Pyrokar ...
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_13_14_03"); //Hexen?! Auf Khorinis?! Das ist in der Tat sehr beunruhigend.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_13_15_04"); //Um was für Wesen handelt es sich genau?
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_13_15_00"); //I found out something.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_13_14_01"); //Yes? Reports.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_13_15_02"); //On Khorinis there seem to be women who are powerful of dark magic. I think they're witches. At least that's what Pyrokar meant...
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_13_14_03"); //Witches?! To khorinis?! That is very disturbing indeed.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_13_15_04"); //What kind of creatures are they exactly?
 
 	Info_Mod_Saturas_AW_HexenTalk();
 
@@ -714,7 +714,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_14 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_14_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Könnten sie für das jüngste Unheil verantwortlich sein?";
+	description	= "Could they be responsible for the recent disaster?";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_14_Condition()
@@ -728,15 +728,15 @@ FUNC INT Info_Mod_Saturas_AW_Member_14_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_14_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_14_15_00"); //Könnten sie für das jüngste Unheil verantwortlich sein?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_01"); //Hmm, schwer zu bestimmen. Einerseits sind sie Meister darin andere Wesen zu kontrollieren.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_02"); //Dass sie jedoch auch dazu in der Lage sein sollten Geschöpfe solcher Macht zu erschaffen ... ich weiß es nicht.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_03"); //Es wäre unter allen Umständen sehr ungewöhnlich, da sie zwar die sphärische Manifestation in Zügen beherrschen, jedoch normalerweise in engen Grenzen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_04"); //Du musst unbedingt weiter nachforschen. Es muss noch Dinge geben, die uns bisher verborgen geblieben sind.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_05"); //Wenn du jedoch auf die Hexen stößt wäre es bestimmt nicht von Nachteil ihrem Treiben ein Ende zu setzen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_06"); //Aber nimm dich in Acht. Es sind mächtige magische Wesen.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_14_15_00"); //Could they be responsible for the recent disaster?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_01"); //Hmm, hard to determine. On the one hand, they are masters at controlling other beings.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_02"); //But that they should also be able to create creatures of such power? i don't know.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_03"); //It would be very unusual in all circumstances, as they control the spherical manifestation in features, but normally within narrow limits.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_04"); //You need to keep investigating. There must still be some things that have remained hidden from us so far.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_05"); //However, if you run into the witches it would certainly not be a disadvantage to put an end to their activities.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_14_14_06"); //But beware. They are powerful magical beings.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Saturas war sich nicht sicher, ob die Hexen für das jüngste Unheil verantwortlich sind. Er wies mich jedoch an ihrer Existenz ein Ende zu setzen, falls ich sie aufspüre.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Saturas wasn't sure if the witches were responsible for the recent disaster. He refused to put an end to their existence, however, if I tracked them down.");
 };
 
 INSTANCE Info_Mod_Saturas_AW_Member_15 (C_INFO)
@@ -747,7 +747,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_15 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_15_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe neue Informationen.";
+	description	= "I have new information.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_15_Condition()
@@ -762,36 +762,36 @@ FUNC INT Info_Mod_Saturas_AW_Member_15_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_15_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_00"); //Ich habe neue Informationen. Auf den Bauernhöfen sind in letzter Zeit recht viele ungewöhnliche Dinge geschehen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_15_14_01"); //Ja? Berichte.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_00"); //I have new information. Quite a lot of unusual things have happened on the farms lately.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_15_14_01"); //Yes? Reports.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Rosi_Unheil))
 	{
-		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_02"); //Rosi hat sich über ungünstige Wetterverhältnisse und Hagelschauer seit Beginn der Saison beklagt.
+		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_02"); //Rosi has complained about unfavourable weather conditions and hailstorms since the beginning of the season.
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Babera_Unheil))
 	{
-		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_03"); //Babera hat starke Rückenschmerzen seit einiger Zeit.
+		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_03"); //Babera has had severe back pain for some time.
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Balthasar_Unheil))
 	{
-		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_04"); //Balthasars Schafe lahmen.
+		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_04"); //Balthazar's sheep are lame.
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Bobo_Unheil))
 	{
-		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_05"); //Von Bobo erfuhr ich, dass ein Rudel schwarzer Wölfe seit einiger Zeit in der Nähe des Hofes sein Unwesen treibt.
+		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_05"); //Bobo told me that a herd of black wolves has been living near the farm for some time.
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Gunnar_Unheil))
 	{
-		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_06"); //Gunnar berichtete von Hagelschauern, sauerer Schafsmilch und gesundheitlichen Beschwerden auf dem Hof in dieser Saison.
+		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_06"); //Gunnar reported hail showers, acidic sheep's milk and health problems on the farm this season.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_15_14_07"); //In der Tat, diese Häufung solcher Ereignisse ist sehr verdächtig. Verdächtig nach Hexenwerk.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_08"); //Hexen?! Um was für Wesen handelt es sich genau?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_15_14_07"); //In fact, this accumulation of such events is very suspicious. Suspect for witchcraft.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_15_15_08"); //Witches?! What kind of creatures are they exactly?
 
 	Info_Mod_Saturas_AW_HexenTalk();
 
@@ -806,7 +806,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_16 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_16_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe diese seltsame Spruchrolle gefunden.";
+	description	= "I found this strange part of the saying.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_16_Condition()
@@ -820,19 +820,19 @@ FUNC INT Info_Mod_Saturas_AW_Member_16_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_16_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_16_15_00"); //Ich habe diese seltsame Spruchrolle gefunden.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_16_15_00"); //I found this weird part of the saying.
 
 	B_GiveInvItems	(hero, self, ItSc_AuraBerserker, 1);
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_01"); //Lass mal sehen. Hmm, diese Art von Spruchrollen ist mir nicht bekannt. Aber ... einen Augenblick mal ...
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_02"); //Die Schriftzeichen darauf scheinen denen der alten Kultur zu entsprechen.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_01"); //Let me have a look. Hmm, I'm not familiar with those kind of roles. But... for a moment...
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_02"); //The characters on it seem to correspond to those of the old culture.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_03"); //Unglaublich.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_16_15_04"); //Ja, was ist?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_05"); //Wenn mich nicht alles täuscht, ist dass eine Spruchrolle der Untergegangenen Kultur, mit der ein mächtiger Aurazauber gewirkt werden kann.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_06"); //Sie könnte unsere Kampfkraft außerordentlich steigern ...
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_03"); //Incredible.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_16_15_04"); //Yeah, what is it?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_05"); //If I am not misled, it is a role of the lost culture that can be used to cast a powerful Aura spell.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_16_14_06"); //It could greatly increase our fighting power....
 
 	B_GivePlayerXP	(300);
 };
@@ -845,7 +845,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_17 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_17_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe diese Spruchrollen hier gefunden.";
+	description	= "I found these roles here.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_17_Condition()
@@ -861,19 +861,19 @@ FUNC INT Info_Mod_Saturas_AW_Member_17_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_17_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_17_15_00"); //Ich habe diese Spruchrollen hier gefunden.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_17_14_01"); //Lass mal sehen ...
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_17_15_00"); //I found these roles here.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_17_14_01"); //Let me see...
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_17_14_02"); //Hmm, interessant.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_17_15_03"); //Was ist damit?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_17_14_04"); //Es sind ganz typische Hexenspruchrollen, Schadenszauber und Verwandlungszauber.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_17_14_02"); //Hmm, interesting.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_17_15_03"); //What about it?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_17_14_04"); //They are typical witch roles, damage spells and transformation spells.
 
 	if (Mod_WM_Hexeninfos < 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_17_14_05"); //Damit ist also klar, dass sich Hexen in der Umgebung befinden.
-		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_17_15_06"); //Hexen?! Um was für Wesen handelt es sich genau?
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_17_14_05"); //So it's clear that witches are in the area.
+		AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_17_15_06"); //Witches?! What kind of creatures are they exactly?
 	
 		Info_Mod_Saturas_AW_HexenTalk();
 
@@ -889,7 +889,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_18 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_18_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich die Verwandlung irgendwie anwenden?";
+	description	= "Is there any way I can apply the metamorphosis?";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_18_Condition()
@@ -903,12 +903,12 @@ FUNC INT Info_Mod_Saturas_AW_Member_18_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_18_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_18_15_00"); //Kann ich die Verwandlung irgendwie anwenden?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_18_14_01"); //Sie anwenden?! Ich vermag nicht zu sagen, was geschehen würde, wenn du den Verwandlungszauber auf dich anwendest.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_18_14_02"); //Du müsstest den Prozess der Anwendung auch erst modifizieren, da sie speziell auf weibliche Nutzer zugeschnitten ist.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_18_15_03"); //Es würde mir einen Vorteil gegenüber Hexen verschaffen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_18_14_04"); //Nun gut. Eigentlich solltest du den Effekt auf dich anwenden können, indem du einen Runenrohling zum Transfer des Zaubers auf dich heranziehst.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_18_14_05"); //Ich hoffe nur, du machst damit keine Dummheiten.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_18_15_00"); //Is there any way I can apply the metamorphosis?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_18_14_01"); //You apply?! I can't say what would happen if you applied the metamorphosis spell to yourself.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_18_14_02"); //You would have to modify the process of the application first, because it is especially tailored to female users.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_18_15_03"); //It would give me an edge over witches.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_18_14_04"); //Very well. Actually, you should be able to apply the effect to yourself by using a rune blank to transfer the spell to you.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_18_14_05"); //I just hope you're not doing anything stupid.
 };
 
 INSTANCE Info_Mod_Saturas_AW_Member_19 (C_INFO)
@@ -919,7 +919,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_19 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_19_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich konnte die Hexen bezwingen.";
+	description	= "I could defeat the witches.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_19_Condition()
@@ -932,17 +932,17 @@ FUNC INT Info_Mod_Saturas_AW_Member_19_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_19_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_19_15_00"); //Ich konnte die Hexen bezwingen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_01"); //Das ist gut, eine Sorge weniger. Meine Kundschafter haben mir berichtet, dass die Wesen sich zwar verstreut haben – außer die bei Orlan - aber an Macht fast nichts eingebüßt haben.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_02"); //Damit ist klar, dass die Hexen die Wesen lediglich kontrollierten, ihre eigentlichen Urheber aber noch existieren. Versuch noch mehr herauszufinden.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_03"); //Dass du die Hexen beseitigt hast könnte die Erschaffer der Wesen vielleicht etwas aus ihrer Deckung gelockt haben.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_04"); //Schau dich also nach Hinweisen um.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_05"); //Vielleicht wirst du in der Nähe der Kreaturen bei Orlan etwas finden können, da sie wie erwähnt unverändert verharren, wo sie standen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_06"); //Du musst die Urheber finden. Wenn es dir nicht gelingen sollte, wären wir wohl alle dem Untergang geweiht, da nur noch die Macht längst verlorener göttlicher Artefakte in der Lage wäre diesen Ungetümen Einhalt zu gebieten.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_19_15_07"); //Göttliche Artefakte?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_08"); //Ja, Gegenstände uralter Macht. Einer von ihnen war der Kristall der Absorption, welcher in der Lage war frei gewordene Energien, die diesen Wesen eben ihre Macht liefern, in sich zu bannen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_09"); //Es soll noch andere Artefakte, wie auch Zauber auf Khornins gegeben haben, die in der Lage gewesen sein sollen den Träger oder Magier mit großer Macht auszustatteten, indem sie eine übermächtige Aura erzeugten, oder sogar einen Teil göttlicher Macht verliehen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_10"); //Aber diese Gegenstände, wie auch das Wissen um die Magie, gelten seit langem als verschollen.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_19_15_00"); //I could defeat the witches.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_01"); //That's good, one less worry. My spies told me that the creatures have scattered - except for the ones near Orlan - but have lost almost nothing in power.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_02"); //Thus it is clear that the witches only controlled the beings, but their actual creators still exist. Try to find out more.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_03"); //That you got rid of the witches might have lured the creators of the creatures a little bit out of their cover.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_04"); //So look around for clues.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_05"); //Maybe you will be able to find something near the creatures at Orlan's, as they remain unchanged where they were.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_06"); //You have to find the authors. If you don't succeed, we would probably all be doomed to doom, because only the power of long lost divine artifacts would be able to stop these monsters.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_19_15_07"); //Divine artifacts?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_08"); //Yes, objects of ancient power. One of them was the crystal of absorption, which was able to contain energies that have been released and which provide these beings with their power.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_09"); //There are said to have been other artifacts, as well as spells on Khornins, which were said to have been able to provide the carrier or magician with great power by creating an overpowering aura, or even giving a portion of divine power.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_19_14_10"); //But these objects, as well as the knowledge of magic, have long been considered lost.
 
 	Mod_WM_ArtefaktSammler = 1;
 
@@ -950,10 +950,10 @@ FUNC VOID Info_Mod_Saturas_AW_Member_19_Info()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Amulett))
 	{
-		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Hmm, vielleicht wird uns das Amulett der Extension im Kampf gegen die Ungetüme helfen können.");
+		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Hmm, maybe the extension's amulet will help us in our fight against the beasts.");
 	};
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Die Hexen scheinen nicht die eigentlichen Urheber der Kreaturen gewesen zu sein, sondern nur Kontrolle auf diese ausgeübt zu haben, da die Wesen sich nach deren Ableben verstreut haben, außer bei Orlan. Daher könnte ich dort vielleicht auf weitere Hinweise stoßen. Saturas meinte, dass ich nach der Vernichtung der Hexen nun bessere Chancen haben sollte, die Wurzel des Übels zu finden.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "The witches do not seem to have been the actual creature's creatures, but only to have exerted control over them, since the creatures have scattered after their demise, except for Orlan. So I might be able to find further information there. Saturas said that after the destruction of the witches I should now have a better chance to find the root of the evil.");
 };
 
 INSTANCE Info_Mod_Saturas_AW_Member_20 (C_INFO)
@@ -964,7 +964,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_20 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_20_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe in Erfahrung gebracht, dass der so genannte Blutkult (...)";
+	description	= "I have learned that the so-called blood cult (.... )";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_20_Condition()
@@ -977,34 +977,34 @@ FUNC INT Info_Mod_Saturas_AW_Member_20_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_20_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_15_00"); //Ich habe in Erfahrung gebracht, dass der so genannte Blutkult für das Erscheinen dieser Wesen verantwortlich sein soll.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_01"); //Bei Adanos, der Blutkult also.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_15_02"); //Was ist der Blutkult genau?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_03"); //Das lässt sich nicht mit wenigen Worten sagen. Es handelt sich um eine uralte Bruderschaft die fast genauso lange zu bestehen scheint, wie die Götter selbst.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_04"); //Als Innos, Adanos und Beliar die Welt betraten, erwählte und erschaffte sie sich jeder Stellvertreter, die in ihrem Willen handeln sollten, jedoch über eigenen Verstand und Willen verfügten.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_05"); //Aber auch diese – ausgestattet mit großer Macht – erwählten wiederum Diener, sodass über die Jahrhunderte ganze Beziehungsgeflechte verschiedenster Geschöpfe entstanden.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_06"); //Manche gaben sich auch nicht mit den Mitteln zufrieden, die ihnen von ihrer Gottheit geschenkt wurden und begannen sich auch der Macht der anderen Götter zu bedienen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_07"); //Wiederum andere begannen ihren ganz eigenen Interessen zu folgen. Der Blutkult jedoch, so scheint es, hat zu keiner Zeit in irgendeiner Form von Beziehung zu einer der drei Gottheiten gestanden.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_15_08"); //Woher beziehen sie dann ihre Macht?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_09"); //Es sind parasitäre Geschöpfe, die keinem Gott dienen und jede frei gewordene Energie aufnehmen und bündeln können.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_10"); //Sie scheinen Geschöpfen genannt Vampire verwandt, nehmen jedoch die gesamte Energie getöteter Wesen auf.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_15_11"); //Wie ist es möglich, dass sie so lange unentdeckt blieben?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_12"); //Sie können Jahrzehnte versteckt unter der Erde ruhen, bis sie eine Erschütterung des Gleichgewichtes wahrnehmen und ihre Chance gekommen sehen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_13"); //Sie streben immer eine Störung dieses Gleichgewichtes an, da ganz gleich, ob Innos, oder Beliar triumphiert, immer viele Kreaturen in Folge dessen den Untergang finden, was ihre Macht wachsen lässt.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_14"); //Sie sind damit unsere natürlichen Widersacher und würden dich auf der Stelle angreifen, wenn sie dich als Diener Adanos’ erkennen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_15"); //Die Geschöpfe, die sie jetzt aussandten, ausgestattet mit der Macht beider Gottheiten, Innos und Beliar, werden wir nicht ohne weiteres bannen können.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_16"); //Du musst, wenn möglich, die Wurzel des Übels finden, den Blutkult, und sie alle vernichten.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_15_00"); //I have learned that the so-called blood cult should be responsible for the appearance of these beings.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_01"); //By Adanos, the blood cult.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_15_02"); //What is the blood cult, exactly?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_03"); //That cannot be said in a few words. It is an ancient brotherhood that seems to exist for almost as long as the gods themselves.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_04"); //When Innos, Adanos and Beliar entered the world, she chose and created each deputy who was to act in their will, but possessed their own minds and will.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_05"); //But these too - endowed with great power - again chose servants, so that over the centuries whole networks of relationships of different creatures developed.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_06"); //Some of them were also not satisfied with the means given to them by their deity and began to use the power of the other gods.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_07"); //Others began to follow their own interests. The blood cult, however, it seems, has never stood in any kind of relationship with any of the three deities.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_15_08"); //Then where do they get their power from?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_09"); //They are parasitic creatures who do not serve God and can absorb and bundle any energy released.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_10"); //They seem to be related to creatures called vampires, but they absorb all the energy of dead beings.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_15_11"); //How is it possible that they remained undiscovered for so long?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_12"); //They can rest hidden under the earth for decades until they perceive a shock of equilibrium and see their chance come.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_13"); //They always strive for a disturbance of this equilibrium, because no matter whether Innos or Beliar triumphs, many creatures will always be destroyed as a result of this, which makes their power grow.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_14"); //They are thus our natural adversaries and would attack you immediately if they recognized you as Adanos' servant.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_15"); //The creatures they now sent out, endowed with the power of both deities, Innos and Beliar, we will not easily be able to banish.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_20_14_16"); //You must, if possible, find the root of the evil, the blood cult, and destroy them all.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Saturas hat bestätigt, dass wohl der Blutkult für das Auftauchen der Kreaturen verantwortlich ist. Ich soll seine Anhänger ausfindig machen und vernichten.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Saturas has confirmed that the blood cult is probably responsible for the appearance of the creatures. I'm supposed to track down and destroy his followers.");
 
 	Info_ClearChoices	(Info_Mod_Saturas_AW_Member_20);
 
-	Info_AddChoice	(Info_Mod_Saturas_AW_Member_20, "Ich mache mich dann gleich auf den Weg, den Unholden den Garaus zu machen.", Info_Mod_Saturas_AW_Member_20_A);
+	Info_AddChoice	(Info_Mod_Saturas_AW_Member_20, "I'll be on my way to get rid of the fiends.", Info_Mod_Saturas_AW_Member_20_A);
 };
 
 FUNC VOID Info_Mod_Saturas_AW_Member_20_A()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_A_15_00"); //Ich mache mich dann gleich auf den Weg, den Unholden den Garaus zu machen.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_20_A_15_00"); //I'll be on my way to get rid of the fiends.
 
 	Info_ClearChoices	(Info_Mod_Saturas_AW_Member_20);
 };
@@ -1017,7 +1017,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_21 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_21_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann man die Macht des Kristalls nicht wieder herstellen?";
+	description	= "Can't the power of the crystal be restored?";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_21_Condition()
@@ -1032,11 +1032,11 @@ FUNC INT Info_Mod_Saturas_AW_Member_21_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_21_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_21_15_00"); //Kann man die Macht des Kristalls nicht wieder herstellen?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_21_14_01"); //Ich befürchte, dass es uns an den Mitteln fehlt. Nur ein göttlicher Bote wäre dazu in der Lage.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_21_14_02"); //Erkundige dich am besten bei Cronos darüber. Er kann dir mehr dazu sagen.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_21_15_00"); //Can't the power of the crystal be restored?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_21_14_01"); //I'm afraid we're short of resources. Only a divine messenger would be able to do so.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_21_14_02"); //Check with Cronos about this. He can tell you more about it.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Von Saturas habe ich erfahren, dass der Kristall der Absorption in der Lage wäre die Macht der Kreaturen einzudämmen, wenn man ihm seine Kraft wiedergeben würde. Cronos kann mir mehr dazu sagen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "I have heard from Saturas that the crystal of absorption would be able to curb the power of creatures if you would give it back its power. Cronos can tell me more about it.");
 };
 
 INSTANCE Info_Mod_Saturas_AW_Member_22 (C_INFO)
@@ -1047,7 +1047,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_22 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_22_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe dieses Amulett hier.";
+	description	= "I have this amulet here.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_22_Condition()
@@ -1063,14 +1063,14 @@ FUNC INT Info_Mod_Saturas_AW_Member_22_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_22_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_22_15_00"); //Ich habe dieses Amulett hier.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_22_15_00"); //I have this amulet here.
 
 	B_GiveInvItems	(hero, self, ItAm_MegaAmulett2, 1);
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_22_14_01"); //Höchst interessant. Dieses Amulett scheint von uralter Macht zu sein. Es erinnert mich an ein Artefakt aus einem Buch, dass uns vor einiger Zeit entwendet wurde.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_22_15_02"); //Das Artefakt wurde euch entwendet?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_22_14_03"); //(genervt) Nein, das Buch meine ich. Irgendein Frevler hat sich dreist an unseren Schriften bedient. Adanos möge ihn strafen. Aber ... wo war ich gerade ... achja, das Amulett. (schaut es sich an)
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_22_14_04"); //Tatsächlich, fantastisch, wenn mich meine Erinnerung nicht trügt hat dieses Amulett die Macht, die Wirkung eines jeden Zaubers, den der Träger auf sich wirkt, auf alle befreundeten Mitstreiter auszudehnen. Ein machtvolles Werkzeug ...
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_22_14_01"); //Very interesting. This amulet seems to be of ancient power. It reminds me of an artifact from a book that was stolen from us some time ago.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_22_15_02"); //The artifact was stolen from you?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_22_14_03"); //No, I mean the book. Some wrong-doer has taken reckless advantage of our writings. May Adanos punish him. But... where I was just now.... Oh, the amulet. (look at it)
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_22_14_04"); //Indeed, fantastic, if my memory doesn't deceive me, this amulet has the power to extend the effect of every spell the wearer casts on him to all his friends. A powerful tool...
 
 	B_GivePlayerXP	(300);
 };
@@ -1083,7 +1083,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_23 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_23_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was kannst du mir zu dieser Rune sagen?";
+	description	= "What can you tell me about this rune?";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_23_Condition()
@@ -1097,17 +1097,17 @@ FUNC INT Info_Mod_Saturas_AW_Member_23_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_23_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_23_15_00"); //Was kannst du mir zu dieser Rune sagen?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_01"); //Hmm, lass mich sehen ... Bei Adanos ...
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_23_15_02"); //Ja, was ist damit?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_03"); //Hierbei handelt es sich um eine Kontrollrune, die die Funktion besitzt telepathischen und energetischen Kontakt zu mächtigen Dienerkreaturen über längere Distanz - durchaus einige 100 Meter – aufrechtzuerhalten.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_04"); //Sie dient auch zur gegenseitigen Erkennung der Kreaturen und verhindert, dass die Geschöpfe, welche diese Rune mit sich führen, sich gegenseitig angreifen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_05"); //Ich darf recht in der Annahme gehen, dass du sie einem der höheren Geschöpfe entrissen hast, die die Umgebung heimsuchten.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_23_15_06"); //Ja, das stimmt.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_07"); //Ausgezeichnet, vielleicht wird dir ja dieser Gegenstand bei deiner Suche behilflich sein.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_08"); //Versuche sie anzuwenden bevor du auf die Kreaturen triffst.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_23_15_00"); //What can you tell me about this rune?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_01"); //Hmm, let me see... With Adanos...
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_23_15_02"); //Yeah, what about that?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_03"); //This is a control rune that has the function of maintaining telepathic and energetic contact with mighty servant creatures over long distances - quite a few hundred meters.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_04"); //It is also used for the mutual recognition of creatures and prevents the creatures carrying this rune from attacking each other.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_05"); //I can safely assume that you have snatched her away from one of the higher creatures that ravaged the environment.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_23_15_06"); //Yeah, that's right.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_07"); //Excellent, maybe this item will help you in your search.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_23_14_08"); //Try to apply them before you hit the creatures.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Saturas meint, die Rune würde die Kreaturen unter anderem davon abhalten sich gegenseitig anzugreifen. Wenn ich sie benutze, könnte sie mir dabei behilflich sein die Missetäter zu finden.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Saturas believes that the rune would stop the creatures from attacking each other. If I use her, she could help me find the culprits.");
 
 	B_GivePlayerXP	(100);
 };
@@ -1133,8 +1133,8 @@ FUNC INT Info_Mod_Saturas_AW_Member_24_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_24_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_24_14_01"); //Meine Kundschafter haben auf den Bauernhöfen Erkundigungen eingezogen und der Schluss liegt nahe, dass Hexen in der Umgebung sind.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_24_15_00"); //Hexen?! Um was für Wesen handelt es sich genau?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_24_14_01"); //My spies have made enquiries on the farms and the conclusion is obvious that there are witches in the area.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_24_15_00"); //Witches?! What kind of creatures are they exactly?
 	
 	Info_Mod_Saturas_AW_HexenTalk();
 };
@@ -1147,7 +1147,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_25 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_25_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Blutkult war einmal. Ich habe sie alle vernichtet.";
+	description	= "Blood cult was once upon a time. I destroyed them all.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_25_Condition()
@@ -1160,24 +1160,24 @@ FUNC INT Info_Mod_Saturas_AW_Member_25_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_25_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_25_15_00"); //Der Blutkult war einmal. Ich habe sie alle vernichtet.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_01"); //Tatsächlich? Das sind großartige Neuigkeiten. Möge dieses Übel auf Ewig von dem Antlitz dieser Erde getilgt sein. Du hast uns einen Dienst von unschätzbarem Wert erwiesen.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_02"); //Wie dem auch sei, die Wesen auf dem Weidenplateau sollten nun so geschwächt sein, nach dem Ableben ihrer Schöpfer, dass wir einen Angriff mit vereinten Kräften wagen können.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_03"); //Cronos wird mit einigen Wasserkriegern aufbrechen und bei Orlans Taverne auf dich warten.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_25_15_00"); //Blood cult was once upon a time. I destroyed them all.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_01"); //Is that so? That's great news. May this evil be eradicated forever from the face of this earth. You have done us a service of inestimable value.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_02"); //Be that as it may, the creatures on the willow plateau should now be so weakened after the death of their creators that we can venture an attack with united forces.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_03"); //Cronos will leave with some water warriors and wait for you at Orlan's tavern.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_Member_22))
 	{
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_04"); //Er hat das Amulett, das du uns gegeben hast und wird es im Kampf anwenden.
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_04"); //He has the amulet you gave us and will use it in battle.
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_Member_16))
 	{
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_05"); //Er hat die Spruchrolle, die du uns gegeben hast und wird sie im Kampf anwenden.
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_05"); //He's got that spell you gave us, and he'll use it in battle.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_06"); //Du kannst noch versuchen unsere Mitbrüder in der Stadt zu mobilisieren. Adanos möge euch behüten.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_25_14_06"); //You can still try to mobilize our confreres in the city. May Adanos keep you safe.
 	
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Der Moment, gegen die Ungetüme auf dem Weidenplateau loszuschlagen, scheint gekommen. Cronos und einige Wasserkrieger werden bei Orlan auf mich warten.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "The moment to strike out against the monsters on the pasture plateau seems to have come. Cronos and some water warriors will be waiting for me at Orlan.");
 
 	B_GivePlayerXP	(1000);
 
@@ -1224,33 +1224,33 @@ FUNC VOID Info_Mod_Saturas_AW_Member_26_Info()
 	
 	if (Mod_WM_CronosAttack == 3)
 	{
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_00"); //Unglaublich. Die Bedrohung ist tatsächlich gebannt. Monstern und Ungetümen hast du getrotzt und die Stirn geboten.
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_01"); //Sogar deine Taten bei der Fokussuche verblassen gegen diese Leistung.
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_00"); //Incredible. The threat is indeed averted. You defied monsters and monsters and braved them.
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_01"); //Even your actions in the focus search fade against this achievement.
 	}
 	else if (Mod_WM_CronosAttack == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_02"); //Unglaublich, wie ich hörte hast du die Kreaturen auf dem Plateau alleine bezwungen.
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_03"); //Erstaunlich, obgleich ich dich dieser unnötigen Risiken auch tadeln muss.
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_04"); //Blinde Eitelkeit sollte angesichts der Gefahr, die über allem schwebt, nicht das Leitmotiv sein.
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_05"); //Es steht zu viel auf dem Spiel. Vergiss das nicht ...
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_02"); //Unbelievable, I heard you defeated the creatures on the plateau alone.
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_03"); //Amazing though I must blame you for these unnecessary risks.
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_04"); //Blind vanity should not be the leitmotiv in view of the danger that hovers over everything.
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_05"); //There's too much at stake. Don't forget that...
 	};
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_06"); //Hier, nimm dieses Gold.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_06"); //Here, take this gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_07"); //Selbstverständlich kann es nicht deine Taten aufwiegen. Daher soll auch der Gürtel unseres Herrn Adanos, welcher in dieser Bauanleitung umschrieben ist, deinen Leib zieren.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_07"); //Of course, it can't outweigh your actions. Therefore the belt of our Mr. Adanos, which is described in this building instruction, should adorn your body.
 
 	B_GiveInvItems	(self, hero, ItWr_Bauplan_AdanosBelt, 1);
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_08"); //Zudem darfst du dir einen der folgenden Gegenstände aussuchen.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_14_08"); //You can also choose one of the following items.
 
 	Info_ClearChoices	(Info_Mod_Saturas_AW_Member_26);
 
-	Info_AddChoice	(Info_Mod_Saturas_AW_Member_26, "Zwei Spruchrollen Eisregen", Info_Mod_Saturas_AW_Member_26_D);
-	Info_AddChoice	(Info_Mod_Saturas_AW_Member_26, "Kugelblitzrune", Info_Mod_Saturas_AW_Member_26_C);
-	Info_AddChoice	(Info_Mod_Saturas_AW_Member_26, "Trank des Geistes", Info_Mod_Saturas_AW_Member_26_B);
-	Info_AddChoice	(Info_Mod_Saturas_AW_Member_26, "Trank des Wissens", Info_Mod_Saturas_AW_Member_26_A);
+	Info_AddChoice	(Info_Mod_Saturas_AW_Member_26, "Two rulers Ice rain", Info_Mod_Saturas_AW_Member_26_D);
+	Info_AddChoice	(Info_Mod_Saturas_AW_Member_26, "maroon", Info_Mod_Saturas_AW_Member_26_C);
+	Info_AddChoice	(Info_Mod_Saturas_AW_Member_26, "potion of the spirit", Info_Mod_Saturas_AW_Member_26_B);
+	Info_AddChoice	(Info_Mod_Saturas_AW_Member_26, "potion of knowledge", Info_Mod_Saturas_AW_Member_26_A);
 };
 
 FUNC VOID Info_Mod_Saturas_AW_Member_26_E()
@@ -1262,17 +1262,17 @@ FUNC VOID Info_Mod_Saturas_AW_Member_26_E()
 	{
 		if (Mod_WM_NewTruppen == 0)
 		{
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_00"); //So aber sprich: Wo bleiben unsere Mitbrüder, die dir beim Kampf zur Seite standen?
-			AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_26_E_15_01"); //Öhhm, nun ... sie sind leider alle gefallen.
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_02"); //Was?! Sie sind alle tot?! Adanos legt uns wirklich eine schwere Prüfung auf.
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_03"); //Ja, das Gleichgewicht ist ein hohes Gut, dessen Erhaltung leider bisweilen Opfer erfordert.
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_04"); //Aber um sich von dem Verlust so vieler unserer geschätzten Mitbrüder zu erholen, wird es sehr viel Zeit brauchen.
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_00"); //Say,"Where are our confreres who stood by your side in battle?
+			AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_26_E_15_01"); //Um, well.... I'm afraid they all fell.
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_02"); //What?! They're all dead?! Adanos is really putting us to the test.
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_03"); //Yes, the equilibrium is a great good, which unfortunately sometimes requires sacrifice.
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_04"); //But it will take a lot of time to recover from the loss of so many of our esteemed confreres.
 
 			B_GivePlayerXP	(1000);
 		}
 		else if (Mod_WM_TruppenLeft == Mod_WM_NewTruppen)
 		{
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_05"); //Genauso erfreulich, wie die Vernichtung der Ungetüme ist es, dass jeder deiner Mitstreiter unversehrt zurückkam.
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_05"); //Just as pleasing as the destruction of the beasts, it is that each of your comrades-in-arms returned unharmed.
 
 			B_GivePlayerXP	(4000);
 
@@ -1283,8 +1283,8 @@ FUNC VOID Info_Mod_Saturas_AW_Member_26_E()
 		}
 		else if ((Mod_WM_TruppenLeft-4) < Mod_WM_NewTruppen)
 		{
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_06"); //Betrübt stimmt mich hingegen, dass es Tote unter unseren Mitbrüder gab, wenn auch wenige.
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_07"); //Möge es uns immer im Bewusstsein bleiben, dass das Gleichgewicht ein hohes Gut ist und dessen Erhaltung leider bisweilen Opfer erfordert.
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_06"); //On the other hand, I am saddened that there were dead among our confreres, albeit few.
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_07"); //Let us always be aware that the balance is a great good and, unfortunately, its preservation sometimes requires sacrifices.
 
 			B_GivePlayerXP	(3000);
 
@@ -1295,8 +1295,8 @@ FUNC VOID Info_Mod_Saturas_AW_Member_26_E()
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_08"); //Äußerst betrüblich ist jedoch das Dahinscheiden vieler unserer Mitbrüder im Kampf gegen die monströsen Ungetüme. Lange wird es dauern, bis unsere Gemeinschaft sich davon erholt hat.
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_07"); //Möge es uns immer im Bewusstsein bleiben, dass das Gleichgewicht ein hohes Gut ist und dessen Erhaltung leider bisweilen Opfer erfordert.
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_08"); //However, the passing of many of our confreres in the fight against the monstrous monsters is extremely saddening. It will be a long time before our community recovers.
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_07"); //Let us always be aware that the balance is a great good and, unfortunately, its preservation sometimes requires sacrifices.
 
 			B_GivePlayerXP	(2000);
 
@@ -1309,7 +1309,7 @@ FUNC VOID Info_Mod_Saturas_AW_Member_26_E()
 
 	if (Mod_WM_NewTruppen > 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_09"); //Der Segen unseres Herrn Adanos möge auf ewig mit dir sein.
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_09"); //May the blessing of our Lord Adanos be with you forever.
 	};
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Cronos_Angriff_01))
@@ -1321,7 +1321,7 @@ FUNC VOID Info_Mod_Saturas_AW_Member_26_E()
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_Member_22))
 		{
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_11"); //Achja, hier hast du das Amulett zurück. Es war uns wahrlich von großem Nutzen. Ich habe es noch etwas begutachtet. Ein sehr interessantes Stück ...
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_11"); //Ah yes, here you have the amulet back. It has been of great benefit to us. I looked into it a little bit more. A very interesting piece...
 
 			B_GiveInvItems	(self, hero, ItAm_MegaAmulett2, 1);
 		};
@@ -1330,7 +1330,7 @@ FUNC VOID Info_Mod_Saturas_AW_Member_26_E()
 	{
 		if (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_Member_22))
 		{
-			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_12"); //Achja, hier hast du noch das Amulett zurück, welches Cronos auf dem Plateau bei sich trug. Ich habe es noch etwas begutachtet. Ein sehr interessantes Stück ...
+			AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_12"); //Oh well, here you still have the amulet back which Cronos carried with him on the plateau. I looked into it a little bit more. A very interesting piece...
 
 			B_GiveInvItems	(self, hero, ItAm_MegaAmulett2, 1);
 		};
@@ -1338,7 +1338,7 @@ FUNC VOID Info_Mod_Saturas_AW_Member_26_E()
 
 	if (Mod_HSWM_RatProblem == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_10"); //Ich werde nun zum Rat aufbrechen.
+		AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_26_E_14_10"); //I shall now turn to the Council.
 
 		B_StartOtherRoutine	(self, "RAT");
 		B_StartOtherRoutine	(Mod_527_SLD_Torlof_NW, "RAT");
@@ -1398,7 +1398,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_27 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_27_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Kristall hat seine ursprüngliche Kraft wiedererlangt.";
+	description	= "The crystal has regained its original power.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_27_Condition()
@@ -1412,13 +1412,13 @@ FUNC INT Info_Mod_Saturas_AW_Member_27_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_27_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_27_15_00"); //Der Kristall hat seine ursprüngliche Kraft wiedererlangt.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_01"); //Unglaublich! Ja, ich spüre wie er durchdrungen ist von göttlicher Macht.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_02"); //Damit hast du unserer Gemeinschaft nicht nur einen großen Dienst erwiesen und uns ein Werkzeug zugeführt, die Erhaltung des Gleichgewichts zu sichern.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_03"); //Er wird auch in der Lage sein die Bedrohung auf dem Weidenplateau aufzuhalten und ganz Khorinis so vor einem schweren Schicksal bewahren.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_04"); //Er sollte die Ungetüme nun in so weit schwächen, dass wir einen Angriff mit vereinten Kräften wagen können.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_05"); //Ja, ich spüre wie der Kristall sogar über diese große Entfernung seine Wirkung hinterlässt.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_06"); //Cronos wird ihn an sich nehmen und ihn auf dem Plateau nutzen, wo er mit den Kriegern auf dich wartet. Es wird Zeit dieses Übel endgültug zu tilgen.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_27_15_00"); //The crystal has regained its original power.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_01"); //Incredible! Yes, I feel him being permeated by divine power.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_02"); //This is not only a great service to our community, but also a tool to help us maintain balance.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_03"); //He will also be able to stop the threat on the pasture plateau and save the whole of Khorinis from a hard fate.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_04"); //He should now weaken the monsters to such an extent that we can dare to attack with united forces.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_05"); //Yes, I can feel how the crystal even leaves its effect over this great distance.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_27_14_06"); //Cronos will take him and use him on the plateau where he'll be waiting for you with the warriors. It is time to eradicate this evil once and for all.
 
 	B_GivePlayerXP	(1000);
 };
@@ -1431,7 +1431,7 @@ INSTANCE Info_Mod_Saturas_AW_Member_28 (C_INFO)
 	information	= Info_Mod_Saturas_AW_Member_28_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du den Kristall.";
+	description	= "Here's the crystal.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_Member_28_Condition()
@@ -1445,12 +1445,12 @@ FUNC INT Info_Mod_Saturas_AW_Member_28_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_Member_28_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_28_15_00"); //Hier hast du den Kristall.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_Member_28_15_00"); //Here's the crystal.
 
 	B_GiveInvItems	(hero, self, ItMi_AbsorbKristall2, 1);
 
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_28_14_01"); //Kaum zu glauben, dass sich dieses Werkzeug Adanos’ nun im Besitz unserer Gemeinschaft befindet.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_28_14_02"); //Der Segen unseres Herrn soll dich auch weiterhin auf allen deinen Wegen begleiten.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_28_14_01"); //It is hard to believe that Adanos' tool is now in the hands of our community.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_Member_28_14_02"); //May the blessing of our Lord continue to accompany you on all your ways.
 
 	B_GivePlayerXP	(1500);
 
@@ -1480,24 +1480,24 @@ FUNC INT Info_Mod_Saturas_AW_KhorataPlage_01_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_KhorataPlage_01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_00"); //Die große Gefahr, die Khorinis drohte, ist verbannt. Doch gibt es immer noch Vorkommnisse und Berichte, die unsere Aufmerksamkeit erfordern.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_01"); //Das Anliegen, mit welchem ich dich jetzt betraue, spielt sich im Norden ab, dem Teil der Insel, der den Namen Relendel trägt. Du hast bereits davon gehört?
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_01_15_02"); //Ja, nicht zuletzt auf der Suche nach den Bruchstücken verschlug es mich dahin.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_03"); //Gut, deine Kenntnis um diese Gegend macht die Sache zumindest etwas einfacher.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_04"); //Um mein Anliegen zu konkretisieren: ich hörte von Plagen, die in letzter Zeit gehäuft Relendel heimsuchten.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_05"); //Solange die Ursachen, oder die Urheber des ganzen nicht feststehen, besteht Grund zur Beunruhigung.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_01_15_06"); //Was sollen das für Plagen sein?
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_07"); //Wesen, die viele Menschen für gewöhnlich als Schädlinge bezeichnen würden, Kaninchen, Ratten, Insekten.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_08"); //Wir als Wassermagier und Erhalter des Gleichgewichtes wissen natürlich, dass auch sie ihren Platz im Gefüge der Welt haben.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_09"); //Aber die plötzlich auftretenden Auswüchse der Population sind mehr als ungewöhnlich.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_01_15_10"); //Das hört sich aber eher nach einem Thema für die Waldläufer an.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_11"); //Nein, es besteht Grund zu der Annahme, das sie nicht natürlichen Ursprunges sind, Magie dahinter steckt, womit es uns obliegt, die Sache zu ergründen.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_01_15_12"); //In Ordnung, dann mache ich mich auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_13"); //Danke. Adanos möge dich begleiten.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_00"); //The great danger that Khorinis threatened is banished. However, there are still incidents and reports that require our attention.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_01"); //The request with which I entrust you now takes place in the north, the part of the island called Relendel. You've heard of it?
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_01_15_02"); //Yeah, last but not least in search of the fragments, I lost my way.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_03"); //Well, at least your knowledge of the area makes things a little easier.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_04"); //To put my request in concrete terms: I heard of plagues that have recently ravaged Relendel.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_05"); //As long as the causes, or the originators of the whole thing are not known, there is cause for concern.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_01_15_06"); //What kind of plagues are they?
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_07"); //Beings that many people would usually call pests, rabbits, rats, insects.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_08"); //As water magicians and balance maintainers, we know of course that they too have their place in the structure of the world.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_09"); //But the sudden outgrowths of the population are more than unusual.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_01_15_10"); //But that sounds more like a theme for the Rangers.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_11"); //No, there is reason to believe that they are not of natural origin, that there is magic behind it, so it is up to us to investigate the matter.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_01_15_12"); //All right, then I'll be on my way.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_01_14_13"); //Thanks. May Adanos go with you.
 
 	Log_CreateTopic	(TOPIC_MOD_ADANOS_PLAGE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ADANOS_PLAGE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Saturas gab mir diesmal die Aufgabe einigen Plagen in Relendel auf den Grund zu gehen. Allerlei Bodensatz an Tieren – Ratten, Kaninchen, Insekten - soll sich dort in unnatürlichem Tempo vermehrt haben.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Saturas gave me this time the task to investigate some plagues in Relendel. All kinds of sediments of animals - rats, rabbits, insects - are said to have reproduced there at an unnatural rate.");
 };
 
 INSTANCE Info_Mod_Saturas_AW_KhorataPlage_02 (C_INFO)
@@ -1508,7 +1508,7 @@ INSTANCE Info_Mod_Saturas_AW_KhorataPlage_02 (C_INFO)
 	information	= Info_Mod_Saturas_AW_KhorataPlage_02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe herausgefunden, was es mit den Plagen auf sich hat.";
+	description	= "I've found out what the plagues are.";
 };
 
 FUNC INT Info_Mod_Saturas_AW_KhorataPlage_02_Condition()
@@ -1521,17 +1521,17 @@ FUNC INT Info_Mod_Saturas_AW_KhorataPlage_02_Condition()
 
 FUNC VOID Info_Mod_Saturas_AW_KhorataPlage_02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_00"); //Ich habe herausgefunden, was es mit den Plagen auf sich hat.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_02_14_01"); //(erwartungsvoll) Ja, berichte.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_02"); //Sie alle haben unterschiedliche Ursprünge.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_03"); //Die Ratten entstammen einem Volk von Rattenmenschen aus der Eiswelt.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_04"); //Bei der Kaninchenplage haben die Dämonenmagier ihre Finger im Spiel. Sie erproben Plagenzauber.
-	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_05"); //Und die Heimsuchung durch die Insekten zu guter letzt, beruht auf einem göttlichen Fluch.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_02_14_06"); //(erstaunt) Unglaublich! Das, was du zu berichten hast zerschlägt nicht nur meine Sorgen um eine böse Macht, die hinter all dem Stecken könnte.
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_02_14_07"); //Es stellt zudem noch einen wahren Schatz des Wissens dar, der unser Verständnis um die Schöpfung Adanos’ erweitert ...
-	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_02_14_08"); //Hier, nimm diese magischen Artefakte zum Dank. Der Segen Adanos möge allzeit auf dir ruhen.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_00"); //I've found out what the plagues are.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_02_14_01"); //Yes, report.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_02"); //They all have different origins.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_03"); //The rats come from a race of rat people from the ice world.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_04"); //The demon magicians have their fingers in the rabbit plague. They're testing plague spells.
+	AI_Output(hero, self, "Info_Mod_Saturas_AW_KhorataPlage_02_15_05"); //And the visitation by insects to the last resort is based on a divine curse.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_02_14_06"); //(amazed) Unbelievable! What you have to report not only shatters my worries about an evil power that could be behind all this.
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_02_14_07"); //It also represents a true treasure of knowledge, which expands our understanding by the creation of Adanos....
+	AI_Output(self, hero, "Info_Mod_Saturas_AW_KhorataPlage_02_14_08"); //Here, take these magical artifacts as a thank you. May the blessing of Adano always rest on you.
 
-	B_ShowGivenThings	("6 Tränke, Runenstein, 5 Spruchrollen und Herz eines Eisgolems erhalten");
+	B_ShowGivenThings	("6 potions, rune stone, 5 rulers and heart of an ice-golem preserved");
 
 	CreateInvItems	(hero, ItPo_Geist, 1);
 	CreateInvItems	(hero, ItPo_Mana_03, 5);
@@ -1555,7 +1555,7 @@ INSTANCE Info_Mod_Saturas_NW_JGScroll (C_INFO)
 	information	= Info_Mod_Saturas_NW_JGScroll_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier eine Rolle und eine Nachricht, die ich nicht lesen kann.";
+	description	= "I've got a part and a message here that I can't read.";
 };
 
 FUNC INT Info_Mod_Saturas_NW_JGScroll_Condition()
@@ -1570,12 +1570,12 @@ FUNC INT Info_Mod_Saturas_NW_JGScroll_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_JGScroll_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_JGScroll_15_00"); //Ich habe hier eine Rolle und eine Nachricht, die ich nicht lesen kann.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_JGScroll_14_01"); //Zeig mal her.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_JGScroll_15_00"); //I've got a part and a message here that I can't read.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_JGScroll_14_01"); //Let me see that.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_JGScroll_14_02"); //Ah ja. Die alte Schrift. Frag Riordian, er hat sich darauf spezialisiert.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_JGScroll_14_02"); //Ah yes. The old handwriting. Ask Riordian, he specializes in it.
 };
 
 INSTANCE Info_Mod_Saturas_NW_Rasend (C_INFO)
@@ -1598,21 +1598,21 @@ FUNC INT Info_Mod_Saturas_NW_Rasend_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Rasend_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_00"); //Bei Adanos, da bist du ja. Wie du siehst ist hier etwas Schreckliches vorgefallen ...
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend_15_01"); //Ja, ich weiß bereits bescheid. Die Stadt und das Kloster haben dasselbe Schicksal erlitten.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_02"); //Das Kloster auch ...?! Von der Stadt hatte uns bereits Diego berichtet.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_03"); //Aber wenn sogar das Kloster angegriffen wurde ... (überlegt) das alles lässt doch ein deutliches Muster erkennen ...
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_04"); //Paladine, Feuermagier ... und wir ... Der Dämon scheint gezielt die Diener Innos und Adanos anzugreifen.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend_15_05"); //Nun, ein übler Dämon, eine Kreatur der Finsternis ... so abwegig erscheint das eigentlich nicht.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend_15_06"); //Hmm, welchen Weg hat die Kreatur nach ihrem Unwesen hier eingeschlagen?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_07"); //Er überflog die Gebirge Richtung Relendel.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend_15_08"); //Dann werde ich mal die Verfolgung aufnehmen.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_09"); //Sei aber um Adanos’ Willen vorsichtig. Dieses Geschöpf ist unheimlich mächtig.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_10"); //Außerdem solltest du dich vielleicht bei Zeiten auch bei Xardas erkundigen.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_11"); //Als ein Diener Beliar’s wird er dir bestimmt auch manch Nützliches offen legen können ...
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_12"); //Adanos möge dich behüten.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_00"); //By Adanos, there you are. As you can see, something terrible has happened here....
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend_15_01"); //Yeah, I already know. The city and the monastery have suffered the same fate.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_02"); //The monastery too...?! Diego had already told us about the city.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_03"); //But if even the monastery was attacked.... (considered) all this shows a clear pattern...
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_04"); //Paladins, fire magicians.... and we.... The demon seems to target the servants Innos and Adanos.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend_15_05"); //Well, an evil demon, a creature of darkness... it doesn't seem that absurd.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend_15_06"); //Hmm, what path did the creature take after its mischief?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_07"); //He flew over the mountains towards Relendel.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend_15_08"); //I'm gonna go chase them.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_09"); //But be careful for Adanos' sake. This creature is incredibly powerful.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_10"); //Also, you might want to check with Xardas at times.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_11"); //As a servant of Beliar he will certainly be able to reveal some useful things to you...
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend_14_12"); //May Adanos keep you safe.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Auch die Ausgrabungsstätte blieb von den Angriffen des Dämons nicht verschont. Dieser hat sich anschließend nach Relendel begeben. Saturas riet mir dazu, Xardas aufzusuchen, um vielleicht mehr über dieses finstere Geschöpf zu erfahren.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Also the excavation site was not spared from the attacks of the demon. He then went to Relendel. Saturas advised me to visit Xardas to find out more about this sinister creature.");
 };
 
 INSTANCE Info_Mod_Saturas_NW_Rasend02 (C_INFO)
@@ -1635,18 +1635,18 @@ FUNC INT Info_Mod_Saturas_NW_Rasend02_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Rasend02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_00"); //Ich kann spüren, dass die Gefahr gebannt ist und dass du hier unversehrt erscheinst liefert mir die Bestätigung.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_01"); //Wie ist dir das nur wieder gelungen ...
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend02_15_02"); //Das willst du glaube ich gar nicht wissen ...
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_03"); //Du hast auf jeden Fall ganz Khorinis zum wiederholten Male einen unschätzbaren Dienst erwiesen.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_04"); //Es steht außer Frage, dass du erwählt bist zu den höchsten Würdenträgern unter den Dienern Adanos zu gehören.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_00"); //I can sense that the danger has been averted and that you appear here undamaged provides me with confirmation.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_01"); //How did you manage to do that again?
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend02_15_02"); //I don't think you want to know...
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_03"); //In any case, you have once again rendered an invaluable service to the whole of Khorini.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_04"); //There is no question that you are chosen to be one of the highest dignitaries among the servants of Adano.
 
 	if (Mod_Gilde == 10)
 	{
-		AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_05"); //Fühlst du dich dazu bereit, der Gemeinschaft als Richter des Wassers zu dienen?
-		AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend02_15_06"); //Ja, mein Wunsch ist es ein Richter des Wassers zu werden.
-		AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_07"); //Dann nimm diese Robe und den Segen Adanos.
-		AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_08"); //Möge das Gleichgewicht durch dein Wirken auch weiterhin Bestand haben.
+		AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_05"); //Do you feel ready to serve the community as a judge of water?
+		AI_Output(hero, self, "Info_Mod_Saturas_NW_Rasend02_15_06"); //Yeah, my wish is to be a judge of the water.
+		AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_07"); //Then take this robe and Adano's blessing.
+		AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_08"); //May the equilibrium continue to exist through your work.
 
 		CreateInvItems	(self, ITAR_KDW_H, 1);
 		B_GiveInvItems	(self, hero, ITAR_KDW_H, 1);
@@ -1661,7 +1661,7 @@ FUNC VOID Info_Mod_Saturas_NW_Rasend02_Info()
 	}
 	else if (Mod_Gilde == 17)
 	{
-		AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_09"); //Begib dich am besten gleich zu Ethan.
+		AI_Output(self, hero, "Info_Mod_Saturas_NW_Rasend02_14_09"); //Why don't you go see Ethan right away?
 
 		B_GivePlayerXP	(600);
 	};
@@ -1679,7 +1679,7 @@ INSTANCE Info_Mod_Saturas_NW_Sweetwater (C_INFO)
 	information	= Info_Mod_Saturas_NW_Sweetwater_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du brauchst meine Hilfe?";
+	description	= "You need my help?";
 };
 
 FUNC INT Info_Mod_Saturas_NW_Sweetwater_Condition()
@@ -1692,15 +1692,15 @@ FUNC INT Info_Mod_Saturas_NW_Sweetwater_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Sweetwater_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater_15_00"); //Du brauchst meine Hilfe?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater_14_01"); //Ja. Ich wüsste sonst niemanden.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater_15_02"); //Also gut. Was liegt an?
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater_14_03"); //Die Piraten brauchen Unterstützung. Einen tüchtigen Jäger. Das bist du doch?
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater_15_04"); //Wohl wahr. Ich wurde sogar zum Waldläufer ernannt.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater_14_05"); //Genau der richtige Mann, scheint mir. Nun mach hin. Melde dich bei den Piraten.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater_15_06"); //Bin schon unterwegs.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater_15_00"); //You need my help?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater_14_01"); //Yeah. I wouldn't know anyone else.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater_15_02"); //All right, then. What's happening?
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater_14_03"); //The pirates need support. A good hunter. Isn't that you?
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater_15_04"); //True enough. I was even appointed ranger.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater_14_05"); //Just the right man, it seems to me. Now, get on with it. Report to the pirates.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater_15_06"); //I'm on my way.
 
-	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "Saturas schickt mich zu den Piraten. Mal sehen, was die für mich zu tun haben ...");
+	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "Saturas sends me to the pirates. Let's see what they have to do for me....");
 };
 
 INSTANCE Info_Mod_Saturas_NW_Sweetwater2 (C_INFO)
@@ -1723,11 +1723,11 @@ FUNC INT Info_Mod_Saturas_NW_Sweetwater2_Condition()
 
 FUNC VOID Info_Mod_Saturas_NW_Sweetwater2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater2_14_00"); //Was war los?
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater2_15_01"); //Die hatten eine Alligatorenplage am See. Ist jetzt erledigt.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater2_14_02"); //Habe ich nicht anders erwartet. Ich lasse Vatras Bescheid geben. Du hast sicher noch im Minental zu tun.
-	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater2_15_03"); //Das kann man sagen. Bis später.
-	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater2_14_04"); //Adanos sei mit dir.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater2_14_00"); //What was going on?
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater2_15_01"); //They had an alligator plague on the lake. It's done now.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater2_14_02"); //I didn't expect otherwise. I'll let Vatras know. I'm sure you're still busy in the Minental.
+	AI_Output(hero, self, "Info_Mod_Saturas_NW_Sweetwater2_15_03"); //You could say that. See you later.
+	AI_Output(self, hero, "Info_Mod_Saturas_NW_Sweetwater2_14_04"); //Adanos be with you.
 
 	B_SetTopicStatus	(TOPIC_MOD_JG_SWEETWATER, LOG_SUCCESS);
 };
@@ -1754,17 +1754,17 @@ FUNC INT Info_Mod_Saturas_PMSchulden_Condition()
 
 FUNC VOID Info_Mod_Saturas_PMSchulden_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_00"); //Bist du gekommen, um deine Strafe zu zahlen?
+	AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_00"); //Did you come to pay your fine?
 
 	if (B_GetTotalPetzCounter(self) > Saturas_LastPetzCounter)
 	{
-		AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_01"); //Ich hatte mich schon gefragt, ob du es überhaupt noch wagst, hierher zu kommen!
-		AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_02"); //Anscheinend ist es nicht bei den letzten Anschuldigungen geblieben!
+		AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_01"); //I was wondering if you'd even dare come here!
+		AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_02"); //Apparently, it's not the latest accusations!
 
 		if (Saturas_Schulden < 1000)
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_03"); //Ich hatte dich gewarnt! Die Strafe, die du jetzt zahlen musst, ist höher!
-			AI_Output (hero, self, "Info_Mod_Saturas_PMAdd_15_00"); //Wieviel?
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_03"); //I warned you! The fine you have to pay now is higher!
+			AI_Output (hero, self, "Info_Mod_Saturas_PMAdd_15_00"); //How much?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Saturas_LastPetzCounter);
 		
@@ -1779,42 +1779,42 @@ FUNC VOID Info_Mod_Saturas_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_04"); //Du hast mich schwer enttäuscht!
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_04"); //You let me down so badly!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Saturas_LastPetzCrime)
 	{
-		AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_05"); //Es haben sich einige neue Dinge ergeben.
+		AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_05"); //Some new things have come up.
 		
 		if (Saturas_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_06"); //Plötzlich gibt es niemanden mehr, der dich des Mordes bezichtigt.
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_06"); //Suddenly, there's no one left to accuse you of murder.
 		};
 		
 		if (Saturas_LastPetzCrime == CRIME_THEFT)
 		|| ( (Saturas_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_07"); //Niemand erinnert sich mehr, dich bei einem Diebstahl gesehen zu haben.
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_07"); //No one remembers seeing you at a theft.
 		};
 		
 		if (Saturas_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Saturas_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_08"); //Es gibt keine Zeugen mehr dafür, dass du jemals in eine Schlägerei verwickelt warst.
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_08"); //There's no more witnesses to the fact that you've ever been in a fight.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_09"); //Anscheinend haben sich alle Anklagen gegen dich in Wohlgefallen aufgelöst.
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_09"); //Apparently all the charges against you have vanished.
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_10"); //Ich weiß nicht, was da gelaufen ist, aber ich warne dich: Spiel keine Spielchen mit mir.
+		AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_10"); //I don't know what happened, but I warn you: don't play games with me.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_11"); //Ich habe mich jedenfalls entschieden, dir deine Schulden zu erlassen.
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_12"); //Sieh zu, dass du nicht wieder in Schwierigkeiten kommst.
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_11"); //Anyway, I've decided to waive your debt.
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_12"); //Make sure you don't get in trouble again.
 	
 			Saturas_Schulden			= 0;
 			Saturas_LastPetzCounter 	= 0;
@@ -1822,9 +1822,9 @@ FUNC VOID Info_Mod_Saturas_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_13"); //Damit eins klar ist: Deine Strafe musst du trotzdem in voller Höhe zahlen.
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_13"); //One thing is clear: you still have to pay your penalty in full.
 			B_Say_Gold (self, hero, Saturas_Schulden);
-			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_14"); //Also, was ist?
+			AI_Output (self, hero, "Info_Mod_Saturas_PMSchulden_14_14"); //So, what is it?
 		};
 	};
 	
@@ -1833,27 +1833,27 @@ FUNC VOID Info_Mod_Saturas_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Saturas_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Saturas_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Saturas_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Saturas_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Saturas_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Saturas_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Saturas_PMSchulden,"I don't have enough gold!",Info_Mod_Saturas_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Saturas_PMSchulden,"How much was it again?",Info_Mod_Saturas_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Saturas_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Saturas_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Saturas_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Saturas_PMSchulden,"I want to pay the fine.",Info_Mod_Saturas_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void Info_Mod_Saturas_PMSchulden_HowMuchAgain()
 {
-	AI_Output (hero, self, "Info_Mod_Saturas_PMSchulden_HowMuchAgain_15_00"); //Wie viel war es noch mal?
+	AI_Output (hero, self, "Info_Mod_Saturas_PMSchulden_HowMuchAgain_15_00"); //How much was it again?
 	B_Say_Gold (self, hero, Saturas_Schulden);
 
 	Info_ClearChoices  	(Info_Mod_Saturas_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Saturas_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Saturas_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Saturas_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Saturas_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Saturas_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Saturas_PMSchulden,"I don't have enough gold!",Info_Mod_Saturas_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Saturas_PMSchulden,"How much was it again?",Info_Mod_Saturas_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Saturas_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Saturas_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Saturas_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Saturas_PMSchulden,"I want to pay the fine.",Info_Mod_Saturas_PETZMASTER_PayNow);
 	};
 };
 
@@ -1881,8 +1881,8 @@ FUNC VOID Info_Mod_Saturas_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_01"); //Gut, dass du zu mir kommst, bevor alles noch schlimmer für dich wird.
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_02"); //Mord ist ein schweres Vergehen!
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_01"); //I'm glad you came to me before things got worse for you.
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_02"); //Murder is a grave offence!
 
 		Saturas_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
 
@@ -1890,41 +1890,41 @@ FUNC VOID Info_Mod_Saturas_PETZMASTER_Info()
 
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_03"); //Ganz zu schweigen von den anderen Sachen, die du angerichtet hast.
+			AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_03"); //Not to mention the other things you've done.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_06"); //Ich habe kein Interesse daran, dich an den Galgen zu bringen. Wir sind im Krieg und wir brauchen jeden Mann.
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_07"); //Aber es wird nicht leicht sein, die Leute wieder gnädig zu stimmen.
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_08"); //Du könntest deine Reue zeigen, indem du eine Strafe zahlst - natürlich muss die Strafe angemessen hoch sein.
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_06"); //I have no interest in putting you on the gallows. We're at war, and we need every man we can get.
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_07"); //But it won't be easy to make people gracious again.
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_08"); //You could show your repentance by paying a fine - of course the penalty must be appropriate.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_09"); //Gut, dass du kommst! Du wirst des Diebstahls bezichtigt! Es gibt Zeugen!
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_09"); //Good of you to come! You're accused of stealing! There are witnesses!
 
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_10"); //Von den anderen Dingen, die mir zu Ohren gekommen sind, will ich gar nicht erst reden.
+			AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_10"); //I don't even want to talk about the other things I've heard.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_11"); //Ich werde so ein Verhalten bei uns nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_12"); //Du wirst eine Strafe zahlen müssen, um dein Verbrechen wieder gutzumachen!
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_11"); //I will not tolerate such behaviour in our country!
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_12"); //You'll have to pay a fine to make up for your crime!
 		
 		Saturas_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_13"); //Wenn du dich mit dem Gesindel im Hafen herumprügelst, ist das eine Sache ...
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_14"); //Aber wenn du unsere Leute angreifst, muss ich dich zur Rechenschaft ziehen.
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_13"); //If you fight with the riffraff in the harbour, that's one thing...
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_14"); //But if you attack our people, I'll have to hold you accountable.
 
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_15"); //Und die Sache mit den Schafen musste wohl auch nicht sein.
+			AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_15"); //And I don't think it had to be the case with the sheep.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_16"); //Wenn ich dir das durchgehen lasse, macht hier bald jeder, was er will.
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_17"); //Also wirst du eine angemessene Strafe zahlen - und die Sache ist vergessen.
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_16"); //If I let you get away with this, everybody's gonna do what they want.
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_17"); //So you'll pay an appropriate fine - and the whole thing will be forgotten.
 		
 		Saturas_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
@@ -1932,14 +1932,14 @@ FUNC VOID Info_Mod_Saturas_PETZMASTER_Info()
 	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_18"); //Mir ist zu Ohren gekommen, du hättest dich an unseren Schafen vergriffen.
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_19"); //Dir ist klar, dass ich das nicht durchgehen lassen kann.
-		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_20"); //Du wirst eine Entschädigung zahlen müssen!
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_18"); //I've heard that you've been messing with our sheep.
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_19"); //You do realize I can't let this go through.
+		AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_14_20"); //You'll have to pay compensation!
 		
 		Saturas_Schulden = 100;
 	};
 	
-	AI_Output (hero, self, "Info_Mod_Saturas_PETZMASTER_15_21"); //Wie viel?
+	AI_Output (hero, self, "Info_Mod_Saturas_PETZMASTER_15_21"); //How much?
 	
 	if (Saturas_Schulden > 1000)	{	Saturas_Schulden = 1000;	};
 		
@@ -1947,18 +1947,18 @@ FUNC VOID Info_Mod_Saturas_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Saturas_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Saturas_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Saturas_PETZMASTER,"Ich habe nicht genug Gold!",Info_Mod_Saturas_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Saturas_PETZMASTER,"I don't have enough gold!",Info_Mod_Saturas_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Saturas_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Saturas_PETZMASTER,"Ich will die Strafe zahlen.",Info_Mod_Saturas_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Saturas_PETZMASTER,"I want to pay the fine.",Info_Mod_Saturas_PETZMASTER_PayNow);
 	};
 };
 
 func void Info_Mod_Saturas_PETZMASTER_PayNow()
 {
-	AI_Output (hero, self, "Info_Mod_Saturas_PETZMASTER_PayNow_15_00"); //Ich will die Strafe zahlen!
+	AI_Output (hero, self, "Info_Mod_Saturas_PETZMASTER_PayNow_15_00"); //I want to pay the fine!
 	B_GiveInvItems (hero, self, itmi_gold, Saturas_Schulden);
-	AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_PayNow_14_01"); //Gut! Ich werde dafür sorgen, dass es jeder von uns erfährt - damit wäre dein Ruf einigermaßen wiederhergestellt.
+	AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_PayNow_14_01"); //Good! I will see to it that each one of us learns about it - so your reputation would be reasonably restored.
 
 	B_GrantAbsolution (LOC_WMCAMP);
 	
@@ -1972,9 +1972,9 @@ func void Info_Mod_Saturas_PETZMASTER_PayNow()
 
 func void Info_Mod_Saturas_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Saturas_PETZMASTER_PayLater_15_00"); //Ich habe nicht genug Gold!
-	AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_PayLater_14_01"); //Dann sieh zu, dass du das Gold so schnell wie möglich beschaffst.
-	AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_PayLater_14_02"); //Und ich warne dich: Wenn du dir noch was zu schulden kommen lässt, wird die Sache noch schlimmer für dich!
+	AI_Output (hero, self, "Info_Mod_Saturas_PETZMASTER_PayLater_15_00"); //I don't have enough gold!
+	AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_PayLater_14_01"); //Then see that you get the gold as soon as possible.
+	AI_Output (self, hero, "Info_Mod_Saturas_PETZMASTER_PayLater_14_02"); //And I'm warning you, if you owe yourself anything, it's going to get worse for you.
 	
 	Saturas_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Saturas_LastPetzCrime		= B_GetGreatestPetzCrime(self);

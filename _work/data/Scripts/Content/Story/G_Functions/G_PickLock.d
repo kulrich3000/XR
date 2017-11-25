@@ -57,7 +57,7 @@ func void G_PickLock (var int bSuccess, var int bBrokenOpen)
 		}
 		else
 		{
-			Print	("Sollte hier nie ankommen!!!");
+			Print	("Should never get here!!!");
 		};
 	};
 };

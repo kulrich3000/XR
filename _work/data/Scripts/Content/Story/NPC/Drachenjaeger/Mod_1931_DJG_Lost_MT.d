@@ -1,7 +1,7 @@
 instance Mod_1931_DJG_Lost_MT (Npc_Default)
 {
      // ----- NSC -----
-     name        = "Lost";
+     name        = "lot";
      guild       = GIL_MIL;
      id          = 1931;
      voice       = 7;

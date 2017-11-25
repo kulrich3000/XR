@@ -61,12 +61,12 @@ instance ItRi_AdanosRing(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Adanos' Ring des Wassers";
+	description				= "Adanos' Ring of Water";
 	
 	TEXT[1]					= NAME_Bonus_Mana;
 	COUNT[1]				= 10;
 
-	TEXT[4]			= "Set: Adanos' Gleichgewicht";
+	TEXT[4]			= "Set: Adanos' Balance";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -109,14 +109,14 @@ INSTANCE  ItBE_AdanosBelt (C_Item)
 	on_equip		=	Equip_ItBE_AdanosBelt;
 	on_unequip		=	UnEquip_ItBE_AdanosBelt;
 
-	description		=  "Adanos' Gürtel des Frostes";
+	description		=  "Adanos' belt of frost";
 
 	TEXT[1]			=	NAME_Prot_Fire;			
 	COUNT[1]		= 	5;
 	TEXT[2]			=	NAME_Prot_Magic;		
 	COUNT[2]		= 	5;
 
-	TEXT[4]			= "Set: Adanos' Gleichgewicht";
+	TEXT[4]			= "Set: Adanos' Balance";
 
 	TEXT[5]			=   NAME_Value;
 	COUNT[5]		=   value;
@@ -159,7 +159,7 @@ INSTANCE  ItAm_AdanosAmulett (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Adanos' Amulett des Nebels";
+	description		= "Adanos' Amulet of the Nebula";
 
 	TEXT[1]			= NAME_Bonus_Mana;
 	COUNT[1]		= 20;
@@ -167,7 +167,7 @@ INSTANCE  ItAm_AdanosAmulett (C_Item)
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= 10;
 
-	TEXT[4]			= "Set: Adanos' Gleichgewicht";
+	TEXT[4]			= "Set: Adanos' Balance";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;

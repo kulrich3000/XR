@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Troll_Black(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Schwarzer Troll";
+	name							=	"Black Troll";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL_BLACK;
 	level							=	200; //40
@@ -107,7 +107,7 @@ INSTANCE BlackTrollTransform	(Mst_Default_Troll_Black)
 
 INSTANCE Troll_Silber	(Mst_Default_Troll_Black)
 {
-	name	= "Silbertroll";
+	name	= "silver troll";
 
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL_SILBER;
 	level							=	300; //40

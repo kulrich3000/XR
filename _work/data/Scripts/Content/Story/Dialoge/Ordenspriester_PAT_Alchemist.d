@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest (C_INFO)
 	information	= Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hieltest du davon, zur Abwechslung mal wieder die Hände zum Gebet zu falten in der Kirche unseres Herrn?";
+	description	= "What did you think about folding your hands for prayer in the Church of our Lord?";
 };
 
 FUNC INT Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Condition()
@@ -20,9 +20,9 @@ FUNC INT Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_15_00"); //Was hieltest du davon, zur Abwechslung mal wieder die Hände zum Gebet zu falten in der Kirche unseres Herrn?
-	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_01"); //Hmm, ja, das Gebet in der Kirche. Danke, dass du mich daran erinnerst, Bruder. Mein letzter Besuch liegt schon allzu lange zurück.
-	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_02"); //Danach werde ich auch gewiss mit ruhigerer Hand weiterarbeiten können. Ich mache mich sofort auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_15_00"); //What did you think about folding your hands for prayer in the Church of our Lord?
+	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_01"); //Hmm, yes, prayer in church. Thanks for reminding me, brother. My last visit was too long ago.
+	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_02"); //After that I will certainly be able to continue working with a calmer hand. I'll be on my way right away.
 
 	AI_StopProcessInfos	(self);
 
@@ -34,7 +34,7 @@ FUNC VOID Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Info()
 
 	if (Mod_Pat_Beter == 3)
 	{
-		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "So, ich denke ich haben genügend Jünger Innos’ zum Gebet bewegen können und sollte in der Kirche bei Nagon vorbeischauen.");
+		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "So, I think I have had enough disciples of Inno's to get them to pray and I should stop by the church at Nagon.");
 	};
 };
 

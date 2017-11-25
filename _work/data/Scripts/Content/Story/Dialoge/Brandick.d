@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Brandick_Hi (C_INFO)
 	information	= Info_Mod_Brandick_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und wie läuft die Arbeit in der Mine?";
+	description	= "And how's work in the mine?";
 };
 
 FUNC INT Info_Mod_Brandick_Hi_Condition()
@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Brandick_Hi_Condition()
 
 FUNC VOID Info_Mod_Brandick_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brandick_Hi_15_00"); //Und wie läuft die Arbeit in der Mine?
-	AI_Output(self, hero, "Info_Mod_Brandick_Hi_11_01"); //Ach, war schon mal besser. Früher hatte ich mehr Erz in der Tasche ... als Aleph noch da war ...
-	AI_Output(hero, self, "Info_Mod_Brandick_Hi_15_02"); //Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Brandick_Hi_11_03"); //Nunja ... er war ... ziemlich geschickt in einigen Dingen und hat mir gutes Erz dafür gezahlt, dass ich mal ein Auge zugedrückt, wenn er nicht geackert hat. Aber beim Beben hat es ihn dann erwischt.
-	AI_Output(hero, self, "Info_Mod_Brandick_Hi_15_04"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Brandick_Hi_11_05"); //Nur paar Meter von uns entfernt ist er hinabgestürzt. Muss sofort tot gewesen sein ... sein Glück. Blieb ihm einiges erspart ...
-	AI_Output(self, hero, "Info_Mod_Brandick_Hi_11_06"); //Nur schade, dass ich nicht einen Tag vorher bei ihm abkassiert hatte ... und mit dem verschwundenen Schlüssel von Santino habe ich auch so meinen Verdacht.
+	AI_Output(hero, self, "Info_Mod_Brandick_Hi_15_00"); //And how's work in the mine?
+	AI_Output(self, hero, "Info_Mod_Brandick_Hi_11_01"); //Oh, I've been better. I used to have more ore in my pocket.... when Aleph was still there...
+	AI_Output(hero, self, "Info_Mod_Brandick_Hi_15_02"); //What do you think?
+	AI_Output(self, hero, "Info_Mod_Brandick_Hi_11_03"); //Well... he was.... quite skillful in some things and has paid me good ore for the fact that I once turned a blind eye if he has not worked hard. But he was hit by the quake.
+	AI_Output(hero, self, "Info_Mod_Brandick_Hi_15_04"); //What's happening?
+	AI_Output(self, hero, "Info_Mod_Brandick_Hi_11_05"); //Only a few meters away from us he fell down. Must have been dead instantly.... his happiness. Spared him a lot of money....
+	AI_Output(self, hero, "Info_Mod_Brandick_Hi_11_06"); //Too bad I hadn't paid him the day before.... and with Santino's missing key, I have my suspicion.
 };
 
 INSTANCE Info_Mod_Brandick_Pickpocket (C_INFO)

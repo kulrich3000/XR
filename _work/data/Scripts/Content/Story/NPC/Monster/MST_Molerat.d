@@ -266,7 +266,7 @@ INSTANCE Molerat_Sumpf	(Mst_Default_Molerat)
 INSTANCE YMolerat	(Mst_Default_Molerat)
 {
 	level							=	3;
-	name							=	"Junge Molerat";
+	name							=	"Young molate";
 	
 	//----- Attribute ----	
 	attribute	[ATR_STRENGTH]		=	15;
@@ -294,7 +294,7 @@ INSTANCE YMolerat	(Mst_Default_Molerat)
 
 INSTANCE Molerat_Fett_01	(Mst_Default_Molerat)
 {
-	name = "Wohlgenährte Molerat";
+	name = "Well-nourished molate";
 	level = 6;
 	
 	//----- Attribute ----	
@@ -322,7 +322,7 @@ INSTANCE Molerat_Fett_01	(Mst_Default_Molerat)
 
 INSTANCE Molerat_Fett_02	(Mst_Default_Molerat)
 {
-	name = "Wohlgenährte Molerat";
+	name = "Well-nourished molate";
 	level = 6;
 	
 	//----- Attribute ----	
@@ -350,7 +350,7 @@ INSTANCE Molerat_Fett_02	(Mst_Default_Molerat)
 
 INSTANCE Molerat_Fett_03	(Mst_Default_Molerat)
 {
-	name = "Wohlgenährte Molerat";
+	name = "Well-nourished molate";
 	level = 6;
 	
 	//----- Attribute ----	
@@ -378,7 +378,7 @@ INSTANCE Molerat_Fett_03	(Mst_Default_Molerat)
 
 INSTANCE Molerat_Fett_04	(Mst_Default_Molerat)
 {
-	name = "Wohlgenährte Molerat";
+	name = "Well-nourished molate";
 	level = 6;
 	
 	//----- Attribute ----	
@@ -406,7 +406,7 @@ INSTANCE Molerat_Fett_04	(Mst_Default_Molerat)
 
 INSTANCE Molerat_Fett_05	(Mst_Default_Molerat)
 {
-	name = "Wohlgenährte Molerat";
+	name = "Well-nourished molate";
 	level = 6;
 	
 	//----- Attribute ----	

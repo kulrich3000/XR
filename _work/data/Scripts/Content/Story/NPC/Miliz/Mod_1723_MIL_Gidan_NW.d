@@ -1,7 +1,7 @@
 instance Mod_1723_MIL_Gidan_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gidan";
+	name 		= "gidan";
 	guild 		= GIL_PAL;
 	id 			= 1723;
 	voice 		= 13;

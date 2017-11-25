@@ -20,7 +20,7 @@ FUNC VOID Info_Mod_Setta_TUG_Hi_Info()
 {
 	AI_TurnToNPC(self, Mod_7352_OUT_Trador_TUG);
 	
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Hi_16_00"); //Ich habe mich wieder erinnert, habe ich. Nur deinetwegen waren wir in dem Tal!
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Hi_16_00"); //I remembered again, I did. Only because of you we were in the valley!
 
 	AI_StopProcessInfos	(self);
 };
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Setta_TUG_Trador (C_INFO)
 	information	= Info_Mod_Setta_TUG_Trador_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das wäre geschafft. Woher kanntest du Trador?";
+	description	= "That's a wrap. How did you know Trador?";
 };
 
 FUNC INT Info_Mod_Setta_TUG_Trador_Condition()
@@ -47,14 +47,14 @@ FUNC INT Info_Mod_Setta_TUG_Trador_Condition()
 
 FUNC VOID Info_Mod_Setta_TUG_Trador_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Setta_TUG_Trador_15_00"); //Das wäre geschafft. Woher kanntest du Trador?
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_01"); //Vor zwei Jahren war ich noch Tänzerin für Gomez, war ich. Trador war einer der Hofmagier.
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_02"); //Mit ein paar anderen Leuten hat er ein Attentat auf Corristo geplant, hat er, aber ich habe das mitbekommen und gemeldet.
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_03"); //Er hat mich aber noch erwischt, hat er, und mich mit einer Teleporterrune in das Tal verfrachtet.
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_04"); //Ich baute mir ein Häuschen und entdeckte den alten Buff, entdeckte ich.
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_05"); //Ich hab ihm angeboten, bei mir zu nächtigen, hab ich, aber er wollte in seinem Zelt schlafen.
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_06"); //Durch dein Auftauchen wurde mir der Mut zum Handeln zurückgegeben, wurde er.
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_07"); //Vielen Dank! Was soll deine Belohnung sein?
+	AI_Output(hero, self, "Info_Mod_Setta_TUG_Trador_15_00"); //That's a wrap. How did you know Trador?
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_01"); //Two years ago I was still a dancer for Gomez, I was. Trador was one of the court magicians.
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_02"); //He planned an assassination attempt on Corristo with a couple of other people, he did, but I got that and reported it.
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_03"); //But he still caught me, he did, and he took me to the valley with a teleporter rune.
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_04"); //I built myself a cottage and discovered the old Buff, I discovered.
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_05"); //I offered him to stay at my place, but he wanted to sleep in his tent.
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_06"); //Your appearance gave me back the courage to act, he was.
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_16_07"); //Thank you very much! What's your reward?
 
 	Mod_VMG_WSTrador += 1;
 	
@@ -62,22 +62,22 @@ FUNC VOID Info_Mod_Setta_TUG_Trador_Info()
 
 	if (Mod_VMG_WSTrador == 6)
 	{
-		B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Ich habe mit den beiden gesprochen und eine Kurzfassung ihrer Lebensgeschichte gehört. Über seine Gruppe habe ich leider nichts Wissenswertes erfahren, aber ich weiß nun, dass er ein ehemaliger Gefangener in der Kolonie war. Ich sollte mal mit Genn wegen des Teleporters reden.");
+		B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "I spoke to them and heard a summary of their life story. Unfortunately, I didn't learn anything worth knowing about his group, but I now know that he was a former prisoner in the colony. I should talk to Genn about the teleporter.");
 	};
 
 	B_StartOtherRoutine	(self, "DORF");
 
 	Info_ClearChoices	(Info_Mod_Setta_TUG_Trador);
 
-	Info_AddChoice	(Info_Mod_Setta_TUG_Trador, "Gib mir 100 Goldmünzen.", Info_Mod_Setta_TUG_Trador_C);
-	Info_AddChoice	(Info_Mod_Setta_TUG_Trador, "Vielleicht 50 Goldmünzen. Das reicht völlig.", Info_Mod_Setta_TUG_Trador_B);
-	Info_AddChoice	(Info_Mod_Setta_TUG_Trador, "Ich brauche keine Belohnung, dein Dank ist mir genug.", Info_Mod_Setta_TUG_Trador_A);
+	Info_AddChoice	(Info_Mod_Setta_TUG_Trador, "Give me 100 gold coins.", Info_Mod_Setta_TUG_Trador_C);
+	Info_AddChoice	(Info_Mod_Setta_TUG_Trador, "Maybe 50 gold coins. That's quite enough.", Info_Mod_Setta_TUG_Trador_B);
+	Info_AddChoice	(Info_Mod_Setta_TUG_Trador, "I don't need a reward, your gratitude is enough.", Info_Mod_Setta_TUG_Trador_A);
 };
 
 FUNC VOID Info_Mod_Setta_TUG_Trador_C()
 {
-	AI_Output(hero, self, "Info_Mod_Setta_TUG_Trador_C_15_00"); //Gib mir 100 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_C_16_01"); //So viel? Ich muss schauen, ob ich so viel habe, muss ich. Ja, hier.
+	AI_Output(hero, self, "Info_Mod_Setta_TUG_Trador_C_15_00"); //Give me 100 gold coins.
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_C_16_01"); //That much? I need to see if I've got that much, I have to. Yes, here.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -86,8 +86,8 @@ FUNC VOID Info_Mod_Setta_TUG_Trador_C()
 
 FUNC VOID Info_Mod_Setta_TUG_Trador_B()
 {
-	AI_Output(hero, self, "Info_Mod_Setta_TUG_Trador_B_15_00"); //Vielleicht 50 Goldmünzen. Das reicht völlig.
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_B_16_01"); //Hier. Ich weiß, dass das Gold in guten Händen ist, weiß ich.
+	AI_Output(hero, self, "Info_Mod_Setta_TUG_Trador_B_15_00"); //Maybe 50 gold coins. That's quite enough.
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_B_16_01"); //Here. I know the gold is in good hands, I know.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
@@ -98,8 +98,8 @@ FUNC VOID Info_Mod_Setta_TUG_Trador_B()
 
 FUNC VOID Info_Mod_Setta_TUG_Trador_A()
 {
-	AI_Output(hero, self, "Info_Mod_Setta_TUG_Trador_A_15_00"); //Ich brauche keine Belohnung, dein Dank ist mir genug.
-	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_A_16_01"); //Vielen, vielen Dank! Ich werde das nie vergessen, nie.
+	AI_Output(hero, self, "Info_Mod_Setta_TUG_Trador_A_15_00"); //I don't need a reward, your gratitude is enough.
+	AI_Output(self, hero, "Info_Mod_Setta_TUG_Trador_A_16_01"); //Thank you so much! I'll never forget it, never forget it.
 
 	B_GivePlayerXP	(200);
 

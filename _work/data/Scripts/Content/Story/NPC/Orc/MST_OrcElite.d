@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_OrcElite(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Ork Elite";
+	name							=	"Orc Elite";
 	guild							=	GIL_ORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCELITE;
 	voice							=	18;
@@ -110,7 +110,7 @@ INSTANCE OrcElite_Rest (Mst_Default_OrcElite)
 
 INSTANCE SchiffOrk_Berserker (Mst_Default_OrcElite)
 {
-	name	=	"Ork-Kapitän";
+	name	=	"Orc Captain";
 
 	flags = 2;
 
@@ -136,7 +136,7 @@ INSTANCE SchiffOrk_Berserker (Mst_Default_OrcElite)
 //*************************
 INSTANCE OrkElite_AntiPaladinOrkOberst (Mst_Default_OrcElite)
 {
-	name		=	"Orkischer Oberst";
+	name		=	"Orc Colonel";
 	//----- Attribute -----	
 	attribute	[ATR_STRENGTH]		=	140;
 	attribute	[ATR_DEXTERITY]		=	120;
@@ -268,7 +268,7 @@ INSTANCE OrcElite_AntiPaladin3 (Mst_Default_OrcElite)
 //*************************
 INSTANCE OrkElite_AntiPaladinOrkOberst_DI (Mst_Default_OrcElite)
 {
-	name		=	"Orkischer Oberst";
+	name		=	"Orc Colonel";
 	//----- Attribute -----	
 	attribute	[ATR_STRENGTH]		=	150;
 	attribute	[ATR_DEXTERITY]		=	150;

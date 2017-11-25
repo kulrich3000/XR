@@ -1,7 +1,7 @@
 instance Mod_7331_HS_Koenig_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "König"; 
+	name 		= "king"; 
 	guild 		= GIL_OUT;
 	id 			= 7331;
 	voice 		= 6;

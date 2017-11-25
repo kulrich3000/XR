@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Nadja_Hi (C_INFO)
 	information	= Info_Mod_Nadja_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Nadja_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Nadja_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Nadja_Hi_16_00"); //Nadja.
+	AI_Output(self, hero, "Info_Mod_Nadja_Hi_16_00"); //Nadia.
 };
 
 INSTANCE Info_Mod_Nadja_LuteroHochzeit (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Nadja_LuteroHochzeit (C_INFO)
 	information	= Info_Mod_Nadja_LuteroHochzeit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lutero hat dir versprochen, dich zu heiraten?";
+	description	= "Lutero promised to marry you?";
 };
 
 FUNC INT Info_Mod_Nadja_LuteroHochzeit_Condition()
@@ -43,10 +43,10 @@ FUNC INT Info_Mod_Nadja_LuteroHochzeit_Condition()
 
 FUNC VOID Info_Mod_Nadja_LuteroHochzeit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nadja_LuteroHochzeit_15_00"); //Lutero hat dir versprochen, dich zu heiraten?
-	AI_Output(self, hero, "Info_Mod_Nadja_LuteroHochzeit_16_01"); //Mach dir darum mal keinen Kopf. Ich habe in meinem Leben schon Dutzende Heiratsanträge bekommen.
-	AI_Output(self, hero, "Info_Mod_Nadja_LuteroHochzeit_16_02"); //Es gibt Situationen, in denen Männer ihr gesamtes rationales Denken über Bord werfen.
-	AI_Output(self, hero, "Info_Mod_Nadja_LuteroHochzeit_16_03"); //Ich würde ja unglücklich werden, wenn ich all ihre Versprechungen für bare Münze nehmen würde.
+	AI_Output(hero, self, "Info_Mod_Nadja_LuteroHochzeit_15_00"); //Lutero promised to marry you?
+	AI_Output(self, hero, "Info_Mod_Nadja_LuteroHochzeit_16_01"); //Don't worry about that. I've got dozens of offers in my life.
+	AI_Output(self, hero, "Info_Mod_Nadja_LuteroHochzeit_16_02"); //There are situations where men throw all their rational thinking overboard.
+	AI_Output(self, hero, "Info_Mod_Nadja_LuteroHochzeit_16_03"); //I'd be unhappy if I took all her promises at face value.
 };
 
 INSTANCE Info_Mod_Nadja_Pickpocket (C_INFO)

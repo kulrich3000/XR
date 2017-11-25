@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Gobbo_Warrior (C_NPC)			
 {
 	//----- Monster ----
-	name							=	"Goblin - Krieger";
+	name							=	"Goblin - Warrior";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_BLACK;
 	level							=	15;
@@ -155,7 +155,7 @@ INSTANCE Gobbo_Warrior_Visir (Mst_Default_Gobbo_Warrior)
 
 INSTANCE Summoned_Gobbo_Warrior (Mst_Default_Gobbo_Warrior)
 {
-	name							= "Beschworenes Goblin - Krieger";
+	name							= "Summoned Goblin - Warrior";
 	guild							= GIL_SUMMONED_GOBBO_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_GOBBO_WARRIOR;
 	level							= 0;

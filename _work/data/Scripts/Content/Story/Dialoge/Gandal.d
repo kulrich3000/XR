@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Gandal_Lehrer (C_INFO)
 	information	= Info_Mod_Gandal_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Einen guten Bogen hast du da.";
+	description	= "You got a good bow there.";
 };
 
 FUNC INT Info_Mod_Gandal_Lehrer_Condition()
@@ -16,21 +16,21 @@ FUNC INT Info_Mod_Gandal_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Gandal_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gandal_Lehrer_15_00"); //Einen guten Bogen hast du da.
-	AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_01"); //Aber ja. Mein bestes Stück. Extra für mich gemacht.
-	AI_Output(hero, self, "Info_Mod_Gandal_Lehrer_15_02"); //Von wem?
-	AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_03"); //Vom Bogner in der Stadt. Er hatte damals noch Eisenholz vom Festland zum Bögen bauen.
-	AI_Output(hero, self, "Info_Mod_Gandal_Lehrer_15_04"); //Was meinst du mit damals?
-	AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_05"); //Das ist lange her. Noch bevor die Barriere entstand. Einige von uns waren da schon hier.
-	AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_06"); //Wir haben für die Lager und die Minen gejagt und manchmal auch für die Leute in der Stadt.
-	AI_Output(hero, self, "Info_Mod_Gandal_Lehrer_15_07"); //Dann bist du ja nicht mehr der Jüngste ...
+	AI_Output(hero, self, "Info_Mod_Gandal_Lehrer_15_00"); //You got a good bow there.
+	AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_01"); //But yes, yes. My best play. Made special for me.
+	AI_Output(hero, self, "Info_Mod_Gandal_Lehrer_15_02"); //By whom?
+	AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_03"); //From the Bogner in town. At that time he still had ironwood from the mainland to make arches.
+	AI_Output(hero, self, "Info_Mod_Gandal_Lehrer_15_04"); //What do you mean back then?
+	AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_05"); //That was a long time ago. Even before the barrier was created. Some of us have been here before.
+	AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_06"); //We hunted for the camps and the mines and sometimes also for the people in the city.
+	AI_Output(hero, self, "Info_Mod_Gandal_Lehrer_15_07"); //Then you're no longer the youngest...
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_08"); //Mag sein. Aber dir kann ich noch allemal was beibringen.
+		AI_Output(self, hero, "Info_Mod_Gandal_Lehrer_12_08"); //Maybe so. But I can always teach you something.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_WALDIS, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_WALDIS, "Gandal kann mir Bogenschießen beibringen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_WALDIS, "Gandal can teach me archery.");
 	};
 };
 
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_Gandal_Lernen_Bogen (C_INFO)
 	information	= Info_Mod_Gandal_Lernen_Bogen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Bogenschießen bei.";
+	description	= "Teach me archery.";
 };
 
 FUNC INT Info_Mod_Gandal_Lernen_Bogen_Condition()
@@ -57,11 +57,11 @@ FUNC INT Info_Mod_Gandal_Lernen_Bogen_Condition()
 
 FUNC VOID Info_Mod_Gandal_Lernen_Bogen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gandal_Lernen_Bogen_15_00"); //Bring mir Bogenschießen bei.
+	AI_Output(hero, self, "Info_Mod_Gandal_Lernen_Bogen_15_00"); //Teach me archery.
 
 	Info_ClearChoices	(Info_Mod_Gandal_Lernen_Bogen);
 	
-	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, "Zurück.", Info_Mod_Gandal_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, "Back off.", Info_Mod_Gandal_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Gandal_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Gandal_Lernen_Bogen_1);
 };
@@ -77,7 +77,7 @@ FUNC VOID Info_Mod_Gandal_Lernen_Bogen_5()
 
 	Info_ClearChoices	(Info_Mod_Gandal_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, "Zurück.", Info_Mod_Gandal_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, "Back off.", Info_Mod_Gandal_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Gandal_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Gandal_Lernen_Bogen_1);
 };
@@ -88,7 +88,7 @@ FUNC VOID Info_Mod_Gandal_Lernen_Bogen_1()
 
 	Info_ClearChoices	(Info_Mod_Gandal_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, "Zurück.", Info_Mod_Gandal_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, "Back off.", Info_Mod_Gandal_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Gandal_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Gandal_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Gandal_Lernen_Bogen_1);
 };

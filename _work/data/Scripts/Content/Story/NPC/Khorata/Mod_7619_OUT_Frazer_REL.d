@@ -1,7 +1,7 @@
 instance Mod_7619_OUT_Frazer_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Frazer"; 
+	name 		= "frazzles"; 
 	guild 		= GIL_OUT;
 	id 			= 7619;
 	voice 		= 29;

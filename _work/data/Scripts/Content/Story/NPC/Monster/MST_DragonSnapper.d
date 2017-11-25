@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_DragonSnapper(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Drachensnapper";
+	name							=	"Dragon Snapper";
 	guild							=	GIL_SNAPPER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGONSNAPPER;
 	level							=	40;

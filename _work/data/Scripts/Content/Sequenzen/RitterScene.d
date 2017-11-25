@@ -62,17 +62,17 @@ FUNC VOID RitterScene()
 
 	if (Mod_RitterScene_Counter == 10)
 	{
-		AI_Output(Mod_569_RIT_Cedric_NW, NULL, "Info_Mod_RitterScene_12_00"); //Verpiss dich, wir wollen hier keine Verbrecher!
+		AI_Output(Mod_569_RIT_Cedric_NW, NULL, "Info_Mod_RitterScene_12_00"); //Fuck off, we don't want criminals here!
 	};
 
 	if (Mod_RitterScene_Counter == 16)
 	{
-		AI_Output(Mod_501_RIT_Gerold_NW, NULL, "Info_Mod_RitterScene_12_01"); //Hau nur ordentlich drauf!
+		AI_Output(Mod_501_RIT_Gerold_NW, NULL, "Info_Mod_RitterScene_12_01"); //Just hit it real good!
 	};
 
 	if (Mod_RitterScene_Counter == 22)
 	{
-		AI_Output(Mod_1244_RIT_Ritter_NW, NULL, "Info_Mod_RitterScene_12_02"); //So ein Würmchen!
+		AI_Output(Mod_1244_RIT_Ritter_NW, NULL, "Info_Mod_RitterScene_12_02"); //Such a little worm!
 	};
 
 	if (Mod_RitterScene_Counter == 24)
@@ -84,24 +84,24 @@ FUNC VOID RitterScene()
 	{
 		AI_TurnToNpc	(Mod_579_RIT_Girion_NW, Mod_569_RIT_Cedric_NW);
 
-		AI_Output(Mod_579_RIT_Girion_NW, NULL, "Info_Mod_RitterScene_08_03"); //Hey, lasst ihn in Ruhe! Wenn ihr noch nicht genügend ausgelastet seid, könnt ihr ruhig ein paar Extrastunden kriegen.
+		AI_Output(Mod_579_RIT_Girion_NW, NULL, "Info_Mod_RitterScene_08_03"); //Hey, leave him alone! If you are not working at full capacity, you can get some extra lessons.
 	};
 
 	if (Mod_RitterScene_Counter == 32)
 	{
 		AI_TurnToNpc	(Mod_569_RIT_Cedric_NW, Mod_579_RIT_Girion_NW);
 
-		AI_Output(Mod_569_RIT_Cedric_NW, NULL, "Info_Mod_RitterScene_12_04"); //Das ist so ein Kolonieschwein!
+		AI_Output(Mod_569_RIT_Cedric_NW, NULL, "Info_Mod_RitterScene_12_04"); //It's such a colony pig!
 	};
 
 	if (Mod_RitterScene_Counter == 38)
 	{
-		AI_Output(Mod_579_RIT_Girion_NW, NULL, "Info_Mod_RitterScene_08_05"); //Und ein Bürger der Stadt. Das wird nicht jeder herbeigelaufene Halunke.
+		AI_Output(Mod_579_RIT_Girion_NW, NULL, "Info_Mod_RitterScene_08_05"); //And a citizen of the city. That won't be every stray scoundrel.
 	};
 
 	if (Mod_RitterScene_Counter == 44)
 	{
-		AI_Output(Mod_579_RIT_Girion_NW, NULL, "Info_Mod_RitterScene_08_06"); //Also, was steht ihr hier noch herum? Trollt euch!
+		AI_Output(Mod_579_RIT_Girion_NW, NULL, "Info_Mod_RitterScene_08_06"); //So, what are you standing around for? Troll out!
 	};
 
 	if (Mod_RitterScene_Counter == 50)
@@ -120,7 +120,7 @@ FUNC VOID RitterScene()
 
 	if (Mod_RitterScene_Counter == 55)
 	{
-		AI_Output(Mod_579_RIT_Girion_NW, NULL, "Info_Mod_RitterScene_08_07"); //Die werden noch ihr blaues Wunder erleben. Verzeih, dass ich nicht früher eingreifen konnte.
+		AI_Output(Mod_579_RIT_Girion_NW, NULL, "Info_Mod_RitterScene_08_07"); //They're going to have their blue miracle. Forgive me for not being able to intervene earlier.
 
 		AI_PlayAni	(hero, "T_WOUNDED_2_STAND");
 	};
@@ -129,7 +129,7 @@ FUNC VOID RitterScene()
 	{
 		AI_TurnToNpc	(hero, Mod_579_RIT_Girion_NW);
 
-		AI_Output(hero, NULL, "Info_Mod_RitterScene_15_08"); //Schon gut.
+		AI_Output(hero, NULL, "Info_Mod_RitterScene_15_08"); //All right, all right.
 	};
 
 	if (Mod_RitterScene_Counter == 67)

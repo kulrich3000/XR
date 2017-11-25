@@ -1,7 +1,7 @@
 instance Mod_4077_VLK_Haendler_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Händler"; 
+	name 		= "monger"; 
 	guild 		= GIL_NONE;
 	id 			= 4077;
 	voice 		= 1;

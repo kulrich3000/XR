@@ -15,43 +15,43 @@ FUNC INT Info_Mod_Henry_Hi_Condition()
 
 FUNC VOID Info_Mod_Henry_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_00"); //Was beim Klabautermann willst du denn hier?
-	AI_Output(hero, self, "Info_Mod_Henry_Hi_15_01"); //Ich weiß nicht genau ... kommt drauf an, was es hier gibt.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_02"); //Was es hier gibt? Ein Lager mit Typen, denen es schon in den Fingern juckt, wenn sie dich nur sehen.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_03"); //Ich habe keine Ahnung woher du kommst und wer du bist ... interessiert mich auch nicht.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_04"); //Aber unter uns Freibeutern schrubben wir mit Waschlappen wie dir den Kiel unseres Schiffes.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_05"); //Tu dir also selbst einen gefallen, dreh dich wieder um und verpiss dich.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_06"); //Hier haben nur ganze Kerle mit Salzwasser im Blut was verloren.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_00"); //What on earth are you doing here?
+	AI_Output(hero, self, "Info_Mod_Henry_Hi_15_01"); //I don't know exactly... depends on what you find here.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_02"); //What you got here? A camp with guys who itch when they see you.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_03"); //I have no idea where you come from or who you are... doesn't interest me either.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_04"); //But among us buccaneers we scrub with washcloths like you the keel of our ship.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_05"); //So do yourself a favor, turn around and fuck off.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_04_06"); //Only whole guys with salt water in their blood have lost something.
 
 	Info_ClearChoices	(Info_Mod_Henry_Hi);
 
-	Info_AddChoice	(Info_Mod_Henry_Hi, "Wenn du gleich etwas Blut verloren hast, wirst du die Sache vielleicht anders sehen!", Info_Mod_Henry_Hi_B);
-	Info_AddChoice	(Info_Mod_Henry_Hi, "Ich bin kein Waschlappen!", Info_Mod_Henry_Hi_A);
+	Info_AddChoice	(Info_Mod_Henry_Hi, "If you've lost some blood, you might see things differently!", Info_Mod_Henry_Hi_B);
+	Info_AddChoice	(Info_Mod_Henry_Hi, "I'm not a sissy!", Info_Mod_Henry_Hi_A);
 };
 
 FUNC VOID Info_Mod_Henry_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_00"); //Ich sag dir was: Bevor ich nachher hier noch ne riesen Sauerei wegwischen muss, erledigst du eine kleine Sache für mich und dann reden wir nochmal über alles.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_01"); //Also, links von hier befindet sich ein Canyon. Dort gehst du hin und holst mir 'n Stück Beißerfleisch. Kapiert?
-	AI_Output(hero, self, "Info_Mod_Henry_Hi_C_15_02"); //Ok, sollte ich hinbekommen.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_00"); //I'll tell you what: Before I have to clean up a big mess later on, you do one little thing for me and then we'll talk about it all again.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_01"); //Well, there's a canyon to the left of here. You go there and get me a piece of bite meat. Got it?
+	AI_Output(hero, self, "Info_Mod_Henry_Hi_C_15_02"); //Okay, I should be able to.
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_03"); //(Leise zu sich selbst) Hmm, nachher kommt er tatsächlich wieder und nervt weiter ...
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_03"); //(quietly to himself) Hmm, after that he actually comes back and continues to annoy...
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_04"); //(wieder zum Helden) .. achja, und wenn du schon im Canyon bist, kannst du mir auch gleich noch ... eine Flasche Milch von dort bringen ...
-	AI_Output(hero, self, "Info_Mod_Henry_Hi_C_15_05"); //Was?! Ahh, du Spaßvogel ...
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_06"); //Spaßvogel?! Du hörst gleich die Vögel zwitschern, wenn ich dir eine mit der stumpfen Seite meines Schwertes verpasse.
-	AI_Output(hero, self, "Info_Mod_Henry_Hi_C_15_07"); //Aber was ...
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_08"); //Nix, aber. Im Canyon treiben sich immer wieder Herden von Wildziegen herum. Von einer mit vollen Eutern wirst du mir eine Flasche Ziegenmlich holen.
-	AI_Output(hero, self, "Info_Mod_Henry_Hi_C_15_09"); //Dann soll ich jetzt also für dich Ziegen melken?!
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_10"); //Wer hat denn was von melken gesagt, du Penner?! Obwohl, wenn ich dich so ansehe siehst du mir eher aus wie eine Küchenmagd, als wie ein Kerl, hähä.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_11"); //Aber kannst es ja mal versuchen, eine von diesen Ziegen zu melken, solange sie noch lebt, hähähä.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_12"); //Beim Barte des Käptns, dafür würde ich dir doch glatt all mein Gold geben und noch mein Schwert drauflegen, hahaha.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_13"); //Aber genug von dem Blödsinn. Wenn du die Ziege umgehauen hast, durchbohrst du einfach ihren Euter und lässt die Milch in eine Flasche laufen. Kapiert?
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_14"); //Und jetzt verzieh dich und komm erst wieder, wenn du alles dabei hast.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_04"); //(again to the hero) Oh, and while you're in the canyon, I'm not afraid to tell you... a bottle of milk from there...
+	AI_Output(hero, self, "Info_Mod_Henry_Hi_C_15_05"); //What?! Ahh, you joker...
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_06"); //Joker?! You'll hear the birds chirp as soon as I give you one with the dull side of my sword.
+	AI_Output(hero, self, "Info_Mod_Henry_Hi_C_15_07"); //But what...?
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_08"); //Nothing, but. Flocks of wild goats roam the canyon again and again. From one with full udders, you're gonna get me a bottle of goat's milk.
+	AI_Output(hero, self, "Info_Mod_Henry_Hi_C_15_09"); //So you want me to milk goats for you now?!
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_10"); //Who said anything about milking, you bum?! Although, when I look at you that way, you look more like a kitchen maid to me than a guy, huh?
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_11"); //But why don't you try milking one of these goats while she's still alive, huh?
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_12"); //With the captain's beard, I would give you all my gold and put my sword on top of it, hahaha.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_13"); //But enough of this bullshit. When you hit the goat, you just pierce its udder and let the milk run into a bottle. Got it?
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_C_04_14"); //Now get out of here and don't come back until you've brought everything.
 
 	Info_ClearChoices	(Info_Mod_Henry_Hi);
 
@@ -59,24 +59,24 @@ FUNC VOID Info_Mod_Henry_Hi_C()
 
 	Log_CreateTopic	(TOPIC_MOD_HENRY_BEISSER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_HENRY_BEISSER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_HENRY_BEISSER, "Henry lässt mich erst ins Lager wenn ich ihm ein Stück Fleisch bringe. Ich soll außerdem die Milch einer Wildziege besorgen.");
+	B_LogEntry	(TOPIC_MOD_HENRY_BEISSER, "Henry won't let me go to the camp until I bring him a piece of meat. I'm also supposed to get the milk of a wild goat.");
 };
 
 FUNC VOID Info_Mod_Henry_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_Hi_B_15_00"); //Wenn du gleich etwas Blut verloren hast, wirst du die Sache vielleicht anders sehen!
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_B_04_01"); //Sieh an, wir haben hier einen Helden ... einen ziemlich dummen Helden.
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_B_04_02"); //Du glaubst wohl, du kannst hier einfach einen auf dicke Hose machen und ich lasse dich rein?
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_B_04_03"); //Das einzige was gleich reingeht ist meine Klinge in deinen Bauch ... und die meiner Kollegen, wenn sie noch ein Stück von dir abhaben wollen.
+	AI_Output(hero, self, "Info_Mod_Henry_Hi_B_15_00"); //If you've lost some blood, you might see things differently!
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_B_04_01"); //Look, we got a hero here.... a pretty stupid hero.
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_B_04_02"); //You think you can just poop around here and I'll let you in?
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_B_04_03"); //The only thing that's about to go in is my blade in your belly... and my colleagues' if they want a piece of you.
 
 	Info_Mod_Henry_Hi_C();
 };
 
 FUNC VOID Info_Mod_Henry_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_Hi_A_15_00"); //Ich bin kein Waschlappen!
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_A_04_01"); //Ja, stimmt ... der ist zumindest zu was zu gebrauchen. Was aber sollen wir hier mit so einem dreckigen Landstreicher wie dir im Lager anfangen?
-	AI_Output(self, hero, "Info_Mod_Henry_Hi_A_04_02"); //Den Eingang unseres Lagers mit rot streichen, falls mal feine Gesellschaft bei uns vorbeischaut?
+	AI_Output(hero, self, "Info_Mod_Henry_Hi_A_15_00"); //I'm not a sissy!
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_A_04_01"); //Yes, right... which is good for something. But what are we supposed to do with a dirty tramp like you in the camp?
+	AI_Output(self, hero, "Info_Mod_Henry_Hi_A_04_02"); //Paint the entrance of our camp with red if you ever want to visit us?
 
 	Info_Mod_Henry_Hi_C();
 };
@@ -89,7 +89,7 @@ INSTANCE Info_Mod_Henry_Fleisch (C_INFO)
 	information	= Info_Mod_Henry_Fleisch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab alles ...";
+	description	= "I got everything...";
 };
 
 FUNC INT Info_Mod_Henry_Fleisch_Condition()
@@ -104,30 +104,30 @@ FUNC INT Info_Mod_Henry_Fleisch_Condition()
 
 FUNC VOID Info_Mod_Henry_Fleisch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_Fleisch_15_00"); //Ich hab alles ...
+	AI_Output(hero, self, "Info_Mod_Henry_Fleisch_15_00"); //I got everything...
 	
 	B_GiveInvItems	(hero, self, ItFo_MuttonRaw, 1);
 
-	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_01"); //Na, dann lass mal sehen.
+	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_01"); //Well, let's see.
 
 	Npc_RemoveInvItems	(hero, ItFo_MuttonRaw, 1);
 	Npc_RemoveInvItems	(hero, ItFo_Ziegenmilch_Bloody, 1);
 
-	B_ShowGivenThings	("Fleisch und blutige Ziegenmilch gegeben");
+	B_ShowGivenThings	("and bloody goat's milk.");
 
 	CreateInvItems	(self, ItFo_Milk, 1);
 
 	B_UseItem	(self, ItFo_Milk);
 
-	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_02"); //Ahh, es geht doch nichts über einen guten Schluck blutiger Ziegenmlich.
-	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_03"); //Nichts für ungut. Du scheinst doch nicht so 'n Weichei zu sein, wie ich zuerst dachte, wenn du es mit den ganzen Viechern aufgenommen hast.
-	AI_Output(hero, self, "Info_Mod_Henry_Fleisch_15_04"); //Dann kann ich jetzt also rein?
-	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_05"); //Da will ich mal nicht so sein. Ich dachte zuerst, du wärest ein mickriger Laufbursche dieser Magier, der hier nur etwas rumschnüffeln will.
-	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_06"); //Du scheinst aber vielleicht doch was draufzuhaben ... hast auch keine Angst davor, dir auch mal deine Fingerchen bei der Jagd schmutzig zu machen.
-	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_07"); //Für einen wie dich könnten wir vielleicht noch Verwendung in unserem Lager finden ... falls dich der Käptn nicht zum Frühstück verspeist, hähähä.
-	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_08"); //Na gut, dann meld dich mal bei Greg. Er wird schon was für dich zu tun haben.
+	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_02"); //Ahh, there's nothing like a good sip of bloody goat's milk.
+	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_03"); //No hard feelings. You don't seem like the kind of wimp I used to think you were when you took on all those things.
+	AI_Output(hero, self, "Info_Mod_Henry_Fleisch_15_04"); //So now I can go in?
+	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_05"); //I don't want to be like that. At first I thought you were a puny errand boy of these magicians who just wanted to snoop around.
+	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_06"); //You may seem to have a little bit of talent, though... don't be afraid of getting your fingers dirty when you're hunting.
+	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_07"); //For a guy like you, maybe we could still find some use in our warehouse.... if the captain doesn't eat you for breakfast, huh?
+	AI_Output(self, hero, "Info_Mod_Henry_Fleisch_04_08"); //All right, so call Greg. He'll have something to do for you.
 
-	B_LogEntry	(TOPIC_MOD_HENRY_BEISSER, "Ich hab Henry das Fleisch und die Milch gebracht. Jetzt soll ich zu Greg gehen.");
+	B_LogEntry	(TOPIC_MOD_HENRY_BEISSER, "I brought Henry the meat and milk. Now I'm supposed to go see Greg.");
 	B_SetTopicStatus	(TOPIC_MOD_HENRY_BEISSER, LOG_SUCCESS);
 
 	B_GivePlayerXP	(600);
@@ -147,7 +147,7 @@ INSTANCE Info_Mod_Henry_Entertrupp (C_INFO)
 	information	= Info_Mod_Henry_Entertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, du bist doch einer der Entertruppführer!";
+	description	= "Hey, you're one of the guards!";
 };
 
 FUNC INT Info_Mod_Henry_Entertrupp_Condition()
@@ -161,20 +161,20 @@ FUNC INT Info_Mod_Henry_Entertrupp_Condition()
 
 FUNC VOID Info_Mod_Henry_Entertrupp_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_Entertrupp_15_00"); //Hey, du bist doch einer der Entertruppführer!
-	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_01"); //Ich bin nicht einer sondern DER Entertruppführer Jungchen!
-	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_02"); //Was willst du?
-	AI_Output(hero, self, "Info_Mod_Henry_Entertrupp_15_03"); //Ich will in deinen Entertrupp.
-	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_04"); //Jeder will in meinen Entertrupp.
-	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_05"); //Wenn dir das ernst ist musst du zeigen was du drauf hast!
-	AI_Output(hero, self, "Info_Mod_Henry_Entertrupp_15_06"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_07"); //Zuerst holst du mir mal 'ne Flasche Grog, dann reden wir weiter.
-	AI_Output(hero, self, "Info_Mod_Henry_Entertrupp_15_08"); //Und wo krieg ich den her?
-	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_09"); //Weiter hinten, in der Höhle, ist Samuels Hexenküche.
+	AI_Output(hero, self, "Info_Mod_Henry_Entertrupp_15_00"); //Hey, you're one of the guards!
+	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_01"); //I'm not one of them, I'm THE squad leader of the boys!
+	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_02"); //What do you want?
+	AI_Output(hero, self, "Info_Mod_Henry_Entertrupp_15_03"); //I want to join your posse.
+	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_04"); //Everyone wants to join my troops.
+	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_05"); //If you're serious, you have to show what you can do!
+	AI_Output(hero, self, "Info_Mod_Henry_Entertrupp_15_06"); //What do you want me to do?
+	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_07"); //First you get me a bottle of grog, then we'll talk.
+	AI_Output(hero, self, "Info_Mod_Henry_Entertrupp_15_08"); //And where can I get it?
+	AI_Output(self, hero, "Info_Mod_Henry_Entertrupp_04_09"); //Further back, in the cave, is Samuel's witch's kitchen.
 
 	Log_CreateTopic	(TOPIC_MOD_HENRY_ENTERTRUPP, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_HENRY_ENTERTRUPP, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_HENRY_ENTERTRUPP, "Um in Henrys Entertrupp zu kommen soll ich ihm erstmal 'ne Flasche Grog besorgen.");
+	B_LogEntry	(TOPIC_MOD_HENRY_ENTERTRUPP, "I'm supposed to get him a bottle of grog.");
 
 	AI_Teleport	(Mod_940_PIR_Samuel_AW, "ADW_PIRATECAMP_TOWER_BED");
 	B_StartOtherRoutine	(Mod_940_PIR_Samuel_AW, "ENTER");
@@ -189,7 +189,7 @@ INSTANCE Info_Mod_Henry_SamuelWeg (C_INFO)
 	information	= Info_Mod_Henry_SamuelWeg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Samuel ist nicht da.";
+	description	= "Samuel's not here.";
 };
 
 FUNC INT Info_Mod_Henry_SamuelWeg_Condition()
@@ -203,15 +203,15 @@ FUNC INT Info_Mod_Henry_SamuelWeg_Condition()
 
 FUNC VOID Info_Mod_Henry_SamuelWeg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_SamuelWeg_15_00"); //Samuel ist nicht da.
-	AI_Output(self, hero, "Info_Mod_Henry_SamuelWeg_04_01"); //Genau da liegt das Problem! Ohne Samuel kein Grog.
-	AI_Output(self, hero, "Info_Mod_Henry_SamuelWeg_04_02"); //Und du wirst dafür sorgen, dass ich meinen Grog bekomme.
-	AI_Output(hero, self, "Info_Mod_Henry_SamuelWeg_15_03"); //Und woher soll ich Grog bekommen?
-	AI_Output(self, hero, "Info_Mod_Henry_SamuelWeg_04_04"); //Am besten du siehst dich in Samuels Höhle um. Da muss irgendwo das Rezept liegen.
-	AI_Output(hero, self, "Info_Mod_Henry_SamuelWeg_15_05"); //Mach ich.
-	AI_Output(self, hero, "Info_Mod_Henry_SamuelWeg_04_06"); //Un wehe du bringst mir so 'nen billigen Fusel.
+	AI_Output(hero, self, "Info_Mod_Henry_SamuelWeg_15_00"); //Samuel's not here.
+	AI_Output(self, hero, "Info_Mod_Henry_SamuelWeg_04_01"); //That's where the problem lies! Without Samuel, no grog.
+	AI_Output(self, hero, "Info_Mod_Henry_SamuelWeg_04_02"); //And you'll make sure I get my grog.
+	AI_Output(hero, self, "Info_Mod_Henry_SamuelWeg_15_03"); //And where do I get grog from?
+	AI_Output(self, hero, "Info_Mod_Henry_SamuelWeg_04_04"); //Why don't you take a look around Samuel's cave? There must be a prescription somewhere.
+	AI_Output(hero, self, "Info_Mod_Henry_SamuelWeg_15_05"); //All right, I will.
+	AI_Output(self, hero, "Info_Mod_Henry_SamuelWeg_04_06"); //Don't you dare bring me some cheap fusel.
 
-	B_LogEntry	(TOPIC_MOD_HENRY_ENTERTRUPP, "Wie es scheint soll ich Henrys Grog selber brennen.");
+	B_LogEntry	(TOPIC_MOD_HENRY_ENTERTRUPP, "Apparently, I'm supposed to burn Henry's grog myself.");
 
 	Wld_InsertItem	(Mod_SamuelsGrogRezept, "FP_PIRATESCAMP_INSERT_NOTIZ");
 };
@@ -224,7 +224,7 @@ INSTANCE Info_Mod_Henry_HierGrog (C_INFO)
 	information	= Info_Mod_Henry_HierGrog_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich hab Grog.";
+	description	= "I got grog.";
 };
 
 FUNC INT Info_Mod_Henry_HierGrog_Condition()
@@ -239,26 +239,26 @@ FUNC INT Info_Mod_Henry_HierGrog_Condition()
 
 FUNC VOID Info_Mod_Henry_HierGrog_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_HierGrog_15_00"); //Ich hab Grog.
+	AI_Output(hero, self, "Info_Mod_Henry_HierGrog_15_00"); //I got grog.
 
 	Info_ClearChoices	(Info_Mod_Henry_HierGrog);
 
-	Info_AddChoice	(Info_Mod_Henry_HierGrog, "Ich hab nichts.", Info_Mod_Henry_HierGrog_BACK);
+	Info_AddChoice	(Info_Mod_Henry_HierGrog, "I got nothing.", Info_Mod_Henry_HierGrog_BACK);
 
 	if (Npc_HasItems(hero, Mod_RealGrog) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Henry_HierGrog, "Selbstgebrannter Grog", Info_Mod_Henry_HierGrog_Own);
+		Info_AddChoice	(Info_Mod_Henry_HierGrog, "Self-baked grog", Info_Mod_Henry_HierGrog_Own);
 	};
 	if (Npc_HasItems(hero, ItFo_Addon_Grog) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Henry_HierGrog, "Normaler Grog", Info_Mod_Henry_HierGrog_Fusel);
+		Info_AddChoice	(Info_Mod_Henry_HierGrog, "Normal Grog", Info_Mod_Henry_HierGrog_Fusel);
 	};
 };
 
 FUNC VOID Info_Mod_Henry_HierGrog_BACK()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_HierGrog_BACK_15_00"); //Ich hab nichts.
-	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_BACK_04_01"); //Dann lass mich in Ruhe.
+	AI_Output(hero, self, "Info_Mod_Henry_HierGrog_BACK_15_00"); //I got nothing.
+	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_BACK_04_01"); //Then leave me alone.
 
 	Info_ClearChoices	(Info_Mod_Henry_HierGrog);
 };
@@ -269,17 +269,17 @@ FUNC VOID Info_Mod_Henry_HierGrog_Own()
 
 	B_UseItem	(self, Mod_RealGrog);
 
-	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Own_04_00"); //Das ist doch mal ein Grog!
-	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Own_04_01"); //Wer so was brauen kann der kann auch den stärksten Razor umhaun.
-	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Own_04_02"); //Meine Zustimmung hast du!
+	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Own_04_00"); //That's a grog!
+	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Own_04_01"); //If you can brew something like this, you can also enjoy the strongest Razor.
+	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Own_04_02"); //You have my approval!
 
 	if (Mod_InEntertrupp == 0)
 	{
-		B_LogEntry_More	(TOPIC_MOD_PIRATEN_ENTERTRUPP, TOPIC_MOD_HENRY_ENTERTRUPP, "Ich hab Henrys Zustimmung für die Aufnahme in einen Entertrupp.", "Henry war mit meinem Grog zufrieden. Ich habe seine Zustimmung.");
+		B_LogEntry_More	(TOPIC_MOD_PIRATEN_ENTERTRUPP, TOPIC_MOD_HENRY_ENTERTRUPP, "I got Henry's permission to join an enterprise-group.", "Henry was happy with my grog. I have his consent.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_HENRY_ENTERTRUPP, "Henry war mit meinem Grog zufrieden. Ich habe seine Zustimmung.");
+		B_LogEntry	(TOPIC_MOD_HENRY_ENTERTRUPP, "Henry was happy with my grog. I have his consent.");
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_HENRY_ENTERTRUPP, LOG_SUCCESS);
@@ -299,9 +299,9 @@ FUNC VOID Info_Mod_Henry_HierGrog_Fusel()
 
 	B_UseItem	(self, ItFo_Addon_Grog);
 
-	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Fusel_04_00"); //Was drehst du mir da für ne Fusel an?
-	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Fusel_04_01"); //Mit sowas putz ich mir noch nichtmal die Zähne!
-	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Fusel_04_02"); //Verschwinde mit deinem Zeug.
+	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Fusel_04_00"); //What the fuck are you doing to me?
+	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Fusel_04_01"); //I don't even brush my teeth with that!
+	AI_Output(self, hero, "Info_Mod_Henry_HierGrog_Fusel_04_02"); //Get out of here with your stuff.
 
 	Info_ClearChoices	(Info_Mod_Henry_HierGrog);
 };
@@ -314,7 +314,7 @@ INSTANCE Info_Mod_Henry_InEntertrupp (C_INFO)
 	information	= Info_Mod_Henry_InEntertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will in deinen Entertrupp.";
+	description	= "I want to join your posse.";
 };
 
 FUNC INT Info_Mod_Henry_InEntertrupp_Condition()
@@ -330,13 +330,13 @@ FUNC INT Info_Mod_Henry_InEntertrupp_Condition()
 
 FUNC VOID Info_Mod_Henry_InEntertrupp_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_InEntertrupp_15_00"); //Ich will in deinen Entertrupp.
-	AI_Output(self, hero, "Info_Mod_Henry_InEntertrupp_04_01"); //Du hast bewiesen, dass du als Pirat zu gebrauchen bist.
-	AI_Output(self, hero, "Info_Mod_Henry_InEntertrupp_04_02"); //Ab sofort bist du in meinem Entertrupp.
+	AI_Output(hero, self, "Info_Mod_Henry_InEntertrupp_15_00"); //I want to join your posse.
+	AI_Output(self, hero, "Info_Mod_Henry_InEntertrupp_04_01"); //You've proven yourself useful as a pirate.
+	AI_Output(self, hero, "Info_Mod_Henry_InEntertrupp_04_02"); //From now on, you're in my squad.
 
 	B_GivePlayerXP	(400);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_ENTERTRUPP, "Ich bin jetzt Mitglied von Henry's Entertrupp.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_ENTERTRUPP, "I'm a member of Henry's enlisted group now.");
 	B_SetTopicStatus	(TOPIC_MOD_PIRATEN_ENTERTRUPP, LOG_SUCCESS);
 
 	Mod_InEntertrupp = 1;
@@ -361,7 +361,7 @@ INSTANCE Info_Mod_Henry_Befreiung (C_INFO)
 	information	= Info_Mod_Henry_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles klar?";
+	description	= "You all right?";
 };
 
 FUNC INT Info_Mod_Henry_Befreiung_Condition()
@@ -374,18 +374,18 @@ FUNC INT Info_Mod_Henry_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Henry_Befreiung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_00"); //Alles klar?
-	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_01"); //(schnaubt) Wie soll denn alles klar sein, wenn wir uns gerade im Krieg befinden?
-	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_02"); //Keine Ahnung. Ich komme von Greg.
-	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_03"); //Und was will er?
-	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_04"); //Ich soll euch aushelfen, damit wir zum Gegenschlag ausholen können.
-	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_05"); //Sag das doch gleich.
-	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_06"); //Was soll ich für dich tun?
-	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_07"); //Während die Schlacht tobte haben sich einige dieser untoten Typen Richtung Strand verzogen und sich in einer Höhle verschanzt.
-	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_08"); //Die sind nicht so dumm, wie es den Anschein hat, da sie eine Stachelfalle installiert haben.
-	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_09"); //Du musst diese Untoten umbringen und versuchen die Stachelfalle zu deaktivieren.
-	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_10"); //Ist so gut wie erledigt.
-	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_11"); //Das werden wir sehen.
+	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_00"); //You all right?
+	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_01"); //How can we be clear when we are at war?
+	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_02"); //I don't know about that. I'm from Greg.
+	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_03"); //And what does he want?
+	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_04"); //I'm supposed to help you guys out so we can strike back.
+	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_05"); //Why didn't you say so?
+	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_06"); //What do you want me to do?
+	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_07"); //While the battle raged, some of these undead guys moved to the beach and entrenched themselves in a cave.
+	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_08"); //They're not as stupid as they seem to be, since they've installed a spiky trap.
+	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_09"); //You must kill those undead and try to deactivate the trap.
+	AI_Output(hero, self, "Info_Mod_Henry_Befreiung_15_10"); //It's as good as done.
+	AI_Output(self, hero, "Info_Mod_Henry_Befreiung_04_11"); //We'll see about that.
 
 	Wld_SendTrigger	("HENRYMAINMOVER");
 
@@ -397,7 +397,7 @@ FUNC VOID Info_Mod_Henry_Befreiung_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRHENRY, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRHENRY, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_PIRHENRY, "Henry will, dass ich ein paar Untote töte, die sich in der Höhle am Strand verschanzt haben. Sie scheinen jedoch eine Stachelfalle am Eingang installiert zu haben. Ich muss sehen, ob ich sie irgendwie deaktivieren kann.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRHENRY, "Henry wants me to kill some undead guys who are hiding in the cave on the beach. However, they seem to have a spiked trap installed at the entrance. I need to see if I can somehow disable it.");
 };
 
 INSTANCE Info_Mod_Henry_Befreiung2 (C_INFO)
@@ -408,7 +408,7 @@ INSTANCE Info_Mod_Henry_Befreiung2 (C_INFO)
 	information	= Info_Mod_Henry_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Untoten wurden besiegt.";
+	description	= "The undead were defeated.";
 };
 
 FUNC INT Info_Mod_Henry_Befreiung2_Condition()
@@ -426,23 +426,23 @@ FUNC INT Info_Mod_Henry_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Henry_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_Befreiung2_15_00"); //Die Untoten wurden besiegt.
-	AI_Output(self, hero, "Info_Mod_Henry_Befreiung2_04_01"); //(erfreut) Sehr gute Arbeit. Nun werden uns diese Untote nicht mehr bedrohen.
-	AI_Output(hero, self, "Info_Mod_Henry_Befreiung2_15_02"); //Wie steht's mit einer Belohnung?
-	AI_Output(self, hero, "Info_Mod_Henry_Befreiung2_04_03"); //Hier, nimm dieses Gold und vier Flaschen Grog.
+	AI_Output(hero, self, "Info_Mod_Henry_Befreiung2_15_00"); //The undead were defeated.
+	AI_Output(self, hero, "Info_Mod_Henry_Befreiung2_04_01"); //(pleased) Very good work. Now these undead will no longer threaten us.
+	AI_Output(hero, self, "Info_Mod_Henry_Befreiung2_15_02"); //How about a reward?
+	AI_Output(self, hero, "Info_Mod_Henry_Befreiung2_04_03"); //Here, take this gold and four bottles of grog.
 
 	CreateInvItems	(hero, ItMi_Gold, 250);
 	CreateInvItems	(hero, ItFo_Addon_Grog, 4);
 
-	B_ShowGivenThings	("250 Gold und 4 Grog erhalten");
+	B_ShowGivenThings	("250 Gold and 4 Grog received");
 
-	AI_Output(hero, self, "Info_Mod_Henry_Befreiung2_15_04"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Henry_Befreiung2_15_04"); //Thanks.
 
 	Mod_Piratenbefreiung += 1;
 
 	B_GivePlayerXP	(450);
 
-	B_LogEntry_More	(TOPIC_MOD_BEL_PIRHENRY, TOPIC_MOD_BEL_PIRATENLAGER, "Ich hab Henry von meinem Sieg über die Untoten in der Höhle berichtet.", "Ich habe Henry bei seinem Problem mit den Untoten geholfen.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_PIRHENRY, TOPIC_MOD_BEL_PIRATENLAGER, "I told Henry about my victory over the undead in the cave.", "I helped Henry with his problem with the undead.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRHENRY, LOG_SUCCESS);
 };
 
@@ -466,12 +466,12 @@ FUNC INT Info_Mod_Henry_Todesangst_Condition()
 
 FUNC VOID Info_Mod_Henry_Todesangst_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Henry_Todesangst_04_00"); //(laut) Halt! Ich darf dich nicht einlassen.
-	AI_Output(hero, self, "Info_Mod_Henry_Todesangst_15_01"); //Was ist los? Du kennst mich doch.
-	AI_Output(self, hero, "Info_Mod_Henry_Todesangst_04_02"); //Egal. Der Käptn will's so.
-	AI_Output(hero, self, "Info_Mod_Henry_Todesangst_15_03"); //Ich muss aber mit Greg sprechen. Es ist wichtig.
-	AI_Output(self, hero, "Info_Mod_Henry_Todesangst_04_04"); //Hmm. Also gut. Du lässt dich von Jack ins Lager begleiten.
-	AI_Output(hero, self, "Info_Mod_Henry_Todesangst_15_05"); //Wenn du es sagst ...
+	AI_Output(self, hero, "Info_Mod_Henry_Todesangst_04_00"); //(loudly) Stop! I can't let you get involved.
+	AI_Output(hero, self, "Info_Mod_Henry_Todesangst_15_01"); //What's going on? You know me, don't you?
+	AI_Output(self, hero, "Info_Mod_Henry_Todesangst_04_02"); //Whatever. That's what the captain wants.
+	AI_Output(hero, self, "Info_Mod_Henry_Todesangst_15_03"); //I need to talk to Greg. It's important.
+	AI_Output(self, hero, "Info_Mod_Henry_Todesangst_04_04"); //Hmm. All right, then. You let Jack escort you to the camp.
+	AI_Output(hero, self, "Info_Mod_Henry_Todesangst_15_05"); //If you say so...
 
 	self.aivar[AIV_PASSGATE] = FALSE;
 };
@@ -496,7 +496,7 @@ FUNC INT Info_Mod_Henry_Todesangst2_Condition()
 
 FUNC VOID Info_Mod_Henry_Todesangst2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Henry_Todesangst2_04_00"); //Durchgehen!
+	AI_Output(self, hero, "Info_Mod_Henry_Todesangst2_04_00"); //Go through!
 
 	self.aivar[AIV_PASSGATE] = TRUE;
 
@@ -511,7 +511,7 @@ INSTANCE Info_Mod_Henry_Malcom (C_INFO)
 	information	= Info_Mod_Henry_Malcom_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll bei einem Skip für Malcom da hinten Essen bestellen.";
+	description	= "I'm supposed to order food at a skip for Malcom back there.";
 };
 
 FUNC INT Info_Mod_Henry_Malcom_Condition()
@@ -525,8 +525,8 @@ FUNC INT Info_Mod_Henry_Malcom_Condition()
 
 FUNC VOID Info_Mod_Henry_Malcom_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_Malcom_15_00"); //Ich soll bei einem Skip für Malcom da hinten Essen bestellen.
-	AI_Output(self, hero, "Info_Mod_Henry_Malcom_04_01"); //Erst mein Beißerfleisch. Dann kannst du reden, mit wem du willst.
+	AI_Output(hero, self, "Info_Mod_Henry_Malcom_15_00"); //I'm supposed to order food at a skip for Malcom back there.
+	AI_Output(self, hero, "Info_Mod_Henry_Malcom_04_01"); //First my bite. Then you can talk to whoever you want.
 };
 
 INSTANCE Info_Mod_Henry_Lehrer (C_INFO)
@@ -537,7 +537,7 @@ INSTANCE Info_Mod_Henry_Lehrer (C_INFO)
 	information	= Info_Mod_Henry_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Henry_Lehrer_Condition()
@@ -554,10 +554,10 @@ FUNC VOID Info_Mod_Henry_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Henry_Lehrer_04_00"); //Ich kann dir den Umgang mit Zweihändern beibringen.
+	AI_Output(self, hero, "Info_Mod_Henry_Lehrer_04_00"); //I can teach you how to use two-handed people.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_PIRATEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_PIRATEN, "Henry kann mir den Umgang mit Zweihändern beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_PIRATEN, "Henry can teach me how to handle two-handed people.");
 };
 
 INSTANCE Info_Mod_Henry_Lernen (C_INFO)
@@ -568,7 +568,7 @@ INSTANCE Info_Mod_Henry_Lernen (C_INFO)
 	information	= Info_Mod_Henry_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "I want to learn.";
 };
 
 FUNC INT Info_Mod_Henry_Lernen_Condition()
@@ -583,7 +583,7 @@ FUNC INT Info_Mod_Henry_Lernen_Condition()
 
 FUNC VOID Info_Mod_Henry_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henry_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Henry_Lernen_15_00"); //I want to learn.
 
 	Info_ClearChoices	(Info_Mod_Henry_Lernen);
 
@@ -652,7 +652,7 @@ func int Info_Mod_Henry_FirstWarn_Condition()
 
 func void Info_Mod_Henry_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Henry_FirstWarn_04_00"); //HALT! Ich hab gesagt du kommst hier nicht rein.
+	AI_Output (self, hero,"Info_Mod_Henry_FirstWarn_04_00"); //HALT! I said you can't get in here.
 	
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Henry_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -685,7 +685,7 @@ FUNC INT Info_Mod_Henry_SecondWarn_Condition()
 
 func void Info_Mod_Henry_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Henry_SecondWarn_04_00"); //Ich sag's dir zum letzten Mal. Einen Schritt weiter und du begibst dich in die Welt des Schmerzes!
+	AI_Output (self, hero,"Info_Mod_Henry_SecondWarn_04_00"); //I'll tell you one last time. One more step and you'll enter the world of pain!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Henry_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -723,7 +723,7 @@ func void Info_Mod_Henry_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_Henry_Attack_04_00"); //Du hast es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_Henry_Attack_04_00"); //You asked for it...
 
 	AI_StopProcessInfos	(self);	
 

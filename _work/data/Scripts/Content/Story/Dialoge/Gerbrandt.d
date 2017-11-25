@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Gerbrandt_Hi (C_INFO)
 	information	= Info_Mod_Gerbrandt_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Gerbrandt_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Gerbrandt_Hi_Condition()
 FUNC VoID Info_Mod_Gerbrandt_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Hi_10_01"); //Stör mich nicht.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Hi_10_01"); //Don't bother me.
 };
 
 INSTANCE Info_Mod_Gerbrandt_Person (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Gerbrandt_Person (C_INFO)
 	information	= Info_Mod_Gerbrandt_Person_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab gehört du vermisst jemanden.";
+	description	= "I heard you missed someone.";
 };
 
 FUNC INT Info_Mod_Gerbrandt_Person_Condition()
@@ -42,10 +42,10 @@ FUNC INT Info_Mod_Gerbrandt_Person_Condition()
 
 FUNC VOID Info_Mod_Gerbrandt_Person_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gerbrandt_Person_15_00"); //Ich hab gehört du vermisst jemanden.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Person_10_01"); //Das stimmt. Vor etwa zwei Wochen war ein Freund bei mir. Er ist erst spät abends nach Hause gegangen.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Person_10_02"); //Als ich am nächsten Tag zu ihm wollte war er nicht da. Ich habe sofort die Miliz benachrichtigt, doch sie haben nichts gefunden.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Person_10_03"); //Danach kamen der Wassermagier Vatras und ein paar seiner Anhänger zu mir und befragten mich über meinen Freund.
+	AI_Output(hero, self, "Info_Mod_Gerbrandt_Person_15_00"); //I heard you missed someone.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Person_10_01"); //That's the truth. I had a friend of mine about two weeks ago. He didn't go home until late at night.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Person_10_02"); //The next day I wanted to see him, he wasn't there. I immediately notified the militia, but they didn't find anything.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Person_10_03"); //Then Vatras the water magician and a few of his followers came to me and asked me about my friend.
 };
 
 INSTANCE Info_Mod_Gerbrandt_Infos (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Gerbrandt_Infos (C_INFO)
 	information	= Info_Mod_Gerbrandt_Infos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du Vatras erzählt?";
+	description	= "What did you tell Vatras?";
 };
 
 FUNC INT Info_Mod_Gerbrandt_Infos_Condition()
@@ -69,15 +69,15 @@ FUNC INT Info_Mod_Gerbrandt_Infos_Condition()
 
 FUNC VOID Info_Mod_Gerbrandt_Infos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gerbrandt_Infos_15_00"); //Was hast du Vatras erzählt?
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_01"); //Er hat mir viele Fragen gestellt.
-	AI_Output(hero, self, "Info_Mod_Gerbrandt_Infos_15_02"); //Was für Fragen?
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_03"); //Zuerst hat er gefragt wie mein Freund heißt und ich hab ihm gesagt, dass er Fred heißt.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_04"); //Dann wollte er wissen um wieviel Uhr er gegangen sei. Ich hab die Uhrzeit nicht genau gewusst, weil wir schon einiges an Wein getrunken hatten, aber es war um etwa 23 Uhr.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_05"); //Am Schluss hat er noch gefragt wo Fred gewohnt hat. Dann hab ich ihn zu dem Haus geführt.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_06"); //Das war alles.
+	AI_Output(hero, self, "Info_Mod_Gerbrandt_Infos_15_00"); //What did you tell Vatras?
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_01"); //He asked me a lot of questions.
+	AI_Output(hero, self, "Info_Mod_Gerbrandt_Infos_15_02"); //What kind of questions?
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_03"); //First he asked my boyfriend's name, and I told him his name was Fred.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_04"); //Then he wanted to know at what time he left. I didn't know the exact time because we had already drunk some wine, but it was around 11 pm.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_05"); //At the end he asked where Fred lived. Then I led him to the house.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Infos_10_06"); //That's all.
 
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Gerbrandt hat mir erzählt, dass sein Freund Fred heißt und er gegen 23 Uhr das Haus von Gerbrandt verlassen hat.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Gerbrandt told me that his friend's name is Fred and he left Gerbrandt's house around 11 pm.");
 };
 
 INSTANCE Info_Mod_Gerbrandt_Wo (C_INFO)
@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Gerbrandt_Wo (C_INFO)
 	information	= Info_Mod_Gerbrandt_Wo_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mich auch zu dem Haus bringen?";
+	description	= "Can you take me to the house?";
 };
 
 FUNC INT Info_Mod_Gerbrandt_Wo_Condition()
@@ -101,8 +101,8 @@ FUNC INT Info_Mod_Gerbrandt_Wo_Condition()
 
 FUNC VOId Info_Mod_Gerbrandt_Wo_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gerbrandt_Wo_15_00"); //Kannst du mich auch zu dem Haus bringen?
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Wo_10_01"); //Klar, sag bescheid wenn wir losgehen können.
+	AI_Output(hero, self, "Info_Mod_Gerbrandt_Wo_15_00"); //Can you take me to the house?
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Wo_10_01"); //Sure, let me know when we're ready to go.
 };
 
 INSTANCE Info_Mod_Gerbrandt_Los (C_INFO)
@@ -113,7 +113,7 @@ INSTANCE Info_Mod_Gerbrandt_Los (C_INFO)
 	information	= Info_Mod_Gerbrandt_Los_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass uns gehen.";
+	description	= "Let's get going.";
 };
 
 FUNC INT Info_Mod_Gerbrandt_Los_Condition()
@@ -126,8 +126,8 @@ FUNC INT Info_Mod_Gerbrandt_Los_Condition()
 
 FUNC VOID Info_Mod_Gerbrandt_Los_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gerbrandt_Los_15_00"); //Lass uns gehen.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Los_10_01"); //Ok, folge mir.
+	AI_Output(hero, self, "Info_Mod_Gerbrandt_Los_15_00"); //Let's get going.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Los_10_01"); //Okay, follow me.
 
 	AI_StopProcessInfos	(self);
 
@@ -155,10 +155,10 @@ FUNC INT Info_Mod_Gerbrandt_Da_Condition()
 
 FUNC VOID Info_Mod_Gerbrandt_Da_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Da_10_00"); //Da sind wir.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Da_10_01"); //Schau dich ruhig um, ich gehe wieder zurück. Wenn du noch Hilfe brauchst, du weißt ja wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Da_10_00"); //Here we are.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Da_10_01"); //Take a look around, I'll go back. If you need any help, you know where to find me.
 
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Gerbrandt hat mich zu dem Haus von Fred gebracht. Mal sehen ob ich hier etwas finde was auf sein verschwinden hindeuten könnte.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Gerbrandt took me to Fred's house. Let's see if I can find anything here that suggests his disappearance.");
 
 	Wld_InsertItem	(Mod_Sklavenliste_DMR,	"FP_SPAWN_VERMISSTENLISTE");
 
@@ -175,7 +175,7 @@ INSTANCE Info_Mod_Gerbrandt_Cornelius (C_INFO)
 	information	= Info_Mod_Gerbrandt_Cornelius_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss mit dir sprechen.";
+	description	= "I need to talk to you.";
 };
 
 FUNC INT Info_Mod_Gerbrandt_Cornelius_Condition()
@@ -188,14 +188,14 @@ FUNC INT Info_Mod_Gerbrandt_Cornelius_Condition()
 
 FUNC VOID Info_Mod_Gerbrandt_Cornelius_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gerbrandt_Cornelius_15_00"); //Du gehörst zu den Kerlen, die Cornelius umbringen liesen und wegen denen Morgahard festgenommen wurde.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Cornelius_10_01"); //Kannst du das auch beweisen?
-	AI_Output(hero, self, "Info_Mod_Gerbrandt_Cornelius_15_02"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_Cornelius_10_03"); //Dann verschwende nicht meine Zeit mit deinen Anschuldigungen oder ich rufe die Miliz.
+	AI_Output(hero, self, "Info_Mod_Gerbrandt_Cornelius_15_00"); //You're one of those guys who had Cornelius killed and got Morgahard arrested.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Cornelius_10_01"); //Can you prove that, too?
+	AI_Output(hero, self, "Info_Mod_Gerbrandt_Cornelius_15_02"); //No.
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_Cornelius_10_03"); //Then don't waste my time with your accusations or I'll call the militia.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Ich habe Gerbrandt darauf angesprochen, konnte ihm aber nichts nachweisen. Ich sollte mich nochmal mit Esteban unterhalten.");
+	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "I asked Gerbrandt about it, but I could not prove anything to him. I should talk to Esteban again.");
 };
 
 INSTANCE Info_Mod_Gerbrandt_SonjaFreier (C_INFO)
@@ -206,7 +206,7 @@ INSTANCE Info_Mod_Gerbrandt_SonjaFreier (C_INFO)
 	information	= Info_Mod_Gerbrandt_SonjaFreier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du häufig Kunde bei Sonja gewesen?";
+	description	= "Have you been a frequent customer of Sonja's?";
 };
 
 FUNC INT Info_Mod_Gerbrandt_SonjaFreier_Condition()
@@ -220,8 +220,8 @@ FUNC INT Info_Mod_Gerbrandt_SonjaFreier_Condition()
 
 FUNC VOID Info_Mod_Gerbrandt_SonjaFreier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gerbrandt_SonjaFreier_15_00"); //Bist du häufig Kunde bei Sonja gewesen?
-	AI_Output(self, hero, "Info_Mod_Gerbrandt_SonjaFreier_10_01"); //Was für eine Frage! Natürlich nicht!
+	AI_Output(hero, self, "Info_Mod_Gerbrandt_SonjaFreier_15_00"); //Have you been a frequent customer of Sonja's?
+	AI_Output(self, hero, "Info_Mod_Gerbrandt_SonjaFreier_10_01"); //What a question! Of course not!
 };
 
 INSTANCE Info_Mod_Gerbrandt_Pickpocket (C_INFO)

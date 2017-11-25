@@ -1,7 +1,7 @@
 INSTANCE Mod_10022_ORC_Elite_MT (Mst_Default_OrcElite)			
 {
 	//----- Monster -----
-	name							=	"Ork Elite";
+	name							=	"Orc Elite";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	10022;
 	voice							=	18;

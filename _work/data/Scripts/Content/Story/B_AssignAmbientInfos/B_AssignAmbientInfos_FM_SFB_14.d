@@ -23,7 +23,7 @@ FUNC INT Info_FM_SFB_14_Pre_Condition()
 
 FUNC VOID Info_FM_SFB_14_Pre_Info()
 {	
-	AI_Output(self,hero,"Info_FM_SFB_14_EinerVonEuchWerden_14_00"); //Was willst du hier. Ich habe keine Lust, irgendwelchen Ärger zu bekommen.
+	AI_Output(self,hero,"Info_FM_SFB_14_EinerVonEuchWerden_14_00"); //What are you doing here? I don't feel like getting into any trouble.
 };
 
 // *************************************************************************
@@ -37,7 +37,7 @@ INSTANCE Info_FM_SFB_14_EXIT(C_INFO)
 	condition	= Info_FM_SFB_14_EXIT_Condition;
 	information	= Info_FM_SFB_14_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_FM_SFB_14_EXIT_Condition()
@@ -60,7 +60,7 @@ INSTANCE Info_FM_SFB_14_EinerVonEuchWerden (C_INFO)
 	condition	= Info_FM_SFB_14_EinerVonEuchWerden_Condition;
 	information	= Info_FM_SFB_14_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Was muss ich tun, um bei euch mitzumachen?";
+	description = "What do I have to do to join you?";
 };                       
 
 FUNC INT Info_FM_SFB_14_EinerVonEuchWerden_Condition()
@@ -70,8 +70,8 @@ FUNC INT Info_FM_SFB_14_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_FM_SFB_14_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_14_EinerVonEuchWerden_15_00"); //Was muss ich tun, um bei euch mitzumachen?
-	AI_Output(self,hero,"Info_FM_SFB_14_EinerVonEuchWerden_14_01"); //Ich kann dir da nicht weiterhelfen. Ich bin hier nur 'ne kleine Nummer.
+	AI_Output(hero,self,"Info_FM_SFB_14_EinerVonEuchWerden_15_00"); //What do I have to do to join you?
+	AI_Output(self,hero,"Info_FM_SFB_14_EinerVonEuchWerden_14_01"); //I can't help you there. I'm just a little shit around here.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE Info_FM_SFB_14_WichtigePersonen(C_INFO)
 	condition	= Info_FM_SFB_14_WichtigePersonen_Condition;
 	information	= Info_FM_SFB_14_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu sagen?";
+	description = "Who's got something to say?";
 };                       
 
 FUNC INT Info_FM_SFB_14_WichtigePersonen_Condition()
@@ -94,8 +94,8 @@ FUNC INT Info_FM_SFB_14_WichtigePersonen_Condition()
 
 FUNC VOID Info_FM_SFB_14_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_14_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,hero,"Info_FM_SFB_14_WichtigePersonen_14_01"); //Hier in der Mine hat eigentlich niemand das Sagen.
+	AI_Output(hero,self,"Info_FM_SFB_14_WichtigePersonen_15_00"); //Who's got something to say?
+	AI_Output(self,hero,"Info_FM_SFB_14_WichtigePersonen_14_01"); //Nobody's running the mine around here.
 };
 
 // *************************************************************************
@@ -108,7 +108,7 @@ INSTANCE Info_FM_SFB_14_DasLager(C_INFO)
 	condition	= Info_FM_SFB_14_DasLager_Condition;
 	information	= Info_FM_SFB_14_DasLager_Info;
 	permanent	= 1;
-	description = "Ich will mehr über diese Mine erfahren.";
+	description = "I want to know more about this mine.";
 };                       
 
 FUNC INT Info_FM_SFB_14_DasLager_Condition()
@@ -118,8 +118,8 @@ FUNC INT Info_FM_SFB_14_DasLager_Condition()
 
 FUNC VOID Info_FM_SFB_14_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_14_DasLager_15_00"); //Ich will mehr über dieses Mine erfahren.
-	AI_Output(self,hero,"Info_FM_SFB_14_DasLager_14_01"); //Ich weiß nicht, ob ich dir da weiterhelfen kann, sprich am besten mit den Söldnern.
+	AI_Output(hero,self,"Info_FM_SFB_14_DasLager_15_00"); //I want to know more about this mine.
+	AI_Output(self,hero,"Info_FM_SFB_14_DasLager_14_01"); //I don't know if I can help you with that, talk to the mercenaries.
 };
 
 // *************************************************************************
@@ -132,7 +132,7 @@ INSTANCE Info_FM_SFB_14_DieLage(C_INFO)
 	condition	= Info_FM_SFB_14_DieLage_Condition;
 	information	= Info_FM_SFB_14_DieLage_Info;
 	permanent	= 1;
-	description = "Wie ist das Leben hier?";
+	description = "How's life here?";
 };                       
 
 FUNC INT Info_FM_SFB_14_DieLage_Condition()
@@ -142,11 +142,11 @@ FUNC INT Info_FM_SFB_14_DieLage_Condition()
 
 FUNC VOID Info_FM_SFB_14_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_14_DieLage_15_00"); //Wie ist das Leben hier?
-	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_01"); //Ich will mich nicht beklagen. Wir haben alle unseren Teil zu tragen.
-	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_02"); //Aber zumindest ist es hier besser als im Alten Lager.
-	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_03"); //Kommst du aus dem Alten Lager?
-	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_04"); //Wenn du aus dem Alten Lager kommst, ich will keinen Ärger!
+	AI_Output(hero,self,"Info_FM_SFB_14_DieLage_15_00"); //How's life here?
+	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_01"); //I don't want to complain. We all have our share to bear.
+	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_02"); //But at least it's better here than in the old camp.
+	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_03"); //Are you from the old camp?
+	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_04"); //If you're from the old camp, I don't want any trouble!
 	AI_StopProcessInfos	(self);
 };
 

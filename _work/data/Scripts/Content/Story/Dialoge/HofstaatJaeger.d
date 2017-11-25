@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HofstaatJaeger_Hi (C_INFO)
 	information	= Info_Mod_HofstaatJaeger_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du der Jäger?";
+	description	= "Are you the hunter?";
 };
 
 FUNC INT Info_Mod_HofstaatJaeger_Hi_Condition()
@@ -21,46 +21,46 @@ FUNC INT Info_Mod_HofstaatJaeger_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatJaeger_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_00"); //Bist du der Jäger?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_01"); //Na, seh ich denn so aus?
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_02"); //Naja ... du bist jedenfalls kein konventioneller Jäger ...
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_03"); //AAAAAHA! Hab ich dich ertappt! Du arbeitest für die Konvention!
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_04"); //Die Konvention? Was ist das?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_05"); //Das wollte ich dich gerade fragen, schließlich arbeitest du für sie ...
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_06"); //Bist du jetzt der Jäger oder nicht?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_07"); //Ach, weißt du, wenn du es dir ganz, ganz doll vorstellst und fest daran glaubst, dann kannst du AAAAAAAALLLES sein was du willst.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_08"); //Wirklich Alles? Dann sag mir endlich ob du der Jäger bist oder nicht!
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_09"); //Achsoooo du suchst den Jäger? Der is’ im Moment nicht da.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_10"); //Nicht da?
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_00"); //Are you the hunter?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_01"); //Well, do I look like that?
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_02"); //Well... you're certainly not a conventional hunter...
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_03"); //AAAAAHA! I've caught you! You work for the convention!
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_04"); //The convention? What's this?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_05"); //That's what I was going to ask you, because you're working for her...
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_06"); //Are you the hunter or not?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_07"); //Oh, you know, if you think it's great and believe strongly, then you can be AAAAAALLY anything you want.
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_08"); //Everything? Then tell me if you're the hunter or not!
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_09"); //So you're looking for the hunter? He's not here right now.
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_10"); //Not here?
 	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_11"); //Jop.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_12"); //Und wo ist er?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_13"); //Urlaub.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_14"); //Wann kommt er wieder?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_15"); //Garnicht.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_16"); //Garnicht?
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_12"); //And where is he?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_13"); //Vacation.
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_14"); //When will he be back?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_15"); //Not at all.
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_16"); //Not at all?
 	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_17"); //Jop.
 	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_18"); //...
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_19"); //(summt vor sich hin)
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_20"); //Was soll das heißen?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_21"); //Er hat unbefristeten Urlaub.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_22"); //Dann wurde er entlassen?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_23"); //Wenn er entlassen wurde, könnte er kaum Urlaub haben.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_24"); //Ach vergiss es.
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_25"); //Okay. Ach ja, solltest du den Jäger treffen richte ihm folgendes von mir aus: „Bananarama“
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_19"); //(humming)
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_20"); //What do you mean?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_21"); //Er hat unbefristeten Vacation.
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_22"); //Then he was released?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_23"); //If he was fired, he could hardly have a vacation.
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_24"); //Oh, forget about it.
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_25"); //Okay. Oh yes, if you meet the hunter, tell him this from me:"Bananarama"
 	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_26"); //Bananarama?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_27"); //Wer hat dir das gesagt?
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_28"); //Du?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_29"); //Wieso sollte ich dir das Codewort gesagt haben?
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_30"); //Na damit ich es dem Jäger ausrichte.
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_31"); //Hallo.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_32"); //WAS IST EIGENTLICH LOS MIT DIR?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_33"); //Stress mich nicht so, ich habe Urlaub!
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_34"); //Du hast Urlau ... lass mich raten. Du bist der Jäger?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_35"); //WOHER WEIßT DU DAS??!!
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_36"); //Lass den Scheiß. Der König schickt mich.
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_37"); //Der König?! Was will er?
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_38"); //Du sollst mir den Weg zum Drogenminister zeigen.
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_39"); //Achso ... na, dann komm mal mit.
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_27"); //Who told you that?
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_28"); //You?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_29"); //Why would I have told you the code word?
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_30"); //Well, so I can tell the hunter.
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_31"); //Hello.
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_32"); //WHAT' S THE MATTER WITH YOU?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_33"); //Don't stress me, I'm on vacation!
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_34"); //You have robbery.... let me guess. You're the hunter?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_35"); //WHERE DO YOU KNOW THAT?!?!?
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_36"); //Cut the bullshit. The King sent me.
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_37"); //The King?! What does he want?
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_38"); //I want you to show me the way to the secretary of drugs.
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_39"); //Ah... Well, come with me.
 
 	AI_StopProcessInfos	(self);
 
@@ -68,11 +68,11 @@ FUNC VOID Info_Mod_HofstaatJaeger_Hi_Info()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Namib_Motivation))
 	{
-		B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich habe den Jäger aufgesucht und er wird mich jetzt zum Drogenminister führen.");
+		B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "I went to see the hunter, and he's gonna take me to the secretary of drugs now.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich habe mich für den Hofstaat entschieden und den Jäger aufgesucht. Dieser führt mich jetzt zum Drogenminister.");
+		B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "I decided to go to the royal court and visit the hunter. This one leads me to the secretary of drugs now.");
 	};
 };
 
@@ -97,20 +97,20 @@ FUNC INT Info_Mod_HofstaatJaeger_Drogenminister_Condition()
 
 FUNC VOID Info_Mod_HofstaatJaeger_Drogenminister_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_00"); //Wir sind da!
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Drogenminister_15_01"); //Dort oben wohnt also der Drogenminister?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_02"); //Ja.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Drogenminister_15_03"); //Und wie komm ich da rüber?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_04"); //Achso du willst auf die andre Seite?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_05"); //Dann kannst du entweder versuchen über Das Seil dorthin zu kommen und dir dein Genick brechen, oder du gehst zum Gleichgewichtsminister und lässt dich rüberführen.
-	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Drogenminister_15_06"); //(genervt) Und wo finde ich den Gleichgewichtsminister?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_07"); //Ich bring dich hin.
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_00"); //We are here!
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Drogenminister_15_01"); //So that's where the secretary of drugs lives?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_02"); //Yeah.
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Drogenminister_15_03"); //How do I get over there?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_04"); //Oh, you want to be on the other side?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_05"); //Then you can either try to get there via the rope and break your neck, or you can go to the Minister of Equilibrium and have yourself transferred.
+	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Drogenminister_15_06"); //And where do I find the Minister of Equilibrium?
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Drogenminister_09_07"); //I'll take you there.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "GLEICHGEWICHTSMINISTER");
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der Drogenminister lebt auf dem Gipfel bei der Festung. Von diesem Hügel aus führt nur ein Seil zu ihm, doch da drüber zu laufen wäre der sichere Tod. Der Jäger bringt mich nun zum Gleichgewichtsminister, welcher mich rüberführen sollte.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "The Minister of Drugs lives at the summit near the fortress. From this hill only a rope leads to him, but running over it would be the certain death. The hunter's taking me to the equilibrium minister, who was supposed to take me over.");
 };
 
 INSTANCE Info_Mod_HofstaatJaeger_Pickpocket (C_INFO)

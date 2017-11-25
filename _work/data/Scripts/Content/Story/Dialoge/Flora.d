@@ -20,7 +20,7 @@ FUNC INT Info_Mod_Flora_Hi_Condition()
 
 FUNC VOID Info_Mod_Flora_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Flora_Hi_16_00"); //Ja?
+	AI_Output(self, hero, "Info_Mod_Flora_Hi_16_00"); //Yes?
 };
 
 INSTANCE Info_Mod_Flora_Port (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Flora_Port (C_INFO)
 	information	= Info_Mod_Flora_Port_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist in Gefahr.";
+	description	= "You're in danger.";
 };
 
 FUNC INT Info_Mod_Flora_Port_Condition()
@@ -44,24 +44,24 @@ FUNC INT Info_Mod_Flora_Port_Condition()
 
 FUNC VOID Info_Mod_Flora_Port_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Flora_Port_15_00"); //Du bist in Gefahr.
-	AI_Output(self, hero, "Info_Mod_Flora_Port_16_01"); //(leicht belustigt) Wieso denn das? Habe ich etwas verbrochen?
-	AI_Output(hero, self, "Info_Mod_Flora_Port_15_02"); //Du stehst auf der Abschussliste eines Mörders. Es hat mit Johannes Port zu tun.
-	AI_Output(self, hero, "Info_Mod_Flora_Port_16_03"); //(ernst) Was ist passiert? Geht es ihm gut?
-	AI_Output(hero, self, "Info_Mod_Flora_Port_15_04"); //Wie man's nimmt. Schmerzen hat er keine mehr.
-	AI_Output(self, hero, "Info_Mod_Flora_Port_16_05"); //(sprachlos) Oh ... wie ... was? Er ist tot? Nein! ... Aber warum kommst du zu mir?
-	AI_Output(hero, self, "Info_Mod_Flora_Port_15_06"); //Um dich zu warnen und um zu fragen, was der Mörder für ein Motiv gehabt haben könnte.
-	AI_Output(self, hero, "Info_Mod_Flora_Port_16_07"); //Hmm ... Sicher hatte Johannes seine Geheimnisse ... aber da gab es eine Sache, die er nicht einmal mir, seiner Cousine, erzählen wollte.
-	AI_Output(self, hero, "Info_Mod_Flora_Port_16_08"); //In seinem letzten Brief deutete er nur an, was er herausgefunden hatte, aber dass es lebensgefährlich sein könnte, damit hätte ich nicht gerechnet ...
-	AI_Output(self, hero, "Info_Mod_Flora_Port_16_09"); //Oh, warte! Ich erinnere mich an einen Namen, eine Person, vor der Johannes mich gewarnt hat.
-	AI_Output(hero, self, "Info_Mod_Flora_Port_15_10"); //Wie heißt die Person?
-	AI_Output(self, hero, "Info_Mod_Flora_Port_16_11"); //Brahim war es. Johannes kannte ihn nicht, aber er meinte, er führe dunkle Verbindungen ... was das wohl heißen mag?
-	AI_Output(hero, self, "Info_Mod_Flora_Port_15_12"); //Ich werde es schon herausfinden.
-	AI_Output(self, hero, "Info_Mod_Flora_Port_16_13"); //Gut. Danke für deine Warnung, ich werde vorsichtig sein. Viel Glück!
+	AI_Output(hero, self, "Info_Mod_Flora_Port_15_00"); //You're in danger.
+	AI_Output(self, hero, "Info_Mod_Flora_Port_16_01"); //What's the point? Did I do something wrong?
+	AI_Output(hero, self, "Info_Mod_Flora_Port_15_02"); //You're on a killer's hit list. It has to do with Johannes Port.
+	AI_Output(self, hero, "Info_Mod_Flora_Port_16_03"); //Seriously, what happened? Is he all right?
+	AI_Output(hero, self, "Info_Mod_Flora_Port_15_04"); //How to take it. He's not in pain anymore.
+	AI_Output(self, hero, "Info_Mod_Flora_Port_16_05"); //(languagelessly) Oh.... such as.... what? He's dead? No! ... But why are you coming to me?
+	AI_Output(hero, self, "Info_Mod_Flora_Port_15_06"); //To warn you and ask what motive the killer might have had.
+	AI_Output(self, hero, "Info_Mod_Flora_Port_16_07"); //Hmm... Surely John had his secrets... but there was one thing he didn't even want to tell me, his cousin.
+	AI_Output(self, hero, "Info_Mod_Flora_Port_16_08"); //In his last letter he only hinted at what he had found out, but that it could be life-threatening, I hadn't expected....
+	AI_Output(self, hero, "Info_Mod_Flora_Port_16_09"); //Oh, wait! I remember a name, a person Johannes warned me about.
+	AI_Output(hero, self, "Info_Mod_Flora_Port_15_10"); //What's the person's name?
+	AI_Output(self, hero, "Info_Mod_Flora_Port_16_11"); //Brahim did it. Johannes didn't know him, but he thought he had dark connections.... I wonder what that means.
+	AI_Output(hero, self, "Info_Mod_Flora_Port_15_12"); //I'll figure it out.
+	AI_Output(self, hero, "Info_Mod_Flora_Port_16_13"); //Good. Thanks for your warning, I'll be careful. Good luck to you!
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Steckt etwa Brahim hinter den Morden?");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Is Brahim behind the murders?");
 };
 
 INSTANCE Info_Mod_Flora_Dachratte (C_INFO)
@@ -84,35 +84,35 @@ FUNC INT Info_Mod_Flora_Dachratte_Condition()
 
 FUNC VOID Info_Mod_Flora_Dachratte_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Flora_Dachratte_16_00"); //Oh, du siehst wie ein geübter Kletterer aus.
-	AI_Output(self, hero, "Info_Mod_Flora_Dachratte_16_01"); //Hilf mir bitte, dieses abscheuliche Vieh von meinem Dach zu holen!
+	AI_Output(self, hero, "Info_Mod_Flora_Dachratte_16_00"); //Oh, you look like a trained climber.
+	AI_Output(self, hero, "Info_Mod_Flora_Dachratte_16_01"); //Please help me get this horrible beast off my roof!
 
 	Info_ClearChoices	(Info_Mod_Flora_Dachratte);
 
-	Info_AddChoice	(Info_Mod_Flora_Dachratte, "Tut mir Leid, keine Zeit für so etwas.", Info_Mod_Flora_Dachratte_B);
-	Info_AddChoice	(Info_Mod_Flora_Dachratte, "Nichts leichter als das. Was ist das für ein Tier?", Info_Mod_Flora_Dachratte_A);
+	Info_AddChoice	(Info_Mod_Flora_Dachratte, "Sorry, no time for that.", Info_Mod_Flora_Dachratte_B);
+	Info_AddChoice	(Info_Mod_Flora_Dachratte, "Nothing could be easier. What kind of animal is that?", Info_Mod_Flora_Dachratte_A);
 };
 
 FUNC VOID Info_Mod_Flora_Dachratte_B()
 {
-	AI_Output(hero, self, "Info_Mod_Flora_Dachratte_B_15_00"); //Oh, du siehst wie ein geübter Kletterer aus.
+	AI_Output(hero, self, "Info_Mod_Flora_Dachratte_B_15_00"); //Oh, you look like a trained climber.
 
 	Info_ClearChoices	(Info_Mod_Flora_Dachratte);
 };
 
 FUNC VOID Info_Mod_Flora_Dachratte_A()
 {
-	AI_Output(hero, self, "Info_Mod_Flora_Dachratte_A_15_00"); //Nichts leichter als das. Was ist das für ein Tier?
-	AI_Output(self, hero, "Info_Mod_Flora_Dachratte_A_16_01"); //Eine Ratte! Hoffentlich hat sich nicht schon ihre ganze Familie auf dem Dachboden eingenistet!
-	AI_Output(hero, self, "Info_Mod_Flora_Dachratte_A_15_02"); //Und wie komme ich auf das Dach?
-	AI_Output(self, hero, "Info_Mod_Flora_Dachratte_A_16_03"); //Du musst irgendwo einen Aufstieg finden. Deswegen frage ich doch gerade dich!
-	AI_Output(hero, self, "Info_Mod_Flora_Dachratte_A_15_04"); //Ich kümmere mich darum.
+	AI_Output(hero, self, "Info_Mod_Flora_Dachratte_A_15_00"); //Nothing could be easier. What kind of animal is that?
+	AI_Output(self, hero, "Info_Mod_Flora_Dachratte_A_16_01"); //A rat! Hopefully her whole family hasn't settled in the attic yet!
+	AI_Output(hero, self, "Info_Mod_Flora_Dachratte_A_15_02"); //How do I get to the roof?
+	AI_Output(self, hero, "Info_Mod_Flora_Dachratte_A_16_03"); //You have to find a way up somewhere. That's why I'm asking you!
+	AI_Output(hero, self, "Info_Mod_Flora_Dachratte_A_15_04"); //I'll take care of it.
 
 	Mod_Flora_Dachratte = 1;
 
 	Log_CreateTopic	(TOPIC_MOD_FLORA_RATTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FLORA_RATTE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FLORA_RATTE, "Flora aus dem oberen Viertel hat mich gebeten, die Ratte zu töten, die auf ihrem Haus hockt.");
+	B_LogEntry	(TOPIC_MOD_FLORA_RATTE, "Flora from upstairs asked me to kill the rat sitting on her house.");
 
 	Info_ClearChoices	(Info_Mod_Flora_Dachratte);
 
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Flora_Dachratte2 (C_INFO)
 	information	= Info_Mod_Flora_Dachratte2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Ratte macht keinen Ärger mehr.";
+	description	= "The rat's out of trouble.";
 };
 
 FUNC INT Info_Mod_Flora_Dachratte2_Condition()
@@ -141,8 +141,8 @@ FUNC INT Info_Mod_Flora_Dachratte2_Condition()
 
 FUNC VOID Info_Mod_Flora_Dachratte2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Flora_Dachratte2_15_00"); //Die Ratte macht keinen Ärger mehr.
-	AI_Output(self, hero, "Info_Mod_Flora_Dachratte2_16_01"); //Ach, es gibt doch immer noch hilfsbereite Menschen. Vielen Dank!
+	AI_Output(hero, self, "Info_Mod_Flora_Dachratte2_15_00"); //The rat's out of trouble.
+	AI_Output(self, hero, "Info_Mod_Flora_Dachratte2_16_01"); //Oh, there are still helpful people out there. Thank you very much!
 
 	B_GivePlayerXP	(100);
 

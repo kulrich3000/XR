@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Tondral_GotoTempel (C_INFO)
 	information	= Info_Mod_Tondral_GotoTempel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wirst am Tempel erwartet.";
+	description	= "You are expected at the temple.";
 };
 
 FUNC INT Info_Mod_Tondral_GotoTempel_Condition()
@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Tondral_GotoTempel_Condition()
 
 FUNC VOID Info_Mod_Tondral_GotoTempel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tondral_GotoTempel_15_00"); //Du wirst am Tempel erwartet.
+	AI_Output(hero, self, "Info_Mod_Tondral_GotoTempel_15_00"); //You are expected at the temple.
 
 	AI_StopProcessInfos	(hero);
 
@@ -46,35 +46,35 @@ FUNC INT Info_Mod_Tondral_Ken_Condition()
 
 FUNC VOID Info_Mod_Tondral_Ken_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_00"); //Da bist du ja. Ich habe schon befürchtet, dass Talas dich nicht findet.
-	AI_Output(hero, self, "Info_Mod_Tondral_Ken_15_01"); //Hat er auch nicht. Ich bin wegen eines Mannes namens Ken hierher gekommen.
-	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_02"); //Das ist typisch für Talas. Ich werde mit ihm sprechen müssen. Aber wer zum Teufel ist Ken?
-	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_03"); //Obwohl – das kannst du mir später erzählen. Schau dir das hier mal an.
+	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_00"); //Oh, there you are. I was afraid Talas wouldn't find you.
+	AI_Output(hero, self, "Info_Mod_Tondral_Ken_15_01"); //Neither did he. I came here for a man named Ken.
+	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_02"); //That's typical of Talas. I'll have to talk to him. But who the hell is Ken?
+	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_03"); //Although, you can tell me later. Take a look at this one.
 
-	B_ShowGivenThings	("Schriftstück erhalten");
+	B_ShowGivenThings	("Receiving documents");
 
-	AI_Output(hero, self, "Info_Mod_Tondral_Ken_15_04"); //Das ist interessant. Ich glaube, es ist ein Teleportzauber.
-	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_05"); //Wohin führt er deiner Meinung nach?
-	AI_Output(hero, self, "Info_Mod_Tondral_Ken_15_06"); //Wahrscheinlich zu einem Ort namens Gelato.
-	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_07"); //Gelato? Nie davon gehört.
-	AI_Output(hero, self, "Info_Mod_Tondral_Ken_15_08"); //Kann ich den Zauber haben?
-	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_09"); //Bist du von Sinnen? Wir werden die Spruchrolle erforschen müssen!
+	AI_Output(hero, self, "Info_Mod_Tondral_Ken_15_04"); //That's interesting. I think it's a teleport spell.
+	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_05"); //Where do you think it leads?
+	AI_Output(hero, self, "Info_Mod_Tondral_Ken_15_06"); //Probably to a place called Gelato.
+	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_07"); //Gelato? Never heard of it.
+	AI_Output(hero, self, "Info_Mod_Tondral_Ken_15_08"); //Can I have the spell?
+	AI_Output(self, hero, "Info_Mod_Tondral_Ken_13_09"); //Are you out of your mind? We'll have to explore the role of spell!
 
 	Info_ClearChoices	(Info_Mod_Tondral_Ken);
 
-	Info_AddChoice	(Info_Mod_Tondral_Ken, "Ich bitte dich. Es ist wichtig.", Info_Mod_Tondral_Ken_B);
+	Info_AddChoice	(Info_Mod_Tondral_Ken, "I beg you, please. It's important.", Info_Mod_Tondral_Ken_B);
 };
 
 FUNC VOID Info_Mod_Tondral_Ken_B()
 {
-	AI_Output(hero, self, "Info_Mod_Tondral_Ken_B_15_00"); //Ich bitte dich. Es ist wichtig.
-	AI_Output(self, hero, "Info_Mod_Tondral_Ken_B_13_01"); //Was willst du denn damit?
-	AI_Output(hero, self, "Info_Mod_Tondral_Ken_B_15_02"); //Es geht um einen Auftrag. Mehr darf ich nicht verraten. Es ist wichtig.
-	AI_Output(self, hero, "Info_Mod_Tondral_Ken_B_13_03"); //Na gut, ich denke, ich muss dir vertrauen. Hier hast du die Spruchrolle.
+	AI_Output(hero, self, "Info_Mod_Tondral_Ken_B_15_00"); //I beg you, please. It's important.
+	AI_Output(self, hero, "Info_Mod_Tondral_Ken_B_13_01"); //What do you want with it?
+	AI_Output(hero, self, "Info_Mod_Tondral_Ken_B_15_02"); //It's about a job. That's all I can tell you. It's important.
+	AI_Output(self, hero, "Info_Mod_Tondral_Ken_B_13_03"); //All right, I think I need to trust you. Here's your part of the story.
 
 	B_GiveInvItems	(self, hero, ItSc_Teleport_Eisgebiet, 1);
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ich habe nun den Teleportzauber. Ich muss das Risiko eingehen ihn zu benutzen.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "I now have the teleport spell. I have to take the risk of using him.");
 
 	VMG_Second = 4;
 
@@ -101,11 +101,11 @@ FUNC INT Info_Mod_Tondral_Thys_Condition()
 
 FUNC VOID Info_Mod_Tondral_Thys_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tondral_Thys_13_00"); //Ich habe dich schon erwartet. Wie ist es gelaufen?
-	AI_Output(hero, self, "Info_Mod_Tondral_Thys_15_01"); //Es war so, wie ich gedacht habe. Ich wurde nach Gelato teleportiert.
-	AI_Output(self, hero, "Info_Mod_Tondral_Thys_13_02"); //Das ist großartig! Hattest du Schwierigkeiten?
-	AI_Output(hero, self, "Info_Mod_Tondral_Thys_15_03"); //Nein, es lief alles gut.
-	AI_Output(self, hero, "Info_Mod_Tondral_Thys_13_04"); //Schade, dass du die Rolle verbraucht hast. Wir werden uns auf die Suche nach weiteren Zaubern machen müssen. Was das wieder kosten wird ...
+	AI_Output(self, hero, "Info_Mod_Tondral_Thys_13_00"); //I've been expecting you. How did it go?
+	AI_Output(hero, self, "Info_Mod_Tondral_Thys_15_01"); //It was as I thought. I was teleported to Gelato.
+	AI_Output(self, hero, "Info_Mod_Tondral_Thys_13_02"); //That's awesome! Did you have trouble?
+	AI_Output(hero, self, "Info_Mod_Tondral_Thys_15_03"); //No, everything went well.
+	AI_Output(self, hero, "Info_Mod_Tondral_Thys_13_04"); //Too bad you used up the part. We're gonna have to start looking for more spells. What it will cost again....
 
 	B_StartOtherRoutine	(Mod_2012_PSINOV_Talas_MT, "START");
 
@@ -113,26 +113,26 @@ FUNC VOID Info_Mod_Tondral_Thys_Info()
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 1000)
 	{
-		Info_AddChoice	(Info_Mod_Tondral_Thys, "Hier habt ihr 1000 Goldmünzen. Finanziert damit eure Grabungen.", Info_Mod_Tondral_Thys_C);
+		Info_AddChoice	(Info_Mod_Tondral_Thys, "Here's 1,000 gold coins. Use it to finance your excavations.", Info_Mod_Tondral_Thys_C);
 	};
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Tondral_Thys, "Hier habt ihr 100 Goldmünzen. Finanziert damit eure Grabungen.", Info_Mod_Tondral_Thys_B);
+		Info_AddChoice	(Info_Mod_Tondral_Thys, "Here's 100 gold coins. Use it to finance your excavations.", Info_Mod_Tondral_Thys_B);
 	};
-	Info_AddChoice	(Info_Mod_Tondral_Thys, "Ja, das wird nicht billig.", Info_Mod_Tondral_Thys_A);
+	Info_AddChoice	(Info_Mod_Tondral_Thys, "Yeah, it won't be cheap.", Info_Mod_Tondral_Thys_A);
 };
 
 FUNC VOID Info_Mod_Tondral_Thys_C()
 {
-	AI_Output(hero, self, "Info_Mod_Tondral_Thys_C_15_00"); //Hier habt ihr 1000 Goldmünzen. Finanziert damit eure Grabungen.
-	AI_Output(self, hero, "Info_Mod_Tondral_Thys_C_13_01"); //Tausend Dank! Hier, nimm diesen Heiltrank als Dank.
+	AI_Output(hero, self, "Info_Mod_Tondral_Thys_C_15_00"); //Here's 1,000 gold coins. Use it to finance your excavations.
+	AI_Output(self, hero, "Info_Mod_Tondral_Thys_C_13_01"); //Thank you very much! Here, take this healing potion as a thank you.
 
 	B_GiveInvItems	(self, hero, ItPo_Health_02, 1);
 
-	AI_Output(hero, self, "Info_Mod_Tondral_Thys_C_15_02"); //Ich danke dir. Ich muss mich jetzt auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Tondral_Thys_C_13_03"); //Pass auf dich auf.
+	AI_Output(hero, self, "Info_Mod_Tondral_Thys_C_15_02"); //Thank you, thank you. I have to get going now.
+	AI_Output(self, hero, "Info_Mod_Tondral_Thys_C_13_03"); //Take care of yourself.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ich habe mit Baal Tondral gesprochen und seine weiteren Ausgrabungen finanziert. Er hat sich mit einem Heiltrank erkenntlich gezeigt. Ich sollte jetzt zurück zu Ferco gehen.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "I spoke to Baal Tondral and financed his further excavations. He showed his gratitude with a healing potion. I should go back to Ferco now.");
 
 	B_GivePlayerXP	(500);
 
@@ -143,15 +143,15 @@ FUNC VOID Info_Mod_Tondral_Thys_C()
 
 FUNC VOID Info_Mod_Tondral_Thys_B()
 {
-	AI_Output(hero, self, "Info_Mod_Tondral_Thys_B_15_00"); //Hier habt ihr 100 Goldmünzen. Finanziert damit eure Grabungen.
-	AI_Output(self, hero, "Info_Mod_Tondral_Thys_B_13_01"); //Vielen Dank! Hier, nimm diesen Heiltrank als Dank.
+	AI_Output(hero, self, "Info_Mod_Tondral_Thys_B_15_00"); //Here's 100 gold coins. Use it to finance your excavations.
+	AI_Output(self, hero, "Info_Mod_Tondral_Thys_B_13_01"); //Thank you very much! Here, take this healing potion as a thank you.
 
 	B_GiveInvItems	(self, hero, ItPo_Health_01, 1);
 
-	AI_Output(hero, self, "Info_Mod_Tondral_Thys_B_15_02"); //Ich danke dir. Ich muss mich jetzt auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Tondral_Thys_B_13_03"); //Pass auf dich auf.
+	AI_Output(hero, self, "Info_Mod_Tondral_Thys_B_15_02"); //Thank you, thank you. I have to get going now.
+	AI_Output(self, hero, "Info_Mod_Tondral_Thys_B_13_03"); //Take care of yourself.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ich habe mit Baal Tondral gesprochen und seine weiteren Ausgrabungen finanziert. Er hat sich mit einem Heiltrank erkenntlich gezeigt. Ich sollte jetzt zurück zu Ferco gehen.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "I spoke to Baal Tondral and financed his further excavations. He showed his gratitude with a healing potion. I should go back to Ferco now.");
 
 	VMG_Second = 12;
 
@@ -162,28 +162,28 @@ FUNC VOID Info_Mod_Tondral_Thys_B()
 
 FUNC VOID Info_Mod_Tondral_Thys_A()
 {
-	AI_Output(hero, self, "Info_Mod_Tondral_Thys_A_15_00"); //Ja, das wird nicht billig.
-	AI_Output(self, hero, "Info_Mod_Tondral_Thys_A_13_01"); //Willst du nicht ein wenig dazu beitragen?
+	AI_Output(hero, self, "Info_Mod_Tondral_Thys_A_15_00"); //Yeah, it won't be cheap.
+	AI_Output(self, hero, "Info_Mod_Tondral_Thys_A_13_01"); //Don't you want to contribute a little?
 
 	Info_ClearChoices	(Info_Mod_Tondral_Thys);
 
-	Info_AddChoice	(Info_Mod_Tondral_Thys, "Nein.", Info_Mod_Tondral_Thys_D);
+	Info_AddChoice	(Info_Mod_Tondral_Thys, "No.", Info_Mod_Tondral_Thys_D);
 	if (Npc_HasItems(hero, ItMi_Gold) >= 1000)
 	{
-		Info_AddChoice	(Info_Mod_Tondral_Thys, "Hier habt ihr 1000 Goldmünzen. Finanziert damit eure Grabungen.", Info_Mod_Tondral_Thys_C);
+		Info_AddChoice	(Info_Mod_Tondral_Thys, "Here's 1,000 gold coins. Use it to finance your excavations.", Info_Mod_Tondral_Thys_C);
 	};
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Tondral_Thys, "Hier habt ihr 100 Goldmünzen. Finanziert damit eure Grabungen.", Info_Mod_Tondral_Thys_B);
+		Info_AddChoice	(Info_Mod_Tondral_Thys, "Here's 100 gold coins. Use it to finance your excavations.", Info_Mod_Tondral_Thys_B);
 	};
 };
 
 FUNC VOID Info_Mod_Tondral_Thys_D()
 {
-	AI_Output(hero, self, "Info_Mod_Tondral_Thys_D_15_00"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Tondral_Thys_D_13_01"); //Du bist nicht rein. Du gehst besser.
+	AI_Output(hero, self, "Info_Mod_Tondral_Thys_D_15_00"); //No.
+	AI_Output(self, hero, "Info_Mod_Tondral_Thys_D_13_01"); //You're not pure. You better go.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ich sollte jetzt zurück zu Ferco gehen.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "I should go back to Ferco now.");
 
 	VMG_Second = 12;
 
@@ -198,7 +198,7 @@ INSTANCE Info_Mod_Tondral_Woher (C_INFO)
 	information	= Info_Mod_Tondral_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Erzähl mir was von deiner Geschichte?";
+	description	= "Tell me something about your story?";
 };
 
 FUNC INT Info_Mod_Tondral_Woher_Condition()
@@ -212,12 +212,12 @@ FUNC INT Info_Mod_Tondral_Woher_Condition()
 
 FUNC VOID Info_Mod_Tondral_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tondral_Woher_15_00"); //Erzähl mir was von deiner Geschichte?
-	AI_Output(self, hero, "Info_Mod_Tondral_Woher_13_01"); //Man hat mich in die Kolonie geworfen, weil ich zwei Bücher über die Götter geschrieben habe.
-	AI_Output(hero, self, "Info_Mod_Tondral_Woher_15_02"); //Und was war daran so schlimm?
-	AI_Output(self, hero, "Info_Mod_Tondral_Woher_13_03"); //Nun, es scheint ihnen nicht gefallen zu haben, dass ich meine Meinung zu den Göttern geäußert habe.
-	AI_Output(self, hero, "Info_Mod_Tondral_Woher_13_04"); //Ich hab mich dann etwas abgesondert bei den Hütten vor dem Neuen Lager niedergelassen, bis ich dann von der Bruderschaft gehört habe.
-	AI_Output(self, hero, "Info_Mod_Tondral_Woher_13_05"); //Der Schläfer war für mich eine alternative zu den übrigen Göttern und somit wurde ich hier aufgenommen.
+	AI_Output(hero, self, "Info_Mod_Tondral_Woher_15_00"); //Tell me something about your story?
+	AI_Output(self, hero, "Info_Mod_Tondral_Woher_13_01"); //I was thrown into the colony for writing two books about the gods.
+	AI_Output(hero, self, "Info_Mod_Tondral_Woher_15_02"); //And what was so bad about it?
+	AI_Output(self, hero, "Info_Mod_Tondral_Woher_13_03"); //Well, they don't seem to like that I've expressed my opinion of the gods.
+	AI_Output(self, hero, "Info_Mod_Tondral_Woher_13_04"); //I then settled down at the huts in front of the new camp until I heard about the brotherhood.
+	AI_Output(self, hero, "Info_Mod_Tondral_Woher_13_05"); //The sleeper was for me an alternative to the other gods and so I was accepted here.
 };
 
 INSTANCE Info_Mod_Tondral_Buch (C_INFO)
@@ -228,7 +228,7 @@ INSTANCE Info_Mod_Tondral_Buch (C_INFO)
 	information	= Info_Mod_Tondral_Buch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du noch Exemplare der Bücher?";
+	description	= "Do you still have copies of the books?";
 };
 
 FUNC INT Info_Mod_Tondral_Buch_Condition()
@@ -241,8 +241,8 @@ FUNC INT Info_Mod_Tondral_Buch_Condition()
 
 FUNC VOID Info_Mod_Tondral_Buch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tondral_Buch_15_00"); //Hast du noch Exemplare der Bücher?
-	AI_Output(self, hero, "Info_Mod_Tondral_Buch_13_01"); //Nicht hier, aber du kannst zu meiner alten Hütte gehen, dort müsste noch jeweils ein Buch zu finden sein.
+	AI_Output(hero, self, "Info_Mod_Tondral_Buch_15_00"); //Do you still have copies of the books?
+	AI_Output(self, hero, "Info_Mod_Tondral_Buch_13_01"); //Not here, but you can go to my old hut. There should be a book there.
 };
 
 INSTANCE Info_Mod_Tondral_EXIT (C_INFO)

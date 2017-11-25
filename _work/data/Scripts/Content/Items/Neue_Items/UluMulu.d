@@ -22,9 +22,9 @@ INSTANCE UluMulu(C_Item)
 	on_unequip	=	UnEquip_UluMulu;
 
 	description		=	name;
-	TEXT[0]			=	"Das Ulu-Mulu ist ein Zeichen großer Stärke und";
-	TEXT[1]			=	"Würde. Der Träger dieser Standarte hat vor";
-	TEXT[2]			=	"Orks nichts zu befürchten!";
+	TEXT[0]			=	"The Ulu-Mulu is a sign of great strength and strength.";
+	TEXT[1]			=	"Dignity. The wearer of this standard is expected to";
+	TEXT[2]			=	"Orcs nothing to fear!";
 	TEXT[3]			=	NAME_Damage;			COUNT[3]	= damageTotal;
 	TEXT[4] 		=	NAME_Str_needed;		COUNT[4]	= cond_value[2];
 	TEXT[5]			=	NAME_Value; 			COUNT[5]	= value;

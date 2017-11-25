@@ -19,14 +19,14 @@ FUNC INT Info_Mod_Miguel_Hi_Condition()
 
 FUNC VOID Info_Mod_Miguel_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Miguel_Hi_11_00"); //Hey, ein neuer im Lager. Brauchst du etwas?
-	AI_Output(hero, self, "Info_Mod_Miguel_Hi_15_01"); //Hallo. Etwas brauchen? Was hast du anzubieten?
-	AI_Output(self, hero, "Info_Mod_Miguel_Hi_11_02"); //Nun, als Lageralchemist habe ich so einige Tränke auf Lager.
-	AI_Output(self, hero, "Info_Mod_Miguel_Hi_11_03"); //Außerdem verwalte ich die überschüssige Hehlerware, die wir gerade nicht loswerden.
-	AI_Output(self, hero, "Info_Mod_Miguel_Hi_11_04"); //Du kannst also manch interessante Handelsgüter bei mir finden ... und viel günstiger, als bei den Wucherern die sich Händler nennen.
+	AI_Output(self, hero, "Info_Mod_Miguel_Hi_11_00"); //Hey, a new guy in the warehouse. Do you need anything?
+	AI_Output(hero, self, "Info_Mod_Miguel_Hi_15_01"); //Hello. Need something? What do you have to offer?
+	AI_Output(self, hero, "Info_Mod_Miguel_Hi_11_02"); //Well, as a camp chemist, I have some potions in stock.
+	AI_Output(self, hero, "Info_Mod_Miguel_Hi_11_03"); //I also manage the excess stolen goods we can't get rid of right now.
+	AI_Output(self, hero, "Info_Mod_Miguel_Hi_11_04"); //So you can find some interesting trade goods with me... and much cheaper than the usurers who call themselves traders.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_BANDITEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_BANDITEN, "Miguel scheint mit Tränken zu handeln.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_BANDITEN, "Miguel seems to be dealing in potions.");
 
 	Npc_SetRefuseTalk	(self, 240);
 };
@@ -52,22 +52,22 @@ FUNC INT Info_Mod_Miguel_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Miguel_Aufgabe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_00"); //Hey, du bist ja viel draußen unterwegs. Du könntest mir da bei einer Sache helfen.
-	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe_15_01"); //Ja, worum geht es?
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_02"); //Ein Kunde von mir möchte ein Gebräu, ein ganz spezielles. Leider fehlen mir einige Zutaten ...
-	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe_15_03"); //Was soll ich dir besorgen?
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_04"); //Zum einen bräuchte ich drei Fliegenpilze. Mit etwas Glück solltest du sie gleich im Wald unterhalb des Lagers finden.
-	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe_15_05"); //Was noch?
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_06"); //Und dann noch das schleimige Sekret, welches die Haut von jungen Lurkern abgibt.
-	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe_15_07"); //Wie?
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_08"); //Ja, bei Gefahr sondert ihre Haut Gift ab.
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_09"); //Dieses musst du, nachdem du sie erledigt hast, abschaben… ach, bring mir einfach gleich die ganze Häute mit.
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_10"); //Diese lässt sich bei jungen Tieren noch problemlos mit einem Rasiermesser entfernen.
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_11"); //Unten am Fluss solltest du zu dieser Jahreszeit bestimmt genug junge Lurker finden. Zwei Häute sollten genügen. Viel Glück.
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_00"); //Hey, you're out on the road a lot. You could help me with one thing.
+	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe_15_01"); //Yeah, what's it about?
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_02"); //A customer of mine wants a brew, a very special one. Unfortunately I miss some ingredients....
+	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe_15_03"); //What should I get you?
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_04"); //For one thing, I'd need three toadstools. With any luck, you should find her in the woods below camp.
+	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe_15_05"); //What else what?
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_06"); //And then there's the mucilaginous secretion that the skin releases from young Lurkers.
+	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe_15_07"); //How?
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_08"); //Yes, in case of danger, their skin will secrete poison.
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_09"); //You have to scrape this off after you've killed her.... oh, just bring me the whole hides right away.
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_10"); //This can still be removed easily with a razor in young animals.
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe_11_11"); //At this time of the year you should certainly find enough young Lurkers down by the river. Two skins should be enough. Good luck to you.
 	
 	Log_CreateTopic	(TOPIC_MOD_BDT_FLIEGENPILZLURKERSCHLEIM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_FLIEGENPILZLURKERSCHLEIM, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BDT_FLIEGENPILZLURKERSCHLEIM, "Miguel benötigt für ein Gebräu drei Fliegenpilze und zwei Häute junger Lurker, die ihren giftigen Schleim abgesondert haben. Die Sachen werde ich im Wald und am Fluss unterhalb des Lagers finden. Hmm, welche üblen Pläne hat jemand wohl mit so einem Trank ...");
+	B_LogEntry	(TOPIC_MOD_BDT_FLIEGENPILZLURKERSCHLEIM, "Miguel requires three fly agaric mushrooms and two skins of young Lurker for a brew, which have secreted their poisonous mucus. I will find the things in the forest and by the river below the camp. Hmm, what evil plans does someone have with such a potion...");
 
 	Wld_InsertNpc	(Lurker_Young,	"FP_ROAM_OW_RIVER_LURKER_02");
 	Wld_InsertNpc	(Lurker_Young,	"FP_ROAM_OW_RIVER_LURKER_02");
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Miguel_Aufgabe2 (C_INFO)
 	information	= Info_Mod_Miguel_Aufgabe2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Pilze und den Schleim.";
+	description	= "I have the mushrooms and the mucus.";
 };
 
 FUNC INT Info_Mod_Miguel_Aufgabe2_Condition()
@@ -113,7 +113,7 @@ FUNC VOID Info_Mod_Miguel_Aufgabe2_Info()
 	Npc_RemoveInvItems	(hero, ItPl_Mushroom_03, 3);
 	Npc_RemoveInvItems	(hero, ItAt_LurkerSkin_Young, 2);
 	
-	B_ShowGivenThings("3 Fliegenpilze und 2 Häute junger Lurker gegeben");
+	B_ShowGivenThings("3 toadstools and 2 skins of young Lurker given");
 
 	AI_StopProcessInfos	(self);
 
@@ -141,13 +141,13 @@ FUNC INT Info_Mod_Miguel_Aufgabe3_Condition()
 
 FUNC VOID Info_Mod_Miguel_Aufgabe3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe3_11_00"); //So, ich bin fertig mit der Giftmischung. Hier hast du das Gebräu.
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe3_11_00"); //All right, I'm done with the poison mixture. Here's the brew.
 
 	B_GiveInvItems	(self, hero, ItPo_MiguelForDar, 1);
 
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe3_11_01"); //Der Kunde wartet im neuen Lager und heißt Dar.
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe3_11_01"); //The customer waits in the new warehouse and is called Dar.
 	
-	B_LogEntry	(TOPIC_MOD_BDT_FLIEGENPILZLURKERSCHLEIM, "Miguel will, dass ich dem Kunden sein Gebräu bringe. Dieser wartet im neuen Lager und heißt Dar. Ganz wohl ist mir bei der Sache ja nicht ...");
+	B_LogEntry	(TOPIC_MOD_BDT_FLIEGENPILZLURKERSCHLEIM, "Miguel wants me to bring the customer his brew. He waits in the new warehouse and is called Dar. Well, I'm not at all happy about that...");
 
 	AI_StopProcessInfos	(self);
 
@@ -162,7 +162,7 @@ INSTANCE Info_Mod_Miguel_Aufgabe4 (C_INFO)
 	information	= Info_Mod_Miguel_Aufgabe4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Dar den Trank übergeben ...";
+	description	= "I gave Dar the potion...";
 };
 
 FUNC INT Info_Mod_Miguel_Aufgabe4_Condition()
@@ -175,12 +175,12 @@ FUNC INT Info_Mod_Miguel_Aufgabe4_Condition()
 
 FUNC VOID Info_Mod_Miguel_Aufgabe4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe4_15_00"); //Ich habe Dar den Trank übergeben ... Und er hat tatsächlich ...
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe4_11_01"); //... ja, er hat sich bestimmt gut amüsiert.
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe4_11_02"); //So ein schönes halluzinogenes Giftgemisch lässt jeden harzigen Stängel blass dagegen erscheinen ...
-	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe4_11_03"); //Achja, gute Arbeit. Hier ist dein Anteil.
+	AI_Output(hero, self, "Info_Mod_Miguel_Aufgabe4_15_00"); //I gave Dar the potion... And he actually has...
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe4_11_01"); //... Yeah, he must have a good time.
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe4_11_02"); //Such a beautiful hallucinogenic mixture of toxins makes every resinous stem appear pale against it....
+	AI_Output(self, hero, "Info_Mod_Miguel_Aufgabe4_11_03"); //Good job, by the way. Here's your share.
 
-	B_ShowGivenThings	("100 Gold und 12 Erz erhalten");
+	B_ShowGivenThings	("100 gold and 12 ore obtained");
 
 	CreateInvItems	(hero, ItMi_Gold, 100);
 	CreateInvItems	(hero, ItMi_Nugget, 12);

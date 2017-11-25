@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Reinhold_Hi_Condition()
 
 FUNC VOID Info_Mod_Reinhold_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Reinhold_Hi_14_00"); //Das gibt es nicht. Wie konntest du es so weit schaffen? Du hättest schon längst tot sein müssen!
-	AI_Output(hero, self, "Info_Mod_Reinhold_Hi_15_01"); //Es kamen schon viele von deiner Sorte, und ich habe sie alle hinweggefegt!
-	AI_Output(self, hero, "Info_Mod_Reinhold_Hi_14_02"); //Dann wird das ein angemessenes Duell!
+	AI_Output(self, hero, "Info_Mod_Reinhold_Hi_14_00"); //There is no such thing. How did you make it this far? You should have been dead by now!
+	AI_Output(hero, self, "Info_Mod_Reinhold_Hi_15_01"); //There's been a lot of you coming, and I swept them all away!
+	AI_Output(self, hero, "Info_Mod_Reinhold_Hi_14_02"); //Then this will be a fair duel!
 
 	CreateInvItems	(self, ItWr_AxtAlmanach_04, 1);
 

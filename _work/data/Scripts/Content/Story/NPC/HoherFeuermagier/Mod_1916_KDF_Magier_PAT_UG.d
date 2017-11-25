@@ -1,7 +1,7 @@
 instance Mod_1916_KDF_Magier_PAT_UG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Schwarzmagier";
+	name 		= "Black Magician";
 	guild 		= GIL_VLK;
 	id 			= 1916;
 	voice 		= 13;

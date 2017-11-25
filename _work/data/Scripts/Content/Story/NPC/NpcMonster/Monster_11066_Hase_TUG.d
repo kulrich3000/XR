@@ -1,7 +1,7 @@
 INSTANCE Monster_11066_Hase_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hase";	
+	name 		= "rabbit";	
 	guild							=	GIL_SHEEP;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Rabbit;
 	id 			= 11066;

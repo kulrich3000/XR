@@ -15,8 +15,8 @@ FUNC INT Info_Mod_Urnol_OT_Schwert_Condition()
 
 FUNC VOID Info_Mod_Urnol_OT_Schwert_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Urnol_OT_Schwert_14_00"); //Du schon wieder! Diesmal werde ich dich nicht davon kommen lassen.
-	AI_Output(self, hero, "Info_Mod_Urnol_OT_Schwert_14_01"); //Mach dich auf dein Ende gefasst, Wurm!
+	AI_Output(self, hero, "Info_Mod_Urnol_OT_Schwert_14_00"); //You again! I'm not gonna let you get away with it this time.
+	AI_Output(self, hero, "Info_Mod_Urnol_OT_Schwert_14_01"); //Get ready for your end, worm!
 
 	self.flags = 0;
 

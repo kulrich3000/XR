@@ -2,7 +2,7 @@ instance Mod_1628_VMG_Anor_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Anor";
+	name =							"anorh";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							5;

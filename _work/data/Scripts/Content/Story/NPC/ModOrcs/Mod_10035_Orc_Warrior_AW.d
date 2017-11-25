@@ -1,7 +1,7 @@
 INSTANCE Mod_10035_Orc_Warrior_AW (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Ork Krieger";
+	name							=	"Orc Warrior";
 	guild							=	GIL_ORC;
 	id			= 	10035;
 	voice							=	18;

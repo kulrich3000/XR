@@ -1,7 +1,7 @@
 instance Mod_7719_OUT_Frau_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Frau";	//Halvors Frau
+	name 		= "Mrs.";	//Halvors Frau
 	guild 		= GIL_OUT;
 	id 			= 7719;
 	voice 		= 17;

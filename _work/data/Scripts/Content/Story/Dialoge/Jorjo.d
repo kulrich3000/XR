@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Jorjo_Hi_Condition()
 
 FUNC VOID Info_Mod_Jorjo_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jorjo_Hi_14_00"); //(ungläubig) Wie kommst du hierher? Drach hätte dich eigentlich töten sollen!
-	AI_Output(hero, self, "Info_Mod_Jorjo_Hi_15_01"); //Das haben schon viele gesagt.
-	AI_Output(self, hero, "Info_Mod_Jorjo_Hi_14_02"); //(seufzt) Dann werde ich mich um dich kümmern müssen.
+	AI_Output(self, hero, "Info_Mod_Jorjo_Hi_14_00"); //How did you get here? Dragon was supposed to kill you!
+	AI_Output(hero, self, "Info_Mod_Jorjo_Hi_15_01"); //Many people have already said that.
+	AI_Output(self, hero, "Info_Mod_Jorjo_Hi_14_02"); //Then I'll have to take care of you.
 
 	CreateInvItems	(self, ItWr_AxtAlmanach_02, 1);
 

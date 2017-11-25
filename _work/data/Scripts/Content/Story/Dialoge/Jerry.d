@@ -18,11 +18,11 @@ FUNC VOID Info_Mod_Jerry_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Jerry_Hi_15_00"); //Hi.
 	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_01"); //Hey.
-	AI_Output(hero, self, "Info_Mod_Jerry_Hi_15_02"); //Du scheinst ja noch eine Menge Arbeit vor dir zu haben.
-	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_03"); //Genau diese Art von Arbeit bekommt man hier als neuer Soldat.
-	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_04"); //Die bei der Miliz wollten mich nicht, aber der Oberbefehlshaber der Miliz meinte, es gäbe auch für mich eine Möglichkeit, das Militär zu unterstützen.
-	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_05"); //Und jetzt schau dir an, wo ich gelandet bin, an der Front und darf das Lager ausbessern.
-	AI_Output(hero, self, "Info_Mod_Jerry_Hi_15_06"); //Das Gefühl an der Front zu sein hab ich auch öfters ...
+	AI_Output(hero, self, "Info_Mod_Jerry_Hi_15_02"); //You seem to have a lot of work to do.
+	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_03"); //This is exactly the kind of work you get here as a new soldier.
+	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_04"); //They didn't want me to join the militia, but the commander-in-chief of the militia said there was a way for me to support the military.
+	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_05"); //And now look where I landed, at the front, and I'm allowed to repair the camp.
+	AI_Output(hero, self, "Info_Mod_Jerry_Hi_15_06"); //I have the feeling to be at the front too...
 };
 
 INSTANCE Info_Mod_Jerry_Lehrer (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Jerry_Lehrer (C_INFO)
 	information	= Info_Mod_Jerry_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mich Trainieren?";
+	description	= "Can you train me?";
 };
 
 FUNC INT Info_Mod_Jerry_Lehrer_Condition()
@@ -48,12 +48,12 @@ FUNC INT Info_Mod_Jerry_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Jerry_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jerry_Lehrer_15_00"); //Kannst du mich Trainieren?
-	AI_Output(self, hero, "Info_Mod_Jerry_Lehrer_04_01"); //Na klar, wir Neuen sollten doch zusammen halt.
-	AI_Output(self, hero, "Info_Mod_Jerry_Lehrer_04_02"); //Wenn du willst kann ich dir ein paar Sachen im Einhandkampf zeigen.
+	AI_Output(hero, self, "Info_Mod_Jerry_Lehrer_15_00"); //Can you train me?
+	AI_Output(self, hero, "Info_Mod_Jerry_Lehrer_04_01"); //Sure, we newcomers should stick together.
+	AI_Output(self, hero, "Info_Mod_Jerry_Lehrer_04_02"); //If you want, I can show you a few things in one-handed combat.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KG, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_KG, "Jerry kann mir den Umgang mit Einhändern beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_KG, "Jerry can teach me how to handle a hand.");
 };
 
 INSTANCE Info_Mod_Jerry_Lernen (C_INFO)
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Jerry_Lernen (C_INFO)
 	information	= Info_Mod_Jerry_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "I want to learn.";
 };
 
 FUNC INT Info_Mod_Jerry_Lernen_Condition()
@@ -78,7 +78,7 @@ FUNC INT Info_Mod_Jerry_Lernen_Condition()
 
 FUNC VOID Info_Mod_Jerry_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jerry_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Jerry_Lernen_15_00"); //I want to learn.
 
 	Info_ClearChoices	(Info_Mod_Jerry_Lernen);
 

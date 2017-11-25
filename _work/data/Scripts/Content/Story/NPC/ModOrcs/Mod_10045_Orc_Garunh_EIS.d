@@ -1,7 +1,7 @@
 INSTANCE Mod_10045_Orc_Garunh_EIS (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Garunh";
+	name							=	"garunh";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	10045;
 	voice							=	18;

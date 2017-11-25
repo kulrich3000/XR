@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_1H_Eminem_Eisenklinge_01 (C_Item)
 {
-	name 				=	"Eisenklinge";
+	name 				=	"iron blade";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -27,7 +27,7 @@ INSTANCE ItMw_1H_Eminem_Eisenklinge_01 (C_Item)
 };
 INSTANCE ItMw_1H_Eminem_Eisenklinge_01_Geschaerft (C_Item)
 {
-	name 				=	"Eisenklinge (geschärft)";
+	name 				=	"Iron blade (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;

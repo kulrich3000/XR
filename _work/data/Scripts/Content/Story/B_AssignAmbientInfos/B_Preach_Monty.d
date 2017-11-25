@@ -30,11 +30,11 @@ func void B_Preach_Monty(var int satz)
 			AI_PlayAni	(Mod_1044_VLK_Buerger_NW, "T_CLAPHANDS_2_STAND");
 		};
 
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_00"); //Mitten in der Nacht schlich ich mich durch das Orklager.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_00"); //In the middle of the night, I crept through the orklager.
 	};
 	if (satz == 1) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_01"); //Ich schlitzte den Orkwachen die Kehlen auf, sodass sie in ihrem Blut schwammen!
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_01"); //I slit the orc guards' throats so that they swam in their blood!
 
 		// Hier kommt dann das applaudierende Publikum drunter (T_STAND_2_CLAPHANDS oder so)
 
@@ -86,39 +86,39 @@ func void B_Preach_Monty(var int satz)
 			AI_PlayAni	(Mod_1044_VLK_Buerger_NW, "T_CLAPHANDS_2_STAND");
 		};
 
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_02"); //Dann stieg ich die Höhle hinab wie in ein Grab.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_02"); //Then I descended into the cave like a grave.
 	};
 	if (satz == 3) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_03"); //Stockfinster und eng war es dort, und es wimmelte von Dämonen und Schlimmerem.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_03"); //It was pitch-dark and crowded there, and it was teeming with demons and worse.
 	};
 	if (satz == 4) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_04"); //Endlich, ich wähnte mich seit Wochen dort unten, weitete sich die Höhle, und mittendrin, hässlich und riesenhaft, hockt der Schläfer.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_04"); //Finally, I thought I was down there for weeks, widened the cave, and in the middle of it, ugly and huge, the sleeper squats.
 	};
 	if (satz == 5) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_05"); //Und nun - ich gegen ihn, 20 Meter und 14 Beine gegen zwei.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_05"); //And now - me against him, 20 meters and 14 legs against two.
 	};
 	if (satz == 6) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_06"); //Kampf auf Leben und Tod.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_06"); //Fight to the death.
 	};
 	if (satz == 7) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_07"); //Keine Chance, denke ich. Aber ich gebe nicht auf!
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_07"); //No way, I think. But I'm not giving up!
 	};
 	if (satz == 8) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_08"); //Ein Bein nach dem andern fällt, grüne Säure spritzt heraus und verätzt mir die Augen, bis ich kaum noch etwas sehe.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_08"); //One leg after the other falls, green acid splashes out and burns my eyes until I hardly see anything.
 	};
 	if (satz == 9) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_09"); //Ich hacke und steche, und irgendwann - rührt sich nichts mehr. Ich habe gesiegt!
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_09"); //I hack and sting, and at some point - no more stirring. I have won!
 	};
 	if (satz == 10) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_10"); //Und hier ist alles, was noch von ihm übrig ist!
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_10"); //And here's everything that's left of him!
 
 		// Hier kommt dann das applaudierende Publikum drunter (T_STAND_2_CLAPHANDS oder so)
 

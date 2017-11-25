@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Abuyin_Hi_Condition()
 
 FUNC VOID Info_Mod_Abuyin_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_31_00"); //Fremder, komm zu Abuyin ins Reich der tausend Sinne.
-	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_31_01"); //Hier kannst du die verschiedensten Tabaksorten rauchen und ganz neue Erfahrungen sammeln.
-	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_31_02"); //Setz dich einfach an eine der Wasserpfeifen und wähle eine der unvergleichlichen Geschmacksrichtungen.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_31_00"); //Stranger, come to Abuyin in the realm of a thousand senses.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_31_01"); //Here you can smoke a wide variety of tobaccos and gain new experiences.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_31_02"); //Just sit at one of the water pipes and choose one of the incomparable flavours.
 };
 
 INSTANCE Info_Mod_Abuyin_NewTabak (C_INFO)
@@ -41,8 +41,8 @@ FUNC INT Info_Mod_Abuyin_NewTabak_Condition()
 
 FUNC VOID Info_Mod_Abuyin_NewTabak_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Abuyin_NewTabak_31_00"); //Sohn des Schicksals, du wirst interessiert sein zu hören, dass mein Angebot erweitert ist.
-	AI_Output(self, hero, "Info_Mod_Abuyin_NewTabak_31_01"); //Mach eine Pause und genieße den neuen Tabak aus dem fernen Varant.
+	AI_Output(self, hero, "Info_Mod_Abuyin_NewTabak_31_00"); //Son of destiny, you will be interested to hear that my offer is extended.
+	AI_Output(self, hero, "Info_Mod_Abuyin_NewTabak_31_01"); //Take a break and enjoy the new tobacco from distant Varant.
 };
 
 INSTANCE Info_Mod_Abuyin_Flugblaetter (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Abuyin_Flugblaetter (C_INFO)
 	information	= Info_Mod_Abuyin_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Abuyin_Flugblaetter_Condition()
@@ -74,8 +74,8 @@ FUNC VOID Info_Mod_Abuyin_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Abuyin_Flugblaetter_31_01"); //Ich habe vorausgesehen, dass du kommen würdest.
-	AI_Output(self, hero, "Info_Mod_Abuyin_Flugblaetter_31_02"); //Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Flugblaetter_31_01"); //I anticipated you'd come.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Flugblaetter_31_02"); //Maybe I'll stop by Matteo's.
 
 	Mod_Flugblaetter += 1;
 };
@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Abuyin_Plagenquest (C_INFO)
 	information	= Info_Mod_Abuyin_Plagenquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du auch starken Tabak? Und ich meine keinen Apfeltabak ...";
+	description	= "Do you have strong tobacco? And I don't mean apple tobacco....";
 };
 
 FUNC INT Info_Mod_Abuyin_Plagenquest_Condition()
@@ -105,19 +105,19 @@ FUNC INT Info_Mod_Abuyin_Plagenquest_Condition()
 
 FUNC VOID Info_Mod_Abuyin_Plagenquest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_00"); //Hast du auch starken Tabak? Und ich meine keinen Apfeltabak ...
-	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_01"); //Ja, ich bin auch im Besitz eines solchen, Sohn des Abendlandes, wenn du den Genuss danach verspürst ...
-	AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_02"); //Wie viel kosten zwei Portionen von diesem Tabak?
-	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_03"); //100 Goldmünzen. Aber ich weiß, dass du diesen Betrag gerne bezahlen wirst.
+	AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_00"); //Do you have strong tobacco? And I don't mean apple tobacco....
+	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_01"); //Yes, I am also in possession of such a son of the Occident, if you feel the pleasure afterwards....
+	AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_02"); //How much do two servings of this tobacco cost?
+	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_03"); //100 gold coins. But I know you'll be happy to pay that amount.
 
 	if (Mod_Verhandlungsgeschick > 0)
 	{
-		AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_04"); //Diesmal trügt dich deine Voraussicht.
+		AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_04"); //This time your foresight is deceiving you.
 
 		if (self.aivar[AIV_Verhandlung] == TRUE)
 		{
-			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_05"); //Habe ich gesagt 100 Goldmünzen? Ich meinte natürlich 50.
-			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_06"); //Abuyin irrt sich nie.
+			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_05"); //Did I say 100 gold coins? I was talking about 50, of course.
+			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_06"); //Abuyin is never wrong.
 
 			B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
@@ -125,19 +125,19 @@ FUNC VOID Info_Mod_Abuyin_Plagenquest_Info()
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_07"); //Gewiss nicht.
+			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_07"); //Certainly not.
 
 			B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 		};
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_08"); //Dann hätte ich gerne zwei Portionen.
+		AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_08"); //Then I'd like two portions.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_09"); //Bitte sehr.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_09"); //Here you are.
 
 	B_GiveInvItems	(self, hero, ItMi_StarkerTabak, 2);
 };

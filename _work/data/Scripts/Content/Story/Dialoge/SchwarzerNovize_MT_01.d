@@ -15,7 +15,7 @@ FUNC INT Info_Mod_SchwarzerNovize_MT_01_Hi_Condition()
 
 FUNC VOID Info_Mod_SchwarzerNovize_MT_01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_MT_01_Hi_11_00"); //He, was machst du hier?
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_MT_01_Hi_15_01"); //Ich komme von Xardas.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_MT_01_Hi_11_02"); //Dann ist ok. Wir wollen ja nicht jeden Penner hier rumlaufen haben.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_MT_01_Hi_11_00"); //Hey, what are you doing here?
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_MT_01_Hi_15_01"); //I'm from Xardas.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_MT_01_Hi_11_02"); //Then it's okay. We don't want every bum around here.
 };

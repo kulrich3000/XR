@@ -18,7 +18,7 @@ FUNC VOID XW_Kap6_Scene03()
 
 	if (Mod_XW_Kap6_Scene03_Counter == 3)
 	{
-		AI_Output(Mod_7763_RDW_Diego_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_11_00"); //(außer Atem) Das kann doch nicht ewig so weitergehen!
+		AI_Output(Mod_7763_RDW_Diego_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_11_00"); //This can't go on forever!
 	};
 
 	if (Mod_XW_Kap6_Scene03_Counter == 9)
@@ -34,7 +34,7 @@ FUNC VOID XW_Kap6_Scene03()
 
 	if (Mod_XW_Kap6_Scene03_Counter == 13)
 	{
-		AI_Output(Monster_11075_Daemonenfuerst_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_20_01"); //(bedrohlich) Ihr steht nicht auf der heutigen Tagesplanung. Was habt ihr in der Arena zu suchen?
+		AI_Output(Monster_11075_Daemonenfuerst_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_20_01"); //You're not on today's schedule. What are you doing in the arena?
 
 		AI_TurnToNpc	(hero, Monster_11075_Daemonenfuerst_XW);
 	};
@@ -47,7 +47,7 @@ FUNC VOID XW_Kap6_Scene03()
 
 	if (Mod_XW_Kap6_Scene03_Counter == 20)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_15_02"); //(laut) Wir wollen Xeres' Kopf.
+		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_15_02"); //We want Xeres' head.
 	};
 
 	if (Mod_XW_Kap6_Scene03_Counter == 26)
@@ -58,12 +58,12 @@ FUNC VOID XW_Kap6_Scene03()
 
 	if (Mod_XW_Kap6_Scene03_Counter == 27)
 	{
-		AI_Output(Monster_11075_Daemonenfuerst_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_20_03"); //(lacht hämisch) Du bist ja eine Witzfigur. Deine aufmüpfige Zunge werde ich später mit Genuss verspeisen.
+		AI_Output(Monster_11075_Daemonenfuerst_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_20_03"); //(laughs gloatingly) You're a joke. I'll eat your rebellious tongue later with pleasure.
 	};
 
 	if (Mod_XW_Kap6_Scene03_Counter == 33)
 	{
-		AI_Output(Monster_11075_Daemonenfuerst_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_20_04"); //Aber dir sei versichert, dass Xeres bereits von diesem Zwischenfall informiert worden ist und sich sicher auf dem Weg hierher befindet, um euch Würmern den Garaus zu machen.
+		AI_Output(Monster_11075_Daemonenfuerst_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_20_04"); //But rest assured that Xeres has already been informed of this incident and is safely on his way here to put an end to worms.
 
 		AI_TurnToNpc	(Mod_7763_RDW_Diego_XW, Monster_11075_Daemonenfuerst_XW);
 	};
@@ -114,22 +114,22 @@ FUNC VOID XW_Kap6_Scene03()
 
 	if (Mod_XW_Kap6_Scene03_Counter == 48)
 	{
-		AI_Output(Mod_7763_RDW_Diego_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_11_05"); //Das war doch schon alles, was wir wissen wollten, oder?
+		AI_Output(Mod_7763_RDW_Diego_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_11_05"); //That's all we wanted to know, isn't it?
 	};
 
 	if (Mod_XW_Kap6_Scene03_Counter == 54)
 	{
-		AI_Output(Mod_7765_SLD_Gorn_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_12_06"); //Ich hätte Lust, mir auf den Rängen etwas Luft zu verschaffen.
+		AI_Output(Mod_7765_SLD_Gorn_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_12_06"); //I'd like to get some air in the stands.
 	};
 
 	if (Mod_XW_Kap6_Scene03_Counter == 60)
 	{
-		AI_Output(Mod_7764_PSINOV_Lester_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_13_07"); //Ich komme mit.
+		AI_Output(Mod_7764_PSINOV_Lester_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_13_07"); //I'll go with you.
 	};
 
 	if (Mod_XW_Kap6_Scene03_Counter == 66)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_15_08"); //Ja, kümmert euch um die Zuschauer. Ich werde hier auf Xeres warten.
+		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene03_15_08"); //Yeah, take care of the viewers. I'll wait here for Xeres.
 	};
 
 	if (Mod_XW_Kap6_Scene03_Counter == 69)

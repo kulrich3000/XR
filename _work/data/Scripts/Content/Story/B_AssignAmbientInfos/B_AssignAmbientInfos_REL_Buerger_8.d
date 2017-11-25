@@ -26,7 +26,7 @@ INSTANCE Info_REL_Buerger_8_Rundschreiben (C_INFO) // E1
 	condition	= Info_REL_Buerger_8_Rundschreiben_Condition;
 	information	= Info_REL_Buerger_8_Rundschreiben_Info;
 	permanent	= 1;
-	description = "Ich hab hier ein Rundschreiben für dich.";
+	description = "I've got a newsletter for you.";
 };                       
 
 FUNC INT Info_REL_Buerger_8_Rundschreiben_Condition()
@@ -40,7 +40,7 @@ FUNC INT Info_REL_Buerger_8_Rundschreiben_Condition()
 
 FUNC VOID Info_REL_Buerger_8_Rundschreiben_Info()
 {
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_8_Rundschreiben_15_00"); //Ich hab hier ein Rundschreiben für dich.
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_8_Rundschreiben_15_00"); //I've got a newsletter for you.
 
 	B_GiveInvItems	(hero, self, ItWr_AnselmRundschreiben, 1);
 
@@ -56,7 +56,7 @@ INSTANCE Info_REL_Buerger_8_FreudenspenderMachtBlind (C_INFO) // E1
 	condition	= Info_REL_Buerger_8_FreudenspenderMachtBlind_Condition;
 	information	= Info_REL_Buerger_8_FreudenspenderMachtBlind_Info;
 	permanent	= 1;
-	description = "Du nimmst doch kein Freudenspender?!";
+	description = "You don't take a giver of joy, do you?!";
 };                       
 
 FUNC INT Info_REL_Buerger_8_FreudenspenderMachtBlind_Condition()
@@ -71,12 +71,12 @@ FUNC INT Info_REL_Buerger_8_FreudenspenderMachtBlind_Condition()
 
 FUNC VOID Info_REL_Buerger_8_FreudenspenderMachtBlind_Info()
 {
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_15_00"); //Du nimmst doch kein Freudenspender?!
-	AI_Output(self, hero, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_08_01"); //Doch, natürlich, warum?
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_15_02"); //Von Freudenspender wird man blind.
-	AI_Output(self, hero, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_08_03"); //Sind doch nur Gerüchte.
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_15_04"); //Nein wirklich, ich kannte einen, der einen kannte, dessen Schwester kannte einen und von seinem Schwager der Cousin ist durch Freudenspender blind geworden!
-	AI_Output(self, hero, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_08_05"); //Ach du Scheiße, ich rühr das Zeug nicht mehr an.
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_15_00"); //You don't take a giver of joy, do you?!
+	AI_Output(self, hero, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_08_01"); //Yes, of course, why?
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_15_02"); //Donors of joy make you blind.
+	AI_Output(self, hero, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_08_03"); //It's just rumors.
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_15_04"); //No, really, I knew someone who knew someone whose sister knew one and his cousin's brother-in-law's sister knew one and his cousin's brother-in-law has gone blind because of joyfulness!
+	AI_Output(self, hero, "Info_Mod_REL_Buerger_8_FreudenspenderMachtBlind_08_05"); //Holy shit, I'm not gonna touch that stuff anymore.
 
 	self.aivar[AIV_FLUGBLATTVERTEILT] = Wld_GetDay();
 

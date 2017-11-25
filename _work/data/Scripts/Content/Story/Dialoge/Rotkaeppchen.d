@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rotkaeppchen_Hi (C_INFO)
 	information	= Info_Mod_Rotkaeppchen_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Deine Mutter macht sich Sorgen um dich.";
+	description	= "Your mother's worried about you.";
 };
 
 FUNC INT Info_Mod_Rotkaeppchen_Hi_Condition()
@@ -19,15 +19,15 @@ FUNC INT Info_Mod_Rotkaeppchen_Hi_Condition()
 
 FUNC VOID Info_Mod_Rotkaeppchen_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_Hi_15_00"); //Deine Mutter macht sich Sorgen um dich.
-	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_Hi_17_01"); //(einfältig) So langsam mache ich mir auch Sorgen.
-	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_Hi_17_02"); //Ich habe das Gefühl, dass mich seit einiger Zeit ein großer Wolf verfolgt. Er ist dort hinten, Richtung abgebranntes Lager.
-	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_Hi_17_03"); //Ich traue mich nicht an ihm vorbei, und laufe deswegen immer tiefer in den Wald hinein.
-	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_Hi_15_04"); //Ich werde mir den Wolf mal zur Brust nehmen.
+	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_Hi_15_00"); //Your mother's worried about you.
+	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_Hi_17_01"); //I'm starting to worry too.
+	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_Hi_17_02"); //I feel like I've been haunted by a big wolf for some time now. He's back there, heading for the burned warehouse.
+	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_Hi_17_03"); //I don't dare to walk past him, so I run deeper and deeper into the forest.
+	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_Hi_15_04"); //I'm gonna take the wolf to my chest.
 
 	Wld_InsertNpc	(Wolf_Rotkaeppchen,	"FP_SPAWN_ROTKAEPPCHENWOLF");
 	
-	B_LogEntry	(TOPIC_MOD_ROTKAEPPCHEN, "Ich habe Rotkäppchen gefunden. Doch sie wird von einem großen Wolf verfolgt und traut sich deswegen nicht zum Hof zurückzukehren.");
+	B_LogEntry	(TOPIC_MOD_ROTKAEPPCHEN, "I found Little Red Riding Hood. But she is persecuted by a big wolf and does not dare to return to the farm.");
 };
 
 INSTANCE Info_Mod_Rotkaeppchen_Grossmutter (C_INFO)
@@ -38,7 +38,7 @@ INSTANCE Info_Mod_Rotkaeppchen_Grossmutter (C_INFO)
 	information	= Info_Mod_Rotkaeppchen_Grossmutter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du zufällig eine alte Großmutter?";
+	description	= "Do you happen to have an old grandmother?";
 };
 
 FUNC INT Info_Mod_Rotkaeppchen_Grossmutter_Condition()
@@ -48,8 +48,8 @@ FUNC INT Info_Mod_Rotkaeppchen_Grossmutter_Condition()
 
 FUNC VOID Info_Mod_Rotkaeppchen_Grossmutter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_Grossmutter_15_00"); //Hast du zufällig eine alte Großmutter?
-	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_Grossmutter_17_01"); //Ja, wieso fragst du? Ich will sie demnächst mal wieder besuchen, sie ist doch so allein.
+	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_Grossmutter_15_00"); //Do you happen to have an old grandmother?
+	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_Grossmutter_17_01"); //Yeah, why do you ask? I want to visit her again soon, she is so alone.
 };
 
 INSTANCE Info_Mod_Rotkaeppchen_WolfTot (C_INFO)
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_Rotkaeppchen_WolfTot (C_INFO)
 	information	= Info_Mod_Rotkaeppchen_WolfTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Wolf wird dir nichts zuleide tun.";
+	description	= "The wolf won't hurt you.";
 };
 
 FUNC INT Info_Mod_Rotkaeppchen_WolfTot_Condition()
@@ -74,18 +74,18 @@ FUNC INT Info_Mod_Rotkaeppchen_WolfTot_Condition()
 
 FUNC VOID Info_Mod_Rotkaeppchen_WolfTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_WolfTot_15_00"); //Der Wolf wird dir nichts zuleide tun.
-	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_WolfTot_17_01"); //Hast du ihn vertrieben?
-	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_WolfTot_15_02"); //So kann man es nennen.
-	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_WolfTot_17_03"); //Dann kann ich jetzt endlich wieder zurück nach Hause!
-	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_WolfTot_17_04"); //Danke, dafür bekommst du die Hälfte der Pilze, die ich gepflückt habe!
-	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_WolfTot_17_05"); //Sieh nur, was ich für Prachtexemplare gefunden habe!
+	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_WolfTot_15_00"); //The wolf won't hurt you.
+	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_WolfTot_17_01"); //Did you drive him away?
+	AI_Output(hero, self, "Info_Mod_Rotkaeppchen_WolfTot_15_02"); //You could call it that.
+	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_WolfTot_17_03"); //Then I can finally get back home!
+	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_WolfTot_17_04"); //Thanks, you'll get half the mushrooms I picked!
+	AI_Output(self, hero, "Info_Mod_Rotkaeppchen_WolfTot_17_05"); //Look what magnificent specimens I found!
 
 	CreateInvItems	(hero, ItPl_Mushroom_01, 5);
 	CreateInvItems	(hero, ItPl_Mushroom_02, 7);
 	CreateInvItems	(hero, ItPl_Mushroom_03, 4);
 
-	B_ShowGivenThings	("5 Dunkelpilze, 7 Buddlerfleisch und 4 Fliegenpilze erhalten");
+	B_ShowGivenThings	("5 dark mushrooms, 7 digger meat and 4 toadstools preserved");
 
 	B_GivePlayerXP	(100);
 

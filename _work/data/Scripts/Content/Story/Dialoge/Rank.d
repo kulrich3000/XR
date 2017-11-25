@@ -18,18 +18,18 @@ FUNC INT Info_Mod_Rank_Hueterklinge_Condition()
 
 FUNC VOID Info_Mod_Rank_Hueterklinge_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_00"); //Hast dem alten Haudegen wohl den Rest gegeben was? Der Letzte hatte nicht so viel Glück.
-	AI_Output(hero, self, "Info_Mod_Rank_Hueterklinge_15_01"); //Der Letzte?
-	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_02"); //Ja, ist noch gar nicht lange her.
-	AI_Output(hero, self, "Info_Mod_Rank_Hueterklinge_15_03"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_04"); //Ein Templer kam hier vorbei, da wurde er vom alten Haudegen angefallen.
-	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_05"); //Hat ihm zwar ganz schön zugesetzt, aber er konnte ihn doch nicht besiegen und ist auch als Abendbrot geendet.
-	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_06"); //Ich kam leider zu spät vorbei. Der Templer hat mir kurz bevor er sein Leben ausgehaucht hat gesagt, er wollte den Eremiten besuchen, der hier begraben liegt.
-	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_07"); //Ich fand es also ganz passend, ihn im gleichen Grab zu beerdigen. Und da liegen sie jetzt.
-	AI_Output(hero, self, "Info_Mod_Rank_Hueterklinge_15_08"); //Was hast du mit seinen Sachen gemacht?
-	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_09"); //Das war nur einiger seltsamer Plunder. Den hab' ich in einem Beutel mit ihm begraben.
+	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_00"); //Gave the old warden the rest of it, huh? Last one wasn't so lucky.
+	AI_Output(hero, self, "Info_Mod_Rank_Hueterklinge_15_01"); //The last one?
+	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_02"); //Yeah, not so long ago.
+	AI_Output(hero, self, "Info_Mod_Rank_Hueterklinge_15_03"); //What's happening?
+	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_04"); //A Templar came by here and was attacked by the old warhorse.
+	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_05"); //He really hurt him a lot, but he couldn't defeat him and ended up having dinner.
+	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_06"); //I came by too late. The Templar told me, just before he breathed his life out, that he wanted to visit the hermit who is buried here.
+	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_07"); //So I thought it was fitting to bury him in the same grave. And there they are now.
+	AI_Output(hero, self, "Info_Mod_Rank_Hueterklinge_15_08"); //What did you do with his stuff?
+	AI_Output(self, hero, "Info_Mod_Rank_Hueterklinge_06_09"); //It was just some weird stuff. I buried him in a bag with him.
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Gor Na Kosh hat die Zutaten zwar gefunden, konnte seine Hüterklinge aber nicht mehr bekommen. Rank hat gesagt, er habe Gor Na Koshs Zeug mit ihm begraben. Da werde ich wohl eine Hacke brauchen ...");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Gor Na Kosh found the ingredients, but couldn't get his guardian blade. Rank said he buried Gor Na Kosh's stuff with him. I think I'm going to need a pickaxe....");
 
 	AI_StopProcessInfos	(self);
 

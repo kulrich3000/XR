@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Blutkultmagier_Hi_Condition()
 
 FUNC VOID Info_Mod_Blutkultmagier_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Blutkultmagier_Hi_13_00"); //Ahhh. Seht, wer gekommen ist. Der Mensch, der den Schlüssel holen will, um die Wassermagier vor der Garde Innos' zu retten.
-	AI_Output(hero, self, "Info_Mod_Blutkultmagier_Hi_15_01"); //Woher weißt du das?
-	AI_Output(self, hero, "Info_Mod_Blutkultmagier_Hi_13_02"); //(lacht) Du Narr. Die Garde und wir haben einen Pakt geschlossen. Wir unterstützen sie und sie dezimieren im Gegenzug die armseligen Streiter Adanos’ und eröffnen uns zudem den Zugang zu Opfern für unsere blutigen Rituale.
-	AI_Output(self, hero, "Info_Mod_Blutkultmagier_Hi_13_03"); //Wir haben für sie den Schlüssel gestohlen und der Rest wird mit ihnen Innos' Schwert bergen. Ich werde dich aufhalten, damit du nicht dazwischen funkst.
-	AI_Output(hero, self, "Info_Mod_Blutkultmagier_Hi_15_04"); //Komm her.
-	AI_Output(self, hero, "Info_Mod_Blutkultmagier_Hi_13_05"); //Schon bald wird dein Kopf auf einem Tablett der Garde serviert werden. STIRB, UNGLÄUBIGER!
+	AI_Output(self, hero, "Info_Mod_Blutkultmagier_Hi_13_00"); //Ahhhh. Look who's here. The man who wants to get the key to save the water magicians from the Innos' Guard.
+	AI_Output(hero, self, "Info_Mod_Blutkultmagier_Hi_15_01"); //How do you know that?
+	AI_Output(self, hero, "Info_Mod_Blutkultmagier_Hi_13_02"); //(laughs) You fool. The guard and we made a pact. In return, we support them and they decimate the poor wrestlers of Adanos and give us access to victims for our bloody rituals.
+	AI_Output(self, hero, "Info_Mod_Blutkultmagier_Hi_13_03"); //We stole the key for them, and the rest of them will retrieve Inno's sword with it. I'm going to stop you so you don't interfere.
+	AI_Output(hero, self, "Info_Mod_Blutkultmagier_Hi_15_04"); //Come here.
+	AI_Output(self, hero, "Info_Mod_Blutkultmagier_Hi_13_05"); //Soon your head will be served on a tray of guards. DIE, UNBELIEVER!
 
 	AI_StopProcessInfos	(self);
 

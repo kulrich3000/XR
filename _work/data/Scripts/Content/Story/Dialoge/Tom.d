@@ -33,23 +33,23 @@ FUNC INT Info_Mod_Tom_Hi_Condition()
 
 FUNC VOID Info_Mod_Tom_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_00"); //He, was sagst du zu der Sache mit Bloodwyns Geldeintreiberei im Lager damals.
-	AI_Output(hero, self, "Info_Mod_Tom_Hi_15_01"); //Was?! Ist doch schon lange her ... wen interessiert’s ...
-	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_02"); //Bist du also doch der Typ aus der Kolonie damals ...
-	AI_Output(hero, self, "Info_Mod_Tom_Hi_15_03"); //Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_04"); //Ich war damals Buddler im Alten Lager und glaubte dich als Mitgefangenen wieder erkannt zu haben.
-	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_05"); //Um auf Nummer sich gehen zu wollen, habe ich dir diese Frage gestellt.
-	AI_Output(hero, self, "Info_Mod_Tom_Hi_15_06"); //Und wozu das Ganze?
-	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_07"); //Nun, ich habe da ein Problem, dass ich nicht unbedingt jedem kleinbürgerlichen Spießer aus dieser Stadt anvertrauen kann ... sondern lieber einem anderen Ex-Knacki.
-	AI_Output(hero, self, "Info_Mod_Tom_Hi_15_08"); //Was soll ich für dich machen?
-	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_09"); //Ein Kumpel von mir hat ein Lager bei der Brücke nahe der Taverne. Ich hab allerdings erfahren, dass ein kleiner Miliztrupp dorthin aufgebrochen ist.
-	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_10"); //Du musst ihn unbedingt warnen.
+	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_00"); //Hey, what do you say we talk about Bloodwyn's money-raising in the warehouse back then?
+	AI_Output(hero, self, "Info_Mod_Tom_Hi_15_01"); //What?! It's been a long time... who cares....
+	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_02"); //So are you the guy from the colony back then?
+	AI_Output(hero, self, "Info_Mod_Tom_Hi_15_03"); //What do you think?
+	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_04"); //At that time I was a Buddler in the Old Camp and I thought I recognized you as a fellow prisoner.
+	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_05"); //To be honest, I asked you this question.
+	AI_Output(hero, self, "Info_Mod_Tom_Hi_15_06"); //What's the point?
+	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_07"); //Well, I have a problem that I can't necessarily trust every petty-bourgeois bourgeois from this town.... but rather another ex-con.
+	AI_Output(hero, self, "Info_Mod_Tom_Hi_15_08"); //What am I supposed to do for you?
+	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_09"); //Buddy of mine has a camp by the bridge near the tavern. I've learned, however, that a small militia force has left there.
+	AI_Output(self, hero, "Info_Mod_Tom_Hi_11_10"); //You have to warn him.
 
 	Mod_Tom_Boese = TRUE;
 
 	Log_CreateTopic	(TOPIC_MOD_TOMSFREUND, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_TOMSFREUND, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_TOMSFREUND, "Ein gewisser Tom bat mich seinen Freund, welcher sich nahe der Taverne bei einer Brücke aufhält, vor einem Miliztrupp zu warnen.");
+	B_LogEntry	(TOPIC_MOD_TOMSFREUND, "A certain Tom asked me to warn his friend, who is near the tavern by a bridge, against a militia troop.");
 };
 
 INSTANCE Info_Mod_Tom_Franco (C_INFO)
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_Tom_Franco (C_INFO)
 	information	= Info_Mod_Tom_Franco_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab Franco gewarnt.";
+	description	= "I warned Franco.";
 };
 
 FUNC INT Info_Mod_Tom_Franco_Condition()
@@ -74,10 +74,10 @@ FUNC INT Info_Mod_Tom_Franco_Condition()
 
 FUNC VOID Info_Mod_Tom_Franco_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tom_Franco_15_00"); //Ich hab Franco gewarnt. Er hat gesagt er geht zu Edgor.
-	AI_Output(self, hero, "Info_Mod_Tom_Franco_11_01"); //Sehr gut, danke.
+	AI_Output(hero, self, "Info_Mod_Tom_Franco_15_00"); //I warned Franco. He said he was going to Edgor's.
+	AI_Output(self, hero, "Info_Mod_Tom_Franco_11_01"); //Very well, thank you.
 
-	B_LogEntry	(TOPIC_MOD_TOMSFREUND, "Ich hab Tom von der Flucht Francos berichtet.");
+	B_LogEntry	(TOPIC_MOD_TOMSFREUND, "I told Tom about the escape from Franco.");
 	B_SetTopicStatus	(TOPIC_MOD_TOMSFREUND, LOG_SUCCESS);
 
 	Mod_Tom_Boese = FALSE;
@@ -95,7 +95,7 @@ INSTANCE Info_Mod_Tom_Belohnung (C_INFO)
 	information	= Info_Mod_Tom_Belohnung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie stehts mit einer Belohnung?";
+	description	= "How about a reward?";
 };
 
 FUNC INT Info_Mod_Tom_Belohnung_Condition()
@@ -108,17 +108,17 @@ FUNC INT Info_Mod_Tom_Belohnung_Condition()
 
 FUNC VOID Info_Mod_Tom_Belohnung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tom_Belohnung_15_00"); //Wie stehts mit einer Belohnung?
-	AI_Output(self, hero, "Info_Mod_Tom_Belohnung_11_01"); //Gut, du hast mir einen Gefallen getan, jetzt tue ich dir einen.
-	AI_Output(self, hero, "Info_Mod_Tom_Belohnung_11_02"); //Nimm diesen Ring und gehe zu Edgor. Er befindet sich in der Nähe von Bengars Hof.
+	AI_Output(hero, self, "Info_Mod_Tom_Belohnung_15_00"); //How about a reward?
+	AI_Output(self, hero, "Info_Mod_Tom_Belohnung_11_01"); //Well, you did me a favor, now I'll do you one.
+	AI_Output(self, hero, "Info_Mod_Tom_Belohnung_11_02"); //Take this ring and go to Edgor. It is located near Bengar's farm.
 
 	B_GiveInvItems	(self, hero, Mod_Banditenring, 1);
 
-	AI_Output(self, hero, "Info_Mod_Tom_Belohnung_11_03"); //Du wirst etwas für ihn erledigen müssen und dann gibt er dir die erste Hälfte eines Wortes. Wenn du beide Hälften hast, dann kannst du zu unserem Hauptlager gehen und du wirst aufgenommen.
+	AI_Output(self, hero, "Info_Mod_Tom_Belohnung_11_03"); //You'll have to do something for him, and then he'll give you the first half of a word. If you have both halves, you can go to our main camp and you will be taken in.
 
 	Log_CreateTopic	(TOPIC_MOD_AUFNAHME_BANDITEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_AUFNAHME_BANDITEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_AUFNAHME_BANDITEN, "Tom hat mir einen Ring gegeben mit dem ich zu Edgor gehen soll. Von diesem erhalte ich dann die erste Hälfte eines Wortes. Wenn ich beide Hälften habe, werde ich aufgenommen.");
+	B_LogEntry	(TOPIC_MOD_AUFNAHME_BANDITEN, "Tom gave me a ring to go to Edgor with. From this I then get the first half of a word. When I have both halves, I'll be admitted.");
 };
 
 INSTANCE Info_Mod_Tom_Krautquest (C_INFO)
@@ -141,13 +141,13 @@ FUNC INT Info_Mod_Tom_Krautquest_Condition()
 
 FUNC VOID Info_Mod_Tom_Krautquest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest_11_00"); //Du hier? Hör zu, du musst mir helfen.
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest_11_01"); //Die Schweine haben mich mit Sumpfkrautpflanzen erwischt und wollen mich hier im Kerker versauern lassen.
-	AI_Output(hero, self, "Info_Mod_Tom_Krautquest_15_02"); //Soll ich dich freikaufen?
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest_11_03"); //Ja, schau bitte, was du tun kannst. Obwohl ich mir nicht sicher bin, ob Andre sich darauf einlässt.
-	AI_Output(hero, self, "Info_Mod_Tom_Krautquest_15_04"); //Ok, ich werde mit ihm sprechen.
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest_11_00"); //You here? Listen, you gotta help me.
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest_11_01"); //The pigs caught me with marsh plants and want to make me stay in the dungeon.
+	AI_Output(hero, self, "Info_Mod_Tom_Krautquest_15_02"); //Shall I buy you out?
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest_11_03"); //Yeah, see what you can do. Although I'm not sure if Andre's gonna get involved.
+	AI_Output(hero, self, "Info_Mod_Tom_Krautquest_15_04"); //Okay, I'll talk to him.
 
-	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Ich sollte mal schauen, ob ich bei Andre eine Freilassung erwirken kann.");
+	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "I should see if I can get Andre released.");
 };
 
 INSTANCE Info_Mod_Tom_Krautquest2 (C_INFO)
@@ -158,7 +158,7 @@ INSTANCE Info_Mod_Tom_Krautquest2 (C_INFO)
 	information	= Info_Mod_Tom_Krautquest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schlechte Nachrichten ...";
+	description	= "Bad news...";
 };
 
 FUNC INT Info_Mod_Tom_Krautquest2_Condition()
@@ -171,20 +171,20 @@ FUNC INT Info_Mod_Tom_Krautquest2_Condition()
 
 FUNC VOID Info_Mod_Tom_Krautquest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tom_Krautquest2_15_00"); //Schlechte Nachrichten ...
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_01"); //Ja, ich weiß, habe alles mit angehört.
-	AI_Output(hero, self, "Info_Mod_Tom_Krautquest2_15_02"); //Wie nun weiter?
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_03"); //Nun, lass mich nachdenken ... Soweit ich es mitbekommen habe, befindet sich das Sumpfkraut in der Asservatentruhe hinter Andre ...
-	AI_Output(hero, self, "Info_Mod_Tom_Krautquest2_15_04"); //Soll ich es stehlen?
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_05"); //Nein, so einfach ist es wohl nicht.
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_06"); //Letztendlich können die Torwachen bezeugen, wie mir das Kraut abgenommen wurde ... und allein Mikas Wort bedeutet eine ganze Menge.
-	AI_Output(hero, self, "Info_Mod_Tom_Krautquest2_15_07"); //Was dann?
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_08"); //Hmm ... das Kraut haben sie gesehen ...
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_09"); //Da fällt mir ein, dass ich mal ein Kraut gesehen habe, dass Sumpfkraut sehr ähnlich sah ... aber es war eben kein Sumpfkraut.
+	AI_Output(hero, self, "Info_Mod_Tom_Krautquest2_15_00"); //Bad news...
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_01"); //Yeah, I know, I heard everything.
+	AI_Output(hero, self, "Info_Mod_Tom_Krautquest2_15_02"); //What next?
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_03"); //Well, let me think about it.... As far as I can see, the marsh weed is in the evidence chest behind Andre....
+	AI_Output(hero, self, "Info_Mod_Tom_Krautquest2_15_04"); //Should I steal it?
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_05"); //No, I guess it's not that simple.
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_06"); //Ultimately, the gatekeepers can testify how the herb was taken from me.... and only Mica's word means a lot.
+	AI_Output(hero, self, "Info_Mod_Tom_Krautquest2_15_07"); //What then?
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_08"); //Hmm... the herb they have seen....
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest2_11_09"); //That reminds me that I once saw an herb that looked very similar to swamp weed.... but it just wasn't a swamp herb.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Tom hat ein anderes Kraut erwähnt, das Sumpfkraut sehr ähnlich sieht... Wenn ich das Sumpfkraut in der Truhe damit vertauschen würde...");
+	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Tom mentioned another herb that looks very similar to swampwort.... If I swapped the marsh weed in the chest with this...");
 };
 
 INSTANCE Info_Mod_Tom_Krautquest3 (C_INFO)
@@ -207,17 +207,17 @@ FUNC INT Info_Mod_Tom_Krautquest3_Condition()
 
 FUNC VOID Info_Mod_Tom_Krautquest3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_00"); //Das hast du wirklich großartig hinbekommen. Und ich hatte schon befürchtet, ich müsste dort ewig versauern. (lacht)
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_01"); //Du hättest mal das Gesicht von Andre sehen sollen, als er mich aus der Zelle ließ und mir mit Worten des Bedauerns einen dicken Beutel voller Münzen in die Hand drückte, hähä ...
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_02"); //Hier, das Gold steht selbstverständlich dir zu.
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_00"); //You did a great job of making that work. And I was afraid I'd have to stay there forever. (laughs)
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_01"); //You should have seen Andre's face when he let me out of the cell and pressed a big bag full of coins into my hand with words of regret, huh?
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_02"); //Here, the gold is yours, of course.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_03"); //Und nimm noch diesen Ring hier. Den hast du dir ebenfalls redlich verdient.
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_03"); //And take this ring, too. You deserved that, too.
 
 	B_GiveInvItems	(self, hero, ItRi_Talentring, 1);
 
-	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_04"); //Pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Tom_Krautquest3_11_04"); //Take care of yourself.
 
 	B_GivePlayerXP	(200);
 

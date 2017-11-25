@@ -411,7 +411,7 @@ INSTANCE PC_AniLog_Anbeten (C_INFO)
 	information 	= PC_AniLog_Anbeten_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Anbeten"; 
+	description 	= "adoration"; 
 };
 
 FUNC INT PC_AniLog_Anbeten_Condition()
@@ -440,7 +440,7 @@ INSTANCE PC_AniLog_Setzen (C_INFO)
 	information 	= PC_AniLog_Setzen_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Hinsetzen"; 
+	description 	= "Sit down"; 
 };
 
 FUNC INT PC_AniLog_Setzen_Condition()
@@ -469,7 +469,7 @@ INSTANCE PC_AniLog_Klatschen (C_INFO)
 	information 	= PC_AniLog_Klatschen_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Klatschen"; 
+	description 	= "clapping"; 
 };
 
 FUNC INT PC_AniLog_Klatschen_Condition()
@@ -498,7 +498,7 @@ INSTANCE PC_AniLog_Pinkeln (C_INFO)
 	information 	= PC_AniLog_Pinkeln_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Pinkeln"; 
+	description 	= "pee"; 
 };
 
 FUNC INT PC_AniLog_Pinkeln_Condition()
@@ -527,7 +527,7 @@ INSTANCE PC_AniLog_Tanzen (C_INFO)
 	information 	= PC_AniLog_Tanzen_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Tanzen"; 
+	description 	= "dancing"; 
 };
 
 FUNC INT PC_AniLog_Tanzen_Condition()
@@ -592,7 +592,7 @@ INSTANCE PC_AniLog_AnbetenStop (C_INFO)
 	information 	= PC_AniLog_AnbetenStop_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Aufstehen"; 
+	description 	= "standing"; 
 };
 
 FUNC INT PC_AniLog_AnbetenStop_Condition()
@@ -621,7 +621,7 @@ INSTANCE PC_AniLog_SetzenStop (C_INFO)
 	information 	= PC_AniLog_SetzenStop_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Aufstehen"; 
+	description 	= "standing"; 
 };
 
 FUNC INT PC_AniLog_SetzenStop_Condition()
@@ -650,7 +650,7 @@ INSTANCE PC_AniLog_KlatschenStop (C_INFO)
 	information 	= PC_AniLog_KlatschenStop_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Aufhören zu Klatschen"; 
+	description 	= "To stop clapping"; 
 };
 
 FUNC INT PC_AniLog_KlatschenStop_Condition()
@@ -679,7 +679,7 @@ INSTANCE PC_AniLog_PinkelnStop (C_INFO)
 	information 	= PC_AniLog_PinkelnStop_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Aufhören zu Pinkeln"; 
+	description 	= "Stop peeing"; 
 };
 
 FUNC INT PC_AniLog_PinkelnStop_Condition()

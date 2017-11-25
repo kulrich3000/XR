@@ -15,28 +15,28 @@ FUNC INT Info_Mod_Nick_Hi_Condition()
 
 FUNC VOID Info_Mod_Nick_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_04_00"); //Du bist keins von diesen Tieren, was machst du hier?
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_04_00"); //You're not one of those animals, what are you doing here?
 	
 	Info_ClearChoices	(Info_Mod_Nick_Hi);
 
-	Info_AddChoice	(Info_Mod_Nick_Hi, "Du kannst sprechen?", Info_Mod_Nick_Hi_C);
-	Info_AddChoice	(Info_Mod_Nick_Hi, "Ich bin hier, um dich zu töten.", Info_Mod_Nick_Hi_B);
-	Info_AddChoice	(Info_Mod_Nick_Hi, "Ich möchte wissen, warum du all diese Tiere umbringst.", Info_Mod_Nick_Hi_A);
+	Info_AddChoice	(Info_Mod_Nick_Hi, "You can speak?", Info_Mod_Nick_Hi_C);
+	Info_AddChoice	(Info_Mod_Nick_Hi, "I'm here to kill you.", Info_Mod_Nick_Hi_B);
+	Info_AddChoice	(Info_Mod_Nick_Hi, "I want to know why you're killing all these animals.", Info_Mod_Nick_Hi_A);
 };
 
 FUNC VOID Info_Mod_Nick_Hi_E()
 {
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_00"); //Eins von diesen Biestern hat meinen Kopf gefressen und ist abgehauen!
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_01"); //Ich kann 	nicht genau sagen, wie es aussah, aber ich bin mir sicher, dass es zwei Beine und keine Arme hatte.
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_02"); //Mittlerweile glaube ich aber nicht mehr, dass es hier ist.
-	AI_Output(hero, self, "Info_Mod_Nick_Hi_E_15_03"); //Soll ich dir deinen Kopf zurückbringen?
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_04"); //Das wäre wunderbar.
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_05"); //Das Letzte, woran ich mich erinnere ist, dass ich an der Kreuzung einer alten Ruine und einer alten ... hm ... vielleicht Bibliothek von zweibeinigen Tieren angefallen wurde.
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_06"); //Am besten suchst du dort zuerst.
-	AI_Output(hero, self, "Info_Mod_Nick_Hi_E_15_07"); //Ich werde dort suchen. Bis später.
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_08"); //Ich freue mich schon auf unser Wiedersehen. Ich verspreche, bis dahin keines dieser Tiere mehr zu töten.
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_00"); //One of those beasts ate my head and ran away!
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_01"); //I can't say exactly what it looked like, but I'm sure it had two legs and no arms.
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_02"); //I don't think it's here anymore.
+	AI_Output(hero, self, "Info_Mod_Nick_Hi_E_15_03"); //Want me to bring your head back?
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_04"); //That would be wonderful.
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_05"); //The last thing I remember is being at the crossroads of an old ruin and an old... hm... maybe the library was attacked by two-legged animals.
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_06"); //It's best to look there first.
+	AI_Output(hero, self, "Info_Mod_Nick_Hi_E_15_07"); //I'll look for it there. See you later.
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_E_04_08"); //I look forward to seeing you again. I promise not to kill any of these animals until then.
 
-	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "An der Kreuzung des Kastells und der Felsenfestung ist Nick von Scavengern oder womöglich von Snappern angefallen worden. Ich werde mich dort mal umsehen.");
+	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "At the crossroads of the fort and the rocky fortress, Nick was attacked by Scavengers or possibly snappers. I'll take a look around.");
 
 	Wld_InsertNpc	(Mod_10016_MIN_Brad_MT, "CASTLE");
 
@@ -56,46 +56,46 @@ FUNC VOID Info_Mod_Nick_Hi_E()
 
 FUNC VOID Info_Mod_Nick_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Hi_C_15_00"); //Du kannst sprechen?
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_C_04_01"); //Ich brauche keine Stimmbänder und keinen Mund. Außerdem bin ich Bauchredner.
+	AI_Output(hero, self, "Info_Mod_Nick_Hi_C_15_00"); //You can speak?
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_C_04_01"); //I don't need vocal chords or a mouth. Besides, I'm a ventriloquist.
 
 	Info_ClearChoices	(Info_Mod_Nick_Hi);
 
-	Info_AddChoice	(Info_Mod_Nick_Hi, "Ich bin hier, um dich zu töten.", Info_Mod_Nick_Hi_B);
-	Info_AddChoice	(Info_Mod_Nick_Hi, "Ich möchte wissen, warum du all diese Tiere umbringst.", Info_Mod_Nick_Hi_A);
+	Info_AddChoice	(Info_Mod_Nick_Hi, "I'm here to kill you.", Info_Mod_Nick_Hi_B);
+	Info_AddChoice	(Info_Mod_Nick_Hi, "I want to know why you're killing all these animals.", Info_Mod_Nick_Hi_A);
 };
 
 FUNC VOID Info_Mod_Nick_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Hi_A_15_00"); //Ich möchte wissen, warum du all diese Tiere umbringst.
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_A_04_01"); //Warum?
+	AI_Output(hero, self, "Info_Mod_Nick_Hi_A_15_00"); //I want to know why you're killing all these animals.
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_A_04_01"); //Why?
 
 	Info_Mod_Nick_Hi_E();
 };
 
 FUNC VOID Info_Mod_Nick_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Hi_B_15_00"); //Ich bin hier, um dich zu töten.
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_B_04_01"); //Du willst mich töten? Du kannst mich nicht töten. Ich bin nämlich schon tot. (Lacht leise) Warum willst du mich denn loswerden?
+	AI_Output(hero, self, "Info_Mod_Nick_Hi_B_15_00"); //I'm here to kill you.
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_B_04_01"); //You want to kill me? You can't kill me. Because I'm already dead. (Laughs softly) Why do you want to get rid of me?
 
 	Info_ClearChoices	(Info_Mod_Nick_Hi);
 
-	Info_AddChoice	(Info_Mod_Nick_Hi, "Das ist mein Auftrag.", Info_Mod_Nick_Hi_F);
-	Info_AddChoice	(Info_Mod_Nick_Hi, "Ich will nicht, dass unschuldige Tiere sterben.", Info_Mod_Nick_Hi_D);
+	Info_AddChoice	(Info_Mod_Nick_Hi, "That's my assignment.", Info_Mod_Nick_Hi_F);
+	Info_AddChoice	(Info_Mod_Nick_Hi, "I don't want innocent animals to die.", Info_Mod_Nick_Hi_D);
 };
 
 FUNC VOID Info_Mod_Nick_Hi_F()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Hi_F_15_00"); //Das ist mein Auftrag.
-	AI_Output(self, hero, "Info_Mod_Nick_Hi_F_04_01"); //Vergiss es. Du wirst mich nur los, wenn du mir hilfst.
-	AI_Output(hero, self, "Info_Mod_Nick_Hi_F_15_02"); //Wie kann ich dir helfen?
+	AI_Output(hero, self, "Info_Mod_Nick_Hi_F_15_00"); //That's my assignment.
+	AI_Output(self, hero, "Info_Mod_Nick_Hi_F_04_01"); //Forget about it. You'll only get rid of me if you help me.
+	AI_Output(hero, self, "Info_Mod_Nick_Hi_F_15_02"); //How can I help you?
 
 	Info_Mod_Nick_Hi_E();
 };
 
 FUNC VOID Info_Mod_Nick_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Hi_D_15_00"); //Ich will nicht, dass unschuldige Tiere sterben.
+	AI_Output(hero, self, "Info_Mod_Nick_Hi_D_15_00"); //I don't want innocent animals to die.
 
 	Info_Mod_Nick_Hi_E();
 };
@@ -120,72 +120,72 @@ FUNC INT Info_Mod_Nick_Kopf_Condition()
 
 FUNC VOID Info_Mod_Nick_Kopf_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nick_Kopf_04_00"); //Und? Wie ist es dir auf der Suche ergangen?
-	AI_Output(hero, self, "Info_Mod_Nick_Kopf_15_01"); //Es waren Snapper, die dir den Kopf abgebissen haben. Anscheinend hat ein Minotaurus sie umgebracht und den Kopf an sich gebracht. Ich habe den Kopf jedoch inzwischen.
-	AI_Output(self, hero, "Info_Mod_Nick_Kopf_04_02"); //Gibst du ihn mir dann wieder?
+	AI_Output(self, hero, "Info_Mod_Nick_Kopf_04_00"); //And? How have you been looking?
+	AI_Output(hero, self, "Info_Mod_Nick_Kopf_15_01"); //It was snappers who bit your head off. Apparently, a Minotaur killed her and took her head. However, I have my head in the meantime.
+	AI_Output(self, hero, "Info_Mod_Nick_Kopf_04_02"); //Will you give it back to me?
 	
 	Info_ClearChoices	(Info_Mod_Nick_Kopf);
 
-	Info_AddChoice	(Info_Mod_Nick_Kopf, "Was bekomme ich dafür?", Info_Mod_Nick_Kopf_B);
-	Info_AddChoice	(Info_Mod_Nick_Kopf, "Natürlich. Hier hast du ihn ihn.", Info_Mod_Nick_Kopf_A);
+	Info_AddChoice	(Info_Mod_Nick_Kopf, "What do I get for it?", Info_Mod_Nick_Kopf_B);
+	Info_AddChoice	(Info_Mod_Nick_Kopf, "Of course it is. Here you have him.", Info_Mod_Nick_Kopf_A);
 };
 
 FUNC VOID Info_Mod_Nick_Kopf_A()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Kopf_A_15_00"); //Natürlich. Hier hast du ihn ihn.
+	AI_Output(hero, self, "Info_Mod_Nick_Kopf_A_15_00"); //Of course it is. Here you have him.
 
 	B_GiveInvItems	(hero, self, ItMi_NicksKopf, 1);
 	Npc_RemoveInvItems	(self, ItMi_NicksKopf, 1);
 
 	Mdl_SetVisualBody 		(self,	"Zom_Body",		0,			1,			"ZOM_HEAD", 0,  		DEFAULT,	ITAR_Pir_Zombie);
 
-	AI_Output(self, hero, "Info_Mod_Nick_Kopf_A_04_01"); //Vielen Dank, Fremder! Hier hast du mein letztes Gold, ich brauche es jetzt sowieso nicht mehr.
+	AI_Output(self, hero, "Info_Mod_Nick_Kopf_A_04_01"); //Thank you, stranger! Here's my last gold. I don't need it now anyway.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Nick ist endlich erlöst. Ich sollte zurück zu Anor gehen und ihm Bericht erstatten, dass das Tiersterben aufgehört hat.");
+	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Nick's finally been saved. I should go back to Anor and report to him that the animal deaths have stopped.");
 
 	Info_ClearChoices	(Info_Mod_Nick_Kopf);
 };
 
 FUNC VOID Info_Mod_Nick_Kopf_G()
 {
-	AI_Output(self, hero, "Info_Mod_Nick_Kopf_G_04_00"); //Vielen Dank, Fremder!
+	AI_Output(self, hero, "Info_Mod_Nick_Kopf_G_04_00"); //Thank you, stranger!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Nick ist endlich erlöst. Ich sollte zurück zu Anor gehen und ihm Bericht erstatten, dass das Tiersterben aufgehört hat.");
+	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Nick's finally been saved. I should go back to Anor and report to him that the animal deaths have stopped.");
 
 	Info_ClearChoices	(Info_Mod_Nick_Kopf);
 };
 
 FUNC VOID Info_Mod_Nick_Kopf_B()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Kopf_B_15_00"); //Was bekomme ich dafür?
-	AI_Output(self, hero, "Info_Mod_Nick_Kopf_B_04_01"); //Ich werde aufhören, unschuldige Tiere zu töten. Außerdem müsste ich auch viele Menschen auf der Suche nach dir umbringen.
-	AI_Output(self, hero, "Info_Mod_Nick_Kopf_B_04_02"); //Und du kannst Gold haben. Ich brauche es nicht mehr, wenn ich meinen Kopf zurück habe.
+	AI_Output(hero, self, "Info_Mod_Nick_Kopf_B_15_00"); //What do I get for it?
+	AI_Output(self, hero, "Info_Mod_Nick_Kopf_B_04_01"); //I will stop killing innocent animals. Besides, I'd have to kill a lot of people looking for you.
+	AI_Output(self, hero, "Info_Mod_Nick_Kopf_B_04_02"); //And you can have gold. I don't need it once I get my head back.
 
 	Info_ClearChoices	(Info_Mod_Nick_Kopf);
 
-	Info_AddChoice	(Info_Mod_Nick_Kopf, "Das reicht mir nicht.", Info_Mod_Nick_Kopf_F);
-	Info_AddChoice	(Info_Mod_Nick_Kopf, "Alles klar, hier hast du deinen Kopf.", Info_Mod_Nick_Kopf_D);
+	Info_AddChoice	(Info_Mod_Nick_Kopf, "That's not good enough for me.", Info_Mod_Nick_Kopf_F);
+	Info_AddChoice	(Info_Mod_Nick_Kopf, "All right, here's your head.", Info_Mod_Nick_Kopf_D);
 };
 
 FUNC VOID Info_Mod_Nick_Kopf_F()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Kopf_F_15_00"); //Das reicht mir nicht.
-	AI_Output(self, hero, "Info_Mod_Nick_Kopf_F_04_01"); //Ich kann dir nicht mehr geben.
-	AI_Output(hero, self, "Info_Mod_Nick_Kopf_F_15_02"); //Wie kann ich dir helfen?
+	AI_Output(hero, self, "Info_Mod_Nick_Kopf_F_15_00"); //That's not good enough for me.
+	AI_Output(self, hero, "Info_Mod_Nick_Kopf_F_04_01"); //I can't give you any more.
+	AI_Output(hero, self, "Info_Mod_Nick_Kopf_F_15_02"); //How can I help you?
 
 	Info_ClearChoices	(Info_Mod_Nick_Kopf);
 
-	Info_AddChoice	(Info_Mod_Nick_Kopf, "Dann bekommst du halt deinen Kopf nicht zurück.", Info_Mod_Nick_Kopf_E);
-	Info_AddChoice	(Info_Mod_Nick_Kopf, "Dann ist hier der Kopf.", Info_Mod_Nick_Kopf_C);
+	Info_AddChoice	(Info_Mod_Nick_Kopf, "Then you don't get your head back.", Info_Mod_Nick_Kopf_E);
+	Info_AddChoice	(Info_Mod_Nick_Kopf, "Then here's the head.", Info_Mod_Nick_Kopf_C);
 };
 
 FUNC VOID Info_Mod_Nick_Kopf_D()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Kopf_D_15_00"); //Alles klar, hier hast du deinen Kopf.
+	AI_Output(hero, self, "Info_Mod_Nick_Kopf_D_15_00"); //All right, here's your head.
 
 	B_GiveInvItems	(hero, self, ItMi_NicksKopf, 1);
 	Npc_RemoveInvItems	(self, ItMi_NicksKopf, 1);
@@ -197,30 +197,30 @@ FUNC VOID Info_Mod_Nick_Kopf_D()
 
 FUNC VOID Info_Mod_Nick_Kopf_E()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Kopf_E_15_00"); //Dann bekommst du halt deinen Kopf nicht zurück.
-	AI_Output(self, hero, "Info_Mod_Nick_Kopf_E_04_01"); //Na gut Fremder. Ich gebe dir auch noch ein paar Erzbrocken.
-	AI_Output(hero, self, "Info_Mod_Nick_Kopf_E_15_02"); //Hier hast du den Kopf.
+	AI_Output(hero, self, "Info_Mod_Nick_Kopf_E_15_00"); //Then you don't get your head back.
+	AI_Output(self, hero, "Info_Mod_Nick_Kopf_E_04_01"); //All right, stranger. I'll give you some ore chunks, too.
+	AI_Output(hero, self, "Info_Mod_Nick_Kopf_E_15_02"); //Here's your head.
 
 	B_GiveInvItems	(hero, self, ItMi_NicksKopf, 1);
 	Npc_RemoveInvItems	(self, ItMi_NicksKopf, 1);
 
 	Mdl_SetVisualBody 		(self,	"Zom_Body",		0,			1,			"ZOM_HEAD", 0,  		DEFAULT,	ITAR_Pir_Zombie);
 
-	AI_Output(self, hero, "Info_Mod_Nick_Kopf_E_04_03"); //Danke. Endlich Ruhe.
+	AI_Output(self, hero, "Info_Mod_Nick_Kopf_E_04_03"); //Thanks. Silence at last.
 
 	CreateInvItems	(hero, ItMi_Gold, 250);
 	CreateInvItems	(hero, ItMi_Nugget, 5);
 
-	B_ShowGivenThings	("250 Gold und 5 Erzbrocken erhalten");
+	B_ShowGivenThings	("250 gold and 5 pieces of ore preserved");
 
-	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Nick ist endlich erlöst. Ich sollte zurück zu Anor gehen und ihm Bericht erstatten, dass das Tiersterben aufgehört hat.");
+	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Nick's finally been saved. I should go back to Anor and report to him that the animal deaths have stopped.");
 
 	Info_ClearChoices	(Info_Mod_Nick_Kopf);
 };
 
 FUNC VOID Info_Mod_Nick_Kopf_C()
 {
-	AI_Output(hero, self, "Info_Mod_Nick_Kopf_C_15_00"); //Dann ist hier der Kopf.
+	AI_Output(hero, self, "Info_Mod_Nick_Kopf_C_15_00"); //Then here's the head.
 
 	B_GiveInvItems	(hero, self, ItMi_NicksKopf, 1);
 	Npc_RemoveInvItems	(self, ItMi_NicksKopf, 1);

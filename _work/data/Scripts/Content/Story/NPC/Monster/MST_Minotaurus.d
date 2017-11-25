@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Minotaurus(C_Npc)			
 {
 	//----- Monster -----
-	name							= "Minotaurus";
+	name							= "Minotaur";
 	guild							= GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID]			= ID_Minotaurus;
 	level							= 150;

@@ -15,15 +15,15 @@ FUNC INT Info_Mod_Will_Hi_Condition()
 
 FUNC VOID Info_Mod_Will_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_00"); //Tritt herein, Freund. Gerade eben läuft mein neues revolutionäres Bühnenstück.
-	AI_Output(hero, self, "Info_Mod_Will_Hi_15_01"); //Was ist denn daran so revolutionär?
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_02"); //(euphorisch) Ich habe das ganze Stück auf seine Höhepunkte zusammengestrichen!
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_00"); //Step inside, friend. Right now, my new revolutionary stage play is running.
+	AI_Output(hero, self, "Info_Mod_Will_Hi_15_01"); //What's so revolutionary about it?
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_02"); //I've cut the whole thing down to its climaxes!
 	AI_Output(self, hero, "Info_Mod_Will_Hi_06_03"); //Innovation à la Will Shakesbeer!
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_04"); //Wie oft sitzt man im teatro und schaut sich ein - womöglich spannendes - pièce teatrale, ein Stück, an, fiebert mit, und doch - nach zwei Stunden, nach drei Stunden schleicht sich ein Gähnen ein;
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_05"); //man unterdrückt es, aber je weiter die Zeit fortschreitet, desto häufiger muss man dagegen ankämpfen.
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_06"); //Und wahrlich niemand vermag es, mehrere Stunden ohne Brückenszenen zu füllen, Lückenbüßer, wenn Er so will, unnötig allemal.
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_07"); //Dies wird sich nun ändern! Mein Konzept sieht eine Konzentration der suspense, der Spannung, vor, es geht Schlag auf Schlag, Schicksalsschlag auf Hammerschlag, oder so, wie Er will.
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_08"); //Die nächste recita, Aufführung, beginnt gleich. Für nur 100 Goldmünzen kann Er dabei sein.
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_04"); //How often do you sit in the teatro and look at - possibly exciting - pièce teatrale, a play, a play, feverishly, and yet - after two hours, after three hours a yawn creeps in;
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_05"); //you suppress it, but the further time goes on, the more often you have to fight it.
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_06"); //And certainly no one can fill it up for several hours without bridge scenes, if He so wills, there is no need to do so.
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_07"); //This will now change! My concept envisages a concentration of suspense, of suspense, of tension, it goes blow by blow, blow by blow, blow by blow of fate on hammer stroke, or so, as He wants.
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_08"); //The next recita, performance, is about to begin. He can be there for only 100 gold coins.
 };
 
 INSTANCE Info_Mod_Will_EXIT (C_INFO)

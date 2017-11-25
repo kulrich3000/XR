@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_16_JOIN(C_INFO)
 	condition	= DIA_BAU_16_JOIN_Condition;
 	information	= DIA_BAU_16_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will mehr über die Söldner wissen!";
+	description = "I want to know more about the mercenaries!";
 };                       
 
 FUNC INT DIA_BAU_16_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_BAU_16_JOIN_Condition()
 
 FUNC VOID DIA_BAU_16_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_16_JOIN_15_00"); //Ich will mehr über die Söldner wissen!
-	AI_Output (self, hero, "DIA_BAU_16_JOIN_16_01"); //Sie lungern den ganzen Tag auf dem Hof rum, prügeln sich hin und wieder mal und finden das auch noch lustig.
+	AI_Output (hero, self, "DIA_BAU_16_JOIN_15_00"); //I want to know more about the mercenaries!
+	AI_Output (self, hero, "DIA_BAU_16_JOIN_16_01"); //They hang around the yard all day long, get in a fight every now and then and find it funny.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_BAU_16_PEOPLE(C_INFO)
 	condition	= DIA_BAU_16_PEOPLE_Condition;
 	information	= DIA_BAU_16_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT DIA_BAU_16_PEOPLE_Condition()
@@ -68,8 +68,8 @@ FUNC INT DIA_BAU_16_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_16_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_16_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, hero, "DIA_BAU_16_PEOPLE_16_01"); //Onar ist der Boss über die ganzen Höfe, aber jeder der kleinen Höfe hat nochmal einen Pächter, der dafür sorgt, dass auf seinem Hof alles funktioniert.
+	AI_Output (hero, self, "DIA_BAU_16_PEOPLE_15_00"); //Who's in charge here?
+	AI_Output (self, hero, "DIA_BAU_16_PEOPLE_16_01"); //Onar is the boss of all the farms, but each of the small farms has another tenant who makes sure that everything on his farm works.
 };
 
 // *************************************************************************
@@ -81,7 +81,7 @@ INSTANCE DIA_BAU_16_LOCATION(C_INFO)
 	condition	= DIA_BAU_16_LOCATION_Condition;
 	information	= DIA_BAU_16_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was kannst du mir über die Gegend hier erzählen?";
+	description = "What can you tell me about this neighborhood?";
 };                       
 
 FUNC INT DIA_BAU_16_LOCATION_Condition()
@@ -94,9 +94,9 @@ FUNC INT DIA_BAU_16_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_16_LOCATION_15_00"); //Was kannst du mir über die Gegend hier erzählen?
-	AI_Output (self, hero, "DIA_BAU_16_LOCATION_16_01"); //Es gibt drei Höfe hier. Onars im Osten und Sekobs im Norden das Tals.
-	AI_Output (self, hero, "DIA_BAU_16_LOCATION_16_02"); //Im Südwesten gibt es einen Aufgang zur Hochebene. Dort liegt Bengars Hof.
+	AI_Output (hero, self, "DIA_BAU_16_LOCATION_15_00"); //What can you tell me about this neighborhood?
+	AI_Output (self, hero, "DIA_BAU_16_LOCATION_16_01"); //There are three farms here. Onars in the east and Sekobs in the north of the valley.
+	AI_Output (self, hero, "DIA_BAU_16_LOCATION_16_02"); //In the southwest there is a staircase to the plateau. There lies Bengar's farm.
 };
 
 INSTANCE Info_Mod_BAU_16_Pickpocket (C_INFO)

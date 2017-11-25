@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Beschwoerer_Hi_Condition()
 
 FUNC VOID Info_Mod_Beschwoerer_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Beschwoerer_Hi_02_00"); //Du bist uns oft genug in die Quere gekommen. Jetzt wirst du sterben und Aaron hat freien Weg!
+	AI_Output(self, hero, "Info_Mod_Beschwoerer_Hi_02_00"); //You've gotten in our way enough times. Now you're going to die, and Aaron has a clear path!
 
 	AI_StopProcessInfos	(self);
 

@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_17_JOIN(C_INFO)
 	condition	= DIA_VLK_17_JOIN_Condition;
 	information	= DIA_VLK_17_JOIN_Info;
 	permanent	= TRUE;
-	description = "Was muss ich tun, um Bürger dieser Stadt zu werden?";
+	description = "What do I have to do to become a citizen of this city?";
 };                       
 
 FUNC INT DIA_VLK_17_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_17_JOIN_Condition()
 
 FUNC VOID DIA_VLK_17_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_17_JOIN_15_00"); //Was muss ich tun, um Bürger dieser Stadt zu werden?
-	AI_Output (self, hero, "DIA_VLK_17_JOIN_17_01"); //Die Handwerksmeister in der Unterstadt haben großen Einfluss hier in Khorinis. Du solltest mit einem von ihnen reden.
+	AI_Output (hero, self, "DIA_VLK_17_JOIN_15_00"); //What do I have to do to become a citizen of this city?
+	AI_Output (self, hero, "DIA_VLK_17_JOIN_17_01"); //The master craftsmen in the lower town have great influence here in Khorinis. You should talk to one of them.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_VLK_17_PEOPLE(C_INFO)
 	condition	= DIA_VLK_17_PEOPLE_Condition;
 	information	= DIA_VLK_17_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer sind die wichtigsten Persönlichkeiten dieser Stadt?";
+	description = "Who are the most important people in this city?";
 };                       
 
 FUNC INT DIA_VLK_17_PEOPLE_Condition()
@@ -66,9 +66,9 @@ FUNC INT DIA_VLK_17_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_17_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_17_PEOPLE_15_00"); //Wer sind die wichtigsten Persönlichkeiten dieser Stadt?
-	AI_Output (self, hero, "DIA_VLK_17_PEOPLE_17_01"); //Lord Andre vertritt das Gesetz. Du findest ihn in der Kaserne.
-	AI_Output (self, hero, "DIA_VLK_17_PEOPLE_17_02"); //Aber solange du nicht gegen das Gesetz verstoßen hast, oder dich der Miliz anschließen willst, brauchst du nicht zu ihm zu gehen.
+	AI_Output (hero, self, "DIA_VLK_17_PEOPLE_15_00"); //Who are the most important people in this city?
+	AI_Output (self, hero, "DIA_VLK_17_PEOPLE_17_01"); //Lord Andre represents the law. You'll find him in the barracks.
+	AI_Output (self, hero, "DIA_VLK_17_PEOPLE_17_02"); //But as long as you have not broken the law or want to join the militia, you do not have to go to him.
 };
 
 INSTANCE Info_VLK_17_Flugblaetter (C_INFO) // E1
@@ -77,7 +77,7 @@ INSTANCE Info_VLK_17_Flugblaetter (C_INFO) // E1
 	condition	= Info_VLK_17_Flugblaetter_Condition;
 	information	= Info_VLK_17_Flugblaetter_Info;
 	permanent	= 1;
-	description = "Ich hab hier ein Flugblatt für dich.";
+	description = "I've got a flyer for you.";
 };                       
 
 FUNC INT Info_VLK_17_Flugblaetter_Condition()
@@ -97,11 +97,11 @@ FUNC VOID Info_VLK_17_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_VLK_17_Flugblaetter_17_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_VLK_17_Flugblaetter_17_01"); //Oh, thank you. Thank you. Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_VLK_17_Flugblaetter_17_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_VLK_17_Flugblaetter_17_02"); //Ah yes. Maybe I'll stop by Matteo's.
 
 	self.aivar[AIV_FLUGBLATTVERTEILT] = 1;
 
@@ -114,7 +114,7 @@ INSTANCE Info_VLK_17_Rangar (C_INFO) // E1
 	condition	= Info_VLK_17_Rangar_Condition;
 	information	= Info_VLK_17_Rangar_Info;
 	permanent	= 0;
-	description = "Wusstest du schon ...";
+	description = "Did you already know...";
 };                       
 
 FUNC INT Info_VLK_17_Rangar_Condition()
@@ -133,14 +133,14 @@ FUNC INT Info_VLK_17_Rangar_Condition()
 
 FUNC VOID Info_VLK_17_Rangar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_VLK_17_Rangar_15_00"); //Wusstest du schon, dass Rangar eine Affäre hat?
-	AI_Output(self, hero, "Info_Mod_VLK_17_Rangar_17_01"); //Echt? Mit wem denn?
-	AI_Output(hero, self, "Info_Mod_VLK_17_Rangar_15_02"); //Mit einem von Alwins Schafen!
-	AI_Output(self, hero, "Info_Mod_VLK_17_Rangar_17_03"); //Bist du sicher? Das muss ich sofort weitererzählen.
+	AI_Output(hero, self, "Info_Mod_VLK_17_Rangar_15_00"); //Did you know Rangar's having an affair?
+	AI_Output(self, hero, "Info_Mod_VLK_17_Rangar_17_01"); //Really? With who?
+	AI_Output(hero, self, "Info_Mod_VLK_17_Rangar_15_02"); //With one of Alwin's sheep!
+	AI_Output(self, hero, "Info_Mod_VLK_17_Rangar_17_03"); //Are you sure about this? I'll have to go on with that right away.
 
 	Mod_DensGeruechtVerbreitet = TRUE;
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Ein Gerücht ist im Umlauf, da wird Den zufrieden sein.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "There's a rumor going around, so Den will be satisfied.");
 };
 
 // *************************************************************************
@@ -152,7 +152,7 @@ INSTANCE DIA_VLK_17_LOCATION(C_INFO)
 	condition	= DIA_VLK_17_LOCATION_Condition;
 	information	= DIA_VLK_17_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was sind die interessantesten Orte hier in Khorinis?";
+	description = "What are the most interesting places here in Khorinis?";
 };                       
 
 FUNC INT DIA_VLK_17_LOCATION_Condition()
@@ -162,9 +162,9 @@ FUNC INT DIA_VLK_17_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_17_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_17_LOCATION_15_00"); //Was sind die interessantesten Orte hier in Khorinis?
-	AI_Output (self, hero, "DIA_VLK_17_LOCATION_17_01"); //(lacht) Vielleicht solltest du das besser einen Mann fragen. Wenn dir nach Unterhaltung ist, solltest du dich am Hafen umsehen.
-	AI_Output (self, hero, "DIA_VLK_17_LOCATION_17_02"); //Aber wenn es dir darum geht, etwas zu kaufen, geh zum Marktplatz am Osttor oder in die Unterstadt.
+	AI_Output (hero, self, "DIA_VLK_17_LOCATION_15_00"); //What are the most interesting places here in Khorinis?
+	AI_Output (self, hero, "DIA_VLK_17_LOCATION_17_01"); //(laughs) Maybe you'd better ask a man that. If you're looking for entertainment, you should check the harbour.
+	AI_Output (self, hero, "DIA_VLK_17_LOCATION_17_02"); //But if you want to buy something, go to the market square at the East Gate or the lower town.
 };
 
 INSTANCE Info_Mod_VLK_17_Pickpocket (C_INFO)

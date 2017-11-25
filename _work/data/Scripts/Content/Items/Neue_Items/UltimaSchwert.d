@@ -1,6 +1,6 @@
 INSTANCE Ultima_Schwert1 (C_Item)
 {
-	name 				=	"Scars Schwert";
+	name 				=	"Scar's Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -27,7 +27,7 @@ INSTANCE Ultima_Schwert1 (C_Item)
 
 INSTANCE Ultima_Schwert2 (C_Item)
 {
-	name 				=	"Scars Schwert";
+	name 				=	"Scar's Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;

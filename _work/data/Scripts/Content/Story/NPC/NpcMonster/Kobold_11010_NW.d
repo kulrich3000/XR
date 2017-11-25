@@ -1,6 +1,6 @@
 INSTANCE Kobold_11010_NW	(Mst_Default_Gobbo_Green)
 {
-	name	=	"Snorre";
+	name	=	"snorre";
 	
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_KOBOLD;

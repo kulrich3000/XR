@@ -131,7 +131,7 @@ INSTANCE Alligator_AJ_08	(Mst_Default_Addon_Alligator)
 
 INSTANCE Alligator_AJ_09	(Mst_Default_Addon_Alligator)
 {
-	name	=	"Muttertier";
+	name	=	"dam";
 
 	level							=	20;
 	
@@ -159,7 +159,7 @@ INSTANCE Alligator_AJ_09	(Mst_Default_Addon_Alligator)
 
 INSTANCE Alligator_AJ_10	(Mst_Default_Addon_Alligator)
 {
-	name	=	"Muttertier";
+	name	=	"dam";
 
 	level							=	20;
 	

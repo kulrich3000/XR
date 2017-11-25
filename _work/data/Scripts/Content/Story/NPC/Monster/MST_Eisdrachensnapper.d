@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Eisdrachensnapper(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Eisdrachensnapper";
+	name							=	"Ice Dragon Snappers";
 	guild							=	GIL_SNAPPER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_EISDRACHENSNAPPER;
 	level							=	40;

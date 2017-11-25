@@ -21,22 +21,22 @@ FUNC INT Info_Mod_Landstreicher2_Hi_Condition()
 
 FUNC VOID Info_Mod_Landstreicher2_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_07_00"); //He, du. Lass besser 100 Münzen rüberwachsen, wenn du keine auf's Maul willst.
+	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_07_00"); //Hey, you. Better let 100 coins grow over if you don't want them on your mouth.
 
 	Info_ClearChoices	(Info_Mod_Landstreicher2_Hi);
 
-	Info_AddChoice	(Info_Mod_Landstreicher2_Hi, "Vergiss es, von mir bekommst du keinen Groschen.", Info_Mod_Landstreicher2_Hi_B);
+	Info_AddChoice	(Info_Mod_Landstreicher2_Hi, "Forget it, I'm not giving you a dime.", Info_Mod_Landstreicher2_Hi_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Landstreicher2_Hi, "Ich will keinen Ärger. Hier hast du 100 Münzen.", Info_Mod_Landstreicher2_Hi_A);
+		Info_AddChoice	(Info_Mod_Landstreicher2_Hi, "I don't want any trouble. Here's 100 coins.", Info_Mod_Landstreicher2_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Landstreicher2_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Landstreicher2_Hi_B_15_00"); //Vergiss es, von mir bekommst du keinen Groschen.
-	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_B_07_01"); //Dann muss ich das Gold aus dir herausprügeln.
+	AI_Output(hero, self, "Info_Mod_Landstreicher2_Hi_B_15_00"); //Forget it, I'm not giving you a dime.
+	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_B_07_01"); //Then I'll have to beat the gold out of you.
 
 	Info_ClearChoices	(Info_Mod_Landstreicher2_Hi);
 	
@@ -50,11 +50,11 @@ FUNC VOID Info_Mod_Landstreicher2_Hi_B()
 
 FUNC VOID Info_Mod_Landstreicher2_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Landstreicher2_Hi_A_15_00"); //Ich will keinen Ärger. Hier hast du 100 Münzen.
+	AI_Output(hero, self, "Info_Mod_Landstreicher2_Hi_A_15_00"); //I don't want any trouble. Here's 100 coins.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_A_07_01"); //Genau. Du weißt was gut für dich ist.
+	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_A_07_01"); //Exactly. You know what's good for you.
 
 	Info_ClearChoices	(Info_Mod_Landstreicher2_Hi);
 

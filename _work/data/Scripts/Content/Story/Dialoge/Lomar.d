@@ -15,79 +15,79 @@ FUNC INT Info_Mod_Lomar_Hi_Condition()
 
 FUNC VOID Info_Mod_Lomar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_00"); //Huch, so weit haben sich die untoten Drecksviecher noch nie aus dem Moor gewagt.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_01"); //Dem werde ich mal gleich eins mit der Keule rüberziehen und es ins Moor zurückwerfen.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_02"); //Obwohl ... das Fleisch könnte ich gut brauchen ...
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_00"); //Oops, the undead filthy creatures have never ventured out of the moor that far.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_01"); //I'm gonna hit him with a club and throw it back into the moor.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_02"); //Although... I could really use the meat...
 
 	AI_DrawWeapon	(self);
 
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_03"); //Ähh ... immer langsam. Ich bin kein Untoter.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_04"); //Was, du sprichst? Bist du ein Geist? Nein, ich kann durch dich nicht hindurchblicken.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_05"); //Oder bist du gar nicht echt, spielt mir mein Verstand einen Streich?
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_06"); //Nein, ich bin ziemlich real, glaube ich.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_03"); //Uh... always slow. I'm not an undead.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_04"); //What, you're talking? Are you a ghost? No, I can't see through you.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_05"); //Or are you not real at all, is my mind playing a trick on me?
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_06"); //No, I'm pretty real, I think.
 
 	AI_RemoveWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_07"); //Ist es möglich? Jemand der es nach so langer Zeit lebend durch das Moor geschafft hat? Sprich, wer bist du?
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_08"); //Ein Abenteurer und Glücksritter ... wie die meisten auf der anderen Seite des Moores, die kamen, um seine Schätze zu bergen.
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_09"); //Aber so weit wie ich ist wohl noch keiner gekommen.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_10"); //Was, die Verrückten betreten freiwillig dieses verfluchte Stück Land, nur um sich die Taschen zu füllen?!
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_11"); //Naja ... aber immerhin gut zu wissen, dass das draußen noch jemand ist.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_12"); //Hätte nicht gedacht, dass ich nach so langer Zeit wieder einen lebendigen Menschen zu Gesicht bekommen würde.
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_13"); //Lange Zeit? Wie kamst du denn an diesen verlassenen Fleck?
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_14"); //Nun, es war wohl vor fast zwei Jahrzehnten, als ich mit Begleitern loszog, um den Stadthalter zu stellen.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_15"); //Dieser verruchte Dieb hatte den magischen Fokus gestohlen, der unsere Siedlung schützte, und war ins Moor geflohen.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_16"); //Als wir es jedoch betraten, zeigte es sich feindseliger, als wir es je zuvor erlebt hatten.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_17"); //Von allen Seiten erhoben sich üble Kreaturen, die über uns herfielen und die Luft war so von Gift getränkt, was man die bloße  Hand vor Augen kaum sah.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_18"); //Es war, als versuche es sich unserer mit allen Mitteln zu entledigen.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_19"); //Ich verlor meine Begleiter schnell aus den Augen ... und rannte, wie ich es noch nie zuvor in meinem Leben getan hatte, ohne zu wissen wohin ... bis ich hier gelandet bin.
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_20"); //Seit 20 Jahren verweilst du also hier?! Wie ist es dir gelungen hier zu überleben?
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_21"); //Nun, wie du siehst ist dieses Stück Land vor dem direkten Einfluss des Moores verschont geblieben.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_22"); //Diese Hütte stand hier bereits, als ich mich hierher verirrte.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_23"); //Die Werkzeuge und Waffen, die ich zum Überleben brauchte, hatte ich zum Teil schon bei mir, als ich damals ins Moor aufbrach.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_24"); //Den Rest habe ich am Rande des Moores über die Jahre gefunden.
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_25"); //Und wovon ernährst du dich? (zögerlich) Du erwähntest vorher was über ... das Fleisch der Untoten.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_26"); //Was?! Nein, bei Innos, nicht was du denkst.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_27"); //Ich benutzte das Fleisch, um Gift für meine Pfeile zu gewinnen.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_28"); //Die Moorleichen sind so lange den giftigen Dämpfen ausgesetzt, dass sie ganz davon durchsetzt sind.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_29"); //Damit schieße ich dann hin und wieder eine von den Harpien, die oben in den Felsen nisten.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_30"); //Manchmal klettere ich auch hinauf, um eines ihrer Eier zu stehlen.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_31"); //Achja, zuletzt hatte ich Glück, da konnte ich sogar einen Goblin schießen, der gerade eines ihrer Nester plündern wollte.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_32"); //Endlich etwas Abwechslung auf dem Speiseplan.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_33"); //Aber was bin ich denn für ein Gastgeber. Der erste Besuch seit 20 Jahren und ich biete meinem Gast nichts an.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_34"); //Wie wäre es also mit einem knusprigen Stück Goblinfleisch?
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_07"); //Is it possible? Someone who made it through the moor alive after so long? Speak, who are you?
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_08"); //An adventurer and knight of fortune.... like most on the other side of the moor who came to recover his treasures.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_09"); //But I don't think nobody's come this far.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_10"); //What, the madmen voluntarily enter this damn piece of land just to fill their pockets?!
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_11"); //Well... but good to know there's someone else out there.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_12"); //Wouldn't have thought that after such a long time I would be able to see a living person again.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_13"); //A long time? How did you get to that abandoned spot?
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_14"); //Well, it must have been almost two decades ago when I went out with my companions to provide the governor.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_15"); //This wicked thief had stolen the magical focus that protected our settlement and had fled to the moor.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_16"); //When we entered it, however, it proved to be more hostile than we had ever experienced before.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_17"); //Evil creatures were rising from all sides, falling over us and the air was so full of poison, that you could hardly see the bare hand in front of your eyes.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_18"); //It was like trying to get rid of us by any means possible.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_19"); //I quickly lost track of my companions... and ran like I had never done before in my life without knowing where to go... until I land here.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_20"); //So you've been here for 20 years?! How did you manage to survive here?
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_21"); //Well, as you can see, this piece of land has been spared from the direct influence of the moor.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_22"); //This cabin was standing right here when I got lost here.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_23"); //Some of the tools and weapons I needed to survive were already with me when I left for the moor.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_24"); //I found the rest at the edge of the moor over the years.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_15_25"); //And what do you eat? You mentioned something earlier about... the flesh of the undead.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_26"); //What?! No, at Innos, not what you think.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_27"); //I used the flesh to extract poison for my arrows.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_28"); //The bog bodies are exposed to toxic fumes for so long that they are completely permeated by them.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_29"); //Now and then I shoot one of the harpies that nest in the rocks.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_30"); //Sometimes I climb up to steal one of their eggs.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_31"); //Well, last time I was lucky, I could even shoot a goblin who was about to plunder one of their nests.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_32"); //Finally some variety on the menu.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_33"); //But what a host I am. The first visit in 20 years and I don't offer my guest anything.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_10_34"); //So how about a crispy piece of goblin meat?
 
 	Info_ClearChoices	(Info_Mod_Lomar_Hi);
 
-	Info_AddChoice	(Info_Mod_Lomar_Hi, "Goblinfleisch? Hmm, mal was neues ...", Info_Mod_Lomar_Hi_B);
-	Info_AddChoice	(Info_Mod_Lomar_Hi, "Ähh, danke, ein andermal.", Info_Mod_Lomar_Hi_A);
+	Info_AddChoice	(Info_Mod_Lomar_Hi, "Goblin meat? Hmm, something new...", Info_Mod_Lomar_Hi_B);
+	Info_AddChoice	(Info_Mod_Lomar_Hi, "Uh, thanks, another time.", Info_Mod_Lomar_Hi_A);
 };
 
 FUNC VOID Info_Mod_Lomar_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_00"); //Wie dem auch sei, für Früchte sorgt das Moor. Gerade war wieder eine gute Saison. Da habe ich viele Sumpfbeeren geerntet.
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_C_15_01"); //Geerntet? Wie das?
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_02"); //Nun, diese fleischfressenden Pflanzen mit dem großen Appetit gedeihen hier prächtig.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_03"); //Ich habe angefangen sie auf einem kleinen Feld hinter meiner Hütte anzubauen.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_04"); //Und wenn die Erntezeit gekommen ist, nehme ich eine scharfe Klinge und stutze sie ein wenig zurecht.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_05"); //Wenn du eine Sumpfbeere probieren möchtest, bedien dich. In der Hütte liegen noch welche.
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_C_15_06"); //Wie es scheint hast du dich hier wirklich gut eingelebt.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_07"); //Ja, mit der Zeit lernt man mit dem auszukommen, was die Natur hergibt.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_08"); //Nur hin und wieder ... ja, da würde ich doch gerne mal wieder ein saftiges Stück Käse essen.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_00"); //Be that as it may, the moor provides fruit. It was another good season. That's where I harvested a lot of bog bilberries.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_C_15_01"); //Harvested? How so?
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_02"); //Well, these carnivorous plants with a big appetite thrive here.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_03"); //I started growing them on a small field behind my hut.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_04"); //And when the harvest time has come, I take a sharp blade and prune it a little bit.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_05"); //If you want to taste a mulberry, help yourself. There's more in the cabin.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_C_15_06"); //You seem to have settled in here really well.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_07"); //Yes, with time you learn to get along with what nature has to offer.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_C_10_08"); //Just once in a while.... Yes, I would like to eat a juicy piece of cheese.
 
 	Info_ClearChoices	(Info_Mod_Lomar_Hi);
 };
 
 FUNC VOID Info_Mod_Lomar_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_B_15_00"); //Goblinfleisch? Hmm, mal was neues ...
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_B_10_01"); //Hier bitte sehr.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_B_15_00"); //Goblin meat? Hmm, something new...
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_B_10_01"); //Here you go, please.
 
 	B_GiveInvItems	(self, hero, ItFo_Mutton, 1);
 
 	B_UseItem	(hero, ItFo_Mutton);
 
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_B_15_02"); //(überascht) Hmm, gar nicht schlecht. Erinnert mich an ... Hühnchen.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_B_15_02"); //(surprised) Hmm, not bad at all. Reminds me of.... Chicken.
 
 	B_GivePlayerXP	(50);
 
@@ -96,8 +96,8 @@ FUNC VOID Info_Mod_Lomar_Hi_B()
 
 FUNC VOID Info_Mod_Lomar_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lomar_Hi_A_15_00"); //Ähh, danke, ein andermal.
-	AI_Output(self, hero, "Info_Mod_Lomar_Hi_A_10_01"); //Schade. Du weißt nicht, was dir da Leckeres entgeht.
+	AI_Output(hero, self, "Info_Mod_Lomar_Hi_A_15_00"); //Uh, thanks, another time.
+	AI_Output(self, hero, "Info_Mod_Lomar_Hi_A_10_01"); //Too bad. You don't know what tasty stuff you're missing.
 
 	Info_Mod_Lomar_Hi_C();
 };
@@ -110,7 +110,7 @@ INSTANCE Info_Mod_Lomar_Kaese (C_INFO)
 	information	= Info_Mod_Lomar_Kaese_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du deinen Käse.";
+	description	= "Here's your cheese.";
 };
 
 FUNC INT Info_Mod_Lomar_Kaese_Condition()
@@ -124,16 +124,16 @@ FUNC INT Info_Mod_Lomar_Kaese_Condition()
 
 FUNC VOID Info_Mod_Lomar_Kaese_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lomar_Kaese_15_00"); //Hier hast du deinen Käse.
+	AI_Output(hero, self, "Info_Mod_Lomar_Kaese_15_00"); //Here's your cheese.
 
 	B_GiveInvItems	(hero, self, ItFo_Cheese, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lomar_Kaese_10_01"); //Echter Käse… . Hab vielen Dank.
-	AI_Output(self, hero, "Info_Mod_Lomar_Kaese_10_02"); //Was kann ich dir denn dafür geben ... ahh, hier, nimm diesen goldenen Pokal.
+	AI_Output(self, hero, "Info_Mod_Lomar_Kaese_10_01"); //Real cheese..... Thank you very much.
+	AI_Output(self, hero, "Info_Mod_Lomar_Kaese_10_02"); //What can I give you for that? ahh, here, take this gold trophy.
 
 	B_GiveInvItems	(self, hero, ItMi_GoldCup, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lomar_Kaese_10_03"); //Mir nützt er hier ähh nichts.
+	AI_Output(self, hero, "Info_Mod_Lomar_Kaese_10_03"); //He's no use to me here.
 
 	B_GivePlayerXP	(150);
 };
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Lomar_WarumNichtWeg (C_INFO)
 	information	= Info_Mod_Lomar_WarumNichtWeg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum verlässt du das Moor nicht?";
+	description	= "Why don't you leave the moor?";
 };
 
 FUNC INT Info_Mod_Lomar_WarumNichtWeg_Condition()
@@ -159,10 +159,10 @@ FUNC INT Info_Mod_Lomar_WarumNichtWeg_Condition()
 
 FUNC VOID Info_Mod_Lomar_WarumNichtWeg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lomar_WarumNichtWeg_15_00"); //Warum verlässt du das Moor nicht?
-	AI_Output(self, hero, "Info_Mod_Lomar_WarumNichtWeg_10_01"); //Nun, wegen der ganzen Viecher im Moor.
-	AI_Output(self, hero, "Info_Mod_Lomar_WarumNichtWeg_10_02"); //Denn seit dem Diebstahl des Fokus, ist es -  wie schon erwähnt - viel lebensfeindlicher geworden, als man es zuvor kannte.
-	AI_Output(self, hero, "Info_Mod_Lomar_WarumNichtWeg_10_03"); //Solange sich das nicht ändert, sehe ich davon ab hindurch zu laufen ... was wohl heißt, dass ich den Rest meiner Tage hier verbringen werde.
+	AI_Output(hero, self, "Info_Mod_Lomar_WarumNichtWeg_15_00"); //Why don't you leave the moor?
+	AI_Output(self, hero, "Info_Mod_Lomar_WarumNichtWeg_10_01"); //Well, because of all the creatures in the moor.
+	AI_Output(self, hero, "Info_Mod_Lomar_WarumNichtWeg_10_02"); //Because since the theft of focus, it has become - as already mentioned - much more hostile to life than it was before.
+	AI_Output(self, hero, "Info_Mod_Lomar_WarumNichtWeg_10_03"); //As long as that doesn't change, I see myself walking through it.... which means I'm going to spend the rest of my days here.
 };
 
 INSTANCE Info_Mod_Lomar_GanzAlleine (C_INFO)
@@ -173,7 +173,7 @@ INSTANCE Info_Mod_Lomar_GanzAlleine (C_INFO)
 	information	= Info_Mod_Lomar_GanzAlleine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "20 Jahre ohne Gesellschaft anderer ... Bewundernswert.";
+	description	= "20 years without the company of others... Admirable.";
 };
 
 FUNC INT Info_Mod_Lomar_GanzAlleine_Condition()
@@ -186,11 +186,11 @@ FUNC INT Info_Mod_Lomar_GanzAlleine_Condition()
 
 FUNC VOID Info_Mod_Lomar_GanzAlleine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lomar_GanzAlleine_15_00"); //20 Jahre ohne Gesellschaft anderer ... Bewundernswert, dass du dich noch so gut mitteilen kannst und bei klarem Verstand bist.
-	AI_Output(self, hero, "Info_Mod_Lomar_GanzAlleine_10_01"); //Ach, ganz alleine war ich ja nicht. Ich habe ja zum Glück den Paul.
-	AI_Output(self, hero, "Info_Mod_Lomar_GanzAlleine_10_02"); //Er hat mir immer gute Gesellschaft geleistet und war zu manchem Schabernack aufgelegt.
-	AI_Output(self, hero, "Info_Mod_Lomar_GanzAlleine_10_03"); //Meistens wartet er gleich beim Eingang in die Hütte.
-	AI_Output(self, hero, "Info_Mod_Lomar_GanzAlleine_10_04"); //Begrüße ihn aber, wenn du ihm begegnest ... er ist sonst schnell gekränkt, weißt du ...
+	AI_Output(hero, self, "Info_Mod_Lomar_GanzAlleine_15_00"); //20 years without the company of others... It's admirable that you can communicate so well and are clear-minded.
+	AI_Output(self, hero, "Info_Mod_Lomar_GanzAlleine_10_01"); //Oh, I wasn't all alone. I'm lucky to have Paul.
+	AI_Output(self, hero, "Info_Mod_Lomar_GanzAlleine_10_02"); //He's always kept me in good company, and he's been up to a lot of jokes.
+	AI_Output(self, hero, "Info_Mod_Lomar_GanzAlleine_10_03"); //Usually he waits at the entrance to the hut.
+	AI_Output(self, hero, "Info_Mod_Lomar_GanzAlleine_10_04"); //But say hello to him when you meet him... he's easily hurt, you know....
 };
 
 INSTANCE Info_Mod_Lomar_Siedlung (C_INFO)
@@ -213,7 +213,7 @@ FUNC INT Info_Mod_Lomar_Siedlung_Condition()
 
 FUNC VOID Info_Mod_Lomar_Siedlung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lomar_Siedlung_10_00"); //Ja, bald wird die Siedlung wieder in ihrem alten Glanz erstrahlen.
+	AI_Output(self, hero, "Info_Mod_Lomar_Siedlung_10_00"); //Yes, the settlement will soon be restored to its former glory.
 
 	B_GivePlayerXP	(100);
 };
@@ -236,7 +236,7 @@ FUNC INT Info_Mod_Lomar_EXIT_Condition()
 
 FUNC VOID Info_Mod_Lomar_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lomar_EXIT_10_00"); //Lass dich nicht umbringen.
+	AI_Output(self, hero, "Info_Mod_Lomar_EXIT_10_00"); //Don't get yourself killed.
 
 	AI_StopProcessInfos	(self);
 };

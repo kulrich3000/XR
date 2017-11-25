@@ -1,7 +1,7 @@
 instance Mod_7234_OUT_Giselle_NW  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Giselle";
+	name 		= "giselle";
 	guild 		= GIL_PAL;
 	id 			= 7234;
 	voice 		= 17;

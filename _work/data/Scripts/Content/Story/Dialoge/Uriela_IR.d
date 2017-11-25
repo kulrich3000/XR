@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Uriela_IR_Hi (C_INFO)
 	information	= Info_Mod_Uriela_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, wie sieht es aus?";
+	description	= "So, what's the situation?";
 };
 
 FUNC INT Info_Mod_Uriela_IR_Hi_Condition()
@@ -16,9 +16,9 @@ FUNC INT Info_Mod_Uriela_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Uriela_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_IR_Hi_15_00"); //Und, wie sieht es aus?
-	AI_Output(self, hero, "Info_Mod_Uriela_IR_Hi_17_01"); //Nun, ich spüre die morbiden dämonischen Kräfte, welche diese Insel umgeben und durchsetzen.
-	AI_Output(self, hero, "Info_Mod_Uriela_IR_Hi_17_02"); //(nachdenklich) Sehr den Mächten ähnelnd, die unsere Heimat verheert haben.
+	AI_Output(hero, self, "Info_Mod_Uriela_IR_Hi_15_00"); //So, what's the situation?
+	AI_Output(self, hero, "Info_Mod_Uriela_IR_Hi_17_01"); //Well, I sense the morbid demonic forces that surround and assert this island.
+	AI_Output(self, hero, "Info_Mod_Uriela_IR_Hi_17_02"); //Very similar to the powers that have devastated our homeland.
 };
 
 INSTANCE Info_Mod_Uriela_IR_Hebel (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Uriela_IR_Hebel (C_INFO)
 	information	= Info_Mod_Uriela_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Can you use one lever while I move the other?";
 };
 
 FUNC INT Info_Mod_Uriela_IR_Hebel_Condition()
@@ -46,7 +46,7 @@ FUNC VOID Info_Mod_Uriela_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Uriela_IR_Hebel_17_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Uriela_IR_Hebel_17_00"); //Of course it is. Maybe if it's going to get us somewhere...
 
 	Mod_IR_Hebel = 1;
 
@@ -75,7 +75,7 @@ FUNC INT Info_Mod_Uriela_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Uriela_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Uriela_IR_Ambient01_17_00"); //Ja, hinfort mit euch, ihr armseligen Ausgeburten eines wurmzerfressenen Kadavers.
+	AI_Output(self, hero, "Info_Mod_Uriela_IR_Ambient01_17_00"); //Yes, away with you, you miserable spawners of a worm-eaten carcass.
 
 	AI_StopProcessInfos	(self);
 };
@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Uriela_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Uriela_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Let's get going. Will you escort me to the island?";
 };
 
 FUNC INT Info_Mod_Uriela_IR_GehtLos_Condition()
@@ -107,7 +107,7 @@ FUNC VOID Info_Mod_Uriela_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Uriela_IR_GehtLos_17_00"); //Natürlich. Jedes einzelne dieser üblen Geschöpfe soll dafür büßen, was unserer Siedlung angetan wurde.
+	AI_Output(self, hero, "Info_Mod_Uriela_IR_GehtLos_17_00"); //Of course it is. Every single one of these evil creatures should pay for what has been done to our settlement.
 
 	Mod_IR_Dabei += 1;
 
@@ -126,7 +126,7 @@ INSTANCE Info_Mod_Uriela_IR_GehBack (C_INFO)
 	information	= Info_Mod_Uriela_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Go back to the ship.";
 };
 
 FUNC INT Info_Mod_Uriela_IR_GehBack_Condition()
@@ -143,7 +143,7 @@ FUNC VOID Info_Mod_Uriela_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Uriela_IR_GehBack_17_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Uriela_IR_GehBack_17_00"); //Well, if you need me, you know where to find me.
 
 	Mod_IR_Dabei -= 1;
 
@@ -163,7 +163,7 @@ INSTANCE Info_Mod_Uriela_IR_IstDemon (C_INFO)
 	permanent	= 1;
 	important	= 0;
 	trade		= 1;
-	description	= "Hast du vielleicht etwas Hexenmagie für mich?";
+	description	= "Do you have any witch magic for me?";
 };
 
 FUNC INT Info_Mod_Uriela_IR_IstDemon_Condition()
@@ -176,8 +176,8 @@ FUNC INT Info_Mod_Uriela_IR_IstDemon_Condition()
 
 FUNC VOID Info_Mod_Uriela_IR_IstDemon_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_IR_IstDemon_15_00"); //Hast du vielleicht etwas Hexenmagie für mich?
-	AI_Output(self, hero, "Info_Mod_Uriela_IR_IstDemon_17_01"); //Ja, die eine, oder andere Spruchrolle habe ich dabei.
+	AI_Output(hero, self, "Info_Mod_Uriela_IR_IstDemon_15_00"); //Do you have any witch magic for me?
+	AI_Output(self, hero, "Info_Mod_Uriela_IR_IstDemon_17_01"); //Yeah, I've got one or two of them with me.
 };
 
 INSTANCE Info_Mod_Uriela_IR_Heiltrank (C_INFO)
@@ -188,7 +188,7 @@ INSTANCE Info_Mod_Uriela_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Uriela_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Uriela_IR_Heiltrank_Condition()
@@ -208,31 +208,31 @@ FUNC VOID Info_Mod_Uriela_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Uriela_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Essence of Healing", Info_Mod_Uriela_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Uriela_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Elixir of Healing", Info_Mod_Uriela_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Uriela_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Extract of Healing", Info_Mod_Uriela_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Uriela_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Essence of Healing", Info_Mod_Uriela_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Uriela_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Drink of light healing", Info_Mod_Uriela_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Uriela_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Light healing potion", Info_Mod_Uriela_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Uriela_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Uriela_IR_Heiltrank, "Drink of fast healing", Info_Mod_Uriela_IR_Heiltrank_Health_05);
 	};
 };
 

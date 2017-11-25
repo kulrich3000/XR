@@ -18,12 +18,12 @@ FUNC INT Info_Mod_Sylvio_Hi_Condition()
 
 FUNC VOID Info_Mod_Sylvio_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sylvio_Hi_09_00"); //Hey, du bist doch der Typ, der im Alten Lager für uns spionieren soll.
-	AI_Output(hero, self, "Info_Mod_Sylvio_Hi_15_01"); //Ja, das soll ich.
-	AI_Output(self, hero, "Info_Mod_Sylvio_Hi_09_02"); //Ich will dir was sagen: Falls du was herausbekommst, solltest du es zuerst mir berichten, bevor du damit zu Lee rennst, verstanden?
-	AI_Output(self, hero, "Info_Mod_Sylvio_Hi_09_03"); //Damit steigst du im Nu zum Orkjäger auf und kannst dir noch zusätzlich Gold uns Erz verdienen. Wir verstehen uns?
+	AI_Output(self, hero, "Info_Mod_Sylvio_Hi_09_00"); //Hey, you're the guy who's supposed to be spying on us in the old camp.
+	AI_Output(hero, self, "Info_Mod_Sylvio_Hi_15_01"); //Yes, I should.
+	AI_Output(self, hero, "Info_Mod_Sylvio_Hi_09_02"); //I want to tell you something: If you get anything, you should tell me first before you run to Lee, understand?
+	AI_Output(self, hero, "Info_Mod_Sylvio_Hi_09_03"); //With this you can become an orc hunter in no time and earn additional gold and ore. We understand each other?
 
-	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Sylvio wollte, dass ich zuerst ihm bericht erstatte, falls ich im Alten Lager etwas erfahren sollte.");
+	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Sylvio wanted me to report to him first, in case I learned anything in the Old Camp.");
 };
 
 INSTANCE Info_Mod_Sylvio_InfosAnLee (C_INFO)
@@ -49,11 +49,11 @@ FUNC VOID Info_Mod_Sylvio_InfosAnLee_Info()
 {
 	if (!Npc_KnowsInfo(hero, Info_Mod_Sylvio_Infos))
 	{
-		AI_Output(self, hero, "Info_Mod_Sylvio_InfosAnLee_09_00"); //Hatte ich nicht gesagt, dass du zuerst zu mir kommen sollst?
+		AI_Output(self, hero, "Info_Mod_Sylvio_InfosAnLee_09_00"); //Didn't I tell you to come to me first?
 	};
 
-	AI_Output(self, hero, "Info_Mod_Sylvio_InfosAnLee_09_01"); //Einer meiner besten Orkjäger wurde bloßgestellt und das färbt wiederum auf mich ab. Und so was gefällt mir ganz und gar nicht.
-	AI_Output(self, hero, "Info_Mod_Sylvio_InfosAnLee_09_02"); //Pass besser in Zukunft auf, ob du dir nicht einflussreiche Feinde machst.
+	AI_Output(self, hero, "Info_Mod_Sylvio_InfosAnLee_09_01"); //One of my best orc hunters was exposed and that will turn to me. And I don't like that at all.
+	AI_Output(self, hero, "Info_Mod_Sylvio_InfosAnLee_09_02"); //Better watch out in the future if you don't make powerful enemies.
 };
 
 INSTANCE Info_Mod_Sylvio_Infos (C_INFO)
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Sylvio_Infos (C_INFO)
 	information	= Info_Mod_Sylvio_Infos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe wichtige Informationen (...)";
+	description	= "I have important information (.... )";
 };
 
 FUNC INT Info_Mod_Sylvio_Infos_Condition()
@@ -78,11 +78,11 @@ FUNC INT Info_Mod_Sylvio_Infos_Condition()
 
 FUNC VOID Info_Mod_Sylvio_Infos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lee_Infos_15_00"); //Ich habe wichtige Informationen aus meinen Gesprächen mit einigen Schatten gewonnen. Offenbar ist ein Gardist einem Mord zum Opfer gefallen.
-	AI_Output(hero, self, "Info_Mod_Lee_Infos_15_01"); //Ein anderer Gardist will einen von unseren Männern als Täter ausgemacht haben und das Alte Lager plant einen Überfall auf uns im Morgengrauen der nächsten Tage.
-	AI_Output(self, hero, "Info_Mod_Sylvio_Infos_09_02"); //Das ist interessant. Geh zu Sentenza. Er wird dir die weiteren Anweisungen geben.
+	AI_Output(hero, self, "Info_Mod_Lee_Infos_15_00"); //I have gained important information from my conversations with some of the shadows. Apparently, a guardsman fell victim to murder.
+	AI_Output(hero, self, "Info_Mod_Lee_Infos_15_01"); //Another guardsman wants one of our men to be the culprit and the old camp plans to attack us at dawn in the next few days.
+	AI_Output(self, hero, "Info_Mod_Sylvio_Infos_09_02"); //That's interesting. Go to Sentenza. He'll give you further instructions.
 	
-	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Ich soll zu Sentenza, um weitere Anweisungen zu erhalten.");
+	B_LogEntry	(TOPIC_MOD_SLD_SPY, "I'm to Sentenza to get further instructions.");
 
 	Mod_SLD_Spy = 4;
 
@@ -110,14 +110,14 @@ FUNC INT Info_Mod_Sylvio_Frauenraub_Condition()
 
 FUNC VOID Info_Mod_Sylvio_Frauenraub_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sylvio_Frauenraub_09_00"); //Achja, es hat sich übrigens eine weitere Möglichkeit für dich gefunden, dich zu bewähren.
-	AI_Output(self, hero, "Info_Mod_Sylvio_Frauenraub_09_01"); //Geh zu Bullco. Er wird dir alles Weitere mitteilen.
-	AI_Output(hero, self, "Info_Mod_Sylvio_Frauenraub_15_02"); //Aber Bullco ist doch kein Orkjäger.
-	AI_Output(self, hero, "Info_Mod_Sylvio_Frauenraub_09_03"); //Genau, er ist Drachenjäger. Na und? Für mich zu arbeiten lohnt sich eben. Du findest ihn tagsüber meistens vor der Kneipe.
+	AI_Output(self, hero, "Info_Mod_Sylvio_Frauenraub_09_00"); //By the way, there's another way for you to prove yourself.
+	AI_Output(self, hero, "Info_Mod_Sylvio_Frauenraub_09_01"); //Go to Bullco. He'll tell you everything else.
+	AI_Output(hero, self, "Info_Mod_Sylvio_Frauenraub_15_02"); //But Bullco is not an orcish hunter.
+	AI_Output(self, hero, "Info_Mod_Sylvio_Frauenraub_09_03"); //That's right, he's a dragon hunter. So what? Working for me is worthwhile. You'll find him outside the pub during the day.
 
 	Log_CreateTopic	(TOPIC_MOD_SLD_BULLCO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SLD_BULLCO, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SLD_BULLCO, "Ich soll zu Bullco, der sich meistens vor der Kneipe befindet, um mir weitere Anweisungen zu holen.");
+	B_LogEntry	(TOPIC_MOD_SLD_BULLCO, "I'm supposed to see Bullco, who is usually in front of the pub, to get me further instructions.");
 };
 
 INSTANCE Info_Mod_Sylvio_VelayaWeg (C_INFO)
@@ -140,9 +140,9 @@ FUNC INT Info_Mod_Sylvio_VelayaWeg_Condition()
 
 FUNC VOID Info_Mod_Sylvio_VelayaWeg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaWeg_09_00"); //Was?! Du hier? Und ohne Begleitung?
-	AI_Output(hero, self, "Info_Mod_Sylvio_VelayaWeg_15_01"); //Es hat leider nicht geklappt.
-	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaWeg_09_02"); //Nicht geklappt?! Nachdem du dir das geleistet hast, wird so manch anderes für dich wahrscheinlich auch nicht klappen. Geh mir aus den Augen.
+	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaWeg_09_00"); //What?! You here? And unaccompanied?
+	AI_Output(hero, self, "Info_Mod_Sylvio_VelayaWeg_15_01"); //I'm afraid it didn't work out.
+	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaWeg_09_02"); //Didn't work?! After you've done that, there's probably a lot of other things that won't work out for you. Get out of my sight.
 
 	B_SetTopicStatus	(TOPIC_MOD_SLD_BULLCO, LOG_SUCCESS);
 };
@@ -167,11 +167,11 @@ FUNC INT Info_Mod_Sylvio_VelayaDabei_Condition()
 
 FUNC VOID Info_Mod_Sylvio_VelayaDabei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaDabei_09_00"); //Sieh mal einer an, wen man uns hergebracht hat. Sie wird mir schöne Stunden bereiten.
-	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaDabei_09_01"); //(Zu dem Helden) Du hast deine Sache mehr als gut gemacht. Damit bist du der Aufnahme in die Reihen der Orkjäger wesentlich näher gekommen.
-	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaDabei_09_02"); //Hier deine Entlohnung. Die hast du dir redlich verdient.
+	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaDabei_09_00"); //Well, look who they brought us here. She'll give me a good time.
+	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaDabei_09_01"); //You've done your thing more than well. You've come a lot closer to joining the ranks of the Orc hunters.
+	AI_Output(self, hero, "Info_Mod_Sylvio_VelayaDabei_09_02"); //Here's your reward. You've earned it fair.
 
-	B_ShowGivenThings	("350 Gold, 10 Erz und 12 Stängel Sumpfkraut erhalten");
+	B_ShowGivenThings	("350 gold, 10 ore and 12 stems of bog cabbage preserved");
 
 	CreateInvItems	(hero, ItMi_Gold, 350);
 	CreateInvItems	(hero, ItMi_Nugget, 10);
@@ -192,7 +192,7 @@ INSTANCE Info_Mod_Sylvio_Befoerderung (C_INFO)
 	information	= Info_Mod_Sylvio_Befoerderung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bin ich bereit in die Reihen der Orkjäger aufgenommen zu werden?";
+	description	= "Am I ready to join the ranks of the Orcish?";
 };
 
 FUNC INT Info_Mod_Sylvio_Befoerderung_Condition()
@@ -206,28 +206,28 @@ FUNC INT Info_Mod_Sylvio_Befoerderung_Condition()
 
 FUNC VOID Info_Mod_Sylvio_Befoerderung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sylvio_Befoerderung_15_00"); //Bin ich bereit in die Reihen der Orkjäger aufgenommen zu werden?
+	AI_Output(hero, self, "Info_Mod_Sylvio_Befoerderung_15_00"); //Am I ready to join the ranks of the Orcish?
 
 	if (Kapitel == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_01"); //Was?! Ach die Aufnahme ... ich denke in ein paar Tagen darüber nach.
+		AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_01"); //What?! Oh, the recording... I'll think about it in a couple of days.
 	}
 	else
 	{
 		if (Npc_KnowsInfo(hero, Info_Mod_Sylvio_VelayaDabei))
 		&& (Npc_KnowsInfo(hero, Info_Mod_Sentenza_Cutter))
 		{
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_02"); //Achja, deine Aufnahme. Du hast gezeigt, dass du auf der richtigen Seite stehst und deine Aufgaben zu meiner vollsten Zufriedenheit erfüllt.
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_03"); //Damit hast du dir deine Aufnahme mehr als verdient. Willkommen bei den Orkjägern. Hier ist deine neue Rüstung.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_02"); //Oh, your recording. You have shown that you are on the right side and have fulfilled your tasks to my complete satisfaction.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_03"); //You've more than earned your recording with this. Welcome to the Orc hunters. Here's your new armor.
 
-			B_ShowGivenThings	("Orkjägerrüstung erhalten");
+			B_ShowGivenThings	("Receive Hunting Armor");
 
 			CreateInvItems	(hero, ItAr_Sld_H, 1);
 
 			AI_UnequipArmor	(hero);
 			AI_EquipArmor	(hero, ItAr_Sld_H);
 
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_04"); //Deine Waffe kannst du dir bei Thofeistos abholen.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_04"); //You can pick up your weapon at Thofeistos.
 
 			Snd_Play ("LEVELUP");
 
@@ -244,13 +244,13 @@ FUNC VOID Info_Mod_Sylvio_Befoerderung_Info()
 		else if (Npc_KnowsInfo(hero, Info_Mod_Sylvio_VelayaWeg))
 		&& (Npc_KnowsInfo(hero, Info_Mod_Sylvio_InfosAnLee))
 		{
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_05"); //Achja, die Aufnahme. Du hast mir und meinen Jungs wirklich einigen Kummer gemacht, Bürschchen.
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_06"); //Sei froh, dass du ein ehemaliger Bekannter von Lee bist, sonst würde ich dich mit meiner Waffe in Stücke hacken.
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_07"); //Aufnahme? Bei den Bauern auf dem Reisfeld, aber nicht bei uns. Und jetzt geh mir aus den Augen, bevor ich mich doch noch vergesse.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_05"); //Oh, the recording. You've really caused me and my boys a lot of trouble, buster.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_06"); //Be glad you're a former acquaintance of Lee's, or I'd chop you to pieces with my gun.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_07"); //Recording? With the farmers on the rice field, but not with us. Now get out of my sight before I forget myself.
 
 			Mod_SLD_Orkjaeger = 2;
 
-			B_LogEntry	(TOPIC_MOD_SLD_ORKJAEGER, "Na toll. Wenn es nach Sylvio geht, bin ich nicht dabei. Ich sollte Lee fragen, ob es nicht doch einen anderen Weg gibt.");
+			B_LogEntry	(TOPIC_MOD_SLD_ORKJAEGER, "Oh, great. If it's Sylvio, I'm not there. I should ask Lee if there's another way.");
 		}
 		else if ((Npc_KnowsInfo(hero, Info_Mod_Sylvio_VelayaDabei))
 		|| (Npc_KnowsInfo(hero, Info_Mod_Sentenza_Cutter)))
@@ -260,17 +260,17 @@ FUNC VOID Info_Mod_Sylvio_Befoerderung_Info()
 		&& (Npc_KnowsInfo(hero, Info_Mod_Fester_BackAtCamp))
 		&& (Mod_SLD_Engardo == 5)))
 		{
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_08"); //Manches hast du hinbekommen, einiges auch verhauen, jedoch alles in allem gute Arbeit geleistet.
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_09"); //Du hast dich zwar nicht mit Ruhm bekleckert, aber für eine Aufnahme bei uns reicht es trotzdem gerade so. Hier ist deine neue Rüstung.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_08"); //You managed to do some things, beat some things up, but all in all you did a good job.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_09"); //You may not have spilled glory on yourself, but it's still enough for a recording with us. Here's your new armor.
 
-			B_ShowGivenThings	("Orkjägerrüstung erhalten");
+			B_ShowGivenThings	("Receive Hunting Armor");
 
 			CreateInvItems	(hero, ItAr_Sld_H, 1);
 
 			AI_UnequipArmor	(hero);
 			AI_EquipArmor	(hero, ItAr_Sld_H);
 
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_04"); //Deine Waffe kannst du dir bei Thofeistos abholen.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_04"); //You can pick up your weapon at Thofeistos.
 
 			Snd_Play ("LEVELUP");
 
@@ -286,8 +286,8 @@ FUNC VOID Info_Mod_Sylvio_Befoerderung_Info()
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_10"); //Was, du hast du noch kaum etwas gemacht.
-			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_11"); //Ehe du dich nicht bewährt hast, lautet die Antwort nein.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_10"); //What, you've barely done anything.
+			AI_Output(self, hero, "Info_Mod_Sylvio_Befoerderung_04_11"); //Until you prove yourself wrong, the answer is no.
 		};
 	};
 };
@@ -300,7 +300,7 @@ INSTANCE Info_Mod_Sylvio_Wettstreit (C_INFO)
 	information	= Info_Mod_Sylvio_Wettstreit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich fordere dich zum Wettstreit.";
+	description	= "I challenge you to competition.";
 };
 
 FUNC INT Info_Mod_Sylvio_Wettstreit_Condition()
@@ -315,12 +315,12 @@ FUNC INT Info_Mod_Sylvio_Wettstreit_Condition()
 
 FUNC VOID Info_Mod_Sylvio_Wettstreit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sylvio_Wettstreit_15_00"); //Ich fordere dich zum Wettstreit.
-	AI_Output(self, hero, "Info_Mod_Sylvio_Wettstreit_09_01"); //Was ... was sagst du?
-	AI_Output(hero, self, "Info_Mod_Sylvio_Wettstreit_15_02"); //Zum Wettstreit um den Posten des 2. Offiziers und Anführers der Orkjäger.
-	AI_Output(self, hero, "Info_Mod_Sylvio_Wettstreit_09_03"); //Du Wicht erdreistest dich ... das wirst du bitter bereuen.
-	AI_Output(hero, self, "Info_Mod_Sylvio_Wettstreit_15_04"); //Wollte auch nur Bescheid sagen und wieder zurück zu Lee.
-	AI_Output(self, hero, "Info_Mod_Sylvio_Wettstreit_09_05"); //Ok, wenn du einen Wettstreit willst, sollst du einen bekommen.
+	AI_Output(hero, self, "Info_Mod_Sylvio_Wettstreit_15_00"); //I challenge you to competition.
+	AI_Output(self, hero, "Info_Mod_Sylvio_Wettstreit_09_01"); //What...? What do you say?
+	AI_Output(hero, self, "Info_Mod_Sylvio_Wettstreit_15_02"); //To the competition for the second rank. Officer and leader of the Orc hunters.
+	AI_Output(self, hero, "Info_Mod_Sylvio_Wettstreit_09_03"); //You wretch dares... you'll regret this.
+	AI_Output(hero, self, "Info_Mod_Sylvio_Wettstreit_15_04"); //Just wanted to let you know and get back to Lee.
+	AI_Output(self, hero, "Info_Mod_Sylvio_Wettstreit_09_05"); //Okay, if you want a contest, I want you to have one.
 };
 
 INSTANCE Info_Mod_Sylvio_AtStonehenge (C_INFO)
@@ -343,8 +343,8 @@ FUNC INT Info_Mod_Sylvio_AtStonehenge_Condition()
 
 FUNC VOID Info_Mod_Sylvio_AtStonehenge_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sylvio_AtStonehenge_09_00"); //Du hier? (zu sich selbst) Verdammt, wo bleibt nur Sentenza mit meinem Schlüssel.
-	AI_Output(self, hero, "Info_Mod_Sylvio_AtStonehenge_09_01"); //(Zu dem Helden) Tja, wie es aussieht werde ich dir deinen Schlüssel abnehmen müssen. Du hättest dich besser nicht mit mir anlegen sollen.
+	AI_Output(self, hero, "Info_Mod_Sylvio_AtStonehenge_09_00"); //You here? Damn it, where's my key and my slogan.
+	AI_Output(self, hero, "Info_Mod_Sylvio_AtStonehenge_09_01"); //(To the hero) Well, it looks like I'm gonna have to take your key. You shouldn't have messed with me.
 
 	AI_StopProcessInfos	(self);
 

@@ -180,7 +180,7 @@ FUNC VOID B_SAATBLUTKULT_S1()
 		Wld_SpawnNpcRange	(hero, Zombie02, 1, 500);
 		Wld_SpawnNpcRange	(hero, DemonEchse_BK, 1, 500);
 
-		PrintScreen	("Zähne des Erzdämons gesät", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Teeth of the arch daemon sown", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -188,7 +188,7 @@ FUNC VOID USEDUENGER_S1()
 {
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(hero))
 	{
-		PrintScreen	("Dünger verteilt", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Fertilizer distributed", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 
 		Npc_RemoveInvItems	(hero, ItMi_DuengerPaket, 1);
 	};
@@ -205,7 +205,7 @@ FUNC VOID B_Schatzgraben_01_S1()
 
 		Schatz_Greg_01 = TRUE;
 
-		PrintScreen	("Sextant gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Sextant found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -220,7 +220,7 @@ FUNC VOID B_Schatzgraben_02_S1()
 
 		Schatz_Greg_02 = TRUE;
 
-		PrintScreen	("Juwelen Schatulle gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Jewels Casket found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -235,7 +235,7 @@ FUNC VOID B_Schatzgraben_03_S1()
 
 		Schatz_Greg_03 = TRUE;
 
-		PrintScreen	("Schwarze Perle gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Black pearl found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -250,7 +250,7 @@ FUNC VOID B_Schatzgraben_04_S1()
 
 		Schatz_Greg_04 = TRUE;
 
-		PrintScreen	("Piratensäbel gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Pirate sabers found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -265,7 +265,7 @@ FUNC VOID B_Schatzgraben_05_S1()
 
 		Schatz_Greg_05 = TRUE;
 
-		PrintScreen	("Runenstein gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rune found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -281,7 +281,7 @@ FUNC VOID B_Schatzgraben_Deppenhans_S1()
 
 		Schatz_Deppenhans = TRUE;
 
-		PrintScreen	("11 Goldbrocken und 5 Erzbrocken gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("11 pieces of gold and 5 pieces of ore found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -294,9 +294,9 @@ FUNC VOID B_Schatzgraben_OrkAmulett_S1()
 	{
 		CreateInvItems(hero, ItAm_MegaAmulett2, 1);
 
-		PrintScreen	("Amulett gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Amulet found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 
-		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Endlich habe ich das richtige Amulett. Ich sollte jetzt damit zu Dexter gehen.");
+		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Finally I have the right amulet. I should go with it to dexter now.");
 
 		Schatz_MegaAmulett = TRUE;
 	};
@@ -311,9 +311,9 @@ FUNC VOID B_Schatzgraben_GorNaKosh_S1()
 	{
 		CreateInvItems(hero, ItMi_GorNaKoshsBeutel2, 1);
 
-		PrintScreen	("Gor Na Koshs Lederbeutel gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Gor Na Koshs leather bag found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 
-		B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Ich habe Gor Na Koshs Beutel.");
+		B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "I got Gor Na Kosh's purse.");
 	};
 };
 
@@ -324,7 +324,7 @@ FUNC VOID B_Grabraub_01_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 1);
 		CreateInvItems(hero, ItMi_SilverRing, 1);
 
-		PrintScreen	("Rostiges Schwert und Silberring gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword and silver ring found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -335,7 +335,7 @@ FUNC VOID B_Grabraub_02_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 1);
 		CreateInvItems(hero, ItMi_OldCoin, 4);
 
-		PrintScreen	("Rostiges Schwert und 4 alte Münzen gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword and 4 old coins found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -346,7 +346,7 @@ FUNC VOID B_Grabraub_03_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 1);
 		CreateInvItems(hero, ItAt_SkeletonBone, 1);
 
-		PrintScreen	("Rostiges Schwert und Knochen eines Skelettes gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword and bone of a skeleton found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -358,7 +358,7 @@ FUNC VOID B_Grabraub_04_S1()
 		CreateInvItems(hero, ItMi_SilverRing, 2);
 		CreateInvItems(hero, ItMi_Gold, 14);
 
-		PrintScreen	("Rostiges Schwert, 2 Silberringe und 14 Gold gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword, 2 silver rings and 14 gold found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -369,7 +369,7 @@ FUNC VOID B_Grabraub_05_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 1);
 		CreateInvItems(hero, ItAt_SkeletonBone, 2);
 
-		PrintScreen	("Rostiges Schwert und 2 Knochen eines Skelettes gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword and 2 bones of a skeleton found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -380,7 +380,7 @@ FUNC VOID B_Grabraub_06_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 1);
 		CreateInvItems(hero, ItMi_Gold, 121);
 
-		PrintScreen	("Rostiges Schwert und 121 Gold gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword and 121 gold found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -390,7 +390,7 @@ FUNC VOID B_Grabraub_07_S1()
 	{
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 3);
 
-		PrintScreen	("3 Rostige Schwerter gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("3 rusty swords found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -400,7 +400,7 @@ FUNC VOID B_Grabraub_08_S1()
 	{
 		CreateInvItems(hero, ItMi_GoldRing, 1);
 
-		PrintScreen	("Goldring gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Gold ring found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -412,7 +412,7 @@ FUNC VOID B_Grabraub_09_S1()
 		CreateInvItems(hero, ItMi_JeweleryChest, 1);
 		CreateInvItems(hero, ItMi_OldCoin, 16);
 
-		PrintScreen	("Rostiges Schwert, Juwelen Schatulle und 16 alte Münzen gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword, jewel case and 16 old coins found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -423,7 +423,7 @@ FUNC VOID B_Grabraub_10_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 1);
 		CreateInvItems(hero, ItMi_SilverRing, 1);
 
-		PrintScreen	("Rostiges Schwert und Silberring gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword and silver ring found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -434,7 +434,7 @@ FUNC VOID B_Grabraub_11_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 1);
 		CreateInvItems(hero, ItMi_Nugget, 1);
 
-		PrintScreen	("Rostiges Schwert und Erz gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword and ore found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -445,7 +445,7 @@ FUNC VOID B_Grabraub_12_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 1);
 		CreateInvItems(hero, ItMi_SilverPlate, 1);
 
-		PrintScreen	("Rostiges Schwert und Silberteller gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword and silver plate found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -456,7 +456,7 @@ FUNC VOID B_Grabraub_13_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 1);
 		CreateInvItems(hero, ItMi_InnosStatue, 1);
 
-		PrintScreen	("Rostiges Schwert und Innos Statue gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("Rusty sword and statue of Inno found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 
@@ -467,7 +467,7 @@ FUNC VOID B_Grabraub_14_S1()
 		CreateInvItems(hero, ItMw_1h_MISC_Sword, 2);
 		CreateInvItems(hero, ItMi_SilverNecklace, 1);
 
-		PrintScreen	("2 Rostige Schwerter und Silberkette gefunden", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
+		PrintScreen	("2 Rusty swords and silver chain found", -1, YPOS_XPGained, FONT_ScreenSmall, 2);
 	};
 };
 

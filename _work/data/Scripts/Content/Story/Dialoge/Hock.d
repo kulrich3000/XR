@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Hock_NahkampfJG (C_INFO)
 	information	= Info_Mod_Hock_NahkampfJG_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Bist du Hock?";
+	description	= "Hello! Are you Hock?";
 };
 
 FUNC INT Info_Mod_Hock_NahkampfJG_Condition()
@@ -44,20 +44,20 @@ FUNC INT Info_Mod_Hock_NahkampfJG_Condition()
 
 FUNC VOID Info_Mod_Hock_NahkampfJG_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_00"); //Hallo! Bist du Hock?
-	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_01"); //Sicher bin ich das. Sieht man mir nicht an?
-	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_02"); //Anweisung von Cord. Du sollst ins Minental gehen und dich dort im Waldläuferlager melden.
-	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_03"); //Aha. Und wie finde ich das?
-	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_04"); //Warst du schon im Minental?
-	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_05"); //War mal bei Lee im Söldnerlager. Ist aber länger her.
-	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_06"); //Pass auf. Wenn du ins Tal kommst, hältst du dich rechts, immer an den Bergen lang Richtung Alte Mine.
-	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_07"); //Irgendwann siehst du dann einen Durchgang und ein gutes Stück weiter einen hölzernen Wachturm.
-	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_08"); //Da ist das Waldläuferlager. Am Eingang steht Torgan. Ihm sagst du, du seiest der neue Nahkämpfer.
-	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_09"); //So, bin ich das?
-	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_10"); //Klar, du wirst reichlich Spaß haben.
-	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_11"); //Na hoffentlich ...
+	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_00"); //Hello! Are you Hock?
+	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_01"); //Of course I am. Can't I be seen?
+	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_02"); //Instruction from Cord. I want you to go to the Minental valley and report to the Ranger camp.
+	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_03"); //Uh-huh. And how do I find that?
+	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_04"); //Have you been to the Minental?
+	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_05"); //Used to be with Lee at the mercenary camp. Been a while, though.
+	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_06"); //Watch it. When you enter the valley, keep to the right, always along the mountains towards Alte Mine.
+	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_07"); //At some point you will see a passageway and a little further on a wooden watchtower.
+	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_08"); //There's the Ranger camp. At the entrance is Torgan. Tell him you're the new melee fighter.
+	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_09"); //So, am I?
+	AI_Output(hero, self, "Info_Mod_Hock_NahkampfJG_15_10"); //Sure, you'll have a lot of fun.
+	AI_Output(self, hero, "Info_Mod_Hock_NahkampfJG_34_11"); //Well, hopefully...
 
-	B_LogEntry	(TOPIC_MOD_JG_NAHKAMPF, "Ich habe Hock als Kämpfer gewinnen können. Dafür muss Cyrco einen der Jäger zum Bauern Onar schicken.");
+	B_LogEntry	(TOPIC_MOD_JG_NAHKAMPF, "I could win Hock as a fighter. For this, Cyrco must send one of the hunters to the farmer Onar.");
 
 	B_StartOtherRoutine	(self, "WEG");
 };

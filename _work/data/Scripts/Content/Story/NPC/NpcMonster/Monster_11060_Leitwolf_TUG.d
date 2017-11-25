@@ -1,7 +1,7 @@
 INSTANCE Monster_11060_Leitwolf_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Leitwolf";	
+	name 		= "leader";	
 	guild 		= GIL_WOLF;
 	id 			= 11060;
 	voice 		= 6;

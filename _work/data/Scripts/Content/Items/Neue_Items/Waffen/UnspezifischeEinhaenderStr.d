@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_1h_Bau_Mace (C_Item)
 {	
-	name 				=	"Schwerer Ast";  
+	name 				=	"Heavy Branch";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_1h_Bau_Mace (C_Item)
 
 INSTANCE ItMw_Matronenkeule (C_Item)
 {	
-	name 				=	"Oberschenkelknochen";  
+	name 				=	"femur";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -56,7 +56,7 @@ INSTANCE ItMw_Matronenkeule (C_Item)
 
 INSTANCE ItMw_1H_quantarie_Schwert_01 (C_Item)
 {	
-	name 				=	"Schwert";
+	name 				=	"blade";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -80,7 +80,7 @@ INSTANCE ItMw_1H_quantarie_Schwert_01 (C_Item)
 };
 INSTANCE ItMw_1H_quantarie_Schwert_01_Geschaerft (C_Item)
 {	
-	name 				=	"Schwert (geschärft)";
+	name 				=	"Sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -107,7 +107,7 @@ INSTANCE ItMw_1H_quantarie_Schwert_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Eminem_AchillesSchwert_01 (C_Item)
 {
-	name 				=	"Edles Kurzschwert";
+	name 				=	"Precious Short Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -135,7 +135,7 @@ INSTANCE ItMw_1H_Eminem_AchillesSchwert_01 (C_Item)
 };
 INSTANCE ItMw_1H_Eminem_AchillesSchwert_01_Geschaerft (C_Item)
 {
-	name 				=	"Edles Kurzschwert (geschärft)";
+	name 				=	"Precious short sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -166,7 +166,7 @@ INSTANCE ItMw_1H_Eminem_AchillesSchwert_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_Bastardschwert (C_Item)
 {
-	name 				=	"Bastardschwert";
+	name 				=	"bastard sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -194,7 +194,7 @@ INSTANCE ItMw_Bastardschwert (C_Item)
 };
 INSTANCE ItMw_Bastardschwert_Geschaerft (C_Item)
 {
-	name 				=	"Bastardschwert (geschärft)";
+	name 				=	"Bastard Sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -225,7 +225,7 @@ INSTANCE ItMw_Bastardschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_quantarie_Fantasyschwert_01 (C_Item)
 {	
-	name 				=	"Edles Schwert";
+	name 				=	"Noble Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -252,7 +252,7 @@ INSTANCE ItMw_1H_quantarie_Fantasyschwert_01 (C_Item)
 };
 INSTANCE ItMw_1H_quantarie_Fantasyschwert_01_Geschaerft (C_Item)
 {	
-	name 				=	"Edles Schwert (geschärft)";
+	name 				=	"Noble sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -282,7 +282,7 @@ INSTANCE ItMw_1H_quantarie_Fantasyschwert_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_SharpSchwert (C_Item)
 {	
-	name 				=	"Scharfes Schwert";
+	name 				=	"Sharp sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -309,7 +309,7 @@ INSTANCE ItMw_SharpSchwert (C_Item)
 };
 INSTANCE ItMw_SharpSchwert_Geschaerft (C_Item)
 {	
-	name 				=	"Scharfes Schwert (geschärft)";
+	name 				=	"Sharp sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -339,7 +339,7 @@ INSTANCE ItMw_SharpSchwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Langschwert (C_Item)
 {	
-	name 				=	"Langschwert";
+	name 				=	"Longsword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -366,7 +366,7 @@ INSTANCE ItMw_Langschwert (C_Item)
 };
 INSTANCE ItMw_Langschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Langschwert (geschärft)";
+	name 				=	"Long sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -396,7 +396,7 @@ INSTANCE ItMw_Langschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Light (C_Item)
 {	
-	name 				=	"Edles Langschwert";
+	name 				=	"Fine Longsword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -423,7 +423,7 @@ INSTANCE ItMw_Light (C_Item)
 };
 INSTANCE ItMw_Light_Geschaerft (C_Item)
 {	
-	name 				=	"Edles Langschwert (geschärft)";
+	name 				=	"Precious long sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

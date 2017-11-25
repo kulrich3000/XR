@@ -1,7 +1,7 @@
 instance Mod_7441_Paladingeist_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Paladingeist";
+	name 		= "paladin spirit";
 	guild 		= GIL_NONE;
 	id 			= 7441;
 	voice 		= 13;

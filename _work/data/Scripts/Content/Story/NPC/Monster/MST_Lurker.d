@@ -127,7 +127,7 @@ INSTANCE Lurker_Young	(Mst_Default_Lurker)
 {
 	level = 8;
 
-	name = "Junger Lurker";
+	name = "Young Lurker";
 	
 	//----- Attributes ----
 	attribute	[ATR_STRENGTH]		=	40;
@@ -164,7 +164,7 @@ INSTANCE Lurker01	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Swamp	(Mst_Default_Lurker)
 {
-	name	=	"Sumpflurker";
+	name	=	"marshmallow";
 
 	B_SetVisuals_Lurker_Swamp();
 	Npc_SetToFistMode(self);
@@ -172,7 +172,7 @@ INSTANCE Lurker_Swamp	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Wiese	(Mst_Default_Lurker)
 {
-	name	=	"Wiesenlurker";
+	name	=	"meadow scorpion";
 
 	B_SetVisuals_Lurker_Wiese();
 	Npc_SetToFistMode(self);
@@ -180,7 +180,7 @@ INSTANCE Lurker_Wiese	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Strand	(Mst_Default_Lurker)
 {
-	name	=	"Strandlurker";
+	name	=	"sand lion";
 
 	B_SetVisuals_Lurker_Strand();
 	Npc_SetToFistMode(self);
@@ -188,7 +188,7 @@ INSTANCE Lurker_Strand	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Höhle	(Mst_Default_Lurker)
 {
-	name	=	"Höhlenlurker";
+	name	=	"cave warbler";
 
 	B_SetVisuals_Lurker_Höhle();
 	Npc_SetToFistMode(self);
@@ -196,7 +196,7 @@ INSTANCE Lurker_Höhle	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Wald	(Mst_Default_Lurker)
 {
-	name	=	"Waldlurker";
+	name	=	"woodurkers";
 
 	B_SetVisuals_Lurker_Wald();
 	Npc_SetToFistMode(self);

@@ -15,25 +15,25 @@ FUNC INT Info_Mod_Neku_Hi_Condition()
 
 FUNC VOID Info_Mod_Neku_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_00"); //Du willst im Sumpf die Foki einsetzen?
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_01"); //Ja, warum?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_02"); //Die beiden Fokusplätze sind extrem gefährlich.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_03"); //Der Nördlichere liegt vor einem alten Tempel. Der Südlichere liegt nahe einer Felswand im Herzen des Sumpfes.
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_04"); //Vor einem Verfluchten, von Dämonen belagerten, Zombies bewohnten und Geistern besessenen Tempel, nehme ich an?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_05"); //Ne, ein stinknormaler Tempel. Bis auf die Monster, die vor dem Tempel leben.
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_06"); //Was für Monster?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_07"); //Keine Ahnung. Ich habe sie nur von der Anhöhe gesehen.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_08"); //Aufrechtgehende Gestalten, Klingen in den Händen und Feuer in den Augen ...
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_09"); //Und was ist in der Mitte des Sumpfes so gefährliches?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_10"); //Das wüsste ich auch gerne.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_11"); //Silhouetten von seltsamen Gestalten tauchen zwischen den Bäumen auf und verschwinden wieder zwischen ihnen ... man könnte glauben, es sind die Bäume selbst, die wandern ...
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_12"); //Na gut, ich werde aufpassen, wenn ich rein gehe.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_13"); //Das wirst du nicht müssen.
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_14"); //Warum nicht?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_15"); //Du wirst nicht reinkommen. Die Monster, die bei dem Tempel leben, haben eine Barrikade und einen Wachtrupp am Eingang des Sumpfes aufgestellt.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_16"); //Die sehen nicht gerade nach einem Empfangskomitee aus. Naja, trotzdem viel Glück!
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_00"); //You want to use your focus in the swamp?
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_01"); //Yeah, why?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_02"); //The two focus points are extremely dangerous.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_03"); //The northern one is in front of an old temple. The southern one is situated near a rock face in the heart of the swamp.
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_04"); //In front of a cursed, demon besieged, zombies inhabited and spirit-obsessed temple, I suppose?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_05"); //No, a normal temple. Except for the monsters that live in front of the temple.
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_06"); //What kind of monsters?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_07"); //I don't know about that. I only saw them from the hill.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_08"); //Upright figures, blades in the hands and fire in the eyes....
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_09"); //And what's so dangerous in the middle of the swamp?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_10"); //I'd like to know that, too.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_11"); //Silhouettes of strange figures appear between the trees and disappear again between them... you might think it's the trees themselves that migrate....
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_12"); //All right, I'll be careful if I go in.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_13"); //You won't have to.
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_14"); //Why not?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_15"); //You're not coming in. The monsters living at the temple have a barricade and a guard at the entrance to the swamp.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_16"); //They don't look like a welcoming committee. Well, good luck anyway!
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Der Sumpf ist von einer Barrikade umgeben und der einzige Eingang wird von seltsamen Kriegern bewacht, die auch einen Tempel im Sumpf bei einem Fokusplatz bewachen. Der andere Fokusplatz im Sumpf wird von merkwürdigen Gestalten besiedelt, die wandernden Bäumen ähneln sollen. Mal sehen, wie ich dorthin komme ...");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "The swamp is surrounded by a barricade and the only entrance is guarded by strange warriors who also guard a temple in the swamp near a focus area. The other focal point in the swamp is populated by strange creatures who are supposed to resemble wandering trees. Let's see how I get there...");
 };
 
 INSTANCE Info_Mod_Neku_Giftdrache (C_INFO)
@@ -56,12 +56,12 @@ FUNC INT Info_Mod_Neku_Giftdrache_Condition()
 
 FUNC VOID Info_Mod_Neku_Giftdrache_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_00"); //Hey, warte! Wenn du in den Sumpf gehst würde ich aufpassen.
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_01"); //Wenn mich meine Augen nicht getrügt haben, sah ich eine Echse ...
-	AI_Output(hero, self, "Info_Mod_Neku_Giftdrache_15_02"); //(ungeduldig unterbricht) Ja, viele Echsenmenschen im Sumpf, das hatten wir glaube ich schon.
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_03"); //(ärgerlich) Hmpf, nein, so lass mich doch ausreden. Also, ich sah eine Echse vom Himmel herabsteigen, die war mindestens fünf Meter hoch.
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_04"); //Sie ist irgendwo südlich in der Nähe der Palisaden des Sumpfes gelandet.
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_05"); //Seitdem kommen bei ungünstigem Wind von dort immer wieder abscheuliche Dämpfe, die einem fast den Atem rauben.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_00"); //Hey, wait! If you went to the swamp, I'd watch out.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_01"); //If my eyes have not deceived me, I saw a lizard....
+	AI_Output(hero, self, "Info_Mod_Neku_Giftdrache_15_02"); //(impatiently interrupted) Yes, many lizardmen in the swamp, I think we have.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_03"); //Hmph, no, let me finish. So, I saw a lizard descending from the sky, at least five meters high.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_04"); //She landed somewhere south near the palisades of the swamp.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_05"); //Since then, in unfavourable winds, horrible vapours have been coming from there again and again, almost taking your breath away.
 };
 
 INSTANCE Info_Mod_Neku_Pickpocket (C_INFO)

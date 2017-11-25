@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Falin_Hi (C_INFO)
 	information	= Info_Mod_Falin_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Wer bist du und was machst du hier?";
+	description	= "Hello! Who are you and what are you doing here?";
 };
 
 FUNC INT Info_Mod_Falin_Hi_Condition()
@@ -16,20 +16,20 @@ FUNC INT Info_Mod_Falin_Hi_Condition()
 
 FUNC VOID Info_Mod_Falin_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_00"); //Hallo! Wer bist du und was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_01"); //Ich bin Falin und auf dem Weg ins alte Kloster der Verwandlungsmagier.
-	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_02"); //Und was lungerst du dann hier rum?
-	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_03"); //War neugierig. Wusste nicht, dass hier ein Lager ist.
-	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_04"); //Dies ist das Waldläuferlager. Der Druide Cyrco ist der Anführer. Wir suchen Nahkämpfer zur Verstärkung.
-	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_05"); //Ehrlich? Das könnte mir gefallen. Immer der selbe Trott bei uns. Wache schieben oder rumsitzen in der Höhle.
-	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_06"); //Da ist hier mehr los. Also willst du?
-	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_07"); //Ich muss erst dieses Paket ins Kloster zu Ferco bringen.
-	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_08"); //Weißt du was? Ich bring das rüber. Du gehst ins Lager. Sag der Torwache, du bist ein Neuer. Er wird dich zu Cyrco schicken.
-	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_09"); //Das wäre mir grad recht. Hier, das Paket.
+	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_00"); //Hello! Who are you and what are you doing here?
+	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_01"); //I am Falin and on my way to the old monastery of the transforming magicians.
+	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_02"); //Then what are you hanging around for?
+	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_03"); //I was curious. I didn't know there was a camp here.
+	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_04"); //This is the Ranger camp. The Druid Cyrco is the leader. We're looking for melee fighters to join us.
+	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_05"); //Honestly? I might like that. Always the same routine with us. Sitting on guard duty or sitting in the cave.
+	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_06"); //There's more action here. So you want to?
+	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_07"); //I have to take this package to the convent at Ferco.
+	AI_Output(hero, self, "Info_Mod_Falin_Hi_15_08"); //You know something? I'll take this over. You're going to camp. Tell the gatekeeper you're a new guy. He'll send you to Cyrco.
+	AI_Output(self, hero, "Info_Mod_Falin_Hi_07_09"); //That would be fine by me right now. Here's the package.
 
 	B_GiveInvItems	(self, hero, ItMi_PaketFalin, 1);
 
-	B_LogEntry	(TOPIC_MOD_JG_NAHKAMPF, "Möglicherweise habe ich schon einen Söldner gefunden, jetzt mal in Khorinis nachfragen. Ach ja. Und das Paket fürs Kloster der Verwandlungsmagier, welches ich bei Ferco abgeben soll ...");
+	B_LogEntry	(TOPIC_MOD_JG_NAHKAMPF, "Maybe I've already found a mercenary, so check with Khorinis. Oh, yeah. And the package for the monastery of the transforming mages, which I have to hand over to Ferco....");
 
 	AI_StopProcessInfos	(self);
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sterling_Buddler (C_INFO)
 	information	= Info_Mod_Sterling_Buddler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du Buddler?";
+	description	= "Are you Buddler?";
 };
 
 FUNC INT Info_Mod_Sterling_Buddler_Condition()
@@ -31,7 +31,7 @@ FUNC VOID Info_Mod_Sterling_Buddler_Info()
 	AI_Output(hero, self, "Info_Mod_Sterling_Buddler_15_09"); //Gut, was willst du haben? 
 	AI_Output(self, hero, "Info_Mod_Sterling_Buddler_02_10"); //Ich denke 200 Gold und fünf Laibe Brot reichen mir für den Anfang.
 
-	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Sterling arbeitet in der Mine, wenn ich für seine Reisekosten aufkomme. Er will 200 Gold und fünf Laibe Brot.");
+	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Sterling works in the mine when I pay for his travel expenses. He wants 200 gold and five loafs of bread.");
 };
 
 INSTANCE Info_Mod_Sterling_Buddler2 (C_INFO)
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_Sterling_Buddler2 (C_INFO)
 	information	= Info_Mod_Sterling_Buddler2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du die Sachen.";
+	description	= "Here's your stuff.";
 };
 
 FUNC INT Info_Mod_Sterling_Buddler2_Condition()
@@ -57,17 +57,17 @@ FUNC INT Info_Mod_Sterling_Buddler2_Condition()
 
 FUNC VOID Info_Mod_Sterling_Buddler2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sterling_Buddler2_15_00"); //Hier hast du die Sachen.
+	AI_Output(hero, self, "Info_Mod_Sterling_Buddler2_15_00"); //Here's your stuff.
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 200);
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 5);
 
-	B_ShowGivenThings	("200 Gold und 5 Brote gegeben");
+	B_ShowGivenThings	("200 gold and 5 breads added");
 
-	AI_Output(hero, self, "Info_Mod_Sterling_Buddler2_15_01"); //Warte einfach am Eingang der Mine auf mich.
-	AI_Output(self, hero, "Info_Mod_Sterling_Buddler2_02_02"); //Bin schon auf dem Weg.
+	AI_Output(hero, self, "Info_Mod_Sterling_Buddler2_15_01"); //Just wait for me at the mine entrance.
+	AI_Output(self, hero, "Info_Mod_Sterling_Buddler2_02_02"); //I'm on my way.
 
-	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Sterling ist auf dem Weg ins Minental.");
+	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Sterling's on his way to the Minental.");
 
 	B_GivePlayerXP	(50);
 

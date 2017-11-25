@@ -18,12 +18,12 @@ FUNC INT Info_Mod_HalbinfernalischerRandolph_Hi_Condition()
 
 FUNC VOID Info_Mod_HalbinfernalischerRandolph_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_00"); //Wen haben wir denn hier.
-	AI_Output(hero, self, "Info_Mod_HalbinfernalischerRandolph_Hi_15_01"); //Randolph bist du es?
-	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_02"); //Randolph? Sprichst du von diesem armseligen Landarbeiter? Nein, er war einmal.
-	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_03"); //Durch die Macht meines neuen Gebieters ist aus ihm mehr erwachsen.
-	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_04"); //Ein machtvolles Werkzeug, das seinem Meister helfen wird, in nicht allzu ferner Zeit den Platz einzunehmen, der ihm gebührt.
-	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_05"); //Und zum guten Anfang werde ich mit meinen Dämonen diesen Landstrich hier unterwerfen.
+	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_00"); //Who do we have here?
+	AI_Output(hero, self, "Info_Mod_HalbinfernalischerRandolph_Hi_15_01"); //Randolph, is that you?
+	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_02"); //Randolph? Are you talking about that miserable farmhand? No, he was once.
+	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_03"); //Through the power of my new lord, more has grown out of him.
+	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_04"); //A powerful tool that will help his Master to take the place he deserves in the not too distant future.
+	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Hi_06_05"); //And for a good start, I and my demons will subdue this stretch of land here.
 };
 
 INSTANCE Info_Mod_HalbinfernalischerRandolph_Kill (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_HalbinfernalischerRandolph_Kill (C_INFO)
 	information	= Info_Mod_HalbinfernalischerRandolph_Kill_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nicht, wenn ich es verhindern kann, du Ausgeburt eines Dämonen.";
+	description	= "Not if I can help it, you spawn of a demon.";
 };
 
 FUNC INT Info_Mod_HalbinfernalischerRandolph_Kill_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Mod_HalbinfernalischerRandolph_Kill_Condition()
 
 FUNC VOID Info_Mod_HalbinfernalischerRandolph_Kill_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HalbinfernalischerRandolph_Kill_15_00"); //Nicht, wenn ich es verhindern kann, du Ausgeburt eines Dämonen.
-	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Kill_06_01"); //Wuahaha, eilig hast du es den Tod zu erleiden. Komm her. Ich reiße dich in Stücke.
+	AI_Output(hero, self, "Info_Mod_HalbinfernalischerRandolph_Kill_15_00"); //Not if I can help it, you spawn of a demon.
+	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_Kill_06_01"); //Wuahahaha, you're in a hurry to die. Come here. I'll tear you apart.
 
 	AI_StopProcessInfos	(self);
 
@@ -75,7 +75,7 @@ FUNC INT Info_Mod_HalbinfernalischerRandolph_SecondChance_Condition()
 
 FUNC VOID Info_Mod_HalbinfernalischerRandolph_SecondChance_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_SecondChance_06_00"); //Du Narr. Du hättest mich töten sollen, als du die Gelegenheit dazu hattest. Damit hast du deinen Untergang besiegelt.
+	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_SecondChance_06_00"); //You fool. You should have killed me when you had the chance. That's how you sealed your downfall.
 
 	AI_StopProcessInfos	(self);
 
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_HalbinfernalischerRandolph_GoodOne (C_INFO)
 	information	= Info_Mod_HalbinfernalischerRandolph_GoodOne_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du dir sicher, dass nicht ein Teil des guten (...)";
+	description	= "Are you sure that not a part of the good (... )";
 };
 
 FUNC INT Info_Mod_HalbinfernalischerRandolph_GoodOne_Condition()
@@ -103,12 +103,12 @@ FUNC INT Info_Mod_HalbinfernalischerRandolph_GoodOne_Condition()
 
 FUNC VOID Info_Mod_HalbinfernalischerRandolph_GoodOne_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HalbinfernalischerRandolph_GoodOne_15_00"); //Bist du dir sicher, dass nicht ein Teil des guten, alten Randolphs immer noch in dir existiert?
-	AI_Output(hero, self, "Info_Mod_HalbinfernalischerRandolph_GoodOne_15_01"); //Besinne dich, wer du bist, der schönen Tage auf dem Hof, der Werke des Guten, die du verrichtet hast und nicht dieser hier, der Zerstörung.
-	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_GoodOne_06_02"); //Buah, sei still du einfältiger Narr und mach, dass du weg kommst! Dieses Mal will ich dich noch verschonen.
-	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_GoodOne_06_03"); //Aber bei unserer nächsten Begegnung werde ich dich erbarmungslos in Stücke hauen.
+	AI_Output(hero, self, "Info_Mod_HalbinfernalischerRandolph_GoodOne_15_00"); //Are you sure there's not a part of good old Randolph still in you?
+	AI_Output(hero, self, "Info_Mod_HalbinfernalischerRandolph_GoodOne_15_01"); //Remember who you are, the beautiful days in the court, the works of the good that you have done and not this one, the destruction.
+	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_GoodOne_06_02"); //Be quiet, you stupid fool and get the hell out of here! This time I will spare you.
+	AI_Output(self, hero, "Info_Mod_HalbinfernalischerRandolph_GoodOne_06_03"); //But the next time we meet, I'll cut you to shreds.
 
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Randolph scheint jetzt endgültig von dämonischen Mächten verzehrt. Vielleicht weiß Xardas Rat ... sonst werde ich ihn wohl töten müssen.");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Randolph now seems once and for all consumed by demonic powers. Maybe Xarda's advice... or I'll have to kill him.");
 
 	AI_StopProcessInfos	(self);
 };

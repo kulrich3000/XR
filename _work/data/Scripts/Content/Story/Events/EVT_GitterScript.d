@@ -179,7 +179,7 @@ FUNC VOID EVT_STEINSCRIPT05_S0 ()
 
 				if (Mod_JG_Raetselstein_Counter == 4)
 				{
-					B_LogEntry	(TOPIC_MOD_JG_RAETSELWAND, "Geschafft! Jetzt in die letzte Kammer ...");
+					B_LogEntry	(TOPIC_MOD_JG_RAETSELWAND, "We did it! Now into the last chamber...");
 					B_SetTopicStatus	(TOPIC_MOD_JG_RAETSELWAND, LOG_SUCCESS);
 
 					B_GivePlayerXP	(250);
@@ -216,7 +216,7 @@ FUNC VOID EVT_STEINSCRIPT05_S1 ()
 
 				if (Mod_JG_Raetselstein_Counter == 4)
 				{
-					B_LogEntry	(TOPIC_MOD_JG_RAETSELWAND, "Geschafft! Jetzt in die letzte Kammer ...");
+					B_LogEntry	(TOPIC_MOD_JG_RAETSELWAND, "We did it! Now into the last chamber...");
 					B_SetTopicStatus	(TOPIC_MOD_JG_RAETSELWAND, LOG_SUCCESS);
 
 					B_GivePlayerXP	(250);

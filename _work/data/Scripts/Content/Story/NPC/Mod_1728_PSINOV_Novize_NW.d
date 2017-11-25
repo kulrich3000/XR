@@ -1,7 +1,7 @@
 instance Mod_1728_PSINOV_Novize_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Fanatischer Templer";
+	name 		=		"Fanatical Templar";
 	Npctype 		=		Npctype_nw_sumpfnovize;
 	guild 		=		GIL_strf;
 	level 		=		3;

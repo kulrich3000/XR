@@ -1,7 +1,7 @@
 INSTANCE Mod_7783_OUT_Schmuggler_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Schmuggler"; 
+	name 		= "smugglers"; 
 	guild 		= GIL_OUT;
 	id 			= 7783;
 	voice 		= 9;

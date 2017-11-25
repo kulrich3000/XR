@@ -18,11 +18,11 @@ FUNC INT Info_Mod_Lee_GDG_Hi_Condition()
 
 FUNC VOID Info_Mod_Lee_GDG_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lee_GDG_Hi_04_00"); //Thofeistos hat mir das hier noch für dich mitgegeben.
+	AI_Output(self, hero, "Info_Mod_Lee_GDG_Hi_04_00"); //Thofeistos gave me this for you.
 
 	B_GiveInvItems	(self, hero, ItAr_DJG_H, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lee_GDG_Hi_04_01"); //Hoffentlich hält die Rüstung, was sie verspricht.
+	AI_Output(self, hero, "Info_Mod_Lee_GDG_Hi_04_01"); //Let's hope the armour keeps its promise.
 };
 
 INSTANCE Info_Mod_Lee_GDG_EXIT (C_INFO)

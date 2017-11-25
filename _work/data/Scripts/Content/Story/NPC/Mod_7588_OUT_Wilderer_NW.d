@@ -2,7 +2,7 @@ instance Mod_7588_OUT_Wilderer_NW (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Wilderer";
+	name =					"poachers";
 	Npctype =				NPCTYPE_MAIN;
 	guild =					GIL_STRF;       
 	level =					16;

@@ -1,7 +1,7 @@
 INSTANCE Mod_7728_OUT_Willingham_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kommander Willingham";	
+	name 		= "Commander Willingham";	
 	guild 		= GIL_OUT;
 	id 			= 7728;
 	voice 		= 8;

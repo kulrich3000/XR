@@ -1,6 +1,6 @@
 INSTANCE Minenzwerg_02	(Npc_Default)
 {
-	name	=	"Minenzwerg";
+	name	=	"mine gnome";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_GREEN;
 	id = 7208;

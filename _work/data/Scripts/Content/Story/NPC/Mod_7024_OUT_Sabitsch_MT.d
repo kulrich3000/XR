@@ -1,7 +1,7 @@
 instance Mod_7024_OUT_Sabitsch_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Sabitsch";
+	name 		= "Sabich";
 	guild 		= GIL_OUT;
 	id 			= 7024;
 	voice 		= 4;

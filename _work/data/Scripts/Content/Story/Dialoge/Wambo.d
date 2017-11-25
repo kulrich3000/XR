@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Wambo_Hi (C_INFO)
 	information	= Info_Mod_Wambo_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist der Ausbilder hier, stimmt's?";
+	description	= "You're the instructor here, right?";
 };
 
 FUNC INT Info_Mod_Wambo_Hi_Condition()
@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Wambo_Hi_Condition()
 
 FUNC VOID Info_Mod_Wambo_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wambo_Hi_15_00"); //Du bist der Ausbilder hier, stimmt's?
-	AI_Output(self, hero, "Info_Mod_Wambo_Hi_03_01"); //Richtig. Die Rekruten lernen bei mir das Nötigste im Umgang mit Ein- und Zweihändern.
+	AI_Output(hero, self, "Info_Mod_Wambo_Hi_15_00"); //You're the instructor here, right?
+	AI_Output(self, hero, "Info_Mod_Wambo_Hi_03_01"); //Right. The recruits learn the basics of one- and two-handedness with me.
 
 	if (Mod_Schwierigkeit != 4)
 	{
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Wambo kann mir den Umgang mit Einhändern und Zweihändern beibringen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Wambo can teach me how to handle one-handed and two-handed people.");
 	};
 };
 
@@ -47,10 +47,10 @@ FUNC INT Info_Mod_Wambo_AndreVermaechtnis_Condition()
 
 FUNC VOID Info_Mod_Wambo_AndreVermaechtnis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wambo_AndreVermaechtnis_03_00"); //Ha, so bekommt das Verbrecherpack also doch noch sein gerechtes Urteil.
-	AI_Output(self, hero, "Info_Mod_Wambo_AndreVermaechtnis_03_01"); //Und die Jungs konnten endlich mal sehen, wofür der Stahl eigentlich da ist.
+	AI_Output(self, hero, "Info_Mod_Wambo_AndreVermaechtnis_03_00"); //Huh, that's how the criminal pack still gets its fair verdict.
+	AI_Output(self, hero, "Info_Mod_Wambo_AndreVermaechtnis_03_01"); //And the boys could finally see what the steel is for.
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_DIEBESGILDE, "Ich kann Hagen ausrichten, dass die Diebe erledigt sind.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_DIEBESGILDE, "I can tell Hagen that the thieves are finished.");
 
 	AI_StopProcessInfos	(self);
 
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Wambo_Asylanten (C_INFO)
 	information	= Info_Mod_Wambo_Asylanten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss zurück ins Minental.";
+	description	= "I have to get back to the Minental.";
 };
 
 FUNC INT Info_Mod_Wambo_Asylanten_Condition()
@@ -85,17 +85,17 @@ FUNC INT Info_Mod_Wambo_Asylanten_Condition()
 
 FUNC VOID Info_Mod_Wambo_Asylanten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wambo_Asylanten_15_00"); //Ich muss zurück ins Minental.
-	AI_Output(self, hero, "Info_Mod_Wambo_Asylanten_03_01"); //Wenn du Angar siehst, gib ihm das hier. Das ist alles, was ich von seiner Frau finden konnte.
+	AI_Output(hero, self, "Info_Mod_Wambo_Asylanten_15_00"); //I have to get back to the Minental.
+	AI_Output(self, hero, "Info_Mod_Wambo_Asylanten_03_01"); //If you see Angar, give him this. That's all I could find of his wife.
 
 	B_GiveInvItems	(self, hero, ItMi_AngarHalskette, 1);
 
-	AI_Output(hero, self, "Info_Mod_Wambo_Asylanten_15_02"); //Mach ich.
-	AI_Output(self, hero, "Info_Mod_Wambo_Asylanten_03_03"); //Bis dann.
+	AI_Output(hero, self, "Info_Mod_Wambo_Asylanten_15_02"); //All right, I will.
+	AI_Output(self, hero, "Info_Mod_Wambo_Asylanten_03_03"); //See you around.
 
 	Log_CreateTopic	(TOPIC_MOD_WAMBO_ANGAR, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_WAMBO_ANGAR, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_WAMBO_ANGAR, "Wambo hat mir eine Halskette für Angar mitgegeben, die ihn an seine Frau erinnern soll.");
+	B_LogEntry	(TOPIC_MOD_WAMBO_ANGAR, "Wambo gave me a necklace for Angar to remind him of his wife.");
 };
 
 INSTANCE Info_Mod_Wambo_Angar (C_INFO)
@@ -106,7 +106,7 @@ INSTANCE Info_Mod_Wambo_Angar (C_INFO)
 	information	= Info_Mod_Wambo_Angar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Angar hat die Kette erhalten.";
+	description	= "Angar got the necklace.";
 };
 
 FUNC INT Info_Mod_Wambo_Angar_Condition()
@@ -119,11 +119,11 @@ FUNC INT Info_Mod_Wambo_Angar_Condition()
 
 FUNC VOID Info_Mod_Wambo_Angar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wambo_Angar_15_00"); //Angar hat die Kette erhalten.
-	AI_Output(self, hero, "Info_Mod_Wambo_Angar_03_01"); //Und? Was hat er gesagt?
-	AI_Output(hero, self, "Info_Mod_Wambo_Angar_15_02"); //Er war niedergeschlagen, wie zu erwarten. Aber er scheint dich nicht verantwortlich zu machen.
-	AI_Output(self, hero, "Info_Mod_Wambo_Angar_03_03"); //(erleichtert) Ich muss ihn unbedingt mal wieder sehen.
-	AI_Output(self, hero, "Info_Mod_Wambo_Angar_03_04"); //Hoffentlich schafft er es irgendwann zurück hierher.
+	AI_Output(hero, self, "Info_Mod_Wambo_Angar_15_00"); //Angar got the necklace.
+	AI_Output(self, hero, "Info_Mod_Wambo_Angar_03_01"); //And? What did he say?
+	AI_Output(hero, self, "Info_Mod_Wambo_Angar_15_02"); //He was depressed, as expected. But he doesn't seem to hold you responsible.
+	AI_Output(self, hero, "Info_Mod_Wambo_Angar_03_03"); //I have to see him sometime.
+	AI_Output(self, hero, "Info_Mod_Wambo_Angar_03_04"); //I hope he makes it back here someday.
 };
 
 INSTANCE Info_Mod_Wambo_TurnierSieg (C_INFO)
@@ -146,8 +146,8 @@ FUNC INT Info_Mod_Wambo_TurnierSieg_Condition()
 
 FUNC VOID Info_Mod_Wambo_TurnierSieg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wambo_TurnierSieg_03_00"); //Du bist ein zäher Hund, wenn du selbst gegen Gidan bestehst.
-	AI_Output(self, hero, "Info_Mod_Wambo_TurnierSieg_03_01"); //So einen wie dich brauchen wir hier.
+	AI_Output(self, hero, "Info_Mod_Wambo_TurnierSieg_03_00"); //You're a tough dog if you stand up to Gidan yourself.
+	AI_Output(self, hero, "Info_Mod_Wambo_TurnierSieg_03_01"); //We need someone like you here.
 
 	AI_StopProcessInfos	(self);
 };
@@ -172,8 +172,8 @@ FUNC INT Info_Mod_Wambo_TurnierNiederlage_Condition()
 
 FUNC VOID Info_Mod_Wambo_TurnierNiederlage_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wambo_TurnierNiederlage_03_00"); //Deine Kampftechnik könnte noch etwas Feinschliff vertragen.
-	AI_Output(self, hero, "Info_Mod_Wambo_TurnierNiederlage_03_01"); //Ich kann dir da sicher noch etwas zeigen.
+	AI_Output(self, hero, "Info_Mod_Wambo_TurnierNiederlage_03_00"); //Your fighting technique could use a little fine-tuning.
+	AI_Output(self, hero, "Info_Mod_Wambo_TurnierNiederlage_03_01"); //I can certainly show you something else.
 
 	AI_StopProcessInfos	(self);
 };
@@ -198,8 +198,8 @@ FUNC INT Info_Mod_Wambo_Paladin_Condition()
 
 FUNC VOID Info_Mod_Wambo_Paladin_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wambo_Paladin_03_00"); //Sieh an, ein Paladin bist du mittlerweile.
-	AI_Output(self, hero, "Info_Mod_Wambo_Paladin_03_01"); //Ich kann mich nicht erinnern, dass mal jemand schneller als du aufgestiegen ist.
+	AI_Output(self, hero, "Info_Mod_Wambo_Paladin_03_00"); //Well, you're a paladin now.
+	AI_Output(self, hero, "Info_Mod_Wambo_Paladin_03_01"); //I don't remember anyone rising faster than you.
 
 	AI_StopProcessInfos	(self);
 };
@@ -224,10 +224,10 @@ FUNC INT Info_Mod_Wambo_Hauptmann_Condition()
 
 FUNC VOID Info_Mod_Wambo_Hauptmann_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wambo_Hauptmann_03_00"); //Dass ich jetzt auf dich hören soll, muss ich mir noch angewöhnen.
-	AI_Output(hero, self, "Info_Mod_Wambo_Hauptmann_15_01"); //(ernst) 60 Liegestütze für diese blöde Anmache!
-	AI_Output(self, hero, "Info_Mod_Wambo_Hauptmann_03_02"); //(zackig) Zu Befehl, Sir!
-	AI_Output(hero, self, "Info_Mod_Wambo_Hauptmann_15_03"); //Klappt doch schon ganz gut.
+	AI_Output(self, hero, "Info_Mod_Wambo_Hauptmann_03_00"); //I have to get used to hearing you now.
+	AI_Output(hero, self, "Info_Mod_Wambo_Hauptmann_15_01"); //60 push-ups for that stupid pickup line!
+	AI_Output(self, hero, "Info_Mod_Wambo_Hauptmann_03_02"); //Yes, sir!
+	AI_Output(hero, self, "Info_Mod_Wambo_Hauptmann_15_03"); //It's working already.
 
 	AI_StopProcessInfos	(self);
 };
@@ -240,7 +240,7 @@ INSTANCE Info_Mod_Wambo_Lehrer (C_INFO)
 	information	= Info_Mod_Wambo_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Wambo_Lehrer_Condition()
@@ -255,62 +255,62 @@ FUNC VOID Info_Mod_Wambo_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_03_01"); //Du kommst doch aus dem Minental, oder?
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_03_01"); //You're from the Minental, aren't you?
 
 	Info_ClearChoices	(Info_Mod_Wambo_Lehrer);
 
-	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "Nein. Ich bin nur neu hier.", Info_Mod_Wambo_Lehrer_B);
-	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "Ja.", Info_Mod_Wambo_Lehrer_A);
+	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "No. I'm just new here.", Info_Mod_Wambo_Lehrer_B);
+	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "Yeah.", Info_Mod_Wambo_Lehrer_A);
 };
 
 FUNC VOID Info_Mod_Wambo_Lehrer_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_B_15_00"); //Nein. Ich bin nur neu hier.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_B_03_01"); //Verstehe. Wenn du nicht bei der Miliz bist und ich dich unterrichten soll, kostet es dich 50 Goldstücke.
+	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_B_15_00"); //No. I'm just new here.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_B_03_01"); //I see. If you're not with the militia and I'm supposed to teach you, it'll cost you 50 pieces of gold.
 
 	Info_ClearChoices	(Info_Mod_Wambo_Lehrer);
 };
 
 FUNC VOID Info_Mod_Wambo_Lehrer_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_A_15_00"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_A_03_01"); //Dann werde ich dich unterrichten, wenn du es wünschst.
-	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_A_15_02"); //(verblüfft) Wie komme ich zu der Ehre?
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_A_03_03"); //Das ist eine lange Geschichte.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_A_03_04"); //Ich fühle mich verpflichtet, den Häftlingen so gut es geht zu helfen.
+	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_A_15_00"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_A_03_01"); //Then I will teach you if you wish.
+	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_A_15_02"); //How do I get the honour?
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_A_03_03"); //It's a long story.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_A_03_04"); //I feel obliged to help the detainees as best I can.
 
 	Mod_Wambo_Freund = 1;
 
 	Info_ClearChoices	(Info_Mod_Wambo_Lehrer);
 
-	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "Na gut. Aber zeig mir lieber, wie man kämpft.", Info_Mod_Wambo_Lehrer_D);
-	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "Was ist das für eine Geschichte?", Info_Mod_Wambo_Lehrer_C);
+	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "All right, all right. But you better show me how to fight.", Info_Mod_Wambo_Lehrer_D);
+	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "What is this story?", Info_Mod_Wambo_Lehrer_C);
 };
 
 FUNC VOID Info_Mod_Wambo_Lehrer_D()
 {
-	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_D_15_00"); //Na gut. Aber zeig mir lieber, wie man kämpft.
+	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_D_15_00"); //All right, all right. But you better show me how to fight.
 
 	Info_ClearChoices	(Info_Mod_Wambo_Lehrer);
 };
 
 FUNC VOID Info_Mod_Wambo_Lehrer_C()
 {
-	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_C_15_00"); //Was ist das für eine Geschichte?
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_01"); //Ich hatte einst einen guten Freund.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_02"); //Er war ein Kämpfer, nicht nur auf dem Übungsplatz, sondern in seinem Herzen.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_03"); //Er pflegte jedoch schon lange Kontakt zu einer falschgläubigen Sekte, deren Glaubensinhalt irgendetwas mit Piraten zu tun hatte.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_04"); //Nachdem die Barriere geschaffen worden war, galt das plötzlich als Verbrechen, und so wurde er verurteilt, dort zu schuften.
-	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_C_15_05"); //Hatte dein Freund einen Namen?
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_06"); //Angar hieß er.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_07"); //Ich versprach ihm, auf seine Frau aufzupassen für die Zeit, in der gefangen war.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_08"); //Wenn ich meine Zusage eingehalten hätte, wäre sie vielleicht noch am Leben.
+	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_C_15_00"); //What is this story?
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_01"); //I had a good friend once.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_02"); //He was a fighter, not only at the practice area, but in his heart.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_03"); //However, he had long been in contact with a misbelieving sect whose content of faith had something to do with pirates.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_04"); //After the barrier had been created, it was suddenly considered a crime, and so he was condemned to slave away there.
+	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_C_15_05"); //Did your friend have a name?
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_06"); //Angar was his name.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_07"); //I promised him I'd look after his wife for the time he was imprisoned.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_08"); //If I kept my promise, she might still be alive.
 	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_C_15_09"); //Oh.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_10"); //Ich weiß, unter welchen Umständen manche der Häftlinge zu Verbrechern gemacht wurden.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_11"); //Wenn ich schon nichts aktiv dagegen unternommen habe, so will ich jetzt doch meinen Teil dazu beitragen, sie wieder in unsere Gemeinschaft aufzunehmen.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_12"); //Solltest du jemals in das Minental zurückkehren, so wäre ich dir dankbar, wenn du mir vorher Bescheid sagen würdest.
-	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_C_15_13"); //Kein Problem.
-	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_14"); //Dann lass uns jetzt auf deinen ursprünglichen Willen zurückkommen.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_10"); //I know the circumstances under which some of the detainees were turned into criminals.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_11"); //While I have not actively done anything about it, I want to do my part in helping to bring it back into our community.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_12"); //If you should ever return to the Minental, I would be grateful if you would let me know in advance.
+	AI_Output(hero, self, "Info_Mod_Wambo_Lehrer_C_15_13"); //No problem.
+	AI_Output(self, hero, "Info_Mod_Wambo_Lehrer_C_03_14"); //Then let us now return to your original will.
 
 	Info_ClearChoices	(Info_Mod_Wambo_Lehrer);
 };
@@ -323,7 +323,7 @@ INSTANCE Info_Mod_Wambo_Lernen (C_INFO)
 	information	= Info_Mod_Wambo_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den Umgang mit Ein- und Zweihändern.";
+	description	= "Teach me how to handle one- and two-handed people.";
 };
 
 FUNC INT Info_Mod_Wambo_Lernen_Condition()
@@ -337,7 +337,7 @@ FUNC INT Info_Mod_Wambo_Lernen_Condition()
 
 FUNC VOID Info_Mod_Wambo_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wambo_Lernen_15_00"); //Lehre mich den Umgang mit Ein- und Zweihändern.
+	AI_Output(hero, self, "Info_Mod_Wambo_Lernen_15_00"); //Teach me how to handle one- and two-handed people.
 
 	if (Mod_Wambo_Freund == 0)
 	{
@@ -357,7 +357,7 @@ FUNC VOID Info_Mod_Wambo_Lernen_Info()
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Wambo_Lernen_03_00"); //Ohne das Gold werde ich dich nicht trainieren.
+			AI_Output(self, hero, "Info_Mod_Wambo_Lernen_03_00"); //Without the gold, I won't train you.
 		};
 	}
 	else

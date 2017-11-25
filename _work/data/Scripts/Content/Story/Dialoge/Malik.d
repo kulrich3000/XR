@@ -18,20 +18,20 @@ FUNC INT Info_Mod_Malik_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Malik_Aufgabe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_00"); //Aha, der Neue! Auf Stimmenfang, höre ich.
-	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_01"); //Du sagst es. Was kostet deine?
-	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_02"); //Eine Gefälligkeit. Nur eine  kleine Gefälligkeit.
-	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_03"); //Und die wäre?
-	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_04"); //Man wird alt. Man schläft schlecht auf den harten Betten. Ich brauche was Weiches unter den Kopf.
-	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_05"); //Wie wäre es mit einem Fell vom Schaf?
-	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_06"); //Nein, nein. Das wird hart und stinkt. Was warmes, weiches, sauberes soll es schon sein.
-	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_07"); //Dann werde ich mal die Händler abklappern.
-	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_08"); //Am Besten die in Khorata. Die sollen doch so fortschrittlich sein, sagt man.
-	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_09"); //Gute Idee. Bis später.
+	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_00"); //Aha, the new guy! To vote catching, I hear.
+	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_01"); //You say it. How much is yours?
+	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_02"); //A courtesy. Just a little kindness.
+	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_03"); //And what's that?
+	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_04"); //You get old. You don't sleep well on the hard beds. I need something soft under my head.
+	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_05"); //How about a coat from the sheep?
+	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_06"); //No, no, no. It's gonna be hard and stinking. It's supposed to be something warm, soft and clean.
+	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_07"); //I'll check the dealers.
+	AI_Output(self, hero, "Info_Mod_Malik_Aufgabe_13_08"); //Best of all, Khorata. They're supposed to be so advanced, they say.
+	AI_Output(hero, self, "Info_Mod_Malik_Aufgabe_15_09"); //Good idea. See you later.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_KISSEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_KISSEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Was Weiches für den Kopf! Was es alles gibt. Ich denke, ich frage erst mal Matteo, der ist wohl der beste Händler im Ort. Ansonsten werde ich mich in Khorata umsehen müssen.");
+	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Something soft for the head! What there is. I think I'll ask Matteo first of all, he's probably the best dealer in town. Otherwise, I'll have to look around Khorata.");
 };
 
 INSTANCE Info_Mod_Malik_Kissen (C_INFO)
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_Malik_Kissen (C_INFO)
 	information	= Info_Mod_Malik_Kissen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, dein Weiches für den Kopf.";
+	description	= "Here's your soft one for the head.";
 };
 
 FUNC INT Info_Mod_Malik_Kissen_Condition()
@@ -56,12 +56,12 @@ FUNC INT Info_Mod_Malik_Kissen_Condition()
 
 FUNC VOID Info_Mod_Malik_Kissen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Malik_Kissen_15_00"); //Hier, dein Weiches für den Kopf.
+	AI_Output(hero, self, "Info_Mod_Malik_Kissen_15_00"); //Here's your soft one for the head.
 
 	B_GiveInvItems	(hero, self, ItMi_Kissen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Malik_Kissen_13_01"); //Was ist denn das? Ein lila Viereck.
-	AI_Output(hero, self, "Info_Mod_Malik_Kissen_15_02"); //Leg dich hin und mach es unter deinen Kopf.
+	AI_Output(self, hero, "Info_Mod_Malik_Kissen_13_01"); //What the hell is that? Purple square.
+	AI_Output(hero, self, "Info_Mod_Malik_Kissen_15_02"); //Lie down and do it under your head.
 
 	AI_GotoWP	(self, "WP_ASSASSINE_31");
 
@@ -70,13 +70,13 @@ FUNC VOID Info_Mod_Malik_Kissen_Info()
 
 	AI_GotoNpc	(self, hero);
 
-	AI_Output(hero, self, "Info_Mod_Malik_Kissen_15_03"); //Und? Zufrieden?
-	AI_Output(self, hero, "Info_Mod_Malik_Kissen_13_04"); //Bei allen Geistern. Wunderbar weich und riecht gut. Bin mehr als zufrieden.
-	AI_Output(hero, self, "Info_Mod_Malik_Kissen_15_05"); //Dann habe ich deine Stimme?
-	AI_Output(self, hero, "Info_Mod_Malik_Kissen_13_06"); //Aber ja. Ich würde dir sogar zwei geben, wenn's möglich wäre. Aber jetzt lass mich schlafen.
-	AI_Output(self, hero, "Info_Mod_Malik_Kissen_13_07"); //Ach ja, eines noch. Sinbad sucht dich.
+	AI_Output(hero, self, "Info_Mod_Malik_Kissen_15_03"); //And? Satisfied?
+	AI_Output(self, hero, "Info_Mod_Malik_Kissen_13_04"); //With all the spirits. Wonderfully soft and smells good. I'm more than satisfied.
+	AI_Output(hero, self, "Info_Mod_Malik_Kissen_15_05"); //Then I have your voice?
+	AI_Output(self, hero, "Info_Mod_Malik_Kissen_13_06"); //But yes, yes. I'd even give you two if I could. But now let me sleep.
+	AI_Output(self, hero, "Info_Mod_Malik_Kissen_13_07"); //Oh, one more thing. Sinbad's looking for you.
 
-	B_LogEntry	(TOPIC_MOD_ASS_KRIEGER, "Malik war sehr zufrieden. Seine Stimme ist mir sicher. Soll nun zu Sinbad.");
+	B_LogEntry	(TOPIC_MOD_ASS_KRIEGER, "Malik was very satisfied. I'm sure of his voice. Let's go to Sinbad.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_KISSEN, LOG_SUCCESS);
 
 	B_GivePlayerXP	(200);

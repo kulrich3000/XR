@@ -1,7 +1,7 @@
 INSTANCE Schrat_11011_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenschrat";	
+	name 		= "demon rat";	
 	guild 		= GIL_DMT;
 	id 			= 11011;
 	voice 		= 10;

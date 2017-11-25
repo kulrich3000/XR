@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Guy_Hi (C_INFO)
 	information	= Info_Mod_Guy_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du noch mal?";
+	description	= "Who are you again?";
 };
 
 FUNC INT Info_Mod_Guy_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Guy_Hi_Condition()
 
 FUNC VOID Info_Mod_Guy_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Guy_Hi_15_00"); //Wer bist du noch mal?
-	AI_Output(self, hero, "Info_Mod_Guy_Hi_24_01"); //Nur so 'n Typ. Kümmer dich nicht um mich.
+	AI_Output(hero, self, "Info_Mod_Guy_Hi_15_00"); //Who are you again?
+	AI_Output(self, hero, "Info_Mod_Guy_Hi_24_01"); //Just a guy. Don't worry about me.
 };
 
 INSTANCE Info_Mod_Guy_AllesKlar (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Guy_AllesKlar (C_INFO)
 	information	= Info_Mod_Guy_AllesKlar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles beim Alten bei dir?";
+	description	= "Everything the same with you?";
 };
 
 FUNC INT Info_Mod_Guy_AllesKlar_Condition()
@@ -38,8 +38,8 @@ FUNC INT Info_Mod_Guy_AllesKlar_Condition()
 
 FUNC VOID Info_Mod_Guy_AllesKlar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Guy_AllesKlar_15_00"); //Alles beim Alten bei dir?
-	AI_Output(self, hero, "Info_Mod_Guy_AllesKlar_24_01"); //Ja, mir geht's bestens. Solange mich alle in Ruhe lassen, geht's mir bestens.
+	AI_Output(hero, self, "Info_Mod_Guy_AllesKlar_15_00"); //Everything the same with you?
+	AI_Output(self, hero, "Info_Mod_Guy_AllesKlar_24_01"); //Yeah, I'm doing just fine. As long as everyone leaves me alone, I'll be fine.
 };
 
 INSTANCE Info_Mod_Guy_Lagermusik (C_INFO)
@@ -50,7 +50,7 @@ INSTANCE Info_Mod_Guy_Lagermusik (C_INFO)
 	information	= Info_Mod_Guy_Lagermusik_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du Mitglied in Gravos neuer Musikgruppe werden?";
+	description	= "Want to join Gravo's new music group?";
 };
 
 FUNC INT Info_Mod_Guy_Lagermusik_Condition()
@@ -63,12 +63,12 @@ FUNC INT Info_Mod_Guy_Lagermusik_Condition()
 
 FUNC VOID Info_Mod_Guy_Lagermusik_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Guy_Lagermusik_15_00"); //Willst du Mitglied in Gravos neuer Musikgruppe werden?
-	AI_Output(self, hero, "Info_Mod_Guy_Lagermusik_24_01"); //Ich würde schon gern.
-	AI_Output(hero, self, "Info_Mod_Guy_Lagermusik_15_02"); //Aber?
-	AI_Output(self, hero, "Info_Mod_Guy_Lagermusik_24_03"); //Ich kann kein Instrument spielen. Und singen - na ja. Und auftreten schon gar nicht.
-	AI_Output(hero, self, "Info_Mod_Guy_Lagermusik_15_04"); //Das ist jetzt erst mal nicht das Problem. Gravo wird schon was für dich finden. Geh einfach zu ihm.
-	AI_Output(self, hero, "Info_Mod_Guy_Lagermusik_24_05"); //Na gut, wenn du meinst.
+	AI_Output(hero, self, "Info_Mod_Guy_Lagermusik_15_00"); //Want to join Gravo's new music group?
+	AI_Output(self, hero, "Info_Mod_Guy_Lagermusik_24_01"); //I'd love to.
+	AI_Output(hero, self, "Info_Mod_Guy_Lagermusik_15_02"); //But?
+	AI_Output(self, hero, "Info_Mod_Guy_Lagermusik_24_03"); //I can't play an instrument. And sing - well, well. And they don't appear at all.
+	AI_Output(hero, self, "Info_Mod_Guy_Lagermusik_15_04"); //That's not the problem right now. Gravo will find you something. Just go to him.
+	AI_Output(self, hero, "Info_Mod_Guy_Lagermusik_24_05"); //All right, if you say so.
 
 	AI_StopProcessInfos	(self);
 
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Guy_KGBuddler (C_INFO)
 	information	= Info_Mod_Guy_KGBuddler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hätte da eine neue Aufgabe für dich ...";
+	description	= "I have a new task for you...";
 };
 
 FUNC INT Info_Mod_Guy_KGBuddler_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Mod_Guy_KGBuddler_Condition()
 
 FUNC VOID Info_Mod_Guy_KGBuddler_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Guy_KGBuddler_15_00"); //Ich hätte da eine neue Aufgabe für dich ...
-	AI_Output(self, hero, "Info_Mod_Guy_KGBuddler_24_01"); //... die ich gar nicht brauche. Wenn ich was arbeiten will, kann ich auch aufs Feld gehen.
+	AI_Output(hero, self, "Info_Mod_Guy_KGBuddler_15_00"); //I have a new task for you...
+	AI_Output(self, hero, "Info_Mod_Guy_KGBuddler_24_01"); //... I don't need. If I want to work, I can go to the fields.
 };
 
 INSTANCE Info_Mod_Guy_Pickpocket (C_INFO)

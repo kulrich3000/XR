@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Gunnar_Hi (C_INFO)
 	information	= Info_Mod_Gunnar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Gunnar_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Gunnar_Hi_Condition()
 FUNC VOID Info_Mod_Gunnar_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Gunnar_Hi_10_01"); //Ich bin Gunnar, Bauer von Beruf.
+	AI_Output(self, hero, "Info_Mod_Gunnar_Hi_10_01"); //I'm Gunnar, farmer by trade.
 };
 
 INSTANCE Info_Mod_Gunnar_Unheil (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Gunnar_Unheil (C_INFO)
 	information	= Info_Mod_Gunnar_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hat sich in letzter Zeit etwas Außergewöhnliches ereignet?";
+	description	= "Has anything out of the ordinary happened lately?";
 };
 
 FUNC INT Info_Mod_Gunnar_Unheil_Condition()
@@ -42,17 +42,17 @@ FUNC INT Info_Mod_Gunnar_Unheil_Condition()
 
 FUNC VOID Info_Mod_Gunnar_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gunnar_Unheil_15_00"); //Hat sich in letzter Zeit etwas Außergewöhnliches ereignet?
-	AI_Output(self, hero, "Info_Mod_Gunnar_Unheil_10_01"); //Nun, wenn man mal von den Horden von Monstern in der Umgebung absieht, nichts Ungewöhnliches.
-	AI_Output(hero, self, "Info_Mod_Gunnar_Unheil_15_02"); //Na dann ist ja gut.
-	AI_Output(self, hero, "Info_Mod_Gunnar_Unheil_10_03"); //Nur eben die ständigen Hagelschauer, die uns die Ernte versauen, die Schafe geben nur noch saure Milch und die ständigen Erkrankungen auf dem Hof diese Saison.
-	AI_Output(self, hero, "Info_Mod_Gunnar_Unheil_10_04"); //Besonders Maria leidet seid einigen Tagen unter starkem Siechtum. Sogar Sagittas Kräuterkunst konnte ihr noch nicht helfen. Ja, aber sonst ist alles normal.
+	AI_Output(hero, self, "Info_Mod_Gunnar_Unheil_15_00"); //Has anything out of the ordinary happened lately?
+	AI_Output(self, hero, "Info_Mod_Gunnar_Unheil_10_01"); //Well, apart from the hordes of monsters in the area, nothing unusual.
+	AI_Output(hero, self, "Info_Mod_Gunnar_Unheil_15_02"); //Well, that's all right.
+	AI_Output(self, hero, "Info_Mod_Gunnar_Unheil_10_03"); //Only the constant hailstorms that ruin our harvest, the sheep only give us acid milk and the constant illnesses on the farm this season.
+	AI_Output(self, hero, "Info_Mod_Gunnar_Unheil_10_04"); //Mary in particular has been suffering from severe infirmity for several days. Even Sagitta's herbalism could not help her. Yeah, but everything else is normal.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Gunnar berichtete von Hagelschauern, sauerer Schafsmilch und gesundheitlichen Beschwerden auf dem Hof in dieser Saison.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Gunnar reported hail showers, acidic sheep's milk and health problems on the farm this season.");
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Bobo_Unheil))
 	{
-		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Maria ist seit einigen Tagen stark erkrankt.");
+		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Maria has been seriously ill for a few days now.");
 	};
 
 	Mod_HinweiseDerBauernZuHexen += 1;
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Gunnar_Dieb (C_INFO)
 	information	= Info_Mod_Gunnar_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Erwischt!";
+	description	= "Gotcha!";
 };
 
 FUNC INT Info_Mod_Gunnar_Dieb_Condition()
@@ -80,10 +80,10 @@ FUNC INT Info_Mod_Gunnar_Dieb_Condition()
 
 FUNC VOID Info_Mod_Gunnar_Dieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gunnar_Dieb_15_00"); //Erwischt!
-	AI_Output(self, hero, "Info_Mod_Gunnar_Dieb_10_01"); //Mist, schnell weg hier!
+	AI_Output(hero, self, "Info_Mod_Gunnar_Dieb_15_00"); //Gotcha!
+	AI_Output(self, hero, "Info_Mod_Gunnar_Dieb_10_01"); //Shit, let's get out of here!
 
-	B_LogEntry	(TOPIC_MOD_BAUER_DIEB, "Ich habe Gunnar erwischt wie er im Lagerraum Sachen geklaut hat.");
+	B_LogEntry	(TOPIC_MOD_BAUER_DIEB, "I caught Gunnar stealing stuff from the storeroom.");
 
 	AI_StopProcessInfos	(self);
 
@@ -100,7 +100,7 @@ INSTANCE Info_Mod_Gunnar_Flucht (C_INFO)
 	information	= Info_Mod_Gunnar_Flucht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Jetzt haust du aber nicht mehr ab.";
+	description	= "Now you're not leaving.";
 };
 
 FUNC INT Info_Mod_Gunnar_Flucht_Condition()
@@ -114,29 +114,29 @@ FUNC INT Info_Mod_Gunnar_Flucht_Condition()
 
 FUNC VOID Info_Mod_Gunnar_Flucht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gunnar_Flucht_15_00"); //Jetzt haust du aber nicht mehr ab.
-	AI_Output(self, hero, "Info_Mod_Gunnar_Flucht_10_01"); //Äh ... was willst du von mir? Ich hab nichts gemacht.
-	AI_Output(hero, self, "Info_Mod_Gunnar_Flucht_15_02"); //Denkst du ich bin blöd? Ich hab dich gesehen wie du Sachen aus dem Lager gestohlen hast.
-	AI_Output(self, hero, "Info_Mod_Gunnar_Flucht_10_03"); //D ... Das muss ein Irrtum sein. Ich habe nichts gestohlen.
+	AI_Output(hero, self, "Info_Mod_Gunnar_Flucht_15_00"); //Now you're not leaving.
+	AI_Output(self, hero, "Info_Mod_Gunnar_Flucht_10_01"); //Uh... what do you want from me? I didn't do anything.
+	AI_Output(hero, self, "Info_Mod_Gunnar_Flucht_15_02"); //You think I'm stupid? I saw you stealing stuff from the warehouse.
+	AI_Output(self, hero, "Info_Mod_Gunnar_Flucht_10_03"); //D... There must be some mistake. I didn't steal anything.
 
 	self.flags = 0;
 	
 	Info_ClearChoices	(Info_Mod_Gunnar_Flucht);
 
-	Info_AddChoice	(Info_Mod_Gunnar_Flucht, "Wenn du die Beute mit mir teilst werde ich dich nicht verraten.", Info_Mod_Gunnar_Flucht_Teilen);
-	Info_AddChoice	(Info_Mod_Gunnar_Flucht, "Wenn du mir nichts sagen willst werde ich es eben aus dir rausprügeln.", Info_Mod_Gunnar_Flucht_Attacke);
+	Info_AddChoice	(Info_Mod_Gunnar_Flucht, "If you share the booty with me, I won't betray you.", Info_Mod_Gunnar_Flucht_Teilen);
+	Info_AddChoice	(Info_Mod_Gunnar_Flucht, "If you won't tell me anything, I'll beat it out of you.", Info_Mod_Gunnar_Flucht_Attacke);
 };
 
 FUNC VOID Info_Mod_Gunnar_Flucht_Teilen()
 {
-	AI_Output(hero, self, "Info_Mod_Gunnar_Flucht_Teilen_15_00"); //Wenn du die Beute mit mir teils werde ich dich nicht verraten.
-	AI_Output(self, hero, "Info_Mod_Gunnar_Flucht_Teilen_10_01"); //Ok, mir bleibt wohl keine andere Wahl. Hier hast du deinen Teil.
+	AI_Output(hero, self, "Info_Mod_Gunnar_Flucht_Teilen_15_00"); //If you share the loot with me, I will not betray you.
+	AI_Output(self, hero, "Info_Mod_Gunnar_Flucht_Teilen_10_01"); //Okay, I don't think I have a choice. Here's your share.
 
 	CreateInvItems	(hero, ItFo_MuttonRaw, 10);
 	CreateInvItems	(hero, ItFo_Cheese, 3);
 	CreateInvItems	(hero, ItFo_Water, 5);
 
-	B_ShowGivenThings	("10 rohes Fleisch, 3 Käse und 5 Wasser erhalten");
+	B_ShowGivenThings	("10 raw meat, 3 cheese and 5 water obtained");
 
 	Mod_Gunnar_Partner = TRUE;
 
@@ -151,8 +151,8 @@ FUNC VOID Info_Mod_Gunnar_Flucht_Teilen()
 
 FUNC VOID Info_Mod_Gunnar_Flucht_Attacke()
 {
-	AI_Output(hero, self, "Info_Mod_Gunnar_Flucht_Attacke_15_00"); //Wenn du mir nichts sagen willst werde ich es eben aus dir rausprügeln.
-	AI_Output(self, hero, "Info_Mod_Gunnar_Flucht_Attacke_10_01"); //Das wollen wir erstmal sehen.
+	AI_Output(hero, self, "Info_Mod_Gunnar_Flucht_Attacke_15_00"); //If you won't tell me anything, I'll beat it out of you.
+	AI_Output(self, hero, "Info_Mod_Gunnar_Flucht_Attacke_10_01"); //Let's take a look first.
 	
 	CreateInvItems	(self, ItKe_Mod_Gunnar_Dieb, 1);
 	

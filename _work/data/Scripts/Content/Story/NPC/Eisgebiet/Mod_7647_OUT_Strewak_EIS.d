@@ -1,7 +1,7 @@
 INSTANCE Mod_7647_OUT_Strewak_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "gefrorener Leichnam"; 
+	name 		= "frozen corpse"; 
 	guild 		= GIL_NONE;
 	id 			= 7647;
 	voice 		= 9;

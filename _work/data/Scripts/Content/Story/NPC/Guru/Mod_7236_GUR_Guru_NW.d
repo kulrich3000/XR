@@ -1,7 +1,7 @@
 instance Mod_7236_GUR_Guru_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Guru";
+	name 		=		"guru";
 	Npctype 	=		NPCTYPE_Main;
 	guild 		=		GIL_OUT;
 	level 		=		28;

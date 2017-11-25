@@ -42,15 +42,15 @@ FUNC INT Info_Mod_Orakel_Nagon_Condition()
 
 FUNC VOID Info_Mod_Orakel_Nagon_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_00"); //Ich habe dich erwartet! Du suchst einen Weg die Foki zu erlangen.
-	AI_Output(hero, self, "Info_Mod_Orakel_Nagon_15_01"); //Woher weißt du ...?
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_02"); //Ich bin das Orakel. Ich habe mein Wissen von Innos selbst erlangt.
-	AI_Output(hero, self, "Info_Mod_Orakel_Nagon_15_03"); //Also wie komm ich jetzt an die Foki?
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_04"); //Du musst fünf Eigenschaften besitzen: Mut, List, Vernunft, Glaube und Ehrlichkeit.
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_05"); //Für jeden der Foki musst du eine dieser Eigenschaften nutzen, nur so kannst du alle erlangen.
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_06"); //Nun geh und erfülle deine Aufgabe!
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_00"); //I've been expecting you! You're looking for a way to get the focus.
+	AI_Output(hero, self, "Info_Mod_Orakel_Nagon_15_01"); //How do you know...?
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_02"); //I am the Oracle. I have acquired my knowledge from Innos himself.
+	AI_Output(hero, self, "Info_Mod_Orakel_Nagon_15_03"); //So how do I get the focus now?
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_04"); //You must have five qualities: courage, cunning, reason, faith and honesty.
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_05"); //For each of the Foki you have to use one of these features, which is the only way to get them all.
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_06"); //Now go and do your job!
 
-	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Das Orakel hat gesagt, dass ich fünf Eigenschaften brauche, um die Foki zu erlangen: Mut, List, Vernunft, Glaube und Ehrlichkeit.");
+	B_LogEntry	(TOPIC_MOD_FM_FOKI, "The oracle said that I need five qualities to gain the focus: courage, cunning, reason, faith and honesty.");
 
 	B_GivePlayerXP	(500);
 

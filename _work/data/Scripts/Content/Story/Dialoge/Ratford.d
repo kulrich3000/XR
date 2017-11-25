@@ -28,24 +28,24 @@ FUNC VOID Info_Mod_Ratford_Hi_Info()
 	TRIA_Next(Ratford);
 
 	AI_Output(hero, self, "Info_Mod_Ratford_Hi_15_00"); //Waidmannsheil.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_36_01"); //(skeptisch) Komm mir ja nicht so unschuldig. Was willst du?
-	AI_Output(hero, self, "Info_Mod_Ratford_Hi_15_02"); //Ich komme nur zufällig vorbei.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_36_03"); //Zufällig kommt hier niemand vorbei.
-	AI_Output(hero, self, "Info_Mod_Ratford_Hi_15_04"); //Na schön - ich komme von eurem Boss und soll euch kräftig den Arsch versohlen. Klingt das vernünftiger?
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_36_01"); //Don't look so innocent to me. What do you want?
+	AI_Output(hero, self, "Info_Mod_Ratford_Hi_15_02"); //I'm just passing by.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_36_03"); //Coincidentally, no one passes by.
+	AI_Output(hero, self, "Info_Mod_Ratford_Hi_15_04"); //All right - I'm coming from your boss and I'm supposed to kick your ass. Does that sound more reasonable?
 
 	TRIA_Next(Drax);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_30_05"); //Das ist nicht dein Ernst!
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_30_05"); //You can't be serious!
 
 	TRIA_Next(Ratford);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_36_06"); //(lacht) Der macht doch nur Späße, Drax. Der Typ scheint ganz in Ordnung zu sein.
-	AI_Output(hero, self, "Info_Mod_Ratford_Hi_15_07"); //Was macht ihr denn hier draußen?
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_36_08"); //Ich würde ja gern quatschen, aber ich habe gerade so eine trockene Kehle. Ohne Ölung fällt mir das Sprechen immer so schwer.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_36_06"); //(laughs) He's just kidding, Drax. This guy seems like he's all right.
+	AI_Output(hero, self, "Info_Mod_Ratford_Hi_15_07"); //What are you guys doing out here?
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_36_08"); //I'd love to chat, but I've got a dry throat right now. Without oiling, it's always so hard for me to speak.
 
 	TRIA_Next(Drax);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_30_09"); //Und mir auch. Lass mal zwei Bierchen rüberwachsen!
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_30_09"); //And me too. Let's have a couple of beers.
 
 	TRIA_Next(Ratford);
 
@@ -76,10 +76,10 @@ FUNC VOID Info_Mod_Ratford_Hi_Extend_Info()
 {
 	Info_ClearChoices	(Info_Mod_Ratford_Hi_Extend);
 
-	Info_AddChoice	(Info_Mod_Ratford_Hi_Extend, "Das könnt ihr vergessen.", Info_Mod_Ratford_Hi_B);
+	Info_AddChoice	(Info_Mod_Ratford_Hi_Extend, "You can forget about that.", Info_Mod_Ratford_Hi_B);
 
 	if (Npc_HasItems(hero, ItFo_Beer) >= 2) {
-		Info_AddChoice	(Info_Mod_Ratford_Hi_Extend, "Eine Runde auf mich!", Info_Mod_Ratford_Hi_A);
+		Info_AddChoice	(Info_Mod_Ratford_Hi_Extend, "Round at me!", Info_Mod_Ratford_Hi_A);
 	};
 };
 
@@ -94,12 +94,12 @@ FUNC VOID Info_Mod_Ratford_Hi_B()
 
 	TRIA_Next(Ratford);
 
-	AI_Output(hero, self, "Info_Mod_Ratford_Hi_B_15_00"); //Das könnt ihr vergessen.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_B_36_01"); //So komme ich aber nicht in Plauderlaune. Da gehe ich lieber wieder an die Arbeit.
+	AI_Output(hero, self, "Info_Mod_Ratford_Hi_B_15_00"); //You can forget about that.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_B_36_01"); //That's no way to get into a chatty mood. I'd better get back to work.
 
 	TRIA_Next(Drax);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_B_30_02"); //Ja, verpiss dich!
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_B_30_02"); //Yeah, fuck off!
 
 	TRIA_Next(Ratford);
 
@@ -121,9 +121,9 @@ FUNC VOID Info_Mod_Ratford_Hi_A()
 
 	TRIA_Next(Ratford);
 
-	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_00"); //Eine Runde auf mich!
+	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_00"); //Round at me!
 
-	B_ShowGivenThings	("Zwei Bier gegeben");
+	B_ShowGivenThings	("Two beers served");
 
 	Npc_RemoveInvItems	(hero, ItFo_Beer, 2);
 
@@ -133,29 +133,29 @@ FUNC VOID Info_Mod_Ratford_Hi_A()
 	B_UseItem	(Ratford, ItFo_Beer);
 	B_UseItem	(Drax, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_01"); //Nun gut, wir beobachten hier ein wenig die Gegend für das Banditenlager.
-	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_02"); //Banditenlager?
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_03"); //Ja, das ist 'ne feine Bande ... Wir sind auch noch nicht lange dabei, aber bei denen weiß man noch, was Zusammenhalt bedeutet. Da haben wir auch ganz andere Erfahrungen gemacht.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_01"); //All right, let's watch the area around here for the bandit camp.
+	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_02"); //Bandit camp?
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_03"); //Yeah, that's a fine gang... We have not been around long, but we still know what cohesion means. We have had completely different experiences in this respect.
 
 	TRIA_Next(Drax);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_06_04"); //Hauptsache, die lassen uns in Ruhe unser Ding machen.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_06_04"); //As long as they let us do our thing in peace.
 
 	TRIA_Next(Ratford);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_05"); //Und das tun sie. Wir passen ein bisschen auf, dass keine Invasionsarmee über den Pass kommt, und wenn uns ein Tier vor den Bogen läuft, knallen wir es ab.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_06"); //Den restlichen Tag über hängen wir eigentlich rum.
-	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_07"); //Könnt ihr mir irgendetwas über das Minental erzählen? Was ist hier in letzter Zeit passiert?
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_08"); //Keine Ahnung, aber ziemlich viel. In den großen Lagern ist die Kacke mehr oder weniger am Dampfen.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_09"); //Im Alten Lager ging's kurz nach dem Fall der Barriere anscheinend drunter und drüber, jedenfalls haben wir bis hierher Schreie und Lärm gehört.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_10"); //Dann zog hier eine größere Gruppe heruntergekommener Gestalten vorbei.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_11"); //Danach wurde es im Lager verdächtig ruhig. Hat sich kaum noch einer gezeigt. Wer weiß, ob da drin mittlerweile überhaupt noch jemand lebt.
-	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_12"); //Das klingt ja, als müsste ich mir das mal anschauen.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_13"); //Lass dich nicht aufhalten. Könnte ein Geheimtipp für Plünderer sein, wer weiß.
-	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_14"); //Dann wünsch ich euch noch einen schönen Tag.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_15"); //Ja, werden wir sicher haben.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_16"); //Ach ja, wenn du mal bei uns vorbeischauen willst: Geh einfach die Felswand entlang, zuerst Richtung Wald, dann bergauf.
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_17"); //So einen wie dich können wir immer gebrauchen.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_05"); //And they do. We take care that no invasion army crosses the pass, and if an animal runs into our bow, we kill it.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_06"); //The rest of the day, we're actually hanging out.
+	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_07"); //Can you tell me anything about the Minental? What has happened here lately?
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_08"); //I don't know, but pretty much. In the big camps the shit is more or less steaming.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_09"); //In the old camp it seemed to be over and done with shortly after the fall of the barrier, at least we heard screams and noise up to here.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_10"); //Then a larger group of run-down characters passed by here.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_11"); //After that, the camp became suspiciously quiet. Hardly anyone else showed up. Who knows if there's anyone in there anymore.
+	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_12"); //Sounds like I need to take a look at this.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_13"); //Don't let me stop you. Could be an insider's tip for looters, who knows.
+	AI_Output(hero, self, "Info_Mod_Ratford_Hi_A_15_14"); //Have a nice day, then.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_15"); //Yes, we certainly will.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_16"); //Oh yes, if you want to visit us: Just walk along the rock face, first towards the forest, then uphill.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_36_17"); //We can always use someone like you.
 
 	TRIA_Finish();
 
@@ -185,19 +185,19 @@ FUNC INT Info_Mod_Ratford_Fokus_Condition()
 
 FUNC VOID Info_Mod_Ratford_Fokus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_00"); //Scheiße, dich kenn ich doch, Mann! Kannst du mir sagen, was das hier soll?
-	AI_Output(hero, self, "Info_Mod_Ratford_Fokus_15_01"); //Seh ich etwa so aus? Was ist denn passiert?
-	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_02"); //Gute Frage! Drax und ich waren hier gerade am Jagen, da tauchte hinter uns diese Horde Warge auf und hält direkt auf uns zu.
-	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_03"); //Wir haben also sofort unsere Pfeile gezückt und den Biestern ordentlich in die Fresse gegeben, aber es waren verdammt noch mal viel zu viele.
-	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_04"); //Anstatt aber über uns herzufallen, laufen sie an uns vorbei zu diesem komischen Kreis da drüben, schnappen sich ein kleines eckiges Ding, das obendrauf liegt, und hauen ab.
-	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_05"); //So was Verrücktes hab ich noch nie erlebt. (lacht unsicher)
-	AI_Output(hero, self, "Info_Mod_Ratford_Fokus_15_06"); //Wohin sind die Warge verschwunden?
-	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_07"); //Direkt in die Hölle, wenn du mich fragst.
-	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_08"); //Drax ist ihnen hinterher, sie sind landeinwärts im Wald verschwunden.
-	AI_Output(hero, self, "Info_Mod_Ratford_Fokus_15_09"); //Und du hältst hier die Stellung.
-	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_10"); //Na ja, die Puste macht nicht mehr mit. Ich hoffe bloß, Drax ist nicht doch noch zerfleischt worden.
+	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_00"); //Shit, I know you, man! Can you tell me what this is all about?
+	AI_Output(hero, self, "Info_Mod_Ratford_Fokus_15_01"); //Do I look like that? What the hell happened?
+	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_02"); //Good question! Drax and I have just been hunting here, and this horde of Warge appeared behind us and is heading straight for us.
+	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_03"); //So we immediately pulled our arrows and gave the beasts into their mouths, but there were way too many of them.
+	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_04"); //But instead of falling over us, they run past us to that weird circle over there, grab a little square thing lying on top of us and run away.
+	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_05"); //I've never seen anything so crazy. (laughs insecurely)
+	AI_Output(hero, self, "Info_Mod_Ratford_Fokus_15_06"); //Where did the Warge disappear to?
+	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_07"); //Straight to hell, if you ask me.
+	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_08"); //Drax is after them, they disappeared inland in the woods.
+	AI_Output(hero, self, "Info_Mod_Ratford_Fokus_15_09"); //And you hold the line here.
+	AI_Output(self, hero, "Info_Mod_Ratford_Fokus_36_10"); //Well, the blow no longer works. I just hope Drax hasn't been mauled after all.
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Beim Fokus an den Klippen ist mir eine Wargrotte zuvorgekommen. Während sie von Ratford und Drax unter Beschuss genommen wurde, hat sie sich den Fokus geschnappt und ist im Wald landeinwärts verschwunden. Drax ist hinterhergelaufen.");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "When I was focusing on the cliffs, a war grotto preceded me. While under fire by Ratford and Drax, she grabbed the focus and disappeared inland in the forest. Drax was running after him.");
 
 	B_StartOtherRoutine	(Mod_1121_BDT_Drax_MT, "FOKUS");
 

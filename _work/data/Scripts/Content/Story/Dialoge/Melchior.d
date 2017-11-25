@@ -18,13 +18,13 @@ FUNC INT Info_Mod_Melchior_Hi_Condition()
 
 FUNC VOID Info_Mod_Melchior_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_00"); //Endlich ist die Verstärkung da. Ich habe schon geglaubt, der Kommander hätte mich vergessen.
-	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_01"); //Eigentlich sollst du mich Verstärken. Ich brauch jemanden, der die Orks verhören kann. Du sprichst doch ihre Sprache?!
-	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_02"); //Ja, aber alle Orks hier in der Gegend sind untot. Sie haben meinen Freund Jacoby im Wald erschlagen.
-	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_03"); //Es waren so viele, dass ich fliehen musste. Ich glaube nicht, dass wir sie befragen können.
-	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_04"); //Ihre Anführer sind aber immer noch lebendig. Es muss doch einen geben, der ein wenig von der Masse getrennt ist.
-	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_05"); //Da gibt es einen. Er entsendet von einer alten Ruine seine Spähtruppen ins Eisgebiet.
-	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_06"); //Marcus wird für dich hier übernehmen und du zeigst mir diese Ruine.
+	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_00"); //Reinforcements are finally here. I thought the commander had forgotten me.
+	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_01"); //Actually, you're supposed to strengthen me. I need someone who can interrogate the orcs. You speak her language, don't you?!
+	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_02"); //Yeah, but all the orcs around here are undead. You killed my friend Jacoby in the woods.
+	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_03"); //There were so many of them that I had to flee. I don't think we can question them.
+	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_04"); //But their leaders are still alive. There must be someone who's a little separated from the masses.
+	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_05"); //There is one. He sends his reconnaissance troops from an old ruin to the ice area.
+	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_06"); //Marcus will take over for you here, and you show me this ruin.
 
 	B_StartOtherRoutine	(self, "GUIDETORUINE");
 	B_StartOtherRoutine	(Mod_7754_OUT_Melchior_EIS, "ATMELCHIOR");

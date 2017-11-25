@@ -1,7 +1,7 @@
 INSTANCE GardeBeliars_1990_Jorjo	(Npc_Default)
 {
 	//----- Monster ----
-	name							=	"Jorjo";
+	name							=	"jorjo";
 	guild							=	GIL_NONE;
 	id			= 	1990;
 	voice			=	14;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_GorNaDrak_Lehrer (C_INFO)
 	information	= Info_Mod_GorNaDrak_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_GorNaDrak_Lehrer_Condition()
@@ -18,10 +18,10 @@ FUNC VOID Info_Mod_GorNaDrak_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Lehrer_09_00"); //Ich kann dir zeigen, wie du Minecrawlern die Zangen entnimmst.
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Lehrer_09_00"); //I can show you how to take out the forceps from minecrawlers.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SUMPF, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_SUMPF, "Gor Na Drak kann mir zeigen wie ich Minecrawlern die Zangen entnehme.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_SUMPF, "Gor Na Drak can show me how to take the pliers from minecrawlers.");
 };
 
 INSTANCE Info_Mod_GorNaDrak_Hueterklinge (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_GorNaDrak_Hueterklinge (C_INFO)
 	information	= Info_Mod_GorNaDrak_Hueterklinge_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gehört, du bist schon ziemlich lange bei den Templern.";
+	description	= "I hear you've been with the Templars a long time.";
 };
 
 FUNC INT Info_Mod_GorNaDrak_Hueterklinge_Condition()
@@ -46,52 +46,52 @@ FUNC INT Info_Mod_GorNaDrak_Hueterklinge_Condition()
 
 FUNC VOID Info_Mod_GorNaDrak_Hueterklinge_Info()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_15_00"); //Ich habe gehört, du bist schon ziemlich lange bei den Templern.
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_09_01"); //Jaja, ich hab alles miterlebt. Die große Hungernot von 84, den schlimmen Stunk von 3, das Fegefeuer von 72, das ...
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_15_02"); //Ich verstehe, du hast viel mitgemacht. Du hast wohl auch viel gekämpft, was?
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_09_03"); //Jaja, ich hab viel gekämpft.
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_09_04"); //Gegen den großen Troll vor 62, gegen den fiesen Drachen von 112, gegen den scharfen Scavanger von ...
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_15_05"); //Ich verstehe, du hast viel gekämpft.
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_15_00"); //I hear you've been with the Templars a long time.
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_09_01"); //Yeah, yeah, I've seen it all. The great famine of 84, the terrible stunk of 3, the purgatory of 72, the...
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_15_02"); //I understand, you've been through a lot. You fought a lot, didn't you?
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_09_03"); //Yeah, I fought a lot.
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_09_04"); //Against the big troll in front of 62, against the nasty dragon of 112, against the sharp Scavanger of...
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_15_05"); //I understand, you've fought a lot.
 
 	Info_ClearChoices	(Info_Mod_GorNaDrak_Hueterklinge);
 
-	Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge, "Wenn du so viel gekämpft hast, dann verdienst du doch eigentlich ... Ach egal, nicht so wichtig.", Info_Mod_GorNaDrak_Hueterklinge_C);
-	Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge, "Wenn du so viel gekämpft hast, wird dein Schwert wohl ziemlich viele Kerben haben, oder?", Info_Mod_GorNaDrak_Hueterklinge_B);
-	Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge, "Wenn du so viel gekämpft hast, wirst du dein Schwert wohl nicht mehr brauchen, oder?", Info_Mod_GorNaDrak_Hueterklinge_A);
+	Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge, "If you've fought so much, then you actually deserve... Never mind, not so important.", Info_Mod_GorNaDrak_Hueterklinge_C);
+	Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge, "If you've fought so much, your sword will have quite a few notches, won't it?", Info_Mod_GorNaDrak_Hueterklinge_B);
+	Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge, "If you've fought so much, you won't need your sword anymore, will you?", Info_Mod_GorNaDrak_Hueterklinge_A);
 };
 
 FUNC VOID Info_Mod_GorNaDrak_Hueterklinge_C()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_C_15_00"); //Wenn du so viel gekämpft hast, dann verdienst du doch eigentlich ... Ach egal, nicht so wichtig.
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_C_15_00"); //If you've fought so much, then you actually deserve... Never mind, not so important.
 
 	Info_ClearChoices	(Info_Mod_GorNaDrak_Hueterklinge);
 };
 
 FUNC VOID Info_Mod_GorNaDrak_Hueterklinge_B()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_B_15_00"); //Wenn du so viel gekämpft hast, wird dein Schwert wohl ziemlich viele Kerben haben, oder?
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_01"); //Ja ... jetzt wo du es sagst, mein Schwert hat wirklich viele Kerben ...
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_B_15_02"); //Wäre es dann nicht angebracht, ein neues Schwert zu führen und sich des alten zu entledigen?
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_B_15_00"); //If you've fought so much, your sword will have quite a few notches, won't it?
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_01"); //Yes... now that you're saying it, my sword has a lot of notches...
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_B_15_02"); //Wouldn't it then be appropriate to carry a new sword and get rid of the old one?
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_03"); //Gewiss ... das wäre in der Tat angebracht, das wäre sogar sehr angebracht!
-		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_04"); //Aber woher bekomme ich jemals ein neues Schwert?
-		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_05"); //Wir sind hier Mitten in der Wüste und es gibt weit und breit keine Schmiede.
-		AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_B_15_06"); //Ich besorg‘ dir eines.
+		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_03"); //Certainly... that would indeed be appropriate, that would even be very appropriate!
+		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_04"); //But where do I ever get a new sword?
+		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_05"); //We're in the middle of the desert, and there's no smithy in the world.
+		AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_B_15_06"); //I'll get you one.
 
 		Mod_TPL_Hueterklinge_Drak = 2;
 
-		B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Ich muss Gor Na Drak ein neues Schwert besorgen.");
+		B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "I have to get Gor Na Drak a new sword.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_07"); //Ein neues Schwert?! Niemals!
-		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_08"); //Ich weiß nicht, ob du‘s weißt, aber ich habe mit diesem Schwert schon gegen den großen Troll von 62 gekämpft, und gegen den fiesen Drachen von 112 und ...
+		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_07"); //A new sword?! Never ever!
+		AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_B_09_08"); //I don't know if you know it, but I have already fought with this sword against the great troll of 62, and against the nasty dragon of 112 and...
 
 		AI_TurnAway	(hero, self);
 
-		AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_B_15_09"); //(zu sich selbst) Das kann ich wohl vergessen.
+		AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_B_15_09"); //I guess I can forget that.
 
 		AI_TurnToNpc	(hero, self);
 	};
@@ -101,12 +101,12 @@ FUNC VOID Info_Mod_GorNaDrak_Hueterklinge_B()
 
 FUNC VOID Info_Mod_GorNaDrak_Hueterklinge_A()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_A_15_00"); //Wenn du so viel gekämpft hast, wirst du dein Schwert wohl nicht mehr brauchen, oder?
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_A_09_01"); //MEIN SCHWERT NICHT MEHR BRAUCHEN???
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_A_09_02"); //Aber was wenn der große Troll von 62 von schwarzer Magie ungetötet wird und zum großen, untoten Troll von 417 wird?
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_A_09_03"); //Was wenn die Knochen des fiesen  Drachens von 112 wieder zusammenfinden und zum grauenhaften Drachenskelett von 45 werden?
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_A_09_04"); //Was wenn ...
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_A_15_05"); //Ich verstehe, du brauchst dein Schwert also noch.
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_A_15_00"); //If you've fought so much, you won't need your sword anymore, will you?
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_A_09_01"); //YOU DON' T NEED MY SWORD ANYMORE?"
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_A_09_02"); //But what if the great troll of 62 is unkilled by black magic and becomes the great undead troll of 417?
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_A_09_03"); //What if the bones of the nasty Dragon of 112 reunite and become the horrible dragon skeleton of 45?
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge_A_09_04"); //What if...?
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge_A_15_05"); //I see, you still need your sword.
 
 	Info_ClearChoices	(Info_Mod_GorNaDrak_Hueterklinge);
 };
@@ -119,7 +119,7 @@ INSTANCE Info_Mod_GorNaDrak_Hueterklinge2 (C_INFO)
 	information	= Info_Mod_GorNaDrak_Hueterklinge2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Schwert für dich.";
+	description	= "I have a sword for you.";
 };
 
 FUNC INT Info_Mod_GorNaDrak_Hueterklinge2_Condition()
@@ -137,34 +137,34 @@ FUNC INT Info_Mod_GorNaDrak_Hueterklinge2_Condition()
 
 FUNC VOID Info_Mod_GorNaDrak_Hueterklinge2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge2_15_00"); //Ich hab hier ein Schwert für dich.
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_09_01"); //Ach ja? Welches?
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge2_15_00"); //I have a sword for you.
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_09_01"); //Oh, yeah? Which one?
 
 	Info_ClearChoices	(Info_Mod_GorNaDrak_Hueterklinge2);
 
 	if (Npc_HasItems(hero, ItMw_Schwert1) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge2, "(edles Schwert anbieten)", Info_Mod_GorNaDrak_Hueterklinge2_C);
+		Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge2, "(offering noble sword)", Info_Mod_GorNaDrak_Hueterklinge2_C);
 	};
 	if (Npc_HasItems(hero, ItMw_1H_Common_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge2, "(Schwert anbieten)", Info_Mod_GorNaDrak_Hueterklinge2_B);
+		Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge2, "(offering sword)", Info_Mod_GorNaDrak_Hueterklinge2_B);
 	};
 	if (Npc_HasItems(hero, ItMw_1h_MISC_Sword) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge2, "(rostiges Schwert anbieten)", Info_Mod_GorNaDrak_Hueterklinge2_A);
+		Info_AddChoice	(Info_Mod_GorNaDrak_Hueterklinge2, "(offering rusty sword)", Info_Mod_GorNaDrak_Hueterklinge2_A);
 	};
 };
 
 FUNC VOID Info_Mod_GorNaDrak_Hueterklinge2_E()
 {
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_E_09_00"); //Oh ja, ein wunderschönes Schwert, ein Meisterwerk!
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_E_09_01"); //Geschmiedet von flinken Fingern, um von einer starken Hand geführt zu werden! Ich LIEBE es!
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge2_E_15_02"); //Dein altes Schwert wirst du jetzt wohl nicht mehr brauchen, oder?
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_E_09_03"); //Ach ja ... das sollte ich wohl wegwerfen.
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_E_09_04"); //Aber wir sind hier auf dem Gipfel eines Gletschers und ich sehe weit und breit keinen Abfallbehälter für Altmetall ...
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge2_E_15_05"); //Ich werf’s für dich weg.
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge2_E_15_06"); //Das ist sehr freundlich von dir! Vielen Dank.
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_E_09_00"); //Oh yes, a beautiful sword, a masterpiece!
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_E_09_01"); //Forged by nimble fingers to be guided by a strong hand! I LOVE it!
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge2_E_15_02"); //You won't need your old sword now, will you?
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_E_09_03"); //Oh, yes... I should probably throw that away.
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_E_09_04"); //But we are here on the top of a glacier and I don't see any waste bins for scrap metal...
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge2_E_15_05"); //I'll throw it away for you.
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_Hueterklinge2_E_15_06"); //That's very kind of you! Thank you very much.
 
 	if (Mod_TPL_Hueterklinge_Art == 2)
 	{
@@ -175,7 +175,7 @@ FUNC VOID Info_Mod_GorNaDrak_Hueterklinge2_E()
 		B_GiveInvItems	(self, hero, ItMw_AlteHueterklinge_1H, 1);
 	};
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Ich hab die alte Hüterklinge von Gor Na Drak. Ich sollte jetzt mal bei Cor Angar vorstellig werden.");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "I got the old Keeper's Blade from Gor Na Drak. I'm supposed to go to Cor Angar and introduce myself.");
 
 	Mod_TPL_Hueterklinge = 1;
 
@@ -184,8 +184,8 @@ FUNC VOID Info_Mod_GorNaDrak_Hueterklinge2_E()
 
 FUNC VOID Info_Mod_GorNaDrak_Hueterklinge2_D()
 {
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_D_09_00"); //Was?! Das soll ein Schwert sein?
-	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_D_09_01"); //Mit so etwas würd ich mir den Hintern nicht abwischen!
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_D_09_00"); //What?! That's a sword?
+	AI_Output(self, hero, "Info_Mod_GorNaDrak_Hueterklinge2_D_09_01"); //I wouldn't wipe my butt with something like that!
 
 	Info_ClearChoices	(Info_Mod_GorNaDrak_Hueterklinge2);
 };
@@ -233,12 +233,12 @@ INSTANCE Info_Mod_GorNaDrak_CrawlerZangen (C_INFO)
 	information	= Info_Mod_GorNaDrak_CrawlerZangen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kannst du mir sagen, wie ich an das Sekret eines Minecrawlers herankomme? (3 LP)";
+	description	= "Can you tell me how to get to the secretary of a minecrawler? (3 LP)";
 };
 
 FUNC INT Info_Mod_GorNaDrak_CrawlerZangen_Condition()
 {
-	Info_Mod_GorNaDrak_CrawlerZangen.description = B_BuildLearnString("Kannst du mir sagen, wie ich an das Sekret eines Minecrawlers herankomme?", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles));
+	Info_Mod_GorNaDrak_CrawlerZangen.description = B_BuildLearnString("Can you tell me how to get to the secretary of a minecrawler?", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_GorNaDrak_Lehrer))
 	&& (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Mandibles] == FALSE)
@@ -249,12 +249,12 @@ FUNC INT Info_Mod_GorNaDrak_CrawlerZangen_Condition()
 
 FUNC VOID Info_Mod_GorNaDrak_CrawlerZangen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaDrak_CrawlerZangen_15_00"); //Kannst du mir sagen, wie ich an das Sekret eines Minecrawlers herankomme?
+	AI_Output(hero, self, "Info_Mod_GorNaDrak_CrawlerZangen_15_00"); //Can you tell me how to get to the secretary of a minecrawler?
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 	{
-		AI_Output(self, hero, "Info_Mod_GorNaDrak_CrawlerZangen_09_01"); //Klar, nachdem du das Vieh getötet hast, packst du es an den Beißzangen und reißt sie gerade heraus. Dann kommt die Sekretdrüse mit raus, ohne zu zerreißen.
-		AI_Output(self, hero, "Info_Mod_GorNaDrak_CrawlerZangen_09_02"); //Ich habe übrigens gehört, dass das so auch mit Feldräubern klappen soll.
+		AI_Output(self, hero, "Info_Mod_GorNaDrak_CrawlerZangen_09_01"); //Sure, after you kill the cattle, grab it by the tongs and rip it out. Then the secretion gland comes out without tearing.
+		AI_Output(self, hero, "Info_Mod_GorNaDrak_CrawlerZangen_09_02"); //By the way, I've heard that this is how it works with field robbers.
 	};
 };
 

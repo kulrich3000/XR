@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Hauptmann_Hi (C_INFO)
 	information	= Info_Mod_Hauptmann_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Folgt mir!";
+	description	= "Follow me! Follow me!";
 };
 
 FUNC INT Info_Mod_Hauptmann_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Hauptmann_Hi_Condition()
 
 FUNC VOID Info_Mod_Hauptmann_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hauptmann_Hi_15_00"); //Folgt mir.
-	AI_Output(self, hero, "Info_Mod_Hauptmann_Hi_13_01"); //Gut, geh vorraus.
+	AI_Output(hero, self, "Info_Mod_Hauptmann_Hi_15_00"); //Follow me.
+	AI_Output(self, hero, "Info_Mod_Hauptmann_Hi_13_01"); //All right, go ahead.
 	
 	AI_StopProcessInfos	(self);
 
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_Hauptmann_Heiltrank (C_INFO)
 	information	= Info_Mod_Hauptmann_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Hauptmann_Heiltrank_Condition()
@@ -61,31 +61,31 @@ FUNC VOID Info_Mod_Hauptmann_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Essenz der Heilung", Info_Mod_Hauptmann_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Essence of Healing", Info_Mod_Hauptmann_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Elixier der Heilung", Info_Mod_Hauptmann_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Elixir of Healing", Info_Mod_Hauptmann_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Extrakt der Heilung", Info_Mod_Hauptmann_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Extract of Healing", Info_Mod_Hauptmann_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Essenz der Heilung", Info_Mod_Hauptmann_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Essence of Healing", Info_Mod_Hauptmann_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Trank der leichten Heilung", Info_Mod_Hauptmann_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Drink of light healing", Info_Mod_Hauptmann_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Leichter Heiltrank", Info_Mod_Hauptmann_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Light healing potion", Info_Mod_Hauptmann_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Hauptmann_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Hauptmann_Heiltrank, "Drink of fast healing", Info_Mod_Hauptmann_Heiltrank_Health_05);
 	};
 };
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Furt_Hi (C_INFO)
 	information	= Info_Mod_Furt_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie heißt du?";
+	description	= "What's your name?";
 };
 
 FUNC INT Info_Mod_Furt_Hi_Condition()
@@ -16,52 +16,52 @@ FUNC INT Info_Mod_Furt_Hi_Condition()
 
 FUNC VOID Info_Mod_Furt_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Hi_15_00"); //Wie heißt du?
-	AI_Output(self, hero, "Info_Mod_Furt_Hi_03_01"); //Ich wüsste nicht, was dich das angeht.
+	AI_Output(hero, self, "Info_Mod_Furt_Hi_15_00"); //What's your name?
+	AI_Output(self, hero, "Info_Mod_Furt_Hi_03_01"); //I don't know what that means to you.
 
 	Info_ClearChoices	(Info_Mod_Furt_Hi);
 
-	Info_AddChoice	(Info_Mod_Furt_Hi, "Du hast Recht. Ich geh dann mal.", Info_Mod_Furt_Hi_B);
-	Info_AddChoice	(Info_Mod_Furt_Hi, "Was ist dir denn über die Leber gelaufen?", Info_Mod_Furt_Hi_A);
+	Info_AddChoice	(Info_Mod_Furt_Hi, "You're right. You're right. I'll be going, then.", Info_Mod_Furt_Hi_B);
+	Info_AddChoice	(Info_Mod_Furt_Hi, "What the hell's wrong with you?", Info_Mod_Furt_Hi_A);
 };
 
 FUNC VOID Info_Mod_Furt_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Hi_B_15_00"); //Du hast Recht. Ich geh dann mal.
-	AI_Output(self, hero, "Info_Mod_Furt_Hi_B_03_01"); //Ist auch besser für dich.
+	AI_Output(hero, self, "Info_Mod_Furt_Hi_B_15_00"); //You're right. You're right. I'll be going, then.
+	AI_Output(self, hero, "Info_Mod_Furt_Hi_B_03_01"); //It's better for you, too.
 
 	Info_ClearChoices	(Info_Mod_Furt_Hi);
 };
 
 FUNC VOID Info_Mod_Furt_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Hi_A_15_00"); //Was ist dir denn über die Leber gelaufen?
-	AI_Output(self, hero, "Info_Mod_Furt_Hi_A_03_01"); //Mach nur weiter so ...
+	AI_Output(hero, self, "Info_Mod_Furt_Hi_A_15_00"); //What the hell's wrong with you?
+	AI_Output(self, hero, "Info_Mod_Furt_Hi_A_03_01"); //Keep up the good work...
 
 	Info_ClearChoices	(Info_Mod_Furt_Hi);
 
-	Info_AddChoice	(Info_Mod_Furt_Hi, "Du hast bestimmt nicht viele Freunde, oder?", Info_Mod_Furt_Hi_D);
-	Info_AddChoice	(Info_Mod_Furt_Hi, "Sag mal, machst du jeden Neuen so an?", Info_Mod_Furt_Hi_C);
+	Info_AddChoice	(Info_Mod_Furt_Hi, "You don't have many friends, do you?", Info_Mod_Furt_Hi_D);
+	Info_AddChoice	(Info_Mod_Furt_Hi, "Say, is that how you turn every new guy on?", Info_Mod_Furt_Hi_C);
 };
 
 FUNC VOID Info_Mod_Furt_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Hi_D_15_00"); //Du hast bestimmt nicht viele Freunde, oder?
-	AI_Output(self, hero, "Info_Mod_Furt_Hi_D_03_01"); //Bestimmt mehr als du. Und jetzt hau ab!
-	AI_Output(hero, self, "Info_Mod_Furt_Hi_D_15_02"); //Ich bin noch nicht fertig.
-	AI_Output(self, hero, "Info_Mod_Furt_Hi_D_03_03"); //Du verschwindest besser, bevor ich dir aufs Maul haue!
+	AI_Output(hero, self, "Info_Mod_Furt_Hi_D_15_00"); //You don't have many friends, do you?
+	AI_Output(self, hero, "Info_Mod_Furt_Hi_D_03_01"); //Probably more than you do. Now get out of here!
+	AI_Output(hero, self, "Info_Mod_Furt_Hi_D_15_02"); //I'm not finished yet.
+	AI_Output(self, hero, "Info_Mod_Furt_Hi_D_03_03"); //You better get out of here before I hit you in the mouth!
 
 	Info_ClearChoices	(Info_Mod_Furt_Hi);
 };
 
 FUNC VOID Info_Mod_Furt_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Hi_C_15_00"); //Sag mal, machst du jeden Neuen so an?
-	AI_Output(self, hero, "Info_Mod_Furt_Hi_C_03_01"); //Ja.
-	AI_Output(hero, self, "Info_Mod_Furt_Hi_C_15_02"); //Bist wohl kein Mann der großen Worte, was?
-	AI_Output(self, hero, "Info_Mod_Furt_Hi_C_03_03"); //Nein.
-	AI_Output(hero, self, "Info_Mod_Furt_Hi_C_15_04"); //Willst du mir sonst noch was sagen?
-	AI_Output(self, hero, "Info_Mod_Furt_Hi_C_03_05"); //Ja. Hau ab!
+	AI_Output(hero, self, "Info_Mod_Furt_Hi_C_15_00"); //Say, is that how you turn every new guy on?
+	AI_Output(self, hero, "Info_Mod_Furt_Hi_C_03_01"); //Yeah.
+	AI_Output(hero, self, "Info_Mod_Furt_Hi_C_15_02"); //You're not a man of big words, are you?
+	AI_Output(self, hero, "Info_Mod_Furt_Hi_C_03_03"); //No.
+	AI_Output(hero, self, "Info_Mod_Furt_Hi_C_15_04"); //Anything else you want to tell me?
+	AI_Output(self, hero, "Info_Mod_Furt_Hi_C_03_05"); //Yeah. Hau ab!
 
 	Info_ClearChoices	(Info_Mod_Furt_Hi);
 };
@@ -88,9 +88,9 @@ FUNC INT Info_Mod_Furt_Faice_Condition()
 
 FUNC VOID Info_Mod_Furt_Faice_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Furt_Faice_03_00"); //Was gibt’s?
-	AI_Output(hero, self, "Info_Mod_Furt_Faice_15_01"); //Ich habe gehört, du weißt etwas über die Vergiftung der Spruchrolle.
-	AI_Output(self, hero, "Info_Mod_Furt_Faice_03_02"); //Was? Nein! Ich weiß nichts!
+	AI_Output(self, hero, "Info_Mod_Furt_Faice_03_00"); //What's up?
+	AI_Output(hero, self, "Info_Mod_Furt_Faice_15_01"); //I hear you know something about the poisoning of the role of spell.
+	AI_Output(self, hero, "Info_Mod_Furt_Faice_03_02"); //What? No! I don't know anything!
 };
 
 INSTANCE Info_Mod_Furt_Faice02 (C_INFO)
@@ -101,7 +101,7 @@ INSTANCE Info_Mod_Furt_Faice02 (C_INFO)
 	information	= Info_Mod_Furt_Faice02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich weiß, dass du es bist. Leugnen ist zwecklos.";
+	description	= "I know it's you. Denial is futile.";
 };
 
 FUNC INT Info_Mod_Furt_Faice02_Condition()
@@ -117,16 +117,16 @@ FUNC INT Info_Mod_Furt_Faice02_Condition()
 
 FUNC VOID Info_Mod_Furt_Faice02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Faice02_15_00"); //Ich weiß, dass du es bist. Leugnen ist zwecklos.
-	AI_Output(self, hero, "Info_Mod_Furt_Faice02_03_01"); //Wie? Wer hat dir das gesagt?
-	AI_Output(hero, self, "Info_Mod_Furt_Faice02_15_02"); //Das spielt keine Rolle. Gestehe und es wird kein Blutvergießen geben.
-	AI_Output(self, hero, "Info_Mod_Furt_Faice02_03_03"); //Okay, okay! Ich gestehe! Ich habe die Spruchrolle vergiftet.
-	AI_Output(hero, self, "Info_Mod_Furt_Faice02_15_04"); //Na bitte, geht doch. Warum hast du das getan?
-	AI_Output(self, hero, "Info_Mod_Furt_Faice02_03_05"); //Ich werde meinen Auftraggeber nicht verraten!
-	AI_Output(hero, self, "Info_Mod_Furt_Faice02_15_06"); //Was soll ich jetzt mit dir machen?
-	AI_Output(self, hero, "Info_Mod_Furt_Faice02_03_07"); //Lass mich laufen. Ich gebe dir 500 Goldmünzen und eine Spruchrolle „Verwandlung Keiler“.
+	AI_Output(hero, self, "Info_Mod_Furt_Faice02_15_00"); //I know it's you. Denial is futile.
+	AI_Output(self, hero, "Info_Mod_Furt_Faice02_03_01"); //How? Who told you that?
+	AI_Output(hero, self, "Info_Mod_Furt_Faice02_15_02"); //It doesn't matter. Confess, and there will be no bloodshed.
+	AI_Output(self, hero, "Info_Mod_Furt_Faice02_03_03"); //Okay, okay, okay! I confess! I poisoned the role of spell.
+	AI_Output(hero, self, "Info_Mod_Furt_Faice02_15_04"); //There you go, there you go. Why did you do that?
+	AI_Output(self, hero, "Info_Mod_Furt_Faice02_03_05"); //I won't betray my employer!
+	AI_Output(hero, self, "Info_Mod_Furt_Faice02_15_06"); //What am I supposed to do with you?
+	AI_Output(self, hero, "Info_Mod_Furt_Faice02_03_07"); //Just let me go. I'll give you 500 gold coins and a role of "Transformation Boar".
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich habe herausgefunden, dass Furt die Spruchrolle vergiftet hat.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "I found out that Furt poisoned the role of spell.");
 };
 
 INSTANCE Info_Mod_Furt_Faice03 (C_INFO)
@@ -137,7 +137,7 @@ INSTANCE Info_Mod_Furt_Faice03 (C_INFO)
 	information	= Info_Mod_Furt_Faice03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum so aufgebracht?";
+	description	= "Why are you so upset?";
 };
 
 FUNC INT Info_Mod_Furt_Faice03_Condition()
@@ -152,10 +152,10 @@ FUNC INT Info_Mod_Furt_Faice03_Condition()
 
 FUNC VOID Info_Mod_Furt_Faice03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Faice03_15_00"); //Warum so aufgebracht?
-	AI_Output(self, hero, "Info_Mod_Furt_Faice03_03_01"); //Ich ... ich kann es immer noch nicht fassen, dass Faice vergiftet worden ist.
-	AI_Output(hero, self, "Info_Mod_Furt_Faice03_15_02"); //(ironisch) Natürlich.
-	AI_Output(self, hero, "Info_Mod_Furt_Faice03_03_03"); //Aber ... ich weiß wirklich von nichts!
+	AI_Output(hero, self, "Info_Mod_Furt_Faice03_15_00"); //Why are you so upset?
+	AI_Output(self, hero, "Info_Mod_Furt_Faice03_03_01"); //l-- I still can't believe Faice's been poisoned.
+	AI_Output(hero, self, "Info_Mod_Furt_Faice03_15_02"); //(ironic) Of course.
+	AI_Output(self, hero, "Info_Mod_Furt_Faice03_03_03"); //But... I really don't know anything!
 };
 
 INSTANCE Info_Mod_Furt_Faice04 (C_INFO)
@@ -166,7 +166,7 @@ INSTANCE Info_Mod_Furt_Faice04 (C_INFO)
 	information	= Info_Mod_Furt_Faice04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Okay, gib mir das Zeug und verschwinde.";
+	description	= "Okay, give me the stuff and get out of here.";
 };
 
 FUNC INT Info_Mod_Furt_Faice04_Condition()
@@ -181,15 +181,15 @@ FUNC INT Info_Mod_Furt_Faice04_Condition()
 
 FUNC VOID Info_Mod_Furt_Faice04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Faice04_15_00"); //Okay, gib mir das Zeug und verschwinde.
-	AI_Output(self, hero, "Info_Mod_Furt_Faice04_03_01"); //Hier. Jetzt mach's gut.
+	AI_Output(hero, self, "Info_Mod_Furt_Faice04_15_00"); //Okay, give me the stuff and get out of here.
+	AI_Output(self, hero, "Info_Mod_Furt_Faice04_03_01"); //Here. Take care now.
 
 	CreateInvItems	(hero, ItMi_Gold, 500);
 	CreateInvItems	(hero, ItSc_TrfKeiler, 1);
 
-	B_ShowGivenThings	("500 Gold und eine Spruchrolle 'Verwandlung Keiler' erhalten");
+	B_ShowGivenThings	("500 Gold and a role of' Transformation Boar' received");
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich habe Furt laufen lassen und ein paar Gegenstände von ihm erhalten. Er wird sich wohl nicht wieder blicken lassen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "I ran Furt and got some items from him. He won't show up again.");
 
 	Mod_VMG_FaiceGifty_Gift = 12;
 
@@ -206,7 +206,7 @@ INSTANCE Info_Mod_Furt_Faice05 (C_INFO)
 	information	= Info_Mod_Furt_Faice05_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das reicht nicht.";
+	description	= "That's not good enough.";
 };
 
 FUNC INT Info_Mod_Furt_Faice05_Condition()
@@ -220,8 +220,8 @@ FUNC INT Info_Mod_Furt_Faice05_Condition()
 
 FUNC VOID Info_Mod_Furt_Faice05_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Faice05_15_00"); //Das reicht nicht.
-	AI_Output(self, hero, "Info_Mod_Furt_Faice05_03_01"); //Ich gebe dir noch eine Spruchrolle drauf. Mehr gibt es nicht.
+	AI_Output(hero, self, "Info_Mod_Furt_Faice05_15_00"); //That's not good enough.
+	AI_Output(self, hero, "Info_Mod_Furt_Faice05_03_01"); //I'll give you another spell. That's all there is.
 	
 	Mod_VMG_FaiceGifty_Gift = 11;
 };
@@ -234,7 +234,7 @@ INSTANCE Info_Mod_Furt_Faice06 (C_INFO)
 	information	= Info_Mod_Furt_Faice06_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich werde Turndil erzählen, dass du die Spruchrolle vergiftet hast.";
+	description	= "I'm gonna tell Turndil that you poisoned the part of spell.";
 };
 
 FUNC INT Info_Mod_Furt_Faice06_Condition()
@@ -249,14 +249,14 @@ FUNC INT Info_Mod_Furt_Faice06_Condition()
 
 FUNC VOID Info_Mod_Furt_Faice06_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Furt_Faice06_15_00"); //Ich werde Turndil erzählen, dass du die Spruchrolle vergiftet hast.
-	AI_Output(self, hero, "Info_Mod_Furt_Faice06_03_01"); //Tu, was du nicht lassen kannst.
-	AI_Output(hero, self, "Info_Mod_Furt_Faice06_15_02"); //Ja, ich werde zu Turendil gehen.
-	AI_Output(self, hero, "Info_Mod_Furt_Faice06_03_03"); //Dann ist es so. Lebe wohl.
+	AI_Output(hero, self, "Info_Mod_Furt_Faice06_15_00"); //I'm gonna tell Turndil that you poisoned the part of spell.
+	AI_Output(self, hero, "Info_Mod_Furt_Faice06_03_01"); //Do what you can't let go.
+	AI_Output(hero, self, "Info_Mod_Furt_Faice06_15_02"); //Yes, I'll go to Turendil.
+	AI_Output(self, hero, "Info_Mod_Furt_Faice06_03_03"); //Then that's the way it is. Farewell. Goodbye.
 
 	Mod_VMG_FaiceGifty_Gift = 13;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich werde Turendil verraten, dass Furt die Spruchrolle von Faice vergiftet hat.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "I'll tell Turendil that Furt poisoned Faice's part of the story.");
 
 	AI_StopProcessInfos	(self);
 };

@@ -20,7 +20,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Eminem_AchillesSchwert_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Eminem_AchillesSchwert_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Achilles Schwert schärfen";
+	description	= "Sharpening Achilles sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Eminem_AchillesSchwert_01_Condition()
@@ -50,7 +50,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Addon_Hacker_1h_02 (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Addon_Hacker_1h_02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Alte Machete schärfen";
+	description	= "Sharpening old machete";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Addon_Hacker_1h_02_Condition()
@@ -80,7 +80,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Addon_Hacker_2h_02 (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Addon_Hacker_2h_02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Alte Riesenmachete schärfen";
+	description	= "Sharpening old giant machines";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Addon_Hacker_2h_02_Condition()
@@ -110,7 +110,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Assassinenkralle (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Assassinenkralle_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Assassinenkralle schärfen";
+	description	= "Sharpening the Assassin's Claw";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Assassinenkralle_Condition()
@@ -140,7 +140,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Assassinenschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Assassinenschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Assassinenschwert schärfen";
+	description	= "Sharpening the Assassin Sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Assassinenschwert_Condition()
@@ -170,7 +170,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Neok_Athos_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Neok_Athos_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Athos schärfen";
+	description	= "Sharpening Athos";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Neok_Athos_01_Condition()
@@ -200,7 +200,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Avaquar (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Avaquar_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Avaquar schärfen";
+	description	= "Sharpening Avaquariums";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Avaquar_Condition()
@@ -230,7 +230,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Banditenschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Banditenschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Banditenschwert schärfen";
+	description	= "Sharpening the Bandit Sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Banditenschwert_Condition()
@@ -260,7 +260,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Barbarenstreitaxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Barbarenstreitaxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Barbarenstreitaxt schärfen";
+	description	= "Sharpening the barbarian battle axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Barbarenstreitaxt_Condition()
@@ -290,7 +290,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Bartaxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Bartaxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bartaxt schärfen";
+	description	= "Sharpening the beard axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Bartaxt_Condition()
@@ -320,7 +320,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_Vlk_Axe (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_Vlk_Axe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Beil schärfen";
+	description	= "Sharpen axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_Vlk_Axe_Condition()
@@ -350,7 +350,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Berserkeraxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Berserkeraxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Berserkeraxt schärfen";
+	description	= "Sharpen Berserker axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Berserkeraxt_Condition()
@@ -380,7 +380,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Addon_Betty (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Addon_Betty_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Betty schärfen";
+	description	= "Sharpen Betty";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Addon_Betty_Condition()
@@ -410,7 +410,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Axe_Old_02 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Axe_Old_02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bluternter schärfen";
+	description	= "Sharpening of haemophiliacs";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Axe_Old_02_Condition()
@@ -440,7 +440,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Daemonenjaegerschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Daemonenjaegerschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Dämonenjägerschwert schärfen";
+	description	= "Sharpen Demon Hunter Sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Daemonenjaegerschwert_Condition()
@@ -470,7 +470,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_Vlk_Sword (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_Vlk_Sword_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Degen schärfen";
+	description	= "epee sharpening";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_Vlk_Sword_Condition()
@@ -500,7 +500,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Addon_BanditTrader (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Addon_BanditTrader_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Degen der Banditen schärfen";
+	description	= "Sharpening the bandits' swords";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Addon_BanditTrader_Condition()
@@ -530,7 +530,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_Vlk_Dagger (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_Vlk_Dagger_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Dolch schärfen";
+	description	= "Dagger sharpening";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_Vlk_Dagger_Condition()
@@ -560,7 +560,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Doppelaxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Doppelaxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Doppelaxt schärfen";
+	description	= "Sharpening double axes";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Doppelaxt_Condition()
@@ -590,7 +590,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Drachenaxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Drachenaxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Drachenaxt schärfen";
+	description	= "Dragon axe sharpening";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Drachenaxt_Condition()
@@ -620,7 +620,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Drachenschneide (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Drachenschneide_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Drachenschneide schärfen";
+	description	= "Sharpening the kite edge";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Drachenschneide_Condition()
@@ -650,7 +650,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schwert5 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schwert5_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Edles Bastardschwert schärfen";
+	description	= "Sharpen noble bastard sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schwert5_Condition()
@@ -680,7 +680,7 @@ INSTANCE PC_Herd_Sharp_ItMw_ShortSword5 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_ShortSword5_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Edles Kurzschwert schärfen";
+	description	= "Sharpen noble short sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_ShortSword5_Condition()
@@ -710,7 +710,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schwert4 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schwert4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Edles Langschwert schärfen";
+	description	= "Sharpening of noble long sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schwert4_Condition()
@@ -740,7 +740,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schwert1 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schwert1_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Edles Schwert schärfen";
+	description	= "Sharpening noble sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schwert1_Condition()
@@ -770,7 +770,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Eminem_Eisenklinge_02 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Eminem_Eisenklinge_02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Eisenklinge schärfen";
+	description	= "Sharpening the iron blade";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Eminem_Eisenklinge_02_Condition()
@@ -800,7 +800,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Eminem_Eisenklinge_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Eminem_Eisenklinge_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Eisenklinge schärfen";
+	description	= "Sharpening the iron blade";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Eminem_Eisenklinge_01_Condition()
@@ -830,7 +830,7 @@ INSTANCE PC_Herd_Sharp_ITMW_ICESWORD (C_INFO)
 	information	= PC_Herd_Sharp_ITMW_ICESWORD_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Eisschwert schärfen";
+	description	= "Sharpening the ice sword";
 };
 
 FUNC INT PC_Herd_Sharp_ITMW_ICESWORD_Condition()
@@ -860,7 +860,7 @@ INSTANCE PC_Herd_Sharp_ItMw_ElBastardo (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_ElBastardo_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "El Bastardo schärfen";
+	description	= "Sharpening El Bastardo";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_ElBastardo_Condition()
@@ -890,7 +890,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Addon_PIR1hAxe (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Addon_PIR1hAxe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Enteraxt schärfen";
+	description	= "Sharpening the Enteraxt";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Addon_PIR1hAxe_Condition()
@@ -920,7 +920,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Addon_PIR1hSword (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Addon_PIR1hSword_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Entermesser schärfen";
+	description	= "Sharpening the cutlasses";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Addon_PIR1hSword_Condition()
@@ -950,7 +950,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Addon_PIR2hSword (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Addon_PIR2hSword_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Enterschwert schärfen";
+	description	= "Sharpening the cutlass";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Addon_PIR2hSword_Condition()
@@ -980,7 +980,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_04 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_04_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Drachentöter schärfen";
+	description	= "Sharpen ore dragonslayer";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_04_Condition()
@@ -1010,7 +1010,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_04_Feuer (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_04_Feuer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Drachentöter des Versengens schärfen";
+	description	= "Sharpen scorching ore dragon slayer";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_04_Feuer_Condition()
@@ -1040,7 +1040,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_04_Wasser (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_04_Wasser_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Drachentöter des Wasserhiebes schärfen";
+	description	= "Sharpen the ore dragonkillers of the water stroke";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_04_Wasser_Condition()
@@ -1070,7 +1070,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_04_Dex (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_04_Dex_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Drachenstecher schärfen";
+	description	= "Sharpening of the Ore Dragonfighters";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_04_Dex_Condition()
@@ -1100,7 +1100,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_04_Dex_Feuer (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_04_Dex_Feuer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Drachenstecher des Versengens schärfen";
+	description	= "Sharpen the ore dragonfighters of scorching";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_04_Dex_Feuer_Condition()
@@ -1130,7 +1130,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_04_Dex_Wasser (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_04_Dex_Wasser_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Drachenstecher des Wasserhiebes schärfen";
+	description	= "Sharpen ore dragonfighters of the water stroke";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_04_Dex_Wasser_Condition()
@@ -1160,7 +1160,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_03 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Schlachtklinge schärfen";
+	description	= "Sharpening the ore battle blade";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_03_Condition()
@@ -1190,7 +1190,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_03_Feuer (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_03_Feuer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Schlachtklinge des Versengens schärfen";
+	description	= "Sharpening the ore battle blade of scorching";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_03_Feuer_Condition()
@@ -1220,7 +1220,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_03_Wasser (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_03_Wasser_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Schlachtklinge des Wasserhiebes schärfen";
+	description	= "Sharpening the ore battle blade of the water cut";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_03_Wasser_Condition()
@@ -1250,7 +1250,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_03_Dex (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_03_Dex_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Schlachtstecher schärfen";
+	description	= "Sharpening of ore butcher's knives";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_03_Dex_Condition()
@@ -1280,7 +1280,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_03_Dex_Feuer (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_03_Dex_Feuer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Schlachtstecher des Versengens schärfen";
+	description	= "Sharpen the ore butcher of scorching";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_03_Dex_Feuer_Condition()
@@ -1310,7 +1310,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Special_03_Dex_Wasser (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Special_03_Dex_Wasser_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erz-Schlachtstecher des Wasserhiebes schärfen";
+	description	= "Sharpen ore butcher's knife of the water cut";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Special_03_Dex_Wasser_Condition()
@@ -1340,7 +1340,7 @@ INSTANCE PC_Herd_Sharp_ITMW_Feuerschwert (C_INFO)
 	information	= PC_Herd_Sharp_ITMW_Feuerschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Feuerschwert schärfen";
+	description	= "Sharpen fire sword";
 };
 
 FUNC INT PC_Herd_Sharp_ITMW_Feuerschwert_Condition()
@@ -1370,7 +1370,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Folteraxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Folteraxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Folteraxt schärfen";
+	description	= "Sharpening the torture axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Folteraxt_Condition()
@@ -1400,7 +1400,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Sword_03 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Sword_03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gardeschwert schärfen";
+	description	= "Sharpening the garden sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Sword_03_Condition()
@@ -1430,7 +1430,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Sword_Broad_04 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Sword_Broad_04_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gardistenhand schärfen";
+	description	= "Sharpening the guardsman's hand";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Sword_Broad_04_Condition()
@@ -1460,7 +1460,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Gladius (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Gladius_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gladius schärfen";
+	description	= "Sharpening Gladius";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Gladius_Condition()
@@ -1490,7 +1490,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2h_Sld_Axe (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2h_Sld_Axe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Grobe Kriegsaxt schärfen";
+	description	= "Sharpening a coarse waraxe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2h_Sld_Axe_Condition()
@@ -1520,7 +1520,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2h_Sld_Sword (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2h_Sld_Sword_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Grober Zweihänder schärfen";
+	description	= "Sharpening rough two-handed people";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2h_Sld_Sword_Condition()
@@ -1550,7 +1550,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schwert3 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schwert3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Grobes Bastardschwert schärfen";
+	description	= "Sharpening coarse bastard sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schwert3_Condition()
@@ -1580,7 +1580,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_Mil_Sword (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_Mil_Sword_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Grobes Breitschwert schärfen";
+	description	= "Sharpening the broadsword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_Mil_Sword_Condition()
@@ -1610,7 +1610,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_Sld_Axe (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_Sld_Axe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Grobes Kriegsbeil schärfen";
+	description	= "Sharpening the rough hatchet";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_Sld_Axe_Condition()
@@ -1640,7 +1640,7 @@ INSTANCE PC_Herd_Sharp_ItMw_ShortSword2 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_ShortSword2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Grobes Kurzschwert schärfen";
+	description	= "Sharpening the coarse short sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_ShortSword2_Condition()
@@ -1670,7 +1670,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Grobes Langschwert schärfen";
+	description	= "Sharpening the coarse long sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schwert_Condition()
@@ -1700,7 +1700,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_Sld_Sword (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_Sld_Sword_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Grobes Schwert schärfen";
+	description	= "Sharpening the coarse sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_Sld_Sword_Condition()
@@ -1730,7 +1730,7 @@ INSTANCE PC_Herd_Sharp_ItMw_FrancisDagger_Mis (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_FrancisDagger_Mis_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Guten Dolch schärfen";
+	description	= "Sharpening a good dagger";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_FrancisDagger_Mis_Condition()
@@ -1760,7 +1760,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Hellebarde (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Hellebarde_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Hellebarde schärfen";
+	description	= "Sharpening the halberd";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Hellebarde_Condition()
@@ -1790,7 +1790,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2h_Bau_Axe (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2h_Bau_Axe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Holzfälleraxt schärfen";
+	description	= "Sharpening the lumberjack axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2h_Bau_Axe_Condition()
@@ -1820,7 +1820,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Blessed_03 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Blessed_03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Innos Zorn schärfen";
+	description	= "Sharpening Inno's anger";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Blessed_03_Condition()
@@ -1850,7 +1850,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Katana (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Katana_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Katana schärfen";
+	description	= "Sharpening Katana";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Katana_Condition()
@@ -1880,7 +1880,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Kilgorin (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Kilgorin_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kilgorin schärfen";
+	description	= "Sharpening Kilgorin";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Kilgorin_Condition()
@@ -1910,7 +1910,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Klauenschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Klauenschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Klauenschwert schärfen";
+	description	= "Sharpening the hoof sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Klauenschwert_Condition()
@@ -1940,7 +1940,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Sense (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Sense_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kleine Sense schärfen";
+	description	= "Sharpening a small scythe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Sense_Condition()
@@ -1970,7 +1970,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Klingendolch (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Klingendolch_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Klingendolch schärfen";
+	description	= "Sharpening a blade dagger";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Klingendolch_Condition()
@@ -2000,7 +2000,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Krummschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Krummschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Krummschwert schärfen";
+	description	= "Sharpening the Curvature Sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Krummschwert_Condition()
@@ -2030,7 +2030,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_OrcAxe_03 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_OrcAxe_03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Krush Agash schärfen";
+	description	= "Sharpening Krush Agash";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_OrcAxe_03_Condition()
@@ -2060,7 +2060,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_OrcAxe_04 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_OrcAxe_04_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Krush BrokDar schärfen";
+	description	= "Sharpening Krush BrokDar";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_OrcAxe_04_Condition()
@@ -2090,7 +2090,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_OrcAxe_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_OrcAxe_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Krush Pach schärfen";
+	description	= "Sharpening Krush Pach";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_OrcAxe_01_Condition()
@@ -2120,7 +2120,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_OrcAxe_02 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_OrcAxe_02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Krush UrRok schärfen";
+	description	= "Sharpening Krush UrRok";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_OrcAxe_02_Condition()
@@ -2150,7 +2150,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_OrcSword_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_OrcSword_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Krush Varrok schärfen";
+	description	= "Sharpening Krush Varrok";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_OrcSword_01_Condition()
@@ -2180,7 +2180,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Kurzschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Kurzschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kurzschwert schärfen";
+	description	= "Sharpening the short sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Kurzschwert_Condition()
@@ -2210,7 +2210,7 @@ INSTANCE PC_Herd_Sharp_ItMw_ShortSword3 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_ShortSword3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kurzschwert schärfen";
+	description	= "Sharpening the short sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_ShortSword3_Condition()
@@ -2240,7 +2240,7 @@ INSTANCE PC_Herd_Sharp_ItMw_ShortSword1 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_ShortSword1_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kurzschwert der Miliz schärfen";
+	description	= "Sharpen short sword of militia";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_ShortSword1_Condition()
@@ -2270,7 +2270,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schwert2 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schwert2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Langschwert schärfen";
+	description	= "Sharpening the long sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schwert2_Condition()
@@ -2300,7 +2300,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Zweihaender1 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Zweihaender1_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Leichten Zweihänder schärfen";
+	description	= "Sharpening light two-handed people";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Zweihaender1_Condition()
@@ -2330,7 +2330,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Sword_Light_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Sword_Light_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Leichten Zweihänder schärfen";
+	description	= "Sharpening light two-handed people";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Sword_Light_01_Condition()
@@ -2360,7 +2360,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Streitaxt1 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Streitaxt1_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Leichte Streitaxt schärfen";
+	description	= "Sharpen light battle axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Streitaxt1_Condition()
@@ -2390,7 +2390,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Light (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Light_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Light schärfen";
+	description	= "Sharpening Light";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Light_Condition()
@@ -2420,7 +2420,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Addon_Hacker_1h_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Addon_Hacker_1h_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Machete schärfen";
+	description	= "Sharpening Machete";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Addon_Hacker_1h_01_Condition()
@@ -2450,7 +2450,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Meisterdegen (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Meisterdegen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Meisterdegen schärfen";
+	description	= "Master sword sharpen";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Meisterdegen_Condition()
@@ -2480,7 +2480,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Opferschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Opferschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Opferschwert schärfen";
+	description	= "Sharpening the Sacrificial Sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Opferschwert_Condition()
@@ -2510,7 +2510,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_OrcSword_02 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_OrcSword_02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Orkisches Kriegsschwert schärfen";
+	description	= "Sharpening the Orcish War Sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_OrcSword_02_Condition()
@@ -2540,7 +2540,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Orkpickser (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Orkpickser_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Orkpickser schärfen";
+	description	= "Sharpening Orc pickers";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Orkpickser_Condition()
@@ -2570,7 +2570,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Orkpickser_Feuer (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Orkpickser_Feuer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Orkpickser des Versengens schärfen";
+	description	= "Sharpen orc picker of scorching";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Orkpickser_Feuer_Condition()
@@ -2600,7 +2600,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Orkpickser_Wasser (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Orkpickser_Wasser_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Orkpickser des Wasserhiebes schärfen";
+	description	= "Sharpening the Orc picker of the water stroke";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Orkpickser_Wasser_Condition()
@@ -2630,7 +2630,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Orkschlaechter (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Orkschlaechter_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Orkschlächter schärfen";
+	description	= "Sharpening Orcslaughterers";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Orkschlaechter_Condition()
@@ -2660,7 +2660,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Orkschlaechter_Feuer (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Orkschlaechter_Feuer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Orkschlächter des Versengens schärfen";
+	description	= "Sharpen orc butchers of scorching";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Orkschlaechter_Feuer_Condition()
@@ -2690,7 +2690,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Orkschlaechter_Wasser (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Orkschlaechter_Wasser_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Orkschlächter des Wasserhiebes schärfen";
+	description	= "Sharpening the Orcslaughterers of the Water Slash";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Orkschlaechter_Wasser_Condition()
@@ -2720,7 +2720,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_Pal_Sword (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_Pal_Sword_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Paladinschwert schärfen";
+	description	= "Sharpening the Paladin sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_Pal_Sword_Condition()
@@ -2750,7 +2750,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Paladinschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Paladinschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Paladinschwert schärfen";
+	description	= "Sharpening the Paladin sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Paladinschwert_Condition()
@@ -2780,7 +2780,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2h_Pal_Sword (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2h_Pal_Sword_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Paladin Zweihänder schärfen";
+	description	= "Paladin two-handed sharpening";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2h_Pal_Sword_Condition()
@@ -2810,7 +2810,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Piratensaebel (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Piratensaebel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Piratensäbel schärfen";
+	description	= "Sharpening pirate sabers";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Piratensaebel_Condition()
@@ -2840,7 +2840,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Addon_PIR2hAxe (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Addon_PIR2hAxe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Plankenbrecher schärfen";
+	description	= "Sharpening plank crushers";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Addon_PIR2hAxe_Condition()
@@ -2869,7 +2869,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Rapier (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Rapier_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Rapier schärfen";
+	description	= "Sharpen Rapier";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Rapier_Condition()
@@ -2899,7 +2899,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Richtstab (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Richtstab_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Richtstab schärfen";
+	description	= "Sharpening the guide rod";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Richtstab_Condition()
@@ -2929,7 +2929,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Addon_Hacker_2h_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Addon_Hacker_2h_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Riesenmachete schärfen";
+	description	= "Sharpening giant machetes";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Addon_Hacker_2h_01_Condition()
@@ -2959,7 +2959,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_Misc_Axe (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_Misc_Axe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Rostige Axt schärfen";
+	description	= "Sharpening rusty axes";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_Misc_Axe_Condition()
@@ -2989,7 +2989,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Sword_M_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Sword_M_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Rostiger Zweihänder schärfen";
+	description	= "Sharpening rusty two-handed people";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Sword_M_01_Condition()
@@ -3019,7 +3019,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_MISC_Sword (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_MISC_Sword_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Rostiges Schwert schärfen";
+	description	= "Sharpen rusty sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_MISC_Sword_Condition()
@@ -3049,7 +3049,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Rubinklinge (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Rubinklinge_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Rubinklinge schärfen";
+	description	= "Sharpening the ruby blade";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Rubinklinge_Condition()
@@ -3079,7 +3079,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Zweihaender3 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Zweihaender3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Runen - Macht schärfen";
+	description	= "Runes - Sharpening Power";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Zweihaender3_Condition()
@@ -3109,7 +3109,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Runenschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Runenschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Runenschwert schärfen";
+	description	= "Sharpening the rune sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Runenschwert_Condition()
@@ -3139,7 +3139,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Schaedelbrecher (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Schaedelbrecher_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schädelbrecher schärfen";
+	description	= "Sharpening skull crushers";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Schaedelbrecher_Condition()
@@ -3169,7 +3169,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schiffsaxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schiffsaxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schiffsaxt schärfen";
+	description	= "Sharpening axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schiffsaxt_Condition()
@@ -3199,7 +3199,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schlachtaxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schlachtaxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schlachtaxt schärfen";
+	description	= "Sharpen battle axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schlachtaxt_Condition()
@@ -3229,7 +3229,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schmetteraxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schmetteraxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schmetteraxt schärfen";
+	description	= "Sharpening the butterfly axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schmetteraxt_Condition()
@@ -3259,7 +3259,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Mace_L_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Mace_L_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schürhaken schärfen";
+	description	= "Sharpening poker";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Mace_L_01_Condition()
@@ -3289,7 +3289,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schuetterschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schuetterschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schütterschwert schärfen";
+	description	= "Sharpening the sharpeners";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schuetterschwert_Condition()
@@ -3319,7 +3319,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Special_03 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Special_03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwere Erz-Schlachtklinge schärfen";
+	description	= "Sharpen heavy ore battle blade";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Special_03_Condition()
@@ -3349,7 +3349,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Special_03_Feuer (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Special_03_Feuer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwere Erz-Schlachtklinge des Versengens schärfen";
+	description	= "Sharpening Heavy Searing Ore Battle Blade";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Special_03_Feuer_Condition()
@@ -3379,7 +3379,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Special_03_Wasser (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Special_03_Wasser_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwere Erz-Schlachtklinge des Wasserhiebes schärfen";
+	description	= "Sharpening Heavy Ore Battle Blade of Water Slash";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Special_03_Wasser_Condition()
@@ -3409,7 +3409,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Special_04 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Special_04_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwerer Erz-Drachentöter schärfen";
+	description	= "Sharpening Heavy Ore Dragon Slayer";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Special_04_Condition()
@@ -3439,7 +3439,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Special_04_Feuer (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Special_04_Feuer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwerer Erz-Drachentöter des Versengens schärfen";
+	description	= "Sharpening Heavy Ore Dragon Slayer of Searing";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Special_04_Feuer_Condition()
@@ -3469,7 +3469,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Special_04_Wasser (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Special_04_Wasser_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwerer Erz-Drachentöter des Wasserhiebes schärfen";
+	description	= "Sharpen Heavy Ore Dragon Slayer of Water Slash";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Special_04_Wasser_Condition()
@@ -3499,7 +3499,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Zweihaender4 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Zweihaender4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schweren Zweihänder schärfen";
+	description	= "Sharpening heavy two-handed people";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Zweihaender4_Condition()
@@ -3529,7 +3529,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schwert_03 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schwert_03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schweres Ritterschwert schärfen";
+	description	= "Sharpening the Heavy Knight's Sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schwert_03_Condition()
@@ -3559,7 +3559,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schwert_02 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schwert_02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwert 02 schärfen";
+	description	= "Sharpening sword 02";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schwert_02_Condition()
@@ -3589,7 +3589,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Schwert_Neu (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Schwert_Neu_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwert Neu schärfen";
+	description	= "Sword re-sharpening";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Schwert_Neu_Condition()
@@ -3619,7 +3619,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Sense_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Sense_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Sense schärfen";
+	description	= "Sharpening the scythe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Sense_01_Condition()
@@ -3649,7 +3649,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Sense_02 (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Sense_02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Sense schärfen";
+	description	= "Sharpening the scythe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Sense_02_Condition()
@@ -3679,7 +3679,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Sense_03 (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Sense_03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Sense schärfen";
+	description	= "Sharpening the scythe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Sense_03_Condition()
@@ -3709,7 +3709,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1h_Bau_Axe (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1h_Bau_Axe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Sichel schärfen";
+	description	= "Sharpening the sickle";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1h_Bau_Axe_Condition()
@@ -3739,7 +3739,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Sword_Long_04 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Sword_Long_04_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Siegbringer schärfen";
+	description	= "Sharpening the winners";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Sword_Long_04_Condition()
@@ -3769,7 +3769,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Streitaxt2 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Streitaxt2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Streitaxt schärfen";
+	description	= "sharpen battle axe";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Streitaxt2_Condition()
@@ -3799,7 +3799,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Sturmbringer (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Sturmbringer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Sturmbringer schärfen";
+	description	= "Sharpen storm wrestlers";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Sturmbringer_Condition()
@@ -3829,7 +3829,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Addon_Stab05 (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Addon_Stab05_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Taifun schärfen";
+	description	= "Sharpening Typhoon";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Addon_Stab05_Condition()
@@ -3859,7 +3859,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Sword_Light_02 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Sword_Light_02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Templerklinge schärfen";
+	description	= "Sharpening Templar Blade";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Sword_Light_02_Condition()
@@ -3889,7 +3889,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Sword_Long_05 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Sword_Long_05_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Todbringer schärfen";
+	description	= "Sharpening the mortal bringer";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Sword_Long_05_Condition()
@@ -3919,7 +3919,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Truemmeraxt (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Truemmeraxt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Trümmeraxt schärfen";
+	description	= "Sharpening axe of debris";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Truemmeraxt_Condition()
@@ -3949,7 +3949,7 @@ INSTANCE PC_Herd_Sharp_ItMw_2H_Eminem_Goldschwert_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_2H_Eminem_Goldschwert_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Vergoldetes Schwert schärfen";
+	description	= "Sharpening the gold-plated sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_2H_Eminem_Goldschwert_01_Condition()
@@ -3979,7 +3979,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Sword_Bastard_03 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Sword_Bastard_03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Vollstrecker schärfen";
+	description	= "Strengthen executors";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Sword_Bastard_03_Condition()
@@ -4009,7 +4009,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Sword_L_03 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Sword_L_03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wolfsklinge schärfen";
+	description	= "Sharpening the wolf blade";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Sword_L_03_Condition()
@@ -4039,7 +4039,7 @@ INSTANCE PC_Herd_Sharp_ItMW_Addon_Knife01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMW_Addon_Knife01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wolfsmesser schärfen";
+	description	= "Sharpening wolf knives";
 };
 
 FUNC INT PC_Herd_Sharp_ItMW_Addon_Knife01_Condition()
@@ -4069,7 +4069,7 @@ INSTANCE PC_Herd_Sharp_ItMw_ShortSword4 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_ShortSword4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wolfszahn schärfen";
+	description	= "Sharpening the wolf tooth";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_ShortSword4_Condition()
@@ -4099,7 +4099,7 @@ INSTANCE PC_Herd_Sharp_Xeres_Schwert (C_INFO)
 	information	= PC_Herd_Sharp_Xeres_Schwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Xeres' Schwert schärfen";
+	description	= "Sharpen Xeres's sword";
 };
 
 FUNC INT PC_Herd_Sharp_Xeres_Schwert_Condition()
@@ -4129,7 +4129,7 @@ INSTANCE PC_Herd_Sharp_ItMw_1H_Neok_Zeusschwert_01 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_1H_Neok_Zeusschwert_01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeusschwert schärfen";
+	description	= "Sharpening the Zeus sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_1H_Neok_Zeusschwert_01_Condition()
@@ -4159,7 +4159,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Zweihaender2 (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Zweihaender2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zweihänder schärfen";
+	description	= "Two-handed sharpening";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Zweihaender2_Condition()
@@ -4189,7 +4189,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Zweiklinge (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Zweiklinge_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zweiklinge schärfen";
+	description	= "Sharpening the dual blade";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Zweiklinge_Condition()

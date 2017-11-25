@@ -15,20 +15,20 @@ FUNC INT Info_Mod_Wachter_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Wachter_01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wachter_01_Hi_02_00"); //Was hast du hier zu suchen?
-	AI_Output(hero, self, "Info_Mod_Wachter_01_Hi_15_01"); //Was gibt es denn hier zu sehen?
-	AI_Output(self, hero, "Info_Mod_Wachter_01_Hi_02_02"); //Den einzig wahren Weg, zu den Göttern zu sprechen. Nämlich durch ihr Medium Ryan, unseren Propheten.
+	AI_Output(self, hero, "Info_Mod_Wachter_01_Hi_02_00"); //What are you doing here?
+	AI_Output(hero, self, "Info_Mod_Wachter_01_Hi_15_01"); //What can you see here?
+	AI_Output(self, hero, "Info_Mod_Wachter_01_Hi_02_02"); //The only true way to speak to the gods. Namely through their medium, Ryan, our prophet.
 
 	Info_ClearChoices	(Info_Mod_Wachter_01_Hi);
 
-	Info_AddChoice	(Info_Mod_Wachter_01_Hi, "Kann ich mir das mal ansehen?", Info_Mod_Wachter_01_Hi_B);
-	Info_AddChoice	(Info_Mod_Wachter_01_Hi, "Ach ja, Ryan. Den werde ich töten.", Info_Mod_Wachter_01_Hi_A);
+	Info_AddChoice	(Info_Mod_Wachter_01_Hi, "Can I have a look at this?", Info_Mod_Wachter_01_Hi_B);
+	Info_AddChoice	(Info_Mod_Wachter_01_Hi, "Oh, yeah, Ryan. I'll kill him.", Info_Mod_Wachter_01_Hi_A);
 };
 
 FUNC VOID Info_Mod_Wachter_01_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wachter_01_Hi_B_15_00"); //Kann ich mir das mal ansehen?
-	AI_Output(self, hero, "Info_Mod_Wachter_01_Hi_B_02_01"); //Ja. Du findest Ryan in der Höhle. Aber komm gar nicht erst auf die Idee, Ärger zu machen.
+	AI_Output(hero, self, "Info_Mod_Wachter_01_Hi_B_15_00"); //Can I have a look at this?
+	AI_Output(self, hero, "Info_Mod_Wachter_01_Hi_B_02_01"); //Yeah. You'll find Ryan in the cave. But don't even think about making trouble.
 
 	Info_ClearChoices	(Info_Mod_Wachter_01_Hi);
 
@@ -39,8 +39,8 @@ FUNC VOID Info_Mod_Wachter_01_Hi_B()
 
 FUNC VOID Info_Mod_Wachter_01_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wachter_01_Hi_A_15_00"); //Ach ja, Ryan. Den werde ich töten.
-	AI_Output(self, hero, "Info_Mod_Wachter_01_Hi_A_02_01"); //Niemals! Das werde ich nicht zulassen!
+	AI_Output(hero, self, "Info_Mod_Wachter_01_Hi_A_15_00"); //Oh, yeah, Ryan. I'll kill him.
+	AI_Output(self, hero, "Info_Mod_Wachter_01_Hi_A_02_01"); //Never ever! I won't let that happen!
 
 	Info_ClearChoices	(Info_Mod_Wachter_01_Hi);
 

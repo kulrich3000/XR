@@ -1,7 +1,7 @@
 INSTANCE Mod_7654_OUT_Alkor_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Alkor";
+	name 		= "alkane";
 	guild 		= GIL_OUT;
 	id 			= 7654;
 	voice 		= 31;

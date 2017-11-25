@@ -39,7 +39,7 @@ FUNC VOID Info_Mod_Hyglas_EIS_Feuersbrunst_Info()
 
 	B_StartOtherRoutine	(self, "FOLLOW");
 
-	B_LogEntry	(TOPIC_MOD_FM_FEUERSBRUNST, "Der vermeintliche Dämon hat sich als Meister Hyglas entpuppt, der nach dem Einsturz der Eishöhle in dieser Gegend festsaß. Ich werde ihn zum Dorf bringen.");
+	B_LogEntry	(TOPIC_MOD_FM_FEUERSBRUNST, "The alleged demon turned out to be Master Hyglas, who was stuck in this area after the ice cave collapsed. I'll take him to the village.");
 };
 
 INSTANCE Info_Mod_Hyglas_EIS_Feuersbrunst2 (C_INFO)
@@ -64,17 +64,17 @@ FUNC INT Info_Mod_Hyglas_EIS_Feuersbrunst2_Condition()
 
 FUNC VOID Info_Mod_Hyglas_EIS_Feuersbrunst2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hyglas_EIS_Feuersbrunst2_14_00"); //Das ist also das Dorf ...
-	AI_Output(hero, self, "Info_Mod_Hyglas_EIS_Feuersbrunst2_15_01"); //Ja. Weiter hinten findest du in einem Haus den Dorfältesten Thys. Er wird dir bei allem weiteren helfen können.
-	AI_Output(self, hero, "Info_Mod_Hyglas_EIS_Feuersbrunst2_14_02"); //Ich weiß nicht, wie ich dir danken soll.
-	AI_Output(self, hero, "Info_Mod_Hyglas_EIS_Feuersbrunst2_14_03"); //Ein kleiner Anfang sind vielleicht einige meiner letzten Manatränke, die ich nun nicht mehr benötige ... an Snapperfleisch wirst du wohl weniger Interesse haben.
+	AI_Output(self, hero, "Info_Mod_Hyglas_EIS_Feuersbrunst2_14_00"); //So this is the village...
+	AI_Output(hero, self, "Info_Mod_Hyglas_EIS_Feuersbrunst2_15_01"); //Yeah. You'll find the village elder Thys in a house further back. He'll be able to help you with everything else.
+	AI_Output(self, hero, "Info_Mod_Hyglas_EIS_Feuersbrunst2_14_02"); //I don't know how to thank you.
+	AI_Output(self, hero, "Info_Mod_Hyglas_EIS_Feuersbrunst2_14_03"); //A small start may be some of my last mana potions, which I don't need anymore.... you're probably less interested in snapper meat.
 
 	CreateInvItems	(hero, ItPo_Mana_03, 5);
 	CreateInvItems	(hero, ItPo_Mana_Addon_04, 1);
 
-	B_ShowGivenThings	("5 Manaelixiere und 1 Reines Mana erhalten");
+	B_ShowGivenThings	("5 Manaixiers and 1 Pure Mana obtained");
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_EIS_Feuersbrunst2_14_04"); //Wie dem auch sei, ich werde mich direkt an Thys wenden und alles weitere mit ihm besprechen. Innos sei mit dir.
+	AI_Output(self, hero, "Info_Mod_Hyglas_EIS_Feuersbrunst2_14_04"); //Anyway, I'll contact Thys directly and discuss everything else with him. Innos be with you.
 
 	B_GivePlayerXP	(300);
 

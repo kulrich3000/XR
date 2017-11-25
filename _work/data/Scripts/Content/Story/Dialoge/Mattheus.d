@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Mattheus_Hi (C_INFO)
 	information	= Info_Mod_Mattheus_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Mattheus_Hi_Condition()
@@ -17,8 +17,8 @@ FUNC INT Info_Mod_Mattheus_Hi_Condition()
 FUNC VOID Info_Mod_Mattheus_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Mattheus_Hi_09_01"); //Ich bin Mattheus, Feuer Novize und Bote von Pyrokar, dem obersten der Feuermagier.
-	AI_Output(self, hero, "Info_Mod_Mattheus_Hi_09_02"); //Ich überbringe Nachrichten von Pyrokar an Lord Hagen in der Stadt.
+	AI_Output(self, hero, "Info_Mod_Mattheus_Hi_09_01"); //I am Mattheus, fire novice and messenger of Pyrokar, the chief fire magician.
+	AI_Output(self, hero, "Info_Mod_Mattheus_Hi_09_02"); //I'm bringing news of Pyrokar to Lord Hagen in town.
 };
 
 INSTANCE Info_Mod_Mattheus_Bote (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Mattheus_Bote (C_INFO)
 	information	= Info_Mod_Mattheus_Bote_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was sind das für Botschaften?";
+	description	= "What are these messages?";
 };
 
 FUNC INT Info_Mod_Mattheus_Bote_Condition()
@@ -43,10 +43,10 @@ FUNC INT Info_Mod_Mattheus_Bote_Condition()
 
 FUNC VOID Info_Mod_Mattheus_Bote_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mattheus_Bote_15_00"); //Was sind das für Botschaften?
-	AI_Output(self, hero, "Info_Mod_Mattheus_Bote_09_01"); //So dies und das, lauter wichtige Sachen. Ich darf dir aber nicht sagen, was da drin steht.
+	AI_Output(hero, self, "Info_Mod_Mattheus_Bote_15_00"); //What are these messages?
+	AI_Output(self, hero, "Info_Mod_Mattheus_Bote_09_01"); //So this and that, all kinds of important things. I can't tell you what it says.
 	
-	B_LogEntry	(TOPIC_MOD_KARRAS_BOTE, "Mattheus will mir nicht verraten was das für Botschaften sind. Vielleicht sollte ich ihm noch ein bisschen mehr zu trinken geben. Mit ein klein wenig Gift versetzt ...");
+	B_LogEntry	(TOPIC_MOD_KARRAS_BOTE, "Mattheus won't tell me what kind of messages they are. Maybe I should give him a little more to drink. With a little bit of poison....");
 };
 
 INSTANCE Info_Mod_Mattheus_Alk (C_INFO)
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_Mattheus_Alk (C_INFO)
 	information	= Info_Mod_Mattheus_Alk_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nimm dieses Bier.";
+	description	= "Take this beer.";
 };
 
 FUNC INT Info_Mod_Mattheus_Alk_Condition()
@@ -72,7 +72,7 @@ FUNC INT Info_Mod_Mattheus_Alk_Condition()
 
 FUNC VOID Info_Mod_Mattheus_Alk_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mattheus_Alk_15_00"); //Nimm dieses Bier.
+	AI_Output(hero, self, "Info_Mod_Mattheus_Alk_15_00"); //Take this beer.
 
 	Npc_RemoveInvItems(hero, ItPo_Gift, 1);
 	
@@ -80,7 +80,7 @@ FUNC VOID Info_Mod_Mattheus_Alk_Info()
 
 	B_UseItem	(self, ItFo_Beer);
 	
-	AI_Output(self, hero, "Info_Mod_Mattheus_Alk_09_01"); //Ah, wie wird mir ...
+	AI_Output(self, hero, "Info_Mod_Mattheus_Alk_09_01"); //Ah, how will I...
 
 	AI_StopProcessInfos	(self);
 	
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Mattheus_WhatsNew (C_INFO)
 	information	= Info_Mod_Mattheus_WhatsNew_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was gibts Neues?";
+	description	= "What's the news?";
 };
 
 FUNC INT Info_Mod_Mattheus_WhatsNew_Condition()
@@ -110,8 +110,8 @@ FUNC INT Info_Mod_Mattheus_WhatsNew_Condition()
 
 FUNC VOID Info_Mod_Mattheus_WhatsNew_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mattheus_WhatsNew_15_00"); //Was gibts Neues?
-	AI_Output(self, hero, "Info_Mod_Mattheus_WhatsNew_09_01"); //Moment gibts nichts.
+	AI_Output(hero, self, "Info_Mod_Mattheus_WhatsNew_15_00"); //What's the news?
+	AI_Output(self, hero, "Info_Mod_Mattheus_WhatsNew_09_01"); //There's nothing at the moment.
 };
 
 INSTANCE Info_Mod_Mattheus_Pickpocket (C_INFO)

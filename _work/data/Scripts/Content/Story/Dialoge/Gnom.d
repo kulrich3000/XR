@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Gnom_Hi_Condition()
 
 FUNC VOID Info_Mod_Gnom_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gnom_Hi_11_00"); //Hallo, Mensch. Lange keinen mehr von deiner Sorte gesehen ...
-	AI_Output(self, hero, "Info_Mod_Gnom_Hi_11_01"); //Na ja, wie dem auch sei, nach dem ganzen Gesöff hätte ich mal wieder Lust was zu rauchen.
-	AI_Output(self, hero, "Info_Mod_Gnom_Hi_11_02"); //Du hast doch bestimmt was bei dir.
+	AI_Output(self, hero, "Info_Mod_Gnom_Hi_11_00"); //Hello, man. Long time no one of your kind seen...
+	AI_Output(self, hero, "Info_Mod_Gnom_Hi_11_01"); //Anyway, after the drink I would like to smoke again.
+	AI_Output(self, hero, "Info_Mod_Gnom_Hi_11_02"); //You must have something with you.
 };
 
 INSTANCE Info_Mod_Gnom_Joint (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Gnom_Joint (C_INFO)
 	information	= Info_Mod_Gnom_Joint_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Klar, hier ein harziger Stängel.";
+	description	= "Sure, here's a resinous stem.";
 };
 
 FUNC INT Info_Mod_Gnom_Joint_Condition()
@@ -42,34 +42,34 @@ FUNC INT Info_Mod_Gnom_Joint_Condition()
 
 FUNC VOID Info_Mod_Gnom_Joint_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gnom_Joint_15_00"); //Klar, hier ein harziger Stängel.
+	AI_Output(hero, self, "Info_Mod_Gnom_Joint_15_00"); //Sure, here's a resinous stem.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 1);
 
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_01"); //Ahh, vielen Dank.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_01"); //Ahh, thank you very much.
 
 	B_UseItem	(self, ItMi_Joint);
 
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_02"); //Nach 5000 Jahren ist es wirklich ein Genuss, mal wieder einen zu rauchen.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_03"); //Ja, das magische Gefängnis war wirklich eine Zeit voller Entbehrungen.
-	AI_Output(hero, self, "Info_Mod_Gnom_Joint_15_04"); //Das magische Gefängnis? Erzähl mir mehr darüber.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_05"); //Dieses verfluchte Buch, in welchem wir gefangen waren.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_06"); //Zumindest gab es dort viel Raum, mehr, als man von außen vermuten konnte.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_07"); //So stand man sich nicht die ganze Zeit mit Kobolden, Hexen und Drachen auf den Füßen.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_08"); //Der Drache Dragon und Lich, der untote Magier, haben sich schnell zu den großen Bossen gemacht.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_09"); //Haben auch nach einigen Jahrhunderten irgendeinen magischen Pakt oder so geschlossen ...
-	AI_Output(hero, self, "Info_Mod_Gnom_Joint_15_10"); //Magischer Pakt? Worum ging es da?
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_11"); //Ach, was weiß ich. Unsterblichkeit gegen Drachenmacht und Dienerschaft oder so. Hat mich nicht so interessiert.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_12"); //Mein Kumpel Gormgniez hat da mehr mit den anderen zu tun gehabt und so manches aufgeschnappt.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_13"); //Der gierige Kobold ist aber ins Tal des Erzes aufgebrochen, um seine Taschen in irgend einer Kesselmine  mit dem edlen Metall zu füllen ...
-	AI_Output(hero, self, "Info_Mod_Gnom_Joint_15_14"); //Und wo sind die beiden jetzt?
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_15"); //Öhh, Lich wollte zur Stadt oder einige Höhlengräber schänden oder so ähnlich.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_16"); //Und Dragon hat sich, glaube ich, nicht unweit von dem Ort unserer Befreiung in die Berge verzogen, will jetzt ein paar neue Diener anheuern ...
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_17"); //Ach, jetzt merke ich, wie mir der Kopf von dem Gesöff allmählich schwer wird.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_18"); //Hast du vielleicht noch zehn von diesen Stängeln für mich? Die waren mir viel bekömmlicher.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_02"); //After 5000 years it is really a pleasure to smoke again.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_03"); //Yes, the magical prison was really a time of hardship.
+	AI_Output(hero, self, "Info_Mod_Gnom_Joint_15_04"); //The magic prison? Tell me more about it.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_05"); //That cursed book we were trapped in.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_06"); //At least there was a lot of space there, more than you could have guessed from the outside.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_07"); //So you didn't stand on your feet with goblins, witches and dragons all the time.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_08"); //Dragon Dragon and Lich, the undead magician, quickly made themselves big bosses.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_09"); //Have also after several centuries some magic pact or so closed....
+	AI_Output(hero, self, "Info_Mod_Gnom_Joint_15_10"); //Magic Pact? What was that about?
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_11"); //Oh, I don't know. Immortality against dragon power and servantry or something. I wasn't so interested.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_12"); //My buddy Gormgniez had more to do with the others and picked up a lot of things.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_13"); //The greedy goblin, however, has set out into the valley of the ore to fill his pockets with the precious metal in some boiler mine....
+	AI_Output(hero, self, "Info_Mod_Gnom_Joint_15_14"); //And where are they now?
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_15"); //Ooh, Lich wanted to ravish the city or some cave graves or something like that.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_16"); //And Dragon, I think, has moved to the mountains not far from the place of our liberation, now wants to hire some new servants....
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_17"); //Oh, now I notice how my head gets heavy with the brew.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joint_11_18"); //Do you have maybe ten of these sticks left for me? They were much easier on me.
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Im Gespräch mit dem betrunkenen Gnom habe ich erfahren, dass der untote Magier Lich und ein Drache namens Dragon ein magisches Bündnis eingegangen sind. Der Austausch von Unsterblichkeit gegen Drachenmacht und Dienerkreaturen scheint eine Rolle zu spielen.");
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Der Gnom erzählte mir noch, dass sein Freund, ein Kobold, mehr zu dem Thema wüsste. Dieser brach jedoch ins Minental auf, um seine Gier nach magischem Erz zu stillen. Dabei wollte er die Mine in einem Talkessel aufsuchen. Ich sollte Lee mal um Zugang zur freien Mine fragen.");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Talking to the drunken gnome, I learned that the undead magician Lich and a dragon named Dragon have entered into a magical alliance. The exchange of immortality for dragon power and servant creatures seems to play a role.");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "The gnome told me that his friend, a goblin, knew more about the subject. However, he set off to the Minental to quench his greed for magical ore. He wanted to visit the mine in a valley basin. I should ask Lee for access to the free mine.");
 };
 
 INSTANCE Info_Mod_Gnom_Joints (C_INFO)
@@ -80,7 +80,7 @@ INSTANCE Info_Mod_Gnom_Joints (C_INFO)
 	information	= Info_Mod_Gnom_Joints_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Klar, hier sind sie.";
+	description	= "Sure, here they are.";
 };
 
 FUNC INT Info_Mod_Gnom_Joints_Condition()
@@ -94,12 +94,12 @@ FUNC INT Info_Mod_Gnom_Joints_Condition()
 
 FUNC VOID Info_Mod_Gnom_Joints_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gnom_Joints_15_00"); //Klar, hier sind sie.
+	AI_Output(hero, self, "Info_Mod_Gnom_Joints_15_00"); //Sure, here they are.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 10);
 
-	AI_Output(self, hero, "Info_Mod_Gnom_Joints_11_01"); //Ahh, tausend Dank. Wie kann ich dir das nur vergelten.
-	AI_Output(self, hero, "Info_Mod_Gnom_Joints_11_02"); //Ach, hier, nimm dieses Paket mit dem Gesöff, was ich bei der Taverne mitgehen lassen habe.
+	AI_Output(self, hero, "Info_Mod_Gnom_Joints_11_01"); //Ahh, thank you very much. How can I repay you?
+	AI_Output(self, hero, "Info_Mod_Gnom_Joints_11_02"); //Oh, here, take this package with the brew, which I left at the tavern.
 
 	B_GiveInvItems	(self, hero, ItMi_OrlansSchnaps, 1);
 };
@@ -112,7 +112,7 @@ INSTANCE Info_Mod_Gnom_NoJoint (C_INFO)
 	information	= Info_Mod_Gnom_NoJoint_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sonst noch irgendwelche Neujahrswünsche, du halbe Portion?";
+	description	= "Any other New Year's greetings, half-portion?";
 };
 
 FUNC INT Info_Mod_Gnom_NoJoint_Condition()
@@ -126,8 +126,8 @@ FUNC INT Info_Mod_Gnom_NoJoint_Condition()
 
 FUNC VOID Info_Mod_Gnom_NoJoint_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gnom_NoJoint_15_00"); //Sonst noch irgendwelche Neujahrswünsche, du halbe Portion?
-	AI_Output(self, hero, "Info_Mod_Gnom_NoJoint_11_01"); //Hüte deine Zunge, Mensch, und lass was zu rauchen rüberwachsen. Sonst wird es dir schlecht ergehen.
+	AI_Output(hero, self, "Info_Mod_Gnom_NoJoint_15_00"); //Any other New Year's greetings, half-portion?
+	AI_Output(self, hero, "Info_Mod_Gnom_NoJoint_11_01"); //Watch your tongue, man, and let some smoke grow over you. You'll be in bad shape.
 };
 
 INSTANCE Info_Mod_Gnom_NoJoint2 (C_INFO)
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Gnom_NoJoint2 (C_INFO)
 	information	= Info_Mod_Gnom_NoJoint2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ja, natürlich. Geh lieber Blumen pflücken, du Zwerg.";
+	description	= "Yes, of course. You better go pick flowers, you dwarf.";
 };
 
 FUNC INT Info_Mod_Gnom_NoJoint2_Condition()
@@ -152,9 +152,9 @@ FUNC INT Info_Mod_Gnom_NoJoint2_Condition()
 
 FUNC VOID Info_Mod_Gnom_NoJoint2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gnom_NoJoint2_15_00"); //Ja, natürlich. Geh lieber Blumen pflücken, du Zwerg.
-	AI_Output(self, hero, "Info_Mod_Gnom_NoJoint2_11_01"); //Ok, das war’s.
-	AI_Output(hero, self, "Info_Mod_Gnom_NoJoint2_15_02"); //Dann bin ich aber mal ge ...
+	AI_Output(hero, self, "Info_Mod_Gnom_NoJoint2_15_00"); //Yes, of course. You better go pick flowers, you dwarf.
+	AI_Output(self, hero, "Info_Mod_Gnom_NoJoint2_11_01"); //Okay, that's it.
+	AI_Output(hero, self, "Info_Mod_Gnom_NoJoint2_15_02"); //Well, then, I'm just...
 
 	AI_EquipBestMeleeWeapon	(self);
 
@@ -187,7 +187,7 @@ FUNC INT Info_Mod_Gnom_Verbatscht_Condition()
 
 FUNC VOID Info_Mod_Gnom_Verbatscht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gnom_Verbatscht_11_01"); //Na, willst du dich noch mal mit mir anlegen?
+	AI_Output(self, hero, "Info_Mod_Gnom_Verbatscht_11_01"); //You want to fuck with me again?
 };
 
 INSTANCE Info_Mod_Gnom_EXIT (C_INFO)

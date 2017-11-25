@@ -15,7 +15,7 @@ FUNC INT Info_Mod_DemonChromanin_Hi_Condition()
 
 FUNC VOID Info_Mod_DemonChromanin_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_DemonChromanin_Hi_20_00"); //Du Wurm willst Chromanin erringen!? Dann wirst du nicht nur dein Köpfchen, sondern auch die Stärke deiner Arme einsetzen müssen.
+	AI_Output(self, hero, "Info_Mod_DemonChromanin_Hi_20_00"); //You worm want to get chromanin!? Then you will not only have to use your head but also the strength of your arms.
 
 	AI_StopProcessInfos	(self);
 };

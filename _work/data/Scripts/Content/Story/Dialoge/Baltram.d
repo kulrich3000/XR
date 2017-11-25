@@ -18,11 +18,11 @@ FUNC INT Info_Mod_Baltram_Hi_Condition()
 
 FUNC VOID Info_Mod_Baltram_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Baltram_Hi_01_00"); //Hallo, Fremder. Ich bin Baltram und handle mit Lebensmitteln.
-	AI_Output(self, hero, "Info_Mod_Baltram_Hi_01_01"); //Solltest du jemals den Drang nach frischem Brot und Obst verspüren, dann kannst du zu mir kommen.
+	AI_Output(self, hero, "Info_Mod_Baltram_Hi_01_00"); //Hello, stranger. I'm Baltram, and I deal in groceries.
+	AI_Output(self, hero, "Info_Mod_Baltram_Hi_01_01"); //If you ever feel the urge for fresh bread and fruit, you can come to me.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Baltram handelt mit Lebensmitteln.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Baltram trades in food.");
 };
 
 INSTANCE Info_Mod_Baltram_WieLaeufts (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Baltram_WieLaeufts (C_INFO)
 	information	= Info_Mod_Baltram_WieLaeufts_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft das Geschäft?";
+	description	= "How's business?";
 };
 
 FUNC INT Info_Mod_Baltram_WieLaeufts_Condition()
@@ -47,12 +47,12 @@ FUNC INT Info_Mod_Baltram_WieLaeufts_Condition()
 
 FUNC VOID Info_Mod_Baltram_WieLaeufts_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baltram_WieLaeufts_15_00"); //Wie läuft das Geschäft?
-	AI_Output(self, hero, "Info_Mod_Baltram_WieLaeufts_01_01"); //Es lief schon mal besser. Ich kann zwar meine Waren gut absetzen, aber der Nachschub von den Bauernhöfen kommt nur stockend.
-	AI_Output(self, hero, "Info_Mod_Baltram_WieLaeufts_01_02"); //Die feigen Bauern trauen sich nicht, ihre Ladungen los zu schicken, weil sich in letzter Zeit die Überfälle häufen.
-	AI_Output(hero, self, "Info_Mod_Baltram_WieLaeufts_15_03"); //Überfälle?
-	AI_Output(self, hero, "Info_Mod_Baltram_WieLaeufts_01_04"); //Einiges von dem Diebesgesindel aus dem Minental zieht jetzt plündernd durch die Lande.
-	AI_Output(self, hero, "Info_Mod_Baltram_WieLaeufts_01_05"); //Auflauern und aus dem Hinterhalt niedermachen ist das Einzige, was die können.
+	AI_Output(hero, self, "Info_Mod_Baltram_WieLaeufts_15_00"); //How's business?
+	AI_Output(self, hero, "Info_Mod_Baltram_WieLaeufts_01_01"); //It's been better before. I can sell my goods well, but the supplies from the farms come only stagnating.
+	AI_Output(self, hero, "Info_Mod_Baltram_WieLaeufts_01_02"); //The cowardly peasants do not dare to send out their cargoes, because lately there has been an increase in raids.
+	AI_Output(hero, self, "Info_Mod_Baltram_WieLaeufts_15_03"); //Robbery?
+	AI_Output(self, hero, "Info_Mod_Baltram_WieLaeufts_01_04"); //Some of the thieving scum from the valley of the river Minental is now plundering the land.
+	AI_Output(self, hero, "Info_Mod_Baltram_WieLaeufts_01_05"); //All they can do is ambush and ambush them.
 };
 
 INSTANCE Info_Mod_Baltram_Warentransporte (C_INFO)
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Baltram_Warentransporte (C_INFO)
 	information	= Info_Mod_Baltram_Warentransporte_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich könnte mich um die zurückgehaltenen Warentransporte (...)";
+	description	= "I could take care of the detained goods transports (.... )";
 };
 
 FUNC INT Info_Mod_Baltram_Warentransporte_Condition()
@@ -77,14 +77,14 @@ FUNC INT Info_Mod_Baltram_Warentransporte_Condition()
 
 FUNC VOID Info_Mod_Baltram_Warentransporte_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baltram_Warentransporte_15_00"); //Ich könnte mich um die zurückgehaltenen Warentransporte kümmern.
-	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte_01_01"); //Du traust dich was! Aber gern, gern, mach nur!
-	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte_01_02"); //Mir fehlen noch die Transporte von Lobart und Bengar. Lobart wollte mir Rüben verkaufen, und von Bengar bekomme ich Brot.
-	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte_01_03"); //Aber sieh dich bloß auf den Straßen vor!
+	AI_Output(hero, self, "Info_Mod_Baltram_Warentransporte_15_00"); //I could take care of the detained shipments.
+	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte_01_01"); //You dare! Gladly, gladly, do it!
+	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte_01_02"); //I'm still missing the transports of Lobart and Bengar. Lobart tried to sell me turnips, and Bengar gave me bread.
+	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte_01_03"); //But watch out for the streets!
 
 	Log_CreateTopic	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, "Wegen der prekären Situation durch plündernde Sträflinge wollen die Bauern Lobart und Bengar ihre Waren nicht an Baltram versenden. Ich spiele also den Laufburschen.");
+	B_LogEntry	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, "Because of the precarious situation caused by plundering convicts, the farmers Lobart and Bengar do not want to send their goods to Baltram. So I play the errand boy.");
 
 	Wld_InsertNpc	(Mod_7557_STRF_Straefling_NW, "NW_FARM1_PATH_SPAWN_05");
 	Wld_InsertNpc	(Mod_7558_STRF_Straefling_NW, "NW_FARM1_PATH_SPAWN_05");
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Baltram_Warentransporte2 (C_INFO)
 	information	= Info_Mod_Baltram_Warentransporte2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe deine Waren abgeholt.";
+	description	= "I picked up your goods.";
 };
 
 FUNC INT Info_Mod_Baltram_Warentransporte2_Condition()
@@ -115,20 +115,20 @@ FUNC INT Info_Mod_Baltram_Warentransporte2_Condition()
 
 FUNC VOID Info_Mod_Baltram_Warentransporte2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baltram_Warentransporte2_15_00"); //Ich habe deine Waren abgeholt.
+	AI_Output(hero, self, "Info_Mod_Baltram_Warentransporte2_15_00"); //I picked up your goods.
 
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 30);
 	Npc_RemoveInvItems	(hero, ItPl_Beet, 20);
 
-	B_ShowGivenThings	("30 Brote und 20 Feldrüben gegeben");
+	B_ShowGivenThings	("30 loaves of bread and 20 turnips added");
 
-	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte2_01_01"); //Gut, gut! Du hast das Gold für Bengar aus eigener Tasche bezahlt? 150 Gold?
-	AI_Output(hero, self, "Info_Mod_Baltram_Warentransporte2_15_02"); //Natürlich.
-	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte2_01_03"); //Dann hast du es hiermit zurück.
+	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte2_01_01"); //Good, good, good! You paid the gold for Bengar out of your own pocket? 150 gold?
+	AI_Output(hero, self, "Info_Mod_Baltram_Warentransporte2_15_02"); //Of course it is.
+	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte2_01_03"); //Then you have it back with this.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
-	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte2_01_04"); //Kannst dich ja mal in meinem Sortiment umsehen, für 150 bekommt man viele schöne Dinge ...
+	AI_Output(self, hero, "Info_Mod_Baltram_Warentransporte2_01_04"); //You can take a look around in my assortment, for 150 you get many nice things....
 
 	B_SetTopicStatus	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, LOG_SUCCESS);
 
@@ -148,7 +148,7 @@ INSTANCE Info_Mod_Baltram_MatteoLehrling1 (C_INFO)
 	information	= Info_Mod_Baltram_MatteoLehrling1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hat sich da unter deinem Stand (...) (Apfel platzieren)";
+	description	= "Did it look under your stand (.... ) (place apple)";
 };
 
 FUNC INT Info_Mod_Baltram_MatteoLehrling1_Condition()
@@ -182,7 +182,7 @@ INSTANCE Info_Mod_Baltram_MatteoLehrling2 (C_INFO)
 	information	= Info_Mod_Baltram_MatteoLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, wird der da drüben nicht gesucht? (Apfel platzieren)";
+	description	= "Hey, ain't they looking for him over there? (place apple)";
 };
 
 FUNC INT Info_Mod_Baltram_MatteoLehrling2_Condition()
@@ -216,7 +216,7 @@ INSTANCE Info_Mod_Baltram_MatteoLehrling3 (C_INFO)
 	information	= Info_Mod_Baltram_MatteoLehrling3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schöne Äpfel hast du da ... (Apfel platzieren)";
+	description	= "Nice apples you have there... (place apple)";
 };
 
 FUNC INT Info_Mod_Baltram_MatteoLehrling3_Condition()
@@ -246,7 +246,7 @@ INSTANCE Info_Mod_Baltram_Daemonisch (C_INFO)
 	information	= Info_Mod_Baltram_Daemonisch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, ich komme von Coragon und soll das Paket mit Pökelfleisch abholen.";
+	description	= "Hey, I'm here from Coragon to pick up the package of salted meat.";
 };
 
 FUNC INT Info_Mod_Baltram_Daemonisch_Condition()
@@ -259,14 +259,14 @@ FUNC INT Info_Mod_Baltram_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Baltram_Daemonisch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baltram_Daemonisch_15_00"); //Hey, ich komme von Coragon und soll das Paket mit Pökelfleisch abholen.
-	AI_Output(self, hero, "Info_Mod_Baltram_Daemonisch_01_01"); //Ahh, ja, ok, ist vorhin angekommen und alles schon bezahlt.
+	AI_Output(hero, self, "Info_Mod_Baltram_Daemonisch_15_00"); //Hey, I'm here from Coragon to pick up the package of salted meat.
+	AI_Output(self, hero, "Info_Mod_Baltram_Daemonisch_01_01"); //Ahh, yeah, okay, it arrived earlier and everything's already paid for.
 
 	B_GiveInvItems	(self, hero, ItMi_CoragonDaemonisch, 1);
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Baltram_Daemonisch_15_02"); //(zu sich selbst) So, das sollte ich jetzt mal an einem Alchemietisch etwas präparieren.
+	AI_Output(hero, self, "Info_Mod_Baltram_Daemonisch_15_02"); //(to himself) Well, that's something I should prepare at an alchemy table.
 };
 
 INSTANCE Info_Mod_Baltram_Melasse (C_INFO)
@@ -277,7 +277,7 @@ INSTANCE Info_Mod_Baltram_Melasse (C_INFO)
 	information	= Info_Mod_Baltram_Melasse_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Melasse?";
+	description	= "You got any molasses?";
 };
 
 FUNC INT Info_Mod_Baltram_Melasse_Condition()
@@ -293,10 +293,10 @@ FUNC INT Info_Mod_Baltram_Melasse_Condition()
 
 FUNC VOID Info_Mod_Baltram_Melasse_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baltram_Melasse_15_00"); //Hast du Melasse?
-	AI_Output(self, hero, "Info_Mod_Baltram_Melasse_01_01"); //Damit kann ich dir leider nicht dienen, aber ich glaube, Kardif, der Wirt der Hafenkneipe, hat was.
+	AI_Output(hero, self, "Info_Mod_Baltram_Melasse_15_00"); //You got any molasses?
+	AI_Output(self, hero, "Info_Mod_Baltram_Melasse_01_01"); //I'm afraid I can't serve you with that, but I think Kardif, the innkeeper of the harbour pub, has something.
 
-	B_LogEntry	(TOPIC_MOD_SAMUEL_RUM, "Baltram hat keine Melasse, aber er glaubt, dass Kardif, der Wirt der Hafenkneipe, etwas davon hat.");
+	B_LogEntry	(TOPIC_MOD_SAMUEL_RUM, "Baltram has no molasses, but he believes that Kardif, the innkeeper of the port tavern, will benefit.");
 };
 
 INSTANCE Info_Mod_Baltram_Dokumente (C_INFO)
@@ -307,7 +307,7 @@ INSTANCE Info_Mod_Baltram_Dokumente (C_INFO)
 	information	= Info_Mod_Baltram_Dokumente_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du noch die Blätter von Erhard?";
+	description	= "Do you still have the leaves of Erhard?";
 };
 
 FUNC INT Info_Mod_Baltram_Dokumente_Condition()
@@ -321,14 +321,14 @@ FUNC INT Info_Mod_Baltram_Dokumente_Condition()
 
 FUNC VOID Info_Mod_Baltram_Dokumente_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baltram_Dokumente_15_00"); //Hast du noch die Blätter von Erhard?
-	AI_Output(self, hero, "Info_Mod_Baltram_Dokumente_01_01"); //Welche ... Ah, ich verstehe. So Leid es mir tut, ich bin nicht mehr in ihrem Besitz.
-	AI_Output(hero, self, "Info_Mod_Baltram_Dokumente_15_02"); //Wie vorherzusehen war ...
-	AI_Output(self, hero, "Info_Mod_Baltram_Dokumente_01_03"); //Keineswegs! Mika von der hiesigen Stadtwache beschlagnahmte sie, als er meine Ladung überprüfte.
-	AI_Output(self, hero, "Info_Mod_Baltram_Dokumente_01_04"); //Dabei ist doch solch ein Besitz nicht verboten!
-	AI_Output(hero, self, "Info_Mod_Baltram_Dokumente_15_05"); //Ich werde mich darum kümmern.
+	AI_Output(hero, self, "Info_Mod_Baltram_Dokumente_15_00"); //Do you still have the leaves of Erhard?
+	AI_Output(self, hero, "Info_Mod_Baltram_Dokumente_01_01"); //Which...? Ah, I understand. I'm sorry, I'm not in her possession anymore.
+	AI_Output(hero, self, "Info_Mod_Baltram_Dokumente_15_02"); //As was to be expected....
+	AI_Output(self, hero, "Info_Mod_Baltram_Dokumente_01_03"); //Not at all! Mika from the local city guard impounded her when he checked my cargo.
+	AI_Output(self, hero, "Info_Mod_Baltram_Dokumente_01_04"); //Yet such possession is not forbidden!
+	AI_Output(hero, self, "Info_Mod_Baltram_Dokumente_15_05"); //I'll take care of it.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "Auch Baltram hat die Seiten verloren, und zwar an Mika von der Stadtwache.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "Baltram has also lost the sides to Mika from the City Guard.");
 
 	Mod_REL_Dokumente = 3;
 };
@@ -341,7 +341,7 @@ INSTANCE Info_Mod_Baltram_Blutkelch (C_INFO)
 	information	= Info_Mod_Baltram_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche einen Blutkelch.";
+	description	= "I'm looking for a blood calyx.";
 };
 
 FUNC INT Info_Mod_Baltram_Blutkelch_Condition()
@@ -355,12 +355,12 @@ FUNC INT Info_Mod_Baltram_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Baltram_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baltram_Blutkelch_15_00"); //Ich suche einen Blutkelch.
-	AI_Output(self, hero, "Info_Mod_Baltram_Blutkelch_01_01"); //Hmm ... Du solltest es mal bei einem Raritätenhändler versuchen. Gibt doch einige auf Khorinis.
-	AI_Output(self, hero, "Info_Mod_Baltram_Blutkelch_01_02"); //Ach ja. Neulich kam einer hier vorbei. Er nannte sich Morpheus. Kam wohl aus einer anderen Ecke der Insel.
-	AI_Output(hero, self, "Info_Mod_Baltram_Blutkelch_15_03"); //Gute Idee. Versuch ich bei denen mal mein Glück.
+	AI_Output(hero, self, "Info_Mod_Baltram_Blutkelch_15_00"); //I'm looking for a blood calyx.
+	AI_Output(self, hero, "Info_Mod_Baltram_Blutkelch_01_01"); //Hmm... You should try a rarity dealer. There are some on Khorinis.
+	AI_Output(self, hero, "Info_Mod_Baltram_Blutkelch_01_02"); //Oh, yeah. Someone came by here the other day. He called himself Morpheus. Probably came from another corner of the island.
+	AI_Output(hero, self, "Info_Mod_Baltram_Blutkelch_15_03"); //Good idea. I'll try my luck with them.
 
-	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Zuris meint, ich solle es mit dem Kelch bei den Raritätenhändlern versuchen. Einer heißt Morpheus und kommt wohl von weiter her. Ansonsten wären da wohl noch Lutero und Erol ...");
+	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Zuris thinks I should try the chalice at the rarity dealers. One of them is called Morpheus and probably comes from further afield. Otherwise there would be Lutero and Erol...");
 
 	B_StartOtherRoutine	(Mod_521_NONE_Erol_NW, "TOT");
 };
@@ -373,7 +373,7 @@ INSTANCE Info_Mod_Baltram_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Baltram_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "I saw your poster on the billboard...";
 };
 
 FUNC INT Info_Mod_Baltram_Anschlagtafel_Condition()
@@ -416,12 +416,12 @@ FUNC VOID Info_Mod_Baltram_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItPl_Melone, Mod_Anschlagtafel_Khorinis_Baltram_Melone);
 		Npc_RemoveInvItems	(hero, ItFo_MuttonRaw, Mod_Anschlagtafel_Khorinis_Baltram_Fleisch);
 
-		AI_Output(self, hero, "Info_Mod_Baltram_Anschlagtafel_01_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Baltram_Anschlagtafel_01_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Baltram_Anschlagtafel_01_00"); //What? Show me... In fact, all of it. Very well done.
+		AI_Output(self, hero, "Info_Mod_Baltram_Anschlagtafel_01_01"); //Here's your reward.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Baltram_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Baltram_Anschlagtafel_01_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Baltram_Anschlagtafel_01_02"); //Nice doing business with you.
 
 		if (Mod_Anschlagtafel_Khorinis_Baltram_Gold < 200)
 		{
@@ -506,7 +506,7 @@ FUNC VOID Info_Mod_Baltram_TradeFake_Info()
 {
 	B_Say (hero, self, "$TRADE_1");
 
-	AI_Output(self, hero, "Info_Mod_Baltram_TradeFake_01_01"); //Handeln? Mit dir?! Scher dich zurück zu Beliar!
+	AI_Output(self, hero, "Info_Mod_Baltram_TradeFake_01_01"); //Trading? With you?! Get back to Beliar!
 
 	AI_StopProcessInfos	(self);
 };

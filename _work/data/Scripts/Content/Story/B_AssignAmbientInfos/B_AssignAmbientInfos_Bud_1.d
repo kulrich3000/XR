@@ -14,7 +14,7 @@ INSTANCE Info_Bud_1_EXIT(C_INFO)
 	condition	= Info_Bud_1_EXIT_Condition;
 	information	= Info_Bud_1_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_Bud_1_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Bud_1_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Bud_1_EinerVonEuchWerden_Condition;
 	information	= Info_Bud_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Wie werde ich in diesem Lager aufgenommen?";
+	description = "How will I be accepted in this camp?";
 };                       
 
 FUNC INT Info_Bud_1_EinerVonEuchWerden_Condition()
@@ -52,8 +52,8 @@ FUNC INT Info_Bud_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Bud_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Bud_1_EinerVonEuchWerden_15_00"); //Wie werde ich in diesem Lager aufgenommen?
-	AI_Output(self,hero,"Info_Bud_1_EinerVonEuchWerden_01_01"); //Früher war das noch einfacher. Da musstest du dir nur 'ne Spitzhacke besorgen und die alte Mine gehen. Aber seit dem Einsturz ist das vorbei. Sprech am besten mal mit Thorus.
+	AI_Output(hero,self,"Info_Bud_1_EinerVonEuchWerden_15_00"); //How will I be accepted in this camp?
+	AI_Output(self,hero,"Info_Bud_1_EinerVonEuchWerden_01_01"); //It used to be easier. All you had to do was get yourself a pickaxe and go to the old mine. But it's been over since the collapse. You'd better talk to Thorus.
 };
 
 // *************************************************************************
@@ -66,7 +66,7 @@ INSTANCE Info_Bud_1_WichtigePersonen(C_INFO)
 	condition	= Info_Bud_1_WichtigePersonen_Condition;
 	information	= Info_Bud_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_Bud_1_WichtigePersonen_Condition()
@@ -76,8 +76,8 @@ FUNC INT Info_Bud_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bud_1_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Bud_1_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_Bud_1_WichtigePersonen_01_01"); //Die Erzbarone. Sie haben die Kontrolle über das Lager. Je höher du stehst, desto mehr bekommst du.
+	AI_Output(hero,self,"Info_Bud_1_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,hero,"Info_Bud_1_WichtigePersonen_01_01"); //The ore barons. You are in control of the warehouse. The higher you stand, the more you get.
 };
 
 // *************************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_Bud_1_DasLager(C_INFO)
 	condition	= Info_Bud_1_DasLager_Condition;
 	information	= Info_Bud_1_DasLager_Info;
 	permanent	= 1;
-	description = "Gibt es hier noch was interessanteres als Hütten?";
+	description = "Is there anything more interesting than huts?";
 };                       
 
 FUNC INT Info_Bud_1_DasLager_Condition()
@@ -100,9 +100,9 @@ FUNC INT Info_Bud_1_DasLager_Condition()
 
 FUNC VOID Info_Bud_1_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Bud_1_DasLager_15_00"); //Gibt es hier noch irgendwas interessanteres als Hütten?
-	AI_Output(self,hero,"Info_Bud_1_DasLager_01_01"); //Abends kannst du dir in der Arena ansehen, wie sich die Gardisten gegenseitig die Fresse polieren.
-	AI_Output(self,hero,"Info_Bud_1_DasLager_01_02"); //Das ist den Eintritt glatt wert.
+	AI_Output(hero,self,"Info_Bud_1_DasLager_15_00"); //Is there anything more interesting than huts?
+	AI_Output(self,hero,"Info_Bud_1_DasLager_01_01"); //In the evening you can watch the guards polishing each other's faces in the arena.
+	AI_Output(self,hero,"Info_Bud_1_DasLager_01_02"); //That's worth the entrance ticket.
 };
 
 // *************************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_Bud_1_DieLage(C_INFO) // E1
 	condition	= Info_Bud_1_DieLage_Condition;
 	information	= Info_Bud_1_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_Bud_1_DieLage_Condition()
@@ -125,8 +125,8 @@ FUNC INT Info_Bud_1_DieLage_Condition()
 
 FUNC VOID Info_Bud_1_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Bud_1_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,hero,"Info_Bud_1_DieLage_01_01"); //Alles, was ich will, ist meine Ruhe. Also geh mir nicht auf den Sack.
+	AI_Output(hero,self,"Info_Bud_1_DieLage_15_00"); //How's it looking?
+	AI_Output(self,hero,"Info_Bud_1_DieLage_01_01"); //All I want is peace and quiet. So don't get on my nerves.
 };
 
 INSTANCE Info_Mod_BUD_1_Pickpocket (C_INFO)

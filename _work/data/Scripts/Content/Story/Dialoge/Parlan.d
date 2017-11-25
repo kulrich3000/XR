@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Parlan_Hi_Condition()
 FUNC VOID Info_Mod_Parlan_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Parlan_Hi_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Parlan_Hi_05_01"); //Sei gegrüßt, Fremder. Was führt dich in unser Kloster?
+	AI_Output(self, hero, "Info_Mod_Parlan_Hi_05_01"); //Greetings, stranger. What brings you to our monastery?
 };
 
 INSTANCE Info_Mod_Parlan_Aufgabe (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Parlan_Aufgabe (C_INFO)
 	information	= Info_Mod_Parlan_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich irgendwas für dich tun?";
+	description	= "Is there anything I can do for you?";
 };
 
 FUNC INT Info_Mod_Parlan_Aufgabe_Condition()
@@ -43,18 +43,18 @@ FUNC INT Info_Mod_Parlan_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Parlan_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Parlan_Aufgabe_15_00"); //Kann ich irgendwas für dich tun?
-	AI_Output(self, hero, "Info_Mod_Parlan_Aufgabe_05_01"); //Ich brauche momentan keine Hilfe.
-	AI_Output(hero, self, "Info_Mod_Parlan_Aufgabe_15_02"); //Ich will ein Novize werden und muss jedem Feuermagier helfen.
+	AI_Output(hero, self, "Info_Mod_Parlan_Aufgabe_15_00"); //Is there anything I can do for you?
+	AI_Output(self, hero, "Info_Mod_Parlan_Aufgabe_05_01"); //I don't need any help right now.
+	AI_Output(hero, self, "Info_Mod_Parlan_Aufgabe_15_02"); //I want to become a novice and must help every fire magician.
 
 	Log_CreateTopic	(TOPIC_MOD_PARLAN_MANA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PARLAN_MANA, LOG_RUNNING);
 	
-	AI_Output(self, hero, "Info_Mod_Parlan_Aufgabe_05_03"); //Ach so ist das. Es reicht mir wenn du deine magische Kraft um 30 erhöhst.
+	AI_Output(self, hero, "Info_Mod_Parlan_Aufgabe_05_03"); //That's how it is. It's enough for me if you increase your magic power by 30.
 
 	ParlanBisMana	=	hero.attribute[ATR_MANA_MAX];
 
-	B_LogEntry	(TOPIC_MOD_PARLAN_MANA, "Für Parlan soll ich meine Mana um 30 erhöhen.");
+	B_LogEntry	(TOPIC_MOD_PARLAN_MANA, "For Parlan, I'm to increase my mana by 30.");
 };
 
 INSTANCE Info_Mod_Parlan_Aufgabe_Fertig (C_INFO)
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_Parlan_Aufgabe_Fertig (C_INFO)
 	information	= Info_Mod_Parlan_Aufgabe_Fertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe meine MANA erhöht.";
+	description	= "I raised my MANA.";
 };
 
 FUNC INT Info_Mod_Parlan_Aufgabe_Fertig_Condition()
@@ -79,12 +79,12 @@ FUNC INT Info_Mod_Parlan_Aufgabe_Fertig_Condition()
 
 FUNC VOID Info_Mod_Parlan_Aufgabe_Fertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Parlan_Aufgabe_Fertig_15_00"); //Ich habe meine MANA erhöht.
-	AI_Output(self, hero, "Info_Mod_Parlan_Aufgabe_Fertig_05_01"); //Gut, das reicht mir.
+	AI_Output(hero, self, "Info_Mod_Parlan_Aufgabe_Fertig_15_00"); //I raised my MANA.
+	AI_Output(self, hero, "Info_Mod_Parlan_Aufgabe_Fertig_05_01"); //Well, that's good enough for me.
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_PARLAN_MANA, "Parlan habe ich überzeugt.", "Parlan ist zufrieden mit mir. Ich habe genug für ihn getan.");
+	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_PARLAN_MANA, "I convinced Parlan.", "Parlan is happy with me. I've done enough for him.");
 	B_SetTopicStatus	(TOPIC_MOD_PARLAN_MANA, LOG_SUCCESS);
 
 	B_Göttergefallen(1, 1);
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Parlan_Lehrer (C_INFO)
 	information	= Info_Mod_Parlan_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer kann mir beibringen meine magische Kraft zu erhöhen?";
+	description	= "Who can teach me how to increase my magical power?";
 };
 
 FUNC INT Info_Mod_Parlan_Lehrer_Condition()
@@ -115,11 +115,11 @@ FUNC INT Info_Mod_Parlan_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Parlan_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Parlan_Lehrer_15_00"); //Wer kann mir beibringen meine magische Kraft zu erhöhen?
-	AI_Output(self, hero, "Info_Mod_Parlan_Lehrer_05_01"); //Ich kann dir beibringen deine magische Kraft zu steigern.
+	AI_Output(hero, self, "Info_Mod_Parlan_Lehrer_15_00"); //Who can teach me how to increase my magical power?
+	AI_Output(self, hero, "Info_Mod_Parlan_Lehrer_05_01"); //I can teach you to increase your magic power.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KLOSTER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_KLOSTER, "Parlan kann mir beibringen meine MANA zu steigern.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_KLOSTER, "Parlan can teach me how to raise my MANA.");
 };
 
 INSTANCE Info_Mod_Parlan_Ring (C_INFO)
@@ -143,16 +143,16 @@ FUNC INT Info_Mod_Parlan_Ring_Condition()
 
 FUNC VOID Info_Mod_Parlan_Ring_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Parlan_Ring_05_00"); //Du musst mir helfen.
-	AI_Output(hero, self, "Info_Mod_Parlan_Ring_15_01"); //Was ist denn passiert?
-	AI_Output(self, hero, "Info_Mod_Parlan_Ring_05_02"); //Der Novize Pedro hat mir meinen Feuerring gestohlen und ist aus dem Kloster geflohen.
-	AI_Output(self, hero, "Info_Mod_Parlan_Ring_05_03"); //Du musst mir unbedingt den Ring zurückbringen. Am besten fragst du ein paar Leute, ob sie ihn gesehen haben.
+	AI_Output(self, hero, "Info_Mod_Parlan_Ring_05_00"); //You have to help me.
+	AI_Output(hero, self, "Info_Mod_Parlan_Ring_15_01"); //What the hell happened?
+	AI_Output(self, hero, "Info_Mod_Parlan_Ring_05_02"); //The novice Pedro stole my ring of fire and fled the monastery.
+	AI_Output(self, hero, "Info_Mod_Parlan_Ring_05_03"); //I really need you to bring the ring back. You'd better ask some people if they saw him.
 
 	Npc_ExchangeRoutine	(Mod_7037_NOV_Pedro_NW,	"FEUERRING");
 
 	Log_CreateTopic	(TOPIC_MOD_PARLAN_FEUERRING, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PARLAN_FEUERRING, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Der Novize Pedro hat dem Magier Parlan seinen Feuerring gestohlen und ich soll ihm den Ring wiederbeschaffen. Ich soll ein paar Leute fragen, wohin er gerannt ist.");
+	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "The novice Pedro has stolen the ring of fire from the magician Parlan and I am to retrieve the ring for him. I'm supposed to ask some people where he ran off to.");
 };
 
 INSTANCE Info_Mod_Parlan_Ring_Zurueck (C_INFO)
@@ -163,7 +163,7 @@ INSTANCE Info_Mod_Parlan_Ring_Zurueck (C_INFO)
 	information	= Info_Mod_Parlan_Ring_Zurueck_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab den Ring.";
+	description	= "I got the ring.";
 };
 
 FUNC INT Info_Mod_Parlan_Ring_Zurueck_Condition()
@@ -178,17 +178,17 @@ FUNC INT Info_Mod_Parlan_Ring_Zurueck_Condition()
 
 FUNC VOID Info_Mod_Parlan_Ring_Zurueck_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Parlan_Ring_Zurueck_15_00"); //Ich hab den Ring.
+	AI_Output(hero, self, "Info_Mod_Parlan_Ring_Zurueck_15_00"); //I got the ring.
 
 	B_GiveInvItems	(hero, self, ItRi_Feuerring_Parlan, 1);
 
-	AI_Output(self, hero, "Info_Mod_Parlan_Ring_Zurueck_05_01"); //Vielen Dank. Hier ist deine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Parlan_Ring_Zurueck_05_01"); //Thank you very much. Here's your reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Ich hab Parlan seinen Ring gegeben.");
+	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "I gave Parlan his ring.");
 	B_SetTopicStatus	(TOPIC_MOD_PARLAN_FEUERRING, LOG_SUCCESS);
 
 	B_Göttergefallen(1, 1);
@@ -202,7 +202,7 @@ INSTANCE Info_Mod_Parlan_Patherion (C_INFO)
 	information	= Info_Mod_Parlan_Patherion_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Pyrokar sagte mir, dass ich mich für meine nächste Mission an dich wenden soll.";
+	description	= "Pyrokar told me to contact you for my next mission.";
 };
 
 FUNC INT Info_Mod_Parlan_Patherion_Condition()
@@ -215,58 +215,58 @@ FUNC INT Info_Mod_Parlan_Patherion_Condition()
 
 FUNC VOID Info_Mod_Parlan_Patherion_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_00"); //Pyrokar sagte mir, dass ich mich für meine nächste Mission an dich wenden soll.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_01"); //Er erwähnte etwas von einer heiligen Stätte ...
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_02"); //Ja, Bruder. Jetzt, da du einer von uns bist, ist es Zeit dir eine alte Geschichte zu erzählen.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_03"); //Ich bin ganz Ohr.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_04"); //Kennst du die Sage über die Tränen Innos'?
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_05"); //Tränen Innos'? Nein, lass hören.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_06"); //Es begann in der Zeit, als Innos seinen beiden Brüder gegenüberstand und ihm klar wurde, dass er Beliar bekämpfen musste. Als Innos dies erkannte füllte sich sein Herz mit Trauer und er begann zu weinen.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_07"); //13 Jahre lang weinte er und seine Tränen fielen herab auf die Welt. Trotz dieser langen Zeit hat Innos nur 6 Tränen vergossen.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_08"); //Und was geschah dann mit ihnen?
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_09"); //Nun, ein Mensch, sein Name war Ragon, fand eine der Tränen. Er kostete von ihr und er wurde erfüllt von übernatürlicher Kraft und Weisheit.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_10"); //Er erkannte die Weisheit von Innos Schöpfung. So begann er Innos zu dienen. Als Buße für sein bisheriges leben beschloss er einen Bußgang zu machen.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_11"); //Er ging immer weiter geradeaus, weder Seen noch Berge konnten ihn aufhalten. Und irgendwann, mitten im Gebirge, fand er ein Tal. Nahezu unerreichbar. Dort begann er einen Tempel zu bauen.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_12"); //Als er ihn fertig gebaut hatte betete er 13 Tage lang zu Innos. Er hörte erst auf zu beten als ihn 4 Stimmen unterbrachen.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_13"); //Es waren vier Männer. Sie kamen aus allen Teilen der Erde, getrieben von der Suche nach Vergebung ihrer Sünden und fühlten sich zu jenem Ort berufen, an dem Innos Kraft so deutlich zu spüren war.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_14"); //Die fünf Männer sprachen jeder eine andere Sprache und doch verstanden sie einander problemlos. Sie beschlossen gemeinsam ein großes Kloster zu bauen. Sie bauten lange, doch Zeit hatte für sie die Bedeutung verloren, durch die Tränen Innos’ alterten sie nicht mehr.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_15"); //Dann sind die Tränen eine Art Zaubertrank?
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_16"); //Sozusagen ja, nur noch viel mächtiger!
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_17"); //Und was geschah nachdem sie das Kloster erbaut hatten?
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_18"); //Nun, sie zogen aus um die Botschaft von Innos zu verbreiten und suchten Novizen für ihr Kloster. Zumindest die meisten von ihnen. Einer jedoch fühlte sich zu anderem berufen. Es war Ragon.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_19"); //Er wusste, oder vielmehr fühlte er, dass es noch eine Träne Innos' gab. Diese wollte er finden und ins Kloster bringen.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_20"); //Und hat er sie gefunden?
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_21"); //Das weiß niemand. Die restlichen 4vier trafen sich wieder im Kloster, wo sie noch heute das Oberhaupt der Innoskirche bilden, doch von Ragon hat man nie wieder was gehört.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_22"); //Und warum erzählst du mir diese Geschichte?
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_23"); //Nur um dir die nötigen Hintergrundinformationen für deinen nächsten Auftrag zu geben.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_24"); //Meinen nächsten Auftrag?
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_25"); //Ja. Patherion wurde vor einiger Zeit von den Schwarzmagiern und schwarzen Kriegern belagert. Zuerst verstanden wir ihr Handeln nicht, eine Belagerung war quasi sinnlos, da wir uns ja nach belieben teleportieren können, doch wir unterschätzen die Schwarzmagier. Sie haben die Foki gestohlen und eine Barriere errichtet.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_26"); //Was? Du meinst wie damals in der Minenkolonie?
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_27"); //Ja und Nein. Sie haben zwar eine ähnliche Barriere errichtet, doch man kann sowohl rein als auch raus gehen.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_28"); //Was ist dann das Problem?
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_29"); //Tja, man kann eben nur rein "gehen". Die Barriere verhindert, dass wir uns dorthin teleportieren können! Die Nahrungs- und Trankvorräte von Patherion gehen zur Neige, deshalb sollst du ihnen dieses Paket voller Tränke und dieses Paket voll Nahrung bringen.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_00"); //Pyrokar told me to contact you for my next mission.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_01"); //He mentioned something about a holy place...
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_02"); //Yes, brother. Now that you're one of us, it's time to tell you an old story.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_03"); //I'm all ears.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_04"); //Do you know the legend of Inno's tears?
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_05"); //Tears Innos'? No, let's hear it.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_06"); //It began when Innos faced his two brothers and realized that he had to fight against Beliar. When Innos realized this, his heart filled with sadness and he began to cry.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_07"); //For 13 years he cried and his tears fell down on the world. Despite this long time Innos shed only 6 tears.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_08"); //And then what happened to them?
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_09"); //Well, a man, his name was Ragon, found one of the tears. He tasted of her and he was filled with supernatural power and wisdom.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_10"); //He recognized the wisdom of Inno's creation. So he began to serve Innos. As a penance for his life so far, he decided to go on a course of penance.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_11"); //He kept going straight ahead, neither lakes nor mountains could stop him. And at some point, in the middle of the mountains, he found a valley. Almost unattainable. There he began to build a temple.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_12"); //When he had finished building it, he prayed to Innos for 13 days. He didn't stop praying until four voices interrupted him.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_13"); //There were four men. They came from all parts of the earth, driven by the search for forgiveness of their sins and felt called to the place where Inno's power was so clearly felt.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_14"); //The five men each spoke a different language and yet they understood each other without difficulty. They decided to build a large monastery together. They built for a long time, but time had lost the meaning for them, because of Inno's tears they did not age any more.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_15"); //Then the tears are some kind of potion?
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_16"); //In a way, only much more powerful!
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_17"); //And what happened after they built the monastery?
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_18"); //Well, they went out to spread the Innos message and sought novices for their monastery. At least most of them. One, however, felt called to another. It was Ragon.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_19"); //He knew, or rather, he felt that there was still a tear of Inno's. He wanted to find them and bring them to the monastery.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_20"); //And did he find her?
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_21"); //No one knows. The remaining four-four met again in the monastery, where they still form the head of the Innoskirche, but Ragon has never been heard of again.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_22"); //And why are you telling me this story?
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_23"); //Just to give you the necessary background information for your next job.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_24"); //My next assignment?
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_25"); //Yeah. Patherion was besieged by black magicians and black warriors some time ago. At first we didn't understand their actions, a siege was virtually pointless, because we can teleport as we like, but we underestimate the black mages. They stole the focus and built a barrier.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_26"); //What? You mean like you did back in the mining colony?
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_27"); //Yes and no. They have built a similar barrier, but you can go in or out.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_28"); //Then what's the problem?
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_29"); //Tja, man kann eben nur rein "go". Die Barriere verhindert, dass wir uns dorthin teleportieren können! Die Nahrungs- und Trankvorräte von Patherion gehen zur Neige, deshalb sollst du ihnen dieses Paket voller Tränke und dieses Paket voll Nahrung bringen.
 
 	CreateInvItems	(hero, ItMi_Pat_Nahrung, 1);
 	CreateInvItems	(hero, ItMi_Pat_Trank, 1);
 
-	AI_PrintScreen	("2 Pakete erhalten", -1, YPOS_GoldGiven, FONT_ScreenSmall, 2);
+	AI_PrintScreen	("2 Packages received", -1, YPOS_GoldGiven, FONT_ScreenSmall, 2);
 
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_30"); //Was? Ich denke man kann sich nicht dorthin teleportieren und wie du selbst gesagt hast ist es nahezu unerreichbar.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_31"); //Das stimmt so nicht ganz, man kann sich nur nicht zum Kloster teleportieren. Erinnerst du dich an die Kapelle, die Ragon eigenhändig baute? Sie liegt ausserhalb der Barriere und man kann problemlos durch Magie zu ihr reisen.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_32"); //Von dort aus wirst du dir allerdings selbst einen Weg durch die Reihen der Schwarzmagier suchen müssen.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_33"); //Klingt gefährlich!
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_34"); //Ist es auch. Aus diesem Grund wird das ganze auch dir aufgetragen und keinem der Novizen.
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_35"); //Gut, ich mache mich gleich auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_36"); //Nimm diese Rune. Mit ihr wirst du zur Kapelle von Patherion kommen.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_30"); //What? I don't think you can teleport there and as you said yourself, it's almost unattainable.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_31"); //That's not quite true, you just can't teleport to the monastery. Remember the chapel that Ragon built himself? She lies outside the barrier and you can easily travel to her by magic.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_32"); //From there, however, you will have to find your own way through the ranks of the black mages.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_33"); //Sounds dangerous!
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_34"); //It is, too. For this reason, it is also given to you and not to any of the novices.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_35"); //All right, I'll be right on my way.
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_36"); //Take this rune. With her you will come to the chapel of Patherion.
 
 	B_GiveInvItems	(self, hero, ItRu_Teleport_Pat, 1);
 
-	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_37"); //Und wie komme ich wieder zurück?
-	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_38"); //Mit dieser Rune. Du kannst sie allerdings nur in der Kapelle benutzen.
+	AI_Output(hero, self, "Info_Mod_Parlan_Patherion_15_37"); //And how do I get back?
+	AI_Output(self, hero, "Info_Mod_Parlan_Patherion_05_38"); //With this rune. However, you can only use it in the chapel.
 
 	B_GiveInvItems	(self, hero, ItRu_TeleportPatBack, 1);
 
-	B_LogEntry	(TOPIC_MOD_PATHERION, "Parlan hat mir von Patherion, einem großen Tempel der Feuermagier erzählt. Dieser wird momentan aber von Schwarzmagiern und Kriegern belagert und braucht deshalb Nachschub an Nahrung und Tränken. Ich soll diese nun in den Tempel bringen.");
+	B_LogEntry	(TOPIC_MOD_PATHERION, "Parlan told me about Patherion, a great temple of fire magicians. The latter is currently besieged by black mages and warriors and therefore needs food and water. I am to take these to the temple now.");
 };
 
 INSTANCE Info_Mod_Parlan_Lernen (C_INFO)
@@ -277,7 +277,7 @@ INSTANCE Info_Mod_Parlan_Lernen (C_INFO)
 	information	= Info_Mod_Parlan_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Teach me something.";
 };
 
 FUNC INT Info_Mod_Parlan_Lernen_Condition()
@@ -295,7 +295,7 @@ FUNC INT Info_Mod_Parlan_Lernen_Condition()
 
 FUNC VOID Info_Mod_Parlan_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Parlan_Lernen_15_00"); //Bring mir was bei.
+	AI_Output(hero, self, "Info_Mod_Parlan_Lernen_15_00"); //Teach me something.
 
 	Info_ClearChoices	(Info_Mod_Parlan_Lernen);
 
@@ -308,7 +308,7 @@ FUNC VOID Info_Mod_Parlan_Lernen_BACK()
 {
 	if (Mod_RealMana	>=	100)
 	{
-		AI_Output(self, hero, "Info_Mod_Parlan_Lernen_BACK_05_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Parlan_Lernen_BACK_05_01"); //Your magic skills are so good now, I can't teach you anything.
 	};
 	Info_ClearChoices	(Info_Mod_Parlan_Lernen);
 };

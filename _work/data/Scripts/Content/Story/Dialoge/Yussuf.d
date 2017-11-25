@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Yussuf_Hi (C_INFO)
 	information	= Info_Mod_Yussuf_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Tag. Ich suche Yussuf.";
+	description	= "Day. I'm looking for Yussuf.";
 };
 
 FUNC INT Info_Mod_Yussuf_Hi_Condition()
@@ -16,42 +16,42 @@ FUNC INT Info_Mod_Yussuf_Hi_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_15_00"); //Tag. Ich suche Yussuf.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_01"); //Du stehst vor ihm. Was liegt an?
-	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_15_02"); //Ich suche Stimmen für meine Aufnahme bei euch.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_03"); //Das trifft sich gut, ich suche nämlich auch Stimmen. Will bei den Kriegern mitmachen. Diese Gaunereien hier langweilen mich.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_15_04"); //Aber da musst du doch die Krieger fragen, nicht mich.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_05"); //Schon. Aber du könntest mir bei einer schwierigen Aufgabe zur Hand gehen.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_06"); //Wenn ich dann dafür eine Stimme kriege, kriegst du meine.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_15_00"); //Day. I'm looking for Yussuf.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_01"); //You're standing in front of him. What's happening?
+	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_15_02"); //I'm looking for voices for my recording.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_03"); //That's a good thing, because I'm also looking for voices. Wants to join the warriors. I'm bored with these rogues here.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_15_04"); //But you have to ask the warriors, not me.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_05"); //It is. But you could help me with a difficult task.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_06"); //If I get a vote for it, you get mine.
 
 	Info_ClearChoices	(Info_Mod_Yussuf_Hi);
 
-	Info_AddChoice	(Info_Mod_Yussuf_Hi, "Das hört sich gut an. Können wir machen.", Info_Mod_Yussuf_Hi_B);
-	Info_AddChoice	(Info_Mod_Yussuf_Hi, "Ich weiß nicht. Korrekt ist das aber nicht.", Info_Mod_Yussuf_Hi_A);
+	Info_AddChoice	(Info_Mod_Yussuf_Hi, "That sounds good to me. We can do that.", Info_Mod_Yussuf_Hi_B);
+	Info_AddChoice	(Info_Mod_Yussuf_Hi, "I don't know about that. But that is not correct.", Info_Mod_Yussuf_Hi_A);
 };
 
 FUNC VOID Info_Mod_Yussuf_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_B_15_00"); //Das hört sich gut an. Können wir machen.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_B_13_01"); //Ich melde mich, wenn ich dich brauche.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_B_15_00"); //That sounds good to me. We can do that.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_B_13_01"); //I'll call you when I need you.
 
 	Info_ClearChoices	(Info_Mod_Yussuf_Hi);
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_YUSSUF_HILFE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_YUSSUF_HILFE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_YUSSUF_HILFE, "Ich bekomme Yussufs Stimme, wenn ich ihm bei einer seiner Aufträge helfe. Er will mich später darauf ansprechen ...");
+	B_LogEntry	(TOPIC_MOD_ASS_YUSSUF_HILFE, "I get Yussuf's voice when I help him with one of his assignments. He wants to talk to me about it later....");
 
 	Mod_ASS_Yussuf = 2;
 };
 
 FUNC VOID Info_Mod_Yussuf_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_00"); //Ich weiß nicht. Korrekt ist das aber nicht.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_A_13_01"); //Und für was sind wir Gauner?
-	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_02"); //Ne. Lieber nicht. Wenn das rauskommt, bin ich tot.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_03"); //Oder glaubst du, die lassen mich einfach so wieder gehen?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_A_13_04"); //Wohl nicht. Aber dann ist nichts mit meiner Stimme. Und halt's Maul wegen dieser Sache.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_05"); //Klar.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_00"); //I don't know about that. But that is not correct.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_A_13_01"); //And what are we crooks for?
+	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_02"); //No. I'd rather not. If that comes out, I'm dead.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_03"); //Or do you think they'll just let me go like that again?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_A_13_04"); //I don't think so. But then there's nothing with my voice. And shut up about this.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_05"); //Sure.
 
 	Info_ClearChoices	(Info_Mod_Yussuf_Hi);
 
@@ -79,19 +79,19 @@ FUNC INT Info_Mod_Yussuf_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_00"); //Was machst du denn hier? Du hast doch meine Stimme noch nicht.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_01"); //Ich hab Shakir so gut bedient, dass er mir deine Stimme erlassen und mich gleich zu Masut geschickt hat.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_02"); //Alter Streber! Aber dann könnten wir doch diesmal zusammenarbeiten.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_03"); //Das könnten wir wohl. Ich muss dem Richter in Khorinis einen Blutkelch abnehmen.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_04"); //Das trifft sich gut. Ich muss auch in die Stadt.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_05"); //Und was hast du zu tun?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_06"); //Ich soll die Kisten im Hof vom Händler Matteo plündern. Der Hohe Rat vermutet da Kleidung drin, die können wir gut gebrauchen.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_07"); //Steht da nicht eine Wache?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_08"); //Schon, aber das ist kein Problem für mich.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_09"); //Hast du eine Verkleidung?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_10"); //Natürlich. Lass uns gehen. Wir schauen erst mal nach den Klamotten.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_00"); //What are you doing here? You don't have my vote yet.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_01"); //I served Shakir so well that he gave me your vote and sent me straight to Masut.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_02"); //Old geek! But then we could work together this time.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_03"); //I suppose we could. I have to take a blood cup from the judge in Khorinis.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_04"); //That's a good thing. I have to go downtown, too.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_05"); //And what do you have to do?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_06"); //I'm here to plunder the crates in the yard from merchant Matteo. The High Council suspects clothes in there, we could use them.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_07"); //Isn't there a guard there?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_08"); //Yeah, but that's no problem for me.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_09"); //Do you have a disguise?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_10"); //Of course it is. Let's get going. We'll check on the clothes first.
 
-	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Ich hab Yussuf getroffen. Diesmal wollen wir zusammenarbeiten. Er soll Bürgerkleidung aus dem Hof vom Händler Matteo besorgen.");
+	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "I met Yussuf. This time we want to work together. He's to get civilian clothes from merchant Matteo's farm.");
 
 	CreateInvItems	(self, ItAr_Vlk_M, 1);
 
@@ -125,10 +125,10 @@ FUNC INT Info_Mod_Yussuf_Blutkelch2_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch2_13_00"); //Der Ritter hier könnte was bemerken. Du musst ihn ablenken. Den Rest mache ich.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch2_15_01"); //Kein Problem.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch2_13_00"); //The knight here might notice something. You have to distract him. I'll do the rest.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch2_15_01"); //No problem.
 
-	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Ich muss Garond ablenken, damit Yussuf die Kleidung aus dem Lager holen kann.");
+	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "I have to distract Garond so that Yussuf can get the clothes out of the camp.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -153,14 +153,14 @@ FUNC INT Info_Mod_Yussuf_Blutkelch3_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_13_00"); //Das war mal 'ne leichte Sache. Los weg hier, bevor noch einer was merkt.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch3_15_01"); //Gehen wir doch gleich in die Oberstadt.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_13_02"); //Du weißt, wo der Richter steckt?
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch3_15_03"); //Gewiss. Er hat allerdings ne Wache vom Haus.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_13_04"); //Die könnte doch ich diesmal ablenken.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch3_15_05"); //Gute Idee. Auf geht's!
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_13_00"); //That was an easy one. Let's get out of here before somebody else notices.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch3_15_01"); //Why don't we go straight to the upper town?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_13_02"); //You know where the judge is?
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch3_15_03"); //Certainly. He's got a guard at the house, though.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_13_04"); //I could distract them this time.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch3_15_05"); //Good idea. Come on, let's go!
 
-	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Yussuf hat die Klamotten, jetzt müssen wir noch zum Richter");
+	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Yussuf's got the clothes, now we have to see the judge.");
 
 	AI_StopProcessInfos	(self);
 
@@ -188,8 +188,8 @@ FUNC INT Info_Mod_Yussuf_Blutkelch4_Condition()
 FUNC VOID Info_Mod_Yussuf_Blutkelch4_Info()
 {
 	AI_Output(self, hero, "DEFAULT"); //
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch4_15_00"); //Wenn die Wache wiederkommt, musst du sie ablenken. Ich verschwinde nach drinnen.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch4_13_01"); //Hab verstanden.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch4_15_00"); //When the guard returns, you'll have to distract them. I'm going inside.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch4_13_01"); //I understand.
 
 	AI_StopProcessInfos	(self);
 
@@ -218,10 +218,10 @@ FUNC INT Info_Mod_Yussuf_Blutkelch5_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch5_13_00"); //Den haben wir schön reingelegt. Wie geht's dem Richter?
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch5_15_01"); //Nicht gut. Er steht jetzt vor seinem Richter.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch5_13_02"); //Ein Mordskerl bist du.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch5_15_03"); //Das kannst du wörtlich nehmen. (lacht)
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch5_13_00"); //We fooled him pretty good. How's the judge?
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch5_15_01"); //Not good. He is now before his judge.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch5_13_02"); //You're a hell of a guy.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch5_15_03"); //You can take that literally. (laughs)
 };
 
 INSTANCE Info_Mod_Yussuf_Blutkelch6 (C_INFO)
@@ -245,9 +245,9 @@ FUNC INT Info_Mod_Yussuf_Blutkelch6_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch6_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch6_13_00"); //Ich werde meine Klamotten abliefern.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch6_15_01"); //Und ich gehe zum Hohen Rat. Bis ein andermal.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch6_13_02"); //Mach's gut!
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch6_13_00"); //I'm gonna drop my clothes off.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch6_15_01"); //And I'm going to the High Council. See you another time.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch6_13_02"); //Bye, now!
 
 	AI_UnEquipArmor	(self);
 
@@ -278,10 +278,10 @@ FUNC INT Info_Mod_Yussuf_Assassinengold_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Assassinengold_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Assassinengold_13_00"); //Teufelskerl! Du bist der Star im Lager. Wie machst du das?
-	AI_Output(hero, self, "Info_Mod_Yussuf_Assassinengold_15_01"); //Hast du schon mal was von Motivation gehört?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Assassinengold_13_02"); //Eh. Nein.
-	AI_Output(hero, self, "Info_Mod_Yussuf_Assassinengold_15_03"); //Dachte ich mir.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Assassinengold_13_00"); //Son of a gun! You're the star of the camp. How do you do that?
+	AI_Output(hero, self, "Info_Mod_Yussuf_Assassinengold_15_01"); //Have you ever heard of motivation?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Assassinengold_13_02"); //Eh. No.
+	AI_Output(hero, self, "Info_Mod_Yussuf_Assassinengold_15_03"); //I thought you might.
 };
 
 INSTANCE Info_Mod_Yussuf_Pickpocket (C_INFO)

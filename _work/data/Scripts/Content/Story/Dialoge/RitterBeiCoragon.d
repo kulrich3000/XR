@@ -18,7 +18,7 @@ FUNC INT Info_Mod_RitterBeiCoragon_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_RitterBeiCoragon_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_RitterBeiCoragon_Daemonisch_04_00"); //Verdammt, was ist geschehen. Ich kann mich nur noch an das dunkle Tal vor der Stadt erinnern ... und dann ... finstere Schatten, Dämonen ...
+	AI_Output(self, hero, "Info_Mod_RitterBeiCoragon_Daemonisch_04_00"); //Damn it, what happened. I can only remember the dark valley in front of the city.... and then.... dark shadows, demons....
 
 	AI_StopProcessInfos	(self);
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Vanas_Hi (C_INFO)
 	information	= Info_Mod_Vanas_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, ich bringe dir Erz und Sumpfkraut von Engardo.";
+	description	= "Hello, I brought you ore and bogweed from Engardo.";
 };
 
 FUNC INT Info_Mod_Vanas_Hi_Condition()
@@ -21,48 +21,48 @@ FUNC INT Info_Mod_Vanas_Hi_Condition()
 
 FUNC VOID Info_Mod_Vanas_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vanas_Hi_15_00"); //Hallo, ich bringe dir Erz und Sumpfkraut von Engardo.
+	AI_Output(hero, self, "Info_Mod_Vanas_Hi_15_00"); //Hello, I brought you ore and bogweed from Engardo.
 
-	B_ShowGivenThings	("12 Erzbrocken und 12 Stängel Sumpfkraut gegeben");
+	B_ShowGivenThings	("12 lumps of ore and 12 stems of swamp herb added");
 
 	Npc_RemoveInvItems	(hero, ItMi_Nugget, 12);
 	Npc_RemoveInvItems	(hero, ItMi_Joint, 12);
 
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_01"); //Ahh, ausgezeichnet. Meinen Vorrat an magischer Energie habe ich kürzlich aufgebraucht. Das kommt mir sehr gelegen.
-	AI_Output(hero, self, "Info_Mod_Vanas_Hi_15_02"); //Hast du was für mich?
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_03"); //Ohh, ja, die Bezahlung.
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_01"); //Ahh, excellent. I recently used up my supply of magical energy. It's convenient for me.
+	AI_Output(hero, self, "Info_Mod_Vanas_Hi_15_02"); //You got something for me?
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_03"); //Ohh, yeah, the payment.
 
 	B_GiveInvItems	(self, hero, ItMi_VanasPaket, 1);
 
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_04"); //(etwas leiser) Ich habe gerade leider nicht alles dabei. Fünf Stück Käse, eine Eispfeilspruchrolle und sechs Bier fehlen im Packet.
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_05"); //Aber für jemanden, der in der Kunst Erz zu Schmieden begabt ist, habe ich vielleicht etwas Interessantes für dich.
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_04"); //(slightly quieter) I don't have everything. Five pieces of cheese, an ice dart roll and six beers are missing in the package.
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_05"); //But for someone who is gifted in the art of ore forging, I might have something interesting for you.
 
 	Info_ClearChoices	(Info_Mod_Vanas_Hi);
 
-	Info_AddChoice	(Info_Mod_Vanas_Hi, "Das weckt meine Neugierde. Worum geht’s?", Info_Mod_Vanas_Hi_B);
-	Info_AddChoice	(Info_Mod_Vanas_Hi, "Kein Interesse. Gib mir einen Teil des Erzes und des Sumpfkrauts zurück.", Info_Mod_Vanas_Hi_A);
+	Info_AddChoice	(Info_Mod_Vanas_Hi, "It arouses my curiosity. What's this about?", Info_Mod_Vanas_Hi_B);
+	Info_AddChoice	(Info_Mod_Vanas_Hi, "Not interested. Give me back a part of the ore and the marsh herb.", Info_Mod_Vanas_Hi_A);
 };
 
 FUNC VOID Info_Mod_Vanas_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Vanas_Hi_B_15_00"); //Das weckt meine Neugierde. Worum geht’s?
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_B_06_01"); //Mein Wasserkriegerkollege Everaldo hat einen Schmiedeplan der alten Kultur übersetzt. Geh zu ihm und sag ihm, dass du von mir kommst.
+	AI_Output(hero, self, "Info_Mod_Vanas_Hi_B_15_00"); //It arouses my curiosity. What's this about?
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_B_06_01"); //My water warrior colleague Everaldo has translated a forging plan of the old culture. Go to him and tell him you're coming from me.
 	
 	Info_ClearChoices	(Info_Mod_Vanas_Hi);
 
 	Mod_SLD_Engardo = 2;
 
-	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Vanas hatte nicht alle Waren dabei. Dafür hat der Wasserkrieger Everaldo einen interessanten Schmiedebauplan für mich.");
+	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Vanas didn't have all the goods. The water warrior Everaldo has an interesting plan for me.");
 };
 
 FUNC VOID Info_Mod_Vanas_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Vanas_Hi_A_15_00"); //Kein Interesse. Gib mir einen Teil des Erzes und des Sumpfkrauts zurück.
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_A_06_01"); //Schade. Da entgeht dir was. Hier hast du je vier Erz und Sumpfkraut zurück.
+	AI_Output(hero, self, "Info_Mod_Vanas_Hi_A_15_00"); //Not interested. Give me back a part of the ore and the marsh herb.
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_A_06_01"); //Too bad. You're missing something. Here you have four ore and four swampweed each.
 
-	B_ShowGivenThings	("4 Erzbrocken und 4 Stängel Sumpfkraut erhalten");
+	B_ShowGivenThings	("4 chunks of ore and 4 stems of bogweed preserved");
 
 	CreateInvItems	(hero, ItMi_Nugget, 4);
 	CreateInvItems	(hero, ItMi_Joint, 4);
@@ -71,7 +71,7 @@ FUNC VOID Info_Mod_Vanas_Hi_A()
 
 	Mod_SLD_Engardo = 3;
 
-	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Vanas hatte nicht alle Waren dabei. Ich habe einen Teil des Sumpfkrauts und des Erzes zurückgefordert und auch bekommen.");
+	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Vanas didn't have all the goods. I have reclaimed and received a part of the marsh herb and the ore.");
 };
 
 INSTANCE Info_Mod_Vanas_Pickpocket (C_INFO)

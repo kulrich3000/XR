@@ -5,7 +5,7 @@
 prototype Mst_Default_Kobold (C_NPC)			
 {
 	// ------ Monster -----
-	name							=	"Kobold";
+	name							=	"imp";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_KOBOLD;
 	level							=	10;

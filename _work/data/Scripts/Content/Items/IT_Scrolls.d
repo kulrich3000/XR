@@ -3,7 +3,7 @@
 //*****************************************************************************
 
 // Paladin Scrolls
-const 	string Name_PaladinScroll		=	"Paladin Zauber"; 	
+const 	string Name_PaladinScroll		=	"Paladin Spell"; 	
 const	int	Value_Sc_PalLight			=	50;
 const	int	Value_Sc_PalLightHeal		=	100;
 const	int	Value_Sc_PalHolyBolt		=	200;
@@ -110,7 +110,7 @@ INSTANCE ItSc_soulsplit (C_Item)
 
 	description			=	NAME_SPL_Soulsplit;
 	
-	TEXT	[0]			=	"Spaltet den Körper von der Seele"	;
+	TEXT	[0]			=	"Splits the body from the soul"	;
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_scroll;
@@ -139,7 +139,7 @@ INSTANCE ItSc_Poison (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_RED";
 
-	description			=	"Vergiftung";
+	description			=	"poisoning";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_scroll;
@@ -168,7 +168,7 @@ INSTANCE ItSc_ZiegeZaehmen (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_RED";
 
-	description			=	"Ziege zähmen";
+	description			=	"goat tame";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_scroll;
@@ -197,7 +197,7 @@ INSTANCE ItSc_Telekinese (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_RED";
 
-	description			=	"Telekinese";
+	description			=	"telekinesis";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_scroll;
@@ -228,7 +228,7 @@ INSTANCE ItSc_engel (C_Item)
 
 	description			=	NAME_SPL_engel;
 	
-	TEXT	[0]			=	"Ruft einen Engel";
+	TEXT	[0]			=	"Call an angel";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_scroll;
@@ -325,7 +325,7 @@ INSTANCE ItSc_Geisterspell (C_Item)
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
 
-	description			=	"Geister-Einfang-Spruch";
+	description			=	"ghost capture saying";
 	
 		
 };
@@ -547,7 +547,7 @@ instance ItSc_Nebel (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Nebel";
+	description			=	"smoke";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -577,7 +577,7 @@ instance ItSc_AuraBerserker (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Aura des Berserkers";
+	description			=	"Aura of the Berserker";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -610,7 +610,7 @@ instance ItSc_AuraFrost (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Aura des Frostes";
+	description			=	"Aura of frost";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -643,7 +643,7 @@ instance ItSc_AuraFeuer (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Aura des Verbrennens";
+	description			=	"Aura of burning";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -676,7 +676,7 @@ instance ItSc_AuraFlammen (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Aura der Flammen";
+	description			=	"Aura of Flames";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -709,7 +709,7 @@ instance ItSc_AuraHeilung (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Aura der Heilung";
+	description			=	"Aura of Healing";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -742,7 +742,7 @@ instance ItSc_AuraDesStehlens (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Aura des Stehlens";
+	description			=	"Aura of stealing";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -926,14 +926,14 @@ INSTANCE ItSc_Fackel (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Fackeln an/aus";
+	description			=	"Torches on/off";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
 	TEXT	[1]			=	NAME_Mana_needed;		
 	COUNT	[1]			=	SPL_Cost_Scroll;
 	
-	TEXT	[2]			=	"Entzündet und löscht Fackeln";		
+	TEXT	[2]			=	"Ignites and extinguishes torches";		
 	
 	TEXT	[5]			=	NAME_Value;				
 	COUNT	[5]			=	value;
@@ -1089,7 +1089,7 @@ INSTANCE ItSc_SumCrawler (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Minecrawler rufen";
+	description			=	"Call Minecrawler";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -1408,7 +1408,7 @@ INSTANCE ItSc_TeleportBergwelt (C_Item)
 
 	description			=	"Teleport";
 	
-	TEXT	[0]			=	"Nur ein mächtiger Krieger sollte ihn benutzen";
+	TEXT	[0]			=	"Only a mighty warrior should use it";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1433,7 +1433,7 @@ INSTANCE ItSc_ArgezToSaturas (C_Item)
 
 	description			=	"Teleport";
 	
-	TEXT	[0]			=	"Bringt Argez und mich zu Saturas";
+	TEXT	[0]			=	"Take Argez and me to Saturas";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1458,7 +1458,7 @@ INSTANCE ItSc_TeleportGenn (C_Item)
 
 	description			=	"Teleport";
 	
-	TEXT	[0]			=	"zurück zu Genn";
+	TEXT	[0]			=	"back to Genn";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1481,7 +1481,7 @@ INSTANCE ItSc_TeleportOrkfriedhof (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Teleport zum Orkfriedhof";
+	description			=	"Teleport to the Orc Cemetery";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1504,7 +1504,7 @@ INSTANCE ItSc_TeleportOldcamp (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Teleport ins alte Lager";
+	description			=	"Teleport to the old warehouse";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1529,7 +1529,7 @@ INSTANCE ItSc_TeleportTorgan (C_Item)
 
 	description			=	"Teleport";
 	
-	TEXT	[0]			=	"zu Torgan";
+	TEXT	[0]			=	"organically";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1554,7 +1554,7 @@ INSTANCE ItSc_TeleportBeliarOut (C_Item)
 
 	description			=	"Teleport";
 	
-	TEXT	[0]			=	"führt aus dem Tempel";
+	TEXT	[0]			=	"leads out of the temple";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1579,7 +1579,7 @@ INSTANCE ItSc_TeleportOutOfOT (C_Item)
 
 	description			=	"Teleport";
 	
-	TEXT	[0]			=	"Zu Xardas";
+	TEXT	[0]			=	"To Xardas";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1604,7 +1604,7 @@ INSTANCE ItSc_TeleportEisSH (C_Item)
 
 	description			=	"Teleport";
 	
-	TEXT	[0]			=	"Zum Stonehenge";
+	TEXT	[0]			=	"To the Stonehenge";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1627,7 +1627,7 @@ INSTANCE ItSc_Teleport_Eisgebiet (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Teleport nach Gelato";
+	description			=	"Teleport to Gelato";
 	
 	TEXT	[0]			=	"";
 	
@@ -1654,7 +1654,7 @@ INSTANCE ItSc_TeleportVorAL (C_Item)
 
 	description			=	"Teleport";
 	
-	TEXT	[0]			=	"Vor das alte Lager";
+	TEXT	[0]			=	"In front of the old warehouse";
 	
 	TEXT	[5]			=	NAME_Value;									
 	COUNT	[5]			=	value;
@@ -1679,7 +1679,7 @@ INSTANCE ItSc_Verfluchen (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verfluchen";
+	description			=	"cursing";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -1709,7 +1709,7 @@ INSTANCE ItSc_Hagel (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Hagel";
+	description			=	"hail";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -1739,7 +1739,7 @@ INSTANCE ItSc_Beeinflussung (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Beeinflussung";
+	description			=	"manipulation";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -1802,7 +1802,7 @@ INSTANCE ItSc_SumHagen (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Spruchrolle von Lord Hagen";
+	description			=	"The role of Lord Hagen";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -2000,7 +2000,7 @@ INSTANCE ItSc_Rueckverwandlung (C_Item)
 	effect				=	"SPELLFX_WEAKGLIMMER";
 	mag_circle			= 7;
 
-	description			=	"Rückverwandlung";
+	description			=	"retransformation";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -2271,7 +2271,7 @@ INSTANCE ItSc_SumSwampGolem (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Sumpfgolem beschwören";
+	description			=	"conjure marshmallow";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -2331,7 +2331,7 @@ INSTANCE ItSc_SumKrautschaf (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Schaf für Troll beschwören";
+	description			=	"Summon Sheep for Troll";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -2492,7 +2492,7 @@ INSTANCE ItSc_Pyrokinesis_g1 (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_YELLOW";
 
-	description			=	"Pyrokinese";
+	description			=	"pyrokinesis";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -2760,7 +2760,7 @@ INSTANCE ItSc_HolyRain (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_YELLOW";
 
-	description			=	"Heiliger Regen";
+	description			=	"Holy Rain";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -2856,7 +2856,7 @@ INSTANCE ItSc_HolyWave (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_RED";
 
-	description			=	"Heilige Welle";
+	description			=	"Holy Wave";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -2888,7 +2888,7 @@ INSTANCE ItSc_FireWave (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_RED";
 
-	description			=	"Feuerwelle";
+	description			=	"fire wave";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -2982,7 +2982,7 @@ INSTANCE ItSc_TrfWoman (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verwandlung Frau";
+	description			=	"Woman transformation";
 
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3012,7 +3012,7 @@ INSTANCE ItSc_TrfWomanBack (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verwandlung Mann";
+	description			=	"transformation man";
 
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3042,7 +3042,7 @@ INSTANCE ItSc_TrfMeatbug (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verwandlung Fleischwanze";
+	description			=	"metamorphosis meat bug";
 
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3072,7 +3072,7 @@ INSTANCE ItSc_TrfHarpie (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verwandlung Harpie";
+	description			=	"Harpie Transformation";
 
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3102,7 +3102,7 @@ INSTANCE ItSc_TrfShadowbeast (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verwandlung Schattenläufer";
+	description			=	"Transform into Shadowbeast";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3132,7 +3132,7 @@ INSTANCE ItSc_TrfSnapper (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verwandlung Snapper";
+	description			=	"Transform into Snapper";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3163,7 +3163,7 @@ INSTANCE ItSc_TrfWarg (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			= 	"Verwandlung Warg";
+	description			= 	"Transform into Warg";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3193,7 +3193,7 @@ INSTANCE ItSc_TrfBlackTroll (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			= 	"Verwandlung Schwarzer Troll";
+	description			= 	"Transformation Black Troll";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3223,7 +3223,7 @@ INSTANCE ItSc_TrfGolem (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			= "Verwandlung Steingolem";
+	description			= "Transformation of the Stone Golem";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3253,7 +3253,7 @@ INSTANCE ItSc_TrfBloodfly (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verwandlung Blutfliege";
+	description			=	"Blood fly metamorphosis";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3283,7 +3283,7 @@ INSTANCE ItSc_TrfBloodhound (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=  "Verwandlung Bluthund";
+	description			=  "Transformation bloodhound";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3313,7 +3313,7 @@ INSTANCE ItSc_TrfKeiler (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verwandlung Keiler";
+	description			=	"Transformation Boar";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3343,7 +3343,7 @@ INSTANCE ItSc_TrfSheep (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Verwandlung Schaf";
+	description			=	"Transform into Sheep";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3373,7 +3373,7 @@ INSTANCE ItSc_TrfRabbit (C_Item)//Joly:Auf Dracheninsel in Truhe der Schwarzmagi
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=  "Verwandlung Hase";
+	description			=  "Transformation Hare";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 
@@ -3401,7 +3401,7 @@ INSTANCE ItArScrollControl (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	30;
 
-	description			=	"Kontrolle";
+	description			=	"supervision";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	//TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;

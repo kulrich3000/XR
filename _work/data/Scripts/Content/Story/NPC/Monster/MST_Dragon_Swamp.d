@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Swamp(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Sumpfdrache";
+	name							=	"Swamp Dragon";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_SWAMP;
 	level							=	300;
@@ -87,7 +87,7 @@ INSTANCE Dragon_Swamp	(Mst_Default_Dragon_Swamp)
 
 INSTANCE SwampDragon	(Mst_Default_Dragon_Swamp)
 {
-	name		=	"Sumpfdrache";
+	name		=	"Swamp Dragon";
 	//flags				   			= 	NPC_FLAG_IMMORTAL;
 	fight_tactic	=	FAI_DRAGON;
 	B_SetVisuals_Dragon_Swamp();

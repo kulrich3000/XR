@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Elvrich_Hi (C_INFo)
 	information	= Info_Mod_Elvrich_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist ein Lehrling?";
+	description	= "You're an apprentice?";
 };
 
 FUNC INT Info_Mod_Elvrich_Hi_Condition()
@@ -16,14 +16,14 @@ FUNC INT Info_Mod_Elvrich_Hi_Condition()
 
 FUNC VOID Info_Mod_Elvrich_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvrich_Hi_15_00"); //Du bist ein Lehrling?
-	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_01"); //Nicht mehr lange. Mittlerweile bin ich besser als Thorben. Was allerdings auch nicht schwierig ist ...
-	AI_Output(hero, self, "Info_Mod_Elvrich_Hi_15_02"); //Was ist denn mit Thorben?
-	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_03"); //Sieh ihn dir doch mal an, wenn er abends in der Kneipe sitzt.
-	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_04"); //Er trinkt jeden Tag so viel, dass er am nächsten Morgen noch nicht wieder nüchtern ist.
-	AI_Output(hero, self, "Info_Mod_Elvrich_Hi_15_05"); //Hat das einen speziellen Grund?
-	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_06"); //Er hatte nicht immer ein angenehmes Leben, glaube ich.
-	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_07"); //Aber mehr als Andeutungen bekommt man nicht aus ihm heraus.
+	AI_Output(hero, self, "Info_Mod_Elvrich_Hi_15_00"); //You're an apprentice?
+	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_01"); //Not for long. Meanwhile I'm better than Thorben. Which is not difficult, though...
+	AI_Output(hero, self, "Info_Mod_Elvrich_Hi_15_02"); //What about Thorben?
+	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_03"); //Why don't you take a look at him when he's in the pub at night?
+	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_04"); //He drinks so much every day that he doesn't get sober again the next morning.
+	AI_Output(hero, self, "Info_Mod_Elvrich_Hi_15_05"); //Any particular reason for that?
+	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_06"); //He didn't always have a good life, I think.
+	AI_Output(self, hero, "Info_Mod_Elvrich_Hi_24_07"); //But there's nothing more than hints that you can't get out of him.
 };
 
 INSTANCE Info_Mod_Elvrich_WieGehts (C_INFo)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Elvrich_WieGehts (C_INFo)
 	information	= Info_Mod_Elvrich_WieGehts_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht's so?";
+	description	= "How are you doing?";
 };
 
 FUNC INT Info_Mod_Elvrich_WieGehts_Condition()
@@ -44,10 +44,10 @@ FUNC INT Info_Mod_Elvrich_WieGehts_Condition()
 
 FUNC VOID Info_Mod_Elvrich_WieGehts_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvrich_WieGehts_15_00"); //Wie geht's so?
-	AI_Output(self, hero, "Info_Mod_Elvrich_WieGehts_24_01"); //Kann nicht klagen, stecke gerade in einer frischen Beziehung.
-	AI_Output(self, hero, "Info_Mod_Elvrich_WieGehts_24_02"); //Mann, ich hätte ja nie gedacht, dass so eine Schönheit auf Normalsterbliche wie mich steht.
-	AI_Output(self, hero, "Info_Mod_Elvrich_WieGehts_24_03"); //Die Arbeit hier ist natürlich ziemlich anstrengend, weil ich für zwei Personen arbeiten muss. Thorben kriegt kaum was auf die Reihe.
+	AI_Output(hero, self, "Info_Mod_Elvrich_WieGehts_15_00"); //How are you doing?
+	AI_Output(self, hero, "Info_Mod_Elvrich_WieGehts_24_01"); //Can't complain, just in a fresh relationship.
+	AI_Output(self, hero, "Info_Mod_Elvrich_WieGehts_24_02"); //Man, I never thought there was such beauty on ordinary mortals like me.
+	AI_Output(self, hero, "Info_Mod_Elvrich_WieGehts_24_03"); //The work here is of course quite strenuous, because I have to work for two people. Thorben can hardly get anything right.
 };
 
 INSTANCE Info_Mod_Elvrich_Liste (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Elvrich_Liste (C_INFO)
 	information	= Info_Mod_Elvrich_Liste_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du heute noch so?";
+	description	= "What are you doing today?";
 };
 
 FUNC INT Info_Mod_Elvrich_Liste_Condition()
@@ -71,16 +71,16 @@ FUNC INT Info_Mod_Elvrich_Liste_Condition()
 
 FUNC VOID Info_Mod_Elvrich_Liste_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvrich_Liste_15_00"); //Was machst du heute noch so?
-	AI_Output(self, hero, "Info_Mod_Elvrich_Liste_24_01"); //Ich werde noch ein wenig arbeiten und mich dann heute Nacht mit meiner Freundin treffen.
-	AI_Output(hero, self, "Info_Mod_Elvrich_Liste_15_02"); //Wo trefft ihr euch?
-	AI_Output(self, hero, "Info_Mod_Elvrich_Liste_24_03"); //Sie hat mir einen Brief geschrieben, in dem steht, dass wir uns heute Nacht im Hafenviertel an einem ruhigen Platz in der Nähe der Schafe treffen.
+	AI_Output(hero, self, "Info_Mod_Elvrich_Liste_15_00"); //What are you doing today?
+	AI_Output(self, hero, "Info_Mod_Elvrich_Liste_24_01"); //I'm going to work a little bit more and then I'm gonna meet my girlfriend tonight.
+	AI_Output(hero, self, "Info_Mod_Elvrich_Liste_15_02"); //Where do you meet?
+	AI_Output(self, hero, "Info_Mod_Elvrich_Liste_24_03"); //She wrote me a letter saying that we will meet tonight in the harbour district in a quiet place near the sheep.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "KURGAN");
 
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Elvrich trifft sich zufälligerweise heute Nacht mit seiner Freundin im Hafenviertel in der Nähe der Schafe.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Elvrich happens to meet his girlfriend tonight in the harbour district near the sheep.");
 
 	B_GivePlayerXP	(100);
 };

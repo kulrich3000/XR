@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Shrike_Hi (C_INFO)
 	information	= Info_Mod_Shrike_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, Patrick meinte, du sollst mal wieder bei ihm zum Training vorbeischauen.";
+	description	= "Hey, Patrick told you to stop by his place for practice.";
 };
 
 FUNC INT Info_Mod_Shrike_Hi_Condition()
@@ -19,36 +19,36 @@ FUNC INT Info_Mod_Shrike_Hi_Condition()
 
 FUNC VOID Info_Mod_Shrike_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_15_00"); //Hey, Patrick meinte, du sollst mal wieder bei ihm zum Training vorbeischauen.
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_07_01"); //(genervt) Ich habe aber keine Lust.
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_15_00"); //Hey, Patrick told you to stop by his place for practice.
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_07_01"); //I don't feel like it.
 
 	Info_ClearChoices	(Info_Mod_Shrike_Hi);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Shrike_Hi, "Du bekommst auch 100 Goldmünzen.", Info_Mod_Shrike_Hi_B);
+		Info_AddChoice	(Info_Mod_Shrike_Hi, "You'll also get 100 gold coins.", Info_Mod_Shrike_Hi_B);
 	};
-	Info_AddChoice	(Info_Mod_Shrike_Hi, "Dann muss ich dich mit Schlägen zu ihm hintreiben.", Info_Mod_Shrike_Hi_A);
+	Info_AddChoice	(Info_Mod_Shrike_Hi, "Then I'll have to drive you to him with my punches.", Info_Mod_Shrike_Hi_A);
 };
 
 FUNC VOID Info_Mod_Shrike_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_B_15_00"); //Du bekommst auch 100 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_B_07_01"); //Für 100 Goldmünzen setze ich doch nicht mal meinen Fuß vor die Höhle.
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_B_15_00"); //You'll also get 100 gold coins.
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_B_07_01"); //For 100 gold coins, I won't even put my foot in front of the cave.
 
 	Info_ClearChoices	(Info_Mod_Shrike_Hi);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 200)
 	{
-		Info_AddChoice	(Info_Mod_Shrike_Hi, "Ok, wie wäre es mit 200 Goldmünzen.", Info_Mod_Shrike_Hi_C);
+		Info_AddChoice	(Info_Mod_Shrike_Hi, "Okay, how about 200 gold coins?", Info_Mod_Shrike_Hi_C);
 	};
-	Info_AddChoice	(Info_Mod_Shrike_Hi, "Dann muss ich dich mit Schlägen zu ihm hintreiben.", Info_Mod_Shrike_Hi_A);
+	Info_AddChoice	(Info_Mod_Shrike_Hi, "Then I'll have to drive you to him with my punches.", Info_Mod_Shrike_Hi_A);
 };
 
 FUNC VOID Info_Mod_Shrike_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_A_15_00"); //Dann muss ich dich mit Schlägen zu ihm hintreiben.
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_A_07_01"); //Achja?! Kannst es ja mal versuchen.
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_A_15_00"); //Then I'll have to drive you to him with my punches.
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_A_07_01"); //Oh, yeah?! Why don't you give it a try?
 
 	Info_ClearChoices	(Info_Mod_Shrike_Hi);
 
@@ -59,13 +59,13 @@ FUNC VOID Info_Mod_Shrike_Hi_A()
 
 FUNC VOID Info_Mod_Shrike_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_C_15_00"); //Ok, wie wäre es mit 200 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_C_07_01"); //200 Goldmünzen?! Ok, gib her!
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_C_15_00"); //Okay, how about 200 gold coins?
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_C_07_01"); //200 gold coins?! Okay, give it to me!
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_C_15_02"); //Und was ist jetzt?
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_C_07_03"); //Nichts ist. Ich habe dein Gold, gehe aber trotzdem nicht auf den Felsen.
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_C_15_02"); //And what about now?
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_C_07_03"); //Nothing is. I got your gold, but I'm still not going on the rocks.
 
 	Info_Mod_Shrike_Hi_A();
 };
@@ -94,19 +94,19 @@ FUNC VOID Info_Mod_Shrike_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_00"); //Ohh, meine Knochen. Du Mistkerl ...
-			AI_Output(hero, self, "Info_Mod_Shrike_Umgehauen_15_01"); //Na, Lust auf weitere Sperenzchen?
-			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_02"); //(widerwillig) Ja, ich gehe ja schon ...
+			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_00"); //Ohh, my bones. You son of a bitch...
+			AI_Output(hero, self, "Info_Mod_Shrike_Umgehauen_15_01"); //How about some more talking?
+			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_02"); //(reluctantly) Yes, I'm already leaving...
 
 			Mod_SLD_Shrike = 1;
 
-			B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Ok, Shrike hat eine Abreibung erhalten und ist unterwegs zu Patrick.");
+			B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Okay, Shrike got a beating and is on his way to see Patrick.");
 
 			B_StartOtherRoutine	(self, "SMOKING");
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_03"); //Schwächling.
+			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_03"); //Weakling.
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -125,7 +125,7 @@ INSTANCE Info_Mod_Shrike_NoSmokingNow (C_INFO)
 	information	= Info_Mod_Shrike_NoSmokingNow_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hatte ich dir nicht gesagt, dass du zum Training sollst?!";
+	description	= "Didn't I tell you to go to practice?!";
 };
 
 FUNC INT Info_Mod_Shrike_NoSmokingNow_Condition()
@@ -138,8 +138,8 @@ FUNC INT Info_Mod_Shrike_NoSmokingNow_Condition()
 
 FUNC VOID Info_Mod_Shrike_NoSmokingNow_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_NoSmokingNow_15_00"); //Hatte ich dir nicht gesagt, dass du zum Training sollst?!
-	AI_Output(self, hero, "Info_Mod_Shrike_NoSmokingNow_07_01"); //Was?! Ohh, scheiße, du bist es. Ja, ich mach mich sofort auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Shrike_NoSmokingNow_15_00"); //Didn't I tell you to go to practice?!
+	AI_Output(self, hero, "Info_Mod_Shrike_NoSmokingNow_07_01"); //What?! Oh, shit, it's you. Yeah, I'll be on my way right away.
 
 	AI_StopProcessInfos	(self);
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_FeuerNovize_Hi (C_INFO)
 	information	= Info_Mod_FeuerNovize_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was tust du da?";
+	description	= "What are you doing?";
 };
 
 FUNC INT Info_Mod_FeuerNovize_Hi_Condition()
@@ -19,11 +19,11 @@ FUNC INT Info_Mod_FeuerNovize_Hi_Condition()
 
 FUNC VOID Info_Mod_FeuerNovize_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_FeuerNovize_Hi_15_00"); //Was tust du da?
-	AI_Output(self, hero, "Info_Mod_FeuerNovize_Hi_13_01"); //(arroganter Tonfall) Stör mich nicht. Ich wirke den Segen meines Herrn Innos auf diese profane Umgebung.
-	AI_Output(hero, self, "Info_Mod_FeuerNovize_Hi_15_02"); //Ich meinerseits bin ein Diener Adanos und hier, um dich darum zu bitten, diesen Vorgang einzustellen. Es schadet dem ...
-	AI_Output(self, hero, "Info_Mod_FeuerNovize_Hi_13_03"); //(abfällig) Pääh, du willst mir doch nicht, einem Diener Innos, gebieten, was er zu tun hat.
-	AI_Output(self, hero, "Info_Mod_FeuerNovize_Hi_13_04"); //Und jetzt verschwinde und stör mich nicht weiter, bei meinem heiligen Werk.
+	AI_Output(hero, self, "Info_Mod_FeuerNovize_Hi_15_00"); //What are you doing?
+	AI_Output(self, hero, "Info_Mod_FeuerNovize_Hi_13_01"); //(arrogant intonation) Don't bother me. I work the blessing of my Mr Innos on this profane environment.
+	AI_Output(hero, self, "Info_Mod_FeuerNovize_Hi_15_02"); //For my part, I am a servant of Adanos and here to ask you to stop this process. It hurts the....
+	AI_Output(self, hero, "Info_Mod_FeuerNovize_Hi_13_03"); //You don't want to tell me, a servant of Inno's, what he has to do.
+	AI_Output(self, hero, "Info_Mod_FeuerNovize_Hi_13_04"); //Now, get out of here and don't bother me anymore with my sacred work.
 
 	AI_StopProcessInfos	(self);
 };
@@ -48,7 +48,7 @@ FUNC INT Info_Mod_FeuerNovize_Entweihung_Condition()
 
 FUNC VOID Info_Mod_FeuerNovize_Entweihung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_FeuerNovize_Entweihung_13_00"); //(aufgebracht) Was tust du?! Du Trampel zerstörst mein Werk. Warte, dir komme ich schon bei.
+	AI_Output(self, hero, "Info_Mod_FeuerNovize_Entweihung_13_00"); //What are you doing?! You're destroying my work. Wait, I'll be right with you.
 
 	AI_StopProcessInfos	(self);
 

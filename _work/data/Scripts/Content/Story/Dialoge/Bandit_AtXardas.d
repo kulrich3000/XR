@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Bandit_AtXardas_Hi_Condition()
 
 FUNC VOID Info_Mod_Bandit_AtXardas_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Hi_08_00"); //He! Seit wann verirren sich Schwächlinge hierher?
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Hi_08_00"); //Hey! Since when do pussies get lost here?
 };
 
 INSTANCE Info_Mod_Bandit_AtXardas_Bereuen (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Bandit_AtXardas_Bereuen (C_INFO)
 	information	= Info_Mod_Bandit_AtXardas_Bereuen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wirst gleich bereuen, was du gesagt hast.";
+	description	= "You're about to regret what you said.";
 };
 
 FUNC INT Info_Mod_Bandit_AtXardas_Bereuen_Condition()
@@ -39,8 +39,8 @@ FUNC INT Info_Mod_Bandit_AtXardas_Bereuen_Condition()
 
 FUNC VOID Info_Mod_Bandit_AtXardas_Bereuen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Bereuen_15_00"); //Du wirst gleich bereuen, was du gesagt hast.
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Bereuen_08_01"); //(lacht) Das will ich ja sehen.
+	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Bereuen_15_00"); //You're about to regret what you said.
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Bereuen_08_01"); //(laughs) I want to see that.
 
 	AI_StopProcessInfos	(self);
 
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Bandit_AtXardas_WiesoHier (C_INFO)
 	information	= Info_Mod_Bandit_AtXardas_WiesoHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso seid ihr hier?";
+	description	= "Why are you here?";
 };
 
 FUNC INT Info_Mod_Bandit_AtXardas_WiesoHier_Condition()
@@ -71,8 +71,8 @@ FUNC INT Info_Mod_Bandit_AtXardas_WiesoHier_Condition()
 
 FUNC VOID Info_Mod_Bandit_AtXardas_WiesoHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_WiesoHier_15_00"); //Wieso seid ihr hier?
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_WiesoHier_08_01"); //Mann, was ist das für 'ne Frage? Das ist unser Lager. Und jetzt erzähl mal schnell, was du hier suchst, bevor ich dich einen Kopf kürzer mache.
+	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_WiesoHier_15_00"); //Why are you here?
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_WiesoHier_08_01"); //Man, what kind of question is that? This is our camp. Tell me what you're looking for before I cut your head off.
 };
 
 INSTANCE Info_Mod_Bandit_AtXardas_Anschluss (C_INFO)
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Bandit_AtXardas_Anschluss (C_INFO)
 	information	= Info_Mod_Bandit_AtXardas_Anschluss_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich mich euch anschließen?";
+	description	= "Can I join you guys?";
 };
 
 FUNC INT Info_Mod_Bandit_AtXardas_Anschluss_Condition()
@@ -96,10 +96,10 @@ FUNC INT Info_Mod_Bandit_AtXardas_Anschluss_Condition()
 
 FUNC VOID Info_Mod_Bandit_AtXardas_Anschluss_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Anschluss_15_00"); //Kann ich mich euch anschließen?
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_08_01"); //Nein. Wir nehmen hier keine Windelträger auf, kapiert?
-	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Anschluss_15_02"); //Na gut, dann gehe ich eben wieder...
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_08_03"); //Dafür ist es zu spät Freundchen. Ich werde mir jetzt mal anschauen, ob du nicht doch was Wertvolles dabei hast.
+	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Anschluss_15_00"); //Can I join you guys?
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_08_01"); //No. We're not taking on diaper wearers here, understand?
+	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Anschluss_15_02"); //All right, I'll just go... again.
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_08_03"); //It's too late for that, buddy. I'm gonna go see if you've got something valuable with you.
 
 	AI_StopProcessInfos	(self);
 

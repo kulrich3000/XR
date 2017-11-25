@@ -75,8 +75,8 @@ instance MENU_OPT_CONTROLS(C_MENU_DEF)
 instance MENU_ITEM_NEXTMENU(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "weitere Tasten...";
-	text[1]		= "weitere Gothic 2 Tasten festlegen";  // Kommentar
+	text[0]		= "More keys...";
+	text[1]		= "Set additional Gothic 2 buttons";  // Kommentar
 
 	// Positionen  und Dimensionen
 	posx		=	ctrl_sp1_1 + 2500;		posy		=	ctrl_y_start + ctrl_y_step * 21 + CTRL_GROUP6;
@@ -146,8 +146,8 @@ const int CTRL_GROUP6	= ctrl_y_step2 * 5;
 
 INSTANCE MENU_ITEM_KEY_WEAPON_LEFT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Schlag links";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Attack left";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -163,8 +163,8 @@ INSTANCE MENU_ITEM_KEY_WEAPON_LEFT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Schlag rechts";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Attack right";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -180,8 +180,8 @@ INSTANCE MENU_ITEM_KEY_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_WEAPON_PARADE(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Blocken";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Parry";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -198,7 +198,7 @@ INSTANCE MENU_ITEM_KEY_WEAPON_PARADE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -219,7 +219,7 @@ INSTANCE MENU_ITEM_INP_WEAPON_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -240,7 +240,7 @@ INSTANCE MENU_ITEM_INP_WEAPON_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON_PARADE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -261,8 +261,8 @@ INSTANCE MENU_ITEM_INP_WEAPON_PARADE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LOCKFOCUS(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Gegner Lock";
-	text[1]			=   	"Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Lock target";
+	text[1]			=   	"press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -277,8 +277,8 @@ INSTANCE MENU_ITEM_KEY_LOCKFOCUS(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_QUICKMANA(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Manatrank";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Mana potion";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -294,8 +294,8 @@ INSTANCE MENU_ITEM_KEY_QUICKMANA(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_QUICKHEALTH(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Heiltrank";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Healing potion";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -312,7 +312,7 @@ INSTANCE MENU_ITEM_KEY_QUICKHEALTH(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOCKFOCUS(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -333,7 +333,7 @@ INSTANCE MENU_ITEM_INP_LOCKFOCUS(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_QUICKMANA(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -354,7 +354,7 @@ INSTANCE MENU_ITEM_INP_QUICKMANA(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_QUICKHEALTH(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -375,7 +375,7 @@ INSTANCE MENU_ITEM_INP_QUICKHEALTH(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_HEADLINE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"STEUERUNG EINSTELLUNGEN";
+	text[0]		=	"CONTROL SETTINGS";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		= 0;
@@ -388,7 +388,7 @@ INSTANCE MENU_ITEM_CHG_KEYS_HEADLINE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_EXTKEYS_HEADLINE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"ERWEITERTE STEUERUNG";
+	text[0]		=	"ADVANCED CONTROL";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		= 0;
@@ -408,8 +408,8 @@ INSTANCE MENU_ITEM_CHG_EXTKEYS_HEADLINE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_UP(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Vorwärts";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Forward";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			= 	ctrl_sp1_1;	posy	= 	ctrl_y_start + ctrl_y_step * 0 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]=	"RUN MENU_ITEM_INP_UP";
@@ -419,8 +419,8 @@ INSTANCE MENU_ITEM_KEY_UP(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_DOWN(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Rückwärts";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Reverse";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]= 	"RUN MENU_ITEM_INP_DOWN";
@@ -430,8 +430,8 @@ INSTANCE MENU_ITEM_KEY_DOWN(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LEFT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Links drehen";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Turn left";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]= 	"RUN MENU_ITEM_INP_LEFT";
@@ -441,8 +441,8 @@ INSTANCE MENU_ITEM_KEY_LEFT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Rechts drehen";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Rotate right";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -454,8 +454,8 @@ INSTANCE MENU_ITEM_KEY_RIGHT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_STRAFE_LEFT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Seitwärts links";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Lateral left";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]= 	"RUN MENU_ITEM_INP_STRAFE_LEFT";
@@ -465,8 +465,8 @@ INSTANCE MENU_ITEM_KEY_STRAFE_LEFT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Seitwärts rechts";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Sideways right";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -477,8 +477,8 @@ INSTANCE MENU_ITEM_KEY_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Springen";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"leaping";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -490,8 +490,8 @@ INSTANCE MENU_ITEM_KEY_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Gehen/Laufen";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Walking/Running";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 7 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -502,8 +502,8 @@ INSTANCE MENU_ITEM_KEY_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SNEAK(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Schleichen";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"Sneak";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 8 + CTRL_GROUP1;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -518,8 +518,8 @@ INSTANCE MENU_ITEM_KEY_SNEAK(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Aktion";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"campaign";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 9 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -530,8 +530,8 @@ INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_WEAPON(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Waffe ziehen";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"draw a weapon";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 10 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -546,7 +546,7 @@ INSTANCE MENU_ITEM_KEY_WEAPON(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_MAP(C_MENU_ITEM_DEF)
 {
 	text[0]			=	"Karte";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 11 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -557,8 +557,8 @@ INSTANCE MENU_ITEM_KEY_MAP(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_PRISMA(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Prismabenutzung";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"prismatic use";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 13 + CTRL_GROUP2;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -573,8 +573,8 @@ INSTANCE MENU_ITEM_KEY_PRISMA(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LOOK(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Umsehen";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"look around";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 14 + CTRL_GROUP3;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -586,7 +586,7 @@ INSTANCE MENU_ITEM_KEY_LOOK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KEY_LOOK_FP(C_MENU_ITEM_DEF)
 {
 	text[0]			=	"FirstPerson";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 15 + CTRL_GROUP3;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -601,8 +601,8 @@ INSTANCE MENU_ITEM_KEY_LOOK_FP(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_INVENTORY(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Inventar";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]			=	"inventory";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 16 + CTRL_GROUP4;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -613,8 +613,8 @@ INSTANCE MENU_ITEM_KEY_INVENTORY(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SCREEN_STATUS(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Spielerstatus";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]		=	"player status";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 17 + CTRL_GROUP4;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -626,8 +626,8 @@ INSTANCE MENU_ITEM_KEY_SCREEN_STATUS(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SCREEN_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Missionen/Notizen";
-	text[1]			=   "Taste ENTF zum Löschen und RETURN zum definieren"; // Kommentar
+	text[0]		=	"Missions/Notes";
+	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 18 + CTRL_GROUP4;
 
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -645,7 +645,7 @@ INSTANCE MENU_ITEM_KEY_SCREEN_LOG(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_UP(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_KBDINPUT_BACK_PIC;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	type		= 	MENU_ITEM_INPUT;
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 0 + CTRL_GROUP1;
@@ -661,7 +661,7 @@ INSTANCE MENU_ITEM_INP_UP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_DOWN(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -677,7 +677,7 @@ INSTANCE MENU_ITEM_INP_DOWN(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -691,7 +691,7 @@ INSTANCE MENU_ITEM_INP_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -706,7 +706,7 @@ INSTANCE MENU_ITEM_INP_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_STRAFE_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -720,7 +720,7 @@ INSTANCE MENU_ITEM_INP_STRAFE_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -734,7 +734,7 @@ INSTANCE MENU_ITEM_INP_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;
@@ -751,7 +751,7 @@ INSTANCE MENU_ITEM_INP_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 instance MENU_ITEM_INP_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 7 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;
@@ -768,7 +768,7 @@ instance MENU_ITEM_INP_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SNEAK(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 8 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;
@@ -790,7 +790,7 @@ INSTANCE MENU_ITEM_INP_SNEAK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_ACTION(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 9 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -805,7 +805,7 @@ INSTANCE MENU_ITEM_INP_ACTION(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 10 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -821,7 +821,7 @@ INSTANCE MENU_ITEM_INP_WEAPON(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_MAP(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 11 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -837,7 +837,7 @@ INSTANCE MENU_ITEM_INP_MAP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_PRISMA(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 13 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -856,7 +856,7 @@ INSTANCE MENU_ITEM_INP_PRISMA(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOOK(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 14 + CTRL_GROUP3;
 	dimx		=	ctrl_dimx;
@@ -873,7 +873,7 @@ INSTANCE MENU_ITEM_INP_LOOK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOOK_FP(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 15 + CTRL_GROUP3;
 	dimx		=	ctrl_dimx;
@@ -895,7 +895,7 @@ INSTANCE MENU_ITEM_INP_LOOK_FP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_INVENTORY(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 16 + CTRL_GROUP4;
 	dimx		=	ctrl_dimx;
@@ -912,7 +912,7 @@ INSTANCE MENU_ITEM_INP_INVENTORY(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SCREEN_STATUS(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 17 + CTRL_GROUP4;
 	dimx		=	ctrl_dimx;
@@ -928,7 +928,7 @@ INSTANCE MENU_ITEM_INP_SCREEN_STATUS(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SCREEN_LOG(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Gewünschte Taste betätigen.";
+	text[1] 	=   "Please press the desired key for this action.";
 
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 18 + CTRL_GROUP4;
 	dimx		=	ctrl_dimx;
@@ -949,8 +949,8 @@ INSTANCE MENU_ITEM_INP_SCREEN_LOG(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Standard-Einstellung";
-	text[1]		=	"Aktiviert die Standardbelegung."; // Kommentar
+	text[0]		=	"default setting";
+	text[1]		=	"Activates the default setting."; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 19 + CTRL_GROUP5;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -961,8 +961,8 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Alternativ-Einstellung";
-	text[1]		=	"Aktiviert eine alternative Standardbelegung."; // Kommentar
+	text[0]		=	"alternative setting";
+	text[1]		=	"Activates an alternative standard configuration."; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 20 + CTRL_GROUP5;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -974,7 +974,7 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CHG_KEYS_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"Back";
 	// Position und Dimension
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 21 + CTRL_GROUP6;
 	dimy		=	300;

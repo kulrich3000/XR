@@ -15,9 +15,9 @@ FUNC INT Info_Mod_UndeadOrcShamane_OT_Hi_Condition()
 
 FUNC VOID Info_Mod_UndeadOrcShamane_OT_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_UndeadOrcShamane_OT_Hi_18_00"); //Zu spät du bist hier.
-	AI_Output(self, hero, "Info_Mod_UndeadOrcShamane_OT_Hi_18_01"); //Das Schwert, dass die Macht der drei Götter vereint, es ist gebrochen in Stücke ... so wie ich nun deinen Leib zerschmettern werde.
-	AI_Output(hero, self, "Info_Mod_UndeadOrcShamane_OT_Hi_15_02"); //Das wird einer vertrockneten Leiche wie dir gewiss nicht gelingen ... genauso wenig, wie bei unserer ersten Begegnung.
+	AI_Output(self, hero, "Info_Mod_UndeadOrcShamane_OT_Hi_18_00"); //You're here too late.
+	AI_Output(self, hero, "Info_Mod_UndeadOrcShamane_OT_Hi_18_01"); //The sword that unites the power of the three gods, it is broken into pieces... as I will crush your body.
+	AI_Output(hero, self, "Info_Mod_UndeadOrcShamane_OT_Hi_15_02"); //A dried-up corpse like you will certainly not succeed... any more than we did when we first met.
 
 	AI_StopProcessInfos	(self);
 

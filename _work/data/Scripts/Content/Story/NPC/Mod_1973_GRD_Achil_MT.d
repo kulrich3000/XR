@@ -1,7 +1,7 @@
 INSTANCE Mod_1973_GRD_Achil_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Achil";
+	name 		= "Achilles";
 	guild 		= GIL_out;
 	id 			= 1973;
 	voice 		= 08;

@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_02_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_02_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_02_Hi_18_00"); //Küss mich noch einmal, Herr, füll mich mit Musik.
+	AI_Output(self, hero, "Info_Mod_Wesen_02_Hi_18_00"); //Kiss me again, Lord, fill me with music.
 
 	AI_StopProcessInfos	(self);
 };

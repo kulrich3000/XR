@@ -1,6 +1,6 @@
 INSTANCE Goetterschwert (C_Item) //Legendäres Schwert aus der Zeit bevor dem Götterstreit 
 {
-	name 				=	"Drei Götterklinge";
+	name 				=	"Three god blade";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -18,7 +18,7 @@ INSTANCE Goetterschwert (C_Item) //Legendäres Schwert aus der Zeit bevor dem Göt
 	visual 				=	"ItMw_3Goetterschwert.3ds";
 
 	description			= name;
-      TEXT[1]                   ="Legendäres Schwert der drei Götter";
+      TEXT[1]                   ="Legendary sword of the three gods";
       TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_TwoHanded;

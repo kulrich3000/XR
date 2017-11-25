@@ -29,7 +29,7 @@ INSTANCE DIA_MIL_7_JOIN(C_INFO)
 	condition	= DIA_MIL_7_JOIN_Condition;
 	information	= DIA_MIL_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will der Miliz beitreten!";
+	description = "I want to join the militia!";
 };                       
 
 FUNC INT DIA_MIL_7_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_MIL_7_JOIN_Condition()
 
 FUNC VOID DIA_MIL_7_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_MIL_7_JOIN_15_00"); //Ich will der Miliz beitreten!
-	AI_Output (self, hero, "DIA_MIL_7_JOIN_07_01"); //Warum, denkst du, sollte dich Lord Andre aufnehmen?
+	AI_Output (hero, self, "DIA_MIL_7_JOIN_15_00"); //I want to join the militia!
+	AI_Output (self, hero, "DIA_MIL_7_JOIN_07_01"); //Why do you think Lord Andre should accept you?
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_MIL_7_PEOPLE(C_INFO)
 	condition	= DIA_MIL_7_PEOPLE_Condition;
 	information	= DIA_MIL_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Was weißt du über die Paladine?";
+	description = "What do you know about the Paladins?";
 };                       
 
 FUNC INT DIA_MIL_7_PEOPLE_Condition()
@@ -68,8 +68,8 @@ FUNC INT DIA_MIL_7_PEOPLE_Condition()
 
 FUNC VOID DIA_MIL_7_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_MIL_7_PEOPLE_15_00"); //Was weißt du über die Paladine?
-	AI_Output (self, hero, "DIA_MIL_7_PEOPLE_07_01"); //Nicht viel. Keiner weiß so genau, warum sie hier sind. Auch wir von der Stadtwache nicht.
+	AI_Output (hero, self, "DIA_MIL_7_PEOPLE_15_00"); //What do you know about the Paladins?
+	AI_Output (self, hero, "DIA_MIL_7_PEOPLE_07_01"); //Not much. Nobody really knows why they're here. Neither do we from the City Guard.
 };
 
 // *************************************************************************
@@ -81,7 +81,7 @@ INSTANCE DIA_MIL_7_LOCATION(C_INFO)
 	condition	= DIA_MIL_7_LOCATION_Condition;
 	information	= DIA_MIL_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was habe ich hier in der Stadt für Möglichkeiten?";
+	description = "What are my options here in town?";
 };                       
 
 FUNC INT DIA_MIL_7_LOCATION_Condition()
@@ -91,10 +91,10 @@ FUNC INT DIA_MIL_7_LOCATION_Condition()
 
 FUNC VOID DIA_MIL_7_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_MIL_7_LOCATION_15_00"); //Was habe ich hier in der Stadt für Möglichkeiten?
-	AI_Output (self, hero, "DIA_MIL_7_LOCATION_07_01"); //Wenn du nicht im Hafenviertel in der Gosse enden willst, such dir 'ne ordentliche Arbeit. Frag in der Unterstadt herum - vielleicht hast du Glück.
-	AI_Output (self, hero, "DIA_MIL_7_LOCATION_07_02"); //Wenn du vorhast, länger hier in der Stadt zu bleiben, solltest du der Miliz beitreten oder dich zumindest im Kampf ausbilden lassen.
-	AI_Output (self, hero, "DIA_MIL_7_LOCATION_07_03"); //Die Kampfausbilder in der Kaserne trainieren auch normale Bürger.
+	AI_Output (hero, self, "DIA_MIL_7_LOCATION_15_00"); //What are my options here in town?
+	AI_Output (self, hero, "DIA_MIL_7_LOCATION_07_01"); //If you don't want to end up in the docks in the gutter, get a decent job. Ask around the lower town - maybe you're lucky.
+	AI_Output (self, hero, "DIA_MIL_7_LOCATION_07_02"); //If you plan to stay in town for a longer period of time, you should join the militia or at least be trained in combat.
+	AI_Output (self, hero, "DIA_MIL_7_LOCATION_07_03"); //The combat instructors in the barracks also train normal citizens.
 };
 
 INSTANCE Info_Mod_MIL_7_Pickpocket (C_INFO)

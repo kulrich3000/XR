@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_DemonLord(C_Npc)			
 {
 	//----- Monster -----
-	name							= "Dämonenlord";
+	name							= "Demon Lord";
 	guild							= GIL_DEMON;
 	aivar[AIV_MM_REAL_ID]			= ID_DEMON_LORD;
 	level							= 150;
@@ -96,7 +96,7 @@ INSTANCE DemonLord_Xeres	(Mst_Default_DemonLord)
 
 INSTANCE DemonHigh	(Mst_Default_DemonLord)
 {
-	name	=	"Hoher Dämon";
+	name	=	"High Demon";
 
 	level	=	200;
 
@@ -106,7 +106,7 @@ INSTANCE DemonHigh	(Mst_Default_DemonLord)
 
 INSTANCE DemonHigh_Randolph	(Mst_Default_DemonLord)
 {
-	name	=	"Hoher Dämon";
+	name	=	"High Demon";
 
 	level	=	200;
 

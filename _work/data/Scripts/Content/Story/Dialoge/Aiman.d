@@ -18,33 +18,33 @@ FUNC INT Info_Mod_Aiman_Hi_Condition()
 
 FUNC VOID Info_Mod_Aiman_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_00"); //Da bist du ja.
-	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_01"); //Ich tue, was ich kann. Was liegt an?
-	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_02"); //Hast du schon mal von den Blutkelchen gehört?
-	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_03"); //Ich habe für Amir schon mal einen besorgt. Vom Geldverleiher in Khorinis. Er ist tot.
-	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_04"); //Natürlich, sonst hätte der Kelch ja keinen Wert. Der Besitzer muss sterben, damit die Kelche ihre Wirkung erlangen.
-	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_05"); //Wieviele Kelche gibt es?
-	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_06"); //Es sind drei. Einen besitzt nach unseren Informationen der Richter in Khorinis. Nach genau diesem verlangt der große Rat.
-	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_07"); //Dann soll ich den Richter meucheln und den Kelch beibringen.
-	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_08"); //Schlauer Bursche. Wenn dir das gelingt, ist dir ein Platz bei den Anwärtern sicher,
-	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_09"); //Dann will ich mal ...
+	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_00"); //Oh, there you are.
+	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_01"); //I'll do what I can. What's happening?
+	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_02"); //Have you ever heard of the blood cups?
+	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_03"); //I already got one for Amir once. From the money lender in Khorinis. He's dead.
+	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_04"); //Of course, otherwise the goblet wouldn't have any value. The owner must die for the goblets to take effect.
+	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_05"); //How many goblets are there?
+	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_06"); //It's three. According to our information, one of them is owned by the judges in Khorinis. This is exactly what the great Council wants.
+	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_07"); //Then I shall assassinate the judge and teach the cup.
+	AI_Output(self, hero, "Info_Mod_Aiman_Hi_05_08"); //Smart guy. If you succeed, you'll have a place with the candidates,
+	AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_09"); //Then I want to have a look...
 
 	AI_TurnAway	(hero, self);
 
 	if (Mod_ASS_Krieger == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_10"); //Erst mal ein passendes Gift besorgen. Mal bei den Magiern hinten fragen.
+		AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_10"); //Get a suitable poison first. Ask the mages in the back.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_11"); //Erst mal ein passendes Gift besorgen. Vielleicht kann Kamal helfen.
+		AI_Output(hero, self, "Info_Mod_Aiman_Hi_15_11"); //Get a suitable poison first. Maybe Kamal can help.
 	};
 
 	AI_TurnToNpc	(hero, self);
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_BLUTKELCH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_BLUTKELCH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Ich soll dem Rat den 2. Blutkelch besorgen. Der Richter in Khorinis hat ihn wahrscheinlich. Er muss sterben, es sollte aber kein Aufsehen erregen. Gift wäre das rechte Mittel für einen Assassinen. Hier war doch irgendwo ein Alchemist ...");
+	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "I'm supposed to take second place in the council. Get me a blood cup. Judge in Khorinis probably has him. He must die, but it shouldn't cause a stir. Poison would be the right remedy for an assassin. There was an alchemist here somewhere....");
 };
 
 INSTANCE Info_Mod_Aiman_Pickpocket (C_INFO)

@@ -2167,7 +2167,7 @@ FUNC VOID STARTUP_NewWorld_Part_Forest_01 ()
 
 FUNC VOID INIT_NewWorld_Part_Forest_01 ()
 {
-	Wld_AssignRoomToNpc	("forestherberge01",	Mod_776_NONE_Orlan_NW);
+	Wld_AssignRoomToNpc	("hostel01",	Mod_776_NONE_Orlan_NW);
 	
 	Wld_AssignRoomToGuild ("XRNWHOEHLE01",	GIL_PUBLIC);
 };
@@ -5719,7 +5719,7 @@ FUNC VOID STARTUP_Minental ()
 
 FUNC VOID INIT_Minental ()
 {
-	Spine_OverallSaveSetInt("MinentalVisited", 1);
+	Spine_OverallSaveSetInt("Minental Visited", 1);
 	CheckWorldTravelerAchievement();
 	
 	// Morgens
@@ -6668,7 +6668,7 @@ FUNC VOID STARTUP_AbandonedMine ()
 
 FUNC VOID INIT_AbandonedMine ()
 {
-	Spine_OverallSaveSetInt("AbandonedMineVisited", 1);
+	Spine_OverallSaveSetInt("DiscontinuedMineVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(ABANDONEDMINE_ZEN);
@@ -7038,7 +7038,7 @@ var int Monster_GDG_Spawned;
 
 FUNC VOID INIT_GdG_World()
 {
-	Spine_OverallSaveSetInt("RitualinselVisited", 1);
+	Spine_OverallSaveSetInt("Ritual IslandVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	if (Monster_GDG_Spawned == FALSE)
@@ -7125,7 +7125,7 @@ FUNC VOID STARTUP_DieInsel()
 
 FUNC VOID INIT_DieInsel()
 {
-	Spine_OverallSaveSetInt("SchatzinselVisited", 1);
+	Spine_OverallSaveSetInt("Treasure IslandVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(DIEINSEL_ZEN);
@@ -7887,7 +7887,7 @@ FUNC VOID INIT_FEUERMAGIER_UNTERGRUND()
 
 	if (Npc_HasItems(hero, ItMi_TeleportStein) == 0)
 	{
-		AI_PrintScreen	("Teleportstein erhalten!", -1, YPOS_GoldGiven, FONT_ScreenSmall, 5);
+		AI_PrintScreen	("Teleport stone received!", -1, YPOS_GoldGiven, FONT_ScreenSmall, 5);
 
 		CreateInvItems	(hero, ItMi_TeleportStein, 1);
 	};
@@ -7953,7 +7953,7 @@ FUNC VOID INIT_PATHERION()
 	}
 	else
 	{
-		Mod_1771_KDF_Aaron_PAT.name		= "Garan";
+		Mod_1771_KDF_Aaron_PAT.name		= "guaranty";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Fuego_Unruhen))
@@ -8110,7 +8110,7 @@ FUNC VOID STARTUP_Bergwelt()
 
 FUNC VOID INIT_Bergwelt()
 {
-	Spine_OverallSaveSetInt("BergweltVisited", 1);
+	Spine_OverallSaveSetInt("Mountain worldVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(BERGWELT_ZEN); 
@@ -8355,7 +8355,7 @@ FUNC VOID INIT_Eisgebiet()
 	{
 		Mod_RattenQuest = 4;
 
-		B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Bisher ist das wohl das kälteste Gebiet. Mal sehen ob hier irgend jemand was über die Ratten weiß.");
+		B_LogEntry	(TOPIC_MOD_RATTENQUEST, "This is probably the coldest area so far. Let's see if anybody here knows anything about the rats.");
 	};
 };
 
@@ -8731,7 +8731,7 @@ FUNC VOID STARTUP_Relendel()
 
 FUNC VOID INIT_Relendel()
 {
-	Spine_OverallSaveSetInt("RelendelVisited", 1);
+	Spine_OverallSaveSetInt("Relendel Visited", 1);
 	CheckWorldTravelerAchievement();
 	
 	// Laternen in der Stadt
@@ -9131,7 +9131,7 @@ FUNC VOID STARTUP_Halluzination()
 
 FUNC VOID INIT_Halluzination()
 {
-	Spine_OverallSaveSetInt("HalluzinationVisited", 1);
+	Spine_OverallSaveSetInt("HallucinationVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(HALLUZINATION_ZEN);
@@ -9174,7 +9174,7 @@ FUNC VOID STARTUP_Wald_Schlucht()
 
 FUNC VOID INIT_Wald_Schlucht()
 {
-	Spine_OverallSaveSetInt("WaldschluchtVisited", 1);
+	Spine_OverallSaveSetInt("Forest Gorge Visited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(WALDSCHLUCHT_ZEN);
@@ -9211,7 +9211,7 @@ FUNC VOID STARTUP_Drachental()
 
 FUNC VOID INIT_Drachental()
 {
-	Spine_OverallSaveSetInt("DrachentalVisited", 1);
+	Spine_OverallSaveSetInt("DragonVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(DRACHENTAL_ZEN);

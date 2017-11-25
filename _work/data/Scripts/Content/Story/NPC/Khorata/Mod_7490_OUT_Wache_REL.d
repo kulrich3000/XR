@@ -1,7 +1,7 @@
 INSTANCE Mod_7490_OUT_Wache_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Minenwache"; 
+	name 		= "mine guard"; 
 	guild 		= GIL_OUT;
 	id 			= 7490;
 	voice 		= 7;

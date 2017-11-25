@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Naim_Hi (C_INFO)
 	information	= Info_Mod_Naim_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe einen der Blutkelche besorgt.";
+	description	= "I got one of the blood cups.";
 };
 
 FUNC INT Info_Mod_Naim_Hi_Condition()
@@ -19,22 +19,22 @@ FUNC INT Info_Mod_Naim_Hi_Condition()
 
 FUNC VOID Info_Mod_Naim_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_00"); //Ich habe einen der Blutkelche besorgt.
+	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_00"); //I got one of the blood cups.
 
 	B_GiveInvItems	(hero, self, ItMi_Bloodcup_Richter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Naim_Hi_13_01"); //Saubere Arbeit, Bursche. Wir hörten, du hast bereits den ersten Kelch gebracht.
-	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_02"); //So ist es.
-	AI_Output(self, hero, "Info_Mod_Naim_Hi_13_03"); //Du wirst es weit bringen, wenn du so weiter machst. Ich ernennen dich hiermit zum 1. Anwärter. Hier, deine Rüstung.
-	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_04"); //Besten Dank, hoher Rat.
+	AI_Output(self, hero, "Info_Mod_Naim_Hi_13_01"); //Nice work, lad. We heard you've already brought the first cup.
+	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_02"); //That's how it is.
+	AI_Output(self, hero, "Info_Mod_Naim_Hi_13_03"); //You'll go a long way if you keep doing this. I hereby declare you the first. Candidate. Here's your armour.
+	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_04"); //Thank you very much, good advice.
 
 	if (Mod_ASS_Krieger == 1)
 	{
 		CreateInvItems	(hero, ItAr_Assassine_01, 1);
 
-		B_ShowGivenThings	("Assassinenrüstung erhalten");
+		B_ShowGivenThings	("Assassin armor received");
 
-		AI_Output(self, hero, "Info_Mod_Naim_Hi_13_05"); //Nun melde dich bei Azhar. Er hat wohl ein Problem.
+		AI_Output(self, hero, "Info_Mod_Naim_Hi_13_05"); //Now report to Azhar. I think he's in trouble.
 
 		B_SetTopicStatus	(TOPIC_MOD_ASS_KRIEGER, LOG_SUCCESS);
 	}
@@ -42,9 +42,9 @@ FUNC VOID Info_Mod_Naim_Hi_Info()
 	{
 		CreateInvItems	(hero, ItAr_Assassine_02, 1);
 
-		B_ShowGivenThings	("Assassinenrobe erhalten");
+		B_ShowGivenThings	("Assassin robe received");
 
-		AI_Output(self, hero, "Info_Mod_Naim_Hi_13_06"); //Nun melde dich bei Kais. Er hat wohl ein Problem.
+		AI_Output(self, hero, "Info_Mod_Naim_Hi_13_06"); //Now report to Kais. I think he's in trouble.
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_ASS_BLUTKELCH, LOG_SUCCESS);
@@ -72,11 +72,11 @@ FUNC INT Info_Mod_Naim_Comeback_Condition()
 
 FUNC VOID Info_Mod_Naim_Comeback_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_00"); //Wie ich höre, hast du Erstaunliches geleistet für die Gemeinschaft.
-	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_01"); //Wenn es uns gelingt, auf's Festland zurückzukehren, wirst du dann mitkommen? Ich würde dich in den Rat berufen.
-	AI_Output(hero, self, "Info_Mod_Naim_Comeback_15_02"); //Ein verlockendes Angebot. Sicher werde ich irgendwann in die Heimat zurückkehren.
-	AI_Output(hero, self, "Info_Mod_Naim_Comeback_15_03"); //Aber vorerst habe ich noch zu tun auf Khorinis. Danke, hoher Rat.
-	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_04"); //Deine Entscheidung, Magier. Dann entlasse ich dich hiermit aus den Diensten der Assassinen. Geh deiner Wege.
+	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_00"); //I hear you've done amazing things for the community.
+	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_01"); //If we can get back to the mainland, will you come with us? I'd put you on the council.
+	AI_Output(hero, self, "Info_Mod_Naim_Comeback_15_02"); //A tempting offer. Surely I will return to my homeland at some point.
+	AI_Output(hero, self, "Info_Mod_Naim_Comeback_15_03"); //But for the time being, I still have work to do on khorinis. Thank you, good advice.
+	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_04"); //Your call, magician. Then I hereby dismiss you from the service of the Assassins. Go your own way.
 
 	B_GivePlayerXP	(2000);
 
@@ -107,10 +107,10 @@ FUNC INT Info_Mod_Naim_GotoAzhar_Condition()
 
 FUNC VOID Info_Mod_Naim_GotoAzhar_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Naim_GotoAzhar_13_00"); //Hatte ich dir nicht gesagt, du sollst dich bei Azhar melden?
-	AI_Output(hero, self, "Info_Mod_Naim_GotoAzhar_15_01"); //Schon. Ich war auch bei ihm, aber er wollte nichts von mir.
-	AI_Output(self, hero, "Info_Mod_Naim_GotoAzhar_13_02"); //Jetzt schon. Scheint wichtig zu sein.
-	AI_Output(hero, self, "Info_Mod_Naim_GotoAzhar_15_03"); //Ich eile ...
+	AI_Output(self, hero, "Info_Mod_Naim_GotoAzhar_13_00"); //Didn't I tell you to report to Azhar?
+	AI_Output(hero, self, "Info_Mod_Naim_GotoAzhar_15_01"); //It is. I was with him too, but he didn't want anything from me.
+	AI_Output(self, hero, "Info_Mod_Naim_GotoAzhar_13_02"); //I do now. Seems important.
+	AI_Output(hero, self, "Info_Mod_Naim_GotoAzhar_15_03"); //I'm hurrying...
 };
 
 INSTANCE Info_Mod_Naim_NachSchlacht (C_INFO)
@@ -133,8 +133,8 @@ FUNC INT Info_Mod_Naim_NachSchlacht_Condition()
 
 FUNC VOID Info_Mod_Naim_NachSchlacht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht_13_00"); //(keucht) Schnell, ich brauche die Kelche. Sonst überleb ich das nicht.
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht_15_01"); //Halte durch. Ich beeile mich.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht_13_00"); //Hurry, I need the chalices. Otherwise, I won't survive.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht_15_01"); //Hang in there. I'll hurry up.
 
 	Mod_7146_ASS_Mustafa_NW.aivar[AIV_Partymember] = FALSE;
 	Mod_7147_ASS_Naim_NW.aivar[AIV_Partymember] = FALSE;
@@ -185,7 +185,7 @@ INSTANCE Info_Mod_Naim_NachSchlacht2 (C_INFO)
 	information	= Info_Mod_Naim_NachSchlacht2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin zurück.";
+	description	= "I'm back.";
 };
 
 FUNC INT Info_Mod_Naim_NachSchlacht2_Condition()
@@ -199,12 +199,12 @@ FUNC INT Info_Mod_Naim_NachSchlacht2_Condition()
 
 FUNC VOID Info_Mod_Naim_NachSchlacht2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht2_15_00"); //Ich bin zurück.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht2_13_01"); //Endlich. Gib mir einen Kelch. Schnell.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht2_15_00"); //I'm back.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht2_13_01"); //Finally. Give me a cup. Quickly.
 
 	B_GiveInvItems	(hero, self, ItMi_Bloodcup_Richter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht2_13_02"); //Und einen für Mustafa. Beeil dich.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht2_13_02"); //And one for Mustafa. Come on, hurry up.
 
 	B_GivePlayerXP	(2000);
 
@@ -221,7 +221,7 @@ INSTANCE Info_Mod_Naim_NachSchlacht3 (C_INFO)
 	information	= Info_Mod_Naim_NachSchlacht3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dir geht es gut?";
+	description	= "You're all right?";
 };
 
 FUNC INT Info_Mod_Naim_NachSchlacht3_Condition()
@@ -235,24 +235,24 @@ FUNC INT Info_Mod_Naim_NachSchlacht3_Condition()
 
 FUNC VOID Info_Mod_Naim_NachSchlacht3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_00"); //Dir geht es gut?
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_01"); //Wie du siehst. Die Blutkelche sind unsere Rettung. Sie enthalten das Leben des getöteten vorherigen Besitzers.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_02"); //Wie ich sehe, ist Mustafa auch wieder auf den Beinen.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_03"); //Gib mir den 3. Kelch. Ich muss mir überlegen, wen ich noch ins Leben zurückhole.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_00"); //You're all right?
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_01"); //As you can see. The cups of blood are our salvation. They contain the life of the killed previous owner.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_02"); //I see Mustafa's back on his feet, too.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_03"); //Give me the three. Chalice. I have to figure out who else to bring back to life.
 
 	B_GiveInvItems	(hero, self, ItMi_Bloodcup_MIS, 1);
 
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_04"); //Und was kann ich machen?
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_05"); //Was ist eigentlich mit unseren Gaunern?
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_06"); //Die stehen alle vor dem Lager und wissen nicht, was sie tun sollen.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_07"); //Dann schick den Anführer zu mir.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_08"); //Noch was. Du bist in der Tat ein sehr guter Krieger. Einer der Besten, die ich kenne.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_09"); //Aber ich hab den Eindruck, dass du nicht so recht zu uns passt.
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_10"); //Wenn du meinst ...
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_11"); //Dann stelle ich dir frei, unsere Gilde zu verlassen. Wobei ich davon ausgehe, dass du uns nicht auch noch verrätst.
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_12"); //Verstehte. Ich schicke Shakir zu dir. Und ich hab noch andere Aufgaben.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_13"); //Moment. Hier, eine Belohnung für deine Hilfen.
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_14"); //Danke, hoher Rat.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_04"); //And what can I do?
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_05"); //What about our crooks, anyway?
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_06"); //They all stand in front of the camp and don't know what to do.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_07"); //Then send the leader to me.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_08"); //One more thing. You are indeed a very good warrior. One of the best I know.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_09"); //But I'm under the impression that you don't really fit in with us.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_10"); //If you mean...
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_11"); //Then I'll set you free to leave our guild. Which I assume you're not going to give us away, too.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_12"); //Understand. I'll send Shakir to you. And I have other things to do.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_13"); //Hold on, hold on. Here, a reward for your help.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_14"); //Thank you, good advice.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 2000);
 

@@ -24,7 +24,7 @@ FUNC VOID	Change_FH_Visual()
 	if  (FH_SkinTexture < 0)
 		{
 			FH_SkinTexture = 0;
-			PrintScreen	("MINUS-Gesichter gibt´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
+			PrintScreen	("MINUS faces don't exist!!!!!!!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
 		};
 		
 	B_SetNpcVisual 		(self, SEX, FH_HeadMesh, FH_SkinTexture, BodyTex_N, NO_ARMOR);		
@@ -37,7 +37,7 @@ FUNC VOID	Change_FH_Visual()
 	PrintScreen	(printText		, -1, 12, "FONT_OLD_10_WHITE.TGA", 2 );
 	
 	
-	PrintScreen	("HeadMesh:"		, -1, 20, "FONT_OLD_10_WHITE.TGA", 2 );
+	PrintScreen	("Head mesh:"		, -1, 20, "FONT_OLD_10_WHITE.TGA", 2 );
 	PrintScreen	(FH_HeadMesh		, -1, 22, "FONT_OLD_10_WHITE.TGA", 2 );
 
 };
@@ -224,7 +224,7 @@ INSTANCE DIA_FH_Repeat (C_INFO)
 	condition		= DIA_FH_Repeat_Condition;
 	information		= DIA_FH_Repeat_Info;
 	permanent		= 1;
-	description		= "----Screen Anzeige wiederholen----";
+	description		= "? ----Screen Repeat display--------";
 };                       
 
 FUNC INT DIA_FH_Repeat_Condition()
@@ -247,7 +247,7 @@ INSTANCE DIA_FH_Sex (C_INFO)
 	condition		= DIA_FH_Sex_Condition;
 	information		= DIA_FH_Sex_Info;
 	permanent		= 1;
-	description		= "Sex";
+	description		= "sexual";
 };                       
 
 FUNC INT DIA_FH_Sex_Condition()
@@ -293,7 +293,7 @@ FUNC VOID DIA_FH_Choose_HeadMesh_Info()
 {	
 	Info_ClearChoices	(DIA_FH_Choose_HeadMesh);
 
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "zurück" 				, DIA_FH_Choose_HeadMesh_7);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "back" 				, DIA_FH_Choose_HeadMesh_7);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Psionic" 	, DIA_FH_Choose_HeadMesh_6);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Thief" 		, DIA_FH_Choose_HeadMesh_5);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Bald" 		, DIA_FH_Choose_HeadMesh_4);

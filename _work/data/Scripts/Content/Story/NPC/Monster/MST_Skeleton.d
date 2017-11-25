@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Skeleton(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Skelett";
+	name							=	"Skeleton";
 	guild							=	GIL_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SKELETON;
 	level							=	30;
@@ -138,7 +138,7 @@ INSTANCE SkeletonTransform			(Mst_Default_Skeleton)
 
 INSTANCE Skeleton_Anführer			(Mst_Default_Skeleton)
 {
-	name	=	"Skelett-Anführer";
+	name	=	"skeleton leader";
 
 	level = 50;
 
@@ -166,7 +166,7 @@ INSTANCE Skeleton_Anführer			(Mst_Default_Skeleton)
 
 INSTANCE SkeletonWarrior	(Mst_Default_Skeleton)
 {
-	name							=	"Skelettkrieger";
+	name							=	"skeleton warrior";
 	Set_SkeletonWarrior_Visuals();
 	level							=	40;
 	attribute	[ATR_STRENGTH]		=	140;
@@ -177,7 +177,7 @@ INSTANCE SkeletonWarrior	(Mst_Default_Skeleton)
 
 INSTANCE SkeletonWarrior_Weg	(Mst_Default_Skeleton)
 {
-	name							=	"Skelettkrieger";
+	name							=	"skeleton warrior";
 	Set_SkeletonWarrior_Visuals();
 	level							=	40;
 	attribute	[ATR_STRENGTH]		=	140;
@@ -188,7 +188,7 @@ INSTANCE SkeletonWarrior_Weg	(Mst_Default_Skeleton)
 
 INSTANCE Skeleton_Halfmar	(Mst_Default_Skeleton)
 {
-	name							=	"Skelettkrieger";
+	name							=	"skeleton warrior";
 	Set_SkeletonWarrior_Visuals();
 	level							=	40;
 	attribute	[ATR_STRENGTH]		=	140;
@@ -200,7 +200,7 @@ INSTANCE Skeleton_Halfmar	(Mst_Default_Skeleton)
 
 INSTANCE Skeleton_Costa	(Mst_Default_Skeleton)
 {
-	name							=	"Skelettkrieger";
+	name							=	"skeleton warrior";
 	Set_SkeletonWarrior_Visuals();
 	level							=	40;
 	attribute	[ATR_STRENGTH]		=	140;
@@ -217,7 +217,7 @@ INSTANCE Skeleton_Costa	(Mst_Default_Skeleton)
 
 INSTANCE Summoned_Skeleton (Mst_Default_Skeleton)
 {
-	name							=	"Beschworenes Skelett";
+	name							=	"Summoned Skeleton";
 	guild							=	GIL_SUMMONED_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_SKELETON;
 	level							=	0; //30
@@ -259,7 +259,7 @@ INSTANCE Summoned_Skeleton (Mst_Default_Skeleton)
 
 INSTANCE Skeleton_Albert_MT (Mst_Default_Skeleton)
 {
-	name							=	"Beschworenes Skelett";
+	name							=	"Summoned Skeleton";
 	guild							=	GIL_SUMMONED_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_SKELETON;
 	level							=	0; //30
@@ -301,7 +301,7 @@ INSTANCE Skeleton_Albert_MT (Mst_Default_Skeleton)
 
 INSTANCE Skeleton_Albert_OC (Mst_Default_Skeleton)
 {
-	name							=	"Beschworenes Skelett";
+	name							=	"Summoned Skeleton";
 	guild							=	GIL_SUMMONED_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_SKELETON;
 	level							=	0; //30
@@ -343,7 +343,7 @@ INSTANCE Skeleton_Albert_OC (Mst_Default_Skeleton)
 
 INSTANCE Skeleton_Thorge_MT (Mst_Default_Skeleton)
 {
-	name							=	"Beschworenes Skelett";
+	name							=	"Summoned Skeleton";
 	guild							=	GIL_SUMMONED_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_SKELETON;
 	level							=	0; //30
@@ -385,7 +385,7 @@ INSTANCE Skeleton_Thorge_MT (Mst_Default_Skeleton)
 
 INSTANCE Skeleton_Thorge_TUG (Mst_Default_Skeleton)
 {
-	name							=	"Beschworenes Skelett";
+	name							=	"Summoned Skeleton";
 	guild							=	GIL_SUMMONED_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_SKELETON;
 	level							=	0; //30
@@ -431,7 +431,7 @@ INSTANCE Skeleton_Thorge_TUG (Mst_Default_Skeleton)
 
 INSTANCE Lesser_Skeleton	(Mst_Default_Skeleton)
 {
-	name							=	"Niederes Skelett";
+	name							=	"Lower Skeleton";
 	
 	level							=	15;
 
@@ -464,7 +464,7 @@ INSTANCE Lesser_Skeleton	(Mst_Default_Skeleton)
 
 INSTANCE Lesser_Skeleton_Diebe_01	(Mst_Default_Skeleton)
 {
-	name							=	"Niederes Skelett";
+	name							=	"Lower Skeleton";
 	
 	level							=	15;
 
@@ -497,7 +497,7 @@ INSTANCE Lesser_Skeleton_Diebe_01	(Mst_Default_Skeleton)
 
 INSTANCE Lesser_Skeleton_Diebe_02	(Mst_Default_Skeleton)
 {
-	name							=	"Niederes Skelett";
+	name							=	"Lower Skeleton";
 	
 	level							=	15;
 
@@ -530,7 +530,7 @@ INSTANCE Lesser_Skeleton_Diebe_02	(Mst_Default_Skeleton)
 
 INSTANCE Lesser_Skeleton_Diebe_03	(Mst_Default_Skeleton)
 {
-	name							=	"Niederes Skelett";
+	name							=	"Lower Skeleton";
 	
 	level							=	15;
 
@@ -563,7 +563,7 @@ INSTANCE Lesser_Skeleton_Diebe_03	(Mst_Default_Skeleton)
 
 INSTANCE Lesser_Skeleton_Diebe_04	(Mst_Default_Skeleton)
 {
-	name							=	"Niederes Skelett";
+	name							=	"Lower Skeleton";
 	
 	level							=	15;
 
@@ -596,7 +596,7 @@ INSTANCE Lesser_Skeleton_Diebe_04	(Mst_Default_Skeleton)
 
 INSTANCE Lesser_Skeleton_Diebe_05	(Mst_Default_Skeleton)
 {
-	name							=	"Niederes Skelett";
+	name							=	"Lower Skeleton";
 	
 	level							=	15;
 

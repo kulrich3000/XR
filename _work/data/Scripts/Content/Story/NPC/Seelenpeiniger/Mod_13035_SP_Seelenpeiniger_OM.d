@@ -2,7 +2,7 @@ instance Mod_13035_SP_Seelenpeiniger_OM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Seelenpeiniger";
+	name 		=	"anguish of mind";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_DMT;
 	level 		=	25;

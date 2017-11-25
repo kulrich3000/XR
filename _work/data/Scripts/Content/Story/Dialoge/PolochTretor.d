@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Poloch_Hi (C_INFO)
 	information	= Info_Mod_Poloch_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibt es ein Problem bei euch?";
+	description	= "Is there a problem with you guys?";
 };
 
 FUNC INT Info_Mod_Poloch_Hi_Condition()
@@ -22,41 +22,41 @@ FUNC VOID Info_Mod_Poloch_Hi_Info()
 	TRIA_Invite(Tretor);
 	TRIA_Start();
 	
-	AI_Output(hero, self, "Info_Mod_Poloch_Hi_15_00"); //Gibt es ein Problem bei euch? Ihr blickt nicht gerade zufrieden drein.
+	AI_Output(hero, self, "Info_Mod_Poloch_Hi_15_00"); //Is there a problem with you guys? You don't look happy.
 
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_01"); //Das Problem sein Poloch. Er nicht wollen einsehen, dass Tretor der Stärkere.
+	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_01"); //The problem is his butt hole. He did not want to admit that Tretor the stronger.
 
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_02"); //Dass Poloch nicht lachen! Es sein klar wie Flusswasser, dass Tretor sich nicht mit Poloch messen können.
-	AI_Output(hero, self, "Info_Mod_Poloch_Hi_15_03"); //Dann tretet doch gegeneinander an! Ein kleiner Faustkampf wird die Sache schon klären.
-	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_04"); //Poloch und Tretor haben vorhin gemacht, haben zwei Mahlzeiten lang gekämpft. Poloch nicht wissen, wie Tretor machen, aber er ihn nicht können besiegen.
+	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_02"); //Poloch not laughing! It's as clear as river water that Tretor can't compete with Poloch.
+	AI_Output(hero, self, "Info_Mod_Poloch_Hi_15_03"); //Then stand against each other! A little fistfight will sort things out.
+	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_04"); //Poloch and Tretor did it earlier, fought for two meals. Poloch did not know how to make Tretor, but he could not defeat him.
 
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_05"); //Poloch irgendwie schummeln, Tretor kriegen ihn nicht zu packen. Dann Tretor gehen die Luft aus und er müssen aufhören.
+	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_05"); //Somehow cheat him, Tretor can't catch him. Then Tretor runs out of air and he has to stop.
 
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_06"); //Poloch auch brauchen Pause. Aber wenn wieder erholt, er Tretor zeigen!
+	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_06"); //Poloch also need a break. But when recovered, he should show Tretor!
 
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_07"); //Tretor wollen das sehen!
-	AI_Output(hero, self, "Info_Mod_Poloch_Hi_15_08"); //Verstehe ich das richtig? Ihr seid beide gleich stark, wollt es euch aber nicht eingestehen?
-	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_09"); //Ohne Schummeln von Poloch Tretor wäre stärker!
+	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_07"); //Tretor want to see this!
+	AI_Output(hero, self, "Info_Mod_Poloch_Hi_15_08"); //Am I getting this right? You're both equally strong, but you don't want to admit it?
+	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_09"); //Without cheating from Poloch Tretor would be stronger!
 
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_10"); //Poloch nicht schummeln, aber Tretor laufen immer davon wie ein feiger Hase.
+	AI_Output(self, hero, "Info_Mod_Poloch_Hi_18_10"); //Don't cheat Poloch, but Tretor always run away like a cowardly rabbit.
 
 	TRIA_Finish();
 
 	Log_CreateTopic	(TOPIC_MOD_POLOCHTRETOR_SCHUMMLER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_POLOCHTRETOR_SCHUMMLER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_POLOCHTRETOR_SCHUMMLER, "Die Orks Poloch und Tretor stecken gerade mitten in einer persönlichen Auseinandersetzung. Wenn ich den Frieden in der Bergfestung wiederherstellen will, muss ich die beiden auseinanderbringen.");
+	B_LogEntry	(TOPIC_MOD_POLOCHTRETOR_SCHUMMLER, "The orcs Poloch and Tretor are in the middle of a personal confrontation. If I want to restore peace in the mountain fortress, I have to break them up.");
 };
 
 INSTANCE Info_Mod_Poloch_Egal (C_INFO)
@@ -67,7 +67,7 @@ INSTANCE Info_Mod_Poloch_Egal (C_INFO)
 	information	= Info_Mod_Poloch_Egal_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist es nicht egal, wer stärker ist?";
+	description	= "Does it matter who's stronger?";
 };
 
 FUNC INT Info_Mod_Poloch_Egal_Condition()
@@ -86,23 +86,23 @@ FUNC VOID Info_Mod_Poloch_Egal_Info()
 	TRIA_Invite(Tretor);
 	TRIA_Start();
 	
-	AI_Output(hero, self, "Info_Mod_Poloch_Egal_15_00"); //Ist es nicht egal, wer stärker ist?
+	AI_Output(hero, self, "Info_Mod_Poloch_Egal_15_00"); //Does it matter who's stronger?
 
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Egal_18_01"); //Tretor sein egal, aber Poloch geben die ganze Zeit mit seiner Stärke an, bis Tretor genervt. Sagen, dass Poloch sollen aufhören, aber tun nicht.
+	AI_Output(self, hero, "Info_Mod_Poloch_Egal_18_01"); //Tretor wouldn't matter, but Poloch brag all the time with his strength until Tretor gets annoyed. Tell Poloch to stop, but don't do it.
 
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Egal_18_02"); //Tretor schon wieder lügen! Poloch nie haben angegeben, sondern Tretor haben gestichelt, dass Poloch dürre Ärmchen, und dann Poloch zeigen seine Kraft.
+	AI_Output(self, hero, "Info_Mod_Poloch_Egal_18_02"); //You're lying to Tretor again! Poloch never have indicated, but Tretor have pricked that poloch thin arms, and then poloch show his strength.
 
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Egal_18_03"); //Tretor haben nicht gestichelt, sein Erfindung von Poloch!
+	AI_Output(self, hero, "Info_Mod_Poloch_Egal_18_03"); //Tretor did not tease his invention of Poloch!
 	
 	AI_TurnAway(hero, self);
 	
-	AI_Output(hero, self, "Info_Mod_Poloch_Egal_15_04"); //(zu sich selbst) Ich sehe schon, mit Diplomatie komme ich hier nicht weit.
+	AI_Output(hero, self, "Info_Mod_Poloch_Egal_15_04"); //(to himself) I can see that diplomacy won't get me very far here.
 	
 	AI_TurnToNpc(hero, self);
 
@@ -117,7 +117,7 @@ INSTANCE Info_Mod_Poloch_IAmStronger (C_INFO)
 	information	= Info_Mod_Poloch_IAmStronger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ihr seid ja Witzfiguren. Ich bin natürlich der Stärkste!";
+	description	= "You guys are funny people. Of course I'm the strongest!";
 };
 
 FUNC INT Info_Mod_Poloch_IAmStronger_Condition()
@@ -136,20 +136,20 @@ FUNC VOID Info_Mod_Poloch_IAmStronger_Info()
 	TRIA_Invite(Tretor);
 	TRIA_Start();
 	
-	AI_Output(hero, self, "Info_Mod_Poloch_IAmStronger_15_00"); //Ihr seid ja Witzfiguren. Ich bin natürlich der Stärkste!
+	AI_Output(hero, self, "Info_Mod_Poloch_IAmStronger_15_00"); //You guys are funny people. Of course I'm the strongest!
 	
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_IAmStronger_18_01"); //(lacht laut) Mensch machen auch Späße.
-	AI_Output(hero, self, "Info_Mod_Poloch_IAmStronger_15_02"); //Ich meine es ernst. Im Kampf bin ich stärker als ihr beiden Luschen zusammen.
+	AI_Output(self, hero, "Info_Mod_Poloch_IAmStronger_18_01"); //(laughs loudly) Man also make jokes.
+	AI_Output(hero, self, "Info_Mod_Poloch_IAmStronger_15_02"); //I'm being serious. In battle, I'm stronger than you two bitches together.
 
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_IAmStronger_18_03"); //Tretor finden gar nicht mehr lustig. Mensch sofort aufhören.
+	AI_Output(self, hero, "Info_Mod_Poloch_IAmStronger_18_03"); //Tretor don't find it funny anymore. Stop people immediately.
 	
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_IAmStronger_18_04"); //Poloch müssen Tretor da zustimmen.
+	AI_Output(self, hero, "Info_Mod_Poloch_IAmStronger_18_04"); //Poloch must agree with Tretor.
 
 	TRIA_Finish();
 };
@@ -162,7 +162,7 @@ INSTANCE Info_Mod_Poloch_Noobs (C_INFO)
 	information	= Info_Mod_Poloch_Noobs_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ihr Schwächlinge seid nur ganz kleine Töne im Konzert (...)";
+	description	= "You weaklings are only very small sounds in the concert (... )";
 };
 
 FUNC INT Info_Mod_Poloch_Noobs_Condition()
@@ -181,15 +181,15 @@ FUNC VOID Info_Mod_Poloch_Noobs_Info()
 	TRIA_Invite(Tretor);
 	TRIA_Start();
 	
-	AI_Output(hero, self, "Info_Mod_Poloch_Noobs_15_00"); //Ihr Schwächlinge seid nur ganz kleine Töne im Konzert der Großen.
+	AI_Output(hero, self, "Info_Mod_Poloch_Noobs_15_00"); //You wimps are just little sounds in the concert of the greats.
 	
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Noobs_18_01"); //Das reichen! Mensch schreien nach einer Abreibung!
+	AI_Output(self, hero, "Info_Mod_Poloch_Noobs_18_01"); //That's enough! Man scream for a rubdown!
 
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Noobs_18_02"); //Poloch werden ihm alle seine Knochen brechen!
+	AI_Output(self, hero, "Info_Mod_Poloch_Noobs_18_02"); //Poloch will break all his bones!
 
 	TRIA_Finish();
 	
@@ -206,7 +206,7 @@ INSTANCE Info_Mod_Poloch_Won (C_INFO)
 	information	= Info_Mod_Poloch_Won_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe nicht übertrieben, wie ihr gesehen habt.";
+	description	= "I wasn't exaggerating, as you saw.";
 };
 
 FUNC INT Info_Mod_Poloch_Won_Condition()
@@ -227,21 +227,21 @@ FUNC VOID Info_Mod_Poloch_Won_Info()
 	TRIA_Invite(Tretor);
 	TRIA_Start();
 	
-	AI_Output(hero, self, "Info_Mod_Poloch_Won_15_00"); //Ich habe nicht übertrieben, wie ihr gesehen habt.
-	AI_Output(hero, self, "Info_Mod_Poloch_Won_15_01"); //Und jetzt lasst eure kindischen Spielchen und helft lieber mit, die Bergfestung herzurichten.
+	AI_Output(hero, self, "Info_Mod_Poloch_Won_15_00"); //I wasn't exaggerating, as you saw.
+	AI_Output(hero, self, "Info_Mod_Poloch_Won_15_01"); //And now leave your childish little games and help to prepare the mountain fortress.
 	
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Won_18_02"); //(unterwürfig) Mensch haben Tretor und Poloch besiegt. Sie müssen sich seinem Willen beugen.
+	AI_Output(self, hero, "Info_Mod_Poloch_Won_18_02"); //Humans have defeated Tretor and Poloch. You must bow to his will.
 
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Won_18_03"); //Poloch sehen ein, dass dumm von ihm, mit Tretor zu streiten. Er sich wollen versöhnen.
+	AI_Output(self, hero, "Info_Mod_Poloch_Won_18_03"); //Poloch realize that stupid of him to argue with Tretor. He want to reconcile.
 	
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Won_18_04"); //Tretor nehmen Angebot an.
-	AI_Output(hero, self, "Info_Mod_Poloch_Won_15_05"); //Dann können wir uns ja jetzt wichtigen Dingen zuwenden.
+	AI_Output(self, hero, "Info_Mod_Poloch_Won_18_04"); //Tretor accept offer.
+	AI_Output(hero, self, "Info_Mod_Poloch_Won_15_05"); //Then we can now turn to important matters.
 
 	TRIA_Finish();
 	
@@ -285,20 +285,20 @@ FUNC VOID Info_Mod_Poloch_Lost_Info()
 
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Lost_18_02"); //Großes Maul von Mensch jetzt gestopft. Tretor haben gut geholfen.
+	AI_Output(self, hero, "Info_Mod_Poloch_Lost_18_02"); //Big mouth stuffed by man now. Tretor did a good job.
 	
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Lost_18_01"); //Poloch und Tretor zusammen unbesiegbar.
+	AI_Output(self, hero, "Info_Mod_Poloch_Lost_18_01"); //Poloch and Tretor together invincible.
 
 	TRIA_Next(Poloch);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Lost_18_02"); //Poloch sehen ein, dass dumm von ihm, mit Tretor zu streiten. Er sich wollen versöhnen.
+	AI_Output(self, hero, "Info_Mod_Poloch_Lost_18_02"); //Poloch realize that stupid of him to argue with Tretor. He want to reconcile.
 	
 	TRIA_Next(Tretor);
 	
-	AI_Output(self, hero, "Info_Mod_Poloch_Lost_18_01"); //Tretor nehmen Angebot an.
-	AI_Output(hero, self, "Info_Mod_Poloch_Lost_15_00"); //Dann können wir uns ja jetzt wichtigen Dingen zuwenden.
+	AI_Output(self, hero, "Info_Mod_Poloch_Lost_18_01"); //Tretor accept offer.
+	AI_Output(hero, self, "Info_Mod_Poloch_Lost_15_00"); //Then we can now turn to important matters.
 
 	TRIA_Finish();
 	

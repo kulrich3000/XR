@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Regis_Hi (C_INFO)
 	information	= Info_Mod_Regis_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Regis_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Regis_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Regis_Hi_13_01"); //Ich bin Regis. Ich weiß am besten bescheid, was hier in der Stadt passiert.
+	AI_Output(self, hero, "Info_Mod_Regis_Hi_13_01"); //I'm Regis. I know best what's going on in town.
 };
 
 INSTANCE Info_Mod_Regis_Paladine (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Regis_Paladine (C_INFO)
 	information	= Info_Mod_Regis_Paladine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du über die Paladine?";
+	description	= "What do you know about the Paladins?";
 };
 
 FUNC INT Info_Mod_Regis_Paladine_Condition()
@@ -42,11 +42,11 @@ FUNC INT Info_Mod_Regis_Paladine_Condition()
 
 FUNC VOID Info_Mod_Regis_Paladine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Regis_Paladine_15_00"); //Was weißt du über die Paladine?
-	AI_Output(self, hero, "Info_Mod_Regis_Paladine_13_01"); //Zuerst kamen sie nur gelegentlich nach Khorinis um einen Gefangenen in die Strafkolonie zu werfen oder um mit den Sträflingen zu verhandeln.
-	AI_Output(self, hero, "Info_Mod_Regis_Paladine_13_02"); //Doch nachdem die Barriere zusammengebrochen ist, hat der König einen Trupp hierher geschickt, um die Stadt zu beschüzen.
-	AI_Output(self, hero, "Info_Mod_Regis_Paladine_13_03"); //Seitdem haben sie die Kontrolle über die Stadt übernommen. Sie befürchten das die Söldner aus dem Minental die Stadt einnehmen.
-	AI_Output(self, hero, "Info_Mod_Regis_Paladine_13_04"); //Der Anführer der Söldner soll damals ein Problem mit dem König gehabt haben und ist deswegen gegen die Paladine und versucht sie mit seinen Söldnern auszuschalten, um mit dem Paladinschiff nach Myrtana zu segeln und sich am König zu rächen.
+	AI_Output(hero, self, "Info_Mod_Regis_Paladine_15_00"); //What do you know about the Paladins?
+	AI_Output(self, hero, "Info_Mod_Regis_Paladine_13_01"); //At first they came to Khorinis only occasionally to throw a prisoner into the penal colony or to negotiate with the convicts.
+	AI_Output(self, hero, "Info_Mod_Regis_Paladine_13_02"); //But after the barrier collapsed, the king sent a troop here to protect the city.
+	AI_Output(self, hero, "Info_Mod_Regis_Paladine_13_03"); //Since then, they've taken control of the city. They fear that the mercenaries from the Minental will take over the city.
+	AI_Output(self, hero, "Info_Mod_Regis_Paladine_13_04"); //The leader of the mercenaries is said to have had a problem with the king at that time and is therefore against the paladins and tries to eliminate them with his mercenaries in order to sail with the paladin ship to Myrtana and take revenge on the king.
 };
 
 INSTANCE Info_Mod_Regis_MehrPaladine (C_INFO)
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_Regis_MehrPaladine (C_INFO)
 	information	= Info_Mod_Regis_MehrPaladine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir noch mehr über die Paladine erzählen?";
+	description	= "Can you tell me more about the Paladins?";
 };
 
 FUNC INT Info_Mod_Regis_MehrPaladine_Condition()
@@ -70,9 +70,9 @@ FUNC INT Info_Mod_Regis_MehrPaladine_Condition()
 
 FUNC VOID Info_Mod_Regis_MehrPaladine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Regis_MehrPaladine_15_00"); //Kannst du mir mehr über die Paladine erzählen?
-	AI_Output(self, hero, "Info_Mod_Regis_MehrPaladine_13_01"); //Ich hab dir alles gesagt was ich weiß.
-	AI_Output(self, hero, "Info_Mod_Regis_MehrPaladine_13_02"); //Wenn du mehr erfahren willst, dann solltest du mit den Paladinen im Oberen Viertel sprechen.
+	AI_Output(hero, self, "Info_Mod_Regis_MehrPaladine_15_00"); //Can you tell me more about the Paladins?
+	AI_Output(self, hero, "Info_Mod_Regis_MehrPaladine_13_01"); //I told you everything I know.
+	AI_Output(self, hero, "Info_Mod_Regis_MehrPaladine_13_02"); //If you want to know more, you should talk to the paladins in the Upper Quarter.
 };
 
 INSTANCE Info_Mod_Regis_Flugblaetter (C_INFO)
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Regis_Flugblaetter (C_INFO)
 	information	= Info_Mod_Regis_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Regis_Flugblaetter_Condition()
@@ -104,7 +104,7 @@ FUNC VOID Info_Mod_Regis_Flugblaetter_Info()
 	
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Regis_Flugblaetter_13_01"); //Danke, für das Blatt ... auch, wenn ich ja sowieso schon den ganzen Tag vor seinem Laden herumsitze.
+	AI_Output(self, hero, "Info_Mod_Regis_Flugblaetter_13_01"); //Thanks for the paper. even though I've been sitting around his store all day anyway.
 
 	Mod_Flugblaetter += 1;
 };

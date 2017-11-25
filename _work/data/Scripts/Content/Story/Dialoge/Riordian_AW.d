@@ -15,25 +15,25 @@ FUNC INT Info_Mod_Riordian_AW_Obelisk_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_Obelisk_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_00"); //Du reist doch viel, vielleicht habe ich hier was für dich.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Obelisk_15_01"); //Was hast du?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_02"); //Ich habe in den Ruinen diesen Obelisk hier gefunden.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_00"); //You travel a lot, maybe I have something for you here.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Obelisk_15_01"); //What have you got?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_02"); //I found this obelisk here in the ruins.
 
 	B_GiveInvItems	(self, hero, ItRu_TeleportObelisk, 1);
 
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_03"); //In den alten Schriften steht nichts genaues darüber, jedoch soll er mit Teleportrunen verbunden werden können.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Obelisk_15_04"); //Mit Teleportrunen verbunden werden? Und was genau bringt das?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_05"); //Ich vermute, dass er zu einer Art Universalteleportrune wird, mit der du dich zu jedem Ort, den du über eine Rune eingefügt hast, teleportieren kannst.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_06"); //Allerdings habe ich das noch nicht getestet.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Obelisk_15_07"); //Und wie kann ich die Runen mit dem Obelisk verbinden?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_08"); //Vermutlich an einem Runentisch.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Obelisk_15_09"); //Ich werde es ausprobieren.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_10"); //Gut, sag mir Bescheid, wenn es funktioniert.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_11"); //Wegen des Irrlichtes habe ich auch ein paar Sachen herausgefunden.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_12"); //Ich kann dir jetzt zeigen, wie du es weitere Gegenstände suchen lassen kannst.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_03"); //In the old scripts there is nothing specific about it, but it should be possible to connect it with teleportruns.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Obelisk_15_04"); //Connected to teleportruns? And what exactly does that do?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_05"); //I suspect it will become a kind of universal teleportrune that will allow you to teleport to any place you have inserted over a rune.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_06"); //But I haven't tested it yet.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Obelisk_15_07"); //And how can I connect the runes to the obelisk?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_08"); //Probably at a rune table.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Obelisk_15_09"); //I'll give it a try.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_10"); //Well, let me know if it works.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_11"); //I also found out a few things about the Night Wisp.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Obelisk_10_12"); //I can now show you how to find more items.
 
 	Log_CreateTopic	(TOPIC_MOD_OBELISK, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_OBELISK, "Riordian hat mir einen Obelisk gegeben, in den ich scheinbar sämtliche Teleportrunen einsetzen kann. Dazu soll ich mit dem Obelisk, einer Teleportrune und einem leeren Runenstein an einen Runentisch gehen. Dort kann ich dann die Rune mit dem Obelisk verbinden. Wenn ich es getestet habe, sollte ich Riordian noch Bescheid sagen.");
+	B_LogEntry	(TOPIC_MOD_OBELISK, "Riordian gave me an obelisk in which I seem to be able to insert all teleportruns. To do this I have to go to a rune table with the obelisk, a teleportrune and an empty rune stone. There I can connect the rune with the obelisk. If I tested it, I should let Riordian know.");
 };
 
 INSTANCE Info_Mod_Riordian_AW_ObeliskTeleportFunzt (C_INFO)
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_Riordian_AW_ObeliskTeleportFunzt (C_INFO)
 	information	= Info_Mod_Riordian_AW_ObeliskTeleportFunzt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Obelisk ausprobiert.";
+	description	= "I tried the obelisk.";
 };
 
 FUNC INT Info_Mod_Riordian_AW_ObeliskTeleportFunzt_Condition()
@@ -57,11 +57,11 @@ FUNC INT Info_Mod_Riordian_AW_ObeliskTeleportFunzt_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_ObeliskTeleportFunzt_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_15_00"); //Ich habe den Obelisk ausprobiert.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_10_01"); //Und, hat er funktioniert?
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_15_02"); //Ja, er hat mich wie die normale Teleportrune zu meinem Ziel gebracht.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_10_03"); //Hervorragend. Das alte Volk ist wirklich erstaunlich. Hoffentlich finden wir noch mehr der alten Relikte.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_10_04"); //Hier hast du eine kleine Belohnung.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_15_00"); //I tried the obelisk.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_10_01"); //Well, did it work?
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_15_02"); //Yeah, he took me to my destination like a regular teleport rune.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_10_03"); //Outstanding. The old people are really amazing. Hopefully we'll find some more of the old relics.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ObeliskTeleportFunzt_10_04"); //Here's a little reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
@@ -88,20 +88,20 @@ FUNC INT Info_Mod_Riordian_AW_SteinkreisTafel_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_SteinkreisTafel_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_00"); //(aufgeregt) Hey, ich habe wieder was Interessantes in den Ruinen gefunden.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafel_15_01"); //Was hast du gefunden?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_02"); //Es ist eine Steintafel. Auf ihr steht eine Formel und darunter ist etwas abgebildet, was einem Steinkreis sehr ähnlich sieht.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_00"); //I found something interesting in the ruins again.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafel_15_01"); //What did you find?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_02"); //It's a stone tablet. On it there is a formula and below it is something that looks very similar to a stone circle.
 
 	B_GiveInvItems	(self, hero, ItMi_SteinkreisTafel, 1);
 
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_03"); //Du solltest die Formel mal an einem Steinkreis ausprobieren, vielleicht funktioniert es ja.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafel_15_04"); //Und das ist nicht gefährlich?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_05"); //Ach was, was soll da schon passieren.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafel_15_06"); //Na gut, ich werde es versuchen.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_07"); //Gut, berichte mir dann, was vorgefallen ist.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_03"); //You should try the formula on a stone circle, maybe it works.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafel_15_04"); //And that's not dangerous?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_05"); //Oh, what's the point?
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafel_15_06"); //All right, I'll try.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafel_10_07"); //Well, then tell me what happened.
 
 	Log_CreateTopic	(TOPIC_MOD_STEINKREIS, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_STEINKREIS, "Riordian hat mir eine Steintafel gegeben, welche ich bei Steinkreisen verwenden soll. Mal sehen, was passiert ...");
+	B_LogEntry	(TOPIC_MOD_STEINKREIS, "Riordian gave me a stone tablet which I should use for stone circles. Let's see what happens....");
 
 	Mod_Riordian_Geister_Tag = Wld_GetDay();
 };
@@ -114,7 +114,7 @@ INSTANCE Info_Mod_Riordian_AW_SteinkreisTafelFunzt (C_INFO)
 	information	= Info_Mod_Riordian_AW_SteinkreisTafelFunzt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Formel funktioniert tatsächlich.";
+	description	= "The formula actually works.";
 };
 
 FUNC INT Info_Mod_Riordian_AW_SteinkreisTafelFunzt_Condition()
@@ -127,19 +127,19 @@ FUNC INT Info_Mod_Riordian_AW_SteinkreisTafelFunzt_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_SteinkreisTafelFunzt_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_15_00"); //Die Formel funktioniert tatsächlich.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_10_01"); //Was bewirkt sie?
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_15_02"); //Es scheint sich um eine Art Teleportzauber zu handeln.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_15_03"); //Als ich die Formel ausgesprochen hatte, wurde ich in einen riesigen Steinkreis in einer Eislandschaft teleportiet.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_15_04"); //Danach konnte ich jeden beliebigen Steinkreis ansteuern.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_10_05"); //Sehr interessant. Das ist dir bestimmt sehr nützlich, du kannst die Tafel behalten. Die Formel kenne ich ohnehin noch.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_10_06"); //Hier hast du eine kleine Belohnung.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_15_00"); //The formula actually works.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_10_01"); //What does it do?
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_15_02"); //It appears to be some kind of teleport spell.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_15_03"); //When I had pronounced the formula, I was teleported into a huge stone circle in an ice landscape.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_15_04"); //After that I was able to control any stone circle.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_10_05"); //Very interesting. It'll be very useful to you. You can keep the blackboard. I still remember that formula.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_SteinkreisTafelFunzt_10_06"); //Here's a little reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_STEINKREIS, "Es hat sich herausgestellt, dass ich mit der Steintafel zwischen den Steinkreisen hin und herreisen kann.");
+	B_LogEntry	(TOPIC_MOD_STEINKREIS, "It turned out that I can travel back and forth between the stone circles with the stone plate.");
 };
 
 INSTANCE Info_Mod_Riordian_AW_Plagegeister (C_INFO)
@@ -162,34 +162,34 @@ FUNC INT Info_Mod_Riordian_AW_Plagegeister_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_Plagegeister_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_00"); //Gut, dass du kommst. Hier ist die Hölle ausgebrochen.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_01"); //Das sehe ich. Was ist geschehen?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_02"); //Nun, in letzter Zeit hatten wir sehr intensiv in den Ruinen geforscht und ihr viele Geheimnisse entlockt.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_03"); //Nur leider, nunja, waren wir wohl etwas zu unvorsichtig und haben dabei wohl einige Geister geweckt, die jetzt ruhelos und wütend hier ihr Unwesen treiben.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_04"); //Und sie scheinen sobald nicht damit aufhören zu wollen ...
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_05"); //Würden nicht vielleicht paar magische Geschosse sie wieder zur Ruhe ...
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_06"); //(unterbricht) Um Adanos Willen, nein. Die Gefahr, dass wir noch mehr schlafende Mächte wecken wäre zu groß.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_07"); //Und was können wir dann tun?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_08"); //Nun, bei meinen Forschungen bin ich zuletzt auf etwas gestoßen, das uns vielleicht helfen könnte.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_09"); //Es handelt sich dabei um eine Formel die in der Lage sein soll, ruhelose Geister zu besänftigen.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_10"); //Wird sie funktionieren?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_11"); //Vielleicht… aber sie muss gesprochen, während an einem Altar ein Totenopfer dargebracht wird und im Anschluss zwei Zauber gewirkt werden.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_12"); //Ein Totenopfer und Zauber?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_13"); //Bei dem Totenopfer handelt es sich vermutlich um drei Sumpfkrautpflanzen. Sie sollten den Kontakt zu den jenseitigen Sphären herstellen.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_14"); //Die Zauber wiederum sollen die Eigenschaft haben, Geschehenes vergessen zu lassen und wachen Geistern den Schlaf zu bringen.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_15"); //Hmm ...
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_16"); //Wir wissen zudem nicht genau, wo ein solcher Opferaltar zu finden ist, aber zweifelsohne wirst du in einer der alten Anlagen fündig werden.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_17"); //Ok, ich schau mich mal um. Die Formel?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_18"); //Hier hast du sie.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_00"); //I'm glad you came. This is where all hell broke loose.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_01"); //I can see that. What has happened?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_02"); //Well, lately we've been doing a lot of research in the ruins and we've gotten many secrets out of her.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_03"); //Unfortunately, well, we must have been a little too careless and have probably awakened some ghosts who are now restless and furious here.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_04"); //And they don't seem to want to stop soon...
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_05"); //Wouldn't a few magic bullets not put them back to rest?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_06"); //(interrupts) For Adano's sake, no. The danger of us waking up more sleeping powers would be too great.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_07"); //Then what can we do?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_08"); //Well, I've recently come across something in my research that might help us.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_09"); //It is a formula that should be able to soothe restless spirits.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_10"); //Will it work?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_11"); //Perhaps... but she must speak while a sacrifice is made at an altar and two magic spells are cast.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_12"); //A death offering and magic?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_13"); //The victim of the death is probably three marsh herb plants. They were supposed to make contact with the otherworldly spheres.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_14"); //The spells, on the other hand, are said to have the quality of making you forget what has happened and bring wakeful spirits to sleep.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_15"); //Hmm...
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_16"); //We also do not know exactly where to find such a sacrificial altar, but you will undoubtedly find it in one of the old sites.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_17"); //Okay, I'll take a look around. The formula?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_18"); //Here you have them.
 
 	B_GiveInvItems	(self, hero, ItWr_PlagegeisterFormel, 1);
 
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_19"); //Gut, ich mach mich dann mal auf den Weg.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_20"); //Viel Glück. Adanos sei mit dir.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister_15_19"); //All right, I'll be on my way.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister_10_20"); //Good luck to you. Adanos be with you.
 
 	Log_CreateTopic	(TOPIC_MOD_RIORDIAN_PLAGEGEISTER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_RIORDIAN_PLAGEGEISTER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_RIORDIAN_PLAGEGEISTER, "Die Wassermagier haben bei ihren Forschungen einige Geister verärgert, die dort nun ruhelos umherschwirren. Riordian meinte, dass man um sie wieder zu besänftigen ein Ritual an einem Opferaltar durchführen müsste. Dazu muss ich die Formel Aufsagen, 3 Sumpfkrautpflanzen opfern und 2 Zauber wirken. Die Zauber sollten die Eigenschaft haben Geschehnisse vergessen zu machen und wachen Geistern den Schlaf zu bringen.");
+	B_LogEntry	(TOPIC_MOD_RIORDIAN_PLAGEGEISTER, "The water magicians have angered some ghosts in their research, who are now restlessly roaring around there. Riordian said that in order to appease her again, a ritual should be performed on a sacrificial altar. To do so, I have to sacrifice the formula, 3 swamp herbs and 2 spells. The spells should have the ability to forget events and wake spirits to bring sleep.");
 };
 
 INSTANCE Info_Mod_Riordian_AW_Plagegeister2 (C_INFO)
@@ -212,16 +212,16 @@ FUNC INT Info_Mod_Riordian_AW_Plagegeister2_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_Plagegeister2_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister2_10_00"); //Du hast es geschafft! Die Ruhelosen Seelen und Geister sind besänftigt.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister2_15_01"); //Ich hoffe ihr seid in Zukunft etwas vorsichtiger bei euren Forschungen.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister2_10_02"); //Ja, natürlich! Dessen kannst du gewiss sein. Aber hier, nimm diese Steintafeln für deine Hilfe.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister2_10_00"); //You did it! You did it! The restless souls and spirits are soothed.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Plagegeister2_15_01"); //I hope you'll be a little more careful with your research in the future.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister2_10_02"); //Yes, of course! You can be sure of that. But here, take these tablets for your help.
 
-	B_ShowGivenThings	("2 Steintafeln erhalten");
+	B_ShowGivenThings	("2 stone tablets preserved");
 
 	CreateInvItems	(hero, ItWr_DexStonePlate1_Addon, 1);
 	CreateInvItems	(hero, ItWr_HitPointStonePlate1_Addon, 1);
 
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister2_10_03"); //Mögen sie dir auf deinen weiteren Wegen von Nutzen sein.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Plagegeister2_10_03"); //May they be useful to you in your further ways.
 
 	B_SetTopicStatus	(TOPIC_MOD_RIORDIAN_PLAGEGEISTER, LOG_SUCCESS);
 
@@ -238,7 +238,7 @@ INSTANCE Info_Mod_Riordian_AW_ScrollJG (C_INFO)
 	information	= Info_Mod_Riordian_AW_ScrollJG_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Vielleicht kannst du mir helfen.";
+	description	= "Maybe you can help me.";
 };
 
 FUNC INT Info_Mod_Riordian_AW_ScrollJG_Condition()
@@ -253,26 +253,26 @@ FUNC INT Info_Mod_Riordian_AW_ScrollJG_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_ScrollJG_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_00"); //Vielleicht kannst du mir helfen.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_01"); //Zeig her.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_00"); //Maybe you can help me.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_01"); //Let me see that.
 
 	B_UseFakeScroll ();
 
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_02"); //Hm. Es ist die alte Schrift. Ich habe so Zeichen auch schon gesehen. Scheint eine höhere Sprache zu sein.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_03"); //Und?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_04"); //Ich habe sie noch nicht ganz entziffern können. Komm später wieder.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_05"); //Adanos hilf! Den ganzen Weg umsonst ...
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_06"); //Warte. Kennst du den Eremiten im Tal?
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_07"); //Ähm ...
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_08"); //Er kam vor langer Zeit mit den ersten Piraten nach Jhakendar. Hat auch die Schriften studiert.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_09"); //Plötzlich jedoch hat er davon abgelassen und hat sich ins Tal zurückgezogen.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_10"); //Woher  weißt du?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_11"); //Dieser Pirat, dieser Greg, hat es mir erzählt.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_12"); //Aha. Und du meinst, der könnte mir ...
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_13"); //Versuch's einfach. Es ist die Plattform rechts außen.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_14"); //Ich weiß.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_02"); //Hm. It's the old script. I've seen signs like that before. Seems to be a higher language.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_03"); //And?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_04"); //I haven't quite deciphered them yet. Come back later.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_05"); //Adano's help! All this way for free...
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_06"); //Wait. Wait. Do you know the hermit in the valley?
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_07"); //Um...
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_08"); //He came to Jhakendar a long time ago with the first pirates. Studied the scriptures, too.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_09"); //Suddenly, however, he has abandoned it and retired to the valley.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_10"); //How do you know?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_11"); //That pirate, Greg, he told me.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_12"); //Uh-huh. And you think he might have...
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG_10_13"); //Just try it. It's the platform on the far right.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG_15_14"); //I know.
 
-	B_LogEntry	(TOPIC_MOD_JG_SCROLL, "Ich muss zum Eremit im Tal und da fragen. Wohl die letzte Möglichkeit.");
+	B_LogEntry	(TOPIC_MOD_JG_SCROLL, "I have to go to the hermit in the valley and ask. Probably the last chance.");
 };
 
 INSTANCE Info_Mod_Riordian_AW_ScrollJG2 (C_INFO)
@@ -283,7 +283,7 @@ INSTANCE Info_Mod_Riordian_AW_ScrollJG2 (C_INFO)
 	information	= Info_Mod_Riordian_AW_ScrollJG2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Eremit konnte mir helfen. Ich muss nun eine bestimmte Opferschale suchen.";
+	description	= "The hermit could help me. I have to find a specific sacrificial bowl.";
 };
 
 FUNC INT Info_Mod_Riordian_AW_ScrollJG2_Condition()
@@ -296,17 +296,17 @@ FUNC INT Info_Mod_Riordian_AW_ScrollJG2_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_ScrollJG2_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG2_15_00"); //Der Eremit konnte mir helfen. Ich muss nun eine bestimmte Opferschale suchen.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG2_10_01"); //Das wird nicht leicht sein. Du wirst dazu Glück brauchen. Übrigens ...
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG2_15_02"); //Ja?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG2_10_03"); //Cavalorn hat mir berichtet, du sollst schnellstens ins Lager zurückkommen.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG2_15_04"); //Ins Minental?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG2_10_05"); //Ja. Vielleicht kann dir dieser Wulfgar weiterhelfen.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG2_15_06"); //Bin schon unterwegs.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG2_15_00"); //The hermit could help me. I have to find a specific sacrificial bowl.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG2_10_01"); //It won't be easy. You'll need luck to do it. By the way...
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG2_15_02"); //Yes?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG2_10_03"); //Cavalorn told me to get you back to the camp as soon as possible.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG2_15_04"); //Into the Minental?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_ScrollJG2_10_05"); //Yeah. Maybe this Wulfgar can help you.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_ScrollJG2_15_06"); //I'm on my way.
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_JG_OPFERSCHALE, "Auf zu Wulfgar. Vielleicht weiß der was ...");
+	B_LogEntry	(TOPIC_MOD_JG_OPFERSCHALE, "Off to Wulfgar. Maybe he knows something...");
 };
 
 INSTANCE Info_Mod_Riordian_AW_Zeremoniendolch (C_INFO)
@@ -317,7 +317,7 @@ INSTANCE Info_Mod_Riordian_AW_Zeremoniendolch (C_INFO)
 	information	= Info_Mod_Riordian_AW_Zeremoniendolch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Guten Tag. Merdarion sagt, du hast neue Erkenntnisse.";
+	description	= "Good day. Merdarion says you have new insights.";
 };
 
 FUNC INT Info_Mod_Riordian_AW_Zeremoniendolch_Condition()
@@ -330,18 +330,18 @@ FUNC INT Info_Mod_Riordian_AW_Zeremoniendolch_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_Zeremoniendolch_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Zeremoniendolch_15_00"); //Guten Tag. Merdarion sagt, du hast neue Erkenntnisse.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_01"); //Nun ja. Neulich konnte ich eine weitere Inschrift im Tempel entziffern.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_02"); //Dabei handelt es sich um eine Waffe, die in den alten Zeiten offensichtlich für bestimmte Opferrituale benutzt wurde.
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_03"); //Scheint absolut tödlich und vom Opfer nicht wahrnehmbar zu sein. Habe sie mal Ritualdolch genannt.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Zeremoniendolch_15_04"); //Aha. Und wo könnte man so eine Waffe finden?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_05"); //Keine Ahnung. Aber wenn, dann hier in Jharkendar, denke ich.
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Zeremoniendolch_15_06"); //Und kannst du noch etwas weiter denken?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_07"); //Nun ja. Eine Opferstätte ... oder ein Ritualplatz ... ein Tempel. So in der Art ... Hmm ...
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Zeremoniendolch_15_08"); //Vielleicht hier im Tempel?
-	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_09"); //Da hat sich Meriadon schon umgeschaut, da ist nichts. Eventuell der Adanostempel im Sumpf ...
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Zeremoniendolch_15_00"); //Good day. Merdarion says you have new insights.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_01"); //Well, yeah. Recently I was able to decipher another inscription in the temple.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_02"); //This is a weapon that was obviously used in ancient times for certain sacrificial rituals.
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_03"); //Seems deadly and invisible to the victim. Called her a ritual dagger.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Zeremoniendolch_15_04"); //Uh-huh. And where could you find a gun like that?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_05"); //I don't know about that. But if it is, it's here in Jharkendar, I think.
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Zeremoniendolch_15_06"); //And can you think any further?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_07"); //Well, yeah. A place of sacrifice.... or a ritual place... a temple. Kind of like that... Hmm...
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Zeremoniendolch_15_08"); //Maybe here in the temple?
+	AI_Output (self, hero, "Info_Mod_Riordian_AW_Zeremoniendolch_10_09"); //Meriadon has already looked around, there's nothing there. Possibly the adano stamp in the marsh...
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Der Dolch ist vermutlich an irgendeiner Opferstätte, einem Ritualplatz oder einem Tempel zu finden. Riordian meint, ich solle mal im Adanostempel im Sumpf suchen ...");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "The dagger is probably found at some sacrificial site, ritual site or temple. Riordian thinks I should search the Adano temple in the swamp...");
 };
 
 INSTANCE Info_Mod_Riordian_AW_Gast (C_INFO)
@@ -352,18 +352,18 @@ INSTANCE Info_Mod_Riordian_AW_Gast (C_INFO)
 	information	= Info_Mod_Riordian_AW_Gast_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum bist du überhaupt mitgekommen?";
+	description	= "Why did you come along anyway?";
 };
 
 FUNC INT Info_Mod_Riordian_AW_Gast_Condition()
 {
 	if (Mod_Saturas_Gast == 1)
 	{
-		Info_Mod_Riordian_AW_Gast.description = "Ich suche den Dieb eurer Ausrüstung.";
+		Info_Mod_Riordian_AW_Gast.description = "I'm looking for the thief who stole your equipment.";
 	}
 	else
 	{
-		Info_Mod_Riordian_AW_Gast.description = "Jemand hat Teile eurer Ausrüstung gestohlen.";
+		Info_Mod_Riordian_AW_Gast.description = "Someone has stolen parts of your equipment.";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_UngebeterBesucher))
@@ -377,17 +377,17 @@ FUNC VOID Info_Mod_Riordian_AW_Gast_Info()
 {
 	if (Mod_Saturas_Gast == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Riordian_AW_Gast_15_00"); //Ich suche den Dieb eurer Ausrüstung.
-		AI_Output(self, hero, "Info_Mod_Riordian_AW_Gast_10_01"); //Ja, genau, finde den Mistkerl!
-		AI_Output(hero, self, "Info_Mod_Riordian_AW_Gast_15_02"); //Irgendwelche Anhaltspunkte?
-		AI_Output(self, hero, "Info_Mod_Riordian_AW_Gast_10_03"); //Ich? Nein. Aber dieser Argez könnte es gewesen sein. Ich traue ihm nicht.
+		AI_Output(hero, self, "Info_Mod_Riordian_AW_Gast_15_00"); //I'm looking for the thief who stole your equipment.
+		AI_Output(self, hero, "Info_Mod_Riordian_AW_Gast_10_01"); //Yeah, right, find that son of a bitch!
+		AI_Output(hero, self, "Info_Mod_Riordian_AW_Gast_15_02"); //Any leads?
+		AI_Output(self, hero, "Info_Mod_Riordian_AW_Gast_10_03"); //Me? No. But it could have been this Argez. I don't trust him.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Riordian_AW_Gast_15_04"); //Jemand hat Teile eurer Ausrüstung gestohlen.
-		AI_Output(self, hero, "Info_Mod_Riordian_AW_Gast_10_05"); //Wie bitte? Wer könnte uns hier etwas stehlen?
-		AI_Output(hero, self, "Info_Mod_Riordian_AW_Gast_15_06"); //Weiß ich noch nicht. Du hast also nichts Ungewöhnliches mitbekommen?
-		AI_Output(self, hero, "Info_Mod_Riordian_AW_Gast_10_07"); //Ich habe geschlummert wie ein Baby.
+		AI_Output(hero, self, "Info_Mod_Riordian_AW_Gast_15_04"); //Someone has stolen parts of your equipment.
+		AI_Output(self, hero, "Info_Mod_Riordian_AW_Gast_10_05"); //I beg your pardon? Who could steal something from us?
+		AI_Output(hero, self, "Info_Mod_Riordian_AW_Gast_15_06"); //I haven't decided yet. So you didn't notice anything unusual?
+		AI_Output(self, hero, "Info_Mod_Riordian_AW_Gast_10_07"); //I was asleep like a baby.
 	};
 };
 
@@ -399,7 +399,7 @@ instance Info_Mod_Riordian_AW_Irrlicht		(C_INFO)
 	information	= Info_Mod_Riordian_AW_Irrlicht_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeig mir, wie ich mein Irrlicht unterrichte.";
+	description	= "Show me how to teach my will-o' -the-wisp.";
 };
 
 var int Info_Mod_Riordian_AW_Irrlicht_NoPerm;
@@ -549,7 +549,7 @@ INSTANCE Info_Mod_Riordian_AW_Lehrer (C_INFO)
 	information	= Info_Mod_Riordian_AW_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir lernen?";
+	description	= "Can I study with you?";
 };
 
 FUNC INT Info_Mod_Riordian_AW_Lehrer_Condition()
@@ -566,18 +566,18 @@ FUNC INT Info_Mod_Riordian_AW_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Riordian_AW_Lehrer_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Riordian_AW_Lehrer_15_00"); //Kann ich bei dir lernen?
+	AI_Output (hero, self, "Info_Mod_Riordian_AW_Lehrer_15_00"); //Can I study with you?
 	
 	if (Mod_Gilde == 9)
 	|| (Mod_Gilde == 10)
 	|| (Mod_Gilde == 11)
 	{
-		AI_Output (self, hero, "Info_Mod_Riordian_AW_Lehrer_10_01"); //Ich werde dich in die Geheimnisse der Alchemie einweihen.
+		AI_Output (self, hero, "Info_Mod_Riordian_AW_Lehrer_10_01"); //I'll let you in on the secrets of alchemy.
 		
 		if (!Npc_KnowsInfo(hero, Info_Mod_Riordian_AW_Lehrer))
 		{
 			Log_CreateTopic	(TOPIC_MOD_LEHRER_WASSERMAGIER, LOG_NOTE);
-			B_LogEntry	(TOPIC_MOD_LEHRER_WASSERMAGIER, "Riordian kann mir etwas über die Alchemie beibringen.");
+			B_LogEntry	(TOPIC_MOD_LEHRER_WASSERMAGIER, "Riordian can teach me about alchemy.");
 		};
 
 		Info_ClearChoices 	(Info_Mod_Riordian_AW_Lehrer);
@@ -585,25 +585,25 @@ FUNC VOID Info_Mod_Riordian_AW_Lehrer_Info()
 	
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Genesung] == FALSE)
 		{
-			Info_AddChoice 		(Info_Mod_Riordian_AW_Lehrer,B_BuildLearnString ("Trank der Genesung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Genesung)),Info_Mod_Riordian_AW_Lehrer_Genesung);
+			Info_AddChoice 		(Info_Mod_Riordian_AW_Lehrer,B_BuildLearnString ("Drink of Recovery", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Genesung)),Info_Mod_Riordian_AW_Lehrer_Genesung);
 		};
 	
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 		&& (Mod_LehrlingBei != 1)
 		{
-			Info_AddChoice 		(Info_Mod_Riordian_AW_Lehrer,B_BuildLearnString ("Essenz der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Riordian_AW_Lehrer_HEALTH_01);
+			Info_AddChoice 		(Info_Mod_Riordian_AW_Lehrer,B_BuildLearnString ("Essence of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Riordian_AW_Lehrer_HEALTH_01);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Extrakt der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Riordian_AW_Lehrer_Health_02);
+			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Extract of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Riordian_AW_Lehrer_Health_02);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Elixier der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Riordian_AW_Lehrer_Health_03);
+			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Elixir of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Riordian_AW_Lehrer_Health_03);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
@@ -611,42 +611,42 @@ FUNC VOID Info_Mod_Riordian_AW_Lehrer_Info()
 		&& (Mod_LehrlingBei != 1)
 		&& (Kapitel >= 4)
 		{
-			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Elixier des Lebens", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Riordian_AW_Lehrer_Perm_Health);
+			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Elixir of Life", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Riordian_AW_Lehrer_Perm_Health);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 		&& (Mod_LehrlingBei != 1)
 		{
-			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Mana Essenz", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Riordian_AW_Lehrer_Mana_01);
+			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Mana Essence", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Riordian_AW_Lehrer_Mana_01);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Mana Extrakt", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Riordian_AW_Lehrer_Mana_02);
+			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Mana Extract", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Riordian_AW_Lehrer_Mana_02);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Mana Elixier", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Riordian_AW_Lehrer_Mana_03);
+			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Mana Elixir", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Riordian_AW_Lehrer_Mana_03);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 		&& (Kapitel >= 4)
 		{
-			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Elixier des Geistes", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Riordian_AW_Lehrer_Perm_Mana);
+			Info_AddChoice	  (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Elixir of Spirit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Riordian_AW_Lehrer_Perm_Mana);
 		};                                                                                                                                                                            
 		if (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE) 
 		&& (Kapitel >= 4)
 		{                                                                                                                                                                                     
-			Info_AddChoice (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Elixier der Stärke", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Riordian_AW_Lehrer_PermSTR);               
+			Info_AddChoice (Info_Mod_Riordian_AW_Lehrer, B_BuildLearnString ("Elixir of Strength", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Riordian_AW_Lehrer_PermSTR);               
 		};
 		if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 		&& (Kapitel >= 4)
 		{
-			Info_AddChoice (Info_Mod_Riordian_AW_Lehrer,B_BuildLearnString ("Elixier der Geschicklichkeit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Riordian_AW_Lehrer_Perm_DEX);
+			Info_AddChoice (Info_Mod_Riordian_AW_Lehrer,B_BuildLearnString ("Elixir of Dexterity", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Riordian_AW_Lehrer_Perm_DEX);
 		};
 		
 	};

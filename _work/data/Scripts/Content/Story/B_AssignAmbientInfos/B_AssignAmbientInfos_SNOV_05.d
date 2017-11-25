@@ -5,7 +5,7 @@ INSTANCE Info_Mod_SNOV_05_Leader (C_INFO)
 	information	= Info_Mod_SNOV_05_Leader_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wer hat hier das Sagen?";
+	description	= "Who's in charge here?";
 };
 
 FUNC INT Info_Mod_SNOV_05_Leader_Condition()
@@ -17,9 +17,9 @@ FUNC VOID Info_Mod_SNOV_05_Leader_Info()
 {
 	B_Say	(hero, self, "$AMBISNOV01");
 
-	AI_Output(self, hero, "Info_Mod_SNOV_05_Leader_05_00"); //Das ist nicht ganz so einfach. Hier in der Festung bestimmt Andokai die Richtung.
-	AI_Output(self, hero, "Info_Mod_SNOV_05_Leader_05_01"); //Der Dämonenritter Raven hat aber bei den Kriegern auch einiges zu sagen.
-	AI_Output(self, hero, "Info_Mod_SNOV_05_Leader_05_02"); //Außerdem gibt es da noch Xardas. Der lässt sich selten blicken, aber seine Worte sind Gesetz, und nicht mal Andokai traut sich, sie nicht zu befolgen.
+	AI_Output(self, hero, "Info_Mod_SNOV_05_Leader_05_00"); //It's not that simple. Here in the fortress, Andokai determines the direction.
+	AI_Output(self, hero, "Info_Mod_SNOV_05_Leader_05_01"); //The demon knight Raven has a lot to say about the warriors.
+	AI_Output(self, hero, "Info_Mod_SNOV_05_Leader_05_02"); //Besides, there's Xardas. He is rarely seen, but his words are law, and not even Andokai dares to obey them.
 };
 
 INSTANCE Info_Mod_SNOV_05_Beliarkloster (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_SNOV_05_Beliarkloster (C_INFO)
 	information	= Info_Mod_SNOV_05_Beliarkloster_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was gibt es hier für wichtige Orte?";
+	description	= "What are the places of interest?";
 };
 
 FUNC INT Info_Mod_SNOV_05_Beliarkloster_Condition()
@@ -41,9 +41,9 @@ FUNC VOID Info_Mod_SNOV_05_Beliarkloster_Info()
 {
 	B_Say	(hero, self, "$AMBISNOV03");
 
-	AI_Output(self, hero, "Info_Mod_SNOV_05_Beliarkloster_05_00"); //Die Kirche ist das Herzstück unserer Festung. Dort huldigen wir Beliar.
-	AI_Output(self, hero, "Info_Mod_SNOV_05_Beliarkloster_05_01"); //Außerdem gibt es noch die Schmiede, um die sich Eduard kümmert, und die Küche, wo's Essen gibt.
-	AI_Output(self, hero, "Info_Mod_SNOV_05_Beliarkloster_05_02"); //Meistens ist das ein ziemlicher Fraß, aber Hauptsache, man überlebt.
+	AI_Output(self, hero, "Info_Mod_SNOV_05_Beliarkloster_05_00"); //The church is the heart of our fortress. There we pay homage to Beliar.
+	AI_Output(self, hero, "Info_Mod_SNOV_05_Beliarkloster_05_01"); //There is also the blacksmith's shop that Eduard takes care of, and the kitchen where there is food.
+	AI_Output(self, hero, "Info_Mod_SNOV_05_Beliarkloster_05_02"); //It's usually quite a grub, but the main thing is to survive.
 };
 
 INSTANCE Info_Mod_SNOV_05_Interessantes (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_SNOV_05_Interessantes (C_INFO)
 	information	= Info_Mod_SNOV_05_Interessantes_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ist in letzter Zeit was Interessantes passiert?";
+	description	= "Has anything interesting happened lately?";
 };
 
 FUNC INT Info_Mod_SNOV_05_Interessantes_Condition()
@@ -65,7 +65,7 @@ FUNC VOID Info_Mod_SNOV_05_Interessantes_Info()
 {
 	B_Say	(hero, self, "$AMBISNOV04");
 
-	AI_Output(self, hero, "Info_Mod_SNOV_05_Interessantes_05_00"); //Nicht dass ich wüsste.
+	AI_Output(self, hero, "Info_Mod_SNOV_05_Interessantes_05_00"); //Not that I know of.
 };
 
 INSTANCE Info_Mod_SNOV_05_Pickpocket (C_INFO)

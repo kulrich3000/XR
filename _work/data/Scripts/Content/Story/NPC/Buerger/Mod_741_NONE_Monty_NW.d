@@ -1,7 +1,7 @@
 instance Mod_741_NONE_Monty_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Monty"; 
+	name 		= "party"; 
 	guild 		= GIL_PAL;
 	id 			= 741;
 	voice 		= 31;

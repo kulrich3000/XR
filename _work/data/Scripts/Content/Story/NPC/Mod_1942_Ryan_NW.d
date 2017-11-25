@@ -1,7 +1,7 @@
 INSTANCE Mod_1942_Ryan_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ryan";
+	name 		= "ryan";
 	guild 		= GIL_DMT;
 	id 			= 1942;
 	voice 		= 36;

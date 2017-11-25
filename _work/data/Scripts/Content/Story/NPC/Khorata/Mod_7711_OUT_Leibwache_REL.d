@@ -1,7 +1,7 @@
 instance Mod_7711_OUT_Leibwache_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Leibwache";
+	name 		= "bodyguard";
 	guild 		= GIL_OUT;
 	id 			= 7711;
 	voice 		= 12;

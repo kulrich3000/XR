@@ -1,7 +1,7 @@
 instance Mod_7061_DMR_Daemonenritter_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenritter"; 
+	name 		= "demon knights"; 
 	guild 		= GIL_KDF;
 	id 			= 7061;
 	voice 		= 13;

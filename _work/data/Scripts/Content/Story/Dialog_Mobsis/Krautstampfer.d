@@ -18,7 +18,7 @@ INSTANCE PC_Krautstampfer_Tabak (C_INFO)
 	information	= PC_Krautstampfer_Tabak_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tabak mischen ...";
+	description	= "Mix tobacco mix...";
 };
 
 FUNC INT PC_Krautstampfer_Tabak_Condition()
@@ -38,15 +38,15 @@ FUNC VOID PC_Krautstampfer_Tabak_Info()
 	
 	if (Npc_HasItems (hero, ItFo_Honey) >=1)
 	{
-		Info_AddChoice 	(PC_Krautstampfer_Tabak, "...mit Honig", PC_Krautstampfer_Tabak_Honey);
+		Info_AddChoice 	(PC_Krautstampfer_Tabak, "... with honey", PC_Krautstampfer_Tabak_Honey);
 	};
 	if (Npc_HasItems (hero, ItPl_SwampHerb) >=1)
 	{
-		Info_AddChoice 	(PC_Krautstampfer_Tabak, "...mit Sumpfkraut", PC_Krautstampfer_Tabak_Swampherb);
+		Info_AddChoice 	(PC_Krautstampfer_Tabak, "... with bogweed", PC_Krautstampfer_Tabak_Swampherb);
 	};
 	if (Npc_HasItems (hero, ItPl_Mushroom_01) >=1)
 	{
-		Info_AddChoice 	(PC_Krautstampfer_Tabak, "...mit Dunkelpilz", PC_Krautstampfer_Tabak_Mushroom_01);
+		Info_AddChoice 	(PC_Krautstampfer_Tabak, "... with dark mushroom", PC_Krautstampfer_Tabak_Mushroom_01);
 	};
 	
 };

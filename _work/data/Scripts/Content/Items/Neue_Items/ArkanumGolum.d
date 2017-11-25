@@ -1,6 +1,6 @@
 INSTANCE ItWr_GolemBook1(C_Item)
 {	
-	name 					=	"Arkanum Golum - Band I";
+	name 					=	"Arcanum Golum - Volume I";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -27,27 +27,27 @@ INSTANCE ItWr_GolemBook1(C_Item)
 		
 		//1.Seite
 		Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
-		Doc_PrintLine	( nDocID,  0, "ARKANUM GOLUM - Band I");
+		Doc_PrintLine	( nDocID,  0, "ARKANUM GOLUM - Volume I");
 		Doc_PrintLine	( nDocID,  0, "=====================");
-		Doc_PrintLines	( nDocID,  0, "(Magie der Golems)");
+		Doc_PrintLines	( nDocID,  0, "(Magic of the Golems)");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Nur wer schon einmal einem dieser aus den Elementen erschaffenen Kreaturen begegnet ist, wird wirklich verstehen, welchen Respekt diese magieschen Wesen einem abenteuerlustigen Wanderer einflößen können.");
+		Doc_PrintLines	( nDocID,  0, "Only those who have ever encountered one of these creatures created from the elements will really understand the respect these magical creatures can instill in an adventurous wanderer.");
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
 		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 		Doc_PrintLine	( nDocID,  1, "Steingolem");
 		Doc_PrintLine	( nDocID,  1, "------------");
-		Doc_PrintLines	( nDocID,  1, "Diese steinernen Kolosse sind im Kampf fast unverwundbar. Schwerter, Äxte und Bögen scheinen diesen Monstren nichts anhaben zu können.");
+		Doc_PrintLines	( nDocID,  1, "These stone colossuses are almost invulnerable in battle. Swords, axes and bows seem to have no effect on these monsters.");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLines	( nDocID,  1, "Der einzige glaubhafte Bericht von der Bezwingung eines solchen Leviathans stammt von einem Söldner. Er schrieb davon, wie der stumpfe Aufprall seines Kriegshammers Risse in den Golem trieb, bis dieser schlußendlich zerbarst.");
+		Doc_PrintLines	( nDocID,  1, "The only credible account of the defeat of such a Leviathan comes from a mercenary. He wrote about how the blunt impact of his warhammer drove cracks into the Golem until it finally burst apart.");
 
 		Doc_Show		( nDocID );
 	};
 
 INSTANCE ItWr_GolemBook2(C_Item)
 {	
-	name 					=	"Arkanum Golum - Band II";
+	name 					=	"Arcanum Golum - Volume II";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -75,21 +75,21 @@ INSTANCE ItWr_GolemBook2(C_Item)
 
 		//1. Seite
 		Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-		Doc_PrintLine	( nDocID,  0, "ARKANUM GOLUM - Band II");
+		Doc_PrintLine	( nDocID,  0, "ARKANUM GOLUM - Volume II");
 		Doc_PrintLine	( nDocID,  0, "======================");
 		Doc_PrintLine	( nDocID,  0, "");
 		Doc_PrintLine	( nDocID,  0, "Eisgolem");
 		Doc_PrintLine	( nDocID,  0, "---------");
-		Doc_PrintLines	( nDocID,  0, "Den Steingolems verwandt sind die Eisgolems, deren physische Substanz jedoch völlig aus gefrorenem Wasser zu bestehen scheint. Jede uns bekannte Waffe scheint an der glatten Oberfläche dieser eisigen Wesen abzugleiten.");
-		Doc_PrintLines	( nDocID,  0, "Auch sei der abenteuerlustige Wanderer gewarnt vor dem Eisatem dieser Kreatur, schließt sie doch jeden Ahnungslosen im Nu in einer Säule aus Eis ein.");
+		Doc_PrintLines	( nDocID,  0, "The ice olems are related to the stone olems, but their physical substance seems to consist entirely of frozen water. Any weapon we know of seems to slip on the smooth surface of these icy creatures.");
+		Doc_PrintLines	( nDocID,  0, "The adventurous wanderer should also be warned against the ice breath of this creature, as it instantly traps every unsuspecting person in a column of ice.");
 
 		//2.Seite
 		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
-		Doc_PrintLines	( nDocID,  1, "Einst berichtete ein Feuermagier von der Begegnung mit einem solchen Geschöpf, doch schien er keine ernste Bedrohung darin erkannt zu haben.");
+		Doc_PrintLines	( nDocID,  1, "Once upon a time, a fire magician reported the encounter with such a creature, but he did not seem to have recognized any serious threat in it.");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "Feuergolem");
 		Doc_PrintLine	( nDocID,  1, "------------");
-		Doc_PrintLines	( nDocID,  1, "Berichten zufolge können diese feurigen Geschöpfe ihre Opfer mit nur einer Berührung in ein Flammenmeer verwandeln.");
-		Doc_PrintLines	( nDocID,  1, "Erst im letzten Jahr stieß eine Jagdgruppe im Hochland auf solch einen wandelnden Gluthaufen. Der Ausgang ist unklar, doch soll Eis die Höllenkreatur gestoppt haben.");
+		Doc_PrintLines	( nDocID,  1, "According to reports, these fiery creatures can turn their victims into a sea of flames with just one touch.");
+		Doc_PrintLines	( nDocID,  1, "Only last year, a hunting group in the highlands encountered such a heap of embers. The outcome is unclear, but ice is said to have stopped the infernal creature.");
 		Doc_Show		( nDocID );
 	};

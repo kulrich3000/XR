@@ -1,6 +1,6 @@
 INSTANCE Wasserdrache_11054_DT	(Mst_Default_Dragon_Fire)
 {
-	name	=	"Drache";
+	name	=	"dragon";
 	
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_FIRE;

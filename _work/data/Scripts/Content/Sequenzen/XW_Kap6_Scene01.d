@@ -30,12 +30,12 @@ FUNC VOID XW_Kap6_Scene01()
 
 	if (Mod_XW_Kap6_Scene01_Counter == 3)
 	{
-		AI_Output(Mod_7765_SLD_Gorn_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene01_12_00"); //Heilige Scheiﬂe ...
+		AI_Output(Mod_7765_SLD_Gorn_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene01_12_00"); //Holy shit...
 	};
 
 	if (Mod_XW_Kap6_Scene01_Counter == 9)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene01_15_01"); //Xardas, ich bring dich um.
+		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene01_15_01"); //Xardas, I'll kill you.
 	};
 
 	if (Mod_XW_Kap6_Scene01_Counter == 15)

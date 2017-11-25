@@ -1,7 +1,7 @@
 instance Mod_1047_VLK_Joerg_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Jörg"; 
+	name 		= "Joerg"; 
 	guild 		= GIL_PAL;
 	id 			= 1047;
 	voice 		= 6;

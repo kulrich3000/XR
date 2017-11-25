@@ -1,7 +1,7 @@
 instance Mod_1181_MIL_Tuerwache_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Richterhaus-Wache"; 	
+	name 		= "Judge's house guard"; 	
 	guild 		= GIL_pal;
 	id 			= 1181;
 	voice 		= 7;

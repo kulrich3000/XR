@@ -1,7 +1,7 @@
 INSTANCE Mod_7146_ASS_Mustafa_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mustafa"; 
+	name 		= "mustafa"; 
 	guild 		= GIL_OUT;
 	id 			= 7146;
 	voice 		= 13;

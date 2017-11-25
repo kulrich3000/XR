@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Sheep(C_Npc)			
 {
 	//----- Maonster ----
-	name							=	"Schaf";
+	name							=	"Sheep";
 	guild							=	GIL_SHEEP;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SHEEP;
 	level							=	1;
@@ -126,7 +126,7 @@ INSTANCE Krautschaf	(Mst_Default_Sheep)
 
 INSTANCE Hammel	(Mst_Default_Sheep)
 {
-	name	= "Hammel";
+	name	= "mutton";
 
 	B_SetVisuals_Hammel();
 	Npc_SetToFistMode(self);
@@ -137,7 +137,7 @@ INSTANCE Hammel	(Mst_Default_Sheep)
 
 INSTANCE Hammel_Bengar_01	(Mst_Default_Sheep)
 {
-	name	= "Hammel";
+	name	= "mutton";
 
 	B_SetVisuals_Hammel();
 	Npc_SetToFistMode(self);
@@ -193,7 +193,7 @@ INSTANCE Sheep_Bengar_05	(Mst_Default_Sheep)
 
 INSTANCE Hammel_WW	(Mst_Default_Sheep)
 {
-	name	= "Anführer der Schafe";
+	name	= "Sheep leader";
 
 	B_SetVisuals_Hammel();
 	Npc_SetToFistMode(self);
@@ -231,7 +231,7 @@ INSTANCE Sheep_Opolos_03	(Mst_Default_Sheep)
 
 INSTANCE Hammel_Lobart_01	(Mst_Default_Sheep)
 {
-	name	= "Hammel";
+	name	= "mutton";
 
 	B_SetVisuals_Hammel();
 	Npc_SetToFistMode(self);
@@ -242,7 +242,7 @@ INSTANCE Hammel_Lobart_01	(Mst_Default_Sheep)
 
 INSTANCE Hammel_Lobart_02	(Mst_Default_Sheep)
 {
-	name	= "Hammel";
+	name	= "mutton";
 
 	B_SetVisuals_Hammel();
 	Npc_SetToFistMode(self);
@@ -253,7 +253,7 @@ INSTANCE Hammel_Lobart_02	(Mst_Default_Sheep)
 
 INSTANCE Hammel_Lobart_03	(Mst_Default_Sheep)
 {
-	name	= "Hammel";
+	name	= "mutton";
 
 	B_SetVisuals_Hammel();
 	Npc_SetToFistMode(self);
@@ -264,7 +264,7 @@ INSTANCE Hammel_Lobart_03	(Mst_Default_Sheep)
 
 INSTANCE Hammel_Lobart_04	(Mst_Default_Sheep)
 {
-	name	= "Hammel";
+	name	= "mutton";
 
 	B_SetVisuals_Hammel();
 	Npc_SetToFistMode(self);
@@ -419,7 +419,7 @@ INSTANCE Sheep_Lobart_16	(Mst_Default_Sheep)
 
 INSTANCE Hammel_Emma_01	(Mst_Default_Sheep)
 {
-	name	= "Hammel";
+	name	= "mutton";
 
 	B_SetVisuals_Hammel();
 	Npc_SetToFistMode(self);
@@ -430,7 +430,7 @@ INSTANCE Hammel_Emma_01	(Mst_Default_Sheep)
 
 INSTANCE Hammel_Emma_02	(Mst_Default_Sheep)
 {
-	name	= "Hammel";
+	name	= "mutton";
 
 	B_SetVisuals_Hammel();
 	Npc_SetToFistMode(self);

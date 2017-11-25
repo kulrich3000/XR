@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Ghorim_Hi_Condition()
 
 FUNC VOID Info_Mod_Ghorim_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ghorim_Hi_02_00"); //Du lebst noch? Danke nochmal, dass du mir damals geholfen hast.
+	AI_Output(self, hero, "Info_Mod_Ghorim_Hi_02_00"); //You're still alive? Thanks again for helping me out back then.
 };
 
 INSTANCE Info_Mod_Ghorim_Sumpfmensch (C_INFO)
@@ -41,17 +41,17 @@ FUNC INT Info_Mod_Ghorim_Sumpfmensch_Condition()
 
 FUNC VOID Info_Mod_Ghorim_Sumpfmensch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ghorim_Sumpfmensch_02_00"); //Pssst. Es geht gleich los! Willst du dich auch setzen?
+	AI_Output(self, hero, "Info_Mod_Ghorim_Sumpfmensch_02_00"); //Shh. Shh. It's about to start! You wanna sit down, too?
 
 	Info_ClearChoices	(Info_Mod_Ghorim_Sumpfmensch);
 
-	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "Nein.", Info_Mod_Ghorim_Sumpfmensch_B);
-	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "Ja.", Info_Mod_Ghorim_Sumpfmensch_A);
+	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "No.", Info_Mod_Ghorim_Sumpfmensch_B);
+	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "Yeah.", Info_Mod_Ghorim_Sumpfmensch_A);
 };
 
 FUNC VOID Info_Mod_Ghorim_Sumpfmensch_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ghorim_Sumpfmensch_B_15_00"); //Nein.
+	AI_Output(hero, self, "Info_Mod_Ghorim_Sumpfmensch_B_15_00"); //No.
 
 	Info_ClearChoices	(Info_Mod_Ghorim_Sumpfmensch);
 
@@ -60,7 +60,7 @@ FUNC VOID Info_Mod_Ghorim_Sumpfmensch_B()
 
 FUNC VOID Info_Mod_Ghorim_Sumpfmensch_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ghorim_Sumpfmensch_A_15_00"); //Ja.
+	AI_Output(hero, self, "Info_Mod_Ghorim_Sumpfmensch_A_15_00"); //Yeah.
 
 	Info_ClearChoices	(Info_Mod_Ghorim_Sumpfmensch);
 
@@ -75,7 +75,7 @@ INSTANCE Info_Mod_Ghorim_Woher (C_INFO)
 	information	= Info_Mod_Ghorim_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie kommst du eigentlich in dieses Lager?";
+	description	= "How did you get into this camp?";
 };
 
 FUNC INT Info_Mod_Ghorim_Woher_Condition()
@@ -88,10 +88,10 @@ FUNC INT Info_Mod_Ghorim_Woher_Condition()
 
 FUNC VOID Info_Mod_Ghorim_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ghorim_Woher_15_00"); //Wie kommst du eigentlich in dieses Lager?
-	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_01"); //Nachdem ich in Khorinis erfolglos mein Wirtshaus geführt habe, musste ich wegen Goldmangel den Wein mit Wasser verdünnen.
-	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_02"); //Als das rauskam haben sie mich in die Kolonie geworfen.
-	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_03"); //Ich war erst Buddler, hab mich dann aber doch der Bruderschaft angeschlossen, da das Leben hier wesentlich angenehmer ist.
+	AI_Output(hero, self, "Info_Mod_Ghorim_Woher_15_00"); //How did you get into this camp?
+	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_01"); //After I ran my inn in Khorinis without success, I had to dilute the wine with water because of lack of gold.
+	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_02"); //When that came out, they threw me in the colony.
+	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_03"); //I was first a Buddler, but then joined the Brotherhood, because life here is much more pleasant.
 };
 
 INSTANCE Info_Mod_Ghorim_Pickpocket (C_INFO)

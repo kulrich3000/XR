@@ -18,14 +18,14 @@ FUNC INT Info_Mod_Granmar_Hi_Condition()
 
 FUNC VOID Info_Mod_Granmar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_00"); //Halt - was willst du hier?
-	AI_Output(hero, self, "Info_Mod_Granmar_Hi_15_01"); //Ich weiß noch nicht genau. Was gibt’s hier denn?
-	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_02"); //Na ja, wenn du für uns arbeiten willst, solltest du zu Ole gehen.
-	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_03"); //Ansonsten könntest du dir noch bei Bernd ein paar Sachen kaufen. Das Minental ist ein hartes Pflaster und unvorbereitet sollte man sich nicht zu tief hinein wagen.
-	AI_Output(hero, self, "Info_Mod_Granmar_Hi_15_04"); //Mhm, danke für den Tipp. Aber was seid ihr für eine Gruppierung?
-	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_05"); //Wir sind die königliche Garde und unterstehen direkt dem Befehl Rhobars.
-	AI_Output(hero, self, "Info_Mod_Granmar_Hi_15_06"); //Gehört ihr zu den Paladinen in Khorinis?
-	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_07"); //Nicht direkt, auch wenn wir hoffentlich die gleichen Ziele verfolgen. Ole kann dir dazu sicher mehr sagen.
+	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_00"); //What are you doing here?
+	AI_Output(hero, self, "Info_Mod_Granmar_Hi_15_01"); //I'm not sure yet. What's going on here?
+	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_02"); //Well, if you want to work for us, you should go see Ole.
+	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_03"); //Otherwise you could buy some things from Bernd. The Minental valley is a hard place and you should not venture too deep into it if you are not prepared.
+	AI_Output(hero, self, "Info_Mod_Granmar_Hi_15_04"); //Mm, thanks for the tip. But what kind of grouping are you?
+	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_05"); //We are the royal guard and report directly to the order of Rhobar.
+	AI_Output(hero, self, "Info_Mod_Granmar_Hi_15_06"); //Do you belong to the paladins in Khorinis?
+	AI_Output(self, hero, "Info_Mod_Granmar_Hi_26_07"); //Not directly, although hopefully we are pursuing the same goals. I'm sure Ole can tell you more about this.
 };
 
 INSTANCE Info_Mod_Granmar_Aufgabe (C_INFO)
@@ -36,7 +36,7 @@ INSTANCE Info_Mod_Granmar_Aufgabe (C_INFO)
 	information	= Info_Mod_Granmar_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ole schickt mich, ich soll dir bei der Sache mit der Mine helfen!";
+	description	= "Ole sent me to help you with that mine thing!";
 };
 
 FUNC INT Info_Mod_Granmar_Aufgabe_Condition()
@@ -49,22 +49,22 @@ FUNC INT Info_Mod_Granmar_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Granmar_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Granmar_Aufgabe_15_00"); //Ole schickt mich, ich soll dir bei der Sache mit der Mine helfen!
-	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_01"); //Sehr schön, Hilfe kann ich brauchen!
-	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_02"); //Ich soll mich um die komischen Steinmonster in der Mine kümmern, allerdings sind diese Viecher gegen normale Waffen resistent.
-	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_03"); //Der einzige Hinweis steht in einem Buch, welches ich von den Wassermagiern erworben habe.
-	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_04"); //Anscheinend sind diese Steinmonster nur mit Hilfe von erzüberzogenen Keulen besiegbar.
-	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_05"); //Ich habe mit Heidrek auch schon darüber gesprochen und er meint, dass man dafür ein bestimmtes Holz braucht, das nur in der Nähe von Trollen zu finden ist.
-	AI_Output(hero, self, "Info_Mod_Granmar_Aufgabe_15_06"); //Und wo ist hier in der Nähe ein Troll?
-	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_07"); //Soweit ich weiß, gibt es hier sogar einen Trollkessel, in der Nähe des Banditenlagers.
-	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_08"); //Allerdings ist mir mein gutes Schwert abhanden gekommen und Heidrek konnte mir noch kein neues anfertigen.
-	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_09"); //Ohne mein Schwert werde ich ganz sicher nicht in die Nähe von Trollen gehen.
-	AI_Output(hero, self, "Info_Mod_Granmar_Aufgabe_15_10"); //Na gut, dann werde ich eben danach suchen, aber dafür will ich auch eine angemessene Belohnung.
-	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_11"); //Glaub mir, wenn du das Holz findest, wirst du es nicht bereuen.
+	AI_Output(hero, self, "Info_Mod_Granmar_Aufgabe_15_00"); //Ole sent me to help you with that mine thing!
+	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_01"); //Very nice, I could use some help!
+	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_02"); //I'm supposed to take care of the strange stone monsters in the mine, but these creatures are resistant to normal weapons.
+	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_03"); //The only clue is in a book I bought from the Water Magicians.
+	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_04"); //Apparently, these stone monsters can only be defeated with the help of ore covered clubs.
+	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_05"); //I've already talked to Heidrek about it and he thinks that you need a certain type of wood that is only near trolls.
+	AI_Output(hero, self, "Info_Mod_Granmar_Aufgabe_15_06"); //And where's a troll near here?
+	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_07"); //As far as I know, there's even a troll cauldron near the bandit camp.
+	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_08"); //But I lost my good sword and Heidrek couldn't make a new one.
+	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_09"); //Without my sword, I certainly will not go near trolls.
+	AI_Output(hero, self, "Info_Mod_Granmar_Aufgabe_15_10"); //All right, I'll look for it, but I want an appropriate reward.
+	AI_Output(self, hero, "Info_Mod_Granmar_Aufgabe_26_11"); //Believe me, if you find the wood, you won't regret it.
 
 	Log_CreateTopic	(TOPIC_MOD_KG_TROLLHOLZ, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KG_TROLLHOLZ, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Granmar sollte die Steinmonster in der Mine töten, doch benötigt er dafür eine erzüberzogene Keule. Dafür ist jedoch ein Stück Trollholz nötig, welches ich nun besorgen darf. Vielleicht finde ich im Trollkessel beim Banditenlager ein Stück von diesem Holz ...");
+	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Granmar was to kill the stone monsters in the mine, but he needed an ore plated club. But for this a piece of trollwood is needed, which I am allowed to get now. Maybe I'll find a piece of this wood in the troll cauldron at the bandit camp...");
 
 	Wld_InsertItem	(ItMi_Trollholz, "FP_ITEM_TROLLHOLZ");
 
@@ -81,7 +81,7 @@ INSTANCE Info_Mod_Granmar_Trollholz (C_INFO)
 	information	= Info_Mod_Granmar_Trollholz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Holz gefunden.";
+	description	= "I found the wood.";
 };
 
 FUNC INT Info_Mod_Granmar_Trollholz_Condition()
@@ -95,10 +95,10 @@ FUNC INT Info_Mod_Granmar_Trollholz_Condition()
 
 FUNC VOID Info_Mod_Granmar_Trollholz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Granmar_Trollholz_15_00"); //Ich habe das Holz gefunden. Was machen wir jetzt damit?
-	AI_Output(self, hero, "Info_Mod_Granmar_Trollholz_26_01"); //Sehr gut, bring es gleich zu Heidrek, er wird daraus eine Keule machen.
+	AI_Output(hero, self, "Info_Mod_Granmar_Trollholz_15_00"); //I found the wood. What do we do with it now?
+	AI_Output(self, hero, "Info_Mod_Granmar_Trollholz_26_01"); //Very well, take it right away to Heidrek, he'll make a club out of it.
 
-	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Ich soll das Trollholz zu Heidrek bringen, damit er daraus die Keule herstellen kann.");
+	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "I'm to take the trollwood to Heidrek so that he can make the club out of it.");
 
 	B_GivePlayerXP	(100);
 };
@@ -111,7 +111,7 @@ INSTANCE Info_Mod_Granmar_Trollholz2 (C_INFO)
 	information	= Info_Mod_Granmar_Trollholz2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Keulen sind fertig!";
+	description	= "The clubs are done!";
 };
 
 FUNC INT Info_Mod_Granmar_Trollholz2_Condition()
@@ -125,14 +125,14 @@ FUNC INT Info_Mod_Granmar_Trollholz2_Condition()
 
 FUNC VOID Info_Mod_Granmar_Trollholz2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Granmar_Trollholz2_15_00"); //Die Keulen sind fertig!
+	AI_Output(hero, self, "Info_Mod_Granmar_Trollholz2_15_00"); //The clubs are done!
 
 	B_GiveInvItems	(hero, self, ItMw_GranmarKeule, 1);
 
-	AI_Output(self, hero, "Info_Mod_Granmar_Trollholz2_26_01"); //Perfekt, dann können wir ja bald auf die Jagd gehen.
-	AI_Output(self, hero, "Info_Mod_Granmar_Trollholz2_26_02"); //Sag mir Bescheid, sobald Hymir einverstanden ist.
+	AI_Output(self, hero, "Info_Mod_Granmar_Trollholz2_26_01"); //Perfect, then we can go hunting soon.
+	AI_Output(self, hero, "Info_Mod_Granmar_Trollholz2_26_02"); //Let me know as soon as Hymir agrees.
 
-	B_LogEntry_More	(TOPIC_MOD_KG_VORBEREITUNGEN, TOPIC_MOD_KG_TROLLHOLZ, "Granmars Probleme sind gelöst.", "Granmar ist nun bereit die Mine zu stürmen. Ich soll ihm dann Bescheid geben, wenn Hymir einverstanden ist.");
+	B_LogEntry_More	(TOPIC_MOD_KG_VORBEREITUNGEN, TOPIC_MOD_KG_TROLLHOLZ, "Granmar's problems are solved.", "Granmar is now ready to storm the mine. I'm supposed to let him know if Hymir agrees.");
 	B_SetTopicStatus	(TOPIC_mOD_KG_TROLLHOLZ, LOG_SUCCESS);
 
 	B_GivePlayerXP	(150);
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Granmar_PreLehrer (C_INFO)
 	information	= Info_Mod_Granmar_PreLehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie schaut es aus? Kannst du mir zeigen, wie ich ein besserer Kämpfer werde?";
+	description	= "What's it look like? Can you show me how to be a better fighter?";
 };
 
 FUNC INT Info_Mod_Granmar_PreLehrer_Condition()
@@ -161,9 +161,9 @@ FUNC INT Info_Mod_Granmar_PreLehrer_Condition()
 
 FUNC VOID Info_Mod_Granmar_PreLehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Granmar_PreLehrer_15_00"); //Wie schaut es aus? Kannst du mir zeigen, wie ich ein besserer Kämpfer werde?
-	AI_Output(self, hero, "Info_Mod_Granmar_PreLehrer_26_01"); //Ich könnte dir schon was beibringen, solange ich allerdings keine gescheite Waffe habe, werd ich mir die Mühe nicht machen.
-	AI_Output(self, hero, "Info_Mod_Granmar_PreLehrer_26_02"); //Frag mich noch mal, wenn Heidrek mein neues Schwert fertig hat.
+	AI_Output(hero, self, "Info_Mod_Granmar_PreLehrer_15_00"); //What's it look like? Can you show me how to be a better fighter?
+	AI_Output(self, hero, "Info_Mod_Granmar_PreLehrer_26_01"); //I could teach you something, but as long as I don't have a good gun, I won't bother.
+	AI_Output(self, hero, "Info_Mod_Granmar_PreLehrer_26_02"); //Ask me again, if Heidrek has finished my new sword.
 };
 
 INSTANCE Info_Mod_Granmar_Lehrer (C_INFO)
@@ -174,7 +174,7 @@ INSTANCE Info_Mod_Granmar_Lehrer (C_INFO)
 	information	= Info_Mod_Granmar_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, kannst du mir jetzt zeigen, wie ich besser werde?";
+	description	= "Now can you show me how to get better?";
 };
 
 FUNC INT Info_Mod_Granmar_Lehrer_Condition()
@@ -189,11 +189,11 @@ FUNC INT Info_Mod_Granmar_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Granmar_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Granmar_Lehrer_15_00"); //Und, kannst du mir jetzt zeigen, wie ich besser werde?
-	AI_Output(self, hero, "Info_Mod_Granmar_Lehrer_26_01"); //Ja, versprochen ist versprochen. Wenn du willst, kann ich dir den Umgang mit dem Zweihänder beibringen.
+	AI_Output(hero, self, "Info_Mod_Granmar_Lehrer_15_00"); //Now can you show me how to get better?
+	AI_Output(self, hero, "Info_Mod_Granmar_Lehrer_26_01"); //Yeah, promise is promise. If you want, I can teach you how to handle the two-handed guy.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KG, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_KG, "Granmar kann mir den Umgang mit Zweihändern beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_KG, "Granmar can teach me how to use two-handed people.");
 };
 
 INSTANCE Info_Mod_Granmar_Lernen (C_INFO)
@@ -204,7 +204,7 @@ INSTANCE Info_Mod_Granmar_Lernen (C_INFO)
 	information	= Info_Mod_Granmar_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "I want to learn.";
 };
 
 FUNC INT Info_Mod_Granmar_Lernen_Condition()
@@ -218,7 +218,7 @@ FUNC INT Info_Mod_Granmar_Lernen_Condition()
 
 FUNC VOID Info_Mod_Granmar_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Granmar_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Granmar_Lernen_15_00"); //I want to learn.
 
 	Info_ClearChoices	(Info_Mod_Granmar_Lernen);
 

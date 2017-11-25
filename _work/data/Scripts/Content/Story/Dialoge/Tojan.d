@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Tojan_Hi_Condition()
 
 FUNC VOID Info_Mod_Tojan_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tojan_Hi_15_00"); //Endlich. Wir haben lange gewartet, Bruder. Doch endlich bist du da.
-	AI_Output(hero, self, "Info_Mod_Tojan_Hi_15_01"); //Pyrokar schickt mich. Ich habe hier ein Paket voller Tränke und eins voller Nahrung.
-	AI_Output(self, hero, "Info_Mod_Tojan_Hi_15_02"); //Sehr gut. Bring das Nahrungspaket zu Furgas. Du findest ihn im Turm.
-	AI_Output(hero, self, "Info_Mod_Tojan_Hi_15_03"); //Und was soll ich mit den Tränken machen?
-	AI_Output(self, hero, "Info_Mod_Tojan_Hi_15_04"); //Verteile sie an die Magier und Paladine auf der Außenmauer. Die Manatränke für die Magier und die Heiltränke für die Paladine.
-	AI_Output(self, hero, "Info_Mod_Tojan_Hi_15_05"); //Es sollte genau aufgehen. Und jetzt beeil dich, lass unsere Brüder und Söhne nicht länger warten.
+	AI_Output(self, hero, "Info_Mod_Tojan_Hi_15_00"); //Finally. We've waited a long time, brother. But at last you're here.
+	AI_Output(hero, self, "Info_Mod_Tojan_Hi_15_01"); //Pyrokar sent me. I've got a package of potions and food here.
+	AI_Output(self, hero, "Info_Mod_Tojan_Hi_15_02"); //Very good. Very good. Take the food package to Furgas. You'll find him in the tower.
+	AI_Output(hero, self, "Info_Mod_Tojan_Hi_15_03"); //And what am I supposed to do with the potions?
+	AI_Output(self, hero, "Info_Mod_Tojan_Hi_15_04"); //Distribute them to the magicians and paladins on the outer wall. The mana potions for the magicians and the healing potions for the paladins.
+	AI_Output(self, hero, "Info_Mod_Tojan_Hi_15_05"); //It was supposed to open precisely. Now hurry up, don't keep our brothers and sons waiting any longer.
 
 	Npc_RemoveInvItems	(hero, ItMi_PAT_Trank, 1);
 
@@ -38,7 +38,7 @@ INSTANCE Info_Mod_Tojan_Trank (C_INFO)
 	information	= Info_Mod_Tojan_Trank_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Tränke sind nicht aufgegangen.";
+	description	= "The potions didn't work.";
 };
 
 FUNC INT Info_Mod_Tojan_Trank_Condition()
@@ -51,28 +51,28 @@ FUNC INT Info_Mod_Tojan_Trank_Condition()
 
 FUNC VOID Info_Mod_Tojan_Trank_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_00"); //Die Tränke sind nicht aufgegangen. Einer hat gefehlt.
-	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_01"); //Was? Das kann nicht sein!
-	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_02"); //Es ist aber so.
-	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_03"); //Wie sollte das ... Verdammt!
-	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_04"); //Sind die Tränke so teuer oder was ist so schlimm?
-	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_05"); //Das ist nicht der richtige Moment für Scherze! Verstehst du nicht was das heißt?
-	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_06"); //Patherion wurde infiltriert!
-	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_07"); //Ein Schwarzmagier? Hier im Kloster?
-	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_08"); //Ich kann es selbst kaum glauben. Du musst den Kerl finden.
-	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_09"); //Jetzt wo du es sagst, einer der Magier hat sich seltsam verhalten. Er war nicht wie die anderen auf der Mauer, sondern auf dem Podest.
-	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_10"); //Das muss er gewesen sein. Finde ihn Bruder. Hier, nimm diese Spruchrolle.
+	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_00"); //The potions didn't work. One was missing.
+	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_01"); //What? It can't be!
+	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_02"); //It's just the way it is.
+	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_03"); //How could this... Damn it!
+	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_04"); //Are the potions so expensive or what's so bad?
+	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_05"); //This is no time for jokes! Don't you see what that means?
+	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_06"); //Patherion has been infiltrated!
+	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_07"); //A black magician? Here in the monastery?
+	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_08"); //I can hardly believe it myself. You have to find this guy.
+	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_09"); //Now that you're saying it, one of the magicians has been acting strangely. He wasn't on the wall like the others, but on the pedestal.
+	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_10"); //That must have been him. Find him, brother. Here, take this scroll.
 
 	CreateInvItems	(self, ItSc_Laehmen, 1);
 	B_GiveInvItems	(self, hero, ItSc_Laehmen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_11"); //Mit ihr kannst du ihn lähmen, sobald du ihn gefunden hast.
-	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_12"); //Und wo soll ich anfangen ihn zu suchen?
-	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_13"); //Frag einen der Magier auf der Außenmauermauer. Vielleicht hat einer von ihnen bemerkt wohin er rannte.
+	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_11"); //You can use her to paralyze him as soon as you find him.
+	AI_Output(hero, self, "Info_Mod_Tojan_Trank_15_12"); //And where am I supposed to start looking for him?
+	AI_Output(self, hero, "Info_Mod_Tojan_Trank_15_13"); //Ask one of the mages on the outer wall. Maybe one of them noticed where he was running.
 
 	Log_CreateTopic	(TOPIC_MOD_FM_SM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FM_SM, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FM_SM, "Ich muss den Schwarzmagier finden, der sich unter den Feuermagier versteckt hält, und ihn dann mit der Spruchrolle, die Tojan mir gegeben hat, lähmen. Ich sollte zuerst mal auf der Mauer fragen, ob sie gesehen haben, wohin er geflohen ist.");
+	B_LogEntry	(TOPIC_MOD_FM_SM, "I have to find the black magician who is hiding under the fire magician and then paralyze him with the spell that Tojan has given me. I should ask on the wall first if they saw where he fled.");
 };
 
 INSTANCE Info_Mod_Tojan_Magier (C_INFO)
@@ -95,11 +95,11 @@ FUNC INT Info_Mod_Tojan_Magier_Condition()
 
 FUNC VOID Info_Mod_Tojan_Magier_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tojan_Magier_15_00"); //Der Feind ist oftmals näher als man denkt? Verflucht, ich glaube wir haben einen Verräter in unseren Reihen. Du musst ihn finden!
-	AI_Output(hero, self, "Info_Mod_Tojan_Magier_15_01"); //Wie soll ich ihn finden? Es könnte jeder sein!
-	AI_Output(self, hero, "Info_Mod_Tojan_Magier_15_02"); //Ich werde verbreiten, dass du ihn suchen sollst!
-	AI_Output(hero, self, "Info_Mod_Tojan_Magier_15_03"); //Und dann? Er wird sich mir nicht zeigen, wenn er weiß, dass ich ihn finden soll.
-	AI_Output(self, hero, "Info_Mod_Tojan_Magier_15_04"); //Oh doch! Er wird unvorsichtig werden und versuchen dich aus dem Weg zu schaffen. Er wird dir direkt ins Netz gehen! Und jetzt geh!
+	AI_Output(self, hero, "Info_Mod_Tojan_Magier_15_00"); //The enemy is often closer than you think? Damn, I think we have a traitor in our ranks. You have to find him!
+	AI_Output(hero, self, "Info_Mod_Tojan_Magier_15_01"); //How am I supposed to find him? It could be anyone!
+	AI_Output(self, hero, "Info_Mod_Tojan_Magier_15_02"); //I will spread the word that you shall seek him!
+	AI_Output(hero, self, "Info_Mod_Tojan_Magier_15_03"); //And then what? He won't show me if he knows I'm supposed to find him.
+	AI_Output(self, hero, "Info_Mod_Tojan_Magier_15_04"); //Yes, it is! He'll get careless and try to get you out of the way. He'll go straight into the net! Now go away!
 	
 	B_SetTopicStatus	(TOPIC_MOD_FM_SM, LOG_SUCCESS);
 
@@ -107,7 +107,7 @@ FUNC VOID Info_Mod_Tojan_Magier_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_FM_VERRAT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FM_VERRAT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Der Schwarzmagier hat angedeutet, dass sich ein weiterer Schwarzmagier in unseren Reihen befindet. Tojan hat mich damit beauftragt ihn zu finden.");
+	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "The black magician has indicated that there is another black magician in our ranks. Tojan hired me to find him.");
 };
 
 INSTANCE Info_Mod_Tojan_Beschwoerer (C_INFO)
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Tojan_Beschwoerer (C_INFO)
 	information	= Info_Mod_Tojan_Beschwoerer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich glaube, ich weiß, wer der Verräter ist.";
+	description	= "I think I know who the traitor is.";
 };
 
 FUNC INT Info_Mod_Tojan_Beschwoerer_Condition()
@@ -132,16 +132,16 @@ FUNC INT Info_Mod_Tojan_Beschwoerer_Condition()
 
 FUNC VOID Info_Mod_Tojan_Beschwoerer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tojan_Beschwoerer_15_00"); //Ich glaube, ich weiß, wer der Verräter ist.
-	AI_Output(self, hero, "Info_Mod_Tojan_Beschwoerer_15_01"); //Wirklich?
-	AI_Output(hero, self, "Info_Mod_Tojan_Beschwoerer_15_02"); //Einer der Magier namens Aaron.
-	AI_Output(self, hero, "Info_Mod_Tojan_Beschwoerer_15_03"); //Aaron? Wusste ich’s doch! Er kam mir gleich verdächtig vor.
-	AI_Output(self, hero, "Info_Mod_Tojan_Beschwoerer_15_04"); //Hier, nimm dieses Amulett. Sobald du Aaron überwältigt hast, benutze es, ich werde dann sofort zu dir kommen.
+	AI_Output(hero, self, "Info_Mod_Tojan_Beschwoerer_15_00"); //I think I know who the traitor is.
+	AI_Output(self, hero, "Info_Mod_Tojan_Beschwoerer_15_01"); //Really?
+	AI_Output(hero, self, "Info_Mod_Tojan_Beschwoerer_15_02"); //One of the magicians named Aaron.
+	AI_Output(self, hero, "Info_Mod_Tojan_Beschwoerer_15_03"); //Aaron? Didn't I know! He seemed suspicious to me.
+	AI_Output(self, hero, "Info_Mod_Tojan_Beschwoerer_15_04"); //Here, take this amulet. As soon as you've overpowered Aaron, use it, I'll come to you right away.
 
 	CreateInvItems	(self, ItAm_TojansAmulett, 1);
 	B_GiveInvItems	(self, hero, ItAm_TojansAmulett, 1);
 
-	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Tojan stimmt meinem Verdacht zu, dass Aaron der Verräter ist. Ich soll ihn überwältigen und dann das Amulett anlegen, dass er mir gegeben hat.");
+	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Tojan agrees with my suspicion that Aaron is the traitor. I am to overwhelm him and then put on the amulet that he has given me.");
 
 	Mod_FM_Foki = 3;
 };
@@ -166,35 +166,35 @@ FUNC INT Info_Mod_Tojan_Falle_Condition()
 
 FUNC VOID Info_Mod_Tojan_Falle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_00"); //(lacht) Du Narr!
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_01"); //Was meinst du damit?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_02"); //Ganz einfach, dass du gerade einen riesengroßen Fehler begangen hast!
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_03"); //Der Magier, den du gerade getötet hast, war kein Verräter.
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_04"); //Nein? Wer ist es dann?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_05"); //Ich bin es!
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_06"); //Du? Aber warum?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_07"); //Nun, mein Auftraggeber will euch tot sehen.
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_08"); //Aber warum uns?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_09"); //Nun, du warst eigentlich nur ein Mittel zum Zweck, ein Sündenbock. Man wird dich des Todes von Aaron beschuldigen.
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_10"); //Wer würde schon mich verdächtigen, der im letzten Moment versuchte ihn zu retten?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_11"); //Ich werde allen sagen, dass ich zu spät kam, um dich an Aarons Tod zu hindern und du mich auch töten wolltest und ich dich deshalb leider vernichten musste.
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_12"); //Außerdem wird niemand mehr einen Verräter suchen. DU bist ja schon tot. (lacht)
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_13"); //Und warum Aaron? Weshalb sollte ich ihn töten?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_14"); //Weil Aaron früher oder später eine Gefahr darstellen wird.
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_15"); //Wieso ausgerechnet er?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_16"); //Es ist das Blut, dass in seinen Adern fließt! Er ist mein Vater.
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_17"); //Dein Vater? Aber du bist doch viel älter als er?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_18"); //Du verstehst es immer noch nicht? Wir sind die letzen Nachfahren des Mannes, der dieses Kloster mit eigenen Händen erbaut hat!
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_19"); //Und warum sieht er viel Jünger aus als du?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_20"); //Er altert langsamer als ich, weil durch meine Adern auch das Blut meiner Mutter fließt.
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_21"); //Aber warum war Aron dann hier im Kloster nur ein gewöhnlicher Magier?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_22"); //Nun, meine Mutter ist sehr mächtig. Sie hat sein Gedächtnis gelöscht.
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_23"); //Dass er seinen Weg zurück zu den Innos-Magiern gefunden hat, hat auch uns gewundert.
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_24"); //Aber wer zum Teufel ist dann deine Mutter?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_25"); //(lacht) Sie ist die Mächtigste aller Hexen, Ihre Königin!
-	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_26"); //Die Hexenkönigin?
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_27"); //Nun, ich kann dich doch nicht dumm sterben lassen. Die Hexen sind schon seit langer Zeit Verbündete der Schwarzmagier.
-	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_28"); //Aber genug der Worte, jetzt wirst du meinem Vater in Beliars Reich folgen.
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_00"); //(laughs) You fool!
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_01"); //What do you mean?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_02"); //It's so easy that you just made a huge mistake!
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_03"); //The magician you just killed was not a traitor.
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_04"); //No? Then who is it?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_05"); //It's me!
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_06"); //You? But why?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_07"); //Well, my employer wants you dead.
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_08"); //But why us?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_09"); //Well, you were actually just a means to an end, a scapegoat. You'll be accused of Aaron's death.
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_10"); //Who would suspect me of trying to save him at the last minute?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_11"); //I will tell everyone that I came too late to prevent you from Aaron's death and that you wanted to kill me too, so I had to destroy you.
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_12"); //Besides, no one will ever look for a traitor again. You're already dead. (laughs)
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_13"); //And why Aaron? Why would I kill him?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_14"); //Because sooner or later, Aaron will be a danger.
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_15"); //Why him, of all people?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_16"); //It's the blood that flows in his veins! He's my father.
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_17"); //Your father? But aren't you much older than him?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_18"); //You still don't understand? We are the last descendants of the man who built this monastery with his own hands!
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_19"); //And why does he look so much younger than you?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_20"); //It ages more slowly than I do, because my mother's blood also flows through my veins.
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_21"); //But why was Aron here in the monastery just an ordinary magician?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_22"); //Well, my mother is very powerful. She erased his memory.
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_23"); //We were also surprised that he found his way back to the Innos magicians.
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_24"); //Then who the hell is your mother?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_25"); //(laughs) She is the most powerful of all witches, your queen!
+	AI_Output(hero, self, "Info_Mod_Tojan_Falle_15_26"); //The Witch Queen?
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_27"); //Well, I can't let you die stupidly. The witches have long been allies of the black mages.
+	AI_Output(self, hero, "Info_Mod_Tojan_Falle_15_28"); //But enough of the words, now you will follow my father in Beliar's kingdom.
 
 	Mod_FM_Foki = 8;
 

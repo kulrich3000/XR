@@ -17,22 +17,22 @@ FUNC INT Info_Mod_Argez_IR_Hi_Condition()
 FUNC VOID Info_Mod_Argez_IR_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_00"); //Argez?
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_01"); //Ja, entschuldige mein ungeladenes Erscheinen.
-	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_02"); //Was, wie ...?
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_03"); //Nun, ich hielt mich im Lagerraum verborgen. Ich musste euch einfach auf dieser Reise begleiten.
-	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_04"); //Das Bedürfnis, auf diese abscheuliche, finstere Insel mitzukommen?
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_05"); //Frag nicht wieso. Ich kann es auch nicht genau sagen ...
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_06"); //Es ist einerseits ein furchtbarer Ort, voller abscheulicher Geschöpfe Bosheit, den ich für gewöhnlich nie betreten wollte ... aber andererseits ...
-	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_07"); //Ja, weißt du etwas darüber?
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_08"); //Nun, es erscheint es mir manches so vertraut ... so viele Bruchstücke von Sinneseindrücken und Erinnerungen, die auf mich eindringen ...
-	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_09"); //Was ist?
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_10"); //Ich ... es ist so viel was meinen Geist auf einmal durchdringt ... Eindrücke, Bilder, Stimmen ... es ...
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_01"); //Yeah, excuse my uninvited appearance.
+	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_02"); //What, like...?
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_03"); //Well, I was hiding in the storage room. I just had to go with you on this trip.
+	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_04"); //The need to come to this despicable, dark island?
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_05"); //Don't ask why. I can't say for sure either....
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_06"); //On the one hand, it is a terrible place, full of abominable creatures of wickedness, which I usually never wanted to enter... but then again...
+	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_07"); //Yeah, you know anything about that?
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_08"); //Well, it seems so familiar to me... so many fragments of sensations and memories that invade me....
+	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_09"); //What is it?
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_10"); //l-- it's so much that penetrates my mind at once... Impressions, pictures, voices.... it...
 
 	AI_PlayAni  (self, "T_MAGRUN_2_HEASHOOT");
 
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_11"); //Der Weg, der sich offenbart durch die Hände zweier ... das, was zu verbinden scheint und doch trennen wird ...
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_12"); //... zur rechten und zur linken wird sich entscheiden, ob in Blut getränkt oder rein, wie Quellwasser ...
-	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_13"); //Was hat das alles zu bedeu ...
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_11"); //The path that is revealed by the hands of two... that which seems to connect and yet will separate...
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Hi_37_12"); //... to the right and left will decide whether soaked in blood or pure, like spring water....
+	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_13"); //What does all this mean?
 
 	AI_PlayAni  (self, "T_HEASHOOT_2_STAND");
 
@@ -42,7 +42,7 @@ FUNC VOID Info_Mod_Argez_IR_Hi_Info()
 
 	AI_TurnToNpc	(hero, Mod_7458_NONE_Jack_IR);
 
-	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_14"); //Verdammt, er ist ohnmächtig.
+	AI_Output(hero, self, "Info_Mod_Argez_IR_Hi_15_14"); //Damn it, he's passed out.
 };
 
 INSTANCE Info_Mod_Argez_IR_Bridge (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Argez_IR_Bridge (C_INFO)
 	information	= Info_Mod_Argez_IR_Bridge_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Argez! Du bist bei Bewusstsein?";
+	description	= "Argez! You're conscious?";
 };
 
 FUNC INT Info_Mod_Argez_IR_Bridge_Condition()
@@ -66,11 +66,11 @@ FUNC INT Info_Mod_Argez_IR_Bridge_Condition()
 
 FUNC VOID Info_Mod_Argez_IR_Bridge_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_IR_Bridge_15_00"); //Argez! Du bist bei Bewusstsein? Und die Brücke wieder begehbar. War das dein Werk?
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Bridge_37_01"); //Ja, es ist mir gelungen, den Mechanismus für die Brücke magisch auszulösen ... und ich spüre, dass die Präsenz des Dämonen erloschen ist.
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Bridge_37_02"); //Im Augenblick, als du ich ihn erschlugst, erlangte ich das Bewusstsein zurück.
-	AI_Output(self, hero, "Info_Mod_Argez_IR_Bridge_37_03"); //Nun ist es noch mein einziger Wunsch, die Insel schnell zu verlassen.
-	AI_Output(hero, self, "Info_Mod_Argez_IR_Bridge_15_04"); //Ja, davon soll uns nichts mehr abhalten. Zurück zum Schiff.
+	AI_Output(hero, self, "Info_Mod_Argez_IR_Bridge_15_00"); //Argez! You're conscious? And the bridge is accessible again. Was that your doing?
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Bridge_37_01"); //Yes, I have succeeded in magically triggering the mechanism for the bridge... and I sense that the presence of the demon has been extinguished.
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Bridge_37_02"); //The moment you killed him, I regained consciousness.
+	AI_Output(self, hero, "Info_Mod_Argez_IR_Bridge_37_03"); //Now it is still my only wish to leave the island quickly.
+	AI_Output(hero, self, "Info_Mod_Argez_IR_Bridge_15_04"); //Yeah, nothing's going to stop us. Back to the ship.
 
 	AI_StopProcessInfos	(self);
 

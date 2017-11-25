@@ -15,12 +15,12 @@ FUNC INT Info_Mod_HofstaatRaufbold_HAL_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_HAL_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_HAL_Hi_13_00"); //Hm?
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_HAL_Hi_15_01"); //Raufbold?! Was machst du hier? Hast du auch die Orakeldroge genommen?
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_HAL_Hi_13_02"); //Nein, ich bin in den Fluss gefallen ... Sauerstoffmangel.
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_HAL_Hi_15_03"); //Was hat das alles zu bedeuten?
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_HAL_Hi_13_04"); //Das ist eine Prüfung! Dies hier muss eine OFFENBARUNG sein! Doch eine Prüfung steht uns noch bevor.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_HAL_Hi_13_05"); //Ein letztes Duell zwischen uns! Der Gewinner wird die Antwort erhalten! Der Verlierer wird in SCHAAAAAAM ersaufen! Los jetzt!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_HAL_Hi_13_00"); //Huh?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_HAL_Hi_15_01"); //Raufbold?! What are you doing here? Did you take the oracle drug, too?
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_HAL_Hi_13_02"); //No, I fell into the river.... Oxygen deficiency.
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_HAL_Hi_15_03"); //What's all this about?
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_HAL_Hi_13_04"); //This is a test! This must be an REVELATION! But we still have a test ahead of us.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_HAL_Hi_13_05"); //One last duel between us! The winner will receive the answer! The loser will drown in SCHAAAAAAAAM! Let's go now!
 
 	AI_StopProcessInfos	(self);
 

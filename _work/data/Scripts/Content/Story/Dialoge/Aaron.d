@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Aaron_Hi (C_INFO)
 	information	= Info_Mod_Aaron_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, fleißig am Beten?";
+	description	= "Well, hard at praying?";
 };
 
 FUNC INT Info_Mod_Aaron_Hi_Condition()
@@ -22,41 +22,41 @@ FUNC INT Info_Mod_Aaron_Hi_Condition()
 
 FUNC VOID Info_Mod_Aaron_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_00"); //Na, fleißig am Beten?
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_01"); //Verfluchter Beliar-Anhänger! Lange habe ich versucht dich zu töten, und jetzt kommst du zu mir in die Kirche?
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_02"); //Ich werde diesen heiligen Ort nicht mit deinem Blut entweihen!
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_03"); //Du nennst mich Beliar-Anhänger? Wie kommst du darauf, dass ich Beliar angehöre?
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_04"); //(überraschtes schweigen) ...
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_05"); //Kann es sein, dass Tojan dir das gesagt hat?
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_06"); //Woher weißt du das?
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_07"); //Nun, sagen wir es so: Auch ich sollte jemanden töten. Und zwar in Tojans Auftrag.
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_08"); //Und das bist du.
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_09"); //(überrascht) Was?
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_10"); //Tojan treibt ein falsches Spiel mit uns.
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_11"); //Du versuchst nur mich durcheinander zu bringen, um mir dann dein Messer durch den Rücken rammen zu können!
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_12"); //Glaubst du wirklich, ein Schwarzmagier würde den heiligsten aller Orte der Innoskirche betreten?
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_13"); //HA! Ich wusste es. Du musst ein Schwarzmagier sein. Jeder unserer Brüder weiß, dass nicht das hier der heiligste Ort der Innoskriche ist. Es ist ...
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_14"); //Die Kapelle auf der Anhöhe. Ich bin durch diese Kapelle gekommen.
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_15"); //Du lügst doch!
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_16"); //Hier. Ist das Beweis genug?
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_00"); //Well, hard at praying?
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_01"); //Damn Beliar pendant! For a long time I tried to kill you, and now you come to church with me?
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_02"); //I will not desecrate this holy place with your blood!
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_03"); //You call me Beliar Pendant? What makes you think I belong to Beliar?
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_04"); //(surprised silence)
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_05"); //Is it possible Tojan told you that?
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_06"); //How do you know that?
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_07"); //Well, let's put it this way: I too should kill someone. On Tojan's behalf.
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_08"); //And that's you.
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_09"); //(surprised) What?
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_10"); //Tojan's playing the wrong game with us.
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_11"); //You're just trying to mess with me so you can ram your knife through my back!
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_12"); //Do you really think a black magician would enter the holiest of all the places of the Innos Church?
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_13"); //HA! I knew it. You must be a black magician. Every one of our brothers knows that this is not the most sacred place of the Innos Church. It's....
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_14"); //The chapel on the hill. I came through this chapel.
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_15"); //You're lying!
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_16"); //Here. Is that proof enough?
 
 	Npc_RemoveInvItems	(hero, ItWr_PatherionNachricht1, 1);
 	Npc_RemoveInvItems	(hero, ItWr_PatherionNachricht2, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_17"); //... mein Tagebuch? Du warst tatsächlich dort. Dann kannst du kein Beliar-Anhänger sein. Dann ... wurde das Kloster nicht infiltriert?
-	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_18"); //Doch, ich fürchte schon. Aber von jemandem, den ich nicht verdächtigt hätte.
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_19"); //Du meinst ...
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_17"); //... my diary? You were actually there. Then you can't be a Beliar pendant. Then.... Wasn't the monastery infiltrated?
+	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_18"); //Yes, I'm afraid so. But someone I wouldn't have suspected.
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_19"); //You mean...
 	AI_Output(hero, self, "Info_Mod_Aaron_Hi_15_20"); //... Tojan.
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_21"); //Du hast Recht. Es passt alles.
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_21"); //You're right. You're right. Everything fits.
 
 	B_Say	(hero, self, "$WASMACHENWIRJETZT");
 
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_22"); //Wir werden ihm eine Falle stellen. Komm morgen Nacht auf den Marktplatz.
-	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_23"); //Vorher solltest du allerdings noch zu Tojan gehen und ihn auf mich hinweisen.
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_22"); //We're gonna set him up. Come to the marketplace tomorrow night.
+	AI_Output(self, hero, "Info_Mod_Aaron_Hi_11_23"); //Before that you should go to Tojan and point him out to me.
 
-	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Aaron ist unschuldig. Er wurde von Tojan beauftragt, mich zu töten. Es scheint ganz so, als wäre Tojan der eigentliche Verräter. Morgen Nacht treffe ich mich mit Aaron auf dem Marktplatz. Vorher soll ich noch zu Tojan und ihn auf Aaron aufmerksam machen.");
+	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Aaron is innocent. He was hired by Tojan to kill me. It seems that Tojan is the real traitor. I'm meeting Aaron at the marketplace tomorrow night. I'm supposed to call Tojan and Aaron's attention to him first.");
 
 	AI_StopProcessInfos	(self);
 
@@ -84,20 +84,20 @@ FUNC INT Info_Mod_Aaron_Falle_Condition()
 
 FUNC VOID Info_Mod_Aaron_Falle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_Falle_11_00"); //Da bist du ja!
+	AI_Output(self, hero, "Info_Mod_Aaron_Falle_11_00"); //There you are!
 
 	B_Say	(hero, self, "$WASMACHENWIRJETZT");
 
-	AI_Output(self, hero, "Info_Mod_Aaron_Falle_11_01"); //Wir werden aus Tojan herauskriegen, weswegen er hier im Kloster ist.
-	AI_Output(hero, self, "Info_Mod_Aaron_Falle_15_02"); //Und wie willst du das anstellen?
-	AI_Output(self, hero, "Info_Mod_Aaron_Falle_11_03"); //Mit einem Trick. Wir spielen ihm vor, dass du mich getötet hast.
-	AI_Output(hero, self, "Info_Mod_Aaron_Falle_15_04"); //Und dann rufe ich ihn mit dem Amulett, das er mir gegeben hat. Könnte funktionieren.
+	AI_Output(self, hero, "Info_Mod_Aaron_Falle_11_01"); //We'll find out from Tojan why he's here in the monastery.
+	AI_Output(hero, self, "Info_Mod_Aaron_Falle_15_02"); //And how are you gonna do that?
+	AI_Output(self, hero, "Info_Mod_Aaron_Falle_11_03"); //With a trick. We'll play to him that you killed me.
+	AI_Output(hero, self, "Info_Mod_Aaron_Falle_15_04"); //And then I call him with the amulet he gave me. Could work.
 
 	AI_StopProcessInfos	(self);
 
 	Mod_FM_Foki = 5;
 
-	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Ich muss nun das Amulett anlegen, um Tojan herbeizurufen.");
+	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "I must now put on the amulet to summon Tojan.");
 };
 
 INSTANCe Info_Mod_Aaron_KillTojan (C_INFO)
@@ -120,7 +120,7 @@ FUNC INT Info_Mod_Aaron_KillTojan_Condition()
 
 FUNC VOID Info_Mod_Aaron_KillTojan_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_KillTojan_11_00"); //Geh zur Seite, ich werde ihn jetzt töten!
+	AI_Output(self, hero, "Info_Mod_Aaron_KillTojan_11_00"); //Move aside, I'll kill him now!
 
 	AI_StopProcessInfos	(self);
 
@@ -155,23 +155,23 @@ FUNC INT Info_Mod_Aaron_TojanDead_Condition()
 
 FUNC VOID Info_Mod_Aaron_TojanDead_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_00"); //Es stimmt ... Er war mein Sohn.
-	AI_Output(hero, self, "Info_Mod_Aaron_TojanDead_15_01"); //Dann bist du Ragons Sohn?
-	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_02"); //Ja ... Und mein Name ist nicht Aaron, sondern Garan.
-	AI_Output(hero, self, "Info_Mod_Aaron_TojanDead_15_03"); //Und die Hexenkönigin?
-	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_04"); //Ich kann mich nicht genau an sie erinnern ... Irgendetwas fehlt noch in meinem Gedächtnis ... Doch das ist jetzt unwichtig.
-	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_05"); //Nun muss ich an meinen Platz in der Innoskirche zurückkehren. Ich werde mit meinen vier Brüdern die Barriere zerstören.
-	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_06"); //Ich weiß nicht, wie ich dir jemals danken kann!
+	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_00"); //It's true.... He was my son.
+	AI_Output(hero, self, "Info_Mod_Aaron_TojanDead_15_01"); //Then you're Ragon's son?
+	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_02"); //Yes... And my name is not Aaron, it's Garan.
+	AI_Output(hero, self, "Info_Mod_Aaron_TojanDead_15_03"); //And the Witch Queen?
+	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_04"); //I don't exactly remember her.... Something is still missing in my memory.... But that doesn't matter now.
+	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_05"); //Now I must return to my place in the Innos Church. I will destroy the barrier with my four brothers.
+	AI_Output(self, hero, "Info_Mod_Aaron_TojanDead_11_06"); //I don't know how I can ever thank you!
 
 	AI_StopProcessInfos	(self);
 
-	self.name = "Garan";
+	self.name = "guaranty";
 
 	B_StartOtherRoutine	(self, "BOSS");
 
 	Mod_FM_Foki = 11;
 
-	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Garan ... Er wird sich erst Mal zurückziehen. Ich sollte ihn später aufsuchen.");
+	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "garanic He's going to retire first. I should see him later.");
 };
 
 INSTANCE Info_Mod_Aaron_Barriere (C_INFO)
@@ -195,16 +195,16 @@ FUNC INT Info_Mod_Aaron_Barriere_Condition()
 
 FUNC VOID Info_Mod_Aaron_Barriere_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_Barriere_11_00"); //Ah, hallo, Bruder. Wie du siehst habe ich den Platz meines Vaters eingenommen.
-	AI_Output(hero, self, "Info_Mod_Aaron_Barriere_15_01"); //Freut mich, das zu sehen.
-	AI_Output(self, hero, "Info_Mod_Aaron_Barriere_11_02"); //Wir überlegen gerade einen Zauber, mit dem wir die Barriere zerstören können.
-	AI_Output(self, hero, "Info_Mod_Aaron_Barriere_11_03"); //Wir sollten nicht länger als einen Tag dafür brauchen. Komm morgen um diese Zeit wieder.
+	AI_Output(self, hero, "Info_Mod_Aaron_Barriere_11_00"); //Ah, hello, brother. As you can see, I took my father's place.
+	AI_Output(hero, self, "Info_Mod_Aaron_Barriere_15_01"); //I'm glad to see that.
+	AI_Output(self, hero, "Info_Mod_Aaron_Barriere_11_02"); //We're considering a spell to destroy the barrier.
+	AI_Output(self, hero, "Info_Mod_Aaron_Barriere_11_03"); //It shouldn't take us more than a day. Come back this time tomorrow.
 
 	Mod_FM_Barriere = Wld_GetDay();
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Garan und die anderen Magier überlegen nun, wie sie die Barriere vernichten können. Ich soll morgen wieder kommen.");
+	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Garan and the other mages are now considering how to destroy the barrier. They want me to come back tomorrow.");
 };
 
 INSTANCE Info_Mod_Aaron_BarriereWeg (C_INFO)
@@ -229,22 +229,22 @@ FUNC INT Info_Mod_Aaron_BarriereWeg_Condition()
 
 FUNC VOID Info_Mod_Aaron_BarriereWeg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_BarriereWeg_11_00"); //Es ist vollbracht, die Barriere ist zerstört!
-	AI_Output(hero, self, "Info_Mod_Aaron_BarriereWeg_15_01"); //Das sind gute Nachrichten.
-	AI_Output(self, hero, "Info_Mod_Aaron_BarriereWeg_11_02"); //In der Tat, Bruder. Du kannst nun nach Khorinis zurückkehren. Nimm diese zwei Runen.
+	AI_Output(self, hero, "Info_Mod_Aaron_BarriereWeg_11_00"); //It is done, the barrier is destroyed!
+	AI_Output(hero, self, "Info_Mod_Aaron_BarriereWeg_15_01"); //That's good news.
+	AI_Output(self, hero, "Info_Mod_Aaron_BarriereWeg_11_02"); //Indeed, brother. You can now return to Khorinis. Take these two runes.
 
 	CreateInvItems	(hero, ItRu_Teleport_Pat_01, 1);
 	CreateInvItems	(hero, ItRu_Teleport_Pat_02, 1);
 
-	AI_PrintScreen	("2 Runen erhalten", -1, YPOS_GoldGiven, FONT_ScreenSmall, 2);
+	AI_PrintScreen	("2 Runes preserved", -1, YPOS_GoldGiven, FONT_ScreenSmall, 2);
 
-	AI_Output(self, hero, "Info_Mod_Aaron_BarriereWeg_11_03"); //Mit ihnen kannst du dich zur Kapelle und hier in die Kirche teleportieren.
+	AI_Output(self, hero, "Info_Mod_Aaron_BarriereWeg_11_03"); //With them you can teleport to the chapel and here in the church.
 
 	Wld_SendTrigger	("EVT_PAT_BARRIERE");
 
 	B_StartOtherRoutine	(self, "ARBEIT");
 
-	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Es ist vollbracht und die Barriere ist zerstört. Ich kann nun nach Khorinis zurückkehren und sollte Pyrokar informieren.");
+	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "It is finished and the barrier is broken. I can now return to Khorinis and should inform Pyrokar.");
 	B_SetTopicStatus	(TOPIC_MOD_FM_VERRAT, LOG_SUCCESS);
 };
 
@@ -256,7 +256,7 @@ INSTANCE Info_Mod_Aaron_Back (C_INFO)
 	information	= Info_Mod_Aaron_Back_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist denn hier los?";
+	description	= "What's going on here?";
 };
 
 FUNC INT Info_Mod_Aaron_Back_Condition()
@@ -271,24 +271,24 @@ FUNC VOID Info_Mod_Aaron_Back_Info()
 {
 	B_Say	(hero, self, "$WASISTDENNHIERLOS");
 
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_00"); //Nun, wie du vielleicht weißt, wurde der Rat der Götter einberufen. Das bedeutet, dass die Schwarzmagier uns nicht weiter belagern dürfen.
-	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_01"); //Und wieso sind sie hier im Kloster?
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_02"); //Nun, leider werden wir immer noch belagert, nur nicht mehr von den Schwarzmagiern.
-	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_03"); //Von wem dann?
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_04"); //Von den Hexen.
-	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_05"); //Was? Von Hexen? Du meinst also von der Mutter Tojans?
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_06"); //Es sieht so aus, ja.
-	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_07"); //Ja, aber das kann den Schwarzmagiern doch eigentlich egal sein, oder?
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_08"); //Nicht direkt. Die Hexen sind seit langer Zeit Verbündete der Schwarzmagier.
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_09"); //Das heißt, wenn uns die Hexen angreifen, wäre es nicht anders, als wenn uns die Schwarzmagier selbst angreifen würden.
-	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_10"); //Und das zwingt sie sozusagen uns zu helfen.
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_11"); //Genau. Eigentlich würden wir diese Hilfe nicht annehmen, aber die Hexen sind in einer Überzahl, die wir alleine nicht schaffen würden.
-	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_12"); //Ich verstehe. Also was hast du jetzt vor?
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_13"); //Nun, es trifft sich gut, dass du gerade kommst. Die Hexen haben die insgesamt fünf Lager der Schwarzmagier übernommen.
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_14"); //Und du wirst die Hexen dort angreifen.
-	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_15"); //Was? Die Hexen sind in einer so großen Überzahl, dass ihr die Hilfe von den Schwarzmagiern annehmen müsst, und ich soll alleine gegen sie ziehen?
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_16"); //Natürlich nicht alleine. Im Klosterhof wartet bereits eine Gruppe auf deine Befehle!
-	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_17"); //Und jetzt beeil dich. Je schneller du die Lager vernichtest, desto besser!
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_00"); //Well, as you may know, the council of the gods has been called. That means the black mages can't besiege us any more.
+	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_01"); //And why are they here at the monastery?
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_02"); //Well, unfortunately, we're still under siege, but not by the black mages.
+	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_03"); //Then who did?
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_04"); //From the witches.
+	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_05"); //What? Of witches? You mean from the mother of Tojan?
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_06"); //It looks that way, yeah.
+	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_07"); //Yeah, but the black mages don't really care, do they?
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_08"); //Not exactly. The witches have long been allies of the black magicians.
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_09"); //That is, if the witches attack us, it would be no different than if the black mages themselves attacked us.
+	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_10"); //And that forces them to help us, so to speak.
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_11"); //Exactly. Actually, we wouldn't accept this help, but the witches are in an overwhelming number that we wouldn't be able to manage on our own.
+	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_12"); //I understand. So what are you gonna do now?
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_13"); //Well, it's a good thing you just got here. The witches have taken over the altogether five camps of the black magicians.
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_14"); //And you will attack the witches there.
+	AI_Output(hero, self, "Info_Mod_Aaron_Back_15_15"); //What? The witches are in such abundance that you have to accept the help of the black mages and I have to go against them alone?
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_16"); //Of course, not alone. A group is already waiting for your orders in the monastery courtyard!
+	AI_Output(self, hero, "Info_Mod_Aaron_Back_11_17"); //Now hurry up. The sooner you destroy the camps, the better!
 
 	Mod_FM_Hexencounter += 60;
 
@@ -300,7 +300,7 @@ FUNC VOID Info_Mod_Aaron_Back_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_FM_HEXEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FM_HEXEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FM_HEXEN, "Garan will, dass ich die Hexen töte, die sich in den Lagern der Schwarzmagier niedergelassen haben. Im Klosterhof wartet ein Trupp auf mich.");
+	B_LogEntry	(TOPIC_MOD_FM_HEXEN, "Garan wants me to kill the witches who settled in the black mages' camps. There's a troop waiting for me in the monastery courtyard.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -313,7 +313,7 @@ INSTANCE Info_Mod_Aaron_Hexen (C_INFO)
 	information	= Info_Mod_Aaron_Hexen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Lager sind erobert.";
+	description	= "The camps have been conquered.";
 };
 
 FUNC INT Info_Mod_Aaron_Hexen_Condition()
@@ -327,16 +327,16 @@ FUNC INT Info_Mod_Aaron_Hexen_Condition()
 
 FUNC VOID Info_Mod_Aaron_Hexen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aaron_Hexen_15_00"); //Die Lager sind erobert.
-	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_01"); //Das dürfte fürs Erste reichen. Doch jetzt müssen wir schnell handeln!
+	AI_Output(hero, self, "Info_Mod_Aaron_Hexen_15_00"); //The camps have been conquered.
+	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_01"); //That should be enough for now. But now we must act quickly!
 
 	B_Say	(hero, self, "$WASMEINSTDU");
 
-	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_03"); //Wir schlagen der Schlange den Kopf ab! Wir müssen die Hexenkönigin vernichten.
-	AI_Output(hero, self, "Info_Mod_Aaron_Hexen_15_04"); //Du meinst also die ...
-	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_05"); //Ja, die Mutter von Tojan. Sie wird jetzt für alles büßen!
-	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_06"); //Ich beauftrage dich mit der Aufgabe dies zu tun, Bruder. Sei stark!
-	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_07"); //Und jetzt geh, vernichte die Hexenkönigin. Sie hat sich im alten Turm niedergelassen. Aber pass auf, sie wird streng bewacht.
+	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_03"); //Cut off the snake's head! We must destroy the Witch Queen.
+	AI_Output(hero, self, "Info_Mod_Aaron_Hexen_15_04"); //So you mean the...?
+	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_05"); //Yes, Tojan's mother. She'll pay for everything now!
+	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_06"); //I'm ordering you to do this job, brother. Be strong!
+	AI_Output(self, hero, "Info_Mod_Aaron_Hexen_11_07"); //Now go destroy the Witch Queen. She settled in the old tower. But watch out, she's under heavy guard.
 
 	B_SetTopicStatus	(TOPIC_MOD_FM_HEXEN, LOG_SUCCESS);
 
@@ -348,7 +348,7 @@ FUNC VOID Info_Mod_Aaron_Hexen_Info()
 	
 	Log_CreateTopic	(TOPIC_MOD_FM_HEXENQUEEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FM_HEXENQUEEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FM_HEXENQUEEN, "Garan hat mich damit beauftragt, die Hexenkönigin zu töten. Sie hält sich im alten Turm auf.");
+	B_LogEntry	(TOPIC_MOD_FM_HEXENQUEEN, "Garan hired me to kill the Witch Queen. She's in the old tower.");
 };
 
 INSTANCE Info_Mod_Aaron_Door (C_INFO)
@@ -371,11 +371,11 @@ FUNC INT Info_Mod_Aaron_Door_Condition()
 
 FUNC VOID Info_Mod_Aaron_Door_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_Door_11_00"); //Du bist schon wieder zurück? Hast du die Hexenkönigin vernichtet?
-	AI_Output(hero, self, "Info_Mod_Aaron_Door_15_01"); //Nein. Ich komme nicht durch die Tür.
-	AI_Output(self, hero, "Info_Mod_Aaron_Door_11_02"); //Hast du versucht sie zu brechen?
-	AI_Output(hero, self, "Info_Mod_Aaron_Door_15_03"); //Ja, aber es ging nicht.
-	AI_Output(self, hero, "Info_Mod_Aaron_Door_11_04"); //Nun, dann werde ich mit dir kommen und die Tür öffnen.
+	AI_Output(self, hero, "Info_Mod_Aaron_Door_11_00"); //You're back already? Did you destroy the Witch Queen?
+	AI_Output(hero, self, "Info_Mod_Aaron_Door_15_01"); //No. I can't get through the door.
+	AI_Output(self, hero, "Info_Mod_Aaron_Door_11_02"); //Did you try to break it?
+	AI_Output(hero, self, "Info_Mod_Aaron_Door_15_03"); //Yeah, but it didn't work.
+	AI_Output(self, hero, "Info_Mod_Aaron_Door_11_04"); //Well, then I'll come with you and open the door.
 
 	AI_StopProcessInfos	(self);
 
@@ -402,13 +402,13 @@ FUNC INT Info_Mod_Aaron_DoorIn_Condition()
 
 FUNC VOID Info_Mod_Aaron_DoorIn_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_DoorIn_11_00"); //Seltsam ...
-	AI_Output(hero, self, "Info_Mod_Aaron_DoorIn_15_01"); //Das sah jetzt aber nicht sehr schwierig aus.
-	AI_Output(self, hero, "Info_Mod_Aaron_DoorIn_11_02"); //War es auch nicht. Egal. Wir müssen weiter. AH!
+	AI_Output(self, hero, "Info_Mod_Aaron_DoorIn_11_00"); //Strange...
+	AI_Output(hero, self, "Info_Mod_Aaron_DoorIn_15_01"); //That didn't look very difficult now.
+	AI_Output(self, hero, "Info_Mod_Aaron_DoorIn_11_02"); //It wasn't. Whatever. We have to keep moving. AH!
 
 	B_Say	(hero, self, "$WASISTDENN");
 
-	AI_Output(self, hero, "Info_Mod_Aaron_DoorIn_11_03"); //Ich habe meine Rune verloren. Sie muss noch unten an der Treppe liegen. Ich werde sie schnell holen.
+	AI_Output(self, hero, "Info_Mod_Aaron_DoorIn_11_03"); //I lost my rune. She must still be down the stairs. I'll go and get them quick.
 
 	AI_StopProcessInfos	(self);
 
@@ -437,7 +437,7 @@ FUNC INT Info_Mod_Aaron_Blut_Condition()
 
 FUNC VOID Info_Mod_Aaron_Blut_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_Blut_11_00"); //Braucht man nicht unser beider Blut, um unsere Mutter wieder zu erwecken?
+	AI_Output(self, hero, "Info_Mod_Aaron_Blut_11_00"); //Don't you need both our blood to reawaken our mother?
 
 	AI_StopProcessInfos	(self);
 };
@@ -462,7 +462,7 @@ FUNC INT Info_Mod_Aaron_Kill_Condition()
 
 FUNC VOID Info_Mod_Aaron_Kill_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_Kill_11_00"); //Los, lass sie uns töten!
+	AI_Output(self, hero, "Info_Mod_Aaron_Kill_11_00"); //Come on, let's kill them!
 
 	AI_StopProcessInfos	(self);
 
@@ -489,20 +489,20 @@ FUNC INT Info_Mod_Aaron_Party_Condition()
 
 FUNC VOID Info_Mod_Aaron_Party_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_00"); //Danke, mein Freund. Ohne dich hätte ich nie herausgefunden, wer ich wirklich bin.
-	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_01"); //Ich würde dich gerne reich belohnen.
-	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_02"); //Doch kann ich dir nicht viel geben, du musst mit diesem Geschenk zufrieden sein.
+	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_00"); //Thank you, my friend. Without you, I would never have found out who I really am.
+	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_01"); //I'd like to reward you richly.
+	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_02"); //But I can't give you much, you have to be satisfied with this gift.
 
-	B_ShowGivenThings	("Geschenk erhalten");
+	B_ShowGivenThings	("Present received");
 
 	CreateInvItems	(hero, ItPo_PotionOfDeath_01_Mis, 1);
 
 	B_Say	(hero, self, "$WASISTDAS");
 
-	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_03"); //Das, mein Freund, ist das Vermächtnis meines Vaters. Das, wonach er sein ganzes Leben gesucht hat. Die sechste Träne Innos'.
-	AI_Output(hero, self, "Info_Mod_Aaron_Party_15_04"); //Er hat sie tatsächlich gefunden?
-	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_05"); //Ja. Und er versteckte sie hier in diesem Kloster, bevor er sich mit meiner Mutter einließ. Du sollst sie haben.
-	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_06"); //Und jetzt lass uns feiern!
+	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_03"); //This, my friend, is my father's legacy. What he's been looking for all his life. The sixth tear of Inno's.
+	AI_Output(hero, self, "Info_Mod_Aaron_Party_15_04"); //He actually found her?
+	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_05"); //Yeah. before he got involved with my mother. You shall have her.
+	AI_Output(self, hero, "Info_Mod_Aaron_Party_11_06"); //Now let's celebrate!
 
 	B_SetTopicStatus	(TOPIC_MOD_FM_HEXENQUEEN, LOG_SUCCESS);
 	B_SetTopicStatus	(TOPIC_MOD_PATHERION, LOG_SUCCESS);

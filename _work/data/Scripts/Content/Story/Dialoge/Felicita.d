@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Felicita_Hi_Condition()
 
 FUNC VOID Info_Mod_Felicita_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Felicita_Hi_16_00"); //Auf ein Wort, Fremder. Du siehst so aufgeräumt aus. Würdest du mir einen Gefallen tun?
+	AI_Output(self, hero, "Info_Mod_Felicita_Hi_16_00"); //A word, stranger. You look so tidy. Would you do me a favor?
 };
 
 INSTANCE Info_Mod_Felicita_AufgabeJa (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Felicita_AufgabeJa (C_INFO)
 	information	= Info_Mod_Felicita_AufgabeJa_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Einer so schönen Frau helfe ich gerne.";
+	description	= "I'd be happy to help such a beautiful woman.";
 };
 
 FUNC INT Info_Mod_Felicita_AufgabeJa_Condition()
@@ -43,19 +43,19 @@ FUNC INT Info_Mod_Felicita_AufgabeJa_Condition()
 
 FUNC VOID Info_Mod_Felicita_AufgabeJa_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_00"); //Einer so schönen Frau helfe ich gerne. Außerdem habe ich etwas Zeit.
-	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_01"); //Was kann ich für dich tun?
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_02"); //Ich bin Felicita, die Frau von August, dem Torwächter.
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_03"); //Nun tuscheln die Weiber in meiner Nachbarschaft, er würde nicht nur das Tor bewachen, wenn es abends dunkel wird.
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_04"); //Ich möchte zu gerne wissen, ob da was dran ist.
-	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_05"); //Das kann ich machen. Aber warum schaust du nicht selber nach?
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_06"); //Ich hab Angst im Dunkeln. Als Kind hatte ich ...
-	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_07"); //Verstehe. Ich kümmer mich darum.
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_08"); //Danke vielmals. Du findest mich im alten Viertel, hinten rechts.
+	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_00"); //I'd be happy to help such a beautiful woman. Besides, I have some time.
+	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_01"); //What can I do for you?
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_02"); //I am Felicita, August's wife, the gatekeeper.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_03"); //Now the women in my neighborhood are whispering, he would not only guard the gate when it gets dark in the evening.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_04"); //I'd like to know if there's anything true.
+	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_05"); //I can do that. But why don't you check yourself?
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_06"); //I'm afraid of the dark. When I was a kid, I had--
+	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_07"); //I see. I'll take care of it.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_08"); //Thank you very much. You'll find me in the old quarter, back right.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_FELICITA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_FELICITA, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_FELICITA, "Felicita bat mich darum herauszufinden, ob ihr Mann August sie betrügt. Ich finde ihn am Tor der Stadt.");
+	B_LogEntry	(TOPIC_MOD_ASS_FELICITA, "Felicita asked me to find out if her husband August was cheating on her. I'll find him at the city gate.");
 
 	AI_StopProcessInfos	(self);
 
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Felicita_AufgabeNein (C_INFO)
 	information	= Info_Mod_Felicita_AufgabeNein_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Würde ich gerne. Hab im Moment leider keine Zeit. Vielleicht später.";
+	description	= "I'd love to. Sorry, I don't have time right now. Maybe later.";
 };
 
 FUNC INT Info_Mod_Felicita_AufgabeNein_Condition()
@@ -86,7 +86,7 @@ FUNC INT Info_Mod_Felicita_AufgabeNein_Condition()
 
 FUNC VOID Info_Mod_Felicita_AufgabeNein_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeNein_15_00"); //Würde ich gerne. Hab im Moment leider keine Zeit. Vielleicht später.
+	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeNein_15_00"); //I'd love to. Sorry, I don't have time right now. Maybe later.
 };
 
 INSTANCE Info_Mod_Felicita_Belauscht (C_INFO)
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Felicita_Belauscht (C_INFO)
 	information	= Info_Mod_Felicita_Belauscht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Guten Abend kann ich leider nicht sagen.";
+	description	= "I'm afraid I can't say good evening.";
 };
 
 FUNC INT Info_Mod_Felicita_Belauscht_Condition()
@@ -111,20 +111,20 @@ FUNC INT Info_Mod_Felicita_Belauscht_Condition()
 
 FUNC VOID Info_Mod_Felicita_Belauscht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_00"); //Guten Abend kann ich leider nicht sagen.
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_01"); //Das heißt, du hast meinen Mann ertappt?
-	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_02"); //Nicht in flagranti. Ich hörte ihn mit einer Frau reden. Unter der großen Birke draussen.
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_03"); //Das reicht mir. Dieser Strolch! Seit er dieses Teufelszeug schluckt, ist er wie ausgewechselt.
-	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_04"); //Du meinst dieses Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_05"); //Genau. Jetzt ist's genug. Ich lasse mich scheiden und werfe ihn raus aus meinem Haus.
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_06"); //Hier, diesen Goldring schenke ich dir.
+	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_00"); //I'm afraid I can't say good evening.
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_01"); //So you caught my husband?
+	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_02"); //Not in flagrant. I heard him talking to a woman. Under the big birch tree outside.
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_03"); //That's good enough for me. That rascal! Ever since he's swallowed all this evil stuff, he's been like a complete replacement.
+	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_04"); //You mean this giver of joy?
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_05"); //Exactly. It's enough now. I'll get a divorce and throw him out of my house.
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_06"); //Here, I'll give you this gold ring.
 
 	B_GiveInvItems	(self, hero, ItMi_Hochzeitsring, 1);
 
-	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_07"); //Dein Hochzeitsring?
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_08"); //Das war er mal. Nimm!
+	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_07"); //Your wedding ring?
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_08"); //He used to be. Take it!
 
-	B_LogEntry	(TOPIC_MOD_ASS_FELICITA, "Habe den Torwächter August mit einer anderen Frau erwischt und Felicita berichtet. Sie gab mir ihren Hochzeitsring dafür.");
+	B_LogEntry	(TOPIC_MOD_ASS_FELICITA, "Caught the gatekeeper August with another woman and told Felicita. She gave me her wedding ring for it.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_FELICITA, LOG_SUCCESS);
 
 	B_GivePlayerXP	(100);

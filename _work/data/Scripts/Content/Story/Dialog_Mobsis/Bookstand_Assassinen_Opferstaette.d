@@ -20,12 +20,12 @@ FUNC VOID BOOKSTAND_ASSASSINEN_OPFERSTAETTE_S1()		//Buchständer in der Magierbib
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Das Ritual ward durchgeführt, die Verbundenheit der Menschen mit den Mächten des einen Gottes gegen das Böse zu nutzen. So wie die Leiber der Dahingeschlachteten ward auch Radanos geteilt, Wille und Macht voneinander gelöst und in 1000 Teile zersprengt. Allein sein Zeichen, der Dolch, wird hier beigelegt. Er möge die Zeiten überdauern, bis eines Tages der Würdige erscheint, der es versteht, den Bann zu brechen."					);
+					Doc_PrintLines	( nDocID,  0, "The ritual was performed to use man's attachment to the powers of one God against evil. Just like the bodies of the slaughtered, Radanos was divided, the will and power were dissolved from each other and scattered into 1000 pieces. Only his mark, the dagger, is enclosed here. May he endure the times until one day the worthy one appears, who knows how to break the spell."					);
 				
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLine	( nDocID,  1, "So bedenke denn dein Tun, Auserwählter, auf dass dich die neun Wächter als Würdigen erkennen."); 
+					Doc_PrintLine	( nDocID,  1, "Consider therefore your deeds, chosen one, that the nine guardians may recognize you as worthy."); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_Show		( nDocID );
 					

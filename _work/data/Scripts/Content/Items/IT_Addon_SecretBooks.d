@@ -51,7 +51,7 @@ FUNC VOID UseXPBook(var int constanze)
 //---------------------------------------------------------------------------------------------------------------------------
 PROTOTYPE ItWr_Addon_XPBook (C_ITEM)
 {
-	name 					=	"Gesammelte Erfahrungen";
+	name 					=	"Collected experiences";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -110,7 +110,7 @@ FUNC VOID UseBookXP1000()
 //---------------------------------------------------------------------------------------------------------------------------
 PROTOTYPE ItWr_Addon_LPBook (C_ITEM)
 {
-	name 					=	"Buch des Wissens";
+	name 					=	"Book of Knowledge";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;

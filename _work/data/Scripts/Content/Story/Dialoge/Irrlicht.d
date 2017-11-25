@@ -1,16 +1,16 @@
 FUNC VOID B_FollowMe_Wisp ()
 {
-	AI_Output		(hero, self, "Info_Mod_Irrlicht_FollowMe_Wisp_15_00"); //Folge mir einfach.
+	AI_Output		(hero, self, "Info_Mod_Irrlicht_FollowMe_Wisp_15_00"); //Just follow me.
 };
 
 FUNC VOID B_Fight_Wisp ()
 {
-	AI_Output		(hero, self, "Info_Mod_Irrlicht_Fight_Wisp_15_00"); //Kämpfe zusammen mit mir.
+	AI_Output		(hero, self, "Info_Mod_Irrlicht_Fight_Wisp_15_00"); //Fight with me.
 };
 
 FUNC VOID B_MagicPlace_Wisp ()
 {
-	AI_Output		(hero, self, "Info_Mod_Irrlicht_MagicPlace_Wisp_15_00"); //Finde einen magischen Ort.
+	AI_Output		(hero, self, "Info_Mod_Irrlicht_MagicPlace_Wisp_15_00"); //Find a magical place.
 };
 
 INSTANCE Info_Mod_Irrlicht_DetectItems		(C_INFO)
@@ -21,7 +21,7 @@ INSTANCE Info_Mod_Irrlicht_DetectItems		(C_INFO)
 	information	 = 	Info_Mod_Irrlicht_DetectItems_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Such' mir etwas!";
+	description	 = 	"Find me something!";
 };
 
 FUNC INT Info_Mod_Irrlicht_DetectItems_Condition ()
@@ -31,43 +31,43 @@ FUNC INT Info_Mod_Irrlicht_DetectItems_Condition ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_Info ()
 {
-	AI_Output	(hero, self, "Info_Mod_Irrlicht_DetectItems_15_00"); //Such mir etwas!
+	AI_Output	(hero, self, "Info_Mod_Irrlicht_DetectItems_15_00"); //Find me something!
 
 	Info_ClearChoices	(Info_Mod_Irrlicht_DetectItems);
 
-	Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Folge mir einfach.", Info_Mod_Irrlicht_DetectItems_Follow );
-	Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Ich suche etwas Wichtiges.", Info_Mod_Irrlicht_DetectItems_Quest);
+	Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Just follow me.", Info_Mod_Irrlicht_DetectItems_Follow );
+	Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I'm looking for something important.", Info_Mod_Irrlicht_DetectItems_Quest);
 
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_RUNE] 	== TRUE)	
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Ich brauche Runen und Schriftrollen.", Info_Mod_Irrlicht_DetectItems_RUNE );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need runes and scrolls.", Info_Mod_Irrlicht_DetectItems_RUNE );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NONE] 	== TRUE)		
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Ich brauche Gold, Schlüssel und Gebrauchsgegenstände", Info_Mod_Irrlicht_DetectItems_NONE );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need gold, keys and utensils", Info_Mod_Irrlicht_DetectItems_NONE );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FF] 	== TRUE)		
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Ich brauche Fernkampfwaffen und Munition.", Info_Mod_Irrlicht_DetectItems_FF );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need ranged weapons and ammunition.", Info_Mod_Irrlicht_DetectItems_FF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NF] 	== TRUE)		
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Ich brauche Nahkampfwaffen.", Info_Mod_Irrlicht_DetectItems_NF );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need melee weapons.", Info_Mod_Irrlicht_DetectItems_NF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FOOD] 	== TRUE)		
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Ich brauche Nahrung und Planzen.", Info_Mod_Irrlicht_DetectItems_FOOD );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need food and plants.", Info_Mod_Irrlicht_DetectItems_FOOD );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_MAGIC] == TRUE)	
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Ich brauche Ringe und Amulette.", Info_Mod_Irrlicht_DetectItems_MAGIC );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need rings and amulets.", Info_Mod_Irrlicht_DetectItems_MAGIC );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_POTIONS] == TRUE)	
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Ich brauche Tränke aller Art.", Info_Mod_Irrlicht_DetectItems_POTIONS );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need all kinds of potions.", Info_Mod_Irrlicht_DetectItems_POTIONS );
 	};
 
-	Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Such' einfach alles, was du finden kannst.", Info_Mod_Irrlicht_DetectItems_ALL );
+	Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Just find everything you can.", Info_Mod_Irrlicht_DetectItems_ALL );
 };
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_Follow ()
@@ -80,7 +80,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_Follow ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_ALL ()
 {
-	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_ALL_15_00"); //Such mir alles, was du finden kannst.
+	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_ALL_15_00"); //Find me everything you can find.
 	WispSearching = WispSearch_ALL;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -88,7 +88,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_ALL ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_Quest ()
 {
-	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_Quest_15_00"); //Ich suche etwas wichtiges.
+	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_Quest_15_00"); //I'm looking for something important.
 	WispSearching = WispSearch_Quest;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -96,7 +96,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_Quest ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_POTIONS ()
 {
-	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_POTIONS_15_00"); //Ich brauche Tränke aller Art.
+	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_POTIONS_15_00"); //I need all kinds of potions.
 	WispSearching = WispSearch_POTIONS;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -104,7 +104,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_POTIONS ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_MAGIC ()
 {
-	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_MAGIC_15_00"); //Ich brauche Ringe und Amulette.
+	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_MAGIC_15_00"); //I need rings and amulets.
 	WispSearching = WispSearch_MAGIC;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -112,7 +112,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_MAGIC ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_FOOD ()
 {
-	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_FOOD_15_00"); //Ich brauche Nahrung und Planzen.
+	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_FOOD_15_00"); //I need food and plants.
 	WispSearching = WispSearch_FOOD;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -120,7 +120,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_FOOD ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_NF ()
 {
-	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_NF_15_00"); //Ich brauche Nahkampfwaffen.
+	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_NF_15_00"); //I need melee weapons.
 	WispSearching = WispSearch_NF;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -128,7 +128,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_NF ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_FF ()
 {
-	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_FF_15_00"); //Ich brauche Fernkampfwaffen und Munition.
+	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_FF_15_00"); //I need ranged weapons and ammunition.
 	WispSearching = WispSearch_FF;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -136,7 +136,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_FF ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_NONE ()
 {
-	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_NONE_15_00"); //Ich brauche Gold, Schlüssel und Gebrauchsgegenstände
+	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_NONE_15_00"); //I need gold, keys and utensils
 	WispSearching = WispSearch_NONE;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -144,7 +144,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_NONE ()
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_RUNE ()
 {
-	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_RUNE_15_00"); //Ich brauche Runen und Schriftrollen.
+	AI_Output			(hero, self, "Info_Mod_Irrlicht_DetectItems_RUNE_15_00"); //I need runes and scrolls.
 	WispSearching = WispSearch_RUNE;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -158,7 +158,7 @@ INSTANCE Info_Mod_Irrlicht_MagicPlace		(C_INFO)
 	information	 = 	Info_Mod_Irrlicht_MagicPlace_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Finde einen magischen Ort.";
+	description	 = 	"Find a magical place.";
 };
 
 FUNC INT Info_Mod_Irrlicht_MagicPlace_Condition ()
@@ -248,7 +248,7 @@ INSTANCE Info_Mod_Irrlicht_Follow		(C_INFO)
 	information	 = 	Info_Mod_Irrlicht_Follow_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Folge mir einfach.";
+	description	 = 	"Just follow me.";
 };
 
 FUNC INT Info_Mod_Irrlicht_Follow_Condition ()
@@ -272,7 +272,7 @@ INSTANCE Info_Mod_Irrlicht_Fight		(C_INFO)
 	information	 = 	Info_Mod_Irrlicht_Fight_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Kämpfe zusammen mit mir.";
+	description	 = 	"Fight with me.";
 };
 
 FUNC INT Info_Mod_Irrlicht_Fight_Condition ()

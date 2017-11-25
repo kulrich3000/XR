@@ -6,7 +6,7 @@ INSTANCE Info_Mod_GorNaKosh_Follow (C_INFO)
 	information	= Info_Mod_GorNaKosh_Follow_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Komm mit.";
+	description	= "Come with me.";
 };
 
 FUNC INT Info_Mod_GorNaKosh_Follow_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_GorNaKosh_Follow_Condition()
 
 FUNC VOID Info_Mod_GorNaKosh_Follow_Info()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaKosh_Follow_15_00"); //Komm mit.
-	AI_Output(self, hero, "Info_Mod_GorNaKosh_Follow_13_01"); //Natürlich. Mein Schwert sei dein Schwert.
+	AI_Output(hero, self, "Info_Mod_GorNaKosh_Follow_15_00"); //Come with me.
+	AI_Output(self, hero, "Info_Mod_GorNaKosh_Follow_13_01"); //Of course it is. My sword be your sword.
 
 	AI_StopProcessInfos	(self);
 
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_GorNaKosh_Wait (C_INFO)
 	information	= Info_Mod_GorNaKosh_Wait_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wir sollten uns wieder trennen.";
+	description	= "We should split up again.";
 };
 
 FUNC INT Info_Mod_GorNaKosh_Wait_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mod_GorNaKosh_Wait_Condition()
 
 FUNC VOID Info_Mod_GorNaKosh_Wait_Info()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaKosh_Wait_15_00"); //Wir sollten uns wieder trennen.
-	AI_Output(self, hero, "Info_Mod_GorNaKosh_Wait_13_01"); //Wie du meinst.
+	AI_Output(hero, self, "Info_Mod_GorNaKosh_Wait_15_00"); //We should split up again.
+	AI_Output(self, hero, "Info_Mod_GorNaKosh_Wait_13_01"); //Whatever you say.
 
 	AI_StopProcessInfos	(self);
 
@@ -68,7 +68,7 @@ INSTANCE Info_Mod_GorNaKosh_Heiltrank (C_INFO)
 	information	= Info_Mod_GorNaKosh_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_GorNaKosh_Heiltrank_Condition()
@@ -87,31 +87,31 @@ FUNC VOID Info_Mod_GorNaKosh_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Essenz der Heilung", Info_Mod_GorNaKosh_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Essence of Healing", Info_Mod_GorNaKosh_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Elixier der Heilung", Info_Mod_GorNaKosh_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Elixir of Healing", Info_Mod_GorNaKosh_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Extrakt der Heilung", Info_Mod_GorNaKosh_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Extract of Healing", Info_Mod_GorNaKosh_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Essenz der Heilung", Info_Mod_GorNaKosh_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Essence of Healing", Info_Mod_GorNaKosh_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Trank der leichten Heilung", Info_Mod_GorNaKosh_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Drink of light healing", Info_Mod_GorNaKosh_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Leichter Heiltrank", Info_Mod_GorNaKosh_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Light healing potion", Info_Mod_GorNaKosh_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Trank der schnellen Heilung", Info_Mod_GorNaKosh_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_GorNaKosh_Heiltrank, "Drink of fast healing", Info_Mod_GorNaKosh_Heiltrank_Health_05);
 	};
 };
 

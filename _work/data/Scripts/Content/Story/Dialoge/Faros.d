@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Faros_Hi (C_INFO)
 	information	= Info_Mod_Faros_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Faros_Hi_Condition()
@@ -18,8 +18,8 @@ FUNC VOID Info_Mod_Faros_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Faros_Hi_09_01"); //Ich bin Faros, der Gärtner.
-	AI_Output(self, hero, "Info_Mod_Faros_Hi_09_02"); //Ich bin der Chef vom Kräutergarten.
+	AI_Output(self, hero, "Info_Mod_Faros_Hi_09_01"); //I'm Faros, the gardener.
+	AI_Output(self, hero, "Info_Mod_Faros_Hi_09_02"); //I'm the head of the herb garden.
 };
 
 INSTANCE Info_Mod_Faros_MangelQuest (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Faros_MangelQuest (C_INFO)
 	information	= Info_Mod_Faros_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft die Gartenarbeit?";
+	description	= "How's the gardening going?";
 };
 
 FUNC INT Info_Mod_Faros_MangelQuest_Condition()
@@ -43,15 +43,15 @@ FUNC INT Info_Mod_Faros_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_Faros_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest_15_00"); //Wie läuft die Gartenarbeit?
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_01"); //Miserabel. Da hilft es auch nicht, das Turgas immer alles schönreden will.
-	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest_15_02"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_03"); //Na sieh dich doch mal um! Unter den Pflanzen grassiert eine Pilzinfektion und ich habe das verdammte Fungizid dagegen nicht.
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_04"); //Dabei hat außerhalb des Belagerungsringes jeder beliebige Alchemisten- oder Kräuterfutzi dieses Zeug. Es ist zu frustrierend.
+	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest_15_00"); //How's the gardening going?
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_01"); //Miserable. It doesn't help that Turgas always wants to talk things over.
+	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest_15_02"); //What's going on?
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_03"); //Take a look around you! Among the plants there is a fungal infection and I don't have the damn fungicide.
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_04"); //Any alchemist or herb protector outside the siege ring has this stuff. It's too frustrating.
 
 	B_StartMangel();
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Faros hat sich beklagt, dass in seinem Kräutergarten eine Pilzinfektion wütet. Er meinte, dass jeder Alchemist und Kräuterkundler draußen ein Gegenmittel hätte.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Faros has complained that there's a fungal infection raging in his herb garden. He said that every alchemist and herbalist outside has an antidote.");
 };
 
 INSTANCE Info_Mod_Faros_MangelQuest2 (C_INFO)
@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Faros_MangelQuest2 (C_INFO)
 	information	= Info_Mod_Faros_MangelQuest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier was gegen die Pilzinfektion ...";
+	description	= "I have something against the fungal infection....";
 };
 
 FUNC INT Info_Mod_Faros_MangelQuest2_Condition()
@@ -76,18 +76,18 @@ FUNC INT Info_Mod_Faros_MangelQuest2_Condition()
 
 FUNC VOID Info_Mod_Faros_MangelQuest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest2_15_00"); //Ich habe hier was gegen die Pilzinfektion ...
+	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest2_15_00"); //I have something against the fungal infection....
 
 	B_GiveInvItems	(hero, self, ItMi_Fungizid, 1);
 
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_01"); //Was? Zeig her ... Tatsächlich, das scheint es zu sein. Ich muss es sofort ausprobieren.
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_01"); //What? Show me... In fact, it seems to be. I need to try it out right now.
 
 	AI_PlayAni	(hero, "T_PLUNDER");
 
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_02"); //Ja, es wirkt. Damit wird diese Pilzgeschichte in wenigen Tagen der Vergangenheit angehören. Tausend Dank.
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_03"); //Hier, nimm einige meiner besten Kräuter zur Belohnung. Innos sei mit dir.
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_02"); //Yeah, it works. This means that this mushroom story will be a thing of the past in a few days. Thank you very much.
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_03"); //Here, take some of my best herbs as a reward. Innos be with you.
 
-	B_ShowGivenThings	("Kronstöckl, 4 Feldknöterich und 5 Feuerwurzel erhalten");
+	B_ShowGivenThings	("Kronstöckl, 4 knotweed and 5 fire root preserved");
 
 	CreateInvItems	(hero, ItPl_Perm_Herb, 1);
 	CreateInvItems	(hero, ItPl_Temp_Herb, 4);
@@ -95,7 +95,7 @@ FUNC VOID Info_Mod_Faros_MangelQuest2_Info()
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Faros Pilzproblem ist gelöst.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Faro's fungus problem is solved.");
 
 	B_StopMangel();
 };
@@ -108,7 +108,7 @@ INSTANCE Info_Mod_Faros_Fake (C_INFO)
 	information	= Info_Mod_Faros_Fake_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist hier ein seltsamer Magier gewesen?";
+	description	= "Was there a strange magician here?";
 };
 
 FUNC INT Info_Mod_Faros_Fake_Condition()
@@ -122,10 +122,10 @@ FUNC INT Info_Mod_Faros_Fake_Condition()
 
 FUNC VOID Info_Mod_Faros_Fake_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faros_Fake_15_00"); //Ist hier ein seltsamer Magier gewesen?
-	AI_Output(self, hero, "Info_Mod_Faros_Fake_09_01"); //Ja, allerdings. Da war so ein Kerl, der es ziemlich eilig hatte. Er hat sich umgeschaut und dann was von Bibliothek gemurmelt. Dann ist er verschwunden.
+	AI_Output(hero, self, "Info_Mod_Faros_Fake_15_00"); //Was there a strange magician here?
+	AI_Output(self, hero, "Info_Mod_Faros_Fake_09_01"); //Yes, indeed. There was this guy who was in a hurry. He looked around and then he mumbled about the library. Then he disappeared.
 
-	B_LogEntry	(TOPIC_MOD_FM_SM, "Faros hat mir erzählt, dass der Magier etwas von der Bibliothek gemurmelt hat. Vielleicht sollte ich mich dort mal umsehen.");
+	B_LogEntry	(TOPIC_MOD_FM_SM, "Faros told me that the magician muttered something from the library. Maybe I should take a look around.");
 };
 
 INSTANCE Info_Mod_Faros_EXIT (C_INFO)

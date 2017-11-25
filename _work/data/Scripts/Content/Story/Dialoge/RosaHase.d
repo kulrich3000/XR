@@ -15,21 +15,21 @@ FUNC INT Info_Mod_RosaHase_Hi_Condition()
 
 FUNC VOID Info_Mod_RosaHase_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_00"); //Endlich jemand, der mir beistehen kann.
-	AI_Output(hero, self, "Info_Mod_RosaHase_Hi_15_01"); //Wa ... was, wo bin ich?
-	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_02"); //Du musst mir helfen! Die Schafsfraktion des Bösen hat mir meinen verzauberten Kamm gestohlen.
-	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_03"); //Ich brauche ihn doch, um damit zum Mond zu fliegen.
-	AI_Output(hero, self, "Info_Mod_RosaHase_Hi_15_04"); //Ähh, verstehe.
-	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_05"); //Hier, nimm dieses verzauberte Brot als Waffe, um damit gegen die Schafe zu bestehen.
+	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_00"); //Finally, someone who can help me.
+	AI_Output(hero, self, "Info_Mod_RosaHase_Hi_15_01"); //Wh-- what, where am I?
+	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_02"); //You have to help me! The sheep-fraction of evil stole my enchanted comb.
+	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_03"); //I need him to fly it to the moon.
+	AI_Output(hero, self, "Info_Mod_RosaHase_Hi_15_04"); //Uh, I see.
+	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_05"); //Here, use this enchanted bread as a weapon to stand up to the sheep.
 
 	B_GiveInvItems	(self, hero, ItMw_Brot, 1);
 
-	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_06"); //Sie befinden sich im Eintopfschloss dort hinten. Aber nimm dich vor ihnen in Acht.
-	AI_Output(hero, self, "Info_Mod_RosaHase_Hi_15_07"); //Öhh, alles klar.
+	AI_Output(self, hero, "Info_Mod_RosaHase_Hi_13_06"); //You're in that pothole lock back there. But beware of them.
+	AI_Output(hero, self, "Info_Mod_RosaHase_Hi_15_07"); //Ooh, all right.
 
 	Log_CreateTopic	(TOPIC_MOD_BDT_KAMM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_KAMM, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BDT_KAMM, "Ich befinde mich auf einer Wolke, in der Umgebung sonderbare Klänge. Ein rosa Hase hat mich darum gebeten, seinen Kamm zu bergen, welchen die Schafe ihm raubten.");
+	B_LogEntry	(TOPIC_MOD_BDT_KAMM, "I find myself on a cloud, in the surroundings strange sounds. A pink rabbit asked me to salvage his comb, which the sheep robbed him.");
 };
 
 INSTANCE Info_Mod_RosaHase_HabKamm (C_INFO)
@@ -53,14 +53,14 @@ FUNC INT Info_Mod_RosaHase_HabKamm_Condition()
 
 FUNC VOID Info_Mod_RosaHase_HabKamm_Info()
 {
-	AI_Output(self, hero, "Info_Mod_RosaHase_HabKamm_13_00"); //Du hast es geschafft und damit bewiesen, dass du eines wahren Helden würdig bist.
+	AI_Output(self, hero, "Info_Mod_RosaHase_HabKamm_13_00"); //You've done it, proving that you're worthy of a true hero.
 
 	B_GiveInvItems	(hero, self, ItMi_MagicKamm, 1);
 	AI_UnequipWeapons	(hero);
 
 	B_TransferInventory_All (hero, RosaHase_7187);
 
-	AI_Output(self, hero, "Info_Mod_RosaHase_HabKamm_13_01"); //Nun kann meine Reise beginnen. Leb wohl.
+	AI_Output(self, hero, "Info_Mod_RosaHase_HabKamm_13_01"); //Now my journey can begin. Farewell.
 	
 	B_SetTopicStatus	(TOPIC_MOD_BDT_KAMM, LOG_SUCCESS);
 
@@ -68,7 +68,7 @@ FUNC VOID Info_Mod_RosaHase_HabKamm_Info()
 
 	Mod_CrazyRabbit = 3;
 		
-	Spine_OverallSaveSetInt("Wolkenwelt", 1);
+	Spine_OverallSaveSetInt("cloud world", 1);
 	CheckHalluAchievement();
 };
 

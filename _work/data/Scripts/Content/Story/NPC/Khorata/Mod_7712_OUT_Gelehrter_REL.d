@@ -1,7 +1,7 @@
 INSTANCE Mod_7712_OUT_Gelehrter_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gelehrter";	
+	name 		= "scholar";	
 	guild 		= GIL_OUT;
 	id 			= 7712;
 	voice 		= 10;

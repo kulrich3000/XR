@@ -11,79 +11,79 @@ FUNC VOID B_ShowKrankheitText(var int pos)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "... so schwächen sie den Organismus und zehren ihn aus.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "... they weaken the organism and consume it.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Es gibt leichte Formen, worunter die wohl jedem bekannte Erkältung fällt. Sie tritt auf, wenn der Körper unzureichend geschützt kalter Witterung ausgesetzt ist."						);                                
+			Doc_PrintLines	( StPl_nDocID,  0, "There are light forms, including the common cold. It occurs when the body is exposed to cold weather with insufficient protection."						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Ihr Verlauf ist relativ sanft und gleichmäßig, Vitalität, Körperkraft und die anderen Fähigkeiten lassen über ihre Zeitdauer etwas nach. Hat der Körper jedoch in kurzen Zeitabständen mehrere Erkältungen überstanden, so härtet er sich gegen weitere ab."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "Their progression is relatively smooth and even, vitality, physical strength and the other abilities decrease slightly over time. However, if the body has survived several colds at short intervals, it hardens against further colds."		);     
 	}
 	else if (pos == 2)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Schlimmer sind da schon Krankheiten, die durch das Zufügen von Wunden in Verbindung mit Schmutz und Unrat entstehen. Die Bisse von Fleisch fressenden Tieren und schmutzige, rostige Waffen können das Blut des Betroffenen vergiften.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "Diseases caused by inflicting wounds in connection with dirt and rubbish are even worse. The bites of carnivorous animals and dirty, rusty weapons can poison the blood of the victim.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Die Dauer der Erkrankung ist zwar etwas kürzer und ihr Ausbruch unscheinbarer. Jedoch wird sie im weiteren Verlauf zunehmend stärker und die Einbußen an Fähigkeiten größer."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "The duration of the disease is somewhat shorter and its outbreak less noticeable. However, in the further course of time it will become increasingly stronger and the losses in skills will increase."		);     
 	}
 	else if (pos == 3)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Noch ungleich boshafter sind Krankheiten, welche in verwesenden Kadavern entstehen. Der faulige Biss eines Warans oder der Kontakt mit untotem Fleisch können verheerend sein. Auch hier ist zwar der Beginn noch vergleichsweise sanft, der Übergang zu einem heftigen, langwierigen Verlauf jedoch kurz.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "Even more mischievous are diseases that develop in decaying carcasses. The rotten bite of a monitor or contact with undead flesh can be devastating. Here, too, although the beginning is comparatively soft, the transition to a violent, protracted course is short.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Selbst die Gesundheit eines vitalen, starken Menschen wird schwer leiden. Überflüssig zu erwähnen, dass unbehandelt häufig der Tod den Betroffenen erwartet."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "Even the health of a vital, strong person will suffer greatly. Needless to say, untreated, deaths often await those affected."		);     
 	}
 	else if (pos == 4)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Die Behandlung eines erkrankten Organismus sollte dabei ansetzen, ihn mit Speis und Trank zu kräftigen. Von stark alkoholischen Getränken sollte dabei abgesehen werden, während frisches Obst und Gemüse besonders vorteilhaft wirkt. Die Dauer, besonders der schweren Phasen, kann dadurch erheblich gesenkt werden.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "The treatment of a diseased organism should begin to strengthen it with food and drink. Strong alcoholic beverages should be avoided, while fresh fruit and vegetables are particularly beneficial. The duration, especially of the difficult phases, can thus be reduced considerably.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Auch reichlich Schlaf kann dem Körper beim Überwinden einer Erkrankung helfen, da er dem leidenden Körper Erholung verschafft. Dabei sollte jedoch nicht übersehen werden, dass auch während des Schlafes die Erkrankung fortschreitet."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "Plenty of sleep can also help the body to overcome a disease by providing recovery for the suffering body. However, it should not be overlooked that the disease also progresses during sleep."		);     
 	}
 	else if (pos == 5)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Der Betroffene kann von einer schweren Phase im Schlaf überrascht werden und sterben, falls die Behandlung nicht mit Mitteln von Außen unterstützt wurde.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "The patient may be surprised by a severe phase of sleep and die if the treatment has not been supported by external means.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Zu den probatesten unter diesen gehören Pflanzen mit heilender Wirkung und die die daraus gebrauten Tränke, welche jeder kundige Alchemist feilbietet."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "Among the most effective of these are plants with healing properties and the potions brewed from them, which every expert alchemist offers for sale."		);     
 	}
 	else if (pos == 6)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Übersteht ein Mensch mehrere durch Kreaturen übertragene Erkrankungen, so erlangt er zunehmende Resistenz. Der Körper erlernt die spezielle Erkrankung besser zu bekämpfen und somit ihre Folgen zu mindern.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "If a human being survives several diseases transmitted by creatures, he becomes increasingly resistant. The body learns to fight the specific disease better and thus to reduce its consequences.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Die Wahrscheinlichkeit, die selbe Krankheit erneut zu bekommen, sinkt. Da der Körper außerdem auf den Umgang mit Krankheiten trainiert wird, kann er schneller reagieren. Die Dauer aller Erkrankungen sinkt."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "The probability of getting the same disease again decreases. Since the body is also trained to deal with illnesses, it can react more quickly. The duration of all diseases decreases."		);     
 	};
 
 	Doc_Show		( StPl_nDocID );

@@ -17,7 +17,7 @@ FUNC INT DIA_PAL_12_EXIT_Condition()
 
 FUNC VOID DIA_PAL_12_EXIT_Info()
 {	
-	AI_Output(self, hero, "DIA_PAL_12_EXIT_12_00"); //Möge Innos Feuer uns zum Sieg führen!
+	AI_Output(self, hero, "DIA_PAL_12_EXIT_12_00"); //May Inno's fire lead us to victory!
 
 	AI_StopProcessInfos	(self);
 };
@@ -31,7 +31,7 @@ INSTANCE DIA_PAL_12_JOIN(C_INFO)
 	condition	= DIA_PAL_12_JOIN_Condition;
 	information	= DIA_PAL_12_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will ein Paladin werden!";
+	description = "I want to be a Paladin!";
 };                       
 
 FUNC INT DIA_PAL_12_JOIN_Condition()
@@ -44,10 +44,10 @@ FUNC INT DIA_PAL_12_JOIN_Condition()
 
 FUNC VOID DIA_PAL_12_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_12_JOIN_15_00"); //Ich will ein Paladin werden!
-	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_01"); //Du? Dass ich nicht lache! Du gehörst ja noch nicht einmal der Stadtwache an.
-	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_02"); //Wenn ich nicht sehen würde, was für ein dummer Bursche du bist, würde ich annehmen, dass du mich beleidigen willst.
-	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_03"); //Als Paladine werden nur die Besten der Besten unter den Getreuen des Königs und unseres Herrn Innos aufgenommen.
+	AI_Output (hero, self, "DIA_PAL_12_JOIN_15_00"); //I want to be a Paladin!
+	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_01"); //You? Don't make me laugh! You're not even a member of the city guard.
+	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_02"); //If I didn't see what a stupid boy you are, I'd assume you were insulting me.
+	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_03"); //Only the best of the best are accepted as paladins among the faithful of the King and our Lord Innos.
 };
 
 // *************************************************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_PAL_12_PEOPLE(C_INFO)
 	condition	= DIA_PAL_12_PEOPLE_Condition;
 	information	= DIA_PAL_12_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Kommando?";
+	description = "Who's in command here?";
 };                       
 
 FUNC INT DIA_PAL_12_PEOPLE_Condition()
@@ -72,9 +72,9 @@ FUNC INT DIA_PAL_12_PEOPLE_Condition()
 
 FUNC VOID DIA_PAL_12_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_12_PEOPLE_15_00"); //Wer hat hier das Kommando?
-	AI_Output (self, hero, "DIA_PAL_12_PEOPLE_12_01"); //Das ist der ehrenwerte Lord Hagen. Aber für alle Belange des einfachen Volkes ist Lord Andre zuständig.
-	AI_Output (self, hero, "DIA_PAL_12_PEOPLE_12_02"); //Du findest ihn in der Kaserne. Vielleicht hast du Glück und er widmet dir ein paar Minuten seiner kostbaren Zeit.
+	AI_Output (hero, self, "DIA_PAL_12_PEOPLE_15_00"); //Who's in command here?
+	AI_Output (self, hero, "DIA_PAL_12_PEOPLE_12_01"); //This is the Honorable Lord Hagen. But Lord Andre is responsible for all matters of the common people.
+	AI_Output (self, hero, "DIA_PAL_12_PEOPLE_12_02"); //You'll find him in the barracks. Maybe you're lucky, and he'll dedicate a few minutes of his precious time to you.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE DIA_PAL_12_LOCATION(C_INFO)
 	condition	= DIA_PAL_12_LOCATION_Condition;
 	information	= DIA_PAL_12_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was macht ihr Paladine hier in Khorinis?";
+	description = "What are you paladins doing here in khorinis?";
 };                       
 
 FUNC INT DIA_PAL_12_LOCATION_Condition()
@@ -99,10 +99,10 @@ FUNC INT DIA_PAL_12_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_12_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_12_LOCATION_15_00"); //Was macht ihr Paladine hier in Khorinis?
-	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_01"); //Wer solche Fragen stellt, endet ziemlich schnell am Galgen.
-	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_02"); //Wenn Lord Hagen sich EINE Sache nicht leisten kann, dann ist dies, das Wissen über unsere Mission in die Hände von Spionen fallen zu lassen.
-	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_03"); //Also pass besser auf, wonach du fragst.
+	AI_Output (hero, self, "DIA_PAL_12_LOCATION_15_00"); //What are you paladins doing here in khorinis?
+	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_01"); //Those who ask such questions end up on the gallows rather quickly.
+	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_02"); //If Lord Hagen can't afford ONE thing, this is to drop the knowledge of our mission into the hands of spies.
+	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_03"); //So you better watch what you ask.
 };
 
 INSTANCE Info_Mod_PAL_12_Pickpocket (C_INFO)

@@ -18,8 +18,8 @@ FUNC INT Info_Mod_Chani_Hi_Condition()
 
 FUNC VOID Info_Mod_Chani_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Chani_Hi_16_00"); //Und Süßer, wie wäre es mir uns beiden?
-	AI_Output(hero, self, "Info_Mod_Chani_Hi_15_01"); //Ähh, ein andermal.
+	AI_Output(self, hero, "Info_Mod_Chani_Hi_16_00"); //And honey, how about you and me?
+	AI_Output(hero, self, "Info_Mod_Chani_Hi_15_01"); //Uh, another time.
 };
 
 INSTANCE Info_Mod_Chani_Woher (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Chani_Woher (C_INFO)
 	information	= Info_Mod_Chani_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du kommst doch aus der Kolonie.";
+	description	= "You're from the colony.";
 };
 
 FUNC INT Info_Mod_Chani_Woher_Condition()
@@ -43,8 +43,8 @@ FUNC INT Info_Mod_Chani_Woher_Condition()
 
 FUNC VOID Info_Mod_Chani_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Chani_Woher_15_00"); //Du kommst doch aus der Kolonie.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_16_01"); //Hör mal Süßer, wenn du mit mir reden willst, musst du mich zumindest auf ein Getränk einladen ... aber kein billiges Bier oder irgendeinen Seemannsfusel.
+	AI_Output(hero, self, "Info_Mod_Chani_Woher_15_00"); //You're from the colony.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_16_01"); //Listen, sweetheart, if you want to talk to me, at least you have to invite me for a drink... but not some cheap beer or some sailor booze.
 };
 
 FUNC VOID Info_Mod_Chani_Woher_Story(var C_Item itm)
@@ -52,25 +52,25 @@ FUNC VOID Info_Mod_Chani_Woher_Story(var C_Item itm)
 	B_GiveInvItems	(hero, self, itm, 1);
 	CreateInvItems	(self, itm, 2);
 
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_00"); //Das hört sich doch gut an.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_00"); //That sounds like a good idea.
 
 	B_UseItem	(self, itm);
 
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_01"); //(leicht angetrunken) Sehr schön, da wird’s mir doch gleich angenehm warm um die Brust.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_02"); //Aber wo waren wir stehen geblieben ... ja, genau, die verlauste Kolonie. Daran möchte ich gar nicht denken.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_03"); //Dauernd in dieses eklige kalte Gemäuer eingepfercht, mit diesem säuselnden Tattergreis. Der Schläfer erwache ... so ein Schwachsinn.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_04"); //Habe die Gelegenheit genutzt, als der Alte abgekratzt ist, und mich kurz darauf mit Viran und Harlok hierher durchgeschlagen.
-	AI_Output(hero, self, "Info_Mod_Chani_Woher_Story_15_05"); //Naja, das ist hier aber auch nicht gerade ein schöner Ort.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_06"); //Tausend mal besser als dort.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_07"); //Hier habe ich wenigstens meine Freiheit, kann wie vor der Zeit in der Kolonie meinen Körper verkaufen, wie es mir gerade gefällt, habe Spaß und vor allem klingendes Geld.
-	AI_Output(hero, self, "Info_Mod_Chani_Woher_Story_15_08"); //Bist du deshalb in der Kolonie gelandet?
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_09"); //Ja, genau. Der dreckige Stadthalter hat mich denunziert, als ich auf den südlichen Inseln meinem Gewerbe nachging.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_10"); //Dabei war er einer meiner besten Kunden.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_11"); //Hat wohl eine Prämie bei diesem Schwein Rhobar bekommen dafür, dass sie ein weiteres Weibsbild für die Kolonie gefunden haben.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_12"); //Vielleicht war ich ihm auch zu gefährlich geworden, für seinem untadeligen Ruf ... Scheinheiliges Pack.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_13"); //Wenn ich könnte, würde ich ein Rasiermesser nehmen und ihnen ihre ...
-	AI_Output(hero, self, "Info_Mod_Chani_Woher_Story_15_14"); //(unterbricht) Ja, ich habe verstanden. Es war interessant deine Geschichte zu erfahren.
-	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_15"); //Ja, genug geredet. Ich trinke noch mal einen Schluck, um in Stimmung zu kommen.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_01"); //(slightly drunk) Very nice, that's when I get warm around my chest.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_02"); //But where did we stop? That's right, the lousy colony. I don't want to think about that.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_03"); //Constantly crammed into this disgusting cold wall, with this cheating old fool. The sleeper awakens.... such bullshit.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_04"); //Took advantage of the opportunity when the old man died, and shortly afterwards I fought my way through here with Viran and Harlok.
+	AI_Output(hero, self, "Info_Mod_Chani_Woher_Story_15_05"); //Well, this isn't exactly a nice place.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_06"); //A thousand times better than there.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_07"); //Here I have at least my freedom, can sell my body as I like it, have fun and above all sounding money.
+	AI_Output(hero, self, "Info_Mod_Chani_Woher_Story_15_08"); //Is that why you ended up in the colony?
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_09"); //Yeah, that's right. The dirty governor denounced me when I was doing my business on the southern islands.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_10"); //He was one of my best customers.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_11"); //Probably got a bonus at this pig Rhobar for finding another girl for the colony.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_12"); //Perhaps I had also become too dangerous for him, for his blameless reputation... Hypocritical gang.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_13"); //If I could, I'd take a razor and give them their...
+	AI_Output(hero, self, "Info_Mod_Chani_Woher_Story_15_14"); //Yes, I understand. It was interesting to learn your story.
+	AI_Output(self, hero, "Info_Mod_Chani_Woher_Story_16_15"); //Yeah, enough talking. I'm gonna have another drink to get in the mood.
 
 	B_UseItem	(self, itm);
 
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Chani_Woher_Wacholder (C_INFO)
 	information	= Info_Mod_Chani_Woher_Wacholder_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du einen starken Schluck Wacholder.";
+	description	= "Here you have a strong sip of juniper.";
 };
 
 FUNC INT Info_Mod_Chani_Woher_Wacholder_Condition()
@@ -100,7 +100,7 @@ FUNC INT Info_Mod_Chani_Woher_Wacholder_Condition()
 
 FUNC VOID Info_Mod_Chani_Woher_Wacholder_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Chani_Woher_Wacholder_15_00"); //Hier hast du einen starken Schluck Wacholder.
+	AI_Output(hero, self, "Info_Mod_Chani_Woher_Wacholder_15_00"); //Here you have a strong sip of juniper.
 
 	Info_Mod_Chani_Woher_Story(ItFo_Booze);
 };
@@ -113,7 +113,7 @@ INSTANCE Info_Mod_Chani_Woher_Wein (C_INFO)
 	information	= Info_Mod_Chani_Woher_Wein_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du eine gute Flasche Wein.";
+	description	= "Here's a good bottle of wine.";
 };
 
 FUNC INT Info_Mod_Chani_Woher_Wein_Condition()
@@ -128,7 +128,7 @@ FUNC INT Info_Mod_Chani_Woher_Wein_Condition()
 
 FUNC VOID Info_Mod_Chani_Woher_Wein_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Chani_Woher_Wein_15_00"); //Hier hast du eine gute Flasche Wein.
+	AI_Output(hero, self, "Info_Mod_Chani_Woher_Wein_15_00"); //Here's a good bottle of wine.
 
 	Info_Mod_Chani_Woher_Story(ItFo_Wine);
 };

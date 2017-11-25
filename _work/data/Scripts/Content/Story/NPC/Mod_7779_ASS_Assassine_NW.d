@@ -1,7 +1,7 @@
 INSTANCE Mod_7779_ASS_Assassine_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Assassine"; 
+	name 		= "assassin"; 
 	guild 		= GIL_OUT;
 	id 			= 7779;
 	voice 		= 3;

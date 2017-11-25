@@ -2,7 +2,7 @@ instance Mod_1774_KDF_Orakel_PAT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Orakel";
+	name 		=	"oracles";
 	npctype		=	NPCTYPE_MAIN;
 	flags       = NPC_FLAG_GHOST|NPC_FLAG_IMMORTAL;	
 	guild 		=	GIL_VLK;

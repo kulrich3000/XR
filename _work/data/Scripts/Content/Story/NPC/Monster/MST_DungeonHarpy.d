@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_DungeonHarpie(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Höhlenharpie";
+	name							=	"cavearpia";
 	guild							=	GIL_HARPY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_HARPY;
 	level							=	18;

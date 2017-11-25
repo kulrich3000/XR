@@ -15,62 +15,62 @@ FUNC VOID FortunoSumpfmensch_Scene()
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 3)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_00"); //Lange bevor die ersten Brüder unserer Gemeinschaft diesen Sumpf betraten das brache und tote Land zu bestellen und sich hier eine neue Heimat zu schaffen, lebte bereits ein Mensch in den verworrenen Tiefen des Morastes.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_00"); //Long before the first brothers of our community entered this swamp to cultivate the fallow and dead land and to create a new home for themselves, a human being lived in the confused depths of the mud.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 9)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_01"); //Lange bevor die ersten Brüder unserer Gemeinschaft diesen Sumpf betraten das brache und tote Land zu bestellen und sich hier eine neue Heimat zu schaffen, lebte bereits ein Mensch in den verworrenen Tiefen des Morastes.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_01"); //Long before the first brothers of our community entered this swamp to cultivate the fallow and dead land and to create a new home for themselves, a human being lived in the confused depths of the mud.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 15)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_02"); //Warum er der Welt entsagte weiß niemand. Manche sagen, er sei ein Wechselbalg oder ein Halbblut gewesen.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_02"); //No one knows why he renounced the world. Some say he was a changeling or half-breed.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 21)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_03"); //Die Mutter ein Mensch und der Vater eine der dunklen Kreaturen, die diese Gegend in früheren Zeiten so zahlreich besiedelten.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_03"); //The mother of a human being and the father of one of the dark creatures that inhabited this area so many times in the past.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 27)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_04"); //Andere wiederum meinen, er sei einst ein Herrscher gewesen, gerecht und aufrichtig dem Volk und dem Gesetz gegenüber, loyal seinen Freunden und treu seiner Frau.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_04"); //Others believe that he was once a ruler, righteous and sincere towards the people and the law, loyal to his friends and faithful to his wife.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 33)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_05"); //Als die verworrenen Wege des Schicksal ihn jedoch dazu zwangen, dem Gesetz folgend seine Geliebte hinzurichten, da sie ihm die Ehe gebrochen hatte, konnte er es nicht mehr ertragen, sein Gesicht gespiegelt zu sehen.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_05"); //However, when the confused paths of fate forced him to execute his mistress by law because she had broken his marriage, he could no longer bear to see his face mirrored.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 39)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_06"); //Er stach sich beide Augen aus und der Wind trieb ihn in die fauligen Tiefen des Sumpfes.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_06"); //He pricked both eyes and the wind drove him into the rotten depths of the swamp.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 45)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_07"); //Wieder andere behaupten, diese Kreatur sei nie ein Mensch gewesen sondern ein Homunculus, ein aus den dunklen Künsten der Alchemie erschaffenes Wesen, welches unsterblich die eigene Existenz nicht ertrug und seinen Schöpfern entfloh.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_07"); //Yet others claim that this creature was never a human being but a homunculus, a creature created from the dark arts of alchemy, which could not sustain its own existence immortally and escaped from its creators.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 51)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_08"); //Wer oder Was auch immer diese Kreatur ist, im Laufe der Jahrzehnte und Jahrhunderte wurde sie zu einem Teil des Sumpfes, fraß mit den Sumpfhaien und jagte mit den Sumpfratten.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_08"); //Whoever or whatever this creature is, over the decades and centuries it became part of the swamp, ate with the marsh sharks and hunted with the swamp rats.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 57)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_09"); //Wer oder Was auch immer diese Kreatur ist, im Laufe der Jahrzehnte und Jahrhunderte wurde sie zu einem Teil des Sumpfes, fraß mit den Sumpfhaien und jagte mit den Sumpfratten.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_09"); //Whoever or whatever this creature is, over the decades and centuries it became part of the swamp, ate with the marsh sharks and hunted with the swamp rats.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 63)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_10"); //Doch dieser Frieden ist nun vorbei. Nicht nur der Schläfer ist erweckt worden sondern auch dies garstige Wesen, das im Sumpf herumschleicht, lauernd, hassend, mordend, leidend und seinen Schmerz mit dieser Welt teilen will.
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_10"); //But this peace is now over. Not only the sleeper has been awakened, but also this nasty creature that lurks in the swamp, lurking, hating, murdering, suffering and wanting to share his pain with this world.
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 69)
 	{
-		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_11"); //Von weitem ist sein Gewimmer zu hören, und wer es hört, tut gut daran schnell und weit zu laufen, denn diese Laute entstammen dem traurigen Maul des HEULENDEN SUMPFMENSCHEN!!!
+		AI_Output(Mod_951_PSINOV_Fortuno_MT, NULL, "Info_Mod_Hero_FortunoSumpfmensch_Scene_13_11"); //From afar you can hear his whimpering and whoever hears it, does well to walk fast and far, because these sounds come from the sad mouth of the wailing swamp people!
 	};
 
 	if (Mod_FortunoSumpfmensch_Scene_Counter == 75)

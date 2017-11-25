@@ -2,7 +2,7 @@ instance Mod_1014_KGD_Leibwache_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Leibwache";
+	name 		=	"bodyguard";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_OUT;
 	voice 		=	6;

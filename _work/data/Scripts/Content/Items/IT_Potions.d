@@ -47,7 +47,7 @@ INSTANCE ItPo_Mana_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION";
 
-	description		= 	"Mana Essenz";
+	description		= 	"Mana Essence";
 	
 	TEXT[1]			= 	NAME_Bonus_Mana;				
 	COUNT[1]		= 	Mana_Essenz;
@@ -89,7 +89,7 @@ INSTANCE ItPo_Mana_05(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION";
 
-	description		= 	"Leichter Manatrank";
+	description		= 	"Light mana potion";
 	
 	TEXT[1]			= 	NAME_Bonus_Mana;				
 	COUNT[1]		= 	Mana_05;
@@ -131,7 +131,7 @@ INSTANCE ItPo_Mana_06(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION";
 
-	description		= 	"Trank des leichten Mana";
+	description		= 	"Drink of light mana";
 	
 	TEXT[1]			= 	NAME_Bonus_Mana;				
 	COUNT[1]		= 	Mana_05;
@@ -172,7 +172,7 @@ INSTANCE ItPo_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION";
 
-	description		= 	"Mana Extrakt";
+	description		= 	"Mana Extract";
 	
 	TEXT[1]			= 	NAME_Bonus_Mana;			
 	COUNT[1]		= 	Mana_Extrakt;
@@ -213,7 +213,7 @@ INSTANCE ItPo_Mana_03(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION";
 
-	description		= 	"Mana Elixier";
+	description		= 	"Mana Elixir";
 	
 	TEXT[1]			= 	NAME_Bonus_Mana;				
 	COUNT[1]		= 	Mana_Elixier;
@@ -254,7 +254,7 @@ INSTANCE ItPo_Health_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Essenz der Heilung";
+	description		= 	"Essence of Healing";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;
@@ -298,7 +298,7 @@ INSTANCE ItPo_Health_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Extrakt der Heilung";
+	description		= 	"Extract of Healing";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Extrakt;
@@ -342,7 +342,7 @@ INSTANCE ItPo_SekobMedizin (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Medizin für Sekob";
+	description		= 	"Medicine for Sekob";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Extrakt;
@@ -386,7 +386,7 @@ INSTANCE ItPo_Health_03(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Elixier der Heilung";
+	description		= 	"Elixir of Healing";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Elixier;
@@ -430,7 +430,7 @@ INSTANCE ItPo_Health_05(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Trank der schnellen Heilung";
+	description		= 	"Drink of fast healing";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_05;
@@ -474,7 +474,7 @@ INSTANCE ItPo_Health_06(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Leichter Heiltrank";
+	description		= 	"Light healing potion";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_06;
@@ -518,7 +518,7 @@ INSTANCE ItPo_Health_07(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Trank der leichten Heilung";
+	description		= 	"Drink of light healing";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_06;
@@ -563,7 +563,7 @@ INSTANCE ItPo_Perm_STR(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Elixier der Stärke";
+	description		= 	"Elixir of Strength";
 	
 	TEXT[1]			= 	NAME_Bonus_Str;				
 	COUNT[1]		= 	STR_Elixier;
@@ -596,7 +596,7 @@ INSTANCE ItPo_Perm_DEX(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Elixier der Geschicklichkeit";
+	description		= 	"Elixir of Dexterity";
 	TEXT[1]			= 	NAME_Bonus_Dex;
 	COUNT[1]		= 	DEX_Elixier;
 	TEXT[5]			= 	NAME_Value;					
@@ -611,7 +611,7 @@ INSTANCE ItPo_Perm_DEX(C_Item)
 /******************************************************************************************/		
 INSTANCE ItPo_Perm_DEX_Salandril(C_Item)
 {
-	name 			=	"Wertvoller Trank";
+	name 			=	"Precious potion";
 
 	mainflag 		=	ITEM_KAT_POTIONS;
 	flags 			=	ITEM_MULTI;
@@ -646,7 +646,7 @@ INSTANCE ItPo_Perm_Health(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Elixier des Lebens";
+	description		= 	"Elixir of Life";
 	
 	TEXT[1]			= 	NAME_Bonus_HpMax;				
 	COUNT[1]		= 	HPMax_Elixier;
@@ -681,7 +681,7 @@ INSTANCE ItPo_PermHealth_Gut(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Elixier des Lebens (noch geschlossen)";
+	description		= 	"Elixir of Life (still closed)";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	0;
@@ -702,7 +702,7 @@ INSTANCE ItPo_PermHealth_Schlecht(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Elixier des Lebens (noch geschlossen)";
+	description		= 	"Elixir of Life (still closed)";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	0;
@@ -723,9 +723,9 @@ INSTANCE ItPo_PermHealth_Mist(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Elixier des Lebens";
+	description		= 	"Elixir of Life";
 
-	TEXT[1]			=	"Stinkt wie Sau";
+	TEXT[1]			=	"Stinks like a pig";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	0;
@@ -748,7 +748,7 @@ INSTANCE ItPo_AdanosWohltat(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Adanos' Wohltat";
+	description		= 	"Adanos' blessing";
 	
 	TEXT[1]			= 	NAME_Bonus_HpMax;				
 	COUNT[1]		= 	HPAdanosWohltat;
@@ -785,9 +785,9 @@ INSTANCE ItPo_Regeneration(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Regenerationstrank";
+	description		= 	"regeneration potion";
 	
-	TEXT[1]			= 	"2% HP und Mana für 1 Minute";
+	TEXT[1]			= 	"2% HP and Mana for 1 minute";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -815,7 +815,7 @@ INSTANCE ItPo_Perm_Mana(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION"; 
 
-	description		= 	"Elixier des Geistes";
+	description		= 	"Elixir of Spirit";
 	TEXT[1]			= 	NAME_Bonus_ManaMax;			
 	COUNT[1]		= 	ManaMax_Elixier;
 	TEXT[5]			= 	NAME_Value;					
@@ -847,7 +847,7 @@ INSTANCE ItPo_Geist(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION"; 
 
-	description		= 	"Trank des Geistes";
+	description		= 	"potion of the spirit";
 	TEXT[1]			= 	NAME_Bonus_ManaMax;			
 	COUNT[1]		= 	ManaMax_Elixier*2;
 	TEXT[5]			= 	NAME_Value;					
@@ -879,7 +879,7 @@ INSTANCE ItPo_Wissen(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION"; 
 
-	description		= 	"Trank des Wissens";
+	description		= 	"potion of knowledge";
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaMaxElixier*2;
 };
@@ -911,8 +911,8 @@ INSTANCE ItPo_Speed(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Trank der Geschwindigkeit";
-	TEXT[1]			= 	"Ermöglicht kurzzeitiges Sprinten ";
+	description		= 	"Speed Potion";
+	TEXT[1]			= 	"Temporarily boosts speed ";
 	
 	TEXT[3]			= 	NAME_Duration;				
 	COUNT[3]		= 	Time_Speed/60000;
@@ -946,8 +946,8 @@ INSTANCE ItPo_Speed_Andre (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Trank der Geschwindigkeit";
-	TEXT[1]			= 	"Ermöglicht langzeitiges Sprinten ";
+	description		= 	"Speed Potion";
+	TEXT[1]			= 	"Allows long-term sprinting ";
 	
 	TEXT[3]			= 	NAME_Duration;	
 	
@@ -980,8 +980,8 @@ INSTANCE ItPo_Gift(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Gifttrank";
-	TEXT[1]			= 	"Vergiftet den Trinker";
+	description		= 	"poison potion";
+	TEXT[1]			= 	"Poisons the drinker";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1010,8 +1010,8 @@ INSTANCE ItPo_KamalGift(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Gifttrank";
-	TEXT[1]			= 	"von Kamal für den Richter";
+	description		= 	"poison potion";
+	TEXT[1]			= 	"by Kamal for the judge";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1025,7 +1025,7 @@ INSTANCE ItPo_KamalGift(C_Item)
 
 INSTANCE ItPo_FreudenspenderSuppe (C_Item)
 {
-	name 			=	"Freudenspender-ähnliche Pampe";
+	name 			=	"Pleasure-giver-like slobber";
 
 	mainflag 		=	ITEM_KAT_POTIONS;
 	flags 			=	ITEM_MULTI;
@@ -1072,8 +1072,8 @@ INSTANCE ItPo_OnarsTrank(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Kräutermischung";
-	TEXT[1]			= 	"Von Sagitta für Onar";
+	description		= 	"mixed herbs";
+	TEXT[1]			= 	"From Sagitta for Onar";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1096,7 +1096,7 @@ INSTANCE ItPo_Gegengift (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Gegengift";
+	description		= 	"antidote";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1128,9 +1128,9 @@ INSTANCE ItPo_Genesung (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Trank der Genesung";
+	description		= 	"Drink of Recovery";
 	
-	TEXT[1]			= 	"lindert Krankheiten";	
+	TEXT[1]			= 	"alleviates diseases";	
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1156,7 +1156,7 @@ INSTANCE ItPo_Mischgift (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Mischgift";
+	description		= 	"mixed poison";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1179,9 +1179,9 @@ INSTANCE ItPo_GiftNeutralisierer (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Trank der temporären Giftimmunität";
+	description		= 	"Potion of temporary toxic immunity";
 
-	TEXT[1]			=	"Macht 10 Minuten immun gegen jegliche Gifte";
+	TEXT[1]			=	"Makes 10 minutes immune to any toxins";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1214,7 +1214,7 @@ INSTANCE ItPo_MegaDrink (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Drac
 
 	description		= 	name;
 	
-	TEXT[3]			= 	"Wirkung unbekannt";				
+	TEXT[3]			= 	"Effects unknown";				
 
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1237,7 +1237,7 @@ INSTANCE ItPo_MegaDrink (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Drac
 
 INSTANCE ItPo_Drachensud (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Dracheninsel -> Kapitel 6 kurz vor´m Endgegner
 {
-	name 			=	"Drachensud der Manaverbrennung";
+	name 			=	"Dragon soup of mana combustion";
 
 	mainflag 		=	ITEM_KAT_POTIONS;
 	flags 			=	ITEM_MULTI;
@@ -1254,7 +1254,7 @@ INSTANCE ItPo_Drachensud (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Dra
 
 	description		= 	name;
 	
-	TEXT[3]			= 	"Wirkung unbekannt";				
+	TEXT[3]			= 	"Effects unknown";				
 
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1268,14 +1268,14 @@ FUNC VOID UseDrachensud()
 	hero.protection[PROT_POINT] += 10000;
 	hero.protection[PROT_MAGIC] += 10;
 
-	Print	("Rüstungswerte permanent gesteigert!");
+	Print	("Arms values permanently increased!");
 
 	Mod_NL_DrachensudIntus = 1;
 };
 
 INSTANCE ItPo_ZufallsDrink (C_Item)
 {
-	name 			=	"Trank des Zufalls";
+	name 			=	"potion of chance";
 
 	mainflag 		=	ITEM_KAT_POTIONS;
 	flags 			=	ITEM_MULTI;
@@ -1292,9 +1292,9 @@ INSTANCE ItPo_ZufallsDrink (C_Item)
 
 	description		= 	name;
 	
-	TEXT[3]			= 	"Wirkung unbekannt";				
+	TEXT[3]			= 	"Effects unknown";				
 
-	TEXT[2]			= 	"Wirkungsdauer (in Minuten):";	
+	TEXT[2]			= 	"Effect duration (in minutes):";	
 	COUNT[2]		= 	10;
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1344,7 +1344,7 @@ FUNC VOID UseItPo_ZufallsDrink()
 
 INSTANCE ItFo_Bruehe (C_Item)
 {
-	name 			=	"Trank";
+	name 			=	"potion";
 
 	mainflag 		=	ITEM_KAT_POTIONS;
 	flags 			=	ITEM_MULTI;
@@ -1358,7 +1358,7 @@ INSTANCE ItFo_Bruehe (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Brühe";
+	description		= 	"broth";
 
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1366,7 +1366,7 @@ INSTANCE ItFo_Bruehe (C_Item)
 
 INSTANCE ItPo_Weisenchronik (C_Item)
 {
-	name 			=	"Weisenchronik";
+	name 			=	"Wise Chronicle";
 
 	mainflag 		=	ITEM_KAT_POTIONS;
 	flags 			=	ITEM_MULTI;
@@ -1383,7 +1383,7 @@ INSTANCE ItPo_Weisenchronik (C_Item)
 
 	description		= 	name;
 	
-	TEXT[3]			= 	"Wirkung unbekannt";	
+	TEXT[3]			= 	"Effects unknown";	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
 };
@@ -1398,7 +1398,7 @@ FUNC VOID UseItPo_Weisenchronik()
 
 		Wld_PlayEffect ("SLOW_TIME", self, self, 0, 0, 0, FALSE);
 
-		PrintScreen	("Du fühlst dich müde!", -1, -1, FONT_SCREEN, 2);
+		PrintScreen	("You feel tired!", -1, -1, FONT_SCREEN, 2);
 
 		Mod_Weisenchronik_Intus = TRUE;
 	}
@@ -1410,7 +1410,7 @@ FUNC VOID UseItPo_Weisenchronik()
 
 INSTANCE ItPo_FolgsamkeitSnapper (C_Item)
 {
-	name 			=	"Trank der Folgsamkeit des Snappers";
+	name 			=	"Drink of the snapper's obedience";
 
 	mainflag 		=	ITEM_KAT_POTIONS;
 	flags 			=	ITEM_MULTI;
@@ -1427,7 +1427,7 @@ INSTANCE ItPo_FolgsamkeitSnapper (C_Item)
 
 	description		= 	name;
 	
-	TEXT[3]			= 	"Wirkung unbekannt";	
+	TEXT[3]			= 	"Effects unknown";	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
 };
@@ -1479,7 +1479,7 @@ INSTANCE ItPo_Purpurmond(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION";
 
-	description		= 	"Purpurmond";
+	description		= 	"purple moon";
 
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -1497,7 +1497,7 @@ INSTANCE ItPo_Purpurmond(C_Item)
 				hero.attribute[ATR_MANA_MAX] -= 10;
 				hero.attribute[ATR_MANA] -= 10;
 
-				PrintScreen	("Du fühlst dich müde!", -1, -1, FONT_SCREEN, 2);
+				PrintScreen	("You feel tired!", -1, -1, FONT_SCREEN, 2);
 
 				Wld_PlayEffect ("SLOW_TIME", self, self, 0, 0, 0, FALSE);
 
@@ -1509,7 +1509,7 @@ INSTANCE ItPo_Purpurmond(C_Item)
 			}
 			else
 			{
-				PrintScreen	("Du hast es übertrieben!", -1, -1, FONT_SCREEN, 2);
+				PrintScreen	("You exaggerated!", -1, -1, FONT_SCREEN, 2);
 
 				if (hero.attribute[ATR_HITPOINTS] > (hero.attribute[ATR_HITPOINTS_MAX]*2)/5)
 				{

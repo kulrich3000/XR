@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sabine_Hi (C_INFO)
 	information	= Info_Mod_Sabine_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Sabine_Hi_Condition()
@@ -21,33 +21,33 @@ FUNC VOID Info_Mod_Sabine_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_01"); //Mein Name ist Sabine, meines Zeichens königliche Gewürzhänlderin!
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_02"); //Gewürzhändlerin?
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_03"); //Königliche Gewürzhändlerin!
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_04"); //Und mit was für Gewürzen handelst du?
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_05"); //Mit keinen.
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_06"); //Wieso heißt du dann Gewürzhändlerin?
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_07"); //Königliche Gewürzhändlerin!
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_08"); //... na gut. Warum heißt du dann "königliche Gewürzhändlerin"?
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_09"); //Ich handle. Und ich mag Gewürze.
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_10"); //Mit was handelst du dann?
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_11"); //Mit Freudenspender.
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_12"); //Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_13"); //Ja! Königlichem Freudenspender!
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_14"); //Woher hast du es?
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_15"); //Es wird im Hofstaat angebaut! Unter der Führung unsres großen Königs!
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_16"); //Wo liegt dieser "Hofstaat"?
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_17"); //Ich habe eine Karte, damit ich den Heimweg wieder finde!
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_18"); //Lass mich raten. Die ist auch königlich?
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_19"); //Schonmal was von 'ner "königlichen Karte" gehört? Ne, das ist nur 'ne stinknormale Karte.
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_20"); //Wir können zusammen heimgehen, ich muss aber noch fünf Fläschchen Freudenspender verkaufen.
-	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_21"); //Nimm sie und bring sie unter die Leute, dann können wir gehen.
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_01"); //My name is Sabine, my mark of the royal spice henchwoman!
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_02"); //Spice merchant?
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_03"); //Royal spice dealer!
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_04"); //And what kind of spices are you trading?
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_05"); //None.
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_06"); //Wieso heißt du dann Spice merchant?
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_07"); //Royal spice dealer!
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_08"); //... na gut. Warum heißt du dann "royal spice dealer"?
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_09"); //I act. And I like spices.
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_10"); //Then what are you dealing with?
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_11"); //Pleasure giver.
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_12"); //Pleasure giver?
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_13"); //Yes! Royal giver of joy!
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_14"); //Where'd you get it?
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_15"); //It's grown in the yard! Under the leadership of our great king!
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_16"); //Wo liegt dieser "court"?
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_17"); //I have a map to help me find my way home!
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_18"); //Let me guess. She's royal too?
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_19"); //Schonmal was von 'ner "royal menu" gehört? Ne, das ist nur 'ne stinknormale Karte.
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_20"); //We can go home together, but I've got to sell five more bottles of delights.
+	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_21"); //Take it and bring it to the people, then we can go.
 
 	B_GiveInvItems	(self, hero, ItMi_Freudenspender, 5);
 
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_22"); //Na gut ...
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_22"); //All right...
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Sabine, die königliche Gewürzhändlerin, verkauft in Khorata Freudenspender. Sie bezieht es vom Hofstaat. Wo sich dieser befindet verrät eine Karte. Sabine will mich jedoch dorthin begleiten, wenn ich die fünf Fläschchen mit Freudenspender verkauft habe.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Sabine, the royal spice merchant, sold in Khorata. She gets it from the court. A map shows where it is located. Sabine, however, wants to accompany me there when I have sold the five bottles with joyful donors.");
 };
 
 INSTANCE Info_Mod_Sabine_Heiraten_01 (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Sabine_Heiraten_01 (C_INFO)
 	information	= Info_Mod_Sabine_Heiraten_01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du mich heiraten?";
+	description	= "Will you marry me?";
 };
 
 FUNC INT Info_Mod_Sabine_Heiraten_01_Condition()
@@ -74,7 +74,7 @@ FUNC VOID Info_Mod_Sabine_Heiraten_01_Info()
 {
 	B_Say (hero, self, "$WANNAMARRY");
 
-	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_01_17_01"); //Nein.
+	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_01_17_01"); //No.
 };
 
 INSTANCE Info_Mod_Sabine_Heiraten_02 (C_INFO)
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Sabine_Heiraten_02 (C_INFO)
 	information	= Info_Mod_Sabine_Heiraten_02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du vielleicht mal mit mir zusammen Freudenspender nehmen?";
+	description	= "Would you like to join me for a treat?";
 };
 
 FUNC INT Info_Mod_Sabine_Heiraten_02_Condition()
@@ -103,24 +103,24 @@ FUNC INT Info_Mod_Sabine_Heiraten_02_Condition()
 
 FUNC VOID Info_Mod_Sabine_Heiraten_02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_15_00"); //Willst du vielleicht mal mit mir zusammen Freudenspender nehmen?
-	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_02_17_01"); //Na gut.
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_15_00"); //Would you like to join me for a treat?
+	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_02_17_01"); //All right, all right.
 
 	B_UseItem	(self, ItFo_Trunken);
 
 	Info_ClearChoices	(Info_Mod_Sabine_Heiraten_02);
 
-	Info_AddChoice	(Info_Mod_Sabine_Heiraten_02, "Ich bin ein Mann, du eine Frau, worauf warten wir eigentlich noch?", Info_Mod_Sabine_Heiraten_02_D);
-	Info_AddChoice	(Info_Mod_Sabine_Heiraten_02, "Deine Kleider würden auf meinem Fussboden besser aussehen.", Info_Mod_Sabine_Heiraten_02_C);
-	Info_AddChoice	(Info_Mod_Sabine_Heiraten_02, "Kommst du öfter hierher?", Info_Mod_Sabine_Heiraten_02_B);
-	Info_AddChoice	(Info_Mod_Sabine_Heiraten_02, "Du siehst verdammt gut aus.", Info_Mod_Sabine_Heiraten_02_A);
+	Info_AddChoice	(Info_Mod_Sabine_Heiraten_02, "I'm a man, you're a woman, what are we waiting for?", Info_Mod_Sabine_Heiraten_02_D);
+	Info_AddChoice	(Info_Mod_Sabine_Heiraten_02, "Your clothes would look better on my floor.", Info_Mod_Sabine_Heiraten_02_C);
+	Info_AddChoice	(Info_Mod_Sabine_Heiraten_02, "Do you come here often?", Info_Mod_Sabine_Heiraten_02_B);
+	Info_AddChoice	(Info_Mod_Sabine_Heiraten_02, "You look damn good.", Info_Mod_Sabine_Heiraten_02_A);
 };
 
 FUNC VOID Info_Mod_Sabine_Heiraten_02_E()
 {
-	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_02_E_17_00"); //Du Wüstling, so etwas lasse ich mir vom Pöbel nicht bieten!
+	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_02_E_17_00"); //Rascals, I won't put up with that!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Sabine will mich noch immer nicht heiraten. Ich glaube ich sollte nochmal beim Weiberheld vorbei sehen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Sabine still won't marry me. I think I should stop by the ladies' man again.");
 
 	Info_ClearChoices	(Info_Mod_Sabine_Heiraten_02);
 
@@ -129,28 +129,28 @@ FUNC VOID Info_Mod_Sabine_Heiraten_02_E()
 
 FUNC VOID Info_Mod_Sabine_Heiraten_02_D()
 {
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_D_15_00"); //Ich bin ein Mann, du eine Frau, worauf warten wir eigentlich noch?
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_D_15_00"); //I'm a man, you're a woman, what are we waiting for?
 
 	Info_Mod_Sabine_Heiraten_02_E();
 };
 
 FUNC VOID Info_Mod_Sabine_Heiraten_02_C()
 {
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_C_15_00"); //Deine Kleider würden auf meinem Fussboden besser aussehen.
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_C_15_00"); //Your clothes would look better on my floor.
 
 	Info_Mod_Sabine_Heiraten_02_E();
 };
 
 FUNC VOID Info_Mod_Sabine_Heiraten_02_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_B_15_00"); //Kommst du öfter hierher?
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_B_15_00"); //Do you come here often?
 
 	Info_Mod_Sabine_Heiraten_02_E();
 };
 
 FUNC VOID Info_Mod_Sabine_Heiraten_02_A()
 {
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_A_15_00"); //Du siehst verdammt gut aus.
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_02_A_15_00"); //You look damn good.
 
 	Info_Mod_Sabine_Heiraten_02_E();
 };
@@ -163,7 +163,7 @@ INSTANCE Info_Mod_Sabine_Heiraten_03 (C_INFO)
 	information	= Info_Mod_Sabine_Heiraten_03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es tut mir leid wegen letztem Mal.";
+	description	= "I'm sorry about last time.";
 };
 
 FUNC INT Info_Mod_Sabine_Heiraten_03_Condition()
@@ -181,23 +181,23 @@ FUNC INT Info_Mod_Sabine_Heiraten_03_Condition()
 
 FUNC VOID Info_Mod_Sabine_Heiraten_03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_00"); //Es tut mir leid wegen letztem Mal. Willst du zur Versöhnung etwas Freudenspender mit mir nehmen?
-	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_01"); //Na gut.
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_00"); //I'm sorry about last time. Do you want to take something to make reconciliation with me?
+	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_01"); //All right, all right.
 
 	B_UseItem	(self, ItFo_Trunken);
 
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_02"); //Hast du eine Brieftaube Dabei? Ich habe nämlich meiner Mutter versprochen zu schreiben, sobald ich meine Traumfrau gefunden habe.
-	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_03"); //(kichert)
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_04"); //Du siehst meiner vierten Freundin ähnlich.
-	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_05"); //Oh, wie viele Freundinnen hattest du denn schon?
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_06"); //Drei.
-	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_03"); //(kichert)
-	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_07"); //Wenn ich dich fragen würde, ob du mich heiratest, wäre es dieselbe Antwort wie auf diese Frage?
-	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_08"); //Das musst du ausprobieren.
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_02"); //Do you have a carrier pigeon? I promised to write to my mother as soon as I found my dream girl.
+	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_03"); //(giggles)
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_04"); //You look like my fourth girlfriend.
+	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_05"); //Oh, how many girlfriends have you had?
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_06"); //Three.
+	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_03"); //(giggles)
+	AI_Output(hero, self, "Info_Mod_Sabine_Heiraten_03_15_07"); //If I asked you to marry me, would it be the same answer to that question?
+	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_08"); //You're gonna have to try this.
 
 	B_Say (hero, self, "$WANNAMARRY");
 
-	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_09"); //Ja, ich will!
+	AI_Output(self, hero, "Info_Mod_Sabine_Heiraten_03_17_09"); //Yes, I do!
 
 	AI_StopProcessInfos	(self);
 
@@ -212,7 +212,7 @@ INSTANCE Info_Mod_Sabine_FreudenspenderVerkauft (C_INFO)
 	information	= Info_Mod_Sabine_FreudenspenderVerkauft_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo warst du so plötzlich?";
+	description	= "Where were you suddenly?";
 };
 
 FUNC INT Info_Mod_Sabine_FreudenspenderVerkauft_Condition()
@@ -225,16 +225,16 @@ FUNC INT Info_Mod_Sabine_FreudenspenderVerkauft_Condition()
 
 FUNC VOID Info_Mod_Sabine_FreudenspenderVerkauft_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_00"); //wo warst du so plötzlich?
-	AI_Output(self, hero, "Info_Mod_Sabine_FreudenspenderVerkauft_17_01"); //Ich musste weg.
-	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_02"); //Weg?
-	AI_Output(self, hero, "Info_Mod_Sabine_FreudenspenderVerkauft_17_03"); //Ja, weg. Wichtige Dinge und so.
-	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_04"); //Aha ... ich habe jedenfalls dein Freudenspender verkauft.
-	AI_Output(self, hero, "Info_Mod_Sabine_FreudenspenderVerkauft_17_05"); //Schön. Hier hast du zwei Fläschchen Freudenspender als Belohnung.
+	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_00"); //where were you all of a sudden?
+	AI_Output(self, hero, "Info_Mod_Sabine_FreudenspenderVerkauft_17_01"); //I had to leave.
+	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_02"); //Gone?
+	AI_Output(self, hero, "Info_Mod_Sabine_FreudenspenderVerkauft_17_03"); //Yeah, gone. Important things and stuff.
+	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_04"); //Aha... I sold your delights anyway.
+	AI_Output(self, hero, "Info_Mod_Sabine_FreudenspenderVerkauft_17_05"); //Fine. Here's two bottles of joy as a reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Freudenspender, 2);
 
-	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_06"); //Äh ... danke.
+	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_06"); //Uh... thank you.
 
 	B_GivePlayerXP	(300);
 };

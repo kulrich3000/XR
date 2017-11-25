@@ -1,7 +1,7 @@
 instance Mod_7661_MIL_Miliz_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "aufgebrachte Miliz";	
+	name 		= "angry militia";	
 	guild 		= GIL_STRF;
 	id 			= 7661;
 	voice 		= 6;

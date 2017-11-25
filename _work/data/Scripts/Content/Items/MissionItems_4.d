@@ -23,7 +23,7 @@ const int Value_OrcEliteRing 	= 130;//Joly: nicht ändern
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Angars magisches Amulett";
+	description		= "Angar's Magic Amulet";
 	
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= 10;
@@ -60,7 +60,7 @@ const int Value_OrcEliteRing 	= 130;//Joly: nicht ändern
 
 INSTANCE ItMW_1H_FerrosSword_Mis (C_Item) 
 {	
-	name 				=	"Feros Schwert";
+	name 				=	"Fero's Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;
@@ -85,7 +85,7 @@ INSTANCE ItMW_1H_FerrosSword_Mis (C_Item)
 
 INSTANCE ItMi_KerolothsGeldbeutel_MIS(C_Item)
 {
-	name 				=	"Keroloth´s Lederbeutel";
+	name 				=	"Keroloth's Leather Satchel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -110,7 +110,7 @@ FUNC VOID UseKerolothsGeldbeutel ()
 
 INSTANCE ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 {
-	name 				=	"Keroloth´s Lederbeutel";
+	name 				=	"Keroloth's Leather Satchel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -127,7 +127,7 @@ INSTANCE ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 
 INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 {
-	name 				=	"Sengraths Armbrust";
+	name 				=	"Sengrath's Crossbow";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -153,7 +153,7 @@ INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 
 INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 {
-	name 				=	"Lurkerhaut";
+	name 				=	"Lurker Skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -164,7 +164,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 	material 			=	MAT_LEATHER;
 
 	description			= 	name;
-	TEXT[0]				= 	"Im Innern ist der Name ´Talbin´ eingebrand";
+	TEXT[0]				= 	"Inside, the name? Valley? is burnt in.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -176,7 +176,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 //---------------------------------------------------------------------
 INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 {	
-	name 					=	"Drachen-Ei";
+	name 					=	"Dragon Egg";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -187,8 +187,8 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"Das Ei ist warm und von innen";
-	TEXT[1]					=	"hört man leises Kratzen";
+	TEXT[0]					=	"The egg is warm, and there's";
+	TEXT[1]					=	"you hear a soft scratch";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -196,7 +196,7 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 
 INSTANCE ItAt_DragonEgg_Giftdrache	(C_ITEM)
 {	
-	name 					=	"Ei des Giftdrachen";
+	name 					=	"Egg of the Poison Dragon";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -207,8 +207,8 @@ INSTANCE ItAt_DragonEgg_Giftdrache	(C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"Das Ei ist warm und von innen";
-	TEXT[1]					=	"hört man leises Kratzen";
+	TEXT[0]					=	"The egg is warm, and there's";
+	TEXT[1]					=	"you hear a soft scratch";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -220,7 +220,7 @@ INSTANCE ItAt_DragonEgg_Giftdrache	(C_ITEM)
 
 INSTANCE ItRi_OrcEliteRing(C_Item)
 {
-	name 					=	"Ring der orkischen Kriegsherren";
+	name 					=	"Ring of the orcish warlords";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
 	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Muß so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
@@ -236,8 +236,8 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 
 	description				= 	name;
 
-	TEXT[0]					=	"Der Ring ist rauh und strahlt eine";
-	TEXT[1]					=	"seltsame Kälte aus";
+	TEXT[0]					=	"The ring is rough and seems";
+	TEXT[1]					=	"strange cold from";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -264,7 +264,7 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 
 INSTANCE ItRi_SkinnersRing(C_Item)
 {
-	name 					=	"Verwitterter Orkring";
+	name 					=	"Weathered Orkring";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
 	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Muß so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
@@ -280,8 +280,8 @@ INSTANCE ItRi_SkinnersRing(C_Item)
 
 	description				= 	name;
 
-	TEXT[0]					=	"Der Ring ist rauh und strahlt eine";
-	TEXT[1]					=	"seltsame Kälte aus";
+	TEXT[0]					=	"The ring is rough and seems";
+	TEXT[1]					=	"strange cold from";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -315,7 +315,7 @@ INSTANCE ItRi_SkinnersRing(C_Item)
 
 INSTANCE ItRi_SkinnersRing_Gold(C_Item)
 {
-	name 					=	"Goldglänzender Orkring";
+	name 					=	"Golden shining orkring";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
 	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Muß so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
@@ -331,8 +331,8 @@ INSTANCE ItRi_SkinnersRing_Gold(C_Item)
 
 	description				= 	name;
 
-	TEXT[0]					=	"Der Ring ist rauh und strahlt eine";
-	TEXT[1]					=	"seltsame Kälte aus";
+	TEXT[0]					=	"The ring is rough and seems";
+	TEXT[1]					=	"strange cold from";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -384,9 +384,9 @@ INSTANCE ItPo_DragonEggDrinkNeoras_MIS (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Trank aus Dracheneisekret";
+	description		= 	"Potion of Dragon Egg Secretion";
 	
-	TEXT[3]			= 	"Wirkung unbekannt";				
+	TEXT[3]			= 	"Effects unknown";				
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -411,7 +411,7 @@ INSTANCE ItPo_DragonEggDrinkNeoras_MIS (C_Item)
 
 instance ItWr_Map_Orcelite_MIS (C_Item)
 {
-	name 		= "Kriegskarte der Orks";  // 
+	name 		= "War map of the Orcs";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -447,7 +447,7 @@ var int Use_Map_NewWorld_Orcelite_MIS_OneTime;
 		if (Use_Map_NewWorld_Orcelite_MIS_OneTime == FALSE)
 		&& (MIS_KillOrkOberst != 0)
 		{
-			B_LogEntry (TOPIC_OrcElite,"Beim orkischen Oberst fand ich eine seltsame Karte. Scheint eine strategische Kriegskarte der Orks zu sein."); 
+			B_LogEntry (TOPIC_OrcElite,"I found a strange map on the orcish colonel. It looks like the orcs' strategic war map."); 
 			Use_Map_NewWorld_Orcelite_MIS_OneTime = TRUE;
 		};
 	};
@@ -460,7 +460,7 @@ var int Use_Map_NewWorld_Orcelite_MIS_OneTime;
 
 instance ItWr_Map_Caves_MIS (C_Item)
 {
-	name 		= "Die Höhlen von Khorinis";  // 
+	name 		= "The Caves of Khorinis";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;

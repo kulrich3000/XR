@@ -17,7 +17,7 @@ FUNC INT DIA_BAU_13_EXIT_Condition()
 
 FUNC VOID DIA_BAU_13_EXIT_Info()
 {	
-	AI_Output(self, hero, "DIA_BAU_13_EXIT_13_00"); //Saftiges Korn solle auf deinen Feldern wachsen.
+	AI_Output(self, hero, "DIA_BAU_13_EXIT_13_00"); //A juicy grain shall grow in your fields.
 
 	AI_StopProcessInfos	(self);
 };
@@ -31,7 +31,7 @@ INSTANCE DIA_BAU_13_JOIN(C_INFO)
 	condition	= DIA_BAU_13_JOIN_Condition;
 	information	= DIA_BAU_13_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will mehr über die Söldner wissen!";
+	description = "I want to know more about the mercenaries!";
 };                       
 
 FUNC INT DIA_BAU_13_JOIN_Condition()
@@ -44,9 +44,9 @@ FUNC INT DIA_BAU_13_JOIN_Condition()
 
 FUNC VOID DIA_BAU_13_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_13_JOIN_15_00"); //Ich will mehr über die Söldner wissen!
-	AI_Output (self, hero, "DIA_BAU_13_JOIN_13_01"); //Wenn du mal Ärger mit ihnen hast, geh zu Lares. Das machen wir Bauern auch so. Er ist sehr hart zu seinen Leuten.
-	AI_Output (self, hero, "DIA_BAU_13_JOIN_13_02"); //Wenn sich einer von ihnen nicht benimmt, nimmt er ihn sich zur Brust.
+	AI_Output (hero, self, "DIA_BAU_13_JOIN_15_00"); //I want to know more about the mercenaries!
+	AI_Output (self, hero, "DIA_BAU_13_JOIN_13_01"); //If you ever have trouble with them, go to Lares. That's what we farmers do. He's very hard on his people.
+	AI_Output (self, hero, "DIA_BAU_13_JOIN_13_02"); //If one of them doesn't behave, take him to his chest.
 };
 
 // *************************************************************************
@@ -58,7 +58,7 @@ INSTANCE DIA_BAU_13_PEOPLE(C_INFO)
 	condition	= DIA_BAU_13_PEOPLE_Condition;
 	information	= DIA_BAU_13_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT DIA_BAU_13_PEOPLE_Condition()
@@ -71,8 +71,8 @@ FUNC INT DIA_BAU_13_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_13_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_13_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, hero, "DIA_BAU_13_PEOPLE_13_01"); //Onar ist der Boss.
+	AI_Output (hero, self, "DIA_BAU_13_PEOPLE_15_00"); //Who's in charge here?
+	AI_Output (self, hero, "DIA_BAU_13_PEOPLE_13_01"); //Onar is the boss.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_BAU_13_LOCATION(C_INFO)
 	condition	= DIA_BAU_13_LOCATION_Condition;
 	information	= DIA_BAU_13_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was kannst du mir über die Gegend hier erzählen?";
+	description = "What can you tell me about this neighborhood?";
 };                       
 
 FUNC INT DIA_BAU_13_LOCATION_Condition()
@@ -97,9 +97,9 @@ FUNC INT DIA_BAU_13_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_13_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_13_LOCATION_15_00"); //Was kannst du mir über die Gegend hier erzählen?
-	AI_Output (self, hero, "DIA_BAU_13_LOCATION_13_01"); //Es gibt drei Höfe hier. Onars im Osten und Sekobs im Norden das Tals.
-	AI_Output (self, hero, "DIA_BAU_13_LOCATION_13_02"); //Im Südwesten gibt es einen Aufgang zur Hochebene. Dort liegt Bengars Hof.
+	AI_Output (hero, self, "DIA_BAU_13_LOCATION_15_00"); //What can you tell me about this neighborhood?
+	AI_Output (self, hero, "DIA_BAU_13_LOCATION_13_01"); //There are three farms here. Onars in the east and Sekobs in the north of the valley.
+	AI_Output (self, hero, "DIA_BAU_13_LOCATION_13_02"); //In the southwest there is a staircase to the plateau. There lies Bengar's farm.
 };
 
 INSTANCE Info_Mod_BAU_13_Pickpocket (C_INFO)

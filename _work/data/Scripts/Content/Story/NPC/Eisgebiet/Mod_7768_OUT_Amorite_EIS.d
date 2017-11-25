@@ -1,7 +1,7 @@
 instance Mod_7768_OUT_Amorite_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Amorite";	//Halvors Frau
+	name 		= "cupid";	//Halvors Frau
 	guild 		= GIL_OUT;
 	id 			= 7768;
 	voice 		= 17;

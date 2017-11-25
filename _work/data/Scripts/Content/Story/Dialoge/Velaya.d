@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Velaya_Hi (C_INFO)
 	information	= Info_Mod_Velaya_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Falls du diesen Ort verlassen willst, zieh das hier über und folge mir.";
+	description	= "If you want to leave this place, put this on and follow me.";
 };
 
 FUNC INT Info_Mod_Velaya_Hi_Condition()
@@ -20,11 +20,11 @@ FUNC INT Info_Mod_Velaya_Hi_Condition()
 
 FUNC VOID Info_Mod_Velaya_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_Hi_15_00"); //Falls du diesen Ort verlassen willst, zieh das hier über und folge mir.
+	AI_Output(hero, self, "Info_Mod_Velaya_Hi_15_00"); //If you want to leave this place, put this on and follow me.
 
 	B_GiveInvItems	(hero, self, ItAr_WomanCape, 1);
 
-	AI_Output(self, hero, "Info_Mod_Velaya_Hi_17_01"); //Endlich hier weg? Nichts lieber als das.
+	AI_Output(self, hero, "Info_Mod_Velaya_Hi_17_01"); //Finally out of here? Nothing better than that.
 
 	AI_EquipArmor	(self, ItAr_WomanCape);
 
@@ -62,18 +62,18 @@ FUNC VOID Info_Mod_Velaya_AusLager_Info()
 
 	Npc_RemoveInvItems	(self, ItAr_WomanCape, 1);
 
-	AI_Output(self, hero, "Info_Mod_Velaya_AusLager_17_00"); //(überglücklich) Endlich diesem verfluchten Lager entkommen, juchu, jippieh. Und jetzt dieses Tal verlassen.
+	AI_Output(self, hero, "Info_Mod_Velaya_AusLager_17_00"); //(lucky) Finally escape from this cursed camp, yoo-hoo, yoo-hoo! And now leave this valley.
 	
 	Info_ClearChoices	(Info_Mod_Velaya_AusLager);
 
-	Info_AddChoice	(Info_Mod_Velaya_AusLager, "Selbstverständlich, gehen wir.", Info_Mod_Velaya_AusLager_B);
-	Info_AddChoice	(Info_Mod_Velaya_AusLager, "Nein, jetzt gehen wir ins Neue Lager.", Info_Mod_Velaya_AusLager_A);
+	Info_AddChoice	(Info_Mod_Velaya_AusLager, "Of course, let's go.", Info_Mod_Velaya_AusLager_B);
+	Info_AddChoice	(Info_Mod_Velaya_AusLager, "No, now we go to the new camp.", Info_Mod_Velaya_AusLager_A);
 };
 
 FUNC VOID Info_Mod_Velaya_AusLager_B()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_AusLager_B_15_00"); //Selbstverständlich, gehen wir.
-	AI_Output(self, hero, "Info_Mod_Velaya_AusLager_B_17_01"); //Na dann los. Bleib aber in meiner Nähe.
+	AI_Output(hero, self, "Info_Mod_Velaya_AusLager_B_15_00"); //Of course, let's go.
+	AI_Output(self, hero, "Info_Mod_Velaya_AusLager_B_17_01"); //All right, let's go. But stay close to me.
 
 	Info_ClearChoices	(Info_Mod_Velaya_AusLager);
 
@@ -86,8 +86,8 @@ FUNC VOID Info_Mod_Velaya_AusLager_B()
 
 FUNC VOID Info_Mod_Velaya_AusLager_A()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_AusLager_A_15_00"); //Nein, jetzt gehen wir ins Neue Lager.
-	AI_Output(self, hero, "Info_Mod_Velaya_AusLager_A_17_01"); //Was?! Auf keinen Fall.
+	AI_Output(hero, self, "Info_Mod_Velaya_AusLager_A_15_00"); //No, now we go to the new camp.
+	AI_Output(self, hero, "Info_Mod_Velaya_AusLager_A_17_01"); //What?! Absolutely not.
 
 	Info_ClearChoices	(Info_Mod_Velaya_AusLager);
 
@@ -120,8 +120,8 @@ FUNC INT Info_Mod_Velaya_Umgehauen_Condition()
 
 FUNC VOID Info_Mod_Velaya_Umgehauen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Velaya_Umgehauen_17_00"); //Du Schuft ...
-	AI_Output(hero, self, "Info_Mod_Velaya_Umgehauen_15_01"); //Na, immer noch bockig. Los, du folgst mir jetzt.
+	AI_Output(self, hero, "Info_Mod_Velaya_Umgehauen_17_00"); //You villain...
+	AI_Output(hero, self, "Info_Mod_Velaya_Umgehauen_15_01"); //Still stubborn. Come on, you follow me now.
 
 	Mod_SLD_Velaya = 3;
 
@@ -161,14 +161,14 @@ FUNC VOID Info_Mod_Velaya_Unterwegs_Info()
 {
 	Info_ClearChoices	(Info_Mod_Velaya_Unterwegs);
 
-	Info_AddChoice	(Info_Mod_Velaya_Unterwegs, "Ich habe es mir anders überlegt.", Info_Mod_Velaya_Unterwegs_B);
-	Info_AddChoice	(Info_Mod_Velaya_Unterwegs, "Gehen wir weiter.", Info_Mod_Velaya_Unterwegs_A);
+	Info_AddChoice	(Info_Mod_Velaya_Unterwegs, "I've changed my mind.", Info_Mod_Velaya_Unterwegs_B);
+	Info_AddChoice	(Info_Mod_Velaya_Unterwegs, "Let's keep going.", Info_Mod_Velaya_Unterwegs_A);
 };
 
 FUNC VOID Info_Mod_Velaya_Unterwegs_B()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_Unterwegs_B_15_00"); //Ich habe es mir anders überlegt. Wir gehen ins neue Lager.
-	AI_Output(self, hero, "Info_Mod_Velaya_Unterwegs_B_17_01"); //Niemals!
+	AI_Output(hero, self, "Info_Mod_Velaya_Unterwegs_B_15_00"); //I've changed my mind. We're going to the new camp.
+	AI_Output(self, hero, "Info_Mod_Velaya_Unterwegs_B_17_01"); //Never ever!
 
 	Info_ClearChoices	(Info_Mod_Velaya_Unterwegs);
 
@@ -181,7 +181,7 @@ FUNC VOID Info_Mod_Velaya_Unterwegs_B()
 
 FUNC VOID Info_Mod_Velaya_Unterwegs_A()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_Unterwegs_A_15_00"); //Gehen wir weiter.
+	AI_Output(hero, self, "Info_Mod_Velaya_Unterwegs_A_15_00"); //Let's keep going.
 
 	Info_ClearChoices	(Info_Mod_Velaya_Unterwegs);
 
@@ -209,14 +209,14 @@ FUNC INT Info_Mod_Velaya_AtPass_Condition()
 
 FUNC VOID Info_Mod_Velaya_AtPass_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Velaya_AtPass_17_00"); //Ab hier schaffe ich es dann allein. Wie kann ich dir nur danken ... Aber halt, da fällt mir doch was ein.
-	AI_Output(self, hero, "Info_Mod_Velaya_AtPass_17_01"); //Seitdem irgendjemand alle Truhen im Haus der Erzbarone leer geräumt hat, wurden die Schätze und Reichtümer an verschiedenen geheimen Stellen im Haus deponiert.
-	AI_Output(self, hero, "Info_Mod_Velaya_AtPass_17_02"); //Eine davon – so habe ich einmal beobachtet – ist im Kamin von Bartholos Zimmer. Unterhalb der Asche ist ein kleines Versteck. Da solltest du fündig werden.
-	AI_Output(self, hero, "Info_Mod_Velaya_AtPass_17_03"); //Aber lass dich nicht erwischen. Und pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Velaya_AtPass_17_00"); //From here I can do it on my own. How can I thank you... But wait, I can think of something.
+	AI_Output(self, hero, "Info_Mod_Velaya_AtPass_17_01"); //Since someone has emptied all the coffers in the house of the arch-barons, the treasures and riches have been deposited in various secret places in the house.
+	AI_Output(self, hero, "Info_Mod_Velaya_AtPass_17_02"); //One of them - as I once observed - is in the fireplace of Bartholos room. There's a little hiding place under the ashes. You should be able to find it.
+	AI_Output(self, hero, "Info_Mod_Velaya_AtPass_17_03"); //But don't get caught. And take care of yourself.
 
 	B_GivePlayerXP	(450);
 
-	MOBNAME_XR_ERZBARONVELAYA = "Versteck im Kamin";
+	MOBNAME_XR_ERZBARONVELAYA = "Hiding in the fireplace";
 
 	AI_StopProcessInfos	(self);
 

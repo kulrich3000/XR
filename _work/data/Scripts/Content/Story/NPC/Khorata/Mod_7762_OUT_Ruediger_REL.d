@@ -1,7 +1,7 @@
 instance Mod_7762_OUT_Ruediger_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Rüdiger"; 
+	name 		= "male dog"; 
 	guild 		= GIL_OUT;
 	id 			= 7762;
 	voice 		= 9;

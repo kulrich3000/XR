@@ -5,17 +5,17 @@ FUNC VOID Button_Spielfigur_Enter(var int hndl) {
 	tex = View_GetTexture(Button_GetViewHandle(hndl));
 
 	if (Hlp_StrCmp(tex, "MG_FIGUR_TROLL.TGA")) {
-		Button_CreateMouseover("Gewinnt jeden Kampf, kann nicht übersprungen werden", Font_ScreenSmall);
+		Button_CreateMouseover("Wins every fight, can't be skipped", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_MINECRAWLERQUEEN.TGA")) {
-		Button_CreateMouseover("Friert die Reihe vor sich für eine Runde ein", Font_ScreenSmall);
+		Button_CreateMouseover("Freeze the line in front of you for a lap", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_HASE.TGA")) {
-		Button_CreateMouseover("Kann Gegner (außer Troll) überspringen", Font_ScreenSmall);
+		Button_CreateMouseover("Can skip enemies (except troll)", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_MEATBUG.TGA")) {
-		Button_CreateMouseover("Verliert jeden Kampf", Font_ScreenSmall);
+		Button_CreateMouseover("Loses every fight", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_BALROG.TGA")) {
-		Button_CreateMouseover("Verbrennt Gegner auf den Feldern direkt rechts und links von sich", Font_ScreenSmall);
+		Button_CreateMouseover("Burn enemies on the fields to the right and left of each other", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_GOBLIN.TGA")) {
-		Button_CreateMouseover("Hinterlässt auf seinem ehemaligen Feld für eine Runde eine Mine", Font_ScreenSmall);
+		Button_CreateMouseover("Leaves a mine on his former field for a lap.", Font_ScreenSmall);
 	};
 };
 

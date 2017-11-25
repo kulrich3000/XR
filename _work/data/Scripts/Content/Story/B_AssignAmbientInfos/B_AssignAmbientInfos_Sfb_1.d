@@ -14,7 +14,7 @@ INSTANCE Info_sfb_1_EXIT(C_INFO)
 	condition	= Info_sfb_1_EXIT_Condition;
 	information	= Info_sfb_1_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_sfb_1_EXIT_Condition()
@@ -62,7 +62,7 @@ INSTANCE Info_sfb_1_KesselProblem2 (C_INFO)
 	information	= Info_sfb_1_KesselProblem2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, habe gehört, dass wilde Tiere euch bedrohen und einer von euch getötet wurde.";
+	description	= "Hey, I heard wild animals threaten you and one of you was killed.";
 };                       
 
 FUNC INT Info_sfb_1_KesselProblem2_Condition()
@@ -79,21 +79,21 @@ FUNC VOID Info_sfb_1_KesselProblem2_Info()
 {
 	B_Say	(hero, self, "$KESSELPROBLEM01");
 
-	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_00"); //Ja, man, habe auch davon gehört. Mitten in der Nacht hat es ihn geholt.
-	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_01"); //War einfach weg am nächsten morgen.
+	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_00"); //Yeah, I heard about that, too. It took him in the middle of the night.
+	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_01"); //Just left the next morning.
 
 	B_Say	(hero, self, "§KESSELPROBLEM02");
 
-	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_02"); //Doch, der Söldner Bruce hat es mit angesehen.
-	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_03"); //Er hat das Vieh verfolgt und ihm das Fell über die Ohren gezogen. Geschieht dem Mistvieh recht.
-	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_04"); //Hätte ich dem Bruce gar nicht zugetraut.
-	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_05"); //(zu sich selbst) Besonders abends stinkt’s wie ein Feld voll Sumpfkraut.
+	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_02"); //Yeah, the mercenary Bruce saw it happen.
+	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_03"); //He was chasing the cattle, and he pulled his fur over his ears. Serves the bitch right.
+	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_04"); //I wouldn't have thought the Bruce was capable of it.
+	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_05"); //Particularly in the evening it stinks like a field of bogweed.
 
 	B_Say	(hero, self, "§KESSELPROBLEM03");
 
-	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_06"); //Ohh ... hey, Mann, vergiss es, ich habe nichts gesagt.
+	AI_Output(self,hero,"Info_sfb_1_KesselProblem2_01_06"); //Ohh... Hey, man, forget it, I didn't say anything.
 
-	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Wie ich von einem Schürfer erfahren habe, wurde das Opfer nachts von dem Schattenläufer geholt. Außer Bruce hat aber niemand was gesehen oder gehört. Der Schürfer murmelte noch in Zusammenhang mit Bruce irgendetwas von 'abends' und 'Sumpfkraut'.");
+	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "As I heard from a prospector, the victim was taken at night by the shadow runner. Except for Bruce, no one saw or heard anything. The prospector still mumbled in connection with Bruce something of' evening' and' bogweed'.");
 
 	Mod_NL_TalkesselProblem = 1;
 };
@@ -104,7 +104,7 @@ INSTANCE Info_sfb_1_EinerVonEuchWerden (C_INFO)
 	condition	= Info_sfb_1_EinerVonEuchWerden_Condition;
 	information	= Info_sfb_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Wie kann ich dem Schürferbund beitreten?";
+	description = "How can I join the Association of prospectors?";
 };                       
 
 FUNC INT Info_sfb_1_EinerVonEuchWerden_Condition()
@@ -114,10 +114,10 @@ FUNC INT Info_sfb_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_sfb_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_sfb_1_EinerVonEuchWerden_15_00"); //Wie kann ich dem Schürferbund beitreten?
-	AI_Output(self,hero,"Info_sfb_1_EinerVonEuchWerden_01_01"); //Bei uns mitmachen? Glaub bloß nicht, hier wird nicht gearbeitet, nur weil man uns nicht zwingt.
-	AI_Output(self,hero,"Info_sfb_1_EinerVonEuchWerden_01_02"); //Also wenn du glaubst, du kannst hier faulenzen, dann bist du schief gewickelt, mein Freund.
-	AI_Output(self,hero,"Info_sfb_1_EinerVonEuchWerden_01_03"); //Wenn du jetzt immer noch glaubst hier richtig zu sein, dann such dir ne Spitzhacke und melde dich bei der Wache vor dem Eingang zur Mine.
+	AI_Output(hero,self,"Info_sfb_1_EinerVonEuchWerden_15_00"); //How can I join the Association of prospectors?
+	AI_Output(self,hero,"Info_sfb_1_EinerVonEuchWerden_01_01"); //Join us? Don't think we don't work here just because we're not forced.
+	AI_Output(self,hero,"Info_sfb_1_EinerVonEuchWerden_01_02"); //So if you think you can laze around here, you're crooked, my friend.
+	AI_Output(self,hero,"Info_sfb_1_EinerVonEuchWerden_01_03"); //If you still think you're right here, find a pickaxe and report to the guard outside the mine entrance.
 };
 
 // *************************************************************************
@@ -130,7 +130,7 @@ INSTANCE Info_sfb_1_WichtigePersonen(C_INFO)
 	condition	= Info_sfb_1_WichtigePersonen_Condition;
 	information	= Info_sfb_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_sfb_1_WichtigePersonen_Condition()
@@ -140,8 +140,8 @@ FUNC INT Info_sfb_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_sfb_1_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_sfb_1_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_sfb_1_WichtigePersonen_01_01"); //Das Sagen? Sieh dich doch mal um. Bestimmt nicht die Leute, die den ganzen Tag schuften, um genug Erz zu fördern.
+	AI_Output(hero,self,"Info_sfb_1_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,hero,"Info_sfb_1_WichtigePersonen_01_01"); //The say? Take a look around. Certainly not the people who work all day to extract enough ore.
 };
 
 // *************************************************************************
@@ -154,7 +154,7 @@ INSTANCE Info_sfb_1_DasLager(C_INFO)
 	condition	= Info_sfb_1_DasLager_Condition;
 	information	= Info_sfb_1_DasLager_Info;
 	permanent	= 1;
-	description = "Was ist das hier?";
+	description = "What is this place?";
 };                       
 
 FUNC INT Info_sfb_1_DasLager_Condition()
@@ -164,9 +164,9 @@ FUNC INT Info_sfb_1_DasLager_Condition()
 
 FUNC VOID Info_sfb_1_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_sfb_1_DasLager_15_00"); //Was ist das hier?
-	AI_Output(self,hero,"Info_sfb_1_DasLager_01_01"); //Wie sieht es denn aus? Wie der Palast des Königs?
-	AI_Output(self,hero,"Info_sfb_1_DasLager_01_02"); //Also wenn du wirklich in der Freien Mine arbeiten willst, dann wirst du erst hier im Kessel beweisen müssen, dass wir dich gebrauchen können.
+	AI_Output(hero,self,"Info_sfb_1_DasLager_15_00"); //What is this place?
+	AI_Output(self,hero,"Info_sfb_1_DasLager_01_01"); //What's it look like? Like the king's palace?
+	AI_Output(self,hero,"Info_sfb_1_DasLager_01_02"); //So if you really want to work in the Free Mine, you'll have to prove here in the kettle that we can use you.
 };
 
 // *************************************************************************
@@ -179,7 +179,7 @@ INSTANCE Info_sfb_1_DieLage(C_INFO)
 	condition	= Info_sfb_1_DieLage_Condition;
 	information	= Info_sfb_1_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_sfb_1_DieLage_Condition()
@@ -189,8 +189,8 @@ FUNC INT Info_sfb_1_DieLage_Condition()
 
 FUNC VOID Info_sfb_1_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_sfb_1_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,hero,"Info_sfb_1_DieLage_01_01"); //Wie soll's schon aussehen? Beschissen wie immer. Kaum was zu beißen, dafür immer was zu tun.
+	AI_Output(hero,self,"Info_sfb_1_DieLage_15_00"); //How's it looking?
+	AI_Output(self,hero,"Info_sfb_1_DieLage_01_01"); //What's it gonna look like? Shitty as ever. Hardly anything to bite, always something to do for it.
 };
 
 INSTANCE Info_Mod_SFB_1_Pickpocket (C_INFO)

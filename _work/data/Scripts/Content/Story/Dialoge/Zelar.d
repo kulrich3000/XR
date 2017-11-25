@@ -15,15 +15,15 @@ FUNC INT Info_Mod_Zelar_Hi_Condition()
 
 FUNC VOID Info_Mod_Zelar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_00"); //Bist du ein Neuer?
-	AI_Output(hero, self, "Info_Mod_Zelar_Hi_15_01"); //Vielleicht. Und du bist ein Waldläufer?
-	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_02"); //Ja. Wie du an meiner schönen Rüstung sehen kannst.
-	AI_Output(hero, self, "Info_Mod_Zelar_Hi_15_03"); //Meine ist auch nicht ohne. Aber was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_04"); //Ich schiebe Wache, wie die Jäger hier und der Waldläufer am Tor.
-	AI_Output(hero, self, "Info_Mod_Zelar_Hi_15_05"); //Ist das nötig?
-	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_06"); //Was glaubst du? In letzter Zeit streift allerlei Gesindel durch das Tal.
-	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_07"); //Außerdem, hast du schon mal ein Lager ohne Torwache gesehen?
-	AI_Output(hero, self, "Info_Mod_Zelar_Hi_15_08"); //Eigentlich nicht. Ich will dann mal weiter.
+	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_00"); //Are you new?
+	AI_Output(hero, self, "Info_Mod_Zelar_Hi_15_01"); //Maybe. And you're a ranger?
+	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_02"); //Yeah. As you can see from my beautiful armor.
+	AI_Output(hero, self, "Info_Mod_Zelar_Hi_15_03"); //Mine isn't without it either. But what are you doing here?
+	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_04"); //I'll be on guard duty like the hunters here and the Ranger at the gate.
+	AI_Output(hero, self, "Info_Mod_Zelar_Hi_15_05"); //Is that necessary?
+	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_06"); //What do you think? All sorts of riffraff have been roaming the valley lately.
+	AI_Output(self, hero, "Info_Mod_Zelar_Hi_31_07"); //Besides, have you ever seen a camp without a gatekeeper?
+	AI_Output(hero, self, "Info_Mod_Zelar_Hi_15_08"); //Actually, I don't. I want to keep going.
 };
 
 INSTANCE Info_Mod_Zelar_CyrcoMine (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Zelar_CyrcoMine (C_INFO)
 	information	= Info_Mod_Zelar_CyrcoMine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst so aufgeräumt aus. Interesse an einem Auslug?";
+	description	= "You look so tidy. Interested in an excursion?";
 };
 
 FUNC INT Info_Mod_Zelar_CyrcoMine_Condition()
@@ -47,17 +47,17 @@ FUNC INT Info_Mod_Zelar_CyrcoMine_Condition()
 
 FUNC VOID Info_Mod_Zelar_CyrcoMine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zelar_CyrcoMine_15_00"); //Tag, Waldläufer. Du siehst so aufgeräumt aus. Interesse an einem Ausflug?
-	AI_Output(self, hero, "Info_Mod_Zelar_CyrcoMine_31_01"); //Gerne. Hier steht man sich nur die Beine in den Bauch.
-	AI_Output(hero, self, "Info_Mod_Zelar_CyrcoMine_15_02"); //Wir marschieren zur Alten Mine, da gibt's was auszuräuchern.
-	AI_Output(self, hero, "Info_Mod_Zelar_CyrcoMine_31_03"); //Prima. Hast du vielleicht 'nen Stängel für mich? Wenn wir grad dabei sind ...
-	AI_Output(hero, self, "Info_Mod_Zelar_CyrcoMine_15_04"); //Nach der Arbeit bekommst du zehn Stück. Versprochen.
-	AI_Output(self, hero, "Info_Mod_Zelar_CyrcoMine_31_05"); //Wenn das nix ist! Wann geht's los?
-	AI_Output(hero, self, "Info_Mod_Zelar_CyrcoMine_15_06"); //Ich sag Bescheid.
+	AI_Output(hero, self, "Info_Mod_Zelar_CyrcoMine_15_00"); //Hi, Ranger. You look so tidy. Interested in a trip?
+	AI_Output(self, hero, "Info_Mod_Zelar_CyrcoMine_31_01"); //Gladly. It's just the legs in your stomach.
+	AI_Output(hero, self, "Info_Mod_Zelar_CyrcoMine_15_02"); //We're marching to the Old Mine, there's something to smoke out.
+	AI_Output(self, hero, "Info_Mod_Zelar_CyrcoMine_31_03"); //That's swell. Do you have a stem for me? While we're at it....
+	AI_Output(hero, self, "Info_Mod_Zelar_CyrcoMine_15_04"); //After work you get ten pieces. I promise.
+	AI_Output(self, hero, "Info_Mod_Zelar_CyrcoMine_31_05"); //If that's nothing! When do we start?
+	AI_Output(hero, self, "Info_Mod_Zelar_CyrcoMine_15_06"); //I'll let you know.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Sonor_CyrcoMine))
 	{
-		B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "So, ich habe alles beisammen. Ausrüstung und zwei Mann. Sonor und Zelar werden mitgehen. Noch mal bei Cyrco vorbeischauen ...");
+		B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "So, I've got it all together. Equipment and two men. Sonor and Zelar will go with them. Have another look at Cyrco...");
 	};
 };
 
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Zelar_AlterMann (C_INFO)
 	information	= Info_Mod_Zelar_AlterMann_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wegen altem Mann im Wald fragen.";
+	description	= "Ask about old man in the woods.";
 };
 
 FUNC INT Info_Mod_Zelar_AlterMann_Condition()
@@ -87,54 +87,54 @@ FUNC VOID Info_Mod_Zelar_AlterMann_Info()
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN01");
 
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_00"); //Ahh, du meinst den alten Mann des Waldes. Ja, etwas weiß ich über ihn.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_01"); //Er soll Jahrhunderte alt sein und die Tiere des Waldes rund um Khorata behüten.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_02"); //Zwar sagt man, er sei blind, jedoch gleichzeitig auch magisch begabt.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_03"); //Mehr fällt mir gerade nicht ein. Vielleicht weiß ein anderer mehr.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_00"); //Ahh, you mean the old man of the woods. Yeah, I know something about him.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_01"); //It is said to be centuries old and to protect the animals of the forest around Khorata.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_02"); //It is said that he is blind, but at the same time he has a magical talent.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_03"); //That's all I can think of right now. Maybe someone else knows more.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Von dem ersten Waldläufer erfuhr ich nicht viel Neues. Der alte Mann des Waldes behütet die Tiere, er ist uralt, blind und magisch begabt. Vielleicht weiß ein anderer Waldläufer mehr.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "From the first ranger I didn't get much new information. The old man of the forest protects the animals, he is ancient, blind and magical. Maybe another ranger knows more.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 1)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN02");
 
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_04"); //Der alte Mann des Waldes? Ja, ich hörte, er sei einst ein Diener Adanos gewesen.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_05"); //Wobei unklar ist, ob er ein Waldläufer war wie wir, ein Magier des Wassers, oder ein Verwandlungsmagier.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_06"); //Seine magischen Fähigkeiten, wie auch seine starke Bindung zur Tier- und Pflanzenwelt zeugen davon, dass er von allem etwas hat.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_04"); //The old man of the forest? Yes, I heard he was once a servant of Adano.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_05"); //It is unclear whether he was a ranger like us, a magician of water, or a transforming mage.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_06"); //His magical abilities, as well as his strong attachment to the animal and plant world are proof that he has something of everything.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Beim zweiten Waldläufer erfuhr ich auch nicht viel Wissenswertes. Der alte Mann des Waldes soll Adanos und der Schöpfung verbunden sein, allem voran der Tier- und Pflanzenwelt.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "The second ranger didn't tell me much worth knowing. The old man of the forest is said to be associated with Adanos and creation, especially the fauna and flora.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 2)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN03");
 
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_07"); //Tja, viel kann ich dir nicht über ihn verraten.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_08"); //Das Problem besteht auch darin, dass er mit keinem Menschen spricht, nicht mal mit uns, auch, wenn wir eigentlich ähnliche Ziele verfolgen.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_09"); //Allein mit den Tieren des Waldes unterhält er sich.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_10"); //Tja, wenn ich ein Keiler wäre, könnte ich dir bestimmt mehr über ihn verraten.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_07"); //Well, I can't tell you much about him.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_08"); //The problem is also that he does not talk to anyone, not even us, even if we are pursuing similar goals.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_09"); //Alone with the animals of the forest he entertains himself.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_10"); //Well, if I were a boar, I'm sure I could tell you more about him.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Ach ja, das könnte ein wichtiger Hinweis gewesen sein. Der alte Mann des Waldes meidet Menschen gänzlich, spricht nur mit Tieren.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Oh, yeah, that could have been an important clue. The old man of the forest completely avoids humans, only speaks to animals.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 3)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN04");
 
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_11"); //Der alte Mann des Waldes? Nun, er soll in enger Beziehung zur Tier- und Pflanzenwelt stehen.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_12"); //Man sagt, er leite Rudeltiere wie Keiler oder Wölfe dazu an, den Wald gegen Eindringlinge zu beschützen.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_13"); //Selbst, so sagt man, fände man ihn häufig in Gestalt eines grünen Wolfes vor.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_11"); //The old man of the forest? Well, he's supposed to be closely related to the fauna and flora.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_12"); //It is said that he leads pack animals such as boar or wolves to protect the forest against intruders.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_13"); //Even it is said that it is often found in the shape of a green wolf.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Er soll vor allem auch größere Rudeltiere wie Keiler und Wölfe dazu anleiten den Wald gegen Eindringlinge zu beschützen.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Above all, he should also instruct larger pack animals such as boar and wolves to protect the forest against intruders.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 4)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN05");
 
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_14"); //Du interessierst dich für Geschichten über den alten Mann des Waldes?
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_15"); //Nun, viel weiß ich nicht über diesen mystischen Kauz.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_16"); //Er soll sich meistens im dunklen Wald aufhalten, aber auch immer in der Nähe von Gewässern, wie Seen.
-		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_17"); //Selten hat ihn jemand zu Gesicht bekommen ...
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_14"); //You're interested in stories about the old man of the forest?
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_15"); //Well, I don't know much about this mystical oddball.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_16"); //It is said to reside mostly in the dark forest, but also near water bodies such as lakes.
+		AI_Output(self, hero, "Info_Mod_Zelar_AlterMann_31_17"); //Rarely has someone seen him....
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Man findet ihn höchst wahrscheinlich im dichten Wald Khoratas in der Nähe eines Sees.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "It is most likely to be found in the dense forest of Khorata near a lake.");
 	};
 
 	Mod_BDT_AlterWaldMann += 1;
@@ -148,7 +148,7 @@ INSTANCE Info_Mod_Zelar_Urs (C_INFO)
 	information	= Info_Mod_Zelar_Urs_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, ich bringe euch die magischen Pfeile von Urs.";
+	description	= "Hello, I bring you the magic arrows of Urs.";
 };
 
 FUNC INT Info_Mod_Zelar_Urs_Condition()
@@ -162,14 +162,14 @@ FUNC INT Info_Mod_Zelar_Urs_Condition()
 
 FUNC VOID Info_Mod_Zelar_Urs_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zelar_Urs_15_00"); //Hallo, ich bringe euch die magischen Pfeile von Urs.
+	AI_Output(hero, self, "Info_Mod_Zelar_Urs_15_00"); //Hello, I bring you the magic arrows of Urs.
 
 	B_GiveInvItems	(hero, self, ItMi_PfeilpaketZelar, 1);
 
-	AI_Output(self, hero, "Info_Mod_Zelar_Urs_31_01"); //Das trifft sich gut. Gerade treiben sich diese aufdringlichen Irrlichter wieder gefährlich nahe vor unserem Lager herum.
-	AI_Output(self, hero, "Info_Mod_Zelar_Urs_31_02"); //Ob Mensch oder Tier, sie greifen alles an, was geht und steht.
-	AI_Output(self, hero, "Info_Mod_Zelar_Urs_31_03"); //Wenn die Pfeile ihre Wirkung erzielen, sollst du deine Felle erhalten.
-	AI_Output(self, hero, "Info_Mod_Zelar_Urs_31_04"); //Komm mit.
+	AI_Output(self, hero, "Info_Mod_Zelar_Urs_31_01"); //That's a good thing. Just now these obtrusive Night Wisps are again dangerously close to our camp.
+	AI_Output(self, hero, "Info_Mod_Zelar_Urs_31_02"); //Whether human or animal, they attack everything that goes and stands.
+	AI_Output(self, hero, "Info_Mod_Zelar_Urs_31_03"); //When the arrows reach their effect, you shall keep your skins.
+	AI_Output(self, hero, "Info_Mod_Zelar_Urs_31_04"); //Come with me.
 
 	AI_StopProcessInfos	(self);
 
@@ -205,17 +205,17 @@ FUNC INT Info_Mod_Zelar_Urs2_Condition()
 
 FUNC VOID Info_Mod_Zelar_Urs2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Zelar_Urs2_31_00"); //So, diese Plagegeister wären erledigt. Die Pfeile sind jedes Fell Wert. Hier, und hab Dank.
+	AI_Output(self, hero, "Info_Mod_Zelar_Urs2_31_00"); //Well, these nuisances are done with. The arrows are worth every coat. Here, and thank you.
 
 	CreateInvItems	(hero, ItAt_WargFur, 2);
 	CreateInvItems	(hero, ItAt_ShadowFur, 2);
 	CreateInvItems	(hero, ItAt_TrollFur, 1);
 
-	B_ShowGivenThings	("2 Wargfelle, 2 Schattenläuferfelle und 1 Trollfell erhalten");
+	B_ShowGivenThings	("2 warning pelts, 2 shadow runners and 1 troll fur preserved");
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry	(TOPIC_MOD_URS_HUND, "Ich habe die Felle von Zelar.");
+	B_LogEntry	(TOPIC_MOD_URS_HUND, "I have Zelar's skins.");
 
 	AI_StopProcessInfos	(self);
 
@@ -232,7 +232,7 @@ INSTANCE Info_Mod_Zelar_Heiltrank (C_INFO)
 	information	= Info_Mod_Zelar_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Zelar_Heiltrank_Condition()
@@ -251,31 +251,31 @@ FUNC VOID Info_Mod_Zelar_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Essenz der Heilung", Info_Mod_Zelar_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Essence of Healing", Info_Mod_Zelar_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Elixier der Heilung", Info_Mod_Zelar_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Elixir of Healing", Info_Mod_Zelar_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Extrakt der Heilung", Info_Mod_Zelar_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Extract of Healing", Info_Mod_Zelar_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Essenz der Heilung", Info_Mod_Zelar_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Essence of Healing", Info_Mod_Zelar_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Trank der leichten Heilung", Info_Mod_Zelar_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Drink of light healing", Info_Mod_Zelar_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Leichter Heiltrank", Info_Mod_Zelar_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Light healing potion", Info_Mod_Zelar_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Zelar_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Drink of fast healing", Info_Mod_Zelar_Heiltrank_Health_05);
 	};
 };
 

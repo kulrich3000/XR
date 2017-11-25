@@ -1,7 +1,7 @@
 instance Mod_7369_WNOV_Neku_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Neku"; 
+	name 		= "neku"; 
 	guild 		= GIL_NOV;
 	id 			= 7369;
 	voice 		= 9;

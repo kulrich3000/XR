@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Caine_Hi (C_INFO)
 	information	= Info_Mod_Caine_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo.";
+	description	= "Hello.";
 };
 
 FUNC INT Info_Mod_Caine_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Caine_Hi_Condition()
 
 FUNC VOID Info_Mod_Caine_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Caine_Hi_15_00"); //Hallo.
-	AI_Output(self, hero, "Info_Mod_Caine_Hi_31_01"); //Oh, dich jemals wiederzusehen, hätte ich nicht für möglich gehalten.
-	AI_Output(self, hero, "Info_Mod_Caine_Hi_31_02"); //Da ich jetzt der Zuständige für Tränke und Spruchrollen bin, kann ich sie dir auch verkaufen.
+	AI_Output(hero, self, "Info_Mod_Caine_Hi_15_00"); //Hello.
+	AI_Output(self, hero, "Info_Mod_Caine_Hi_31_01"); //Oh, seeing you ever again, I wouldn't have thought it possible.
+	AI_Output(self, hero, "Info_Mod_Caine_Hi_31_02"); //Now that I'm in charge of potions and sayings, I can sell them to you.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_PSICAMP, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_PSICAMP, "Baal Caine kann mir Tränke und Spruchrollen verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_PSICAMP, "Baal Caine can sell me potions and spell rolls.");
 };
 
 INSTANCE Info_Mod_Caine_GotoTempel (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Caine_GotoTempel (C_INFO)
 	information	= Info_Mod_Caine_GotoTempel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wirst am Tempel erwartet.";
+	description	= "You are expected at the temple.";
 };
 
 FUNC INT Info_Mod_Caine_GotoTempel_Condition()
@@ -46,7 +46,7 @@ FUNC INT Info_Mod_Caine_GotoTempel_Condition()
 
 FUNC VOID Info_Mod_Caine_GotoTempel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Caine_GotoTempel_15_00"); //Du wirst am Tempel erwartet.
+	AI_Output(hero, self, "Info_Mod_Caine_GotoTempel_15_00"); //You are expected at the temple.
 
 	AI_StopProcessInfos	(hero);
 
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Caine_Leichengase (C_INFO)
 	information	= Info_Mod_Caine_Leichengase_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, ein Problem wegen des Gestanks gefunden?";
+	description	= "Found a problem with the smell?";
 };
 
 FUNC INT Info_Mod_Caine_Leichengase_Condition()
@@ -74,20 +74,20 @@ FUNC INT Info_Mod_Caine_Leichengase_Condition()
 
 FUNC VOID Info_Mod_Caine_Leichengase_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase_15_00"); //Na, ein Problem wegen des Gestanks gefunden?
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_01"); //Ja ... Nein ... Vielleicht. Ich habe verschiedene Geruchstöter, -überdecker und –neutralisatoren entwickelt.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_02"); //Aber ich weiß nicht, ob und falls ja, welcher funktioniert. Ich brauche als erstes eine Geruchs-, oder besser Gestanksprobe.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_03"); //Wärst du so nett ...?
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase_15_04"); //Was? Der eine ist erblindet! Ich geh da doch nicht einfach rein!
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_05"); //Ja, ja ... ich verstehe. Hier, nimm das.
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase_15_00"); //Found a problem with the smell?
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_01"); //Yes... No... Maybe. I have developed various odor killers, maskers and neutralizers.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_02"); //But I don't know if and if so, which one works. First, I need an odour or better yet, a smell sample.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_03"); //Would you be so kind...?
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase_15_04"); //What? The one is blind! I'm not just going in there!
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_05"); //Yes, yes.... I understand. Here, take this.
 
 	B_GiveInvItems	(self, hero, ItSc_TrfGolem, 1);
 
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_06"); //Also, wir haben die Sumpfhaileichen zu zwei Bergen aufgehäuft.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_07"); //Geh zu einem Berg und reiß einfach ein Stückchen heraus.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_08"); //Danach verwandelst du dich zurück und bringst mir die Probe.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_06"); //Well, we've turned the marsh sharks into two mountains.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_07"); //Go to a mountain and just rip it out a little bit.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase_31_08"); //Then you turn back and bring me the sample.
 
-	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Baal Caine braucht eine Probe. Dazu soll ich die Verwandlungsrolle benutzen, die er mir gegeben hat und von einem der Sumpfhaileichenberge ein Stück ausreißen.");
+	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Baal Caine needs a sample. For this purpose I am to use the metamorphic role he has given me and to pull out a piece of one of the marsh shark mountains.");
 };
 
 INSTANCE Info_Mod_Caine_Leichengase2 (C_INFO)
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Caine_Leichengase2 (C_INFO)
 	information	= Info_Mod_Caine_Leichengase2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Deine ... Probe.";
+	description	= "Your.... Rehearsal.";
 };
 
 FUNC INT Info_Mod_Caine_Leichengase2_Condition()
@@ -112,17 +112,17 @@ FUNC INT Info_Mod_Caine_Leichengase2_Condition()
 
 FUNC VOID Info_Mod_Caine_Leichengase2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase2_15_00"); //Deine ... Probe.
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase2_15_00"); //Your.... Rehearsal.
 
 	B_GiveInvItems	(hero, self, ItMi_Sumpfhaiprobe, 1);
 
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase2_31_01"); //Ausgezeichnet! Das hast du sehr gut gemacht und ich bin stolz auch dich!
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase2_15_02"); //Danke ...
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase2_31_03"); //Jetzt brauche ich noch ein paar "Freiweillige".
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase2_31_04"); //Komm dann auf die Templer-Plattform. Ich möchte von möglichst viel frischer Luft umgeben sein.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase2_31_05"); //Ich werde inzwischen die nötigen Vorbereitungen treffen.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase2_31_01"); //Excellent! You did very well and I'm proud of you, too!
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase2_15_02"); //Thank you....
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase2_31_03"); //Jetzt brauche ich noch ein paar "volunteers".
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase2_31_04"); //Then get on the Templar platform. I want to be surrounded by as much fresh air as possible.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase2_31_05"); //In the meantime, I will make the necessary preparations.
 
-	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Ich soll später auf die Templer-Plattform gehen. Baal Caine wird alles für den Versuch vorbereiten.");
+	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "I'm supposed to go on the Templar platform later. Baal Caine will prepare everything for the trial.");
 
 	B_StartOtherRoutine	(self, "LEICHENGASE");
 	B_StartOtherRoutine	(Mod_106_TPL_Angar_MT, "LEICHENGASE");
@@ -157,13 +157,13 @@ FUNC INT Info_Mod_Caine_Leichengase3_Condition()
 
 FUNC VOID Info_Mod_Caine_Leichengase3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_00"); //Da kommst du ja endlich. Es ist schon alles vorbereitet.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_01"); //Ich habe die "Probe" mit verschiedenen Substanzen bearbeitet.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_02"); //Jetzt ist es an den Testern herauszufinden, welche funktioniert hat.
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase3_15_03"); //Und wie machen wir das?
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_04"); //Ich habe ein paar Glasphiolen an Pfeile gebunden.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_05"); //Beim Aufprall zerbrechen sie und geben uns ihre schmierige, stinkende Wahrheit preis.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_06"); //(schreit) Freiwillige AUFSTELLEN; Templer AUFSTELLEN!
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_00"); //Here you come at last. Everything is already prepared.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_01"); //Ich habe die "assay" mit verschiedenen Substanzen bearbeitet.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_02"); //Now it's up to the testers to find out which one worked.
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase3_15_03"); //And how do we do that?
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_04"); //I have some glass vials tied to arrows.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_05"); //On impact, they break and give us their greasy, smelly truth.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase3_31_06"); //(screaming) Volunteers line up;
 
 	AI_StopProcessInfos	(self);
 
@@ -194,32 +194,32 @@ FUNC INT Info_Mod_Caine_Leichengase4_Condition()
 
 FUNC VOID Info_Mod_Caine_Leichengase4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_00"); //Ha! Sieh, einer steht noch. Novize Nummer 3 ... das heißt Reagenz 3 ist die Lösung unseres Problems!
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_01"); //Alles, was wir jetzt noch tun müssen, ist, das Zeug im großen Maßstab zu produzieren. Dazu brauchen wir nur ... oha.
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_02"); //Was?
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_03"); //Das dürfte etwas kompliziert werden. Reagenz 3 war Trollkot.
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_04"); //Das heißt ich darf jetzt in Trollhaufen rumwühlen?
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_05"); //Wäre die Sache doch nur so einfach. Es ist ... "besonderer" Trollkot.
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_06"); //Inwiefern besonders?
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_07"); //Der Troll war vegetarisch.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_08"); //Er hat früher im Sumpf gelebt, keine Ahnung, wie er dort hingekommen ist.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_09"); //Hat hauptsächlich Sumpfhaie gefressen.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_10"); //Aber vermutlich hat ihm der ganze Rauch des Sumpfkrauts den Kopf etwas vernebelt.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_11"); //Eines Tages hat er nur noch Pflanzen gefressen. Sumpfkraut, Farne, Beeren.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_12"); //Was halt so im Sumpf herumwuchert.
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_13"); //Und was ist dann mit ihm passiert?
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_14"); //Was wohl? Er ist natürlich verhungert. Ein vegetarischer Troll, ist ja lächerlich.
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_15"); //Und warum hast du noch mal seinen Kot aufbewahrt?!?
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_16"); //Das ist jetzt doch unwichtig.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_17"); //Wichtig ist, dass du ein paar Trolle dazu bringst, dieses Sumpfkräutergemisch hier zu fressen und mir dann ihre warmen weichen dampfenden Trollhaufen bringst!!!
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_00"); //Ha! Look, someone's still standing. Novice number 3... which means reagent 3 is the solution to our problem!
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_01"); //All we have to do now is produce the stuff on a large scale. We just need... uh-huh.
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_02"); //What?
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_03"); //This is going to be a bit complicated. Reagent 3 was Trollkot.
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_04"); //Does that mean I get to rummage in troll piles now?
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_05"); //Wäre die Sache doch nur so einfach. Es ist ... "particular" Trollkot.
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_06"); //Especially in what way?
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_07"); //The troll was vegetarian.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_08"); //He used to live in the swamp, I don't know how he got there.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_09"); //He ate mainly swamp sharks.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_10"); //But probably all the smoke of the swampweed has clouded his head a little.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_11"); //One day, he'd only eat plants. Swampwort, ferns, berries.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_12"); //What's all over the swamp.
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_13"); //And then what happened to him?
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_14"); //What do you think? He's starved to death, of course. A vegetarian troll, that's ridiculous.
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_15"); //And why did you keep his droppings again?!?
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_16"); //It doesn't matter now.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_17"); //It's important that you get a few trolls to eat this bog herbal mix here and then bring me their warm soft steaming troll heaps!
 
 	B_GiveInvItems	(self, hero, ItMi_Sumpfkraeuter, 1);
 
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_18"); //Und wie soll ich das machen?
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_19"); //Du findest sicher einen Weg. Frag am besten Leute, die sich mit sowas auskennen.
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_20"); //Jäger, Bauern, vielleicht kann dir ja auch ein Magier helfen.
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase4_15_18"); //And how am I supposed to do that?
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_19"); //I'm sure you'll find a way. Why don't you ask people who know about this stuff?
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase4_31_20"); //Hunters, peasants, maybe a magician can help you.
 
-	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Für das Gegenmittel benötigt Baal Caine den Kot eines vegetarischen Trolls. Er hat mir eine Kräutermischung gegeben, die ich jetzt irgendwie an den Troll bringen muss. Ich sollte mich bei jemandem erkundigen, der Ahnung von so etwas hat. In Frage käme ein Bauer, ein Jäger oder vielleicht auch ein Magier. Hm, da wären wohl am ehesten Lobart, Dragomir und Milten geeignet.");
+	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Baal Caine needs the faeces of a vegetarian troll for the antidote. He gave me a blend of herbs that I need to get to the troll somehow. I should check with someone who knows something like that. A peasant, a hunter, or maybe a magician. Hm, that would probably be most suitable for Lobart, Dragomir and Milten.");
 
 	B_StartOtherRoutine	(self, "START");
 	B_StartOtherRoutine	(Mod_106_TPL_Angar_MT, "START");
@@ -240,7 +240,7 @@ INSTANCE Info_Mod_Caine_Leichengase5 (C_INFO)
 	information	= Info_Mod_Caine_Leichengase5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, dein Trollkot!";
+	description	= "Here's your troll poop!";
 };
 
 FUNC INT Info_Mod_Caine_Leichengase5_Condition()
@@ -253,12 +253,12 @@ FUNC INT Info_Mod_Caine_Leichengase5_Condition()
 
 FUNC VOID Info_Mod_Caine_Leichengase5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Caine_Leichengase5_15_00"); //Hier, dein Trollkot!
+	AI_Output(hero, self, "Info_Mod_Caine_Leichengase5_15_00"); //Here's your troll poop!
 
 	B_GiveInvItems	(hero, self, ItMi_Trollhaufen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase5_31_01"); //Ich bin dir zu tiefstem Dank verpflichtet!
-	AI_Output(self, hero, "Info_Mod_Caine_Leichengase5_31_02"); //Geh zu Baal Namib und sag ihm, dass seine Novizen wieder durchatmen können.
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase5_31_01"); //I am deeply indebted to you!
+	AI_Output(self, hero, "Info_Mod_Caine_Leichengase5_31_02"); //Go to Baal Namib and tell him that his novices can breathe again.
 
 	B_GivePlayerXP	(150);
 };
@@ -271,7 +271,7 @@ INSTANCE Info_Mod_Caine_Woher (C_INFO)
 	information	= Info_Mod_Caine_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie bist du in dieses Lager gekommen?";
+	description	= "How did you get into this camp?";
 };
 
 FUNC INT Info_Mod_Caine_Woher_Condition()
@@ -285,12 +285,12 @@ FUNC INT Info_Mod_Caine_Woher_Condition()
 
 FUNC VOID Info_Mod_Caine_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Caine_Woher_15_00"); //Wie bist du in dieses Lager gekommen?
-	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_01"); //Früher war ich ein Lehrling in Khorinis beim Alchemisten Constantino, vielleicht kennst du ihn.
-	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_02"); //Jedenfalls habe ich damals etwas mit Sumpfkraut experimentiert und als ich erwischt wurde, haben sie mich in die Kolonie geworfen.
-	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_03"); //Da ich selbst auch gerne etwas Sumpfkraut rauche, bin ich dann zur Bruderschaft gegangen und wurde Kaloms Lehrling.
-	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_04"); //Er war immer mein großes Vorbild und ich hab versucht so zu leben wie er, doch nachdem er auszog, den Schläfer zu suchen, bin ich hier geblieben.
-	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_05"); //Erst vor kurzem haben mich dann Cor Cadar und Cor Angar zum Guru ernannt und zum Alchemistenmeister.
+	AI_Output(hero, self, "Info_Mod_Caine_Woher_15_00"); //How did you get into this camp?
+	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_01"); //I used to be an apprentice in Khorini's alchemist Constantino, maybe you know him.
+	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_02"); //Anyway, I was experimenting with bogweed back then and when I got caught, they threw me into the colony.
+	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_03"); //Since I also like to smoke some bogweed myself, I went to the brotherhood and became Kalom's apprentice.
+	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_04"); //He was always my great role model and I tried to live like him, but after he moved out looking for the sleeper, I stayed here.
+	AI_Output(self, hero, "Info_Mod_Caine_Woher_31_05"); //Only recently, Cor Cadar and Cor Angar appointed me as a guru and alchemist master.
 };
 
 INSTANCE Info_Mod_Caine_BistGuru (C_INFO)
@@ -313,10 +313,10 @@ FUNC INT Info_Mod_Caine_BistGuru_Condition()
 
 FUNC VOID Info_Mod_Caine_BistGuru_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Caine_BistGuru_31_00"); //Jetzt, wo du zu uns Gurus gehörst, kann ich dich in der Alchemie unterrichten.
+	AI_Output(self, hero, "Info_Mod_Caine_BistGuru_31_00"); //Now that you're one of us gurus, I can teach you alchemy.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SUMPF, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_SUMPF, "Baal Caine kann mir etwas über die Alchemie beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_SUMPF, "Baal Caine can teach me about alchemy.");
 };
 
 INSTANCE Info_Mod_Caine_Lehrer (C_INFO)
@@ -327,7 +327,7 @@ INSTANCE Info_Mod_Caine_Lehrer (C_INFO)
 	information	= Info_Mod_Caine_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir etwas über die Alchemie bei.";
+	description	= "Teach me about alchemy.";
 };
 
 FUNC INT Info_Mod_Caine_Lehrer_Condition()
@@ -349,43 +349,43 @@ FUNC VOID Info_Mod_Caine_Lehrer_Info()
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Trank der Geschwindigkeit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Speed)), Info_Mod_Caine_Lehrer_Speed);
+		Info_AddChoice (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Speed Potion", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Speed)), Info_Mod_Caine_Lehrer_Speed);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	&& (Mod_LehrlingBei != 1)
 	{
-		Info_AddChoice 		(Info_Mod_Caine_Lehrer,B_BuildLearnString ("Essenz der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Caine_Lehrer_HEALTH_01);
+		Info_AddChoice 		(Info_Mod_Caine_Lehrer,B_BuildLearnString ("Essence of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Caine_Lehrer_HEALTH_01);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Extrakt der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Caine_Lehrer_Health_02);
+		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Extract of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Caine_Lehrer_Health_02);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Elixier der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Caine_Lehrer_Health_03);
+		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Elixir of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Caine_Lehrer_Health_03);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	&& (Mod_LehrlingBei != 1)
 	{
-		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Mana Essenz", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Caine_Lehrer_Mana_01);
+		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Mana Essence", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Caine_Lehrer_Mana_01);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Mana Extrakt", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Caine_Lehrer_Mana_02);
+		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Mana Extract", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Caine_Lehrer_Mana_02);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Mana Elixier", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Caine_Lehrer_Mana_03);
+		Info_AddChoice	  (Info_Mod_Caine_Lehrer, B_BuildLearnString ("Mana Elixir", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Caine_Lehrer_Mana_03);
 	};
 };
 FUNC VOID Info_Mod_Caine_Lehrer_BACK()

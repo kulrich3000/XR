@@ -18,20 +18,20 @@ FUNC INT Info_Mod_Karim_Hi_Condition()
 
 FUNC VOID Info_Mod_Karim_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_00"); //Da bist du ja.
-	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_01"); //Ich war mit Sinbad unterwegs. Was liegt an?
-	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_02"); //Hast du schon mal von den Blutkelchen gehört?
-	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_03"); //Ich habe für Amir schon mal einen besorgt. Vom Geldverleiher in Khorinis. Er ist tot.
-	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_04"); //Natürlich, sonst hätte der Kelch ja keinen Wert. Der Besitzer muss sterben, damit die Kelche ihre Wirkung erlangen.
-	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_05"); //Wieviele Kelche gibt es?
-	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_06"); //Es sind drei. Einen besitzt nach unseren Informationen der Richter in Khorinis. Nach genau diesem verlangt der große Rat.
-	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_07"); //Dann soll ich den Richter meucheln und den Kelch beibringen.
-	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_08"); //Schlauer Bursche. Wenn dir das gelingt, ist dir ein Platz bei den Anwärtern sicher,
-	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_09"); //Dann will ich mal ...
+	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_00"); //Oh, there you are.
+	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_01"); //I was out with Sinbad. What's happening?
+	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_02"); //Have you ever heard of the blood cups?
+	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_03"); //I've gotten one for Amir before. From the money lender in Khorinis. He's dead.
+	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_04"); //Of course, otherwise the goblet wouldn't have any value. The owner must die for the goblets to take effect.
+	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_05"); //How many goblets are there?
+	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_06"); //It's three. According to our information, one of them is owned by the judges in Khorinis. This is exactly what the great Council wants.
+	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_07"); //Then I shall assassinate the judge and teach the cup.
+	AI_Output(self, hero, "Info_Mod_Karim_Hi_13_08"); //Smart guy. If you succeed, you'll have a place with the candidates,
+	AI_Output(hero, self, "Info_Mod_Karim_Hi_15_09"); //Then I want to have a look...
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_BLUTKELCH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_BLUTKELCH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Ich soll dem Rat den 2. Blutkelch besorgen. Der Richter in Khorinis hat ihn wahrscheinlich. Er muss sterben. Sollte kein Aufsehen erregen. Gift wäre das rechte Mittel für einen Assassinen. Hier war doch irgendwo ein Alchemist ...");
+	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "I'm supposed to take second place in the council. Get me a blood cup. Judge in Khorinis probably has him. He must die. Shouldn't cause a stir. Poison would be the right remedy for an assassin. There was an alchemist here somewhere....");
 };
 
 INSTANCE Info_Mod_Karim_Lehrer (C_INFO)
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_Karim_Lehrer (C_INFO)
 	information	= Info_Mod_Karim_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie heißt du denn?";
+	description	= "What's your name?";
 };
 
 FUNC INT Info_Mod_Karim_Lehrer_Condition()
@@ -52,12 +52,12 @@ FUNC INT Info_Mod_Karim_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Karim_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Karim_Lehrer_15_00"); //Wie heißt du denn?
-	AI_Output(self, hero, "Info_Mod_Karim_Lehrer_13_01"); //Man nennt mich Karim. Du willst wohl was von mir?
-	AI_Output(hero, self, "Info_Mod_Karim_Lehrer_15_02"); //Hast du denn was?
-	AI_Output(self, hero, "Info_Mod_Karim_Lehrer_13_03"); //Nun, ich könnte dir was beibringen.
-	AI_Output(hero, self, "Info_Mod_Karim_Lehrer_15_04"); //Aha. Und was hast du denn drauf?
-	AI_Output(self, hero, "Info_Mod_Karim_Lehrer_13_05"); //Ich kann dir beibringen, wie man schleicht oder wie man jemand unauffällig von hinten meuchelt.
+	AI_Output(hero, self, "Info_Mod_Karim_Lehrer_15_00"); //What's your name?
+	AI_Output(self, hero, "Info_Mod_Karim_Lehrer_13_01"); //They call me Karim. You want something from me?
+	AI_Output(hero, self, "Info_Mod_Karim_Lehrer_15_02"); //You got anything?
+	AI_Output(self, hero, "Info_Mod_Karim_Lehrer_13_03"); //Well, I could teach you something.
+	AI_Output(hero, self, "Info_Mod_Karim_Lehrer_15_04"); //Uh-huh. What do you got?
+	AI_Output(self, hero, "Info_Mod_Karim_Lehrer_13_05"); //I can teach you how to sneak or assassinate someone inconspicuously from behind.
 };
 
 INSTANCE Info_Mod_Karim_Lernen_Schleichen (C_INFO)
@@ -68,12 +68,12 @@ INSTANCE Info_Mod_Karim_Lernen_Schleichen (C_INFO)
 	information	= Info_Mod_Karim_Lernen_Schleichen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString("Schleichen", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
+	description	= B_BuildLearnString("Sneak", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
 };
 
 FUNC INT Info_Mod_Karim_Lernen_Schleichen_Condition()
 {
-	Info_Mod_Cavalorn_Lernen_Schleichen.description = B_BuildLearnString("Schleichen", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1));
+	Info_Mod_Cavalorn_Lernen_Schleichen.description = B_BuildLearnString("Sneak", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Karim_Lehrer))
 	&& (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
@@ -84,11 +84,11 @@ FUNC INT Info_Mod_Karim_Lernen_Schleichen_Condition()
 
 FUNC VOID Info_Mod_Karim_Lernen_Schleichen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Karim_Lernen_Schleichen_15_00"); //Bring mir das Schleichen bei.
+	AI_Output(hero, self, "Info_Mod_Karim_Lernen_Schleichen_15_00"); //Teach me to sneak.
 
 	if (B_TeachThiefTalent (self, hero, NPC_TALENT_SNEAK))
 	{
-		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Schleichen_13_01"); //Mit weichen Sohlen hast du eine größere Chance, dich deinen Gegnern zu nähern, ohne dass sie es merken.
+		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Schleichen_13_01"); //Soft soles give you a better chance to approach your opponents without them noticing.
 	};
 };
 
@@ -100,18 +100,18 @@ INSTANCE Info_Mod_Karim_Lernen_Meucheln (C_INFO)
 	information	= Info_Mod_Karim_Lernen_Meucheln_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString("Meucheln", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
+	description	= B_BuildLearnString("assassinations", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
 };
 
 FUNC INT Info_Mod_Karim_Lernen_Meucheln_Condition()
 {
 	if (Mod_Schwierigkeit == 4)
 	{
-		Info_Mod_Karim_Lernen_Meucheln.description = "Meucheln. Kosten: 1000 Gold";
+		Info_Mod_Karim_Lernen_Meucheln.description = "Assassinate. Cost: 1000 Gold";
 	}
 	else
 	{
-		Info_Mod_Karim_Lernen_Meucheln.description = "Meucheln. Kosten: 10 LP";
+		Info_Mod_Karim_Lernen_Meucheln.description = "Assassinate. Cost: 10 LP";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Karim_Lehrer))
@@ -123,17 +123,17 @@ FUNC INT Info_Mod_Karim_Lernen_Meucheln_Condition()
 
 FUNC VOID Info_Mod_Karim_Lernen_Meucheln_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Karim_Lernen_Meucheln_15_00"); //Bring mir das Meucheln bei.
+	AI_Output(hero, self, "Info_Mod_Karim_Lernen_Meucheln_15_00"); //Teach me how to assassinate.
 
 	if ((Mod_Schwierigkeit == 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 1000))
 	|| ((Mod_Schwierigkeit != 4)
 	&& (hero.lp >= 10))
 	{
-		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_01"); //Ist wirklich gut. Du kannst so eine Person beseitigen, ohne dass es jemand bemerkt.
-		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_02"); //Allerdings solltest du dazu deinen Dolch verwenden. Ein langes Schwert könnte doch von einer Person in der Nähe bemerkt werden.
-		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_03"); //Hast du dann einen Dolch ausgerüstest gehst du hinter dein Opfer und tust, als wolltest du es ansprechen.
-		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_04"); //Der Rest wird die wie von alleine von der Hand gehen.
+		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_01"); //It's really good. You can get rid of a person like that without anyone noticing.
+		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_02"); //However, you should use your dagger for this. A long sword might be noticed by someone nearby.
+		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_03"); //Once you have equipped a dagger, you go behind your victim and act as if you wanted to address it.
+		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_04"); //The rest of them will go off on their own.
 
 		Delirium_Perk = TRUE;
 
@@ -148,7 +148,7 @@ FUNC VOID Info_Mod_Karim_Lernen_Meucheln_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_05"); //Komm wieder, wenn du dazu bereit bist.
+		AI_Output(self, hero, "Info_Mod_Karim_Lernen_Meucheln_08_05"); //Come back when you're ready.
 	};
 };
 

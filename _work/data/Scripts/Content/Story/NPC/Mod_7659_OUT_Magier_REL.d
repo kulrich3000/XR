@@ -2,7 +2,7 @@ instance Mod_7659_OUT_Magier_REL (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Untoter Magier";
+	name 		=	"Undead Magician";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_DMT;
 	level 		=	10;

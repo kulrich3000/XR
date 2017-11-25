@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Grimbald_Hi_Condition()
 
 FUNC VOID Info_Mod_Grimbald_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Grimbald_Hi_07_00"); //Verdammt, mach hier nicht so ein Lärm! Oder willst du, dass uns der Schwarze Troll dort hört?
-	AI_Output(hero, self, "Info_Mod_Grimbald_Hi_15_01"); //Na auf keinen Fall! Soll ich ihn für dich töten?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Hi_07_02"); //Um Adanos Willen, nein! Ich beobachte diese Kreatur schon seit Tagen und es ist faszinierend.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Hi_07_00"); //Goddamn it, don't make that noise! Or do you want the Black Troll to hear us there?
+	AI_Output(hero, self, "Info_Mod_Grimbald_Hi_15_01"); //No way! Shall I kill him for you?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Hi_07_02"); //For Adano's sake, no! I've been watching this creature for days and it's fascinating.
 };
 
 INSTANCE Info_Mod_Grimbald_Faszinierend (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Grimbald_Faszinierend (C_INFO)
 	information	= Info_Mod_Grimbald_Faszinierend_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist so faszinierend an dieser hässlichen Kreatur?";
+	description	= "What's so fascinating about this ugly creature?";
 };
 
 FUNC INT Info_Mod_Grimbald_Faszinierend_Condition()
@@ -41,20 +41,20 @@ FUNC INT Info_Mod_Grimbald_Faszinierend_Condition()
 
 FUNC VOID Info_Mod_Grimbald_Faszinierend_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_00"); //Was ist so faszinierend an dieser hässlichen Kreatur?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_01"); //Hässliche Kreatur? Mein Junge, du hast keinen Sinn für Ästetik. Schau dir doch nur einmal diese grazielen Bewegungen an.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_02"); //Nunja ...
-	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_03"); //Oder sieh nur das Rudel Snapper dort vorne ...
-	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_04"); //Welche Snapper?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_05"); //Na die, die der Schwarze Troll erst Vorgestern in den Boden gestampft hat ...
-	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_06"); //Aha ...
-	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_07"); //Da fällt mir ein, dass die Snapper schon recht merkwürdig waren.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_08"); //Kein normales Tier würde einfach einen Schwarzen Troll angreifen, doch die sind einfach blindlings in den Tod gerannt.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_09"); //Unheimlich agressiv. Sie sahen eh schon ein wenig mitgenommen aus.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_10"); //Mitgenommen? Du meinst, sie waren verletzt?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_11"); //Nicht wirklich ... sie sahen einfach nicht gut aus.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_12"); //Geht es auch genauer?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_13"); //Ich habe nicht mehr gesehen, sie kamen bereits in den Morgenstunden, haben aber gefaucht wie verrückt.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_00"); //What's so fascinating about this ugly creature?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_01"); //Ugly creature? My boy, you have no sense of aesthetics. Look at these graceful movements.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_02"); //Well...
+	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_03"); //Or see that pack of snappers over there...
+	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_04"); //What snapper?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_05"); //Well, the one the Black Troll just stomped in the ground the day before yesterday...
+	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_06"); //Aha...
+	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_07"); //That reminds me, the snappers have been pretty weird.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_08"); //No normal animal would simply attack a Black Troll, but they just blindly ran to their deaths.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_09"); //Terribly aggressive. They already looked a bit robbed anyway.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_10"); //Took you? You mean, they were hurt?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_11"); //Not really... they just didn't look good.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Faszinierend_15_12"); //Can you be more specific?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Faszinierend_07_13"); //I didn't see any more, they came in the morning hours, but farted like crazy.
 };
 
 INSTANCE Info_Mod_Grimbald_Dragomir (C_INFO)
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_Grimbald_Dragomir (C_INFO)
 	information	= Info_Mod_Grimbald_Dragomir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme von Dragomir.";
+	description	= "I'm from Dragomir.";
 };
 
 FUNC INT Info_Mod_Grimbald_Dragomir_Condition()
@@ -79,18 +79,18 @@ FUNC INT Info_Mod_Grimbald_Dragomir_Condition()
 
 FUNC VOID Info_Mod_Grimbald_Dragomir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_00"); //Ich komme von Dragomir, er möchte wissen, was du gefunden hast.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_01"); //Hm, dich kenne ich noch gar nicht. Bist wohl noch nicht lange dabei, was?
-	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_02"); //Kann man so sagen, ja.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_03"); //Ich bin Grimbald, einer von Dragomirs Jägern. Ausser dem Schwarzen Troll und den Snappern nicht viel.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_04"); //Eigentlich ein schönes Tal hier zum Jagen, wenn nicht gerade der Schwarze Troll hier wäre und keine Magier stören würden.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_05"); //Hier laufen Magier rum?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_06"); //Ja, manchmal haben die Pfaffen hier irgendeine Zeremonie, verschwinden in der Grotte dort auf der anderen Seite des Sees, scheint aber nichts allzu wichtiges zu sein.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_07"); //Na dann. Gibt es noch etwas?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_08"); //Nein. Und ach, falls du noch nicht bei Nandor gewesen bist, er hat mich bis hierhin begleitet und ist dann den Weg durch die Schlucht weiter in Richtung des Waldes gegangen.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_09"); //Danke, ich geh dann weiter.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_00"); //I'm from Dragomir, he wants to know what you found.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_01"); //Hm, I don't even know you yet. You haven't been around long, have you?
+	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_02"); //You could say that, yes.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_03"); //I'm Grimbald, one of Dragomir's hunters. Except for the Black Troll and the Snappers, not much.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_04"); //Actually a beautiful valley here for hunting, if the Black Troll wouldn't be here and no magicians would bother you.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_05"); //There are magicians running around here?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_06"); //Yes, sometimes the priests have some kind of ceremony here, disappear in the grotto on the other side of the lake, but nothing seems to be too important.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_07"); //Well, then. Is there anything else?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Dragomir_07_08"); //No. And oh, if you haven't been to Nandor yet, he accompanied me all the way to Nandor and then walked through the gorge towards the forest.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Dragomir_15_09"); //Thanks, I'll keep going.
 
-	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Grimbald hat ein gutes Jagdgebiet gefunden, welches allerdings durch den scharzen Troll und die Magier, die gelegentlich vorbeikommen, etwas gestört wird.");
+	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Grimbald has found a good hunting ground, which is disturbed by the black troll and the magicians who pass by from time to time.");
 	
 	B_StartOtherRoutine(self, "FOLLOW");
 };
@@ -115,17 +115,17 @@ FUNC INT Info_Mod_Grimbald_Erzbrocken_Condition()
 
 FUNC VOID Info_Mod_Grimbald_Erzbrocken_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Grimbald_Erzbrocken_07_00"); //Halt, warte mal, das hätte ich fast vergessen.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Erzbrocken_07_00"); //Wait a minute, I almost forgot.
 
 	B_Say	(hero, self, "$WASISTDENN");
 
-	AI_Output(self, hero, "Info_Mod_Grimbald_Erzbrocken_07_01"); //Hier, diesen merkwürigen Erzbrocken habe ich zwischen den Knochen der toten Snappern gefunden, der ist mir nicht ganz geheuer.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Erzbrocken_07_01"); //Here, I found this strange piece of ore between the bones of the dead snapper, I'm not sure about it.
 
 	B_GiveInvItems	(self, hero, ItMi_Erzbrocken_Seltsam, 1);
 
-	AI_Output(self, hero, "Info_Mod_Grimbald_Erzbrocken_07_02"); //Nimm ihn am besten mit zu Dragomir, vielleicht kann er etwas damit anfangen.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Erzbrocken_07_02"); //You'd better take him to Dragomir, maybe he can do something with it.
 
-	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Grimbald hat mir noch einen merkwürdigen Erzbrocken für Dragomir mitgegeben, den er bei den aggressiven Snappern gefunden hat.");
+	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Grimbald gave me another strange piece of ore for Dragomir, which he found in the aggressive snapper.");
 
 	AI_StopProcessInfos	(self);
 	
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Grimbald_NandorGrom (C_INFO)
 	information	= Info_Mod_Grimbald_NandorGrom_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Grimbald! Bin zurück. Gibt's was Neues?";
+	description	= "Hello, Grimbald! I'm back. Anything new?";
 };
 
 FUNC INT Info_Mod_Grimbald_NandorGrom_Condition()
@@ -155,18 +155,18 @@ FUNC INT Info_Mod_Grimbald_NandorGrom_Condition()
 
 FUNC VOID Info_Mod_Grimbald_NandorGrom_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_00"); //Hallo Grimbald! Bin zurück. Gibt's was Neues?
-	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_01"); //Eigentlich nicht.
-	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_02"); //Trotzdem: Bei Nandor hatten wir's mit unnormalen Wölfen zu tun. Hier waren es verrückte Snapper und bei Grom agressive Feldräuber.
-	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_03"); //Schon seltsam das Ganze. Na ja, Dragomir wird sich schon darum kümmern.
-	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_04"); //Gewiss doch, Herr Grimbald.
-	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_05"); //Spinner! Übrigens, da ist mir noch was aufgefallen ...
-	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_06"); //Hm ...?
-	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_07"); //Ja. Da unten im Wald, neben dem See, ist auch was im Gange. Höre manchmal Stimmen und Geräusche.
-	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_08"); //Vielleicht die Höhlenmagier?
-	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_09"); //Glaube ich nicht. Die kommen immer den Weg.
-	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_10"); //Verstehe. Ich werde es Dragomir berichten. So, ich muss weiter ...
-	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_11"); //Mach's gut.
+	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_00"); //Hello, Grimbald! I'm back. Anything new?
+	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_01"); //Actually, I don't.
+	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_02"); //Nevertheless, Nandor's was an abnormal wolf. Here it was crazy snappers and Grom's aggressive field robbers.
+	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_03"); //It's strange the whole thing. Well, Dragomir will take care of it.
+	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_04"); //Certainly, Mr. Grimbald.
+	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_05"); //Crazy! By the way, I noticed something else...
+	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_06"); //Um...?
+	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_07"); //Yeah. There's something going on down in the woods by the lake. Sometimes I hear voices and noises.
+	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_08"); //Maybe the cave magicians?
+	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_09"); //I don't think so. They always come the way.
+	AI_Output(hero, self, "Info_Mod_Grimbald_NandorGrom_15_10"); //I see. I'll report it to Dragomir. Well, I have to keep--
+	AI_Output(self, hero, "Info_Mod_Grimbald_NandorGrom_07_11"); //Take care, now.
 };
 
 INSTANCE Info_Mod_Grimbald_Kapitel2 (C_INFO)
@@ -177,7 +177,7 @@ INSTANCE Info_Mod_Grimbald_Kapitel2 (C_INFO)
 	information	= Info_Mod_Grimbald_Kapitel2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieder was Neues?";
+	description	= "Something new again?";
 };
 
 FUNC INT Info_Mod_Grimbald_Kapitel2_Condition()
@@ -190,10 +190,10 @@ FUNC INT Info_Mod_Grimbald_Kapitel2_Condition()
 
 FUNC VOID Info_Mod_Grimbald_Kapitel2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grimbald_Kapitel2_15_00"); //Wieder was Neues?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Kapitel2_07_01"); //Nicht so arg ... Na ja. Es wird kälter dieser Tage hier oben ... Gehe wohl bald ins Tal.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Kapitel2_15_02"); //Mach das. Ich muss ins Minental. Bis dann.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Kapitel2_07_03"); //Bis dann.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Kapitel2_15_00"); //Something new again?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Kapitel2_07_01"); //Not so bad... Well, well. It's getting colder these days up here.... I suppose you'll go down to the valley soon.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Kapitel2_15_02"); //Do that. I have to go to the Minental. See you around.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Kapitel2_07_03"); //See you around.
 };
 
 INSTANCE Info_Mod_Grimbald_Untier (C_INFO)
@@ -204,7 +204,7 @@ INSTANCE Info_Mod_Grimbald_Untier (C_INFO)
 	information	= Info_Mod_Grimbald_Untier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hattest du in letzter Zeit mit ungewöhnlichem Wild zu tun?";
+	description	= "Have you been dealing with unusual game lately?";
 };
 
 FUNC INT Info_Mod_Grimbald_Untier_Condition()
@@ -219,17 +219,17 @@ FUNC INT Info_Mod_Grimbald_Untier_Condition()
 
 FUNC VOID Info_Mod_Grimbald_Untier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grimbald_Untier_15_00"); //Hattest du in letzter Zeit mit ungewöhnlichem Wild zu tun?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Untier_07_01"); //Also, abgesehen von lebensmüden Snappern und einem schwarzen Troll ... tatsächlich ...
-	AI_Output(hero, self, "Info_Mod_Grimbald_Untier_15_02"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Untier_07_03"); //Nachdem ich vor einigen Tagen einige Eber erbeutet hatte, wurde ich des Nachts von einigen Geräuschen geweckt und konnte gerade noch erkennen, wie ein großes Raubtier – es war zu dunkel, um es genau zu erkennen – mit einem der erbeuteten Tiere in der Dunkelheit verschwand.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Untier_15_04"); //Wohin ist dieses Tier gelaufen?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Untier_07_05"); //Es lief Richtung des Steinkreises im kleinen Wald gleich dort hinten.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Untier_15_06"); //Danke, das war alles, was ich hören wollte.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Untier_15_00"); //Have you been dealing with unusual game lately?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Untier_07_01"); //So, apart from the fatigued snapper and a black troll... actually
+	AI_Output(hero, self, "Info_Mod_Grimbald_Untier_15_02"); //Yes?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Untier_07_03"); //After I had captured some boars a few days ago, I was awakened by some noises at night and was just able to see how a big predator - it was too dark to recognize it - disappeared into the darkness with one of the captured animals.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Untier_15_04"); //Where did this animal go?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Untier_07_05"); //It ran towards the stone circle in the small forest just back there.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Untier_15_06"); //Thank you, that's all I wanted to hear.
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Grimbald wurde nachts ein erbeutetes Wildtier von einem großen Raubtier gestohlen. Es machte sich Richtung Steinkreis davon.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Grimbald was stolen at night by a large predator. He made off towards the stone circle.");
 };
 
 INSTANCE Info_Mod_Grimbald_Snorre (C_INFO)
@@ -253,14 +253,14 @@ FUNC INT Info_Mod_Grimbald_Snorre_Condition()
 
 FUNC VOID Info_Mod_Grimbald_Snorre_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Grimbald_Snorre_07_00"); //Hast du auch diese kleine Flammenkreatur gesehen?
-	AI_Output(hero, self, "Info_Mod_Grimbald_Snorre_15_01"); //Flammenkreatur?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Snorre_07_02"); //Ja, ist von Richtung Steinkreis gekommen und an mir vorbeigeflitzt. Und wenn mich nicht alles täuscht voll beladen mit Gold.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Snorre_07_03"); //Ungewöhnliche Dinge scheinen zurzeit Hochkonjunktur zu haben.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Snorre_15_04"); //Und wohin ist das Geschöpf gelaufen?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Snorre_07_05"); //Nun, es lief über die Brücke. Und von weitem habe ich dann, wenn mich nicht alles täuscht, den Flammenpunkt im Zugang zu Relendel verschwinden sehen.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Snorre_07_00"); //Did you see that little flame creature too?
+	AI_Output(hero, self, "Info_Mod_Grimbald_Snorre_15_01"); //Flame creature?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Snorre_07_02"); //Yes, he came from the stone circle and flashed past me. And unless I'm not all deceived full loaded with gold.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Snorre_07_03"); //Unusual things seem to be booming at the moment.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Snorre_15_04"); //And where did the creature go?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Snorre_07_05"); //Well, it went over the bridge. And from a distance I saw the flame point in the entrance to Relendel disappear, if not everything is deceiving me.
 
-	B_LogEntry	(TOPIC_MOD_NL_STAB, "Der Jäger sah Snorre im Zugang zu Relendel verschwinden.");
+	B_LogEntry	(TOPIC_MOD_NL_STAB, "The hunter saw Snorre disappear in the entrance to Relendel.");
 };
 
 INSTANCE Info_Mod_Grimbald_Moor (C_INFO)
@@ -271,7 +271,7 @@ INSTANCE Info_Mod_Grimbald_Moor (C_INFO)
 	information	= Info_Mod_Grimbald_Moor_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du zufällig, wo sich ein Moor befindet?";
+	description	= "Do you happen to know where a moor is?";
 };
 
 FUNC INT Info_Mod_Grimbald_Moor_Condition()
@@ -285,25 +285,25 @@ FUNC INT Info_Mod_Grimbald_Moor_Condition()
 
 FUNC VOID Info_Mod_Grimbald_Moor_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_15_00"); //Weißt du zufällig, wo sich ein Moor befindet?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_07_01"); //Ein Moor auf Khorinis? Mir ist nur eines bekannt, das "verfluchte Moor". Es befindet sich im Osten von Relendel.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_15_00"); //Do you happen to know where a moor is?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_07_01"); //Ein Moor auf Khorinis? Mir ist nur eines bekannt, das "fucking moor". Es befindet sich im Osten von Relendel.
 
 	Info_ClearChoices	(Info_Mod_Grimbald_Moor);
 
-	Info_AddChoice	(Info_Mod_Grimbald_Moor, "Danke, das war alles, was ich wissen wollte.", Info_Mod_Grimbald_Moor_B);
-	Info_AddChoice	(Info_Mod_Grimbald_Moor, "Kannst du mich dorthin bringen?", Info_Mod_Grimbald_Moor_A);
+	Info_AddChoice	(Info_Mod_Grimbald_Moor, "Thank you, that's all I wanted to know.", Info_Mod_Grimbald_Moor_B);
+	Info_AddChoice	(Info_Mod_Grimbald_Moor, "Can you take me there?", Info_Mod_Grimbald_Moor_A);
 };
 
 FUNC VOID Info_Mod_Grimbald_Moor_C()
 {
-	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_C_07_00"); //Viele Glücksritter haben bereits versucht die Schätze des Moores zu bergen und alle bezahlten es mit dem Leben.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_C_07_01"); //Giftige Dämpfe und Moorleichen sollen jedem Eindringling einen grausamen Tot bereiten, so sagt man ... bedenke, worauf du dich da einlässt.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_C_07_00"); //Many knights of fortune have already tried to recover the treasures of the moor and all have paid with their lives.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_C_07_01"); //Toxic fumes and bog bodies are said to cause a cruel death for every intruder, so they say... think about what you're getting into.
 };
 
 FUNC VOID Info_Mod_Grimbald_Moor_B()
 {
-	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_B_15_00"); //Danke, das war alles, was ich wissen wollte.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_B_07_01"); //Falls du dorthin willst, so würde ich dir ernsthaft davon abraten.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_B_15_00"); //Thank you, that's all I wanted to know.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_B_07_01"); //If you want to go there, I would seriously advise against it.
 
 	Info_Mod_Grimbald_Moor_C();
 
@@ -312,18 +312,18 @@ FUNC VOID Info_Mod_Grimbald_Moor_B()
 
 FUNC VOID Info_Mod_Grimbald_Moor_A()
 {
-	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_A_15_00"); //Kannst du mich dorthin bringen?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_01"); //Ins verfluchte Moor?! Bist des Wahnsinns?!
-	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_A_15_02"); //Es ist wichtig. Das Schicksal von Khorinis könnte davon abhängen.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_03"); //Bist du sicher, dass du mir keinen Troll aufbindest?
-	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_04"); //Falls du dorthin willst mit der Hoffnung dir die Taschen mit Gold zu füllen, so würde ich dir eindringlich davon abraten.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_A_15_00"); //Can you take me there?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_01"); //Into the fucking moor?! Are you out of your mind?!
+	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_A_15_02"); //It's important. The fate of Khorinis could depend on it.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_03"); //Are you sure you won't untie a troll for me?
+	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_04"); //If you want to go there with the hope of filling your pockets with gold, I would strongly advise against it.
 
 	Info_Mod_Grimbald_Moor_C();
 
-	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_A_15_05"); //Ich schwöre, dass ich die Wahrheit sage.
-	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_A_15_06"); //Das Verderben lauert näher, als du denkst (im Stillen) genau genommen in der Kerkerhöhle des Magiers um die Ecke.
-	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_07"); //Hmm, ja vielleicht sprichst du wahr. Ich hörte in letzter Zeit von vielen seltsamen und beunruhigenden Vorkommnissen ...
-	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_08"); //Ist gut, ich bringe dich dorthin. Bleib dicht hinter mir.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_A_15_05"); //I swear I'm telling the truth.
+	AI_Output(hero, self, "Info_Mod_Grimbald_Moor_A_15_06"); //Corruption is lurking closer than you think (quietly) actually in the magician's dungeon cave around the corner.
+	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_07"); //Hmm, yeah, maybe you're telling the truth. I've been hearing about a lot of strange and disturbing events lately...
+	AI_Output(self, hero, "Info_Mod_Grimbald_Moor_A_07_08"); //All right, I'll take you there. Stay close behind me.
 
 	Mod_NL_Grimbald = 1;
 
@@ -356,13 +356,13 @@ FUNC INT Info_Mod_Grimbald_DragomirErzbrocken_Condition()
 
 FUNC VOID Info_Mod_Grimbald_DragomirErzbrocken_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Grimbald_DragomirErzbrocken_07_00"); //Hast du mit Dragomir über den Erzbrocken gesprochen?
-	AI_Output(hero, self, "Info_Mod_Grimbald_DragomirErzbrocken_15_01"); //Ja, er ist ihm nicht geheuer und deswegen hat er ihn mir wieder mitgegeben.
-	AI_Output(self, hero, "Info_Mod_Grimbald_DragomirErzbrocken_07_02"); //Sag ich ja. Aber danke, dass du ihn mir abgenommen hast, ich hätte ihn nicht länger in meiner Nähe haben wollen.
-	AI_Output(self, hero, "Info_Mod_Grimbald_DragomirErzbrocken_07_03"); //Wenn du willst, dann kann ich dir ein bisschen was über die Jagd beibringen.
+	AI_Output(self, hero, "Info_Mod_Grimbald_DragomirErzbrocken_07_00"); //Did you talk to Dragomir about the ore chunk?
+	AI_Output(hero, self, "Info_Mod_Grimbald_DragomirErzbrocken_15_01"); //Yeah, he doesn't feel right about him, and that's why he gave it back to me.
+	AI_Output(self, hero, "Info_Mod_Grimbald_DragomirErzbrocken_07_02"); //That's what I said. But thank you for taking it from me, I wouldn't have wanted him around.
+	AI_Output(self, hero, "Info_Mod_Grimbald_DragomirErzbrocken_07_03"); //If you want, I can teach you a little bit about hunting.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KHORINIS, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_KHORINIS, "Der Jäger Grimbald kann mir etwas über die Jagd beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_KHORINIS, "The hunter Grimbald can teach me about hunting.");
 };
 
 INSTANCE Info_Mod_Grimbald_Lernen (C_INFO)
@@ -373,7 +373,7 @@ INSTANCE Info_Mod_Grimbald_Lernen (C_INFO)
 	information	= Info_Mod_Grimbald_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was kannst du mir beibringen?";
+	description	= "What can you teach me?";
 };
 
 FUNC INT Info_Mod_Grimbald_Lernen_Condition()
@@ -386,7 +386,7 @@ FUNC INT Info_Mod_Grimbald_Lernen_Condition()
 
 FUNC VOID Info_Mod_Grimbald_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grimbald_Lernen_15_00"); //Was kannst du mir beibringen?
+	AI_Output(hero, self, "Info_Mod_Grimbald_Lernen_15_00"); //What can you teach me?
 
 	if ((PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFWing] == FALSE)
@@ -394,7 +394,7 @@ FUNC VOID Info_Mod_Grimbald_Lernen_Info()
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] == FALSE)
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE))
 	{
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_07_01"); //Kommt darauf an, was du wissen willst.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_07_01"); //Depends on what you want to know.
 
 		Info_ClearChoices	(Info_Mod_Grimbald_Lernen);
 
@@ -402,28 +402,28 @@ FUNC VOID Info_Mod_Grimbald_Lernen_Info()
 
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("Zähne reissen", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Grimbald_Lernen_Teeth);
+			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("Teeth torn", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Grimbald_Lernen_Teeth);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("Tiere häuten", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)), Info_Mod_Grimbald_Lernen_ReptileSkin);
+			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("skin animals", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)), Info_Mod_Grimbald_Lernen_ReptileSkin);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("Klauen hacken", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Grimbald_Lernen_Claws);
+			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("Chipping claws", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Grimbald_Lernen_Claws);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("Fliegenstachel", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Grimbald_Lernen_BFSting);
+			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("fly spine", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Grimbald_Lernen_BFSting);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFWing] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("Fliegenflügel", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)), Info_Mod_Grimbald_Lernen_BFWing);
+			Info_AddChoice	(Info_Mod_Grimbald_Lernen, B_BuildLearnString("fly wing", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)), Info_Mod_Grimbald_Lernen_BFWing);
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_07_02"); //Ich kann dir im Moment nicht mehr beibringen, als du ohnehin schon weißt. Tut mir Leid.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_07_02"); //I can't teach you any more than you already know. Sorry about that.
 	};
 };
 
@@ -436,9 +436,9 @@ FUNC void Info_Mod_Grimbald_Lernen_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Claws))
 	{
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Claws_07_00"); //Tiere geben ihre Klauen nicht sehr gerne her. Du musst schon sehr genau den Punkt treffen, an dem du mit deinem Messer ansetzt.
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Claws_07_01"); //Die Haltung deiner Hand sollte etwas verschränkt sein. Mit einem kräftigen Ruck trennst du dann die Klaue ab.
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Claws_07_02"); //Klauen sind immer ein begehrtes Zahlungsmittel bei einem Händler.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Claws_07_00"); //Animals don't like to give their claws away. You have to hit the exact spot where you're going with your knife.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Claws_07_01"); //The posture of your hand should be slightly entangled. With a strong jolt you cut off the claw.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Claws_07_02"); //Claws are always a sought-after means of payment for a trader.
 	};
 
 	Info_ClearChoices	(Info_Mod_Grimbald_Lernen);
@@ -451,7 +451,7 @@ FUNC void Info_Mod_Grimbald_Lernen_ReptileSkin()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_ReptileSkin))
 	{
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_ReptileSkin_07_00"); //Und immer nur am Bauch aufschneiden, sonst verminderst du die Qualität.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_ReptileSkin_07_00"); //And always cut open only on the belly, otherwise you will reduce the quality.
 	};
 
 	Info_ClearChoices	(Info_Mod_Grimbald_Lernen);
@@ -463,8 +463,8 @@ FUNC void Info_Mod_Grimbald_Lernen_Teeth()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Teeth))
 	{
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Teeth_07_00"); //Das einfachste, was du Tieren entnehmen kannst, sind seine Zähne. Du fährst mit deinem Messer in seinem Maul um das Gebiss.
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Teeth_07_01"); //Dann trennst es geschickt mit einem Ruck vom Schädel des Tieres.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Teeth_07_00"); //The easiest thing you can extract from animals is their teeth. You're driving your knife around the dentures in his mouth.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Teeth_07_01"); //Then you skillfully separate it from the animal's skull with a jerk.
 	};
 
 	Info_ClearChoices	(Info_Mod_Grimbald_Lernen);
@@ -476,8 +476,8 @@ FUNC void Info_Mod_Grimbald_Lernen_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Fur))
 	{
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Fur_07_00"); //Felle ziehst du am besten ab, indem du einen tiefen Schnitt an den Hinterläufen des Tieres vornimmst.
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Fur_07_01"); //Dann kannst du das Fell von vorne nach hinten eigentlich immer sehr leicht abziehen.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Fur_07_00"); //The best way to remove fur is to make a deep cut on the animal's hind legs.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_Fur_07_01"); //Then you can always pull the fur from the front to the back very easily.
 	};
 
 	Info_ClearChoices	(Info_Mod_Grimbald_Lernen);
@@ -489,8 +489,8 @@ FUNC void Info_Mod_Grimbald_Lernen_BFSting()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_BFSting))
 	{
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_BFSting_07_00"); //Die Fliege hat am Rücken eine weiche Stelle.
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_BFSting_07_01"); //Wenn du dort mit der Hand gegen drückst, fährt der Stachel sehr weit aus und du kannst ihn mit dem Messer abtrennen.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_BFSting_07_00"); //The fly has a soft spot on the back.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_BFSting_07_01"); //If you press your hand against it, the sting extends very far and you can cut it with a knife.
 	};
 
 	Info_ClearChoices	(Info_Mod_Grimbald_Lernen);
@@ -502,8 +502,8 @@ FUNC void Info_Mod_Grimbald_Lernen_BFWing()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_BFWing))
 	{
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_BFWing_07_00"); //Die Flügel einer Fliege entfernst du am besten mit einem Hieb einer scharfen Klinge sehr nah am Körper der Fliege.
-		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_BFWing_07_01"); //Du musst nur darauf achten, dass du das feine Gewebe der Flügel nicht verletzt. Sie sind nichts mehr wert, wenn du es nicht vorsichtig machst.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_BFWing_07_00"); //The best way to remove the wings of a fly is to cut a sharp blade very close to the body of the fly.
+		AI_Output(self, hero, "Info_Mod_Grimbald_Lernen_BFWing_07_01"); //Just make sure you don't damage the fine fabric of the wings. They're worthless unless you do it carefully.
 	};
 
 	Info_ClearChoices	(Info_Mod_Grimbald_Lernen);

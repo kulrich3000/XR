@@ -15,20 +15,20 @@ FUNC INT Info_Mod_Grim_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Grim_NW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_00"); //Sieh an ...
-	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_01"); //Grim?! Du hast es also tatsächlich aus dem Alten Lager geschafft ... und mit dir eine ganze Gruppe anderer, wie ich sehe.
-	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_02"); //Ich bin überrascht ...
-	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_03"); //Nun, wenn man gute Freunde hat, die zusammenhalten und füreinander da sind übersteht man alles.
-	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_04"); //Ja ... man sieht euch auch gar nicht die Strapazen an.
-	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_05"); //Wie dem auch sei, weißt du vielleicht, was passiert ist?
-	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_06"); //Wie konnten die Orks das Lager stürmen?
-	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_07"); //(geheimnisvoll) Ja ... ich hab’s gesehen ... jemand hat die Wachen ermordet und das Tor geöffnet.
-	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_08"); //Was? Wer ist es gewesen?
-	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_09"); //Nun ... es war dunkel und schwer zu erkennen ... aber ich glaube ...
-	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_10"); //(wahnsinnig) ich war’s, wuahaha. Gute Freunde lässt man doch nicht draußen stehen ...
-	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_11"); //(schreit) Ahhh.
+	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_00"); //Well, well...
+	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_01"); //Grim?! So you actually made it out of the old camp... and with you a whole group of others, I see.
+	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_02"); //I'm surprised....
+	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_03"); //Well, if you have good friends who stick together and are there for each other, you can survive anything.
+	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_04"); //Yes... you don't even see the strains.
+	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_05"); //Anyway, do you know what happened?
+	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_06"); //How could the orcs storm the camp?
+	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_07"); //(secretly) Yes... I saw it.... Somebody murdered the guards and opened the gate.
+	AI_Output(hero, self, "Info_Mod_Grim_NW_Hi_15_08"); //What? Who did it?
+	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_09"); //Well... it was dark and hard to see... but I believe...
+	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_10"); //(mad) it was me, wuahahaha. You don't leave good friends outside...
+	AI_Output(self, hero, "Info_Mod_Grim_NW_Hi_06_11"); //(screaming) Ahhhh.
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_FREUNDFEIND, "Tja, das mit der Gruppe bei Dragomir hat sich dann auf unschöne Weise erledigt. Grim eifert eben immer den falschen Vorbildern nach.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_FREUNDFEIND, "Well, the one with the group at Dragomir was then done in an unpleasant way. Grim is always striving for the wrong role models.");
 
 	AI_StopProcessInfos	(self);
 

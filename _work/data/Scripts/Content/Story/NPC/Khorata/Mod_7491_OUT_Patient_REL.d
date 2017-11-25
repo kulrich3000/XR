@@ -1,7 +1,7 @@
 INSTANCE Mod_7491_OUT_Patient_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Patient"; 
+	name 		= "patient"; 
 	guild 		= GIL_OUT;
 	id 			= 7491;
 	voice 		= 4;

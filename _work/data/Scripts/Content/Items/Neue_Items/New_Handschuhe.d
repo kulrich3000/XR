@@ -1,6 +1,6 @@
 INSTANCE ItAr_FinsternisPanzerhandschuh (C_Item)
 {
-	name					=	"Finsternis-Panzerhandschuhe";
+	name					=	"Darkness Armoured Gloves";
 	
 	mainflag				=	ITEM_KAT_MAGIC;
 	flags					=	ITEM_BELT;
@@ -22,7 +22,7 @@ INSTANCE ItAr_FinsternisPanzerhandschuh (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					=	"Diese Panzerhandschuhe sind durchtränkt von schwarzer Magie.";	
+	TEXT[0]					=	"These armor gloves are imbued with black magic.";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE]/1000;

@@ -14,7 +14,7 @@ INSTANCE Info_Mod_SMK_OM_7_EXIT(C_INFO)
 	condition	= Info_Mod_SMK_OM_7_EXIT_Condition;
 	information	= Info_Mod_SMK_OM_7_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_7_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_SMK_OM_7_Mine (C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_7_Mine_Condition;
 	information	= Info_Mod_SMK_OM_7_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir von der Mine";
+	description = "Tell me about the mine";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_7_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mod_SMK_OM_7_Mine_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_7_Mine_15_00"); //Erzähl mir von der Mine
-	AI_Output(self,other,"Info_Mod_SMK_OM_7_Mine_07_01"); //Die Buddler schürfen das Erz und wir passen auf, dass sie nicht abhauen.
+	AI_Output(other,self,"Info_Mod_SMK_OM_7_Mine_15_00"); //Tell me about the mine
+	AI_Output(self,other,"Info_Mod_SMK_OM_7_Mine_07_01"); //The diggers dig the ore and we'll make sure they don't run away.
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_SMK_OM_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mod_SMK_OM_7_WichtigePersonen_Condition;
 	information	= Info_Mod_SMK_OM_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_7_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mod_SMK_OM_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_7_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Mod_SMK_OM_7_WichtigePersonen_07_01"); //Kurgan. Wende dich an ihn, wenn du was willst.
+	AI_Output(other,self,"Info_Mod_SMK_OM_7_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,other,"Info_Mod_SMK_OM_7_WichtigePersonen_07_01"); //Kurgan. Turn to him if you want something.
 	
 };
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_SMK_OM_7_DieLage(C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_7_DieLage_Condition;
 	information	= Info_Mod_SMK_OM_7_DieLage_Info;
 	permanent	= 1;
-	description = "Wie steht's?";
+	description = "What's the score?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_7_DieLage_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Mod_SMK_OM_7_DieLage_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_7_DieLage_15_00"); //Wie steht's?
-	AI_Output(self,other,"Info_Mod_SMK_OM_7_DieLage_07_01"); //Mann, geh mir nicht auf den Sack!
+	AI_Output(other,self,"Info_Mod_SMK_OM_7_DieLage_15_00"); //What's the score?
+	AI_Output(self,other,"Info_Mod_SMK_OM_7_DieLage_07_01"); //Man, don't give me that shit!
 };
 	
 // *************************************************************************

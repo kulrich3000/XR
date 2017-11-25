@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sharky_Hi (C_INFO)
 	information	= Info_Mod_Sharky_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, hast du was für mich?";
+	description	= "Hey, you got something for me?";
 };
 
 FUNC INT Info_Mod_Sharky_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Sharky_Hi_Condition()
 
 FUNC VOID Info_Mod_Sharky_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sharky_Hi_15_00"); //Hey, hast du was für mich?
-	AI_Output(self, hero, "Info_Mod_Sharky_Hi_10_01"); //Ja, für gutes Erz und Gold kannst du ein paar nützliche Sachen bei mir kaufen.
+	AI_Output(hero, self, "Info_Mod_Sharky_Hi_15_00"); //Hey, you got something for me?
+	AI_Output(self, hero, "Info_Mod_Sharky_Hi_10_01"); //Yeah, for good ore and gold you can buy some useful things from me.
 };
 
 INSTANCE Info_Mod_Sharky_Trade (C_INFO)
@@ -42,8 +42,8 @@ FUNC INT Info_Mod_Sharky_Trade_Condition()
 
 FUNC VOID Info_Mod_Sharky_Trade_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sharky_Trade_15_00"); //Lass mal sehen, was du im Angebot hast.
-	AI_Output(self, hero, "Info_Mod_Sharky_Trade_10_01"); //Alles, was du zum Überleben brauchst.
+	AI_Output(hero, self, "Info_Mod_Sharky_Trade_15_00"); //Let's see what you have on offer.
+	AI_Output(self, hero, "Info_Mod_Sharky_Trade_10_01"); //Everything you need to survive.
 
 	Backup_Questitems();
 

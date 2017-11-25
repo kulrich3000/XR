@@ -379,7 +379,7 @@ INSTANCE UndeadOrcWarriorHorn (Mst_Default_UndeadOrcWarriorHorn)
 /**********************      Kristall Waffen*************************/
 INSTANCE KristallOrkAxt (C_Item)
 {	
-	name 				=	"Kristall Orkaxt";
+	name 				=	"Crystal Orcaxt";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -408,7 +408,7 @@ INSTANCE KristallOrkAxt (C_Item)
 
 INSTANCE Kristallschwert (C_Item)
 {	
-	name 				=	"Avatier";  
+	name 				=	"avatars";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

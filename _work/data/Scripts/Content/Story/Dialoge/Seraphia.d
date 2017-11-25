@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Seraphia_Hi (C_INFO)
 	information	= Info_Mod_Seraphia_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, willst du diesen Ort verlassen? Dann zieh dir das hier über und folge mir.";
+	description	= "Hey, you want to leave this place? Then put this on and follow me.";
 };
 
 FUNC INT Info_Mod_Seraphia_Hi_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Seraphia_Hi_Condition()
 
 FUNC VOID Info_Mod_Seraphia_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Seraphia_Hi_15_00"); //Hey, willst du diesen Ort verlassen? Dann zieh dir das hier über und folge mir.
-	AI_Output(self, hero, "Info_Mod_Seraphia_Hi_16_01"); //Was willst du von mir? Geh weg, lass mich in Ruhe.
+	AI_Output(hero, self, "Info_Mod_Seraphia_Hi_15_00"); //Hey, you want to leave this place? Then put this on and follow me.
+	AI_Output(self, hero, "Info_Mod_Seraphia_Hi_16_01"); //What do you want from me? Go away, leave me alone.
 };
 
 INSTANCE Info_Mod_Seraphia_Lagermusik (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Seraphia_Lagermusik (C_INFO)
 	information	= Info_Mod_Seraphia_Lagermusik_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du Gravos neue Musikgruppe unterstützen?";
+	description	= "Do you want to support Gravo's new music group?";
 };
 
 FUNC INT Info_Mod_Seraphia_Lagermusik_Condition()
@@ -44,9 +44,9 @@ FUNC INT Info_Mod_Seraphia_Lagermusik_Condition()
 
 FUNC VOID Info_Mod_Seraphia_Lagermusik_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Seraphia_Lagermusik_15_00"); //Willst du Gravos neue Musikgruppe unterstützen?
-	AI_Output(self, hero, "Info_Mod_Seraphia_Lagermusik_16_01"); //Wieso nicht? Thorus zeigt mir nur seine kalte Schulter, dieser verklemmte Typ, ich hab also nichts zu tun.
-	AI_Output(self, hero, "Info_Mod_Seraphia_Lagermusik_16_02"); //Und ein wenig Musik ist doch eine willkommene Abwechslung.
+	AI_Output(hero, self, "Info_Mod_Seraphia_Lagermusik_15_00"); //Do you want to support Gravo's new music group?
+	AI_Output(self, hero, "Info_Mod_Seraphia_Lagermusik_16_01"); //Why not? Thorus is just showing me his cold shoulder, this uptight guy, so I've got nothing to do.
+	AI_Output(self, hero, "Info_Mod_Seraphia_Lagermusik_16_02"); //And a little music is a welcome change.
 
 	AI_StopProcessInfos	(self);
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ivan_Hi (C_INFO)
 	information	= Info_Mod_Ivan_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, wie geht's?";
+	description	= "How's it going?";
 };
 
 FUNC INT Info_Mod_Ivan_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Ivan_Hi_Condition()
 
 FUNC VOID Info_Mod_Ivan_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hi_15_00"); //Na, wie geht's?
-	AI_Output(self, hero, "Info_Mod_Ivan_Hi_01_01"); //Keine Ahnung. Wie ist das Wetter?
+	AI_Output(hero, self, "Info_Mod_Ivan_Hi_15_00"); //How's it going?
+	AI_Output(self, hero, "Info_Mod_Ivan_Hi_01_01"); //I don't know about that. What's the weather like?
 };
 
 INSTANCE Info_Mod_Ivan_Hasenfuss (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Ivan_Hasenfuss (C_INFO)
 	information	= Info_Mod_Ivan_Hasenfuss_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du kommst jetzt mit zur Scavenger-Jagd.";
+	description	= "You're coming with me to the scavenger hunt.";
 };
 
 FUNC INT Info_Mod_Ivan_Hasenfuss_Condition()
@@ -43,12 +43,12 @@ FUNC INT Info_Mod_Ivan_Hasenfuss_Condition()
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss_15_00"); //Du kommst jetzt mit zur Scavenger-Jagd.
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss_01_01"); //Spinnst du? Diese blutrünstigen Viecher würden uns zerfleischen.
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss_15_02"); //Ich habe nicht gesagt, dass du eine Wahl hast.
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss_01_03"); //Aber das kannst du doch nicht verlangen! Ich werd's Dad erzählen!
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss_15_04"); //Wann wurdest du das letzte Mal windelweich geprügelt?
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss_01_05"); //(fassungslos) Du bist wirklich richtig mies. Glaub ja nicht, dass ich gern mitkomme.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss_15_00"); //You're coming with me to the scavenger hunt.
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss_01_01"); //Are you out of your mind? Those bloodthirsty creatures would tear us apart.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss_15_02"); //I didn't say you had a choice.
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss_01_03"); //But you can't ask that! I'm gonna tell Dad!
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss_15_04"); //When was the last time you were beaten as soft as a diaper?
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss_01_05"); //You really suck. Don't think I'd like to go with you.
 
 	Mod_REL_Hasenfuss = 2;
 
@@ -67,7 +67,7 @@ INSTANCE Info_Mod_Ivan_Hasenfuss2 (C_INFO)
 	information	= Info_Mod_Ivan_Hasenfuss2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lass uns Blümchen pflücken gehen!";
+	description	= "Let's go pick flowers!";
 };
 
 FUNC INT Info_Mod_Ivan_Hasenfuss2_Condition()
@@ -82,25 +82,25 @@ FUNC INT Info_Mod_Ivan_Hasenfuss2_Condition()
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss2_15_00"); //Lass uns Blümchen pflücken gehen!
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss2_01_01"); //Au ja! Kennst du eine gute Blumenwiese?
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss2_15_00"); //Let's go pick flowers!
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss2_01_01"); //Oh, yeah! Do you know a good flower meadow?
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss2);
 
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss2, "Ich komme wieder, wenn ich eine gefunden habe.", Info_Mod_Ivan_Hasenfuss2_B);
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss2, "Klar, komm mit.", Info_Mod_Ivan_Hasenfuss2_A);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss2, "I'll come back when I find one.", Info_Mod_Ivan_Hasenfuss2_B);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss2, "Sure, come with me.", Info_Mod_Ivan_Hasenfuss2_A);
 };
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss2_B_15_00"); //Ich komme wieder, wenn ich eine gefunden habe.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss2_B_15_00"); //I'll come back when I find one.
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss2);
 };
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss2_A_15_00"); //Klar, komm mit.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss2_A_15_00"); //Sure, come with me.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss2);
@@ -136,40 +136,40 @@ FUNC VOID Info_Mod_Ivan_Hasenfuss3_Info()
 {
 	if (Mod_REL_Hasenfuss == 3)
 	{
-		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_01_00"); //Hier willst du Blumen sammeln? Ist doch alles voller fieser Monster.
-		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_01_01"); //Lass uns lieber woanders hin gehen.
+		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_01_00"); //You want to collect flowers here? It's full of nasty monsters.
+		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_01_01"); //Let's go somewhere else.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_01_02"); //Du, ich trau mich wirklich nicht. Kannst du nicht allein jagen gehen?
-		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_01_03"); //O-oder hast d-du etwa zu viel Schiss?
+		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_01_02"); //I really don't dare. Can't you go hunting by yourself?
+		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_01_03"); //O-or are you too scared?
 	};
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss3);
 
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "Wir werden gemeinsam jagen gehen, damit das klar ist.", Info_Mod_Ivan_Hasenfuss3_B);
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "Töte die Scavenger. Ich schaue zu.", Info_Mod_Ivan_Hasenfuss3_A);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "We'll go hunting together, so it's clear.", Info_Mod_Ivan_Hasenfuss3_B);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "Kill the Scavengers. I'm watching.", Info_Mod_Ivan_Hasenfuss3_A);
 };
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss3_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_B_15_00"); //Wir werden gemeinsam jagen gehen, damit das klar ist.
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_B_01_01"); //(trotzig) Ich habe vom Jagen gar keine Ahnung.
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_B_15_02"); //Deswegen stehe ich dir zur Seite.
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_B_01_03"); //Ähm ... es reicht doch, wenn ich dir zuschaue und lerne, oder?
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_B_15_00"); //We'll go hunting together, so it's clear.
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_B_01_01"); //I don't know anything about hunting.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_B_15_02"); //That's why I'm on your side.
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_B_01_03"); //Um... it's enough for me to watch and learn, isn't it?
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss3);
 
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "Keine Chance.", Info_Mod_Ivan_Hasenfuss3_D);
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "In Ordnung.", Info_Mod_Ivan_Hasenfuss3_C);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "Not a chance.", Info_Mod_Ivan_Hasenfuss3_D);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "All right, all right.", Info_Mod_Ivan_Hasenfuss3_C);
 };
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss3_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_A_15_00"); //Töte die Scavenger. Ich schaue zu.
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_A_01_01"); //Du spinnst wohl?!
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_A_15_00"); //Kill the Scavengers. I'm watching.
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_A_01_01"); //Are you out of your mind?!
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Ivan ist bockig. Ich sollte einen Weg finden, ihn zur Jagd zu ermutigen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Ivan is stubborn. I should find a way to encourage him to hunt.");
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss3);
 
@@ -184,9 +184,9 @@ FUNC VOID Info_Mod_Ivan_Hasenfuss3_A()
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss3_D()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_D_15_00"); //Keine Chance.
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_D_01_01"); //(niedergeschlagen) Na gut, versuchen wir's. Sag, wann es losgeht.
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_D_15_02"); //Gehen wir's an.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_D_15_00"); //Not a chance.
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss3_D_01_01"); //All right, let's try it. Tell me when to go.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_D_15_02"); //Let's do this.
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss3);
 
@@ -199,7 +199,7 @@ FUNC VOID Info_Mod_Ivan_Hasenfuss3_D()
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss3_C()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_C_15_00"); //In Ordnung.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss3_C_15_00"); //All right, all right.
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss3);
 
@@ -231,35 +231,35 @@ FUNC INT Info_Mod_Ivan_Hasenfuss4_Condition()
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_01_00"); //(wütend) Hau ab!
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_01_00"); //Get out of here!
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss4);
 
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "Wenn du mitkommst, kriegst du ein paar Pflanzen von mir.", Info_Mod_Ivan_Hasenfuss4_B);
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "Das wird deinen Vater nicht erfreuen.", Info_Mod_Ivan_Hasenfuss4_A);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "If you come with me, I'll give you some plants.", Info_Mod_Ivan_Hasenfuss4_B);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "It won't please your father.", Info_Mod_Ivan_Hasenfuss4_A);
 };
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss4_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss4_B_15_00"); //Wenn du mitkommst, kriegst du ein paar Pflanzen von mir.
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_B_01_01"); //Hast du fünf Heilpflanzen?
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss4_B_15_00"); //If you come with me, I'll give you some plants.
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_B_01_01"); //Do you have five medicinal plants?
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss4);
 
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "Ich bringe sie dir später.", Info_Mod_Ivan_Hasenfuss4_D);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "I'll bring it to you later.", Info_Mod_Ivan_Hasenfuss4_D);
 
 	if (Npc_HasItems(hero, ItPl_Health_Herb_01) >= 5)
 	{
-		Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "Hier hast du sie.", Info_Mod_Ivan_Hasenfuss4_C);
+		Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "Here you have them.", Info_Mod_Ivan_Hasenfuss4_C);
 	};
 };
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss4_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss4_A_15_00"); //Das wird deinen Vater nicht erfreuen.
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_A_01_01"); //(aufbrausend) Mein Vater steckt wieder dahinter! Ich kann es nicht mehr hören!
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_A_01_02"); //Aber das war das letzte Mal, dass er mich hintergeht!
-	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_A_01_03"); //Es gibt schließlich auch andere Orte, an denen ich wohnen kann.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss4_A_15_00"); //It won't please your father.
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_A_01_01"); //My father is behind this again! I can't hear it anymore!
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_A_01_02"); //But that was the last time he ever betrayed me!
+	AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss4_A_01_03"); //After all, there are other places I can live in.
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss4);
 
@@ -274,14 +274,14 @@ FUNC VOID Info_Mod_Ivan_Hasenfuss4_A()
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss4_D()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss4_D_15_00"); //Ich bringe sie dir später.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss4_D_15_00"); //I'll bring it to you later.
 
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss4);
 };
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss4_C()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss4_C_15_00"); //Hier hast du sie.
+	AI_Output(hero, self, "Info_Mod_Ivan_Hasenfuss4_C_15_00"); //Here you have them.
 
 	B_GiveInvItems	(hero, self, ItPl_Health_Herb_01, 5);
 
@@ -313,11 +313,11 @@ FUNC VOID Info_Mod_Ivan_Hasenfuss5_Info()
 {
 	if (Mod_REL_Hasenfuss == 8)
 	{
-		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss5_01_00"); //(prahlerisch) Hast du gesehen, wie ich's denen gegeben habe? Das hat Spaß gemacht!
+		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss5_01_00"); //Did you see the way I gave it to them? That was fun!
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss5_01_01"); //Und was soll daran jetzt so toll sein?
+		AI_Output(self, hero, "Info_Mod_Ivan_Hasenfuss5_01_01"); //And what's so great about it now?
 	};
 
 	AI_StopProcessInfos	(self);
@@ -335,7 +335,7 @@ INSTANCE Info_Mod_Ivan_Freudenspender (C_INFO)
 	information	= Info_Mod_Ivan_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Möchtest du auch Freudenspender oder bist du noch zu jung?";
+	description 	= "Do you want to give joy or are you still too young?";
 };                       
 
 FUNC INT Info_Mod_Ivan_Freudenspender_Condition()
@@ -350,8 +350,8 @@ FUNC INT Info_Mod_Ivan_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Ivan_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ivan_Freudenspender_15_00"); //Möchtest du auch Freudenspender oder bist du noch zu jung?
-	AI_Output(self, hero, "Info_Mod_Ivan_Freudenspender_01_01"); //Nein, ich nehm das Zeug ... regelmäßig.
+	AI_Output(hero, self, "Info_Mod_Ivan_Freudenspender_15_00"); //Do you want to give joy or are you still too young?
+	AI_Output(self, hero, "Info_Mod_Ivan_Freudenspender_01_01"); //No, I'll take the stuff... regularly.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Mann_TeachFight (C_INFO)
 	information	= Info_Mod_Mann_TeachFight_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Schwertkampf lehren)";
+	description	= "(Teach swordplay)";
 };
 
 FUNC INT Info_Mod_Mann_TeachFight_Condition()
@@ -21,8 +21,8 @@ FUNC INT Info_Mod_Mann_TeachFight_Condition()
 
 FUNC VOID Info_Mod_Mann_TeachFight_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mann_TeachFight_15_00"); //Lerne das Schwert als einen Teil deines Armes, deines eigenen Körpers zu sehen. Werde eins mit ihm.
-	AI_Output(hero, self, "Info_Mod_Mann_TeachFight_15_01"); //Benutzt du ein zweischneidiges Schwert, so stecke viel Wucht in den Schlag, einen Säbel jedoch lässt auf dem Gegner abgleiten, um tiefe Schnittwunden zu schlagen.
+	AI_Output(hero, self, "Info_Mod_Mann_TeachFight_15_00"); //Learn to see the sword as a part of your arm, your own body. Become one with him.
+	AI_Output(hero, self, "Info_Mod_Mann_TeachFight_15_01"); //If you use a double-edged sword, put a lot of force into the blow, but a saber lets slip on the opponent to strike deep cuts.
 
 	B_GivePlayerXP	(100);
 };

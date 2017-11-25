@@ -1,7 +1,7 @@
 instance PC_Hero (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Ich";
+	name 		= "Me";
 	guild		= GIL_NONE;
 	id			= 0;
 	voice		= 15;
@@ -63,7 +63,7 @@ instance PC_Hero (NPC_DEFAULT)
 instance Cheater (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Cheatmeister";
+	name 		= "cheat master";
 	guild		= GIL_NONE;
 	id			= 20000;
 	voice		= 15;
@@ -112,7 +112,7 @@ FUNC VOID Rtn_Start_20000 ()
 instance Fake_Hero (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Ich";
+	name 		= "Me";
 	guild		= GIL_DMT;
 	id			= 5000;
 	voice		= 15;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Norman_Hi (C_INFO)
 	information	= Info_Mod_Norman_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Norman_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Norman_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Norman_Hi_36_00"); //Ein armer Sklave, der dem ungnädigen Willen eines undurchsichtigen Plans unterworfen ist.
+	AI_Output(self, hero, "Info_Mod_Norman_Hi_36_00"); //A poor slave subject to the ungracious will of an opaque plan.
 };
 
 INSTANCE Info_Mod_Norman_Unzufrieden (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Norman_Unzufrieden (C_INFO)
 	information	= Info_Mod_Norman_Unzufrieden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum bist du unzufrieden?";
+	description	= "Why are you dissatisfied?";
 };
 
 FUNC INT Info_Mod_Norman_Unzufrieden_Condition()
@@ -42,8 +42,8 @@ FUNC INT Info_Mod_Norman_Unzufrieden_Condition()
 
 FUNC VOID Info_Mod_Norman_Unzufrieden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Norman_Unzufrieden_15_00"); //Warum bist du unzufrieden?
-	AI_Output(self, hero, "Info_Mod_Norman_Unzufrieden_36_01"); //Warum Knechtschaft nicht befriedigt? Ich weiß es nicht, Bruder.
+	AI_Output(hero, self, "Info_Mod_Norman_Unzufrieden_15_00"); //Why are you dissatisfied?
+	AI_Output(self, hero, "Info_Mod_Norman_Unzufrieden_36_01"); //Why not satisfy bondage? I don't know, brother.
 };
 
 INSTANCE Info_Mod_Norman_Endres (C_INFO)
@@ -54,7 +54,7 @@ INSTANCE Info_Mod_Norman_Endres (C_INFO)
 	information	= Info_Mod_Norman_Endres_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du von Endres' Tod gehört?";
+	description	= "Have you heard of Endres' death?";
 };
 
 FUNC INT Info_Mod_Norman_Endres_Condition()
@@ -68,12 +68,12 @@ FUNC INT Info_Mod_Norman_Endres_Condition()
 
 FUNC VOID Info_Mod_Norman_Endres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Norman_Endres_15_00"); //Hast du von Endres' Tod gehört?
-	AI_Output(self, hero, "Info_Mod_Norman_Endres_36_01"); //(murmelt stumpfsinnig) Endres ist tot, aber sein Werk lebt fort.
-	AI_Output(self, hero, "Info_Mod_Norman_Endres_36_02"); //Warum musste er sterben? Wer profitiert von dem Mord?
-	AI_Output(self, hero, "Info_Mod_Norman_Endres_36_03"); //Adanos, verrate mir: Habe ich ihn mit meinen Wünschen getötet? Haben sie eine solche Kraft?
+	AI_Output(hero, self, "Info_Mod_Norman_Endres_15_00"); //Have you heard of Endres' death?
+	AI_Output(self, hero, "Info_Mod_Norman_Endres_36_01"); //Endres is dead, but his work lives on.
+	AI_Output(self, hero, "Info_Mod_Norman_Endres_36_02"); //Why did he have to die? Who benefits from the murder?
+	AI_Output(self, hero, "Info_Mod_Norman_Endres_36_03"); //Adanos, tell me, did I kill him with my wishes? Do they have that kind of power?
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Norman wünschte sich im Stillen Endres' Ableben. Aber wenn wirklich die Bergleute es waren, die Endres getötet haben - was haben sie dadurch für einen Vorteil bekommen? Oder war es lediglich ein Racheakt?");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Norman secretly wished for Endres's demise. But if it was really the miners who killed Endres, what was their advantage? Or was it just an act of revenge?");
 };
 
 INSTANCE Info_Mod_Norman_Pickpocket (C_INFO)

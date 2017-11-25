@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Biftek_Hi (C_INFO)
 	information	= Info_Mod_Biftek_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist ein Neuer?";
+	description	= "You're a new guy?";
 };
 
 FUNC INT Info_Mod_Biftek_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Biftek_Hi_Condition()
 
 FUNC VOID Info_Mod_Biftek_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Biftek_Hi_15_00"); //Du bist ein Neuer?
-	AI_Output(self, hero, "Info_Mod_Biftek_Hi_18_01"); //(feindselig) Wieso Mensch wollen wissen? Nehmen sich in Acht vor gewaltigem Biftek und seiner Axt!
-	AI_Output(self, hero, "Info_Mod_Biftek_Hi_18_02"); //Biftek werden Mensch häuten und roh essen!
-	AI_Output(hero, self, "Info_Mod_Biftek_Hi_15_03"); //Nicht so eilig! Ich bin ein guter Freund von Ur Shak.
-	AI_Output(self, hero, "Info_Mod_Biftek_Hi_18_04"); //Upps! Biftek nicht wissen. Dürfen nicht mal an Mensch knabbern?
-	AI_Output(hero, self, "Info_Mod_Biftek_Hi_15_05"); //Jetzt gerade nicht, nein.
+	AI_Output(hero, self, "Info_Mod_Biftek_Hi_15_00"); //You're a new guy?
+	AI_Output(self, hero, "Info_Mod_Biftek_Hi_18_01"); //Why do people want to know? Beware of mighty biftek and his axe!
+	AI_Output(self, hero, "Info_Mod_Biftek_Hi_18_02"); //Biftek will skin people and eat raw!
+	AI_Output(hero, self, "Info_Mod_Biftek_Hi_15_03"); //Don't be in a hurry! I am a good friend of Ur Shak.
+	AI_Output(self, hero, "Info_Mod_Biftek_Hi_18_04"); //Upps! Biftek did not know. Can't even nibble on humans?
+	AI_Output(hero, self, "Info_Mod_Biftek_Hi_15_05"); //Not right now, no.
 };
 
 INSTANCE Info_Mod_Biftek_Mager (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Biftek_Mager (C_INFO)
 	information	= Info_Mod_Biftek_Mager_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst ziemlich mager aus für einen Ork.";
+	description	= "You look pretty skinny for an orc.";
 };
 
 FUNC INT Info_Mod_Biftek_Mager_Condition()
@@ -45,27 +45,27 @@ FUNC INT Info_Mod_Biftek_Mager_Condition()
 
 FUNC VOID Info_Mod_Biftek_Mager_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager_15_00"); //Du siehst ziemlich mager aus für einen Ork.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_01"); //Vor ein paar Wochen Biftek sein ein starker Ork, aber seitdem kein Fleisch mehr gegessen.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_02"); //In Lager von Orks gar kein Essen mehr, und hier nur Gemüse und Kräuter, wovon Biftek kriegen Bauchschmerzen.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_03"); //Also Biftek jetzt schon ganz schwach und müssen sicher bald sterben.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_04"); //(lauernd) Mensch ganz sicher, dass er noch brauchen alle seine Arme und Beine?
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager_15_05"); //(eilig) Wieso bekommst du hier kein Fleisch?
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_06"); //Ur Shak sagen, Orks auch können leben von Pflanzen und Pilzen, und sein viel einfacher zu finden und zu sammeln.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_07"); //Aber Biftek sagen: Pfui! Pflanzen und Pilze nicht schmecken und nicht machen satt. Aber er zu schwach, um selbst jagen zu gehen.
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager_15_00"); //You look pretty skinny for an orc.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_01"); //A few weeks ago Biftek would be a strong orc, but since then no more meat eaten.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_02"); //In camps of orcs no longer eat any food at all, and here only vegetables and herbs, of which biftek get stomach pains.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_03"); //So Biftek is already very weak and will surely die soon.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_04"); //(crying) Man quite sure that he still need all his arms and legs?
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager_15_05"); //Why don't you get meat here?
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_06"); //Ur shak say orcs also can live on plants and mushrooms, and its much easier to find and collect.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_07"); //But Biftek say: Yikes! Plants and mushrooms do not taste good and do not make full. But he's too weak to go hunting himself.
 	
 	AI_TurnAway(hero, self);
 	
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager_15_08"); //(zu sich selbst) Ich könnte natürlich anbieten, ihm Fleisch zu bringen. Aber davon hätte er nicht lange was. Ich sollte mit Ur Shak bereden, was zu tun ist.
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager_15_08"); //(to himself) Of course, I could offer to bring him meat. But he wouldn't have much of that for long. I should talk to Ur Shak about what to do.
 	
 	AI_TurnToNpc(hero, self);
 	
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager_15_09"); //(zu Biftek) Hör mal, ich kann dir zwar momentan nicht helfen. Aber wenn ich eine Möglichkeit finde, komme ich wieder.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_10"); //(sehnsüchtig) Du dich vielleicht könntest einsalzen, damit besser schmecken?
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager_15_09"); //Look, I can't help you right now, though. But if I find a way, I'll come back.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager_18_10"); //You could salt yourself up to taste better?
 
 	Log_CreateTopic	(TOPIC_MOD_BIFTEK_FLEISCHERSATZ, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BIFTEK_FLEISCHERSATZ, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BIFTEK_FLEISCHERSATZ, "Der Ork Biftek in der Bergfestung hat seit Wochen kein Fleisch mehr gehabt und fühlt sich kurz vor dem Verhungern. Da Fleisch rar ist, braucht er einen adäquaten Ersatz. Vielleicht weiß Ur Shak Rat.");
+	B_LogEntry	(TOPIC_MOD_BIFTEK_FLEISCHERSATZ, "The Orc Biftek in the mountain fortress has not had meat for weeks and feels like starving. Since meat is scarce, he needs an adequate substitute. Maybe Ur Shak knows what to do.");
 };
 
 var int Mod_Biftek_Day;
@@ -78,7 +78,7 @@ INSTANCE Info_Mod_Biftek_Mager2 (C_INFO)
 	information	= Info_Mod_Biftek_Mager2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schau mal, ich hab dir ein Stück Fleisch mitgebracht.";
+	description	= "Look, I brought you a piece of meat.";
 };
 
 FUNC INT Info_Mod_Biftek_Mager2_Condition()
@@ -93,27 +93,27 @@ FUNC INT Info_Mod_Biftek_Mager2_Condition()
 
 FUNC VOID Info_Mod_Biftek_Mager2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_00"); //Schau mal, ich hab dir ein Stück Fleisch mitgebracht.
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_00"); //Look, I brought you a piece of meat.
 	
 	B_GiveInvItems(hero, self, ItFo_Tofu, 1);
 	
 	B_UseItem(self, ItFo_Tofu);
 	
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_01"); //(kaut genüsslich) Hmmjommjomm. Ah, diesen Geschmack Biftek haben schon so lange vermisst. Biftek jetzt froh. Mensch haben noch mehr?
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_02"); //Nein, aber du kannst dir ganz einfach selbst was zubereiten. Hier.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_01"); //(chewing with relish) Hmmjommjomm. Ah, this taste Biftek have been missing for so long. Biftek now glad. Man have more?
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_02"); //No, but you can just cook your own food. Here.
 	
 	B_GiveInvItems(hero, self, ItWr_TofuRezept, 1);
 	
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_03"); //(würgt) Mensch wollen Biftek vergiften! Und Biftek vertrauen Mensch!
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_04"); //Jetzt komm mal runter. Du hast gar keinen Unterschied geschmeckt.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_05"); //Doch. Biftek nur wollen sein nett und nicht zugeben.
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_06"); //Stimmt gar nicht.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_07"); //Stimmen wohl.
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_08"); //Jetzt hör mir mal zu: Du hast keinen Unterschied gemerkt, basta. Alles andere kannst du deiner Mutter erzählen.
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_09"); //Und wenn du jetzt zu faul bist, Ur Shak zu bitten, dass er So-Ja-Pflanzen sammeln lässt und du dir daraus To-Fu herstellst, bist du selbst Schuld.
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_10"); //Sobald du wieder bei Kräften bist, kannst du dir dein Fleisch selbst besorgen.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_11"); //Na gut, vielleicht haben Recht. Biftek danken Mensch, aber er Biftek in Zukunft nicht mehr beschwindeln.
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_12"); //Abgemacht.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_03"); //Man wants to poison Biftek! And Biftek trust people!
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_04"); //Come on down here. You didn't taste any different.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_05"); //Yes, it is. Biftek just want to be nice and not admit it.
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_06"); //That's not true at all.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_07"); //Voices well.
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_08"); //Now, listen to me. You didn't notice a difference, that's final. You can tell your mother everything else.
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_09"); //And if you're too lazy to ask Ur Shak to let him collect so-yes plants and turn them into To-Fu, it's your fault.
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_10"); //As soon as you get your strength back, you can get your own meat.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager2_18_11"); //Well, maybe they're right. Biftek thank man, but he will no longer deceive Biftek in the future.
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager2_15_12"); //Deal.
 	
 	B_GivePlayerXP(350);
 
@@ -132,7 +132,7 @@ INSTANCE Info_Mod_Biftek_Mager3 (C_INFO)
 	information	= Info_Mod_Biftek_Mager3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst schon wieder kräftiger aus.";
+	description	= "You look stronger again.";
 };
 
 FUNC INT Info_Mod_Biftek_Mager3_Condition()
@@ -146,12 +146,12 @@ FUNC INT Info_Mod_Biftek_Mager3_Condition()
 
 FUNC VOID Info_Mod_Biftek_Mager3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager3_15_00"); //Du siehst schon wieder kräftiger aus.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager3_18_01"); //Oh ja, Biftek essen To-Fu den ganzen Tag, können kaum aufhören. Ur Shak müssen Biftek verbieten zu essen weiter, weil nicht genügend So-Ja-Bohnen da.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager3_18_02"); //Aber Biftek gehen und suchen sich seine Bohnen selbst!
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager3_15_03"); //(seufzt) Hauptsache, es geht dir wieder gut.
-	AI_Output(self, hero, "Info_Mod_Biftek_Mager3_18_04"); //Biftek haben jetzt auch keine Lust mehr an Mensch zu knabbern!
-	AI_Output(hero, self, "Info_Mod_Biftek_Mager3_15_05"); //Das freut mich.
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager3_15_00"); //You look stronger again.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager3_18_01"); //Oh yes, biftek eat to-fu all day, can hardly stop. Ur shak must prohibit biftek to eat further because not enough so-yes beans there.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager3_18_02"); //But Biftek go and find his own beans!
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager3_15_03"); //As long as you're all right.
+	AI_Output(self, hero, "Info_Mod_Biftek_Mager3_18_04"); //Biftek don't want to nibble on people anymore!
+	AI_Output(hero, self, "Info_Mod_Biftek_Mager3_15_05"); //I'm glad you did.
 };
 
 INSTANCE Info_Mod_Biftek_WarumDabei (C_INFO)
@@ -162,7 +162,7 @@ INSTANCE Info_Mod_Biftek_WarumDabei (C_INFO)
 	information	= Info_Mod_Biftek_WarumDabei_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum hast du dich Ur Shak, Tarrok und Ranad angeschlossen?";
+	description	= "Why did you join Ur Shak, Tarrok and Ranad?";
 };
 
 FUNC INT Info_Mod_Biftek_WarumDabei_Condition()
@@ -175,9 +175,9 @@ FUNC INT Info_Mod_Biftek_WarumDabei_Condition()
 
 FUNC VOID Info_Mod_Biftek_WarumDabei_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Biftek_WarumDabei_15_00"); //Warum hast du dich Ur Shak, Tarrok und Ranad angeschlossen?
-	AI_Output(self, hero, "Info_Mod_Biftek_WarumDabei_18_01"); //Ganz einfach, in Lager von Orks kein Essen mehr da, viel verschüttet in Tempel von Krushak, und nicht genügend Orks zu jagen frisches Fleisch.
-	AI_Output(self, hero, "Info_Mod_Biftek_WarumDabei_18_02"); //Aber Ranad sagen, er kennen Ort, wo Biftek können essen, so viel er wollen. Also Biftek kommen mit. Aber Ranad nicht sagen, dass nur Gemüse haben!
+	AI_Output(hero, self, "Info_Mod_Biftek_WarumDabei_15_00"); //Why did you join Ur Shak, Tarrok and Ranad?
+	AI_Output(self, hero, "Info_Mod_Biftek_WarumDabei_18_01"); //Quite simply, in camps of orcs no longer any food there, much buried in temples of Krushak, and not enough orcs to hunt fresh meat.
+	AI_Output(self, hero, "Info_Mod_Biftek_WarumDabei_18_02"); //But Ranad say he know where Biftek can eat as much as he wants. So biftek's coming with us. But Ranad did not say that only have vegetables!
 };
 
 INSTANCE Info_Mod_Biftek_EXIT (C_INFO)

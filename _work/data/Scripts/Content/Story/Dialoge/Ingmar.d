@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ingmar_Hi (C_INFO)
 	information	= Info_Mod_Ingmar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Ingmar_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Ingmar_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Ingmar_Hi_06_01"); //Ich bin Ingmar der Ritter. Ich bin ein Beschützer dieser Stadt. Außerdem sorge ich dafür, dass die anderen Ritter stark genug sind.
+	AI_Output(self, hero, "Info_Mod_Ingmar_Hi_06_01"); //I'm Ingmar the knight. I'm a protector of this town. Besides, I'll make sure the other knights are strong enough.
 };
 
 INSTANCE Info_Mod_Ingmar_Innosklinge (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Ingmar_Innosklinge (C_INFO)
 	information	= Info_Mod_Ingmar_Innosklinge_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sei gegrüßt. Ich hörte du begeisterst dich für Gedichte (...)";
+	description	= "Greetings. I heard you were enthusiastic about poems (.... )";
 };
 
 FUNC INT Info_Mod_Ingmar_Innosklinge_Condition()
@@ -42,42 +42,42 @@ FUNC INT Info_Mod_Ingmar_Innosklinge_Condition()
 
 FUNC VOID Info_Mod_Ingmar_Innosklinge_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ingmar_Innosklinge_15_00"); //Sei gegrüßt. Ich hörte du begeisterst dich für Gedichte und Liedtexte über den Kampf für Innos‘ gerechte Sache.
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_01"); //Ja, das stimmt in der Tat.
-	AI_Output(hero, self, "Info_Mod_Ingmar_Innosklinge_15_02"); //Sagt dir 'Dominiques Ruf' etwas?
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_03"); //Sicher doch. Wer kennt nicht den legendären Paladin Dominique und die epischen Schriften, die von seinen Heldentaten künden.
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_04"); //Warte einen Augenblick, ich werde es aus meinen Liedtexten heraussuchen.
+	AI_Output(hero, self, "Info_Mod_Ingmar_Innosklinge_15_00"); //Greetings. I heard you were enthusiastic about poems and lyrics about the struggle for Inno's just cause.
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_01"); //Yes, that is indeed true.
+	AI_Output(hero, self, "Info_Mod_Ingmar_Innosklinge_15_02"); //Does' Dominique Ruf' mean anything to you?
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_03"); //Sure thing. Who doesn't know the legendary Paladin Dominique and the epic writings that testify to his heroic deeds?
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_04"); //Wait a minute, I'll pick it out of my lyrics.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_05"); //Ongars Knochenweg ... nein ...
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_05"); //Ongar's bone tract... no--
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_06"); //Parzivals Blutopfer ... auch nicht ... ahh, ja, hier ...
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_06"); //Parzival's blood sacrifice.... neither ahh, yeah, here...
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_07"); //Dominiques Ruf
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_08"); //Wir werden seinen Ruhm ernten
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_09"); //Innos steht bei mir und meinen Brüdern
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_10"); //Ich werde alle auf meinem Weg wie Schafe schlachten
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_11"); //denn er ist das Feuer in meinem Herz
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_12"); //Meine Klinge ist nur ihm geweiht
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_13"); //an diesem Tag wird sein Name erklingen
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_14"); //Jeder der sich in meinen Weg stellt
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_15"); //wird durch meine Hand sterben
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_16"); //denn ich bin ein Krieger Innos
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_17"); //Vollstrecker seines Willens
-	AI_Output(hero, self, "Info_Mod_Ingmar_Innosklinge_15_18"); //Danke, hab’s mir aufgeschrieben.
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_07"); //Dominique's Call
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_08"); //We will reap his glory
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_09"); //Innos stands by me and my brothers
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_10"); //I will slaughter them all like sheep on my way
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_11"); //for he is the fire in my heart
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_12"); //My blade is dedicated only to him
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_13"); //that day his name will resound
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_14"); //Anyone who stands in my way
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_15"); //will die by my hand
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_16"); //for I am a warrior Innos
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_17"); //executor of his will
+	AI_Output(hero, self, "Info_Mod_Ingmar_Innosklinge_15_18"); //Thanks, I wrote it down.
 
 	CreateInvItems	(hero, ItWr_DominiquesRuf, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_19"); //Gerne. Es freut mich immer, wenn jemand die lyrischen Schriften der Streiter Innos' zu schätzen weiß.
+	AI_Output(self, hero, "Info_Mod_Ingmar_Innosklinge_06_19"); //Gladly. I am always pleased when someone appreciates the lyrical writings of Inno's contenders.
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_INNOSKLINGE, "Ich habe den Liedtext. Den Rest wird mir Harad hoffentlich erklären können.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_INNOSKLINGE, "I have the lyrics. I hope Harad will be able to explain the rest.");
 };
 
 INSTANCE Info_Mod_Ingmar_Lehrer (C_INFO)
@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Ingmar_Lehrer (C_INFO)
 	information	= Info_Mod_Ingmar_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mich auch trainieren?";
+	description	= "Can you train me too?";
 };
 
 FUNC INT Info_Mod_Ingmar_Lehrer_Condition()
@@ -102,27 +102,27 @@ FUNC INT Info_Mod_Ingmar_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Ingmar_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ingmar_Lehrer_15_00"); //Kannst du mich auch trainieren?
+	AI_Output(hero, self, "Info_Mod_Ingmar_Lehrer_15_00"); //Can you train me too?
 	
 	if (Mod_Gilde == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Ingmar_Lehrer_06_01"); //Sobald zu einem Ritter geworden bist werde ich dich trainieren, vorher nicht.
+		AI_Output(self, hero, "Info_Mod_Ingmar_Lehrer_06_01"); //Once you become a knight, I'll train you, not before.
 
-		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Ingmar wird mich in Stärke trainieren sobald ich ein Ritter bin.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Ingmar will train me in strength as soon as I become a knight.");
 	}
 	else if (Mod_Gilde == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Ingmar_Lehrer_06_02"); //Da du ein Ritter bist werde ich dich trainieren.
+		AI_Output(self, hero, "Info_Mod_Ingmar_Lehrer_06_02"); //Since you're a knight, I'll train you.
 
-		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Ingmar wird mich in Stärke trainieren, solange ich ein Ritter bin.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Ingmar will train me in strength as long as I'm a knight.");
 	}
 	else if (Mod_Gilde == 3)
 	{
-		AI_Output(self, hero, "Info_Mod_Ingmar_Lehrer_06_03"); //Du bist bereits ein Paladin. Ich kann dich nicht mehr unterweisen. Du musst dir einen neuen Lehrer suchen.
+		AI_Output(self, hero, "Info_Mod_Ingmar_Lehrer_06_03"); //You're already a paladin. I can't teach you anymore. You need to find a new teacher.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Ingmar_Lehrer_06_04"); //Ich trainiere nur Ritter.
+		AI_Output(self, hero, "Info_Mod_Ingmar_Lehrer_06_04"); //I only train knights.
 	};
 };
 
@@ -134,7 +134,7 @@ INSTANCE Info_Mod_Ingmar_Lernen (C_INFO)
 	information	= Info_Mod_Ingmar_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeig mir wie ich stärker werde.";
+	description	= "Show me how I'm getting stronger.";
 };
 
 FUNC INT Info_Mod_Ingmar_Lernen_Condition()
@@ -150,7 +150,7 @@ FUNC INT Info_Mod_Ingmar_Lernen_Condition()
 
 FUNC VOID Info_Mod_Ingmar_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ingmar_Lernen_15_00"); //Zeig mir wie ich stärker werde.
+	AI_Output(hero, self, "Info_Mod_Ingmar_Lernen_15_00"); //Show me how I'm getting stronger.
 
 	Info_ClearChoices	(Info_Mod_Ingmar_Lernen);
 

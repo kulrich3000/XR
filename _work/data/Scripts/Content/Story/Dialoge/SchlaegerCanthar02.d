@@ -19,7 +19,7 @@ FUNC INT Info_Mod_SchlaegerCanthar02_HiVorher_Condition()
 
 FUNC VOID Info_Mod_SchlaegerCanthar02_HiVorher_Info()
 {
-	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar02_HiVorher_28_00"); //Hau ab!
+	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar02_HiVorher_28_00"); //Get out of here!
 
 	AI_StopProcessInfos	(self);
 };
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_SchlaegerCanthar02_Hi (C_INFO)
 	information	= Info_Mod_SchlaegerCanthar02_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie komme ich zurück nach Khorinis?";
+	description	= "How do I get back to Khorinis?";
 };
 
 FUNC INT Info_Mod_SchlaegerCanthar02_Hi_Condition()
@@ -46,10 +46,10 @@ FUNC INT Info_Mod_SchlaegerCanthar02_Hi_Condition()
 
 FUNC VOID Info_Mod_SchlaegerCanthar02_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_SchlaegerCanthar02_Hi_15_00"); //Wie komme ich zurück nach Khorinis?
-	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar02_Hi_28_01"); //Lern Schwimmen.
-	AI_Output(hero, self, "Info_Mod_SchlaegerCanthar02_Hi_15_02"); //Habt ihr kein Boot?
-	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar02_Hi_28_03"); //Nich für dich.
+	AI_Output(hero, self, "Info_Mod_SchlaegerCanthar02_Hi_15_00"); //How do I get back to Khorinis?
+	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar02_Hi_28_01"); //Learn to swim.
+	AI_Output(hero, self, "Info_Mod_SchlaegerCanthar02_Hi_15_02"); //Don't you have a boat?
+	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar02_Hi_28_03"); //Not for you.
 };
 
 INSTANCE Info_Mod_SchlaegerCanthar02_EXIT (C_INFO)

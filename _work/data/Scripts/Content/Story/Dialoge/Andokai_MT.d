@@ -15,59 +15,59 @@ FUNC INT Info_Mod_Andokai_Hi_Condition()
 
 FUNC VOID Info_Mod_Andokai_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_12_00"); //(tonlos) Was suchst du hier?
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_12_00"); //What are you doing here?
 
 	Info_ClearChoices	(Info_Mod_Andokai_Hi);
 
-	Info_AddChoice	(Info_Mod_Andokai_Hi, "Ich wollte mich nur mal umschauen.", Info_Mod_Andokai_Hi_B);
-	Info_AddChoice	(Info_Mod_Andokai_Hi, "Xardas hat mich an dich verwiesen.", Info_Mod_Andokai_Hi_A);
+	Info_AddChoice	(Info_Mod_Andokai_Hi, "I was just looking around.", Info_Mod_Andokai_Hi_B);
+	Info_AddChoice	(Info_Mod_Andokai_Hi, "Xardas referred me to you.", Info_Mod_Andokai_Hi_A);
 };
 
 FUNC VOID Info_Mod_Andokai_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Hi_B_15_00"); //Ich wollte mich nur mal umschauen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_B_12_01"); //(freudlos) Du bist ja ein lustiges Kerlchen. Sei froh, dass wir unliebsame Besucher nicht mehr ... aus dem Weg räumen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_B_12_02"); //Wenn du dich nicht bei uns bewerben willst, sieh zu, dass du Land gewinnst.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hi_B_15_00"); //I was just looking around.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_B_12_01"); //You're a funny guy. You're lucky we don't have unpleasant visitors anymore... out of the way.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_B_12_02"); //If you don't want to apply to us, make sure you win some land.
 };
 
 FUNC VOID Info_Mod_Andokai_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_00"); //Xardas hat mich an dich verwiesen. Ich will mich euch anschließen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_01"); //Xardas? So, so. Und du willst Novize werden? Du siehst schwächlich aus.
-	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_02"); //Ich war mal stärker.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_03"); //Wie schön für dich. Wenn Xardas dich für geeignet hält, muss ja was an dir dran sein.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_04"); //Aber ich werde dich nicht aufnehmen, wenn du mir nicht bewiesen hast, wie du uns nützlich sein kannst.
-	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_05"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_06"); //Als Erstes musst du mich von deiner Gesinnung überzeugen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_07"); //Auf Khorinis gibt es ein Kloster der Feuermagier - unserer erbitterten Feinde, wie du sicher weißt.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_08"); //Es kann nicht schaden, wenn du ihnen ein wenig schadest - als Vertrauensbeweis für mich.
-	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_09"); //Wie soll ich das anstellen?
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_10"); //Die Magier bunkern in den Tiefen ihrer Gewölbe eine Reliquie, die sie wie ihren Augapfel hüten - den Heiligen Hammer.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_11"); //Würden sie nun feststellen, dass er verschwunden wäre - nun, das wäre sehr spaßig.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_12"); //Du wirst dich also in das Kloster begeben und diesen Hammer stehlen.
-	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_13"); //Alles klar. Werde ich denn einfach so ins Kloster gelassen?
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_14"); //Nein. Nur Innosgläubige können das Eingangstor passieren. Es gibt aber rechts neben dem Eingang eine niedrige Mauer, über die du ins Klosterinnere kommst.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_15"); //Um aber nicht aufzufallen, musst du eine Novizenrobe tragen. Wir haben ein grobes Imitat, mit dem du kaum jemanden beeindrucken wirst.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_16"); //Aber die alten Augen von Gorax werden keinen Unterschied feststellen. Vielleicht lässt sich auch die Pforte damit durchschreiten, jedoch ist es ein riskanter Versuch.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_00"); //Xardas referred me to you. I want to join you.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_01"); //Xardas? There, there. And you want to be a novice? You look weak.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_02"); //I used to be stronger.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_03"); //How nice for you. If Xardas thinks you're suitable, there must be something about you.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_04"); //But I won't take you in unless you've proven how useful you can be to us.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_05"); //What do you want me to do?
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_06"); //The first thing you have to do is convince me of your attitude.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_07"); //Khorinis has a monastery of fire magicians - our fierce enemies, as you know.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_08"); //It can't hurt if you hurt them a little - as a sign of trust for me.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_09"); //How am I supposed to do that?
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_10"); //The magicians bunker a relic in the depths of their vaults, guarding it like the apple of their eyes - the Holy Hammer.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_11"); //Would you now find that he would have disappeared - well, that would be very fun.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_12"); //So you will go to the monastery and steal that hammer.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_13"); //All clear. Am I just gonna be allowed into the convent?
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_14"); //No. Only Innos believers can pass the entrance gate. To the right of the entrance, however, there is a low wall that leads to the inside of the monastery.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_15"); //But to avoid attracting attention, you must wear a novice's robe. We have a crude imitation that you'll hardly impress anyone with.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_16"); //But the old eyes of Gorax won't notice any difference. It may be possible to pass through the gate, but it is a risky attempt.
 
 	CreateInvItems	(self, ITAR_FAKE_NOV_L, 1);
 	B_GiveInvItems	(self, hero, ITAR_FAKE_NOV_L, 1);
 
-	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_17"); //Und wie komme ich an den Hammer? Wird der nicht beschützt?
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_18"); //Natürlich wird er das. Du wirst dir etwas einfallen lassen müssen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_19"); //Wenn du nicht weiter weißt, frag Bodo in der Stadt. Der hat selbst letztens eine ähnliche Aufgabe erfüllen müssen.
-	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_20"); //Dann mache ich mich mal auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_21"); //Warte! Wenn du eh schon im Kloster bist, kannst du auch gleich noch etwas anderes erledigen. Dort ist nämlich Gorax verantwortlich für die Weinproduktion.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_22"); //Wein ist gut, wir brauchen ihn nicht nur für unsere Rituale, sondern auch, weil er ausgezeichnet schmeckt - das muss man den roten Furzknoten lassen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_23"); //Erwirb das Vertrauen von Gorax. Biete ihm an, einen Botengang durchzuführen. Dann nimm den Wein und kehre zurück. Bring ihn Myxir.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_17"); //How do I get the hammer? Isn't he being protected?
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_18"); //Of course he will. You're gonna have to come up with something.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_19"); //If you don't know what to do, ask Bodo in town. He himself recently had to fulfil a similar task.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hi_A_15_20"); //I'll be on my way, then.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_21"); //Wait! If you're already in the monastery, there's something else you can do. Gorax is responsible for wine production there.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_22"); //Wine is good, we need it not only for our rituals, but also because it tastes great - you have to leave it at the red fart knot.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hi_A_12_23"); //Acquire the trust of Gorax. Tell him to run an errand. Then take the wine and go back. Bring it to Myxir.
 
 	Info_ClearChoices	(Info_Mod_Andokai_Hi);
 
 	Log_CreateTopic	(TOPIC_MOD_ANDOKAI_WEIN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ANDOKAI_WEIN, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_DAEMONENBESCHWOERER, TOPIC_MOD_ANDOKAI_WEIN, "Mein erster Auftrag besteht darin, den Heiligen Hammer für Andokai zu stehlen, den die Feuermagier irgendwo in den Gewölben ihres Klosters in Khorinis versteckt haben.", "Ich soll mich ins Kloster der Feuermagier begeben und dort Gorax davon überzeugen, mir eine Weinlieferung auszuhändigen, die ich dann zu Myxir bringe.");
-	B_LogEntry_NS	(TOPIC_MOD_ANDOKAI_WEIN, "Ich falle im Kloster nicht auf, wenn ich eine Novizenrobe trage. Außerdem muss ich über die Mauer rechts neben dem Eingangstor zum Kloster klettern, um in den Innenhof gelangen zu können.");
-	B_LogEntry_NS	(TOPIC_MOD_DAEMONENBESCHWOERER, "Ich falle im Kloster nicht auf, wenn ich eine Novizenrobe trage. Außerdem muss ich über die Mauer rechts neben dem Eingangstor zum Kloster klettern, um in den Innenhof gelangen zu können. Wie ich den Hammer stehle, ohne dass es bemerkt wird, kann mir vielleicht Bodo in der Stadt sagen.");
+	B_LogEntry_More	(TOPIC_MOD_DAEMONENBESCHWOERER, TOPIC_MOD_ANDOKAI_WEIN, "My first mission is to steal the Sacred Hammer for Andokai, which the Fire Magicians hid somewhere in the vaults of their monastery in Khorinis.", "I am to go to the monastery of fire magicians and convince Gorax to hand me a shipment of wine, which I then bring to Myxir.");
+	B_LogEntry_NS	(TOPIC_MOD_ANDOKAI_WEIN, "I don't attract attention in the monastery when I wear a novice's robe. In addition, I have to climb over the wall to the right of the entrance gate of the monastery to reach the inner courtyard.");
+	B_LogEntry_NS	(TOPIC_MOD_DAEMONENBESCHWOERER, "I don't attract attention in the monastery when I wear a novice's robe. In addition, I have to climb over the wall to the right of the entrance gate of the monastery to reach the inner courtyard. How I steal the hammer without being noticed, maybe Bodo can tell me in town.");
 };
 
 INSTANCE Info_Mod_Andokai_Hammer (C_INFO)
@@ -78,7 +78,7 @@ INSTANCE Info_Mod_Andokai_Hammer (C_INFO)
 	information	= Info_Mod_Andokai_Hammer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist der Hammer.";
+	description	= "Here's the kicker.";
 };
 
 FUNC INT Info_Mod_Andokai_Hammer_Condition()
@@ -93,17 +93,17 @@ FUNC INT Info_Mod_Andokai_Hammer_Condition()
 
 FUNC VOID Info_Mod_Andokai_Hammer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Hammer_15_00"); //Hier ist der Hammer.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hammer_15_00"); //Here's the kicker.
 
 	B_GiveInvItems	(hero, self, Holy_Hammer_MIS, 1);
 
-	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_01"); //Na gut. Du scheinst kein Problem damit zu haben, gegen die Feuermagier zu arbeiten.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_02"); //Das ist erfreulich, wenn auch nur eine Grundvoraussetzung.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_03"); //Die nächste Aufgabe wird dein Durchhaltevermögen, deine Auffassungsgabe und deine Kampfkraft auf die Probe stellen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_04"); //Du sollst die Bibliothek dieser Festung finden.
-	AI_Output(hero, self, "Info_Mod_Andokai_Hammer_15_05"); //Äh...?
-	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_06"); //Unter mir befindet sich ein Tor. Dieses Tor führt in einen Irrgarten. Und irgendwo hinter dem Irrgarten ist die Bibliothek.
-	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_07"); //Ich will wissen, wie man dahin kommt. Du wirst diesen Weg finden.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_01"); //All right, all right. You don't seem to have a problem working against the Fire Magicians.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_02"); //This is gratifying, albeit a basic prerequisite.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_03"); //The next task will test your stamina, perseverance, intelligence and fighting ability.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_04"); //I want you to find the library of this fortress.
+	AI_Output(hero, self, "Info_Mod_Andokai_Hammer_15_05"); //Uh...?
+	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_06"); //There's a gate under me. This gate leads into a maze. And somewhere behind the maze is the library.
+	AI_Output(self, hero, "Info_Mod_Andokai_Hammer_12_07"); //I want to know how to get there. You will find this way.
 
 	Npc_RemoveInvItems	(hero, ITAR_FAKE_NOV_L, 1);
 
@@ -111,7 +111,7 @@ FUNC VOID Info_Mod_Andokai_Hammer_Info()
 
 	B_Göttergefallen(3, 1);
 
-	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Hinter dem großen Tor auf dem Platz der Festung der Beliaranhänger verbirgt sich ein Irrgarten, der zu einer Bibliothek führen soll. Und ich muss den Weg finden.");
+	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Behind the big gate on the square of the Beliaran Fortress there is a maze that leads to a library. And I have to find the way.");
 };
 
 INSTANCE Info_Mod_Andokai_WarInBib (C_INFO)
@@ -122,7 +122,7 @@ INSTANCE Info_Mod_Andokai_WarInBib (C_INFO)
 	information	= Info_Mod_Andokai_WarInBib_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Bibliothek gefunden.";
+	description	= "I found the library.";
 };
 
 FUNC INT Info_Mod_Andokai_WarInBib_Condition()
@@ -136,32 +136,32 @@ FUNC INT Info_Mod_Andokai_WarInBib_Condition()
 
 FUNC VOID Info_Mod_Andokai_WarInBib_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_WarInBib_15_00"); //Ich habe die Bibliothek gefunden.
-	AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_01"); //Hast du dir auch den Weg gemerkt?
+	AI_Output(hero, self, "Info_Mod_Andokai_WarInBib_15_00"); //I found the library.
+	AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_01"); //Did you remember the route?
 
 	if (Mod_BeliarStatue_Bibliothek_Dabei)
 	{
-		AI_Output(hero, self, "Info_Mod_Andokai_WarInBib_15_02"); //Ich habe eine Beliarstatue dort an das Teleportnetz angeschlossen.
-		AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_03"); //Jemand, der mitdenkt. Du überzeugst mich immer mehr.
+		AI_Output(hero, self, "Info_Mod_Andokai_WarInBib_15_02"); //I've connected a Beliar statue there to the teleport network.
+		AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_03"); //Someone thinking. You convince me more and more.
 
 		B_GivePlayerXP	(300);
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Andokai_WarInBib_15_04"); //Ja. Die richtigen Gänge sind alle geöffnet.
-		AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_05"); //Das bedeutet, dass es uns nun leichter fallen wird, durch das Labyrinth zu finden.
+		AI_Output(hero, self, "Info_Mod_Andokai_WarInBib_15_04"); //Yeah. The right aisles are all open.
+		AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_05"); //This means that it will now be easier for us to find our way through the labyrinth.
 
 		B_GivePlayerXP	(200);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_06"); //Ich werde meine Magier anweisen, die Bibliothek gründlich zu erforschen.
-	AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_07"); //Ich wäre bereit, dich als Novize aufzunehmen. Jetzt brauche ich nur noch Xardas' Zustimmung. Er will sich jeden neuen Rekruten ansehen.
-	AI_Output(hero, self, "Info_Mod_Andokai_WarInBib_15_08"); //Muss das sein? Ich kenne Xardas doch schon länger.
-	AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_09"); //Dann wird es ja vielleicht einfacher sein, ihn zu überzeugen.
+	AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_06"); //I will instruct my magicians to thoroughly explore the library.
+	AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_07"); //I'd be willing to accept you as a novice. Now all I need is Xardas' approval. He wants to look at every new recruit.
+	AI_Output(hero, self, "Info_Mod_Andokai_WarInBib_15_08"); //Do we have to? I've known Xardas for a long time.
+	AI_Output(self, hero, "Info_Mod_Andokai_WarInBib_12_09"); //Then maybe it'll be easier to convince him.
 
 	B_Göttergefallen(3, 1);
 
-	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Wenn Xardas sein Einverständnis erklärt, will Andokai mich als Novizen aufnehmen.");
+	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "If Xardas agrees, Andokai will accept me as a novice.");
 
 	Wld_InsertNpc	(Mod_7755_KDS_SchwarzerMagier_MT, "LABYRINTH_98");
 	Wld_InsertNpc	(Mod_7756_KDS_SchwarzerMagier_MT, "LABYRINTH_98");
@@ -178,7 +178,7 @@ INSTANCE Info_Mod_Andokai_Skinner (C_INFO)
 	information	= Info_Mod_Andokai_Skinner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier etwas Sumpfkraut.";
+	description	= "I've got some swampweed here.";
 };
 
 FUNC INT Info_Mod_Andokai_Skinner_Condition()
@@ -193,21 +193,21 @@ FUNC INT Info_Mod_Andokai_Skinner_Condition()
 
 FUNC VOID Info_Mod_Andokai_Skinner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Skinner_15_00"); //Ich habe hier etwas Sumpfkraut, Meister der sphärischen Manifestation.
-	AI_Output(self, hero, "Info_Mod_Andokai_Skinner_12_01"); //Ausgezeichnet. Damit werde ich mein Wissen um Beliar und die dunkle Magie bestimmt steigern können. Was hast du anzubieten?
-	AI_Output(self, hero, "Info_Mod_Andokai_Skinner_12_02"); //Ich nehme zwei Traumrufe, sowie die zwölf schwarze Weise.
+	AI_Output(hero, self, "Info_Mod_Andokai_Skinner_15_00"); //I've got some swamp herb here, master of the spherical manifestation.
+	AI_Output(self, hero, "Info_Mod_Andokai_Skinner_12_01"); //Excellent. This will certainly increase my knowledge of Beliar and dark magic. What do you have to offer?
+	AI_Output(self, hero, "Info_Mod_Andokai_Skinner_12_02"); //I'll take two dream cries, plus the 12 black wise men.
 
 	Npc_RemoveInvItems	(hero, ItMi_Traumruf, 2);
 	Npc_RemoveInvItems	(hero, ItMi_Addon_Joint_02, 12);
 
-	B_ShowGivenThings	("Sumpfkrautstängel gegeben");
+	B_ShowGivenThings	("Swamp herb stems given");
 
-	AI_Output(self, hero, "Info_Mod_Andokai_Skinner_12_03"); //Ich denke, das sollte deine Ausgaben decken.
+	AI_Output(self, hero, "Info_Mod_Andokai_Skinner_12_03"); //I think this should cover your expenses.
 
 	CreateInvItems	(self, ItMi_Gold, 750);
 	B_GiveInvItems	(self, hero, ItMi_Gold, 750);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Andokai hat mich für das Sumpfkraut großzügig entlohnt.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Andokai remunerated me generously for the swampweed.");
 
 	B_GivePlayerXP	(100);
 };
@@ -220,7 +220,7 @@ INSTANCE Info_Mod_Andokai_Moorhexe (C_INFO)
 	information	= Info_Mod_Andokai_Moorhexe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hörte, dass ihr im Besitz von Verwandlungszaubern seid.";
+	description	= "I have heard that you are in possession of metamorphosis spells.";
 };
 
 FUNC INT Info_Mod_Andokai_Moorhexe_Condition()
@@ -234,19 +234,19 @@ FUNC INT Info_Mod_Andokai_Moorhexe_Condition()
 
 FUNC VOID Info_Mod_Andokai_Moorhexe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Moorhexe_15_00"); //Ich hörte, dass ihr im Besitz von Verwandlungszaubern seid. Könnte ich vielleicht einige von ihnen erstehen?
-	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_01"); //(abwertend) Ha, da hört sich doch alles auf. Du willst Material, das für unsere unbezahlbaren Forschungen gedacht ist?
-	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_02"); //Du als einfacher Söldner kannst doch bestimmt nicht einmal eine simple Feuerpfeilspruchrolle wirken.
-	AI_Output(hero, self, "Info_Mod_Andokai_Moorhexe_15_03"); //Nun, ich war zumindest begabt genug, mir über die Schreine Zutritt zu eurem Kloster zu verschaffen und mich durch ganz Khorinis zu teleportieren.
-	AI_Output(hero, self, "Info_Mod_Andokai_Moorhexe_15_04"); //Ich bin gerne bereit, den Nachweis für meinen Umgang mit Runen und Spruchrollen zu erbringen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_05"); //(Erbost) Was erdreistest du dich, meiner zu spotten?!
-	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_06"); //Ich ... (hält plötzlich inne) Aber warte mal, lass mich nachdenken ... ich habe eine kleine Aufgabe, die zeigen wird, ob du überaus begabt, oder ein völliger Narr bist.
-	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_07"); //Dem Innoskloster wurde bei einem Überfall durch dämonische Kreaturen eine wertvolle Reliquie geraubt, der goldene Stab Pyrmans.
-	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_08"); //Wenn es dir gelingt, mir diesen zu bringen, hast du mich überzeugt.
+	AI_Output(hero, self, "Info_Mod_Andokai_Moorhexe_15_00"); //I have heard that you are in possession of metamorphosis spells. Could I perhaps purchase some of them?
+	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_01"); //Ha, that's where it all ends. You want material designed for our priceless research?
+	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_02"); //As a simple mercenary, you can't even work a simple fire-arrow castor.
+	AI_Output(hero, self, "Info_Mod_Andokai_Moorhexe_15_03"); //Well, I was at least talented enough to enter your monastery through the shrines and teleport myself all over Khorinis.
+	AI_Output(hero, self, "Info_Mod_Andokai_Moorhexe_15_04"); //I am happy to provide proof of my experience with runes and spell roles.
+	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_05"); //What are you daring to mock mine?!
+	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_06"); //l-- (stopps suddenly) But wait, let me think... I have a little task that will show whether you are highly gifted or a complete fool.
+	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_07"); //A valuable relic, the golden stick of Pyrman, was stolen from the Innos monastery during a raid by demonic creatures.
+	AI_Output(self, hero, "Info_Mod_Andokai_Moorhexe_12_08"); //If you succeed in bringing me this one, you've convinced me.
 
 	Log_CreateTopic	(TOPIC_MOD_NL_STAB, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NL_STAB, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NL_STAB, "Andokai wollte mir nur unter der Bedingung Verwandlungsspruchrollen überlassen, wenn ich ihm den 'Stab Pyrmans' besorge. Dieser wurde bei dem Überfall dem Kloster der Feuermagier geraubt.");
+	B_LogEntry	(TOPIC_MOD_NL_STAB, "Andokai only wanted to leave me with the condition of transformational roles when I got him the' staff Pyrmans'. He was stolen from the monastery of fire magicians during the raid.");
 
 	B_StartOtherRoutine	(Kobold_11010_NW, "TOT");
 };
@@ -271,18 +271,18 @@ FUNC INT Info_Mod_Andokai_PyrmansStab_Condition()
 
 FUNC VOID Info_Mod_Andokai_PyrmansStab_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_00"); //(böse) Was willst du hier wieder?! Solange du nicht den Stab hast, brauchst du mir ...
-	AI_Output(hero, self, "Info_Mod_Andokai_PyrmansStab_15_01"); //(unterbricht) Ich habe den Stab.
-	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_02"); //Was?! Du willst mich wohl zum Narren halten. Ich muss dich wohl ...
+	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_00"); //What are you doing back here?! As long as you don't have the staff, you'll need me...
+	AI_Output(hero, self, "Info_Mod_Andokai_PyrmansStab_15_01"); //I have the staff.
+	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_02"); //What?! You're trying to fool me. I'm gonna have to ask you....
 
 	B_GiveInvItems	(hero, self, ItMw_PyrmansStab, 1);
 
-	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_03"); //... ohh ... wahrhaftig. Ich weiß nicht, was ich sagen soll ... (verlegen) Ähh, das ändert die Sachlage natürlich ...
-	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_04"); //Hier, nimm diese leicht beschädigte Kaninchenrune.
+	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_03"); //... ohh... truly. I don't know what to say.... That changes the situation, of course...
+	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_04"); //Here, take this slightly damaged bunny rune.
 
 	B_GiveInvItems	(self, hero, ItRu_TrfRabbit, 1);
 
-	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_05"); //Sie ist zwar nicht vollwertig, benötigt dafür aber auch keine magischen Kreise als Grundlage, sie anzuwenden.
+	AI_Output(self, hero, "Info_Mod_Andokai_PyrmansStab_12_05"); //It may not be complete, but it does not require magic circles as a basis for its use.
 
 	B_GivePlayerXP	(500);
 
@@ -311,24 +311,24 @@ FUNC INT Info_Mod_Andokai_UngeheuerInBib_Condition()
 
 FUNC VOID Info_Mod_Andokai_UngeheuerInBib_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib_12_00"); //(zum Helden) Würdest du mitgehen? Ich gebe nicht viel auf diesen Schwächling.
+	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib_12_00"); //Would you go with him? I don't put much emphasis on this weakling.
 
 	Info_ClearChoices	(Info_Mod_Andokai_UngeheuerInBib);
 
-	Info_AddChoice	(Info_Mod_Andokai_UngeheuerInBib, "Lass ihn allein gehen.", Info_Mod_Andokai_UngeheuerInBib_B);
-	Info_AddChoice	(Info_Mod_Andokai_UngeheuerInBib, "Kein Problem.", Info_Mod_Andokai_UngeheuerInBib_A);
+	Info_AddChoice	(Info_Mod_Andokai_UngeheuerInBib, "Let him go alone.", Info_Mod_Andokai_UngeheuerInBib_B);
+	Info_AddChoice	(Info_Mod_Andokai_UngeheuerInBib, "No problem.", Info_Mod_Andokai_UngeheuerInBib_A);
 };
 
 FUNC VOID Info_Mod_Andokai_UngeheuerInBib_C()
 {
-	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib_C_12_00"); //Dann ist es beschlossen. Ich werde mich nun wieder wichtigen Dingen zuwenden.
+	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib_C_12_00"); //Then it's settled. I will now turn to important things again.
 
 	Info_ClearChoices	(Info_Mod_Andokai_UngeheuerInBib);
 };
 
 FUNC VOID Info_Mod_Andokai_UngeheuerInBib_B()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib_B_15_00"); //Lass ihn allein gehen.
+	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib_B_15_00"); //Let him go alone.
 
 	B_StartOtherRoutine	(Mod_7756_KDS_SchwarzerMagier_MT, "START");
 
@@ -337,13 +337,13 @@ FUNC VOID Info_Mod_Andokai_UngeheuerInBib_B()
 
 FUNC VOID Info_Mod_Andokai_UngeheuerInBib_A()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib_A_15_00"); //Kein Problem.
+	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib_A_15_00"); //No problem.
 
 	Mod_BeliarBibScene = 3;
 
 	Log_CreateTopic	(TOPIC_MOD_BELIAR_UNGEHEUER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BELIAR_UNGEHEUER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BELIAR_UNGEHEUER, "Ich habe mich bereit erklärt, zusammen mit einem Magier in der Bibliothek nach dem Rechten zu sehen. Dort ist anscheinend etwas Seltsames vorgefallen.");
+	B_LogEntry	(TOPIC_MOD_BELIAR_UNGEHEUER, "I have agreed to go to the library with a magician to check up on him. Apparently something strange has happened there.");
 
 	Info_Mod_Andokai_UngeheuerInBib_C();
 };
@@ -356,7 +356,7 @@ INSTANCE Info_Mod_Andokai_UngeheuerInBib2 (C_INFO)
 	information	= Info_Mod_Andokai_UngeheuerInBib2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Bibliothek ist wieder sauber.";
+	description	= "The library's clean again.";
 };
 
 FUNC INT Info_Mod_Andokai_UngeheuerInBib2_Condition()
@@ -369,12 +369,12 @@ FUNC INT Info_Mod_Andokai_UngeheuerInBib2_Condition()
 
 FUNC VOID Info_Mod_Andokai_UngeheuerInBib2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib2_15_00"); //Die Bibliothek ist wieder sauber.
-	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib2_12_01"); //Gute Arbeit. Was hat der Novize angerichtet?
-	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib2_15_02"); //Er hat ein paar sehr alte Kreaturen freigelassen. Aber die sind alle tot.
-	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib2_12_03"); //Ich gebe mir schon so viel Mühe bei der Auswahl der Novizen. Wieso werde ich trotzdem mit solchen Dummköpfen gestraft?
-	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib2_15_04"); //Das weiß allein Beliar.
-	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib2_12_05"); //Recht hast du. Ich werde die Aufnahmebedingungen verschärfen.
+	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib2_15_00"); //The library's clean again.
+	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib2_12_01"); //Good work. What has the novice done?
+	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib2_15_02"); //He released some very old creatures. But they're all dead.
+	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib2_12_03"); //I'm already trying so hard to choose the novices. Why am I still being punished with fools like that?
+	AI_Output(hero, self, "Info_Mod_Andokai_UngeheuerInBib2_15_04"); //Only Beliar knows.
+	AI_Output(self, hero, "Info_Mod_Andokai_UngeheuerInBib2_12_05"); //That's right, you are. I'm going to tighten up the terms of admission.
 
 	B_GivePlayerXP	(400);
 
@@ -392,7 +392,7 @@ INSTANCE Info_Mod_Andokai_Bibliothek1 (C_INFO)
 	information	= Info_Mod_Andokai_Bibliothek1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woher weißt du von der Bibliothek?";
+	description	= "How do you know about the library?";
 };
 
 FUNC INT Info_Mod_Andokai_Bibliothek1_Condition()
@@ -406,10 +406,10 @@ FUNC INT Info_Mod_Andokai_Bibliothek1_Condition()
 
 FUNC VOID Info_Mod_Andokai_Bibliothek1_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Bibliothek1_15_00"); //Woher weißt du von der Bibliothek?
-	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek1_12_01"); //Die beiden Bewohner der Festung erzählten uns davon, als wir herkamen. Aber selbst auf der Folter wollten sie uns nicht den Weg durch den Irrgarten verraten.
-	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek1_12_02"); //Seitdem haben wir schon einige Novizenanwärter hinein geschickt, doch entweder kamen sie gar nicht zurück oder erfolglos.
-	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek1_12_03"); //Das Labyrinth scheint mehr zu beinhalten als nur ein paar Sackgassen.
+	AI_Output(hero, self, "Info_Mod_Andokai_Bibliothek1_15_00"); //How do you know about the library?
+	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek1_12_01"); //The two inhabitants of the fortress told us about it when we came here. But even on the torture they didn't want to tell us the way through the maze.
+	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek1_12_02"); //Since then, we have already sent in some novice candidates, but either they didn't come back at all or they didn't succeed.
+	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek1_12_03"); //The labyrinth seems to contain more than just a few dead ends.
 };
 
 INSTANCE Info_Mod_Andokai_Bibliothek2 (C_INFO)
@@ -420,7 +420,7 @@ INSTANCE Info_Mod_Andokai_Bibliothek2 (C_INFO)
 	information	= Info_Mod_Andokai_Bibliothek2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was willst du dort?";
+	description	= "What are you doing there?";
 };
 
 FUNC INT Info_Mod_Andokai_Bibliothek2_Condition()
@@ -434,9 +434,9 @@ FUNC INT Info_Mod_Andokai_Bibliothek2_Condition()
 
 FUNC VOID Info_Mod_Andokai_Bibliothek2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Bibliothek2_15_00"); //Was willst du dort?
-	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek2_12_01"); //Die Bibliothek soll riesig sein. Wer weiß, was sich dort für alte Schätze und Weisheiten verbergen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek2_12_02"); //Was man so aufwändig verstecken muss, wird ein wenig Ausdauer wert sein.
+	AI_Output(hero, self, "Info_Mod_Andokai_Bibliothek2_15_00"); //What are you doing there?
+	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek2_12_01"); //The library is supposed to be huge. Who knows what ancient treasures and wisdom are hidden there.
+	AI_Output(self, hero, "Info_Mod_Andokai_Bibliothek2_12_02"); //What you have to hide is worth a little perseverance.
 };
 
 INSTANCE Info_Mod_Andokai_Infos (C_INFO)
@@ -447,7 +447,7 @@ INSTANCE Info_Mod_Andokai_Infos (C_INFO)
 	information	= Info_Mod_Andokai_Infos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe noch ein paar allgemeinere Fragen...";
+	description	= "I have some more general questions....";
 };
 
 FUNC INT Info_Mod_Andokai_Infos_Condition()
@@ -460,16 +460,16 @@ FUNC INT Info_Mod_Andokai_Infos_Condition()
 
 FUNC VOID Info_Mod_Andokai_Infos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Infos_15_00"); //Ich habe noch ein paar allgemeinere Fragen...
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_12_01"); //Was gibt's?
+	AI_Output(hero, self, "Info_Mod_Andokai_Infos_15_00"); //I have some more general questions....
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_12_01"); //What's up?
 
 	Info_ClearChoices	(Info_Mod_Andokai_Infos);
 
 	Info_AddChoice	(Info_Mod_Andokai_Infos, DIALOG_BACK, Info_Mod_Andokai_Infos_BACK);
 
-	Info_AddChoice	(Info_Mod_Andokai_Infos, "Erzähl mir etwas über Beliar.", Info_Mod_Andokai_Infos_C);
-	Info_AddChoice	(Info_Mod_Andokai_Infos, "Erzähl mir etwas über die Festung.", Info_Mod_Andokai_Infos_B);
-	Info_AddChoice	(Info_Mod_Andokai_Infos, "Erzähl mir etwas über die Schwarzmagier.", Info_Mod_Andokai_Infos_A);
+	Info_AddChoice	(Info_Mod_Andokai_Infos, "Tell me about Beliar.", Info_Mod_Andokai_Infos_C);
+	Info_AddChoice	(Info_Mod_Andokai_Infos, "Tell me about the fortress.", Info_Mod_Andokai_Infos_B);
+	Info_AddChoice	(Info_Mod_Andokai_Infos, "Tell me about the black mages.", Info_Mod_Andokai_Infos_A);
 };
 
 FUNC VOID Info_Mod_Andokai_Infos_BACK()
@@ -479,38 +479,38 @@ FUNC VOID Info_Mod_Andokai_Infos_BACK()
 
 FUNC VOID Info_Mod_Andokai_Infos_C()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Infos_C_15_00"); //Erzähl mir etwas über Beliar.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_C_12_01"); //Beliar ist der Gott des Chaos und im ewigen Krieg mit Innos, dem Gott der Korinthenkackerei.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_C_12_02"); //Beliar fördert schrankenloses Denken und hält nichts von verkalkten Traditionen, die ohne Sinn und Verstand heruntergeleiert werden.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_C_12_03"); //Seine Anhänger sind deshalb größtenteils Freigeister und Mutige, die sich keine Gesetze auferlegen lassen.
+	AI_Output(hero, self, "Info_Mod_Andokai_Infos_C_15_00"); //Tell me about Beliar.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_C_12_01"); //Beliar is the god of chaos and in eternal war with Innos, the god of currant shit.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_C_12_02"); //Beliar encourages boundless thinking and doesn't believe in calcified traditions that are downplayed without meaning and reason.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_C_12_03"); //His followers are therefore mostly free spirits and courageous people who are not subject to any laws.
 
 	Info_ClearChoices	(Info_Mod_Andokai_Infos);
 };
 
 FUNC VOID Info_Mod_Andokai_Infos_B()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Infos_B_15_00"); //Erzähl mir etwas über die Festung.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_01"); //Die Festung hat früher einmal Partisanen im Kampf gegen die Orks Schutz geboten.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_02"); //Nach dem Ende des Kriegs wurde der hier ansässige Anführer geadelt und durfte sie behalten.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_03"); //Als wir sie fanden, wurde sie gerade mal von zwei alten Leuten bewohnt, einem heruntergekommenen Nachfahren des Anführers und seinem Diener.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_04"); //Die beiden waren zu schwach, um vor uns wegzulaufen. Also nahmen wir die Festung in Besitz.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_05"); //Seitdem sind schon Jahre vergangen. Doch dieses Gemäuer hat noch längst nicht alle seine Geheimnisse gelüftet.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_06"); //Immerhin bietet es alles, was wir brauchen, im Übermaß.
+	AI_Output(hero, self, "Info_Mod_Andokai_Infos_B_15_00"); //Tell me about the fortress.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_01"); //The fortress used to offer partisans protection in the fight against the orcs.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_02"); //After the end of the war, the local leader was ennobled and allowed to keep them.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_03"); //When we found her, she was inhabited by just two old people, a run-down descendant of the leader and his servant.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_04"); //They were too weak to run away from us. So we took possession of the fortress.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_05"); //Years have passed since then. But this wall has not yet revealed all its secrets.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_B_12_06"); //After all, it offers everything we need in excess.
 
 	Info_ClearChoices	(Info_Mod_Andokai_Infos);
 };
 
 FUNC VOID Info_Mod_Andokai_Infos_A()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_Infos_A_15_00"); //Erzähl mir etwas über die Schwarzmagier.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_01"); //Unserer gibt es viele, aber wir bleiben üblicherweise im Verborgenen.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_02"); //Du findest uns in hohen Ämtern wie auch als unbescholtene Bürger, und du könntest unsere Häuser durchsuchen und würdest nichts von unserer Gesinnung bemerken.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_03"); //Wir haben gelernt, unauffällig zu leben. Ich beispielsweise wurde nur in die Barriere geworfen, weil ich mich einem Arbeiterprotest angeschlossen hatte.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_04"); //Was zuerst wie ein harter Schicksalsschlag aussah, erwies sich als das größte Glück meines Lebens.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_05"); //Zusammen mit anderen Genossen fand ich diese alte Festung, wo wir unseren Glauben zum ersten Mal offen ausleben konnten.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_06"); //Durch den Fall der Barriere ist es nicht ganz so besinnlich ruhig geblieben.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_07"); //Xardas hat uns ein paar verirrte Seelen aus dem Alten Lager gebracht, deren Hirne wir nach unseren Vorstellungen formen konnten, nachdem ihr Gedächtnis gelöscht worden war.
-	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_08"); //Dadurch sind wir mittlerweile zu einer stattlichen Truppe herangewachsen.
+	AI_Output(hero, self, "Info_Mod_Andokai_Infos_A_15_00"); //Tell me about the black mages.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_01"); //There are many of us, but we usually stay hidden.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_02"); //You will find us in high offices and as blameless citizens, and you will be able to search our houses and won't notice any of our sentiments.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_03"); //We've learned to live inconspicuously. For example, I was only thrown into the barrier because I joined a workers' protest.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_04"); //What at first seemed like a hard blow of fate turned out to be the greatest happiness of my life.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_05"); //Together with other comrades I found this old fortress where we could live out our faith openly for the first time.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_06"); //Due to the fall of the barrier, things have not remained quite so quiet.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_07"); //Xardas brought us some lost souls from the Old Camp, whose brains we could form according to our ideas, after their memory had been erased.
+	AI_Output(self, hero, "Info_Mod_Andokai_Infos_A_12_08"); //As a result, we have meanwhile grown into a handsome troop.
 
 	Info_ClearChoices	(Info_Mod_Andokai_Infos);
 };
@@ -523,7 +523,7 @@ INSTANCE Info_Mod_Andokai_WoKloster (C_INFO)
 	information	= Info_Mod_Andokai_WoKloster_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo finde ich das Kloster?";
+	description	= "Where can I find the monastery?";
 };
 
 FUNC INT Info_Mod_Andokai_WoKloster_Condition()
@@ -536,9 +536,9 @@ FUNC INT Info_Mod_Andokai_WoKloster_Condition()
 
 FUNC VOID Info_Mod_Andokai_WoKloster_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andokai_WoKloster_15_00"); //Wo finde ich das Kloster?
-	AI_Output(self, hero, "Info_Mod_Andokai_WoKloster_12_01"); //Mach dich auf den Weg nach Khorinis. Vom nördlichen Stadttor aus wende dich Richtung Taverne Zur toten Harpie. Von dort führt ein Pfad direkt zum Kloster.
-	AI_Output(self, hero, "Info_Mod_Andokai_WoKloster_12_02"); //Vielleicht findest du ja in Khorinis auch einen Trottel, der dich hinführt.
+	AI_Output(hero, self, "Info_Mod_Andokai_WoKloster_15_00"); //Where can I find the monastery?
+	AI_Output(self, hero, "Info_Mod_Andokai_WoKloster_12_01"); //Make your way to Khorinis. From the northern city gate, head towards the Tavern Zur toten Harpie. From there a path leads directly to the monastery.
+	AI_Output(self, hero, "Info_Mod_Andokai_WoKloster_12_02"); //Maybe you'll find a fool in Khorinis to take you there.
 };
 
 instance Info_Mod_Andokai_Runen	(C_INFO)
@@ -549,7 +549,7 @@ instance Info_Mod_Andokai_Runen	(C_INFO)
 	information	= Info_Mod_Andokai_Runen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Unterweise mich (Runen erschaffen)";
+	description	= "Teach me (create runes)";
 };
 
 func int Info_Mod_Andokai_Runen_Condition ()
@@ -568,7 +568,7 @@ func void Info_Mod_Andokai_Runen_Info ()
 {
 	var int abletolearn;
 	abletolearn = 0;
-	AI_Output (other, self, "Info_Mod_Andokai_Runen_15_00"); //Unterweise mich.
+	AI_Output (other, self, "Info_Mod_Andokai_Runen_15_00"); //Teach me.
 	
 	Info_ClearChoices 	(Info_Mod_Andokai_Runen);
 	Info_AddChoice		(Info_Mod_Andokai_Runen, DIALOG_BACK, Info_Mod_Andokai_Runen_BACK);
@@ -679,7 +679,7 @@ func void Info_Mod_Andokai_Runen_Info ()
 
 	if (abletolearn < 1)
 	{
-		AI_Output (self, other, "Info_Mod_Andokai_Runen_12_01"); //Es gibt nichts mehr, das ich dir beibringen könnte.
+		AI_Output (self, other, "Info_Mod_Andokai_Runen_12_01"); //There's nothing more I can teach you.
 	};
 };
 

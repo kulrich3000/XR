@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Berti_Hi (C_INFO)
 	information	= Info_Mod_Berti_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie gefällt dir das Stück?";
+	description	= "How do you like the play?";
 };
 
 FUNC INT Info_Mod_Berti_Hi_Condition()
@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Berti_Hi_Condition()
 
 FUNC VOID Info_Mod_Berti_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Berti_Hi_15_00"); //Wie gefällt dir das Stück?
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_01"); //Sauber geschrieben vielleicht - aber inhaltlich ist das doch Kokolores.
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_02"); //Der gute Will geht mit den Zuschauern um, als wären sie unmündige kleine Kinder. Diese unverhohlenen Moralbelehrungen!
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_03"); //Er verkennt nun mal, dass das heutige Theater anderen Ansprüchen gerecht werden muss.
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_04"); //Ich will keine Lehrmeinungen vorgesetzt bekommen, ich will selbst reflektieren und analysieren!
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_05"); //Und nun brüstet er sich mit seinen Neuerungen, winzige Änderungen im Vergleich zu dem, was mir vorschwebt.
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_06"); //Seine Zeit ist vorbei, und meine wird kommen.
+	AI_Output(hero, self, "Info_Mod_Berti_Hi_15_00"); //How do you like the play?
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_01"); //Cleanly written, perhaps - but in terms of content it is Kokolores.
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_02"); //Good Will treats the spectators as if they were underage children. These blatant moral teachings!
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_03"); //He understands that today's theatre has to meet other demands.
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_04"); //I don't want to be presented with any doctrine, I want to reflect and analyse myself!
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_05"); //And now he boasts with his innovations, tiny changes compared to what I have in mind.
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_06"); //His time is up, and mine will come.
 };
 
 INSTANCE Info_Mod_Berti_EXIT (C_INFO)

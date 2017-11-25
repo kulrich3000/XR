@@ -6,86 +6,86 @@ func void B_Preach_Vatras(var int satz)
 {
 	if (satz == 0) 	
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_00"); //Aber das Licht war eine Qual für Beliar. Und alles, was Innos erschuf, wurde von Beliar zerstört.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_00"); //But the light was a torture for Beliar. And everything that created Innos was destroyed by Beliar.
 	};
 	if (satz == 1) 	
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_01"); //Adanos aber sah, dass so nichts sein konnte. Kein Licht und keine Dunkelheit.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_01"); //But Adanos saw that this could not be anything like that. No light and no darkness.
 	};
 	if (satz == 2)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_02"); //Und so stellte er sich zwischen seine Brüder, um ihren Streit zu schlichten. Und es gelang ihm nicht.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_02"); //And so he stood between his brothers to settle their quarrels. And he didn't succeed.
 	};
 	if (satz == 3)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_03"); //Aber dort, wo Adanos stand, ward ein Ort, an dem Innos und Beliar keine Macht hatten.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_03"); //But where Adanos stood was a place where Innos and Beliar had no power.
 	};
 	if (satz == 4)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_04"); //Und an diesem Ort waren Ordnung und Chaos zugleich. Und so ward das Meer erschaffen.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_04"); //And in this place there was order and chaos at the same time. And so the sea was created.
 	};
 	if (satz == 5)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_05"); //Und das Meer gab das Land frei. Und es entstanden alle Wesen. Bäume wie Tiere. Wölfe wie Schafe. Und zuletzt entstand der Mensch.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_05"); //And the sea released the land. And all beings came into being. Trees like animals. Wolves like sheep. And finally man was born.
 	};
 	if (satz == 6)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_06"); //Und Adanos gefiel, was entstanden war. Und er erfreute sich an allen Wesen gleichermaßen.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_06"); //And Adanos liked what had been created. And he enjoyed all beings equally.
 	};
 	if (satz == 7)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_07"); //Aber so groß war der Zorn Beliars, dass er über das Land kam und das Tier erwählte. Und Beliar sprach zu ihm. Und das Tier ward ihm Untertan.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_07"); //But the wrath of Beliar was so great that he came over the land and chose the beast. And Beliar spoke to him. And the beast became his subject.
 	};
 	if (satz == 8)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_08"); //Und Beliar verlieh ihm einen Teil seiner göttlichen Macht, auf dass es das Land zerstöre.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_08"); //And Beliar gave him a portion of his divine power to destroy the land.
 	};
 	if (satz == 9)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_09"); //Aber Innos sah, was geschehen war. Und auch er betrat das Land und er erwählte den Menschen. Und Innos sprach zu ihm. Und der Mensch ward ihm Untertan.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_09"); //But Innos saw what had happened. And he also entered the land, and he chose man. And Innos spoke to him. And man became subject to him.
 	};
 	if (satz == 10)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_10"); //Und Innos verlieh ihm einen Teil seiner göttlichen Macht, auf dass er dem Wirken Beliars Einhalt gebiete.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_10"); //And Innos gave him a portion of his divine power to stop the work of Beliar.
 	};
 	if (satz == 11)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_11"); //Und Beliar sprach zu einem weiteren Wesen. Aber Adanos ließ die Flut kommen, und das Wesen wurde fortgespült von der Erde.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_11"); //And Beliar spoke to another being. But Adanos made the flood come, and the being washed away by the earth.
 	};
 	if (satz == 12)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_12"); //Aber mit ihm fortgespült wurden Bäume und Tiere. Und Adanos überkam eine tiefe Trauer.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_12"); //But with him were washed away trees and animals. And Adanos was overcome with deep sorrow.
 	};
 	if (satz == 13)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_13"); //Und so sprach Adanos zu seinen Brüdern: Nie mehr sollt ihr mein Land betreten. Denn es ist heilig. Und so soll es sein.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_13"); //And so Adanos said unto his brethren, Never again shall ye enter my land. Because it's sacred. And so it should be.
 	};
 	if (satz == 14)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_14"); //Aber der Mensch und das Tier führten Krieg auf dem Land Adanos'. Und der Zorn der Götter war mit ihnen.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_14"); //But man and beast fought war in the land of Adanos. And the wrath of the gods was with them.
 	};
 	if (satz == 15)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_15"); //Und der Mensch erschlug das Tier und es ging ein in Beliars Reich.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_15"); //And the man slew the beast, and it entered Beliar's kingdom.
 	};
 	if (satz == 16)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_16"); //Adanos aber sah, dass nun Ordnung und Chaos ungleich waren und er bat Innos, dem Menschen seine göttliche Macht zu nehmen.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_16"); //But Adanos saw that order and chaos were now unequal, and he asked Innos to deprive man of his divine power.
 	};
 	if (satz == 17)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_17"); //Und Innos, in seiner Weisheit, tat es.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_17"); //And Innos, in his wisdom, did.
 	};
 	if (satz == 18)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_18"); //Aber Adanos fürchtete sich vor dem Tag, an dem das Tier auf das Land zurückkehren würde.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_18"); //But Adanos feared the day when the beast would return to the land.
 	};
 	if (satz == 19)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_19"); //Und so bat er Innos, jenen Teil seiner Macht in seinem Reiche zu belassen, auf dass er sie dem Menschen wiedergebe, falls das Tier zurückkehren sollte.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_19"); //And so he asked Innos to leave that part of his power in his kingdom, so that he would give it back to man if the beast should return.
 	};
 	if (satz == 20)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_20"); //Und Innos, in seiner Weisheit, tat es.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_20"); //And Innos, in his wisdom, did.
 	};
 };

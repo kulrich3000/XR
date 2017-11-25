@@ -1,7 +1,7 @@
 instance Mod_7032_OUT_Entfuehrer_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Entführer"; 
+	name 		= "captors"; 
 	guild 		= GIL_OUT;
 	id 			= 7032;
 	voice 		= 6;

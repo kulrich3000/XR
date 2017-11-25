@@ -17,7 +17,7 @@ FUNC INT DIA_FM_SLD_5_EXIT_Condition()
 
 FUNC VOID DIA_FM_SLD_5_EXIT_Info()
 {	
-	AI_Output(self, hero, "DIA_FM_SLD_5_EXIT_05_00"); //Stirb uns nicht weg!
+	AI_Output(self, hero, "DIA_FM_SLD_5_EXIT_05_00"); //Don't die on us!
 
 	AI_StopProcessInfos	(self);
 };
@@ -31,7 +31,7 @@ INSTANCE DIA_FM_SLD_5_JOIN(C_INFO)
 	condition	= DIA_FM_SLD_5_JOIN_Condition;
 	information	= DIA_FM_SLD_5_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will mich euch anschließen!";
+	description = "I want to join you!";
 };                       
 
 FUNC INT DIA_FM_SLD_5_JOIN_Condition()
@@ -44,8 +44,8 @@ FUNC INT DIA_FM_SLD_5_JOIN_Condition()
 
 FUNC VOID DIA_FM_SLD_5_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_FM_SLD_5_JOIN_15_00"); //Ich will mich euch anschließen!
-	AI_Output(self, hero, "DIA_FM_SLD_5_JOIN_06_01"); //Was sprichst du dann mit mir? Rede mit Lares oder gleich mit den drei Gruppenführern und beweise dich.
+	AI_Output (other, self, "DIA_FM_SLD_5_JOIN_15_00"); //I want to join you!
+	AI_Output(self, hero, "DIA_FM_SLD_5_JOIN_06_01"); //Then what are you talking to me for? Talk to Lares or the three group leaders and prove yourself.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_FM_SLD_5_PEOPLE(C_INFO)
 	condition	= DIA_FM_SLD_5_PEOPLE_Condition;
 	information	= DIA_FM_SLD_5_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT DIA_FM_SLD_5_PEOPLE_Condition()
@@ -71,8 +71,8 @@ FUNC INT DIA_FM_SLD_5_PEOPLE_Condition()
 
 FUNC VOID DIA_FM_SLD_5_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_FM_SLD_5_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, other, "DIA_FM_SLD_5_PEOPLE_06_01"); //Hier in der Mine eigentlich niemand, aber das Lager ist unter der Kontrolle von Lee.
+	AI_Output (other, self, "DIA_FM_SLD_5_PEOPLE_15_00"); //Who's in charge here?
+	AI_Output (self, other, "DIA_FM_SLD_5_PEOPLE_06_01"); //Nobody here in the mine, but the camp is under Lee's control.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_FM_SLD_5_LOCATION(C_INFO)
 	condition	= DIA_FM_SLD_5_LOCATION_Condition;
 	information	= DIA_FM_SLD_5_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Überwacht ihr die Schürfer?";
+	description = "Are you monitoring the prospectors?";
 };                       
 
 FUNC INT DIA_FM_SLD_5_LOCATION_Condition()
@@ -94,8 +94,8 @@ FUNC INT DIA_FM_SLD_5_LOCATION_Condition()
 
 FUNC VOID DIA_FM_SLD_5_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_FM_SLD_5_LOCATION_15_00"); //Überwacht ihr die Schürfer?
-	AI_Output (self, other, "DIA_FM_SLD_5_LOCATION_06_01"); //Wir sind nicht hier um jemanden zu überwachen. Wir passen nur auf, dass niemand mit dem ganzen Erz durchbrennt. Außerdem mussten wir nach dem Vorfall letztens die Sicherheitsvorkehrungen erhöhen.
+	AI_Output (other, self, "DIA_FM_SLD_5_LOCATION_15_00"); //Are you monitoring the prospectors?
+	AI_Output (self, other, "DIA_FM_SLD_5_LOCATION_06_01"); //We're not here to monitor anyone. We're just making sure no one runs away with all the ore. In addition, we recently had to tighten security measures after the incident.
 };
 
 INSTANCE Info_Mod_FM_SLD_5_Pickpocket (C_INFO)

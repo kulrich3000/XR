@@ -15,37 +15,37 @@ FUNC INT Info_Mod_Lefty_Hi_Condition()
 
 FUNC VOID Info_Mod_Lefty_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_00"); //Du siehst ja ganz schön ramponiert aus.
-	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_01"); //(stöhnt) Erinner mich nicht doch daran.
-	AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_02"); //Was ist denn passiert?
-	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_03"); //Vor einiger Zeit kam so ein Typ zu uns ins Lager. Die Bauern haben den gegen uns aufgestachelt und er hat uns übel zugerichtet.
-	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_04"); //Der hat mich so am Kopf erwischt ... ich kann mich jetzt kaum noch erinnern, wie sein Gesicht genau aussah.
-	AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_05"); //So, so, kommt mir irgendwie bekannt vor.
-	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_06"); //Hey, der Typ war auch ... ähh ... über zwei Meter groß, sage ich dir, genau. Voll der Bär. Gegen den sah ein Ork aus wie ein Knabe ...
-	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_07"); //Ich habe lange ausgehalten, aber dann hat er mich doch noch erwischt.
-	AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_08"); //(belächelnd) Über zwei Meter? Klingt ja furchteinflößend.
-	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_09"); //Glaubst mir wohl nicht, hä? Den hättste sehen sollen! Dich hätte der zum Frühstück geputzt!
+	AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_00"); //You look pretty battered.
+	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_01"); //Don't remind me of that.
+	AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_02"); //What the hell happened?
+	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_03"); //Some time ago, some guy came to our camp. The peasants set him up against us and he beat us up badly.
+	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_04"); //He caught me in the head like that.... I can barely remember what his face looked like.
+	AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_05"); //So, so, so, looks kind of familiar.
+	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_06"); //Hey, the guy was... er... over six feet tall, I tell you, that's right. Full of bear. Against him an orc looked like a boy....
+	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_07"); //I held out for a long time, but then he finally caught me.
+	AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_08"); //Over two meters? Sounds scary to me.
+	AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_09"); //You don't believe me, huh? Should have seen him! He would have cleaned you for breakfast!
 
 	if (hero.guild == GIL_MIL) {
-		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_10"); //Du bist wohl neu im Lager, oder?
-		AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_11"); //In gewisser Weise schon ...
-		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_12"); //Wenn du es zu was bringen willst, musst du dich nützlich machen, zeigen, dass du was auf dem Kasten hast. Ich habe da schon eine Aufgabe für dich.
-		AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_13"); //Ja, worum geht es?
-		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_14"); //Ich hab dir doch von diesem miesen Schläger erzählt, der über mich hergefallen ist.
-		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_15"); //Jedenfalls sind die Bauern sehr aufsässig, seitdem der hier war. Jemand müsste ihnen mal wieder zeigen, wer das Sagen hat.
-		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_16"); //Das wäre die Gelegenheit für dich zu zeigen, dass du austeilen kannst.
+		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_10"); //You're new in the camp, aren't you?
+		AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_11"); //In a way already....
+		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_12"); //If you want to make a difference, you have to make yourself useful, show that you have something on the box. I already have a job for you.
+		AI_Output(hero, self, "Info_Mod_Lefty_Hi_15_13"); //Yeah, what's it about?
+		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_14"); //I told you about that lousy thug that came at me.
+		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_15"); //Anyway, the peasants have been very rebellious ever since he was here. Somebody ought to show them who's in charge again.
+		AI_Output(self, hero, "Info_Mod_Lefty_Hi_24_16"); //That would be an opportunity for you to show that you can deal.
 
 		Info_ClearChoices	(Info_Mod_Lefty_Hi);
 
-		Info_AddChoice	(Info_Mod_Lefty_Hi, "Was, wehrlose Bauern? Da musst du dir echt jemand anderen suchen.", Info_Mod_Lefty_Hi_B);
-		Info_AddChoice	(Info_Mod_Lefty_Hi, "Klar, die paar Bauern haue ich im Nu zusammen.", Info_Mod_Lefty_Hi_A);
+		Info_AddChoice	(Info_Mod_Lefty_Hi, "What, defenceless peasants? You're gonna have to find someone else.", Info_Mod_Lefty_Hi_B);
+		Info_AddChoice	(Info_Mod_Lefty_Hi, "Sure, I'll beat the peasants together in no time.", Info_Mod_Lefty_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Lefty_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lefty_Hi_B_15_00"); //Was, wehrlose Bauern? Da musst du dir echt jemand anderen suchen.
-	AI_Output(self, hero, "Info_Mod_Lefty_Hi_B_24_01"); //Flasche. Dann muss ich das halt wieder übernehmen.
+	AI_Output(hero, self, "Info_Mod_Lefty_Hi_B_15_00"); //What, defenceless peasants? You're gonna have to find someone else.
+	AI_Output(self, hero, "Info_Mod_Lefty_Hi_B_24_01"); //Bottle. I'll just have to take over again.
 
 	Mod_LeftysBauern = 1;
 	
@@ -54,14 +54,14 @@ FUNC VOID Info_Mod_Lefty_Hi_B()
 
 FUNC VOID Info_Mod_Lefty_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lefty_Hi_A_15_00"); //Klar, die paar Bauern haue ich im Nu zusammen.
-	AI_Output(self, hero, "Info_Mod_Lefty_Hi_A_24_01"); //Sehr gut. Verkloppe mindestens fünf Bauern ... und diesen Horatio solltest du dir auch auf jeden Fall vornehmen. Der scheint so eine Art Anführer von denen zu sein.
+	AI_Output(hero, self, "Info_Mod_Lefty_Hi_A_15_00"); //Sure, I'll beat the peasants together in no time.
+	AI_Output(self, hero, "Info_Mod_Lefty_Hi_A_24_01"); //Very good. Very good. Boil at least five peasants... and you should definitely take care of that Horatio too. He seems to be some kind of leader of them.
 
 	Mod_LeftysBauern = 2;
 
 	Log_CreateTopic	(TOPIC_MOD_SLD_LEFTYBAUERN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SLD_LEFTYBAUERN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SLD_LEFTYBAUERN, "Ich soll für Lefty fünf Bauern und Horatio verprügeln.");
+	B_LogEntry	(TOPIC_MOD_SLD_LEFTYBAUERN, "Lefty wants me to beat up five farmers and Horatio for Lefty.");
 	
 	Info_ClearChoices	(Info_Mod_Lefty_Hi);
 };
@@ -86,10 +86,10 @@ FUNC INT Info_Mod_Lefty_BauernVerbatscht_Condition()
 
 FUNC VOID Info_Mod_Lefty_BauernVerbatscht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lefty_BauernVerbatscht_24_00"); //Ha, sehr gut, das wird den Bauern zeigen, wer hier das Sagen hat. Geh gleich zum Reislord, er wird dich dafür belohnen.
-	AI_Output(self, hero, "Info_Mod_Lefty_BauernVerbatscht_24_01"); //Typen wie dich können wir hier im Lager gut gebrauchen.
+	AI_Output(self, hero, "Info_Mod_Lefty_BauernVerbatscht_24_00"); //Well, that'll show the peasants who's in charge here. Go straight to the rice lord, he'll reward you for it.
+	AI_Output(self, hero, "Info_Mod_Lefty_BauernVerbatscht_24_01"); //Guys like you are good for us here in the camp.
 
-	B_LogEntry	(TOPIC_MOD_SLD_LEFTYBAUERN, "Lefty war zufrieden. Ich soll mir beim Reislord meine Belohnung holen.");
+	B_LogEntry	(TOPIC_MOD_SLD_LEFTYBAUERN, "Lefty was happy. I'm supposed to get my reward from the rice lord.");
 
 	B_GivePlayerXP	(200);
 };
@@ -114,13 +114,13 @@ FUNC INT Info_Mod_Lefty_RufusWeg_Condition()
 
 FUNC VOID Info_Mod_Lefty_RufusWeg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lefty_RufusWeg_24_00"); //Verdammt, dieser dumme Bauer Rufus hat die Kurve gekratzt. Der Reislord ist außer sich. So was bringt die anderen Bauern nur auf dumme Gedanken.
-	AI_Output(self, hero, "Info_Mod_Lefty_RufusWeg_24_01"); //Wer den Flüchtenden wieder einfangen würde, bekäme bestimmt eine gute Belohnung.
-	AI_Output(self, hero, "Info_Mod_Lefty_RufusWeg_24_02"); //(etwas stiller zu sich selbst) Obwohl der Reislord auch bestimmt nichts dagegen hätte, wenn man Rufus den Garaus machen würde.
+	AI_Output(self, hero, "Info_Mod_Lefty_RufusWeg_24_00"); //Damn, that stupid peasant Rufus has scratched the corner. The rice lord is beside himself. That only gives the other peasants some stupid ideas.
+	AI_Output(self, hero, "Info_Mod_Lefty_RufusWeg_24_01"); //Whoever catches the fugitive again would certainly get a good reward.
+	AI_Output(self, hero, "Info_Mod_Lefty_RufusWeg_24_02"); //(slightly more quiet to oneself) Although the rice lord wouldn't mind if Rufus were to be cut off.
 
 	Log_CreateTopic	(TOPIC_MOD_SLD_RUFUS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SLD_RUFUS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SLD_RUFUS, "Der Bauer Rufus ist abgehauen. Wer ihn wieder zurückholen würde, könnte mit einer Belohnung beim Reislord rechnen.");
+	B_LogEntry	(TOPIC_MOD_SLD_RUFUS, "The farmer Rufus has escaped. Whoever would bring him back could expect a reward from the rice lord.");
 };
 
 INSTANCE Info_Mod_Lefty_RufusDa (C_INFO)
@@ -144,18 +144,18 @@ FUNC INT Info_Mod_Lefty_RufusDa_Condition()
 
 FUNC VOID Info_Mod_Lefty_RufusDa_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lefty_RufusDa_24_00"); //Du hast Rufus tatsächlich gefunden und zurückgebracht. Der kann jetzt was erleben ...
+	AI_Output(self, hero, "Info_Mod_Lefty_RufusDa_24_00"); //You actually found Rufus and brought him back. He's in trouble now....
 
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output(self, hero, "Info_Mod_Lefty_RufusDa_24_01"); //Egal, damit hast du wieder einige Punkte gesammelt. Geh gleich zum Reislord.
+		AI_Output(self, hero, "Info_Mod_Lefty_RufusDa_24_01"); //Anyway, you've gained a few points again. Go straight to the rice lord.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Lefty_RufusDa_24_02"); //Egal, damit hast du was gut. Geh gleich zum Reislord.
+		AI_Output(self, hero, "Info_Mod_Lefty_RufusDa_24_02"); //Anyway, that's a good thing. Go straight to the rice lord.
 	};
 
-	B_LogEntry	(TOPIC_MOD_SLD_RUFUS, "Ich soll jetzt zum Reislord gehen.");
+	B_LogEntry	(TOPIC_MOD_SLD_RUFUS, "I'm supposed to go to the rice lord now.");
 
 	Mod_SLD_Rufus = 6;
 };
@@ -181,13 +181,13 @@ FUNC INT Info_Mod_Lefty_RufusTot_Condition()
 
 FUNC VOID Info_Mod_Lefty_RufusTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lefty_RufusTot_24_00"); //Du warst doch außerhalb des Lagers. Hast du zufällig Rufus gesehen?
-	AI_Output(hero, self, "Info_Mod_Lefty_RufusTot_15_01"); //Ja. In seinem Blut.
-	AI_Output(self, hero, "Info_Mod_Lefty_RufusTot_24_02"); //Du willst doch nicht damit sagen ...
-	AI_Output(hero, self, "Info_Mod_Lefty_RufusTot_15_03"); //Doch.
-	AI_Output(self, hero, "Info_Mod_Lefty_RufusTot_24_04"); //Geh zum Reislord. Das wird ihn interessieren.
+	AI_Output(self, hero, "Info_Mod_Lefty_RufusTot_24_00"); //You were outside the camp. Have you seen Rufus, by any chance?
+	AI_Output(hero, self, "Info_Mod_Lefty_RufusTot_15_01"); //Yeah. In his blood.
+	AI_Output(self, hero, "Info_Mod_Lefty_RufusTot_24_02"); //You're not saying...
+	AI_Output(hero, self, "Info_Mod_Lefty_RufusTot_15_03"); //Yes, it is.
+	AI_Output(self, hero, "Info_Mod_Lefty_RufusTot_24_04"); //Go to the rice lord. He'll be interested.
 
-	B_LogEntry	(TOPIC_MOD_SLD_RUFUS, "Ich soll zum Reislord und ihm von Rufus’ Schicksal berichten.");
+	B_LogEntry	(TOPIC_MOD_SLD_RUFUS, "I shall report to the rice lord and Rufus' fate to him.");
 };
 
 INSTANCE Info_Mod_Lefty_OJGBoss (C_INFO)
@@ -211,9 +211,9 @@ FUNC INT Info_Mod_Lefty_OJGBoss_Condition()
 
 FUNC VOID Info_Mod_Lefty_OJGBoss_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lefty_OJGBoss_24_00"); //(etwas ehrfürchtig) He, ähhm, du bist doch der neue Anführer der Orkjäger.
-	AI_Output(hero, self, "Info_Mod_Lefty_OJGBoss_15_01"); //Ja, und weiter?
-	AI_Output(self, hero, "Info_Mod_Lefty_OJGBoss_24_02"); //(verunsichert) Nichts, nichts ... nur ... der Reislord hat ein Geschenk für dich ... um dir, ähh, unseren Respekt zu zollen.
+	AI_Output(self, hero, "Info_Mod_Lefty_OJGBoss_24_00"); //(slightly awesome) Hey, um, you're the new leader of the Orchunters.
+	AI_Output(hero, self, "Info_Mod_Lefty_OJGBoss_15_01"); //Yeah, what else?
+	AI_Output(self, hero, "Info_Mod_Lefty_OJGBoss_24_02"); //Nothing, nothing, nothing... just... the rice lord has a present for you.... to, uh, pay you our respects.
 };
 
 INSTANCE Info_Mod_Lefty_Pickpocket (C_INFO)

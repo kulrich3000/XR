@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Aramis_Hi_Condition()
 
 FUNC VOID Info_Mod_Aramis_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aramis_Hi_08_00"); //Und die Gräber unserer Brüder hat er auch bereits geschändet.
+	AI_Output(self, hero, "Info_Mod_Aramis_Hi_08_00"); //And he has already desecrated our brothers' graves.
 
 	AI_StopProcessInfos	(self);
 };

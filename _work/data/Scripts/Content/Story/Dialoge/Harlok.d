@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Harlok_Woher (C_INFO)
 	information	= Info_Mod_Harlok_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kommst du nicht aus dem Sumpflager?";
+	description	= "Aren't you coming out of the swamp camp?";
 };
 
 FUNC INT Info_Mod_Harlok_Woher_Condition()
@@ -45,10 +45,10 @@ FUNC INT Info_Mod_Harlok_Woher_Condition()
 
 FUNC VOID Info_Mod_Harlok_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Harlok_Woher_15_00"); //Kommst du nicht aus dem Sumpflager?
-	AI_Output(self, hero, "Info_Mod_Harlok_Woher_01_01"); //(missmutig) Ähh, komm mir bloß nicht damit. Sumpfkrautstampfen dürfte ich dort den ganzen Tag.
-	AI_Output(self, hero, "Info_Mod_Harlok_Woher_01_02"); //Einmal kam auch so ein Penner, und hat mir eine verpasst als ich keine Lust auf den Scheiß hatte.
-	AI_Output(self, hero, "Info_Mod_Harlok_Woher_01_03"); //(enthusiastischer) Hier habe ich es viel besser. Rauchen und Verkaufen ... die Münzen wandern mir hier wie von selbst in den Geldbeutel.
+	AI_Output(hero, self, "Info_Mod_Harlok_Woher_15_00"); //Aren't you coming out of the swamp camp?
+	AI_Output(self, hero, "Info_Mod_Harlok_Woher_01_01"); //Uh, don't give me that. I'll be there all day long.
+	AI_Output(self, hero, "Info_Mod_Harlok_Woher_01_02"); //Once a bum came along and gave me one when I didn't want to fuck it up.
+	AI_Output(self, hero, "Info_Mod_Harlok_Woher_01_03"); //Here I have it much better. Smoking and selling.... the coins are going into my wallet all by themselves.
 };
 
 INSTANCE Info_Mod_Harlok_HerekZombie (C_INFO)
@@ -71,14 +71,14 @@ FUNC INT Info_Mod_Harlok_HerekZombie_Condition()
 
 FUNC VOID Info_Mod_Harlok_HerekZombie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_00"); //(belustigt) Hey, was machst du für ein Gesicht. Du siehst aus, als ob du jemanden verdreschen wolltest, hähä.
-	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_01"); //Nimm einen guten Zug und entspann dich ...
-	AI_Output(hero, self, "Info_Mod_Harlok_HerekZombie_15_02"); //(zu sich selbst) Dieser Herek bekommt was zu hören ...
-	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_03"); //Herek? Ahh, der Vogel.
-	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_04"); //Is vor kurzem aus der Schenke raus und wegmarschiert ... mit 'ner Spitzhacke aufm Rücken.
-	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_05"); //Hat heute wohl noch was vor, hähä. Alle so unentspannt zur Zeit ...
+	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_00"); //Hey, what a face you're making. You look like you're beating on somebody, huh?
+	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_01"); //Take a good train and relax....
+	AI_Output(hero, self, "Info_Mod_Harlok_HerekZombie_15_02"); //This Herek gets something to hear....
+	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_03"); //Herek? Ahh, the bird.
+	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_04"); //Has recently left the tavern and marched away.... with a pickaxe on the back.
+	AI_Output(self, hero, "Info_Mod_Harlok_HerekZombie_01_05"); //Guess I'm busy tonight, huh? Everyone so unrestrained at the moment...
 
-	B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "Wie ich von Harlok erfahren habe, hat Herek ausgerüstet mit einer Spitzhacke die Taverne verlassen. Hmm, wo er wohl hin ist?");
+	B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "As I heard from Harlok, Herek left the tavern equipped with a pickaxe. Hmm, where do you think he went?");
 
 	B_StartOtherRoutine	(Mod_7670_STT_Herek_REL, "ATZOMBIE");
 };

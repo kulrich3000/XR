@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Homer_Hi (C_INFO)
 	information	= Info_Mod_Homer_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, noch immer mit dem Damm beschäftigt?";
+	description	= "Hello, still busy with the dam?";
 };
 
 FUNC INT Info_Mod_Homer_Hi_Condition()
@@ -16,9 +16,9 @@ FUNC INT Info_Mod_Homer_Hi_Condition()
 
 FUNC VOID Info_Mod_Homer_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Homer_Hi_15_00"); //Hallo, noch immer mit dem Damm beschäftigt?
-	AI_Output(self, hero, "Info_Mod_Homer_Hi_02_01"); //Ach, viel zu tun gibt es nicht mehr. Unserem neuen Schmied ist es gelungen den Damm durch Einsatz von magischem Erz zu verstärken.
-	AI_Output(self, hero, "Info_Mod_Homer_Hi_02_02"); //Jetzt ist er gegen so ziemlich alles gefeit, widriges Wetter, wie auch garstige Lurker.
+	AI_Output(hero, self, "Info_Mod_Homer_Hi_15_00"); //Hello, still busy with the dam?
+	AI_Output(self, hero, "Info_Mod_Homer_Hi_02_01"); //Oh, there's not much more to do. Our new blacksmith succeeded in strengthening the dam by using magical ore.
+	AI_Output(self, hero, "Info_Mod_Homer_Hi_02_02"); //Now he is almost completely immune to all kinds of bad weather, as well as nasty Lurkers.
 };
 
 INSTANCE Info_Mod_Homer_Pickpocket (C_INFO)

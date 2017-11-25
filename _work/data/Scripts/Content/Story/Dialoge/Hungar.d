@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Hungar_Hey (C_INFO)
 	information	= Info_Mod_Hungar_Hey_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich sehe, du bist gut sortiert.";
+	description	= "I see you're well sorted.";
 };
 
 FUNC INT Info_Mod_Hungar_Hey_Condition()
@@ -16,20 +16,20 @@ FUNC INT Info_Mod_Hungar_Hey_Condition()
 
 FUNC VOID Info_Mod_Hungar_Hey_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_00"); //Ich sehe, du bist gut sortiert.
-	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_01"); //Das muss auch sein. Wir sind hier etwas isoliert.
-	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_02"); //Wo kriegst du das alles her?
-	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_03"); //Ich kaufe in den Lagern ein. Und das Fleisch bringen die Jäger bei.
-	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_04"); //Du kannst ja jetzt auch in der Stadt was besorgen.
-	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_05"); //Das ist mir zu weit und viel zu gefährlich geworden.
-	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_06"); //All die Mörder und Banditen, die mit der Kuppel hierher gekommen sind. Und die Viecher überall.
-	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_07"); //Früher waren das nicht so viele.
-	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_08"); //Du bist schon länger hier?
-	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_09"); //Gewiss. War einer der Ersten im Lager. Vor der Barriere. So wahr ich Hungar heiße.
-	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_10"); //Dann zeig mal, was du alles hast ...
+	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_00"); //I see you're well sorted.
+	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_01"); //That must be the case. We're a little isolated here.
+	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_02"); //Where do you get it all from?
+	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_03"); //I shop in the camps. And the meat is taught by the hunters.
+	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_04"); //You can get some in town now.
+	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_05"); //This has become too far and too dangerous for me.
+	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_06"); //All the murderers and bandits who came here with the dome. And the creatures everywhere.
+	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_07"); //There weren't that many before.
+	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_08"); //You've been here longer?
+	AI_Output(self, hero, "Info_Mod_Hungar_Hey_08_09"); //Certainly. Was one of the first in the camp. Before the barrier. As my name is Hungar.
+	AI_Output(hero, self, "Info_Mod_Hungar_Hey_15_10"); //Well, let's see what you got...
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_WALDIS, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_WALDIS, "Hungar scheint Lebensmittel an die Waldläufer zu verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_WALDIS, "Hungar seems to be selling food to the Rangers.");
 };
 
 INSTANCE Info_Mod_Hungar_Trade (C_INFO)

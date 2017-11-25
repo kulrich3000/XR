@@ -18,12 +18,12 @@ FUNC INT Info_Mod_Ork_Hi_Condition()
 
 FUNC VOID Info_Mod_Ork_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_00"); //Jetzt ist er tatsächlich tot. Was mach ich denn jetzt?
-	AI_Output(hero, self, "Info_Mod_Ork_Hi_15_01"); //Du bist frei! Du kannst tun, was du willst.
-	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_02"); //Ach ja? Und was macht man dann so, wenn man frei ist?
-	AI_Output(hero, self, "Info_Mod_Ork_Hi_15_03"); //Alles.
-	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_04"); //(stöhnt) Klingt schrecklich kompliziert.
-	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_05"); //Ich warte lieber, ob Vater nicht doch wieder aufsteht, dann können wir weitersuchen.
+	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_00"); //Now he's actually dead. What am I gonna do now?
+	AI_Output(hero, self, "Info_Mod_Ork_Hi_15_01"); //You are free! You can do whatever you want.
+	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_02"); //Oh, yeah? And what do you do when you're free?
+	AI_Output(hero, self, "Info_Mod_Ork_Hi_15_03"); //Everything.
+	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_04"); //Sounds terribly complicated.
+	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_05"); //I'd rather wait to see if father doesn't get up after all, then we can keep looking.
 };
 
 INSTANCE Info_Mod_Ork_EXIT (C_INFO)

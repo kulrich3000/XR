@@ -1,7 +1,7 @@
 INSTANCE Mod_10058_Orc_Schamane_MT (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Ork Shamane";
+	name							=	"Orc Shaman";
 	guild							=	GIL_ORC;
 	id			= 	10058;
 	voice							=	18;

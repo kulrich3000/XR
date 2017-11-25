@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Albert_OC_Bridge_Condition()
 
 FUNC VOID Info_Mod_Albert_OC_Bridge_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_OC_Bridge_32_00"); //Hier müssen wir nach links gehen ...
+	AI_Output(self, hero, "Info_Mod_Albert_OC_Bridge_32_00"); //Here we have to turn left....
 
 	AI_StopProcessInfos	(self);
 };
@@ -43,8 +43,8 @@ FUNC INT Info_Mod_Albert_OC_Tor_Condition()
 
 FUNC VOID Info_Mod_Albert_OC_Tor_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_OC_Tor_32_00"); //Hier müssen wir uns ebenfalls links halten.
-	AI_Output(self, hero, "Info_Mod_Albert_OC_Tor_32_01"); //Irgendwann kommen wir dann an einer großen Orkstatue vorbei, von welcher es nur noch ein paar Meter bis zu der Grube mit den Banditen sind.
+	AI_Output(self, hero, "Info_Mod_Albert_OC_Tor_32_00"); //Here we must also keep to the left.
+	AI_Output(self, hero, "Info_Mod_Albert_OC_Tor_32_01"); //At some point we pass a large statue of an orc, from where it is only a few meters to the pit with the bandits.
 
 	AI_StopProcessInfos	(self);
 };
@@ -69,8 +69,8 @@ FUNC INT Info_Mod_Albert_OC_Hi_Condition()
 
 FUNC VOID Info_Mod_Albert_OC_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_OC_Hi_32_00"); //Da unten sind sie. Bei ihnen befindet sich eine Teleportplattform.
-	AI_Output(self, hero, "Info_Mod_Albert_OC_Hi_32_01"); //Ich werde diese über das Amulett mit etwas magischer Energie speisen ... dann sollten sie im Nu hier oben stehen.
+	AI_Output(self, hero, "Info_Mod_Albert_OC_Hi_32_00"); //They're down there. They have a teleport platform.
+	AI_Output(self, hero, "Info_Mod_Albert_OC_Hi_32_01"); //I will feed them with some magical energy via the amulet.... they should be up here in no time.
 
 	AI_StopProcessInfos	(self);
 
@@ -98,9 +98,9 @@ FUNC INT Info_Mod_Albert_OC_Alarm_Condition()
 
 FUNC VOID Info_Mod_Albert_OC_Alarm_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_OC_Alarm_32_00"); //Verflucht, dank dieses Lärms wissen die Orks jetzt unzweifelhaft von unserer Anwesenheit. Die Verwandlungen vorher haben mich einiges an magischer Kraft gekostet.
-	AI_Output(self, hero, "Info_Mod_Albert_OC_Alarm_32_01"); //Ich könnte aber doch noch den Versuch unternehmen, uns mithilfe des Amulettes hier herauszubringen, obwohl es eine große Herausforderung ist, den Zauber auf so viele Kampfgefährten gleichzeitig zu wirken.
-	AI_Output(self, hero, "Info_Mod_Albert_OC_Alarm_32_02"); //Was meinst du?
+	AI_Output(self, hero, "Info_Mod_Albert_OC_Alarm_32_00"); //Cursed, thanks to this noise the orcs now know beyond doubt about our presence. The transformations before have cost me a lot of magical power.
+	AI_Output(self, hero, "Info_Mod_Albert_OC_Alarm_32_01"); //However, I could still try to get us out of here with the amulet, although it is a great challenge to cast the spell on so many combat companions at the same time.
+	AI_Output(self, hero, "Info_Mod_Albert_OC_Alarm_32_02"); //What do you think?
 
 	Mod_AlbertTransforms = 4;
 };
@@ -113,7 +113,7 @@ INSTANCE Info_Mod_Albert_OC_You (C_INFO)
 	information	= Info_Mod_Albert_OC_You_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ja, benutze das Amulett.";
+	description	= "Yes, use the amulet.";
 };
 
 FUNC INT Info_Mod_Albert_OC_You_Condition()
@@ -127,8 +127,8 @@ FUNC INT Info_Mod_Albert_OC_You_Condition()
 
 FUNC VOID Info_Mod_Albert_OC_You_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_OC_You_15_00"); //Ja, benutze das Amulett.
-	AI_Output(self, hero, "Info_Mod_Albert_OC_You_32_01"); //In Ordnung, ich hoffe meine magische Kraft reicht aus.
+	AI_Output(hero, self, "Info_Mod_Albert_OC_You_15_00"); //Yes, use the amulet.
+	AI_Output(self, hero, "Info_Mod_Albert_OC_You_32_01"); //All right, I hope my magic power is good enough.
 
 	Mod_AlbertTransforms = 5;
 
@@ -145,7 +145,7 @@ INSTANCE Info_Mod_Albert_OC_Fight (C_INFO)
 	information	= Info_Mod_Albert_OC_Fight_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nein, wir werden uns schon den Weg freikämpfen.";
+	description	= "No, we'll fight our way out.";
 };
 
 FUNC INT Info_Mod_Albert_OC_Fight_Condition()
@@ -159,8 +159,8 @@ FUNC INT Info_Mod_Albert_OC_Fight_Condition()
 
 FUNC VOID Info_Mod_Albert_OC_Fight_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_OC_Fight_15_00"); //Nein, wir werden uns schon den Weg freikämpfen.
-	AI_Output(self, hero, "Info_Mod_Albert_OC_Fight_32_01"); //Ein großes Wagnis, aber in Ordnung. Du hast bisher dein Kampfgeschick schon unter Beweis gestellt.
+	AI_Output(hero, self, "Info_Mod_Albert_OC_Fight_15_00"); //No, we'll fight our way out.
+	AI_Output(self, hero, "Info_Mod_Albert_OC_Fight_32_01"); //Big risk, but all right. You've proven your fighting skills so far.
 
 	Mod_AlbertTransforms = 5;
 

@@ -15,50 +15,50 @@ FUNC INT Info_Mod_Knucker_Hi_Condition()
 
 FUNC VOID Info_Mod_Knucker_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Knucker_Hi_21_00"); //He, Menschenwicht, was treibst du hier?
+	AI_Output(self, hero, "Info_Mod_Knucker_Hi_21_00"); //Hey, babe, what are you doing here?
 
 	Info_ClearChoices	(Info_Mod_Knucker_Hi);
 
-	Info_AddChoice	(Info_Mod_Knucker_Hi, "Ich bin euer schlimmster Alptraum.", Info_Mod_Knucker_Hi_C);
-	Info_AddChoice	(Info_Mod_Knucker_Hi, "Ich wollte Rüben ernten.", Info_Mod_Knucker_Hi_B);
-	Info_AddChoice	(Info_Mod_Knucker_Hi, "Ich bin nur zufällig hier.", Info_Mod_Knucker_Hi_A);
+	Info_AddChoice	(Info_Mod_Knucker_Hi, "I'm your worst nightmare.", Info_Mod_Knucker_Hi_C);
+	Info_AddChoice	(Info_Mod_Knucker_Hi, "I was picking turnips.", Info_Mod_Knucker_Hi_B);
+	Info_AddChoice	(Info_Mod_Knucker_Hi, "I just happen to be here.", Info_Mod_Knucker_Hi_A);
 };
 
 FUNC VOID Info_Mod_Knucker_Hi_D()
 {
-	AI_Output(self, hero, "Info_Mod_Knucker_Hi_D_21_00"); //(desinteressiert) Jaja ... Menschenwicht, du kannst was für mich tun. Ich habe einen Pfeil in der Pfote stecken. Den sollst du mir herausziehen.
+	AI_Output(self, hero, "Info_Mod_Knucker_Hi_D_21_00"); //(disinterested) Yes yes.... You can do something for me. I have an arrow in my paw. I want you to pull it out.
 
 	Info_ClearChoices	(Info_Mod_Knucker_Hi);
 
-	Info_AddChoice	(Info_Mod_Knucker_Hi, "Ne, du kannst mich mal.", Info_Mod_Knucker_Hi_F);
-	Info_AddChoice	(Info_Mod_Knucker_Hi, "Klar, ich helfe gerne.", Info_Mod_Knucker_Hi_E);
+	Info_AddChoice	(Info_Mod_Knucker_Hi, "No, screw you.", Info_Mod_Knucker_Hi_F);
+	Info_AddChoice	(Info_Mod_Knucker_Hi, "Sure, I'll be glad to help.", Info_Mod_Knucker_Hi_E);
 };
 
 FUNC VOID Info_Mod_Knucker_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Knucker_Hi_C_15_00"); //Ich bin euer schlimmster Alptraum.
+	AI_Output(hero, self, "Info_Mod_Knucker_Hi_C_15_00"); //I'm your worst nightmare.
 
 	Info_Mod_Knucker_Hi_D();
 };
 
 FUNC VOID Info_Mod_Knucker_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Knucker_Hi_B_15_00"); //Ich wollte Rüben ernten.
+	AI_Output(hero, self, "Info_Mod_Knucker_Hi_B_15_00"); //I was picking turnips.
 
 	Info_Mod_Knucker_Hi_D();
 };
 
 FUNC VOID Info_Mod_Knucker_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Knucker_Hi_A_15_00"); //Ich bin nur zufällig hier.
+	AI_Output(hero, self, "Info_Mod_Knucker_Hi_A_15_00"); //I just happen to be here.
 
 	Info_Mod_Knucker_Hi_D();
 };
 
 FUNC VOID Info_Mod_Knucker_Hi_F()
 {
-	AI_Output(hero, self, "Info_Mod_Knucker_Hi_F_15_00"); //Nee, du kannst mich mal.
-	AI_Output(self, hero, "Info_Mod_Knucker_Hi_F_21_01"); //(faucht) Dann werde ich dich eben rösten und verspeisen.
+	AI_Output(hero, self, "Info_Mod_Knucker_Hi_F_15_00"); //Nah, screw you.
+	AI_Output(self, hero, "Info_Mod_Knucker_Hi_F_21_01"); //Then I'll roast and eat you.
 
 	Info_ClearChoices	(Info_Mod_Knucker_Hi);
 
@@ -70,11 +70,11 @@ FUNC VOID Info_Mod_Knucker_Hi_F()
 
 FUNC VOID Info_Mod_Knucker_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Knucker_Hi_E_15_00"); //Klar, ich helfe gerne.
+	AI_Output(hero, self, "Info_Mod_Knucker_Hi_E_15_00"); //Sure, I'll be glad to help.
 
 	AI_PlayAni	(hero, "T_PLUNDER");
 
-	AI_Output(self, hero, "Info_Mod_Knucker_Hi_E_21_01"); //Ahh, gleich viel besser. Das hast du gut gemacht, Menschenwicht. Du kannst jetzt gehen.
+	AI_Output(self, hero, "Info_Mod_Knucker_Hi_E_21_01"); //Ahh, same much better. You did a good job, you big man. You can go now.
 
 	B_GivePlayerXP	(300);
 

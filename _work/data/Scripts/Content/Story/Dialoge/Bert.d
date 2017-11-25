@@ -15,36 +15,36 @@ FUNC INT Info_Mod_Bert_Hi_Condition()
 
 FUNC VOID Info_Mod_Bert_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_00"); //Was, wer bist du? Sind die Crawler weg?
-	AI_Output(hero, self, "Info_Mod_Bert_Hi_15_01"); //Was machst du denn hier oben?
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_02"); //Bei dem letzten Überfall der Crawler bin ich hierhin geflüchtet.
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_03"); //Ich musste mit eigenen Augen dabei zusehen, wie viele meiner Freunde von den Crawlern niedergemacht und danach in den hinteren Teil der Höhle fortgeschleift wurden.
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_04"); //Nur Claus haben sie nicht wegbekommen, da sein Leichnam mit einem Bein zwischen dem Gerüst fest hing.
-	AI_Output(hero, self, "Info_Mod_Bert_Hi_15_05"); //Ja, schön, wozu erzählst du mir das alles? Außerdem sehe ich hier keine Leiche herumliegen ...
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_06"); //Verdammt, das wollte ich doch gerade erklären.
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_07"); //Nach einigen Stunden überfiel mich der Schlaf vor lauter Erschöpfung über das Geschehnis.
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_08"); //Stunden später wurde ich plötzlich durch merkwürdige Geräusche und Lichter geweckt.
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_09"); //Als ich über den Felsen spickte, da sah ich, ich wollte meinen Augen nicht trauen, Claus schwankend hinter den Felsen verschwinden und weiter hinten war mir, als würde eine leuchtende Gestalt umherspringen.
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_10"); //Dann war sie auch plötzlich verschwunden. Ich glaube, langsam meinen Verstand zu verlieren ...
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_11"); //Hast du vielleicht was zu essen und zu trinken für mich, damit ich wieder zu Verstand und Kräften komme?
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_00"); //What, who are you? Have the crawlers gone?
+	AI_Output(hero, self, "Info_Mod_Bert_Hi_15_01"); //What are you doing up here?
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_02"); //The last time the crawlers robbed, I fled here.
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_03"); //I had to watch with my own eyes how many of my friends were slaughtered by the crawlers and dragged away to the back of the cave.
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_04"); //Only Claus couldn't get it out because his body hung with one leg between the scaffolding.
+	AI_Output(hero, self, "Info_Mod_Bert_Hi_15_05"); //Yeah, well, why are you telling me all this? Besides, I don't see any corpse lying around here....
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_06"); //Damn, that's what I was just explaining.
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_07"); //After a few hours, I fell asleep from exhaustion.
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_08"); //Hours later I was suddenly awakened by strange sounds and lights.
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_09"); //As I peeked over the rock, I saw that I didn't want to believe my eyes, Claus was swaying and disappearing behind the rocks and further back I felt as if a shining figure was jumping around.
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_10"); //Then she disappeared suddenly. I think I'm starting to lose my mind....
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_10_11"); //Do you have anything to eat and drink for me so that I can regain my mind and strength?
 
-	B_LogEntry	(TOPIC_MOD_NL_CRAWLER, "Ich habe einen Überlebenden Schürfer getroffen. Er berichtete davon, wie er in der Dunkelheit seinen toten Freund habe weggehen sehen und von leuchtenden Gestalten. Hört sich ziemlich diffus an.");
+	B_LogEntry	(TOPIC_MOD_NL_CRAWLER, "I met a survivor scout. He told of how he saw his dead friend walk away in the dark and of shining figures. Sounds rather diffuse.");
 
 	Info_ClearChoices	(Info_Mod_Bert_Hi);
 
-	Info_AddChoice	(Info_Mod_Bert_Hi, "Nein.", Info_Mod_Bert_Hi_C);
+	Info_AddChoice	(Info_Mod_Bert_Hi, "No.", Info_Mod_Bert_Hi_C);
 
 	if (Npc_HasItems(hero, ItFo_Milk) >= 1)
 	&& (Npc_HasItems(hero, ItFo_Bread) >= 1)
 	&& (Npc_HasItems(hero, ItFo_Mutton) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Bert_Hi, "Hier, nimm. (Milch, gebratenes Fleisch und Brot geben)", Info_Mod_Bert_Hi_B);
+		Info_AddChoice	(Info_Mod_Bert_Hi, "Here, take this. (giving milk, fried meat and bread)", Info_Mod_Bert_Hi_B);
 	};
 
 	if (Npc_HasItems(hero, ItFo_Water) >= 1)
 	&& (Npc_HasItems(hero, ItFo_Bread) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Bert_Hi, "Hier, nimm. (Brot und Wasser geben)", Info_Mod_Bert_Hi_A);
+		Info_AddChoice	(Info_Mod_Bert_Hi, "Here, take this. (add bread and water)", Info_Mod_Bert_Hi_A);
 	};
 };
 
@@ -52,7 +52,7 @@ FUNC VOID Info_Mod_Bert_Hi_C()
 {
 	B_Say	(hero, self, "$NO");
 
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_C_10_01"); //Naja, dann muss ich mich eben so durchschlagen.
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_C_10_01"); //Well, I'll just have to get through it.
 	
 	Info_ClearChoices	(Info_Mod_Bert_Hi);
 };
@@ -61,13 +61,13 @@ FUNC VOID Info_Mod_Bert_Hi_B()
 {
 	B_Say	(hero, self, "$HIERNIMM");
 
-	B_ShowGivenThings	("Milch, Brot und gebratenes Fleisch gegeben");
+	B_ShowGivenThings	("Milk, bread and fried meat given");
 
 	Npc_RemoveInvItems	(hero, ItFo_Milk, 1);
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 1);
 	Npc_RemoveInvItems	(hero, ItFo_Mutton, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_B_10_01"); //Vielen Dank. Mehr kann man sich kaum wünschen.
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_B_10_01"); //Thank you very much. That's all you can ask for.
 
 	B_GivePlayerXP	(200);
 
@@ -80,12 +80,12 @@ FUNC VOID Info_Mod_Bert_Hi_A()
 {
 	B_Say	(hero, self, "$HIERNIMM");
 
-	B_ShowGivenThings	("Brot und Wasser gegeben");
+	B_ShowGivenThings	("Bread and water added");
 
 	Npc_RemoveInvItems	(hero, ItFo_Water, 1);
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bert_Hi_A_10_01"); //Hab Dank.
+	AI_Output(self, hero, "Info_Mod_Bert_Hi_A_10_01"); //I appreciate it.
 
 	B_GivePlayerXP	(100);
 
@@ -115,10 +115,10 @@ FUNC INT Info_Mod_Bert_Gormgniez_Condition()
 
 FUNC VOID Info_Mod_Bert_Gormgniez_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bert_Gormgniez_10_00"); //Hab vielen Dank für meine Rettung, wie auch Speise und Trank.
-	AI_Output(self, hero, "Info_Mod_Bert_Gormgniez_10_01"); //Ich habe leider wenig, was ich dir geben kann, aber zumindest werde ich dich etwas in die Kunst Erz zu schürfen einweihen.
-	AI_Output(self, hero, "Info_Mod_Bert_Gormgniez_10_02"); //Achte auf Struktur und Beschaffenheit des Erzes. Wo verlaufen Risse und Schwachstellen in der Ader, in welche du deine Spitzhacke treiben kannst?
-	AI_Output(self, hero, "Info_Mod_Bert_Gormgniez_10_03"); //Wenn du das berücksichtigst, wirst du große Brocken herausschlagen können.
+	AI_Output(self, hero, "Info_Mod_Bert_Gormgniez_10_00"); //Thank you very much for my salvation, as well as food and drink.
+	AI_Output(self, hero, "Info_Mod_Bert_Gormgniez_10_01"); //I have little that I can give you, but at least I will teach you to dig into the art of mining ore.
+	AI_Output(self, hero, "Info_Mod_Bert_Gormgniez_10_02"); //Pay attention to the structure and texture of the ore. Where do cracks and weak points in the vein run into which you can drive your pickaxe?
+	AI_Output(self, hero, "Info_Mod_Bert_Gormgniez_10_03"); //If you take that into account, you'll be able to knock out big chunks.
 
 	B_GivePlayerXP	(200);
 

@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Fenia_Hi_Condition()
 
 FUNC VOID Info_Mod_Fenia_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fenia_Hi_17_00"); //Hallo, ich bin Fenia. Brauchst du was zu essen?
+	AI_Output(self, hero, "Info_Mod_Fenia_Hi_17_00"); //Hi, I'm Fenia. Do you need something to eat?
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Fenia scheint mit Lebensmitteln zu handeln.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Fenia seems to be dealing in food.");
 };
 
 INSTANCE Info_Mod_Fenia_MatteoLehrling1 (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Fenia_MatteoLehrling1 (C_INFO)
 	information	= Info_Mod_Fenia_MatteoLehrling1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hat sich da unter deinem Stand gerade etwas bewegt? (Apfel platzieren)";
+	description	= "Did something just move under your feet? (place apple)";
 };
 
 FUNC INT Info_Mod_Fenia_MatteoLehrling1_Condition()
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Fenia_MatteoLehrling2 (C_INFO)
 	information	= Info_Mod_Fenia_MatteoLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, wird der da drüben nicht gesucht? (Apfel platzieren)";
+	description	= "Hey, ain't they looking for him over there? (place apple)";
 };
 
 FUNC INT Info_Mod_Fenia_MatteoLehrling2_Condition()
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Fenia_MatteoLehrling3 (C_INFO)
 	information	= Info_Mod_Fenia_MatteoLehrling3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schöne Äpfel hast du da ... (Apfel platzieren)";
+	description	= "Nice apples you have there... (place apple)";
 };
 
 FUNC INT Info_Mod_Fenia_MatteoLehrling3_Condition()
@@ -139,9 +139,9 @@ FUNC INT Info_Mod_Fenia_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Fenia_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fenia_Daemonisch_17_00"); //Mann, der ist aber schnell zum Südtor gerannt.
+	AI_Output(self, hero, "Info_Mod_Fenia_Daemonisch_17_00"); //Man, he ran quickly to the south gate.
 	
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Das muss er sein. Zum Südtor, hinterher.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "That must be him. To the south gate, after.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -154,7 +154,7 @@ INSTANCE Info_Mod_Fenia_Wanzen (C_INFO)
 	information	= Info_Mod_Fenia_Wanzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du denn hier?";
+	description	= "What are you doing here?";
 };
 
 FUNC INT Info_Mod_Fenia_Wanzen_Condition()
@@ -169,31 +169,31 @@ FUNC INT Info_Mod_Fenia_Wanzen_Condition()
 
 FUNC VOID Info_Mod_Fenia_Wanzen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_00"); //Was machst du denn hier?
-	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_01"); //(fühlt sich erwischt) Äh ... gar nichts.
-	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_02"); //Du hast nicht zufällig was mit den Wanzen in Eddas Hütte zu tun, oder?
-	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_03"); //Äh ... ich?
-	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_04"); //Ja, du.
-	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_05"); //Nun, äh ... es ist anders, also du denkst.
-	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_06"); //Wie ist es denn?
-	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_07"); //Edda hat es nicht anders verdient, weißt du? Sie hat versucht, sich an meinen Mann ranzumachen.
-	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_08"); //Und deswegen setzt du Fleischwanzen in ihre Hütte? Sie wird sich freuen, wenn sie das erfährt.
-	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_09"); //Bitte verrate mich nicht.
-	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_10"); //Wieso sollte ich das nicht tun?
-	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_11"); //Ich kann dich bezahlen. Ich bin Händlerin, ich hab Gold.
+	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_00"); //What are you doing here?
+	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_01"); //(feels caught) Uh.... nothing at all.
+	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_02"); //You wouldn't have anything to do with the bugs in Eddie's cabin, would you?
+	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_03"); //Uh... Me?
+	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_04"); //Yeah, you.
+	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_05"); //Well, uh... it's different, so you think.
+	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_06"); //What's it like?
+	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_07"); //Edda deserves it, you know? She tried to hook up with my husband.
+	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_08"); //And that's why you put meat bugs in her cabin? She'll be happy to know that.
+	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_09"); //Please don't betray me.
+	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_15_10"); //Why wouldn't I do that?
+	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_17_11"); //I can pay you. I'm a trader, I have gold.
 
 	B_StartOtherRoutine	(self, "START");
 
 	Info_ClearChoices	(Info_Mod_Fenia_Wanzen);
 
-	Info_AddChoice	(Info_Mod_Fenia_Wanzen, "Na gut, ich werde Edda nichts sagen.", Info_Mod_Fenia_Wanzen_Fenia);
-	Info_AddChoice	(Info_Mod_Fenia_Wanzen, "Nein, ich werde Edda alles erzählen.", Info_Mod_Fenia_Wanzen_Edda);
+	Info_AddChoice	(Info_Mod_Fenia_Wanzen, "All right, I won't tell Edda.", Info_Mod_Fenia_Wanzen_Fenia);
+	Info_AddChoice	(Info_Mod_Fenia_Wanzen, "No, I'll tell Edda everything.", Info_Mod_Fenia_Wanzen_Edda);
 };
 
 FUNC VOID Info_Mod_Fenia_Wanzen_Fenia()
 {
-	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_Fenia_15_00"); //Na gut, ich werde Edda nichts sagen.
-	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_Fenia_17_01"); //Danke, Edda hätte mich umgebracht. Hier ist dein Gold.
+	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_Fenia_15_00"); //All right, I won't tell Edda.
+	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_Fenia_17_01"); //Thank you, Edda would have killed me. Here's your gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -205,7 +205,7 @@ FUNC VOID Info_Mod_Fenia_Wanzen_Fenia()
 
 	Info_ClearChoices	(Info_Mod_Fenia_Wanzen);
 
-	B_LogEntry	(TOPIC_MOD_EDDASWANZENBACK, "Ich hab Fenias Angebot angenommen und werde sie nicht an Edda verraten.");
+	B_LogEntry	(TOPIC_MOD_EDDASWANZENBACK, "I took Fenia's offer and I'm not gonna give her away to Edda.");
 
 	B_SetTopicStatus	(TOPIC_MOD_EDDASWANZENBACK, LOG_SUCCESS);
 
@@ -214,8 +214,8 @@ FUNC VOID Info_Mod_Fenia_Wanzen_Fenia()
 
 FUNC VOID Info_Mod_Fenia_Wanzen_Edda()
 {
-	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_Edda_15_00"); //Nein, ich werde Edda alles erzählen.
-	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_Edda_17_01"); //Oh nein, sie wird mich umbringen.
+	AI_Output(hero, self, "Info_Mod_Fenia_Wanzen_Edda_15_00"); //No, I'll tell Edda everything.
+	AI_Output(self, hero, "Info_Mod_Fenia_Wanzen_Edda_17_01"); //Oh, no, she's gonna kill me.
 
 	Eddas_Wanzen_Back = 3;
 
@@ -230,7 +230,7 @@ INSTANCE Info_Mod_Fenia_AllesKlar (C_INFO)
 	information	= Info_Mod_Fenia_AllesKlar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles in Ordnung bei dir?";
+	description	= "Are you all right?";
 };
 
 FUNC INT Info_Mod_Fenia_AllesKlar_Condition()
@@ -243,14 +243,14 @@ FUNC INT Info_Mod_Fenia_AllesKlar_Condition()
 
 FUNC VOID Info_Mod_Fenia_AllesKlar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fenia_AllesKlar_15_00"); //Alles in Ordnung bei dir?
-	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_01"); //Sehe ich etwa so bedrückt aus? Das wäre schlecht fürs Geschäft.
-	AI_Output(hero, self, "Info_Mod_Fenia_AllesKlar_15_02"); //Was belastet dich denn?
-	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_03"); //Ich erwische meinen Mann Halvor immer wieder dabei, dass er fremden Frauen nachschaut.
-	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_04"); //Aber ich habe auch das Gefühl, dass alle Weiber versuchen, mir meinen Halvor abspenstig zu machen.
-	AI_Output(hero, self, "Info_Mod_Fenia_AllesKlar_15_05"); //Hast du ihn mal darauf angesprochen?
-	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_06"); //Mal? Ich stelle ihn immer zur Rede, aber er streitet alles vehement ab und redet sich mit Verkaufsgesprächen und so weiter heraus.
-	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_07"); //Ich werde ihn schon noch auf frischer Tat ertappen ...
+	AI_Output(hero, self, "Info_Mod_Fenia_AllesKlar_15_00"); //Are you all right?
+	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_01"); //Do I look that depressed? That would be bad for business.
+	AI_Output(hero, self, "Info_Mod_Fenia_AllesKlar_15_02"); //What's bothering you?
+	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_03"); //I catch my husband Halvor again and again looking for strange women.
+	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_04"); //But I also have the feeling that all women are trying to dissuade me from using my neck.
+	AI_Output(hero, self, "Info_Mod_Fenia_AllesKlar_15_05"); //Did you ever talk to him about that?
+	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_06"); //Mal? I always confront him, but he denies everything vehemently and talks himself out with sales talks and so on.
+	AI_Output(self, hero, "Info_Mod_Fenia_AllesKlar_17_07"); //I'll catch him in the act...
 };
 
 INSTANCE Info_Mod_Fenia_BH (C_INFO)
@@ -273,12 +273,12 @@ FUNC INT Info_Mod_Fenia_BH_Condition()
 
 FUNC VOID Info_Mod_Fenia_BH_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fenia_BH_17_00"); //Du schmieriger Lump! Wirst du wohl die Finger von meinem ... meinem ... lassen!
-	AI_Output(hero, self, "Info_Mod_Fenia_BH_15_01"); //Aber ...
-	AI_Output(self, hero, "Info_Mod_Fenia_BH_17_02"); //Zu dieser Aktion fällt dir jetzt wohl auch noch eine Ausrede ein, was?!
-	AI_Output(self, hero, "Info_Mod_Fenia_BH_17_03"); //Halt bloß den Mund und bleib mir fern!
+	AI_Output(self, hero, "Info_Mod_Fenia_BH_17_00"); //You greasy rascal! Will you get your hands off my...? mine let go!
+	AI_Output(hero, self, "Info_Mod_Fenia_BH_15_01"); //But...
+	AI_Output(self, hero, "Info_Mod_Fenia_BH_17_02"); //I suppose you've come up with an excuse to take part in this action.
+	AI_Output(self, hero, "Info_Mod_Fenia_BH_17_03"); //Shut up and stay away from me!
 
-	B_LogEntry	(TOPIC_MOD_GARVELL_FENIA, "Da hat mich jemand kräftig reingelegt ...");
+	B_LogEntry	(TOPIC_MOD_GARVELL_FENIA, "Somebody set me up big time....");
 };
 
 INSTANCE Info_Mod_Fenia_BH2 (C_INFO)
@@ -302,8 +302,8 @@ FUNC INT Info_Mod_Fenia_BH2_Condition()
 
 FUNC VOID Info_Mod_Fenia_BH2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fenia_BH2_17_00"); //Vergessen wir die Sache mit meinem ... meinem ..., ja?
-	AI_Output(hero, self, "Info_Mod_Fenia_BH2_15_01"); //Wird nicht wieder vorkommen.
+	AI_Output(self, hero, "Info_Mod_Fenia_BH2_17_00"); //Let's forget about my business... mine Yeah?
+	AI_Output(hero, self, "Info_Mod_Fenia_BH2_15_01"); //Won't happen again.
 };
 
 INSTANCE Info_Mod_Fenia_Trade (C_INFO)

@@ -1,7 +1,7 @@
 instance Mod_7526_BlutkultMagier_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Blutkult Magier";
+	name 		=		"Blood cult magician";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_DMT;
 	level 		=		60;

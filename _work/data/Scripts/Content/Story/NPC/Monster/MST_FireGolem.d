@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_FireGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Feuergolem";
+	name							=	"Fire Golem";
 	guild							=	GIL_FIREGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_FIREGOLEM;
 	level							=	100;
@@ -103,7 +103,7 @@ INSTANCE FireGolem_Moor	(Mst_Default_FireGolem)
 
 INSTANCE Summoned_FireGolem (Mst_Default_FireGolem)
 {
-	name							=	"Beschworener Feuergolem";
+	name							=	"Summoned Fire Golem";
 	guild							=	GIL_SUMMONED_GOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_FIREGOLEM;
 	level							=	0;

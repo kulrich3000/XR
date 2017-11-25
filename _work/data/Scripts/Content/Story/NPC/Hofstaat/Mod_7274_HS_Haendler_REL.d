@@ -1,7 +1,7 @@
 instance Mod_7274_HS_Haendler_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königlicher Händler"; 
+	name 		= "Royal Dealer"; 
 	guild 		= GIL_OUT;
 	id 			= 7274;
 	voice 		= 8;

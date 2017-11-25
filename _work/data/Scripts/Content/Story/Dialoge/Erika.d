@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Erika_Hi (C_INFO)
 	information	= Info_Mod_Erika_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Erika_Hi_Condition()
@@ -18,10 +18,10 @@ FUNC VOID Info_Mod_Erika_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Erika_Hi_16_01"); //Ich bin Händlerin. Ich verkaufe alles, was du im Alltag brauchst.
+	AI_Output(self, hero, "Info_Mod_Erika_Hi_16_01"); //I'm a trader. I sell everything you need in everyday life.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KHORATA, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Erika handelt auf dem Marktplatz mit Gebrauchsgegenständen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Erika trades in commodities on the marketplace.");
 };
 
 INSTANCE Info_Mod_Erika_Landvermessung (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Erika_Landvermessung (C_INFO)
 	information	= Info_Mod_Erika_Landvermessung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du, was Hubert mit seinem Fusel meint?";
+	description	= "You know what Hubert means by his booze?";
 };
 
 FUNC INT Info_Mod_Erika_Landvermessung_Condition()
@@ -47,47 +47,47 @@ FUNC INT Info_Mod_Erika_Landvermessung_Condition()
 
 FUNC VOID Info_Mod_Erika_Landvermessung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_15_00"); //Weißt du, was Hubert mit seinem Fusel meint?
-	AI_Output(self, hero, "Info_Mod_Erika_Landvermessung_16_01"); //(resolut) Aber sicher doch! Gestern erst habe ich ihm verboten, bei mir Alkohol zu kaufen. Der Mann säuft sich tot!
+	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_15_00"); //You know what Hubert means by his booze?
+	AI_Output(self, hero, "Info_Mod_Erika_Landvermessung_16_01"); //(resolute) Of course you do! Only yesterday I forbade him to buy alcohol from me. The man drinks himself dead!
 
 	Info_ClearChoices	(Info_Mod_Erika_Landvermessung);
 
-	Info_AddChoice	(Info_Mod_Erika_Landvermessung, "Na gut, dann suche ich woanders ...", Info_Mod_Erika_Landvermessung_B);
-	Info_AddChoice	(Info_Mod_Erika_Landvermessung, "Kann ich seinen Alkohol haben?", Info_Mod_Erika_Landvermessung_A);
+	Info_AddChoice	(Info_Mod_Erika_Landvermessung, "All right, I'll look somewhere else...", Info_Mod_Erika_Landvermessung_B);
+	Info_AddChoice	(Info_Mod_Erika_Landvermessung, "Can I have his booze?", Info_Mod_Erika_Landvermessung_A);
 };
 
 FUNC VOID Info_Mod_Erika_Landvermessung_B()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_B_15_00"); //Na gut, dann suche ich woanders ...
+	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_B_15_00"); //All right, I'll look somewhere else...
 
 	Info_ClearChoices	(Info_Mod_Erika_Landvermessung);
 };
 
 FUNC VOID Info_Mod_Erika_Landvermessung_A()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_A_15_00"); //Kann ich seinen Alkohol haben?
-	AI_Output(self, hero, "Info_Mod_Erika_Landvermessung_A_16_01"); //(ironisch) Natürlich! Nein, das ist nicht möglich. Ich habe fast alle alkoholischen Waren bei mir zu Hause in einer Truhe versteckt, damit Hubert keine Möglichkeit hat, an sie zu gelangen.
+	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_A_15_00"); //Can I have his booze?
+	AI_Output(self, hero, "Info_Mod_Erika_Landvermessung_A_16_01"); //(ironic) Of course! No, that's not possible. I have hidden almost all alcoholic products in a chest at home, so that Hubert has no way of getting them.
 
 	Info_ClearChoices	(Info_Mod_Erika_Landvermessung);
 
-	Info_AddChoice	(Info_Mod_Erika_Landvermessung, "Schade, da kann man nichts machen.", Info_Mod_Erika_Landvermessung_D);
-	Info_AddChoice	(Info_Mod_Erika_Landvermessung, "Und welches Haus gehört dir?", Info_Mod_Erika_Landvermessung_C);
+	Info_AddChoice	(Info_Mod_Erika_Landvermessung, "Too bad, there's nothing to be done.", Info_Mod_Erika_Landvermessung_D);
+	Info_AddChoice	(Info_Mod_Erika_Landvermessung, "And which house is yours?", Info_Mod_Erika_Landvermessung_C);
 };
 
 FUNC VOID Info_Mod_Erika_Landvermessung_D()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_D_15_00"); //Schade, da kann man nichts machen.
+	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_D_15_00"); //Too bad, there's nothing to be done.
 
 	Info_ClearChoices	(Info_Mod_Erika_Landvermessung);
 };
 
 FUNC VOID Info_Mod_Erika_Landvermessung_C()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_C_15_00"); //Und welches Haus gehört dir?
-	AI_Output(self, hero, "Info_Mod_Erika_Landvermessung_C_16_01"); //Es liegt am großen See in dieser Stadt, nicht weit hier vom Marktplatz. Aber sag mal ... warum willst du das so genau wissen?
-	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_C_15_02"); //Niemand versteht die einsamen Helden ...
+	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_C_15_00"); //And which house is yours?
+	AI_Output(self, hero, "Info_Mod_Erika_Landvermessung_C_16_01"); //It is situated on the big lake in this town, not far from the market place. But tell me something.... why do you want to know that so much?
+	AI_Output(hero, self, "Info_Mod_Erika_Landvermessung_C_15_02"); //No one understands the lonely heroes....
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "Die Händlerin Erika hat ihren Alkoholvorrat in einer Truhe in ihrem Haus am städtischen See gelagert.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "The merchant Erika has stored her alcohol in a chest in her house by the city's lake.");
 
 	Info_ClearChoices	(Info_Mod_Erika_Landvermessung);
 };
@@ -100,7 +100,7 @@ INSTANCE Info_Mod_Erika_Nagelnachschub (C_INFO)
 	information	= Info_Mod_Erika_Nagelnachschub_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich suche nach Nägeln.";
+	description 	= "I'm looking for nails.";
 };                       
 
 FUNC INT Info_Mod_Erika_Nagelnachschub_Condition()
@@ -113,21 +113,21 @@ FUNC INT Info_Mod_Erika_Nagelnachschub_Condition()
 
 FUNC VOID Info_Mod_Erika_Nagelnachschub_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_00"); //Ich suche nach Nägeln.
-	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_01"); //Du willst doch nicht etwa heute Abend nageln?
-	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_02"); //Ähm ...
-	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_03"); //Ja, ja, immer die Nachtruhe anderer Menschen stören!
-	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_04"); //Wofür gibt es eigentlich Gesetze, die das untersagen?
-	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_05"); //Ich brauche die Nägel ja nicht selbst.
-	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_06"); //Immerhin.
-	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_07"); //Hast du denn welche?
-	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_08"); //Ja. Für einen kleinen Gefallen würde ich dir ein Paket überlassen.
-	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_09"); //Was ist das für ein Gefallen?
-	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_10"); //Bring Wendel diesen Brief von mir. (kichert mädchenhaft)
+	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_00"); //I'm looking for nails.
+	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_01"); //You're not gonna nail me tonight, are you?
+	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_02"); //Um...
+	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_03"); //Yes, yes, always disturb other people's sleep!
+	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_04"); //What are the laws that forbid this?
+	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_05"); //I don't need the nails myself.
+	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_06"); //After all.
+	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_07"); //Do you have any?
+	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_08"); //Yeah. For one small favor, I'd leave you a package.
+	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub_15_09"); //What kind of favor is that?
+	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub_16_10"); //Bring this letter from me to Wendel. (giggles girlishly)
 
 	B_GiveInvItems	(self, hero, ItWr_ErikaLiebesbrief, 1);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Erika hat mir einen Brief für Wendel mitgegeben.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Erika gave me a letter for Wendel.");
 };
 
 INSTANCE Info_Mod_Erika_Nagelnachschub2 (C_INFO)
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Erika_Nagelnachschub2 (C_INFO)
 	information	= Info_Mod_Erika_Nagelnachschub2_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Dein Brief hat das Ziel erreicht.";
+	description 	= "Your letter has arrived.";
 };                       
 
 FUNC INT Info_Mod_Erika_Nagelnachschub2_Condition()
@@ -151,9 +151,9 @@ FUNC INT Info_Mod_Erika_Nagelnachschub2_Condition()
 
 FUNC VOID Info_Mod_Erika_Nagelnachschub2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub2_15_00"); //Dein Brief hat das Ziel erreicht.
-	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub2_16_01"); //(aufgeregt) Ich bin gespannt, was er dazu sagt.
-	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub2_16_02"); //Da hast du die Nägel, aber lass dir bloß nicht einfallen, nachts herumzuhämmern!
+	AI_Output(hero, self, "Info_Mod_Erika_Nagelnachschub2_15_00"); //Your letter has arrived.
+	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub2_16_01"); //I'm curious to know what he'll say.
+	AI_Output(self, hero, "Info_Mod_Erika_Nagelnachschub2_16_02"); //You've got your nails, but don't you dare hammer around at night!
 
 	B_GiveInvItems	(self, hero, ItMi_Nagelpaket, 1);
 
@@ -168,7 +168,7 @@ INSTANCE Info_Mod_Erika_Kissen (C_INFO)
 	information	= Info_Mod_Erika_Kissen_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Hast du vielleicht so was wie ein Polster für den Kopf?";
+	description 	= "Do you have something like a pillow for the head?";
 };                       
 
 FUNC INT Info_Mod_Erika_Kissen_Condition()
@@ -183,14 +183,14 @@ FUNC INT Info_Mod_Erika_Kissen_Condition()
 
 FUNC VOID Info_Mod_Erika_Kissen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Kissen_15_00"); //Hast du vielleicht so was wie ein Polster für den Kopf?
-	AI_Output(self, hero, "Info_Mod_Erika_Kissen_16_01"); //Du bist Boxer?
-	AI_Output(hero, self, "Info_Mod_Erika_Kissen_15_02"); //Nein, uum Schlafen. Den Kopf drauf legen. Weich liegen ...
-	AI_Output(self, hero, "Info_Mod_Erika_Kissen_16_03"); //Ich könnte mir da eine Fellrolle vorstellen.
-	AI_Output(hero, self, "Info_Mod_Erika_Kissen_15_04"); //Das geht nicht. Ist nicht weich genug und stinkt.
-	AI_Output(self, hero, "Info_Mod_Erika_Kissen_16_05"); //Dann kann ich dir auch nicht helfen.
-	AI_Output(self, hero, "Info_Mod_Erika_Kissen_16_06"); //Vielleicht Daniel hier nebenan. Der handelt mit magischen Dingen. Oder Morpheus drüben. Ein unheimlicher Mann ...
-	AI_Output(hero, self, "Info_Mod_Erika_Kissen_15_07"); //Danke trotzdem.
+	AI_Output(hero, self, "Info_Mod_Erika_Kissen_15_00"); //Do you have something like a pillow for the head?
+	AI_Output(self, hero, "Info_Mod_Erika_Kissen_16_01"); //You're a fighter?
+	AI_Output(hero, self, "Info_Mod_Erika_Kissen_15_02"); //No, for sleeping. Put your head on it. Lying softly....
+	AI_Output(self, hero, "Info_Mod_Erika_Kissen_16_03"); //I could think of a fur roller.
+	AI_Output(hero, self, "Info_Mod_Erika_Kissen_15_04"); //I can't do that. It's not soft enough and stinks.
+	AI_Output(self, hero, "Info_Mod_Erika_Kissen_16_05"); //Then I can't help you either.
+	AI_Output(self, hero, "Info_Mod_Erika_Kissen_16_06"); //Maybe Daniel in the next room. He deals in magical things. Or Morpheus over there. An eerie man...
+	AI_Output(hero, self, "Info_Mod_Erika_Kissen_15_07"); //Thanks anyway.
 };
 
 INSTANCE Info_Mod_Erika_Kimon (C_INFO)
@@ -201,7 +201,7 @@ INSTANCE Info_Mod_Erika_Kimon (C_INFO)
 	information	= Info_Mod_Erika_Kimon_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Gute Frau, kannst du mir Freude spenden?";
+	description 	= "Good woman, can you give me joy?";
 };                       
 
 FUNC INT Info_Mod_Erika_Kimon_Condition()
@@ -216,10 +216,10 @@ FUNC INT Info_Mod_Erika_Kimon_Condition()
 
 FUNC VOID Info_Mod_Erika_Kimon_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Kimon_15_00"); //Gute Frau, kannst du mir Freude spenden?
-	AI_Output(self, hero, "Info_Mod_Erika_Kimon_16_01"); //Mach dich fort, du Schwein! Ich bin eine ehrbare Frau.
-	AI_Output(hero, self, "Info_Mod_Erika_Kimon_15_02"); //Da habe ich mich wohl falsch ausgedrückt. Ich suche Freudenspender.
-	AI_Output(self, hero, "Info_Mod_Erika_Kimon_16_03"); //Nicht bei mir, du Lümmel.
+	AI_Output(hero, self, "Info_Mod_Erika_Kimon_15_00"); //Good woman, can you give me joy?
+	AI_Output(self, hero, "Info_Mod_Erika_Kimon_16_01"); //Get out of here, you bastard! I'm an honest woman.
+	AI_Output(hero, self, "Info_Mod_Erika_Kimon_15_02"); //I must have said it wrong. I'm looking for gourmets.
+	AI_Output(self, hero, "Info_Mod_Erika_Kimon_16_03"); //Not with me, you punk.
 };
 
 INSTANCE Info_Mod_Erika_WendelS (C_INFO)
@@ -242,10 +242,10 @@ FUNC INT Info_Mod_Erika_WendelS_Condition()
 
 FUNC VOID Info_Mod_Erika_WendelS_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Erika_WendelS_16_00"); //Seit Wendel Stadthalter ist, hat er zahlreiche unnütze Vorschriften und Regelungen außer Kraft gesetzt, sodass wir Händler jetzt noch mehr verdienen.
-	AI_Output(self, hero, "Info_Mod_Erika_WendelS_16_01"); //Ich habe gehört, du warst derjenige, der Wendel in sein Amt befördert hat?
-	AI_Output(hero, self, "Info_Mod_Erika_WendelS_15_02"); //So kann man es schon sagen.
-	AI_Output(self, hero, "Info_Mod_Erika_WendelS_16_03"); //Dann muss ich dir für deine Entscheidung danken. Ich habe hier einen besonders knackigen und süßen Apfel, den möchte ich dir schenken.
+	AI_Output(self, hero, "Info_Mod_Erika_WendelS_16_00"); //Since Wendel became a town governor, he has overruled numerous useless rules and regulations, so that we traders now earn even more.
+	AI_Output(self, hero, "Info_Mod_Erika_WendelS_16_01"); //I hear you were the one who promoted Wendel to his post?
+	AI_Output(hero, self, "Info_Mod_Erika_WendelS_15_02"); //That's one way to put it.
+	AI_Output(self, hero, "Info_Mod_Erika_WendelS_16_03"); //Then I must thank you for your decision. I have a particularly crunchy and sweet apple here, I would like to give it to you.
 
 	B_GiveInvItems	(self, hero, ItFo_AppleErika, 1);
 };
@@ -258,7 +258,7 @@ INSTANCE Info_Mod_Erika_Freudenspender (C_INFO)
 	information	= Info_Mod_Erika_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Kannst du Freudenspender gebrauchen?";
+	description 	= "Can you use glee dispensers?";
 };                       
 
 FUNC INT Info_Mod_Erika_Freudenspender_Condition()
@@ -273,8 +273,8 @@ FUNC INT Info_Mod_Erika_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Erika_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erika_Freudenspender_15_00"); //Kannst du Freudenspender gebrauchen?
-	AI_Output(self, hero, "Info_Mod_Erika_Freudenspender_16_01"); //Führe mich nicht in Versuchung! Nein, ich darf nicht!
+	AI_Output(hero, self, "Info_Mod_Erika_Freudenspender_15_00"); //Can you use glee dispensers?
+	AI_Output(self, hero, "Info_Mod_Erika_Freudenspender_16_01"); //Don't tempt me! No, I'm not allowed!
 };
 
 INSTANCE Info_Mod_Erika_Trade (C_INFO)

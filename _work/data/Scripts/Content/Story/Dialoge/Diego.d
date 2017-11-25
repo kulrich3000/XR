@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Diego_Hi_Condition()
 
 FUNC VOID Info_Mod_Diego_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_Hi_11_00"); //Du lebst ja noch.
-	AI_Output(hero, self, "Info_Mod_Diego_Hi_15_01"); //Mit einer kurzen Unterbrechung, ja.
-	AI_Output(self, hero, "Info_Mod_Diego_Hi_11_02"); //Verdammt, die erste gute Nachricht seit Tagen. Wir hatten dich schon abgeschrieben.
-	AI_Output(hero, self, "Info_Mod_Diego_Hi_15_03"); //Doch hier stehe ich.
-	AI_Output(self, hero, "Info_Mod_Diego_Hi_11_04"); //Irgendwann musst du mir erzählen, was du da im Schläfertempel getrieben hast.
-	AI_Output(self, hero, "Info_Mod_Diego_Hi_11_05"); //Aber du weißt sicher auch noch nicht alles, was seitdem geschehen ist.
+	AI_Output(self, hero, "Info_Mod_Diego_Hi_11_00"); //You're still alive.
+	AI_Output(hero, self, "Info_Mod_Diego_Hi_15_01"); //With a short break, yes.
+	AI_Output(self, hero, "Info_Mod_Diego_Hi_11_02"); //Damn, first good news in days. We had already written you off.
+	AI_Output(hero, self, "Info_Mod_Diego_Hi_15_03"); //But here I stand.
+	AI_Output(self, hero, "Info_Mod_Diego_Hi_11_04"); //Sooner or later you'll have to tell me what you were doing at the sleeper temple.
+	AI_Output(self, hero, "Info_Mod_Diego_Hi_11_05"); //But I'm sure you don't know everything that's happened since then.
 };
 
 INSTANCE Info_Mod_Diego_WasFuerWelt (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Diego_WasFuerWelt (C_INFO)
 	information	= Info_Mod_Diego_WasFuerWelt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In was für einer Welt sind wir hier eigentlich gelandet?";
+	description	= "What kind of world did we end up in?";
 };
 
 FUNC INT Info_Mod_Diego_WasFuerWelt_Condition()
@@ -44,48 +44,48 @@ FUNC INT Info_Mod_Diego_WasFuerWelt_Condition()
 
 FUNC VOID Info_Mod_Diego_WasFuerWelt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_00"); //In was für einer Welt sind wir hier eigentlich gelandet?
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_01"); //In einer komplizierten. So weit ich es mitbekomme, neigt sich die idyllische Zeit der Insel dem Ende zu.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_02"); //Die Paladine versuchen verzweifelt, eine Lösung zu finden, wie sie uns, die Sträflinge, unschädlich machen können.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_03"); //Einige unter ihnen bevorzugen ziemlich rabiate Lösungen.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_04"); //Wir haben Glück, dass Lord Hagen so wankelmütig ist - andernfalls würden sie wohl zielgerichteter gegen uns vorgehen.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_05"); //Viele Koloniebewohner trauen sich wegen der Miliz nicht in die Stadt.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_06"); //Sie sammeln sich in Gruppen außerhalb, so zum Beispiel auf dem Hof des Bauern Onar.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_07"); //Ich bezweifle, dass das auf Dauer gut geht. Milizionäre und Paladine fühlen sich eingekreist, und dann ... ja, dann tut jemand etwas im falschen Moment, und mit dem Frieden ist es vorbei.
-	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_08"); //Auf welcher Seite würdest du stehen?
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_09"); //Ha! Als ob ich mich in die Kriegsspiele dieser Dummköpfe einmischen würde!
-	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_10"); //Die Rolle des Beobachters gefällt dir wohl.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_11"); //Man erfährt so einiges. In jüngster Zeit wurde an mehreren Orten eine vermummte Gestalt gesehen, die die Bauern in Panik versetzt.
-	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_12"); //Ich habe sie vor Xardas' Turm gesehen.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_13"); //Xardas?! Sag bloß, der Kerl hat immer noch seine Finger im Spiel!
-	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_14"); //Auch er spricht von einer neuen Bedrohung.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_15"); //(murmelt) Hätte mich auch gewundert, wenn es mit Xardas jemals langweilig werden würde ... (laut) Was hast du jetzt als nächstes vor?
+	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_00"); //What kind of world did we end up in?
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_01"); //In a complicated one. As far as I can see, the idyllic time of the island is coming to an end.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_02"); //The Paladins are desperately trying to find a solution to make us, the convicts, harmless.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_03"); //Some of them prefer rather rough solutions.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_04"); //We are fortunate that Lord Hagen is so fickle - otherwise they would probably act more purposefully against us.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_05"); //Many colonists don't dare to go into town because of the militia.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_06"); //They gather in groups outside, for example on the farm of the farmer Onar.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_07"); //I doubt that this will work in the long run. Militia and paladins feel encircled, and then... then someone's doing something at the wrong moment, and peace is over.
+	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_08"); //Which side would you be on?
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_09"); //Ha! Like I'd get involved in those fools' war games!
+	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_10"); //I suppose you like the role of the Observer.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_11"); //You get to know a lot of things. Recently, a masked figure has been seen in several places, panicking the peasants.
+	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_12"); //I saw them outside Xardas's tower.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_13"); //Xardas?! Don't tell me this guy's still got his fingers in the pie!
+	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_15_14"); //He too speaks of a new threat.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_11_15"); //(mumbles) I would have been surprised if it ever got boring with Xardas... What are you going to do next?
 
 	Info_ClearChoices	(Info_Mod_Diego_WasFuerWelt);
 
-	Info_AddChoice	(Info_Mod_Diego_WasFuerWelt, "Ich lasse mich einfach treiben.", Info_Mod_Diego_WasFuerWelt_B);
-	Info_AddChoice	(Info_Mod_Diego_WasFuerWelt, "Ich mache mich als Erstes mit den Gruppierungen vertraut.", Info_Mod_Diego_WasFuerWelt_A);
+	Info_AddChoice	(Info_Mod_Diego_WasFuerWelt, "I just let myself drift.", Info_Mod_Diego_WasFuerWelt_B);
+	Info_AddChoice	(Info_Mod_Diego_WasFuerWelt, "The first thing I do is familiarize myself with the groups.", Info_Mod_Diego_WasFuerWelt_A);
 };
 
 FUNC VOID Info_Mod_Diego_WasFuerWelt_C()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_C_11_00"); //Ich kann dir etwas über den Ring des Wassers erzählen, wenn du möchtest.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_C_11_00"); //I can tell you about the Ring of Water, if you want.
 
 	Info_ClearChoices	(Info_Mod_Diego_WasFuerWelt);
 };
 
 FUNC VOID Info_Mod_Diego_WasFuerWelt_B()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_B_15_00"); //Ich lasse mich einfach treiben.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_B_11_01"); //Du hast es dir zwar eigentlich verdient, aber Müßiggang können wir uns jetzt nicht mehr erlauben.
+	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_B_15_00"); //I just let myself drift.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_B_11_01"); //You've actually earned it, but we can't afford to indulge in idleness now.
 
 	Info_Mod_Diego_WasFuerWelt_C();
 };
 
 FUNC VOID Info_Mod_Diego_WasFuerWelt_A()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_A_15_00"); //Ich mache mich als Erstes mit den Gruppierungen vertraut.
-	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_A_11_01"); //Wie in der Kolonie, was?
+	AI_Output(hero, self, "Info_Mod_Diego_WasFuerWelt_A_15_00"); //The first thing I do is familiarize myself with the groups.
+	AI_Output(self, hero, "Info_Mod_Diego_WasFuerWelt_A_11_01"); //Like the colony, huh?
 
 	Info_Mod_Diego_WasFuerWelt_C();
 };
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Diego_WasJetzt (C_INFO)
 	information	= Info_Mod_Diego_WasJetzt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du jetzt?";
+	description	= "What are you doing now?";
 };
 
 FUNC INT Info_Mod_Diego_WasJetzt_Condition()
@@ -111,12 +111,12 @@ FUNC INT Info_Mod_Diego_WasJetzt_Condition()
 
 FUNC VOID Info_Mod_Diego_WasJetzt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_WasJetzt_15_00"); //Was machst du jetzt?
-	AI_Output(self, hero, "Info_Mod_Diego_WasJetzt_11_01"); //Wenn ich nicht gerade bei den Wassermagiern gebraucht werde, versuche ich, meinem alten Gewerbe nachzugehen.
-	AI_Output(self, hero, "Info_Mod_Diego_WasJetzt_11_02"); //Jeder muss sehen, wo er bleibt.
-	AI_Output(hero, self, "Info_Mod_Diego_WasJetzt_15_03"); //Wo gibt es denn in Khorinis was zu holen?
-	AI_Output(self, hero, "Info_Mod_Diego_WasJetzt_11_04"); //Im oberen Viertel. Aber da ist alles voll mit Paladinen.
-	AI_Output(self, hero, "Info_Mod_Diego_WasJetzt_11_05"); //Hier im Hafenviertel sind die meisten arme Schlucker.
+	AI_Output(hero, self, "Info_Mod_Diego_WasJetzt_15_00"); //What are you doing now?
+	AI_Output(self, hero, "Info_Mod_Diego_WasJetzt_11_01"); //When I'm not needed by the water magicians, I try to pursue my old trade.
+	AI_Output(self, hero, "Info_Mod_Diego_WasJetzt_11_02"); //Everyone has to see where he stays.
+	AI_Output(hero, self, "Info_Mod_Diego_WasJetzt_15_03"); //Where can I get something in Khorinis?
+	AI_Output(self, hero, "Info_Mod_Diego_WasJetzt_11_04"); //Upstairs. But it's full of paladins.
+	AI_Output(self, hero, "Info_Mod_Diego_WasJetzt_11_05"); //Here in the harbour district, most of them are poor people.
 };
 
 INSTANCE Info_Mod_Diego_RingDesWassers (C_INFO)
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Diego_RingDesWassers (C_INFO)
 	information	= Info_Mod_Diego_RingDesWassers_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hat es mit dem Ring des Wassers auf sich?";
+	description	= "What's the deal with the ring of water?";
 };
 
 FUNC INT Info_Mod_Diego_RingDesWassers_Condition()
@@ -140,13 +140,13 @@ FUNC INT Info_Mod_Diego_RingDesWassers_Condition()
 
 FUNC VOID Info_Mod_Diego_RingDesWassers_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_RingDesWassers_15_00"); //Was hat es mit dem Ring des Wassers auf sich?
-	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_01"); //Wir sind Augen und Ohren der Wassermagier.
-	AI_Output(hero, self, "Info_Mod_Diego_RingDesWassers_15_02"); //Du lässt dich mit den Wassermagiern ein?
-	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_03"); //Sie sind die Einzigen, die vernünftig bleiben und nicht ihren ideologischen Quatsch vor alles andere stellen.
-	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_04"); //Wir müssen ja deswegen keine guten Freunde sein.
-	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_05"); //Vatras ist unser Ansprechpartner in Khorinis. Wenn du Interesse hast, solltest du dich bei ihm melden.
-	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_06"); //Wir sind da an einer großen Sache dran.
+	AI_Output(hero, self, "Info_Mod_Diego_RingDesWassers_15_00"); //What's the deal with the ring of water?
+	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_01"); //We are the eyes and ears of the Water Magicians.
+	AI_Output(hero, self, "Info_Mod_Diego_RingDesWassers_15_02"); //You're getting involved with the water magicians?
+	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_03"); //They are the only ones who remain reasonable and do not put their ideological nonsense before everything else.
+	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_04"); //We don't have to be good friends for that.
+	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_05"); //Vatras is our contact person in Khorinis. If you're interested, you should contact him.
+	AI_Output(self, hero, "Info_Mod_Diego_RingDesWassers_11_06"); //We're on to a big deal here.
 };
 
 INSTANCE Info_Mod_Diego_Boring (C_INFO)
@@ -173,9 +173,9 @@ FUNC INT Info_Mod_Diego_Boring_Condition()
 
 FUNC VOID Info_Mod_Diego_Boring_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_Boring_11_00"); //Hey, hast du mal 'nen Augenblick Zeit? Für einen kleinen Spaziergang?
-	AI_Output(hero, self, "Info_Mod_Diego_Boring_15_01"); //Um der alten Zeiten willen?
-	AI_Output(self, hero, "Info_Mod_Diego_Boring_11_02"); //Um der alten Zeiten willen, genau.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring_11_00"); //Hey, you got a minute? For a little walk?
+	AI_Output(hero, self, "Info_Mod_Diego_Boring_15_01"); //For old times' sake?
+	AI_Output(self, hero, "Info_Mod_Diego_Boring_11_02"); //For old times' sake, that's right.
 };
 
 INSTANCE Info_Mod_Diego_Boring2 (C_INFO)
@@ -186,7 +186,7 @@ INSTANCE Info_Mod_Diego_Boring2 (C_INFO)
 	information	= Info_Mod_Diego_Boring2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass uns aufbrechen.";
+	description	= "Let's get going.";
 };
 
 FUNC INT Info_Mod_Diego_Boring2_Condition()
@@ -202,8 +202,8 @@ FUNC INT Info_Mod_Diego_Boring2_Condition()
 
 FUNC VOID Info_Mod_Diego_Boring2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Boring2_15_00"); //Lass uns aufbrechen.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring2_11_01"); //Los geht's.
+	AI_Output(hero, self, "Info_Mod_Diego_Boring2_15_00"); //Let's get going.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring2_11_01"); //Here we go. Let's go.
 
 	AI_StopProcessInfos	(self);
 
@@ -231,58 +231,58 @@ FUNC INT Info_Mod_Diego_Boring3_Condition()
 
 FUNC VOID Info_Mod_Diego_Boring3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_00"); //Hör mal - ich weiß nicht, wie lange ich noch in Khorinis bleibe.
-	AI_Output(hero, self, "Info_Mod_Diego_Boring3_15_01"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_02"); //Es gibt hier nichts zu tun für mich. Ich bin nicht für eine geregelte Arbeit geschaffen.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_03"); //Aber im Hafenviertel ist nichts zu holen, und weiter oben hab ich die Stadtwache am Hals.
-	AI_Output(hero, self, "Info_Mod_Diego_Boring3_15_04"); //Wir Sträflinge sind eben nicht gern gesehen.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_05"); //Du sagst es! Manchmal glaube ich, dass die Zeit in der Barriere doch gar nicht so schlecht war.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_06"); //In gewisser Hinsicht waren wir freier, als wir es jetzt sind.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_07"); //(seufzt) Mann, die paar Schweine im Alten Lager wie die Erzbarone waren mir immer noch lieber als diese verdammten Paladine, die dich am liebsten aufknüpfen würden, sobald du die Nase hochziehst.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_08"); //Was meinst du - war es damals vielleicht sogar besser als heutzutage hier?
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_00"); //Listen - I don't know how much longer I'm staying in Khorinis.
+	AI_Output(hero, self, "Info_Mod_Diego_Boring3_15_01"); //What's going on?
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_02"); //There's nothing for me to do here. I'm not cut out for regular work.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_03"); //But there's nothing to pick up in the docks, and I've got the city guard upstairs.
+	AI_Output(hero, self, "Info_Mod_Diego_Boring3_15_04"); //We convicts are just not very welcome.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_05"); //You said it! Sometimes I think the time in the barrier wasn't so bad after all.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_06"); //In some ways, we were freer than we are now.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_07"); //(sighing) Man, I still preferred the few pigs in the Old Camp like the ore barons to those damned paladins who would have liked to hang you up as soon as you raised your nose.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_11_08"); //What do you think - was it even better then than it is now?
 
 	Info_ClearChoices	(Info_Mod_Diego_Boring3);
 
-	Info_AddChoice	(Info_Mod_Diego_Boring3, "Man merkt, wie du die Vergangenheit verklärst.", Info_Mod_Diego_Boring3_B);
-	Info_AddChoice	(Info_Mod_Diego_Boring3, "Ja, ich finde schon.", Info_Mod_Diego_Boring3_A);
+	Info_AddChoice	(Info_Mod_Diego_Boring3, "You can tell you're transfiguring the past.", Info_Mod_Diego_Boring3_B);
+	Info_AddChoice	(Info_Mod_Diego_Boring3, "Yeah, I think so.", Info_Mod_Diego_Boring3_A);
 };
 
 FUNC VOID Info_Mod_Diego_Boring3_C()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Boring3_C_15_00"); //Warum kehrst du nicht zurück ins Alte Lager?
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_01"); //Es ist nicht mehr so wie früher.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_02"); //Die Jungs dort müssen jetzt auch hart für ihr täglich Brot schuften, den ganzen Tag auf der faulen Haut liegen ist nicht mehr drin.
-	AI_Output(hero, self, "Info_Mod_Diego_Boring3_C_15_03"); //Wohin willst du dann?
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_04"); //Auf Khorinis kann ich's vergessen.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_05"); //Bis auf die Stadt gibt es nur kleine Gemeinschaften, da würde es auffallen, wenn ich mich austoben würde.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_06"); //Nein, ich will weg von hier. Wie sieht's aus, kommst du mit?
+	AI_Output(hero, self, "Info_Mod_Diego_Boring3_C_15_00"); //Why don't you go back to the old camp?
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_01"); //It's not like it used to be.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_02"); //The boys there now have to work hard for their daily bread, lying on the lazy skin all day long is no longer possible.
+	AI_Output(hero, self, "Info_Mod_Diego_Boring3_C_15_03"); //Then where are you going?
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_04"); //I can forget about it on Khorini's.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_05"); //Except for the city there are only small communities where it would be noticeable if I let off steam.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_C_11_06"); //No, I want to get out of here. How about you coming with me?
 
 	Info_ClearChoices	(Info_Mod_Diego_Boring3);
 
-	Info_AddChoice	(Info_Mod_Diego_Boring3, "Nein, meine Zukunft liegt auf Khorinis.", Info_Mod_Diego_Boring3_E);
-	Info_AddChoice	(Info_Mod_Diego_Boring3, "Ohne zu zögern, sobald ich hier fertig bin.", Info_Mod_Diego_Boring3_D);
+	Info_AddChoice	(Info_Mod_Diego_Boring3, "No, my future is on Khorini's.", Info_Mod_Diego_Boring3_E);
+	Info_AddChoice	(Info_Mod_Diego_Boring3, "Without hesitation, as soon as I'm done here.", Info_Mod_Diego_Boring3_D);
 };
 
 FUNC VOID Info_Mod_Diego_Boring3_B()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Boring3_B_15_00"); //Man merkt, wie du die Vergangenheit verklärst.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_B_11_01"); //Ich versteh schon, für dich war es immer schwerer.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_B_11_02"); //Von den schönen Seiten hast du wenig mitgekriegt, warst ja permanent auf Achse und hast dich mit den Leitwölfen angelegt. (lacht)
+	AI_Output(hero, self, "Info_Mod_Diego_Boring3_B_15_00"); //You can tell you're transfiguring the past.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_B_11_01"); //I see, it's always been harder for you.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_B_11_02"); //You didn't notice much of the beautiful sides, because you were always on the road and got stuck with the Guidewolves. (laughs)
 
 	Info_Mod_Diego_Boring3_C();
 };
 
 FUNC VOID Info_Mod_Diego_Boring3_A()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Boring3_A_15_00"); //Ja, ich finde schon.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_A_11_01"); //Schade, dass es vorbei ist. Meine Fingerfertigkeit wurde nicht oft in meinem Leben bewundert.
+	AI_Output(hero, self, "Info_Mod_Diego_Boring3_A_15_00"); //Yeah, I think so.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_A_11_01"); //Too bad it's over. My dexterity was not often admired in my life.
 
 	Info_Mod_Diego_Boring3_C();
 };
 
 FUNC VOID Info_Mod_Diego_Boring3_F()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Boring3_F_15_00"); //Bis dann.
+	AI_Output(hero, self, "Info_Mod_Diego_Boring3_F_15_00"); //See you around.
 
 	Info_ClearChoices	(Info_Mod_Diego_Boring3);
 
@@ -294,18 +294,18 @@ FUNC VOID Info_Mod_Diego_Boring3_F()
 
 FUNC VOID Info_Mod_Diego_Boring3_E()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Boring3_E_15_00"); //Nein, meine Zukunft liegt auf Khorinis.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_E_11_01"); //Ich habe fast vermutet, dass du das sagst.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_E_11_02"); //Aber weißt du: Ich glaube nicht, dass du nach Khorinis gehörst.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_E_11_03"); //Überleg's dir noch mal, ich breche ja nicht sofort auf.
+	AI_Output(hero, self, "Info_Mod_Diego_Boring3_E_15_00"); //No, my future is on Khorini's.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_E_11_01"); //I almost suspected you were saying that.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_E_11_02"); //But you know, I don't think you belong in Khorinis.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_E_11_03"); //Think again, I'm not leaving right now.
 
 	Info_Mod_Diego_Boring3_F();
 };
 
 FUNC VOID Info_Mod_Diego_Boring3_D()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Boring3_D_15_00"); //Ohne zu zögern, sobald ich hier fertig bin.
-	AI_Output(self, hero, "Info_Mod_Diego_Boring3_D_11_01"); //Wenn es soweit ist, sag mir Bescheid. Du weißt ja, wo ich bin.
+	AI_Output(hero, self, "Info_Mod_Diego_Boring3_D_15_00"); //Without hesitation, as soon as I'm done here.
+	AI_Output(self, hero, "Info_Mod_Diego_Boring3_D_11_01"); //When the time comes, let me know. You know where I am.
 
 	Info_Mod_Diego_Boring3_F();
 };
@@ -331,17 +331,17 @@ FUNC INT Info_Mod_Diego_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Diego_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_00"); //Wieder auf der Jagd nach Monstern und Orks.
-	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch_15_01"); //Ja, das übliche ... im Moment aber eher auf der Jagd nach Informationen.
-	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch_15_02"); //Vielleicht kannst du mir ja erzählen, ob du etwas gehört hast, da du schon den Tag in der Kneipe verbringst.
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_03"); //Naja, es ist eben wenig los am Hafen, nicht viel, was ich im Auge behalten müsste.
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_04"); //Dafür soll  bei den Stadttoren allerlei vorgefallen sein. Habe nur Vages gehört.
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_05"); //Ziemlich viele Leute gehen Zurzeit aus und ein - vor allem beim Osttor - und andere wollen dunkle Erscheinungen gesichtet haben.
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_06"); //Du solltest dich am besten Vorort umschauen, wenn du mehr erfahren willst.
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_07"); //Achja, und in der Taverne ’Zur fröhlichen Mastsau’ tummeln sich ebenfalls viele Leute Zurzeit.
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_08"); //(lacht) Coragon wird wohl bald Engpässe befürchten müssen, wenn die Leute weiterhin so viel verschlingen.
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_00"); //Again on the hunt for monsters and orcs.
+	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch_15_01"); //Yeah, the usual... but at the moment it's more of a hunt for information.
+	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch_15_02"); //Maybe you can tell me if you heard anything since you've been spending the day in a pub.
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_03"); //Well, there's not much going on at the harbour, not much to keep an eye on.
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_04"); //It's said to have happened at the city gates. I only heard Vages.
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_05"); //Quite a lot of people are going out and in at the moment - especially at the East Gate - and others want to have seen dark phenomena.
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_06"); //If you want to know more, you should take a look around the suburb.
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_07"); //Oh yes, and in the tavern' Zur fröhlichen Mastsau' there are also a lot of people at the moment.
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch_11_08"); //(laughs) Coragon will soon have to fear bottlenecks if people continue to devour so much.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Diego berichtete mir davon, dass vor den Stadttoren viel vor sich geht. Zahlreiche Leute gehen ein und aus und dunkle Erscheinungen sollen gesichtet worden sein. In Coragon’s Taverne treiben sich ebenfalls häufig viele Leute herum und stopfen sich die Wänste voll für drei.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Diego told me that there is a lot going on outside the city gates. Many people go in and out and dark phenomena are said to have been seen. In Coragon's tavern there are also a lot of people hanging around and stuffing themselves for three.");
 };
 
 INSTANCE Info_Mod_Diego_Daemonisch2 (C_INFO)
@@ -365,14 +365,14 @@ FUNC INT Info_Mod_Diego_Daemonisch2_Condition()
 
 FUNC VOID Info_Mod_Diego_Daemonisch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch2_11_00"); //Alles in Ordnung?
-	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch2_15_01"); //Ja, denke schon ... war nur ein harmloser Schlafzauber.
-	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch2_15_02"); //Konntest du sehen, wohin er gelaufen ist?
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch2_11_03"); //Er war verdammt schnell, aber ich glaubte noch erkennen zu können, wie er zum Südtor lief.
-	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch2_15_04"); //Dann habe ich keine Zeit zu verlieren. Erklärungen gibt’s später.
-	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch2_11_05"); //In Ordnung, lass sich nicht aufhalten.
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch2_11_00"); //Are you all right?
+	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch2_15_01"); //Yeah, I think so... was just a harmless sleep spell.
+	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch2_15_02"); //Did you see where he went?
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch2_11_03"); //He was fast as hell, but I thought I could see him running to the south gate.
+	AI_Output(hero, self, "Info_Mod_Diego_Daemonisch2_15_04"); //Then I have no time to lose. I'll explain later.
+	AI_Output(self, hero, "Info_Mod_Diego_Daemonisch2_11_05"); //All right, don't let me stop you.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Das muss er sein. Zum Südtor, hinterher.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "That must be him. To the south gate, after.");
 
 	AI_StopProcessInfos	(self);
 
@@ -398,7 +398,7 @@ INSTANCE Info_Mod_Diego_Irdorath (C_INFO)
 	information	= Info_Mod_Diego_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss mit einem Schiff zu einer nicht ungefährlichen Insel aufbrechen (...)";
+	description	= "I have to take a ship to a harmless island (.... )";
 };
 
 FUNC INT Info_Mod_Diego_Irdorath_Condition()
@@ -413,29 +413,29 @@ FUNC INT Info_Mod_Diego_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Diego_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_00"); //Ich muss mit einem Schiff zu einer nicht ungefährlichen Insel aufbrechen und Suche nach einer geeigneten Mannschaft.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_01"); //Aha, nun führt dich der Kampf gegen Xeres also mit dem Schiff von der Insel ...
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_02"); //Nun, ich denke Vatras wäre nicht abgeneigt, dich zu begleiten ... er hat ja durchaus wahrgenommen, welcher Gefahr sich die Stadt durch Xeres und seinen Schergen ausgesetzt sah.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_03"); //Und wenn es um die Unterstützung durch kampferprobte Wasserkrieger geht, so solltest du dich an den Hüter Ethan wenden ...
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_04"); //Achja, zu allererst solltest du natürlich einen Kapitän finden. Hast du schon einen?
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_05"); //Ähh, nein.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_06"); //Nun, ohne Kapitän läuft natürlich nichts.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_07"); //Unter seinem Kommando muss das Schiff die Insel heil erreichen und er wird einiges mitbestimmen, auch, was die Zusammensetzung der Mannschaft betrifft ...
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_08"); //Ja, ok. Kannst du mir denn  fähige Kapitäne empfehlen?
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_09"); //Tja, viele gibt es nicht.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_10"); //Als erstes wäre da Paladin Cedric. Er hat das Schiff sicher in den Hafen von Khorinis geführt.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_11"); //Zweifelsfrei ein fähiger Kapitän ... allerdings wird er es sich bestimmt nicht nehmen lassen einige Auflagen zu machen, wer mitgenommen wird und wer nicht.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_12"); //Ich glaube zur Zeit trainiert er neben dem Rathaus im oberen Viertel.
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_13"); //Hmm, ok, wen gibt es noch?
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_14"); //Ich habe davon gehört, dass Jack vor nicht allzu ferner Zeit einmal Kapitän  gewesen ist.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_15"); //Auch, wenn er nicht mehr der jüngste ist, so hat er doch unheimlich viel Erfahrung in der Schifffahrt.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_16"); //Er wird bestimmt teilweise sehr pragmatische Entscheidungen treffen, dir aber auch ansonsten freie Hand lassen, wen du mit an Bord nimmst.
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_17"); //Ok, gut und wen gibt es noch?
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_18"); //Tja, das waren dann auch schon alle, die mir bekannt sind.
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_19"); //Was?! Wirklich keine große Auswahl ...
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_20"); //Du kommst ja viel herum. Vielleicht begegnest du ja noch jemanden irgendwo auf Khorinis, der geeignet ist, dass Kapitänsamt zu bekleiden. Viel Glück.
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_00"); //I have to take a ship to a harmless island and search for a suitable crew.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_01"); //Aha, now the fight against Xeres leads you with the ship from the island...
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_02"); //Well, I don't think Vatras would be reluctant to go with you... he was well aware of the danger Xeres and his henchmen posed to the city.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_03"); //And when it comes to support from battle-tested water warriors, you should contact the Keeper Ethan...
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_04"); //Well, first of all, of course, you should find a captain. Have you got one yet?
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_05"); //Uh, no.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_06"); //Well, there's nothing going on without a captain, of course.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_07"); //Under his command, the ship must reach the island unharmed and he will have a lot of influence, also with regard to the composition of the crew....
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_08"); //Yeah, okay. Can you recommend capable captains to me?
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_09"); //Well, there's not many.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_10"); //First there's Paladin Cedric. He led the ship safely to the port of Khorinis.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_11"); //Without doubt a capable captain.... but he will certainly not take it from himself to make some conditions, who is taken along and who not.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_12"); //I think he's training next to the town hall upstairs.
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_13"); //Hmm, okay, who else is there?
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_14"); //I've heard that Jack was once a captain not too long ago.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_15"); //Even though he is no longer the youngest, he has a tremendous amount of experience in shipping.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_16"); //He will certainly make some very pragmatic decisions, but he will also leave you free to decide who you take on board.
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_17"); //Okay, well, who else is there?
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_18"); //Well, that's all I've ever heard of.
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath_15_19"); //What?! Really not a big choice....
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath_11_20"); //You get around a lot. Maybe you will meet someone else somewhere on Khorinis, who is suitable to hold captain's office. Good luck to you.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Diego hat mir als weitere mögliche Kandidaten Vatras und den Hüter Ethan genannt. Als Kapitäne kommen in der Stadt nur Jack oder der Paladin Cedric in Frage, falls ich nicht noch anderswo auf der Insel jemanden finde.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Diego has named Vatras and the Keeper Ethan as further possible candidates. Only Jack or the Paladin Cedric are considered captains in town, unless I find someone else on the island.");
 };
 
 INSTANCE Info_Mod_Diego_Irdorath2 (C_INFO)
@@ -446,7 +446,7 @@ INSTANCE Info_Mod_Diego_Irdorath2 (C_INFO)
 	information	= Info_Mod_Diego_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und wie ist es mit dir? Würdest du meiner Mannschaft beitreten?";
+	description	= "And how about you? Would you join my team?";
 };
 
 FUNC INT Info_Mod_Diego_Irdorath2_Condition()
@@ -460,11 +460,11 @@ FUNC INT Info_Mod_Diego_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Diego_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath2_15_00"); //Und wie ist es mit dir? Würdest du meiner Mannschaft beitreten?
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath2_11_01"); //Natürlich, ich habe nur darauf gewartet, dass du fragst.
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath2_15_02"); //Freut mich. Dann willkommen an Bord. Wir sehen uns dann beim Schiff.
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath2_15_00"); //And how about you? Would you join my team?
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath2_11_01"); //Of course, I was just waiting for you to ask.
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath2_15_02"); //Nice to meet you. Then welcome aboard. I'll see you back at the ship.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Sehr gut, Diego ist schon mal mit dabei.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Very good, Diego's already on board.");
 
 	B_GivePlayerXP	(150);
 
@@ -485,7 +485,7 @@ INSTANCE Info_Mod_Diego_Irdorath3 (C_INFO)
 	information	= Info_Mod_Diego_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "I'm sorry, but it seems we're too many.";
 };
 
 FUNC INT Info_Mod_Diego_Irdorath3_Condition()
@@ -502,8 +502,8 @@ FUNC INT Info_Mod_Diego_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Diego_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath3_11_01"); //Schade. Ich gehe dann wieder zurück. Du weißt wo du mich findest, wenn doch noch ein Platz frei werden sollte.
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath3_15_00"); //I'm sorry, but it seems we're too many. I can't take you with me.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath3_11_01"); //Too bad. I'll go back then. You know where to find me if there's ever gonna be a seat left.
 
 	Mod_DiegoDabei = 0;
 
@@ -522,7 +522,7 @@ INSTANCE Info_Mod_Diego_Irdorath4 (C_INFO)
 	information	= Info_Mod_Diego_Irdorath4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kann dich doch mitnehmen.";
+	description	= "I can give you a ride.";
 };
 
 FUNC INT Info_Mod_Diego_Irdorath4_Condition()
@@ -537,8 +537,8 @@ FUNC INT Info_Mod_Diego_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Diego_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Irdorath4_15_00"); //Ich kann dich doch mitnehmen. Es hat sich noch ein Platz auf dem Schiff gefunden.
-	AI_Output(self, hero, "Info_Mod_Diego_Irdorath4_11_01"); //Sehr gut, ich bin dann wieder am Hafen.
+	AI_Output(hero, self, "Info_Mod_Diego_Irdorath4_15_00"); //I can give you a ride. There's room on the ship.
+	AI_Output(self, hero, "Info_Mod_Diego_Irdorath4_11_01"); //Very well, I'll be back at the harbour.
 
 	Mod_DiegoDabei = 1;
 
@@ -587,40 +587,40 @@ FUNC VOID Info_Mod_Diego_Kap6_Info()
 
 	TRIA_Next(Diego);
 
-	AI_Output(hero, self, "Info_Mod_Diego_Kap6_15_00"); //(verwundert) Was macht ihr denn hier?
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_11_01"); //Wir haben gehört, dass du den ganzen Spaß für dich willst.
+	AI_Output(hero, self, "Info_Mod_Diego_Kap6_15_00"); //What are you guys doing here?
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_11_01"); //We heard you wanted all the fun for yourself.
 
 	TRIA_Next(Gorn);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_12_02"); //Dabei hab ich doch meine Axt gerade erst frisch geschliffen.
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_12_02"); //But I've only just sharpened my axe.
 
 	TRIA_Next(Milten);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_03_03"); //Xardas hat uns erzählt, was du vorhast.
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_03_03"); //Xardas told us what you're up to.
 
 	TRIA_Next(Lester);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_13_04"); //Und da dachten wir: Wäre doch schlimm, wenn wir dich noch mal allein da reinlassen.
-	AI_Output(hero, self, "Info_Mod_Diego_Kap6_15_05"); //Ihr wisst aber schon, dass es gefährlich wird? Dass wir alle sterben können?
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_13_04"); //And that's when we thought,"It'd be bad if we let you in alone again."
+	AI_Output(hero, self, "Info_Mod_Diego_Kap6_15_05"); //You do realize it's going to be dangerous? That we can all die?
 
 	TRIA_Next(Gorn);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_12_06"); //Wenn du's nicht schaffst, gehen wir eh früher oder später drauf.
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_12_06"); //If you don't make it, we'll die sooner or later.
 
 	TRIA_Next(Lester);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_13_07"); //Wir sind zu fünft. Wer könnte uns aufhalten?
-	AI_Output(hero, self, "Info_Mod_Diego_Kap6_15_08"); //Na schön. Freut mich, dass ihr dabei seid.
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_13_07"); //There are five of us. Who could stop us?
+	AI_Output(hero, self, "Info_Mod_Diego_Kap6_15_08"); //All right, then. Glad you could make it.
 
 	TRIA_Next(Diego);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_11_09"); //Du hättest uns eh nicht mehr umgestimmt. Darin warst du noch nie gut.
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_11_09"); //You wouldn't have changed our mind anyway. You've never been good at that before.
 
 	TRIA_Next(Milten);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_03_10"); //Ich glaube, Xardas wollte dich noch sprechen, bevor wir uns auf den Weg machen. Du musst dir noch deine Rune abholen.
-	AI_Output(hero, self, "Info_Mod_Diego_Kap6_15_11"); //Meine Rune?
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_03_12"); //Na, mach schon.
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_03_10"); //I think Xardas wanted to see you before we left. You still have to pick up your rune.
+	AI_Output(hero, self, "Info_Mod_Diego_Kap6_15_11"); //My rune?
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_03_12"); //Come on, let's go.
 
 	TRIA_Finish();
 
@@ -647,8 +647,8 @@ FUNC INT Info_Mod_Diego_Kap6_2_Condition()
 
 FUNC VOID Info_Mod_Diego_Kap6_2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_Kap6_2_11_00"); //Los jetzt! Uns wird schon langweilig.
-	AI_Output(hero, self, "Info_Mod_Diego_Kap6_2_15_01"); //Lass uns starten.
+	AI_Output(self, hero, "Info_Mod_Diego_Kap6_2_11_00"); //Let's go now! We're getting bored.
+	AI_Output(hero, self, "Info_Mod_Diego_Kap6_2_15_01"); //Let's get started.
 
 	AI_StopProcessInfos	(self);
 };
@@ -661,7 +661,7 @@ INSTANCE Info_Mod_Diego_PlateauAngriff (C_INFO)
 	information	= Info_Mod_Diego_PlateauAngriff_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wir planen einen Vorstoß gegen die Ungetüme auf dem Weidenplateau (...)";
+	description	= "We are planning an advance against the monsters on the pasture plateau (... )";
 };
 
 FUNC INT Info_Mod_Diego_PlateauAngriff_Condition()
@@ -677,9 +677,9 @@ FUNC INT Info_Mod_Diego_PlateauAngriff_Condition()
 
 FUNC VOID Info_Mod_Diego_PlateauAngriff_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_PlateauAngriff_15_00"); //Wir planen einen Vorstoß gegen die Ungetüme auf dem Weidenplateau und könnten noch ein wenig Unterstützung brauchen.
-	AI_Output(self, hero, "Info_Mod_Diego_PlateauAngriff_11_01"); //Ungetüme?! Ganz wie in alten Zeiten. Du erinnerst dich doch noch an den Troll ...? Es wäre mir eine Freude mal wieder an deiner Seite zu kämpfen.
-	AI_Output(hero, self, "Info_Mod_Diego_PlateauAngriff_15_02"); //Sehr gut. Wir treffen uns dann bei Orlans Taverne.
+	AI_Output(hero, self, "Info_Mod_Diego_PlateauAngriff_15_00"); //We are planning a push against the monsters on the pasture plateau and could need some more support.
+	AI_Output(self, hero, "Info_Mod_Diego_PlateauAngriff_11_01"); //Monsters?! Just like old times. You remember the troll, don't you? It would be a pleasure to fight at your side again.
+	AI_Output(hero, self, "Info_Mod_Diego_PlateauAngriff_15_02"); //Very good. Very good. I'll meet you at Orlan's tavern.
 
 	AI_StopProcessInfos	(self);
 
@@ -707,7 +707,7 @@ FUNC INT Info_Mod_Diego_BalrogGigantTot_Condition()
 
 FUNC VOID Info_Mod_Diego_BalrogGigantTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_BalrogGigantTot_11_00"); //Ja, ganz genau wie in alten Zeiten ... nur mit mehr Monstern und Mitstreitern. Wenn du mal wieder so was vorhast, weißt du ja, wo ich zu finden bin.
+	AI_Output(self, hero, "Info_Mod_Diego_BalrogGigantTot_11_00"); //Yeah, just like old times... only with more monsters and comrades-in-arms. If you're gonna do this again, you know where to find me.
 
 	AI_StopProcessInfos	(self);
 
@@ -724,7 +724,7 @@ INSTANCE Info_Mod_Diego_Treffen (C_INFO)
 	information	= Info_Mod_Diego_Treffen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gorn schickt mich.";
+	description	= "Gorn sent me.";
 };
 
 FUNC INT Info_Mod_Diego_Treffen_Condition()
@@ -742,10 +742,10 @@ FUNC INT Info_Mod_Diego_Treffen_Condition()
 
 FUNC VOID Info_Mod_Diego_Treffen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Treffen_15_00"); //Gorn schickt mich. Ich soll dir sagen, dass ihr euch in der Taverne 'Zur Toten Harpie'.
-	AI_Output(self, hero, "Info_Mod_Diego_Treffen_11_01"); //Gut, ich mach mich sofort auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Diego_Treffen_15_00"); //Gorn sent me. You want me to tell you that you're going to the Dead Harpie tavern.
+	AI_Output(self, hero, "Info_Mod_Diego_Treffen_11_01"); //All right, I'll be on my way right away.
 
-	B_LogEntry	(TOPIC_MOD_TREFFEN, "Diego macht sich sofort auf den Weg zur Taverne.");
+	B_LogEntry	(TOPIC_MOD_TREFFEN, "Diego immediately sets off for the tavern.");
 
 	AI_StopProcessInfos	(self);
 
@@ -760,7 +760,7 @@ INSTANCE Info_Mod_Diego_Dieb (C_INFO)
 	information	= Info_Mod_Diego_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab gehört du gehörst zur Diebesgilde.";
+	description	= "I heard you belonged to the guild of thieves.";
 };
 
 FUNC INT Info_Mod_Diego_Dieb_Condition()
@@ -775,14 +775,14 @@ FUNC INT Info_Mod_Diego_Dieb_Condition()
 
 FUNC VOID Info_Mod_Diego_Dieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Dieb_15_00"); //Ich hab gehört du gehörst zur Diebesgilde.
-	AI_Output(self, hero, "Info_Mod_Diego_Dieb_11_01"); //Na klar, deswegen haben sie mich ja in die Kolonie geworfen. Aber woher weißt du das?
-	AI_Output(hero, self, "Info_Mod_Diego_Dieb_15_02"); //Einer der Paladine hat mir erzählt, dass einer der Diebe ihren wertvollen Kristall gestohlen hat und ich suche jetzt den Kristall.
-	AI_Output(self, hero, "Info_Mod_Diego_Dieb_11_03"); //Ach der Kristall. Ja, den hab ich den Paladine gestohlen, um sie zu ärgern. Er liegt in der Kanalisaton im alten Zimmer von Fingers.
-	AI_Output(self, hero, "Info_Mod_Diego_Dieb_11_04"); //Hier ist der Schlüssel zum Eingang der Kanalisation. Aber pass auf, die anderen wissen nicht, wer du bist, und könnten dir Ärger machen.
-	AI_Output(self, hero, "Info_Mod_Diego_Dieb_11_05"); //Viel Glück!
+	AI_Output(hero, self, "Info_Mod_Diego_Dieb_15_00"); //I heard you belonged to the guild of thieves.
+	AI_Output(self, hero, "Info_Mod_Diego_Dieb_11_01"); //Of course, that's why they threw me in the colony. But how do you know that?
+	AI_Output(hero, self, "Info_Mod_Diego_Dieb_15_02"); //One of the paladins told me that one of the thieves stole their precious crystal and I am now looking for the crystal.
+	AI_Output(self, hero, "Info_Mod_Diego_Dieb_11_03"); //Oh, the crystal. Yeah, I stole it from the Paladin to spite her. It's in the canalization, in Fingers' old room.
+	AI_Output(self, hero, "Info_Mod_Diego_Dieb_11_04"); //Here's the key to the sewer entrance. But watch out, the others don't know who you are, and they might give you a hard time.
+	AI_Output(self, hero, "Info_Mod_Diego_Dieb_11_05"); //Good luck to you!
 
-	B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Diego hat mir einen Schlüssel zur Kanalisation gegeben, wo der Kristall versteckt sein soll. Dort liegt er im alten Zimmer von Fingers.");
+	B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Diego gave me a key to the sewer where the crystal is supposed to be hidden. There it is in the old room of Fingers.");
 
 	B_GiveInvItems	(self, hero, ItKe_ThiefGuildKey_MIS, 1);
 
@@ -799,7 +799,7 @@ INSTANCE Info_Mod_Diego_Kristall (C_INFO)
 	information	= Info_Mod_Diego_Kristall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir bei der Sache mit dem Kristall helfen?";
+	description	= "Can you help me with this crystal thing?";
 };
 
 FUNC INT Info_Mod_Diego_Kristall_Condition()
@@ -820,12 +820,12 @@ FUNC INT Info_Mod_Diego_Kristall_Condition()
 
 FUNC VOID Info_Mod_Diego_Kristall_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Kristall_15_00"); //Kannst du mir bei der Sache mit dem Kristall helfen?
-	AI_Output(self, hero, "Info_Mod_Diego_Kristall_11_01"); //Ich könnte dir den Kristall holen, allerdings kann ich meinen Posten hier nicht verlassen.
-	AI_Output(self, hero, "Info_Mod_Diego_Kristall_11_02"); //Wenn du mir eine Ablösung besorgst, kann ich gehen.
-	AI_Output(self, hero, "Info_Mod_Diego_Kristall_11_03"); //Und bring noch fünf Dietriche mit.
+	AI_Output(hero, self, "Info_Mod_Diego_Kristall_15_00"); //Can you help me with this crystal thing?
+	AI_Output(self, hero, "Info_Mod_Diego_Kristall_11_01"); //I could get you the crystal, but I can't leave my post here.
+	AI_Output(self, hero, "Info_Mod_Diego_Kristall_11_02"); //If you get me a replacement, I can go.
+	AI_Output(self, hero, "Info_Mod_Diego_Kristall_11_03"); //And bring five more diets.
 
-	B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Damit ich den Kristall nicht selber holen muss, bietet mir Diego seine Hilfe an. Er braucht jedoch fünf Dietriche und eine Ablösung. Ich sollte mal die anderen Mitglieder des Ring des Wassers oder die Wasser Novizen fragen.");
+	B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "So that I don't have to fetch the crystal myself, Diego offers me his help. However, he needs five diets and a replacement. I should ask the other members of the Ring of Water or the Water Novices.");
 };
 
 INSTANCE Info_Mod_Diego_JoeIsRelay (C_INFO)
@@ -836,7 +836,7 @@ INSTANCE Info_Mod_Diego_JoeIsRelay (C_INFO)
 	information	= Info_Mod_Diego_JoeIsRelay_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Joe wird dich ablösen.";
+	description	= "Joe will relieve you.";
 };
 
 FUNC INT Info_Mod_Diego_JoeIsRelay_Condition()
@@ -850,10 +850,10 @@ FUNC INT Info_Mod_Diego_JoeIsRelay_Condition()
 
 FUNC VOID Info_Mod_Diego_JoeIsRelay_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_JoeIsRelay_15_00"); //Joe wird dich ablösen.
-	AI_Output(self, hero, "Info_Mod_Diego_JoeIsRelay_11_01"); //Sehr gut, dann brauche ich nur noch die Dietriche von dir.
+	AI_Output(hero, self, "Info_Mod_Diego_JoeIsRelay_15_00"); //Joe will relieve you.
+	AI_Output(self, hero, "Info_Mod_Diego_JoeIsRelay_11_01"); //Very well, then all I need is the plank from you.
 
-	B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Ich habe Diego informiert, dass Joe in ablösen wird. Jetzt braucht er nur noch die fünf Dietriche.");
+	B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "I've informed Diego that Joe will succeed him. Now all he needs is the five dashes.");
 };
 
 INSTANCE Info_Mod_Diego_Joe (C_INFO)
@@ -864,7 +864,7 @@ INSTANCE Info_Mod_Diego_Joe (C_INFO)
 	information	= Info_Mod_Diego_Joe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es ist alles vorbereitet.";
+	description	= "It's all set up.";
 };
 
 FUNC INT Info_Mod_Diego_Joe_Condition()
@@ -881,13 +881,13 @@ FUNC INT Info_Mod_Diego_Joe_Condition()
 
 FUNC VOID Info_Mod_Diego_Joe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Joe_15_00"); //Es ist alles vorbereitet. Joe übernimmt deinen Posten und hier sind die Dietriche.
+	AI_Output(hero, self, "Info_Mod_Diego_Joe_15_00"); //It's all set up. Joe's taking over your post, and here are the Dietriches.
 
 	B_GiveInvItems	(hero, self, ItKe_Lockpick, 5);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Joe_11_01"); //Sehr gut, ich mach mich sofort auf den Weg. Komm morgen wieder, dann sollte ich fertig sein.
+	AI_Output(self, hero, "Info_Mod_Diego_Joe_11_01"); //Very well, I'll be on my way right away. Come back tomorrow, then I should be done.
 
-	B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Diego ist unterwegs. Morgen kann ich mir den Kristall bei ihm abholen.");
+	B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Diego's on his way. Tomorrow I can pick up the crystal from him.");
 
 	Mod_DiegoHoltKristall = Wld_GetDay();
 
@@ -923,11 +923,11 @@ FUNC VOID Info_Mod_Diego_HierKristall_Info()
 	if (Npc_HasItems(hero, Mod_PaladinKristall) == 0)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Lothar_Kristall))
 	{
-		AI_Output(self, hero, "Info_Mod_Diego_HierKristall_11_00"); //Hier ist der Kristall.
+		AI_Output(self, hero, "Info_Mod_Diego_HierKristall_11_00"); //Here's the crystal.
 
 		B_GiveInvItems	(self, hero, Mod_PaladinKristall, 1);
 
-		B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Ich habe den Kristall. Entweder gehe ich jetzt zu Lothar oder ich bringe ihn zu jemand anderem. Die anderen Gildenanführer wären über diesen wertvollen Kristall sicher sehr erfreut.");
+		B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "I got the crystal. Either I go to Lothar's now, or I take him to someone else. The other guild leaders would be delighted with this precious crystal.");
 		B_SetTopicStatus	(TOPIC_MOD_DIEGO_KRISTALL, LOG_SUCCESS);
 
 		Wld_RemoveItem	(Mod_PaladinKristall);
@@ -936,7 +936,7 @@ FUNC VOID Info_Mod_Diego_HierKristall_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Diego_HierKristall_11_01"); //Der Kristall ist schon weg, da kann ich dir auch nicht helfen.
+		AI_Output(self, hero, "Info_Mod_Diego_HierKristall_11_01"); //The crystal's already gone, I can't help you there either.
 	};
 };
 
@@ -948,7 +948,7 @@ INSTANCE Info_Mod_Diego_Gerbrandt (C_INFO)
 	information	= Info_Mod_Diego_Gerbrandt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe ein Problem.";
+	description	= "I have a problem.";
 };
 
 FUNC INT Info_Mod_Diego_Gerbrandt_Condition()
@@ -962,12 +962,12 @@ FUNC INT Info_Mod_Diego_Gerbrandt_Condition()
 
 FUNC VOID Info_Mod_Diego_Gerbrandt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Gerbrandt_15_00"); //Ich habe ein Problem. Ich muss Gerbrandt nachweisen, dass er für die Verbannung von Morgahard mitverantwortlich ist.
-	AI_Output(self, hero, "Info_Mod_Diego_Gerbrandt_11_01"); //Durchsuche sein Haus, einer seiner Kerzenleuchter ist ein Schalter zum öffnen eines geheimen Winkels im Haus gegenüber.
-	AI_Output(self, hero, "Info_Mod_Diego_Gerbrandt_11_02"); //Dort wirst du Beweise finden. Gib sie aber erst mir, Morgahard ist nicht der Einzige, der wegen Gerbrandt und seiner Bande in der Kolonie war.
-	AI_Output(hero, self, "Info_Mod_Diego_Gerbrandt_15_03"); //Gut, ich werde sie dir besorgen.
+	AI_Output(hero, self, "Info_Mod_Diego_Gerbrandt_15_00"); //I have a problem. I have to prove to Gerbrandt that he is jointly responsible for the banishment of Morgahard.
+	AI_Output(self, hero, "Info_Mod_Diego_Gerbrandt_11_01"); //Search his house, one of his candlesticks is a switch to open a secret corner in the house opposite.
+	AI_Output(self, hero, "Info_Mod_Diego_Gerbrandt_11_02"); //You'll find evidence there. But give it to me first, Morgahard is not the only one who was in the colony because of Gerbrandt and his gang.
+	AI_Output(hero, self, "Info_Mod_Diego_Gerbrandt_15_03"); //All right, I'll get it for you.
 
-	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Diego sagte mir, dass Gerbrandt die Beweise in einer geheimen Nische des gegenüberliegenden Hauses aufbewahrt, die sich durch einen Kerzenhalter in seinem Haus öffnen lässt. Ich soll die Beweise ihm geben, wenn ich sie habe.");
+	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Diego told me that Gerbrandt keeps the evidence in a secret niche of the opposite house, which can be opened by a candle holder in his house. I'm supposed to give him the evidence when I have it.");
 };
 
 INSTANCE Info_Mod_Diego_HabBeweise (C_INFO)
@@ -978,7 +978,7 @@ INSTANCE Info_Mod_Diego_HabBeweise (C_INFO)
 	information	= Info_Mod_Diego_HabBeweise_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab die Beweise.";
+	description	= "I have the evidence.";
 };
 
 FUNC INT Info_Mod_Diego_HabBeweise_Condition()
@@ -992,17 +992,17 @@ FUNC INT Info_Mod_Diego_HabBeweise_Condition()
 
 FUNC VOID Info_Mod_Diego_HabBeweise_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_HabBeweise_15_00"); //Ich die Beweise.
+	AI_Output(hero, self, "Info_Mod_Diego_HabBeweise_15_00"); //I have the evidence.
 
 	B_GiveInvItems	(hero, self, ItWr_AL_GebrandtDokumente, 1);
 
 	B_UseFakeScroll ();
 
-	AI_Output(self, hero, "Info_Mod_Diego_HabBeweise_11_01"); //Sehr gut, zeig Lord Andre diese Beweise. Wir treffen uns danach vor Gerbrandts Haus.
+	AI_Output(self, hero, "Info_Mod_Diego_HabBeweise_11_01"); //Very well, show Lord Andre this evidence. I'll meet you in front of Gerbrandt's house.
 
 	B_GiveInvItems	(self, hero, ItWr_AL_GebrandtDokumente, 1);
 
-	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Diego hat die Beweise gesehen. Ich soll sie Lord Andre geben und ihn dann vor Gerbrandts Haus treffen.");
+	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Diego saw the evidence. I'm supposed to give it to Lord Andre and meet him outside Gerbrandt's house.");
 
 	B_StartOtherRoutine	(self, "GERBRANDT");
 };
@@ -1015,7 +1015,7 @@ INSTANCE Info_Mod_Diego_GerbrandtGefangen (C_INFO)
 	information	= Info_Mod_Diego_GerbrandtGefangen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sie wurden festgenommen.";
+	description	= "You've been arrested.";
 };
 
 FUNC INT Info_Mod_Diego_GerbrandtGefangen_Condition()
@@ -1029,12 +1029,12 @@ FUNC INT Info_Mod_Diego_GerbrandtGefangen_Condition()
 
 FUNC VOID Info_Mod_Diego_GerbrandtGefangen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_GerbrandtGefangen_15_00"); //Sie wurden festgenommen.
-	AI_Output(self, hero, "Info_Mod_Diego_GerbrandtGefangen_11_01"); //Gut, Gerbrandts Haus gehört jetzt mir. Ich habe noch etwas von Gerbrandts Geld gefunden. Ich glaube, du kannst es brauchen.
+	AI_Output(hero, self, "Info_Mod_Diego_GerbrandtGefangen_15_00"); //You've been arrested.
+	AI_Output(self, hero, "Info_Mod_Diego_GerbrandtGefangen_11_01"); //All right, Gerbrandt's house is mine now. I found some of Gerbrandt's money. I think you can use it.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
-	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Diego gab mir das Geld von Gerbrandt als Lohn. Jetzt sollte ich Esteban berichten, dass Morgahard in die Stadt darf.");
+	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Diego gave me Gerbrandt's money as a reward. Now I was told to tell Esteban that Morgahard is allowed into town.");
 
 	B_StartOtherRoutine	(Mod_1928_BDT_Morgahard_NW, "STADT");
 };
@@ -1047,7 +1047,7 @@ INSTANCE Info_Mod_Diego_RDW (C_INFO)
 	information	= Info_Mod_Diego_RDW_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Vatras schickt mich.";
+	description	= "Vatras sent me.";
 };
 
 FUNC INT Info_Mod_Diego_RDW_Condition()
@@ -1060,14 +1060,14 @@ FUNC INT Info_Mod_Diego_RDW_Condition()
 
 FUNC VOID Info_Mod_Diego_RDW_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_RDW_15_00"); //Vatras schickt mich. Er hat gesagt du könntest mir bei der Suche nach den Vermissten behilflich sein.
-	AI_Output(self, hero, "Info_Mod_Diego_RDW_11_01"); //Willst dich uns wohl anschließen?
-	AI_Output(hero, self, "Info_Mod_Diego_RDW_15_02"); //Klar, wieso nicht. Also sagst du mir jetzt was du weißt?
-	AI_Output(self, hero, "Info_Mod_Diego_RDW_11_03"); //Jaja. Es fing vor etwa zwei Wochen an. Einer der Bürger hat gesagt, dass sein Freund verschwunden sei.
-	AI_Output(self, hero, "Info_Mod_Diego_RDW_11_04"); //Wir haben ihn natürlich gleich gesucht und ausgefragt, aber er schien nichts zu wissen.
-	AI_Output(self, hero, "Info_Mod_Diego_RDW_11_05"); //In den folgenden Tagen sind immer mehr Leute verschwunden. Das einzige was wir wissen ist, dass sie immer nachts verschwinden.
+	AI_Output(hero, self, "Info_Mod_Diego_RDW_15_00"); //Vatras sent me. He said you could help me find the missing persons.
+	AI_Output(self, hero, "Info_Mod_Diego_RDW_11_01"); //You wanna join us?
+	AI_Output(hero, self, "Info_Mod_Diego_RDW_15_02"); //Sure, why not. So now you're telling me what you know?
+	AI_Output(self, hero, "Info_Mod_Diego_RDW_11_03"); //Yeah, yeah. It started about two weeks ago. One of the citizens said his friend disappeared.
+	AI_Output(self, hero, "Info_Mod_Diego_RDW_11_04"); //Of course, we looked for and questioned him immediately, but he didn't seem to know anything.
+	AI_Output(self, hero, "Info_Mod_Diego_RDW_11_05"); //More and more people disappeared in the following days. The only thing we know is that they always disappear at night.
 
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Die verschwunden Leute scheinen immer nachts zu verschwinden.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "The missing people always seem to disappear at night.");
 };
 
 INSTANCE Info_Mod_Diego_Person (C_INFO)
@@ -1078,7 +1078,7 @@ INSTANCE Info_Mod_Diego_Person (C_INFO)
 	information	= Info_Mod_Diego_Person_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer ist dieser Bürger der den ersten Vermissten gemeldet hat?";
+	description	= "Who is this citizen who reported the first missing person?";
 };
 
 FUNC INT Info_Mod_Diego_Person_Condition()
@@ -1091,10 +1091,10 @@ FUNC INT Info_Mod_Diego_Person_Condition()
 
 FUNC VOID Info_Mod_Diego_Person_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Person_15_00"); //Wer ist dieser Bürger der den ersten Vermissten gemeldet hat?
-	AI_Output(self, hero, "Info_Mod_Diego_Person_11_01"); //Sein Name ist Gerbrandt. Er ist im Oberen Viertel, aber du wirst da nicht reinkommen.
+	AI_Output(hero, self, "Info_Mod_Diego_Person_15_00"); //Who is this citizen who reported the first missing person?
+	AI_Output(self, hero, "Info_Mod_Diego_Person_11_01"); //His name is Gerbrandt. He's in the upper district, but you won't get in there.
 	
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Derjenige, der den ersten Vermissten gemeldet hat, heißt Gerbrandt und wohnt im Oberen Viertel.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "The person who reported the first missing person is called Gerbrandt and lives in the upper district.");
 };
 
 INSTANCE Info_Mod_Diego_Mario (C_INFO)
@@ -1105,7 +1105,7 @@ INSTANCE Info_Mod_Diego_Mario (C_INFO)
 	information	= Info_Mod_Diego_Mario_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Lust auf ein Abenteuer?";
+	description	= "Are you up for an adventure?";
 };
 
 FUNC INT Info_Mod_Diego_Mario_Condition()
@@ -1120,20 +1120,20 @@ FUNC INT Info_Mod_Diego_Mario_Condition()
 
 FUNC VOID Info_Mod_Diego_Mario_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_00"); //Hast du Lust auf ein Abenteuer?
-	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_01"); //Wie wäre wohl mein Leben verlaufen, wenn ich jemals auf diese Frage mit Nein geantwortet hätte?
-	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_02"); //(lacht) Was hast du denn anzubieten?
-	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_03"); //Eine Menge bösartiger Goblins. Drei tapfere Recken.
-	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_04"); //Ich mag Goblins. Sie verstecken immer viel Gold. Aber sie verstecken es nicht gut.
-	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_05"); //Wer ist denn der dritte Mitstreiter?
-	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_06"); //Der in den eigenen Reihen unbeliebte Milizionär Mario.
-	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_07"); //Wer es mit dem Gehorsam nicht so hat, ist dort falsch aufgehoben. Na gut, ich bin dabei. Wenn ich was von der Beute abbekomme.
-	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_08"); //Selbstverständlich.
-	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_09"); //Wann brechen wir auf?
-	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_10"); //Genau jetzt.
-	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_11"); //Gut, geh voran.
+	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_00"); //Are you up for an adventure?
+	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_01"); //What would my life have been like if I had ever answered no to this question?
+	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_02"); //(laughs) What do you have to offer?
+	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_03"); //A lot of vicious goblins. Three brave warriors.
+	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_04"); //I like goblins. They always hide a lot of gold. But they don't hide it well.
+	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_05"); //Who's the third combatant?
+	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_06"); //The unpopular militiaman Mario in his own ranks.
+	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_07"); //Those who do not have obedience are wrongly kept there. All right, I'm in. If I get anything from the loot.
+	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_08"); //Of course, of course.
+	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_09"); //When do we leave?
+	AI_Output(hero, self, "Info_Mod_Diego_Mario_15_10"); //Right now, right now.
+	AI_Output(self, hero, "Info_Mod_Diego_Mario_11_11"); //All right, go ahead.
 	
-	B_LogEntry	(TOPIC_MOD_MARIO_UPGRADE, "Diego hat sich uns angeschlossen. Jetzt muss ich nur noch Mario abholen, und schon sind wir komplett.");
+	B_LogEntry	(TOPIC_MOD_MARIO_UPGRADE, "Diego has joined us. Now all I have to do is pick up Mario and we're ready to go.");
 
 	AI_StopProcessInfos	(self);
 
@@ -1162,8 +1162,8 @@ FUNC INT Info_Mod_Diego_Mario2_Condition()
 
 FUNC VOID Info_Mod_Diego_Mario2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_Mario2_11_00"); //So muss das laufen.
-	AI_Output(self, hero, "Info_Mod_Diego_Mario2_11_01"); //Äh, wenn ich das richtig sehe, hat Mario dir eine kleine Belohnung in Form von Goldmünzen gegeben?
+	AI_Output(self, hero, "Info_Mod_Diego_Mario2_11_00"); //That's the way it has to be.
+	AI_Output(self, hero, "Info_Mod_Diego_Mario2_11_01"); //Uh, if I'm not mistaken, did Mario give you a little reward in the form of gold coins?
 
 	B_StartOtherRoutine	(self, "START");
 
@@ -1171,15 +1171,15 @@ FUNC VOID Info_Mod_Diego_Mario2_Info()
 
 	Info_ClearChoices	(Info_Mod_Diego_Mario2);
 
-	Info_AddChoice	(Info_Mod_Diego_Mario2, "Das hast du falsch gesehen. Es gibt keine Belohnung.", Info_Mod_Diego_Mario2_C);
-	Info_AddChoice	(Info_Mod_Diego_Mario2, "Ja, hier hast du einen kleinen Teil.", Info_Mod_Diego_Mario2_B);
-	Info_AddChoice	(Info_Mod_Diego_Mario2, "Ja, hier ist deine Hälfte.", Info_Mod_Diego_Mario2_A);
+	Info_AddChoice	(Info_Mod_Diego_Mario2, "You've got it wrong. There is no reward.", Info_Mod_Diego_Mario2_C);
+	Info_AddChoice	(Info_Mod_Diego_Mario2, "Yeah, here's a little piece.", Info_Mod_Diego_Mario2_B);
+	Info_AddChoice	(Info_Mod_Diego_Mario2, "Yeah, here's your half.", Info_Mod_Diego_Mario2_A);
 };
 
 FUNC VOID Info_Mod_Diego_Mario2_C()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Mario2_C_15_00"); //Das hast du falsch gesehen. Es gibt keine Belohnung.
-	AI_Output(self, hero, "Info_Mod_Diego_Mario2_C_11_01"); //Hey, du hast wohl den Diebeskodex falsch verstanden? Freunde bescheißt man nicht!
+	AI_Output(hero, self, "Info_Mod_Diego_Mario2_C_15_00"); //You've got it wrong. There is no reward.
+	AI_Output(self, hero, "Info_Mod_Diego_Mario2_C_11_01"); //Hey, you must have misunderstood the thief code. You don't screw friends!
 
 	Mod_Mario_Diego = 1;
 
@@ -1188,22 +1188,22 @@ FUNC VOID Info_Mod_Diego_Mario2_C()
 
 FUNC VOID Info_Mod_Diego_Mario2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Mario2_B_15_00"); //Ja, hier hast du einen kleinen Teil.
+	AI_Output(hero, self, "Info_Mod_Diego_Mario2_B_15_00"); //Yeah, here's a little piece.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Mario2_B_11_01"); //Ein bisschen mager, was? Aber was soll man von einem Milizionär auch anderes erwarten?
+	AI_Output(self, hero, "Info_Mod_Diego_Mario2_B_11_01"); //A little skinny, huh? But what else can you expect from a militiaman?
 
 	Info_ClearChoices	(Info_Mod_Diego_Mario2);
 };
 
 FUNC VOID Info_Mod_Diego_Mario2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Mario2_A_15_00"); //Ja, hier ist deine Hälfte.
+	AI_Output(hero, self, "Info_Mod_Diego_Mario2_A_15_00"); //Yeah, here's your half.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 150);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Mario2_A_11_01"); //Hat sich ja gelohnt, unser kleiner Ausflug. Ein gutes Gefühl, die alten Knochen noch mal zu bewegen.
+	AI_Output(self, hero, "Info_Mod_Diego_Mario2_A_11_01"); //Well, it was worth our little trip. It feels good to move the old bones again.
 
 	Info_ClearChoices	(Info_Mod_Diego_Mario2);
 };
@@ -1228,9 +1228,9 @@ FUNC INT Info_Mod_Diego_VermissteFertig_Condition()
 
 FUNC VOID Info_Mod_Diego_VermissteFertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_VermissteFertig_11_00"); //Die Rätsel um die verschwundenen Bürger hast du wirklich fein gelöst.
-	AI_Output(self, hero, "Info_Mod_Diego_VermissteFertig_11_01"); //In die Minen der Dämonenmagier ... wer hätte das gedacht.
-	AI_Output(self, hero, "Info_Mod_Diego_VermissteFertig_11_02"); //(zu sich selbst) Hoffentlich führt das aber nicht zu militärischen Auseinandersetzungen ...
+	AI_Output(self, hero, "Info_Mod_Diego_VermissteFertig_11_00"); //The riddles about the missing citizens you have solved really well.
+	AI_Output(self, hero, "Info_Mod_Diego_VermissteFertig_11_01"); //Into the demonic magicians' mines... who would have guessed?
+	AI_Output(self, hero, "Info_Mod_Diego_VermissteFertig_11_02"); //(to oneself) But hopefully this will not lead to military conflicts....
 
 	AI_StopProcessInfos	(self);
 
@@ -1271,10 +1271,10 @@ FUNC INT Info_Mod_Diego_DrachenFrei_Condition()
 
 FUNC VOID Info_Mod_Diego_DrachenFrei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_DrachenFrei_11_00"); //Hey, wie ich gehört habe, wurde die Umgebung von mächtigen Dämonen heimgesucht.
-	AI_Output(hero, self, "Info_Mod_Diego_DrachenFrei_15_01"); //Du meinst vermutlich die Drachen ...
-	AI_Output(self, hero, "Info_Mod_Diego_DrachenFrei_11_02"); //Drachen? Wirklich? Und ich dachte, es seien nur Geschöpfe aus Büchern ...
-	AI_Output(hero, self, "Info_Mod_Diego_DrachenFrei_15_03"); //(zu sich selbst) Hmm, na ja, irgendwie stimmt das auch ...
+	AI_Output(self, hero, "Info_Mod_Diego_DrachenFrei_11_00"); //Hey, I hear the environment was haunted by powerful demons.
+	AI_Output(hero, self, "Info_Mod_Diego_DrachenFrei_15_01"); //You probably mean the dragons...
+	AI_Output(self, hero, "Info_Mod_Diego_DrachenFrei_11_02"); //Dragons? Really? And I thought they were just creatures from books...
+	AI_Output(hero, self, "Info_Mod_Diego_DrachenFrei_15_03"); //(to itself) Hmm, well, somehow it's true...
 };
 
 INSTANCE Info_Mod_Diego_Flugblatt (C_INFO)
@@ -1285,7 +1285,7 @@ INSTANCE Info_Mod_Diego_Flugblatt (C_INFO)
 	information	= Info_Mod_Diego_Flugblatt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Diego_Flugblatt_Condition()
@@ -1306,11 +1306,11 @@ FUNC VOID Info_Mod_Diego_Flugblatt_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Diego_Flugblatt_11_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Diego_Flugblatt_11_01"); //Oh, thank you. Thank you. Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Diego_Flugblatt_11_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Diego_Flugblatt_11_02"); //Ah yes. Maybe I'll stop by Matteo's.
 
 	Mod_Flugblaetter += 1;
 };
@@ -1323,7 +1323,7 @@ INSTANCE Info_Mod_Diego_Lehrer (C_INFO)
 	information	= Info_Mod_Diego_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Diego_Lehrer_Condition()
@@ -1338,19 +1338,19 @@ FUNC VOID Info_Mod_Diego_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Diego_Lehrer_11_00"); //Ich kann dir beibringen wie du Schlösser knackst.
+	AI_Output(self, hero, "Info_Mod_Diego_Lehrer_11_00"); //I can teach you how to pick locks.
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Diego_Lehrer_11_01"); //Außerdem kann ich dir wieder helfen, geschickter zu werden.
+		AI_Output(self, hero, "Info_Mod_Diego_Lehrer_11_01"); //Besides, I can help you get smarter again.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Diego kann mir beibringen Schlösser zu knacken und geschickter zu werden.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Diego can teach me how to pick locks and get smarter.");
 	}
 	else
 	{
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Diego kann mir beibringen Schlösser zu knacken.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Diego can teach me how to pick locks.");
 	};
 };
 
@@ -1362,12 +1362,12 @@ INSTANCE Info_Mod_Diego_Lernen (C_INFO)
 	information	= Info_Mod_Diego_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString("Schlösser knacken", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1));
+	description	= B_BuildLearnString("pick locks", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1));
 };
 
 FUNC INT Info_Mod_Diego_Lernen_Condition()
 {
-	Info_Mod_Diego_Lernen.description = B_BuildLearnString("Schlösser knacken", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1));
+	Info_Mod_Diego_Lernen.description = B_BuildLearnString("pick locks", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Diego_Lehrer))
 	&& (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
@@ -1378,11 +1378,11 @@ FUNC INT Info_Mod_Diego_Lernen_Condition()
 
 FUNC VOID Info_Mod_Diego_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Lernen_15_00"); //Bring mir bei wie man Schlösser knackt.
+	AI_Output(hero, self, "Info_Mod_Diego_Lernen_15_00"); //Teach me how to pick locks.
 
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_PICKLOCK))
 	{
-		AI_Output(self, hero, "Info_Mod_Diego_Lernen_11_01"); //Wenn du ein Schloss knacken willst solltest du auf jedenfall genug Dietriche dabei haben. Außerdem solltest du ziemlich geschickt sein.
+		AI_Output(self, hero, "Info_Mod_Diego_Lernen_11_01"); //If you want to pick a lock, you should have enough lockers with you. Besides, you should be pretty smart.
 	};
 };
 
@@ -1394,7 +1394,7 @@ INSTANCE Info_Mod_Diego_GeschickteFinger (C_INFO)
 	information	= Info_Mod_Diego_GeschickteFinger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Meine Dietriche brechen immer ab...";
+	description	= "My diets always break off....";
 };
 
 FUNC INT Info_Mod_Diego_GeschickteFinger_Condition()
@@ -1408,9 +1408,9 @@ FUNC INT Info_Mod_Diego_GeschickteFinger_Condition()
 
 FUNC VOID Info_Mod_Diego_GeschickteFinger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_GeschickteFinger_15_00"); //Meine Dietriche brechen immer ab - hast du da einen Tipp für mich?
-	AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger_11_01"); //Wie häufig deine Dietriche abbrechen, hängt von deinem Geschick ab.
-	AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger_11_02"); //Es gibt aber einen Trick, wie du vorsichtiger zu Werke gehen kannst.
+	AI_Output(hero, self, "Info_Mod_Diego_GeschickteFinger_15_00"); //My diets always break off - do you have any advice for me?
+	AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger_11_01"); //How often your diets break off depends on your skill.
+	AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger_11_02"); //But there's a trick you can use more cautiously.
 };
 
 INSTANCE Info_Mod_Diego_GeschickteFinger2 (C_INFO)
@@ -1428,11 +1428,11 @@ FUNC INT Info_Mod_Diego_GeschickteFinger2_Condition()
 {
 	if (Mod_Schwierigkeit == 4)
 	{
-		Info_Mod_Diego_GeschickteFinger2.description = "Zeig mir den Trick zum Öffnen von Schlössern. (500 Gold)";
+		Info_Mod_Diego_GeschickteFinger2.description = "Show me the trick to opening locks. (500 Gold)";
 	}
 	else
 	{
-		Info_Mod_Diego_GeschickteFinger2.description = "Zeig mir den Trick zum Öffnen von Schlössern. (5 LP)";
+		Info_Mod_Diego_GeschickteFinger2.description = "Show me the trick to opening locks. (5 LP)";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Diego_GeschickteFinger))
@@ -1444,20 +1444,20 @@ FUNC INT Info_Mod_Diego_GeschickteFinger2_Condition()
 
 FUNC VOID Info_Mod_Diego_GeschickteFinger2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_GeschickteFinger2_15_00"); //Zeig mir den Trick zum Öffnen von Schlössern.
+	AI_Output(hero, self, "Info_Mod_Diego_GeschickteFinger2_15_00"); //Show me the trick to opening locks.
 
 	if ((Mod_Schwierigkeit == 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 500))
 	|| ((Mod_Schwierigkeit != 4)
 	&& (hero.lp >= 5))
 	{
-		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_01"); //Ein normales Schloss besteht aus mehreren Sperrzuhaltungen.
-		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_02"); //Die musst du in die richtige Richtung schieben, damit du am Ende den Riegel bewegen kannst.
-		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_03"); //Wenn du eine der Zuhaltungen in die falsche Richtung schiebst, bricht der Dietrich normalerweise ab.
-		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_04"); //Allerdings kannst du es schon vorher spüren, wenn du in der falschen Richtung unterwegs bist, und zwar an einem winzig kleinen Widerstand etwa auf der halben Strecke.
-		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_05"); //Um diesen Widerstand zu bemerken, musst du konzentriert und geübt sein.
-		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_06"); //Es wird dir nicht gelingen, in allen Fällen ein Abbrechen zu verhindern, aber immerhin in einigen.
-		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_07"); //Am besten probierst du es einfach mal aus.
+		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_01"); //A normal lock consists of several interlocks.
+		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_02"); //You have to push them in the right direction so that you can move the bolt at the end.
+		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_03"); //If you push one of the tumblers in the wrong direction, the dietrich will normally break off.
+		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_04"); //However, you can already feel it when you are travelling in the wrong direction, at a tiny small resistance about halfway down the track.
+		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_05"); //To notice this resistance, you need to be focused and trained.
+		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_06"); //You will not succeed in preventing abortion in all cases, but at least in some cases.
+		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_07"); //The best thing to do is just try it out.
 
 		if (Mod_Schwierigkeit == 4)
 		{
@@ -1472,7 +1472,7 @@ FUNC VOID Info_Mod_Diego_GeschickteFinger2_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_08"); //Komm wieder, wenn du bereit bist.
+		AI_Output(self, hero, "Info_Mod_Diego_GeschickteFinger2_11_08"); //Come back when you're ready.
 	};
 };
 
@@ -1484,7 +1484,7 @@ INSTANCE Info_Mod_Diego_Lernen_DEX (C_INFO)
 	information	= Info_Mod_Diego_Lernen_DEX_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Teach me something.";
 };
 
 FUNC INT Info_Mod_Diego_Lernen_DEX_Condition()
@@ -1498,8 +1498,8 @@ FUNC INT Info_Mod_Diego_Lernen_DEX_Condition()
 
 FUNC VOID Info_Mod_Diego_Lernen_DEX_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_Lernen_DEX_15_00"); //Bring mir was bei.
-	AI_Output(self, hero, "Info_Mod_Diego_Lernen_DEX_16_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Diego_Lernen_DEX_15_00"); //Teach me something.
+	AI_Output(self, hero, "Info_Mod_Diego_Lernen_DEX_16_01"); //What do you want to learn?
 
 	Info_ClearChoices	(Info_Mod_Diego_Lernen_DEX);
 
@@ -1668,7 +1668,7 @@ FUNC INT Info_Mod_Diego_EXIT_Condition()
 
 FUNC VOID Info_Mod_Diego_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_EXIT_11_00"); //Wir sehen uns ... hoffentlich.
+	AI_Output(self, hero, "Info_Mod_Diego_EXIT_11_00"); //I'll see you.... hopefully.
 
 	AI_StopProcessInfos	(self);
 };

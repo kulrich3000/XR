@@ -18,14 +18,14 @@ FUNC INT Info_Mod_Hymir_Hi_Condition()
 
 FUNC VOID Info_Mod_Hymir_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hymir_Hi_08_00"); //Du bist also derjenige, von dem hier alle reden. Du hast uns eine Menge Arbeit abgenommen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Hi_08_01"); //Aber noch können wir kein Erz fördern, da in der Mine diese merkwürdigen Steinmonster sind.
-	AI_Output(self, hero, "Info_Mod_Hymir_Hi_08_02"); //Wir brauchen noch etwas Vorbereitungszeit, dann werden wir die Mine stürmen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Hi_08_03"); //Komm also später wieder.
+	AI_Output(self, hero, "Info_Mod_Hymir_Hi_08_00"); //So you're the one everyone's talking about. You've done a lot of work for us.
+	AI_Output(self, hero, "Info_Mod_Hymir_Hi_08_01"); //But we can't yet extract any ore, because there are these strange stone monsters in the mine.
+	AI_Output(self, hero, "Info_Mod_Hymir_Hi_08_02"); //We need some more time to prepare, then we'll storm the mine.
+	AI_Output(self, hero, "Info_Mod_Hymir_Hi_08_03"); //So come back later.
 
 	Log_CreateTopic	(TOPIC_MOD_KG_STEINMONSTER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KG_STEINMONSTER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Hymir braucht noch etwas Zeit für die Vorbereitungen. Ich soll später wieder kommen, dann können wir die Mine stürmen.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Hymir needs some time for the preparations. I'm supposed to come back later, then we can storm the mine.");
 };
 
 INSTANCE Info_Mod_Hymir_MineLos (C_INFO)
@@ -49,11 +49,11 @@ FUNC INT Info_Mod_Hymir_MineLos_Condition()
 
 FUNC VOID Info_Mod_Hymir_MineLos_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hymir_MineLos_08_00"); //Wir sind nun soweit. In der Mine tummeln sich nach wie vor die Steinmonster.
-	AI_Output(self, hero, "Info_Mod_Hymir_MineLos_08_01"); //Es liegt nun an dir diese zu vernichten und die Mine zu erschließen.
-	AI_Output(self, hero, "Info_Mod_Hymir_MineLos_08_02"); //Geh zu Granmar, er wartet in der Mine auf dich. Er wird dir bei deiner Aufgabe helfen.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineLos_08_00"); //We're ready now. The stone monsters are still romping around the mine.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineLos_08_01"); //It is now up to you to destroy them and open up the mine.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineLos_08_02"); //Go to Granmar, he's waiting for you in the mine. He will help you in your task.
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Ich soll jetzt mit Granmar zusammen die Monster in der Mine beseitigen. Er wartet bereits in der Mine auf mich. Als Nahkampfwaffe sollte ich unbedingt meine erzüberzogene Keule dabei haben.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "I'm supposed to work with Granmar to eliminate the monsters in the mine. He's already waiting for me in the mine. As a melee weapon, I should definitely have my club with me.");
 
 	B_RemoveNpc	(Mod_1017_KGD_Granmar_MT);
 
@@ -68,7 +68,7 @@ INSTANCE Info_Mod_Hymir_MineFertig (C_INFO)
 	information	= Info_Mod_Hymir_MineFertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Mine ist jetzt frei von Monster und wieder in Betrieb.";
+	description	= "The mine is now free of monsters and back in operation.";
 };
 
 FUNC INT Info_Mod_Hymir_MineFertig_Condition()
@@ -81,22 +81,22 @@ FUNC INT Info_Mod_Hymir_MineFertig_Condition()
 
 FUNC VOID Info_Mod_Hymir_MineFertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hymir_MineFertig_15_00"); //Die Mine ist jetzt frei von Monster und wieder in Betrieb.
-	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_01"); //Schön zu hören, damit hast du es geschafft, in die kleine Reihe der Erzfürsten aufgenommen zu werden.
-	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_02"); //Und glaub mir, dass haben nur sehr wenige in so kurzer Zeit geschafft.
-	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_03"); //Du bestitzt jetzt somit 10% des Einkommens der Mine. Die Summe kannst du dir jede Woche bei Ole abholen.
+	AI_Output(hero, self, "Info_Mod_Hymir_MineFertig_15_00"); //The mine is now free of monsters and back in operation.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_01"); //It's nice to hear, so you've managed to be accepted into the small line of archprince.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_02"); //And believe me, very few people have managed to do that in such a short time.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_03"); //You now account for 10% of the mine's income. You can get the money from Ole every week.
 
 	B_GiveInvItems	(self, hero, ItMi_Nugget, 5);
 
-	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_04"); //Natürlich bekommst du jetzt auch eine neue Rüstung.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_04"); //Of course, you're getting a new armor now.
 
 	CreateInvItems	(hero, ItAr_Erzbaron_Blau, 1);
 
-	B_ShowGivenThings	("Königliche Erzfürstenrüstung erhalten");
+	B_ShowGivenThings	("Royal armour of the archprince received");
 
-	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_05"); //Ach, übrigens, der Paladin war kurz vor dir bei mir. Er meinte, er verdanke dir sein Leben.
-	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_06"); //Gemeinsam mit einer Miliz-Truppe wurde er von Lord Andre persönlich ins Minental geschickt. Sie sollen dort die Orks ausspionieren.
-	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_07"); //Lord Andre wollte übrigens auch noch mal mit dir reden, aber ich denke das dürfte noch Zeit haben.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_05"); //By the way, the Paladin was with me just before you. He said he owes you his life.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_06"); //Together with a militia force, he was personally sent to the Minental by Lord Andre. Tell them to spy on the orcs there.
+	AI_Output(self, hero, "Info_Mod_Hymir_MineFertig_08_07"); //Lord Andre wanted to talk to you again, but I think there's still time.
 
 	B_SetTopicStatus	(TOPIC_MOD_KG_STEINMONSTER, LOG_SUCCESS);
 
@@ -113,7 +113,7 @@ INSTANCE Info_Mod_Hymir_Trent (C_INFO)
 	information	= Info_Mod_Hymir_Trent_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sieht so aus, als hätte ich noch eine Mine erschlossen.";
+	description	= "Looks like I opened up another mine.";
 };
 
 FUNC INT Info_Mod_Hymir_Trent_Condition()
@@ -126,10 +126,10 @@ FUNC INT Info_Mod_Hymir_Trent_Condition()
 
 FUNC VOID Info_Mod_Hymir_Trent_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hymir_Trent_15_00"); //Sieht so aus, als hätte ich noch eine Mine erschlossen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Trent_08_01"); //Was ... wir kommen ja noch nicht mal mit der einen nach. Vielleicht schickt uns Lord Andre ja jetzt ein paar neue Leute.
-	AI_Output(self, hero, "Info_Mod_Hymir_Trent_08_02"); //Egal, das muss gefeiert werden. Geh zu Melcador und lass dir eine Erzwaffe und ein frisches Bier geben.
-	AI_Output(self, hero, "Info_Mod_Hymir_Trent_08_03"); //Für dich ist jetzt nicht mehr zu tun. Lehn dich zurück und genieß das Leben, so wie ich!
+	AI_Output(hero, self, "Info_Mod_Hymir_Trent_15_00"); //Looks like I opened up another mine.
+	AI_Output(self, hero, "Info_Mod_Hymir_Trent_08_01"); //What...? we're not even gonna get there yet. Maybe Lord Andre will send us some new people now.
+	AI_Output(self, hero, "Info_Mod_Hymir_Trent_08_02"); //Anyway, this has to be celebrated. Go to Melcador and have an ore weapon and a fresh beer delivered to you.
+	AI_Output(self, hero, "Info_Mod_Hymir_Trent_08_03"); //There's nothing more to do for you now. Sit back and enjoy life as much as I do!
 
 	B_SetTopicStatus	(TOPIC_MOD_KG_RITUAL, LOG_SUCCESS);
 
@@ -157,7 +157,7 @@ FUNC INT Info_Mod_Hymir_Eroberung_06_Condition()
 
 FUNC VOID Info_Mod_Hymir_Eroberung_06_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hymir_Eroberung_06_08_00"); //... und wir in das Lager ein ...
+	AI_Output(self, hero, "Info_Mod_Hymir_Eroberung_06_08_00"); //... and we entered the camp....
 };
 
 INSTANCE Info_Mod_Hymir_Treue (C_INFO)
@@ -181,33 +181,33 @@ FUNC INT Info_Mod_Hymir_Treue_Condition()
 
 FUNC VOID Info_Mod_Hymir_Treue_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_00"); //Eine Botschaft von Hagen? Ich bin gespannt, was der Aufschneider von mir möchte.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_00"); //A message from Hagen? I wonder what the bragger wants from me.
 
 	B_GiveInvItems	(hero, self, ItWr_HagenForHymir, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_01"); //Ha, dass ich nicht lache. Jetzt, wo ihm der Arsch brennt sollen wir für ihn die Kohlen aus dem Feuer holen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_02"); //Alles was recht ist. Und wie ... du bist der neue Hauptmann? Das wird ja immer schöner.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_03"); //Was ist mit Andre ... dem einzigen, der ein bisschen Anstand und Rückgrat hatte?
-	AI_Output(hero, self, "Info_Mod_Hymir_Treue_15_04"); //Er ist tot. Er opferte sich für die Stadt, als diese bedroht wurde.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_05"); //(schockiert) Was ... er ist tot? Für die Stadt ...?
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_01"); //Ha, don't make me laugh. Now that his ass is burning, we're supposed to get the coals out of the fire for him.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_02"); //Anything right. And how...? You're the new captain? This is getting nicer all the time.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_03"); //What about Andre-- the only one with a little decency and backbone?
+	AI_Output(hero, self, "Info_Mod_Hymir_Treue_15_04"); //He's dead. He sacrificed himself for the city when it was threatened.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_05"); //(shocked) What... he's dead? For the city...?
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Hymir_Treue_15_06"); //(zu sich selbst) Vielleicht gibt ihm das jetzt zu denken?
+	AI_Output(hero, self, "Info_Mod_Hymir_Treue_15_06"); //Maybe that's what makes him think now?
 
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_07"); //Geopfert? (bäumt sich auf) Erzähl mir doch nichts.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_08"); //Hagen hat ihn bestimmt als Bauernopfer benutzt, um sich selbst anschließend als edlen Retter hinzustellen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_09"); //Und jetzt sollen auch wir für ihn den Kopf hinhalten. Da hört sich doch alles auf.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_10"); //Nicht mal den Anstand selbst zu erscheinen hat er, sondern schickt einen Laufburschen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_11"); //Nein ... und jetzt geh mir besser aus den Augen.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_07"); //Sacrificed? Don't tell me anything.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_08"); //Hagen must have used him as a pawn sacrifice, to make himself a noble savior afterwards.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_09"); //And now we're supposed to take the fall for him. That's where it all ends.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_10"); //He doesn't even have the decency to appear himself, but sends a errand boy.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue_08_11"); //No... and now you better get out of my sight.
 
 	AI_GotoWP	(hero, "MC_WA_4");
 
-	AI_Output(hero, self, "Info_Mod_Hymir_Treue_15_12"); //Das ist nicht ganz so gut gelaufen. Aber ... stimmt, die Spruchrolle.
+	AI_Output(hero, self, "Info_Mod_Hymir_Treue_15_12"); //That didn't go so well. But... is true, the part of the saying.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	AI_StopProcessInfos	(self);
@@ -245,49 +245,49 @@ FUNC VOID Info_Mod_Hymir_Treue2_Info()
 	AI_TurnToNpc	(Hymir, Hagen);
 	AI_TurnToNpc	(Hagen, Hymir);
 
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_00"); //(verblüfft) Ist es möglich? Hagen, du hier!?
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_00"); //Is it possible? Hagen, you here!?
 
 	TRIA_Next(Hagen);
 
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_01"); //Ja, da mein Anliegen von großer Trageweite für ganz Khorinis ist, habe ich mich persönlich herbegeben, um die Sache mit dir zu klären.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_01"); //Yes, since my request is of great breadth for all of Khorinis, I have personally come to clarify the matter with you.
 
 	TRIA_Next(Hymir);
 
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_02"); //Ich ... (fängt sich wieder) ... ja, ich habe dein Schreiben empfangen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_03"); //Und auch, wenn du hier vor mir stehst, sehe ich keinerlei Veranlassung dazu, darauf einzugehen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_04"); //Du weißt selbst am besten, dass wir unseren Aufenthalt in der Kolonie dir zu verdanken haben.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_05"); //(streng) Und dass Andre unter deinem Kommando sein Leben ließ, macht den Sachverhalt nicht gerade besser.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_02"); //l-- (captures itself again) Yes, I have received your letter.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_03"); //And even if you are standing here in front of me, I don't see any reason to go into it.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_04"); //You know best of all that we owe our stay in the colony to you.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_05"); //And the fact that Andre left his life under your command doesn't exactly improve the situation.
 
 	TRIA_Next(Hagen);
 
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_06"); //Andre hat sich selbstlos geopfert, da er keine andere Möglichkeit sah, die Stadt vor einem übermächtigen Feind zu retten.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_07"); //Aber hier, lies selbst.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_06"); //Andre sacrificed himself selflessly because he saw no other way to save the city from an overpowering enemy.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_07"); //But here, read it yourself.
 
-	B_ShowGivenThings	("Lord Hagen gibt Hymir Andres Testament");
+	B_ShowGivenThings	("Lord Hagen gives Hymir Andres testament");
 
 	TRIA_Next(Hymir);
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_08"); //(liest) Roboter einzuschmelzen […] mordender Maschine […] denen sie das Leben nahm […] niemand ohne Schuld ist ...
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_09"); //Hmm, dies ist tatsächlich Andres Handschrift ... und es scheint zu stimmen, was ihr mir über sein Schicksal berichtet habt.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_10"); //Im Lichte dieser Ereignisse will ich mich nicht mehr grundsätzlich gegen eine Zusammenarbeit mit der Stadt stellen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_11"); //Ich tue es aber gewiss nicht, um dir einen Gefallen zu tun, Hagen, sondern um des Beispieles Willen, das Andre uns gegeben hat.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_08"); //(reads) To melt down robots[...] murdering machine[...] she took their lives from[...] no one without guilt is....
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_09"); //Hmm, this is actually Andres handwriting... and it seems to be true what you told me about his fate.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_10"); //In the light of these events, I no longer want to oppose cooperation with the city in principle.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_11"); //But I certainly don't do it to do you a favour, Hagen, but for the sake of the example Andre has given us.
 
 	TRIA_Next(Hagen);
 
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_12"); //Hab Dank. In der aktuellen Situation sind Stadt und Königreich auf Männer wie euch angewiesen.
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_13"); //Ich habe hier einige Spruchrollen, welche eine schnelle Reise zwischen dem Pass und der Stadt ermöglichen.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_12"); //I appreciate it. In the current situation, city and kingdom depend on men like you.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_04_13"); //I have here some spell rolls, which allow a fast journey between the pass and the city.
 
 	TRIA_Next(Hymir);
 
-	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_14"); //Gut ... zur weiteren Besprechung werde ich mich mit dir in die Stadt begeben.
+	AI_Output(self, hero, "Info_Mod_Hymir_Treue2_08_14"); //Well... I'll take you to the city for another briefing.
     
 	TRIA_Finish();
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_TREUE, "Hymir hat sich mit Lord Hagen in die Stadt teleportiert. Ich sollte man bei Zeiten dort vorbeischauen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_TREUE, "Hymir teleported to the city with Lord Hagen. I should drop by at times.");
 
 };
 

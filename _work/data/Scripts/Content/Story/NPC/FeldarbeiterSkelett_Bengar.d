@@ -1,7 +1,7 @@
 instance FeldarbeiterSkelett_Bengar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Skelett";
+	name 		= "Skeleton";
 	guild 		= GIL_SUMMONED_SKELETON;
 	id 			= 7171;
 	voice 		= 3;

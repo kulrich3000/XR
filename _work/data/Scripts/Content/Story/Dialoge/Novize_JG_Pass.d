@@ -15,31 +15,31 @@ FUNC INT Info_Mod_Novize_JG_Pass_Hi_Condition()
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_03_00"); //(wimmernd) Habt Gnade mit mir, ich werde auch nichts mehr tun, ehrlich.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_03_00"); //Have mercy on me, I'm not gonna do anything, honestly.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Warum hast du mich angegriffen?", Info_Mod_Novize_JG_Pass_Hi_B);
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Vergiss es, stirb.", Info_Mod_Novize_JG_Pass_Hi_A);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Why did you attack me?", Info_Mod_Novize_JG_Pass_Hi_B);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Forget it, die.", Info_Mod_Novize_JG_Pass_Hi_A);
 };
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_B_15_00"); //Warum hast du mich angegriffen?
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_B_03_01"); //Ich ... ich konnte nicht anders. Er hat mich dazu gezwungen.
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_B_15_02"); //Wer hat Dich dazu gezwungen?
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_B_03_03"); //Mein Meister. Bitte lasst mich Leben.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_B_15_00"); //Why did you attack me?
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_B_03_01"); //l-- I couldn't help myself. He made me do it.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_B_15_02"); //Who forced you to?
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_B_03_03"); //My master. Please let me live.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Vor deinem Tod hättest du wenigstens dein Gewissen (...)", Info_Mod_Novize_JG_Pass_Hi_D);
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Gut, ich werde dir nichts mehr tun. Nun sage mir, (...)", Info_Mod_Novize_JG_Pass_Hi_C);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Before your death you would at least have your conscience (.... )", Info_Mod_Novize_JG_Pass_Hi_D);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "All right, I won't hurt you anymore. Now tell me, (... )", Info_Mod_Novize_JG_Pass_Hi_C);
 };
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_D_15_00"); //Vor deinem Tod hättest du wenigstens dein Gewissen erleichtern können. Stirb.
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_D_03_01"); //Meister ...
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_D_15_00"); //Before you died, at least you could have relieved your conscience. Die.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_D_03_01"); //master
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
@@ -53,18 +53,18 @@ FUNC VOID Info_Mod_Novize_JG_Pass_Hi_D()
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_C_15_00"); //Gut, ich werde dir nichts mehr tun. Nun sage mir, wer dein Meister ist.
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_C_03_01"); //Ich kann nicht, er bringt mich dafür um. Lasst mich bitte gehen.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_C_15_00"); //All right, I won't hurt you anymore. Now tell me who your master is.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_C_03_01"); //I can't, he's killing me for it. Please let me go.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Nein. Sirb.", Info_Mod_Novize_JG_Pass_Hi_F);
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Verschwinde und lass dich nicht wieder blicken, Feigling.", Info_Mod_Novize_JG_Pass_Hi_E);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "No. Sirb.", Info_Mod_Novize_JG_Pass_Hi_F);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Get out of here and don't come back, coward.", Info_Mod_Novize_JG_Pass_Hi_E);
 };
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_F()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_F_15_00"); //Nein. Sirb.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_F_15_00"); //No. Sirb.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
@@ -78,11 +78,11 @@ FUNC VOID Info_Mod_Novize_JG_Pass_Hi_F()
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_E_15_00"); //Verschwinde und lass dich nicht wieder blicken, Feigling.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_E_15_00"); //Get out of here and don't come back, coward.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_E_03_01"); //Stirb du Narr. Niemals könnte ich so unter die Augen meines Meister treten.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_E_03_01"); //You fool die. I would never be able to stand under the eyes of my master like this.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
@@ -96,8 +96,8 @@ FUNC VOID Info_Mod_Novize_JG_Pass_Hi_E()
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_A_15_00"); //Vergiss es, stirb.
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_A_03_01"); //Neeeeeeein!
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_A_15_00"); //Forget it, die.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_A_03_01"); //Nope!
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 

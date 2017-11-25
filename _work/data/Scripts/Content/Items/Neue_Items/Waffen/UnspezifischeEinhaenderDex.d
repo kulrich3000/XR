@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_1h_Vlk_Sword (C_Item)
 {	
-	name 				=	"Degen";  
+	name 				=	"Sword";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_1h_Vlk_Sword (C_Item)
 };
 INSTANCE ItMw_1h_Vlk_Sword_Geschaerft (C_Item)
 {	
-	name 				=	"Degen (geschärft)";  
+	name 				=	"Epee (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -57,7 +57,7 @@ INSTANCE ItMw_1h_Vlk_Sword_Geschaerft (C_Item)
 
 INSTANCE ItMw_Degen_Jack (C_Item)
 {	
-	name 				=	"Jacks Degen";  
+	name 				=	"Jacks Epee";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -87,7 +87,7 @@ INSTANCE ItMw_Degen_Jack (C_Item)
 
 INSTANCE ItMw_Meisterdegen (C_Item)
 {	
-	name 				=	"Meisterdegen";  
+	name 				=	"Master Sword";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -116,7 +116,7 @@ INSTANCE ItMw_Meisterdegen (C_Item)
 };
 INSTANCE ItMw_Meisterdegen_Geschaerft (C_Item)
 {	
-	name 				=	"Meisterdegen (geschärft)";  
+	name 				=	"Master sword (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -146,7 +146,7 @@ INSTANCE ItMw_Meisterdegen_Geschaerft (C_Item)
 
 INSTANCE ItMw_EchsenSchwertDex (C_Item)
 {	
-	name 				=	"Echsendegen";  
+	name 				=	"lizard sword";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

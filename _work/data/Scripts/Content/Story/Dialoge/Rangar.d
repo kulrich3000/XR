@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rangar_DragoHelp (C_INFO)
 	information	= Info_Mod_Rangar_DragoHelp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nanu, Rangar! Was treibt dich hierher?";
+	description	= "Well, Rangar! What brings you here?";
 };
 
 FUNC INT Info_Mod_Rangar_DragoHelp_Condition()
@@ -21,47 +21,47 @@ FUNC INT Info_Mod_Rangar_DragoHelp_Condition()
 
 FUNC VOID Info_Mod_Rangar_DragoHelp_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_00"); //Nanu, Rangar! Was treibt dich hierher?
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_01"); //Hör bloß auf! Da hat mich doch irgendein Strolch so bei Lord Andre angeschwärtzt, dass ich bei der Garde total unten durch war.
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_02"); //Jeder hat mich rumgeschubst. Da bin ich einfach abgehauen.
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_03"); //Und dann?
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_04"); //Dann hab ich später Dragomir in der Taverne gesprochen.
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_05"); //Der hat mir angeboten, bei den Jägern mitzumachen. Natur, frische Luft und nicht die staubigen Stadtmauern ...
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_06"); //Na, wenn du das so siehst ...
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_07"); //Ja. Und kein eintöniger Trott.
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_08"); //Wohl war! Du kennst die augenblickliche Situation?
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_09"); //Nun, ich weiß von Torgan, dass Dragomir mit seiner Gruppe unterhalb der Sonnenkreistreppe festsitzt und angegriffen wird.
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_10"); //Du kennst Torgan?
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_11"); //Jo. Ich musste letzhin was bei Torgan abliefern.
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_12"); //Da hieß es dann, ich solle mich hier postieren und auf Nachricht warten.
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_13"); //Ich soll dir von Cyrco ausrichten, unbedingt Dragomir zu unterstützen.
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_14"); //Er wird angegriffen und ohne deine Hilfe vielleicht nicht überstehen können.
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_15"); //Ich habe geahnt, dass so etwas passieren würde. Ich mache mich sofort auf den Weg. Bis später.
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_16"); //Warte. Ich habe hier noch ein paar Tränke von Cyrco für Dragomir. Nimm sie mit.
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_17"); //Ah, sehr gut. Das wird ihm auf jeden Fall helfen. Wieviele hast du?
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_18"); //Hier hast du je zehn Heil- und zehn Manatränke.
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_00"); //Well, Rangar! What brings you here?
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_01"); //Just stop it! There was some vagabond at Lord Andre's place who made me look so vexed that I was all over the guards.
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_02"); //Everybody pushed me around. I just took off.
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_03"); //And then what?
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_04"); //Then I spoke to Dragomir in the tavern later.
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_05"); //He offered to join the hunters. Nature, fresh air and not the dusty city walls...
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_06"); //Well, if that's what you think...
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_07"); //Yeah. And not a dreary rut.
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_08"); //Was well! You know the current situation?
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_09"); //Well, I know from Torgan that Dragomir and his group are trapped under the solar circle staircase and attacked.
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_10"); //You know Torgan?
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_11"); //Jo. I had to drop something off at Torgan's the other day.
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_12"); //Then I was told to position myself here and wait for a message.
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_13"); //Cyrco wants me to tell you to support Dragomir.
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_14"); //He will be attacked and may not survive without your help.
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_15"); //I knew something like this would happen. I'll be on my way right away. See you later.
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_16"); //Wait. Wait. I have some more Cyrco potions for Dragomir here. Take her with you.
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_17"); //Ah, very good. That'll definitely help him. How many do you have?
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_18"); //Here you have ten healing drinks and ten mana drinks.
 
 	Npc_RemoveInvItems	(hero, ItPo_Health_01, 10);
 	Npc_RemoveInvItems	(hero, ItPo_Mana_01, 10);
 
-	B_ShowGivenThings	("20 Tränke gegeben");
+	B_ShowGivenThings	("20 potions given");
 
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_19"); //Danke. Das ist aber eine verdammte Menge.
-	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_20"); //Die wird er gut brauchen können. Hier hast du ein paar Wolfszähne, vielleicht kannst du sie gebrauchen.
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_19"); //Thanks. That's a hell of a lot.
+	AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_20"); //He'll need them. Here's some wolf teeth, maybe you could use them.
 
 	B_GiveInvItems	(self, hero, ItAt_Teeth, 4);
 
-	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_21"); //So, ich muss zurück.
+	AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_21"); //So, I have to go back.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Novize_JG_Pass_Hi))
 	{
-		AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_22"); //Dann solltest du dich vielleicht auf dem Weg dorthin um diese Gestalt kümmern, die hier vorhin vorbeigekommen ist.
-		AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_23"); //Was für eine Gestalt war das?
-		AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_24"); //Sah aus wie ein Novize, hat aber ziemlich seltsam geschaut. Ist über den Pass ins Minental gegangen, sehr weit kann er noch nicht gekommen sein.
+		AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_22"); //Then you might want to take care of that figure on the way over here.
+		AI_Output(hero, self, "Info_Mod_Rangar_DragoHelp_15_23"); //What kind of figure was that?
+		AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_24"); //He looked like a novice, but he looked rather strange. Has gone over the pass into the Minental, he can not have come very far yet.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_25"); //Viel Glück, Kumpel.
+		AI_Output(self, hero, "Info_Mod_Rangar_DragoHelp_07_25"); //Good luck, buddy.
 	};
 
 	AI_StopProcessInfos	(self);
@@ -81,7 +81,7 @@ INSTANCE Info_Mod_Rangar_Lernen_Armbrust (C_INFO)
 	information	= Info_Mod_Rangar_Lernen_Armbrust_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Armbrustschießen bei.";
+	description	= "Teach me crossbow shooting.";
 };
 
 FUNC INT Info_Mod_Rangar_Lernen_Armbrust_Condition()
@@ -98,11 +98,11 @@ FUNC INT Info_Mod_Rangar_Lernen_Armbrust_Condition()
 
 FUNC VOID Info_Mod_Rangar_Lernen_Armbrust_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rangar_Lernen_Armbrust_15_00"); //Bring mir Armbrustschießen bei.
+	AI_Output(hero, self, "Info_Mod_Rangar_Lernen_Armbrust_15_00"); //Teach me crossbow shooting.
 
 	Info_ClearChoices	(Info_Mod_Rangar_Lernen_Armbrust);
 	
-	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, "Zurück.", Info_Mod_Rangar_Lernen_Armbrust_BACK);
+	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, "Back off.", Info_Mod_Rangar_Lernen_Armbrust_BACK);
 	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_CrossBow)), Info_Mod_Rangar_Lernen_Armbrust_5);
 	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow1, B_GetLearnCostTalent(hero, NPC_TALENT_CrossBow, 1)), Info_Mod_Rangar_Lernen_Armbrust_1);
 };
@@ -118,7 +118,7 @@ FUNC VOID Info_Mod_Rangar_Lernen_Armbrust_5()
 
 	Info_ClearChoices	(Info_Mod_Rangar_Lernen_Armbrust);
 
-	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, "Zurück.", Info_Mod_Rangar_Lernen_Armbrust_BACK);
+	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, "Back off.", Info_Mod_Rangar_Lernen_Armbrust_BACK);
 	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_CrossBow)), Info_Mod_Rangar_Lernen_Armbrust_5);
 	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow1, B_GetLearnCostTalent(hero, NPC_TALENT_CrossBow, 1)), Info_Mod_Rangar_Lernen_Armbrust_1);
 };
@@ -129,7 +129,7 @@ FUNC VOID Info_Mod_Rangar_Lernen_Armbrust_1()
 
 	Info_ClearChoices	(Info_Mod_Rangar_Lernen_Armbrust);
 
-	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, "Zurück.", Info_Mod_Rangar_Lernen_Armbrust_BACK);
+	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, "Back off.", Info_Mod_Rangar_Lernen_Armbrust_BACK);
 	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_CrossBow)), Info_Mod_Rangar_Lernen_Armbrust_5);
 	Info_AddChoice	(Info_Mod_Rangar_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow1, B_GetLearnCostTalent(hero, NPC_TALENT_CrossBow, 1)), Info_Mod_Rangar_Lernen_Armbrust_1);
 };

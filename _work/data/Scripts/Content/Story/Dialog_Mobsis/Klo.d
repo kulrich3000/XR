@@ -18,7 +18,7 @@ INSTANCE PC_Klo_Trollfett (C_INFO)
 	information	= PC_Klo_Trollfett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Trollfett ausschütten";
+	description	= "Spill troll grease";
 };
 
 FUNC INT PC_Klo_Trollfett_Condition()
@@ -36,7 +36,7 @@ FUNC VOID PC_Klo_Trollfett_Info()
 
 	Wld_PlayEffect("FX_EarthQuake",  hero, hero, 0, 0, 0, FALSE );
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_WASSERWERK, "Das Fett hat eine Wirkung erzielt. Mal sehen, was Wendel dazu sagt.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_WASSERWERK, "The fat has had an effect. Let's see what Wendel has to say.");
 
 	Wld_InsertNpc	(Mod_7483_OUT_Endres_REL, "REL_CITY_364");
 

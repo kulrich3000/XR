@@ -31,7 +31,7 @@ instance DIA_Mil_332_Stadtwache_PERM (C_INFO)
 	condition	= DIA_Mil_332_Stadtwache_PERM_Condition;
 	information	= DIA_Mil_332_Stadtwache_PERM_Info;
 	permanent 	= TRUE;
-	description	= "Wie steht's?";
+	description	= "What's the score?";
 };
 
 func int DIA_Mil_332_Stadtwache_PERM_Condition ()
@@ -41,7 +41,7 @@ func int DIA_Mil_332_Stadtwache_PERM_Condition ()
 
 func void DIA_Mil_332_Stadtwache_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Mil_332_Stadtwache_PERM_15_00"); //Wie steht's?
-	AI_Output			(self, other, "DIA_Mil_332_Stadtwache_PERM_04_01"); //Geh weiter! Ich bin im Dienst!
+	AI_Output			(other, self, "DIA_Mil_332_Stadtwache_PERM_15_00"); //What's the score?
+	AI_Output			(self, other, "DIA_Mil_332_Stadtwache_PERM_04_01"); //Keep going! I'm on duty!
 	AI_StopProcessInfos (self);
 };

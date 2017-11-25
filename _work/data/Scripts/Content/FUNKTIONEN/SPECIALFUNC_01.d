@@ -1835,7 +1835,7 @@ FUNC VOID SPECIALFUNC()
 			{
 				Mod_LobartRuebinator = 2;
 
-				B_LogEntry	(TOPIC_MOD_RUEBENZIEHEN, "Ich habe endlich alle Rüben. Jetzt muss ich sie nur noch bei Lobart abliefern.");
+				B_LogEntry	(TOPIC_MOD_RUEBENZIEHEN, "I finally have all the turnips. Now all I have to do is drop them off at Lobart's.");
 
 				B_RaiseAttribute_Rest (hero, ATR_STRENGTH, 1);
 				

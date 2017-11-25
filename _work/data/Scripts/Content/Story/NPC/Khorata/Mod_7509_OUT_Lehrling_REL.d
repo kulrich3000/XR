@@ -1,7 +1,7 @@
 instance Mod_7509_OUT_Lehrling_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lehrling";
+	name 		= "apprentice";
 	guild 		= GIL_OUT;
 	id 			= 7509;
 	voice 		= 24;

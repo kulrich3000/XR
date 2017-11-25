@@ -14,7 +14,7 @@ INSTANCE Info_ReisBau_2_EXIT(C_INFO)
 	condition	= Info_ReisBau_2_EXIT_Condition;
 	information	= Info_ReisBau_2_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_ReisBau_2_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_ReisBau_2_WichtigePersonen(C_INFO)
 	condition	= Info_ReisBau_2_WichtigePersonen_Condition;
 	information	= Info_ReisBau_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Arbeitest du freiwillig auf den Reisfeldern?";
+	description = "Are you volunteering on the rice fields?";
 };                       
 
 FUNC INT Info_ReisBau_2_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_ReisBau_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_ReisBau_2_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_2_WichtigePersonen_15_00"); //Arbeitest du freiwillig auf den Reisfeldern?
-	AI_Output(self,hero,"Info_ReisBau_2_WichtigePersonen_02_01"); //Ja. Ja das tue ich. Ist nämlich besser freiwillig zu arbeiten, als von den Schlägern vom Reislord abgeholt zu werden.
-	AI_Output(hero,self,"Info_ReisBau_2_WichtigePersonen_15_02"); //So so ...
+	AI_Output(hero,self,"Info_ReisBau_2_WichtigePersonen_15_00"); //Are you volunteering on the rice fields?
+	AI_Output(self,hero,"Info_ReisBau_2_WichtigePersonen_02_01"); //Yeah. Yes, I do, sir. It is better to work voluntarily than to be picked up by the paddles of the rice lord.
+	AI_Output(hero,self,"Info_ReisBau_2_WichtigePersonen_15_02"); //So so...
 };
 
 INSTANCE Info_ReisBau_2_DankeProBauer(C_INFO)
@@ -72,8 +72,8 @@ FUNC INT Info_ReisBau_2_DankeProBauer_Condition()
 
 FUNC VOID Info_ReisBau_2_DankeProBauer_Info()
 {
-	AI_Output(self,hero,"Info_ReisBau_2_DankeProBauer_02_00"); //Ahh, da bist du ja. Geh am besten gleich zu Horatio.
-	AI_Output(self,hero,"Info_ReisBau_2_DankeProBauer_02_01"); //Wir haben ein kleines Dankeschön für dich.
+	AI_Output(self,hero,"Info_ReisBau_2_DankeProBauer_02_00"); //Ahh, there you are. Why don't you go straight to Horatio's?
+	AI_Output(self,hero,"Info_ReisBau_2_DankeProBauer_02_01"); //We have a little thank you for you.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_ReisBau_2_DasLager(C_INFO)
 	condition	= Info_ReisBau_2_DasLager_Condition;
 	information	= Info_ReisBau_2_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über das Lager erzählen?";
+	description = "What can you tell me about the camp?";
 };                       
 
 FUNC INT Info_ReisBau_2_DasLager_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_ReisBau_2_DasLager_Condition()
 
 FUNC VOID Info_ReisBau_2_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_2_DasLager_15_00"); //Was kannst du mir über das Lager erzählen?
-	AI_Output(self,hero,"Info_ReisBau_2_DasLager_02_01"); //Es ist seit dem Fall der Barriere viel sicherer geworden. Die Banditen haben sich jetzt entweder den Söldnern angeschlossen oder sind in ein anderes Lager gegangen.
+	AI_Output(hero,self,"Info_ReisBau_2_DasLager_15_00"); //What can you tell me about the camp?
+	AI_Output(self,hero,"Info_ReisBau_2_DasLager_02_01"); //It has become much safer since the fall of the barrier. The bandits have now either joined the mercenaries or moved to another camp.
 };
 
 // *************************************************************************
@@ -110,7 +110,7 @@ INSTANCE Info_ReisBau_2_DieLage(C_INFO) // E1
 	condition	= Info_ReisBau_2_DieLage_Condition;
 	information	= Info_ReisBau_2_DieLage_Info;
 	permanent	= 1;
-	description = "Alles klar bei dir?";
+	description = "Everything okay with you?";
 };                       
 
 FUNC INT Info_ReisBau_2_DieLage_Condition()
@@ -120,9 +120,9 @@ FUNC INT Info_ReisBau_2_DieLage_Condition()
 
 FUNC VOID Info_ReisBau_2_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_2_DieLage_15_00"); //Alles klar bei dir?
-	AI_Output(self,hero,"Info_ReisBau_2_DieLage_02_01"); //Was willst du? Hat Der Reislord dich geschickt? Ich arbeite doch jeden Tag!
-	AI_Output(hero,self,"Info_ReisBau_2_DieLage_15_02"); //Niemand hat mich geschickt - ich will mich nur ein bisschen unterhalten.
+	AI_Output(hero,self,"Info_ReisBau_2_DieLage_15_00"); //Everything okay with you?
+	AI_Output(self,hero,"Info_ReisBau_2_DieLage_02_01"); //What do you want? The rice lord send you? I work every day!
+	AI_Output(hero,self,"Info_ReisBau_2_DieLage_15_02"); //No one sent me - I just want to talk a little.
 };
 
 INSTANCE Info_Mod_ReisBau_2_Pickpocket (C_INFO)

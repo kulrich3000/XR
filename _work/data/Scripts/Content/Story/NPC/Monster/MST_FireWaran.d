@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_FireWaran(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Feuerwaran";
+	name							=	"Fire Lizard";
 	guild							=	GIL_WARAN;
 	aivar[AIV_MM_REAL_ID]			= 	ID_FIREWARAN;
 	level							=	30;
@@ -99,7 +99,7 @@ func void B_Setvisuals_EisWaran()
 //*****************
 INSTANCE DemonEchse_BK	(Mst_Default_FireWaran)
 {
-	name = "Dämonenechse";
+	name = "demon lizard";
 
 	CreateInvItems	(self, ItAt_WaranFireTongue, 2);
 
@@ -117,7 +117,7 @@ INSTANCE FireWaran	(Mst_Default_FireWaran)
 
 INSTANCE EisWaran	(Mst_Default_FireWaran)
 {
-	name	= "Eiswaran";
+	name	= "ice monitor";
 
 	protection	[PROT_FIRE]		=	0;
 	damagetype 				=	DAM_MAGIC;

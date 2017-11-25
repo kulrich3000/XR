@@ -1,6 +1,6 @@
 INSTANCE Monster_11059_Kobold_MT	(Mst_Default_Gobbo_Green)
 {
-	name	=	"Schiffskobold";
+	name	=	"mariner";
 	
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_KOBOLD;

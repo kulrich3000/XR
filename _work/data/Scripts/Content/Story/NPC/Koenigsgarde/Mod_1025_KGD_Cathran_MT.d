@@ -2,7 +2,7 @@ instance Mod_1025_KGD_Cathran_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Cathran";
+	name 		=	"cathran";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_OUT;
 	voice 		=	6;

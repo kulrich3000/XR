@@ -6,7 +6,7 @@ INSTANCE Info_Mod_EchseSchwarz_01_Sumpfhaizahn (C_INFO)
 	information	= Info_Mod_EchseSchwarz_01_Sumpfhaizahn_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Sumpfhaizahn geben)";
+	description	= "(giving swamp hair teeth)";
 };
 
 FUNC INT Info_Mod_EchseSchwarz_01_Sumpfhaizahn_Condition()
@@ -26,7 +26,7 @@ FUNC VOID Info_Mod_EchseSchwarz_01_Sumpfhaizahn_Info()
 
 	if (Mod_ECHSI_SumpfhaiZaehne == 5)
 	{
-		B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Jede schwarze Echse hat nun einen Sumpfhaizahn bekommen.");
+		B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Every black lizard has now got a swamp shark tooth.");
 	};
 };
 

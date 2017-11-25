@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Albrecht_Hi (C_INFO)
 	information	= Info_Mod_Albrecht_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Albrecht_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Albrecht_Hi_Condition()
 FUNC VOID Info_Mod_Albrecht_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Albrecht_Hi_03_01"); //Ich bin Albrecht, Paladin des Königs. Ich lehre den anderen Paladinen den Umgang mit unserer Magie.
+	AI_Output(self, hero, "Info_Mod_Albrecht_Hi_03_01"); //I am Albrecht, Paladin of the King. I teach the other paladins how to use our magic.
 };
 
 instance Info_Mod_Albrecht_IstPala (C_INFO)
@@ -41,8 +41,8 @@ func int Info_Mod_Albrecht_IstPala_Condition()
 
 func void Info_Mod_Albrecht_IstPala_Info()
 {
-	AI_Output (self, other, "Info_Mod_Albrecht_IstPala_03_00"); //Du gehörst nun also zu uns. Damit eröffnet sich dir auch die Magie der Paladine.
-	AI_Output (self, other, "Info_Mod_Albrecht_IstPala_03_01"); //Ich kann sie dich lehren, wenn du möchtest.
+	AI_Output (self, other, "Info_Mod_Albrecht_IstPala_03_00"); //So you're with us now. This opens up the magic of the paladins to you.
+	AI_Output (self, other, "Info_Mod_Albrecht_IstPala_03_01"); //I can teach them to you if you want.
 };
 
 instance Info_Mod_Albrecht_CanTeach (C_INFO)
@@ -53,7 +53,7 @@ instance Info_Mod_Albrecht_CanTeach (C_INFO)
 	information	= Info_Mod_Albrecht_CanTeach_Info;
 	permanent    	= 1;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 func int Info_Mod_Albrecht_CanTeach_Condition()
@@ -72,14 +72,14 @@ func void Info_Mod_Albrecht_CanTeach_Info()
 	
 	if (Mod_Gilde == 3)
 	{
-		AI_Output (self, other, "Info_Mod_Albrecht_CanTeach_03_00"); //Wenn du dich würdig erweißt, werde ich dir die magischen Runen der Paladine verleihen.
-		AI_Output (self, other, "Info_Mod_Albrecht_CanTeach_03_01"); //Außerdem kann ich dir beibringen, deine magische Kraft zu vergrößern.
+		AI_Output (self, other, "Info_Mod_Albrecht_CanTeach_03_00"); //If you get yourself worthy, I will give you the magical runes of the paladins.
+		AI_Output (self, other, "Info_Mod_Albrecht_CanTeach_03_01"); //Besides, I can teach you how to increase your magic power.
 		Albrecht_TeachMANA = TRUE;
-		B_LogEntry (TOPIC_MOD_LEHRER_STADT, "Paladin Albrecht kann mir helfen, meine magische Kraft zu steigern.");
+		B_LogEntry (TOPIC_MOD_LEHRER_STADT, "Paladin Albrecht can help me to increase my magical power.");
 	}
 	else
 	{	
-		AI_Output (self, other, "Info_Mod_Albrecht_CanTeach_03_02"); //Ich unterweise nur Paladine.
+		AI_Output (self, other, "Info_Mod_Albrecht_CanTeach_03_02"); //I'm just teaching Paladin.
 	};
 };
 
@@ -91,7 +91,7 @@ instance Info_Mod_Albrecht_TEACHPalRunes (C_INFO)
 	information	= Info_Mod_Albrecht_TEACHPalRunes_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bin ich würdig, eine Rune zu empfangen?";
+	description	= "Am I worthy to receive a rune?";
 };
 
 func int Info_Mod_Albrecht_TEACHPalRunes_Condition()
@@ -104,14 +104,14 @@ func int Info_Mod_Albrecht_TEACHPalRunes_Condition()
 
 func void Info_Mod_Albrecht_TEACHPalRunes_Info()
 {
-	AI_Output (other, self, "Info_Mod_Albrecht_TEACHPalRunes_15_00"); //Bin ich würdig, eine Rune zu empfangen?
+	AI_Output (other, self, "Info_Mod_Albrecht_TEACHPalRunes_15_00"); //Am I worthy to receive a rune?
 	
 	if (PLAYER_TALENT_RUNES [SPL_PalLight] == FALSE)
 	{
 		
-		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_01"); //Als Zeichen deines Ranges verleihe ich dir die Rune des Lichtes. Sie ist Symbol der Wahrheit und der Gerechtigkeit.
-		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_02"); //Leuchtet all denjenigen den Weg, die den aufrechten Pfad Innos' begehen.
-		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_03"); //Alle weiteren Runen musst du dir verdienen. Komme wieder, wenn du denkst, dass du dich ihrer würdig erwiesen hast.
+		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_01"); //As a sign of your rank, I give you the rune of light. It is a symbol of truth and justice.
+		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_02"); //Illuminates the path for all those who walk the upright path of Inno.
+		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_03"); //All other runes you have to earn. Come back when you think you're worthy of her.
 	
 		PLAYER_TALENT_RUNES [SPL_PalLight] = TRUE;
 	
@@ -120,13 +120,13 @@ func void Info_Mod_Albrecht_TEACHPalRunes_Info()
 	}
 	else
 	{
-		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_04"); //Für welchen Weg entscheidest du dich?
-		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_05"); //Den Weg der Heilung oder den Weg des Kampfes?
+		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_04"); //Which way do you choose?
+		AI_Output (self,other, "Info_Mod_Albrecht_TEACHPalRunes_03_05"); //The path of healing or the path of struggle?
 		
 		Info_ClearChoices   (Info_Mod_Albrecht_TEACHPalRunes);
 		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,DIALOG_BACK,Info_Mod_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,"Ich wähle den Weg der Heilung.",Info_Mod_Albrecht_TEACHPalRunes_Heal);
-		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,"Ich wähle den Weg des Kampfes.",Info_Mod_Albrecht_TEACHPalRunes_Combat);
+		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,"I choose the path of healing.",Info_Mod_Albrecht_TEACHPalRunes_Heal);
+		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,"I choose the path of struggle.",Info_Mod_Albrecht_TEACHPalRunes_Combat);
 	};	
 };
 
@@ -137,32 +137,32 @@ FUNC VOID Info_Mod_Albrecht_TEACHPalRunes_BACK()
 
 FUNC VOID B_Albrecht_YouAreNotWorthy ()
 {
-	AI_Output (self ,other,"B_Albrecht_YouAreNotWorthy_03_00"); //Du bist noch nicht würdig, den nächsten Spruch dieses Weges zu erhalten.
+	AI_Output (self ,other,"B_Albrecht_YouAreNotWorthy_03_00"); //You are not yet worthy to receive the next saying of this way.
 };
 
 FUNC VOID Info_Mod_Albrecht_TEACHPalRunes_Heal()
 {
-	AI_Output (other,self ,"Info_Mod_Albrecht_TEACHPalRunes_Heal_15_00"); //Ich wähle den Weg der Heilung.
+	AI_Output (other,self ,"Info_Mod_Albrecht_TEACHPalRunes_Heal_15_00"); //I choose the path of healing.
 	if  (PLAYER_TALENT_RUNES [SPL_PalLightHeal] == FALSE)
 	&&	(Kapitel >= 5)
 	{
 		Info_ClearChoices   (Info_Mod_Albrecht_TEACHPalRunes);
 		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,DIALOG_BACK,Info_Mod_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Leichte Wunden heilen", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalLightHeal);
+		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Heal Light Wounds", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalLightHeal);
 	}
 	else if 	(PLAYER_TALENT_RUNES [SPL_PalMediumHeal] == FALSE)
 	&&	(Kapitel >= 5)
 	{
 		Info_ClearChoices   (Info_Mod_Albrecht_TEACHPalRunes);
 		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,DIALOG_BACK,Info_Mod_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Mittlere Wunden heilen", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalMediumHeal);
+		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Heal Medium Wounds", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalMediumHeal);
 	}
 	else if 	(PLAYER_TALENT_RUNES [SPL_PalFullHeal] == FALSE)
 	&&	(Kapitel >= 6)
 	{
 		Info_ClearChoices   (Info_Mod_Albrecht_TEACHPalRunes);
 		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,DIALOG_BACK,Info_Mod_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Schwere Wunden heilen", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalFullHeal);
+		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Heal Heavy Wounds", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalFullHeal);
 	}
 	else
 	{
@@ -172,7 +172,7 @@ FUNC VOID Info_Mod_Albrecht_TEACHPalRunes_Heal()
 
 FUNC VOID Info_Mod_Albrecht_TEACHPalRunes_Combat()
 {
-	AI_Output (other,self ,"Info_Mod_Albrecht_TEACHPalRunes_Combat_15_00"); //Ich wähle den Weg des Kampfes.
+	AI_Output (other,self ,"Info_Mod_Albrecht_TEACHPalRunes_Combat_15_00"); //I choose the path of struggle.
 	
 	if	(PLAYER_TALENT_RUNES [SPL_PalHolyBolt] == FALSE)
 	&&	(Kapitel >= 5)
@@ -186,14 +186,14 @@ FUNC VOID Info_Mod_Albrecht_TEACHPalRunes_Combat()
 	{
 		Info_ClearChoices   (Info_Mod_Albrecht_TEACHPalRunes);
 		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,DIALOG_BACK,Info_Mod_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Böses austreiben", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalRepelEvil);
+		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("cast out evil", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalRepelEvil);
 	}
 	else if (PLAYER_TALENT_RUNES [SPL_PalDestroyEvil] == FALSE)
 	&&	(Kapitel >= 6)
 	{
 		Info_ClearChoices   (Info_Mod_Albrecht_TEACHPalRunes);
 		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,DIALOG_BACK,Info_Mod_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Böses vernichten", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalDestroyEvil);
+		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Destroy Evil", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalDestroyEvil);
 	}
 	else
 	{
@@ -311,7 +311,7 @@ instance Info_Mod_Albrecht_Teach		(C_INFO)
 	condition	 = 	Info_Mod_Albrecht_Teach_Condition;
 	information	 = 	Info_Mod_Albrecht_Teach_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Ich will meine magische Kraft steigern.";
+	description	 = 	"I want to increase my magic power.";
 };
 func int Info_Mod_Albrecht_Teach_Condition ()
 {	
@@ -336,7 +336,7 @@ func void Info_Mod_Albrecht_Teach_BACK()
 {
 	if (other.attribute [ATR_MANA_MAX] >= T_MED)
 	{
-		AI_Output (self, other, "Info_Mod_Albrecht_Teach_03_00"); //Wenn du deine magische Kraft weiter steigern willst, musst du dir einen anderen Lehrer suchen.
+		AI_Output (self, other, "Info_Mod_Albrecht_Teach_03_00"); //If you want to increase your magical power, you have to find another teacher.
 	};
 
 	Info_ClearChoices (Info_Mod_Albrecht_TEACH);
@@ -497,7 +497,7 @@ FUNC INT Info_Mod_Albrecht_EXIT_Condition()
 
 FUNC VOID Info_Mod_Albrecht_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albrecht_EXIT_03_00"); //Für den König!
+	AI_Output(self, hero, "Info_Mod_Albrecht_EXIT_03_00"); //For the King!
 	
 	AI_StopProcessInfos	(self);
 };

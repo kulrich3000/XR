@@ -1,7 +1,7 @@
 instance Mod_7518_OUT_Davon_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Davon"; 
+	name 		= "Thereof"; 
 	guild 		= GIL_OUT;
 	id 			= 7518;
 	voice 		= 24;

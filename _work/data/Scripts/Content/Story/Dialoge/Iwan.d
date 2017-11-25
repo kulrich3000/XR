@@ -15,21 +15,21 @@ FUNC INT Info_Mod_Iwan_Hi_Condition()
 
 FUNC VOID Info_Mod_Iwan_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_00"); //Was, was ist vorgefallen?
-	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_01"); //Die Klinge im Nacken und mein kopfloser Körper sind das letzte woran ich mich erinnere, dann nur noch Fetzen von Wahrnehmungen, Körper und Kopf, wie gefangen, dass allmähliche Schwinden meiner körperlichen und magischen Kräfte.
-	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_02"); //Und jetzt stehe ich wieder lebend hier.
-	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_03"); //(zum Held) Es war dein Verdienst, das spüre ich.
-	AI_Output(hero, self, "Info_Mod_Iwan_Hi_15_04"); //Ja, ich habe durchaus meinen Teil dazu beigetragen.
-	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_05"); //Ein begabter Kämpfer und Magier für das Gute musst du sein und meine Unterstützung sollst du bekommen, ehe ich weiter fortfahre, Dämonen und Untote zu jagen und zu vernichten.
-	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_06"); //Hier, nimm dieses Rezept und diese Behälter.
+	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_00"); //What, what happened?
+	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_01"); //The blade in the back of my neck and my headless body are the last thing I remember, then only shreds of perceptions, body and head, as if trapped, that gradual dwindling of my physical and magical powers.
+	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_02"); //And now I'm standing here alive again.
+	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_03"); //It was your merit, I can feel it.
+	AI_Output(hero, self, "Info_Mod_Iwan_Hi_15_04"); //Yes, I certainly did my part.
+	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_05"); //You must be a gifted warrior and mage for goodness, and you must receive my support before I continue to hunt down and destroy demons and undead.
+	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_06"); //Here, take this recipe and these containers.
 
 	CreateInvItems	(hero, ItWr_Rezept_Iwan, 1);
 	CreateInvItems	(hero, ItMi_Salpeter, 5);
 
-	B_ShowGivenThings	("5 Fläschchen und Rezept erhalten");
+	B_ShowGivenThings	("5 bottles and recipe received");
 
-	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_07"); //Sie werden dir hoffentlich eine Hilfe sein, dein Bestreben nach Rechtschaffenheit und Gutem umzusetzen.
-	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_08"); //Wer weiß, vielleicht kreuzen sich eines Tages wieder unsere Wege. Die Götter mögen dich behüten.
+	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_07"); //They will hopefully help you to realize your aspiration for righteousness and goodness.
+	AI_Output(self, hero, "Info_Mod_Iwan_Hi_11_08"); //Who knows, maybe one day our paths will cross again. The gods may keep you safe.
 
 	B_GivePlayerXP	(2000);
 

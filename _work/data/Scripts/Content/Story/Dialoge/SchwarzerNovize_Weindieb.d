@@ -6,7 +6,7 @@ INSTANCE Info_Mod_SchwarzerNovize_Weindieb_Hi (C_INFO)
 	information	= Info_Mod_SchwarzerNovize_Weindieb_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wen haben wir denn hier?";
+	description	= "Who do we have here?";
 };
 
 FUNC INT Info_Mod_SchwarzerNovize_Weindieb_Hi_Condition()
@@ -16,33 +16,33 @@ FUNC INT Info_Mod_SchwarzerNovize_Weindieb_Hi_Condition()
 
 FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_15_00"); //Wen haben wir denn hier?
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_11_01"); //(erschrocken) Ohh, verdammt ... was willst du?
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_15_00"); //Who do we have here?
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_11_01"); //Oh, damn... what do you want?
 
 	Info_ClearChoices	(Info_Mod_SchwarzerNovize_Weindieb_Hi);
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Gorax_Andokai))
 	{
-		Info_AddChoice	(Info_Mod_SchwarzerNovize_Weindieb_Hi, "Immer die Ruhe. Ich habe selbst mal für Andokai den Wein gemopst.", Info_Mod_SchwarzerNovize_Weindieb_Hi_C);
+		Info_AddChoice	(Info_Mod_SchwarzerNovize_Weindieb_Hi, "Take it easy, now. I poked the wine for Andokai myself once.", Info_Mod_SchwarzerNovize_Weindieb_Hi_C);
 	};
 
-	Info_AddChoice	(Info_Mod_SchwarzerNovize_Weindieb_Hi, "Dir klarmachen, dass du und deinesgleichen euch besser nie wieder hier blicken lasst.", Info_Mod_SchwarzerNovize_Weindieb_Hi_B);
-	Info_AddChoice	(Info_Mod_SchwarzerNovize_Weindieb_Hi, "Dich für deinen dreisten Diebstahl bestrafen, dreckiger Dämonenlehrling.", Info_Mod_SchwarzerNovize_Weindieb_Hi_A);
+	Info_AddChoice	(Info_Mod_SchwarzerNovize_Weindieb_Hi, "Make it clear to you that you and your kind better never come back here again.", Info_Mod_SchwarzerNovize_Weindieb_Hi_B);
+	Info_AddChoice	(Info_Mod_SchwarzerNovize_Weindieb_Hi, "Punish you for your bold theft, filthy demon apprentice.", Info_Mod_SchwarzerNovize_Weindieb_Hi_A);
 };
 
 FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_15_00"); //Immer die Ruhe. Ich habe selbst mal für Andokai den Wein gemopst.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_11_01"); //(erleichtert) Ohh, Mann, einen Moment habe ich echt gedacht, du willst mir jetzt die Hölle heiß machen. Aber ja, jetzt erkenne ich dich.
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_15_02"); //Du und die anderen Jungs, ihr solltet euch aber besser in Zukunft nicht mehr im Kloster blicken lassen. Serpentes hat Verdacht geschöpft.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_11_03"); //Tatsächlich? Danke für die Warnung, Mann. Hier, nimm ein paar Stängel Sumpfkraut und paar Flaschen Wein zum Dank.
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_15_00"); //Take it easy, now. I poked the wine for Andokai myself once.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_11_01"); //Ohh, man, for a moment I really thought you were trying to get me into hell. But yes, now I recognize you.
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_15_02"); //You and the other boys, you better not come back to the monastery in the future. Serpentes has gotten suspicious.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_11_03"); //Is that so? Thanks for the warning, man. Here, take some stems of bogweed and a few bottles of wine to thank you.
 
 	CreateInvItems	(hero, ItMi_Joint, 8);
 	CreateInvItems	(hero, ItFo_KWine, 12);
 
-	B_ShowGivenThings	("8 Sumpfkrautstängel und 12 Klosterwein erhalten");
+	B_ShowGivenThings	("8 marsh herb stems and 12 monastery wines preserved");
 
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_11_04"); //Man sieht sich.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_C_11_04"); //See you around.
 
 	B_GivePlayerXP	(50);
 
@@ -55,8 +55,8 @@ FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_C()
 
 FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_B_15_00"); //Dir klarmachen, dass du und deinesgleichen euch besser nie wieder hier blicken lasst.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_B_11_01"); //Du weißt Bescheid? Ohh, Scheiße, nichts wie weg!
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_B_15_00"); //Make it clear to you that you and your kind better never come back here again.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_B_11_01"); //You know about this? Ohh, shit, let's go!
 
 	Info_ClearChoices	(Info_Mod_SchwarzerNovize_Weindieb_Hi);
 
@@ -67,8 +67,8 @@ FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_B()
 
 FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_A_15_00"); //Dich für deinen dreisten Diebstahl bestrafen, dreckiger Dämonenlehrling.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_A_11_01"); //Ohh, Scheiße ...
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovize_Weindieb_Hi_A_15_00"); //Punish you for your bold theft, filthy demon apprentice.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovize_Weindieb_Hi_A_11_01"); //Ohh, shit...
 
 	Info_ClearChoices	(Info_Mod_SchwarzerNovize_Weindieb_Hi);
 

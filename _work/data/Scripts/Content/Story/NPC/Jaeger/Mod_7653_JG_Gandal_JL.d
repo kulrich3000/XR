@@ -1,7 +1,7 @@
 instance Mod_7653_JG_Gandal_JL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gandal";
+	name 		= "vandal";
 	guild 		= GIL_OUT;
 	id 			= 7653;
 	voice 		= 12;

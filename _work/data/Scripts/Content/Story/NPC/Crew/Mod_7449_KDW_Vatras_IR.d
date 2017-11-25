@@ -1,7 +1,7 @@
 INSTANCE Mod_7449_KDW_Vatras_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Vatras"; 
+	name 		= "patras"; 
 	guild 		= GIL_OUT;
 	id 			= 7449;
 	voice 		= 5;

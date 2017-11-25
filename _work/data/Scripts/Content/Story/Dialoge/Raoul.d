@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Raoul_Hi (C_INFO)
 	information	= Info_Mod_Raoul_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Seit wann schiebt ihr hier Wache?";
+	description	= "How long have you been keeping watch?";
 };
 
 FUNC INT Info_Mod_Raoul_Hi_Condition()
@@ -19,14 +19,14 @@ FUNC INT Info_Mod_Raoul_Hi_Condition()
 
 FUNC VOID Info_Mod_Raoul_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_00"); //Seit wann schiebt ihr hier Wache und warum dürfen jetzt keine aus dem Sumpflager mehr hinein, obwohl da einer drin sitzt?
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_01"); //Tja, wir sind hier die Türsteher, seitdem die neue Regel erlassen wurde, dass in der Kneipe kein Sumpfkraut mehr geraucht werden darf, und somit auch keine Sumpffritzen rein dürfen.
-	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_02"); //Und warum besteht dieses Verbot?
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_03"); //Lee will den unkontrollierten Konsum von Sumpfkraut eindämmen, damit die Männer mehr trainieren.
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_04"); //Und die anderen in der Kneipe sollen ja auch nicht durch den Sumpfkrautrauch in Mitleidenschaft gezogen werden, obwohl sie es vielleicht gar nicht wollen.
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_05"); //Jetzt darf nur noch außerhalb der Kneipe geraucht werden, aber wer zu oft dabei erwischt wird, bekommt eine Rüge und extra Stunden Training. (leiser, zu sich selbst) Tja, jetzt muss man vors Lager gehen, um zu rauchen.
-	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_06"); //Aber wieso ist der Typ aus dem Sumpflager ...
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_07"); //Tja, der war schon drin, bevor die neue Regelung in Kraft trat. Und unsere Aufgabe ist es ja nur darauf zu achten, dass keiner von denen hineinkommt.
+	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_00"); //Since when have you been keeping watch here and why can't anyone else get out of the swamp camp, even though there's one in there?
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_01"); //Well, we are the bouncers here since the new rule was enacted that no more swampweed may be smoked in the pub and therefore no swamp scribbles are allowed in.
+	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_02"); //And why is there such a ban?
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_03"); //Lee wants to contain the uncontrolled consumption of bogweed so that the men train more.
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_04"); //And the others in the pub should not be affected by swamp fumes, although they may not want to.
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_05"); //Now smoking is only allowed outside the pub, but if you get caught too often, you get a reprimand and extra hours of training. (quietly, to himself) Well, now you have to go to the camp to smoke.
+	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_06"); //But why is that guy from the swamp camp...
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_07"); //Well, it was there before the new rules came into effect. And our job is to make sure none of them get in.
 };
 
 INSTANCE Info_Mod_Raoul_Pickpocket (C_INFO)

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HofstaatGleichgewichtsminister_Hi (C_INFO)
 	information	= Info_Mod_HofstaatGleichgewichtsminister_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss zum Drogenminister.";
+	description	= "I have to see the secretary.";
 };
 
 FUNC INT Info_Mod_HofstaatGleichgewichtsminister_Hi_Condition()
@@ -19,12 +19,12 @@ FUNC INT Info_Mod_HofstaatGleichgewichtsminister_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatGleichgewichtsminister_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_00"); //Ich muss zum Drogenminister.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_01"); //Da bist du bei mir falsch, ich bin der Gleichgewichtsminister.
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_02"); //Ich weiß, aber der Jäger hat mir gesagt, du kannst mir helfen, zum Drogenminister zu kommen.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_03"); //Da hat er wohl Recht. Aber nur, wenn du mir das Codewort sagen kannst.
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_04"); //Lass mich raten ... Bananarama?
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_05"); //Richtig. Gehen wir.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_00"); //I have to see the secretary.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_01"); //You're wrong about me, I'm the Minister of Equilibrium.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_02"); //I know, but the hunter told me you could help me get to the secretary of drugs.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_03"); //I guess he's right. But only if you can tell me the code word.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_04"); //Let me guess.... Bananarama?
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_05"); //Right. Come on, let's go.
 
 	AI_StopProcessInfos	(self);
 
@@ -53,27 +53,27 @@ FUNC INT Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_Condition()
 
 FUNC VOID Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_00"); //Also Mann, du musst nur ganz ruhig werden.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_00"); //So, man, you just need to calm down.
 	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_01"); //Okay.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_02"); //Fühl einfach, wie der Wind dich durchströmt und eins mit dir wird.
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_03"); //Ist gut.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_04"); //Du musst fest sein wie der Stein und doch biegsam wie das Schilfrohr, verstehst du?
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_05"); //Mehr oder weniger.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_06"); //Das ist gut. Dann nimm jetzt dein Ziel in die Augen und ...
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_07"); //Geh über das Seil?
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_08"); //UM HIMMELS WILLEN BLOß NICHT! Da brichst du dir ja den Hals.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_09"); //Hier, der Schlüssel für die Leiter. Die Tür ist am Fuß des andren Hügels.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_02"); //Just feel the wind flow through you and become one with you.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_03"); //All right, all right.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_04"); //You have to be firm like the stone and yet flexible like the reed, you know?
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_05"); //More or less.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_06"); //That's good news. Then take your target into your eyes and...
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_07"); //Go over the rope?
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_08"); //TO THE SKY DOES NOT WANT TO BULL! You'll break your neck.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_09"); //Here's the key to the ladder. The door is at the foot of the other hill.
 
 	B_GiveInvItems	(self, hero, ItKe_HSDM, 1);
 
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_10"); //Was?! Wieso sind wir dann noch mal hier rauf gegangen?!
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_11"); //Mir gefällts hier oben.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_10"); //What?! Then why did we go up here again?!
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_11"); //I like it up here.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "START");
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der Gleichgewichtsminister hat mir den Schlüssel zu einer Tür im gegenüberliegenden Berg gegeben, in welchem sich eine Leiter befinden soll, die zum Drogenminister hinauf führt.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "The Minister of Equilibrium has given me the key to a door in the opposite mountain, where there is to be a ladder leading up to the Minister of Drugs.");
 };
 
 INSTANCE Info_Mod_HofstaatGleichgewichtsminister_Pickpocket (C_INFO)

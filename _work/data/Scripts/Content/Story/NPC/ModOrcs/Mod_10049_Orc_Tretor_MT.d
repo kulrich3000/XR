@@ -1,7 +1,7 @@
 INSTANCE Mod_10049_Orc_Tretor_MT (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Tretor";
+	name							=	"pedal";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	10049;
 	voice							=	18;

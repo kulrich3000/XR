@@ -14,7 +14,7 @@ INSTANCE Info_PsiNov_3_EXIT(C_INFO)
 	condition	= Info_PsiNov_3_EXIT_Condition;
 	information	= Info_PsiNov_3_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_PsiNov_3_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_PsiNov_3_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_PsiNov_3_EinerVonEuchWerden_Condition;
 	information	= Info_PsiNov_3_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Wie kann ich mich diesem Lager anschliessen?";
+	description = "How can I join this camp?";
 };                       
 
 FUNC INT Info_PsiNov_3_EinerVonEuchWerden_Condition()
@@ -54,9 +54,9 @@ FUNC INT Info_PsiNov_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_PsiNov_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_3_EinerVonEuchWerden_15_00"); //Wie kann ich mich diesem Lager anschließen?
-	AI_Output(self,hero,"Info_PsiNov_3_EinerVonEuchWerden_03_01"); //Das ist ganz einfach. Du musst einfach loslassen, Mann.
-	AI_Output(self,hero,"Info_PsiNov_3_EinerVonEuchWerden_03_02"); //Sprich mit den Gurus, sie werden dich leiten!
+	AI_Output(hero,self,"Info_PsiNov_3_EinerVonEuchWerden_15_00"); //How can I join this camp?
+	AI_Output(self,hero,"Info_PsiNov_3_EinerVonEuchWerden_03_01"); //It's very simple. You just gotta let go, man.
+	AI_Output(self,hero,"Info_PsiNov_3_EinerVonEuchWerden_03_02"); //Talk to the gurus, they will guide you!
 };
 
 INSTANCE Info_PsiNov_3_Sumpfkrautruestung (C_INFO) // E1
@@ -81,7 +81,7 @@ FUNC INT Info_PsiNov_3_Sumpfkrautruestung_Condition()
 
 FUNC VOID Info_PsiNov_3_Sumpfkrautruestung_Info()
 {
-	AI_Output(self,hero,"Info_PsiNov_3_Sumpfkrautruestung_03_00"); //Man, das riecht ja wie ein ganzes Feld voll Sumpfkraut.
+	AI_Output(self,hero,"Info_PsiNov_3_Sumpfkrautruestung_03_00"); //Man, that smells like a whole field of swampweed.
 };
 
 // *************************************************************************
@@ -94,7 +94,7 @@ INSTANCE Info_PsiNov_3_WichtigePersonen(C_INFO)
 	condition	= Info_PsiNov_3_WichtigePersonen_Condition;
 	information	= Info_PsiNov_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer ist hier der Boss?";
+	description = "Who's the boss here?";
 };                       
 
 FUNC INT Info_PsiNov_3_WichtigePersonen_Condition()
@@ -104,8 +104,8 @@ FUNC INT Info_PsiNov_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_PsiNov_3_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_3_WichtigePersonen_15_00"); //Wer ist hier der Boss?
-	AI_Output(self,hero,"Info_PsiNov_3_WichtigePersonen_03_01"); //Cor Cadar und Cor Angar!
+	AI_Output(hero,self,"Info_PsiNov_3_WichtigePersonen_15_00"); //Who's the boss here?
+	AI_Output(self,hero,"Info_PsiNov_3_WichtigePersonen_03_01"); //Cor Cadar and Cor Angar!
 };
 
 // *************************************************************************
@@ -118,7 +118,7 @@ INSTANCE Info_PsiNov_3_DasLager(C_INFO)
 	condition	= Info_PsiNov_3_DasLager_Condition;
 	information	= Info_PsiNov_3_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es hier für wichtige Orte?";
+	description = "What are the places of interest?";
 };                       
 
 FUNC INT Info_PsiNov_3_DasLager_Condition()
@@ -128,9 +128,9 @@ FUNC INT Info_PsiNov_3_DasLager_Condition()
 
 FUNC VOID Info_PsiNov_3_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_3_DasLager_15_00"); //Was gibt es hier für wichtige Orte?
-	AI_Output(self,hero,"Info_PsiNov_3_DasLager_03_01"); //Es gibt Fortuno, er verteilt freies Sumpfkraut für alle Anhänger der Sekte.
-	AI_Output(self,hero,"Info_PsiNov_3_DasLager_03_02"); //Du findest ihn unter Cor Kaloms altem Alchemielabor.
+	AI_Output(hero,self,"Info_PsiNov_3_DasLager_15_00"); //What are the places of interest?
+	AI_Output(self,hero,"Info_PsiNov_3_DasLager_03_01"); //There is Fortuno, he distributes free swampweed for all followers of the sect.
+	AI_Output(self,hero,"Info_PsiNov_3_DasLager_03_02"); //You can find it under Cor Kalom's old alchemy lab.
 };
 
 // *************************************************************************
@@ -143,7 +143,7 @@ INSTANCE Info_PsiNov_3_DieLage(C_INFO) // E1
 	condition	= Info_PsiNov_3_DieLage_Condition;
 	information	= Info_PsiNov_3_DieLage_Info;
 	permanent	= 1;
-	description = "Wie steht's?";
+	description = "What's the score?";
 };                       
 
 FUNC INT Info_PsiNov_3_DieLage_Condition()
@@ -153,8 +153,8 @@ FUNC INT Info_PsiNov_3_DieLage_Condition()
 
 FUNC VOID Info_PsiNov_3_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_3_DieLage_15_00"); //Wie steht's?
-	AI_Output(self,hero,"Info_PsiNov_3_DieLage_03_01"); //Ich bin total high, Mann!
+	AI_Output(hero,self,"Info_PsiNov_3_DieLage_15_00"); //What's the score?
+	AI_Output(self,hero,"Info_PsiNov_3_DieLage_03_01"); //I'm totally high, man!
 };
 
 INSTANCE Info_Mod_PsiNov_3_Pickpocket (C_INFO)

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Nimius_Hi (C_INFO)
 	information	= Info_Mod_Nimius_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Nimius_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Nimius_Hi_Condition()
 FUNC VOID Info_Mod_Nimius_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Nimius_Hi_01_01"); //Ich bin Nimius.
+	AI_Output(self, hero, "Info_Mod_Nimius_Hi_01_01"); //I am Nimius.
 };
 
 INSTANCE Info_Mod_Nimius_Wilfried (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Nimius_Wilfried (C_INFO)
 	information	= Info_Mod_Nimius_Wilfried_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du dich daran erinnern ...";
+	description	= "Do you remember...?";
 };
 
 FUNC INT Info_Mod_Nimius_Wilfried_Condition()
@@ -43,22 +43,22 @@ FUNC INT Info_Mod_Nimius_Wilfried_Condition()
 
 FUNC VOID Info_Mod_Nimius_Wilfried_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_00"); //Kannst du dich daran erinnern, jemals schlechte Erfahrungen mit Wilfried gemacht zu haben?
-	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_01"); //(überrascht) Ja! Dass mich nach so langer Zeit noch jemand darauf ansprechen würde ... Ich hatte es schon beinahe vergessen.
-	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_02"); //Was ist damals passiert?
-	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_03"); //Er hat mich um mein Gold betrogen, indem er mir einen Billiggürtel angedreht hat, der einem Assassinengürtel aus Mora Sul, den ich bestellt hatte, stark ähnelte.
-	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_04"); //Woher weißt du das? Hast du Beweise?
-	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_05"); //Naja, immerhin stand dort in kleiner Schrift "Made in Myrtana" eingebrannt. Ich glaube nicht, dass dieser Schriftzug auf einem Original gestanden hätte.
-	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_06"); //Wieso hast du nichts unternommen?
-	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_07"); //Als ich ihn darauf ansprach, hat Wilfried mir durch versteckte Gesten zu erkennen gegeben, dass es meiner Gesundheit abträglich sein würde, wenn ich ihn anschwärzte.
-	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_08"); //Und so habe ich Gras über die Sache wachsen lassen. Ich weiß nicht, was du mit meiner Information willst, aber ich wäre dir sehr verbunden, wenn du meinen Namen aus dem Spiel lassen könntest.
-	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_09"); //Ja, das kenne ich schon. Danke für dein Vertrauen.
+	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_00"); //Do you remember ever having bad experiences with Wilfried?
+	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_01"); //(surprised) Yes! That after such a long time, someone would talk to me about it.... I almost forgot.
+	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_02"); //What happened back then?
+	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_03"); //He cheated me out of my gold by turning a cheap belt on me that looked a lot like an assassin belt from Mora Sul I had ordered.
+	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_04"); //How do you know that? Do you have proof?
+	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_05"); //Well, at least it was there in small writing Made in Myrtana. I don't think this lettering would have been on an original.
+	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_06"); //Why didn't you do something about it?
+	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_07"); //When I spoke to him, Wilfried told me by hidden gestures that it would be detrimental to my health if I blacked him out.
+	AI_Output(self, hero, "Info_Mod_Nimius_Wilfried_01_08"); //And that's how I let the thing grow. I don't know what you want with my information, but I'd appreciate it if you could keep my name out of the game.
+	AI_Output(hero, self, "Info_Mod_Nimius_Wilfried_15_09"); //Yeah, I've seen that before. Thank you for your confidence.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Joerg_Wilfried))
 	{
 		Mod_WilfriedsQuest = 3;
 
-		B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Ich habe noch zwei weitere Personen gefunden, die überzeugt sind, dass Wilfried unfairen Handel treibt. Allerdings fehlen noch immer die handfesten Beweise...");
+		B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "I have found two more people who are convinced that Wilfried is trading unfairly. However, the hard evidence is still missing...");
 
 		B_StartOtherRoutine	(Mod_544_NONE_Wilfried_NW, "HOEHLE");
 		AI_Teleport	(Mod_544_NONE_Wilfried_NW, "TAVERNE");
@@ -85,7 +85,7 @@ FUNC INT Info_Mod_Nimius_WilfriedTot_Condition()
 
 FUNC VOID Info_Mod_Nimius_WilfriedTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nimius_WilfriedTot_01_01"); //Wilfried ist tot? Das hast du gut gemacht.
+	AI_Output(self, hero, "Info_Mod_Nimius_WilfriedTot_01_01"); //Wilfried's dead? You did a good job.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 };
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Nimius_Sumpfkraut (C_INFO)
 	information	= Info_Mod_Nimius_Sumpfkraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du, woher ich hier Sumpfkraut bekommen kann?";
+	description	= "You know where I can get swamp herbs from?";
 };
 
 FUNC INT Info_Mod_Nimius_Sumpfkraut_Condition()
@@ -112,8 +112,8 @@ FUNC INT Info_Mod_Nimius_Sumpfkraut_Condition()
 
 FUNC VOID Info_Mod_Nimius_Sumpfkraut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nimius_Sumpfkraut_15_00"); //Weißt du, woher ich hier Sumpfkraut bekommen kann?
-	AI_Output(self, hero, "Info_Mod_Nimius_Sumpfkraut_01_01"); //Nein, mit solchem Zeug hab ich nichts am Hut.
+	AI_Output(hero, self, "Info_Mod_Nimius_Sumpfkraut_15_00"); //You know where I can get swamp herbs from?
+	AI_Output(self, hero, "Info_Mod_Nimius_Sumpfkraut_01_01"); //No, I don't care about stuff like that.
 };
 
 INSTANCE Info_Mod_Nimius_Flugblaetter (C_INFO)
@@ -124,7 +124,7 @@ INSTANCE Info_Mod_Nimius_Flugblaetter (C_INFO)
 	information	= Info_Mod_Nimius_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Nimius_Flugblaetter_Condition()
@@ -145,11 +145,11 @@ FUNC VOID Info_Mod_Nimius_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Nimius_Flugblaetter_01_01"); //Oh, danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Nimius_Flugblaetter_01_01"); //Oh, thank you. Thank you. Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Nimius_Flugblaetter_01_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Nimius_Flugblaetter_01_02"); //Ah yes. Maybe I'll stop by Matteo's.
 
 	Mod_Flugblaetter += 1;
 };

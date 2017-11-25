@@ -37,7 +37,7 @@ const int HP_Kuerbis = 15;
 
 INSTANCE ItFo_Apple (C_Item)
 {	
-	name 				=	"Apfel";
+	name 				=	"Apple";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -58,11 +58,11 @@ INSTANCE ItFo_Apple (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
-	TEXT[3]				=    "Ein frischer Apfel";
-	TEXT[4]				=    "knackig und saftig";
+	TEXT[3]				=    "A fresh apple";
+	TEXT[4]				=    "crisp and juicy";
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	Value_Apple;
 
@@ -120,7 +120,7 @@ INSTANCE ItFo_Apple (C_Item)
 
 INSTANCE ItFo_AppleErika (C_Item)
 {	
-	name 				=	"Erikas Apfel";
+	name 				=	"Apple of Africa";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -141,11 +141,11 @@ INSTANCE ItFo_AppleErika (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
-	TEXT[3]				=    "Ein frischer Apfel";
-	TEXT[4]				=    "knackig und saftig";
+	TEXT[3]				=    "A fresh apple";
+	TEXT[4]				=    "crisp and juicy";
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	Value_Apple;
 
@@ -182,7 +182,7 @@ INSTANCE ItFo_AppleErika (C_Item)
 
 INSTANCE ItFo_Apple_Matteo (C_Item)
 {	
-	name 				=	"Apfel";
+	name 				=	"Apple";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -201,7 +201,7 @@ INSTANCE ItFo_Apple_Matteo (C_Item)
 
 INSTANCE ItFo_Apple_Matteo_Gut (C_Item)
 {	
-	name 				=	"knackiger Apfel";
+	name 				=	"crisp apple";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -220,7 +220,7 @@ INSTANCE ItFo_Apple_Matteo_Gut (C_Item)
 
 INSTANCE ItFo_Apple_Matteo_Schlecht (C_Item)
 {	
-	name 				=	"fauler Apfel";
+	name 				=	"bad apple";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -239,7 +239,7 @@ INSTANCE ItFo_Apple_Matteo_Schlecht (C_Item)
 
 INSTANCE ItFo_Kuerbis (C_Item)
 {	
-	name 				=	"Kürbis";
+	name 				=	"pumpkin";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -260,7 +260,7 @@ INSTANCE ItFo_Kuerbis (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -291,7 +291,7 @@ INSTANCE ItFo_Kuerbis (C_Item)
 
 INSTANCE ItFo_Cheese (C_Item)
 {	
-	name 				=	"Käse";
+	name 				=	"Cheese";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -312,7 +312,7 @@ INSTANCE ItFo_Cheese (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Cheese;
@@ -343,7 +343,7 @@ INSTANCE ItFo_Cheese (C_Item)
 
 INSTANCE ItFo_Bacon (C_Item)
 {	
-	name 				=	"Schinken";
+	name 				=	"Ham";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -364,7 +364,7 @@ INSTANCE ItFo_Bacon (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Bacon;
@@ -395,7 +395,7 @@ INSTANCE ItFo_Bacon (C_Item)
 
 INSTANCE ItFo_PfefferBacon (C_Item)
 {	
-	name 				=	"gepfefferter Schinken";
+	name 				=	"peppered ham";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -416,7 +416,7 @@ INSTANCE ItFo_PfefferBacon (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_PfefferBacon;
@@ -448,7 +448,7 @@ INSTANCE ItFo_PfefferBacon (C_Item)
 
 INSTANCE ItFo_Bread (C_Item)
 {	
-	name 				=	"Brot";
+	name 				=	"Bread";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -469,7 +469,7 @@ INSTANCE ItFo_Bread (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Bread;
@@ -500,7 +500,7 @@ INSTANCE ItFo_Bread (C_Item)
 
 INSTANCE ItFo_Fladenbrot (C_Item)
 {	
-	name 				=	"Fladenbrot";
+	name 				=	"pita bread";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -521,7 +521,7 @@ INSTANCE ItFo_Fladenbrot (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= 10;
@@ -554,7 +554,7 @@ INSTANCE ItFo_Fladenbrot (C_Item)
 
 INSTANCE ItFo_Fish (C_Item)
 {	
-	name 				=	"Fisch";
+	name 				=	"Fish";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -575,7 +575,7 @@ INSTANCE ItFo_Fish (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Fish;
@@ -629,7 +629,7 @@ INSTANCE ItFo_Fish (C_Item)
 
 INSTANCE ItFo_Fish_Gebraten (C_Item)
 {	
-	name 				=	"Gebratener Fisch";
+	name 				=	"Fried fish";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -650,7 +650,7 @@ INSTANCE ItFo_Fish_Gebraten (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Fish_Gebraten;
@@ -704,7 +704,7 @@ INSTANCE ItFo_Fish_Gebraten (C_Item)
 
 INSTANCE ItFo_StockFish (C_Item)
 {	
-	name 				=	"Stockfisch";
+	name 				=	"dried cod";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -725,7 +725,7 @@ INSTANCE ItFo_StockFish (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_StockFish;
@@ -778,7 +778,7 @@ INSTANCE ItFo_StockFish (C_Item)
 
 INSTANCE ItFoMuttonZombie (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 {	
-	name 				=	"Zombiefleisch";
+	name 				=	"zombie flesh";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -807,7 +807,7 @@ INSTANCE ItFoMuttonZombie (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Meat;
@@ -841,7 +841,7 @@ INSTANCE ItFoMuttonZombie (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 
 INSTANCE ItFo_Stew (C_Item)
 {	
-	name 				=	"Eintopf";
+	name 				=	"Stew";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -862,7 +862,7 @@ INSTANCE ItFo_Stew (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Stew;
@@ -893,7 +893,7 @@ INSTANCE ItFo_Stew (C_Item)
 
 INSTANCE ItFo_Blutkult (C_Item)
 {	
-	name 				=	"Dämoneneintopf der Verdammnis";
+	name 				=	"Demon stew of damnation";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -951,7 +951,7 @@ INSTANCE ItFo_Blutkult (C_Item)
 
 INSTANCE ItFo_Fleischeintopf (C_Item)
 {	
-	name 				=	"Fleischeintopf";
+	name 				=	"meat stew";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -972,7 +972,7 @@ INSTANCE ItFo_Fleischeintopf (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Fleischeintopf;
@@ -1004,7 +1004,7 @@ INSTANCE ItFo_Fleischeintopf (C_Item)
 
 INSTANCE ItFo_XPStew (C_Item)
 {	
-	name 				=	"Theklas Eintopf";
+	name 				=	"Theklas stew";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1027,7 +1027,7 @@ INSTANCE ItFo_XPStew (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;			COUNT[5]	= Value_Stew;
@@ -1062,7 +1062,7 @@ INSTANCE ItFo_XPStew (C_Item)
 
 INSTANCE ItFo_CoragonsBeer (C_Item)
 {	
-	name 				=	"Bier";
+	name 				=	"Beer";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1085,11 +1085,11 @@ INSTANCE ItFo_CoragonsBeer (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	
-	TEXT[4]				= 	"Coragons Spezialbier";		
+	TEXT[4]				= 	"Coragon's special beer";		
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Beer;
 
 };
@@ -1129,7 +1129,7 @@ INSTANCE ItFo_CoragonsBeer (C_Item)
 
 INSTANCE ItFo_Beer_Khorata (C_Item)
 {	
-	name 				=	"Khorataer Lagerbier";
+	name 				=	"Khorata lager";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1152,11 +1152,11 @@ INSTANCE ItFo_Beer_Khorata (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	
-	TEXT[4]				= 	"Kühles Lagerbier, herrlich würzig";		
+	TEXT[4]				= 	"Cool lager, deliciously spicy";		
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= 100;
 
 };
@@ -1191,7 +1191,7 @@ INSTANCE ItFo_Beer_Khorata (C_Item)
 
 INSTANCE ItFo_Dunkelbier (C_Item)
 {	
-	name 				=	"Dunkelbier";
+	name 				=	"dark beer";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1214,11 +1214,11 @@ INSTANCE ItFo_Dunkelbier (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	
-	TEXT[4]				= 	"vom Brauer in Khorata";		
+	TEXT[4]				= 	"from the brewer in Khorata";		
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Beer;
 
 };
@@ -1254,7 +1254,7 @@ INSTANCE ItFo_Dunkelbier (C_Item)
 
 INSTANCE ItFo_Trunken (C_Item)
 {	
-	name 				=	"Trunken";
+	name 				=	"drunk";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1289,7 +1289,7 @@ INSTANCE ItFo_Trunken (C_Item)
 
 INSTANCE ItFo_Orkbier (C_Item)
 {	
-	name 				=	"Orkbier";
+	name 				=	"orc";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1312,11 +1312,11 @@ INSTANCE ItFo_Orkbier (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	
-	TEXT[4]				= 	"Coragons Spezial Bier";		
+	TEXT[4]				= 	"Coragon's Special Beer";		
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Orkbier;
 
 };
@@ -1359,7 +1359,7 @@ INSTANCE ItFo_Orkbier (C_Item)
 
 INSTANCE ItFo_FishSoup (C_Item)
 {	
-	name 				=	"Fischsuppe";
+	name 				=	"Fish stew";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1380,7 +1380,7 @@ INSTANCE ItFo_FishSoup (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_FishSoup;
@@ -1435,7 +1435,7 @@ INSTANCE ItFo_FishSoup (C_Item)
 
 INSTANCE ItFo_FishRagout (C_Item)
 {	
-	name 				=	"Fischragout";
+	name 				=	"fish stew";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1456,7 +1456,7 @@ INSTANCE ItFo_FishRagout (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_FishRagout;
@@ -1512,7 +1512,7 @@ INSTANCE ItFo_FishRagout (C_Item)
 
 INSTANCE ItFo_Sausage (C_Item)
 {	
-	name 				=	"Wurst";
+	name 				=	"Sausage";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1533,7 +1533,7 @@ INSTANCE ItFo_Sausage (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Sausage;
@@ -1564,7 +1564,7 @@ INSTANCE ItFo_Sausage (C_Item)
 
 INSTANCE ItFo_Honey (C_Item)
 {	
-	name 				=	"Honig";
+	name 				=	"Honey";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1585,7 +1585,7 @@ INSTANCE ItFo_Honey (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Honey;
@@ -1638,7 +1638,7 @@ INSTANCE ItFo_Honey (C_Item)
 
 INSTANCE ItFo_Melasse (C_Item)
 {	
-	name 				=	"Melasse";
+	name 				=	"treacle";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1658,7 +1658,7 @@ INSTANCE ItFo_Melasse (C_Item)
 
 INSTANCE ItFo_Water (C_Item)
 {	
-	name 				=	"Wasser";
+	name 				=	"Water";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1679,7 +1679,7 @@ INSTANCE ItFo_Water (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1708,7 +1708,7 @@ INSTANCE ItFo_Water (C_Item)
 
 INSTANCE ItMi_Salzwasser (C_Item)
 {	
-	name 				=	"Salzwasser";
+	name 				=	"salt water";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1729,7 +1729,7 @@ INSTANCE ItMi_Salzwasser (C_Item)
 
 INSTANCE ItFo_Beer (C_Item)
 {	
-	name 				=	"Bier";
+	name 				=	"Beer";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1752,10 +1752,10 @@ INSTANCE ItFo_Beer (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
-	TEXT[4]				= 	"Dunkles Paladiner";		
+	TEXT[4]				= 	"Dark Paladin";		
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Beer;
 
 };
@@ -1790,7 +1790,7 @@ INSTANCE ItFo_Beer (C_Item)
 
 INSTANCE ItFo_Booze (C_Item)
 {	
-	name 				=	"Wacholder";
+	name 				=	"Gin";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1813,7 +1813,7 @@ INSTANCE ItFo_Booze (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Booze;
@@ -1850,7 +1850,7 @@ INSTANCE ItFo_Booze (C_Item)
 
 INSTANCE ItFo_Apfelmost (C_Item)
 {	
-	name 				=	"Apfelmost";
+	name 				=	"cider";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1886,7 +1886,7 @@ INSTANCE ItFo_Apfelmost (C_Item)
 
 INSTANCE ItFo_BoozeRudolf (C_Item)
 {	
-	name 				=	"Rudolfs Schnaps";
+	name 				=	"Rudolph's Schnapps";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1909,7 +1909,7 @@ INSTANCE ItFo_BoozeRudolf (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Booze;
@@ -1945,7 +1945,7 @@ INSTANCE ItFo_BoozeRudolf (C_Item)
 
 INSTANCE ItFo_HubertBooze (C_Item)
 {	
-	name 				=	"Hubert's Spezialtrunk";
+	name 				=	"Hubert's special drink";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1963,7 +1963,7 @@ INSTANCE ItFo_HubertBooze (C_Item)
 
 INSTANCE ItFo_GiftBooze (C_Item)
 {	
-	name 				=	"vergifteter Wacholder";
+	name 				=	"poisoned juniper";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1982,7 +1982,7 @@ INSTANCE ItFo_GiftBooze (C_Item)
 
 INSTANCE ItFo_Spezialtrunken (C_Item)
 {	
-	name 				=	"Spezialtrunken";
+	name 				=	"special drunkenness";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -2000,7 +2000,7 @@ INSTANCE ItFo_Spezialtrunken (C_Item)
 
 INSTANCE ItFo_Wine (C_Item)
 {	
-	name 				=	"Wein";
+	name 				=	"Wine";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -2023,7 +2023,7 @@ INSTANCE ItFo_Wine (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Wine;
@@ -2060,7 +2060,7 @@ INSTANCE ItFo_Wine (C_Item)
 
 INSTANCE ItFo_KWine (C_Item)
 {	
-	name 				=	"Klosterwein";
+	name 				=	"monastery wine";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -2083,7 +2083,7 @@ INSTANCE ItFo_KWine (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= value;
@@ -2131,7 +2131,7 @@ INSTANCE ItFo_KWine (C_Item)
 
 INSTANCE ItFo_Milk (C_Item)
 {	
-	name 				=	"Milch";
+	name 				=	"Milk";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -2154,7 +2154,7 @@ INSTANCE ItFo_Milk (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Milk;
@@ -2183,7 +2183,7 @@ INSTANCE ItFo_Milk (C_Item)
 
 INSTANCE ItFo_Ziegenmilch_Bloody (C_Item)
 {	
-	name 				=	"blutige Ziegenmilch";
+	name 				=	"bloody goat's milk";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -2195,7 +2195,7 @@ INSTANCE ItFo_Ziegenmilch_Bloody (C_Item)
 
 	description			= 	name;
 	
-	TEXT[1]				= 	"Unbekannte Wirkung";
+	TEXT[1]				= 	"Unknown effect";
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Milk;
 
@@ -2203,7 +2203,7 @@ INSTANCE ItFo_Ziegenmilch_Bloody (C_Item)
 
 INSTANCE ItFo_Tee (C_Item)
 {	
-	name 				=	"Tee";
+	name 				=	"tea";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -2224,7 +2224,7 @@ INSTANCE ItFo_Tee (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Milk;
@@ -2252,7 +2252,7 @@ INSTANCE ItFo_Tee (C_Item)
 
 INSTANCE ItMi_SteinDerWeisen (C_Item)
 {	
-	name 				=	"Bruchteil vom Stein der Weisen";
+	name 				=	"Fraction of the Philosopher's Stone";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -2266,7 +2266,7 @@ INSTANCE ItMi_SteinDerWeisen (C_Item)
 
 	description			= 	name;
 	
-	TEXT[1]				= 	"Mann, bin ich froh, nicht den ganzen Stein zu haben ...";	
+	TEXT[1]				= 	"Man, am I glad I don't have the whole stone....";	
 	
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	1000;
@@ -2282,7 +2282,7 @@ INSTANCE ItMi_SteinDerWeisen (C_Item)
 // Möhre
 INSTANCE ItFo_Karotte (C_Item)
 {	
-	name 				=	"Möhre";
+	name 				=	"carrot";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;

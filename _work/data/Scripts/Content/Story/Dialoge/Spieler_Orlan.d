@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Spieler_Orlan_Hi (C_INFO)
 	information	= Info_Mod_Spieler_Orlan_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist das für ein Spiel vor dir auf dem Tisch?";
+	description	= "What's the game before you on the table?";
 };
 
 FUNC INT Info_Mod_Spieler_Orlan_Hi_Condition()
@@ -19,10 +19,10 @@ FUNC INT Info_Mod_Spieler_Orlan_Hi_Condition()
 
 FUNC VOID Info_Mod_Spieler_Orlan_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Hi_15_00"); //Was ist das für ein Spiel vor dir auf dem Tisch?
-	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Hi_01_01"); //(mürrisch) Du willst wohl andeuten, du kennst Schagby nicht?
-	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Hi_15_02"); //Gespielt habe ich's noch nicht, nein. Kannst du mir die Regeln erklären?
-	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Hi_01_03"); //Jetzt nicht. Ich spiele nur mit erfahrenen Spielern.
+	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Hi_15_00"); //What's the game before you on the table?
+	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Hi_01_01"); //Are you suggesting you don't know Shagby?
+	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Hi_15_02"); //I haven't played it yet, no. Can you explain the rules to me?
+	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Hi_01_03"); //Not now, no. I only play with experienced players.
 };
 
 INSTANCE Info_Mod_Spieler_Orlan_RuedigerBesiegt (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Spieler_Orlan_RuedigerBesiegt (C_INFO)
 	information	= Info_Mod_Spieler_Orlan_RuedigerBesiegt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lust auf eine Partie Schagby?";
+	description	= "Fancy a game of shagby?";
 };
 
 FUNC INT Info_Mod_Spieler_Orlan_RuedigerBesiegt_Condition()
@@ -46,15 +46,15 @@ FUNC INT Info_Mod_Spieler_Orlan_RuedigerBesiegt_Condition()
 
 FUNC VOID Info_Mod_Spieler_Orlan_RuedigerBesiegt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_15_00"); //Lust auf eine Partie Schagby?
-	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_01"); //Du kennst das Spiel?
-	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_15_02"); //Klar. Ich habe schon Rüdiger besiegt.
-	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_03"); //(lacht) Rüdiger, die Pfeife. Hat dir sein unglaublicher Steinwächter Angst gemacht?
-	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_15_04"); //Ging so.
-	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_05"); //Mit meiner Kreation kann er sich jedenfalls nicht messen.
-	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_15_06"); //Du bist auch einer der Meister?
-	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_07"); //Oh ja. Mein Hase schafft dem Spieler durch seine Wendigkeit ganz neue taktische Möglichkeiten.
-	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_08"); //Wenn du dich immer noch traust, werde ich ihn dir vorführen. Der Einsatz beträgt 15 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_15_00"); //Fancy a game of shagby?
+	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_01"); //You know the game?
+	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_15_02"); //Sure. I already defeated Rüdiger.
+	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_03"); //Rüdiger, the whistle. Did his incredible stone guard scare you?
+	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_15_04"); //That's what happened.
+	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_05"); //Anyway, he can't compete with my creation.
+	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_15_06"); //You're one of the masters, too?
+	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_07"); //Oh, yeah. My rabbit creates completely new tactical possibilities for the player through his agility.
+	AI_Output(self, hero, "Info_Mod_Spieler_Orlan_RuedigerBesiegt_01_08"); //If you still dare, I'll show it to you. The bet is 15 gold coins.
 };
 
 FUNC VOID B_MG_Start_Spieler_Orlan()
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Spieler_Orlan_Spielstart01 (C_INFO)
 	information	= Info_Mod_Spieler_Orlan_Spielstart01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lass uns spielen.";
+	description	= "Let's play.";
 };
 
 FUNC INT Info_Mod_Spieler_Orlan_Spielstart01_Condition()
@@ -86,7 +86,7 @@ FUNC INT Info_Mod_Spieler_Orlan_Spielstart01_Condition()
 
 FUNC VOID Info_Mod_Spieler_Orlan_Spielstart01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Spielstart01_15_00"); //Lass uns spielen.
+	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Spielstart01_15_00"); //Let's play.
 
 	AI_StopProcessInfos	(self);
 
@@ -117,21 +117,21 @@ FUNC VOID Info_Mod_Spieler_Orlan_Spielende01_Info()
 {
 	if (MG_SiegState == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_00"); //Was soll man auch erwarten, wenn Rüdiger dein Lehrmeister war?
+		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_00"); //What can you expect if Rüdiger was your teacher?
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 15);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_01"); //Ach, so ein Mist! Das hab ich ja ganz übersehen!
-		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_02"); //Das passiert mir doch sonst nie.
+		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_01"); //Oh, that's bullshit! I completely missed it!
+		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_02"); //That's never gonna happen to me.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 15);
 
-		AI_Output(hero, hero, "Info_Mod_Spieler_Orlan_Spielende01_15_03"); //Jetzt schuldest du mir noch den Hasenspielstein, oder irre ich mich da?
+		AI_Output(hero, hero, "Info_Mod_Spieler_Orlan_Spielende01_15_03"); //Now you still owe me that bunny piece, or am I wrong?
 
-		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_04"); //Den kann ich dir nach diesem reinen Glückstreffer doch nicht guten Gewissens geben.
-		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_05"); //Vorher musst du mir erst noch beweisen, dass du auch wirklich was drauf hast. Und zwar mit verdoppeltem Einsatz.
+		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_04"); //I can't give it to you with a clear conscience after this stroke of luck.
+		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende01_01_05"); //You're gonna have to prove to me first that you've got some real talent. With a double commitment.
 
 		B_GivePlayerXP	(100);
 
@@ -150,7 +150,7 @@ INSTANCE Info_Mod_Spieler_Orlan_Spielstart02 (C_INFO)
 	information	= Info_Mod_Spieler_Orlan_Spielstart02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lass uns eine weitere Partie mit verdoppeltem Einsatz spielen.";
+	description	= "Let's play another game with a double stake.";
 };
 
 FUNC INT Info_Mod_Spieler_Orlan_Spielstart02_Condition()
@@ -164,7 +164,7 @@ FUNC INT Info_Mod_Spieler_Orlan_Spielstart02_Condition()
 
 FUNC VOID Info_Mod_Spieler_Orlan_Spielstart02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Spielstart02_15_00"); //Lass uns eine weitere Partie mit verdoppeltem Einsatz spielen.
+	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Spielstart02_15_00"); //Let's play another game with a double stake.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	AI_StopProcessInfos	(self);
@@ -197,7 +197,7 @@ FUNC VOID Info_Mod_Spieler_Orlan_Spielende02_Info()
 {
 	if (MG_SiegState == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende02_01_00"); //Auf diese Tour brauchst du mir gar nicht kommen.
+		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende02_01_00"); //You don't have to come this way.
 
 		if (MG_Spieler_Orlan_Runde == 1)
 		{
@@ -218,13 +218,13 @@ FUNC VOID Info_Mod_Spieler_Orlan_Spielende02_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende02_01_01"); //Was für eine Schmach! An besseren Tagen wäre mir das nicht passiert.
+		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende02_01_01"); //What a disgrace! It wouldn't have happened to me on better days.
 
 		if (MG_Spieler_Orlan_Runde == 1)
 		{
 			B_GiveInvItems	(self, hero, ItMi_Gold, 30);
 
-			B_ShowGivenThings	("Hasen-Figur erhalten");
+			B_ShowGivenThings	("Receive bunny figure");
 
 			PlayerHas_Hase = 1;
 		}
@@ -243,8 +243,8 @@ FUNC VOID Info_Mod_Spieler_Orlan_Spielende02_Info()
 
 		if (MG_Spieler_Orlan_Runde == 4)
 		{
-			AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende02_01_02"); //(erschöpft) Alles klar, alles klar, du bist der besser von uns beiden.
-			AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende02_01_03"); //Bevor ich mit dir wieder um Geld spiele, muss ich dem Bauerngesocks erst mal wieder was aus der Tasche ziehen.
+			AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende02_01_02"); //All right, all right, you're the better of both of us.
+			AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende02_01_03"); //Before I play with you again for money, I have to pull something out of the farmer's socks.
 		};
 
 		B_GivePlayerXP	(50);
@@ -264,7 +264,7 @@ INSTANCE Info_Mod_Spieler_Orlan_Spielstart03 (C_INFO)
 	information	= Info_Mod_Spieler_Orlan_Spielstart03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lass uns eine weitere Partie spielen.";
+	description	= "Let's play another game.";
 };
 
 FUNC INT Info_Mod_Spieler_Orlan_Spielstart03_Condition()
@@ -277,7 +277,7 @@ FUNC INT Info_Mod_Spieler_Orlan_Spielstart03_Condition()
 
 FUNC VOID Info_Mod_Spieler_Orlan_Spielstart03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Spielstart03_15_00"); //Lass uns eine weitere Partie spielen.
+	AI_Output(hero, self, "Info_Mod_Spieler_Orlan_Spielstart03_15_00"); //Let's play another game.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Spieler_Orlan_Spielstart03);
@@ -311,11 +311,11 @@ FUNC VOID Info_Mod_Spieler_Orlan_Spielende03_Info()
 {
 	if (MG_SiegState == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende03_01_00"); //Auf diese Tour brauchst du mir gar nicht kommen.
+		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende03_01_00"); //You don't have to come this way.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende03_01_01"); //Was für eine Schmach! An besseren Tagen wäre mir das nicht passiert.
+		AI_Output(self, hero, "Info_Mod_Spieler_Orlan_Spielende03_01_01"); //What a disgrace! It wouldn't have happened to me on better days.
 
 		MG_Spieler_Orlan_Runde += 1;
 	};

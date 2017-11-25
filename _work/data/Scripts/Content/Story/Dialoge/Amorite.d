@@ -15,31 +15,31 @@ FUNC INT Info_Mod_Amorite_Hi_Condition()
 
 FUNC VOID Info_Mod_Amorite_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_00"); //(aufhorchend) Wer kommt mich da besuchen?
-	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_01"); //Ich ...
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_02"); //Nur nicht so schüchtern. Setzt dich ruhig und trink etwas mit mir.
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_03"); //In letzter Zeit hatte ich so wenig Gesellschaft.
-	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_04"); //Na gut, ein Getränk zum Aufwärmen wird nicht schaden.
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_05"); //Dich habe ich hier noch nie gesehen. Kommst du von weit her?
-	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_06"); //Wo ich herkommen, kann man dem Gras beim Wachsen zusehen.
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_07"); //Du bist ein Mann mit Humor ... das gefällt mir. Besonders da ich in letzter Zeit so allein bin ist etwas Unterhaltung Balsam für meine einsame Seele.
-	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_08"); //Weshalb bist du einsam?
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_09"); //Ach, mein Mann ist Jäger. Oft ist er Wochenlang in der Wildnis Jagen ... während ich ganz alleine zu Hause bin.
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_10"); //Es ist jetzt schon drei Wochen her, dass er bei mir war ... Aber hier, nimm doch noch einen Schluck Met.
-	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_11"); //Danke.
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_12"); //Bei einem solch guten Tropfen wird es einem ganz warm, oder? Aber es gibt noch mehr Dinge, die Wärme geben können.
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_13"); //Komm, gib mir deine Hand ... ich werde es dir zeigen.
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_00"); //Who's coming to see me?
+	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_01"); //l--
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_02"); //Just don't be shy. Sit down and have a drink with me.
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_03"); //I've had so little company lately.
+	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_04"); //Well, a warm-up drink won't hurt.
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_05"); //I've never seen you around here before. Are you from far away?
+	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_06"); //Where I come from, you can watch the grass grow.
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_07"); //You're a man with a sense of humor... I like that one. Especially since I've been alone lately is a little bit of entertainment balm for my lonely soul.
+	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_08"); //What are you lonely for?
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_09"); //Oh, my husband is a hunter. Often he is hunting for weeks in the wilderness... while I'm home all alone.
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_10"); //It's been three weeks since he was with me... But here, have another sip of mead.
+	AI_Output(hero, self, "Info_Mod_Amorite_Hi_15_11"); //Thanks.
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_12"); //With such a good drop, it gets you warm, doesn't it? But there are more things that can give warmth.
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_17_13"); //Come on, give me your hand... I'll show you.
 
 	Info_ClearChoices	(Info_Mod_Amorite_Hi);
 
-	Info_AddChoice	(Info_Mod_Amorite_Hi, "Nein, besser nicht.", Info_Mod_Amorite_Hi_B);
-	Info_AddChoice	(Info_Mod_Amorite_Hi, "Ok ...", Info_Mod_Amorite_Hi_A);
+	Info_AddChoice	(Info_Mod_Amorite_Hi, "No, I don't think so.", Info_Mod_Amorite_Hi_B);
+	Info_AddChoice	(Info_Mod_Amorite_Hi, "Ok...", Info_Mod_Amorite_Hi_A);
 };
 
 FUNC VOID Info_Mod_Amorite_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Amorite_Hi_B_15_00"); //Nein, besser nicht.
-	AI_Output(self, hero, "Info_Mod_Amorite_Hi_B_17_01"); //(erbost) Was?! Du wagst es mich zurückzuweisen?
+	AI_Output(hero, self, "Info_Mod_Amorite_Hi_B_15_00"); //No, I don't think so.
+	AI_Output(self, hero, "Info_Mod_Amorite_Hi_B_17_01"); //What?! You dare to reject me?
 
 	Info_ClearChoices	(Info_Mod_Amorite_Hi);
 
@@ -52,7 +52,7 @@ FUNC VOID Info_Mod_Amorite_Hi_B()
 
 FUNC VOID Info_Mod_Amorite_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Amorite_Hi_A_15_01"); //Ok ...
+	AI_Output(hero, self, "Info_Mod_Amorite_Hi_A_15_01"); //Ok...
 	AI_Output(self, hero, "DEFAULT"); //
 
 	AI_UnequipArmor	(hero);
@@ -90,7 +90,7 @@ FUNC INT Info_Mod_Amorite_LassMich_Condition()
 
 FUNC VOID Info_Mod_Amorite_LassMich_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Amorite_LassMich_17_00"); //Lass mich in Ruhe!
+	AI_Output(self, hero, "Info_Mod_Amorite_LassMich_17_00"); //Get away from me!
 
 	AI_StopProcessInfos	(self);
 };

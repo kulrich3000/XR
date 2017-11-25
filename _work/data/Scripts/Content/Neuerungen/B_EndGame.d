@@ -1,22 +1,22 @@
 FUNC VOID B_EndGame() {
 	if (hero.guild == GIL_PAL) {
-		Spine_OverallSaveSetInt("PaladinEnde", 1);
+		Spine_OverallSaveSetInt("Paladin End", 1);
 	} else if (hero.guild == GIL_KDF) {
-		Spine_OverallSaveSetInt("BeliarEnde", 1);
+		Spine_OverallSaveSetInt("BeliarEnd", 1);
 	} else if (hero.guild == GIL_MIL) {
-		Spine_OverallSaveSetInt("MerchantEnde", 1);
+		Spine_OverallSaveSetInt("MerchantEnd", 1);
 	} else if (hero.guild == GIL_VLK) {
-		Spine_OverallSaveSetInt("InnosEnde", 1);
+		Spine_OverallSaveSetInt("InnosEnd", 1);
 	} else if (hero.guild == GIL_NOV) {
-		Spine_OverallSaveSetInt("AdanosEnde", 1);
+		Spine_OverallSaveSetInt("AdanosEnd", 1);
 	};
 	
 	var int amount; amount = 0;
-	amount += Spine_OverallSaveGetInt("PaladinEnde");
-	amount += Spine_OverallSaveGetInt("MerchantEnde");
-	amount += Spine_OverallSaveGetInt("InnosEnde");
-	amount += Spine_OverallSaveGetInt("AdanosEnde");
-	amount += Spine_OverallSaveGetInt("BeliarEnde");
+	amount += Spine_OverallSaveGetInt("Paladin End");
+	amount += Spine_OverallSaveGetInt("MerchantEnd");
+	amount += Spine_OverallSaveGetInt("InnosEnd");
+	amount += Spine_OverallSaveGetInt("AdanosEnd");
+	amount += Spine_OverallSaveGetInt("BeliarEnd");
 	
 	Spine_UpdateAchievementProgress(SPINE_ACHIEVEMENT_56, amount);
 		

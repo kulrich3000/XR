@@ -16,7 +16,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_HatBeutelWilfried == 0)
 		&& (Npc_HasItems(hero, ItSe_WilfriedsBeutel) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Ich habe den Geldbeutel gefunden... allerdings ist nicht mehr sehr viel von dem Inhalt übrig geblieben. Was Wilfried wohl dazu sagen wird?");
+			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "I found the purse.... but not much of the content is left. I wonder what Wilfried will say.");
 
 			Mod_HatBeutelWilfried = 1;
 		};
@@ -26,7 +26,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_WilfriedsQuest = 4;
 
-			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Wilfried hat seine Wohnung plötzlich verlassen und ist unauffindbar.");
+			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Wilfried has suddenly left his apartment and is untraceable.");
 		};
 
 		if (Npc_IsDead(Mod_544_NONE_Wilfried_NW))
@@ -34,7 +34,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_WilfriedsQuest = 6;
 
-			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Ich habe Wilfried in seiner Höhle gefunden... bei unserem Gespräch drehte er urplötzlich durch und griff mich an - mir blieb nur die Notwehr. Nun ist der Spuk vorbei. Vielleicht gibt es noch eine Möglichkeit, die Opfer Wilfrieds zu entschädigen.");
+			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "I found Wilfried in his cave.... during our conversation, he suddenly went mad and attacked me - all I had left was self-defense. Now the spook is over. Maybe there's another way to compensate the victims of Wilfried's death.");
 		};
 
 		if (Npc_HasItems(hero, ItWr_WilfriedsListe) == 1)
@@ -42,7 +42,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_WilfriedsQuest = 7;
 
-			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Der Schatz Wilfrieds ist gehoben. Ich sollte den Betrag Lord Andre übergeben, der sich um die gerechte Verteilung kümmern kann.");
+			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "The treasure of Wilfried is exalted. I should hand over the money to Lord Andre, who can take care of the fair distribution.");
 		};
 
 		// Der Schatz des Johannes Port
@@ -116,7 +116,7 @@ FUNC VOID NEBENQUESTS()
 			if (Mod_Allievo_Zusatzpower == 0)
 			&& (Npc_IsDead(Mod_7033_OUT_Allievo_NW))
 			{
-				B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Ich habe Allievo ausgeschaltet, einen Schüler von Canthar. Hoffentlich konnte ich ihm damit einen  Schlag versetzen.");
+				B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "I took out Allievo, a student of Canthar's. Hopefully I could give him a blow with it.");
 
 				Mod_Allievo_Zusatzpower = 2;
 			}
@@ -125,7 +125,7 @@ FUNC VOID NEBENQUESTS()
 			&& (Npc_IsDead(Mod_7034_OUT_Bruno_NW))
 			&& (Npc_IsDead(Mod_7035_OUT_Grima_NW))
 			{
-				B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Ich habe Allievo ausgeschaltet, einen Schüler von Canthar. Hoffentlich konnte ich ihm damit einen  Schlag versetzen.");
+				B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "I took out Allievo, a student of Canthar's. Hopefully I could give him a blow with it.");
 
 				Mod_Allievo_Zusatzpower = 2;
 			};
@@ -139,7 +139,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_KnowsTonakZombie = TRUE;
 
-			B_LogEntry	(TOPIC_MOD_AKILSHOF, "Lauter Untote ... und einer von ihnen Tonak. Da kommt jede Rettung zu spät.");
+			B_LogEntry	(TOPIC_MOD_AKILSHOF, "All the undead... and one of them Tonak. Every rescue comes too late.");
 		};
 
 		if (Npc_GetDistToWP(Mod_902_BAU_Egill_NW, "WP_EGILL_SELBSTMORD_NEWVERSION") < 500)
@@ -304,7 +304,7 @@ FUNC VOID NEBENQUESTS()
 				B_StartOtherRoutine	(Mod_7169_OUT_Mann_NW, "ATTAVERNE");
 				B_StartOtherRoutine	(Mod_7170_OUT_Mann_NW, "ATTAVERNE");
 
-				B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "So, die Belianer machen sich auf den Weg zu ihrer neuen Bleibe. Jetzt brauche ich nur noch Telbor bescheid zu geben, dass das Haus wieder frei ist.");
+				B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "Well, the Belians are heading for their new home. Now all I have to do is let Telbor know that the house is free again.");
 			};
 		};
 
@@ -449,7 +449,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_MoeDontTalk = 5;
 
-				B_LogEntry	(TOPIC_MOD_MOE_TALK, "Eine ziemlich unlustige Idee von Canthar, mich durch ganz Khorinis zu schicken. Vielleicht sollte ich den ganzen unnötigen Ballast an bekritzeltem Papier bei Moe abladen, mein Inventar ist schließlich schon voll genug ...");
+				B_LogEntry	(TOPIC_MOD_MOE_TALK, "A rather unpleasant idea of Canthar to send me through all the Khorinis. Maybe I should unload all the unnecessary ballast of scribbled paper at Moe's, my inventory is already full enough....");
 			};
 		};
 
@@ -483,43 +483,43 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, hero);
 				AI_TurnToNpc	(Mod_7212_NONE_Schlaeger_NW, hero);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_00"); //Bist du uns also brav in die Falle gelaufen, was?
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_00"); //So you got us into a good trap, huh?
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 10)
 			{
-				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_01"); //Höhähöhö!
+				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_01"); //Altitude!
 
 				B_StartOtherRoutine	(Mod_7213_NONE_Schlaeger_NW, "WEG");
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 15)
 			{
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_02"); //Als ob Moe irgendetwas herausgefunden hätte! Pah! Hast du das wirklich geglaubt? (Pause) Was sagst du dazu: Ich habe die Nachricht geschrieben! Hä? (Pause)
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_02"); //Like Moe found out anything! Pah! Did you really believe that? (Pause) What do you say to that: I wrote the message! Huh? (pause)
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 20)
 			{
-				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_03"); //Hihihö.
+				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_03"); //Hooray.
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 25)
 			{
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, Mod_7212_NONE_Schlaeger_NW);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_04"); //Schnauze!
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_04"); //Shut up! Shut up!
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 30)
 			{
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, hero);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_05"); //Canthar wird dich schon zum Reden bringen. (verschlagen) Er hat da so seine Methoden ...
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_05"); //Canthar will make you talk. He has his methods there...
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 35)
 			{
-				AI_Output(hero, NULL, "Info_Mod_CantharSchlaeger_Talk_15_06"); //Wieso kommt er nicht persönlich und schickt so ein Aas wie euch vor?
+				AI_Output(hero, NULL, "Info_Mod_CantharSchlaeger_Talk_15_06"); //Why doesn't he come in person and send a carrion like you before?
 
 				B_StartOtherRoutine	(Mod_7213_NONE_Schlaeger_NW, "NAH");
 			};
@@ -528,19 +528,19 @@ FUNC VOID NEBENQUESTS()
 			{
 				AI_TurnToNpc	(Mod_7212_NONE_Schlaeger_NW, Mod_7211_NONE_Schlaeger_NW);
 
-				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_07"); //(eingeschüchtert) Er hat nicht gesagt, dass wir Aas sind ...
+				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_07"); //He didn't say we were carrion...
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 45)
 			{
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, Mod_7212_NONE_Schlaeger_NW);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_08"); //(gereizt) He, gerate nicht in eine defensive Position, hat Canthar ausdrücklich befohlen!
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_08"); //Hey, don't get into a defensive position, Canthar has expressly ordered!
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 50)
 			{
-				AI_Output(hero, NULL, "Info_Mod_CantharSchlaeger_Talk_15_09"); //(murmelt) Amateure ...
+				AI_Output(hero, NULL, "Info_Mod_CantharSchlaeger_Talk_15_09"); //(mumbles) Amateurs....
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 55)
@@ -548,7 +548,7 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, hero);
 				AI_TurnToNpc	(Mod_7212_NONE_Schlaeger_NW, hero);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_10"); //Das muss ich mir nicht bieten lassen! Gehen wir!
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_10"); //I don't have to put up with that! Let's go!
 
 				Mod_Schlaeger_SaveHeroHP = hero.attribute[ATR_HITPOINTS];
 
@@ -623,7 +623,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_GarvellDa == 1)
 		&& (Npc_IsDead(Mod_577_NONE_Garvell_NW))
 		{
-			B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Ein Attentatsversuch von Garvell ist missglückt. Er muss die 'Überraschung' gewesen sein, von der Canthar gesprochen hat. Damit dürfte dieses Kapitel endgültig abgeschlossen sein.");
+			B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Garvell's assassination attempt failed. He must have been the surprise Canthar was talking about. This should bring this chapter to a definitive conclusion.");
 			B_SetTopicStatus	(TOPIC_MOD_MOE_DEAD, LOG_SUCCESS);
 			B_SetTopicStatus	(TOPIC_MOD_CANTHAR_GESCHAEFTE, LOG_SUCCESS);
 
@@ -650,15 +650,15 @@ FUNC VOID NEBENQUESTS()
 		{
 			if (Mod_Flugblaetter == 20)
 			{
-				Print ("Alle Flugblätter verteilt!");
+				Print ("All leaflets distributed!");
 
-				B_LogEntry	(TOPIC_MOD_MATTEOFLUGBLATT, "Ich habe alle Flugblätter verteilt und sollte Matteo Bescheid sagen.");
+				B_LogEntry	(TOPIC_MOD_MATTEOFLUGBLATT, "I handed out all the flyers and should let Matteo know.");
 			}
 			else
 			{
 				var string FlugblattMeldung;
-				FlugblattMeldung = ConcatStrings("Noch ", IntToString(20-Mod_Flugblaetter));
-				FlugblattMeldung = ConcatStrings(FlugblattMeldung, " Flugblätter zu verteilen!");
+				FlugblattMeldung = ConcatStrings("still ", IntToString(20-Mod_Flugblaetter));
+				FlugblattMeldung = ConcatStrings(FlugblattMeldung, " to distribute flyers!");
 
 				Print (FlugblattMeldung);
 			};
@@ -671,7 +671,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_KristallDiego == 0)
 		&& (Npc_HasItems(hero, Mod_PaladinKristall) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Ich habe den Kristall. Entweder gehe ich jetzt zu Lothar oder ich bringe ihn zu jemand anderem. Die anderen Gildenanführer wären über diesen wertvollen Kristall sicher sehr erfreut.");
+			B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "I got the crystal. Either I go to Lothar's now, or I take him to someone else. The other guild leaders would be delighted with this precious crystal.");
 			B_SetTopicStatus	(TOPIC_MOD_DIEGO_KRISTALL, LOG_SUCCESS);
 
 			Mod_KristallDiego = 1;
@@ -689,7 +689,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_JackHW = 1;
 
-			B_LogEntry	(TOPIC_MOD_HQ_JACK, "Naja, Bennet ist als Schmied auch ein Handwerker. Ich hoffe, Jack lässt das durchgehen.");
+			B_LogEntry	(TOPIC_MOD_HQ_JACK, "Well, Bennet's a blacksmith, he's also a craftsman. I hope Jack won't let this go.");
 		};
 
 		if (Mod_SagittaSS == 0)
@@ -698,7 +698,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_SagittaSS = 1;
 
-			B_LogEntry	(TOPIC_MOD_HQ_JACK, "So, ich habe den salzigen Sprießling. Jetzt aber nichts wie weg.");
+			B_LogEntry	(TOPIC_MOD_HQ_JACK, "So, I got the salty sprout. Now let's get out of here.");
 
 			B_GivePlayerXP	(100);
 		};
@@ -709,7 +709,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_SagittaHK = 1;
 
-			B_LogEntry	(TOPIC_MOD_HQ_JACK, "So, ich habe die stinkende Harpienkralle.");
+			B_LogEntry	(TOPIC_MOD_HQ_JACK, "So, I've got the stinking harpie claw.");
 
 			B_GivePlayerXP	(100);
 		};
@@ -730,7 +730,7 @@ FUNC VOID NEBENQUESTS()
 
 			Npc_RemoveInvItems	(hero, ItMi_Mehlsack_Bronko, 5);
 
-			B_LogEntry	(TOPIC_MOD_BRONKO_MEHLSACK, "Die Mehlsäcke sind jetzt in der Höhle. Ich sollte zu Bronko zurückkehren.");
+			B_LogEntry	(TOPIC_MOD_BRONKO_MEHLSACK, "The flour sacks are now in the cave. I should get back to Bronko.");
 
 			Mod_BronkoMehlsack = 2;
 		};
@@ -796,7 +796,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Thorben_Geschenk = 1;
 
-				B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_FOUR, "Ich habe Thorben etwas wirklich Nettes gebastelt. Mal schauen, ob er sich drüber freuen kann.");
+				B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_FOUR, "I made something really nice for Thorben. Let's see if he can be happy about it.");
 
 				B_StartOtherRoutine	(Mod_536_NONE_Thorben_NW, "GROGGY");
 			};
@@ -818,7 +818,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				CreateInvItems	(hero, ItFo_Apple_Matteo_Schlecht, 1);
 
-				Print	("Fauler Apfel!");
+				Print	("Lazy apple!");
 
 				Mod_Matteo_SchlechteApples += 1;
 			}
@@ -826,7 +826,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				CreateInvItems	(hero, ItFo_Apple_Matteo_Gut, 1);
 
-				Print	("Knackiger Apfel!");
+				Print	("Crispy apple!");
 
 				Mod_Matteo_GuteApples += 1;
 			}
@@ -834,7 +834,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				CreateInvItems	(hero, ItFo_Apple_Matteo_Schlecht, 1);
 
-				Print	("Fauler Apfel!");
+				Print	("Lazy apple!");
 
 				Mod_Matteo_SchlechteApples += 1;
 			}
@@ -842,7 +842,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				CreateInvItems	(hero, ItFo_Apple_Matteo_Gut, 1);
 
-				Print	("Knackiger Apfel!");
+				Print	("Crispy apple!");
 
 				Mod_Matteo_GuteApples += 1;
 			};
@@ -872,7 +872,7 @@ FUNC VOID NEBENQUESTS()
 
 			AI_PlayAni	(hero, "T_PLUNDER");
 
-			B_LogEntry	(TOPIC_MOD_JANA_BEUTEL, "Puh, endlich bin ich die Last los.");
+			B_LogEntry	(TOPIC_MOD_JANA_BEUTEL, "Phew, I finally got rid of the load.");
 		};
 
 		if (Mod_Jana_Beutel == 2)
@@ -1048,7 +1048,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Vino_Brennerei = 1;
 
-				B_LogEntry	(TOPIC_MOD_VINO_WO, "So, die kleinen Spinnenviecher bei der Plattform sind beseitigt.");
+				B_LogEntry	(TOPIC_MOD_VINO_WO, "So, the small spider-animals at the platform are eliminated.");
 
 				B_StartOtherRoutine	(Mod_1937_JGR_Nandor_NW,	"START");
 			};
@@ -1076,7 +1076,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_SenyanTom_Kraut = 2;				
 
-				PrintScreen ("Kurze Zeit später", -1, YPOS_LevelUp, FONT_Screen, 2);
+				PrintScreen ("A short time later", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 				Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 			};
@@ -1225,7 +1225,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Lobart_Unkraut = 2;
 
-			B_LogEntry	(TOPIC_MOD_LOBART_UNKRAUT, "So, die Felder sind vom Unkraut befreit.");
+			B_LogEntry	(TOPIC_MOD_LOBART_UNKRAUT, "So, the fields are cleared of weeds.");
 		};
 
 		// Nagur kommt wieder frei
@@ -1281,7 +1281,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Nagur_Geschaeft = 1;
 
-			B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Ich habe das Paket in den Kisten verstaut.");
+			B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "I put the package in the crates.");
 		};
 
 		if (Mod_Nagur_Geschaeft == 1)
@@ -1312,7 +1312,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Nagur_Geschaeft = 6;
 
-			B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Ich kann jetzt Nagur davon berichten, dass seine Konkurrenten beseitigt wurden.");
+			B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "I can now report to Nagur that his competitors have been eliminated.");
 		};
 
 		if (Mod_Nagur_Geschaeft == 6)
@@ -1434,7 +1434,7 @@ FUNC VOID NEBENQUESTS()
 
 			AI_TurnToNpc	(hero, Swampshark_Weiss);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_WeisserSumpfhai_15_00"); //Da ist er!
+			AI_Output(hero, NULL, "Info_Mod_Hero_WeisserSumpfhai_15_00"); //There he is!
 
 			B_StartOtherRoutine	(Swampshark_Weiss, "TOT");
 			B_StartOtherRoutine	(Mod_12012_DRA_Echse_AW, "TOT");
@@ -1442,7 +1442,7 @@ FUNC VOID NEBENQUESTS()
 			B_StartOtherRoutine	(Mod_12014_DRA_Echse_AW, "TOT");
 			B_StartOtherRoutine	(Mod_12015_DRA_Echse_AW, "TOT");
 
-			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SUMPFHAIFINDEN, "Ich habe einen weißen Sumpfhai gefunden.", "Wir haben einen weißen Sumpfhai gefunden und die jungen Echsen folgen ihm. Das sollte reichen.");
+			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SUMPFHAIFINDEN, "I found a white swamp shark.", "We found a white marsh shark and the young lizards are following him. That should do it.");
 			B_SetTopicStatus	(TOPIC_MOD_ECHSEN_SUMPFHAIFINDEN, LOG_SUCCESS);
 
 			B_GivePlayerXP	(500);
@@ -1477,7 +1477,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Echsis_Geheimnis = 1;
 
-			B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Das sollte für's erste reichen. Jetzt sollte ich bei Albi vorbeischauen.");
+			B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "That should do for now. Now I should stop by Albi's.");
 
 			// Spawnen der zwei neuen Echsen
 
@@ -1528,7 +1528,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Eremit_Harpien = 1;
 
-				B_LogEntry	(TOPIC_MOD_EREMIT_HARPIEN, "Das sollten wohl alle Flattermänner ... oder Flatterfrauen ... wie auch immer gewesen sein.");
+				B_LogEntry	(TOPIC_MOD_EREMIT_HARPIEN, "I suppose that's what all fluttermen should do.... or flapper women.... any way whatsoever.");
 			};
 		};
 
@@ -1659,7 +1659,7 @@ FUNC VOID NEBENQUESTS()
 
 				B_GivePlayerXP	(100);
 
-				B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Ich habe Ulrich aufgehalten.");
+				B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "I stopped Ulrich.");
 				B_SetTopicStatus	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_SUCCESS);
 
 				B_StartOtherRoutine	(Mod_7371_OUT_Richter_REL, "START");
@@ -1676,7 +1676,7 @@ FUNC VOID NEBENQUESTS()
 
 					B_GivePlayerXP	(100);
 
-					B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Ich habe Ulrich gewähren lassen und mitgeholfen, Anna zu befreien.");
+					B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "I let Ulrich be granted and helped to free Anna.");
 					B_SetTopicStatus	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_SUCCESS);
 				};
 			};
@@ -1702,7 +1702,7 @@ FUNC VOID NEBENQUESTS()
 
 			B_GivePlayerXP	(50);
 
-			B_LogEntry	(TOPIC_MOD_KHORATA_SCHWEINE, "Henrik sollte zufrieden sein, die Molerats baden jetzt in ihrem eigenen Blut.");
+			B_LogEntry	(TOPIC_MOD_KHORATA_SCHWEINE, "Henrik should be satisfied, the Molerats are now bathing in their own blood.");
 		};
 
 		// Henker nur im Faustkampf verwundbar
@@ -1724,7 +1724,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_LeonhardRuprecht = 2;
 
-			B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Ich habe Ruprechts Truhe geleert.");
+			B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "I emptied Ruprecht's chest.");
 		};
 
 		// Ein rätselhaftes Verschwinden
@@ -1743,7 +1743,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_EndresIndizien = 1;
 
-			B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Ich sollte mit meinen Erkenntnissen zum Richter gehen und ihm den Fall erklären.");
+			B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "I should go to the judge with my findings and explain the case to him.");
 
 			Wld_InsertNpc	(Mod_7492_OUT_Roman_REL, "REL_CITY_294");
 		};
@@ -1781,13 +1781,13 @@ FUNC VOID NEBENQUESTS()
 			{
 				if (Mod_REL_Hasenfuss == 4) // Gemeinsam
 				{
-					B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Ivan und ich haben die Graslandscavenger gemeinsam erlegt.");
+					B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Ivan and I shot the grasslandscavengers together.");
 
 					Mod_REL_Hasenfuss = 8;
 				}
 				else if (Mod_REL_Hasenfuss == 5) // Alleine
 				{
-					B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Ich habe die Graslandscavenger allein erlegt.");
+					B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "I shot the Graslandscavenger on my own.");
 
 					Mod_REL_Hasenfuss = 9;
 				};
@@ -1804,7 +1804,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Jim_FakeGeist = 1;
 
-			B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "Von einer Seele ist auf dem Friedhof weit und breit nichts zu sehen. Ich sollte in einer anderen Nacht wiederkommen, wenn jemand in Khorata gestorben ist.");
+			B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "There is nothing to be seen of a soul in the cemetery far and wide. I should come back another night when someone died in Khorata.");
 		};
 
 		if (Mod_Jim_Schutz == 1)
@@ -1813,7 +1813,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Jim_Schutz = 2;
 
-			B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "Das Amulett funktioniert einwandfrei.");
+			B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "The amulet works perfectly.");
 
 			B_RemoveNpc	(Mod_7610_OUT_Endres_REL);
 		};
@@ -1838,7 +1838,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Jim_Freudenspender = 3;
 
-			B_LogEntry	(TOPIC_MOD_JIM_FREUDENSPENDER, "Ich habe das Paket Freudenspender aus dem Lagerhaus entwendet.");
+			B_LogEntry	(TOPIC_MOD_JIM_FREUDENSPENDER, "I stole the package of delights from the warehouse.");
 		};
 
 		if (Mod_Jim_Freudenspender == 5)
@@ -1855,20 +1855,20 @@ FUNC VOID NEBENQUESTS()
 		{
 			if (Npc_KnowsInfo(hero, Info_Mod_Wendel_Unruhen2))
 			&& (Npc_KnowsInfo(hero, Info_Mod_Lukas_Unruhen3))
-			&& (Npc_KnowsInfo(hero, Info_Mod_Theodorus_Unruhen3))
+			&& (Npc_KnowsInfo(hero, Info_Mod_theodorus_Unruhen3))
 			{
 				Mod_REL_Kandidat = 1;
 
-				B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Ich kann mir nun ein Bild von allen drei Kandidaten machen und sollte August mitteilen, welche Entscheidung ich getroffen habe.");
+				B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "I can now get a picture of all three candidates and should tell August what decision I made.");
 			};
 		};
 
-		if (Mod_REL_TheodorusS == 0)
+		if (Mod_REL_theodorusS == 0)
 		&& (Npc_GetDistToWP(hero, "REL_CITY_107") < 500)
 		&& (Mod_REL_Stadthalter == 1)
-		&& (Npc_HasItems(hero, ItWr_TheodorusBotschaft) == 1)
+		&& (Npc_HasItems(hero, ItWr_theodorusBotschaft) == 1)
 		{
-			Mod_REL_TheodorusS = 1;
+			Mod_REL_theodorusS = 1;
 
 			AI_GotoWP	(hero, "REL_CITY_107");
 
@@ -1879,47 +1879,47 @@ FUNC VOID NEBENQUESTS()
 			CutsceneAn = TRUE;
 		};
 
-		if (Mod_REL_TheodorusS == 1)
+		if (Mod_REL_theodorusS == 1)
 		{
-			if (Mod_REL_TheodorusS_Counter == 1)
+			if (Mod_REL_theodorusS_Counter == 1)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_00"); //Verkündigung im Namen des Theodorus
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_00"); //Announcement in the name of theodorus
 			};
-			if (Mod_REL_TheodorusS_Counter == 6)
+			if (Mod_REL_theodorusS_Counter == 6)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_01"); //Bürger Khoratas, ich, der neue Stadthalter, informiere euch hiermit über unverzüglich in Kraft tretende Änderungen im Streik der Bergleute.
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_01"); //Citizens of Khoratas, I, the new governor, hereby inform you of any changes in the miners' strike that will take effect immediately.
 			};
-			if (Mod_REL_TheodorusS_Counter == 11)
+			if (Mod_REL_theodorusS_Counter == 11)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_02"); //Die von ihnen zurecht vorgetragenen Beschwerden werden einer eingehenden Prüfung unterzogen;
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_02"); //The complaints they have rightly made are subject to detailed examination;
 			};
-			if (Mod_REL_TheodorusS_Counter == 16)
+			if (Mod_REL_theodorusS_Counter == 16)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_03"); //erst dann werde ich entscheiden, ob die Arbeit in der Mine unter neuen Bedingungen wieder aufgenommen wird.
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_03"); //only then will I decide whether to resume work in the mine under new conditions.
 			};
-			if (Mod_REL_TheodorusS_Counter == 21)
+			if (Mod_REL_theodorusS_Counter == 21)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_04"); //Die bisher zu verzeichnenden Todesfälle sind tragisch, doch ich werde einen Weg finden, die betroffenen Familien zu entschädigen.
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_04"); //The deaths to date are tragic, but I will find a way to compensate the families affected.
 			};
-			if (Mod_REL_TheodorusS_Counter == 26)
+			if (Mod_REL_theodorusS_Counter == 26)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_05"); //Ich bitte euch inständig, die Bergleute nicht euren eventuell angestauten Zorn spüren zu lassen.
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_05"); //I implore you not to let the miners feel your possibly pent-up anger.
 			};
-			if (Mod_REL_TheodorusS_Counter == 31)
+			if (Mod_REL_theodorusS_Counter == 31)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_06"); //In Hochachtung,
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_06"); //Respectfully,
 			};
-			if (Mod_REL_TheodorusS_Counter == 36)
+			if (Mod_REL_theodorusS_Counter == 36)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_07"); //Theodorus
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_07"); //theodorus
 			};
-			if (Mod_REL_TheodorusS_Counter == 41)
+			if (Mod_REL_theodorusS_Counter == 41)
 			{
-				Mod_REL_TheodorusS = 2;
+				Mod_REL_theodorusS = 2;
 
 				CutsceneAn = FALSE;
 
-				B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Ich habe die Botschaft verlesen.");
+				B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "I read the message.");
 
 				B_GivePlayerXP	(100);
 
@@ -1927,7 +1927,7 @@ FUNC VOID NEBENQUESTS()
 				B_StartOtherRoutine	(Mod_7516_OUT_Lukas_REL,	"THEODORUS");
 				AI_Teleport	(Mod_7516_OUT_Lukas_REL,	"REL_CITY_106");
 
-				// Theodorus' Versammlung vor Stadttor
+				// theodorus' Versammlung vor Stadttor
 
 				B_StartOtherRoutine	(Mod_7620_OUT_Wache_REL, "THEODORUS");
 				B_StartOtherRoutine	(Mod_7621_OUT_Wache_REL, "THEODORUS");
@@ -1942,13 +1942,13 @@ FUNC VOID NEBENQUESTS()
 				B_StartOtherRoutine	(Mod_7619_OUT_Frazer_REL, "THEODORUS");
 			};
 
-			Mod_REL_TheodorusS_Counter += 1;
+			Mod_REL_theodorusS_Counter += 1;
 		};
 
-		if (Mod_REL_TheodorusS == 2)
+		if (Mod_REL_theodorusS == 2)
 		&& (Npc_GetDistToWP(hero, "REL_CITY_398") < 500)
 		{
-			Mod_REL_TheodorusS = 3;
+			Mod_REL_theodorusS = 3;
 
 			CutsceneAn = TRUE;
 
@@ -1956,68 +1956,68 @@ FUNC VOID NEBENQUESTS()
 
 			Wld_SendTrigger	("EVT_CAMERA_THEODORUS_TORFIGHT");
 
-			Mod_REL_TheodorusS_Counter = 0;
+			Mod_REL_theodorusS_Counter = 0;
 		};
 
-		if (Mod_REL_TheodorusS == 3)
+		if (Mod_REL_theodorusS == 3)
 		{
-			if (Mod_REL_TheodorusS_Counter == 1)
+			if (Mod_REL_theodorusS_Counter == 1)
 			{
-				AI_TurnToNpc	(Mod_7382_OUT_Theodorus_REL, hero);
+				AI_TurnToNpc	(Mod_7382_OUT_theodorus_REL, hero);
 				AI_TurnToNpc	(Mod_7385_OUT_August_REL, hero);
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, hero);
-				AI_TurnToNpc	(hero, Mod_7382_OUT_Theodorus_REL);
+				AI_TurnToNpc	(hero, Mod_7382_OUT_theodorus_REL);
 
-				AI_Output(Mod_7382_OUT_Theodorus_REL, NULL, "Info_Mod_Hero_TheodorusTor_09_00"); //Hast du noch ein letztes Mal Zeit? Wir stehen hier von einem kleinen Problem.
+				AI_Output(Mod_7382_OUT_theodorus_REL, NULL, "Info_Mod_Hero_theodorusTor_09_00"); //Do you have one last time? We're here about a little problem.
 			};
-			if (Mod_REL_TheodorusS_Counter == 6)
+			if (Mod_REL_theodorusS_Counter == 6)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusTor_15_01"); //Worum geht's?
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusTor_15_01"); //What's this about?
 			};
-			if (Mod_REL_TheodorusS_Counter == 11)
+			if (Mod_REL_theodorusS_Counter == 11)
 			{
-				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_TheodorusTor_13_02"); //(murmelt) Anselm scheint noch in den Gehirnen gewisser Leute fortzuleben ...
+				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_theodorusTor_13_02"); //(mumbles) Anselm still seems to live in the brains of certain people...
 			};
-			if (Mod_REL_TheodorusS_Counter == 16)
+			if (Mod_REL_theodorusS_Counter == 16)
 			{
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, Mod_7385_OUT_August_REL);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_03"); //Schnauze!
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_theodorusTor_07_03"); //Shut up! Shut up!
 			};
-			if (Mod_REL_TheodorusS_Counter == 21)
+			if (Mod_REL_theodorusS_Counter == 21)
 			{
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, hero);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_04"); //(zum Helden) Ich warne dich, misch dich nicht ein.
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_theodorusTor_07_04"); //I'm warning you, don't interfere.
 			};
-			if (Mod_REL_TheodorusS_Counter == 26)
+			if (Mod_REL_theodorusS_Counter == 26)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusTor_15_05"); //Klingt ja fast wie eine Einladung.
+				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusTor_15_05"); //It almost sounds like an invitation.
 			};
-			if (Mod_REL_TheodorusS_Counter == 31)
+			if (Mod_REL_theodorusS_Counter == 31)
 			{
 				AI_ReadyMeleeWeapon	(Mod_7620_OUT_Wache_REL);
-				AI_TurnToNpc	(Mod_7382_OUT_Theodorus_REL, Mod_7620_OUT_Wache_REL);
+				AI_TurnToNpc	(Mod_7382_OUT_theodorus_REL, Mod_7620_OUT_Wache_REL);
 				AI_TurnToNpc	(Mod_7385_OUT_August_REL, Mod_7620_OUT_Wache_REL);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_06"); //Ihr wollt's wohl nicht begreifen, wie? Verpisst euch aus unserer Stadt, ihr Schlappschwänze, sonst gibt's aufs Maul.
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_theodorusTor_07_06"); //You don't want to understand, do you? Get the fuck out of our town, you wimps, or I'll throw you in the mouth.
 			};
-			if (Mod_REL_TheodorusS_Counter == 36)
+			if (Mod_REL_theodorusS_Counter == 36)
 			{
-				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_TheodorusTor_13_07"); //Ihr seid hoffnungslos in der Unterzahl.
+				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_theodorusTor_13_07"); //You're hopelessly outnumbered.
 			};
-			if (Mod_REL_TheodorusS_Counter == 41)
+			if (Mod_REL_theodorusS_Counter == 41)
 			{
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_08"); //(lacht hämisch) Das wollen wir ja mal sehen. Zeigen wir den Verrätern, wer Herr im Haus ist!
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_theodorusTor_07_08"); //(laughs gloatingly) That's what we want to see. Let's show the traitors who's master of the house!
 
 				B_StartOtherRoutine	(Mod_7375_OUT_Gerichtswache_02, "STADTTOR");
 				AI_Teleport	(Mod_7375_OUT_Gerichtswache_02, Mod_7375_OUT_Gerichtswache_02.wp);
 				B_StartOtherRoutine	(Mod_7374_OUT_Gerichtswache_01, "STADTTOR");
 				AI_Teleport	(Mod_7374_OUT_Gerichtswache_01, Mod_7374_OUT_Gerichtswache_01.wp);
 			};
-			if (Mod_REL_TheodorusS_Counter == 46)
+			if (Mod_REL_theodorusS_Counter == 46)
 			{
-				Mod_REL_TheodorusS = 4;
+				Mod_REL_theodorusS = 4;
 
 				CutsceneAn = FALSE;
 
@@ -2032,7 +2032,7 @@ FUNC VOID NEBENQUESTS()
 				Npc_SetTrueGuild	(Mod_7375_OUT_Gerichtswache_02, GIL_STRF);
 			};
 
-			Mod_REL_TheodorusS_Counter += 1;
+			Mod_REL_theodorusS_Counter += 1;
 		};
 
 		if (Mod_REL_WendelS == 2)
@@ -2054,19 +2054,19 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_00"); //Zieh deine Waffe, Unwürdiger! Du hattest es schon lange in der Hand, die Arbeitsbedingungen für uns Buddler zu erleichtern!
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_00"); //Draw your weapon, unworthy man! You had it in your hand for a long time to ease the working conditions for us diggers!
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_01"); //(beschwichtigend) Der Erzabbau geschah auf Anweisung Anselms. Ich wusste nichts von euren Bedingungen.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_01"); //The ore mining was carried out on Anselm's instructions. I didn't know about your terms.
 			};
 			if (Mod_REL_WendelS_Counter == 11)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_02"); //Pah, Lügner! (hustet) Bist du zu feige, mir im Kampf entgegen zu treten?
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_02"); //Whoa, liar! (coughs) Are you too cowardly to face me in battle?
 			};
 			if (Mod_REL_WendelS_Counter == 16)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_03"); //Beruhig dich. Wir sind hier, um eure Situation zu ändern.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_03"); //Calm down, calm down. We're here to change your situation.
 			};
 			if (Mod_REL_WendelS_Counter == 21)
 			{
@@ -2099,7 +2099,7 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_04"); //Na gut, schön. Was schlägst du also vor?
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_04"); //All right, fine. So what do you suggest?
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
@@ -2132,7 +2132,7 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_05"); //Es tut mir Leid, wenn ich meinen Teil dazu beigetragen habe. Aber es geht hier nicht darum, einen Schuldigen zu finden, sondern aus den Fehlern zu lernen.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_05"); //I'm sorry if I did my part. But this is not about finding someone to blame, but about learning from the mistakes.
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
@@ -2150,27 +2150,27 @@ FUNC VOID NEBENQUESTS()
 		{
 			if (Mod_REL_WendelS_Counter == 1)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_06"); //Mein Vorschlag ist, dass die Arbeit der Buddler gesetzlich verankert wird.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_06"); //My proposal is that the work of the Buddhists be enshrined in law.
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_07"); //Bisher gab es weder eine schriftliche Bestätigung über das Gehalt, noch feste Arbeitszeiten. Das muss geändert werden.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_07"); //Until now, there has been no written confirmation of salary or fixed working hours. This has to be changed.
 			};
 			if (Mod_REL_WendelS_Counter == 11)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_08"); //Das reicht nicht! Viele von uns arbeiten gezwungenermaßen, wir hatten nie die Wahl, zu unserer alten Arbeit zurückzukehren.
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_08"); //That's not enough! Many of us are forced to work, we have never had the choice of returning to our old jobs.
 			};
 			if (Mod_REL_WendelS_Counter == 16)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_09"); //(hustet) Jeder soll entscheiden können, ob er im Bergbau bleiben will oder nicht.
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_09"); //(coughs) Everyone should be able to decide whether or not to stay in mining.
 			};
 			if (Mod_REL_WendelS_Counter == 21)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_10"); //Ich würde es gern umsetzen, aber ...
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_10"); //I'd like to put it into practice, but....
 			};
 			if (Mod_REL_WendelS_Counter == 26)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_11"); //Kein Aber! Das ist meine oberste Forderung!
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_11"); //No But! That is my first demand!
 			};
 			if (Mod_REL_WendelS_Counter == 31)
 			{
@@ -2203,11 +2203,11 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_12"); //Dann brauchen wir auf jeden Fall eine bessere Bezahlung! Ich arbeite nicht so wie bisher weiter!
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_12"); //Then we definitely need better pay! I'm not going to keep on working like this!
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_13"); //Das ist es, was ich mir vorgestellt habe. Wärst du damit zufrieden?
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_13"); //That's what I imagined. Would you be happy with that?
 			};
 			if (Mod_REL_WendelS_Counter == 11)
 			{
@@ -2240,7 +2240,7 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_14"); //(niedergeschlagen) In Ordnung, die Bergarbeiter sollen die Wahl haben. Bist du dann zufrieden?
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_14"); //All right, the miners should have a choice. Will you be satisfied?
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
@@ -2258,19 +2258,19 @@ FUNC VOID NEBENQUESTS()
 		{
 			if (Mod_REL_WendelS_Counter == 1)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_15"); //Für das erlittene Unrecht ist natürlich noch eine Entschädigung fällig. (hustet)
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_15"); //Of course, compensation is still due for the injustice suffered. (coughs)
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_16"); //(ächzt) Entschädigung? Ich habe einen Blick auf die Finanzen der Stadt geworfen.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_16"); //Compensation? I took a look at the city's finances.
 			};
 			if (Mod_REL_WendelS_Counter == 11)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_17"); //Wir haben so viele Schulden, dass wir kein einziges Goldstück mehr ausgeben dürften.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_17"); //We have so many debts that we should not be able to spend a single gold coin.
 			};
 			if (Mod_REL_WendelS_Counter == 16)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_18"); //Das Geld ist dir also wichtiger als die Bergleute. Verstehe. Ich denke, dazu gibt es nichts mehr zu sagen.
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_18"); //So the money is more important to you than the miners. I see. I don't think there's anything left to say.
 			};
 			if (Mod_REL_WendelS_Counter == 21)
 			{
@@ -2298,7 +2298,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_REL_LukasS = 1;
 
-			B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Die Buddler eröffneten das Feuer. Alle niedergemacht.");
+			B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "The Buddlers opened fire. Kill them all.");
 		};
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Fuego_Unruhen))
@@ -2327,7 +2327,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Dam_Spawned = 2;
 
-			B_LogEntry	(TOPIC_MOD_SANCHO_DAM, "Ich habe das Amulett. Dam scheint tatsächlich der Verdammnis anheim gefallen zu sein.");
+			B_LogEntry	(TOPIC_MOD_SANCHO_DAM, "I have the amulet. Dam actually seems to have fallen to damnation.");
 		};
 
 		// Unkraut und Äpfel
@@ -2341,7 +2341,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Botschek_Gaertner = 1;
 
-				B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "Und jetzt die Äpfel. Aber ... Augenblick mal!");
+				B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "And now the apples. But... Wait a minute, wait a minute!");
 
 				Apfelbaum_Botschek_01.guild = GIL_STONEGUARDIAN;
 				Npc_SetTrueGuild (Apfelbaum_Botschek_01, GIL_STONEGUARDIAN);
@@ -2367,7 +2367,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Botschek_Gaertner = 2;
 
-				B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "So, das war ein Massaker ... aber ich habe die Äpfel.");
+				B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "So, it was a massacre.... but I have the apples.");
 			};
 		};
 
@@ -2379,7 +2379,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Viran_Sumpfbeeren = TRUE;
 
-			B_LogEntry	(TOPIC_MOD_VIRAN_SUMPFBEEREN, "Ich habe die Sumpfbeeren.");
+			B_LogEntry	(TOPIC_MOD_VIRAN_SUMPFBEEREN, "I got the mulberries.");
 		};
 
 		if (Mod_SumpfbeerenTraum == 0)
@@ -2420,7 +2420,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 2)
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Frost) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, "Interessant. Viele Schätze hat er bei sich ... und diesen sonderbaren Dolch.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, "Interesting. He has many treasures with him... and that weird dagger.");
 
 			Mod_Botschek_Wasserleichen = 3;
 		};
@@ -2428,7 +2428,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 3)
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Seuche) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Bei einer Stelle im Moor mit Gräbern und Folterinstrumenten habe ich einer dämonischen Gestalt einen weiteren Dolch abgenommen. Ich sollte Botschek darüber unterrichten.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "At a place in the moor with graves and instruments of torture I took another dagger from a demonic figure. I was told to inform Botschek.");
 
 			Mod_Botschek_Wasserleichen = 4;
 		};
@@ -2436,7 +2436,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 4)
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Gift) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Der Giftmischer wäre Geschichte. Auf zu Botschek.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "The poisoner would be history. Off to Botschek.");
 
 			Mod_Botschek_Wasserleichen = 5;
 		};
@@ -2445,7 +2445,7 @@ FUNC VOID NEBENQUESTS()
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Versengen) == 1)
 		&& (!Npc_IsInState(Mod_7650_OUT_Botschek_REL, ZS_Talk))
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Ich habe den Dolch.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "I have the dagger.");
 
 			Mod_Botschek_Wasserleichen = 6;
 		};
@@ -2453,7 +2453,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 6)
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Blut) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Der letzte Dolch. Nun sollte ich den Zugang öffnen können.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "The last dagger. Now I should be able to open the entrance.");
 
 			Mod_Botschek_Wasserleichen = 7;
 		};
@@ -2512,7 +2512,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 12)
 		&& (Npc_HasItems(hero, ItMi_Focus_Moor) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Dem lebendigen Podest entriss ich einen grünen Fokus. Ob er was mit der früheren Siedlung und der Macht des Sumpfes zu tun hat? Ich muss Botschek dazu befragen.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "I snatched a green focus from the living platform. I wonder if it has anything to do with the former settlement and the power of the swamp. I have to ask Botschek about this.");
 
 			Mod_Botschek_Wasserleichen = 13;
 		};
@@ -2589,7 +2589,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Herek_Zombie = 1;
 
-				B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "Von Schätzen nichts zu sehen. Herek kann was erleben!");
+				B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "Nothing to see from treasures. Herek can do something!");
 
 				B_StartOtherRoutine	(Mod_7670_STT_Herek_REL, "TOT");
 			};
@@ -2697,7 +2697,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_AlvarDead = 4;
 
-			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Ich habe die Rüstung. Jetzt muss ich schnell zurück zu Thys.");
+			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "I have the armor. Now I have to get back to Thys's in a hurry.");
 		};
 
 		if (Mod_AlvarKristall == 0)
@@ -2707,7 +2707,7 @@ FUNC VOID NEBENQUESTS()
 
 			B_Say_Overlay	(hero, NULL, "$ALVARKRISTALL02");
 
-			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Ich habe den Kristall. Jetzt zurück zu Thys.");
+			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "I got the crystal. Now back to Thys.");
 
 			AI_Teleport	(Mod_7564_OUT_Knatus_EIS, "EIS_76");
 			AI_Teleport	(Mod_7563_OUT_Brutus_EIS, "EIS_76");
@@ -2742,7 +2742,7 @@ FUNC VOID NEBENQUESTS()
 
 			B_Say_Overlay	(hero, NULL, "$ALVARKRISTALL03");
 
-			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Obwohl ich den Beweis ihrer Schuld erbracht habe, schenkten die Bewohner diesem keine Beachtung und warfen mich raus. Aber was ist das? Ein Pfeil mit Botschaft ...");
+			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Although I have proved their guilt, the inhabitants did not pay any attention to it and threw me out. But what's that? An arrow with a message...");
 
 			Wld_SendTrigger	("EVT_MESSAGE_ALVARKRISTALL");
 		};
@@ -2778,22 +2778,22 @@ FUNC VOID NEBENQUESTS()
 			{
 				AI_TurnToNpc	(Mod_7565_HEX_Hexe_EIS, hero);
 
-				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_00"); //So, wen haben wir denn hier? Doch nicht etwa jemanden, der die Pläne meiner Schwestern vereiteln will?
+				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_00"); //So, who do we have here? Not someone who wants to thwart my sisters' plans?
 			};
 
 			if (Mod_Traenenkristall_Sequenz == 8)
 			{
-				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_01"); //Dachtest du wirklich, dass du so einfach Zugang zu diesem mächtigen Werkzeug bekommen könntest? Du Narr!
+				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_01"); //Did you really think you could get access to this powerful tool so easily? You fool!
 			};
 
 			if (Mod_Traenenkristall_Sequenz == 13)
 			{
-				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_02"); //Dem Einfluss der Eriskünste magst du zwar widerstanden haben, aber echter Hexenmagie wirst du nichts entgegensetzen können.
+				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_02"); //You may have resisted the influence of ice arts, but you won't be able to resist real witch magic.
 			};
 
 			if (Mod_Traenenkristall_Sequenz == 18)
 			{
-				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_03"); //Und nun bereite dich darauf vor zu sterben.
+				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_03"); //And now prepare to die.
 			};
 
 			if (Mod_Traenenkristall_Sequenz == 23)
@@ -2812,7 +2812,7 @@ FUNC VOID NEBENQUESTS()
 
 				Mod_AlvarKristall = 8;
 
-				Mod_7561_OUT_Alvar_EIS.name = "Unbekannter";
+				Mod_7561_OUT_Alvar_EIS.name = "stranger";
 			};
 
 			Mod_Traenenkristall_Sequenz += 1;
@@ -2835,7 +2835,7 @@ FUNC VOID NEBENQUESTS()
 			AI_TurnToNpc	(hero, Mod_7561_OUT_Alvar_EIS);
 			AI_GotoNpc	(hero, Mod_7561_OUT_Alvar_EIS);
 
-			Mod_7561_OUT_Alvar_EIS.name = "Unbekannter";
+			Mod_7561_OUT_Alvar_EIS.name = "stranger";
 		};
 
 		// Sicheres Geleit
@@ -2889,7 +2889,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_NL_Herkuleskraut = 1;
 
-			B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHKRAUT, "Ich habe die Pflanzen.");
+			B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHKRAUT, "I have the plants.");
 		};
 
 		// Den Lurkern keine Ruhe lassen ...
@@ -2900,7 +2900,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_NL_Herkuleskraut = 2;
 
-			B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHLURKER, "So, das sollten alle gewesen sein. Damit ist der See um eine Art ärmer ...");
+			B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHLURKER, "Well, that should have been everybody. Thus the lake is poorer by a kind of...");
 		};
 
 		// Morastwürmer und Sumpfkrabben
@@ -2910,7 +2910,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_NL_JeremiahHasEier = 5;
 
-			B_LogEntry	(TOPIC_MOD_NL_PLAGE, "Ich habe drei Eier. Jetzt nur noch ins Neue Lager damit.");
+			B_LogEntry	(TOPIC_MOD_NL_PLAGE, "I have three eggs. Now only into the new warehouse.");
 		};
 
 		if (Mod_NL_JeremiahHasEier == 5)
@@ -2926,7 +2926,7 @@ FUNC VOID NEBENQUESTS()
 
 			AI_PlayAni	(hero, "T_PLUNDER");
 
-			B_LogEntry	(TOPIC_MOD_NL_PLAGE, "Ok, das wäre geschafft. Mal sehen, was in den nächsten Tagen passiert.");
+			B_LogEntry	(TOPIC_MOD_NL_PLAGE, "Okay, that's done. Let's see what happens in the next few days.");
 		};
 
 		// Der flüchtige Bauer
@@ -2964,8 +2964,8 @@ FUNC VOID NEBENQUESTS()
 
 				Mod_NL_TalkesselProblem = 3;
 
-				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Bruce trifft sich offenbar regelmäßig mit Fester. Scheint, als würde es um schmutzige Geschäfte mit Sumpfkraut gehen.");
-				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Soso, ich sollte mal ein Schwätzchen mit Fester halten.");
+				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Bruce seems to be meeting with Fester on a regular basis. Looks like it's about dirty swampweed deals.");
+				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Soso, I should have a chat with Fester.");
 			};
 		};
 
@@ -2976,11 +2976,11 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_NL_TalkesselProblem = 4;
 
-				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Das gibt ein klares Bild. Lee sollte davon erfahren.");
+				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "That gives a clear picture. Lee should know about this.");
 
 				AI_StandUP	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_KesselProblem_15_00"); //Das gibt ein klares Bild. Lee sollte davon erfahren.
+				AI_Output(hero, NULL, "Info_Mod_Hero_KesselProblem_15_00"); //That gives a clear picture. Lee should know about this.
 			};
 		};
 
@@ -3021,42 +3021,42 @@ FUNC VOID NEBENQUESTS()
 
 			if (Mod_NL_BruceTot_Counter == 3)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_00"); //Tja, hast wohl nicht das gefunden, was du erwartet hast, oder?
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_00"); //Well, I guess I didn't find what you were expecting, did I?
 			};
 
 			if (Mod_NL_BruceTot_Counter == 8)
 			{
-				AI_Output(hero, NULL, "Info_Mod_SentenzaBullco_Ueberfall_15_01"); //Was zum Teufel ...?
+				AI_Output(hero, NULL, "Info_Mod_SentenzaBullco_Ueberfall_15_01"); //What the hell...?
 			};
 
 			if (Mod_NL_BruceTot_Counter == 13)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_02"); //Aber ich bin so freundlich. Das rostige Schwert beim Schürfer darfst du für deine Mühen behalten, buahaha.
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_02"); //But I'm so kind. You may keep the rusty sword by the prospector for your trouble, buahaha.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 18)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_03"); //Du wirst dich ohnehin gleich zu ihm Gesellen dürfen, du einfältiger Spinner.
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_03"); //You'll be able to join him in no time, you stupid fool.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 23)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_04"); //Ich sülze dir etwas über ein Familienschwert vor und du Idiot läufst tatsächlich los.
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_04"); //I'm jerking you off about a family sword, and you idiot's actually running away.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 28)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_05"); //Hatte eigentlich erwartet, dass es hier genug Viecher gäbe, die dich in Stücke reißen würden ... umso mehr Bruce die Leiche hier heruntergeworfen hatte.
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_05"); //Was actually expecting that there would be enough animals here to tear you apart... the more Bruce had thrown the body down here.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 33)
 			{
-				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_06_06"); //Tja, da schaust du, hä. Hast du wirklich gedacht, Bruce hätte das alleine hinbekommen? Der größte Teil davon ist in unsere Taschen geflossen.
+				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_06_06"); //Well, there you look, huh? Did you really think Bruce could have done it on her own? Most of it went into our pockets.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 38)
 			{
-				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_06_07"); //Aber wegen dir sitzen wir jetzt auf dem Trockenen. Und  das wirst du jetzt büßen.
+				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_06_07"); //But because of you, we're on dry land now. And you're going to pay for that.
 
 				B_StartOtherRoutine	(Mod_1290_SLD_Roscoe_MT, "UEBERFALL");
 				B_StartOtherRoutine	(Mod_525_SLD_Lee_MT, "UEBERFALL");
@@ -3071,14 +3071,14 @@ FUNC VOID NEBENQUESTS()
 			{
 				AI_TurnToNpc	(Mod_525_SLD_Lee_MT, Mod_796_SLD_Sentenza_MT);
 
-				AI_Output(Mod_525_SLD_Lee_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_04_08"); //Das glaube ich nicht. Und ja, das war alles, was ich wissen wollte.
+				AI_Output(Mod_525_SLD_Lee_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_04_08"); //I don't think so. And yes, that's all I wanted to know.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 48)
 			{
 				AI_TurnToNpc	(Mod_796_SLD_Sentenza_MT, Mod_779_SLD_Bullco_MT);
 
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_09"); //Verdammt, kämpf um dein Leben!!!
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_09"); //Damn it, fight for your life!
 			};
 
 			if (Mod_NL_BruceTot_Counter == 53)
@@ -3115,11 +3115,11 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Urs_Hund = 1;
 
-				B_LogEntry	(TOPIC_MOD_URS_HUND, "So, eigentlich habe ich jetzt alles zusammen.");
+				B_LogEntry	(TOPIC_MOD_URS_HUND, "Well, actually, I've got it all together now.");
 
 				AI_StandUp	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_Urs_Hund_15_00"); //So, eigentlich habe ich jetzt alles zusammen.
+				AI_Output(hero, NULL, "Info_Mod_Hero_Urs_Hund_15_00"); //Well, actually, I've got it all together now.
 
 				Wld_InsertItem	(ItWr_UrsNotiz,	"FP_ITEM_URS_NOTIZ");
 
@@ -3167,7 +3167,7 @@ FUNC VOID NEBENQUESTS()
 
 			if (Mod_Urs_Hund_Counter == 12)
 			{
-				AI_Output (Mod_7649_OUT_Urs_MT, NULL, "Info_Mod_Urs_Ritual_12_00"); //(erschöpft) Puhh, das war vielleicht ein Kraftakt. (wieder entschlossener) So, aber nun wollen wir mal sehen.
+				AI_Output (Mod_7649_OUT_Urs_MT, NULL, "Info_Mod_Urs_Ritual_12_00"); //(Exhausted) Phew, that was quite a feat of strength. There, but let's see.
 			};
 
 			if (Mod_Urs_Hund_Counter == 18)
@@ -3243,7 +3243,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Fingers_Nek = 1;
 
-			B_LogEntry	(TOPIC_MOD_FINGERS_NEK, "Ich habe das Amulett.");
+			B_LogEntry	(TOPIC_MOD_FINGERS_NEK, "I have the amulet.");
 		};
 
 		// Was die Finsternis hervorbringt
@@ -3272,7 +3272,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Erol_Fahrender = 7;
 
-				B_LogEntry	(TOPIC_MOD_EROL_FEUERMAGIER, "Aha. Das wird es wohl sein, was die Feuerleute wollen. Gleich mal zu Erol ...");
+				B_LogEntry	(TOPIC_MOD_EROL_FEUERMAGIER, "Uh-huh. I suppose that's what the firemen want. Right away to Erol....");
 			};
 		};
 
@@ -3659,7 +3659,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Halfmar_Pflanzen = 1;
 
-			B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "Ich habe die Kräuter für Halfmar.");
+			B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "I have the herbs for Halfmar.");
 		};
 
 		if (Npc_GetDistToWP(hero, "SUEDMINE_15") < 1000)
@@ -3679,7 +3679,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Geist_EIS_Bruder = 2;
 
-			B_LogEntry	(TOPIC_MOD_GEIST_BRUDER, "Strewaks Notizen! Es scheint, als hätte ich das Geheimnis um seinen Verbleib gelüftet. Die eisige Kälte des Eisriesen wurde ihm zum Verhängnis und verhinderte, dass sein Körper jemals zerfiel und ins Erdreich einging. Sobald ich dem ruhelosen Geist seines Bruders davon berichtet habe, sollte er endlich Frieden finden.");
+			B_LogEntry	(TOPIC_MOD_GEIST_BRUDER, "Strewak's notes! It seems I've uncovered the secret to his whereabouts. The icy cold of the ice giant became his downfall and prevented his body from ever falling apart and entering the earth. As soon as I have told the restless spirit of his brother about this, he should finally find peace.");
 		};
 
 		if (Npc_IsDead(Monster_11068_Eisriese_EIS))
@@ -3829,7 +3829,7 @@ FUNC VOID NEBENQUESTS()
 				};
 			}; /*end while*/
 
-			B_LogEntry	(TOPIC_MOD_XARDAS_ALTEMINE, "Die Gefahr in der Mine dürfte gebannt sein. Ich sollte Xardas davon berichten.");
+			B_LogEntry	(TOPIC_MOD_XARDAS_ALTEMINE, "The danger in the mine should be averted. I should tell Xardas about it.");
 
 			Mod_AMQ_Viper_Day = Wld_GetDay();
 		};

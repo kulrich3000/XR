@@ -1,7 +1,7 @@
 instance Mod_7272_HS_Trunkenbold_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Trunkenbold"; 
+	name 		= "drunkard"; 
 	guild 		= GIL_OUT;
 	id 			= 7272;
 	voice 		= 4;

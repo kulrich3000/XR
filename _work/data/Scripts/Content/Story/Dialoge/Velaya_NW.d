@@ -19,21 +19,21 @@ FUNC INT Info_Mod_Velaya_NW_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Velaya_NW_Irdorath_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_00"); //(erfreut) Das gibt’s doch nicht, du hier?
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_01"); //Ohh, ich bin auch überrascht dich hier anzutreffen ...
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_02"); //Naja, ohne dich könnte ich ja auch nicht hier sein, würde immer noch im Minental sitzen, mich beim Baden begaffen lassen und das Bett mit den Erzbaronen teilen ... auch wenn es nicht ganz so schlimm war, wie zu Zeiten von Gomez.
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_03"); //(halblaut) Hmm, da werden Erinnerungen wach ...
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_04"); //Was sagst du?
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_05"); //Ähh, ach nichts. Ich meinte nur ... dass ich mich daran erinnert habe, ja noch alles für die anstehende Seereise vorbereiten zu müssen.
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_06"); //Seereise? Die große weite Welt? Wie herrlich ...
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_07"); //Ach, wenn ich dich doch nur begleiten könnte ...
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_08"); //Na ja, es wird nicht ganz ungefährlich. Es heißt einen üblen Magier für seine Schandtaten zur Rechenschaft zu ziehen.
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_09"); //Ich weiß nicht, ob das das richtige für dich wäre ...
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_10"); //(freundlich, ironisch) Ach hör schon auf den Kavalier geben. Ich habe in den letzten Wochen einiges gelernt ...
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_11"); //Nun, ich vermute, du meinst nicht die Feldarbeit ...
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_12"); //Tja, mit meinem Bogen kann ich einem Eber auf 10m das Auge ausschießen ...
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_13"); //... und aufdringlichen Kerlen mit dem Degen Zurückhaltung lehren, wenn es dahin geht, wo es weh tut ...
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_14"); //(halblaut) Soso, klingt, als würde da jemand aus Erfahrung sprechen.
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_00"); //You can't have that, can you?
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_01"); //Ohh, I'm surprised to find you here too...
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_02"); //Well, I couldn't be here without you, I would still be sitting in the valley of the river Minental, I would let myself be gawked in the bath and share my bed with the ore barons.... even if it wasn't as bad as it was in Gomez's day.
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_03"); //Hmm, that brings back memories...
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_04"); //What do you say?
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_05"); //Uh, nothing. I just meant.... that I remembered having to prepare everything for the upcoming voyage.
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_06"); //Sea voyage? The big wide world? How wonderful...
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_07"); //Oh, if only I could go with you...
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_08"); //Well, it's not going to be completely harmless. It is called to hold an evil magician accountable for his atrocities.
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_09"); //I don't know if this would be right for you...
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_10"); //Friendly, ironic. Just listen to the gentleman. I have learned a lot in the last weeks....
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_11"); //Well, I guess you don't mean the fieldwork...
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_12"); //Well, with my bow I can shoot out the eye of a boar at 10m...
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath_17_13"); //... and intrusive guys with the sword to show restraint when it goes where it hurts....
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath_15_14"); //Soso, sounds like someone from experience is speaking.
 };
 
 INSTANCE Info_Mod_Velaya_NW_Irdorath2 (C_INFO)
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_Velaya_NW_Irdorath2 (C_INFO)
 	information	= Info_Mod_Velaya_NW_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Ordnung, wer sich so in wenigen Wochen gemausert hat, wird auch auf dem Schiff nichts anbrennen lassen.";
+	description	= "All right, if you have moulted like this in a few weeks, you won't burn anything on the ship.";
 };
 
 FUNC INT Info_Mod_Velaya_NW_Irdorath2_Condition()
@@ -58,11 +58,11 @@ FUNC INT Info_Mod_Velaya_NW_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Velaya_NW_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath2_15_00"); //In Ordnung, wer sich so in wenigen Wochen gemausert hat, wird auch auf dem Schiff nichts anbrennen lassen.
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath2_17_01"); //Toll! Und das Schiff, ist das das fantastische große hinten im Hafen?
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath2_17_02"); //Man, dass muss ich mir gleich näher ansehen.
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath2_15_00"); //All right, if you have moulted like this in a few weeks, you won't burn anything on the ship.
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath2_17_01"); //Great! And the ship, is that the fantastic big one in the back of the harbour?
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath2_17_02"); //Man, I gotta get a closer look at this.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Wen man nicht alles so in Khorinis antrifft ... mit meiner 'alten Bekannten' Velaya ist jetzt meine Mannschaft um ein Crewmitglied reicher.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "If you don't find everything in Khorinis... with my' old acquaintance' Velaya, my crew is now one more crew member.");
 
 	B_GivePlayerXP	(100);
 
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Velaya_NW_Irdorath3 (C_INFO)
 	information	= Info_Mod_Velaya_NW_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "I'm sorry, but it seems we're too many.";
 };
 
 FUNC INT Info_Mod_Velaya_NW_Irdorath3_Condition()
@@ -101,8 +101,8 @@ FUNC INT Info_Mod_Velaya_NW_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Velaya_NW_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath3_17_01"); //Schade. Ich gehe dann wieder zurück. Du weißt wo du mich findest, wenn doch noch ein Platz frei werden sollte.
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath3_15_00"); //I'm sorry, but it seems we're too many. I can't take you with me.
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath3_17_01"); //Too bad. I'll go back then. You know where to find me if there's ever gonna be a seat left.
 
 	Mod_VelayaDabei = 0;
 
@@ -121,7 +121,7 @@ INSTANCE Info_Mod_Velaya_NW_Irdorath4 (C_INFO)
 	information	= Info_Mod_Velaya_NW_Irdorath4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kann dich doch mitnehmen.";
+	description	= "I can give you a ride.";
 };
 
 FUNC INT Info_Mod_Velaya_NW_Irdorath4_Condition()
@@ -137,8 +137,8 @@ FUNC INT Info_Mod_Velaya_NW_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Velaya_NW_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath4_15_00"); //Ich kann dich doch mitnehmen. Es hat sich noch ein Platz auf dem Schiff gefunden.
-	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath4_17_01"); //Sehr gut, ich bin dann wieder am Hafen.
+	AI_Output(hero, self, "Info_Mod_Velaya_NW_Irdorath4_15_00"); //I can give you a ride. There's room on the ship.
+	AI_Output(self, hero, "Info_Mod_Velaya_NW_Irdorath4_17_01"); //Very well, I'll be back at the harbour.
 
 	Mod_VelayaDabei = 1;
 

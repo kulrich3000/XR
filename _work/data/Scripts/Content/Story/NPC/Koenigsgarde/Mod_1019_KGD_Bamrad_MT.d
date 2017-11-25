@@ -2,7 +2,7 @@ instance Mod_1019_KGD_Bamrad_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Bramrad";
+	name 		=	"brake wheel";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_OUT;
 	voice 		=	7;

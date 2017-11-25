@@ -5,7 +5,7 @@
 prototype Mst_Addon_Stoneguardian	(C_NPC)
 {
 	//----- Monster ----
-	name							= "Steinwächter";
+	name							= "Stone Sentinel";
 	guild							= GIL_STONEGUARDIAN;
 	aivar[AIV_MM_REAL_ID]			= ID_STONEGUARDIAN;
 	level							= 18;
@@ -137,7 +137,7 @@ INSTANCE Stoneguardian_Bergwelt	(Mst_Addon_Stoneguardian)
 
 INSTANCE Erzguardian	(Mst_Addon_Stoneguardian)
 {
-	name = "Erzwächter";
+	name = "ore guardian";
 
 	B_SetVisuals_Erzguardian ();
 
@@ -149,7 +149,7 @@ INSTANCE Erzguardian	(Mst_Addon_Stoneguardian)
 
 INSTANCE Erzguardian_Special_01	(Mst_Addon_Stoneguardian)
 {
-	name = "Erzwächter";
+	name = "ore guardian";
 
 	B_SetVisuals_Erzguardian ();
 

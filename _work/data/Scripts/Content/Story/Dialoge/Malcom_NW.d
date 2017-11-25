@@ -15,15 +15,15 @@ FUNC INT Info_Mod_Malcom_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Malcom_NW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_Hi_30_00"); //He - was willst du?
-	AI_Output(hero, self, "Info_Mod_Malcom_NW_Hi_15_01"); //Du siehst ja geradezu verdächtig nach einem Pirat aus.
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_Hi_30_02"); //Ich bin auch einer, bei meiner einbeinigen Großmutter! Grimmig und gefährlich!
-	AI_Output(hero, self, "Info_Mod_Malcom_NW_Hi_15_03"); //Aber ganze ohne Schiff...
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_Hi_30_04"); //Ja, verdammich! Ich bin vor ein paar Tagen bei einem Sturm gekentert. Jetzt liegt mein Boot da drüben auf dem Strand, bei meiner einäugigen Tante!
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_Hi_30_00"); //Hey, what do you want?
+	AI_Output(hero, self, "Info_Mod_Malcom_NW_Hi_15_01"); //You look suspiciously like a pirate.
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_Hi_30_02"); //I'm one too, with my one-legged grandmother! Fierce and dangerous!
+	AI_Output(hero, self, "Info_Mod_Malcom_NW_Hi_15_03"); //But without a ship...
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_Hi_30_04"); //Yeah, damn it! I capsized in a storm a few days ago. Now my boat's over there on the beach, by my one-eyed aunt!
 
 	Log_CreateTopic	(TOPIC_MOD_MALCOM_GOLD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MALCOM_GOLD, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MALCOM_GOLD, "Malcom ist vor ein paar Tagen am Strand vor Khorinis gestrandet und hat dabei seinen Geldbeutel verloren. Dieser wird von einem Waran bewacht.");
+	B_LogEntry	(TOPIC_MOD_MALCOM_GOLD, "Malcom got stranded a few days ago on the beach in front of Khorinis and lost his wallet. This is guarded by a monitor monitor.");
 };
 
 INSTANCE Info_Mod_Malcom_NW_WarumKhorinis (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Malcom_NW_WarumKhorinis (C_INFO)
 	information	= Info_Mod_Malcom_NW_WarumKhorinis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du in Khorinis zu schaffen?";
+	description	= "What are you doing in Khorinis?";
 };
 
 FUNC INT Info_Mod_Malcom_NW_WarumKhorinis_Condition()
@@ -44,8 +44,8 @@ FUNC INT Info_Mod_Malcom_NW_WarumKhorinis_Condition()
 
 FUNC VOID Info_Mod_Malcom_NW_WarumKhorinis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Malcom_NW_WarumKhorinis_15_00"); //Was hast du in Khorinis zu schaffen?
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_WarumKhorinis_30_01"); //Geschäfte - aber nichts, was dich zu interessieren braucht.
+	AI_Output(hero, self, "Info_Mod_Malcom_NW_WarumKhorinis_15_00"); //What are you doing in Khorinis?
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_WarumKhorinis_30_01"); //Business - but nothing that needs to interest you.
 };
 
 INSTANCE Info_Mod_Malcom_NW_Boot (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Malcom_NW_Boot (C_INFO)
 	information	= Info_Mod_Malcom_NW_Boot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso machst du dein Boot nicht mehr flott?";
+	description	= "Why don't you get your boat ready?";
 };
 
 FUNC INT Info_Mod_Malcom_NW_Boot_Condition()
@@ -66,8 +66,8 @@ FUNC INT Info_Mod_Malcom_NW_Boot_Condition()
 
 FUNC VOID Info_Mod_Malcom_NW_Boot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Malcom_NW_Boot_15_00"); //Wieso machst du dein Boot nicht mehr flott?
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_Boot_30_01"); //Bei meiner einbrüstigen Amme, das ist nicht mehr zu retten! Aber meinen Geldbeutel hätte ich gern wieder, sonst brauch ich mich in meinem Lager nicht mehr blicken zu lassen.
+	AI_Output(hero, self, "Info_Mod_Malcom_NW_Boot_15_00"); //Why don't you get your boat ready?
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_Boot_30_01"); //With my single-chested nurse, that's beyond salvation! But I would like to have my wallet back, otherwise I don't need to show up in my camp anymore.
 };
 
 INSTANCE Info_Mod_Malcom_NW_BeutelProblem (C_INFO)
@@ -78,7 +78,7 @@ INSTANCE Info_Mod_Malcom_NW_BeutelProblem (C_INFO)
 	information	= Info_Mod_Malcom_NW_BeutelProblem_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist das Problem mit deinem Beutel?";
+	description	= "What's the problem with your bag?";
 };
 
 FUNC INT Info_Mod_Malcom_NW_BeutelProblem_Condition()
@@ -90,14 +90,14 @@ FUNC INT Info_Mod_Malcom_NW_BeutelProblem_Condition()
 
 FUNC VOID Info_Mod_Malcom_NW_BeutelProblem_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Malcom_NW_BeutelProblem_15_00"); //Was ist das Problem mit deinem Beutel?
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_BeutelProblem_30_01"); //Der lag irgendwo im Boot, als es mich erwischt hat, also wurde er wahrscheinlich mit an den Strand gespült.
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_BeutelProblem_30_02"); //Aber da sitzt ein fetter Waran, und so ganz ohne Eisen zwischen den Fingern werd ihn den sicher nicht bitten, sich zu verpissen.
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_BeutelProblem_30_03"); //Ich kann dir zwar nichts anbieten, weil ich nichts hab, aber wenn du mir den Beutel bringst, schau ich mal, ob ich mich später noch erkenntlich zeigen kann.
+	AI_Output(hero, self, "Info_Mod_Malcom_NW_BeutelProblem_15_00"); //What's the problem with your bag?
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_BeutelProblem_30_01"); //It was somewhere in the boat when I got caught, so it was probably washed up on the beach.
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_BeutelProblem_30_02"); //But there's a fat monitor, and without iron between his fingers he won't ask him to piss off.
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_BeutelProblem_30_03"); //I can't offer you anything because I don't have anything, but if you bring me the bag, I'll see if I can show my gratitude later.
 
 	Log_CreateTopic	(TOPIC_MOD_MALCOM_GOLD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MALCOM_GOLD, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MALCOM_GOLD, "Malcom ist vor ein paar Tagen am Strand vor Khorinis gestrandet und hat dabei seinen Geldbeutel verloren. Dieser wird von einem Waran bewacht.");
+	B_LogEntry	(TOPIC_MOD_MALCOM_GOLD, "Malcom got stranded a few days ago on the beach in front of Khorinis and lost his wallet. This is guarded by a monitor monitor.");
 };
 
 INSTANCE Info_Mod_Malcom_NW_Piratenlager (C_INFO)
@@ -108,7 +108,7 @@ INSTANCE Info_Mod_Malcom_NW_Piratenlager (C_INFO)
 	information	= Info_Mod_Malcom_NW_Piratenlager_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ihr Piraten habt sogar ein Lager?";
+	description	= "You pirates even have a camp?";
 };
 
 FUNC INT Info_Mod_Malcom_NW_Piratenlager_Condition()
@@ -120,8 +120,8 @@ FUNC INT Info_Mod_Malcom_NW_Piratenlager_Condition()
 
 FUNC VOID Info_Mod_Malcom_NW_Piratenlager_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Malcom_NW_Piratenlager_15_00"); //Ihr Piraten habt sogar ein Lager?
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_Piratenlager_30_01"); //Willst wohl auch mitmachen, oder warum so neugierig? Aber ich werd dir nichts erzählen. Wer zu den Piraten will, findet sie früher oder später allein.
+	AI_Output(hero, self, "Info_Mod_Malcom_NW_Piratenlager_15_00"); //You pirates even have a camp?
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_Piratenlager_30_01"); //Want to join in, or why are you so curious? But I'm not gonna tell you anything. If you want to join the pirates, you'll find them alone sooner or later.
 };
 
 INSTANCE Info_Mod_Malcom_NW_Beutel (C_INFO)
@@ -132,7 +132,7 @@ INSTANCE Info_Mod_Malcom_NW_Beutel (C_INFO)
 	information	= Info_Mod_Malcom_NW_Beutel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab deinen Beutel.";
+	description	= "Got your purse.";
 };
 
 FUNC INT Info_Mod_Malcom_NW_Beutel_Condition()
@@ -146,13 +146,13 @@ FUNC INT Info_Mod_Malcom_NW_Beutel_Condition()
 
 FUNC VOID Info_Mod_Malcom_NW_Beutel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Malcom_NW_Beutel_15_00"); //Ich hab deinen Beutel.
+	AI_Output(hero, self, "Info_Mod_Malcom_NW_Beutel_15_00"); //Got your purse.
 	
 	B_GiveInvItems	(hero, self, ItMi_Malcom_Beutel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Malcom_NW_Beutel_30_01"); //Vielen Dank, jetzt muss ich nur noch einen Weg zurück zum Lager finden. Ich hoffe, hier schaut bald mal einer von meinen Kumpels vorbei.
+	AI_Output(self, hero, "Info_Mod_Malcom_NW_Beutel_30_01"); //Thanks a lot, now I just have to find a way back to the camp. I hope one of my buddies will stop by here soon.
 
-	B_LogEntry	(TOPIC_MOD_MALCOM_GOLD, "Ich habe Malcom sein Gold gebracht.");
+	B_LogEntry	(TOPIC_MOD_MALCOM_GOLD, "I brought Malcom his gold.");
 	B_SetTopicStatus	(TOPIC_MOD_MALCOM_GOLD, LOG_SUCCESS);
 
 	B_GivePlayerXP	(100);

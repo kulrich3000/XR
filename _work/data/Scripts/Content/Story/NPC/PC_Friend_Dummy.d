@@ -1,7 +1,7 @@
 instance PC_Friend_Dummy (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Argez"; 
+	name 		= "arge"; 
 	guild 		= GIL_DMT;
 	id 			= 7624;
 	voice 		= 1;

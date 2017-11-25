@@ -1,7 +1,7 @@
 instance Mod_7430_BDT_Bandit_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Räuber"; 
+	name 		= "bandit"; 
 	guild 		= GIL_STRF;
 	id 			= 7430;
 	voice 		= 7;

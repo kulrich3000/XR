@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Ferco_Hi_Condition()
 
 FUNC VOID Info_Mod_Ferco_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ferco_Hi_02_00"); //Hey du! Was willst du hier?
+	AI_Output(self, hero, "Info_Mod_Ferco_Hi_02_00"); //Hey you! What are you doing here?
 };
 
 INSTANCE Info_Mod_Ferco_WerBistDu (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Ferco_WerBistDu (C_INFO)
 	information	= Info_Mod_Ferco_WerBistDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Ferco_WerBistDu_Condition()
@@ -41,8 +41,8 @@ FUNC INT Info_Mod_Ferco_WerBistDu_Condition()
 
 FUNC VOID Info_Mod_Ferco_WerBistDu_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_WerBistDu_15_00"); //Wer bist du?
-	AI_Output(self, hero, "Info_Mod_Ferco_WerBistDu_02_01"); //Mein Name ist Ferco. Ich bin einer der Torwächter hier, wie du siehst.
+	AI_Output(hero, self, "Info_Mod_Ferco_WerBistDu_15_00"); //Who are you?
+	AI_Output(self, hero, "Info_Mod_Ferco_WerBistDu_02_01"); //My name is Ferco. I'm one of the gatekeepers here, as you can see.
 };
 
 INSTANCE Info_Mod_Ferco_Guarding (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Ferco_Guarding (C_INFO)
 	information	= Info_Mod_Ferco_Guarding_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was bewachst du?";
+	description	= "What are you guarding?";
 };
 
 FUNC INT Info_Mod_Ferco_Guarding_Condition()
@@ -66,14 +66,14 @@ FUNC INT Info_Mod_Ferco_Guarding_Condition()
 
 FUNC VOID Info_Mod_Ferco_Guarding_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Guarding_15_00"); //Was bewachst du?
-	AI_Output(self, hero, "Info_Mod_Ferco_Guarding_02_01"); //Das hier ist das Lager der Verwandlungsmagier. Ich würde ihnen nicht zu nahe kommen.
+	AI_Output(hero, self, "Info_Mod_Ferco_Guarding_15_00"); //What are you guarding?
+	AI_Output(self, hero, "Info_Mod_Ferco_Guarding_02_01"); //This is the camp of transformation mages. I wouldn't get too close to them.
 
 	AI_PlayAni(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Ferco_Guarding_02_02"); //Ich glaube sie spinnen ein wenig.
-	AI_Output(hero, self, "Info_Mod_Ferco_Guarding_15_03"); //(zu sich) Das kommt mir doch bekannt vor ... (zu Ferco) Kann ich rein?
-	AI_Output(self, hero, "Info_Mod_Ferco_Guarding_02_04"); //Nein, dazu bist du nicht bereit. Wir kennen dich ja gar nicht. Aber wenn du dich nützlich machen willst, kannst du das gerne tun. (lacht) Arbeit haben wir immer zu erledigen.
+	AI_Output(self, hero, "Info_Mod_Ferco_Guarding_02_02"); //I think you're a little crazy.
+	AI_Output(hero, self, "Info_Mod_Ferco_Guarding_15_03"); //That seems familiar... (to Ferco) Can I come in?
+	AI_Output(self, hero, "Info_Mod_Ferco_Guarding_02_04"); //No, you're not ready for that. We don't even know you. But if you want to be useful, you're welcome to do so. (laughs) We always have work to do.
 };
 
 INSTANCE Info_Mod_Ferco_Aufgabe (C_INFO)
@@ -84,7 +84,7 @@ INSTANCE Info_Mod_Ferco_Aufgabe (C_INFO)
 	information	= Info_Mod_Ferco_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was gibt es zu tun?";
+	description	= "What is there to do?";
 };
 
 FUNC INT Info_Mod_Ferco_Aufgabe_Condition()
@@ -98,16 +98,16 @@ FUNC INT Info_Mod_Ferco_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Ferco_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Aufgabe_15_00"); //Was gibt es zu tun?
-	AI_Output(self, hero, "Info_Mod_Ferco_Aufgabe_02_01"); //Dort unten in einer Höhle hat mal ein Schattenläufer gehaust. Dort müssten einige Überreste zu finden sein. Die könntest du mir bringen, die Magier arbeiten nämlich an einem neuen Verwandlungszauber.
-	AI_Output(hero, self, "Info_Mod_Ferco_Aufgabe_15_02"); //Alles klar.
-	AI_Output(self, hero, "Info_Mod_Ferco_Aufgabe_02_03"); //Komm wieder, wenn du die Trophäen hast.
+	AI_Output(hero, self, "Info_Mod_Ferco_Aufgabe_15_00"); //What is there to do?
+	AI_Output(self, hero, "Info_Mod_Ferco_Aufgabe_02_01"); //Down there in a cave once lived a shadow runner. There should be some remains there. You could bring them to me, because the magicians are working on a new metamorphosis spell.
+	AI_Output(hero, self, "Info_Mod_Ferco_Aufgabe_15_02"); //All clear.
+	AI_Output(self, hero, "Info_Mod_Ferco_Aufgabe_02_03"); //Come back when you get the trophies.
 
 	Log_CreateTopic	(TOPIC_MOD_FERCO_SCHATTI, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FERCO_SCHATTI, LOG_RUNNING);
 	Log_CreateTopic	(TOPIC_MOD_VMG_AUFNAHME, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_VMG_AUFNAHME, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_VMG_AUFNAHME, TOPIC_MOD_FERCO_SCHATTI, "Um ein Verwandlungsmagier zu werden sollte ich mich zuerst mal mit der Torwache Ferco gut stellen.", "Ferco, eine Torwache des Lagers der Verwandlungsmagier, hat mir aufgetragen, in der Nähe der ehemaligen Klosterruine nach Überresten eines Schattenläufers zu suchen.");
+	B_LogEntry_More	(TOPIC_MOD_VMG_AUFNAHME, TOPIC_MOD_FERCO_SCHATTI, "To become a transformation mage, I should first of all play well with the goalkeeper Ferco.", "Ferco, a gatekeeper of the Metamorphosis Mages' camp, has ordered me to search for remains of a shadow runner near the former monastery ruins.");
 };
 
 INSTANCE Info_Mod_Ferco_Einnehmen (C_INFO)
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Ferco_Einnehmen (C_INFO)
 	information	= Info_Mod_Ferco_Einnehmen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin gekommen, um die Klosterruine einzunehmen.";
+	description	= "I have come to occupy the monastery ruins.";
 };
 
 FUNC INT Info_Mod_Ferco_Einnehmen_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Mod_Ferco_Einnehmen_Condition()
 
 FUNC VOID Info_Mod_Ferco_Einnehmen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Einnehmen_15_00"); //Ich bin gekommen, um die Klosterruine einzunehmen.
-	AI_Output(self, hero, "Info_Mod_Ferco_Einnehmen_02_01"); //Ach ja? Dann komm mal her, Bürschchen!
+	AI_Output(hero, self, "Info_Mod_Ferco_Einnehmen_15_00"); //I have come to occupy the monastery ruins.
+	AI_Output(self, hero, "Info_Mod_Ferco_Einnehmen_02_01"); //Oh, yeah? Come on over here, little fellow!
 
 	AI_StopProcessInfos	(self);
 
@@ -164,13 +164,13 @@ FUNC VOID Info_Mod_Ferco_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Ferco_Umgehauen_02_00"); //Mannomann! Du hast ja 'nen ganz schönen Schlag drauf.
+			AI_Output(self, hero, "Info_Mod_Ferco_Umgehauen_02_00"); //Jesus Christ! You got a hell of a punch on you.
 
 			Mod_FercoBesiegt	=	1;
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Ferco_Umgehauen_02_01"); //Na, du Großmaul?
+			AI_Output(self, hero, "Info_Mod_Ferco_Umgehauen_02_01"); //Hey, big mouth.
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -189,7 +189,7 @@ INSTANCE Info_Mod_Ferco_Loser (C_INFO)
 	information	= Info_Mod_Ferco_Loser_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und? Immer noch große Klappe?";
+	description	= "And? Still big mouth?";
 };
 
 FUNC INT Info_Mod_Ferco_Loser_Condition()
@@ -203,8 +203,8 @@ FUNC INT Info_Mod_Ferco_Loser_Condition()
 
 FUNC VOID Info_Mod_Ferco_Loser_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Loser_15_00"); //Und? Immer noch große Klappe?
-	AI_Output(self, hero, "Info_Mod_Ferco_Loser_02_01"); //Was willst du hier? Du bist kräftig, aber nicht sehr intelligent, wie mir scheint.
+	AI_Output(hero, self, "Info_Mod_Ferco_Loser_15_00"); //And? Still big mouth?
+	AI_Output(self, hero, "Info_Mod_Ferco_Loser_02_01"); //What are you doing here? You're strong, but not very intelligent, it seems to me.
 };
 
 INSTANCE Info_Mod_Ferco_NotSpeaking (C_INFO)
@@ -232,7 +232,7 @@ FUNC INT Info_Mod_Ferco_NotSpeaking_Condition()
 
 FUNC VOID Info_Mod_Ferco_NotSpeaking_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ferco_NotSpeaking_02_00"); //Du weißt, was du zu tun hast.
+	AI_Output(self, hero, "Info_Mod_Ferco_NotSpeaking_02_00"); //You know what you have to do.
 };
 
 INSTANCE Info_Mod_Ferco_AllesDabei (C_INFO)
@@ -259,7 +259,7 @@ FUNC INT Info_Mod_Ferco_AllesDabei_Condition()
 
 FUNC VOID Info_Mod_Ferco_AllesDabei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ferco_AllesDabei_02_00"); //Was willst du noch?
+	AI_Output(self, hero, "Info_Mod_Ferco_AllesDabei_02_00"); //What more do you want?
 };
 
 INSTANCE Info_Mod_Ferco_HabAlles (C_INFO)
@@ -270,7 +270,7 @@ INSTANCE Info_Mod_Ferco_HabAlles (C_INFO)
 	information	= Info_Mod_Ferco_HabAlles_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Überreste gefunden.";
+	description	= "I found the remains.";
 };
 
 FUNC INT Info_Mod_Ferco_HabAlles_Condition()
@@ -286,21 +286,21 @@ FUNC INT Info_Mod_Ferco_HabAlles_Condition()
 
 FUNC VOID Info_Mod_Ferco_HabAlles_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_HabAlles_15_00"); //Ich habe die Überreste gefunden.
-	AI_Output(self, hero, "Info_Mod_Ferco_HabAlles_02_01"); //Dann zeig mal her.
-	AI_Output(hero, self, "Info_Mod_Ferco_HabAlles_15_02"); //Hier. Das sollte genügen.
+	AI_Output(hero, self, "Info_Mod_Ferco_HabAlles_15_00"); //I found the remains.
+	AI_Output(self, hero, "Info_Mod_Ferco_HabAlles_02_01"); //Well, let me see it.
+	AI_Output(hero, self, "Info_Mod_Ferco_HabAlles_15_02"); //Here. That should do it.
 
 	Npc_RemoveInvItems	(hero, ItAt_ShadowFur, 1);
 	Npc_RemoveInvItems	(hero, ItAt_ShadowHorn, 1);
 	Npc_RemoveInvItems	(hero, ItAt_Claw, 2);
 
-	B_ShowGivenThings	("Gegenstände gegeben");
+	B_ShowGivenThings	("items given");
 
-	AI_Output(self, hero, "Info_Mod_Ferco_HabAlles_02_03"); //Vielen Dank. Du bist in Ordnung, Mann. Hast du Lust noch einen Job zu übernehmen?
+	AI_Output(self, hero, "Info_Mod_Ferco_HabAlles_02_03"); //Thank you very much. You're all right, man. You want to take another job?
 
 	B_SetTopicStatus	(TOPIC_MOD_FERCO_SCHATTI, LOG_SUCCESS);
 
-	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Die erste Aufgabe habe ich erfüllt. Mal sehen, ob Ferco noch mehr für mich hat.");
+	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "I did the first job. See if Ferco has any more for me.");
 
 	B_GivePlayerXP	(100);
 };
@@ -313,7 +313,7 @@ INSTANCE Info_Mod_Ferco_ZweiteQuest (C_INFO)
 	information	= Info_Mod_Ferco_ZweiteQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was gibt es zu tun?";
+	description	= "What is there to do?";
 };
 
 FUNC INT Info_Mod_Ferco_ZweiteQuest_Condition()
@@ -326,11 +326,11 @@ FUNC INT Info_Mod_Ferco_ZweiteQuest_Condition()
 
 FUNC VOID Info_Mod_Ferco_ZweiteQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_ZweiteQuest_15_00"); //Was gibt es zu tun?
-	AI_Output(self, hero, "Info_Mod_Ferco_ZweiteQuest_02_01"); //Irgendein Idiot hat die Klosterruine mal als Fleischwanze durch einen Spalt in der Mauer betreten.
-	AI_Output(hero, self, "Info_Mod_Ferco_ZweiteQuest_15_02"); //(betont überrascht) Wer kommt denn auf solche Ideen?
-	AI_Output(self, hero, "Info_Mod_Ferco_ZweiteQuest_02_03"); //Ich weiß es nicht. Aber bei der Aktion ist die letzte bekannte Spruchrolle dieser Art verbraucht worden.
-	AI_Output(self, hero, "Info_Mod_Ferco_ZweiteQuest_02_04"); //Wäre schön, wenn du eine neue beschaffen könntest.
+	AI_Output(hero, self, "Info_Mod_Ferco_ZweiteQuest_15_00"); //What is there to do?
+	AI_Output(self, hero, "Info_Mod_Ferco_ZweiteQuest_02_01"); //Some idiot entered the ruins of the monastery as a meat bug through a crack in the wall.
+	AI_Output(hero, self, "Info_Mod_Ferco_ZweiteQuest_15_02"); //(wonly surprised) Who comes up with such ideas?
+	AI_Output(self, hero, "Info_Mod_Ferco_ZweiteQuest_02_03"); //I don't know, sir. But the last known saying of this kind was used up during the action.
+	AI_Output(self, hero, "Info_Mod_Ferco_ZweiteQuest_02_04"); //It would be nice if you could get a new one.
 };
 
 INSTANCE Info_Mod_Ferco_Crazy (C_INFO)
@@ -341,7 +341,7 @@ INSTANCE Info_Mod_Ferco_Crazy (C_INFO)
 	information	= Info_Mod_Ferco_Crazy_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du mich verarschen?";
+	description	= "Are you kidding me?";
 };
 
 FUNC INT Info_Mod_Ferco_Crazy_Condition()
@@ -354,22 +354,22 @@ FUNC INT Info_Mod_Ferco_Crazy_Condition()
 
 FUNC VOID Info_Mod_Ferco_Crazy_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_15_00"); //Willst du mich verarschen? Wo soll ich die denn herbekommen, wenn es keine mehr gibt?
-	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_02_01"); //Ich habe gesagt, die letzte bekannte. Die Magier glauben, dass es noch einige gibt. Angeblich in kälteren Gebieten, da sie dort gut konserviert wurden.
-	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_15_02"); //Warum gehen sie dann nicht in diese kälteren Gebiete und suchen danach?
-	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_02_03"); //Sie kommen aus einem Land namens Tugettso. Vielleicht hast du schon davon gehört. Dort sind die Temperaturen höher als hier.
-	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_02_04"); //Sie sind gegen solchen Temperaturen nicht widerstandsfähig genug und könnten ihre Arbeit nicht fortsetzen.
+	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_15_00"); //Are you kidding me? Where am I supposed to get it when there aren't any more?
+	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_02_01"); //I said the last known one. The magicians believe there are still some. Supposedly in colder areas, because they were well preserved there.
+	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_15_02"); //Then why don't they go to those colder climates and look for it?
+	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_02_03"); //They come from a country called Tugettso. Maybe you've heard of it. Temperatures there are higher than here.
+	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_02_04"); //They are not resistant to such temperatures and cannot continue their work.
 
 	Info_ClearChoices	(Info_Mod_Ferco_Crazy);
 
-	Info_AddChoice	(Info_Mod_Ferco_Crazy, "Als Laufbursche bin ich mir zu schade.", Info_Mod_Ferco_Crazy_C);
-	Info_AddChoice	(Info_Mod_Ferco_Crazy, "Ich komme auch aus warmen Gefilden.", Info_Mod_Ferco_Crazy_B);
-	Info_AddChoice	(Info_Mod_Ferco_Crazy, "Okay, ich mach’s. Hast du noch weitere nützliche Tipps?", Info_Mod_Ferco_Crazy_A);
+	Info_AddChoice	(Info_Mod_Ferco_Crazy, "I'm too good to be an errand boy.", Info_Mod_Ferco_Crazy_C);
+	Info_AddChoice	(Info_Mod_Ferco_Crazy, "I also come from warm regions.", Info_Mod_Ferco_Crazy_B);
+	Info_AddChoice	(Info_Mod_Ferco_Crazy, "Okay, I'll do it. Do you have any other useful tips?", Info_Mod_Ferco_Crazy_A);
 };
 
 FUNC VOID Info_Mod_Ferco_Crazy_C()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_C_15_00"); //Als Laufbursche bin ich mir zu schade.
+	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_C_15_00"); //I'm too good to be an errand boy.
 
 	VMG_Second = 1;
 
@@ -378,26 +378,26 @@ FUNC VOID Info_Mod_Ferco_Crazy_C()
 
 FUNC VOID Info_Mod_Ferco_Crazy_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_B_15_00"); //Ich komme auch aus warmen Gefilden.
-	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_B_02_01"); //Machst du’s jetzt oder nicht?
+	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_B_15_00"); //I also come from warm regions.
+	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_B_02_01"); //Are you gonna do it or not?
 
 	Info_ClearChoices	(Info_Mod_Ferco_Crazy);
 
-	Info_AddChoice	(Info_Mod_Ferco_Crazy, "Als Laufbursche bin ich mir zu schade.", Info_Mod_Ferco_Crazy_C);
-	Info_AddChoice	(Info_Mod_Ferco_Crazy, "Okay, ich mach’s. Hast du noch weitere nützliche Tipps?", Info_Mod_Ferco_Crazy_A);
+	Info_AddChoice	(Info_Mod_Ferco_Crazy, "I'm too good to be an errand boy.", Info_Mod_Ferco_Crazy_C);
+	Info_AddChoice	(Info_Mod_Ferco_Crazy, "Okay, I'll do it. Do you have any other useful tips?", Info_Mod_Ferco_Crazy_A);
 };
 
 FUNC VOID Info_Mod_Ferco_Crazy_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_A_15_00"); //Okay, ich mach’s. Hast du noch weitere nützliche Tipps?
-	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_A_02_01"); //Ich wusste, dass ich mich auf dich verlassen kann. Ich habe von einem Ort namens Gelato gehört.
-	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_A_02_02"); //Sprich mal mit Ken. Er weiß vielleicht etwas darüber.
+	AI_Output(hero, self, "Info_Mod_Ferco_Crazy_A_15_00"); //Okay, I'll do it. Do you have any other useful tips?
+	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_A_02_01"); //I knew I could count on you. I heard about a place called Gelato.
+	AI_Output(self, hero, "Info_Mod_Ferco_Crazy_A_02_02"); //Talk to Ken. He might know something about it.
 
 	VMG_Second = 2;
 
 	Log_CreateTopic	(TOPIC_MOD_FERCO_WANZE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FERCO_WANZE, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_VMG_AUFNAHME, TOPIC_MOD_FERCO_WANZE, "Hm, ich soll eine Spruchrolle 'Verwandlung Fleischwanze' finden. Mal sehen, wie mir Ken dabei helfen kann.", "Ferco meinte, ich solle mit Ken sprechen, um herauszufinden, wo das Gelato liegt, um dort den Verwandlungszauber Fleischwanze zu bergen.");
+	B_LogEntry_More	(TOPIC_MOD_VMG_AUFNAHME, TOPIC_MOD_FERCO_WANZE, "Hm, I'm supposed to find a spell role of metamorphosis meat bug. Let's see how Ken can help me with that.", "Ferco told me to talk to Ken to find out where the Gelato is, to salvage the metamorphosis spell Meat Bug.");
 
 	Info_ClearChoices	(Info_Mod_Ferco_Crazy);
 };
@@ -424,12 +424,12 @@ FUNC INT Info_Mod_Ferco_CrazyTwo_Condition()
 
 FUNC VOID Info_Mod_Ferco_CrazyTwo_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ferco_CrazyTwo_02_00"); //Was willst du noch?
+	AI_Output(self, hero, "Info_Mod_Ferco_CrazyTwo_02_00"); //What more do you want?
 
 	Info_ClearChoices	(Info_Mod_Ferco_CrazyTwo);
 
-	Info_AddChoice	(Info_Mod_Ferco_CrazyTwo, "Als Laufbursche bin ich mir zu schade.", Info_Mod_Ferco_Crazy_C);
-	Info_AddChoice	(Info_Mod_Ferco_CrazyTwo, "Okay, ich mach’s. Hast du noch weitere nützliche Tipps?", Info_Mod_Ferco_Crazy_A);
+	Info_AddChoice	(Info_Mod_Ferco_CrazyTwo, "I'm too good to be an errand boy.", Info_Mod_Ferco_Crazy_C);
+	Info_AddChoice	(Info_Mod_Ferco_CrazyTwo, "Okay, I'll do it. Do you have any other useful tips?", Info_Mod_Ferco_Crazy_A);
 };
 
 INSTANCE Info_Mod_Ferco_CrazyThree (C_INFO)
@@ -454,7 +454,7 @@ FUNC INT Info_Mod_Ferco_CrazyThree_Condition()
 
 FUNC VOID Info_Mod_Ferco_CrazyThree_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ferco_CrazyThree_02_00"); //Sprich mit Ken.
+	AI_Output(self, hero, "Info_Mod_Ferco_CrazyThree_02_00"); //Talk to Ken.
 
 	AI_StopProcessInfos	(self);
 };
@@ -480,18 +480,18 @@ FUNC INT Info_Mod_Ferco_Thys_Condition()
 
 FUNC VOID Info_Mod_Ferco_Thys_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ferco_Thys_02_00"); //Hast du den Zauber?
-	AI_Output(hero, self, "Info_Mod_Ferco_Thys_15_01"); //Ja, ich habe ihn.
+	AI_Output(self, hero, "Info_Mod_Ferco_Thys_02_00"); //Have you got the spell?
+	AI_Output(hero, self, "Info_Mod_Ferco_Thys_15_01"); //Yeah, I got him.
 
 	B_GiveInvItems	(hero, self, ItSc_TrfMeatbug, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ferco_Thys_02_02"); //Alles klar, ich werde die Magier davon in Kenntnis setzen. Komm in ein paar Tagen wieder.
+	AI_Output(self, hero, "Info_Mod_Ferco_Thys_02_02"); //All right, I'll let the magicians know. Come back in a few days.
 
 	VMG_Second_Time = Wld_GetDay();
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Ich war bei Ferco und soll in ein paar Tagen wiederkommen.");
+	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "I've been to Ferco's house. I'm supposed to be back in a few days.");
 	B_SetTopicStatus	(TOPIC_MOD_FERCO_WANZE, LOG_SUCCESS);
 };
 
@@ -517,18 +517,18 @@ FUNC INT Info_Mod_Ferco_QuestThree_Condition()
 
 FUNC VOID Info_Mod_Ferco_QuestThree_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ferco_QuestThree_02_00"); //Faice war sehr erfreut über die Spruchrolle. Hier, das hat er mir für dich mitgegeben.
-	AI_Output(hero, self, "Info_Mod_Ferco_QuestThree_15_01"); //Er hat nicht zufällig etwas von einem neuen Auftrag erzählt? Ich könnte noch ein wenig mehr Gold gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Ferco_QuestThree_02_02"); //Doch, zufällig hat er das.
-	AI_Output(self, hero, "Info_Mod_Ferco_QuestThree_02_03"); //Du musst wissen, die Magier kommen aus einem idyllischen Fleckchen Land im Westen. Man kann es ohne weiteres nicht erreichen.
-	AI_Output(self, hero, "Info_Mod_Ferco_QuestThree_02_04"); //Aber das wird Turendil dir alles erklären. Du sollst gleich zu ihm gehen.
+	AI_Output(self, hero, "Info_Mod_Ferco_QuestThree_02_00"); //Faice was very pleased with the role of spell. Here, he gave me this for you.
+	AI_Output(hero, self, "Info_Mod_Ferco_QuestThree_15_01"); //He hasn't said anything about a new assignment, has he? I could use a little more gold.
+	AI_Output(self, hero, "Info_Mod_Ferco_QuestThree_02_02"); //Yes, he did, by chance.
+	AI_Output(self, hero, "Info_Mod_Ferco_QuestThree_02_03"); //You know, the magicians come from an idyllic spot in the west. You can't reach it easily.
+	AI_Output(self, hero, "Info_Mod_Ferco_QuestThree_02_04"); //But Turendil will explain everything to you. I want you to see him right away.
 
 	Wld_SendTrigger	("EVT_OW_FOKUS_GATE_MOVER_01");
 	Wld_SendTrigger	("EVT_FOKUSTOR");
 
 	Log_CreateTopic	(TOPIC_MOD_FERCO_GOBLIN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FERCO_GOBLIN, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_VMG_AUFNAHME, TOPIC_MOD_FERCO_GOBLIN, "Und noch eine Aufgabe. Ob ich überhaupt mal aufgenommen werde?", "Ich habe einen neuen Auftrag. Anscheinend geht es um den Heimatort der Verwandlungsmagier. Ich soll mich bei einem gewissen Turendil melden.");
+	B_LogEntry_More	(TOPIC_MOD_VMG_AUFNAHME, TOPIC_MOD_FERCO_GOBLIN, "And another task. Will I ever get a recording?", "I have a new assignment. Apparently it's about the hometown of the transforming mages. I'm supposed to report to a guy named Turendil.");
 };
 
 INSTANCE Info_Mod_Ferco_Aufnahmequest (C_INFO)
@@ -552,24 +552,24 @@ FUNC INT Info_Mod_Ferco_Aufnahmequest_Condition()
 
 FUNC VOID Info_Mod_Ferco_Aufnahmequest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ferco_Aufnahmequest_02_00"); //Was kann ich für dich tun?
-	AI_Output(hero, self, "Info_Mod_Ferco_Aufnahmequest_15_01"); //Faice hat gesagt, du sollst mich in meinen letzten Auftrag einweisen.
-	AI_Output(self, hero, "Info_Mod_Ferco_Aufnahmequest_02_02"); //Ah, du wurdest also geschickt. Es soll sich ein neuer Bewerber aus dem Alten Lager auf den Weg gemacht haben. Du darfst ihm die erste Prüfungsaufgabe stellen.
+	AI_Output(self, hero, "Info_Mod_Ferco_Aufnahmequest_02_00"); //What can I do for you?
+	AI_Output(hero, self, "Info_Mod_Ferco_Aufnahmequest_15_01"); //Faice told you to let me in on my last assignment.
+	AI_Output(self, hero, "Info_Mod_Ferco_Aufnahmequest_02_02"); //Ah, so you were sent. A new applicant from the old camp is said to have set off. You may give him the first test.
 
 	Log_CreateTopic	(TOPIC_MOD_FERCO_MUD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FERCO_MUD, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_VMG_AUFNAHME, TOPIC_MOD_FERCO_MUD, "Eine letzte Aufgabe vor meiner Aufnahme.", "Es kommt ein neuer Bewerber aus dem Alten Lager und ich soll ihm die erste Aufgabe geben.");
+	B_LogEntry_More	(TOPIC_MOD_VMG_AUFNAHME, TOPIC_MOD_FERCO_MUD, "One last task before I start recording.", "A new applicant comes from the old camp and I shall give him the first job.");
 
 	Info_ClearChoices	(Info_Mod_Ferco_Aufnahmequest);
 
-	Info_AddChoice	(Info_Mod_Ferco_Aufnahmequest, "Nein danke, ich muss noch was erledigen.", Info_Mod_Ferco_Aufnahmequest_B);
-	Info_AddChoice	(Info_Mod_Ferco_Aufnahmequest, "Vielen Dank. Das werde ich tun.", Info_Mod_Ferco_Aufnahmequest_A);
+	Info_AddChoice	(Info_Mod_Ferco_Aufnahmequest, "No, thanks. I've got something else to do.", Info_Mod_Ferco_Aufnahmequest_B);
+	Info_AddChoice	(Info_Mod_Ferco_Aufnahmequest, "Thank you very much. That's what I'll do.", Info_Mod_Ferco_Aufnahmequest_A);
 };
 
 FUNC VOID Info_Mod_Ferco_Aufnahmequest_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Aufnahmequest_B_15_00"); //Nein danke, ich muss noch was erledigen.
-	AI_Output(self, hero, "Info_Mod_Ferco_Aufnahmequest_B_02_01"); //Ah, du wurdest also geschickt. Es soll sich ein neuer Bewerber aus dem Alten Lager auf den Weg gemacht haben. Du darfst ihm die erste Prüfungsaufgabe stellen.
+	AI_Output(hero, self, "Info_Mod_Ferco_Aufnahmequest_B_15_00"); //No, thanks. I've got something else to do.
+	AI_Output(self, hero, "Info_Mod_Ferco_Aufnahmequest_B_02_01"); //Ah, so you were sent. A new applicant from the old camp is said to have set off. You may give him the first test.
 
 	Info_ClearChoices	(Info_Mod_Ferco_Aufnahmequest);
 
@@ -579,8 +579,8 @@ FUNC VOID Info_Mod_Ferco_Aufnahmequest_B()
 
 FUNC VOID Info_Mod_Ferco_Aufnahmequest_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Aufnahmequest_A_15_00"); //Vielen Dank. Das werde ich tun.
-	AI_Output(self, hero, "Info_Mod_Ferco_Aufnahmequest_A_02_01"); //Da kommt er schon. Viel Erfolg.
+	AI_Output(hero, self, "Info_Mod_Ferco_Aufnahmequest_A_15_00"); //Thank you very much. That's what I'll do.
+	AI_Output(self, hero, "Info_Mod_Ferco_Aufnahmequest_A_02_01"); //Here he comes now. Good luck.
 
 	Info_ClearChoices	(Info_Mod_Ferco_Aufnahmequest);
 
@@ -611,88 +611,88 @@ FUNC VOID Info_Mod_Ferco_Mud_Info()
 {
 	if (Mod_Mud_Unterwegs == 2)
 	{	
-		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_00"); //Was hast du mit ihm gemacht? Du hast ihn in den sicheren Tod geschickt!
+		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_00"); //What did you do to him? You sent him to certain death!
 
 		Info_ClearChoices	(Info_Mod_Ferco_Mud);
 
-		Info_AddChoice	(Info_Mod_Ferco_Mud, "Es tut mir Leid.", Info_Mod_Ferco_Mud_B);
-		Info_AddChoice	(Info_Mod_Ferco_Mud, "Er hat es verdient.", Info_Mod_Ferco_Mud_A);
+		Info_AddChoice	(Info_Mod_Ferco_Mud, "I'm sorry about that.", Info_Mod_Ferco_Mud_B);
+		Info_AddChoice	(Info_Mod_Ferco_Mud, "He deserved it.", Info_Mod_Ferco_Mud_A);
 	}
 	else if (Mod_Mud_Unterwegs == 3)
 	{
-		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_01"); //Gut gemacht, den sehen wir so schnell nicht wieder. (lacht) Du kannst zu Faice gehen. Er wird das Nötige veranlassen.
-		AI_Output(hero, self, "Info_Mod_Ferco_Mud_15_02"); //Vielen Dank.
+		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_01"); //Well done, we won't see him again anytime soon. (laughs) You can go to Faice. He'll make the necessary arrangements.
+		AI_Output(hero, self, "Info_Mod_Ferco_Mud_15_02"); //Thank you very much.
 
 		B_KillNpc	(Mod_803_STT_Mud_MT);
 
-		B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Ich habe die Prüfung bestanden und sollte nun zu Faice gehen.");
+		B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "I passed the exam and should now go to Faice.");
 	}
 	else if (Mod_Mud_Unterwegs == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_03"); //Du willst ihn wohl unbedingt loswerden, was?
+		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_03"); //You're dying to get rid of him, aren't you?
 
 		Info_ClearChoices	(Info_Mod_Ferco_Mud);
 
-		Info_AddChoice	(Info_Mod_Ferco_Mud, "Ist das so schlimm?", Info_Mod_Ferco_Mud_D);
-		Info_AddChoice	(Info_Mod_Ferco_Mud, "Du etwa nicht?", Info_Mod_Ferco_Mud_C);
+		Info_AddChoice	(Info_Mod_Ferco_Mud, "Is that so bad?", Info_Mod_Ferco_Mud_D);
+		Info_AddChoice	(Info_Mod_Ferco_Mud, "Don't you?", Info_Mod_Ferco_Mud_C);
 	}
 	else if (Mod_Mud_Unterwegs == 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_04"); //Das ging ja schnell. Ich denke, das kann man so gelten lassen.
-		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_05"); //Nun geh zu Faice. Er wird das Nötige für deine Aufnahme veranlassen.
-		AI_Output(hero, self, "Info_Mod_Ferco_Mud_15_02"); //Vielen Dank.
+		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_04"); //That was quick. I think that is acceptable.
+		AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_05"); //Now go to Faice. He'll do what's necessary for your admission.
+		AI_Output(hero, self, "Info_Mod_Ferco_Mud_15_02"); //Thank you very much.
 
-		B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Ich habe die Prüfung bestanden und sollte nun zu Faice gehen.");
+		B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "I passed the exam and should now go to Faice.");
 
 		if (Npc_HasItems(hero, ItSc_TrfBloodfly) > 0)
 		{
-			AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_06"); //Eins noch: Die Spruchrolle hätte ich gerne.
+			AI_Output(self, hero, "Info_Mod_Ferco_Mud_02_06"); //One more thing: I'd like the part of the saying.
 
 			Info_ClearChoices	(Info_Mod_Ferco_Mud);
 
-			Info_AddChoice	(Info_Mod_Ferco_Mud, "Warum?", Info_Mod_Ferco_Mud_F);
-			Info_AddChoice	(Info_Mod_Ferco_Mud, "Natürlich. Hier.", Info_Mod_Ferco_Mud_E);
+			Info_AddChoice	(Info_Mod_Ferco_Mud, "Why?", Info_Mod_Ferco_Mud_F);
+			Info_AddChoice	(Info_Mod_Ferco_Mud, "Of course it is. Here.", Info_Mod_Ferco_Mud_E);
 		};
 	};
 };
 
 FUNC VOID Info_Mod_Ferco_Mud_F()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Mud_F_15_00"); //Warum?
-	AI_Output(self, hero, "Info_Mod_Ferco_Mud_F_02_01"); //Das war schließlich Teil deiner Aufgabe.
+	AI_Output(hero, self, "Info_Mod_Ferco_Mud_F_15_00"); //Why?
+	AI_Output(self, hero, "Info_Mod_Ferco_Mud_F_02_01"); //After all, that was part of your job.
 
 	Info_ClearChoices	(Info_Mod_Ferco_Mud);
 
-	Info_AddChoice	(Info_Mod_Ferco_Mud, "Ja, ein Teil MEINER Aufgabe.", Info_Mod_Ferco_Mud_G);
-	Info_AddChoice	(Info_Mod_Ferco_Mud, "Natürlich. Hier.", Info_Mod_Ferco_Mud_E);
+	Info_AddChoice	(Info_Mod_Ferco_Mud, "Yes, part of my job.", Info_Mod_Ferco_Mud_G);
+	Info_AddChoice	(Info_Mod_Ferco_Mud, "Of course it is. Here.", Info_Mod_Ferco_Mud_E);
 };
 
 FUNC VOID Info_Mod_Ferco_Mud_G()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Mud_G_15_00"); //Ja, ein Teil MEINER Aufgabe.
-	AI_Output(self, hero, "Info_Mod_Ferco_Mud_G_02_01"); //Gut, dann behalte sie halt. Nun aber los.
+	AI_Output(hero, self, "Info_Mod_Ferco_Mud_G_15_00"); //Yes, part of my job.
+	AI_Output(self, hero, "Info_Mod_Ferco_Mud_G_02_01"); //Well, keep it then. All right, let's go.
 
 	Info_ClearChoices	(Info_Mod_Ferco_Mud);
 };
 
 FUNC VOID Info_Mod_Ferco_Mud_E()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Mud_E_15_00"); //Natürlich. Hier.
+	AI_Output(hero, self, "Info_Mod_Ferco_Mud_E_15_00"); //Of course it is. Here.
 
 	B_GiveInvItems	(hero, self, ItSc_TrfBloodfly, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ferco_Mud_E_02_01"); //Danke. Nun geh schon.
+	AI_Output(self, hero, "Info_Mod_Ferco_Mud_E_02_01"); //Thanks. Go on, get going.
 
 	Info_ClearChoices	(Info_Mod_Ferco_Mud);
 };
 
 FUNC VOID Info_Mod_Ferco_Mud_D()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Mud_D_15_00"); //Ist das so schlimm?
-	AI_Output(self, hero, "Info_Mod_Ferco_Mud_D_02_01"); //Nein nein. (lacht) Du kannst zu Faice gehen. Er wird das Nötige für deine Aufnahme veranlassen.
-	AI_Output(hero, self, "Info_Mod_Ferco_Mud_D_15_02"); //Vielen Dank.
+	AI_Output(hero, self, "Info_Mod_Ferco_Mud_D_15_00"); //Is that so bad?
+	AI_Output(self, hero, "Info_Mod_Ferco_Mud_D_02_01"); //No, no. (laughs) You can go to Faice. He'll do what's necessary for your admission.
+	AI_Output(hero, self, "Info_Mod_Ferco_Mud_D_15_02"); //Thank you very much.
 
-	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Ich habe die Prüfung bestanden und sollte nun zu Faice gehen.");
+	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "I passed the exam and should now go to Faice.");
 
 	Info_ClearChoices	(Info_Mod_Ferco_Mud);
 
@@ -701,11 +701,11 @@ FUNC VOID Info_Mod_Ferco_Mud_D()
 
 FUNC VOID Info_Mod_Ferco_Mud_C()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Mud_C_15_00"); //Du etwa nicht?
-	AI_Output(self, hero, "Info_Mod_Ferco_Mud_C_02_01"); //Doch, ja. (lacht) Du kannst zu Faice gehen. Er wird das Nötige für deine Aufnahme veranlassen.
-	AI_Output(hero, self, "Info_Mod_Ferco_Mud_D_15_02"); //Vielen Dank.
+	AI_Output(hero, self, "Info_Mod_Ferco_Mud_C_15_00"); //Don't you?
+	AI_Output(self, hero, "Info_Mod_Ferco_Mud_C_02_01"); //Yes, yes, yes. (laughs) You can go to Faice. He'll do what's necessary for your admission.
+	AI_Output(hero, self, "Info_Mod_Ferco_Mud_D_15_02"); //Thank you very much.
 
-	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Ich habe die Prüfung bestanden und sollte nun zu Faice gehen.");
+	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "I passed the exam and should now go to Faice.");
 
 	Info_ClearChoices	(Info_Mod_Ferco_Mud);
 
@@ -714,12 +714,12 @@ FUNC VOID Info_Mod_Ferco_Mud_C()
 
 FUNC VOID Info_Mod_Ferco_Mud_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Mud_B_15_00"); //Es tut mir Leid.
-	AI_Output(self, hero, "Info_Mod_Ferco_Mud_B_02_01"); //Guck nicht so verdrießlich. Wir wollten ihn auch loswerden.
+	AI_Output(hero, self, "Info_Mod_Ferco_Mud_B_15_00"); //I'm sorry about that.
+	AI_Output(self, hero, "Info_Mod_Ferco_Mud_B_02_01"); //Don't look so glum. We wanted to get rid of him too.
 	AI_Output(hero, self, "Info_Mod_Ferco_Mud_B_15_02"); //...
-	AI_Output(self, hero, "Info_Mod_Ferco_Mud_B_02_03"); //Wir wollten eigentlich nur wissen, wie du auf ihn reagierst. (lacht) Nun geh zu Faice, er wird das Nötige veranlassen.
+	AI_Output(self, hero, "Info_Mod_Ferco_Mud_B_02_03"); //We just wanted to know how you were reacting to him. (laughs) Now go to Faice, he will do what is necessary.
 
-	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Ich habe die Prüfung bestanden und sollte nun zu Faice gehen.");
+	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "I passed the exam and should now go to Faice.");
 
 	Info_ClearChoices	(Info_Mod_Ferco_Mud);
 
@@ -728,12 +728,12 @@ FUNC VOID Info_Mod_Ferco_Mud_B()
 
 FUNC VOID Info_Mod_Ferco_Mud_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Mud_A_15_00"); //Er hat es verdient.
-	AI_Output(self, hero, "Info_Mod_Ferco_Mud_A_02_01"); //Vielleicht hat er es, doch das kannst du nicht entscheiden.
+	AI_Output(hero, self, "Info_Mod_Ferco_Mud_A_15_00"); //He deserved it.
+	AI_Output(self, hero, "Info_Mod_Ferco_Mud_A_02_01"); //Maybe he did, but that's not for you to decide.
 
 	Info_ClearChoices	(Info_Mod_Ferco_Mud);
 
-	Info_AddChoice	(Info_Mod_Ferco_Mud, "Es tut mir Leid.", Info_Mod_Ferco_Mud_B);
+	Info_AddChoice	(Info_Mod_Ferco_Mud, "I'm sorry about that.", Info_Mod_Ferco_Mud_B);
 };
 
 INSTANCE Info_Mod_Ferco_Falin (C_INFO)
@@ -744,7 +744,7 @@ INSTANCE Info_Mod_Ferco_Falin (C_INFO)
 	information	= Info_Mod_Ferco_Falin_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ich habe ein Paket vom neuen Lager. Soll es hier abgeben.";
+	description	= "Here's a package from the new warehouse. Let's leave it here.";
 };
 
 FUNC INT Info_Mod_Ferco_Falin_Condition()
@@ -758,12 +758,12 @@ FUNC INT Info_Mod_Ferco_Falin_Condition()
 
 FUNC VOID Info_Mod_Ferco_Falin_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Falin_15_00"); //Hier ich habe ein Paket vom neuen Lager. Soll es hier abgeben.
+	AI_Output(hero, self, "Info_Mod_Ferco_Falin_15_00"); //Here's a package from the new warehouse. Let's leave it here.
 
 	B_GiveInvItems	(hero, self, ItMi_PaketFalin, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ferco_Falin_02_01"); //Danke, wusste gar nicht, dass ihr Waldläufer jetzt als Kuriere agiert.
-	AI_Output(hero, self, "Info_Mod_Ferco_Falin_15_02"); //Das ist eine Ausnahme.
+	AI_Output(self, hero, "Info_Mod_Ferco_Falin_02_01"); //Thank you, didn't know you Ranger was acting as a courier.
+	AI_Output(hero, self, "Info_Mod_Ferco_Falin_15_02"); //That's an exception.
 
 	B_GivePlayerXP	(50);
 
@@ -778,7 +778,7 @@ INSTANCE Info_Mod_Ferco_Urs (C_INFO)
 	information	= Info_Mod_Ferco_Urs_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bringe den Ring des Lichtes.";
+	description	= "I bring the Ring of Light.";
 };
 
 FUNC INT Info_Mod_Ferco_Urs_Condition()
@@ -792,18 +792,18 @@ FUNC INT Info_Mod_Ferco_Urs_Condition()
 
 FUNC VOID Info_Mod_Ferco_Urs_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferco_Urs_15_00"); //Ich bringe den Ring des Lichtes.
+	AI_Output(hero, self, "Info_Mod_Ferco_Urs_15_00"); //I bring the Ring of Light.
 
 	B_GiveInvItems	(hero, self, ItRi_Licht, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ferco_Urs_02_01"); //Ahh, ausgezeichnet. Das wird Faice freuen.
-	AI_Output(self, hero, "Info_Mod_Ferco_Urs_02_02"); //Hier hast du deine Verwandlungsrune. Viel Spaß damit.
+	AI_Output(self, hero, "Info_Mod_Ferco_Urs_02_01"); //Ahh, excellent. Faice will be pleased.
+	AI_Output(self, hero, "Info_Mod_Ferco_Urs_02_02"); //Here's your run of transformation. Have fun with that.
 
 	B_GivePlayerXP	(200);
 
 	B_GiveInvItems	(self, hero, ItRu_TrfMolerat, 1);
 
-	B_LogEntry	(TOPIC_MOD_URS_HUND, "Ich habe die Verwandlungsrune von Ferco.");
+	B_LogEntry	(TOPIC_MOD_URS_HUND, "I have Ferco's metamorphosis rune.");
 };
 
 INSTANCE Info_Mod_Ferco_EXIT (C_INFO)

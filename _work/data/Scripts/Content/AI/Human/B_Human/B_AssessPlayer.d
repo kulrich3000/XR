@@ -348,17 +348,17 @@ func void B_AssessPlayer ()
 
 			if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_1110_GRD_Cutter_MT))
 			{
-				AI_Output(self, hero, "Info_Mod_Cutter_Erwischt_08_00"); //Verdammt, weg hier!
+				AI_Output(self, hero, "Info_Mod_Cutter_Erwischt_08_00"); //Get the hell out of here!
 			}
 			else
 			{
-				AI_Output(self, hero, "Info_Mod_Bloodwyn_Erwischt_04_00"); //Verdammt, weg hier!
+				AI_Output(self, hero, "Info_Mod_Bloodwyn_Erwischt_04_00"); //Get the hell out of here!
 			};
 
 			B_StartOtherRoutine	(Mod_1110_GRD_Cutter_MT, "FLUCHT");
 			B_StartOtherRoutine	(Mod_943_GRD_Bloodwyn_MT, "FLUCHT");
 
-			B_LogEntry	(TOPIC_MOD_PDV, "Bloodwyn und Cutter sind also die Schuldigen. Das wird Thorus sicher interessieren.");
+			B_LogEntry	(TOPIC_MOD_PDV, "Bloodwyn and Cutter are the ones to blame. I'm sure Thorus will be interested.");
 
 			Mod_PDV_Fisk_Infos = 3;
 		};

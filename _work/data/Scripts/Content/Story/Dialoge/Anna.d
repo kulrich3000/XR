@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Anna_Hi (C_INFO)
 	information	= Info_Mod_Anna_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht es dir?";
+	description	= "How are you feeling?";
 };
 
 FUNC INT Info_Mod_Anna_Hi_Condition()
@@ -19,14 +19,14 @@ FUNC INT Info_Mod_Anna_Hi_Condition()
 
 FUNC VOID Info_Mod_Anna_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anna_Hi_15_00"); //Wie geht es dir?
-	AI_Output(self, hero, "Info_Mod_Anna_Hi_16_01"); //Es geht schon. Danke, dass du mir geholfen hast.
-	AI_Output(self, hero, "Info_Mod_Anna_Hi_16_02"); //Wenn du die Fähigkeiten einer Hexe in Anspruch nehmen magst, komm in Zukunft zu mir, ja?
+	AI_Output(hero, self, "Info_Mod_Anna_Hi_15_00"); //How are you feeling?
+	AI_Output(self, hero, "Info_Mod_Anna_Hi_16_01"); //I'll be all right. Thank you for helping me.
+	AI_Output(self, hero, "Info_Mod_Anna_Hi_16_02"); //If you want to take advantage of a witch's abilities, come see me in the future, yeah?
 
 	B_GivePlayerXP	(50);
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KHORATA, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Anna kann mir Alchemiezubehör verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Anna can sell me some alchemy supplies.");
 
 	AI_StopProcessInfos	(self);
 

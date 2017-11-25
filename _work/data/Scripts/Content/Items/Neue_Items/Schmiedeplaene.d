@@ -1,6 +1,6 @@
 INSTANCE ItWr_Bauplan_Erzschwert_Wasser		(C_Item)
 {
-	name 				=	"Bauplan";
+	name 				=	"blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -11,7 +11,7 @@ INSTANCE ItWr_Bauplan_Erzschwert_Wasser		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseBauplan_Erzschwert_Wasser;
 	scemeName			=	"MAP";
-	description			= 	"Bauplan: Erzschwert des Wasserhiebes";
+	description			= 	"Construction plan: Ore sword of the water stroke";
 };
 
 func void UseBauplan_Erzschwert_Wasser ()
@@ -23,10 +23,10 @@ func void UseBauplan_Erzschwert_Wasser ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLines	( nDocID,  0, "Erzschwert des Wasserhiebes"					);
+					Doc_PrintLines	( nDocID,  0, "Ore sword of the water stroke"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Ein kundiger Schmied in der Verarbeitung magischen Erzes kann eine Nahkampfwaffe mit einer dünnen Schicht Erz überziehen und oberhalb des Griffes eine Wasserfaustrune anbringen. Er benötigt dazu je nach Größe der Waffe 10 oder 15 Erzbrocken und natürlich die Rune. Eine auf diese Art aufgebesserte Waffe führt im Nahkampf  (Text verwittert) ..."					);
+					Doc_PrintLines	( nDocID,  0, "A skilled blacksmith in the processing of magical ore can coat a melee weapon with a thin layer of ore and apply a water-faucet above the handle. Depending on the size of the gun, he needs 10 or 15 pieces of ore and of course the rune. A weapon improved in this way leads in close combat  (text weathered)?"					);
 
 					Doc_Show		( nDocID );
 
@@ -35,7 +35,7 @@ func void UseBauplan_Erzschwert_Wasser ()
 
 INSTANCE ItWr_Bauplan_Erzschwert_Feuer		(C_Item)
 {
-	name 				=	"Bauplan";
+	name 				=	"blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -46,7 +46,7 @@ INSTANCE ItWr_Bauplan_Erzschwert_Feuer		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseBauplan_Erzschwert_Feuer;
 	scemeName			=	"MAP";
-	description			= 	"Bauplan: Erzschwert des Versengens";
+	description			= 	"Construction plan: Ore sword of scorching";
 };
 
 func void UseBauplan_Erzschwert_Feuer ()
@@ -58,10 +58,10 @@ func void UseBauplan_Erzschwert_Feuer ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLines	( nDocID,  0, "Erzschwert des Versengens"					);
+					Doc_PrintLines	( nDocID,  0, "Scorching ore sword"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Ein kundiger Schmied in der Verarbeitung magischen Erzes kann eine Nahkampfwaffe mit einer dünnen Schicht Erz überziehen und oberhalb des Griffes eine Feuerballrune – in Erz eingebettet -  anbringen, gleiches an Armbrust, oder Bogen. Ist die Rune im Ganzen zu groß, kann man sie zerteilen, wobei dir Teilstücke immer durch magisches Erz verbunden bleiben müssen. Er benötigt dazu je nach Größe der Waffe 10 oder 15 Erzbrocken und natürlich die Rune."					);
+					Doc_PrintLines	( nDocID,  0, "A skilled blacksmith in the processing of magical ore can coat a melee weapon with a thin layer of ore and place a fireball run - embedded in ore - above the handle, similar to crossbow or bow. If the rune is too big, you can split it up, but you must always keep your pieces connected by magic ore. Depending on the size of the gun, he needs 10 or 15 pieces of ore and of course the rune."					);
 
 					Doc_Show		( nDocID );
 

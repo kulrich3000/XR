@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sancho_Alissandro (C_INFO)
 	information	= Info_Mod_Sancho_Alissandro_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme von Alissandro und habe eine Botschaft für euch.";
+	description	= "I come from Alissandro and I have a message for you.";
 };
 
 FUNC INT Info_Mod_Sancho_Alissandro_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Sancho_Alissandro_Condition()
 
 FUNC VOID Info_Mod_Sancho_Alissandro_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_Alissandro_15_00"); //Ich komme von Alissandro und habe eine Botschaft für euch.
-	AI_Output(self, hero, "Info_Mod_Sancho_Alissandro_32_01"); //(noch gelangweilter) Falsches Passwort.
+	AI_Output(hero, self, "Info_Mod_Sancho_Alissandro_15_00"); //I come from Alissandro and I have a message for you.
+	AI_Output(self, hero, "Info_Mod_Sancho_Alissandro_32_01"); //(still bored) Wrong password.
 
 	B_StartOtherRoutine	(Mod_761_BDT_Dexter_MT, "EINGANG");
 	AI_Teleport	(Mod_761_BDT_Dexter_MT, "LOCATION_32_04");
@@ -51,90 +51,90 @@ FUNC INT Info_Mod_Sancho_GardistenInfos_Condition()
 FUNC VOID Info_Mod_Sancho_GardistenInfos_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_32_01"); //Hi, was willst du?
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_15_02"); //Ich bin auf der Suche nach Informationen.
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_32_03"); //Das kostet dich eine Kleinigkeit.
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_15_04"); //Wieviel?
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_32_05"); //50 Gold.
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_32_01"); //Hi, what do you want?
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_15_02"); //I'm looking for information.
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_32_03"); //It's gonna cost you a little something.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_15_04"); //How much?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_32_05"); //50 gold.
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Das ist zuviel!", Info_Mod_Sancho_GardistenInfos_C);
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "50 Gold? Tun es nicht auch 20?", Info_Mod_Sancho_GardistenInfos_B);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "That's too much!", Info_Mod_Sancho_GardistenInfos_C);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "50 gold? Isn't it 20?", Info_Mod_Sancho_GardistenInfos_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) > 49)
 	{
-		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Hier.", Info_Mod_Sancho_GardistenInfos_A);
+		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Here.", Info_Mod_Sancho_GardistenInfos_A);
 	};
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_C()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_C_15_00"); //Das ist zuviel!
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_C_32_01"); //Dann verschwinde endlich!
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_C_15_00"); //That's too much!
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_C_32_01"); //Then get out of here!
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_B_15_00"); //50 Gold? Tun es nicht auch 20?
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_B_32_01"); //Nun, weil du es bist sind es jetzt 80.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_B_15_00"); //50 gold? Isn't it 20?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_B_32_01"); //Well, because it's you, it's 80 now.
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Halsabschneider!", Info_Mod_Sancho_GardistenInfos_E);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Cutthroat!", Info_Mod_Sancho_GardistenInfos_E);
 
 	if (Npc_HasItems(hero, ItMi_Gold) > 79)
 	{
-		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Halsabschneider. (80 Gold geben)", Info_Mod_Sancho_GardistenInfos_D);
+		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Cutthroat. (80 Gold give)", Info_Mod_Sancho_GardistenInfos_D);
 	};
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_E()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_E_15_00"); //Halsabschneider!
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_E_32_01"); //Dann verschwinde endlich!
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_E_15_00"); //Cutthroat!
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_E_32_01"); //Then get out of here!
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_D()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_D_15_00"); //Halsabschneider.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_D_15_00"); //Cutthroat.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 80);
 
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_D_32_01"); //Oh, es fehlen noch 20 Gold. Tut mir echt leid, Kumpel, aber du musst dich verzählt haben.
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_D_32_01"); //Oh, there's still 20 gold missing. I'm really sorry, buddy, but you must have miscounted.
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Das waren genau 80 Gold. Sag mir jetzt, was ich von dir wissen möchte!", Info_Mod_Sancho_GardistenInfos_G);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "That was exactly 80 gold. Now tell me what I want to know from you!", Info_Mod_Sancho_GardistenInfos_G);
 
 	if (Npc_HasItems(hero, ItMi_Gold) > 19)
 	{
-		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Hier nimm und sag mir was ich wissen möchte.", Info_Mod_Sancho_GardistenInfos_F);
+		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Here, take this and tell me what I want to know.", Info_Mod_Sancho_GardistenInfos_F);
 	};
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_G()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_G_15_00"); //Das waren genau 80 Gold. Sag mir jetzt, was ich von dir wissen möchte!
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_G_32_01"); //Vergiss es, Kumpel. Zieh bloß Leine, bevor ich dir deinen unverschämten Schädel spalte!
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_G_15_00"); //That was exactly 80 gold. Now tell me what I want to know from you!
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_G_32_01"); //Forget it, buddy. Get the fuck out of here before I split your insolent skull!
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Das wirst du bereuen, du  verdammter Mistkerl!", Info_Mod_Sancho_GardistenInfos_I);
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Wir sehen uns wieder.", Info_Mod_Sancho_GardistenInfos_H);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "You'll regret this, you son of a bitch!", Info_Mod_Sancho_GardistenInfos_I);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "I'll see you again.", Info_Mod_Sancho_GardistenInfos_H);
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_I()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_I_15_00"); //Das wirst du bereuen, du  verdammter Mistkerl!
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_I_15_00"); //You'll regret this, you son of a bitch!
 
 	AI_DrawWeapon	(hero);
 
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_I_32_01"); //Was?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_I_32_01"); //What?
 
 	CreateInvItems	(self, ItWr_MagicPaper, 1);
 
@@ -149,46 +149,46 @@ FUNC VOID Info_Mod_Sancho_GardistenInfos_I()
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_A()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_00"); //Hier.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_00"); //Here.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_01"); //Was möchtest du nun wissen?
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_02"); //Sind hier in letzter Zeit ein paar Gardisten aufgetaucht?
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_03"); //Zufällig ja.
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_04"); //Wo sind sie hingegangen?
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_05"); //Nirgendwo hin.
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_06"); //Also sind sie noch hier?
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_07"); //Im Prinzip ja.
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_08"); //Kann ich sie sprechen?
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_09"); //Nein.
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_01"); //What do you want to know now?
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_02"); //Have there been some guards around here lately?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_03"); //Coincidentally, yes.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_04"); //Where did they go?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_05"); //Nowhere.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_06"); //So they're still here?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_07"); //In principle, yes.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_08"); //Can I talk to you?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_09"); //No.
 	
 	B_Say	(hero, self, "$WIESONICHT");
 
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_11"); //Weil du dann erstmal bei 'nem Rudel Snapper anfangen müsstest ihre Einzelteile zu suchen.
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_12"); //Sie sind von Snappern getötet wurden?
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_13"); //Nein.
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_14"); //Wie jetzt? Du sagtest doch eben ...
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_15"); //... das sie von ihnen gefressen wurden! Getötet haben wir sie. (lacht dreckig)
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_16"); //Ah. Ist euch vielleicht was an ihnen aufgefallen oder hatten sie etwas dabei gehabt?
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_17"); //Niemand von uns hatte sie bisher im Minental gesehen, aber so ungewöhnlich ist das nun auch wieder nicht. Sie hatten einen Zettel bei sich gehabt.
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_18"); //Kann ich den Zettel mal sehen?
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_19"); //Natürlich. Das würde dich dann weitere 50 Gold kosten.
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_11"); //Cause then you'd have to start with a pack of snapper looking for their parts.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_12"); //You were killed by snappers?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_13"); //No.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_14"); //Like now? You just said....
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_15"); //... that they were eaten by them! We killed them. (laughs dirty)
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_16"); //Ah. Did you notice anything about them or did they have anything on you?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_17"); //None of us had seen her in the Minental, but it's not that unusual. They had a note with them.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_A_15_18"); //Can I see the note?
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_A_32_19"); //Of course it is. That would cost you another 50 gold.
 
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Weitere 50 Gold? So langsam reicht es mir!", Info_Mod_Sancho_GardistenInfos_K);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Another 50 gold? I'm getting tired of this!", Info_Mod_Sancho_GardistenInfos_K);
 
 	if (Npc_HasItems(hero, ItMi_Gold) > 49)
 	{
-		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Na gut, hier hast du das verdammte Gold. (50 Gold geben)", Info_Mod_Sancho_GardistenInfos_J);
+		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "All right, here's the fucking gold. (50 Gold give)", Info_Mod_Sancho_GardistenInfos_J);
 	};
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_H()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_H_15_00"); //Wir sehen uns wieder.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_H_15_00"); //I'll see you again.
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
@@ -197,7 +197,7 @@ FUNC VOID Info_Mod_Sancho_GardistenInfos_H()
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_F()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_F_15_00"); //Hier nimm und sag mir was ich wissen möchte.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_F_15_00"); //Here, take this and tell me what I want to know.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 20);
 
@@ -208,23 +208,23 @@ FUNC VOID Info_Mod_Sancho_GardistenInfos_F()
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_K()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_K_15_00"); //Weitere 50 Gold? So langsam reicht es mir!
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_K_32_01"); //50 Gold oder lass es bleiben. Du möchtest den Zettel und ich habe ihn, mir ist es gleich.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_K_15_00"); //Another 50 gold? I'm getting tired of this!
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_K_32_01"); //50 gold or leave it. You want the note and I have it, I don't care.
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Es gibt auch noch eine dritte Möglichkeit ...", Info_Mod_Sancho_GardistenInfos_M);
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Du bekommst von mir nichts mehr.", Info_Mod_Sancho_GardistenInfos_L);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "There is also a third possibility...", Info_Mod_Sancho_GardistenInfos_M);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "I won't give you anything anymore.", Info_Mod_Sancho_GardistenInfos_L);
 
 	if (Npc_HasItems(hero, ItMi_Gold) > 49)
 	{
-		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Halsabschneider. (80 Gold geben)", Info_Mod_Sancho_GardistenInfos_J);
+		Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "Cutthroat. (80 Gold give)", Info_Mod_Sancho_GardistenInfos_J);
 	};
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_M()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_M_15_00"); //Es gibt auch noch eine dritte Möglichkeit ...
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_M_15_00"); //There is also a third possibility...
 
 	CreateInvItems	(self, ItWr_MagicPaper, 1);
 
@@ -239,37 +239,37 @@ FUNC VOID Info_Mod_Sancho_GardistenInfos_M()
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_L()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_L_15_00"); //Du bekommst von mir nichts mehr. Die Informationen, die ich brauche, finde ich auch woanders.
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_L_32_01"); //Na gut, hier nimm den Zettel. Ich kann ihn eh nicht lesen.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_L_15_00"); //I won't give you anything anymore. The information I need can be found elsewhere.
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_L_32_01"); //All right, here, take the note. I can't read it anyway.
 
 	B_GiveInvItems	(self, hero, ItWr_MagicPaper, 1);
 
 	Mod_SanchoHatZettel = 2;
 
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_L_32_02"); //Und jetzt lenk mich nicht weiter ab.
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_L_32_02"); //Now, don't distract me anymore.
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Sancho hat mir einen Zettel gegeben, den die Gardisten bei sich hatten.");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Sancho gave me a note the guards had with them.");
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_J()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_J_15_00"); //Na gut, hier hast du das verdammte Gold.
+	AI_Output(hero, self, "Info_Mod_Sancho_GardistenInfos_J_15_00"); //All right, here's the fucking gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_J_32_01"); //Na gut, hier nimm den Zettel. Ich kann ihn eh nicht lesen.
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_J_32_01"); //All right, here, take the note. I can't read it anyway.
 
 	B_GiveInvItems	(self, hero, ItWr_MagicPaper, 1);
 
 	Mod_SanchoHatZettel = 2;
 
-	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_J_32_02"); //Und jetzt lenk mich nicht weiter ab.
+	AI_Output(self, hero, "Info_Mod_Sancho_GardistenInfos_J_32_02"); //Now, don't distract me anymore.
 
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Sancho hat mir einen Zettel gegeben, den die Gardisten bei sich hatten.");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Sancho gave me a note the guards had with them.");
 };
 
 INSTANCE Info_Mod_Sancho_Umgehauen (C_INFO)
@@ -280,7 +280,7 @@ INSTANCE Info_Mod_Sancho_Umgehauen (C_INFO)
 	information	= Info_Mod_Sancho_Umgehauen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woher kommt dieser Zettel?";
+	description	= "Where does this note come from?";
 };
 
 FUNC INT Info_Mod_Sancho_Umgehauen_Condition()
@@ -297,9 +297,9 @@ FUNC INT Info_Mod_Sancho_Umgehauen_Condition()
 
 FUNC VOID Info_Mod_Sancho_Umgehauen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_Umgehauen_15_00"); //Woher kommt dieser Zettel?
-	AI_Output(self, hero, "Info_Mod_Sancho_Umgehauen_32_01"); //Au, du hast einen ganz schön harten Schlag drauf. Der kommt von ein paar Gardisten, die hier neulich vorbeigekommen sind.
-	AI_Output(self, hero, "Info_Mod_Sancho_Umgehauen_32_02"); //Behalte ihn, ich kann ihn eh nicht gebrauchen. Und jetzt lass mich in Frieden.
+	AI_Output(hero, self, "Info_Mod_Sancho_Umgehauen_15_00"); //Where does this note come from?
+	AI_Output(self, hero, "Info_Mod_Sancho_Umgehauen_32_01"); //Ow, you've got a pretty good punch. He's coming from some guards who came by here the other day.
+	AI_Output(self, hero, "Info_Mod_Sancho_Umgehauen_32_02"); //Keep it, I can't use it anyway. Now leave me alone.
 
 	Mod_SanchoHatZettel = 2;
 
@@ -318,7 +318,7 @@ INSTANCE Info_Mod_Sancho_WasFuerLosung (C_INFO)
 	information	= Info_Mod_Sancho_WasFuerLosung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was für ein Losungswort?";
+	description	= "What slogan?";
 };
 
 FUNC INT Info_Mod_Sancho_WasFuerLosung_Condition()
@@ -328,8 +328,8 @@ FUNC INT Info_Mod_Sancho_WasFuerLosung_Condition()
 
 FUNC VOID Info_Mod_Sancho_WasFuerLosung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_WasFuerLosung_15_00"); //Was für ein Losungswort?
-	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung_32_01"); //(genervt) Das Losungswort, das es dir erlaubt ins Lager zu kommen, ohne dass du von mir und den Jungs drinnen ins Stücke gehackt wirst, du Einfallspinsel.
+	AI_Output(hero, self, "Info_Mod_Sancho_WasFuerLosung_15_00"); //What slogan?
+	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung_32_01"); //The slogan that allows you to come into the camp without being hacked to pieces by me and the boys inside, you nag.
 };
 
 INSTANCE Info_Mod_Sancho_WasFuerLosung2 (C_INFO)
@@ -340,7 +340,7 @@ INSTANCE Info_Mod_Sancho_WasFuerLosung2 (C_INFO)
 	information	= Info_Mod_Sancho_WasFuerLosung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und wo und wie soll ich das Losungswort bekommen?";
+	description	= "And where and how should I get the password?";
 };
 
 FUNC INT Info_Mod_Sancho_WasFuerLosung2_Condition()
@@ -353,12 +353,12 @@ FUNC INT Info_Mod_Sancho_WasFuerLosung2_Condition()
 
 FUNC VOID Info_Mod_Sancho_WasFuerLosung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_WasFuerLosung2_15_00"); //Und wo und wie soll ich das Losungswort bekommen?
-	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_01"); //Hey man, langsam gehst du mir auf die Nerven.
-	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_02"); //Wenn du das verdammte Losungswort haben willst, wirst du unseren Jungs in Khorinis helfen müssen.
-	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_03"); //Aber glaub bloß nicht, dass du einfach hingehen kannst und es bekommst.
-	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_04"); //Falls sie mal wirklich irgendwann deine Hilfe benötigen werden, dann sprechen sie dich schon an.
-	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_05"); //Und jetzt nerv mich nicht weiter.
+	AI_Output(hero, self, "Info_Mod_Sancho_WasFuerLosung2_15_00"); //And where and how should I get the password?
+	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_01"); //Hey, man, you're getting on my nerves.
+	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_02"); //If you want that damn slogan, you're gonna have to help our boys in Khorinis.
+	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_03"); //But don't think you can just go and get it.
+	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_04"); //If they really need your help at some point, they'll talk to you.
+	AI_Output(self, hero, "Info_Mod_Sancho_WasFuerLosung2_32_05"); //Now, don't bother me anymore.
 };
 
 INSTANCE Info_Mod_Sancho_Nek (C_INFO)
@@ -382,12 +382,12 @@ FUNC INT Info_Mod_Sancho_Nek_Condition()
 
 FUNC VOID Info_Mod_Sancho_Nek_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sancho_Nek_32_00"); //(rau) Was suchst du hier?
-	AI_Output(hero, self, "Info_Mod_Sancho_Nek_15_01"); //Ich habe Neks Amulett. Schau.
+	AI_Output(self, hero, "Info_Mod_Sancho_Nek_32_00"); //What are you doing here?
+	AI_Output(hero, self, "Info_Mod_Sancho_Nek_15_01"); //I have Nek's amulet. Look.
 
 	B_GiveInvItems	(hero, self, ItAm_Nek, 1);
 
-	AI_Output(self, hero, "Info_Mod_Sancho_Nek_32_02"); //Tatsache. Hier ist dein Gold.
+	AI_Output(self, hero, "Info_Mod_Sancho_Nek_32_02"); //Fact. Here's your gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 350);
 
@@ -406,7 +406,7 @@ INSTANCE Info_Mod_Sancho_Dam (C_INFO)
 	information	= Info_Mod_Sancho_Dam_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe dir das Amulett gebracht.";
+	description	= "I brought you the amulet.";
 };
 
 FUNC INT Info_Mod_Sancho_Dam_Condition()
@@ -420,29 +420,29 @@ FUNC INT Info_Mod_Sancho_Dam_Condition()
 
 FUNC VOID Info_Mod_Sancho_Dam_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_00"); //Ich habe dir das Amulett gebracht. Das sollte es doch wert sein, um ins Lager zu kommen.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_01"); //Du gibst einfach nicht locker, oder?
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_02"); //Ok, dann hätte ich einen Vorschlag für dich.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_03"); //Wenn du das hinbekommen solltest, dürften auch die anderen nichts dagegen haben, dass du in unser Lager darfst, selbst, wenn du noch nicht zu uns gehörst.
-	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_04"); //Ich höre ...
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_05"); //Ok, du hast mir ja das Amulett gebracht. Weißt du, was es damit auf sich hat?
-	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_06"); //Nun, es hat mal einem Gardisten Namens Nek gehört, der das Zeitliche gesegnet hat ...
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_07"); //Ha, und das glaubst du wirklich.
-	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_08"); //Eigentlich ... ja .
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_09"); //Dann hör mal zu, Junge.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_10"); //Nicht er hat das Amulett mit seinem Namen gekennzeichnet ... sondern das Amulett ihn mit dessen Namen.
-	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_11"); //Was?!
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_12"); //Das Amulett ist kein gewöhnliches Schutzamulett.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_13"); //Es gehört zu einer Gattung von Artefakten mit unglückseligen Eigenschaften.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_14"); //Das Nek-Amulett für seinen Teil ergreift mit der Zeit Besitz von seinem Träger ... und bringt ihm früher oder später den Tod.
-	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_15"); //Was ...?! Aber das würde zumindest einiges erklären ...
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_16"); //Jedenfalls haben diese Stücke bei Schwarzmagiern und Okkultisten einen hohen Sammlerwert.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_17"); //Sie stammen aus einem verfluchten Moor in Relendel.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_18"); //Und dort muss sich auch noch der andere Teil des Amulettes befinden, der quasi die Rückseite des Nek-Amulettes darstellt ... zumindest hat es das.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_19"); //Nek war vor der Zeit in der Kolonie Schatzsucher im Moor ... und er erzählte einmal von einem anderen Amulett ...
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_20"); //Da er es jedoch nicht bei sich trug, könnte es noch dort sein.
-	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_21"); //Und dieses soll ich jetzt finden.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_22"); //Genau. Was sagst du?
+	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_00"); //I brought you the amulet. It should be worth it to come to the camp.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_01"); //You're just not loosening up, are you?
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_02"); //Okay, then I have a proposition for you.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_03"); //If you can do that, the others will not mind that you are allowed into our camp, even if you are not yet one of us.
+	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_04"); //I hear....
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_05"); //Okay, you brought me the amulet. You know what this is all about?
+	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_06"); //Well, it once belonged to a guardsman named Nek who blessed the temporal...
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_07"); //Ha, and you really believe that.
+	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_08"); //Actually... yes.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_09"); //Well, listen, kid.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_10"); //He did not mark the amulet with his name... but the amulet with his name.
+	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_11"); //What?!
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_12"); //The amulet is not an ordinary protective amulet.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_13"); //It belongs to a genre of artifacts with unfortunate characteristics.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_14"); //The nek amulet for its part takes possession of its wearer over time... and bring him death sooner or later.
+	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_15"); //What...?! But at least that would explain a lot...
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_16"); //In any case, these pieces have a high collector's value with black magicians and occultists.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_17"); //They come from a cursed bog in Relendel.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_18"); //And there must also be the other part of the amulet, which represents the back of the nek amulet.... at least it did.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_19"); //Nek was a treasure hunter in the bog before the colony... and he once told about another amulet...
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_20"); //But since he didn't carry it, it could still be there.
+	AI_Output(hero, self, "Info_Mod_Sancho_Dam_15_21"); //And I'm supposed to find this now.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam_32_22"); //Exactly. What do you say?
 };
 
 INSTANCE Info_Mod_Sancho_Dam2 (C_INFO)
@@ -453,7 +453,7 @@ INSTANCE Info_Mod_Sancho_Dam2 (C_INFO)
 	information	= Info_Mod_Sancho_Dam2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich besorge das Amulett.";
+	description	= "I'll get the amulet.";
 };
 
 FUNC INT Info_Mod_Sancho_Dam2_Condition()
@@ -466,17 +466,17 @@ FUNC INT Info_Mod_Sancho_Dam2_Condition()
 
 FUNC VOID Info_Mod_Sancho_Dam2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_Dam2_15_00"); //Ich besorge das Amulett.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_01"); //Gut. Der andere Teil ist das Dam-Amulett. Es bringt dem Träger Verdammnis.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_02"); //Dieses Set – Tod und Verdammnis – dürfte noch einen wesentlich höheren Wert haben, als die Einzelstücke.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_03"); //Wenn du es mir besorgst, wird sicher keiner mehr im Lager was dagegen haben, dass du im Lager vorbeischaust und mit unseren Jungs handelst ... wie auch immer.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_04"); //Gibt genug in unserem Lager, was von Wert und Nutzen ist.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_05"); //Hör dich am besten in der Schenke zur goldenen Gülle um, die beim Moor liegt.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_06"); //Alles klar? Ok. Dann mach dich auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Sancho_Dam2_15_00"); //I'll get the amulet.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_01"); //Good. The other part is the Dam amulet. It brings damnation to the bearer.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_02"); //This set - death and damnation - should have a much higher value than the single pieces.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_03"); //If you get it for me, I'm sure no one in the camp will have any objection to you coming by the camp and trading with our boys.... however.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_04"); //Gives enough in our warehouse, which is of value and benefit.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_05"); //Check out the golden liquid manure at the tavern near the moor.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam2_32_06"); //You all right? Okay. Then get on your way.
 
 	Log_CreateTopic	(TOPIC_MOD_SANCHO_DAM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SANCHO_DAM, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SANCHO_DAM, "Wenn ich Sancho das Dam-Amulett bringe, darf ich in das Banditenlager. Er meinte, ich soll mich am besten in der Schenke zur goldenen Gülle umhören, die im verfluchten Moor in Relendel gelegen ist.");
+	B_LogEntry	(TOPIC_MOD_SANCHO_DAM, "If I bring Sancho the Dam amulet, I get to the bandit camp. He told me that the best place to ask around was in the tavern for the golden liquid manure, which is located in the cursed bog in Relendel.");
 };
 
 INSTANCE Info_Mod_Sancho_Dam3 (C_INFO)
@@ -487,7 +487,7 @@ INSTANCE Info_Mod_Sancho_Dam3 (C_INFO)
 	information	= Info_Mod_Sancho_Dam3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Dam-Amulett.";
+	description	= "I have the Dam amulet.";
 };
 
 FUNC INT Info_Mod_Sancho_Dam3_Condition()
@@ -500,19 +500,19 @@ FUNC INT Info_Mod_Sancho_Dam3_Condition()
 
 FUNC VOID Info_Mod_Sancho_Dam3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_Dam3_15_00"); //Ich habe das Dam-Amulett.
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_01"); //(ungläubig) Was?! Kann nicht sein. Zeig her!
+	AI_Output(hero, self, "Info_Mod_Sancho_Dam3_15_00"); //I have the Dam amulet.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_01"); //(unbelieving) What?! Can't be. Show me!
 
 	B_GiveInvItems	(hero, self, ItAm_Dam, 1);
 
-	AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_02"); //Tatsächlich. Das nenn ich mal saubere Arbeit. Hätte nicht gedacht, dass du das Moor überlebst.
+	AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_02"); //Actually. That's what I call clean work. I didn't think you'd survive the moor.
 
 	if (self.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_03"); //Damit hast du dir den Einlass in unser Lager mehr als verdient ... auch, wenn du damit noch kein Bandit bist.
-		AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_04"); //Aber da kann ich dir einen Tipp geben. Einer unserer Jungs hat sich in der Hafenstadt postiert.
-		AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_05"); //Er hält nach fähigen und erfahrenen Männern Ausschau, solchen, die bereits einer großen Gilde angehören.
-		AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_06"); //Aber sollte nicht grad die Stadtwache sein ...
+		AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_03"); //You have more than earned the entrance to our camp... even if you're not yet a bandit.
+		AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_04"); //But I can give you a hint. One of our boys has positioned himself in the port city.
+		AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_05"); //He is looking for capable and experienced men, those who already belong to a big guild.
+		AI_Output(self, hero, "Info_Mod_Sancho_Dam3_32_06"); //But shouldn't be the City Watch...
 
 		self.aivar[AIV_PASSGATE] = TRUE;
 	};
@@ -532,7 +532,7 @@ INSTANCE Info_Mod_Sancho_Parole (C_INFO)
 	information	= Info_Mod_Sancho_Parole_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Losungswort sagen)";
+	description	= "(dissolution word)";
 };
 
 FUNC INT Info_Mod_Sancho_Parole_Condition()
@@ -546,7 +546,7 @@ FUNC INT Info_Mod_Sancho_Parole_Condition()
 FUNC VOID Info_Mod_Sancho_Parole_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Sancho_Parole_15_00"); //Dex-Ban.
-	AI_Output(self, hero, "Info_Mod_Sancho_Parole_32_01"); //Gut, du darfst passieren.
+	AI_Output(self, hero, "Info_Mod_Sancho_Parole_32_01"); //Well, you may pass.
 
 	self.aivar[AIV_PASSGATE] = TRUE;
 };
@@ -559,7 +559,7 @@ INSTANCE Info_Mod_Sancho_Asylanten (C_INFO)
 	information	= Info_Mod_Sancho_Asylanten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was plant ihr so als nächstes?";
+	description	= "What are you guys planning next?";
 };
 
 FUNC INT Info_Mod_Sancho_Asylanten_Condition()
@@ -572,17 +572,17 @@ FUNC INT Info_Mod_Sancho_Asylanten_Condition()
 
 FUNC VOID Info_Mod_Sancho_Asylanten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sancho_Asylanten_15_00"); //Was plant ihr so als nächstes?
-	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_01"); //(lacht) Das weißt du noch nicht?
-	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_02"); //(vertraulich) Wir schleichen uns nachts an das Alte Lager heran, schalten die Wachen heimlich aus und stürmen dann die Burg.
-	AI_Output(hero, self, "Info_Mod_Sancho_Asylanten_15_03"); //Tatsächlich?
-	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_04"); //Für wie dumm hältst du mich, dass ich unsere Pläne ausplaudere?
-	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_05"); //Soll ich mich gleich freiwillig in den Knast einweisen lassen?
-	AI_Output(hero, self, "Info_Mod_Sancho_Asylanten_15_06"); //Aber ihr habt nicht vor, als nächstes nach Khorinis zu ziehen?
-	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_07"); //Das lass mal unsere Sorge sein. (lacht) Aber ich sag dir Bescheid, wenn es so weit ist, Junge.
-	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_08"); //(leise) Spinner.
+	AI_Output(hero, self, "Info_Mod_Sancho_Asylanten_15_00"); //What are you guys planning next?
+	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_01"); //(laughs) You don't know that yet?
+	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_02"); //(confidential) We sneak up to the Old Camp at night, sneak out the guards and storm the castle.
+	AI_Output(hero, self, "Info_Mod_Sancho_Asylanten_15_03"); //Is that so?
+	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_04"); //How stupid do you think I am to blabber our plans?
+	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_05"); //Do you want me to volunteer to go to jail?
+	AI_Output(hero, self, "Info_Mod_Sancho_Asylanten_15_06"); //But you don't plan on moving to Khorinis next?
+	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_07"); //Let's not worry about that. (laughs) But I'll let you know when the time comes, kid.
+	AI_Output(self, hero, "Info_Mod_Sancho_Asylanten_32_08"); //Weirdo.
 
-	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Sancho will mir nicht verraten, was die Banditen vorhaben.");
+	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Sancho won't tell me what the bandits are up to.");
 };
 
 const string Sancho_Checkpoint	= "SANCHO_DIST_CHECKPOINT";	//WP hinter City-Tor vom Spielstart aus!
@@ -618,11 +618,11 @@ func void Info_Mod_Sancho_FirstWarn_Info()
 {
 	if (Npc_HasItems(hero, ItWr_AliBotschaft) == 0)
 	{
-		AI_Output (self, hero,"Info_Mod_Sancho_FirstWarn_32_00"); //HALT! Niemand darf das Lager ohne Losungswort betreten.
+		AI_Output (self, hero,"Info_Mod_Sancho_FirstWarn_32_00"); //HALT! No one is allowed to enter the camp without a password.
 	}
 	else
 	{
-		AI_Output (self, hero,"Info_Mod_Sancho_FirstWarn_32_01"); //(gelangweilt) Passwort?
+		AI_Output (self, hero,"Info_Mod_Sancho_FirstWarn_32_01"); //(bored) Password?
 	};
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Sancho_Checkpoint);
@@ -656,7 +656,7 @@ FUNC INT Info_Mod_Sancho_SecondWarn_Condition()
 
 func void Info_Mod_Sancho_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Sancho_SecondWarn_32_00"); //Ich sag's dir zum letzten Mal. Einen Schritt weiter und du begibst dich in die Welt des Schmerzes!
+	AI_Output (self, hero,"Info_Mod_Sancho_SecondWarn_32_00"); //I'll tell you one last time. One more step and you'll enter the world of pain!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Sancho_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -694,7 +694,7 @@ func void Info_Mod_Sancho_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_Sancho_Attack_32_00"); //Du hast es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_Sancho_Attack_32_00"); //You asked for it...
 
 	AI_StopProcessInfos	(self);	
 

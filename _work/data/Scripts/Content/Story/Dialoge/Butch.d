@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Butch_Hi (C_INFO)
 	information	= Info_Mod_Butch_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Butch_Hi_Condition()
@@ -20,15 +20,15 @@ FUNC VOID Info_Mod_Butch_Hi_Info()
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Butch_Hi_13_01"); //Ich bin Butch. Ich kann dir den Umgang mit Armbrüsten zeigen, wenn du einer von uns wirst.
-		AI_Output(self, hero, "Info_Mod_Butch_Hi_13_02"); //Außerdem kann ich dir helfen stärker zu werden.
+		AI_Output(self, hero, "Info_Mod_Butch_Hi_13_01"); //I'm Butch. I can show you how to handle crossbows when you become one of us.
+		AI_Output(self, hero, "Info_Mod_Butch_Hi_13_02"); //Besides, I can help you get stronger.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_SOELDNER, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER, "Butch kann mir den Umgang mit Armbrüsten zeigen und mir helfen stärker zu werden, wenn ich erstmal Söldner bin.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER, "Butch can show me how to use crossbows and help me become stronger once I'm a mercenary.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Butch_Hi_13_03"); //Ich bin Butch, einer der besten Armbrustschützen hier im Lager.
+		AI_Output(self, hero, "Info_Mod_Butch_Hi_13_03"); //I'm Butch, one of the best crossbowmen in the camp.
 	};
 };
 
@@ -54,7 +54,7 @@ FUNC INT Info_Mod_Butch_SentenzaSchwert_Condition()
 
 FUNC VOID Info_Mod_Butch_SentenzaSchwert_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Butch_SentenzaSchwert_13_00"); //So, die Schweine haben bekommen, was ihnen zustand.
+	AI_Output(self, hero, "Info_Mod_Butch_SentenzaSchwert_13_00"); //So, the pigs got what they deserved.
 
 	AI_StopProcessInfos	(self);
 
@@ -71,7 +71,7 @@ INSTANCE Info_Mod_Butch_Lernen_Armbrust (C_INFO)
 	information	= Info_Mod_Butch_Lernen_Armbrust_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Armbrustschießen bei.";
+	description	= "Teach me crossbow shooting.";
 };
 
 FUNC INT Info_Mod_Butch_Lernen_Armbrust_Condition()
@@ -89,11 +89,11 @@ FUNC INT Info_Mod_Butch_Lernen_Armbrust_Condition()
 
 FUNC VOID Info_Mod_Butch_Lernen_Armbrust_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Butch_Lernen_Armbrust_15_00"); //Bring mir Armbrustschießen bei.
+	AI_Output(hero, self, "Info_Mod_Butch_Lernen_Armbrust_15_00"); //Teach me crossbow shooting.
 
 	Info_ClearChoices	(Info_Mod_Butch_Lernen_Armbrust);
 	
-	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, "Zurück.", Info_Mod_Butch_Lernen_Armbrust_BACK);
+	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, "Back off.", Info_Mod_Butch_Lernen_Armbrust_BACK);
 	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_CrossBow)), Info_Mod_Butch_Lernen_Armbrust_5);
 	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow1, B_GetLearnCostTalent(hero, NPC_TALENT_CrossBow, 1)), Info_Mod_Butch_Lernen_Armbrust_1);
 };
@@ -107,7 +107,7 @@ FUNC VOID Info_Mod_Butch_Lernen_Armbrust_5()
 {
 	B_TeachFightTalentPercent_New (self, hero, NPC_TALENT_CrossBow, 5, 100);
 
-	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, "Zurück.", Info_Mod_Butch_Lernen_Armbrust_BACK);
+	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, "Back off.", Info_Mod_Butch_Lernen_Armbrust_BACK);
 	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_CrossBow)), Info_Mod_Butch_Lernen_Armbrust_5);
 	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow1, B_GetLearnCostTalent(hero, NPC_TALENT_CrossBow, 1)), Info_Mod_Butch_Lernen_Armbrust_1);
 };
@@ -116,7 +116,7 @@ FUNC VOID Info_Mod_Butch_Lernen_Armbrust_1()
 {
 	B_TeachFightTalentPercent (self, hero, NPC_TALENT_CrossBow, 1, 100);
 
-	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, "Zurück.", Info_Mod_Butch_Lernen_Armbrust_BACK);
+	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, "Back off.", Info_Mod_Butch_Lernen_Armbrust_BACK);
 	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_CrossBow)), Info_Mod_Butch_Lernen_Armbrust_5);
 	Info_AddChoice	(Info_Mod_Butch_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow1, B_GetLearnCostTalent(hero, NPC_TALENT_CrossBow, 1)), Info_Mod_Butch_Lernen_Armbrust_1);
 };
@@ -129,7 +129,7 @@ INSTANCE Info_Mod_Butch_Lernen (C_INFO)
 	information	= Info_Mod_Butch_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will stärker werden!";
+	description	= "I want to be stronger!";
 };
 
 FUNC INT Info_Mod_Butch_Lernen_Condition()
@@ -147,7 +147,7 @@ FUNC INT Info_Mod_Butch_Lernen_Condition()
 
 FUNC VOID Info_Mod_Butch_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Butch_Lernen_15_00"); //Ich will stärker werden!
+	AI_Output(hero, self, "Info_Mod_Butch_Lernen_15_00"); //I want to be stronger!
 
 	Info_ClearChoices	(Info_Mod_Butch_Lernen);
 

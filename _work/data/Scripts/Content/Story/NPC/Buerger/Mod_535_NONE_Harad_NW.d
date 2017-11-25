@@ -1,7 +1,7 @@
 instance Mod_535_NONE_Harad_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Harad";
+	name 		= "harad";
 	guild 		= GIL_PAL;
 	id 			= 535;
 	voice 		= 28;

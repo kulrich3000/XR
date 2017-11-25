@@ -1,6 +1,6 @@
 INSTANCE Monster_11074_Leprechaun_XW	(Mst_Default_Gobbo_Green)
 {
-	name	=	"Leprechaun";
+	name	=	"leprechaun";
 	
 	guild							=	GIL_SHEEP;
 	aivar[AIV_MM_REAL_ID]			= 	ID_KOBOLD;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_TurmwacheKG_Trollholz (C_INFO)
 	information	= Info_Mod_TurmwacheKG_Trollholz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du zufällig noch ein Keilerfell übrig?";
+	description	= "Do you happen to have any boar fur left?";
 };
 
 FUNC INT Info_Mod_TurmwacheKG_Trollholz_Condition()
@@ -20,13 +20,13 @@ FUNC INT Info_Mod_TurmwacheKG_Trollholz_Condition()
 
 FUNC VOID Info_Mod_TurmwacheKG_Trollholz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_TurmwacheKG_Trollholz_15_00"); //Hast du zufällig noch ein Keilerfell übrig?
-	AI_Output(self, hero, "Info_Mod_TurmwacheKG_Trollholz_03_01"); //Ja, ist allerdings schon ziemlich ausgefranst.
-	AI_Output(self, hero, "Info_Mod_TurmwacheKG_Trollholz_03_02"); //Hier du kannst es haben, Wolfsfelle halten sowieso besser warm.
+	AI_Output(hero, self, "Info_Mod_TurmwacheKG_Trollholz_15_00"); //Do you happen to have any boar fur left?
+	AI_Output(self, hero, "Info_Mod_TurmwacheKG_Trollholz_03_01"); //Yeah, it's pretty frayed, though.
+	AI_Output(self, hero, "Info_Mod_TurmwacheKG_Trollholz_03_02"); //Here you can have it, keeping wolf skins better warm anyway.
 
 	B_GiveInvItems	(self, hero, ItAt_Addon_KeilerFur, 1);
 
-	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Ich hab das Keilerfell. Auf zu Cathran.");
+	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "I got the boar fur. Off to Cathran's.");
 };
 
 INSTANCE Info_Mod_TurmwacheKG_EXIT (C_INFO)

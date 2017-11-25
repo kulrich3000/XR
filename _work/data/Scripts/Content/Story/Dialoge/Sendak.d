@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Sendak_Hi_Condition()
 
 FUNC VOID Info_Mod_Sendak_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_00"); //Da bist du ja. Du hast noch etwas, was uns gehört.
-	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_01"); //Gib mir das Gold, das du Aslan abgenommen hast, und ich werde den Orks sagen, dass sie dich schnell töten sollen.
-	AI_Output(hero, self, "Info_Mod_Sendak_Hi_15_02"); //Das Gold hab ich leider schon für Hochprozentiges ausgegeben, aber wenn du bei mir noch etwas findest, gehört es dir.
-	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_03"); //Wie du willst. Suppe aus menschlichen Gedärmen essen diese Untoten am liebsten.
+	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_00"); //Oh, there you are. You have something else that belongs to us.
+	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_01"); //Give me the gold you took from Aslan, and I'll tell the orcs to kill you quickly.
+	AI_Output(hero, self, "Info_Mod_Sendak_Hi_15_02"); //I've already spent the gold on high-proof items, but if you find anything else with me, it's yours.
+	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_03"); //Suit yourself. Soup from human intestines is what these undead prefer to eat.
 
 	AI_StopProcessInfos	(self);
 

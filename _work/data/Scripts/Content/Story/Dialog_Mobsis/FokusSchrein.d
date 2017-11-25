@@ -18,7 +18,7 @@ INSTANCE PC_FokusSchrein_Beliar (C_INFO)
 	information	= PC_FokusSchrein_Beliar_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bete zu Beliar";
+	description	= "I pray to Beliar";
 };
 
 FUNC INT PC_FokusSchrein_Beliar_Condition()
@@ -46,7 +46,7 @@ INSTANCE PC_FokusSchrein_Innos (C_INFO)
 	information	= PC_FokusSchrein_Innos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bete zu Innos";
+	description	= "I pray to Innos";
 };
 
 FUNC INT PC_FokusSchrein_Innos_Condition()
@@ -62,7 +62,7 @@ FUNC VOID PC_FokusSchrein_Innos_Info()
 {
 	Mod_PAT_Focus_03 = 1;
 
-	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Man sollte als Feuermagier von seinem Glauben überzeugt sein. Oder wenigstens so tun ...");
+	B_LogEntry	(TOPIC_MOD_FM_FOKI, "You should be convinced of your faith as a fire magician. Or at least pretend...");
 
 	B_ENDPRODUCTIONDIALOG();
 };

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Monteur_Hi (C_INFO)
 	information	= Info_Mod_Monteur_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft die Arbeit?";
+	description	= "How's work going?";
 };
 
 FUNC INT Info_Mod_Monteur_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Monteur_Hi_Condition()
 
 FUNC VOID Info_Mod_Monteur_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Monteur_Hi_15_00"); //Wie läuft die Arbeit?
-	AI_Output(self, hero, "Info_Mod_Monteur_Hi_06_01"); //Kann nicht klagen. Gibt genug zu tun, und die Bezahlung stimmt.
+	AI_Output(hero, self, "Info_Mod_Monteur_Hi_15_00"); //How's work going?
+	AI_Output(self, hero, "Info_Mod_Monteur_Hi_06_01"); //Can't complain. Gives you enough to do and the pay is right.
 };
 
 INSTANCE Info_Mod_Monteur_Endres (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Monteur_Endres (C_INFO)
 	information	= Info_Mod_Monteur_Endres_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "War Wendel zum Zeitpunkt von Endres' Tod bei dir?";
+	description	= "Was Wendel with you at the time of Endre's death?";
 };
 
 FUNC INT Info_Mod_Monteur_Endres_Condition()
@@ -42,11 +42,11 @@ FUNC INT Info_Mod_Monteur_Endres_Condition()
 
 FUNC VOID Info_Mod_Monteur_Endres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Monteur_Endres_15_00"); //War Wendel zum Zeitpunkt von Endres' Tod bei dir?
-	AI_Output(self, hero, "Info_Mod_Monteur_Endres_06_01"); //Ja, an dem Tag sind wir an den Leitungen entlang gegangen und haben sie auf Lecks untersucht.
-	AI_Output(self, hero, "Info_Mod_Monteur_Endres_06_02"); //Wir waren die ganze Zeit zu zweit, abgesehen von den ganzen Passanten, die uns gesehen haben müssen.
+	AI_Output(hero, self, "Info_Mod_Monteur_Endres_15_00"); //Was Wendel with you at the time of Endre's death?
+	AI_Output(self, hero, "Info_Mod_Monteur_Endres_06_01"); //Yeah, we went down the plumbing that day and checked for leaks.
+	AI_Output(self, hero, "Info_Mod_Monteur_Endres_06_02"); //There were two of us all the time, apart from all the passers-by who must have seen us.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Wendels Alibi wird von seinem Assistenten bestätigt.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Wendel's alibi is confirmed by his assistant.");
 };
 
 INSTANCE Info_Mod_Monteur_Freudenspender (C_INFO)
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_Monteur_Freudenspender (C_INFO)
 	information	= Info_Mod_Monteur_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Freudenspender gefällig?";
+	description 	= "Pleasure giver?";
 };                       
 
 FUNC INT Info_Mod_Monteur_Freudenspender_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_Mod_Monteur_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Monteur_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Monteur_Freudenspender_15_00"); //Freudenspender gefällig?
-	AI_Output(self, hero, "Info_Mod_Monteur_Freudenspender_06_01"); //Nö. Reicht das als Antwort?
+	AI_Output(hero, self, "Info_Mod_Monteur_Freudenspender_15_00"); //Pleasure giver?
+	AI_Output(self, hero, "Info_Mod_Monteur_Freudenspender_06_01"); //Nope. Is that enough of an answer?
 };
 
 INSTANCE Info_Mod_Monteur_Pickpocket (C_INFO)

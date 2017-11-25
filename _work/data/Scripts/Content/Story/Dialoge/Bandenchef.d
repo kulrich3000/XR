@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bandenchef_Hi (C_INFO)
 	information	= Info_Mod_Bandenchef_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier bist du also.";
+	description	= "Here you are, then.";
 };
 
 FUNC INT Info_Mod_Bandenchef_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Bandenchef_Hi_Condition()
 
 FUNC VOID Info_Mod_Bandenchef_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bandenchef_Hi_15_00"); //Hier bist du also.
-	AI_Output(self, hero, "Info_Mod_Bandenchef_Hi_07_01"); //Was willst du? Brauchst du besondere Ware?
-	AI_Output(hero, self, "Info_Mod_Bandenchef_Hi_15_02"); //Ja, deinen Ring bitte.
-	AI_Output(self, hero, "Info_Mod_Bandenchef_Hi_07_03"); //Was? Wer bist du?
-	AI_Output(hero, self, "Info_Mod_Bandenchef_Hi_15_04"); //Ich bin Attila's Vertretung!
-	AI_Output(self, hero, "Info_Mod_Bandenchef_Hi_07_05"); //Arrrr, verdammt, du mieser Hund. Du bist dran!
+	AI_Output(hero, self, "Info_Mod_Bandenchef_Hi_15_00"); //Here you are, then.
+	AI_Output(self, hero, "Info_Mod_Bandenchef_Hi_07_01"); //What do you want? Do you need special items?
+	AI_Output(hero, self, "Info_Mod_Bandenchef_Hi_15_02"); //Yes, your ring, please.
+	AI_Output(self, hero, "Info_Mod_Bandenchef_Hi_07_03"); //What? Who are you?
+	AI_Output(hero, self, "Info_Mod_Bandenchef_Hi_15_04"); //I'm Attila's agent!
+	AI_Output(self, hero, "Info_Mod_Bandenchef_Hi_07_05"); //Arrrr, damn it, you son of a bitch. Your turn!
 
 	AI_StopProcessInfos	(self);
 

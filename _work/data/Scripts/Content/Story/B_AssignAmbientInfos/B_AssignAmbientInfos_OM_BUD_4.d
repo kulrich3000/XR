@@ -14,7 +14,7 @@ INSTANCE Info_OM_BUD_4_EXIT(C_INFO)
 	condition	= Info_OM_BUD_4_EXIT_Condition;
 	information	= Info_OM_BUD_4_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_OM_BUD_4_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_OM_BUD_4_Mine (C_INFO) // E1
 	condition	= Info_OM_BUD_4_Mine_Condition;
 	information	= Info_OM_BUD_4_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir was von der Mine";
+	description = "Tell me about the mine";
 };                       
 
 FUNC INT Info_OM_BUD_4_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_OM_BUD_4_Mine_Condition()
 
 FUNC VOID Info_OM_BUD_4_Mine_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_4_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_OM_BUD_4_Mine_01_01"); //Eine Spitzhacke und Schweiß. Das brauchst du hier drin.
-	AI_Output(self,other,"Info_OM_BUD_4_Mine_01_02"); //Aber, wenn du längst weg bist, werde ich hier immer noch das Erz aus dem Berg schlagen. Das ist meine Aufgabe. Das ist mein Leben.
+	AI_Output(other,self,"Info_OM_BUD_4_Mine_15_00"); //Tell me about the mine
+	AI_Output(self,other,"Info_OM_BUD_4_Mine_01_01"); //A pickaxe and sweat. You need that in here.
+	AI_Output(self,other,"Info_OM_BUD_4_Mine_01_02"); //But if you're long gone, I'm still gonna smash the ore out of this mountain. That's my job. This is my life.
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_OM_BUD_4_WichtigePersonen(C_INFO)
 	condition	= Info_OM_BUD_4_WichtigePersonen_Condition;
 	information	= Info_OM_BUD_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu Sagen?";
+	description = "Who's got a say in this?";
 };                       
 
 FUNC INT Info_OM_BUD_4_WichtigePersonen_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_OM_BUD_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_OM_BUD_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_4_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_OM_BUD_4_WichtigePersonen_01_01"); //Kurgan und ein paar andere Beliar-Anhänger haben vor ein paar Wochen die Mine übernommen. Seitdem kommen wir hier nicht mehr raus.
+	AI_Output(other,self,"Info_OM_BUD_4_WichtigePersonen_15_00"); //Who's got something to say?
+	AI_Output(self,other,"Info_OM_BUD_4_WichtigePersonen_01_01"); //Kurgan and some other Beliar supporters took over the mine a few weeks ago. We haven't been able to get out of here since.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_OM_BUD_4_DieLage(C_INFO) // E1
 	condition	= Info_OM_BUD_4_DieLage_Condition;
 	information	= Info_OM_BUD_4_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_OM_BUD_4_DieLage_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_OM_BUD_4_DieLage_Condition()
 
 FUNC VOID Info_OM_BUD_4_DieLage_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_4_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_OM_BUD_4_DieLage_01_01"); //Früher war alles besser.
+	AI_Output(other,self,"Info_OM_BUD_4_DieLage_15_00"); //How's it looking?
+	AI_Output(self,other,"Info_OM_BUD_4_DieLage_01_01"); //Everything used to be better.
 };
 
 INSTANCE Info_Mod_OM_BUD_4_Pickpocket (C_INFO)

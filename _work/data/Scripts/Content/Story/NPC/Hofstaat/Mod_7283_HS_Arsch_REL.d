@@ -1,7 +1,7 @@
 instance Mod_7283_HS_Arsch_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königlicher Arsch";	
+	name 		= "Royal Ass";	
 	guild 		= GIL_OUT;
 	id 			= 7283;
 	voice 		= 16;

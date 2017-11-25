@@ -19,10 +19,10 @@ FUNC INT Info_Mod_Lagerhauswache_Diebe_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache_Diebe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe_28_00"); //Moment mal! Wohin des Wegs?
-	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Diebe_15_01"); //Ins Lager, Kisten schleppen.
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe_28_02"); //Und wo ist Seine Kiste? Schau, da drüben liegen sie.
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe_28_03"); //Los, schnappe Er sich eine Ladung Schweinefutter ... Er wird nicht fürs Herumstehen bezahlt.
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe_28_00"); //Wait a minute! Where are you going?
+	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Diebe_15_01"); //To the camp, dragging boxes.
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe_28_02"); //And where's His box? Look, they're over there.
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe_28_03"); //Come on, grab a load of pig feed... He's not paid to stand around.
 
 	self.aivar[AIV_PASSGATE] = FALSE;
 };
@@ -48,8 +48,8 @@ FUNC INT Info_Mod_Lagerhauswache_Diebe2_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache_Diebe2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe2_28_00"); //Warte Er mal ... ahh, eine Kiste voll mit Schweinefutter für unser Lager.
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe2_28_01"); //Na los, beweg Er sich weiter.
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe2_28_00"); //Wait, he once.... ahh, a box full of pig feed for our camp.
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Diebe2_28_01"); //Come on, he moves on.
 
 	self.aivar[AIV_PASSGATE] = TRUE;
 };
@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Lagerhauswache_Stadthalter (C_INFO)
 	information	= Info_Mod_Lagerhauswache_Stadthalter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin der Stadthalter. Lass mich rein!";
+	description	= "I'm the governor. Let me in!";
 };
 
 FUNC INT Info_Mod_Lagerhauswache_Stadthalter_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Mod_Lagerhauswache_Stadthalter_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache_Stadthalter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Stadthalter_15_00"); //Ich bin der Stadthalter. Lass mich rein!
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Stadthalter_28_01"); //(lacht dröhnend) Halte Er mich nicht zum Narren! Ich sehe von weitem, dass kein blaues Blut in Seinen Adern fließt!
+	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Stadthalter_15_00"); //I'm the governor. Let me in!
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Stadthalter_28_01"); //Don't make a fool of me! I see from afar that no blue blood flows into His veins!
 };
 
 INSTANCE Info_Mod_Lagerhauswache_Duell (C_INFO)
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Lagerhauswache_Duell (C_INFO)
 	information	= Info_Mod_Lagerhauswache_Duell_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich fordere dich zum Duell!";
+	description	= "I challenge you to a duel!";
 };
 
 FUNC INT Info_Mod_Lagerhauswache_Duell_Condition()
@@ -100,21 +100,21 @@ FUNC INT Info_Mod_Lagerhauswache_Duell_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache_Duell_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Duell_15_00"); //Ich fordere dich zum Duell!
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_28_01"); //Ein Duell? Aus welchem Grund?
+	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Duell_15_00"); //I challenge you to a duel!
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_28_01"); //A duel? For what reason?
 
 	Info_ClearChoices	(Info_Mod_Lagerhauswache_Duell);
 
-	Info_AddChoice	(Info_Mod_Lagerhauswache_Duell, "Dein Vater hat meine Familienehre beschmutzt!", Info_Mod_Lagerhauswache_Duell_B);
-	Info_AddChoice	(Info_Mod_Lagerhauswache_Duell, "Einfach so!", Info_Mod_Lagerhauswache_Duell_A);
+	Info_AddChoice	(Info_Mod_Lagerhauswache_Duell, "Your father defiled my family honor!", Info_Mod_Lagerhauswache_Duell_B);
+	Info_AddChoice	(Info_Mod_Lagerhauswache_Duell, "Just like that!", Info_Mod_Lagerhauswache_Duell_A);
 };
 
 FUNC VOID Info_Mod_Lagerhauswache_Duell_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Duell_B_15_00"); //Dein Vater hat meine Familienehre beschmutzt!
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_B_28_01"); //(betroffen) Mein Vater? Nein! Mein Vater war ein rechtschaffener Mann!
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_B_28_02"); //(hart) Er zieht das Ansehen meiner Familie durch seine Anschuldigung in den Unrat. Das kann ich nicht ungesühnt lassen.
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_B_28_03"); //Zieh Er seine Waffe!
+	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Duell_B_15_00"); //Your father defiled my family honor!
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_B_28_01"); //My father? No! My father was a righteous man!
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_B_28_02"); //He dragged my family's reputation into the filth through his accusation. I can't let this go unpunished.
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_B_28_03"); //He pulls out his gun!
 
 	Info_ClearChoices	(Info_Mod_Lagerhauswache_Duell);
 
@@ -127,8 +127,8 @@ FUNC VOID Info_Mod_Lagerhauswache_Duell_B()
 
 FUNC VOID Info_Mod_Lagerhauswache_Duell_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Duell_A_15_00"); //Einfach so!
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_A_28_01"); //Oh nein, dafür kann ich nicht meine Pflicht vernachlässigen.
+	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Duell_A_15_00"); //Just like that!
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Duell_A_28_01"); //Oh, no, that's not why I can't neglect my duty.
 
 	Info_ClearChoices	(Info_Mod_Lagerhauswache_Duell);
 };
@@ -141,7 +141,7 @@ INSTANCE Info_Mod_Lagerhauswache_Bestechung (C_INFO)
 	information	= Info_Mod_Lagerhauswache_Bestechung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie wär's mit ein wenig Gold?";
+	description	= "How about a little gold?";
 };
 
 FUNC INT Info_Mod_Lagerhauswache_Bestechung_Condition()
@@ -154,8 +154,8 @@ FUNC INT Info_Mod_Lagerhauswache_Bestechung_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache_Bestechung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Bestechung_15_00"); //Wie wär's mit ein wenig Gold?
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Bestechung_28_01"); //Pah, beleidige Er mich nicht!
+	AI_Output(hero, self, "Info_Mod_Lagerhauswache_Bestechung_15_00"); //How about a little gold?
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Bestechung_28_01"); //Pah, don't insult me!
 };
 
 INSTANCE Info_Mod_Lagerhauswache_Umgehauen (C_INFO)
@@ -180,7 +180,7 @@ FUNC INT Info_Mod_Lagerhauswache_Umgehauen_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache_Umgehauen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Umgehauen_28_00"); //(unterwürfig) Bitte, spreche Er mich nicht mehr an. Ich bitte Ihn um Verzeihung für alle Beleidigungen, die Ihm durch meine Familie widerfahren sind!
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Umgehauen_28_00"); //Please, please, He no longer approach me. I ask Him for forgiveness for all the insults that have happened to Him through my family!
 
 	// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
 	self.aivar[AIV_ArenaFight] = AF_NONE;
@@ -213,7 +213,7 @@ FUNC INT Info_Mod_Lagerhauswache_Umgehauen2_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache_Umgehauen2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Umgehauen2_28_00"); //Was wagt Er es, mich nach seiner Niederlage noch einmal anzusprechen? Bleibe Er liegen im Staub der Straße!
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache_Umgehauen2_28_00"); //What does He dare to address me again after his defeat? Remain He lie in the dust of the road!
 
 	// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
 	self.aivar[AIV_ArenaFight] = AF_NONE;
@@ -255,7 +255,7 @@ func int Info_Mod_Lagerhauswache_FirstWarn_Condition()
 
 func void Info_Mod_Lagerhauswache_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Lagerhauswache_FirstWarn_28_00"); //Mäßige Er seinen Schritt! Zu diesem Lagerhaus hat nur unser allerdurchlauchtigster Stadthalter Zutritt!
+	AI_Output (self, hero,"Info_Mod_Lagerhauswache_FirstWarn_28_00"); //He moderate in his pace! This warehouse is only open to our very best owner!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Lagerhauswache_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -288,7 +288,7 @@ FUNC INT Info_Mod_Lagerhauswache_SecondWarn_Condition()
 
 func void Info_Mod_Lagerhauswache_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Lagerhauswache_SecondWarn_28_00"); //Ich sag's Ihm zum letzten Mal. Einen Schritt weiter und Er begibt sich in die Welt des Schmerzes!
+	AI_Output (self, hero,"Info_Mod_Lagerhauswache_SecondWarn_28_00"); //I'll tell him one last time. One step further and He enters the world of pain!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Lagerhauswache_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -326,7 +326,7 @@ func void Info_Mod_Lagerhauswache_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_Lagerhauswache_Attack_28_00"); //Er hat es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_Lagerhauswache_Attack_28_00"); //He wanted it this way...
 
 	AI_StopProcessInfos	(self);	
 

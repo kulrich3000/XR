@@ -15,39 +15,39 @@ FUNC INT Info_Mod_Dalton_Hi_Condition()
 
 FUNC VOID Info_Mod_Dalton_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_00"); //Hey, du!
-	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_01"); //Du siehst mir wie ein kampferprobter Recke aus. Kannst du mir helfen?
-	AI_Output(hero, self, "Info_Mod_Dalton_Hi_15_02"); //Worum geht’s?
-	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_03"); //Ich mache mir Sorgen um meinen Sohn Ivan. Er ist jetzt erwachsen, fürchtet sich aber vor Tieren wie ein Schwächling.
-	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_04"); //Dabei soll er doch in meine Fußstapfen als Holzfäller treten.
-	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_05"); //Ich bin mittlerweile zu alt, um jagen zu gehen, aber du könntest ihn doch sicher mitnehmen und ihm seine Furcht nehmen, oder?
+	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_00"); //Hey, you!
+	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_01"); //You look like a battle-hardened knight to me. Can you help me?
+	AI_Output(hero, self, "Info_Mod_Dalton_Hi_15_02"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_03"); //I'm worried about my son Ivan. He's grown up now, but fears animals like a weakling.
+	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_04"); //I'd like him to follow in my footsteps as a lumberjack.
+	AI_Output(self, hero, "Info_Mod_Dalton_Hi_04_05"); //I'm too old to go hunting, but you could take him with you and take away his fear, couldn't you?
 
 	Info_ClearChoices	(Info_Mod_Dalton_Hi);
 
-	Info_AddChoice	(Info_Mod_Dalton_Hi, "Kein Interesse.", Info_Mod_Dalton_Hi_B);
-	Info_AddChoice	(Info_Mod_Dalton_Hi, "Was springt für mich dabei heraus?", Info_Mod_Dalton_Hi_A);
+	Info_AddChoice	(Info_Mod_Dalton_Hi, "Not interested.", Info_Mod_Dalton_Hi_B);
+	Info_AddChoice	(Info_Mod_Dalton_Hi, "What's in it for me?", Info_Mod_Dalton_Hi_A);
 };
 
 FUNC VOID Info_Mod_Dalton_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Dalton_Hi_B_15_00"); //Kein Interesse.
+	AI_Output(hero, self, "Info_Mod_Dalton_Hi_B_15_00"); //Not interested.
 
 	Info_ClearChoices	(Info_Mod_Dalton_Hi);
 };
 
 FUNC VOID Info_Mod_Dalton_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Dalton_Hi_A_15_00"); //Was springt für mich dabei heraus?
-	AI_Output(self, hero, "Info_Mod_Dalton_Hi_A_04_01"); //Mein Dank natürlich.
-	AI_Output(hero, self, "Info_Mod_Dalton_Hi_A_15_02"); //Dann werde ich versuchen, mich von deinem Dank zu ernähren.
-	AI_Output(self, hero, "Info_Mod_Dalton_Hi_A_04_03"); //Haha. Nun gut, du bekommst Brot und Äpfel.
-	AI_Output(hero, self, "Info_Mod_Dalton_Hi_A_15_04"); //Wenn's sein muss.
-	AI_Output(self, hero, "Info_Mod_Dalton_Hi_A_04_05"); //Halte dich beim Tor von Khorata links, bis du auf ein Feld triffst, auf dem ich erst vor kurzem die Bäume gefällt habe.
-	AI_Output(self, hero, "Info_Mod_Dalton_Hi_A_04_06"); //Dort haben sich Graslandscavenger breit gemacht. Die wären eine gute Übung für meinen Sohn.
+	AI_Output(hero, self, "Info_Mod_Dalton_Hi_A_15_00"); //What's in it for me?
+	AI_Output(self, hero, "Info_Mod_Dalton_Hi_A_04_01"); //Thank you, of course.
+	AI_Output(hero, self, "Info_Mod_Dalton_Hi_A_15_02"); //Then I'll try to feed on your gratitude.
+	AI_Output(self, hero, "Info_Mod_Dalton_Hi_A_04_03"); //Haha. All right, you get bread and apples.
+	AI_Output(hero, self, "Info_Mod_Dalton_Hi_A_15_04"); //If I have to.
+	AI_Output(self, hero, "Info_Mod_Dalton_Hi_A_04_05"); //Keep left at the Khorata gate until you meet a field where I recently felled the trees.
+	AI_Output(self, hero, "Info_Mod_Dalton_Hi_A_04_06"); //Graslandscavengers have spread there. They'd be a good exercise for my son.
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_HASENFUSS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_HASENFUSS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Ich soll mit Daltons Sohn Ivan Jagd auf Graslandscavenger unweit des Stadttors von Khorata machen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "I'm to hunt down Graslandscavenger not far from the city gate of Khorata with Dalton's son Ivan.");
 
 	Mod_REL_Hasenfuss = 1;
 
@@ -83,16 +83,16 @@ FUNC VOID Info_Mod_Dalton_Hasenfuss_Info()
 {
 	if (Mod_REL_Hasenfuss == 7)
 	{
-		AI_Output(self, hero, "Info_Mod_Dalton_Hasenfuss_04_00"); //Was hast du getan?! Ich habe gehört, Ivan wohnt jetzt auf Erhards Hof und will nicht mehr mit mir sprechen. Das ist alles dein Werk!
+		AI_Output(self, hero, "Info_Mod_Dalton_Hasenfuss_04_00"); //What have you done?! I heard Ivan is now living on Erhard's farm and I don't want to talk to me anymore. This is all your doing!
 	}
 	else if (Mod_REL_Hasenfuss == 8)
 	{
-		AI_Output(self, hero, "Info_Mod_Dalton_Hasenfuss_04_01"); //Ivan prahlt noch immer von eurem Ausflug. Danke für deine Hilfe, ich stehe in deiner Schuld.
+		AI_Output(self, hero, "Info_Mod_Dalton_Hasenfuss_04_01"); //Ivan's still bragging about your trip. Thanks for your help, I'm in your debt.
 
 		CreateInvItems	(hero, ItFo_Bread, 1);
 		CreateInVItems	(hero, ItFo_Apple, 2);
 
-		B_ShowGivenThings	("Brot und 2 Äpfel erhalten");
+		B_ShowGivenThings	("Bread and 2 apples preserved");
 
 		B_GivePlayerXP	(100);
 
@@ -106,12 +106,12 @@ FUNC VOID Info_Mod_Dalton_Hasenfuss_Info()
 	}
 	else if (Mod_REL_Hasenfuss == 9)
 	{
-		AI_Output(self, hero, "Info_Mod_Dalton_Hasenfuss_04_02"); //Danke für deine Bemühungen, Ivan das Jagen näher zu bringen, auch wenn sie anscheinend nichts eingebracht haben.
+		AI_Output(self, hero, "Info_Mod_Dalton_Hasenfuss_04_02"); //Thank you for your efforts to bring Ivan closer to hunting, even if they didn't seem to bring anything to bear.
 
 		CreateInvItems	(hero, ItFo_Bread, 1);
 		CreateInVItems	(hero, ItFo_Apple, 2);
 
-		B_ShowGivenThings	("Brot und 2 Äpfel erhalten");
+		B_ShowGivenThings	("Bread and 2 apples preserved");
 
 		B_GivePlayerXP	(50);
 
@@ -131,7 +131,7 @@ INSTANCE Info_Mod_Dalton_Freudenspender (C_INFO)
 	information	= Info_Mod_Dalton_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich hab hier Freudenspender ...";
+	description 	= "I'm happy to have you here...";
 };                       
 
 FUNC INT Info_Mod_Dalton_Freudenspender_Condition()
@@ -146,8 +146,8 @@ FUNC INT Info_Mod_Dalton_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Dalton_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dalton_Freudenspender_15_00"); //Ich hab hier Freudenspender ...
-	AI_Output(self, hero, "Info_Mod_Dalton_Freudenspender_04_01"); //Dann lass mal was rüberwachsen! Kann man immer gebrauchen.
+	AI_Output(hero, self, "Info_Mod_Dalton_Freudenspender_15_00"); //I'm happy to have you here...
+	AI_Output(self, hero, "Info_Mod_Dalton_Freudenspender_04_01"); //Then let something grow over! You can always use it.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

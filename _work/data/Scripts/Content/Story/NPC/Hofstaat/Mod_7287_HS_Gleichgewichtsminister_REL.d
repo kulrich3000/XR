@@ -1,7 +1,7 @@
 instance Mod_7287_HS_Gleichgewichtsminister_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königlicher Gleichgewichtsminister"; 
+	name 		= "Royal Minister of Equilibrium"; 
 	guild 		= GIL_OUT;
 	id 			= 7287;
 	voice 		= 1;

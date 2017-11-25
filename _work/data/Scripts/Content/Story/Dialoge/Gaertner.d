@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Gaertner_Hi (C_INFO)
 	information	= Info_Mod_Gaertner_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Gaertner_Hi_Condition()
@@ -17,11 +17,11 @@ FUNC INT Info_Mod_Gaertner_Hi_Condition()
 FUNC VOID Info_Mod_Gaertner_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Gaertner_Hi_09_01"); //Ich bin hier der Gärtner. Meine Aufgabe ist es mich um die Pflanze im oberen Viertel zu kümmern.
-	AI_Output(self, hero, "Info_Mod_Gaertner_Hi_09_02"); //Ich kann dir auch ein paar davon verkaufen.
+	AI_Output(self, hero, "Info_Mod_Gaertner_Hi_09_01"); //I'm the gardener here. My job is to take care of the plant in the upper quarter.
+	AI_Output(self, hero, "Info_Mod_Gaertner_Hi_09_02"); //I can sell you some of these, too.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Der Gärtner aus dem oberen Viertel kann mir ein paar Pflanzen verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "The gardener upstairs can sell me some plants.");
 };
 
 INSTANCE Info_Mod_Gaertner_Dieb (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Gaertner_Dieb (C_INFO)
 	information	= Info_Mod_Gaertner_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was macht die Arbeit?";
+	description	= "How's work?";
 };
 
 FUNC INT Info_Mod_Gaertner_Dieb_Condition()
@@ -46,19 +46,19 @@ FUNC INT Info_Mod_Gaertner_Dieb_Condition()
 
 FUNC VOID Info_Mod_Gaertner_Dieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gaertner_Dieb_15_00"); //Was macht die Arbeit?
-	AI_Output(self, hero, "Info_Mod_Gaertner_Dieb_09_01"); //Viel zu viel Unkraut, aber ansonsten kann ich nicht klagen.
-	AI_Output(hero, self, "Info_Mod_Gaertner_Dieb_15_02"); //Und was hast du heute schon mitgehen gelassen?
-	AI_Output(self, hero, "Info_Mod_Gaertner_Dieb_09_03"); //Oh ...
+	AI_Output(hero, self, "Info_Mod_Gaertner_Dieb_15_00"); //How's work?
+	AI_Output(self, hero, "Info_Mod_Gaertner_Dieb_09_01"); //Too much weed, but otherwise I can't complain.
+	AI_Output(hero, self, "Info_Mod_Gaertner_Dieb_15_02"); //And what did you take today?
+	AI_Output(self, hero, "Info_Mod_Gaertner_Dieb_09_03"); //Oh...
 	AI_PlayAni (hero, "T_YES");
-	AI_Output(self, hero, "Info_Mod_Gaertner_Dieb_09_04"); //Hast du mir einen Schreck eingejagt. Bin nicht immer auf dem neustem Stand, aber du kommst mir gerade recht.
-	AI_Output(hero, self, "Info_Mod_Gaertner_Dieb_15_05"); //Was gibt's zu tun?
-	AI_Output(self, hero, "Info_Mod_Gaertner_Dieb_09_06"); //Der Händler Salandril besitzt einige wertvolle Tränke. Bring mir einen, aber du musst aufpassen, er traut keinem über den Weg und ist immer wachsam.
-	AI_Output(hero, self, "Info_Mod_Gaertner_Dieb_15_07"); //Ich werd's versuchen.
+	AI_Output(self, hero, "Info_Mod_Gaertner_Dieb_09_04"); //You scared the shit out of me. I'm not always up to date, but you're just in time.
+	AI_Output(hero, self, "Info_Mod_Gaertner_Dieb_15_05"); //What's to be done?
+	AI_Output(self, hero, "Info_Mod_Gaertner_Dieb_09_06"); //Salandril has some valuable potions. Bring me one, but you have to be careful, he doesn't trust anyone and is always vigilant.
+	AI_Output(hero, self, "Info_Mod_Gaertner_Dieb_15_07"); //I'll try not to.
 	
 	Log_CreateTopic	(TOPIC_MOD_DIEB_SALANDRIL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_SALANDRIL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DIEB_SALANDRIL, "Der Gärtner will, dass ich einen von Salandrils wertvollen Tränken stehle.");
+	B_LogEntry	(TOPIC_MOD_DIEB_SALANDRIL, "The gardener wants me to steal one of Salandril's precious potions.");
 };
 
 INSTANCE Info_Mod_Gaertner_HierTrank (C_INFO)
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Gaertner_HierTrank (C_INFO)
 	information	= Info_Mod_Gaertner_HierTrank_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du deinen wertvollen Trank.";
+	description	= "Here's your precious potion.";
 };
 
 FUNC INT Info_Mod_Gaertner_HierTrank_Condition()
@@ -83,17 +83,17 @@ FUNC INT Info_Mod_Gaertner_HierTrank_Condition()
 
 FUNC VOID Info_Mod_Gaertner_HierTrank_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gaertner_HierTrank_15_00"); //Hier hast du deinen wertvollen Trank.
+	AI_Output(hero, self, "Info_Mod_Gaertner_HierTrank_15_00"); //Here's your precious potion.
 
 	B_GiveInvItems	(hero, self, ItPo_Perm_DEX_Salandril, 1);
 	Npc_RemoveInvItems	(self, ItPo_Perm_DEX_Salandril, 1);
 	CreateInvItems	(self, ItPo_Perm_DEX, 1);
 
-	AI_Output(self, hero, "Info_Mod_Gaertner_HierTrank_09_01"); //Unglaublich, du bist ein Naturtalent. Hier hast du eine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Gaertner_HierTrank_09_01"); //I can't believe you're a natural. Here's a reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
-	AI_Output(self, hero, "Info_Mod_Gaertner_HierTrank_09_02"); //Wenn du willst, dann verkauf ich ihn dir.
+	AI_Output(self, hero, "Info_Mod_Gaertner_HierTrank_09_02"); //If you want, I'll sell it to you.
 	
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_SALANDRIL, LOG_SUCCESS);
 

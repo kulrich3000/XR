@@ -1,7 +1,7 @@
 INSTANCE Mod_7529_OUT_AlterMann_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Alter Mann des Waldes";
+	name 		= "Old man of the forest";
 	guild 		= GIL_DMT;
 	id 		= 7529;
 	voice 		= 11;

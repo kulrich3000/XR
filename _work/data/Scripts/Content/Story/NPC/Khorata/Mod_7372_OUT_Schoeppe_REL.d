@@ -1,7 +1,7 @@
 instance Mod_7372_OUT_Schoeppe_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Schöppe"; 
+	name 		= "scoop"; 
 	guild 		= GIL_DMT;
 	id 			= 7372;
 	voice 		= 31;

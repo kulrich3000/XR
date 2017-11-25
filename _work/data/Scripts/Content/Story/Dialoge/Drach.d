@@ -18,18 +18,18 @@ FUNC VOID Info_Mod_Drach_Hi_Info()
 	Wld_PlayEffect("DEMENTOR_FX",  self, self, 0, 0, 0, FALSE );
 	Wld_PlayEffect("spellFX_Fear",  self, self, 0, 0, 0, FALSE );
 
-	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_00"); //Keinen Schritt weiter, Mensch!
-	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_01"); //Was willst du?
-	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_02"); //Xardas und du, ihr habt etwas, was mein Meister will! GIB MIR DEN ALMANACH!
-	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_03"); //Vergiss es!
+	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_00"); //Don't take another step, man!
+	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_01"); //What do you want?
+	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_02"); //You and Xardas have something my master wants! GIVE ME THAT ALMANAC!
+	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_03"); //Forget it!
 
 	AI_ReadyMeleeWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_04"); //Dann werde ich dich töten!
+	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_04"); //Then I'll kill you!
 
 	AI_ReadyMeleeWeapon	(hero);
 
-	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_05"); //Versuch's doch!
+	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_05"); //Try it yourself!
 };
 
 INSTANCE Info_Mod_Drach_WerBistDu (C_INFO)
@@ -40,7 +40,7 @@ INSTANCE Info_Mod_Drach_WerBistDu (C_INFO)
 	information	= Info_Mod_Drach_WerBistDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "ENDE";
+	description	= "END";
 };
 
 FUNC INT Info_Mod_Drach_WerBistDu_Condition()
@@ -59,7 +59,7 @@ FUNC VOID Info_Mod_Drach_WerBistDu_Info()
 
 	B_Attack	(self, hero, AR_NONE, 0);
 
-	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "Vor Xardas' Turm hab ich einen Krieger namens Drach getroffen. Er wollte den Almanach für seinen Meister. Ich werde ihn wohl töten müssen.");
+	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "In front of Xardas' tower I met a warrior named Dragon. He wanted the almanac for his master. I guess I'll have to kill him.");
 };
 
 INSTANCE Info_Mod_Drach_Besiegt (C_INFO)
@@ -82,7 +82,7 @@ FUNC INT Info_Mod_Drach_Besiegt_Condition()
 
 FUNC VOID Info_Mod_Drach_Besiegt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Drach_Besiegt_14_00"); //(zischt) Verdammt! Jetzt magst du gewonnen haben, aber ich komme wieder, und mit mir die anderen fünf Krieger.
+	AI_Output(self, hero, "Info_Mod_Drach_Besiegt_14_00"); //(Bizz) Damn it! Now you may have won, but I'll come back, and with me the other five warriors.
 
 	self.aivar[AIV_Partymember] = 0;
 
@@ -94,7 +94,7 @@ FUNC VOID Info_Mod_Drach_Besiegt_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_FIVEKNIGHTS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_FIVEKNIGHTS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_FIVEKNIGHTS, "Drach ist geflohen und kündigte seine Rückkehr mit weiteren fünf Kriegern an. Das kann ja lustig werden.");
+	B_LogEntry	(TOPIC_MOD_BEL_FIVEKNIGHTS, "Drach has fled and announced his return with another five warriors. This can be fun.");
 };
 
 INSTANCE Info_Mod_Drach_AtAlmanach (C_INFO)
@@ -117,11 +117,11 @@ FUNC INT Info_Mod_Drach_AtAlmanach_Condition()
 
 FUNC VOID Info_Mod_Drach_AtAlmanach_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Drach_AtAlmanach_14_00"); //(triumphierend) Ah, du bist es, kleiner Mensch. Du kommst zu spät! Die anderen sind bereits auf der Suche nach der Axt.
-	AI_Output(hero, self, "Info_Mod_Drach_AtAlmanach_15_01"); //(irritiert) Wie hast du herausgefunden, was im Buch steht?
-	AI_Output(self, hero, "Info_Mod_Drach_AtAlmanach_14_02"); //(lacht) Wir haben unsere Augen und Ohren überall! Und nun stirb!
+	AI_Output(self, hero, "Info_Mod_Drach_AtAlmanach_14_00"); //Ah, it's you, little man. You're too late! The others are already looking for the axe.
+	AI_Output(hero, self, "Info_Mod_Drach_AtAlmanach_15_01"); //How did you find out what it says in the book?
+	AI_Output(self, hero, "Info_Mod_Drach_AtAlmanach_14_02"); //(laughs) We have our eyes and ears everywhere! Now die!
 
-	B_LogEntry	(TOPIC_MOD_BEL_FIVEKNIGHTS, "Ich habe Drach wieder getroffen. Ich muss ihn diesmal wirklich töten.");
+	B_LogEntry	(TOPIC_MOD_BEL_FIVEKNIGHTS, "I met Drach again. I really have to kill him this time.");
 
 	CreateInvItems	(self, ItWr_AxtAlmanach_01, 1);
 

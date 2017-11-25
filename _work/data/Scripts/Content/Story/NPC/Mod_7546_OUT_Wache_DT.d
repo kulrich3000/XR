@@ -1,7 +1,7 @@
 instance Mod_7546_OUT_Wache_DT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wache"; 
+	name 		= "Guard"; 
 	guild 		= GIL_STRF;
 	id 			= 7546;
 	voice 		= 1;

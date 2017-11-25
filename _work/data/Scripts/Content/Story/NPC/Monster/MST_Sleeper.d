@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Sleeper(C_Npc)			
 {
-	name							=	"Schläfer";
+	name							=	"sleeper";
 	guild							=	GIL_MINECRAWLER;
 	level							=	2000;
 	flags = 2;

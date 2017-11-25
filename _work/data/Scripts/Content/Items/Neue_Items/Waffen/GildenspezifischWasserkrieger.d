@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_AdanosSchwert (C_Item)
 {
-	name 				=	"Schwert Adanos'";
+	name 				=	"Sword Adanos's Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -30,7 +30,7 @@ INSTANCE ItMw_AdanosSchwert (C_Item)
 };
 INSTANCE ItMw_AdanosSchwert_Geschaerft (C_Item)
 {
-	name 				=	"Schwert Adanos' (geschärft)";
+	name 				=	"Sword Adanos' (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -61,7 +61,7 @@ INSTANCE ItMw_AdanosSchwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_XRSchwert_01 (C_Item)
 {	
-	name 				=	"Klinge Adanos'";
+	name 				=	"Blade Adanos'";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -84,7 +84,7 @@ INSTANCE ItMw_XRSchwert_01 (C_Item)
 };
 INSTANCE ItMw_XRSChwert_01_Geschaerft (C_Item)
 {	
-	name 				=	"Klinge Adanos' (geschärft)";
+	name 				=	"Blade Adanos' (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	

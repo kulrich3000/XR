@@ -18,24 +18,24 @@ FUNC INT Info_Mod_Bloodwyn_EBR_Belagerung_Condition()
 
 FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_00"); //(spöttisch) Wen haben wir denn da? Die Schlangenzunge Dexter und ein Handlanger vom mausgrauen Alissandro.
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_01"); //Da macht man sich die Mühe und fängt den Botschafter ab, und dann schickt der alte Mann noch einen seiner Speichellecker.
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_02"); //Hat Bartholo keine andere Möglichkeit, als einen der Gefangenen aus dem Kerker zu ziehen?
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_03"); //Bartholo weiß, wer ihm helfen kann, im Gegensatz zu Thorus.
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_04"); //Wie bist du eigentlich ins Lager gekommen?
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_05"); //Sagen wir es so: Ich war der Letzte, den Sancho nach dem Passwort gefragt hat.
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_06"); //Das wird den Banditen sicherlich nicht gefallen. Sie werden sich rächen wollen.
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_07"); //Das glaube ich nicht. Mit mir sind 15 Gardisten gekommen, die den Auftrag haben, jeden der in diesem Lager für Unruhe sorgt oder es verlässt, sofort zu töten.
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_08"); //Soll das heißen, wir werden belagert?
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_09"); //Genau das soll es heißen.
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_10"); //Wir fürchten uns nicht vor dir. Alissandro wird Leute schicken, die nach uns suchen.
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_11"); //Oh, meinst du wir fürchten uns vor den Auflehnern, die das Großväterchen schickt?
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_12"); //Wir sitzen am längeren Hebel. Sollten Alissandros "Männer" kommen, werden wir sie mit Leichtigkeit überwältigen können.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_00"); //What have we got here? The serpent tongue Dexter and a sidekick from the mousy grey Alissandro.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_01"); //You go to the trouble of catching the ambassador, and then the old man sends one of his sycophants.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_02"); //Isn't Bartholo able to pull one of the prisoners out of the dungeon?
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_03"); //Bartholo knows who can help him, unlike Thorus.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_04"); //How did you get into the camp?
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_05"); //Let's put it this way: I was the last person Sancho asked for the password.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_06"); //The bandits will certainly not like that. They'll want revenge.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_07"); //I don't think so. With me came 15 guardsmen who have the mission to kill anyone who causes trouble in this camp or leaves it immediately.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_08"); //Are you saying we're being besieged?
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_09"); //That's exactly what it means.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_EBR_Belagerung_15_10"); //We're not afraid of you. Alissandro will send people looking for us.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_11"); //Oh, you think we're afraid of the rebels the grandfather sends?
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_12"); //Wir sitzen am längeren Hebel. Sollten Alissandros "men" kommen, werden wir sie mit Leichtigkeit überwältigen können.
 
 	if (Npc_HasItems(hero, ItRu_TeleportSeaport) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportSeaport, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportSeaport, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportSeaport, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -43,7 +43,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportMonastery) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportMonastery, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportMonastery, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportMonastery, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -51,7 +51,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportPatBack) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportPatBack, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportPatBack, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportPatBack, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -59,7 +59,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_Teleport_Pat) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_Teleport_Pat, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_Teleport_Pat, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_Teleport_Pat, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -67,7 +67,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_Teleport_Pat_01) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_Teleport_Pat_01, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_Teleport_Pat_01, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_Teleport_Pat_01, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -75,7 +75,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_Teleport_Pat_02) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_Teleport_Pat_02, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_Teleport_Pat_02, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_Teleport_Pat_02, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -83,7 +83,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportFarm) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportFarm, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportFarm, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportFarm, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -91,7 +91,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportXardas) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportXardas, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportXardas, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportXardas, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -99,7 +99,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportPassNW) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportPassNW, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportPassNW, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportPassNW, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -107,7 +107,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportPassOW) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportPassOW, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportPassOW, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportPassOW, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -115,7 +115,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportOC) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportOC, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportOC, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportOC, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -123,7 +123,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportOWDemonTower) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportOWDemonTower, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportOWDemonTower, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportOWDemonTower, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -131,7 +131,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportTaverne) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportTaverne, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportTaverne, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportTaverne, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -139,7 +139,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportDemonTower) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportDemonTower, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportDemonTower, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportDemonTower, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -147,7 +147,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportPsicamp) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportPsicamp, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportPsicamp, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportPsicamp, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -155,7 +155,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportOldcamp) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportOldcamp, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportOldcamp, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportOldcamp, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -163,7 +163,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportNewcamp) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportNewcamp, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportNewcamp, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportNewcamp, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -171,14 +171,14 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_Teleport_3) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_Teleport_3, 1);
-		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_Teleport_3, 1);
+		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_Teleport_3, 1);
 
 		Mod_HeroHasRune += 1;
 	};
 
 	if (Mod_HeroHasRune > 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_13"); //Wie ich sehe hast du Teleportrunen. Ich schätze du hast nichts dagegen, wenn ich sie mitnehmen.
+		AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_13"); //I see you have teleportruns. I guess you don't mind if I take her with me.
 	};
 
 	Wld_InsertNpc	(Mod_1879_GRD_Gardist_MT, "LOCATION_11_01");
@@ -196,7 +196,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 
 	B_StartOtherRoutine	(Mod_1108_GRD_Bullit_MT, "WACHE");
 
-	B_LogEntry	(TOPIC_MOD_AL_BOTSCHAFTER, "Nachdem ich Dexter die Botschaft gegeben hatte, wurden wir von den Gardisten überfallen, die den Auftrag haben uns zu töten, sollten wir das Lager verlassen.");
+	B_LogEntry	(TOPIC_MOD_AL_BOTSCHAFTER, "After I gave the message to Dexter, we were attacked by the guards who had the order to kill us if we left the camp.");
 
 	AI_StopProcessInfos	(self);
 
@@ -230,9 +230,9 @@ FUNC INT Info_Mod_Bloodwyn_EBR_Belauscht_Condition()
 
 FUNC VOID Info_Mod_Bloodwyn_EBR_Belauscht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belauscht_04_00"); //So, im Bergkastell habt ihr Ratten also euer Loch. Kommt mit! Bartholo wird es freuen, das zu hören.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belauscht_04_00"); //So, you rats have your hole in the mountain fort. Come with me! Bartholo will be happy to hear that.
 	
-	B_LogEntry	(TOPIC_MOD_AL_KillMission, "Ich habe mit Jackal gesprochen, allerdings hat Bloodwyn mitgehört. Er bringt mich zu Bartholo.");
+	B_LogEntry	(TOPIC_MOD_AL_KillMission, "I spoke to Jackal, but Bloodwyn was listening. He's taking me to Bartholo.");
 
 	AI_StopProcessInfos	(self);
 

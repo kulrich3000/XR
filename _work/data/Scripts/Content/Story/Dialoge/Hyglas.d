@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Hyglas_Hi_Condition()
 
 FUNC VOID Info_Mod_Hyglas_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hyglas_Hi_14_00"); //Ah, ein neues Gesicht. Ich bin Hyglas und lehre allen hier im Kloster den Umgang mit Runen.
+	AI_Output(self, hero, "Info_Mod_Hyglas_Hi_14_00"); //Ah, a new face. I am Hyglas and teach everyone here in the monastery how to handle runes.
 };
 
 INSTANCE Info_Mod_Hyglas_FeuerGegenEis (C_INFO)
@@ -38,8 +38,8 @@ FUNC INT Info_Mod_Hyglas_FeuerGegenEis_Condition()
 
 FUNC VOID Info_Mod_Hyglas_FeuerGegenEis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis_14_00"); //Dieser Teleportzauber wird uns beide direkt vor Orlans Taverne befördern, wo die anderen auf uns warten.
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis_14_01"); //Dort besprechen wir das weitere Vorgehen im Detail.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis_14_00"); //This teleport spell will transport us both right in front of Orlan's tavern where the others are waiting for us.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis_14_01"); //There we discuss the further procedure in detail.
 
 	AI_StopProcessInfos	(self);
 
@@ -101,31 +101,31 @@ FUNC VOID Info_Mod_Hyglas_FeuerGegenEis2_Info()
 
 	TRIA_Next(Hyglas);
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_14_00"); //Da sind wir ... aber, wo sind die anderen?
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_14_00"); //Here we are.... but where are the others?
 
 	TRIA_Next(Orlan);
 
 	AI_TurnToNpc	(Orlan, Hyglas);
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_05_01"); //(aufgeregt) Vor kurzem kam eine Gruppe dieser Eiswesen den Weg hoch.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_05_01"); //(agitated) Recently, a group of these ice creatures came up the path.
 
 	AI_TurnToNpc	(Hyglas, Orlan);
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_05_02"); //Eure Jungs aus dem Kloster haben sofort den Kampf aufgenommen und sie zurückgedrängt.
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_05_03"); //Es kamen jedoch unaufhörlich neue Monster nach, sodass sie sich mittlerweile bis zum See nach unten gekämpft haben.
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_05_04"); //Ich befürchte aber, ohne weitere Unterstützung sieht es schlecht für sie aus, bei den ganzen Viechern.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_05_02"); //Your boys from the monastery immediately took up the fight and pushed them back.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_05_03"); //However, new monsters followed them all the time, so they fought their way down to the lake.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_05_04"); //I'm afraid, however, that without further support it looks bad for them, with all the animals.
 
 	TRIA_Next(Hyglas);
 
 	AI_TurnToNpc	(Hyglas, hero);
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_14_05"); //Hast du das gehört Novize? Es bleibt keine Zeit zu verlieren. Wir müssen den anderen sofort zu Hilfe eilen.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis2_14_05"); //Did you hear that, novice? There's no time to lose. We must rush to the other man's aid immediately.
 
 	TRIA_Finish();
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "Da steh ich also mit Hyglas. Von Sekobs Hof aus strömen durch ein mysteriöses Portal immer mehr Eiswesen nach Khorinis und unsere Jungs sind am See mit ihnen in Kämpfe verwickelt. Es bleibt keine Zeit zu verlieren ihnen zu Hilfe zu eilen.");
+	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "So there I am with Hyglas. From Sekobs yard more and more ice creatures stream through a mysterious portal to Khorinis and our boys are involved in battles with them at the lake. There is no time to lose to help them.");
 
 	self.aivar[AIV_Partymember] = TRUE;
 
@@ -153,15 +153,15 @@ FUNC INT Info_Mod_Hyglas_FeuerGegenEis3_Condition()
 
 FUNC VOID Info_Mod_Hyglas_FeuerGegenEis3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis3_14_00"); //Mach dir keine Vorwürfe ... du hast tapfer gekämpft und dein Möglichstes gegeben.
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis3_14_01"); //Außerdem ist jetzt nicht der Rechte Zeitpunkt für Selbstvorwürfe. Kurier deine Wunden und pass auf, dass keine dieser Wesen in die Umgebung entkommen.
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis3_14_02"); //Ich werde derweil mit dem Novizen zum Steinkreis gehen und versuchen das Portal zu verschließen. Innos sei mit dir.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis3_14_00"); //Don't blame yourself... you fought bravely and gave your best you could.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis3_14_01"); //Moreover, now is not the time for self-reproaches. Courage your wounds and make sure none of these creatures escape into the environment.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis3_14_02"); //Meanwhile I will go to the stone circle with the novice and try to close the portal. Innos be with you.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "ZUSEKOB");
 
-	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "Keine Zeit zu rasten. Wir müssen weiter zum Portal auf Sekobs Hof, um es zu verschließen.");
+	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "No time to rest. We need to move on to the portal at Sekob's yard to lock it up.");
 };
 
 INSTANCE Info_Mod_Hyglas_FeuerGegenEis4 (C_INFO)
@@ -184,7 +184,7 @@ FUNC INT Info_Mod_Hyglas_FeuerGegenEis4_Condition()
 
 FUNC VOID Info_Mod_Hyglas_FeuerGegenEis4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis4_14_00"); //Beunruhigend ... das Portal ist mittlerweile sichtbar. Ich muss es mir näher ansehen.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis4_14_00"); //Disturbing... the portal is now visible. I need to take a closer look.
 
 	AI_StopProcessInfos	(self);
 };
@@ -212,10 +212,10 @@ FUNC INT Info_Mod_Hyglas_FeuerGegenEis5_Condition()
 
 FUNC VOID Info_Mod_Hyglas_FeuerGegenEis5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis5_14_00"); //Bei Innos, es scheint unaufhörlich zu wachsen. Wenn wir es nicht schnell verschließen, wird bald ganz Khorinis ein Hort des Eises sein.
-	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis5_15_01"); //Was ist zu tun?
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis5_14_02"); //Ich werde versuchen das magische Gefüge des Portals mit einem Feuersturm zu destabilisieren.
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis5_14_03"); //Mit etwas Glück, wird es dann in sich zusammenfallen ... hoffentlich.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis5_14_00"); //At Innos, it seems to be growing continuously. If we don't close it fast, all of Khorinis will soon be a hoard of ice.
+	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis5_15_01"); //What is to be done?
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis5_14_02"); //I will try to destabilize the portal's magical structure with a firestorm.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis5_14_03"); //With any luck, it will collapse.... hopefully.
 
 	AI_StopProcessInfos	(self);
 };
@@ -240,16 +240,16 @@ FUNC INT Info_Mod_Hyglas_FeuerGegenEis6_Condition()
 
 FUNC VOID Info_Mod_Hyglas_FeuerGegenEis6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis6_15_00"); //Verdammt, was ist geschehen.
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis6_14_01"); //Die ... die magische Entladung hat das Portal nicht verschlossen ... sondern es noch gestärkt ... und scheinbar wurden wir dadurch auf die andere Seite gezogen.
-	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis6_15_02"); //Und was sollen wir jetzt tun?
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis6_14_03"); //Wir müssen uns rasch hier umsehen. Vielleicht finden wir Anhaltspunkte über die Quelle des Portals.
+	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis6_15_00"); //Damn it, what happened.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis6_14_01"); //The.... the magical discharge has not closed the portal... but even stronger... and apparently we were pulled over to the other side.
+	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis6_15_02"); //So what do we do now?
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis6_14_03"); //We need to look around here as soon as possible. Maybe we can find clues about the source of the portal.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "EISHOEHLE2");
 
-	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "Na toll! Anstatt das Portal zu versiegeln, sind wir jetzt in einer eiseigen Höhle auf der anderen Seite gelandet.");
+	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "Great! Instead of sealing the portal, we have now landed in an icy cave on the other side.");
 };
 
 INSTANCE Info_Mod_Hyglas_FeuerGegenEis7 (C_INFO)
@@ -273,24 +273,24 @@ FUNC INT Info_Mod_Hyglas_FeuerGegenEis7_Condition()
 
 FUNC VOID Info_Mod_Hyglas_FeuerGegenEis7_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_00"); //Da! Von diesem Konstrukt geht große magische Energie aus. Zweifelsfrei wird dadurch das Portal gespeist.
-	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_01"); //Dann müssen wir es also zerstören?
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_02"); //Ja ... Allerdings ...
-	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_03"); //Allerdings was?
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_04"); //Allerdings würde dann das Portal in sich zusammenfallen und uns den Rückweg versperren.
-	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_05"); //Na toll! Dann können wir nichts machen?
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_00"); //There! This construct emanates great magical energy. Without any doubt, this feeds the portal.
+	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_01"); //So we have to destroy it, then?
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_02"); //Yes... However...
+	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_03"); //But what, though?
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_04"); //However, the portal would then collapse and block our way back.
+	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_05"); //Great! Then there's nothing we can do?
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_06"); //(nachdenklich) Hmm, doch ...
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_06"); //Hmm, but...
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_07"); //(bestimmend zum Helden) Du wirst zurück durch das Portal nach Khorinis gehen ... und ich werde zurückbleiben und die Höhle mit einer gewaltigen Feuersbrunst zum Einsturz bringen.
-	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_08"); //Aber ... das wäre dein sicheres Verderben.
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_09"); //Eine andere Wahl haben wir nicht, wenn wir Khorinis vor weiterem Unheil bewahren wollen.
-	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_10"); //Also gut ... Es war eine Ehre an deiner Seite gekämpft zu haben.
-	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_11"); //Ebenso ... (drängend) Und nun geh ... jede weitere Minute, die das Portal existiert, ist eine zuviel. Innos sei mit dir!
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_07"); //(determining the hero) You will go back through the portal to Khorinis... and I'll stay behind and bring down the cave with a mighty conflagration.
+	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_08"); //But... that would be your certain perdition.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_09"); //We have no other choice if we want to save khorinis from further disaster.
+	AI_Output(hero, self, "Info_Mod_Hyglas_FeuerGegenEis7_15_10"); //All right... It was an honor to have fought alongside you.
+	AI_Output(self, hero, "Info_Mod_Hyglas_FeuerGegenEis7_14_11"); //Also... Now go.... every additional minute that the portal exists is one too many. Innos be with you!
 
 	AI_StopProcessInfos	(self);
 
@@ -319,21 +319,21 @@ FUNC INT Info_Mod_Hyglas_BackInKhorinis_Condition()
 
 FUNC VOID Info_Mod_Hyglas_BackInKhorinis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_00"); //Ahh, mein Retter.
-	AI_Output(hero, self, "Info_Mod_Hyglas_BackInKhorinis_15_01"); //Du bist jetzt Prediger?
-	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_02"); //Ja, ich will den Armen und Not leidenden das wärmende Wort von Innos näher bringen.
-	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_03"); //Ich habe selbst viele Wochen Hunger und Kälte gelitten und sehe die vergangenen Ereignisse als eine Weisung von Innos.
-	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_04"); //Mein Leben werde ich von nun an der Unterstützung und Speisung jener Menschen zu widmen, denen das Schicksal eben nicht so viele Privilegien und Reichtum geschenkt hat.
-	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_05"); //Daher benötige ich diese Spruchrollen und Runen für den Kampf nicht mehr und gebe sie an dich weiter.
+	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_00"); //Ahh, my savior.
+	AI_Output(hero, self, "Info_Mod_Hyglas_BackInKhorinis_15_01"); //You're a preacher now?
+	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_02"); //Yes, I want to bring the warming word of Innos closer to the poor and needy.
+	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_03"); //I myself have suffered hunger and cold for many weeks and I see the past events as a directive from Innos.
+	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_04"); //From now on, I will dedicate my life to supporting and feeding those people to whom fate has not given so many privileges and wealth.
+	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_05"); //Therefore, I don't need these spell rolls and runes for the fight anymore and pass them on to you.
 
-	B_ShowGivenThings	("Spruchrollen Feuersturm und Feuerregen und Runen Feuersturm und großer Feuerball erhalten");
+	B_ShowGivenThings	("Spruchrollen firestorm and fire rain and runes firestorm and large fireball preserved");
 
 	CreateInvItems	(hero, ItSc_Firerain, 1);
 	CreateInvItems	(hero, ItSc_Pyrokinesis, 1);
 	CreateInvItems	(hero, ItRu_Pyrokinesis, 1);
 	CreateInvItems	(hero, ItRu_ChargeFireball, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_06"); //Bei dir kann ich mir sicher sein, dass sie einem rechten Zweck dienen werden. Innos sei mit dir.
+	AI_Output(self, hero, "Info_Mod_Hyglas_BackInKhorinis_14_06"); //With you, I can be sure they will serve a right purpose. Innos be with you.
 
 	B_GivePlayerXP	(200);
 };
@@ -346,7 +346,7 @@ INSTANCE Info_Mod_Hyglas_Leichengase (C_INFO)
 	information	= Info_Mod_Hyglas_Leichengase_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Milten hat gesagt, du könntest mir bei einem Problem helfen.";
+	description	= "Milten said you could help me with a problem.";
 };
 
 FUNC INT Info_Mod_Hyglas_Leichengase_Condition()
@@ -361,23 +361,23 @@ FUNC INT Info_Mod_Hyglas_Leichengase_Condition()
 
 FUNC VOID Info_Mod_Hyglas_Leichengase_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hyglas_Leichengase_15_00"); //Milten hat gesagt, du könntest mir bei einem Problem helfen.
-	AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase_14_01"); //Achja? Worum geht’s denn?
-	AI_Output(hero, self, "Info_Mod_Hyglas_Leichengase_15_02"); //Ich muss einen Troll dazu bringen, dieses Paket Kräuter hier zu fressen.
+	AI_Output(hero, self, "Info_Mod_Hyglas_Leichengase_15_00"); //Milten said you could help me with a problem.
+	AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase_14_01"); //Oh, yeah? What's this about?
+	AI_Output(hero, self, "Info_Mod_Hyglas_Leichengase_15_02"); //I need to get a troll to eat this package of herbs here.
 
 	if (hero.guild == GIL_VLK)
 	{
 		B_GiveInvItems	(hero, self, ItMi_Sumpfkraeuter, 1);
 
-		AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase_14_03"); //Da kann ich dir tatsächlich helfen. Komm morgen wieder.
+		AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase_14_03"); //I can actually help you there. Come back tomorrow.
 
 		Mod_Leichengase_Day = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase_14_04"); //Da kann ich dir tatsächlich helfen, allerdings kostet das.
-		AI_Output(hero, self, "Info_Mod_Hyglas_Leichengase_15_05"); //Wieviel?
-		AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase_14_06"); //500 Goldstücke.
+		AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase_14_04"); //I can actually help you with that, but it costs money.
+		AI_Output(hero, self, "Info_Mod_Hyglas_Leichengase_15_05"); //How much?
+		AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase_14_06"); //500 pieces of gold.
 	};
 };
 
@@ -389,7 +389,7 @@ INSTANCE Info_Mod_Hyglas_Leichengase2 (C_INFO)
 	information	= Info_Mod_Hyglas_Leichengase2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na gut. (500 Gold)";
+	description	= "All right, all right. (500 Gold)";
 };
 
 FUNC INT Info_Mod_Hyglas_Leichengase2_Condition()
@@ -404,14 +404,14 @@ FUNC INT Info_Mod_Hyglas_Leichengase2_Condition()
 
 FUNC VOID Info_Mod_Hyglas_Leichengase2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hyglas_Leichengase2_15_00"); //Na gut.
+	AI_Output(hero, self, "Info_Mod_Hyglas_Leichengase2_15_00"); //All right, all right.
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 500);
 	Npc_RemoveInvItems	(hero, ItMi_Sumpfkraeuter, 1);
 
-	B_ShowGivenThings	("500 Gold und Beutel mit Sumpfkräutern gegeben");
+	B_ShowGivenThings	("500 gold and bag with bog herbs added");
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase2_14_01"); //Gut, komm morgen wieder.
+	AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase2_14_01"); //Well, come back tomorrow.
 
 	Mod_Leichengase_Day = Wld_GetDay();
 };
@@ -446,15 +446,15 @@ FUNC INT Info_Mod_Hyglas_Leichengase3_Condition()
 
 FUNC VOID Info_Mod_Hyglas_Leichengase3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase3_14_00"); //Hier. Wenn du jetzt bei Trollen ein Schaf beschwörst, und sie es fressen, haben sie automatisch auch die Kräuter gefressen.
+	AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase3_14_00"); //Here. If you now summon a sheep from trolls and they eat it, they will automatically eat the herbs.
 
 	B_GiveInvItems	(self, hero, ItSc_SumKrautschaf, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase3_14_01"); //Jetzt geh.
+	AI_Output(self, hero, "Info_Mod_Hyglas_Leichengase3_14_01"); //Now leave.
 
 	Mod_Leichengase_Kraut = 3;
 
-	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Ich habe eine spezielle Spruchrolle für den Troll. Jetzt sollte ich zur Trollschlucht im Minental gehen, um die Kräuter zu den Trollen zu bringen.");
+	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "I have a special spell for the troll. Now I should go to the Troll Gorge in the Minental valley to bring the herbs to the trolls.");
 
 	B_GivePlayerXP	(150);
 };
@@ -467,7 +467,7 @@ instance Info_Mod_Hyglas_Runen	(C_INFO)
 	information	= Info_Mod_Hyglas_Runen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Unterweise mich (Runen erschaffen)";
+	description	= "Teach me (create runes)";
 };
 
 func int Info_Mod_Hyglas_Runen_Condition ()
@@ -486,7 +486,7 @@ func void Info_Mod_Hyglas_Runen_Info ()
 {
 	var int abletolearn;
 	abletolearn = 0;
-	AI_Output(hero, self, "Info_Mod_Hyglas_Runen_15_00"); //Unterweise mich.
+	AI_Output(hero, self, "Info_Mod_Hyglas_Runen_15_00"); //Teach me.
 	
 	Info_ClearChoices 	(Info_Mod_Hyglas_Runen);
 	Info_AddChoice		(Info_Mod_Hyglas_Runen, DIALOG_BACK, Info_Mod_Hyglas_Runen_BACK);
@@ -518,7 +518,7 @@ func void Info_Mod_Hyglas_Runen_Info ()
 		};
 		if (PLAYER_TALENT_RUNES [SPL_Pyrokinesis_g1] == FALSE)
 		{
-			Info_AddChoice	(Info_Mod_Hyglas_Runen, B_BuildLearnString ("Pyrokinese", B_GetLearnCostTalent (hero, NPC_TALENT_RUNES, SPL_Pyrokinesis_g1)), Info_Mod_Hyglas_Runen_Pyrokinesis_g1);
+			Info_AddChoice	(Info_Mod_Hyglas_Runen, B_BuildLearnString ("pyrokinesis", B_GetLearnCostTalent (hero, NPC_TALENT_RUNES, SPL_Pyrokinesis_g1)), Info_Mod_Hyglas_Runen_Pyrokinesis_g1);
 			abletolearn = (abletolearn +1);
 		};
 		if (PLAYER_TALENT_RUNES [SPL_FullHeal] == FALSE)
@@ -582,7 +582,7 @@ func void Info_Mod_Hyglas_Runen_Info ()
 
 	if (abletolearn < 1)
 	{
-		AI_Output (self, other, "Info_Mod_Hyglas_Runen_14_01"); //Es gibt nichts mehr, das ich dir beibringen könnte.
+		AI_Output (self, other, "Info_Mod_Hyglas_Runen_14_01"); //There's nothing more I can teach you.
 	};
 };
 

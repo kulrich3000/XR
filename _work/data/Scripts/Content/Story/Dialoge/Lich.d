@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Lich_Hi_Condition()
 
 FUNC VOID Info_Mod_Lich_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lich_Hi_10_00"); //Hahaha, ein weiterer Besucher, der meiner Gefolgschaft aus Untoten beitreten kann.
-	AI_Output(self, hero, "Info_Mod_Lich_Hi_10_01"); //Mich erledigen?! Dazu braucht es sehr viel ... und gleichzeitig so wenig.
-	AI_Output(self, hero, "Info_Mod_Lich_Hi_10_02"); //Aber in wenigen Sekunden wirst du dir darüber nicht mehr den Kopf zerbrechen müssen.
+	AI_Output(self, hero, "Info_Mod_Lich_Hi_10_00"); //Hahaha, another visitor who can join my undead followers.
+	AI_Output(self, hero, "Info_Mod_Lich_Hi_10_01"); //Kill me?! It takes a lot to do so... and yet so little.
+	AI_Output(self, hero, "Info_Mod_Lich_Hi_10_02"); //But in a few seconds, you won't have to worry about it.
 
 	Wld_SendTrigger	("LICHDUNGEON");
 
@@ -62,7 +62,7 @@ FUNC INT Info_Mod_Lich_PalasTot_Condition()
 
 FUNC VOID Info_Mod_Lich_PalasTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lich_PalasTot_10_00"); //Du erstaunst mich. Und es erfreut mich umso mehr, einen Kämpfer wie dich alsbald meinen Diener nennen zu können.
+	AI_Output(self, hero, "Info_Mod_Lich_PalasTot_10_00"); //You amaze me. And it pleases me all the more to be able to call a fighter like you my servant.
 
 	AI_StopProcessInfos	(self);
 
@@ -90,7 +90,7 @@ FUNC INT Info_Mod_Lich_Blutgolem_Condition()
 
 FUNC VOID Info_Mod_Lich_Blutgolem_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lich_Blutgolem_10_00"); //Lästig wirst du mir allmählich. Dann muss ich die Sache selbst in die Hand nehmen.
+	AI_Output(self, hero, "Info_Mod_Lich_Blutgolem_10_00"); //You're getting on my nerves. Then I'll have to do it myself.
 
 	self.flags = 0;
 
@@ -120,11 +120,11 @@ FUNC INT Info_Mod_Lich_Unbesiegbar_Condition()
 
 FUNC VOID Info_Mod_Lich_Unbesiegbar_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lich_Unbesiegbar_10_00"); //(lacht gehässig) Ha, du Narr glaubst mich mit schlichter Waffenkunst bezwingen zu können?!
-	AI_Output(self, hero, "Info_Mod_Lich_Unbesiegbar_10_01"); //Lange genug habe ich mit dir gespielt, nun mache ich ernst.
-	AI_Output(hero, self, "Info_Mod_Lich_Unbesiegbar_15_02"); //Verdammt, ich bin machtlos. Nichts wie weg.
+	AI_Output(self, hero, "Info_Mod_Lich_Unbesiegbar_10_00"); //(laughs spitefully) Ha, you fool think you can defeat me with simple weaponry?!
+	AI_Output(self, hero, "Info_Mod_Lich_Unbesiegbar_10_01"); //I've been playing with you long enough, now I'm serious.
+	AI_Output(hero, self, "Info_Mod_Lich_Unbesiegbar_15_02"); //Damn, I'm powerless. Let's get outta here.
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Mist, ich scheine diesem Lich nichts anhaben zu können. Was meinte er damit, um ihn zu bezwingen bräuchte man viel und doch wenig ...? Ich sollte wieder mal Xardas konsultieren ...");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Shit, I can't seem to touch this light. What did he mean by that, to defeat him you would need a lot and yet a little...? I should be consulting Xarda again....");
 
 	AI_StopProcessInfos	(self);
 
@@ -154,10 +154,10 @@ FUNC INT Info_Mod_Lich_Kamm_Condition()
 
 FUNC VOID Info_Mod_Lich_Kamm_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lich_Kamm_10_00"); //(mit schwacher Stimme) Wie?! Was hast du hier verlore ... (hält inne) Du warst es bestimmt, der meinen Kamm zerstört hat.
-	AI_Output(self, hero, "Info_Mod_Lich_Kamm_10_01"); //Das wirst du noch bitter bereuen, eines Tages werde ich zurückkehren ...
-	AI_Output(hero, self, "Info_Mod_Lich_Kamm_15_02"); //Das glaubst aber auch nur du.
-	AI_Output(self, hero, "Info_Mod_Lich_Kamm_10_03"); //(gequält) Ahhh ...
+	AI_Output(self, hero, "Info_Mod_Lich_Kamm_10_00"); //How?! How?! What are you doing here? It must have been you who destroyed my comb.
+	AI_Output(self, hero, "Info_Mod_Lich_Kamm_10_01"); //You'll regret this even more, one day I'll return...
+	AI_Output(hero, self, "Info_Mod_Lich_Kamm_15_02"); //That's what you think.
+	AI_Output(self, hero, "Info_Mod_Lich_Kamm_10_03"); //(tired) Ahhhh...
 
 	AI_StopProcessInfos	(self);
 };

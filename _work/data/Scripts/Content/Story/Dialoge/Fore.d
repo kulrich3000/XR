@@ -19,49 +19,49 @@ FUNC INT Info_Mod_Fore_Trador_Condition()
 
 FUNC VOID Info_Mod_Fore_Trador_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fore_Trador_01_00"); //Sei mir gegrüßt. Was kann ich für dich tun?
+	AI_Output(self, hero, "Info_Mod_Fore_Trador_01_00"); //Greetings to me. What can I do for you?
 
 	Info_ClearChoices	(Info_Mod_Fore_Trador);
 
-	Info_AddChoice	(Info_Mod_Fore_Trador, "Du bist nicht tot? Dann habe ich hier nichts mehr verloren.", Info_Mod_Fore_Trador_B);
-	Info_AddChoice	(Info_Mod_Fore_Trador, "Ein Verwandlungsmagier ist ermordet worden.", Info_Mod_Fore_Trador_A);
+	Info_AddChoice	(Info_Mod_Fore_Trador, "You're not dead? Then I have no business being here.", Info_Mod_Fore_Trador_B);
+	Info_AddChoice	(Info_Mod_Fore_Trador, "A transforming magician has been murdered.", Info_Mod_Fore_Trador_A);
 };
 
 FUNC VOID Info_Mod_Fore_Trador_B()
 {
-	AI_Output(hero, self, "Info_Mod_Fore_Trador_B_15_00"); //Du bist nicht tot? Dann habe ich hier nichts mehr verloren.
-	AI_Output(self, hero, "Info_Mod_Fore_Trador_B_01_01"); //Du unverschämter Lümmel!
+	AI_Output(hero, self, "Info_Mod_Fore_Trador_B_15_00"); //You're not dead? Then I have no business being here.
+	AI_Output(self, hero, "Info_Mod_Fore_Trador_B_01_01"); //You impudent rascal!
 
 	Info_ClearChoices	(Info_Mod_Fore_Trador);
 
-	Info_AddChoice	(Info_Mod_Fore_Trador, "Du kannst mir gar nichts. Ich werd' dann mal wieder.", Info_Mod_Fore_Trador_D);
-	Info_AddChoice	(Info_Mod_Fore_Trador, "War nicht so gemeint, tut mir Leid.", Info_Mod_Fore_Trador_C);
+	Info_AddChoice	(Info_Mod_Fore_Trador, "You can't do anything to me. I'll be back.", Info_Mod_Fore_Trador_D);
+	Info_AddChoice	(Info_Mod_Fore_Trador, "I didn't mean that, I'm sorry.", Info_Mod_Fore_Trador_C);
 };
 
 FUNC VOID Info_Mod_Fore_Trador_A()
 {
-	AI_Output(hero, self, "Info_Mod_Fore_Trador_A_15_00"); //Ein Verwandlungsmagier ist ermordet worden, und ich soll herausfinden, wer das ist.
-	AI_Output(self, hero, "Info_Mod_Fore_Trador_A_01_01"); //Das ist schrecklich! Aber was willst du denn von mir?
-	AI_Output(hero, self, "Info_Mod_Fore_Trador_A_15_02"); //Ich muss schließlich nachsehen, wer verschwunden ist, und wer nur seit ein paar Tagen nicht im Dorf war.
-	AI_Output(self, hero, "Info_Mod_Fore_Trador_A_01_03"); //Da hast du natürlich Recht. Also ich lebe noch, davor kannst du ausgehen (lacht).
-	AI_Output(hero, self, "Info_Mod_Fore_Trador_A_15_04"); //Okay, dann mache ich mich wieder auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Fore_Trador_A_15_00"); //A transforming magician has been murdered, and I'm here to find out who that is.
+	AI_Output(self, hero, "Info_Mod_Fore_Trador_A_01_01"); //That's terrible! But what do you want from me?
+	AI_Output(hero, self, "Info_Mod_Fore_Trador_A_15_02"); //I have to see who's disappeared and who hasn't been to the village in a few days.
+	AI_Output(self, hero, "Info_Mod_Fore_Trador_A_01_03"); //You're right about that, of course. So I'm still alive, you can go out (laughs).
+	AI_Output(hero, self, "Info_Mod_Fore_Trador_A_15_04"); //Okay, then I'll be on my way.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Fore ist noch am Leben und sammelt fröhlich seine Pflanzen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Fore is still alive and happily gathering his plants.");
 
 	Info_ClearChoices	(Info_Mod_Fore_Trador);
 };
 
 FUNC VOID Info_Mod_Fore_Trador_D()
 {
-	AI_Output(hero, self, "Info_Mod_Fore_Trador_D_15_00"); //Du kannst mir gar nichts. Ich werd' dann mal wieder.
-	AI_Output(self, hero, "Info_Mod_Fore_Trador_D_01_01"); //Gar nichts wirst du, bevor du mir nicht gesagt hast, was hier gespielt wird.
+	AI_Output(hero, self, "Info_Mod_Fore_Trador_D_15_00"); //You can't do anything to me. I'll be back.
+	AI_Output(self, hero, "Info_Mod_Fore_Trador_D_01_01"); //You won't be anything until you tell me what's going on here.
 
 	Info_Mod_Fore_Trador_A();
 };
 
 FUNC VOID Info_Mod_Fore_Trador_C()
 {
-	AI_Output(hero, self, "Info_Mod_Fore_Trador_C_15_00"); //War nicht so gemeint, tut mir Leid.
+	AI_Output(hero, self, "Info_Mod_Fore_Trador_C_15_00"); //I didn't mean that, I'm sorry.
 
 	Info_Mod_Fore_Trador_A();
 };
@@ -76,7 +76,7 @@ INSTANCE Info_Mod_Fore_Lehrer (C_INFO)
 	information	= Info_Mod_Fore_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir lernen?";
+	description	= "Can I study with you?";
 };
 
 FUNC INT Info_Mod_Fore_Lehrer_Condition()
@@ -94,11 +94,11 @@ FUNC VOID Info_Mod_Fore_Lehrer_Info()
 		Mod_Knows_ForeTeacher = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_VM, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_VM, "Fore kann mich in der Kunst der Alchemie unterweisen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_VM, "Fore can teach me the art of alchemy.");
 	};
 
-	AI_Output (hero, self, "Info_Mod_Fore_Lehrer_15_00"); //Kann ich bei dir lernen?
-	AI_Output (self, hero, "Info_Mod_Fore_Lehrer_01_01"); //Ich werde dich in die Geheimnisse der Alchemie einweihen.
+	AI_Output (hero, self, "Info_Mod_Fore_Lehrer_15_00"); //Can I study with you?
+	AI_Output (self, hero, "Info_Mod_Fore_Lehrer_01_01"); //I'll let you in on the secrets of alchemy.
 		
 	Info_ClearChoices 	(Info_Mod_Fore_Lehrer);
 	Info_AddChoice 		(Info_Mod_Fore_Lehrer,DIALOG_BACK,Info_Mod_Fore_Lehrer_BACK);
@@ -106,19 +106,19 @@ FUNC VOID Info_Mod_Fore_Lehrer_Info()
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	&& (Mod_LehrlingBei != 1)
 	{
-		Info_AddChoice 		(Info_Mod_Fore_Lehrer,B_BuildLearnString ("Essenz der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Fore_Lehrer_HEALTH_01);
+		Info_AddChoice 		(Info_Mod_Fore_Lehrer,B_BuildLearnString ("Essence of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Fore_Lehrer_HEALTH_01);
 	};
 		
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Extrakt der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Fore_Lehrer_Health_02);
+		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Extract of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Fore_Lehrer_Health_02);
 	};
 		
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Elixier der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Fore_Lehrer_Health_03);
+		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Elixir of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Fore_Lehrer_Health_03);
 	};
 		
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
@@ -126,42 +126,42 @@ FUNC VOID Info_Mod_Fore_Lehrer_Info()
 	&& (Mod_LehrlingBei != 1)
 	&& (Kapitel >= 4)
 	{
-		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Elixier des Lebens", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Fore_Lehrer_Perm_Health);
+		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Elixir of Life", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Fore_Lehrer_Perm_Health);
 	};
 		
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	&& (Mod_LehrlingBei != 1)
 	{
-		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Mana Essenz", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Fore_Lehrer_Mana_01);
+		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Mana Essence", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Fore_Lehrer_Mana_01);
 	};
 		
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Mana Extrakt", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Fore_Lehrer_Mana_02);
+		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Mana Extract", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Fore_Lehrer_Mana_02);
 	};
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Mana Elixier", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Fore_Lehrer_Mana_03);
+		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Mana Elixir", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Fore_Lehrer_Mana_03);
 	};
 		
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	&& (Kapitel >= 4)
 	{
-		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Elixier des Geistes", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Fore_Lehrer_Perm_Mana);
+		Info_AddChoice	  (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Elixir of Spirit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Fore_Lehrer_Perm_Mana);
 	};                                                                                                                                                                                   
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE) 
 	&& (Kapitel >= 4)
 	{                                                                                                                                                                                     
-		Info_AddChoice (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Elixier der Stärke", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Fore_Lehrer_PermSTR);               
+		Info_AddChoice (Info_Mod_Fore_Lehrer, B_BuildLearnString ("Elixir of Strength", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Fore_Lehrer_PermSTR);               
 	};
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	&& (Kapitel >= 4)
 	{
-		Info_AddChoice (Info_Mod_Fore_Lehrer,B_BuildLearnString ("Elixier der Geschicklichkeit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Fore_Lehrer_Perm_DEX);		
+		Info_AddChoice (Info_Mod_Fore_Lehrer,B_BuildLearnString ("Elixir of Dexterity", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Fore_Lehrer_Perm_DEX);		
 	};
 };
 FUNC VOID Info_Mod_Fore_Lehrer_BACK()

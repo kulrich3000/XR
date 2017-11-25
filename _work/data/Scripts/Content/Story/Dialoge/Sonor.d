@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sonor_Hi (C_INFO)
 	information	= Info_Mod_Sonor_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Sonor_Hi_Condition()
@@ -18,9 +18,9 @@ FUNC VOID Info_Mod_Sonor_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Sonor_Hi_06_00"); //Sonor. Jäger und Anwärter für meine Aufnahme bei den Waldläufern.
-	AI_Output(hero, self, "Info_Mod_Sonor_Hi_15_01"); //Du willst Waldläufer werden? Geht das?
-	AI_Output(self, hero, "Info_Mod_Sonor_Hi_06_02"); //Hab ich doch gesagt. Dafür sorge ich mit Baldur und noch einem im Lager für Fleisch und Felle.
+	AI_Output(self, hero, "Info_Mod_Sonor_Hi_06_00"); //Sonor. Hunters and candidates for my admission to the Rangers.
+	AI_Output(hero, self, "Info_Mod_Sonor_Hi_15_01"); //You want to be a ranger? Is that possible?
+	AI_Output(self, hero, "Info_Mod_Sonor_Hi_06_02"); //That's what I said. I'll make sure of that with Baldur and another one in the camp for flesh and skins.
 };
 
 INSTANCE Info_Mod_Sonor_CyrcoMine (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Sonor_CyrcoMine (C_INFO)
 	information	= Info_Mod_Sonor_CyrcoMine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Waidmann! Ich habe eine Mission. Bist du dabei?";
+	description	= "Hello Waidmann! I have a mission. Are you in?";
 };
 
 FUNC INT Info_Mod_Sonor_CyrcoMine_Condition()
@@ -44,15 +44,15 @@ FUNC INT Info_Mod_Sonor_CyrcoMine_Condition()
 
 FUNC VOID Info_Mod_Sonor_CyrcoMine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sonor_CyrcoMine_15_00"); //Hallo Waidmann! Ich habe eine Mission. Bist du dabei?
-	AI_Output(self, hero, "Info_Mod_Sonor_CyrcoMine_06_01"); //Aber ja doch. Bin noch warm von vorhin. Denen haben wir's gezeigt. Was liegt jetzt an?
-	AI_Output(hero, self, "Info_Mod_Sonor_CyrcoMine_15_02"); //Wir müssen zur Alten Mine. Irgendeine Höhle. Mehr weiß ich auch noch nicht.
-	AI_Output(self, hero, "Info_Mod_Sonor_CyrcoMine_06_03"); //Nur zu. Sag Bescheid, wenn's losgeht.
-	AI_Output(hero, self, "Info_Mod_Sonor_CyrcoMine_15_04"); //Mach ich.
+	AI_Output(hero, self, "Info_Mod_Sonor_CyrcoMine_15_00"); //Hello Waidmann! I have a mission. Are you in?
+	AI_Output(self, hero, "Info_Mod_Sonor_CyrcoMine_06_01"); //Oh, yes, you are. I'm still warm from earlier. We showed them. What's up now?
+	AI_Output(hero, self, "Info_Mod_Sonor_CyrcoMine_15_02"); //We have to get to the old mine. Some kind of cave. That's all I know.
+	AI_Output(self, hero, "Info_Mod_Sonor_CyrcoMine_06_03"); //Go right ahead. Let me know when it starts.
+	AI_Output(hero, self, "Info_Mod_Sonor_CyrcoMine_15_04"); //All right, I will.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Zelar_CyrcoMine))
 	{
-		B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "So, ich habe alles beisammen. Ausrüstung und zwei Mann. Sonor und Zelar werden mitgehen. Noch mal bei Cyrco vorbeischauen ...");
+		B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "So, I've got it all together. Equipment and two men. Sonor and Zelar will go with them. Have another look at Cyrco...");
 	};
 };
 
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Sonor_AlterMann (C_INFO)
 	information	= Info_Mod_Sonor_AlterMann_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wegen altem Mann im Wald fragen.";
+	description	= "Ask about old man in the woods.";
 };
 
 FUNC INT Info_Mod_Sonor_AlterMann_Condition()
@@ -82,54 +82,54 @@ FUNC VOID Info_Mod_Sonor_AlterMann_Info()
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN01");
 
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_00"); //Ahh, du meinst den alten Mann des Waldes. Ja, etwas weiß ich über ihn.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_01"); //Er soll Jahrhunderte alt sein und die Tiere des Waldes Rund um Khorata behüten.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_02"); //Zwar sagt man, er sei blind, jedoch gleichzeitig auch magisch begabt.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_03"); //Mehr fällt mir gerade nicht ein. Vielleicht weiß ein anderer mehr.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_00"); //Ahh, you mean the old man of the woods. Yeah, I know something about him.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_01"); //It is said to be centuries old and to protect the animals of the forest around Khorata.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_02"); //It is said that he is blind, but at the same time he has a magical talent.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_03"); //That's all I can think of right now. Maybe someone else knows more.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Von dem ersten Waldläufer erfuhr ich nicht viel Neues. Der alte Mann des Waldes, behütet die Tiere, er ist uralt, blind und magisch begabt. Vielleicht weiß ein anderer Waldläufer mehr.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "From the first ranger I didn't get much new information. The old man of the forest, protecting the animals, he is ancient, blind and magical. Maybe another ranger knows more.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 1)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN02");
 
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_04"); //Der alte Mann des Waldes? Ja, ich hörte er solle einst ein Diener Adanos gewesen sein.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_05"); //Wobei unklar ist, ob er ein Waldläufer war wie wir, ein Magier des Wassers, oder ein Verwandlungsmagier.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_06"); //Seine magischen Fähigkeiten, wie auch seine starke Bindung zur Tier- und Pflanzenwelt zeugen davon, dass er von allem etwas hat.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_04"); //The old man of the forest? Yes, I heard he was once a servant of Adano.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_05"); //It is unclear whether he was a ranger like us, a magician of water, or a transforming mage.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_06"); //His magical abilities, as well as his strong attachment to the animal and plant world are proof that he has something of everything.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Beim 2ten Waldläufer erfuhr ich auch nicht viel wissenswertes. Der alte Mann des Waldes soll Adanos und der Schöpfung verbunden sein, allem voran der Tier und Pflanzenwelt.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "At the 2nd ranger I also didn't learn much worth knowing. The old man of the forest is said to be connected with Adanos and creation, especially the animals and plants.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 2)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN03");
 
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_07"); //Tja, viel kann ich dir nicht über ihn verraten.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_08"); //Das Problem besteht auch darin, dass er mit keinem Menschen spricht, nicht mal mit uns, auch, wenn wir eigentlich ähnliche Ziele verfolgen.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_09"); //Allein mit den Tieren des Waldes unterhält er sich.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_10"); //Tja, wenn ich ein Keiler wäre, könnte ich dir bestimmt mehr über ihn verraten.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_07"); //Well, I can't tell you much about him.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_08"); //The problem is also that he does not talk to anyone, not even us, even if we are pursuing similar goals.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_09"); //Alone with the animals of the forest he entertains himself.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_10"); //Well, if I were a boar, I'm sure I could tell you more about him.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, das könnte ein wichtiger Hinweis gewesen sein. Der alte Mann des Waldes meidet Menschen gänzlich, spricht nur mit Tieren.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, this could have been an important clue. The old man of the forest completely avoids humans, only speaks to animals.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 3)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN04");
 
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_11"); //Der alte Mann des Waldes? Nun, er soll in enger Beziehung zur Tier- und Pflanzenwelt stehen.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_12"); //Man sagt, er leite Rudeltiere wie Keiler, oder Wölfe dazu an, den Wald gegen Eindringlinge zu beschützen.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_13"); //Selbst, so sagt man, fände man ihn häufig in Gestalt eines grünen Wolfes vor.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_11"); //The old man of the forest? Well, he's supposed to be closely related to the fauna and flora.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_12"); //It is said that he leads pack animals such as boar or wolves to protect the forest against intruders.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_13"); //Even it is said that it is often found in the shape of a green wolf.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Er soll vor allem auch größere Rudeltiere wie Keiler und Wölfe dazu anleiten den Wald gegen Eindringlinge zu beschützen.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Above all, he should also instruct larger pack animals such as boar and wolves to protect the forest against intruders.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 4)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN05");
 
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_14"); //Du interessierst dich für Geschichten über den alten Mann des Waldes?
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_15"); //Nun, viel weiß ich nicht über diesen mystischen Kauz.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_16"); //Er soll sich meistens im dunklen Wald aufhalten, aber auch immer in der Nähe von Gewässern, wie Seen.
-		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_17"); //Selten hat ihn jemand zu Gesicht bekommen ...
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_14"); //You're interested in stories about the old man of the forest?
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_15"); //Well, I don't know much about this mystical oddball.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_16"); //It is said to reside mostly in the dark forest, but also near water bodies such as lakes.
+		AI_Output(self, hero, "Info_Mod_Sonor_AlterMann_06_17"); //Rarely has someone seen him....
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Man findet ihn höchst wahrscheinlich im dichten Wald Khorata’s in der Nähe eines Sees.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "It is most likely to be found in Khorata's dense forest near a lake.");
 	};
 
 	Mod_BDT_AlterWaldMann += 1;
@@ -143,7 +143,7 @@ INSTANCE Info_Mod_Sonor_Heiltrank (C_INFO)
 	information	= Info_Mod_Sonor_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Sonor_Heiltrank_Condition()
@@ -162,31 +162,31 @@ FUNC VOID Info_Mod_Sonor_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Essenz der Heilung", Info_Mod_Sonor_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Essence of Healing", Info_Mod_Sonor_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Elixier der Heilung", Info_Mod_Sonor_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Elixir of Healing", Info_Mod_Sonor_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Extrakt der Heilung", Info_Mod_Sonor_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Extract of Healing", Info_Mod_Sonor_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Essenz der Heilung", Info_Mod_Sonor_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Essence of Healing", Info_Mod_Sonor_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Trank der leichten Heilung", Info_Mod_Sonor_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Drink of light healing", Info_Mod_Sonor_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Leichter Heiltrank", Info_Mod_Sonor_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Light healing potion", Info_Mod_Sonor_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Sonor_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Sonor_Heiltrank, "Drink of fast healing", Info_Mod_Sonor_Heiltrank_Health_05);
 	};
 };
 

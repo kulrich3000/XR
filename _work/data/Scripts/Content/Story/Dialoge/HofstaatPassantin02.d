@@ -18,7 +18,7 @@ FUNC INT Info_Mod_HofstaatPassantin02_Fluffy_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin02_Fluffy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Fluffy_16_00"); //Stimmt genau. Ob jemand, der nicht mal einen Hund abrichten kann wirklich einen Staat leiten sollte? Ich weiß nicht ...
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Fluffy_16_00"); //That's exactly right. If someone who can't even train a dog really should run a state? I don't know....
 
 	Mod_SL_PartFluffy = 5;
 
@@ -49,7 +49,7 @@ FUNC INT Info_Mod_HofstaatPassantin02_Lochgraeber_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin02_Lochgraeber_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Lochgraeber_16_00"); //Was ist das für ein Königreich, das sich im internationalen Lochgräbervergleich nicht halten kann!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Lochgraeber_16_00"); //What is this kingdom that can't hold its own in the international comparison of pit graves!
 
 	Mod_SL_PartLochgraeber = 4;
 
@@ -80,7 +80,7 @@ FUNC INT Info_Mod_HofstaatPassantin02_Geliebte_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin02_Geliebte_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Geliebte_16_00"); //Was ist das für ein Königreich, das sich im internationalen Lochgräbervergleich nicht halten kann!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Geliebte_16_00"); //What is this kingdom that can't hold its own in the international comparison of pit graves!
 
 	Mod_SL_PartGeliebte = 8;
 
@@ -111,7 +111,7 @@ FUNC INT Info_Mod_HofstaatPassantin02_Blind_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin02_Blind_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Blind_16_00"); //Was ist das denn für ein Königreich, ohne Export! Das geht doch gar nicht!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Blind_16_00"); //What kingdom without exports! You can't do that!
 
 	Mod_SL_PartBlind = 5;
 
@@ -142,7 +142,7 @@ FUNC INT Info_Mod_HofstaatPassantin02_Brunnen_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin02_Brunnen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Brunnen_16_00"); //Da hast du recht! Was ist denn das für ein König, der in so einer Ruine lebt??
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Brunnen_16_00"); //You got that right! What kind of king lives in ruins like this?
 
 	Mod_SL_PartBrunnen = 3;
 
@@ -173,11 +173,11 @@ FUNC INT Info_Mod_HofstaatPassantin02_Geschwaecht_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin02_Geschwaecht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Geschwaecht_16_00"); //Ja, du hast recht, ich fühle mich so ... geschwächt ... als wäre meine Motivation unterwandert und so.
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin02_Geschwaecht_16_00"); //Yeah, you're right, I feel so... weakened..... like my motivation's been infiltrated and everything.
 
 	Mod_SL_Schwaechen = 4;
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich habe den Hofstaat geschwächt und ihre Motivation unterwandert und so. Ich sollte jetzt zu Baal Namib zurück kehren.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "I weakened the court and undermined their motivation and so on. I should now return to Baal Namib.");
 
 	B_GivePlayerXP	(500);
 

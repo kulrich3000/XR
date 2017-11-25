@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Kagan_Hi (C_INFO)
 	information	= Info_Mod_Kagan_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, vertreibst du immer noch Sumpfkraut im Lager?";
+	description	= "So, are you still chasing swampweed in the camp?";
 };
 
 FUNC INT Info_Mod_Kagan_Hi_Condition()
@@ -16,53 +16,53 @@ FUNC INT Info_Mod_Kagan_Hi_Condition()
 
 FUNC VOID Info_Mod_Kagan_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kagan_Hi_15_00"); //Und, vertreibst du immer noch Sumpfkraut im Lager?
-	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_01"); //Ach, die Zeiten für den Sumpfkrauthandel im Neuen Lager sind schlecht, seitdem es Lee mit seinen neuen Regeln gelungen ist den Sumpfkrautkonsum größtenteils einzudämmen.
-	AI_Output(hero, self, "Info_Mod_Kagan_Hi_15_02"); //Und was machst du dann im Neuen Lager?
-	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_03"); //Ich habe den Auftrag bekommen Baal Isidro ins Sumpflager zurückzubringen.
-	AI_Output(hero, self, "Info_Mod_Kagan_Hi_15_04"); //Warum erfüllst du nicht einfach deinen Auftrag?
-	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_05"); //Und wie? Er sitzt doch in der Kneipe. Und da dürfen mittlerweile nur noch Söldner und Schürfer hinein.
-	AI_Output(hero, self, "Info_Mod_Kagan_Hi_15_06"); //Irgendwann muss er ja auch rauskommen. Spätestens, wenn ihm sein Gold ausgeht und er keinen Schnaps mehr bekommt.
-	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_07"); //Ach ja? Irgendjemand hat ihm kurze Zeit bevor die Barriere fiel einen Haufen Erz für sein Sumpfkraut gegeben. Und nach dem Fall der Barriere ist der Wert des Erzes wegen des nun offenen Handels um das 50fache angestiegen.
-	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_08"); //Es kann noch Monate, oder Jahre dauern, bis ihm das Erz ausgeht und er die Kneipe verlassen muss. Und bis dahin muss ich bleiben und warten, da ich mich ohne Isidro nicht im Lager blicken lassen kann.
+	AI_Output(hero, self, "Info_Mod_Kagan_Hi_15_00"); //So, are you still chasing swampweed in the camp?
+	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_01"); //Oh, the times for the swamp herb trade in the New Camp are bad, since Lee has succeeded in containing the swamp herb consumption to a large extent with his new rules.
+	AI_Output(hero, self, "Info_Mod_Kagan_Hi_15_02"); //Then what are you doing in the New Camp?
+	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_03"); //I got the order to return Baal Isidro to the bog camp.
+	AI_Output(hero, self, "Info_Mod_Kagan_Hi_15_04"); //Why don't you just do your job?
+	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_05"); //And how? He's in the pub, isn't he? And now only mercenaries and prospectors are allowed in.
+	AI_Output(hero, self, "Info_Mod_Kagan_Hi_15_06"); //He's gotta come out sometime. At the latest when he runs out of gold and doesn't get any more booze.
+	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_07"); //Oh, yeah? Someone gave him a bunch of ore for his swampweed just before the barrier fell. And after the fall of the barrier, the value of the ore has increased by a factor of 50 due to the now open trade.
+	AI_Output(self, hero, "Info_Mod_Kagan_Hi_13_08"); //It can take months or years before he runs out of ore and has to leave the pub. And until then I have to stay and wait, because without Isidro I cannot be seen in the camp.
 
 	Info_ClearChoices	(Info_Mod_Kagan_Hi);
 
-	Info_AddChoice	(Info_Mod_Kagan_Hi, "Interessiert mich nicht.", Info_Mod_Kagan_Hi_B);
-	Info_AddChoice	(Info_Mod_Kagan_Hi, "Vielleicht kann ich dir ja helfen ...", Info_Mod_Kagan_Hi_A);
+	Info_AddChoice	(Info_Mod_Kagan_Hi, "I'm not interested.", Info_Mod_Kagan_Hi_B);
+	Info_AddChoice	(Info_Mod_Kagan_Hi, "Maybe I can help you....", Info_Mod_Kagan_Hi_A);
 };
 
 FUNC VOID Info_Mod_Kagan_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Kagan_Hi_B_15_00"); //Interessiert mich nicht.
+	AI_Output(hero, self, "Info_Mod_Kagan_Hi_B_15_00"); //I'm not interested.
 	
 	Info_ClearChoices	(Info_Mod_Kagan_Hi);
 };
 
 FUNC VOID Info_Mod_Kagan_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Kagan_Hi_A_15_00"); //Vielleicht kann ich dir ja helfen ...
-	AI_Output(self, hero, "Info_Mod_Kagan_Hi_A_13_01"); //(erfreut) Wirklich?
+	AI_Output(hero, self, "Info_Mod_Kagan_Hi_A_15_00"); //Maybe I can help you....
+	AI_Output(self, hero, "Info_Mod_Kagan_Hi_A_13_01"); //(joyous) Really?
 
 	Mod_SLD_Kagan = 1;
 	
 	Info_ClearChoices	(Info_Mod_Kagan_Hi);
 
-	Info_AddChoice	(Info_Mod_Kagan_Hi, "Klar, aber ich will etwas dafür haben.", Info_Mod_Kagan_Hi_D);
-	Info_AddChoice	(Info_Mod_Kagan_Hi, "Klar, ich bekomme ihn schon irgendwie aus der Kneipe.", Info_Mod_Kagan_Hi_C);
+	Info_AddChoice	(Info_Mod_Kagan_Hi, "Sure, but I want something in return.", Info_Mod_Kagan_Hi_D);
+	Info_AddChoice	(Info_Mod_Kagan_Hi, "Sure, I'll get him out of the bar somehow.", Info_Mod_Kagan_Hi_C);
 };
 
 FUNC VOID Info_Mod_Kagan_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Kagan_Hi_D_15_00"); //Klar, aber ich will etwas dafür haben.
-	AI_Output(self, hero, "Info_Mod_Kagan_Hi_D_13_01"); //Ich gebe dir alles Sumpfkraut, dass ich noch bei mir habe, wenn du ihn aus der Kneipe holst.
+	AI_Output(hero, self, "Info_Mod_Kagan_Hi_D_15_00"); //Sure, but I want something in return.
+	AI_Output(self, hero, "Info_Mod_Kagan_Hi_D_13_01"); //I'll give you all the marshmallow I have left with me when you get him out of the pub.
 	
 	Info_ClearChoices	(Info_Mod_Kagan_Hi);
 };
 
 FUNC VOID Info_Mod_Kagan_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Kagan_Hi_C_15_00"); //Klar, ich bekomme ihn schon irgendwie aus der Kneipe.
+	AI_Output(hero, self, "Info_Mod_Kagan_Hi_C_15_00"); //Sure, I'll get him out of the bar somehow.
 	
 	Info_ClearChoices	(Info_Mod_Kagan_Hi);
 };
@@ -87,9 +87,9 @@ FUNC INT Info_Mod_Kagan_Isidro_Condition()
 
 FUNC VOID Info_Mod_Kagan_Isidro_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kagan_Isidro_13_00"); //Ahh, da ist er ja endlich. (zum Helden) Hier hast du mein Sumpfkraut als Dank für deine Tat.
+	AI_Output(self, hero, "Info_Mod_Kagan_Isidro_13_00"); //Ahh, there he is at last. Here's my swampweed to thank you for what you've done.
 
-	B_ShowGivenThings	("16 Stängel Sumpfkraut erhalten");
+	B_ShowGivenThings	("16 stems of bog cabbage preserved");
 
 	CreateInvItems	(hero, ItMi_Addon_Joint_01, 7);
 	CreateInvItems	(hero, ItMi_Addon_Joint_02, 6);
@@ -97,7 +97,7 @@ FUNC VOID Info_Mod_Kagan_Isidro_Info()
 
 	AI_TurnToNpc	(self, Mod_1118_PSINOV_BaalIsidro_MT);
 
-	AI_Output(self, hero, "Info_Mod_Kagan_Isidro_13_01"); //(zu Isidro bissig) So, und nun geht es zurück zu unserem Lager.
+	AI_Output(self, hero, "Info_Mod_Kagan_Isidro_13_01"); //(Biting for Isidro) So, and now it goes back to our camp.
 
 	B_GivePlayerXP	(200);
 

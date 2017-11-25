@@ -41,7 +41,7 @@ FUNC VOID GILDENSTORY_PIR ()
 
 			if (Mod_SkipGreg_Counter == 1)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_00"); //(brüllt laut) Halt! Skip!
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_00"); //(roars loudly) Stop! Skip!
 			};
 
 			if (Mod_SkipGreg_Counter == 6)
@@ -49,106 +49,106 @@ FUNC VOID GILDENSTORY_PIR ()
 				AI_TurnToNpc	(Mod_764_PIR_Greg_AW, Mod_775_PIR_Skip_AW);
 				AI_TurnToNpc	(Mod_775_PIR_Skip_AW, Mod_764_PIR_Greg_AW);
 
-				AI_Output(Mod_775_PIR_Skip_AW, NULL, "Info_Mod_SkipGreg_08_01"); //Käpt'n?
+				AI_Output(Mod_775_PIR_Skip_AW, NULL, "Info_Mod_SkipGreg_08_01"); //Captain?
 			};
 
 			if (Mod_SkipGreg_Counter == 11)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_02"); //Du solltest doch meinen Kompass suchen. Hast du ihn gefunden?
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_02"); //You were supposed to be looking for my compass. Did you find him?
 			};
 
 			if (Mod_SkipGreg_Counter == 16)
 			{
-				AI_Output(Mod_775_PIR_Skip_AW, NULL, "Info_Mod_SkipGreg_08_03"); //Tschuldigung, Käpt'n. Das hab ich irgendwie vergessen.
+				AI_Output(Mod_775_PIR_Skip_AW, NULL, "Info_Mod_SkipGreg_08_03"); //Sorry, Captain. I kind of forgot.
 			};
 
 			if (Mod_SkipGreg_Counter == 21)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_04"); //Vergessen? Was, wenn ich den auch vergesse und wir sind auf hoher See.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_04"); //Forgotten? What if I forget him, too, and we're on the high seas.
 			};
 
 			if (Mod_SkipGreg_Counter == 26)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_05"); //(laut) Ich werde dich kielholen lassen!
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_05"); //I'll have you keelhauled!
 			};
 
 			if (Mod_SkipGreg_Counter == 31)
 			{
-				AI_Output(Mod_775_PIR_Skip_AW, NULL, "Info_Mod_SkipGreg_08_06"); //Erbarmen Käpt'n. Ich hab doch schon am meisten zu tun im Lager ...
+				AI_Output(Mod_775_PIR_Skip_AW, NULL, "Info_Mod_SkipGreg_08_06"); //Mercy captain. I've got a lot of work to do in the warehouse...
 			};
 
 			if (Mod_SkipGreg_Counter == 36)
 			{
 				AI_TurnToNpc	(hero, Mod_775_PIR_Skip_AW);
 
-				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_07"); //Du am meisten? Das seh ich aber anders ...
+				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_07"); //You the most? I don't see it that way...
 			};
 
 			if (Mod_SkipGreg_Counter == 41)
 			{
 				AI_TurnToNpc	(Mod_764_PIR_Greg_AW, hero);
 
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_08"); //Mach du das. Auf dich kann man sich wenigstens verlassen.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_08"); //You do that. At least you can be relied on.
 			};
 
 			if (Mod_SkipGreg_Counter == 46)
 			{
-				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_09"); //Aha. Gut, dass du das merkst. Wo soll ich suchen?
+				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_09"); //Uh-huh. I'm glad you noticed. Where should I look?
 			};
 
 			if (Mod_SkipGreg_Counter == 51)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_10"); //Irgendwo drüben am anderen Strand. Wo du den Sextant gefunden hast. Wahrscheinlich in der Höhle.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_10"); //Somewhere over on the other beach. Where you found the sextant. Probably in the cave.
 			};
 
 			if (Mod_SkipGreg_Counter == 56)
 			{
-				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_11"); //Du verlierst gerne Sachen?
+				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_11"); //You like to lose things?
 			};
 
 			if (Mod_SkipGreg_Counter == 61)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_12"); //Schwätzer! Ich war drüben, weil ich neugierig war, was mit den Höhlen ist.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_12"); //Chatter! I was over there because I was curious about what happened to the caves.
 			};
 
 			if (Mod_SkipGreg_Counter == 66)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_13"); //In einer kleineren ist eine seltsame schwarze Figur.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_13"); //In a smaller one is a strange black figure.
 			};
 
 			if (Mod_SkipGreg_Counter == 71)
 			{
-				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_14"); //Ich weiß. Das ist eine Beliarstatue. Mich wundert nur, wie die dort hingskommen ist ...
+				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_14"); //I know. It's a Beliar statue. I'm just wondering how she got there...
 			};
 
 			if (Mod_SkipGreg_Counter == 76)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_15"); //Ja, und in der großen Höhle hinten wurde ich von einem Pulk Skelette angegriffen.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_15"); //Yes, and in the big cave behind I was attacked by a group of skeletons.
 			};
 
 			if (Mod_SkipGreg_Counter == 81)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_16"); //Allesamt kräftige, blitzschnelle Kerle. Mir blieb nur die Flucht. Dabei hab ich wohl den Kompass verloren.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_16"); //All of them strong, lightning fast guys. All I had left was to escape. I must have lost the compass.
 			};
 
 			if (Mod_SkipGreg_Counter == 86)
 			{
-				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_17"); //Verstehe. Sind die Skelette noch dort?
+				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_17"); //I see. Are the skeletons still there?
 			};
 
 			if (Mod_SkipGreg_Counter == 91)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_18"); //Ich denke schon. Und wahrscheinlich ein paar Warane. Die von der roten Sorte. Also zieh dich warm an, min Jung.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_18"); //I think so, yes. And probably some monitor lizards. The red kind. So dress warm, min boy.
 			};
 
 			if (Mod_SkipGreg_Counter == 96)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_19"); //Noch was. Ich glaube Samuel hat noch ein paar Eisspruchrollen rumliegen. Die könnten dir helfen.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_SkipGreg_01_19"); //One more thing. I think Samuel's got some more ice rink rolls lying around. They could help you.
 			};
 
 			if (Mod_SkipGreg_Counter == 101)
 			{
-				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_20"); //Werde mal nachschauen. Bis später.
+				AI_Output(hero, NULL, "Info_Mod_SkipGreg_15_20"); //I'll have a look. See you later.
 			};
 
 			if (Mod_SkipGreg_Counter == 106)
@@ -164,7 +164,7 @@ FUNC VOID GILDENSTORY_PIR ()
 
 				Log_CreateTopic	(TOPIC_MOD_GREG_KOMPASS, LOG_MISSION);
 				B_SetTopicStatus	(TOPIC_MOD_GREG_KOMPASS, LOG_RUNNING);
-				B_LogEntry	(TOPIC_MOD_GREG_KOMPASS, "Greg braucht noch seinen Kompass, welcher vermutlich in der großen Höhle am Südstrand liegt.");
+				B_LogEntry	(TOPIC_MOD_GREG_KOMPASS, "Greg still needs his compass, which is probably located in the big cave on the south beach.");
 			};
 
 			Mod_SkipGreg_Counter += 1;
@@ -176,7 +176,7 @@ FUNC VOID GILDENSTORY_PIR ()
 		{
 			Mod_SamuelIstWeg = 1;
 
-			B_LogEntry	(TOPIC_MOD_HENRY_ENTERTRUPP, "Hm ... es scheint so, als wäre Samuel verschwunden. Ich sollte mich mal in seiner Höhle umsehen ...");
+			B_LogEntry	(TOPIC_MOD_HENRY_ENTERTRUPP, "Hm... it seems Samuel has disappeared. I should take a look around his cave....");
 		};
 		
 		// Aberglaube

@@ -18,18 +18,18 @@ FUNC INT Info_Mod_Hexe_PAT_Fokus05_Hi_Condition()
 
 FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_17_00"); //Na du erbärmlicher Schlappschwanz. Jämmerlicher Versager, du. Willst du dich vielleicht mit mir anlegen?
+	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_17_00"); //Well, you pathetic wimp. Pitiful failure, you. Are you trying to mess with me?
 
 	Info_ClearChoices	(Info_Mod_Hexe_PAT_Fokus05_Hi);
 
-	Info_AddChoice	(Info_Mod_Hexe_PAT_Fokus05_Hi, "Ich werde dir mal dein Schandmaul stopfen, du alte Vettel. Komm her!", Info_Mod_Hexe_PAT_Fokus05_Hi_B);
-	Info_AddChoice	(Info_Mod_Hexe_PAT_Fokus05_Hi, "Beruhige dich, gute Frau. Ich will nur diesen Fokus hier holen.", Info_Mod_Hexe_PAT_Fokus05_Hi_A);
+	Info_AddChoice	(Info_Mod_Hexe_PAT_Fokus05_Hi, "I'm gonna shove your disgraceful mouth, you old hag. Come here!", Info_Mod_Hexe_PAT_Fokus05_Hi_B);
+	Info_AddChoice	(Info_Mod_Hexe_PAT_Fokus05_Hi, "Calm down, good woman. I just want to get this focus here.", Info_Mod_Hexe_PAT_Fokus05_Hi_A);
 };
 
 FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Hexe_PAT_Fokus05_Hi_B_15_00"); //Ich werde dir mal dein Schandmaul stopfen, du alte Vettel. Komm her!
-	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_B_17_01"); //Das kannst du haben, Großmaul!
+	AI_Output(hero, self, "Info_Mod_Hexe_PAT_Fokus05_Hi_B_15_00"); //I'm gonna shove your disgraceful mouth, you old hag. Come here!
+	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_B_17_01"); //You can have that, big mouth!
 
 	Info_ClearChoices	(Info_Mod_Hexe_PAT_Fokus05_Hi);
 
@@ -42,8 +42,8 @@ FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_B()
 
 FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Hexe_PAT_Fokus05_Hi_A_15_00"); //Beruhige dich, gute Frau. Ich will nur diesen Fokus hier holen.
-	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_A_17_01"); //Nur über meine Leiche.
+	AI_Output(hero, self, "Info_Mod_Hexe_PAT_Fokus05_Hi_A_15_00"); //Calm down, good woman. I just want to get this focus here.
+	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_A_17_01"); //Over my dead body.
 
 	Info_ClearChoices	(Info_Mod_Hexe_PAT_Fokus05_Hi);
 
@@ -52,7 +52,7 @@ FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_A()
 	self.guild = GIL_STRF;
 	Npc_SetTrueGuild	(self, GIL_STRF);
 
-	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Von so einer Zicke lass ich mich doch nicht provozieren. Vernünftig wie ich bin.");
+	B_LogEntry	(TOPIC_MOD_FM_FOKI, "I won't let a bitch like that provoke me. Reasonable as I am.");
 
 	Mod_PAT_Focus_05 = 1;
 };

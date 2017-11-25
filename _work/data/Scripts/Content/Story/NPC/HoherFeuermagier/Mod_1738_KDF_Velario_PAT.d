@@ -1,7 +1,7 @@
 instance Mod_1738_KDF_Velario_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Velario";	
+	name 		= "velario";	
 	guild 		= GIL_vlk;
 	id 			= 1738;
 	voice 		= 6;

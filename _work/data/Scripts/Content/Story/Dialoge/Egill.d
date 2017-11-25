@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Egill_Hi (C_INFO)
 	information	= Info_Mod_Egill_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, was machst du hier so?";
+	description	= "Hello, what are you doing here?";
 };
 
 FUNC INT Info_Mod_Egill_Hi_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Egill_Hi_Condition()
 
 FUNC VOID Info_Mod_Egill_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Egill_Hi_15_00"); //Was machst du hier? Das ist eine gefährliche Gegend.
-	AI_Output(self, hero, "Info_Mod_Egill_Hi_37_01"); //(traumatisiert) Was ... was war nur in mich gefahren?! Ich ... ich habe ihn umgebracht. Meinen eigenen Bruder ...
+	AI_Output(hero, self, "Info_Mod_Egill_Hi_15_00"); //What are you doing here? This is a dangerous area.
+	AI_Output(self, hero, "Info_Mod_Egill_Hi_37_01"); //(traumatized) What... what had gotten into me?! l-- I killed him. My own brother...
 };
 
 INSTANCE Info_Mod_Egill_Ehnim01 (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Egill_Ehnim01 (C_INFO)
 	information	= Info_Mod_Egill_Ehnim01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dein Bruder ist nicht tot.";
+	description	= "Your brother's not dead.";
 };
 
 FUNC INT Info_Mod_Egill_Ehnim01_Condition()
@@ -46,23 +46,23 @@ FUNC INT Info_Mod_Egill_Ehnim01_Condition()
 
 FUNC VOID Info_Mod_Egill_Ehnim01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Egill_Ehnim01_15_00"); //Dein Bruder ist nicht tot.
-	AI_Output(self, hero, "Info_Mod_Egill_Ehnim01_37_01"); //(verwirrt) Was ... was sagst du? Er lebt?
-	AI_Output(hero, self, "Info_Mod_Egill_Ehnim01_15_02"); //Ja, du hast ihn nur verletzt, nicht getötet.
+	AI_Output(hero, self, "Info_Mod_Egill_Ehnim01_15_00"); //Your brother's not dead.
+	AI_Output(self, hero, "Info_Mod_Egill_Ehnim01_37_01"); //What...? What do you say? He's alive?
+	AI_Output(hero, self, "Info_Mod_Egill_Ehnim01_15_02"); //Yeah, you just hurt him, not killed him.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Ehnim_Hi))
 	{
 		if (!Npc_KnowsInfo(hero, Info_Mod_Telbor_AllZombies))
 		{
-			AI_Output(hero, self, "Info_Mod_Egill_Ehnim01_15_03"); //Er sitzt beim Lagerfeuer und erholt sich.
+			AI_Output(hero, self, "Info_Mod_Egill_Ehnim01_15_03"); //He sits by the campfire and recovers.
 		}
 		else
 		{
-			AI_Output(hero, self, "Info_Mod_Egill_Ehnim01_15_04"); //Er sitzt mit Telbor in der Stadt.
+			AI_Output(hero, self, "Info_Mod_Egill_Ehnim01_15_04"); //He's in town with Telbor.
 		};
 	};
 
-	AI_Output(self, hero, "Info_Mod_Egill_Ehnim01_37_05"); //(erfreut, erleichtert) Ich ... ich weiß nicht, was ich sagen soll. Vielen Dank für die Nachricht. Ich laufe sofort zurück, um ihn gesund zu pflegen.
+	AI_Output(self, hero, "Info_Mod_Egill_Ehnim01_37_05"); //(joyful, relieved) I.... I don't know what to say. Thank you for the message. I'll walk right back to look after him.
 
 	AI_StopProcessInfos	(self);
 
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Egill_Ehnim02 (C_INFO)
 	information	= Info_Mod_Egill_Ehnim02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du kannst nichts dafür. Es waren finstere Mächte, die dich lenkten.";
+	description	= "It's not your fault. It was dark powers that guided you.";
 };
 
 FUNC INT Info_Mod_Egill_Ehnim02_Condition()
@@ -102,11 +102,11 @@ FUNC INT Info_Mod_Egill_Ehnim02_Condition()
 
 FUNC VOID Info_Mod_Egill_Ehnim02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Egill_Ehnim02_15_00"); //Du kannst nichts dafür. Es waren finstere Mächte, die dich lenkten.
-	AI_Output(self, hero, "Info_Mod_Egill_Ehnim02_37_01"); //Finstere Mächte, sagst du ...?! Ja, dieser verfluchte Pilger. Er ist an allem Schuld. Wenn ich ihn in die Finger bekomme ...
-	AI_Output(hero, self, "Info_Mod_Egill_Ehnim02_15_02"); //Jetzt gehst du erst mal zum Hof zurück. Du wirst dort noch gebraucht. Um den Pilger kümmere ich mich.
-	AI_Output(self, hero, "Info_Mod_Egill_Ehnim02_37_03"); //(etwas ruhiger) Ja, du hast wohl recht, sie brauchen mich. (wieder energischer) Ja, aber finde diesen Schurken!
-	AI_Output(self, hero, "Info_Mod_Egill_Ehnim02_37_04"); //Bereite ihm einen langsamen, schmerzhaften Tod, diesem Unhold, auf dass er im Reich Beliars schmore.
+	AI_Output(hero, self, "Info_Mod_Egill_Ehnim02_15_00"); //It's not your fault. It was dark powers that guided you.
+	AI_Output(self, hero, "Info_Mod_Egill_Ehnim02_37_01"); //Sinister forces, you say...?! Yes, that damn pilgrim. It's all his fault. If I can get my hands on him...
+	AI_Output(hero, self, "Info_Mod_Egill_Ehnim02_15_02"); //Now you go back to the yard. You're still needed there. I'll take care of the pilgrim.
+	AI_Output(self, hero, "Info_Mod_Egill_Ehnim02_37_03"); //(slightly calmer) Yes, I suppose you're right, they need me. (again) Yes, but find this scoundrel!
+	AI_Output(self, hero, "Info_Mod_Egill_Ehnim02_37_04"); //Prepare him a slow and painful death, this fiend, that he may stew in the kingdom of Beliar.
 
 	AI_StopProcessInfos	(self);
 
@@ -123,7 +123,7 @@ INSTANCE Info_Mod_Egill_Ehnim03 (C_INFO)
 	information	= Info_Mod_Egill_Ehnim03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ganz recht. Und jetzt musst du auch die Verantwortung dafür tragen.";
+	description	= "Quite so. And now you have to take responsibility for it.";
 };
 
 FUNC INT Info_Mod_Egill_Ehnim03_Condition()
@@ -139,8 +139,8 @@ FUNC INT Info_Mod_Egill_Ehnim03_Condition()
 
 FUNC VOID Info_Mod_Egill_Ehnim03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Egill_Ehnim03_15_00"); //Ganz recht. Und jetzt musst du auch die Verantwortung dafür tragen.
-	AI_Output(self, hero, "Info_Mod_Egill_Ehnim03_37_01"); //(resigniert) Ja ... ja, du hast Recht.
+	AI_Output(hero, self, "Info_Mod_Egill_Ehnim03_15_00"); //Quite so. And now you have to take responsibility for it.
+	AI_Output(self, hero, "Info_Mod_Egill_Ehnim03_37_01"); //(resigned) Yes... Yeah, you're right.
 
 	AI_StopProcessInfos	(self);
 

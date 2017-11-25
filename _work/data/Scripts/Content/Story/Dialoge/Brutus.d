@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Brutus_Veronica_Condition()
 
 FUNC VOID Info_Mod_Brutus_Veronica_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brutus_Veronica_08_00"); //(wütend) Du wagst es meine Frau zu belästigen?! Mach, dass du raus kommst, dreckiger Spanner, sonst mach ich dir Beine ...
+	AI_Output(self, hero, "Info_Mod_Brutus_Veronica_08_00"); //You dare bother my wife?! Get out of here, you filthy peeping Tom, or I'll break your legs...
 
 	AI_ReadyMeleeWeapon	(self);
 
@@ -47,7 +47,7 @@ FUNC INT Info_Mod_Brutus_AlvarKristall_Condition()
 
 FUNC VOID Info_Mod_Brutus_AlvarKristall_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall_08_00"); //Hey, was hast du vor du Schuft. Erst die Frauen bedrängen und dann noch unglaubliche Lügen verbreiten.
+	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall_08_00"); //Hey, what are you up to, you bastard? First they crowd the women and then spread incredible lies.
 
 	AI_StopProcessInfos	(self);
 };
@@ -73,8 +73,8 @@ FUNC INT Info_Mod_Brutus_AlvarKristall2_Condition()
 
 FUNC VOID Info_Mod_Brutus_AlvarKristall2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall2_08_00"); //Magischer Kristall?! Blödsinn. Nur ein dummer Stein, nichts magisches. Alles nur ausgedacht und erfunden.
-	AI_Output(hero, self, "Info_Mod_Brutus_AlvarKristall2_15_01"); //Nun, dann sollte ich wohl das Irrlicht noch einmal zum Einsatz bringen.
+	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall2_08_00"); //Magic crystal?! Bullshit. Just a stupid stone, nothing magical. All made up and invented.
+	AI_Output(hero, self, "Info_Mod_Brutus_AlvarKristall2_15_01"); //Well, then I should probably use the Night Wisp again.
 
 	AI_StopProcessInfos	(self);
 
@@ -102,11 +102,11 @@ FUNC INT Info_Mod_Brutus_AlvarKristall3_Condition()
 
 FUNC VOID Info_Mod_Brutus_AlvarKristall3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall3_08_00"); //Das beweist gar nichts. Alles nur billige Taschenspielertricks des Fremden.
-	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall3_08_01"); //Will doch ernsthaft behaupten, dass die arme, untadelige Serra zu so etwas schlimmen fähig wäre.
-	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall3_08_02"); //Der kommt hierher, stiftet Unruhe und verbreitet Lügen.
-	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall3_08_03"); //Ich sage, wir schmeißen ihn aus dem Dorf.
-	AI_Output(hero, self, "Info_Mod_Brutus_AlvarKristall3_15_04"); //Ja, aber es zeigt doch eindeutig ...
+	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall3_08_00"); //That doesn't prove anything. All cheap tricks of the stranger's hand.
+	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall3_08_01"); //Seriously claiming that poor, blameless Serra would be capable of such a thing.
+	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall3_08_02"); //He comes here, stirs up unrest and spreads lies.
+	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall3_08_03"); //I say we kick him out of the village.
+	AI_Output(hero, self, "Info_Mod_Brutus_AlvarKristall3_15_04"); //Yes, but it clearly shows...
 
 	AI_StopProcessInfos	(self);
 
@@ -133,11 +133,11 @@ FUNC INT Info_Mod_Brutus_AlvarKristall4_Condition()
 
 FUNC VOID Info_Mod_Brutus_AlvarKristall4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall4_08_00"); //Ha, habe ich dich doch noch gefunden, du Dreckssack. Du wirst für deine üblen Verleumdungen jetzt bezahlen.
-	AI_Output(hero, self, "Info_Mod_Brutus_AlvarKristall4_15_01"); //Warte! Serra und Malfama gehören dem Eriskult an und sie ...
-	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall4_08_02"); //Halt dein Maul, kein Wort will ich mehr hören! Jetzt wirst du sterben!
+	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall4_08_00"); //I found you, you scumbag. You're going to pay for your evil slander now.
+	AI_Output(hero, self, "Info_Mod_Brutus_AlvarKristall4_15_01"); //Wait! Serra and Malfama belong to the Eriskult and they...
+	AI_Output(self, hero, "Info_Mod_Brutus_AlvarKristall4_08_02"); //Shut your mouth, I don't want to hear another word! Now you're going to die!
 
-	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "So ist das also, Serra und Malfama gehören dem trügerischen Eriskult an. Nur mit der Macht des Tränenkristalls werde ich sie entlarven können. Höhle in Nordwestlicher Richtung ... Aber Augenblick ... Brutus ist mir gefolgt.");
+	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Serra and Malfama belong to the deceptive Eriskult. Only with the power of the crystal of tears will I be able to expose them. Cave in northwestern direction.... But wait a minute... Brutus followed me.");
 
 	AI_StopProcessInfos	(self);
 

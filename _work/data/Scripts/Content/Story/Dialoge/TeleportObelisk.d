@@ -6,7 +6,7 @@ INSTANCE Info_Mod_TeleportObelisk_PatherionKloster (C_INFO)
 	information	= Info_Mod_TeleportObelisk_PatherionKloster_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Kloster";
+	description	= "to the monastery";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_PatherionKloster_Condition()
@@ -36,7 +36,7 @@ INSTANCE Info_Mod_TeleportObelisk_ToPatherion (C_INFO)
 	information	= Info_Mod_TeleportObelisk_ToPatherion_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "von Khorinis nach Patherion";
+	description	= "from Khorinis to Patherion";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_ToPatherion_Condition()
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_TeleportObelisk_PatherionKapelle (C_INFO)
 	information	= Info_Mod_TeleportObelisk_PatherionKapelle_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zur Kapelle";
+	description	= "to the chapel";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_PatherionKapelle_Condition()
@@ -96,7 +96,7 @@ INSTANCE Info_Mod_TeleportObelisk_FromPatherion (C_INFO)
 	information	= Info_Mod_TeleportObelisk_FromPatherion_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Kloster in Khorinis";
+	description	= "to the monastery in Khorinis";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_FromPatherion_Condition()
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_TeleportObelisk_OWDemonTower (C_INFO)
 	information	= Info_Mod_TeleportObelisk_OWDemonTower_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum alten D‰monenturm";
+	description	= "to the old demon tower";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_OWDemonTower_Condition()
@@ -166,7 +166,7 @@ INSTANCE Info_Mod_TeleportObelisk_Oldcamp (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Oldcamp_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum alten Lager";
+	description	= "to the old warehouse";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Oldcamp_Condition()
@@ -205,7 +205,7 @@ INSTANCE Info_Mod_TeleportObelisk_Banditenlager (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Banditenlager_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Banditenlager";
+	description	= "To Bandit Camp";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Banditenlager_Condition()
@@ -244,7 +244,7 @@ INSTANCE Info_Mod_TeleportObelisk_RELBauernhof (C_INFO)
 	information	= Info_Mod_TeleportObelisk_RELBauernhof_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Bauernhof";
+	description	= "to the farm";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_RELBauernhof_Condition()
@@ -283,7 +283,7 @@ INSTANCE Info_Mod_TeleportObelisk_Gelato (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Gelato_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Dorf in Gelato";
+	description	= "to the village of Gelato";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Gelato_Condition()
@@ -322,7 +322,7 @@ INSTANCE Info_Mod_TeleportObelisk_Farm (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Farm_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Grossbauern";
+	description	= "to the big farmer";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Farm_Condition()
@@ -361,7 +361,7 @@ INSTANCE Info_Mod_TeleportObelisk_RELSee (C_INFO)
 	information	= Info_Mod_TeleportObelisk_RELSee_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum groﬂen See";
+	description	= "to the big lake";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_RELSee_Condition()
@@ -400,7 +400,7 @@ INSTANCE Info_Mod_TeleportObelisk_Hofstaat (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Hofstaat_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Hofstaat";
+	description	= "to the court";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Hofstaat_Condition()
@@ -439,7 +439,7 @@ INSTANCE Info_Mod_TeleportObelisk_Monastery (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Monastery_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Kloster";
+	description	= "to the monastery";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Monastery_Condition()
@@ -478,7 +478,7 @@ INSTANCE Info_Mod_TeleportObelisk_Khorata (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Khorata_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Marktplatz von Khorata";
+	description	= "to the market place of Khorata";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Khorata_Condition()
@@ -539,7 +539,7 @@ INSTANCE Info_Mod_TeleportObelisk_Moor (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Moor_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Moor";
+	description	= "to the moor";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Moor_Condition()
@@ -578,7 +578,7 @@ INSTANCE Info_Mod_TeleportObelisk_Newcamp (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Newcamp_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Neuen Lager";
+	description	= "to the new warehouse";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Newcamp_Condition()
@@ -617,7 +617,7 @@ INSTANCE Info_Mod_TeleportObelisk_PassOW (C_INFO)
 	information	= Info_Mod_TeleportObelisk_PassOW_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Pass im Minental";
+	description	= "to the Minental Pass";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_PassOW_Condition()
@@ -656,7 +656,7 @@ INSTANCE Info_Mod_TeleportObelisk_PassNW (C_INFO)
 	information	= Info_Mod_TeleportObelisk_PassNW_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Pass in Khorinis";
+	description	= "to the pass in Khorinis";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_PassNW_Condition()
@@ -695,7 +695,7 @@ INSTANCE Info_Mod_TeleportObelisk_RELPass (C_INFO)
 	information	= Info_Mod_TeleportObelisk_RELPass_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Pass in Relendel";
+	description	= "to the pass in Relendel";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_RELPass_Condition()
@@ -734,7 +734,7 @@ INSTANCE Info_Mod_TeleportObelisk_RELRaeuber (C_INFO)
 	information	= Info_Mod_TeleportObelisk_RELRaeuber_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum R‰uberlager";
+	description	= "to the robber camp";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_RELRaeuber_Condition()
@@ -773,7 +773,7 @@ INSTANCE Info_Mod_TeleportObelisk_Sonnenkreis (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Sonnenkreis_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Sonnenkreis";
+	description	= "to the solar circle";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Sonnenkreis_Condition()
@@ -812,7 +812,7 @@ INSTANCE Info_Mod_TeleportObelisk_Psicamp (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Psicamp_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Sumpflager";
+	description	= "to the swamp camp";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Psicamp_Condition()
@@ -851,7 +851,7 @@ INSTANCE Info_Mod_TeleportObelisk_Waldis (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Waldis_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Waldl‰uferlager";
+	description	= "to the Ranger camp";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Waldis_Condition()
@@ -890,7 +890,7 @@ INSTANCE Info_Mod_TeleportObelisk_Beliarfestung (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Beliarfestung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zur Beliarfestung";
+	description	= "to the Beliar fortress";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Beliarfestung_Condition()
@@ -929,7 +929,7 @@ INSTANCE Info_Mod_TeleportObelisk_Bergfestung (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Bergfestung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zur Bergfestung";
+	description	= "to the mountain fortress";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Bergfestung_Condition()
@@ -968,7 +968,7 @@ INSTANCE Info_Mod_TeleportObelisk_Seaport (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Seaport_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zur Hafenstadt";
+	description	= "to the harbour town";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Seaport_Condition()
@@ -1007,7 +1007,7 @@ INSTANCE Info_Mod_TeleportObelisk_Klosterruine (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Klosterruine_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zur Klosterruine";
+	description	= "to the monastery ruin";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Klosterruine_Condition()
@@ -1046,7 +1046,7 @@ INSTANCE Info_Mod_TeleportObelisk_Taverne (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Taverne_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zur Taverne";
+	description	= "to the tavern";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Taverne_Condition()
@@ -1085,7 +1085,7 @@ INSTANCE Info_Mod_TeleportObelisk_Xardas (C_INFO)
 	information	= Info_Mod_TeleportObelisk_Xardas_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zu Xardas";
+	description	= "to Xardas";
 };
 
 FUNC INT Info_Mod_TeleportObelisk_Xardas_Condition()

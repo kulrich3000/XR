@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ignaz_Hi (C_INFO)
 	information	= Info_Mod_Ignaz_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Ignaz_Hi_Condition()
@@ -18,55 +18,55 @@ FUNC VOID Info_Mod_Ignaz_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_01"); //Niemand im Besonderen - nur im Dunkeln pflügt der Vogel.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_15_02"); //Verstehe.
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_03"); //Schon lange her, dass jemand das zu mir gesagt hat! (lacht) Verhängnisvoll schwebt die Matratze über kaltem Wind.
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_04"); //Sag mal - hast du noch Bargeld?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_01"); //No one in particular - only in the dark does the bird plow.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_15_02"); //I see.
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_03"); //A long time ago, someone said that to me! (laughs) Fatal, the mattress floats over cold wind.
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_04"); //Do you have any more cash?
 
 	Info_ClearChoices	(Info_Mod_Ignaz_Hi);
 
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Das wird mir zu blöd.", Info_Mod_Ignaz_Hi_B);
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Du hast sie nicht mehr alle?", Info_Mod_Ignaz_Hi_A);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "This is getting too stupid.", Info_Mod_Ignaz_Hi_B);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "You're out of your mind?", Info_Mod_Ignaz_Hi_A);
 };
 
 FUNC VOID Info_Mod_Ignaz_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_B_15_00"); //Das wird mir zu blöd.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_B_15_00"); //This is getting too stupid.
 
 	Info_ClearChoices	(Info_Mod_Ignaz_Hi);
 };
 
 FUNC VOID Info_Mod_Ignaz_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_A_15_00"); //Du hast sie nicht mehr alle?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_A_14_01"); //Sie alle, von der Made bis zum Maultier, nennen mich verrückt.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_A_15_00"); //You're out of your mind?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_A_14_01"); //They all call me crazy, from the maggot to the mule.
 
 	Info_ClearChoices	(Info_Mod_Ignaz_Hi);
 
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Warum bist du verrückt?", Info_Mod_Ignaz_Hi_D);
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Kann man denn nichts dagegen tun?", Info_Mod_Ignaz_Hi_C);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Why are you crazy?", Info_Mod_Ignaz_Hi_D);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Isn't there anything you can do about it?", Info_Mod_Ignaz_Hi_C);
 };
 
 FUNC VOID Info_Mod_Ignaz_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_00"); //Warum bist du verrückt?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_01"); //Ich bin nicht verrückt!
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_02"); //Was denn dann?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_03"); //Ich bin unendlich weise! Denke in Zukunft und Vergangenheit, in alle erdenklichen Dimensionen - ein leckerer Eintopf, diese Schraube - verflucht, nimm deine Augen aus meinem Karren!
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_04"); //Ernst zu sein ist schwierig mit erhobenem Bein.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_05"); //Und woher stammt diese ... unendliche Weisheit?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_06"); //Du, gegen den Fußpilz hilft nur noch der Stein der Weisen.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_07"); //Du hast ihn gefunden, den Stein der Weisen?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_08"); //Gefunden? Gebraut, gegessen, verdaut, geschissen! Ahahaha!
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_09"); //(ernst) Mein Bruder läuft in den Abgrund.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_10"); //Wer ist dein Bruder?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_11"); //Constantino, der fahrende Reisende ... der reisende Fahrer? Hoffentlich gibt's Klopse dazu.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_12"); //Constantino ist dein Bruder?!
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_13"); //Ein Zwillingsgestirn, sagen die Grubenarbeiter.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_14"); //Und was meinst du damit, dass er in den Abgrund läuft?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_15"); //Ballspielen macht Spaß.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_16"); //Die unendliche Weisheit scheint dich ziemlich zu überfordern.
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_17"); //Für mich und meine drei Katzen ist das kein Problem.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_00"); //Why are you crazy?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_01"); //I'm not crazy!
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_02"); //What then?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_03"); //I am infinitely wise! Think in the future and the past, in all imaginable dimensions - a delicious stew, this screw - cursed, take your eyes out of my cart!
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_04"); //Seriousness is hard to take with your leg up.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_05"); //And where does this... infinite wisdom?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_06"); //You, only the Philosopher's Stone can help the athlete's foot.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_07"); //You found him, the Philosopher's Stone?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_08"); //Found it? Brewed, eaten, digested, shit! Ahahaha!
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_09"); //Seriously, my brother's running into the abyss.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_10"); //Who's your brother?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_11"); //Constantino, the travelling traveler.... the traveling driver? Hopefully there'll be meatballs.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_12"); //Constantino is your brother?!
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_13"); //A twin star, the miners say.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_14"); //And what do you mean, he's walking into the abyss?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_15"); //Playing ball is fun.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_16"); //The infinite wisdom seems to overtax you.
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_17"); //For me and my three cats this is no problem.
 
 	Mod_Ignaz_Bruder = 1;
 
@@ -75,13 +75,13 @@ FUNC VOID Info_Mod_Ignaz_Hi_D()
 
 FUNC VOID Info_Mod_Ignaz_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_C_15_00"); //Kann man denn nichts dagegen tun?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_C_14_01"); //Wieso? Im Speziellen ist es äußerst praktisch, verrückt zu sein. Eigentlich ist es verrückt, nicht verrückt zu sein. (lacht ausgelassen, dann sofort wieder nüchtern)
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_C_14_02"); //Das versteh ich jetzt nicht.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_C_15_00"); //Isn't there anything you can do about it?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_C_14_01"); //Why? In particular, it is very practical to be crazy. Actually, it's crazy not to be crazy. (laughs omitted, then immediately sober again)
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_C_14_02"); //I don't understand that now.
 
 	Info_ClearChoices	(Info_Mod_Ignaz_Hi);
 
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Warum bist du verrückt?", Info_Mod_Ignaz_Hi_D);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Why are you crazy?", Info_Mod_Ignaz_Hi_D);
 };
 
 INSTANCE Info_Mod_Ignaz_Handel (C_INFO)
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_Ignaz_Handel (C_INFO)
 	information	= Info_Mod_Ignaz_Handel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verkaufst du Alchemiezubehör?";
+	description	= "Are you selling alchemy supplies?";
 };
 
 FUNC INT Info_Mod_Ignaz_Handel_Condition()
@@ -102,11 +102,11 @@ FUNC INT Info_Mod_Ignaz_Handel_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Handel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Handel_15_00"); //Verkaufst du Alchemiezubehör?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Handel_14_01"); //Ja, ja, steht doch alles hier rum. Oder sehe ich das falsch?
+	AI_Output(hero, self, "Info_Mod_Ignaz_Handel_15_00"); //Are you selling alchemy supplies?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Handel_14_01"); //Yeah, yeah, it's all over here. Or am I mistaken?
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Ignaz kann mir Tränke verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Ignaz can sell me potions.");
 };
 
 INSTANCE Info_Mod_Ignaz_Lehrer (C_INFO)
@@ -117,7 +117,7 @@ INSTANCE Info_Mod_Ignaz_Lehrer (C_INFO)
 	information	= Info_Mod_Ignaz_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Ignaz_Lehrer_Condition()
@@ -127,9 +127,9 @@ FUNC INT Info_Mod_Ignaz_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Lehrer_15_00"); //Kannst du mir was beibringen?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Lehrer_14_01"); //Ich kann dir zeigen, wie du deine zehn Magier auf dem Spielfeld platzieren musst, um zu gewinnen! Und wie du Spruchrollen herstellst!
-	AI_Output(hero, self, "Info_Mod_Ignaz_Lehrer_15_02"); //Dann zeig mir lieber das mit den Spruchrollen.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Lehrer_15_00"); //Can you teach me something?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Lehrer_14_01"); //I can show you how to place your ten mages on the field to win! And how you make spell rolls!
+	AI_Output(hero, self, "Info_Mod_Ignaz_Lehrer_15_02"); //Then you better show me the one with the spell rolls.
 };
 
 INSTANCE Info_Mod_Ignaz_Irdorath (C_INFO)
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Ignaz_Irdorath (C_INFO)
 	information	= Info_Mod_Ignaz_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Meister von Alchemie, Tränke- und Pflanzenkunde.";
+	description	= "Hello Master of alchemy, potions and botany.";
 };
 
 FUNC INT Info_Mod_Ignaz_Irdorath_Condition()
@@ -154,11 +154,11 @@ FUNC INT Info_Mod_Ignaz_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Irdorath_15_00"); //Hallo Meister von Alchemie, Tränke- und Pflanzenkunde, ich wollte ...
-	AI_Output(self, hero, "Info_Mod_Ignaz_Irdorath_14_01"); //Tränke und Pflanzen? Nein, ich bin vor allem mit Spruchrollen und Tierbestandteilen vertraut ...
-	AI_Output(hero, self, "Info_Mod_Ignaz_Irdorath_15_02"); //Ach, hat sich erledigt.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Irdorath_15_00"); //Hello Master of alchemy, potions and botany, I wanted to...
+	AI_Output(self, hero, "Info_Mod_Ignaz_Irdorath_14_01"); //Drinks and plants? No, I am especially familiar with saying roles and animal components...
+	AI_Output(hero, self, "Info_Mod_Ignaz_Irdorath_15_02"); //Oh, it's done.
 
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Ignaz ist nicht der Alchemist, den ich suche ...");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Ignaz is not the alchemist I'm looking for...");
 };
 
 INSTANCE Info_Mod_Ignaz_Amulett (C_INFO)
@@ -169,7 +169,7 @@ INSTANCE Info_Mod_Ignaz_Amulett (C_INFO)
 	information	= Info_Mod_Ignaz_Amulett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit dir passiert?";
+	description	= "What's happened to you?";
 };
 
 FUNC INT Info_Mod_Ignaz_Amulett_Condition()
@@ -183,13 +183,13 @@ FUNC INT Info_Mod_Ignaz_Amulett_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Amulett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_00"); //Was ist mit dir passiert?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_01"); //(stöhnt) Mä ... Männner! Novizen ... sie haben mich ... bestohlen ... und geprügelt ...
-	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_02"); //Was haben sie gestohlen?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_03"); //Ein altes Amulett!
-	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_04"); //Das Amulett? Wo wollten sie damit hin?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_05"); //Ein Steinkreis ... großer Wald ... Ritual ...
-	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_06"); //Was ist los, alter Mann?
+	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_00"); //What's happened to you?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_01"); //(groans) Mä.... Men! novices they have me.... stolen from and beaten....
+	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_02"); //What did they steal?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_03"); //An old amulet!
+	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_04"); //The amulet? Where were they going with that?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_05"); //A stone circle.... large forest.... ritualistic
+	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_06"); //What's the matter, old man?
 
 	Wld_InsertNpc	(Mod_1995_UntoterNovize_01_NW, "BIGFARM");
 	Wld_InsertNpc	(Mod_1996_UntoterNovize_02_NW, "BIGFARM");
@@ -199,7 +199,7 @@ FUNC VOID Info_Mod_Ignaz_Amulett_Info()
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_BEL_SUCHE, "Ignaz ist dem Tode nahe und das Amulett wurde von Novizen gestohlen. Sie sind scheinbar bei einem Steinkreis in einem großen Wald.");
+	B_LogEntry	(TOPIC_MOD_BEL_SUCHE, "Ignaz is near death and the amulet was stolen by novices. They seem to be at a stone circle in a large forest.");
 };
 
 INSTANCE Info_Mod_Ignaz_MangelQuest (C_INFO)
@@ -210,7 +210,7 @@ INSTANCE Info_Mod_Ignaz_MangelQuest (C_INFO)
 	information	= Info_Mod_Ignaz_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fungizid kaufen (80 Gold)";
+	description	= "Buy fungicide (80 Gold)";
 };
 
 FUNC INT Info_Mod_Ignaz_MangelQuest_Condition()
@@ -239,7 +239,7 @@ INSTANCE Info_Mod_Ignaz_Flugblaetter (C_INFO)
 	information	= Info_Mod_Ignaz_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Ignaz_Flugblaetter_Condition()
@@ -256,15 +256,15 @@ FUNC INT Info_Mod_Ignaz_Flugblaetter_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Flugblaetter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Flugblaetter_15_00"); //Ich hab hier ein Flugblatt für dich.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Flugblaetter_15_00"); //I've got a flyer for you.
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ignaz_Flugblaetter_14_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Ignaz_Flugblaetter_14_01"); //Oh, thank you. Thank you. Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Ignaz_Flugblaetter_14_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Ignaz_Flugblaetter_14_02"); //Ah yes. Maybe I'll stop by Matteo's.
 
 	Mod_Flugblaetter += 1;
 };
@@ -277,7 +277,7 @@ INSTANCE Info_Mod_Ignaz_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Ignaz_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "I saw your poster on the billboard...";
 };
 
 FUNC INT Info_Mod_Ignaz_Anschlagtafel_Condition()
@@ -324,12 +324,12 @@ FUNC VOID Info_Mod_Ignaz_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItSc_Fear, Mod_Anschlagtafel_Khorinis_Ignaz_Angstzauber);
 		Npc_RemoveInvItems	(hero, ItMi_Sulfur, Mod_Anschlagtafel_Khorinis_Ignaz_Schwefel);
 
-		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_00"); //What? Show me... In fact, all of it. Very well done.
+		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_01"); //Here's your reward.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Ignaz_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_02"); //Nice doing business with you.
 
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Gold < 200)
 		{
@@ -367,12 +367,12 @@ INSTANCE Info_Mod_Ignaz_LearnScrolls (C_INFO)
 	information	= Info_Mod_Ignaz_LearnScrolls_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString ("Spruchrollen herstellen", B_GetLearnCostTalent (hero, NPC_TALENT_SCROLLS, 1));
+	description	= B_BuildLearnString ("produce idlers", B_GetLearnCostTalent (hero, NPC_TALENT_SCROLLS, 1));
 };
 
 FUNC INT Info_Mod_Ignaz_LearnScrolls_Condition()
 {
-	Info_Mod_Ignaz_LearnScrolls.description = B_BuildLearnString ("Spruchrollen herstellen", B_GetLearnCostTalent (hero, NPC_TALENT_SCROLLS, 1));
+	Info_Mod_Ignaz_LearnScrolls.description = B_BuildLearnString ("produce idlers", B_GetLearnCostTalent (hero, NPC_TALENT_SCROLLS, 1));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Ignaz_Lehrer))
 	&& (Npc_GetTalentSkill(hero, NPC_TALENT_SCROLLS) == FALSE)
@@ -385,10 +385,10 @@ FUNC VOID Info_Mod_Ignaz_LearnScrolls_Info()
 {
 	if (B_TeachPlayerTalentScrolls(self, hero, 1))
 	{
-		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_00"); //Um eine Spruchrolle herzustellen benötigst du zunächst einmal einen Rune der jeweiligen Magierichtung.
-		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_01"); //Die Wirkung der Rune übeträgst du mittels Runenstein und der Zutaten des Zaubers auf ein Blatt Papier.
-		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_02"); //Du kannst aber aus einer Rune nicht nur einen Zauber machen, sondern auch stärkere, jedoch brauchst du dafür das Rezept und auch alle Zutaten der einzelnen Zwischenschritte.
-		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_03"); //Wenn du also eine Feuerballspruchrolle herstellen willst, benötigst du alles, was du für die Feuerballspruchrolle brauchst ebenso wie alles für einen Feuerpfeil.
+		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_00"); //To create a spell roll you first need a rune of the respective magic direction.
+		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_01"); //You can practice the effect of the rune on a piece of paper using rune stone and the ingredients of the spell.
+		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_02"); //However, you can make a rune not only a spell, but also a stronger one, but you will need the recipe and all the ingredients of each intermediate step.
+		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_03"); //So if you want to create a fireball roll, you need everything you need for the fireball roll as well as everything you need for a fire arrow.
 	};
 };
 

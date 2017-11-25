@@ -19,50 +19,50 @@ FUNC INT Info_Mod_Asko_Trador_Condition()
 
 FUNC VOID Info_Mod_Asko_Trador_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Asko_Trador_05_00"); //Hallo. Was gibt es?
+	AI_Output(self, hero, "Info_Mod_Asko_Trador_05_00"); //Hello. What's up?
 
 	Info_ClearChoices	(Info_Mod_Asko_Trador);
 
-	Info_AddChoice	(Info_Mod_Asko_Trador, "Du bist nicht tot? Dann habe ich hier nichts mehr verloren.", Info_Mod_Asko_Trador_B);
-	Info_AddChoice	(Info_Mod_Asko_Trador, "Ein Verwandlungsmagier ist ermordet worden.", Info_Mod_Asko_Trador_A);
+	Info_AddChoice	(Info_Mod_Asko_Trador, "You're not dead? Then I have no business being here.", Info_Mod_Asko_Trador_B);
+	Info_AddChoice	(Info_Mod_Asko_Trador, "A transforming magician has been murdered.", Info_Mod_Asko_Trador_A);
 };
 
 FUNC VOID Info_Mod_Asko_Trador_B()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Trador_B_15_00"); //Du bist nicht tot? Dann habe ich hier nichts mehr verloren.
-	AI_Output(self, hero, "Info_Mod_Asko_Trador_B_05_01"); //(wütend) Was nimmst du dir heraus?
+	AI_Output(hero, self, "Info_Mod_Asko_Trador_B_15_00"); //You're not dead? Then I have no business being here.
+	AI_Output(self, hero, "Info_Mod_Asko_Trador_B_05_01"); //What are you taking out?
 
 	Info_ClearChoices	(Info_Mod_Asko_Trador);
 
-	Info_AddChoice	(Info_Mod_Asko_Trador, "Du kannst mir gar nichts. Ich werd' dann mal wieder.", Info_Mod_Asko_Trador_D);
-	Info_AddChoice	(Info_Mod_Asko_Trador, "War nicht so gemeint, tut mir Leid.", Info_Mod_Asko_Trador_C);
+	Info_AddChoice	(Info_Mod_Asko_Trador, "You can't do anything to me. I'll be back.", Info_Mod_Asko_Trador_D);
+	Info_AddChoice	(Info_Mod_Asko_Trador, "I didn't mean that, I'm sorry.", Info_Mod_Asko_Trador_C);
 };
 
 FUNC VOID Info_Mod_Asko_Trador_A()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Trador_A_15_00"); //Ein Verwandlungsmagier ist ermordet worden, und ich soll herausfinden, wer das ist.
-	AI_Output(self, hero, "Info_Mod_Asko_Trador_A_05_01"); //Das gibt es doch nicht! Und ich habe hier draußen nichts mitbekommen.
-	AI_Output(self, hero, "Info_Mod_Asko_Trador_A_05_02"); //Aber warum suchst du 	mich dafür auf?
-	AI_Output(hero, self, "Info_Mod_Asko_Trador_A_15_03"); //Ich muss schließlich nachsehen, wer verschwunden ist, und wer nur seit ein paar Tagen nicht im Dorf war.
-	AI_Output(self, hero, "Info_Mod_Asko_Trador_A_05_04"); //Natürlich, das hätte ich wissen müssen. Mir ist nichts zugestoßen.
-	AI_Output(hero, self, "Info_Mod_Asko_Trador_A_15_05"); //Okay, dann mache ich mich wieder auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Asko_Trador_A_15_00"); //A transforming magician has been murdered, and I'm here to find out who that is.
+	AI_Output(self, hero, "Info_Mod_Asko_Trador_A_05_01"); //There's no such thing! And I didn't notice anything out here.
+	AI_Output(self, hero, "Info_Mod_Asko_Trador_A_05_02"); //But why are you coming to see me?
+	AI_Output(hero, self, "Info_Mod_Asko_Trador_A_15_03"); //I have to see who's disappeared and who hasn't been to the village in a few days.
+	AI_Output(self, hero, "Info_Mod_Asko_Trador_A_05_04"); //Of course, I should have known that. Nothing happened to me.
+	AI_Output(hero, self, "Info_Mod_Asko_Trador_A_15_05"); //Okay, then I'll be on my way.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Asko lebt noch und studiert die Ruinen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Asko is still alive and studying the ruins.");
 
 	Info_ClearChoices	(Info_Mod_Asko_Trador);
 };
 
 FUNC VOID Info_Mod_Asko_Trador_D()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Trador_D_15_00"); //Du kannst mir gar nichts. Ich werd' dann mal wieder.
-	AI_Output(self, hero, "Info_Mod_Asko_Trador_D_05_01"); //Du bleibst schön hier und erzählst mir was los ist!
+	AI_Output(hero, self, "Info_Mod_Asko_Trador_D_15_00"); //You can't do anything to me. I'll be back.
+	AI_Output(self, hero, "Info_Mod_Asko_Trador_D_05_01"); //You stay right here and tell me what's going on!
 
 	Info_Mod_Asko_Trador_A();
 };
 
 FUNC VOID Info_Mod_Asko_Trador_C()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Trador_C_15_00"); //War nicht so gemeint, tut mir Leid.
+	AI_Output(hero, self, "Info_Mod_Asko_Trador_C_15_00"); //I didn't mean that, I'm sorry.
 
 	Info_Mod_Asko_Trador_A();
 };
@@ -75,7 +75,7 @@ INSTANCE Info_Mod_Asko_Per (C_INFO)
 	information	= Info_Mod_Asko_Per_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dir noch von Per ausrichten, dass er ein Päckchen für dich oben im Dorf hat.";
+	description	= "Per wants me to tell you he has a package for you up in the village.";
 };
 
 FUNC INT Info_Mod_Asko_Per_Condition()
@@ -88,10 +88,10 @@ FUNC INT Info_Mod_Asko_Per_Condition()
 
 FUNC VOID Info_Mod_Asko_Per_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Per_15_00"); //Ich soll dir noch von Per ausrichten, dass er ein Päckchen für dich oben im Dorf hat.
-	AI_Output(self, hero, "Info_Mod_Asko_Per_05_01"); //Danke für die Information. Ich werde mich gleich auf den Weg machen.
+	AI_Output(hero, self, "Info_Mod_Asko_Per_15_00"); //Per wants me to tell you he has a package for you up in the village.
+	AI_Output(self, hero, "Info_Mod_Asko_Per_05_01"); //Thanks for the information. I'll be right on my way.
 
-	B_LogEntry	(TOPIC_MOD_PER_ASKO, "Ich habe Asko davon in Kenntis gesetzt, dass Per ein Paket für ihn hat.");
+	B_LogEntry	(TOPIC_MOD_PER_ASKO, "I informed Asko that Per has a package for him.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -104,7 +104,7 @@ INSTANCE Info_Mod_Asko_Pruefung (C_INFO)
 	information	= Info_Mod_Asko_Pruefung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Genn schickt mich. Es geht um die Prüfung der Verwandlungsmagier.";
+	description	= "Genn sent me. It's about testing the transformative mages.";
 };
 
 FUNC INT Info_Mod_Asko_Pruefung_Condition()
@@ -118,47 +118,47 @@ FUNC INT Info_Mod_Asko_Pruefung_Condition()
 
 FUNC VOID Info_Mod_Asko_Pruefung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_15_00"); //Genn schickt mich. Es geht um die Prüfung der Verwandlungsmagier.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_05_01"); //Ich bin schon darüber informiert worden. Die Aufgabe wird nicht einfach.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_05_02"); //Bist du bereit sie zu erfahren?
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_15_00"); //Genn sent me. It's about testing the transformative mages.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_05_01"); //I've already been informed. The task will not be easy.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_05_02"); //Are you ready to know them?
 
 	Info_ClearChoices	(Info_Mod_Asko_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Asko_Pruefung, "Ich muss noch etwas erledigen.", Info_Mod_Asko_Pruefung_B);
-	Info_AddChoice	(Info_Mod_Asko_Pruefung, "Ich bin bereit.", Info_Mod_Asko_Pruefung_A);
+	Info_AddChoice	(Info_Mod_Asko_Pruefung, "There's something I have to do.", Info_Mod_Asko_Pruefung_B);
+	Info_AddChoice	(Info_Mod_Asko_Pruefung, "I'm ready.", Info_Mod_Asko_Pruefung_A);
 };
 
 FUNC VOID Info_Mod_Asko_Pruefung_B()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_B_15_00"); //Ich muss noch etwas erledigen.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_B_05_01"); //Komme wieder, wenn du bereit bist.
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_B_15_00"); //There's something I have to do.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_B_05_01"); //Come back when you're ready.
 
 	Info_ClearChoices	(Info_Mod_Asko_Pruefung);
 };
 
 FUNC VOID Info_Mod_Asko_Pruefung_A()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_A_15_00"); //Ich bin bereit.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_01"); //Okay, hier ist deine Aufgabe: Vor kurzem ist ein Wolfsrudel zu uns ins Tal gekommen.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_02"); //Es hat sich beim Steinkreis niedergelassen und jagt dort seine Beute.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_03"); //Das ist gar nicht gut, denn 	wir Leben hier im Einklang mit der Natur und sie bittet uns, das Rudel zu vertreiben.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_04"); //Und genau das wird deine Aufgabe sein.
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_A_15_05"); //Wie soll ich das anstellen?
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_06"); //Ich gebe dir eine Spruchrolle, mit deren Hilfe du dich in einen Warg verwandeln kannst.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_07"); //Benutze sie aber nur abseits von Menschen, da sie dich sonst für ein wildes Tief halten könnten.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_08"); //Begib dich dann zu dem Rudel und versuche, den Leitwolf zu überzeugen, ein anderes Jagdgebiet aufzusuchen.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_09"); //Versuche auf jeden Fall zu vermeiden, dass die Wölfe zu schaden kommen!
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_10"); //Ansonsten kann ich die Aufgabe eigentlich nicht als erfüllt ansehen.
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_A_15_11"); //Eigentlich?
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_12"); //Töten ist nicht unsere Art. Es ist nur die äußerste Notlösung! Behalte das im Hinterkopf.
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_A_15_13"); //Gut, dann werde ich mich mal auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_14"); //Okay. Hier ist die Spruchrolle. Pass auf dich auf.
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_A_15_00"); //I'm ready.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_01"); //Okay, here's your job: A pack of wolves has recently arrived in the valley.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_02"); //It has settled at the stone circle and chases its prey there.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_03"); //We live here in harmony with nature and she asks us to drive the pack away.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_04"); //And that is exactly what you will do.
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_A_15_05"); //How am I supposed to do that?
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_06"); //I'll give you a spell to help you turn into a warg.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_07"); //Use them only away from humans, because otherwise they might think you are a wild low.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_08"); //Then go to the pack and try to convince the leader wolf to visit another hunting area.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_09"); //In any case try to avoid that the wolves get hurt!
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_10"); //Otherwise, I cannot really consider the task to be fulfilled.
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_A_15_11"); //Actually?
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_12"); //Killing is not our way. It's only the ultimate emergency solution! Keep that in mind.
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung_A_15_13"); //Well, then I'll be on my way.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung_A_05_14"); //Okay. Here's the scroll. Take care of yourself.
 
 	B_GiveInvItems	(self, hero, ItSc_TrfWarg, 1);
 
 	Mod_VMG_Pruefung = 2;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Mit Hilfe der Verwandlung zum Warg soll ich ein Rudel in der Nähe des Steinkreises davon überzeugen, das Tal zu verlassen, damit die Natur hier nicht zu Schaden kommt. Das Töten des Rudels soll ich nach Möglichkeit vermeiden.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "With the help of the transformation to the Warg, I should convince a pack near the stone circle to leave the valley so that nature is not harmed here. If possible, I should avoid killing the pack.");
 
 	Info_ClearChoices	(Info_Mod_Asko_Pruefung);
 
@@ -178,7 +178,7 @@ INSTANCE Info_Mod_Asko_Pruefung2 (C_INFO)
 	information	= Info_Mod_Asko_Pruefung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich musste Fleisch besorgen und brauche nun eine neue Verwandlungsrolle.";
+	description	= "I had to get meat and now I need a new role in transformation.";
 };
 
 FUNC INT Info_Mod_Asko_Pruefung2_Condition()
@@ -192,8 +192,8 @@ FUNC INT Info_Mod_Asko_Pruefung2_Condition()
 
 FUNC VOID Info_Mod_Asko_Pruefung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung2_15_00"); //Ich musste Fleisch besorgen und brauche nun eine neue Verwandlungsrolle.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung2_05_01"); //Okay, hier hast du eine.
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung2_15_00"); //I had to get meat and now I need a new role in transformation.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung2_05_01"); //Okay, here's one.
 
 	B_GiveInvItems	(self, hero, ItSc_TrfWarg, 1);
 };
@@ -206,7 +206,7 @@ INSTANCE Info_Mod_Asko_Pruefung3 (C_INFO)
 	information	= Info_Mod_Asko_Pruefung3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Da bin ich wieder.";
+	description	= "Here I am again.";
 };
 
 FUNC INT Info_Mod_Asko_Pruefung3_Condition()
@@ -226,47 +226,47 @@ FUNC INT Info_Mod_Asko_Pruefung3_Condition()
 
 FUNC VOID Info_Mod_Asko_Pruefung3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_00"); //Da bin ich wieder.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_01"); //Und? Wie ist es gelaufen?
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_00"); //Here I am again.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_01"); //And? How did it go?
 
 	if (Mod_VMG_Pruefung_Leitwolf == 3)
 	{
-		AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_02"); //Die Wölfe werden sich nicht mehr blicken lassen.
-		AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_03"); //Das hast du gut gemacht, ich werde eine Empfehlung für dich aussprechen.
-		AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_04"); //Triff dich nun mit Per, er stellt dir die letzte Aufgabe. Für dich sollte sie kein Problem darstellen.
+		AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_02"); //The wolves won't show up again.
+		AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_03"); //You did a good job, I'll make you a recommendation.
+		AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_04"); //Now meet Per, he'll give you the final task. It shouldn't be a problem for you.
 
 		Mod_VMG_Pruefung_Asko = 1;
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_05"); //Ich musste das Rudel töten. Der Leitwolf hat mir keine andere Wahl gelassen.
+		AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_05"); //I had to kill the pack. The leader wolf gave me no choice.
 
 		Mod_VMG_Pruefung_Asko = 2;
 
 		if (Mod_VMG_Pruefung_Genn == 1)
 		{
-			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_06"); //Da du dich schon bei der vorigen Aufgabe angestrengt und so viel für uns getan hast, werde ich ein Auge zudrücken.
-			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_07"); //Du darfst aber weiterhin nicht scheitern. Hast du das verstanden?
-			AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_08"); //Klar und deutlich. Was ist jetzt zu tun?
+			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_06"); //Since you have worked hard on the previous task and have done so much for us, I will turn a blind eye.
+			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_07"); //But you must not fail. Do you understand that?
+			AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_08"); //Clear as day. What should we do now?
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_09"); //Hm, Genns Aufgabe hast du auch nicht zu seiner Zufriedenheit gelöst. Das ist heikel.
-			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_10"); //Ich kann dich nur unter einer Bedingung weiter lassen.
-			AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_11"); //Und die wäre?
-			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_12"); //Du musst auf deine Belohnung verzichten.
-			AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_13"); //Das ist nicht dein Ernst.
-			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_14"); //Mein voller Ernst. Entweder du verzichtest, oder du kommst nicht weiter.
-			AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_15"); //Dann habe ich wohl keine andere Wahl. Lass mich weitermachen.
+			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_09"); //Hm, Genn's task wasn't solved to his satisfaction. That's tricky.
+			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_10"); //I can only let you go on with one condition.
+			AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_11"); //And what's that?
+			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_12"); //You must forego your reward.
+			AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_13"); //You can't be serious.
+			AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_14"); //I'm being serious. Either you pass, or you can't get anywhere.
+			AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_15"); //Then I don't have a choice. Let me keep going.
 		};
 
-		AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_16"); //Triff dich nun mit Per, er stellt dir die letzte Aufgabe.
+		AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_16"); //Now meet Per, he'll give you the final task.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_17"); //Wie sieht es mit einer Belohnung aus?
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_18"); //Die bekommst du erst, wenn du alle drei Aufgaben erledigt hast.
-	AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_19"); //War ja klar. Wir sehen uns.
-	AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_20"); //Ich wünsch' dir viel Erfolg bei der letzten Aufgabe.
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_17"); //How about a reward?
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_18"); //You won't get it until you complete all three tasks.
+	AI_Output(hero, self, "Info_Mod_Asko_Pruefung3_15_19"); //Of course it's clear. I'll see you around.
+	AI_Output(self, hero, "Info_Mod_Asko_Pruefung3_05_20"); //I wish you every success on your last assignment.
 
 	B_RemoveNpc	(Monster_11060_Leitwolf_TUG);
 	B_RemoveNpc	(Monster_11061_Wolf_TUG);
@@ -275,7 +275,7 @@ FUNC VOID Info_Mod_Asko_Pruefung3_Info()
 	B_RemoveNpc	(Monster_11064_Wolf_TUG);
 	B_RemoveNpc	(Monster_11065_Wolf_TUG);
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Diese Aufgabe wäre erledigt. Ich soll mich jetzt bei Per melden. Er wird mir meine letzte Aufgabe stellen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "This task is done. I'm supposed to report to Per now. He's going to give me my last assignment.");
 };
 
 INSTANCE Info_Mod_Asko_Pickpocket (C_INFO)

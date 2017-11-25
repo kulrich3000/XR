@@ -39,7 +39,7 @@ FUNC VOID GILDENSTORY_VMG()
 		&& (Npc_HasItems(hero, ItSc_TrfHarpie) > 0)
 		{
 			if (Npc_IsDead(Mod_4022_Orc_Grubuz_MT)) {
-				B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Ich habe die Spruchrolle 'Verwandlung Harpie'. Jetzt sollte ich damit zu Hermy gehen.");
+				B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "I've got the spell of 'Transforming Harpie.' Now I should go with it to Hermy.");
 
 				Mod_Hermy_KnowsQuest = 9;
 			};
@@ -53,12 +53,12 @@ FUNC VOID GILDENSTORY_VMG()
 				if (Npc_IsDead(Mod_10016_MIN_Brad_MT)) {
 					Mod_Brad_Quest = 2;
 
-					B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Ich habe den Minotauren Brad umgebracht und ihm den Kopf abgenommen. Ich sollte jetzt zu Nick zurückkehren.");
+					B_LogEntry	(TOPIC_MOD_ANOR_NICK, "I killed Minotaur Brad and took his head off. I should get back to Nick now.");
 				};
 			} else {
 				Mod_Brad_Quest = 2;
 
-				B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Ich habe den Minotauren Brad umgebracht und ihm den Kopf abgenommen. Ich sollte jetzt zu Nick zurückkehren.");
+				B_LogEntry	(TOPIC_MOD_ANOR_NICK, "I killed Minotaur Brad and took his head off. I should get back to Nick now.");
 			};
 		};
 
@@ -79,7 +79,7 @@ FUNC VOID GILDENSTORY_VMG()
 		{
 			Mod_VMG_FurtTot = 1;
 
-			B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Furt ist tot. Ich sollte Albert davon in Kenntnis setzen.");
+			B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Furt's dead. I should let Albert know.");
 		};
 
 		// Faice ins Bett verfrachten
@@ -122,7 +122,7 @@ FUNC VOID GILDENSTORY_VMG()
 
 			Wld_SpawnNpcRange (hero, Golem_Trador_01, 1, 1000);
 
-			B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Ich habe von jeder der Pflanzen ein Exemplar. Ich sollte jetzt Genn aufsuchen. Aber wo kommt dieser Golem her?");
+			B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "I have a copy of each of the plants. I should see Genn now. But where does this golem come from?");
 		};
 
 		if (Mod_VMG_Giftpflanzen == 1)
@@ -132,7 +132,7 @@ FUNC VOID GILDENSTORY_VMG()
 
 			Wld_SpawnNpcRange (hero, Golem_Trador_02, 1, 1000);
 
-			B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Gleich, nachdem ich den Golem getötet habe, ist ein zweiter erschienen ...");
+			B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Right after I killed the Golem, a second one appeared...");
 		};
 
 		if (Mod_VMG_Giftpflanzen == 2)
@@ -142,7 +142,7 @@ FUNC VOID GILDENSTORY_VMG()
 
 			Wld_SpawnNpcRange (hero, Golem_Trador_03, 1, 1000);
 
-			B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Noch ein Golem ... hoffentlich hört das bald auf.");
+			B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Another golem... I hope this stops soon.");
 		};
 
 		if (Mod_VMG_Giftpflanzen == 3)
@@ -152,7 +152,7 @@ FUNC VOID GILDENSTORY_VMG()
 
 			Wld_InsertNpc	(Mod_7352_OUT_Trador_TUG, "TUG_09");
 
-			B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Es scheint aufgehört zu haben. Jetzt sollte ich rasch zu Genn gehen.");
+			B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "It seems to have stopped. Now I should get to Genn's in a hurry.");
 		};
 
 		// Bugfix: Thorge's Skelette alles tot => Counter auf 0 setzen
@@ -171,7 +171,7 @@ FUNC VOID GILDENSTORY_VMG()
 			Wld_InsertNpc	(Mod_7361_OUT_Setta_TUG, "TUG_83");
 			Wld_InsertNpc	(Mod_7362_OUT_Buff_TUG, "TUG_83");
 
-			B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Nachdem ich in den Teleporter gegangen bin, wurde ich zu dem merkwürdigen Steinkreis in Tugettso teleportiert. Dort wartete Trador schon auf mich, bereit, seine Golems auf mich zu hetzen. Zu meinem Erstaunen kamen danach Setta und Buff aus dem Portal, um mich zu unterstützen.");
+			B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "After I went to the teleporter, I was teleported to the strange stone circle in Tugettso. There Trador was already waiting for me, ready to send his golems after me. To my surprise Setta and Buff came out of the portal to support me.");
 		};
 
 		if (Npc_HasItems(hero, ItSc_SumGol_Fake) > 0)
@@ -192,14 +192,14 @@ FUNC VOID GILDENSTORY_VMG()
 		{
 			Mod_VMG_WSTrador = 4;
 
-			B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Nachdem wir Trador besiegt haben, habe ich die 'Golem beschwören'-Zauber gefunden. Ich sollte mal mit den beiden reden, vielleicht erfahre ich mehr über den Verein, dem Trador angehört.");
+			B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "After defeating Trador, I found the Summon Golem spells. I should talk to them, maybe I'll find out more about the club that Trador belongs to.");
 		};
 
 		// Hinweise in Tugettso bei der Matronenjagd
 
 		if (TUG_Matronen == 4)
 		{
-			B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Das sollten alle Matronen gewesen sein.");
+			B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "That should be all matrons.");
 
 			TUG_Matronen = 5;
 		};
@@ -207,7 +207,7 @@ FUNC VOID GILDENSTORY_VMG()
 		if (TUG_Lorforn == 0)
 		&& (TUG_Matronen == 5)
 		{
-			B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Ich sollte mich noch ein wenig umsehen. Vielleicht finde ich ja den Verantwortlichen für die Golbinplage.");
+			B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "I should look around a little more. Maybe I'll find the man in charge of the plague.");
 
 			TUG_Matronen = 6;
 		};
@@ -215,7 +215,7 @@ FUNC VOID GILDENSTORY_VMG()
 		if (TUG_Lorforn == 1)
 		&& (TUG_Matronen == 6)
 		{
-			B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Ich habe hier erstmal alles erledigt und sollte zu Genn zurückkehren, um ihm Bericht zu erstatten.");
+			B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "I did everything here for now and should return to Genn to report back to him.");
 
 			TUG_Matronen = 7;
 		};
@@ -303,9 +303,9 @@ FUNC VOID GILDENSTORY_VMG()
 
 			if (Mod_VMG_Pruefung_Barriere_Counter == 9)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TugettsoRabbit_15_00"); //Was war denn das?
+				AI_Output(hero, NULL, "Info_Mod_Hero_TugettsoRabbit_15_00"); //What the hell was that?
 
-				B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Im Tal befindet sich eine Frau, die von einer magischen Barriere umgeben ist. Diese scheint für Menschen undurchdringlich zu sein, aber Tieren können gefahrlos hindurch. Ich sollte Per davon berichten.");
+				B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "In the valley there is a woman surrounded by a magical barrier. This seems to be impenetrable to humans, but animals can pass through safely. I should tell Per about it.");
 
 				Mod_VMG_Pruefung_Barriere = 2;
 
@@ -344,11 +344,11 @@ FUNC VOID GILDENSTORY_VMG()
 		{
 			if (Mod_VMG_Pruefung_Petunia == 6)
 			{
-				Info_Mod_Per_Pruefung3.description = "Ich denke, wir können das Problem hier und jetzt zusammen lösen.";
+				Info_Mod_Per_Pruefung3.description = "I think we can solve this problem together right now.";
 			}
 			else
 			{
-				Info_Mod_Per_Pruefung3.description = "Ich denke, ich habe das Problem gelöst.";
+				Info_Mod_Per_Pruefung3.description = "I think I've solved the problem.";
 			};
 		};
 
@@ -372,7 +372,7 @@ FUNC VOID GILDENSTORY_VMG()
 
 				CutsceneAn = FALSE;
 
-				B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich hatte eine Vision. Das Blütenblatt, das ich suche, muss am Teich zu finden sein.");
+				B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had a vision. The petal I'm looking for must be by the pond.");
 			};
 
 			Mod_VMG_Pruefung_Vision += 1;
@@ -397,7 +397,7 @@ FUNC VOID GILDENSTORY_VMG()
 		{
 			Mod_VMG_TeleporterEntdeckt = 1;
 
-			B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Hier ist der Teleporter, von dem Buff gesprochen hat und daneben ist auch ein Sockel. Darauf sollte ich Buff nochmal ansprechen ...");
+			B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Here's the teleporter Buff was talking about and next to it is a pedestal. I should talk to Buff about that again....");
 		};
 	};
 };

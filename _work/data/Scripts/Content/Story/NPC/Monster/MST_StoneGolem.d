@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_StoneGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Steingolem";
+	name							=	"Stone Golem";
 	guild							=	GIL_STONEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 	level							=	100;
@@ -86,7 +86,7 @@ INSTANCE StoneGolem	(Mst_Default_StoneGolem)
 
 INSTANCE ErzGolem	(Mst_Default_StoneGolem)
 {
-	name = "Erzgolem";
+	name = "archgolem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_ErzGolem();
@@ -101,7 +101,7 @@ INSTANCE ErzGolem	(Mst_Default_StoneGolem)
 
 INSTANCE ErzGolem_01	(Mst_Default_StoneGolem)
 {
-	name = "Erzgolem";
+	name = "archgolem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_ErzGolem();
@@ -116,7 +116,7 @@ INSTANCE ErzGolem_01	(Mst_Default_StoneGolem)
 
 INSTANCE ErzGolem_02	(Mst_Default_StoneGolem)
 {
-	name = "Erzgolem";
+	name = "archgolem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_ErzGolem();
@@ -131,7 +131,7 @@ INSTANCE ErzGolem_02	(Mst_Default_StoneGolem)
 
 INSTANCE ErzGolem_03	(Mst_Default_StoneGolem)
 {
-	name = "Erzgolem";
+	name = "archgolem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_ErzGolem();
@@ -146,7 +146,7 @@ INSTANCE ErzGolem_03	(Mst_Default_StoneGolem)
 
 INSTANCE ErzGolem_04	(Mst_Default_StoneGolem)
 {
-	name = "Erzgolem";
+	name = "archgolem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_ErzGolem();
@@ -161,7 +161,7 @@ INSTANCE ErzGolem_04	(Mst_Default_StoneGolem)
 
 INSTANCE ErzGolem_05	(Mst_Default_StoneGolem)
 {
-	name = "Erzgolem";
+	name = "archgolem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_ErzGolem();
@@ -176,7 +176,7 @@ INSTANCE ErzGolem_05	(Mst_Default_StoneGolem)
 
 INSTANCE ErzGolem_06	(Mst_Default_StoneGolem)
 {
-	name = "Erzgolem";
+	name = "archgolem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_ErzGolem();
@@ -191,7 +191,7 @@ INSTANCE ErzGolem_06	(Mst_Default_StoneGolem)
 
 INSTANCE ErzGolem_07	(Mst_Default_StoneGolem)
 {
-	name = "Erzgolem";
+	name = "archgolem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_ErzGolem();
@@ -206,7 +206,7 @@ INSTANCE ErzGolem_07	(Mst_Default_StoneGolem)
 
 INSTANCE ErzGolem_08	(Mst_Default_StoneGolem)
 {
-	name = "Erzgolem";
+	name = "archgolem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_ErzGolem();
@@ -221,7 +221,7 @@ INSTANCE ErzGolem_08	(Mst_Default_StoneGolem)
 
 INSTANCE EisenGolem	(Mst_Default_StoneGolem)
 {
-	name = "Eisengolem";
+	name = "iron golem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERZGOLEM;
 
 	B_SetVisuals_EisenGolem();
@@ -247,7 +247,7 @@ INSTANCE GolemTransform	(Mst_Default_StoneGolem)
 
 INSTANCE Summoned_Golem (Mst_Default_StoneGolem)
 {
-	name							=	"Beschworener Golem";
+	name							=	"Summoned Golem";
 	guild							=	GIL_SUMMONED_GOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_GOLEM;
 	level							=	0;
@@ -280,7 +280,7 @@ INSTANCE Summoned_Golem (Mst_Default_StoneGolem)
 
 INSTANCE StoneGolem_Turendil (Mst_Default_StoneGolem)
 {
-	name							=	"Beschworener Golem";
+	name							=	"Summoned Golem";
 	guild							=	GIL_SUMMONED_GOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_GOLEM;
 	level							=	0;
@@ -353,7 +353,7 @@ func void B_GolemRise ()
 	{
 		AI_PlayAni (self,"T_RISE");
 		self.NoFocus	= FALSE;
-		self.name			=	"Steingolem";
+		self.name			=	"Stone Golem";
 		self.flags				   			= 	0;
 		
 		AI_StartState 		(self, ZS_MM_Attack, 0, "");
@@ -390,7 +390,7 @@ INSTANCE Shattered_Golem (Mst_Default_StoneGolem)
 
 INSTANCE Golem_Trador_01	(Mst_Default_StoneGolem)
 {
-	name = "Beschworener Steingolem";
+	name = "Summoned Stone Golem";
 
 	B_SetVisuals_StoneGolem();
 	Npc_SetToFistMode	(self);
@@ -411,7 +411,7 @@ INSTANCE Golem_Trador_01	(Mst_Default_StoneGolem)
 
 INSTANCE Golem_Trador_02	(Mst_Default_StoneGolem)
 {
-	name = "Beschworener Steingolem";
+	name = "Summoned Stone Golem";
 
 	B_SetVisuals_StoneGolem();
 	Npc_SetToFistMode	(self);
@@ -432,7 +432,7 @@ INSTANCE Golem_Trador_02	(Mst_Default_StoneGolem)
 
 INSTANCE Golem_Trador_03	(Mst_Default_StoneGolem)
 {
-	name = "Beschworener Steingolem";
+	name = "Summoned Stone Golem";
 
 	B_SetVisuals_StoneGolem();
 	Npc_SetToFistMode	(self);
@@ -454,7 +454,7 @@ INSTANCE Golem_Trador_03	(Mst_Default_StoneGolem)
 
 INSTANCE Golem_DeanKiller	(Mst_Default_StoneGolem)
 {
-	name = "Beschworener Steingolem";
+	name = "Summoned Stone Golem";
 
 	B_SetVisuals_StoneGolem();
 	Npc_SetToFistMode	(self);

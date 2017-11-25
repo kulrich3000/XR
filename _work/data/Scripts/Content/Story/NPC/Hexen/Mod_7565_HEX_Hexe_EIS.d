@@ -1,7 +1,7 @@
 instance Mod_7565_HEX_Hexe_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hexe";	//Halvors Frau
+	name 		= "bitch";	//Halvors Frau
 	guild 		= GIL_OUT;
 	id 			= 7565;
 	voice 		= 17;

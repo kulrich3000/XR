@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Everaldo_Hi (C_INFO)
 	information	= Info_Mod_Everaldo_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme von Vanas.";
+	description	= "I'm from Vanas.";
 };
 
 FUNC INT Info_Mod_Everaldo_Hi_Condition()
@@ -19,14 +19,14 @@ FUNC INT Info_Mod_Everaldo_Hi_Condition()
 
 FUNC VOID Info_Mod_Everaldo_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Everaldo_Hi_15_00"); //Ich komme von Vanas.
-	AI_Output(self, hero, "Info_Mod_Everaldo_Hi_04_01"); //Ohh, ja, ich weiß, worum es geht. Es ist ein Schmiedebauplan von hohem Wert, dessen solltest du dir bewusst sein, weit wertvoller, als die paar Erz und Sumpfkraut ...
-	AI_Output(hero, self, "Info_Mod_Everaldo_Hi_15_02"); //(unterbricht) Bekomme ich jetzt den Bauplan?
-	AI_Output(self, hero, "Info_Mod_Everaldo_Hi_04_03"); //Ähh, ja, natürlich, hier. (zu sich selbst) Hoffentlich bekommt Saturas das nie heraus.
+	AI_Output(hero, self, "Info_Mod_Everaldo_Hi_15_00"); //I'm from Vanas.
+	AI_Output(self, hero, "Info_Mod_Everaldo_Hi_04_01"); //Ohh, yeah, I know what it's about. It is a forging plan of high value, you should be aware of that, far more valuable than the few ore and marsh weed...
+	AI_Output(hero, self, "Info_Mod_Everaldo_Hi_15_02"); //Can I have the blueprint now?
+	AI_Output(self, hero, "Info_Mod_Everaldo_Hi_04_03"); //Uh, yeah, of course, here. Hopefully Satan will never find out.
 
 	B_GiveInvItems	(self, hero, ItWr_Bauplan_Erzschwert_Wasser, 1);
 
-	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Ich habe den Schmiedebauplan von Everaldo.");
+	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "I have the forging plan of Everaldo.");
 };
 
 INSTANCE Info_Mod_Everaldo_Pickpocket (C_INFO)

@@ -1,7 +1,7 @@
 instance Mod_1532_HTR_Ethan_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ethan";	
+	name 		= "ethane";	
 	guild 		= GIL_nov;
 	id 			= 1532;
 	voice 		= 13;

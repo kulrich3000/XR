@@ -15,20 +15,20 @@ FUNC INT Info_Mod_Argibast_Hi_Condition()
 
 FUNC VOID Info_Mod_Argibast_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_00"); //Sieh an, wen haben wir denn hier? Du hast diesen Beliaranhängern geholfen, unseren Belagerungsring zu zerstören. Dafür wirst du im Namen Innos' bezahlen!
-	AI_Output(hero, self, "Info_Mod_Argibast_Hi_15_01"); //Schweig, du Ausgeburt der Hölle! Ihr dient nicht Innos, sondern euch selbst!
-	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_02"); //Wie kannst du es wagen ...?
-	AI_Output(hero, self, "Info_Mod_Argibast_Hi_15_03"); //Ich werde euch im Namen Beliars aufhalten!
-	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_04"); //Tu das. Selbst wenn du mich besiegen solltest, was jedoch nie passieren wird, kannst du die anderen nicht aufhalten.
-	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_05"); //Schon bald werden sie das Schwert Innos' gefunden haben!
-	AI_Output(hero, self, "Info_Mod_Argibast_Hi_15_06"); //Das was?
-	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_07"); //Deine Reise endet hier, kleiner Mensch!
+	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_00"); //Well, look who's here. You've helped these Beliaran followers destroy our siege ring. You'll pay for this in the name of Innos!
+	AI_Output(hero, self, "Info_Mod_Argibast_Hi_15_01"); //Shut up, you spawn of hell! You do not serve Innos, but yourselves!
+	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_02"); //How dare you...?
+	AI_Output(hero, self, "Info_Mod_Argibast_Hi_15_03"); //I will stop you in the name of Beliars!
+	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_04"); //Do that. Even if you defeat me, which will never happen, you can't stop the others.
+	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_05"); //Soon they will have found the sword Innos'!
+	AI_Output(hero, self, "Info_Mod_Argibast_Hi_15_06"); //The what?
+	AI_Output(self, hero, "Info_Mod_Argibast_Hi_02_07"); //Your journey ends here, little man!
 
 	AI_StopProcessInfos	(self);
 
 	B_Attack	(self, hero, AR_Kill, 0);
 
-	B_LogEntry	(TOPIC_MOD_BEL_GARDEINNOS, "Argibast, ein Mitglied der Garde Innos', hat erzählt, dass die anderen Gardisten nach dem Schwert Innos' suchen. Das klingt nicht gut.");
+	B_LogEntry	(TOPIC_MOD_BEL_GARDEINNOS, "Argibast, a member of the Innos Guard, told us that the other guards are looking for the Innos sword. That doesn't sound good.");
 
 	self.guild = GIL_STRF;
 	Npc_SetTrueGuild	(self, GIL_STRF);

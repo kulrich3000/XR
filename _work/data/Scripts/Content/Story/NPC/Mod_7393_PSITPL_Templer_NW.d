@@ -1,7 +1,7 @@
 instance Mod_7393_PSITPL_Templer_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fanatischer Templer"; 
+	name 		= "Fanatical Templar"; 
 	guild 		= GIL_STRF;
 	id 			= 7393;
 	voice 		= 13;

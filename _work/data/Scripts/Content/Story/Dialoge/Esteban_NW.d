@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Esteban_NW_Hi (C_INFO)
 	information	= Info_Mod_Esteban_NW_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Whistler schickt mich.";
+	description	= "Whistler sent me.";
 };
 
 FUNC INT Info_Mod_Esteban_NW_Hi_Condition()
@@ -19,21 +19,21 @@ FUNC INT Info_Mod_Esteban_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Esteban_NW_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Hi_15_00"); //Whistler hat mich zu dir geschickt. Er meinte, du könntest uns helfen den Einfluss des Lager auszuweiten.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_01"); //Das könnte ich vermutlich wirklich. Auch wenn du es nicht glaubst, wir Banditen sind mächtig.
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Hi_15_02"); //Und was genau könnt ihr für uns tun?
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_03"); //Einer unserer Leute, Morgahard, ist momentan auf dem Hof des Grossbauern und behält für uns die Söldner im Auge.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_04"); //Nun, ich will nicht näher darauf eingehen, allerdings hat er bei einigen wichtigen Leuten einen Stein im Brett.
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Hi_15_05"); //Und welche Rolle spiele ich dabei?
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_06"); //Nun, er hat ein kleinen Problem mit einigen mächtigen Leuten der Stadt Khorinis.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_07"); //Er wurde damals aufgrund eines Verbrechens, das man ihm  angedichtet hat, in die Kolonie geworfen. Er wurde ihnen zu einflussreich.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_08"); //Seitdem kann er sich nicht mehr in der Stadt blicken lassen. Wenn du allerdings Beweise für seine Unschuld findest, könnten wir auch euch helfen.
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Hi_15_09"); //OK, wo soll ich suchen?
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_10"); //Unterhalte dich mal mit Cornelius, dem stellvertretenden Statthalter.
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Hi_15_00"); //Whistler sent me to you. He said you could help us expand the camp's influence.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_01"); //I could probably really do that. Even if you don't believe it, we bandits are powerful.
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Hi_15_02"); //And what exactly can you do for us?
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_03"); //One of our people, Morgahard, is currently on the farm of the big farmer and keeps an eye on the mercenaries for us.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_04"); //Well, I don't want to go into it in more detail, but he has a stone in his board with some important people.
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Hi_15_05"); //And what role do I play in this?
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_06"); //Well, he's got a little problem with some powerful people in the city of khorinis.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_07"); //He was thrown into the colony for a crime he was accused of. He became too influential for them.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_08"); //He hasn't been able to show up in town since. However, if you can find proof of his innocence, we could help you.
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Hi_15_09"); //OK, where should I look?
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Hi_07_10"); //Talk to Cornelius, the deputy governor.
 
 	Log_CreateTopic	(TOPIC_MOD_AL_MORGAHARD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_AL_MORGAHARD, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_AL_AUSBREITUNGK, TOPIC_MOD_AL_MORGAHARD, "Esteban sagte mir, dass wir es Morgahard erst möglich machen sollen in die Stadt zu kommen, bevor er uns helfen wird.", "Esteban will, dass Morgahard wieder in die Stadt kann. Dafür soll ich mal mit Cornelius, dem stellvertretenden Statthalter, sprechen.");
+	B_LogEntry_More	(TOPIC_MOD_AL_AUSBREITUNGK, TOPIC_MOD_AL_MORGAHARD, "Esteban told me that we should make it possible for Morgahard to get into town before he helps us.", "Esteban wants Morgahard back in town. I'll speak to Cornelius, the deputy governor.");
 };
 
 INSTANCE Info_Mod_Esteban_NW_Gerbrandt (C_INFO)
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_Esteban_NW_Gerbrandt (C_INFO)
 	information	= Info_Mod_Esteban_NW_Gerbrandt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe herausgefunden, dass Gerbrandt mit der Sache zu tun hat.";
+	description	= "I found out that Gerbrandt was involved in this.";
 };
 
 FUNC INT Info_Mod_Esteban_NW_Gerbrandt_Condition()
@@ -57,12 +57,12 @@ FUNC INT Info_Mod_Esteban_NW_Gerbrandt_Condition()
 
 FUNC VOID Info_Mod_Esteban_NW_Gerbrandt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Gerbrandt_15_00"); //Ich habe herausgefunden, dass Gerbrandt mit der Sache zu tun hat. Allerdings kann ich ihm nichts nachweisen.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Gerbrandt_07_01"); //Wegen Gerbrandt solltest du mal mit Diego reden, er kennt ihn schon länger.
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Gerbrandt_15_00"); //I found out that Gerbrandt was involved in this. However, I can't prove anything to him.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Gerbrandt_07_01"); //You should talk to Diego about Gerbrandt, he's known him for a long time.
 
-	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Esteban meinte, Diego könne mir helfen.");
+	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Esteban said Diego could help me.");
 
-	Mob_CreateItems	("GERBRANDTSTRUHE", ItWr_AL_GebrandtDokumente, 1);
+	Mob_CreateItems	("WOODCHIP", ItWr_AL_GebrandtDokumente, 1);
 };
 
 INSTANCE Info_Mod_Esteban_NW_MorgahardDarfWieder (C_INFO)
@@ -73,7 +73,7 @@ INSTANCE Info_Mod_Esteban_NW_MorgahardDarfWieder (C_INFO)
 	information	= Info_Mod_Esteban_NW_MorgahardDarfWieder_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Morgahard kann wieder in die Stadt.";
+	description	= "Morgahard can go back to town.";
 };
 
 FUNC INT Info_Mod_Esteban_NW_MorgahardDarfWieder_Condition()
@@ -86,10 +86,10 @@ FUNC INT Info_Mod_Esteban_NW_MorgahardDarfWieder_Condition()
 
 FUNC VOID Info_Mod_Esteban_NW_MorgahardDarfWieder_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_MorgahardDarfWieder_15_00"); //Morgahard kann wieder in die Stadt.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_MorgahardDarfWieder_07_01"); //Gut, ich gehe wieder zurück ins Minental, wende dich ab jetzt an Morgahard.
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_MorgahardDarfWieder_15_00"); //Morgahard can go back to town.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_MorgahardDarfWieder_07_01"); //All right, I'll go back to the Minental, turn to Morgahard from now on.
 
-	B_LogEntry_More	(TOPIC_MOD_AL_MORGAHARD, TOPIC_MOD_AL_AUSBREITUNGK, "Esteban wird zurück ins Minental gehen. Ich soll mich jetzt an Morgahard halten.", "Morgahard darf wieder in die Stadt und ist nun meine Kontaktperson");
+	B_LogEntry_More	(TOPIC_MOD_AL_MORGAHARD, TOPIC_MOD_AL_AUSBREITUNGK, "Esteban will go back to the Minental. I'm supposed to stick with Morgahard now.", "Morgahard is allowed back in town and is now my contact person.");
 	B_SetTopicStatus	(TOPIC_MOD_AL_MORGAHARD, LOG_SUCCESS);
 
 	B_GivePlayerXP	(500);
@@ -105,7 +105,7 @@ INSTANCE Info_Mod_Esteban_NW_Kleidung (C_INFO)
 	information	= Info_Mod_Esteban_NW_Kleidung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Warum trägst du diese Kleidung?";
+	description	= "Why are you wearing these clothes?";
 };
 
 FUNC INT Info_Mod_Esteban_NW_Kleidung_Condition()
@@ -118,8 +118,8 @@ FUNC INT Info_Mod_Esteban_NW_Kleidung_Condition()
 
 FUNC VOID Info_Mod_Esteban_NW_Kleidung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Kleidung_15_00"); //Warum trägst du diese Kleidung?
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Kleidung_07_01"); //Meinst du, ich spaziere mit der Banditenkleidung in die Stadt, sage den Stadtwachen "guten Tag" und bitte um eine Privataudienz bei Hagen?
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Kleidung_15_00"); //Why are you wearing these clothes?
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Kleidung_07_01"); //Meinst du, ich spaziere mit der Banditenkleidung in die Stadt, sage den Stadtwachen "good day" und bitte um eine Privataudienz bei Hagen?
 };
 
 INSTANCE Info_Mod_Esteban_NW_Castlemine (C_INFO)
@@ -130,7 +130,7 @@ INSTANCE Info_Mod_Esteban_NW_Castlemine (C_INFO)
 	information	= Info_Mod_Esteban_NW_Castlemine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, wie läuft es bei dir jetzt in Khorinis?";
+	description	= "So, how are things going in Khorinis now?";
 };
 
 FUNC INT Info_Mod_Esteban_NW_Castlemine_Condition()
@@ -143,21 +143,21 @@ FUNC INT Info_Mod_Esteban_NW_Castlemine_Condition()
 
 FUNC VOID Info_Mod_Esteban_NW_Castlemine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine_15_00"); //Und, wie läuft es bei dir jetzt in Khorinis?
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_01"); //(schlecht gelaunt) Ich hatte gehofft mehr rausholen zu können aus meiner Rückkehr hierher ...
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine_15_02"); //Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_03"); //Ausstehende Rechnungen. Bevor man mich nämlich in die Kolonie warf, hatte ich einige Rücklagen ganz in der Nähe deponiert.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_04"); //Aber dass sich die Söldner jetzt als Schutzherren der Bauern geben verhindert, dass ich diese bergen kann.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_05"); //Aber eines Nachts schleich ich mich zu diesem dreckigen Sekob und prügele es aus ihm heraus ...
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine_15_06"); //Sekob der Bauer? Was hat der damit zu tun?
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_07"); //Nun, bei ihm lagern meine Sachen. Ich hatte ihm damals einen Batzen Gold gegeben, dass er sie für mich verwahrt.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_08"); //Aber als ich jetzt bei ihm war, um die Dinge abzuholen, hat er mir nur damit gedroht die Söldner auf mich zu hetzen, wenn ich mich noch mal bei ihm blicken lasse.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_09"); //Es hat mich einiges an Beherrschung gekostet ihm nicht auf der Stelle den Schädel einzuschlagen.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_10"); //Aber einen Konflikt mit den Söldnern können wir uns leider nicht leisten.
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine_15_00"); //So, how are things going in Khorinis now?
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_01"); //I had hoped to get more out of coming back here....
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine_15_02"); //What do you think?
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_03"); //Outstanding invoices. Before I was thrown into the colony, I had some reserves in the vicinity.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_04"); //But that the mercenaries now, as patrons of the peasants, prevent me from being able to rescue them.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_05"); //But one night I sneak up to this dirty secob and fight it out of him....
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine_15_06"); //Sekob the farmer? What's he got to do with it?
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_07"); //Well, he's the one who stores my stuff. I had given him a lump of gold to keep it for me.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_08"); //But now that I was with him to pick things up, he just threatened to send the mercenaries after me if I let him see me again.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_09"); //It cost me a lot of control not to smash his skull right now.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_10"); //But unfortunately, we can't afford a conflict with the mercenaries.
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_11"); //(zu sich selbst) Die Sachen sind bestimmt in der verschlossenen Truhe.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine_07_11"); //The things are definitely in the locked chest.
 
 	AI_TurnToNpc	(self, hero);
 };
@@ -170,7 +170,7 @@ INSTANCE Info_Mod_Esteban_NW_Castlemine2 (C_INFO)
 	information	= Info_Mod_Esteban_NW_Castlemine2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe deine 'Rücklagen'.";
+	description	= "I got your reserves.";
 };
 
 FUNC INT Info_Mod_Esteban_NW_Castlemine2_Condition()
@@ -185,19 +185,19 @@ FUNC INT Info_Mod_Esteban_NW_Castlemine2_Condition()
 
 FUNC VOID Info_Mod_Esteban_NW_Castlemine2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine2_15_00"); //Ich habe deine "Rücklagen".
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine2_07_01"); //Tatsache! Da bin aber baff. Ich hoffe aber doch, dass wir nicht bald wütende Söldner abwehren müssen?
-	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine2_15_02"); //Da mach dir mal keine Sorgen.
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine2_07_03"); //Ausgezeichnet! Da hast du wirklich gute Arbeit geleistet. Hier, nimm zum Dank etwas Kraut, Erz und Gold.
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine2_15_00"); //Ich habe deine "reserves".
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine2_07_01"); //Fact! I'm really baffled. I hope we don't soon have to fight off angry mercenaries?
+	AI_Output(hero, self, "Info_Mod_Esteban_NW_Castlemine2_15_02"); //Don't worry about that.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine2_07_03"); //Excellent! You did a really good job. Here, take some cabbage, ore and gold to thank you.
 
-	B_ShowGivenThings	("300 Gold, 10 Erz, 5 Schwarzer Weiser und 4 Traumrufe erhalten");
+	B_ShowGivenThings	("300 Gold, 10 Ore, 5 Black Wise Men and 4 Dream Cries received");
 
 	CreateInvItems	(hero, ItMi_Gold, 300);
 	CreateInvItems	(hero, ItMi_Nugget, 10);
 	CreateInvItems	(hero, ItMi_Addon_Joint_02, 5);
 	CreateInvItems	(hero, ItMi_Traumruf, 4);
 
-	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine2_07_04"); //Achja, diesen Ring sollst du auch haben. Er kann dir immer nützlich sein, wenn du jemandem mit etwas Nachdruck um dessen Wertsachen erleichtern willst. Viel Spaß damit.
+	AI_Output(self, hero, "Info_Mod_Esteban_NW_Castlemine2_07_04"); //Oh, you should have that ring, too. It can always be useful for you, if you want to make it easier for someone with a little bit of emphasis on their valuables. Have fun with that.
 
 	B_GiveInvItems	(self, hero, ItRi_Verschlagenheit, 1);
 

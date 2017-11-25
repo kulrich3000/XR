@@ -25,12 +25,12 @@ FUNC INT Info_Mod_DaemonenritterWache_Hi_Condition()
 
 FUNC VOID Info_Mod_DaemonenritterWache_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_00"); //Halt! Was willst du von Gomez?
-	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_01"); //Ich habe eine wichtige Nachricht für ihn.
-	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_02"); //Eine Nachricht kann nicht so wichtig sein, als das ich sie mir nicht anhören kann, um zu entscheiden, wie wichtig sie ist.
-	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_03"); //Die Nachricht ist nur für Gomez persönlich bestimmt.
-	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_04"); //Das kann jeder sagen. Wer bist du überhaupt?
-	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_05"); //Ich bin ...
+	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_00"); //Stop! What do you want with Gomez?
+	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_01"); //I have an important message for him.
+	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_02"); //A message can't be as important as I can't listen to it to decide how important it is.
+	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_03"); //The message is only intended for Gomez himself.
+	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_04"); //Anyone can say that. Who are you, anyway?
+	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_05"); //I am....
 
 	B_StartOtherRoutine	(Mod_517_DMR_Gomez_MT, "INAL");
 
@@ -60,7 +60,7 @@ FUNC VOID Info_Mod_DaemonenritterWache_Ok_Info()
 {
 	AI_TurnToNpc	(self, Mod_517_DMR_Gomez_MT);
 
-	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Ok_12_00"); //Ja, Herr.
+	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Ok_12_00"); //Yes, sir.
 
 	AI_StopProcessInfos	(self);
 };

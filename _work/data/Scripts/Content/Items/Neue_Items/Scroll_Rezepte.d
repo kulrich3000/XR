@@ -39,7 +39,7 @@ const int Value_Scroll_HarmUndead	= 500;
 
 INSTANCE ItWr_Scroll_Firebolt		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -50,7 +50,7 @@ INSTANCE ItWr_Scroll_Firebolt		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Firebolt;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Feuerpfeil";
+	description			= 	"Recipe: Fire Arrow";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -64,16 +64,16 @@ func void UseScroll_Firebolt ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Feuerpfeil - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Fire arrow - role of saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Schwefel"					);
+					Doc_PrintLines	( nDocID,  0, "1x sulphur"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_FIREBOLT] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´FEUERPFEIL´: 1 Schwefel");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the spell roll? FIREARS?: 1 Sulphur");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_FIREBOLT] = TRUE;
 		};
@@ -81,7 +81,7 @@ func void UseScroll_Firebolt ()
 
 INSTANCE ItWr_Scroll_Icebolt		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -92,7 +92,7 @@ INSTANCE ItWr_Scroll_Icebolt		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Icebolt;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Eispfeil";
+	description			= 	"Recipe: Ice arrow";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -106,16 +106,16 @@ func void UseScroll_Icebolt ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Eispfeil - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Ice arrow - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Gletscher Quarz"					);
+					Doc_PrintLines	( nDocID,  0, "1x Glacier Quartz"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_ICEBOLT] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´EISPFEIL´: 1 Gletscher Quarz");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role? ice arrow?: 1 glacier quartz");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_ICEBOLT] = TRUE;
 		};
@@ -123,7 +123,7 @@ func void UseScroll_Icebolt ()
 
 INSTANCE ItWr_Scroll_Zap		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -134,7 +134,7 @@ INSTANCE ItWr_Scroll_Zap		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Zap;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Blitz";
+	description			= 	"Recipe: Blitz";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -148,16 +148,16 @@ func void UseScroll_Zap ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Blitz - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Blitz - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Bergkristall"					);
+					Doc_PrintLines	( nDocID,  0, "1x Rock Crystal"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_ZAP] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´BLITZ´: 1 Bergkristall");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? BLITZ?: 1 rock crystal");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_ZAP] = TRUE;
 		};
@@ -165,7 +165,7 @@ func void UseScroll_Zap ()
 
 INSTANCE ItWr_Scroll_SumWolf		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -176,7 +176,7 @@ INSTANCE ItWr_Scroll_SumWolf		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_SumWolf;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Wolf rufen";
+	description			= 	"Recipe: Call Wolf";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -190,16 +190,16 @@ func void UseScroll_SumWolf ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Wolf rufen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Calling a wolf - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Wolfsfell"					);
+					Doc_PrintLines	( nDocID,  0, "1x wolf fur"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SUMWOLF] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´WOLF RUFEN´: 1 Wolfsfell");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role 'WOLF RUFEN?: 1 wolf fur");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SUMWOLF] = TRUE;
 		};
@@ -207,7 +207,7 @@ func void UseScroll_SumWolf ()
 
 INSTANCE ItWr_Scroll_SumGobSkel		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -218,7 +218,7 @@ INSTANCE ItWr_Scroll_SumGobSkel		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_SumGobskel;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Goblin - Skelett erschaffen";
+	description			= 	"Recipe: Goblin - Create Skeleton";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -232,16 +232,16 @@ func void UseScroll_SumGobSkel ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Goblin - Skelett erschaffen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Goblin - Create Skeleton - Scroll of Sayings"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Goblinknochen"					);
+					Doc_PrintLines	( nDocID,  0, "1x goblink bone"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SUMGOBSKEL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´GOBLINSKELETT ERSCHAFFEN´: 1 Goblinknochen");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? GOBLINSKELETT CREATE?: 1 goblin bone");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SUMGOBSKEL] = TRUE;
 		};
@@ -249,7 +249,7 @@ func void UseScroll_SumGobSkel ()
 
 INSTANCE ItWr_Scroll_SumSkel		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -260,7 +260,7 @@ INSTANCE ItWr_Scroll_SumSkel		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_SumSkel;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Skelett beschwören";
+	description			= 	"Recipe: Summon Skeleton";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -274,16 +274,16 @@ func void UseScroll_SumSkel ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Skelett beschwören - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Summon Skeleton - Role of Spell"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Skelettknochen"					);
+					Doc_PrintLines	( nDocID,  0, "1x skeleton bone"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SUMSKEL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´SKELET BESCHWÖREN´: 1 Skelettknochen");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role of spell? SKELET CERTIFICATE?: 1 skeleton bone");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SUMSKEL] = TRUE;
 		};
@@ -291,7 +291,7 @@ func void UseScroll_SumSkel ()
 
 INSTANCE ItWr_Scroll_SummonGuardian		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -302,7 +302,7 @@ INSTANCE ItWr_Scroll_SummonGuardian		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_SummonGuardian;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Wächter erschaffen";
+	description			= 	"Recipe: Create Guardian";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -316,17 +316,17 @@ func void UseScroll_SummonGuardian ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Wächter erschaffen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Create Guardian - role of saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x alte Münze"					);
-					Doc_PrintLines	( nDocID,  0, "1x Bergkristall"					);
+					Doc_PrintLines	( nDocID,  0, "1x old coin"					);
+					Doc_PrintLines	( nDocID,  0, "1x Rock Crystal"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SUMMONGUARDIAN] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´WÄCHTER BESCHWÖREN´: 1 alte Münze und 1 Bergkristall");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role 'GUARDIAN CERTIFICATE': 1 old coin and 1 rock crystal.");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SUMMONGUARDIAN] = TRUE;
 		};
@@ -334,7 +334,7 @@ func void UseScroll_SummonGuardian ()
 
 INSTANCE ItWr_Scroll_SumGol		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -345,7 +345,7 @@ INSTANCE ItWr_Scroll_SumGol		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_SumGol;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Golem erschaffen";
+	description			= 	"Recipe: Create Golem";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -359,17 +359,17 @@ func void UseScroll_SumGol ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Golem erschaffen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Golem create - role of saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x alte Münze"					);
-					Doc_PrintLines	( nDocID,  0, "1x Bergkristall"					);
+					Doc_PrintLines	( nDocID,  0, "1x old coin"					);
+					Doc_PrintLines	( nDocID,  0, "1x Rock Crystal"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SUMGOL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´GOLEM ERSCHAFFEN´: 1 Steingolemherz");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? GOLEM EASCHAFFEN?: 1 stone golem heart");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SUMGOL] = TRUE;
 		};
@@ -377,7 +377,7 @@ func void UseScroll_SumGol ()
 
 INSTANCE ItWr_Scroll_SummonZombie		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -388,7 +388,7 @@ INSTANCE ItWr_Scroll_SummonZombie		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_SummonZombie;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Zombie beschwören";
+	description			= 	"Recipe: Summon Zombie";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -402,17 +402,17 @@ func void UseScroll_SummonZombie ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Zombie beschwören - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Summon Zombie - role of saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Zombiefleisch"					);
-					Doc_PrintLines	( nDocID,  0, "1x Menschenblut"					);
+					Doc_PrintLines	( nDocID,  0, "1x zombie meat"					);
+					Doc_PrintLines	( nDocID,  0, "1x human blood"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SUMMONZOMBIE] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´ZOMBIE BESCHWÖREN´: 1 Zombiefleisch, 1 Knochen und 2 Fläschchen Menschenblut");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role? ZOMBIE DEMONS?: 1 zombie meat, 1 bone and 2 bottles of human blood");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SUMMONZOMBIE] = TRUE;
 		};
@@ -420,7 +420,7 @@ func void UseScroll_SummonZombie ()
 
 INSTANCE ItWr_Scroll_SumDemon		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -431,7 +431,7 @@ INSTANCE ItWr_Scroll_SumDemon		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_SumDemon;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Dämon beschwören";
+	description			= 	"Recipe: Summon Demon";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -445,16 +445,16 @@ func void UseScroll_SumDemon ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Dämon beschwören - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Summon demon - role of saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Dämonenherz"					);
+					Doc_PrintLines	( nDocID,  0, "1x Demonheart"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SUMDEMON] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´DÄMON BESCHWÖREN´: 1 Dämonenherz");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role of spell? DEMON SPELLING?: 1 demon heart");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SUMDEMON] = TRUE;
 		};
@@ -462,7 +462,7 @@ func void UseScroll_SumDemon ()
 
 INSTANCE ItWr_Scroll_ArmyOfDarkness		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -473,7 +473,7 @@ INSTANCE ItWr_Scroll_ArmyOfDarkness		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_ArmyOfDarkness;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Armee der Finsternis";
+	description			= 	"Recipe: Army of Darkness";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -487,19 +487,19 @@ func void UseScroll_ArmyOfDarkness ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Armee der Finsternis - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Army of Darkness - Scrolling role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Dämonenherz"					);
-					Doc_PrintLines	( nDocID,  0, "1x Skelettknochen"					);
-					Doc_PrintLines	( nDocID,  0, "1x Steigolemherz"					);
-					Doc_PrintLines	( nDocID,  0, "1x schwarze Perle"					);
+					Doc_PrintLines	( nDocID,  0, "1x Demonheart"					);
+					Doc_PrintLines	( nDocID,  0, "1x skeleton bone"					);
+					Doc_PrintLines	( nDocID,  0, "1x stair lift heart"					);
+					Doc_PrintLines	( nDocID,  0, "1x black pearl"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_ARMYOFDARKNESS] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´ARMEE DER FINSTERNIS´: 1 Skelettknochen, 1 schwarze Perle, 1 Herz eines Steingolems und 1 Dämonenherz");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role? ARMS OF THE DARK?: 1 skeleton bone, 1 black pearl, 1 heart of a stone golem and 1 demon heart.");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_ARMYOFDARKNESS] = TRUE;
 		};
@@ -507,7 +507,7 @@ func void UseScroll_ArmyOfDarkness ()
 
 INSTANCE ItWr_Scroll_InstantIceball		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -518,7 +518,7 @@ INSTANCE ItWr_Scroll_InstantIceball		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_InstantIceball;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Eisball";
+	description			= 	"Recipe: Ice ball";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -532,16 +532,16 @@ func void UseScroll_InstantIceball ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Eisball - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Ice ball - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Pech"					);
+					Doc_PrintLines	( nDocID,  0, "1x Bad luck"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_INSTANTICEBALL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´EISBALL´: 1 Pech");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? ICE BALL?: 1 pitch");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_INSTANTICEBALL] = TRUE;
 		};
@@ -549,7 +549,7 @@ func void UseScroll_InstantIceball ()
 
 INSTANCE ItWr_Scroll_Icelance		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -560,7 +560,7 @@ INSTANCE ItWr_Scroll_Icelance		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Icelance;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Eislanze";
+	description			= 	"Recipe: Ice lance";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -574,16 +574,16 @@ func void UseScroll_Icelance ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Eislanze - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Ice lance - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Pech"					);
+					Doc_PrintLines	( nDocID,  0, "1x Bad luck"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_ICELANCE] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´EISLANZE´: 1 Pech");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role? ice lance?: 1 pitch");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_ICELANCE] = TRUE;
 		};
@@ -591,7 +591,7 @@ func void UseScroll_Icelance ()
 
 INSTANCE ItWr_Scroll_Geyser		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -602,7 +602,7 @@ INSTANCE ItWr_Scroll_Geyser		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Geyser;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Geysir";
+	description			= 	"Recipe: Geysir";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -616,16 +616,16 @@ func void UseScroll_Geyser ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Geysir - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Geyser - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Aquamarin"					);
+					Doc_PrintLines	( nDocID,  0, "1x Aquamarine"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_GEYSER] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´GEYSIR´: 1 Aquamarin");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role?GEYSIR?: 1 Aquamarine");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_GEYSER] = TRUE;
 		};
@@ -633,7 +633,7 @@ func void UseScroll_Geyser ()
 
 INSTANCE ItWr_Scroll_Icecube		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -644,7 +644,7 @@ INSTANCE ItWr_Scroll_Icecube		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Icecube;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Eisblock";
+	description			= 	"Recipe: Ice block";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -658,17 +658,17 @@ func void UseScroll_Icecube ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Eisblock - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Ice block - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Aquamarin"					);
-					Doc_PrintLines	( nDocID,  0, "1x Gletscher Quartz"					);
+					Doc_PrintLines	( nDocID,  0, "1x Aquamarine"					);
+					Doc_PrintLines	( nDocID,  0, "1x Glacier Quartz"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_ICECUBE] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´EISBLOCK´: 1 Gletscher Quartz und 1 Aquamarin");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role? ICE BLOCK?: 1 glacier Quartz and 1 Aquamarine");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_ICECUBE] = TRUE;
 		};
@@ -676,7 +676,7 @@ func void UseScroll_Icecube ()
 
 INSTANCE ItWr_Scroll_Waterfist		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -687,7 +687,7 @@ INSTANCE ItWr_Scroll_Waterfist		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Waterfist;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Wasserfaust";
+	description			= 	"Recipe: Water Fist";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -701,17 +701,17 @@ func void UseScroll_Waterfist ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Wasserfaust - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Water Fist - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Aquamarin"					);
-					Doc_PrintLines	( nDocID,  0, "1x Bergkristall"					);
+					Doc_PrintLines	( nDocID,  0, "1x Aquamarine"					);
+					Doc_PrintLines	( nDocID,  0, "1x Rock Crystal"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_WATERFIST] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´WASSERFAUST´: 1 Aquamarin und 1 Bergkristall");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the spell roll 'WATERFAUST?: 1 Aquamarine and 1 rock crystal");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_WATERFIST] = TRUE;
 		};
@@ -719,7 +719,7 @@ func void UseScroll_Waterfist ()
 
 INSTANCE ItWr_Scroll_Icewave		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -730,7 +730,7 @@ INSTANCE ItWr_Scroll_Icewave		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Icewave;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Eiswelle";
+	description			= 	"Recipe: Ice wave";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -744,17 +744,17 @@ func void UseScroll_Icewave ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Eiswelle - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Ice wave - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Gletscher Quartz"					);
-					Doc_PrintLines	( nDocID,  0, "1x Aquamarin"					);
+					Doc_PrintLines	( nDocID,  0, "1x Glacier Quartz"					);
+					Doc_PrintLines	( nDocID,  0, "1x Aquamarine"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_ICEWAVE] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´EISWELLE´: 1 Gletscher Quartz und 1 Aquamarin");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role? ice wave?: 1 glacier quartz and 1 aquamarine");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_ICEWAVE] = TRUE;
 		};
@@ -762,7 +762,7 @@ func void UseScroll_Icewave ()
 
 INSTANCE ItWr_Scroll_Icerain		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -773,7 +773,7 @@ INSTANCE ItWr_Scroll_Icerain		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Icerain;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Eisregen";
+	description			= 	"Recipe: Ice rain";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -787,16 +787,16 @@ func void UseScroll_Icerain ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Eisregen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Ice rain - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Pech"					);
+					Doc_PrintLines	( nDocID,  0, "1x Bad luck"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_ICERAIN] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´EISREGEN´: 1 Pech");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? ICE RAIN?: 1 pitch");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_ICERAIN] = TRUE;
 		};
@@ -804,7 +804,7 @@ func void UseScroll_Icerain ()
 
 INSTANCE ItWr_Scroll_InstantFireball		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -815,7 +815,7 @@ INSTANCE ItWr_Scroll_InstantFireball		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_InstantFireball;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Feuerball";
+	description			= 	"Recipe: Fireball";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -829,16 +829,16 @@ func void UseScroll_InstantFireball ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Feuerball - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Fireball - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Pech"					);
+					Doc_PrintLines	( nDocID,  0, "1x Bad luck"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_INSTANTFIREBALL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´FEUERBALL´: 1 Pech");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the spell roll? FIREBALL?: 1 pitch pitch");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_INSTANTFIREBALL] = TRUE;
 		};
@@ -846,7 +846,7 @@ func void UseScroll_InstantFireball ()
 
 INSTANCE ItWr_Scroll_Firestorm		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -857,7 +857,7 @@ INSTANCE ItWr_Scroll_Firestorm		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Firestorm;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Kleiner Feuersturm";
+	description			= 	"Recipe: Small firestorm";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -871,17 +871,17 @@ func void UseScroll_Firestorm ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Kleiner Feuersturm - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Small firestorm - role of saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Pech"					);
-					Doc_PrintLines	( nDocID,  0, "1x Schwefel"					);
+					Doc_PrintLines	( nDocID,  0, "1x Bad luck"					);
+					Doc_PrintLines	( nDocID,  0, "1x sulphur"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_FIRESTORM] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´KLEINER FEUERSTURM´: 1 Pech und 1 Schwefel");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role 'SMALL FIREstorm': 1 pitch and 1 sulphur.");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_FIRESTORM] = TRUE;
 		};
@@ -889,7 +889,7 @@ func void UseScroll_Firestorm ()
 
 INSTANCE ItWr_Scroll_ChargeFireball		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -900,7 +900,7 @@ INSTANCE ItWr_Scroll_ChargeFireball		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_ChargeFireball;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Großer Feuerball";
+	description			= 	"Recipe: Big fireball";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -914,17 +914,17 @@ func void UseScroll_ChargeFireball ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Großer Feuerball - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Big Fireball - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Pech"					);
-					Doc_PrintLines	( nDocID,  0, "1x Schwefel"					);
+					Doc_PrintLines	( nDocID,  0, "1x Bad luck"					);
+					Doc_PrintLines	( nDocID,  0, "1x sulphur"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_CHARGEFIREBALL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´GROßER FEUERBALL´: 1 Pech und 1 Schwefel");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? LARGE FIREBALL?: 1 pitch and 1 sulphur.");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_CHARGEFIREBALL] = TRUE;
 		};
@@ -932,7 +932,7 @@ func void UseScroll_ChargeFireball ()
 
 INSTANCE ItWr_Scroll_Pyrokinesis		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -943,7 +943,7 @@ INSTANCE ItWr_Scroll_Pyrokinesis		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Pyrokinesis;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Großer Feuersturm";
+	description			= 	"Recipe: Great firestorm";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -957,17 +957,17 @@ func void UseScroll_Pyrokinesis ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Großer Feuersturm - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Great firestorm - role of saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Schwefel"					);
-					Doc_PrintLines	( nDocID,  0, "1x Zunge eines Feuerwarans"					);
+					Doc_PrintLines	( nDocID,  0, "1x sulphur"					);
+					Doc_PrintLines	( nDocID,  0, "1x tongue of a fire monitor"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_PYROKINESIS] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´GROßER FEUERSTURM´: 1 Schwefel und 1 Zunge eines Feuerwarans");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role 'LARGE FIRE-storm': 1 sulphur and 1 tongue of a fire monitor");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_PYROKINESIS] = TRUE;
 		};
@@ -975,7 +975,7 @@ func void UseScroll_Pyrokinesis ()
 
 INSTANCE ItWr_Scroll_Firerain		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -986,7 +986,7 @@ INSTANCE ItWr_Scroll_Firerain		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Firerain;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Feuerregen";
+	description			= 	"Recipe recipe: Fire rain";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1000,17 +1000,17 @@ func void UseScroll_Firerain ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Feuerregen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Fire rain - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Pech"					);
-					Doc_PrintLines	( nDocID,  0, "1x Zunge eines Feuerwarans"					);
+					Doc_PrintLines	( nDocID,  0, "1x Bad luck"					);
+					Doc_PrintLines	( nDocID,  0, "1x tongue of a fire monitor"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_FIRERAIN] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´FEUERREGEN´: 1 Pech und 1 Zunge eines Feuerwarans");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role 'FIRE RAIN?: 1 pitch and 1 tongue of a fire monitor");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_FIRERAIN] = TRUE;
 		};
@@ -1018,7 +1018,7 @@ func void UseScroll_Firerain ()
 
 INSTANCE ItWr_Scroll_Thunderstorm		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1029,7 +1029,7 @@ INSTANCE ItWr_Scroll_Thunderstorm		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Thunderstorm;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Unwetter";
+	description			= 	"Recipe: Storm";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1043,17 +1043,17 @@ func void UseScroll_Thunderstorm ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Unwetter - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Storm - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Gletscher Quartz"					);
-					Doc_PrintLines	( nDocID,  0, "1x Flügel"					);
+					Doc_PrintLines	( nDocID,  0, "1x Glacier Quartz"					);
+					Doc_PrintLines	( nDocID,  0, "1x grand piano"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_THUNDERSTORM] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´UNWETTER´: 1 Gletscher Quartz und 1 Flügel");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the role?UNWETTER?: 1 glacier Quartz and 1 wing");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_THUNDERSTORM] = TRUE;
 		};
@@ -1061,7 +1061,7 @@ func void UseScroll_Thunderstorm ()
 
 INSTANCE ItWr_Scroll_Thunderball		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1072,7 +1072,7 @@ INSTANCE ItWr_Scroll_Thunderball		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Thunderball;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Kugelblitz";
+	description			= 	"Recipe: Ball lightning";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1086,17 +1086,17 @@ func void UseScroll_Thunderball ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Kugelblitz - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Ball flash - slogan roll"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Schwefel"					);
-					Doc_PrintLines	( nDocID,  0, "1x Bergkristall"					);
+					Doc_PrintLines	( nDocID,  0, "1x sulphur"					);
+					Doc_PrintLines	( nDocID,  0, "1x Rock Crystal"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_THUNDERBALL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´KUGELBLITZ´: 1 Schwefel und 1 Bergkristall");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the banner? BALL FLASH?: 1 sulphur and 1 rock crystal");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_THUNDERBALL] = TRUE;
 		};
@@ -1104,7 +1104,7 @@ func void UseScroll_Thunderball ()
 
 INSTANCE ItWr_Scroll_LightningFlash		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1115,7 +1115,7 @@ INSTANCE ItWr_Scroll_LightningFlash		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_LightningFlash;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Blitzschlag";
+	description			= 	"Recipe: Lightning strike";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1129,17 +1129,17 @@ func void UseScroll_LightningFlash ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Blitzschlag - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Lightning strike - spell roll"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Gletscher Quartz"					);
-					Doc_PrintLines	( nDocID,  0, "1x Bergkristall"					);
+					Doc_PrintLines	( nDocID,  0, "1x Glacier Quartz"					);
+					Doc_PrintLines	( nDocID,  0, "1x Rock Crystal"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_LIGHTNINGFLASH] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´BLITZSCHLAG´: 1 Gletscher Quartz und 1 Bergkristall");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? FLASHING?: 1 glacier Quartz and 1 rock crystal");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_LIGHTNINGFLASH] = TRUE;
 		};
@@ -1147,7 +1147,7 @@ func void UseScroll_LightningFlash ()
 
 INSTANCE ItWr_Scroll_SuckEnergy		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1158,7 +1158,7 @@ INSTANCE ItWr_Scroll_SuckEnergy		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_SuckEnergy;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Energie stehlen";
+	description			= 	"Recipe: Stealing energy";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1172,16 +1172,16 @@ func void UseScroll_SuckEnergy ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Energie stehlen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Stealing energy - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Menschenblut"					);
+					Doc_PrintLines	( nDocID,  0, "1x human blood"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SUCKENERGY] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´ENERGIE STEHLEN´: 1 Menschenblut");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role of ENERGY STEELS: 1 human blood");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SUCKENERGY] = TRUE;
 		};
@@ -1189,7 +1189,7 @@ func void UseScroll_SuckEnergy ()
 
 INSTANCE ItWr_Scroll_Zerfleischen		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1200,7 +1200,7 @@ INSTANCE ItWr_Scroll_Zerfleischen		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Zerfleischen;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Zerfleischen";
+	description			= 	"Recipe: Meat cutting";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1214,16 +1214,16 @@ func void UseScroll_Zerfleischen ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Zerfleischen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Mangle - Spruchrolle"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Pech"					);
+					Doc_PrintLines	( nDocID,  0, "1x Bad luck"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_ZERFLEISCHEN] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´ZERFLEISCHEN´: 1 Pech");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? MEAT?: 1 bad luck");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_ZERFLEISCHEN] = TRUE;
 		};
@@ -1231,7 +1231,7 @@ func void UseScroll_Zerfleischen ()
 
 INSTANCE ItWr_Scroll_BeliarsRage		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1242,7 +1242,7 @@ INSTANCE ItWr_Scroll_BeliarsRage		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_BeliarsRage;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Beliars Zorn";
+	description			= 	"Recipe: Beliars anger";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1256,17 +1256,17 @@ func void UseScroll_BeliarsRage ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Beliars Zorn - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Beliars Zorn - Scroll of Wrath"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Schwarze Perle"					);
-					Doc_PrintLines	( nDocID,  0, "2x Kohle"					);
+					Doc_PrintLines	( nDocID,  0, "1x Black Pearl"					);
+					Doc_PrintLines	( nDocID,  0, "2x coal"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_BELIARSRAGE] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´BELIARS ZORN´: 1 Schwarze Perle und 2 Kohle");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? BELIARS ZORN?: 1 black pearl and 2 charcoal");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_BELIARSRAGE] = TRUE;
 		};
@@ -1274,7 +1274,7 @@ func void UseScroll_BeliarsRage ()
 
 INSTANCE ItWr_Scroll_Skull		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1285,7 +1285,7 @@ INSTANCE ItWr_Scroll_Skull		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Skull;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Schrei der Toten";
+	description			= 	"Recipe: scream of the dead";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1299,18 +1299,18 @@ func void UseScroll_Skull ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Schrei der Toten - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Scream of the Dead - Role of Saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "2x Menschenblut"					);
-					Doc_PrintLines	( nDocID,  0, "3x Zombiefleisch"					);
-					Doc_PrintLines	( nDocID,  0, "2x Skelettknochen"					);
+					Doc_PrintLines	( nDocID,  0, "2x human blood"					);
+					Doc_PrintLines	( nDocID,  0, "3x zombie meat"					);
+					Doc_PrintLines	( nDocID,  0, "2x skeletal bones"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SKULL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´SCHREI DER TOTEN´: 2 Menschenblut, 3 Zombiefleisch und 2 Skelettknochen");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role of CRIES OF THE DEAD?: 2 human blood, 3 zombie flesh and 2 skeletal bones");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SKULL] = TRUE;
 		};
@@ -1318,7 +1318,7 @@ func void UseScroll_Skull ()
 
 INSTANCE ItWr_Scroll_BreathOfDeath		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1329,7 +1329,7 @@ INSTANCE ItWr_Scroll_BreathOfDeath		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_BreathOfDeath;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Todeshauch";
+	description			= 	"Recipe: Death Breeze";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1343,17 +1343,17 @@ func void UseScroll_BreathOfDeath ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Todeshauch - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Death breath - role of saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Schwarze Perle"					);
-					Doc_PrintLines	( nDocID,  0, "1x Kohle"					);
+					Doc_PrintLines	( nDocID,  0, "1x Black Pearl"					);
+					Doc_PrintLines	( nDocID,  0, "1x coal"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_BREATHOFDEATH] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´TODESHAUCH´: 1 Schwarze Perle und 1 Kohle");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the spell roll? TODESHAUCH?: 1 black pearl and 1 coal");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_BREATHOFDEATH] = TRUE;
 		};
@@ -1361,7 +1361,7 @@ func void UseScroll_BreathOfDeath ()
 
 INSTANCE ItWr_Scroll_Light		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1372,7 +1372,7 @@ INSTANCE ItWr_Scroll_Light		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Light;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Licht";
+	description			= 	"Recipe: Light";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1386,16 +1386,16 @@ func void UseScroll_Light ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Licht - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Light - role of saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Goldmünze"					);
+					Doc_PrintLines	( nDocID,  0, "1x gold coin"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_LIGHT] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´LICHT´: 1 Goldmünze");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the scroll? LIGHT?: 1 gold coin");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_LIGHT] = TRUE;
 		};
@@ -1403,7 +1403,7 @@ func void UseScroll_Light ()
 
 INSTANCE ItWr_Scroll_Shrink		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1414,7 +1414,7 @@ INSTANCE ItWr_Scroll_Shrink		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_Shrink;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Monster schrumpfen";
+	description			= 	"Recipe: Shrink monsters";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1428,17 +1428,17 @@ func void UseScroll_Shrink ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Monster schrumpfen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Shrinking monsters - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Goblinknochen"					);
-					Doc_PrintLines	( nDocID,  0, "1x Trollzahn"					);
+					Doc_PrintLines	( nDocID,  0, "1x goblink bone"					);
+					Doc_PrintLines	( nDocID,  0, "1x troll tooth"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_SHRINK] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´MONSTER SCHRUMPFEN´: 1 Goblinknochen und 1 Trollzahn");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the spelling roll? MONSTER SCHRUMPFEN?: 1 goblin bone and 1 troll tooth");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_SHRINK] = TRUE;
 		};
@@ -1446,7 +1446,7 @@ func void UseScroll_Shrink ()
 
 INSTANCE ItWr_Scroll_HarmUndead		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1457,7 +1457,7 @@ INSTANCE ItWr_Scroll_HarmUndead		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_HarmUndead;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Untote vernichten";
+	description			= 	"Recipe: Destroy undead";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1471,16 +1471,16 @@ func void UseScroll_HarmUndead ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Untote vernichten - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Destroy undead - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Heiliges Wasser"					);
+					Doc_PrintLines	( nDocID,  0, "1x Holy Water"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_HARMUNDEAD] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´UNTOTE VERNICHTEN´: 1 Heiliges Wasser");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role of 'SAVE UNTOTE VERNICHTEN': 1 Holy Water");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_HARMUNDEAD] = TRUE;
 		};
@@ -1488,7 +1488,7 @@ func void UseScroll_HarmUndead ()
 
 INSTANCE ItWr_Scroll_LightHeal		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1499,7 +1499,7 @@ INSTANCE ItWr_Scroll_LightHeal		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_LightHeal;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Leichte Wunden heilen";
+	description			= 	"Recipe: Healing light wounds";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1513,16 +1513,16 @@ func void UseScroll_LightHeal ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Leichte Wunden heilen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Healing light wounds - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Heilpflanze"					);
+					Doc_PrintLines	( nDocID,  0, "1x medicinal plant"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_LIGHTHEAL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´LEICHTE WUNDEN HEILEN´: 1 Heilpflanze");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? LIGHT WOUND HEALING?: 1 medicinal plant");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_LIGHTHEAL] = TRUE;
 		};
@@ -1530,7 +1530,7 @@ func void UseScroll_LightHeal ()
 
 INSTANCE ItWr_Scroll_MediumHeal		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1541,7 +1541,7 @@ INSTANCE ItWr_Scroll_MediumHeal		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_MediumHeal;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Mittlere Wunden heilen";
+	description			= 	"Recipe: Healing medium wounds";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1555,16 +1555,16 @@ func void UseScroll_MediumHeal ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Mittlere Wunden heilen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Healing medium wounds - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Heilkraut"					);
+					Doc_PrintLines	( nDocID,  0, "1x medicinal herb"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_MEDIUMHEAL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´MITTLERE WUNDEN HEILEN´: 1 Heilkraut");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? MEDIUM WOUNDS HEALING?: 1 Herb");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_MEDIUMHEAL] = TRUE;
 		};
@@ -1572,7 +1572,7 @@ func void UseScroll_MediumHeal ()
 
 INSTANCE ItWr_Scroll_FullHeal		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1583,7 +1583,7 @@ INSTANCE ItWr_Scroll_FullHeal		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_FullHeal;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Schwere Wunden heilen";
+	description			= 	"Recipe: Healing severe wounds";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1597,16 +1597,16 @@ func void UseScroll_FullHeal ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Schwere Wunden heilen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Healing severe wounds - saying role"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Heilwurzel"					);
+					Doc_PrintLines	( nDocID,  0, "1x healing root"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_FULLHEAL] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´SCHWERE WUNDEN HEILEN´: 1 Heilwurzel");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? HEAVY WOUNDS HEALING?: 1 Healing Root");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_FULLHEAL] = TRUE;
 		};
@@ -1614,7 +1614,7 @@ func void UseScroll_FullHeal ()
 
 INSTANCE ItWr_Scroll_AuraFlammen		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1625,7 +1625,7 @@ INSTANCE ItWr_Scroll_AuraFlammen		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseScroll_AuraFlammen;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Aura der Flammen";
+	description			= 	"Recipe: Aura of Flames";
 	TEXT[5]	= NAME_Value;
 	Count[5] = value;
 };
@@ -1639,23 +1639,23 @@ func void UseScroll_AuraFlammen ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Aura der Flammen - Spruchrolle"					);
+					Doc_PrintLine	( nDocID,  0, "Aura of the Flames - Role of Saying"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Spruchrolle Feuerregen"					);
-					Doc_PrintLines	( nDocID,  0, "1x Spruchrolle Feuersturm"					);
-					Doc_PrintLines	( nDocID,  0, "1x Dämonenherz"					);
-					Doc_PrintLines	( nDocID,  0, "1x Herz eines Feuergolems"					);
-					Doc_PrintLines	( nDocID,  0, "1x Feuerzunge"					);
-					Doc_PrintLines	( nDocID,  0, "3x Kohle"					);
-					Doc_PrintLines	( nDocID,  0, "1x Pech"					);
-					Doc_PrintLines	( nDocID,  0, "2x Schwefel"					);
+					Doc_PrintLines	( nDocID,  0, "1x saying role fire rain"					);
+					Doc_PrintLines	( nDocID,  0, "1x role of fire storm"					);
+					Doc_PrintLines	( nDocID,  0, "1x Demonheart"					);
+					Doc_PrintLines	( nDocID,  0, "1x Heart of a fire eagle"					);
+					Doc_PrintLines	( nDocID,  0, "1x tongue of fire"					);
+					Doc_PrintLines	( nDocID,  0, "3x coal"					);
+					Doc_PrintLines	( nDocID,  0, "1x Bad luck"					);
+					Doc_PrintLines	( nDocID,  0, "2x sulphur"					);
 
 					Doc_Show		( nDocID );
 
 		if (PLAYER_TALENT_SCROLLS[SCROLL_AuraFlammen] == FALSE)
 		{
-			B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´AURA DER FLAMMEN´: 1 Spruchrolle Feuerregen, 1 Spruchrolle Feuersturm, 1 Dämonenherz, 1 Herz eines Feuergolems, 1 Feuerzunge, 3 Kohle, 1 Pech, 2 Schwefel");
+			B_LogEntry	(TOPIC_TalentScrolls, "Ingredients for the saying role? AURA OF THE FLAMES?: 1 role of fire rain, 1 role of fire storm, 1 demon heart, 1 heart of a fire goyle, 1 tongue of fire, 3 charcoal, 1 pitch, 2 sulphur.");
 
 			PLAYER_TALENT_SCROLLS[SCROLL_AuraFlammen] = TRUE;
 		};

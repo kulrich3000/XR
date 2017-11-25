@@ -1,7 +1,7 @@
 INSTANCE Mod_7149_ASS_Mufid_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mufid"; 
+	name 		= "mufid"; 
 	guild 		= GIL_OUT;
 	id 			= 7149;
 	voice 		= 13;

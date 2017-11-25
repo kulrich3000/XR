@@ -1,7 +1,7 @@
 instance Mod_1747_KDF_Furgas_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Furgas";
+	name 		= "fur gas";
 	guild 		= GIL_VLK;
 	id 			= 1747;
 	voice 		= 13;

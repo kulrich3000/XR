@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Wisp(C_Npc)
 {
 	//----- Monster -----
-	name							=	"Irrlicht";
+	name							=	"Ghost Light";
 	guild							=	GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WISP;
 	level							=	4;
@@ -125,7 +125,7 @@ INSTANCE Wisp_Helper (Mst_Default_Wisp)
 
 INSTANCE RuheloseSeele_01 (Mst_Default_Wisp)
 {
-	name		= "Ruhelose Seele";
+	name		= "restless soul";
 	level				=	0;
 	B_SetVisuals_Wisp();
 	senses_range	=	0;
@@ -135,7 +135,7 @@ INSTANCE RuheloseSeele_01 (Mst_Default_Wisp)
 
 INSTANCE RuheloseSeele_02 (Mst_Default_Wisp)
 {
-	name		= "Ruhelose Seele";
+	name		= "restless soul";
 	level				=	0;
 	B_SetVisuals_Wisp();
 	senses_range	=	0;
@@ -145,7 +145,7 @@ INSTANCE RuheloseSeele_02 (Mst_Default_Wisp)
 
 INSTANCE RuheloseSeele_03 (Mst_Default_Wisp)
 {
-	name		= "Ruhelose Seele";
+	name		= "restless soul";
 	level				=	0;
 	B_SetVisuals_Wisp();
 	senses_range	=	0;
@@ -155,7 +155,7 @@ INSTANCE RuheloseSeele_03 (Mst_Default_Wisp)
 
 INSTANCE RuheloseSeele_04 (Mst_Default_Wisp)
 {
-	name		= "Ruhelose Seele";
+	name		= "restless soul";
 	level				=	0;
 	B_SetVisuals_Wisp();
 	senses_range	=	0;
@@ -165,7 +165,7 @@ INSTANCE RuheloseSeele_04 (Mst_Default_Wisp)
 
 INSTANCE RuheloseSeele_05 (Mst_Default_Wisp)
 {
-	name		= "Ruhelose Seele";
+	name		= "restless soul";
 	level				=	0;
 	B_SetVisuals_Wisp();
 	senses_range	=	0;
@@ -175,7 +175,7 @@ INSTANCE RuheloseSeele_05 (Mst_Default_Wisp)
 
 INSTANCE RuheloseSeele_06 (Mst_Default_Wisp)
 {
-	name		= "Ruhelose Seele";
+	name		= "restless soul";
 	level				=	0;
 	B_SetVisuals_Wisp();
 	senses_range	=	0;
@@ -185,7 +185,7 @@ INSTANCE RuheloseSeele_06 (Mst_Default_Wisp)
 
 INSTANCE RuheloseSeele_07 (Mst_Default_Wisp)
 {
-	name		= "Ruhelose Seele";
+	name		= "restless soul";
 	level				=	0;
 	B_SetVisuals_Wisp();
 	senses_range	=	0;
@@ -195,7 +195,7 @@ INSTANCE RuheloseSeele_07 (Mst_Default_Wisp)
 
 INSTANCE RuheloseSeele_08 (Mst_Default_Wisp)
 {
-	name		= "Ruhelose Seele";
+	name		= "restless soul";
 	level				=	0;
 	B_SetVisuals_Wisp();
 	senses_range	=	0;
@@ -205,7 +205,7 @@ INSTANCE RuheloseSeele_08 (Mst_Default_Wisp)
 
 INSTANCE RuheloseSeele_09 (Mst_Default_Wisp)
 {
-	name		= "Ruhelose Seele";
+	name		= "restless soul";
 	level				=	0;
 	B_SetVisuals_Wisp();
 	senses_range	=	0;

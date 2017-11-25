@@ -74,7 +74,7 @@ const int	Value_Pumafur_Feuer			= 	 30;
 /*****************ADDON*************************************************************************/
 INSTANCE ItAt_Addon_BCKopf (C_Item)
 {
-	name 				=	"Kopf";
+	name 				=	"Head";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -85,7 +85,7 @@ INSTANCE ItAt_Addon_BCKopf (C_Item)
 	material 			=	MAT_LEATHER;
 	
 
-	description			= 	"Kopf der Fangheuschrecke";
+	description			= 	"Mantis head";
 	TEXT[0]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -94,7 +94,7 @@ INSTANCE ItAt_Addon_BCKopf (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Meatbugflesh (C_Item)
 {
-	name 				=	"Wanzenfleisch";
+	name 				=	"Bug Meat";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -129,7 +129,7 @@ INSTANCE ItAt_Meatbugflesh (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SheepFur (C_Item)
 {
-	name 				=	"Schafsfell";
+	name 				=	"Sheep Skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -150,7 +150,7 @@ INSTANCE ItAt_SheepFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SheepFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Schafsfell";
+	name 				=	"undamaged sheepskin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -171,7 +171,7 @@ INSTANCE ItAt_SheepFur_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SheepFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Schafsfell";
+	name 				=	"scorched sheepskin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -192,7 +192,7 @@ INSTANCE ItAt_SheepFur_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ZiegenFur (C_Item)
 {
-	name 				=	"Ziegenfell";
+	name 				=	"goatskin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -213,7 +213,7 @@ INSTANCE ItAt_ZiegenFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ZiegenFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Ziegenfell";
+	name 				=	"intact goatskin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -234,7 +234,7 @@ INSTANCE ItAt_ZiegenFur_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ZiegenFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Ziegenfell";
+	name 				=	"scorched goatskin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -254,7 +254,7 @@ INSTANCE ItAt_ZiegenFur_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WolfFur (C_Item)
 {
-	name 				=	"Wolfsfell";
+	name 				=	"Wolf Skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -274,7 +274,7 @@ INSTANCE ItAt_WolfFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WolfFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Wolfsfell";
+	name 				=	"undamaged wolf fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -294,7 +294,7 @@ INSTANCE ItAt_WolfFur_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WolfFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Wolfsfell";
+	name 				=	"scorched wolf fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -314,7 +314,7 @@ INSTANCE ItAt_WolfFur_Feuer (C_Item)
 
 INSTANCE ItAt_TigerFur (C_Item)
 {
-	name 				=	"weißes Tigerfell";
+	name 				=	"white tiger skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -334,7 +334,7 @@ INSTANCE ItAt_TigerFur (C_Item)
 
 INSTANCE ItAt_TigerFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes weißes Tigerfell";
+	name 				=	"undamaged white tiger skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -354,7 +354,7 @@ INSTANCE ItAt_TigerFur_Rein (C_Item)
 
 INSTANCE ItAt_TigerFur_Feuer (C_Item)
 {
-	name 				=	"versengtes weißes Tigerfell";
+	name 				=	"scorched white tiger skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -374,7 +374,7 @@ INSTANCE ItAt_TigerFur_Feuer (C_Item)
 
 INSTANCE ItAt_StonePumaFur (C_Item)
 {
-	name 				=	"Steinpumafell";
+	name 				=	"pumpkin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -394,7 +394,7 @@ INSTANCE ItAt_StonePumaFur (C_Item)
 
 INSTANCE ItAt_StonePumaFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Steinpumafell";
+	name 				=	"undamaged stone pumpkin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -414,7 +414,7 @@ INSTANCE ItAt_StonePumaFur_Rein (C_Item)
 
 INSTANCE ItAt_StonePumaFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Steinpumafell";
+	name 				=	"scorched stone pumpkin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -434,7 +434,7 @@ INSTANCE ItAt_StonePumaFur_Feuer (C_Item)
 
 INSTANCE ItAt_PumaFur (C_Item)
 {
-	name 				=	"Pumafell";
+	name 				=	"pumpa fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -454,7 +454,7 @@ INSTANCE ItAt_PumaFur (C_Item)
 
 INSTANCE ItAt_PumaFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Pumafell";
+	name 				=	"undamaged puma fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -474,7 +474,7 @@ INSTANCE ItAt_PumaFur_Rein (C_Item)
 
 INSTANCE ItAt_PumaFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Pumafell";
+	name 				=	"scorched puma fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -494,7 +494,7 @@ INSTANCE ItAt_PumaFur_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_BugMandibles (C_Item)
 {
-	name 				=	"Feldräuberzangen";
+	name 				=	"Field Raider Mandibles";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -514,7 +514,7 @@ INSTANCE ItAt_BugMandibles (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Claw (C_Item)
 {
-	name 				=	"Krallen";
+	name 				=	"Claws";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -534,7 +534,7 @@ INSTANCE ItAt_Claw (C_Item)
 
 INSTANCE ItAt_AlligatorClaw (C_Item)
 {
-	name 				=	"Alligatorenkrallen";
+	name 				=	"alligator claws";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -554,7 +554,7 @@ INSTANCE ItAt_AlligatorClaw (C_Item)
 
 INSTANCE ItAt_DragonClaw (C_Item)
 {
-	name 				=	"Drachenkrallen";
+	name 				=	"dragon claws";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -574,7 +574,7 @@ INSTANCE ItAt_DragonClaw (C_Item)
 
 INSTANCE ItAt_DragonSehne (C_Item)
 {
-	name 				=	"Drachensehne";
+	name 				=	"dragon tendon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -594,7 +594,7 @@ INSTANCE ItAt_DragonSehne (C_Item)
 
 INSTANCE ItAt_DrachensnapperSehne (C_Item)
 {
-	name 				=	"Drachensnappersehne";
+	name 				=	"dragon snapper tendon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -614,7 +614,7 @@ INSTANCE ItAt_DrachensnapperSehne (C_Item)
 
 INSTANCE ItMi_Moleratstreifen (C_Item)
 {
-	name 				=	"Moleratstreifen";
+	name 				=	"molar strips";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -634,7 +634,7 @@ INSTANCE ItMi_Moleratstreifen (C_Item)
 
 INSTANCE ItAt_Wirbelsaeule (C_Item)
 {
-	name 				=	"Wirbelsäule eines Sumpfcrawlers";
+	name 				=	"Spine of a swamp crawler";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -654,7 +654,7 @@ INSTANCE ItAt_Wirbelsaeule (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_LurkerClaw (C_Item)
 {
-	name 				=	"Lurkerklaue";
+	name 				=	"Lurker's Claws";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -674,7 +674,7 @@ INSTANCE ItAt_LurkerClaw (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Teeth (C_Item)
 {
-	name 				=	"Zähne";
+	name 				=	"Teeth";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -694,7 +694,7 @@ INSTANCE ItAt_Teeth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Teeth_Wolf (C_Item)
 {
-	name 				=	"Zähne eines Wolfes, der seine eigene Mutter gerissen hat";
+	name 				=	"Teeth of a wolf that ripped its own mother's teeth";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;
@@ -714,7 +714,7 @@ INSTANCE ItAt_Teeth_Wolf (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ErzdemonTooth (C_Item)
 {
-	name 				=	"Zähne eines Erzdämons";
+	name 				=	"Teeth of an arch-demon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -734,7 +734,7 @@ INSTANCE ItAt_ErzdemonTooth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_CrawlerMandibles (C_Item)
 {
-	name 				=	"Minecrawlerzangen";
+	name 				=	"Minecrawler Mandibles";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -748,10 +748,10 @@ INSTANCE ItAt_CrawlerMandibles (C_Item)
 	
 	description			= 	name;
 	
-	TEXT[0]				= 	"Die Zangen können aufgebrochen, ";
-	TEXT[1]				= 	"und das Sekret darin geschlürft werden.";
-	TEXT[2]				= 	"Es regeniert die magische Kraft.";
-	TEXT[3]				= 	"Verliert mit der Zeit seine Wirkung.";
+	TEXT[0]				= 	"The mandibles can be opened ";
+	TEXT[1]				= 	"in order to drink the secretion inside them.";
+	TEXT[2]				= 	"This regenerates magic power.";
+	TEXT[3]				= 	"The effect fades in time.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 FUNC VOID Use_Mandibles()
@@ -770,7 +770,7 @@ FUNC VOID Use_Mandibles()
 /******************************************************************************************/
 INSTANCE ItAt_SpiderMandibles (C_Item)
 {
-	name 				=	"Spinnenzangen";
+	name 				=	"spider tongs";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -787,7 +787,7 @@ INSTANCE ItAt_SpiderMandibles (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DalmaZange (C_Item)
 {
-	name 				=	"Zange der Dalma";
+	name 				=	"Pliers of the Dalma";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -805,7 +805,7 @@ INSTANCE ItAt_DalmaZange (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Wing (C_Item)
 {
-	name 				=	"Flügel";
+	name 				=	"Wings";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -825,7 +825,7 @@ INSTANCE ItAt_Wing (C_Item)
 
 INSTANCE ItAt_FleischflyWing (C_Item)
 {
-	name 				=	"Flügel";
+	name 				=	"Wings";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -845,7 +845,7 @@ INSTANCE ItAt_FleischflyWing (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Sting (C_Item)
 {
-	name 				=	"Stachel";
+	name 				=	"Stinger";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -860,8 +860,8 @@ INSTANCE ItAt_Sting (C_Item)
 
 	description			= 	name;
 	TEXT[0]				= 	"";
-	TEXT[1]				= 	"Der Stachel";
-	TEXT[2]				= 	"enthält ein giftiges Sekret";
+	TEXT[1]				= 	"The stinger";
+	TEXT[2]				= 	"contains a poisonous secretion.";
 	TEXT[3]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -899,7 +899,7 @@ FUNC VOID Use_Sting()
 
 INSTANCE ItAt_FleischflySting (C_Item)
 {
-	name 				=	"Stachel";
+	name 				=	"Stinger";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -917,7 +917,7 @@ INSTANCE ItAt_FleischflySting (C_Item)
 /******************************************************************************************/
 INSTANCE itat_LurkerSkin (C_Item) //REPTILE Skin
 {
-	name 				=	"Reptilienhaut";
+	name 				=	"Reptile skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -927,7 +927,7 @@ INSTANCE itat_LurkerSkin (C_Item) //REPTILE Skin
 	visual 				=	"ItAt_LurkerSkin.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= 	"Die Haut eines Reptils";
+	description			= 	"The skin of a reptile";
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
@@ -936,7 +936,7 @@ INSTANCE itat_LurkerSkin (C_Item) //REPTILE Skin
 };
 INSTANCE itat_LurkerSkin_Young (C_Item) //REPTILE Skin
 {
-	name 				=	"Haut eines jungen Lurkers";
+	name 				=	"Skin of a young lurker";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -956,7 +956,7 @@ INSTANCE itat_LurkerSkin_Young (C_Item) //REPTILE Skin
 
 INSTANCE itat_Feuersnapperhaut (C_Item) //REPTILE Skin
 {
-	name 				=	"Feuersnapperhaut";
+	name 				=	"fire snapper skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -966,7 +966,7 @@ INSTANCE itat_Feuersnapperhaut (C_Item) //REPTILE Skin
 	visual 				=	"ItAt_LurkerSkin.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= 	"Die Haut eines Feuersnappers";
+	description			= 	"The skin of a fire snapper";
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
@@ -976,7 +976,7 @@ INSTANCE itat_Feuersnapperhaut (C_Item) //REPTILE Skin
 
 INSTANCE itat_Wassersnapperhaut (C_Item) //REPTILE Skin
 {
-	name 				=	"Wassersnapperhaut";
+	name 				=	"water snapper skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -986,7 +986,7 @@ INSTANCE itat_Wassersnapperhaut (C_Item) //REPTILE Skin
 	visual 				=	"ItAt_LurkerSkin.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= 	"Die Haut eines Wassersnappers";
+	description			= 	"The skin of a water snapper";
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
@@ -996,7 +996,7 @@ INSTANCE itat_Wassersnapperhaut (C_Item) //REPTILE Skin
 
 INSTANCE itat_Schattensnapperhaut (C_Item) //REPTILE Skin
 {
-	name 				=	"Schattensnapperhaut";
+	name 				=	"shadow snapper skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1006,7 +1006,7 @@ INSTANCE itat_Schattensnapperhaut (C_Item) //REPTILE Skin
 	visual 				=	"ItAt_LurkerSkin.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= 	"Die Haut eines Schattensnappers";
+	description			= 	"The skin of a shadow snapper";
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
@@ -1016,7 +1016,7 @@ INSTANCE itat_Schattensnapperhaut (C_Item) //REPTILE Skin
 
 INSTANCE itat_LindwurmHaut (C_Item) //REPTILE Skin
 {
-	name 				=	"Lindwurmhaut";
+	name 				=	"dragonfly skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1026,7 +1026,7 @@ INSTANCE itat_LindwurmHaut (C_Item) //REPTILE Skin
 	visual 				=	"ItAt_LindwurmSkin.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= 	"Die Haut eines Lindwurms";
+	description			= 	"The Skin of a Lindworm";
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
@@ -1036,7 +1036,7 @@ INSTANCE itat_LindwurmHaut (C_Item) //REPTILE Skin
 /******************************************************************************************/
 INSTANCE ItAt_UndeadSharkSkin (C_Item)
 {
-	name 				=	"Haut eines untoten Sumpfhais";
+	name 				=	"Skin of an Undead Marsh Shark";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1056,7 +1056,7 @@ INSTANCE ItAt_UndeadSharkSkin (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WargFur (C_Item)
 {
-	name 				=	"Wargfell";
+	name 				=	"Warg Skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1076,7 +1076,7 @@ INSTANCE ItAt_WargFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WargFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Wargfell";
+	name 				=	"undamaged warning fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1096,7 +1096,7 @@ INSTANCE ItAt_WargFur_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WargFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Wargfell";
+	name 				=	"scorched warning fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1116,7 +1116,7 @@ INSTANCE ItAt_WargFur_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_BlackwolfFur (C_Item)
 {
-	name 				=	"Schwarzes Wolfsfell";
+	name 				=	"Black wolf fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1136,7 +1136,7 @@ INSTANCE ItAt_BlackwolfFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_BlackwolfFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes schwarzes Wolfsfell";
+	name 				=	"undamaged black wolf fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1156,7 +1156,7 @@ INSTANCE ItAt_BlackwolfFur_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_BlackwolfFur_Feuer (C_Item)
 {
-	name 				=	"versengtes schwarzes Wolfsfell";
+	name 				=	"scorched black wolf fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1176,7 +1176,7 @@ INSTANCE ItAt_BlackwolfFur_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WargFur_Urs (C_Item)
 {
-	name 				=	"Wargfell";
+	name 				=	"Warg Skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1196,7 +1196,7 @@ INSTANCE ItAt_WargFur_Urs (C_Item)
 
 INSTANCE ItAt_WaterorcFur (C_Item)
 {
-	name 				=	"Wasserorkfell";
+	name 				=	"water sorbet";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1216,7 +1216,7 @@ INSTANCE ItAt_WaterorcFur (C_Item)
 
 INSTANCE ItAt_OrcdogFur (C_Item)
 {
-	name 				=	"Orkhundfell";
+	name 				=	"Skin of an Orc Dog";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1236,7 +1236,7 @@ INSTANCE ItAt_OrcdogFur (C_Item)
 
 INSTANCE ItAt_OrcdogFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Orkhundfell";
+	name 				=	"undamaged Orkhundfell";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1256,7 +1256,7 @@ INSTANCE ItAt_OrcdogFur_Rein (C_Item)
 
 INSTANCE ItAt_OrcdogFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Orkhundfell";
+	name 				=	"scorched orc dog fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1276,7 +1276,7 @@ INSTANCE ItAt_OrcdogFur_Feuer (C_Item)
 
 INSTANCE ItAt_BigOrcdogFur (C_Item)
 {
-	name 				=	"Großes Orkhundfell";
+	name 				=	"Large Orkhundfell";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1296,7 +1296,7 @@ INSTANCE ItAt_BigOrcdogFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Addon_KeilerFur (C_Item)
 {
-	name 				=	"Keilerfell";
+	name 				=	"Boar Skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1316,7 +1316,7 @@ INSTANCE ItAt_Addon_KeilerFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Addon_KeilerFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Keilerfell";
+	name 				=	"undamaged boar fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1336,7 +1336,7 @@ INSTANCE ItAt_Addon_KeilerFur_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Addon_KeilerFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Keilerfell";
+	name 				=	"scorched fetlock";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1356,7 +1356,7 @@ INSTANCE ItAt_Addon_KeilerFur_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_KeilerHauer (C_Item)
 {
-	name 				=	"Keilerhauer";
+	name 				=	"wild boar tusk";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1376,7 +1376,7 @@ INSTANCE ItAt_KeilerHauer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Addon_KeilerFur01 (C_Item)
 {
-	name 				=	"Keilerfell";
+	name 				=	"Boar Skin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1396,7 +1396,7 @@ INSTANCE ItAt_Addon_KeilerFur01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Addon_KeilerFur01_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Keilerfell";
+	name 				=	"undamaged boar fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1416,7 +1416,7 @@ INSTANCE ItAt_Addon_KeilerFur01_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Addon_KeilerFur01_Feuer (C_Item)
 {
-	name 				=	"versengtes Keilerfell";
+	name 				=	"scorched fetlock";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1436,7 +1436,7 @@ INSTANCE ItAt_Addon_KeilerFur01_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DrgSnapperHorn (C_Item)
 {
-	name 				=	"Horn eines Drachensnappers";
+	name 				=	"Dragon snapper horn";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1456,7 +1456,7 @@ INSTANCE ItAt_DrgSnapperHorn (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_CrawlerPlate (C_Item)
 {
-	name 				=	"Minecrawler-Panzerplatten";
+	name 				=	"Minecrawler armour plates";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1476,7 +1476,7 @@ INSTANCE ItAt_CrawlerPlate (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowFur (C_Item)
 {
-	name 				=	"Fell eines Schattenläufers";
+	name 				=	"Hide of a Shadowbeast";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1496,7 +1496,7 @@ INSTANCE ItAt_ShadowFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Fell eines Schattenläufers";
+	name 				=	"undamaged coat of a shadow runner";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1516,7 +1516,7 @@ INSTANCE ItAt_ShadowFur_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Fell eines Schattenläufers";
+	name 				=	"scorched coat";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1536,7 +1536,7 @@ INSTANCE ItAt_ShadowFur_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowFurNew (C_Item)
 {
-	name 				=	"Fell eines Schattenläufers";
+	name 				=	"Hide of a Shadowbeast";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1556,7 +1556,7 @@ INSTANCE ItAt_ShadowFurNew (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowFurNew_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Fell eines Schattenläufers";
+	name 				=	"undamaged coat of a shadow runner";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1576,7 +1576,7 @@ INSTANCE ItAt_ShadowFurNew_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowFurNew_Feuer (C_Item)
 {
-	name 				=	"versengtes Fell eines Schattenläufers";
+	name 				=	"scorched coat";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1596,7 +1596,7 @@ INSTANCE ItAt_ShadowFurNew_Feuer (C_Item)
 
 INSTANCE ItAt_FireShadowFur (C_Item)
 {
-	name 				=	"Fell eines Feuerläufers";
+	name 				=	"Skin of a Fire Runner";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1616,7 +1616,7 @@ INSTANCE ItAt_FireShadowFur (C_Item)
 
 INSTANCE ItAt_WaterShadowFur (C_Item)
 {
-	name 				=	"Fell eines Wasserläufers";
+	name 				=	"coat of a water strider";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1636,7 +1636,7 @@ INSTANCE ItAt_WaterShadowFur (C_Item)
 
 INSTANCE ItAt_IceShadowFur (C_Item)
 {
-	name 				=	"Fell eines Eisläufers";
+	name 				=	"Skin of an ice-skater";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1656,7 +1656,7 @@ INSTANCE ItAt_IceShadowFur (C_Item)
 
 INSTANCE ItAt_IceShadowFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Fell eines Eisläufers";
+	name 				=	"undamaged coat of an ice-skater";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1676,7 +1676,7 @@ INSTANCE ItAt_IceShadowFur_Rein (C_Item)
 
 INSTANCE ItAt_IceShadowFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Fell eines Eisläufers";
+	name 				=	"scorched coat";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1696,7 +1696,7 @@ INSTANCE ItAt_IceShadowFur_Feuer (C_Item)
 
 INSTANCE ItAt_NightmareFur (C_Item)
 {
-	name 				=	"Fell eines Nachtmahrs";
+	name 				=	"Skin of a nightmare";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1716,7 +1716,7 @@ INSTANCE ItAt_NightmareFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SharkSkin (C_Item)
 {
-	name 				=	"Haut eines Sumpfhais";
+	name 				=	"Skin of a Swampshark";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1736,7 +1736,7 @@ INSTANCE ItAt_SharkSkin (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollFur (C_Item)
 {
-	name 				=	"Trollfell";
+	name 				=	"Troll Hide";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1756,7 +1756,7 @@ INSTANCE ItAt_TrollFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Trollfell";
+	name 				=	"undamaged troll fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1776,7 +1776,7 @@ INSTANCE ItAt_TrollFur_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Trollfell";
+	name 				=	"scorched troll fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1796,7 +1796,7 @@ INSTANCE ItAt_TrollFur_Feuer (C_Item)
 
 INSTANCE ItAt_TrollHöhleFur (C_Item)
 {
-	name 				=	"Höhlentrollfell";
+	name 				=	"trollina";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1816,7 +1816,7 @@ INSTANCE ItAt_TrollHöhleFur (C_Item)
 
 INSTANCE ItAt_TrollHöhleFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Höhlentrollfell";
+	name 				=	"undamaged troll fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1836,7 +1836,7 @@ INSTANCE ItAt_TrollHöhleFur_Rein (C_Item)
 
 INSTANCE ItAt_TrollHöhleFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Höhlentrollfell";
+	name 				=	"scorched trollop fur";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1856,7 +1856,7 @@ INSTANCE ItAt_TrollHöhleFur_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollBlackFur (C_Item)
 {
-	name 				=	"Fell eines schwarzen Trolls";
+	name 				=	"Hide of a Black Troll";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1876,7 +1876,7 @@ INSTANCE ItAt_TrollBlackFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollBlackFur_Rein (C_Item)
 {
-	name 				=	"unbeschädigtes Fell eines schwarzen Trolls";
+	name 				=	"undamaged coat of a black troll";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1896,7 +1896,7 @@ INSTANCE ItAt_TrollBlackFur_Rein (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollBlackFur_Feuer (C_Item)
 {
-	name 				=	"versengtes Fell eines schwarzen Trolls";
+	name 				=	"scorched coat of a black troll";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1916,7 +1916,7 @@ INSTANCE ItAt_TrollBlackFur_Feuer (C_Item)
 
 INSTANCE ItAt_TrollSilberFur (C_Item)
 {
-	name 				=	"Fell eines silbernen Trolls";
+	name 				=	"Fur of a silver troll";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1936,7 +1936,7 @@ INSTANCE ItAt_TrollSilberFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_WaranFiretongue (C_Item)
 {
-	name 				=	"Flammenzunge";
+	name 				=	"Tongue of Fire";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1956,7 +1956,7 @@ INSTANCE ItAt_WaranFiretongue (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowHorn (C_Item)
 {
-	name 				=	"Horn eines Schattenläufers";
+	name 				=	"Horn of a Shadowbeast";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1976,7 +1976,7 @@ INSTANCE ItAt_ShadowHorn (C_Item)
 
 INSTANCE ItAt_FireShadowHorn (C_Item)
 {
-	name 				=	"Horn eines Feuerläufers";
+	name 				=	"Firebird's Horn";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -1996,7 +1996,7 @@ INSTANCE ItAt_FireShadowHorn (C_Item)
 
 INSTANCE ItAt_WaterShadowHorn (C_Item)
 {
-	name 				=	"Horn eines Wasserläufers";
+	name 				=	"waterspout horn";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2016,7 +2016,7 @@ INSTANCE ItAt_WaterShadowHorn (C_Item)
 
 INSTANCE ItAt_NightmareHorn (C_Item)
 {
-	name 				=	"Horn eines Nachtmahrs";
+	name 				=	"Horn of a nightmare";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2036,7 +2036,7 @@ INSTANCE ItAt_NightmareHorn (C_Item)
 
 INSTANCE ItAt_ShadowHorn2 (C_Item)
 {
-	name 				=	"Horn eines Schattenläufers";
+	name 				=	"Horn of a Shadowbeast";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2056,7 +2056,7 @@ INSTANCE ItAt_ShadowHorn2 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SharkTeeth (C_Item)
 {
-	name 				=	"Zähne eines Sumpfhais";
+	name 				=	"Teeth of a Swampshark";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2076,7 +2076,7 @@ INSTANCE ItAt_SharkTeeth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_LindwurmTeeth (C_Item)
 {
-	name 				=	"Zähne eines Lindwurms";
+	name 				=	"Teeth of a Lindworm";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2096,7 +2096,7 @@ INSTANCE ItAt_LindwurmTeeth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_UndeadSharkTeeth (C_Item)
 {
-	name 				=	"Zähne eines untoten Sumpfhais";
+	name 				=	"Teeth of an Undead Marsh Shark";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2116,7 +2116,7 @@ INSTANCE ItAt_UndeadSharkTeeth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollTooth (C_Item)
 {
-	name 				=	"Trollhauer";
+	name 				=	"Troll Tusk";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2139,7 +2139,7 @@ INSTANCE ItAt_TrollTooth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_StoneGolemHeart (C_Item)
 {
-	name 				=	"Herz eines Steingolems";
+	name 				=	"Heart of a Stone Golem";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MULTI;
@@ -2161,7 +2161,7 @@ INSTANCE ItAt_StoneGolemHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_FireGolemHeart (C_Item)
 {
-	name 				=	"Herz eines Feuergolems";
+	name 				=	"Heart of a Fire Golem";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MULTI;
@@ -2183,7 +2183,7 @@ INSTANCE ItAt_FireGolemHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_BalrogHeart (C_Item)
 {
-	name 				=	"Herz des Balrogs";
+	name 				=	"Heart of the Balrog";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_SHOW;
@@ -2196,7 +2196,7 @@ INSTANCE ItAt_BalrogHeart (C_Item)
 	on_state[0]		=	Use_BalrogHeart;
 
 	description			= 	name;
-	TEXT[0]				= 	"Ich habe das Gefühl, als sollte ich es essen.";
+	TEXT[0]				= 	"I feel like I should eat it.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	""; 
 	TEXT[3]				= 	"";
@@ -2216,7 +2216,7 @@ FUNC VOID Use_BalrogHeart()
 	hero.protection[PROT_EDGE] += 5000;
 	hero.protection[PROT_BLUNT] += 5000;
 
-	PrintScreen ("+20 HP, +3 Stärke, +3 Geschick, +5 Schutz vor Waffen", -1, -1, FONT_SCREEN, 2);
+	PrintScreen ("20 HP, +3 Strength, +3 Skill, +5 Protection from weapons", -1, -1, FONT_SCREEN, 2);
 
 	Mod_BalrogHeart = TRUE;
 };
@@ -2224,7 +2224,7 @@ FUNC VOID Use_BalrogHeart()
 /******************************************************************************************/
 INSTANCE ItAt_GigantHeart (C_Item)
 {
-	name 				=	"Giftige Eingeweide des Gigants der Vorzeit";
+	name 				=	"Toxic viscera of the giant of prehistoric times";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_SHOW;
@@ -2235,7 +2235,7 @@ INSTANCE ItAt_GigantHeart (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= 	name;
-	TEXT[0]				= 	"Diese Eingeweide stinken und triefen vor Gift.";
+	TEXT[0]				= 	"These guts stink and drip with poison.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	""; 
 	TEXT[3]				= 	"";
@@ -2245,7 +2245,7 @@ INSTANCE ItAt_GigantHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IceGolemHeart (C_Item)
 {
-	name 				=	"Herz eines Eisgolems";
+	name 				=	"Heart of a Ice Golem";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MULTI;
@@ -2267,7 +2267,7 @@ INSTANCE ItAt_IceGolemHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SwampGolemHeart (C_Item)
 {
-	name 				=	"Herz eines Sumpfgolems";
+	name 				=	"Heart of a marsh golem";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MULTI;
@@ -2288,7 +2288,7 @@ INSTANCE ItAt_SwampGolemHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_GoblinBone (C_Item)
 {
-	name 				=	"Knochen eines Goblins";
+	name 				=	"Goblin's Bone";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2308,7 +2308,7 @@ INSTANCE ItAt_GoblinBone (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SkeletonBone (C_Item)
 {
-	name 				=	"Knochen eines Skeletts";
+	name 				=	"Skeleton's Bone";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2328,7 +2328,7 @@ INSTANCE ItAt_SkeletonBone (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SkeletonBone_Herrscher (C_Item)
 {
-	name 				=	"Knochen eines alten Herrschers, der über tausend Jahre herrschte";
+	name 				=	"Bone of an ancient ruler who ruled over a thousand years";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;
@@ -2348,7 +2348,7 @@ INSTANCE ItAt_SkeletonBone_Herrscher (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SkeletonHead (C_Item)
 {
-	name 				=	"Totenschädel";
+	name 				=	"skull";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2368,7 +2368,7 @@ INSTANCE ItAt_SkeletonHead (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DemonHeart (C_Item)
 {
-	name 				=	"Herz eines Dämonen";
+	name 				=	"Heart of a Demon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2391,7 +2391,7 @@ INSTANCE ItAt_DemonHeart (C_Item)
 //**************************************************************************
 INSTANCE ItAt_SoulStone (C_Item)
 {
-	name 				=	"Seelenstein";
+	name 				=	"soul stone";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION|ITEM_SHOW;
@@ -2413,7 +2413,7 @@ INSTANCE ItAt_SoulStone (C_Item)
 };
 INSTANCE ItAt_SoulStone_Urnol (C_Item)
 {
-	name 				=	"Seelenstein von Urnol";
+	name 				=	"Soul stone of Urnol";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION|ITEM_SHOW;
@@ -2435,7 +2435,7 @@ INSTANCE ItAt_SoulStone_Urnol (C_Item)
 };
 INSTANCE ItAt_SoulStone_Formwandler (C_Item)
 {
-	name 				=	"Seelenstein vom Formwandler";
+	name 				=	"Soul stone from the shape-shifter";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION|ITEM_SHOW;
@@ -2457,7 +2457,7 @@ INSTANCE ItAt_SoulStone_Formwandler (C_Item)
 };
 INSTANCE ItAt_SoulStone_UD (C_Item)
 {
-	name 				=	"Seelenstein vom untoten Drachen";
+	name 				=	"Soul Stone of Undead Dragon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION|ITEM_SHOW;
@@ -2480,7 +2480,7 @@ INSTANCE ItAt_SoulStone_UD (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IcedragonHeart (C_Item)
 {
-	name 				=	"Herz eines Eisdrachen";
+	name 				=	"Heart of an Ice Dragon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -2500,7 +2500,7 @@ INSTANCE ItAt_IcedragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_RockdragonHeart (C_Item)
 {
-	name 				=	"Herz eines Felsdrachen";
+	name 				=	"Heart of a Fire Dragon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -2520,7 +2520,7 @@ INSTANCE ItAt_RockdragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SwampdragonHeart (C_Item)
 {
-	name 				=	"Herz eines Sumpfdrachens";
+	name 				=	"Heart of a Swamp Dragon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION; 
@@ -2540,7 +2540,7 @@ INSTANCE ItAt_SwampdragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_FiredragonHeart (C_Item)
 {
-	name 				=	"Herz eines Feuerdrachen";
+	name 				=	"Heart of a Fire Dragon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -2560,7 +2560,7 @@ INSTANCE ItAt_FiredragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DragonBlood (C_Item)
 {
-	name 				=	"Drachenblut";
+	name 				=	"Dragon Blood";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -2582,7 +2582,7 @@ INSTANCE ItAt_DragonBlood (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DragonElixier (C_Item)
 {
-	name 				=	"Flammenelixier";
+	name 				=	"flame elixir";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -2604,7 +2604,7 @@ INSTANCE ItAt_DragonElixier (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Menschenblut (C_Item)
 {
-	name 				=	"Menschenblut";
+	name 				=	"human blood";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -2626,7 +2626,7 @@ INSTANCE ItAt_Menschenblut (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Hexenblut (C_Item)
 {
-	name 				=	"Hexenblut";
+	name 				=	"witch's blood";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -2648,7 +2648,7 @@ INSTANCE ItAt_Hexenblut (C_Item)
 
 INSTANCE ItMi_DeliriumEnergie (C_Item)
 {
-	name 				=	"Fläschchen mit Energie";
+	name 				=	"Vials with energy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -2670,7 +2670,7 @@ INSTANCE ItMi_DeliriumEnergie (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DragonScale (C_Item)
 {
-	name 				=	"Drachenschuppen";
+	name 				=	"Dragon Scales";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2690,7 +2690,7 @@ INSTANCE ItAt_DragonScale (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Seeungeheuerschuppen (C_Item)
 {
-	name 				=	"Seeungeheuerschuppen";
+	name 				=	"sea monster shed";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;
@@ -2710,7 +2710,7 @@ INSTANCE ItAt_Seeungeheuerschuppen (C_Item)
 
 INSTANCE ItAt_Wyverschuppen (C_Item)
 {
-	name 				=	"Wyverschuppen";
+	name 				=	"Wy Verschuppen";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -2730,7 +2730,7 @@ INSTANCE ItAt_Wyverschuppen (C_Item)
 
 INSTANCE ItAt_CrawlerKristall (C_Item)
 {
-	name 				=	"Kristall eines Kristallcrawlers";
+	name 				=	"Crystal of a crystal crawler";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;

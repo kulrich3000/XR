@@ -1,7 +1,7 @@
 instance Mod_7014_HS_Wache_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wache";
+	name 		= "Guard";
 	guild 		= GIL_OUT;
 	id 			= 7014;
 	voice 		= 7;

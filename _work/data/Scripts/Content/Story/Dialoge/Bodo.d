@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bodo_Hi (C_INFO)
 	information	= Info_Mod_Bodo_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist dein Beruf?";
+	description	= "What's your profession?";
 };
 
 FUNC INT Info_Mod_Bodo_Hi_Condition()
@@ -19,10 +19,10 @@ FUNC INT Info_Mod_Bodo_Hi_Condition()
 
 FUNC VOID Info_Mod_Bodo_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bodo_Hi_15_00"); //Was ist dein Beruf?
-	AI_Output(self, hero, "Info_Mod_Bodo_Hi_36_01"); //(redegewandt) Dies und das. Ich erledige vor allem Gelegenheitsarbeiten, Botendienste und so einen Kram.
-	AI_Output(hero, self, "Info_Mod_Bodo_Hi_15_02"); //Kann man denn davon leben?
-	AI_Output(self, hero, "Info_Mod_Bodo_Hi_36_03"); //Gut bezahlt ist es wirklich nicht, aber ich komme schon klar.
+	AI_Output(hero, self, "Info_Mod_Bodo_Hi_15_00"); //What's your profession?
+	AI_Output(self, hero, "Info_Mod_Bodo_Hi_36_01"); //This and that. I do casual work, courier services and stuff like that.
+	AI_Output(hero, self, "Info_Mod_Bodo_Hi_15_02"); //Can you live on that?
+	AI_Output(self, hero, "Info_Mod_Bodo_Hi_36_03"); //It's really not well paid, but I can handle it.
 };
 
 INSTANCE Info_Mod_Bodo_Krautlieferung (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Bodo_Krautlieferung (C_INFO)
 	information	= Info_Mod_Bodo_Krautlieferung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du sollst was für Myxir dabei haben.";
+	description	= "I want you to bring something for Myxir.";
 };
 
 FUNC INT Info_Mod_Bodo_Krautlieferung_Condition()
@@ -47,17 +47,17 @@ FUNC INT Info_Mod_Bodo_Krautlieferung_Condition()
 
 FUNC VOID Info_Mod_Bodo_Krautlieferung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bodo_Krautlieferung_15_00"); //Du sollst was für Myxir dabei haben.
-	AI_Output(self, hero, "Info_Mod_Bodo_Krautlieferung_36_01"); //Hat er danach gefragt, ja? Ich hätte ihm die Pflanzen ja gern schon gebracht, aber mein Auftrag hier hat es nicht zugelassen...
-	AI_Output(hero, self, "Info_Mod_Bodo_Krautlieferung_15_02"); //Ja, schon gut. Niemand wird dich dafür umbringen.
-	AI_Output(self, hero, "Info_Mod_Bodo_Krautlieferung_36_03"); //Na, da bin ich aber erleichtert!
-	AI_Output(self, hero, "Info_Mod_Bodo_Krautlieferung_36_04"); //Hier hast du sie. Richte Myxir viele Grüße aus!
+	AI_Output(hero, self, "Info_Mod_Bodo_Krautlieferung_15_00"); //I want you to bring something for Myxir.
+	AI_Output(self, hero, "Info_Mod_Bodo_Krautlieferung_36_01"); //He asked for it, right? I would have liked to have brought him the plants, but my mission here has not allowed it....
+	AI_Output(hero, self, "Info_Mod_Bodo_Krautlieferung_15_02"); //Yeah, all right. No one's gonna kill you for this.
+	AI_Output(self, hero, "Info_Mod_Bodo_Krautlieferung_36_03"); //Well, I'm relieved!
+	AI_Output(self, hero, "Info_Mod_Bodo_Krautlieferung_36_04"); //Here you have them. Give Myxir my best wishes!
 
 	B_GiveInvItems	(self, hero, MyxirsGiftpflanze, 20);
 
-	AI_Output(hero, self, "Info_Mod_Bodo_Krautlieferung_15_05"); //Da wird er sich sicher freuen.
+	AI_Output(hero, self, "Info_Mod_Bodo_Krautlieferung_15_05"); //I'm sure he'll be happy.
 
-	B_LogEntry	(TOPIC_MOD_GIFTPFLANZEN, "Bodo hat mir die Pflanzen für Myxir ausgehändigt.");
+	B_LogEntry	(TOPIC_MOD_GIFTPFLANZEN, "Bodo gave me the plants for Myxir.");
 };
 
 INSTANCE Info_Mod_Bodo_WiePruefung (C_INFO)
@@ -68,7 +68,7 @@ INSTANCE Info_Mod_Bodo_WiePruefung (C_INFO)
 	information	= Info_Mod_Bodo_WiePruefung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, Bruder.";
+	description	= "Hello, brother.";
 };
 
 FUNC INT Info_Mod_Bodo_WiePruefung_Condition()
@@ -81,15 +81,15 @@ FUNC INT Info_Mod_Bodo_WiePruefung_Condition()
 
 FUNC VOID Info_Mod_Bodo_WiePruefung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bodo_WiePruefung_15_00"); //Hallo, Bruder.
-	AI_Output(self, hero, "Info_Mod_Bodo_WiePruefung_36_01"); //Bruder? Ich kenne dich doch gar nicht.
-	AI_Output(hero, self, "Info_Mod_Bodo_WiePruefung_15_02"); //Du kannst aufhören zu spielen. Ich komme von Andokai.
-	AI_Output(self, hero, "Info_Mod_Bodo_WiePruefung_36_03"); //Aah. Herzlich willkommen. Meine Tarnung als Tagedieb ist gut, oder?
-	AI_Output(hero, self, "Info_Mod_Bodo_WiePruefung_15_04"); //Die Bürgerklamotten sind vielleicht etwas zu viel des Guten.
-	AI_Output(self, hero, "Info_Mod_Bodo_WiePruefung_36_05"); //Stimmt. Aber das ist nun mal meine Eitelkeit. (lacht)
-	AI_Output(self, hero, "Info_Mod_Bodo_WiePruefung_36_06"); //Was kann ich für dich tun?
+	AI_Output(hero, self, "Info_Mod_Bodo_WiePruefung_15_00"); //Hello, brother.
+	AI_Output(self, hero, "Info_Mod_Bodo_WiePruefung_36_01"); //Brother? I don't even know you.
+	AI_Output(hero, self, "Info_Mod_Bodo_WiePruefung_15_02"); //You can stop playing. I'm from Andokai.
+	AI_Output(self, hero, "Info_Mod_Bodo_WiePruefung_36_03"); //Aah. Welcome, welcome. My cover as a day thief is good, isn't it?
+	AI_Output(hero, self, "Info_Mod_Bodo_WiePruefung_15_04"); //The burgher's clothes might be a little too much of a good thing.
+	AI_Output(self, hero, "Info_Mod_Bodo_WiePruefung_36_05"); //That's right. But that's just my vanity. (laughs)
+	AI_Output(self, hero, "Info_Mod_Bodo_WiePruefung_36_06"); //What can I do for you?
 
-	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Bodo sagt, dass die Sachen, die ihm bei seiner Prüfung geholfen haben, von Myxir stammen.");
+	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Bodo says that the things that helped him with his examination came from Myxir.");
 };
 
 INSTANCE Info_Mod_Bodo_WieKloster (C_INFO)
@@ -100,7 +100,7 @@ INSTANCE Info_Mod_Bodo_WieKloster (C_INFO)
 	information	= Info_Mod_Bodo_WieKloster_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss etwas aus dem Kloster der Feuermagier stehlen.";
+	description	= "I need to steal something from the Fire Magicians' monastery.";
 };
 
 FUNC INT Info_Mod_Bodo_WieKloster_Condition()
@@ -114,18 +114,18 @@ FUNC INT Info_Mod_Bodo_WieKloster_Condition()
 
 FUNC VOID Info_Mod_Bodo_WieKloster_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bodo_WieKloster_15_00"); //Ich muss etwas aus dem Kloster der Feuermagier stehlen.
-	AI_Output(hero, self, "Info_Mod_Bodo_WieKloster_15_01"); //Andokai hat gesagt, du könntest mir dazu Tipps geben.
-	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_02"); //Was musst du denn entwenden?
-	AI_Output(hero, self, "Info_Mod_Bodo_WieKloster_15_03"); //Einen Heiligen Hammer.
-	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_04"); //Was für ein Glück für dich! Na, da ist doch ein Kinderspiel.
-	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_05"); //Der Hammer liegt unten im Keller in einem separaten Raum und wird nur von einer einzelnen Wache kontrolliert.
-	AI_Output(hero, self, "Info_Mod_Bodo_WieKloster_15_06"); //Aber gegen eine Wache kann ich doch noch gar nicht bestehen.
-	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_07"); //Schon mal was von einem Schlafzauber gehört?
-	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_08"); //Du zauberst den Spruch auf die Wache, nimmst den Hammer - und teleportierst dich raus aus dem Kloster!
-	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_09"); //Und das Ganze, ohne dass du dem Wächter hast wehtun müssen.
+	AI_Output(hero, self, "Info_Mod_Bodo_WieKloster_15_00"); //I need to steal something from the Fire Magicians' monastery.
+	AI_Output(hero, self, "Info_Mod_Bodo_WieKloster_15_01"); //Andokai said you could give me some advice.
+	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_02"); //What do you have to steal?
+	AI_Output(hero, self, "Info_Mod_Bodo_WieKloster_15_03"); //A holy hammer.
+	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_04"); //What luck for you! There's a piece of cake.
+	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_05"); //The hammer is located at the bottom of the cellar in a separate room and is controlled by a single guard.
+	AI_Output(hero, self, "Info_Mod_Bodo_WieKloster_15_06"); //But I can't stand against a guard yet.
+	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_07"); //Ever heard of a sleep spell?
+	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_08"); //You put the spell on the guard, take the hammer - and teleport yourself out of the monastery!
+	AI_Output(self, hero, "Info_Mod_Bodo_WieKloster_36_09"); //And all this without you having to hurt the guard.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Bodo rät mir, einen Schlafzauber einzupacken für den Fall, dass ich dem Wächter des Hammers körperlich nicht beikommen kann.");
+	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Bodo advises me to pack a sleeping spell in case I can't physically help the hammer guard.");
 };
 
 INSTANCE Info_Mod_Bodo_Novize (C_INFO)
@@ -136,7 +136,7 @@ INSTANCE Info_Mod_Bodo_Novize (C_INFO)
 	information	= Info_Mod_Bodo_Novize_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du ein Schwarzer Novize?";
+	description	= "Are you a Black Novice?";
 };
 
 FUNC INT Info_Mod_Bodo_Novize_Condition()
@@ -149,12 +149,12 @@ FUNC INT Info_Mod_Bodo_Novize_Condition()
 
 FUNC VOID Info_Mod_Bodo_Novize_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bodo_Novize_15_00"); //Bist du ein Schwarzer Novize?
-	AI_Output(self, hero, "Info_Mod_Bodo_Novize_36_01"); //Seit kurzem, ja. Und über mangelnde Beschäftigung kann ich nicht klagen.
-	AI_Output(hero, self, "Info_Mod_Bodo_Novize_15_02"); //Wie lange hast du gebraucht, um Novize zu werden?
-	AI_Output(self, hero, "Info_Mod_Bodo_Novize_36_03"); //Das hat schon gedauert. Ich habe erst mal eine Zeitlang in der Festung an allen Ecken und Ende aushelfen müssen, bis Andokai mich wahrgenommen hat.
-	AI_Output(self, hero, "Info_Mod_Bodo_Novize_36_04"); //Nachdem ich die Feuermagier um ein Buch betrogen hatte, war er mir aber gleich sehr zugetan. Viel schwieriger wurde es dann, Xardas von mir überzeugen.
-	AI_Output(self, hero, "Info_Mod_Bodo_Novize_36_05"); //Junge, ich sag's dir, das ist echt ein sturer alter Mistkerl. Es hat dann noch mal ein paar Wochen gedauert, bis ich auch seine Stimme hatte.
+	AI_Output(hero, self, "Info_Mod_Bodo_Novize_15_00"); //Are you a Black Novice?
+	AI_Output(self, hero, "Info_Mod_Bodo_Novize_36_01"); //Recently, yes. And I can't complain about lack of employment.
+	AI_Output(hero, self, "Info_Mod_Bodo_Novize_15_02"); //How long did it take you to become a novice?
+	AI_Output(self, hero, "Info_Mod_Bodo_Novize_36_03"); //It's been a while. I had to help out for a while in the fortress at all corners and ends until Andokai noticed me.
+	AI_Output(self, hero, "Info_Mod_Bodo_Novize_36_04"); //After I cheated on the fire magicians for a book, he was very fond of me. It then became much more difficult to convince Xardas of me.
+	AI_Output(self, hero, "Info_Mod_Bodo_Novize_36_05"); //Boy, I'm telling you, this is a stubborn old bastard. It took me a few weeks to get his voice, too.
 };
 
 INSTANCE Info_Mod_Bodo_Flugblatt (C_INFO)
@@ -165,7 +165,7 @@ INSTANCE Info_Mod_Bodo_Flugblatt (C_INFO)
 	information	= Info_Mod_Bodo_Flugblatt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Bodo_Flugblatt_Condition()
@@ -186,11 +186,11 @@ FUNC VOID Info_Mod_Bodo_Flugblatt_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bodo_Flugblatt_36_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Bodo_Flugblatt_36_01"); //Oh, thank you. Thank you. Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Bodo_Flugblatt_36_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Bodo_Flugblatt_36_02"); //Ah yes. Maybe I'll stop by Matteo's.
 
 	Mod_Flugblaetter += 1;
 };

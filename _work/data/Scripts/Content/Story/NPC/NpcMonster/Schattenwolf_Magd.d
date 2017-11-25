@@ -1,6 +1,6 @@
 INSTANCE Schattenwolf_Magd	(Mst_Default_Warg)
 {
-	name	=	"Magd";
+	name	=	"handmaid";
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
 	id = 7202;

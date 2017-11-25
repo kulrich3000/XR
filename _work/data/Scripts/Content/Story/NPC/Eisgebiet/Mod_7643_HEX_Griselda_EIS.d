@@ -1,7 +1,7 @@
 instance Mod_7643_HEX_Griselda_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Griselda";
+	name 		= "griselda";
 	guild 		= GIL_DMT;
 	id 			= 7643;
 	voice 		= 26;

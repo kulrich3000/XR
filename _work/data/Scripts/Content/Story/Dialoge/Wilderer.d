@@ -15,13 +15,13 @@ FUNC INT Info_Mod_Wilderer_Hi_Condition()
 
 FUNC VOID Info_Mod_Wilderer_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wilderer_Hi_08_00"); //Wen haben wir denn hier… ohh, besser gesagt, was.
+	AI_Output(self, hero, "Info_Mod_Wilderer_Hi_08_00"); //Well, who do we have here... ohh, or rather, what.
 
 	AI_ReadyMeleeWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Wilderer_Hi_08_01"); //Schaut euch mal das an, Jungs! Zahme Snapper mit glänzenden Häuten ... die müssen ein Vermögen wert sein.
-	AI_Output(hero, self, "Info_Mod_Wilderer_Hi_15_02"); //He, kommt besser auf keine dummen Gedanken.
-	AI_Output(self, hero, "Info_Mod_Wilderer_Hi_08_03"); //Dumm?! Dumm ist deine Fresse. Los Jungs, heute haben wir das große Los gezogen.
+	AI_Output(self, hero, "Info_Mod_Wilderer_Hi_08_01"); //Look at this, boys! Tame snapper with shiny skins... they must be worth a fortune.
+	AI_Output(hero, self, "Info_Mod_Wilderer_Hi_15_02"); //Hey, don't get any ideas.
+	AI_Output(self, hero, "Info_Mod_Wilderer_Hi_08_03"); //Stupid?! Stupid is your face. Come on, guys, we hit the jackpot today.
 
 	AI_StopProcessInfos	(self);
 };

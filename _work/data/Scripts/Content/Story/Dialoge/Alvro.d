@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Alvro_Hi_Condition()
 
 FUNC VOID Info_Mod_Alvro_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alvro_Hi_02_00"); //Verschwinde!
+	AI_Output(self, hero, "Info_Mod_Alvro_Hi_02_00"); //Get out of here!
 
 	AI_StopProcessInfos	(self);
 };
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Alvro_Melasse (C_INFO)
 	information	= Info_Mod_Alvro_Melasse_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab gehört du hast Melasse.";
+	description	= "I hear you got molasses.";
 };
 
 FUNC INT Info_Mod_Alvro_Melasse_Condition()
@@ -45,17 +45,17 @@ FUNC INT Info_Mod_Alvro_Melasse_Condition()
 
 FUNC VOID Info_Mod_Alvro_Melasse_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alvro_Melasse_15_00"); //Ich hab' gehört, du hast Melasse.
-	AI_Output(self, hero, "Info_Mod_Alvro_Melasse_02_01"); //Das geht dich nichts an!
-	AI_Output(hero, self, "Info_Mod_Alvro_Melasse_15_02"); //Ich bin Pirat und brauch das Zeug.
-	AI_Output(self, hero, "Info_Mod_Alvro_Melasse_02_03"); //(überrascht) Du bist Pirat?
-	AI_Output(hero, self, "Info_Mod_Alvro_Melasse_15_04"); //Allerdings, also rück jetzt die Melasse raus.
-	AI_Output(self, hero, "Info_MOd_Alvro_Melasse_02_05"); //I-Ich k-kann nicht.
+	AI_Output(hero, self, "Info_Mod_Alvro_Melasse_15_00"); //I hear you got molasses.
+	AI_Output(self, hero, "Info_Mod_Alvro_Melasse_02_01"); //None of your business!
+	AI_Output(hero, self, "Info_Mod_Alvro_Melasse_15_02"); //I'm a pirate and I need the stuff.
+	AI_Output(self, hero, "Info_Mod_Alvro_Melasse_02_03"); //You're a pirate?
+	AI_Output(hero, self, "Info_Mod_Alvro_Melasse_15_04"); //Yeah, well, let's get the molasses out of here.
+	AI_Output(self, hero, "Info_MOd_Alvro_Melasse_02_05"); //I-I-I can't--I can't.
 
 	CreateInvItems	(self, ItFo_Melasse, 15);
 	CreateInvItems	(self, Mod_BillsRumRezept, 1);
 
-	B_LogEntry	(TOPIC_MOD_SAMUEL_RUM, "Alvro will mir die Melasse nicht freiwillig geben und greift mich stattdessen an. Er lässt mir keine Wahl ...");
+	B_LogEntry	(TOPIC_MOD_SAMUEL_RUM, "Alvro won't give me the molasses voluntarily and attacks me instead. He leaves me no choice....");
 
 	AI_StopProcessInfos	(self);
 

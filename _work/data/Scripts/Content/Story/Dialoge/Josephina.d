@@ -15,13 +15,13 @@ FUNC INT Info_Mod_Josephina_Hi_Condition()
 
 FUNC VOID Info_Mod_Josephina_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Josephina_Hi_17_00"); //(schrill) DU?!? WIE KOMMST DU HIERHER? DANAE MÜSSTE DICH BEREITS GETÖTET HABEN!
-	AI_Output(hero, self, "Info_Mod_Josephina_Hi_15_01"); //Tja, er sieht wohl das Gras von unten.
-	AI_Output(self, hero, "Info_Mod_Josephina_Hi_17_02"); //(hämisch) Egal. Danae war ein Versager. An mir wirst du scheitern, kleiner Held!
-	AI_Output(hero, self, "Info_Mod_Josephina_Hi_15_03"); //Ach komm. Du meinst doch nicht ernsthaft, dass du gegen mich eine Chance hast?
-	AI_Output(self, hero, "Info_Mod_Josephina_Hi_17_04"); //Hochmut kommt vor dem Fall, Sterblicher.
-	AI_Output(hero, self, "Info_Mod_Josephina_Hi_15_05"); //Lass uns anfangen.
-	AI_Output(self, hero, "Info_Mod_Josephina_Hi_17_06"); //(lacht) Wie du willst.
+	AI_Output(self, hero, "Info_Mod_Josephina_Hi_17_00"); //YOU?!? HOW DID YOU GET HERE? THEN YOU MUST HAVE ALREADY KILLED YOURSELF!
+	AI_Output(hero, self, "Info_Mod_Josephina_Hi_15_01"); //Well, I guess he sees the grass from below.
+	AI_Output(self, hero, "Info_Mod_Josephina_Hi_17_02"); //It doesn't matter. Danae was a loser. You'll fail because of me, little hero!
+	AI_Output(hero, self, "Info_Mod_Josephina_Hi_15_03"); //Oh, come on. You're not seriously saying you have a chance against me?
+	AI_Output(self, hero, "Info_Mod_Josephina_Hi_17_04"); //Pride comes before the fall, mortal.
+	AI_Output(hero, self, "Info_Mod_Josephina_Hi_15_05"); //Let's get started.
+	AI_Output(self, hero, "Info_Mod_Josephina_Hi_17_06"); //(laughs) Suit yourself.
 
 	AI_StopProcessInfos	(self);
 

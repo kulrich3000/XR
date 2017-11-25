@@ -15,44 +15,44 @@ FUNC INT Info_Mod_Assassine_Nagur_Hi_Condition()
 
 FUNC VOID Info_Mod_Assassine_Nagur_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_03_00"); //(erschrocken) Was?! Du?!
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_03_00"); //What?! You?!
 
 	AI_TurnToNpc	(self, Mod_7783_OUT_Schmuggler_NW);
 
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_03_01"); //(zu den anderen) Das ist der Typ der für Nagur den Novizen erledigt hat.
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_03_01"); //(To the others) That's the guy who did the novice for Nagur.
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_03_02"); //(zum Helden) Bist du uns gefolgt? Was willst du hier?!
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_03_02"); //Did you follow us? What are you doing here?!
 
 	Info_ClearChoices	(Info_Mod_Assassine_Nagur_Hi);
 
-	Info_AddChoice	(Info_Mod_Assassine_Nagur_Hi, "Nagur gab mir den Auftrag euch zu erledigen.", Info_Mod_Assassine_Nagur_Hi_B);
-	Info_AddChoice	(Info_Mod_Assassine_Nagur_Hi, "Eure Leichnahme um das Schmuggelgut erleichtern.", Info_Mod_Assassine_Nagur_Hi_A);
+	Info_AddChoice	(Info_Mod_Assassine_Nagur_Hi, "Nagur gave me the assignment to get you guys done.", Info_Mod_Assassine_Nagur_Hi_B);
+	Info_AddChoice	(Info_Mod_Assassine_Nagur_Hi, "Ease your dead body around the contraband.", Info_Mod_Assassine_Nagur_Hi_A);
 };
 
 FUNC VOID Info_Mod_Assassine_Nagur_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_B_15_00"); //Nagur gab mir den Auftrag euch zu erledigen.
+	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_B_15_00"); //Nagur gave me the assignment to get you guys done.
 
 	AI_ReadyMeleeWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_01"); //Was?! Dieser Dreckskerl! Und du solltest dir genau überlegen, was du jetzt machst ... für wen du Partei ergreifst!
-	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_B_15_02"); //Was hast du anzubieten?
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_03"); //Nun ... du könntest ohne Kampf und Kratzer an paar Goldmünzen kommen.
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_04"); //Du müsstest lediglich wieder umdrehen und Nagur verklickern, dass du deinen Job erledigt hast.
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_05"); //Er wird unvorsichtig werden und das ist der Augenblick, wo wir zuschlagen.
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_06"); //Sobald die Sache erledigt ist, wirst du in der Kneipe davon erfahren und einen Beutel voll Gold bekommen.
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_01"); //What?! That son of a bitch! And you should think carefully about what you're going to do... who you're taking sides for!
+	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_B_15_02"); //What do you have to offer?
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_03"); //Well... you could come without a fight and scratches on some gold coins.
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_04"); //All you have to do is turn around and tell Nagur that you've done your job.
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_05"); //He's going to get careless, and this is the moment we strike.
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_B_03_06"); //As soon as it's done, you'll find out at the pub and get a bag of gold.
 
 	Info_ClearChoices	(Info_Mod_Assassine_Nagur_Hi);
 
-	Info_AddChoice	(Info_Mod_Assassine_Nagur_Hi, "Hört sich gut an.", Info_Mod_Assassine_Nagur_Hi_D);
-	Info_AddChoice	(Info_Mod_Assassine_Nagur_Hi, "Nein, ich will lieber eure Leichen um die Schmuggelwaren erleichtern.", Info_Mod_Assassine_Nagur_Hi_C);
+	Info_AddChoice	(Info_Mod_Assassine_Nagur_Hi, "Sounds good to me.", Info_Mod_Assassine_Nagur_Hi_D);
+	Info_AddChoice	(Info_Mod_Assassine_Nagur_Hi, "No, I'd rather ease your dead bodies around the contraband.", Info_Mod_Assassine_Nagur_Hi_C);
 };
 
 FUNC VOID Info_Mod_Assassine_Nagur_Hi_E()
 {
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_E_03_00"); //Das wollen wir doch mal sehen!
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_E_03_00"); //Let's have a look!
 
 	Info_ClearChoices	(Info_Mod_Assassine_Nagur_Hi);
 
@@ -74,19 +74,19 @@ FUNC VOID Info_Mod_Assassine_Nagur_Hi_E()
 
 FUNC VOID Info_Mod_Assassine_Nagur_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_A_15_00"); //Eure Leichnahme um das Schmuggelgut erleichtern.
+	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_A_15_00"); //Ease your dead body around the contraband.
 
 	Info_Mod_Assassine_Nagur_Hi_E();
 };
 
 FUNC VOID Info_Mod_Assassine_Nagur_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_D_15_00"); //Hört sich gut an.
-	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_D_03_01"); //Sehr gut ... du bist vernünftig. Also, du weißt, was zu tun ist.
+	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_D_15_00"); //Sounds good to me.
+	AI_Output(self, hero, "Info_Mod_Assassine_Nagur_Hi_D_03_01"); //Very good... you're being reasonable. Well, you know what to do.
 
 	Info_ClearChoices	(Info_Mod_Assassine_Nagur_Hi);
 
-	B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Ich kann jetzt Nagur davon berichten, dass seine Konkurrenten beseitigt wurden.");
+	B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "I can now report to Nagur that his competitors have been eliminated.");
 
 	AI_StopProcessInfos	(self);
 
@@ -95,7 +95,7 @@ FUNC VOID Info_Mod_Assassine_Nagur_Hi_D()
 
 FUNC VOID Info_Mod_Assassine_Nagur_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_C_15_00"); //Nein, ich will lieber eure Leichen um die Schmuggelwaren erleichtern.
+	AI_Output(hero, self, "Info_Mod_Assassine_Nagur_Hi_C_15_00"); //No, I'd rather ease your dead bodies around the contraband.
 
 	Info_Mod_Assassine_Nagur_Hi_E();
 };

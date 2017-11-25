@@ -1,7 +1,7 @@
 instance Mod_7515_OUT_Dalton_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dalton"; 
+	name 		= "dalton"; 
 	guild 		= GIL_OUT;
 	id 			= 7515;
 	voice 		= 4;

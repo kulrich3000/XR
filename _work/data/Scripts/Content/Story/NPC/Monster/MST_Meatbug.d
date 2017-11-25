@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Meatbug(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Fleischwanze";
+	name							=	"Meatbug";
 	guild							=	GIL_MEATBUG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MEATBUG;
 	level							=	1;
@@ -86,7 +86,7 @@ INSTANCE Meatbug_KlosterTerrarium	(Mst_Default_Meatbug)
 
 INSTANCE Riesenbug	(Mst_Default_Meatbug)
 {
-	name	= "Riesenbug";
+	name	= "big bug";
 
 	guild = GIL_MINECRAWLER;
 
@@ -109,7 +109,7 @@ INSTANCE Stonebug	(Mst_Default_Meatbug)
 {
 	B_SetVisuals_Stonebug();
 	
-	name	=	"Steinwanze";
+	name	=	"Rock bug";
 };
 
 INSTANCE Meatbug_Edda_01	(Mst_Default_Meatbug)

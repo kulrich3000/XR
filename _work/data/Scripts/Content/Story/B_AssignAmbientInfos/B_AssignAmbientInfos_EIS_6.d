@@ -51,20 +51,20 @@ FUNC INT Info_Eis_6_GoToThys_Condition()
 
 FUNC VOID Info_Eis_6_GoToThys_Info()
 {
-	AI_Output(self, hero, "Info_Eis_6_GoToThys_06_00"); //Was willst du?
+	AI_Output(self, hero, "Info_Eis_6_GoToThys_06_00"); //What do you want?
 
 	Info_ClearChoices	(Info_Eis_6_GoToThys);
 
-	Info_AddChoice	(Info_Eis_6_GoToThys, "Hast du Lust, eine kleine Spritztour mit mir zu machen?", Info_Eis_6_GoToThys_B);
-	Info_AddChoice	(Info_Eis_6_GoToThys, "Thys verlangt nach dir. Ich würde mich sofort auf den Weg machen.", Info_Eis_6_GoToThys_A);
+	Info_AddChoice	(Info_Eis_6_GoToThys, "Would you like to go for a spin with me?", Info_Eis_6_GoToThys_B);
+	Info_AddChoice	(Info_Eis_6_GoToThys, "Thys is asking for you. I'd be on my way right away.", Info_Eis_6_GoToThys_A);
 };
 
 FUNC VOID Info_Eis_6_GotoThys_B()
 {
-	AI_Output(hero, self, "Info_Eis_6_GotoThys_B_15_00"); //Hast du Lust, eine kleine Spritztour mit mir zu machen?
-	AI_Output(self, hero, "Info_Eis_6_GotoThys_B_06_01"); //Wohin soll's denn gehen?
-	AI_Output(hero, self, "Info_Eis_6_GotoThys_B_15_02"); //Wie wäre es, wenn wir zur Hütte von Thys laufen?
-	AI_Output(self, hero, "Info_Eis_6_GotoThys_B_06_03"); //Meinetwegen, aber ich werde erst zu ihm gehen, wenn er Zeit hat.
+	AI_Output(hero, self, "Info_Eis_6_GotoThys_B_15_00"); //Would you like to go for a spin with me?
+	AI_Output(self, hero, "Info_Eis_6_GotoThys_B_06_01"); //Where do you want to go?
+	AI_Output(hero, self, "Info_Eis_6_GotoThys_B_15_02"); //How about we walk to the Thys' cabin?
+	AI_Output(self, hero, "Info_Eis_6_GotoThys_B_06_03"); //Whatever, but I won't go to him until he's free.
 
 	Info_ClearChoices	(Info_Eis_6_GotoThys);
 
@@ -78,8 +78,8 @@ FUNC VOID Info_Eis_6_GotoThys_B()
 
 FUNC VOID Info_Eis_6_GotoThys_A()
 {
-	AI_Output(hero, self, "Info_Eis_6_GotoThys_A_15_00"); //Thys verlangt nach dir. Ich würde mich sofort auf den Weg machen.
-	AI_Output(self, hero, "Info_Eis_6_GotoThys_A_06_01"); //Ja ... na klar. Ich mache mich sofort auf den Weg, sobald er Zeit hat.
+	AI_Output(hero, self, "Info_Eis_6_GotoThys_A_15_00"); //Thys is asking for you. I'd be on my way right away.
+	AI_Output(self, hero, "Info_Eis_6_GotoThys_A_06_01"); //Yes... of course. I'll be on my way as soon as he's available.
 
 	Info_ClearChoices	(Info_Eis_6_GotoThys);
 
@@ -112,21 +112,21 @@ FUNC INT Info_Eis_6_AlvarDead_Condition()
 
 FUNC VOID Info_Eis_6_AlvarDead_Info()
 {
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_00"); //Hast du schon gehört? Alvar wurde tot auf dem Hang eines Berges gesehen.
-	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_01"); //Was?! Wie ist das geschehen?
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_02"); //Tja, die Schneegeister müssen ihn wohl erwischt haben. Geschieht ihm aber im Grunde genommen recht.
-	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_03"); //Warum das?
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_04"); //Er war doch ein ganz schlimmer Mensch. Oft genug hat man davon gehört, was er wieder verbrochen hatte.
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_05"); //Sogar an Frauen soll er sich vergriffen haben. Dieses Schwein.
-	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_06"); //Über ihn wurde schlimmes berichtet? Von wem weißt du das mit den Frauen?
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_07"); //Ach, da er ja jetzt tot ist, kann ich es ruhig erzählen.
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_08"); //Es waren Serra und Malfama, denen er nachstellte und welche bedrohte. Nicht vorzustellen, oder?
-	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_09"); //(zu sich selbst) Kommt mir bekannt vor.
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_10"); //Die zwei freundlichsten und gutmütigsten Frauen des ganzen Dorfes durch dieses Schwein bedrängt.
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_11"); //Ha, die Rechnung bekam er dann auch am Marktplatz. Da hat ihm keiner mehr etwas verkauft.
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_12"); //Achja, es kommt noch besser. Man hat sein Tagebuch gefunden, in welchem seine Missetaten aufgeführt sind.
-	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_13"); //Das Tagebuch? Wo ist es?
-	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_14"); //Man brachte es zum Dorfältesten Thys, damit er sich davon überzeugen kann.
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_00"); //Have you heard the news? Alvar was seen dead on the slope of a mountain.
+	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_01"); //What?! How did this happen?
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_02"); //Well, the snow ghosts must have caught him. but basically serves him right.
+	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_03"); //Why is that?
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_04"); //He was a very bad person. Often enough people have heard about what he had done.
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_05"); //He's said to have offended even women. That bastard.
+	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_06"); //He's been reported bad? Who told you about the women?
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_07"); //Oh, now that he's dead, I can tell you.
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_08"); //It was Serra and Malfama who he stalked and threatened. I can't imagine, can I?
+	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_09"); //That sounds familiar.
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_10"); //The two most friendly and good-natured women of the whole village are oppressed by this pig.
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_11"); //Ha, he got the bill at the market place. Nobody sold him anything anymore.
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_12"); //Oh, it gets even better. His diary has been found, listing his misdeeds.
+	AI_Output(hero, self, "Info_Eis_6_AlvarDead_15_13"); //The diary? Where is it?
+	AI_Output(self, hero, "Info_Eis_6_AlvarDead_06_14"); //They took it to the village eldest, so he could see for himself.
 
 	Mod_AlvarDead = 1;
 

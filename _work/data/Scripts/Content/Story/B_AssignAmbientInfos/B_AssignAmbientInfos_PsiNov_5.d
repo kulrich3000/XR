@@ -14,7 +14,7 @@ INSTANCE Info_PsiNov_5_EXIT(C_INFO)
 	condition	= Info_PsiNov_5_EXIT_Condition;
 	information	= Info_PsiNov_5_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_PsiNov_5_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_PsiNov_5_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_PsiNov_5_EinerVonEuchWerden_Condition;
 	information	= Info_PsiNov_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Wie werde ich in diesem Lager aufgenommen?";
+	description = "How will I be accepted in this camp?";
 };                       
 
 FUNC INT Info_PsiNov_5_EinerVonEuchWerden_Condition()
@@ -54,9 +54,9 @@ FUNC INT Info_PsiNov_5_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_PsiNov_5_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_5_EinerVonEuchWerden_15_00"); //Wie werde ich in diesem Lager aufgenommen?
-	AI_Output(self,hero,"Info_PsiNov_5_EinerVonEuchWerden_05_01"); //Nichts leichter als das. Rede einfach mit einigen der niederen Gurus. Sie werden dir weiterhelfen.
-	AI_Output(self,hero,"Info_PsiNov_5_EinerVonEuchWerden_05_02"); //Es wird dir hier gefallen - wirst schon sehen.
+	AI_Output(hero,self,"Info_PsiNov_5_EinerVonEuchWerden_15_00"); //How will I be accepted in this camp?
+	AI_Output(self,hero,"Info_PsiNov_5_EinerVonEuchWerden_05_01"); //Nothing could be easier. Just talk to some of the lower gurus. They'll help you out.
+	AI_Output(self,hero,"Info_PsiNov_5_EinerVonEuchWerden_05_02"); //You'll like it here - you'll see.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_PsiNov_5_WichtigePersonen(C_INFO)
 	condition	= Info_PsiNov_5_WichtigePersonen_Condition;
 	information	= Info_PsiNov_5_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_PsiNov_5_WichtigePersonen_Condition()
@@ -79,8 +79,8 @@ FUNC INT Info_PsiNov_5_WichtigePersonen_Condition()
 
 FUNC VOID Info_PsiNov_5_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_5_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_PsiNov_5_WichtigePersonen_05_01"); //Die Gurus haben alles unter Kontrolle. Aber wenn man nicht auffällt, lassen sie einen in Ruhe.
+	AI_Output(hero,self,"Info_PsiNov_5_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,hero,"Info_PsiNov_5_WichtigePersonen_05_01"); //The gurus have everything under control. But if you don't notice, they leave you alone.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_PsiNov_5_DasLager(C_INFO)
 	condition	= Info_PsiNov_5_DasLager_Condition;
 	information	= Info_PsiNov_5_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mit über dieses Lager erzählen?";
+	description = "What can you tell me about this camp?";
 };                       
 
 FUNC INT Info_PsiNov_5_DasLager_Condition()
@@ -103,11 +103,11 @@ FUNC INT Info_PsiNov_5_DasLager_Condition()
 
 FUNC VOID Info_PsiNov_5_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_5_DasLager_15_00"); //Was kannst du mir über dieses Lager erzählen?
-	AI_Output(self,hero,"Info_PsiNov_5_DasLager_05_01"); //Es ist der beste Ort, an dem du in diesem Tal sein kannst.
-	AI_Output(self,hero,"Info_PsiNov_5_DasLager_05_02"); //Selbst wenn du nicht an unsere Lehren glaubst, bekommst du deine tägliche Ration Essen und Sumpfkraut. Du brauchst nur zu Fortuno zu gehen.
-	AI_Output(hero,self,"Info_PsiNov_5_DasLager_15_03"); //Und wo finde ich den?
-	AI_Output(hero,self,"Info_PsiNov_5_DasLager_05_04"); //Unten an Cor Kaloms altem Labor. In der Nähe des großen Tempelplatzes.
+	AI_Output(hero,self,"Info_PsiNov_5_DasLager_15_00"); //What can you tell me about this camp?
+	AI_Output(self,hero,"Info_PsiNov_5_DasLager_05_01"); //It's the best place you can be in this valley.
+	AI_Output(self,hero,"Info_PsiNov_5_DasLager_05_02"); //Even if you don't believe in our teachings, you get your daily ration of food and bogweed. All you have to do is go to Fortuno.
+	AI_Output(hero,self,"Info_PsiNov_5_DasLager_15_03"); //And where can I find him?
+	AI_Output(hero,self,"Info_PsiNov_5_DasLager_05_04"); //Down at Cor Kalom's old lab. Near the large temple square.
 };
 
 // *************************************************************************
@@ -120,7 +120,7 @@ INSTANCE Info_PsiNov_5_DieLage(C_INFO) // E1
 	condition	= Info_PsiNov_5_DieLage_Condition;
 	information	= Info_PsiNov_5_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_PsiNov_5_DieLage_Condition()
@@ -130,9 +130,9 @@ FUNC INT Info_PsiNov_5_DieLage_Condition()
 
 FUNC VOID Info_PsiNov_5_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_5_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,hero,"Info_PsiNov_5_DieLage_05_01"); //Kann mich nicht beklagen. Bist du neu hier?
-	AI_Output(hero,self,"Info_PsiNov_5_DieLage_15_02"); //Ich bin vor kurzem angekommen.
+	AI_Output(hero,self,"Info_PsiNov_5_DieLage_15_00"); //How's it looking?
+	AI_Output(self,hero,"Info_PsiNov_5_DieLage_05_01"); //I can't complain. Are you new here?
+	AI_Output(hero,self,"Info_PsiNov_5_DieLage_15_02"); //I recently arrived.
 };
 
 INSTANCE Info_Mod_PsiNov_5_Pickpocket (C_INFO)

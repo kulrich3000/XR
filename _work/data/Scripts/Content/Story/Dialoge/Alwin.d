@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Alwin_Hi (C_INFO)
 	information	= Info_Mod_Alwin_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Alwin_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Alwin_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Alwin_Hi_12_01"); //Ich bin Alwin, Schafshirte und Metzger. Was kann ich für dich tun?
+	AI_Output(self, hero, "Info_Mod_Alwin_Hi_12_01"); //I'm Alwin, shepherd and butcher. What can I do for you?
 };
 
 INSTANCE Info_Mod_Alwin_Flugblaetter (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Alwin_Flugblaetter (C_INFO)
 	information	= Info_Mod_Alwin_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Alwin_Flugblaetter_Condition()
@@ -50,11 +50,11 @@ FUNC VOID Info_Mod_Alwin_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Alwin_Flugblaetter_12_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Alwin_Flugblaetter_12_01"); //Oh, thank you. Thank you. Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Alwin_Flugblaetter_12_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Alwin_Flugblaetter_12_02"); //Ah yes. Maybe I'll stop by Matteo's.
 
 	Mod_Flugblaetter +=  1;
 };
@@ -79,7 +79,7 @@ FUNC INT Info_Mod_Alwin_LobartScene_Condition()
 
 FUNC VOID Info_Mod_Alwin_LobartScene_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alwin_LobartScene_12_00"); //Was glotzt ihr so?
+	AI_Output(self, hero, "Info_Mod_Alwin_LobartScene_12_00"); //What are you looking at?
 
 	AI_StopProcessInfos	(self);
 };
@@ -104,8 +104,8 @@ FUNC INT Info_Mod_Alwin_LobartScene2_Condition()
 
 FUNC VOID Info_Mod_Alwin_LobartScene2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alwin_LobartScene2_12_00"); //Besser saufen als kiffen, du Arsch. (stöhnt) Ah, meine Birne!
-	AI_Output(self, hero, "Info_Mod_Alwin_LobartScene2_12_01"); //Kann mich gar nicht erinnern, dass ich heute schon voll war.
+	AI_Output(self, hero, "Info_Mod_Alwin_LobartScene2_12_00"); //Better booze than dope, asshole. Oh, my pear!
+	AI_Output(self, hero, "Info_Mod_Alwin_LobartScene2_12_01"); //I don't even remember being full today.
 
 	AI_StopProcessInfos	(self);
 

@@ -22,7 +22,7 @@ func void ZaphodArrowUnPatch() {
 //************************************************
 
 func void ZaphodPfeilExchange() {
-    var int arrPtr; arrPtr = MEM_SearchAllVobsByName("PFEIL VON NSCICH");
+    var int arrPtr; arrPtr = MEM_SearchAllVobsByName("ARROW OF NSCICH");
     var zCArray arr; arr = MEM_PtrToInst(arrPtr);
     
     var int i; i = -1;

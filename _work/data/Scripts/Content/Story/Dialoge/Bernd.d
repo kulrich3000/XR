@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bernd_Hi (C_INFO)
 	information	= Info_Mod_Bernd_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass mich raten: Du bist hier der Kerl (...)";
+	description	= "Let me guess. You're the guy here. )";
 };
 
 FUNC INT Info_Mod_Bernd_Hi_Condition()
@@ -16,15 +16,15 @@ FUNC INT Info_Mod_Bernd_Hi_Condition()
 
 FUNC VOID Info_Mod_Bernd_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bernd_Hi_15_00"); //Lass mich raten: Du bist hier der Kerl, bei dem ich alles fürs Minental bekomme.
-	AI_Output(self, hero, "Info_Mod_Bernd_Hi_01_01"); //(ironisch) Ich wusste es, der Stand ist einfach zu auffällig.
-	AI_Output(self, hero, "Info_Mod_Bernd_Hi_01_02"); //Aber du hast recht, bei mir bekommst du sogut wie alles, was du für einen Rundgang im Minental brauchst.
-	AI_Output(hero, self, "Info_Mod_Bernd_Hi_15_03"); //Was soll das heißen "sogut wie alles"?
-	AI_Output(self, hero, "Info_Mod_Bernd_Hi_01_04"); //Vielleicht ist es dir noch nicht aufgefallen, aber unsere Mine ist noch nicht sonderlich wirtschaftlich und dehalb habe ich leider noch keine Erzwaffen im Angebot.
-	AI_Output(self, hero, "Info_Mod_Bernd_Hi_01_05"); //Ansonsten dürfte ich aber alles haben, was du brauchst.
+	AI_Output(hero, self, "Info_Mod_Bernd_Hi_15_00"); //Let me guess. You're the guy who gives me everything I need for the Mental.
+	AI_Output(self, hero, "Info_Mod_Bernd_Hi_01_01"); //(ironic) I knew it, the booth is just too conspicuous.
+	AI_Output(self, hero, "Info_Mod_Bernd_Hi_01_02"); //But you're right, I will give you everything you need for a tour of the Minental Valley.
+	AI_Output(hero, self, "Info_Mod_Bernd_Hi_15_03"); //Was soll das heißen "like everything else"?
+	AI_Output(self, hero, "Info_Mod_Bernd_Hi_01_04"); //Maybe you haven't noticed it yet, but our mine is not yet very economical and because of that I don't have any ore weapons on offer.
+	AI_Output(self, hero, "Info_Mod_Bernd_Hi_01_05"); //Otherwise, I might have everything you need.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KG, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_KG, "Bernd handelt mit allen möglichen Dingen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_KG, "Bernd deals with all kinds of things.");
 };
 
 INSTANCE Info_Mod_Bernd_InGilde (C_INFO)
@@ -48,20 +48,20 @@ FUNC INT Info_Mod_Bernd_InGilde_Condition()
 
 FUNC VOID Info_Mod_Bernd_InGilde_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_00"); //Gehörst jetzt auch zu uns?! Ich geb dir einen Tipp: Egal was für Reichtümer sie dir versprechen, geh nicht in die Mine.
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_01"); //Dort unten lauern Viecher, die du lieber nicht stören willst, und damit meine ich nicht die Steinmonster.
-	AI_Output(hero, self, "Info_Mod_Bernd_InGilde_15_02"); //Woher weißt du das, warst du schon mal in der Mine?!
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_03"); //Natürlich waren wir schon drin und ich sag dir: Da bekommen mich keine zwanzig Orks mehr rein!
-	AI_Output(hero, self, "Info_Mod_Bernd_InGilde_15_04"); //Was ist denn dort unten passiert?
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_05"); //Damals hatten wir gerade den Eingang zur Mine freigelegt.
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_06"); //Wir hatten uns schon gewundert, warum eigentlich nur der Eingang verschüttet war.
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_07"); //Und als wir dann Schluss endlich in der Mine waren, sah sie völlig anders aus als auf den alten Karten.
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_08"); //Na ja, das war eigentlich nicht das Problem, wir konnten gut in die Mine vorstoßen und waren uns sogar fast sicher, dass es dort keine Monster mehr gibt.
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_09"); //Als wir allerdings einen etwas größeren Raum betraten, der anscheinend noch ein Überbleibsel der früheren Mine war, kam uns eine ganze Horde dieser Steinmonster entgegen.
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_10"); //Ich war damals der einzige Überlebende, und das nur, weil ich die Beine in die Hand genommen habe.
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_11"); //Ich will jetzt keine Vermutungen anstellen, aber für mich sah es so aus, als wären die Steinmonster auch auf der Flucht gewesen, und egal vor was sie geflohen sind, ich will es nicht treffen.
-	AI_Output(hero, self, "Info_Mod_Bernd_InGilde_15_12"); //Wir werden sehen, vielleicht finden wir bald eine Erklärung für diese ganzen Geschehnisse.
-	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_13"); //Wenn du meinst, ich an deiner Stelle würde die Finger davon lassen.
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_00"); //You're with us now?! I'll give you a hint: no matter what riches they promise you, don't go to the mine.
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_01"); //There are creatures lurking down there that you'd rather not disturb, and by that I don't mean the stone monsters.
+	AI_Output(hero, self, "Info_Mod_Bernd_InGilde_15_02"); //How do you know that, have you ever been to the mine?!
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_03"); //Of course, we've already been inside and I'm telling you, I won't get 20 more orcs in there!
+	AI_Output(hero, self, "Info_Mod_Bernd_InGilde_15_04"); //What happened down there?
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_05"); //Back then, we had just uncovered the mine entrance.
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_06"); //We were wondering why only the entrance had been buried.
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_07"); //And when we finally ended up in the mine, it looked completely different from the old maps.
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_08"); //Well, that wasn't really the problem, we were able to penetrate the mine well and were almost certain that there are no more monsters there.
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_09"); //But when we entered a slightly larger room, which was apparently a remnant of the former mine, a whole horde of these stone monsters approached us.
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_10"); //I was the only survivor at the time, and only because I took my legs in my hand.
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_11"); //I don't want to make any assumptions now, but for me it looked as if the stone monsters had also been on the run, and no matter what they had fled from, I don't want to hit it.
+	AI_Output(hero, self, "Info_Mod_Bernd_InGilde_15_12"); //We will see, perhaps we will soon find an explanation for all these events.
+	AI_Output(self, hero, "Info_Mod_Bernd_InGilde_01_13"); //If you think I'd keep my hands off it if I were you.
 };
 
 INSTANCE Info_Mod_Bernd_Trade (C_INFO)

@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Blutkultkrieger_Hi_Condition()
 
 FUNC VOID Info_Mod_Blutkultkrieger_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Blutkultkrieger_Hi_13_00"); //Was willst du hier, Kleiner?
-	AI_Output(hero, self, "Info_Mod_Blutkultkrieger_Hi_15_01"); //Ich bin hier, um dir und deinen Freunden den Schädel zu spalten.
-	AI_Output(self, hero, "Info_Mod_Blutkultkrieger_Hi_13_02"); //(lacht) Hahahahaha. Du meinst, du hättest gegen uns eine Chance? Da liegst du falsch, Kleiner! STIRB!
+	AI_Output(self, hero, "Info_Mod_Blutkultkrieger_Hi_13_00"); //What are you doing here, kid?
+	AI_Output(hero, self, "Info_Mod_Blutkultkrieger_Hi_15_01"); //I'm here to split your and your friends' skulls.
+	AI_Output(self, hero, "Info_Mod_Blutkultkrieger_Hi_13_02"); //(laughs) Haahahahahaha. You think you have a chance against us? You're wrong, kid! STIRB!
 
 	AI_StopProcessInfos	(self);
 

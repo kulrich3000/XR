@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Orik_Hi (C_INFO)
 	information	= Info_Mod_Orik_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Orik_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Orik_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Orik_Hi_08_01"); //Ich bin Orik. Ich verkaufe den Söldnern Rüstungen.
+	AI_Output(self, hero, "Info_Mod_Orik_Hi_08_01"); //I'm Orik. I sell armor to the mercenaries.
 };
 
 INSTANCE Info_Mod_Orik_Florentius (C_INFO)
@@ -43,22 +43,22 @@ FUNC INT Info_Mod_Orik_Florentius_Condition()
 
 FUNC VOID Info_Mod_Orik_Florentius_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_00"); //Hey, du bist doch viel unterwegs im Minental. Bist du zufällig einem Händler namens Florentius begegnet?
-	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_01"); //Ich erwarte etwas von ihm und er ist längst überfällig.
-	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_02"); //Ich bin so vielen Leuten begegnet ... was sollte er dir denn bringen?
-	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_03"); //Ähm, na ja, ein Buch hatte er mir versprochen.
-	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_04"); //Und was für ein Buch soll das sein?
-	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_05"); //Tja ... also, da sollten Bilder drin sein ... von Frauen.
-	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_06"); //Naja, ich kenne viele bebilderte Bücher, wo auch Frauen abgebildet sind.
-	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_07"); //Also, ... ok, Bilder von, ähh ...
+	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_00"); //Hey, you're on the road a lot in the Minental. Did you happen to meet a merchant named Florentius?
+	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_01"); //I expect something from him and he's long overdue.
+	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_02"); //I've met so many people... what was he supposed to get you?
+	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_03"); //Um, well, he promised me a book.
+	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_04"); //And what kind of book is that?
+	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_05"); //Well... well, there should be pictures in it.... of women.
+	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_06"); //Well, I know a lot of illustrated books where women are pictured.
+	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_07"); //Well... okay, pictures of, uh....
 
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_08"); //(etwas leiser) ... leicht bekleideten Frauen.
-	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_09"); //Ahh, du meinst "Aktbilder".
-	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_10"); //Psst, nicht so laut. Muss ja nicht gleich jeder wissen.
-	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_11"); //Also, ok, ich werde mal schauen, ob ich dein Buch irgendwo finde.
-	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_12"); //Ja, mach das, du wirst es nicht bereuen, wenn du es mir bringst.
+	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_08"); //(slightly quieter) lightly dressed women.
+	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_09"); //Ahh, du meinst "nudes".
+	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_10"); //Shh, not so loud. Doesn't have to know everyone.
+	AI_Output(hero, self, "Info_Mod_Orik_Florentius_15_11"); //So, okay, I'll see if I can find your book somewhere.
+	AI_Output(self, hero, "Info_Mod_Orik_Florentius_08_12"); //Yeah, do that, you won't regret bringing it to me.
 };
 
 INSTANCE Info_Mod_Orik_JuanBuch (C_INFO)
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Orik_JuanBuch (C_INFO)
 	information	= Info_Mod_Orik_JuanBuch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das gewünschte Buch.";
+	description	= "I have the requested book.";
 };
 
 FUNC INT Info_Mod_Orik_JuanBuch_Condition()
@@ -83,23 +83,23 @@ FUNC INT Info_Mod_Orik_JuanBuch_Condition()
 
 FUNC VOID Info_Mod_Orik_JuanBuch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orik_JuanBuch_15_00"); //Ich habe das gewünschte Buch.
-	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_01"); //(freudig überrascht) Was, wirklich, zeig her.
+	AI_Output(hero, self, "Info_Mod_Orik_JuanBuch_15_00"); //I have the requested book.
+	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_01"); //What, really, show me.
 
 	B_GiveInvItems	(hero, self, ItWr_JuanBook, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_02"); //Ja, tatsächlich hehe.
-	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_03"); //(wieder zum Helden) Ähhm, wie dem auch sei, du hast deine Sache wirklich gut gemacht.
-	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_04"); //Hier, 20 Erz und 100 Gold ... ach was, 30 Erz und 200 Gold ...
+	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_02"); //Yeah, actually, hehe.
+	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_03"); //(again to the hero) Uh, anyway, you did a really good job.
+	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_04"); //Here, 20 ore and 100 gold... 30 ore and 200 gold...
 
-	B_ShowGivenThings	("200 Gold und 30 Erz erhalten");
+	B_ShowGivenThings	("200 gold and 30 ore obtained");
 
 	CreateInvItems	(hero, ItMi_Gold, 200);
 	CreateInvItems	(hero, ItMi_Nugget, 30);
 
-	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_05"); //(wieder leiser) Aber dass das ja unter uns bleibt ...
+	AI_Output(self, hero, "Info_Mod_Orik_JuanBuch_08_05"); //But let's keep this between us...
 };
 
 INSTANCE Info_Mod_Orik_Niedergeschlagen (C_INFO)
@@ -123,9 +123,9 @@ FUNC INT Info_Mod_Orik_Niedergeschlagen_Condition()
 
 FUNC VOID Info_Mod_Orik_Niedergeschlagen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orik_Niedergeschlagen_08_00"); //Was sollte das, ihr verdammten Dreckskerle, jetzt hat eure letzte Stunde geschlagen.
-	AI_Output(hero, self, "Info_Mod_Orik_Niedergeschlagen_15_01"); //Du kommst jetzt mal mit. Ohne Waffe wirst du nicht viel ausrichten können.
-	AI_Output(self, hero, "Info_Mod_Orik_Niedergeschlagen_08_02"); //Verdammte Schweine!
+	AI_Output(self, hero, "Info_Mod_Orik_Niedergeschlagen_08_00"); //What the fuck, you son of a bitch, now your last hour has come.
+	AI_Output(hero, self, "Info_Mod_Orik_Niedergeschlagen_15_01"); //You're coming with me. You won't be able to do much without a gun.
+	AI_Output(self, hero, "Info_Mod_Orik_Niedergeschlagen_08_02"); //Fucking bastards!
 
 	AI_StopProcessInfos	(self);
 
@@ -135,7 +135,7 @@ FUNC VOID Info_Mod_Orik_Niedergeschlagen_Info()
 
 	B_UseItem	(self, ItPo_Health_Addon_04);
 
-	B_LogEntry	(TOPIC_MOD_AL_ORIK, "Wir lauerten Orik vor der Höhle auf und haben ihn niedergeschlagen. Jetzt wird er erst mal mitkommen müssen.");
+	B_LogEntry	(TOPIC_MOD_AL_ORIK, "We ambushed Orik in front of the cave and knocked him down. Now he's gonna have to come with me.");
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 };
@@ -148,7 +148,7 @@ INSTANCE Info_Mod_Orik_Ruestung (C_INFO)
 	information	= Info_Mod_Orik_Ruestung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir eine bessere Rüstung bekommen?";
+	description	= "Can I get better armor from you?";
 };
 
 FUNC INT Info_Mod_Orik_Ruestung_Condition()
@@ -164,38 +164,38 @@ FUNC INT Info_Mod_Orik_Ruestung_Condition()
 
 FUNC VOID Info_Mod_Orik_Ruestung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orik_Ruestung_15_00"); //Kann ich bei dir eine bessere Rüstung bekommen?
+	AI_Output(hero, self, "Info_Mod_Orik_Ruestung_15_00"); //Can I get better armor from you?
 
 	if (Mod_Gilde == 4)
 	&& (Mod_HasSLDH == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_08_01"); //Ich hab hier eine Schwere Söldnerrüstung.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_08_01"); //I've got some heavy mercenary armor here.
 	};
 
 	if (Kapitel > 1)
 	&& (Mod_ErsteVerbesserung == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_08_02"); //Ich hab gehört, dass beim Pass im Minental ein besonders großer Orkhund sein soll. Mit dessen Fell könnte ich deine schwere Söldnerrüstung sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_08_02"); //I've heard that a particularly large Orkhund is said to be at the Minental pass. With its fur I could certainly improve your heavy mercenary armor a little bit.
 	
 		Mod_ErsteVerbesserung = TRUE;
 
 		Wld_InsertNpc	(Orcdog_Big,	"OW_PATH_1_16_8");
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Beim Pass im Minental soll sich ein großer Orkhund befinden, mit dessen Fell Orik meine schwere Söldnerrüstung verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "At the pass in the Minental there should be a large Orkhund, whose coat Orik can use to improve my heavy mercenary armor.");
 	};
 
 	if (Kapitel > 3)
 	&& (Mod_ZweiteVerbesserung == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_08_03"); //Ich hab gehört, dass beim Stonehenge ein Wyvern sein soll. Mit dessen Schuppen könnte ich deine Orkjägerrüstung sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_08_03"); //I heard there's a Wyvern at the Stonehenge. With its shed I could certainly improve your Orc hunter armor a little bit.
 	
 		Mod_ZweiteVerbesserung = TRUE;
 
 		Wld_InsertNpc	(Wyver,	"OW_PATH_276");
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Beim Stonehenge soll sich ein Wyvern befinden, mit dessen Schuppen Orik meine Orkjägerrüstung verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "The Stonehenge is said to have a wyvern with a shed that Orik can use to improve my Orkjäger armor.");
 	};
 
 	if (Mod_HasSLDH == TRUE)
@@ -204,7 +204,7 @@ FUNC VOID Info_Mod_Orik_Ruestung_Info()
 	&& (Mod_ErsteVerbesserung == 2))
 	|| (Mod_ZweiteVerbesserung == 2))
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_08_04"); //Zur Zeit nicht, komm später nochmal.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_08_04"); //Not at the moment, come back later.
 	};
 
 	Info_ClearChoices	(Info_Mod_Orik_Ruestung);
@@ -214,20 +214,20 @@ FUNC VOID Info_Mod_Orik_Ruestung_Info()
 	&& (Mod_Gilde == 4)
 	&& (Npc_HasItems(hero, ItAr_SLD_S) == 0)
 	{
-		Info_AddChoice	(Info_Mod_Orik_Ruestung, "Schwere Söldnerrüstung verbessern", Info_Mod_Orik_Ruestung_SLD_S);
+		Info_AddChoice	(Info_Mod_Orik_Ruestung, "Improve heavy mercenary armor", Info_Mod_Orik_Ruestung_SLD_S);
 	};
 
 	if (Mod_ZweiteVerbesserung == TRUE)
 	&& (Mod_Gilde == 19)
 	&& (Npc_HasItems(hero, ItAr_OJG_S) == 0)
 	{
-		Info_AddChoice	(Info_Mod_Orik_Ruestung, "Orkjägerrüstung verbessern", Info_Mod_Orik_Ruestung_OJG_S);
+		Info_AddChoice	(Info_Mod_Orik_Ruestung, "Improve Hunting Equipment", Info_Mod_Orik_Ruestung_OJG_S);
 	};
 
 	if (Mod_Gilde == 4)
 	&& (Mod_HasSLDH == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Orik_Ruestung, "Schwere Söldnerrüstung (Kosten: 2500)", Info_Mod_Orik_Ruestung_SLD_M);
+		Info_AddChoice	(Info_Mod_Orik_Ruestung, "Heavy mercenary armament (cost: 2500)", Info_Mod_Orik_Ruestung_SLD_M);
 	};
 };
 
@@ -238,12 +238,12 @@ FUNC VOID Info_Mod_Orik_Ruestung_BACK ()
 
 FUNC VOID Info_Mod_Orik_Ruestung_SLD_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Orik_Ruestung_SLD_S_15_00"); //Verbessere meine schwere Söldnerrüstung.
+	AI_Output(hero, self, "Info_Mod_Orik_Ruestung_SLD_S_15_00"); //Improve my heavy mercenary armor.
 
 	if (Npc_HasItems(hero, ItAt_BigOrcDogFur) == 1)
 	&& (Npc_HasItems(hero, ItAr_SLD_M) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_S_08_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_S_08_01"); //All clear.
 
 		Npc_RemoveInvItems	(hero, ItAt_BigOrcDogFur, 1);
 		
@@ -262,11 +262,11 @@ FUNC VOID Info_Mod_Orik_Ruestung_SLD_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_SLD_M) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_S_08_02"); //Du musst schon eine schwere Söldnerrüstung haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_S_08_02"); //You must have some heavy mercenary armor or I won't be able to fix it for you.
 	}
 	else if (Npc_HasItems(hero, ItAt_BigOrcDogFur) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_S_08_03"); //Wenn du nicht das Orkhundfell hast, kann ich deine Rüstung nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_S_08_03"); //If you don't have the Orkhundfell, I can't improve your armor.
 	};
 
 	Info_ClearChoices	(Info_Mod_Orik_Ruestung);
@@ -274,12 +274,12 @@ FUNC VOID Info_Mod_Orik_Ruestung_SLD_S ()
 
 FUNC VOID Info_Mod_Orik_Ruestung_OJG_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Orik_Ruestung_OJG_S_15_00"); //Verbessere meine Orkjägerrüstung.
+	AI_Output(hero, self, "Info_Mod_Orik_Ruestung_OJG_S_15_00"); //Improve my Orc Slayer armor.
 
 	if (Npc_HasItems(hero, ItAt_Wyverschuppen) == 5)
 	&& (Npc_HasItems(hero, ItAr_SLD_H) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_OJG_S_08_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_OJG_S_08_01"); //All clear.
 
 		Npc_RemoveInvItems	(hero, ItAt_Wyverschuppen, 5);
 		
@@ -298,11 +298,11 @@ FUNC VOID Info_Mod_Orik_Ruestung_OJG_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_SLD_H) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_OJG_S_08_02"); //Du musst schon eine Orkjägerrüstung haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_OJG_S_08_02"); //You must have an orc hunter's armour or I won't be able to fix it for you.
 	}
 	else if (Npc_HasItems(hero, ItAt_Wyverschuppen) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_OJG_S_08_03"); //Wenn du nicht die Wyverschuppen hast, kann ich deine Rüstung nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_OJG_S_08_03"); //If you don't have the Wy Verschuppen, I can't improve your armor.
 	};
 
 	Info_ClearChoices	(Info_Mod_Orik_Ruestung);
@@ -310,11 +310,11 @@ FUNC VOID Info_Mod_Orik_Ruestung_OJG_S ()
 
 FUNC VOID Info_Mod_Orik_Ruestung_SLD_M ()
 {
-	AI_Output(hero, self, "Info_Mod_Orik_Ruestung_SLD_M_15_00"); //Ich nehme die schwere Söldnerrüstung.
+	AI_Output(hero, self, "Info_Mod_Orik_Ruestung_SLD_M_15_00"); //I'll take the heavy mercenary armor.
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 2500)
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_M_08_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_M_08_01"); //All clear.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 2500);
 
@@ -329,7 +329,7 @@ FUNC VOID Info_Mod_Orik_Ruestung_SLD_M ()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_M_08_02"); //Ohne Gold keine Rüstung.
+		AI_Output(self, hero, "Info_Mod_Orik_Ruestung_SLD_M_08_02"); //No gold, no armor.
 	};
 
 	Info_ClearChoices	(Info_Mod_Orik_Ruestung);

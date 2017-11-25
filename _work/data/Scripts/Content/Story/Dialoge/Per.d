@@ -18,25 +18,25 @@ FUNC INT Info_Mod_Per_Trador_Condition()
 
 FUNC VOID Info_Mod_Per_Trador_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Per_Trador_13_00"); //Lange nicht gesehen, was gibt’s?
-	AI_Output(hero, self, "Info_Mod_Per_Trador_15_01"); //Kannst du mir sagen, welche Magier im Moment vermisst werden?
-	AI_Output(self, hero, "Info_Mod_Per_Trador_13_02"); //Vermisst ist so eine Sache ... Ich kann dir wohl sagen, wer seit ein paar Tagen nicht mehr im Dorf war.
-	AI_Output(self, hero, "Info_Mod_Per_Trador_13_03"); //Da ist zum einen Asko, der wollte sich bei den Ruinen umsehen.
-	AI_Output(self, hero, "Info_Mod_Per_Trador_13_04"); //Dann noch Fore, der wollte unten am Hang nach seltenen Pflanzen suchen.
-	AI_Output(self, hero, "Info_Mod_Per_Trador_13_05"); //Und Dean. Ich glaube, er wollte sich beim Steinkreis umschauen.
-	AI_Output(hero, self, "Info_Mod_Per_Trador_15_06"); //Ich werde die drei mal aufsuchen.
-	AI_Output(self, hero, "Info_Mod_Per_Trador_13_07"); //Dankeschön. Wenn du Asko triffst, sag ihm doch bitte, dass ich ein Päckchen für ihn habe.
+	AI_Output(self, hero, "Info_Mod_Per_Trador_13_00"); //Long time no see, what's up?
+	AI_Output(hero, self, "Info_Mod_Per_Trador_15_01"); //Can you tell me which mages are missing right now?
+	AI_Output(self, hero, "Info_Mod_Per_Trador_13_02"); //Missing is such a thing... I guess I can tell you who hasn't been to the village in a few days.
+	AI_Output(self, hero, "Info_Mod_Per_Trador_13_03"); //On the one hand there is Asko, who wanted to look around the ruins.
+	AI_Output(self, hero, "Info_Mod_Per_Trador_13_04"); //Then there was Fore, who wanted to look for rare plants down the slope.
+	AI_Output(self, hero, "Info_Mod_Per_Trador_13_05"); //And Dean. I think he wanted to look around the stone circle.
+	AI_Output(hero, self, "Info_Mod_Per_Trador_15_06"); //I'll go see them three times.
+	AI_Output(self, hero, "Info_Mod_Per_Trador_13_07"); //Thank you very much. If you meet Asko, please tell him I have a package for him.
 
 	Log_CreateTopic	(TOPIC_MOD_PER_ASKO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PER_ASKO, LOG_RUNNING);
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Dever_Trador))
 	{
-		B_LogEntry	(TOPIC_MOD_PER_ASKO, "Ich soll Asko sagen, dass Per ein Paket für ihn hat.");
+		B_LogEntry	(TOPIC_MOD_PER_ASKO, "I'm supposed to tell Asko that Per has a package for him.");
 	}
 	else
 	{
-		B_LogEntry_More	(TOPIC_MOD_FAICE_GIFT, TOPIC_MOD_PER_ASKO, "Seit einigen Tagen nicht mehr aufgetaucht sind: Asko, der ist bei den Ruinen; Fore, der ist unten am Hang; und Dean, der ist beim Steinkreis.", "Ich soll Asko sagen, dass Per ein Paket für ihn hat.");
+		B_LogEntry_More	(TOPIC_MOD_FAICE_GIFT, TOPIC_MOD_PER_ASKO, "Since a few days have not appeared any more: Asko, who is near the ruins; Fore, he's down on the slope; and Dean, he's at the stone circle.", "I'm supposed to tell Asko that Per has a package for him.");
 	};
 };
 
@@ -60,14 +60,14 @@ FUNC INT Info_Mod_Per_Dean_Condition()
 
 FUNC VOID Info_Mod_Per_Dean_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Per_Dean_13_00"); //Was hat deine Suche ergeben?
-	AI_Output(hero, self, "Info_Mod_Per_Dean_15_01"); //Dean wurde von einem Golem umgebracht, der von einem Betrüger namens Trador hierher gesendet wurde.
-	AI_Output(self, hero, "Info_Mod_Per_Dean_13_02"); //Das ist ja furchtbar! Aber ich habe in letzter Zeit keinen Golem hier in Tugettso gesehen. Merkwürdig.
-	AI_Output(self, hero, "Info_Mod_Per_Dean_13_03"); //Du musst Genn auf jeden Fall davon in Kenntnis setzen.
+	AI_Output(self, hero, "Info_Mod_Per_Dean_13_00"); //What did your search result in?
+	AI_Output(hero, self, "Info_Mod_Per_Dean_15_01"); //Dean was killed by a golem sent here by a con man named Trador.
+	AI_Output(self, hero, "Info_Mod_Per_Dean_13_02"); //That's terrible! But I haven't seen a golem around here in Tugettso lately. Strange.
+	AI_Output(self, hero, "Info_Mod_Per_Dean_13_03"); //You have to let Genn know about this.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Dever_Dean))
 	{
-		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Ich habe von Deans Tod berichtet. Jetzt sollte ich zurück zu Genn gehen und ihn von den Ereignissen in Kenntnis setzen.");
+		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "I reported Dean's death. Now I should go back to Genn and inform him of the events.");
 	};
 };
 
@@ -79,7 +79,7 @@ INSTANCE Info_Mod_Per_Asko (C_INFO)
 	information	= Info_Mod_Per_Asko_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Asko gesagt, dass du ein Paket für ihn hast.";
+	description	= "I told Asko you had a package for him.";
 };
 
 FUNC INT Info_Mod_Per_Asko_Condition()
@@ -92,14 +92,14 @@ FUNC INT Info_Mod_Per_Asko_Condition()
 
 FUNC VOID Info_Mod_Per_Asko_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Asko_15_00"); //Ich habe Asko gesagt, dass du ein Paket für ihn hast. Er müsste auf dem Weg sein.
-	AI_Output(self, hero, "Info_Mod_Per_Asko_13_01"); //Dankeschön. Hier hast du ein bisschen Gold.
+	AI_Output(hero, self, "Info_Mod_Per_Asko_15_00"); //I told Asko you had a package for him. He should be on his way.
+	AI_Output(self, hero, "Info_Mod_Per_Asko_13_01"); //Thank you very much. Here's some gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_PER_ASKO, "Per weiß Bescheid, dass Asko auf dem Weg zu ihm ist.");
+	B_LogEntry	(TOPIC_MOD_PER_ASKO, "Per knows Asko is on his way to see him.");
 	B_SetTopicStatus	(TOPIC_MOD_PER_ASKO, LOG_SUCCESS);
 
 	B_StartOtherRoutine	(Mod_7355_VMG_Asko_TUG, "START");
@@ -113,7 +113,7 @@ INSTANCE Info_Mod_Per_Pruefung (C_INFO)
 	information	= Info_Mod_Per_Pruefung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wie sieht es mit der letzten Aufgabe aus?";
+	description	= "What about the last task?";
 };
 
 FUNC INT Info_Mod_Per_Pruefung_Condition()
@@ -127,87 +127,87 @@ FUNC INT Info_Mod_Per_Pruefung_Condition()
 
 FUNC VOID Info_Mod_Per_Pruefung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung_15_00"); //Wie sieht es mit der letzten Aufgabe aus?
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_13_01"); //Da bist du ja. Ich habe schon erfahren, dass ich dich in die Kunst unserer Meditation einweisen soll. Bist du bereit?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung_15_00"); //What about the last task?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_13_01"); //Oh, there you are. I have already learned that I should introduce you to the art of our meditation. Are you ready?
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung, "Nein, ich muss noch schnell etwas erledigen.", Info_Mod_Per_Pruefung_B);
-	Info_AddChoice	(Info_Mod_Per_Pruefung, "Ja, erkläre mir, wie ich richtig meditiere.", Info_Mod_Per_Pruefung_A);
+	Info_AddChoice	(Info_Mod_Per_Pruefung, "No, I have to do something fast.", Info_Mod_Per_Pruefung_B);
+	Info_AddChoice	(Info_Mod_Per_Pruefung, "Yeah, explain to me how to properly meditate.", Info_Mod_Per_Pruefung_A);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung_B()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung_B_15_00"); //Nein, ich muss noch schnell etwas erledigen.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_B_13_01"); //Beeile dich am besten.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung_B_15_00"); //No, I have to do something fast.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_B_13_01"); //Best hurry up.
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung_A()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung_A_15_00"); //Ja, erkläre mir, wie ich richtig meditiere.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_A_13_01"); //Vielleicht kennst du das kleine Tal nahe der Höhle, in der sich die Goblins eingenistet hatten?
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_A_13_02"); //Begib dich dorthin und sprich eine Formel. Den Text dafür gebe ich dir am Ende unseres Gesprächs.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_A_13_03"); //Kannst du mir folgen?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung_A_15_00"); //Yeah, explain to me how to properly meditate.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_A_13_01"); //Maybe you know the small valley near the cave where the goblins had settled?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_A_13_02"); //Go there and say a formula. I'll give you the text at the end of our conversation.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_A_13_03"); //Do you follow me?
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung, "Kannst du das noch mal wiederholen?", Info_Mod_Per_Pruefung_D);
-	Info_AddChoice	(Info_Mod_Per_Pruefung, "Ja, erzähl weiter.", Info_Mod_Per_Pruefung_C);
+	Info_AddChoice	(Info_Mod_Per_Pruefung, "Can you say that again?", Info_Mod_Per_Pruefung_D);
+	Info_AddChoice	(Info_Mod_Per_Pruefung, "Yeah, go on.", Info_Mod_Per_Pruefung_C);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung_E()
 {
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_E_13_00"); //Wenn du die Formel gesprochen hast, wirst du in einen Trance-Zustand verfallen und eine Vision wird dich überkommen.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_E_13_01"); //Erzähle niemandem von der Vision. Sie führt dich zu der nächsten Station dieser Aufgabe.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_E_13_02"); //Die Station ist für jeden individuell, daher kann ich dir nicht helfen. Höre genau auf die Vision. Klar soweit?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_E_13_00"); //When you have spoken the formula, you will fall into a trance state and a vision will overcome you.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_E_13_01"); //Don't tell anyone about the vision. It will lead you to the next station of this task.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_E_13_02"); //The ward is individual for everyone, so I can't help you. Listen carefully to the vision. Clearly so far?
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung, "Kannst du das noch mal wiederholen?", Info_Mod_Per_Pruefung_G);
-	Info_AddChoice	(Info_Mod_Per_Pruefung, "Ja, erzähl weiter.", Info_Mod_Per_Pruefung_F);
+	Info_AddChoice	(Info_Mod_Per_Pruefung, "Can you say that again?", Info_Mod_Per_Pruefung_G);
+	Info_AddChoice	(Info_Mod_Per_Pruefung, "Yeah, go on.", Info_Mod_Per_Pruefung_F);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung_D()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung_D_15_00"); //Kannst du das noch mal wiederholen?
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_D_13_01"); //Begib dich in das kleine Tal nahe der Goblinhöhle und lies den Text, den ich dir gleich gebe, laut vor.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung_D_15_00"); //Can you say that again?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_D_13_01"); //Go into the small valley near the Goblin Cave and read the text I'm about to give you aloud.
 
 	Info_Mod_Per_Pruefung_E();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung_C()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung_C_15_00"); //Ja, erzähl weiter.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung_C_15_00"); //Yeah, go on.
 
 	Info_Mod_Per_Pruefung_E();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung_H()
 {
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_H_13_00"); //Wenn du deine Vision richtig gedeutet und dein Ziel gefunden hast, wirst du ein rotes Blütenblatt erhalten.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_H_13_01"); //So ist es seit jeher von der Natur vorgesehen gewesen und du wirst wohl keine Ausnahme darstellen.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_H_13_02"); //Bring mir das Blütenblatt, damit ich weiß, dass du deine Aufgabe gemeistert hast. Kann es losgehen?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_H_13_00"); //If you have interpreted your vision correctly and found your goal, you will get a red petal.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_H_13_01"); //This is the way nature has always intended it and you will probably be no exception.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_H_13_02"); //Bring me the petal so I know you've done your job. Can we get started?
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung, "Davon hätte ich gerne noch die Kurzfassung.", Info_Mod_Per_Pruefung_J);
-	Info_AddChoice	(Info_Mod_Per_Pruefung, "Ja, gib mir den Text.", Info_Mod_Per_Pruefung_I);
+	Info_AddChoice	(Info_Mod_Per_Pruefung, "I'd like to have the short version of that.", Info_Mod_Per_Pruefung_J);
+	Info_AddChoice	(Info_Mod_Per_Pruefung, "Yeah, give me the lines.", Info_Mod_Per_Pruefung_I);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung_G()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung_D_15_00"); //Kannst du das noch mal wiederholen?
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_G_13_01"); //In deinem Trance-Zustand wirst du eine Vision haben, die dich zur nächsten Station führt.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_G_13_02"); //Allerdings darfst du niemandem davon erzählen.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung_D_15_00"); //Can you say that again?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_G_13_01"); //In your trance state you will have a vision that will take you to the next station.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_G_13_02"); //You can't tell anyone, though.
 
 	Info_Mod_Per_Pruefung_H();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung_F()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung_C_15_00"); //Ja, erzähl weiter.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung_C_15_00"); //Yeah, go on.
 
 	Info_Mod_Per_Pruefung_H();
 };
@@ -216,9 +216,9 @@ FUNC VOID Info_Mod_Per_Pruefung_K()
 {
 	B_GiveInvItems	(self, hero, ItWr_PerZettel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_K_13_00"); //Nun mach' dich auf den Weg.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_K_13_00"); //Now get on your way.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich soll im Tal eine Spruchrolle wirken. Die anschließende Vision wird mich zu einem Ziel führen, bei dem ich ein rotes Blütenblatt finden werde. Das soll ich Per bringen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I'm supposed to be playing a spell in the valley. The following vision will lead me to a goal where I will find a red petal. I'm supposed to bring this to Per.");
 
 	Mod_VMG_Pruefung = 3;
 
@@ -235,17 +235,17 @@ FUNC VOID Info_Mod_Per_Pruefung_K()
 
 FUNC VOID Info_Mod_Per_Pruefung_J()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung_J_15_00"); //Davon hätte ich gerne noch die Kurzfassung.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_J_13_01"); //Bei deinem Ziel findest du ein rotes Blütenblatt, dass du mir bringen sollst.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_J_13_02"); //So weiß ich, 	dass du deine Aufgabe bestanden hast. Hier ist die Formel.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung_J_15_00"); //I'd like to have the short version of that.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_J_13_01"); //At your destination you will find a red petal to bring to me.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_J_13_02"); //So I know you've done your job. Here's the formula.
 
 	Info_Mod_Per_Pruefung_K();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung_I()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung_I_15_00"); //Ja, gib mir den Text.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung_I_13_01"); //Hier hast du ihn.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung_I_15_00"); //Yeah, give me the lines.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung_I_13_01"); //Here you have it.
 
 	Info_Mod_Per_Pruefung_K();
 };
@@ -258,7 +258,7 @@ INSTANCE Info_Mod_Per_Pruefung2 (C_INFO)
 	information	= Info_Mod_Per_Pruefung2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es gibt da ein Problem ...";
+	description	= "There's a problem...";
 };
 
 FUNC INT Info_Mod_Per_Pruefung2_Condition()
@@ -272,69 +272,69 @@ FUNC INT Info_Mod_Per_Pruefung2_Condition()
 
 FUNC VOID Info_Mod_Per_Pruefung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_15_00"); //Es gibt da ein Problem ...
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_13_01"); //Was für ein Problem?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_15_00"); //There's a problem...
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_13_01"); //What kind of problem?
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung2);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung2, "Ach nichts, damit werde ich schon fertig.", Info_Mod_Per_Pruefung2_B);
-	Info_AddChoice	(Info_Mod_Per_Pruefung2, "In dem Tal hat sich eine Frau breit gemacht.", Info_Mod_Per_Pruefung2_A);
+	Info_AddChoice	(Info_Mod_Per_Pruefung2, "Oh, nothing, I can handle it.", Info_Mod_Per_Pruefung2_B);
+	Info_AddChoice	(Info_Mod_Per_Pruefung2, "There's a woman in that valley.", Info_Mod_Per_Pruefung2_A);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_B_15_00"); //Ach nichts, damit werde ich schon fertig.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_B_13_01"); //Du weißt, was du zu tun hast.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_B_15_00"); //Oh, nothing, I can handle it.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_B_13_01"); //You know what you have to do.
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung2);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_A_15_00"); //In dem Tal hat sich eine Frau breit gemacht, die sich mit einer magischen Barriere umgibt.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_01"); //DAS ist allerdings ein Problem.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_02"); //Das Tal hat einen magischen Ursprung, der so stark ist, dass die Vision dich nur dort ereilt.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_03"); //Wahrscheinlich ist diese Frau deshalb dort erschienen.
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_A_15_04"); //Was können wir tun?
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_05"); //Ist dir irgendetwas aufgefallen, das uns weiterhelfen könnte?
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_A_15_06"); //Scheinbar kann die Barriere Tieren nichts anhaben.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_07"); //Das ist doch schon mal etwas! Damit sollte es dir nicht schwer fallen, sie zu erreichen, und herauszufinden, wer sie ist.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_A_15_00"); //There's a woman in the valley with a magical barrier surrounding her.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_01"); //However, this is a problem.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_02"); //The valley has a magical origin that is so strong that the vision only comes to you there.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_03"); //That's probably why this woman appeared there.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_A_15_04"); //What can we do?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_05"); //Did you notice anything that might help us?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_A_15_06"); //Apparently, the barrier can't harm animals.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_A_13_07"); //That's something already! So it shouldn't be hard for you to reach her and find out who she is.
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung2);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung2, "Nein, da mache ich nicht mit.", Info_Mod_Per_Pruefung2_D);
-	Info_AddChoice	(Info_Mod_Per_Pruefung2, "Was soll ich machen?", Info_Mod_Per_Pruefung2_C);
+	Info_AddChoice	(Info_Mod_Per_Pruefung2, "No, I won't go along with that.", Info_Mod_Per_Pruefung2_D);
+	Info_AddChoice	(Info_Mod_Per_Pruefung2, "What am I supposed to do?", Info_Mod_Per_Pruefung2_C);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung2_E()
 {
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_E_13_00"); //Hier hast du eine Verwandlungsspruchrolle. Sie wird dich in eine Fleischwanze verwandeln, die fällt nicht auf.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_E_13_00"); //Here you have a transformational role. She'll turn you into a meat bug, she won't attract attention.
 
 	B_GiveInvItems	(self, hero, ItSc_TrfMeatbug, 1);
 
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_E_13_01"); //Dank dir können wir ja wieder einige dieser Rollen herstellen.
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_E_15_02"); //Okay, ich werde herausfinden, wer diese Frau ist.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_E_13_03"); //Ich wusste, dass ich mich auf dich verlassen kann.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_E_13_01"); //Thanks to you, we can make some of these reels again.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_E_15_02"); //Okay, I'm gonna find out who this woman is.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_E_13_03"); //I knew I could count on you.
 
 	Mod_VMG_Pruefung_Barriere = 3;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Per hat mir eine Verwandlung zur Fleischwanze gegeben. Damit sollte ich unbemerkt in die Barriere gelangen und kann die Frau zur Rede stellen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Per gave me a metamorphosis into a meat bug. This should allow me to get unnoticed into the barrier and confront the woman.");
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung2);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung2_D()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_D_15_00"); //Nein, da mache ich nicht mit.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_D_13_01"); //Sieh es einfach als Teil der Prüfung.
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_D_15_02"); //Dann habe ich wohl keine andere Wahl. Was soll ich machen?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_D_15_00"); //No, I won't go along with that.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung2_D_13_01"); //Just think of it as part of the test.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_D_15_02"); //Then I don't have a choice. What am I supposed to do?
 
 	Info_Mod_Per_Pruefung2_E();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung2_C()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_C_15_00"); //Was soll ich machen?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung2_C_15_00"); //What am I supposed to do?
 
 	Info_Mod_Per_Pruefung2_E();
 };
@@ -347,7 +347,7 @@ INSTANCE Info_Mod_Per_Pruefung3 (C_INFO)
 	information	= Info_Mod_Per_Pruefung3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt da ein Problem ...";
+	description	= "There's a problem...";
 };
 
 FUNC INT Info_Mod_Per_Pruefung3_Condition()
@@ -362,86 +362,86 @@ FUNC VOID Info_Mod_Per_Pruefung3_Info()
 {
 	if (Mod_VMG_Pruefung_Petunia == 6)
 	{
-		AI_Output(hero, self, "Info_Mod_Per_Pruefung3_15_00"); //Ich denke, wir können das Problem hier und jetzt zusammen lösen.
+		AI_Output(hero, self, "Info_Mod_Per_Pruefung3_15_00"); //I think we can solve this problem together right now.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Per_Pruefung3_15_01"); //Ich denke, ich habe das Problem gelöst.
+		AI_Output(hero, self, "Info_Mod_Per_Pruefung3_15_01"); //I think I've solved the problem.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_13_02"); //Was ist passiert?
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_15_03"); //Die Frau dort im Tal heißt Petunia und behauptet, mal eine Verwandlungsmagierin gewesen zu sein, aber sie wurde verstoßen.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_13_04"); //Ich erinnere mich an sie. Was soll denn jetzt mit ihr geschehen?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_13_02"); //What's happening?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_15_03"); //The woman there in the valley is called Petunia and claims to have been a transformational mage, but she was cast out.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_13_04"); //I remember her. What will happen to her now?
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung3);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Sie sollte bestraft werden, für alles, was sie getan hat.", Info_Mod_Per_Pruefung3_B);
+	Info_AddChoice	(Info_Mod_Per_Pruefung3, "She should be punished for everything she's done.", Info_Mod_Per_Pruefung3_B);
 
 	if (Mod_VMG_Pruefung_Petunia == 6)
 	{
-		Info_AddChoice	(Info_Mod_Per_Pruefung3, "Ich habe ihr versprochen, dass wir uns etwas ausdenken.", Info_Mod_Per_Pruefung3_A);
+		Info_AddChoice	(Info_Mod_Per_Pruefung3, "I promised her we'd come up with something.", Info_Mod_Per_Pruefung3_A);
 	};
 };
 
 FUNC VOID Info_Mod_Per_Pruefung3_E()
 {
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_E_13_00"); //Es gibt einige Möglichkeiten. Wir könnten sie einsperren, einfach laufen lassen oder wieder aufnehmen.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_E_13_01"); //Du solltest entscheiden, was mit ihr passiert.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_E_13_00"); //There are several possibilities. We could lock her up, just let her go, or we could take her back.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_E_13_01"); //You should decide what happens to her.
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung3);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Wir sollten sie wieder aufnehmen.", Info_Mod_Per_Pruefung3_I);
-	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Ich glaube, wir können sie laufen lassen.", Info_Mod_Per_Pruefung3_H);
-	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Wir sollten sie einsperren. Dann ist sie keine Gefahr mehr.", Info_Mod_Per_Pruefung3_G);
+	Info_AddChoice	(Info_Mod_Per_Pruefung3, "We should pick her up again.", Info_Mod_Per_Pruefung3_I);
+	Info_AddChoice	(Info_Mod_Per_Pruefung3, "I think we can let her go.", Info_Mod_Per_Pruefung3_H);
+	Info_AddChoice	(Info_Mod_Per_Pruefung3, "We should lock them up. Then she's no longer a danger.", Info_Mod_Per_Pruefung3_G);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung3_F()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_F_15_00"); //Was soll ich jetzt tun?
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_F_13_01"); //Hast du die Formel von mir noch?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_F_15_00"); //What am I supposed to do now?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_F_13_01"); //Do you still have my formula?
 
 	if (Npc_HasItems(hero, ItWr_PerZettel) == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Per_Pruefung3_F_15_02"); //Ja.
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung3_F_13_03"); //Dann erledige deine Aufgabe und komm anschließend zu mir zurück.
+		AI_Output(hero, self, "Info_Mod_Per_Pruefung3_F_15_02"); //Yeah.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung3_F_13_03"); //Then do your job and come back to me.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Per_Pruefung3_F_15_04"); //Nein
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung3_F_13_05"); //Dann bekommst du von mir eine neue. Hier.
+		AI_Output(hero, self, "Info_Mod_Per_Pruefung3_F_15_04"); //nay
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung3_F_13_05"); //Then I'll give you a new one. Here.
 
 		B_GiveInvItems	(self, hero, ItWr_PerZettel, 1);
 
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung3_F_13_06"); //Und jetzt erledige deine Aufgabe und komme anschließend zu mir zurück.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung3_F_13_06"); //Now do your job and come back to me.
 	};
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Petunias Schicksal ist nun entschieden. Jetzt muss ich noch die Aufgabe bewältigen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Petunia's fate is now decided. Now I have to do the job.");
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung3);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung3_B()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_B_15_00"); //Sie sollte bestraft werden, für alles, was sie getan hat.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_B_13_01"); //Wenn das deine Entscheidung ist.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_B_15_00"); //She should be punished for everything she's done.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_B_13_01"); //If that's your decision.
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung3);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Nein! Das hat sie doch nicht verdient.", Info_Mod_Per_Pruefung3_D);
-	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Bestraft sie.", Info_Mod_Per_Pruefung3_C);
+	Info_AddChoice	(Info_Mod_Per_Pruefung3, "No! She doesn't deserve this.", Info_Mod_Per_Pruefung3_D);
+	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Punish them.", Info_Mod_Per_Pruefung3_C);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung3_D()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_D_15_00"); //Nein! Das hat sie doch nicht verdient. Haben wir noch eine andere Wahl?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_D_15_00"); //No! She doesn't deserve this. Do we have another choice?
 
 	Info_Mod_Per_Pruefung3_E();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung3_C()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_C_15_00"); //Bestraft sie.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_C_13_01"); //Wenn das dein Wunsch ist. Ich werde alles in die Wege leiten.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_C_15_00"); //Punish them.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_C_13_01"); //If that's what you want. I'll get it all set up.
 
 	B_StartOtherRoutine	(Mod_7594_OUT_Petunia_TUG, "GEFANGEN");
 
@@ -450,33 +450,33 @@ FUNC VOID Info_Mod_Per_Pruefung3_C()
 
 FUNC VOID Info_Mod_Per_Pruefung3_M()
 {
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_M_13_00"); //So sei es. Ich werde alles in die Wege leiten.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_M_13_00"); //So be it. I'll get it all set up.
 
 	Info_Mod_Per_Pruefung3_F();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung3_A()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_A_15_00"); //Ich habe ihr versprochen, dass wir uns etwas ausdenken. Was schlägst du vor?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_A_15_00"); //I promised her we'd come up with something. What do you suggest?
 
 	Info_Mod_Per_Pruefung3_E();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung3_I()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_I_15_00"); //Wir sollten sie wieder aufnehmen.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_I_13_01"); //Bist du dir da sicher?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_I_15_00"); //We should pick her up again.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_I_13_01"); //Are you sure about that?
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung3);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Nein, ich glaube, in Freiheit ist sie besser aufgehoben.", Info_Mod_Per_Pruefung3_L);
-	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Nein, wir sollten sie einsperren. Dann ist sie keine Gefahr mehr.", Info_Mod_Per_Pruefung3_K);
-	Info_AddChoice	(Info_Mod_Per_Pruefung3, "Ich bin von ihrer inneren Aufrichtigkeit überzeugt.", Info_Mod_Per_Pruefung3_J);
+	Info_AddChoice	(Info_Mod_Per_Pruefung3, "No, I think she's better off in freedom.", Info_Mod_Per_Pruefung3_L);
+	Info_AddChoice	(Info_Mod_Per_Pruefung3, "No, we should lock them up. Then she's no longer a danger.", Info_Mod_Per_Pruefung3_K);
+	Info_AddChoice	(Info_Mod_Per_Pruefung3, "I am convinced of her inner sincerity.", Info_Mod_Per_Pruefung3_J);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung3_H()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_H_15_00"); //Ich glaube, wir können sie laufen lassen.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_H_15_00"); //I think we can let her go.
 
 	B_RemoveNpc	(Mod_7594_OUT_Petunia_TUG);
 
@@ -485,7 +485,7 @@ FUNC VOID Info_Mod_Per_Pruefung3_H()
 
 FUNC VOID Info_Mod_Per_Pruefung3_G()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_G_15_00"); //Wir sollten sie einsperren. Dann ist sie keine Gefahr mehr.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_G_15_00"); //We should lock them up. Then she's no longer a danger.
 
 	B_StartOtherRoutine	(Mod_7594_OUT_Petunia_TUG,	"GEFANGEN");
 
@@ -494,7 +494,7 @@ FUNC VOID Info_Mod_Per_Pruefung3_G()
 
 FUNC VOID Info_Mod_Per_Pruefung3_L()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_L_15_00"); //Nein, ich glaube, in Freiheit ist sie besser aufgehoben.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_L_15_00"); //No, I think she's better off in freedom.
 
 	B_RemoveNpc	(Mod_7594_OUT_Petunia_TUG);
 
@@ -503,7 +503,7 @@ FUNC VOID Info_Mod_Per_Pruefung3_L()
 
 FUNC VOID Info_Mod_Per_Pruefung3_K()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_K_15_00"); //Nein, wir sollten sie einsperren. Dann ist sie keine Gefahr mehr.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_K_15_00"); //No, we should lock them up. Then she's no longer a danger.
 
 	B_StartOtherRoutine	(Mod_7594_OUT_Petunia_TUG,	"GEFANGEN");
 
@@ -512,8 +512,8 @@ FUNC VOID Info_Mod_Per_Pruefung3_K()
 
 FUNC VOID Info_Mod_Per_Pruefung3_J()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_J_15_00"); //Ich bin von ihrer inneren Aufrichtigkeit überzeugt. Man müsste sie vielleicht ein wenig beaufsichtigen, aber sie kann den Sprung schaffen.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_J_13_01"); //Eine weise Entscheidung. Ich werde alles in die Wege leiten.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung3_J_15_00"); //I am convinced of her inner sincerity. You might have to supervise her a little bit, but she can make the jump.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung3_J_13_01"); //A wise decision. I'll get it all set up.
 
 	AI_UnequipArmor	(Mod_7594_OUT_Petunia_TUG);
 
@@ -534,7 +534,7 @@ INSTANCE Info_Mod_Per_Pruefung4 (C_INFO)
 	information	= Info_Mod_Per_Pruefung4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Blütenblatt.";
+	description	= "I have the petal.";
 };
 
 FUNC INT Info_Mod_Per_Pruefung4_Condition()
@@ -548,38 +548,38 @@ FUNC INT Info_Mod_Per_Pruefung4_Condition()
 
 FUNC VOID Info_Mod_Per_Pruefung4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_15_00"); //Ich habe das Blütenblatt.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_13_01"); //Das ist großartig! Ich wusste, du würdest es schaffen. Zeig mal her.
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_15_02"); //Hier hast du es.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_15_00"); //I have the petal.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_13_01"); //That's awesome! I knew you'd make it. Let me see that.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_15_02"); //Here you have it.
 
 	B_GiveInvItems	(hero, self, ItMi_Bluetenblatt, 1);
 
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_13_03"); //Hach, ich liebe diese Blütenblätter. Ich erinnere mich noch, wie ich meins gefunden habe ...
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_15_04"); //Komm zur Sache.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_13_05"); //Entschuldigung, natürlich. Hast du eine Erkenntnis aus dem Finden des Blütenblattes erhalten?
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_13_03"); //Hah, I love those petals. I still remember when I found mine....
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_15_04"); //Get to the point.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_13_05"); //Sorry, of course. Did you get any insight from finding the petal?
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung4);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Ich bin etwas Besonderes.", Info_Mod_Per_Pruefung4_C);
-	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Die Natur ist etwas Harmonisches und sollte nicht durch Fremdeinflüsse beeinflusst werden.", Info_Mod_Per_Pruefung4_B);
-	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Nein, sollte ich?", Info_Mod_Per_Pruefung4_A);
+	Info_AddChoice	(Info_Mod_Per_Pruefung4, "I'm something special.", Info_Mod_Per_Pruefung4_C);
+	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Nature is something harmonious and should not be influenced by external influences.", Info_Mod_Per_Pruefung4_B);
+	Info_AddChoice	(Info_Mod_Per_Pruefung4, "No, should I?", Info_Mod_Per_Pruefung4_A);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung4_H()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_H_15_00"); //Das werde ich. Auf Wiedersehen.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_H_13_01"); //Vielleicht sehen wir uns noch einmal wieder.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_H_15_00"); //I will, I will. Goodbye. Goodbye.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_H_13_01"); //Maybe we'll see each other again.
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung4);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung4_D()
 {
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_D_13_00"); //Bravo, du hast die Aufgabe gemeistert! Geh nun zu Genn, er wird dich wieder ins Minental teleportieren.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_D_13_00"); //Well done, you did the job! Go to Genn, he'll teleport you back to the Minental.
 
 	Mod_VMG_Pruefung_Per = 1;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Die letzte Aufgabe habe ich bestanden. Nun muss ich zu Genn, um zurück ins Minental zu gelangen. Danach spreche ich mit Faice und schaue, was er mir zu sagen hat.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I passed the last test. Now I have to go to Genn to get back to the Minental. Then I talk to Faice and see what he has to tell me.");
 
 	Info_Mod_Per_Pruefung4_H();
 };
@@ -589,68 +589,68 @@ FUNC VOID Info_Mod_Per_Pruefung4_E()
 	if (Mod_VMG_Pruefung_Genn == 1)
 	&& (Mod_VMG_Pruefung_Asko == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_00"); //Du hast bei dieser wichtigsten Aufgabe leider versagt, aber durch dein Handeln vorhin werde ich noch mal ein Auge zudrücken.
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_01"); //Geh nun zu Genn, er wird dich wieder ins Minental teleportieren.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_00"); //You have unfortunately failed in this most important task, but I will turn a blind eye to your actions earlier.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_01"); //Go to Genn, he'll teleport you back to the Minental.
 	}
 	else if (Mod_VMG_Pruefung_Genn == 2)
 	&& (Mod_VMG_Pruefung_Asko == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_02"); //Du hast bei dieser wichtigsten Aufgabe leider auch versagt, so wie bei den beiden Aufgaben zuvor.
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_03"); //Damit wirst du nie ein richtiger Verwandlungmagier sein. Das tut mir wirklich sehr leid für dich, nach allem, was du für uns getan hast, aber so besagen es die Traditionen.
-		AI_Output(hero, self, "Info_Mod_Per_Pruefung4_E_15_04"); //Das ist doch nicht dein Ernst. Gibt es keine andere Möglichkeit, wie ich doch noch dabei sein kann?
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_05"); //Dieses Mal nicht. Es tut mir wirklich Leid. Geh nun zu Genn, er wird dich wieder ins Minental teleportieren.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_02"); //Unfortunately, you have failed in this most important task, just as you failed in the two previous tasks.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_03"); //You'll never be a real quick-change mage. I'm really very sorry for you, after all you've done for us, but that's what the traditions say.
+		AI_Output(hero, self, "Info_Mod_Per_Pruefung4_E_15_04"); //You can't be serious. Isn't there any other way I can still be here?
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_05"); //Dieses Mal nicht. Es tut mir wirklich Leid. Go to Genn, he'll teleport you back to the Minental.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_06"); //Du hast bei dieser wichtigsten Aufgabe leider auch versagt, so wie bei einer Aufgabe zuvor.
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_07"); //Ich kann dich nur unter der Bedingung weiter lassen, dass du auf deine Belohnung verzichtest.
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_08"); //Und das ist schon gut gemeint. Du hast einfach zu viel für uns getan, als dass ich dich durchfallen lassen könnte.
-		AI_Output(hero, self, "Info_Mod_Per_Pruefung4_E_15_09"); //Ich habe wohl keine andere Wahl.
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_10"); //Geh nun zu Genn, er wird dich wieder ins Minental teleportieren.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_06"); //Unfortunately, you have failed in this most important task, just as you failed in a task before.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_07"); //I can't let you go unless you give up your reward.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_08"); //And that's a good point. You've done too much for us to let you fall through.
+		AI_Output(hero, self, "Info_Mod_Per_Pruefung4_E_15_09"); //I don't have a choice.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_10"); //Go to Genn, he'll teleport you back to the Minental.
 	};
 
 	Mod_VMG_Pruefung_Per = 2;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Bei der letzten Aufgabe bin ich gescheitert. Nun muss ich zu Genn, um zurück ins Minental zu gelangen. Danach spreche ich mit Faice und schaue, was er mir zu sagen hat.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I failed the last assignment. Now I have to go to Genn to get back to the Minental. Then I talk to Faice and see what he has to tell me.");
 
 	Info_Mod_Per_Pruefung4_H();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung4_C()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_C_15_00"); //Ich bin etwas Besonderes.
-	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_C_13_01"); //Ist das dein Ernst?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_C_15_00"); //I'm something special.
+	AI_Output(self, hero, "Info_Mod_Per_Pruefung4_C_13_01"); //Are you serious?
 
 	Info_ClearChoices	(Info_Mod_Per_Pruefung4);
 
-	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Natürlich nicht.", Info_Mod_Per_Pruefung4_G);
-	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Natürlich.", Info_Mod_Per_Pruefung4_F);
+	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Of course not, of course.", Info_Mod_Per_Pruefung4_G);
+	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Of course it is.", Info_Mod_Per_Pruefung4_F);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung4_B()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_B_15_00"); //Die Natur ist etwas Harmonisches und sollte nicht durch Fremdeinflüsse beeinflusst werden.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_B_15_00"); //Nature is something harmonious and should not be influenced by external influences.
 
 	Info_Mod_Per_Pruefung4_D();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung4_A()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_A_15_00"); //Nein, sollte ich?
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_A_15_00"); //No, should I?
 
 	Info_Mod_Per_Pruefung4_E();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung4_G()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_G_15_00"); //Natürlich nicht. Die Natur ist etwas Harmonisches und sollte nicht durch Fremdeinflüsse beeinflusst werden. Das ist meine Erkenntnis.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_G_15_00"); //Of course not, of course. Nature is something harmonious and should not be influenced by external influences. That's my insight.
 
 	Info_Mod_Per_Pruefung4_D();
 };
 
 FUNC VOID Info_Mod_Per_Pruefung4_F()
 {
-	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_F_15_00"); //Natürlich.
+	AI_Output(hero, self, "Info_Mod_Per_Pruefung4_F_15_00"); //Of course it is.
 
 	Info_Mod_Per_Pruefung4_E();
 };
@@ -665,7 +665,7 @@ INSTANCE Info_Mod_Per_Lernen_DEX (C_INFO)
 	information	= Info_Mod_Per_Lernen_DEX_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Teach me something.";
 };
 
 FUNC INT Info_Mod_Per_Lernen_DEX_Condition()
@@ -683,11 +683,11 @@ FUNC VOID Info_Mod_Per_Lernen_DEX_Info()
 		Mod_Knows_PerTeacher = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_VM, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_VM, "Per kann mir zeigen wie ich geschickter werde.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_VM, "Per can show me how to be more skillful.");
 	};
 
-	AI_Output(hero, self, "Info_Mod_Per_Lernen_DEX_15_00"); //Bring mir was bei.
-	AI_Output(self, hero, "Info_Mod_Per_Lernen_DEX_13_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Per_Lernen_DEX_15_00"); //Teach me something.
+	AI_Output(self, hero, "Info_Mod_Per_Lernen_DEX_13_01"); //What do you want to learn?
 
 	Info_ClearChoices	(Info_Mod_Per_Lernen_DEX);
 

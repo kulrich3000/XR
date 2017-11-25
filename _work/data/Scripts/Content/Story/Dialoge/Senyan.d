@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Senyan_Hi_Condition()
 
 FUNC VOID Info_Mod_Senyan_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Senyan_Hi_12_00"); //Hey du! Was hast du in meinem Lager verloren?
+	AI_Output(self, hero, "Info_Mod_Senyan_Hi_12_00"); //Hey you! What are you doing in my warehouse?
 };
 
 INSTANCE Info_Mod_Senyan_Edgor (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Senyan_Edgor (C_INFO)
 	information	= Info_Mod_Senyan_Edgor_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Edgor schickt mich.";
+	description	= "Edgor sent me.";
 };
 
 FUNC INT Info_Mod_Senyan_Edgor_Condition()
@@ -41,14 +41,14 @@ FUNC INT Info_Mod_Senyan_Edgor_Condition()
 
 FUNC VOID Info_Mod_Senyan_Edgor_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Senyan_Edgor_15_00"); //Edgor schickt mich. Er hat mir die erste Hälfte des Losungswortes gegeben und du sollst mir jetzt die zweite Hälfte sagen.
-	AI_Output(self, hero, "Info_Mod_Senyan_Edgor_12_01"); //Du willst dich uns also anschließen. Nun gut, aber vorher musst du mir beweisen das du als Bandit auch was drauf hast.
-	AI_Output(self, hero, "Info_Mod_Senyan_Edgor_12_02"); //In der Stadt gibt es eine Waffenhändler, der die Waffen von Harad, dem Schmied, verkauft.
-	AI_Output(self, hero, "Info_Mod_Senyan_Edgor_12_03"); //Ich will, das du ihn überfällst und ihm sein Grobes Langschwert abnimmst. Dieses bringst du mir dann.
+	AI_Output(hero, self, "Info_Mod_Senyan_Edgor_15_00"); //Edgor sent me. He has given me the first half of the password and I want you to tell me the second half now.
+	AI_Output(self, hero, "Info_Mod_Senyan_Edgor_12_01"); //So you want to join us? All right, but first you have to prove to me that you're a bandit, too.
+	AI_Output(self, hero, "Info_Mod_Senyan_Edgor_12_02"); //There's an arms dealer in town selling the weapons of Harad the blacksmith.
+	AI_Output(self, hero, "Info_Mod_Senyan_Edgor_12_03"); //I want you to attack him and take his coarse long sword. You bring this one to me.
 
 	Log_CreateTopic	(TOPIC_MOD_SENYANSSCHWERT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SENYANSSCHWERT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SENYANSSCHWERT, "Ich soll für Senyan ein Grobes Langsschwert von Hakon klauen.");
+	B_LogEntry	(TOPIC_MOD_SENYANSSCHWERT, "I'm supposed to steal a long sword from Hakon for Senyan.");
 
 	Mod_HakonUeberfall = 0;
 };
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Senyan_HabSchwert (C_INFO)
 	information	= Info_Mod_Senyan_HabSchwert_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab das Schwert.";
+	description	= "I have the sword.";
 };
 
 FUNC INT Info_Mod_Senyan_HabSchwert_Condition()
@@ -75,17 +75,17 @@ FUNC INT Info_Mod_Senyan_HabSchwert_Condition()
 
 FUNC VOID Info_Mod_Senyan_HabSchwert_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Senyan_HabSchwert_15_00"); //Ich hab das Schwert.
-	AI_Output(self, hero, "Info_Mod_Senyan_HabSchwert_12_01"); //Zeig her.
-	AI_Output(hero, self, "Info_Mod_Senyan_HabSchwert_15_02"); //Hier ist es.
+	AI_Output(hero, self, "Info_Mod_Senyan_HabSchwert_15_00"); //I have the sword.
+	AI_Output(self, hero, "Info_Mod_Senyan_HabSchwert_12_01"); //Let me see that.
+	AI_Output(hero, self, "Info_Mod_Senyan_HabSchwert_15_02"); //Here it is here.
 
 	B_GiveInvItems	(hero, self, ItMw_HakonSchwert_01, 1);
 
-	AI_Output(self, hero, "Info_Mod_Senyan_HabSchwert_12_03"); //Gut gemacht. Der zweite Teil des Losungswortes ist: Ban
-	AI_Output(self, hero, "Info_Mod_Senyan_HabSchwert_12_04"); //Du kannst jetzt in unser Hauptlager. Es befindet sich im Minental nahe der Trollschlucht.
-	AI_Output(self, hero, "Info_Mod_Senyan_HabSchwert_12_05"); //Sprech dort mit Sancho, er wird dich dann reinlassen. Im Lager sprichst du dann am besten mit Dexter.
+	AI_Output(self, hero, "Info_Mod_Senyan_HabSchwert_12_03"); //Well done. The second part of the slogan is: Ban
+	AI_Output(self, hero, "Info_Mod_Senyan_HabSchwert_12_04"); //You can go to our main camp now. It is located in the Minental valley near the Troll gorge.
+	AI_Output(self, hero, "Info_Mod_Senyan_HabSchwert_12_05"); //Talk to Sancho there, he'll let you in. In the camp, you should talk to Dexter.
 
-	B_LogEntry_More	(TOPIC_MOD_AUFNAHME_BANDITEN, TOPIC_MOD_SENYANSSCHWERT, "Die zweite Hälfte heißt: Ban. Damit komme ich jetzt ins Hauptlager im Minental.", "Ich habe Senyan das Schwert von Hakon gebracht.");
+	B_LogEntry_More	(TOPIC_MOD_AUFNAHME_BANDITEN, TOPIC_MOD_SENYANSSCHWERT, "The second half is called Ban. That brings me to the main camp in the Minental.", "I brought Senyan the sword of Hakon.");
 	B_SetTopicStatus	(TOPIC_MOD_SENYANSSCHWERT, LOG_SUCCESS);
 
 	B_Göttergefallen(3, 1);
@@ -117,29 +117,29 @@ FUNC VOID Info_Mod_Senyan_TomKraut_Info()
 {
 	AI_DrawWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_00"); //(hektisch) Wer da? (beruhigt) Ahh, du bist es nur.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_00"); //(hectic) Who's that? Ahh, it's just you.
 
 	AI_RemoveWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_01"); //Hätte dich fast für einen Ordnungshüter gehalten.
-	AI_Output(hero, self, "Info_Mod_Senyan_TomKraut_15_02"); //In Banditenrüstung so nah an der Stadt? Da wäre ich auch unruhig. Was ist los?
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_03"); //Ärger mit der Justiz, das ist los.
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_04"); //Habe vorher Tom hier getroffen und ihm einige Sumpfkrautpflanzen mitgegeben, damit er sie in der Stadt zu Stängeln weiterverarbeitet.
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_05"); //Als er dann aber wieder durch das Stadttor zurück wollte, habe ich von weiten gesehen, wie Mika - der Penner - ihn plötzlich angehalten hat.
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_06"); //Seitdem es irgendwelchen Ärger mit Dämonen gab, sind die Wachen wohl besonders aufmerksam.
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_07"); //Jedenfalls hat er angefangen ihn zu filzen und das Kraut gefunden ...
-	AI_Output(hero, self, "Info_Mod_Senyan_TomKraut_15_08"); //... und ihn dann ins Gefängnis begleitet?
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_09"); //(ärgerlich, ironisch) Nein, ins Rathaus, wo er zum Stadthalter ernannt wurde.
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_10"); //(bissig) Natürlich ins Gefängnis! Wohin denn sonst ... Idiot.
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_11"); //Und jetzt sitze ich hier rum und habe keine Ahnung, wie ich ihn da wieder raus holen könnte.
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_12"); //Ich käme ja nicht mal an den Wachen vorbei ... dafür bin ich in der Gegend schon zu bekannt, wenn du verstehst.
-	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_13"); //Ach, scheiße. Ich hoffe nur seine Strafe fällt nicht zu hart aus.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_01"); //Almost took you for a vigilante.
+	AI_Output(hero, self, "Info_Mod_Senyan_TomKraut_15_02"); //In bandit armor so close to the city? I'd be restless, too. What's going on?
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_03"); //Justice trouble, that's what's going on.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_04"); //I met Tom here before and gave him some bogweed plants so that he could process them into stems in the city.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_05"); //But when he wanted to go back through the city gate, I saw from afar how Mika - the bum - suddenly stopped him.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_06"); //Since there's been some kind of trouble with demons, the guards seem to be particularly attentive.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_07"); //Anyway, he started to frisk him and found the herb....
+	AI_Output(hero, self, "Info_Mod_Senyan_TomKraut_15_08"); //... and then escort him to prison?
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_09"); //No, to the town hall, where he was appointed mayor.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_10"); //Into prison, of course! Where else... Idiot.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_11"); //And now I'm sitting here, and I have no idea how to get him out of there.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_12"); //I couldn't even get past the guards... I'm already too famous around here for that, if you know what I mean.
+	AI_Output(self, hero, "Info_Mod_Senyan_TomKraut_12_13"); //Oh, shit. I just hope his punishment won't be too harsh.
 
 	Log_CreateTopic	(TOPIC_MOD_TOM_KRAUT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_TOM_KRAUT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Senyan berichtete mir, dass Tom mit Sumpfkrautpflanzen erwischt wurde und wahrscheinlich im Gefängnis sitzt.");
+	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Senyan told me that Tom was caught with marsh plants and is probably in prison.");
 
-	Mob_CreateItems	("ASSERVATENTRUHE", ItPl_SwampHerb, 3);
+	Mob_CreateItems	("SAFE ROOM", ItPl_SwampHerb, 3);
 };
 
 INSTANCE Info_Mod_Senyan_Pickpocket (C_INFO)

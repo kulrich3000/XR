@@ -1,7 +1,7 @@
 instance Mod_7542_OUT_Raritaetenhaendler_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Finder";
+	name 		= "finder";
 	guild 		= GIL_OUT;
 	id 			= 7542;
 	voice 		= 4;

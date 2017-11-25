@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_10_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_10_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_10_Hi_18_00"); //Ich schweige wie ein Grab, Grab, Grab, ich schweige wie ein Grab, Grab, Grab, ich schweige ...
+	AI_Output(self, hero, "Info_Mod_Wesen_10_Hi_18_00"); //I keep silent like a grave, grave, grave, I keep silent like a grave, grave, grave, I keep silent....
 
 	AI_StopProcessInfos	(self);
 };

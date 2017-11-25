@@ -20,16 +20,16 @@ FUNC INT Info_Mod_Guru_Gelaber_Condition()
 FUNC VOID Info_Mod_Guru_Gelaber_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_00"); //Hey.
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_01"); //AAAAHHH! Ein neues paar Ohren für meine BOOOOTSCHAFT. So höre denn:
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_02"); //Nicht länger müsst ihr euch vorm Schläfer fürchten. Der schläft. Angst und Grauen solltet ihr jedoch empfinden vor dem einen, dem WÄCHTER! Er wacht! ERWACHT WÄCHTER!
-	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_03"); //Ganz ruhig, komm mal mit.
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_04"); //Wage es nicht mich, der ich wache, anzufassen, Schlafender!
-	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_05"); //Muss ich dich aus der Stadt prügeln?
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_06"); //Fass mich nicht an!
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_01"); //AAAAHHH! A new pair of ears for my BOOOTSCHAFT. So listen:
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_02"); //You no longer have to be afraid of the sleeper. He's asleep. But you should feel fear and horror before the one, the GUARD! He's on guard! AWAKES MORE AWAKE!
+	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_03"); //Take it easy, come with me.
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_04"); //Don't you dare touch me, sleeper!
+	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_05"); //Do I have to beat you out of town?
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_06"); //Don't you touch me!
 
 	B_ReadySpell	(self, SPL_FireRain, SPL_Cost_Firerain);
 
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_07"); //Niahahahaha! Ihr werdet alle in einem Feuerregen sterben! Doch keine Angst, ICH werde euch wiedererwecken und wir werden zusammen wachen!
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_07"); //Niahahahahahaha! You will all die in a rain of fire! But don't worry, I will resurrect you and we will wake up together!
 
 	Wld_InsertNpc	(HeroBot_NW, "NW_CITY_MERCHANT_PATH_29");
 

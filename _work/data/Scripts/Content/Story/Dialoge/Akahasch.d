@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Akahasch_Hi (C_INFO)
 	information	= Info_Mod_Akahasch_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "What are you doing here?";
 };
 
 FUNC INT Info_Mod_Akahasch_Hi_Condition()
@@ -18,25 +18,25 @@ FUNC VOID Info_Mod_Akahasch_Hi_Info()
 {
 	B_Say	(hero, self, "$WASMACHSTDUHIER");
 
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_24_01"); //(panisch) Was willst du?
-	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_15_02"); //Ich wollte nur wissen, was du hier machst ...?
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_24_03"); //Du gehörst also nicht zu ihnen?
-	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_15_04"); //Zu ihnen?
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_24_05"); //Diesen Verrückten, die mich töten wollten.
-	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_15_06"); //Ich weiß von keinen Verrückten ...
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_24_07"); //Kannst du mir dann helfen?
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_24_01"); //What do you want?
+	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_15_02"); //I just wanted to know what you were doing...?
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_24_03"); //So you're not one of them?
+	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_15_04"); //To them?
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_24_05"); //That madman who tried to kill me.
+	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_15_06"); //I don't know about any madmen....
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_24_07"); //Then can you help me?
 
 	Info_ClearChoices	(Info_Mod_Akahasch_Hi);
 
-	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Von wegen Verrückte. Wohl eher Leute, bei denen du in der Kreide stehst ...", Info_Mod_Akahasch_Hi_D);
-	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Kein Interesse.", Info_Mod_Akahasch_Hi_B);
-	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Worum geht's?", Info_Mod_Akahasch_Hi_A);
+	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Crazies, my ass. It's probably more like people where you're standing in the chalk...", Info_Mod_Akahasch_Hi_D);
+	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Not interested.", Info_Mod_Akahasch_Hi_B);
+	Info_AddChoice	(Info_Mod_Akahasch_Hi, "What's this about?", Info_Mod_Akahasch_Hi_A);
 };
 
 FUNC VOID Info_Mod_Akahasch_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_B_15_00"); //Kein Interesse.
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_B_24_01"); //(ängstlich) Was soll ich nur machen?
+	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_B_15_00"); //Not interested.
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_B_24_01"); //What am I gonna do?
 
 	Info_ClearChoices	(Info_Mod_Akahasch_Hi);
 
@@ -45,8 +45,8 @@ FUNC VOID Info_Mod_Akahasch_Hi_B()
 
 FUNC VOID Info_Mod_Akahasch_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_E_15_00"); //Ich bring die Rechnung. Es ist Zahltag ...
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_E_24_01"); //(erschrocken) Nein ... ohh, Innos, steht mir bei.
+	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_E_15_00"); //I'll bring the bill. It's payday...
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_E_24_01"); //(shocked) No... ohh, Innos, stand by me.
 
 	Info_ClearChoices	(Info_Mod_Akahasch_Hi);
 
@@ -57,30 +57,30 @@ FUNC VOID Info_Mod_Akahasch_Hi_E()
 
 FUNC VOID Info_Mod_Akahasch_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_D_15_00"); //Von wegen Verrückte. Wohl eher Leute, bei denen du in der Kreide stehst ...
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_D_24_01"); //(erschrocken) Was?! Wer bist du, was hast du vor?
+	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_D_15_00"); //Crazies, my ass. It's probably more like people where you're standing in the chalk...
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_D_24_01"); //What?! Who are you, what are you up to?
 
 	Info_ClearChoices	(Info_Mod_Akahasch_Hi);
 
-	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Ich bring die Rechnung. Es ist Zahltag ...", Info_Mod_Akahasch_Hi_E);
-	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Keine Sorge. Ich werde dich in Sicherheit bringen.", Info_Mod_Akahasch_Hi_F);
+	Info_AddChoice	(Info_Mod_Akahasch_Hi, "I'll bring the bill. It's payday...", Info_Mod_Akahasch_Hi_E);
+	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Don't worry about it. I'll take you to safety.", Info_Mod_Akahasch_Hi_F);
 };
 
 FUNC VOID Info_Mod_Akahasch_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_A_15_00"); //Worum geht's?
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_A_24_01"); //Kannst du mich zurück zum Kloster begleiten? Ich will lieber kein Risiko eingehen.
+	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_A_15_00"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_A_24_01"); //Can you walk me back to the monastery? I'd rather not take any chances.
 
 	Info_ClearChoices	(Info_Mod_Akahasch_Hi);
 
-	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Kein Interesse.", Info_Mod_Akahasch_Hi_B);
-	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Na gut, folge mir.", Info_Mod_Akahasch_Hi_C);
+	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Not interested.", Info_Mod_Akahasch_Hi_B);
+	Info_AddChoice	(Info_Mod_Akahasch_Hi, "All right, follow me.", Info_Mod_Akahasch_Hi_C);
 };
 
 FUNC VOID Info_Mod_Akahasch_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_C_15_00"); //Na gut, folge mir.
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_C_24_01"); //Vielen Dank.
+	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_C_15_00"); //All right, follow me.
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_C_24_01"); //Thank you very much.
 
 	Info_ClearChoices	(Info_Mod_Akahasch_Hi);
 
@@ -95,8 +95,8 @@ FUNC VOID Info_Mod_Akahasch_Hi_C()
 
 FUNC VOID Info_Mod_Akahasch_Hi_F()
 {
-	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_F_15_00"); //Keine Sorge. Ich werde dich in Sicherheit bringen.
-	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_F_24_01"); //Ja? Vielen Dank. Das Beste ist, wenn du mich zum Kloster bringst.
+	AI_Output(hero, self, "Info_Mod_Akahasch_Hi_F_15_00"); //Don't worry about it. I'll take you to safety.
+	AI_Output(self, hero, "Info_Mod_Akahasch_Hi_F_24_01"); //Yes? Thank you very much. The best thing you can do is take me to the monastery.
 
 	Info_ClearChoices	(Info_Mod_Akahasch_Hi);
 
@@ -130,17 +130,17 @@ FUNC INT Info_Mod_Akahasch_AtKloster_Condition()
 
 FUNC VOID Info_Mod_Akahasch_AtKloster_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Akahasch_AtKloster_24_00"); //Vielen Dank, wie kann ich das nur wieder gut machen?
-	AI_Output(hero, self, "Info_Mod_Akahasch_AtKloster_15_01"); //Nun ja, ich wüsste da was ...
-	AI_Output(self, hero, "Info_Mod_Akahasch_AtKloster_24_02"); //Ah, mir fällt da etwas ein. Nimm das!
+	AI_Output(self, hero, "Info_Mod_Akahasch_AtKloster_24_00"); //Thanks a lot, how can I make it up to you?
+	AI_Output(hero, self, "Info_Mod_Akahasch_AtKloster_15_01"); //Well, I know something....
+	AI_Output(self, hero, "Info_Mod_Akahasch_AtKloster_24_02"); //Ah, I can think of something. Take this!
 
 	B_GiveInvItems	(self, hero, ItMi_Weinlieferung, 1);
 
-	AI_Output(self, hero, "Info_Mod_Akahasch_AtKloster_24_03"); //Bring es zu Ulf in der Stadt, er wird dich dafür entlohnen.
-	AI_Output(hero, self, "Info_Mod_Akahasch_AtKloster_15_04"); //(stöhnt) Na gut ...
-	AI_Output(self, hero, "Info_Mod_Akahasch_AtKloster_24_05"); //Vielen Dank nochmal.
+	AI_Output(self, hero, "Info_Mod_Akahasch_AtKloster_24_03"); //Take it to Ulf in town, he'll pay you for it.
+	AI_Output(hero, self, "Info_Mod_Akahasch_AtKloster_15_04"); //(groans) All right...
+	AI_Output(self, hero, "Info_Mod_Akahasch_AtKloster_24_05"); //Thank you very much again.
 	
-	B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "Ich habe Akahasch zum Kloster gebracht. Dafür hat er mir ein Weinpaket gegeben, welches ich zu Ulf bringen sollte.");
+	B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "I took Akahash to the monastery. For this he gave me a wine-package, which I should bring to Ulf.");
 
 	B_GivePlayerXP	(50);
 
@@ -163,7 +163,7 @@ INSTANCE Info_Mod_Akahasch_Fertig (C_INFO)
 	information	= Info_Mod_Akahasch_Fertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht's dir jetzt?";
+	description	= "How are you now?";
 };
 
 FUNC INT Info_Mod_Akahasch_Fertig_Condition()
@@ -176,8 +176,8 @@ FUNC INT Info_Mod_Akahasch_Fertig_Condition()
 
 FUNC VOID Info_Mod_Akahasch_Fertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Akahasch_Fertig_15_00"); //Wie geht's dir jetzt?
-	AI_Output(self, hero, "Info_Mod_Akahasch_Fertig_24_01"); //Hier bin ich sicher. So schnell traue ich mich aber nicht mehr nach draußen.
+	AI_Output(hero, self, "Info_Mod_Akahasch_Fertig_15_00"); //How are you now?
+	AI_Output(self, hero, "Info_Mod_Akahasch_Fertig_24_01"); //I'm safe here. I don't dare to go outside that fast.
 };
 
 INSTANCE Info_Mod_Akahasch_Heiltrank (C_INFO)
@@ -188,7 +188,7 @@ INSTANCE Info_Mod_Akahasch_Heiltrank (C_INFO)
 	information	= Info_Mod_Akahasch_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Akahasch_Heiltrank_Condition()
@@ -207,31 +207,31 @@ FUNC VOID Info_Mod_Akahasch_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Essenz der Heilung", Info_Mod_Akahasch_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Essence of Healing", Info_Mod_Akahasch_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Elixier der Heilung", Info_Mod_Akahasch_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Elixir of Healing", Info_Mod_Akahasch_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Extrakt der Heilung", Info_Mod_Akahasch_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Extract of Healing", Info_Mod_Akahasch_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Essenz der Heilung", Info_Mod_Akahasch_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Essence of Healing", Info_Mod_Akahasch_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Trank der leichten Heilung", Info_Mod_Akahasch_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Drink of light healing", Info_Mod_Akahasch_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Leichter Heiltrank", Info_Mod_Akahasch_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Light healing potion", Info_Mod_Akahasch_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Akahasch_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Akahasch_Heiltrank, "Drink of fast healing", Info_Mod_Akahasch_Heiltrank_Health_05);
 	};
 };
 

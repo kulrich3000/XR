@@ -1,7 +1,7 @@
 instance Mod_7706_OUT_Pendler_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Pendler"; 
+	name 		= "commuter"; 
 	guild 		= GIL_OUT;
 	id 			= 7706;
 	voice 		= 1;

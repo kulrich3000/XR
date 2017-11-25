@@ -20,15 +20,15 @@ FUNC INT Info_Mod_Ken_Eisgebiet_Condition()
 
 FUNC VOID Info_Mod_Ken_Eisgebiet_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_00"); //Ich habe gehört, dass du dich um Einlass bemühst. Du suchst nach Gelato, habe ich Recht?
-	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_01"); //Stimmt. Ferco meinte, du weißt wo es liegt.
-	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_02"); //Ich weiß zwar, wo es liegt, aber das hilft dir nicht weiter, wenn du nicht weißt, wie man dorthin gelangt.
-	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_03"); //Es existiert ein Teleportzauber dahin, aber er ist schwierig zu finden.
-	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_04"); //Wo finde ich diesen Zauber?
-	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_05"); //Im Sumpf. Du wirst schon erwartet. Ich kann dir nicht mehr verraten, aber ein Rat noch: Hüte dich vor dem Eremiten.
-	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_06"); //Danke für die Information. Ich werde mich dort umsehen.
+	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_00"); //I hear you're trying to get in. You're looking for gelato, aren't you?
+	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_01"); //That's right. Ferco said you know where it is.
+	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_02"); //I know where it is, but that won't help you if you don't know how to get there.
+	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_03"); //There's a teleport spell there, but it's hard to find.
+	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_04"); //Where can I find this magic?
+	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_05"); //In the swamp. You're expected. I can't tell you more, but one advice: beware of the hermit.
+	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_06"); //Thanks for the information. I'll take a look around.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ken sagte, ich werde im Sumpf erwartet. Ich sollte mich mal dort umsehen. Außerdem soll ich mich vor dem Eremiten hüten.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ken said I'm expected in the swamp. I should take a look around. Besides, I'm to watch out for the hermit.");
 
 	B_StartOtherRoutine	(Mod_2012_PSINOV_Talas_MT, "ATGATE");
 

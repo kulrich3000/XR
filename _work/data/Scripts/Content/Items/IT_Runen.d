@@ -5,7 +5,7 @@
 //Joly: Macht die Runen nicht zu teuer, es sind Produktionsitems -> EXPLOID!!!!!!!!!!!
 //********************************************************************************************
 
-const 	string 	Name_PaladinSpell		=	"Paladin Zauber"; 	
+const 	string 	Name_PaladinSpell		=	"Paladin Spell"; 	
 const	int	Value_Ru_PalLight			=	500;	
 const	int	Value_Ru_PalLightHeal		=	500;
 const	int	Value_Ru_PalHolyBolt		=	500;
@@ -125,7 +125,7 @@ INSTANCE ItRu_KristallPrisma (C_Item)
 
 	description			=	"Kristall des Feuers";
 		
-	TEXT	[0]			=	"Der Prismen-Kristall scheint sich verändert zu haben";
+	TEXT	[0]			=	"The prism crystal seems to have changed";
 		
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_AuraFlammen;
@@ -139,7 +139,7 @@ INSTANCE ItRu_KristallPrisma (C_Item)
 
 INSTANCE ItMi_AbsorbKristall (C_Item)
 {
-	name 				=	"Kristall der Absorption";
+	name 				=	"Crystal of absorption";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -160,7 +160,7 @@ INSTANCE ItMi_AbsorbKristall (C_Item)
 
 INSTANCE ItMi_AbsorbKristall2 (C_Item)
 {
-	name 				=	"Kristall der Absorption";
+	name 				=	"Crystal of absorption";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -175,7 +175,7 @@ INSTANCE ItMi_AbsorbKristall2 (C_Item)
 
 	description			=	name;
 
-	TEXT	[1]	=	"pulsiert vor Energie";
+	TEXT	[1]	=	"pulsates with energy";
 	
 	TEXT	[5]			=	NAME_Value;				
 	COUNT	[5]			=	value;
@@ -201,7 +201,7 @@ INSTANCE ItRu_soulsplit (C_Item)
 
 	description			=	NAME_SPL_Soulsplit;
 	
-	TEXT	[0]			=	"Spaltet den Körper von der Seele"	;
+	TEXT	[0]			=	"Splits the body from the soul"	;
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_soulsplit;
@@ -232,7 +232,7 @@ INSTANCE ItRu_Giftteppich (C_Item)
 
 	description			=	NAME_SPL_Soulsplit;
 	
-	TEXT	[0]			=	"Spaltet den Körper von der Seele"	;
+	TEXT	[0]			=	"Splits the body from the soul"	;
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_Giftteppich;
@@ -263,7 +263,7 @@ INSTANCE ItRu_SummonGeist (C_Item)
 
 	description			=	NAME_SPL_Soulsplit;
 	
-	TEXT	[0]			=	"Spaltet den Körper von der Seele"	;
+	TEXT	[0]			=	"Splits the body from the soul"	;
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_soulsplit;
@@ -294,7 +294,7 @@ INSTANCE ItRu_engel (C_Item)
 
 	description			=	NAME_SPL_engel;
 	
-	TEXT	[0]			=	"Ruft einen Engel";
+	TEXT	[0]			=	"Call an angel";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_engel;
@@ -307,7 +307,7 @@ INSTANCE ItRu_engel (C_Item)
 
 INSTANCE ItRu_Verwandlungsfell (C_Item)
 {
-	name 				=	"Verwandlungsfell";
+	name 				=	"sheepskin";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	0;
@@ -323,7 +323,7 @@ INSTANCE ItRu_Verwandlungsfell (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_WHITE";
 
-	description			=	"Verwandlung Warg";
+	description			=	"Transform into Warg";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_Scroll;
@@ -352,7 +352,7 @@ INSTANCE ItRu_TrfRabbit (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_WHITE";
 
-	description			=	"Verwandlung Hase";
+	description			=	"Transformation Hare";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_Scroll;
@@ -381,7 +381,7 @@ INSTANCE ItRu_TrfMolerat (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_WHITE";
 
-	description			=	"Verwandlung Molerat";
+	description			=	"Metamorphosis of Molerat";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_Scroll;
@@ -662,7 +662,7 @@ INSTANCE ItRu_TeleportUW (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			= 	"Teleport zu Xeres";
+	description			= 	"Teleport to Xeres";
 	
 	TEXT	[1]			=	NAME_Manakosten;			
 	COUNT	[1]			=	SPL_COST_TELEPORT;
@@ -688,7 +688,7 @@ INSTANCE ItRu_TeleportGDG (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			= 	"Teleport zur Burg";
+	description			= 	"Teleport to Castle";
 	
 	TEXT	[1]			=	NAME_Manakosten;			
 	COUNT	[1]			=	SPL_COST_TELEPORT;
@@ -716,7 +716,7 @@ INSTANCE ItRu_BrokenRune (C_Item)
 
 	description			= 	"Teleport";
 	
-	TEXT	[0]			=	"Die unbekannte Teleportrune";
+	TEXT	[0]			=	"The unknown Teleportrune";
 	
 	TEXT	[1]			=	NAME_Manakosten;			
 	COUNT	[1]			=	SPL_COST_TELEPORT;
@@ -1259,7 +1259,7 @@ INSTANCE ItRu_TeleportWaldis (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			= 	"Teleport zum Waldläuferlager";
+	description			= 	"Teleport to the Ranger camp";
 	
 	
 	TEXT	[1]			=	NAME_Manakosten;			
@@ -1778,7 +1778,7 @@ INSTANCE ItRu_Fackel (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_YELLOW";
 
-	description			=	"Fackel an/aus";
+	description			=	"Torch on/off";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;			
 	COUNT	[0]			=	mag_circle;
@@ -1786,7 +1786,7 @@ INSTANCE ItRu_Fackel (C_Item)
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_COST_FIREBOLT;
 	
-	TEXT	[2]			=	"Entzündet und löscht Fackeln";
+	TEXT	[2]			=	"Ignites and extinguishes torches";
 	
 	TEXT	[5]			=	NAME_Value;				
 	COUNT	[5]			=	value;
@@ -1885,8 +1885,8 @@ INSTANCE ItRu_SumGobSkel (C_Item)
 	TEXT	[1]			=	NAME_Manakosten;			
 	COUNT	[1]			=	SPL_Cost_SummonGoblinSkeleton;
 	
-	TEXT 	[2]			=   "Die wandernden Knochen";
-	TEXT 	[3]			=   "der toten Goblins";
+	TEXT 	[2]			=   "The wandering bones";
+	TEXT 	[3]			=   "of dead goblins";
 	
 	TEXT	[5]			=	NAME_Value;					
 	COUNT	[5]			=	value;
@@ -2273,7 +2273,7 @@ INSTANCE ItRu_Kontrolle (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Kontrolle";
+	description			=	"supervision";
 	TEXT	[0]			=	NAME_Mag_Circle;			
 	COUNT	[0]			=	mag_circle;
 	
@@ -2306,7 +2306,7 @@ INSTANCE ItRu_Kontrolle_01 (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Kontrolle";
+	description			=	"supervision";
 	TEXT	[0]			=	NAME_Mag_Circle;			
 	COUNT	[0]			=	mag_circle;
 	
@@ -2338,7 +2338,7 @@ INSTANCE ItRu_Berserk (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Berserk";
+	description			=	"berserk";
 	TEXT	[0]			=	NAME_Mag_Circle;			
 	COUNT	[0]			=	mag_circle;
 	
@@ -2846,7 +2846,7 @@ INSTANCE ItRu_Pyrokinesis_g1 (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_YELLOW";
 
-	description			=	"Pyrokinese";
+	description			=	"pyrokinesis";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;			
 	COUNT	[0]			=	mag_circle;		
@@ -3467,7 +3467,7 @@ INSTANCE ItRu_Blutopfer	(C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Blutopfer";
+	description			=	"blood sacrifice";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;
 	COUNT	[0]			=	mag_circle;
@@ -3501,7 +3501,7 @@ INSTANCE ItRu_Seelenraub	(C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Seelenraub";
+	description			=	"mental theft";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;
 	COUNT	[0]			=	mag_circle;
@@ -3532,7 +3532,7 @@ INSTANCE ItRu_Wahnsinn	(C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Wahnsinn";
+	description			=	"madness";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;
 	COUNT	[0]			=	mag_circle;

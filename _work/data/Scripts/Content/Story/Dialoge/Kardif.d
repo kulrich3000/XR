@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Kardif_Hi_Condition()
 
 FUNC VOID Info_Mod_Kardif_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kardif_Hi_14_00"); //Willkommen Fremder, was kann ich für dich tun?
-	AI_Output(self, hero, "Info_Mod_Kardif_Hi_14_01"); //Solltest du etwas zu trinken suchen, dann bist du bei mir richtig.
+	AI_Output(self, hero, "Info_Mod_Kardif_Hi_14_00"); //Welcome stranger, what can I do for you?
+	AI_Output(self, hero, "Info_Mod_Kardif_Hi_14_01"); //If you're looking for something to drink, you've come to the right place.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Kardif verkauft etwas zu trinken.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Kardif sells something to drink.");
 };
 
 INSTANCE Info_Mod_Kardif_Daemonisch (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Kardif_Daemonisch (C_INFO)
 	information	= Info_Mod_Kardif_Daemonisch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, wie läuft es in deiner Kneipe?";
+	description	= "So, how's it going in your pub?";
 };
 
 FUNC INT Info_Mod_Kardif_Daemonisch_Condition()
@@ -44,14 +44,14 @@ FUNC INT Info_Mod_Kardif_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Kardif_Daemonisch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_Daemonisch_15_00"); //Und, wie läuft es in deiner Kneipe?
-	AI_Output(self, hero, "Info_Mod_Kardif_Daemonisch_14_01"); //Ach, mies. Ein großer teil meiner Kundschaft drückt sich nur noch in Coragorn’s Kneipe rum.
-	AI_Output(hero, self, "Info_Mod_Kardif_Daemonisch_15_02"); //Wieso das? Schmeckt das Bier dort besser?
-	AI_Output(self, hero, "Info_Mod_Kardif_Daemonisch_14_03"); //Ach, ich geb dir gleich Bier. Wie ich gehört habe gehen sie dorthin um sich voll zustopfen mit Fleisch.
-	AI_Output(self, hero, "Info_Mod_Kardif_Daemonisch_14_04"); //Meine Gesöff ist doch tausendmal besser als das von diesem Aufschneider Coragorn.
-	AI_Output(self, hero, "Info_Mod_Kardif_Daemonisch_14_05"); //Aber das weiß ja keiner mehr zu schätzen ...
+	AI_Output(hero, self, "Info_Mod_Kardif_Daemonisch_15_00"); //So, how's it going in your pub?
+	AI_Output(self, hero, "Info_Mod_Kardif_Daemonisch_14_01"); //Oh, lousy. A large part of my clientele hangs around Coragorn's pub.
+	AI_Output(hero, self, "Info_Mod_Kardif_Daemonisch_15_02"); //Why is that? Does the beer taste better there?
+	AI_Output(self, hero, "Info_Mod_Kardif_Daemonisch_14_03"); //I'll give you a beer. I hear they're going there to stuff themselves with meat.
+	AI_Output(self, hero, "Info_Mod_Kardif_Daemonisch_14_04"); //My brew is a thousand times better than that of this boaster Coragorn.
+	AI_Output(self, hero, "Info_Mod_Kardif_Daemonisch_14_05"); //But nobody appreciates that anymore....
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Kardif hat sich darüber aufgeregt, dass ein großer Teil seiner Kundschaft nur noch ins Coragorn’s Kneipe rumsitzt und sich mit Fleisch voll stopft.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Kardif is upset that a large part of his clientele is sitting in Coragorn's pub and stuffing themselves with meat.");
 };
 
 INSTANCE Info_Mod_Kardif_WacholderDieb (C_INFO)
@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Kardif_WacholderDieb (C_INFO)
 	information	= Info_Mod_Kardif_WacholderDieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche nach dem Dieb der bei Coragon einen Diebstahl begangen hat.";
+	description	= "I'm looking for the thief who committed a theft at Coragon.";
 };
 
 FUNC INT Info_Mod_Kardif_WacholderDieb_Condition()
@@ -76,12 +76,12 @@ FUNC INT Info_Mod_Kardif_WacholderDieb_Condition()
 
 FUNC VOID Info_Mod_Kardif_WacholderDieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_WacholderDieb_15_00"); //Ich suche nach dem Dieb der bei Coragon einen Diebstahl begangen hat. Du bist ein Konkurrent von ihm. Weißt du etwas davon.
-	AI_Output(self, hero, "Info_Mod_Kardif_WacholderDieb_14_01"); //Nein! Ich hasse Coragon zwar aber so etwas tue ich nicht. Ich verlasse mich auf faire Mittel um Profit zu machen.
-	AI_Output(self, hero, "Info_Mod_Kardif_WacholderDieb_14_02"); //Wenn du mich fragst solltest du mal mit dem Wirt des Freibierstandes sprechen. Der kommst mir verdächtig vor.
-	AI_Output(hero, self, "Info_Mod_Kardif_WacholderDieb_15_03"); //Dann geh ich mal.
+	AI_Output(hero, self, "Info_Mod_Kardif_WacholderDieb_15_00"); //I'm looking for the thief who committed a theft at Coragon. You're a rival to him. Do you know anything about that?
+	AI_Output(self, hero, "Info_Mod_Kardif_WacholderDieb_14_01"); //No! I hate Coragon, but I don't do that. I rely on fair means to make a profit.
+	AI_Output(self, hero, "Info_Mod_Kardif_WacholderDieb_14_02"); //If you ask me, you should talk to the innkeeper of the beer stand. He seems suspicious to me.
+	AI_Output(hero, self, "Info_Mod_Kardif_WacholderDieb_15_03"); //I'll be going, then.
 
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Kardif meinte, dass er nur mit fairen Mitteln zu Profit kommt. Ich sollte mal zum Wirt des Freibierstandes gehen.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Kardif said he can only make a profit by fair means. I should go to the innkeeper of the beer stand.");
 };
 
 INSTANCE Info_Mod_Kardif_KnowsRukhar (C_INFO)
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_Kardif_KnowsRukhar (C_INFO)
 	information	= Info_Mod_Kardif_KnowsRukhar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kardif, du hast dich selbst verraten!";
+	description	= "Cardif, you betrayed yourself!";
 };
 
 FUNC INT Info_Mod_Kardif_KnowsRukhar_Condition()
@@ -108,22 +108,22 @@ FUNC INT Info_Mod_Kardif_KnowsRukhar_Condition()
 
 FUNC VOID Info_Mod_Kardif_KnowsRukhar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_15_00"); //Kardif, du hast dich selbst verraten!
-	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_14_01"); //(überheblich) Was?
-	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_15_02"); //Indem du mich zum Wirt geschickt hast konnte ich Rukhar verfolgen und habe einen Zettel gefunden, auf dem steht, dass du den Diebstahl befohlen hast.
-	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_14_03"); //Können wir da nicht nochmal drüber reden?
+	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_15_00"); //Cardif, you betrayed yourself!
+	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_14_01"); //What? What?
+	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_15_02"); //By sending me to the host, I was able to track Rukhar and found a note saying that you ordered the theft.
+	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_14_03"); //Can't we talk about this again?
 
 	Info_ClearChoices	(Info_Mod_Kardif_KnowsRukhar);
 
-	Info_AddChoice	(Info_Mod_Kardif_KnowsRukhar, "Na gut, ich werde dich nicht verpetzen.", Info_Mod_Kardif_KnowsRukhar_D);
-	Info_AddChoice	(Info_Mod_Kardif_KnowsRukhar, "Wenn du mir Gold gibst, dann lass ich dich laufen.", Info_Mod_Kardif_KnowsRukhar_B);
-	Info_AddChoice	(Info_Mod_Kardif_KnowsRukhar, "Ich werde dich Lord Andre melden.", Info_Mod_Kardif_KnowsRukhar_A);
+	Info_AddChoice	(Info_Mod_Kardif_KnowsRukhar, "All right, I won't tell on you.", Info_Mod_Kardif_KnowsRukhar_D);
+	Info_AddChoice	(Info_Mod_Kardif_KnowsRukhar, "If you give me gold, I'll let you go.", Info_Mod_Kardif_KnowsRukhar_B);
+	Info_AddChoice	(Info_Mod_Kardif_KnowsRukhar, "I will report you to Lord Andre.", Info_Mod_Kardif_KnowsRukhar_A);
 };
 
 FUNC VOID Info_Mod_Kardif_KnowsRukhar_D()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_D_15_00"); //Na gut, ich werde nicht verpetzen.
-	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_D_14_01"); //Vielen Dank. Nimm dieses Gold als Dank von mir.
+	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_D_15_00"); //All right, I won't tell on you.
+	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_D_14_01"); //Thank you very much. Take this gold as a thank you from me.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -131,21 +131,21 @@ FUNC VOID Info_Mod_Kardif_KnowsRukhar_D()
 
 	Mod_KnowsRukharWacholder = 2;
 
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Ich habe Kardif laufen lassen. Ich sollte jetzt zu Coragon gehen und mir eine Ausrede einfallen lassen.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "I ran Cardif. I should go to Coragon's now and come up with an excuse.");
 
 	Info_ClearChoices	(Info_Mod_Kardif_KnowsRukhar);
 };
 
 FUNC VOID Info_Mod_Kardif_KnowsRukhar_B()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_B_15_00"); //Wenn du mir Gold gibst, dann lass ich dich laufen.
-	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_B_14_01"); //Gut, ich gebe dir 400 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_B_15_00"); //If you give me gold, I'll let you go.
+	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_B_14_01"); //All right, I'll give you 400 gold coins.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 400);
 
-	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_B_15_02"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_B_15_02"); //Thanks.
 
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Kardif hat mich dafür bezahlt, dass ich ihn laufen lasse. Jetzt sollte ich zu Coragon zurück gehen.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Kardif paid me to let him go. Now I should go back to Coragon.");
 
 	B_Göttergefallen(3, 1);
 
@@ -156,12 +156,12 @@ FUNC VOID Info_Mod_Kardif_KnowsRukhar_B()
 
 FUNC VOID Info_Mod_Kardif_KnowsRukhar_A()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_A_15_00"); //Ich werde dich Lord Andre melden.
-	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_A_14_01"); //(seufzt) Ich bin ruiniert.
+	AI_Output(hero, self, "Info_Mod_Kardif_KnowsRukhar_A_15_00"); //I will report you to Lord Andre.
+	AI_Output(self, hero, "Info_Mod_Kardif_KnowsRukhar_A_14_01"); //(sighs) I'm ruined.
 
 	B_Göttergefallen(2, 1);
 
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Ich werde Kardif an Lord Andre verpfeifen.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "I'm going to rat out Cardif to Lord Andre.");
 
 	Mod_KnowsRukharWacholder = 5;
 
@@ -176,7 +176,7 @@ INSTANCE Info_Mod_Kardif_Rum (C_INFO)
 	information	= Info_Mod_Kardif_Rum_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Paket voller Rum für dich.";
+	description	= "I got a package of rum for you.";
 };
 
 FUNC INT Info_Mod_Kardif_Rum_Condition()
@@ -192,12 +192,12 @@ FUNC INT Info_Mod_Kardif_Rum_Condition()
 
 FUNC VOID Info_Mod_Kardif_Rum_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_Rum_15_00"); //Ich hab hier ein Paket voller Rum für dich.
+	AI_Output(hero, self, "Info_Mod_Kardif_Rum_15_00"); //I got a package of rum for you.
 	
 	B_GiveInvItems	(hero, self, Mod_RumPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Kardif_Rum_14_01"); //Endlich, meine Kunden warten schon die ganze Zeit auf den Rum.
-	AI_Output(self, hero, "Info_Mod_Kardif_Rum_14_02"); //Hier ist dein Gold.
+	AI_Output(self, hero, "Info_Mod_Kardif_Rum_14_01"); //Finally, my customers have been waiting for the rum all along.
+	AI_Output(self, hero, "Info_Mod_Kardif_Rum_14_02"); //Here's your gold.
 
 	Npc_RemoveInvItems	(self, Mod_RumPaket, 1);
 
@@ -215,7 +215,7 @@ INSTANCE Info_Mod_Kardif_Melasse (C_INFO)
 	information	= Info_Mod_Kardif_Melasse_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Melasse?";
+	description	= "You got any molasses?";
 };
 
 FUNC INT Info_Mod_Kardif_Melasse_Condition()
@@ -231,13 +231,13 @@ FUNC INT Info_Mod_Kardif_Melasse_Condition()
 
 FUNC VOID Info_Mod_Kardif_Melasse_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_Melasse_15_00"); //Hast du Melasse?
-	AI_Output(self, hero, "Info_Mod_Kardif_Melasse_14_01"); //Nicht mehr. Gestern kam so ein Kerl rein, der hat alles gekauft.
-	AI_Output(hero, self, "Info_Mod_Kardif_Melasse_15_02"); //Wer war das?
-	AI_Output(self, hero, "Info_Mod_Kardif_Melasse_14_03"); //Er nennt sich Alvro. Hat sich in den Wald vor der Stadt zurückgezogen.
-	AI_Output(self, hero, "Info_Mod_Kardif_Melasse_14_04"); //Er soll sich dort irgendwo in einer Höhle befinden.
+	AI_Output(hero, self, "Info_Mod_Kardif_Melasse_15_00"); //You got any molasses?
+	AI_Output(self, hero, "Info_Mod_Kardif_Melasse_14_01"); //Not any more. Yesterday a guy came in, bought everything.
+	AI_Output(hero, self, "Info_Mod_Kardif_Melasse_15_02"); //Who was that?
+	AI_Output(self, hero, "Info_Mod_Kardif_Melasse_14_03"); //He calls himself Alvro. Retreated to the forest outside the city.
+	AI_Output(self, hero, "Info_Mod_Kardif_Melasse_14_04"); //He's said to be in a cave somewhere in there.
 
-	B_LogEntry	(TOPIC_MOD_SAMUEL_RUM, "Ein gewisser Alvro hat den kompletten Melassevorrat von Kardif aufgekauft. Er soll sich in einer Höhle im Wald vor der Stadt Khorinis befinden.");
+	B_LogEntry	(TOPIC_MOD_SAMUEL_RUM, "A certain Alvro bought the complete molasses supply from Kardif. It is said to be in a cave in the forest in front of the town of Khorinis.");
 };
 
 INSTANCE Info_Mod_Kardif_Zauberwasser (C_INFO)
@@ -248,7 +248,7 @@ INSTANCE Info_Mod_Kardif_Zauberwasser (C_INFO)
 	information	= Info_Mod_Kardif_Zauberwasser_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier eine Lieferung Zauberwasser.";
+	description	= "I've got a shipment of magic water.";
 };
 
 FUNC INT Info_Mod_Kardif_Zauberwasser_Condition()
@@ -264,11 +264,11 @@ FUNC INT Info_Mod_Kardif_Zauberwasser_Condition()
 
 FUNC VOID Info_Mod_Kardif_Zauberwasser_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_Zauberwasser_15_00"); //Ich hab hier eine Lieferung Zauberwasser.
+	AI_Output(hero, self, "Info_Mod_Kardif_Zauberwasser_15_00"); //I've got a shipment of magic water.
 
 	B_GiveInvItems	(hero, self, ItMi_Zauberwasser_MIS, 8);
 
-	AI_Output(self, hero, "Info_Mod_Kardif_Zauberwasser_14_01"); //Wird auch langsam Zeit.
+	AI_Output(self, hero, "Info_Mod_Kardif_Zauberwasser_14_01"); //It's about time.
 };
 
 INSTANCE Info_Mod_Kardif_WoMoe (C_INFO)
@@ -279,7 +279,7 @@ INSTANCE Info_Mod_Kardif_WoMoe (C_INFO)
 	information	= Info_Mod_Kardif_WoMoe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du, wo Moe ist?";
+	description	= "Do you know where Moe is?";
 };
 
 FUNC INT Info_Mod_Kardif_WoMoe_Condition()
@@ -294,12 +294,12 @@ FUNC INT Info_Mod_Kardif_WoMoe_Condition()
 
 FUNC VOID Info_Mod_Kardif_WoMoe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_WoMoe_15_00"); //Weißt du, wo Moe ist?
-	AI_Output(self, hero, "Info_Mod_Kardif_WoMoe_14_01"); //Nein, der Bengel fehlt jetzt schon seit drei Tagen. Allerdings schien es ihm in letzter Zeit auch nicht sonderlich gut zu gehen ... ist bestimmt krank.
-	AI_Output(hero, self, "Info_Mod_Kardif_WoMoe_15_02"); //Es ging ihm nicht gut?
-	AI_Output(self, hero, "Info_Mod_Kardif_WoMoe_14_03"); //Sah bedrückt aus, der Junge. Passte gar nicht zu ihm. Ein Mal hat er "Staubkörner" gesagt, völlig zusammenhangslos.
-	AI_Output(hero, self, "Info_Mod_Kardif_WoMoe_15_04"); //Dann werde ich ihn suchen gehen.
-	AI_Output(self, hero, "Info_Mod_Kardif_WoMoe_14_05"); //Mach das. Vielleicht kannst du ihn ja so weit aufmuntern, dass er wieder Lust hat, zur Arbeit zu kommen.
+	AI_Output(hero, self, "Info_Mod_Kardif_WoMoe_15_00"); //Do you know where Moe is?
+	AI_Output(self, hero, "Info_Mod_Kardif_WoMoe_14_01"); //No, the kid's been missing for three days now. However, he hasn't been feeling very well lately, either... must be sick.
+	AI_Output(hero, self, "Info_Mod_Kardif_WoMoe_15_02"); //He wasn't feeling well?
+	AI_Output(self, hero, "Info_Mod_Kardif_WoMoe_14_03"); //Sah bedrückt aus, der Junge. Passte gar nicht zu ihm. Ein Mal hat er "dust particles" gesagt, völlig zusammenhangslos.
+	AI_Output(hero, self, "Info_Mod_Kardif_WoMoe_15_04"); //Then I'll go find him.
+	AI_Output(self, hero, "Info_Mod_Kardif_WoMoe_14_05"); //Do that. Maybe you can cheer him up enough to make him feel like coming back to work.
 };
 
 INSTANCE Info_Mod_Kardif_MoeTot (C_INFO)
@@ -310,7 +310,7 @@ INSTANCE Info_Mod_Kardif_MoeTot (C_INFO)
 	information	= Info_Mod_Kardif_MoeTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du kannst einen neuen Türsteher anstellen.";
+	description	= "You can hire a new bouncer.";
 };
 
 FUNC INT Info_Mod_Kardif_MoeTot_Condition()
@@ -325,16 +325,16 @@ FUNC INT Info_Mod_Kardif_MoeTot_Condition()
 
 FUNC VOID Info_Mod_Kardif_MoeTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_MoeTot_15_00"); //Du kannst einen neuen Türsteher anstellen.
-	AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_01"); //Moe ist ...?
-	AI_Output(hero, self, "Info_Mod_Kardif_MoeTot_15_02"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_03"); //Oh. (Pause) Verdammt, was ist passiert?
-	AI_Output(hero, self, "Info_Mod_Kardif_MoeTot_15_04"); //Canthar hat ihn umbringen lassen.
-	AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_05"); //Dem Kerl muss endlich das Handwerk gelegt werden. Warte, nimm das hier.
+	AI_Output(hero, self, "Info_Mod_Kardif_MoeTot_15_00"); //You can hire a new bouncer.
+	AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_01"); //Moe is...?
+	AI_Output(hero, self, "Info_Mod_Kardif_MoeTot_15_02"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_03"); //Oh. What the hell happened?
+	AI_Output(hero, self, "Info_Mod_Kardif_MoeTot_15_04"); //Canthar had him killed.
+	AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_05"); //The guy's got to be dealt with. Wait, take this.
 
 	B_GiveInvItems	(self, hero, ItFo_Addon_Rum, 1);
 
-	AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_06"); //Auf Moe, den besten Rausschmeißer, den das ganze beschissene Khorinis je gesehen hat!
+	AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_06"); //To Moe, the best bouncer the whole fucking khorinis has ever seen!
 
 	CreateInvItems	(self, ItFo_Addon_Rum, 2);
 
@@ -343,7 +343,7 @@ FUNC VOID Info_Mod_Kardif_MoeTot_Info()
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Canthar_AtLager2))
 	{
-		AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_07"); //Und jetzt zieh los und leg dem Schurken das Handwerk!
+		AI_Output(self, hero, "Info_Mod_Kardif_MoeTot_14_07"); //Now go ahead and do the villain's job!
 	};
 };
 
@@ -355,7 +355,7 @@ INSTANCE Info_Mod_Kardif_Paddel (C_INFO)
 	information	= Info_Mod_Kardif_Paddel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Paddel im Angebot?";
+	description	= "Are you offering paddles?";
 };
 
 FUNC INT Info_Mod_Kardif_Paddel_Condition()
@@ -370,10 +370,10 @@ FUNC INT Info_Mod_Kardif_Paddel_Condition()
 
 FUNC VOID Info_Mod_Kardif_Paddel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_Paddel_15_00"); //Hast du Paddel im Angebot?
-	AI_Output(self, hero, "Info_Mod_Kardif_Paddel_14_01"); //Wie kommst du da drauf? Ich handle doch nicht mit Restposten. Wieso fragst du nicht einen Fischer?
+	AI_Output(hero, self, "Info_Mod_Kardif_Paddel_15_00"); //Are you offering paddles?
+	AI_Output(self, hero, "Info_Mod_Kardif_Paddel_14_01"); //What makes you think that? I'm not dealing in remnants. Why don't you ask a fisherman?
 
-	B_LogEntry	(TOPIC_MOD_SKIP_PADDEL, "Kardif hat keine Paddel. Er erwähnte die Fischer ... ich sollte mal bei Farim vorbei sehen.");
+	B_LogEntry	(TOPIC_MOD_SKIP_PADDEL, "Kardif has no paddles. He mentioned the fishermen... I should stop by Farim's.");
 };
 
 INSTANCE Info_Mod_Kardif_NagurFrei (C_INFO)
@@ -397,15 +397,15 @@ FUNC INT Info_Mod_Kardif_NagurFrei_Condition()
 
 FUNC VOID Info_Mod_Kardif_NagurFrei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei_14_00"); //He, warte mal. Ich habe hier eine Botschaft und einen Schlüssel für dich ...
+	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei_14_00"); //Hey, wait a minute. I have a message and a key for you here...
 
-	B_ShowGivenThings	("Nachricht und Schlüssel von Akahasch erhalten");
+	B_ShowGivenThings	("Received message and key from Akahasch");
 
 	CreateInvItems	(hero, ItKe_Akahasch, 1);
 	CreateInvItems	(hero, ItWr_Akahasch, 1);
 
-	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei_15_01"); //Von wem sind die Sachen?
-	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei_14_02"); //Ein Novize hat sie mir gegeben.
+	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei_15_01"); //Who are these things from?
+	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei_14_02"); //A novice gave it to me.
 
 	B_RemoveNpc	(Mod_4016_NOV_Akahasch_NW);
 };
@@ -418,7 +418,7 @@ INSTANCE Info_Mod_Kardif_NagurFrei2 (C_INFO)
 	information	= Info_Mod_Kardif_NagurFrei2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du Schwein hast also dabei geholfen mir eine Falle zu stellen!";
+	description	= "So you pig helped me set a trap!";
 };
 
 FUNC INT Info_Mod_Kardif_NagurFrei2_Condition()
@@ -431,27 +431,27 @@ FUNC INT Info_Mod_Kardif_NagurFrei2_Condition()
 
 FUNC VOID Info_Mod_Kardif_NagurFrei2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_00"); //Du Schwein hast also dabei geholfen mir eine Falle zu stellen!
-	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_01"); //(erschrocken) He, ich weiß nicht, was du meinst ...
-	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_02"); //Der Brief der mich in diese Höhle locken sollte ...
-	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_03"); //Man ... man hat mir nur die Sachen gegeben und gesagt, dass ich sie an dich weiterzugeben soll ...
-	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_04"); //Du hast gesagt, ein Novize hätte sie dir gegeben ...
-	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_05"); //Ja, das stimmt auch. So ein Dunkelnovize.
-	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_06"); //Du wusstest genau, dass es nicht Akahasch war ... denn der ist tot.
-	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_07"); //Aber ... aber ich konnte doch nicht wissen, was da läuft. He, man, mach keine Dummheiten, wir können uns doch bestimmt irgendwie einigen ...
-	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_08"); //Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_09"); //Ich ... ich bekomme als Wirt so einiges mit. Ich könnte dir zum Beispiel sagen, in welchen der Kisten und Fässer am Hafen du heiße Ware findest ...
+	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_00"); //So you pig helped me set a trap!
+	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_01"); //Hey, I don't know what you mean...
+	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_02"); //The letter that was supposed to lure me into this cave....
+	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_03"); //Man-- they just gave me the things and told me to pass them on to you....
+	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_04"); //You said a novice gave it to you...
+	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_05"); //Yeah, that's true, too. Such a dark novice.
+	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_06"); //You knew it wasn't acahash... because he's dead.
+	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_07"); //But... but I couldn't have known what was going on. Hey, man, don't do anything stupid. I'm sure we can work something out...
+	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_15_08"); //What do you think?
+	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_14_09"); //l-- as a host, I'm getting a lot of things. For example, I could tell you in which of the crates and barrels at the harbour you will find hot goods....
 
 	Info_ClearChoices	(Info_Mod_Kardif_NagurFrei2);
 
-	Info_AddChoice	(Info_Mod_Kardif_NagurFrei2, "Einverstanden.", Info_Mod_Kardif_NagurFrei2_B);
-	Info_AddChoice	(Info_Mod_Kardif_NagurFrei2, "Dafür wanderst du in den Knast.", Info_Mod_Kardif_NagurFrei2_A);
+	Info_AddChoice	(Info_Mod_Kardif_NagurFrei2, "Agreed.", Info_Mod_Kardif_NagurFrei2_B);
+	Info_AddChoice	(Info_Mod_Kardif_NagurFrei2, "You'll go to jail for this.", Info_Mod_Kardif_NagurFrei2_A);
 };
 
 FUNC VOID Info_Mod_Kardif_NagurFrei2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_B_15_00"); //Einverstanden.
-	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_B_14_01"); //(erleichtert) Puh ... ich wusste doch, das wir uns einigen können.
+	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_B_15_00"); //Agreed.
+	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_B_14_01"); //(simplified) Whew... I knew we could work something out.
 
 	Info_ClearChoices	(Info_Mod_Kardif_NagurFrei2);
 
@@ -462,8 +462,8 @@ FUNC VOID Info_Mod_Kardif_NagurFrei2_B()
 
 FUNC VOID Info_Mod_Kardif_NagurFrei2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_A_15_00"); //Dafür wanderst du in den Knast.
-	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_A_14_01"); //Nein ... das ist mein Ende.
+	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei2_A_15_00"); //You'll go to jail for this.
+	AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei2_A_14_01"); //No... it's the end of me.
 
 	Info_ClearChoices	(Info_Mod_Kardif_NagurFrei2);
 
@@ -498,7 +498,7 @@ INSTANCE Info_Mod_Kardif_NagurFrei3 (C_INFO)
 	information	= Info_Mod_Kardif_NagurFrei3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo finde ich heiße Ware?";
+	description	= "Where can I find hot products?";
 };
 
 FUNC INT Info_Mod_Kardif_NagurFrei3_Condition()
@@ -511,7 +511,7 @@ FUNC INT Info_Mod_Kardif_NagurFrei3_Condition()
 
 FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei3_15_00"); //Wo finde ich heiße Ware?
+	AI_Output(hero, self, "Info_Mod_Kardif_NagurFrei3_15_00"); //Where can I find hot products?
 
 	if (Mod_Kardif_Info < 2)
 	&& (Mod_Kardif_InfoTruhe == 0)
@@ -522,11 +522,11 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 
 		var zCVob vob; vob = MEM_PtrToInst(ptr);
 
-		AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_01"); //So weit ich mitbekommen habe, solltest du in den ...
+		AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_01"); //As far as I can tell, you should be in the....
 
 		if (nextIndex == 0)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_02"); //... Kisten gegenüber Lehmar ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_02"); //... Boxes opposite Lehmar...
 
 			vob.trafoObjToWorld[3] = mkf(3534);
 			vob.trafoObjToWorld[7] = mkf(-154);
@@ -534,7 +534,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 1)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_03"); //... Fässern hinter der Taverne ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_03"); //... Barrels behind the tavern....
 
 			vob.trafoObjToWorld[3] = mkf(2581);
 			vob.trafoObjToWorld[7] = mkf(-187);
@@ -542,7 +542,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 2)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_04"); //... Kisten beim Kartenzeichner ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_04"); //... Boxes at the cartographer...
 
 			vob.trafoObjToWorld[3] = mkf(1193);
 			vob.trafoObjToWorld[7] = mkf(-86);
@@ -550,7 +550,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 3)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_05"); //... Fässern beim Schiffsbauer ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_05"); //... Barrels at the shipbuilder...
 
 			vob.trafoObjToWorld[3] = mkf(777);
 			vob.trafoObjToWorld[7] = mkf(-190);
@@ -558,7 +558,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 4)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_06"); //... Kisten bei Alrik ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_06"); //... Boxes at Alrik...
 
 			vob.trafoObjToWorld[3] = mkf(3532);
 			vob.trafoObjToWorld[7] = mkf(-188);
@@ -566,7 +566,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 5)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_07"); //... Fässern im Lagerhaus ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_07"); //... Barrels in the warehouse....
 
 			vob.trafoObjToWorld[3] = mkf(2065);
 			vob.trafoObjToWorld[7] = mkf(-189);
@@ -574,7 +574,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 6)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_08"); //... Kisten oben im Lagerhaus ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_08"); //... Boxes up in the warehouse...
 
 			vob.trafoObjToWorld[3] = mkf(2790);
 			vob.trafoObjToWorld[7] = mkf(109);
@@ -582,7 +582,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 7)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_09"); //... Kisten zwischen Lagerhaus und Lastenkran ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_09"); //... Boxes between warehouse and load crane....
 
 			vob.trafoObjToWorld[3] = mkf(-289);
 			vob.trafoObjToWorld[7] = mkf(-181);
@@ -590,7 +590,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 8)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_10"); //... Kisten beim Baum überm Lagerhaus ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_10"); //... Boxes by the tree over the warehouse....
 
 			vob.trafoObjToWorld[3] = mkf(1138);
 			vob.trafoObjToWorld[7] = mkf(299);
@@ -598,7 +598,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 9)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_11"); //... Fässern neben der roten Laterne ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_11"); //... Barrels next to the red lantern...
 
 			vob.trafoObjToWorld[3] = mkf(567);
 			vob.trafoObjToWorld[7] = mkf(-192);
@@ -606,7 +606,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 10)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_12"); //... Kisten neben der roten Laterne ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_12"); //... Boxes next to the red lantern...
 
 			vob.trafoObjToWorld[3] = mkf(1103);
 			vob.trafoObjToWorld[7] = mkf(-194);
@@ -614,7 +614,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 11)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_13"); //... Kisten gegenüber dem Schiffsbauer ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_13"); //... Boxes opposite the shipbuilder...
 
 			vob.trafoObjToWorld[3] = mkf(-142);
 			vob.trafoObjToWorld[7] = mkf(-146);
@@ -622,7 +622,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 12)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_14"); //... Kisten neben Anlegestelle für Bote ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_14"); //... Boxes next to dock for messenger...
 
 			vob.trafoObjToWorld[3] = mkf(-1364);
 			vob.trafoObjToWorld[7] = mkf(-82);
@@ -630,21 +630,21 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 		}
 		else if (nextIndex == 13)
 		{
-			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_15"); //... Fässern bei Diego ...
+			AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_15"); //... Barrels at Diego's....
 
 			vob.trafoObjToWorld[3] = mkf(-304);
 			vob.trafoObjToWorld[7] = mkf(-173);
 			vob.trafoObjToWorld[11] = mkf(-1182);
 		};
 
-		AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_16"); //... was Nettes finden.
+		AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_16"); //... find something nice.
 
-		Mob_CreateItems	("KARDIFINFOTRUHE", ItMi_Joint, r_max(9));
-		Mob_CreateItems	("KARDIFINFOTRUHE", ItFo_Booze, r_max(9));
-		Mob_CreateItems	("KARDIFINFOTRUHE", ItFo_Wine, r_max(9));
-		Mob_CreateItems	("KARDIFINFOTRUHE", ItFo_Beer, r_max(9));
-		Mob_CreateItems	("KARDIFINFOTRUHE", ItPo_Tiergift, r_max(3));
-		Mob_CreateItems	("KARDIFINFOTRUHE", ItPo_Pflanzengift, r_max(3));
+		Mob_CreateItems	("CARDIFINITE", ItMi_Joint, r_max(9));
+		Mob_CreateItems	("CARDIFINITE", ItFo_Booze, r_max(9));
+		Mob_CreateItems	("CARDIFINITE", ItFo_Wine, r_max(9));
+		Mob_CreateItems	("CARDIFINITE", ItFo_Beer, r_max(9));
+		Mob_CreateItems	("CARDIFINITE", ItPo_Tiergift, r_max(3));
+		Mob_CreateItems	("CARDIFINITE", ItPo_Pflanzengift, r_max(3));
 
 		VobPositionUpdated(ptr);
 
@@ -652,7 +652,7 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_17"); //Im Moment weiß ich leider noch von nichts weiter. Frag in paar Tagen noch mal nach ...
+		AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_17"); //Right now, I don't know anything else. Ask again in a few days....
 	};
 };
 

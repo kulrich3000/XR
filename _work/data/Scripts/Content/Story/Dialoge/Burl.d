@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Burl_Rattenquest (C_INFO)
 	information	= Info_Mod_Burl_Rattenquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du Burl?";
+	description	= "Are you burl?";
 };
 
 FUNC INT Info_Mod_Burl_Rattenquest_Condition()
@@ -19,19 +19,19 @@ FUNC INT Info_Mod_Burl_Rattenquest_Condition()
 
 FUNC VOID Info_Mod_Burl_Rattenquest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_00"); //Bist du Burl?
-	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_01"); //Oh man, mein Schädel brummt noch von gestern Nacht könntest du mich nicht noch schlafen lassen?
-	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_02"); //Nein, soviel Zeit hab ich nicht.
-	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_03"); //Ok, schon in Ordnung, wie kann ich dir denn helfen?
-	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_04"); //Der Wirt meinte du wüsstest wo man hier Ratten findet.
-	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_05"); //Ja, ich weiß wo sich in letzter Zeit eine Menge von denen aufhalten. Hab mich schon gewundet, warum die ausgerechnet in einem so kalten Gebiet sind.
-	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_06"); //Ein gutes Stück westlich von hier, auf dem Berg über der Mine, dort habe ich sie gesehen. Hier ist eine Karte.
+	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_00"); //Are you burl?
+	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_01"); //Oh, man, my head's still buzzing from last night, could you not let me sleep?
+	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_02"); //No, I don't have that much time.
+	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_03"); //Okay, all right, how can I help you?
+	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_04"); //The innkeeper said you knew where to find rats.
+	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_05"); //Yeah, I know where a lot of them are lately. I've already got a sore throat about why they're in such a cold place.
+	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_06"); //A good part west of here, on the mountain above the mine, that's where I saw them. Here's a map.
 
 	B_GiveInvItems	(self, hero, ItWr_Map_Eisgebiet_Richard, 1);
 
-	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_07"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_07"); //Thanks.
 
-	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Burl hat mir gesagt, wo ich die Ratten finde. Im Westen auf dem Berg über der Mine sollte ich mich also mal umsehen. Er hat mir auch eine Karte gegeben, wo der Ort markiert ist.");
+	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Burl told me where to find the rats. In the west on the mountain above the mine I should have a look around. He also gave me a map of where the place is marked.");
 
 	Mod_RattenQuest = 6;
 

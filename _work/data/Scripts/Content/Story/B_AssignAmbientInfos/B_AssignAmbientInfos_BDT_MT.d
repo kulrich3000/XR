@@ -26,7 +26,7 @@ INSTANCE DIA_BDT_MT_Orkjagd(C_INFO)
 	condition	= DIA_BDT_MT_Orkjagd_Condition;
 	information	= DIA_BDT_MT_Orkjagd_Info;
 	permanent	= TRUE;
-	description = "Es gibt was zu tun. Komm heute um Mitternacht vors Lager.";
+	description = "There's work to be done. Come to the camp tonight at midnight.";
 };                       
 
 FUNC INT DIA_BDT_MT_Orkjagd_Condition()
@@ -41,19 +41,19 @@ FUNC INT DIA_BDT_MT_Orkjagd_Condition()
 
 FUNC VOID DIA_BDT_MT_Orkjagd_Info()
 {	
-	AI_Output (hero, self, "DIA_BDT_MT_Orkjagd_15_00"); //Es gibt was zu tun. Komm heute um Mitternacht vors Lager.
-	AI_Output (self, hero, "DIA_BDT_MT_Orkjagd_01_01"); //Worum geht es?
+	AI_Output (hero, self, "DIA_BDT_MT_Orkjagd_15_00"); //There's work to be done. Come to the camp tonight at midnight.
+	AI_Output (self, hero, "DIA_BDT_MT_Orkjagd_01_01"); //What's this about?
 	
 	Info_ClearChoices	(DIA_BDT_MT_Orkjagd);
 
-	Info_AddChoice	(DIA_BDT_MT_Orkjagd, "Halt einfach die klappe und komm heute Nacht vors Lager.", DIA_BDT_MT_Orkjagd_B);
-	Info_AddChoice	(DIA_BDT_MT_Orkjagd, "Wir gehen auf Orkjagd.", DIA_BDT_MT_Orkjagd_A);
+	Info_AddChoice	(DIA_BDT_MT_Orkjagd, "Just shut up and come to camp tonight.", DIA_BDT_MT_Orkjagd_B);
+	Info_AddChoice	(DIA_BDT_MT_Orkjagd, "We're going orc hunting.", DIA_BDT_MT_Orkjagd_A);
 };
 
 FUNC VOID DIA_BDT_MT_Orkjagd_B()
 {	
-	AI_Output (hero, self, "DIA_BDT_MT_Orkjagd_B_15_00"); //Halt einfach die klappe und komm heute Nacht vors Lager. Befehl von Morgahard.
-	AI_Output (self, hero, "DIA_BDT_MT_Orkjagd_B_01_01"); //Na okey, ich kanns mir schon denken. Bis heut Abend.
+	AI_Output (hero, self, "DIA_BDT_MT_Orkjagd_B_15_00"); //Just shut up and come to camp tonight. Morgahard's orders.
+	AI_Output (self, hero, "DIA_BDT_MT_Orkjagd_B_01_01"); //All right, I can guess. See you tonight.
 	
 	Info_ClearChoices	(DIA_BDT_MT_Orkjagd);
 
@@ -66,8 +66,8 @@ FUNC VOID DIA_BDT_MT_Orkjagd_B()
 
 FUNC VOID DIA_BDT_MT_Orkjagd_A()
 {	
-	AI_Output (hero, self, "DIA_BDT_MT_Orkjagd_A_15_00"); //Wir gehen auf Orkjagd.
-	AI_Output (self, hero, "DIA_BDT_MT_Orkjagd_A_01_01"); //Orkjagen?! Ich bin doch Bandit und kein Orkjäger. Na ja, was solls. Bis heut abend.
+	AI_Output (hero, self, "DIA_BDT_MT_Orkjagd_A_15_00"); //We're going orc hunting.
+	AI_Output (self, hero, "DIA_BDT_MT_Orkjagd_A_01_01"); //Orc hunt?! I'm a bandit, not an orc hunter. Well, whatever. See you tonight.
 	
 	Info_ClearChoices	(DIA_BDT_MT_Orkjagd);
 

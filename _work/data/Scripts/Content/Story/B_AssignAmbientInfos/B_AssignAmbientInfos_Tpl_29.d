@@ -14,7 +14,7 @@ INSTANCE Info_Tpl_29_EXIT(C_INFO)
 	condition	= Info_Tpl_29_EXIT_Condition;
 	information	= Info_Tpl_29_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_Tpl_29_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_29_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_29_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_29_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Könnt ihr noch einen guten Mann brauchen?";
+	description = "Can you guys use another good man?";
 };                       
 
 FUNC INT Info_Tpl_29_EinerVonEuchWerden_Condition()
@@ -54,9 +54,9 @@ FUNC INT Info_Tpl_29_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_29_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Tpl_29_EinerVonEuchWerden_15_00"); //Könnt ihr noch einen guten Mann brauchen?
-	AI_Output(self,hero,"Info_Tpl_29_EinerVonEuchWerden_29_01"); //Gute Leute suchen wir immer. Aber du wirst hart an dir arbeiten müssen. Erst ein fortgeschrittener Novize kann zum Templer befördert werden.
-	AI_Output(self,hero,"Info_Tpl_29_EinerVonEuchWerden_29_02"); //Es ist die höchste Ehre für einen Anhänger der Bruderschaft.
+	AI_Output(hero,self,"Info_Tpl_29_EinerVonEuchWerden_15_00"); //Can you guys use another good man?
+	AI_Output(self,hero,"Info_Tpl_29_EinerVonEuchWerden_29_01"); //We're always looking for good people. But you're gonna have to work hard on yourself. Only an advanced novice can be promoted to Templar.
+	AI_Output(self,hero,"Info_Tpl_29_EinerVonEuchWerden_29_02"); //It is the highest honor for a fraternity follower.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_Tpl_29_WichtigePersonen(C_INFO)
 	condition	= Info_Tpl_29_WichtigePersonen_Condition;
 	information	= Info_Tpl_29_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_Tpl_29_WichtigePersonen_Condition()
@@ -79,10 +79,10 @@ FUNC INT Info_Tpl_29_WichtigePersonen_Condition()
 
 FUNC VOID Info_Tpl_29_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Tpl_29_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_Tpl_29_WichtigePersonen_29_01"); //Wir tun alles, was uns die Gurus sagen. Es ist unsere Pflicht, ihnen zu dienen.
-	AI_Output(self,hero,"Info_Tpl_29_WichtigePersonen_15_02"); //Wer sind eure Gurus?
-	AI_Output(self,hero,"Info_Tpl_29_WichtigePersonen_29_03"); //Cor Cadar ist der Oberste Guru. Unter ihm folgen Cor Angar und noch einige weitere.
+	AI_Output(hero,self,"Info_Tpl_29_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,hero,"Info_Tpl_29_WichtigePersonen_29_01"); //We do everything the gurus tell us. It is our duty to serve them.
+	AI_Output(self,hero,"Info_Tpl_29_WichtigePersonen_15_02"); //Who are your gurus?
+	AI_Output(self,hero,"Info_Tpl_29_WichtigePersonen_29_03"); //Cor Cadar is the Supreme Guru. Below him, Cor Angar and a few others follow.
 };
 
 // *************************************************************************
@@ -95,7 +95,7 @@ INSTANCE Info_Tpl_29_DasLager(C_INFO)
 	condition	= Info_Tpl_29_DasLager_Condition;
 	information	= Info_Tpl_29_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über dieses Lager erzählen?";
+	description = "What can you tell me about this camp?";
 };                       
 
 FUNC INT Info_Tpl_29_DasLager_Condition()
@@ -112,9 +112,9 @@ FUNC INT Info_Tpl_29_DasLager_Condition()
 
 FUNC VOID Info_Tpl_29_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Tpl_29_DasLager_15_00"); //Was kannst du mir über dieses Lager erzählen?
-	AI_Output(self,hero,"Info_Tpl_29_DasLager_29_01"); //Als Neuling darfst du dich fast überall aufhalten. Aber es ist Ungläubigen untersagt, den Tempel zu betreten.
-	AI_Output(hero,self,"Info_Tpl_29_DasLager_29_02"); //Also halt dich nur da auf, wo es dir gestattet ist. Und störe nicht unsere Meister bei der Meditation.
+	AI_Output(hero,self,"Info_Tpl_29_DasLager_15_00"); //What can you tell me about this camp?
+	AI_Output(self,hero,"Info_Tpl_29_DasLager_29_01"); //As a freshman, you can stay almost anywhere. But unbelievers are forbidden to enter the temple.
+	AI_Output(hero,self,"Info_Tpl_29_DasLager_29_02"); //So just stay where you're allowed. And do not disturb our masters in meditation.
 };
 
 // *************************************************************************
@@ -127,7 +127,7 @@ INSTANCE Info_Tpl_29_DieLage(C_INFO) // E1
 	condition	= Info_Tpl_29_DieLage_Condition;
 	information	= Info_Tpl_29_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_Tpl_29_DieLage_Condition()
@@ -144,8 +144,8 @@ FUNC INT Info_Tpl_29_DieLage_Condition()
 
 FUNC VOID Info_Tpl_29_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Tpl_29_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,hero,"Info_Tpl_29_DieLage_29_01"); //Ich warne dich. Sei nicht respektlos. Du redest mit einem Auserwählten Beschützer der Propheten.
+	AI_Output(hero,self,"Info_Tpl_29_DieLage_15_00"); //How's it looking?
+	AI_Output(self,hero,"Info_Tpl_29_DieLage_29_01"); //I'm warning you. Don't be disrespectful. You're talking to a Chosen Protector of the Prophets.
 };
 
 INSTANCE Info_Mod_TPL_29_Pickpocket (C_INFO)

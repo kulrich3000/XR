@@ -15,14 +15,14 @@ FUNC INT Info_Mod_Jack_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Jack_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_00"); //Was für ein finsteres Loch, ist mir gar nicht geheuer.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_01"); //Hol dir so schnell wie möglich das, was du auf dieser Insel brauchst und dann nichts wie weg hier.
-	AI_Output(hero, self, "Info_Mod_Jack_IR_Hi_15_02"); //Ja, mal schauen, wer mitkommt.
-	AI_Output(hero, self, "Info_Mod_Jack_IR_Hi_15_03"); //Ich glaube nicht, dass ein paar kampferprobte Gefährten zur Begleitung verfehlt wären.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_04"); //Lass aber noch ein paar zum Schutz des Schiffes zurück.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_05"); //Ich will keine ungeladenen Monster und Untote auf meinem Schiff begrüßen müssen, während du mit den anderen die Insel absuchst.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_06"); //Die Hälfte kannst du mitnehmen, der Rest bleibt hier. Und mach schnell.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_07"); //Ich schau mich während dessen mal im Lagerraum um, ob ich einige Fackeln finde und etwas Grog, gegen die Finsternis und Kälte ...
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_00"); //What a dark hole, I'm not so sure.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_01"); //Get what you need on this island as soon as possible and then let's get out of here.
+	AI_Output(hero, self, "Info_Mod_Jack_IR_Hi_15_02"); //Yeah, let's see who's coming.
+	AI_Output(hero, self, "Info_Mod_Jack_IR_Hi_15_03"); //I don't think a few battle-hardened companions would be missed for escort.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_04"); //Just leave some to protect the ship, though.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_05"); //I don't want to have to greet unloaded monsters and undead on my ship while you're searching the island with the others.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_06"); //Half you can take, the rest stay here. And make it quick.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Hi_14_07"); //I take a look around the storeroom during this time to see if I can find some torches and some grog, against the darkness and cold....
 
 	AI_StopProcessInfos	(self);
 
@@ -49,8 +49,8 @@ FUNC INT Info_Mod_Jack_IR_Argez_Condition()
 
 FUNC VOID Info_Mod_Jack_IR_Argez_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Argez_14_00"); //Nun friss mich doch der Blaubarsch, wir haben einen blinden Passagier an Bord.
-	AI_Output(hero, self, "Info_Mod_Jack_IR_Argez_15_01"); //Was, wo?
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Argez_14_00"); //Why don't you eat my blue bass? We got a stowaway on board.
+	AI_Output(hero, self, "Info_Mod_Jack_IR_Argez_15_01"); //What, where?
 
 	AI_StopProcessInfos	(self);
 
@@ -79,10 +79,10 @@ FUNC INT Info_Mod_Jack_IR_Argez2_Condition()
 
 FUNC VOID Info_Mod_Jack_IR_Argez2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Argez2_14_00"); //Jo, der scheint nicht mehr so schnell wieder auf die Beine zu kommen.
-	AI_Output(hero, self, "Info_Mod_Jack_IR_Argez2_15_01"); //Dann werde ich wohl ohne ihn die Insel beschreiten müssen.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Argez2_14_02"); //Ja, mach mal und beeil dich, dass wir hier schnell wieder wegkommen.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Argez2_14_03"); //Ich schaue in der Zwischenzeit, ob ich nicht im Lagerraum etwas finde, das ihm hilft.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Argez2_14_00"); //Jo, he doesn't seem to be getting back on his feet that fast.
+	AI_Output(hero, self, "Info_Mod_Jack_IR_Argez2_15_01"); //Then I guess I'll have to walk the island without him.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Argez2_14_02"); //Yeah, hurry up and get out of here fast.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Argez2_14_03"); //In the meantime, I'll see if I can find something in the storage room to help him.
 
 	AI_StopProcessInfos	(self);
 
@@ -109,11 +109,11 @@ FUNC INT Info_Mod_Jack_IR_Fertig_Condition()
 
 FUNC VOID Info_Mod_Jack_IR_Fertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Fertig_14_00"); //Hey, ich habe gehört, dass du alles erledigt hast.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Fertig_14_01"); //Für Glückwünsche gibt es ja während der Fahrt noch genug Zeit.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Fertig_14_02"); //Können wir dann endlich wieder in See stechen?
-	AI_Output(hero, self, "Info_Mod_Jack_IR_Fertig_15_03"); //Ja, ich wüsste keinen Grund warum nicht.
-	AI_Output(self, hero, "Info_Mod_Jack_IR_Fertig_14_04"); //Gut, hier ist der Schlüssel für die Kajüte, hau dich ein wenig aufs Ohr, während ich die Segel setze.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Fertig_14_00"); //Hey, I heard you got it all taken care of.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Fertig_14_01"); //There is still plenty of time for congratulations during the trip.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Fertig_14_02"); //Can we finally put to sea again?
+	AI_Output(hero, self, "Info_Mod_Jack_IR_Fertig_15_03"); //Yeah, I wouldn't know why not.
+	AI_Output(self, hero, "Info_Mod_Jack_IR_Fertig_14_04"); //All right, here's the key to the cabin, hit the stern a little bit while I'm setting the sails.
 
 	B_GiveInvItems	(self, hero, ItKe_Irdorath, 1);
 };

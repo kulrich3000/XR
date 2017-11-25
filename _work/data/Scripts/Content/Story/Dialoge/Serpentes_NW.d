@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Serpentes_Hi (C_INFO)
 	information	= Info_Mod_Serpentes_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Serpentes_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Serpentes_Hi_Condition()
 FUNC VOID Info_Mod_Serpentes_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Serpentes_Hi_10_01"); //Ich bin Serpentes, der zweithöchste Feuermagier auf Khorinis. Was willst du von mir?
+	AI_Output(self, hero, "Info_Mod_Serpentes_Hi_10_01"); //I'm Serpentes, the second-highest fire magician on Khorinis. What do you want from me?
 };
 
 INSTANCE Info_Mod_Serpentes_Weindiebe (C_INFO)
@@ -41,29 +41,29 @@ FUNC INT Info_Mod_Serpentes_Weindiebe_Condition()
 
 FUNC VOID Info_Mod_Serpentes_Weindiebe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_00"); //Nicht so schnell, Novize. Ich habe ein Anliegen an dich.
-	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_01"); //Was gibt es?
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_02"); //Wie du bestimmt weißt, hat unser Kloster neben anderen Einnahmequellen auch mit dem Verkauf von Wein sein gutes Auskommen.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_03"); //Ich weiß das besser als jeder andere, da ich mich um die finanziellen Belange des Klosters kümmere und Einnahmen und Ausgaben stets im Blick habe.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_04"); //Leider musste ich zu meinem großen Bedauern feststellen, dass es in letzter Zeit ein unschönes Missverhältnis zwischen Weinausgang und Goldeinahmen gab.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_05"); //Der Wirt Orlan hat sich zudem mehrmals über ausgebliebene Lieferungen unseres Weines beschwert.
-	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_06"); //Was sagt Gorax dazu?
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_07"); //Gorax?! Der ist ein alter Säufer, der weit mehr von dem Wein genießt, als gut für ihn ist.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_08"); //Zwar hat er beteuert nur die zuverlässigsten Novizen für die Lieferungen einzusetzen, hat jedoch bereits bis mittags so viel getrunken, dass er kaum die Novizen von den Magiern unterscheiden kann.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_09"); //Mein scharfer Blick dagegen hat mir verraten, dass mehrfach Novizen das Kloster durch den Eingang verlasse haben, die vorher nicht durch diesen hineingelangt waren… und die ich vorher auch nie gesehen hatte.
-	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_10"); //Was hat das zu bedeuten und wer könnte das sein?
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_11"); //Nun, da unsere magische Pforte zwar Feinde am hineinkommen, aber nicht am hinauszugehen hindert, verdächtige ich die Jünger des finsteren Gottes.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_12"); //Es würde mich in der Tat nicht überraschen, wenn diese Dämonenmagier dreist genug wären ihre Novizen zum stehlen unseres Weines hier reinzuschicken.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_13"); //Aber genug der Mutmaßungen: Ich will Gewissheit!
-	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_14"); //Was soll ich machen?
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_15"); //Erst vor kurzem hat wieder einer dieser Scheinnovizen das Kloster verlassen.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_16"); //Wenn du dich beeilst, wirst du ihn vielleicht noch auf dem Weg zwischen Kloster und Taverne stellen können.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_17"); //Also, du weißt, was zu tun ist.
-	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_18"); //Ich mache mich sofort auf den Weg.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_00"); //Not so fast, Novice. I have a request for you.
+	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_01"); //What's up?
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_02"); //As you probably know, our monastery makes a good living selling wine among other sources of income.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_03"); //I know this better than anyone else, because I take care of the finances of the monastery and keep an eye on income and expenses.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_04"); //Unfortunately, I regret to say that lately there has been a disproportionate mismatch between the outgoing wine and the gold income.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_05"); //The innkeeper Orlan has complained several times about missing deliveries of our wine.
+	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_06"); //What does Gorax say?
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_07"); //Gorax?! He's an old drunkard who enjoys wine far more than he's good for.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_08"); //Although he insisted on using only the most reliable novices for the deliveries, he drank so much until noon that he could hardly tell the novices from the magicians.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_09"); //My sharp gaze, on the other hand, has told me that several novices have left the monastery through the entrance, which had not reached it before... and which I had never seen before.
+	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_10"); //What does that mean and who could it be?
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_11"); //Now that our magical gate may be an entry point for enemies, but it does not prevent them from going out, I suspect the disciples of the dark God.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_12"); //I wouldn't be surprised if these demon magicians were brazen enough to send their novices in here to steal our wine.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_13"); //But enough of the conjecture: I want certainty!
+	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_14"); //What am I supposed to do?
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_15"); //Only recently, one of these fake innovators left the monastery.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_16"); //If you hurry, you may be able to place it on the way between the monastery and the tavern.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe_10_17"); //Well, you know what to do.
+	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe_15_18"); //I'll be on my way right away.
 
 	Log_CreateTopic	(TOPIC_MOD_SERPENTES_WEINDIEBE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SERPENTES_WEINDIEBE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SERPENTES_WEINDIEBE, "Serpentes hat das wiederholte verschwinden von Weinlieferungen beklagt. Er hat die Novizen der Dämonenmagier in Verdacht. Einer von diesen Scheinnovizen hat vor kurzem das Kloster verlassen und ich soll ihn verfolgen.");
+	B_LogEntry	(TOPIC_MOD_SERPENTES_WEINDIEBE, "Serpentes has complained about the repeated disappearance of wine deliveries. He suspects the novices of demon magicians. One of these bogus innovators has just left the monastery and I'm supposed to go after him.");
 
 	Wld_InsertNpc	(Mod_7761_SNOV_Novize_NW, "TAVERNE");
 };
@@ -88,41 +88,41 @@ FUNC INT Info_Mod_Serpentes_Weindiebe2_Condition()
 
 FUNC VOID Info_Mod_Serpentes_Weindiebe2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_00"); //Und?! Sprich schon! Was hast du über die Weindiebe zu berichten?
-	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe2_15_01"); //Du hattest Recht, es war ein Novize der Schwarzmagier.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_02"); //Ha, ich wusste es. Mein scharfer Verstand hat mich nicht getäuscht.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_03"); //Hast du den Übeltäter zur Rechenschaft gezogen?
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_00"); //And?! Speak up! What do you have to say about the wine thieves?
+	AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe2_15_01"); //You were right, it was a novice of the black mages.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_02"); //Ha, I knew it. My keen mind did not deceive me.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_03"); //Did you bring the culprit to justice?
 
 	if (Npc_IsDead(Mod_7761_SNOV_Novize_NW))
 	{
-		AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe2_15_04"); //Es wird ihm schwer fallen, irgendjemanden je wieder zu bestehlen. Dafür habe ich gesorgt.
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_05"); //Vortrefflich ... ich bin mehr als zufrieden mit dir, Novize. Das wird den Schwarzmagiern eine Lehre sein.
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_06"); //Ich bezweifle, dass sich jetzt noch irgendein Lakai des dunklen Gottes in unser Kloster wagen wird.
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_07"); //Innos Flammen sollen jeden versengen, der sich uns in den Weg stellt.
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_08"); //Hier, dieses Gold und die Spruchrollen hast du dir redlich verdient!
+		AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe2_15_04"); //It'll be hard for him to steal from anyone ever again. I made sure of that.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_05"); //Excellent... I'm more than happy with you, Novice. This will teach the black mages a lesson.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_06"); //I doubt that any lackey of the Dark God will dare to enter our monastery.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_07"); //Let Inno's flames burn anyone who stands in our way.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_08"); //Here, you've earned this gold and the spell rolls!
 
 		CreateInvItems	(hero, ItMi_Gold, 400);
 		CreateInvItems	(hero, ItSc_Firestorm, 4);
 
-		B_ShowGivenThings	("400 Gold und 4 Spruchrollen Feuersturm erhalten");
+		B_ShowGivenThings	("400 gold and 4 reels of fire storm preserved");
 
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_09"); //Geh mit Innos Segen.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_09"); //Go with Inno's blessing.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe2_15_10"); //Ich habe ihm klargemacht, dass er und seine Mitbrüder sich hier niemals wieder blicken lassen sollen.
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_11"); //(erbost) Was, du hast ihn davonkommen lassen?!
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_12"); //Lieber wäre mir gewesen, du hättest ihn mit Innos’ Flammen zu Tode geläutert.
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_13"); //(nachsichtiger) Aber ich will es dir dieses eine Mal nachsehen.
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_14"); //Letztendlich hast du dafür Sorge getragen, dass die Diener der Niedertracht uns nicht mehr bestehlen werden.
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_15"); //Hier, nimm die Spruchrollen und das Gold zur Belohnung.
+		AI_Output(hero, self, "Info_Mod_Serpentes_Weindiebe2_15_10"); //I made it clear to him that he and his confreres should never come back again.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_11"); //What, you let him get away with it?!
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_12"); //I would have preferred it if you had purified him to death with Innos' flames.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_13"); //But I want to look it up for you this one time.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_14"); //Eventually you made sure that the servants of infamy will no longer steal from us.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_15"); //Here, take the spell rolls and the gold as a reward.
 
 		CreateInvItems	(hero, ItMi_Gold, 250);
 		CreateInvItems	(hero, ItSc_Firestorm, 2);
 
-		B_ShowGivenThings	("250 Gold und 2 Spruchrollen Feuersturm erhalten");
+		B_ShowGivenThings	("250 gold and 2 spell rolls fire storm preserved");
 
-		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_16"); //Und nun entferne dich wieder.
+		AI_Output(self, hero, "Info_Mod_Serpentes_Weindiebe2_10_16"); //Now remove yourself again.
 	};
 
 	B_GivePlayerXP	(200);
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Serpentes_Kimon (C_INFO)
 	information	= Info_Mod_Serpentes_Kimon_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Händler Kimon sagt, du hättest ihm zu wenig für seine Trauben bezahlt.";
+	description	= "Dealer Kimon says you paid him too little for his grapes.";
 };
 
 FUNC INT Info_Mod_Serpentes_Kimon_Condition()
@@ -154,17 +154,17 @@ FUNC INT Info_Mod_Serpentes_Kimon_Condition()
 
 FUNC VOID Info_Mod_Serpentes_Kimon_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Serpentes_Kimon_15_00"); //Der Händler Kimon sagt, du hättest ihm zu wenig für seine Trauben bezahlt.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_01"); //So, sagt er das? Und was glaubst du, wie wenig es mich interessiert, was er sagt?
-	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_02"); //Ich habe ihm so viel Gold gegeben, wie mir seine Trauben wert waren.
-	AI_Output(hero, self, "Info_Mod_Serpentes_Kimon_15_03"); //Das war aber zu wenig.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_04"); //(wütend) Du stellst das Wort des zweithöchsten Feuermagiers von Khorinis in Frage?
-	AI_Output(hero, self, "Info_Mod_Serpentes_Kimon_15_05"); //Ja, genau das mache ich.
-	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_06"); //(laut) Verschwinde gefälligst, bevor ich dich hinauswerfen lasse!
-	AI_Output(hero, self, "Info_Mod_Serpentes_Kimon_15_07"); //Nicht, bevor du diese verdammten Trauben bezahlt hast!
-	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_08"); //So, jetzt reicht es mir.
+	AI_Output(hero, self, "Info_Mod_Serpentes_Kimon_15_00"); //Dealer Kimon says you paid him too little for his grapes.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_01"); //That's what he says? And how little do you think I care what he says?
+	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_02"); //I gave him as much gold as his grapes were worth to me.
+	AI_Output(hero, self, "Info_Mod_Serpentes_Kimon_15_03"); //But that was not enough.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_04"); //You question the word of the second-highest fire magician of Khorini?
+	AI_Output(hero, self, "Info_Mod_Serpentes_Kimon_15_05"); //Yeah, that's what I'm doing.
+	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_06"); //Get the hell out of here before I throw you out!
+	AI_Output(hero, self, "Info_Mod_Serpentes_Kimon_15_07"); //Not until you pay for those damn grapes!
+	AI_Output(self, hero, "Info_Mod_Serpentes_Kimon_10_08"); //All right, that's enough.
 
-	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Serpentes will das restliche Gold nicht bezahlen. Entweder muss ich versuchen Serpentes das Gold abzunehmen oder es selber zahlen. Vielleicht kann mir aber auch Pyrokar helfen.");
+	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Serpentes won't pay for the rest of the gold. Either I have to try to take the gold off Serpentes or I have to pay for it myself. Maybe Pyrokar can help me, too.");
 
 	AI_StopProcessInfos	(self);
 
@@ -179,7 +179,7 @@ INSTANCE Info_Mod_Serpentes_KimonsGold (C_INFO)
 	information	= Info_Mod_Serpentes_KimonsGold_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gibst du mir jetzt das Gold?";
+	description	= "Will you give me the gold now?";
 };
 
 FUNC INT Info_Mod_Serpentes_KimonsGold_Condition()
@@ -194,8 +194,8 @@ FUNC INT Info_Mod_Serpentes_KimonsGold_Condition()
 
 FUNC VOID Info_Mod_Serpentes_KimonsGold_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Serpentes_KimonsGold_15_00"); //Gibst du mir jetzt das Gold?
-	AI_Output(self, hero, "Info_Mod_Serpentes_KimonsGold_10_01"); //(wütend) Ich hab gesagt, du sollst verschwinden!
+	AI_Output(hero, self, "Info_Mod_Serpentes_KimonsGold_15_00"); //Will you give me the gold now?
+	AI_Output(self, hero, "Info_Mod_Serpentes_KimonsGold_10_01"); //I told you to get out of here!
 
 	AI_StopProcessInfos	(self);
 

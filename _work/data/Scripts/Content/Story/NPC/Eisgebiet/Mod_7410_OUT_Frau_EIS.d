@@ -1,7 +1,7 @@
 instance Mod_7410_OUT_Frau_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Frau";	//Halvors Frau
+	name 		= "Mrs.";	//Halvors Frau
 	guild 		= GIL_OUT;
 	id 			= 7410;
 	voice 		= 17;

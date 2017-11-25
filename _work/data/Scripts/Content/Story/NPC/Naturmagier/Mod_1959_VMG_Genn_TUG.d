@@ -1,7 +1,7 @@
 INSTANCE Mod_1959_VMG_Genn_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Genn"; 
+	name 		= "term"; 
 	guild 		= GIL_OUT;
 	id 			= 1959;
 	voice 		= 9;

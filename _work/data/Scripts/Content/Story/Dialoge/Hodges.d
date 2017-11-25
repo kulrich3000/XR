@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Hodges_Unheil (C_INFO)
 	information	= Info_Mod_Hodges_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist in letzter Zeit etwas Ungewöhnliches geschehen?";
+	description	= "Has anything unusual happened lately?";
 };
 
 FUNC INT Info_Mod_Hodges_Unheil_Condition()
@@ -20,28 +20,28 @@ FUNC INT Info_Mod_Hodges_Unheil_Condition()
 
 FUNC VOID Info_Mod_Hodges_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hodges_Unheil_15_00"); //Ist in letzter Zeit etwas Ungewöhnliches geschehen?
-	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_03_01"); //Nun ja, z.B. die ganzen Ungeheuer, die sich hier auf den Höfen breit gemacht haben. Das ist schon etwas ungewöhnlich, würde ich sagen. Warum fragst du?
+	AI_Output(hero, self, "Info_Mod_Hodges_Unheil_15_00"); //Has anything unusual happened lately?
+	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_03_01"); //Well, well, z. B. all the monsters that have spread out here in the yards. That's a little unusual, I'd say. Why do you ask?
 
 	Info_ClearChoices	(Info_Mod_Hodges_Unheil);
 
 	if (Mod_WM_Hexeninfos > 1)
 	{
-		Info_AddChoice	(Info_Mod_Hodges_Unheil, "Ich bin auf der Suche nach Hexen.", Info_Mod_Hodges_Unheil_B);
+		Info_AddChoice	(Info_Mod_Hodges_Unheil, "I'm looking for witches.", Info_Mod_Hodges_Unheil_B);
 	};
-	Info_AddChoice	(Info_Mod_Hodges_Unheil, "Nur so.", Info_Mod_Hodges_Unheil_A);
+	Info_AddChoice	(Info_Mod_Hodges_Unheil, "No reason.", Info_Mod_Hodges_Unheil_A);
 };
 
 FUNC VOID Info_Mod_Hodges_Unheil_B()
 {
-	AI_Output(hero, self, "Info_Mod_Hodges_Unheil_B_15_00"); //Ich bin auf der Suche nach Hexen.
-	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_B_03_01"); //Was Hexen?! Und da fragst du noch?
-	AI_Output(hero, self, "Info_Mod_Hodges_Unheil_B_15_02"); //Ja, weißt du etwas?
-	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_B_03_03"); //Ja, nicht weit hinter der Krypta in einer Höhle. Da hast du deine Hexe. Sagitta nennt sie sich.
-	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_B_03_04"); //Die war mir noch nie geheuer. Sitzt alleine in der Einöde und macht bestimmt ihre finsteren Rituale.
-	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_B_03_05"); //Verscheuchen sollte man sie. Dann würde bestimmt alles besser.
+	AI_Output(hero, self, "Info_Mod_Hodges_Unheil_B_15_00"); //I'm looking for witches.
+	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_B_03_01"); //What witches?! And you still ask?
+	AI_Output(hero, self, "Info_Mod_Hodges_Unheil_B_15_02"); //Yeah, you know something?
+	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_B_03_03"); //Yeah, not far behind the crypt in a cave. There's your witch. Sagitta calls herself.
+	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_B_03_04"); //I've never seen her before. Sits alone in the wasteland, doing their sinister rituals.
+	AI_Output(self, hero, "Info_Mod_Hodges_Unheil_B_03_05"); //You should drive them away. It'll make everything better.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Hodges äußerte die Überzeugung, dass Sagitta eine Hexe sei.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Hodges expressed the conviction that Sagitta was a witch.");
 
 	Mod_HinweiseDerBauernZuHexen += 1;
 
@@ -50,7 +50,7 @@ FUNC VOID Info_Mod_Hodges_Unheil_B()
 
 FUNC VOID Info_Mod_Hodges_Unheil_A()
 {
-	AI_Output(hero, self, "Info_Mod_Hodges_Unheil_A_15_00"); //Nur so.
+	AI_Output(hero, self, "Info_Mod_Hodges_Unheil_A_15_00"); //No reason.
 
 	Info_ClearChoices	(Info_Mod_Hodges_Unheil);
 };

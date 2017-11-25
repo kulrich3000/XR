@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Pilar_Hi (C_INFO)
 	information	= Info_Mod_Pilar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist euch das Wetter zu schlecht oder warum hockt ihr den ganzen Tag hier in der Taverne?";
+	description	= "Is the weather too bad for you or why are you sitting here in the tavern all day?";
 };
 
 FUNC INT Info_Mod_Pilar_Hi_Condition()
@@ -19,9 +19,9 @@ FUNC INT Info_Mod_Pilar_Hi_Condition()
 
 FUNC VOID Info_Mod_Pilar_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pilar_Hi_15_00"); //Ist euch das Wetter zu schlecht oder warum hockt ihr den ganzen Tag hier in der Taverne?
-	AI_Output(self, hero, "Info_Mod_Pilar_Hi_01_01"); //Lass mich doch in Ruhe. Meine Laune ist schon schlecht genug.
-	AI_Output(self, hero, "Info_Mod_Pilar_Hi_01_02"); //Wenn du Reden willst, dann geh zu Luis. Wenn ihr beide euch unterhaltet, quatscht mich wenigstens keiner von euch voll.
+	AI_Output(hero, self, "Info_Mod_Pilar_Hi_15_00"); //Is the weather too bad for you or why are you sitting here in the tavern all day?
+	AI_Output(self, hero, "Info_Mod_Pilar_Hi_01_01"); //Why don't you leave me alone? My mood's bad enough as it is.
+	AI_Output(self, hero, "Info_Mod_Pilar_Hi_01_02"); //If you want to talk, go to Luis. If you two are talking, at least none of you guys are going to fill me in.
 };
 
 INSTANCE Info_Mod_Pilar_AtHut (C_INFO)
@@ -44,16 +44,16 @@ FUNC INT Info_Mod_Pilar_AtHut_Condition()
 
 FUNC VOID Info_Mod_Pilar_AtHut_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_00"); //Ah, endlich kommt jemand. Ich dachte schon mich würden sie auch noch entführen.
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut_15_01"); //Wer soll dich den Entführen wollen?
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_02"); //Diese verdammten Goblins natürlich. Letzte Nacht haben sie meinen Bruder Chad entführt.
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_03"); //Ich konnte gerade noch zum Schwert greifen, ansonsten hätten sie mich auch erwischt.
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut_15_04"); //Hast du eine Ahnung, wo sie ihn hingebracht haben könnten?
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_05"); //Nein, nicht wirklich. Allerdings hab ich einen von ihnen verletzen können. Die Blutspur könnte uns also zu ihnen führen.
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut_15_06"); //Worauf wartest du dann noch, höher werden die Überlebenschancen deines Bruders nicht.
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_07"); //Ich hab auf Verstärkung gewartet. Wenn wir auch gefangen genommen werden, muss doch jemand wissen, das wir hier sind.
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut_15_08"); //Gut, dann geht Luis zurück zur Stadt und wir folgen den Blutspuren.
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_09"); //In Ordnung, ich folge dir.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_00"); //Ah, someone's finally coming. I thought they were gonna kidnap me, too.
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut_15_01"); //Who's gonna want to kidnap you?
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_02"); //Those fucking goblins, of course. Last night, they kidnapped my brother Chad.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_03"); //I could barely reach for the sword, otherwise they would have caught me too.
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut_15_04"); //Do you have any idea where they might have taken him?
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_05"); //No, not really. I could hurt one of them, though. So the blood trail could lead us to them.
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut_15_06"); //What are you waiting for, your brother's chances of survival will not increase.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_07"); //I was waiting for backup. If we're going to be captured, someone must know we're here, too.
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut_15_08"); //Well, then Luis goes back to town and we follow the blood trail.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut_01_09"); //All right, I'll follow you.
 
 	AI_StopProcessInfos	(self);
 
@@ -63,7 +63,7 @@ FUNC VOID Info_Mod_Pilar_AtHut_Info()
 	Mod_7567_OUT_Luis_EIS.aivar[AIV_Partymember] = FALSE;
 	self.aivar[AIV_Partymember] = TRUE;
 
-	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Pilars Bruder wurde von Goblins entführt. Wir werden der Blutspur folgen, um ihn zu finden. Luis wird währenddessen in der Stadt mitteilen, was hier vor sich geht.");
+	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Pilar's brother was kidnapped by goblins. We'll follow the blood trail to find him. Meanwhile, Luis will be in town telling us what's going on.");
 
 	Wld_InsertNpc	(Mod_7720_OUT_Chad_EIS, "EIS_415");
 
@@ -106,14 +106,14 @@ FUNC INT Info_Mod_Pilar_AtHut2_Condition()
 
 FUNC VOID Info_Mod_Pilar_AtHut2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_00"); //Anscheinend haben sich die Goblins ein neues Lager gebaut. Irgendwie komisch.
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut2_15_01"); //Warum ist das komisch?
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_02"); //Das die Goblins so etwas das letzte mal gebaut haben ist schon eine Ewigkeit her.
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_03"); //Damals lebte der Dämonenbeschwörer noch unter ihnen.
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut2_15_04"); //Konnte dieser "Dämonenbeschwörer" wirklich Magie anwenden?
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_05"); //Nein, so klug war er auch wieder nicht. Er hat aber Rituale durchgeführt, die aber nie etwas bewirkt haben.
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut2_15_06"); //Gut, dann dürften die paar Goblins für uns ja kein Problem sein. Lass uns angreifen.
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_07"); //Ok, geh du vor.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_00"); //Apparently, the goblins have built themselves a new camp. Kind of weird.
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut2_15_01"); //Why is that funny?
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_02"); //That the goblins built something like this last time was a long time ago.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_03"); //At that time, the demon charmer was still among them.
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut2_15_04"); //Could this demon summoner really use magic?
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_05"); //No, he wasn't that smart. But he has performed rituals that have never made a difference.
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut2_15_06"); //Well, then the few goblins shouldn't be a problem for us. Let's attack.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut2_01_07"); //Okay, you go ahead.
 
 	AI_StopProcessInfos	(self);
 
@@ -141,16 +141,16 @@ FUNC INT Info_Mod_Pilar_AtHut3_Condition()
 
 FUNC VOID Info_Mod_Pilar_AtHut3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_00"); //Nein ... diese verfluchten Monster haben meinen Bruder getötet. Warum konnten wir ihn nicht retten?!
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_01"); //Das sieht mir hier aber nicht so aus, als hätten die ihn zum Spaß getötet.
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_02"); //Das sieht mir eher nach einem Opfer aus!
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_03"); //Was haben diese Monster vor? Warum brauchen sie ein Opfer?
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_04"); //Vielleicht haben sie ihn geopfert, um jemanden anderen wieder zu erwecken.
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_05"); //Ich hab da so eine Befürchtung. Ich habe mich immer schon gewundert, warum diese Monster einen Friedhof haben.
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_06"); //Was, wenn sie meinen Bruder geopfert haben, um ihre Freunde wieder zu erwecken?!
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_07"); //Wenn das wirklich passiert ist, muss jemand die Stadt darüber informieren.
-	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_08"); //Ich werde mich zum Friedhof begeben und du gibst in der Stadt Bescheid. Wir treffen uns dann später wieder.
-	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_09"); //Gut, viel Glück!
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_00"); //No... those damn monsters killed my brother. Why couldn't we save him?!
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_01"); //It doesn't look to me like they killed him for fun.
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_02"); //Looks like a victim to me!
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_03"); //What are these monsters up to? Why do they need a sacrifice?
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_04"); //Maybe they sacrificed him to reawaken someone else.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_05"); //I'm so worried about you. I've always wondered why these monsters have a graveyard.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_06"); //What if they sacrificed my brother to reawaken their friends?!
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_07"); //If that's what really happened, someone has to let the city know.
+	AI_Output(hero, self, "Info_Mod_Pilar_AtHut3_15_08"); //I'll go to the cemetery and you let me know in town. We'll meet again later.
+	AI_Output(self, hero, "Info_Mod_Pilar_AtHut3_01_09"); //Well, good luck!
 
 	AI_StopProcessInfos	(self);
 
@@ -158,7 +158,7 @@ FUNC VOID Info_Mod_Pilar_AtHut3_Info()
 
 	self.aivar[AIV_Partymember] = FALSE;
 
-	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Pilar wird in die Stadt gehen und Verstärkung holen. Währenddessen werde ich auf dem Friedhof nach dem Rechten sehen.");
+	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Pilar will go into town and get some backup. Meanwhile, I'll check the cemetery.");
 
 	Wld_InsertNpc	(Gobbo_Skeleton, "FRIEDHOFF_7");
 	Wld_InsertNpc	(Gobbo_Skeleton, "FRIEDHOFF_7");

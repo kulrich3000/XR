@@ -1,7 +1,7 @@
 instance Mod_7558_STRF_Straefling_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Sträfling"; 
+	name 		= "convict"; 
 	guild 		= GIL_STRF;
 	id 			= 7558;
 	voice 		= 8;

@@ -15,18 +15,18 @@ FUNC INT Info_Mod_Melvin_Hi_Condition()
 
 FUNC VOID Info_Mod_Melvin_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_29_00"); //Hey, du, du ... Was willst du hier?
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_29_00"); //Hey, you, you-- What are you doing here?
 
 	Info_ClearChoices	(Info_Mod_Melvin_Hi);
 
-	Info_AddChoice	(Info_Mod_Melvin_Hi, "Das Lager hier ausräuchern, wonach sieht's denn sonst aus?", Info_Mod_Melvin_Hi_B);
-	Info_AddChoice	(Info_Mod_Melvin_Hi, "Ich sehe mich nur um.", Info_Mod_Melvin_Hi_A);
+	Info_AddChoice	(Info_Mod_Melvin_Hi, "Smoke out the camp here, what else does it look like?", Info_Mod_Melvin_Hi_B);
+	Info_AddChoice	(Info_Mod_Melvin_Hi, "I'm just looking around.", Info_Mod_Melvin_Hi_A);
 };
 
 FUNC VOID Info_Mod_Melvin_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Hi_B_15_00"); //Das Lager hier ausräuchern, wonach sieht's denn sonst aus?
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_B_29_01"); //Genau das hab' ich befürchtet. Los, Männer, macht ihn kalt!
+	AI_Output(hero, self, "Info_Mod_Melvin_Hi_B_15_00"); //Smoke out the camp here, what else does it look like?
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_B_29_01"); //That's what I was afraid of. Come on, men, kill him!
 
 	Info_ClearChoices	(Info_Mod_Melvin_Hi);
 
@@ -37,27 +37,27 @@ FUNC VOID Info_Mod_Melvin_Hi_B()
 
 FUNC VOID Info_Mod_Melvin_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Hi_A_15_00"); //Ich sehe mich nur um.
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_A_29_01"); //Das ist aber schlecht. Wir, äh, wollen lieber nicht entdeckt werden.
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_A_29_02"); //Das heißt, weil du jetzt ja weißt, wo wir zu finden sind, musst du unser Komplize werden. Sonst könntest du uns ja verpfeifen.
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_A_29_03"); //Und das wiederum bedeutet, dass du dem Bauern sein Korn stehlen musst.
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_A_29_04"); //Das brauchen wir nämlich. Verstanden, äh, oder gibt's noch Fragen?
+	AI_Output(hero, self, "Info_Mod_Melvin_Hi_A_15_00"); //I'm just looking around.
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_A_29_01"); //Well, that's bad. We'd rather not be discovered.
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_A_29_02"); //That is, because you now know where to find us, you must become our accomplice. Otherwise, you might as well blow the whistle on us.
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_A_29_03"); //And that means you have to steal the farmer's grain.
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_A_29_04"); //That's what we need. Got that, uh, or are there any questions?
 
 	Info_ClearChoices	(Info_Mod_Melvin_Hi);
 
-	Info_AddChoice	(Info_Mod_Melvin_Hi, "Was wollt ihr denn damit anstellen?", Info_Mod_Melvin_Hi_D);
-	Info_AddChoice	(Info_Mod_Melvin_Hi, "Woher bekomme ich das Korn?", Info_Mod_Melvin_Hi_C);
+	Info_AddChoice	(Info_Mod_Melvin_Hi, "What are you gonna do with it?", Info_Mod_Melvin_Hi_D);
+	Info_AddChoice	(Info_Mod_Melvin_Hi, "Where do I get the grain from?", Info_Mod_Melvin_Hi_C);
 };
 
 FUNC VOID Info_Mod_Melvin_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Hi_D_15_00"); //Was wollt ihr denn damit anstellen?
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_D_29_01"); //Das brauchen wir für, na ja, fürn Mittel, das wir uns basteln wollen. (Pause) Wir wollen uns halt ein bisschen Freudenspender selbst machen, kapiert?
-	AI_Output(hero, self, "Info_Mod_Melvin_Hi_D_15_02"); //Mit Korn ...?
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_D_29_03"); //Ja, genau, mit Korn. Wir haben da so ein Rezept gefunden.
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_D_29_04"); //Alle anderen Zutaten haben wir schon, Scavengerdung, Schnaps und drei Fliegenpilze.
-	AI_Output(hero, self, "Info_Mod_Melvin_Hi_D_15_05"); //Und ihr meint, dass das funktioniert?
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_D_29_06"); //Äh, sicher. Halluzinationen garantiert, steht auf dem Rezept.
+	AI_Output(hero, self, "Info_Mod_Melvin_Hi_D_15_00"); //What are you gonna do with it?
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_D_29_01"); //That's what we need for, well, for the means we want to devise. (pause) We just want to make ourselves a little delights, you know what I mean?
+	AI_Output(hero, self, "Info_Mod_Melvin_Hi_D_15_02"); //With grain?
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_D_29_03"); //That's right, with grain. We found a recipe like that.
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_D_29_04"); //We already have all the other ingredients, scavengerdung, schnapps and three fly agaric mushrooms.
+	AI_Output(hero, self, "Info_Mod_Melvin_Hi_D_15_05"); //And you think that's gonna work?
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_D_29_06"); //Uh, sure. Hallucinations guaranteed, it's on the prescription.
 
 	Mod_REL_Korndiebe += 1;
 
@@ -65,7 +65,7 @@ FUNC VOID Info_Mod_Melvin_Hi_D()
 	{
 		Info_ClearChoices	(Info_Mod_Melvin_Hi);
 
-		Info_AddChoice	(Info_Mod_Melvin_Hi, "Woher bekomme ich das Korn?", Info_Mod_Melvin_Hi_C);
+		Info_AddChoice	(Info_Mod_Melvin_Hi, "Where do I get the grain from?", Info_Mod_Melvin_Hi_C);
 	}
 	else
 	{
@@ -75,12 +75,12 @@ FUNC VOID Info_Mod_Melvin_Hi_D()
 
 FUNC VOID Info_Mod_Melvin_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Hi_C_15_00"); //Woher bekomme ich das Korn?
-	AI_Output(self, hero, "Info_Mod_Melvin_Hi_C_29_01"); //Alles, was wir brauchen, steht bei Erhard im Haus. Drei Säcke sollten reichen.
+	AI_Output(hero, self, "Info_Mod_Melvin_Hi_C_15_00"); //Where do I get the grain from?
+	AI_Output(self, hero, "Info_Mod_Melvin_Hi_C_29_01"); //Everything we need is in the house at Erhard's. Three bags should do it.
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_KORNDIEBE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_KORNDIEBE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_KORNDIEBE, "Der Räuber Melvin braucht drei Säcke Korn aus dem Haus des Bauern Erhard für ein ominöses Mittel, das in der Wirkung Freudenspender ähneln soll.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_KORNDIEBE, "The robber Melvin needs three sacks of grain from the house of the farmer Erhard for an ominous agent, which is said to resemble a giver of joy.");
 
 	Mod_REL_Korndiebe += 1;
 
@@ -88,7 +88,7 @@ FUNC VOID Info_Mod_Melvin_Hi_C()
 	{
 		Info_ClearChoices	(Info_Mod_Melvin_Hi);
 
-		Info_AddChoice	(Info_Mod_Melvin_Hi, "Was wollt ihr denn damit anstellen?", Info_Mod_Melvin_Hi_D);
+		Info_AddChoice	(Info_Mod_Melvin_Hi, "What are you gonna do with it?", Info_Mod_Melvin_Hi_D);
 	}
 	else
 	{
@@ -104,7 +104,7 @@ INSTANCE Info_Mod_Melvin_Korndiebe (C_INFO)
 	information	= Info_Mod_Melvin_Korndiebe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Bauer hat kein Korn mehr.";
+	description	= "The farmer's out of grain.";
 };
 
 FUNC INT Info_Mod_Melvin_Korndiebe_Condition()
@@ -118,10 +118,10 @@ FUNC INT Info_Mod_Melvin_Korndiebe_Condition()
 
 FUNC VOID Info_Mod_Melvin_Korndiebe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Korndiebe_15_00"); //Der Bauer hat kein Korn mehr.
-	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe_29_01"); //Hä, wie ist das möglich? Müssen wir jetzt bis zur nächsten Ernte warten? Was sollen wir denn so lange machen?
-	AI_Output(hero, self, "Info_Mod_Melvin_Korndiebe_15_02"); //Sucht einfach ein neues Rezept.
-	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe_29_03"); //Ja, das ist gut. (laut) Jungs, habt ihr das gehört? Wir suchen nach einem anderen Rezept!
+	AI_Output(hero, self, "Info_Mod_Melvin_Korndiebe_15_00"); //The farmer's out of grain.
+	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe_29_01"); //Huh, how is that possible? Do we have to wait until the next harvest now? What are we supposed to do for so long?
+	AI_Output(hero, self, "Info_Mod_Melvin_Korndiebe_15_02"); //Just find a new recipe.
+	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe_29_03"); //Yeah, that's good. Did you guys hear that? We're looking for another recipe!
 
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_KORNDIEBE, LOG_SUCCESS);
 
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Melvin_Korndiebe2 (C_INFO)
 	information	= Info_Mod_Melvin_Korndiebe2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Korn.";
+	description	= "I got the grain.";
 };
 
 FUNC INT Info_Mod_Melvin_Korndiebe2_Condition()
@@ -153,14 +153,14 @@ FUNC INT Info_Mod_Melvin_Korndiebe2_Condition()
 
 FUNC VOID Info_Mod_Melvin_Korndiebe2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Korndiebe2_15_00"); //Ich habe das Korn.
+	AI_Output(hero, self, "Info_Mod_Melvin_Korndiebe2_15_00"); //I got the grain.
 
 	B_GiveInvItems	(hero, self, ItMi_Kornballen, 3);
 
-	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe2_29_01"); //Sehr gut. Äh, wir werden dann also jetzt den Trank brauen.
-	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe2_29_02"); //Wenn du morgen wiederkommst, kannst du auch einen Schluck haben.
+	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe2_29_01"); //Very good. Very good. Uh, so now we're gonna brew the potion.
+	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe2_29_02"); //If you come back tomorrow, you might as well have a sip.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_KORNDIEBE, "Ich habe das Korn gestohlen und kann mir einen Teil des Trankes als Belohnung abholen, wenn ich das nächste Mal vorbei komme.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_KORNDIEBE, "I have stolen the grain and can collect some of the potion as a reward the next time I pass by.");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_KORNDIEBE, LOG_SUCCESS);
 
 	B_GivePlayerXP	(100);
@@ -197,7 +197,7 @@ FUNC INT Info_Mod_Melvin_Korndiebe3_Condition()
 
 FUNC VOID Info_Mod_Melvin_Korndiebe3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe3_29_00"); //Hier ist das gute Zeug. Ist ein bisschen stark geworden, glaube ich, wir haben es noch nicht probiert.
+	AI_Output(self, hero, "Info_Mod_Melvin_Korndiebe3_29_00"); //Here's the good stuff. Has become a bit strong, I think we haven't tried it yet.
 
 	B_GiveInvItems	(self, hero, ItPo_FreudenspenderSuppe, 1);
 };
@@ -210,7 +210,7 @@ INSTANCE Info_Mod_Melvin_Frauenkleider (C_INFO)
 	information	= Info_Mod_Melvin_Frauenkleider_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was trägst du denn da?";
+	description	= "What are you wearing?";
 };
 
 FUNC INT Info_Mod_Melvin_Frauenkleider_Condition()
@@ -225,17 +225,17 @@ FUNC INT Info_Mod_Melvin_Frauenkleider_Condition()
 
 FUNC VOID Info_Mod_Melvin_Frauenkleider_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_00"); //Was trägst du denn da?
-	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider_29_01"); //Des Diebes neue Kleider. Hübsch, nicht?
-	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_02"); //Ja, schon, aber die Eigentümerin hätte die Kleider gern zurück.
-	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider_29_03"); //(entsetzt) Nein! Ich habe sie mir, äh, hart erarbeitet! Das sind jetzt meine!
-	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_04"); //Meinst du nicht, du machst dich damit zum Gespött der Leute?
-	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider_29_05"); //Wieso? Sind doch schöne Kleider!
-	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_06"); //(zu sich selbst) Da fällt mir was ein. Gleich mal notieren.
-	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_07"); //(laut) Weiß auch nicht, wie ich darauf gekommen bin.
-	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider_29_08"); //Siehst du. Äh.
+	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_00"); //What are you wearing?
+	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider_29_01"); //The thief's new clothes. Pretty, isn't it?
+	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_02"); //Yes, but the owner would like the clothes back.
+	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider_29_03"); //(displaced) No! I' ve, uh, worked hard for it! They're mine now!
+	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_04"); //Don't you think you're making yourself a laughing stock?
+	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider_29_05"); //Why? Nice dresses, aren't they?
+	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_06"); //I'll think of something. Make a note of it.
+	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider_15_07"); //I don't know how I figured that out.
+	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider_29_08"); //You see? Uh.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Vielleicht lässt Melvin von den Kleidern, wenn seine Kameraden ihn auslachen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Maybe when his comrades are laughing at him, Melvin will let the clothes off.");
 };
 
 INSTANCE Info_Mod_Melvin_Frauenkleider2 (C_INFO)
@@ -246,7 +246,7 @@ INSTANCE Info_Mod_Melvin_Frauenkleider2 (C_INFO)
 	information	= Info_Mod_Melvin_Frauenkleider2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Brauchst du die Kleider noch?";
+	description	= "Do you still need the clothes?";
 };
 
 FUNC INT Info_Mod_Melvin_Frauenkleider2_Condition()
@@ -262,9 +262,9 @@ FUNC INT Info_Mod_Melvin_Frauenkleider2_Condition()
 
 FUNC VOID Info_Mod_Melvin_Frauenkleider2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider2_15_00"); //Brauchst du die Kleider noch?
-	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider2_29_01"); //Ich habe mir überlegt, dass ich, äh, doch lieber wieder 'ne Hose anziehe. Ist irgendwie bequemer.
-	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider2_29_02"); //Mach mit den Kleidern, was du willst.
+	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider2_15_00"); //Do you still need the clothes?
+	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider2_29_01"); //I was wondering if I'd rather, uh, put some pants on again. It's kinda more comfortable.
+	AI_Output(self, hero, "Info_Mod_Melvin_Frauenkleider2_29_02"); //Do whatever you want with the clothes.
 
 	AI_UnequipArmor	(self);
 
@@ -272,9 +272,9 @@ FUNC VOID Info_Mod_Melvin_Frauenkleider2_Info()
 
 	B_GiveInvItems	(self, hero, ItMi_Kleiderkoffer, 1);
 
-	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider2_15_03"); //Das werde ich.
+	AI_Output(hero, self, "Info_Mod_Melvin_Frauenkleider2_15_03"); //I will, I will.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Ich muss Elvira nun ihre Kleider zurückbringen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "I must now return her clothes to Elvira.");
 };
 
 INSTANCE Info_Mod_Melvin_Schutzbeduerftig (C_INFO)
@@ -285,7 +285,7 @@ INSTANCE Info_Mod_Melvin_Schutzbeduerftig (C_INFO)
 	information	= Info_Mod_Melvin_Schutzbeduerftig_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Du zitterst ja. Ist dir kalt?";
+	description 	= "You're trembling. Are you cold?";
 };                       
 
 FUNC INT Info_Mod_Melvin_Schutzbeduerftig_Condition()
@@ -300,12 +300,12 @@ FUNC INT Info_Mod_Melvin_Schutzbeduerftig_Condition()
 
 FUNC VOID Info_Mod_Melvin_Schutzbeduerftig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig_15_00"); //Du zitterst ja. Ist dir kalt?
-	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig_29_01"); //(bibbernd) Kalt? Äh, nein. Du würdest auch b-b-bibbern, wenn du die Nächte hier miterleben würdest.
-	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig_15_02"); //Was ist denn los?
-	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig_29_03"); //Vom Friedhof her kommt ein Gestöhne und Gejammere, das noch sch-schlimmer ist als bei meiner, äh, Großmutter.
-	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig_29_04"); //Wahrscheinlich brechen die Zombies allesamt aus ihren Gräbern und planen, wie sie uns am besten auffressen können!
-	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig_15_05"); //Das denke ich auch.
+	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig_15_00"); //You're trembling. Are you cold?
+	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig_29_01"); //Cold? Uh, no. You'd be b-b-bibbering, too, if you were to witness the nights here.
+	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig_15_02"); //What's going on?
+	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig_29_03"); //From the cemetery comes a moaning and moaning, which is even worse than with my, uh, grandmother.
+	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig_29_04"); //Probably the zombies all break out of their graves and plan how best to eat us up!
+	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig_15_05"); //That's what I think.
 };
 
 INSTANCE Info_Mod_Melvin_Schutzbeduerftig2 (C_INFO)
@@ -316,7 +316,7 @@ INSTANCE Info_Mod_Melvin_Schutzbeduerftig2 (C_INFO)
 	information	= Info_Mod_Melvin_Schutzbeduerftig2_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Der Friedhof ist wieder still.";
+	description 	= "The cemetery's quiet again.";
 };                       
 
 FUNC INT Info_Mod_Melvin_Schutzbeduerftig2_Condition()
@@ -330,11 +330,11 @@ FUNC INT Info_Mod_Melvin_Schutzbeduerftig2_Condition()
 
 FUNC VOID Info_Mod_Melvin_Schutzbeduerftig2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig2_15_00"); //Der Friedhof ist wieder still.
-	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig2_29_01"); //Ah. Oh. Äh, danke. Hast du die Invasionsarmee aus Zombies ganz allein besiegt?
-	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig2_15_02"); //Selbstredend.
-	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig2_29_03"); //Respekt, Mann. So einen wie, äh, dich, könnte ich gut in meiner Truppe gebrauchen.
-	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig2_15_04"); //Lass mal gut sein.
+	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig2_15_00"); //The cemetery's quiet again.
+	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig2_29_01"); //Ah. Oh. Uh, thanks. Did you defeat the invasion army of zombies all by yourself?
+	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig2_15_02"); //That goes without saying.
+	AI_Output(self, hero, "Info_Mod_Melvin_Schutzbeduerftig2_29_03"); //Respect, man. I could use a guy like, uh, you in my squad.
+	AI_Output(hero, self, "Info_Mod_Melvin_Schutzbeduerftig2_15_04"); //Let's cut the crap.
 
 	B_GivePlayerXP	(50);
 };
@@ -347,7 +347,7 @@ INSTANCE Info_Mod_Melvin_Bierhexen (C_INFO)
 	information	= Info_Mod_Melvin_Bierhexen_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich hätte da eine kurze Frage an dich.";
+	description 	= "I have a short question for you.";
 };                       
 
 FUNC INT Info_Mod_Melvin_Bierhexen_Condition()
@@ -370,34 +370,34 @@ FUNC VOID Info_Mod_Melvin_Bierhexen_Info()
 	TRIA_Invite(Raeuber03);
 	TRIA_Start();
 	
-	AI_Output(hero, self, "Info_Mod_Melvin_Bierhexen_15_00"); //Ich hätte da eine kurze Frage an dich.
+	AI_Output(hero, self, "Info_Mod_Melvin_Bierhexen_15_00"); //I have a short question for you.
 
 	TRIA_Next(Melvin);
 	
-	AI_Output(self, hero, "Info_Mod_Melvin_Bierhexen_29_01"); //Na klar, äh, wenn's schnell geht.
-	AI_Output(hero, self, "Info_Mod_Melvin_Bierhexen_15_02"); //Hat einer von euch auf Erhards Gerste gepinkelt?
-	AI_Output(self, hero, "Info_Mod_Melvin_Bierhexen_29_03"); //Hä? Ich will das doch klauen, wieso sollte ich dann draufpinkeln?
-	AI_Output(hero, self, "Info_Mod_Melvin_Bierhexen_15_04"); //Keine Ahnung. Irgendeiner hat's jedenfalls getan.
-	AI_Output(hero, self, "Info_Mod_Melvin_Bierhexen_15_05"); //Und der Braumeister hat aus dem Korn Bier gebraut.
-	AI_Output(self, hero, "Info_Mod_Melvin_Bierhexen_29_06"); //Ist ja eklig! Hey, Jungs, hat einer von euch auf die Gerste vom Braumeister gepisst?
+	AI_Output(self, hero, "Info_Mod_Melvin_Bierhexen_29_01"); //Sure, uh, if it's fast.
+	AI_Output(hero, self, "Info_Mod_Melvin_Bierhexen_15_02"); //Any of you guys peed on Erhard's barley?
+	AI_Output(self, hero, "Info_Mod_Melvin_Bierhexen_29_03"); //Huh? I want to steal this, why would I pee on it?
+	AI_Output(hero, self, "Info_Mod_Melvin_Bierhexen_15_04"); //I don't know about that. Someone did it anyway.
+	AI_Output(hero, self, "Info_Mod_Melvin_Bierhexen_15_05"); //And the master brewer brewed beer from the grain.
+	AI_Output(self, hero, "Info_Mod_Melvin_Bierhexen_29_06"); //It's disgusting! Hey, guys, did one of you piss on the brewmaster's barley?
 
 	TRIA_Next(Raeuber01);
 	
-	AI_Output(self, hero, "Info_Mod_Raeuber01_Bierhexen_08_07"); //Ich war's nicht!
+	AI_Output(self, hero, "Info_Mod_Raeuber01_Bierhexen_08_07"); //It wasn't me!
 
 	TRIA_Next(Raeuber02);
 	
-	AI_Output(self, hero, "Info_Mod_Raeuber02_Bierhexen_06_08"); //Bist du dumm?
+	AI_Output(self, hero, "Info_Mod_Raeuber02_Bierhexen_06_08"); //Are you stupid?
 
 	TRIA_Next(Raeuber03);
 	
-	AI_Output(self, hero, "Info_Mod_Raeuber03_Bierhexen_06_09"); //Das war doch Leonhard.
+	AI_Output(self, hero, "Info_Mod_Raeuber03_Bierhexen_06_09"); //That was Leonhard.
 	AI_Output(hero, self, "Info_Mod_Raeuber03_Bierhexen_15_10"); //Leonhard?
-	AI_Output(self, hero, "Info_Mod_Raeuber03_Bierhexen_06_11"); //Hat's mir jedenfalls stolz erzählt. Als ob das so was Besonderes wäre.
-	AI_Output(hero, self, "Info_Mod_Raeuber03_Bierhexen_15_12"); //Wo finde ich Leonhard?
-	AI_Output(self, hero, "Info_Mod_Raeuber03_Bierhexen_06_13"); //Der lungert in den Gassen von Khorata rum. Hat halt nicht so ein tolles Versteck wie wir.
+	AI_Output(self, hero, "Info_Mod_Raeuber03_Bierhexen_06_11"); //Told me proudly anyway. Like it's something special.
+	AI_Output(hero, self, "Info_Mod_Raeuber03_Bierhexen_15_12"); //Where can I find Leonhard?
+	AI_Output(self, hero, "Info_Mod_Raeuber03_Bierhexen_06_13"); //He's loitering in the alleys of Khorata. Doesn't have a great hideout like us.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "Nach Angaben eines Kumpanen von Melvin ist Leonhard in Khorata der Übeltäter.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "According to a friend of Melvin's, Leonhard is the culprit in Khorata.");
 
 	TRIA_Finish();
 
@@ -412,7 +412,7 @@ INSTANCE Info_Mod_Melvin_Freudenspender (C_INFO)
 	information	= Info_Mod_Melvin_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich hab hier Freudenspender ...";
+	description 	= "I'm happy to have you here...";
 };                       
 
 FUNC INT Info_Mod_Melvin_Freudenspender_Condition()
@@ -427,8 +427,8 @@ FUNC INT Info_Mod_Melvin_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Melvin_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melvin_Freudenspender_15_00"); //Ich hab hier Freudenspender ...
-	AI_Output(self, hero, "Info_Mod_Melvin_Freudenspender_29_01"); //Mensch, wie geil! Ich, äh, würd wohl was nehmen.
+	AI_Output(hero, self, "Info_Mod_Melvin_Freudenspender_15_00"); //I'm happy to have you here...
+	AI_Output(self, hero, "Info_Mod_Melvin_Freudenspender_29_01"); //Wow, how awesome! I' d, uh, take something.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

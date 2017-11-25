@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Argez_XW_Vorsicht_Condition()
 
 FUNC VOID Info_Mod_Argez_XW_Vorsicht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Vorsicht_01_00"); //Pass auf, das ist eine Falle!
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Vorsicht_01_00"); //Look, it's a trap!
 
 	AI_StopProcessInfos	(self);
 
@@ -42,27 +42,27 @@ FUNC INT Info_Mod_Argez_XW_Gefangen_Condition()
 
 FUNC VOID Info_Mod_Argez_XW_Gefangen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_00"); //Danke, dass du gekommen bist.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_01"); //So viel hat es ja jetzt nicht gebracht.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_02"); //Nun ja.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_03"); //Wieso warst du markiert?
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_04"); //Erinnerst du dich, dass das Tier in dem Moment, in dem ich zauberte, weglief?
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_05"); //Ich habe danach nur geschaut, ob du von der Markierung befreit warst, und das warst du. Deswegen habe ich mir keine weiteren Gedanken gemacht.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_06"); //In Wahrheit aber ist die Markierung nicht auf das Tier übergesprungen, sondern auf mich.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_07"); //Das tut mir Leid.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_08"); //So ist es eben.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_09"); //Wie soll ich dich hier rausschaffen? Ich kann mich jederzeit teleportieren, aber an dich komme ich nicht heran.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_10"); //(lacht freudlos) Das wird nicht möglich sein. Aus Xeres' Reich führt kein Teleport. Diese Welt ist vollkommen abgeschirmt von der unsrigen.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_11"); //Wie sollen wir es dann schaffen zu fliehen?
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_12"); //Wir müssten ausbrechen. Und dann nach vorne zum Tor. Unmöglich.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_13"); //Was ist denn mit dir los? Du bist doch sonst nicht so hoffnungslos.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_14"); //Das ... das kann ich dir nicht sagen. Aber sei versichert, dass meine düstere Stimmung absolut gerechtfertigt ist.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_15"); //Na gut, dann steck eben den Kopf in den Sand. Ich werde mich nach einer Fluchtmöglichkeit umschauen.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_16"); //Viel Erfolg.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_00"); //Thank you for coming.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_01"); //It hasn't done that much good now.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_02"); //Well, yeah.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_03"); //Why were you tagged?
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_04"); //Do you remember that the animal ran away from me at the moment I was doing magic?
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_05"); //I was just checking to see if you were free of the marker, and that was you. That's why I didn't think about it any more.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_06"); //In reality, however, the marking did not jump over to the animal, but to me.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_07"); //I'm sorry to hear that.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_08"); //That's the way it is.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_09"); //How am I supposed to get you out of here? I can teleport at any time, but I can't get to you.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_10"); //(laughs joylessly) That won't be possible. There is no teleport from Xeres' kingdom. This world is completely shielded from our own.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_11"); //Then how are we supposed to escape?
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_12"); //We'd have to escape. And then forward to the gate. Impossible.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_13"); //What's the matter with you? You're not usually so hopeless.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_14"); //That... I can't tell you that. But rest assured that my gloomy mood is perfectly justified.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen_15_15"); //All right, put your head in the sand. I'm going to look for an escape route.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen_01_16"); //Good luck.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_ARGEZ, "Ich bin neben Argez in einer Zelle gefangen und will fliehen. Allzu viele Möglichkeiten stehen da nicht zur Auswahl.");
+	B_LogEntry	(TOPIC_MOD_ARGEZ, "I'm trapped next to Argez in a cell trying to escape. Too many possibilities are not available.");
 
 	Wld_InsertNpc	(Monster_11074_Leprechaun_XW, "KNASTGANG_02");
 };
@@ -87,21 +87,21 @@ FUNC INT Info_Mod_Argez_XW_Gefangen2_Condition()
 
 FUNC VOID Info_Mod_Argez_XW_Gefangen2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_00"); //Meinst du nicht, dass wir vorsichtig sein sollten? Wenn es sich um einen Test, ein Spiel dieses Leprechaun handelt?
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen2_15_01"); //Was haben wir zu verlieren? Das ist vielleicht unsere letzte Chance.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_02"); //Na schön.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen2_15_03"); //Bist du geschwächt? Schaffst du den ganzen Weg zurück?
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_04"); //Das wird hoffentlich gar nicht nötig sein.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_05"); //Ich bin mir sicher, dass Xeres eine eigene Teleportplattform besitzt, mit der er zum Tor des Gefängnisses reisen kann.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_06"); //Ein Teleport innerhalb dieser Welt ist immerhin möglich, und ihm wird während der tausend Jahre bestimmt die Idee gekommen sein, dass es nützlich sein könnte, in Sekundenschnelle am Eingang des Gefängnisses zu stehen.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen2_15_07"); //Dann lass uns seine privaten Gemächer stürmen.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_08"); //Aber keine Umwege. Keine Zeit für Heldentaten.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_00"); //Don't you think we should be careful? If it's a test, a game of this leprechaun?
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen2_15_01"); //What do we have to lose? This may be our last chance.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_02"); //All right, then.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen2_15_03"); //Are you weakened? Can you make it all the way back?
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_04"); //I hope that won't be necessary.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_05"); //I am sure that Xeres has his own teleport platform, with which he can travel to the prison gate.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_06"); //A teleport within this world is at least possible, and he will certainly have come up with the idea that it could be useful to stand at the entrance of the prison in a matter of seconds.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Gefangen2_15_07"); //Then let's storm his private chambers.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Gefangen2_01_08"); //But no detours. No time for heroics.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "FLUCHT");
 
-	B_LogEntry	(TOPIC_MOD_ARGEZ, "Leprechaun hat den Zellenschlüssel fallen gelassen, sodass ich mich und Argez befreien konnte. Argez geht davon aus, dass Xeres eine private Teleportationsplattform in seinen Gemächern hat. Die gilt es nun zu finden und dieser verdammten Unterwelt wieder zu entrinnen.");
+	B_LogEntry	(TOPIC_MOD_ARGEZ, "Leprechaun dropped the cell key so I could free myself and Argez. Argez assumes that Xeres has a private teleportation platform in his chambers. It's time to find them and escape from this damned underworld.");
 };
 
 INSTANCE Info_Mod_Argez_XW_Ende (C_INFO)
@@ -112,7 +112,7 @@ INSTANCE Info_Mod_Argez_XW_Ende (C_INFO)
 	information	= Info_Mod_Argez_XW_Ende_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Argez, was machst du hier?";
+	description	= "Argez, what are you doing here?";
 };
 
 FUNC INT Info_Mod_Argez_XW_Ende_Condition()
@@ -125,50 +125,50 @@ FUNC INT Info_Mod_Argez_XW_Ende_Condition()
 
 FUNC VOID Info_Mod_Argez_XW_Ende_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_00"); //Argez, was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_01"); //Ich bin hergekommen, damit Xeres ein für alle Mal vom Antlitz der Erde getilgt werden kann.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_02"); //Dann warst du es also wirklich, der Xeres vor Äonen bannte ...
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_03"); //Ja, es stimmt.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_04"); //Daher auch dein Wissen um die alte Kultur ...
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_05"); //Wie dem auch sei, dein Eingreifen wird nicht mehr notwendig sein. Mit Uriziel konnte ich Xeres und seine Machtträger in die ewigen Jagdgründe schicken.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_06"); //Du täuschst dich.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_07"); //Den Schläfer magst du zwar wieder in die Zwischenwelt verbannt haben, ehe er erwachen konnte, und du magst den drei anderen Machtträgern ihre Seelensteine entrissen haben.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_08"); //Solange jedoch noch der letzte seiner Machtträger auf Erden wandelt, wird Xeres nie endgültig in die jenseitige Welt eingehen.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_09"); //Der fünfte Machtträger?
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_10"); //Die Magier waren nicht dazu in der Lage zu ergründen, ob er denn überhaupt existiert, gar, wo er sich befinden könnte. Was weißt du über ihn?
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_11"); //Alles! Ich habe mein Gedächtnis zurückerlangt, und die Ereignisse der Vergangenheit sind meinem Bewusstsein wieder zugänglich.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_12"); //Was für ein Wesen ist er? Wo befindet er sich?
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_13"); //Er steht direkt vor dir. Ich bin es!
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_14"); //Was?! Das ist unmöglich.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_15"); //Du warst es doch, der Xeres mit seinen Machtträgern einst in die Zwischenwelt verbannte ...
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_16"); //Ja! Ich bin ein missglücktes Geschöpf.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_17"); //Ich bin es, der nicht mit Xeres' Willen, sondern nur seiner Macht gespeist wurde.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_18"); //Ich bin es, von dessen Existenz Xeres' Schergen jegliches Zeugnis tilgen wollten, indem sie mir mein Gedächtnis raubten.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_19"); //Und ich bin es nun, der mit seinem Dasein unser aller Leben bedroht ...
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_20"); //Was soll das? Was willst du damit sagen?
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_21"); //Das weißt du ... Du wirst ihn erst endgültig vernichten können, wenn ich tot bin.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_22"); //Also beeil dich, bevor er sich erholt hat. Töte mich und bring der Welt den Frieden.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_23"); //Nein! Das kann ich nicht tun. Dieser Kampf hat schon zu viele Leben gekostet.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_24"); //Du musst! Andernfalls werde ich mich selbst opfern!
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_00"); //Argez, what are you doing here?
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_01"); //I came here so that Xeres could be erased from the face of the earth once and for all.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_02"); //So it was really you who banished Xeres from eons...
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_03"); //Yes, it's true.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_04"); //Hence your knowledge of the old culture...
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_05"); //However, your intervention will no longer be necessary. With Uriziel I was able to send Xeres and his power holders to the eternal hunting grounds.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_06"); //You're mistaken.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_07"); //Though you may have banished the sleeper back to the middle world before he could awaken, and you may have snatched away their soul stones from the other three powerbearers.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_08"); //However, as long as the last of his powerbearers is still walking on earth, Xeres will never enter the world beyond.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_09"); //The fifth power carrier?
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_10"); //The magicians were not able to find out if it even existed, even where it could be. What do you know about him?
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_11"); //Everything! I have regained my memory and the events of the past are again accessible to my consciousness.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_12"); //What kind of creature is he? Where is he located?
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_13"); //He's right in front of you. It's me!
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_14"); //What?! That's impossible.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_15"); //It was you who once exiled Xeres and his powerbearers to the middle world...
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_16"); //Yes! I am a failed creature.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_17"); //It is I who was fed not by Xeres' will, but only by his power.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_18"); //I am the one whose existence Xeres's henchmen wanted to erase any testimony by depriving me of my memory.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_19"); //And it is I who now, with his existence, threatens our lives...
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_20"); //What are you doing? What are you saying?
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_21"); //You know that.... You won't be able to destroy him permanently until I'm dead.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_22"); //So hurry up before he recovers. Kill me and bring peace to the world.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_15_23"); //No! I can't do that. This fight has already cost too many lives.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_01_24"); //You have to! Otherwise, I will sacrifice myself!
 
 	Info_ClearChoices	(Info_Mod_Argez_XW_Ende);
 
-	Info_AddChoice	(Info_Mod_Argez_XW_Ende, "Es muss doch eine andere Möglichkeit geben.", Info_Mod_Argez_XW_Ende_B);
-	Info_AddChoice	(Info_Mod_Argez_XW_Ende, "Na schön. Du hast es so gewollt.", Info_Mod_Argez_XW_Ende_A);
+	Info_AddChoice	(Info_Mod_Argez_XW_Ende, "There's gotta be another way.", Info_Mod_Argez_XW_Ende_B);
+	Info_AddChoice	(Info_Mod_Argez_XW_Ende, "All right, then. You asked for it.", Info_Mod_Argez_XW_Ende_A);
 };
 
 FUNC VOID Info_Mod_Argez_XW_Ende_B()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_00"); //Es muss doch eine andere Möglichkeit geben.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_01"); //Nein. Solange ich lebe, ist auch Xeres nicht vollständig tot.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_02"); //Xeres muss ja nicht unbedingt sterben.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_03"); //Wir könnten ihn wieder festsetzen. Diesmal ohne Hintertürchen. Er würde bis in alle Ewigkeit hier schmoren.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_04"); //Die Gefahr, dass Xeres irgendwie ausbrechen könnte, wäre damit immer vorhanden.
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_05"); //Er hätte es auch jetzt nach Tausenden von Jahren ohne die Foki nicht geschafft.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_06"); //(unschlüssig) Meinst du wirklich?
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_07"); //Ja. Du hast dir ein normales Leben verdient.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_08"); //Na gut. Lass es uns versuchen.
-	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_09"); //Sorge dafür, dass Xeres nicht aufsteht. Ich bereite den Teleport vor.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_00"); //There's gotta be another way.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_01"); //No. As long as I live, Xeres is not completely dead either.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_02"); //Xeres doesn't necessarily have to die.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_03"); //We could fix him again. No back doors this time. He would burn here forever.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_04"); //The danger that Xeres could somehow break out would always be there.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_05"); //He wouldn't have made it after thousands of years without the Foki.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_06"); //You really think so?
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_B_15_07"); //Yeah. You've earned a normal life.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_08"); //All right, all right. Let's give it a shot.
+	AI_Output(self, hero, "Info_Mod_Argez_XW_Ende_B_01_09"); //Make sure Xeres doesn't get up. I'm preparing the teleport.
 
 	Info_ClearChoices	(Info_Mod_Argez_XW_Ende);
 
@@ -182,7 +182,7 @@ FUNC VOID Info_Mod_Argez_XW_Ende_B()
 
 FUNC VOID Info_Mod_Argez_XW_Ende_A()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_A_15_00"); //Na schön. Du hast es so gewollt.
+	AI_Output(hero, self, "Info_Mod_Argez_XW_Ende_A_15_00"); //All right, then. You asked for it.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Argez_XW_Ende);

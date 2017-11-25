@@ -1,7 +1,7 @@
 INSTANCE Mod_7427_BDT_Bandit_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Räuber";
+	name 		= "bandit";
 	guild 		= GIL_STRF;
 	id 			= 7427;
 	voice 		= 03;

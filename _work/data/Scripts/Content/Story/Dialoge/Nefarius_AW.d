@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Nefarius_AW_Fokussuche (C_INFO)
 	information	= Info_Mod_Nefarius_AW_Fokussuche_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll mich wegen der Fokussuche bei dir melden.";
+	description	= "I'm supposed to check in with you about the focus search.";
 };
 
 FUNC INT Info_Mod_Nefarius_AW_Fokussuche_Condition()
@@ -19,36 +19,36 @@ FUNC INT Info_Mod_Nefarius_AW_Fokussuche_Condition()
 
 FUNC VOID Info_Mod_Nefarius_AW_Fokussuche_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_00"); //Ich soll mich wegen der Fokussuche bei dir melden.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_01"); //Ach ja, genau.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_02"); //Saturas hat überall herumgefragt, ob es nicht eine Möglichkeit gibt, dass er nicht zwei von uns mit dir ins Minental schicken muss.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_03"); //Und gerade kurz zuvor hatte ich etwas Spektakuläres in den Inschriften hier entdeckt.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_04"); //Wenn's mir hilft, immer raus damit.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_05"); //Das alte Volk konnte eine schwarze Perle so schleifen, dass sie als Prisma funktionierte.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_06"); //Aber eine schwarze Perle ist doch nicht durchsichtig!
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_07"); //Das Prisma galt auch nicht dem Licht, sondern der Magie.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_08"); //Der Zaubernde wirkte einen Spruch auf das Prisma, und bildlich gesehen wurde er in der Perle gebrochen und trat gestreut aus ihr aus.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_09"); //Diese Prismen konnten in vielen Disziplinen hilfreich sein, in der Schlacht ebenso wie beim Blumengießen.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_10"); //Aha ... Das soll bedeuten, mit einem richtig geschliffenen Prisma könnte ich einen Zauber in drei Teile brechen und somit die drei benötigten Magier simulieren?
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_11"); //Prinzipiell schon. Gegen den Schutzzauber allein würde das aber nicht helfen, da ja auch die Kraft des Zaubers gestreut wird.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_12"); //Aber die schwarze Perle hat viele mächtige, teils dunkle Eigenschaften.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_13"); //Und so gelang es dem alten Volk, das Prisma so herzustellen, dass es Magie aufnehmen konnte, ohne sie gleich wieder abzugeben.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_14"); //Das Verfahren muss Ähnlichkeiten haben zu dem, mit dem aus der schwarzen Perle Runen geschaffen werden.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_15"); //Gut, dann fasse ich das mal zusammen.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_16"); //Ich brauche eine schwarze Perle, die nicht nur zu einem Magieprisma geschliffen ist, sondern zusätzlich mit Zaubern aufgeladen werden kann.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_17"); //Es ist nur fraglich, ob überhaupt irgendwo steht, wie so etwas herzustellen ist.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_18"); //Richtig?
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_19"); //Mehr konnte ich bisher nicht herausfinden, aber ich bin mir sicher, es ist nur eine Frage der Zeit, bis ich auf die richtigen Inschriften stoße.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_20"); //Dann kann ich mir hier also so lange die Zeit vertreiben?
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_21"); //Meinetwegen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_22"); //Ach, noch was. Die Inschriften waren bebildert.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_23"); //Der Magier, der die schwarze Perle mit Magie fütterte, wurde von Bild zu Bild kleiner.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_24"); //Aber das ist wahrscheinlich nur eine Ungenauigkeit, die im Zuge des Meißelns entstanden ist.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_25"); //(murmelt) Na klasse ...
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_00"); //I'm supposed to check in with you about the focus search.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_01"); //Oh, yes, exactly.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_02"); //Saturas has asked everywhere if there is a possibility that he doesn't have to send two of us with you to the Minental.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_03"); //And just a short time before I had discovered something spectacular in the inscriptions here.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_04"); //If it helps me, I'll always get it out.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_05"); //The ancient people were able to grind a black pearl so that it worked as a prism.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_06"); //But a black pearl is not transparent!
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_07"); //The prism was also not about light, but about magic.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_08"); //The sorcerer cast a spell on the prism, and figuratively seen he was broken in the pearl and emerged from it scattered.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_09"); //These prisms could be helpful in many disciplines, both in battle and flowering.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_10"); //Aha... This means that with a properly cut prism, I could break a spell into three parts and simulate the three magicians I need?
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_11"); //In principle, yes. However, this would not help against the protection spell alone, since the power of the spell is also scattered.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_12"); //But the black pearl has many powerful, sometimes dark characteristics.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_13"); //And so the old people succeeded in making the prism in such a way that it could absorb magic without giving it up again.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_14"); //The procedure must have similarities to that with which runes are created from the black pearl.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_15"); //All right, let me get this straight.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_16"); //I need a black pearl, which is not only polished to a magic prism, but can also be charged with spells.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_17"); //It is only questionable whether there is any place at all where such a thing can be made.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_18"); //Right?
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_19"); //That's all I have been able to find out so far, but I'm sure it's only a matter of time before I come across the right inscriptions.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_20"); //So I can spend all this time here?
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_21"); //I don't care about him.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_22"); //Oh, one more thing. The inscriptions were illustrated.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_23"); //The magician who fed the black pearl with magic became smaller from picture to picture.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche_05_24"); //But this is probably only an inaccuracy that has arisen during the process of chiselling.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche_15_25"); //(mumbles) Well, great....
 
 	Log_CreateTopic	(TOPIC_MOD_MAGIEPRISMA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MAGIEPRISMA, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MAGIEPRISMA, "Laut dem alten Volk gibt es eine Möglichkeit, wie ich mehrere Magier vortäuschen kann. Ich brauche dafür eine schwarze Perle, die zu einem Prisma geschliffen ist. Nefarius ist auf der Suche nach einer Methode, wie dies zu bewerkstelligen ist. Ich kann mich so lange in den Ruinen umschauen.");
+	B_LogEntry	(TOPIC_MOD_MAGIEPRISMA, "According to the old people, there's one way I can fake multiple magicians. I need a black bead that is cut into a prism. Nefarius is looking for a way to do this. I can look around in the ruins for so long.");
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Nefarius_AW_Fokussuche2 (C_INFO)
 	information	= Info_Mod_Nefarius_AW_Fokussuche2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Prisma.";
+	description	= "I have the prism.";
 };
 
 FUNC INT Info_Mod_Nefarius_AW_Fokussuche2_Condition()
@@ -74,44 +74,44 @@ FUNC INT Info_Mod_Nefarius_AW_Fokussuche2_Condition()
 
 FUNC VOID Info_Mod_Nefarius_AW_Fokussuche2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche2_15_00"); //Ich habe das Prisma.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_05_01"); //Phänomenal! (eifrig) Darf ... darf ich es mal sehen?
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche2_15_00"); //I have the prism.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_05_01"); //Phenomenal! (cheery) May... can I see it?
 
 	Info_ClearChoices	(Info_Mod_Nefarius_AW_Fokussuche2);
 
-	Info_AddChoice	(Info_Mod_Nefarius_AW_Fokussuche2, "Nein.", Info_Mod_Nefarius_AW_Fokussuche2_B);
-	Info_AddChoice	(Info_Mod_Nefarius_AW_Fokussuche2, "Klar doch.", Info_Mod_Nefarius_AW_Fokussuche2_A);
+	Info_AddChoice	(Info_Mod_Nefarius_AW_Fokussuche2, "No.", Info_Mod_Nefarius_AW_Fokussuche2_B);
+	Info_AddChoice	(Info_Mod_Nefarius_AW_Fokussuche2, "Of course you do.", Info_Mod_Nefarius_AW_Fokussuche2_A);
 };
 
 FUNC VOID Info_Mod_Nefarius_AW_Fokussuche2_C()
 {
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_C_05_00"); //Mit dem Prisma sollte es nun möglich sein, den Schutzzauber der Fokussteine zu brechen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_C_05_01"); //Du musst lediglich das Prisma aufladen und dann auf den Fokusstein entleeren.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_C_05_02"); //Du machst das schon!
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_C_05_00"); //With the prism, it should now be possible to break the protection spell of the Focus Stones.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_C_05_01"); //All you have to do is charge the prism and empty it onto the focus stone.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_C_05_02"); //You'll be all right!
 
 	Info_ClearChoices	(Info_Mod_Nefarius_AW_Fokussuche2);
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich habe mein Prisma und kann damit den Schutzzauber brechen. Ich muss das Prisma nur mit Zaubersprüchen aufladen und dann auf die Foki entleeren. Klasse, dann kann es ja endlich losgehen.");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "I have my prism and can use it to break the protection spell. All I have to do is load the prism with spells and then empty it onto the focus. Great, so we can finally get started.");
 };
 
 FUNC VOID Info_Mod_Nefarius_AW_Fokussuche2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche2_B_15_00"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_B_05_01"); //Oh, schade. Aber wie du meinst.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche2_B_15_00"); //No.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_B_05_01"); //Oh, too bad. Whatever you say.
 
 	Info_Mod_Nefarius_AW_Fokussuche2_C();
 };
 
 FUNC VOID Info_Mod_Nefarius_AW_Fokussuche2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche2_A_15_00"); //Klar doch.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche2_A_15_00"); //Of course you do.
 
 	B_GiveInvItems	(hero, self, ItMi_Magieprisma, 1);
 
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_A_05_01"); //(begutachtend) Aha ... So, so ... Das ist ja interessant ...
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_A_05_02"); //Darf ich fragen, wie du daran gelangt bist?
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche2_A_15_03"); //Das willst du gar nicht wissen. Es war jede Menge Beliarmagie notwendig.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_A_05_04"); //(überrascht) Oh! Äh, nimm es doch mal besser zurück.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_A_05_01"); //(assessing) Uh-huh... So, so... That's interesting...
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_A_05_02"); //May I ask how you got it?
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_Fokussuche2_A_15_03"); //You don't want to know. A lot of Beliam magic was necessary.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_Fokussuche2_A_05_04"); //(surprised) Oh! Uh, why don't you take it back?
 
 	B_GiveInvItems	(self, hero, ItMi_Magieprisma, 1);
 
@@ -126,7 +126,7 @@ INSTANCE Info_Mod_Nefarius_AW_PrismaGeladen (C_INFO)
 	information	= Info_Mod_Nefarius_AW_PrismaGeladen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Prisma mit einem Zauberspruch geladen.";
+	description	= "I loaded the prism with a spell.";
 };
 
 FUNC INT Info_Mod_Nefarius_AW_PrismaGeladen_Condition()
@@ -139,14 +139,14 @@ FUNC INT Info_Mod_Nefarius_AW_PrismaGeladen_Condition()
 
 FUNC VOID Info_Mod_Nefarius_AW_PrismaGeladen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_00"); //Ich habe das Prisma mit einem Zauberspruch geladen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_PrismaGeladen_05_01"); //Es hat funktioniert! Bravo! (Pause) Das war noch nicht alles, was du sagen wolltest?
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_02"); //Ich weiß jetzt, was die mysteriöse Zeichnung an der Wand darstellen sollte.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_03"); //Der Zauber, der im Prisma verschwand ... ich habe das Gefühl, er hat mir einen Teil meiner Lebenskraft geraubt.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_04"); //Seitdem fühle ich mich kränklich und schwach.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_PrismaGeladen_05_05"); //Das ist äußerst bedenklich, zumal du das Prisma noch mit weiteren Sprüchen laden musst, damit es seine volle Wirkung entfaltet.
-	AI_Output(self, hero, "Info_Mod_Nefarius_AW_PrismaGeladen_05_06"); //Sei bloß vorsichtig damit! Wir können nur hoffen, dass die Energie, die dir geraubt wurde, zusammen mit den Zaubersprüchen wieder freigelassen wird.
-	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_07"); //Ansonsten bleibt auch nur noch meine fleischliche Hülle übrig...
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_00"); //I loaded the prism with a spell.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_PrismaGeladen_05_01"); //It worked! Bravo! (Pause) That's not all you wanted to say?
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_02"); //I now know what the mysterious drawing on the wall should represent.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_03"); //The magic that disappeared in the prism.... I have a feeling he's stolen some of my life force.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_04"); //Since then I feel sickly and weak.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_PrismaGeladen_05_05"); //This is extremely worrying, especially as you have to charge the prism with more sayings to make it work to its full effect.
+	AI_Output(self, hero, "Info_Mod_Nefarius_AW_PrismaGeladen_05_06"); //Be careful with that! We can only hope that the energy you have been robbed will be released together with the spells.
+	AI_Output(hero, self, "Info_Mod_Nefarius_AW_PrismaGeladen_15_07"); //Otherwise only my flesh remains...
 };
 
 INSTANCE Info_Mod_Nefarius_AW_Runen (C_INFO)
@@ -157,7 +157,7 @@ INSTANCE Info_Mod_Nefarius_AW_Runen (C_INFO)
 	information	= Info_Mod_Nefarius_AW_Runen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Unterweise mich (Runen erschaffen)";
+	description	= "Teach me (create runes)";
 };
 
 FUNC INT Info_Mod_Nefarius_AW_Runen_Condition ()
@@ -177,7 +177,7 @@ FUNC VOID Info_Mod_Nefarius_AW_Runen_Info ()
 {
 	var INT abletolearn;
 	abletolearn = 0;
-	AI_Output (other, self, "Info_Mod_Nefarius_AW_Runen_15_00"); //Unterweise mich.
+	AI_Output (other, self, "Info_Mod_Nefarius_AW_Runen_15_00"); //Teach me.
 	
 	Info_ClearChoices 	(Info_Mod_Nefarius_AW_Runen);
 	Info_AddChoice		(Info_Mod_Nefarius_AW_Runen, DIALOG_BACK, Info_Mod_Nefarius_AW_Runen_BACK);
@@ -283,7 +283,7 @@ FUNC VOID Info_Mod_Nefarius_AW_Runen_Info ()
 
 	if (abletolearn < 1)
 	{
-		AI_Output (self, other, "Info_Mod_Nefarius_AW_Runen_14_01"); //Es gibt nichts mehr, das ich dir beibringen könnte.
+		AI_Output (self, other, "Info_Mod_Nefarius_AW_Runen_14_01"); //There's nothing more I can teach you.
 	};
 };
 

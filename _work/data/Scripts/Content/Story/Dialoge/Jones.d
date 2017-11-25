@@ -18,32 +18,32 @@ FUNC INT Info_Mod_Jones_Hi_Condition()
 
 FUNC VOID Info_Mod_Jones_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_00"); //Nun, wenn diese Aufzeichnungen wahr sind, dann müsst ihr den Geist bannen, der sie zu Lebzeiten verflucht hat.
-	AI_Output(hero, self, "Info_Mod_Jones_Hi_15_01"); //Einen Geist bannen? Wie soll ich das denn machen?
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_02"); //Nun, zuerst musst du seine sterblichen Überreste der Erde übergeben. Danach muss ihm eine Bestattungszeremonie gewährt werden.
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_03"); //Sind diese Bedingungen erfüllt, dann ist seine Seele nicht mehr an die sterbliche Hülle gebunden.
-	AI_Output(hero, self, "Info_Mod_Jones_Hi_15_04"); //Und dann?
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_05"); //Nun ... entweder er fährt ein in Beliars Reich oder er bleibt in Adanos Reich und wird uns angreifen.
-	AI_Output(hero, self, "Info_Mod_Jones_Hi_15_06"); //Und wie will ich gegen einen Geist kämpfen?
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_07"); //Mit deinem Schwert oder dem Bogen? Gar nicht. Auch mit irdischer Magie wirst du wenig Glück haben.
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_08"); //Ich habe hier eine leere Geister-Rune und ein Schwert, das mit einem ectoplasmatischen Überzug geschmiedet wurde.
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_09"); //Du musst entweder den Geist mit dem Schwert so schwer verletzen, bis seine Aura erlischt, oder den Zauber vorbereiten, der den Geist in dieser Rune fängt.
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_00"); //Well, if these notes are true, then you must banish the spirit that cursed them during their lifetime.
+	AI_Output(hero, self, "Info_Mod_Jones_Hi_15_01"); //Banish a ghost? How am I supposed to do that?
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_02"); //Well, first you have to hand over his mortal remains to Earth. After that, he must be granted a funeral ceremony.
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_03"); //If these conditions are fulfilled, then his soul is no longer bound to the mortal shell.
+	AI_Output(hero, self, "Info_Mod_Jones_Hi_15_04"); //And then what?
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_05"); //Well... either he enters Beliar's realm, or he stays in Adano's realm and will attack us.
+	AI_Output(hero, self, "Info_Mod_Jones_Hi_15_06"); //And how do I fight a ghost?
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_07"); //With your sword or the bow? Not at all. Even with earthly magic you will have little luck.
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_08"); //I have an empty ghost rune and a sword forged with an ectoplasmic coating.
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_13_09"); //You must either hurt the spirit so badly with the sword until its aura goes out, or prepare the spell that catches the ghost in this rune.
 
 	Info_ClearChoices	(Info_Mod_Jones_Hi);
 	
-	Info_AddChoice	(Info_Mod_Jones_Hi, "Mit dem Geist werd ich schon fertig.", Info_Mod_Jones_Hi_Schwert);
-	Info_AddChoice	(Info_Mod_Jones_Hi, "Ich will den Zauber vorbereiten.", Info_Mod_Jones_Hi_Zauber);
+	Info_AddChoice	(Info_Mod_Jones_Hi, "I can handle the ghost.", Info_Mod_Jones_Hi_Schwert);
+	Info_AddChoice	(Info_Mod_Jones_Hi, "I want to prepare the spell.", Info_Mod_Jones_Hi_Zauber);
 };
 
 FUNC VOID Info_Mod_Jones_Hi_Schwert()
 {
-	AI_Output(hero, self, "Info_Mod_Jones_Hi_Schwert_15_00"); //Mit dem Geist werd ich schon fertig.
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_Schwert_13_01"); //Nun gut, hier ist das Schwert.
+	AI_Output(hero, self, "Info_Mod_Jones_Hi_Schwert_15_00"); //I can handle the ghost.
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_Schwert_13_01"); //All right, here's the sword.
 
 	CreateInvItems	(self, ItMw_Geisterschwert, 1);
 	B_GiveInvItems	(self, hero, ItMw_Geisterschwert, 1);
 
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_Schwert_13_02"); //Sobald ich seinen Geist freigelassen habe musst du ihn vernichten.
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_Schwert_13_02"); //Once I release his spirit, you must destroy him.
 
 	Info_ClearChoices	(Info_Mod_Jones_Hi);
 
@@ -52,14 +52,14 @@ FUNC VOID Info_Mod_Jones_Hi_Schwert()
 
 FUNC VOID Info_Mod_Jones_Hi_Zauber()
 {
-	AI_Output(hero, self, "Info_Mod_Jones_Hi_Zauber_15_00"); //Ich will den Zauber vorbereiten.
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_Zauber_13_01"); //Gut, hier ist die Rune.
+	AI_Output(hero, self, "Info_Mod_Jones_Hi_Zauber_15_00"); //I want to prepare the spell.
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_Zauber_13_01"); //All right, here's the rune.
 
 	CreateInvItems	(self, ItMi_Geisterrune, 1);
 	B_GiveInvItems	(self, hero, ItMi_Geisterrune, 1);
 
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_Zauber_13_02"); //Darin wird der Geist gefangen. Dies geschieht durch einen Zauberspruch.
-	AI_Output(self, hero, "Info_Mod_Jones_Hi_Zauber_13_03"); //Ich habe nur 5 Spruchrollen, also pass auf, dass du nicht zu viele verbrauchst. Wenn du den Zauber drei mal auf den Geist angewandt hast, sollte die Seele gefangen sein.
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_Zauber_13_02"); //The spirit is trapped in it. This is done by a spell.
+	AI_Output(self, hero, "Info_Mod_Jones_Hi_Zauber_13_03"); //I only have five spell rolls, so make sure you don't use too many. If you applied the spell to the spirit three times, the soul should be trapped.
 
 	CreateInvItems	(self, ItSc_Geisterspell, 5);
 	B_GiveInvItems	(self, hero, ItSc_Geisterspell, 5);
@@ -89,9 +89,9 @@ FUNC INT Info_Mod_Jones_Los_Condition()
 
 FUNC VOID Info_Mod_Jones_Los_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jones_Los_13_00"); //Also gut. Du weißt wo sich das Zentrum der Zombies befindet?
-	AI_Output(hero, self, "Info_Mod_Jones_Los_15_01"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Jones_Los_13_02"); //Dann führe mich hin.
+	AI_Output(self, hero, "Info_Mod_Jones_Los_13_00"); //All right, then. You know where the center of the zombies is?
+	AI_Output(hero, self, "Info_Mod_Jones_Los_15_01"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_Jones_Los_13_02"); //Then lead me there.
 
 	AI_StopProcessInfos	(self);
 
@@ -121,11 +121,11 @@ FUNC INT Info_Mod_Jones_Anfang_Condition()
 
 FUNC VOID Info_Mod_Jones_Anfang_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jones_Anfang_13_00"); //Ah ja, halte dich bereit, ich werde jetzt beginnen.
+	AI_Output(self, hero, "Info_Mod_Jones_Anfang_13_00"); //Ah yes, be ready, I will begin now.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Jones beginnt jetzt damit, den Geist herbeizurufen. Ich sollte mich bereithalten.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Jones is now beginning to invoke the spirit. I should get ready.");
 
 	Npc_ExchangeRoutine	(self, "CIRCLE");
 	Npc_ExchangeRoutine	(Mod_1541_PIR_Greg_DI, "CIRCLE");
@@ -152,22 +152,22 @@ FUNC INT Info_Mod_Jones_Ende_Condition()
 
 FUNC VOID Info_Mod_Jones_Ende_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jones_Ende_13_00"); //Wir haben es geschafft!
+	AI_Output(self, hero, "Info_Mod_Jones_Ende_13_00"); //We made it!
 
 	if (Npc_HasItems(hero, ItMi_Geisterrune_Voll) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Jones_Ende_13_01"); //Der Geist ist in der Rune gefangen. Mal sehen, was ich daraus machen kann.
+		AI_Output(self, hero, "Info_Mod_Jones_Ende_13_01"); //The ghost is trapped in the rune. Let's see what I can do with it.
 
 		B_GiveInvItems	(hero, self, ItMi_Geisterrune_Voll, 1);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Jones_Ende_13_02"); //Du hast den Geist vernichtet und seine Seele befreit.
+		AI_Output(self, hero, "Info_Mod_Jones_Ende_13_02"); //You have destroyed the spirit and liberated its soul.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Jones_Ende_13_03"); //Mir ist während des Rituals dort drüben die Wand aufgefallen. Ich halte es für möglich, dass dies noch nicht das Ende der Höhle ist.
-	AI_Output(self, hero, "Info_Mod_Jones_Ende_13_04"); //Du solltest dich nach einem Schalter oder etwas ähnlichem umsehen, vielleicht kannst du dort noch etwas interessantes finden.
-	AI_Output(self, hero, "Info_Mod_Jones_Ende_13_05"); //Ich werde zurück zum Strand gehen.
+	AI_Output(self, hero, "Info_Mod_Jones_Ende_13_03"); //I noticed the wall over there during the ritual. I think it is possible that this is not yet the end of the cave.
+	AI_Output(self, hero, "Info_Mod_Jones_Ende_13_04"); //You should look for a switch or something similar, maybe you can find something interesting there.
+	AI_Output(self, hero, "Info_Mod_Jones_Ende_13_05"); //I'm going back to the beach.
 
 	AI_StopProcessInfos	(self);
 
@@ -175,7 +175,7 @@ FUNC VOID Info_Mod_Jones_Ende_Info()
 
 	B_GivePlayerXP	(400);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Der Geist wurde besiegt, allerdings ist Jones eine Wand aufgefallen, die seiner Meinung nach geöffnet werden kann. Ich sollte jetzt mit Greg sprechen.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "The spirit has been defeated, but Jones has noticed a wall that he believes can be opened. I should talk to Greg now.");
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 };

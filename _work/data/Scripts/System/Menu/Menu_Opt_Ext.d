@@ -70,8 +70,8 @@ INSTANCE MENUITEM_EXT_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_FFT(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Wasserwellen";
-	text[1]		= 	"Wellenbewegungen an/aus"; // Kommentar
+	text[0]		=	"Water waves";
+	text[1]		= 	"Toggle wave movement on/off"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -85,7 +85,7 @@ instance MENUITEM_EXT_FFT_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"nein|ja";
+	text[0]		= 	"no|yes";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*0 + MENU_CHOICE_YPLUS;
@@ -101,8 +101,8 @@ instance MENUITEM_EXT_FFT_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_WATERFADE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Wasserfading";
-	text[1]		= 	"Wasserfading an/aus"; // Kommentar
+	text[0]		=	"Water fading";
+	text[1]		= 	"Toggle water fading on/off"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -116,7 +116,7 @@ instance MENUITEM_EXT_WATERFADE_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"nein|ja";
+	text[0]		= 	"no|yes";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*1 + MENU_CHOICE_YPLUS;
@@ -132,8 +132,8 @@ instance MENUITEM_EXT_WATERFADE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_OBJWIND(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Objekt Wind";
-	text[1]		= 	"Objekt Wind an/aus"; // Kommentar
+	text[0]		=	"Object Wind";
+	text[1]		= 	"Toggle wind movement of objects on/off"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -147,7 +147,7 @@ instance MENUITEM_EXT_OBJWIND_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"nein|ja";
+	text[0]		= 	"no|yes";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*2 + MENU_CHOICE_YPLUS;
@@ -197,8 +197,8 @@ instance MENUITEM_EXT_AMBIENTOBJ_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_CLOUDSHADOW(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Wolkenschatten";
-	text[1]		= 	"Regen-Wolkenschatten an/aus"; // Kommentar
+	text[0]		=	"Cloud shadows";
+	text[1]		= 	"Rain cloudshadow on/off"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3500;	dimy		=	750;
@@ -212,7 +212,7 @@ instance MENUITEM_EXT_CLOUDSHADOW_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"nein|ja";
+	text[0]		= 	"no|yes";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -230,7 +230,7 @@ INSTANCE MENUITEM_EXT_AMBIENTPFX(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"DetailPfx";
-	text[1]		= 	"Ambientpartikel an/aus"; // Kommentar
+	text[1]		= 	"Ambient particles on/off"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;
@@ -244,7 +244,7 @@ instance MENUITEM_EXT_AMBIENTPFX_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"nein|ja";
+	text[0]		= 	"no|yes";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*4 + MENU_CHOICE_YPLUS;
@@ -261,8 +261,8 @@ instance MENUITEM_EXT_AMBIENTPFX_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_ENVMAP(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Glanzeffekte";
-	text[1]		= 	"Glanzeffekte an/aus"; // Kommentar
+	text[0]		=	"gloss effects";
+	text[1]		= 	"Gloss effects on/off"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*5;
 	dimx		=	3000;	dimy		=	750;
@@ -276,7 +276,7 @@ instance MENUITEM_EXT_ENVMAP_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"nein|ja";
+	text[0]		= 	"no|yes";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*5 + MENU_CHOICE_YPLUS;
@@ -293,8 +293,8 @@ instance MENUITEM_EXT_ENVMAP_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_RADIALFOG(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Radialnebel";
-	text[1]		= 	"Radialnebel an/aus"; // Kommentar
+	text[0]		=	"radial nebula";
+	text[1]		= 	"Radial fog on/off"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*6;
 	dimx		=	3000;	dimy		=	750;
@@ -308,7 +308,7 @@ instance MENUITEM_EXT_RADIALFOG_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"nein|ja";
+	text[0]		= 	"no|yes";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*6 + MENU_CHOICE_YPLUS;
@@ -326,7 +326,7 @@ instance MENUITEM_EXT_RADIALFOG_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"Back";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

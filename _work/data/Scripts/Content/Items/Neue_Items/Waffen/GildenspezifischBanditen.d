@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_Banditenschwert (C_Item)
 {	
-	name 				=	"Banditenschwert";  
+	name 				=	"bandit sword";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -26,7 +26,7 @@ INSTANCE ItMw_Banditenschwert (C_Item)
 };
 INSTANCE ItMw_Banditenschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Banditenschwert (geschärft)";  
+	name 				=	"Bandit Sword (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -51,7 +51,7 @@ INSTANCE ItMw_Banditenschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Banditenschwert_Andre (C_Item)
 {	
-	name 				=	"Banditenschwert";  
+	name 				=	"bandit sword";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_SHOW;	

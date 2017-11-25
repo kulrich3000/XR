@@ -18,17 +18,17 @@ FUNC VOID SumpfbeerenTraum()
 
 	if (Mod_SumpfbeerenTraum_Counter == 4)
 	{
-		AI_Output(Mod_7652_OUT_Fremder_REL, NULL, "Info_Mod_Fremder_SumpfbeerenTraum_13_00"); //Tief im Inneren des Verfluchten gefangen. Auf Befreiung, Erlösung warte ich seit Äonen.
+		AI_Output(Mod_7652_OUT_Fremder_REL, NULL, "Info_Mod_Fremder_SumpfbeerenTraum_13_00"); //Trapped deep inside the cursed one. For liberation, redemption, I have waited for aeons.
 	};
 
 	if (Mod_SumpfbeerenTraum_Counter == 10)
 	{
-		AI_Output(Mod_7652_OUT_Fremder_REL, NULL, "Info_Mod_Fremder_SumpfbeerenTraum_13_01"); //Klirrendes Metall bringt jedoch den Tod.
+		AI_Output(Mod_7652_OUT_Fremder_REL, NULL, "Info_Mod_Fremder_SumpfbeerenTraum_13_01"); //Clashing metal, however, brings death.
 	};
 
 	if (Mod_SumpfbeerenTraum_Counter == 16)
 	{
-		AI_Output(Mod_7652_OUT_Fremder_REL, NULL, "Info_Mod_Fremder_SumpfbeerenTraum_13_02"); //Erlösung bringt jenes, was der Brust des Moores entrissen wurde ... löscht aus den dämonischen Leib, der mein Gefängnis.
+		AI_Output(Mod_7652_OUT_Fremder_REL, NULL, "Info_Mod_Fremder_SumpfbeerenTraum_13_02"); //Salvation brings what has been snatched from the breast of the moor... erases from the demonic body of my prison.
 	};
 
 	if (Mod_SumpfbeerenTraum_Counter == 22)
@@ -42,7 +42,7 @@ FUNC VOID SumpfbeerenTraum()
 		CutsceneAn = FALSE;
 
 		Log_CreateTopic	(TOPIC_MOD_MOOR, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_MOOR, "Tief im Inneren des Verfluchten gefangen. Auf Befreiung, Erlösung warte ich seit Äonen. Klirrendes Metall bringt jedoch den Tod. Erlösung bringt jenes, was der Brust des Moores entrissen wurde ... löscht aus den dämonischen Leib, der mein Gefängnis.");
+		B_LogEntry	(TOPIC_MOD_MOOR, "Trapped deep inside the cursed one. For liberation, redemption, I have waited for aeons. Clashing metal, however, brings death. Salvation brings what was snatched from the breast of the moor... erases from the demonic body of my prison.");
 
 		AI_PlayAni	(hero, "T_VICTIM_SLE_2_STAND");
 	};

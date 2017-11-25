@@ -2,7 +2,7 @@ instance Mod_1872_NONE_Unbekannt_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Unbekannter Kämpfer";
+	name 		=	"Unknown Fighter";
 	npctype		= 	npctype_friend;
 	guild 		=	GIL_OUT;
 	level 		=	10;

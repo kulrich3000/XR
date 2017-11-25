@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Judith_Hi (C_INFO)
 	information	= Info_Mod_Judith_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Erzähl mir was von dir.";
+	description	= "Tell me about yourself.";
 };
 
 FUNC INT Info_Mod_Judith_Hi_Condition()
@@ -16,11 +16,11 @@ FUNC INT Info_Mod_Judith_Hi_Condition()
 
 FUNC VOID Info_Mod_Judith_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Hi_15_00"); //Erzähl mir was von dir.
-	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_01"); //Was soll ich groß von mir erzählen?
-	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_02"); //Ich habe mir vorgenommen, regelmäßig lange Abendspaziergänge zu machen.
-	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_03"); //Den ganzen Tag in der Küche stehen, den Haushalt in Schuss halten - da braucht man auch mal etwas Abwechslung, um den Kopf frei zu bekommen.
-	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_04"); //Wenn es das war, was du hören wolltest ...
+	AI_Output(hero, self, "Info_Mod_Judith_Hi_15_00"); //Tell me about yourself.
+	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_01"); //What am I supposed to say about myself?
+	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_02"); //I have planned to take regular long evening walks.
+	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_03"); //Standing in the kitchen all day long, keeping the household in good shape - you also need a little change to get your head clear.
+	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_04"); //If that's what you wanted to hear...
 };
 
 INSTANCE Info_Mod_Judith_Pavillon (C_INFO)
@@ -43,30 +43,30 @@ FUNC INT Info_Mod_Judith_Pavillon_Condition()
 
 FUNC VOID Info_Mod_Judith_Pavillon_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_06_00"); //(leise) Bist du es, Liebling?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_06_00"); //Is that you, darling?
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
-	Info_AddChoice	(Info_Mod_Judith_Pavillon, "(säuseln) Ja, mein Schatz.", Info_Mod_Judith_Pavillon_B);
-	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Wie bitte?", Info_Mod_Judith_Pavillon_A);
+	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Yes, my darling.", Info_Mod_Judith_Pavillon_B);
+	Info_AddChoice	(Info_Mod_Judith_Pavillon, "I beg your pardon?", Info_Mod_Judith_Pavillon_A);
 };
 
 FUNC VOID Info_Mod_Judith_Pavillon_B()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_B_15_00"); //(säuseln) Ja, mein Schatz.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_B_06_01"); //Ich muss dir unbedingt erzählen, was vorhin passiert ist.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_B_06_02"); //Ich glaube, Lukas hat Verdacht geschöpft.
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_B_15_00"); //Yes, my darling.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_B_06_01"); //I really have to tell you what happened earlier.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_B_06_02"); //I think lucas has gotten suspicious.
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
-	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Von was hat er Verdacht geschöpft?", Info_Mod_Judith_Pavillon_D);
-	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Wollen wir nicht gleich zur Sache kommen?", Info_Mod_Judith_Pavillon_C);
+	Info_AddChoice	(Info_Mod_Judith_Pavillon, "What did he suspect?", Info_Mod_Judith_Pavillon_D);
+	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Shall we cut to the chase?", Info_Mod_Judith_Pavillon_C);
 };
 
 FUNC VOID Info_Mod_Judith_Pavillon_A()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_A_15_00"); //Wie bitte?
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_A_06_01"); //(erschrocken) Gar nichts. Ich muss wohl schlafwandeln.
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_A_15_00"); //I beg your pardon?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_A_06_01"); //Nothing at all. I must be sleepwalking.
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
@@ -77,15 +77,15 @@ FUNC VOID Info_Mod_Judith_Pavillon_A()
 
 FUNC VOID Info_Mod_Judith_Pavillon_D()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_00"); //Von was hat er Verdacht geschöpft?
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_01"); //Na, dass ich mich mit dir treffe.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_02"); //Als ich ihm sagte, dass ich noch mal kurz an die frische Luft müsste, weil mir übel sei, hat er geantwortet, Hauptsache, ich lande nicht beim Peter.
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_03"); //Ich bin Peter?
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_04"); //(ironisch) Sicher, mit dem würd ich mich auch gerade um diese Uhrzeit hier herumtreiben.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_05"); //(neckisch) Treib nur deine Spielchen mit mir!
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_06"); //(mir ironischem Unterton) Du kennst mich doch!
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_07"); //Jetzt aber genug von Lukas. Ich muss nur etwas vorsichtiger sein.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_08"); //Machen wir es uns ein wenig gemütlich!
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_00"); //What did he suspect?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_01"); //Well, that I'm seeing you.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_02"); //When I told him that I had to get some fresh air again because I was sick, he replied,"As long as I don't end up with Peter.
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_03"); //I'm Peter?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_04"); //(ironic) Sure, I'd hang out with him at this hour of the day.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_05"); //Just play games with me!
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_06"); //You know me, you know me!
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_07"); //Now that's enough of Luke. I just need to be a little more careful.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_08"); //Let's make ourselves comfortable!
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
@@ -96,14 +96,14 @@ FUNC VOID Info_Mod_Judith_Pavillon_D()
 
 FUNC VOID Info_Mod_Judith_Pavillon_C()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_C_15_00"); //Wollen wir nicht gleich zur Sache kommen?
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_01"); //Zu welcher Sache?
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_C_15_02"); //Na ja ... was wir sonst auch immer machen.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_03"); //Immer? Das ist unser drittes Treffen! Langsam habe ich das Gefühl ...
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_C_15_00"); //Shall we cut to the chase?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_01"); //To what cause?
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_C_15_02"); //Well... whatever else we do.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_03"); //Always? This is our third meeting! I'm beginning to feel...
 
 	AI_GotoNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_04"); //Ah! Du bist nicht ... nicht der Richtige!
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_04"); //Ah! You're not... not the right man!
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
@@ -133,11 +133,11 @@ FUNC INT Info_Mod_Judith_Pavillon2_Condition()
 
 FUNC VOID Info_Mod_Judith_Pavillon2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_00"); //Wann sehen wir uns wieder?
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon2_15_01"); //Wann immer du willst.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_02"); //Morgen, gleiche Zeit?
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon2_15_03"); //Gern. Aber vielleicht bin ich nicht pünktlich.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_04"); //(lacht) Das sagst du immer. Und bist dann doch immer pünktlich. Bis morgen!
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_00"); //When will we meet again?
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon2_15_01"); //Whenever you want.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_02"); //Same time tomorrow?
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon2_15_03"); //Gladly. But maybe I'm not on time.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_04"); //That's what you always say. And you're always on time. See you tomorrow!
 
 	AI_StopProcessInfos	(self);
 

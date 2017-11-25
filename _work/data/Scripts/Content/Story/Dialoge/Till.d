@@ -9,7 +9,7 @@ INSTANCE Info_Mod_Till_Hi (C_INFO)
 	information	= Info_Mod_Till_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Till_Hi_Condition()
@@ -21,7 +21,7 @@ FUNC VOID Info_Mod_Till_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Till_Hi_24_01"); //Ich bin Till und komme von Sekobs Hof.
+	AI_Output(self, hero, "Info_Mod_Till_Hi_24_01"); //I'm Till, coming from Sekob's farm.
 };
 
 INSTANCE Info_Mod_Till_Bronko (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Till_Bronko (C_INFO)
 	information	= Info_Mod_Till_Bronko_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bronko hat gesagt, du sollst deinen Arsch auf das Feld bewegen.";
+	description	= "Bronko told you to get your ass on the field.";
 };
 
 FUNC INT Info_Mod_Till_Bronko_Condition()
@@ -45,12 +45,12 @@ FUNC INT Info_Mod_Till_Bronko_Condition()
 
 FUNC VOID Info_Mod_Till_Bronko_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Till_Bronko_15_00"); //Bronko hat gesagt, du sollst deinen Arsch auf das Feld bewegen.
-	AI_Output(self, hero, "Info_Mod_Till_Bronko_24_01"); //Sag Bronko mal, das kann er selbst machen.
+	AI_Output(hero, self, "Info_Mod_Till_Bronko_15_00"); //Bronko told you to get your ass on the field.
+	AI_Output(self, hero, "Info_Mod_Till_Bronko_24_01"); //Tell Bronko he can do it himself.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Till kontert. Ich werde mich wohl auf ein wenig Laufen gefasst machen müssen.");
+	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Till counters Till. I guess I'll have to get ready for some running.");
 };
 
 INSTANCE Info_Mod_Till_Bronko02 (C_INFO)
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Till_Bronko02 (C_INFO)
 	information	= Info_Mod_Till_Bronko02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bronko sagt, dass du dir erst mal die Nase putzen solltest.";
+	description	= "Bronko says you should clean your nose first.";
 };
 
 FUNC INT Info_Mod_Till_Bronko02_Condition()
@@ -74,14 +74,14 @@ FUNC INT Info_Mod_Till_Bronko02_Condition()
 
 FUNC VOID Info_Mod_Till_Bronko02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Till_Bronko02_15_00"); //Bronko sagt, dass du dir erst mal die Nase putzen solltest.
-	AI_Output(self, hero, "Info_Mod_Till_Bronko02_24_01"); //Dieser aufgeblasene Blödmann kann doch nicht einmal eins und eins zusammenzählen.
-	AI_Output(hero, self, "Info_Mod_Till_Bronko02_15_02"); //Kannst du das denn?
-	AI_Output(self, hero, "Info_Mod_Till_Bronko02_24_03"); //Das spielt keine Rolle. Frag lieber mal Bronko.
+	AI_Output(hero, self, "Info_Mod_Till_Bronko02_15_00"); //Bronko says you should clean your nose first.
+	AI_Output(self, hero, "Info_Mod_Till_Bronko02_24_01"); //That pompous fool can't even add up one and one.
+	AI_Output(hero, self, "Info_Mod_Till_Bronko02_15_02"); //Can you do that?
+	AI_Output(self, hero, "Info_Mod_Till_Bronko02_24_03"); //It doesn't matter. You better ask Bronko.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Ich soll Bronko fragen, was eins und eins ergibt ...");
+	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "I'm supposed to ask Bronko what one and one means...");
 };
 
 INSTANCE Info_Mod_Till_Bronko03 (C_INFO)
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_Till_Bronko03 (C_INFO)
 	information	= Info_Mod_Till_Bronko03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bronko hat eins und eins zusammengezählt (...)";
+	description	= "Bronko added up one and one (...) )";
 };
 
 FUNC INT Info_Mod_Till_Bronko03_Condition()
@@ -105,12 +105,12 @@ FUNC INT Info_Mod_Till_Bronko03_Condition()
 
 FUNC VOID Info_Mod_Till_Bronko03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Till_Bronko03_15_00"); //Bronko hat eins und eins zusammengezählt und elf herausbekommen.
-	AI_Output(self, hero, "Info_Mod_Till_Bronko03_24_01"); //Der Mistkerl kann ja rechnen. Aber er ist ein Mistkerl. Sag ihm das.
+	AI_Output(hero, self, "Info_Mod_Till_Bronko03_15_00"); //Bronko put one and one together and got eleven.
+	AI_Output(self, hero, "Info_Mod_Till_Bronko03_24_01"); //Son of a bitch can do the math. But he's a son of a bitch. Tell him that.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Jetzt soll ich Bronko ausrichten, dass er ein Mistkerl ist.");
+	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Now I'm supposed to tell Bronko he's a son of a bitch.");
 };
 
 INSTANCE Info_Mod_Till_Bronko04 (C_INFO)
@@ -121,7 +121,7 @@ INSTANCE Info_Mod_Till_Bronko04 (C_INFO)
 	information	= Info_Mod_Till_Bronko04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du kannst gleich von Bronko was erleben.";
+	description	= "You'll get to hear from Bronko in a minute.";
 };
 
 FUNC INT Info_Mod_Till_Bronko04_Condition()
@@ -134,12 +134,12 @@ FUNC INT Info_Mod_Till_Bronko04_Condition()
 
 FUNC VOID Info_Mod_Till_Bronko04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Till_Bronko04_15_00"); //Du kannst gleich von Bronko was erleben.
-	AI_Output(self, hero, "Info_Mod_Till_Bronko04_24_01"); //Der Angeber soll ruhig herkommen. Sag ihm das.
-	AI_Output(hero, self, "Info_Mod_Till_Bronko04_15_02"); //Sag es ihm doch selbst.
-	AI_Output(self, hero, "Info_Mod_Till_Bronko04_24_03"); //Das werde ich.
+	AI_Output(hero, self, "Info_Mod_Till_Bronko04_15_00"); //You'll get to hear from Bronko in a minute.
+	AI_Output(self, hero, "Info_Mod_Till_Bronko04_24_01"); //Tell the braggart to come here. Tell him that.
+	AI_Output(hero, self, "Info_Mod_Till_Bronko04_15_02"); //Why don't you tell him yourself?
+	AI_Output(self, hero, "Info_Mod_Till_Bronko04_24_03"); //I will, I will.
 
-	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Ich habe den Streit geschlichtet, indem ich die beiden habe aufeinander losgehen lassen. Endlich Ruhe. Vielleicht hat der Verlierer ja Gold bei sich.");
+	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "I settled the dispute by letting them go at each other. Silence at last. Maybe the loser has gold on him.");
 	B_SetTopicStatus	(TOPIC_MOD_BRONKO_STREIT, LOG_SUCCESS);
 
 	B_GivePlayerXP	(50);
@@ -173,9 +173,9 @@ FUNC INT Info_Mod_Till_InnosNase_Condition()
 
 FUNC VOID Info_Mod_Till_InnosNase_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase_24_00"); //Ahh, dann können wir also nun loslegen.
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase_24_01"); //Du zeigst uns den Weg und wir folgen dir und schauen uns aufmerksam um.
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase_24_02"); //(halblaut) Und je schneller wir fertig sind, desto schneller kommen wir auch aus diesem Gestank heraus.
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase_24_00"); //Ahh, so now we can get started.
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase_24_01"); //You show us the way and we follow you and look around attentively.
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase_24_02"); //And the sooner we're done, the sooner we can get out of this stench.
 
 	AI_StopProcessInfos	(self);
 
@@ -208,14 +208,14 @@ FUNC INT Info_Mod_Till_InnosNase2_Condition()
 
 FUNC VOID Info_Mod_Till_InnosNase2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_00"); //Tja, hört sich so an, als hätte der Roboter sich um diese dunklen Gestalten gekümmert, wer immer die auch waren.
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_01"); //Muss ’n ganz schöner Kampf gewesen sein. Die Höhle ist sogar eingestürzt.
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_02"); //Na ja, wie dem auch sei, die Arbeit ist getan und wir können gehen, oder?
-	AI_Output(hero, self, "Info_Mod_Till_InnosNase2_15_03"); //Lord Hagen meinte, dass die Quelle beseitigt werden soll.
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_04"); //Soll das etwa heißen ...? Ohh, nöö.
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_05"); //(halblaut) Hätte der Roboter nicht wenigstens hinter sich aufräumen können?
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_06"); //Jetzt darf ich den Mist machen.
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_07"); //Und dabei war es doch auf dem Hof so schön ...
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_00"); //Well, sounds like the robot took care of those dark characters, whoever they were.
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_01"); //Must have been quite a fight. The cave even collapsed.
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_02"); //Well, anyway, the work is done and we can go, right?
+	AI_Output(hero, self, "Info_Mod_Till_InnosNase2_15_03"); //Lord Hagen said the source should be removed.
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_04"); //Is that supposed to mean...? Ohh, nope.
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_05"); //Wouldn't the robot at least have been able to clean up after himself?
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_06"); //Now I get to do the crap.
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase2_24_07"); //And yet the farm was so beautiful...
 
 	AI_StopProcessInfos	(self);
 
@@ -223,7 +223,7 @@ FUNC VOID Info_Mod_Till_InnosNase2_Info()
 	B_StartOtherRoutine	(Mod_744_MIL_Pablo_NW, "ASSIS2");
 	B_StartOtherRoutine	(Mod_968_MIL_Bilgot_NW, "ASSIS2");
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_NASE, "Offensichtlich hat der Roboter einige Halunken in einer nahegelegenen Höhle erschlagen, die jetzt vor sich hinrotten. Die Stadtwachen werden das Problem unter die Erde bringen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_NASE, "Apparently, the robot has killed some scoundrels in a nearby cave, who are now drowning. City guards will bring the problem underground.");
 
 	B_KillNpc	(Mod_7681_ASS_Halbtoter_NW);
 };
@@ -266,7 +266,7 @@ FUNC INT Info_Mod_Till_InnosNase3_Condition()
 
 FUNC VOID Info_Mod_Till_InnosNase3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Till_InnosNase3_24_00"); //Hier merkt man nichts mehr vom Fäulnisgeruch. Wir müssen zurück.
+	AI_Output(self, hero, "Info_Mod_Till_InnosNase3_24_00"); //There's no smell of putrefaction left here. We have to go back.
 
 	AI_StopProcessInfos	(self);
 
@@ -299,63 +299,63 @@ FUNC VOID Info_Mod_Till_NachGildenstories_Info()
 	if (hero.guild == GIL_VLK)
 	|| (hero.guild == GIL_NOV)
 	{
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_01"); //(überrascht) Was, du ...? (stockt) Ohh, verzeih mir, Meister.
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_01"); //What, you...? Ohh, forgive me, master.
 	};
 
 	if (hero.guild == GIL_VLK)
 	{
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_02"); //(erklärt sich) Nachdem ihr Feuermagier uns alle vor diesen Eiswesen gerettet habt, gab es für mich keinen Zweifel daran, dass ich mich in den Dienst des Klosters stellen möchte.
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_03"); //Ein Diener Innos zu sein muss das Größte sein.
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_02"); //After you fire magicians rescued us all from these ice creatures, there was no doubt in my mind that I wanted to serve the monastery.
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_03"); //To be a servant of Inno must be the greatest.
 	}
 	else if (hero.guild == GIL_NOV)
 	{
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_04"); //(erklärt sich) Nachdem ihr Wassermagier uns alle vor diesen Monstern bewahrt habt, gab es für mich keinen Zweifel daran, dass auch ich für eure Sache kämpfen möchte.
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_05"); //Ein Diener Adanos’ zu sein muss das Größte sein.
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_04"); //After you water magicians saved us all from these monsters, there was no doubt in my mind that I too would like to fight for your cause.
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_05"); //To be a servant of Adanos must be the greatest.
 	};
 
 	if (hero.guild == GIL_VLK)
 	|| (hero.guild == GIL_NOV)
 	{
-		AI_Output(hero, self, "Info_Mod_Till_NachGildenstories_15_06"); //Na ja, aber nicht immer ungefährlich.
+		AI_Output(hero, self, "Info_Mod_Till_NachGildenstories_15_06"); //Well, not always harmless.
 	};
 
 	if (hero.guild == GIL_VLK)
 	{
-		AI_Output(hero, self, "Info_Mod_Till_NachGildenstories_15_07"); //Bei der Sache mit den Eiswesen haben einige Novizen ihr Leben gelassen.
+		AI_Output(hero, self, "Info_Mod_Till_NachGildenstories_15_07"); //Some novices have lost their lives in the ice age.
 	}
 	else if (hero.guild == GIL_NOV)
 	{
-		AI_Output(hero, self, "Info_Mod_Till_NachGildenstories_15_08"); //Bei der Sache mit dem Weidenplateau haben einige Streiter ihr Leben gelassen.
+		AI_Output(hero, self, "Info_Mod_Till_NachGildenstories_15_08"); //Some of the fighters lost their lives in the grazing plateau.
 	};
 
 	if (hero.guild == GIL_VLK)
 	|| (hero.guild == GIL_NOV)
 	{
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_09"); //(erschrocken) Was!?
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_09"); //What! What?!
 
 		AI_TurnAway	(self, hero);
 	};
 
 	if (hero.guild == GIL_VLK)
 	{
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_10"); //(zu sich selbst) Also deshalb haben sie mich so schnell im Kloster aufgenommen.
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_10"); //That's why they took me to the monastery so quickly.
 	}
 	else if (hero.guild == GIL_NOV)
 	{
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_11"); //(zu sich selbst) Also deshalb haben sie mich so schnell zum Novizen gemacht.
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_11"); //That's why they made me a novice so quickly.
 	};
 
 	if (hero.guild == GIL_VLK)
 	|| (hero.guild == GIL_NOV)
 	{
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_12"); //(besorgt) Wenn das mal gut geht ...
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_12"); //If that goes well....
 	};
 
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_13"); //(überrascht) Was, du ...? (stockt) Ohh, der Drachentöter.
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_14"); //(erklärt sich) Nachdem ihr Söldner uns alle von diesen Drachen befreit hattet, gab es für mich keinen Zweifel daran, dass auch ich an eurer Seite kämpfen möchte.
-		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_15"); //Ein Söldner zu sein muss das Größte sein. Und mein Vater hat mir jetzt nichts mehr zu sagen!
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_13"); //What, you...? Ohh, the dragon slayer.
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_14"); //After you mercenaries had freed us all from these dragons, there was no doubt in my mind that I too would like to fight at your side.
+		AI_Output(self, hero, "Info_Mod_Till_NachGildenstories_24_15"); //To be a mercenary must be the greatest. And my father has nothing more to say to me now!
 	};
 
 	AI_StopProcessInfos	(self);
@@ -393,7 +393,7 @@ INSTANCE Info_Mod_Till_Kampf (C_INFO)
 	information	= Info_Mod_Till_Kampf_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Du bist mein erster Gegner im Turnier.";
+	description	= "You're my first opponent in the tournament.";
 };
 
 FUNC INT Info_Mod_Till_Kampf_Condition()
@@ -408,31 +408,31 @@ FUNC INT Info_Mod_Till_Kampf_Condition()
 
 FUNC VOID Info_Mod_Till_Kampf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Till_Kampf_15_00"); //Du bist mein erster Gegner im Turnier.
-	AI_Output(self, hero, "Info_Mod_Till_Kampf_24_01"); //(überrascht) Du bist einer der anderen Anwärter?
-	AI_Output(hero, self, "Info_Mod_Till_Kampf_15_02"); //So was soll es geben.
-	AI_Output(self, hero, "Info_Mod_Till_Kampf_24_03"); //Na schön, bist du bereit?
+	AI_Output(hero, self, "Info_Mod_Till_Kampf_15_00"); //You're my first opponent in the tournament.
+	AI_Output(self, hero, "Info_Mod_Till_Kampf_24_01"); //Are you one of the other candidates?
+	AI_Output(hero, self, "Info_Mod_Till_Kampf_15_02"); //There's supposed to be.
+	AI_Output(self, hero, "Info_Mod_Till_Kampf_24_03"); //All right, you ready?
 
 	self.fight_tactic = FAI_HUMAN_STRONG;
 
 	Info_ClearChoices	(Info_Mod_Till_Kampf);
 	
-	Info_AddChoice	(Info_Mod_Till_Kampf, "Noch nicht ...", Info_Mod_Till_Kampf_Nein);
-	Info_AddChoice	(Info_Mod_Till_Kampf, "Ja, lass uns anfangen ...", Info_Mod_Till_Kampf_Ja);
+	Info_AddChoice	(Info_Mod_Till_Kampf, "Not yet....", Info_Mod_Till_Kampf_Nein);
+	Info_AddChoice	(Info_Mod_Till_Kampf, "Yeah, let's get started...", Info_Mod_Till_Kampf_Ja);
 };
 
 FUNC VOID Info_Mod_Till_Kampf_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Till_Kampf_Nein_15_00"); //Noch nicht ...
-	AI_Output(self, hero, "Info_Mod_Till_Kampf_Nein_24_01"); //Wie du meinst. Komm, sobald du bereit bist.
+	AI_Output(hero, self, "Info_Mod_Till_Kampf_Nein_15_00"); //Not yet....
+	AI_Output(self, hero, "Info_Mod_Till_Kampf_Nein_24_01"); //Whatever you say. Come as soon as you're ready.
 
 	Info_ClearChoices	(Info_Mod_Till_Kampf);
 };
 
 FUNC VOID Info_Mod_Till_Kampf_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Till_Kampf_Ja_15_00"); //Ja, lass uns anfangen ...
-	AI_Output(self, hero, "Info_Mod_Till_Kampf_Ja_24_01"); //Los geht's!
+	AI_Output(hero, self, "Info_Mod_Till_Kampf_Ja_15_00"); //Yeah, let's get started...
+	AI_Output(self, hero, "Info_Mod_Till_Kampf_Ja_24_01"); //Here we go!
 
 	Mod_MilizTurnier	=	1;
 
@@ -464,31 +464,31 @@ FUNC VOID Info_Mod_Till_KampfEnde_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Till_KampfEnde_24_00"); //Du bist wirklich gut. Ich geh zurück auf den Hof meines Vaters, vielleicht sehen wir uns mal wieder.
+			AI_Output(self, hero, "Info_Mod_Till_KampfEnde_24_00"); //You're really good. I'm going back to my father's farm, maybe we'll meet again sometime.
 
 			Mod_MilizTurnier = 2;
 			
 			B_StartOtherRoutine	(Mod_541_NONE_Till_NW,	"PRESTART");
 				
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe meinen Kampf gegen Till gewonnen. Ich sollte jetzt mit Lord Andre sprechen.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "I won my fight against Till. I should talk to Lord Andre now.");
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Till_KampfEnde_24_01"); //Tja, das war wohl nichts. Jetzt werde ich vielleicht ein Mitglied der Miliz.
+			AI_Output(self, hero, "Info_Mod_Till_KampfEnde_24_01"); //Well, that was nothing. Now I may become a member of the militia.
 
 			Mod_MilizTurnier = 3;
 
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe meinen Kampf gegen Till verloren. Ich sollte jetzt mit Lord Andre sprechen.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "I lost my fight against Till. I should talk to Lord Andre now.");
 
 			B_SetTopicStatus	(TOPIC_MOD_MILIZTURNIER, LOG_FAILED);
 		}
 		else //FIGHT_CANCEL
 		{
-			AI_Output (self, other,"Info_Mod_Till_KampfEnde_24_02"); //Du bist abgehauen und dadurch hab ich gewonnen. Dumm gelaufen für dich.
+			AI_Output (self, other,"Info_Mod_Till_KampfEnde_24_02"); //You ran away, and that's how I won. It's been a dumb thing for you.
 
 			Mod_MilizTurnier = 3;
 
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe meinen Kampf gegen Till verloren. Ich sollte jetzt mit Lord Andre sprechen.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "I lost my fight against Till. I should talk to Lord Andre now.");
 
 			B_SetTopicStatus	(TOPIC_MOD_MILIZTURNIER, LOG_FAILED);
 		};

@@ -15,31 +15,31 @@ FUNC INT Info_Mod_Fisk_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Fisk_NW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_00"); //(erleichtert) Du hier? Oh Mann, endlich mal wieder ein bekanntes Gesicht.
-	AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_01"); //Du bist dem Überfall durch die Orks entkommen, wie ich sehe.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_02"); //Ja, Mann. Hey, die letzten Tage waren die Hölle, sag ich dir.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_03"); //Als die Orks nachts bei uns im Lager einfielen, brach das reinste Chaos aus.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_04"); //Alles ging so schnell ... ich stürzte im Dunkeln durch das Lager, ohne genau zu wissen, wohin eigentlich genau.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_05"); //Dann fand ich mich plötzlich beim Hinterausgang des Lagers.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_06"); //Ich sah, dass er offen stand und rannte ohne lange nachzudenken hinaus.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_07"); //Aber dort wimmelte es auch von den dreckigen Bastarden.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_08"); //Die nächsten Stunden war es ein ständiges Rennen und Verstecken, bis ich endlich in Sicherheit war.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_09"); //Auf dem Weg aus dem Tal habe ich dann noch die drei anderen Jungs getroffen ... aber ich glaube wirklich nicht, dass es sonst noch wer geschafft hat.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_10"); //Aber falls du doch jemandem begegnen solltest ... gib mir auf jeden Fall Bescheid, ja?
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_00"); //You here? Oh, man, finally a familiar face again.
+	AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_01"); //You escaped the raid by the orcs, I see.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_02"); //Yeah, man. Hey, last few days have been hell, I tell you.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_03"); //When the orcs came to our camp at night, the chaos broke out.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_04"); //Everything happened so fast... I rushed through the camp in the dark without knowing exactly where I was going.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_05"); //Then I found myself at the rear exit of the camp.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_06"); //I saw that he was standing open and ran out without thinking for a long time.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_07"); //But it was swarming with filthy bastards.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_08"); //The next few hours it was a constant race and hiding until I was finally safe.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_09"); //On the way out of the valley I met the other three boys.... but I really don't think anyone else made it.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_10"); //But if you should run into someone else... Anyway, let me know, will you?
 
 	Log_CreateTopic	(TOPIC_MOD_LEISEHOFFNUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEISEHOFFNUNG, LOG_RUNNING);
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_11"); //Klar, mach ich. Aber was wollt ihr jetzt machen?
-		AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_12"); //Ich weiß nicht recht. Ich habe mir überlegt, ob ich vielleicht in die Stadt gehen sollte.
-		AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_13"); //Ich hoffe mal darauf, dass mein Ruf als Händler bis dorthin gedrungen ist und sie mich reinlassen.
-		AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_14"); //Ja, Stadt ist sicherlich gut für einen erfahrenen Händler.
-		AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_15"); //Die beiden Stadtwachen hier werden dir den Weg zeigen können ...
-		AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_16"); //Vielen Dank, Mann. Ich steh in deiner Schuld.
+		AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_11"); //Sure, I will. But what are you going to do now?
+		AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_12"); //I don't really know. I was wondering if maybe I should go into town.
+		AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_13"); //I hope that my reputation as a trader has penetrated this far and they let me in.
+		AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_14"); //Yes, city is certainly good for an experienced trader.
+		AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_15"); //The two city guards here will be able to show you the way....
+		AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_16"); //Thanks a lot, man. I'm in your debt.
 
-		B_LogEntry_More	(TOPIC_MOD_MILIZ_FREUNDFEIND, TOPIC_MOD_LEISEHOFFNUNG, "Die Gruppe bei Bengars Hof ist sauber und wird sich zur Stadt begeben.", "Ich habe Fisk in Khorinis getroffen. Mit nur einer Hand voll Begleiter ist es ihm gelungen, den Orks zu entkommen. Er zweifelt daran, dass es sonst noch jemand aus dem Lager geschafft hat. Falls ich jedoch noch weiteren Überlebenden auf meinem Weg begegnen sollte, will er, dass ich ihm Bescheid gebe.");
+		B_LogEntry_More	(TOPIC_MOD_MILIZ_FREUNDFEIND, TOPIC_MOD_LEISEHOFFNUNG, "The group at Bengars Hof is clean and will go to town.", "I met Fisk in Khorinis. With only a handful of companions, he managed to escape the orcs. He doubts that anyone else made it out of the camp. However, if I should meet any other survivors on my way, he wants me to let him know.");
 
 		AI_StopProcessInfos	(self);
 
@@ -53,10 +53,10 @@ FUNC VOID Info_Mod_Fisk_NW_Hi_Info()
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_17"); //Klar, mach ich. Viel Glück noch.
-		AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_18"); //Danke ... das kann ich echt gebrauchen.
+		AI_Output(hero, self, "Info_Mod_Fisk_NW_Hi_15_17"); //Sure, I will. Good luck to you.
+		AI_Output(self, hero, "Info_Mod_Fisk_NW_Hi_12_18"); //Thank you.... I could really use that.
 
-		B_LogEntry	(TOPIC_MOD_LEISEHOFFNUNG, "Ich habe Fisk in Khorinis getroffen. Mit nur einer Hand voll Begleiter ist es ihm gelungen, den Orks zu entkommen. Er zweifelt daran, dass es sonst noch jemand aus dem Lager geschafft hat. Falls ich jedoch noch weiteren Überlebenden auf meinem Weg begegnen sollte, will er, dass ich ihm Bescheid gebe.");
+		B_LogEntry	(TOPIC_MOD_LEISEHOFFNUNG, "I met Fisk in Khorinis. With only a handful of companions, he managed to escape the orcs. He doubts that anyone else made it out of the camp. However, if I should meet any other survivors on my way, he wants me to let him know.");
 	};
 };
 
@@ -80,11 +80,11 @@ FUNC INT Info_Mod_Fisk_NW_Markt_Condition()
 
 FUNC VOID Info_Mod_Fisk_NW_Markt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Markt_12_00"); //Ah, da bist du ja. Vielen Dank für deine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Markt_12_01"); //Sonst wäre es wohl um einiges schwieriger geworden in die Stadt zu kommen.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_Markt_12_02"); //Aber was sind schon Worte ... hier, ein paar von den Sachen, die ich noch bei mir hatte, als ich aus dem Lager entkam.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Markt_12_00"); //Ah, there you are. Thank you for your help.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Markt_12_01"); //Otherwise it would have been a lot harder to get into town.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_Markt_12_02"); //But what are words... here, some of the things I had with me when I escaped from the camp.
 
-	B_ShowGivenThings	("50 Gold, 3 Erzbrocken, 1 Traumruf und 2 Manaessenzen erhalten");
+	B_ShowGivenThings	("50 gold, 3 chunks of ore, 1 dream call and 2 mana essences received");
 
 	CreateInvItems	(hero, ItMi_Gold, 50);
 	CreateInvItems	(hero, ItMi_Nugget, 3);
@@ -102,7 +102,7 @@ INSTANCE Info_Mod_Fisk_NW_LeiseHoffnung (C_INFO)
 	information	= Info_Mod_Fisk_NW_LeiseHoffnung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich war ein bisschen unterwegs ... und bin tatsächlich jemandem aus dem Alten Lager begegnet.";
+	description	= "I was a little bit on the road.... and I actually met someone from the old camp.";
 };
 
 FUNC INT Info_Mod_Fisk_NW_LeiseHoffnung_Condition()
@@ -116,8 +116,8 @@ FUNC INT Info_Mod_Fisk_NW_LeiseHoffnung_Condition()
 
 FUNC VOID Info_Mod_Fisk_NW_LeiseHoffnung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_15_00"); //Ich war ein bisschen unterwegs ... und bin tatsächlich jemandem aus dem Alten Lager begegnet.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_12_01"); //(aufgeregt) Was?! Wem?
+	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_15_00"); //I was a little bit on the road.... and I actually met someone from the old camp.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_12_01"); //(agitated) What?! To whom?
 
 	Info_ClearChoices	(Info_Mod_Fisk_NW_LeiseHoffnung);
 
@@ -133,29 +133,29 @@ FUNC VOID Info_Mod_Fisk_NW_LeiseHoffnung_Info()
 	if (Mod_Fisk_LH_Mud == 0)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Mud_REL_Hi))
 	{
-		Info_AddChoice	(Info_Mod_Fisk_NW_LeiseHoffnung, "Mud hütet Schafe in Relendel.", Info_Mod_Fisk_NW_LeiseHoffnung_C);
+		Info_AddChoice	(Info_Mod_Fisk_NW_LeiseHoffnung, "Mud guards sheep in Relendel.", Info_Mod_Fisk_NW_LeiseHoffnung_C);
 	};
 	if (Mod_Fisk_LH_Fingers == 0)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Fingers_Kap4))
 	{
-		Info_AddChoice	(Info_Mod_Fisk_NW_LeiseHoffnung, "Fingers ist bei den Banditen. Er scheint ganz gut zurecht zu kommen.", Info_Mod_Fisk_NW_LeiseHoffnung_B);
+		Info_AddChoice	(Info_Mod_Fisk_NW_LeiseHoffnung, "Fingers is with the bandits. He seems to be doing all right.", Info_Mod_Fisk_NW_LeiseHoffnung_B);
 	};
 	if (Mod_Fisk_LH_Scatty == 0)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Scatty_Kap4))
 	{
-		Info_AddChoice	(Info_Mod_Fisk_NW_LeiseHoffnung, "Ich bin Scatty im Sumpflager begegnet.", Info_Mod_Fisk_NW_LeiseHoffnung_A);
+		Info_AddChoice	(Info_Mod_Fisk_NW_LeiseHoffnung, "I ran into Scatty at the swamp.", Info_Mod_Fisk_NW_LeiseHoffnung_A);
 	};
 };
 
 FUNC VOID Info_Mod_Fisk_NW_LeiseHoffnung_D()
 {
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_00"); //Wie dem auch sei, tausend Dank für diese Auskunft.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_01"); //Das zu wissen ist eine echte Erleichterung.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_02"); //Dafür verrate ich dir auch einige Tricks, die du beim Handeln unbedingt beachten musst.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_03"); //Wenn du es auf einen Gegenstand wirklich abgesehen hast, darfst du es auf keinen Fall durchblicken lassen.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_04"); //Täusche erst einmal nur verhaltenes Interesse vor, biete kleine Beträge und zögere dabei, auf höhere Gebote einzugehen.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_05"); //Dann erregst du keine Aufmerksamkeit, niemand wird mitbieten, und der Händler wird es dir zu einem viel geringeren Preis überlassen, weil er sich sicher ist, dass du nicht bereit bist, mehr dafür herzugeben.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_06"); //Bluffen ist eben das halbe Geschäft.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_00"); //However, thank you very much for that information.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_01"); //Knowing that's a real relief.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_02"); //But I'll tell you some tricks, which you have to take into account when trading.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_03"); //If you're really looking for an item, don't let it through.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_04"); //First of all, pretend that you are only a little bit interested, offer small amounts and hesitate to accept higher bids.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_05"); //Then you don't attract any attention, no one will bid, and the dealer will leave it to you at a much lower price, because he is sure that you are not willing to give more for it.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_D_12_06"); //Bluffing is half the battle.
 
 	B_GivePlayerXP	(600);
 
@@ -175,9 +175,9 @@ FUNC VOID Info_Mod_Fisk_NW_LeiseHoffnung_BACK()
 
 FUNC VOID Info_Mod_Fisk_NW_LeiseHoffnung_C()
 {
-	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_C_15_00"); //Mud hütet Schafe in Relendel.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_C_12_01"); //Was?! Mud? Wenn ich es von jemandem sicherlich nicht erwartet hätte, dann von ihm.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_C_12_02"); //Aber immerhin. Wenn er es sogar geschafft hat, stehen die Chancen gut, dass auch noch einige andere mit ihrem Leben davongekommen sind.
+	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_C_15_00"); //Mud guards sheep in Relendel.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_C_12_01"); //What?! Mud? If I certainly wasn't expecting it from someone, it was from him.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_C_12_02"); //But at least. If he has even managed it, the chances are good that some others have escaped with their lives.
 
 	Mod_Fisk_LeiseHoffnung += 1;
 
@@ -197,9 +197,9 @@ FUNC VOID Info_Mod_Fisk_NW_LeiseHoffnung_C()
 
 FUNC VOID Info_Mod_Fisk_NW_LeiseHoffnung_B()
 {
-	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_B_15_00"); //Fingers ist bei den Banditen. Er scheint ganz gut zurecht zu kommen.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_B_12_01"); //Fingers also. Der Meister der Diebestalente hat seine Kunst mal wieder unter Beweis gestellt.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_B_12_02"); //Ich ziehe meinen Hut vor ihm.
+	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_B_15_00"); //Fingers is with the bandits. He seems to be doing all right.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_B_12_01"); //Fingers, then. The master of the thief talents has once again proven his art.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_B_12_02"); //I take my hat off to him.
 
 	Mod_Fisk_LeiseHoffnung += 1;
 
@@ -219,9 +219,9 @@ FUNC VOID Info_Mod_Fisk_NW_LeiseHoffnung_B()
 
 FUNC VOID Info_Mod_Fisk_NW_LeiseHoffnung_A()
 {
-	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_A_15_00"); //Ich bin Scatty im Sumpflager begegnet.
-	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_A_15_01"); //Er darf dort jetzt Novizen bei der Sumpfkrauternte beschützen.
-	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_A_12_02"); //Scatty, dieser alte Haudegen. Ja, wenn sich einer durchgeschlagen hat, dann sicherlich er.
+	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_A_15_00"); //I ran into Scatty at the swamp.
+	AI_Output(hero, self, "Info_Mod_Fisk_NW_LeiseHoffnung_A_15_01"); //He is now allowed to protect novices there during the bogweed harvest.
+	AI_Output(self, hero, "Info_Mod_Fisk_NW_LeiseHoffnung_A_12_02"); //Scatty, that old warden. Yeah, if anyone's gotten away with it, he certainly has.
 
 	Mod_Fisk_LeiseHoffnung += 1;
 

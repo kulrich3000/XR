@@ -15,13 +15,13 @@ FUNC INT Info_Mod_GeistDesAusgleichs_Hi_Condition()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_00"); //Ich bin der Geist des Ausgleichs. Jenen, die meinen würdig zu sein, werde ich die Prüfung auferlegen.
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Hi_15_01"); //Prüfung? Nicht so schnell! Worum geht es überhaupt?
-	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_02"); //Es geht um das Verständnis bestimmter Tugenden. Rätsel werde ich dir aufgeben.
-	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_03"); //Wirst du alle richtig beantworten können, winkt dir eine Belohnung.
-	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_04"); //Doch wisse, dass sie noch niemals jemand bestanden hat.
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Hi_15_05"); //Droht mir Gefahr, wenn ich scheitere?
-	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_06"); //Nur jene, dass du die Prüfung auf Neue beginnen musst, willst du sie bestehen. Also, wagst du es?
+	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_00"); //I am the spirit of compensation. To those who are worthy of me, I will impose the test.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Hi_15_01"); //Exam? Not so fast! What's this all about?
+	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_02"); //It's about understanding certain virtues. I'll give you up on riddles.
+	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_03"); //If you will be able to answer all of them correctly, you will receive a reward.
+	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_04"); //But know that no one has ever passed.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Hi_15_05"); //Is there any danger if I fail?
+	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Hi_22_06"); //Only those that you have to start the test anew, if you want to pass it. So, dare you?
 };
 
 FUNC VOID B_SetRaetsel()
@@ -79,113 +79,113 @@ FUNC VOID B_Raetseln(var int raetsel)
 
 	if (raetsel == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_01_22_00"); //Wer fiel dem machtvollen Hammer zum Opfer?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_01_22_00"); //Who fell victim to the powerful hammer?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Verwegene.", Info_Mod_GeistDesAusgleichs_Raetsel_01_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Das Tier.", Info_Mod_GeistDesAusgleichs_Raetsel_01_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Dämon.", Info_Mod_GeistDesAusgleichs_Raetsel_01_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Untote.", Info_Mod_GeistDesAusgleichs_Raetsel_01_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Wächter.", Info_Mod_GeistDesAusgleichs_Raetsel_01_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Golem.", Info_Mod_GeistDesAusgleichs_Raetsel_01_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The daring one.", Info_Mod_GeistDesAusgleichs_Raetsel_01_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The animal.", Info_Mod_GeistDesAusgleichs_Raetsel_01_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The demon.", Info_Mod_GeistDesAusgleichs_Raetsel_01_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The undead.", Info_Mod_GeistDesAusgleichs_Raetsel_01_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The guard.", Info_Mod_GeistDesAusgleichs_Raetsel_01_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The Golem.", Info_Mod_GeistDesAusgleichs_Raetsel_01_A);
 	}
 	else if (raetsel == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_02_22_01"); //Unter welcher Bürde litt der Letzte?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_02_22_01"); //What burden did the last one suffer?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Gier.", Info_Mod_GeistDesAusgleichs_Raetsel_02_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Finsternis.", Info_Mod_GeistDesAusgleichs_Raetsel_02_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Dem Gift.", Info_Mod_GeistDesAusgleichs_Raetsel_02_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Fäulnis.", Info_Mod_GeistDesAusgleichs_Raetsel_02_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Dem Blute.", Info_Mod_GeistDesAusgleichs_Raetsel_02_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Pest.", Info_Mod_GeistDesAusgleichs_Raetsel_02_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Greed.", Info_Mod_GeistDesAusgleichs_Raetsel_02_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The darkness.", Info_Mod_GeistDesAusgleichs_Raetsel_02_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The poison.", Info_Mod_GeistDesAusgleichs_Raetsel_02_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The rot.", Info_Mod_GeistDesAusgleichs_Raetsel_02_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The blood.", Info_Mod_GeistDesAusgleichs_Raetsel_02_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The plague.", Info_Mod_GeistDesAusgleichs_Raetsel_02_A);
 	}
 	else if (raetsel == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_03_22_02"); //Worum stritten jene zwei, die sich in ihrem Wesen doch so gleich?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_03_22_02"); //What fought those two, who were so alike in their nature?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Um die Erde.", Info_Mod_GeistDesAusgleichs_Raetsel_03_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Um den Nachlass.", Info_Mod_GeistDesAusgleichs_Raetsel_03_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Um das Leben.", Info_Mod_GeistDesAusgleichs_Raetsel_03_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Um die Wiedergeburt.", Info_Mod_GeistDesAusgleichs_Raetsel_03_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Um die Macht.", Info_Mod_GeistDesAusgleichs_Raetsel_03_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Um das Gold.", Info_Mod_GeistDesAusgleichs_Raetsel_03_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Around the earth.", Info_Mod_GeistDesAusgleichs_Raetsel_03_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The estate.", Info_Mod_GeistDesAusgleichs_Raetsel_03_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "About life.", Info_Mod_GeistDesAusgleichs_Raetsel_03_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "About rebirth.", Info_Mod_GeistDesAusgleichs_Raetsel_03_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The Force.", Info_Mod_GeistDesAusgleichs_Raetsel_03_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "About the gold.", Info_Mod_GeistDesAusgleichs_Raetsel_03_A);
 	}
 	else if (raetsel == 3)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_04_22_03"); //Der Eindringling glaubte sich vom Göttlichen umgeben und fiel doch welcher Macht anheim?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_04_22_03"); //The invader believed to be surrounded by the divine and yet he fell to what power?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Dem Tier.", Info_Mod_GeistDesAusgleichs_Raetsel_04_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Wollust.", Info_Mod_GeistDesAusgleichs_Raetsel_04_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Gier.", Info_Mod_GeistDesAusgleichs_Raetsel_04_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Dem Dämonischen.", Info_Mod_GeistDesAusgleichs_Raetsel_04_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Verdammnis.", Info_Mod_GeistDesAusgleichs_Raetsel_04_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Finsternis.", Info_Mod_GeistDesAusgleichs_Raetsel_04_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The animal.", Info_Mod_GeistDesAusgleichs_Raetsel_04_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The lust.", Info_Mod_GeistDesAusgleichs_Raetsel_04_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Greed.", Info_Mod_GeistDesAusgleichs_Raetsel_04_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Demonic.", Info_Mod_GeistDesAusgleichs_Raetsel_04_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The damnation.", Info_Mod_GeistDesAusgleichs_Raetsel_04_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The darkness.", Info_Mod_GeistDesAusgleichs_Raetsel_04_A);
 	}
 	else if (raetsel == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_05_22_04"); //Zwei aus längst vergangenen Tagen. Der eine nahm die Bürde aus Stein. Wofür?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_05_22_04"); //Two from days long gone. One of them took the burden of stone. For what?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Als Thron für den zweiten.", Info_Mod_GeistDesAusgleichs_Raetsel_05_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Als seine Last.", Info_Mod_GeistDesAusgleichs_Raetsel_05_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Als sein Gefängnis.", Info_Mod_GeistDesAusgleichs_Raetsel_05_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Als seinen Diener.", Info_Mod_GeistDesAusgleichs_Raetsel_05_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Als Träger seiner Macht.", Info_Mod_GeistDesAusgleichs_Raetsel_05_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Als Zeugnis seiner Herkunft.", Info_Mod_GeistDesAusgleichs_Raetsel_05_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Throne for the second.", Info_Mod_GeistDesAusgleichs_Raetsel_05_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "As his burden.", Info_Mod_GeistDesAusgleichs_Raetsel_05_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "As his prison.", Info_Mod_GeistDesAusgleichs_Raetsel_05_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "As his servant.", Info_Mod_GeistDesAusgleichs_Raetsel_05_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Carrying his power.", Info_Mod_GeistDesAusgleichs_Raetsel_05_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "As a testimony to his origin.", Info_Mod_GeistDesAusgleichs_Raetsel_05_A);
 	}
 	else if (raetsel == 5)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_06_22_05"); //Jener kam von außen und betrat die Halle der Gemeinschaft. Wovon war er durchdrungen?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_06_22_05"); //He came from outside and entered the hall of the community. What was it permeated by?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Vom Göttlichen.", Info_Mod_GeistDesAusgleichs_Raetsel_06_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Vom Stein.", Info_Mod_GeistDesAusgleichs_Raetsel_06_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Von Zweifeln.", Info_Mod_GeistDesAusgleichs_Raetsel_06_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Vom Wasser.", Info_Mod_GeistDesAusgleichs_Raetsel_06_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Von Niedertracht.", Info_Mod_GeistDesAusgleichs_Raetsel_06_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Vom Feuer.", Info_Mod_GeistDesAusgleichs_Raetsel_06_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From the divine.", Info_Mod_GeistDesAusgleichs_Raetsel_06_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From the stone.", Info_Mod_GeistDesAusgleichs_Raetsel_06_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Of doubts.", Info_Mod_GeistDesAusgleichs_Raetsel_06_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From the water.", Info_Mod_GeistDesAusgleichs_Raetsel_06_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From infamy.", Info_Mod_GeistDesAusgleichs_Raetsel_06_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From the fire.", Info_Mod_GeistDesAusgleichs_Raetsel_06_A);
 	}
 	else if (raetsel == 6)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_07_22_06"); //Der Feind betrat die Gestade des Gottes. Wovon wurde er niedergestreckt?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_07_22_06"); //The enemy entered the shore of God. What was he struck down by?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Vom Wächter.", Info_Mod_GeistDesAusgleichs_Raetsel_07_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Vom Diener.", Info_Mod_GeistDesAusgleichs_Raetsel_07_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Von seinem Ebenbild.", Info_Mod_GeistDesAusgleichs_Raetsel_07_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Vom Blitz.", Info_Mod_GeistDesAusgleichs_Raetsel_07_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Von der Lanze.", Info_Mod_GeistDesAusgleichs_Raetsel_07_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Vom Schwert.", Info_Mod_GeistDesAusgleichs_Raetsel_07_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From the guard.", Info_Mod_GeistDesAusgleichs_Raetsel_07_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From the servant.", Info_Mod_GeistDesAusgleichs_Raetsel_07_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From his own image.", Info_Mod_GeistDesAusgleichs_Raetsel_07_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From the lightning.", Info_Mod_GeistDesAusgleichs_Raetsel_07_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From the lance.", Info_Mod_GeistDesAusgleichs_Raetsel_07_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "From the sword.", Info_Mod_GeistDesAusgleichs_Raetsel_07_A);
 	}
 	else if (raetsel == 7)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_08_22_07"); //Obdach, Speis und Trank gewährte er ihm, unwissend, das jener nicht recht schaffend. Denn wonach trachtete sein Gast?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_08_22_07"); //He granted him shelter, food and drink, ignorant that he did not quite create it. Because what was his guest looking for?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Nach seinem Kind.", Info_Mod_GeistDesAusgleichs_Raetsel_08_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Nach seinem Wissen.", Info_Mod_GeistDesAusgleichs_Raetsel_08_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Nach seinem Frau.", Info_Mod_GeistDesAusgleichs_Raetsel_08_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Nach seinem Besitz.", Info_Mod_GeistDesAusgleichs_Raetsel_08_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Nach seiner Seele.", Info_Mod_GeistDesAusgleichs_Raetsel_08_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Nach seinem Leben.", Info_Mod_GeistDesAusgleichs_Raetsel_08_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "After his kid.", Info_Mod_GeistDesAusgleichs_Raetsel_08_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "To his knowledge.", Info_Mod_GeistDesAusgleichs_Raetsel_08_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "After his wife.", Info_Mod_GeistDesAusgleichs_Raetsel_08_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "After his possession.", Info_Mod_GeistDesAusgleichs_Raetsel_08_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "To his soul.", Info_Mod_GeistDesAusgleichs_Raetsel_08_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "After his life.", Info_Mod_GeistDesAusgleichs_Raetsel_08_A);
 	}
 	else if (raetsel == 8)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_09_22_08"); //Jener hatte große Tapferkeit bewiesen, die eines Himmlischen würdig. Was war das Werkzeug seiner Taten?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_09_22_08"); //He had shown great courage, worthy of a heavenly one. What was the instrument of his deeds?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Die Unwissenheit.", Info_Mod_GeistDesAusgleichs_Raetsel_09_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Die bloßen Hände.", Info_Mod_GeistDesAusgleichs_Raetsel_09_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Trank.", Info_Mod_GeistDesAusgleichs_Raetsel_09_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Magie.", Info_Mod_GeistDesAusgleichs_Raetsel_09_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Sein Wille.", Info_Mod_GeistDesAusgleichs_Raetsel_09_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Das Schwert.", Info_Mod_GeistDesAusgleichs_Raetsel_09_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The ignorance.", Info_Mod_GeistDesAusgleichs_Raetsel_09_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The bare hands.", Info_Mod_GeistDesAusgleichs_Raetsel_09_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The potion.", Info_Mod_GeistDesAusgleichs_Raetsel_09_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Magic.", Info_Mod_GeistDesAusgleichs_Raetsel_09_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "His will.", Info_Mod_GeistDesAusgleichs_Raetsel_09_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The sword.", Info_Mod_GeistDesAusgleichs_Raetsel_09_A);
 	}
 	else if (raetsel == 9)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_10_22_09"); //Er entriss des anderen Besitz, nicht ahnend, dass sein eigenes Schicksal damit besiegelt. Denn welches Übel lag darin verborgen?
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_10_22_09"); //He snatched from the other's possessions, unaware that his own destiny was sealed with it. For what evil was hidden therein?
 
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Die Pest.", Info_Mod_GeistDesAusgleichs_Raetsel_10_F);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Das Gift.", Info_Mod_GeistDesAusgleichs_Raetsel_10_E);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Wahnsinn.", Info_Mod_GeistDesAusgleichs_Raetsel_10_D);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Das Siechtum.", Info_Mod_GeistDesAusgleichs_Raetsel_10_C);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Dämon.", Info_Mod_GeistDesAusgleichs_Raetsel_10_B);
-		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Der Feuertod.", Info_Mod_GeistDesAusgleichs_Raetsel_10_A);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The plague.", Info_Mod_GeistDesAusgleichs_Raetsel_10_F);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The poison.", Info_Mod_GeistDesAusgleichs_Raetsel_10_E);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The madness.", Info_Mod_GeistDesAusgleichs_Raetsel_10_D);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The infirmity.", Info_Mod_GeistDesAusgleichs_Raetsel_10_C);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "The demon.", Info_Mod_GeistDesAusgleichs_Raetsel_10_B);
+		Info_AddChoice	(Info_Mod_GeistDesAusgleichs_Raetsel, "Death by fire.", Info_Mod_GeistDesAusgleichs_Raetsel_10_A);
 	};
 };
 
@@ -193,13 +193,13 @@ FUNC VOID B_RaetselAuswertung()
 {
 	if (Mod_GdG_Richtig == 5)
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_00"); //Du hast weise und recht geantwortet.
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_01"); //Die Bedeutung des Humors hast du verstanden, und deine Fähigkeiten, auf andere Menschen Einfluss zu nehmen, werde ich vergrößern.
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_02"); //Meine Aufgabe ist damit getan. Leb wohl.
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_00"); //You answered wisely and rightly.
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_01"); //You have understood the meaning of humor, and I will increase your ability to influence other people.
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_02"); //My job is done with that. Farewell.
 
 		B_GivePlayerXP	(1500);
 
-		B_ShowGivenThings	("Rune des Vergessens, 3 Spruchrollen Angst und 5 Spruchrollen Schlaf");
+		B_ShowGivenThings	("Rune of oblivion, 3 spell rolls of fear and 5 spell rolls of sleep");
 
 		CreateInvItems	(hero, ItRu_Charm, 1);
 		CreateInvItems	(hero, ItSc_Fear, 3);
@@ -207,8 +207,8 @@ FUNC VOID B_RaetselAuswertung()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_03"); //Deine Antworten waren fehlerhaft. Entweder mangelt es dir am Wissen, oder am Verständnis.
-		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_04"); //Komme wieder, wenn du so weit bist.
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_03"); //Your answers were flawed. You either lack knowledge or lack understanding.
+		AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_RaetselAuswertung_01_22_04"); //Come back when you're ready.
 	};
 
 	Info_ClearChoices	(Info_Mod_GeistDesAusgleichs_Raetsel);
@@ -246,7 +246,7 @@ INSTANCE Info_Mod_GeistDesAusgleichs_Raetsel (C_INFO)
 	information	= Info_Mod_GeistDesAusgleichs_Raetsel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will mich deiner Prüfung unterziehen.";
+	description	= "I want to take your test.";
 };
 
 FUNC INT Info_Mod_GeistDesAusgleichs_Raetsel_Condition()
@@ -260,8 +260,8 @@ FUNC INT Info_Mod_GeistDesAusgleichs_Raetsel_Condition()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_15_00"); //Ich will mich deiner Prüfung unterziehen.
-	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_22_01"); //So sei es. Höre denn nun und antworte mit Bedacht.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_15_00"); //I want to take your test.
+	AI_Output(self, hero, "Info_Mod_GeistDesAusgleichs_Raetsel_22_01"); //So be it. Listen and answer with caution.
 
 	Mod_GdG_Frage = 0;
 
@@ -276,14 +276,14 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_Info()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_01_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_F_15_00"); //Der Verwegene.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_F_15_00"); //The daring one.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_01_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_E_15_00"); //Das Tier.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_E_15_00"); //The animal.
 
 	Mod_GdG_Richtig += 1;
 
@@ -292,63 +292,63 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_01_E()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_01_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_D_15_00"); //Der Dämon.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_D_15_00"); //The demon.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_01_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_C_15_00"); //Der Untote.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_C_15_00"); //The undead.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_01_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_B_15_00"); //Der Wächter.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_B_15_00"); //The guard.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_01_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_A_15_00"); //Der Golem.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_01_A_15_00"); //The Golem.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_02_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_F_15_00"); //Der Gier.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_F_15_00"); //Greed.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_02_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_E_15_00"); //Der Finsternis.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_E_15_00"); //The darkness.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_02_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_D_15_00"); //Dem Gift.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_D_15_00"); //The poison.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_02_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_C_15_00"); //Der Fäulnis.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_C_15_00"); //The rot.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_02_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_B_15_00"); //Dem Blute.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_B_15_00"); //The blood.
 
 	Mod_GdG_Richtig += 1;
 
@@ -357,28 +357,28 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_02_B()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_02_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_A_15_00"); //Der Pest.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_02_A_15_00"); //The plague.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_03_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_F_15_00"); //Um die Erde.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_F_15_00"); //Around the earth.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_03_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_E_15_00"); //Um den Nachlass.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_E_15_00"); //The estate.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_03_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_D_15_00"); //Um das Leben.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_D_15_00"); //About life.
 
 	Mod_GdG_Richtig += 1;
 
@@ -387,28 +387,28 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_03_D()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_03_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_C_15_00"); //Um die Wiedergeburt.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_C_15_00"); //About rebirth.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_03_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_B_15_00"); //Um die Macht.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_B_15_00"); //The Force.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_03_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_A_15_00"); //Um das Gold.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_03_A_15_00"); //About the gold.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_04_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_F_15_00"); //Dem Tier.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_F_15_00"); //The animal.
 
 	Mod_GdG_Richtig += 1;
 
@@ -417,77 +417,77 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_04_F()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_04_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_E_15_00"); //Der Wollust.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_E_15_00"); //The lust.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_04_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_D_15_00"); //Der Gier.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_D_15_00"); //Greed.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_04_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_C_15_00"); //Dem Dämonischen.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_C_15_00"); //Demonic.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_04_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_B_15_00"); //Der Verdammnis.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_B_15_00"); //The damnation.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_04_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_A_15_00"); //Der Finsternis.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_04_A_15_00"); //The darkness.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_05_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_F_15_00"); //Als Thron für den zweiten.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_F_15_00"); //Throne for the second.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_05_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_E_15_00"); //Als seine Last.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_E_15_00"); //As his burden.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_05_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_D_15_00"); //Als sein Gefängnis.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_D_15_00"); //As his prison.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_05_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_C_15_00"); //Als seinen Diener.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_C_15_00"); //As his servant.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_05_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_B_15_00"); //Als Träger seiner Macht.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_B_15_00"); //Carrying his power.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_05_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_A_15_00"); //Als Zeugnis seiner Herkunft.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_05_A_15_00"); //As a testimony to his origin.
 
 	Mod_GdG_Richtig += 1;
 
@@ -496,28 +496,28 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_05_A()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_06_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_F_15_00"); //Vom Göttlichen.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_F_15_00"); //From the divine.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_06_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_E_15_00"); //Vom Stein.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_E_15_00"); //From the stone.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_06_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_D_15_00"); //Von Zweifeln.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_D_15_00"); //Of doubts.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_06_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_C_15_00"); //Vom Wasser.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_C_15_00"); //From the water.
 
 	Mod_GdG_Richtig += 1;
 
@@ -526,49 +526,49 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_06_C()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_06_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_B_15_00"); //Von Niedertracht.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_B_15_00"); //From infamy.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_06_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_A_15_00"); //Vom Feuer.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_06_A_15_00"); //From the fire.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_07_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_F_15_00"); //Vom Wächter.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_F_15_00"); //From the guard.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_07_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_E_15_00"); //Vom Diener.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_E_15_00"); //From the servant.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_07_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_D_15_00"); //Von seinem Ebenbild.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_D_15_00"); //From his own image.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_07_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_C_15_00"); //Vom Blitz.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_C_15_00"); //From the lightning.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_07_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_B_15_00"); //Von der Lanze.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_B_15_00"); //From the lance.
 
 	Mod_GdG_Richtig += 1;
 
@@ -577,14 +577,14 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_07_B()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_07_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_A_15_00"); //Vom Schwert.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_07_A_15_00"); //From the sword.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_08_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_F_15_00"); //Nach seinem Kind.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_F_15_00"); //After his kid.
 
 	Mod_GdG_Richtig += 1;
 
@@ -593,56 +593,56 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_08_F()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_08_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_E_15_00"); //Nach seinem Wissen.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_E_15_00"); //To his knowledge.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_08_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_D_15_00"); //Nach seinem Frau.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_D_15_00"); //After his wife.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_08_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_C_15_00"); //Nach seinem Besitz.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_C_15_00"); //After his possession.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_08_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_B_15_00"); //Nach seiner Seele.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_B_15_00"); //To his soul.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_08_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_A_15_00"); //Nach seinem Leben.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_08_A_15_00"); //After his life.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_09_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_F_15_00"); //Die Unwissenheit.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_F_15_00"); //The ignorance.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_09_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_E_15_00"); //Die bloßen Hände.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_E_15_00"); //The bare hands.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_09_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_D_15_00"); //Der Trank.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_D_15_00"); //The potion.
 
 	Mod_GdG_Richtig += 1;
 
@@ -651,35 +651,35 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_09_D()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_09_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_C_15_00"); //Magie.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_C_15_00"); //Magic.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_09_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_B_15_00"); //Sein Wille.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_B_15_00"); //His will.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_09_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_A_15_00"); //Das Schwert.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_09_A_15_00"); //The sword.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_10_F()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_F_15_00"); //Die Pest.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_F_15_00"); //The plague.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_10_E()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_E_15_00"); //Das Gift.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_E_15_00"); //The poison.
 
 	Mod_GdG_Richtig += 1;
 
@@ -688,28 +688,28 @@ FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_10_E()
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_10_D()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_D_15_00"); //Der Wahnsinn.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_D_15_00"); //The madness.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_10_C()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_C_15_00"); //Das Siechtum.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_C_15_00"); //The infirmity.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_10_B()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_B_15_00"); //Der Dämon.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_B_15_00"); //The demon.
 
 	B_Raetseln2();
 };
 
 FUNC VOID Info_Mod_GeistDesAusgleichs_Raetsel_10_A()
 {
-	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_A_15_00"); //Der Feuertod.
+	AI_Output(hero, self, "Info_Mod_GeistDesAusgleichs_Raetsel_10_A_15_00"); //Death by fire.
 
 	B_Raetseln2();
 };

@@ -18,7 +18,7 @@ INSTANCE PC_Hochofen_ReinerErzrohling_Small (C_INFO)
 	information	= PC_Hochofen_ReinerErzrohling_Small_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kleinen reinen Erzrohling herstellen";
+	description	= "Making small, pure ore blanks";
 };
 
 FUNC INT PC_Hochofen_ReinerErzrohling_Small_Condition()
@@ -39,7 +39,7 @@ FUNC VOID PC_Hochofen_ReinerErzrohling_Small_Info()
 	Npc_RemoveInvItems	(hero, ItAt_DragonElixier, 2);
 	Npc_RemoveInvItems	(hero, ItMi_Nugget, 60);
 
-	Print	("Kleinen reinen Erzrohling erhalten!");
+	Print	("Get small pure ore blank!");
 };
 
 INSTANCE PC_Hochofen_ReinerErzrohling_Big (C_INFO)
@@ -50,7 +50,7 @@ INSTANCE PC_Hochofen_ReinerErzrohling_Big (C_INFO)
 	information	= PC_Hochofen_ReinerErzrohling_Big_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Groﬂen reinen Erzrohling herstellen";
+	description	= "Manufacture large pure ore blanks";
 };
 
 FUNC INT PC_Hochofen_ReinerErzrohling_Big_Condition()
@@ -71,7 +71,7 @@ FUNC VOID PC_Hochofen_ReinerErzrohling_Big_Info()
 	Npc_RemoveInvItems	(hero, ItAt_DragonElixier, 2);
 	Npc_RemoveInvItems	(hero, ItMi_Nugget, 80);
 
-	Print	("Groﬂen reinen Erzrohling erhalten!");
+	Print	("Large pure ore blank obtained!");
 };
 
 INSTANCE PC_Hochofen_EXIT (C_INFO)

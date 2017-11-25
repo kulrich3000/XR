@@ -9,7 +9,7 @@ INSTANCE Info_Mod_Alrik_Hi (C_INFO)
 	information	= Info_Mod_Alrik_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Alrik_Hi_Condition()
@@ -21,19 +21,19 @@ FUNC VOID Info_Mod_Alrik_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_01"); //Ich bin Alrik.
+	AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_01"); //I'm Alrik.
 
 	if (Npc_GetDistToWP(self, "NW_CITY_PATH_HABOUR_16_01") < 1000)
 	{
-		AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_02"); //Ich mach hier manchmal Schaukämpfe.
+		AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_02"); //I do show fights here sometimes.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_03"); //Ich mach manchmal Schaukämpfe hinter dem Lagerhaus im Hafenviertel.
+		AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_03"); //I sometimes do exhibition fights behind the warehouse in the harbour district.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_04"); //Du kannst mich auch mal herausfordern, wenn du willst.
-	AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_05"); //Der Einsatz beträgt für jeden Teilnehmer 100 Goldmünzen.
+	AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_04"); //You can challenge me sometime if you want.
+	AI_Output(self, hero, "Info_Mod_Alrik_Hi_09_05"); //The stake is 100 gold coins for each participant.
 
 	B_StartOtherRoutine	(self, "START");
 	B_StartOtherRoutine	(Mod_1051_VLK_Buerger_NW, "START");
@@ -47,7 +47,7 @@ INSTANCE Info_Mod_Alrik_Regeln (C_INFO)
 	information	= Info_Mod_Alrik_Regeln_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibt es Regeln beim Kampf?";
+	description	= "Are there any rules in the fight?";
 };
 
 FUNC INT Info_Mod_Alrik_Regeln_Condition()
@@ -60,9 +60,9 @@ FUNC INT Info_Mod_Alrik_Regeln_Condition()
 
 FUNC VOID Info_Mod_Alrik_Regeln_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alrik_Regeln_15_00"); //Gibt es Regeln beim Kampf?
-	AI_Output(self, hero, "Info_Mod_Alrik_Regeln_09_01"); //Keine Magie, keine Fernwaffen. Wenn dein Gegner am Boden liegt, hast du gewonnen.
-	AI_Output(self, hero, "Info_Mod_Alrik_Regeln_09_02"); //Und nichts an die Miliz weitersagen. (lacht)
+	AI_Output(hero, self, "Info_Mod_Alrik_Regeln_15_00"); //Are there any rules in the fight?
+	AI_Output(self, hero, "Info_Mod_Alrik_Regeln_09_01"); //No magic, no long-range weapons. If your opponent is on the ground, you have won.
+	AI_Output(self, hero, "Info_Mod_Alrik_Regeln_09_02"); //And tell nothing to the militia. (laughs)
 };
 
 INSTANCE Info_Mod_Alrik_Kap2 (C_INFO)
@@ -88,7 +88,7 @@ FUNC INT Info_Mod_Alrik_Kap2_Condition()
 
 FUNC VOID Info_Mod_Alrik_Kap2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alrik_Kap2_09_00"); //Ich bin stärker geworden. Lass es uns noch mal probieren.
+	AI_Output(self, hero, "Info_Mod_Alrik_Kap2_09_00"); //I've grown stronger. Let's try it again.
 
 	Mod_AlrikSchaukampf = 0;
 };
@@ -116,7 +116,7 @@ FUNC INT Info_Mod_Alrik_Kap3_Condition()
 
 FUNC VOID Info_Mod_Alrik_Kap3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alrik_Kap3_09_00"); //Deine Bekanntheit steigt. Wie gerne würde ich dich endlich mal besiegen.
+	AI_Output(self, hero, "Info_Mod_Alrik_Kap3_09_00"); //You're getting better known. How I'd like to finally defeat you.
 
 	Mod_AlrikSchaukampf = 0;
 };
@@ -144,7 +144,7 @@ FUNC INT Info_Mod_Alrik_Kap4_Condition()
 
 FUNC VOID Info_Mod_Alrik_Kap4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alrik_Kap4_09_00"); //Ich habe so hart wie noch nie in meinem Leben trainiert, um dir gewachsen zu sein.
+	AI_Output(self, hero, "Info_Mod_Alrik_Kap4_09_00"); //I've trained harder than ever in my life to grow up with you.
 
 	Mod_AlrikSchaukampf = 0;
 };
@@ -172,7 +172,7 @@ FUNC INT Info_Mod_Alrik_Kap5_Condition()
 
 FUNC VOID Info_Mod_Alrik_Kap5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alrik_Kap5_09_00"); //(verzweifelt) Ein letztes Mal will ich es noch versuchen!
+	AI_Output(self, hero, "Info_Mod_Alrik_Kap5_09_00"); //(desperate) One last time I want to try it!
 
 	Mod_AlrikSchaukampf = 0;
 };
@@ -185,7 +185,7 @@ INSTANCE Info_Mod_Alrik_Schaukampf (C_INFO)
 	information	= Info_Mod_Alrik_Schaukampf_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich fordere dich heraus.";
+	description	= "I challenge you.";
 };
 
 FUNC INT Info_Mod_Alrik_Schaukampf_Condition()
@@ -201,18 +201,18 @@ FUNC INT Info_Mod_Alrik_Schaukampf_Condition()
 
 FUNC VOID Info_Mod_Alrik_Schaukampf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alrik_Schaukampf_15_00"); //Ich fordere dich heraus.
+	AI_Output(hero, self, "Info_Mod_Alrik_Schaukampf_15_00"); //I challenge you.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 	Npc_RemoveInvItems(self, ItMi_Gold, 100);
 
 	if (Kapitel == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Alrik_Schaukampf_09_01"); //Das sieht mir ja nach einer einfachen Aufgabe für mich aus.
+		AI_Output(self, hero, "Info_Mod_Alrik_Schaukampf_09_01"); //That looks like an easy task to me.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Alrik_Schaukampf_09_02"); //Ein würdiger Gegner!
+		AI_Output(self, hero, "Info_Mod_Alrik_Schaukampf_09_02"); //A worthy opponent!
 	};
 
 	B_SetAttributesToChapter	(self, Kapitel);
@@ -257,21 +257,21 @@ FUNC VOID Info_Mod_Alrik_Umgehauen_Info()
 		{
 			if (Kapitel == 1)
 			{
-				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_00"); //Junge, Junge, dich hab ich unterschätzt.
+				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_00"); //Boy, boy, I underestimated you.
 			}
 			else if (Kapitel == 2)
 			|| (Kapitel == 4)
 			{
-				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_01"); //Nicht schon wieder ...
+				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_01"); //Not again....
 			}
 			else if (Kapitel == 3)
 			{
-				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_02"); //Ich werde nicht aufgeben!
+				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_02"); //I'm not giving up!
 			}
 			else if (Kapitel == 5)
 			{
-				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_03"); //Das war's. Ich bin dir nicht gewachsen.
-				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_04"); //Du bist mittlerweile so mächtig, dass du dich wahrscheinlich sogar mit einer Dämonenarmee anlegen könntest.
+				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_03"); //That's all. I'm no match for you.
+				AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_04"); //You are now so powerful that you could probably even mess with an army of demons.
 			};
 
 			B_GiveInvItems	(self, hero, ItMi_Gold, 200);		
@@ -280,7 +280,7 @@ FUNC VOID Info_Mod_Alrik_Umgehauen_Info()
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_05"); //Du bist eine gute Einnahmequelle. Wenn du Lust auf eine weitere Runde hast, komm wieder vorbei.
+			AI_Output(self, hero, "Info_Mod_Alrik_Umgehauen_09_05"); //You're a good source of income. If you feel like another round, come back.
 
 			Mod_AlrikSchaukampf = 0;
 		};
@@ -301,7 +301,7 @@ INSTANCE Info_Mod_Alrik_Flugblaetter (C_INFO)
 	information	= Info_Mod_Alrik_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Alrik_Flugblaetter_Condition()
@@ -322,11 +322,11 @@ FUNC VOID Info_Mod_Alrik_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Alrik_Flugblaetter_09_01"); //Oh, danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Alrik_Flugblaetter_09_01"); //Oh, thank you. Thank you. Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Alrik_Flugblaetter_09_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Alrik_Flugblaetter_09_02"); //Ah yes. Maybe I'll stop by Matteo's.
 
 	Mod_Flugblaetter += 1;
 
@@ -365,7 +365,7 @@ INSTANCE Info_Mod_Alrik_Kampf (C_INFO)
 	information	= Info_Mod_Alrik_Kampf_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Du bist mein zweiter Gegner im Turnier.";
+	description	= "You're my second opponent in the tournament.";
 };
 
 FUNC INT Info_Mod_Alrik_Kampf_Condition()
@@ -380,27 +380,27 @@ FUNC INT Info_Mod_Alrik_Kampf_Condition()
 
 FUNC VOID Info_Mod_Alrik_Kampf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alrik_Kampf_15_00"); //Du bist mein zweiter Gegner im Turnier.
-	AI_Output(self, hero, "Info_Mod_Alrik_Kampf_09_01"); //Ok, bist du bereit?
+	AI_Output(hero, self, "Info_Mod_Alrik_Kampf_15_00"); //You're my second opponent in the tournament.
+	AI_Output(self, hero, "Info_Mod_Alrik_Kampf_09_01"); //Okay, you ready?
 
 	Info_ClearChoices	(Info_Mod_Alrik_Kampf);
 	
-	Info_AddChoice	(Info_Mod_Alrik_Kampf, "Noch nicht ...", Info_Mod_Alrik_Kampf_Nein);
-	Info_AddChoice	(Info_Mod_Alrik_Kampf, "Ja, lass uns anfangen ...", Info_Mod_Alrik_Kampf_Ja);
+	Info_AddChoice	(Info_Mod_Alrik_Kampf, "Not yet....", Info_Mod_Alrik_Kampf_Nein);
+	Info_AddChoice	(Info_Mod_Alrik_Kampf, "Yeah, let's get started...", Info_Mod_Alrik_Kampf_Ja);
 };
 
 FUNC VOID Info_Mod_Alrik_Kampf_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Alrik_Kampf_Nein_15_00"); //Noch nicht ...
-	AI_Output(self, hero, "Info_Mod_Alrik_Kampf_Nein_09_01"); //Ok, komm, sobald du bereit bist.
+	AI_Output(hero, self, "Info_Mod_Alrik_Kampf_Nein_15_00"); //Not yet....
+	AI_Output(self, hero, "Info_Mod_Alrik_Kampf_Nein_09_01"); //Okay, come as soon as you're ready.
 
 	Info_ClearChoices	(Info_Mod_Alrik_Kampf);
 };
 
 FUNC VOID Info_Mod_Alrik_Kampf_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Alrik_Kampf_Ja_15_00"); //Ja, lass uns anfangen ...
-	AI_Output(self, hero, "Info_Mod_Alrik_Kampf_Ja_09_01"); //Ok.
+	AI_Output(hero, self, "Info_Mod_Alrik_Kampf_Ja_15_00"); //Yeah, let's get started...
+	AI_Output(self, hero, "Info_Mod_Alrik_Kampf_Ja_09_01"); //Okay.
 
 	Mod_MilizTurnier = 5;
 
@@ -434,32 +434,32 @@ FUNC VOID Info_Mod_Alrik_KampfEnde_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Alrik_KampfEnde_09_00"); //Du bist wirklich gut. Du solltest mal zu mir kommen und ein wenig mit mir trainieren.
+			AI_Output(self, hero, "Info_Mod_Alrik_KampfEnde_09_00"); //You're really good. You should come and work out with me sometime.
 
 			Mod_MilizTurnier = 6;
 			
 			B_StartOtherRoutine	(Mod_547_NONE_Alrik_NW,	"START");
 				
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe meinen Kampf gegen Alrik gewonnen. Ich sollte jetzt mit Lord Andre sprechen.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "I won my fight against Alrik. I should talk to Lord Andre now.");
 	
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Alrik_KampfEnde_09_01"); //Tja, das war wohl nichts. Jetzt werde ich vielleicht ein Mitglied der Miliz. Wenn du willst, kannst du mal zu mir kommen, dann können wir zusammen trainieren.
+			AI_Output(self, hero, "Info_Mod_Alrik_KampfEnde_09_01"); //Well, that was nothing. Now I may become a member of the militia. If you want, you can come to my place sometime and we can work out together.
 
 			Mod_MilizTurnier = 7;
 
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe meinen Kampf gegen Alrik verloren. Ich sollte jetzt mit Lord Andre sprechen.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "I lost my fight against Alrik. I should talk to Lord Andre now.");
 
 			B_SetTopicStatus	(TOPIC_MOD_MILIZTURNIER, LOG_FAILED);
 		}
 		else //FIGHT_CANCEL
 		{
-			AI_Output (self, other,"Info_Mod_Alrik_KampfEnde_09_02"); //Du bist abgehauen und dadurch hab ich gewonnen. Dumm gelaufen für dich.
+			AI_Output (self, other,"Info_Mod_Alrik_KampfEnde_09_02"); //You ran away, and that's how I won. It's been a dumb thing for you.
 
 			Mod_MilizTurnier = 7;
 
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe meinen Kampf gegen Alrik verloren. Ich sollte jetzt mit Lord Andre sprechen.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "I lost my fight against Alrik. I should talk to Lord Andre now.");
 
 			B_SetTopicStatus	(TOPIC_MOD_MILIZTURNIER, LOG_FAILED);
 		};
@@ -486,7 +486,7 @@ INSTANCE Info_Mod_Alrik_Lehrer (C_INFO)
 	information	= Info_Mod_Alrik_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Alrik_Lehrer_Condition()
@@ -502,10 +502,10 @@ FUNC VOID Info_Mod_Alrik_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Alrik_Lehrer_09_00"); //Ich kann dir den Umgang mit Einhändern beibringen.
+	AI_Output(self, hero, "Info_Mod_Alrik_Lehrer_09_00"); //I can teach you how to handle a hand.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Alrik kann mir den Umgang mit Einhändern beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Alrik can teach me how to deal with one-handed people.");
 };
 
 INSTANCE Info_Mod_Alrik_Lernen (C_INFO)
@@ -516,7 +516,7 @@ INSTANCE Info_Mod_Alrik_Lernen (C_INFO)
 	information	= Info_Mod_Alrik_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "I want to learn.";
 };
 
 FUNC INT Info_Mod_Alrik_Lernen_Condition()
@@ -530,7 +530,7 @@ FUNC INT Info_Mod_Alrik_Lernen_Condition()
 
 FUNC VOID Info_Mod_Alrik_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alrik_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Alrik_Lernen_15_00"); //I want to learn.
 
 	Info_ClearChoices	(Info_Mod_Alrik_Lernen);
 

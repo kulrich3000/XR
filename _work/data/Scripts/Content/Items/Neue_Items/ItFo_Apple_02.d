@@ -1,6 +1,6 @@
 INSTANCE ItFo_Apple_02 (C_Item)
 {	
-	name 				=	"Manaapfel";
+	name 				=	"mana apple";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -20,7 +20,7 @@ INSTANCE ItFo_Apple_02 (C_Item)
 	COUNT[2]			=	5;
 	
 	
-	TEXT[3]				=    "Ein seltener Manaapfel";
+	TEXT[3]				=    "A rare mana apple";
 	
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	20;
@@ -39,7 +39,7 @@ INSTANCE ItFo_Apple_02 (C_Item)
 
 INSTANCE ItFo_Plants_Berrys_01(C_Item)
 {	
-	name 				=	"rote Waldbeeren";
+	name 				=	"red forest berries";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	

@@ -23,7 +23,7 @@ FUNC INT Info_SFB_5_Pre_Condition()
 
 FUNC VOID Info_SFB_5_Pre_Info()
 {	
-	AI_Output(self,hero,"Info_SFB_5_EinerVonEuchWerden_05_00"); //Hallo!
+	AI_Output(self,hero,"Info_SFB_5_EinerVonEuchWerden_05_00"); //Hello!
 };
 
 // *************************************************************************
@@ -37,7 +37,7 @@ INSTANCE Info_SFB_5_EXIT(C_INFO)
 	condition	= Info_SFB_5_EXIT_Condition;
 	information	= Info_SFB_5_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_SFB_5_EXIT_Condition()
@@ -81,7 +81,7 @@ INSTANCE Info_SFB_5_KesselProblem2 (C_INFO)
 	information	= Info_SFB_5_KesselProblem2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, habe gehört, dass wilde Tiere euch bedrohen und einer von euch getötet wurde.";
+	description	= "Hey, I heard wild animals threaten you and one of you was killed.";
 };                       
 
 FUNC INT Info_SFB_5_KesselProblem2_Condition()
@@ -98,21 +98,21 @@ FUNC VOID Info_SFB_5_KesselProblem2_Info()
 {
 	B_Say	(hero, self, "$KESSELPROBLEM01");
 
-	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_00"); //Ja, man, habe auch davon gehört. Mitten in der Nacht hat es ihn geholt.
-	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_01"); //War einfach weg am nächsten morgen.
+	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_00"); //Yeah, I heard about that, too. It took him in the middle of the night.
+	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_01"); //Just left the next morning.
 
 	B_Say	(hero, self, "§KESSELPROBLEM02");
 
-	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_02"); //Doch, der Söldner Bruce hat es mit angesehen.
-	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_03"); //Er hat das Vieh verfolgt und ihm das Fell über die Ohren gezogen. Geschieht dem Mistvieh recht.
-	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_04"); //Hätte ich dem Bruce gar nicht zugetraut.
-	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_05"); //(zu sich selbst) Besonders abends stinkt’s wie ein Feld voll Sumpfkraut.
+	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_02"); //Yeah, the mercenary Bruce saw it happen.
+	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_03"); //He was chasing the cattle, and he pulled his fur over his ears. Serves the bitch right.
+	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_04"); //I wouldn't have thought the Bruce was capable of it.
+	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_05"); //Particularly in the evening it stinks like a field of bogweed.
 
 	B_Say	(hero, self, "§KESSELPROBLEM03");
 
-	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_06"); //Ohh ... hey, Mann, vergiss es, ich habe nichts gesagt.
+	AI_Output(self,hero,"Info_SFB_5_KesselProblem2_05_06"); //Ohh... Hey, man, forget it, I didn't say anything.
 
-	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Wie ich von einem Schürfer erfahren habe, wurde das Opfer nachts von dem Schattenläufer geholt. Außer Bruce hat aber niemand was gesehen oder gehört. Der Schürfer murmelte noch in Zusammenhang mit Bruce irgendetwas von 'abends' und 'Sumpfkraut'.");
+	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "As I heard from a prospector, the victim was taken at night by the shadow runner. Except for Bruce, no one saw or heard anything. The prospector still mumbled in connection with Bruce something of' evening' and' bogweed'.");
 
 	Mod_NL_TalkesselProblem = 1;
 };
@@ -127,7 +127,7 @@ INSTANCE Info_SFB_5_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_5_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Was ist wenn ich hier mitmachen will?";
+	description = "What if I want to get involved?";
 };                       
 
 FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
@@ -137,11 +137,11 @@ FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_SFB_5_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_SFB_5_EinerVonEuchWerden_15_00"); //Was ist, wenn ich hier mitmachen will?
-	AI_Output(self,hero,"Info_SFB_5_EinerVonEuchWerden_05_01"); //Hier mitmachen? Als was, Wasserträger?
-	AI_Output(hero,self,"Info_SFB_5_EinerVonEuchWerden_15_02"); //Nein, als Schürfer?
-	AI_Output(self,hero,"Info_SFB_5_EinerVonEuchWerden_05_03"); //Pass mal auf, lass dir eins gesagt sein: Niemand wird FREIWILLIG Schürfer.
-	AI_Output(self,hero,"Info_SFB_5_EinerVonEuchWerden_05_04"); //Aber bitte, wenn du unbedingt willst.
+	AI_Output(hero,self,"Info_SFB_5_EinerVonEuchWerden_15_00"); //What if I want to get involved?
+	AI_Output(self,hero,"Info_SFB_5_EinerVonEuchWerden_05_01"); //Join us here? As what, water bearer?
+	AI_Output(hero,self,"Info_SFB_5_EinerVonEuchWerden_15_02"); //No, as a prospector?
+	AI_Output(self,hero,"Info_SFB_5_EinerVonEuchWerden_05_03"); //Look, let me tell you something. Nobody's going to be a VOLUNTARY prospector.
+	AI_Output(self,hero,"Info_SFB_5_EinerVonEuchWerden_05_04"); //But please, if you absolutely want to.
 };
 
 // *************************************************************************
@@ -154,7 +154,7 @@ INSTANCE Info_SFB_5_WichtigePersonen(C_INFO)
 	condition	= Info_SFB_5_WichtigePersonen_Condition;
 	information	= Info_SFB_5_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer ist hier wichtig?";
+	description = "Who's important here?";
 };                       
 
 FUNC INT Info_SFB_5_WichtigePersonen_Condition()
@@ -164,10 +164,10 @@ FUNC INT Info_SFB_5_WichtigePersonen_Condition()
 
 FUNC VOID Info_SFB_5_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_SFB_5_WichtigePersonen_15_00"); //Wer ist hier wichtig?
-	AI_Output(self,hero,"Info_SFB_5_WichtigePersonen_05_01"); //Wer hier wichtig ist? Ich!
-	AI_Output(self,hero,"Info_SFB_5_WichtigePersonen_05_02"); //Aber ich glaube, du willst wissen, wer hier das Sagen hat.
-	AI_Output(self,hero,"Info_SFB_5_WichtigePersonen_05_03"); //Also, ich denke, du solltest dich an die Söldner wenden.
+	AI_Output(hero,self,"Info_SFB_5_WichtigePersonen_15_00"); //Who's important here?
+	AI_Output(self,hero,"Info_SFB_5_WichtigePersonen_05_01"); //Who is important here? Me!
+	AI_Output(self,hero,"Info_SFB_5_WichtigePersonen_05_02"); //But I think you want to know who's in charge here.
+	AI_Output(self,hero,"Info_SFB_5_WichtigePersonen_05_03"); //Well, I think you should turn to the mercenaries.
 };
 
 // *************************************************************************
@@ -180,7 +180,7 @@ INSTANCE Info_SFB_5_DasLager(C_INFO)
 	condition	= Info_SFB_5_DasLager_Condition;
 	information	= Info_SFB_5_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es hier im Lager?";
+	description = "What's in the camp?";
 };                       
 
 FUNC INT Info_SFB_5_DasLager_Condition()
@@ -190,8 +190,8 @@ FUNC INT Info_SFB_5_DasLager_Condition()
 
 FUNC VOID Info_SFB_5_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_SFB_5_DasLager_15_00"); //Was gibt es hier im Lager?
-	AI_Output(self,hero,"Info_SFB_5_DasLager_05_01"); //Kommt drauf an was man draus macht. Für einige nur viel Arbeit, für andere gibt's auch 'ne ganze Menge Spaß.
+	AI_Output(hero,self,"Info_SFB_5_DasLager_15_00"); //What's in the camp?
+	AI_Output(self,hero,"Info_SFB_5_DasLager_05_01"); //Depends on what you make of it. There's a lot of work for some, a lot of fun for others.
 };
 
 // *************************************************************************
@@ -204,7 +204,7 @@ INSTANCE Info_SFB_5_DieLage(C_INFO)
 	condition	= Info_SFB_5_DieLage_Condition;
 	information	= Info_SFB_5_DieLage_Info;
 	permanent	= 1;
-	description = "Wie ist das Leben hier?";
+	description = "How's life here?";
 };                       
 
 FUNC INT Info_SFB_5_DieLage_Condition()

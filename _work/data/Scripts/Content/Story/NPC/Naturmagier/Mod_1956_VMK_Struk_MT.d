@@ -1,7 +1,7 @@
 instance Mod_1956_VMK_Struk_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Struk";	
+	name 		= "structure";	
 	guild 		= GIL_out;
 	id 			= 1956;
 	voice 		= 13;

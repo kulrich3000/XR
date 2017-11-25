@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Parcival_Hi (C_INFO)
 	information	= Info_Mod_Parcival_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sei gegrüßt, was macht ihr hier?";
+	description	= "Greetings, what are you doing here?";
 };
 
 FUNC INT Info_Mod_Parcival_Hi_Condition()
@@ -16,19 +16,19 @@ FUNC INT Info_Mod_Parcival_Hi_Condition()
 
 FUNC VOID Info_Mod_Parcival_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_00"); //Sei gegrüßt, was macht ihr hier?
-	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_01"); //(erbost) Was?! Willst du uns verspotten?!
-	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_02"); //Nun, ich, ähh ...
-	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_03"); //(wütend) Wir dürfen diesen verfluchten Ort im Auge behalten ... auf königliche Weisung. (sarkastisch) Welch seltene Ehre.
-	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_04"); //Ja, ist nicht die schönste Gegend.
-	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_05"); //Und als ob das noch nicht schlimm genug wäre, hat sich dieser Abschaum hier noch eingenistet.
-	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_06"); //Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_07"); //Ich meine dieses Lumpenpack in der Schenke. Tagediebe, Verbrecher, Huren ... die meisten von ihnen geradewegs aus der Strafkolonie.
-	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_08"); //Innos legt uns wahrlich eine schwere Prüfung auf.
-	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_09"); //Na ja, an diesem Monster verseuchten Ort vielleicht besser als nichts.
-	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_10"); //Pah, wenn es nach mir ginge, würden wir sie alle samt ins Moor treiben, zu dem untoten Pack. Da wären sie in guter Gesellschaft.
-	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_11"); //Jetzt übertreibst du aber ...
-	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_12"); //Was sagst du?! Wieso rede ich überhaupt mit dir?! Scher dich weg!
+	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_00"); //Greetings, what are you doing here?
+	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_01"); //What?! Are you mocking us?!
+	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_02"); //Well, I, uh....
+	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_03"); //We may keep an eye on this cursed place... on royal authority. What a rare honor.
+	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_04"); //Yeah, it's not the nicest neighborhood.
+	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_05"); //And as if that wasn't bad enough, this scum has settled here.
+	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_06"); //What do you think?
+	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_07"); //I'm talking about that rag at the tavern. Day thieves, criminals, whores... most of them straight out of the penal colony.
+	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_08"); //Innos is truly putting us to the test.
+	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_09"); //Well, this monster's contaminated site may be better than nothing.
+	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_10"); //Pah, if it were up to me, we'd drive them all into the moor together, to the undead pack. They'd be in good company.
+	AI_Output(hero, self, "Info_Mod_Parcival_Hi_15_11"); //Now you're exaggerating...
+	AI_Output(self, hero, "Info_Mod_Parcival_Hi_13_12"); //What do you say?! Why am I even talking to you?! Get out of here!
 
 	AI_StopProcessInfos	(self);
 };
@@ -53,7 +53,7 @@ FUNC INT Info_Mod_Parcival_Siedlung_Condition()
 
 FUNC VOID Info_Mod_Parcival_Siedlung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Parcival_Siedlung_13_00"); //Verdammt, wo treibt er sich schon wieder herum. Er sollte doch hier Wache halten.
+	AI_Output(self, hero, "Info_Mod_Parcival_Siedlung_13_00"); //Goddamn it, he's hanging out again. He was supposed to be guarding this place.
 };
 
 INSTANCE Info_Mod_Parcival_Pickpocket (C_INFO)

@@ -1,7 +1,7 @@
 INSTANCE Mod_7717_OUT_Ausgestossener_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ausgestoﬂener";
+	name 		= "pariah";
 	guild 		= GIL_OUT;
 	id 			= 7717;
 	voice 		= 08;

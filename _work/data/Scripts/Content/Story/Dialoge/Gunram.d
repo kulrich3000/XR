@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Gunram_Hi_Condition()
 
 FUNC VOID Info_Mod_Gunram_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gunram_Hi_14_00"); //Hä? Wie kommst du hierher?
-	AI_Output(hero, self, "Info_Mod_Gunram_Hi_15_01"); //Einfach nur Zufall!
-	AI_Output(self, hero, "Info_Mod_Gunram_Hi_14_02"); //Ein Scherzkeks! Ich hasse Scherze!
+	AI_Output(self, hero, "Info_Mod_Gunram_Hi_14_00"); //Huh? How did you get here?
+	AI_Output(hero, self, "Info_Mod_Gunram_Hi_15_01"); //Just coincidence!
+	AI_Output(self, hero, "Info_Mod_Gunram_Hi_14_02"); //A joker! I hate jokes!
 
 	CreateInvItems	(self, ItWr_AxtAlmanach_05, 1);
 

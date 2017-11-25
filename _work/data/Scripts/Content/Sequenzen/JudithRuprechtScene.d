@@ -26,52 +26,52 @@ FUNC VOID JudithRuprechtScene()
 
 	if (Mod_JudithRuprechtScene_Counter == 4)
 	{
-		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_00"); //Da bin ich. Tut mir Leid, dass es so spät geworden ist, ich wurde aufgehalten.
+		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_00"); //There I am. I'm sorry it got so late, I got held up.
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 10)
 	{
-		AI_Output(Mod_7680_OUT_Judith_REL, NULL, "Info_Mod_JudithRuprechtScene_16_01"); //(entsetzt) Ruprecht? Du? Warst du nicht gerade schon da?
+		AI_Output(Mod_7680_OUT_Judith_REL, NULL, "Info_Mod_JudithRuprechtScene_16_01"); //Ruprecht? You? Haven't you just been there?
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 16)
 	{
-		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_02"); //Nein, ich hatte mal wieder eine kleine Auseinandersetzung mit Leonhard.
+		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_02"); //No, I had another little argument with Leonhard.
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 22)
 	{
-		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_03"); //Aber warum bist du so schockiert?
+		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_03"); //But why are you so shocked?
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 28)
 	{
-		AI_Output(Mod_7680_OUT_Judith_REL, NULL, "Info_Mod_JudithRuprechtScene_16_04"); //Mit wem habe ich dann gerade ...?
+		AI_Output(Mod_7680_OUT_Judith_REL, NULL, "Info_Mod_JudithRuprechtScene_16_04"); //Then who did I just...?
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 34)
 	{
-		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_05"); //Was?! Du bist einem Schwindler aufgesessen?
+		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_05"); //What?! You sat on a fake?
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 40)
 	{
-		AI_Output(Mod_7680_OUT_Judith_REL, NULL, "Info_Mod_JudithRuprechtScene_16_06"); //Es ist doch so dunkel!
+		AI_Output(Mod_7680_OUT_Judith_REL, NULL, "Info_Mod_JudithRuprechtScene_16_06"); //It's so dark!
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 46)
 	{
-		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_07"); //(bitter) Na, dann hattest du dein Vergnügen heute ja schon. Ich störe wahrscheinlich nur noch.
+		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_07"); //Well, then you've had your pleasure today. I'm probably just intruding.
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 52)
 	{
-		AI_Output(Mod_7680_OUT_Judith_REL, NULL, "Info_Mod_JudithRuprechtScene_16_08"); //(verzweifelt) Ich bitte dich!
+		AI_Output(Mod_7680_OUT_Judith_REL, NULL, "Info_Mod_JudithRuprechtScene_16_08"); //(desperate) Please!
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 58)
 	{
-		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_09"); //(hart) Adieu! Das muss ich mir nicht bieten lassen!
+		AI_Output(Mod_7418_OUT_Ruprecht_REL, NULL, "Info_Mod_JudithRuprechtScene_13_09"); //Goodbye! Goodbye! I don't have to put up with that!
 	};
 
 	if (Mod_JudithRuprechtScene_Counter == 64)

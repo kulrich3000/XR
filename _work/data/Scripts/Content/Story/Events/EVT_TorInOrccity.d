@@ -8,7 +8,7 @@ FUNC VOID TORINORCCITY()
 
 		Mod_TorInStadt = 1;		
 
-		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Was ist das? Warum ist das Tor zu? Naja, ich werde mich darum kümmern, wenn ich den Fokus von Hosh Pak habe.");
+		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "What's this? Why is the gate closed? Well, I'll take care of it when I get Hosh Pak's focus.");
 	};
 
 	if (Mod_TorInStadt == 1)
@@ -21,6 +21,6 @@ FUNC VOID TORINORCCITY()
 
 		B_InitMonsterAttitudes();
 
-		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Scheint so, als hätte Hosh Pak das Tor geschlossen. Jetzt, wo er tot ist, ist es jedenfalls wieder offen.");
+		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Looks like Hosh Pak closed the gate. Anyway, now that he's dead, it's open again.");
 	};
 };

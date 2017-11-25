@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Lares_Hi_Condition()
 
 FUNC VOID Info_Mod_Lares_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_Hi_37_00"); //Du lebst noch?
-	AI_Output(hero, self, "Info_Mod_Lares_Hi_15_01"); //Lange Geschichte.
-	AI_Output(self, hero, "Info_Mod_Lares_Hi_37_02"); //Was machst du jetzt?
+	AI_Output(self, hero, "Info_Mod_Lares_Hi_37_00"); //You're still alive?
+	AI_Output(hero, self, "Info_Mod_Lares_Hi_15_01"); //It's a long story.
+	AI_Output(self, hero, "Info_Mod_Lares_Hi_37_02"); //What are you doing now?
 };
 
 INSTANCE Info_Mod_Lares_Daemonisch (C_INFO)
@@ -40,17 +40,17 @@ FUNC INT Info_Mod_Lares_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Lares_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_00"); //Na, was treibt dich hier so rum?
-	AI_Output(hero, self, "Info_Mod_Lares_Daemonisch_15_01"); //Ach, ich wollte mich nur mal etwas umsehen ...
-	AI_Output(hero, self, "Info_Mod_Lares_Daemonisch_15_02"); //Ist irgendetwas Besonderes bei euch auf dem Hof passiert in letzter Zeit?
-	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_03"); //Ja, da war schon was. Pepe hatte nachts dunkle Schatten im Wald gesehen, vermutlich von Wölfen.
-	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_04"); //Ich habe dann einige Jungs mit ihm zu dem kleinen Lager dort geschickt, um sich die Nacht über umzusehen.
-	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_05"); //Pepe kam am frühen Morgen panisch angelaufen und blickte sich nach allen Richtungen verstört um.
-	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_06"); //Als dann meine Jungs ebenfalls wieder aus dem Wald kamen, lief er schreiend in Richtung Bergfestung davon.
-	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_07"); //Die Jungs meinten, dass ein großes Rudel Wölfe sie überfallen hätte und Pepe daraufhin weggelaufen sei.
-	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_08"); //Leider ist durch die Mistviecher auch einer meiner Söldner draufgegangen. Na ja, das kommt schon alles wieder ins Lot.
+	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_00"); //Well, what are you doing here?
+	AI_Output(hero, self, "Info_Mod_Lares_Daemonisch_15_01"); //Oh, I just wanted to have a look around....
+	AI_Output(hero, self, "Info_Mod_Lares_Daemonisch_15_02"); //Has anything special happened to you on the farm lately?
+	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_03"); //Yeah, there was something. Pepe had seen dark shadows in the forest at night, probably from wolves.
+	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_04"); //I then sent some guys with him to the small camp there to look around the night.
+	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_05"); //Pepe came in early in the morning, panicked and looked around in disconcerted panic.
+	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_06"); //When my boys came out of the forest again, he ran screaming towards the mountain stronghold.
+	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_07"); //The boys thought that a big pack of wolves had attacked them and Pepe ran away.
+	AI_Output(self, hero, "Info_Mod_Lares_Daemonisch_37_08"); //Unfortunately, one of my mercenaries was killed by the bastards. Well, everything's gonna be all right.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Von Lares habe ich erfahren, dass Pepe dunkle Schatten im Wald gesehen hat, welche wohl von Wölfen hergerührt haben. Einige Söldner hatten sich daher mit Pepe zum kleinen Lager im Wald begeben. Pepe kam am frühen Morgen panisch angerannt und verschwand Richtung Bergfestung, als er hinter sich die Söldner aus dem Wald kommen sah. Angeblich hatte ein großes Rudel Wölfe sie überfallen, woraufhin Pepe in Panik verfiel. Ein Söldner kam dabei um.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "I learned from Lares that Pepe saw dark shadows in the forest, which were probably caused by wolves. Some mercenaries went with Pepe to the small camp in the forest. Pepe arrived in the early morning in panic and disappeared towards the mountain fortress when he saw the mercenaries coming out of the forest behind him. Apparently a big pack of wolves had attacked them and Pepe panicked. A mercenary was killed.");
 };
 
 INSTANCE Info_Mod_Lares_Grog (C_INFO)
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Lares_Grog (C_INFO)
 	information	= Info_Mod_Lares_Grog_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier was für dich.";
+	description	= "I got something for you.";
 };
 
 FUNC INT Info_Mod_Lares_Grog_Condition()
@@ -76,14 +76,14 @@ FUNC INT Info_Mod_Lares_Grog_Condition()
 
 FUNC VOID Info_Mod_Lares_Grog_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_Grog_15_00"); //Ich hab hier was für dich.
-	AI_Output(self, hero, "Info_Mod_Lares_Grog_37_01"); //Was denn?
-	AI_Output(hero, self, "Info_Mod_Lares_Grog_15_02"); //Ein Paket voller Grog.
+	AI_Output(hero, self, "Info_Mod_Lares_Grog_15_00"); //I got something for you.
+	AI_Output(self, hero, "Info_Mod_Lares_Grog_37_01"); //What do you mean?
+	AI_Output(hero, self, "Info_Mod_Lares_Grog_15_02"); //Package of grog.
 
 	B_GiveInvItems	(hero, self, Mod_GrogPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lares_Grog_37_03"); //Wurde aber auch langsam Zeit. Endlich kann ich mit meinen Jungs mal wieder ein wenig feiern.
-	AI_Output(self, hero, "Info_Mod_Lares_Grog_37_04"); //Hier ist dein Gold.
+	AI_Output(self, hero, "Info_Mod_Lares_Grog_37_03"); //It's about time. Finally I can celebrate with my boys again a little bit.
+	AI_Output(self, hero, "Info_Mod_Lares_Grog_37_04"); //Here's your gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 };
@@ -96,7 +96,7 @@ INSTANCE Info_Mod_Lares_BronkoMehlsack (C_INFO)
 	information	= Info_Mod_Lares_BronkoMehlsack_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Könnt ihr etwas mit einer kostenlosen Lieferung Mehl anfangen?";
+	description	= "Can you guys do anything with a free shipment of flour?";
 };
 
 FUNC INT Info_Mod_Lares_BronkoMehlsack_Condition()
@@ -111,19 +111,19 @@ FUNC INT Info_Mod_Lares_BronkoMehlsack_Condition()
 
 FUNC VOID Info_Mod_Lares_BronkoMehlsack_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_BronkoMehlsack_15_00"); //Könnt ihr etwas mit einer kostenlosen Lieferung Mehl anfangen?
-	AI_Output(self, hero, "Info_Mod_Lares_BronkoMehlsack_37_01"); //Gib nur her. Wo hast du das aufgetrieben?
+	AI_Output(hero, self, "Info_Mod_Lares_BronkoMehlsack_15_00"); //Can you guys do anything with a free shipment of flour?
+	AI_Output(self, hero, "Info_Mod_Lares_BronkoMehlsack_37_01"); //Just give it to me. Where'd you find this?
 
 	B_GiveInvItems	(hero, self, ItMi_Mehlsack_Bronko, 5);
 
-	AI_Output(hero, self, "Info_Mod_Lares_BronkoMehlsack_15_02"); //Das ist mir sozusagen zugefallen.
-	AI_Output(self, hero, "Info_Mod_Lares_BronkoMehlsack_37_03"); //(lacht) Dann frag ich lieber nicht weiter nach. Jedenfalls vielen Dank.
-	AI_Output(self, hero, "Info_Mod_Lares_BronkoMehlsack_37_04"); //Hier, diese paar Tränke hab ich übrig. Bin momentan eh nicht so viel unterwegs, als dass ich die brauchen würde.
+	AI_Output(hero, self, "Info_Mod_Lares_BronkoMehlsack_15_02"); //I sort of fell for that.
+	AI_Output(self, hero, "Info_Mod_Lares_BronkoMehlsack_37_03"); //(laughs) Then I'd rather not keep asking. Anyway, thank you very much.
+	AI_Output(self, hero, "Info_Mod_Lares_BronkoMehlsack_37_04"); //Here, I'll spare those few potions. I'm not on the road as much as I need it right now anyway.
 
 	CreateInvItems	(hero, ItPo_Health_01, 2);
 	CreateInvItems	(hero, ItPo_Mana_01, 2);
 
-	B_ShowGivenThings	("2 Essenzen der Heilung und 2 Manaessenzen erhalten");
+	B_ShowGivenThings	("2 Healing Essences and 2 Mana essences obtained");
 
 	B_GivePlayerXP	(100);
 
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Lares_WillSoeldner (C_INFO)
 	information	= Info_Mod_Lares_WillSoeldner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will mich euch anschließen.";
+	description	= "I want to join you.";
 };
 
 FUNC INT Info_Mod_Lares_WillSoeldner_Condition()
@@ -154,13 +154,13 @@ FUNC INT Info_Mod_Lares_WillSoeldner_Condition()
 
 FUNC VOID Info_Mod_Lares_WillSoeldner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_WillSoeldner_15_00"); //Ich will mich euch anschließen.
-	AI_Output(self, hero, "Info_Mod_Lares_WillSoeldner_37_01"); //Das ist gut. Sehr gut. Du müsstest nur dem Lager deine Loyalität erweisen.
-	AI_Output(hero, self, "Info_Mod_Lares_WillSoeldner_15_02"); //(stöhnt) Du kennst mich doch.
-	AI_Output(self, hero, "Info_Mod_Lares_WillSoeldner_37_03"); //Im Minental ist viel passiert. Ich weiß, dass ich dir trauen kann, aber das verschafft dir bei den anderen noch keinen Respekt.
-	AI_Output(self, hero, "Info_Mod_Lares_WillSoeldner_37_04"); //Geh zu Torlof und sage ihm, dass ich dich schicke.
+	AI_Output(hero, self, "Info_Mod_Lares_WillSoeldner_15_00"); //I want to join you.
+	AI_Output(self, hero, "Info_Mod_Lares_WillSoeldner_37_01"); //That's good news. Very good. Very good. All you have to do is show your loyalty to the camp.
+	AI_Output(hero, self, "Info_Mod_Lares_WillSoeldner_15_02"); //You know me, you know me.
+	AI_Output(self, hero, "Info_Mod_Lares_WillSoeldner_37_03"); //A lot has happened in the Minental. I know I can trust you, but that doesn't get you any respect among the others.
+	AI_Output(self, hero, "Info_Mod_Lares_WillSoeldner_37_04"); //Go to Torlof and tell him I'm sending you.
 
-	B_LogEntry	(TOPIC_MOD_SÖLDNER, "Um bei den Söldner aufgenommen zu werden, muss ich sie ein wenig beeindrucken und meine Loyalität unter Beweis stellen. Ich sollte mal mit Torlof sprechen.");
+	B_LogEntry	(TOPIC_MOD_SÖLDNER, "In order to be accepted by the mercenaries, I have to impress them a little and prove my loyalty. I should talk to Torlof.");
 };
 
 INSTANCE Info_Mod_Lares_AndereSoeldner (C_INFO)
@@ -171,7 +171,7 @@ INSTANCE Info_Mod_Lares_AndereSoeldner (C_INFO)
 	information	= Info_Mod_Lares_AndereSoeldner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo sind eigentlich die anderen Söldner?";
+	description	= "Where are the other mercenaries?";
 };
 
 FUNC INT Info_Mod_Lares_AndereSoeldner_Condition()
@@ -184,11 +184,11 @@ FUNC INT Info_Mod_Lares_AndereSoeldner_Condition()
 
 FUNC VOID Info_Mod_Lares_AndereSoeldner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_AndereSoeldner_15_00"); //Wo sind eigentlich die anderen Söldner?
-	AI_Output(self, hero, "Info_Mod_Lares_AndereSoeldner_37_01"); //Die sind noch im Neuen Lager.
-	AI_Output(self, hero, "Info_Mod_Lares_AndereSoeldner_37_02"); //Lee hat mich zusammen mit Torlof und Cord hierher geschickt, damit wir ein paar Leute aus Khorinis dazu überreden, sich uns anzuschließen.
-	AI_Output(hero, self, "Info_Mod_Lares_AndereSoeldner_15_03"); //Wie viele habt ihr schon überredet?
-	AI_Output(self, hero, "Info_Mod_Lares_AndereSoeldner_37_04"); //Einige. Das ist bei der derzeitigen Langeweile hier aber auch kein großes Problem.
+	AI_Output(hero, self, "Info_Mod_Lares_AndereSoeldner_15_00"); //Where are the other mercenaries?
+	AI_Output(self, hero, "Info_Mod_Lares_AndereSoeldner_37_01"); //They're still in the New Camp.
+	AI_Output(self, hero, "Info_Mod_Lares_AndereSoeldner_37_02"); //Lee sent me here with Torlof and Cord to persuade some people from Khorinis to join us.
+	AI_Output(hero, self, "Info_Mod_Lares_AndereSoeldner_15_03"); //How many have you persuaded?
+	AI_Output(self, hero, "Info_Mod_Lares_AndereSoeldner_37_04"); //Some. However, given the boredom we are currently experiencing, this is not a major problem.
 };
 
 INSTANCE Info_Mod_Lares_Aufnahme (C_INFO)
@@ -199,7 +199,7 @@ INSTANCE Info_Mod_Lares_Aufnahme (C_INFO)
 	information	= Info_Mod_Lares_Aufnahme_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bin bereit, Söldner zu werden.";
+	description	= "I'm ready to be a mercenary.";
 };
 
 FUNC INT Info_Mod_Lares_Aufnahme_Condition()
@@ -214,25 +214,25 @@ FUNC INT Info_Mod_Lares_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Lares_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_Aufnahme_15_00"); //Ich bin bereit, Söldner zu werden.
+	AI_Output(hero, self, "Info_Mod_Lares_Aufnahme_15_00"); //I'm ready to be a mercenary.
 	
 	if (hero.level	>=	5)
 	&& (Gardist_Dabei == FALSE)
 	&& (Orks_Dabei == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_01"); //Es freut mich, dich bei uns begrüßen zu können.
-		AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_02"); //Doch wenn du einmal eine von unseren Rüstungen trägst, dann gibt es kein Zurück mehr.
+		AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_01"); //It's a pleasure to welcome you here.
+		AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_02"); //But once you wear one of our armour, there's no turning back.
 		
 		if (Mod_HatPlayerNeutraleKlamotten())
 		{
 			Info_ClearChoices	(Info_Mod_Lares_Aufnahme);
 
-			Info_AddChoice	(Info_Mod_Lares_Aufnahme, "Ich habs mir anders überlegt.", Info_Mod_Lares_Aufnahme_Nein);
-			Info_AddChoice	(Info_Mod_Lares_Aufnahme, "Ich will mich euch anschließen.", Info_Mod_Lares_Aufnahme_Ja);
+			Info_AddChoice	(Info_Mod_Lares_Aufnahme, "I changed my mind.", Info_Mod_Lares_Aufnahme_Nein);
+			Info_AddChoice	(Info_Mod_Lares_Aufnahme, "I want to join you.", Info_Mod_Lares_Aufnahme_Ja);
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_04"); //Du solltest dir vorher aber noch eine neutrale Rüstung besorgen.
+			AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_04"); //You should get yourself a neutral armor first.
 		};
 	}
 	else if (Gardist_Dabei == TRUE)
@@ -240,23 +240,23 @@ FUNC VOID Info_Mod_Lares_Aufnahme_Info()
 	{
 		if (Gardist_Dabei == TRUE)
 		{
-			AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_05"); //Du glaubst doch nicht ernsthaft, dass wir einen Gardisten in unseren Reihen dulden.
+			AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_05"); //You don't seriously think we can tolerate a guardsman in our ranks.
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_06"); //Unter uns sind auch Orkjäger, da ist ein Orkfreund bei uns falsch.
+			AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_06"); //There are also orc hunters among us, there's an orc friend of ours who is wrong.
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_03"); //Du solltest lieber noch etwas Erfahrung sammeln.
+		AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_37_03"); //You better get some more experience.
 	};
 };
 
 FUNC VOID Info_Mod_Lares_Aufnahme_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_Aufnahme_Nein_15_00"); //Ich hab's mir anders überlegt.
-	AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_Nein_37_01"); //Wie du meinst.
+	AI_Output(hero, self, "Info_Mod_Lares_Aufnahme_Nein_15_00"); //I changed my mind.
+	AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_Nein_37_01"); //Whatever you say.
 
 	Info_ClearChoices	(Info_Mod_Lares_Aufnahme);
 };
@@ -267,10 +267,10 @@ FUNC VOID Info_Mod_Lares_Aufnahme_Ja()
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_55);
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_58);
 		
-	AI_Output(hero, self, "Info_Mod_Lares_Aufnahme_Ja_15_00"); //Ich will mich euch anschließen.
+	AI_Output(hero, self, "Info_Mod_Lares_Aufnahme_Ja_15_00"); //I want to join you.
 	
-	AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_Ja_37_01"); //Wenn du eine Waffe brauchst, dann solltest du mal Bennet fragen.
-	AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_Ja_37_02"); //Hier ist deine Rüstung.
+	AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_Ja_37_01"); //If you need a gun, you should ask Bennet.
+	AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_Ja_37_02"); //Here's your armour.
 
 	CreateInvItems	(self, ITAR_SLD_L, 1);
 	B_GiveInvItems	(self, hero, ITAR_SLD_L, 1);
@@ -278,17 +278,17 @@ FUNC VOID Info_Mod_Lares_Aufnahme_Ja()
 	AI_UnequipArmor	(hero);
 	AI_EquipArmor	(hero, ItAr_SLD_L);
 	
-	AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_Ja_14_03"); //Geh mit der Rüstung aber nicht in die Stadt, die Miliz würde dich nicht reinlassen.
+	AI_Output(self, hero, "Info_Mod_Lares_Aufnahme_Ja_14_03"); //But don't go into town with the armour. The militia won't let you in.
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	{
 		Log_CreateTopic	(TOPIC_MOD_SLD_ORKJAEGER, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_SLD_ORKJAEGER, LOG_RUNNING);
-		B_LogEntry_NMore	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_SÖLDNER, TOPIC_MOD_SLD_ORKJAEGER, "Ich bin jetzt ein Söldner.", "Ich bin jetzt ein Söldner.", "Sylvio entscheidet, wer bei den Orkjägern aufgenommen wird.");
+		B_LogEntry_NMore	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_SÖLDNER, TOPIC_MOD_SLD_ORKJAEGER, "I'm a mercenary now.", "I'm a mercenary now.", "Sylvio decides who gets in on the Orc hunters.");
 	}
 	else
 	{
-		B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_SÖLDNER, "Ich bin jetzt ein Söldner.", "Ich bin jetzt ein Söldner.");
+		B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_SÖLDNER, "I'm a mercenary now.", "I'm a mercenary now.");
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_GILDENAUFNAHME, LOG_SUCCESS);
@@ -333,17 +333,17 @@ FUNC INT Info_Mod_Lares_Drachen_Condition()
 
 FUNC VOID Info_Mod_Lares_Drachen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_00"); //Verdammte Drecksviecher!
-	AI_Output(hero, self, "Info_Mod_Lares_Drachen_15_01"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_02"); //Das fragst du noch? Hast du nicht die Drachen auf dem Feld gesehen?
-	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_03"); //Haben dem Bauern Sekob alle Schafe und sogar den Hirtenhund gefressen.
-	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_04"); //Als wir gegen sie vorgerückt sind, mussten wir feststellen, dass unsere Waffen nicht viel gegen sie ausrichten können.
-	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_05"); //Einen Mann haben wir dabei verloren.
-	AI_Output(hero, self, "Info_Mod_Lares_Drachen_15_06"); //Tja, was kann man da machen ...
-	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_07"); //Das fragst du mich? Du bist doch ständig unterwegs, löst Rätsel und schnappst Informationen von Menschen, Magiern und Orks auf.
-	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_08"); //Wenn du einen Weg findest, die Drachen zu töten, lass es mich wissen. Drecksviecher ...
+	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_00"); //Fucking scumbags!
+	AI_Output(hero, self, "Info_Mod_Lares_Drachen_15_01"); //What's going on?
+	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_02"); //You still ask that? Didn't you see the dragons in the field?
+	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_03"); //Have eaten all the sheep and even the shepherd dog of the farmer Sekob.
+	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_04"); //As we advanced against them, we realized that our weapons could not do much to harm them.
+	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_05"); //We lost a man in the process.
+	AI_Output(hero, self, "Info_Mod_Lares_Drachen_15_06"); //Well, what can you do...?
+	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_07"); //You're asking me? You are always on the road, solving puzzles and capturing information from humans, magicians and orcs.
+	AI_Output(self, hero, "Info_Mod_Lares_Drachen_37_08"); //If you find a way to kill the dragons, let me know. filthy creatures....
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Lares hat sich über die Drachen beklagt und den Schaden, welchen sie verursacht haben. Er und die Söldner konnten ihnen nichts anhaben. Er bat mich darum, ihn darüber zu informieren, sobald ich einen Weg gefunden hätte, sie zu erledigen.");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Lares has complained about the dragons and the damage they caused. He and the mercenaries couldn't hurt them. He asked me to let him know as soon as I found a way to do it.");
 };
 
 INSTANCE Info_Mod_Lares_LeeDJGHelfer (C_INFO)
@@ -367,7 +367,7 @@ FUNC INT Info_Mod_Lares_LeeDJGHelfer_Condition()
 
 FUNC VOID Info_Mod_Lares_LeeDJGHelfer_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer_37_00"); //Verdammt, wo bleibt die Verstärkung? Hast du Lee Bescheid gesagt? Wenn nicht, dann beeile dich.
+	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer_37_00"); //Damn it, where's the backup? Did you call Lee? If not, hurry up.
 };
 
 INSTANCE Info_Mod_Lares_LeeDJGHelfer2 (C_INFO)
@@ -391,11 +391,11 @@ FUNC INT Info_Mod_Lares_LeeDJGHelfer2_Condition()
 
 FUNC VOID Info_Mod_Lares_LeeDJGHelfer2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer2_37_00"); //Wie sieht es aus? Gibt es endlich mal was Neues wegen der hässlichen Riesenechsen?
-	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer2_37_01"); //Mit der Verstärkung aus dem Minental sind wir jetzt auf jeden Fall gut gerüstet.
-	AI_Output(hero, self, "Info_Mod_Lares_LeeDJGHelfer2_15_02"); //Ja, jetzt sollten wir sie erledigen können. Der Zauber, der sie schützte, ist gebrochen.
-	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer2_37_03"); //Wirklich? Dann lass uns keine Sekunde zögern.
-	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer2_37_04"); //Jungs, habt ihr gehört? Es kann losgehen.
+	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer2_37_00"); //What's it look like? Any news on the ugly giant lizards?
+	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer2_37_01"); //With the reinforcement from the Minental we are now well prepared.
+	AI_Output(hero, self, "Info_Mod_Lares_LeeDJGHelfer2_15_02"); //Yeah, now we should be able to take them out. The spell that protected them is broken.
+	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer2_37_03"); //Really? Then let's not hesitate for a second.
+	AI_Output(self, hero, "Info_Mod_Lares_LeeDJGHelfer2_37_04"); //Guys, did you hear that? We're ready to go.
 
 	AI_StopProcessInfos	(self);
 
@@ -442,7 +442,7 @@ FUNC INT Info_Mod_Lares_Knucker_Condition()
 
 FUNC VOID Info_Mod_Lares_Knucker_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_Knucker_37_00"); //Na dann. Jetzt geht’s ans Eingemachte.
+	AI_Output(self, hero, "Info_Mod_Lares_Knucker_37_00"); //Well, then. Now it's time for the preserves.
 
 	AI_StopProcessInfos	(self);
 
@@ -507,9 +507,9 @@ FUNC INT Info_Mod_Lares_KnuckerTot_Condition()
 
 FUNC VOID Info_Mod_Lares_KnuckerTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_KnuckerTot_37_00"); //Na, das war ja leichter, als ich gedacht habe. Und die Jungs hatten auch mal wieder etwas Bewegung. Das müssen wir unbedingt irgendwann wiederholen.
-	AI_Output(hero, self, "Info_Mod_Lares_KnuckerTot_15_01"); //Wo ist eigentlich Gorn? Ich habe ihn beim Kampf vermisst.
-	AI_Output(self, hero, "Info_Mod_Lares_KnuckerTot_37_02"); //Der darf bei der Kapelle Wache schieben. Wir wollen ja keine unerfreuliche Überraschung aus dem Wald erleben.
+	AI_Output(self, hero, "Info_Mod_Lares_KnuckerTot_37_00"); //Well, that was easier than I thought. And the boys had some movement once again. We have to do this again at some point.
+	AI_Output(hero, self, "Info_Mod_Lares_KnuckerTot_15_01"); //Where's Gorn, anyway? I missed him at the fight.
+	AI_Output(self, hero, "Info_Mod_Lares_KnuckerTot_37_02"); //He can watch the chapel. We don't want to experience any unpleasant surprises from the forest.
 
 	AI_StopProcessInfos	(self);
 
@@ -574,20 +574,20 @@ FUNC INT Info_Mod_Lares_Hexen_Condition()
 
 FUNC VOID Info_Mod_Lares_Hexen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_Hexen_37_00"); //Hey, die Untoten bei Sekobs Hof haben sich zerstreut. Jetzt könnten wir sie aufmischen.
-	AI_Output(self, hero, "Info_Mod_Lares_Hexen_37_01"); //Wenn du mitmachst, müsste unsere Schlagkraft ausreichen.
+	AI_Output(self, hero, "Info_Mod_Lares_Hexen_37_00"); //Hey, the undead at Sekob's court have scattered. Now we could beat them up.
+	AI_Output(self, hero, "Info_Mod_Lares_Hexen_37_01"); //If you go along, our clout should be enough.
 	
 	Info_ClearChoices	(Info_Mod_Lares_Hexen);
 
-	Info_AddChoice	(Info_Mod_Lares_Hexen, "Nein, ich habe gerade Wichtigeres zu tun.", Info_Mod_Lares_Hexen_B);
-	Info_AddChoice	(Info_Mod_Lares_Hexen, "Klar, ich bin dabei.", Info_Mod_Lares_Hexen_A);
+	Info_AddChoice	(Info_Mod_Lares_Hexen, "No, I've got more important things to do right now.", Info_Mod_Lares_Hexen_B);
+	Info_AddChoice	(Info_Mod_Lares_Hexen, "Sure, I'm in.", Info_Mod_Lares_Hexen_A);
 };
 
 FUNC VOID Info_Mod_Lares_Hexen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_Hexen_B_15_00"); //Nein, ich habe gerade Wichtigeres zu tun.
-	AI_Output(self, hero, "Info_Mod_Lares_Hexen_B_37_01"); //Hmm, schade, hätte ich nicht gedacht, dass du dir das entgehen lassen willst.
-	AI_Output(self, hero, "Info_Mod_Lares_Hexen_B_37_02"); //Dann müssen wir eben noch etwas mit dem Angriff warten, bis wir Verstärkung bekommen.
+	AI_Output(hero, self, "Info_Mod_Lares_Hexen_B_15_00"); //No, I've got more important things to do right now.
+	AI_Output(self, hero, "Info_Mod_Lares_Hexen_B_37_01"); //Hmm, too bad I didn't think you'd want to miss this.
+	AI_Output(self, hero, "Info_Mod_Lares_Hexen_B_37_02"); //Then we'll just have to wait a little longer before we get reinforcements.
 
 	Info_ClearChoices	(Info_Mod_Lares_Hexen);
 	
@@ -596,9 +596,9 @@ FUNC VOID Info_Mod_Lares_Hexen_B()
 
 FUNC VOID Info_Mod_Lares_Hexen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_Hexen_A_15_00"); //Klar, ich bin dabei.
-	AI_Output(self, hero, "Info_Mod_Lares_Hexen_A_37_01"); //Sehr gut, ich habe auch nichts anderes von dir erwartet. Dann kann es ja losgehen.
-	AI_Output(self, hero, "Info_Mod_Lares_Hexen_A_37_02"); //Wir sammeln uns dann an der Kreuzung. Wie in alten Zeiten.
+	AI_Output(hero, self, "Info_Mod_Lares_Hexen_A_15_00"); //Sure, I'm in.
+	AI_Output(self, hero, "Info_Mod_Lares_Hexen_A_37_01"); //Very well, I didn't expect anything else from you. Well, here we go.
+	AI_Output(self, hero, "Info_Mod_Lares_Hexen_A_37_02"); //We'll gather at the crossroads. Just like old times.
 
 	Mod_WM_GornAttack = 1;
 
@@ -631,7 +631,7 @@ INSTANCE Info_Mod_Lares_NahkampfJG (C_INFO)
 	information	= Info_Mod_Lares_NahkampfJG_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Waldläufer suchen Leute. Möglichst Schwertkämpfer.";
+	description	= "The Rangers are looking for people. Swordsmen, preferably.";
 };
 
 FUNC INT Info_Mod_Lares_NahkampfJG_Condition()
@@ -644,9 +644,9 @@ FUNC INT Info_Mod_Lares_NahkampfJG_Condition()
 
 FUNC VOID Info_Mod_Lares_NahkampfJG_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_NahkampfJG_15_00"); //Die Waldläufer suchen Leute. Möglichst Schwertkämpfer.
-	AI_Output(self, hero, "Info_Mod_Lares_NahkampfJG_37_01"); //Hm. Hier sind einige, die den ganzen Tag nur rumgammeln. Aber da musst du Cord fragen.
-	AI_Output(hero, self, "Info_Mod_Lares_NahkampfJG_15_02"); //Gut. Bis später.
+	AI_Output(hero, self, "Info_Mod_Lares_NahkampfJG_15_00"); //The Rangers are looking for people. Swordsmen, preferably.
+	AI_Output(self, hero, "Info_Mod_Lares_NahkampfJG_37_01"); //Hm. Here are some who spend all day bumming around. But you'll have to ask Cord.
+	AI_Output(hero, self, "Info_Mod_Lares_NahkampfJG_15_02"); //Good. See you later.
 };
 
 INSTANCE Info_Mod_Lares_NahkampfJG2 (C_INFO)
@@ -657,7 +657,7 @@ INSTANCE Info_Mod_Lares_NahkampfJG2 (C_INFO)
 	information	= Info_Mod_Lares_NahkampfJG2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Cord hat mir den Hock mitgegeben. Dafür bekommt ihr einen Jäger geschickt.";
+	description	= "Cord gave me the squat. You'll get a hunter for this.";
 };
 
 FUNC INT Info_Mod_Lares_NahkampfJG2_Condition()
@@ -670,9 +670,9 @@ FUNC INT Info_Mod_Lares_NahkampfJG2_Condition()
 
 FUNC VOID Info_Mod_Lares_NahkampfJG2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_NahkampfJG2_15_00"); //Cord hat mir Hock mitgegeben. Dafür bekommt ihr einen Jäger geschickt.
-	AI_Output(self, hero, "Info_Mod_Lares_NahkampfJG2_37_01"); //Nur zu. Der kann dann mit mir auf Jagd gehen.
-	AI_Output(hero, self, "Info_Mod_Lares_NahkampfJG2_15_02"); //Bis dann.
+	AI_Output(hero, self, "Info_Mod_Lares_NahkampfJG2_15_00"); //Cord gave me squat. You'll get a hunter for this.
+	AI_Output(self, hero, "Info_Mod_Lares_NahkampfJG2_37_01"); //Go right ahead. He can go hunting with me.
+	AI_Output(hero, self, "Info_Mod_Lares_NahkampfJG2_15_02"); //See you around.
 };
 
 INSTANCE Info_Mod_Lares_AndereGilde (C_INFO)
@@ -697,10 +697,10 @@ FUNC INT Info_Mod_Lares_AndereGilde_Condition()
 
 FUNC VOID Info_Mod_Lares_AndereGilde_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_AndereGilde_37_00"); //Hey, mir ist zu Ohren gekommen, dass du schon einem anderen großen Lager angehörst.
-	AI_Output(hero, self, "Info_Mod_Lares_AndereGilde_15_01"); //Äh, nun ...
-	AI_Output(self, hero, "Info_Mod_Lares_AndereGilde_37_02"); //Tja, in dem Fall kannst du uns nun leider nicht mehr beitreten.
-	AI_Output(self, hero, "Info_Mod_Lares_AndereGilde_37_03"); //Das Risiko wäre zu groß, dass du die Interessen anderer vertrittst, wenn du verstehst.
+	AI_Output(self, hero, "Info_Mod_Lares_AndereGilde_37_00"); //Hey, I hear you're from another big warehouse.
+	AI_Output(hero, self, "Info_Mod_Lares_AndereGilde_15_01"); //Uh, well....
+	AI_Output(self, hero, "Info_Mod_Lares_AndereGilde_37_02"); //Well, in that case, you can't join us anymore.
+	AI_Output(self, hero, "Info_Mod_Lares_AndereGilde_37_03"); //The risk would be too great to represent the interests of others, if you understand.
 };
 
 INSTANCE Info_Mod_Lares_Friedensbote (C_INFO)
@@ -723,33 +723,33 @@ FUNC INT Info_Mod_Lares_Friedensbote_Condition()
 
 FUNC VOID Info_Mod_Lares_Friedensbote_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_00"); //(neckisch) Na, haben die Paladine dich mal wieder auf Landurlaub geschickt?
-	AI_Output(hero, self, "Info_Mod_Lares_Friedensbote_15_01"); //Ja, gewissermaßen. Ich soll dir diese Botschaft von Lord Hagen persönlich überbringen.
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_02"); //(ungläubig) Von Lord Kastrat-des-Königs Hagilein höchstpersönlich? Du willst mich veralbern!
-	AI_Output(hero, self, "Info_Mod_Lares_Friedensbote_15_03"); //Hier.
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_00"); //Well, have the Paladins ever sent you on holiday again?
+	AI_Output(hero, self, "Info_Mod_Lares_Friedensbote_15_01"); //Yeah, sort of. I am to deliver this message from Lord Hagen personally.
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_02"); //Of Lord Castrato the King's hagilein himself? You're kidding me!
+	AI_Output(hero, self, "Info_Mod_Lares_Friedensbote_15_03"); //Here.
 
 	B_GiveInvItems	(hero, self, ItWr_HagenLares, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_04"); //Tatsache ...
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_04"); //factual
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_05"); //... unterbreite ich den Vorschlag ... bla ... die Konflikte ... bla ... Paladine und Söldner ... usw. ... so, so, aha ... Zeichen des Vertrauens ... Aspirant auf Posten des Hauptmanns ... oha.
-	AI_Output(hero, self, "Info_Mod_Lares_Friedensbote_15_06"); //Und?
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_07"); //Ich muss schon sagen, du hast es aber verdammt weit gebracht, Junge. Meine Fresse.
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_08"); //Höchster Ritter und Anwärter auf den Hauptmannsposten in der Stadt.
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_09"); //Als du uns damals in der Kolonie die Bedarfsliste des Alten Lagers gebracht hast, hätte ich als Letztes vermutet, dass du mal bei der Truppe des Königs weit vorne mitmischst.
-	AI_Output(hero, self, "Info_Mod_Lares_Friedensbote_15_10"); //Und was sagst du nun zu Hagens Anfrage?
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_11"); //Wenn du als zukünftiger Hauptmann für die Einhaltung der Waffenruhe bürgst, sehe ich keinen Grund, warum nicht auch wir uns daran halten sollten.
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_12"); //Die Orks im Minental werden ja wirklich immer mehr zur Bedrohung.
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_13"); //Da wäre so eine kleine Waffenpause gar nicht schlecht, um in Ruhe unsere Position in Khorinis zu festigen und uns auf alles Weitere vorzubereiten.
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_14"); //Du kannst also Hagen ausrichten, dass wir uns für unseren Teil daran halten werden.
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_15"); //(neckisch) Da wird er auch gewiss mit dir zufrieden sein, wie?
-	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_16"); //Nichts für ungut. Ich bin gespannt, wie sich das weiterentwickelt. Mach’s gut.
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_05"); //... I make the suggestion... blah... the conflicts.... blah... Paladins and mercenaries.... etc. ... so, so, uh-huh... Signs of trust... Aspirant at the post of captain.... uh-huh.
+	AI_Output(hero, self, "Info_Mod_Lares_Friedensbote_15_06"); //And?
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_07"); //I gotta say, you've come a hell of a long way, kid. My ass.
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_08"); //Highest knight and contender for captain position in the city.
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_09"); //When you brought us the Old Camp's list of needs back in the colony, I would have guessed that you would have been at the top of the king's troop.
+	AI_Output(hero, self, "Info_Mod_Lares_Friedensbote_15_10"); //Now what do you say to Hagen's question?
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_11"); //If you, as future captain, vouch for compliance with the ceasefire, I see no reason why we should not adhere to it.
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_12"); //The orcs in the Minental are really becoming more and more of a threat.
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_13"); //It would not be a bad idea to have such a short cease-fire to calmly consolidate our position in Khorinis and to prepare ourselves for everything else.
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_14"); //So you can tell Hagen that we will do our part.
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_15"); //He'll be happy with you there, won't he?
+	AI_Output(self, hero, "Info_Mod_Lares_Friedensbote_37_16"); //No hard feelings. I am curious to see how this develops. Take care, now.
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_FRIEDENSBOTE, "Lares hat der Waffenruhe zugestimmt. Ich sollte Lord Hagen davon berichten.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_FRIEDENSBOTE, "Lares has agreed to the ceasefire. I should tell Lord Hagen about it.");
 };
 
 INSTANCE Info_Mod_Lares_Banditenfestung (C_INFO)
@@ -772,9 +772,9 @@ FUNC INT Info_Mod_Lares_Banditenfestung_Condition()
 
 FUNC VOID Info_Mod_Lares_Banditenfestung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lares_Banditenfestung_37_00"); //He, warte mal. Ich wollte dich warnen, falls du nach Süden in die Berge gehen willst.
-	AI_Output(hero, self, "Info_Mod_Lares_Banditenfestung_15_01"); //Wieso? Was ist da?
-	AI_Output(self, hero, "Info_Mod_Lares_Banditenfestung_37_02"); //In der Festung hat sich irgendwelcher Abschaum aus dem Minental niedergelassen. Pass also gut auf, wenn du dort unterwegs bist.
+	AI_Output(self, hero, "Info_Mod_Lares_Banditenfestung_37_00"); //Hey, wait a minute. I wanted to warn you if you want to go south into the mountains.
+	AI_Output(hero, self, "Info_Mod_Lares_Banditenfestung_15_01"); //Why? What's there?
+	AI_Output(self, hero, "Info_Mod_Lares_Banditenfestung_37_02"); //Some scum from the Minental valley has settled in the fortress. So be careful when you're out there.
 };
 
 INSTANCE Info_Mod_Lares_Banditenfestung2 (C_INFO)
@@ -785,7 +785,7 @@ INSTANCE Info_Mod_Lares_Banditenfestung2 (C_INFO)
 	information	= Info_Mod_Lares_Banditenfestung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Männer in den Bergen Stellen keine Gefahr dar.";
+	description	= "The men in the mountains pose no danger.";
 };
 
 FUNC INT Info_Mod_Lares_Banditenfestung2_Condition()
@@ -798,8 +798,8 @@ FUNC INT Info_Mod_Lares_Banditenfestung2_Condition()
 
 FUNC VOID Info_Mod_Lares_Banditenfestung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_Banditenfestung2_15_00"); //Die Männer in den Bergen Stellen keine Gefahr dar. Es sind alte Bekannte aus der Kolonie.
-	AI_Output(self, hero, "Info_Mod_Lares_Banditenfestung2_37_01"); //Hmm, schön, wenn du es sagst, wird es wohl stimmen. Dann kann ich ja beruhigt sein.
+	AI_Output(hero, self, "Info_Mod_Lares_Banditenfestung2_15_00"); //The men in the mountains pose no danger. They're old acquaintances from the colony.
+	AI_Output(self, hero, "Info_Mod_Lares_Banditenfestung2_37_01"); //Well, fine, if you say so, it's probably true. Then I can be reassured.
 
 	B_GivePlayerXP	(150);
 };
@@ -812,7 +812,7 @@ INSTANCE Info_Mod_Lares_Lehrer (C_INFO)
 	information	= Info_Mod_Lares_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Lares_Lehrer_Condition()
@@ -831,10 +831,10 @@ FUNC VOID Info_Mod_Lares_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Lares_Lehrer_37_00"); //Ich kann dir helfen geschickter zu werden.
+	AI_Output(self, hero, "Info_Mod_Lares_Lehrer_37_00"); //I can help you get smarter.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Lares kann mir helfen geschickter zu werden.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Lares can help me to be more skillful.");
 };
 
 var int Lares_LastPetzCounter;
@@ -862,17 +862,17 @@ FUNC INT Info_Mod_Lares_PMSchulden_Condition()
 
 FUNC VOID Info_Mod_Lares_PMSchulden_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_00"); //Bist du gekommen, um deine Strafe zu zahlen?
+	AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_00"); //Did you come to pay your fine?
 
 	if (B_GetTotalPetzCounter(self) > Lares_LastPetzCounter)
 	{
-		AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_01"); //Ich hatte mich schon gefragt, ob du es überhaupt noch wagst, hierher zu kommen!
-		AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_02"); //Anscheinend ist es nicht bei den letzten Anschuldigungen geblieben!
+		AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_01"); //I was wondering if you'd even dare come here!
+		AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_02"); //Apparently, it's not the latest accusations!
 
 		if (Lares_Schulden < 1000)
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_03"); //Ich hatte dich gewarnt! Die Strafe, die du jetzt zahlen musst, ist höher!
-			AI_Output (hero, self, "Info_Mod_Lares_PMAdd_15_00"); //Wie viel?
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_03"); //I warned you! The fine you have to pay now is higher!
+			AI_Output (hero, self, "Info_Mod_Lares_PMAdd_15_00"); //How much?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Lares_LastPetzCounter);
 		
@@ -887,42 +887,42 @@ FUNC VOID Info_Mod_Lares_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_04"); //Du hast mich schwer enttäuscht!
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_04"); //You let me down so badly!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Lares_LastPetzCrime)
 	{
-		AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_05"); //Es haben sich einige neue Dinge ergeben.
+		AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_05"); //Some new things have come up.
 		
 		if (Lares_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_06"); //Plötzlich gibt es niemanden mehr, der dich des Mordes bezichtigt.
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_06"); //Suddenly, there's no one left to accuse you of murder.
 		};
 		
 		if (Lares_LastPetzCrime == CRIME_THEFT)
 		|| ( (Lares_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_07"); //Niemand erinnert sich mehr, dich bei einem Diebstahl gesehen zu haben.
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_07"); //No one remembers seeing you at a theft.
 		};
 		
 		if (Lares_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Lares_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_08"); //Es gibt keine Zeugen mehr dafür, dass du jemals in eine Schlägerei verwickelt warst.
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_08"); //There's no more witnesses to the fact that you've ever been in a fight.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_09"); //Anscheinend haben sich alle Anklagen gegen dich in Wohlgefallen aufgelöst.
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_09"); //Apparently all the charges against you have vanished.
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_10"); //Ich weiß nicht, was da gelaufen ist, aber ich warne dich: Spiel keine Spielchen mit mir.
+		AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_10"); //I don't know what happened, but I warn you: don't play games with me.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_11"); //Ich habe mich jedenfalls entschieden, dir deine Schulden zu erlassen.
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_12"); //Sieh zu, dass du nicht wieder in Schwierigkeiten kommst.
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_11"); //Anyway, I've decided to waive your debt.
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_12"); //Make sure you don't get in trouble again.
 	
 			Lares_Schulden			= 0;
 			Lares_LastPetzCounter 	= 0;
@@ -930,9 +930,9 @@ FUNC VOID Info_Mod_Lares_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_13"); //Damit eins klar ist: Deine Strafe musst du trotzdem in voller Höhe zahlen.
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_13"); //One thing is clear: you still have to pay your penalty in full.
 			B_Say_Gold (self, hero, Lares_Schulden);
-			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_14"); //Also, was ist?
+			AI_Output (self, hero, "Info_Mod_Lares_PMSchulden_37_14"); //So, what is it?
 		};
 	};
 	
@@ -941,27 +941,27 @@ FUNC VOID Info_Mod_Lares_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Lares_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Lares_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Lares_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Lares_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Lares_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Lares_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Lares_PMSchulden,"I don't have enough gold!",Info_Mod_Lares_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Lares_PMSchulden,"How much was it again?",Info_Mod_Lares_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Lares_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Lares_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Lares_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Lares_PMSchulden,"I want to pay the fine.",Info_Mod_Lares_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void Info_Mod_Lares_PMSchulden_HowMuchAgain()
 {
-	AI_Output (hero, self, "Info_Mod_Lares_PMSchulden_HowMuchAgain_15_00"); //Wie viel war es noch mal?
+	AI_Output (hero, self, "Info_Mod_Lares_PMSchulden_HowMuchAgain_15_00"); //How much was it again?
 	B_Say_Gold (self, hero, Lares_Schulden);
 
 	Info_ClearChoices  	(Info_Mod_Lares_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Lares_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Lares_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Lares_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Lares_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Lares_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Lares_PMSchulden,"I don't have enough gold!",Info_Mod_Lares_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Lares_PMSchulden,"How much was it again?",Info_Mod_Lares_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Lares_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Lares_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Lares_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Lares_PMSchulden,"I want to pay the fine.",Info_Mod_Lares_PETZMASTER_PayNow);
 	};
 };
 
@@ -989,8 +989,8 @@ FUNC VOID Info_Mod_Lares_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_01"); //Gut, dass du zu mir kommst, bevor alles noch schlimmer für dich wird.
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_02"); //Mord ist ein schweres Vergehen!
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_01"); //I'm glad you came to me before things got worse for you.
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_02"); //Murder is a grave offence!
 
 		Lares_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
 
@@ -998,41 +998,41 @@ FUNC VOID Info_Mod_Lares_PETZMASTER_Info()
 
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_03"); //Ganz zu schweigen von den anderen Sachen, die du angerichtet hast.
+			AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_03"); //Not to mention the other things you've done.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_06"); //Ich habe kein Interesse daran, dich an den Galgen zu bringen. Wir sind im Krieg und wir brauchen jeden Mann.
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_07"); //Aber es wird nicht leicht sein, die Leute wieder gnädig zu stimmen.
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_08"); //Du könntest deine Reue zeigen, indem du eine Strafe zahlst - natürlich muss die Strafe angemessen hoch sein.
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_06"); //I have no interest in putting you on the gallows. We're at war, and we need every man we can get.
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_07"); //But it won't be easy to make people gracious again.
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_08"); //You could show your repentance by paying a fine - of course the penalty must be appropriate.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_09"); //Gut, dass du kommst! Du wirst des Diebstahls bezichtigt! Es gibt Zeugen!
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_09"); //Good of you to come! You're accused of stealing! There are witnesses!
 
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_10"); //Von den anderen Dingen, die mir zu Ohren gekommen sind, will ich gar nicht erst reden.
+			AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_10"); //I don't even want to talk about the other things I've heard.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_11"); //Ich werde so ein Verhalten bei uns nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_12"); //Du wirst eine Strafe zahlen müssen, um dein Verbrechen wieder gutzumachen!
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_11"); //I will not tolerate such behaviour in our country!
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_12"); //You'll have to pay a fine to make up for your crime!
 		
 		Lares_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_13"); //Wenn du dich mit dem Gesindel in der Stadt herumprügelst, ist das eine Sache ...
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_14"); //Aber wenn du die Bauern oder andere Söldner angreifst, muss ich dich zur Rechenschaft ziehen.
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_13"); //If you fight with the riffraff in town, that's one thing...
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_14"); //But if you attack the peasants or other mercenaries, I'll have to hold you accountable.
 
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_15"); //Und die Sache mit den Schafen musste wohl auch nicht sein.
+			AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_15"); //And I don't think it had to be the case with the sheep.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_16"); //Wenn ich dir das durchgehen lasse, macht hier bald jeder, was er will.
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_17"); //Also wirst du eine angemessene Strafe zahlen - und die Sache ist vergessen.
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_16"); //If I let you get away with this, everybody's gonna do what they want.
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_17"); //So you'll pay an appropriate fine - and the whole thing will be forgotten.
 		
 		Lares_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
@@ -1040,14 +1040,14 @@ FUNC VOID Info_Mod_Lares_PETZMASTER_Info()
 	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_18"); //Mir ist zu Ohren gekommen, du hättest dich an unseren Schafen vergriffen.
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_19"); //Dir ist klar, dass ich das nicht durchgehen lassen kann.
-		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_20"); //Du wirst eine Entschädigung zahlen müssen!
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_18"); //I've heard that you've been messing with our sheep.
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_19"); //You do realize I can't let this go through.
+		AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_37_20"); //You'll have to pay compensation!
 		
 		Lares_Schulden = 100;
 	};
 	
-	AI_Output (hero, self, "Info_Mod_Lares_PETZMASTER_15_21"); //Wie viel?
+	AI_Output (hero, self, "Info_Mod_Lares_PETZMASTER_15_21"); //How much?
 	
 	if (Lares_Schulden > 1000)	{	Lares_Schulden = 1000;	};
 		
@@ -1055,18 +1055,18 @@ FUNC VOID Info_Mod_Lares_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Lares_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Lares_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Lares_PETZMASTER,"Ich habe nicht genug Gold!",Info_Mod_Lares_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Lares_PETZMASTER,"I don't have enough gold!",Info_Mod_Lares_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Lares_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Lares_PETZMASTER,"Ich will die Strafe zahlen.",Info_Mod_Lares_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Lares_PETZMASTER,"I want to pay the fine.",Info_Mod_Lares_PETZMASTER_PayNow);
 	};
 };
 
 func void Info_Mod_Lares_PETZMASTER_PayNow()
 {
-	AI_Output (hero, self, "Info_Mod_Lares_PETZMASTER_PayNow_15_00"); //Ich will die Strafe zahlen!
+	AI_Output (hero, self, "Info_Mod_Lares_PETZMASTER_PayNow_15_00"); //I want to pay the fine!
 	B_GiveInvItems (hero, self, itmi_gold, Lares_Schulden);
-	AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_PayNow_37_01"); //Gut! Ich werde dafür sorgen, dass es jeder Bauer und Söldner erfährt - damit wäre dein Ruf einigermaßen wiederhergestellt.
+	AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_PayNow_37_01"); //Good! I will see to it that every farmer and mercenary learns about it - this will restore your reputation to some extent.
 
 	B_GrantAbsolution (LOC_FARM);
 	
@@ -1080,9 +1080,9 @@ func void Info_Mod_Lares_PETZMASTER_PayNow()
 
 func void Info_Mod_Lares_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Lares_PETZMASTER_PayLater_15_00"); //Ich habe nicht genug Gold!
-	AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_PayLater_37_01"); //Dann sieh zu, dass du das Gold so schnell wie möglich beschaffst.
-	AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_PayLater_37_02"); //Und ich warne dich: Wenn du dir noch was zu schulden kommen lässt, wird die Sache noch schlimmer für dich!
+	AI_Output (hero, self, "Info_Mod_Lares_PETZMASTER_PayLater_15_00"); //I don't have enough gold!
+	AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_PayLater_37_01"); //Then see that you get the gold as soon as possible.
+	AI_Output (self, hero, "Info_Mod_Lares_PETZMASTER_PayLater_37_02"); //And I'm warning you, if you owe yourself anything, it's going to get worse for you.
 	
 	Lares_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Lares_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -1098,7 +1098,7 @@ INSTANCE Info_Mod_Lares_Lernen (C_INFO)
 	information	= Info_Mod_Lares_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Teach me something.";
 };
 
 FUNC INT Info_Mod_Lares_Lernen_Condition()
@@ -1115,8 +1115,8 @@ FUNC INT Info_Mod_Lares_Lernen_Condition()
 
 FUNC VOID Info_Mod_Lares_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lares_Lernen_15_00"); //Bring mir was bei.
-	AI_Output(self, hero, "Info_Mod_Lares_Lernen_37_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Lares_Lernen_15_00"); //Teach me something.
+	AI_Output(self, hero, "Info_Mod_Lares_Lernen_37_01"); //What do you want to learn?
 
 	Info_ClearChoices	(Info_Mod_Lares_Lernen);
 

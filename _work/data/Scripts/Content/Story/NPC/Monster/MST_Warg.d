@@ -72,7 +72,7 @@ PROTOTYPE Mst_Default_Warg(C_Npc)
 PROTOTYPE Mst_Default_Blackwolf(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Schwarzer Wolf";
+	name							=	"Black Wolf";
 	level							=	 9;
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
@@ -187,7 +187,7 @@ INSTANCE Warg_Mirza	(Mst_Default_Warg)
 
 INSTANCE Warg_Atalante	(Mst_Default_Warg)
 {
-	name		= "weiblicher Warg";
+	name		= "female warg";
 
 	B_SetVisuals_Warg();
 	Npc_SetToFistMode(self);
@@ -262,7 +262,7 @@ INSTANCE BlackWolf	(Mst_Default_Blackwolf)
 
 INSTANCE BlackWolf_Maleth_01	(Mst_Default_Warg)
 {
-	name							=	"Schwarzer Wolf";
+	name							=	"Black Wolf";
 	level							=	 9;		
 	//für Inventory
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
@@ -291,7 +291,7 @@ INSTANCE BlackWolf_Maleth_01	(Mst_Default_Warg)
 
 INSTANCE BlackWolf_Maleth_02	(Mst_Default_Warg)
 {
-	name							=	"Schwarzer Wolf";
+	name							=	"Black Wolf";
 	level							=	 9;		
 	//für Inventory
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
@@ -320,7 +320,7 @@ INSTANCE BlackWolf_Maleth_02	(Mst_Default_Warg)
 
 INSTANCE BlackWolf_Maleth_03	(Mst_Default_Warg)
 {
-	name							=	"Schwarzer Wolf";
+	name							=	"Black Wolf";
 	level							=	 9;		
 	//für Inventory
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
@@ -349,7 +349,7 @@ INSTANCE BlackWolf_Maleth_03	(Mst_Default_Warg)
 
 INSTANCE Summoned_BlackWolf	(Mst_Default_Warg)
 {
-	name							=	"Beschworener Schwarzer Wolf";
+	name							=	"Summoned Black Wolf";
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_WOLF;
 	level							=	0; //10

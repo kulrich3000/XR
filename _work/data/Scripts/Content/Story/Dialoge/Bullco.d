@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bullco_Hi (C_INFO)
 	information	= Info_Mod_Bullco_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Bullco_Hi_Condition()
@@ -18,13 +18,13 @@ FUNC VOID Info_Mod_Bullco_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Bullco_Hi_06_01"); //Ich bin Bullco, Drachenjäger.
-	AI_Output(hero, self, "Info_Mod_Bullco_Hi_15_02"); //Wie viele Drachen hast du denn schon gejagt?
-	AI_Output(self, hero, "Info_Mod_Bullco_Hi_06_03"); //(dümmlich) Hä? Siehst du hier irgendwo Drachen?
-	AI_Output(hero, self, "Info_Mod_Bullco_Hi_15_04"); //Die habt ihr doch sicher schon alle ausgerottet.
-	AI_Output(self, hero, "Info_Mod_Bullco_Hi_06_05"); //Willst mich wohl verarschen, Mann?
-	AI_Output(hero, self, "Info_Mod_Bullco_Hi_15_06"); //Na, dann weiterhin viel Glück.
-	AI_Output(self, hero, "Info_Mod_Bullco_Hi_06_07"); //Ja ...
+	AI_Output(self, hero, "Info_Mod_Bullco_Hi_06_01"); //I'm Bullco, dragon hunter.
+	AI_Output(hero, self, "Info_Mod_Bullco_Hi_15_02"); //How many dragons have you hunted?
+	AI_Output(self, hero, "Info_Mod_Bullco_Hi_06_03"); //(dumb) Huh? Do you see any dragons around here?
+	AI_Output(hero, self, "Info_Mod_Bullco_Hi_15_04"); //You must have wiped them all out by now.
+	AI_Output(self, hero, "Info_Mod_Bullco_Hi_06_05"); //Are you kidding me, man?
+	AI_Output(hero, self, "Info_Mod_Bullco_Hi_15_06"); //Well, good luck then.
+	AI_Output(self, hero, "Info_Mod_Bullco_Hi_06_07"); //Yes...
 };
 
 INSTANCE Info_Mod_Bullco_Frauenraub (C_INFO)
@@ -47,27 +47,27 @@ FUNC INT Info_Mod_Bullco_Frauenraub_Condition()
 
 FUNC VOID Info_Mod_Bullco_Frauenraub_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_00"); //Ahh, da bist du ja endlich ...
-	AI_Output(hero, self, "Info_Mod_Bullco_Frauenraub_15_01"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_02"); //Du kennst dich ja im Alten Lager bereits gut aus, weißt vermutlich auch, wo das Haus der Erzbarone steht.
-	AI_Output(hero, self, "Info_Mod_Bullco_Frauenraub_15_03"); //Denke schon.
-	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_04"); //Gut, und die Erzbarone haben mehr, was wir begehren, als nur Erz. (anzügliches Kichern)
+	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_00"); //Ahh, there you are at last...
+	AI_Output(hero, self, "Info_Mod_Bullco_Frauenraub_15_01"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_02"); //You already know your way around the Old Camp, and you probably know where the Archbarone's house is located.
+	AI_Output(hero, self, "Info_Mod_Bullco_Frauenraub_15_03"); //I think so.
+	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_04"); //Well, and the ore barons have more than just ore. (giggling giggle)
 
 	B_Say	(hero, self, "$WASMEINSTDU");
 
-	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_05"); //Die Mädels, die dort rumsitzen. Besorg uns eine davon.
-	AI_Output(hero, self, "Info_Mod_Bullco_Frauenraub_15_06"); //Und wie soll ich das bitte anstellen?
-	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_07"); //Ist für alles schon gesorgt. Hier, nimm diesen Nebelzauber, den die Wassermagier damals zurückgelassen haben, und benutze ihn im Haus der Erzbarone.
+	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_05"); //The girls sitting there. Get us one of these.
+	AI_Output(hero, self, "Info_Mod_Bullco_Frauenraub_15_06"); //And how am I supposed to do that?
+	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_07"); //Everything's already taken care of. Here, take this fog spell left by the water magicians at that time and use it in the house of the Archbarons.
 
 	B_GiveInvItems	(self, hero, ItSc_Nebel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_08"); //Dann musst du nur noch ein Mädchen dazu bringen, diesen Umhang überzuziehen und dich zu begleiten.
+	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_08"); //Then all you have to do is get a girl to put on that cloak and go with you.
 
 	B_GiveInvItems	(self, hero, ItAr_WomanCape, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_09"); //Du bringst sie dann zu Sylvio. Alles klar? Na dann los.
+	AI_Output(self, hero, "Info_Mod_Bullco_Frauenraub_06_09"); //You take her to Sylvio's. You all right? All right, let's go.
 
-	B_LogEntry	(TOPIC_MOD_SLD_BULLCO, "Bullco hat mich dazu angewiesen, ins Haus der Erzbarone zu gehen, die Nebelspruchrolle, die er mir gab, anzuwenden und eine der Frauen dazu zu bringen, den Umhang anzuziehen. Ich soll sie dann zu Sylvio geleiten.");
+	B_LogEntry	(TOPIC_MOD_SLD_BULLCO, "Bullco has instructed me to go into the House of the Archbarons, to use the foggy role he gave me and to get one of the women to put on the cape. I'm supposed to take her to Sylvio's.");
 };
 
 INSTANCE Info_Mod_Bullco_KesselProblem (C_INFO)
@@ -90,8 +90,8 @@ FUNC INT Info_Mod_Bullco_KesselProblem_Condition()
 
 FUNC VOID Info_Mod_Bullco_KesselProblem_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bullco_KesselProblem_06_00"); //Du dreckiges Schwein. Wegen dir bin ich meinen Job beim Talkessel los.
-	AI_Output(self, hero, "Info_Mod_Bullco_KesselProblem_06_01"); //Das wirst du mir büßen.
+	AI_Output(self, hero, "Info_Mod_Bullco_KesselProblem_06_00"); //You dirty bastard. You got me out of my job at the valley basin.
+	AI_Output(self, hero, "Info_Mod_Bullco_KesselProblem_06_01"); //You'll pay for this.
 };
 
 INSTANCE Info_Mod_Bullco_Belagerung (C_INFO)
@@ -102,7 +102,7 @@ INSTANCE Info_Mod_Bullco_Belagerung (C_INFO)
 	information	= Info_Mod_Bullco_Belagerung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wir brauchen euch Söldner.";
+	description	= "We need you mercenaries.";
 };
 
 FUNC INT Info_Mod_Bullco_Belagerung_Condition()
@@ -115,21 +115,21 @@ FUNC INT Info_Mod_Bullco_Belagerung_Condition()
 
 FUNC VOID Info_Mod_Bullco_Belagerung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_00"); //Wir brauchen euch Söldner.
-	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_01"); //Die Dämonenritter wollen einigen Untoten endgültig den Gar ausmachen. Jedoch haben wir nicht genug Männer, um diese alleine anzugreifen.
-	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_02"); //Ich wollte dich bitten, uns einige Söldner zur Verfügung zu stellen.
-	AI_Output(self, hero, "Info_Mod_Bullco_Belagerung_06_03"); //Das ist schwierig, denn die meisten Söldner trauen den Beliaranhängern nicht. Du müsstest sie schon überzeugen da mitzumachen.
-	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_04"); //Wie soll ich das anstellen?
-	AI_Output(self, hero, "Info_Mod_Bullco_Belagerung_06_05"); //Natürlich mit Gold. Ich denke 10.000 Goldmünzen sollten reichen.
-	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_06"); //(zynisch) Ja, das zaubere ich einfach so herbei.
-	AI_Output(self, hero, "Info_Mod_Bullco_Belagerung_06_07"); //Ich weiß, es ist viel, aber sonst werden dir unsere Leute nicht helfen wollen.
-	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_08"); //Ich wende mich an Raven, er wird schon wissen, woher ich das Gold bekomme.
-	AI_Output(self, hero, "Info_Mod_Bullco_Belagerung_06_09"); //Gut, mach das, ich warte so lange hier!
-	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_10"); //Wir sehen uns!
+	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_00"); //We need you mercenaries.
+	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_01"); //The Demon Knights want to bring out some undead once and for all. However, we don't have enough men to attack them alone.
+	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_02"); //I was going to ask you to provide us with some mercenaries.
+	AI_Output(self, hero, "Info_Mod_Bullco_Belagerung_06_03"); //This is difficult, because most mercenaries don't trust the Beliaran supporters. You'd have to convince them to go along with it.
+	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_04"); //How am I supposed to do that?
+	AI_Output(self, hero, "Info_Mod_Bullco_Belagerung_06_05"); //With gold, of course. I think 10. 000 gold coins should be enough.
+	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_06"); //(cynical) Yeah, that's just what I do.
+	AI_Output(self, hero, "Info_Mod_Bullco_Belagerung_06_07"); //I know it's a lot, but our people won't want to help you otherwise.
+	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_08"); //I turn to Raven, he'll know where I can get the gold from.
+	AI_Output(self, hero, "Info_Mod_Bullco_Belagerung_06_09"); //All right, do that, I'll wait here as long as you want!
+	AI_Output(hero, self, "Info_Mod_Bullco_Belagerung_15_10"); //See you around!
 
 	Mod_GornsSold = 1;
 	
-	B_LogEntry	(TOPIC_MOD_BEL_SOELDNER, "Bullco hat gesagt, dass die Söldner einen Sold von 10.000 Goldmünzen erwarten. Mal sehen, was Raven dazu sagt.");
+	B_LogEntry	(TOPIC_MOD_BEL_SOELDNER, "Bullco said that the mercenaries paid a salary of 10. 000 gold coins are expected. Let's see what Raven has to say.");
 };
 
 INSTANCE Info_Mod_Bullco_Sold (C_INFO)
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Bullco_Sold (C_INFO)
 	information	= Info_Mod_Bullco_Sold_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du das Gold.";
+	description	= "Here's the gold.";
 };
 
 FUNC INT Info_Mod_Bullco_Sold_Condition()
@@ -154,16 +154,16 @@ FUNC INT Info_Mod_Bullco_Sold_Condition()
 
 FUNC VOID Info_Mod_Bullco_Sold_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bullco_Sold_15_00"); //Hier hast du das Gold.
+	AI_Output(hero, self, "Info_Mod_Bullco_Sold_15_00"); //Here's the gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 10000);
 
-	AI_Output(self, hero, "Info_Mod_Bullco_Sold_06_01"); //Sehr gut damit wären unsere Leute wohl hochzufrieden. Heute nacht werden wir angreifen!
-	AI_Output(hero, self, "Info_Mod_Bullco_Sold_15_02"); //Gut, ich werde Raven Bescheid sagen.
+	AI_Output(self, hero, "Info_Mod_Bullco_Sold_06_01"); //I think our people would be very happy with that. Tonight we will attack!
+	AI_Output(hero, self, "Info_Mod_Bullco_Sold_15_02"); //All right, I'll let Raven know.
 
 	B_GivePlayerXP	(250);
 	
-	B_LogEntry	(TOPIC_MOD_BEL_SOELDNER, "Die Söldner sind bereit und werden heute nacht angreifen. Ich sollte Raven noch darüber informieren.");
+	B_LogEntry	(TOPIC_MOD_BEL_SOELDNER, "The mercenaries are ready and will attack tonight. I should let Raven know about this.");
 };
 
 INSTANCE Info_Mod_Bullco_SchlachtFertig (C_INFO)
@@ -174,7 +174,7 @@ INSTANCE Info_Mod_Bullco_SchlachtFertig (C_INFO)
 	information	= Info_Mod_Bullco_SchlachtFertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und alles klar?";
+	description	= "And everything all right?";
 };
 
 FUNC INT Info_Mod_Bullco_SchlachtFertig_Condition()
@@ -187,12 +187,12 @@ FUNC INT Info_Mod_Bullco_SchlachtFertig_Condition()
 
 FUNC VOID Info_Mod_Bullco_SchlachtFertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bullco_SchlachtFertig_15_00"); //Und alles klar?
-	AI_Output(self, hero, "Info_Mod_Bullco_SchlachtFertig_06_01"); //Das war ein harter Kampf. Ich hätte nicht gedacht, dass diese Untoten so einen Widerstand leisten und Ärger machen.
-	AI_Output(hero, self, "Info_Mod_Bullco_SchlachtFertig_15_02"); //Ist aber am Ende doch alles gut gelaufen, oder?
-	AI_Output(self, hero, "Info_Mod_Bullco_SchlachtFertig_06_03"); //Da hast du Recht. Was hast du jetzt vor?
-	AI_Output(hero, self, "Info_Mod_Bullco_SchlachtFertig_15_04"); //Ich muss mal wieder verhindern, dass Khorinis den Bach runter geht.
-	AI_Output(self, hero, "Info_Mod_Bullco_SchlachtFertig_06_05"); //(lacht) So kenne ich dich. Viel Glück!
+	AI_Output(hero, self, "Info_Mod_Bullco_SchlachtFertig_15_00"); //And everything all right?
+	AI_Output(self, hero, "Info_Mod_Bullco_SchlachtFertig_06_01"); //That was a tough fight. I didn't think those undead would resist and make trouble like that.
+	AI_Output(hero, self, "Info_Mod_Bullco_SchlachtFertig_15_02"); //But it all went well in the end, didn't it?
+	AI_Output(self, hero, "Info_Mod_Bullco_SchlachtFertig_06_03"); //You got that right. What are you going to do now?
+	AI_Output(hero, self, "Info_Mod_Bullco_SchlachtFertig_15_04"); //I have to make sure Khorinis don't go down the drain again.
+	AI_Output(self, hero, "Info_Mod_Bullco_SchlachtFertig_06_05"); //That's how I know you. Good luck to you!
 
 	B_GivePlayerXP	(250);
 };

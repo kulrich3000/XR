@@ -1,7 +1,7 @@
 INSTANCE Mod_7206_NONE_Iwan_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Iwan"; 
+	name 		= "Ivan"; 
 	guild 		= GIL_NONE;
 	id 			= 7206;
 	voice 		= 11;

@@ -15,19 +15,19 @@ FUNC INT Info_Mod_Cirio_Hi_Condition()
 
 FUNC VOID Info_Mod_Cirio_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_00"); //He, Fremder, was führt dich nach Relendel?
-	AI_Output(hero, self, "Info_Mod_Cirio_Hi_15_01"); //Warum willst du das wissen?
-	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_02"); //Nun ja, ich hab ein kleines Rattenproblem, und du siehst aus, als könntest du damit fertig werden.
-	AI_Output(hero, self, "Info_Mod_Cirio_Hi_15_03"); //Na gut, was soll ich denn genau für dich machen?
-	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_04"); //Vor ein paar Tagen, als ich in die Stadt gegangen bin, um Nahrungsmittel zu kaufen, hat sich ein Haufen Ratten in meinem Haus breit gemacht.
-	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_05"); //Diese verdammten Viecher zerfressen mir noch mein ganzes Haus, und es sind einfach zu viele für mich allein.
-	AI_Output(hero, self, "Info_Mod_Cirio_Hi_15_06"); //Ich denke, mit ein paar Ratten werde ich schon fertig.
-	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_07"); //Danke, Fremder, ich führe dich zu meinem Haus.
-	AI_Output(hero, self, "Info_Mod_Cirio_Hi_15_08"); //Ok, gehen wir!
+	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_00"); //Hey, stranger, what brings you to Relendel?
+	AI_Output(hero, self, "Info_Mod_Cirio_Hi_15_01"); //Why do you want to know?
+	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_02"); //Well, I have a little rat problem, and you look like you can handle it.
+	AI_Output(hero, self, "Info_Mod_Cirio_Hi_15_03"); //All right, what am I supposed to do for you?
+	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_04"); //A few days ago, when I went into town to buy food, a bunch of rats spread out in my house.
+	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_05"); //Those damn creatures are eating up my whole house, and there's just too many of them for me alone.
+	AI_Output(hero, self, "Info_Mod_Cirio_Hi_15_06"); //I think I can handle some rats.
+	AI_Output(self, hero, "Info_Mod_Cirio_Hi_09_07"); //Thank you, stranger, I'll show you to my house.
+	AI_Output(hero, self, "Info_Mod_Cirio_Hi_15_08"); //All right, let's go!
 
 	Log_CreateTopic	(TOPIC_MOD_RATTENQUEST, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_RATTENQUEST, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Cirio hat in seinem Haus ein kleines Rattenproblem. Er bat mich, ihm dabei zu helfen, und führt mich nun dorthin.");
+	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Cirio has a little rat problem in his house. He asked me to help him, and now he leads me there.");
 
 	AI_StopProcessInfos	(self);
 
@@ -55,15 +55,15 @@ FUNC INT Info_Mod_Cirio_AtHaus_Condition()
 
 FUNC VOID Info_Mod_Cirio_AtHaus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cirio_AtHaus_09_00"); //Gut, da wären wir. Du meintest ja, du würden mit ihnen alleine klar kommen. Ich halte ihnen so lange den Rücken frei, nicht dass noch mehr von diesen Viechern kommen.
-	AI_Output(hero, self, "Info_Mod_Cirio_AtHaus_15_01"); //In Ordnung, aber umsonst mach' ich das nicht.
-	AI_Output(self, hero, "Info_Mod_Cirio_AtHaus_09_02"); //Na ja, viel Gold hab ich nicht mehr dabei, aber wenn du die Ratten für mich tötest, bekommst du 200 Gold aus meinem Tresor. Hier hast du schon mal 20 Gold.
+	AI_Output(self, hero, "Info_Mod_Cirio_AtHaus_09_00"); //Well, here we are. You said you thought you could handle them on your own. I'll keep my back so long, not that there's more of those things coming.
+	AI_Output(hero, self, "Info_Mod_Cirio_AtHaus_15_01"); //All right, but I'm not doing this for free.
+	AI_Output(self, hero, "Info_Mod_Cirio_AtHaus_09_02"); //Well, I don't have much gold left, but if you kill the rats for me, you get 200 gold out of my vault. Here's 20 gold already.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 20);
 
-	AI_Output(hero, self, "Info_Mod_Cirio_AtHaus_15_03"); //200 Gold klingt gut, dein Rattenproblem ist schon Geschichte.
+	AI_Output(hero, self, "Info_Mod_Cirio_AtHaus_15_03"); //200 gold sounds good, your rat problem is history.
 
-	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Cirio hat mich zu seinem Haus gebracht, und ich werde mich nun um die Ratten kümmern.");
+	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Cirio took me to his house, and I'm going to take care of the rats.");
 
 	AI_StopProcessInfos	(self);
 
@@ -104,9 +104,9 @@ FUNC INT Info_Mod_Cirio_RattenErledigt_Condition()
 
 FUNC VOID Info_Mod_Cirio_RattenErledigt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cirio_RattenErledigt_09_00"); //Du hast sie also alle getötet, beachtlich. Schade nur, dass sie dir nun in den Rücken fallen.
-	AI_Output(hero, self, "Info_Mod_Cirio_RattenErledigt_15_01"); //Was soll das, du hast doch gesagt, du hältst mir den Rücken frei.
-	AI_Output(self, hero, "Info_Mod_Cirio_RattenErledigt_09_02"); //Ich sagte, ich halte IHNEN den Rücken frei. Ich hatte gehofft, meine Freunde würden alleine mit dir fertig werden, aber das ist jetzt auch egal, denn für mich bist du nur Futter.
+	AI_Output(self, hero, "Info_Mod_Cirio_RattenErledigt_09_00"); //So you've killed them all, considerable. It's just a pity they're now falling behind you.
+	AI_Output(hero, self, "Info_Mod_Cirio_RattenErledigt_15_01"); //What are you doing, you said you had my back.
+	AI_Output(self, hero, "Info_Mod_Cirio_RattenErledigt_09_02"); //I said I'd watch your back. I had hoped that my friends would be able to cope with you on their own, but it doesn't matter now, because to me you're just food.
 
 	AI_StopProcessInfos	(self);
 

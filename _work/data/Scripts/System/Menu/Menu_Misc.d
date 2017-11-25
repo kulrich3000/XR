@@ -20,7 +20,7 @@ INSTANCE MENU_LEAVE_GAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_LEAVE_GAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		= "Xeres' Rückkehr verlassen?";   		
+	text[0]		= "Xeres' return home?";   		
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=    0;		posy		= 3400;
@@ -33,8 +33,8 @@ INSTANCE MENUITEM_LEAVE_GAME_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LEAVE_GAME_YES(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Ja";
-	text[1]		= "Ja, ich möchte Xeres' Rückkehr verlassen."; // Kommentar
+	text[0]		= "yes";
+	text[1]		= "Yes, I want to leave Xeres's return."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 4400;	
@@ -49,8 +49,8 @@ INSTANCE MENUITEM_LEAVE_GAME_YES(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LEAVE_GAME_NO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Nein";
-	text[1]		= "Nein, ich möchte weiterspielen."; // Kommentar
+	text[0]		= "nay";
+	text[1]		= "No, I want to resume playing."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 5000;	
@@ -76,7 +76,7 @@ INSTANCE MENU_REALLY_NEWGAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_REALLY_NEWGAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		= "Wirklich ein neues Spiel beginnen?";   		
+	text[0]		= "Really start a new game?";   		
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=    0;		posy		= 3400;
@@ -89,8 +89,8 @@ INSTANCE MENUITEM_REALLY_NEWGAME_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_REALLY_NEWGAME_YES(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Ja";
-	text[1]		= "Ja, ich will ein neues Spiel starten."; // Kommentar
+	text[0]		= "yes";
+	text[1]		= "Yes, I want to start a new game."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 4400;	
@@ -105,8 +105,8 @@ INSTANCE MENUITEM_REALLY_NEWGAME_YES(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_REALLY_NEWGAME_NO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Nein";
-	text[1]		= "Nein, ich möchte kein neues Spiel starten."; // Kommentar
+	text[0]		= "nay";
+	text[1]		= "No, I don't want to start a new game."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 5000;	

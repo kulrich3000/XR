@@ -1,7 +1,7 @@
 instance Mod_7458_NONE_Jack_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Jack"; 
+	name 		= "jack"; 
 	guild 		= GIL_OUT;
 	id 			= 7458;
 	voice 		= 14;

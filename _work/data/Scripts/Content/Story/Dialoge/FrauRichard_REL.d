@@ -6,7 +6,7 @@ INSTANCE Info_Mod_FrauRichard_REL_Hi (C_INFO)
 	information	= Info_Mod_FrauRichard_REL_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieder gut eingelebt?";
+	description	= "Well settled in again?";
 };
 
 FUNC INT Info_Mod_FrauRichard_REL_Hi_Condition()
@@ -16,35 +16,35 @@ FUNC INT Info_Mod_FrauRichard_REL_Hi_Condition()
 
 FUNC VOID Info_Mod_FrauRichard_REL_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_FrauRichard_REL_Hi_15_00"); //Wieder gut eingelebt?
-	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_01"); //Es hat sich ja einiges geändert, seitdem ich weg war.
+	AI_Output(hero, self, "Info_Mod_FrauRichard_REL_Hi_15_00"); //Well settled in again?
+	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_01"); //Things have changed a lot since I left.
 
 	if (Mod_REL_Stadthalter == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_02"); //Dass Theodorus mal Statthalter werden würde, hätte ich nie für möglich gehalten!
+		AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_02"); //I never thought it was possible for Theodorus to become governor!
 	}
 	else if (Mod_REL_Stadthalter == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_03"); //Dass Lukas mal Statthalter werden würde, hätte ich nie für möglich gehalten!
+		AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_03"); //I never thought it was possible that Luke would become governor.
 	}
 	else if (Mod_REL_Stadthalter == 3)
 	{
-		AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_04"); //Dass Wendel mal Statthalter werden würde, hätte ich nie für möglich gehalten!
+		AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_04"); //I never thought it was possible for Wendel to become governor!
 	};
 
-	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_05"); //Aber besser als unter Anselm konnte es ja nur werden.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_06"); //Nun gibt es immerhin Vorschriften zum Gebrauch des Freudenspenders.
-	AI_Output(hero, self, "Info_Mod_FrauRichard_REL_Hi_15_07"); //Und wenn ich mich nicht irre, hast du auch wieder einen Partner gefunden?
-	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_08"); //(verschwörerisch) Psst, nicht zu laut. Offiziell sind wir kein Paar, sondern nur alte Schulfreunde.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_09"); //Er hat mich nach meiner Wiederkehr aufgenommen.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_10"); //Aber es scheint sich da etwas zu entwickeln ...
-	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_11"); //Ohne dich wäre das alles nicht möglich gewesen. Hier, ich möchte dir dieses Geschenk machen.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_05"); //But it could only be better than under Anselm.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_06"); //At least there are rules on the use of the giver of joy.
+	AI_Output(hero, self, "Info_Mod_FrauRichard_REL_Hi_15_07"); //And if I'm not mistaken, have you found another partner?
+	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_08"); //Shh, not too loud. Officially, we're not a couple, just old school friends.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_09"); //He took me in after I returned.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_10"); //But something seems to be developing there....
+	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_11"); //Without you all this would not have been possible. Here, I want to give you this gift.
 
 	B_GiveInvItems	(self, hero, ItRi_Dex_01, 1);
 
-	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_12"); //Dieser Ring wird schon seit mindestens drei Generationen in der Familie weitergegeben. Aber jetzt soll er dir gehören.
-	AI_Output(hero, self, "Info_Mod_FrauRichard_REL_Hi_15_13"); //Vielen Dank.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_14"); //Mach's gut!
+	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_12"); //This ring has been handed down in the family for at least three generations. But now I want it to be yours.
+	AI_Output(hero, self, "Info_Mod_FrauRichard_REL_Hi_15_13"); //Thank you very much.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_REL_Hi_17_14"); //Bye, now!
 };
 
 INSTANCE Info_Mod_FrauRichard_REL_EXIT (C_INFO)

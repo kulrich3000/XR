@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_8_JOIN(C_INFO)
 	condition	= DIA_VLK_8_JOIN_Condition;
 	information	= DIA_VLK_8_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will Bürger dieser Stadt werden!";
+	description = "I want to be a citizen of this town!";
 };                       
 
 FUNC INT DIA_VLK_8_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_8_JOIN_Condition()
 
 FUNC VOID DIA_VLK_8_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_8_JOIN_15_00"); //Ich will Bürger dieser Stadt werden!
-	AI_Output (self, hero, "DIA_VLK_8_JOIN_08_01"); //Und warum erzählst du mir das? Geh zu einem der Handwerksmeister in der Unterstadt. Vielleicht hast du Glück und sie suchen noch einen Lehrling.
+	AI_Output (hero, self, "DIA_VLK_8_JOIN_15_00"); //I want to be a citizen of this town!
+	AI_Output (self, hero, "DIA_VLK_8_JOIN_08_01"); //And why are you telling me this? Go to one of the master craftsmen in the lower town. Maybe you're lucky and they're looking for an apprentice.
 };
 
 INSTANCE DIA_VLK_8_Skinner(C_INFO)
@@ -53,7 +53,7 @@ INSTANCE DIA_VLK_8_Skinner(C_INFO)
 	condition	= DIA_VLK_8_Skinner_Condition;
 	information	= DIA_VLK_8_Skinner_Info;
 	permanent	= TRUE;
-	description = "Ich habe hier etwas, was die Stimmung zu heben vermag.";
+	description = "I've got something to lift the spirits here.";
 };                       
 
 FUNC INT DIA_VLK_8_Skinner_Condition()
@@ -70,28 +70,28 @@ FUNC INT DIA_VLK_8_Skinner_Condition()
 
 FUNC VOID DIA_VLK_8_Skinner_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_8_Skinner_15_00"); //Ich habe hier etwas, was die Stimmung zu heben vermag.
-	AI_Output (self, hero, "DIA_VLK_8_Skinner_06_01"); //Ahh, dieser herrliche Duft. Wirkt intensiver als das, was man hier sonst so bekommt am Hafen. Wie viel soll der Spaß den kosten?
+	AI_Output (hero, self, "DIA_VLK_8_Skinner_15_00"); //I've got something to lift the spirits here.
+	AI_Output (self, hero, "DIA_VLK_8_Skinner_06_01"); //Ahh, that lovely scent. More intense than what you usually get here at the harbour. How much fun is it going to cost?
 
 	Mod_SkinnerQuest = 2;
 
 	Info_ClearChoices	(DIA_VLK_8_Skinner);
 
-	Info_AddChoice	(DIA_VLK_8_Skinner, "40 Gold.", DIA_VLK_8_Skinner_C);
-	Info_AddChoice	(DIA_VLK_8_Skinner, "30 Gold.", DIA_VLK_8_Skinner_B);
-	Info_AddChoice	(DIA_VLK_8_Skinner, "20 Gold.", DIA_VLK_8_Skinner_A);
+	Info_AddChoice	(DIA_VLK_8_Skinner, "40 gold.", DIA_VLK_8_Skinner_C);
+	Info_AddChoice	(DIA_VLK_8_Skinner, "Thirty gold.", DIA_VLK_8_Skinner_B);
+	Info_AddChoice	(DIA_VLK_8_Skinner, "20 gold.", DIA_VLK_8_Skinner_A);
 };
 
 FUNC VOID DIA_VLK_8_Skinner_D()
 {	
-	AI_Output (self, hero, "DIA_VLK_8_Skinner_D_06_00"); //Und auch noch so günstig. Ich nehme alles, was du hast.
+	AI_Output (self, hero, "DIA_VLK_8_Skinner_D_06_00"); //No matter how cheap. I'll take everything you got.
 
 	Info_ClearChoices	(DIA_VLK_8_Skinner);
 };
 
 FUNC VOID DIA_VLK_8_Skinner_C()
 {	
-	AI_Output (hero, self, "DIA_VLK_8_Skinner_C_15_00"); //40 Gold.
+	AI_Output (hero, self, "DIA_VLK_8_Skinner_C_15_00"); //40 gold.
 
 	DIA_VLK_8_Skinner_D();
 
@@ -102,14 +102,14 @@ FUNC VOID DIA_VLK_8_Skinner_C()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So I got rid of all the green novices in town.");
 
 	Info_ClearChoices	(DIA_VLK_8_Skinner);
 };
 
 FUNC VOID DIA_VLK_8_Skinner_B()
 {	
-	AI_Output (hero, self, "DIA_VLK_8_Skinner_B_15_00"); //30 Gold.
+	AI_Output (hero, self, "DIA_VLK_8_Skinner_B_15_00"); //Thirty gold.
 
 	DIA_VLK_8_Skinner_D();
 
@@ -120,14 +120,14 @@ FUNC VOID DIA_VLK_8_Skinner_B()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So I got rid of all the green novices in town.");
 
 	Info_ClearChoices	(DIA_VLK_8_Skinner);
 };
 
 FUNC VOID DIA_VLK_8_Skinner_A()
 {	
-	AI_Output (hero, self, "DIA_VLK_8_Skinner_A_15_00"); //20 Gold.
+	AI_Output (hero, self, "DIA_VLK_8_Skinner_A_15_00"); //20 gold.
 
 	DIA_VLK_8_Skinner_D();
 
@@ -138,7 +138,7 @@ FUNC VOID DIA_VLK_8_Skinner_A()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So I got rid of all the green novices in town.");
 
 	Info_ClearChoices	(DIA_VLK_8_Skinner);
 };
@@ -149,7 +149,7 @@ INSTANCE Info_VLK_08_Flugblaetter (C_INFO) // E1
 	condition	= Info_VLK_08_Flugblaetter_Condition;
 	information	= Info_VLK_08_Flugblaetter_Info;
 	permanent	= 1;
-	description = "Ich hab hier ein Flugblatt für dich.";
+	description = "I've got a flyer for you.";
 };                       
 
 FUNC INT Info_VLK_08_Flugblaetter_Condition()
@@ -169,7 +169,7 @@ FUNC VOID Info_VLK_08_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_VLK_08_Flugblaetter_08_01"); //(uninteressiert) Aha.
+	AI_Output(self, hero, "Info_Mod_VLK_08_Flugblaetter_08_01"); //(uninterested) Aha.
 
 	self.aivar[AIV_FLUGBLATTVERTEILT] = 1;
 
@@ -182,7 +182,7 @@ INSTANCE Info_VLK_8_Rangar (C_INFO) // E1
 	condition	= Info_VLK_8_Rangar_Condition;
 	information	= Info_VLK_8_Rangar_Info;
 	permanent	= 0;
-	description = "Wusstest du schon ...";
+	description = "Did you already know...";
 };                       
 
 FUNC INT Info_VLK_8_Rangar_Condition()
@@ -201,14 +201,14 @@ FUNC INT Info_VLK_8_Rangar_Condition()
 
 FUNC VOID Info_VLK_8_Rangar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_VLK_8_Rangar_15_00"); //Wusstest du schon, dass Rangar eine Affäre hat?
-	AI_Output(self, hero, "Info_Mod_VLK_8_Rangar_08_01"); //Echt? Mit wem denn?
-	AI_Output(hero, self, "Info_Mod_VLK_8_Rangar_15_02"); //Mit einem von Bromors Mädchen!
-	AI_Output(self, hero, "Info_Mod_VLK_8_Rangar_08_03"); //Bist du sicher? Das muss ich sofort weitererzählen.
+	AI_Output(hero, self, "Info_Mod_VLK_8_Rangar_15_00"); //Did you know Rangar's having an affair?
+	AI_Output(self, hero, "Info_Mod_VLK_8_Rangar_08_01"); //Really? With who?
+	AI_Output(hero, self, "Info_Mod_VLK_8_Rangar_15_02"); //With one of Bromor's girls!
+	AI_Output(self, hero, "Info_Mod_VLK_8_Rangar_08_03"); //Are you sure about this? I'll have to go on with that right away.
 
 	Mod_DensGeruechtVerbreitet = TRUE;
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Ein Gerücht ist im Umlauf, da wird Den zufrieden sein.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "There's a rumor going around, so Den will be satisfied.");
 };
 
 // *************************************************************************
@@ -220,7 +220,7 @@ INSTANCE DIA_VLK_8_PEOPLE(C_INFO)
 	condition	= DIA_VLK_8_PEOPLE_Condition;
 	information	= DIA_VLK_8_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer sind die wichtigsten Bürger dieser Stadt?";
+	description = "Who are the most important citizens of this city?";
 };                       
 
 FUNC INT DIA_VLK_8_PEOPLE_Condition()
@@ -230,8 +230,8 @@ FUNC INT DIA_VLK_8_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_8_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_8_PEOPLE_15_00"); //Wer sind die wichtigsten Bürger dieser Stadt?
-	AI_Output (self, hero, "DIA_VLK_8_PEOPLE_08_01"); //Wenn man mal von den Paladinen absieht ... die Handwerksmeister aus der Unterstadt. Sie sind alle sehr hoch angesehen.
+	AI_Output (hero, self, "DIA_VLK_8_PEOPLE_15_00"); //Who are the most important citizens of this city?
+	AI_Output (self, hero, "DIA_VLK_8_PEOPLE_08_01"); //Except for the paladins... the master craftsmen from the lower town. They are all highly regarded.
 };
 
 // *************************************************************************
@@ -243,7 +243,7 @@ INSTANCE DIA_VLK_8_LOCATION(C_INFO)
 	condition	= DIA_VLK_8_LOCATION_Condition;
 	information	= DIA_VLK_8_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was gibt es hier interessantes zu sehen?";
+	description = "What is there to see here?";
 };                       
 
 FUNC INT DIA_VLK_8_LOCATION_Condition()
@@ -253,10 +253,10 @@ FUNC INT DIA_VLK_8_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_8_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_8_LOCATION_15_00"); //Was gibt es hier Interessantes zu sehen?
-	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_01"); //Das große Schiff, mit dem die Paladine gekommen sind, liegt am Hafen. Es ist ein Riesenkahn! Den musst du dir mal ansehen.
-	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_02"); //Allerdings kann ich mir nicht vorstellen, dass sie dich da drauf lassen. Die Paladine hüten das Schiff wie ihren Augapfel.
-	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_03"); //Kein Wunder. Ist ja auch der einzige seetüchtige Kahn, der hier weit und breit vor Anker liegt.
+	AI_Output (hero, self, "DIA_VLK_8_LOCATION_15_00"); //What is there to see here?
+	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_01"); //The big ship with which the paladins arrived is at the harbour. It's a giant barge! You need to take a look at this one.
+	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_02"); //I can't imagine they'd leave you on it, though. The paladins guard the ship like the apple of their eyes.
+	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_03"); //No wonder. It is the only seaworthy barge that is anchored here far and wide.
 };
 
 INSTANCE Info_Mod_VLK_8_Pickpocket (C_INFO)

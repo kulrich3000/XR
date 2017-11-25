@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Cutter_Anbau (C_INFO)
 	information	= Info_Mod_Cutter_Anbau_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was wird denn hier angebaut?";
+	description	= "What is grown here?";
 };
 
 FUNC INT Info_Mod_Cutter_Anbau_Condition()
@@ -16,16 +16,16 @@ FUNC INT Info_Mod_Cutter_Anbau_Condition()
 
 FUNC VOID Info_Mod_Cutter_Anbau_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cutter_Anbau_15_00"); //Was wird denn hier angebaut?
-	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_01"); //Äh... Getreide.
-	AI_Output(hero, self, "Info_Mod_Cutter_Anbau_15_02"); //Und, wächst es gut?
-	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_03"); //Keine Ahnung. Sieht besser aus als die letzten beiden Male.
-	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_04"); //Ian hat gesagt, dass die Samen Wasser brauchen. Verstehe ich aber nicht, Bäume wachsen doch auch so.
-	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_05"); //Ian hat auch vorgeschlagen, wir sollten ein bisschen Scheiße auf die Felder kippen, aber ich hab gesagt, nur über meine Leiche.
-	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_06"); //Wir wollen das Getreide ja später essen.
-	AI_Output(hero, self, "Info_Mod_Cutter_Anbau_15_07"); //Ich sehe schon, ihr habt nicht die geringste Ahnung, was ihr da tut.
-	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_08"); //Maul halten, klar?! Wir hatten sogar mal ein Buch darüber, wie man Pflanzen wachsen lässt, aber irgendein Penner hat's zerrissen und zum Feuermachen verwendet.
-	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_09"); //Kann sein, dass davon noch ein oder zwei Seiten rumfliegen. Na ja, hilft uns auch nicht weiter.
+	AI_Output(hero, self, "Info_Mod_Cutter_Anbau_15_00"); //What is grown here?
+	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_01"); //Uh... Grain.
+	AI_Output(hero, self, "Info_Mod_Cutter_Anbau_15_02"); //So, is it growing well?
+	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_03"); //I don't know about that. Looks better than the last two times.
+	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_04"); //Ian said the seeds need water. But I don't understand, trees grow like that.
+	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_05"); //Ian also suggested we dump some shit on the fields, but I said it was just over my dead body.
+	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_06"); //We want to eat the grain later.
+	AI_Output(hero, self, "Info_Mod_Cutter_Anbau_15_07"); //I can see you have no idea what you're doing.
+	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_08"); //Shut up, all right?! We even had a book about how to grow plants, but some bum tore it up and used it to make fires.
+	AI_Output(self, hero, "Info_Mod_Cutter_Anbau_30_09"); //There may be another one or two of them flying around. Well, it doesn't help us either.
 };
 
 INSTANCE Info_Mod_Cutter_Barriere (C_INFO)
@@ -36,7 +36,7 @@ INSTANCE Info_Mod_Cutter_Barriere (C_INFO)
 	information	= Info_Mod_Cutter_Barriere_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie gefällt dir das Leben ohne Barriere?";
+	description	= "How do you like life without barriers?";
 };
 
 FUNC INT Info_Mod_Cutter_Barriere_Condition()
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_Cutter_Barriere_Condition()
 
 FUNC VOID Info_Mod_Cutter_Barriere_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cutter_Barriere_15_00"); //Wie gefällt dir das Leben ohne Barriere?
-	AI_Output(self, hero, "Info_Mod_Cutter_Barriere_30_01"); //Ich hätte mit Scorpio abhauen sollen. Seit wir keine Mine mehr haben, geht das Leben hier im Lager abwärts.
+	AI_Output(hero, self, "Info_Mod_Cutter_Barriere_15_00"); //How do you like life without barriers?
+	AI_Output(self, hero, "Info_Mod_Cutter_Barriere_30_01"); //I should have left with Scorpio. Since we ran out of mines, life here in the camp has been going downhill.
 };
 
 INSTANCE Info_Mod_Cutter_Dokumente (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Cutter_Dokumente (C_INFO)
 	information	= Info_Mod_Cutter_Dokumente_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Vielleicht hilft euch diese Anleitung beim Pflanzen.";
+	description	= "Maybe this guide will help you planting.";
 };
 
 FUNC INT Info_Mod_Cutter_Dokumente_Condition()
@@ -73,28 +73,28 @@ FUNC INT Info_Mod_Cutter_Dokumente_Condition()
 
 FUNC VOID Info_Mod_Cutter_Dokumente_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cutter_Dokumente_15_00"); //Vielleicht hilft euch diese Anleitung beim Pflanzen.
+	AI_Output(hero, self, "Info_Mod_Cutter_Dokumente_15_00"); //Maybe this guide will help you planting.
 
 	Npc_RemoveInvItems	(hero, ItWr_Lehrling01, 1);
 	Npc_RemoveInvItems	(hero, ItWr_Lehrling02, 1);
 
-	B_ShowGivenThings	("Blätter des Lehrlings gegeben");
+	B_ShowGivenThings	("Sheets given to the apprentice");
 
-	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_01"); //He, Mann, das ist aus dem Buch, von dem ich dir erzählt habe!
+	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_01"); //Hey, man, that's from the book I told you about!
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_02"); //Das hilft uns sicher weiter. Sind zwar viele Fachausdrücke drin, aber ich verstehe, worum es geht.
-	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_03"); //Dafür lass ich sogar 'ne kleine Bezahlung springen.
+	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_02"); //That will certainly help us. There are a lot of technical terms in it, but I understand what it's about.
+	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_03"); //I'll even let a little pay for it.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
-	AI_Output(hero, self, "Info_Mod_Cutter_Dokumente_15_04"); //Dann noch viel Glück beim Anbauen.
-	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_05"); //Jetzt kann ja eigentlich nichts mehr schief gehen.
+	AI_Output(hero, self, "Info_Mod_Cutter_Dokumente_15_04"); //Good luck growing them.
+	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_05"); //Nothing can go wrong now.
 
 	AI_TurnToNpc	(self, Mod_1440_BUD_Buddler_MT);
 
-	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_06"); //(ruft zu den Buddlern) Wartet mal! Ihr müsst die Sense andersrum halten!
+	AI_Output(self, hero, "Info_Mod_Cutter_Dokumente_30_06"); //(shouts to the Buddhists) Wait a minute! You must hold the scythe the other way!
 
 	B_GivePlayerXP	(150);
 
@@ -109,7 +109,7 @@ INSTANCE Info_Mod_Cutter_Dieb (C_INFO)
 	information	= Info_Mod_Cutter_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Waren wurden aus dem Haus der Erzbarone gestohlen ...";
+	description	= "Goods were stolen from the baron's house....";
 };
 
 FUNC INT Info_Mod_Cutter_Dieb_Condition()
@@ -124,15 +124,15 @@ FUNC INT Info_Mod_Cutter_Dieb_Condition()
 
 FUNC VOID Info_Mod_Cutter_Dieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cutter_Dieb_15_00"); //Waren wurden aus dem Haus der Erzbarone gestohlen, und ich glaube, dass du damit zu tun hast.
-	AI_Output(self, hero, "Info_Mod_Cutter_Dieb_30_01"); //(wütend) Was?! Ich soll klauen? Ich bemühe mich darum, den Diebstahl endlich aufzuhalten, aber wenn ich wache, traut sich dieses Lumpenpack ja nicht, irgendetwas zu stehlen.
-	AI_Output(self, hero, "Info_Mod_Cutter_Dieb_30_02"); //Mir genügt es ja zu sehen, dass dieser Fisk gestohlene Waren verkauft.
+	AI_Output(hero, self, "Info_Mod_Cutter_Dieb_15_00"); //Goods were stolen from the baron's house, and I think you had something to do with it.
+	AI_Output(self, hero, "Info_Mod_Cutter_Dieb_30_01"); //What?! You want me to steal? I'm trying to stop the theft, but when I'm awake, this ragamuffin doesn't dare to steal anything.
+	AI_Output(self, hero, "Info_Mod_Cutter_Dieb_30_02"); //It's enough for me to see that Fisk is selling stolen goods.
 
 	Mod_PDV_Cutter_Infos = 1;
 
 	Mod_PDV_Genug_Infos += 1;
 
-	B_LogEntry	(TOPIC_MOD_PDV, "Cutter versucht anscheinend selbst den Dieb zu finden. Er konnte mir sagen, dass Fisk das Diebesgut verkauft.");
+	B_LogEntry	(TOPIC_MOD_PDV, "Cutter apparently tries to find the thief himself. He could tell me Fisk was selling the stolen property.");
 };
 
 INSTANCE Info_Mod_Cutter_Frage (C_INFO)
@@ -143,7 +143,7 @@ INSTANCE Info_Mod_Cutter_Frage (C_INFO)
 	information	= Info_Mod_Cutter_Frage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du über ...";
+	description	= "What do you know about....";
 };
 
 FUNC INT Info_Mod_Cutter_Frage_Condition()
@@ -158,14 +158,14 @@ FUNC INT Info_Mod_Cutter_Frage_Condition()
 
 FUNC VOID Info_Mod_Cutter_Frage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cutter_Frage_15_00"); //Was weißt du über den Diebstahl aus dem Haus der Erzbarone?
-	AI_Output(self, hero, "Info_Mod_Cutter_Frage_30_01"); //Nicht genug, nur dass dieser Fisk die gestohlenen Waren verkauft.
+	AI_Output(hero, self, "Info_Mod_Cutter_Frage_15_00"); //What do you know about the theft from the House of Archbarons?
+	AI_Output(self, hero, "Info_Mod_Cutter_Frage_30_01"); //Not enough, just that this Fisk sells the stolen goods.
 
 	Mod_PDV_Cutter_Infos = 1;
 
 	Mod_PDV_Genug_Infos += 1;
 
-	B_LogEntry	(TOPIC_MOD_PDV, "Cutter versucht anscheinend selbst den Dieb zu finden. Er konnte mir sagen, dass Fisk das Diebesgut verkauft.");
+	B_LogEntry	(TOPIC_MOD_PDV, "Cutter apparently tries to find the thief himself. He could tell me Fisk was selling the stolen property.");
 };
 
 INSTANCE Info_Mod_Cutter_Dealer (C_INFO)
@@ -176,7 +176,7 @@ INSTANCE Info_Mod_Cutter_Dealer (C_INFO)
 	information	= Info_Mod_Cutter_Dealer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo würde ich ...";
+	description	= "Where would I...?";
 };
 
 FUNC INT Info_Mod_Cutter_Dealer_Condition()
@@ -191,14 +191,14 @@ FUNC INT Info_Mod_Cutter_Dealer_Condition()
 
 FUNC VOID Info_Mod_Cutter_Dealer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cutter_Dealer_15_00"); //Wo würde ich am ehesten "besondere" Ware bekommen?
-	AI_Output(self, hero, "Info_Mod_Cutter_Dealer_30_01"); //Was, du fragst mich nach Diebesgut? Dieser verdammte Lumpenhändler Fisk verkauft genug davon. Geh zu dem, bevor ich deine Frage Thorus melde.
+	AI_Output(hero, self, "Info_Mod_Cutter_Dealer_15_00"); //Wo würde ich am ehesten "particular" Ware bekommen?
+	AI_Output(self, hero, "Info_Mod_Cutter_Dealer_30_01"); //What, you're asking me about stolen goods? Fucking rag dealer Fisk sells enough of it. Go to him before I report your question to Thorus.
 
 	Mod_PDV_Cutter_Infos = 1;
 
 	Mod_PDV_Genug_Infos += 1;
 
-	B_LogEntry	(TOPIC_MOD_PDV, "Cutter versucht anscheinend selbst den Dieb zu finden. Er konnte mir sagen, dass Fisk das Diebesgut verkauft.");
+	B_LogEntry	(TOPIC_MOD_PDV, "Cutter apparently tries to find the thief himself. He could tell me Fisk was selling the stolen property.");
 };
 
 INSTANCE Info_Mod_Cutter_WhatCrime (C_INFO)
@@ -209,7 +209,7 @@ INSTANCE Info_Mod_Cutter_WhatCrime (C_INFO)
 	information	= Info_Mod_Cutter_WhatCrime_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Für welches Verbrechen bist du in die Kolonie geworfen worden?";
+	description	= "What crime have you been thrown into the colony for?";
 };
 
 FUNC INT Info_Mod_Cutter_WhatCrime_Condition()
@@ -219,9 +219,9 @@ FUNC INT Info_Mod_Cutter_WhatCrime_Condition()
 
 FUNC VOID Info_Mod_Cutter_WhatCrime_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cutter_WhatCrime_15_00"); //Für welches Verbrechen bist du in die Kolonie geworfen worden?
-	AI_Output(self, hero, "Info_Mod_Cutter_WhatCrime_30_01"); //Früher war ich Assassine in Varant. Ich sollte den Richter des Königs ausschalten, wurde aber erwischt.
-	AI_Output(self, hero, "Info_Mod_Cutter_WhatCrime_30_02"); //Zum Glück wurde damals jeder Gefangene in die Kolonie geworfen, sonst hätte er mich sicherlich hinrichten lassen.
+	AI_Output(hero, self, "Info_Mod_Cutter_WhatCrime_15_00"); //What crime have you been thrown into the colony for?
+	AI_Output(self, hero, "Info_Mod_Cutter_WhatCrime_30_01"); //I used to be an Assassin in Varant. I was ordered to take out the King's judge, but I got caught.
+	AI_Output(self, hero, "Info_Mod_Cutter_WhatCrime_30_02"); //Luckily, every prisoner was thrown into the colony at that time, otherwise he would surely have had me executed.
 };
 
 INSTANCE Info_Mod_Cutter_Costa (C_INFO)
@@ -232,7 +232,7 @@ INSTANCE Info_Mod_Cutter_Costa (C_INFO)
 	information	= Info_Mod_Cutter_Costa_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was haben die beiden Leichen neben Stone zu bedeuten?";
+	description	= "What do the two bodies next to Stone mean?";
 };
 
 FUNC INT Info_Mod_Cutter_Costa_Condition()
@@ -245,9 +245,9 @@ FUNC INT Info_Mod_Cutter_Costa_Condition()
 
 FUNC VOID Info_Mod_Cutter_Costa_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cutter_Costa_15_00"); //Was haben die beiden Leichen neben Stone zu bedeuten?
-	AI_Output(self, hero, "Info_Mod_Cutter_Costa_30_01"); //Ach, die. Nur zwei Buddler, die wir beim Fliehen erwischt haben.
-	AI_Output(self, hero, "Info_Mod_Cutter_Costa_30_02"); //Die bleiben jetzt als Abschreckung für die anderen ein paar Tage da liegen.
+	AI_Output(hero, self, "Info_Mod_Cutter_Costa_15_00"); //What do the two bodies next to Stone mean?
+	AI_Output(self, hero, "Info_Mod_Cutter_Costa_30_01"); //Oh, those. Just two diggers we caught fleeing.
+	AI_Output(self, hero, "Info_Mod_Cutter_Costa_30_02"); //They'll be lying there for a few days now as a deterrent to the others.
 };
 
 INSTANCE Info_Mod_Cutter_Ambient (C_INFO)
@@ -271,7 +271,7 @@ FUNC INT Info_Mod_Cutter_Ambient_Condition()
 
 FUNC VOID Info_Mod_Cutter_Ambient_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cutter_Ambient_30_00"); //Du gehörst ja zu den Scheiß-Söldnern. Verpiss dich!
+	AI_Output(self, hero, "Info_Mod_Cutter_Ambient_30_00"); //You're one of the fucking mercenaries. Get the fuck out of here!
 
 	AI_StopProcessInfos	(self);
 };

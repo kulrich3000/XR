@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Angus_Befreiung (C_INFO)
 	information	= Info_Mod_Angus_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So ihr beiden, die Faulenzzeit ist rum.";
+	description	= "So, you two, the laziness period is over.";
 };
 
 FUNC INT Info_Mod_Angus_Befreiung_Condition()
@@ -19,10 +19,10 @@ FUNC INT Info_Mod_Angus_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Angus_Befreiung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Angus_Befreiung_15_00"); //So ihr beiden, die Faulenzzeit ist rum. Francis will, dass ihr euch wieder zum Sägen begebt.
-	AI_Output(self, hero, "Info_Mod_Angus_Befreiung_06_01"); //(lacht laut) Was? Und er schickt dich, um uns das zu sagen? Richte ihm aus, dass er selber seinen Hintern bewegen soll.
-	AI_Output(hero, self, "Info_Mod_Angus_Befreiung_15_02"); //(seufzt) Dann werde ich wohl handgreiflich werden müssen.
-	AI_Output(self, hero, "Info_Mod_Angus_Befreiung_06_03"); //(grinst) Achja? Los Hank, den machen wir fertig!
+	AI_Output(hero, self, "Info_Mod_Angus_Befreiung_15_00"); //So, you two, the laziness period is over. Francis wants you to go back to sawing.
+	AI_Output(self, hero, "Info_Mod_Angus_Befreiung_06_01"); //(laughs out loud) What? And he sent you to tell us that? Tell him to move his ass himself.
+	AI_Output(hero, self, "Info_Mod_Angus_Befreiung_15_02"); //(sighs) Then I'll probably have to get violent.
+	AI_Output(self, hero, "Info_Mod_Angus_Befreiung_06_03"); //(grins) Oh, yeah? Come on, Hank, let's finish him off!
 	
 	AI_StopProcessInfos	(self);
 };
@@ -35,7 +35,7 @@ INSTANCE Info_Mod_Angus_Befreiung2 (C_INFO)
 	information	= Info_Mod_Angus_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und? Immern noch keine Lust?";
+	description	= "And? Still not feeling like it?";
 };
 
 FUNC INT Info_Mod_Angus_Befreiung2_Condition()
@@ -49,10 +49,10 @@ FUNC INT Info_Mod_Angus_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Angus_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Angus_Befreiung2_15_00"); //Und? Immern noch keine Lust?
-	AI_Output(self, hero, "Info_Mod_Angus_Befreiung2_06_01"); //(faucht) Nein, schon gut. Wir haben's begriffen.
-	AI_Output(self, hero, "Info_Mod_Angus_Befreiung2_06_02"); //(wütend) War ja 'ne richtige Heldentat!
-	AI_Output(hero, self, "Info_Mod_Angus_Befreiung2_15_03"); //Also Leute, zurück an die Arbeit!
+	AI_Output(hero, self, "Info_Mod_Angus_Befreiung2_15_00"); //And? Still not feeling like it?
+	AI_Output(self, hero, "Info_Mod_Angus_Befreiung2_06_01"); //No, that's all right. We get the point.
+	AI_Output(self, hero, "Info_Mod_Angus_Befreiung2_06_02"); //Was a real heroic deed!
+	AI_Output(hero, self, "Info_Mod_Angus_Befreiung2_15_03"); //All right, guys, back to work!
 
 	B_GivePlayerXP	(200);
 
@@ -61,7 +61,7 @@ FUNC VOID Info_Mod_Angus_Befreiung2_Info()
 	B_StartOtherRoutine	(self, "SAW");
 	B_StartOtherRoutine	(Mod_942_PIR_Hank_AW, "SAW");
 	
-	B_LogEntry	(TOPIC_MOD_BEL_PIRFRANCIS, "Angus und Hank gehen jetzt wieder zu Francis, um dort Holz zu sägen.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRFRANCIS, "Angus and Hank now go back to Francis to saw wood.");
 };
 
 INSTANCE Info_Mod_Angus_Pickpocket (C_INFO)

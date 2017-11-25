@@ -1,7 +1,7 @@
 INSTANCE Mod_7140_ASS_Elite_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Elite-Assassine"; 
+	name 		= "Elite Assassin"; 
 	guild 		= GIL_OUT;
 	id 			= 7140;
 	voice 		= 13;

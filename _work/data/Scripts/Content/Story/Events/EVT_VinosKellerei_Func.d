@@ -15,6 +15,6 @@ func void EVT_VINOSKELLEREI_WINDE_S1 ()
 {
 	if (Kapitel < 3)
 	{
-		Print("Ich sollte es später nochmal versuchen!");
+		Print("I should try again later!");
 	};
 };

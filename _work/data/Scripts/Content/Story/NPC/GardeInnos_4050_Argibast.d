@@ -1,7 +1,7 @@
 instance GardeInnos_4050_Argibast (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Argibast";
+	name 		=		"argibast";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_NONE;
 	level 		=		80;

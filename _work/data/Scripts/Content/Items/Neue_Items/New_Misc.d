@@ -1,6 +1,6 @@
 INSTANCE ItMi_Alchemy_Alcohol_01 (C_Item)
 {
-	name 				=	"Reiner Alkohol";
+	name 				=	"Pure Alcohol";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -16,7 +16,7 @@ INSTANCE ItMi_Alchemy_Alcohol_01 (C_Item)
 
 INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 {	
-	name 				=	"Zahnrad";
+	name 				=	"Gearwheel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -30,7 +30,7 @@ INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 
 INSTANCE ItMi_Stuff_Barbknife_01 (C_Item)
 {
-	name 				=	"Rasiermesser";
+	name 				=	"Razor";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -46,7 +46,7 @@ INSTANCE ItMi_Stuff_Barbknife_01 (C_Item)
 
 INSTANCE ItMi_Ast (C_Item)
 {
-	name 				=	"Ast";
+	name 				=	"branch";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -62,7 +62,7 @@ INSTANCE ItMi_Ast (C_Item)
 
 INSTANCE ItMi_Schmelzschwert (C_Item)
 {
-	name 				=	"geschmolzenes Schwert";
+	name 				=	"melted sword";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;
@@ -78,7 +78,7 @@ INSTANCE ItMi_Schmelzschwert (C_Item)
 
 INSTANCE  ItMi_OrcTalisman(C_Item)
 {
-	name 			= "orkischer Talisman";
+	name 			= "Orc Talisman";
 
 	mainflag 		= ITEM_KAT_MAGIC;
 	flags 			= ITEM_AMULET|ITEM_MISSION;
@@ -113,7 +113,7 @@ FUNC VOID UnEquip_OrcTalisman()
 
 INSTANCE ItFo_SwampSharkFleisch (C_Item)
 {	
-	name 				=	"Sumpfhaifleisch";
+	name 				=	"marsh shark meat";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -126,7 +126,7 @@ INSTANCE ItFo_SwampSharkFleisch (C_Item)
 	on_state[0]			=	Use_SwampSharkFleisch;
 
 	description			= 	name;
-	TEXT[1]				=	"Zum Füttern der Weibchen im Grenzgebiet benutzen";
+	TEXT[1]				=	"Use to feed females in the border area";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -139,13 +139,13 @@ INSTANCE ItFo_SwampSharkFleisch (C_Item)
 		{
 			Mod_EchsenQuest_01_FleischAbgelegt += 1;
 
-			Print ("Sumpfhaifleisch fallen gelassen");
+			Print ("Marsh shark meat dropped");
 
 			if (Mod_EchsenQuest_01_FleischAbgelegt == 5)
 			{
 				Mod_EchsenQuest_01 = 2;
 
-				B_LogEntry	(TOPIC_MOD_ECHSEN_WEIBCHENFUETTERUNG, "Gut, das Fleisch wäre dann schonmal im Grenzgebiet. Die nächsten fünf Sumpfhaie soll ich schwächen und dann ins Grenzgebiet locken.");
+				B_LogEntry	(TOPIC_MOD_ECHSEN_WEIBCHENFUETTERUNG, "Well, the meat would be in the border area. The next five swamp sharks I shall weaken and then lure into the border area.");
 
 				Wld_InsertNpc	(Swampshark_Fuetterung_02_01,	"ADW_BANDIT_VP3_05");
 				Wld_InsertNpc	(Swampshark_Fuetterung_02_02,	"ADW_BANDIT_VP3_05");
@@ -158,7 +158,7 @@ INSTANCE ItFo_SwampSharkFleisch (C_Item)
 		{
 			CreateInvItems	(hero, ItFo_SwampSharkFleisch, 1);
 
-			Print ("Das geht hier nicht!");
+			Print ("You can't do that here!");
 		};
 	};
 
@@ -520,7 +520,7 @@ INSTANCE IR_RedLight_08 (C_Item)
 
 INSTANCE ItMw_HolzAxt (C_Item)
 {	
-	name 				=	"Holzfälleraxt";  
+	name 				=	"Woodcutter's Axe";  
 	
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -537,7 +537,7 @@ INSTANCE ItMw_HolzAxt (C_Item)
 
 INSTANCE ItMw_HolzAxt_h (C_Item)
 {	
-	name 				=	"Holzfälleraxt";  
+	name 				=	"Woodcutter's Axe";  
 	
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;

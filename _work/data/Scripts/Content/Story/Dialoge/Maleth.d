@@ -15,28 +15,28 @@ FUNC INT Info_Mod_Maleth_Hi_Condition()
 
 FUNC VOID Info_Mod_Maleth_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Maleth_Hi_08_00"); //Sieh einer an, schon wieder ein Fremder! Bist du auf dem Weg in die Stadt?
+	AI_Output(self, hero, "Info_Mod_Maleth_Hi_08_00"); //Look at you, another stranger! Are you on your way to town?
 
 	Info_ClearChoices	(Info_Mod_Maleth_Hi);
 
-	Info_AddChoice	(Info_Mod_Maleth_Hi, "Das geht dich nichts an.", Info_Mod_Maleth_Hi_B);
-	Info_AddChoice	(Info_Mod_Maleth_Hi, "Ja genau.", Info_Mod_Maleth_Hi_A);
+	Info_AddChoice	(Info_Mod_Maleth_Hi, "None of your business.", Info_Mod_Maleth_Hi_B);
+	Info_AddChoice	(Info_Mod_Maleth_Hi, "Yes, exactly.", Info_Mod_Maleth_Hi_A);
 };
 
 FUNC VOID Info_Mod_Maleth_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Maleth_Hi_B_15_00"); //Das geht dich nichts an.
+	AI_Output(hero, self, "Info_Mod_Maleth_Hi_B_15_00"); //None of your business.
 
 	var C_Item NovArmorOrNot;
 	NovArmorOrNot = Npc_GetEquippedArmor(hero);
 
 	if (Hlp_IsItem(NovArmorOrNot, ITAR_FAKE_NOV_L))
 	{
-		AI_Output(self, hero, "Info_Mod_Maleth_Hi_B_08_01"); //Wie du meinst. Aber erwarte ja nicht, dass du bei uns Unterkunft und Verpflegung erhältst, selbst wenn du ein Novize des Klosters bist.
+		AI_Output(self, hero, "Info_Mod_Maleth_Hi_B_08_01"); //Whatever you say. But don't expect us to provide you with board and lodging, even if you are a novice of the monastery.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Maleth_Hi_B_08_02"); //Wie du meinst, Fremder. Aber mach uns hier ja keinen Ärger.
+		AI_Output(self, hero, "Info_Mod_Maleth_Hi_B_08_02"); //Whatever you say, stranger. But don't make any trouble for us here.
 	};
 
 	Info_ClearChoices	(Info_Mod_Maleth_Hi);
@@ -44,17 +44,17 @@ FUNC VOID Info_Mod_Maleth_Hi_B()
 
 FUNC VOID Info_Mod_Maleth_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Maleth_Hi_A_15_00"); //Ja, genau.
-	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_01"); //Da tust du auch gut daran.
-	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_02"); //Abgesehen von den wilden Tieren treibt sich seit dem Fall der Barriere auch allerlei unheimliches Gesindel hier herum, wie der sonderbare dunkle Pilger, der vorher hier vorbeikam.
-	AI_Output(hero, self, "Info_Mod_Maleth_Hi_A_15_03"); //Ein dunkler Pilger?
-	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_04"); //Ja, eine ziemlich finstere Gestalt. Er ist Richtung Stadt gegangen. Zum Glück hat er nicht bei uns um Unterkunft gebeten.
-	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_05"); //Na ja, unser Bauer hätte ihm sowieso kein Obdach gegeben, sondern ihn in die Stadt verwiesen.
-	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_06"); //Genau wie beim letzten Typen, der hier war. Der war mir auch nicht ganz geheuer.
-	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_07"); //Hat ganz ruhig gesprochen, sah aber mit seinen Tätowierungen aus, als würde er dir gleich an die Gurgel gehen.
-	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_08"); //Den haben sie nicht in die Stadt gelassen. Seitdem lungert er da noch irgendwo rum.
+	AI_Output(hero, self, "Info_Mod_Maleth_Hi_A_15_00"); //Yeah, that's right.
+	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_01"); //You'd do well to.
+	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_02"); //Apart from the wild animals, since the fall of the barrier, all kinds of creepy riffraff have been hanging around here, like the strange dark pilgrim who came here before.
+	AI_Output(hero, self, "Info_Mod_Maleth_Hi_A_15_03"); //A dark pilgrim?
+	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_04"); //Yes, a rather sinister figure. He went to town. Luckily, he didn't ask us for shelter.
+	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_05"); //Well, our farmer wouldn't have given him a place to live anyway, but rather referred him to the city.
+	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_06"); //Just like the last guy who was here. I didn't feel too good about him either.
+	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_07"); //Speaking calmly, but with his tattoos, he looked like he was about to come at your throat.
+	AI_Output(self, hero, "Info_Mod_Maleth_Hi_A_08_08"); //They didn't let him into town. He's been hanging around a lot ever since.
 
-	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Maleth hat den dunklen Pilger Richtung Stadt vorbeigehen sehen. Vielleicht werde ich bei den Torwachen mehr erfahren.");
+	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Maleth has seen the dark pilgrim pass in the direction of the city. Maybe I'll find out more from the gatekeepers.");
 
 	B_GivePlayerXP	(50);
 	
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Maleth_Neuankoemmlinge (C_INFO)
 	information	= Info_Mod_Maleth_Neuankoemmlinge_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du klingst, als könntest du auf die ganzen Neuankömmlinge (...)";
+	description	= "You sound as if you could listen to all the newcomers (... )";
 };
 
 FUNC INT Info_Mod_Maleth_Neuankoemmlinge_Condition()
@@ -82,10 +82,10 @@ FUNC INT Info_Mod_Maleth_Neuankoemmlinge_Condition()
 
 FUNC VOID Info_Mod_Maleth_Neuankoemmlinge_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Maleth_Neuankoemmlinge_15_00"); //Du klingst, als könntest du auf die ganzen Neuankömmlinge verzichten.
-	AI_Output(self, hero, "Info_Mod_Maleth_Neuankoemmlinge_08_01"); //Na ja - es wird mir gerade schon etwas viel. Noch vor ein paar Wochen war das hier der ruhigste Hof in ganz Khorinis, und ich musste nur aufpassen, dass die Goblins und Wölfe nicht zu vorwitzig wurden.
-	AI_Output(self, hero, "Info_Mod_Maleth_Neuankoemmlinge_08_02"); //Aber seitdem: Fremde ziehen vorbei, als wären wir eine Touristenattraktion. Räuber haben sich irgendwo entlang des Weges eingenistet, und weiter hinten soll über Nacht ein riesiger Turm entstanden sein, von dem eine böse Macht ausgeht.
-	AI_Output(self, hero, "Info_Mod_Maleth_Neuankoemmlinge_08_03"); //Und ich mittendrin mit meiner Schafherde, scheiße.
+	AI_Output(hero, self, "Info_Mod_Maleth_Neuankoemmlinge_15_00"); //You sound like you can pass on all the newcomers.
+	AI_Output(self, hero, "Info_Mod_Maleth_Neuankoemmlinge_08_01"); //Well, it's getting a little crowded right now. Just a few weeks ago, this was the quietest farm in Khorinis, and I just had to be careful that the goblins and wolves didn't get too funny.
+	AI_Output(self, hero, "Info_Mod_Maleth_Neuankoemmlinge_08_02"); //But since then: strangers pass by as if we were a tourist attraction. Robbers have settled somewhere along the way, and further back a huge tower is said to have been built overnight, from which an evil power emanates.
+	AI_Output(self, hero, "Info_Mod_Maleth_Neuankoemmlinge_08_03"); //And me and my flock of sheep, shit.
 };
 
 INSTANCE Info_Mod_Maleth_Hof (C_INFO)
@@ -96,7 +96,7 @@ INSTANCE Info_Mod_Maleth_Hof (C_INFO)
 	information	= Info_Mod_Maleth_Hof_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist das hier für ein Hof?";
+	description	= "What kind of farm is this?";
 };
 
 FUNC INT Info_Mod_Maleth_Hof_Condition()
@@ -109,9 +109,9 @@ FUNC INT Info_Mod_Maleth_Hof_Condition()
 
 FUNC VOID Info_Mod_Maleth_Hof_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Maleth_Hof_15_00"); //Was ist das hier für ein Hof?
-	AI_Output(self, hero, "Info_Mod_Maleth_Hof_08_01"); //Der Hof gehört dem Bauern Lobart. Wir genießen den Schutz der Stadt - zumindest theoretisch. Im Gegenzug müssen wir einen großen Teil unseres Ertrags den Paladinen überlassen.
-	AI_Output(self, hero, "Info_Mod_Maleth_Hof_08_02"); //Du findest Lobart dort drüben, in Richtung der Häuser. Er hat immer ein Auge auf alles.
+	AI_Output(hero, self, "Info_Mod_Maleth_Hof_15_00"); //What kind of farm is this?
+	AI_Output(self, hero, "Info_Mod_Maleth_Hof_08_01"); //The farm belongs to the farmer Lobart. We enjoy the protection of the city - at least theoretically. In return, we must leave a large part of our yield to the paladins.
+	AI_Output(self, hero, "Info_Mod_Maleth_Hof_08_02"); //You'll find Lobart over there, towards the houses. He keeps an eye on everything.
 };
 
 INSTANCE Info_Mod_Maleth_Wolfsplage (C_INFO)
@@ -122,7 +122,7 @@ INSTANCE Info_Mod_Maleth_Wolfsplage (C_INFO)
 	information	= Info_Mod_Maleth_Wolfsplage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum machst du so ein Gesicht?";
+	description	= "Why are you making such a face?";
 };
 
 FUNC INT Info_Mod_Maleth_Wolfsplage_Condition()
@@ -136,18 +136,18 @@ FUNC INT Info_Mod_Maleth_Wolfsplage_Condition()
 
 FUNC VOID Info_Mod_Maleth_Wolfsplage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Maleth_Wolfsplage_15_00"); //Warum machst du so ein Gesicht?
-	AI_Output(self, hero, "Info_Mod_Maleth_Wolfsplage_08_01"); //(winkt ab) Ach, in letzter Zeit haben wir immer mehr Probleme mit den Wölfen. Die reißen meine Schafe, und ich kann sie nicht erwischen.
-	AI_Output(hero, self, "Info_Mod_Maleth_Wolfsplage_15_02"); //Wo befinden sich diese Viecher?
-	AI_Output(self, hero, "Info_Mod_Maleth_Wolfsplage_08_03"); //(ungläubig) Willst du dich mit den Viechern anlegen?
-	AI_Output(hero, self, "Info_Mod_Maleth_Wolfsplage_15_04"); //Das hatte ich im Sinn.
-	AI_Output(self, hero, "Info_Mod_Maleth_Wolfsplage_08_05"); //Das würdest du tun? Gut, diese Viecher treiben sich immer in der Nähe der Innostatue rum und erscheinen immer genau dann, wenn man wegsieht.
-	AI_Output(hero, self, "Info_Mod_Maleth_Wolfsplage_15_06"); //Das werde ich mir mal anschauen.
-	AI_Output(self, hero, "Info_Mod_Maleth_Wolfsplage_08_07"); //Viel Glück!
+	AI_Output(hero, self, "Info_Mod_Maleth_Wolfsplage_15_00"); //Why are you making such a face?
+	AI_Output(self, hero, "Info_Mod_Maleth_Wolfsplage_08_01"); //Oh, we've been having more and more problems with wolves lately. They're tearing my sheep apart, and I can't catch them.
+	AI_Output(hero, self, "Info_Mod_Maleth_Wolfsplage_15_02"); //Where are these animals?
+	AI_Output(self, hero, "Info_Mod_Maleth_Wolfsplage_08_03"); //Do you want to mess with those animals?
+	AI_Output(hero, self, "Info_Mod_Maleth_Wolfsplage_15_04"); //That's what I had in mind.
+	AI_Output(self, hero, "Info_Mod_Maleth_Wolfsplage_08_05"); //You would do that? Well, these creatures always hang around near the statue of the Inno and always appear when you look away.
+	AI_Output(hero, self, "Info_Mod_Maleth_Wolfsplage_15_06"); //I'll take a look at that.
+	AI_Output(self, hero, "Info_Mod_Maleth_Wolfsplage_08_07"); //Good luck to you!
 
 	Log_CreateTopic	(TOPIC_MOD_MALETH_WOLFSPLAGE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MALETH_WOLFSPLAGE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MALETH_WOLFSPLAGE, "Der Schafshirte Maleth hat ein Problem mit Wölfen. Diese verstecken sich in der Nähe des Innosschreines und reißen seine Schafe, wenn er nicht hinsieht. Ich sollte mich darum kümmern.");
+	B_LogEntry	(TOPIC_MOD_MALETH_WOLFSPLAGE, "Shepherd Maleth has a problem with wolves. They hide near the Innoshrine and tear their sheep when they don't look. I should take care of it.");
 
 	AI_StopProcessInfos	(self);
 
@@ -164,7 +164,7 @@ INSTANCE Info_Mod_Maleth_WoelfeTot (C_INFO)
 	information	= Info_Mod_Maleth_WoelfeTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Wölfe werden dir keinen Ärger mehr machen!";
+	description	= "The wolves won't cause you any more trouble!";
 };
 
 FUNC INT Info_Mod_Maleth_WoelfeTot_Condition()
@@ -180,10 +180,10 @@ FUNC INT Info_Mod_Maleth_WoelfeTot_Condition()
 
 FUNC VOID Info_Mod_Maleth_WoelfeTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Maleth_WoelfeTot_15_00"); //Die Wölfe werden dir keinen Ärger mehr machen!
-	AI_Output(self, hero, "Info_Mod_Maleth_WoelfeTot_08_01"); //Danke, ich bin dir was schuldig.
+	AI_Output(hero, self, "Info_Mod_Maleth_WoelfeTot_15_00"); //The wolves won't cause you any more trouble!
+	AI_Output(self, hero, "Info_Mod_Maleth_WoelfeTot_08_01"); //Thanks, I owe you one.
 
-	B_LogEntry	(TOPIC_MOD_MALETH_WOLFSPLAGE, "Ich habe die Wölfe getötet und Maleth war glücklich.");
+	B_LogEntry	(TOPIC_MOD_MALETH_WOLFSPLAGE, "I killed the wolves and Maleth was happy.");
 	B_SetTopicStatus	(TOPIC_MOD_MALETH_WOLFSPLAGE, LOG_SUCCESS);
 
 	B_GivePlayerXP	(150);

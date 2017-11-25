@@ -1,7 +1,7 @@
 instance Mod_7411_BAU_Deppenhans_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Deppenhans";
+	name 		= "morons";
 	guild 		= GIL_out;
 	id 			= 7411;
 	voice 		= 31;

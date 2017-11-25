@@ -1,7 +1,7 @@
 instance Mod_7384_OUT_Dragan_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dragan";
+	name 		= "dragon";
 	guild 		= GIL_OUT;
 	id 			= 7384;
 	voice 		= 13;

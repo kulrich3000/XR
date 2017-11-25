@@ -6,7 +6,7 @@ INSTANCE Info_Mod_EchseWache_03_Sumpfhaizahn (C_INFO)
 	information	= Info_Mod_EchseWache_03_Sumpfhaizahn_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Sumpfhaizahn geben)";
+	description	= "(giving swamp hair teeth)";
 };
 
 FUNC INT Info_Mod_EchseWache_03_Sumpfhaizahn_Condition()
@@ -26,7 +26,7 @@ FUNC VOID Info_Mod_EchseWache_03_Sumpfhaizahn_Info()
 
 	if (Mod_ECHSI_SumpfhaiZaehne == 5)
 	{
-		B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Jede schwarze Echse hat nun einen Sumpfhaizahn bekommen.");
+		B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Every black lizard has now got a swamp shark tooth.");
 	};
 };
 
@@ -61,7 +61,7 @@ func int Info_Mod_EchseWache_03_FirstWarn_Condition()
 
 func void Info_Mod_EchseWache_03_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_EchseWache_03_FirstWarn_23_00"); //Schhhhhhhhhhhhhhhhhhhhhhhhhzzz.
+	AI_Output (self, hero,"Info_Mod_EchseWache_03_FirstWarn_23_00"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhzzz.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, EchseWache_03_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -94,7 +94,7 @@ FUNC INT Info_Mod_EchseWache_03_SecondWarn_Condition()
 
 func void Info_Mod_EchseWache_03_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_EchseWache_03_SecondWarn_23_00"); //Schhhhhhhhhhhhhhhhhhhhhhhhhzzz.
+	AI_Output (self, hero,"Info_Mod_EchseWache_03_SecondWarn_23_00"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhzzz.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,EchseWache_03_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -132,7 +132,7 @@ func void Info_Mod_EchseWache_03_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_EchseWache_03_Attack_23_00"); //Schhhhhhhhhhhhhhhhhhhhhhhhhzzz.
+	AI_Output (self, hero,"Info_Mod_EchseWache_03_Attack_23_00"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhzzz.
 
 	AI_StopProcessInfos	(self);	
 

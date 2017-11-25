@@ -1,7 +1,7 @@
 INSTANCE Mod_10046_MIN_Minotaurus_NW (Mst_Default_OrcElite)			
 {
 	//----- Monster -----
-	name							=	"Minotaurus";
+	name							=	"Minotaur";
 	guild							=	GIL_ORC;
 	id			= 	10046;
 	voice							=	18;

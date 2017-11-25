@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Valentine_Hi (C_INFO)
 	information	= Info_Mod_Valentine_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Valentine_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Valentine_Hi_Condition()
 FUNC VOID Info_Mod_Valentine_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Valentine_Hi_16_01"); //Ich bin Valentine, Valentinos Schwester.
+	AI_Output(self, hero, "Info_Mod_Valentine_Hi_16_01"); //I'm Valentine, Valentino's sister.
 };
 
 INSTANCE Info_Mod_Valentine_Kapitel2 (C_INFO)
@@ -43,7 +43,7 @@ FUNC INT Info_Mod_Valentine_Kapitel2_Condition()
 
 FUNC VOID Info_Mod_Valentine_Kapitel2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentine_Kapitel2_16_00"); //(ungläubig) Was willst DU denn hier?
+	AI_Output(self, hero, "Info_Mod_Valentine_Kapitel2_16_00"); //What are you doing here?
 
 	AI_StopProcessInfos	(self);
 };
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Valentine_WoValentino (C_INFO)
 	information	= Info_Mod_Valentine_WoValentino_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich komme von Moe. Es geht um Valentino.";
+	description	= "I'm from Moe. It's about Valentino.";
 };
 
 FUNC INT Info_Mod_Valentine_WoValentino_Condition()
@@ -71,57 +71,57 @@ FUNC INT Info_Mod_Valentine_WoValentino_Condition()
 
 FUNC VOID Info_Mod_Valentine_WoValentino_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_15_00"); //Ich komme von Moe. Es geht um Valentino.
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_16_01"); //Bist du nicht derjenige, den Canthar haben will?
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_15_00"); //I'm from Moe. It's about Valentino.
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_16_01"); //Aren't you the one Canthar wants?
 
 	Info_ClearChoices	(Info_Mod_Valentine_WoValentino);
 
-	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Nein, wer behauptet denn so etwas?", Info_Mod_Valentine_WoValentino_B);
-	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Ja, das stimmt.", Info_Mod_Valentine_WoValentino_A);
+	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "No, who would say that?", Info_Mod_Valentine_WoValentino_B);
+	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Yeah, that's right.", Info_Mod_Valentine_WoValentino_A);
 };
 
 FUNC VOID Info_Mod_Valentine_WoValentino_E()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_E_15_00"); //Ich will versuchen, Valentino zu retten.
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_E_16_01"); //(spöttisch) Valentino retten? Du? Allein?
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_E_15_00"); //I'm trying to save Valentino.
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_E_16_01"); //save Valentino? You? Alone?
 
 	Info_ClearChoices	(Info_Mod_Valentine_WoValentino);
 
-	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Ja, ich allein. Wo ist er?", Info_Mod_Valentine_WoValentino_G);
-	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Hast du eine bessere Idee?", Info_Mod_Valentine_WoValentino_F);
+	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Yes, me alone. Where's he at?", Info_Mod_Valentine_WoValentino_G);
+	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "You got a better idea?", Info_Mod_Valentine_WoValentino_F);
 };
 
 FUNC VOID Info_Mod_Valentine_WoValentino_B()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_B_15_00"); //Nein, wer behauptet denn so etwas?
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_B_16_01"); //(argwöhnisch) Canthar beschrieb in seiner Forderung einen Menschen, dessen Beschreibung auf dich zutreffen würde.
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_B_15_00"); //No, who would say that?
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_B_16_01"); //In his demand, Canthar described a man whose description would apply to you.
 
 	Info_ClearChoices	(Info_Mod_Valentine_WoValentino);
 
-	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Das muss Zufall sein.", Info_Mod_Valentine_WoValentino_D);
-	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Vielleicht bin ich das doch. Ja, je länger ich darüber nachdenke ...", Info_Mod_Valentine_WoValentino_C);
+	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "It must be coincidence.", Info_Mod_Valentine_WoValentino_D);
+	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Maybe I am, after all. Yeah, the more I think about it...", Info_Mod_Valentine_WoValentino_C);
 };
 
 FUNC VOID Info_Mod_Valentine_WoValentino_A()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_A_15_00"); //Ja, das stimmt.
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_A_16_01"); //Was willst du dann von mir?
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_A_15_00"); //Yeah, that's right.
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_A_16_01"); //Then what do you want from me?
 
 	Info_Mod_Valentine_WoValentino_E();
 };
 
 FUNC VOID Info_Mod_Valentine_WoValentino_D()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_D_15_00"); //Das muss Zufall sein.
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_D_16_01"); //Aha ... na schön, was willst du?
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_D_15_00"); //It must be coincidence.
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_D_16_01"); //Aha... All right, what do you want?
 
 	Info_Mod_Valentine_WoValentino_E();
 };
 
 FUNC VOID Info_Mod_Valentine_WoValentino_C()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_C_15_00"); //Vielleicht bin ich das doch. Ja, je länger ich darüber nachdenke ...
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_C_16_01"); //(genervt) Was soll das? Komm wieder, wenn du dir sicher bist.
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_C_15_00"); //Maybe I am, after all. Yeah, the more I think about it...
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_C_16_01"); //What are you doing? Come back when you're sure.
 
 	Info_ClearChoices	(Info_Mod_Valentine_WoValentino);
 
@@ -130,8 +130,8 @@ FUNC VOID Info_Mod_Valentine_WoValentino_C()
 
 FUNC VOID Info_Mod_Valentine_WoValentino_G()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_G_15_00"); //(grob) Ja, ich allein. Wo ist er?
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_G_16_01"); //(einsilbig) Auf der Höhe von Jacks Leuchtturm. Viel Glück.
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_G_15_00"); //(coarse) Yes, me alone. Where's he at?
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_G_16_01"); //(silver) At the height of Jack's lighthouse. Good luck to you.
 
 	Info_ClearChoices	(Info_Mod_Valentine_WoValentino);
 
@@ -141,7 +141,7 @@ FUNC VOID Info_Mod_Valentine_WoValentino_G()
 
 	Mod_Moe_Valentino = 1;
 
-	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Valentino wird auf dem Plateau in der Nähe von Jacks Leuchtturm festgehalten. Da werde ich ihn wohl irgendwie rausholen müssen.");
+	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Valentino is being held on the plateau near Jack's lighthouse. I'm gonna have to get him out of there somehow.");
 
 	// Pfad zum Leuchtturm
 
@@ -168,20 +168,20 @@ FUNC VOID Info_Mod_Valentine_WoValentino_G()
 
 FUNC VOID Info_Mod_Valentine_WoValentino_F()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_F_15_00"); //Hast du eine bessere Idee?
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_F_16_01"); //Canthar will dich in die Finger bekommen, und du willst ihm allein entgegenlaufen?
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_F_16_02"); //Nein, du darfst dich seinen Häschern nicht zu erkennen geben. (bestimmt) Ich werde mitkommen.
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_F_15_00"); //You got a better idea?
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_F_16_01"); //Canthar wants to get his hands on you, and you want to run out to him alone?
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_F_16_02"); //No, you mustn't reveal yourself to his haesemen. I'll go with you.
 
 	Info_ClearChoices	(Info_Mod_Valentine_WoValentino);
 
-	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Auf keinen Fall nehme ich dich mit. Wo sind die Entführer?", Info_Mod_Valentine_WoValentino_I);
-	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "Das findest du nicht zu gefährlich?", Info_Mod_Valentine_WoValentino_H);
+	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "No way I'm taking you with me. Where are the kidnappers?", Info_Mod_Valentine_WoValentino_I);
+	Info_AddChoice	(Info_Mod_Valentine_WoValentino, "You don't think it's too dangerous?", Info_Mod_Valentine_WoValentino_H);
 };
 
 FUNC VOID Info_Mod_Valentine_WoValentino_I()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_I_15_00"); //Auf keinen Fall nehme ich dich mit. Wo sind die Entführer?
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_I_16_01"); //(einsilbig) Na schön. Auf der Höhe von Jacks Leuchtturm. Viel Glück.
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_I_15_00"); //No way I'm taking you with me. Where are the kidnappers?
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_I_16_01"); //(silver) All right. At the height of Jack's lighthouse. Good luck to you.
 
 	Info_ClearChoices	(Info_Mod_Valentine_WoValentino);
 
@@ -191,7 +191,7 @@ FUNC VOID Info_Mod_Valentine_WoValentino_I()
 
 	Mod_Moe_Valentino = 1;
 
-	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Valentino wird auf dem Plateau in der Nähe von Jacks Leuchtturm festgehalten. Da werde ich ihn wohl irgendwie rausholen müssen.");
+	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Valentino is being held on the plateau near Jack's lighthouse. I'm gonna have to get him out of there somehow.");
 
 	// Pfad zum Leuchtturm
 
@@ -218,14 +218,14 @@ FUNC VOID Info_Mod_Valentine_WoValentino_I()
 
 FUNC VOID Info_Mod_Valentine_WoValentino_H()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_H_15_00"); //Das findest du nicht zu gefährlich?
-	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_H_16_01"); //Ich habe schon einen Plan ... Folge mir, ich bringe dich zu dem Lager der Entführer.
+	AI_Output(hero, self, "Info_Mod_Valentine_WoValentino_H_15_00"); //You don't think it's too dangerous?
+	AI_Output(self, hero, "Info_Mod_Valentine_WoValentino_H_16_01"); //I already have a plan.... Follow me, I'll take you to the hijackers' camp.
 
 	Info_ClearChoices	(Info_Mod_Valentine_WoValentino);
 
 	Mod_Moe_Valentino = 2;
 
-	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Valentine wird mich zu dem Ort führen, an dem Valentino festgehalten wird. Sie meint, sie habe einen Plan ...");
+	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Valentine will lead me to the place where Valentino is being held. She thinks she has a plan...");
 
 	// Pfad zum Leuchtturm
 
@@ -260,7 +260,7 @@ INSTANCE Info_Mod_Valentine_LosZuValentino (C_INFO)
 	information	= Info_Mod_Valentine_LosZuValentino_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Los geht's!";
+	description	= "Here we go!";
 };
 
 FUNC INT Info_Mod_Valentine_LosZuValentino_Condition()
@@ -273,7 +273,7 @@ FUNC INT Info_Mod_Valentine_LosZuValentino_Condition()
 
 FUNC VOID Info_Mod_Valentine_LosZuValentino_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_LosZuValentino_15_00"); //Los geht's!
+	AI_Output(hero, self, "Info_Mod_Valentine_LosZuValentino_15_00"); //Here we go!
 
 	AI_StopProcessInfos	(self);
 
@@ -302,9 +302,9 @@ FUNC INT Info_Mod_Valentine_FirstStop_Condition()
 
 FUNC VOID Info_Mod_Valentine_FirstStop_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentine_FirstStop_16_00"); //(flüsternd) Dort vorn sind schon die ersten beiden dieser Verbrecherbande.
-	AI_Output(self, hero, "Info_Mod_Valentine_FirstStop_16_01"); //Scheinen mir aber noch Neulinge zu sein, sie sehen nicht gerade wie ernste Gegner aus.
-	AI_Output(self, hero, "Info_Mod_Valentine_FirstStop_16_02"); //Ich denke, du kannst sie ohne Weiteres ausschalten. Pass nur auf, dass sie keine Verstärkung holen.
+	AI_Output(self, hero, "Info_Mod_Valentine_FirstStop_16_00"); //The first two of these criminal gangs are already there.
+	AI_Output(self, hero, "Info_Mod_Valentine_FirstStop_16_01"); //Seems to me to be newcomers, they don't look like serious opponents.
+	AI_Output(self, hero, "Info_Mod_Valentine_FirstStop_16_02"); //I think you can take them out easily. Just make sure they don't call for backup.
 
 	AI_StopProcessInfos	(self);
 
@@ -333,7 +333,7 @@ FUNC INT Info_Mod_Valentine_FirstStop_Fertig_Condition()
 
 FUNC VOID Info_Mod_Valentine_FirstStop_Fertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentine_FirstStop_Fertig_16_00"); //Gut so! Aber der schwierige Teil kommt erst noch. Folge mir!
+	AI_Output(self, hero, "Info_Mod_Valentine_FirstStop_Fertig_16_00"); //That's good! But the difficult part is yet to come. Follow me!
 
 	AI_StopProcessInfos	(self);
 
@@ -361,12 +361,12 @@ FUNC INT Info_Mod_Valentine_SecondStop_Condition()
 
 FUNC VOID Info_Mod_Valentine_SecondStop_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_00"); //(die ganze Zeit über flüsternd) Psst! Da vorn sind sie.
-	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_01"); //Jetzt zu meinem Plan: Du bleibst genau hier stehen und ich schleiche mich an das Lager heran und spioniere die Bewacher aus.
-	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_02"); //Vielleicht kann man sie irgendwie voneinander trennen oder sich an ihnen vorbei schleichen.
-	AI_Output(hero, self, "Info_Mod_Valentine_SecondStop_15_03"); //(ebenfalls immer flüsternd) Wieso soll nicht ich das machen?
-	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_04"); //Weil sie dich suchen und mich nicht. Wenn ich entdeckt werde, kann ich immer noch unschuldig tun.
-	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_05"); //Aber am besten wäre es wohl, du sagst mir, was ich tun soll. Das ist meine erste Unternehmung dieser Art!
+	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_00"); //(whispers all the time) Psst! They're right there.
+	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_01"); //Now to my plan: You stand right here and I sneak up to the camp and spy on the guards.
+	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_02"); //Maybe you can sort of separate them somehow or sneak past them.
+	AI_Output(hero, self, "Info_Mod_Valentine_SecondStop_15_03"); //Why shouldn't I do this?
+	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_04"); //Because they're looking for you and not me. If I'm discovered, I can still do innocent.
+	AI_Output(self, hero, "Info_Mod_Valentine_SecondStop_16_05"); //But I think it would be best if you told me what to do. This is my first enterprise of this kind!
 
 	AI_StopProcessInfos	(self);
 
@@ -381,7 +381,7 @@ INSTANCE Info_Mod_Valentine_Spy01 (C_INFO)
 	information	= Info_Mod_Valentine_Spy01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kundschafte das Lager heimlich aus.";
+	description	= "the camp secretly.";
 };
 
 FUNC INT Info_Mod_Valentine_Spy01_Condition()
@@ -394,7 +394,7 @@ FUNC INT Info_Mod_Valentine_Spy01_Condition()
 
 FUNC VOID Info_Mod_Valentine_Spy01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Spy01_15_00"); //Kundschafte das Lager heimlich aus.
+	AI_Output(hero, self, "Info_Mod_Valentine_Spy01_15_00"); //the camp secretly.
 
 	AI_SetWalkMode	(self, NPC_SNEAK);
 
@@ -424,10 +424,10 @@ FUNC INT Info_Mod_Valentine_Spy01_Fertig_Condition()
 
 FUNC VOID Info_Mod_Valentine_Spy01_Fertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentine_Spy01_Fertig_16_00"); //Drei Mann stehen um das Zelt herum, und im Zelt zeichnen sich drei Schatten ab; einer davon wird Valentino sein.
-	AI_Output(self, hero, "Info_Mod_Valentine_Spy01_Fertig_16_01"); //Was soll ich jetzt tun?
+	AI_Output(self, hero, "Info_Mod_Valentine_Spy01_Fertig_16_00"); //Three men are standing around the tent and three shadows appear in the tent; one of which will be Valentino.
+	AI_Output(self, hero, "Info_Mod_Valentine_Spy01_Fertig_16_01"); //What am I supposed to do now?
 
-	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Valentino wird in einem Zelt von zwei Männern bewacht. Um das Zelt herum stehen drei weitere Wächter. Es wird wohl etwas mehr als Draufhauen brauchen, an Valentino heran zu kommen ...");
+	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Valentino is guarded by two men in a tent. There are three more guards around the tent. It's going to take a little more than beating the hell out of Valentino...");
 };
 
 INSTANCE Info_Mod_Valentine_Spy02 (C_INFO)
@@ -438,7 +438,7 @@ INSTANCE Info_Mod_Valentine_Spy02 (C_INFO)
 	information	= Info_Mod_Valentine_Spy02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kundschafte das Lager noch mal aus und achte auf besondere Eigenschaften.";
+	description	= "Customers should take care of the bearing again and pay attention to special characteristics.";
 };
 
 FUNC INT Info_Mod_Valentine_Spy02_Condition()
@@ -451,7 +451,7 @@ FUNC INT Info_Mod_Valentine_Spy02_Condition()
 
 FUNC VOID Info_Mod_Valentine_Spy02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Spy02_15_00"); //Kundschafte das Lager noch mal aus und achte auf besondere Eigenschaften der Wächter.
+	AI_Output(hero, self, "Info_Mod_Valentine_Spy02_15_00"); //Customers should take care of the camp again and pay attention to the special characteristics of the guards.
 
 	AI_SetWalkMode	(self, NPC_SNEAK);
 
@@ -483,15 +483,15 @@ FUNC VOID Info_Mod_Valentine_Spy02_Fertig_Info()
 {
 	if (!Npc_IsDead(Mod_7032_OUT_Entfuehrer_NW))
 	{
-		AI_Output(self, hero, "Info_Mod_Valentine_Spy02_Fertig_16_00"); //Einer der Wächter bleibt immer auf der Stelle stehen und trinkt unablässig Bier.
+		AI_Output(self, hero, "Info_Mod_Valentine_Spy02_Fertig_16_00"); //One of the guards always stops on the spot and continues to drink beer.
 	};
 	if (!Npc_IsDead(Mod_7030_OUT_Entfuehrer_NW))
 	{
-		AI_Output(self, hero, "Info_Mod_Valentine_Spy02_Fertig_16_01"); //Einer hat anscheinend eine schwache Blase, er entfernt sich ungefähr zu jeder geraden Stunde vom Lager, um sich zu erleichtern.
+		AI_Output(self, hero, "Info_Mod_Valentine_Spy02_Fertig_16_01"); //One of them seems to have a weak bladder, he leaves the camp about every even hour to relieve himself.
 	};
 	if (!Npc_IsDead(Mod_7031_OUT_Entfuehrer_NW))
 	{
-		AI_Output(self, hero, "Info_Mod_Valentine_Spy02_Fertig_16_02"); //Einer patrouilliert zwar durchs Lager, sieht dafür aber nicht sehr kräftig aus.
+		AI_Output(self, hero, "Info_Mod_Valentine_Spy02_Fertig_16_02"); //One of them is patrolling through the camp, but doesn't look very strong.
 	};
 };
 
@@ -503,7 +503,7 @@ INSTANCE Info_Mod_Valentine_Kill01 (C_INFO)
 	information	= Info_Mod_Valentine_Kill01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Misch' dem ersten Wächter eine Überdosis in sein Bier.";
+	description	= "Overdose the first guard in his beer.";
 };
 
 FUNC INT Info_Mod_Valentine_Kill01_Condition()
@@ -518,52 +518,52 @@ FUNC INT Info_Mod_Valentine_Kill01_Condition()
 
 FUNC VOID Info_Mod_Valentine_Kill01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_15_00"); //Misch dem ersten Wächter eine Überdosis in sein Bier.
-	AI_Output(self, hero, "Info_Mod_Valentine_Kill01_16_01"); //Was genau soll ich denn mixen?
-	AI_Output(self, hero, "Info_Mod_Valentine_Kill01_16_02"); //Wenn du zehn Blauflieder hast, wird er von der Überdosis einschlafen.
-	AI_Output(self, hero, "Info_Mod_Valentine_Kill01_16_03"); //Falls du eine Portion Gift hast, wird er zumindest für längere Zeit in Ohnmacht fallen.
-	AI_Output(self, hero, "Info_Mod_Valentine_Kill01_16_04"); //Von drei Portionen Gift dürfte er sicher sterben.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_15_00"); //Get the first guard an overdose in his beer.
+	AI_Output(self, hero, "Info_Mod_Valentine_Kill01_16_01"); //What exactly am I supposed to mix?
+	AI_Output(self, hero, "Info_Mod_Valentine_Kill01_16_02"); //If you have ten blue songs, he'll fall asleep from the overdose.
+	AI_Output(self, hero, "Info_Mod_Valentine_Kill01_16_03"); //If you have a portion of poison, he'll faint at least for a long time.
+	AI_Output(self, hero, "Info_Mod_Valentine_Kill01_16_04"); //Of three portions of poison, I'm sure he could die.
 
 	Info_ClearChoices	(Info_Mod_Valentine_Kill01);
 
-	Info_AddChoice	(Info_Mod_Valentine_Kill01, "Ich überleg's mir doch noch mal.", Info_Mod_Valentine_Kill01_D);
+	Info_AddChoice	(Info_Mod_Valentine_Kill01, "I'll think about it.", Info_Mod_Valentine_Kill01_D);
 
 	if (Npc_HasItems(hero, ItPo_Gift) >= 3)
 	{
-		Info_AddChoice	(Info_Mod_Valentine_Kill01, "Gift hab ich genug, daran wird's nicht scheitern.", Info_Mod_Valentine_Kill01_C);
+		Info_AddChoice	(Info_Mod_Valentine_Kill01, "I'm fed up with poison, it won't fail.", Info_Mod_Valentine_Kill01_C);
 	};
 	if (Npc_HasItems(hero, ItPo_Gift) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Valentine_Kill01, "Ich hab nur eine Portion Gift.", Info_Mod_Valentine_Kill01_B);
+		Info_AddChoice	(Info_Mod_Valentine_Kill01, "I only have one portion of poison.", Info_Mod_Valentine_Kill01_B);
 	};
 	if (Npc_HasItems(hero, ItPo_Tiergift) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Valentine_Kill01, "Ich hab hier etwas Tiergift.", Info_Mod_Valentine_Kill01_G);
+		Info_AddChoice	(Info_Mod_Valentine_Kill01, "I've got some animal poison.", Info_Mod_Valentine_Kill01_G);
 	};
 	if (Npc_HasItems(hero, ItPo_Pflanzengift) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Valentine_Kill01, "Ich hab hier etwas Gewächsgift.", Info_Mod_Valentine_Kill01_F);
+		Info_AddChoice	(Info_Mod_Valentine_Kill01, "I got some plant poison here.", Info_Mod_Valentine_Kill01_F);
 	};
 	if (Npc_HasItems(hero, ItPo_Mischgift) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Valentine_Kill01, "Ich hab dieses spezielle Gift.", Info_Mod_Valentine_Kill01_E);
+		Info_AddChoice	(Info_Mod_Valentine_Kill01, "I have this particular poison.", Info_Mod_Valentine_Kill01_E);
 	};
 	if (Npc_HasItems(hero, ItPl_BluePlant) >= 10)
 	{
-		Info_AddChoice	(Info_Mod_Valentine_Kill01, "Hier hast du 10 Blauflieder.", Info_Mod_Valentine_Kill01_A);
+		Info_AddChoice	(Info_Mod_Valentine_Kill01, "Here's 10 blue songs.", Info_Mod_Valentine_Kill01_A);
 	};
 };
 
 FUNC VOID Info_Mod_Valentine_Kill01_D()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_D_15_00"); //Ich überleg's mir doch noch mal.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_D_15_00"); //I'll think about it.
 
 	Info_ClearChoices	(Info_Mod_Valentine_Kill01);
 };
 
 FUNC VOID Info_Mod_Valentine_Kill01_C()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_C_15_00"); //Gift hab ich genug, daran wird's nicht scheitern.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_C_15_00"); //I'm fed up with poison, it won't fail.
 
 	B_GiveInvItems	(hero, self, ItPo_Gift, 3);
 
@@ -581,7 +581,7 @@ FUNC VOID Info_Mod_Valentine_Kill01_C()
 
 FUNC VOID Info_Mod_Valentine_Kill01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_B_15_00"); //Ich hab nur eine Portion Gift.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_B_15_00"); //I only have one portion of poison.
 
 	B_GiveInvItems	(hero, self, ItPo_Gift, 1);
 
@@ -599,7 +599,7 @@ FUNC VOID Info_Mod_Valentine_Kill01_B()
 
 FUNC VOID Info_Mod_Valentine_Kill01_G()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_G_15_00"); //Ich hab hier etwas Tiergift.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_G_15_00"); //I've got some animal poison.
 
 	B_GiveInvItems	(hero, self, ItPo_Tiergift, 1);
 
@@ -617,7 +617,7 @@ FUNC VOID Info_Mod_Valentine_Kill01_G()
 
 FUNC VOID Info_Mod_Valentine_Kill01_F()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_F_15_00"); //Ich hab hier etwas Gewächsgift.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_F_15_00"); //I got some plant poison here.
 
 	B_GiveInvItems	(hero, self, ItPo_Pflanzengift, 1);
 
@@ -635,7 +635,7 @@ FUNC VOID Info_Mod_Valentine_Kill01_F()
 
 FUNC VOID Info_Mod_Valentine_Kill01_E()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_E_15_00"); //Ich hab dieses spezielle Gift.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_E_15_00"); //I have this particular poison.
 
 	B_GiveInvItems	(hero, self, ItPo_Mischgift, 1);
 
@@ -653,7 +653,7 @@ FUNC VOID Info_Mod_Valentine_Kill01_E()
 
 FUNC VOID Info_Mod_Valentine_Kill01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_A_15_00"); //Hier hast du 10 Blauflieder.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill01_A_15_00"); //Here's 10 blue songs.
 
 	B_GiveInvItems	(hero, self, ItPl_BluePlant, 10);
 
@@ -700,7 +700,7 @@ FUNC VOID Info_Mod_Valentine_Kill01_Fertig_Info()
 	|| (Npc_HasItems(self, ItPo_Tiergift) >= 1)
 	|| (Npc_HasItems(self, ItPo_Mischgift) >= 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Valentine_Kill01_Fertig_16_00"); //Der dürfte nie wieder aufstehen.
+		AI_Output(self, hero, "Info_Mod_Valentine_Kill01_Fertig_16_00"); //He should never get up again.
 
 		B_GivePlayerXP	(Mod_7032_OUT_Entfuehrer_NW.level/2);
 
@@ -708,7 +708,7 @@ FUNC VOID Info_Mod_Valentine_Kill01_Fertig_Info()
 	}
 	else if (Npc_HasItems(self, ItPo_Gift) >= 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Valentine_Kill01_Fertig_16_01"); //Der wird so bald nicht mehr aufstehen.
+		AI_Output(self, hero, "Info_Mod_Valentine_Kill01_Fertig_16_01"); //He won't be up so soon.
 
 		B_StartOtherRoutine	(Mod_7032_OUT_Entfuehrer_NW, "SLEEP");
 
@@ -716,7 +716,7 @@ FUNC VOID Info_Mod_Valentine_Kill01_Fertig_Info()
 	}
 	else if (Npc_HasItems(self, ItPl_BluePlant) >= 10)
 	{
-		AI_Output(self, hero, "Info_Mod_Valentine_Kill01_Fertig_16_02"); //Der macht erstmal ein kleines Schläfchen.
+		AI_Output(self, hero, "Info_Mod_Valentine_Kill01_Fertig_16_02"); //He'll take a little nap first.
 
 		B_StartOtherRoutine	(Mod_7032_OUT_Entfuehrer_NW, "SLEEP");
 
@@ -732,7 +732,7 @@ INSTANCE Info_Mod_Valentine_Kill02 (C_INFO)
 	information	= Info_Mod_Valentine_Kill02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Locke den schwachen Wächter hierher.";
+	description	= "Lure the weak guard here.";
 };
 
 FUNC INT Info_Mod_Valentine_Kill02_Condition()
@@ -746,7 +746,7 @@ FUNC INT Info_Mod_Valentine_Kill02_Condition()
 
 FUNC VOID Info_Mod_Valentine_Kill02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill02_15_00"); //Locke den schwachen Wächter hierher.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill02_15_00"); //Lure the weak guard here.
 
 	AI_SetWalkMode	(self, NPC_RUN);
 
@@ -781,7 +781,7 @@ FUNC INT Info_Mod_Valentine_Kill02_Fertig_Condition()
 
 FUNC VOID Info_Mod_Valentine_Kill02_Fertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentine_Kill02_Fertig_16_00"); //Der steht so schnell nicht wieder auf. Einer weniger, um den wir uns sorgen müssen.
+	AI_Output(self, hero, "Info_Mod_Valentine_Kill02_Fertig_16_00"); //He won't get up so fast. One less to worry about.
 };
 
 INSTANCE Info_Mod_Valentine_Kill03 (C_INFO)
@@ -792,7 +792,7 @@ INSTANCE Info_Mod_Valentine_Kill03 (C_INFO)
 	information	= Info_Mod_Valentine_Kill03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kümmere mich mal kurz um den mit der schwachen Blase.";
+	description	= "I'll take care of the guy with the weak bladder.";
 };
 
 FUNC INT Info_Mod_Valentine_Kill03_Condition()
@@ -807,7 +807,7 @@ FUNC INT Info_Mod_Valentine_Kill03_Condition()
 
 FUNC VOID Info_Mod_Valentine_Kill03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Valentine_Kill03_15_00"); //Ich kümmere mich mal kurz um den mit der schwachen Blase.
+	AI_Output(hero, self, "Info_Mod_Valentine_Kill03_15_00"); //I'll take care of the guy with the weak bladder.
 
 	Mod_ValentineKill03 = 1;
 	
@@ -836,7 +836,7 @@ FUNC INT Info_Mod_Valentine_Kill03_Fertig_Condition()
 
 FUNC VOID Info_Mod_Valentine_Kill03_Fertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentine_Kill03_Fertig_16_00"); //Gut gemacht. Was kommt als nächstes?
+	AI_Output(self, hero, "Info_Mod_Valentine_Kill03_Fertig_16_00"); //Well done. What's next?
 };
 
 INSTANCE Info_Mod_Valentine_AllKills_Fertig (C_INFO)
@@ -864,10 +864,10 @@ FUNC INT Info_Mod_Valentine_AllKills_Fertig_Condition()
 
 FUNC VOID Info_Mod_Valentine_AllKills_Fertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentine_AllKills_Fertig_16_00"); //Gut! Ich hätte nicht damit gerechnet, dass wir so weit kommen.
-	AI_Output(self, hero, "Info_Mod_Valentine_AllKills_Fertig_16_01"); //Jetzt müssen wir nur noch die zwei Verbrecher im Zelt erledigen, ohne dass sie Valentino etwas antun.
+	AI_Output(self, hero, "Info_Mod_Valentine_AllKills_Fertig_16_00"); //Good! I didn't expect us to get this far.
+	AI_Output(self, hero, "Info_Mod_Valentine_AllKills_Fertig_16_01"); //Now all we have to do is kill the two criminals in the tent without harming Valentino.
 
-	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Die ersten drei Wächter sind erledigt, bleiben zwei.");
+	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "The first three guards are finished, two remain.");
 };
 
 INSTANCE Info_Mod_Valentine_ValentinoFrei (C_INFO)
@@ -891,9 +891,9 @@ FUNC INT Info_Mod_Valentine_ValentinoFrei_Condition()
 
 FUNC VOID Info_Mod_Valentine_ValentinoFrei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentine_ValentinoFrei_16_00"); //(fröhlich) Hätte nicht gedacht, dass das so einfach wird.
-	AI_Output(hero, self, "Info_Mod_Valentine_ValentinoFrei_15_01"); //Es war auch nicht besonders einfach.
-	AI_Output(self, hero, "Info_Mod_Valentine_ValentinoFrei_16_02"); //Wie auch immer. Ich fand es unglaublich spannend.
+	AI_Output(self, hero, "Info_Mod_Valentine_ValentinoFrei_16_00"); //I didn't think it would be so easy.
+	AI_Output(hero, self, "Info_Mod_Valentine_ValentinoFrei_15_01"); //It wasn't easy either.
+	AI_Output(self, hero, "Info_Mod_Valentine_ValentinoFrei_16_02"); //However. I found it incredibly exciting.
 
 	AI_StopProcessInfos	(self);
 

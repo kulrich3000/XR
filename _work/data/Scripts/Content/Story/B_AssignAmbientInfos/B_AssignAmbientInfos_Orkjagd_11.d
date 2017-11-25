@@ -5,7 +5,7 @@ INSTANCE Info_Orkjagd_11_EXIT(C_INFO)
 	condition	= Info_Orkjagd_11_EXIT_Condition;
 	information	= Info_Orkjagd_11_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_Orkjagd_11_EXIT_Condition()
@@ -24,7 +24,7 @@ INSTANCE Info_Orkjagd_11_Orkjaeger_Orkjagd(C_INFO) // E1
 	condition	= Info_Orkjagd_11_Orkjaeger_Orkjagd_Condition;
 	information	= Info_Orkjagd_11_Orkjaeger_Orkjagd_Info;
 	permanent	= 1;
-	description = "Ok, es kann losgehen.";
+	description = "Okay, here we go.";
 };                       
 
 FUNC INT Info_Orkjagd_11_Orkjaeger_Orkjagd_Condition()
@@ -41,11 +41,11 @@ FUNC INT Info_Orkjagd_11_Orkjaeger_Orkjagd_Condition()
 
 FUNC VOID Info_Orkjagd_11_Orkjaeger_Orkjagd_Info()
 {
-	AI_Output(hero,self,"Info_Orkjagd_11_Orkjaeger_Orkjagd_15_00"); //Ok, es kann losgehen.
+	AI_Output(hero,self,"Info_Orkjagd_11_Orkjaeger_Orkjagd_15_00"); //Okay, here we go.
 
 	if (Mod_Orchunter_Counter > 1)
 	{
-		AI_Output(self,hero,"Info_Orkjagd_11_Orkjaeger_Orkjagd_11_01"); //Wir wissen bereits wo die Höhle liegt und laufen direkt dorthin. Folge uns.
+		AI_Output(self,hero,"Info_Orkjagd_11_Orkjaeger_Orkjagd_11_01"); //We already know where the cave is and walk right there. Follow us.
 
 		if (Npc_GetDistToWP(Mod_1268_SLD_Soeldner_MT, "OW_PATH_264") < 500)
 		{
@@ -67,7 +67,7 @@ FUNC VOID Info_Orkjagd_11_Orkjaeger_Orkjagd_Info()
 	}
 	else
 	{
-		AI_Output(self,hero,"Info_Orkjagd_11_Orkjaeger_Orkjagd_11_02"); //Ich hatte gesagt mindestens noch einen weiteren Mann.
+		AI_Output(self,hero,"Info_Orkjagd_11_Orkjaeger_Orkjagd_11_02"); //I said at least one more man.
 	};
 
 	AI_StopProcessInfos	(self);
@@ -99,7 +99,7 @@ FUNC INT Info_Orkjagd_11_Orkjaeger_Orkjagd_Finish_Condition()
 
 FUNC VOID Info_Orkjagd_11_Orkjaeger_Orkjagd_Finish_Info()
 {
-	AI_Output(self,hero,"Info_Orkjagd_11_Orkjaeger_Orkjagd_Finish_11_00"); //Ok, die Arbeit ist getan. Zurück zum Lager.
+	AI_Output(self,hero,"Info_Orkjagd_11_Orkjaeger_Orkjagd_Finish_11_00"); //Okay, the work is done. Back to camp.
 
 	AI_StopProcessInfos	(self);
 

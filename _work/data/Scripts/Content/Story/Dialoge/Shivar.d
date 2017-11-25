@@ -15,18 +15,18 @@ FUNC INT Info_Mod_Shivar_Hi_Condition()
 
 FUNC VOID Info_Mod_Shivar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_20_00"); //Ein einsames dämonisches Wesen? Was treibst du hier? Sprich!
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_20_00"); //A lonely demonic being? What are you doing here? Speak!
 
 	Info_ClearChoices	(Info_Mod_Shivar_Hi);
 
-	Info_AddChoice	(Info_Mod_Shivar_Hi, "Ich wurde von einem Diener Beliar’s entsandt.", Info_Mod_Shivar_Hi_C);
-	Info_AddChoice	(Info_Mod_Shivar_Hi, "Ich bin ein Diener des Gleichgewichtes (...)", Info_Mod_Shivar_Hi_B);
-	Info_AddChoice	(Info_Mod_Shivar_Hi, "Ich will dich davor warnen deinen wahnwitzigen Feldzug fortzuführen.", Info_Mod_Shivar_Hi_A);
+	Info_AddChoice	(Info_Mod_Shivar_Hi, "I was sent by a servant of Beliar's.", Info_Mod_Shivar_Hi_C);
+	Info_AddChoice	(Info_Mod_Shivar_Hi, "I am a servant of balance (.... )", Info_Mod_Shivar_Hi_B);
+	Info_AddChoice	(Info_Mod_Shivar_Hi, "I want to warn you against continuing your insane campaign.", Info_Mod_Shivar_Hi_A);
 };
 
 FUNC VOID Info_Mod_Shivar_Hi_D()
 {
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_D_20_00"); //(unterbricht) Acha, noch ein Verräter. Stirb!
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_D_20_00"); //Acha, another traitor. Die!
 
 	Info_ClearChoices	(Info_Mod_Shivar_Hi);
 
@@ -37,27 +37,27 @@ FUNC VOID Info_Mod_Shivar_Hi_D()
 
 FUNC VOID Info_Mod_Shivar_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_00"); //Ich wurde von einem Diener Beliar’s entsandt. Ich versuche zu erfahren, wieso du die Verwüstungen auf Khorinis bewirkt hast.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_01"); //Was maßt du dir an mein Handeln in Frage zu stellen?
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_02"); //Ich muss mich wohl kaum vor einem niederen Dämon wie dir verantworten, warum ich die Feinde meines Meisters Beliar zerschmettere.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_03"); //Oder bist du gar auch einer von ihnen?
-	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_04"); //Nein, auf keinen Fall. Aber der Fokus sollte sich doch auf einen viel gefährlicheren Feind richten, Xeres.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_05"); //Xeres?! Es ist mir, als hätte ich den Namen schon gehört ... Das tut aber auch nichts zur Sache.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_06"); //Meine Kreaturen sind von Beliar abgefallen und dienen nun anderen ... ich bin mir sicher, dass die Lakaien Innos und Adanos dafür verantwortlich sind.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_07"); //Und dafür werden sie büßen.
-	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_08"); //Ich versichere dir, dass nicht sie, sondern der trügerische Magier Xeres samt seiner Lakaien dahinter stecken.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_09"); //Was soll dieser Unsinn? Du versuchst mich doch auf eine falsche Fährte zu locken.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_10"); //Womöglich gehörst du gar zu den Verrätern.
-	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_11"); //Nein, das kann ich dir auf den Namen jeder Gottheit beschwören, wenn du es verlangst.
-	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_12"); //Was kann ich nur tun, um dich von dem Wahrheitsgehalt meiner Worte zu überzeugen?
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_13"); //Mich von diesem Unsinn überzeugen? Du scheinst dir ja deiner Sache sehr sicher zu sein.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_14"); //Wir werden sehen, denn es ist mir eine Möglichkeit eingefallen, wie du dich beweisen kannst.
-	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_15"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_16"); //Ich habe  eine Gruppe abgefallener Dämonen ausgemacht und bin hier, um sie zu strafen.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_17"); //Leider halten sie sich in dieser Höhle vor meinem Zugriff verborgen.
-	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_18"); //Wenn du es schaffst sie herauszulocken, sodass ich sie ihrer gerechten Strafe zuführen kann, werde ich über deine Worte nachdenken.
+	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_00"); //I was sent by a servant of Beliar's. I'm trying to find out why you wreaked havoc on Khorinis.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_01"); //What do you expect me to question my actions?
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_02"); //I don't have to answer to a lower demon like you for shattering the enemies of my master Beliar.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_03"); //Or are you even one of them?
+	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_04"); //No, absolutely not. But the focus should be on a much more dangerous enemy, Xeres.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_05"); //Xeres?! I feel as if I've heard the name before... It doesn't matter.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_06"); //My creatures have fallen from Beliar and now serve others.... I'm sure the footmen Innos and Adanos are responsible.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_07"); //And they'll pay for it.
+	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_08"); //I assure you that it is not her, but the deceptive mage Xeres and his minions who are behind it.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_09"); //What are you talking about? You're trying to put me on the wrong track.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_10"); //You may even be a traitor.
+	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_11"); //No, I can beseech thee in the name of every goddess, if thou wilt.
+	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_12"); //What can I do to convince you of the truth in my words?
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_13"); //Convince me of this nonsense? You seem pretty sure of yourself.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_14"); //We'll see, because I've come up with a way for you to prove yourself.
+	AI_Output(hero, self, "Info_Mod_Shivar_Hi_C_15_15"); //Yes?
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_16"); //I've identified a group of fallen demons, and I'm here to punish them.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_17"); //Unfortunately, they hide in this cave from my access.
+	AI_Output(self, hero, "Info_Mod_Shivar_Hi_C_20_18"); //If you manage to lure them out so that I can bring them to their just punishment, I will reflect on your words.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Shivar scheint Beliar weiterhin ergeben zu sein. Unser Glück. Er gibt jedoch den Anhängern der beiden anderen Gottheiten die Schuld an dem Verrat seiner einstigen Diener. Um ihn davon zu überzeugen, dass Xeres hinter allem steckt, soll ich nun einige abgefallene Kreaturen aus der Höhle in der Nähe hervorlocken, damit Shivar sie vernichten kann.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Shivar still seems to be devoted to Beliar. Our luck. However, he blames the followers of the two other deities for the betrayal of his former servants. To convince him that Xeres is behind it all, I am now to draw some fallen creatures out of the nearby cave so that Shivar can destroy them.");
 
 	Mod_ShivarLieb = 1;
 
@@ -74,14 +74,14 @@ FUNC VOID Info_Mod_Shivar_Hi_C()
 
 FUNC VOID Info_Mod_Shivar_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Shivar_Hi_B_15_00"); //Ich bin ein Diener des Gleichgewichtes und versuche weiteres unnötiges ...
+	AI_Output(hero, self, "Info_Mod_Shivar_Hi_B_15_00"); //I am a servant of equilibrium and I try to do more unnecessary things....
 
 	Info_Mod_Shivar_Hi_D();
 };
 
 FUNC VOID Info_Mod_Shivar_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Shivar_Hi_A_15_00"); //Ich will dich davor warnen deinen wahnwitzigen Feldzug fortzuführen. Er ...
+	AI_Output(hero, self, "Info_Mod_Shivar_Hi_A_15_00"); //I want to warn you against continuing your insane campaign. He...
 
 	Info_Mod_Shivar_Hi_D();
 };
@@ -111,14 +111,14 @@ FUNC INT Info_Mod_Shivar_DemonsDead_Condition()
 
 FUNC VOID Info_Mod_Shivar_DemonsDead_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_00"); //Ja, so sollen alle Feinde und Verräter Beliars zerschmettert werden, haha ...
-	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_01"); //Nun, du hast deine Sache gut gemacht und mir bewiesen, dass du auf der richtigen Seite stehst ...
-	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_02"); //Ich werde diese Insel verlassen und mich zu den kalten Gebieten begeben.
-	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_03"); //Ich habe dort einige verräterische Dämonen erspürt ... darunter auch ein sehr mächtiges Geschöpf, welches sie vermutlich anführt.
-	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_04"); //Die Bastarde scheinen sich dort zu sammeln ...
-	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_05"); //Nun denn, Beliar sei mit dir. Vielleicht werden sich unsere Wege eines Tages wieder kreuzen, Dämon ...
+	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_00"); //And so shall all the enemies and traitors of Beliars be crushed, haha!
+	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_01"); //Well, you've done your job well and proved to me that you're on the right side....
+	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_02"); //I will leave this island and go to the cold areas.
+	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_03"); //I sensed some treacherous demons there.... including a very powerful creature, which she presumably leads.
+	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_04"); //The bastards seem to be gathering there....
+	AI_Output(self, hero, "Info_Mod_Shivar_DemonsDead_20_05"); //Well, Beliar be with you. Perhaps one day our paths will cross again, demon...
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Ausgezeichnet. Er verlässt die Insel, um in kalten Gebieten auf die Jagd nach Verrätern zu gehen… und ich kann endlich wieder aus dieser Gestalt heraus. Saturas wird über meinen Erfolg nicht meckern können ...");
+	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Excellent. He leaves the island to go hunting for traitors in cold areas... and I can finally get out of this figure again. Saturas will not be able to complain about my success....");
 
 	AI_StopProcessInfos	(self);
 

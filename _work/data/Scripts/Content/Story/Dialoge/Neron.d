@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Neron_Hi (C_INFO)
 	information	= Info_Mod_Neron_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist denn hier los?";
+	description	= "What's going on here?";
 };
 
 FUNC INT Info_Mod_Neron_Hi_Condition()
@@ -20,10 +20,10 @@ FUNC INT Info_Mod_Neron_Hi_Condition()
 
 FUNC VOID Info_Mod_Neron_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Neron_Hi_15_00"); //Was ist denn hier los?
-	AI_Output(self, hero, "Info_Mod_Neron_Hi_04_01"); //Ach du bist's. Lord Andre sucht dich schon überall, melde dich am besten gleich bei ihm.
+	AI_Output(hero, self, "Info_Mod_Neron_Hi_15_00"); //What's going on here?
+	AI_Output(self, hero, "Info_Mod_Neron_Hi_04_01"); //Oh, it's you. Lord Andre's been looking all over for you, so why don't you get in touch with him?
 
-	Info_Mod_Andre_RLMord.description = "Neron schickt mich.";
+	Info_Mod_Andre_RLMord.description = "Neron sent me.";
 };
 
 INSTANCE Info_Mod_Neron_Pickpocket (C_INFO)

@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Demonlord_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Demonlord_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Demonlord_IR_Hi_20_00"); //Niemals werdet ihr euer Ziel erreichen. Der Tod ist das einzige, was euch erwartet.
+	AI_Output(self, hero, "Info_Mod_Demonlord_IR_Hi_20_00"); //You will never achieve your goal. Death is the only thing that awaits you.
 
 	AI_StopProcessInfos	(self);
 };

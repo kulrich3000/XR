@@ -31,27 +31,27 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Jagd und Beute"					);
+					Doc_PrintLine	( nDocID,  0, "Hunting and prey"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Jedes Tier und Wesen besitzt eigene Trophäen, die den Ruhm und Reichtum eines erfahrenen Jäger mehren."						);
+					Doc_PrintLines	( nDocID,  0, "Each animal and being possesses its own trophies, which increase the fame and wealth of an experienced hunter."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Ein erfahrener Jäger weiß um die Trophäen seiner Beute und kennt die verschiedenen Methoden sie auszunehmen.");
+					Doc_PrintLines	( nDocID,  0, "An experienced hunter knows about the trophies of his prey and knows how to gut them.");
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Zähne reißen"						);
-					Doc_PrintLines	( nDocID,  0, "Die Zähne, sind die Waffe von vielen Tieren und Wesen. Wer darum weiß, wie er sie seiner Beute fachkundig entreißt, findet bei Wölfen, Snappern, Schattenläufern, Sumpfhaien und Trollen seine Beute."						);
+					Doc_PrintLine	( nDocID,  0, "clench one's teeth"						);
+					Doc_PrintLines	( nDocID,  0, "The teeth are the weapon of many animals and beings. Anyone who knows how to snatch them from their prey will find their prey in wolves, snapper, sharks and trolls."						);
 				
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Felle abziehen"						);
-					Doc_PrintLines	( nDocID,  1, "Ein Talent das der erfahrene Jäger oft zu nutzen weiß - gibt es doch viele Tiere, deren Körper von einem Fell geschützt ist. Schafe, Wölfe und Schattenläufer um nur einige zu benennen."						); 
-					Doc_PrintLines	( nDocID,  1, "Ein Jäger, der dieses Talent beherrscht, kann auch die Häute von Sumphaien und Lurkern abziehen.  "						);
+					Doc_PrintLine	( nDocID,  1, "Remove the skins"						);
+					Doc_PrintLines	( nDocID,  1, "A talent that the experienced hunter often knows how to use - there are many animals whose body is protected by a fur. Sheep, wolves and shadow runners to name just a few."						); 
+					Doc_PrintLines	( nDocID,  1, "A hunter who masters this talent can also peel the skins of Sumphai and Lurker.  "						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Krallen brechen"						);
-					Doc_PrintLines	( nDocID,  1, "Eine Kunst, die bei Waranen aller Art, Snappern, Lurkern und Schattenläufern eingesetzt werden kann.  "						);
+					Doc_PrintLine	( nDocID,  1, "break claws"						);
+					Doc_PrintLines	( nDocID,  1, "An art that can be used for all kinds of monitors, snapper, lurker and shadow runners.  "						);
 					Doc_Show		( nDocID );
 					
 					if (Animals_1_permanent == FALSE)
@@ -80,26 +80,26 @@ FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Jagd und Beute"					);
+					Doc_PrintLine	( nDocID,  0, "Hunting and prey"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Jedes Tier und Wesen besitzt eigene Trophäen, die den Ruhm und Reichtum eines erfahrenen Jäger mehren."						);
+					Doc_PrintLines	( nDocID,  0, "Each animal and being possesses its own trophies, which increase the fame and wealth of an experienced hunter."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Die Blutfliegen"			);
+					Doc_PrintLine	( nDocID,  0, "The Blood Flies"			);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Um diese fliegenden Teufel auszunehmen, bedarf es zwei besonderer Künste."					); 
-					Doc_PrintLines	( nDocID,  0, "Zum einen können ihnen die Flügel abgetrennt, zum anderen kann der Stachel entrissen werden." );
-					Doc_PrintLines	( nDocID,  0, "Beide Künste sollte der erfahrene Jäger einsetzen, um sich die Trophäen anzueignen."	);
+					Doc_PrintLines	( nDocID,  0, "To gut these flying devils requires two special arts."					); 
+					Doc_PrintLines	( nDocID,  0, "On the one hand the wings can be cut off and on the other hand the sting can be torn off." );
+					Doc_PrintLines	( nDocID,  0, "The experienced hunter should use both arts to acquire the trophies."	);
 			
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Feldräuber und Minecrawler greifen mit Zangen an. Vor allem die Zangen der Minecrawler"						);
-					Doc_PrintLines	( nDocID,  1, "gelten als besonders wertvoll, weil sie ein Sekret enthalten, das magische Kräfte steigert."						);
-					Doc_PrintLines	( nDocID,  1, "Allerdings sollte es mit Vorsicht genossen werden, da der menschliche Körper mit der Zeit nicht mehr darauf reagiert."						);   
-					Doc_PrintLines	( nDocID,  1, "Ebenfalls sehr begehrt sind die Platten der Minecrawler. Aus ihnen lassen sich Rüstungen herstellen. "						);
+					Doc_PrintLines	( nDocID,  1, "Field robbers and minecrawlers attack with pliers. Especially the tongs of the minecrawlers"						);
+					Doc_PrintLines	( nDocID,  1, "are considered particularly valuable because they contain a secretion that increases magical powers."						);
+					Doc_PrintLines	( nDocID,  1, "However, it should be enjoyed with caution, as the human body no longer reacts to it over time."						);   
+					Doc_PrintLines	( nDocID,  1, "The Minecrawler plates are also very popular. Armour can be made from them. "						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, " "						);
 					Doc_Show		( nDocID );
@@ -131,25 +131,25 @@ FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Jagd und Beute"					);
+					Doc_PrintLine	( nDocID,  0, "Hunting and prey"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Jedes Tier und Wesen besitzt eigene Trophäen, die den Ruhm und Reichtum eines erfahrenen Jäger mehren."						);
+					Doc_PrintLines	( nDocID,  0, "Each animal and being possesses its own trophies, which increase the fame and wealth of an experienced hunter."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Der Feuerwaran"						);
-					Doc_PrintLines	( nDocID,  0, "Dieses besondere Wesen zählt zur Gattung der Warane, allerdings ist es in der Lage Feuer zu speien, das jeden der sich ihm auf ein paar Schritt nähert, unweigerlich tötet."						);
-					Doc_PrintLines	( nDocID,  0, "Nur wer sich gegen Feuer zu schützen vermag, kann sich im Kampf mit diesen Wesen messen und ihm die kostbare Zunge entreissen."	);		
+					Doc_PrintLine	( nDocID,  0, "The Fire monitor"						);
+					Doc_PrintLines	( nDocID,  0, "This special creature belongs to the genus of monitor lizards, but it is able to breathe fire, which inevitably kills anyone who approaches it in a few steps."						);
+					Doc_PrintLines	( nDocID,  0, "Only those who are able to protect themselves against fire can compete with these creatures and snatch their precious tongues from them."	);		
 			
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Der Schattenläufer"		);
+					Doc_PrintLine	( nDocID,  1, "The Shadow Petrel"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Der Schattenläufer ist ein uralter Einzelgänger der versteckt in Wäldern lebt."						); 
-					Doc_PrintLines	( nDocID,  1, "Es gibt nur noch wenige Exemplare, so das er für den Menschen keine Gefahr mehr darstellt, solange er nicht seine Jagdrevier kreuzt."						);
-					Doc_PrintLines	( nDocID,  1, "Der Kopf des Schattenläufers wird von einem Horn gekrönt, das als wertvolle Trophäe gilt. Ein Jäger muss die Kunst lernen, das Horn richtig zu brechen,"						);
-					Doc_PrintLines	( nDocID,  1, "damit er diese Trophäe bekommt."						);
+					Doc_PrintLines	( nDocID,  1, "The Shadow Creeper is an ancient loner who lives hidden in the woods."						); 
+					Doc_PrintLines	( nDocID,  1, "There are only a few specimens left, so that he is no longer a danger to humans as long as he does not cross his hunting grounds."						);
+					Doc_PrintLines	( nDocID,  1, "The head of the Shadow Runner is crowned by a horn, which is considered a valuable trophy. A hunter must learn the art of breaking the horn properly,"						);
+					Doc_PrintLines	( nDocID,  1, "to get this trophy."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 							

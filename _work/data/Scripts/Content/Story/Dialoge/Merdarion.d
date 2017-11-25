@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Merdarion_Hi_Condition()
 
 FUNC VOID Info_Mod_Merdarion_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Merdarion_Hi_06_00"); //Du schon wieder!
-	AI_Output(self, hero, "Info_Mod_Merdarion_Hi_06_01"); //Du wagst es hier her zu kommen, nachdem du unseren Erzhaufen seine magische Energie genommen hast?
-	AI_Output(hero, self, "Info_Mod_Merdarion_Hi_15_02"); //Es hat funktioniert. Immerhin sind wir jetzt frei.
-	AI_Output(self, hero, "Info_Mod_Merdarion_Hi_06_03"); //Das ist auch der einzige Grund warum du noch lebst.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Hi_06_00"); //You again!
+	AI_Output(self, hero, "Info_Mod_Merdarion_Hi_06_01"); //You dare to come here after you have taken the magical energy from our ore heap?
+	AI_Output(hero, self, "Info_Mod_Merdarion_Hi_15_02"); //It worked out. After all, we're free now.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Hi_06_03"); //That's the only reason you're still alive.
 };
 
 INSTANCE Info_Mod_Merdarion_Nefarius (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Merdarion_Nefarius (C_INFO)
 	information	= Info_Mod_Merdarion_Nefarius_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nefarius schickt mich.";
+	description	= "Nefarius sent me.";
 };
 
 FUNC INT Info_Mod_Merdarion_Nefarius_Condition()
@@ -42,17 +42,17 @@ FUNC INT Info_Mod_Merdarion_Nefarius_Condition()
 
 FUNC VOID Info_Mod_Merdarion_Nefarius_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Merdarion_Nefarius_15_00"); //Nefarius schickt mich. Ich soll bei dir vorbeischauen bevor ich mich auf die Suche nach den vier Teilen des Rings für das Portal mache.
-	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_01"); //Gut, dass du gekommen bist. Es gibt hier in der Ruine einen Teleporter. Mit diesem Schlüssel kommt du durch die Tür.
+	AI_Output(hero, self, "Info_Mod_Merdarion_Nefarius_15_00"); //Nefarius sent me. I'm supposed to stop by your house before I start looking for the four parts of the portal ring.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_01"); //I'm glad you came. There's a teleporter here in the ruins. With this key you can get through the door.
 
 	B_GiveInvItems	(self, hero, ItKe_PORTALTEMPELWALKTHROUGH_ADDON, 1);
 
-	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_02"); //Dann gibt es noch einen weiteren Teleporter in der Nähe der Taverne "Zur toten Harpie". Auch dieser Teleporter ist durch eine Tür geschützt.
-	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_03"); //Mit diesem Schlüssel kannst du die Tür öffnen.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_02"); //Dann gibt es noch einen weiteren Teleporter in der Nähe der Taverne "The Dead Harpy". Auch dieser Teleporter ist durch eine Tür geschützt.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_03"); //With this key, you can open the door.
 
 	B_GiveInvItems	(self, hero, ITKE_ORLAN_TELEPORTSTATION, 1);
 
-	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_04"); //Und nun beeile dich.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_04"); //Now hurry up.
 };
 
 INSTANCE Info_Mod_Merdarion_EXIT (C_INFO)
@@ -73,7 +73,7 @@ FUNC INT Info_Mod_Merdarion_EXIT_Condition()
 
 FUNC VOID Info_Mod_Merdarion_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Merdarion_EXIT_06_00"); //Möge für immer das Gleichgewicht gegeben sein!
+	AI_Output(self, hero, "Info_Mod_Merdarion_EXIT_06_00"); //May the equilibrium be given forever!
 
 	AI_StopProcessInfos	(self);
 };

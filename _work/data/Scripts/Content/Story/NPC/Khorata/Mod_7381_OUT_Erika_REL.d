@@ -1,7 +1,7 @@
 instance Mod_7381_OUT_Erika_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Erika"; 
+	name 		= "heather"; 
 	guild 		= GIL_OUT;
 	id 			= 7381;
 	voice 		= 16;

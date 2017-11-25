@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Xardas_GDG_Ritualplatz (C_INFO)
 	information	= Info_Mod_Xardas_GDG_Ritualplatz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab den Ritualplatz gefunden.";
+	description	= "I found the ritual site.";
 };
 
 FUNC INT Info_Mod_Xardas_GDG_Ritualplatz_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Xardas_GDG_Ritualplatz_Condition()
 
 FUNC VOID Info_Mod_Xardas_GDG_Ritualplatz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_GDG_Ritualplatz_15_00"); //Ich hab den Ritualplatz gefunden.
-	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Ritualplatz_14_01"); //Wir werden uns sofort auf den Weg machen. Wir treffen uns dann in der Höhle. Vergiss bloß die Götterwaffen nicht.
+	AI_Output(hero, self, "Info_Mod_Xardas_GDG_Ritualplatz_15_00"); //I found the ritual site.
+	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Ritualplatz_14_01"); //We'll leave immediately. I'll meet you in the cave. Don't forget the god guns.
 
 	AI_StopProcessInfos	(self);
 
@@ -30,7 +30,7 @@ FUNC VOID Info_Mod_Xardas_GDG_Ritualplatz_Info()
 
 	B_GivePlayerXP	(2000);
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Xardas und die anderen haben sich sofort auf den Weg zur Höhle gemacht. Ich soll sie dort treffen.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Xardas and the others immediately made their way to the cave. I'm supposed to meet her there.");
 };
 
 INSTANCE Info_Mod_Xardas_GDG_SeelensteineEinsetzen (C_INFO)
@@ -54,7 +54,7 @@ FUNC INT Info_Mod_Xardas_GDG_SeelensteineEinsetzen_Condition()
 
 FUNC VOID Info_Mod_Xardas_GDG_SeelensteineEinsetzen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_GDG_SeelensteineEinsetzen_14_00"); //Du solltest die Seelensteine noch in die Sockel in diesem Raum einsetzen, damit wir das Ritual beginnen können.
+	AI_Output(self, hero, "Info_Mod_Xardas_GDG_SeelensteineEinsetzen_14_00"); //You should put the soul stones into the pedestal in this room so that we can start the ritual.
 
 	AI_StopProcessInfos	(self);
 };
@@ -123,7 +123,7 @@ FUNC INT Info_Mod_Xardas_GDG_Ritual_Condition()
 
 FUNC VOID Info_Mod_Xardas_GDG_Ritual_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Ritual_14_00"); //Gut, wir werden jetzt beginnen.
+	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Ritual_14_00"); //All right, we'll start now.
 
 	AI_UnequipWeapons	(hero);
 
@@ -203,11 +203,11 @@ FUNC INT Info_Mod_Xardas_GDG_Uriziel_Condition()
 
 FUNC VOID Info_Mod_Xardas_GDG_Uriziel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Uriziel_14_00"); //(feierlich) Das Ritual hat geklappt. Uriziel ist nun mächtiger als je zuvor.
-	AI_Output(hero, self, "Info_Mod_Xardas_GDG_Uriziel_15_01"); //Dann wird es jetzt Zeit für die finale Schlacht?
-	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Uriziel_14_02"); //So schnell wie möglich, ja. Komm mich morgen in meinem Turm in Khorinis besuchen.
-	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Uriziel_14_03"); //Bereite dich solange auf deine Mission vor.
-	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Uriziel_14_04"); //Nimm aber noch den Almanach. Wir haben da etwas gefunden, was für dich interessant sein könnte.
+	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Uriziel_14_00"); //The ritual worked out. Uriziel is now more powerful than ever.
+	AI_Output(hero, self, "Info_Mod_Xardas_GDG_Uriziel_15_01"); //Then it's time for the final battle?
+	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Uriziel_14_02"); //As soon as possible, yes. Come visit me tomorrow at my tower in Khorinis.
+	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Uriziel_14_03"); //Prepare yourself for your mission.
+	AI_Output(self, hero, "Info_Mod_Xardas_GDG_Uriziel_14_04"); //Take the almanac, though. We found something that might be of interest to you.
 
 	B_GiveInvItems	(self, hero, ItWr_GDG_Almanach_Offen, 1);
 
@@ -219,7 +219,7 @@ FUNC VOID Info_Mod_Xardas_GDG_Uriziel_Info()
 
 	B_GivePlayerXP	(5000);
 
-	B_LogEntry	(TOPIC_MOD_XERES, "Das Ritual hat geklappt und ich halte nun Uriziel in meinen Händen. Ich soll mich auf den Kampf gegen Xeres vorbereiten und nach Ablauf des Tages Xardas in seinem Turm in Khorinis besuchen.");
+	B_LogEntry	(TOPIC_MOD_XERES, "The ritual worked and I now hold Uriziel in my hands. I shall prepare myself for the fight against Xeres and after the day I shall visit Xardas in his tower in Khorinis.");
 	B_SetTopicStatus	(TOPIC_MOD_URIZIEL, LOG_SUCCESS);
 
 	Mod_Xardas_Uriziel_Day = Wld_GetDay();
@@ -233,7 +233,7 @@ INSTANCE Info_Mod_Xardas_GDG_Lernen_MANA (C_INFO)
 	information	= Info_Mod_Xardas_GDG_Lernen_MANA_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will meine magischen Kräfte steigern.";
+	description	= "I want to increase my magical powers.";
 };
 
 FUNC INT Info_Mod_Xardas_GDG_Lernen_MANA_Condition()
@@ -246,7 +246,7 @@ FUNC INT Info_Mod_Xardas_GDG_Lernen_MANA_Condition()
 
 FUNC VOID Info_Mod_Xardas_GDG_Lernen_MANA_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_GDG_Lernen_MANA_15_00"); //Ich will meine magischen Kräfte steigern.
+	AI_Output(hero, self, "Info_Mod_Xardas_GDG_Lernen_MANA_15_00"); //I want to increase my magical powers.
 
 	Info_ClearChoices	(Info_Mod_Xardas_GDG_Lernen_MANA);
 
@@ -259,7 +259,7 @@ FUNC VOID Info_Mod_Xardas_GDG_Lernen_MANA_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX] >= 300)
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_GDG_Lernen_MANA_BACK_14_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Xardas_GDG_Lernen_MANA_BACK_14_01"); //Your magic skills are so good now, I can't teach you anything.
 	};
 	Info_ClearChoices	(Info_Mod_Xardas_GDG_Lernen_MANA);
 };

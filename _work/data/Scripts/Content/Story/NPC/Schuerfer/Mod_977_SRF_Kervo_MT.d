@@ -1,7 +1,7 @@
 instance Mod_977_SRF_Kervo_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kervo"; 
+	name 		= "kervo"; 
 	guild 		= GIL_NONE;
 	id 			= 977;
 	voice 		= 13;

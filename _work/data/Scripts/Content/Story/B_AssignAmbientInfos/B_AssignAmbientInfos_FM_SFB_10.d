@@ -14,7 +14,7 @@ INSTANCE Info_FM_SFB_10_EXIT(C_INFO)
 	condition	= Info_FM_SFB_10_EXIT_Condition;
 	information	= Info_FM_SFB_10_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_FM_SFB_10_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_FM_SFB_10_EinerVonEuchWerden (C_INFO)
 	condition	= Info_FM_SFB_10_EinerVonEuchWerden_Condition;
 	information	= Info_FM_SFB_10_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Wie kann ich dem Schürferbund beitreten?";
+	description = "How can I join the Association of prospectors?";
 };                       
 
 FUNC INT Info_FM_SFB_10_EinerVonEuchWerden_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_FM_SFB_10_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_FM_SFB_10_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_10_EinerVonEuchWerden_15_00"); //Wie kann ich dem Schürferbund beitreten?
-	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_01"); //Bei uns mitmachen? Glaub bloß nicht, hier wird nicht gearbeitet, nur weil man uns nicht zwingt.
-	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_02"); //Also wenn du glaubst, du kannst hier faulenzen, dann bist du schief gewickelt, mein Freund.
-	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_03"); //Wenn du jetzt immer noch glaubst hier richtig zu sein, dann such dir ne Spitzhacke und melde dich bei der Wache vor dem Eingang zur Mine.
+	AI_Output(hero,self,"Info_FM_SFB_10_EinerVonEuchWerden_15_00"); //How can I join the Association of prospectors?
+	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_01"); //Join us? Don't think we don't work here just because we're not forced.
+	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_02"); //So if you think you can laze around here, you're crooked, my friend.
+	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_03"); //If you still think you're right here, find a pickaxe and report to the guard outside the mine entrance.
 };
 
 // *************************************************************************
@@ -63,7 +63,7 @@ INSTANCE Info_FM_SFB_10_WichtigePersonen(C_INFO)
 	condition	= Info_FM_SFB_10_WichtigePersonen_Condition;
 	information	= Info_FM_SFB_10_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_FM_SFB_10_WichtigePersonen_Condition()
@@ -73,8 +73,8 @@ FUNC INT Info_FM_SFB_10_WichtigePersonen_Condition()
 
 FUNC VOID Info_FM_SFB_10_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_10_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_FM_SFB_10_WichtigePersonen_10_01"); //Das Sagen? Sieh dich doch mal um. Bestimmt nicht die Leute, die den ganzen Tag schuften, um genug Erz zu fördern.
+	AI_Output(hero,self,"Info_FM_SFB_10_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,hero,"Info_FM_SFB_10_WichtigePersonen_10_01"); //The say? Take a look around. Certainly not the people who work all day to extract enough ore.
 };
 
 // *************************************************************************
@@ -87,7 +87,7 @@ INSTANCE Info_FM_SFB_10_DasLager(C_INFO)
 	condition	= Info_FM_SFB_10_DasLager_Condition;
 	information	= Info_FM_SFB_10_DasLager_Info;
 	permanent	= 1;
-	description = "Was ist das hier?";
+	description = "What is this place?";
 };                       
 
 FUNC INT Info_FM_SFB_10_DasLager_Condition()
@@ -97,9 +97,9 @@ FUNC INT Info_FM_SFB_10_DasLager_Condition()
 
 FUNC VOID Info_FM_SFB_10_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_10_DasLager_15_00"); //Was ist das hier?
-	AI_Output(self,hero,"Info_FM_SFB_10_DasLager_10_01"); //Wie sieht es denn aus? Wie der Palast des Königs?
-	AI_Output(self,hero,"Info_FM_SFB_10_DasLager_10_02"); //Also wenn du wirklich in der Freien Mine arbeiten willst, dann solltest du nicht so viel reden sondern mehr arbeiten.
+	AI_Output(hero,self,"Info_FM_SFB_10_DasLager_15_00"); //What is this place?
+	AI_Output(self,hero,"Info_FM_SFB_10_DasLager_10_01"); //What's it look like? Like the king's palace?
+	AI_Output(self,hero,"Info_FM_SFB_10_DasLager_10_02"); //So if you really want to work in the Free Mine, you shouldn't talk so much but work more.
 };
 
 // *************************************************************************
@@ -112,7 +112,7 @@ INSTANCE Info_FM_SFB_10_DieLage(C_INFO)
 	condition	= Info_FM_SFB_10_DieLage_Condition;
 	information	= Info_FM_SFB_10_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_FM_SFB_10_DieLage_Condition()
@@ -122,8 +122,8 @@ FUNC INT Info_FM_SFB_10_DieLage_Condition()
 
 FUNC VOID Info_FM_SFB_10_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_10_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,hero,"Info_FM_SFB_10_DieLage_10_01"); //Wie soll's schon aussehen? Beschissen wie immer. Kaum was zu beißen, dafür immer was zu tun.
+	AI_Output(hero,self,"Info_FM_SFB_10_DieLage_15_00"); //How's it looking?
+	AI_Output(self,hero,"Info_FM_SFB_10_DieLage_10_01"); //What's it gonna look like? Shitty as ever. Hardly anything to bite, always something to do for it.
 };
 
 INSTANCE Info_Mod_FM_SFB_10_Pickpocket (C_INFO)

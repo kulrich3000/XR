@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Herold_Hi (C_INFO)
 	information	= Info_Mod_Herold_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Herold_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Herold_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Herold_Hi_04_01"); //Ich bin Herold. Meine Aufgabe ist es hier die Neuigkeiten zu verkünden.
+	AI_Output(self, hero, "Info_Mod_Herold_Hi_04_01"); //I'm Herald. My job here is to announce the news.
 };
 
 INSTANCE Info_Mod_Herold_Flugblaetter (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Herold_Flugblaetter (C_INFO)
 	information	= Info_Mod_Herold_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt. Könntest du nicht etwas Werbung dafür machen?";
+	description	= "I got a flyer here. Couldn't you do some publicity for it?";
 };
 
 FUNC INT Info_Mod_Herold_Flugblaetter_Condition()
@@ -46,15 +46,15 @@ FUNC INT Info_Mod_Herold_Flugblaetter_Condition()
 
 FUNC VOID Info_Mod_Herold_Flugblaetter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Herold_Flugblaetter_15_00"); //Ich hab hier ein Flugblatt. Könntest du nicht etwas Werbung dafür machen?
+	AI_Output(hero, self, "Info_Mod_Herold_Flugblaetter_15_00"); //I got a flyer here. Couldn't you do some publicity for it?
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Herold_Flugblaetter_04_01"); //Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Herold_Flugblaetter_04_01"); //Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Herold_Flugblaetter_04_02"); //Matteo hat Käse im Angebot? Nun gut, ich werde das Angebot eine Weile verkünden.
+	AI_Output(self, hero, "Info_Mod_Herold_Flugblaetter_04_02"); //Matteo has cheese on offer? All right, I'll announce the offer for a while.
 
 	Mod_Flugblaetter += 1;
 	
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Herold_Verbrecher (C_INFO)
 	information	= Info_Mod_Herold_Verbrecher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du musst etwas verkünden.";
+	description	= "You have to make a statement.";
 };
 
 FUNC INT Info_Mod_Herold_Verbrecher_Condition()
@@ -83,13 +83,13 @@ FUNC INT Info_Mod_Herold_Verbrecher_Condition()
 
 FUNC VOID Info_Mod_Herold_Verbrecher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Herold_Verbrecher_15_00"); //Du musst etwas verkünden.
-	AI_Output(self, hero, "Info_Mod_Herold_Verbrecher_04_01"); //Worum geht's?
-	AI_Output(hero, self, "Info_Mod_Herold_Verbrecher_15_02"); //Letzte Nacht hat ein gefährlicher Irrer in einem bunten Kostüm mit Schachkragen vier Milizen ermordet.
-	AI_Output(hero, self, "Info_Mod_Herold_Verbrecher_15_03"); //Du musst die Bürger der Stadt unbedingt davor warnen.
-	AI_Output(self, hero, "Info_Mod_Herold_Verbrecher_04_04"); //Das ist ja schrecklich. Gut, dass du damit zu mir gekommen bist.
+	AI_Output(hero, self, "Info_Mod_Herold_Verbrecher_15_00"); //You have to make a statement.
+	AI_Output(self, hero, "Info_Mod_Herold_Verbrecher_04_01"); //What's this about?
+	AI_Output(hero, self, "Info_Mod_Herold_Verbrecher_15_02"); //Last night, a dangerous maniac in a colorful costume with a chess collar murdered four militias.
+	AI_Output(hero, self, "Info_Mod_Herold_Verbrecher_15_03"); //You have to warn the townspeople about this.
+	AI_Output(self, hero, "Info_Mod_Herold_Verbrecher_04_04"); //That's terrible. I'm glad you came to me with that.
 
-	B_LogEntry	(TOPIC_MOD_PAL_BOT, "Der Herold wird die Bewohner von Khorinis irre führen. Jetzt zurück zu Lord Andre.");
+	B_LogEntry	(TOPIC_MOD_PAL_BOT, "The herald will drive the inhabitants of Khorini mad. Now back to Lord Andre.");
 };
 
 INSTANCE Info_Mod_Herold_Pickpocket (C_INFO)

@@ -1,7 +1,7 @@
 instance Mod_4043_UntoterNovize_26_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Untoter Novize";
+	name 		=		"Undead Novice";
 	Npctype 		=		Npctype_UNTOTERNOVIZE;
 	guild 		=		GIL_STRF;
 	level 		=		20;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Balor_Hi (C_INFO)
 	information	= Info_Mod_Balor_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Balor_Hi_Condition()
@@ -17,8 +17,8 @@ FUNC INT Info_Mod_Balor_Hi_Condition()
 FUNC VOID Info_Mod_Balor_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Balor_Hi_01_01"); //Ich bin Balor, Novize der Bruderschaft. Meine Aufgabe ist es hier im Sumpf Sumpfkraut zu sammeln.
-	AI_Output(self, hero, "Info_Mod_Balor_Hi_01_02"); //Das wird dann im Lager zu Stängeln verarbeitet und dann rauchen wir es oder verkaufen es weiter.
+	AI_Output(self, hero, "Info_Mod_Balor_Hi_01_01"); //I'm Balor, novice of the Brotherhood. My job here is to collect bogweed in the swamp.
+	AI_Output(self, hero, "Info_Mod_Balor_Hi_01_02"); //This is then processed into stems in the warehouse and then we smoke it or resell it.
 };
 
 INSTANCE Info_Mod_Balor_Duenger (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Balor_Duenger (C_INFO)
 	information	= Info_Mod_Balor_Duenger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Baal Namib schickt mich.";
+	description	= "Baal Namib sent me.";
 };
 
 FUNC INT Info_Mod_Balor_Duenger_Condition()
@@ -44,16 +44,16 @@ FUNC INT Info_Mod_Balor_Duenger_Condition()
 
 FUNC VOID Info_Mod_Balor_Duenger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Balor_Duenger_15_00"); //Baal Namib schickt mich, ich soll dir dieses Paket bringen.
-	AI_Output(self, hero, "Info_Mod_Balor_Duenger_01_01"); //Ah, endlich. Der Dünger ist gekommen. Verteile ihn doch bitte auf dem Feld.
-	AI_Output(hero, self, "Info_Mod_Balor_Duenger_15_02"); //Ich soll es auf dem Feld verteilen?
-	AI_Output(self, hero, "Info_Mod_Balor_Duenger_01_03"); //Ja. Hier nimm diese Spitzhacke.
+	AI_Output(hero, self, "Info_Mod_Balor_Duenger_15_00"); //Baal Namib sent me to bring you this package.
+	AI_Output(self, hero, "Info_Mod_Balor_Duenger_01_01"); //Ah, finally. The fertilizer has arrived. Why don't you spread it out on the field, please?
+	AI_Output(hero, self, "Info_Mod_Balor_Duenger_15_02"); //You want me to spread it out in the field?
+	AI_Output(self, hero, "Info_Mod_Balor_Duenger_01_03"); //Yeah. Here, take this pickaxe.
 
 	B_GiveInvItems	(self, hero, ItMw_2H_Axe_L_01, 1);
 
-	AI_Output(self, hero, "Info_Mod_Balor_Duenger_01_04"); //Ich habe den Ort, an dem du düngen musst, mit einem roten X gekennzeichnet. Grab einfach dort und dünge dann.
+	AI_Output(self, hero, "Info_Mod_Balor_Duenger_01_04"); //I marked the place where you need to fertilize with a red X. Just grave there and fertilize.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Balor will, dass ich den Dünger auf dem Feld verteile. Er hat die Stelle mit einem roten X gekennzeichnet.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Balor wants me to spread the fertilizer on the field. He marked the spot with a red X.");
 
 	Wld_SendTrigger	("EVT_MT_DUENGER");
 };
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Balor_DuengerVerteilt (C_INFO)
 	information	= Info_Mod_Balor_DuengerVerteilt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab den Dünger verteilt.";
+	description	= "I handed out the fertilizer.";
 };
 
 FUNC INT Info_Mod_Balor_DuengerVerteilt_Condition()
@@ -80,19 +80,19 @@ FUNC INT Info_Mod_Balor_DuengerVerteilt_Condition()
 
 FUNC VOID Info_Mod_Balor_DuengerVerteilt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Balor_DuengerVerteilt_15_00"); //Ich hab den Dünger verteilt.
-	AI_Output(self, hero, "Info_Mod_Balor_DuengerVerteilt_01_01"); //Gut, dann wird das Sumpfkraut nur so sprießen.
-	AI_Output(self, hero, "Info_Mod_Balor_DuengerVerteilt_01_02"); //Hier hast du ein paar Stängel.
+	AI_Output(hero, self, "Info_Mod_Balor_DuengerVerteilt_15_00"); //I handed out the fertilizer.
+	AI_Output(self, hero, "Info_Mod_Balor_DuengerVerteilt_01_01"); //Well, then the swampweed will just sprout like that.
+	AI_Output(self, hero, "Info_Mod_Balor_DuengerVerteilt_01_02"); //Here are some stems.
 
 	CreateInvItems	(self, ItMi_Joint, 6);
 
 	B_GiveInvItems	(self, hero, ItMi_Joint, 5);
 
-	AI_Output(self, hero, "Info_Mod_Balor_DuengerVerteilt_01_04"); //Ich zieh mir auch erst mal einen rein.
+	AI_Output(self, hero, "Info_Mod_Balor_DuengerVerteilt_01_04"); //I'm gonna go check it out, too.
 
 	B_UseItem	(self, ItMi_Joint);
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Ich hab den Dünger verteilt und mit Balor gesprochen. Jetzt sollte ich wieder zu Baal Namib gehen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "I handed out the fertilizer and talked to Balor. Now I should go back to Baal Namib.");
 
 	B_GivePlayerXP	(50);
 
@@ -119,26 +119,26 @@ FUNC INT Info_Mod_Balor_Sumpfmensch_Condition()
 
 FUNC VOID Info_Mod_Balor_Sumpfmensch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_00"); //Ahhhhhhh!!!
-	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch_15_01"); //Was ist denn los?
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_02"); //Meine Güte, jag' mir doch nicht solche Angst ein! Kurz habe ich gedacht, du bist der ... der ... (schluckt)
-	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch_15_03"); //Der was? Spuck's schon aus!
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_04"); //Der ... (nuschelt unverständlich)
-	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch_15_05"); //Der WAS?
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_06"); //Der HEULENDE SUMPFMENSCH!!!
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_00"); //Ahhhhhhhhhh!!!!
+	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch_15_01"); //What's going on?
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_02"); //Jesus Christ, don't scare me so much! For a moment I thought you were the.... the.... (gulps)
+	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch_15_03"); //The what? Spit it out already!
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_04"); //The.... (mumbles incomprehensibly)
+	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch_15_05"); //The WAS?
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_06"); //The WAILING SUMPING PEOPLE!!!!!
 
 	// ToDo: Chor ergänzen
 
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_07"); //Tut mir Leid, falscher Alarm!
-	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch_15_08"); //Was hat es mit diesem heulenden Sumpfmenschen ... (schreiender Chor im Hintergrund) ... auf sich?
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_09"); //Wenn du mehr wissen willst, folge nachts vom Lagereingang dem rechten Steg bis du zu einem Lagerfeuer kommst.
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_10"); //Der Novize Fortuno gibt die Geschichte zum Besten. Und bring lieber Unterwäsche zum Wechseln mit.
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_07"); //Sorry, false alarm!
+	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch_15_08"); //What's it got to do with this howling swamp man.... (screaming choir in the background).... in itself?
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_09"); //If you want to know more, follow the right footbridge until you come to a campfire at night from the camp entrance.
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch_01_10"); //The novice Fortuno tells the story. And don't forget to bring your own underwear.
 
 	Log_CreateTopic	(TOPIC_MOD_SL_SUMPFMENSCH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SL_SUMPFMENSCH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Ich sollte nachts  vom Lagereingang dem rechten Steg folgen, bis ich an ein Lagerfeuer komme. Der Novize Fortuno erzählt dort anscheinend die Geschichte des 'heulenden Sumpfmenschen'.");
+	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "I was supposed to follow the right footbridge from the camp entrance at night until I got to a campfire. The novice Fortuno is apparently telling the story of the' howling swamp man'.");
 
 	B_StartOtherRoutine	(Mod_951_PSINOV_Fortuno_MT, "SUMPFMENSCH");
 	B_StartOtherRoutine	(Mod_1339_PSINOV_Novize_MT, "SUMPFMENSCH");
@@ -168,7 +168,7 @@ FUNC INT Info_Mod_Balor_Sumpfmensch2_Condition()
 
 FUNC VOID Info_Mod_Balor_Sumpfmensch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch2_01_00"); //Schnell, Baal Joru sucht dich überall, komm mit!
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch2_01_00"); //Hurry, Baal Joru is looking for you everywhere, come with me!
 	
 	AI_StopProcessInfos(self);
 	
@@ -201,14 +201,14 @@ FUNC INT Info_Mod_Balor_Sumpfmensch3_Condition()
 
 FUNC VOID Info_Mod_Balor_Sumpfmensch3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch3_01_00"); //Nimm's dem alten Darrion nicht übel. Der ist nur total zerstreut, seit er diesem Sumpfmenschen begegnet ist.
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch3_01_01"); //Der traut sich nachts nichtmal mehr aus seiner Hütte raus. Außer natürlich für seine allnächtlichen... nennen wir's mal "Sitzung" im Sumpf. (lacht)
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch3_01_00"); //Don't blame old Darrion. He's only been completely scattered since he met this swamp man.
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch3_01_01"); //Der traut sich nachts nichtmal mehr aus seiner Hütte raus. Außer natürlich für seine allnächtlichen... nennen wir's mal "session" im Sumpf. (lacht)
 	
 	AI_StopProcessInfos(self);
 	
 	B_StartOtherRoutine(self, "START");
 	
-	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Darrion geht jede Nacht in den Sumpf. Ich sollte mich mal an seine Fersen heften.");
+	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Darrion goes to the swamp every night. I should go put my hand on his heels.");
 };
 
 INSTANCE Info_Mod_Balor_Sumpfmensch4 (C_INFO)
@@ -231,16 +231,16 @@ FUNC INT Info_Mod_Balor_Sumpfmensch4_Condition()
 
 FUNC VOID Info_Mod_Balor_Sumpfmensch4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch4_01_00"); //Da bist ja. Darrion hat nach dir gesucht.
-	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch4_15_01"); //Er ist wieder aufgewacht?
-	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch4_01_02"); //Das oder er ist ein ziemlich gesprächiger Schläfer...
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch4_01_00"); //There you are. Darrion was looking for you.
+	AI_Output(hero, self, "Info_Mod_Balor_Sumpfmensch4_15_01"); //He woke up again?
+	AI_Output(self, hero, "Info_Mod_Balor_Sumpfmensch4_01_02"); //That or he's a pretty talkative sleeper....
 	
 	AI_StopProcessInfos(self);
 	
 	B_StartOtherRoutine(self, "START");
 	B_StartOtherRoutine(Mod_2014_PSINOV_Darrion_MT, "WACH");
 	
-	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Darrion ist wieder aufgewacht. Ich sollte mit ihm sprechen.");
+	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Darrion woke up. I should talk to him.");
 };
 
 INSTANCE Info_Mod_Balor_Woher (C_INFO)
@@ -251,7 +251,7 @@ INSTANCE Info_Mod_Balor_Woher (C_INFO)
 	information	= Info_Mod_Balor_Woher_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wieso bist du hier im Sumpflager?";
+	description	= "Why are you in the swamp camp?";
 };
 
 FUNC INT Info_Mod_Balor_Woher_Condition()
@@ -264,9 +264,9 @@ FUNC INT Info_Mod_Balor_Woher_Condition()
 
 FUNC VOID Info_Mod_Balor_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Balor_Woher_15_00"); //Wieso bist du hier im Sumpflager?
-	AI_Output(self, hero, "Info_Mod_Balor_Woher_01_01"); //Nachdem man mich bei einem Raubzug in Khorinis erwischt hat, haben sie mich in die Kolonie geworfen.
-	AI_Output(self, hero, "Info_Mod_Balor_Woher_01_02"); //Das Sumpflager erschien mir als das sicherste und angenehmste Lager, deswegen bin ich hierher gekommen.
+	AI_Output(hero, self, "Info_Mod_Balor_Woher_15_00"); //Why are you in the swamp camp?
+	AI_Output(self, hero, "Info_Mod_Balor_Woher_01_01"); //After I was caught on a raid in Khorinis, they threw me into the colony.
+	AI_Output(self, hero, "Info_Mod_Balor_Woher_01_02"); //The swamp camp seemed to me to be the safest and most pleasant camp, so I came here.
 };
 
 INSTANCE Info_Mod_Balor_Pickpocket (C_INFO)

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Tengron_IR_Hi (C_INFO)
 	information	= Info_Mod_Tengron_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie war die Reise und was sagst du zu der Insel.";
+	description	= "How was the trip and what do you say to the island?";
 };
 
 FUNC INT Info_Mod_Tengron_IR_Hi_Condition()
@@ -16,11 +16,11 @@ FUNC INT Info_Mod_Tengron_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Tengron_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_IR_Hi_15_00"); //Wie war die Reise und was sagst du zu der Insel.
-	AI_Output(self, hero, "Info_Mod_Tengron_IR_Hi_07_01"); //Die Insel ... als würde ich direkt ins Antlitz jener finsteren Kreaturen blicken, denen ich nachts vor der Stadt begegnete.
-	AI_Output(self, hero, "Info_Mod_Tengron_IR_Hi_07_02"); //Ja, das Übel zeigt sich an diesem Ort in seiner abscheulichsten Gestalt.
-	AI_Output(self, hero, "Info_Mod_Tengron_IR_Hi_07_03"); //Meine Klinge ist bereit, mit Innos Segen diese erbärmlichen Kreaturen zu tilgen ... auch, wenn es keine leichte Prüfung wird.
-	AI_Output(hero, self, "Info_Mod_Tengron_IR_Hi_15_04"); //So viel Kampfeswillen lobe ich mir. Es wird bestimmte nicht mehr lange dauern.
+	AI_Output(hero, self, "Info_Mod_Tengron_IR_Hi_15_00"); //How was the trip and what do you say to the island?
+	AI_Output(self, hero, "Info_Mod_Tengron_IR_Hi_07_01"); //The island... as if I were looking directly into the face of those dark creatures I met at night outside the city.
+	AI_Output(self, hero, "Info_Mod_Tengron_IR_Hi_07_02"); //Yes, the evil manifests itself in this place in its most abominable form.
+	AI_Output(self, hero, "Info_Mod_Tengron_IR_Hi_07_03"); //My blade is ready to wipe out these pathetic creatures with Inno's blessing... even if it won't be an easy test.
+	AI_Output(hero, self, "Info_Mod_Tengron_IR_Hi_15_04"); //I praise myself for all that fighting spirit. It won't be long now.
 };
 
 INSTANCE Info_Mod_Tengron_IR_Hebel (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Tengron_IR_Hebel (C_INFO)
 	information	= Info_Mod_Tengron_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Can you use one lever while I move the other?";
 };
 
 FUNC INT Info_Mod_Tengron_IR_Hebel_Condition()
@@ -48,7 +48,7 @@ FUNC VOID Info_Mod_Tengron_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Tengron_IR_Hebel_07_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Tengron_IR_Hebel_07_00"); //Of course it is. Maybe if it's going to get us somewhere...
 
 	Mod_IR_Hebel = 1;
 
@@ -77,7 +77,7 @@ FUNC INT Info_Mod_Tengron_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Tengron_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tengron_IR_Ambient01_07_00"); //Abscheuliche, finstere Geschöpfe. Möge Innos gesegnetes Licht sie bannen und ihrer Präsenz ein jehes Ende bereiten.
+	AI_Output(self, hero, "Info_Mod_Tengron_IR_Ambient01_07_00"); //Hideous, sinister creatures. May Inno's blessed light banish them and put an end to their presence.
 
 	AI_StopProcessInfos	(self);
 };
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Tengron_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Tengron_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Let's get going. Will you escort me to the island?";
 };
 
 FUNC INT Info_Mod_Tengron_IR_GehtLos_Condition()
@@ -108,8 +108,8 @@ FUNC VOID Info_Mod_Tengron_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Tengron_IR_GehtLos_07_00"); //Ja, selbstverständlich werde ich dich begleiten. Der Tatendrang war es, und nicht die Muße, welcher unsere Stadt vor schlimmeren Bewahrte.
-	AI_Output(self, hero, "Info_Mod_Tengron_IR_GehtLos_07_01"); //So werde ich denn auch hier mein Möglichstes geben.
+	AI_Output(self, hero, "Info_Mod_Tengron_IR_GehtLos_07_00"); //Yeah, of course I'll go with you. It was the urge to act and not the leisure that saved our city from worse.
+	AI_Output(self, hero, "Info_Mod_Tengron_IR_GehtLos_07_01"); //That's how I'm going to do my utmost.
 
 	Mod_IR_Dabei += 1;
 
@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Tengron_IR_GehBack (C_INFO)
 	information	= Info_Mod_Tengron_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Go back to the ship.";
 };
 
 FUNC INT Info_Mod_Tengron_IR_GehBack_Condition()
@@ -145,7 +145,7 @@ FUNC VOID Info_Mod_Tengron_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Tengron_IR_GehBack_07_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Tengron_IR_GehBack_07_00"); //Well, if you need me, you know where to find me.
 
 	Mod_IR_Dabei -= 1;
 
@@ -164,7 +164,7 @@ INSTANCE Info_Mod_Tengron_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Tengron_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Tengron_IR_Heiltrank_Condition()
@@ -184,31 +184,31 @@ FUNC VOID Info_Mod_Tengron_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Tengron_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Essence of Healing", Info_Mod_Tengron_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Tengron_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Elixir of Healing", Info_Mod_Tengron_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Tengron_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Extract of Healing", Info_Mod_Tengron_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Tengron_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Essence of Healing", Info_Mod_Tengron_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Tengron_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Drink of light healing", Info_Mod_Tengron_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Tengron_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Light healing potion", Info_Mod_Tengron_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Tengron_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Tengron_IR_Heiltrank, "Drink of fast healing", Info_Mod_Tengron_IR_Heiltrank_Health_05);
 	};
 };
 

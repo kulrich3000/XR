@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Lucy_Hi (C_INFO)
 	information	= Info_Mod_Lucy_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Lucy_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Lucy_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Lucy_Hi_17_01"); //Ich bin Lucy und arbeite hier.
+	AI_Output(self, hero, "Info_Mod_Lucy_Hi_17_01"); //I'm Lucy and I work here.
 };
 
 INSTANCE Info_Mod_Lucy_Sumpfkraut (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Lucy_Sumpfkraut (C_INFO)
 	information	= Info_Mod_Lucy_Sumpfkraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du, wo ich Sumpfkraut bekommen kann?";
+	description	= "Do you know where I can get swampweed?";
 };
 
 FUNC INT Info_Mod_Lucy_Sumpfkraut_Condition()
@@ -43,33 +43,33 @@ FUNC INT Info_Mod_Lucy_Sumpfkraut_Condition()
 
 FUNC VOID Info_Mod_Lucy_Sumpfkraut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lucy_Sumpfkraut_15_00"); //Weißt du, wo ich Sumpfkraut bekommen kann?
-	AI_Output(self, hero, "Info_Mod_Lucy_Sumpfkraut_17_01"); //Für 50 Gold sag ich dir, wo du welches bekommst.
+	AI_Output(hero, self, "Info_Mod_Lucy_Sumpfkraut_15_00"); //Do you know where I can get swampweed?
+	AI_Output(self, hero, "Info_Mod_Lucy_Sumpfkraut_17_01"); //For 50 gold, I'll tell you where to get it.
 
 	Info_ClearChoices	(Info_Mod_Lucy_Sumpfkraut);
 
-	Info_AddChoice	(Info_Mod_Lucy_Sumpfkraut, "Vergiss es.", Info_Mod_Lucy_Sumpfkraut_B);
+	Info_AddChoice	(Info_Mod_Lucy_Sumpfkraut, "Forget about it.", Info_Mod_Lucy_Sumpfkraut_B);
 	if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 	{
-		Info_AddChoice	(Info_Mod_Lucy_Sumpfkraut, "Hier hast du das Gold (50 Gold geben)", Info_Mod_Lucy_Sumpfkraut_A);
+		Info_AddChoice	(Info_Mod_Lucy_Sumpfkraut, "Here you have the gold (50 gold give)", Info_Mod_Lucy_Sumpfkraut_A);
 	};
 };
 
 FUNC VOID Info_Mod_Lucy_Sumpfkraut_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lucy_Sumpfkraut_B_15_00"); //Vergiss es.
-	AI_Output(self, hero, "Info_Mod_Lucy_Sumpfkraut_B_17_01"); //Dann belästige mich nicht.
+	AI_Output(hero, self, "Info_Mod_Lucy_Sumpfkraut_B_15_00"); //Forget about it.
+	AI_Output(self, hero, "Info_Mod_Lucy_Sumpfkraut_B_17_01"); //Then don't bother me.
 
 	Info_ClearChoices	(Info_Mod_Lucy_Sumpfkraut);
 };
 
 FUNC VOID Info_Mod_Lucy_Sumpfkraut_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lucy_Sumpfkraut_A_15_00"); //Hier hast du das Gold.
+	AI_Output(hero, self, "Info_Mod_Lucy_Sumpfkraut_A_15_00"); //Here's the gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Lucy_Sumpfkraut_A_17_01"); //Borka verkauft Sumpfkraut.
+	AI_Output(self, hero, "Info_Mod_Lucy_Sumpfkraut_A_17_01"); //Borka sells bogweed.
 
 	Mod_Borka_Sumpfkraut = 1;
 

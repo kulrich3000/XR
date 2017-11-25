@@ -18,8 +18,8 @@ FUNC INT Info_Mod_SoeldnerBeiThekla_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_SoeldnerBeiThekla_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_SoeldnerBeiThekla_Daemonisch_06_00"); //(klagend) Ohh, ich fühle mich aber gar nicht gut. Schwach wie ein Knabe, voll gefressen wie ein Troll.
-	AI_Output(self, hero, "Info_Mod_SoeldnerBeiThekla_Daemonisch_06_01"); //Die nächsten Tage verlasse ich das Bett nicht mehr und Essen will ich auch nicht sehen.
+	AI_Output(self, hero, "Info_Mod_SoeldnerBeiThekla_Daemonisch_06_00"); //Oh, I'm not feeling well. Weak as a boy, devoured like a troll.
+	AI_Output(self, hero, "Info_Mod_SoeldnerBeiThekla_Daemonisch_06_01"); //The next few days I don't want to leave the bed anymore and I don't want to see food.
 
 	AI_StopProcessInfos	(self);
 

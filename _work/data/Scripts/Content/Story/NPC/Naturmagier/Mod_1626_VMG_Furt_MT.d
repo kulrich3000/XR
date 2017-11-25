@@ -2,7 +2,7 @@ instance Mod_1626_VMG_Furt_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Furt";
+	name =							"ford";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							3;

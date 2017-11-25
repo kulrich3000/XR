@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Pendler_01_Hi (C_INFO)
 	information	= Info_Mod_Pendler_01_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was seid ihr denn für eine Truppe?";
+	description	= "What kind of troop are you?";
 };
 
 FUNC INT Info_Mod_Pendler_01_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Pendler_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Pendler_01_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pendler_01_Hi_15_00"); //Was seid ihr denn für eine Truppe?
-	AI_Output(self, hero, "Info_Mod_Pendler_01_Hi_01_01"); //Wir sind die Dummen, die von Anselm abkommandiert wurden, die Erträge unserer Mine in die Stadt zu transportieren.
-	AI_Output(self, hero, "Info_Mod_Pendler_01_Hi_01_02"); //Aber wir haben noch Glück gehabt.
-	AI_Output(self, hero, "Info_Mod_Pendler_01_Hi_01_03"); //Mit den armen Schweinen, die jetzt in der Mine schuften dürfen, will ich nicht tauschen.
+	AI_Output(hero, self, "Info_Mod_Pendler_01_Hi_15_00"); //What kind of troop are you?
+	AI_Output(self, hero, "Info_Mod_Pendler_01_Hi_01_01"); //We are the fools who were ordered by Anselm to transport the proceeds of our mine into town.
+	AI_Output(self, hero, "Info_Mod_Pendler_01_Hi_01_02"); //But we're still lucky.
+	AI_Output(self, hero, "Info_Mod_Pendler_01_Hi_01_03"); //I don't want to trade with the poor bastards who are now allowed to work in the mine.
 };
 
 INSTANCE Info_Mod_Pendler_01_WoMine (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Pendler_01_WoMine (C_INFO)
 	information	= Info_Mod_Pendler_01_WoMine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo lang geht's denn zur Mine?";
+	description	= "Which way to the mine?";
 };
 
 FUNC INT Info_Mod_Pendler_01_WoMine_Condition()
@@ -45,17 +45,17 @@ FUNC INT Info_Mod_Pendler_01_WoMine_Condition()
 
 FUNC VOID Info_Mod_Pendler_01_WoMine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pendler_01_WoMine_15_00"); //Wo lang geht's denn zur Mine?
+	AI_Output(hero, self, "Info_Mod_Pendler_01_WoMine_15_00"); //Which way to the mine?
 
 	if (Wld_IsTime(07,00,08,00))
 	{
-		AI_Output(self, hero, "Info_Mod_Pendler_01_WoMine_01_01"); //Komm doch einfach mit, wir sind gerade auf dem Weg dorthin.
+		AI_Output(self, hero, "Info_Mod_Pendler_01_WoMine_01_01"); //Why don't you just come with me, we're on our way over there right now.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Pendler_01_WoMine_01_02"); //Wir sind gerade auf dem Weg in die Stadt, also musst du in die andere Richtung.
-		AI_Output(self, hero, "Info_Mod_Pendler_01_WoMine_01_03"); //Du müsstest aber genügend Wegweiser finden, die dich hinführen.
-		AI_Output(self, hero, "Info_Mod_Pendler_01_WoMine_01_04"); //Ansonsten warte, bis wir wieder dorthin unterwegs sind, dann kannst du mitkommen.
+		AI_Output(self, hero, "Info_Mod_Pendler_01_WoMine_01_02"); //We're on our way into town right now, so you have to go the other way.
+		AI_Output(self, hero, "Info_Mod_Pendler_01_WoMine_01_03"); //You'd have to find enough signposts to lead you there.
+		AI_Output(self, hero, "Info_Mod_Pendler_01_WoMine_01_04"); //Otherwise, wait until we get back there, then you can come with us.
 	};
 };
 

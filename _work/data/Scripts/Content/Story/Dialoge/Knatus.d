@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Knatus_AlvarKristall_Condition()
 
 FUNC VOID Info_Mod_Knatus_AlvarKristall_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Knatus_AlvarKristall_03_00"); //Ja, weg mit dem Kerl, schmeißt ihn hier raus.
+	AI_Output(self, hero, "Info_Mod_Knatus_AlvarKristall_03_00"); //Yeah, get this guy out of here, get him out of here.
 
 	AI_StopProcessInfos	(self);
 
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_Knatus_Traenenkristall_Condition()
 
 FUNC VOID Info_Mod_Knatus_Traenenkristall_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Knatus_Traenenkristall_03_00"); //Was, dass ist nicht möglich. Ja, jetzt auf einmal fällt es mir wie Schuppen von den Augen.
-	AI_Output(self, hero, "Info_Mod_Knatus_Traenenkristall_03_01"); //Ihr miesen, trügerischen Weiber.
+	AI_Output(self, hero, "Info_Mod_Knatus_Traenenkristall_03_00"); //What, that's not possible. Yeah, now all of a sudden it falls from my eyes like scales.
+	AI_Output(self, hero, "Info_Mod_Knatus_Traenenkristall_03_01"); //You lousy, deceptive women.
 
 	AI_StopProcessInfos	(self);
 };
@@ -72,7 +72,7 @@ FUNC INT Info_Mod_Knatus_Traenenkristall2_Condition()
 
 FUNC VOID Info_Mod_Knatus_Traenenkristall2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Knatus_Traenenkristall2_03_00"); //Alvar? Das kann nicht sein. Wir haben dich tot auf dem Berghang liegen sehen ...
+	AI_Output(self, hero, "Info_Mod_Knatus_Traenenkristall2_03_00"); //Alvar? This can't be happening. We saw you lying dead on the hillside...
 
 	AI_StopProcessInfos	(self);
 
@@ -99,7 +99,7 @@ FUNC INT Info_Mod_Knatus_Traenenkristall3_Condition()
 
 FUNC VOID Info_Mod_Knatus_Traenenkristall3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Knatus_Traenenkristall3_03_00"); //Thys scheint wieder zu Bewusstsein zu kommen.
+	AI_Output(self, hero, "Info_Mod_Knatus_Traenenkristall3_03_00"); //Thys seems to be regaining consciousness.
 
 	AI_StopProcessInfos	(self);
 

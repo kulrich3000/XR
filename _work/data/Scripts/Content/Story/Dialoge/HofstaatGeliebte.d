@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HofstaatGeliebte_Spezialtrunken (C_INFO)
 	information	= Info_Mod_HofstaatGeliebte_Spezialtrunken_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Einen Schluck Spezialtrunken?";
+	description	= "A sip of a special drink?";
 };
 
 FUNC INT Info_Mod_HofstaatGeliebte_Spezialtrunken_Condition()
@@ -20,7 +20,7 @@ FUNC INT Info_Mod_HofstaatGeliebte_Spezialtrunken_Condition()
 
 FUNC VOID Info_Mod_HofstaatGeliebte_Spezialtrunken_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatGeliebte_Spezialtrunken_15_00"); //Einen Schluck Spezialtrunken?
+	AI_Output(hero, self, "Info_Mod_HofstaatGeliebte_Spezialtrunken_15_00"); //A sip of a special drink?
 
 	B_GiveInvItems	(hero, self, ItFo_Spezialtrunken, 1);
 

@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Skelett_Hi_Condition()
 
 FUNC VOID Info_Mod_Skelett_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skelett_Hi_04_00"); //Was? Ein Fremder? Du willst unsern Schatz!! Verschwinde!
-	AI_Output(hero, self, "Info_Mod_Skelett_Hi_15_01"); //Wie ... Was ... Wieso bist du nicht ...
-	AI_Output(self, hero, "Info_Mod_Skelett_Hi_04_02"); //... tot? (lacht) Ich bin tot. Genauso tot, wie du es bald sein wirst!!
+	AI_Output(self, hero, "Info_Mod_Skelett_Hi_04_00"); //What? A stranger? You want our treasure! Get out of here!
+	AI_Output(hero, self, "Info_Mod_Skelett_Hi_15_01"); //Like.... What...? Why aren't you--
+	AI_Output(self, hero, "Info_Mod_Skelett_Hi_04_02"); //... dead? (laughs) I'm dead. Just as dead as you will be!
 
 	AI_StopProcessInfos	(self);
 

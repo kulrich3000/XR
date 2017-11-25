@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Salmey_Hi (C_INFO)
 	information	= Info_Mod_Salmey_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was gibt es denn hier für Bier?";
+	description	= "What kind of beer is there?";
 };
 
 FUNC INT Info_Mod_Salmey_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Salmey_Hi_Condition()
 
 FUNC VOID Info_Mod_Salmey_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Salmey_Hi_15_00"); //Was gibt es denn hier für Bier?
-	AI_Output(self, hero, "Info_Mod_Salmey_Hi_16_01"); //Restbestände vom Khorataer Lagerbier. Unser Brauer hat gerade Probleme, will aber bald wieder liefern.
-	AI_Output(self, hero, "Info_Mod_Salmey_Hi_16_02"); //Ansonsten reichlich herkömmliches Klosterbier, mit frischem Quellwasser verdünnt.
+	AI_Output(hero, self, "Info_Mod_Salmey_Hi_15_00"); //What kind of beer is there?
+	AI_Output(self, hero, "Info_Mod_Salmey_Hi_16_01"); //Remains of Khorata lager. Our brewer is in trouble right now, but he wants to deliver again soon.
+	AI_Output(self, hero, "Info_Mod_Salmey_Hi_16_02"); //Otherwise plentifully conventional Klosterbier, diluted with fresh spring water.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KHORATA, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Salmey in der Kneipe kann mir Bier verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Salmey at the pub can sell me beer.");
 };
 
 INSTANCE Info_Mod_Salmey_Trade (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Salmey_Trade (C_INFO)
 	permanent	= 1;
 	important	= 0;
 	trade		= 1;
-	description	= "Dann lass mal das Angebot sehen.";
+	description	= "Let's see the offer.";
 };
 
 FUNC INT Info_Mod_Salmey_Trade_Condition()
@@ -49,7 +49,7 @@ FUNC VOID Info_Mod_Salmey_Trade_Info()
 	Backup_Questitems();
 
 	//B_GiveTradeInv (self);
-	AI_Output(hero, self, "Info_Mod_Salmey_Trade_15_00"); //Dann lass mal das Angebot sehen.
+	AI_Output(hero, self, "Info_Mod_Salmey_Trade_15_00"); //Let's see the offer.
 };
 
 INSTANCE Info_Mod_Salmey_Pickpocket (C_INFO)

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ramsi_Hi (C_INFO)
 	information	= Info_Mod_Ramsi_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hi, gehörst du zu den Gaunern hier?";
+	description	= "Hi, are you one of the crooks here?";
 };
 
 FUNC INT Info_Mod_Ramsi_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Ramsi_Hi_Condition()
 
 FUNC VOID Info_Mod_Ramsi_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramsi_Hi_15_00"); //Hi, gehörst du zu den Gaunern hier?
-	AI_Output(self, hero, "Info_Mod_Ramsi_Hi_08_01"); //Ja, ich gehöre zu den Gaunern. Mein name ist Ramsi.
-	AI_Output(hero, self, "Info_Mod_Ramsi_Hi_15_02"); //Was ist deine Aufgabe hier?
-	AI_Output(self, hero, "Info_Mod_Ramsi_Hi_08_03"); //Ich kümmere mich zusammen mit Yussuf und Zeki um die Jagd nach Tieren, um stets genug Fleisch hier zu haben.
-	AI_Output(hero, self, "Info_Mod_Ramsi_Hi_15_04"); //Ist das nicht etwas gefährlich?
-	AI_Output(self, hero, "Info_Mod_Ramsi_Hi_08_05"); //(bekümmert) Ja, es war schon immer gefährlich, aber in letzter Zeit ist das Jagen zu einem Selbstmordkommando geworden.
+	AI_Output(hero, self, "Info_Mod_Ramsi_Hi_15_00"); //Hi, are you one of the crooks here?
+	AI_Output(self, hero, "Info_Mod_Ramsi_Hi_08_01"); //Yeah, I'm one of the crooks. My name is Ramsi.
+	AI_Output(hero, self, "Info_Mod_Ramsi_Hi_15_02"); //What's your job here?
+	AI_Output(self, hero, "Info_Mod_Ramsi_Hi_08_03"); //Together with Yussuf and Zeki, I take care of the hunting of animals in order to always have enough meat here.
+	AI_Output(hero, self, "Info_Mod_Ramsi_Hi_15_04"); //Isn't that a little dangerous?
+	AI_Output(self, hero, "Info_Mod_Ramsi_Hi_08_05"); //Yeah, it's always been dangerous, but lately hunting has become a suicide mission.
 };
 
 INSTANCE Info_Mod_Ramsi_Aufgabe (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Ramsi_Aufgabe (C_INFO)
 	information	= Info_Mod_Ramsi_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso ist die Jagd so gefährlich geworden?";
+	description	= "Why is hunting so dangerous?";
 };
 
 FUNC INT Info_Mod_Ramsi_Aufgabe_Condition()
@@ -46,20 +46,20 @@ FUNC INT Info_Mod_Ramsi_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Ramsi_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramsi_Aufgabe_15_00"); //Wieso ist die Jagd so gefährlich geworden?
-	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_01"); //Nun, vor einiger Zeit war alles noch in Ordnung, aber in letzter Zeit vermehren sich so Viecher wie Warge immer mehr und bevölkern den Wald.
-	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_02"); //Deswegen ist alles so gefährlich geworden und keiner reißt sich darum, Jagen zu gehen.
-	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_03"); //Zudem macht ein Verbund von Jägern uns immer mehr Probleme, weil wir in ihre Jagdgebiete eindringen.
-	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_04"); //Die Kerle haben schon einen von uns umgebracht. Verrückt ist alles geworden.
-	AI_Output(hero, self, "Info_Mod_Ramsi_Aufgabe_15_05"); //Soll ich dir vielleicht beim Jagen helfen?
-	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_06"); //(horcht auf) Das würdest du tun? (argwöhnisch) Moment mal, wieso solltest du dein Leben freiwillig riskieren?
-	AI_Output(hero, self, "Info_Mod_Ramsi_Aufgabe_15_07"); //Nun, ich möchte mich den Gaunern anschließen, dafür brauche ich aber eure Stimmen.
-	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_08"); //(schmunzelt) So ist das also? Na meinetwegen.
-	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_09"); //Wenn du mit mir zehn Keiler erlegst und zusiehst, dass niemand stirbt, werde ich dir meine Stimme geben. Also bereit loszulegen?
+	AI_Output(hero, self, "Info_Mod_Ramsi_Aufgabe_15_00"); //Why is hunting so dangerous?
+	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_01"); //Well, some time ago everything was fine, but lately there are more and more creatures like Warge proliferating and populating the forest.
+	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_02"); //That's why everything has become so dangerous and nobody wants to go hunting.
+	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_03"); //In addition, an association of hunters is causing us more and more problems because we are invading their hunting grounds.
+	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_04"); //Those guys already killed one of us. Everything has gone crazy.
+	AI_Output(hero, self, "Info_Mod_Ramsi_Aufgabe_15_05"); //You want me to help you hunt?
+	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_06"); //That's what you'd do? Wait, why would you risk your life willingly?
+	AI_Output(hero, self, "Info_Mod_Ramsi_Aufgabe_15_07"); //Well, I'd like to join the crooks, but I need your votes to do that.
+	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_08"); //Is that the way it is? Well, for my sake.
+	AI_Output(self, hero, "Info_Mod_Ramsi_Aufgabe_08_09"); //If you kill ten boar with me and see that nobody dies, I will give you my vote. So ready to roll?
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_RAMSI_JAGD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_RAMSI_JAGD, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_RAMSI_JAGD, "Der Gauner Ramsi kümmert sich mit zwei anderen Gaunern um die Besorgung von Fleisch, was nur durch die Jagd erbracht werden kann. Da die Jagd wegen Monstern und und ein paar verrückten Jägern immer gefährlicher wird, soll ich mit Ramsi auf die Jagd gehen. Wenn wir zehn Keiler erlegt und deren Fleisch ins Lager transportiert haben, wird Ramsi mir seine Stimme geben.");
+	B_LogEntry	(TOPIC_MOD_ASS_RAMSI_JAGD, "The crook Ramsi and two other crooks take care of the provision of meat, which can only be done by hunting. Since hunting is getting more and more dangerous because of monsters and some crazy hunters, I have to go hunting with Ramsi. When we have killed ten boar and brought their flesh into the camp, Ramsi will give me his voice.");
 };
 
 INSTANCE Info_Mod_Ramsi_AufgabeLos (C_INFO)
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Ramsi_AufgabeLos (C_INFO)
 	information	= Info_Mod_Ramsi_AufgabeLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin bereit.";
+	description	= "I'm ready.";
 };
 
 FUNC INT Info_Mod_Ramsi_AufgabeLos_Condition()
@@ -83,8 +83,8 @@ FUNC INT Info_Mod_Ramsi_AufgabeLos_Condition()
 
 FUNC VOID Info_Mod_Ramsi_AufgabeLos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramsi_AufgabeLos_15_00"); //Ich bin bereit.
-	AI_Output(self, hero, "Info_Mod_Ramsi_AufgabeLos_08_01"); //Dann folge mir.
+	AI_Output(hero, self, "Info_Mod_Ramsi_AufgabeLos_15_00"); //I'm ready.
+	AI_Output(self, hero, "Info_Mod_Ramsi_AufgabeLos_08_01"); //Then follow me.
 
 	AI_StopProcessInfos	(self);
 
@@ -113,9 +113,9 @@ FUNC INT Info_Mod_Ramsi_KeilerWarnung_Condition()
 
 FUNC VOID Info_Mod_Ramsi_KeilerWarnung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerWarnung_08_00"); //Sei jetzt extrem vorsichtig. Die Keiler sind meist mit bis zu drei Tieren unterwegs und sie können wirklich tödlich sein.
-	AI_Output(hero, self, "Info_Mod_Ramsi_KeilerWarnung_15_01"); //Danke für die Info.
-	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerWarnung_08_02"); //Dann folge mir mal.
+	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerWarnung_08_00"); //Be extremely careful now. The boars are usually on the move with up to three animals and they can be really deadly.
+	AI_Output(hero, self, "Info_Mod_Ramsi_KeilerWarnung_15_01"); //Thanks for letting me know.
+	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerWarnung_08_02"); //Follow me, then.
 
 	self.flags = 2;
 
@@ -160,11 +160,11 @@ FUNC INT Info_Mod_Ramsi_KeilerTot_Condition()
 
 FUNC VOID Info_Mod_Ramsi_KeilerTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerTot_08_00"); //(lacht) Das war mal eine Jagdsession. Los gehen wir ...
-	AI_Output(hero, self, "Info_Mod_Ramsi_KeilerTot_15_01"); //Was ist?
-	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerTot_08_02"); //Diese Hurensöhne! Pass auf. Jäger greifen an!
+	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerTot_08_00"); //(laughs) This used to be a hunting session. Let's go....
+	AI_Output(hero, self, "Info_Mod_Ramsi_KeilerTot_15_01"); //What is it?
+	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerTot_08_02"); //Those sons of bitches! Watch it. Hunters attack!
 
-	B_LogEntry	(TOPIC_MOD_ASS_RAMSI_JAGD, "Nachdem wir alle Keiler getötet und ausgenommen haben, wurden wir von Jägern angegriffen. Wir müssen sie aufhalten, sonst werden diese Wahnsinnigen uns töten.");
+	B_LogEntry	(TOPIC_MOD_ASS_RAMSI_JAGD, "After we killed and gutted all the boar, we were attacked by hunters. We have to stop them, or those lunatics will kill us.");
 
 	self.flags = 0;
 
@@ -205,14 +205,14 @@ FUNC VOID Info_Mod_Ramsi_KeilerFleischWeg_Info()
 
 	B_UseItem	(self, ItPo_Health_Addon_04);
 
-	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerFleischWeg_08_00"); //(schreit) Diese verdammten MISTKERLE! Sie haben all unsere gesammelten Vorräte geklaut, geklaut!
-	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerFleischWeg_08_01"); //Weißt du, wo sie hin sind?
-	AI_Output(hero, self, "Info_Mod_Ramsi_KeilerFleischWeg_15_02"); //Es war nur noch einer. Ich glaub, er ist Richtung Leuchtturm geflüchtet.
-	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerFleischWeg_08_03"); //Du musst ihn erwischen, uns gehen die Vorräte aus.
-	AI_Output(hero, self, "Info_Mod_Ramsi_KeilerFleischWeg_15_04"); //Alles klar. Geh schon mal zum Lager. Ich komme, wenn ich den Mistkerl zur Strecke gebracht habe.
-	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerFleischWeg_08_05"); //Verstehe. Gutes gelingen wünsch ich.
+	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerFleischWeg_08_00"); //(screams) Those fucking MISTKERLE! They stole all our collected supplies, stole them!
+	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerFleischWeg_08_01"); //Do you know where they went?
+	AI_Output(hero, self, "Info_Mod_Ramsi_KeilerFleischWeg_15_02"); //There was only one left. I think he escaped towards the lighthouse.
+	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerFleischWeg_08_03"); //We're running out of supplies.
+	AI_Output(hero, self, "Info_Mod_Ramsi_KeilerFleischWeg_15_04"); //All clear. Go to the camp already. I'll come after I hunt the son of a bitch down.
+	AI_Output(self, hero, "Info_Mod_Ramsi_KeilerFleischWeg_08_05"); //I see. I wish you all the best.
 
-	B_LogEntry	(TOPIC_MOD_ASS_RAMSI_JAGD, "Einer der Jäger hat Ramsi niedergeschlagen und alles Fleisch für die Assassinen gestohlen. Er ist in Richtung Leuchtturm gerannt. Ich muss den Kerl stoppen, bevor er mir entwischen kann. Ramsi geht derweil ins Assassinenlager zurück und erwartet mich bald zurück.");
+	B_LogEntry	(TOPIC_MOD_ASS_RAMSI_JAGD, "One of the hunters knocked Ramsi out and stole all the meat for the assassins. He ran towards the lighthouse. I have to stop this guy before he can get away from me. Meanwhile Ramsi returns to the Assassin camp and expects me back soon.");
 
 	AI_StopProcessInfos	(self);
 
@@ -234,7 +234,7 @@ INSTANCE Info_Mod_Ramsi_JaegerTot (C_INFO)
 	information	= Info_Mod_Ramsi_JaegerTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Dieb gefasst und obendrein auch noch (...)";
+	description	= "I caught the thief and on top of that, I also caught the thief (.... )";
 };
 
 FUNC INT Info_Mod_Ramsi_JaegerTot_Condition()
@@ -249,20 +249,20 @@ FUNC INT Info_Mod_Ramsi_JaegerTot_Condition()
 
 FUNC VOID Info_Mod_Ramsi_JaegerTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramsi_JaegerTot_15_00"); //Ich habe den Dieb gefasst und obendrein auch noch einen weiteren Jäger töten können.
-	AI_Output(self, hero, "Info_Mod_Ramsi_JaegerTot_08_01"); //Gute Arbeit, aber hast du auch das Fleisch?
-	AI_Output(hero, self, "Info_Mod_Ramsi_JaegerTot_15_02"); //Klar, hier ist es.
+	AI_Output(hero, self, "Info_Mod_Ramsi_JaegerTot_15_00"); //I caught the thief, and I was able to kill another hunter.
+	AI_Output(self, hero, "Info_Mod_Ramsi_JaegerTot_08_01"); //Good work, but do you have the meat?
+	AI_Output(hero, self, "Info_Mod_Ramsi_JaegerTot_15_02"); //Sure, here it is.
 
 	B_GiveInvItems	(hero, self, ItFo_MuttonRaw, 20);
 
-	AI_Output(self, hero, "Info_Mod_Ramsi_JaegerTot_08_03"); //Danke, dass du das für mich getan hast. Hier sind 100 Goldmünzen als Belohnung und du bekommst natürlich meine Stimme.
+	AI_Output(self, hero, "Info_Mod_Ramsi_JaegerTot_08_03"); //Thanks for doing this for me. Here are 100 gold coins as a reward and of course you get my vote.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	AI_Output(hero, self, "Info_Mod_Ramsi_JaegerTot_15_04"); //Danke sehr.
-	AI_Output(self, hero, "Info_Mod_Ramsi_JaegerTot_08_05"); //Keine Ursache. Ich werde dann mal das Fleisch braten. Man sieht sich.
+	AI_Output(hero, self, "Info_Mod_Ramsi_JaegerTot_15_04"); //Thank you very much.
+	AI_Output(self, hero, "Info_Mod_Ramsi_JaegerTot_08_05"); //Don't mention it. I'll fry the meat. See you around.
 
-	B_LogEntry	(TOPIC_MOD_ASS_RAMSI_JAGD, "Nachdem ich diese verfluchten Jäger aus dem Weg geräumt und das Fleisch gesichert habe, bin ich gleich wieder zu Ramsi gegangen. Er hat mich mit 100 Goldmünzen entlohnt und ich bin um eine Stimme reicher. Wenn das nicht gut ist.");
+	B_LogEntry	(TOPIC_MOD_ASS_RAMSI_JAGD, "After I got rid of these damned hunters and secured the meat, I went straight back to Ramsi. He paid me 100 gold coins and I'm one vote richer. If that's not good.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_RAMSI_JAGD, LOG_SUCCESS);
 
 	B_GivePlayerXP	(250);

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Giant_Bug(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Feldräuber";
+	name							=	"Field Raider";
 	guild							=	GIL_GIANT_BUG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GIANT_BUG;
 	level							=	8;
@@ -56,7 +56,7 @@ PROTOTYPE Mst_Default_Giant_Bug(C_Npc)
 PROTOTYPE Mst_Default_YGiant_Bug(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Junger Feldräuber";
+	name							=	"Young Field Raider";
 	level							=	4;
 	guild							=	GIL_GIANT_BUG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GIANT_BUG;

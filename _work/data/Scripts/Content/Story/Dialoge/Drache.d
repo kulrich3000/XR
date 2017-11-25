@@ -15,26 +15,26 @@ FUNC INT Info_Mod_Drache_Hi_Condition()
 
 FUNC VOID Info_Mod_Drache_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_00"); //Noch ein Mensch. Was treibst du hier? Zurück zu deinem Verein, sonst lernst du mich kennen.
-	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_01"); //(Leise) Ich gehöre nicht zu diesem Haufen. Ich bin gekommen, um Khorgor zu finden und zu töten.
-	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_02"); //Khorgor ist auch mein Feind. Nur leider bin ich machtlos, seit er mich hier eingesperrt hat.
-	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_03"); //Würdest du mir helfen, wenn es mir gelingt, dich zu befreien?
-	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_04"); //Mit Freuden. Aber das ist nicht so einfach.
-	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_05"); //Weil?
-	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_06"); //Ich bin ein Wasserdrache. Wasser ist mein Lebenselixier, auf das ich hier nun schon lange verzichten muss.
-	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_07"); //So sieche ich hier dahin, bin kraftlos und kann nicht kämpfen. Ich nehme Stück für Stück die Struktur dieser Umgebung an.
-	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_08"); //Kann man sehen. Du mutierst zum Silberdrachen.
-	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_09"); //(etwas lauter) Das ist kein Spaß! Bring mir Wasser, wenn ich dir helfen soll. Da vorn ist ein See.
-	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_10"); //Schon. Und dazwischen sind nur ungefähr zehn Feinde.
-	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_11"); //Tölpel! Du wirst bei Nacht an ihnen vorbei schleichen. Oder machst dich unsichtbar.
-	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_12"); //Das hat was. Wie viel Wasser brauchst du?
-	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_13"); //Idealerweise den halben See. Aber vier Eimer sollten reichen für den Anfang.
-	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_14"); //Und woher bekomme ich jetzt einen Eimer?
-	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_15"); //Am See gibt's sicher welche. Von den Verbrechern dort.
+	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_00"); //Another human being. What are you doing here? Back to your club, or you'll get to know me.
+	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_01"); //I don't belong to this lot. I came to find and kill Khorgor.
+	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_02"); //Khorgor is my enemy, too. Unfortunately, I've been powerless ever since he locked me in here.
+	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_03"); //Would you help me if I could free you?
+	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_04"); //Gladly. But it's not that simple.
+	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_05"); //Because?
+	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_06"); //I'm a water dragon. Water is my elixir of life, which I have had to do without for a long time now.
+	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_07"); //That's how I faint here, powerless and unable to fight. I gradually assume the structure of this environment.
+	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_08"); //You can see that. You're turning into a silver dragon.
+	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_09"); //(slightly louder) This is no fun! Bring me some water if you want me to help you. There's a lake up ahead.
+	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_10"); //It is. And there are only about ten enemies in between.
+	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_11"); //Booby! You'll sneak past them at night. Or make yourself invisible.
+	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_12"); //That's got something. How much water do you need?
+	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_13"); //Half the lake, ideally. But four buckets should do for starters.
+	AI_Output(hero, self, "Info_Mod_Drache_Hi_15_14"); //And where do I get a bucket now?
+	AI_Output(self, hero, "Info_Mod_Drache_Hi_22_15"); //There must be some at the lake. From the criminals there.
 
 	Log_CreateTopic	(TOPIC_MOD_JG_DRACHENDURST, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_DRACHENDURST, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_DRACHENDURST, "Ein leibhaftiger Drachen! Ein blauer. Er will mir helfen, wenn ich ihm Wasser verschaffe. 4 Eimer will er haben.");
+	B_LogEntry	(TOPIC_MOD_JG_DRACHENDURST, "A dragon in the flesh! A blue one. He's trying to help me get him some water. He wants four buckets.");
 };
 
 INSTANCE Info_Mod_Drache_Drachendurst01 (C_INFO)
@@ -45,7 +45,7 @@ INSTANCE Info_Mod_Drache_Drachendurst01 (C_INFO)
 	information	= Info_Mod_Drache_Drachendurst01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier. Ein Eimer voll Wasser.";
+	description	= "Here. A bucket of water.";
 };
 
 FUNC INT Info_Mod_Drache_Drachendurst01_Condition()
@@ -59,14 +59,14 @@ FUNC INT Info_Mod_Drache_Drachendurst01_Condition()
 
 FUNC VOID Info_Mod_Drache_Drachendurst01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst01_15_00"); //Hier. Ein Eimer voll Wasser.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst01_15_00"); //Here. A bucket of water.
 
 	B_GiveInvItems	(hero, self, ItMi_EimerW, 1);
 
 	Mdl_SetVisualBody		(self,	"Dragon_WATER02_Body",		DEFAULT,	DEFAULT,	"",			DEFAULT,  	DEFAULT,	-1);
 
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst01_22_01"); //Ahh. Köstlich! Mir geht's schon gleich besser. Aber ich brauche mehr.
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst01_15_02"); //Bin schon unterwegs.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst01_22_01"); //Ahh. Delicious! I'm already feeling better. But I need more.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst01_15_02"); //I'm on my way.
 
 	B_GiveInvItems	(self, hero, ItMi_Eimer, 1);
 };
@@ -79,7 +79,7 @@ INSTANCE Info_Mod_Drache_Drachendurst02 (C_INFO)
 	information	= Info_Mod_Drache_Drachendurst02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier. Die zweite Fuhre.";
+	description	= "Here. The second load.";
 };
 
 FUNC INT Info_Mod_Drache_Drachendurst02_Condition()
@@ -93,16 +93,16 @@ FUNC INT Info_Mod_Drache_Drachendurst02_Condition()
 
 FUNC VOID Info_Mod_Drache_Drachendurst02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst02_15_00"); //Hier. Die zweite Fuhre.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst02_15_00"); //Here. The second load.
 
 	B_GiveInvItems	(hero, self, ItMi_EimerW, 1);
 
 	Mdl_SetVisualBody		(self,	"Dragon_WATER03_Body",		DEFAULT,	DEFAULT,	"",			DEFAULT,  	DEFAULT,	-1);
 
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst02_22_01"); //Danke Mensch. Du rettest mir das Leben.
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst02_15_02"); //Und riskiere meins.
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst02_22_03"); //Ohne mich hast du eh keine Chance hier.
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst02_15_04"); //Mag sein, Bin unterwegs.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst02_22_01"); //Thanks, man. You're saving my life.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst02_15_02"); //And risk mine.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst02_22_03"); //You don't stand a chance without me anyway.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst02_15_04"); //Maybe I'm on my way.
 
 	B_GiveInvItems	(self, hero, ItMi_Eimer, 1);
 };
@@ -115,7 +115,7 @@ INSTANCE Info_Mod_Drache_Drachendurst03 (C_INFO)
 	information	= Info_Mod_Drache_Drachendurst03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So, die dritte Ladung. Wie geht's dir jetzt?";
+	description	= "Here's the third batch. How are you now?";
 };
 
 FUNC INT Info_Mod_Drache_Drachendurst03_Condition()
@@ -129,14 +129,14 @@ FUNC INT Info_Mod_Drache_Drachendurst03_Condition()
 
 FUNC VOID Info_Mod_Drache_Drachendurst03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst03_15_00"); //So, die dritte Ladung. Wie geht's dir jetzt?
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst03_15_00"); //Here's the third batch. How are you now?
 
 	B_GiveInvItems	(hero, self, ItMi_EimerW, 1);
 
 	Mdl_SetVisualBody		(self,	"Dragon_WATER04_Body",		DEFAULT,	DEFAULT,	"",			DEFAULT,  	DEFAULT,	-1);
 
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst03_22_01"); //Fühl mich so gut, wie lange nicht mehr. Und bin auch wieder bei Kräften.
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst03_22_02"); //Jetzt noch einen Eimer und ich reiß' das Gitter hier nieder.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst03_22_01"); //Feel better than I've felt in a long time. And I'm back to my strength.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst03_22_02"); //Now, one more bucket and I'll tear the grate down here.
 
 	B_GiveInvItems	(self, hero, ItMi_Eimer, 1);
 };
@@ -149,7 +149,7 @@ INSTANCE Info_Mod_Drache_Drachendurst04 (C_INFO)
 	information	= Info_Mod_Drache_Drachendurst04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier. Aller guten Dinge ist vier.";
+	description	= "Here. All good things come in four.";
 };
 
 FUNC INT Info_Mod_Drache_Drachendurst04_Condition()
@@ -163,32 +163,32 @@ FUNC INT Info_Mod_Drache_Drachendurst04_Condition()
 
 FUNC VOID Info_Mod_Drache_Drachendurst04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_00"); //Hier. Aller guten Dinge ist vier.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_00"); //Here. All good things come in four.
 
 	B_GiveInvItems	(hero, self, ItMi_EimerW, 1);
 
 	Mdl_SetVisualBody		(self,	"Dragon_WATER_Body",		DEFAULT,	DEFAULT,	"",			DEFAULT,  	DEFAULT,	-1);
 
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_01"); //Wohl wahr! Rüber mit den Eimern.
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_02"); //So. Und jetzt? Das Gitter?
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_03"); //War nicht ernst gemeint. Das schaff ich natürlich nicht.
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_04"); //Na ja. Wenigstens hast du deine blaue Farbe wieder. Und jetzt?
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_05"); //Ehrlich? Ich bin wieder blau?
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_06"); //Wie ein Matrose, der seine letzte Heuer versoffen hat.
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_07"); //Aah! Hier bin ich Drache, hier darf ich's sein!
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_08"); //Zur Sache, Lindwurm. Wie bekomme ich dich da raus?
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_09"); //Also höre: Drüben im Tempel haust so eine seltsame schwarze Gestalt. Mit glühenden Augen.
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_10"); //(aufgeregt) Der Suchende! Endlich hab ich ihn aufgespürt.
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_11"); //Du kennst diese Gestalt?
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_12"); //Der ist mir schon zwei Mal entwischt. Aber diesmal krieg ich ihn!
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_13"); //Nun gut. Aber vergiss mein Gatter nicht, du wirst mich brauchen bei der Meute im Wald.
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_14"); //Also weiter: Vor einiger Zeit konnte ich ein Gespräch belauschen zwischen dem Dunklen und einem der Vasallen.
-	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_15"); //Da hab ich erfahren, dass der Öffnungsmechanismus in der Bibliothek zu finden ist. Allerdings verborgen, was immer das heißt.
-	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_16"); //Hm. Ein Hebel vielleicht. Oder eine Winde. Nee ... eine Winde kann man nicht verstecken. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_01"); //True! Get the buckets over there.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_02"); //There. And now what? The grid?
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_03"); //I wasn't serious. I can't do that, of course.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_04"); //Well, well. At least you're getting your blue back. And now what?
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_05"); //Honestly? I'm blue again?
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_06"); //Like a sailor who's drunk off his last paycheck.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_07"); //Aah! Here I am Dragon, here I may be!
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_08"); //To the point, Lindwurm. How do I get you out of there?
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_09"); //So listen, over there in the temple hangs such a strange black figure. With glowing eyes.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_10"); //The Seeker! I finally tracked him down.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_11"); //You know this figure?
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_12"); //He's escaped twice before. But I'll get him this time!
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_13"); //Very well. But don't forget my creel, you'll need me with the pack in the woods.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_14"); //So further on: Some time ago I was able to eavesdrop on a conversation between the dark and one of the minions.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachendurst04_22_15"); //That's when I found out the opening mechanism was in the library. Hidden, however, whatever that means.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachendurst04_15_16"); //Hm. One lever maybe. Or a winch. Nah... You can't hide a winch. Let's see....
 
 	Log_CreateTopic	(TOPIC_MOD_JG_SUCHENDER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_SUCHENDER, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_JG_DRACHENDURST, TOPIC_MOD_JG_SUCHENDER, "Der Drache war mit vier Eimern Wasser zufrieden. Mal sehen, wie's weitergeht.", "Der Wasserdrache erzählt von einer Vorrichtung, die das Gatter öffnet. In der Tempelbibliothek soll der versteckt sein. Und der Suchende wahrscheinlich auch. Ich muss auf seine Eisattacken achten. Hab ich noch 'nen Magieschutz im Beutel? Und besser auf Nahkampf gehen. Vielleicht ist eine List hilfreich ...");
+	B_LogEntry_More	(TOPIC_MOD_JG_DRACHENDURST, TOPIC_MOD_JG_SUCHENDER, "The dragon was satisfied with four buckets of water. Let's see what happens next.", "The water dragon tells of a device that opens the gate. It's supposed to be hidden in the temple library. Probably the seeker, too. I have to watch out for his ice attacks. Do I still have magic protection in my bag? And better get melee combat. Maybe a ruse is helpful...");
 	B_SetTopicStatus	(TOPIC_MOD_JG_DRACHENDURST, LOG_SUCCESS);
 
 	Wld_InsertNpc	(Mod_7543_DMT_Suchender_DT, "DT_039");
@@ -215,14 +215,14 @@ FUNC INT Info_Mod_Drache_Drachental_Condition()
 
 FUNC VOID Info_Mod_Drache_Drachental_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Drache_Drachental_22_00"); //He! Wo steckst du? Was ist mit dem Gatter?
-	AI_Output(hero, self, "Info_Mod_Drache_Drachental_15_01"); //Geduld! Hatte noch anderes zu tun. Der Raum des Schwarzen sagst du?
-	AI_Output(self, hero, "Info_Mod_Drache_Drachental_22_02"); //Ja. Irgendwo da soll der Hebel sein.
-	AI_Output(hero, self, "Info_Mod_Drache_Drachental_15_03"); //Mal sehen.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachental_22_00"); //Hey! Where the hell are you? What about the gate?
+	AI_Output(hero, self, "Info_Mod_Drache_Drachental_15_01"); //Patience! Had other things to do. The black room, you say?
+	AI_Output(self, hero, "Info_Mod_Drache_Drachental_22_02"); //Yeah. Somewhere there's supposed to be the lever.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachental_15_03"); //Let's see now.
 
 	Log_CreateTopic	(TOPIC_MOD_JG_VASALLEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_VASALLEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_VASALLEN, "Ich sollte nun den Drachen befreien und dann die Wachen hier töten.");
+	B_LogEntry	(TOPIC_MOD_JG_VASALLEN, "I was supposed to free the dragon and then kill the guards here.");
 };
 
 INSTANCE Info_Mod_Drache_Drachental2 (C_INFO)
@@ -255,10 +255,10 @@ FUNC INT Info_Mod_Drache_Drachental2_Condition()
 
 FUNC VOID Info_Mod_Drache_Drachental2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Drache_Drachental2_22_00"); //Duuurst! Ich brauche dringend Wasser! Ich bin am See.
-	AI_Output(hero, self, "Info_Mod_Drache_Drachental2_15_01"); //Ich schau mich mal um.
+	AI_Output(self, hero, "Info_Mod_Drache_Drachental2_22_00"); //Duuurst! I need water urgently! I'm by the lake.
+	AI_Output(hero, self, "Info_Mod_Drache_Drachental2_15_01"); //I'll take a look around.
 
-	B_LogEntry_More	(TOPIC_MOD_JG_VASALLEN, TOPIC_MOD_JG_DRACHENTAL, "Erstaunlich, was Wasser für Kraft hat. Den Rücken sollte ich nun freihaben.", "Erstaunlich, was Wasser für Kraft hat. Den Rücken sollte ich nun freihaben. Ich gehe am besten noch mal in die Bibliothek. Vielleicht habe ich vorhin was übersehen ...");
+	B_LogEntry_More	(TOPIC_MOD_JG_VASALLEN, TOPIC_MOD_JG_DRACHENTAL, "It's amazing what power water has. I should have my back now.", "It's amazing what power water has. I should have my back now. I'd better go back to the library. Maybe I missed something earlier today....");
 	B_SetTopicStatus	(TOPIC_MOD_JG_VASALLEN, LOG_SUCCESS);
 
 	B_GivePlayerXP	(250);
@@ -278,7 +278,7 @@ INSTANCE Info_Mod_Drache_Khorgor (C_INFO)
 	information	= Info_Mod_Drache_Khorgor_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So, mein Auftrag hier ist erledigt.";
+	description	= "So, my assignment here is done.";
 };
 
 FUNC INT Info_Mod_Drache_Khorgor_Condition()
@@ -291,12 +291,12 @@ FUNC INT Info_Mod_Drache_Khorgor_Condition()
 
 FUNC VOID Info_Mod_Drache_Khorgor_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drache_Khorgor_15_00"); //So, mein Auftrag hier ist erledigt. Ich muss zu meinen Leuten zurück. Wenn ich nur wüsste wie.
-	AI_Output(self, hero, "Info_Mod_Drache_Khorgor_22_01"); //Da drin muss irgendwo ein Transporter sein. Das Fußvolk ist da immer raus und rein ...
-	AI_Output(hero, self, "Info_Mod_Drache_Khorgor_15_02"); //Da muß ich doch mal schauen. Und was wirst du machen?
-	AI_Output(self, hero, "Info_Mod_Drache_Khorgor_22_03"); //Ich sauf den See leer unn mache mich auf die Suche nach meinen Brüdern.
-	AI_Output(hero, self, "Info_Mod_Drache_Khorgor_15_04"); //Dann wünsch ich dir viel Erfolg.
-	AI_Output(self, hero, "Info_Mod_Drache_Khorgor_22_05"); //Dir auch. Und hier, ein kleines Geschenk.
+	AI_Output(hero, self, "Info_Mod_Drache_Khorgor_15_00"); //So, my assignment here is done. I have to get back to my people. I wish I knew how.
+	AI_Output(self, hero, "Info_Mod_Drache_Khorgor_22_01"); //There's got to be a van in there somewhere. The footmen are always out and in...
+	AI_Output(hero, self, "Info_Mod_Drache_Khorgor_15_02"); //I have to take a look. And what are you going to do?
+	AI_Output(self, hero, "Info_Mod_Drache_Khorgor_22_03"); //I drink the lake empty unnecessarily make me look for my brothers.
+	AI_Output(hero, self, "Info_Mod_Drache_Khorgor_15_04"); //I wish you every success.
+	AI_Output(self, hero, "Info_Mod_Drache_Khorgor_22_05"); //You too. And here, a little present.
 
 	B_GiveInvItems	(self, hero, ItMi_Aquamarine, 10);
 };

@@ -15,7 +15,7 @@ FUNC VOID B_FindItem_BuecherRegal ()
 	{
 		CreateInvItems	(hero, ItWr_Paper, 1);
 
-		Print	("1 Blatt Papier gefunden");
+		Print	("1 sheet of paper found");
 
 		B_Say_Overlay	(hero, NULL, "$BUECHERREGALFINDPAPER");
 	}
@@ -23,7 +23,7 @@ FUNC VOID B_FindItem_BuecherRegal ()
 	{
 		CreateInvItems	(hero, ItWr_Paper, 1);
 
-		Print	("1 Blatt Papier gefunden");
+		Print	("1 sheet of paper found");
 
 		B_Say_Overlay	(hero, NULL, "$BUECHERREGALFINDPAPER");
 	}
@@ -147,7 +147,7 @@ FUNC VOID B_BUECHERREGAL_07_S1 ()
 	{
 		BuecherRegal_07 = 1;
 
-		Print ("Alte Notiz gefunden");
+		Print ("Old note found");
 
 		CreateInvItems	(hero, ItWr_ErolNotiz4, 1);
 	}

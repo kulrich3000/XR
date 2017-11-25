@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Lagerhauswache2_Fresssack_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache2_Fresssack_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache2_Fresssack_12_00"); //He, reinbringen sollst du die Sachen, nicht hinaus. Blödes Arbeiterpack.
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache2_Fresssack_12_00"); //Hey, you're supposed to bring the stuff in, not get it out. Stupid working class bunch.
 
 	Npc_RemoveInvItems	(hero, ItMi_Fresssack, 1);
 
@@ -46,7 +46,7 @@ FUNC INT Info_Mod_Lagerhauswache2_Schichtende_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache2_Schichtende_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache2_Schichtende_12_00"); //(ruft zum anderen) He. In paar Minuten ist endlich Feierabend. Ich sauf heut mindestens 10 Humpen weg.
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache2_Schichtende_12_00"); //Hey. Hey. It's closing time in a few minutes. I'm going to drink at least 10 pints today.
 
 	AI_StopProcessInfos	(self);
 };
@@ -75,7 +75,7 @@ FUNC INT Info_Mod_Lagerhauswache2_Schichtende2_Condition()
 
 FUNC VOID Info_Mod_Lagerhauswache2_Schichtende2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lagerhauswache2_Schichtende2_12_00"); //Los, alles raus. Morgen dürft ihr weiterschuften.
+	AI_Output(self, hero, "Info_Mod_Lagerhauswache2_Schichtende2_12_00"); //Come on, get out of here. Tomorrow you can work hard.
 
 	Npc_SetRefuseTalk (self, 30);
 

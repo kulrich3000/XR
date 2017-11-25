@@ -1,7 +1,7 @@
 INSTANCE Mod_115_NONE_Eremit_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Eremit";
+	name 		= "Hermit";
 	guild 		= GIL_OUT;
 	id 			= 115;
 	voice 		= 4;

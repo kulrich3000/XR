@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Skip_DI_Hi_Condition()
 
 FUNC VOID Info_Mod_Skip_DI_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skip_DI_Hi_08_00"); //Komm mit, Greg will das du sofort zu ihm kommst.
+	AI_Output(self, hero, "Info_Mod_Skip_DI_Hi_08_00"); //Come on, Greg wants you to come to him right away.
 
 	Info_ClearChoices	(Info_Mod_Skip_DI_Hi);
 
-	Info_AddChoice	(Info_Mod_Skip_DI_Hi, "Ok.", Info_Mod_Skip_DI_Hi_Ok);
+	Info_AddChoice	(Info_Mod_Skip_DI_Hi, "Okay.", Info_Mod_Skip_DI_Hi_Ok);
 };
 
 FUNC VOID Info_Mod_Skip_DI_Hi_Ok ()
@@ -33,7 +33,7 @@ FUNC VOID Info_Mod_Skip_DI_Hi_Ok ()
 
 	Npc_ExchangeRoutine	(self, "START");
 
-	PrintScreen ("Eine ereignislose Überfahrt später", -1, YPOS_LevelUp, FONT_Screen, 2);
+	PrintScreen ("An uneventful crossing later", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 	Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 };
@@ -46,7 +46,7 @@ INSTANCE Info_Mod_Skip_DI_Brunhild (C_INFO)
 	information	= Info_Mod_Skip_DI_Brunhild_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du sollst diese Frau aufs Schiff bringen.";
+	description	= "I want you to take this woman to the ship.";
 };
 
 FUNC INT Info_Mod_Skip_DI_Brunhild_Condition()
@@ -61,9 +61,9 @@ FUNC INT Info_Mod_Skip_DI_Brunhild_Condition()
 
 FUNC VOID Info_Mod_Skip_DI_Brunhild_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_DI_Brunhild_15_00"); //Du sollst diese Frau aufs Schiff bringen. Sie soll Samuel in der Küche ablösen.
-	AI_Output(self, hero, "Info_Mod_Skip_DI_Brunhild_08_01"); //Wer ist diese ...
-	AI_Output(hero, self, "Info_Mod_Skip_DI_Brunhild_15_02"); //Das wird sie dir schon selbst erzählen.
+	AI_Output(hero, self, "Info_Mod_Skip_DI_Brunhild_15_00"); //I want you to take this woman to the ship. Tell her to replace Samuel in the kitchen.
+	AI_Output(self, hero, "Info_Mod_Skip_DI_Brunhild_08_01"); //Who is this...?
+	AI_Output(hero, self, "Info_Mod_Skip_DI_Brunhild_15_02"); //She'll tell you herself.
 
 	AI_StopProcessInfos	(self);
 
@@ -72,7 +72,7 @@ FUNC VOID Info_Mod_Skip_DI_Brunhild_Info()
 	AI_Teleport	(Mod_7642_OUT_Brunhild_DI, "WP_DI_BRANDON_SLEEP");
 	B_StartOtherRoutine	(Mod_1549_PIR_Malcom_DI, "START");
 
-	PrintScreen ("Einige Zeit später", -1, YPOS_LevelUp, FONT_Screen, 2);
+	PrintScreen ("Some time later", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 	Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 };
@@ -99,7 +99,7 @@ FUNC INT Info_Mod_Skip_DI_Brunhild2_Condition()
 
 FUNC VOID Info_Mod_Skip_DI_Brunhild2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skip_DI_Brunhild2_08_01"); //Gut, dass du kommst. Samuel will dich sprechen. Er ist in seiner Braustube.
+	AI_Output(self, hero, "Info_Mod_Skip_DI_Brunhild2_08_01"); //I'm glad you came. Samuel wants to see you. He's in his bridal parlor.
 };
 
 INSTANCE Info_Mod_Skip_DI_ZumSchiff (C_INFO)
@@ -110,7 +110,7 @@ INSTANCE Info_Mod_Skip_DI_ZumSchiff (C_INFO)
 	information	= Info_Mod_Skip_DI_ZumSchiff_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mich zum Schiff.";
+	description	= "Take me to the ship.";
 };
 
 FUNC INT Info_Mod_Skip_DI_ZumSchiff_Condition()
@@ -132,7 +132,7 @@ FUNC VOID Info_Mod_Skip_DI_ZumSchiff_Info()
 
 	Npc_ExchangeRoutine	(self, "UNTERWEGS");
 
-	PrintScreen ("Eine ereignislose Überfahrt später", -1, YPOS_LevelUp, FONT_Screen, 2);
+	PrintScreen ("An uneventful crossing later", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 	Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 };
@@ -145,7 +145,7 @@ INSTANCE Info_Mod_Skip_DI_ZumSchiff_02 (C_INFO)
 	information	= Info_Mod_Skip_DI_ZumSchiff_02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bring mich zum Schiff.";
+	description	= "Take me to the ship.";
 };
 
 FUNC INT Info_Mod_Skip_DI_ZumSchiff_02_Condition()
@@ -179,7 +179,7 @@ INSTANCE Info_Mod_Skip_DI_ZumStrand (C_INFO)
 	information	= Info_Mod_Skip_DI_ZumStrand_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mich zum Strand.";
+	description	= "Take me to the beach.";
 };
 
 FUNC INT Info_Mod_Skip_DI_ZumStrand_Condition()
@@ -201,7 +201,7 @@ FUNC VOID Info_Mod_Skip_DI_ZumStrand_Info()
 
 	Npc_ExchangeRoutine	(self, "START");
 
-	PrintScreen ("Eine ereignislose Überfahrt später", -1, YPOS_LevelUp, FONT_Screen, 2);
+	PrintScreen ("An uneventful crossing later", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 	Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 	

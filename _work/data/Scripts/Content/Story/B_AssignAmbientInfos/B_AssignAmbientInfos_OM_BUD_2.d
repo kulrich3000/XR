@@ -14,7 +14,7 @@ INSTANCE Info_OM_BUD_2_EXIT(C_INFO)
 	condition	= Info_OM_BUD_2_EXIT_Condition;
 	information	= Info_OM_BUD_2_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_OM_BUD_2_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_OM_BUD_2_Mine (C_INFO) // E1
 	condition	= Info_OM_BUD_2_Mine_Condition;
 	information	= Info_OM_BUD_2_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir was von der Mine";
+	description = "Tell me about the mine";
 };                       
 
 FUNC INT Info_OM_BUD_2_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_OM_BUD_2_Mine_Condition()
 
 FUNC VOID Info_OM_BUD_2_Mine_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_2_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_OM_BUD_2_Mine_01_01"); //Es gibt einen ganzen Haufen Höhlen, in denen auch noch Erz zu holen ist. Aber die Crawler, machen die Arbeit darin unmöglich.
-	AI_Output(self,other,"Info_OM_BUD_2_Mine_01_02"); //Zu viele Angriffe, zu viele Verluste.
+	AI_Output(other,self,"Info_OM_BUD_2_Mine_15_00"); //Tell me about the mine
+	AI_Output(self,other,"Info_OM_BUD_2_Mine_01_01"); //There's a whole bunch of caves where you can find ore. But the crawlers make it impossible to work in it.
+	AI_Output(self,other,"Info_OM_BUD_2_Mine_01_02"); //Too many attacks, too many casualties.
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_OM_BUD_2_WichtigePersonen(C_INFO)
 	condition	= Info_OM_BUD_2_WichtigePersonen_Condition;
 	information	= Info_OM_BUD_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu Sagen?";
+	description = "Who's got a say in this?";
 };                       
 
 FUNC INT Info_OM_BUD_2_WichtigePersonen_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_OM_BUD_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_OM_BUD_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_2_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_OM_BUD_2_WichtigePersonen_01_01"); //Viper ist der Schmelzer. Er kennt sich mit dem Ofen aus. Er hat einen Körper aus Stahl. Ihm macht die Hitze nichts aus. Den ganzen Tag schmilzt er das Erz ein.
+	AI_Output(other,self,"Info_OM_BUD_2_WichtigePersonen_15_00"); //Who's got something to say?
+	AI_Output(self,other,"Info_OM_BUD_2_WichtigePersonen_01_01"); //Viper's the melter. He knows about the oven. He has a steel body. He doesn't mind the heat. It melts the ore all day long.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_OM_BUD_2_DieLage(C_INFO) // E1
 	condition	= Info_OM_BUD_2_DieLage_Condition;
 	information	= Info_OM_BUD_2_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_OM_BUD_2_DieLage_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_OM_BUD_2_DieLage_Condition()
 
 FUNC VOID Info_OM_BUD_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_2_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_OM_BUD_2_DieLage_01_01"); //Ich muss arbeiten. Wenn die Wachen sehen, dass ich rede, dann kürzen sie meine Ration oder töten mich gleich.
+	AI_Output(other,self,"Info_OM_BUD_2_DieLage_15_00"); //How's it looking?
+	AI_Output(self,other,"Info_OM_BUD_2_DieLage_01_01"); //I have to work. When the guards see that I'm talking, they cut my ration or they'll kill me.
 };
 
 INSTANCE Info_Mod_OM_BUD_2_Pickpocket (C_INFO)

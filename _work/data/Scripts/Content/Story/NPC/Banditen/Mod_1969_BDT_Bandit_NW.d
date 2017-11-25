@@ -1,7 +1,7 @@
 INSTANCE Mod_1969_BDT_Bandit_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Räuber";
+	name 		= "bandit";
 	guild 		= GIL_out;
 	id 			= 1969;
 	voice 		= 8;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Patrick_Hi (C_INFO)
 	information	= Info_Mod_Patrick_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, wie sieht’s aus?";
+	description	= "Hello, how are you?";
 };
 
 FUNC INT Info_Mod_Patrick_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Patrick_Hi_Condition()
 
 FUNC VOID Info_Mod_Patrick_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Patrick_Hi_15_00"); //Hallo, wie sieht’s aus?
-	AI_Output(self, hero, "Info_Mod_Patrick_Hi_07_01"); //Naja, ist gar nicht so einfach, aus den Jungs echte Kämpfer zu machen.
+	AI_Output(hero, self, "Info_Mod_Patrick_Hi_15_00"); //Hello, how are you?
+	AI_Output(self, hero, "Info_Mod_Patrick_Hi_07_01"); //Well, it's not that easy to turn the boys into real fighters.
 };
 
 INSTANCE Info_Mod_Patrick_Training (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Patrick_Training (C_INFO)
 	information	= Info_Mod_Patrick_Training_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich irgendwie helfen?";
+	description	= "Is there anything I can do to help?";
 };
 
 FUNC INT Info_Mod_Patrick_Training_Condition()
@@ -42,13 +42,13 @@ FUNC INT Info_Mod_Patrick_Training_Condition()
 
 FUNC VOID Info_Mod_Patrick_Training_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Patrick_Training_15_00"); //Kann ich irgendwie helfen?
-	AI_Output(self, hero, "Info_Mod_Patrick_Training_07_01"); //Ja, das könntest du in der Tat. Einige von den Jungs haben sich ziemlich lange vor der Training gedrückt.
-	AI_Output(self, hero, "Info_Mod_Patrick_Training_07_02"); //Da wären Shrike, Rath und Blade. Sag ihnen, dass sie mal ihre lahmen Knochen zu mir bewegen sollen.
+	AI_Output(hero, self, "Info_Mod_Patrick_Training_15_00"); //Is there anything I can do to help?
+	AI_Output(self, hero, "Info_Mod_Patrick_Training_07_01"); //Yes, you could, indeed. Some of the boys have been avoiding practice for quite a long time.
+	AI_Output(self, hero, "Info_Mod_Patrick_Training_07_02"); //There's Shrike, Rath and Blade. Tell them to move their lame bones to me sometime.
 
 	Log_CreateTopic	(TOPIC_MOD_SLD_PATRICK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SLD_PATRICK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Patrick meinte, ich soll Shrike, Rath und Blade zum Training holen.");
+	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Patrick told me to get Shrike, Rath and Blade to work out.");
 };
 
 INSTANCE Info_Mod_Patrick_SindAlleDa (C_INFO)
@@ -74,11 +74,11 @@ FUNC INT Info_Mod_Patrick_SindAlleDa_Condition()
 
 FUNC VOID Info_Mod_Patrick_SindAlleDa_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Patrick_SindAlleDa_07_00"); //Ausgezeichnet, Rath und Blade hast du schon mal dazu bewegt zum Training zu erscheinen. Jetzt fehlt nur noch Shrike.
-	AI_Output(hero, self, "Info_Mod_Patrick_SindAlleDa_15_01"); //Was, aber ich habe ihn doch losgeschickt ...
-	AI_Output(self, hero, "Info_Mod_Patrick_SindAlleDa_07_02"); //Achso, nun, bei ihm dauert das meistens etwas länger, da er noch häufig einen Umweg in die Kneipe macht. Also, geh hin und mach ihm Beine.
+	AI_Output(self, hero, "Info_Mod_Patrick_SindAlleDa_07_00"); //Excellent, Rath and Blade you have already moved to appear for training. All we need now is Shrike.
+	AI_Output(hero, self, "Info_Mod_Patrick_SindAlleDa_15_01"); //What, but I sent him....
+	AI_Output(self, hero, "Info_Mod_Patrick_SindAlleDa_07_02"); //Well, well, it usually takes a little longer with him, because he often takes a detour to the pub. Well, go and give him legs.
 
-	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Na toll, jetzt darf ich Shrike aus der Kneipe zum Training beordern.");
+	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Great, now I can get Shrike out of the pub to practice.");
 };
 
 INSTANCE Info_Mod_Patrick_ShrikeNichtInKneipe (C_INFO)
@@ -89,7 +89,7 @@ INSTANCE Info_Mod_Patrick_ShrikeNichtInKneipe (C_INFO)
 	information	= Info_Mod_Patrick_ShrikeNichtInKneipe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Shrike war nicht in der Kneipe.";
+	description	= "Shrike wasn't in the pub.";
 };
 
 FUNC INT Info_Mod_Patrick_ShrikeNichtInKneipe_Condition()
@@ -104,10 +104,10 @@ FUNC INT Info_Mod_Patrick_ShrikeNichtInKneipe_Condition()
 
 FUNC VOID Info_Mod_Patrick_ShrikeNichtInKneipe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Patrick_ShrikeNichtInKneipe_15_00"); //Shrike war nicht in der Kneipe.
-	AI_Output(self, hero, "Info_Mod_Patrick_ShrikeNichtInKneipe_07_01"); //Hmm, achso. Ähhm, dann würde ich an deiner Stelle mal vor dem Lager vorbeischauen.
+	AI_Output(hero, self, "Info_Mod_Patrick_ShrikeNichtInKneipe_15_00"); //Shrike wasn't in the pub.
+	AI_Output(self, hero, "Info_Mod_Patrick_ShrikeNichtInKneipe_07_01"); //Hmm, well. Um, then I'd stop by the warehouse if I were you.
 
-	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Patrick meinte, dass Shrike vor dem Lager sein könnte.");
+	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Patrick said that Shrike could be outside the camp.");
 };
 
 INSTANCE Info_Mod_Patrick_ShrikeDa (C_INFO)
@@ -130,10 +130,10 @@ FUNC INT Info_Mod_Patrick_ShrikeDa_Condition()
 
 FUNC VOID Info_Mod_Patrick_ShrikeDa_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Patrick_ShrikeDa_07_00"); //Hey, du hast es tatsächlich geschafft auch noch Shrike zum Training zu bewegen. Ich bin beeindruckt.
-	AI_Output(self, hero, "Info_Mod_Patrick_ShrikeDa_07_01"); //Hier hast du etwas Gold und Erz. Lee bekommt nur das Beste von mir zu hören.
+	AI_Output(self, hero, "Info_Mod_Patrick_ShrikeDa_07_00"); //Hey, you actually managed to get Shrike to practice, too. I'm impressed.
+	AI_Output(self, hero, "Info_Mod_Patrick_ShrikeDa_07_01"); //Here's some gold and ore. Lee only gets to hear the best of me.
 
-	B_ShowGivenThings	("300 Gold und 4 Erz erhalten");
+	B_ShowGivenThings	("300 gold and 4 ore preserved");
 
 	CreateInvItems	(hero, ItMi_Gold, 300);
 	CreateInvItems	(hero, ItMi_Nugget, 4);

@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Peter_Hi_Condition()
 
 FUNC VOID Info_Mod_Peter_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Peter_Hi_14_00"); //Willkommen in meinem Gasthaus, dem besten und einzigen in Khorata.
-	AI_Output(self, hero, "Info_Mod_Peter_Hi_14_01"); //Bier und Essen kannst du hier bekommen.
+	AI_Output(self, hero, "Info_Mod_Peter_Hi_14_00"); //Welcome to my inn, the best and only one in Khorata.
+	AI_Output(self, hero, "Info_Mod_Peter_Hi_14_01"); //Beer and food you can get here.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Peter verkauft Lebensmittel");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Peter sells food");
 };
 
 INSTANCE Info_Mod_Peter_Elvira (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Peter_Elvira (C_INFO)
 	information	= Info_Mod_Peter_Elvira_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Kannst du mir vielleicht was über Elvira erzählen?";
+	description 	= "Can you tell me anything about Elvira?";
 };                       
 
 FUNC INT Info_Mod_Peter_Elvira_Condition()
@@ -45,18 +45,18 @@ FUNC INT Info_Mod_Peter_Elvira_Condition()
 
 FUNC VOID Info_Mod_Peter_Elvira_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Peter_Elvira_15_00"); //Kannst du mir vielleicht was über Elvira erzählen?
-	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_01"); //Ahh, die Feuermagierin.
-	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_02"); //Ja, hähä, Hier haben schon viele ein Auge auf sie geworfen ... aber glaub mir, bei der hast du keine Chance ... es sei denn ... ne, vergiss es ...
-	AI_Output(hero, self, "Info_Mod_Peter_Elvira_15_03"); //Ja, sag schon.
+	AI_Output(hero, self, "Info_Mod_Peter_Elvira_15_00"); //Can you tell me anything about Elvira?
+	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_01"); //Ahh, the fire magician.
+	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_02"); //Yeah, hey, there's a lot of people here who have been keeping an eye on her... but believe me, you don't stand a chance with her... unless... ne, forget it...
+	AI_Output(hero, self, "Info_Mod_Peter_Elvira_15_03"); //Yeah, tell me.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 40);
 
-	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_04"); //Also, einmal war die hier um zu predigen.
-	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_05"); //Mitten in der Kneipe, zwischen den ganzen Trinkern hier, kannst du dir das Vorstellen, die ganze Testosteron geschwängerte Meute.
-	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_06"); //Ich hab ihr ein Glas von meinem besten Klosterwein angeboten und sie ... lehnt einfach ab und fragt stattdessen, ob ich den auch alkoholfrei hätte.
-	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_07"); //Nun, ich möchte ja nicht tratschen, aber das mit dem Frauen und Akohol ... wer weiß.
-	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_08"); //Aber hey, ich hab nichts gesagt.
+	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_04"); //Well, once she was here to preach.
+	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_05"); //In the middle of the pub, between all the drinkers here, you can imagine the whole testosterone impregnated pack.
+	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_06"); //I offered her a glass of my best monastery wine and she.... refuses and instead asks if I would have it non-alcoholic.
+	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_07"); //Well, I don't want to gossip, but the one about women and alcohol... who knows.
+	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_08"); //But, hey, I didn't say anything.
 };
 
 INSTANCE Info_Mod_Peter_Freudenspender (C_INFO)
@@ -67,7 +67,7 @@ INSTANCE Info_Mod_Peter_Freudenspender (C_INFO)
 	information	= Info_Mod_Peter_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Kannst du Freudenspender gebrauchen?";
+	description 	= "Can you use glee dispensers?";
 };                       
 
 FUNC INT Info_Mod_Peter_Freudenspender_Condition()
@@ -82,8 +82,8 @@ FUNC INT Info_Mod_Peter_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Peter_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Peter_Freudenspender_15_00"); //Kannst du Freudenspender gebrauchen?
-	AI_Output(self, hero, "Info_Mod_Peter_Freudenspender_14_01"); //Ich verkauf das Zeug selbst, Mann. Wenn du was zu verschenken hast, dann her damit. Sonst nicht.
+	AI_Output(hero, self, "Info_Mod_Peter_Freudenspender_15_00"); //Can you use glee dispensers?
+	AI_Output(self, hero, "Info_Mod_Peter_Freudenspender_14_01"); //I'm selling the stuff myself, man. If you have something to give, give it to me. Otherwise not.
 };
 
 INSTANCE Info_Mod_Peter_Trade (C_INFO)

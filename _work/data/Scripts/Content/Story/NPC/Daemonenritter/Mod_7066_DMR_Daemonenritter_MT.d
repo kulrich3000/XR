@@ -1,7 +1,7 @@
 INSTANCE Mod_7066_DMR_Daemonenritter_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenritter";
+	name 		= "demon knights";
 	guild 		= GIL_OUT;
 	id 			= 7066;
 	voice 		= 12;

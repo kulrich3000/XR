@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Gobbo_Black(C_NPC)			
 {
 	//----- Monster ----
-	name							=	"schwarzer Goblin";
+	name							=	"Black Goblin";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_BLACK;
 	level							=	8;

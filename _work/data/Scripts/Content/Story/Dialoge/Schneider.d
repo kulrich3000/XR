@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Schneider_Hi_Condition()
 
 FUNC VOID Info_Mod_Schneider_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Schneider_Hi_31_00"); //Tut mir Leid, ich bin gerade extrem beschäftigt.
-	AI_Output(self, hero, "Info_Mod_Schneider_Hi_31_01"); //(murmelt) Soll ich den Schnitt bei der Hüfte ansetzen? Was sagt das Diktat der Mode? Taillenschnitt, oder?
+	AI_Output(self, hero, "Info_Mod_Schneider_Hi_31_00"); //Sorry, I'm extremely busy right now.
+	AI_Output(self, hero, "Info_Mod_Schneider_Hi_31_01"); //Should I make the incision at the hip? What does the dictation of fashion mean? Waist cut, right?
 
 	AI_StopProcessInfos	(self);
 };
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Schneider_Gritta (C_INFO)
 	information	= Info_Mod_Schneider_Gritta_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Guten Tag.";
+	description	= "Good day.";
 };
 
 FUNC INT Info_Mod_Schneider_Gritta_Condition()
@@ -46,15 +46,15 @@ FUNC INT Info_Mod_Schneider_Gritta_Condition()
 
 FUNC VOID Info_Mod_Schneider_Gritta_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Schneider_Gritta_15_00"); //Guten Tag. Ich sehe die Schere auf deinem Schild. Du bist der Schneider?
-	AI_Output(self, hero, "Info_Mod_Schneider_Gritta_31_01"); //Wohl wahr. Mein Name ist Versage. Der beste Schneider im Lande.
-	AI_Output(hero, self, "Info_Mod_Schneider_Gritta_15_02"); //Das trifft sich gut. Ich suche ein Kleid für eine Dame mit gehobenen Ansprüchen.
-	AI_Output(self, hero, "Info_Mod_Schneider_Gritta_31_03"); //Verstehe. Etwas Extravagantes. Hm. Ich habe hier einen passenden Entwurf.
-	AI_Output(self, hero, "Info_Mod_Schneider_Gritta_31_04"); //Aber das Kleid ist nicht fertig, denn ich fürchte, unsere Frauen hier in Khorata haben dafür keinen Bedarf.
-	AI_Output(hero, self, "Info_Mod_Schneider_Gritta_15_05"); //Und bis wann ...
-	AI_Output(self, hero, "Info_Mod_Schneider_Gritta_31_06"); //Komm morgen wieder. Dann sollte es fertig sein.
+	AI_Output(hero, self, "Info_Mod_Schneider_Gritta_15_00"); //Good day. I see the scissors on your shield. You're the tailor?
+	AI_Output(self, hero, "Info_Mod_Schneider_Gritta_31_01"); //True enough. My name is Versage. The best tailor in the country.
+	AI_Output(hero, self, "Info_Mod_Schneider_Gritta_15_02"); //That's a good thing. I'm looking for a dress for a sophisticated lady.
+	AI_Output(self, hero, "Info_Mod_Schneider_Gritta_31_03"); //I see. Something extravagant. Hm. I have a suitable design here.
+	AI_Output(self, hero, "Info_Mod_Schneider_Gritta_31_04"); //But the dress isn't finished, because I'm afraid our women here in Khorata don't need it.
+	AI_Output(hero, self, "Info_Mod_Schneider_Gritta_15_05"); //And until when...
+	AI_Output(self, hero, "Info_Mod_Schneider_Gritta_31_06"); //Come back tomorrow. Then it should be done.
 
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Der Schneider wird ein Kleid für Gritta herstellen. Morgen sollte es fertig sein.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "The tailor will make a dress for Gritta. Tomorrow it should be ready.");
 
 	B_StartOtherRoutine	(Mod_7281_OUT_Felicita_REL, "SCHNEIDER");
 
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Schneider_Aufgabe (C_INFO)
 	information	= Info_Mod_Schneider_Aufgabe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ist das Kleid fertig?";
+	description	= "Is the dress ready?";
 };
 
 FUNC INT Info_Mod_Schneider_Aufgabe_Condition()
@@ -84,25 +84,25 @@ FUNC INT Info_Mod_Schneider_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Schneider_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_00"); //Ist das Kleid fertig?
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_00"); //Is the dress ready?
 
 	if (Wld_GetDay()-1 == Mod_ASS_Schneider_Day)
 	&& (Wld_IsTime(00,00,11,59))
 	{
-		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_01"); //Nicht ganz. Hab die halbe Nacht dran gearbeitet.
-		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_02"); //Es sind noch einige Stiche zu machen. Und gebügelt muss es auch noch werden.
-		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_03"); //Komm am Mittag wieder.
-		AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_04"); //Gut. Bis später.
+		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_01"); //Not quite. Worked half the night on it.
+		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_02"); //There are still some stitches to be made. And it has to be ironed, too.
+		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_03"); //Come back at noon.
+		AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_04"); //Good. See you later.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_05"); //Gewiss. Ein Prachtkleid. Haute couture nennt man so etwas. Ist kaum zu bezahlen.
-		AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_06"); //Das heißt?
-		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_07"); //Bestes Tuch aus Schafwolle. Nähte doppelt gezogen. Eleganter Faltenwurf ...
-		AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_08"); //Wie viel?
-		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_09"); //Zwei Mal gefärbt. Waschecht bis 60 Grad. Mein Signum eingestickt. 500 Gold.
-		AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_10"); //Bist du von Sinnen? Dafür bekomme ich eine ganze Schafherde.
-		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_11"); //Das würde deine Dame kaum beeindrucken.
+		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_05"); //Certainly. A splendid dress. Haute couture is what they call it. It's hard to pay.
+		AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_06"); //Which means?
+		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_07"); //Best cloth made of sheep's wool. Double seams. Elegant drapery...
+		AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_08"); //How much?
+		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_09"); //Twice dyed. Washable up to 60 degrees Celsius. Embroidered my signum. 500 gold.
+		AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_15_10"); //Are you out of your mind? I get a whole flock of sheep for that.
+		AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_31_11"); //Wouldn't impress your lady very much.
 
 		Info_ClearChoices	(Info_Mod_Schneider_Aufgabe);
 
@@ -110,14 +110,14 @@ FUNC VOID Info_Mod_Schneider_Aufgabe_Info()
 
 		if (Npc_HasItems(hero, ItMi_Gold) >= 500)
 		{
-			Info_AddChoice	(Info_Mod_Schneider_Aufgabe, "Mag sein. Hier hast du deine 500.", Info_Mod_Schneider_Aufgabe_D);
+			Info_AddChoice	(Info_Mod_Schneider_Aufgabe, "Maybe so. Here's your 500.", Info_Mod_Schneider_Aufgabe_D);
 		};
 		if (Npc_HasItems(hero, ItMi_Gold) >= 400)
 		{
-			Info_AddChoice	(Info_Mod_Schneider_Aufgabe, "Ich könnte dir 400 Gold geben.", Info_Mod_Schneider_Aufgabe_C);
+			Info_AddChoice	(Info_Mod_Schneider_Aufgabe, "I could give you 400 gold.", Info_Mod_Schneider_Aufgabe_C);
 		};
-		Info_AddChoice	(Info_Mod_Schneider_Aufgabe, "Ich habe nur 300 dabei.", Info_Mod_Schneider_Aufgabe_B);
-		Info_AddChoice	(Info_Mod_Schneider_Aufgabe, "Ich habe nur 200 dabei.", Info_Mod_Schneider_Aufgabe_A);
+		Info_AddChoice	(Info_Mod_Schneider_Aufgabe, "I only have 300 with me.", Info_Mod_Schneider_Aufgabe_B);
+		Info_AddChoice	(Info_Mod_Schneider_Aufgabe, "I only have 200 with me.", Info_Mod_Schneider_Aufgabe_A);
 	};	
 };
 
@@ -128,11 +128,11 @@ FUNC VOID Info_Mod_Schneider_Aufgabe_BACK()
 
 FUNC VOID Info_Mod_Schneider_Aufgabe_D()
 {
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_D_15_00"); //Mag sein. Hier hast du deine 500.
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_D_15_00"); //Maybe so. Here's your 500.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_D_31_01"); //Besten Dank. Du wirst es nicht bereuen.
+	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_D_31_01"); //Thank you very much. You won't regret it.
 
 	B_GiveInvItems	(self, hero, ItAr_GrittasKleid, 1);
 
@@ -140,17 +140,17 @@ FUNC VOID Info_Mod_Schneider_Aufgabe_D()
 
 	Info_ClearChoices	(Info_Mod_Schneider_Aufgabe);
 
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "War nicht leicht, dieses Kleid zu bekommen. Hoffe, Shakir weiß das zu würdigen. Zurück zu Gritta.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "It wasn't easy getting that dress. I hope Shakir appreciates that. Back to Gritta's.");
 };
 
 FUNC VOID Info_Mod_Schneider_Aufgabe_C()
 {
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_C_15_00"); //Ich könnte dir 400 Gold geben.
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_C_15_00"); //I could give you 400 gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 400);
 
-	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_C_31_01"); //Ungern. Dafür musst du mich aber weiterempfehlen.
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_C_15_02"); //Mach ich doch glatt.
+	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_C_31_01"); //Ungern. But you have to recommend me.
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_C_15_02"); //I'm going to do it.
 
 	B_GiveInvItems	(self, hero, ItAr_GrittasKleid, 1);
 
@@ -158,29 +158,29 @@ FUNC VOID Info_Mod_Schneider_Aufgabe_C()
 
 	Info_ClearChoices	(Info_Mod_Schneider_Aufgabe);
 
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "War nicht leicht, dieses Kleid zu bekommen. Hoffe, Shakir weiß das zu würdigen. Zurück zu Gritta.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "It wasn't easy getting that dress. I hope Shakir appreciates that. Back to Gritta's.");
 };
 
 FUNC VOID Info_Mod_Schneider_Aufgabe_B()
 {
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_00"); //Ich habe nur 300 dabei.
-	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_B_31_01"); //300 Gold für dieses edle Teil? Nur über meine Leiche!  Es sei denn ...
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_02"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_B_31_03"); //Du gehst mir ein wenig zur Hand.
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_04"); //Wie meinst du das?
-	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_B_31_05"); //Nun, ich denke da an einen gemütlichen Abend zu zweit. Nur du und ich ...
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_06"); //Bei Adanos! Du bist schwul!
-	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_B_31_07"); //Na und? Alle Modemacher, so wie ich, sind schwul. Sonst wären wir nicht das, was wir sind.
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_08"); //Ich muss dankend ablehnen. Da lass ich mir was anderes einfallen.
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_00"); //I only have 300 with me.
+	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_B_31_01"); //300 gold for this precious thing? Over my dead body! Unless....
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_02"); //Yes?
+	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_B_31_03"); //You're giving me a little help.
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_04"); //What do you mean?
+	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_B_31_05"); //Well, I'm thinking of a cozy evening for two. Just you and me...
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_06"); //With Adanos! You're gay!
+	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_B_31_07"); //So what? All the fashion designers, like me, are gay. Otherwise, we wouldn't be who we are.
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_B_15_08"); //I reject with thanks. I'll figure something else out.
 
 	Info_ClearChoices	(Info_Mod_Schneider_Aufgabe);
 };
 
 FUNC VOID Info_Mod_Schneider_Aufgabe_A()
 {
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_A_15_00"); //Ich habe nur 200 dabei.
-	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_A_31_01"); //Dann kommen wir nicht ins Geschäft. Vergiss es.
-	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_A_15_02"); //Schade. Da muss ich mir was anderes einfallen lassen.
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_A_15_00"); //I only have 200 with me.
+	AI_Output(self, hero, "Info_Mod_Schneider_Aufgabe_A_31_01"); //Then we can't do business. Forget about it.
+	AI_Output(hero, self, "Info_Mod_Schneider_Aufgabe_A_15_02"); //Too bad. I'll have to think of something else.
 
 	Info_ClearChoices	(Info_Mod_Schneider_Aufgabe);
 };
@@ -207,25 +207,25 @@ FUNC INT Info_Mod_Schneider_Kissen_Condition()
 
 FUNC VOID Info_Mod_Schneider_Kissen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_00"); //Tritt näher, Freund der exklusiven Kleidung. Hat meine Kreation gefallen?
-	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_01"); //Und wie. Ich glaube, die Dame zieht das Kleid gar nicht mehr aus.
-	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_02"); //War auch nicht anders zu erwarten. Was darf's heute sein?
-	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_03"); //Nur eine Kleinigkeit. Kannst du mir ein Säckchen aus Leinen machen?
-	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_04"); //Das ist zwar unter meinem Niveau, aber für dich als guten Kunden ... Wie groß soll's denn sein?
-	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_05"); //So groß, dass diese Federn und dieses Heu reinpasst.
+	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_00"); //Come closer, friend of exclusive clothing. Did my creation please?
+	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_01"); //And how. I don't think the lady will take off her dress at all.
+	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_02"); //Was not to be expected otherwise. What'll it be today?
+	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_03"); //Just a little something. Can you make me a bag of linen?
+	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_04"); //That's below my level, but for you as a good customer... How big is it supposed to be?
+	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_05"); //So big that these feathers and this hay fit in.
 
 	Npc_RemoveInvItems	(hero, ItMi_Federbeutel, 1);
 	Npc_RemoveInvItems	(hero, ItMi_Heu, 1);
 
-	B_ShowGivenThings	("Vengerfedern und Heu gegeben");
+	B_ShowGivenThings	("Venger feathers and hay added");
 
-	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_06"); //Für was brauchst du das eigentlich?
-	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_07"); //Für einen alten Krieger. Wenn er schlafen geht, will er das unter seinen Kopf legen.
-	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_08"); //Sehr innovativ, diese Idee. Das könnte ein Verkaufsschlager werden. Wo hast du diese Federn her?
-	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_09"); //Vom Metzger. Der schlachtet die Scavenger von Erhards Hof.
-	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_10"); //Interessant. Nun gut. Stoff habe ich. Lass die Füllung da und komm in zwei Stunden wieder.
+	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_06"); //What do you need this for?
+	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_07"); //For an old warrior. When he goes to sleep, he wants to put it under his head.
+	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_08"); //Very innovative, this idea. This could be a big seller. Where did you get those feathers?
+	AI_Output(hero, self, "Info_Mod_Schneider_Kissen_15_09"); //From the butcher. He's slaughtering the Scavenger of Erhard's farm.
+	AI_Output(self, hero, "Info_Mod_Schneider_Kissen_31_10"); //Interesting. Very well. I've got some stuff. Leave the stuffing and come back in two hours.
 
-	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Ich soll in zwei Stunden wieder bei Versage sein.");
+	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "I'm due back at Versage in two hours.");
 
 	Npc_SetRefuseTalk(self, 300);
 };
@@ -238,7 +238,7 @@ INSTANCE Info_Mod_Schneider_Kissen02 (C_INFO)
 	information	= Info_Mod_Schneider_Kissen02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Bist du fertig?";
+	description	= "Hello! Are you finished?";
 };
 
 FUNC INT Info_Mod_Schneider_Kissen02_Condition()
@@ -252,18 +252,18 @@ FUNC INT Info_Mod_Schneider_Kissen02_Condition()
 
 FUNC VOID Info_Mod_Schneider_Kissen02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Schneider_Kissen02_15_00"); //Hallo! Bist du fertig?
-	AI_Output(self, hero, "Info_Mod_Schneider_Kissen02_31_01"); //Aber ja. Schau. In meiner Lieblingsfarbe.
+	AI_Output(hero, self, "Info_Mod_Schneider_Kissen02_15_00"); //Hello! Are you finished?
+	AI_Output(self, hero, "Info_Mod_Schneider_Kissen02_31_01"); //But yes, yes. Look. In my favorite color.
 
 	B_GiveInvItems	(self, hero, ItMi_Kissen, 1);
 
-	AI_Output(hero, self, "Info_Mod_Schneider_Kissen02_15_02"); //Lila! Na ja, dem Krieger wird's egal sein.
-	AI_Output(self, hero, "Info_Mod_Schneider_Kissen02_31_03"); //Sagenhaft weich und wohlriechend. Besser kann man so ein Teil nicht machen.
-	AI_Output(hero, self, "Info_Mod_Schneider_Kissen02_15_04"); //Ich muss endlich weiter. Wie viel bekommst du?
-	AI_Output(self, hero, "Info_Mod_Schneider_Kissen02_31_05"); //Für dich umsonst, wenn ich die Rechte an deiner Idee bekomme.
-	AI_Output(hero, self, "Info_Mod_Schneider_Kissen02_15_06"); //Von mir aus auch die Linke. Mach's gut!
+	AI_Output(hero, self, "Info_Mod_Schneider_Kissen02_15_02"); //Lila! Well, it won't matter to the warrior.
+	AI_Output(self, hero, "Info_Mod_Schneider_Kissen02_31_03"); //Fabulously soft and fragrant. There's no better way to make such a thing.
+	AI_Output(hero, self, "Info_Mod_Schneider_Kissen02_15_04"); //I have to get going. How much do you get?
+	AI_Output(self, hero, "Info_Mod_Schneider_Kissen02_31_05"); //For you, for free if I get the rights to your idea.
+	AI_Output(hero, self, "Info_Mod_Schneider_Kissen02_15_06"); //My left, too. Bye, now!
 
-	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Ich hab das Kissen. Auf zu Malik ...");
+	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "I got the pillow. Off to Malik....");
 };
 
 INSTANCE Info_Mod_Schneider_Pickpocket (C_INFO)

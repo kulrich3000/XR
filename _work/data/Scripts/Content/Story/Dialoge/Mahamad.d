@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Mahamad_Hi (C_INFO)
 	information	= Info_Mod_Mahamad_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bei Beliar! Ich bin aber gefragt hier.";
+	description	= "With Beliar! I'm the one asked here.";
 };
 
 FUNC INT Info_Mod_Mahamad_Hi_Condition()
@@ -19,28 +19,28 @@ FUNC INT Info_Mod_Mahamad_Hi_Condition()
 
 FUNC VOID Info_Mod_Mahamad_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_00"); //Bei Beliar! Ich bin aber gefragt hier.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_01"); //Zu recht, wie mir scheint. Scheinst fähiger zu sein, als die anderen Gauner.
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_02"); //Ich fühle mich auch schon wie ein Obergauner. Du brauchst mich?
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_03"); //Eigentlich nicht. Aber du brauchst mich und meine Stimme.
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_04"); //Wohl wahr. Was muss ich dafür tun?
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_05"); //Von einem Magier wird eine gewisse geistige Reife und Intelligenz erwartet.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_06"); //Meine Aufgabe ist es, zu testen, ob bei dir zumindest Ansätze vorhanden sind, damit du diese Anforderungen erreichen kannst.
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_07"); //Ich denke mal, ich bin nicht auf den Kopf gefallen.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_08"); //Das werden wir sehen. Du wirst einige Rätsel lösen und Fragen beantworten müssen. Kannst du eigentlich lesen?
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_09"); //Das will ich meinen. Wir können anfangen.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_10"); //Nun gut. Hier hast du vier Zettel. Finde die Antworten und komme zu mir.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_00"); //With Beliar! I'm the one asked here.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_01"); //Quite rightly, it seems to me. Seems more capable than the other crooks.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_02"); //I already feel like a crook. You need me?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_03"); //Actually, I don't. But you need me and my voice.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_04"); //True enough. What do I have to do?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_05"); //A magician is expected to have a certain mental maturity and intelligence.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_06"); //My job is to test whether there are at least some approaches available for you to meet these requirements.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_07"); //I guess I didn't fall on my head.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_08"); //We'll see about that. You will have to solve some puzzles and answer questions. Can you actually read?
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_09"); //That's what I mean. We're good to go.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_10"); //Very well. Here's four slips of paper. Find the answers and come to me.
 
 	CreateInvItems	(hero, ItWr_MahamadRaetsel1, 1);
 	CreateInvItems	(hero, ItWr_MahamadRaetsel2, 1);
 	CreateInvItems	(hero, ItWr_MahamadRaetsel3, 1);
 	CreateInvItems	(hero, ItWr_MahamadRaetsel4, 1);
 
-	B_ShowGivenThings	("4 Zettel erhalten");
+	B_ShowGivenThings	("4 cards received");
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_SCHLAUFUCHS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_SCHLAUFUCHS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_SCHLAUFUCHS, "Mahamad will meine Intelligenz auf die Probe stellen. Dazu hat er mir vier Zettel mit Rätsel gegeben.");
+	B_LogEntry	(TOPIC_MOD_ASS_SCHLAUFUCHS, "Mahamad wants to test my intelligence. He gave me four pieces of paper with a riddle.");
 };
 
 INSTANCE Info_Mod_Mahamad_Schlaufuchs (C_INFO)
@@ -51,7 +51,7 @@ INSTANCE Info_Mod_Mahamad_Schlaufuchs (C_INFO)
 	information	= Info_Mod_Mahamad_Schlaufuchs_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Du kannst mich testen.";
+	description	= "You can test me.";
 };
 
 FUNC INT Info_Mod_Mahamad_Schlaufuchs_Condition()
@@ -65,34 +65,34 @@ FUNC INT Info_Mod_Mahamad_Schlaufuchs_Condition()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_15_00"); //Du kannst mich testen.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_01_01"); //Du hast alles gut verstanden?
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_15_02"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_01_03"); //Dann möchte ich wissen, wieviel der Spitzenwein kostet.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_15_00"); //You can test me.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_01_01"); //You've got it all figured out?
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_15_02"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_01_03"); //Then I would like to know how much the top quality wine costs.
 
 	Mod_ASS_MahamadRaetsel_Niete = 0;
 
 	Info_ClearChoices	(Info_Mod_Mahamad_Schlaufuchs);
 
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich habe 200 Gold gerechnet.", Info_Mod_Mahamad_Schlaufuchs_C);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich habe 175 Gold gerechnet.", Info_Mod_Mahamad_Schlaufuchs_B);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich habe 150 Gold gerechnet.", Info_Mod_Mahamad_Schlaufuchs_A);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "I counted 200 gold.", Info_Mod_Mahamad_Schlaufuchs_C);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "I counted 175 gold.", Info_Mod_Mahamad_Schlaufuchs_B);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "I counted 150 gold.", Info_Mod_Mahamad_Schlaufuchs_A);
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_D()
 {
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_D_01_00"); //Und wieviele Dreiecke hast du gezählt?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_D_01_00"); //And how many triangles have you counted?
 
 	Info_ClearChoices	(Info_Mod_Mahamad_Schlaufuchs);
 
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich denke, es sind 35 Dreiecke.", Info_Mod_Mahamad_Schlaufuchs_G);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich denke, es sind 25 Dreiecke.", Info_Mod_Mahamad_Schlaufuchs_F);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich denke, es sind 20 Dreiecke.", Info_Mod_Mahamad_Schlaufuchs_E);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "I think it's 35 triangles.", Info_Mod_Mahamad_Schlaufuchs_G);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "I think it's 25 triangles.", Info_Mod_Mahamad_Schlaufuchs_F);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "I think there are 20 triangles.", Info_Mod_Mahamad_Schlaufuchs_E);
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_C()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_C_15_00"); //Ich habe 200 Gold gerechnet.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_C_15_00"); //I counted 200 gold.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -101,7 +101,7 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_C()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_B()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_B_15_00"); //Ich habe 175 Gold gerechnet.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_B_15_00"); //I counted 175 gold.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -110,43 +110,43 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_B()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_A()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_A_15_00"); //Ich habe 150 Gold gerechnet.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_A_15_00"); //I counted 150 gold.
 
 	Info_Mod_Mahamad_Schlaufuchs_D();
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_H()
 {
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_H_01_00"); //Aha. Was ist mit den Zahlenreihen?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_H_01_00"); //Uh-huh. What about the series of numbers?
 
 	Info_ClearChoices	(Info_Mod_Mahamad_Schlaufuchs);
 
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "War etwas schwierig. Ich hab für oben 7 4 und unten 14 16 raus.", Info_Mod_Mahamad_Schlaufuchs_K);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "War etwas schwierig. Ich hab für oben 6 3 und unten 15 17 raus.", Info_Mod_Mahamad_Schlaufuchs_J);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "War etwas schwierig. Ich hab für oben 5 2 und unten 17 19 raus.", Info_Mod_Mahamad_Schlaufuchs_I);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "It was a little difficult. I got 7-4 upstairs and 14-16 downstairs.", Info_Mod_Mahamad_Schlaufuchs_K);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "It was a little difficult. I got six thirty-six upstairs and fifteen seventeen downstairs.", Info_Mod_Mahamad_Schlaufuchs_J);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "It was a little difficult. I got 5 2 upstairs and 17 19 downstairs.", Info_Mod_Mahamad_Schlaufuchs_I);
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_M()
 {
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_M_01_00"); //Und die letzte Aufgabe. Wie lange reicht die Medizin?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_M_01_00"); //And the last task. How long does medicine last?
 
 	Info_ClearChoices	(Info_Mod_Mahamad_Schlaufuchs);
 
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "1 Stunde.", Info_Mod_Mahamad_Schlaufuchs_P);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "2 Stunden.", Info_Mod_Mahamad_Schlaufuchs_O);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "1 1/2 Stunden.", Info_Mod_Mahamad_Schlaufuchs_N);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "1 hour.", Info_Mod_Mahamad_Schlaufuchs_P);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Two hours.", Info_Mod_Mahamad_Schlaufuchs_O);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "1 1/2 hours.", Info_Mod_Mahamad_Schlaufuchs_N);
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_G()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_G_15_00"); //Ich denke, es sind 35 Dreiecke.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_G_15_00"); //I think it's 35 triangles.
 
 	Info_Mod_Mahamad_Schlaufuchs_H();
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_F()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_F_15_00"); //Ich denke, es sind 25 Dreiecke.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_F_15_00"); //I think it's 25 triangles.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -155,7 +155,7 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_F()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_E()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_E_15_00"); //Ich denke, es sind 20 Dreiecke.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_E_15_00"); //I think there are 20 triangles.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -166,17 +166,17 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_L()
 {
 	if (Mod_ASS_MahamadRaetsel_Niete >= 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_00"); //Deine Antworten waren nicht schlecht, aber es reicht wohl nicht. Lerne, lese die Bücher, bereite dich weiter vor. Die meisten Novizen hier haben das gleiche Problem.
+		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_00"); //Your answers weren't bad, but I guess it's not enough. Learn, read the books, get ready. Most novices here have the same problem.
 	}
 	else if (Mod_ASS_MahamadRaetsel_Niete >= 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_01"); //Du überrascht mich wirklich. Dieses Ergebnis habe ich dir nicht zugetraut. Ich muss sagen, du bist auf dem besten Weg nach oben. Ich will dir noch eine Chance geben.
+		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_01"); //You really surprise me. I didn't think you'd get that result. I have to say, you're on your way up. I want to give you another chance.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_02"); //Perfekt! Alles richtig. Macht richtig Spaß mit dir. Meine Stimme ist dir sicher.
-		AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_L_15_03"); //Und wie geht's weiter?
-		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_04"); //Ich glaube, Mirza hat noch was für dich.
+		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_02"); //Perfect! It's all right. It's really fun with you. You're sure of my vote.
+		AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_L_15_03"); //So what happens next?
+		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_04"); //I think Mirza has something else for you.
 
 		B_GivePlayerXP	(250);
 
@@ -190,7 +190,7 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_L()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_K()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_K_15_00"); //War etwas schwierig. Ich hab für oben 7 4 und unten 14 16 raus.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_K_15_00"); //It was a little difficult. I got 7-4 upstairs and 14-16 downstairs.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -199,14 +199,14 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_K()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_J()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_J_15_00"); //War etwas schwierig. Ich hab für oben 6 3 und unten 15 17 raus.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_J_15_00"); //It was a little difficult. I got six thirty-six upstairs and fifteen seventeen downstairs.
 
 	Info_Mod_Mahamad_Schlaufuchs_M();
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_I()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_I_15_00"); //War etwas schwierig. Ich hab für oben 5 2 und unten 17 19 raus.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_I_15_00"); //It was a little difficult. I got 5 2 upstairs and 17 19 downstairs.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -215,14 +215,14 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_I()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_P()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_P_15_00"); //1 Stunde.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_P_15_00"); //1 hour.
 
 	Info_Mod_Mahamad_Schlaufuchs_L();
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_O()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_O_15_00"); //2 Stunden.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_O_15_00"); //Two hours.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -231,7 +231,7 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_O()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_N()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_N_15_00"); //1 1/2 Stunden.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_N_15_00"); //1 1/2 hours.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -246,7 +246,7 @@ INSTANCE Info_Mod_Mahamad_Blutkelch (C_INFO)
 	information	= Info_Mod_Mahamad_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Kais erzählt mir, dass du einen Teil einer Botschaft hast. Kann ich mal haben?";
+	description	= "Hello! Kais tells me you have part of a message. Can I have one?";
 };
 
 FUNC INT Info_Mod_Mahamad_Blutkelch_Condition()
@@ -259,12 +259,12 @@ FUNC INT Info_Mod_Mahamad_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Mahamad_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Blutkelch_15_00"); //Hallo! Kais erzählt mir, dass du einen Teil einer Botschaft hast. Kann ich mal haben?
-	AI_Output(self, hero, "Info_Mod_Mahamad_Blutkelch_01_01"); //Hier, ich komme damit nicht klar. Aber Vorsicht! Ist ein altes Pergament.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Blutkelch_15_00"); //Hello! Kais tells me you have part of a message. Can I have one?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Blutkelch_01_01"); //Here, I can't handle this. But be careful! It's an old parchment.
 
 	B_GiveInvItems	(self, hero, ItWr_BlutkelchZettel2, 1);
 
-	AI_Output(hero, self, "Info_Mod_Mahamad_Blutkelch_15_02"); //Ich pass auf.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Blutkelch_15_02"); //I'll be careful.
 
 	if (Npc_HasItems(hero, ItWr_BlutkelchZettel1) == 1)
 	&& (Npc_HasItems(hero, ItWr_BlutkelchZettel2) == 1)
@@ -272,7 +272,7 @@ FUNC VOID Info_Mod_Mahamad_Blutkelch_Info()
 	{
 		Log_CreateTopic	(TOPIC_MOD_ASS_LASTBLUTKELCH, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_ASS_LASTBLUTKELCH, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Habe von Kais, Mahamad und Norek jeweils ein Teil eines alten Pergaments erhalten und soll die Botschaft entziffern. Amir hat sie ins Lager gebracht. Mal sehen ...");
+		B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Received a piece of ancient parchment from Kais, Mahamad and Norek to decipher the message. Amir took them to the camp. Let's see....");
 	};
 };
 

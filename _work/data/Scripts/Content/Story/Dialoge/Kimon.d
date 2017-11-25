@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Kimon_Hi (C_INFO)
 	information	= Info_Mod_Kimon_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du ein Problem?";
+	description	= "You got a problem?";
 };
 
 FUNC INT Info_Mod_Kimon_Hi_Condition()
@@ -16,36 +16,36 @@ FUNC INT Info_Mod_Kimon_Hi_Condition()
 
 FUNC VOID Info_Mod_Kimon_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kimon_Hi_15_00"); //Hast du ein Problem?
-	AI_Output(self, hero, "Info_Mod_Kimon_Hi_34_01"); //Keines, bei dem du mir helfen könntest ...
-	AI_Output(hero, self, "Info_Mod_Kimon_Hi_15_02"); //Sag es mir einfach.
-	AI_Output(self, hero, "Info_Mod_Kimon_Hi_34_03"); //Na gut. Ich habe den Feuermagiern teure Weintrauben vom Berg Archolos aus Myrtana verkauft und sollte mir meinen Lohn von 2000 Gold von dem Magier Serpentes abholen.
-	AI_Output(self, hero, "Info_Mod_Kimon_Hi_34_04"); //Der Schweinehund hat mir aber nur 1000 Gold gegeben!
-	AI_Output(hero, self, "Info_Mod_Kimon_Hi_15_05"); //Geh doch zu Lord Andre.
-	AI_Output(self, hero, "Info_Mod_Kimon_Hi_34_06"); //(ironisch) Klar, ich zeige einen der höchsten Diener Innos' wegen Betrugs an ...Das würde mich mehr Gold kosten, als es mir bringt.
+	AI_Output(hero, self, "Info_Mod_Kimon_Hi_15_00"); //You got a problem?
+	AI_Output(self, hero, "Info_Mod_Kimon_Hi_34_01"); //None that you could help me with....
+	AI_Output(hero, self, "Info_Mod_Kimon_Hi_15_02"); //Just tell me about it.
+	AI_Output(self, hero, "Info_Mod_Kimon_Hi_34_03"); //All right, all right. I sold the fire magicians expensive grapes from Mount Archolos in Myrtana and was supposed to collect my reward of 2000 gold from the magician Serpentes.
+	AI_Output(self, hero, "Info_Mod_Kimon_Hi_34_04"); //The son of a bitch only gave me 1,000 gold!
+	AI_Output(hero, self, "Info_Mod_Kimon_Hi_15_05"); //Why don't you go to Lord Andre?
+	AI_Output(self, hero, "Info_Mod_Kimon_Hi_34_06"); //(ironic) Sure, I report one of Innos' highest servants for fraud... That would cost me more gold than it'll bring me.
 
 	Info_ClearChoices	(Info_Mod_Kimon_Hi);
 
-	Info_AddChoice	(Info_Mod_Kimon_Hi, "Dann kann ich dir auch nicht helfen.", Info_Mod_Kimon_Hi_Nein);
-	Info_AddChoice	(Info_Mod_Kimon_Hi, "Ich schau, wie ich das regeln kann.", Info_Mod_Kimon_Hi_Ja);
+	Info_AddChoice	(Info_Mod_Kimon_Hi, "Then I can't help you either.", Info_Mod_Kimon_Hi_Nein);
+	Info_AddChoice	(Info_Mod_Kimon_Hi, "I'll see how I can handle this.", Info_Mod_Kimon_Hi_Ja);
 };
 
 FUNC VOID Info_Mod_Kimon_Hi_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Kimon_Hi_Nein_15_00"); //Dann kann ich dir auch nicht helfen.
-	AI_Output(self, hero, "Info_Mod_Kimon_Hi_Nein_34_01"); //Schon gut.
+	AI_Output(hero, self, "Info_Mod_Kimon_Hi_Nein_15_00"); //Then I can't help you either.
+	AI_Output(self, hero, "Info_Mod_Kimon_Hi_Nein_34_01"); //All right, all right.
 
 	Info_ClearChoices	(Info_Mod_Kimon_Hi);
 };
 
 FUNC VOID Info_Mod_Kimon_Hi_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Kimon_Hi_Ja_15_00"); //Ich schau, wie ich das regeln kann.
-	AI_Output(self, hero, "Info_Mod_Kimon_Hi_Ja_34_01"); //Ah, danke, auch wenn ich nicht glaube, dass das viel Sinn hat.
+	AI_Output(hero, self, "Info_Mod_Kimon_Hi_Ja_15_00"); //I'll see how I can handle this.
+	AI_Output(self, hero, "Info_Mod_Kimon_Hi_Ja_34_01"); //Ah, thank you, even if I don't think that makes a lot of sense.
 
 	Log_CreateTopic	(TOPIC_MOD_KIMONSTRAUBEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KIMONSTRAUBEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Der Händler Kimon hat im Kloster Weintrauben aus Myrtana verkauft, jedoch zu wenig Gold dafür bekommen. Ich habe mich bereit erklärt, die Sache für ihn zu regeln.");
+	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "The merchant Kimon sold grapes from Myrtana in the monastery, but received too little gold. I agreed to settle things for him.");
 
 	Mod_Kimons_Traubenquest = TRUE;
 
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_Kimon_Beleg (C_INFO)
 	information	= Info_Mod_Kimon_Beleg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du einen Beweis für den Betrug von Serpentes.";
+	description	= "Do you have proof of Serpentes' fraud?";
 };
 
 FUNC INT Info_Mod_Kimon_Beleg_Condition()
@@ -73,12 +73,12 @@ FUNC INT Info_Mod_Kimon_Beleg_Condition()
 
 FUNC VOID Info_Mod_Kimon_Beleg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kimon_Beleg_15_00"); //Hast du einen Beweis für den Betrug von Serpentes?
-	AI_Output(self, hero, "Info_Mod_Kimon_Beleg_34_01"); //Sicherlich, hier.
+	AI_Output(hero, self, "Info_Mod_Kimon_Beleg_15_00"); //Do you have proof of Serpentes' fraud?
+	AI_Output(self, hero, "Info_Mod_Kimon_Beleg_34_01"); //Certainly, here.
 
 	B_GiveInvItems	(self, hero, ItWr_KimonsBeleg, 1);
 
-	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Kimon hat mir einen Beweis für die Schuld Serpentes' gegeben. Ich sollte diesen jetzt zu Pyrokar bringen.");
+	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Kimon gave me proof of Serpentes' guilt. I should take this one to Pyrokar now.");
 };
 
 INSTANCE Info_Mod_Kimon_HierIstDeinGold (C_INFO)
@@ -89,7 +89,7 @@ INSTANCE Info_Mod_Kimon_HierIstDeinGold (C_INFO)
 	information	= Info_Mod_Kimon_HierIstDeinGold_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du dein Gold.";
+	description	= "Here's your gold.";
 };
 
 FUNC INT Info_Mod_Kimon_HierIstDeinGold_Condition()
@@ -104,22 +104,22 @@ FUNC INT Info_Mod_Kimon_HierIstDeinGold_Condition()
 
 FUNC VOID Info_Mod_Kimon_HierIstDeinGold_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kimon_HierIstDeinGold_15_00"); //Hier hast du dein Gold.
+	AI_Output(hero, self, "Info_Mod_Kimon_HierIstDeinGold_15_00"); //Here's your gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 1000);
 
-	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_01"); //Vielen Dank. Jetzt kann ich meine Runde wieder aufnehmen.
-	AI_Output(hero, self, "Info_Mod_Kimon_HierIstDeinGold_15_02"); //Wo rundest du denn?
-	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_03"); //Ich verkehre normalerweise zwischen der Stadt und Relendel.
-	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_04"); //Ab und zu habe ich auch mal nen Abstecher ins Minental gemacht. Aber das ist mir zu gefährlich geworden.
-	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_05"); //Zu viel Viehzeugs und Wegelagerer unterwegs.
-	AI_Output(hero, self, "Info_Mod_Kimon_HierIstDeinGold_15_06"); //Aha. Mit was handelst du eigentlich?
-	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_07"); //Im Moment mit gar nichts. Ich muss erst zukaufen. Am besten verkaufen sich Raritäten wie diese Weintrauben. Sind allerdings nicht billig im Einkauf.
-	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_08"); //Aber genug Gold habe ich ja jetzt wieder.
-	AI_Output(hero, self, "Info_Mod_Kimon_HierIstDeinGold_15_09"); //Dann viel Erfolg. Vielleicht sehen wir uns mal wieder.
-	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_10"); //Kann sein. Danke noch mal.
+	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_01"); //Thank you very much. Now I can resume my round.
+	AI_Output(hero, self, "Info_Mod_Kimon_HierIstDeinGold_15_02"); //Where are you rounding off?
+	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_03"); //I usually travel between town and Relendel.
+	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_04"); //Every now and then I made a detour to the valley of the river Minental. But this has become too dangerous for me.
+	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_05"); //Too much cattle and highwaymen on the road.
+	AI_Output(hero, self, "Info_Mod_Kimon_HierIstDeinGold_15_06"); //Uh-huh. What are you dealing with?
+	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_07"); //Right now with nothing. I have to buy more. Rarities like these grapes sell best. However, they are not cheap to buy.
+	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_08"); //But I have enough gold again.
+	AI_Output(hero, self, "Info_Mod_Kimon_HierIstDeinGold_15_09"); //Good luck with that. Maybe we'll meet again sometime.
+	AI_Output(self, hero, "Info_Mod_Kimon_HierIstDeinGold_34_10"); //Maybe. Thank you again.
 
-	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Ich habe Kimon sein Gold gegeben. Er wird jetzt zu den anderen gehen.");
+	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "I gave Kimon his gold. He'll go to the others now.");
 	B_SetTopicStatus	(TOPIC_MOD_KIMONSTRAUBEN, LOG_SUCCESS);
 
 	B_StartOtherRoutine	(self, "WEG");

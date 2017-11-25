@@ -8,7 +8,7 @@ INSTANCE Info_Mod_Eduard_Hi (C_INFO)
 	information	= Info_Mod_Eduard_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo. Ich bin neu hier.";
+	description	= "Hello. I'm new here.";
 };
 
 FUNC INT Info_Mod_Eduard_Hi_Condition()
@@ -18,10 +18,10 @@ FUNC INT Info_Mod_Eduard_Hi_Condition()
 
 FUNC VOID Info_Mod_Eduard_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_Hi_15_00"); //Hallo. Ich bin neu hier.
-	AI_Output(self, hero, "Info_Mod_Eduard_Hi_32_01"); //So viele neue Gesichter in letzter Zeit ... Wie soll man sich das alles bloß merken?
-	AI_Output(self, hero, "Info_Mod_Eduard_Hi_32_02"); //Vor ein paar Wochen noch war das hier ein lauschiges Plätzchen - und dann macht's Peng!, die Barriere ist weg und hier tanzen lauter wildfremde Menschen an.
-	AI_Output(self, hero, "Info_Mod_Eduard_Hi_32_03"); //Seitdem mangelt's an allem, und ich komm mit den Waffen nicht mehr hinterher. Dabei hasse ich Schmieden.
+	AI_Output(hero, self, "Info_Mod_Eduard_Hi_15_00"); //Hello. I'm new here.
+	AI_Output(self, hero, "Info_Mod_Eduard_Hi_32_01"); //So many new faces lately.... How can you remember all that?
+	AI_Output(self, hero, "Info_Mod_Eduard_Hi_32_02"); //A few weeks ago this was a cozy place - and then it's Bang! The barrier's gone, and all these people are dancing to strangers.
+	AI_Output(self, hero, "Info_Mod_Eduard_Hi_32_03"); //There's been a shortage of everything since then, and I can't keep up with the guns. I hate blacksmithing.
 };
 
 INSTANCE Info_Mod_Eduard_SchmiedenLehren (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Eduard_SchmiedenLehren (C_INFO)
 	information	= Info_Mod_Eduard_SchmiedenLehren_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir beibringen zu schmieden?";
+	description	= "Can you teach me how to forge?";
 };
 
 FUNC INT Info_Mod_Eduard_SchmiedenLehren_Condition()
@@ -42,9 +42,9 @@ FUNC INT Info_Mod_Eduard_SchmiedenLehren_Condition()
 
 FUNC VOID Info_Mod_Eduard_SchmiedenLehren_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_SchmiedenLehren_15_00"); //Kannst du mir beibringen zu schmieden?
-	AI_Output(self, hero, "Info_Mod_Eduard_SchmiedenLehren_32_01"); //Versuchen kann ich's. Aber erwarte nicht zu viel.
-	AI_Output(self, hero, "Info_Mod_Eduard_SchmiedenLehren_32_02"); //Ich selbst hatte nie eine Ausbildung und bin schon ganz froh, wenn ich die Dinger irgendwie gerade bekomme.
+	AI_Output(hero, self, "Info_Mod_Eduard_SchmiedenLehren_15_00"); //Can you teach me how to forge?
+	AI_Output(self, hero, "Info_Mod_Eduard_SchmiedenLehren_32_01"); //I can try. But don't expect too much.
+	AI_Output(self, hero, "Info_Mod_Eduard_SchmiedenLehren_32_02"); //I myself have never had any training and I'm quite happy when I get the things somehow straight.
 };
 
 INSTANCE Info_Mod_Eduard_Haendler (C_INFO)
@@ -55,7 +55,7 @@ INSTANCE Info_Mod_Eduard_Haendler (C_INFO)
 	information	= Info_Mod_Eduard_Haendler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verkaufst du auch Schmiedezubehör?";
+	description	= "Do you sell forging accessories?";
 };
 
 FUNC INT Info_Mod_Eduard_Haendler_Condition()
@@ -65,11 +65,11 @@ FUNC INT Info_Mod_Eduard_Haendler_Condition()
 
 FUNC VOID Info_Mod_Eduard_Haendler_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_Haendler_15_00"); //Verkaufst du auch Schmiedezubehör?
-	AI_Output(self, hero, "Info_Mod_Eduard_Haendler_32_01"); //Ein bisschen kann ich dir von meinen Sachen verkaufen, aber nicht alles. Nachschub ist immer teuer und kommt nur stockend.
+	AI_Output(hero, self, "Info_Mod_Eduard_Haendler_15_00"); //Do you sell forging accessories?
+	AI_Output(self, hero, "Info_Mod_Eduard_Haendler_32_01"); //I can sell you a little of my stuff, but not everything. Replenishment is always expensive and comes only stagnant.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_BELIARFESTUNG, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_BELIARFESTUNG, "Eduard wird mir einiges an Schmiedezubehör und Waffen verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_BELIARFESTUNG, "Eduard's gonna sell me some forging supplies and weapons.");
 };
 
 INSTANCE Info_Mod_Eduard_Belagerung (C_INFO)
@@ -80,7 +80,7 @@ INSTANCE Info_Mod_Eduard_Belagerung (C_INFO)
 	information	= Info_Mod_Eduard_Belagerung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles klar bei dir?";
+	description	= "Everything okay with you?";
 };
 
 FUNC INT Info_Mod_Eduard_Belagerung_Condition()
@@ -93,21 +93,21 @@ FUNC INT Info_Mod_Eduard_Belagerung_Condition()
 
 FUNC VOID Info_Mod_Eduard_Belagerung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_Belagerung_15_00"); //Alles klar bei dir?
-	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_01"); //Mir ging es schon besser! Was willst du wieder?
-	AI_Output(hero, self, "Info_Mod_Eduard_Belagerung_15_02"); //Ich soll euch doch helfen, damit hier wieder alles in Gang kommt. Ich wollte fragen, ob du etwas für mich zu tun hast.
-	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_03"); //Allerdings.
-	AI_Output(hero, self, "Info_Mod_Eduard_Belagerung_15_04"); //Um was geht es?
-	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_05"); //Ich stelle gerade die neuen Kampfstäbe her, die ich für Scar machen soll. Jedoch steht in der Bauanleitung, dass die Waffe um einiges härter wird, wenn man vier Trollhauer mit einarbeitet. Ich will, dass du mir diese bringst.
-	AI_Output(hero, self, "Info_Mod_Eduard_Belagerung_15_06"); //Wo soll ich denn Trollhauer finden?
-	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_07"); //Unten im Tal befindet sich ein verlassenes Jägerlager. Wenn du Glück hast, dann sind dort welche zu finden.
-	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_08"); //Aber da unten wimmelt es von untoten Novizen, also nimm dich in acht.
+	AI_Output(hero, self, "Info_Mod_Eduard_Belagerung_15_00"); //Everything okay with you?
+	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_01"); //I've been better! What do you want again?
+	AI_Output(hero, self, "Info_Mod_Eduard_Belagerung_15_02"); //I'm supposed to help you guys get things back on track. I was wondering if you had something to do for me.
+	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_03"); //Yes, indeed.
+	AI_Output(hero, self, "Info_Mod_Eduard_Belagerung_15_04"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_05"); //I'm making the new batons I'm supposed to make for Scar. However, it says in the building instructions that the weapon gets a lot harder if you include four Trollhauer. I want you to bring me these.
+	AI_Output(hero, self, "Info_Mod_Eduard_Belagerung_15_06"); //Where am I gonna find Trollhauer?
+	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_07"); //Down in the valley there is an abandoned hunting camp. If you're lucky, you'll find some there.
+	AI_Output(self, hero, "Info_Mod_Eduard_Belagerung_32_08"); //But it's full of undead novices down there, so watch out.
 
 	Mob_CreateItems	("JAEGERTRUHE", ItAt_TrollTooth, 4);
 	
 	Log_CreateTopic	(TOPIC_MOD_BEL_TROLLHAUER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_TROLLHAUER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_TROLLHAUER, "Eduard braucht für die Stäbe von Scar noch vier Trollhauer. Im Tal ist ein verlassenes Jägerlager, wo noch welche sein könnten. Jedoch wimmelt es dort vor untoten Novizen.");
+	B_LogEntry	(TOPIC_MOD_BEL_TROLLHAUER, "Eduard needs four Trollhauer for the staffs of Scar. There's an abandoned hunting camp in the valley, where there might still be some. However, it is teeming with undead novices.");
 };
 
 INSTANCE Info_Mod_Eduard_Trolle (C_INFO)
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Eduard_Trolle (C_INFO)
 	information	= Info_Mod_Eduard_Trolle_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du die vier Trollhauer.";
+	description	= "Here you have the four Trollhauer.";
 };
 
 FUNC INT Info_Mod_Eduard_Trolle_Condition()
@@ -132,17 +132,17 @@ FUNC INT Info_Mod_Eduard_Trolle_Condition()
 
 FUNC VOID Info_Mod_Eduard_Trolle_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_Trolle_15_00"); //Hier hast du die vier Trollhauer.
+	AI_Output(hero, self, "Info_Mod_Eduard_Trolle_15_00"); //Here you have the four Trollhauer.
 
 	B_GiveInvItems	(hero, self, ItAt_TrollTooth, 4);
 
-	AI_Output(self, hero, "Info_Mod_Eduard_Trolle_32_01"); //Danke. Du hast uns damit sehr geholfen. Hier, nimm diese 200 Goldstücke.
+	AI_Output(self, hero, "Info_Mod_Eduard_Trolle_32_01"); //Thanks. You've been very helpful. Here, take these 200 gold pieces.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
 	B_GivePlayerXP	(300);
 	
-	B_LogEntry_More	(TOPIC_MOD_BEL_TROLLHAUER, TOPIC_MOD_BEL_BELAGERUNG, "Ich habe Eduard die Trollhauer gegeben.", "Ich hab nun auch Eduard geholfen.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_TROLLHAUER, TOPIC_MOD_BEL_BELAGERUNG, "I gave Eduard the trollhauer.", "I helped Eduard now.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_TROLLHAUER, LOG_SUCCESS);
 
 	B_Göttergefallen(3, 1);
@@ -156,7 +156,7 @@ INSTANCE Info_Mod_Eduard_MagischerDietrich (C_INFO)
 	information	= Info_Mod_Eduard_MagischerDietrich_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gomez schickt mich!";
+	description	= "Gomez sent me!";
 };
 
 FUNC INT Info_Mod_Eduard_MagischerDietrich_Condition()
@@ -169,13 +169,13 @@ FUNC INT Info_Mod_Eduard_MagischerDietrich_Condition()
 
 FUNC VOID Info_Mod_Eduard_MagischerDietrich_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_MagischerDietrich_15_00"); //Gomez schickt mich! Du sollst mir einen speziellen Dietrich anfertigen, den man dann zu einem magischen Dietrich umwandeln kann!
-	AI_Output(self, hero, "Info_Mod_Eduard_MagischerDietrich_32_01"); //(jammert) Hören die Aufträge denn nie auf? (seufzt) Gut, bring mir zwei Rohstahl und eine alte Goldmünze, dann fertige ich dir das Ding an.
+	AI_Output(hero, self, "Info_Mod_Eduard_MagischerDietrich_15_00"); //Gomez sent me! I want you to make a special dietrich for me, which can be transformed into a magic dietrich!
+	AI_Output(self, hero, "Info_Mod_Eduard_MagischerDietrich_32_01"); //Don't the assignments ever end? (sighs) Well, bring me two crude steel and an old gold coin, and I'll make you this thing.
 
 	CreateInvItems	(Mod_518_SMK_Scar_MT, ItMiSwordRaw, 2);
 	CreateInvItems	(Mod_518_SMK_Scar_MT, ItMi_OldCoin, 5);
 
-	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Eduard braucht für den Dietrich zwei Rohstahl und eine alte Goldmünze. Hoffentlich hat Scar die Sachen im Angebot.");
+	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Eduard needs two crude steel and an old gold coin for the dietrich. I hope Scar's got the stuff he wants.");
 };
 
 INSTANCE Info_Mod_Eduard_ZutatenFuerDietrich (C_INFO)
@@ -186,7 +186,7 @@ INSTANCE Info_Mod_Eduard_ZutatenFuerDietrich (C_INFO)
 	information	= Info_Mod_Eduard_ZutatenFuerDietrich_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du das Zeug!";
+	description	= "Here's the stuff!";
 };
 
 FUNC INT Info_Mod_Eduard_ZutatenFuerDietrich_Condition()
@@ -201,20 +201,20 @@ FUNC INT Info_Mod_Eduard_ZutatenFuerDietrich_Condition()
 
 FUNC VOID Info_Mod_Eduard_ZutatenFuerDietrich_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_ZutatenFuerDietrich_15_00"); //Hier hast du das Zeug!
+	AI_Output(hero, self, "Info_Mod_Eduard_ZutatenFuerDietrich_15_00"); //Here's the stuff!
 
 	Npc_RemoveInvItems	(hero, ItMiSwordRaw, 2);
 	Npc_RemoveInvItems	(hero, ItMi_OldCoin, 1);
 
-	B_ShowGivenThings	("Zwei Rohstahl und eine alte Goldmünze gegeben");
+	B_ShowGivenThings	("Two crude steel and an old gold coin given");
 
-	AI_Output(self, hero, "Info_Mod_Eduard_ZutatenFuerDietrich_32_01"); //Komm morgen wieder und hol den Dietrich ab.
+	AI_Output(self, hero, "Info_Mod_Eduard_ZutatenFuerDietrich_32_01"); //Come back tomorrow and pick up the Dietrich.
 
 	EduardDietrich_Day = Wld_GetDay();
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Die Herstellung des Dietrichs dauert eine Nacht. Ich soll morgen wieder kommen.");
+	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "The production of the dietrich takes one night. They want me to come back tomorrow.");
 };
 
 INSTANCE Info_Mod_Eduard_DietrichFertig (C_INFO)
@@ -225,7 +225,7 @@ INSTANCE Info_Mod_Eduard_DietrichFertig (C_INFO)
 	information	= Info_Mod_Eduard_DietrichFertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist der Dietrich fertig?";
+	description	= "Is the lock pick ready?";
 };
 
 FUNC INT Info_Mod_Eduard_DietrichFertig_Condition()
@@ -239,12 +239,12 @@ FUNC INT Info_Mod_Eduard_DietrichFertig_Condition()
 
 FUNC VOID Info_Mod_Eduard_DietrichFertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_DietrichFertig_15_00"); //Ist der Dietrich fertig?
-	AI_Output(self, hero, "Info_Mod_Eduard_DietrichFertig_32_01"); //Ja, hier. Nun geh und lass mich in Ruhe!
+	AI_Output(hero, self, "Info_Mod_Eduard_DietrichFertig_15_00"); //Is the lock pick ready?
+	AI_Output(self, hero, "Info_Mod_Eduard_DietrichFertig_32_01"); //Yes, here. Now go away and leave me alone!
 
 	B_GiveInvItems	(self, hero, ItKe_Lockpick_Mage_Unloaded, 1);
 
-	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Ich hab den Dietrich. Jetzt auf zu Gomez.");
+	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "I got the lock pick. Let's go to Gomez.");
 };
 
 INSTANCE Info_Mod_Eduard_Beliarstein (C_INFO)
@@ -255,7 +255,7 @@ INSTANCE Info_Mod_Eduard_Beliarstein (C_INFO)
 	information	= Info_Mod_Eduard_Beliarstein_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich brauch deine Hilfe.";
+	description	= "I need your help.";
 };
 
 FUNC INT Info_Mod_Eduard_Beliarstein_Condition()
@@ -269,20 +269,20 @@ FUNC INT Info_Mod_Eduard_Beliarstein_Condition()
 
 FUNC VOID Info_Mod_Eduard_Beliarstein_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_Beliarstein_15_00"); //Ich brauch deine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_01"); //(seufzt) Was ist denn?
-	AI_Output(hero, self, "Info_Mod_Eduard_Beliarstein_15_02"); //Sieh dir mal diesen Stein an.
+	AI_Output(hero, self, "Info_Mod_Eduard_Beliarstein_15_00"); //I need your help.
+	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_01"); //What's the matter?
+	AI_Output(hero, self, "Info_Mod_Eduard_Beliarstein_15_02"); //Look at that rock.
 
 	B_GiveInvItems	(hero, self, ItMi_Beliarstein_Unloaded, 1);
 
-	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_03"); //Hmm ... der ist sehr in Mitleidenschaft gezogen worden.
-	AI_Output(hero, self, "Info_Mod_Eduard_Beliarstein_15_04"); //Kann man ihn reparieren?
-	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_05"); //So was hab ich noch nie gemacht, aber vielleicht schon.
-	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_06"); //Ich brauche zwei Brocken schwarzes Erz, um dem Stein seine Kraft zurück zu geben.
-	AI_Output(hero, self, "Info_Mod_Eduard_Beliarstein_15_07"); //Hier gibt es aber kein schwarzes Erz.
-	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_08"); //Wende dich an Raven, der kennt sich mit so etwas aus!
+	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_03"); //Hmm... who has been badly affected.
+	AI_Output(hero, self, "Info_Mod_Eduard_Beliarstein_15_04"); //Can you fix it?
+	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_05"); //I've never done anything like this before, but maybe I have.
+	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_06"); //I need two pieces of black ore to give the stone back its strength.
+	AI_Output(hero, self, "Info_Mod_Eduard_Beliarstein_15_07"); //But there is no black ore here.
+	AI_Output(self, hero, "Info_Mod_Eduard_Beliarstein_32_08"); //Turn to Raven, he knows about these things!
 
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Eduard kann den Stein reparieren, benötigt dafür allerdings zwei Brocken schwarzes Erz. Raven weiß vielleicht, woher ich das bekomme.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Eduard can repair the stone, but he needs two pieces of black ore. Raven might know where I get it from.");
 };
 
 INSTANCE Info_Mod_Eduard_HabErz (C_INFO)
@@ -293,7 +293,7 @@ INSTANCE Info_Mod_Eduard_HabErz (C_INFO)
 	information	= Info_Mod_Eduard_HabErz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du das gewünschte Material!";
+	description	= "Here you have the desired material!";
 };
 
 FUNC INT Info_Mod_Eduard_HabErz_Condition()
@@ -307,16 +307,16 @@ FUNC INT Info_Mod_Eduard_HabErz_Condition()
 
 FUNC VOID Info_Mod_Eduard_HabErz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_HabErz_15_00"); //Hier hast du das gewünschte Material!
+	AI_Output(hero, self, "Info_Mod_Eduard_HabErz_15_00"); //Here you have the desired material!
 
 	B_GiveInvItems	(hero, self, ItMi_Zeitspalt_Addon, 2);
 
-	AI_Output(self, hero, "Info_Mod_Eduard_HabErz_32_01"); //Das ist gut. Ich werde das schwarze Erz nun mit dem Stein verbinden.
-	AI_Output(self, hero, "Info_Mod_Eduard_HabErz_32_02"); //Warte bis morgen und komm dann wieder!
+	AI_Output(self, hero, "Info_Mod_Eduard_HabErz_32_01"); //That's good news. I will now connect the black ore to the stone.
+	AI_Output(self, hero, "Info_Mod_Eduard_HabErz_32_02"); //Wait till tomorrow and then come back!
 
 	Bel_SteinReparieren = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Eduard repariert jetzt den Stein. Morgen ist er fertig.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Eduard's fixing the stone now. He'll be done tomorrow.");
 };
 
 INSTANCE Info_Mod_Eduard_SteinFertig (C_INFO)
@@ -327,7 +327,7 @@ INSTANCE Info_Mod_Eduard_SteinFertig (C_INFO)
 	information	= Info_Mod_Eduard_SteinFertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und?";
+	description	= "And?";
 };
 
 FUNC INT Info_Mod_Eduard_SteinFertig_Condition()
@@ -341,18 +341,18 @@ FUNC INT Info_Mod_Eduard_SteinFertig_Condition()
 
 FUNC VOID Info_Mod_Eduard_SteinFertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_SteinFertig_15_00"); //Und?
-	AI_Output(self, hero, "Info_Mod_Eduard_SteinFertig_32_01"); //Ich hab zwar die ganze Nacht gebraucht, aber der Stein pulsiert wieder voller Energie!
-	AI_Output(self, hero, "Info_Mod_Eduard_SteinFertig_32_02"); //Hier hast du ihn!
+	AI_Output(hero, self, "Info_Mod_Eduard_SteinFertig_15_00"); //And?
+	AI_Output(self, hero, "Info_Mod_Eduard_SteinFertig_32_01"); //It took me all night, but the stone pulsates with energy again!
+	AI_Output(self, hero, "Info_Mod_Eduard_SteinFertig_32_02"); //Here you have it!
 
 	B_GiveInvItems	(self, hero, ItMi_Beliarstein, 1);
 
-	AI_Output(hero, self, "Info_Mod_Eduard_SteinFertig_15_03"); //Ich werde nun zu Fahim zurückkehren.
-	AI_Output(self, hero, "Info_Mod_Eduard_SteinFertig_32_04"); //Tu das.
+	AI_Output(hero, self, "Info_Mod_Eduard_SteinFertig_15_03"); //I will now return to Fahim.
+	AI_Output(self, hero, "Info_Mod_Eduard_SteinFertig_32_04"); //Do that.
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Der Stein ist repariert und pulsiert wieder voll Energie. Jetzt sollte ich zu Fahim zurückkehren.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "The stone is repaired and pulsates with energy again. Now I should go back to Fahim.");
 };
 
 INSTANCE Info_Mod_Eduard_ToteNovizen (C_INFO)
@@ -363,7 +363,7 @@ INSTANCE Info_Mod_Eduard_ToteNovizen (C_INFO)
 	information	= Info_Mod_Eduard_ToteNovizen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab ein paar Fragen an dich.";
+	description	= "I have some questions for you.";
 };
 
 FUNC INT Info_Mod_Eduard_ToteNovizen_Condition()
@@ -376,14 +376,14 @@ FUNC INT Info_Mod_Eduard_ToteNovizen_Condition()
 
 FUNC VOID Info_Mod_Eduard_ToteNovizen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_ToteNovizen_15_00"); //Ich hab ein paar Fragen an dich.
-	AI_Output(self, hero, "Info_Mod_Eduard_ToteNovizen_32_01"); //(völlig fertig) Wa ... Wa ... Was willst du denn? Mir reicht es schon, was passiert ist! Diese Schatten ...
-	AI_Output(hero, self, "Info_Mod_Eduard_ToteNovizen_15_02"); //Was für Schatten?
-	AI_Output(self, hero, "Info_Mod_Eduard_ToteNovizen_32_03"); //(schaudert) Ich habe einen großen Schatten gesehen gestern Nacht ... Flügel flatterten ... ein Schrei ...
-	AI_Output(hero, self, "Info_Mod_Eduard_ToteNovizen_15_04"); //Was war es?
-	AI_Output(self, hero, "Info_Mod_Eduard_ToteNovizen_32_05"); //Dämon ... Ich glaube, es war ein ... Dämon!
+	AI_Output(hero, self, "Info_Mod_Eduard_ToteNovizen_15_00"); //I have some questions for you.
+	AI_Output(self, hero, "Info_Mod_Eduard_ToteNovizen_32_01"); //(completely finished) Wh-- Wh-- What do you want? I've had enough of what happened! These shadows....
+	AI_Output(hero, self, "Info_Mod_Eduard_ToteNovizen_15_02"); //What shadows?
+	AI_Output(self, hero, "Info_Mod_Eduard_ToteNovizen_32_03"); //(shudders) I saw a great shadow last night.... Wings fluttered.... a scream...
+	AI_Output(hero, self, "Info_Mod_Eduard_ToteNovizen_15_04"); //What was it?
+	AI_Output(self, hero, "Info_Mod_Eduard_ToteNovizen_32_05"); //demon I think it was a.... Demon!
 
-	B_LogEntry	(TOPIC_MOD_BEL_DAEMON, "Eduard hat einen Schatten gesehen. Er denkt, es sei ein Dämon gewesen. Ich sollte zu Raven gehen.");
+	B_LogEntry	(TOPIC_MOD_BEL_DAEMON, "Eduard saw a shadow. He thinks it was a demon. I should go to Raven.");
 };
 
 INSTANCE Info_Mod_Eduard_Skinner (C_INFO)
@@ -394,7 +394,7 @@ INSTANCE Info_Mod_Eduard_Skinner (C_INFO)
 	information	= Info_Mod_Eduard_Skinner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bringe die Traumrufe von Skinner.";
+	description	= "I bring the dream calls from Skinner.";
 };
 
 FUNC INT Info_Mod_Eduard_Skinner_Condition()
@@ -409,17 +409,17 @@ FUNC INT Info_Mod_Eduard_Skinner_Condition()
 
 FUNC VOID Info_Mod_Eduard_Skinner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_Skinner_15_00"); //Ich bringe die Traumrufe von Skinner. 80 Gold das Stück.
+	AI_Output(hero, self, "Info_Mod_Eduard_Skinner_15_00"); //I bring the dream calls from Skinner. 80 gold apiece.
 
 	B_GiveInvItems	(hero, self, ItMi_Traumruf, 8);
 
 	B_UseItem	(self, ItMi_Traumruf);
 
-	AI_Output(self, hero, "Info_Mod_Eduard_Skinner_32_01"); //(benebelt) Ahh, traumhaft und so günstig. Habe gerade genug Goldmünzen für acht Stück.
+	AI_Output(self, hero, "Info_Mod_Eduard_Skinner_32_01"); //Ahh, gorgeous and so cheap. Got just enough gold coins for eight.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 600);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Ich war bei Eduard. Die Traumrufe scheinen ihn ziemlich zu vernebeln.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "I was with Eduard. The dream cries seem to cloud him pretty much.");
 
 	Mod_EduardZuWenigGoldCounter = 3600;
 	
@@ -436,7 +436,7 @@ INSTANCE Info_Mod_Eduard_ZuWenigGold (C_INFO)
 	information	= Info_Mod_Eduard_ZuWenigGold_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, 600 Goldmünzen sind zu wenig.";
+	description	= "Hey, 600 gold coins is not enough.";
 };
 
 FUNC INT Info_Mod_Eduard_ZuWenigGold_Condition()
@@ -451,20 +451,20 @@ FUNC INT Info_Mod_Eduard_ZuWenigGold_Condition()
 
 FUNC VOID Info_Mod_Eduard_ZuWenigGold_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_ZuWenigGold_15_00"); //Hey, 600 Goldmünzen sind zu wenig.
-	AI_Output(self, hero, "Info_Mod_Eduard_ZuWenigGold_32_01"); //Tatsächlich? Habe es seit dem Rauchen nicht mehr so mit dem Rechnen. Wie viel schulde ich dir noch?
+	AI_Output(hero, self, "Info_Mod_Eduard_ZuWenigGold_15_00"); //Hey, 600 gold coins is not enough.
+	AI_Output(self, hero, "Info_Mod_Eduard_ZuWenigGold_32_01"); //Is that so? Haven't been so into arithmetic since smoking. How much do I owe you?
 
 	Info_ClearChoices	(Info_Mod_Eduard_ZuWenigGold);
 
-	Info_AddChoice	(Info_Mod_Eduard_ZuWenigGold, "120 Gold.", Info_Mod_Eduard_ZuWenigGold_C);
-	Info_AddChoice	(Info_Mod_Eduard_ZuWenigGold, "80 Gold.", Info_Mod_Eduard_ZuWenigGold_B);
-	Info_AddChoice	(Info_Mod_Eduard_ZuWenigGold, "40 Gold.", Info_Mod_Eduard_ZuWenigGold_A);
+	Info_AddChoice	(Info_Mod_Eduard_ZuWenigGold, "120 gold.", Info_Mod_Eduard_ZuWenigGold_C);
+	Info_AddChoice	(Info_Mod_Eduard_ZuWenigGold, "80 gold.", Info_Mod_Eduard_ZuWenigGold_B);
+	Info_AddChoice	(Info_Mod_Eduard_ZuWenigGold, "40 gold.", Info_Mod_Eduard_ZuWenigGold_A);
 };
 
 FUNC VOID Info_Mod_Eduard_ZuWenigGold_C()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_ZuWenigGold_C_15_00"); //120 Gold.
-	AI_Output(self, hero, "Info_Mod_Eduard_ZuWenigGold_C_32_01"); //Augenblick mal. Da fehlen mir leider ein paar Münzen. Ich gebe dir stattdessen 3 Erzbrocken, ja?
+	AI_Output(hero, self, "Info_Mod_Eduard_ZuWenigGold_C_15_00"); //120 gold.
+	AI_Output(self, hero, "Info_Mod_Eduard_ZuWenigGold_C_32_01"); //Now, wait a minute. There's a few coins missing. I'll give you three chunks of ore instead, okay?
 
 	B_GiveInvItems	(self, hero, ItMi_Nugget, 3);
 
@@ -475,12 +475,12 @@ FUNC VOID Info_Mod_Eduard_ZuWenigGold_C()
 
 FUNC VOID Info_Mod_Eduard_ZuWenigGold_E()
 {
-	AI_Output(self, hero, "Info_Mod_Eduard_ZuWenigGold_E_32_00"); //Oh, habe doch noch gerade so viel.
+	AI_Output(self, hero, "Info_Mod_Eduard_ZuWenigGold_E_32_00"); //Oh, I've barely got that much left.
 };
 
 FUNC VOID Info_Mod_Eduard_ZuWenigGold_B()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_ZuWenigGold_B_15_00"); //80 Gold.
+	AI_Output(hero, self, "Info_Mod_Eduard_ZuWenigGold_B_15_00"); //80 gold.
 
 	Info_Mod_Eduard_ZuWenigGold_E();
 
@@ -493,7 +493,7 @@ FUNC VOID Info_Mod_Eduard_ZuWenigGold_B()
 
 FUNC VOID Info_Mod_Eduard_ZuWenigGold_A()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_ZuWenigGold_A_15_00"); //40 Gold.
+	AI_Output(hero, self, "Info_Mod_Eduard_ZuWenigGold_A_15_00"); //40 gold.
 
 	Info_Mod_Eduard_ZuWenigGold_E();
 
@@ -524,8 +524,8 @@ FUNC INT Info_Mod_Eduard_AlteMineQuest_Condition()
 
 FUNC VOID Info_Mod_Eduard_AlteMineQuest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eduard_AlteMineQuest_32_00"); //Ja, ja, ich arbeite dran. Aber dieses komische Erzgemisch aus der Mine ist echt hart.
-	AI_Output(self, hero, "Info_Mod_Eduard_AlteMineQuest_32_01"); //Ich brauch noch mindestens einen halben Tag.
+	AI_Output(self, hero, "Info_Mod_Eduard_AlteMineQuest_32_00"); //Yeah, yeah, I'm working on it. But this strange ore mixture from the mine is really hard.
+	AI_Output(self, hero, "Info_Mod_Eduard_AlteMineQuest_32_01"); //It'll take me at least another half day.
 
 	AI_StopProcessInfos	(self);
 
@@ -553,7 +553,7 @@ FUNC INT Info_Mod_Eduard_AlteMineQuest2_Condition()
 
 FUNC VOID Info_Mod_Eduard_AlteMineQuest2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eduard_AlteMineQuest2_32_00"); //Hier. Ein echt krasses Stück Handwerkskunst, sage ich dir. Ich werde immer besser.
+	AI_Output(self, hero, "Info_Mod_Eduard_AlteMineQuest2_32_00"); //Here. It's a really great piece of craftsmanship, I'll tell you that. I'm getting better and better.
 
 	if (hero.guild == GIL_KDF)
 	{
@@ -564,7 +564,7 @@ FUNC VOID Info_Mod_Eduard_AlteMineQuest2_Info()
 		B_GiveInvItems	(self, hero, ItAr_BoeserBlickAbwender, 1);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Eduard_AlteMineQuest2_32_01"); //Ich weiß zwar nicht, welche verborgenen Eigenschaften in diesem veränderten Erz stecken, aber dieses gute Stück wird dir bestimmt irgendwie nützlich sein.
+	AI_Output(self, hero, "Info_Mod_Eduard_AlteMineQuest2_32_01"); //I don't know what hidden qualities are hidden in this modified ore, but this good piece will certainly be useful to you somehow.
 
 	B_GivePlayerXP	(100);
 };
@@ -577,7 +577,7 @@ INSTANCE Info_Mod_Eduard_Ruestung (C_INFO)
 	information	= Info_Mod_Eduard_Ruestung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir eine bessere Rüstung bekommen?";
+	description	= "Can I get better armor from you?";
 };
 
 FUNC INT Info_Mod_Eduard_Ruestung_Condition()
@@ -593,34 +593,34 @@ FUNC INT Info_Mod_Eduard_Ruestung_Condition()
 
 FUNC VOID Info_Mod_Eduard_Ruestung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_Ruestung_15_00"); //Kann ich bei dir eine bessere Rüstung bekommen?
+	AI_Output(hero, self, "Info_Mod_Eduard_Ruestung_15_00"); //Can I get better armor from you?
 
 	if (Kapitel > 3)
 	&& (Mod_ZweiteVerbesserung == FALSE)
 	&& (Mod_Gilde == 15)
 	{
-		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_32_02"); //Ich hab gehört, dass auf dem Weg zur Ausgrabungsstätte der Wassermagier ein Nachtmahr sein soll. Mit dessen Fell könnte ich deine schwarze Kriegerrüstung sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_32_02"); //I've heard that on the way to the water magician's excavation site there is supposed to be a nightmare. With its fur I could certainly improve your black war armor a little bit.
 	
 		Mod_ZweiteVerbesserung = TRUE;
 
 		Eduard_SpawnUpOne = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Auf dem Weg zur Ausgrabungsstätte der Wassermagier soll sich ein Nachtmahr befinden, mit dessen Fell Eduard meine schwarze Kriegerrüstung verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "On the way to the water magician's excavation site there will be a nightmare, whose fur Eduard can use to improve my black warrior armor.");
 	};
 
 	if (Kapitel > 1)
 	&& (Mod_ErsteVerbesserung == FALSE)
 	&& (Mod_Gilde == 12)
 	{
-		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_32_03"); //Ich hab gehört, dass beim Pass in Khorinis ein Schattensnapper sein soll. Mit dessen Haut könnte ich deine schwarze Novizenrobe sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_32_03"); //I hear there's a shadow snapper at the pass in Khorinis. With his skin, I could certainly improve your black novice robe a little bit.
 	
 		Mod_ErsteVerbesserung = TRUE;
 
 		Eduard_SpawnUpTwo = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Am Pass bei Khorinis soll sich ein Schattensnapper befinden, mit dessen Haut Eduard meine schwarze Novizenrobe verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "At the pass near Khorinis there is said to be a shadow snapper, whose skin Eduard can use to improve my black novice robe.");
 	};
 
 	Info_ClearChoices	(Info_Mod_Eduard_Ruestung);
@@ -629,13 +629,13 @@ FUNC VOID Info_Mod_Eduard_Ruestung_Info()
 	if (Mod_ZweiteVerbesserung == TRUE)
 	&& (Mod_Gilde == 15)
 	{
-		Info_AddChoice	(Info_Mod_Eduard_Ruestung, "Schwarze Kriegerrüstung verbessern", Info_Mod_Eduard_Ruestung_SKR_S);
+		Info_AddChoice	(Info_Mod_Eduard_Ruestung, "Improve Black War Armour", Info_Mod_Eduard_Ruestung_SKR_S);
 	};
 
 	if (Mod_ErsteVerbesserung == TRUE)
 	&& (Mod_Gilde == 12)
 	{
-		Info_AddChoice	(Info_Mod_Eduard_Ruestung, "Schwarze Novizenrobe verbessern", Info_Mod_Eduard_Ruestung_SNOV_S);
+		Info_AddChoice	(Info_Mod_Eduard_Ruestung, "Improve Black Novice Robe", Info_Mod_Eduard_Ruestung_SNOV_S);
 	};
 };
 
@@ -646,12 +646,12 @@ FUNC VOID Info_Mod_Eduard_Ruestung_BACK ()
 
 FUNC VOID Info_Mod_Eduard_Ruestung_SKR_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_Ruestung_SKR_S_15_00"); //Verbessere meine schwarze Kriegerrüstung.
+	AI_Output(hero, self, "Info_Mod_Eduard_Ruestung_SKR_S_15_00"); //Improve my black armour.
 
 	if (Npc_HasItems(hero, ItAt_NightmareFur) == 1)
 	&& (Npc_HasItems(hero, ItAr_SMK_L) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SKR_S_32_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SKR_S_32_01"); //All clear.
 
 		Npc_RemoveInvItems	(hero, ItAt_NightmareFur, 1);
 		
@@ -670,11 +670,11 @@ FUNC VOID Info_Mod_Eduard_Ruestung_SKR_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_SMK_L) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SKR_S_32_02"); //Du musst schon eine schwarze Kriegerrüstung haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SKR_S_32_02"); //You must have some black armour or I won't be able to fix it for you.
 	}
 	else if (Npc_HasItems(hero, ItAt_NightmareFur) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SKR_S_32_03"); //Wenn du das Nachtmahrfell nicht hast, kann ich deine Rüstung nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SKR_S_32_03"); //If you don't have the nightmare coat, I can't improve your armor.
 	};
 
 	Info_ClearChoices	(Info_Mod_Eduard_Ruestung);
@@ -682,12 +682,12 @@ FUNC VOID Info_Mod_Eduard_Ruestung_SKR_S ()
 
 FUNC VOID Info_Mod_Eduard_Ruestung_SNOV_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Eduard_Ruestung_SNOV_S_15_00"); //Verbessere meine schwarze Novizenrobe.
+	AI_Output(hero, self, "Info_Mod_Eduard_Ruestung_SNOV_S_15_00"); //Improve my black novice robe.
 
 	if (Npc_HasItems(hero, ItAt_Schattensnapperhaut) == 1)
 	&& (Npc_HasItems(hero, ItAr_NOV_DMB_01) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SNOV_S_32_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SNOV_S_32_01"); //All clear.
 
 		Npc_RemoveInvItems	(hero, ItAt_Schattensnapperhaut, 1);
 		
@@ -706,11 +706,11 @@ FUNC VOID Info_Mod_Eduard_Ruestung_SNOV_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_NOV_DMB_01) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SNOV_S_32_02"); //Du musst schon eine schwarze Novizenrobe haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SNOV_S_32_02"); //You must have a black novitiate sample or I won't be able to fix it for you.
 	}
 	else if (Npc_HasItems(hero, ItAt_Schattensnapperhaut) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SNOV_S_32_03"); //Wenn du die Schattensnapperhaut nicht hast, kann ich deine Rüstung nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Eduard_Ruestung_SNOV_S_32_03"); //If you don't have the shadow snapper skin, I can't improve your armor.
 	};
 
 	Info_ClearChoices	(Info_Mod_Eduard_Ruestung);
@@ -723,7 +723,7 @@ instance Info_Mod_Eduard_TeachCOMMON (C_INFO)
 	condition	= Info_Mod_Eduard_TeachCOMMON_Condition;
 	information	= Info_Mod_Eduard_TeachCOMMON_Info;
 	permanent	= TRUE;
-	description	= B_BuildLearnString("Schmieden lernen", B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common));
+	description	= B_BuildLearnString("Learning to forge", B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common));
 };
 
 func int Info_Mod_Eduard_TeachCOMMON_Condition ()
@@ -737,14 +737,14 @@ func int Info_Mod_Eduard_TeachCOMMON_Condition ()
 
 func void Info_Mod_Eduard_TeachCOMMON_Info ()
 {
-	AI_Output (other, self, "Info_Mod_Eduard_TeachCOMMON_15_00"); //Bring mir bei, wie man ein Schwert schmiedet!
+	AI_Output (other, self, "Info_Mod_Eduard_TeachCOMMON_15_00"); //Teach me how to forge a sword!
 	
 	if (B_TeachPlayerTalentSmith (self, other, WEAPON_Common))
 	{
-		AI_Output (self, other, "Info_Mod_Eduard_TeachCOMMON_32_01"); //Ganz einfach: Besorge dir ein Stück Rohstahl, halte es ins Feuer, bis es glüht.
-		AI_Output (self, other, "Info_Mod_Eduard_TeachCOMMON_32_02"); //Dann schlägst du am Amboss die Klinge zurecht.
-		AI_Output (self, other, "Info_Mod_Eduard_TeachCOMMON_32_03"); //Achte vor allem darauf, dass die Klinge nicht zu kalt wird. Du hast immer nur wenige Minuten Zeit, an deiner Waffe zu arbeiten ...
-		AI_Output (self, other, "Info_Mod_Eduard_TeachCOMMON_32_04"); //Den Rest findest du schon raus - reine Übungssache.
+		AI_Output (self, other, "Info_Mod_Eduard_TeachCOMMON_32_01"); //It's simple: Get yourself a piece of crude steel, hold it in the fire until it glows.
+		AI_Output (self, other, "Info_Mod_Eduard_TeachCOMMON_32_02"); //Then you'll strike the blade right on the anvil.
+		AI_Output (self, other, "Info_Mod_Eduard_TeachCOMMON_32_03"); //Make sure that the blade does not get too cold. You only have a few minutes to work on your weapon...
+		AI_Output (self, other, "Info_Mod_Eduard_TeachCOMMON_32_04"); //You'll find out the rest - just practice stuff.
 	};
 };
 

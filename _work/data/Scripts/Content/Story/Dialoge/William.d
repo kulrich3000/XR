@@ -6,7 +6,7 @@ INSTANCE Info_Mod_William_Hi (C_INFO)
 	information	= Info_Mod_William_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_William_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_William_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_William_Hi_06_01"); //Ich bin William, der Fischer.
+	AI_Output(self, hero, "Info_Mod_William_Hi_06_01"); //I'm William, the fisherman.
 };
 
 INSTANCE Info_Mod_William_Flugblaetter (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_William_Flugblaetter (C_INFO)
 	information	= Info_Mod_William_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_William_Flugblaetter_Condition()
@@ -50,11 +50,11 @@ FUNC VOID Info_Mod_William_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_William_Flugblaetter_06_01"); //Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_William_Flugblaetter_06_01"); //Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_William_Flugblaetter_06_02"); //Hm, naha, Käse mag ich zwar nicht, aber trotzdem Danke, dass du mir Bescheid gesagt hast.
+	AI_Output(self, hero, "Info_Mod_William_Flugblaetter_06_02"); //I don't like cheese, but thank you for telling me.
 
 	Mod_Flugblaetter += 1;
 };
@@ -67,7 +67,7 @@ INSTANCE Info_Mod_William_HalvorHolFische (C_INFO)
 	information	= Info_Mod_William_HalvorHolFische_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin hier um deine Fische zu holen.";
+	description	= "I'm here to get your fish.";
 };
 
 FUNC INT Info_Mod_William_HalvorHolFische_Condition()
@@ -81,28 +81,28 @@ FUNC INT Info_Mod_William_HalvorHolFische_Condition()
 
 FUNC VOID Info_Mod_William_HalvorHolFische_Info()
 {
-	AI_Output(hero, self, "Info_Mod_William_HalvorHolFische_15_00"); //Ich bin hier um deine Fische zu holen.
+	AI_Output(hero, self, "Info_Mod_William_HalvorHolFische_15_00"); //I'm here to get your fish.
 
 	if (!Npc_IsDead(Waran_William))
 	{
-		AI_Output(self, hero, "Info_Mod_William_HalvorHolFische_06_01"); //Ich hab da ein Problem und du bist der Richtige, um es zu lösen.
-		AI_Output(hero, self, "Info_Mod_William_HalvorHolFische_15_02"); //Was ist das für ein Problem?
-		AI_Output(self, hero, "Info_Mod_William_HalvorHolFische_06_03"); //Dort drüben ist ein Waran und ich muss ständig in Angst leben gefressen zu werden.
-		AI_Output(hero, self, "Info_Mod_William_HalvorHolFische_15_04"); //Ich soll also den Waran für dich töten?
-		AI_Output(self, hero, "Info_Mod_William_HalvorHolFische_06_05"); //Genau, dann geb ich dir auch die Fische für Halvor.
-		AI_Output(hero, self, "Info_Mod_William_HalvorHolFische_15_06"); //Na gut.
+		AI_Output(self, hero, "Info_Mod_William_HalvorHolFische_06_01"); //I got a problem, and you're the one to solve it.
+		AI_Output(hero, self, "Info_Mod_William_HalvorHolFische_15_02"); //What's the problem?
+		AI_Output(self, hero, "Info_Mod_William_HalvorHolFische_06_03"); //There's a monitor over there and I have to live in constant fear of being eaten.
+		AI_Output(hero, self, "Info_Mod_William_HalvorHolFische_15_04"); //So you want me to kill the monitor for you?
+		AI_Output(self, hero, "Info_Mod_William_HalvorHolFische_06_05"); //Right, then I'll give you the fish for Halvor.
+		AI_Output(hero, self, "Info_Mod_William_HalvorHolFische_15_06"); //All right, all right.
 
-		B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "William will mir seinen Fang erst geben, wenn ich den Waran, der in seiner Nähe lebt, getötet habe.");
+		B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "William won't give me his catch until I kill the monitor who lives near him.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_William_HalvorHolFische_06_07"); //Hier hast du meinen Fang.
+		AI_Output(self, hero, "Info_Mod_William_HalvorHolFische_06_07"); //Here's my catch.
 
 		B_GiveInvItems	(self, hero, ItFo_Fish, 10);
 
 		Mod_HalvorHolFischeQuest = 2;
 
-		B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "William hat mir seinen Fang gegeben.");
+		B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "William gave me his catch.");
 	};
 };
 
@@ -114,7 +114,7 @@ INSTANCE Info_Mod_William_WaranDead (C_INFO)
 	information	= Info_Mod_William_WaranDead_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Waran ist tot.";
+	description	= "The monitor is dead.";
 };
 
 FUNC INT Info_Mod_William_WaranDead_Condition()
@@ -129,8 +129,8 @@ FUNC INT Info_Mod_William_WaranDead_Condition()
 
 FUNC VOID Info_Mod_William_WaranDead_Info()
 {
-	AI_Output(hero, self, "Info_Mod_William_WaranDead_15_00"); //Der Waran ist tot.
-	AI_Output(self, hero, "Info_Mod_William_WaranDead_06_01"); //Vielen Dank. Hier hast du meinen Fang.
+	AI_Output(hero, self, "Info_Mod_William_WaranDead_15_00"); //The monitor is dead.
+	AI_Output(self, hero, "Info_Mod_William_WaranDead_06_01"); //Thank you very much. Here's my catch.
 
 	B_GiveInvItems	(self, hero, ItFo_Fish, 10);
 
@@ -138,7 +138,7 @@ FUNC VOID Info_Mod_William_WaranDead_Info()
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "William hat mir seinen Fang gegeben.");
+	B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "William gave me his catch.");
 };
 
 INSTANCE Info_Mod_William_Pickpocket (C_INFO)

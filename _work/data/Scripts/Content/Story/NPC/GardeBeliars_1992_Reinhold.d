@@ -1,7 +1,7 @@
 INSTANCE GardeBeliars_1992_Reinhold	(Npc_Default)
 {
 	//----- Monster ----
-	name							=	"Reinhold";
+	name							=	"purehold";
 	guild							=	GIL_NONE;
 	id			= 	1992;
 	voice			=	14;

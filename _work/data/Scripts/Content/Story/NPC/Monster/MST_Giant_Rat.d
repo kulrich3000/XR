@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Giant_Rat(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Riesenratte";
+	name							=	"Giant Rat";
 	guild							=	GIL_Giant_Rat;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Giant_Rat;
 	level							=	3;
@@ -59,7 +59,7 @@ PROTOTYPE Mst_Default_Rat(C_Npc)
 	//----- Monster ----
 	level = 1;
 
-	name							=	"Ratte";
+	name							=	"rat";
 	guild							=	GIL_Meatbug;
 
 	attribute[ATR_HITPOINTS_MAX]	=	5;
@@ -241,7 +241,7 @@ INSTANCE Rat_Sekob_01	(Mst_Default_Giant_Rat)
 {
 	level = 1;
 
-	name							=	"Ratte";
+	name							=	"rat";
 	guild							=	GIL_Meatbug;
 
 	attribute[ATR_HITPOINTS_MAX]	=	5;
@@ -263,7 +263,7 @@ INSTANCE Rat_Sekob_02	(Mst_Default_Giant_Rat)
 {
 	level = 1;
 
-	name							=	"Ratte";
+	name							=	"rat";
 	guild							=	GIL_Meatbug;
 
 	attribute[ATR_HITPOINTS_MAX]	=	5;
@@ -285,7 +285,7 @@ INSTANCE Rat_Sekob_03	(Mst_Default_Giant_Rat)
 {
 	level = 1;
 
-	name							=	"Ratte";
+	name							=	"rat";
 	guild							=	GIL_Meatbug;
 
 	attribute[ATR_HITPOINTS_MAX]	=	5;
@@ -307,7 +307,7 @@ INSTANCE Rat_Flora	(Mst_Default_Giant_Rat)
 {
 	level = 1;
 
-	name							=	"Ratte";
+	name							=	"rat";
 	guild							=	GIL_Meatbug;
 
 	attribute[ATR_HITPOINTS_MAX]	=	5;
@@ -333,7 +333,7 @@ INSTANCE Rat_Flora	(Mst_Default_Giant_Rat)
 INSTANCE YGiant_Rat	(Mst_Default_Giant_Rat)
 {
 	//----- Monster ----
-	name							=	"junge Riesenratte";
+	name							=	"Young Giant Rat";
 	level							=	2;
 
 	//----- Attribute ----

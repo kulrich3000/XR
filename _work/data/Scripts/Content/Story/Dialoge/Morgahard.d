@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Morgahard_Hi (C_INFO)
 	information	= Info_Mod_Morgahard_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, wer bist du und was ist deine Aufgabe im Lager?";
+	description	= "Hello, who are you and what's your job at the camp?";
 };
 
 FUNC INT Info_Mod_Morgahard_Hi_Condition()
@@ -19,14 +19,14 @@ FUNC INT Info_Mod_Morgahard_Hi_Condition()
 
 FUNC VOID Info_Mod_Morgahard_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_Hi_15_00"); //Hallo, wer bist du und was ist deine Aufgabe im Lager?
-	AI_Output(self, hero, "Info_Mod_Morgahard_Hi_07_01"); //Ich bin Morgahard. Ich mache dieses und jenes. Manchmal organisiere ich einen Überfall, und manchmal organisiere ich heiße Ware.
-	AI_Output(self, hero, "Info_Mod_Morgahard_Hi_07_02"); //Außerdem kann ich dir manchen Banditentrick zeigen, der bei Überfällen Gold wert ist.
+	AI_Output(hero, self, "Info_Mod_Morgahard_Hi_15_00"); //Hello, who are you and what's your job at the camp?
+	AI_Output(self, hero, "Info_Mod_Morgahard_Hi_07_01"); //I'm Morgahard. I'm doing this and that. Sometimes I organize a robbery, and sometimes I organize hot goods.
+	AI_Output(self, hero, "Info_Mod_Morgahard_Hi_07_02"); //Besides, I can show you some bandit trick that's worth its weight in gold on assaults.
 
 	Npc_SetRefuseTalk	(self, 60);
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_BANDITEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "Von Morgahard kann ich gewisse Banditentricks lernen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "I can learn certain bandit tricks from Morgahard.");
 };
 
 INSTANCE Info_Mod_Morgahard_OrkQuest (C_INFO)
@@ -50,61 +50,61 @@ FUNC INT Info_Mod_Morgahard_OrkQuest_Condition()
 
 FUNC VOID Info_Mod_Morgahard_OrkQuest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_07_00"); //Hey, ich habe da vielleicht etwas für dich, womit du dich im Lager bewähren kannst.
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_07_01"); //Etwas anspruchsvoller, als nur paar mickrige Händler zu überfallen. Wobei es für uns mittlerweile auch schon fast zur Gewohnheit geworden ist.
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_07_02"); //Es treiben sich nämlich immer wieder Patrouillen des feindlichen Orklagers in der Nähe des Lagers herum.
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_07_03"); //Vielleicht bist du während deiner Gefangenschaft in der Barriere auch schon mal Orks begegnet?
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_07_00"); //Hey, I might have something for you to prove yourself in camp.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_07_01"); //It's a little more sophisticated than robbing a few miserable dealers. Meanwhile it has almost become a habit for us.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_07_02"); //There are always patrols of the enemy Orklager around the camp.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_07_03"); //Maybe you have met orcs during your imprisonment in the barrier?
 
 	Log_CreateTopic	(TOPIC_MOD_BDT_MORGAHARD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_MORGAHARD, LOG_RUNNING);
 
 	Info_ClearChoices	(Info_Mod_Morgahard_OrkQuest);
 
-	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "Ich habe damals im Alleingang die Orkstadt niedergemacht ...", Info_Mod_Morgahard_OrkQuest_C);
-	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "Echte, große, böse Orks?!", Info_Mod_Morgahard_OrkQuest_B);
-	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "Ja, bin tatsächlich paar mal Orks über den Weg gelaufen ...", Info_Mod_Morgahard_OrkQuest_A);
+	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "At that time, I single-handedly crushed the Orc City....", Info_Mod_Morgahard_OrkQuest_C);
+	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "Real, big, evil orcs?!", Info_Mod_Morgahard_OrkQuest_B);
+	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "Yeah, actually ran across orcs a couple of times...", Info_Mod_Morgahard_OrkQuest_A);
 };
 
 FUNC VOID Info_Mod_Morgahard_OrkQuest_D()
 {
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_D_07_00"); //Jedenfalls haben unsere Späher beobachtet, wie sich jeden Abend eine Gruppe Orks in der kleinen Höhle direkt unterhalb unseres Lagers niederlässt.
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_D_07_01"); //Und deine Aufgabe ist es nun, mit einer Gruppe Banditen nachts hinzuschleichen und sie zu überraschen, wenn sie arglos auf ihren Schlaffelle am Boden sitzen und ihre Waffen neben sich abgelegt haben.
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_D_07_02"); //Was sagst du? Das würde dir einiges Ansehen im Lager einbringen.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_D_07_00"); //In any case, our scouts have watched a group of orcs settling every evening in the small cave just below our camp.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_D_07_01"); //And your job now is to sneak out with a group of bandits at night and surprise them when they are sitting on their slack skins at ground level and have laid down their weapons next to them.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_D_07_02"); //What do you say? That'd bring you a lot of respect in the camp.
 
 	Info_ClearChoices	(Info_Mod_Morgahard_OrkQuest);
 
-	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "Das ist mir zu gefährlich.", Info_Mod_Morgahard_OrkQuest_F);
-	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "Eine kleine Gruppe schlafender Orks?", Info_Mod_Morgahard_OrkQuest_E);
+	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "It's too dangerous for me.", Info_Mod_Morgahard_OrkQuest_F);
+	Info_AddChoice	(Info_Mod_Morgahard_OrkQuest, "A small group of sleeping orcs?", Info_Mod_Morgahard_OrkQuest_E);
 };
 
 FUNC VOID Info_Mod_Morgahard_OrkQuest_C()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_C_15_00"); //Ich habe damals im Alleingang die Orkstadt niedergemacht ...
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_C_07_01"); //Aber klar, und ich habe gestern alleine einen schwarzen Troll getötet. (lacht) Aber mit dieser Einstellung schaffst du ganz bestimmt die paar Orks.
+	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_C_15_00"); //At that time, I single-handedly crushed the Orc City....
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_C_07_01"); //But of course, and I killed a black troll alone yesterday. (laughs) But with this attitude, you'll definitely be able to do the few orcs.
 
 	Info_Mod_Morgahard_OrkQuest_D();
 };
 
 FUNC VOID Info_Mod_Morgahard_OrkQuest_B()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_B_15_00"); //Echte, große, böse Orks?!
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_B_07_01"); //Ach, stell dich nicht so an. Die meisten von uns haben zumindest schon mal einen Orkspäher erschlagen und du hast bewiesen, dass du kämpfen kannst.
+	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_B_15_00"); //Real, big, evil orcs?!
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_B_07_01"); //Oh, don't be like that. Most of us have at least killed an orc scout before, and you've proven you can fight.
 
 	Info_Mod_Morgahard_OrkQuest_D();
 };
 
 FUNC VOID Info_Mod_Morgahard_OrkQuest_A()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_A_15_00"); //Ja, bin tatsächlich paar mal Orks über den Weg gelaufen ...
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_A_07_01"); //Und du lebst noch. Das sind schon mal gute Voraussetzungen für die Aufgabe.
+	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_A_15_00"); //Yeah, actually ran across orcs a couple of times...
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_A_07_01"); //And you're still alive. These are already good conditions for the task.
 
 	Info_Mod_Morgahard_OrkQuest_D();
 };
 
 FUNC VOID Info_Mod_Morgahard_OrkQuest_F()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_F_15_00"); //Das ist mir zu gefährlich.
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_F_07_01"); //Was?! Ich bin wirklich enttäuscht von dir.
+	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_F_15_00"); //It's too dangerous for me.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_F_07_01"); //What?! I'm really disappointed in you.
 
 	Mod_MorgahardBeleidigt = 1;
 
@@ -117,9 +117,9 @@ FUNC VOID Info_Mod_Morgahard_OrkQuest_F()
 
 FUNC VOID Info_Mod_Morgahard_OrkQuest_E()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_E_15_00"); //Eine kleine Gruppe schlafender Orks? Du kannst mir schon mal einen Käufer für ihre Ausrüstung ausfindig machen.
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_E_07_01"); //Sehr gut, ich habe auch nichts anderes von dir erwartet. Finde drei bis fünf anderen Banditen aus dem Lager, die um Mitternacht vom Lagerausgang aus mit dir aufbrechen.
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_E_07_02"); //Und nimm auch Skinner mit. Der Faulpelz sollte auch mal wieder an die frische Luft gehen.
+	AI_Output(hero, self, "Info_Mod_Morgahard_OrkQuest_E_15_00"); //A small group of sleeping orcs? You can find me a buyer for their equipment.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_E_07_01"); //Very well, I didn't expect anything else from you. Find three to five other bandits from the camp who will leave at midnight from the camp exit with you.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkQuest_E_07_02"); //And take Skinner too. The lazybones should get some fresh air.
 
 	Mod_Orks_Morgahard = 1;
 
@@ -130,7 +130,7 @@ FUNC VOID Info_Mod_Morgahard_OrkQuest_E()
 
 	Info_ClearChoices	(Info_Mod_Morgahard_OrkQuest);
 
-	B_LogEntry	(TOPIC_MOD_BDT_MORGAHARD, "Morgahard hat mich damit betraut, eine kleine Orkpatrouille auszuschalten, die sich jede Nacht in der Höhle unterhalb des Lagers niederlässt. Mit Skinner und drei bis fünf anderen Banditen soll ich mich um Mitternacht vor dem Lager versammeln, um loszuschlagen.");
+	B_LogEntry	(TOPIC_MOD_BDT_MORGAHARD, "Morgahard entrusted me with taking out a small orc patrol that settles in the cave below the camp every night. With Skinner and three to five other bandits, I shall gather in front of the camp at midnight to strike out.");
 };
 
 INSTANCE Info_Mod_Morgahard_OrkPatroullie (C_INFO)
@@ -141,7 +141,7 @@ INSTANCE Info_Mod_Morgahard_OrkPatroullie (C_INFO)
 	information	= Info_Mod_Morgahard_OrkPatroullie_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Orks werden die Höhle nicht mehr verlassen.";
+	description	= "The orcs will never leave the cave again.";
 };
 
 FUNC INT Info_Mod_Morgahard_OrkPatroullie_Condition()
@@ -154,8 +154,8 @@ FUNC INT Info_Mod_Morgahard_OrkPatroullie_Condition()
 
 FUNC VOID Info_Mod_Morgahard_OrkPatroullie_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_OrkPatroullie_15_00"); //Die Orks werden die Höhle nicht mehr verlassen.
-	AI_Output(self, hero, "Info_Mod_Morgahard_OrkPatroullie_07_01"); //Sehr gut, ich habe nichts anderes erwartet. Hier ist deine Belohnung.
+	AI_Output(hero, self, "Info_Mod_Morgahard_OrkPatroullie_15_00"); //The orcs will never leave the cave again.
+	AI_Output(self, hero, "Info_Mod_Morgahard_OrkPatroullie_07_01"); //Very good, I expected nothing else. Here's your reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
@@ -192,33 +192,33 @@ FUNC INT Info_Mod_Morgahard_AlterWaldMann_Condition()
 
 FUNC VOID Info_Mod_Morgahard_AlterWaldMann_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_00"); //Hey, nach den ganzen überstandenen Abenteuern gibt es da eine Sache, für die du mir am besten geeignet erscheinst. Du bist ja viel herumgekommen ...
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_01"); //Ja, worum geht es?
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_02"); //Nun, Logan war zufällig ein Schriftstück der Verwandlungsmagier in die Hände gefallen.
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_03"); //Zufällig?
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_04"); //Tja, er war bei ihnen, um sich für die Unterstützung bei der Sache mit den Orks zu bedanken und um mal wieder einige Geschäfte abzuschließen.
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_05"); //Und in einem Stapel Blätter, nun ja, las er etwas von einem Schatz und nahm das Blatt an sich.
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_06"); //So, so, an sich genommen ...
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_07"); //Jedenfalls ging es darin um einen Hüter der Tiere und des Waldes, der uralt sein soll, blind, die Wälder von Khorata bewohnt und so weiter und sich im Besitz ...
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_08"); //... im Besitz von großen Schätzen befinden soll, vermute ich mal.
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_09"); //Ähh, ja, genau.
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_10"); //Und ich soll jetzt an die Schätze kommen? Einen uralter, blinden Greis beklauen?
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_11"); //Also wirklich, das solltet ihr ja gerade noch selbst hinbekommen ...
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_12"); //Ja, ja, das haben wir ja auch versucht. Das Problem ist nur, dass er auch ein wenig magisch begabt scheint ...
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_13"); //Magisch begabt?
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_14"); //Ja, als wir ihn versuchten zu stellen, hat er uns mit allerlei Zauberkünsten, Verwandlung und Täuschung ein Schnippchen geschlagen und uns die lange Nase gedreht.
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_15"); //Wir haben es immer wieder versucht ihn zu erwischen, mussten aber zuletzt unverrichteter Dinge unter seinem höhnischen Gelächter wieder abziehen.
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_16"); //Auf normalem Wege kommen wir also nicht an den Schatz.
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_17"); //Hmm, "normalem Wege". Und was soll ich da jetzt machen?
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_18"); //Nun, versuch irgendwie mehr über ihn zu erfahren, lass deine Kontakte spielen.
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_19"); //Die Verwandlungsmagier können wir schlecht fragen, da es nach dem Verschwinden des Schriftstückes, nun ja, ihr Misstrauen erwecken könnte. Du verstehst?
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_20"); //Du musst also einen anderen Weg finden an weitere Informationen zu kommen.
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_21"); //Vielleicht kannst du ja etwas von diesen Waldspinnern erfahren, die überall auf Khorinis ihre Zelte unter den Bäumen aufgeschlagen haben ...
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_22"); //Na ja, du machst das schon. Sag Bescheid, wenn du den Schatz gefunden hast.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_00"); //Hey, after all the adventures you've survived, there's one thing you seem to me to be the most suitable for. You've been around a lot...
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_01"); //Yeah, what's it about?
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_02"); //Well, Logan had accidentally fallen into the hands of a document written by the transforming magicians.
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_03"); //Coincidentally?
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_04"); //Well, he was there to thank them for their support with the Orcs and to close some deals.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_05"); //And in a pile of leaves, well, he read something of a treasure and took the leaf itself.
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_06"); //So, so, by itself....
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_07"); //Anyway, it was about a guardian of the animals and the forest, which is supposed to be ancient, blind, inhabited the forests of Khorata and so on and owned....
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_08"); //... in possession of great treasures, I suppose.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_09"); //Uh, yeah, that's right.
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_10"); //And I'm supposed to get to the treasures now? Steal an old blind old man's old age?
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_11"); //Really, you should just be able to do it yourself....
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_12"); //Yeah, yeah, that's what we tried to do. The only problem is that he also seems to be a little magical...
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_13"); //Magic gifted?
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_14"); //Yes, when we tried to set him up, he fooled us with all kinds of magic, metamorphosis and deception and turned our long nose.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_15"); //We tried again and again to catch him, but we had to pull out under his scornful laughter.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_16"); //So we can't get to the treasure in the normal way.
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann_15_17"); //Hmm, "normal way". Und was soll ich da jetzt machen?
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_18"); //Well, try to find out more about him somehow, let your contacts play.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_19"); //We can hardly ask the transforming mages, because it could raise their suspicion after the disappearance of the document, well, of course. You understand?
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_20"); //So you have to find another way to get more information.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_21"); //Maybe you can find out something about those forest spinners who have pitched their tents under the trees all over Khorinis...
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann_07_22"); //Well, you'll be fine. Let me know when you find the treasure.
 
 	Log_CreateTopic	(TOPIC_MOD_BDT_ALTERMANN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_ALTERMANN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Morgahard will, dass ich mehr über einen Hüter der Tiere und des Waldes in Erfahrung bringe, der sich in Khorata befindet und im Besitz eines großen Schatzes sein soll. Er meinte, dass womöglich die Waldläufer mir mehr zu ihm sagen könnten. Sobald ich den Schatz gefunden habe, soll ich Morgahard wieder Bescheid geben.");
+	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Morgahard wants me to learn more about a keeper of the animals and the forest, who is in Khorata and is said to own a great treasure. He said that maybe the Rangers could tell me more about him. As soon as I find the treasure, I have to let Morgahard know.");
 };
 
 INSTANCE Info_Mod_Morgahard_AlterWaldMann2 (C_INFO)
@@ -241,13 +241,13 @@ FUNC INT Info_Mod_Morgahard_AlterWaldMann2_Condition()
 
 FUNC VOID Info_Mod_Morgahard_AlterWaldMann2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann2_07_00"); //Und, konntest mittlerweile mehr über den Hüter des Waldes erfahren?
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann2_15_01"); //Ähhm, ja ... sogar seinen Schatz konnte ich finden.
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann2_07_02"); //(in heller Erregung) Seinen Schatz? Wo ist er? Gold, Silber, Edelsteine und Dublonen irgendwo in der Erde vergraben, darauf wartend, dass wir sie bergen?
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann2_15_03"); //Nun, unter der Erde ist schon richtig. Nur ist es kein Gold und Silber, womit der alte Mann des Waldes nicht so viel anzufangen weiß.
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann2_15_04"); //Es ist der Schatz des Waldes des Wissens, Kräuter, Tränke und Pflanzen.
-	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann2_07_05"); //Jedenfalls ging es darin um einen Hüter der Tiere und des Waldes, der uralt sein soll, blind, die Wälder von Khorata bewohnt und so weiter und sich im Besitz ...
-	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann2_15_06"); //Was, und dafür die ganze Mühe? Verdammt.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann2_07_00"); //And, have you learned more about the Keeper of the Forest?
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann2_15_01"); //Um, yeah.... I even found his treasure.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann2_07_02"); //His treasure? Where's he at? Gold, silver, gemstones and doubloons buried somewhere in the earth, waiting for us to recover them?
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann2_15_03"); //Well, underground's all right. But it's not gold and silver, which the old man of the forest doesn't know how to do so much.
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann2_15_04"); //It is the treasure of the forest of knowledge, herbs, potions and plants.
+	AI_Output(self, hero, "Info_Mod_Morgahard_AlterWaldMann2_07_05"); //Anyway, it was about a guardian of the animals and the forest, which is supposed to be ancient, blind, inhabited the forests of Khorata and so on and owned....
+	AI_Output(hero, self, "Info_Mod_Morgahard_AlterWaldMann2_15_06"); //What, and all that trouble? Damn it.
 
 	B_SetTopicStatus	(TOPIC_MOD_BDT_ALTERMANN, LOG_SUCCESS);
 };
@@ -260,7 +260,7 @@ INSTANCE Info_Mod_Morgahard_Lernen_Schleichen (C_INFO)
 	information	= Info_Mod_Morgahard_Lernen_Schleichen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString("Schleichen", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
+	description	= B_BuildLearnString("Sneak", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
 };
 
 FUNC INT Info_Mod_Morgahard_Lernen_Schleichen_Condition()
@@ -274,11 +274,11 @@ FUNC INT Info_Mod_Morgahard_Lernen_Schleichen_Condition()
 
 FUNC VOID Info_Mod_Morgahard_Lernen_Schleichen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_Lernen_Schleichen_15_00"); //Bring mir das Schleichen bei.
+	AI_Output(hero, self, "Info_Mod_Morgahard_Lernen_Schleichen_15_00"); //Teach me to sneak.
 
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 	{
-		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Schleichen_07_01"); //Mit weichen Sohlen hast du eine größere Chance, dich deinen Gegnern zu nähern, ohne dass sie es merken.
+		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Schleichen_07_01"); //Soft soles give you a better chance to approach your opponents without them noticing.
 	};
 };
 
@@ -290,7 +290,7 @@ INSTANCE Info_Mod_Morgahard_Lernen_Knockout (C_INFO)
 	information	= Info_Mod_Morgahard_Lernen_Knockout_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Niederschlagen (10 Lernpunkte)";
+	description	= "Precipitation (10 learning points)";
 };
 
 FUNC INT Info_Mod_Morgahard_Lernen_Knockout_Condition()
@@ -304,21 +304,21 @@ FUNC INT Info_Mod_Morgahard_Lernen_Knockout_Condition()
 
 FUNC VOID Info_Mod_Morgahard_Lernen_Knockout_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_Lernen_Knockout_15_00"); //Zeig mir, wie ich jemanden niederschlagen kann.
+	AI_Output(hero, self, "Info_Mod_Morgahard_Lernen_Knockout_15_00"); //Show me how to knock someone down.
 
 	if (hero.lp >= 10)
 	{
-		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_01"); //Nun gut, du willst also wissen, wie du jemanden mit einem Überraschungsangriff überrumpeln kannst.
-		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_02"); //Schleiche dich zunächst leise von hinten an den Betreffenden heran, ohne bemerkt zu werden.
-		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_03"); //Wenn du dann nah genug bist, verpasst du ihm mit deiner Waffe einen ordentlichen Schlag auf den Hinterkopf.
-		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_04"); //Da dein Opfer nicht darauf eingestellt ist, wird es besonders großen Schaden nehmen und mit etwas Glück gleich zu Boden gehen, ohne dass du noch weiter nachhelfen musst.
-		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_05"); //Das wirkt übrigens auch bei Schlafenden, bei Tieren, Orks und was sonst noch so kreucht und fleucht.
+		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_01"); //All right, so you want to know how to surprise someone with a surprise attack.
+		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_02"); //Sneak quietly from behind to the person without being noticed.
+		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_03"); //If you're close enough, give him a good blow to the back of the head with your gun.
+		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_04"); //Since your victim is not prepared for this, it will be particularly damaging and, with a little luck, will go down without you having to help any further.
+		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_05"); //By the way, this also has an effect on sleepers, animals, orcs and everything else that cracks and lights up.
 
 		Knockout_Perk = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_06"); //Komm wieder, wenn du mehr Erfahrung hast.
+		AI_Output(self, other, "Info_Mod_Morgahard_Lernen_Knockout_31_06"); //Come back when you have more experience.
 	};
 };
 

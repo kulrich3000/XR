@@ -15,8 +15,8 @@ FUNC INT Info_Mod_Gidan_FI_Hi_Condition()
 
 FUNC VOID Info_Mod_Gidan_FI_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gidan_FI_Hi_13_00"); //Du warst schneller hier als ich dich erwartet hatte. Für dich hab ich ein ganz besonderes Empfangskomitee.
-	AI_Output(self, hero, "Info_Mod_Gidan_FI_Hi_13_01"); //Und als Bonus die Antwort auf eine kleine Frage. Was will die neue Bruderschaft mit magischem Erz? SIEH SELBST. (lacht)
+	AI_Output(self, hero, "Info_Mod_Gidan_FI_Hi_13_00"); //You got here faster than I expected. I have a very special welcoming committee for you.
+	AI_Output(self, hero, "Info_Mod_Gidan_FI_Hi_13_01"); //And as a bonus, the answer to a small question. What does the new brotherhood want with magic ore? SIEH SELBST. (laughs)
 
 	AI_StopProcessInfos	(self);
 
@@ -45,7 +45,7 @@ FUNC INT Info_Mod_Gidan_FI_FirstWaveDead_Condition()
 
 FUNC VOID Info_Mod_Gidan_FI_FirstWaveDead_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gidan_FI_FirstWaveDead_13_00"); //Du bist gut. Doch sobald wir dein Blut haben, wird der Schläfer wieder auferstehen.
+	AI_Output(self, hero, "Info_Mod_Gidan_FI_FirstWaveDead_13_00"); //You're good. But once we have your blood, the sleeper will rise again.
 
 	AI_StopProcessInfos	(self);
 
@@ -72,7 +72,7 @@ FUNC INT Info_Mod_Gidan_FI_SecondWaveDead_Condition()
 
 FUNC VOID Info_Mod_Gidan_FI_SecondWaveDead_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gidan_FI_SecondWaveDead_13_00"); //(lacht) Du hast schon zu lange überlebt! Jetzt wirst du sterben!
+	AI_Output(self, hero, "Info_Mod_Gidan_FI_SecondWaveDead_13_00"); //You've survived too long! Now you're going to die!
 
 	AI_StopProcessInfos	(self);
 

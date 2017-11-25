@@ -18,15 +18,15 @@ FUNC INT Info_Mod_Lobart_Hi_Condition()
 
 FUNC VOID Info_Mod_Lobart_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_00"); //(misstrauisch) Ein weiterer frisch entflohener Gefangener? Oder warum treibst du dich hier herum?
-	AI_Output(hero, self, "Info_Mod_Lobart_Hi_15_01"); //Ersteres.
-	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_02"); //Da wird Lord Hagen wohl wieder ein Jährchen altern, wenn er dich sieht.
-	AI_Output(hero, self, "Info_Mod_Lobart_Hi_15_03"); //Wieso? Was ist denn los?
-	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_04"); //Er scheint nicht gerade versessen darauf, euch Knastis in seiner Stadt aufzunehmen.
-	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_05"); //Man überlegt schon, wie man euch wieder vertreiben kann.
-	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_06"); //Ist natürlich nur das, was man so hört. Mir ist es egal.
-	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_07"); //So viel kann man mir nicht klauen, und ihr seid ja auch bestimmt nicht alle schlecht.
-	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_08"); //Wenn du ein bisschen Arbeit suchst - ich brauche noch jemanden, der für mich anpackt.
+	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_00"); //Another freshly escaped prisoner? Or why are you hanging around here?
+	AI_Output(hero, self, "Info_Mod_Lobart_Hi_15_01"); //The former.
+	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_02"); //Lord Hagen must be about a year old when he sees you.
+	AI_Output(hero, self, "Info_Mod_Lobart_Hi_15_03"); //Why? What's going on?
+	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_04"); //He doesn't seem very keen on admitting you guys to jails in his town.
+	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_05"); //They're thinking about how to drive you away again.
+	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_06"); //Of course, that's just what they say. I don't care.
+	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_07"); //You can't steal that much from me, and you're not all bad either.
+	AI_Output(self, hero, "Info_Mod_Lobart_Hi_26_08"); //If you're looking for a little work, I need someone else to help me.
 };
 
 INSTANCE Info_Mod_Lobart_Knastis (C_INFO)
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Lobart_Knastis (C_INFO)
 	information	= Info_Mod_Lobart_Knastis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie viele ehemalige Sträflinge sind denn in Khorinis?";
+	description	= "How many ex-convicts are there in Khorinis?";
 };
 
 FUNC INT Info_Mod_Lobart_Knastis_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mod_Lobart_Knastis_Condition()
 
 FUNC VOID Info_Mod_Lobart_Knastis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Knastis_15_00"); //Wie viele ehemalige Sträflinge sind denn in Khorinis?
-	AI_Output(self, hero, "Info_Mod_Lobart_Knastis_26_01"); //Nicht viele. Die meisten bleiben dort nicht lange, ist ihnen wohl zu anständig dort (lacht).
-	AI_Output(self, hero, "Info_Mod_Lobart_Knastis_26_02"); //Aber in den umliegenden Lagern und Gehöften wirst du einige finden.
+	AI_Output(hero, self, "Info_Mod_Lobart_Knastis_15_00"); //How many ex-convicts are there in Khorinis?
+	AI_Output(self, hero, "Info_Mod_Lobart_Knastis_26_01"); //Not many. Most of them don't stay there for long, they are probably too decent there (laughs).
+	AI_Output(self, hero, "Info_Mod_Lobart_Knastis_26_02"); //But in the surrounding camps and farms you will find some.
 };
 
 INSTANCE Info_Mod_Lobart_Arbeit (C_INFO)
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Lobart_Arbeit (C_INFO)
 	information	= Info_Mod_Lobart_Arbeit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du sagtest etwas von Arbeit?";
+	description	= "You said something about work?";
 };
 
 FUNC INT Info_Mod_Lobart_Arbeit_Condition()
@@ -76,36 +76,36 @@ FUNC INT Info_Mod_Lobart_Arbeit_Condition()
 
 FUNC VOID Info_Mod_Lobart_Arbeit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Arbeit_15_00"); //Du sagtest etwas von Arbeit?
-	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_01"); //Richtig. Nur habe ich vorher noch ein dringenderes Anliegen ...
-	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_02"); //Mein Hund Sherome ist ausgebüxt und dort hinten in den dichten Wald gelaufen.
-	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_03"); //Hat wohl einen Hasen gesehen oder so.
-	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_04"); //Jedenfalls wollte keiner meiner Arbeiter hinterher, selbst die Jäger betreten ja nur den vordersten Teil des Waldes.
-	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_05"); //Aber du musst doch ein harter Kerl sein, wenn du die Kolonie überlebt hast.
-	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_06"); //Deshalb bitte ich dich, nach Sherome zu suchen.
+	AI_Output(hero, self, "Info_Mod_Lobart_Arbeit_15_00"); //You said something about work?
+	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_01"); //Right. But I have an even more pressing concern...
+	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_02"); //My dog Sherome ran off and ran into the thick forest back there.
+	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_03"); //Probably seen a rabbit or something.
+	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_04"); //In any case, none of my workers wanted to follow, even the hunters only enter the foremost part of the forest.
+	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_05"); //But you must be a tough guy if you survived the colony.
+	AI_Output(self, hero, "Info_Mod_Lobart_Arbeit_26_06"); //That's why I'm asking you to look for Sherome.
 
 	Info_ClearChoices	(Info_Mod_Lobart_Arbeit);
 
-	Info_AddChoice	(Info_Mod_Lobart_Arbeit, "Frag jemand anderen.", Info_Mod_Lobart_Arbeit_B);
-	Info_AddChoice	(Info_Mod_Lobart_Arbeit, "Ich werde mich mal umsehen.", Info_Mod_Lobart_Arbeit_A);
+	Info_AddChoice	(Info_Mod_Lobart_Arbeit, "Ask someone else.", Info_Mod_Lobart_Arbeit_B);
+	Info_AddChoice	(Info_Mod_Lobart_Arbeit, "I'll have a look around.", Info_Mod_Lobart_Arbeit_A);
 };
 
 FUNC VOID Info_Mod_Lobart_Arbeit_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Arbeit_B_15_00"); //Frag jemand anderen.
+	AI_Output(hero, self, "Info_Mod_Lobart_Arbeit_B_15_00"); //Ask someone else.
 
 	Info_ClearChoices	(Info_Mod_Lobart_Arbeit);
 };
 
 FUNC VOID Info_Mod_Lobart_Arbeit_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Arbeit_A_15_00"); //Ich werde mich mal umsehen.
+	AI_Output(hero, self, "Info_Mod_Lobart_Arbeit_A_15_00"); //I'll have a look around.
 
 	Info_ClearChoices	(Info_Mod_Lobart_Arbeit);
 
 	Log_CreateTopic	(TOPIC_MOD_LOBART_HUND, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LOBART_HUND, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LOBART_HUND, "Lobarts Hund Sherome ist weggelaufen. Ich soll ihn im Wald suchen und zurückbringen.");
+	B_LogEntry	(TOPIC_MOD_LOBART_HUND, "Lobart's dog Sherome ran away. I'm supposed to find him in the woods and bring him back.");
 
 	Mod_SheromeSuche = 1;
 
@@ -133,56 +133,56 @@ FUNC INT Info_Mod_Lobart_SheromeDa_Condition()
 
 FUNC VOID Info_Mod_Lobart_SheromeDa_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_00"); //Du hast meinen Hund zurückgebracht! Wie kann ich dir nur danken!
-	AI_Output(hero, self, "Info_Mod_Lobart_SheromeDa_15_01"); //Das ist mein Job!
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_02"); //Trotzdem, nimm das hier, das ist alles, was ich dir geben kann!
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_00"); //You brought my dog back! How can I thank you so much!
+	AI_Output(hero, self, "Info_Mod_Lobart_SheromeDa_15_01"); //That's my job!
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_02"); //Anyway, take this, it's all I can give you!
 
 	CreateInvItems	(hero, ItMi_Gold, 50);
 	CreateInvItems	(hero, ItMi_Nugget, 1);
 
-	B_ShowGivenThings	("Ein Erzbrocken und 50 Gold erhalten");
+	B_ShowGivenThings	("One lump of ore and 50 gold received");
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_LOBART_HUND, "Ich habe Lobart seinen Hund zurückgebracht.");
+	B_LogEntry	(TOPIC_MOD_LOBART_HUND, "I brought Lobart back his dog.");
 	B_SetTopicStatus	(TOPIC_MOD_LOBART_HUND, LOG_SUCCESS);
 
 	CurrentNQ += 1;
 
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_03"); //Ich stehe in deiner Schuld, Bursche. Na, was hab ich gesagt?
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_04"); //Deinesgleichen ist doch wirklich nicht so schlecht, wie man glaubt.
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_05"); //Deine Hilfe wäre mir auch auf dem Rübenfeld willkommen.
-	AI_Output(hero, self, "Info_Mod_Lobart_SheromeDa_15_06"); //Ich soll Rüben ziehen?!
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_07"); //Stell dir das mal nicht zu einfach vor!
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_08"); //Wenn es normale Rüben wäre, könnten wir sie selbst problemlos ziehen.
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_09"); //Aber dieses Jahr haben die Dinger so enorme Wurzeln gebildet, dass sie untereinander fest verhakt sind.
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_10"); //Die kleben zusammen wie die Kletten!
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_11"); //Meine Arbeiter haben schon kapituliert, vielleicht findest du ja eine Möglichkeit, die Rüben zu lockern.
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_12"); //Etwa, indem du immer die schwächste Rübe findest.
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_03"); //I'm in your debt, lad. What did I tell you?
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_04"); //Your kind is really not as bad as you think.
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_05"); //I'd appreciate your help in the beet field, too.
+	AI_Output(hero, self, "Info_Mod_Lobart_SheromeDa_15_06"); //Pulling turnips?!
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_07"); //Don't think about it too easily!
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_08"); //If it was regular turnips, we could pull them ourselves.
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_09"); //But this year, these things have built up such enormous roots that they are hooked together.
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_10"); //They'll stick together like burs!
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_11"); //My workers have already surrendered, maybe you'll find a way to loosen the beets.
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_26_12"); //Like always finding the weakest turnip.
 
 	Info_ClearChoices	(Info_Mod_Lobart_SheromeDa);
 
-	Info_AddChoice	(Info_Mod_Lobart_SheromeDa, "Das ist mir doch zu blöd.", Info_Mod_Lobart_SheromeDa_B);
-	Info_AddChoice	(Info_Mod_Lobart_SheromeDa, "Wird erledigt.", Info_Mod_Lobart_SheromeDa_A);
+	Info_AddChoice	(Info_Mod_Lobart_SheromeDa, "That's just too bad.", Info_Mod_Lobart_SheromeDa_B);
+	Info_AddChoice	(Info_Mod_Lobart_SheromeDa, "It's done.", Info_Mod_Lobart_SheromeDa_A);
 };
 
 FUNC VOID Info_Mod_Lobart_SheromeDa_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_SheromeDa_B_15_00"); //Das ist mir doch zu blöd.
-	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_B_26_01"); //Das ist unsere tägliche Arbeit.
+	AI_Output(hero, self, "Info_Mod_Lobart_SheromeDa_B_15_00"); //That's just too bad.
+	AI_Output(self, hero, "Info_Mod_Lobart_SheromeDa_B_26_01"); //This is our daily work.
 
 	Info_ClearChoices	(Info_Mod_Lobart_SheromeDa);
 };
 
 FUNC VOID Info_Mod_Lobart_SheromeDa_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_SheromeDa_A_15_00"); //Wird erledigt.
+	AI_Output(hero, self, "Info_Mod_Lobart_SheromeDa_A_15_00"); //It's done.
 
 	Info_ClearChoices	(Info_Mod_Lobart_SheromeDa);
 
 	Log_CreateTopic	(TOPIC_MOD_RUEBENZIEHEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_RUEBENZIEHEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_RUEBENZIEHEN, "Für Lobart soll ich Rüben vom Feld holen. Er hat mich allerdings vorgewarnt, dass sich durch das starke Wurzelgeflecht das Ziehen schwerer gestalten könnte als vermutet. Ich sollte versuchen immer die lockerste Rübe zu finden.");
+	B_LogEntry	(TOPIC_MOD_RUEBENZIEHEN, "For Lobart, I'm supposed to get turnips from the field. However, he warned me that the strong root network could make pulling more difficult than expected. I should always try to find the easiest turnip.");
 
 	Mod_LobartRuebinator = 1;
 };
@@ -195,7 +195,7 @@ INSTANCE Info_Mod_Lobart_Rueben (C_INFO)
 	information	= Info_Mod_Lobart_Rueben_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind deine Rüben.";
+	description	= "Here's your turnips.";
 };
 
 FUNC INT Info_Mod_Lobart_Rueben_Condition()
@@ -210,19 +210,19 @@ FUNC INT Info_Mod_Lobart_Rueben_Condition()
 
 FUNC VOID Info_Mod_Lobart_Rueben_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Rueben_15_00"); //Hier sind deine Rüben.
+	AI_Output(hero, self, "Info_Mod_Lobart_Rueben_15_00"); //Here's your turnips.
 
 	B_GiveInvItems	(hero, self, ItPl_Beet, 20);
 
-	AI_Output(self, hero, "Info_Mod_Lobart_Rueben_26_01"); //Hätte nicht gedacht, dass du das schaffst. Vielen Dank! Nimm das als Lohn.
+	AI_Output(self, hero, "Info_Mod_Lobart_Rueben_26_01"); //I didn't think you'd make it. Thank you very much! Take this as a reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
-	AI_Output(hero, self, "Info_Mod_Lobart_Rueben_15_02"); //Gibt es noch mehr zu tun?
-	AI_Output(self, hero, "Info_Mod_Lobart_Rueben_26_03"); //Nichts, womit wir nicht selbst fertig werden. Ich könnte dich auch gar nicht weiter bezahlen.
-	AI_Output(self, hero, "Info_Mod_Lobart_Rueben_26_04"); //Du bist aber immer willkommen auf dem Hof! Mach's gut!
+	AI_Output(hero, self, "Info_Mod_Lobart_Rueben_15_02"); //Is there anything else to do?
+	AI_Output(self, hero, "Info_Mod_Lobart_Rueben_26_03"); //Nothing we can't handle ourselves. I couldn't pay you any more.
+	AI_Output(self, hero, "Info_Mod_Lobart_Rueben_26_04"); //You're always welcome on the farm! Bye, now!
 
-	B_LogEntry	(TOPIC_MOD_RUEBENZIEHEN, "Ich hab Lobart seine Rüben gegeben.");
+	B_LogEntry	(TOPIC_MOD_RUEBENZIEHEN, "I gave Lobart his turnips.");
 	B_SetTopicStatus	(TOPIC_MOD_RUEBENZIEHEN, LOG_SUCCESS);
 
 	B_GivePlayerXP	(150);
@@ -251,28 +251,28 @@ FUNC INT Info_Mod_Lobart_Unkraut_Condition()
 
 FUNC VOID Info_Mod_Lobart_Unkraut_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut_26_00"); //He, du, wir könnten mal wieder deine Hilfe gebrauchen ...
-	AI_Output(hero, self, "Info_Mod_Lobart_Unkraut_15_01"); //Wovon werdet ihr bedroht?
-	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut_26_02"); //Unkraut ... die Felder sind voll davon. Du hast uns schon damals bei der Rübenernte geholfen und bist genau der Richtige für die Aufgabe.
+	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut_26_00"); //Hey, you, we could use your help again...
+	AI_Output(hero, self, "Info_Mod_Lobart_Unkraut_15_01"); //What are you threatened by?
+	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut_26_02"); //weed the fields are full of them. You helped us with the beet harvest at that time and you are exactly the right person for the job.
 
 	Info_ClearChoices	(Info_Mod_Lobart_Unkraut);
 
-	Info_AddChoice	(Info_Mod_Lobart_Unkraut, "Willst du mich verarschen?! Seh ich vielleicht aus wie ein mickriger Feldarbeiter?!", Info_Mod_Lobart_Unkraut_B);
-	Info_AddChoice	(Info_Mod_Lobart_Unkraut, "Na gut ...", Info_Mod_Lobart_Unkraut_A);
+	Info_AddChoice	(Info_Mod_Lobart_Unkraut, "Are you kidding me?! Do I look like a puny field worker to you?!", Info_Mod_Lobart_Unkraut_B);
+	Info_AddChoice	(Info_Mod_Lobart_Unkraut, "All right...", Info_Mod_Lobart_Unkraut_A);
 };
 
 FUNC VOID Info_Mod_Lobart_Unkraut_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Unkraut_B_15_00"); //Willst du mich veräppeln? Seh ich vielleicht aus wie ein mickriger Feldarbeiter?
-	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut_B_26_01"); //Ich meinte ja nur. Aber wenn du dir zu fein dafür bist, dann wird sich eben jemand anders die 20 Goldmünzen verdienen.
+	AI_Output(hero, self, "Info_Mod_Lobart_Unkraut_B_15_00"); //Are you kidding me? Do I look like some puny field hand?
+	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut_B_26_01"); //I was just saying. But if you're too good for that, somebody else will be earning the 20 gold coins.
 
 	Info_ClearChoices	(Info_Mod_Lobart_Unkraut);
 };
 
 FUNC VOID Info_Mod_Lobart_Unkraut_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Unkraut_A_15_00"); //Na gut ...
-	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut_A_26_01"); //Dann fang am besten gleich an.
+	AI_Output(hero, self, "Info_Mod_Lobart_Unkraut_A_15_00"); //All right...
+	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut_A_26_01"); //Then it's best to start right away.
 
 	Info_ClearChoices	(Info_Mod_Lobart_Unkraut);
 
@@ -280,7 +280,7 @@ FUNC VOID Info_Mod_Lobart_Unkraut_A()
 
 	Log_CreateTopic	(TOPIC_MOD_LOBART_UNKRAUT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LOBART_UNKRAUT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LOBART_UNKRAUT, "Lobart hat mir aufgetragen die Felder von Unkraut zu befreien.");
+	B_LogEntry	(TOPIC_MOD_LOBART_UNKRAUT, "Lobart told me to clear the fields of weeds.");
 
 	Wld_InsertItem	(ItPl_Unkraut_Lobart, "FP_ITEM_RUEBE_LOBART_01");
 	Wld_InsertItem	(ItPl_Unkraut_Lobart, "FP_ITEM_RUEBE_LOBART_02");
@@ -305,7 +305,7 @@ INSTANCE Info_Mod_Lobart_Unkraut2 (C_INFO)
 	information	= Info_Mod_Lobart_Unkraut2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Felder sind sauber.";
+	description	= "The fields are clear.";
 };
 
 FUNC INT Info_Mod_Lobart_Unkraut2_Condition()
@@ -318,8 +318,8 @@ FUNC INT Info_Mod_Lobart_Unkraut2_Condition()
 
 FUNC VOID Info_Mod_Lobart_Unkraut2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Unkraut2_15_00"); //Die Felder sind sauber.
-	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut2_26_01"); //Gut gemacht. Dafür bekommst du auch einen Batzen Geld. Viel Spaß damit.
+	AI_Output(hero, self, "Info_Mod_Lobart_Unkraut2_15_00"); //The fields are clear.
+	AI_Output(self, hero, "Info_Mod_Lobart_Unkraut2_26_01"); //Well done. You'll get a lot of money for that, too. Have fun with that.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 20);
 
@@ -338,7 +338,7 @@ INSTANCE Info_Mod_Lobart_Warentransport (C_INFO)
 	information	= Info_Mod_Lobart_Warentransport_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Du wolltest Baltram deine Rüben verkaufen.";
+	description	= "You were gonna sell your turnips to Baltram.";
 };
 
 FUNC INT Info_Mod_Lobart_Warentransport_Condition()
@@ -352,27 +352,27 @@ FUNC INT Info_Mod_Lobart_Warentransport_Condition()
 
 FUNC VOID Info_Mod_Lobart_Warentransport_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Warentransport_15_00"); //Du wolltest Baltram deine Rüben verkaufen.
+	AI_Output(hero, self, "Info_Mod_Lobart_Warentransport_15_00"); //You were gonna sell your turnips to Baltram.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lobart_Rueben))
 	{
-		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_01"); //Ja? Oh, verdammt, das hab ich ja schon wieder vergessen!
-		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_02"); //Wollte sie schon fast meiner Frau bringen, um Suppe daraus zu machen!
-		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_03"); //Hier hast du sie ...
+		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_01"); //Yes? Oh, damn, I forgot that again!
+		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_02"); //She almost wanted to bring it to my wife to make soup!
+		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_03"); //Here you have them....
 
 		B_GiveInvItems	(self, hero, ItPl_Beet, 20);
 	
-		AI_Output(hero, self, "Info_Mod_Lobart_Warentransport_15_04"); //Was ist mit einer Bezahlung?
-		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_05"); //Ich habe eine Abmachung mit Baltram, wir rechnen monatlich ab. Musst dir also keinen Kopf drum machen.
+		AI_Output(hero, self, "Info_Mod_Lobart_Warentransport_15_04"); //What about a payment?
+		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_05"); //I have a deal with Baltram, we'll settle up monthly. So you don't have to worry about it.
 
 		Mod_LobartsRuebenBaltram = 1;
 
-		B_LogEntry	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, "Ich habe die Rüben von Lobart.");
+		B_LogEntry	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, "I got the turnips from Lobart.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_06"); //Wie du siehst, stecken sie noch im Feld. Und wie sie stecken!
-		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_07"); //Ich kann im Moment nichts für dich tun.
+		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_06"); //As you can see, they're still in the field. And how they're stuck!
+		AI_Output(self, hero, "Info_Mod_Lobart_Warentransport_26_07"); //There's nothing I can do for you right now.
 	};
 };
 
@@ -396,13 +396,13 @@ FUNC INT Info_Mod_Lobart_Randolph_Condition()
 
 FUNC VOID Info_Mod_Lobart_Randolph_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lobart_Randolph_26_00"); //Was machst du hier? Locke uns bloß keine Dämonen ins Haus. Einen Landarbeiter haben wir schon verloren.
-	AI_Output(self, hero, "Info_Mod_Lobart_Randolph_26_01"); //Und diese unheimliche Gestalt, die oben beim Steinkreis steht ...
-	AI_Output(hero, self, "Info_Mod_Lobart_Randolph_15_02"); //Unheimliche Gestalt?
-	AI_Output(self, hero, "Info_Mod_Lobart_Randolph_26_03"); //Ja, das alles hat angefangen, seitdem dieser finstere Geselle sich hier herumtreibt. Er hat ganz bestimmt etwas damit zu tun.
-	AI_Output(self, hero, "Info_Mod_Lobart_Randolph_26_04"); //Jemand sollte am besten hingehen und ihn erschlagen.
+	AI_Output(self, hero, "Info_Mod_Lobart_Randolph_26_00"); //What are you doing here? Don't get any demons in our house. We've already lost a farmhand.
+	AI_Output(self, hero, "Info_Mod_Lobart_Randolph_26_01"); //And this creepy figure standing at the top of the stone circle....
+	AI_Output(hero, self, "Info_Mod_Lobart_Randolph_15_02"); //Creepy figure?
+	AI_Output(self, hero, "Info_Mod_Lobart_Randolph_26_03"); //Yeah, it's all started since that sinister fellow has been hanging around. He's definitely involved.
+	AI_Output(self, hero, "Info_Mod_Lobart_Randolph_26_04"); //Somebody better go and slay him.
 
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Lobart macht einen finsteren Gesellen beim Steinkreis für das Unheil verantwortlich. Er äußerte den Wunsch ihn tot zu sehen.");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Lobart blames a dark journeyman at the stone circle for the disaster. He expressed a wish to see him dead.");
 };
 
 INSTANCE Info_Mod_Lobart_RandolphWeg (C_INFO)
@@ -413,7 +413,7 @@ INSTANCE Info_Mod_Lobart_RandolphWeg (C_INFO)
 	information	= Info_Mod_Lobart_RandolphWeg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Finsterling ist verschwunden.";
+	description	= "The darkness has disappeared.";
 };
 
 FUNC INT Info_Mod_Lobart_RandolphWeg_Condition()
@@ -428,8 +428,8 @@ FUNC INT Info_Mod_Lobart_RandolphWeg_Condition()
 
 FUNC VOID Info_Mod_Lobart_RandolphWeg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_RandolphWeg_15_00"); //Der Finsterling ist verschwunden. Das Gleiche müsste auch bald für die Dämonen gelten.
-	AI_Output(self, hero, "Info_Mod_Lobart_RandolphWeg_26_01"); //Was, bist du sicher? Danke für die Mitteilung. Hier, nimm dieses Gold als Dank.
+	AI_Output(hero, self, "Info_Mod_Lobart_RandolphWeg_15_00"); //The darkness has disappeared. The same should also apply to the demons soon.
+	AI_Output(self, hero, "Info_Mod_Lobart_RandolphWeg_26_01"); //What, are you sure? Thanks for telling me. Here, take this gold as a thank you.
 	
 	B_GivePlayerXP	(200);
 
@@ -462,23 +462,23 @@ FUNC INT Info_Mod_Lobart_AlwinScene_Condition()
 
 FUNC VOID Info_Mod_Lobart_AlwinScene_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_26_01"); //(dumpf) Ich weiß es auch nicht. Aber wer sollte es sonst tun?
+	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_26_01"); //I don't know either. But who else would do it?
 	
 	Info_ClearChoices	(Info_Mod_Lobart_AlwinScene);
 
-	Info_AddChoice	(Info_Mod_Lobart_AlwinScene, "Stimmt, es gibt keinen anderen plausiblen Grund.", Info_Mod_Lobart_AlwinScene_B);
+	Info_AddChoice	(Info_Mod_Lobart_AlwinScene, "Right, there's no other plausible reason.", Info_Mod_Lobart_AlwinScene_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 300)
 	{
-		Info_AddChoice	(Info_Mod_Lobart_AlwinScene, "Es ist möglich, dass ich für den Tod einiger Schafe (...)", Info_Mod_Lobart_AlwinScene_A);
+		Info_AddChoice	(Info_Mod_Lobart_AlwinScene, "It is possible that for the deaths of some sheep (... )", Info_Mod_Lobart_AlwinScene_A);
 	};
 };
 
 FUNC VOID Info_Mod_Lobart_AlwinScene_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_AlwinScene_B_15_00"); //Stimmt, es gibt keinen anderen plausiblen Grund.
-	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_B_26_01"); //Jetzt hätte ich ihn fast umgebracht! Ich kann es gar nicht fassen ...
-	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_B_26_02"); //Ich, ich brauche Ruhe ... Sagt ihm, es tut mir Leid, er hat genug gebüßt.
+	AI_Output(hero, self, "Info_Mod_Lobart_AlwinScene_B_15_00"); //Right, there's no other plausible reason.
+	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_B_26_01"); //Now I almost killed him! I can't believe it...
+	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_B_26_02"); //I need to rest... Tell him I'm sorry, he's done enough penance.
 	
 	Info_ClearChoices	(Info_Mod_Lobart_AlwinScene);
 
@@ -493,12 +493,12 @@ FUNC VOID Info_Mod_Lobart_AlwinScene_B()
 
 FUNC VOID Info_Mod_Lobart_AlwinScene_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_AlwinScene_A_15_00"); //Es ist möglich, dass ich für den Tod einiger Schafe verantwortlich bin.
-	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_A_26_01"); //Was sagst du da?!
-	AI_Output(hero, self, "Info_Mod_Lobart_AlwinScene_A_15_02"); //Es tut mir wirklich Leid ... Wie kann ich es gutmachen?
-	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_A_26_03"); //Nein, nein! Das kann ja nicht wahr sein! (Pause)
-	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_A_26_04"); //Den Verlust ihrer Seelen kannst du nicht ersetzen. Wohl aber ihren Wert. 300 Gold.
-	AI_Output(hero, self, "Info_Mod_Lobart_AlwinScene_A_15_05"); //Entschuldige bitte.
+	AI_Output(hero, self, "Info_Mod_Lobart_AlwinScene_A_15_00"); //It is possible that I am responsible for the death of some sheep.
+	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_A_26_01"); //What are you saying?!
+	AI_Output(hero, self, "Info_Mod_Lobart_AlwinScene_A_15_02"); //I'm really sorry... How can I make it up to you?
+	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_A_26_03"); //No, no, no! This can't be happening! (pause)
+	AI_Output(self, hero, "Info_Mod_Lobart_AlwinScene_A_26_04"); //You cannot replace the loss of their souls. But it's worth it. 300 gold.
+	AI_Output(hero, self, "Info_Mod_Lobart_AlwinScene_A_15_05"); //I beg your pardon.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 300);
 	
@@ -539,22 +539,22 @@ FUNC INT Info_Mod_Lobart_VinoBrennerei_Condition()
 
 FUNC VOID Info_Mod_Lobart_VinoBrennerei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_00"); //Warte mal kurz.. Du kommst doch viel in der Umgebung herum.
-	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_01"); //Hast du vielleicht Vino irgendwo gesehen?
-	AI_Output(hero, self, "Info_Mod_Lobart_VinoBrennerei_15_02"); //Nein, nicht in letzter Zeit.
-	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_03"); //Schade. Wo könnte er bloß geblieben sein ...?
-	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_04"); //Wie ich von Mika erfahren habe, hat er vor einiger Zeit das Osttor passiert.
-	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_05"); //Wohin er danach gegangen ist, weiß er leider auch nicht.
-	AI_Output(hero, self, "Info_Mod_Lobart_VinoBrennerei_15_06"); //Der taucht schon wieder auf.
-	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_07"); //Ich hoffe es. Ähnlich sieht es ihm ja gar nicht, dass er ohne was zu sagen so lange wegbleibt.
-	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_08"); //Auch die anderen Bauern auf dem Feld wissen nichts ... das sagen sie zumindest.
-	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_09"); //(zu sich selbst) Aber komisch verhalten sie sich schon etwas. Wenn Vino bald nicht auftaucht, werde ich mit denen noch mal ein paar Worte wechseln.
+	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_00"); //Wait a second... You get around a lot, don't you?
+	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_01"); //Have you seen Vino anywhere?
+	AI_Output(hero, self, "Info_Mod_Lobart_VinoBrennerei_15_02"); //No, not lately.
+	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_03"); //Too bad. Where could he have stayed?
+	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_04"); //As I heard from Mika, he passed the East Gate some time ago.
+	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_05"); //Unfortunately, he doesn't know where he went afterwards.
+	AI_Output(hero, self, "Info_Mod_Lobart_VinoBrennerei_15_06"); //He'll show up again.
+	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_07"); //I hope so. Similarly, he doesn't see that he stays away for so long without saying anything.
+	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_08"); //The other farmers in the field also know nothing... That's what they say.
+	AI_Output(self, hero, "Info_Mod_Lobart_VinoBrennerei_26_09"); //But they are acting strangely. If Vino doesn't show up soon, I'm gonna change words with them again.
 	
 	Log_CreateTopic	(TOPIC_MOD_VINO_WO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_VINO_WO, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_VINO_WO, "Vino wird auf Lobarts Hof vermisst.");
-	B_LogEntry_NS	(TOPIC_MOD_VINO_WO, "Mika hatte Vino zwar das Osttor passieren sehen, konnte sich jedoch nicht daran erinnern, wo er anschließend hinging.");
-	B_LogEntry_NS	(TOPIC_MOD_VINO_WO, "Vielleicht sollte ich mal mit seinen Landarbeiterkollegen auf dem Feld sprechen.");
+	B_LogEntry	(TOPIC_MOD_VINO_WO, "Vino is missing at Lobart's farm.");
+	B_LogEntry_NS	(TOPIC_MOD_VINO_WO, "Mika had seen Vino pass the east gate, but could not remember where he went afterwards.");
+	B_LogEntry_NS	(TOPIC_MOD_VINO_WO, "Maybe I should talk to his peasants in the field.");
 };
 
 INSTANCE Info_Mod_Lobart_Leichengase (C_INFO)
@@ -565,7 +565,7 @@ INSTANCE Info_Mod_Lobart_Leichengase (C_INFO)
 	information	= Info_Mod_Lobart_Leichengase_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du kurz Zeit?";
+	description	= "You got a minute?";
 };
 
 FUNC INT Info_Mod_Lobart_Leichengase_Condition()
@@ -580,18 +580,18 @@ FUNC INT Info_Mod_Lobart_Leichengase_Condition()
 
 FUNC VOID Info_Mod_Lobart_Leichengase_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_00"); //Hast du kurz Zeit?
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_01"); //Was gibt’s denn?
-	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_02"); //Ich hab hier einen Sack voller Kräuter und muss den irgendwie in den Magen eines Trolls bringen.
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_03"); //Du willst WAS? Hast du Angst, dass er nicht genügend Vitamine bekommt oder was soll das?
-	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_04"); //Das ist doch egal. Weißt du einen Weg oder nicht?
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_05"); //Doch, ich wüsste einen Weg. Wird allerdings nicht ganz billig.
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_06"); //Du müsstest dafür schon ein Schäfchen kaufen.
-	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_07"); //Warum?
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_08"); //Ganz einfach. Du gibst mir den Sack, ich füttere ein Schaf damit.
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_09"); //Du kommst morgen wieder vorbei, schlachtest es und wirfst den Trollen seinen Magen zum Fraß vor.
-	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_10"); //Wie viel willst du für ein Schaf?
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_11"); //Wenn ich ihnen die Kräuter geben soll muss ich einen "Zucht-Aufschlag" berechnen, das macht dann insgesamt ... 300 Goldstücke.
+	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_00"); //You got a minute?
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_01"); //What's the matter?
+	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_02"); //I've got a bag of herbs here, and I've got to put it in a troll's stomach somehow.
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_03"); //You want WHAT? Are you afraid he's not getting enough vitamins or what is this?
+	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_04"); //It doesn't matter. Do you know a way or not?
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_05"); //Yes, I know a way. It doesn't come cheap, though.
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_06"); //You'd have to buy a lamb for that.
+	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_07"); //Why?
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_08"); //Very simple. You give me the bag, I'll feed it to a sheep.
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_09"); //You come back tomorrow, slaughter it and throw the trolls to their stomachs for food.
+	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase_15_10"); //How much do you want for a sheep?
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase_26_11"); //Wenn ich ihnen die Kräuter geben soll muss ich einen "Breeding surcharge" berechnen, das macht dann insgesamt ... 300 Goldstücke.
 };
 
 INSTANCE Info_Mod_Lobart_Leichengase2 (C_INFO)
@@ -602,7 +602,7 @@ INSTANCE Info_Mod_Lobart_Leichengase2 (C_INFO)
 	information	= Info_Mod_Lobart_Leichengase2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na gut, hier. (300 Gold)";
+	description	= "All right, here. (300 Gold)";
 };
 
 FUNC INT Info_Mod_Lobart_Leichengase2_Condition()
@@ -616,14 +616,14 @@ FUNC INT Info_Mod_Lobart_Leichengase2_Condition()
 
 FUNC VOID Info_Mod_Lobart_Leichengase2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase2_15_00"); //Na gut, hier.
+	AI_Output(hero, self, "Info_Mod_Lobart_Leichengase2_15_00"); //All right, here.
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 300);
 	Npc_RemoveInvItems	(hero, ItMi_Sumpfkraeuter, 1);
 
-	B_ShowGivenThings	("300 Gold und Beutel mit Sumpfkräutern gegeben");
+	B_ShowGivenThings	("300 gold and bag with bog herbs added");
 
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase2_26_01"); //Vielen Dank. Komm einfach morgen wieder vorbei.
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase2_26_01"); //Thank you very much. Just come back tomorrow.
 
 	Mod_Leichengase_Day = Wld_GetDay();
 };
@@ -649,12 +649,12 @@ FUNC INT Info_Mod_Lobart_Leichengase3_Condition()
 
 FUNC VOID Info_Mod_Lobart_Leichengase3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase3_26_00"); //Hier ist dein Schaf, viel Glück damit.
-	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase3_26_01"); //Wenn du es wirklich schlachtest, mach das bitte nicht in meiner Nähe, das mag ich immer nicht mit ansehen.
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase3_26_00"); //Here's your sheep, good luck with that.
+	AI_Output(self, hero, "Info_Mod_Lobart_Leichengase3_26_01"); //If you're really slaughtering it, please don't do it near me, I don't like to watch it all the time.
 
 	Wld_InsertNpc	(Trollschaf, Npc_GetNearestWP(self));
 
-	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Lobart hat ein Schaf mit den Kräutern gefüttert. Ich sollte es jetzt schlachten und den Magen entnehmen.");
+	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Lobart fed a sheep with the herbs. I should slaughter it now and take it out of my stomach.");
 
 	B_GivePlayerXP	(150);
 };
@@ -667,7 +667,7 @@ INSTANCE Info_Mod_Lobart_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Lobart_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "I saw your poster on the billboard...";
 };
 
 FUNC INT Info_Mod_Lobart_Anschlagtafel_Condition()
@@ -702,12 +702,12 @@ FUNC VOID Info_Mod_Lobart_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItMi_Scoop, Mod_Anschlagtafel_Khorinis_Lobart_Kochloeffel);
 		Npc_RemoveInvItems	(hero, ItMw_1h_Bau_Axe, Mod_Anschlagtafel_Khorinis_Lobart_Sichel);
 
-		AI_Output(self, hero, "Info_Mod_Lobart_Anschlagtafel_26_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Lobart_Anschlagtafel_26_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Lobart_Anschlagtafel_26_00"); //What? Show me... In fact, all of it. Very well done.
+		AI_Output(self, hero, "Info_Mod_Lobart_Anschlagtafel_26_01"); //Here's your reward.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Lobart_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Lobart_Anschlagtafel_26_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Lobart_Anschlagtafel_26_02"); //Nice doing business with you.
 
 		if (Mod_Anschlagtafel_Khorinis_Lobart_Gold < 200)
 		{

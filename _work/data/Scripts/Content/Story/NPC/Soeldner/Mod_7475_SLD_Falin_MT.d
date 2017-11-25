@@ -1,7 +1,7 @@
 instance Mod_7475_SLD_Falin_MT (Npc_Default) //Türwache Onars Haus
 {
 	// ------ NSC ------
-	name 		= "Falin"; 
+	name 		= "falin"; 
 	guild 		= GIL_OUT;
 	id 			= 7475;
 	voice 		= 7;

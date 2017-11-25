@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Namib_Hi_Condition()
 
 FUNC VOID Info_Mod_Namib_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_Hi_02_00"); //Du lebst?
-	AI_Output(hero, self, "Info_Mod_Namib_Hi_15_01"); //Man könnte es so sagen.
-	AI_Output(self, hero, "Info_Mod_Namib_Hi_02_02"); //Du hast es also geschafft den Schläfer zu besiegen?
+	AI_Output(self, hero, "Info_Mod_Namib_Hi_02_00"); //You're alive?
+	AI_Output(hero, self, "Info_Mod_Namib_Hi_15_01"); //You could put it that way.
+	AI_Output(self, hero, "Info_Mod_Namib_Hi_02_02"); //So you managed to defeat the sleeper?
 };
 
 INSTANCE Info_Mod_Namib_Irdorath (C_INFO)
@@ -43,9 +43,9 @@ FUNC INT Info_Mod_Namib_Irdorath_Condition()
 
 FUnc VOID Info_Mod_Namib_Irdorath_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_Irdorath_02_00"); //Ich hatte eine Vision! Ich sah das Meer ... darauf trieb ein stück Holz ... nein, es war ein Schiff.
-	AI_Output(self, hero, "Info_Mod_Namib_Irdorath_02_01"); //Es bewegte sich auf etwas finsteres zu ... dann sah ich plötzlich Y'Berion.
-	AI_Output(self, hero, "Info_Mod_Namib_Irdorath_02_02"); //Er sprach zu mir und sagte: Geh zum Hafen von Khorinis und schließ dich er Mannschaft an.
+	AI_Output(self, hero, "Info_Mod_Namib_Irdorath_02_00"); //I had a vision! I saw the sea... a piece of wood drifted on it.... No, it was a ship.
+	AI_Output(self, hero, "Info_Mod_Namib_Irdorath_02_01"); //It was moving towards something dark.... and then I suddenly saw Y' Berion.
+	AI_Output(self, hero, "Info_Mod_Namib_Irdorath_02_02"); //He said to me,"Go to the port of Khorinis and join the crew.
 };
 
 INSTANCE Info_Mod_Namib_Irdorath2 (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Namib_Irdorath2 (C_INFO)
 	information	= Info_Mod_Namib_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ja, tatsächlich! Das ist der Grund, aus welchem ich hier bin.";
+	description	= "Yes, indeed! That's why I'm here.";
 };
 
 FUNC INT Info_Mod_Namib_Irdorath2_Condition()
@@ -70,13 +70,13 @@ FUNC INT Info_Mod_Namib_Irdorath2_Condition()
 
 FUnc VOID Info_Mod_Namib_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Irdorath2_15_00"); //(verblüfft) Ja, tatsächlich! Das ist der Grund, aus welchem ich hier bin.
-	AI_Output(hero, self, "Info_Mod_Namib_Irdorath2_15_01"); //Ich versuche eine Mannschaft zu rekrutieren, mit welcher ich eine Insel aufsuchen muss, um dem finsteren Treiben des Magiers Xeres einen Ende setzen zu können ...
-	AI_Output(hero, self, "Info_Mod_Namib_Irdorath2_15_02"); //Nun, es ist zumindest ein wichtiger Schritt auf diesem Weg.
-	AI_Output(self, hero, "Info_Mod_Namib_Irdorath2_02_03"); //Dann ist es also der Weg, der mir bestimmt ist. Wir sehen uns dann am Hafen.
-	AI_Output(hero, self, "Info_Mod_Namib_Irdorath2_15_04"); //Ähhm, klar, bis dahin.
+	AI_Output(hero, self, "Info_Mod_Namib_Irdorath2_15_00"); //(amazed) Yes, indeed! That's why I'm here.
+	AI_Output(hero, self, "Info_Mod_Namib_Irdorath2_15_01"); //I try to recruit a team with whom I have to visit an island in order to put an end to the sinister activity of the magician Xeres....
+	AI_Output(hero, self, "Info_Mod_Namib_Irdorath2_15_02"); //Well, it is at least an important step in this direction.
+	AI_Output(self, hero, "Info_Mod_Namib_Irdorath2_02_03"); //So it's the way I'm destined to go. I'll see you at the harbour.
+	AI_Output(hero, self, "Info_Mod_Namib_Irdorath2_15_04"); //Uh, sure, see you there.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Namib hatte eine Vision in welcher ihm aufgetragen wurde, sich meiner Mannschaft anzuschließen. Und das hat er jetzt auch.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Namib had a vision in which he was told to join my team. And he has now.");
 
 	B_GivePlayerXP	(100);
 
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Namib_Sekte (C_INFO)
 	information	= Info_Mod_Namib_Sekte_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lester hat mir gesagt, ihr seid noch hier.";
+	description	= "Lester told me you're still here.";
 };
 
 FUNC INT Info_Mod_Namib_Sekte_Condition()
@@ -110,18 +110,18 @@ FUNC INT Info_Mod_Namib_Sekte_Condition()
 
 FUnc VOID Info_Mod_Namib_Sekte_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_00"); //Lester hat mir gesagt, ihr seid noch hier.
-	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_01"); //Ich hätte nicht gedacht, dich noch einmal wieder zu sehen!
-	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_02"); //Seid ihr sauer, weil ich euch den Schläfer genommen habe?
-	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_03"); //Nein, ganz und gar nicht! Wir sind dir dankbar, dass du uns von dem Dämon erlöst hast, der unseren Geist geiselte!
-	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_04"); //Dann betet ihr also nicht länger zum Schläfer?
-	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_05"); //Nein.
-	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_06"); //Achso ...
-	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_07"); //Ja ...
-	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_08"); //Was macht ihr dann hier draußen?
-	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_09"); //Nun, hauptsächlich säen, ernten und rauchen wir Sumpfkraut.
-	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_10"); //Das hab ich mir fast gedacht.
-	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_11"); //Des Weiteren studieren wir hier die Magie.
+	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_00"); //Lester told me you're still here.
+	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_01"); //I didn't think I'd see you again!
+	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_02"); //Are you mad at me for taking the sleeper?
+	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_03"); //No, not at all! We are grateful to you for redeeming us from the demon who was the spirit of our spirit!
+	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_04"); //So you're no longer praying to the sleeper?
+	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_05"); //No.
+	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_06"); //Ah...
+	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_07"); //Yes...
+	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_08"); //Then what are you doing out here?
+	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_09"); //Well, mostly we sow, harvest and smoke swampweed.
+	AI_Output(hero, self, "Info_Mod_Namib_Sekte_15_10"); //That's what I thought.
+	AI_Output(self, hero, "Info_Mod_Namib_Sekte_02_11"); //We also study magic here.
 };
 
 INSTANCE Info_Mod_Namib_Aufnehmen (C_INFO)
@@ -132,7 +132,7 @@ INSTANCE Info_Mod_Namib_Aufnehmen (C_INFO)
 	information	= Info_Mod_Namib_Aufnehmen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte bei euch mitmachen!";
+	description	= "I want to join you!";
 };
 
 FUNC INT Info_Mod_Namib_Aufnehmen_Condition()
@@ -146,21 +146,21 @@ FUNC INT Info_Mod_Namib_Aufnehmen_Condition()
 
 FUNC VOID Info_Mod_Namib_Aufnehmen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_00"); //Ich möchte bei euch mitmachen!
-	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_01"); //Es freut mich, das zu hören. Nun, es gibt da auch eine Aufgabe zu erledigen. Suche zuerst Lester!
-	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_02"); //Ich habe Lester bereits gesehen. Er hat mir gesagt, dass ihr noch hier seid.
-	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_03"); //(verwirrt) Ah ja ... damit hast du diese Probe bereits bestanden. Geh zu ihm. Er hat ein Päckchen bei sich, das er bei Constantino, dem Alchemisten Khorinis', abgeben sollte.
-	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_04"); //Warum gibt er es dann nicht dort ab?
-	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_05"); //Da unterlief uns ein kleiner organisatorischer Fehler. Wir haben Lester mit zwei Aufgaben auf einmal beauftragt.
-	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_06"); //Was macht er dann jetzt?
-	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_07"); //Warst du schon bei dem großen Turm von Xardas in Khorinis?
-	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_08"); //Äh ...
-	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_09"); //Jedenfalls hat er dort untote Wesen beschworen. Er muss viel Energie aufgewandt haben, es waren genügend um einen ganzen Turm in kurzer Zeit zu bauen.
-	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_10"); //Das ganze hat jedoch den Boden verändert, ihm gewisse Stoffe entzogen und als diese Untoten wieder zu Stein wurden, hat der Boden gewisse andere Stoffe wiederbekommen.
-	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_11"); //Lester soll in der Höhle testen, welche Auswirkungen so ein Zauber auf die Sumpfkrautpflanzen hat.
-	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_12"); //Wenn du schon bei ihm bist, frage ihn um einen Lagerbericht.
+	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_00"); //I want to join you!
+	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_01"); //I'm glad to hear that. Well, there's a job to be done. Find Lester first!
+	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_02"); //I've already seen Lester. He told me you were still here.
+	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_03"); //(confused) Ah yes.... you've already passed that test. Go to him. He has a parcel with him that he was supposed to drop off at Constantino, the alchemist of Khorini's.
+	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_04"); //Then why doesn't he drop it off there?
+	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_05"); //We made a small organizational mistake. We put Lester in charge of two tasks at once.
+	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_06"); //What's he doing now?
+	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_07"); //Have you ever been to the great tower of Xardas in Khorinis?
+	AI_Output(hero, self, "Info_Mod_Namib_Aufnehmen_15_08"); //Uh...
+	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_09"); //Anyway, that's where he summoned undead creatures. He must have used a lot of energy, there were enough to build an entire tower in a short time.
+	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_10"); //However, the whole thing has changed the soil, withdrawn certain substances from it and when these undead were turned to stone, the soil has regained certain other substances.
+	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_11"); //Lester is supposed to test in the cave, which effects such a spell has on the marsh herb plants.
+	AI_Output(self, hero, "Info_Mod_Namib_Aufnehmen_02_12"); //While you're at his place, ask him for a camp report.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Baal Namib hat mich damit beauftrag Lesters Paket bei Constantino abzugeben und einen Lagebericht von Lester einzuholen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Baal Namib has asked me to hand in Lester's package to Constantino and get a status report from Lester.");
 };
 
 INSTANCE Info_Mod_Namib_WarBeiLester (C_INFO)
@@ -171,7 +171,7 @@ INSTANCE Info_Mod_Namib_WarBeiLester (C_INFO)
 	information	= Info_Mod_Namib_WarBeiLester_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Paket zu Constantino gebracht.";
+	description	= "I took the package to Constantino.";
 };
 
 FUNC INT Info_Mod_Namib_WarBeiLester_Condition()
@@ -185,21 +185,21 @@ FUNC INT Info_Mod_Namib_WarBeiLester_Condition()
 
 FUNC VOID Info_Mod_Namib_WarBeiLester_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_WarBeiLester_15_00"); //Ich habe das Paket zu Constantino gebracht. Er hat mir das hier gegeben.
+	AI_Output(hero, self, "Info_Mod_Namib_WarBeiLester_15_00"); //I took the package to Constantino. He gave me this.
 
 	B_GiveInvItems	(hero, self, ItMi_DuengerPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Namib_WarBeiLester_02_01"); //Ah, sehr gut! Bring es auf die Felder zu Balor.
+	AI_Output(self, hero, "Info_Mod_Namib_WarBeiLester_02_01"); //Ah, very good! Take it to the fields near Balor.
 
 	B_GiveInvItems	(self, hero, ItMi_DuengerPaket, 1);
 
-	AI_Output(hero, self, "Info_Mod_Namib_WarBeiLester_15_02"); //Ich war auch bei Lester.
-	AI_Output(self, hero, "Info_Mod_Namib_WarBeiLester_02_03"); //Und? Was sagt er? Sprich schon.
-	AI_Output(hero, self, "Info_Mod_Namib_WarBeiLester_15_04"); //Er sagt, dass das Sumpfkraut in der Höhle ungewöhnlich gut gedeiht. Er hat irgendwas von den Schwarzmagiern gesagt.
-	AI_Output(self, hero, "Info_Mod_Namib_WarBeiLester_02_05"); //Ausgezeichnet ... Hast du das Paket eigentlich schon zu Balor gebracht? Nein? Na dann beeil dich und bring es ihm.
-	AI_Output(self, hero, "Info_Mod_Namib_WarBeiLester_02_06"); //Melde dich danach wieder bei mir!
+	AI_Output(hero, self, "Info_Mod_Namib_WarBeiLester_15_02"); //I was with Lester too.
+	AI_Output(self, hero, "Info_Mod_Namib_WarBeiLester_02_03"); //And? What's he saying? Speak up.
+	AI_Output(hero, self, "Info_Mod_Namib_WarBeiLester_15_04"); //He says the marsh weed thrives unusually well in the cave. He said something about the black mages.
+	AI_Output(self, hero, "Info_Mod_Namib_WarBeiLester_02_05"); //Excellent... Have you brought the package to Balor yet? No? Well, hurry up and bring it to him.
+	AI_Output(self, hero, "Info_Mod_Namib_WarBeiLester_02_06"); //Then get back to me!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Baal Namib will, dass ich das Paket von Constantino zu Balor bringe.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Baal Namib wants me to take the Constantino package to Balor.");
 };
 
 INSTANCE Info_Mod_Namib_DuengerVerteilt (C_INFO)
@@ -210,7 +210,7 @@ INSTANCE Info_Mod_Namib_DuengerVerteilt (C_INFO)
 	information	= Info_Mod_Namib_DuengerVerteilt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich war bei Balor und hab auch gleich das Feld gedüngt.";
+	description	= "I was at Balor's and I fertilized the field.";
 };
 
 FUNC INT Info_Mod_Namib_DuengerVerteilt_Condition()
@@ -223,18 +223,18 @@ FUNC INT Info_Mod_Namib_DuengerVerteilt_Condition()
 
 FUNC VOID Info_Mod_Namib_DuengerVerteilt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_DuengerVerteilt_15_00"); //Ich war bei Balor und hab auch gleich das Feld gedüngt.
-	AI_Output(self, hero, "Info_Mod_Namib_DuengerVerteilt_02_01"); //Sehr gut. Ich hab gleich einen weiteren Auftrag für dich. Geh zu den Schwarzmagiern. Wir brauchen ihre Hilfe.
-	AI_Output(self, hero, "Info_Mod_Namib_DuengerVerteilt_02_02"); //Bring ihnen diesen Brief und dieses Paket Sumpfkraut als kleines Present.
+	AI_Output(hero, self, "Info_Mod_Namib_DuengerVerteilt_15_00"); //I was at Balor's and I fertilized the field.
+	AI_Output(self, hero, "Info_Mod_Namib_DuengerVerteilt_02_01"); //Very good. Very good. I have another assignment for you in a minute. Go to the black mages. We need your help.
+	AI_Output(self, hero, "Info_Mod_Namib_DuengerVerteilt_02_02"); //Bring them this letter and this package of bogweed as a small present.
 
-	B_ShowGivenThings	("2 Gegenstände erhalten");
+	B_ShowGivenThings	("2 Items received");
 
 	CreateInvItems	(hero, ItWr_NamibForBeliar, 1);
 	CreateInvItems	(hero, ItMi_HerbPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Namib_DuengerVerteilt_02_03"); //Und auf deinem Rückweg kannst du Lester wieder mitnehmen!
+	AI_Output(self, hero, "Info_Mod_Namib_DuengerVerteilt_02_03"); //And on your way back, you can take Lester back with you!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Ich soll einen Brief und ein Paket Sumpfkraut zu den Schwarzmagiern bringen. Am besten wäre es wohl, wenn ich zu Xardas ginge. Auf dem Weg zurück ins Minental soll ich außerdem Lester mitnehmen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "I'm supposed to take a letter and a packet of swampweed to the Black Magicians. I think it would be best if I went to Xardas. On the way back to the Minental I should also take Lester with me.");
 };
 
 INSTANCE Info_Mod_Namib_KarrasDa (C_INFO)
@@ -245,7 +245,7 @@ INSTANCE Info_Mod_Namib_KarrasDa (C_INFO)
 	information	= Info_Mod_Namib_KarrasDa_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Karras ist hier.";
+	description	= "Karras is here.";
 };
 
 FUNC INT Info_Mod_Namib_KarrasDa_Condition()
@@ -258,11 +258,11 @@ FUNC INT Info_Mod_Namib_KarrasDa_Condition()
 
 FUNC VOID Info_Mod_Namib_KarrasDa_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_KarrasDa_15_00"); //Karras ist hier.
-	AI_Output(self, hero, "Info_Mod_Namib_KarrasDa_02_01"); //Sehr gut. Geh zu den anderen Gurus und gib ihnen Bescheid, dass sie auf den Tempelplatz kommen sollen.
-	AI_Output(self, hero, "Info_Mod_Namib_KarrasDa_02_02"); //Falls du nicht weißt, wer alles kommen muss oder wo du die Gurus findet, wird Talas dich zu ihnen führen.
+	AI_Output(hero, self, "Info_Mod_Namib_KarrasDa_15_00"); //Karras is here.
+	AI_Output(self, hero, "Info_Mod_Namib_KarrasDa_02_01"); //Very good. Very good. Go to the other gurus and tell them to come to the temple place.
+	AI_Output(self, hero, "Info_Mod_Namib_KarrasDa_02_02"); //If you don't know who has to come or where you find the gurus, Talas will lead you to them.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Baal Namib will, dass ich den anderen Gurus sage, dass sie auf den Tempelplatz kommen sollen. Talas kann mich zu den Gurus führen, wenn ich sie nicht finde oder nicht weiß, wer noch fehlt.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Baal Namib wants me to tell the other gurus to come to the temple square. Talas can lead me to the gurus if I don't find them or don't know who is missing.");
 
 	B_StartOtherRoutine	(self, "TEMPEL");
 	B_StartOtherRoutine	(Mod_514_DMB_Karras_MT, "TEMPEL");
@@ -294,17 +294,17 @@ FUNC INT Info_Mod_Namib_AtTempel_Condition()
 
 FUNC VOID Info_Mod_Namib_AtTempel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_00"); //Ah, da bist du ja.
-	AI_Output(hero, self, "Info_Mod_Namib_AtTempel_15_01"); //Was geschieht jetzt?
-	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_02"); //Du weißt doch, dass die Schwarzmagier in ihrem Tal Untote beschworen haben, die für sie den schwarzen Turm aufgebaut haben.
-	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_03"); //Und wie du durch Lester weißt, hat dies den Boden insofern beeinflusst, dass das Sumpfkraut dort hervorragend gedeiht.
-	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_04"); //Wir haben sie gebeten, das Selbe hier im Sumpf zu machen, um die Qualität unseres Sumpfkrautes noch weiter zu steigern, du verstehst?
-	AI_Output(hero, self, "Info_Mod_Namib_AtTempel_15_05"); //Äh ...
-	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_06"); //Sehr gut.
-	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_07"); //Jedenfalls traue ich den Schwarzmagiern nicht ganz. Ich vermute die haben irgendeinen Hintergedanken.
-	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_08"); //Geh zu Cor Angar. Sag ihm, die Templer sollen ihre Position einnehmen, für den Fall das etwas schief geht.
+	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_00"); //Ah, there you are.
+	AI_Output(hero, self, "Info_Mod_Namib_AtTempel_15_01"); //What happens now?
+	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_02"); //You know that the black magicians in their valley have summoned undead men to build the Black Tower for them.
+	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_03"); //And as you know from Lester, this has influenced the soil to the extent that the bogweed thrives there.
+	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_04"); //We asked them to do the same thing here in the swamp, to increase the quality of our marsh herb even more, you know?
+	AI_Output(hero, self, "Info_Mod_Namib_AtTempel_15_05"); //Uh...
+	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_06"); //Very good. Very good.
+	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_07"); //Anyway, I don't really trust the black mages. I guess they have some ulterior motive.
+	AI_Output(self, hero, "Info_Mod_Namib_AtTempel_02_08"); //Go to Cor Angar. Tell him to have the Templars take up their position in case something goes wrong.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Die Gurus sind am Tempelplatz versammelt und wollen jetzt Untote beschwören, damit die Qualität des Sumpfkrautes steigt. Ich soll vorsichtshalber dafür sorgen, dass die Templer bereit stehen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "The gurus are gathered at the temple site and now want to summon undead so that the quality of the marsh herb increases. As a precaution, I'm supposed to make sure the Templars are ready.");
 };
 
 INSTANCE Info_Mod_Namib_SUDD (C_INFO)
@@ -315,7 +315,7 @@ INSTANCE Info_Mod_Namib_SUDD (C_INFO)
 	information	= Info_Mod_Namib_SUDD_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Sumpfhaizombies sind tot.";
+	description	= "The swamp shark bombs are dead.";
 };
 
 FUNC INT Info_Mod_Namib_SUDD_Condition()
@@ -329,10 +329,10 @@ FUNC INT Info_Mod_Namib_SUDD_Condition()
 
 FUNC VOID Info_Mod_Namib_SUDD_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_SUDD_15_00"); //Die Sumpfhaizombies sind tot.
-	AI_Output(self, hero, "Info_Mod_Namib_SUDD_02_01"); //Sehr gut! Diese verdammten Sumphaizombies haben nun zum zweiten Mal ihr Grab gefunden.
-	AI_Output(self, hero, "Info_Mod_Namib_SUDD_02_02"); //Ich frage mich was bei dem Zauber schief gelaufen ist. Das ganze hat jedenfalls funktioniert! Das Sumpfkraut sollte hier jetzt wunderbar gedeihen.
-	AI_Output(self, hero, "Info_Mod_Namib_SUDD_02_03"); //Du warst uns eine große Hilfe! Uns, und dem Sumpfkraut.
+	AI_Output(hero, self, "Info_Mod_Namib_SUDD_15_00"); //The swamp shark bombs are dead.
+	AI_Output(self, hero, "Info_Mod_Namib_SUDD_02_01"); //Very good! These damn sumphaizombies have now found their grave for the second time.
+	AI_Output(self, hero, "Info_Mod_Namib_SUDD_02_02"); //I wonder what went wrong with the spell. The whole thing worked anyway! The bogweed should grow beautifully here now.
+	AI_Output(self, hero, "Info_Mod_Namib_SUDD_02_03"); //You've been a big help to us! Us, and the swampweed.
 
 	B_StartOtherRoutine	(self, "START");
 	B_StartOtherRoutine	(Mod_106_TPL_Angar_MT, "START");
@@ -361,13 +361,13 @@ FUNC VOID Info_Mod_Namib_SUDD_Info()
 
 	if (Mod_AnzahlNebengilden < MaxNebengilden)
 	{
-		AI_Output(self, hero, "Info_Mod_Namib_SUDD_02_04"); //Du kannst nun in den Rang eine Templers oder eines Gurus aufsteigen.
+		AI_Output(self, hero, "Info_Mod_Namib_SUDD_02_04"); //You can now ascend to the rank of a Templar or a Guru.
 
 		Info_ClearChoices	(Info_Mod_Namib_SUDD);
 
-		Info_AddChoice	(Info_Mod_Namib_SUDD, "Ich hab's mir anders überlegt.", Info_Mod_Namib_SUDD_No);
-		Info_AddChoice	(Info_Mod_Namib_SUDD, "Ich will Guru werden.", Info_Mod_Namib_SUDD_Guru);
-		Info_AddChoice	(Info_Mod_Namib_SUDD, "Ich will Templer werden.", Info_Mod_Namib_SUDD_Templer);
+		Info_AddChoice	(Info_Mod_Namib_SUDD, "I changed my mind.", Info_Mod_Namib_SUDD_No);
+		Info_AddChoice	(Info_Mod_Namib_SUDD, "I want to be a guru.", Info_Mod_Namib_SUDD_Guru);
+		Info_AddChoice	(Info_Mod_Namib_SUDD, "I want to be a Templar.", Info_Mod_Namib_SUDD_Templer);
 	};
 
 	B_GivePlayerXP	(500);
@@ -377,24 +377,24 @@ FUNC VOID Info_Mod_Namib_SUDD_Info()
 
 FUNC VOID Info_Mod_Namib_SUDD_No()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_SUDD_No_15_00"); //Ich hab's mir anders überlegt.
-	AI_Output(self, hero, "Info_Mod_Namib_SUDD_No_02_01"); //Schade, mit dir hätten wir viel erreichen können.
+	AI_Output(hero, self, "Info_Mod_Namib_SUDD_No_15_00"); //I changed my mind.
+	AI_Output(self, hero, "Info_Mod_Namib_SUDD_No_02_01"); //Too bad, we could have achieved a lot with you.
 
 	Info_ClearChoices	(Info_Mod_Namib_SUDD);
 };
 
 FUNC VOID Info_Mod_Namib_SUDD_Guru()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_SUDD_Guru_15_00"); //Ich will Guru werden.
-	AI_Output(self, hero, "Info_Mod_Namib_SUDD_Guru_02_01"); //Gut, hier ist deine Robe.
+	AI_Output(hero, self, "Info_Mod_Namib_SUDD_Guru_15_00"); //I want to be a guru.
+	AI_Output(self, hero, "Info_Mod_Namib_SUDD_Guru_02_01"); //All right, here's your robe.
 
 	CreateInvItems	(hero, Nov_Armor_H, 1);
-	B_ShowGivenThings	("Gururobe erhalten");
+	B_ShowGivenThings	("Get Gururobe");
 
 	Mod_AnzahlNebengilden += 1;
 
 	Log_CreateTopic	(TOPIC_MOD_NEBENGILDEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "Ich bin jetzt ein Guru.");
+	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "I'm a guru now.");
 
 	Mod_1210_TPL_Templer_MT.aivar[AIV_PASSGATE] = TRUE;
 
@@ -407,8 +407,8 @@ FUNC VOID Info_Mod_Namib_SUDD_Guru()
 
 FUNC VOID Info_Mod_Namib_SUDD_Templer()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_SUDD_Templer_15_00"); //Ich will Templer werden.
-	AI_Output(self, hero, "Info_Mod_Namib_SUDD_Templer_02_01"); //Gut, hier ist deine Rüstung.
+	AI_Output(hero, self, "Info_Mod_Namib_SUDD_Templer_15_00"); //I want to be a Templar.
+	AI_Output(self, hero, "Info_Mod_Namib_SUDD_Templer_02_01"); //All right, here's your armour.
 
 	CreateInvItems	(self, Tpl_Armor_L, 1);
 	B_GiveInvItems	(self, hero, Tpl_Armor_L, 1);
@@ -416,7 +416,7 @@ FUNC VOID Info_Mod_Namib_SUDD_Templer()
 	Mod_AnzahlNebengilden += 1;
 
 	Log_CreateTopic	(TOPIC_MOD_NEBENGILDEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "Ich bin jetzt ein Templer.");
+	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "I'm a Templar now.");
 
 	Mod_1210_TPL_Templer_MT.aivar[AIV_PASSGATE] = TRUE;
 
@@ -450,14 +450,14 @@ FUNC INT Info_Mod_Namib_Dealer_Condition()
 
 FUNC VOID Info_Mod_Namib_Dealer_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_Dealer_02_00"); //Gut, dass du kommst! Ich habe einen Auftrag für dich. Der Sumpfkrautlieferant ist krank geworden.
-	AI_Output(self, hero, "Info_Mod_Namib_Dealer_02_01"); //Du musst unbedingt dieses Paket Sumpfkraut zu den Söldnern hier im Minental bringen! Liefere es bei Rath ab.
+	AI_Output(self, hero, "Info_Mod_Namib_Dealer_02_00"); //Good of you to come! I have an assignment for you. Weed supplier got sick.
+	AI_Output(self, hero, "Info_Mod_Namib_Dealer_02_01"); //You must take this package of swamp herbs to the mercenaries here in the Minental! Deliver it to Rath.
 
 	CreateInvItems	(self, ItMi_HerbPaket, 1);
 	B_GiveInvItems	(self, hero, ItMi_HerbPaket, 1);
 
-	AI_Output(hero, self, "Info_Mod_Namib_Dealer_15_02"); //Alles klar.
-	AI_Output(self, hero, "Info_Mod_Namib_Dealer_02_03"); //Hier hast du noch ein bessere Rüstung.
+	AI_Output(hero, self, "Info_Mod_Namib_Dealer_15_02"); //All clear.
+	AI_Output(self, hero, "Info_Mod_Namib_Dealer_02_03"); //Here's some better armor.
 
 	if (Templer_Dabei == 1)
 	{
@@ -470,7 +470,7 @@ FUNC VOID Info_Mod_Namib_Dealer_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_SEKTE_DEALER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SEKTE_DEALER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SEKTE_DEALER, "Baal Namib hat mir ein Krautpaket gegeben, welches ich bei einem Söldner namens Rath hier im Minental abliefern soll.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_DEALER, "Baal Namib gave me a packet of herbs which I have to deliver to a mercenary named Rath here in the Minental.");
 };
 
 INSTANCE Info_Mod_Namib_NoDeal (C_INFO)
@@ -481,7 +481,7 @@ INSTANCE Info_Mod_Namib_NoDeal (C_INFO)
 	information	= Info_Mod_Namib_NoDeal_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Rath wollte das Sumpfkraut nicht?";
+	description	= "Rath didn't want the weed?";
 };
 
 FUNC INT Info_Mod_Namib_NoDeal_Condition()
@@ -494,15 +494,15 @@ FUNC INT Info_Mod_Namib_NoDeal_Condition()
 
 FUNC VOID Info_Mod_Namib_NoDeal_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_NoDeal_15_00"); //Rath wollte das Sumpfkraut nicht?
-	AI_Output(self, hero, "Info_Mod_Namib_NoDeal_02_01"); //Aber wieso denn das?
-	AI_Output(hero, self, "Info_Mod_Namib_NoDeal_15_02"); //Er sagt, dass es eine billigere und bessere Droge als Sumpfkraut gibt. Er nennt es Freudenspender.
-	AI_Output(hero, self, "Info_Mod_Namib_NoDeal_15_03"); //Ein Typ auf dem Marktplatz von Khorata soll es verkaufen.
-	AI_Output(self, hero, "Info_Mod_Namib_NoDeal_02_04"); //Das sind schlechte Nachrichten. Geh nach Relendel und ergründe dort in Khorata das Geheimnis des Freudenspender. Du bist unsere letzte Hoffnung.
+	AI_Output(hero, self, "Info_Mod_Namib_NoDeal_15_00"); //Rath didn't want the weed?
+	AI_Output(self, hero, "Info_Mod_Namib_NoDeal_02_01"); //But why is that?
+	AI_Output(hero, self, "Info_Mod_Namib_NoDeal_15_02"); //He says there's a cheaper and better drug than swampweed. He calls it a giver of joy.
+	AI_Output(hero, self, "Info_Mod_Namib_NoDeal_15_03"); //A guy at the marketplace in Khorata wants to sell it.
+	AI_Output(self, hero, "Info_Mod_Namib_NoDeal_02_04"); //That's bad news. Go to Relendel and find out the secret of the giver of joy in Khorata. You're our last hope.
 
 	Log_CreateTopic	(TOPIC_MOD_SEKTE_Freudenspender, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SEKTE_Freudenspender, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Baal Namib will, dass ich nach Khorata gehe, und dort die Spur des Freudenspender aufnehme.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Baal Namib wants me to go to Khorata and pick up the trail of the giver of joy.");
 	B_SetTopicStatus	(TOPIC_MOD_SEKTE_DEALER, LOG_SUCCESS);
 
 	B_GivePlayerXP	(100);
@@ -528,18 +528,18 @@ FUNC INT Info_Mod_Namib_Meer_Condition()
 
 FUNC VOID Info_Mod_Namib_Meer_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_00"); //DU!? Du wagst dich noch hierher, nachdem du uns verraten hast?
-	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_01"); //Sieh nur was du aus der glorreichen Gemeinschaft des Sumpfes gemacht hast!
-	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_02"); //Sie sind alle TOT ... naja die meisten sind gegangen weil wir keine Mittel mehr hatten, Sumpfkraut anzubauen, aber der Geist unserer Gemeinschaft ist TOT!
-	AI_Output(hero, self, "Info_Mod_Namib_Meer_15_03"); //Beruhige dich. Ich hab eine Idee wie wir dem Sumpflager neues Leben einhauchen können.
-	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_04"); //Es ist UNVERZEIHLICH was du uns anget ... du hast eine Idee? Na sprich schon, lass dir nicht alles aus der Nase ziehen.
-	AI_Output(hero, self, "Info_Mod_Namib_Meer_15_05"); //Der König wünscht sich ein Meer. Der Sumpf hier wäre genau das richtige.
-	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_06"); //Du glaubst wir überlassen diesen Spinnern einfach unsren Sumpf? Du bist VERRÜCKT!
-	AI_Output(hero, self, "Info_Mod_Namib_Meer_15_07"); //Natürlich nicht. Ich hab eher an ein Bündnis gedacht.
-	AI_Output(hero, self, "Info_Mod_Namib_Meer_15_08"); //Der Hofstaat darf sich frei hier aufhalten und dafür werde ich dafür sorgen, dass ihr wieder nach Lust und Laune Sumpfkraut anbauen könnt, ohne finanzielle Probleme.
-	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_09"); //Ach ich weiß nicht ... normaler weiße rauche ich immer einen, wenn ich über so wichtige Angelegenheiten nachdenke.
+	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_00"); //DU!? You dare to come here after you betrayed us?
+	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_01"); //Look what you've done to the glorious community of the swamp!
+	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_02"); //They're all DEATH... Well, most of them have gone because we had no means to grow swampweed, but the spirit of our community is DEAD!
+	AI_Output(hero, self, "Info_Mod_Namib_Meer_15_03"); //Calm down, calm down. I have an idea how to breathe new life into the swamp camp.
+	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_04"); //It's UNDIRECTORY what you do to us.... You have an idea? Speak up, don't let it all get out of your nose.
+	AI_Output(hero, self, "Info_Mod_Namib_Meer_15_05"); //The king desires a sea. The swamp here would be just the thing.
+	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_06"); //You think we're just gonna let those weirdoes take our swamp? You're crazy!
+	AI_Output(hero, self, "Info_Mod_Namib_Meer_15_07"); //Of course not, of course. I was thinking more of an alliance.
+	AI_Output(hero, self, "Info_Mod_Namib_Meer_15_08"); //The court is allowed to stay here freely and I will make sure that you can grow swampweed again without any financial problems.
+	AI_Output(self, hero, "Info_Mod_Namib_Meer_02_09"); //Oh, I don't know... when I think about such important matters.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Baal Namib ist sich noch nicht sicher, was er von dem Vorschlag halten soll. Er braucht erst was zu rauchen, bevor er einen Entschluss fassen kann. Ich sollte ihm etwas Sumpfkraut oder ein Fläschchen Freudenspender bringen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Baal Namib is not yet sure what to think of the proposal. He needs to smoke before he can make a decision. I should bring him some bogweed or a bottle of pleasure.");
 
 	Mod_SL_Meer = 2;
 };
@@ -552,7 +552,7 @@ INSTANCE Info_Mod_Namib_KoenigJoint (C_INFO)
 	information	= Info_Mod_Namib_KoenigJoint_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du einen Stängel.";
+	description	= "Here's a stem.";
 };
 
 FUNC INT Info_Mod_Namib_KoenigJoint_Condition()
@@ -566,16 +566,16 @@ FUNC INT Info_Mod_Namib_KoenigJoint_Condition()
 
 FUNC VOID Info_Mod_Namib_KoenigJoint_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_KoenigJoint_15_00"); //Hier hast du einen Stängel.
+	AI_Output(hero, self, "Info_Mod_Namib_KoenigJoint_15_00"); //Here's a stem.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 1);
 
 	B_UseItem	(self, ItMi_Joint);
 
-	AI_Output(self, hero, "Info_Mod_Namib_KoenigJoint_02_01"); //Ahhh ... Das tut gut ... nach so langer Zeit wieder den süßen Qualm einzuatmen.
-	AI_Output(self, hero, "Info_Mod_Namib_KoenigJoint_02_02"); //Von mir aus, bring' diese Burg-Fuzzies hierher, wenn wir danach nur wieder unser geliebtes Sumpfkraut anbauen können!
+	AI_Output(self, hero, "Info_Mod_Namib_KoenigJoint_02_01"); //Ahhhh... That feels good... to breathe in the sweet smoke again after so long.
+	AI_Output(self, hero, "Info_Mod_Namib_KoenigJoint_02_02"); //As far as I'm concerned, bring these castle fuzzies here if we can only grow our beloved swampweed again afterwards!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Baal Namib hat nichts dagegen, dass der König hierher kommt. Ich sollte jetzt mit dem König sprechen und ihn darüber informieren, dass ich ein Meer für ihn gefunden habe.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Baal Namib has no objection to the King coming here. I should now talk to the king and inform him that I have found a sea for him.");
 
 	Mod_SL_Meer = 3;
 
@@ -590,7 +590,7 @@ INSTANCE Info_Mod_Namib_KoenigFreudenspender (C_INFO)
 	information	= Info_Mod_Namib_KoenigFreudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Versuch's mal hiermit.";
+	description	= "Try this one.";
 };
 
 FUNC INT Info_Mod_Namib_KoenigFreudenspender_Condition()
@@ -604,16 +604,16 @@ FUNC INT Info_Mod_Namib_KoenigFreudenspender_Condition()
 
 FUNC VOID Info_Mod_Namib_KoenigFreudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_KoenigFreudenspender_15_00"); //Versuch's mal hiermit.
+	AI_Output(hero, self, "Info_Mod_Namib_KoenigFreudenspender_15_00"); //Try this one.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 
 	B_UseItem	(self, ItMi_Freudenspender);
 
-	AI_Output(self, hero, "Info_Mod_Namib_KoenigFreudenspender_02_01"); //Ich ... Ich war an einem Berg. Da stand eine Burg und ein Fluss war auch da! Und ... Sumpfkraut!
-	AI_Output(self, hero, "Info_Mod_Namib_KoenigFreudenspender_02_02"); //Da war Sumpfkraut, das zu mir gesprochen hat! Es hat gesagt, der Hofstaat ist die Antwort! Los beeil dich schon!
+	AI_Output(self, hero, "Info_Mod_Namib_KoenigFreudenspender_02_01"); //l-- I was at a mountain. There was a castle and a river there, too! And... Swampwort!
+	AI_Output(self, hero, "Info_Mod_Namib_KoenigFreudenspender_02_02"); //There was a swamp herb talking to me! It has said that the Court is the answer! Come on, hurry up!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Baal Namib hat nichts dagegen, dass der König hierher kommt. Ich sollte jetzt mit dem König sprechen und ihn darüber informieren, dass ich ein Meer für ihn gefunden habe.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Baal Namib has no objection to the King coming here. I should now talk to the king and inform him that I have found a sea for him.");
 
 	Mod_SL_Meer = 3;
 
@@ -628,7 +628,7 @@ INSTANCE Info_Mod_Namib_Sporen (C_INFO)
 	information	= Info_Mod_Namib_Sporen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier. Diese Sporen sind der Schlüssel zu der Droge des Hofstaates.";
+	description	= "Here. These spores are the key to the drug of the court state.";
 };
 
 FUNC INT Info_Mod_Namib_Sporen_Condition()
@@ -642,21 +642,21 @@ FUNC INT Info_Mod_Namib_Sporen_Condition()
 
 FUNC VOID Info_Mod_Namib_Sporen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_00"); //Hier. Diese Sporen sind der Schlüssel zu der Droge des Hofstaates.
+	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_00"); //Here. These spores are the key to the drug of the court state.
 
 	B_GiveInvItems	(hero, self, ItMi_FreudenspenderSporen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_01"); //Diese Sporen sind der Schlüssel?
-	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_02"); //Ahm ... Ja. Hat der Magier so ungefähr gesagt.
-	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_03"); //Das war wirklich ALLES was du herausfinden konntest?
-	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_04"); //Naja, wie dem auch sei, ich werde diese Sporen untersuchen.
-	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_05"); //Und was soll ich machen?
-	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_06"); //Was?
-	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_07"); //Was soll ich jetzt machen?
-	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_08"); //Das liegt doch auf der Hand! Infiltriere sie, schwäche sie, unterwander ihre Motivation, so Sachen halt!
-	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_09"); //Ich werde sehen was ich finden kann ...
+	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_01"); //These spores are the key?
+	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_02"); //Um... Yeah. That's what the magician said.
+	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_03"); //That was really EVERYTHING you could find out?
+	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_04"); //Well, anyway, I'm gonna examine these spores.
+	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_05"); //And what am I supposed to do?
+	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_06"); //What?
+	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_07"); //What am I supposed to do now?
+	AI_Output(self, hero, "Info_Mod_Namib_Sporen_02_08"); //It's obvious! Infiltrate them, weaken them, undermine their motivation, things like that!
+	AI_Output(hero, self, "Info_Mod_Namib_Sporen_15_09"); //I'll see what I can find....
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich soll den Hofstaat infiltrieren, schwächen, ihre Motivation unterwandern und so Sachen halt. Währenddessen untersucht Baal Namib die Sporen, die ich ihm gebracht habe.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "I'm supposed to infiltrate the court, weaken, undermine their motivation and so on. Meanwhile, Baal Namib examines the spores I brought him.");
 
 	B_GivePlayerXP	(300);
 };
@@ -669,7 +669,7 @@ INSTANCE Info_Mod_Namib_Motivation (C_INFO)
 	information	= Info_Mod_Namib_Motivation_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Hofstaat geschwächt und das alles.";
+	description	= "I weakened the court and all that.";
 };
 
 FUNC INT Info_Mod_Namib_Motivation_Condition()
@@ -682,16 +682,16 @@ FUNC INT Info_Mod_Namib_Motivation_Condition()
 
 FUNC VOID Info_Mod_Namib_Motivation_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Motivation_15_00"); //Ich habe den Hofstaat geschwächt und das alles.
-	AI_Output(self, hero, "Info_Mod_Namib_Motivation_02_01"); //Hervorragend! Ich habe inzwischen diese Sporen analysiert, die sind hochinteressant.
-	AI_Output(self, hero, "Info_Mod_Namib_Motivation_02_02"); //Jedenfalls solltest du diese Sporen jemandem bringen oder? Stattdessen wirst du ihm diesen Beutel hier bringen.
+	AI_Output(hero, self, "Info_Mod_Namib_Motivation_15_00"); //I weakened the court and all that.
+	AI_Output(self, hero, "Info_Mod_Namib_Motivation_02_01"); //Excellent! In the meantime I have analysed these spores, they are very interesting.
+	AI_Output(self, hero, "Info_Mod_Namib_Motivation_02_02"); //Anyway, you should bring those spores to someone, right? Instead, you're gonna bring him this bag here.
 
 	B_GiveInvItems	(self, hero, ItMi_FakeFreudenspenderSporen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Namib_Motivation_02_03"); //Er Enthält die Eier einer parasitären Insektenart. Wenn sie diese auf ihrem Feld ausbringen, wird die ganze Ernte zu Grunde gehen!
-	AI_Output(self, hero, "Info_Mod_Namib_Motivation_02_04"); //Das dürfte genügen, um sie ein für allemal fertig zu machen! Na los, geh schon!
+	AI_Output(self, hero, "Info_Mod_Namib_Motivation_02_03"); //It contains the eggs of a parasitic insect species. If they spread them on their fields, the whole harvest will perish!
+	AI_Output(self, hero, "Info_Mod_Namib_Motivation_02_04"); //That should be enough to finish them off once and for all! Come on, let's go!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich soll die Parasiteneier zum Drogenminister bringen. Dazu muss ich wohl erstmal den Jäger aufsuchen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "I'm supposed to take the parasitic eggs to the secretary of drugs. I'll have to see the hunter first.");
 
 	Mod_SL_Schwaechen = 5;
 };
@@ -704,7 +704,7 @@ INSTANCE Info_Mod_Namib_HofstaatFutsch (C_INFO)
 	information	= Info_Mod_Namib_HofstaatFutsch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Hofstaat ist Geschichte.";
+	description	= "The court is history.";
 };
 
 FUNC INT Info_Mod_Namib_HofstaatFutsch_Condition()
@@ -717,32 +717,32 @@ FUNC INT Info_Mod_Namib_HofstaatFutsch_Condition()
 
 FUNC VOID Info_Mod_Namib_HofstaatFutsch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_HofstaatFutsch_15_00"); //Der Hofstaat ist Geschichte.
-	AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_01"); //Ausgezeichnet! Alles entwickelt sich vortrefflich.
+	AI_Output(hero, self, "Info_Mod_Namib_HofstaatFutsch_15_00"); //The court is history.
+	AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_01"); //Excellent! Everything is developing excellently.
 
 	if (Guru_Dabei == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_02"); //Du bist es wirklich wert ein hoher Guru zu werden.
-		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_03"); //Mir obliegt die Ehre, dich in die Reihen der hohen Gurus aufzunehmen.
-		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_04"); //Trage diese Robe mit Stolz.
+		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_02"); //You're really worthy to become a high guru.
+		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_03"); //It is my honor to place you in the ranks of the high gurus.
+		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_04"); //Wear this robe with pride.
 
 		HoherGuru_Dabei = TRUE;
 
 		CreateInvItems	(hero, Gur_Armor_H, 1);
 
-		B_ShowGivenThings	("Hohe Gururobe erhalten");
+		B_ShowGivenThings	("Get high Gururobe");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_05"); //Du bist es wirklich wert ein hoher Templer zu werden.
-		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_06"); //Mir obliegt die Ehre, dich in die Reihen der hohen Templer aufzunehmen.
-		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_07"); //Trage diese Rüstung mit Stolz und Würde.
+		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_05"); //You're really worthy to become a high templar.
+		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_06"); //I have the honor of accepting you into the ranks of the high Knights Templars.
+		AI_Output(self, hero, "Info_Mod_Namib_HofstaatFutsch_02_07"); //Wear this armor with pride and dignity.
 
 		HoherTempler_Dabei = TRUE;
 
 		CreateInvItems	(hero, Tpl_Armor_H, 1);
 
-		B_ShowGivenThings	("Schwere Templerrüstung erhalten");
+		B_ShowGivenThings	("Receiving heavy Templar equipment");
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, LOG_SUCCESS);
@@ -772,65 +772,65 @@ FUNC INT Info_Mod_Namib_Leichengase_Condition()
 
 FUNC VOID Info_Mod_Namib_Leichengase_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_02_00"); //Verdammte Novizen!
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_02_00"); //Damn novices!
 
 	Wld_SendTrigger	("EVT_SUMPFHAIPROBE_01");
 	Wld_SendTrigger	("EVT_SUMPFHAIPROBE_02");
 
 	Info_ClearChoices	(Info_Mod_Namib_Leichengase);
 
-	Info_AddChoice	(Info_Mod_Namib_Leichengase, "Nutzloses Pack, Allesamt!", Info_Mod_Namib_Leichengase_B);
-	Info_AddChoice	(Info_Mod_Namib_Leichengase, "Was?", Info_Mod_Namib_Leichengase_A);
+	Info_AddChoice	(Info_Mod_Namib_Leichengase, "Useless pack, all of them!", Info_Mod_Namib_Leichengase_B);
+	Info_AddChoice	(Info_Mod_Namib_Leichengase, "What?", Info_Mod_Namib_Leichengase_A);
 };
 
 FUNC VOID Info_Mod_Namib_Leichengase_C()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_00"); //Was?
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_01"); //Wie? Oh, äh es geht um die Novizen!
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_02"); //Seit wir die Sumpfkrautfelder ... "gedüngt" haben liegen sie mir tagein tagaus in den Ohren.
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_03"); //"Baal Namib es ist schrecklich, es ist grauenhaft furchtbar, unerträglich schlimm und einfach unzufrieden stellend", sagen sie!
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_04"); //"Du musst was dagegen tun", meinen sie.
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_05"); //"Das geht so nicht mehr weiter", beschweren sie sich.
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_06"); //Und ich? Was soll ich den bitte machen!
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_07"); //Oh es ist schlimm ... kannst du dir überhaupt vorstellen wie es ist, wenn einem die Ohren vollgejammert werden?
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_08"); //Naja ...
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_09"); //Dacht ich’s mir! Niemand leidet so sehr wie ich ... außer vielleicht die Novizen.
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_10"); //Vielleicht sagst du mir mal, woran sie leiden.
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_11"); //Duft.
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_12"); //Duft?
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_13"); //Naja, das trifft es nicht so ganz ... vielleicht würde der Begriff "Geruch" der Sache eher gerecht werden.
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_14"); //Geruch also?
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_15"); //Ja ... Nein ... Vielleicht ist Geruch auch nicht das richtige Wort ...
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_16"); //Mal sehen, eventuell würde es Mief ... oder Gestank ... oder ... OH MEIN GOTT, die armen Novizen.
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_17"); //Du kannst dir nicht vorstellen, wie schlimm diese verfaulenden Sumpfhaie stinken!
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_18"); //Es ist als wäre der Schläfer nach einem äonenlangen Nickerchen seinen Morgenkaffe getrunken und sich dann im Sumpf erleichtert.
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_19"); //Du kannst dir nicht vorstellen WIE schlimm es stinkt.
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_20"); //Naja, so schlimm ist Gestank nun auch wieder nicht.
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_21"); //Ach ja? Meinst du?! Einer der Novizen ist erblindet, so sehr stinkt es!
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_22"); //Bitte, BITTE, hilf meinen armen kleinen Novizen, sie sind doch wie Kinder für mich!
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_23"); //Und was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_24"); //Geh zu Baal Caine. Er arbeitet an dem Problem. Ich hoffe, er findet bald eine Lösung.
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_00"); //What?
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_01"); //How? Oh, uh, it's about the novices!
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_02"); //Seit wir die Sumpfkrautfelder ... "fertilised" haben liegen sie mir tagein tagaus in den Ohren.
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_03"); //"Baal Namib it's terrible, it's horrible horrible, unbearably bad and simply unsatisfying.", sagen sie!
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_04"); //"You gotta do something about it.", meinen sie.
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_05"); //"This can't go on like this anymore.", beschweren sie sich.
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_06"); //And me? What am I supposed to do?
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_07"); //Oh, it's bad... can you even imagine what it's like to have your ears full of whining?
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_08"); //Well...
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_09"); //I thought so! No one suffers as much as I do.... except perhaps the novices.
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_10"); //Maybe you can tell me what they suffer from.
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_11"); //Fragrance.
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_12"); //Fragrance?
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_13"); //Naja, das trifft es nicht so ganz ... vielleicht würde der Begriff "odor" der Sache eher gerecht werden.
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_14"); //Smell then?
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_15"); //Yes... No... Maybe smell isn't the right word...
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_16"); //Let's see, maybe it would stink... or stench.... or... Oh MY GOD, the poor novices.
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_17"); //You can't imagine how bad those putrid swamp sharks stink!
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_18"); //It's as if the sleeper had drunk his morning coffee after a long nap and then relieved himself in the swamp.
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_19"); //You can't imagine how bad it stinks.
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_20"); //Well, stench isn't that bad.
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_21"); //Oh, yeah? You think so?! One of the novices is blind, it stinks so much!
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_22"); //Please, PLEASE, help my poor little novices, they are like children to me!
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_C_15_23"); //And what am I supposed to do?
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_C_02_24"); //Go to Baal Caine. He's working on the problem. I hope he finds a solution soon.
 
 	Log_CreateTopic	(TOPIC_MOD_SL_LEICHENGASE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SL_LEICHENGASE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Die Novizen leiden unter dem Gestank, den die Leichen der Sumpfhaie verbreiten. Baal Caine sucht nach einer Lösung dafür. Ich sollte zu ihm gehen.");
+	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "The novices suffer from the stench of the corpses of the bog sharks. Baal Caine is looking for a solution. I should go to him.");
 
 	Info_ClearChoices	(Info_Mod_Namib_Leichengase);
 };
 
 FUNC VOID Info_Mod_Namib_Leichengase_A()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_A_15_00"); //Was?
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_A_15_00"); //What?
 
 	Info_Mod_Namib_Leichengase_C();
 };
 
 FUNC VOID Info_Mod_Namib_Leichengase_B()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_B_15_00"); //Nutzloses Pack, Allesamt!
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_B_02_01"); //Jaja! Ganz recht, kaum ein anständiger Arbeiter dabei, der zu schätzen weiß, dass ICH mich für diese Gesellschaft aufopfere.
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_B_02_02"); //Aber ich leide LEISE, hörst du?
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_B_15_03"); //Kaum zu überhören. Worum geht’s denn?
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_B_15_00"); //Useless pack, all of them!
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_B_02_01"); //Yes, yes! Quite right, hardly a decent worker who appreciates that I sacrifice myself for this society.
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase_B_02_02"); //But I'm suffering quietly, you hear me?
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase_B_15_03"); //It's hard to ignore. What's this about?
 
 	Info_Mod_Namib_Leichengase_C();
 };
@@ -843,7 +843,7 @@ INSTANCE Info_Mod_Namib_Leichengase2 (C_INFO)
 	information	= Info_Mod_Namib_Leichengase2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, ich habe das Problem gelöst.";
+	description	= "Hey, I solved the problem.";
 };
 
 FUNC INT Info_Mod_Namib_Leichengase2_Condition()
@@ -856,8 +856,8 @@ FUNC INT Info_Mod_Namib_Leichengase2_Condition()
 
 FUNC VOID Info_Mod_Namib_Leichengase2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Leichengase2_15_00"); //Hey, ich habe das Problem gelöst.
-	AI_Output(self, hero, "Info_Mod_Namib_Leichengase2_02_01"); //Du hast uns einen unschätzbaren Dienst erwiesen!
+	AI_Output(hero, self, "Info_Mod_Namib_Leichengase2_15_00"); //Hey, I solved the problem.
+	AI_Output(self, hero, "Info_Mod_Namib_Leichengase2_02_01"); //You have done us an invaluable service!
 
 	B_GivePlayerXP	(150);
 
@@ -885,20 +885,20 @@ FUNC INT Info_Mod_Namib_Orkfriedhof_Condition()
 
 FUNC VOID Info_Mod_Namib_Orkfriedhof_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_00"); //(aufgeregt) Was machst du hier? Oben beim Orkfriedhof, da wird deine Kampfkraft benötigt.
-	AI_Output(hero, self, "Info_Mod_Namib_Orkfriedhof_15_01"); //Immer mit der Ruhe ... Berichte was geschehen ist?
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_02"); //Baal Tavor war kürzlich mit einer Expedition aus Novizen und Templern zum verlassenen Orkfriedhof aufgebrochen, um nach Artefakten und Schätzen zu suchen und die Leichnahme unserer toten Brüder der ersten Expedition zu bergen.
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_03"); //Ja, verlassen so dachten wir, genau wie beim ersten Besuch des Friedhofes, als uns Orks und finstere Mächte schmerzliche Verluste unter unseren Mitbrüdern bereiteten ...
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_04"); //Zuerst ließ auch nichts das herannahende Unheil vermuten.
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_05"); //Ungestört verrichteten meine Mitbrüder, wofür sie den Ort betreten hatten, nahmen die Räume, Gänge und Nischen in Augenschein, und betrauerten das Schicksal der toten Templer, die dort im Staube der Verwesung preisgegeben waren.
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_06"); //Immer tiefer schritten sie in die Räume und teilten sich auf.
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_07"); //Plötzlich vernahmen sie den gellenden Schrei eines Novizen, der wie besessen aus einem der tiefer liegenden Räume stürzte und etwas von Schamanen und Blitzen brüllte… aber da war es auch schon zu spät.
-	AI_Output(hero, self, "Info_Mod_Namib_Orkfriedhof_15_08"); //(gespannt) Ja, was geschah ... ?
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_09"); //Das ist schnell erzählt. Die im Friedhof beigesetzten Orks erhoben sich zu Untotendasein ... genau wie die Leichname unserer Mitbrüder.
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_10"); //Sie  fielen über Templer und Novizen her und einzig dem Novizen Talas gelang es in den Wirren zu entkommen.
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_11"); //Was mit den anderen geschah, ob es Überlebende gibt, ist unklar.
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_12"); //Wie dem auch sei, wir haben die Unterstützung des Neuen Lagers erbeten und es würde mir Zuversicht schenken, wenn du dieser Rettungsexpedition beiwohnen würdest.
-	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_13"); //Du hast bereits einmal den Widrigkeiten des Orkriedhofes getrotzt ...
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_00"); //What are you doing here? Up at the orc cemetery, where your fighting power is needed.
+	AI_Output(hero, self, "Info_Mod_Namib_Orkfriedhof_15_01"); //Take it easy... Report what happened?
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_02"); //Baal Tavor had recently embarked on an expedition of novices and Templars to the abandoned Orc Cemetery to search for artifacts and treasures and recover the corpse of our dead brothers from the first expedition.
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_03"); //Yes, abandoned so we thought, just as we did on our first visit to the cemetery, when orcs and dark powers caused us painful losses among our brothers....
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_04"); //At first, nothing could be expected from the approaching disaster.
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_05"); //Undisturbed, my confreres carried out what they had entered the place for, inspected the rooms, corridors and niches, and mourned the fate of the dead Templars, who were exposed there in the dust of decay.
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_06"); //They stepped ever deeper into the rooms and split up.
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_07"); //Suddenly they heard the screaming cry of a novice who fell obsessively from one of the deeper rooms and shouted something of shamans and lightning... but it was already too late.
+	AI_Output(hero, self, "Info_Mod_Namib_Orkfriedhof_15_08"); //Yes, what happened... ?
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_09"); //That's told quickly. The orcs buried in the cemetery became undead.... just like the bodies of our confreres.
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_10"); //They fell over Templars and novices and only Tala's novice escaped in the turmoil.
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_11"); //What happened to the others, whether there are survivors, is unclear.
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_12"); //Be that as it may, we have asked for the support of the New Camp and it would give me confidence if you were to attend this rescue expedition.
+	AI_Output(self, hero, "Info_Mod_Namib_Orkfriedhof_02_13"); //You have already defied the adversities of the Orkriedhof once before?
 };
 
 INSTANCE Info_Mod_Namib_GeiselnSicher (C_INFO)
@@ -921,12 +921,12 @@ FUNC INT Info_Mod_Namib_GeiselnSicher_Condition()
 
 FUNC VOID Info_Mod_Namib_GeiselnSicher_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_GeiselnSicher_02_00"); //Es ist dir tatsächlich gelungen die Überlebenden zu finden und zu retten, unglaublich. Hier, nimm dies als Dank.
+	AI_Output(self, hero, "Info_Mod_Namib_GeiselnSicher_02_00"); //You actually managed to find and save the survivors, incredible. Here, take this as a thank you.
 
-	B_ShowGivenThings	("Diverse Items erhalten");
+	B_ShowGivenThings	("Receive various items");
 
-	AI_Output(self, hero, "Info_Mod_Namib_GeiselnSicher_02_01"); //Darunter ist auch eine neu entwickelte Spruchrolle, die mit einer ordentlichen Portion Sumpfkraut hergestellt wurde.
-	AI_Output(self, hero, "Info_Mod_Namib_GeiselnSicher_02_02"); //Sie lässt pflanzliches Material deiner Umgebung zu einem Golem erstehen, der deinem Willen folgt. Viel Spaß damit.
+	AI_Output(self, hero, "Info_Mod_Namib_GeiselnSicher_02_01"); //Among them is also a newly developed spell roll, which was produced with a good portion of bogweed.
+	AI_Output(self, hero, "Info_Mod_Namib_GeiselnSicher_02_02"); //It makes herbal material of your surroundings rise to a golem that follows your will. Have fun with that.
 
 	CreateInvItems	(hero, ItPo_Health_03, 4);
 	CreateInvItems	(hero, ItMi_Gold, 300);
@@ -945,7 +945,7 @@ INSTANCE Info_Mod_Namib_Hueterklinge (C_INFO)
 	information	= Info_Mod_Namib_Hueterklinge_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche Baal Ydran.";
+	description	= "I'm looking for Baal Ydran.";
 };
 
 FUNC INT Info_Mod_Namib_Hueterklinge_Condition()
@@ -958,10 +958,10 @@ FUNC INT Info_Mod_Namib_Hueterklinge_Condition()
 
 FUNC VOID Info_Mod_Namib_Hueterklinge_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge_15_00"); //Ich suche Baal Ydran.
-	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge_02_01"); //Den findest du auf unserem Friedhof. Der befindet sich im Sumpf nahe dem Meer.
+	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge_15_00"); //I'm looking for Baal Ydran.
+	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge_02_01"); //You can find it in our cemetery. It is located in the swamp near the sea.
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Baal Ydran soll auf dem Friedhof im Sumpf nahe des Meeres zu finden sein.");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Baal Ydran is said to be found in the cemetery in the marsh near the sea.");
 };
 
 INSTANCE Info_Mod_Namib_Hueterklinge2 (C_INFO)
@@ -972,7 +972,7 @@ INSTANCE Info_Mod_Namib_Hueterklinge2 (C_INFO)
 	information	= Info_Mod_Namib_Hueterklinge2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Ydran gefunden. Er ist tot.";
+	description	= "I found Ydran. He's dead.";
 };
 
 FUNC INT Info_Mod_Namib_Hueterklinge2_Condition()
@@ -986,19 +986,19 @@ FUNC INT Info_Mod_Namib_Hueterklinge2_Condition()
 
 FUNC VOID Info_Mod_Namib_Hueterklinge2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_00"); //Ich habe Ydran gefunden. Er ist tot.
-	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_01"); //Ich weiß. Tragisch die ganze Geschichte.
-	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_02"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_03"); //Ich möchte nicht darüber reden ... die Wunden sind noch zu frisch ... SO FRISCH (heult lauthals los)
-	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_04"); //Krieg dich mal wieder ein.
-	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_05"); //Du hast Recht. Rydiger würde nicht wollen, dass ich seinetwegen weine.
-	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_06"); //Rydiger? Ach egal. Kennst du einen Templer namens Gor Na Kosh?
-	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_07"); //Aber ja. Ein sehr gewiefter junger Templer. Nimmt seine Aufgabe sehr ernst.
-	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_08"); //Weißt du wo ich ihn finden kann?
-	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_09"); //Versuch's doch einfach mal bei seiner Hütte. Die ist direkt auf der anderen Seite meines Baumes.
-	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_10"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_00"); //I found Ydran. He's dead.
+	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_01"); //I know. Tragic the whole story.
+	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_02"); //What's happening?
+	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_03"); //I don't want to talk about it.... the wounds are still too fresh... SO FRESH (wake out loud)
+	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_04"); //Calm down, will you?
+	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_05"); //You're right. You're right. Rydiger wouldn't want me to cry over him.
+	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_06"); //Rydiger? Never mind. Do you know a Templar named Gor Na Kosh?
+	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_07"); //But yes, yes. A very shrewd young Templar. He takes his task very seriously.
+	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_08"); //Do you know where I can find him?
+	AI_Output(self, hero, "Info_Mod_Namib_Hueterklinge2_02_09"); //Why don't you just try his cabin? It's right on the other side of my tree.
+	AI_Output(hero, self, "Info_Mod_Namib_Hueterklinge2_15_10"); //Thanks.
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Gor Na Koshs Hütte ist direkt auf der anderen Seite von Baal Namibs Baum. Mal sehen, was ich dort vorfinde.");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Gor Na Kosh's hut is directly on the other side of Baal Namib's tree. Let's see what I find there.");
 
 	Wld_InsertItem	(ItMi_GorNaKoshsBeutel, "FP_ITEM_GORNAKOSH_BEUTEL");
 	Wld_InsertItem	(ItWr_GorNaKoshsTagebuch1, "FP_ITEM_GORNAKOSH_TAGEBUCH");
@@ -1012,7 +1012,7 @@ INSTANCE Info_Mod_Namib_Magie (C_INFO)
 	information	= Info_Mod_Namib_Magie_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Magie?! Wie könnt ihr Magie wirken?";
+	description	= "Magic?! How can you do magic?";
 };
 
 FUNC INT Info_Mod_Namib_Magie_Condition()
@@ -1025,8 +1025,8 @@ FUNC INT Info_Mod_Namib_Magie_Condition()
 
 FUNC VOID Info_Mod_Namib_Magie_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Magie_15_00"); //Magie?! Wie könnt ihr Magie wirken? Eure Magie erhieltet ihr doch vom Schläfer.
-	AI_Output(self, hero, "Info_Mod_Namib_Magie_02_01"); //Das dachten wir. Doch wir haben herausgefunden, dass es nicht der Schläfer war, der uns die Magie gab. Es war das Sumpfkraut!
+	AI_Output(hero, self, "Info_Mod_Namib_Magie_15_00"); //Magic?! How can you do magic? You received your magic from the sleeper.
+	AI_Output(self, hero, "Info_Mod_Namib_Magie_02_01"); //That's what we thought. But we found out it wasn't the sleeper who gave us the magic. It was the marsh weed!
 };
 
 INSTANCE Info_Mod_Namib_Lehre (C_INFO)
@@ -1037,7 +1037,7 @@ INSTANCE Info_Mod_Namib_Lehre (C_INFO)
 	information	= Info_Mod_Namib_Lehre_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dann seid ihr keine religiöse Gruppe mehr?";
+	description	= "Then you're not a religious group anymore?";
 };
 
 FUNC INT Info_Mod_Namib_Lehre_Condition()
@@ -1050,10 +1050,10 @@ FUNC INT Info_Mod_Namib_Lehre_Condition()
 
 FUNC VOID Info_Mod_Namib_Lehre_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Lehre_15_00"); //Dann seid ihr keine religiöse Gruppe mehr?
-	AI_Output(self, hero, "Info_Mod_Namib_Lehre_02_01"); //Nein. Wir sind mehr ein Wirtschaftsbündnis und eine Lebensgemeinschaft. Wer genug hat von den Konventionen  und Gesetzten der Stadt kommt hierher.
-	AI_Output(hero, self, "Info_Mod_Namib_Lehre_15_02"); //Warum gibt es dann noch Templer hier?
-	AI_Output(self, hero, "Info_Mod_Namib_Lehre_02_03"); //Gute Frage ... es hat eigentlich nie jemand daran gedacht. Naja, Templer sind immer nützlich.
+	AI_Output(hero, self, "Info_Mod_Namib_Lehre_15_00"); //Then you're not a religious group anymore?
+	AI_Output(self, hero, "Info_Mod_Namib_Lehre_02_01"); //No. We are more of an economic alliance and a living community. Whoever has had enough of the city's conventions and laws comes here.
+	AI_Output(hero, self, "Info_Mod_Namib_Lehre_15_02"); //Then why are there still Templars here?
+	AI_Output(self, hero, "Info_Mod_Namib_Lehre_02_03"); //Good question.... nobody ever thought of it. Well, Templars are always useful.
 };
 
 INSTANCE Info_Mod_Namib_Ruestung (C_INFO)
@@ -1064,7 +1064,7 @@ INSTANCE Info_Mod_Namib_Ruestung (C_INFO)
 	information	= Info_Mod_Namib_Ruestung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wenn ihr nicht mehr an den Schläfer glaubt, warum ...";
+	description	= "If you no longer believe in the sleeper, why...";
 };
 
 FUNC INT Info_Mod_Namib_Ruestung_Condition()
@@ -1077,8 +1077,8 @@ FUNC INT Info_Mod_Namib_Ruestung_Condition()
 
 FUNC VOID Info_Mod_Namib_Ruestung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Ruestung_15_00"); //Wenn ihr nicht mehr an den Schläfer glaubt, warum habt ihr dann immer noch das Zeichen seiner Maske auf der Rüstung?
-	AI_Output(self, hero, "Info_Mod_Namib_Ruestung_02_01"); //Wir haben beschlossen sie in Erinnerung an die alte Zeit dort zu lassen. Wir wollen nie wieder vergessen, wie falsch Glaube sein kann. Vor allem, wenn man ihn gepredigt bekommt.
+	AI_Output(hero, self, "Info_Mod_Namib_Ruestung_15_00"); //If you no longer believe in the sleeper, why do you still have the sign of his mask on your armor?
+	AI_Output(self, hero, "Info_Mod_Namib_Ruestung_02_01"); //We decided to leave them there in memory of the old days. We never want to forget how false faith can be. Especially when you get it preached.
 };
 
 INSTANCE Info_Mod_Namib_Woher (C_INFO)
@@ -1089,7 +1089,7 @@ INSTANCE Info_Mod_Namib_Woher (C_INFO)
 	information	= Info_Mod_Namib_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso bist du hier bei der Sekte?";
+	description	= "Why are you here with the sect?";
 };
 
 FUNC INT Info_Mod_Namib_Woher_Condition()
@@ -1103,12 +1103,12 @@ FUNC INT Info_Mod_Namib_Woher_Condition()
 
 FUNC VOID Info_Mod_Namib_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_Woher_15_00"); //Wieso bist du hier bei der Sekte?
-	AI_Output(self, hero, "Info_Mod_Namib_Woher_02_01"); //Früher lebte ich in der Nähe von Silden als Besitzer einer Sumpfkrautplantage.
-	AI_Output(self, hero, "Info_Mod_Namib_Woher_02_02"); //Als der König dann das Sumpfkrautverbot erlassen hat, wurde ich natürlich sofort in die Kolonie geworfen.
-	AI_Output(hero, self, "Info_Mod_Namib_Woher_15_03"); //Was hast du dann gemacht?
-	AI_Output(self, hero, "Info_Mod_Namib_Woher_02_04"); //Zuerst bin ich ins Neue Lager und hab dort als Bauer gearbeitet.
-	AI_Output(self, hero, "Info_Mod_Namib_Woher_02_05"); //Als ich dann erfuhr, dass Y'Berion ein Lager im Sumpf gründen wollte, hab ich mich ihm angeschlossen. Nach einiger Zeit hat er mich auch zum Guru ernannt.
+	AI_Output(hero, self, "Info_Mod_Namib_Woher_15_00"); //Why are you here with the sect?
+	AI_Output(self, hero, "Info_Mod_Namib_Woher_02_01"); //I used to live near Silden as the owner of a bogweed plantation.
+	AI_Output(self, hero, "Info_Mod_Namib_Woher_02_02"); //When the king banned the bog weed, I was immediately thrown into the colony.
+	AI_Output(hero, self, "Info_Mod_Namib_Woher_15_03"); //Then what did you do?
+	AI_Output(self, hero, "Info_Mod_Namib_Woher_02_04"); //First I went to the new camp and worked there as a farmer.
+	AI_Output(self, hero, "Info_Mod_Namib_Woher_02_05"); //When I found out that Y' Berion wanted to set up a camp in the swamp, I joined him. After some time he also named me a guru.
 };
 
 INSTANCE Info_Mod_Namib_Pickpocket (C_INFO)
@@ -1244,7 +1244,7 @@ FUNC INT Info_Mod_Namib_EXIT_Condition()
 
 FUNC VOID Info_Mod_Namib_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_EXIT_02_01"); //Dem Ziel entgegen!
+	AI_Output(self, hero, "Info_Mod_Namib_EXIT_02_01"); //Towards the goal!
 
 	AI_StopProcessInfos	(self);
 };

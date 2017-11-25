@@ -1,7 +1,7 @@
 instance Mod_589_NONE_Jora_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Jora";
+	name 		= "ora";
 	guild 		= GIL_PAL;
 	id 			= 589;
 	voice 		= 8;

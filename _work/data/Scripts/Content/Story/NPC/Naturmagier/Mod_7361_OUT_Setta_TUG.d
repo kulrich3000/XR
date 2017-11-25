@@ -1,6 +1,6 @@
 INSTANCE Mod_7361_OUT_Setta_TUG (Npc_Default)
 {
-	name 		= "Setta";
+	name 		= "setta";
 	guild 		= GIL_OUT;
 	id 		= 7361;
 	voice 		= 16;

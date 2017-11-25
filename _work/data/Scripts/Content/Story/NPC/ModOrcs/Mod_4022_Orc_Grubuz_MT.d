@@ -1,7 +1,7 @@
 INSTANCE Mod_4022_Orc_Grubuz_MT (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Grubuz";
+	name							=	"pit buzz";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	4022;
 	voice							=	18;

@@ -1,7 +1,7 @@
 INSTANCE Mod_7415_OUT_Axon_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Axon";
+	name 		= "axon";
 	guild 		= GIL_OUT;
 	id 			= 7415;
 	voice 		= 6;

@@ -114,7 +114,7 @@ INSTANCE PC_Opferaltar_Zeremoniendolch (C_INFO)
 	information	= PC_Opferaltar_Zeremoniendolch_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeremoniendolch nehmen";
+	description	= "take a ceremonial dagger";
 };
 
 FUNC INT PC_Opferaltar_Zeremoniendolch_Condition()
@@ -139,9 +139,9 @@ FUNC VOID PC_Opferaltar_Zeremoniendolch_Info()
 {
 	CreateInvItems	(hero, ItMw_Avaquar, 1);
 
-	B_ShowGivenThings	("Zeremoniendolch erhalten");
+	B_ShowGivenThings	("Receive a ceremonial dagger");
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Was ein Akt! Aber den Dolch habe ich endlich. Nochmal mit dem Eremiten reden und dann ab zu Mustafa.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "What an act! But I finally have the dagger. Talk to the hermit again and then Mustafa.");
 
 	B_GivePlayerXP	(300);
 
@@ -156,7 +156,7 @@ INSTANCE PC_Opferaltar_Plagegeister (C_INFO)
 	information	= PC_Opferaltar_Plagegeister_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geister besänftigen";
+	description	= "Soothe ghosts";
 };
 
 FUNC INT PC_Opferaltar_Plagegeister_Condition()
@@ -175,7 +175,7 @@ FUNC VOID PC_Opferaltar_Plagegeister_Info()
 	&& (Npc_HasItems(hero, ItSc_Charm) >= 1)
 	&& (Npc_HasItems(hero, ItPl_SwampHerb) >= 3)
 	{
-		AI_Output(hero, hero, "PC_Opferaltar_Plagegeister_15_00"); //Ighoriat Thorul. Kehrt ins Totenreich zurück, ihr ruhelosen Geister!
+		AI_Output(hero, hero, "PC_Opferaltar_Plagegeister_15_00"); //Ighoriat Thorul. Return to the realm of the dead, you restless spirits!
 
 		Wld_PlayEffect	("spellFX_Sleep_TARGET", hero, hero, 0, 0, 0, FALSE);
 		Wld_PlayEffect	("FX_EARTHQUAKE", hero, hero, 0, 0, 0, FALSE);
@@ -201,7 +201,7 @@ FUNC VOID PC_Opferaltar_Plagegeister_Info()
 	}
 	else
 	{
-		Print	("Mir fehlen die nötigen Gegenstände!");
+		Print	("I'm missing the necessary items!");
 	};
 
 	B_ENDPRODUCTIONDIALOG();
@@ -215,7 +215,7 @@ INSTANCE PC_Opferaltar_Knochen (C_INFO)
 	information	= PC_Opferaltar_Knochen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Knochen eines Skelettes opfern";
+	description	= "Sacrifice bone of a skeleton";
 };
 
 FUNC INT PC_Opferaltar_Knochen_Condition()
@@ -249,7 +249,7 @@ INSTANCE PC_Opferaltar_Heilwurzel (C_INFO)
 	information	= PC_Opferaltar_Heilwurzel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Heilwurzel opfern";
+	description	= "Sacrifice healing root";
 };
 
 FUNC INT PC_Opferaltar_Heilwurzel_Condition()
@@ -283,7 +283,7 @@ INSTANCE PC_Opferaltar_Feuerwurzel (C_INFO)
 	information	= PC_Opferaltar_Feuerwurzel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Feuerwurzel opfern";
+	description	= "sacrifice fire root";
 };
 
 FUNC INT PC_Opferaltar_Feuerwurzel_Condition()
@@ -317,7 +317,7 @@ INSTANCE PC_Opferaltar_Gold (C_INFO)
 	information	= PC_Opferaltar_Gold_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "500 Gold opfern";
+	description	= "500 gold sacrifices";
 };
 
 FUNC INT PC_Opferaltar_Gold_Condition()
@@ -351,7 +351,7 @@ INSTANCE PC_Opferaltar_Erz (C_INFO)
 	information	= PC_Opferaltar_Erz_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erzbrocken opfern";
+	description	= "sacrifice chunks of ore";
 };
 
 FUNC INT PC_Opferaltar_Erz_Condition()
@@ -385,7 +385,7 @@ INSTANCE PC_Opferaltar_Nahrung (C_INFO)
 	information	= PC_Opferaltar_Nahrung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Nahrung opfern";
+	description	= "sacrifice food";
 };
 
 FUNC INT PC_Opferaltar_Nahrung_Condition()
@@ -407,87 +407,87 @@ FUNC VOID PC_Opferaltar_Nahrung_Info()
 
 	if (Npc_HasItems(hero, ItFoMuttonZombie) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Zombiefleisch opfern", PC_Opferaltar_Nahrung_MuttonZombie);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Zombie flesh sacrifice", PC_Opferaltar_Nahrung_MuttonZombie);
 	};
 	if (Npc_HasItems(hero, ItFo_Sausage) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Wurst opfern", PC_Opferaltar_Nahrung_Sausage);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice sausage", PC_Opferaltar_Nahrung_Sausage);
 	};
 	if (Npc_HasItems(hero, ItFo_Wineberrys_01) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Weintrauben opfern", PC_Opferaltar_Nahrung_Wineberrys_01);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Sacrifice grapes", PC_Opferaltar_Nahrung_Wineberrys_01);
 	};
 	if (Npc_HasItems(hero, ItFo_XPStew) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Thekla's Eintopf opfern", PC_Opferaltar_Nahrung_XPStew);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Sacrifice Thekla's stew", PC_Opferaltar_Nahrung_XPStew);
 	};
 	if (Npc_HasItems(hero, ItPl_SwampHerb) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Sumpfkraut opfern", PC_Opferaltar_Nahrung_SwampHerb);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice swampweed", PC_Opferaltar_Nahrung_SwampHerb);
 	};
 	if (Npc_HasItems(hero, ItFo_StockFish) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Stockfisch opfern", PC_Opferaltar_Nahrung_StockFish);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Stockfish sacrifice", PC_Opferaltar_Nahrung_StockFish);
 	};
 	if (Npc_HasItems(hero, ItFo_Bacon) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Schinken opfern", PC_Opferaltar_Nahrung_Bacon);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice ham", PC_Opferaltar_Nahrung_Bacon);
 	};
 	if (Npc_HasItems(hero, ItFo_Schafswurst) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Schafswurst opfern", PC_Opferaltar_Nahrung_Schafswurst);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice sheep sausage", PC_Opferaltar_Nahrung_Schafswurst);
 	};
 	if (Npc_HasItems(hero, ItFo_Kuerbis) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Kürbis opfern", PC_Opferaltar_Nahrung_Kuerbis);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Sacrifice pumpkin", PC_Opferaltar_Nahrung_Kuerbis);
 	};
 	if (Npc_HasItems(hero, ItFo_Cheese) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Käse opfern", PC_Opferaltar_Nahrung_Cheese);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Sacrifice cheese", PC_Opferaltar_Nahrung_Cheese);
 	};
 	if (Npc_HasItems(hero, ItFo_Honey) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Honig opfern", PC_Opferaltar_Nahrung_Honey);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice honey", PC_Opferaltar_Nahrung_Honey);
 	};
 	if (Npc_HasItems(hero, ItFo_PfefferBacon) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "gepfefferten Schinken opfern", PC_Opferaltar_Nahrung_PfefferBacon);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice peppered ham", PC_Opferaltar_Nahrung_PfefferBacon);
 	};
 	if (Npc_HasItems(hero, ItFo_Fish_Gebraten) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "gebratenen Fisch opfern", PC_Opferaltar_Nahrung_Fish_Gebraten);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice fried fish", PC_Opferaltar_Nahrung_Fish_Gebraten);
 	};
 	if (Npc_HasItems(hero, ItFo_Fleischeintopf) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fleischeintopf opfern", PC_Opferaltar_Nahrung_Fleischeintopf);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice meat stew", PC_Opferaltar_Nahrung_Fleischeintopf);
 	};
 	if (Npc_HasItems(hero, ItFo_FishSoup) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fischsuppe opfern", PC_Opferaltar_Nahrung_FishSoup);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fish soup sacrifice", PC_Opferaltar_Nahrung_FishSoup);
 	};
 	if (Npc_HasItems(hero, ItFo_Fishragout) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fischragout opfern", PC_Opferaltar_Nahrung_Fishragout);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fish ragout sacrifice", PC_Opferaltar_Nahrung_Fishragout);
 	};
 	if (Npc_HasItems(hero, ItFo_Fish) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fisch opfern", PC_Opferaltar_Nahrung_Fish);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice fish", PC_Opferaltar_Nahrung_Fish);
 	};
 	if (Npc_HasItems(hero, ItFo_Stew) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Eintopf opfern", PC_Opferaltar_Nahrung_Stew);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice stew", PC_Opferaltar_Nahrung_Stew);
 	};
 	if (Npc_HasItems(hero, ItFo_Blutkult) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Dämoneneintopf der Verdammnis opfern", PC_Opferaltar_Nahrung_Blutkult);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Sacrifice demon stew to damnation", PC_Opferaltar_Nahrung_Blutkult);
 	};
 	if (Npc_HasItems(hero, ItFo_Bread) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Brot opfern", PC_Opferaltar_Nahrung_Bread);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "sacrifice bread", PC_Opferaltar_Nahrung_Bread);
 	};
 	if (Npc_HasItems(hero, ItFo_Apple) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Apfel opfern", PC_Opferaltar_Nahrung_Apple);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Sacrifice apple", PC_Opferaltar_Nahrung_Apple);
 	};
 };
 

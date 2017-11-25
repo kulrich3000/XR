@@ -1,7 +1,7 @@
 instance Mod_7522_JG_Hungar_JL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hungar"; 
+	name 		= "Hungarian"; 
 	guild 		= GIL_OUT;
 	id 			= 7522;
 	voice 		= 8;

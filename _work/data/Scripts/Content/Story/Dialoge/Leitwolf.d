@@ -15,31 +15,31 @@ FUNC INT Info_Mod_Leitwolf_Hi_Condition()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_09_00"); //Was willst du hier?
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_09_00"); //What are you doing here?
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
-	Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Verzieh dich du räudiger Köter.", Info_Mod_Leitwolf_Hi_C);
-	Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Du bist hier nicht gerne gesehen.", Info_Mod_Leitwolf_Hi_B);
-	Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Würde es dir etwas ausmachen, das Tal wieder zu verlassen?", Info_Mod_Leitwolf_Hi_A);
+	Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Get lost, you mangy dog.", Info_Mod_Leitwolf_Hi_C);
+	Info_AddChoice	(Info_Mod_Leitwolf_Hi, "You're not very welcome here.", Info_Mod_Leitwolf_Hi_B);
+	Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Would you mind leaving the valley again?", Info_Mod_Leitwolf_Hi_A);
 };
 
 FUNC VOID Info_Mod_Leitwolf_Hi_F()
 {
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_F_09_00"); //Willst du unbedingt so enden wie alle anderen 	im Umkreis von zehn Metern?
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_F_09_00"); //Do you want to end up like everyone else within ten meters?
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Dann komm mal her, großer böser Wolf.", Info_Mod_Leitwolf_Hi_H);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Vielleicht können wir das ja friedlich lösen.", Info_Mod_Leitwolf_Hi_G);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Come here, big bad wolf.", Info_Mod_Leitwolf_Hi_H);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Maybe we can work this out peacefully.", Info_Mod_Leitwolf_Hi_G);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -47,21 +47,21 @@ FUNC VOID Info_Mod_Leitwolf_Hi_F()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_C_15_00"); //Verzieh dich du räudiger Köter.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_C_09_01"); //Was fällt dir ein? Wofür hältst du dich eigentlich?
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_C_15_00"); //Get lost, you mangy dog.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_C_09_01"); //What do you think you're doing? What do you think you are?
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Ich bin dir intellektuell überlegen, also ergib dich oder stirb.", Info_Mod_Leitwolf_Hi_E);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Wofür hältst du dich, hier einfach alles zu vernichten?", Info_Mod_Leitwolf_Hi_D);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "I'm intellectually superior to you, so surrender or die.", Info_Mod_Leitwolf_Hi_E);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "What do you think you're doing to destroy everything here?", Info_Mod_Leitwolf_Hi_D);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -69,21 +69,21 @@ FUNC VOID Info_Mod_Leitwolf_Hi_C()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_B_15_00"); //Du bist hier nicht gerne gesehen.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_B_09_01"); //Sagt wer?
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_B_15_00"); //You're not very welcome here.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_B_09_01"); //Says who?
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Die Verwandlungsmagier, um genau zu sein.", Info_Mod_Leitwolf_Hi_K);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Hast du nicht gehört? Ich sage es.", Info_Mod_Leitwolf_Hi_J);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "The transforming mages, to be precise.", Info_Mod_Leitwolf_Hi_K);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Didn't you hear me? I'll say it.", Info_Mod_Leitwolf_Hi_J);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -91,21 +91,21 @@ FUNC VOID Info_Mod_Leitwolf_Hi_B()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_A_15_00"); //Würde es dir etwas ausmachen, das Tal wieder zu verlassen?
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_A_09_01"); //Wenn du schon so fragst ... ja. (lacht kehlig) Warum sollte ich das Tal verlassen?
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_A_15_00"); //Would you mind leaving the valley again?
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_A_09_01"); //If you ask me that... yes. (laughs throatily) Why should I leave the valley?
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Du bist hier nicht gerne gesehen.", Info_Mod_Leitwolf_Hi_B);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Du und deine Freunde, ihr zerstört den Frieden der Natur in diesem Tal.", Info_Mod_Leitwolf_Hi_M);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "You're not very welcome here.", Info_Mod_Leitwolf_Hi_B);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "You and your friends, you are destroying the peace of nature in this valley.", Info_Mod_Leitwolf_Hi_M);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -113,31 +113,31 @@ FUNC VOID Info_Mod_Leitwolf_Hi_A()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_E_15_00"); //Ich bin dir intellektuell überlegen, also ergib dich oder stirb.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_E_09_01"); //Dass ich nicht lache! (lacht kehlig)
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_E_15_00"); //I'm intellectually superior to you, so surrender or die.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_E_09_01"); //Don't make me laugh! (laughs throatily)
 
 	Info_Mod_Leitwolf_Hi_F();
 };
 
 FUNC VOID Info_Mod_Leitwolf_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_D_15_00"); //Wofür hältst du dich, hier einfach alles zu vernichten?
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_D_09_01"); //Ich bin der Leitwolf dieses Rudels! Und was kannst du vorweisen?
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_D_15_02"); //Auch wenn man es mir nicht ansieht, aber ich bin ein Mensch.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_D_09_03"); //Du gehörst also auch zu diesen Schwachköpfen? (knurrt) Verzieh dich, Bürschchen.
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_D_15_00"); //What do you think you're doing to destroy everything here?
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_D_09_01"); //I'm the leader of this pack! And what can you show me?
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_D_15_02"); //I don't look at it, but I'm a human being.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_D_09_03"); //So you're one of those morons, too? Get out of here, buster.
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Nein, du verziehst dich hier!", Info_Mod_Leitwolf_Hi_I);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Können wir nicht irgendwie eine Einigung finden?", Info_Mod_Leitwolf_Hi_N);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "No, you get out of here!", Info_Mod_Leitwolf_Hi_I);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Can't we find some sort of agreement?", Info_Mod_Leitwolf_Hi_N);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -145,12 +145,12 @@ FUNC VOID Info_Mod_Leitwolf_Hi_D()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_H()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_H_15_00"); //Dann komm mal her, großer böser Wolf.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_H_09_01"); //Wie du willst!
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_H_15_00"); //Come here, big bad wolf.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_H_09_01"); //Suit yourself!
 
 	Mod_VMG_Pruefung_Leitwolf = 1;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
@@ -159,38 +159,38 @@ FUNC VOID Info_Mod_Leitwolf_Hi_H()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_G()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_G_15_00"); //Vielleicht können wir das ja friedlich lösen.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_G_09_01"); //Mir fällt spontan nichts ein. (knurrt)
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_G_15_00"); //Maybe we can work this out peacefully.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_G_09_01"); //I can't think of anything spontaneously. (growls)
 
 	Info_Mod_Leitwolf_Hi_A();
 };
 
 FUNC VOID Info_Mod_Leitwolf_Hi_I()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_I_15_00"); //Nein, du verziehst dich hier!
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_I_15_00"); //No, you get out of here!
 
 	Info_Mod_Leitwolf_Hi_F();
 };
 
 FUNC VOID Info_Mod_Leitwolf_Hi_K()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_K_15_00"); //Die Verwandlungsmagier, um genau zu sein.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_K_09_01"); //Dieses Lumpenpack. Es verscheucht mir die ganze Beute! (knurrt) Sag denen, dass ich hier nicht weggehen werde.
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_K_15_02"); //Und wenn ich es nicht tue?
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_K_09_03"); //Dann bleibe ich halt hier! (lacht kehlig)
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_K_15_00"); //The transforming mages, to be precise.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_K_09_01"); //That ragamuffin. It's scaring the shit out of me! Tell them I'm not going anywhere.
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_K_15_02"); //What if I don't?
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_K_09_03"); //Then I'll stay here! (laughs throatily)
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Verzieh dich du räudiger Köter.", Info_Mod_Leitwolf_Hi_C);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Können wir nicht irgendwie eine Einigung finden?", Info_Mod_Leitwolf_Hi_N);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Get lost, you mangy dog.", Info_Mod_Leitwolf_Hi_C);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Can't we find some sort of agreement?", Info_Mod_Leitwolf_Hi_N);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -198,23 +198,23 @@ FUNC VOID Info_Mod_Leitwolf_Hi_K()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_J()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_J_15_00"); //Hast du nicht gehört? Ich sage es.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_J_09_01"); //Jetzt werd' mal nicht frech Bürschchen. (knurrt) Was willst du von mir?
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_J_15_02"); //Dass du das Tal verlässt. Das habe ich doch schon gesagt.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_J_09_03"); //Ich will das Tal aber nicht verlassen. Es ist ein ausgezeichnetes Jagdgebiet.
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_J_15_00"); //Didn't you hear me? I'll say it.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_J_09_01"); //Don't be a naughty boy. What do you want from me?
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_J_15_02"); //Leaving the valley. I already told you that.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_J_09_03"); //I don't want to leave the valley. It is an excellent hunting ground.
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Dann stirb, du räudiger Köter!", Info_Mod_Leitwolf_Hi_L);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Können wir nicht irgendwie eine Einigung finden?", Info_Mod_Leitwolf_Hi_N);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Then die, you mangy dog!", Info_Mod_Leitwolf_Hi_L);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Can't we find some sort of agreement?", Info_Mod_Leitwolf_Hi_N);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -222,29 +222,29 @@ FUNC VOID Info_Mod_Leitwolf_Hi_J()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_L()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_L_15_00"); //Dann stirb, du räudiger Köter!
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_L_15_00"); //Then die, you mangy dog!
 
 	Info_Mod_Leitwolf_Hi_F();
 };
 
 FUNC VOID Info_Mod_Leitwolf_Hi_N()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_N_15_00"); //Können wir nicht irgendwie eine Einigung finden?
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_N_09_01"); //Dein Gesülze fängt an, mich zu langweilen. Du willst eine Einigung?
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_N_09_02"); //Dann bring mir Nahrung für ... (knurrt) eine Woche und wir verschwinden.
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_N_15_00"); //Can't we find some sort of agreement?
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_N_09_01"); //Your bullshit's starting to bore me. You want a settlement?
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_N_09_02"); //Then bring me food for... One week and we're leaving.
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Vergiss es.", Info_Mod_Leitwolf_Hi_P);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Das werde ich, was willst du haben?", Info_Mod_Leitwolf_Hi_O);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Forget about it.", Info_Mod_Leitwolf_Hi_P);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "I will, what do you want?", Info_Mod_Leitwolf_Hi_O);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -252,8 +252,8 @@ FUNC VOID Info_Mod_Leitwolf_Hi_N()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_M()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_M_15_00"); //Du und deine Freunde, ihr zerstört den Frieden der Natur in diesem Tal.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_M_09_01"); //Och, wie rührend. (knurrt) Das schert mich einen Dreck.
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_M_15_00"); //You and your friends, you are destroying the peace of nature in this valley.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_M_09_01"); //Oh, how touching. I don't give a damn.
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
@@ -265,7 +265,7 @@ FUNC VOID Info_Mod_Leitwolf_Hi_M()
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -273,20 +273,20 @@ FUNC VOID Info_Mod_Leitwolf_Hi_M()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_S()
 {
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_S_09_00"); //Bring mir ... ein zwanzig Stücke Fleisch.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_S_09_00"); //Bring me... a twenty pieces of meat.
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Das ist zu viel verlangt!", Info_Mod_Leitwolf_Hi_U);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "In Ordnung. Ich werde dir das Fleisch bringen.", Info_Mod_Leitwolf_Hi_T);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "That's too much to ask!", Info_Mod_Leitwolf_Hi_U);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "All right, all right. I'll bring you the meat.", Info_Mod_Leitwolf_Hi_T);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -294,21 +294,21 @@ FUNC VOID Info_Mod_Leitwolf_Hi_S()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_P()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_P_15_00"); //Vergiss es.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_P_09_01"); //Dann kommen wir nicht ins Geschäft. (knurrt) Verschwinde.
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_P_15_00"); //Forget about it.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_P_09_01"); //Then we can't do business. Get out of here.
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Nein du verschwindest. Und zwar sofort, oder ich bringe dich um!", Info_Mod_Leitwolf_Hi_R);
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Warte! Was willst du haben?", Info_Mod_Leitwolf_Hi_Q);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "No, you disappear. Now or I'll kill you!", Info_Mod_Leitwolf_Hi_R);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Wait! What do you want?", Info_Mod_Leitwolf_Hi_Q);
 	}
 	else
 	{
 		Mod_VMG_Pruefung_Leitwolf = 1;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 		AI_StopProcessInfos	(self);
 	};
@@ -316,52 +316,52 @@ FUNC VOID Info_Mod_Leitwolf_Hi_P()
 
 FUNC VOID Info_Mod_Leitwolf_Hi_O()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_O_15_00"); //Das werde ich, was willst du haben?
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_O_15_00"); //I will, what do you want?
 
 	Info_Mod_Leitwolf_Hi_S();
 };
 
 FUNC VOID Info_Mod_Leitwolf_Hi_R()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_R_15_00"); //Nein du verschwindest. Und zwar sofort, oder ich bringe dich um!
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_R_09_01"); //Nicht, wenn ich schneller bin!
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_R_15_00"); //No, you disappear. Now or I'll kill you!
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_R_09_01"); //Not if I'm faster!
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	Mod_VMG_Pruefung_Leitwolf = 1;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 	AI_StopProcessInfos	(self);
 };
 
 FUNC VOID Info_Mod_Leitwolf_Hi_Q()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_Q_15_00"); //Warte! Was willst du haben?
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_Q_15_00"); //Wait! What do you want?
 
 	Info_Mod_Leitwolf_Hi_S();
 };
 
 FUNC VOID Info_Mod_Leitwolf_Hi_U()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_U_15_00"); //Das ist zu viel verlangt!
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_U_09_01"); //Dann kommen wir nicht ins Geschäft. (knurrt) Verschwinde.
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_U_15_02"); //Nein du verschwindest. Und zwar sofort, oder ich bringe dich um!
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_U_09_03"); //Nicht, wenn ich schneller bin!
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_U_15_00"); //That's too much to ask!
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_U_09_01"); //Then we can't do business. Get out of here.
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_U_15_02"); //No, you disappear. Now or I'll kill you!
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_U_09_03"); //Not if I'm faster!
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
 	Mod_VMG_Pruefung_Leitwolf = 1;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich musste den Leitwolf umbringen. Hoffentlich kann die Aufgabe trotzdem als erledigt angesehen werden. Ich sollte mit Asko darüber reden.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I had to kill the leader wolf. Hopefully, the task can still be considered completed. I should talk to Asko about this.");
 
 	AI_StopProcessInfos	(self);
 };
 
 FUNC VOID Info_Mod_Leitwolf_Hi_T()
 {
-	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_T_15_00"); //In Ordnung. Ich werde dir das Fleisch bringen.
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_T_09_01"); //Wunderbar. (lacht kehlig)
+	AI_Output(hero, self, "Info_Mod_Leitwolf_Hi_T_15_00"); //All right, all right. I'll bring you the meat.
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Hi_T_09_01"); //Wonderful. (laughs throatily)
 
 	Info_ClearChoices	(Info_Mod_Leitwolf_Hi);
 
@@ -369,7 +369,7 @@ FUNC VOID Info_Mod_Leitwolf_Hi_T()
 
 	Npc_SetRefuseTalk	(self, 60);
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich soll dem Leitwolf 20 Fleischstücke bringen, damit er mit seinem Rudel verschwindet. Ich glaube, Dever verkauft Fleisch. Danach sollte ich mir von Asko eine neue Rolle geben lassen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I'm supposed to bring 20 pieces of meat to the leader wolf so he and his pack can disappear. I think Dever sells meat. After that I should let Asko give me a new role.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -396,28 +396,28 @@ FUNC INT Info_Mod_Leitwolf_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Leitwolf_Aufgabe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Leitwolf_Aufgabe_09_00"); //Wie sieht's aus? (knurrt)
+	AI_Output(self, hero, "Info_Mod_Leitwolf_Aufgabe_09_00"); //How's it looking? (growls)
 
 	if (Mod_HasFleisch_Amount >= 20)
 	{
-		AI_Output(hero, self, "Info_Mod_Leitwolf_Aufgabe_15_01"); //Hier ist dein Fleisch.
+		AI_Output(hero, self, "Info_Mod_Leitwolf_Aufgabe_15_01"); //Here's your meat.
 
 		//B_GiveInvItems	(hero, self, ItFo_MuttonRaw, 20);
 
-		B_ShowGivenThings	("20 rohes Fleisch gegeben");
+		B_ShowGivenThings	("20 raw meat given");
 
-		AI_Output(self, hero, "Info_Mod_Leitwolf_Aufgabe_09_02"); //DAS nenne ich eine gute Mahlzeit! Ich werde mein Versprechen halten und von hier verschwinden.
-		AI_Output(hero, self, "Info_Mod_Leitwolf_Aufgabe_15_03"); //Am besten, du lässt dich hier nicht mehr blicken.
-		AI_Output(self, hero, "Info_Mod_Leitwolf_Aufgabe_09_04"); //(knurrt) Einverstanden. Wir verschwinden dann.
+		AI_Output(self, hero, "Info_Mod_Leitwolf_Aufgabe_09_02"); //That's what I call a good meal! I'll keep my promise and get the hell out of here.
+		AI_Output(hero, self, "Info_Mod_Leitwolf_Aufgabe_15_03"); //It's best if you don't show up here anymore.
+		AI_Output(self, hero, "Info_Mod_Leitwolf_Aufgabe_09_04"); //All right, all right. We'll get out of here.
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Der Leitwolf ist mit seinen Kumpanen abgezogen. Ich sollte Asko davon berichten.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "The leader of the wolf has left with his cronies. I should tell Asko about it.");
 
 		Mod_VMG_Pruefung_Leitwolf = 3;
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Leitwolf_Aufgabe_15_05"); //Ich bin an der Sache dran.
-		AI_Output(self, hero, "Info_Mod_Leitwolf_Aufgabe_09_06"); //Beeil' dich gefälligst!
+		AI_Output(hero, self, "Info_Mod_Leitwolf_Aufgabe_15_05"); //I'm on the case.
+		AI_Output(self, hero, "Info_Mod_Leitwolf_Aufgabe_09_06"); //Hurry up, will you?
 	};
 
 	AI_StopProcessInfos	(self);

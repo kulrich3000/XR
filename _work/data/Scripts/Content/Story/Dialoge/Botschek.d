@@ -15,51 +15,51 @@ FUNC INT Info_Mod_Botschek_Hi_Condition()
 
 FUNC VOID Info_Mod_Botschek_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_00"); //Ahh, ein neues Gesicht. Sei gegrüßt. Noch ein wagemutiger Abenteurer auf der Suche nach Ruhm und Reichtum.
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_01"); //Ruhm und Reichtum? Es gibt hier mehr, als nur Schlamm und Ruinen?
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_02"); //Was für eine Frage! Nirgendwo warten mehr versteckte Reichtümer und Artefakte als hier.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_03"); //Und die Kneipe "Zur goldenen Gülle" ist das Tor zu diesen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_04"); //Hier bekommst und erfährst du alles, was du brauchst, um die sagenumwobenen Schätze des Moores zu bergen.
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_05"); //Sagenumwoben? Na ja ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_06"); //Ohh, ein Unwissender. Vor vielen Jahrhunderten war dies hier der Sitz einer mysteriösen Gemeinschaft.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_07"); //Sie hütete viele Schätze und göttliche Artefakte und errichteten prächtige Bauten, wie du sie dir in deinen kühnsten Träumen nicht vorstellen kannst.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_08"); //Dies war ein heiliges Stück Land.
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_09"); //Nun, sieht aber eher nach verfluchtem Morast aus.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_10"); //Nun, verflucht trifft es schon.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_11"); //Denn eines Tages griffen Feinde das Gebiet an, die nach den Schätzen und göttlichen Gaben trachteten.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_12"); //Lange leistete die Gemeinschaft ihnen erbitterten Widerstand, doch konnte sie gegen die erdrückende Überzahl der Angreifer letztendlich nicht bestehen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_13"); //In ihrer Not entschlossen sie sich zum Äußersten, um die Artefakte vor dem Feind zu schützen, und sandten einen grauenvollen Fluch über das Gebiet.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_14"); //Jeder, der sich darauf befand, wurde zu ewigem Untotendasein verdammt.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_15"); //Doch die Reichtümer von damals liegen immer noch dort verborgen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_16"); //Ja, und manch ein Glücksritter hat es hier schon zu Wohlstand gebracht.
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_17"); //Oder verrottet im Morast.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_18"); //Na ja, ein gewisses Berufsrisiko gibt es hier schon als Abenteurer.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_19"); //Aber um die Gefahren zu mindern, habe ich diese Perle hier eingerichtet, die Schenke "Zur goldenen Gülle".
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_20"); //So, so, der erste Pionier seit Jahrhunderten.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_21"); //Nein, ganz so ist es nicht.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_22"); //Denn bis vor zwei Jahrzehnten gab es hier eine Siedlung, die durch eine magische Barriere geschützt wurde.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_23"); //Sie sollte die Ausbreitung des Sumpfes verhindern.
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_24"); //Das Moor wächst also?
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_25"); //Ja, das tut es. Es heißt, dass jede Seele, die dem Moor zum Opfer fällt, seine Macht noch wachsen lässt.
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_26"); //Nun, wäre es dann nicht ratsam, das Moor zu meiden?
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_27"); //Ähh ... nun ...
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_28"); //Nun gut, aber was geschah mit dieser Siedlung vor 20 Jahren?
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_29"); //Ja, genau, ihre Ruinen siehst du noch am Rande des Sumpfes stehen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_30"); //Eines Tages, so heißt es, ergriff das Moor von dem Stadthalter der Siedlung Besitz.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_31"); //Er stahl den magischen Fokus, welcher die Barriere speiste, lief in das Moor und ward nie mehr gesehen.
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_32"); //Und seitdem hat man nichts unternommen, um das Moor einzudämmen?
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_33"); //Na ja, von einem Suchtrupp, den sie kurz darauf ins Moor sandten, hat man ebenfalls keine Menschenseele je wieder gesehen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_34"); //Und weitere Fokussteine, die sie einsetzten, konnten die Barriere nicht wieder herstellen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_35"); //Es scheint, als sei das Moor seit dem umso mächtiger und einflussreicher geworden.
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_36"); //So wie du berichtest, klingt es, als hätte das Moor einen eigenen Willen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_37"); //Ja, so scheint es fast.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_38"); //Manch einer behauptet, im Moor dämonische Kreaturen gesehen zu haben, finstere Geschöpfe, die dem Willen des Moores folgen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_39"); //Alles scheint es zu verändern, die Grenzen zwischen den Sphären des Diesseitigen und jener dämonischen Welten zu überwinden.
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_40"); //Unbelebtes erwacht zu Bewusstsein und die gewohnten Gesetze der Natur gelten nicht mehr.
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_41"); //Kannst du mir noch Genaueres über das Moor, seine Gefahren und Schätze erzählen?
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_42"); //Ja, das kann ich. Gegen klingelndes Gold, versteht sich ...
-	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_43"); //Erst mal Neugier wecken und dann kassieren, verstehe. Wie viel pro Frage?
-	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_44"); //Das kommt auf die jeweilige Frage an. Gute Informationen für klingende Münze.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_00"); //Ahh, a new face. Greetings. Another daring adventurer in search of fame and wealth.
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_01"); //Fame and wealth? There's more to this place than mud and ruins?
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_02"); //What a question! Nowhere else do you find more hidden treasures and artifacts than here.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_03"); //Und die Kneipe "Golden liquid manure" ist das Tor zu diesen.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_04"); //Here you will find everything you need to recover the legendary treasures of the moor.
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_05"); //Legendary? Well...
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_06"); //Ohh, an ignoramus. Many centuries ago, this was the seat of a mysterious community.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_07"); //She cared for many treasures and divine artifacts and built magnificent buildings you can't imagine in your wildest dreams.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_08"); //This was a sacred piece of land.
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_09"); //Well, looks more like fucking mud.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_10"); //Well, it fucking hits.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_11"); //Because one day, enemies attacked the area in search of the treasures and divine gifts.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_12"); //For a long time, the community fiercely resisted them, but in the end it was unable to survive against the overwhelming majority of the attackers.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_13"); //In their misery, they took the extreme decision to protect the artifacts from the enemy and sent a terrible curse over the area.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_14"); //Everyone who was on top of it was condemned to eternal undeath.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_15"); //But the treasures of that time are still hidden there.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_16"); //Yes, and many a knight of fortune has already brought prosperity here.
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_17"); //Or rot in the mud.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_18"); //Well, there is a certain occupational risk here already as an adventurer.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_19"); //Aber um die Gefahren zu mindern, habe ich diese Perle hier eingerichtet, die Schenke "Golden liquid manure".
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_20"); //So, so, so, the first pioneer for centuries.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_21"); //No, it's not exactly like that.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_22"); //Until two decades ago, there was a settlement here that was protected by a magical barrier.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_23"); //It was to prevent the swamp from spreading.
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_24"); //So the moor is growing?
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_25"); //Yeah, it does. It is said that every soul that falls victim to the bog still increases its power.
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_26"); //Well, wouldn't it be wise to avoid the moor, then?
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_27"); //Uh... well...
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_28"); //All right, but what happened to this settlement 20 years ago?
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_29"); //Yeah, right, her ruins are still standing on the edge of the swamp.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_30"); //One day, it is said, the bog took possession of the town governor of the settlement.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_31"); //He stole the magical focus that fed the barrier, ran into the moor and was never seen again.
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_32"); //And since then, nothing has been done to contain the moor?
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_33"); //Well, from a search party that they sent to the moor shortly afterwards, no human soul has ever been seen again.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_34"); //And other focus stones they used couldn't restore the barrier.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_35"); //It seems as if the moor has become all the more powerful and influential since then.
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_36"); //The way you report, it sounds like the moor has a mind of its own.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_37"); //Yeah, it almost seems so.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_38"); //Some claim to have seen demonic creatures in the moor, sinister creatures following the will of the moor.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_39"); //Everything seems to change it, to overcome the boundaries between the spheres of this world and those demonic worlds.
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_40"); //The inanimate awakens to consciousness and the usual laws of nature no longer apply.
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_41"); //Can you tell me more about the moor, its dangers and its treasures?
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_42"); //Yeah, I can do that. Against ringing gold, of course....
+	AI_Output(hero, self, "Info_Mod_Botschek_Hi_15_43"); //First arouse curiosity and then collect, understand. How much per question?
+	AI_Output(self, hero, "Info_Mod_Botschek_Hi_28_44"); //That depends on the question. Good information for sounding coins.
 
 	B_StartOtherRoutine	(Mod_7655_OUT_Abenteurer_REL,	"ABENTEURER");
 	B_StartOtherRoutine	(Mod_1623_OUT_Chani_REL,	"ABENTEURER");
@@ -73,7 +73,7 @@ INSTANCE Info_Mod_Botschek_Gaertner (C_INFO)
 	information	= Info_Mod_Botschek_Gaertner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Äpfel.";
+	description	= "I got the apples.";
 };
 
 FUNC INT Info_Mod_Botschek_Gaertner_Condition()
@@ -87,23 +87,23 @@ FUNC INT Info_Mod_Botschek_Gaertner_Condition()
 
 FUNC VOID Info_Mod_Botschek_Gaertner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Gaertner_15_00"); //Ich habe die Äpfel.
-	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_01"); //Sehr schön.
-	AI_Output(hero, self, "Info_Mod_Botschek_Gaertner_15_02"); //Aber die Apfelbäume waren sehr wehrhaft.
-	AI_Output(hero, self, "Info_Mod_Botschek_Gaertner_15_03"); //Ich musste handgreiflicher werden, als es sonst beim Äpfelpflücken notwendig ist.
-	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_04"); //Was, die Apfelbäume jetzt auch noch?!
-	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_05"); //Man kann hier aber auch gar kein Gemüse oder Obst mehr anbauen, ohne dass es über kurz oder lang über jeden in der Umgebung herfällt.
-	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_06"); //(wehmütig) Zukünftig muss ich mein Obst wohl in der Stadt kaufen. (seufzt)
-	AI_Output(hero, self, "Info_Mod_Botschek_Gaertner_15_07"); //Die Äpfel?
+	AI_Output(hero, self, "Info_Mod_Botschek_Gaertner_15_00"); //I got the apples.
+	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_01"); //Very nice.
+	AI_Output(hero, self, "Info_Mod_Botschek_Gaertner_15_02"); //But the apple trees were very defensive.
+	AI_Output(hero, self, "Info_Mod_Botschek_Gaertner_15_03"); //I had to be more physical than usual when picking apples.
+	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_04"); //What, the apple trees now?!
+	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_05"); //But you can't grow any more vegetables or fruit without it falling over everyone in the area sooner or later.
+	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_06"); //In the future, I'll have to buy my fruit in town. (sighs)
+	AI_Output(hero, self, "Info_Mod_Botschek_Gaertner_15_07"); //The apples?
 
 	B_GiveInvItems	(hero, self, ItFo_Apple, 20);
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_08"); //Ohh, ja, danke. Hier, ein paar Münzen für deine Mühen ... und ein guter Schluck von der letzten Flasche Apfelmost, die ich noch habe. Prost!
+	AI_Output(self, hero, "Info_Mod_Botschek_Gaertner_28_08"); //Ohh, yeah, thanks. Here, some coins for your trouble... and a good sip of the last bottle of cider I have left. Cheers!
 
 	CreateInvItems	(hero, ItFo_Apfelmost, 1);
 	CreateInvItems	(hero, ItMi_Gold, 200);
 
-	B_ShowGivenThings	("200 Gold und Apfelmost erhalten");
+	B_ShowGivenThings	("200 Gold and cider obtained");
 
 	B_GivePlayerXP	(300);
 
@@ -133,24 +133,24 @@ FUNC INT Info_Mod_Botschek_Wasserleichen_Condition()
 
 FUNC VOID Info_Mod_Botschek_Wasserleichen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_00"); //Sei gegrüßt. Die Sache mit den Äpfeln hast du ja gut hinbekommen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_01"); //Ich hätte daher vielleicht noch eine andere Sache, die du für mich erledigen könntest.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_02"); //Würde dir 300 Münzen einbringen.
-	AI_Output(hero, self, "Info_Mod_Botschek_Wasserleichen_15_03"); //Ich bin ganz Ohr.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_04"); //Nun, am anderen Ende des Sees erheben sich des Nachts immer wieder Wasserleichen aus dem Untergrund.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_05"); //Ich hatte bereits vor einigen Monaten Männer hingeschickt, die sie erledigt haben, aber kurz darauf haben sich wieder neue aus dem Schlamm erhoben.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_06"); //Ich weiß einfach nicht, woher die immer wieder kommen, aber es ist nicht gut, wenn sich zu viele von denen dort sammeln ...
-	AI_Output(hero, self, "Info_Mod_Botschek_Wasserleichen_15_07"); //Bevor sie noch eines Tages in die Schenke marschieren.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_08"); //Ja. Außerdem habe ich seit einiger Zeit weniger Kundschaft.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_09"); //Ich weiß nicht, ob es damit was zu tun hat, aber ich will die wandelnden Leichen trotzdem nicht in meiner Nachbarschaft wissen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_10"); //Vor zwei Wochen hatte ich auch schon einen anderen Abenteurer dorthin geschickt, aber er hat wohl kalte Füße bekommen und ist einfach verschwunden.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_11"); //Also, wenn du es hinkriegst, die Wasserleichen zu erledigen, bekommst du wie vereinbart 300 Münzen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_12"); //Und wenn du schon dabei bist, dann schau dich gleich noch gründlich um.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_13"); //Falls du irgendwelche Hinweise auf den Ursprung des Übels findest, würde ich einige Goldmünzen extra springen lassen.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_00"); //Greetings. You've done a good job with the apples.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_01"); //So I might have another thing you could do for me.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_02"); //I'd bring you 300 coins.
+	AI_Output(hero, self, "Info_Mod_Botschek_Wasserleichen_15_03"); //I'm all ears.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_04"); //Now, at the other end of the lake, corpses rise up from the underground again and again at night.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_05"); //I had sent men there a few months ago who killed them, but shortly afterwards new ones rose out of the mud.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_06"); //I just don't know where they keep coming from, but it's not good if too many of them gather there....
+	AI_Output(hero, self, "Info_Mod_Botschek_Wasserleichen_15_07"); //Before they march into the tavern one day.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_08"); //Yeah. Besides, I've had fewer customers for some time now.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_09"); //I don't know if it has anything to do with that, but I still don't want to know the walking corpses in my neighborhood.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_10"); //Two weeks ago I had sent another adventurer there, but he must have got cold feet and just disappeared.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_11"); //So, if you can get rid of the drownings, you'll get 300 coins as agreed.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_12"); //And while you're at it, take a good look around.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen_28_13"); //If you find any clues to the origin of the evil, I'd have some extra gold coins jumped.
 
 	Log_CreateTopic	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, "Am Seeufer gegenüber der Schenke 'Zur goldenen Gülle' erheben sich nachts immer wieder Untote aus dem Untergrund. Botschek bat mich darum, mich ihrer anzunehmen. Müsste an sich zu schaffen sein. Da der Ursprung der Wasserleichen jedoch im Dunkeln liegt, sollte ich die Augen offen halten. Falls ich etwas herausfinde, hat Botschek mir einen Bonus versprochen.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, "On the lake shore opposite the tavern' Zur goldenen Gülle' (' The Golden Slurry'), undead people rise out of the underground at night. Botschek asked me to accept hers. Should be something to do with it. However, since the origin of the drowned corpses lies in the dark, I should keep my eyes open. If I find out anything, Botschek promised me a bonus.");
 };
 
 INSTANCE Info_Mod_Botschek_Wasserleichen2 (C_INFO)
@@ -161,7 +161,7 @@ INSTANCE Info_Mod_Botschek_Wasserleichen2 (C_INFO)
 	information	= Info_Mod_Botschek_Wasserleichen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Wasserleichen sind Geschichte.";
+	description	= "The drowned bodies of water are history.";
 };
 
 FUNC INT Info_Mod_Botschek_Wasserleichen2_Condition()
@@ -174,15 +174,15 @@ FUNC INT Info_Mod_Botschek_Wasserleichen2_Condition()
 
 FUNC VOID Info_Mod_Botschek_Wasserleichen2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Wasserleichen2_15_00"); //Die Wasserleichen sind Geschichte.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen2_28_01"); //Ausgezeichnet, hier wie vereinbart die 300 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Botschek_Wasserleichen2_15_00"); //The drowned bodies of water are history.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen2_28_01"); //Excellent, here as agreed the 300 gold coins.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen2_28_02"); //Und, ist dir vielleicht irgendwas Ungewöhnliches aufgefallen? Irgendwelche neuen Anhaltspunkte?
-	AI_Output(hero, self, "Info_Mod_Botschek_Wasserleichen2_15_03"); //Ja, ein mordlüsterner Alkor, der mir mit roher Klinge ans Leder wollte.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen2_28_04"); //Was?! Aber ... was wollte er? So besoffen war er doch gar nicht, als er zuletzt die Kneipe verließ.
-	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen2_28_05"); //Hat er zuletzt gar doch den Verstand verloren?
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen2_28_02"); //Well, did you notice anything unusual? Any new leads?
+	AI_Output(hero, self, "Info_Mod_Botschek_Wasserleichen2_15_03"); //Yeah, a homicidal Alkor who tried to kill me with a raw blade.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen2_28_04"); //What?! But... what did he want? He wasn't that drunk when he last left the pub.
+	AI_Output(self, hero, "Info_Mod_Botschek_Wasserleichen2_28_05"); //Has he finally lost his mind after all?
 
 	B_SetTopicStatus	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, LOG_SUCCESS);
 
@@ -199,7 +199,7 @@ INSTANCE Info_Mod_Botschek_Ritualdolch (C_INFO)
 	information	= Info_Mod_Botschek_Ritualdolch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Für einen Verrückten hatte er aber recht viel Gold bei sich (...)";
+	description	= "For a madman, however, he had quite a lot of gold with him (.... )";
 };
 
 FUNC INT Info_Mod_Botschek_Ritualdolch_Condition()
@@ -213,23 +213,23 @@ FUNC INT Info_Mod_Botschek_Ritualdolch_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch_15_00"); //Für einen Verrückten hatte er aber recht viel Gold bei sich ... und dann noch diesen Dolch.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_01"); //Was?! Zeig her.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch_15_00"); //For a madman he had quite a lot of gold with him.... and then this dagger.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_01"); //What?! Let me see that.
 
 	B_GiveInvItems	(hero, self, ItMw_Ritualdolch_Frost, 1);
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_02"); //Das ... das ist der Dolch des Abenteurers, den ich zuletzt losgeschickt hatte.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_03"); //Aber ... er hätte sich niemals freiwillig davon getrennt.
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch_15_04"); //Nun, es scheint, als hätten wir die Erklärung gefunden. Bei ihm wird wohl mehr kalt geworden sein, als nur die Füße ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_05"); //(entgeistert) ... wie wohl auch bei manch anderem, der Alkors Weg kreuzte.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_06"); //Daher sein vieles Gold ... und daher die ganzen Leichen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_07"); //(wütend) Dieser Schweinehund! Der ganze Ärger nur wegen diesem Mörder und Leichenfledderer.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_08"); //(zu sich selbst, etwas leiser) Und die ganzen Einkünfte, die mir dadurch entgangen sind.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_09"); //(wieder zum Helden) Ich hoffe, er hat seine gerechte Strafe erhalten ...
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch_15_10"); //Worauf du das kalte Flussbett verwetten kannst.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_11"); //Gut! Unglaublich ... so ein Bastard!
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_12"); //(beruhigt sich wieder) Nun, wie dem auch sei, du hast deine Sache mehr als gut gemacht und mich in der Tat von einem großen Übel befreit.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_13"); //Hier, nimm noch mal 300 Münzen.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_02"); //That... this is the adventurer's dagger I sent off last.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_03"); //But... he would never have parted with it voluntarily.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch_15_04"); //Well, it looks like we found the explanation. He must have gotten more cold than just his feet...
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_05"); //(enthused) as well as some others who crossed Alkor's path.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_06"); //Hence its much gold... and hence all the bodies.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_07"); //That son of a bitch! All this trouble just because of that murderer and ghoul.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_08"); //(to myself, a bit quieter) And all the income that I have missed.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_09"); //(again to the hero) I hope he has received his just punishment....
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch_15_10"); //You bet the cold river bed.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_11"); //Good! Unbelievable... such a bastard!
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_12"); //(again) Well, by all means, you have done your thing more than well and have indeed freed me from a great evil.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch_28_13"); //Here, take another 300 coins.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
@@ -244,7 +244,7 @@ INSTANCE Info_Mod_Botschek_Ritualdolch2 (C_INFO)
 	information	= Info_Mod_Botschek_Ritualdolch2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und der Dolch?";
+	description	= "And the dagger?";
 };
 
 FUNC INT Info_Mod_Botschek_Ritualdolch2_Condition()
@@ -257,19 +257,19 @@ FUNC INT Info_Mod_Botschek_Ritualdolch2_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch2_15_00"); //Und der Dolch?
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_01"); //Was? Ohh, entschuldige vielmals, da hast du ihn wieder.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch2_15_00"); //And the dagger?
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_01"); //What? Ohh, excuse me, you've got him back.
 
 	B_GiveInvItems	(self, hero, ItMw_Ritualdolch_Frost, 1);
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_02"); //Ja. Ein wirklich interessantes Stück.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_03"); //Hätte ihn nur zu gerne dem Unglücklichen abgekauft, der ihn zuvor besessen hat ... aber er wollte nicht.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_04"); //(in Gedanken schwelgend) Und ich hätte schwören können, dass die Abbildung auf der magischen Tafel dem Dolch glich ...
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch2_15_05"); //Eine magische Tafel?!
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_06"); //(wieder zum Helden) Was? Ähh, ja, genau, diese Tafel. Das ungewöhnlichste Artefakt, was bisher aus dem Moor geborgen wurde.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_07"); //Auf ihr sind Hieroglyphen zu sehen, die keiner in der Lage ist zu entziffern.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_08"); //Das Erstaunliche ist jedoch, dass sie sich immer wieder ändern, genauso wie die Abbildungen, die man darauf bisweilen – wenn auch sehr selten - erkennen kann.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_09"); //Und einmal – so könnte ich schwören – war das Bild dieses Dolches zu sehen.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_02"); //Yeah. A really interesting piece.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_03"); //I would have loved to buy it from the unfortunate man who had possessed it before.... but he didn't want to.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_04"); //And I could have sworn that the illustration on the magic board resembled the dagger....
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch2_15_05"); //A magic board?!
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_06"); //(again to the hero) What? Uh, yeah, that's the board. The most unusual artifact ever recovered from the moor.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_07"); //It shows hieroglyphs that no one is able to decipher.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_08"); //The amazing thing, however, is that they change again and again, as well as the images that can sometimes be seen on them, even though very rarely.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch2_28_09"); //And once - so I could swear - the picture of this dagger was visible.
 };
 
 INSTANCE Info_Mod_Botschek_Ritualdolch3 (C_INFO)
@@ -280,7 +280,7 @@ INSTANCE Info_Mod_Botschek_Ritualdolch3 (C_INFO)
 	information	= Info_Mod_Botschek_Ritualdolch3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich mal einen Blick auf die Tafel werfen?";
+	description	= "Can I take a look at the blackboard?";
 };
 
 FUNC INT Info_Mod_Botschek_Ritualdolch3_Condition()
@@ -293,31 +293,31 @@ FUNC INT Info_Mod_Botschek_Ritualdolch3_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_00"); //Kann ich mal einen Blick auf die Tafel werfen?
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_01"); //Auf mein einzigartiges Artefakt? Hmm, da du mir in einigen Dingen geholfen hast, soll es dir gegönnt sein.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_02"); //Erkennen wirst du aber ohnehin nicht viel ... warte. (kramt die Tafel heraus) Hier ... aber nicht anfassen.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_00"); //Can I take a look at the blackboard?
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_01"); //My unique artifact? Hmm, since you've helped me in some ways, I want you to enjoy it.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_02"); //But you won't recognize much anyway... wait. (counts the board) Here.... but don't touch it.
 
-	B_ShowGivenThings	("Steintafel erhalten");
+	B_ShowGivenThings	("Stone tablet preserved");
 
 	B_HeroFakeScroll();
 
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_03"); //(nachdenklich) Diese Schriftzeichen ... erinnert mich an die Schrift der Erbauer ... ja.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_04"); //(verblüfft) Was?! Du kannst die Hieroglyphen entziffern?
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_05"); //Ja ... einzelne Passagen. Da steht ... "dem Übermütigen, der es wagt, ins Herz des Moores vorzustoßen.
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_06"); //Die Klingen, die das Blut vergossen, um ewige Verdammnis über ..."
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_07"); //Dann kann ich nichts mehr entziffern ... aber doch, hier: "Den Knecht der Folter und des Todes er jedoch überwinden muss."
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_08"); //Erstaunlich. Das alles klingt jedoch sehr rätselhaft und verworren.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_09"); //Es scheint Hinweise über vergangene Geschehnisse zu enthalten ... vielleicht auch über Artefakte und Aufenthaltsorte.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_10"); //Wenn du das nächste Mal ins Moor gehst, solltest du diese Passagen im Kopf haben. Vielleicht stößt du ja auf bisher Unentdecktes.
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_11"); //Kommt bisweilen vor ...
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_03"); //These characters.... reminds me of the writings of the builders.... yes.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_04"); //What?! You can decipher the hieroglyphs?
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_05"); //Ja ... einzelne Passagen. Da steht ... "who dares to venture into the heart of the moor."
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_06"); //
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_07"); //Dann kann ich nichts mehr entziffern ... aber doch, hier: "However, he must overcome the servant of torture and death."
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_08"); //Amazing. However, all this sounds very mysterious and confusing.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_09"); //It seems to contain hints about past events... about artifacts and whereabouts.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_10"); //Next time you go to the moor, you should have those passages in your head. Maybe you'll find something undiscovered so far.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_11"); //Occasionally happens....
 
-	B_ShowGivenThings	("Steintafel gegeben");
+	B_ShowGivenThings	("Stone tablet given");
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_12"); //Gib mir aber Bescheid, wenn du was findest, vielleicht hat meine Steintafel dann auch wieder neue Rätsel zum Lüften ...
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_28_12"); //But let me know if you find anything, maybe my stone tablet will have some new puzzles to solve....
 
 	Log_CreateTopic	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Botschek glaubt den Dolch in einer Darstellung auf seiner magischen Tafel wiedererkannt zu haben. Diese ist in einer Schrift verfasst, die stark der Schrift der Erbauer ähnelt. Die auf ihr dargestellten Texte ändern sich immer wieder auf magische Weise. Den aktuellen Text konnte ich zum Teil übersetzen und habe ihn hier festgehalten. Dort war zu lesen: '... dem Übermütigen, der es wagt, ins Herz des Moores vorzustoßen. Die Klingen, die das Blut vergossen, um ewige Verdammnis über ...' 'Den Knecht der Folter und des Todes er jedoch überwinden muss.' Botschek meinte, dass dies versteckte Hinweise über das Moor enthalten könnte. Wenn ich einen Abstecher dorthin mache, sollte ich mich gut umsehen und Botschek Bescheid geben, wenn ich etwas gefunden habe.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Botschek believes to have recognized the dagger in a representation on his magic board. This is written in a font that is very similar to the typeface of the builders. The texts displayed on it change again and again in a magical way. I was able to translate some of the current text and put it here. There was to be read:'.... who dares to venture into the heart of the moor. The blades that shed the blood to perpetuate damnation over the... But he must overcome the servant of torture and death. Botschek said this could contain hidden clues about the moor. If I make a detour there, I should have a good look around and let Botschek know when I find something.");
 
 	Wld_InsertNpc	(Mod_7656_OUT_Suchender_REL,	"REL_MOOR_037");
 };
@@ -330,7 +330,7 @@ INSTANCE Info_Mod_Botschek_Ritualdolch4 (C_INFO)
 	information	= Info_Mod_Botschek_Ritualdolch4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Im Moor bin ich einer dämonischen Gestalt begegnet (...)";
+	description	= "I met a demonic figure in the bog (... )";
 };
 
 FUNC INT Info_Mod_Botschek_Ritualdolch4_Condition()
@@ -344,21 +344,21 @@ FUNC INT Info_Mod_Botschek_Ritualdolch4_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch4_15_00"); //Im Moor bin ich einer dämonischen Gestalt begegnet, die einen weiteren Dolch bei sich trug.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_01"); //(euphorisch) Unglaublich! Zeig mal.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch4_15_00"); //In the moor I met a demonic figure carrying another dagger.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_01"); //Unbelievable! Let me see that.
 
-	B_ShowGivenThings	("Ritualdolch des Siechtums gegeben");
+	B_ShowGivenThings	("Ritual dagger of infirmity given");
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_02"); //Er sieht dem ersten sehr ähnlich. Und du hast ihn an einem Ort gefunden, zu dem die Tafel Auskunft gab?
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_02"); //He looks a lot like the first one. And you found him in a place where the blackboard gave information?
 
-	B_ShowGivenThings	("Ritualdolch des Siechtums erhalten");
+	B_ShowGivenThings	("Ritual dagger of infirmity preserved");
 
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch4_15_03"); //Es hat den Anschein.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_04"); //Fantastisch! Dann gibt die magische Tafel also tatsächlich bedeutsame Hinweise über das Moor preis.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_05"); //Ich kann es kaum erwarten, bis auf ihr wieder neues Wissen abgebildet ist.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_06"); //Wenn es so weit ist, werde ich dir sofort Bescheid geben.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch4_15_03"); //It appears to be the case.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_04"); //Fantastic! Then the magic tablet actually reveals important clues about the moor.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_05"); //I can't wait to see her mapped to new knowledge.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch4_28_06"); //When the time comes, I'll let you know immediately.
 
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Botschek war außer sich vor Begeisterung über den Fund. Er hat versprochen mir umgehend mitzuteilen, wenn die Tafel neue Informationen abbildet.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Botschek was beside himself with enthusiasm about the find. He promised to let me know as soon as possible if the board shows any new information.");
 
 	B_GivePlayerXP	(300);
 };
@@ -384,21 +384,21 @@ FUNC INT Info_Mod_Botschek_Ritualdolch5_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch5_28_00"); //Ahh, ausgezeichnet, dass du gerade hier bist.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch5_28_01"); //Die magische Tafel hat vor kurzem wieder ihren Text verändert. Schau!
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch5_28_00"); //Ahh, excellent that you're here right now.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch5_28_01"); //The magic board has recently changed its lyrics again. Look!
 
-	B_ShowGivenThings	("Steintafel erhalten");
+	B_ShowGivenThings	("Stone tablet preserved");
 
 	B_HeroFakeScroll();
 
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch5_15_02"); //Hmm ... "der Kundige der geheimen Künste tränkt seine Waffe in Gift, welches aus tückischem Sud gewonnen. Diesem zu widerstehen es gilt."
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch5_15_02"); //Hmm ... "the expert of the secret arts soaks his weapon in poison, which is obtained from treacherous broth. It is important to resist this."
 
-	B_ShowGivenThings	("Steintafel gegeben");
+	B_ShowGivenThings	("Stone tablet given");
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch5_28_03"); //Giftiges Gebräu?! Als ob das Moor nicht schon giftig genug wäre.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch5_28_04"); //Nun ja, du weißt, worauf es zu achten gilt. Pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch5_28_03"); //Poisonous brew?! As if the moor wasn't poisonous enough.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch5_28_04"); //Well, you know what to look out for. Take care of yourself.
 
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "'... der Kundige der geheimen Künste tränkt seine Waffe in Gift, welches aus tückischem Sud gewonnen. Diesem zu widerstehen es gilt.' Hört sich nach einem Braumeister mit üblem Geschmack an.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "'... the expert of the secret arts soaks his weapon in poison, which is obtained from treacherous broth. It is important to resist this. Sounds like a brewmaster with a bad taste.");
 
 	Wld_InsertNpc	(Mod_7657_OUT_Suchender_REL,	"REL_MOOR_186");
 };
@@ -411,7 +411,7 @@ INSTANCE Info_Mod_Botschek_Ritualdolch6 (C_INFO)
 	information	= Info_Mod_Botschek_Ritualdolch6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Braumeister der Gifte war einmal.";
+	description	= "The brewmaster of poisons was once.";
 };
 
 FUNC INT Info_Mod_Botschek_Ritualdolch6_Condition()
@@ -425,12 +425,12 @@ FUNC INT Info_Mod_Botschek_Ritualdolch6_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch6_15_00"); //Der Braumeister der Gifte war einmal.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch6_28_01"); //Und du bist um einen Dolche reicher, nehme ich an? Ausgezeichnet.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch6_28_02"); //Viele werden es nicht mehr sein, die es noch zu finden gilt.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch6_28_03"); //Ich hoffe, die Tafel offenbart uns bald neue Geheimnisse.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch6_15_00"); //The brewmaster of poisons was once.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch6_28_01"); //And you're a dagger richer, I suppose? Excellent.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch6_28_02"); //Many will no longer be the ones to be found.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch6_28_03"); //I hope the blackboard soon reveals new secrets.
 
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Jetzt heißt es wieder auf eine neue Offenbarung warten.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Now it is time to wait for a new revelation.");
 
 	B_GivePlayerXP	(400);
 };
@@ -456,21 +456,21 @@ FUNC INT Info_Mod_Botschek_Ritualdolch7_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch7_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch7_28_00"); //Ha, es ist wieder so weit. Gerade hat sich die magische Tafel erneut gewandelt.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch7_28_00"); //Ha, it's time again. The magical blackboard has just changed again.
 
-	B_ShowGivenThings	("Steintafel erhalten");
+	B_ShowGivenThings	("Stone tablet preserved");
 
 	B_HeroFakeScroll();
 
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch7_15_01"); //Also "... nicht klirrend Metall, sondern das, was dem Morast entwächst, führt zum Ziel. Lass es ein Teil von dir werden."
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch7_15_01"); //Also "... metal, but what grows out of the mud leads to the goal. Let it become a part of you."
 
-	B_ShowGivenThings	("Steintafel gegeben");
+	B_ShowGivenThings	("Stone tablet given");
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch7_28_02"); //Ohh, das ist aber besonders rätselhaft. Was soll das nur heißen?
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch7_28_03"); //Tja, dieses Mal wirst du wohl nicht umhin kommen, jede Weisung der Umgebung aufmerksam zu verfolgen und um Ecken zu denken.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch7_28_04"); //Ich bin gespannt, wie rasch du dieses Rätsel löst.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch7_28_02"); //Ohh, that's very mysterious. What's that supposed to mean?
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch7_28_03"); //Well, this time you won't be able to avoid carefully following every instruction of the environment and thinking about corners.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch7_28_04"); //I'm curious to see how quickly you solve this riddle.
 
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "'... nicht klirrend Metall, sondern das, was dem Morast entwächst, führt zum Ziel. Lass es einen Teil von dir werden.' Klingt sehr verquer. Botschek meinte, ich solle jedem richtungsweisenden Anhaltspunkt in der Umgebung nachgehen und um Ecken denken. So einfach wird es dieses Mal wohl nicht werden.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "'... metal, but what grows out of the mud leads to the goal. Let it be a part of you. Sounds very weird. Botschek said I should follow up on any trend-setting clue in the area and think around corners. I don't think it's going to be that easy this time.");
 };
 
 INSTANCE Info_Mod_Botschek_Ritualdolch8 (C_INFO)
@@ -495,25 +495,25 @@ FUNC INT Info_Mod_Botschek_Ritualdolch8_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch8_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_00"); //Du hast die Klinge bereits?!
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_01"); //Respekt! Das war bestimmt ein hartes, wie auch kniffliges Stück Arbeit.
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch8_15_02"); //Nun, war in der Tat eine andere Liga als wildgewordenes Obst ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_03"); //In der Zwischenzeit konnte ich übrigens dank deiner Übersetzungen und den gefundenen Dolchen alte Texte vervollständigen, die nun Sinn ergeben.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_04"); //Offensichtlich gab es fünf Ritualdolche, ein jeder mit einer anderen Gewalt behaftet.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_05"); //Die höchsten Würdenträger des Kultes opferten damit ihr Blut, um das alles vernichtende Chaos über dieses Land zu bringen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_06"); //Wie man unschwer noch heute erkennen kann, waren sie erfolgreich.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_07"); //Das bekamen auch die Belagerer von damals zu spüren, die allesamt dem Untotendasein verfielen.
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch8_15_08"); //Für absolutes Chaos gehen die Urheber aber noch ziemlich planvoll vor.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_09"); //Ja, das stimmt. Ihr letzter Wille, das Chaos über das Land zu bringen und alles zu verheeren, scheint das Einzige, was ihnen von ihrer ursprünglichen Existenz geblieben ist.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_10"); //Letztendlich sind sie damit aber nicht mehr als Sklaven des verfluchten Moores.
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch8_15_11"); //Zumindest waren sie das.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_12"); //Ja, das stimmt. Da nur noch ein Ritualdolch zu finden bleibt, wird es nicht mehr viele von ihnen geben.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_13"); //Seltsamerweise scheint das Moor kaum etwas von seiner Macht eingebüßt zu haben.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_14"); //(nachdenklich) Da muss es noch etwas geben ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_15"); //(wieder zum Helden) Nun, wie dem auch sei, wir brauchen nur noch einen Text.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_16"); //Sobald es so weit ist ... du weißt ja Bescheid.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_00"); //You already have the blade?!
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_01"); //Respect! It must have been a hard and tricky piece of work.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch8_15_02"); //Well, was indeed a different league than wild fruit...
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_03"); //In the meantime, thanks to your translations and the daggers found, I was able to complete old texts that now make sense.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_04"); //Obviously there were five ritual daggers, each with a different violence.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_05"); //The highest dignitaries of the cult used it to sacrifice their blood to bring the devastating chaos over this land.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_06"); //As you can easily see today, they were successful.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_07"); //This was also felt by the besiegers of that time, all of whom lost their lives to the undead.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch8_15_08"); //For absolute chaos, however, the authors are still taking a rather planned approach.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_09"); //Yeah, that's right. Their last will to bring chaos and devastate the country seems to be all they have left of their original existence.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_10"); //In the end, however, they are no longer slaves to the cursed moor.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch8_15_11"); //At least they were.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_12"); //Yeah, that's right. Since there is only one ritual dagger left to be found, there won't be many of them left.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_13"); //Strangely enough, the moor seems to have lost hardly any of its power.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_14"); //There must be something else...
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_15"); //(again to the hero) Well, by all means, we only need a text.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch8_28_16"); //As soon as it's ready... you know what I mean.
 
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Jetzt bleibt nur noch ein Dolch. Sobald Botscheks Tafel neue Hinweise hergibt, ist es so weit.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Now there's only one dagger left. As soon as Botschek's blackboard gives new clues, it's time.");
 
 	B_GivePlayerXP	(500);
 };
@@ -539,26 +539,26 @@ FUNC INT Info_Mod_Botschek_Ritualdolch9_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch9_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_00"); //(Erfreut) Endlich!
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch9_15_01"); //Die letzte Passage?
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_02"); //So wollen wir hoffen. Hier, schau sie dir an.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_00"); //(happy) Finally!
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch9_15_01"); //The last passage?
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_02"); //Let's hope so. Here, look at her.
 
-	B_ShowGivenThings	("Steintafel erhalten");
+	B_ShowGivenThings	("Stone tablet preserved");
 
 	B_HeroFakeScroll();
 
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch9_15_03"); //Da steht "... der Knecht der Waffen tränkt seine Umgebung in Blut. Wirst du seinem Stahl trotzen?".
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch9_15_03"); //Da steht "... the servant of arms soaks his environment in blood. Will you defy his steel?".
 
-	B_ShowGivenThings	("Steintafel gegeben");
+	B_ShowGivenThings	("Stone tablet given");
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_04"); //Gut, das ist wieder eindeutiger.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_05"); //Nach dem letzten Rätsel solltest du hier hoffentlich weniger Schwierigkeiten haben ... und hältst die letzte der Klingen bald in den Händen.
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch9_15_06"); //Und dann?
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_07"); //Dann wirst du einen Teil des Moores erreichen können, der bislang nicht zugänglich war ... vielleicht sogar in sein Herz vorstoßen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_08"); //Damit könntest du das Geschick des gesamten Gebietes auf unvorhersehbare Weise verändern.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_09"); //Du musst nur den Zugang finden. Viel Erfolg dabei ... und komm lebend zurück.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_04"); //Well, that's more clear.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_05"); //After the last puzzle, hopefully you should have less trouble here.... and hold the last of the blades in your hands soon.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch9_15_06"); //And then what?
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_07"); //Then you will be able to reach a part of the moor that has not been accessible until now... maybe even penetrate his heart.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_08"); //You could change the fate of the entire area in an unpredictable way.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch9_28_09"); //You just have to find the entrance. Good luck with that.... and come back alive.
 
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "'... der Knecht der Waffen tränkt seine Umgebung in Blut. Wirst du seinem Stahl trotzen?' Klingt nach einer geradlinigen Aufgabe. Sobald ich auch diesen Dolch habe, sollte ich einen Zugang öffnen können, der mich ins Herz des Moores führt.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "'... the servant of arms soaks his environment in blood. Will you defy his steel? Sounds like a straightforward task. As soon as I also have this dagger, I should be able to open an entrance that leads me into the heart of the moor.");
 
 	Wld_InsertNpc	(Mod_7658_OUT_Suchender_REL,	"REL_MOOR_187");
 };
@@ -584,27 +584,27 @@ FUNC INT Info_Mod_Botschek_Ritualdolch10_Condition()
 
 FUNC VOID Info_Mod_Botschek_Ritualdolch10_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_00"); //(aufgeregt) Was bei Beliar ist geschehen? Das Moor scheint förmlich zu toben ...
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch10_15_01"); //Ich verschaffte mir Zugang zu einer bislang unzugänglichen Halle im Moor.
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch10_15_02"); //Dort entriss ich mit großer Mühe einem lebendigen Podest diesen Fokus.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_03"); //Zeig her.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_00"); //What happened to Beliar? The bog seems to be raging....
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch10_15_01"); //I gained access to a previously inaccessible hall in the bog.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch10_15_02"); //There I took away this focus from a lively podium with great difficulty.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_03"); //Let me see that.
 
-	B_ShowGivenThings	("Fokus gegeben");
+	B_ShowGivenThings	("Focused");
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_04"); //(verblüfft) Das ... das muss der Fokus sein, welcher einst der Siedlung Schutz bot, ihre magische Barriere mit Energie speiste.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_05"); //Und du sagst, das Moor hätte ihn für sich genutzt?
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_04"); //(amazed) The.... must be the focus that once protected the settlement, feeding its magical barrier with energy.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_05"); //And you're saying the moor used it for itself?
 
-	B_ShowGivenThings	("Fokus erhalten");
+	B_ShowGivenThings	("Maintain focus");
 
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch10_15_06"); //Es hatte ganz den Anschein.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_07"); //Ach ja ... Nun, das würde erklären, warum das Moor nach dem Niedergang der Siedlung so an Macht gewann und auch nach dem Ableben seiner Diener kaum etwas davon eingebüßt hat.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_08"); //Die Monsterhorden, die es jetzt zu uns schickt, sind vermutlich ein letztes Aufbäumen, nachdem du ihm sein machtvollstes Artefakt entrissen hast.
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch10_15_09"); //Was ist jetzt zu tun? Wenn das tatsächlich der Fokus der Siedlung ist ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_10"); //... genau, dann könnte durch sein Einsetzen in das alte Podest die Schutzbarriere von damals erneut entstehen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_11"); //Es in den Trümmern der alten Siedlung zu finden, wird wohl nicht allzu schwer sein. Es ist das runde Gebäude in der Mitte.
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_12"); //Ich hoffe, das Podest funktioniert noch. Aber beeile dich. Ewig können wir den Moorgeschöpfen nicht standhalten.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch10_15_06"); //It looked like it.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_07"); //Oh, yes... Well, that would explain why the moor gained so much power after the collapse of the settlement and why it hardly lost any of its power after the death of its servants.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_08"); //The monster hordes it now sends to us are probably a last rebel after you snatched his most powerful artifact from him.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch10_15_09"); //What should we do now? If this is indeed the focus of the settlement....
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_10"); //... right, then the protection barrier of that time could arise again by its insertion into the old platform.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_11"); //It won't be too difficult to find it in the ruins of the old settlement. It is the round building in the middle.
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch10_28_12"); //I hope the pedestal still works. But hurry up. We can't hold out on the bog creatures forever.
 
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Wenn ich den Fokus auf dem Sockel innerhalb der untergegangenen Siedlung platziere, könnte die Schutzbarriere aufs Neue entstehen.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "If I place the focus on the pedestal within the collapsed settlement, the protective barrier could arise anew.");
 };
 
 INSTANCE Info_Mod_Botschek_Ritualdolch11 (C_INFO)
@@ -639,7 +639,7 @@ FUNC VOID Info_Mod_Botschek_Ritualdolch11_Info()
 	B_GiveInvItems	(self, hero, ItWr_BotschekTafel, 1);
 
 	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch11_15_05"); //Mal schauen, danke. 
-	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch11_28_06"); //Du bist auf jeden Fall jederzeit willkommen in der Schenke "Zur goldenen Gülle".
+	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch11_28_06"); //Du bist auf jeden Fall jederzeit willkommen in der Schenke "Golden liquid manure".
 	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch11_28_07"); //Bestimmt sehen wir uns mal wieder. Und bis dahin ... pass auf dich auf.
 
 	B_SetTopicStatus	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, LOG_SUCCESS);
@@ -659,7 +659,7 @@ INSTANCE Info_Mod_Botschek_Kneipe (C_INFO)
 	information	= Info_Mod_Botschek_Kneipe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Deine Kneipe ist ja merkwürdig gebaut ...";
+	description	= "Your bar is a strange place...";
 };
 
 FUNC INT Info_Mod_Botschek_Kneipe_Condition()
@@ -672,11 +672,11 @@ FUNC INT Info_Mod_Botschek_Kneipe_Condition()
 
 FUNC VOID Info_Mod_Botschek_Kneipe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Kneipe_15_00"); //Deine Kneipe ist ja merkwürdig gebaut ... die separaten Räume oben, meine ich.
-	AI_Output(self, hero, "Info_Mod_Botschek_Kneipe_28_01"); //Ach, das hat schon seinen Sinn.
-	AI_Output(self, hero, "Info_Mod_Botschek_Kneipe_28_02"); //Spätestens wenn der Wind ungünstig steht und giftige Rauchschwaden aus dem Moor alles darunter bedecken, ist man froh drum.
-	AI_Output(self, hero, "Info_Mod_Botschek_Kneipe_28_03"); //Außerdem steht dort ein Alchemietisch ... dort kann Viran an seinen Tränken herumprobieren und Kraut für die Jungs in der Schenke drehen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Kneipe_28_04"); //Ach ja, und natürlich können sich die Abenteurer dort ungestört mit unserem Freudenmädchen Chani vergnügen.
+	AI_Output(hero, self, "Info_Mod_Botschek_Kneipe_15_00"); //Your bar is a strange place... the separate rooms upstairs, I mean.
+	AI_Output(self, hero, "Info_Mod_Botschek_Kneipe_28_01"); //Oh, that makes sense.
+	AI_Output(self, hero, "Info_Mod_Botschek_Kneipe_28_02"); //At the latest when the wind is blowing badly and poisonous clouds of smoke from the moor cover everything underneath, you are happy about it.
+	AI_Output(self, hero, "Info_Mod_Botschek_Kneipe_28_03"); //There is also an alchemy table.... where Viran can taste his potions and make herbs for the boys in the tavern.
+	AI_Output(self, hero, "Info_Mod_Botschek_Kneipe_28_04"); //Oh yes, and of course the adventurers there can enjoy themselves undisturbed with our girl friend Chani.
 };
 
 INSTANCE Info_Mod_Botschek_Informationen (C_INFO)
@@ -687,7 +687,7 @@ INSTANCE Info_Mod_Botschek_Informationen (C_INFO)
 	information	= Info_Mod_Botschek_Informationen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich brauche Informationen.";
+	description	= "I need some information.";
 };
 
 FUNC INT Info_Mod_Botschek_Informationen_Condition()
@@ -707,46 +707,46 @@ FUNC VOID Info_Mod_Botschek_Informationen_Infos()
 	if (Mod_Botschek_Info_F == FALSE)
 	&& (Mod_Botschek_Info_E == TRUE)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Wohin ist er zuletzt gegangen?", Info_Mod_Botschek_Informationen_F);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Where did he go last?", Info_Mod_Botschek_Informationen_F);
 	};
 	if (Mod_Botschek_Info_E == FALSE)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Sancho_Dam2))
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Sagt dir das Wort 'Dam' irgendwas?", Info_Mod_Botschek_Informationen_E);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Does the word' Dam' mean anything to you?", Info_Mod_Botschek_Informationen_E);
 	};
 	if (Mod_Botschek_Info_D == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Gibt es was zu tun?", Info_Mod_Botschek_Informationen_D);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Anything to do?", Info_Mod_Botschek_Informationen_D);
 	};
 	if (Mod_Botschek_Info_C == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Was kannst du mir über die Leute hier sagen?", Info_Mod_Botschek_Informationen_C);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "What can you tell me about the people here?", Info_Mod_Botschek_Informationen_C);
 	};
 	if (Mod_Botschek_Info_B == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Wo gibt es was zu holen?", Info_Mod_Botschek_Informationen_B);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Where can I get it?", Info_Mod_Botschek_Informationen_B);
 	};
 	if (Mod_Botschek_Info_A == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Auf welche Gefahren muss ich im Moor achten?", Info_Mod_Botschek_Informationen_A);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "What dangers do I have to watch out for in the bog?", Info_Mod_Botschek_Informationen_A);
 	};
 };
 
 FUNC VOID Info_Mod_Botschek_Informationen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_15_00"); //Ich brauche Informationen.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_15_00"); //I need some information.
 
 	Info_Mod_Botschek_Informationen_Infos();
 };
 
 FUNC VOID Info_Mod_Botschek_Informationen_2()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_2_15_00"); //Ein andermal.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_2_15_00"); //Another time.
 };
 
 FUNC VOID Info_Mod_Botschek_Informationen_1()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_1_15_00"); //Hier.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_1_15_00"); //Here.
 };
 
 FUNC VOID Info_Mod_Botschek_Informationen_BACK()
@@ -756,16 +756,16 @@ FUNC VOID Info_Mod_Botschek_Informationen_BACK()
 
 FUNC VOID Info_Mod_Botschek_Informationen_F()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_F_15_00"); //Wohin ist er zuletzt gegangen?
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_F_28_01"); //Das scheint dich ja sehr zu interessieren ... macht 60 Münzen.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_F_15_00"); //Where did he go last?
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_F_28_01"); //You seem to be very interested... makes 60 coins.
 
 	Info_ClearChoices	(Info_Mod_Botschek_Informationen);
 
-	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Ein andermal.", Info_Mod_Botschek_Informationen_F_2);
+	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Another time.", Info_Mod_Botschek_Informationen_F_2);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 60)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Hier", Info_Mod_Botschek_Informationen_F_1);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Here", Info_Mod_Botschek_Informationen_F_1);
 	};
 };
 
@@ -782,7 +782,7 @@ FUNC VOID Info_Mod_Botschek_Informationen_F_1()
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 60);
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_F_1_28_00"); //Er ist in Richtung der Dorfruinen verschwunden. Mehr weiß ich auch nicht.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_F_1_28_00"); //He disappeared towards the village ruins. That's all I know.
 
 	Mod_Botschek_Info_F = TRUE;
 
@@ -793,16 +793,16 @@ FUNC VOID Info_Mod_Botschek_Informationen_F_1()
 
 FUNC VOID Info_Mod_Botschek_Informationen_E()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_E_15_00"); //Sagt dir das Wort 'Dam' irgendwas? Vielleicht in Verbindung mit einem Amulett?
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_E_28_01"); //Dam und Amulett? Hmm, da war mal jemand ... kostet 40 Münzen.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_E_15_00"); //Does the word' Dam' mean anything to you? Perhaps in connection with an amulet?
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_E_28_01"); //Dam and amulet? Hmm, there was someone... costs 40 coins.
 
 	Info_ClearChoices	(Info_Mod_Botschek_Informationen);
 
-	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Ein andermal.", Info_Mod_Botschek_Informationen_E_2);
+	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Another time.", Info_Mod_Botschek_Informationen_E_2);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 40)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Hier", Info_Mod_Botschek_Informationen_E_1);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Here", Info_Mod_Botschek_Informationen_E_1);
 	};
 };
 
@@ -819,9 +819,9 @@ FUNC VOID Info_Mod_Botschek_Informationen_E_1()
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 40);
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_E_1_28_00"); //Da gab es mal einen Schatzsucher ... der soll den Namen gehabt haben, wie ich später erfuhr.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_E_1_28_01"); //Am Anfang fiel er nicht auf, hat wie die meisten nach Artefakten und Schätzen gesucht und hier gezecht.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_E_1_28_02"); //Aber dann wurde er immer sonderlicher, führte Selbstgespräche, zog sich von den anderen zurück und verfiel auch körperlich zusehends ... bis er nicht wiederkam nach seinem letzten Ausflug vor einigen Monaten.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_E_1_28_00"); //There used to be a treasure hunter.... as I was told later.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_E_1_28_01"); //In the beginning he did not attract attention, searched for artifacts and treasures and drunk here like most people.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_E_1_28_02"); //But then he became more and more special, he talked to himself, withdrew from the others and also deteriorated physically and visibly? until he didn't come back after his last trip a few months ago.
 
 	Mod_Botschek_Info_E = TRUE;
 
@@ -832,21 +832,21 @@ FUNC VOID Info_Mod_Botschek_Informationen_E_1()
 
 FUNC VOID Info_Mod_Botschek_Informationen_D()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_D_15_00"); //Gibt es was zu tun?
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_01"); //Ja, ich habe tatsächlich was, das erledigt werden will. Diese Information kostet natürlich nichts ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_02"); //Zu allererst vielleicht die Ernte und die Beseitigung des Unkrauts ...
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_D_15_03"); //Was?! Soll ich jetzt vielleicht Rüben ernten?!
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_04"); //Keine Rüben, Äpfel. Ich brauche nämlich welche für den Apfelmost.
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_D_15_05"); //Und dann noch Unkraut?!
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_06"); //Nun, das Unkraut ist recht aufdringlich geworden ... und nicht ganz ungefährlich.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_07"); //Der Grund, warum wir einen neuen Koch haben. Der alte ist nicht vom Zutatensammeln zurückgekehrt.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_08"); //Und da ich Balam nur ungern auch noch verlieren würde, schicke ich lieber jemanden, der auch mit einer Waffe umgehen kann und nicht nur mit dem Küchenmesser.
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_D_15_09"); //(halblaut) ... den Gärtner spielen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_10"); //Ich brauche etwa 20 Äpfel. Der Garten ist rechts am See. Viel Erfolg.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_D_15_00"); //Anything to do?
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_01"); //Yeah, I actually have something that needs to be done. Of course, this information does not cost anything...
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_02"); //First and foremost, perhaps the harvesting and weeding...
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_D_15_03"); //What?! You want me to pick turnips now?!
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_04"); //No turnips, apples. I need some for the cider.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_D_15_05"); //And weeds?!
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_06"); //Well, the weeds have become quite obtrusive.... and not completely harmless.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_07"); //The reason we have a new cook. The old man hasn't returned from gathering ingredients.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_08"); //And since I would hate to lose Balam, I'd rather send someone who can handle a weapon and not just the kitchen knife.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_D_15_09"); //(half-sounding) play the gardener.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_D_28_10"); //I need about 20 apples. The garden is right by the lake. Good luck.
 
 	Log_CreateTopic	(TOPIC_MOD_BOTSCHEK_GAERTNER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BOTSCHEK_GAERTNER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "Botschek will, dass ich zu dem kleinen Garten am See gehe, aggressives Unkraut beseitige und 20 Äpfel ernte.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "Botschek wants me to go to the small garden by the lake, remove aggressive weeds and harvest 20 apples.");
 
 	Mod_Botschek_Info_D = TRUE;
 
@@ -860,16 +860,16 @@ FUNC VOID Info_Mod_Botschek_Informationen_D()
 
 FUNC VOID Info_Mod_Botschek_Informationen_C()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_C_15_00"); //Was kannst du mir über die Leute hier sagen?
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_28_01"); //Einiges Wissenswertes und Nützliches. Für dich nur 30 Goldstücke.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_C_15_00"); //What can you tell me about the people here?
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_28_01"); //Some interesting and useful information. Only 30 gold pieces for you.
 
 	Info_ClearChoices	(Info_Mod_Botschek_Informationen);
 
-	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Ein andermal.", Info_Mod_Botschek_Informationen_C_2);
+	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Another time.", Info_Mod_Botschek_Informationen_C_2);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 30)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Hier", Info_Mod_Botschek_Informationen_C_1);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Here", Info_Mod_Botschek_Informationen_C_1);
 	};
 };
 
@@ -886,24 +886,24 @@ FUNC VOID Info_Mod_Botschek_Informationen_C_1()
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 30);
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_00"); //Viele in meiner Kneipe sind ehemalige Strafgefangene der Kolonie, die hier ihr Glück versuchen, wo sonst nur wenige ihren Fuß hinsetzen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_01"); //Mein neuer Koch Balam zum Beispiel hat einst für die Erzbarone gekocht, kannst du dir das vorstellen? (lacht)
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_02"); //Ja, und Chani hielt einst die Gurus im Sumpf bei Laune und jetzt die Abenteurer hier.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_03"); //Sie kann hier ungestört ihrem Gewerbe nachgehen und ich bekomme meinen Anteil ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_04"); //Auch Viran und Harlok stammen aus dem Sumpflager.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_05"); //Sie wollen sich hier mit dem Anbau von Sumpfkraut selbstständig machen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_06"); //Viran probiert hin und wieder noch neue Ideen für sumpfkrautlastige Tränke am Alchemietisch oben aus.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_07"); //Hin und wieder kommt sogar was Gutes dabei raus ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_08"); //Wedge stammt aus dem Neuen Lager der Kolonie und hat sich dort als Bandit auf die Diebeskünste verstanden.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_09"); //Das hat ihn hier schnell zum geschicktesten Schatzsucher gemacht.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_10"); //Keiner versteht es mit solcher Finesse vorzugehen und unentdeckt zu bleiben.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_11"); //Der Abenteurer Alkor wiederum ist einer fürs Grobe ... und grob wird er auch manchmal, wenn er zu viel getrunken hat.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_12"); //Nun, ich bin auf jeden Fall wirklich überrascht, dass die Saufnase noch nicht in die ewigen Jagdgründe des Moores eingegangen ist.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_13"); //Bei dem ganzen wertvollen Krempel, den er schon hier angeschleppt hat, muss er schon die eine oder andere gefährliche Expedition im Moor unternommen haben ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_14"); //Ach ja, fast hätte ich ja unsere Ehrengäste vergessen ... die im Dienste des Königs Stehenden. (lacht)
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_15"); //Sie stehen meistens draußen vor der Taverne in ihrem kleinen Lager.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_16"); //Das Los hat es so gewollt, dass sie die Situation hier im Auge behalten dürfen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_17"); //Aber so ganz glücklich scheinen sie, glaube ich, damit nicht zu sein, hähä.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_00"); //Many in my pub are former prisoners of the colony who try their luck here, where otherwise only a few people sit down.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_01"); //My new chef Balam, for example, used to cook for the ore barons, can you imagine that? (laughs)
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_02"); //Yes, and Chani once kept the gurus happy in the swamp and now the adventurers here.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_03"); //She can do her business here undisturbed and I get my share....
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_04"); //Viran and Harlok also come from the swamp camp.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_05"); //They want to start their own business by cultivating bogweed here.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_06"); //Every now and then Viran tries out new ideas for swampy herbs at the alchemy table upstairs.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_07"); //Every now and then something good comes out of it...
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_08"); //Wedge comes from the New Camp of the colony and has seen himself as a bandit on the theft arts.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_09"); //That's what made him the smartest treasure hunter here.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_10"); //No one understands how to proceed with such finesse and remain undiscovered.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_11"); //The adventurer Alkor in turn is one for the rough... and he gets rough sometimes when he's had too much to drink.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_12"); //Well, I'm definitely surprised that the booze nose hasn't entered the eternal hunting grounds of the moor.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_13"); //With all the valuable stuff he has brought along here, he must have already made one or two dangerous expeditions in the moor...
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_14"); //Oh yes, I almost forgot our guests of honour.... in the service of the King. (laughs)
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_15"); //They usually stand outside in front of the tavern in their small camp.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_16"); //The lot has wanted it so much that they can keep an eye on the situation here.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_C_1_28_17"); //But they don't seem so happy about it, I don't think, huh?
 
 	Mod_Botschek_Info_C = TRUE;
 
@@ -914,17 +914,17 @@ FUNC VOID Info_Mod_Botschek_Informationen_C_1()
 
 FUNC VOID Info_Mod_Botschek_Informationen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_B_15_00"); //Wo gibt es was zu holen?
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_28_01"); //Du meinst glitzerndes Gold.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_28_02"); //Diese Information kostet nur 50 Münzen ... kein Vergleich zu dem, was du finden kannst.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_B_15_00"); //Where can I get it?
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_28_01"); //You mean sparkling gold.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_28_02"); //This information costs only 50 coins... to what you can find.
 
 	Info_ClearChoices	(Info_Mod_Botschek_Informationen);
 
-	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Ein andermal.", Info_Mod_Botschek_Informationen_B_2);
+	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Another time.", Info_Mod_Botschek_Informationen_B_2);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Hier", Info_Mod_Botschek_Informationen_B_1);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Here", Info_Mod_Botschek_Informationen_B_1);
 	};
 };
 
@@ -941,13 +941,13 @@ FUNC VOID Info_Mod_Botschek_Informationen_B_1()
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_00"); //Nun, das meiste, was im vorderen Bereich des Moores auf den offenen Wegen herumlag, haben Wagemutige schon geborgen ... aber nicht alle haben es zurückgeschafft.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_01"); //Eine Moorleiche in Abenteurerkluft verspricht also meist auch klingende Münzen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_02"); //Ansonsten musst du eher abseits der Hauptwege suchen, im Morast, in versteckten Truhen oder verfallenen Gebäuden.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_03"); //Du kannst dich natürlich auch noch tiefer ins Moor begeben, als es die meisten bislang taten ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_04"); //Hin und wieder kann auch eine Spitzhacke hilfreich sein, wenn du auf alte Gräber triffst.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_05"); //Ach ja, rechts im Moor gibt es noch eine große Halle. Leider ist der Zugang versperrt.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_06"); //Denjenigen, dem es gelänge, sich Zutritt zu verschaffen, würde gewiss großer Reichtum erwarten ...
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_00"); //Well, most of what lay around the open roads in the front area of the moor has already been salvaged by brave people.... but not everyone made it back.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_01"); //A bog body in the adventurer's cleft usually also promises sounding coins.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_02"); //Otherwise, you will have to look outside the main roads, in the mud, hidden chests or decaying buildings.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_03"); //Of course, you can also go deeper into the moor than most people have done so far...
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_04"); //Every now and then a pickaxe can be helpful when you meet old graves.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_05"); //Oh, there's a big hall on the right side of the moor. Unfortunately, the entrance is blocked.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_B_1_28_06"); //Those who manage to gain access would certainly expect great wealth?
 
 	Mod_Botschek_Info_B = TRUE;
 
@@ -958,16 +958,16 @@ FUNC VOID Info_Mod_Botschek_Informationen_B_1()
 
 FUNC VOID Info_Mod_Botschek_Informationen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_A_15_00"); //Auf welche Gefahren muss ich im Moor achten?
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_28_01"); //Ohh, auf einige. Für nur 70 Goldmünzen wirst du erfahren, was dich dort alles erwartet.
+	AI_Output(hero, self, "Info_Mod_Botschek_Informationen_A_15_00"); //What dangers do I have to watch out for in the bog?
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_28_01"); //Ohh, to some. For only 70 gold coins, you will learn what awaits you there.
 
 	Info_ClearChoices	(Info_Mod_Botschek_Informationen);
 
-	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Ein andermal.", Info_Mod_Botschek_Informationen_A_2);
+	Info_AddChoice	(Info_Mod_Botschek_Informationen, "Another time.", Info_Mod_Botschek_Informationen_A_2);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 70)
 	{
-		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Hier", Info_Mod_Botschek_Informationen_A_1);
+		Info_AddChoice	(Info_Mod_Botschek_Informationen, "Here", Info_Mod_Botschek_Informationen_A_1);
 	};
 };
 
@@ -984,21 +984,21 @@ FUNC VOID Info_Mod_Botschek_Informationen_A_1()
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 70);
 
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_00"); //Gut. Fangen wir mit dem Unbelebten an.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_01"); //Da wären die giftigen Rauchschwaden, die den größten Teil des Moores bedecken.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_02"); //Sie entsteigen den Kratern, die du überall im Moor finden wirst.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_03"); //Wenn du nicht gerade ein harter Bursche bist, wirst du ohne Gegengift nicht weit kommen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_04"); //Falls du wiederum im Moor etwas flackern siehst, mach besser einen Bogen drum.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_05"); //Sonst könnte dich eine feurige Explosion rasch in Beliars Reich befördern ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_06"); //Geradewegs von dort kommen scheinbar die ganzen Untoten, welche das Moor bevölkern.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_07"); //Pass gut auf, wohin du trittst, denn die Moorleichen werden sich aus dem schlammigen Untergrund erheben.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_08"); //Sie sind jedoch nicht die schnellsten… zumindest gemessen an den Geistern der Krieger, die das Moor unsicher machen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_09"); //Sie greifen alles an, was geht und steht.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_10"); //Nicht viel freundlicher sind da die Pflanzen, welche im Moor wuchern.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_11"); //Einige fest verwurzelt im Boden, andere auf schnellen Sohlen ... jedoch alle schwerlich mit einem einfachen Küchenmesser klein zu kriegen.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_12"); //Zuletzt haben einige Abenteurer noch davon berichtet, vermummte Gestalten im Moor gesehen zu haben ...
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_13"); //Über diese ist jedoch am wenigsten bekannt.
-	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_14"); //Nur sind sie von allen Kreaturen des Moores die einzigen, die mehr im Sinn zu haben scheinen, als die Vernichtung von Eindringlingen ...
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_00"); //Good. Let's start with the lifeless.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_01"); //There are the poisonous clouds of smoke that cover most of the moorland.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_02"); //They emerge from the craters you'll find all over the moor.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_03"); //If you're not a tough guy, you won't get far without an antidote.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_04"); //If you see something flickering in the moor again, you'd better take a bow around it.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_05"); //Otherwise a fiery explosion could quickly transport you to Beliar's empire....
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_06"); //Straight from there seem to come all the undead who populate the moor.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_07"); //Watch where you step, for the bog bodies will rise from the muddy ground.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_08"); //However, they are not the fastest... at least in comparison to the spirits of the warriors who make the moor unsafe.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_09"); //They attack anything that goes and stands.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_10"); //The plants that grow in the bog are not much more friendly.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_11"); //Some are firmly rooted in the soil, others on fast soles... with a simple kitchen knife.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_12"); //Finally, some adventurers have reported that they have seen masked figures in the bog...
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_13"); //However, this is the least known.
+	AI_Output(self, hero, "Info_Mod_Botschek_Informationen_A_1_28_14"); //Only they are the only creatures of the moor that seem to have more in mind than the destruction of invaders...
 
 	Mod_Botschek_Info_A = TRUE;
 

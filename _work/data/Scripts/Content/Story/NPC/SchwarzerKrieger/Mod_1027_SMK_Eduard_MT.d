@@ -1,7 +1,7 @@
 instance Mod_1027_SMK_Eduard_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Eduard";
+	name 		= "Edward";
 	guild 		= GIL_KDF;
 	id 			= 1027;
 	voice 		= 32;

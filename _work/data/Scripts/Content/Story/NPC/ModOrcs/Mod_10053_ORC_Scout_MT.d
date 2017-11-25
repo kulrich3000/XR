@@ -1,7 +1,7 @@
 INSTANCE Mod_10053_ORC_Scout_MT (Mst_Default_OrcWarrior)			
 {
 	//----- Monster -----
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	guild							=	GIL_ORC;
 	id			= 	10053;
 	voice							=	18;

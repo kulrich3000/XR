@@ -1,7 +1,7 @@
 instance Mod_1891_NONE_Bandenchef_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bandenchef";	
+	name 		= "gang leader";	
 	guild 		= GIL_OUT;
 	id 			= 1891;
 	voice 		= 7;

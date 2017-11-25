@@ -1,6 +1,6 @@
 INSTANCE Mod_7360_OUT_Setta_WS (Npc_Default)
 {
-	name 		= "Setta";
+	name 		= "setta";
 	guild 		= GIL_DMT;
 	id 		= 7360;
 	voice 		= 16;

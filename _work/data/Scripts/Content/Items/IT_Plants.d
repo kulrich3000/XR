@@ -37,7 +37,7 @@ const int	Value_Mendulus	=	100;
 
 INSTANCE ItPl_Weed(C_Item)
 {	
-	name 				=	"Unkraut";
+	name 				=	"Weeds";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -57,7 +57,7 @@ INSTANCE ItPl_Weed(C_Item)
 
 INSTANCE ItPl_Unkraut_Gorax (C_Item)
 {	
-	name 				=	"Unkraut";
+	name 				=	"Weeds";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;	
@@ -75,7 +75,7 @@ INSTANCE ItPl_Unkraut_Gorax (C_Item)
 
 INSTANCE ItPl_Unkraut_Lobart (C_Item)
 {	
-	name 				=	"Unkraut";
+	name 				=	"Weeds";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;	
@@ -93,7 +93,7 @@ INSTANCE ItPl_Unkraut_Lobart (C_Item)
 
 INSTANCE ItPl_Melone(C_Item)
 {	
-	name 				=	"Melone";
+	name 				=	"bowler";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -115,7 +115,7 @@ INSTANCE ItPl_Melone(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -143,7 +143,7 @@ FUNC VOID Use_Melone()
 
 INSTANCE ItPl_Herkuleskraut (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -163,7 +163,7 @@ INSTANCE ItPl_Herkuleskraut (C_Item)
 
 INSTANCE ItPl_Zwillingsdorn (C_Item)
 {	
-	name 				=	"Zwillingsdorn";
+	name 				=	"twin mandrel";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -188,7 +188,7 @@ INSTANCE ItPl_Zwillingsdorn (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -217,7 +217,7 @@ FUNC VOID Use_Zwillingsdorn()
 
 INSTANCE MyxirsGiftpflanze(C_Item)
 {	
-	name 				=	"Myxirs Kraut";
+	name 				=	"Myxir's herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;	
@@ -228,7 +228,7 @@ INSTANCE MyxirsGiftpflanze(C_Item)
 	material 			=	MAT_LEATHER;
 
 	description			= 	name;
-	TEXT[2]				=	"Wirkung unbekannt";
+	TEXT[2]				=	"Effects unknown";
 
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	Value_Weed;
@@ -238,7 +238,7 @@ INSTANCE MyxirsGiftpflanze(C_Item)
 
 INSTANCE ItPl_Beet_Lobart_01 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -257,7 +257,7 @@ INSTANCE ItPl_Beet_Lobart_01 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -266,7 +266,7 @@ INSTANCE ItPl_Beet_Lobart_01 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_02 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -285,7 +285,7 @@ INSTANCE ItPl_Beet_Lobart_02 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -294,7 +294,7 @@ INSTANCE ItPl_Beet_Lobart_02 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_03 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -313,7 +313,7 @@ INSTANCE ItPl_Beet_Lobart_03 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -322,7 +322,7 @@ INSTANCE ItPl_Beet_Lobart_03 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_04 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -341,7 +341,7 @@ INSTANCE ItPl_Beet_Lobart_04 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -350,7 +350,7 @@ INSTANCE ItPl_Beet_Lobart_04 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_05 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -369,7 +369,7 @@ INSTANCE ItPl_Beet_Lobart_05 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -378,7 +378,7 @@ INSTANCE ItPl_Beet_Lobart_05 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_06 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -397,7 +397,7 @@ INSTANCE ItPl_Beet_Lobart_06 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -406,7 +406,7 @@ INSTANCE ItPl_Beet_Lobart_06 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_07 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -425,7 +425,7 @@ INSTANCE ItPl_Beet_Lobart_07 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -434,7 +434,7 @@ INSTANCE ItPl_Beet_Lobart_07 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_08 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -453,7 +453,7 @@ INSTANCE ItPl_Beet_Lobart_08 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -462,7 +462,7 @@ INSTANCE ItPl_Beet_Lobart_08 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_09 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -481,7 +481,7 @@ INSTANCE ItPl_Beet_Lobart_09 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -490,7 +490,7 @@ INSTANCE ItPl_Beet_Lobart_09 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_10 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -509,7 +509,7 @@ INSTANCE ItPl_Beet_Lobart_10 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -518,7 +518,7 @@ INSTANCE ItPl_Beet_Lobart_10 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_11 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -537,7 +537,7 @@ INSTANCE ItPl_Beet_Lobart_11 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -546,7 +546,7 @@ INSTANCE ItPl_Beet_Lobart_11 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_12 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -565,7 +565,7 @@ INSTANCE ItPl_Beet_Lobart_12 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -574,7 +574,7 @@ INSTANCE ItPl_Beet_Lobart_12 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_13 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -593,7 +593,7 @@ INSTANCE ItPl_Beet_Lobart_13 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -602,7 +602,7 @@ INSTANCE ItPl_Beet_Lobart_13 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_14 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -621,7 +621,7 @@ INSTANCE ItPl_Beet_Lobart_14 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -630,7 +630,7 @@ INSTANCE ItPl_Beet_Lobart_14 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_15 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -649,7 +649,7 @@ INSTANCE ItPl_Beet_Lobart_15 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -658,7 +658,7 @@ INSTANCE ItPl_Beet_Lobart_15 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_16 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -677,7 +677,7 @@ INSTANCE ItPl_Beet_Lobart_16 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -686,7 +686,7 @@ INSTANCE ItPl_Beet_Lobart_16 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_17 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -705,7 +705,7 @@ INSTANCE ItPl_Beet_Lobart_17 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -714,7 +714,7 @@ INSTANCE ItPl_Beet_Lobart_17 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_18 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -733,7 +733,7 @@ INSTANCE ItPl_Beet_Lobart_18 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -742,7 +742,7 @@ INSTANCE ItPl_Beet_Lobart_18 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_19 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -761,7 +761,7 @@ INSTANCE ItPl_Beet_Lobart_19 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -770,7 +770,7 @@ INSTANCE ItPl_Beet_Lobart_19 (C_Item)
 
 INSTANCE ItPl_Beet_Lobart_20 (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -789,7 +789,7 @@ INSTANCE ItPl_Beet_Lobart_20 (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -798,7 +798,7 @@ INSTANCE ItPl_Beet_Lobart_20 (C_Item)
 
 INSTANCE ItPl_Beet (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"Turnip";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -819,7 +819,7 @@ INSTANCE ItPl_Beet (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -847,7 +847,7 @@ func void Use_Beet ()
 
 INSTANCE ItPl_Heilknospe (C_Item)
 {	
-	name 				=	"Heilknospe";
+	name 				=	"healing bud";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -863,12 +863,12 @@ INSTANCE ItPl_Heilknospe (C_Item)
 	
 	if (Mod_ItPl_Heilknospe_Right == 1)
 	{
-		TEXT[1]				= 	"Lebensenergie (in %):";	
+		TEXT[1]				= 	"Life energy (in %):";	
 		COUNT[1]			= 	20;
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -898,7 +898,7 @@ func void Use_Heilknospe ()
 /******************************************************************************************/	
 INSTANCE ItPl_SwampHerb(C_Item)
 {	
-	name 				=	"Sumpfkraut";
+	name 				=	"Swampweed";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -926,7 +926,7 @@ INSTANCE ItPl_SwampHerb(C_Item)
 /******************************************************************************************/	
 INSTANCE ItPl_Riceplant(C_Item)
 {	
-	name 				=	"Reispflanze";
+	name 				=	"rice plant";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -947,7 +947,7 @@ INSTANCE ItPl_Riceplant(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -976,7 +976,7 @@ INSTANCE ItPl_Riceplant(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_01(C_Item)
 {	
-	name 				=	"Feuernessel";
+	name 				=	"Fire Nettle";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -997,7 +997,7 @@ INSTANCE ItPl_Mana_Herb_01(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1021,7 +1021,7 @@ INSTANCE ItPl_Mana_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_02(C_Item)
 {	
-	name 				=	"Feuerkraut";
+	name 				=	"Fireweed";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1042,7 +1042,7 @@ INSTANCE ItPl_Mana_Herb_02(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1066,7 +1066,7 @@ INSTANCE ItPl_Mana_Herb_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_03(C_Item)
 {	
-	name 				=	"Feuerwurzel";
+	name 				=	"Fire Root";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1087,7 +1087,7 @@ INSTANCE ItPl_Mana_Herb_03(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1111,7 +1111,7 @@ INSTANCE ItPl_Mana_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mendulus(C_Item)
 {	
-	name 				=	"Menduluskraut";
+	name 				=	"mendulus herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1127,11 +1127,11 @@ INSTANCE ItPl_Mendulus(C_Item)
 	
 	if (Mod_ItPl_Mendulus_Right == 1)
 	{
-		TEXT[1]				= 	"Vollständige Regeneration";	
+		TEXT[1]				= 	"Complete regeneration";	
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1157,7 +1157,7 @@ INSTANCE ItPl_Mendulus(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_01(C_Item)
 {	
-	name 				=	"Heilpflanze";
+	name 				=	"Healing Plant";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1179,7 +1179,7 @@ INSTANCE ItPl_Health_Herb_01(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1209,7 +1209,7 @@ INSTANCE ItPl_Health_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_01_Reisfresser(C_Item)
 {	
-	name 				=	"Reisfressende Heilpflanze vom Reislord";
+	name 				=	"Rice-eating medicinal plant from rice lord";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;	
@@ -1228,7 +1228,7 @@ INSTANCE ItPl_Health_Herb_01_Reisfresser(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_02(C_Item)
 {	
-	name 				=	"Heilkraut";
+	name 				=	"Healing Herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1250,7 +1250,7 @@ INSTANCE ItPl_Health_Herb_02(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -1279,7 +1279,7 @@ INSTANCE ItPl_Health_Herb_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_03(C_Item)
 {	
-	name 				=	"Heilwurzel";
+	name 				=	"Healing Root";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1301,7 +1301,7 @@ INSTANCE ItPl_Health_Herb_03(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Health_Herb_03;
@@ -1329,7 +1329,7 @@ INSTANCE ItPl_Health_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Dex_Herb_01(C_Item)
 {	
-	name 				=	"Goblinbeeren";
+	name 				=	"goblin berries";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1350,7 +1350,7 @@ INSTANCE ItPl_Dex_Herb_01(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};	
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1374,7 +1374,7 @@ INSTANCE ItPl_Dex_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Strength_Herb_01(C_Item)
 {	
-	name 				=	"Drachenwurzel";
+	name 				=	"Dragonroot";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1395,7 +1395,7 @@ INSTANCE ItPl_Strength_Herb_01(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -1421,7 +1421,7 @@ INSTANCE ItPl_Strength_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Speed_Herb_01(C_Item)
 {	
-	name 				=	"Snapperkraut";
+	name 				=	"Snapperweed";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1442,7 +1442,7 @@ INSTANCE ItPl_Speed_Herb_01(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		
@@ -1471,7 +1471,7 @@ INSTANCE ItPl_Speed_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mushroom_03(C_Item)
 {	
-	name 				=	"Fliegenpilz";
+	name 				=	"fly agaric";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1492,7 +1492,7 @@ INSTANCE ItPl_Mushroom_03(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};	
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1525,7 +1525,7 @@ INSTANCE ItPl_Mushroom_03(C_Item)
 
 		if (Fliegenpilz_Gegessen == 13)
 		{
-			PrintScreen	("Deine Widerstandskraft gegen magische Angriffe ist gewachsen.", -1, -1, FONT_SCREEN, 2);
+			PrintScreen	("Your resistance to magical attacks has grown.", -1, -1, FONT_SCREEN, 2);
 
 			hero.protection[PROT_MAGIC] += 20;
 		};
@@ -1545,7 +1545,7 @@ INSTANCE ItPl_Mushroom_03(C_Item)
 
 INSTANCE ItPl_Mushroom_01(C_Item)
 {	
-	name 				=	"Dunkelpilz";
+	name 				=	"Dark Mushroom";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1566,7 +1566,7 @@ INSTANCE ItPl_Mushroom_01(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1609,7 +1609,7 @@ INSTANCE ItPl_Mushroom_01(C_Item)
 
 INSTANCE ItPl_Mushroom_04(C_Item)
 {	
-	name 				=	"Fungo";
+	name 				=	"fungo";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1630,7 +1630,7 @@ INSTANCE ItPl_Mushroom_04(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1646,7 +1646,7 @@ INSTANCE ItPl_Mushroom_04(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mushroom_02(C_Item)
 {	
-	name 				=	"Buddlerfleisch";
+	name 				=	"Digger Meat";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1667,7 +1667,7 @@ INSTANCE ItPl_Mushroom_02(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1721,7 +1721,7 @@ INSTANCE ItPl_Mushroom_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Blueplant(C_Item)
 {	
-	name 				=	"Blauflieder";
+	name 				=	"Blue Elder";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -1744,7 +1744,7 @@ INSTANCE ItPl_Blueplant(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1773,7 +1773,7 @@ INSTANCE ItPl_Blueplant(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Forestberry (C_Item)
 {	
-	name 				=	"Waldbeere";
+	name 				=	"Woodland Berry";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1794,7 +1794,7 @@ INSTANCE ItPl_Forestberry (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -1840,7 +1840,7 @@ INSTANCE ItPl_Forestberry (C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mithrida (C_Item)
 {	
-	name 				=	"Mithrida";
+	name 				=	"mithrida";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1924,7 +1924,7 @@ INSTANCE ItPl_Venena (C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Piante (C_Item)
 {	
-	name 				=	"Piante";
+	name 				=	"piante";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1952,7 +1952,7 @@ INSTANCE ItPl_Piante (C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Planeberry (C_Item)
 {	
-	name 				=	"Weidenbeere";
+	name 				=	"Meadow Berry";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -1973,7 +1973,7 @@ INSTANCE ItPl_Planeberry (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -2020,7 +2020,7 @@ INSTANCE ItPl_Planeberry (C_Item)
 
 INSTANCE ItPl_Temp_Herb(C_Item)
 {	
-	name 				=	"Feldknöterich";
+	name 				=	"Meadow Knotweed";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	
@@ -2041,7 +2041,7 @@ INSTANCE ItPl_Temp_Herb(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -2069,7 +2069,7 @@ INSTANCE ItPl_Temp_Herb(C_Item)
 
 INSTANCE ItPl_Perm_Herb(C_Item)
 {	
-	name 				=	"Kronstöckel";
+	name 				=	"King's Sorrel";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	
@@ -2090,7 +2090,7 @@ INSTANCE ItPl_Perm_Herb(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -2118,7 +2118,7 @@ INSTANCE ItPl_Perm_Herb(C_Item)
 
 INSTANCE ItPl_Rabenkraut(C_Item)
 {	
-	name 				=	"Rabenkraut";
+	name 				=	"raven herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	
@@ -2139,7 +2139,7 @@ INSTANCE ItPl_Rabenkraut(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -2167,7 +2167,7 @@ INSTANCE ItPl_Rabenkraut(C_Item)
 
 INSTANCE ItPl_Mondschatten(C_Item)
 {	
-	name 				=	"Mondschatten";
+	name 				=	"shadow of the moon";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	
@@ -2188,7 +2188,7 @@ INSTANCE ItPl_Mondschatten(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -2216,7 +2216,7 @@ INSTANCE ItPl_Mondschatten(C_Item)
 
 INSTANCE ItPl_Trollkirsche (C_Item)
 {	
-	name 					=	"Trollkirsche";
+	name 					=	"troll cherry";
 
 	mainflag 				=	ITEM_KAT_FOOD;
 	flags 					=	ITEM_MULTI;	
@@ -2237,7 +2237,7 @@ INSTANCE ItPl_Trollkirsche (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Trollkirsche;
@@ -2266,7 +2266,7 @@ INSTANCE ItPl_Trollkirsche (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_01 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2286,7 +2286,7 @@ INSTANCE ItPl_Herkuleskraut_01 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_02 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2306,7 +2306,7 @@ INSTANCE ItPl_Herkuleskraut_02 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_03 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2326,7 +2326,7 @@ INSTANCE ItPl_Herkuleskraut_03 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_04 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2346,7 +2346,7 @@ INSTANCE ItPl_Herkuleskraut_04 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_05 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2366,7 +2366,7 @@ INSTANCE ItPl_Herkuleskraut_05 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_06 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2386,7 +2386,7 @@ INSTANCE ItPl_Herkuleskraut_06 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_07 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2406,7 +2406,7 @@ INSTANCE ItPl_Herkuleskraut_07 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_08 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2426,7 +2426,7 @@ INSTANCE ItPl_Herkuleskraut_08 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_09 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2446,7 +2446,7 @@ INSTANCE ItPl_Herkuleskraut_09 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_10 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2466,7 +2466,7 @@ INSTANCE ItPl_Herkuleskraut_10 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_11 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2486,7 +2486,7 @@ INSTANCE ItPl_Herkuleskraut_11 (C_Item)
 
 INSTANCE ItPl_Herkuleskraut_12 (C_Item)
 {	
-	name 				=	"Herkuleskraut";
+	name 				=	"Hercules herb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2506,7 +2506,7 @@ INSTANCE ItPl_Herkuleskraut_12 (C_Item)
 
 INSTANCE ItPl_SalzwasserSprießling (C_Item)
 {	
-	name 				=	"Salzwassersprießling";
+	name 				=	"salt water skewer";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2522,7 +2522,7 @@ INSTANCE ItPl_SalzwasserSprießling (C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Harpienkralle (C_Item)
 {	
-	name 				=	"Harpienkralle";
+	name 				=	"harpie claw";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2546,7 +2546,7 @@ INSTANCE ItPl_Harpienkralle (C_Item)
 /******************************************************************************************/
 INSTANCE RoterBaron (C_Item)
 {	
-	name 				=	"Roter Baron";
+	name 				=	"Red Baron";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2571,7 +2571,7 @@ INSTANCE RoterBaron (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -2599,7 +2599,7 @@ func void Use_RoterBaron ()
 
 INSTANCE GelberScherling (C_Item)
 {	
-	name 				=	"Gelber Scherling";
+	name 				=	"Yellow sherling";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2625,7 +2625,7 @@ INSTANCE GelberScherling (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= Value_Health_Herb_03;
@@ -2653,7 +2653,7 @@ func void Use_GelberScherling ()
 /******************************************************************************************/
 INSTANCE ItPl_Winterrute(C_Item)
 {	
-	name 				=	"Winterrute";
+	name 				=	"winter rod";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -2678,7 +2678,7 @@ INSTANCE ItPl_Winterrute(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Faice_Hi (C_INFO)
 	information	= Info_Mod_Faice_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Faice_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Faice_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Faice_Hi_03_01"); //Ich bin Faice. Stör mich nicht, ich hab zu tun.
+	AI_Output(self, hero, "Info_Mod_Faice_Hi_03_01"); //I'm Faice. Don't bother me, I'm busy.
 };
 
 INSTANCE Info_Mod_Faice_QuestHermy (C_INFO)
@@ -42,23 +42,23 @@ FUNC INT Info_Mod_Faice_QuestHermy_Condition()
 
 FUNC VOID Info_Mod_Faice_QuestHermy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Faice_QuestHermy_03_00"); //Ah, du.
+	AI_Output(self, hero, "Info_Mod_Faice_QuestHermy_03_00"); //Ah, you.
 
 	Info_ClearChoices	(Info_Mod_Faice_QuestHermy);
 
-	Info_AddChoice	(Info_Mod_Faice_QuestHermy, "Was gibt’s?", Info_Mod_Faice_QuestHermy_B);
-	Info_AddChoice	(Info_Mod_Faice_QuestHermy, "Turendil schickt mich.", Info_Mod_Faice_QuestHermy_A);
+	Info_AddChoice	(Info_Mod_Faice_QuestHermy, "What's up?", Info_Mod_Faice_QuestHermy_B);
+	Info_AddChoice	(Info_Mod_Faice_QuestHermy, "Turendil sent me.", Info_Mod_Faice_QuestHermy_A);
 };
 
 FUNC VOID Info_Mod_Faice_QuestHermy_B()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_B_15_00"); //Was gibt’s?
-	AI_Output(self, hero, "Info_Mod_Faice_QuestHermy_B_03_01"); //Triff dich mit Hermy.
-	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_B_15_02"); //Alles klar.
+	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_B_15_00"); //What's up?
+	AI_Output(self, hero, "Info_Mod_Faice_QuestHermy_B_03_01"); //Meet with Hermy.
+	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_B_15_02"); //All clear.
 
 	Log_CreateTopic	(TOPIC_MOD_FAICE_HARPIE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_HARPIE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Faice meinte, ich soll mich mit einem Magier namens Hermy treffen. Er wird mir wahrscheinlich weitere Anweisungen geben.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Faice told me to meet a magician named Hermy. He'll probably give me further instructions.");
 
 	Info_ClearChoices	(Info_Mod_Faice_QuestHermy);
 
@@ -67,19 +67,19 @@ FUNC VOID Info_Mod_Faice_QuestHermy_B()
 
 FUNC VOID Info_Mod_Faice_QuestHermy_A()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_A_15_00"); //Turendil hat gesagt, dass ich zu dir kommen könne, wenn ich einen neuen Auftrag suche.
-	AI_Output(self, hero, "Info_Mod_Faice_QuestHermy_A_03_01"); //Fasse dich kurz, ich hab' zu tun.
-	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_A_15_02"); //Alles klar.
+	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_A_15_00"); //Turendil said I could come to you if I needed a new assignment.
+	AI_Output(self, hero, "Info_Mod_Faice_QuestHermy_A_03_01"); //Keep it short, I'm busy.
+	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_A_15_02"); //All clear.
 
 	Info_ClearChoices	(Info_Mod_Faice_QuestHermy);
 
-	Info_AddChoice	(Info_Mod_Faice_QuestHermy, "Was gibt’s?", Info_Mod_Faice_QuestHermy_B);
-	Info_AddChoice	(Info_Mod_Faice_QuestHermy, "Verstehe. Ich werde mich in Zukunft kürzer fassen.", Info_Mod_Faice_QuestHermy_C);
+	Info_AddChoice	(Info_Mod_Faice_QuestHermy, "What's up?", Info_Mod_Faice_QuestHermy_B);
+	Info_AddChoice	(Info_Mod_Faice_QuestHermy, "I see. I'll be shorter in the future.", Info_Mod_Faice_QuestHermy_C);
 };
 
 FUNC VOID Info_Mod_Faice_QuestHermy_C()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_C_15_00"); //Verstehe. Ich werde mich in Zukunft kürzer fassen.
+	AI_Output(hero, self, "Info_Mod_Faice_QuestHermy_C_15_00"); //I see. I'll be shorter in the future.
 	
 	Info_Mod_Faice_QuestHermy_B();
 };
@@ -105,24 +105,24 @@ FUNC INT Info_Mod_Faice_Aufnahmequest_Condition()
 
 FUNC VOID Info_Mod_Faice_Aufnahmequest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_03_00"); //Was gibt’s?
+	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_03_00"); //What's up?
 
 	Info_ClearChoices	(Info_Mod_Faice_Aufnahmequest);
 
-	Info_AddChoice	(Info_Mod_Faice_Aufnahmequest, "Wann bin ich dabei?", Info_Mod_Faice_Aufnahmequest_B);
-	Info_AddChoice	(Info_Mod_Faice_Aufnahmequest, "Wie lange dauert es noch, bis ich bei euch mitmachen kann?", Info_Mod_Faice_Aufnahmequest_A);
+	Info_AddChoice	(Info_Mod_Faice_Aufnahmequest, "When am I in?", Info_Mod_Faice_Aufnahmequest_B);
+	Info_AddChoice	(Info_Mod_Faice_Aufnahmequest, "How long before I can join you guys?", Info_Mod_Faice_Aufnahmequest_A);
 };
 
 FUNC VOID Info_Mod_Faice_Aufnahmequest_B()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_B_15_00"); //Wann bin ich dabei?
-	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_B_03_01"); //Ein Auftrag noch.
-	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_B_15_02"); //Worum geht’s?
-	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_B_03_03"); //Ferco wird dich einweisen.
-	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_B_15_04"); //Danke.
-	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_B_03_05"); //Nun lass mich in Ruhe.
+	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_B_15_00"); //When am I in?
+	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_B_03_01"); //One more order.
+	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_B_15_02"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_B_03_03"); //Ferco will let you in.
+	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_B_15_04"); //Thanks.
+	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_B_03_05"); //Now leave me alone.
 
-	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Der letzte Auftrag ... ich soll zu Ferco gehen.");
+	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "The last assignment.... I'm supposed to go see Ferco.");
 
 	Info_ClearChoices	(Info_Mod_Faice_Aufnahmequest);
 
@@ -131,19 +131,19 @@ FUNC VOID Info_Mod_Faice_Aufnahmequest_B()
 
 FUNC VOID Info_Mod_Faice_Aufnahmequest_A()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_A_15_00"); //Wie lange dauert es noch, bis ich bei euch mitmachen kann?
-	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_A_03_01"); //Du vergeudest Zeit. Ich bin beschäftigt.
-	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_A_15_02"); //Alles klar.
+	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_A_15_00"); //How long before I can join you guys?
+	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_A_03_01"); //You're wasting time. I'm busy.
+	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_A_15_02"); //All clear.
 
 	Info_ClearChoices	(Info_Mod_Faice_Aufnahmequest);
 
-	Info_AddChoice	(Info_Mod_Faice_Aufnahmequest, "Wann bin ich dabei?", Info_Mod_Faice_Aufnahmequest_B);
-	Info_AddChoice	(Info_Mod_Faice_Aufnahmequest, "Okay, ich werde mich in Zukunft kürzer fassen. Versprochen.", Info_Mod_Faice_Aufnahmequest_C);
+	Info_AddChoice	(Info_Mod_Faice_Aufnahmequest, "When am I in?", Info_Mod_Faice_Aufnahmequest_B);
+	Info_AddChoice	(Info_Mod_Faice_Aufnahmequest, "Okay, I'll be shorter in the future. I promise.", Info_Mod_Faice_Aufnahmequest_C);
 };
 
 FUNC VOID Info_Mod_Faice_Aufnahmequest_C()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_C_15_00"); //Verstehe. Ich werde mich in Zukunft kürzer fassen.
+	AI_Output(hero, self, "Info_Mod_Faice_Aufnahmequest_C_15_00"); //I see. I'll be shorter in the future.
 	AI_Output(self, hero, "Info_Mod_Faice_Aufnahmequest_C_03_01"); //...
 	
 	Info_Mod_Faice_Aufnahmequest_B();
@@ -170,7 +170,7 @@ FUNC INT Info_Mod_Faice_Mud_Condition()
 
 FUNC VOID Info_Mod_Faice_Mud_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Faice_Mud_03_00"); //Gut gemacht.
+	AI_Output(self, hero, "Info_Mod_Faice_Mud_03_00"); //Well done.
 
 	if (!Npc_IsDead(Mod_803_STT_Mud_MT))
 	{
@@ -179,28 +179,28 @@ FUNC VOID Info_Mod_Faice_Mud_Info()
 
 	Info_ClearChoices	(Info_Mod_Faice_Mud);
 
-	Info_AddChoice	(Info_Mod_Faice_Mud, "Ferco hat gesagt, du würdest das Nötigste einleiten. Wie sieht’s also aus?", Info_Mod_Faice_Mud_B);
-	Info_AddChoice	(Info_Mod_Faice_Mud, "Bin ich dabei?", Info_Mod_Faice_Mud_A);
+	Info_AddChoice	(Info_Mod_Faice_Mud, "Ferco said you'd do whatever it takes. So what's the situation?", Info_Mod_Faice_Mud_B);
+	Info_AddChoice	(Info_Mod_Faice_Mud, "Am I in?", Info_Mod_Faice_Mud_A);
 };
 
 FUNC VOID Info_Mod_Faice_Mud_B()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Mud_B_15_00"); //Ferco hat gesagt, du würdest das Nötigste einleiten. Wie sieht’s also aus?
-	AI_Output(self, hero, "Info_Mod_Faice_Mud_B_03_01"); //Meine Zeit ist kostbar. Wann lernst du das endlich?
+	AI_Output(hero, self, "Info_Mod_Faice_Mud_B_15_00"); //Ferco said you'd do whatever it takes. So what's the situation?
+	AI_Output(self, hero, "Info_Mod_Faice_Mud_B_03_01"); //My time is precious. When are you gonna learn?
 
 	Info_ClearChoices	(Info_Mod_Faice_Mud);
 
-	Info_AddChoice	(Info_Mod_Faice_Mud, "Ich werde es mir für die Zukunft vormerken. Wie sieht es also aus?", Info_Mod_Faice_Mud_C);
-	Info_AddChoice	(Info_Mod_Faice_Mud, "Bin ich dabei?", Info_Mod_Faice_Mud_A);
+	Info_AddChoice	(Info_Mod_Faice_Mud, "I'll make a note of it for the future. So what does it look like?", Info_Mod_Faice_Mud_C);
+	Info_AddChoice	(Info_Mod_Faice_Mud, "Am I in?", Info_Mod_Faice_Mud_A);
 };
 
 FUNC VOID Info_Mod_Faice_Mud_A()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Mud_A_15_00"); //Bin ich dabei?
+	AI_Output(hero, self, "Info_Mod_Faice_Mud_A_15_00"); //Am I in?
 
 	if (Mod_AnzahlNebengilden < MaxNebengilden)
 	{
-		AI_Output(self, hero, "Info_Mod_Faice_Mud_A_03_01"); //Sag Bescheid, wenn du bereit bist für die Aufnahme.
+		AI_Output(self, hero, "Info_Mod_Faice_Mud_A_03_01"); //Let me know when you're ready for the recording.
 	
 		Info_ClearChoices	(Info_Mod_Faice_Mud);
 
@@ -208,8 +208,8 @@ FUNC VOID Info_Mod_Faice_Mud_A()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Faice_Mud_A_03_02"); //Leider hast du das alles umsonst getan, denn du gehörst bereits zu vielen Gemeinschaften an.
-		AI_Output(self, hero, "Info_Mod_Faice_Mud_A_03_03"); //Wir können dich leider nicht bei uns aufnehmen.
+		AI_Output(self, hero, "Info_Mod_Faice_Mud_A_03_02"); //Unfortunately, you have done all this for nothing, because you are already a member of many communities.
+		AI_Output(self, hero, "Info_Mod_Faice_Mud_A_03_03"); //I'm afraid we can't take you in.
 	
 		Info_ClearChoices	(Info_Mod_Faice_Mud);
 
@@ -224,7 +224,7 @@ FUNC VOID Info_Mod_Faice_Mud_A()
 
 FUNC VOID Info_Mod_Faice_Mud_C()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Mud_C_15_00"); //Ich werde es mir für die Zukunft vormerken. Wie sieht es also aus?
+	AI_Output(hero, self, "Info_Mod_Faice_Mud_C_15_00"); //I'll make a note of it for the future. So what does it look like?
 	AI_Output(self, hero, "Info_Mod_Faice_Mud_C_03_01"); //...
 	
 	Info_Mod_Faice_Mud_A();
@@ -238,7 +238,7 @@ INSTANCE Info_Mod_Faice_Aufnahme (C_INFO)
 	information	= Info_Mod_Faice_Aufnahme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin bereit für die Aufnahme.";
+	description	= "I'm ready for recording.";
 };
 
 FUNC INT Info_Mod_Faice_Aufnahme_Condition()
@@ -252,8 +252,8 @@ FUNC INT Info_Mod_Faice_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Faice_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Aufnahme_15_00"); //Ich bin bereit für die Aufnahme.
-	AI_Output(self, hero, "Info_Mod_Faice_Aufnahme_03_01"); //Ich werde das Nötigste einleiten. Komm später auf den Hof des Klosters.
+	AI_Output(hero, self, "Info_Mod_Faice_Aufnahme_15_00"); //I'm ready for recording.
+	AI_Output(self, hero, "Info_Mod_Faice_Aufnahme_03_01"); //I'll make the necessary arrangements. Come to the monastery yard later.
 
 	AI_StopProcessInfos	(self);
 
@@ -274,7 +274,7 @@ FUNC VOID Info_Mod_Faice_Aufnahme_Info()
 	B_StartOtherRoutine	(Mod_1628_VMG_Anor_MT, "RITUAL");
 	B_StartOtherRoutine	(Mod_1955_VMG_Turendil_MT, "RITUAL");
 
-	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Faice meint, ich soll später auf den Hof des Klosters kommen, um aufgenommen zu werden. Ich sollte dort dann nochmal mit ihm sprechen.");
+	B_LogEntry	(TOPIC_MOD_VMG_AUFNAHME, "Faice says I should come to the monastery yard later to be admitted. I should talk to him there again.");
 };
 
 INSTANCE Info_Mod_Faice_Ritual (C_INFO)
@@ -300,18 +300,18 @@ FUNC INT Info_Mod_Faice_Ritual_Condition()
 
 FUNC VOID Info_Mod_Faice_Ritual_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Faice_Ritual_03_00"); //Kann es losgehen?
+	AI_Output(self, hero, "Info_Mod_Faice_Ritual_03_00"); //Can we get started?
 
 	Info_ClearChoices	(Info_Mod_Faice_Ritual);
 
-	Info_AddChoice	(Info_Mod_Faice_Ritual, "Ich muss noch etwas erledigen.", Info_Mod_Faice_Ritual_B);
-	Info_AddChoice	(Info_Mod_Faice_Ritual, "Ja.", Info_Mod_Faice_Ritual_A);
+	Info_AddChoice	(Info_Mod_Faice_Ritual, "There's something I have to do.", Info_Mod_Faice_Ritual_B);
+	Info_AddChoice	(Info_Mod_Faice_Ritual, "Yeah.", Info_Mod_Faice_Ritual_A);
 };
 
 FUNC VOID Info_Mod_Faice_Ritual_B()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Ritual_B_15_00"); //Ich muss noch etwas erledigen.
-	AI_Output(self, hero, "Info_Mod_Faice_Ritual_B_03_01"); //Beeile dich.
+	AI_Output(hero, self, "Info_Mod_Faice_Ritual_B_15_00"); //There's something I have to do.
+	AI_Output(self, hero, "Info_Mod_Faice_Ritual_B_03_01"); //Come on, hurry up.
 
 	Info_ClearChoices	(Info_Mod_Faice_Ritual);
 
@@ -320,8 +320,8 @@ FUNC VOID Info_Mod_Faice_Ritual_B()
 
 FUNC VOID Info_Mod_Faice_Ritual_A()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Ritual_A_15_00"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Faice_Ritual_A_03_01"); //Dann betrete die Mitte des Kreises.
+	AI_Output(hero, self, "Info_Mod_Faice_Ritual_A_15_00"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_Faice_Ritual_A_03_01"); //Then enter the middle of the circle.
 	
 	Info_ClearChoices	(Info_Mod_Faice_Ritual);
 
@@ -329,7 +329,7 @@ FUNC VOID Info_Mod_Faice_Ritual_A()
 
 	Log_CreateTopic	(TOPIC_MOD_FAICE_HEILUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_HEILUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich soll die Mitte des Kreises der Magier betreten, damit das Ritual beginnen kann.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "I am to enter the middle of the magicians' circle so that the ritual can begin.");
 	B_SetTopicStatus	(TOPIC_MOD_VMG_AUFNAHME, LOG_SUCCESS);
 
 	AI_StopProcessInfos	(self);
@@ -356,17 +356,17 @@ FUNC INT Info_Mod_Faice_RitualRunning_Condition()
 
 FUNC VOID Info_Mod_Faice_RitualRunning_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Faice_RitualRunning_03_00"); //Mitglieder des Kreises der Verwandlungsmagier, es ist wieder so weit.
-	AI_Output(self, hero, "Info_Mod_Faice_RitualRunning_03_01"); //Ein neues Mitglied betritt unsere Reihen und wird entweder ein Beschützer der Magier oder ein Magier selbst.
-	AI_Output(self, hero, "Info_Mod_Faice_RitualRunning_03_02"); //Erinnert euch an seine Taten: Er rettete Tugettso, er besuchte Gelato, das Schneegebiet, er fand die verschollenen Spruchrollen der Verwandlungen zu einer Fleischwanze und zu einer Harpie.
-	AI_Output(self, hero, "Info_Mod_Faice_RitualRunning_03_03"); //Heißt ihn willkommen!
+	AI_Output(self, hero, "Info_Mod_Faice_RitualRunning_03_00"); //Members of the Circle of Transformation Mages, it's time again.
+	AI_Output(self, hero, "Info_Mod_Faice_RitualRunning_03_01"); //A new member enters our ranks and becomes either a mage's protector or a magician himself.
+	AI_Output(self, hero, "Info_Mod_Faice_RitualRunning_03_02"); //Remember his deeds: He saved Tugettso, he visited Gelato, the snowy area, he found the lost roles of the transformations into a meat bug and a harpy.
+	AI_Output(self, hero, "Info_Mod_Faice_RitualRunning_03_03"); //Welcome him back!
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "DRAINED");
 
 	Log_CreateTopic	(TOPIC_MOD_NEBENGILDEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "Die Verwandlungsmagier haben mich als einen der ihren aufgenommen.");
+	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "The transforming mages have taken me in as one of their own.");
 };
 
 INSTANCE Info_Mod_Faice_PrePruefung (C_INFO)
@@ -377,7 +377,7 @@ INSTANCE Info_Mod_Faice_PrePruefung (C_INFO)
 	information	= Info_Mod_Faice_PrePruefung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Du wolltest mich sprechen?";
+	description	= "You wanted to see me?";
 };
 
 FUNC INT Info_Mod_Faice_PrePruefung_Condition()
@@ -391,8 +391,8 @@ FUNC INT Info_Mod_Faice_PrePruefung_Condition()
 
 FUNC VOID Info_Mod_Faice_PrePruefung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_PrePruefung_15_00"); //Du wolltest mich sprechen?
-	AI_Output(self, hero, "Info_Mod_Faice_PrePruefung_03_01"); //Noch nicht, das muss warten.
+	AI_Output(hero, self, "Info_Mod_Faice_PrePruefung_15_00"); //You wanted to see me?
+	AI_Output(self, hero, "Info_Mod_Faice_PrePruefung_03_01"); //Not yet, it'll have to wait.
 };
 
 INSTANCE Info_Mod_Faice_Pruefung (C_INFO)
@@ -403,7 +403,7 @@ INSTANCE Info_Mod_Faice_Pruefung (C_INFO)
 	information	= Info_Mod_Faice_Pruefung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wolltest mich sprechen?";
+	description	= "You wanted to see me?";
 };
 
 FUNC INT Info_Mod_Faice_Pruefung_Condition()
@@ -417,67 +417,67 @@ FUNC INT Info_Mod_Faice_Pruefung_Condition()
 
 FUNC VOID Info_Mod_Faice_Pruefung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_15_00"); //Du wolltest mich sprechen?
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_03_01"); //Ja, gut, dass du kommst. Ich habe ein wenig Zeit aufbringen können um dir etwas über uns zu erzählen.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_03_02"); //Willst du es hören? Ansonsten gebe ich dir einfach eine Aufgabe.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_15_00"); //You wanted to see me?
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_03_01"); //Yeah, good of you to come. I could spend a little time telling you about us.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_03_02"); //You want to hear it? Otherwise, I'll just give you a job.
 
 	Info_ClearChoices	(Info_Mod_Faice_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Faice_Pruefung, "Die Aufgabe reicht.", Info_Mod_Faice_Pruefung_B);
-	Info_AddChoice	(Info_Mod_Faice_Pruefung, "Lass hören.", Info_Mod_Faice_Pruefung_A);
+	Info_AddChoice	(Info_Mod_Faice_Pruefung, "The task is sufficient.", Info_Mod_Faice_Pruefung_B);
+	Info_AddChoice	(Info_Mod_Faice_Pruefung, "Let's hear it.", Info_Mod_Faice_Pruefung_A);
 };
 
 FUNC VOID Info_Mod_Faice_Pruefung_C()
 {
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_C_03_00"); //Den ersten Test zum Erlernen unserer uralten Techniken wird Genn dir erklären.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_C_03_01"); //Du 	kannst nun wieder sicher nach Tugettso reisen, Albert hat den Teleporter repariert.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_C_03_02"); //Lass dir von ihm einen neuen Stein geben.
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_C_15_03"); //Das werde ich. Wir sehen uns.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_C_03_04"); //Deine Wege sollen behütet sein.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_C_03_00"); //Genn will explain the first test for learning our ancient techniques to you.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_C_03_01"); //You can safely travel back to Tugettso now, Albert fixed the teleporter.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_C_03_02"); //Let him give you a new stone.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_C_15_03"); //I will, I will. I'll see you around.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_C_03_04"); //I want your paths guarded.
 
 	Log_CreateTopic	(TOPIC_MOD_FAICE_PRUEFUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_PRUEFUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Den ersten Test zum Erlernen der alten Techniken der Verwandlungsmagier soll Genn mir erklären.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "The first test to learn the old techniques of the transformative mages is to be explained to me by Genn.");
 
 	Info_ClearChoices	(Info_Mod_Faice_Pruefung);
 };
 
 FUNC VOID Info_Mod_Faice_Pruefung_B()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_B_15_00"); //Die Aufgabe reicht.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_B_15_00"); //The task is sufficient.
 
 	Info_Mod_Faice_Pruefung_C();
 };
 
 FUNC VOID Info_Mod_Faice_Pruefung_A()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_A_15_00"); //Lass hören.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_A_03_01"); //Wie du sicherlich weißt, kommen wir aus Tugettso, du warst ja schon einige Male dort.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_A_03_02"); //An dem Ort ist die Naturverbundenheit sehr groß musst du wissen, aber du kannst sie nur spüren, wenn du ein vollwertiges Mitglied bist.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_A_03_03"); //Damit möchte ich dich nicht demütigen, ich 	weiß um deine Verdienste für uns. Mehr dazu aber später.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_A_15_00"); //Let's hear it.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_A_03_01"); //As you surely know, we come from Tugettso, you have been there several times.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_A_03_02"); //In this place, you must know that there is a strong bond with nature, but you can only feel it if you are a full member.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_A_03_03"); //I don't want to humiliate you with this, I know your merits for us. More about this later.
 
 	Info_ClearChoices	(Info_Mod_Faice_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Faice_Pruefung, "[Weiter]", Info_Mod_Faice_Pruefung_E);
-	Info_AddChoice	(Info_Mod_Faice_Pruefung, "Lass den Rest weg, das interessiert mich.", Info_Mod_Faice_Pruefung_D);
+	Info_AddChoice	(Info_Mod_Faice_Pruefung, "[Next]", Info_Mod_Faice_Pruefung_E);
+	Info_AddChoice	(Info_Mod_Faice_Pruefung, "Leave the rest out of it, I care.", Info_Mod_Faice_Pruefung_D);
 };
 
 FUNC VOID Info_Mod_Faice_Pruefung_E()
 {
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_00"); //Auf jeden Fall versuchen wir, mit der Natur zu leben, anstatt sie für unsere Zwecke auszunutzen.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_01"); //Das ist nicht immer ganz einfach, schließlich brauchen auch wir ab und zu ein wenig Fleisch, die meisten von uns sind keine Vegetarier.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_02"); //Aber durch spezielle Meditation sind wir in der Lage, mit den Tieren in Tugettso zu kommunizieren.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_03"); //So können wir herausfinden, welche Tiere die Natur für uns vorgesehen hat, sie leisten auch keinen Widerstand beim Jagen.
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_E_15_04"); //Was hat das mit mir zu tun?
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_05"); //Du bist jetzt bereit, diese Techniken zu lernen. Können wir anfangen?
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_E_15_06"); //Lass hören.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_00"); //In any case, we try to live with nature instead of using it for our own purposes.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_01"); //This is not always easy, after all we also need a little meat from time to time, most of us are not vegetarians.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_02"); //But through special meditation we are able to communicate with the animals in Tugettso.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_03"); //In this way we can find out which animals nature has planned for us, and they do not resist any resistance to hunting.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_E_15_04"); //What's that got to do with me?
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung_E_03_05"); //You are now ready to learn these techniques. Can we get started?
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_E_15_06"); //Let's hear it.
 
 	Info_Mod_Faice_Pruefung_C();
 };
 
 FUNC VOID Info_Mod_Faice_Pruefung_D()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_D_15_00"); //Lass den Rest weg, das interessiert mich.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung_D_15_00"); //Leave the rest out of it, I care.
 
 	Info_Mod_Faice_Pruefung_C();
 };
@@ -490,7 +490,7 @@ INSTANCE Info_Mod_Faice_Pruefung2 (C_INFO)
 	information	= Info_Mod_Faice_Pruefung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Da bin ich wieder.";
+	description	= "Here I am again.";
 };
 
 FUNC INT Info_Mod_Faice_Pruefung2_Condition()
@@ -503,8 +503,8 @@ FUNC INT Info_Mod_Faice_Pruefung2_Condition()
 
 FUNC VOID Info_Mod_Faice_Pruefung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_00"); //Da bin ich wieder.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_01"); //Ich weiß bereits Bescheid. Lass mich kurz zusammenfassen:
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_00"); //Here I am again.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_01"); //I already know about it. Let me briefly summarize:
 
 	if ((Mod_VMG_Pruefung_Genn + Mod_VMG_Pruefung_Asko + Mod_VMG_Pruefung_Per) == 4)
 	{
@@ -512,31 +512,31 @@ FUNC VOID Info_Mod_Faice_Pruefung2_Info()
 		&& (Mod_VMG_Pruefung_Asko == 1)
 		&& (Mod_VMG_Pruefung_Per == 1)
 		{
-			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_02"); //Genn hat mir leider nichts Gutes berichten können, dafür habe ich von Asko und Per nur das Beste gehört.
+			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_02"); //Genn could not tell me anything good, but I heard only the best of Asko and Per.
 		}
 		else if (Mod_VMG_Pruefung_Genn == 1)
 		&& (Mod_VMG_Pruefung_Asko == 2)
 		&& (Mod_VMG_Pruefung_Per == 1)
 		{
-			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_03"); //Asko hat mir leider nichts Gutes berichten können, dafür habe ich von Genn und Per nur das Beste gehört.
+			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_03"); //Asko could not tell me anything good, but I heard only the best of Genn and Per.
 		}
 		else if (Mod_VMG_Pruefung_Genn == 1)
 		&& (Mod_VMG_Pruefung_Asko == 1)
 		&& (Mod_VMG_Pruefung_Per == 2)
 		{
-			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_04"); //Per hat mir leider nichts Gutes berichten können, dafür habe ich von Genn und Asko nur das Beste gehört.
+			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_04"); //Unfortunately, Per could not tell me anything good, but I heard only the best of Genn and Asko.
 		};
 
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_05"); //Nach allem, was passiert ist, werde ich dich trotzdem angemessen belohnen und dir die Techniken beibringen.
-		AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_06"); //Das ist großzügig. Was hast du für mich?
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_07"); //Du kannst wählen, ob du eine Rüstung, oder eine Robe haben möchtest. Jede dieser Rüstungen hat ihre eigenen Vor- und Nachteile.
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_05"); //After all that has happened, I will still reward you appropriately and teach you the techniques.
+		AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_06"); //That's generous. What have you got for me?
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_07"); //You can choose whether you want to have an armor or a robe. Each of these armor has its own advantages and disadvantages.
 
 		B_GivePlayerXP	(1000);
 
 		Info_ClearChoices	(Info_Mod_Faice_Pruefung2);
 
-		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "Ich nehme die Robe.", Info_Mod_Faice_Pruefung2_B);
-		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "Ich nehme die Rüstung.", Info_Mod_Faice_Pruefung2_A);
+		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "I'll take the robe.", Info_Mod_Faice_Pruefung2_B);
+		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "I'll take the armor.", Info_Mod_Faice_Pruefung2_A);
 	}
 	else if ((Mod_VMG_Pruefung_Genn + Mod_VMG_Pruefung_Asko + Mod_VMG_Pruefung_Per) == 5)
 	{
@@ -544,69 +544,69 @@ FUNC VOID Info_Mod_Faice_Pruefung2_Info()
 		&& (Mod_VMG_Pruefung_Asko == 2)
 		&& (Mod_VMG_Pruefung_Per == 1)
 		{
-			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_08"); //Genn und Asko haben mir berichtet, dass du ihre Aufgabe nicht geschafft hast, dafür war Per begeistert von dir.
+			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_08"); //Genn and Asko told me that you couldn't do their job, but Per was thrilled with you.
 		}
 		else if (Mod_VMG_Pruefung_Genn == 2)
 		&& (Mod_VMG_Pruefung_Asko == 1)
 		&& (Mod_VMG_Pruefung_Per == 2)
 		{
-			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_09"); //Genn und Per haben mir berichtet, dass du ihre Aufgabe nicht geschafft hast, dafür war Asko begeistert von dir.
+			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_09"); //Genn and Per told me that you couldn't do their job, but Asko was thrilled with you.
 		}
 		else if (Mod_VMG_Pruefung_Genn == 1)
 		&& (Mod_VMG_Pruefung_Asko == 2)
 		&& (Mod_VMG_Pruefung_Per == 2)
 		{
-			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_10"); //Asko und Per haben mir berichtet, dass du ihre Aufgabe nicht geschafft hast, dafür war Genn begeistert von dir.
+			AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_10"); //Asko and Per told me that you couldn't do their job, but Genn was enthusiastic about it.
 		};
 
 		B_GivePlayerXP	(800);
 
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_11"); //Wenn du auf eine Belohnung verzichtest, werde ich dir die Techniken beibringen.
-		AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_12"); //Ich verzichte auf meine Belohnung. Lehre mich die alten Techniken.
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_13"); //Komm wieder, wenn du bereit bist.
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_11"); //If you give up a reward, I'll teach you the techniques.
+		AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_12"); //I give up my reward. Teach me the old techniques.
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_13"); //Come back when you're ready.
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich kann nun bei Faice lernen.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I can now study with Faice.");
 		B_SetTopicStatus	(TOPIC_MOD_FAICE_PRUEFUNG, LOG_SUCCESS);
 	}
 	else if ((Mod_VMG_Pruefung_Genn + Mod_VMG_Pruefung_Asko + Mod_VMG_Pruefung_Per) == 6)
 	{
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_14"); //Du hast es leider nicht geschafft, dich für die alten Techniken zu qualifizieren.
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_15"); //Sie werden dir nun für immer verwehrt bleiben. Tut mir Leid.
-		AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_16"); //Da kann man wohl nichts machen ... oder?
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_17"); //Was meinst du damit?
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_14"); //You didn't manage to qualify for the old techniques.
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_15"); //They will now be refused to you forever. Sorry about that.
+		AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_16"); //There's nothing you can do about it.... right?
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_17"); //What do you mean?
 
 		B_GivePlayerXP	(500);
 
 		Info_ClearChoices	(Info_Mod_Faice_Pruefung2);
 
-		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "Wie wäre es mit 1000 Goldstücken?", Info_Mod_Faice_Pruefung2_D);
-		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "Nichts. Ich bin wohl einfach nicht gut genug. Auf Wiedersehen.", Info_Mod_Faice_Pruefung2_C);
+		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "How about a thousand pieces of gold?", Info_Mod_Faice_Pruefung2_D);
+		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "Nothing. I guess I'm just not good enough. Goodbye. Goodbye.", Info_Mod_Faice_Pruefung2_C);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_18"); //Du hast alle Aufgaben gemeistert und dich so qualifiziert, die alten Techniken zu erlernen. Meinen Glückwunsch!
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_19"); //Natürlich sollst du auch eine angemessene Belohnung erhalten.
-		AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_20"); //Das ist sehr großzügig. Was hast du für mich?
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_21"); //Du kannst wählen, ob du eine Rüstung, oder eine Robe haben möchtest. Jede dieser Rüstungen hat ihre eigenen Vor- und Nachteile.
-		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_22"); //Dazu sollst du noch 1000 Goldstücke erhalten.
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_18"); //You have mastered all the tasks and qualified yourself to learn the old techniques. Congratulations!
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_19"); //Of course, you should also receive a fair reward.
+		AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_15_20"); //That's very generous. What have you got for me?
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_21"); //You can choose whether you want to have an armor or a robe. Each of these armor has its own advantages and disadvantages.
+		AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_03_22"); //In addition, you shall receive 1000 pieces of gold.
 
 		B_GivePlayerXP	(1500);
 
 		Info_ClearChoices	(Info_Mod_Faice_Pruefung2);
 
-		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "Ich nehme die Robe.", Info_Mod_Faice_Pruefung2_F);
-		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "Ich nehme die Rüstung.", Info_Mod_Faice_Pruefung2_E);
+		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "I'll take the robe.", Info_Mod_Faice_Pruefung2_F);
+		Info_AddChoice	(Info_Mod_Faice_Pruefung2, "I'll take the armor.", Info_Mod_Faice_Pruefung2_E);
 	};
 };
 
 FUNC VOID Info_Mod_Faice_Pruefung2_G()
 {
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_G_03_00"); //Die sollst du haben.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_G_03_00"); //I want you to have it.
 };
 
 FUNC VOID Info_Mod_Faice_Pruefung2_F()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_F_15_00"); //Ich nehme die Robe.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_F_15_00"); //I'll take the robe.
 
 	Info_Mod_Faice_Pruefung2_G();
 
@@ -614,9 +614,9 @@ FUNC VOID Info_Mod_Faice_Pruefung2_F()
 
 	CreateInvItems	(hero, ItMi_Gold, 1000);
 
-	B_ShowGivenThings	("1000 Goldmünzen und Verwandlungsmagierrobe erhalten");
+	B_ShowGivenThings	("1000 gold coins and transformation magic robes preserved");
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich habe meine Belohnung erhalten und kann nun bei Faice lernen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I have received my reward and can now learn from Faice.");
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_PRUEFUNG, LOG_SUCCESS);
 
 	Info_ClearChoices	(Info_Mod_Faice_Pruefung2);
@@ -624,7 +624,7 @@ FUNC VOID Info_Mod_Faice_Pruefung2_F()
 
 FUNC VOID Info_Mod_Faice_Pruefung2_E()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_E_15_00"); //Ich nehme die Rüstung.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_E_15_00"); //I'll take the armor.
 
 	Info_Mod_Faice_Pruefung2_G();
 
@@ -632,9 +632,9 @@ FUNC VOID Info_Mod_Faice_Pruefung2_E()
 
 	CreateInvItems	(hero, ItMi_Gold, 1000);
 
-	B_ShowGivenThings	("1000 Goldmünzen und Rüstung der Beschützer erhalten");
+	B_ShowGivenThings	("1000 gold coins and armor of the protectors preserved");
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich habe meine Belohnung erhalten und kann nun bei Faice lernen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I have received my reward and can now learn from Faice.");
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_PRUEFUNG, LOG_SUCCESS);
 
 	Info_ClearChoices	(Info_Mod_Faice_Pruefung2);
@@ -642,10 +642,10 @@ FUNC VOID Info_Mod_Faice_Pruefung2_E()
 
 FUNC VOID Info_Mod_Faice_Pruefung2_D()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_D_15_00"); //Wie wäre es mit 1000 Goldstücken?
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_D_03_01"); //Wie kannst du es wagen? Wir sind unbestechlich! Aus meinen Augen!
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_D_15_00"); //How about a thousand pieces of gold?
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_D_03_01"); //How dare you? We are incorruptible! Out of my sight!
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich habe keine Chance mehr, die alten Techniken zu erlernen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I no longer have a chance to learn the old techniques.");
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_PRUEFUNG, LOG_SUCCESS);
 
 	Info_ClearChoices	(Info_Mod_Faice_Pruefung2);
@@ -653,10 +653,10 @@ FUNC VOID Info_Mod_Faice_Pruefung2_D()
 
 FUNC VOID Info_Mod_Faice_Pruefung2_C()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_C_15_00"); //Nichts. Ich bin wohl einfach nicht gut genug. Auf Wiedersehen.
-	AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_C_03_01"); //Lebe wohl.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_C_15_00"); //Nothing. I guess I'm just not good enough. Goodbye. Goodbye.
+	AI_Output(self, hero, "Info_Mod_Faice_Pruefung2_C_03_01"); //Farewell. Goodbye.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich habe keine Chance mehr, die alten Techniken zu erlernen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I no longer have a chance to learn the old techniques.");
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_PRUEFUNG, LOG_SUCCESS);
 
 	Info_ClearChoices	(Info_Mod_Faice_Pruefung2);
@@ -664,15 +664,15 @@ FUNC VOID Info_Mod_Faice_Pruefung2_C()
 
 FUNC VOID Info_Mod_Faice_Pruefung2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_B_15_00"); //Ich nehme die Robe.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_B_15_00"); //I'll take the robe.
 
 	Info_Mod_Faice_Pruefung2_G();
 
 	CreateInvItems	(hero, ItAr_Naturmagier2, 1);
 
-	B_ShowGivenThings	("Verwandlungsmagierrobe erhalten");
+	B_ShowGivenThings	("Receive transformation magic robe");
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich habe meine Belohnung erhalten und kann nun bei Faice lernen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I have received my reward and can now learn from Faice.");
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_PRUEFUNG, LOG_SUCCESS);
 
 	Info_ClearChoices	(Info_Mod_Faice_Pruefung2);
@@ -680,15 +680,15 @@ FUNC VOID Info_Mod_Faice_Pruefung2_B()
 
 FUNC VOID Info_Mod_Faice_Pruefung2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_A_15_00"); //Ich nehme die Rüstung.
+	AI_Output(hero, self, "Info_Mod_Faice_Pruefung2_A_15_00"); //I'll take the armor.
 
 	Info_Mod_Faice_Pruefung2_G();
 
 	CreateInvItems	(hero, ItAr_Verwandlungskrieger, 1);
 
-	B_ShowGivenThings	("Rüstung der Beschützer erhalten");
+	B_ShowGivenThings	("To preserve the armor of the guardians");
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich habe meine Belohnung erhalten und kann nun bei Faice lernen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I have received my reward and can now learn from Faice.");
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_PRUEFUNG, LOG_SUCCESS);
 
 	Info_ClearChoices	(Info_Mod_Faice_Pruefung2);
@@ -702,7 +702,7 @@ INSTANCE Info_Mod_Faice_Pruefung3 (C_INFO)
 	information	= Info_Mod_Faice_Pruefung3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Mit Tieren sprechen lernen (5 Lernpunkte)";
+	description	= "Learning to speak with animals (5 learning points)";
 };
 
 FUNC INT Info_Mod_Faice_Pruefung3_Condition()
@@ -728,7 +728,7 @@ INSTANCE Info_Mod_Faice_BACK (C_INFO)
 	information	= Info_Mod_Faice_BACK_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Raum verlassen)";
+	description	= "(room leaving)";
 };
 
 FUNC INT Info_Mod_Faice_BACK_Condition()

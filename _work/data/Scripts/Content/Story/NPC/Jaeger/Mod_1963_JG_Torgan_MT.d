@@ -1,7 +1,7 @@
 INSTANCE Mod_1963_JG_Torgan_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Torgan";
+	name 		= "organ";
 	guild 		= GIL_OUT;
 	id 			= 1963;
 	voice 		= 13;

@@ -1,7 +1,7 @@
 instance Mod_7578_OUT_Brauer_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Brauer"; 
+	name 		= "brewers"; 
 	guild 		= GIL_OUT;
 	id 			= 7578;
 	voice 		= 6;

@@ -16,14 +16,14 @@ FUNC INT Info_Mod_Nandor_Hi_Condition()
 
 FUNC VOID Info_Mod_Nandor_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nandor_Hi_15_00"); //Hi, warst du nicht einer dieser Typen, die von der Zivilisation genug hatten und nun draußen in der freien Natur autark über die Runden kommen?
-	AI_Output(self, hero, "Info_Mod_Nandor_Hi_02_01"); //Ja, könnte man so sagen. Woher weisst du das?
-	AI_Output(hero, self, "Info_Mod_Nandor_Hi_15_02"); //Wusste ich nicht, du hast es mir erst eben gesagt.
-	AI_Output(self, hero, "Info_Mod_Nandor_Hi_02_03"); //Sehr lustig.
-	AI_Output(hero, self, "Info_Mod_Nandor_Hi_15_04"); //Dann bist du Nandor, richtig?
-	AI_Output(self, hero, "Info_Mod_Nandor_Hi_02_05"); //(genervt) Ja, woher weisst du das schon wieder?
-	AI_Output(hero, self, "Info_Mod_Nandor_Hi_15_06"); //Du hast es mir doch eben gerade gesagt.
-	AI_Output(self, hero, "Info_Mod_Nandor_Hi_02_07"); //Verarschen kann ich mich alleine, was willst du eigentlich?
+	AI_Output(hero, self, "Info_Mod_Nandor_Hi_15_00"); //Hi, weren't you one of those guys who had enough of civilization and are now making ends meet in the great outdoors?
+	AI_Output(self, hero, "Info_Mod_Nandor_Hi_02_01"); //Yeah, you could say that. How do you know?
+	AI_Output(hero, self, "Info_Mod_Nandor_Hi_15_02"); //I didn't know you just told me.
+	AI_Output(self, hero, "Info_Mod_Nandor_Hi_02_03"); //Very funny.
+	AI_Output(hero, self, "Info_Mod_Nandor_Hi_15_04"); //Then you're Nandor, right?
+	AI_Output(self, hero, "Info_Mod_Nandor_Hi_02_05"); //Yeah, how do you know that again?
+	AI_Output(hero, self, "Info_Mod_Nandor_Hi_15_06"); //You just told me, didn't you?
+	AI_Output(self, hero, "Info_Mod_Nandor_Hi_02_07"); //I'm kidding myself. What do you want?
 };
 
 INSTANCE Info_Mod_Nandor_NoIdea (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Nandor_NoIdea (C_INFO)
 	information	= Info_Mod_Nandor_NoIdea_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "DAS weiss ICH noch nicht.";
+	description	= "I don't know that yet.";
 };
 
 FUNC INT Info_Mod_Nandor_NoIdea_Condition()
@@ -48,8 +48,8 @@ FUNC INT Info_Mod_Nandor_NoIdea_Condition()
 
 FUNC VOID Info_Mod_Nandor_NoIdea_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nandor_NoIdea_15_00"); //DAS weiss ICH noch nicht.
-	AI_Output(self, hero, "Info_Mod_Nandor_NoIdea_02_01"); //Dann verschwinde endlich.
+	AI_Output(hero, self, "Info_Mod_Nandor_NoIdea_15_00"); //I don't know that yet.
+	AI_Output(self, hero, "Info_Mod_Nandor_NoIdea_02_01"); //Then get out of here.
 };
 
 INSTANCE Info_Mod_Nandor_Dragomir (C_INFO)
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_Nandor_Dragomir (C_INFO)
 	information	= Info_Mod_Nandor_Dragomir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dragomir möchte wissen, was du bisher herausgefunden hast.";
+	description	= "Dragomir wants to know what you've found so far.";
 };
 
 FUNC INT Info_Mod_Nandor_Dragomir_Condition()
@@ -74,12 +74,12 @@ FUNC INT Info_Mod_Nandor_Dragomir_Condition()
 
 FUNC VOID Info_Mod_Nandor_Dragomir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nandor_Dragomir_15_00"); //Dragomir möchte wissen, was du bisher herausgefunden hast.
-	AI_Output(self, hero, "Info_Mod_Nandor_Dragomir_02_01"); //Und ich soll es gerade DIR sagen?
-	AI_Output(hero, self, "Info_Mod_Nandor_Dragomir_15_02"); //Nun, wo ich schon einmal da bin ...
-	AI_Output(self, hero, "Info_Mod_Nandor_Dragomir_02_03"); //(stöhnt auf) Also gut, du wirst eh nicht locker lassen. Seid einiger Zeit lungern hier ein paar äußerst aggressive Wölfe rum, die mir ein wenig Sorgen bereiten.
-	AI_Output(self, hero, "Info_Mod_Nandor_Dragomir_02_04"); //Wenn du mir hilfst, sie zu erlegen, sage ich dir, was du wissen willst.
-	AI_Output(hero, self, "Info_Mod_Nandor_Dragomir_15_05"); //(stöhnt auf) In Ordnung.
+	AI_Output(hero, self, "Info_Mod_Nandor_Dragomir_15_00"); //Dragomir wants to know what you've found so far.
+	AI_Output(self, hero, "Info_Mod_Nandor_Dragomir_02_01"); //And I'm supposed to tell you right now?
+	AI_Output(hero, self, "Info_Mod_Nandor_Dragomir_15_02"); //Well, since I've been there before....
+	AI_Output(self, hero, "Info_Mod_Nandor_Dragomir_02_03"); //All right, you won't let go anyway. For some time now there have been a few extremely aggressive wolves hanging around, which cause me a little concern.
+	AI_Output(self, hero, "Info_Mod_Nandor_Dragomir_02_04"); //If you help me kill them, I'll tell you what you want to know.
+	AI_Output(hero, self, "Info_Mod_Nandor_Dragomir_15_05"); //(gasps) All right.
 
 	AI_StopProcessInfos	(self);
 
@@ -119,19 +119,19 @@ FUNC INT Info_Mod_Nandor_WoelfeTot_Condition()
 
 FUNC VOID Info_Mod_Nandor_WoelfeTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nandor_WoelfeTot_02_00"); //Hast du den Blick in ihren Augen auch gesehen?
-	AI_Output(hero, self, "Info_Mod_Nandor_WoelfeTot_15_01"); //Nun ja ...
-	AI_Output(self, hero, "Info_Mod_Nandor_WoelfeTot_02_02"); //Er war einfach ... gefühlslos. Starr. Mit diesen Viechern stimmt etwas nicht.
-	AI_Output(self, hero, "Info_Mod_Nandor_WoelfeTot_02_03"); //Ich werde auch weiterhin hier bleiben und den Wald beobachten. Du kannst Dragomir diese Nachricht überbringen und berichte ihm auf jeden Fall von diesen Wölfen.
+	AI_Output(self, hero, "Info_Mod_Nandor_WoelfeTot_02_00"); //Did you see the look in her eyes, too?
+	AI_Output(hero, self, "Info_Mod_Nandor_WoelfeTot_15_01"); //Well....
+	AI_Output(self, hero, "Info_Mod_Nandor_WoelfeTot_02_02"); //He was just.... unfeeling. Rigid. There's something wrong with these things.
+	AI_Output(self, hero, "Info_Mod_Nandor_WoelfeTot_02_03"); //I will continue to stay here and observe the forest. You can deliver this message to Dragomir and tell him about these wolves.
 
 	CreateInvItems	(self, ItWr_NandorToDragomir, 1);
 	B_GiveInvItems	(self, hero, ItWr_NandorToDragomir, 1);
 
-	AI_Output(hero, self, "Info_Mod_Nandor_WoelfeTot_15_04"); //Werd ich machen. Vergiss es nicht.
-	AI_Output(self, hero, "Info_Mod_Nandor_WoelfeTot_02_05"); //Was soll ich nicht vergessen?
-	AI_Output(hero, self, "Info_Mod_Nandor_WoelfeTot_15_06"); //Das wirst du schon wissen.
+	AI_Output(hero, self, "Info_Mod_Nandor_WoelfeTot_15_04"); //I will do it. Don't forget it.
+	AI_Output(self, hero, "Info_Mod_Nandor_WoelfeTot_02_05"); //What am I supposed to remember?
+	AI_Output(hero, self, "Info_Mod_Nandor_WoelfeTot_15_06"); //You already know that.
 
-	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Nandor hat mir eine Nachricht für Dragomir gegeben und mir gesagt, dass ich Dragomir unbedingt von den aggressiven Wölfen erzählen soll.");
+	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Nandor gave me a message for Dragomir and told me to tell Dragomir about the aggressive wolves.");
 
 	AI_StopProcessInfos	(self);
 
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Nandor_Untier (C_INFO)
 	information	= Info_Mod_Nandor_Untier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich wollte mich erkundigen, ob zufällig Wildtiere ...";
+	description	= "I wanted to find out if any wild animals...";
 };
 
 FUNC INT Info_Mod_Nandor_Untier_Condition()
@@ -161,12 +161,12 @@ FUNC INT Info_Mod_Nandor_Untier_Condition()
 
 FUNC VOID Info_Mod_Nandor_Untier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nandor_Untier_15_00"); //Ich wollte mich erkundigen, ob zufällig Wildtiere ...
-	AI_Output(self, hero, "Info_Mod_Nandor_Untier_02_01"); //Auch das noch. Wenn du dich über Wildtiere unterhalten willst, dann geh doch nach Südosten in die Berge  zu dem Untier, das mir mein ganzes Wild auffrisst.
+	AI_Output(hero, self, "Info_Mod_Nandor_Untier_15_00"); //I wanted to find out if any wild animals...
+	AI_Output(self, hero, "Info_Mod_Nandor_Untier_02_01"); //That too. If you want to talk about wildlife, why don't you go southeast to the mountains to the beast that eats all my game?
 
 	B_GivePlayerXP	(150);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Das ist doch mal ein ziemlich konkreter Hinweis, welchen Nandor mir geben hat. Nach Südosten in die Berge, von ihm aus gesehen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "That's a pretty specific clue that Nandor gave me. Southeast into the mountains, seen from him.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -179,7 +179,7 @@ INSTANCE Info_Mod_Nandor_AlterMann (C_INFO)
 	information	= Info_Mod_Nandor_AlterMann_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wegen altem Mann im Wald fragen.";
+	description	= "Ask about old man in the woods.";
 };
 
 FUNC INT Info_Mod_Nandor_AlterMann_Condition()
@@ -197,54 +197,54 @@ FUNC VOID Info_Mod_Nandor_AlterMann_Info()
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN01");
 
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_00"); //Ahh, du meinst den alten Mann des Waldes. Ja, etwas weiß ich über ihn.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_01"); //Er soll Jahrhunderte alt sein und die Tiere des Waldes Rund um Khorata behüten.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_02"); //Zwar sagt man, er sei blind, jedoch gleichzeitig auch magisch begabt.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_03"); //Mehr fällt mir gerade nicht ein. Vielleicht weiß ein anderer mehr.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_00"); //Ahh, you mean the old man of the woods. Yeah, I know something about him.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_01"); //It is said to be centuries old and to protect the animals of the forest around Khorata.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_02"); //It is said that he is blind, but at the same time he has a magical talent.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_03"); //That's all I can think of right now. Maybe someone else knows more.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Von dem ersten Waldläufer erfuhr ich nicht viel Neues. Der alte Mann des Waldes, behütet die Tiere, er ist uralt, blind und magisch begabt. Vielleicht weiß ein anderer Waldläufer mehr.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "From the first ranger I didn't get much new information. The old man of the forest, protecting the animals, he is ancient, blind and magical. Maybe another ranger knows more.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 1)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN02");
 
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_04"); //Der alte Mann des Waldes? Ja, ich hörte er solle einst ein Diener Adanos gewesen sein.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_05"); //Wobei unklar ist, ob er ein Waldläufer war wie wir, ein Magier des Wassers, oder ein Verwandlungsmagier.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_06"); //Seine magischen Fähigkeiten, wie auch seine starke Bindung zur Tier- und Pflanzenwelt zeugen davon, dass er von allem etwas hat.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_04"); //The old man of the forest? Yes, I heard he was once a servant of Adano.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_05"); //It is unclear whether he was a ranger like us, a magician of water, or a transforming mage.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_06"); //His magical abilities, as well as his strong attachment to the animal and plant world are proof that he has something of everything.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Beim 2ten Waldläufer erfuhr ich auch nicht viel wissenswertes. Der alte Mann des Waldes soll Adanos und der Schöpfung verbunden sein, allem voran der Tier und Pflanzenwelt.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "At the 2nd ranger I also didn't learn much worth knowing. The old man of the forest is said to be connected with Adanos and creation, especially the animals and plants.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 2)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN03");
 
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_07"); //Tja, viel kann ich dir nicht über ihn verraten.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_08"); //Das Problem besteht auch darin, dass er mit keinem Menschen spricht, nicht mal mit uns, auch, wenn wir eigentlich ähnliche Ziele verfolgen.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_09"); //Allein mit den Tieren des Waldes unterhält er sich.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_10"); //Tja, wenn ich ein Keiler wäre, könnte ich dir bestimmt mehr über ihn verraten.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_07"); //Well, I can't tell you much about him.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_08"); //The problem is also that he does not talk to anyone, not even us, even if we are pursuing similar goals.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_09"); //Alone with the animals of the forest he entertains himself.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_10"); //Well, if I were a boar, I'm sure I could tell you more about him.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, das könnte ein wichtiger Hinweis gewesen sein. Der alte Mann des Waldes meidet Menschen gänzlich, spricht nur mit Tieren.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, this could have been an important clue. The old man of the forest completely avoids humans, only speaks to animals.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 3)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN04");
 
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_11"); //Der alte Mann des Waldes? Nun, er soll in enger Beziehung zur Tier- und Pflanzenwelt stehen.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_12"); //Man sagt, er leite Rudeltiere wie Keiler, oder Wölfe dazu an, den Wald gegen Eindringlinge zu beschützen.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_13"); //Selbst, so sagt man, fände man ihn häufig in Gestalt eines grünen Wolfes vor.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_11"); //The old man of the forest? Well, he's supposed to be closely related to the fauna and flora.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_12"); //It is said that he leads pack animals such as boar or wolves to protect the forest against intruders.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_13"); //Even it is said that it is often found in the shape of a green wolf.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Er soll vor allem auch größere Rudeltiere wie Keiler und Wölfe dazu anleiten den Wald gegen Eindringlinge zu beschützen.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Above all, he should also instruct larger pack animals such as boar and wolves to protect the forest against intruders.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 4)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN05");
 
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_14"); //Du interessierst dich für Geschichten über den alten Mann des Waldes?
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_15"); //Nun, viel weiß ich nicht über diesen mystischen Kauz.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_16"); //Er soll sich meistens im dunklen Wald aufhalten, aber auch immer in der Nähe von Gewässern, wie Seen.
-		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_17"); //Selten hat ihn jemand zu Gesicht bekommen ...
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_14"); //You're interested in stories about the old man of the forest?
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_15"); //Well, I don't know much about this mystical oddball.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_16"); //It is said to reside mostly in the dark forest, but also near water bodies such as lakes.
+		AI_Output(self, hero, "Info_Mod_Nandor_AlterMann_02_17"); //Rarely has someone seen him....
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Man findet ihn höchst wahrscheinlich im dichten Wald Khorata’s in der Nähe eines Sees.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "It is most likely to be found in Khorata's dense forest near a lake.");
 	};
 
 	Mod_BDT_AlterWaldMann += 1;
@@ -270,21 +270,21 @@ FUNC INT Info_Mod_Nandor_VinoBrennerei_Condition()
 
 FUNC VOID Info_Mod_Nandor_VinoBrennerei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_00"); //He, was machst du hier?
-	AI_Output(hero, self, "Info_Mod_Nandor_VinoBrennerei_15_01"); //Also ...
-	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_02"); //Ich will dich warnen lieber nicht hier weiter hinein zu gehen. Ich habe keine Lust auch noch dich da raus zu holen.
-	AI_Output(hero, self, "Info_Mod_Nandor_VinoBrennerei_15_03"); //Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_04"); //Ich meine die garstigen Spinnenviecher, die unter der Türe in die Brennerei gelangen.
-	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_05"); //Vino kann von Glück reden, dass ich ihn habe schreien hören, sonst wäre er als Mittagshappen für die widerlichen Biester geendet.
-	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_06"); //Ich habe ihn bewusstlos hier liegen gefunden und ihn in mein Lager gebracht.
-	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_07"); //Scheint einige Bisse abbekommen zu haben, aber er wird sich wieder erholen.
-	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_08"); //Also, denk lieber gut darüber nach, ob du dich da hineinbegeben möchtest.
+	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_00"); //Hey, what are you doing here?
+	AI_Output(hero, self, "Info_Mod_Nandor_VinoBrennerei_15_01"); //So...
+	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_02"); //I'd rather warn you not to go any further in here. I don't feel like getting you out of there, too.
+	AI_Output(hero, self, "Info_Mod_Nandor_VinoBrennerei_15_03"); //What do you think?
+	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_04"); //I refer to the nasty spider beasts that enter the distillery under the doorway.
+	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_05"); //Vino can speak of luck that I heard him scream, otherwise he would have ended up as a midday snack for the disgusting beasts.
+	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_06"); //I found him lying here unconscious and brought him to my camp.
+	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_07"); //Seems to have gotten some bites, but he'll recover.
+	AI_Output(self, hero, "Info_Mod_Nandor_VinoBrennerei_02_08"); //Well, you better think hard about going in there.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Vino_Brennerei))
 	{
 		Log_CreateTopic	(TOPIC_MOD_VINO_WO, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_VINO_WO, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_VINO_WO, "Vino ist in Nandors Lager. Er wurde von kleinen Spinnen angegriffen, wird sich aber bald wieder erholen.");
+		B_LogEntry	(TOPIC_MOD_VINO_WO, "Vino is in Nandor's camp. He was attacked by small spiders, but will soon recover.");
 	};
 };
 

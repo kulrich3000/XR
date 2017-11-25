@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Keiler(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Keiler";
+	name							=	"Boar";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Keiler;
 	level							=	10;
@@ -110,7 +110,7 @@ INSTANCE Keiler	(Mst_Default_Keiler)
 INSTANCE Riesenkeiler	(Mst_Default_Keiler)
 {
 	level					=	30;
-	name					=	"Riesenkeiler";
+	name					=	"Giant Boiler";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	Hlp_Random(201) + 100;	// 100 - 300
 	attribute	[ATR_DEXTERITY]		=	Hlp_Random(31) + 15;	// 15 - 45

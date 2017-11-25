@@ -1,7 +1,7 @@
 instance Mod_7577_OUT_Metzgerlehrling_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Metzgerlehrling"; 
+	name 		= "butcher's apprentice"; 
 	guild 		= GIL_OUT;
 	id 			= 7577;
 	voice 		= 6;

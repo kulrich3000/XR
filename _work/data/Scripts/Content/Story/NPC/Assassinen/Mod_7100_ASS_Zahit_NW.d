@@ -1,7 +1,7 @@
 INSTANCE Mod_7100_ASS_Zahit_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Zahit"; 
+	name 		= "tooth"; 
 	guild 		= GIL_OUT;
 	id 			= 7100;
 	voice 		= 13;

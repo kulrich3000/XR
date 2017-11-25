@@ -1,7 +1,7 @@
 instance Mod_7364_VLK_LehmarWache_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lehmars Wache"; 
+	name 		= "Lehmar's Guard"; 
 	guild 		= GIL_PAL;
 	id 			= 7364;
 	voice 		= 8;

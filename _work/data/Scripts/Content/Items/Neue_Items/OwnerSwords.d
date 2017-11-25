@@ -1,6 +1,6 @@
 INSTANCE Scars_Schwert (C_Item)
 {
-	name 				=	"Scars Schwert";
+	name 				=	"Scar's Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -29,7 +29,7 @@ INSTANCE Scars_Schwert (C_Item)
 
 INSTANCE Lees_Axt (C_Item)
 {
-	name 				=	"Lees Axt";
+	name 				=	"Lee's Axe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -55,7 +55,7 @@ INSTANCE Lees_Axt (C_Item)
 
 INSTANCE Thorus_Schwert (C_Item)
 {
-	name 				=	"Thorus Schwert";
+	name 				=	"Thorus' Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -81,7 +81,7 @@ INSTANCE Thorus_Schwert (C_Item)
 
 INSTANCE Artos_Schwert (C_Item)
 {
-	name 				=	"Artos Schwert";
+	name 				=	"Arto's Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -110,7 +110,7 @@ INSTANCE Artos_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Rabenrecht (C_Item)
 {
-	name 				=	"Rabenrecht";
+	name 				=	"Raven's Right";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -139,7 +139,7 @@ INSTANCE Rabenrecht (C_Item)
 //-----------------------------------------------------------
 INSTANCE Prankenhieb (C_Item)
 {
-	name 				=	"Prankenhieb";
+	name 				=	"Paw's Punch";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -173,7 +173,7 @@ INSTANCE Prankenhieb (C_Item)
 //-----------------------------------------------------------
 INSTANCE Whistlers_Schwert (C_Item)
 {
-	name 				=	"Whistlers Schwert";
+	name 				=	"Whistler's Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -206,7 +206,7 @@ INSTANCE Whistlers_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Stab_des_Lichts (C_Item)
 {
-	name 				=	"Stab des Lichts";
+	name 				=	"Staff of Light";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -235,7 +235,7 @@ INSTANCE Stab_des_Lichts (C_Item)
 //-----------------------------------------------------------
 INSTANCE Kaloms_Schwert (C_Item)
 {
-	name 				=	"Kaloms Schwert";
+	name 				=	"Kalom's Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -264,7 +264,7 @@ INSTANCE Kaloms_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Streitschlichter (C_Item)
 {
-	name 				=	"Lesters Streitschlichter ";
+	name 				=	"Lester's Mediator ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -293,7 +293,7 @@ INSTANCE Streitschlichter (C_Item)
 //-----------------------------------------------------------
 INSTANCE Roter_Wind (C_Item)
 {
-	name 				=	"Roter Wind";
+	name 				=	"Red Wind";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -322,7 +322,7 @@ INSTANCE Roter_Wind (C_Item)
 //-----------------------------------------------------------
 INSTANCE Namibs_Keule (C_Item)
 {
-	name 				=	"Namibs Keule";
+	name 				=	"Namib's Club";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -351,7 +351,7 @@ INSTANCE Namibs_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Oruns_Keule (C_Item)
 {
-	name 				=	"Oruns Keule";
+	name 				=	"Orun's Club";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -380,7 +380,7 @@ INSTANCE Oruns_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Fortunos_Keule (C_Item)
 {
-	name 				=	"Fortunos Keule";
+	name 				=	"Fortuno's Club";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -406,7 +406,7 @@ INSTANCE Fortunos_Keule (C_Item)
 
 INSTANCE Oriks_Axt (C_Item)
 {
-	name 				=	"Oriks Axt";
+	name 				=	"Orik's Axe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -435,7 +435,7 @@ INSTANCE Oriks_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Torlofs_Axt (C_Item)
 {
-	name 				=	"Torlofs Axt";
+	name 				=	"Torlof's Axe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -464,7 +464,7 @@ INSTANCE Torlofs_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Cords_Spalter (C_Item)
 {
-	name 				=	"Cords Spalter";
+	name 				=	"Cord's Clefter";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -493,7 +493,7 @@ INSTANCE Cords_Spalter (C_Item)
 //-----------------------------------------------------------
 INSTANCE Gorns_Rache (C_Item)
 {
-	name 				=	"Gorns Rache";
+	name 				=	"Gorn's Revenge";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -522,7 +522,7 @@ INSTANCE Gorns_Rache (C_Item)
 //-----------------------------------------------------------
 INSTANCE Lares_Axt (C_Item)
 {
-	name 				=	"Lares Axt";
+	name 				=	"Lares' Axe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -554,7 +554,7 @@ INSTANCE Lares_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Silas_Axt (C_Item)
 {
-	name 				=	"Silas Axt";
+	name 				=	"Silas' Axe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -583,7 +583,7 @@ INSTANCE Silas_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Heerscherstab (C_Item)
 {
-	name 				=	"Herrscherstab";
+	name 				=	"Scepter";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;

@@ -1,7 +1,7 @@
 instance PC_Itemholder (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Itembewahrer";
+	name 		= "item store";
 	guild		= GIL_NONE;
 	id			= 7188;
 	voice		= 15;

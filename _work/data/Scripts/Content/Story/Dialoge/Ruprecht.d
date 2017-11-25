@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ruprecht_Hi (C_INFO)
 	information	= Info_Mod_Ruprecht_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Ruprecht_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Ruprecht_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Ruprecht_Hi_13_00"); //Mein Name ist Ruprecht. Ich ziehe von meinem Ersparten durch die Länder und lerne fremde Kulturen kennen. Die Wirtshauskultur, vor allem.
+	AI_Output(self, hero, "Info_Mod_Ruprecht_Hi_13_00"); //My name is Ruprecht. I draw from my savings through the countries and get to know foreign cultures. The pub culture, especially.
 };
 
 INSTANCE Info_Mod_Ruprecht_FrueherGemacht (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Ruprecht_FrueherGemacht (C_INFO)
 	information	= Info_Mod_Ruprecht_FrueherGemacht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du früher gemacht?";
+	description	= "What did you do before?";
 };
 
 FUNC INT Info_Mod_Ruprecht_FrueherGemacht_Condition()
@@ -42,8 +42,8 @@ FUNC INT Info_Mod_Ruprecht_FrueherGemacht_Condition()
 
 FUNC VOID Info_Mod_Ruprecht_FrueherGemacht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruprecht_FrueherGemacht_15_00"); //Was hast du früher gemacht?
-	AI_Output(self, hero, "Info_Mod_Ruprecht_FrueherGemacht_13_01"); //(wortkarg) Ich war lange im Krieg.
+	AI_Output(hero, self, "Info_Mod_Ruprecht_FrueherGemacht_15_00"); //What did you do before?
+	AI_Output(self, hero, "Info_Mod_Ruprecht_FrueherGemacht_13_01"); //I was at war for a long time.
 };
 
 INSTANCE Info_Mod_Ruprecht_Truhe (C_INFO)
@@ -66,26 +66,26 @@ FUNC INT Info_Mod_Ruprecht_Truhe_Condition()
 
 FUNC VOID Info_Mod_Ruprecht_Truhe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_00"); //Warte mal einen Augenblick. Was hast du gerade da oben gesucht?
-	AI_Output(hero, self, "Info_Mod_Ruprecht_Truhe_15_01"); //Nichts Besonderes.
-	AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_02"); //Dann zeig mal her.
+	AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_00"); //Hold on a second. What were you just up there?
+	AI_Output(hero, self, "Info_Mod_Ruprecht_Truhe_15_01"); //Nothing special.
+	AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_02"); //Well, let me see it.
 
 	if (Npc_HasItems(hero, ItRi_Ruprecht) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_03"); //So, du wolltest also meinen Ring stehlen.
+		AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_03"); //So, you were gonna steal my ring.
 
 		B_GiveInvItems	(hero, self, ItRi_Ruprecht, 1);
 
 		if (Kapitel < 3)
 		{
-			AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_04"); //Mal sehen, was Anselm dazu sagen wird, wenn ich es ihm erzähle.
+			AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_04"); //Let's see what Anselm will say when I tell him.
 		};
 
 		Mod_LeonhardRuprecht = 3;
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_05"); //Tut mir Leid, dass ich so unfreundlich war, aber du wärst nicht der Erste, der hinter meinen Besitztümern her ist.
+		AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_05"); //I'm sorry I was so unfriendly, but you wouldn't be the first one to come after my possessions.
 	};
 };
 
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Ruprecht_Freudenspender (C_INFO)
 	information	= Info_Mod_Ruprecht_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich hab' hier Freudenspender ...";
+	description 	= "I've got delights here....";
 };                       
 
 FUNC INT Info_Mod_Ruprecht_Freudenspender_Condition()
@@ -112,8 +112,8 @@ FUNC INT Info_Mod_Ruprecht_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Ruprecht_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruprecht_Freudenspender_15_00"); //Ich hab' hier Freudenspender ...
-	AI_Output(self, hero, "Info_Mod_Ruprecht_Freudenspender_13_01"); //Danke, aber ich möchte nichts.
+	AI_Output(hero, self, "Info_Mod_Ruprecht_Freudenspender_15_00"); //I've got delights here....
+	AI_Output(self, hero, "Info_Mod_Ruprecht_Freudenspender_13_01"); //Thanks, but I don't want anything.
 };
 
 INSTANCE Info_Mod_Ruprecht_Pickpocket (C_INFO)

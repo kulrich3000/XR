@@ -18,11 +18,11 @@ FUNC INT Info_Mod_Richterhauswache_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Richterhauswache_Blutkelch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch_07_00"); //Halt! Eintritt nur für geladene Gäste.
-	AI_Output(hero, self, "Info_Mod_Richterhauswache_Blutkelch_15_01"); //Wir wollen vor dem Richter eine Eingabe machen.
-	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch_07_02"); //Dann wendet euch an den Statthalter oder den Kommandanten der Stadtwache.
-	AI_Output(hero, self, "Info_Mod_Richterhauswache_Blutkelch_15_03"); //Die haben uns hierher geschickt. Es geht um eine Sache der inneren Sicherheit.
-	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch_07_04"); //Da muss ich erst den Richter fragen. Ihr wartet hier!
+	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch_07_00"); //Stop! Entrance for invited guests only.
+	AI_Output(hero, self, "Info_Mod_Richterhauswache_Blutkelch_15_01"); //We want to make an entry in front of the judge.
+	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch_07_02"); //Then contact the governor or commander of the City Watch.
+	AI_Output(hero, self, "Info_Mod_Richterhauswache_Blutkelch_15_03"); //They sent us here. It is a matter of internal security.
+	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch_07_04"); //I'll have to ask the judge first. You guys wait here!
 
 	AI_StopProcessInfos	(self);
 
@@ -56,13 +56,13 @@ FUNC INT Info_Mod_Richterhauswache_Blutkelch2_Condition()
 
 FUNC VOID Info_Mod_Richterhauswache_Blutkelch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch2_07_00"); //Nanu, wo kommst du denn her? Hab dich gar nicht reingehen sehen.
-	AI_Output(hero, self, "Info_Mod_Richterhauswache_Blutkelch2_15_01"); //Ich sage nur: Innere Sicherheit. Der Fall hat sich erledigt.
-	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch2_07_02"); //Ich verstehe nicht.
+	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch2_07_00"); //Well, where are you from? I didn't see you go in.
+	AI_Output(hero, self, "Info_Mod_Richterhauswache_Blutkelch2_15_01"); //I'm just saying, domestic security. The case is over.
+	AI_Output(self, hero, "Info_Mod_Richterhauswache_Blutkelch2_07_02"); //I don't understand.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Ich habe den Blutkelch. Der Rat sollte zufrieden sein.");
+	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "I have the cup. The Council should be satisfied.");
 
 	B_StartOtherRoutine	(self,	"START");
 	B_StartOtherRoutine	(Mod_7113_ASS_Yussuf_NW,	"FOLLOW");

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Mordrag_Hi (C_INFO)
 	information	= Info_Mod_Mordrag_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme von Lee.";
+	description	= "I'm from Lee.";
 };
 
 FUNC INT Info_Mod_Mordrag_Hi_Condition()
@@ -19,14 +19,14 @@ FUNC INT Info_Mod_Mordrag_Hi_Condition()
 
 FUNC VOID Info_Mod_Mordrag_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mordrag_Hi_15_00"); //Ich komme von Lee. Du sollst mir die Schattenrüstung geben.
-	AI_Output(self, hero, "Info_Mod_Mordrag_Hi_11_01"); //Klar. Einen Augenblick, ich muss sie nur gerade aus meinen Sachen herauskramen ... ja, hier ist sie.
+	AI_Output(hero, self, "Info_Mod_Mordrag_Hi_15_00"); //I'm from Lee. I want you to give me the shadow armor.
+	AI_Output(self, hero, "Info_Mod_Mordrag_Hi_11_01"); //Sure. One moment, I just have to dig them out of my clothes.... Yeah, here she is.
 
-	B_ShowGivenThings	("Schattenrüstung erhalten");
+	B_ShowGivenThings	("obtain shadow armor");
 
 	CreateInvItems	(hero, ItAr_Stt_Mordrag, 1);
 
-	AI_Output(self, hero, "Info_Mod_Mordrag_Hi_11_02"); //Ein gutes Stück. Habe sie damals beim Glücksspiel einem Schatten abgenommen und dann einigen Ärger mit den Gardisten bekommen.
+	AI_Output(self, hero, "Info_Mod_Mordrag_Hi_11_02"); //A good piece. Took it at that time with gambling a shadow and then got some trouble with the guardsmen.
 };
 
 INSTANCE Info_Mod_Mordrag_Pickpocket (C_INFO)

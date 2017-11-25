@@ -18,9 +18,9 @@ FUNC INT Info_Mod_GorNaRan_Urs_Condition()
 
 FUNC VOID Info_Mod_GorNaRan_Urs_Info()
 {
-	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs_13_00"); //Ahh, eine Klinge aus gesegnetem Stahl.
-	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs_13_01"); //Mal schauen, ob sich die naturmagischen Untriebe besser in den Griff bekommen lassen.
-	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs_13_02"); //Ich werde sie gleich an dieser besonders hartnäckigen Staude da vorne erproben.
+	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs_13_00"); //Ahh, a blade of blessed steel.
+	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs_13_01"); //Let's see if the natural magical impulses can be controlled better.
+	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs_13_02"); //I'm going to try it out on that extra stubborn perennial right there.
 
 	AI_StopProcessInfos	(self);
 
@@ -50,8 +50,8 @@ FUNC INT Info_Mod_GorNaRan_Urs2_Condition()
 
 FUNC VOID Info_Mod_GorNaRan_Urs2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs2_13_00"); //Großartig, die Klinge geht durch das Kraut, wie durch Butter.
-	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs2_13_01"); //Du kannst zu Darrion zurückgehen.
+	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs2_13_00"); //Great, the blade goes through the herb like butter.
+	AI_Output(self, hero, "Info_Mod_GorNaRan_Urs2_13_01"); //You can go back to Darrion.
 
 	AI_StopProcessInfos	(self);
 
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_GorNaRan_Hueterklinge (C_INFO)
 	information	= Info_Mod_GorNaRan_Hueterklinge_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie bist du zu den Rohstoffen für deine Hüterklinge gekommen?";
+	description	= "How did you get the raw materials for your guardian blade?";
 };
 
 FUNC INT Info_Mod_GorNaRan_Hueterklinge_Condition()
@@ -80,13 +80,13 @@ FUNC INT Info_Mod_GorNaRan_Hueterklinge_Condition()
 
 FUNC VOID Info_Mod_GorNaRan_Hueterklinge_Info()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaRan_Hueterklinge_15_00"); //Wie bist du zu den Rohstoffen für deine Hüterklinge gekommen?
-	AI_Output(self, hero, "Info_Mod_GorNaRan_Hueterklinge_13_01"); //Darüber sollte ich eigentlich nicht sprechen .. aber ich war auch mal in deiner Situation ...
-	AI_Output(self, hero, "Info_Mod_GorNaRan_Hueterklinge_13_02"); //Diese Spinner wollen von dir auch all die Zutaten, die man niemals im Leben auftreiben kann?
-	AI_Output(self, hero, "Info_Mod_GorNaRan_Hueterklinge_13_03"); //Blut, das durch 4 Herzen geflossen ist und eine Lurkerklaue, die Großvater, Vater und Sohn das Leben nahm sollte ich besorgen!
-	AI_Output(self, hero, "Info_Mod_GorNaRan_Hueterklinge_13_04"); //Ich hab dem Schmied einfach stinknormales Blut und eine gewöhnliche Lurkerklaue gebracht!
+	AI_Output(hero, self, "Info_Mod_GorNaRan_Hueterklinge_15_00"); //How did you get the raw materials for your guardian blade?
+	AI_Output(self, hero, "Info_Mod_GorNaRan_Hueterklinge_13_01"); //I wasn't supposed to talk about that... but I was in your situation once....
+	AI_Output(self, hero, "Info_Mod_GorNaRan_Hueterklinge_13_02"); //Those nutcases want all the ingredients you can't find in life?
+	AI_Output(self, hero, "Info_Mod_GorNaRan_Hueterklinge_13_03"); //Blood that flowed through 4 hearts and a Lurkerklaue that took the life of grandfather, father and son should I get!
+	AI_Output(self, hero, "Info_Mod_GorNaRan_Hueterklinge_13_04"); //I just brought the blacksmith some ordinary blood and a common Lurker claw!
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Gor Na Ran sagt, er hat für seine Hüterklinge gewöhnliche Zutaten bei der Schmiede abgeliefert. Einen Versuch wäre es wert.");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Gor Na Ran says he has delivered ordinary ingredients for his guardian blade to the blacksmith. It would be worth a try.");
 };
 
 INSTANCE Info_Mod_GorNaRan_Pickpocket (C_INFO)

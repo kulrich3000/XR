@@ -15,19 +15,19 @@ FUNC INT Info_Mod_Suchender_Hi_Condition()
 
 FUNC VOID Info_Mod_Suchender_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_00"); //Ah, so schnell hätte ich dich hier nicht erwartet ...
-	AI_Output(hero, self, "Info_Mod_Suchender_Hi_15_01"); //Erwartet? Wer bist du?
-	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_02"); //Du bist in einem meiner Heime und weißt nicht einmal, wen du eigentlich besuchst? (lacht)
-	AI_Output(hero, self, "Info_Mod_Suchender_Hi_15_03"); //Was hast du mit den Überfallen auf die Jäger und Waldläufer zu tun?
-	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_04"); //(spöttisch) Ist das denn nicht klar, Ungestümer?
-	AI_Output(hero, self, "Info_Mod_Suchender_Hi_15_05"); //Du Mörder, ich werde dich zu deinen Opfern schicken!
+	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_00"); //Ah, I didn't expect to see you here so soon...
+	AI_Output(hero, self, "Info_Mod_Suchender_Hi_15_01"); //Expected? Who are you?
+	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_02"); //You're in one of my homes and don't even know who you're actually visiting? (laughs)
+	AI_Output(hero, self, "Info_Mod_Suchender_Hi_15_03"); //What do you have to do with the raids on hunters and rangers?
+	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_04"); //Isn't that clear, monsters?
+	AI_Output(hero, self, "Info_Mod_Suchender_Hi_15_05"); //You murderer, I will send you to your victims!
 
 	AI_ReadyMeleeWeapon	(hero);
 
-	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_06"); //(lacht) Bist du dir da sicher? Vielleicht bin ich gar nicht der Mörder, den du suchst.
-	AI_Output(hero, self, "Info_Mod_Suchender_Hi_15_07"); //Wenn du noch was zu sagen hast, sag schnell, oder dir bleibt keine Zeit mehr.
-	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_08"); //Ich habe alle Zeit, die ich brauche. Aber vielleicht hast du auch einfach noch nicht gut genug nachgeforscht.
-	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_09"); //Oder aber vielleicht doch und du entdeckst es nur nicht? Ich werde dich bald erwarten.
+	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_06"); //(laughs) Are you sure about that? Maybe I'm not the murderer you're looking for.
+	AI_Output(hero, self, "Info_Mod_Suchender_Hi_15_07"); //If you have anything else to say, say it fast, or you'll run out of time.
+	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_08"); //I have all the time I need. But maybe you just haven't done enough research.
+	AI_Output(self, hero, "Info_Mod_Suchender_Hi_10_09"); //Or maybe you do and you just don't discover it? I'll be waiting for you soon.
 
 	AI_StopProcessInfos	(self);
 
@@ -55,14 +55,14 @@ FUNC INT Info_Mod_Suchender_Turm_Condition()
 
 FUNC VOID Info_Mod_Suchender_Turm_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Suchender_Turm_10_00"); //Ha, du schon wieder! Hast hierher gefunden. Erstaunlich, aber umsonst.
-	AI_Output(self, hero, "Info_Mod_Suchender_Turm_10_01"); //Mein Meister lebt schon lange nicht mehr hier.
-	AI_Output(hero, self, "Info_Mod_Suchender_Turm_15_02"); //Aber dich erwische ich diesmal!
-	AI_Output(self, hero, "Info_Mod_Suchender_Turm_10_03"); //Halt! Wenn du mich tötest, was dir schwerlich gelingen dürfte, wirst du nie erfahren, wo der ist, den du suchst. Deshalb ...
+	AI_Output(self, hero, "Info_Mod_Suchender_Turm_10_00"); //Ha, you again! Found you here. Amazing, but free.
+	AI_Output(self, hero, "Info_Mod_Suchender_Turm_10_01"); //My master hasn't lived here in a long time.
+	AI_Output(hero, self, "Info_Mod_Suchender_Turm_15_02"); //But I'm gonna get you this time!
+	AI_Output(self, hero, "Info_Mod_Suchender_Turm_10_03"); //Stop! If you kill me, which is difficult for you to do, you will never know where he is who you are looking for. Therefore...
 
 	AI_PlayAni	(hero, "T_STAND_2_VICTIM_SLE");
 
-	B_LogEntry	(TOPIC_MOD_JG_TURM, "Schon wieder entwischt, dieser Suchende. Na wenigstens hab ich seinen Schlüssel. Der wird mir sicherlich noch nützlich sein. Vielleicht weiß Wulfgar etwas.");
+	B_LogEntry	(TOPIC_MOD_JG_TURM, "Once again, this seeker has escaped. Well, at least I have his key. I'm sure it'll come in handy. Maybe Wulfgar knows something.");
 
 	AI_StopProcessInfos	(self);
 

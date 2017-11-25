@@ -15,26 +15,26 @@ FUNC INT Info_Mod_Wolf_Hi_Condition()
 
 FUNC VOID Info_Mod_Wolf_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_00"); //Hey, du lebst ja noch. Hätte nicht gedacht, dass wir uns noch mal sehen.
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_01"); //Die Minecrawlerrüstung scheint ja ganz schön stabil gewesen zu sein.
-	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_02"); //Ja, da hast du ganze Arbeit geleistet.
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_03"); //Stimmt ... wirklich zwei Prachtstücke, die ich da zusammengebastelt hatte.
-	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_04"); //Zwei? Wo ist die andere?
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_05"); //Ich hab sie meinem alten Kumpel Gestath gegeben, mit dem ich am Rande der Barriere Handel trieb.
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_06"); //Er hat mir die Dinge besorgt, die es vor allem außerhalb unseres Gefängnisses gab, und ich habe ihm dafür einige spezielle Gegenstände gegeben, welche die Kolonie hervorgebracht hatte.
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_07"); //Er wollte dann in irgendeine unwirtliche Gegend, die von wilden Bestien bewohnt wird ... ein Paradies für Jäger, wie er jedenfalls meinte.
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_08"); //Habe ihn nach dem Fall der Barriere auf jeden Fall nicht wieder zu Gesicht bekommen.
-	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_09"); //Kannst du mir noch mal so eine Rüstung basteln?
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_10"); //Könnte ich schon. Aber dazu bräuchte ich eben die nötigen Rohstoffe. Weißt du denn noch, wie man den Biestern die Platten abzieht?
-	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_11"); //Also ... ich habe so einiges Vergessen ...
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_12"); //Nun gut, ich könnte es dir noch mal zeigen. Aber ohne Crawlerkrieger brächte uns auch das nichts.
-	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_13"); //Wo werde ich welche finden?
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_14"); //Ich weiß nicht ... in der Nähe würde mir eigentlich nichts in den Sinn kommen ... höchstens im Süden.
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_15"); //Gorn hatte nämlich irgendetwas von einer verfluchten Festung in den Bergen erzählt, die er einnehmen wollte. Auf jeden Fall noch nicht erschlossen.
-	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_16"); //Womöglich gibt es da Höhlen mit den Viechern ... keine Ahnung.
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_00"); //Hey, you're still alive. Didn't think I'd see you again.
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_01"); //The Minecrawler gear seems to have been quite stable.
+	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_02"); //Yeah, you did a great job.
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_03"); //Right... really two gems I made together.
+	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_04"); //Two? Where's the other one?
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_05"); //I gave it to my old buddy Gestath, who I traded with on the edge of the barrier.
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_06"); //He got me the things that were mostly outside of our prison, and I gave him some special items that the colony had produced.
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_07"); //He then wanted to go to some inhospitable area inhabited by wild beasts... a hunter's paradise, as he said.
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_08"); //I definitely didn't see him again after the barrier came down.
+	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_09"); //Can you make me another one of those armor?
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_10"); //I could. But I need the necessary raw materials. Don't you remember how to strip the beasts of their plates?
+	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_11"); //So... I have forgotten so many things....
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_12"); //All right, I could show you again. But without crawler warriors, that wouldn't do us any good.
+	AI_Output(hero, self, "Info_Mod_Wolf_Hi_15_13"); //Where will I find them?
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_14"); //I don't know.... there's nothing close by that would actually cross my mind... south at the most.
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_15"); //Gorn had told something about a cursed fortress in the mountains he wanted to take. In any case, not yet tapped.
+	AI_Output(self, hero, "Info_Mod_Wolf_Hi_31_16"); //Maybe there are caves with the creatures... no idea.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SÖLDNER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_SÖLDNER, "Wolf kann mir wieder zeigen, wie ich an Crawlerplatten komme.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_SÖLDNER, "Wolf can show me how to get crawler records again.");
 };
 
 INSTANCE Info_Mod_Wolf_MinecrawlerRuestung (C_INFO)
@@ -45,7 +45,7 @@ INSTANCE Info_Mod_Wolf_MinecrawlerRuestung (C_INFO)
 	information	= Info_Mod_Wolf_MinecrawlerRuestung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe einige Crawlerplatten.";
+	description	= "I have some crawler records.";
 };
 
 FUNC INT Info_Mod_Wolf_MinecrawlerRuestung_Condition()
@@ -59,22 +59,22 @@ FUNC INT Info_Mod_Wolf_MinecrawlerRuestung_Condition()
 
 FUNC VOID Info_Mod_Wolf_MinecrawlerRuestung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung_15_00"); //Ich habe einige Crawlerplatten.
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_01"); //Tatsächlich?
+	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung_15_00"); //I have some crawler records.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_01"); //Is that so?
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_02"); //(zu sich selbst) Es gibt hier also doch Crawlerkrieger ... das ist gut.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_02"); //(to himself) So there are crawler warriors here after all.... that's good.
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_03"); //(zum Helden) Wenn du mir mindestens 15 Stück davon besorgst, kann ich dir eine neue Rüstung basteln.
-	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung_15_04"); //15 Stück diesmal?!
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_05"); //Hey, du hast doch selbst zugegeben, dass dir deine Minecrawlerrüstung damals im Minental das Leben gerettet hat.
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_06"); //Daher halte ich es nur für angemessen, wenn ich dieses Mal einen etwas größeren Profit davon habe.
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_07"); //Und es ist auch nicht meine Schuld, dass du deine alte Rüstung verloren hast.
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_08"); //Außerdem sollten die paar Crawler mehr oder weniger auch keinen Unterschied für dich machen, nachdem du es mit Orks, Untoten und Dämonen aufgenommen hast.
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_09"); //Also, wie gesagt, 15 Platten und jeder ist fein raus.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_03"); //If you get me at least 15 of them, I can make you a new armor.
+	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung_15_04"); //15 pieces this time?!
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_05"); //Hey, you admitted that your minecrawler gear saved your life back in the Minental.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_06"); //Therefore, I think it is only appropriate to make a little more profit this time.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_07"); //And it's not my fault you lost your old armor.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_08"); //Besides, the few crawlers shouldn't make any difference to you after you've taken on orcs, undead and demons.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung_31_09"); //So, like I said, 15 records and everybody's fine.
 };
 
 INSTANCE Info_Mod_Wolf_MinecrawlerRuestung2 (C_INFO)
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Wolf_MinecrawlerRuestung2 (C_INFO)
 	information	= Info_Mod_Wolf_MinecrawlerRuestung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier 15 Minecrawlerplatten.";
+	description	= "I've got 15 minecrawler plates here.";
 };
 
 FUNC INT Info_Mod_Wolf_MinecrawlerRuestung2_Condition()
@@ -99,13 +99,13 @@ FUNC INT Info_Mod_Wolf_MinecrawlerRuestung2_Condition()
 
 FUNC VOID Info_Mod_Wolf_MinecrawlerRuestung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung2_15_00"); //Ich habe hier 15 Minecrawlerplatten.
+	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung2_15_00"); //I've got 15 minecrawler plates here.
 
 	B_GiveInvItems	(hero, self, ItAt_CrawlerPlate, 15);
 
 	Npc_RemoveInvItems	(self, ItAt_CrawlerPlate, 15);
 
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung2_31_01"); //Spitze! Ich mach mich gleich an die Arbeit. Komm in paar Tagen wieder vorbei.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung2_31_01"); //Great! I'll get right to work. Come back in a few days.
 
 	Mod_Wolf_MinecrawlerRuestung_Day = Wld_GetDay();
 
@@ -120,7 +120,7 @@ INSTANCE Info_Mod_Wolf_MinecrawlerRuestung3 (C_INFO)
 	information	= Info_Mod_Wolf_MinecrawlerRuestung3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie ich sehe ist die Crawlerrüstung fertig.";
+	description	= "I see the crawler gear is ready.";
 };
 
 FUNC INT Info_Mod_Wolf_MinecrawlerRuestung3_Condition()
@@ -134,8 +134,8 @@ FUNC INT Info_Mod_Wolf_MinecrawlerRuestung3_Condition()
 
 FUNC VOID Info_Mod_Wolf_MinecrawlerRuestung3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung3_15_00"); //Wie ich sehe, ist die Crawlerrüstung fertig.
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung3_31_01"); //Ja ... meine. Für deine brauche ich noch ein paar Tage.
+	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung3_15_00"); //I see the crawler gear is ready.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung3_31_01"); //Yes... mine. I'll need a few more days for yours.
 
 	Mod_Wolf_MinecrawlerRuestung_Day = Wld_GetDay();
 };
@@ -162,13 +162,13 @@ FUNC INT Info_Mod_Wolf_MinecrawlerRuestung4_Condition()
 
 FUNC VOID Info_Mod_Wolf_MinecrawlerRuestung4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung4_31_00"); //Du brauchst gar nicht zu fragen. Hier ist deine schöne neue Crawlerplattenrüstung.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung4_31_00"); //You don't have to ask. Here's your nice new crawler plate armor.
 
 	CreateInvItems	(hero, ITAR_DJG_Crawler, 1);
 
-	B_ShowGivenThings	("Rüstung aus Crawlerplatten erhalten");
+	B_ShowGivenThings	("Get armor from crawler plates");
 
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung4_31_01"); //Viel Spaß damit.
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung4_31_01"); //Have fun with that.
 
 	B_GivePlayerXP	(200);
 	
@@ -183,7 +183,7 @@ INSTANCE Info_Mod_Wolf_MinecrawlerRuestung5 (C_INFO)
 	information	= Info_Mod_Wolf_MinecrawlerRuestung5_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ist die Rüstung schon fertig?";
+	description	= "Is the armour ready yet?";
 };
 
 FUNC INT Info_Mod_Wolf_MinecrawlerRuestung5_Condition()
@@ -197,8 +197,8 @@ FUNC INT Info_Mod_Wolf_MinecrawlerRuestung5_Condition()
 
 FUNC VOID Info_Mod_Wolf_MinecrawlerRuestung5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung5_15_00"); //Ist die Rüstung schon fertig?
-	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung5_31_01"); //Nein, ich brauche noch etwas Zeit.
+	AI_Output(hero, self, "Info_Mod_Wolf_MinecrawlerRuestung5_15_00"); //Is the armour ready yet?
+	AI_Output(self, hero, "Info_Mod_Wolf_MinecrawlerRuestung5_31_01"); //No, I need some more time.
 };
 
 INSTANCE Info_Mod_Wolf_Snapperbogen (C_INFO)
@@ -224,9 +224,9 @@ FUNC INT Info_Mod_Wolf_Snapperbogen_Condition()
 
 FUNC VOID Info_Mod_Wolf_Snapperbogen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_00"); //Warte mal. Was ist das für ein merkwürdiger Bogen auf deinem Rücken?
-	AI_Output(hero, self, "Info_Mod_Wolf_Snapperbogen_15_01"); //Ein Snapperbogen. Schon mal einen gesehen?
-	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_02"); //Zeig mal.
+	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_00"); //Hold on a second. What's that strange bow on your back?
+	AI_Output(hero, self, "Info_Mod_Wolf_Snapperbogen_15_01"); //A snapper bow. Ever seen one?
+	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_02"); //Let me see that.
 
 	B_GiveInvItems	(hero, self, ItRw_Snapperbogen, 1);
 
@@ -242,9 +242,9 @@ FUNC VOID Info_Mod_Wolf_Snapperbogen_Info()
 
 	B_GiveInvItems	(self, hero, ItRw_Snapperbogen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_03"); //Hmm, irgendwie habe ich das Gefühl, so einen Bogen schon mal irgendwo gesehen zu haben ... hmm.
-	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_04"); //Aber warte mal ... der ist ja erstaunlich leicht zu handhaben ... ideal für die Jagd nach Wildtieren.
-	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_05"); //Verkaufst du ihn mir? Ich würde dir glatt ... 800 Goldstücke dafür geben.
+	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_03"); //Hmm, somehow I feel like I've seen such a bow somewhere before... hmm.
+	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_04"); //But wait a minute... which is amazingly easy to handle.... ideal for hunting wildlife.
+	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen_31_05"); //Are you selling it to me? I wouldn't give you a hard time... 800 pieces of gold for it.
 };
 
 INSTANCE Info_Mod_Wolf_Snapperbogen2 (C_INFO)
@@ -255,7 +255,7 @@ INSTANCE Info_Mod_Wolf_Snapperbogen2 (C_INFO)
 	information	= Info_Mod_Wolf_Snapperbogen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Snapperbogen für 800 Goldstücke verkaufen)";
+	description	= "(Sell Snap Bow for 800 gold pieces)";
 };
 
 FUNC INT Info_Mod_Wolf_Snapperbogen2_Condition()
@@ -270,13 +270,13 @@ FUNC VOID Info_Mod_Wolf_Snapperbogen2_Info()
 {
 	B_GiveInvItems	(hero, self, ItRw_Snapperbogen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen2_31_00"); //Hat mich gefreut mit dir Geschäfte gemacht zu haben.
+	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen2_31_00"); //Nice doing business with you.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 800);
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen2_31_01"); //(zu sich selbst) Und jetzt schau ich mir das Ding mal genau an ... wäre doch gelacht, wenn ich nicht auch solche Bögen herstellen könnte.
+	AI_Output(self, hero, "Info_Mod_Wolf_Snapperbogen2_31_01"); //And now I'm gonna take a good look at this thing.... I'd be laughing if I couldn't make those bows.
 
 	B_GivePlayerXP	(400);
 };
@@ -289,7 +289,7 @@ INSTANCE Info_Mod_Wolf_Lehrer (C_INFO)
 	information	= Info_Mod_Wolf_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Wolf_Lehrer_Condition()
@@ -309,18 +309,18 @@ FUNC VOID Info_Mod_Wolf_Lehrer_Info()
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Wolf_Lehrer_31_01"); //Ich kann dir helfen geschickter zu werden und ich kann dir den Umgang mit einem Bogen beibringen.
-		AI_Output(self, hero, "Info_Mod_Wolf_Lehrer_31_02"); //Ich kann dir auch zeigen, wie du Pfeile herstellst.
+		AI_Output(self, hero, "Info_Mod_Wolf_Lehrer_31_01"); //I can help you become more skillful and I can teach you how to use a bow.
+		AI_Output(self, hero, "Info_Mod_Wolf_Lehrer_31_02"); //I can also show you how to make arrows.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Wolf kann mir helfen geschickter zu werden, den Umgang mit einem Bogen beibringen und zeigen, wie ich Pfeile herstelle.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Wolf can help me to be more skillful, teach me how to use a bow and how to make arrows.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Wolf_Lehrer_31_03"); //Ich kann dir zeigen, wie du Pfeile herstellst.
+		AI_Output(self, hero, "Info_Mod_Wolf_Lehrer_31_03"); //I can show you how to make arrows.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Wolf kann mir zeigen, wie ich Pfeile herstelle.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Wolf can show me how to make arrows.");
 	};
 };
 
@@ -332,7 +332,7 @@ INSTANCE Info_Mod_Wolf_Lernen (C_INFO)
 	information	= Info_Mod_Wolf_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Teach me something.";
 };
 
 FUNC INT Info_Mod_Wolf_Lernen_Condition()
@@ -349,8 +349,8 @@ FUNC INT Info_Mod_Wolf_Lernen_Condition()
 
 FUNC VOID Info_Mod_Wolf_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_Lernen_15_00"); //Bring mir was bei.
-	AI_Output(self, hero, "Info_Mod_Wolf_Lernen_31_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Wolf_Lernen_15_00"); //Teach me something.
+	AI_Output(self, hero, "Info_Mod_Wolf_Lernen_31_01"); //What do you want to learn?
 
 	Info_ClearChoices	(Info_Mod_Wolf_Lernen);
 
@@ -394,7 +394,7 @@ INSTANCE Info_Mod_Wolf_Lernen_Bogen (C_INFO)
 	information	= Info_Mod_Wolf_Lernen_Bogen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Bogenschießen bei.";
+	description	= "Teach me archery.";
 };
 
 FUNC INT Info_Mod_Wolf_Lernen_Bogen_Condition()
@@ -412,11 +412,11 @@ FUNC INT Info_Mod_Wolf_Lernen_Bogen_Condition()
 
 FUNC VOID Info_Mod_Wolf_Lernen_Bogen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_Lernen_Bogen_15_00"); //Bring mir Bogenschießen bei.
+	AI_Output(hero, self, "Info_Mod_Wolf_Lernen_Bogen_15_00"); //Teach me archery.
 
 	Info_ClearChoices	(Info_Mod_Wolf_Lernen_Bogen);
 	
-	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, "Zurück.", Info_Mod_Wolf_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, "Back off.", Info_Mod_Wolf_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Wolf_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Wolf_Lernen_Bogen_1);
 };
@@ -430,7 +430,7 @@ FUNC VOID Info_Mod_Wolf_Lernen_Bogen_5()
 {
 	B_TeachFightTalentPercent_New (self, hero, NPC_TALENT_BOW, 5, 100);
 
-	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, "Zurück.", Info_Mod_Wolf_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, "Back off.", Info_Mod_Wolf_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Wolf_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Wolf_Lernen_Bogen_1);
 };
@@ -439,7 +439,7 @@ FUNC VOID Info_Mod_Wolf_Lernen_Bogen_1()
 {
 	B_TeachFightTalentPercent (self, hero, NPC_TALENT_BOW, 1, 100);
 
-	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, "Zurück.", Info_Mod_Wolf_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, "Back off.", Info_Mod_Wolf_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Wolf_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Wolf_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Wolf_Lernen_Bogen_1);
 };
@@ -452,18 +452,18 @@ INSTANCE Info_Mod_Wolf_Schnitzen (C_INFO)
 	information	= Info_Mod_Wolf_Schnitzen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir bei Pfeile zu schnitzen (2 LP)";
+	description	= "Bring me arrows to carve (2 LP)";
 };
 
 FUNC INT Info_Mod_Wolf_Schnitzen_Condition()
 {
 	if (Mod_Schwierigkeit == 4)
 	{
-		Info_Mod_Wolf_Schnitzen.description = "Bring mir bei Pfeile zu schnitzen (200 Gold)";
+		Info_Mod_Wolf_Schnitzen.description = "Bring me arrows to carve (200 gold)";
 	}
 	else
 	{
-		Info_Mod_Wolf_Schnitzen.description = "Bring mir bei Pfeile zu schnitzen (2 LP)";
+		Info_Mod_Wolf_Schnitzen.description = "Bring me arrows to carve (2 LP)";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Wolf_Lehrer))
@@ -475,20 +475,20 @@ FUNC INT Info_Mod_Wolf_Schnitzen_Condition()
 
 FUNC VOID Info_Mod_Wolf_Schnitzen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_Schnitzen_15_00"); //Bring mir bei Pfeile zu schnitzen.
+	AI_Output(hero, self, "Info_Mod_Wolf_Schnitzen_15_00"); //Teach me to carve arrows.
 
 	if ((Mod_Schwierigkeit == 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 200))
 	|| ((Mod_Schwierigkeit != 4)
 	&& (hero.lp >= 2))
 	{
-		AI_Output(self, hero, "Info_Mod_Wolf_Schnitzen_31_01"); //Ok. Zuerst solltest du dir ein Holzstück bei Thorben kaufen. Dieses nimmst du dann mit an eine Baumsäge und schnitzt es zu etwa 10 Pfeilen.
-		AI_Output(self, hero, "Info_Mod_Wolf_Schnitzen_31_02"); //Dann fügst du den Pfeil mit einer Pfeilspitze an einem Amboss zusammen und fertig ist dein Pfeil.
+		AI_Output(self, hero, "Info_Mod_Wolf_Schnitzen_31_01"); //Okay. First you should buy a piece of wood from Thorben. Then take this to a tree saw and carve it to about 10 arrows.
+		AI_Output(self, hero, "Info_Mod_Wolf_Schnitzen_31_02"); //Then you join the arrow with an arrowhead on an anvil and your arrow is ready.
 
 		Mod_PfeileSchnitzen = 1;
 
 		Log_CreateTopic	(TOPIC_MOD_PFEILE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_PFEILE, "Um Pfeile herzustellen, benötige ich Pfeilstäbe. Diese kann ich mir aus Ästen zurechtsägen.");
+		B_LogEntry	(TOPIC_MOD_PFEILE, "To create arrows, I need arrow bars. I can cut them out of branches.");
 
 		if (Mod_Schwierigkeit == 4)
 		{
@@ -501,7 +501,7 @@ FUNC VOID Info_Mod_Wolf_Schnitzen_Info()
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Wolf_Schnitzen_31_03"); //Komm wieder, wenn du bereit bist.
+		AI_Output (self, hero, "Info_Mod_Wolf_Schnitzen_31_03"); //Come back when you're ready.
 	};
 };
 
@@ -513,18 +513,18 @@ INSTANCE Info_Mod_Wolf_Spitzen (C_INFO)
 	information	= Info_Mod_Wolf_Spitzen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir bei Pfeilspitzen zu schmieden (2 LP)";
+	description	= "Bring me to forge arrowheads (2 LP)";
 };
 
 FUNC INT Info_Mod_Wolf_Spitzen_Condition()
 {
 	if (Mod_Schwierigkeit == 4)
 	{
-		Info_Mod_Wolf_Spitzen.description = "Bring mir bei, Pfeilspitzen zu schmieden (200 Gold)";
+		Info_Mod_Wolf_Spitzen.description = "Teach me to forge arrowheads (200 gold)";
 	}
 	else
 	{
-		Info_Mod_Wolf_Spitzen.description = "Bring mir bei, Pfeilspitzen zu schmieden (2 LP)";
+		Info_Mod_Wolf_Spitzen.description = "Teach me to forge arrowheads (2 LP)";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Wolf_Lehrer))
@@ -536,19 +536,19 @@ FUNC INT Info_Mod_Wolf_Spitzen_Condition()
 
 FUNC VOID Info_Mod_Wolf_Spitzen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_Spitzen_15_00"); //Bring mir bei, Pfeilspitzen zu schmieden.
+	AI_Output(hero, self, "Info_Mod_Wolf_Spitzen_15_00"); //Teach me to forge arrowheads.
 
 	if ((Mod_Schwierigkeit == 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 200))
 	|| ((Mod_Schwierigkeit != 4)
 	&& (hero.lp >= 2))
 	{
-		AI_Output(self, hero, "Info_Mod_Wolf_Spitzen_31_01"); //Nimm ein Stück Rohstahl und geh an einen Amboss. Aus einem Stück Rohstahl bekommst du ungefähr 10 Pfeilspitzen.
+		AI_Output(self, hero, "Info_Mod_Wolf_Spitzen_31_01"); //Take a piece of crude steel and go to an anvil. You will get about 10 arrowheads from one piece of crude steel.
 
 		Mod_PfeileSpitzen = 1;
 
 		Log_CreateTopic	(TOPIC_MOD_PFEILE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_PFEILE, "Um Pfeile herzustellen, benötige ich Pfeilspitzen. Diese kann ich an einem Amboss aus Rohstahl gewinnen.");
+		B_LogEntry	(TOPIC_MOD_PFEILE, "To create arrows, I need arrowheads. I can win this at an anvil made of crude steel.");
 
 		if (Mod_Schwierigkeit == 4)
 		{
@@ -561,7 +561,7 @@ FUNC VOID Info_Mod_Wolf_Spitzen_Info()
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Wolf_Spitzen_31_02"); //Komm wieder, wenn du bereit bist.
+		AI_Output (self, hero, "Info_Mod_Wolf_Spitzen_31_02"); //Come back when you're ready.
 	};
 };
 
@@ -573,12 +573,12 @@ INSTANCE Info_Mod_Wolf_PlattenNehmen (C_INFO)
 	information	= Info_Mod_Wolf_PlattenNehmen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wie bekomme ich diese Platten von den Biestern ab? (5 LP)";
+	description	= "How do I get these plates from the beasts? (5 LP)";
 };
 
 FUNC INT Info_Mod_Wolf_PlattenNehmen_Condition()
 {
-	Info_Mod_Wolf_PlattenNehmen.description = B_BuildLearnString("Wie bekomme ich diese Platten von den Biestern ab?", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
+	Info_Mod_Wolf_PlattenNehmen.description = B_BuildLearnString("How do I get these plates from the beasts?", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Wolf_Hi))
 	&& (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_CrawlerPlate] == FALSE)
@@ -589,12 +589,12 @@ FUNC INT Info_Mod_Wolf_PlattenNehmen_Condition()
 
 FUNC VOID Info_Mod_Wolf_PlattenNehmen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_PlattenNehmen_15_00"); //Wie bekomme ich diese Platten von den Biestern ab?
+	AI_Output(hero, self, "Info_Mod_Wolf_PlattenNehmen_15_00"); //How do I get these plates from the beasts?
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_CrawlerPlate))
 	{
-		AI_Output(self, hero, "Info_Mod_Wolf_PlattenNehmen_31_01"); //Das ist relativ einfach. Die Rückenplatten sind nur an deren Rändern mit dem Körper verwachsen.
-		AI_Output(self, hero, "Info_Mod_Wolf_PlattenNehmen_31_02"); //Nimm einfach ein Rasiermesser und schneide halbschräg an den Rändern entlang.
+		AI_Output(self, hero, "Info_Mod_Wolf_PlattenNehmen_31_01"); //It's relatively simple. The back plates are only fused to the body at their edges.
+		AI_Output(self, hero, "Info_Mod_Wolf_PlattenNehmen_31_02"); //Just take a razor and cut half diagonally along the edges.
 	};
 };
 

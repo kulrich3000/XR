@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Valentino_Hi (C_INFO)
 	information	= Info_Mod_Valentino_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Valentino_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Valentino_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Valentino_Hi_03_01"); //Was willst DU denn von mir?
+	AI_Output(self, hero, "Info_Mod_Valentino_Hi_03_01"); //What do you want from me?
 };
 
 INSTANCE Info_Mod_Valentino_Kidnapped (C_INFO)
@@ -43,11 +43,11 @@ FUNC INT Info_Mod_Valentino_Kidnapped_Condition()
 
 FUNC VOID Info_Mod_Valentino_Kidnapped_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentino_Kidnapped_03_00"); //(sarkastisch) Das hast du ja ganz toll hingekriegt. Glaubst du etwa, die Blutflecken gehen jemals raus?
+	AI_Output(self, hero, "Info_Mod_Valentino_Kidnapped_03_00"); //You did a great job of it. Do you think the bloodstains ever go out?
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry_More	(TOPIC_MOD_MOE_VALENTINO, TOPIC_MOD_CANTHAR_GESCHAEFTE, "Valentino ist wieder frei. Damit habe ich Canthar einen weiteren Rückschlag verpasst.", "Ich konnte Canthars Rache verhindern. Vielleicht sollte zur Abwechslung mal ich Canthar eine Überraschung bereiten... Es muss doch bei dem Lager der Entführer irgendeinen Hinweis darauf geben, woher sie kommen oder wohin sie mich bringen sollten.");
+	B_LogEntry_More	(TOPIC_MOD_MOE_VALENTINO, TOPIC_MOD_CANTHAR_GESCHAEFTE, "Valentino's free again. So I missed Canthar another setback.", "I was able to prevent Canthar's revenge. Maybe I should surprise Canthar for a change.... There must be some sort of indication at the kidnappers' camp as to where they're coming from or where they're supposed to take me.");
 	B_SetTopicStatus	(TOPIC_MOD_MOE_VALENTINO, LOG_SUCCESS);
 
 	CurrentNQ += 1;
@@ -58,13 +58,13 @@ FUNC VOID Info_Mod_Valentino_Kidnapped_Info()
 
 	Info_ClearChoices	(Info_Mod_Valentino_Kidnapped);
 
-	Info_AddChoice	(Info_Mod_Valentino_Kidnapped, "Weil ich gerade so gut in Übung bin, polier ich dir auch nochmal die Fresse.", Info_Mod_Valentino_Kidnapped_B);
-	Info_AddChoice	(Info_Mod_Valentino_Kidnapped, "Du bist frei.", Info_Mod_Valentino_Kidnapped_A);
+	Info_AddChoice	(Info_Mod_Valentino_Kidnapped, "Because I'm so good at practice right now, I'm going to give you another slash.", Info_Mod_Valentino_Kidnapped_B);
+	Info_AddChoice	(Info_Mod_Valentino_Kidnapped, "You are free.", Info_Mod_Valentino_Kidnapped_A);
 };
 
 FUNC VOID Info_Mod_Valentino_Kidnapped_B()
 {
-	AI_Output(hero, self, "Info_Mod_Valentino_Kidnapped_B_15_00"); //Weil ich gerade so gut in Übung bin, polier ich dir auch nochmal die Fresse.
+	AI_Output(hero, self, "Info_Mod_Valentino_Kidnapped_B_15_00"); //Because I'm so good at practice right now, I'm going to give you another slash.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Valentino_Kidnapped);
@@ -86,7 +86,7 @@ FUNC VOID Info_Mod_Valentino_Kidnapped_B()
 
 FUNC VOID Info_Mod_Valentino_Kidnapped_A()
 {
-	AI_Output(hero, self, "Info_Mod_Valentino_Kidnapped_A_15_00"); //Du bist frei.
+	AI_Output(hero, self, "Info_Mod_Valentino_Kidnapped_A_15_00"); //You are free.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Valentino_Kidnapped);
@@ -126,19 +126,19 @@ FUNC INT Info_Mod_Valentino_Mitternachtsspuk_Condition()
 
 FUNC VOID Info_Mod_Valentino_Mitternachtsspuk_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_00"); //(erschrocken) Huch, was soll das werden?
-	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_01"); //Da habe ich aber jemanden erwischt.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_02"); //(hochnäsig) Na und? Ist nichts Verbotenes.
-	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_03"); //Mal sehen, ob ihr Mann das auch meint.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_04"); //Scheiße, was willst du von mir?
-	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_05"); //Trefft ihr euch häufiger nachts hier? Und geht es manchmal auch wild zu?
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_06"); //Natürlich nicht!
-	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_07"); //Ich sag's auch nicht weiter. Aber Fernando schläft euretwegen schlecht.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_08"); //(lacht unsicher) Ja, wir sind schon ab und zu hier. Reicht das?
-	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_09"); //(genüsslich) Natürlich.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_10"); //Dann hau endlich ab!
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_00"); //Whoops, what are you doing?
+	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_01"); //I caught someone there.
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_02"); //So what's the difference? Nothing forbidden.
+	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_03"); //Let's see if her husband agrees.
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_04"); //What the fuck do you want from me?
+	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_05"); //Do you hang out here at night more often? And does it sometimes happen wild?
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_06"); //Of course not!
+	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_07"); //I'm not going to tell anyone. But Fernando doesn't sleep well because of you.
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_08"); //Yeah, we're here now and then. Is that enough?
+	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_09"); //(indulgent) Of course.
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_10"); //Then get the fuck out of here!
 
-	B_LogEntry	(TOPIC_MOD_FERNANDO_MITTERNACHTSSPUK, "Valentino und eine Bürgerin verursachen unfreiwillig Fernandos Alpträume.");
+	B_LogEntry	(TOPIC_MOD_FERNANDO_MITTERNACHTSSPUK, "Valentino and a citizen are involuntarily causing Fernando's nightmares.");
 };
 
 INSTANCE Info_Mod_Valentino_SonjaFreier (C_INFO)
@@ -149,7 +149,7 @@ INSTANCE Info_Mod_Valentino_SonjaFreier (C_INFO)
 	information	= Info_Mod_Valentino_SonjaFreier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Sonja früher regelmäßig besucht?";
+	description	= "Did you visit Sonja regularly before?";
 };
 
 FUNC INT Info_Mod_Valentino_SonjaFreier_Condition()
@@ -163,10 +163,10 @@ FUNC INT Info_Mod_Valentino_SonjaFreier_Condition()
 
 FUNC VOID Info_Mod_Valentino_SonjaFreier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Valentino_SonjaFreier_15_00"); //Hast du Sonja früher regelmäßig besucht?
-	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_03_01"); //(ungnädig) Was, diese Schlampe? Behauptet sie das etwa?
-	AI_Output(hero, self, "Info_Mod_Valentino_SonjaFreier_15_02"); //Nein, reg dich ab.
-	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_03_03"); //Ich gehe nur mit gut situierten Bürgerinnen dieser Stadt aus. Meistens. Also lass mich in Ruhe mit dieser Hure!
+	AI_Output(hero, self, "Info_Mod_Valentino_SonjaFreier_15_00"); //Did you visit Sonja regularly before?
+	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_03_01"); //What, that bitch? Is that what she says?
+	AI_Output(hero, self, "Info_Mod_Valentino_SonjaFreier_15_02"); //No, just calm down.
+	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_03_03"); //I only go out with well-off citizens of this town. Most of the time. So leave me alone with that whore!
 };
 
 INSTANCE Info_Mod_Valentino_Pickpocket (C_INFO)

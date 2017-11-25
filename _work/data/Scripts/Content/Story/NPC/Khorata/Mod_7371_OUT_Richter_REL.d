@@ -1,7 +1,7 @@
 instance Mod_7371_OUT_Richter_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Richter";
+	name 		= "judges";
 	guild 		= GIL_DMT;
 	id 			= 7371;
 	voice 		= 10;

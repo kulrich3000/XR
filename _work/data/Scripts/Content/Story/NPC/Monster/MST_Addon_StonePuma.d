@@ -100,7 +100,7 @@ INSTANCE Puma	(Mst_Default_StonePuma)
 
 INSTANCE StonePuma	(Mst_Default_StonePuma)
 {
-	name = "Steinpuma";
+	name = "black-winged hummingbird";
 
 	B_SetVisuals_StonePuma();
 	Npc_SetToFistMode(self);

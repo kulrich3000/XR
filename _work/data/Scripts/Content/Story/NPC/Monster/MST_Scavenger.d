@@ -230,7 +230,7 @@ INSTANCE Scavenger_Gaan	(Mst_Default_Scavenger)
 
 INSTANCE Scavenger_Breed	(Mst_Default_Scavenger)
 {
-	name	= 	"brütender Scavenger";
+	name	= 	"incubator";
 
 	B_SetVisual_Scav();
 
@@ -244,7 +244,7 @@ INSTANCE Scavenger_Breed	(Mst_Default_Scavenger)
 
 INSTANCE Scavenger_Blut	(Mst_Default_Scavenger)
 {
-	name	= "Blutscavenger";
+	name	= "blood cavernous";
 
 	B_SetVisuals_Scavenger_Blut();
 	Npc_SetToFistMode(self);
@@ -260,7 +260,7 @@ INSTANCE YScavenger	(Mst_Default_Scavenger)
 {
 	level	=	3;
 
-	name							=	"Junger Scavenger";
+	name							=	"Young Scavenger";
 
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;
@@ -294,7 +294,7 @@ INSTANCE GScavenger	(Mst_Default_Scavenger)
 {
 	level	=	15;
 
-	name							=	"Riesenscavenger";
+	name							=	"giant scavenger";
 	//----- Attribute ----
 	
 	//----- Kampf-Taktik ----
@@ -308,7 +308,7 @@ INSTANCE GScavenger	(Mst_Default_Scavenger)
 INSTANCE Scavenger_Fett_01	(Mst_Default_Scavenger)
 {
 	level	=	8;
-	name = "wohlgenährter Scavenger";
+	name = "well-nourished scavenger";
 
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	40;
@@ -333,7 +333,7 @@ INSTANCE Scavenger_Fett_01	(Mst_Default_Scavenger)
 INSTANCE Scavenger_Fett_02	(Mst_Default_Scavenger)
 {
 	level	=	8;
-	name = "wohlgenährter Scavenger";
+	name = "well-nourished scavenger";
 
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	40;
@@ -358,7 +358,7 @@ INSTANCE Scavenger_Fett_02	(Mst_Default_Scavenger)
 INSTANCE Scavenger_Fett_03	(Mst_Default_Scavenger)
 {
 	level	=	8;
-	name = "wohlgenährter Scavenger";
+	name = "well-nourished scavenger";
 
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	40;
@@ -383,7 +383,7 @@ INSTANCE Scavenger_Fett_03	(Mst_Default_Scavenger)
 INSTANCE Scavenger_Fett_04	(Mst_Default_Scavenger)
 {
 	level	=	8;
-	name = "wohlgenährter Scavenger";
+	name = "well-nourished scavenger";
 
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	40;
@@ -408,7 +408,7 @@ INSTANCE Scavenger_Fett_04	(Mst_Default_Scavenger)
 INSTANCE Scavenger_Fett_05	(Mst_Default_Scavenger)
 {
 	level	=	8;
-	name = "wohlgenährter Scavenger";
+	name = "well-nourished scavenger";
 
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	40;

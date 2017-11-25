@@ -20,13 +20,13 @@ FUNC INT Info_Mod_Mufid_Verrat_Condition()
 
 FUNC VOID Info_Mod_Mufid_Verrat_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_00"); //Was suchst du hier? Hau ab!
-	AI_Output(hero, self, "Info_Mod_Mufid_Verrat_15_01"); //Ich suche den 3. Kelch. Einer von euch hat ihn.
-	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_02"); //Quatsch. Wir wissen nichts von einem Kelch. Wir haben den Auftrag, ein Außenlager einzurichten.
-	AI_Output(hero, self, "Info_Mod_Mufid_Verrat_15_03"); //Da hab ich aber was anderes gehört. Außerden nützt euch der Kelch nichts. Ihr habt den Händler nicht umgebracht.
-	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_04"); //Dachte, er wäre tot. Kann ich ja noch nachholen. Aber erst bist du dran, Schnüffler.
+	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_00"); //What are you doing here? Get out of here!
+	AI_Output(hero, self, "Info_Mod_Mufid_Verrat_15_01"); //I'm looking for the third. Chalice. One of you has it.
+	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_02"); //Nonsense. We don't know anything about a goblet. We have a mission to set up a field camp.
+	AI_Output(hero, self, "Info_Mod_Mufid_Verrat_15_03"); //That's not what I heard. Besides, the chalice is of no use to you. You didn't kill the merchant.
+	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_04"); //Thought he was dead. I can still catch up. But it's your turn first, dickhead.
 
-	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Ich habe Mufid und Mirza auf frischer Tat ertappt. Mirza ist allerdings geflohen. Ich sollte zusehen, dass ich ihn finde.");
+	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "I caught Mufid and Mirza in the act. Mirza escaped, though. I should make sure I find him.");
 
 	CreateInvItems	(self, ItKe_Mufid, 1);
 

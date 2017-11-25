@@ -1,7 +1,7 @@
 INSTANCE Mod_7240_PAL_Andre_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lord Andre";	
+	name 		= "Lord Andrew";	
 	guild 		= GIL_DMT;
 	id 			= 7240;
 	voice 		= 8;

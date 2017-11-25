@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_OrcShaman(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Ork Schamane";
+	name							=	"Orc Shaman";
 	guild							=	GIL_ORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCSHAMAN;
 	voice							=	18;
@@ -54,7 +54,7 @@ PROTOTYPE Mst_Default_OrcShaman(C_Npc)
 
 PROTOTYPE Mst_Default_OrcSlave(C_Npc)			
 {
-	name							=	"Orc Sklave";
+	name							=	"Orc Slave";
 	guild							=	GIL_FRIENDLY_ORC;
 	level							=	15;
 //----------------------------------------------------------	
@@ -127,7 +127,7 @@ INSTANCE Orc_Stonemill (Mst_Default_OrcSlave)
 	//-------- visual --------
 	B_SetVisuals_OrcSlave();
 	guild							=	GIL_FRIENDLY_ORC;
-	name			=	"Ork Sklave";
+	name			=	"Orc Slave";
 
 	//-------- inventory --------
 	
@@ -142,7 +142,7 @@ INSTANCE Orc_Stomper (Mst_Default_OrcSlave)
 	//-------- visual --------
 	B_SetVisuals_OrcSlave();
 	guild							=	GIL_FRIENDLY_ORC;
-	name			=	"Ork Sklave";
+	name			=	"Orc Slave";
 
 	//-------- inventory --------
 	
@@ -156,7 +156,7 @@ INSTANCE OrcPeasantDance (Mst_Default_OrcSlave)
 {
 	//-------- general data --------
 	guild			=	GIL_ORC;
-	name			=	"Ork";
+	name			=	"orc";
 
 	//-------- visuals --------
 	B_SetVisuals_OrcSlave();
@@ -174,7 +174,7 @@ INSTANCE OrcPeasantDrum (Mst_Default_OrcSlave)
 {
 	//-------- general data --------
 	guild			=	GIL_ORC;
-	name			=	"Ork";
+	name			=	"orc";
 
 	//-------- visuals --------
 	B_SetVisuals_OrcSlave();
@@ -244,7 +244,7 @@ INSTANCE OrcShaman_Hosh_Pak (Mst_Default_OrcShaman)
 
 INSTANCE OrcShaman_Sit_CanyonLibraryKey (Mst_Default_OrcShaman)
 {
-	name							=	"Anführer der Horde";
+	name							=	"Leader of the Horde";
 	// ------ visuals ------
 	B_SetVisuals_OrcShaman();
 	

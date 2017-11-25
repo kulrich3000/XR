@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HSBuerger_04_Orakel (C_INFO)
 	information	= Info_Mod_HSBuerger_04_Orakel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bin auf der Suche nach dem Orakel.";
+	description	= "I'm looking for the Oracle.";
 };
 
 FUNC INT Info_Mod_HSBuerger_04_Orakel_Condition()
@@ -19,10 +19,10 @@ FUNC INT Info_Mod_HSBuerger_04_Orakel_Condition()
 
 FUNC VOID Info_Mod_HSBuerger_04_Orakel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HSBuerger_04_Orakel_15_00"); //Ich bin auf der Suche nach dem Orakel.
-	AI_Output(self, hero, "Info_Mod_HSBuerger_04_Orakel_04_01"); //Orakel? Sowas gibt es hier nicht. Du solltest das königliche Orakel fragen, wo du eines findest, das ist ziemlich klug.
-	AI_Output(hero, self, "Info_Mod_HSBuerger_04_Orakel_15_02"); //Und wo ist das königliche Orakel?
-	AI_Output(self, hero, "Info_Mod_HSBuerger_04_Orakel_04_03"); //Da musst du einen Termin bei dem königlichen Arsch ausmachen.
+	AI_Output(hero, self, "Info_Mod_HSBuerger_04_Orakel_15_00"); //I'm looking for the Oracle.
+	AI_Output(self, hero, "Info_Mod_HSBuerger_04_Orakel_04_01"); //Oracle? There's no such thing here. You should ask the royal oracle where you can find one, that's pretty smart.
+	AI_Output(hero, self, "Info_Mod_HSBuerger_04_Orakel_15_02"); //And where is the royal oracle?
+	AI_Output(self, hero, "Info_Mod_HSBuerger_04_Orakel_04_03"); //You'll have to make an appointment with the king's asshole.
 };
 
 INSTANCE Info_Mod_HSBuerger_04_Teleport (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_HSBuerger_04_Teleport (C_INFO)
 	information	= Info_Mod_HSBuerger_04_Teleport_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich suche einen Weg in die Sümpfe.";
+	description	= "I'm looking for a way into the swamps.";
 };
 
 FUNC INT Info_Mod_HSBuerger_04_Teleport_Condition()
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_HSBuerger_04_Teleport_Condition()
 
 FUNC VOID Info_Mod_HSBuerger_04_Teleport_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HSBuerger_04_Teleport_15_00"); //Ich suche einen Weg in die Sümpfe.
-	AI_Output(self, hero, "Info_Mod_HSBuerger_04_Teleport_04_01"); //Du willst ein Huhn? Sowas hab ich noch nie gesehen!
+	AI_Output(hero, self, "Info_Mod_HSBuerger_04_Teleport_15_00"); //I'm looking for a way into the swamps.
+	AI_Output(self, hero, "Info_Mod_HSBuerger_04_Teleport_04_01"); //You want a chicken? I've never seen anything like it!
 };
 
 INSTANCE Info_Mod_HSBuerger_04_Pickpocket (C_INFO)

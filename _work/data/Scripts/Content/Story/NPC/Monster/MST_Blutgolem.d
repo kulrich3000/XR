@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Blutgolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Blutgolem";
+	name							=	"blood golem";
 	guild							=	GIL_STONEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Blutgolem;
 	level							=	100;

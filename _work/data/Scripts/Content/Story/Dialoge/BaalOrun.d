@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Orun_Hi (C_INFO)
 	information	= Info_Mod_Orun_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Orun_Hi_Condition()
@@ -21,7 +21,7 @@ FUNC VOID Info_Mod_Orun_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Orun_Hi_12_01"); //Ich bin Baal Orun und kümmere mich um die Herstellung der Sumpfkrautstängel aus Sumpfkraut.
+	AI_Output(self, hero, "Info_Mod_Orun_Hi_12_01"); //My name is Baal Orun and I take care of the production of swamp weed stalks.
 };
 
 INSTANCE Info_Mod_Orun_GotoTempel (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Orun_GotoTempel (C_INFO)
 	information	= Info_Mod_Orun_GotoTempel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wirst am Tempel erwartet.";
+	description	= "You are expected at the temple.";
 };
 
 FUNC INT Info_Mod_Orun_GotoTempel_Condition()
@@ -47,7 +47,7 @@ FUNC INT Info_Mod_Orun_GotoTempel_Condition()
 
 FUNC VOID Info_Mod_Orun_GotoTempel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orun_GotoTempel_15_00"); //Du wirst am Tempel erwartet.
+	AI_Output(hero, self, "Info_Mod_Orun_GotoTempel_15_00"); //You are expected at the temple.
 
 	AI_StopProcessInfos	(hero);
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Orun_Cyrco (C_INFO)
 	information	= Info_Mod_Orun_Cyrco_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Guten Tag, großer Meister.";
+	description	= "Good afternoon, great master.";
 };
 
 FUNC INT Info_Mod_Orun_Cyrco_Condition()
@@ -76,32 +76,32 @@ FUNC INT Info_Mod_Orun_Cyrco_Condition()
 
 FUNC VOID Info_Mod_Orun_Cyrco_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_00"); //Guten Tag, großer Meister.
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_01"); //Hä?
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_02"); //(laut) Guten Tag.
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_03"); //Ja. Finde ich auch. Was willst du?
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_04"); //Ich komme von Cyrco, dem Druiden.
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_05"); //Ja. Den kenne ich auch. Wie geht's dem?
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_06"); //Gut. Hier sein Dokument. Do-ku-ment.
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_07"); //Dokument? Gib her.
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_00"); //Good afternoon, great master.
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_01"); //Huh?
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_02"); //(loudly) Good afternoon.
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_03"); //Yeah. I agree, too. What do you want?
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_04"); //I come from Cyrco, the druid.
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_05"); //Yeah. I know him, too. How's he doing?
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_06"); //Good. Here's his document. Do-ku-ment.
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_07"); //Document? Give me that.
 
 	B_GiveInvItems	(hero, self, ItWr_MagicPaper, 1);
 
 	B_UseFakeScroll ();
 
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_08"); //Hmm ... Magie ... starke Magie ... schwarze Magie ... böse Magie ...
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_09"); //Und? Was ist?
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_08"); //Hmm... magic powerful magic.... black magic... evil magic...
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_09"); //And? What is it?
 	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_10"); //RUHE!
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_11"); //Hm ... Ich sehe was ... Ein Zettel ... eine Höhle ... sehr starke Magie ... Fremder?
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_12"); //Ja Meister?
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_13"); //Fremder!
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_14"); //Hier!
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_15"); //Ach so. Höre: Ich hatte eine Vision. Ich sah diesen Zettel nahe einer Höhle, umgeben von starker schwarzer Magie. Da würde ich nicht allein hingehen.
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_16"); //Und du bist sicher?
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_17"); //Ja. Ganz sicher.
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_18"); //Dann sag ich mal danke.
-	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_19"); //Welche Anke?
-	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_20"); //Dankeee!
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_11"); //Hm... I see something.... A note... a cave.... very strong magic... Stranger?
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_12"); //Yes Master?
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_13"); //Stranger!
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_14"); //Here!
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_15"); //Oh, I see. Listen: I had a vision. I saw this note near a cave surrounded by strong black magic. I wouldn't go there alone.
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_16"); //And you're sure?
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_17"); //Yeah. I'm sure of it.
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_18"); //I'll say thank you.
+	AI_Output(self, hero, "Info_Mod_Orun_Cyrco_12_19"); //What Anke?
+	AI_Output(hero, self, "Info_Mod_Orun_Cyrco_15_20"); //Thank you!
 
 	Wld_InsertNpc	(Mod_7426_NOV_Novize_MT, "WP_MT_JAEGERLAGER_04");
 	Wld_InsertNpc	(Mod_7427_BDT_Bandit_MT, "WP_MT_JAEGERLAGER_04");
@@ -109,7 +109,7 @@ FUNC VOID Info_Mod_Orun_Cyrco_Info()
 	Wld_InsertNpc	(Mod_7429_BDT_Bandit_MT, "WP_MT_JAEGERLAGER_04");
 	Wld_InsertNpc	(Mod_7430_BDT_Bandit_MT, "WP_MT_JAEGERLAGER_04");
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Baal Orun hatte eine Vision von einer Höhle, die dem Zettel nahe war, umgeben von starker schwarzer Magie. Das sollte Cyrco interessieren.");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Baal Orun had a vision of a cave close to the note surrounded by strong black magic. This should interest Cyrco.");
 };
 
 INSTANCE Info_Mod_Orun_Woher (C_INFO)
@@ -120,7 +120,7 @@ INSTANCE Info_Mod_Orun_Woher (C_INFO)
 	information	= Info_Mod_Orun_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie bist du zur Sekte gekommen?";
+	description	= "How did you get to the sect?";
 };
 
 FUNC INT Info_Mod_Orun_Woher_Condition()
@@ -134,10 +134,10 @@ FUNC INT Info_Mod_Orun_Woher_Condition()
 
 FUNC VOID Info_Mod_Orun_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orun_Woher_15_00"); //Wie bist du zur Sekte gekommen?
-	AI_Output(self, hero, "Info_Mod_Orun_Woher_12_01"); //Bevor man mich in die Kolonie geworfen hat war ich Milizsoldat von Khorinis.
-	AI_Output(self, hero, "Info_Mod_Orun_Woher_12_02"); //Doch nachdem ich einen Bürger bei einem Einsatz versehentlich verletzt hatte, wurde ich in die Kolonie geworfen.
-	AI_Output(self, hero, "Info_Mod_Orun_Woher_12_03"); //Zuerst habe ich mich Gomez' Leuten angeschlossen und war schon bald ein einflussreicher Schatten, aber als ich vom Sumpflager erfuhr, zog es mich dorthin.
+	AI_Output(hero, self, "Info_Mod_Orun_Woher_15_00"); //How did you get to the sect?
+	AI_Output(self, hero, "Info_Mod_Orun_Woher_12_01"); //Before I was thrown into the colony, I was a militia soldier of Khorinis.
+	AI_Output(self, hero, "Info_Mod_Orun_Woher_12_02"); //But after I accidentally injured a citizen during an operation, I was thrown into the colony.
+	AI_Output(self, hero, "Info_Mod_Orun_Woher_12_03"); //At first I joined Gomez's people and soon became an influential shadow, but when I heard about the swamp camp, I was drawn to it.
 };
 
 INSTANCE Info_Mod_Orun_Pickpocket (C_INFO)

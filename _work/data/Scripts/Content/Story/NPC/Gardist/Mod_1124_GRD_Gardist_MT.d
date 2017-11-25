@@ -2,7 +2,7 @@ instance Mod_1124_GRD_Gardist_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Gardist";
+	name 		=	"guardsman";
 	npctype		=	NPCTYPE_MT_GARDIST;
 	guild 		=	GIL_OUT;
 	level 		=	15;

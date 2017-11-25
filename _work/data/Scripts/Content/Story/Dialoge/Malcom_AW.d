@@ -15,38 +15,38 @@ FUNC INT Info_Mod_Malcom_AW_Hi_Condition()
 
 FUNC VOID Info_Mod_Malcom_AW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_00"); //He, Mann. Wie kommst du denn hierher?
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_01"); //Dasselbe könnte ich dich fragen.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_00"); //Hey, man. How did you get here?
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_01"); //I could ask you the same thing.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Malcom_NW_Hi))
 	{
-		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_02"); //Ich hatte Glück, dass Skip bei seiner Handelstour vorbeigekommen ist, sonst wäre ich wohl an diesem Strand verrottet.
-		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_03"); //Und ich hab mein Versprechen auch nicht vergessen: Das hier schulde ich dir noch für deine Hilfe.
+		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_02"); //I was lucky that Skip came by on his trading tour, otherwise I would have rotted on this beach.
+		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_03"); //And I haven't forgotten my promise. This is what I owe you for your help.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_04"); //Soll noch einer sagen, Piraten hätten keine Ehre, bei meiner einarmigen Lieblingshure!
+		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_04"); //Someone say pirates have no honor in my favorite one-armed whore!
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_05"); //Ich war zuerst hier. Sehe jeden, der hier vorbeikommt. Und du kommst eindeutig aus der falschen Richtung.
-		AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_06"); //Wieso? Ich komme vom Tempel drüben.
-		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_07"); //Unsinn. Da gibt’s nur den Einsiedler und diese schuppigen Ungeheuer im Sumpf.
+		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_05"); //I was here first. See anyone who comes by here. And you're definitely coming from the wrong direction.
+		AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_06"); //Why? I'm from the temple over there.
+		AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_07"); //Nonsense. There's only the hermit and those scaly monsters in the swamp.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_08"); //Wenn du meinst. Was machst du denn hier?
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_09"); //Siehst du doch. Feuerholz für unser Lager.
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_10"); //Hier gibt’s ein Lager?
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_11"); //Aber ja. Das Lager der gefürchtetsten Piraten der Meere.
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_12"); //Und wo finde ich das?
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_13"); //Den Weg lang und vor der Ruine rechts. Ist nicht zu übersehen. Ach, und noch was.
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_14"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_15"); //Falls Henry dich ins Lager lässt, rede mit Skip.
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_16"); //Sag ihm, ich hab Hunger und er soll mir was zum Essen schicken.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_08"); //If you say so. What are you doing here?
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_09"); //Can't you see? Firewood for our warehouse.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_10"); //There's a camp here?
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_11"); //But yes, yes. The camp of the most feared pirates of the seas.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_12"); //And where do I find this?
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_13"); //Follow the path and turn right before the ruins. Can't miss it. Oh, and another thing.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Hi_15_14"); //Yes?
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_15"); //If Henry lets you into the camp, talk to Skip.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Hi_30_16"); //Tell him I'm hungry, tell him to send me something to eat.
 
 	Log_CreateTopic	(TOPIC_MOD_PIRATEN_MALCOM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PIRATEN_MALCOM, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PIRATEN_MALCOM, "Ich soll Skip im Lager sagen, dass Malcom hungrig ist und was zu essen braucht.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_MALCOM, "I'm supposed to tell Skip at camp that Malcom's hungry and needs something to eat.");
 };
 
 INSTANCE Info_Mod_Malcom_AW_Schatzsuche (C_INFO)
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_Malcom_AW_Schatzsuche (C_INFO)
 	information	= Info_Mod_Malcom_AW_Schatzsuche_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Greg will auslaufen. Wir sollen die Vorbereitungen treffen.";
+	description	= "Greg wants to leave. We're supposed to make preparations.";
 };
 
 FUNC INT Info_Mod_Malcom_AW_Schatzsuche_Condition()
@@ -70,35 +70,35 @@ FUNC INT Info_Mod_Malcom_AW_Schatzsuche_Condition()
 
 FUNC VOID Info_Mod_Malcom_AW_Schatzsuche_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_00"); //Greg will auslaufen. Wir sollen die Vorbereitungen treffen.
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_01"); //Das hört man gern. Weißt du auch, wohin?
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_02"); //Nein. Auf jeden Fall auf eine Schatzinsel.
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_03"); //Das hört man noch lieber. Hmm ... da müsste ich aber noch was richten ...
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_04"); //Brauchst du mich dazu?
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_05"); //Unbedingt. Hör zu:
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_06"); //Vor langer Zeit, kurz nachdem wir hier angelandet waren, hab ich mit meinem Entertrupp den Canyon ausgekundschaftet.
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_07"); //Einen Haufen Viehzeug gab's da, aber mit denen sind wir fertig geworden.
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_08"); //Irgendwann kamen wir in eine Riesenhöhle mit reichlich Riesenkrebsen drin.
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_09"); //Wir konnten viele davon niedermachen, aber dabei sind zwei meiner Leute draufgegangen.
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_10"); //Mir blieb nichts anderes übrig, als eiligst den Rückzug anzutreten.
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_11"); //Seitdem war ich nicht mehr im Canyon.
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_12"); //Das waren wohl Minecrawler. Die gibt's überall auf der Insel.
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_13"); //Was hat das mit uns zu tun?
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_14"); //Ich muss wieder hin. Auf der Flucht ist mir unser Talisman abhandengekommen.
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_15"); //Ohne den würde Greg niemals auslaufen.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_00"); //Greg wants to leave. We're supposed to make preparations.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_01"); //That's what I like to hear. Do you know where to go?
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_02"); //No. Definitely a treasure island.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_03"); //I'd rather hear that. Hmm... I'd have to do something else....
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_04"); //Do you need me to do that?
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_05"); //Absolutely. Listen:
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_06"); //A long time ago, shortly after we landed here, I scouted the canyon with my boarding party.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_07"); //There was a bunch of cattle, but we handled them.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_08"); //At some point we came into a huge cave with plenty of giant crabs in it.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_09"); //We could kill a lot of them, but that killed two of my people.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_10"); //I had no choice but to retreat in a hurry.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_11"); //I haven't been to the canyon since.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_12"); //Those must have been minecrawlers. They're all over the island.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_13"); //What's that got to do with us?
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_14"); //I have to go back. On the run, I lost our talisman.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_15"); //Greg would never leave without it.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_16"); //(zu sich selbst) Mann, sind die abergläubig.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_16"); //Man, they're superstitious.
 
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_17"); //Und jetzt sollen wir Zwei ...
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_18"); //Wir nehmen noch Jack mit. Er gehört zu meinem Entertrupp.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche_15_17"); //And now we're supposed to have two...
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche_30_18"); //We're taking Jack with us. He's part of my posse.
 
 	Log_CreateTopic	(TOPIC_MOD_PIR_TALISMAN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PIR_TALISMAN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PIR_TALISMAN, "Malcom hat den Talisman der Mannschaft verloren. Ich soll helfen, ihn wiederzubeschaffen.");
+	B_LogEntry	(TOPIC_MOD_PIR_TALISMAN, "Malcom lost the team's talisman. I'm supposed to help you get him back.");
 
 	AI_StopProcessInfos	(self);
 
@@ -140,15 +140,15 @@ FUNC VOID Info_Mod_Malcom_AW_Schatzsuche2_Info()
 	AI_TurnToNpc	(Malcom, Jack);
 	AI_TurnToNpc	(Jack, Malcom);
 
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche2_30_00"); //Hallo Jack. Wir müssen in den Canyon. Du kommst mit.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche2_30_00"); //Hello, Jack. We have to go to the canyon. You're coming with me.
 
 	TRIA_Next(Jack);
 
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche2_12_01"); //Mit Freuden. Frag mich eh schon, warum ich die ganze Zeit hier rumstehen soll.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche2_12_01"); //Gladly. Ask me why I'm standing here all the time anyway.
 
 	TRIA_Next(Malcom);
 
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche2_30_02"); //Alles mir nach.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche2_30_02"); //All mine.
 
 	TRIA_Finish();
 };
@@ -174,18 +174,18 @@ FUNC INT Info_Mod_Malcom_AW_Schatzsuche3_Condition()
 
 FUNC VOID Info_Mod_Malcom_AW_Schatzsuche3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche3_15_00"); //Ich habe diese Figur hier gefunden.
+	AI_Output(hero, self, "Info_Mod_Malcom_AW_Schatzsuche3_15_00"); //I found this character here.
 
 	B_GiveInvItems	(hero, self, ItMi_Talisman_Piraten, 1);
 
-	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche3_30_01"); //Ist ja noch mal gut gegangen. Jetzt nichts wie weg hier.
+	AI_Output(self, hero, "Info_Mod_Malcom_AW_Schatzsuche3_30_01"); //It went well again. Now let's get out of here.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "START");
 	B_StartOtherRoutine	(Mod_928_PIR_AlligatorJack_AW, "START");
 
-	B_LogEntry_More	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, TOPIC_MOD_PIR_TALISMAN, "Wir haben den Talisman der Piraten geborgen.", "Der Talisman ist wieder in unserem Besitz.");
+	B_LogEntry_More	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, TOPIC_MOD_PIR_TALISMAN, "We salvaged the pirate's talisman.", "The talisman is back in our possession.");
 	B_SetTopicStatus	(TOPIC_MOD_PIR_TALISMAN, LOG_SUCCESS);
 
 	Mod_PiratenVorbereitungen += 1;

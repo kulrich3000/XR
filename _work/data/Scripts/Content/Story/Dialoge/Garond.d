@@ -15,23 +15,23 @@ FUNC INT Info_Mod_Garond_Hi_Condition()
 
 FUNC VOID Info_Mod_Garond_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_00"); //Wo kommst du her?
-	AI_Output(hero, self, "Info_Mod_Garond_Hi_15_01"); //Von außerhalb der Stadt.
-	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_02"); //Bist du ein Flüchtling der Kolonie? (mustert den Helden) Du bist ein Flüchtling der Kolonie.
-	AI_Output(hero, self, "Info_Mod_Garond_Hi_15_03"); //Und wenn es so wäre?
-	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_04"); //Wir dulden hier keine Verbrechen, klar?
-	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_05"); //Die Lords haben gnädig verfügt, dass euch Halunken eine zweite Chance gewährt sein soll, aber wenn es nach mir ginge, würdet ihr alle morgen am Strick baumeln.
-	AI_Output(hero, self, "Info_Mod_Garond_Hi_15_06"); //Dann bin ich froh, dass es nicht nach dir geht.
-	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_07"); //(knurrt) Sieh dich bloß vor. Ich werde ein Auge auf dich haben.
-	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_08"); //Wenn du dich nicht benimmst, sprechen wir uns wieder.
-	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_09"); //Und lass dir bloß nicht einfallen, hier auch mit Märchen hausieren zu gehen, wie du den Schläfer besiegt hast.
-	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_10"); //Von solchen Typen haben wir schon genug.
-	AI_Output(hero, self, "Info_Mod_Garond_Hi_15_11"); //Wer behauptet denn so etwas von sich?
-	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_12"); //Monty im Hafenviertel. Ist der letzte, den ich noch nicht eigenhändig aus der Stadt geworfen habe.
+	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_00"); //Where are you from?
+	AI_Output(hero, self, "Info_Mod_Garond_Hi_15_01"); //Out of town.
+	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_02"); //Are you a refugee of the colony? You're a fugitive from the colony.
+	AI_Output(hero, self, "Info_Mod_Garond_Hi_15_03"); //What if it were?
+	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_04"); //We don't tolerate any crime here, okay?
+	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_05"); //The Lords have graciously decreed that you scoundrels should be given a second chance, but if it were up to me, you would all dangle at the rope tomorrow.
+	AI_Output(hero, self, "Info_Mod_Garond_Hi_15_06"); //Then I'm glad it's not up to you.
+	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_07"); //Watch your step. I'll keep an eye on you.
+	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_08"); //If you don't behave, we'll talk again.
+	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_09"); //And don't even think of peddling fairy tales like you beat the sleeper.
+	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_10"); //We've had enough of guys like that.
+	AI_Output(hero, self, "Info_Mod_Garond_Hi_15_11"); //Who would say that?
+	AI_Output(self, hero, "Info_Mod_Garond_Hi_30_12"); //Monty in the waterfront. It's the last one I haven't thrown out of town by myself yet.
 
 	Log_CreateTopic	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Monty im Hafenviertel behauptet von sich, dass er den Schläfer besiegt habe. Den muss ich mir wohl mal zur Brust nehmen.");
+	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Monty in the harbour district claims to have defeated the sleeper. I guess I'll have to take that in my chest sometime.");
 };
 
 INSTANCE Info_Mod_Garond_Argez (C_INFO)
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_Garond_Argez (C_INFO)
 	information	= Info_Mod_Garond_Argez_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso hast du Argez nicht in die Stadt gelassen?";
+	description	= "Why didn't you let Argez into town?";
 };
 
 FUNC INT Info_Mod_Garond_Argez_Condition()
@@ -56,20 +56,20 @@ FUNC INT Info_Mod_Garond_Argez_Condition()
 
 FUNC VOID Info_Mod_Garond_Argez_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_Argez_15_00"); //Wieso hast du Argez nicht in die Stadt gelassen?
-	AI_Output(self, hero, "Info_Mod_Garond_Argez_30_01"); //Du meinst wohl den Tätowierten? Mir hat seine Fresse einfach nicht gefallen. Der hätte bestimmt Ärger gemacht.
+	AI_Output(hero, self, "Info_Mod_Garond_Argez_15_00"); //Why didn't you let Argez into town?
+	AI_Output(self, hero, "Info_Mod_Garond_Argez_30_01"); //You mean the tattooed one? I just didn't like his face. He would've been trouble.
 
 	Info_ClearChoices	(Info_Mod_Garond_Argez);
 
-	Info_AddChoice	(Info_Mod_Garond_Argez, "Hier hast du 100 Gold, lass ihn rein.", Info_Mod_Garond_Argez_B);
-	Info_AddChoice	(Info_Mod_Garond_Argez, "Ich bürge für ihn.", Info_Mod_Garond_Argez_A);
+	Info_AddChoice	(Info_Mod_Garond_Argez, "Here's 100 gold, let him in.", Info_Mod_Garond_Argez_B);
+	Info_AddChoice	(Info_Mod_Garond_Argez, "I'll vouch for him.", Info_Mod_Garond_Argez_A);
 };
 
 FUNC VOID Info_Mod_Garond_Argez_B()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_Argez_B_15_00"); //Hier hast du 100 Gold, lass ihn rein.
-	AI_Output(self, hero, "Info_Mod_Garond_Argez_B_30_01"); //(erregt) Glaubst du, mit so einer ... Beleidigung meiner Werte kannst du mich umstimmen?
-	AI_Output(self, hero, "Info_Mod_Garond_Argez_B_30_02"); //Pass auf, dass du nicht gleich endgültig vor den Toren landest!
+	AI_Output(hero, self, "Info_Mod_Garond_Argez_B_15_00"); //Here's 100 gold, let him in.
+	AI_Output(self, hero, "Info_Mod_Garond_Argez_B_30_01"); //Do you think, with such a...? Insulting my values can you change my mind?
+	AI_Output(self, hero, "Info_Mod_Garond_Argez_B_30_02"); //Make sure you don't land in front of the gates for good!
 
 	Info_ClearChoices	(Info_Mod_Garond_Argez);
 
@@ -80,13 +80,13 @@ FUNC VOID Info_Mod_Garond_Argez_B()
 
 FUNC VOID Info_Mod_Garond_Argez_A()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_Argez_A_15_00"); //Ich bürge für ihn.
-	AI_Output(self, hero, "Info_Mod_Garond_Argez_A_30_01"); //(lacht) Das wird ja immer schöner! Ist wohl dein Kollege, was?
-	AI_Output(self, hero, "Info_Mod_Garond_Argez_A_30_02"); //Mein letztes Wort dazu ist gesprochen: Er kommt nicht rein!
+	AI_Output(hero, self, "Info_Mod_Garond_Argez_A_15_00"); //I'll vouch for him.
+	AI_Output(self, hero, "Info_Mod_Garond_Argez_A_30_01"); //(laughs) This is getting better and better! Your colleague, huh?
+	AI_Output(self, hero, "Info_Mod_Garond_Argez_A_30_02"); //My final word on this is: he can't get in!
 
 	Info_ClearChoices	(Info_Mod_Garond_Argez);
 
-	Info_AddChoice	(Info_Mod_Garond_Argez, "Hier hast du 100 Gold, lass ihn rein.", Info_Mod_Garond_Argez_B);
+	Info_AddChoice	(Info_Mod_Garond_Argez, "Here's 100 gold, let him in.", Info_Mod_Garond_Argez_B);
 };
 
 INSTANCE Info_Mod_Garond_Argez2 (C_INFO)
@@ -111,7 +111,7 @@ FUNC INT Info_Mod_Garond_Argez2_Condition()
 
 FUNC VOID Info_Mod_Garond_Argez2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garond_Argez2_30_00"); //Versucht ihr nun doch, gegen meine Anweisungen zu verstoßen? (brüllt) Raus mit euch!
+	AI_Output(self, hero, "Info_Mod_Garond_Argez2_30_00"); //Are you now trying to break my orders? Get out of here!
 
 	Npc_SetRefuseTalk	(self, 30);
 
@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Garond_Zurechtfinden (C_INFO)
 	information	= Info_Mod_Garond_Zurechtfinden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie finde ich mich hier zurecht?";
+	description	= "How do I find my way around here?";
 };
 
 FUNC INT Info_Mod_Garond_Zurechtfinden_Condition()
@@ -141,9 +141,9 @@ FUNC INT Info_Mod_Garond_Zurechtfinden_Condition()
 
 FUNC VOID Info_Mod_Garond_Zurechtfinden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_Zurechtfinden_15_00"); //Wie finde ich mich hier zurecht?
-	AI_Output(self, hero, "Info_Mod_Garond_Zurechtfinden_30_01"); //(gehässig) Ziemlich schlecht, nehme ich mal an, es sei denn, du bist schon mal hier gewesen.
-	AI_Output(self, hero, "Info_Mod_Garond_Zurechtfinden_30_02"); //Außer dass wir Paladine hier nun für Ruhe und Ordnung sorgen, ändert sich nämlich in dieser Scheißstadt nichts.
+	AI_Output(hero, self, "Info_Mod_Garond_Zurechtfinden_15_00"); //How do I find my way around here?
+	AI_Output(self, hero, "Info_Mod_Garond_Zurechtfinden_30_01"); //Pretty bad, I suppose, unless you've been here before.
+	AI_Output(self, hero, "Info_Mod_Garond_Zurechtfinden_30_02"); //Except for the fact that we Paladins are now responsible for peace and order, nothing changes in this shitty city.
 };
 
 INSTANCE Info_Mod_Garond_News (C_INFO)
@@ -154,7 +154,7 @@ INSTANCE Info_Mod_Garond_News (C_INFO)
 	information	= Info_Mod_Garond_News_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibt es Neuigkeiten?";
+	description	= "Is there any news?";
 };
 
 FUNC INT Info_Mod_Garond_News_Condition()
@@ -167,12 +167,12 @@ FUNC INT Info_Mod_Garond_News_Condition()
 
 FUNC VOID Info_Mod_Garond_News_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_News_15_00"); //Gibt es Neuigkeiten?
-	AI_Output(self, hero, "Info_Mod_Garond_News_30_01"); //Allerdings! Seit ich Wache stehen muss, bricht eine Katastrophe nach der anderen über uns herein.
-	AI_Output(self, hero, "Info_Mod_Garond_News_30_02"); //Erst terrorisiert uns eine Räuberbande, und wir haben nicht genügend Mann, um deren Nest auszuräuchern, dann kommt ihr Verbrecher, und jetzt heulen uns die Bauern die Ohren voll wegen so eines finsteren Kapuzenmannes, der sie ärgern soll.
-	AI_Output(self, hero, "Info_Mod_Garond_News_30_03"); //Aber was soll so ein einzelner Knabe schon anrichten. (lacht dreckig)
-	AI_Output(hero, self, "Info_Mod_Garond_News_15_04"); //Noch nie etwas von Magie gehört?
-	AI_Output(self, hero, "Info_Mod_Garond_News_30_05"); //Schnauze!
+	AI_Output(hero, self, "Info_Mod_Garond_News_15_00"); //Is there any news?
+	AI_Output(self, hero, "Info_Mod_Garond_News_30_01"); //Yes, indeed! Since I've had to stand guard, one disaster after another has broken out on us.
+	AI_Output(self, hero, "Info_Mod_Garond_News_30_02"); //First a band of robbers terrorizes us, and we don't have enough men to smoke out their nest, then their criminal comes along, and now the peasants are howling at us because of such a sinister hoodman who is supposed to annoy them.
+	AI_Output(self, hero, "Info_Mod_Garond_News_30_03"); //But what would a single boy like that do? (laughs dirty)
+	AI_Output(hero, self, "Info_Mod_Garond_News_15_04"); //Never heard of magic?
+	AI_Output(self, hero, "Info_Mod_Garond_News_30_05"); //Shut up! Shut up!
 };
 
 INSTANCE Info_Mod_Garond_Miesepeter (C_INFO)
@@ -183,7 +183,7 @@ INSTANCE Info_Mod_Garond_Miesepeter (C_INFO)
 	information	= Info_Mod_Garond_Miesepeter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du immer so schlecht drauf?";
+	description	= "Are you always in such a bad mood?";
 };
 
 FUNC INT Info_Mod_Garond_Miesepeter_Condition()
@@ -196,12 +196,12 @@ FUNC INT Info_Mod_Garond_Miesepeter_Condition()
 
 FUNC VOID Info_Mod_Garond_Miesepeter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_Miesepeter_15_00"); //Bist du immer so schlecht drauf?
-	AI_Output(self, hero, "Info_Mod_Garond_Miesepeter_30_01"); //Dass ich hier vorm Dorf das ganze Gesindel einführen darf, hat mir kräftig die Laune verdorben.
-	AI_Output(self, hero, "Info_Mod_Garond_Miesepeter_30_02"); //Lord Hagen weiß auch nicht mehr seine guten von den schlechten Männern zu unterscheiden.
-	AI_Output(hero, self, "Info_Mod_Garond_Miesepeter_15_03"); //Du hältst wohl nicht sehr viel von Lord Hagen.
-	AI_Output(self, hero, "Info_Mod_Garond_Miesepeter_30_04"); //Wag es ja nicht, den Namen dieses verdienstvollen Mannes durch den Dreck zu ziehen!
-	AI_Output(self, hero, "Info_Mod_Garond_Miesepeter_30_05"); //Nur weil er momentan zu zögerlich ist, heißt das nicht, dass ich nicht hundertprozentig hinter ihm stehe!
+	AI_Output(hero, self, "Info_Mod_Garond_Miesepeter_15_00"); //Are you always in such a bad mood?
+	AI_Output(self, hero, "Info_Mod_Garond_Miesepeter_30_01"); //The fact that I am allowed to introduce the whole riffraff here in front of the village really spoiled my mood.
+	AI_Output(self, hero, "Info_Mod_Garond_Miesepeter_30_02"); //Lord Hagen doesn't know how to tell his good men from his bad men.
+	AI_Output(hero, self, "Info_Mod_Garond_Miesepeter_15_03"); //You don't think much of Lord Hagen, do you?
+	AI_Output(self, hero, "Info_Mod_Garond_Miesepeter_30_04"); //Don't you dare drag this meritorious man's name through the mud!
+	AI_Output(self, hero, "Info_Mod_Garond_Miesepeter_30_05"); //Just because he's too hesitant at the moment doesn't mean that I'm not one hundred percent behind him!
 };
 
 INSTANCE Info_Mod_Garond_Verbrecher (C_INFO)
@@ -224,9 +224,9 @@ FUNC INT Info_Mod_Garond_Verbrecher_Condition()
 
 FUNC VOID Info_Mod_Garond_Verbrecher_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garond_Verbrecher_30_00"); //Warte mal, du Verbrecher!
-	AI_Output(self, hero, "Info_Mod_Garond_Verbrecher_30_01"); //Wie mir zu Ohren gekommen ist, kannst du dich in der Stadt nicht an einfache Regeln halten.
-	AI_Output(self, hero, "Info_Mod_Garond_Verbrecher_30_02"); //Wie wär's mal mit einer kleinen Lektion?
+	AI_Output(self, hero, "Info_Mod_Garond_Verbrecher_30_00"); //Wait a minute, you criminal!
+	AI_Output(self, hero, "Info_Mod_Garond_Verbrecher_30_01"); //How I heard you can't play by the simple rules in town.
+	AI_Output(self, hero, "Info_Mod_Garond_Verbrecher_30_02"); //How about a little lesson?
 
 	AI_StopProcessInfos	(self);
 
@@ -241,7 +241,7 @@ INSTANCE Info_Mod_Garond_Blutkelch (C_INFO)
 	information	= Info_Mod_Garond_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Innos zum Gruß, großer Krieger.";
+	description	= "Innos salute, great warrior.";
 };
 
 FUNC INT Info_Mod_Garond_Blutkelch_Condition()
@@ -254,11 +254,11 @@ FUNC INT Info_Mod_Garond_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Garond_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_Blutkelch_15_00"); //Innos zum Gruß, großer Krieger.
-	AI_Output(self, hero, "Info_Mod_Garond_Blutkelch_30_01"); //Was soll der Scheiß?
-	AI_Output(hero, self, "Info_Mod_Garond_Blutkelch_15_02"); //Als ich unlängst diesen Weg in die Stadt kam, traf ich ein mächtiges geflügeltes Wesen.
-	AI_Output(hero, self, "Info_Mod_Garond_Blutkelch_15_03"); //Ich bin um mein Leben gerannt und konnte ihm grad noch entkommen. Sicher ist das eine Gefahr für die Stadt.
-	AI_Output(self, hero, "Info_Mod_Garond_Blutkelch_30_04"); //Du sagst es. Ein Dämon. Den greif ich mir. Der macht die Gegend nicht länger unsicher!
+	AI_Output(hero, self, "Info_Mod_Garond_Blutkelch_15_00"); //Innos salute, great warrior.
+	AI_Output(self, hero, "Info_Mod_Garond_Blutkelch_30_01"); //What the fuck is this shit?
+	AI_Output(hero, self, "Info_Mod_Garond_Blutkelch_15_02"); //When I recently came this way into town, I met a mighty winged creature.
+	AI_Output(hero, self, "Info_Mod_Garond_Blutkelch_15_03"); //I ran for my life and just escaped from it. Surely this is a danger to the city.
+	AI_Output(self, hero, "Info_Mod_Garond_Blutkelch_30_04"); //You say it. A demon. I'll grab him. He won't make the area unsafe any longer!
 
 	AI_StopProcessInfos	(self);
 
@@ -285,10 +285,10 @@ FUNC INT Info_Mod_Garond_Mario_Condition()
 
 FUNC VOID Info_Mod_Garond_Mario_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garond_Mario_30_00"); //Ich will dich noch mal ausdrücklich warnen.
-	AI_Output(self, hero, "Info_Mod_Garond_Mario_30_01"); //Du wurdest zusammen mit Mario gesehen, und es heißt, dass du ihm hilfst, seine Prüfungen zu bestehen.
-	AI_Output(self, hero, "Info_Mod_Garond_Mario_30_02"); //Ich ... Wir dulden ... so etwas nicht. Ein Milizionär muss die ihm auferlegten Bürden allein tragen, kapiert?
-	AI_Output(self, hero, "Info_Mod_Garond_Mario_30_03"); //Also halte dich in Zukunft besser fern von ihm. Wäre besser für euch beide.
+	AI_Output(self, hero, "Info_Mod_Garond_Mario_30_00"); //I want to warn you again.
+	AI_Output(self, hero, "Info_Mod_Garond_Mario_30_01"); //You were seen with Mario and it is said that you help him pass his exams.
+	AI_Output(self, hero, "Info_Mod_Garond_Mario_30_02"); //l-- We tolerate.... not something like that. A militia officer has to carry the burdens he's been burdened with alone, all right?
+	AI_Output(self, hero, "Info_Mod_Garond_Mario_30_03"); //So you better stay away from him in the future. It'd be better for both of you.
 
 	AI_StopProcessInfos	(self);
 };
@@ -313,15 +313,15 @@ FUNC INT Info_Mod_Garond_Mario2_Condition()
 
 FUNC VOID Info_Mod_Garond_Mario2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garond_Mario2_30_00"); //(gelassen) Ich habe ihn nicht provoziert, sondern diesen Querkopf nur in seine Schranken verwiesen.
-	AI_Output(self, hero, "Info_Mod_Garond_Mario2_30_01"); //Wenn er mich deswegen zum Duell herausfordert, soll er seine gerechte Strafe erhalten.
-	AI_Output(hero, self, "Info_Mod_Garond_Mario2_15_02"); //Gerecht?!
-	AI_Output(self, hero, "Info_Mod_Garond_Mario2_30_03"); //Hör bloß auf, jetzt den Philosophen raushängen zu lassen.
-	AI_Output(self, hero, "Info_Mod_Garond_Mario2_30_04"); //Du kannst von Glück sagen, dass ich eure Betrügerei nicht schon früher geahndet habe.
+	AI_Output(self, hero, "Info_Mod_Garond_Mario2_30_00"); //I didn't provoke him, I just put this awkward man in his place.
+	AI_Output(self, hero, "Info_Mod_Garond_Mario2_30_01"); //If he therefore challenges me to a duel, he shall receive his just punishment.
+	AI_Output(hero, self, "Info_Mod_Garond_Mario2_15_02"); //Just?!
+	AI_Output(self, hero, "Info_Mod_Garond_Mario2_30_03"); //Stop letting the philosopher hang out now.
+	AI_Output(self, hero, "Info_Mod_Garond_Mario2_30_04"); //You're lucky I didn't punish your cheating before.
 
 	Log_CreateTopic	(TOPIC_MOD_MARIO_RACHE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MARIO_RACHE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MARIO_RACHE, "Garond hat Mario so lange provoziert, bis ihn dieser angegriffen hat. Das soll er büßen!");
+	B_LogEntry	(TOPIC_MOD_MARIO_RACHE, "Garond provoked Mario until he was attacked by Mario. He'll pay for that!");
 
 	B_StartOtherRoutine	(self, "KAMPF");
 };
@@ -334,7 +334,7 @@ INSTANCE Info_Mod_Garond_Mario3 (C_INFO)
 	information	= Info_Mod_Garond_Mario3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Jetzt reicht es aber!";
+	description	= "Enough already!";
 };
 
 FUNC INT Info_Mod_Garond_Mario3_Condition()
@@ -347,27 +347,27 @@ FUNC INT Info_Mod_Garond_Mario3_Condition()
 
 FUNC VOID Info_Mod_Garond_Mario3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_Mario3_15_00"); //Jetzt reicht es aber!
+	AI_Output(hero, self, "Info_Mod_Garond_Mario3_15_00"); //Enough already!
 
 	Info_ClearChoices	(Info_Mod_Garond_Mario3);
 
-	Info_AddChoice	(Info_Mod_Garond_Mario3, "Wir sprechen uns noch!", Info_Mod_Garond_Mario3_B);
-	Info_AddChoice	(Info_Mod_Garond_Mario3, "Ich fordere dich ebenfalls zum Duell!", Info_Mod_Garond_Mario3_A);
+	Info_AddChoice	(Info_Mod_Garond_Mario3, "I'll talk to you later!", Info_Mod_Garond_Mario3_B);
+	Info_AddChoice	(Info_Mod_Garond_Mario3, "I call you to a duel, too!", Info_Mod_Garond_Mario3_A);
 };
 
 FUNC VOID Info_Mod_Garond_Mario3_B()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_Mario3_B_15_00"); //Wir sprechen uns noch!
-	AI_Output(self, hero, "Info_Mod_Garond_Mario3_B_30_01"); //(spöttisch) Ich freue mich darauf.
+	AI_Output(hero, self, "Info_Mod_Garond_Mario3_B_15_00"); //I'll talk to you later!
+	AI_Output(self, hero, "Info_Mod_Garond_Mario3_B_30_01"); //I look forward to it.
 
 	Info_ClearChoices	(Info_Mod_Garond_Mario3);
 };
 
 FUNC VOID Info_Mod_Garond_Mario3_A()
 {
-	AI_Output(hero, self, "Info_Mod_Garond_Mario3_A_15_00"); //Ich fordere dich ebenfalls zum Duell!
-	AI_Output(self, hero, "Info_Mod_Garond_Mario3_A_30_01"); //Ha, heute scheint mein Glückstag zu sein. Zwei Fliegen mit einer Klappe, richtig?
-	AI_Output(self, hero, "Info_Mod_Garond_Mario3_A_30_02"); //Zieh deine Waffe und kämpf um dein Leben!
+	AI_Output(hero, self, "Info_Mod_Garond_Mario3_A_15_00"); //I call you to a duel, too!
+	AI_Output(self, hero, "Info_Mod_Garond_Mario3_A_30_01"); //Ha, today seems to be my lucky day. Two birds with one stone, right?
+	AI_Output(self, hero, "Info_Mod_Garond_Mario3_A_30_02"); //Draw your gun and fight for your life!
 
 	Info_ClearChoices	(Info_Mod_Garond_Mario3);
 
@@ -379,7 +379,7 @@ FUNC VOID Info_Mod_Garond_Mario3_A()
 
 	self.guild = GIL_NONE;
 
-	B_LogEntry	(TOPIC_MOD_MARIO_RACHE, "Ich hab Garond zur Rechenschaft gezogen.");
+	B_LogEntry	(TOPIC_MOD_MARIO_RACHE, "I brought Garond to justice.");
 	B_SetTopicStatus	(TOPIC_MOD_MARIO_RACHE, LOG_SUCCESS);
 };
 

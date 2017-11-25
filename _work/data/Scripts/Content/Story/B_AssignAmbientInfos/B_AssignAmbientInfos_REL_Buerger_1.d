@@ -26,7 +26,7 @@ INSTANCE Info_REL_Buerger_1_Rundschreiben (C_INFO) // E1
 	condition	= Info_REL_Buerger_1_Rundschreiben_Condition;
 	information	= Info_REL_Buerger_1_Rundschreiben_Info;
 	permanent	= 1;
-	description = "Ich hab hier ein Rundschreiben für dich.";
+	description = "I've got a newsletter for you.";
 };                       
 
 FUNC INT Info_REL_Buerger_1_Rundschreiben_Condition()
@@ -40,7 +40,7 @@ FUNC INT Info_REL_Buerger_1_Rundschreiben_Condition()
 
 FUNC VOID Info_REL_Buerger_1_Rundschreiben_Info()
 {
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_1_Rundschreiben_15_00"); //Ich hab hier ein Rundschreiben für dich.
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_1_Rundschreiben_15_00"); //I've got a newsletter for you.
 
 	B_GiveInvItems	(hero, self, ItWr_AnselmRundschreiben, 1);
 
@@ -56,7 +56,7 @@ INSTANCE Info_REL_Buerger_1_FreudenspenderMachtBlind (C_INFO) // E1
 	condition	= Info_REL_Buerger_1_FreudenspenderMachtBlind_Condition;
 	information	= Info_REL_Buerger_1_FreudenspenderMachtBlind_Info;
 	permanent	= 1;
-	description = "Du nimmst Freudenspender?";
+	description = "You take joy dispensers?";
 };                       
 
 FUNC INT Info_REL_Buerger_1_FreudenspenderMachtBlind_Condition()
@@ -71,12 +71,12 @@ FUNC INT Info_REL_Buerger_1_FreudenspenderMachtBlind_Condition()
 
 FUNC VOID Info_REL_Buerger_1_FreudenspenderMachtBlind_Info()
 {
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_15_00"); //Du nimmst Freudenspender?
-	AI_Output(self, hero, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_01_01"); //Ja ...
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_15_02"); //Hast du keine Angst?
-	AI_Output(self, hero, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_01_03"); //Wovor?
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_15_04"); //Na du weißt doch ... Freudenspender macht blind.
-	AI_Output(self, hero, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_01_05"); //Was??? Das Scheißzeug!
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_15_00"); //You take joy dispensers?
+	AI_Output(self, hero, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_01_01"); //Yes...
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_15_02"); //Aren't you scared?
+	AI_Output(self, hero, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_01_03"); //From what?
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_15_04"); //Well, you know.... Pleasure giver makes blind.
+	AI_Output(self, hero, "Info_Mod_REL_Buerger_1_FreudenspenderMachtBlind_01_05"); //What??? That shit!
 
 	self.aivar[AIV_FLUGBLATTVERTEILT] = Wld_GetDay();
 
@@ -92,7 +92,7 @@ INSTANCE DIA_REL_Buerger_1_PEOPLE(C_INFO)
 	condition	= DIA_REL_Buerger_1_PEOPLE_Condition;
 	information	= DIA_REL_Buerger_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer sind hier die wichtigen Persönlichkeiten?";
+	description = "Who are the important personalities here?";
 };                       
 
 FUNC INT DIA_REL_Buerger_1_PEOPLE_Condition()
@@ -102,9 +102,9 @@ FUNC INT DIA_REL_Buerger_1_PEOPLE_Condition()
 
 FUNC VOID DIA_REL_Buerger_1_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_REL_Buerger_1_PEOPLE_15_00"); //Wer sind hier die wichtigen Persönlichkeiten?
-	AI_Output (self, hero, "DIA_REL_Buerger_1_PEOPLE_01_01"); //Anselm ist hier der Stadthalter. Er sorgt hier auch für Recht und Ordnung.
-	AI_Output (self, hero, "DIA_REL_Buerger_1_PEOPLE_01_02"); //Außerdem gibt es noch Robert, den besten Schmied im Lande.
+	AI_Output (hero, self, "DIA_REL_Buerger_1_PEOPLE_15_00"); //Who are the important personalities here?
+	AI_Output (self, hero, "DIA_REL_Buerger_1_PEOPLE_01_01"); //Anselm is the governor here. He also ensures law and order here.
+	AI_Output (self, hero, "DIA_REL_Buerger_1_PEOPLE_01_02"); //Besides, there's Robert, the best blacksmith in the country.
 };
 
 INSTANCE Info_Mod_REL_Buerger_1_Pickpocket (C_INFO)

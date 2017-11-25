@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Josef_Infos (C_INFO)
 	information	= Info_Mod_Josef_Infos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du Josef?";
+	description	= "Are you Josef?";
 };
 
 FUNC INT Info_Mod_Josef_Infos_Condition()
@@ -21,25 +21,25 @@ FUNC INT Info_Mod_Josef_Infos_Condition()
 
 FUNC VOID Info_Mod_Josef_Infos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Josef_Infos_15_00"); //Bist du Josef?
-	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_01"); //Ja, der bin ich. Was willst du von mir?
-	AI_Output(hero, self, "Info_Mod_Josef_Infos_15_02"); //Ich bin auf der Suche nach ein paar fehlgeleiteten Gurus.
-	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_03"); //Lass mich in Ruhe mit dem Scheiß Mann, mit der Sekte hab ich nichts mehr am Hut.
-	AI_Output(hero, self, "Info_Mod_Josef_Infos_15_04"); //Würde ein bisschen Sumpfkraut deine Zunge lockern?
-	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_05"); //Verdammte Scheiße ... gib schon her.
+	AI_Output(hero, self, "Info_Mod_Josef_Infos_15_00"); //Are you Josef?
+	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_01"); //Yes, I am him. What do you want from me?
+	AI_Output(hero, self, "Info_Mod_Josef_Infos_15_02"); //I'm looking for some misguided gurus.
+	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_03"); //Leave me alone with the fuckin' man, I ain't got nothin' to do with that cult no more.
+	AI_Output(hero, self, "Info_Mod_Josef_Infos_15_04"); //Would a little swamp herb loosen your tongue?
+	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_05"); //Fucking hell.... Give it to me.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 1);
 
 	B_UseItem	(self, ItMi_Joint);
 
-	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_06"); //Was willst du wissen
-	AI_Output(hero, self, "Info_Mod_Josef_Infos_15_07"); //Wo finde ich den Rest der Sekte?
-	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_08"); //Ich bin mit denen nach Khorinis gezogen, die haben sich allerdings getrennt.
-	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_09"); //Die einen sind in 'ner Höhle, außerhalb von Khorinis in der Nähe des Hafenviertels. Die Anderen sind auf die Anhöhe, direkt vor Khorinis, da bei dem Leuchtturm.
-	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_10"); //Frag' mich nicht, was die da wollen, die haben sich da richtig verbarrikadiert, zu denen wirste kaum kommen.
-	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_11"); //Solltest die eh besser noch in Ruhe lassen, solange du nicht genau weißt, was die vorhaben. Und jetzt hau ab!
+	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_06"); //What do you want to know
+	AI_Output(hero, self, "Info_Mod_Josef_Infos_15_07"); //Where can I find the rest of the sect?
+	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_08"); //I moved to Khorinis with them, but they split up.
+	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_09"); //Some of them are in a cave outside of Khorinis, near the harbour district. The others are on the hill, directly in front of Khorinis, there at the lighthouse.
+	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_10"); //Don't ask me what they want, they have barricaded themselves there, to which we will hardly come.
+	AI_Output(self, hero, "Info_Mod_Josef_Infos_13_11"); //You better leave them alone anyway, until you know exactly what they're up to. Now get out of here!
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Josef hat mir gesagt, dass es zwei Gruppe gibt. Die eine ist in einer Höhle außerhalb von Khorinis in der Nähe des Hafenviertels, die andere beim Leuchtturm. Den Leuchtturm sollte ich lieber vorerst unberührt lassen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Josef told me there are two groups. One is in a cave outside of Khorinis near the harbour quarter, the other near the lighthouse. I'd rather not touch the lighthouse for the time being.");
 };
 
 INSTANCE Info_Mod_Josef_Crawlersekret (C_INFO)
@@ -50,7 +50,7 @@ INSTANCE Info_Mod_Josef_Crawlersekret (C_INFO)
 	information	= Info_Mod_Josef_Crawlersekret_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kennst du einen Ort...";
+	description	= "Do you know a place...";
 };
 
 FUNC INT Info_Mod_Josef_Crawlersekret_Condition()
@@ -65,8 +65,8 @@ FUNC INT Info_Mod_Josef_Crawlersekret_Condition()
 
 FUNC VOID Info_Mod_Josef_Crawlersekret_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Josef_Crawlersekret_15_00"); //Kennst du einen Ort, an dem ich ein starkes Minecrawler-Sekret bekommen kann?
-	AI_Output(self, hero, "Info_Mod_Josef_Crawlersekret_13_01"); //Wenn ich mich nicht irre, hat Fortuno was von dem Zeug verkauft. Solltest mal bei ihm vorbei schauen.
+	AI_Output(hero, self, "Info_Mod_Josef_Crawlersekret_15_00"); //Do you know a place where I can get a strong minecrawler secretary?
+	AI_Output(self, hero, "Info_Mod_Josef_Crawlersekret_13_01"); //If I'm not mistaken, Fortuno sold some of this stuff. You should stop by his place.
 };
 
 INSTANCE Info_Mod_Josef_Pickpocket (C_INFO)

@@ -18,26 +18,26 @@ FUNC INT Info_Mod_HofstaatHofnarr_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatHofnarr_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_00"); //Ich grüße Euch, werter Kehrwisch. Der Arsch hat mir von Eurem Kommen berichtet.
-	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_01"); //Du bist das Orakel? Ich dachte, du bist der Hofnarr.
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_02"); //Der bin ich auch.
-	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_03"); //Du bist der Hofnarr und das Orakel?
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_04"); //Der Einäugige ist unter den Blinden der König, doch der Weise ist unter den Spinnern ein Narr.
-	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_05"); //Was soll das heißen?
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_06"); //Dass jede Münze zwei Seiten hat und du nicht erwarten kannst, nur weil der Kopf oben liegt, die Zahl unten vorzufinden.
-	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_07"); //Ist das schon dein Orakelspruch?
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_08"); //Natürlich nicht, zuerst musst du immerhin deine Frage stellen.
-	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_09"); //Klar ... Meine Frage. Ich suche etwas, das den König wieder glücklich macht.
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_10"); //Und hier ist deine Antwort.
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_00"); //Greetings, my dear sweat. That asshole told me about your coming.
+	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_01"); //You're the Oracle? I thought you were the jester of the court.
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_02"); //So am I.
+	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_03"); //You're the jester and the oracle?
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_04"); //The one-eyed man is king among the blind, but the wise man is a fool among the madmen.
+	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_05"); //What do you mean?
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_06"); //That each coin has two sides and you can't expect just because the head is up to find the number below.
+	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_07"); //Is that your oracle saying yet?
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_08"); //Of course not, first you have to ask your question.
+	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_09"); //Sure... My question. I'm looking for something to make the King happy again.
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_10"); //And here's your answer.
 
 	B_GiveInvItems	(self, hero, ItMi_Orakelpille, 1);
 
-	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_11"); //Ein Bonbon?
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_12"); //Nennen wir es eine Orakelpille. Wenn du mich jetzt entschuldigen würdest.
+	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Hi_15_11"); //A candy?
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Hi_27_12"); //Let's call it an oracle pill. Now, if you'll excuse me.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Das Orakel hat mir eine Orakelpille gegeben. Ich sollte sie schlucken und sehen, wie mir das bei meinem Problem hilft.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "The Oracle gave me an oracle pill. I should swallow it and see how it helps me with my problem.");
 };
 
 INSTANCE Info_Mod_HofstaatHofnarr_KingSorge (C_INFO)
@@ -60,11 +60,11 @@ FUNC INT Info_Mod_HofstaatHofnarr_KingSorge_Condition()
 
 FUNC VOID Info_Mod_HofstaatHofnarr_KingSorge_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_KingSorge_27_00"); //Ich sehe, Ihr hattet kein Glück beim König.
-	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_KingSorge_15_01"); //Glaubst du, der Sumpf war gar nicht die Antwort?
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_KingSorge_27_02"); //Ich mag vielleicht ein Narr sein, doch meine Aufgabe als Orakel nehme ich sehr ernst, werter Kehrwisch.
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_KingSorge_27_03"); //Wenn Ihr den Sumpf gesehen habt, so ist er auch die Antwort. Das Problem ist, dass Ihr ihn eben gesehen habt, der König nur davon hörte.
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_KingSorge_27_04"); //Ich gebe Euch einen Hinweis, für den Ihr keine Orakelpillen zu schlucken braucht. Geht in die Gemächer des Königs, dort werdet Ihr die Antwort finden.
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_KingSorge_27_00"); //I see you've had no luck with the King.
+	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_KingSorge_15_01"); //You think the swamp wasn't the answer?
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_KingSorge_27_02"); //I may be a fool, but I take my task as an oracle very seriously.
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_KingSorge_27_03"); //If you have seen the swamp, it is also the answer. The problem is that you just saw him, the king only heard about it.
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_KingSorge_27_04"); //I'll give you a clue that doesn't require you to swallow oracle pills. Go to the King's chambers, where you will find the answer.
 
 	AI_StopProcessInfos	(self);
 
@@ -72,7 +72,7 @@ FUNC VOID Info_Mod_HofstaatHofnarr_KingSorge_Info()
 
 	B_StartOtherRoutine	(self, "START");
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Das Problem scheint zu sein, dass der König den Sumpf nicht gesehen hat. Die Lösung befindet sich im Gemach des Königs, sagt der Hofnarr.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "The problem seems to be that the king hasn't seen the swamp. The solution is in the king's chamber, says the jester.");
 };
 
 INSTANCE Info_Mod_HofstaatHofnarr_Transportsystem (C_INFO)
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_HofstaatHofnarr_Transportsystem (C_INFO)
 	information	= Info_Mod_HofstaatHofnarr_Transportsystem_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche einen angenehmen Weg in die Sümpfe.";
+	description	= "I'm looking for a pleasant way to the swamps.";
 };
 
 FUNC INT Info_Mod_HofstaatHofnarr_Transportsystem_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_Mod_HofstaatHofnarr_Transportsystem_Condition()
 
 FUNC VOID Info_Mod_HofstaatHofnarr_Transportsystem_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Transportsystem_15_00"); //Ich suche einen angenehmen Weg in die Sümpfe.
-	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Transportsystem_27_01"); //Ich bin nur ein einfacher Narr, niemand, der dir weiterhelfen könnte, werter Kehrwisch.
+	AI_Output(hero, self, "Info_Mod_HofstaatHofnarr_Transportsystem_15_00"); //I'm looking for a pleasant way to the swamps.
+	AI_Output(self, hero, "Info_Mod_HofstaatHofnarr_Transportsystem_27_01"); //I'm just a simple fool, no one to help you, my dear sweat.
 };
 
 INSTANCE Info_Mod_HofstaatHofnarr_Pickpocket (C_INFO)

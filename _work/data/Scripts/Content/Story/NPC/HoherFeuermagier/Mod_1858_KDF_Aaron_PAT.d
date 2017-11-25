@@ -1,7 +1,7 @@
 INSTANCE Mod_1858_KDF_Aaron_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Garan";
+	name 		= "guaranty";
 	guild 		= GIL_VLK;
 	id 			= 1858;
 	voice 		= 11;

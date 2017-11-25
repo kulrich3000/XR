@@ -17,12 +17,12 @@ FUNC VOID Info_Mod_Diego_IR_Hi_Info()
 {
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_00"); //(schaut in die Gegend) Nun sie sich einmal jemand diesen gewaltigen Höhlenkomplex an.
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_01"); //Dagegen war die Wohnhöhle im neuen Lager kümmerlich.
-	AI_Output(hero, self, "Info_Mod_Diego_IR_Hi_15_02"); //Ja, wirklich beeindruckend.
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_03"); //(zum Helden) Diese Insel scheint doch sehr weitläufig zu sein.
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_04"); //Und wer weiß, was uns unterwegs erwartet an Fallen und Gegnern.
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_05"); //Wir werden zweifelsfrei unser gesamtes Geschick aufbieten müssen, um da durchzukommen.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_00"); //(looks into the area) Now someone has to take a look at this huge cave complex.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_01"); //In contrast, the living cave in the new camp was meagre.
+	AI_Output(hero, self, "Info_Mod_Diego_IR_Hi_15_02"); //Yeah, really impressive.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_03"); //This island seems to be quite extensive.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_04"); //And who knows what awaits us on the way in traps and enemies.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Hi_11_05"); //We will undoubtedly have to use all our skills to get through it.
 };
 
 INSTANCE Info_Mod_Diego_IR_Hebel (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Diego_IR_Hebel (C_INFO)
 	information	= Info_Mod_Diego_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Can you use one lever while I move the other?";
 };
 
 FUNC INT Info_Mod_Diego_IR_Hebel_Condition()
@@ -50,7 +50,7 @@ FUNC VOID Info_Mod_Diego_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Hebel_11_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Hebel_11_00"); //Of course it is. Maybe if it's going to get us somewhere...
 
 	Mod_IR_Hebel = 1;
 
@@ -79,7 +79,7 @@ FUNC INT Info_Mod_Diego_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Diego_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Ambient01_11_00"); //Womöglich werden uns die Hebel den weiteren Zugang zur Insel ermöglich.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Ambient01_11_00"); //Maybe the levers will give us further access to the island.
 
 	AI_StopProcessInfos	(self);
 };
@@ -104,8 +104,8 @@ FUNC INT Info_Mod_Diego_IR_Ambient02_Condition()
 
 FUNC VOID Info_Mod_Diego_IR_Ambient02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Ambient02_11_00"); //Zweifelsohne gibt es auch hier einen versteckten Mechanismus, der uns den Weg offenlegt.
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Ambient02_11_01"); //Und ich habe den verdacht, dass ein Bogen die Lösung bringen könnte.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Ambient02_11_00"); //There is no doubt that there is a hidden mechanism here, too, which opens the way for us.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Ambient02_11_01"); //And I suspected that a bow could solve the problem.
 
 	AI_StopProcessInfos	(self);
 };
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Diego_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Diego_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Let's get going. Will you escort me to the island?";
 };
 
 FUNC INT Info_Mod_Diego_IR_GehtLos_Condition()
@@ -137,8 +137,8 @@ FUNC VOID Info_Mod_Diego_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Diego_IR_GehtLos_11_00"); //Da fragst du noch? Ob Trolle oder garstige Erzbarone ... so wie ich stets auf dich zählen konnte, kannst du dir nun meiner Unterstützung sicher sein.
-	AI_Output(self, hero, "Info_Mod_Diego_IR_GehtLos_11_01"); //Und die eine oder andere Unwägbarkeit wird sich bestimmt auf der Insel finden bei der Fingerspitzengefühl gefragt ist.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_GehtLos_11_00"); //Are you going to ask? Whether trolls or nasty ore barons.... just as I have always counted on you, you can be assured of my support.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_GehtLos_11_01"); //And one or the other imponderability will undoubtedly be found on the island where tact is required.
 
 	Mod_IR_Dabei += 1;
 
@@ -157,7 +157,7 @@ INSTANCE Info_Mod_Diego_IR_GehBack (C_INFO)
 	information	= Info_Mod_Diego_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Go back to the ship.";
 };
 
 FUNC INT Info_Mod_Diego_IR_GehBack_Condition()
@@ -174,7 +174,7 @@ FUNC VOID Info_Mod_Diego_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Diego_IR_GehBack_11_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_GehBack_11_00"); //Well, if you need me, you know where to find me.
 
 	Mod_IR_Dabei -= 1;
 
@@ -193,7 +193,7 @@ INSTANCE Info_Mod_Diego_IR_Lehrer (C_INFO)
 	information	= Info_Mod_Diego_IR_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Diego_IR_Lehrer_Condition()
@@ -208,8 +208,8 @@ FUNC VOID Info_Mod_Diego_IR_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Lehrer_11_01"); //Ja, ich kann dich die Geschicklichkeit lehren und dir den Umgang mit dem Bogen zeigen.
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Lehrer_11_02"); //Außerdem habe ich genügend Munition bei mir, falls deine knapp werden sollte.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Lehrer_11_01"); //Yes, I can teach you the skill and show you how to use the bow.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Lehrer_11_02"); //I also have enough ammunition with me in case yours gets short.
 };
 
 INSTANCE Info_Mod_Diego_IR_Lernen_Bogen (C_INFO)
@@ -220,7 +220,7 @@ INSTANCE Info_Mod_Diego_IR_Lernen_Bogen (C_INFO)
 	information	= Info_Mod_Diego_IR_Lernen_Bogen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Bogenschießen bei.";
+	description	= "Teach me archery.";
 };
 
 FUNC INT Info_Mod_Diego_IR_Lernen_Bogen_Condition()
@@ -234,11 +234,11 @@ FUNC INT Info_Mod_Diego_IR_Lernen_Bogen_Condition()
 
 FUNC VOID Info_Mod_Diego_IR_Lernen_Bogen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_IR_Lernen_Bogen_15_00"); //Bring mir Bogenschießen bei.
+	AI_Output(hero, self, "Info_Mod_Diego_IR_Lernen_Bogen_15_00"); //Teach me archery.
 
 	Info_ClearChoices	(Info_Mod_Diego_IR_Lernen_Bogen);
 	
-	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, "Zurück.", Info_Mod_Diego_IR_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, "Back off.", Info_Mod_Diego_IR_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Diego_IR_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Diego_IR_Lernen_Bogen_1);
 };
@@ -254,7 +254,7 @@ FUNC VOID Info_Mod_Diego_IR_Lernen_Bogen_5()
 
 	Info_ClearChoices	(Info_Mod_Diego_IR_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, "Zurück.", Info_Mod_Diego_IR_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, "Back off.", Info_Mod_Diego_IR_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Diego_IR_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Diego_IR_Lernen_Bogen_1);
 };
@@ -265,7 +265,7 @@ FUNC VOID Info_Mod_Diego_IR_Lernen_Bogen_1()
 
 	Info_ClearChoices	(Info_Mod_Diego_IR_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, "Zurück.", Info_Mod_Diego_IR_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, "Back off.", Info_Mod_Diego_IR_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Diego_IR_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Diego_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Diego_IR_Lernen_Bogen_1);
 };
@@ -278,7 +278,7 @@ INSTANCE Info_Mod_Diego_IR_Lernen_DEX (C_INFO)
 	information	= Info_Mod_Diego_IR_Lernen_DEX_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeig mir, wie ich geschickter werden kann.";
+	description	= "Show me how to be more skillful.";
 };
 
 FUNC INT Info_Mod_Diego_IR_Lernen_DEX_Condition()
@@ -291,8 +291,8 @@ FUNC INT Info_Mod_Diego_IR_Lernen_DEX_Condition()
 
 FUNC VOID Info_Mod_Diego_IR_Lernen_DEX_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diego_IR_Lernen_DEX_15_00"); //Zeig mir, wie ich geschickter werden kann.
-	AI_Output(self, hero, "Info_Mod_Diego_IR_Lernen_DEX_16_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Diego_IR_Lernen_DEX_15_00"); //Show me how to be more skillful.
+	AI_Output(self, hero, "Info_Mod_Diego_IR_Lernen_DEX_16_01"); //What do you want to learn?
 
 	Info_ClearChoices	(Info_Mod_Diego_IR_Lernen_DEX);
 
@@ -371,7 +371,7 @@ INSTANCE Info_Mod_Diego_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Diego_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Diego_IR_Heiltrank_Condition()
@@ -391,31 +391,31 @@ FUNC VOID Info_Mod_Diego_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Diego_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Essence of Healing", Info_Mod_Diego_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Diego_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Elixir of Healing", Info_Mod_Diego_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Diego_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Extract of Healing", Info_Mod_Diego_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Diego_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Essence of Healing", Info_Mod_Diego_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Diego_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Drink of light healing", Info_Mod_Diego_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Diego_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Light healing potion", Info_Mod_Diego_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Diego_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Diego_IR_Heiltrank, "Drink of fast healing", Info_Mod_Diego_IR_Heiltrank_Health_05);
 	};
 };
 

@@ -1,7 +1,7 @@
 INSTANCE Monster_11040_Mahisha_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mahisha";	
+	name 		= "mahisha";	
 	guild 		= GIL_DEMON;
 	id 			= 11040;
 	voice 		= 20;

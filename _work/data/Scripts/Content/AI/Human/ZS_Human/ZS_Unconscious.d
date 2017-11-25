@@ -98,7 +98,7 @@ func void ZS_Unconscious ()
 			{
 				Mod_LeftysBauern = 3;
 
-				B_LogEntry	(TOPIC_MOD_SLD_LEFTYBAUERN, "Ich habe Horatio und fünf weitere Bauern verprügelt. Ich sollte jetzt zu Lefty gehen und ihm Bescheid geben.");
+				B_LogEntry	(TOPIC_MOD_SLD_LEFTYBAUERN, "I beat up Horatio and five more peasants. I should go to Lefty's now and let him know.");
 			};
 		};
 	};

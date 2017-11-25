@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Velario_Hi (C_INFO)
 	information	= Info_Mod_Velario_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Velario_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Velario_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Velario_Hi_06_01"); //Ich bin Velario.
+	AI_Output(self, hero, "Info_Mod_Velario_Hi_06_01"); //I'm Velario.
 };
 
 INSTANCE Info_Mod_Velario_MangelQuest (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Velario_MangelQuest (C_INFO)
 	information	= Info_Mod_Velario_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was studierst du, Bruder?";
+	description	= "What are you studying, brother?";
 };
 
 FUNC INT Info_Mod_Velario_MangelQuest_Condition()
@@ -42,18 +42,18 @@ FUNC INT Info_Mod_Velario_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_Velario_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest_15_00"); //Was studierst du, Bruder?
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_01"); //Hmm, was? Ohh, entschuldige, ich war gerade in die Schriften vertieft.
-	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest_15_02"); //Womit beschäftigst du dich?
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_03"); //Nun, ich suche nach neuen Möglichkeiten der magischen Kriegsführung.
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_04"); //Diese Belagerung verlangt uns alles ab, und da darf ich nichts unversucht lassen, uns einen Vorteil im Kampf zu verschaffen.
-	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest_15_05"); //Und wie laufen die Studien?
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_06"); //Ehrlich gesagt ... miserabel. Ich habe schon jedes dieser Bücher hier gelesen, aber es steht einfach nichts Nennenswertes drin.
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_07"); //Ich bräuchte einfach mehr Schriften für meine Studien, sonst bezweifele ich ernsthaft, dass ich jemals irgendwelche Fortschritte erziele.
+	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest_15_00"); //What are you studying, brother?
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_01"); //Hmm, huh? Ohh, sorry, I was just into the scriptures.
+	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest_15_02"); //What are you working on?
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_03"); //Well, I'm looking for new ways of magical warfare.
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_04"); //This siege demands everything of us, and I must do my utmost to gain an advantage in battle.
+	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest_15_05"); //And how are the studies going?
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_06"); //To be honest... miserable. I've read every one of these books here, but there's nothing worth mentioning.
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest_06_07"); //I would simply need more writings for my studies, otherwise I seriously doubt that I will ever make any progress.
 
 	B_StartMangel();
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Velario sucht verzweifelt nach Schriften über magische Kriegsführung, um der Belagerung besser zu widerstehen.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Velario desperately searches for writings about magic warfare to better resist the siege.");
 };
 
 INSTANCE Info_Mod_Velario_MangelQuest2 (C_INFO)
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Velario_MangelQuest2 (C_INFO)
 	information	= Info_Mod_Velario_MangelQuest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich denke das hier könnte dich interessieren.";
+	description	= "I think you might be interested in this.";
 };
 
 FUNC INT Info_Mod_Velario_MangelQuest2_Condition()
@@ -80,29 +80,29 @@ FUNC INT Info_Mod_Velario_MangelQuest2_Condition()
 
 FUNC VOID Info_Mod_Velario_MangelQuest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest2_15_00"); //Ich denke das hier könnte dich interessieren.
+	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest2_15_00"); //I think you might be interested in this.
 
 	B_GiveInvItems	(hero, self, ItWr_ZombieToHuman, 1);
 
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_01"); //Lass sehen.
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_01"); //Let me see.
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_02"); //(verblüfft) Was zum ... Bei Innos, woher hast du dieses Werk und unter welchem Umständen ist es in deinen Besitz gelangt?
-	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest2_15_03"); //Es stammt aus einem uralten Tempel und die Umstände ... sagen wir mal, ich war dem Tode näher, als mir lieb war.
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_04"); //Das muss ich erst einmal gründlich studieren. Ich glaube, das könnte mir zu entscheidenden Kenntnissen verhelfen ...
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_05"); //Aber warte, nimm diese Spruchrollen zum Dank.
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_02"); //What the...? At Innos, where did you get this work and under what circumstances did you get it?
+	AI_Output(hero, self, "Info_Mod_Velario_MangelQuest2_15_03"); //It comes from an ancient temple and the circumstances... let's say I was closer to death than I cared about.
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_04"); //I have to study this thoroughly first. I think that this could help me gain crucial knowledge....
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_05"); //But wait, take these roles as a thank you.
 
-	B_ShowGivenThings	("Feuerregen Spruchrolle und 2 Feuersturm Spruchrollen erhalten");
+	B_ShowGivenThings	("Fire rain saying roll and 2 firestorm saying rolls receive");
 
-	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_06"); //Eine vergleichsweise bescheidene Gabe, wenn das Buch tatsächlich das halten sollte, was es auf den ersten Blick zu versprechen scheint.
+	AI_Output(self, hero, "Info_Mod_Velario_MangelQuest2_06_06"); //A comparatively modest gift, if the book should actually keep what it seems to promise at first glance.
 
 	CreateInvItems	(hero, ItSc_Firerain, 1);
 	CreateInvItems	(hero, ItSc_Pyrokinesis, 2);
 
 	B_GivePlayerXP	(500);
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Velario war über das Buch mehr als nur glücklich.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Velario was more than happy about the book.");
 
 	Mod_PAT_VelarioDay = Wld_GetDay();
 };
@@ -127,20 +127,20 @@ FUNC INT Info_Mod_Velario_AurenUndKristalle_Condition()
 
 FUNC VOID Info_Mod_Velario_AurenUndKristalle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_00"); //Ja, endlich, der Durchbruch!
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_01"); //Was hast du herausgefunden?
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_02"); //Im Buch waren zahlreiche Ausführungen über so genannte "Aurazauber" festgehalten.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_03"); //Im gemeinsamen Studium mit einem der Dämonenmagier, ist es mir gelungen Spruchrollen herzustellen, welche diese Macht in sich bergen.
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_04"); //Was vermögen diese Zauber?
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_05"); //Wenn alles wie geplant funktioniert, sollte bei Anwendung dieser Spruchrolle jeder in der Umgebung über einen längeren Zeitraum konstant von Flammen versehrt werden.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_06"); //Dadurch könnten dutzende von Feinden auf einen Schlag ausgelöscht werden ...
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_07"); //Hört sich doch toll an. Genau das, was wir brauchen.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_08"); //Ja ... nur ... es gibt da ein Problem ...
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_09"); //Ja, was?
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_10"); //Wie ich sagte wird jeder in der Umgebung davon versehrt ... dies schließt auch den Magier, der die Spruchrolle nutzt, selbst mit ein.
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_11"); //Das ist natürlich weniger gut ...
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_12"); //Außerdem wirkt die Spruchrolle nur auf Feinde in direkter Umgebung.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_13"); //Das heißt, wollte man die Spruchrolle mit größtmöglichem Effekt einsetzen, müsste sich der Anwender allein vor den Toren unter Scharen von Feinden begeben.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_00"); //Yes, finally, the breakthrough!
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_01"); //What did you find out?
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_02"); //Im Buch waren zahlreiche Ausführungen über so genannte "aura spell" festgehalten.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_03"); //By studying together with one of the demon magicians, I have succeeded in creating spell rolls that hold this power.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_04"); //What are these spells capable of?
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_05"); //If everything works as planned, it is advisable to maintain a constant flame damage to everyone in the environment for a longer period of time when using this spell.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_06"); //This could wipe out dozens of enemies in one fell swoop....
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_07"); //Sounds great to me. Just what we need.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_08"); //Yes... just... there's a problem...
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_09"); //Yeah, what?
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_10"); //As I said, everyone in the area is being harmed by it.... including the magician who uses the role of spell itself.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle_15_11"); //This is of course less good...
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_12"); //In addition, the role only affects enemies in the immediate vicinity.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle_06_13"); //In other words, if one wanted to use the saying role with the greatest possible effect, the user would have to go alone in front of the gates among swarms of enemies.
 };
 
 INSTANCE Info_Mod_Velario_AurenUndKristalle2 (C_INFO)
@@ -151,7 +151,7 @@ INSTANCE Info_Mod_Velario_AurenUndKristalle2 (C_INFO)
 	information	= Info_Mod_Velario_AurenUndKristalle2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Belagerungsring mittlerweile so oft durchquert ...";
+	description	= "I've crossed the siege ring so many times...";
 };
 
 FUNC INT Info_Mod_Velario_AurenUndKristalle2_Condition()
@@ -164,28 +164,28 @@ FUNC INT Info_Mod_Velario_AurenUndKristalle2_Condition()
 
 FUNC VOID Info_Mod_Velario_AurenUndKristalle2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_00"); //Ich habe den Belagerungsring mittlerweile so oft durchquert ...
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_01"); //Verstehe ich das richtig, du würdest dich dazu bereit erklären die Spruchrolle anzuwenden?
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_02"); //Nun, es wäre nicht das erste Mal, dass ich mich in ein Wespennest begebe ...
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_03"); //Fantastisch. Da wäre aber eben noch die Sache mit dem Magie- und Feuerschaden.
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_04"); //Ja, gibt es etwas, dass mir helfen könnte dem zu widerstehen?
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_05"); //Eventuell ... das Buch hat auch Anhaltspunkte dazu gegeben.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_06"); //Es scheint möglich zu sein Kristalle magisch so zu beeinflussen, dass sie elementare und magische Energien in sich aufnehmen.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_07"); //Ein solcher Kristall könnte in der Lage dazu sein, dich vor einem Großteil des Schadens zu bewahren.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_08"); //Dazu wären allerdings einige Materialien notwendig, die ich nicht hier habe.
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_09"); //Was würdest du denn dafür benötigen?
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_10"); //Nun, allem voran Kristalle. Und wenn ich mich recht entsinne, gibt es in der Nähe auch eine Höhle, wo es mehr als genug davon gibt.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_11"); //Wenn du mir vielleicht 20 Bergkristalle bringen könntest, sowie zehn Kristalle der Kristallcrawler, könnte ich meine Arbeiten daran aufnehmen.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_12"); //Um die Kristalle von den Crawlern abzubekommen, solltest du versuchen, diese mit einer Schmiedezange zu fassen und abzubrechen. Das müsste klappen.
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_13"); //In Ordnung, ich mache mich auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_14"); //Gut. Innos behüte dich.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_00"); //I've crossed the siege ring so many times...
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_01"); //Do I understand that correctly, you would agree to use the saying role?
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_02"); //Well, it wouldn't be the first time I've ever set foot in a wasp's nest...
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_03"); //Fantastic. But there's the magic and fire damage thing.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_04"); //Yeah, is there something that could help me resist that?
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_05"); //Possibly... the book also gave clues.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_06"); //It seems to be possible to magically influence crystals in such a way that they absorb elemental and magical energies.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_07"); //Such a crystal could be able to protect you from much of the damage.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_08"); //However, this would require some materials that I do not have here.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_09"); //What would you need for that?
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_10"); //Well, above all, crystals. And if I remember correctly, there is also a cave nearby where there are more than enough of them.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_11"); //If you could bring me maybe 20 rock crystals and 10 crystals of the crystal crawler, I could start my work on them.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_12"); //In order to get the crystals from the crawlers, you should try to pick them up with a forging tongs and break them off. This should work.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle2_15_13"); //All right, I'm on my way.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle2_06_14"); //Good. Innos keep you safe.
 
 	Log_CreateTopic	(TOPIC_MOD_FM_AURENUNDKRISTALLE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FM_AURENUNDKRISTALLE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FM_AURENUNDKRISTALLE, "Velario hat einige mächtige Auraspruchrollen entwickelt, die jedoch auch den Anwender mit Feuerschaden verheeren. Um mich davor zu schützen, könnte er Kristalle magisch beeinflussen, die den Feuer- und Magieschaden absorbieren. Dazu soll ich ihm aus der Kristallhöhle 20 Bergkristalle bringen, wie auch 10 Kristalle von den Crawlern, wozu ich eine Schmiedezange benötige.");
+	B_LogEntry	(TOPIC_MOD_FM_AURENUNDKRISTALLE, "Velario has developed some powerful aura spelling roles, but they also devastate the user with fire damage. To protect me from this, it could magically influence crystals that absorb fire and magic damage. For this purpose I shall bring him 20 rock crystals from the crystal cave, as well as 10 crystals from the crawlers, for which I need a forging tongs.");
 
 	Log_CreateTopic (TOPIC_TalentAnimalTrophy, LOG_NOTE);
-	B_LogEntry_NS (TOPIC_TalentAnimalTrophy, "... Kristallcrawlern Kristalle abnehmen.");
+	B_LogEntry_NS (TOPIC_TalentAnimalTrophy, "... crystal crawler crystals.");
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -198,7 +198,7 @@ INSTANCE Info_Mod_Velario_AurenUndKristalle3 (C_INFO)
 	information	= Info_Mod_Velario_AurenUndKristalle3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Kristalle.";
+	description	= "I got the crystals.";
 };
 
 FUNC INT Info_Mod_Velario_AurenUndKristalle3_Condition()
@@ -213,11 +213,11 @@ FUNC INT Info_Mod_Velario_AurenUndKristalle3_Condition()
 
 FUNC VOID Info_Mod_Velario_AurenUndKristalle3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle3_15_00"); //Ich habe die Kristalle.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle3_06_01"); //Ausgezeichnet. Wunderschöne Exemplare. Ich bin schon gespannt, was sich daraus machen lässt.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle3_06_02"); //Schau am besten immer mal wieder alle paar Tage vorbei. Wenn ich Fortschritte gemacht habe werde ich dir sofort Bescheid geben.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle3_15_00"); //I got the crystals.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle3_06_01"); //Excellent. Beautiful specimens. I'm curious to see what can be made of it.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle3_06_02"); //It's best to check back every few days. When I make progress, I'll let you know immediately.
 
-	B_LogEntry	(TOPIC_MOD_FM_AURENUNDKRISTALLE, "Velario hat die Kristalle und macht sich sofort an die Arbeit. In einigen Tagen sollte ich wieder bei ihm vorbeischauen.");
+	B_LogEntry	(TOPIC_MOD_FM_AURENUNDKRISTALLE, "Velario has the crystals and gets right to work. In a few days I should be back at his place.");
 
 	Mod_PAT_VelarioDay = Wld_GetDay();
 
@@ -245,25 +245,25 @@ FUNC INT Info_Mod_Velario_AurenUndKristalle4_Condition()
 
 FUNC VOID Info_Mod_Velario_AurenUndKristalle4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_00"); //Es ist tatsächlich gelungen! Ich konnte diesen Kristall zu einem magischen Werkzeug umformen.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_01"); //Wenn du ihn bei dir trägst, sollte er dir einen umfassenden Schutz gegen Magie und Feuer bieten, der seines gleichen sucht.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_00"); //It has indeed succeeded! I was able to transform this crystal into a magical tool.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_01"); //If you carry it with you, it should provide you with a comprehensive protection against magic and fire that seeks its equal.
 
 	B_GiveInvItems	(self, hero, ItMi_KristallPrisma, 1);
 
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_02"); //Hier, nun solltest du diese Aura-Spruchrollen ohne große Gefahr für dein Leben anwenden können.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_02"); //Here, now you should be able to use these aura sayings without great danger to your life.
 
 	B_GiveInvItems	(self, hero, ItSc_AuraFlammen, 2);
 
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_03"); //Nimm auch noch diesen Schnelligkeitstrank und die Verwandlungsspruchrolle.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_03"); //Take also this speed potion and the transformational role.
 
 	CreateInvItems	(hero, ItSc_TrfSnapper, 1);
 	CreateInvItems	(hero, ItPo_Speed, 1);
 
-	B_ShowGivenThings	("Trank der Geschwindigkeit und Spruchrolle 'Verwandlung Snapper' erhalten");
+	B_ShowGivenThings	("Drink of speed and saying role' transformation snapper' get obtained");
 
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_04"); //Sie könnten dir dabei nützlich sein, die Reihen der Feinde zu passieren.
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle4_15_05"); //Eindrucksvolle Utensilien der Magie. Hab Dank.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_06"); //Und nun ... lasse dich von Innos' Flamme beseelen, wenn du diesen verfluchten Hexenweibern ordentlich einheizt!
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_04"); //They may be useful to you in passing the ranks of enemies.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle4_15_05"); //Impressive utensils of magic. I appreciate it.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle4_06_06"); //And now.... Let the flame of Innos inspire you when you heat up these cursed witch women!
 
 	B_SetTopicStatus	(TOPIC_MOD_FM_AURENUNDKRISTALLE, LOG_SUCCESS);
 
@@ -280,7 +280,7 @@ INSTANCE Info_Mod_Velario_AurenUndKristalle5 (C_INFO)
 	information	= Info_Mod_Velario_AurenUndKristalle5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Spruchrolle angewendet.";
+	description	= "I've been using the scroll.";
 };
 
 FUNC INT Info_Mod_Velario_AurenUndKristalle5_Condition()
@@ -294,18 +294,18 @@ FUNC INT Info_Mod_Velario_AurenUndKristalle5_Condition()
 
 FUNC VOID Info_Mod_Velario_AurenUndKristalle5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle5_15_00"); //Ich habe die Spruchrolle angewendet.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle5_06_01"); //(erwartungsvoll) Und, wie ist es verlaufen?
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle5_15_02"); //Sie haben alle Erwartungen erfüllt.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle5_06_03"); //(erfreut) Ausgezeichnet! Das wird einige neue Impulse für die Forschung an der Magie liefern.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle5_06_04"); //Hier, nimm zum Dank das Rezept für die Spruchrollen und einige Manatränke.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle5_15_00"); //I've been using the scroll.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle5_06_01"); //So, how did it go?
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle5_15_02"); //You have fulfilled all expectations.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle5_06_03"); //(pleased) Excellent! This will provide some new impetus for research into magic.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle5_06_04"); //Here, take the recipe for the spell rolls and some mana drinks.
 
 	CreateInvItems	(hero, ItWr_Scroll_AuraFlammen, 1);
 	CreateInvItems	(hero, ItPo_Mana_Addon_04, 3);
 
-	B_ShowGivenThings	("Rezept für 'Aura der Flammen' und 3 Reines Mana erhalten");
+	B_ShowGivenThings	("Recipe for' Aura of the Flames' and 3 Pure Mana obtained");
 
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle5_06_05"); //Innos sei mit dir.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle5_06_05"); //Innos be with you.
 
 	B_GivePlayerXP	(100);
 };
@@ -318,7 +318,7 @@ INSTANCE Info_Mod_Velario_AurenUndKristalle6 (C_INFO)
 	information	= Info_Mod_Velario_AurenUndKristalle6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Kristall hat sich verändert.";
+	description	= "The crystal has changed.";
 };
 
 FUNC INT Info_Mod_Velario_AurenUndKristalle6_Condition()
@@ -332,26 +332,26 @@ FUNC INT Info_Mod_Velario_AurenUndKristalle6_Condition()
 
 FUNC VOID Info_Mod_Velario_AurenUndKristalle6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle6_15_00"); //Der Kristall hat sich verändert.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_01"); //Was? Lass sehen.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_02"); //Das ... das ist unmöglich.
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle6_15_03"); //Was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_04"); //Durch den wiederholten Kontakt mit Feuer und Magie scheint er den Effekt ... übernommen zu haben. Er kann jetzt wie eine Rune eingesetzt werden.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_05"); //Das unglaubliche daran ist, dass er seine Macht aus keinem der Götter zieht. Das ist so faszinierend ... wie auch erschreckend.
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle6_15_06"); //Wieso?
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_07"); //Verstehst du nicht? Bislang konnten einzig und allein Götter, oder göttliche Wesen, Menschen zum wirken von Magie befähigen.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_08"); //Diese Forschungsergebnisse widersprechen nun jedoch diesem Gesetz. Das könnte eine Revolution für unser gesamtes Verständnis um die Magie bedeuten.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_09"); //Andererseits jedoch ...
-	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle6_15_10"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_11"); //... andererseits stellt es gleichzeitig das magische Monopol der drei Kirchen in Frage.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_12"); //(nachdenklich) Ich glaube nicht, dass unsere Forschungsergebnisse den hohen Magiern der Räte besonders gefallen würden ... besonders im aktuellen Konflikt mit Xeres.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle6_15_00"); //The crystal has changed.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_01"); //What? Let me see.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_02"); //That... that's impossible.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle6_15_03"); //What has happened?
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_04"); //Through repeated contact with fire and magic, he shines the effect of the... to be taken over. It can now be used like a rune.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_05"); //The incredible thing is that he draws his power from none of the gods. That is so fascinating... as well as frightening.
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle6_15_06"); //Why?
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_07"); //Don't you understand? So far only gods, or divine beings, have been able to enable humans to work magic.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_08"); //However, these research findings now contradict this law. This could mean a revolution for our entire understanding of magic.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_09"); //On the other hand, however...
+	AI_Output(hero, self, "Info_Mod_Velario_AurenUndKristalle6_15_10"); //Yes?
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_11"); //... on the other hand, it at the same time questions the magic monopoly of the three churches.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_12"); //(thoughtfully) I don't think our research results would be particularly appreciated by the high magicians of the councils... especially in the current conflict with Xeres.
 
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_13"); //(konspirativ zum Helden) Es wäre daher besser, wenn wir unsere Erkenntnisse vorerst unter Verschluss hielten.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_14"); //Noch ist die Kirche nicht so weit und ich würde ungern sehen, dass unsere Erkenntnisse ein Opfer der ... nunja, ich denke, du verstehst die Situation.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_15"); //(etwas betrübt) Es ... es ist das Vernünftigste.
-	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_16"); //Und nun ... lasse dich von Innos' Flamme beseelen, wenn du diesen verfluchten Hexenweibern ordentlich einheizt!
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_13"); //It would therefore be better if we kept our findings under lock and key for the time being.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_14"); //The church is not yet so far away and I would hate to see that our findings are a victim of the... well, I think you understand the situation.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_15"); //(slightly sad) It... it's the most sensible thing to do.
+	AI_Output(self, hero, "Info_Mod_Velario_AurenUndKristalle6_06_16"); //And now.... Let the flame of Innos inspire you when you heat up these cursed witch women!
 
 	B_GivePlayerXP	(200);
 };
@@ -364,7 +364,7 @@ INSTANCE Info_Mod_Velario_Fake (C_INFO)
 	information	= Info_Mod_Velario_Fake_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du irgendwas verdächtiges gesehen?";
+	description	= "Have you seen anything suspicious?";
 };
 
 FUNC INT Info_Mod_Velario_Fake_Condition()
@@ -378,12 +378,12 @@ FUNC INT Info_Mod_Velario_Fake_Condition()
 
 FUNC VOID Info_Mod_Velario_Fake_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velario_Fake_15_00"); //Hast du irgendwas verdächtiges gesehen?
-	AI_Output(self, hero, "Info_Mod_Velario_Fake_06_01"); //Nein, ich glaube nicht.
-	AI_Output(hero, self, "Info_Mod_Velario_Fake_15_02"); //Bist du sicher? Ist hier kein Magier vorbeigekommen, der es ziemlich eilig hatte?
-	AI_Output(self, hero, "Info_Mod_Velario_Fake_06_03"); //Da war tatsächlich jemand. Er wollte glaub ich in die Mine.
+	AI_Output(hero, self, "Info_Mod_Velario_Fake_15_00"); //Have you seen anything suspicious?
+	AI_Output(self, hero, "Info_Mod_Velario_Fake_06_01"); //No, I don't think so.
+	AI_Output(hero, self, "Info_Mod_Velario_Fake_15_02"); //Are you sure about this? Didn't a magician come by who was in a hurry?
+	AI_Output(self, hero, "Info_Mod_Velario_Fake_06_03"); //There was actually someone there. I think he was going to the mine.
 
-	B_LogEntry	(TOPIC_MOD_FM_SM, "Velario meint, dass der Magier in die Mine geflohen sei.");
+	B_LogEntry	(TOPIC_MOD_FM_SM, "Velario thinks the mage has fled to the mine.");
 };
 
 INSTANCE Info_Mod_Velario_EXIT (C_INFO)

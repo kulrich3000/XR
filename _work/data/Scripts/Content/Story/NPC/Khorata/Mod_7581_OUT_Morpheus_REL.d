@@ -1,7 +1,7 @@
 instance Mod_7581_OUT_Morpheus_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Morpheus";
+	name 		= "morpheus";
 	guild 		= GIL_OUT;
 	id 			= 7581;
 	voice 		= 37;

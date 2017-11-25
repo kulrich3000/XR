@@ -18,30 +18,30 @@ FUNC INT Info_Mod_Keith_Hi_Condition()
 
 FUNC VOID Info_Mod_Keith_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_00"); //(ängstlich) Bitte töte mich nicht. Ich bin nur ein armer Jäger, ich habe weder Gold, noch sonst etwas von Wert.
-	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_01"); //Keine Sorge, ich bin kein Bandit, und die zwei vor deiner Hütte sind erledigt.
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_02"); //Puh ...! Da hab ich ja noch mal Glück gehabt.
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_03"); //Als die Kerle in mein Haus einbrechen wollten habe ich es gerade noch so geschafft, die Tür zu verschließen, aber wer weiß, wie lange die sie aufgehalten hätte.
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_04"); //Auf jeden Fall danke ich dir. Ich habe nicht viel, aber nimm diese Felle als Belohnung.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_00"); //Please don't kill me. I'm just a poor hunter, I have neither gold nor anything else of value.
+	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_01"); //Don't worry, I'm not a bandit, and those two in front of your cabin are finished.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_02"); //Whew...! I got lucky again.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_03"); //When the guys tried to break into my house, I barely managed to close the door, but who knows how long they would have stopped them.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_04"); //Anyway, thank you. I don't have much, but take these skins as a reward.
 
 	B_GiveInvItems	(self, hero, ItAt_ShadowFur, 2);
 
-	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_05"); //Dein Freund Randi hatte aber nicht so viel Glück. sie haben ihn vor deiner Hütte erschlagen.
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_06"); //Diese verdammten Banditen nisten sich einfach in unserem Land ein. Ich wünschte der alte Turm würde sie unter sich begraben.
-	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_07"); //Alter Turm?! Dieser Turm befindet sich aber nicht zufällig am Eissee, oder?
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_08"); //Doch. Woher weißt du von dem Turm?
-	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_09"); //Ich habe vom Jäger Luis erfahren, dass Randi diesen Turm als Nachtlager für die Jagd nutzen wollte und er dich deshalb aufsuchen wollte.
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_10"); //Welch eine Ironie des Schicksals. Hätte er es bis zu mir geschaft, hätte ich ihm von den Banditen dort erzählen können.
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_11"); //Aber was ist mit dir? Was hast du mit dem Turm zu schaffen?
-	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_12"); //Eigentlich wollte ich Randi und dir dabei helfen, den Turm zu nutzen, und wenn wir damit die Banditen von hier vertreiben könnten, würden wir doch zwei Fliegen mit einer Klatsche schlagen.
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_13"); //Wenn du uns bei dem Problem mit den Banditen helfen würdest, wären dir warscheinlich alle zum Dank verpflichtet.
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_14"); //Ganz davon abgesehen, dass wir den Turm dann wieder nutzen könnten.
-	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_15"); //Wenn du mir zeigen würdest, wo der alte Turm ist, könnte ich mir ein Bild von der Situation machen.
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_16"); //Ok, ich zeig dir den Weg. Allerdings werde ich dich nicht im Kampf unterstützen können. Ich bin alt geworden und will nicht früher sterben, als ich sowieso schon muss.
-	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_17"); //Bring mich zum Turm, den Rest erledige ich!
-	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_18"); //In Ordnung, komm mit!
+	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_05"); //Your friend Randi wasn't so lucky. They beat him to death in front of your cabin.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_06"); //Those goddamn bandits are just nesting in our country. I wish the old tower would bury her under itself.
+	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_07"); //Old tower?! You wouldn't happen to find this tower by the lake, would you?
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_08"); //Yes, it is. How do you know about the tower?
+	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_09"); //I heard from hunter Luis that Randi wanted to use this tower as a night camp for hunting and he wanted to visit you.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_10"); //What an irony of fate. If he had made it all the way to me, I could have told him about the bandits there.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_11"); //But what about you? What are you doing with that tower?
+	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_12"); //Actually, I wanted to help Randi and you to use the tower, and if we could drive the bandits out of here with it, we would beat two flies with a gossip.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_13"); //If you would help us with the problem with the bandits, you'd probably all be grateful.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_14"); //Not to mention that we could use the tower again.
+	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_15"); //If you'd show me where the old tower is, I could get a picture of the situation.
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_16"); //Okay, I'll show you the way. However, I won't be able to support you in the fight. I'm getting old and I don't want to die sooner than I have to anyway.
+	AI_Output(hero, self, "Info_Mod_Keith_Hi_15_17"); //Take me to the tower, I'll do the rest!
+	AI_Output(self, hero, "Info_Mod_Keith_Hi_08_18"); //All right, come on!
 
-	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Randi wurde von Banditen erschlagen. Ihr Lager befindet sich laut Keith beim alten Turm, zu dem Randi wollte. Er wird mich dorthin bringen, dann kann ich mich ihrer annehmen.");
+	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Randi was beaten to death by bandits. According to Keith, their camp is at the old tower Randi wanted to visit. He'll take me there, then I can take care of her.");
 
 	AI_StopProcessInfos	(self);
 
@@ -69,13 +69,13 @@ FUNC INT Info_Mod_Keith_AtEissee_Condition()
 
 FUNC VOID Info_Mod_Keith_AtEissee_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Keith_AtEissee_08_00"); //So, wir sind da. Ich nehme an, dass der Anführer dieser Bande sich im Turm aufhält.
-	AI_Output(self, hero, "Info_Mod_Keith_AtEissee_08_01"); //Ich hab vor ein paar Jahren, als der Turm noch verlassen war, einen Schlüssel dort gefunden.
-	AI_Output(self, hero, "Info_Mod_Keith_AtEissee_08_02"); //Falls der Turm verschlossen ist, kommst du damit bestimmt rein. Viel Glück, Junge!
+	AI_Output(self, hero, "Info_Mod_Keith_AtEissee_08_00"); //All right, here we are. I assume the leader of this gang is in the tower.
+	AI_Output(self, hero, "Info_Mod_Keith_AtEissee_08_01"); //I found a key a few years ago when the tower was abandoned.
+	AI_Output(self, hero, "Info_Mod_Keith_AtEissee_08_02"); //If the tower's locked, I'm sure you can get in with it. Good luck, son!
 
 	B_GiveInvItems	(self, hero, ItKe_Eisturm01, 1);
 
-	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Keith hat mich zum alten Turm gebracht und mir den Schlüssel dafür gegeben. Mal sehen, was mich dort erwartet ...");
+	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Keith took me to the old tower and gave me the key to it. Let's see what awaits me there....");
 
 	AI_StopProcessInfos	(self);
 
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Keith_Dalma (C_INFO)
 	information	= Info_Mod_Keith_Dalma_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Banditen sind vertrieben.";
+	description	= "The bandits are banished.";
 };
 
 FUNC INT Info_Mod_Keith_Dalma_Condition()
@@ -103,14 +103,14 @@ FUNC INT Info_Mod_Keith_Dalma_Condition()
 
 FUNC VOID Info_Mod_Keith_Dalma_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Keith_Dalma_15_00"); //Die Banditen sind vertrieben.
-	AI_Output(self, hero, "Info_Mod_Keith_Dalma_08_01"); //Sehr schön, hier hast du 100 Goldmünzen als Belohnung.
+	AI_Output(hero, self, "Info_Mod_Keith_Dalma_15_00"); //The bandits are banished.
+	AI_Output(self, hero, "Info_Mod_Keith_Dalma_08_01"); //Very nice, here you have 100 gold coins as a reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Keith_Dalma_08_02"); //Du solltest auch noch mal zu Luis gehen und ihm von Randis tot berichten. Warscheinlich wird es ihn auch interessieren, dass der Turm jetzt sicher ist.
+	AI_Output(self, hero, "Info_Mod_Keith_Dalma_08_02"); //You should also go back to Luis and tell him about Randis' death. Probably he'll be interested to know that the tower is safe now.
 
-	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Der Eisturm ist gesichert. Jetzt sollte ich zu Luis zurückkehren.");
+	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "The ice tower is secured. Now I should go back to Luis.");
 
 	B_SetTopicStatus	(TOPIC_MOD_EIS_ALTERTURM, LOG_SUCCESS);
 

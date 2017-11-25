@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Granmar_VM_Hi_Condition()
 
 FUNC VOID Info_Mod_Granmar_VM_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_Hi_26_00"); //Ah, da bist du ja. Ich würde sagen, wir sichern erst einmal das nächste Lager und den See dort unten. Folge mir!
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_Hi_26_00"); //Ah, there you are. I would say we secure the next camp and the lake down there for now. Follow me!
 
 	self.aivar[AIV_Partymember] = TRUE;
 
@@ -45,8 +45,8 @@ FUNC INT Info_Mod_Granmar_VM_AtSee_Condition()
 
 FUNC VOID Info_Mod_Granmar_VM_AtSee_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtSee_26_00"); //Ich muss sagen, die Keulen erfüllen ihren Zweck. Ohne sie wären wir aufgeschmissen.
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtSee_26_01"); //Gut, dann gehen wir jetzt tiefer in die Mine, mal sehen, was dort unten noch so lauert.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtSee_26_00"); //I must say, the clubs serve their purpose. Without them, we'd be screwed.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtSee_26_01"); //Well, then we'll go deeper into the mine, let's see what lurks down there.
 
 	AI_StopProcessInfos	(self);
 
@@ -74,10 +74,10 @@ FUNC INT Info_Mod_Granmar_VM_AtNager_Condition()
 
 FUNC VOID Info_Mod_Granmar_VM_AtNager_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtNager_26_00"); //Verdammt, was sind das denn schon wieder für Viecher?!
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtNager_26_01"); //Na gut - ich würde sagen, wir sichern jetzt erst mal den Teil der Mine, den wir frei gemacht haben.
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtNager_26_02"); //Ich gehe zurück zum Eingang und lass dort Erz schürfen, du übernimmst die Wache hier.
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtNager_26_03"); //Und geh noch nicht tiefer in die Mine, ich brauch dich hier als Wachposten.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtNager_26_00"); //Damn, what kind of creatures are they?!
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtNager_26_01"); //All right, I'd say we're just securing the part of the mine that we've cleared.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtNager_26_02"); //I'll go back to the entrance and dig up some ore, you take the guard here.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_AtNager_26_03"); //And don't go any deeper into the mine, I need you here as a sentry.
 
 	self.aivar[AIV_Partymember] = FALSE;
 
@@ -111,17 +111,17 @@ FUNC INT Info_Mod_Granmar_VM_SpecialErzguardian_Condition()
 
 FUNC VOID Info_Mod_Granmar_VM_SpecialErzguardian_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_SpecialErzguardian_26_00"); //Gut, dass du kommst. Wir haben die 50 Erzbrocken zusammen. Hymir will, dass du sie Lord Andre überbringst.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_SpecialErzguardian_26_00"); //I'm glad you came. We've got the 50 lumps of ore together. Hymir wants you to deliver it to Lord Andre.
 
 	B_GiveInvItems	(self, hero, ItMi_ErzPaketAndre, 1);
 
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_SpecialErzguardian_26_01"); //Ich halte so lange die Stellung, bis du mit den Paladinen zurück bist.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_SpecialErzguardian_26_01"); //I'll hold until you get back with the paladins.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "WACHE");
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Granmar hat mir die ersten 50 Erzbrocken für Lord Andre gegeben. Ich soll sie überbringen und gleich die Paladine mitbringen.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Granmar gave me the first 50 pieces of ore for Lord Andre. I'm supposed to deliver them and bring the paladins with me.");
 };
 
 INSTANCE Info_Mod_Granmar_VM_Trent (C_INFO)
@@ -144,13 +144,13 @@ FUNC INT Info_Mod_Granmar_VM_Trent_Condition()
 
 FUNC VOID Info_Mod_Granmar_VM_Trent_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent_26_00"); //Ich hätte es wissen müssen. Wenn beim nächsten mal ein Paladin meint, er schickt uns Verstärkung, mache ich mir keine Hoffnungen.
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent_26_01"); //Wer weiß, wie viele Monster uns dort unten auflauern, und sie schicken uns nur einen Mann.
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent_26_02"); //Na ja, zumindest scheint der Kerl in Ordnung zu sein. Am besten begleitest du ihn. Ich glaube, er wollte demnächst aufbrechen.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent_26_00"); //I should have known. The next time a paladin thinks he's sending us reinforcements, I don't get any hopes.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent_26_01"); //Who knows how many monsters are waiting for us down there, and they only send us one man.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent_26_02"); //Well, at least the guy seems to be okay. You'd better go with him. I think he was about to leave.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Granmar ist etwas verärgert, dass Lord Andre nur einen Paladin geschickt hat. Ich sollte Trent lieber begleiten ...");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Granmar's a little upset that Lord Andre sent just one paladin. I'd better go with Trent...");
 };
 
 INSTANCE Info_Mod_Granmar_VM_Trent2 (C_INFO)
@@ -173,13 +173,13 @@ FUNC INT Info_Mod_Granmar_VM_Trent2_Condition()
 
 FUNC VOID Info_Mod_Granmar_VM_Trent2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent2_26_00"); //Was war los? Habt ihr es geschafft? Ist die Mine sauber?
-	AI_Output(hero, self, "Info_Mod_Granmar_VM_Trent2_15_01"); //So weit schon. Wenn ihr nicht zu gierig grabt und noch mehr Monster freilegt, wird die Mine einiges abwerfen.
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent2_26_02"); //Schön zu hören. Gab es Probleme?
-	AI_Output(hero, self, "Info_Mod_Granmar_VM_Trent2_15_03"); //Nichts, was man nicht in den Griff bekommen konnte.
-	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent2_26_04"); //Gut. Hymir will dir bestimmt zu deinem Erfolg gratulieren. Wir sehen uns später.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent2_26_00"); //What was going on? Did you make it? Is the mine clear?
+	AI_Output(hero, self, "Info_Mod_Granmar_VM_Trent2_15_01"); //So far, so far. If you don't dig too greedily and uncover more monsters, the mine will drop a lot.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent2_26_02"); //Nice to hear. Was there a problem?
+	AI_Output(hero, self, "Info_Mod_Granmar_VM_Trent2_15_03"); //Nothing you couldn't get a handle on.
+	AI_Output(self, hero, "Info_Mod_Granmar_VM_Trent2_26_04"); //Good. Hymir would like to congratulate you on your success. I'll see you guys later.
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Granmar ist zufrieden mit unserer Leistung. Ich sollte mal bei Hymir vorbeisehen.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Granmar is satisfied with our performance. I should stop by Hymir's house.");
 };
 
 INSTANCE Info_Mod_Granmar_VM_EXIT (C_INFO)

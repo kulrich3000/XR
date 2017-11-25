@@ -1,7 +1,7 @@
 INSTANCE Mod_1520_TB_Totenbeschwoerer_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Totenbeschwörer"; 
+	name 		= "necromancer"; 
 	guild 		= GIL_DMT;
 	id 			= 1520;
 	voice 		= 9;

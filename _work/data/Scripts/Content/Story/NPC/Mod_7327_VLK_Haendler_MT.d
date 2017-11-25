@@ -1,7 +1,7 @@
 instance Mod_7327_VLK_Haendler_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Händler"; 
+	name 		= "monger"; 
 	guild 		= GIL_ORC;
 	id 			= 7327;
 	voice 		= 1;

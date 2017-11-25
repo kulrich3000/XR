@@ -1,7 +1,7 @@
 INSTANCE Mod_10003_Orc_Masshak_MT (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Masshak";
+	name							=	"masshak";
 	guild							=	GIL_ORC;
 	id			= 	10003;
 	voice							=	18;

@@ -1,7 +1,7 @@
 INSTANCE Monster_11067_Talos_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Talos";	
+	name 		= "robe";	
 	guild							=	GIL_STRF;
 	id 			= 11067;
 	voice 		= 6;

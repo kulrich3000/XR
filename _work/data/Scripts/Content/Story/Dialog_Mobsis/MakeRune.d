@@ -53,7 +53,7 @@ INSTANCE PC_Circle_01 (C_Info)
 	condition		= PC_Circle_01_Condition;
 	information		= PC_Circle_01_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 1 erschaffen"; 
+	description		= "Create Runic Circle 1"; 
 };
 
 FUNC INT PC_Circle_01_Condition ()
@@ -116,7 +116,7 @@ INSTANCE PC_Circle_02 (C_Info)
 	condition		= PC_Circle_02_Condition;
 	information		= PC_Circle_02_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 2 erschaffen"; 
+	description		= "Create Runic Circle 2"; 
 };
 FUNC INT PC_Circle_02_Condition ()
 {
@@ -177,7 +177,7 @@ INSTANCE PC_Circle_03 (C_Info)
 	condition		= PC_Circle_03_Condition;
 	information		= PC_Circle_03_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 3 erschaffen"; 
+	description		= "Create Runic Circle 3"; 
 };
 FUNC INT PC_Circle_03_Condition ()
 {	
@@ -254,7 +254,7 @@ INSTANCE PC_Circle_04 (C_Info)
 	condition		= PC_Circle_04_Condition;
 	information		= PC_Circle_04_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 4 erschaffen"; 
+	description		= "Create Runic Circle 4"; 
 };
 FUNC INT PC_Circle_04_Condition ()
 {	
@@ -321,7 +321,7 @@ INSTANCE PC_Circle_05 (C_Info)
 	condition		= PC_Circle_05_Condition;
 	information		= PC_Circle_05_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 5 erschaffen"; 
+	description		= "Create Runic Circle 5"; 
 };
 FUNC INT PC_Circle_05_Condition ()
 {
@@ -360,7 +360,7 @@ FUNC VOID PC_Circle_05_Info()
 	};
 	if (PLAYER_TALENT_RUNES[SPL_Pyrokinesis_g1] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Circle_05,"Pyrokinese",PC_ItRu_Pyrokinesis_g1_Info);
+		Info_AddChoice 	  (PC_Circle_05,"pyrokinesis",PC_ItRu_Pyrokinesis_g1_Info);
 	};
 	if (PLAYER_TALENT_RUNES[SPL_IceWave] == TRUE)
 	{
@@ -379,7 +379,7 @@ INSTANCE PC_Circle_06 (C_Info)
 	condition		= PC_Circle_06_Condition;
 	information		= PC_Circle_06_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 6 erschaffen"; 
+	description		= "Create Runic Circle 6"; 
 };
 FUNC INT PC_Circle_06_Condition ()
 {	
@@ -414,7 +414,7 @@ FUNC VOID PC_Circle_06_Info()
 	};
 	if (PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Circle_06,"Das Geheimnis der Bibliothek!",PC_SPL_MasterOfDisaster_Create);
+		Info_AddChoice 	  (PC_Circle_06,"The secret of the library!",PC_SPL_MasterOfDisaster_Create);
 	};
 	if (PLAYER_TALENT_RUNES[SPL_Shrink] == TRUE)
 	{
@@ -441,7 +441,7 @@ INSTANCE PC_Scrolls (C_Info)
 	condition		= PC_Scrolls_Condition;
 	information		= PC_Scrolls_Info;
 	permanent		= TRUE;
-	description		= "Spruchrolle herstellen"; 
+	description		= "Creating the role of saying"; 
 };
 FUNC INT PC_Scrolls_Condition ()
 {	
@@ -498,99 +498,99 @@ FUNC VOID PC_Scrolls_Info()
 
 	if (PLAYER_TALENT_SCROLLS[SCROLL_SummonZombie] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Zombie beschwören", PC_ItSc_SummonZombie);
+		Info_AddChoice 	  (PC_Scrolls, "Summon Zombie", PC_ItSc_SummonZombie);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_ZiegeZaehmen] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Ziege zähmen", PC_ItSc_ZiegeZaehmen);
+		Info_AddChoice 	  (PC_Scrolls, "goat tame", PC_ItSc_ZiegeZaehmen);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Zerfleischen] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Zerfleischen", PC_ItSc_Zerfleischen);
+		Info_AddChoice 	  (PC_Scrolls, "mangle", PC_ItSc_Zerfleischen);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_SumWolf] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Wolf rufen", PC_ItSc_SumWolf);
+		Info_AddChoice 	  (PC_Scrolls, "Summon Wolf", PC_ItSc_SumWolf);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Waterfist] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Wässerfaust", PC_ItSc_Waterfist);
+		Info_AddChoice 	  (PC_Scrolls, "Water mug", PC_ItSc_Waterfist);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_SummonGuardian] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Wächter erschaffen", PC_ItSc_SummonGuardian);
+		Info_AddChoice 	  (PC_Scrolls, "Create Guardian", PC_ItSc_SummonGuardian);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Thunderstorm] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Unwetter", PC_ItSc_Thunderstorm);
+		Info_AddChoice 	  (PC_Scrolls, "Storm", PC_ItSc_Thunderstorm);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_HarmUndead] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Untote vernichten", PC_ItSc_HarmUndead);
+		Info_AddChoice 	  (PC_Scrolls, "Destroy Undead", PC_ItSc_HarmUndead);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_BreathOfDeath] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Todeshauch", PC_ItSc_BreathOfDeath);
+		Info_AddChoice 	  (PC_Scrolls, "Breath of Death", PC_ItSc_BreathOfDeath);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_SumSkel] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Skelett beschwören", PC_ItSc_SumSkel);
+		Info_AddChoice 	  (PC_Scrolls, "Summon Skeleton", PC_ItSc_SumSkel);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_FullHeal] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Schwere Wunden heilen", PC_ItSc_FullHeal);
+		Info_AddChoice 	  (PC_Scrolls, "Heal Heavy Wounds", PC_ItSc_FullHeal);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Skull] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Schrei der Toten", PC_ItSc_Skull);
+		Info_AddChoice 	  (PC_Scrolls, "Cry of the Dead", PC_ItSc_Skull);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Shrink] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Monster schrumpfen", PC_ItSc_Shrink);
+		Info_AddChoice 	  (PC_Scrolls, "Shrink Monster", PC_ItSc_Shrink);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_MediumHeal] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Mittlere Wunden heilen", PC_ItSc_MediumHeal);
+		Info_AddChoice 	  (PC_Scrolls, "Heal Medium Wounds", PC_ItSc_MediumHeal);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Light] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Licht", PC_ItSc_Light);
+		Info_AddChoice 	  (PC_Scrolls, "Light", PC_ItSc_Light);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_LightHeal] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Leichte Wunden heilen", PC_ItSc_LightHeal);
+		Info_AddChoice 	  (PC_Scrolls, "Heal Light Wounds", PC_ItSc_LightHeal);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Thunderball] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Kugelblitz", PC_ItSc_Thunderball);
+		Info_AddChoice 	  (PC_Scrolls, "Ball Lightning", PC_ItSc_Thunderball);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Firestorm] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Kleiner Feuersturm", PC_ItSc_Firestorm);
+		Info_AddChoice 	  (PC_Scrolls, "Small Fire Storm", PC_ItSc_Firestorm);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Pyrokinesis] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Großer Feuersturm", PC_ItSc_Pyrokinesis);
+		Info_AddChoice 	  (PC_Scrolls, "Great firestorm", PC_ItSc_Pyrokinesis);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_ChargeFireball] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Großer Feuerball", PC_ItSc_ChargeFireball);
+		Info_AddChoice 	  (PC_Scrolls, "Big fireball", PC_ItSc_ChargeFireball);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_SumGol] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Golem erschaffen", PC_ItSc_SumGol);
+		Info_AddChoice 	  (PC_Scrolls, "Create Golem", PC_ItSc_SumGol);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_SumGobSkel] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Goblin - Skelett erschaffen", PC_ItSc_SumGobSkel);
+		Info_AddChoice 	  (PC_Scrolls, "Goblin - Create Skeleton", PC_ItSc_SumGobSkel);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Geyser] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Geysir", PC_ItSc_Geyser);
+		Info_AddChoice 	  (PC_Scrolls, "Geyser", PC_ItSc_Geyser);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Firerain] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Feuerregen", PC_ItSc_Firerain);
+		Info_AddChoice 	  (PC_Scrolls, "Fire Rain", PC_ItSc_Firerain);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Firebolt] == TRUE)
 	{
@@ -602,15 +602,15 @@ FUNC VOID PC_Scrolls_Info()
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_SuckEnergy] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Energie stehlen", PC_ItSc_SuckEnergy);
+		Info_AddChoice 	  (PC_Scrolls, "Steal Energy", PC_ItSc_SuckEnergy);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Icewave] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Eiswelle", PC_ItSc_Icewave);
+		Info_AddChoice 	  (PC_Scrolls, "Ice Wave", PC_ItSc_Icewave);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Icerain] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Eisregen", PC_ItSc_Icerain);
+		Info_AddChoice 	  (PC_Scrolls, "freezing rain", PC_ItSc_Icerain);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Icebolt] == TRUE)
 	{
@@ -618,39 +618,39 @@ FUNC VOID PC_Scrolls_Info()
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Icelance] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Eislanze", PC_ItSc_Icelance);
+		Info_AddChoice 	  (PC_Scrolls, "Ice Lance", PC_ItSc_Icelance);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Icecube] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Eisblock", PC_ItSc_Icecube);
+		Info_AddChoice 	  (PC_Scrolls, "Ice Block", PC_ItSc_Icecube);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_InstantIceball] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Eisball", PC_ItSc_InstantIceball);
+		Info_AddChoice 	  (PC_Scrolls, "ice ball", PC_ItSc_InstantIceball);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_SumDemon] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Dämon beschwören", PC_ItSc_SumDemon);
+		Info_AddChoice 	  (PC_Scrolls, "Summon Demon", PC_ItSc_SumDemon);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_LightningFlash] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Blitzschlag", PC_ItSc_LightningFlash);
+		Info_AddChoice 	  (PC_Scrolls, "Lightning Flash", PC_ItSc_LightningFlash);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_Zap] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Blitz", PC_ItSc_Zap);
+		Info_AddChoice 	  (PC_Scrolls, "Lightning", PC_ItSc_Zap);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_BeliarsRage] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Berliars Zorn", PC_ItSc_BeliarsRage);
+		Info_AddChoice 	  (PC_Scrolls, "Berliar's anger", PC_ItSc_BeliarsRage);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_AuraFlammen] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Aura der Flammen", PC_ItSc_AuraFlammen);
+		Info_AddChoice 	  (PC_Scrolls, "Aura of Flames", PC_ItSc_AuraFlammen);
 	};
 	if (PLAYER_TALENT_SCROLLS[SCROLL_ArmyOfDarkness] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Scrolls, "Armee der Finsternis", PC_ItSc_ArmyOfDarkness);
+		Info_AddChoice 	  (PC_Scrolls, "Army of Darkness", PC_ItSc_ArmyOfDarkness);
 	};
 };
 
@@ -2879,7 +2879,7 @@ INSTANCE PC_Verbessern_Obelisk (C_Info)
 	condition		= PC_Verbessern_Obelisk_Condition;
 	information		= PC_Verbessern_Obelisk_Info;
 	permanent		= TRUE;
-	description		= "Rune mit Obelisk verschmelzen"; 
+	description		= "Merge Rune with Obelisk"; 
 };
 
 FUNC INT PC_Verbessern_Obelisk_Condition ()
@@ -2900,147 +2900,147 @@ FUNC VOID PC_Verbessern_Obelisk_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportXardas) >= 1)
 	&& (Mod_TeleportXardas == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zu Xardas", PC_Verbessern_Obelisk_Xardas);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to Xardas", PC_Verbessern_Obelisk_Xardas);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportTaverne) >= 1)
 	&& (Mod_TeleportTaverne == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zur Taverne", PC_Verbessern_Obelisk_Taverne);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to Tavern", PC_Verbessern_Obelisk_Taverne);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportKlosterruine) >= 1)
 	&& (Mod_TeleportKlosterruine == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zur Klosterruine", PC_Verbessern_Obelisk_Klosterruine);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the Monastery Ruins", PC_Verbessern_Obelisk_Klosterruine);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportSeaport) >= 1)
 	&& (Mod_TeleportSeaport == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zur Hafenstadt", PC_Verbessern_Obelisk_Seaport);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to Harbor City", PC_Verbessern_Obelisk_Seaport);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportBergfestung) >= 1)
 	&& (Mod_TeleportBergfestung == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zur Bergfestung", PC_Verbessern_Obelisk_Bergfestung);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the mountain fortress", PC_Verbessern_Obelisk_Bergfestung);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportBeliarfestung) >= 1)
 	&& (Mod_TeleportBeliarfestung == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zur Beliarfestung", PC_Verbessern_Obelisk_Beliarfestung);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the Beliar Fortress", PC_Verbessern_Obelisk_Beliarfestung);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportWaldis) >= 1)
 	&& (Mod_TeleportWaldis == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Waldläuferlager", PC_Verbessern_Obelisk_Waldis);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the Ranger camp", PC_Verbessern_Obelisk_Waldis);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportPsicamp) >= 1)
 	&& (Mod_TeleportPsicamp == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Sumpflager", PC_Verbessern_Obelisk_Psicamp);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the marsh camp", PC_Verbessern_Obelisk_Psicamp);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportSonnenkreis) >= 1)
 	&& (Mod_TeleportSonnenkreis == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Sonnenkreis", PC_Verbessern_Obelisk_Sonnenkreis);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the Solar Circle", PC_Verbessern_Obelisk_Sonnenkreis);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportRELRaeuber) >= 1)
 	&& (Mod_TeleportRELRaeuber == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Räuberlager", PC_Verbessern_Obelisk_RELRaeuber);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the robber camp", PC_Verbessern_Obelisk_RELRaeuber);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportRELPass) >= 1)
 	&& (Mod_TeleportRELPass == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Pass in Relendel", PC_Verbessern_Obelisk_RELPass);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the pass in Relendel", PC_Verbessern_Obelisk_RELPass);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportPassNW) >= 1)
 	&& (Mod_TeleportPassNW == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Pass in Khorinis", PC_Verbessern_Obelisk_PassNW);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to Pass of Khorinis", PC_Verbessern_Obelisk_PassNW);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportPassOW) >= 1)
 	&& (Mod_TeleportPassOW == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Pass im Minental", PC_Verbessern_Obelisk_PassOW);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to Valley of Mines Pass", PC_Verbessern_Obelisk_PassOW);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportNewcamp) >= 1)
 	&& (Mod_TeleportNewcamp == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum neuen Lager", PC_Verbessern_Obelisk_Newcamp);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the new warehouse", PC_Verbessern_Obelisk_Newcamp);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportRELMoor) >= 1)
 	&& (Mod_TeleportRELMoor == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Moor", PC_Verbessern_Obelisk_RELMoor);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the moor", PC_Verbessern_Obelisk_RELMoor);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportKhorata) >= 1)
 	&& (Mod_TeleportKhorata == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Marktplatz von Khorata", PC_Verbessern_Obelisk_Khorata);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the marketplace of Khorata", PC_Verbessern_Obelisk_Khorata);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportMonastery) >= 1)
 	&& (Mod_TeleportMonastery == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Kloster", PC_Verbessern_Obelisk_Monastery);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to Monastery", PC_Verbessern_Obelisk_Monastery);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportRELHofstaat) >= 1)
 	&& (Mod_TeleportRELHofstaat == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Hofstaat", PC_Verbessern_Obelisk_Hofstaat);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the court", PC_Verbessern_Obelisk_Hofstaat);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportRELSee) >= 1)
 	&& (Mod_TeleportRELSee == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum großen See", PC_Verbessern_Obelisk_RELSee);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the Great Lake", PC_Verbessern_Obelisk_RELSee);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportFarm) >= 1)
 	&& (Mod_TeleportFarm == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Grossbauern", PC_Verbessern_Obelisk_Farm);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to Landlord", PC_Verbessern_Obelisk_Farm);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportGelato) >= 1)
 	&& (Mod_TeleportGelato == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Dorf in Gelato", PC_Verbessern_Obelisk_Gelato);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the village in Gelato", PC_Verbessern_Obelisk_Gelato);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportRELBauernhof) >= 1)
 	&& (Mod_TeleportRELBauernhof == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Bauernhof", PC_Verbessern_Obelisk_RELBauernhof);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the farm", PC_Verbessern_Obelisk_RELBauernhof);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportBanditenlager) >= 1)
 	&& (Mod_TeleportBanditenlager == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum Banditenlager", PC_Verbessern_Obelisk_Banditenlager);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the bandit camp", PC_Verbessern_Obelisk_Banditenlager);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportOldcamp) >= 1)
 	&& (Mod_TeleportOldcamp == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum alten Lager", PC_Verbessern_Obelisk_Oldcamp);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the old warehouse", PC_Verbessern_Obelisk_Oldcamp);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportOWDemonTower) >= 1)
 	&& (Mod_TeleportOWDemonTower == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport zum alten Dämonenturm", PC_Verbessern_Obelisk_OWDemonTower);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to Ancient Demon Tower", PC_Verbessern_Obelisk_OWDemonTower);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportPatBack) >= 1)
 	&& (Mod_TeleportFromPatherion == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport von Patherion nach Khorinis", PC_Verbessern_Obelisk_FromPatherion);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport from Patherion to Khorinis", PC_Verbessern_Obelisk_FromPatherion);
 	};
 	if (Npc_HasItems(hero, ItRu_Teleport_Pat_01) >= 1)
 	&& (Mod_TeleportPatherionKapelle == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport vom Kloster zur Kapelle", PC_Verbessern_Obelisk_PatherionKapelle);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport from monastery to chapel", PC_Verbessern_Obelisk_PatherionKapelle);
 	};
 	if (Npc_HasItems(hero, ItRu_Teleport_Pat) >= 1)
 	&& (Mod_TeleportToPatherion == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport von Khorinis nach Patherion", PC_Verbessern_Obelisk_ToPatherion);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport from Khorinis to Patherion", PC_Verbessern_Obelisk_ToPatherion);
 	};
 	if (Npc_HasItems(hero, ItRu_Teleport_Pat_02) >= 1)
 	&& (Mod_TeleportPatherionKloster == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport von der Kapelle zum Kloster", PC_Verbessern_Obelisk_PatherionKloster);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport from the Chapel to the Monastery", PC_Verbessern_Obelisk_PatherionKloster);
 	};
 };
 
@@ -3258,7 +3258,7 @@ INSTANCE PC_Verbessern_Robe (C_Info)
 	condition		= PC_Verbessern_Robe_Condition;
 	information		= PC_Verbessern_Robe_Info;
 	permanent		= TRUE;
-	description		= "Robe verbessern"; 
+	description		= "Improve Robe"; 
 };
 
 FUNC INT PC_Verbessern_Robe_Condition ()
@@ -3309,7 +3309,7 @@ INSTANCE PC_WM_Golem (C_Info)
 	condition		= PC_WM_Golem_Condition;
 	information		= PC_WM_Golem_Info;
 	permanent		= TRUE;
-	description		= "Golemrune erschaffen"; 
+	description		= "Create Golemrune"; 
 };
 FUNC INT PC_WM_Golem_Condition ()
 {	
@@ -3329,7 +3329,7 @@ FUNC VOID PC_WM_Golem_Info()
 
 	if (Npc_HasItems(hero, ItAt_IceGolemHeart) >= 1)
 	{
-		Info_AddChoice 	  (PC_WM_Golem, "Eisgolem erschaffen", PC_WM_Golem_Create_Ice);
+		Info_AddChoice 	  (PC_WM_Golem, "Create an ice-golem", PC_WM_Golem_Create_Ice);
 	};
 	
 };	

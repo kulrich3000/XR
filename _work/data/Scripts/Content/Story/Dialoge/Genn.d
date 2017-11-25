@@ -15,53 +15,53 @@ FUNC INT Info_Mod_Genn_Hi_Condition()
 
 FUNC VOID Info_Mod_Genn_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_00"); //Du kommst gerade richtig.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_00"); //You're just in time.
 
 	if (Mod_Struk_Dabei == TRUE)
 	&& (Mod_Thorge_Dabei == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Genn_Hi_09_01"); //Du bist in Begleitung zweier Freunde.
+		AI_Output(self, hero, "Info_Mod_Genn_Hi_09_01"); //You're with two friends.
 	}
 	else if (Mod_Struk_Dabei == TRUE)
 	|| (Mod_Thorge_Dabei == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Genn_Hi_09_02"); //Du bist in Begleitung eines Freundes.
+		AI_Output(self, hero, "Info_Mod_Genn_Hi_09_02"); //You're in the company of a friend.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_03"); //Wer bist du?
-	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_04"); //Ich will bei euch Verwandlungsmagiern mitmachen.
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_05"); //Dann hast du dir hierbei schon einen Pluspunkt eingehandelt. Wenn du willst, erzähle ich dir ein paar Takte über unser kleines Problem hier im Tal.
-	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_06"); //Deswegen bin ich hier.
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_07"); //Das ist gut. Sieh dich mal hier um. Die Goblins zerstören unser geliebtes Tal. Wir wissen nicht genau, woher sie kommen, aber wir haben eine Vermutung.
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_08"); //Vor ein paar Tagen gab es ein Erdbeben, bei dem der Eingang eines gewaltigen Höhlensystems freigelegt worden ist.
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_09"); //Wir vermuten, dass die Höhlen verschüttet worden sind und die Goblins als Fluchtweg unser Tal genommen haben.
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_10"); //Doch die Matronen hören nicht auf, neue Würfe zu bekommen, und so haben wir hier keine Ruhe vor ihnen.
-	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_11"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_12"); //Es ist ab Besten, wenn du die Matronen tötest. Mit dem Rest werden wir schon fertig.
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_13"); //Du darfst natürlich auch jeden Goblin, der dir über den Weg läuft, umbringen.
-	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_14"); //Dann mache ich mich mal sofort auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_15"); //Bevor du losgehst, nimm das hier, es wird dir helfen.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_03"); //Who are you?
+	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_04"); //I want to join you transformation magicians.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_05"); //Then you've got yourself a plus point on this one. If you want, I'll tell you a few bars about our little problem here in the valley.
+	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_06"); //That's why I'm here.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_07"); //That's good news. Look around you here. The goblins are destroying our beloved valley. We don't know exactly where they come from, but we have a hunch.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_08"); //A few days ago there was an earthquake that revealed the entrance of a huge cave system.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_09"); //We suspect that the caves have been buried and the goblins have taken our valley as an escape route.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_10"); //But the matrons do not stop getting new litters, and so we have no peace from them here.
+	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_11"); //What do you want me to do?
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_12"); //It's best if you kill the matrons. We can handle the rest.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_13"); //Of course, you can also kill any goblin that crosses your way.
+	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_14"); //I'll be on my way right away.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_15"); //Before you go off, take this. It'll help you.
 
 	B_GiveInvItems	(self, hero, ItSc_TrfSnapper, 2);
 
-	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_16"); //Aber verwende sie nicht in der Gegenwart von Menschen, sie könnten dich sonst für ein Monster halten.
+	AI_Output(self, hero, "Info_Mod_Genn_Hi_09_16"); //But don't use it in the presence of people, or they might think you're a monster.
 
 	if (Mod_Struk_Dabei == TRUE)
 	&& (Mod_Thorge_Dabei == TRUE)
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Hi_15_17"); //Und was ist mit meinen Begleitern?
-		AI_Output(self, hero, "Info_Mod_Genn_Hi_09_18"); //Sie werden dich nur bis zum Dorf begleiten, den Rest musst du alleine bewältigen.
+		AI_Output(hero, self, "Info_Mod_Genn_Hi_15_17"); //And what about my companions?
+		AI_Output(self, hero, "Info_Mod_Genn_Hi_09_18"); //They will only accompany you to the village, the rest you have to do alone.
 	}
 	else if (Mod_Struk_Dabei == TRUE)
 	|| (Mod_Thorge_Dabei == TRUE)
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Hi_15_19"); //Und was ist mit meinem Begleiter?
-		AI_Output(self, hero, "Info_Mod_Genn_Hi_09_20"); //Er wird dich nur bis zum Dorf begleiten, den Rest musst du alleine bewältigen.
+		AI_Output(hero, self, "Info_Mod_Genn_Hi_15_19"); //And what about my companion?
+		AI_Output(self, hero, "Info_Mod_Genn_Hi_09_20"); //He will only accompany you to the village, the rest you have to do alone.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_21"); //Verstehe. Dann mache ich mich am besten gleich auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Genn_Hi_15_21"); //I see. Then I'd better get going.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Ich soll die Goblin-Matronen töten, damit sie keinen Nachwuchs mehr bekommen können.");
+	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "I'm supposed to kill the goblin cartridges so they can't have offspring.");
 };
 
 INSTANCE Info_Mod_Genn_Matronen (C_INFO)
@@ -89,34 +89,34 @@ FUNC INT Info_Mod_Genn_Matronen_Condition()
 
 FUNC VOID Info_Mod_Genn_Matronen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Genn_Matronen_09_00"); //Sind die Matronen tot?
-	AI_Output(hero, self, "Info_Mod_Genn_Matronen_15_01"); //Ja, ich habe sie getötet. Außerdem kenne ich den Schuldigen, der für das Erdbeben verantwortlich ist.
-	AI_Output(self, hero, "Info_Mod_Genn_Matronen_09_02"); //Wer ist es?
+	AI_Output(self, hero, "Info_Mod_Genn_Matronen_09_00"); //Are the matrons dead?
+	AI_Output(hero, self, "Info_Mod_Genn_Matronen_15_01"); //Yeah, I killed her. Besides, I know the culprit responsible for the earthquake.
+	AI_Output(self, hero, "Info_Mod_Genn_Matronen_09_02"); //Who is it?
 
 	Info_ClearChoices	(Info_Mod_Genn_Matronen);
 
 	if (Npc_IsDead(Mod_1962_OUT_Lorforn_TUG))
 	&& (Npc_HasItems(hero, ItWr_LorfornsBrief) == 1)
 	{
-		Info_AddChoice	(Info_Mod_Genn_Matronen, "Da war so ein Typ namens Lorforn ...", Info_Mod_Genn_Matronen_B);
+		Info_AddChoice	(Info_Mod_Genn_Matronen, "There was this guy named Lorforn....", Info_Mod_Genn_Matronen_B);
 	}
 	else
 	{
-		Info_AddChoice	(Info_Mod_Genn_Matronen, "Da war so ein Typ mit Lederklamotten ...", Info_Mod_Genn_Matronen_A);
+		Info_AddChoice	(Info_Mod_Genn_Matronen, "There was this guy with leather clothes....", Info_Mod_Genn_Matronen_A);
 	};
 };
 
 FUNC VOID Info_Mod_Genn_Matronen_C()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Matronen_C_15_00"); //Danke. Wir sehen uns.
-	AI_Output(self, hero, "Info_Mod_Genn_Matronen_C_09_01"); //Bestimmt. Ich wünsche dir alles Gute. Der Teleporter ist noch aktiviert. Wenn du dich beeilst, schaffst du es noch hinüber ins Minental.
+	AI_Output(hero, self, "Info_Mod_Genn_Matronen_C_15_00"); //Thanks. I'll see you around.
+	AI_Output(self, hero, "Info_Mod_Genn_Matronen_C_09_01"); //Certainly. I wish you all the best. The teleporter is still activated. If you hurry, you can make it across to the Minental.
 
 	if (Mod_Struk_Dabei == TRUE)
 	&& (Mod_Thorge_Dabei == TRUE)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Thorge_TUG_AtDorf))
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Struk_TUG_AtDorf))
 	{
-		AI_Output(self, hero, "Info_Mod_Genn_Matronen_C_09_02"); //Deine zwei Begleiter werden allerdings hier bleiben müssen.
+		AI_Output(self, hero, "Info_Mod_Genn_Matronen_C_09_02"); //Your two companions, however, will have to stay here.
 
 		B_StartOtherRoutine	(Mod_1961_VMK_Struk_TUG, "ATCITY");
 		B_StartOtherRoutine	(Mod_1960_VMG_Thorge_TUG, "ATCITY");
@@ -132,7 +132,7 @@ FUNC VOID Info_Mod_Genn_Matronen_C()
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Thorge_TUG_AtDorf))
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Struk_TUG_AtDorf))
 	{
-		AI_Output(self, hero, "Info_Mod_Genn_Matronen_C_09_03"); //Dein Begleiter muss allerdings hier bleiben.
+		AI_Output(self, hero, "Info_Mod_Genn_Matronen_C_09_03"); //Your companion has to stay here, though.
 
 		B_StartOtherRoutine	(Mod_1961_VMK_Struk_TUG, "ATCITY");
 		B_StartOtherRoutine	(Mod_1960_VMG_Thorge_TUG, "ATCITY");
@@ -149,19 +149,19 @@ FUNC VOID Info_Mod_Genn_Matronen_C()
 
 FUNC VOID Info_Mod_Genn_Matronen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Matronen_B_15_00"); //Da war so ein Typ namens Lorforn, der von einem 'P.' geschickt wurde, um das Beben auszulösen. Hier ist der Beweisbrief.
+	AI_Output(hero, self, "Info_Mod_Genn_Matronen_B_15_00"); //There was this guy named Lorforn, the one from a' P. to start the quake. Here's the letter of proof.
 
 	B_GiveInvItems	(hero, self, ItWr_LorfornsBrief, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Genn_Matronen_B_09_01"); //Vielen Dank für diesen Brief. Wir bleiben an der Sache dran. Hier hast du eine Entlohnung.
+	AI_Output(self, hero, "Info_Mod_Genn_Matronen_B_09_01"); //Thank you for this letter. We'll stick to the point. Here's a reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Ich habe Genn die Situation geschildert und eine Entlohnung bekommen. Ich sollte mich nun auf den Rückweg ins Minental machen.");
+	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "I described the situation to Genn and got paid. I should be heading back to the Minental.");
 
 	Info_ClearChoices	(Info_Mod_Genn_Matronen);
 
@@ -170,14 +170,14 @@ FUNC VOID Info_Mod_Genn_Matronen_B()
 
 FUNC VOID Info_Mod_Genn_Matronen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Matronen_A_15_00"); //Da war so ein Typ mit Lederklamotten, der meinte, er wäre geschickt worden, um dies zu tun. Ich habe ihn laufen lassen.
-	AI_Output(self, hero, "Info_Mod_Genn_Matronen_A_09_01"); //Danke für die Information. Wir bleiben an der Sache dran. Hier hast du eine Entlohnung.
+	AI_Output(hero, self, "Info_Mod_Genn_Matronen_A_15_00"); //There was this guy in leather clothes who said he was sent to do this. I let him go.
+	AI_Output(self, hero, "Info_Mod_Genn_Matronen_A_09_01"); //Thanks for the information. We'll stick to the point. Here's a reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Ich habe Genn die Situation geschildert und eine Entlohnung bekommen. Ich sollte mich nun auf den Rückweg ins Minental machen.");
+	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "I described the situation to Genn and got paid. I should be heading back to the Minental.");
 
 	Info_ClearChoices	(Info_Mod_Genn_Matronen);
 
@@ -204,20 +204,20 @@ FUNC INT Info_Mod_Genn_Faice_Condition()
 
 FUNC VOID Info_Mod_Genn_Faice_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Genn_Faice_09_00"); //Das ist ja mal ein Zufall, wir haben gerade über dich gesprochen.
+	AI_Output(self, hero, "Info_Mod_Genn_Faice_09_00"); //That's a coincidence, we were just talking about you.
 
 	Info_ClearChoices	(Info_Mod_Genn_Faice);
 
-	Info_AddChoice	(Info_Mod_Genn_Faice, "Wer ist das?", Info_Mod_Genn_Faice_B);
-	Info_AddChoice	(Info_Mod_Genn_Faice, "Worum ging es denn?", Info_Mod_Genn_Faice_A);
+	Info_AddChoice	(Info_Mod_Genn_Faice, "Who is this guy?", Info_Mod_Genn_Faice_B);
+	Info_AddChoice	(Info_Mod_Genn_Faice, "What was that all about?", Info_Mod_Genn_Faice_A);
 };
 
 FUNC VOID Info_Mod_Genn_Faice_B()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Faice_B_15_00"); //Wer ist das?
-	AI_Output(self, hero, "Info_Mod_Genn_Faice_B_09_01"); //Das ist Sören. Er kommt von weit her, um uns beim Wiederaufbau unserer Siedlung zu helfen.
-	AI_Output(hero, self, "Info_Mod_Genn_Faice_B_15_02"); //Das freut mich, Sören. Ich bin ...
-	AI_Output(self, hero, "Info_Mod_Genn_Faice_B_09_03"); //Das ist Sören. Er kommt von weit her, um uns beim Wiederaufbau unserer Siedlung zu helfen.
+	AI_Output(hero, self, "Info_Mod_Genn_Faice_B_15_00"); //Who is this guy?
+	AI_Output(self, hero, "Info_Mod_Genn_Faice_B_09_01"); //That's Sören. He comes from far away to help us rebuild our settlement.
+	AI_Output(hero, self, "Info_Mod_Genn_Faice_B_15_02"); //I'm glad, Sören. I am....
+	AI_Output(self, hero, "Info_Mod_Genn_Faice_B_09_03"); //That's Sören. He comes from far away to help us rebuild our settlement.
 
 	Info_ClearChoices	(Info_Mod_Genn_Faice);
 
@@ -228,10 +228,10 @@ FUNC VOID Info_Mod_Genn_Faice_B()
 
 FUNC VOID Info_Mod_Genn_Faice_A()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Faice_A_15_00"); //Worum ging es denn?
-	AI_Output(self, hero, "Info_Mod_Genn_Faice_A_09_01"); //Es ging um den Erdrutsch vor der Goblinplage, falls du dich erinnerst.
-	AI_Output(hero, self, "Info_Mod_Genn_Faice_A_15_02"); //Ja, wie könnte ich das vergessen?
-	AI_Output(self, hero, "Info_Mod_Genn_Faice_A_09_03"); //Warum bist du hier?
+	AI_Output(hero, self, "Info_Mod_Genn_Faice_A_15_00"); //What was that all about?
+	AI_Output(self, hero, "Info_Mod_Genn_Faice_A_09_01"); //It was the landslide before the Goblin plague, if you remember.
+	AI_Output(hero, self, "Info_Mod_Genn_Faice_A_15_02"); //Yeah, how could I forget?
+	AI_Output(self, hero, "Info_Mod_Genn_Faice_A_09_03"); //Why are you here?
 
 	Info_ClearChoices	(Info_Mod_Genn_Faice);
 
@@ -246,7 +246,7 @@ INSTANCE Info_Mod_Genn_Mendulus (C_INFO)
 	information	= Info_Mod_Genn_Mendulus_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche eine große Heilpflanze mit lila Streben. Hast du sie gesehen?";
+	description	= "I am looking for a large medicinal plant with purple stanchions. Have you seen her?";
 };
 
 FUNC INT Info_Mod_Genn_Mendulus_Condition()
@@ -260,11 +260,11 @@ FUNC INT Info_Mod_Genn_Mendulus_Condition()
 
 FUNC VOID Info_Mod_Genn_Mendulus_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Mendulus_15_00"); //Ich suche eine große Heilpflanze mit lila Streben. Hast du sie gesehen?
-	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_09_01"); //Natürlich kenne ich das Mendulus-Kraut. Erinnerst du dich an die Höhle mit den Matronen? Da in der Gegend wächst es, wenn ich mich nicht irre.
-	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_09_02"); //Wenn du schon dort bist, kannst du mir gleich eine mitbringen.
+	AI_Output(hero, self, "Info_Mod_Genn_Mendulus_15_00"); //I am looking for a large medicinal plant with purple stanchions. Have you seen her?
+	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_09_01"); //Of course I know the Mendulus herb. Remember the cave with the matrons? It's growing around here, if I'm not mistaken.
+	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_09_02"); //If you're already there, you can bring me one.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Die Pflanze heißt 'Mendulus-Kraut' und wächst in der Nähe des Höhleneingangs, bei dem sich die Goblinmatronen befanden.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "The plant is called' Mendulus herb' and grows near the entrance to the cave, where the goblin matrons were located.");
 
 	Wld_InsertItem	(ItPl_Mendulus, "FP_ITEM_MENDULUS_01");
 	Wld_InsertItem	(ItPl_Mendulus, "FP_ITEM_MENDULUS_02");
@@ -274,27 +274,27 @@ FUNC VOID Info_Mod_Genn_Mendulus_Info()
 
 	Info_ClearChoices	(Info_Mod_Genn_Mendulus);
 
-	Info_AddChoice	(Info_Mod_Genn_Mendulus, "Ich spiele doch nicht den Laufburschen für dich.", Info_Mod_Genn_Mendulus_B);
-	Info_AddChoice	(Info_Mod_Genn_Mendulus, "Alles klar. Wir sehen uns.", Info_Mod_Genn_Mendulus_A);
+	Info_AddChoice	(Info_Mod_Genn_Mendulus, "I'm not playing the errand boy for you.", Info_Mod_Genn_Mendulus_B);
+	Info_AddChoice	(Info_Mod_Genn_Mendulus, "All clear. I'll see you around.", Info_Mod_Genn_Mendulus_A);
 };
 
 FUNC VOID Info_Mod_Genn_Mendulus_B()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Mendulus_B_15_00"); //Ich spiele doch nicht den Laufburschen für dich.
-	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_B_09_01"); //Komm schon, wenn du sowieso auf dem Weg bist ...
+	AI_Output(hero, self, "Info_Mod_Genn_Mendulus_B_15_00"); //I'm not playing the errand boy for you.
+	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_B_09_01"); //Come on, if you're on your way anyway...
 	
 	Info_ClearChoices	(Info_Mod_Genn_Mendulus);
 
 	AI_StopProcessInfos	(self);
 
-	Info_AddChoice	(Info_Mod_Genn_Mendulus, "Nein, vergiss es.", Info_Mod_Genn_Mendulus_D);
+	Info_AddChoice	(Info_Mod_Genn_Mendulus, "No, forget it.", Info_Mod_Genn_Mendulus_D);
 	Info_AddChoice	(Info_Mod_Genn_Mendulus, "Okay.", Info_Mod_Genn_Mendulus_C);
 };
 
 FUNC VOID Info_Mod_Genn_Mendulus_A()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Mendulus_A_15_00"); //Alles klar. Wir sehen uns.
-	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_C_09_01"); //Viel Glück.
+	AI_Output(hero, self, "Info_Mod_Genn_Mendulus_A_15_00"); //All clear. I'll see you around.
+	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_C_09_01"); //Good luck to you.
 
 	Info_ClearChoices	(Info_Mod_Genn_Mendulus);
 
@@ -303,8 +303,8 @@ FUNC VOID Info_Mod_Genn_Mendulus_A()
 
 FUNC VOID Info_Mod_Genn_Mendulus_D()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Mendulus_D_15_00"); //Nein, vergiss es.
-	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_D_09_01"); //Du hast dich verändert. Leider.
+	AI_Output(hero, self, "Info_Mod_Genn_Mendulus_D_15_00"); //No, forget it.
+	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_D_09_01"); //You've changed. Unfortunately.
 
 	Info_ClearChoices	(Info_Mod_Genn_Mendulus);
 
@@ -314,7 +314,7 @@ FUNC VOID Info_Mod_Genn_Mendulus_D()
 FUNC VOID Info_Mod_Genn_Mendulus_C()
 {
 	AI_Output(hero, self, "Info_Mod_Genn_Mendulus_C_15_00"); //Okay.
-	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_C_09_01"); //Viel Glück.
+	AI_Output(self, hero, "Info_Mod_Genn_Mendulus_C_09_01"); //Good luck to you.
 
 	Info_ClearChoices	(Info_Mod_Genn_Mendulus);
 
@@ -343,35 +343,35 @@ FUNC INT Info_Mod_Genn_Soeren_Condition()
 
 FUNC VOID Info_Mod_Genn_Soeren_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Genn_Soeren_09_00"); //Hast du Sören gesehen? Er ist so plötzlich verschwunden.
-	AI_Output(hero, self, "Info_Mod_Genn_Soeren_15_01"); //Allerdings. Hier, lies das.
+	AI_Output(self, hero, "Info_Mod_Genn_Soeren_09_00"); //Have you seen Sören? He disappeared so suddenly.
+	AI_Output(hero, self, "Info_Mod_Genn_Soeren_15_01"); //Yes, indeed. Here, read this.
 
 	B_GiveInvItems	(hero, self, ItWr_SoerensPBrief, 1);
 
 	B_UseFakeScroll ();
 
-	AI_Output(self, hero, "Info_Mod_Genn_Soeren_09_02"); //Aber ... das ist ja schrecklich! Wie konnte ich nur auf ihn hereinfallen? Und schon wieder dieser P.
+	AI_Output(self, hero, "Info_Mod_Genn_Soeren_09_02"); //But... That's terrible! How could I have fallen for him? And that P again.
 
 	B_StartOtherRoutine	(self, "START");
 	
 	Info_ClearChoices	(Info_Mod_Genn_Soeren);
 
-	Info_AddChoice	(Info_Mod_Genn_Soeren, "Wie sieht es mit einer Belohnung aus?", Info_Mod_Genn_Soeren_B);
-	Info_AddChoice	(Info_Mod_Genn_Soeren, "Was wirst du nun tun?", Info_Mod_Genn_Soeren_A);
+	Info_AddChoice	(Info_Mod_Genn_Soeren, "How about a reward?", Info_Mod_Genn_Soeren_B);
+	Info_AddChoice	(Info_Mod_Genn_Soeren, "What are you going to do now?", Info_Mod_Genn_Soeren_A);
 };
 
 FUNC VOID Info_Mod_Genn_Soeren_E()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Soeren_E_15_00"); //Ich werde dann ins Minental zurückkehren, wenn es dir nichts ausmacht.
-	AI_Output(self, hero, "Info_Mod_Genn_Soeren_E_09_01"); //Nein, der Teleporter ist noch aktiv.
+	AI_Output(hero, self, "Info_Mod_Genn_Soeren_E_15_00"); //I'll go back to the Minental, if you don't mind.
+	AI_Output(self, hero, "Info_Mod_Genn_Soeren_E_09_01"); //No, the teleporter is still active.
 
 	if (Mod_VMG_FaiceGifty_Gift == 8)
 	{
-		AI_Output(self, hero, "Info_Mod_Genn_Soeren_E_09_02"); //Ach ja, ehe ich es vergesse: Hier ist deine Entlohnung. Du hast uns einen großen Dienst erwiesen.
+		AI_Output(self, hero, "Info_Mod_Genn_Soeren_E_09_02"); //Oh, before I forget, here's your reward. You've done us a great service.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-		B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich habe mit Genn gesprochen und meine Entlohnung erhalten. Ich sollte jetzt ins Minental zurückkehren, solange der Teleporter noch aktiv ist.");
+		B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "I talked to Genn and got my reward. I should now return to the Valley of Minental while the teleporter is still active.");
 
 		Mod_VMG_FaiceGifty_Gift = 9;
 	};
@@ -383,32 +383,32 @@ FUNC VOID Info_Mod_Genn_Soeren_E()
 
 FUNC VOID Info_Mod_Genn_Soeren_B()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Soeren_B_15_00"); //Wie sieht es mit einer Belohnung aus?
-	AI_Output(self, hero, "Info_Mod_Genn_Soeren_B_09_01"); //Natürlich, hier. Nimm dieses Gold als Belohnung.
+	AI_Output(hero, self, "Info_Mod_Genn_Soeren_B_15_00"); //How about a reward?
+	AI_Output(self, hero, "Info_Mod_Genn_Soeren_B_09_01"); //Of course, here. Take this gold as a reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
 	Mod_VMG_FaiceGifty_Gift = 9;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich habe mit Genn gesprochen und meine Entlohnung erhalten. Ich sollte jetzt ins Minental zurückkehren, solange der Teleporter noch aktiv ist.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "I talked to Genn and got my reward. I should now return to the Valley of Minental while the teleporter is still active.");
 	
 	Info_ClearChoices	(Info_Mod_Genn_Soeren);
 
-	Info_AddChoice	(Info_Mod_Genn_Soeren, "Wie, das ist alles?", Info_Mod_Genn_Soeren_D);
-	Info_AddChoice	(Info_Mod_Genn_Soeren, "Danke. Was wirst du nun tun?", Info_Mod_Genn_Soeren_C);
+	Info_AddChoice	(Info_Mod_Genn_Soeren, "What, that's all?", Info_Mod_Genn_Soeren_D);
+	Info_AddChoice	(Info_Mod_Genn_Soeren, "Thanks. What are you going to do now?", Info_Mod_Genn_Soeren_C);
 };
 
 FUNC VOID Info_Mod_Genn_Soeren_A()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Soeren_A_15_00"); //Was wirst du nun tun?
-	AI_Output(self, hero, "Info_Mod_Genn_Soeren_A_09_01"); //Ich werde Nachforschungen anstellen. Wir müssen herausfinden, wer dieser P. ist.
+	AI_Output(hero, self, "Info_Mod_Genn_Soeren_A_15_00"); //What are you going to do now?
+	AI_Output(self, hero, "Info_Mod_Genn_Soeren_A_09_01"); //I'm gonna do some research. We need to find out who this P is. is.
 
 	if (Mod_VMG_FaiceGifty_Gift == 8)
 	{
 		Info_ClearChoices	(Info_Mod_Genn_Soeren);
 
-		Info_AddChoice	(Info_Mod_Genn_Soeren, "Wie sieht es mit einer Belohnung aus?", Info_Mod_Genn_Soeren_B);
-		Info_AddChoice	(Info_Mod_Genn_Soeren, "Ich werde dann ins Minental zurückkehren, wenn es dir nichts ausmacht.", Info_Mod_Genn_Soeren_E);
+		Info_AddChoice	(Info_Mod_Genn_Soeren, "How about a reward?", Info_Mod_Genn_Soeren_B);
+		Info_AddChoice	(Info_Mod_Genn_Soeren, "I'll go back to the Minental, if you don't mind.", Info_Mod_Genn_Soeren_E);
 	}
 	else
 	{
@@ -418,8 +418,8 @@ FUNC VOID Info_Mod_Genn_Soeren_A()
 
 FUNC VOID Info_Mod_Genn_Soeren_D()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Soeren_D_15_00"); //Wie, das ist alles?
-	AI_Output(self, hero, "Info_Mod_Genn_Soeren_D_09_01"); //Sei damit zufrieden. Und jetzt verschwinde, der Teleporter ist noch aktiv.
+	AI_Output(hero, self, "Info_Mod_Genn_Soeren_D_15_00"); //What, that's all?
+	AI_Output(self, hero, "Info_Mod_Genn_Soeren_D_09_01"); //Be satisfied with it. Now get out of here, the teleporter is still active.
 
 	Info_ClearChoices	(Info_Mod_Genn_Soeren);
 
@@ -428,7 +428,7 @@ FUNC VOID Info_Mod_Genn_Soeren_D()
 
 FUNC VOID Info_Mod_Genn_Soeren_C()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Soeren_C_15_00"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Genn_Soeren_C_15_00"); //Thanks.
 
 	Info_Mod_Genn_Soeren_A();
 };
@@ -454,18 +454,18 @@ FUNC INT Info_Mod_Genn_Gift_Condition()
 
 FUNC VOID Info_Mod_Genn_Gift_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Genn_Gift_09_00"); //Sei mir gegrüßt. Kann ich dir helfen? Nach allem, was du für uns getan hast, wäre es mir eine Ehre, dir zu helfen.
+	AI_Output(self, hero, "Info_Mod_Genn_Gift_09_00"); //Greetings to me. Can I help you? After all you've done for us, it would be an honor to help you.
 		
 	Info_ClearChoices	(Info_Mod_Genn_Gift);
 
-	Info_AddChoice	(Info_Mod_Genn_Gift, "Ich finde mich schon zurecht.", Info_Mod_Genn_Gift_B);
-	Info_AddChoice	(Info_Mod_Genn_Gift, "Ich suche nach dem Gift, mit dem Faice vergiftet worden ist.", Info_Mod_Genn_Gift_A);
+	Info_AddChoice	(Info_Mod_Genn_Gift, "I'll find my way around.", Info_Mod_Genn_Gift_B);
+	Info_AddChoice	(Info_Mod_Genn_Gift, "I'm looking for the poison Faice was poisoned with.", Info_Mod_Genn_Gift_A);
 };
 
 FUNC VOID Info_Mod_Genn_Gift_B()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Gift_B_15_00"); //Ich finde mich schon zurecht.
-	AI_Output(self, hero, "Info_Mod_Genn_Gift_B_09_01"); //Wie du meinst.
+	AI_Output(hero, self, "Info_Mod_Genn_Gift_B_15_00"); //I'll find my way around.
+	AI_Output(self, hero, "Info_Mod_Genn_Gift_B_09_01"); //Whatever you say.
 
 	Info_ClearChoices	(Info_Mod_Genn_Gift);
 
@@ -474,16 +474,16 @@ FUNC VOID Info_Mod_Genn_Gift_B()
 
 FUNC VOID Info_Mod_Genn_Gift_A()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Gift_A_15_00"); //Ich suche nach dem Gift, mit dem Faice vergiftet worden ist, falls du davon gehört hast.
+	AI_Output(hero, self, "Info_Mod_Genn_Gift_A_15_00"); //I'm looking for the poison Faice was poisoned with, if you've heard of it.
 
 	if (Mod_VMG_FaiceGifty_Gift == 13)
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Gift_A_15_01"); //Der Übeltäter soll sich hier in Tugettso aufhalten und ein Verwandlungsmagier oder Krieger sein.
-		AI_Output(self, hero, "Info_Mod_Genn_Gift_A_09_02"); //Was? Wie ist das möglich? Ich kenne fast alle Mitglieder persönlich.
+		AI_Output(hero, self, "Info_Mod_Genn_Gift_A_15_01"); //The culprit is said to be here in Tugettso and a transforming mage or warrior.
+		AI_Output(self, hero, "Info_Mod_Genn_Gift_A_09_02"); //What? How is that possible? I know almost all the members personally.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Genn_Gift_A_09_03"); //Über das Gift kann ich nur Vermutungen anstellen. Wir haben hier einige wenige giftige Gewächse.
-	AI_Output(self, hero, "Info_Mod_Genn_Gift_A_09_04"); //Am Besten ist es, wenn du mir von jedem Exemplar eines bringst. Hier hast du eine Liste.
+	AI_Output(self, hero, "Info_Mod_Genn_Gift_A_09_03"); //I can only make assumptions about the poison. We have a few poisonous plants here.
+	AI_Output(self, hero, "Info_Mod_Genn_Gift_A_09_04"); //It's best if you bring me one of each one. Here's your list.
 
 	B_GiveInvItems	(self, hero, ItWr_GennGiftListe, 1);
 
@@ -503,7 +503,7 @@ FUNC VOID Info_Mod_Genn_Gift_A()
 	Wld_InsertItem	(ItPl_Piante, "FP_ITEM_PIANTE_02");
 	Wld_InsertItem	(ItPl_Piante, "FP_ITEM_PIANTE_03");
 
-	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Ich habe von Genn eine Liste aller giftigen Pflanzen erhalten, die in Tugettso zu finden sind. Ich soll ihm ein Exemplar jeder Art besorgen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Genn sent me a list of all the poisonous plants found in Tugettso. I'm supposed to get him a copy of any kind.");
 
 	Mod_Turendil_Faice_Day = 2;
 
@@ -530,66 +530,66 @@ FUNC INT Info_Mod_Genn_Trador_Condition()
 
 FUNC VOID Info_Mod_Genn_Trador_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_00"); //Was ist passiert? Du siehst nicht gut aus.
-	AI_Output(hero, self, "Info_Mod_Genn_Trador_15_01"); //Ich wurde von Golems angegriffen, als ich die Pflanzen eingesammelt hatte.
+	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_00"); //What's happening? You don't look so good.
+	AI_Output(hero, self, "Info_Mod_Genn_Trador_15_01"); //I was attacked by golems when I collected the plants.
 
 	if (Mod_VMG_Giftpflanzen == 5)
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_02"); //Danach hat mir so ein Spinner namens Trador die Pflanzen abgenommen.
+		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_02"); //After that, some weirdo named Trador took the plants from me.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_03"); //Danach hat mich so ein Spinner namens Trador angesprochen und wollte die Pflanzen haben.
+		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_03"); //Afterwards, a weirdo named Trador approached me and wanted to have the plants.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Genn_Trador_15_04"); //Er meinte, er wäre ein hohes Mitglied bei den Verwandlungsmagiern.
+	AI_Output(hero, self, "Info_Mod_Genn_Trador_15_04"); //He said he was a high member of the transformative magicians.
 
 	if (Mod_VMG_Giftpflanzen == 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Genn_Trador_09_05"); //Das ist ja furchtbar!
+		AI_Output(self, hero, "Info_Mod_Genn_Trador_09_05"); //That's terrible!
 	};
 
-	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_06"); //Ich kenne kein Mitglied dieses Namens, aber wenn er eine unserer Roben anhatte, muss er jemanden von uns umgebracht haben.
-	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_07"); //Wir geben nämlich nur ausgewählten Mitgliedern so eine Robe.
+	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_06"); //I don't know a member of that name, but if he wore one of our robes, he must have killed one of us.
+	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_07"); //We only give such a robe to selected members.
 
 	if (Mod_VMG_Giftpflanzen == 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Genn_Trador_09_08"); //Ach, und weiterhin muss ich dich bitten, die Pflanzen nochmal einzusammeln, da ich sie immer noch benötige.
+		AI_Output(self, hero, "Info_Mod_Genn_Trador_09_08"); //Oh, and furthermore I have to ask you to collect the plants again, because I still need them.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_09"); //Hat dieser Trador denn verraten, warum er das gemacht hat?
+	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_09"); //Did Trador tell you why he did this?
 
 	if (Mod_VMG_FaiceGifty_Gift == 13)
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_10"); //Dadurch, dass ich Furt ausgeliefert habe, ist Trador auf mich aufmerksam geworden.
-		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_11"); //Er und Furt haben gemeinsame Sache gemacht.
+		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_10"); //By extraditing Furt, Trador became aware of me.
+		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_11"); //He and Furt made a common cause.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_12"); //Nachdem ich Furt habe laufen lassen, ist er zu Trador gegangen und hat ihm von mir erzählt.
-		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_13"); //Sie haben gemeinsame Sache gemacht.
+		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_12"); //After I let Furt go, he went to Trador and told him about me.
+		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_13"); //They've done something in common.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Genn_Trador_15_14"); //Warum sie Faice vergiften wollten, hat er mir allerdings nicht verraten.
+	AI_Output(hero, self, "Info_Mod_Genn_Trador_15_14"); //But he didn't tell me why they wanted to poison Faice.
 
 	if (Mod_VMG_Giftpflanzen == 5)
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_15"); //Ich mache mich sofort auf den Weg und sammle die Pflanzen erneut.
+		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_15"); //I leave immediately and collect the plants again.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_16"); //Ich schlage vor, wir gehen folgendermaßen vor:
-	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_17"); //Du gehst ins Dorf und versuchst herauszufinden, wer verschwunden ist, damit wir wissen, von wem dieser Trador die Robe und vielleicht sogar noch etwas Wissen über uns hat.
+	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_16"); //I suggest we proceed as follows:
+	AI_Output(self, hero, "Info_Mod_Genn_Trador_09_17"); //You go to the village and try to find out who has disappeared, so that we know from whom this Trador has the robe and maybe even some more knowledge about us.
 
 	if (Mod_VMG_Giftpflanzen == 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Genn_Trador_09_18"); //Bring mir aber vorher doch bitte die Pflanzen.
-		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_19"); //Ich werde dir die Pflanzen bringen und danach herausfinden, welcher Magier umgebracht worden ist.
+		AI_Output(self, hero, "Info_Mod_Genn_Trador_09_18"); //Bring me the plants first, please.
+		AI_Output(hero, self, "Info_Mod_Genn_Trador_15_19"); //I'll bring you the plants and find out which magician was killed.
 
-		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Ich muss Genn wohl oder übel noch einmal ein Exemplar jeder giftigen Pflanze besorgen, damit er seine Untersuchungen fortsetzen kann.");
+		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "I have to get Genn one more copy of every poisonous plant for Genn to continue his investigations.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Genn_Trador_09_20"); //Gibst du mir bitte die Pflanzen? Ich werde sie solange untersuchen.
+		AI_Output(self, hero, "Info_Mod_Genn_Trador_09_20"); //Will you give me the plants, please? I'll examine her as long as I want.
 	};
 };
 
@@ -601,7 +601,7 @@ INSTANCE Info_Mod_Genn_Giftpflanzen (C_INFO)
 	information	= Info_Mod_Genn_Giftpflanzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind die Pflanzen.";
+	description	= "Here are the plants.";
 };
 
 FUNC INT Info_Mod_Genn_Giftpflanzen_Condition()
@@ -619,7 +619,7 @@ FUNC INT Info_Mod_Genn_Giftpflanzen_Condition()
 
 FUNC VOID Info_Mod_Genn_Giftpflanzen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Giftpflanzen_15_00"); //Hier sind die Pflanzen.
+	AI_Output(hero, self, "Info_Mod_Genn_Giftpflanzen_15_00"); //Here are the plants.
 
 	Npc_RemoveInvItems	(hero, ItPl_Mushroom_04, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Mithrida, 1);
@@ -627,11 +627,11 @@ FUNC VOID Info_Mod_Genn_Giftpflanzen_Info()
 	Npc_RemoveInvItems	(hero, ItPl_Ponzola, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Venena, 1);
 
-	B_ShowGivenThings	("Pflanzen gegeben");
+	B_ShowGivenThings	("planting");
 
-	AI_Output(self, hero, "Info_Mod_Genn_Giftpflanzen_09_01"); //Vielen Dank, ich werde sie untersuchen, solange du nach dem verschwundenen Magier Ausschau hälst.
+	AI_Output(self, hero, "Info_Mod_Genn_Giftpflanzen_09_01"); //Thank you very much, I'll examine her as long as you keep an eye out for the missing magician.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Jetzt liegt es an mir, herauszufinden, wer von Trador umgebracht wurde. Ich sollte mich im Dorf etwas umsehen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Now it's up to me to find out who was killed by Trador. I should take a look around the village.");
 
 	AI_UnequipArmor	(Mod_7357_VMG_Dean_Tug);
 	Npc_RemoveInvItems	(Mod_7357_VMG_Dean_TUG, ItAr_Naturmagier2, 1);
@@ -663,25 +663,25 @@ FUNC INT Info_Mod_Genn_Dean_Condition()
 
 FUNC VOID Info_Mod_Genn_Dean_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_00"); //Und? Was hast du herausgefunden?
-	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_01"); //Der getötete Magier heißt Dean.
-	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_02"); //Er wurde von einem Golem überfallen, als er sich auf den Weg gemacht hat, den alten Steinkreis zu untersuchen.
-	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_03"); //Merkwürdigerweise hat aber niemand den Golem vorher gesehen.
-	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_04"); //Dean also. Das ist schon ein Schlag.
-	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_05"); //Er hat sich bei uns um die mystischen und unerklärlichen Angelegenheiten gekümmert.
-	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_06"); //Wir müssen davon ausgehen, dass unser Feind Dinge weiß, die ihn nichts angehen.
-	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_07"); //Wie geht es jetzt weiter?
-	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_08"); //Ach ja, genau. Ich habe die Pflanzen untersucht.
-	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_09"); //Ich denke, er wurde mit der Venena-Pflanze vergiftet. Hier hast du ein Exemplar davon.
+	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_00"); //And? What did you find out?
+	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_01"); //The killed magician's name is Dean.
+	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_02"); //He was attacked by a golem as he set out to investigate the old stone circle.
+	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_03"); //Strangely enough, no one has seen the Golem before.
+	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_04"); //Dean then. That's quite a shot.
+	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_05"); //He took care of the mystical and inexplicable matters.
+	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_06"); //We have to assume our enemy knows things that don't concern him.
+	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_07"); //What happens now?
+	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_08"); //Oh, yes, exactly. I checked the plants.
+	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_09"); //I think he was poisoned with the Venena plant. Here's a copy of this.
 
 	B_GiveInvItems	(self, hero, ItPl_Venena, 1);
 
-	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_10"); //Jetzt geh zu Turendil und berichte ihm alles, was du hier herausgefunden hast.
-	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_11"); //Er wird wissen, was zu tun ist.
-	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_12"); //Okay, danke. Ich mache mich dann auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_13"); //Beeile dich.
+	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_10"); //Now go to Turendil and tell him everything you've found out.
+	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_11"); //He'll know what to do.
+	AI_Output(hero, self, "Info_Mod_Genn_Dean_15_12"); //Okay, thank you. I'll be on my way then.
+	AI_Output(self, hero, "Info_Mod_Genn_Dean_09_13"); //Come on, hurry up.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Genn hat herausgefunden, dass Faice mit dem Gift der Venena-Pflanze vergiftet wurde. Ich sollte jetzt zurück zu Turendil gehen und ihm alles erzählen, was ich herausgefunden habe.");
+	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Genn found out Faice was poisoned by the venom of the Venena plant. I should go back to Turendil now and tell him everything I found out.");
 };
 
 INSTANCE Info_Mod_Genn_TradorTot (C_INFO)
@@ -704,22 +704,22 @@ FUNC INT Info_Mod_Genn_TradorTot_Condition()
 
 FUNC VOID Info_Mod_Genn_TradorTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Genn_TradorTot_09_00"); //Wo kommst du denn her? Und was war das für ein Lärm da hinten?
+	AI_Output(self, hero, "Info_Mod_Genn_TradorTot_09_00"); //Where did you come from? And what was that noise back there?
 
 	Info_ClearChoices	(Info_Mod_Genn_TradorTot);
 
-	Info_AddChoice	(Info_Mod_Genn_TradorTot, "Die lange Version.", Info_Mod_Genn_TradorTot_B);
-	Info_AddChoice	(Info_Mod_Genn_TradorTot, "Die kurze Version", Info_Mod_Genn_TradorTot_A);
+	Info_AddChoice	(Info_Mod_Genn_TradorTot, "The long version.", Info_Mod_Genn_TradorTot_B);
+	Info_AddChoice	(Info_Mod_Genn_TradorTot, "The short version", Info_Mod_Genn_TradorTot_A);
 };
 
 FUNC VOID Info_Mod_Genn_TradorTot_C()
 {
-	AI_Output(self, hero, "Info_Mod_Genn_TradorTot_C_09_00"); //Sehr gut, ich bin stolz auf dich.
-	AI_Output(self, hero, "Info_Mod_Genn_TradorTot_C_09_01"); //Ich denke, es wäre das Beste, wenn ich den Teleporter zurück ins Minental für dich aktiviere, damit du Turendil von der Sache berichten kannst.
-	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_C_15_02"); //Tu das.
-	AI_Output(self, hero, "Info_Mod_Genn_TradorTot_C_09_03"); //So, du kannst. Wir sehen uns.
+	AI_Output(self, hero, "Info_Mod_Genn_TradorTot_C_09_00"); //Very good, I'm proud of you.
+	AI_Output(self, hero, "Info_Mod_Genn_TradorTot_C_09_01"); //I think it would be best if I activated the teleporter back in the Minental for you, so you could tell Turendil about this.
+	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_C_15_02"); //Do that.
+	AI_Output(self, hero, "Info_Mod_Genn_TradorTot_C_09_03"); //There, you can do it. I'll see you around.
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Genn weiß Bescheid und hat das Portal für den Rückweg aktiviert. Jetzt sollte ich zu Turendil gehen.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Genn knows and has activated the portal for the way back. Now I should go to Turendil.");
 
 	Info_ClearChoices	(Info_Mod_Genn_TradorTot);
 
@@ -728,19 +728,19 @@ FUNC VOID Info_Mod_Genn_TradorTot_C()
 
 FUNC VOID Info_Mod_Genn_TradorTot_B()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_00"); //Die lange Version:
-	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_01"); //Nachdem Trador den Teleporter manipuliert hatte, bin ich in einem abgelegenen Tal herausgekommen.
-	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_02"); //Dort habe ich die beiden Einsiedler Setta und Buff kennen gelernt und habe den taleigenen Teleporter repariert.
-	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_03"); //Danach sind wir hierhergekommen und wurden von Trador überrascht.
-	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_04"); //Ich habe ihn umgebracht und ihm die Spruchrollen zur Golembeschwörung abgenommen.
+	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_00"); //The long version:
+	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_01"); //After Trador had manipulated the teleporter, I came out in a remote valley.
+	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_02"); //There I got to know the two hermits Setta and Buff and repaired the valley's own teleporter.
+	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_03"); //Afterwards we came here and were surprised by Trador.
+	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_B_15_04"); //I killed him and took away his spell rolls to golem incantation.
 
 	Info_Mod_Genn_TradorTot_C();
 };
 
 FUNC VOID Info_Mod_Genn_TradorTot_A()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_A_15_00"); //Die kurze Version:
-	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_A_15_01"); //Trador ist tot und ich habe die Spruchrollen zur Golembeschwörung sichergestellt. Er hatte den Teleporter manipuliert.
+	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_A_15_00"); //The short version:
+	AI_Output(hero, self, "Info_Mod_Genn_TradorTot_A_15_01"); //Trador is dead, and I've secured the spell rolls to the Golembeschwurge. He had tampered with the teleporter.
 
 	Info_Mod_Genn_TradorTot_C();
 };
@@ -753,7 +753,7 @@ INSTANCE Info_Mod_Genn_Pruefung (C_INFO)
 	information	= Info_Mod_Genn_Pruefung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Faice schickt mich.";
+	description	= "Faice sent me.";
 };
 
 FUNC INT Info_Mod_Genn_Pruefung_Condition()
@@ -767,80 +767,80 @@ FUNC INT Info_Mod_Genn_Pruefung_Condition()
 
 FUNC VOID Info_Mod_Genn_Pruefung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_15_00"); //Faice schickt mich.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_09_01"); //Ja, ich weiß. Du willst die drei Tests meistern, die dich in unsere Praktiken einweisen, habe ich recht?
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_15_00"); //Faice sent me.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_09_01"); //Yeah, I know. You want to master the three tests that instruct you in our practices, right?
 
 	Info_ClearChoices	(Info_Mod_Genn_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Genn_Pruefung, "Was für Tests?", Info_Mod_Genn_Pruefung_B);
-	Info_AddChoice	(Info_Mod_Genn_Pruefung, "So ist es.", Info_Mod_Genn_Pruefung_A);
+	Info_AddChoice	(Info_Mod_Genn_Pruefung, "What kind of tests?", Info_Mod_Genn_Pruefung_B);
+	Info_AddChoice	(Info_Mod_Genn_Pruefung, "That's how it is.", Info_Mod_Genn_Pruefung_A);
 };
 
 FUNC VOID Info_Mod_Genn_Pruefung_B()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_B_15_00"); //Was für Tests?
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_B_09_01"); //Das hat Faice dir nicht erzählt? Dann steht es mir auch nicht zu.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_B_09_02"); //Du wirst nacheinander Aufgaben gestellt bekommen, die du ohne Hilfe lösen musst.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_B_09_03"); //Ich werde dir jetzt die erste dieser Aufgaben auferlegen. Bist du bereit?
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_B_15_00"); //What kind of tests?
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_B_09_01"); //Faice didn't tell you that? Then it's not mine either.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_B_09_02"); //You will be asked to complete tasks one after the other, which you will have to solve without help.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_B_09_03"); //I will now impose the first of these tasks on you. Are you ready?
 
 	Info_ClearChoices	(Info_Mod_Genn_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Genn_Pruefung, "Ich muss noch was erledigen.", Info_Mod_Genn_Pruefung_D);
-	Info_AddChoice	(Info_Mod_Genn_Pruefung, "Ich bin bereit.", Info_Mod_Genn_Pruefung_C);
+	Info_AddChoice	(Info_Mod_Genn_Pruefung, "There's something I have to do.", Info_Mod_Genn_Pruefung_D);
+	Info_AddChoice	(Info_Mod_Genn_Pruefung, "I'm ready.", Info_Mod_Genn_Pruefung_C);
 };
 
 FUNC VOID Info_Mod_Genn_Pruefung_A()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_A_15_00"); //So ist es.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_A_09_01"); //Dann werde ich dir jetzt die erste Aufgabe auferlegen. Bist du bereit?
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_A_15_00"); //That's how it is.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_A_09_01"); //Then I'll give you the first task. Are you ready?
 
 	Info_ClearChoices	(Info_Mod_Genn_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Genn_Pruefung, "Ich muss noch was erledigen.", Info_Mod_Genn_Pruefung_D);
-	Info_AddChoice	(Info_Mod_Genn_Pruefung, "Ich bin bereit.", Info_Mod_Genn_Pruefung_C);
+	Info_AddChoice	(Info_Mod_Genn_Pruefung, "There's something I have to do.", Info_Mod_Genn_Pruefung_D);
+	Info_AddChoice	(Info_Mod_Genn_Pruefung, "I'm ready.", Info_Mod_Genn_Pruefung_C);
 };
 
 FUNC VOID Info_Mod_Genn_Pruefung_D()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_D_15_00"); //Ich muss noch was erledigen.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_D_09_01"); //Beeile dich.
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_D_15_00"); //There's something I have to do.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_D_09_01"); //Come on, hurry up.
 
 	Info_ClearChoices	(Info_Mod_Genn_Pruefung);
 };
 
 FUNC VOID Info_Mod_Genn_Pruefung_C()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_C_15_00"); //Ich bin bereit.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_01"); //Vielleicht ist dir schon der Tempel vor unserem Lager aufgefallen.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_02"); //Falls nicht habe ich eine Karte für dich vorbereitet, auf der der Standpunkt eingezeichnet ist.
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_C_15_00"); //I'm ready.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_01"); //You may have noticed the temple in front of our camp.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_02"); //If not, I have prepared a map for you showing the position.
 
 	B_GiveInvItems	(self, hero, ItWr_Map_Tugettso_Tempel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_03"); //Außerdem erhältst du von mir drei Spruchrollen, die du dort weise einsetzen musst.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_03"); //I will also give you three spell rolls, which you have to use wisely.
 
-	B_ShowGivenThings	("3 Spruchrollen erhalten");
+	B_ShowGivenThings	("3 Keeping saying-rolls");
 
 	CreateInvItems	(hero, ItSc_TrfMeatbug, 1);
 	CreateInvItems	(hero, ItSc_TrfBloodfly, 1);
 	CreateInvItems	(hero, Itsc_TrfSheep, 1);
 
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_04"); //Unten im Tempel, ganz am Ende ist eine Truhe. Bring mir den Gegenstand, der darin ist. Ein Teleporter wird dich wieder zu mir führen.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_05"); //Doch sei gewarnt: Du wirst nur mit den Spruchrollen dein Ziel erreichen können, denn der Weg wird von drei Hindernissen versperrt.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_06"); //Überlege dir gut, welche Rolle du für welches Hindernis benutzt. Noch Fragen?
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_C_15_07"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_08"); //Alles klar, hier hast du noch den Schlüssel und einen Teleportzauber.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_04"); //Down in the temple, at the very end is a chest. Bring me the item that's in it. A teleporter will lead you back to me.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_05"); //But be warned: you will only be able to reach your goal with the role of spellcasting, because the road is blocked by three obstacles.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_06"); //Think carefully about which role you use for which obstacle. Any more questions?
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_C_15_07"); //No.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_08"); //All right, here's the key and a teleport spell.
 
-	B_ShowGivenThings	("Schlüssel und Spruchrolle erhalten");
+	B_ShowGivenThings	("Preserving the key and saying role");
 
 	CreateInvItems	(hero, ItSc_TeleportGenn, 1);
 	CreateInvItems	(hero, ItKe_TugettsoTempel, 1);
 
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_C_15_09"); //Gut, ich mache mich dann auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_10"); //Viel Erfolg!
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung_C_15_09"); //All right, I'll be on my way.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung_C_09_10"); //Good luck!
 
 	Mod_VMG_Pruefung = 1;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich soll zum Tempel, der auf der Karte von Tugettso markiert ist und mit der Hilfe von drei Spruchrollen einen Gegenstand aus seinem Gewölbe holen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I am to go to the temple, which is marked on the map of Tugettso and with the help of three rolls of spell, to fetch an object from its vault.");
 
 	Info_ClearChoices	(Info_Mod_Genn_Pruefung);
 
@@ -855,7 +855,7 @@ INSTANCE Info_Mod_Genn_Pruefung2 (C_INFO)
 	information	= Info_Mod_Genn_Pruefung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin zurück.";
+	description	= "I'm back.";
 };
 
 FUNC INT Info_Mod_Genn_Pruefung2_Condition()
@@ -869,37 +869,37 @@ FUNC INT Info_Mod_Genn_Pruefung2_Condition()
 
 FUNC VOID Info_Mod_Genn_Pruefung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_00"); //Ich bin zurück.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_01"); //Und? Hast du den Gegenstand?
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_00"); //I'm back.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_01"); //And? Did you get the item?
 
 	if (Npc_HasItems(hero, ItMi_Statue_Genn) == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_02"); //Hier ist die Büste.
-		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_03"); //Wunderbar, du hast die erste Aufgabe gemeistert! Gib mir die Büste.
-		AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_04"); //Hier hast du sie.
+		AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_02"); //Here's the bust.
+		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_03"); //Wonderful, you did the first job! Give me the bust.
+		AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_04"); //Here you have them.
 
 		B_GiveInvItems	(hero, self, ItMi_Statue_Genn, 1);
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich habe die erste Aufgabe zu Genns Zufriedenheit gelöst. Asko wird mir nun die nächste Aufgabe stellen. Er wartet im Dorf auf mich.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I solved the first task to Genn's satisfaction. Asko will now give me the next task. He's waiting for me in the village.");
 
 		Mod_VMG_Pruefung_Genn = 1;
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_05"); //Nein.
-		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_06"); //Oh, verstehe. Das ist eine verzwickte Situation, eigentlich dürfte ich dich nicht weiter lassen.
-		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_07"); //Aber du hast schon so viel für unser Tal getan, dass ich ein Auge zudrücken werde.
-		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_08"); //Ich werde Faice davon berichten, aber du darfst jetzt bei keiner weiteren Aufgabe scheitern!
-		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_09"); //Hast du mich verstanden?
-		AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_10"); //Alles klar.
+		AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_05"); //No.
+		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_06"); //Oh, I see. It's a tricky situation. I shouldn't be allowed to let you go any further.
+		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_07"); //But you've already done so much for our valley that I'll turn a blind eye.
+		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_08"); //I'll tell Faice about it, but you can't fail in any other task now!
+		AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_09"); //Do you understand me?
+		AI_Output(hero, self, "Info_Mod_Genn_Pruefung2_15_10"); //All clear.
 
-		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "Ich habe die Aufgabe von Genn nicht lösen können. Jetzt soll mir Asko die nächste Aufgabe stellen, bei der ich nicht scheitern sollte.");
+		B_LogEntry	(TOPIC_MOD_FAICE_PRUEFUNG, "I couldn't solve Genn's problem. Now Asko is supposed to give me the next task that I shouldn't fail.");
 
 		Mod_VMG_Pruefung_Genn = 2;
 	};
 
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_11"); //Gut. Die nächste Aufgabe wird dir Asko stellen. Am besten, du gehst gleich zu ihm.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_12"); //Er ist inzwischen wieder im Dorf.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_11"); //Good. Asko will give you the next task. Why don't you go straight to him?
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung2_09_12"); //He's back in the village by now.
 
 	B_StartOtherRoutine	(Mod_7355_VMG_Asko_TUG, "START");
 };
@@ -912,7 +912,7 @@ INSTANCE Info_Mod_Genn_Pruefung3 (C_INFO)
 	information	= Info_Mod_Genn_Pruefung3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin zurück.";
+	description	= "I'm back.";
 };
 
 FUNC INT Info_Mod_Genn_Pruefung3_Condition()
@@ -925,12 +925,12 @@ FUNC INT Info_Mod_Genn_Pruefung3_Condition()
 
 FUNC VOID Info_Mod_Genn_Pruefung3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung3_15_00"); //Ich bin zurück.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung3_09_01"); //Das freut mich. Ich will dich auch gar nicht lange aufhalten, denn Faice möchte dich sehen.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung3_09_02"); //Ich werde dann ja erfahren, wie es ausgegangen ist. Ich wünsche dir auf jeden Fall viel Glück!
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung3_09_03"); //Der Teleporter ist aktiv, du kannst dich gleich auf den Weg machen.
-	AI_Output(hero, self, "Info_Mod_Genn_Pruefung3_15_04"); //Vielen Dank.
-	AI_Output(self, hero, "Info_Mod_Genn_Pruefung3_09_05"); //Mach's gut!
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung3_15_00"); //I'm back.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung3_09_01"); //I'm glad you did. I don't want to hold you up for long, because Faice wants to see you.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung3_09_02"); //I'll find out how it turned out. I certainly wish you good luck!
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung3_09_03"); //The teleporter is active, you can get on your way right away.
+	AI_Output(hero, self, "Info_Mod_Genn_Pruefung3_15_04"); //Thank you very much.
+	AI_Output(self, hero, "Info_Mod_Genn_Pruefung3_09_05"); //Bye, now!
 };
 
 var int Mod_Knows_GennTrader;
@@ -959,7 +959,7 @@ FUNC VOID Info_Mod_Genn_Trade_Info()
 		Mod_Knows_GennTrader = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_HAENDLER_VM, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_HAENDLER_VM, "Genn handelt mit magischem Zubehör.");
+		B_LogEntry	(TOPIC_MOD_HAENDLER_VM, "Genn deals in magical accessories.");
 	};
 	Backup_Questitems();
 

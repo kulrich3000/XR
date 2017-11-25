@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Meldor_Hi (C_INFO)
 	information	= Info_Mod_Meldor_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Meldor_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Meldor_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Meldor_Hi_07_01"); //Ich bin Meldor. Ich helfe Lehmar bei seinen Geldgeschäften.
+	AI_Output(self, hero, "Info_Mod_Meldor_Hi_07_01"); //I'm Meldor. I'm helping Lehmar with his financial transactions.
 };
 
 INSTANCE Info_Mod_Meldor_Hilfe (C_INFO)
@@ -45,35 +45,35 @@ FUNC INT Info_Mod_Meldor_Hilfe_Condition()
 
 FUNC VOID Info_Mod_Meldor_Hilfe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_07_00"); //Hey du, komm mal her.
-	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_15_01"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_07_02"); //Ich brauche dringend deine Hilfe!
-	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_15_03"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_07_04"); //Ich hab keine Zeit dir alles zu erzählen. Sie kommen jeden Moment. Also hilfst du mir?
+	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_07_00"); //Hey you, come here.
+	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_15_01"); //What's going on?
+	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_07_02"); //I desperately need your help!
+	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_15_03"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_07_04"); //I don't have time to tell you everything. They'll be here any minute. So you'll help me?
 
 	Info_ClearChoices	(Info_Mod_Meldor_Hilfe);
 
-	Info_AddChoice	(Info_Mod_Meldor_Hilfe, "Klar, wie kann ich dir helfen?", Info_Mod_Meldor_Hilfe_Ja);
-	Info_AddChoice	(Info_Mod_Meldor_Hilfe, "Nein, mach dein Zeug alleine!", Info_Mod_Meldor_Hilfe_Nein);
+	Info_AddChoice	(Info_Mod_Meldor_Hilfe, "Sure, how can I help you?", Info_Mod_Meldor_Hilfe_Ja);
+	Info_AddChoice	(Info_Mod_Meldor_Hilfe, "No, do your stuff alone!", Info_Mod_Meldor_Hilfe_Nein);
 };
 
 FUNC VOID Info_Mod_Meldor_Hilfe_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_Ja_15_00"); //Klar, wie kann ich dir helfen?
-	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_01"); //Ich hab hier ein Päckchen Sumpfkraut, verstecke es sofort!
+	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_Ja_15_00"); //Sure, how can I help you?
+	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_01"); //I've got a pack of bogweed, hide it now!
 
 	B_GiveInvItems	(self, hero, ItMi_HerbPaket, 1);
 
-	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_Ja_15_02"); //Warum soll ich es verstecken?
-	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_03"); //Mach schnell, die Milizen können jeden Moment kommen.
-	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_04"); //Irgendein Hund hat sie auf mich gesetzt, also geh.
-	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_Ja_15_05"); //Wo soll ich das Päckchen verstecken?
-	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_06"); //Es gibt hier im Hafenviertel ein Lagerhaus, versteck es dort in einer Truhe.
-	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_07"); //Und jetzt verschwinde, bevor die Miliz da ist!
+	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_Ja_15_02"); //Why should I hide it?
+	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_03"); //Hurry up, the militias can come any minute.
+	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_04"); //Some dog's got her on top of me, so go.
+	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_Ja_15_05"); //Where should I hide the package?
+	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_06"); //There's a warehouse here in the harbour district, hiding it in a chest.
+	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Ja_07_07"); //Now get out of here before the militia get here!
 
 	Log_CreateTopic	(TOPIC_MOD_MELDOR_PAKET, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MELDOR_PAKET, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MELDOR_PAKET, "Meldor hat mir ein Päckchen Sumpfkraut gegeben. Er will, dass ich es im Lagerhaus im Hafenviertel verstecke, da ihn scheinbar jemand bei der Miliz angeschwärzt hat.");
+	B_LogEntry	(TOPIC_MOD_MELDOR_PAKET, "Meldor gave me a pack of swampweed. He wants me to hide it in the dockside warehouse, because it looks like someone blackened it with the militia.");
 
 	Info_ClearChoices	(Info_Mod_Meldor_Hilfe);
 
@@ -85,8 +85,8 @@ FUNC VOID Info_Mod_Meldor_Hilfe_Ja()
 
 FUNC VOID Info_Mod_Meldor_Hilfe_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_Nein_15_00"); //Nein, mach dein Zeug alleine!
-	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Nein_07_01"); //Wie du meinst, aber du hast dir gerade eine große Chance entgehen lassen.
+	AI_Output(hero, self, "Info_Mod_Meldor_Hilfe_Nein_15_00"); //No, do your stuff alone!
+	AI_Output(self, hero, "Info_Mod_Meldor_Hilfe_Nein_07_01"); //Whatever you say, but you just missed a big chance.
 
 	CreateInvItems	(self, ItMi_HerbPaket, 1);
 
@@ -106,7 +106,7 @@ INSTANCE Info_Mod_Meldor_PaketSicher (C_INFO)
 	information	= Info_Mod_Meldor_PaketSicher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab dein Päckchen versteckt.";
+	description	= "I hid your package.";
 };
 
 FUNC INT Info_Mod_Meldor_PaketSicher_Condition()
@@ -121,21 +121,21 @@ FUNC INT Info_Mod_Meldor_PaketSicher_Condition()
 
 FUNC VOID Info_Mod_Meldor_PaketSicher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_00"); //Ich hab dein Päckchen versteckt.
-	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_01"); //Sagst du mir jetzt, was es damit auf sich hat?
-	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_02"); //Na gut ... in letzer Zeit hat mir die Miliz öfters aufgelauert. Sie glauben, dass ich hinter dem vielen Sumpfkraut stecke.
-	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_03"); //Steckst du doch auch.
-	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_04"); //Ja, aber das wissen nur sehr wenige und schon gar nicht die Miliz.
-	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_05"); //Von welchem Hund hast du vorhin gesprochen?
-	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_06"); //Wie bereits gesagt, das wissen nur die wenigsten und irgendeiner in der Kaserne weiß zu viel.
-	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_07"); //Bevor ich es vergesse: Du hast mir den Arsch gerettet. Die Miliz war bei mir und hat mich nach Sumpfkraut durchsucht.
-	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_08"); //Die werden auch immer dreister. Wie auch immer, du bist ein anständiger Kerl und aus dir kann noch was werden!
-	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_09"); //Was meinst du damit?
-	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_10"); //Wenn du willst, kann ich dich meinem Chef vorstellen. Könnte ein gutes Wort für dich einlegen.
-	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_11"); //Gut, und wo ist dein Boss?
-	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_12"); //Am besten gehst du alleine, ich bin viel zu auffällig. Geh zum schlafenden Geldsack, in der Nähe der Kaserne.
-	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_13"); //Sag Hanna, dass Sumpfkrautmeldor dich schickt.
-	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_14"); //Gut, ich werde es machen.
+	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_00"); //I hid your package.
+	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_01"); //Now will you tell me what this is all about?
+	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_02"); //All right... the militia's been stalking me lately. They think I'm behind all that swampweed.
+	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_03"); //You're stuck with me.
+	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_04"); //Yes, but very few people, and certainly not the militia, know that.
+	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_05"); //What dog were you talking about earlier?
+	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_06"); //As I have already said, very few people in the barracks are aware of this, and there is no one in the barracks who knows too much.
+	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_07"); //Before I forget, you saved my ass. The militia came to my house and searched me for swampweed.
+	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_08"); //They're getting bolder all the time. Anyway, you're a decent guy and you can still be something!
+	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_09"); //What do you mean?
+	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_10"); //If you want, I can introduce you to my boss. Could put in a good word for you.
+	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_11"); //Well, where's your boss?
+	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_12"); //You'd better go alone, I'm too conspicuous. Go to the sleeping money bag, near the barracks.
+	AI_Output(self, hero, "Info_Mod_Meldor_PaketSicher_07_13"); //Tell Hanna you're from Marshal's Office.
+	AI_Output(hero, self, "Info_Mod_Meldor_PaketSicher_15_14"); //All right, I'll do it.
 
 	B_SetTopicStatus	(TOPIC_MOD_MELDOR_PAKET, LOG_SUCCESS);
 
@@ -145,7 +145,7 @@ FUNC VOID Info_Mod_Meldor_PaketSicher_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_MELDOR_HANNA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MELDOR_HANNA, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MELDOR_HANNA, "Meldor will ein gutes Wort für mich bei seinem Chef einlegen. Ich soll mit Hanna im 'Schlafenden Geldsack' sprechen.");
+	B_LogEntry	(TOPIC_MOD_MELDOR_HANNA, "Meldor wants to put in a good word for me with his boss. I'm to speak to Hanna in the Sleeping Wallet.");
 };
 
 INSTANCE Info_Mod_Meldor_Mortis (C_INFO)
@@ -156,7 +156,7 @@ INSTANCE Info_Mod_Meldor_Mortis (C_INFO)
 	information	= Info_Mod_Meldor_Mortis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab gehört, du versuchst ein Geschäft abzuschließen?";
+	description	= "I hear you're trying to close a deal.";
 };
 
 FUNC INT Info_Mod_Meldor_Mortis_Condition()
@@ -169,18 +169,18 @@ FUNC INT Info_Mod_Meldor_Mortis_Condition()
 
 FUNC VOID Info_Mod_Meldor_Mortis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_00"); //Ich hab gehört du versuchst ein Geschäft abzuschließen?
-	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_01"); //Verflucht, woher weißt du das?
-	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_02"); //Mortis, der Schmied der Kaserne, hat davon gewusst.
-	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_03"); //Was? Er war es?
-	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_04"); //Ja, so siehts aus.
-	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_05"); //Ich wünschte mir, er würde wegen Sumpfkraut in den Knast wandern.
-	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_06"); //Kannst du das nicht für mich machen?
-	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_07"); //Woher bekomm ich ein Sumpfkrautpäckchen?
-	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_08"); //Ich hab momentan keine mehr, versuch irgendwo eins aufzutreiben.
-	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_11"); //Ich werd mein Bestes geben.
+	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_00"); //I hear you're trying to close a deal.
+	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_01"); //How the fuck do you know that?
+	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_02"); //Mortis, the blacksmith of the barracks, knew about it.
+	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_03"); //What? It was him?
+	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_04"); //Yeah, that's what it looks like.
+	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_05"); //I wish he'd go to jail for swampweed.
+	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_06"); //Can't you do that for me?
+	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_07"); //Where do I get a bog herb package?
+	AI_Output(self, hero, "Info_Mod_Meldor_Mortis_07_08"); //I don't have any anymore at the moment, try and find one somewhere.
+	AI_Output(hero, self, "Info_Mod_Meldor_Mortis_15_11"); //I'll do my best.
 
-	B_LogEntry	(TOPIC_MOD_DIEB_ANDRE_MELDOR, "Ich habe Meldor gewarnt. Er will, dass ich Mortis ein Kraut - Paket unterjuble. Am besten lege ich es in seiner Truhe in der Milizschmiede ab.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ANDRE_MELDOR, "I warned Meldor. He wants me to give mortis a herb package. I'd better put it in his chest in the militia forge.");
 };
 
 INSTANCE Info_Mod_Meldor_WacholderDieb (C_INFO)
@@ -191,7 +191,7 @@ INSTANCE Info_Mod_Meldor_WacholderDieb (C_INFO)
 	information	= Info_Mod_Meldor_WacholderDieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey du!";
+	description	= "Hey you!";
 };
 
 FUNC INT Info_Mod_Meldor_WacholderDieb_Condition()
@@ -205,13 +205,13 @@ FUNC INT Info_Mod_Meldor_WacholderDieb_Condition()
 
 FUNC VOID Info_Mod_Meldor_WacholderDieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Meldor_WacholderDieb_15_00"); //Hey du!
-	AI_Output(self, hero, "Info_Mod_Meldor_WacholderDieb_07_01"); //Was willst du, Kleiner?
-	AI_Output(hero, self, "Info_Mod_Meldor_WacholderDieb_15_02"); //Weißt du etwas über den Diebstahl bei Coragon!
-	AI_Output(self, hero, "Info_Mod_Meldor_WacholderDieb_07_03"); //Woher denn? Wenn du nach Beweisen suchst, befrage mal die Konkurrenten von Coragon. Damit meine ich Kardif und den Wirt des Freibierstandes.
-	AI_Output(hero, self, "Info_Mod_Meldor_WacholderDieb_15_04"); //Danke für den Tipp!
+	AI_Output(hero, self, "Info_Mod_Meldor_WacholderDieb_15_00"); //Hey you!
+	AI_Output(self, hero, "Info_Mod_Meldor_WacholderDieb_07_01"); //What do you want, kid?
+	AI_Output(hero, self, "Info_Mod_Meldor_WacholderDieb_15_02"); //Do you know anything about the theft at Coragon?
+	AI_Output(self, hero, "Info_Mod_Meldor_WacholderDieb_07_03"); //From where? If you're looking for evidence, check with the Coragon's competitors. By that I mean Cardif and the landlord of the free beer stand.
+	AI_Output(hero, self, "Info_Mod_Meldor_WacholderDieb_15_04"); //Thanks for the tip!
 
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Meldor gab mir den Tipp mich bei Kardif und dem Wirt des Freibierstandes umzuhören, da sie die Konkurrenten von Coragon sind.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Meldor gave me the tip to ask Kardif and the host of the free beer stand, as they are the competitors of Coragon.");
 };
 
 INSTANCE Info_Mod_Meldor_Aabid (C_INFO)
@@ -222,7 +222,7 @@ INSTANCE Info_Mod_Meldor_Aabid (C_INFO)
 	information	= Info_Mod_Meldor_Aabid_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme von Aabid.";
+	description	= "I'm from Aabid.";
 };
 
 FUNC INT Info_Mod_Meldor_Aabid_Condition()
@@ -236,12 +236,12 @@ FUNC INT Info_Mod_Meldor_Aabid_Condition()
 
 FUNC VOID Info_Mod_Meldor_Aabid_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Meldor_Aabid_15_00"); //Ich komme von Aabid.
-	AI_Output(self, hero, "Info_Mod_Meldor_Aabid_07_01"); //(überrascht) Wem?
-	AI_Output(hero, self, "Info_Mod_Meldor_Aabid_15_02"); //Aabid, ein Mann, der bei dir ein Sumpfkrautpaket bestellt hatte. Er fragt sich, wo seine Bestellung bleibt.
-	AI_Output(self, hero, "Info_Mod_Meldor_Aabid_07_03"); //Achso, der Kerl. Den hab' ich ja ganz vergessen.
-	AI_Output(hero, self, "Info_Mod_Meldor_Aabid_15_04"); //Hab ich's mir doch gedacht. Kannst du mir das Paket geben, damit ich es ihm bringen kann?
-	AI_Output(self, hero, "Info_Mod_Meldor_Aabid_07_05"); //Klar, aber nur für den Preis von 150 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Meldor_Aabid_15_00"); //I'm from Aabid.
+	AI_Output(self, hero, "Info_Mod_Meldor_Aabid_07_01"); //(Surprised) Who?
+	AI_Output(hero, self, "Info_Mod_Meldor_Aabid_15_02"); //Aabid, a man who ordered a bogweed package from you. He wonders where his order is.
+	AI_Output(self, hero, "Info_Mod_Meldor_Aabid_07_03"); //Oh, that guy. I forgot all about him.
+	AI_Output(hero, self, "Info_Mod_Meldor_Aabid_15_04"); //That's what I thought. Can you give me the package so I can bring it to him?
+	AI_Output(self, hero, "Info_Mod_Meldor_Aabid_07_05"); //Sure, but only for the price of 150 gold coins.
 };
 
 INSTANCE Info_Mod_Meldor_AabidPaket (C_INFO)
@@ -252,7 +252,7 @@ INSTANCE Info_Mod_Meldor_AabidPaket (C_INFO)
 	information	= Info_Mod_Meldor_AabidPaket_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du die Münzen.";
+	description	= "Here are the coins.";
 };
 
 FUNC INT Info_Mod_Meldor_AabidPaket_Condition()
@@ -266,15 +266,15 @@ FUNC INT Info_Mod_Meldor_AabidPaket_Condition()
 
 FUNC VOID Info_Mod_Meldor_AabidPaket_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Meldor_AabidPaket_15_00"); //Hier hast du die Münzen.
+	AI_Output(hero, self, "Info_Mod_Meldor_AabidPaket_15_00"); //Here are the coins.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 150);
 
-	AI_Output(self, hero, "Info_Mod_Meldor_AabidPaket_07_01"); //(grinst) Alles klar, hier ist dein Paket.
+	AI_Output(self, hero, "Info_Mod_Meldor_AabidPaket_07_01"); //All right, here's your package.
 
 	B_GiveInvItems	(self, hero, ItMi_HerbPaket, 1);
 
-	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Ich habe Meldor besucht und für 150 Goldmünzen Aabid's Paket erhalten.");
+	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "I visited Meldor and received Aabid's package for 150 gold coins.");
 
 	B_GivePlayerXP	(50);
 };
@@ -287,7 +287,7 @@ INSTANCE Info_Mod_Meldor_Skinner (C_INFO)
 	information	= Info_Mod_Meldor_Skinner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Interesse an ein paar grünen Novizen?";
+	description	= "Are you interested in some green novices?";
 };
 
 FUNC INT Info_Mod_Meldor_Skinner_Condition()
@@ -303,19 +303,19 @@ FUNC INT Info_Mod_Meldor_Skinner_Condition()
 
 FUNC VOID Info_Mod_Meldor_Skinner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Meldor_Skinner_15_00"); //Hast du Interesse an ein paar grünen Novizen?
-	AI_Output(self, hero, "Info_Mod_Meldor_Skinner_07_01"); //Klar, ich nehm alles was du hast.
-	AI_Output(hero, self, "Info_Mod_Meldor_Skinner_15_02"); //Hier, nimm.
+	AI_Output(hero, self, "Info_Mod_Meldor_Skinner_15_00"); //Are you interested in some green novices?
+	AI_Output(self, hero, "Info_Mod_Meldor_Skinner_07_01"); //Sure, I'll take everything you got.
+	AI_Output(hero, self, "Info_Mod_Meldor_Skinner_15_02"); //Here, take this.
 
 	B_GiveInvItems	(hero, self, ItMi_Addon_Joint_01, Npc_HasItems(hero, ItMi_Addon_Joint_01));
 
-	AI_Output(self, hero, "Info_Mod_Meldor_Skinner_07_03"); //Hier dein Gold.
+	AI_Output(self, hero, "Info_Mod_Meldor_Skinner_07_03"); //Here's your gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, Npc_HasItems(self, ItMi_Addon_Joint_01)*20);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So I got rid of all the green novices in town.");
 };
 
 INSTANCE Info_Mod_Meldor_Flugblaetter (C_INFO)
@@ -326,7 +326,7 @@ INSTANCE Info_Mod_Meldor_Flugblaetter (C_INFO)
 	information	= Info_Mod_Meldor_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Meldor_Flugblaetter_Condition()
@@ -345,7 +345,7 @@ FUNC VOID Info_Mod_Meldor_Flugblaetter_Info()
 {
 	B_Say (hero, self, "$MATTEOPAPER");
 
-	AI_Output(self, hero, "Info_Mod_Meldor_Flugblaetter_07_01"); //Was interessiert mich das? Kann sich seine Flugblätter sonst wohin stecken ...
+	AI_Output(self, hero, "Info_Mod_Meldor_Flugblaetter_07_01"); //What do I care? Can his pamphlets be stuck anywhere else?
 };
 
 INSTANCE Info_Mod_Meldor_LobartAlwinScene (C_INFO)
@@ -368,7 +368,7 @@ FUNC INT Info_Mod_Meldor_LobartAlwinScene_Condition()
 
 FUNC VOID Info_Mod_Meldor_LobartAlwinScene_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Meldor_LobartAlwinScene_07_00"); //Du solltest weniger trinken.
+	AI_Output(self, hero, "Info_Mod_Meldor_LobartAlwinScene_07_00"); //You should drink less.
 
 	AI_StopProcessInfos	(self);
 };

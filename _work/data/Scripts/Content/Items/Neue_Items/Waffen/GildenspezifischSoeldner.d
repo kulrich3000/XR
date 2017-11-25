@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_GrobesKurzschwert (C_Item)
 {	
-	name 				=	"Grobes Kurzschwert";
+	name 				=	"Rough Short Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_GrobesKurzschwert (C_Item)
 };
 INSTANCE ItMw_GrobesKurzschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Grobes Kurzschwert (geschärft)";
+	name 				=	"Coarse short sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

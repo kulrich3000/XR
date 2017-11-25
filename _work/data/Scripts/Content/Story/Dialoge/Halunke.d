@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Halunke_Hi_Condition()
 
 FUNC VOID Info_Mod_Halunke_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Halunke_Hi_06_00"); //Wen haben wir denn da? Jemand, der wohl unterwegs ist zu den Wassermagiern.
-	AI_Output(self, hero, "Info_Mod_Halunke_Hi_06_01"); //Und jemand, der zu den Wassermagiern unterwegs ist, ist vermutlich einer ihrer Boten.
-	AI_Output(self, hero, "Info_Mod_Halunke_Hi_06_02"); //Und ihre Boten haben bestimmt einige Goldmünzen, die sie locker machen können.
+	AI_Output(self, hero, "Info_Mod_Halunke_Hi_06_00"); //Well, look who's here. Someone who's probably on his way to the Water Magicians.
+	AI_Output(self, hero, "Info_Mod_Halunke_Hi_06_01"); //And someone heading to the Water Magicians is probably one of their messengers.
+	AI_Output(self, hero, "Info_Mod_Halunke_Hi_06_02"); //And their messengers must have some gold coins to loosen them up.
 
 	Wld_InsertNpc	(Mod_7215_OUT_Halunke_NW, "NW_TROLLAREA_RUINS_01");
 	Wld_InsertNpc	(Mod_7216_OUT_Halunke_NW, "NW_TROLLAREA_RUINS_01");
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Halunke_Gold (C_INFO)
 	information	= Info_Mod_Halunke_Gold_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier habt ihr 500 Goldmünzen. Ich will keinen Ärger.";
+	description	= "Here's 500 gold coins. I don't want any trouble.";
 };
 
 FUNC INT Info_Mod_Halunke_Gold_Condition()
@@ -46,11 +46,11 @@ FUNC INT Info_Mod_Halunke_Gold_Condition()
 
 FUNC VOID Info_Mod_Halunke_Gold_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Halunke_Gold_15_00"); //Hier habt ihr 500 Goldmünzen. Ich will keinen Ärger.
+	AI_Output(hero, self, "Info_Mod_Halunke_Gold_15_00"); //Here's 500 gold coins. I don't want any trouble.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Halunke_Gold_06_01"); //500 Goldmünzen? Wo es so viel zu holen gibt, gibt es bestimmt noch mehr.
+	AI_Output(self, hero, "Info_Mod_Halunke_Gold_06_01"); //500 gold coins? Where there's so much to get, there must be more.
 };
 
 INSTANCE Info_Mod_Halunke_Angriff (C_INFO)
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Halunke_Angriff (C_INFO)
 	information	= Info_Mod_Halunke_Angriff_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Von mir kriegt ihr Halunken gar nichts.";
+	description	= "I'm not giving you scoundrels anything.";
 };
 
 FUNC INT Info_Mod_Halunke_Angriff_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Mod_Halunke_Angriff_Condition()
 
 FUNC VOID Info_Mod_Halunke_Angriff_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Halunke_Angriff_15_00"); //Von mir kriegt ihr Halunken gar nichts.
-	AI_Output(self, hero, "Info_Mod_Halunke_Angriff_06_01"); //Wie du willst.
+	AI_Output(hero, self, "Info_Mod_Halunke_Angriff_15_00"); //I'm not giving you scoundrels anything.
+	AI_Output(self, hero, "Info_Mod_Halunke_Angriff_06_01"); //Suit yourself.
 };
 
 INSTANCE Info_Mod_Halunke_EXIT (C_INFO)

@@ -1,7 +1,7 @@
 INSTANCE Monster_11031_Wesen_HALU (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wesen";
+	name 		= "essence";
 	guild 		= GIL_MOLERAT;
 	id 			= 11031;
 	voice 		= 18;

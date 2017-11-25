@@ -19,12 +19,12 @@ FUNC VOID XW_Kap6_Scene06()
 
 	if (Mod_XW_Kap6_Scene06_Counter == 3)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene06_14_00"); //Deine Freunde auf den Rängen machen mit meinen degenerierten Beratern kurzen Prozess.
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene06_14_00"); //Your friends in the ranks make short work of my degenerate counselors.
 	};
 
 	if (Mod_XW_Kap6_Scene06_Counter == 9)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene06_14_01"); //Es wird Zeit, dass ich ihnen das nicht mehr durchgehen lasse.
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene06_14_01"); //It's time I stopped letting them get away with this.
 	};
 
 	if (Mod_XW_Kap6_Scene06_Counter == 15)

@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Cavalorn_Hi_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Hi_36_00"); //Verdammt, erst gestern habe ich diese Goblins erschlagen. Und nun erheben sich ihre Überreste mir nichts, dir nichts zu neuem Leben und greifen mich an.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Hi_36_01"); //Als ob die Banditen noch nicht genug wären ... aber warte mal. Du lebst noch?
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Hi_15_02"); //"Wieder" wäre der passende Ausdruck. Was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Hi_36_03"); //Das ist mein Beobachtungsposten. Ich bin im Auftrag der Wassermagier hier.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Hi_36_00"); //Damn it, I only killed those goblins yesterday. And now her remains rise up to me nothing, nothing new life for you, and attack me.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Hi_36_01"); //As if the bandits weren't enough... but wait a minute. You're still alive?
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Hi_15_02"); //"Again" wäre der passende Ausdruck. Was machst du hier?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Hi_36_03"); //This is my observation post. I'm here on behalf of the Water Magicians.
 };
 
 INSTANCE Info_Mod_Cavalorn_WhyForWassermagier (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Cavalorn_WhyForWassermagier (C_INFO)
 	information	= Info_Mod_Cavalorn_WhyForWassermagier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was beobachtest du genau im Auftrag der Wassermagier?";
+	description	= "What exactly are you observing on behalf of the Water Magicians?";
 };
 
 FUNC INT Info_Mod_Cavalorn_WhyForWassermagier_Condition()
@@ -42,10 +42,10 @@ FUNC INT Info_Mod_Cavalorn_WhyForWassermagier_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_WhyForWassermagier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_WhyForWassermagier_15_00"); //Was beobachtest du genau im Auftrag der Wassermagier?
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WhyForWassermagier_36_01"); //Äh, dazu kann ich dir noch nicht so viel sagen. In den letzten Tagen und Wochen haben sich sonderbare Dinge ereignet.
-	AI_Output(hero, self, "Info_Mod_Cavalorn_WhyForWassermagier_15_02"); //Was du nicht sagst.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WhyForWassermagier_36_03"); //Ich meine: nach dem Fall der Barriere.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_WhyForWassermagier_15_00"); //What exactly are you observing on behalf of the Water Magicians?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WhyForWassermagier_36_01"); //Uh, I don't have much to tell you about that. Strange things have happened in recent days and weeks.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_WhyForWassermagier_15_02"); //No kidding.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WhyForWassermagier_36_03"); //I mean, after the fall of the barrier.
 };
 
 INSTANCE Info_Mod_Cavalorn_WasLos (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Cavalorn_WasLos (C_INFO)
 	information	= Info_Mod_Cavalorn_WasLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Jetzt erzähl doch einfach mal, was los ist.";
+	description	= "Why don't you just tell me what's going on?";
 };
 
 FUNC INT Info_Mod_Cavalorn_WasLos_Condition()
@@ -69,17 +69,17 @@ FUNC INT Info_Mod_Cavalorn_WasLos_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_WasLos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_WasLos_15_00"); //Jetzt erzähl doch einfach mal, was los ist.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_01"); //Also, ich bin mittlerweile Mitglied bei den Wassernovizen. Frag nicht, warum.
-	AI_Output(hero, self, "Info_Mod_Cavalorn_WasLos_15_02"); //Warum?
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_03"); //Ach, ich bin nach dem Fall der Barriere nach Khorinis gekommen und hatte natürlich nichts zu tun.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_04"); //Deshalb hab ich mich zu diesem Vatras gestellt, der dauernd in der Stadt predigt.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_05"); //Und irgendwann hat er mich beiseite genommen und mich ausgefragt, woher ich komme und so und ob ich schon wüsste, was ich jetzt tun wolle.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_06"); //Ende vom Lied war, dass er mich gefragt hat, ob ich nicht seinem Verein beitreten wollte, und weil ich nichts Besseres zu tun hatte, hab ich ja gesagt.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_07"); //Na ja, jedenfalls fing das damals an mit den Entführungen. Es verschwanden einfach immer mal wieder Leute aus Khorinis. Meistens aus dem Hafenviertel, und dann kümmerte sich niemand drum.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_08"); //Ab und zu wurden vorher oder nachher dunkle Gestalten in den Seitengassen gesehen.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_09"); //Und weil die Stadtwache nichts gemacht hat, hat Vatras entschieden, dass wir das jetzt mal rausfinden sollten, was da genau vor sich geht.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_10"); //Und deswegen sitze ich hier und versuche herauszufinden, ob die Banditenbande im Talkessel etwas damit zu tun hat oder ob sich hier sonst etwas Verdächtiges regt.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_WasLos_15_00"); //Why don't you just tell me what's going on?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_01"); //Well, I'm now a member of the water novices. Don't ask why.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_WasLos_15_02"); //Why?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_03"); //Oh, I came to Khorinis after the fall of the barrier and had nothing to do, of course.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_04"); //That's why I turned myself in to this Vatras preaching all the time in town.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_05"); //And at some point he took me aside and asked me where I was coming from and whether I already knew what I wanted to do now.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_06"); //The end of the song was that he asked me if I didn't want to join his club and because I didn't have anything better to do, I said yes.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_07"); //Well, anyway, that's when the kidnappings started. People from Khorinis just disappeared again and again. Mostly from the docks, and then nobody cared.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_08"); //Occasionally dark figures were seen in the side streets before or after.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_09"); //And because the City Watch didn't do anything, Vatras decided that we should find out what's going on right now.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_WasLos_36_10"); //And that's why I'm sitting here trying to find out whether the bandit gang in the valley basin has something to do with it or whether there's something suspicious going on here.
 };
 
 INSTANCE Info_Mod_Cavalorn_Banditen (C_INFO)
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Cavalorn_Banditen (C_INFO)
 	information	= Info_Mod_Cavalorn_Banditen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hattest Banditen erwähnt...";
+	description	= "You mentioned bandits...";
 };
 
 FUNC INT Info_Mod_Cavalorn_Banditen_Condition()
@@ -104,9 +104,9 @@ FUNC INT Info_Mod_Cavalorn_Banditen_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_Banditen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen_15_00"); //Du hattest Banditen erwähnt...
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen_36_01"); //Ja, da ist eine richtig fette Bande unten im Talkessel. Ich muss immer aufpassen, dass sie mich nicht bemerkt, ansonsten könnte das hässlich ausgehen.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen_36_02"); //Aber manchmal werfe ich von oben einen Blick rein. Sie scheinen gerade erst von einem Raubzug zurückgekehrt, haben jedenfalls ordentlich Beute und Lebensmittel.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen_15_00"); //You mentioned bandits...
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen_36_01"); //Yeah, there's a real fat gang down in the valley basin. I always have to make sure she doesn't notice me, otherwise it could turn out ugly.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen_36_02"); //But sometimes I take a look from above. They seem to have just returned from a raid, at least they have some loot and food.
 };
 
 INSTANCE Info_Mod_Cavalorn_Banditen2 (C_INFO)
@@ -117,7 +117,7 @@ INSTANCE Info_Mod_Cavalorn_Banditen2 (C_INFO)
 	information	= Info_Mod_Cavalorn_Banditen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Soll ich die Banditen ausräuchern?";
+	description	= "You want me to smoke the bandits out?";
 };
 
 FUNC INT Info_Mod_Cavalorn_Banditen2_Condition()
@@ -131,9 +131,9 @@ FUNC INT Info_Mod_Cavalorn_Banditen2_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_Banditen2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen2_15_00"); //Soll ich die Banditen ausräuchern?
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen2_36_01"); //Ganz ehrlich? Du hast nicht mal eine ordentliche Rüstung. Dich fressen die zum Frühstück.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen2_36_02"); //Nicht mal ich traue mich, mich mit denen anzulegen, und meine Künste im Umgang mit dem Bogen kennst du ja.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen2_15_00"); //You want me to smoke the bandits out?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen2_36_01"); //Honestly? You don't even have the proper armor. They'll eat you for breakfast.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen2_36_02"); //I don't even dare to mess with them, and you know my skills in handling the bow.
 };
 
 INSTANCE Info_Mod_Cavalorn_Banditen3 (C_INFO)
@@ -144,7 +144,7 @@ INSTANCE Info_Mod_Cavalorn_Banditen3 (C_INFO)
 	information	= Info_Mod_Cavalorn_Banditen3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was wäre, wenn ich die Banditen doch vertreiben würde?";
+	description	= "What if I drove the bandits away after all?";
 };
 
 FUNC INT Info_Mod_Cavalorn_Banditen3_Condition()
@@ -158,12 +158,12 @@ FUNC INT Info_Mod_Cavalorn_Banditen3_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_Banditen3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen3_15_00"); //Was wäre, wenn ich die Banditen doch vertreiben würde?
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen3_36_01"); //Lass es einfach sein. Natürlich wäre ich froh, morgen ihre Leichen zu sehen - aber das wird so schnell nicht eintreten.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen3_15_00"); //What if I drove the bandits away after all?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen3_36_01"); //Just let it go. Of course, I'd be happy to see their bodies tomorrow - but that won't happen so quickly.
 
 	Log_CreateTopic	(TOPIC_MOD_CAVALORN_BANDITEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_CAVALORN_BANDITEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_CAVALORN_BANDITEN, "Im Talkessel bei Xardas' Turm lauert eine Horde Banditen. Cavalorn hat mir zwar eindringlich davon abgeraten, mich mit ihnen anzulegen, aber er würde sich auch freuen, sie los zu sein.");
+	B_LogEntry	(TOPIC_MOD_CAVALORN_BANDITEN, "A horde of bandits lurks in the basin near Xardas' tower. Cavalorn strongly advised me not to mess with them, but he would be happy to be rid of them.");
 };
 
 INSTANCE Info_Mod_Cavalorn_Banditen4 (C_INFO)
@@ -174,7 +174,7 @@ INSTANCE Info_Mod_Cavalorn_Banditen4 (C_INFO)
 	information	= Info_Mod_Cavalorn_Banditen4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du erinnerst dich an die Banditen?";
+	description	= "You remember the bandits?";
 };
 
 FUNC INT Info_Mod_Cavalorn_Banditen4_Condition()
@@ -195,17 +195,17 @@ FUNC INT Info_Mod_Cavalorn_Banditen4_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_Banditen4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen4_15_00"); //Du erinnerst dich an die Banditen?
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_01"); //Na klar. Ohne sie könnte ich besser schlafen.
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen4_15_02"); //Dein Schlaf wird nun nicht mehr gestört werden.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_03"); //(verblüfft) Wie...? Heiliger Strohsack... du meinst doch nicht etwa...
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen4_15_04"); //Doch. Aber sie hatten keine Entführten aus Khorinis dabei.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_05"); //Verdammt, sie waren so eine gute Spur. Dann wird hier wohl nicht mehr viel passieren und ich kann mal eine Weile ausspannen.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_06"); //Warte, nimm noch das hier.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen4_15_00"); //You remember the bandits?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_01"); //Sure thing. I could sleep better without her.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen4_15_02"); //Your sleep will no longer be disturbed.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_03"); //How...? Holy cow... You don't mean....
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Banditen4_15_04"); //Yes, it is. But they didn't have any kidnappers from Khorinis with them.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_05"); //Damn, they were such a good lead. Then not much more will happen here and I can relax for a while.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_06"); //Wait, take this one.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_07"); //Reife Leistung, echt.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Banditen4_36_07"); //Good job, really.
 
 	B_SetTopicStatus	(TOPIC_MOD_CAVALORN_BANDITEN, LOG_SUCCESS);
 
@@ -222,7 +222,7 @@ INSTANCE Info_Mod_Cavalorn_DunklerPilger (C_INFO)
 	information	= Info_Mod_Cavalorn_DunklerPilger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit diesem dunklen Wanderer (...)";
+	description	= "What about this dark wanderer? )";
 };
 
 FUNC INT Info_Mod_Cavalorn_DunklerPilger_Condition()
@@ -235,12 +235,12 @@ FUNC INT Info_Mod_Cavalorn_DunklerPilger_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_DunklerPilger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_DunklerPilger_15_00"); //Was ist mit diesem dunklen Wanderer, der vorher an dir vorbeigekommen ist?
-	AI_Output(self, hero, "Info_Mod_Cavalorn_DunklerPilger_36_01"); //Dunkler Wanderer? Ich habe hier seit Stunden niemanden vorbeikommen sehen.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_DunklerPilger_36_02"); //Aber vielleicht war ich auch so mit den Goblins beschäftigt, dass ich ihn übersehen habe. Merkwürdig.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_DunklerPilger_36_03"); //Ich werde auf alle Fälle bald wieder zu Vatras gehen und ihm Bericht erstatten. Genug zu erzählen gibt es ja.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_DunklerPilger_15_00"); //What about that dark wanderer who walked past you before?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_DunklerPilger_36_01"); //Dark walker? I haven't seen anyone come by here in hours.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_DunklerPilger_36_02"); //But maybe I was so busy with the goblins that I missed it. Strange.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_DunklerPilger_36_03"); //I'll definitely go back to Vatras soon and report to him. That's enough to tell.
 
-	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Sonderbar. Cavalorn will den dunklen Wanderer nicht gesehen haben.");
+	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Strange. Cavalorn doesn't want to have seen the dark wanderer.");
 };
 
 INSTANCE Info_Mod_Cavalorn_XardasTurm (C_INFO)
@@ -251,7 +251,7 @@ INSTANCE Info_Mod_Cavalorn_XardasTurm (C_INFO)
 	information	= Info_Mod_Cavalorn_XardasTurm_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was sagst du zu Xardas' neuem Turm?";
+	description	= "What do you say to Xardas' new tower?";
 };
 
 FUNC INT Info_Mod_Cavalorn_XardasTurm_Condition()
@@ -264,9 +264,9 @@ FUNC INT Info_Mod_Cavalorn_XardasTurm_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_XardasTurm_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_XardasTurm_15_00"); //Was sagst du zu Xardas' neuem Turm?
-	AI_Output(self, hero, "Info_Mod_Cavalorn_XardasTurm_36_01"); //Ach so, Xardas ist da drin. Ich dachte schon, das wär ein altes Spukschloss oder so.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_XardasTurm_36_02"); //Wobei ... Xardas in der Nähe zu wissen, macht es nicht weniger unheimlich.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_XardasTurm_15_00"); //What do you say to Xardas' new tower?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_XardasTurm_36_01"); //Oh, Xardas is in there. I thought it was an old haunted castle or something.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_XardasTurm_36_02"); //Wherein... Knowing Xardas nearby doesn't make it any less creepy.
 };
 
 INSTANCE Info_Mod_Cavalorn_Zeremoniendolch (C_INFO)
@@ -277,7 +277,7 @@ INSTANCE Info_Mod_Cavalorn_Zeremoniendolch (C_INFO)
 	information	= Info_Mod_Cavalorn_Zeremoniendolch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dir gefällt's hier unten?";
+	description	= "You like it down here?";
 };
 
 FUNC INT Info_Mod_Cavalorn_Zeremoniendolch_Condition()
@@ -290,11 +290,11 @@ FUNC INT Info_Mod_Cavalorn_Zeremoniendolch_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_Zeremoniendolch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Zeremoniendolch_15_00"); //Dir gefällt's hier unten?
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Zeremoniendolch_36_01"); //Ganz und gar nicht. Aber ich muss auf Anweisungen von Merdarion warten.
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Zeremoniendolch_15_02"); //Ich habe Anweisung von Vatras für dich. Du sollst dich wieder mal blicken lassen.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_Zeremoniendolch_36_03"); //Adanos sei Dank! Endlich wieder Tageslicht. Du sagst Merdarion Bescheid?
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Zeremoniendolch_15_04"); //Natürlich.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Zeremoniendolch_15_00"); //You like it down here?
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Zeremoniendolch_36_01"); //Not at all, sir. But I have to wait for instructions from Merdarion.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Zeremoniendolch_15_02"); //I have Vatras' orders for you. You're supposed to show up again.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_Zeremoniendolch_36_03"); //Thank Adanos! Finally daylight again. You're telling Merdarion?
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Zeremoniendolch_15_04"); //Of course it is.
 
 	B_StartOtherRoutine	(self, "ATVATRAS");
 };
@@ -307,7 +307,7 @@ INSTANCE Info_Mod_Cavalorn_Lehrer (C_INFO)
 	information	= Info_Mod_Cavalorn_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir auch beibringen, mit dem Bogen umzugehen?";
+	description	= "Can you teach me how to handle the bow?";
 };
 
 FUNC INT Info_Mod_Cavalorn_Lehrer_Condition()
@@ -320,21 +320,21 @@ FUNC INT Info_Mod_Cavalorn_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Lehrer_15_00"); //Kannst du mir auch beibringen, mit dem Bogen umzugehen?
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Lehrer_15_00"); //Can you teach me how to handle the bow?
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KHORINIS, LOG_NOTE);
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Cavalorn_Lehrer_36_01"); //Du scheinst ja ordentlich was vergessen zu haben, wie? Klar kann ich dir die Grundlagen zeigen.
+		AI_Output(self, hero, "Info_Mod_Cavalorn_Lehrer_36_01"); //You seem to have forgotten something, don't you? Sure, I can show you the basics.
 
-		B_LogEntry	(TOPIC_MOD_LEHRER_KHORINIS, "Cavalorn kann mir Bogenschießen und Schleichen beibringen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_KHORINIS, "Cavalorn can teach me archery and sneaking.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Cavalorn_Lehrer_36_02"); //Ich kann dir das Schleichen beibringen.
+		AI_Output(self, hero, "Info_Mod_Cavalorn_Lehrer_36_02"); //I can teach you to sneak.
 
-		B_LogEntry	(TOPIC_MOD_LEHRER_KHORINIS, "Cavalorn kann mir Schleichen beibringen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_KHORINIS, "Cavalorn can teach me to sneak.");
 	};
 };
 
@@ -346,12 +346,12 @@ INSTANCE Info_Mod_Cavalorn_Lernen_Schleichen (C_INFO)
 	information	= Info_Mod_Cavalorn_Lernen_Schleichen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString("Schleichen", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
+	description	= B_BuildLearnString("Sneak", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
 };
 
 FUNC INT Info_Mod_Cavalorn_Lernen_Schleichen_Condition()
 {
-	Info_Mod_Cavalorn_Lernen_Schleichen.description = B_BuildLearnString("Schleichen", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1));
+	Info_Mod_Cavalorn_Lernen_Schleichen.description = B_BuildLearnString("Sneak", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cavalorn_Lehrer))
 	&& (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
@@ -362,11 +362,11 @@ FUNC INT Info_Mod_Cavalorn_Lernen_Schleichen_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_Lernen_Schleichen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Lernen_Schleichen_15_00"); //Bring mir das Schleichen bei.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Lernen_Schleichen_15_00"); //Teach me to sneak.
 
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 	{
-		AI_Output(self, other, "Info_Mod_Cavalorn_Lernen_Schleichen_36_01"); //Mit weichen Sohlen hast du eine größere Chance, dich deinen Gegnern zu nähern, ohne dass sie es merken.
+		AI_Output(self, other, "Info_Mod_Cavalorn_Lernen_Schleichen_36_01"); //Soft soles give you a better chance to approach your opponents without them noticing.
 	};
 };
 
@@ -378,7 +378,7 @@ INSTANCE Info_Mod_Cavalorn_Lernen_Bogen (C_INFO)
 	information	= Info_Mod_Cavalorn_Lernen_Bogen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Bogenschießen bei.";
+	description	= "Teach me archery.";
 };
 
 FUNC INT Info_Mod_Cavalorn_Lernen_Bogen_Condition()
@@ -393,11 +393,11 @@ FUNC INT Info_Mod_Cavalorn_Lernen_Bogen_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_Lernen_Bogen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cavalorn_Lernen_Bogen_15_00"); //Bring mir Bogenschießen bei.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_Lernen_Bogen_15_00"); //Teach me archery.
 
 	Info_ClearChoices	(Info_Mod_Cavalorn_Lernen_Bogen);
 	
-	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, "Zurück.", Info_Mod_Cavalorn_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, "Back off.", Info_Mod_Cavalorn_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Cavalorn_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Cavalorn_Lernen_Bogen_1);
 };
@@ -413,7 +413,7 @@ FUNC VOID Info_Mod_Cavalorn_Lernen_Bogen_5()
 
 	Info_ClearChoices	(Info_Mod_Cavalorn_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, "Zurück.", Info_Mod_Cavalorn_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, "Back off.", Info_Mod_Cavalorn_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Cavalorn_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Cavalorn_Lernen_Bogen_1);
 };
@@ -424,7 +424,7 @@ FUNC VOID Info_Mod_Cavalorn_Lernen_Bogen_1()
 
 	Info_ClearChoices	(Info_Mod_Cavalorn_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, "Zurück.", Info_Mod_Cavalorn_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, "Back off.", Info_Mod_Cavalorn_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Cavalorn_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Cavalorn_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Cavalorn_Lernen_Bogen_1);
 };

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Whistler_NW_Hi (C_INFO)
 	information	= Info_Mod_Whistler_NW_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alissandro schickt mich.";
+	description	= "Alissandro sent me.";
 };
 
 FUNC INT Info_Mod_Whistler_NW_Hi_Condition()
@@ -19,19 +19,19 @@ FUNC INT Info_Mod_Whistler_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Whistler_NW_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_Hi_15_00"); //Alissandro hat mich zu dir geschickt. Er meint, du könntest uns helfen unsere Geschäfte hier zu verbreiten.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_01"); //Ja, ich habe uns einige Informationen besorgt, die uns weiterhelfen könnten:
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_02"); //Aufgrund der Paladine sind wir in der Stadt unerwünscht, daher wäre sie kein guter Ausgangspunkt. Das Feuermagierkloster können wir gleich vergessen.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_03"); //Beim Großbauern sind zu viele vom neuen Lager, also können wir auch nicht auf ein Geschäft mit ihm hoffen.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_04"); //Zwischen uns und den Dämonenrittern und Beschwörern hat sich wegen der Sache mit der alten Mine eine Spannung entwickelt, also fallen auch sie weg.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_05"); //Natürlich wollen uns auch die Wassermagier nicht unterstützen. Wir haben allerdings die Diebe und die Banditen auf unserer Seite.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_Hi_15_06"); //Die Diebe und die Banditen? Und die sollen uns helfen können?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_07"); //Unterschätze sie besser nicht, die Leute fürchten sich vor ihnen, das verleiht ihnen Einfluss.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_Hi_15_08"); //Verstehe, und was soll ich jetzt machen?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_09"); //Esteban ist in die Stadt gekommen, er wollte sich mit dir treffen.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_10"); //Geh zum Marktplatz, dort wartet er auf dich.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_Hi_15_00"); //Alissandro sent me to you. He means you could help us spread our business around here.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_01"); //Yeah, I got us some information that might help us:
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_02"); //Because of the paladins we are undesirable in the city, so it would not be a good starting point. We can forget about the fire magic monastery.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_03"); //There are too many of the new warehouse at the big farmer's, so we can't hope to do business with him either.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_04"); //Between us and the Demon Knights and Summoners a tension has developed because of the thing with the old mine, so they also fall away.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_05"); //Of course, the water magicians don't want to support us either. We do, however, have the thieves and the bandits on our side.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_Hi_15_06"); //The thieves and the bandits? And they're supposed to be able to help us?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_07"); //Don't underestimate them, people are afraid of them, which gives them influence.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_Hi_15_08"); //I see, and what am I supposed to do now?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_09"); //Esteban came to town, he wanted to meet with you.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_Hi_11_10"); //Go to the marketplace, where he's waiting for you.
 
-	B_LogEntry	(TOPIC_MOD_AL_AUSBREITUNGK, "Whistler meinte, wir arbeiten mit den Banditen zusammen. Ich soll zu Esteban gehen, den ich am Marktplatz finde.");
+	B_LogEntry	(TOPIC_MOD_AL_AUSBREITUNGK, "Whistler said we're working with the bandits. I'm supposed to go see Esteban, whom I find in the marketplace.");
 };
 
 INSTANCE Info_Mod_Whistler_NW_WasGeht (C_INFO)
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_Whistler_NW_WasGeht (C_INFO)
 	information	= Info_Mod_Whistler_NW_WasGeht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht es voran?";
+	description	= "How's it coming?";
 };
 
 FUNC INT Info_Mod_Whistler_NW_WasGeht_Condition()
@@ -55,19 +55,19 @@ FUNC INT Info_Mod_Whistler_NW_WasGeht_Condition()
 
 FUNC VOID Info_Mod_Whistler_NW_WasGeht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_00"); //Wie geht es voran?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_WasGeht_11_01"); //Verdammt nochmal überhaupt nicht. Irgendein Kerl schickt uns immer Drohbriefe und meint, wenn wir ihm kein Schutzgeld zahlen, reißt er uns die ganze Bude ein.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_02"); //Und ihr habt ihn bezahlt?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_WasGeht_11_03"); //Nein, mit was denn auch? Wir haben nur Erz und das will er nicht annehmen. Und jetzt will er in regelmäßigen Abständen dieses Lagerhaus demolieren.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_04"); //Wie viel Gold will er denn?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_WasGeht_11_05"); //500 Goldmünzen hinter dem Lagerhaus, wo tagsüber die Kämpfe von diesem Alrik stattfinden.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_06"); //Wann will er das Geld?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_WasGeht_11_07"); //Heute um Mitternacht.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_08"); //Gut, ich werde um Mitternacht hinter das Lagerhaus gehen und mir das mal ansehen.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_00"); //How's it coming?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_WasGeht_11_01"); //Not bloody hell at all. Some guy always sends us threatening letters and says if we don't pay him protection money, he'll tear the whole place apart.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_02"); //And you paid him?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_WasGeht_11_03"); //No, with what? We only have ore, and he won't accept that. And now he wants to demolish this warehouse at regular intervals.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_04"); //How much gold does he want?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_WasGeht_11_05"); //500 gold coins behind the warehouse, where the battles of this Alrik take place during the day.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_06"); //When does he want the money?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_WasGeht_11_07"); //Tonight at midnight.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_WasGeht_15_08"); //All right, I'll go behind the warehouse at midnight and take a look at this.
 
 	Log_CreateTopic	(TOPIC_MOD_AL_LAGERHAUS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_AL_LAGERHAUS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Ich habe mit Whistler gesprochen. Er meinte, jemand würde Geld erpressen und unser Lagerhaus zerstören wollen. Um Mitternacht holt er sich hinter dem Lagerhaus das Geld, das sehe ich mir mal an.");
+	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "I spoke to Whistler. He said someone was blackmailing money and trying to destroy our warehouse. At midnight he picks up the money behind the warehouse, I'll take a look at that.");
 
 	B_StartOtherRoutine	(Mod_563_NONE_Borka_NW, "ERPRESSER");
 };
@@ -80,7 +80,7 @@ INSTANCE Info_Mod_Whistler_NW_BromorSchuld (C_INFO)
 	information	= Info_Mod_Whistler_NW_BromorSchuld_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bromor von der roten Laterne will uns Sträflinge nicht hier haben.";
+	description	= "Bromor from the red lantern doesn't want us convicts here.";
 };
 
 FUNC INT Info_Mod_Whistler_NW_BromorSchuld_Condition()
@@ -93,19 +93,19 @@ FUNC INT Info_Mod_Whistler_NW_BromorSchuld_Condition()
 
 FUNC VOID Info_Mod_Whistler_NW_BromorSchuld_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_BromorSchuld_15_00"); //Bromor von der roten Laterne will uns Sträflinge nicht hier haben und behindert uns jetzt.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_01"); //Dann müssen wir uns rächen und ich hätte da schon einen Plan.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_BromorSchuld_15_02"); //Der wäre?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_03"); //Von 5 bis 10 Uhr morgens ist die Rote Laterne für Besucher geschlossen, während dieser Zeit erholen sich Bromor und seine Mädchen.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_04"); //In der Zeit werden wir seine Mädchen entführen und sein Gold stehlen.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_05"); //Das wäre der erste Schritt.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_BromorSchuld_15_06"); //Und der Zweite?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_07"); //Dazu komm ich später.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_BromorSchuld_15_08"); //Gut, dann kümmern wir uns erst um den ersten Schritt.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_09"); //Gut, wir treffen uns dort zwischen 5 und 10 Uhr.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_10"); //Du besorgst das Gold, ich die Mädchen.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_BromorSchuld_15_00"); //Bromor from the red lantern doesn't want us convicts here, and he's hindering us now.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_01"); //Then we'll have to take revenge, and I'd have a plan.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_BromorSchuld_15_02"); //Which is?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_03"); //From 5 a. m. to 10 a. m. the red lantern is closed for visitors, during this time Bromor and his girls are recovering.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_04"); //In time, we'll kidnap his girls and steal his gold.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_05"); //That would be the first step.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_BromorSchuld_15_06"); //And the second one?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_07"); //I'll get to that later.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_BromorSchuld_15_08"); //Well, then we'll take care of the first step.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_09"); //All right, I'll meet you there between 5:00 and 10:00.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_BromorSchuld_11_10"); //You get the gold, I'll get the girls.
 
-	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Whistler hat schon einen Plan, wie wir uns rächen können. Er entführt Bromors Prostituierte, während ich ihm sein Geld stehle.");
+	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Whistler already has a plan for revenge. He's kidnapping Bromor's prostitute while I steal his money.");
 
 	B_StartOtherRoutine	(Mod_563_NONE_Borka_NW, "START");
 	B_StartOtherRoutine	(self, "PUFF");
@@ -119,7 +119,7 @@ INSTANCE Info_Mod_Whistler_NW_HabSeinGold (C_INFO)
 	information	= Info_Mod_Whistler_NW_HabSeinGold_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und jetzt?";
+	description	= "And now what?";
 };
 
 FUNC INT Info_Mod_Whistler_NW_HabSeinGold_Condition()
@@ -133,17 +133,17 @@ FUNC INT Info_Mod_Whistler_NW_HabSeinGold_Condition()
 
 FUNC VOID Info_Mod_Whistler_NW_HabSeinGold_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_HabSeinGold_15_00"); //Und jetzt?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_HabSeinGold_11_01"); //Wir haben eine Abmachung mit Bromors Mädels. Wir bringen sie erstmal weg von hier, sie kommen allerdings wieder her, wenn Bromor aufgibt.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_HabSeinGold_15_02"); //Und was soll ich machen?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_HabSeinGold_11_03"); //Für dich hätte ich noch etwas zu tun. Ich habe hier eine Spruchrolle, die einige Ratten beschwört.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_HabSeinGold_15_00"); //And now what?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_HabSeinGold_11_01"); //We have a deal with Bromor's girls. We'll take them away from here for now, but they'll come back when Bromor gives up.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_HabSeinGold_15_02"); //And what am I supposed to do?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_HabSeinGold_11_03"); //I have something else to do for you. I've got a spell here evoking some rats.
 
 	CreateInvItems	(self, ItSc_SummonRats, 1);
 	B_GiveInvItems	(self, hero, ItSc_SummonRats, 1);
 
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_HabSeinGold_11_04"); //Lass sie los und Bromor wird eine nette Überraschung erleben.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_HabSeinGold_11_04"); //Let her go and Bromor will have a nice surprise.
 
-	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Wir haben den Einbruch hinter uns. Jetzt soll ich noch eine Spruchrolle loslassen, die Ratten beschwört.");
+	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "We've been through the break-in. Now I'm supposed to release another spell, summon the rats.");
 
 	B_StartOtherRoutine	(Mod_522_NONE_Vanja_NW, "ERPRESSUNG");
 	B_StartOtherRoutine	(Mod_752_NONE_Sonja_NW, "ERPRESSUNG");
@@ -159,7 +159,7 @@ INSTANCE Info_Mod_Whistler_NW_RattenGespawnt (C_INFO)
 	information	= Info_Mod_Whistler_NW_RattenGespawnt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gut, das hätte ich erledigt, was jetzt?";
+	description	= "Well, I could have done that. What now?";
 };
 
 FUNC INT Info_Mod_Whistler_NW_RattenGespawnt_Condition()
@@ -173,10 +173,10 @@ FUNC INT Info_Mod_Whistler_NW_RattenGespawnt_Condition()
 
 FUNC VOID Info_Mod_Whistler_NW_RattenGespawnt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_RattenGespawnt_15_00"); //Gut, das hätte ich erledigt, was jetzt?
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_RattenGespawnt_11_01"); //Jetzt warten wir und schauen, was sch entwickelt. Nachts gehen wir alle mal in die rote Laterne und genießen Bromors Probleme.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_RattenGespawnt_15_00"); //Well, I could have done that. What now?
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_RattenGespawnt_11_01"); //Now we wait and see what sch develops. At night we all go to the red lantern and enjoy Bromor's problems.
 
-	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Whistler meint, jetzt sollten wir Bromor beobachten. Nachts sollte ich mal bei ihm vorbei sehen.");
+	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Whistler thinks we should watch Bromor now. I should stop by his place at night.");
 
 	B_StartOtherRoutine	(self, "NACHTIMPUFF");
 };
@@ -189,7 +189,7 @@ INSTANCE Info_Mod_Whistler_NW_NachtImPuff (C_INFO)
 	information	= Info_Mod_Whistler_NW_NachtImPuff_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bromor gibt auf.";
+	description	= "Bromor's giving up.";
 };
 
 FUNC INT Info_Mod_Whistler_NW_NachtImPuff_Condition()
@@ -202,10 +202,10 @@ FUNC INT Info_Mod_Whistler_NW_NachtImPuff_Condition()
 
 FUNC VOID Info_Mod_Whistler_NW_NachtImPuff_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_NachtImPuff_15_00"); //Bromor gibt auf.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_NachtImPuff_11_01"); //Gut, dann bringen wir seinen Laden wieder in Ordnung.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_NachtImPuff_15_00"); //Bromor's giving up.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_NachtImPuff_11_01"); //Well, then we'll put his place back together.
 
-	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Ich habe Whistler gesagt, dass Bromor aufgibt.");
+	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "I told Whistler that Bromor's giving up.");
 	B_SetTopicStatus	(TOPIC_MOD_AL_LAGERHAUS, LOG_SUCCESS);
 
 	B_Göttergefallen(2, 1);
@@ -231,7 +231,7 @@ INSTANCE Info_Mod_Whistler_NW_Daemonen (C_INFO)
 	information	= Info_Mod_Whistler_NW_Daemonen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich war bei den Dämonenrittern.";
+	description	= "I was with the Demon Knights.";
 };
 
 FUNC INT Info_Mod_Whistler_NW_Daemonen_Condition()
@@ -244,11 +244,11 @@ FUNC INT Info_Mod_Whistler_NW_Daemonen_Condition()
 
 FUNC VOID Info_Mod_Whistler_NW_Daemonen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_Daemonen_15_00"); //Ich war bei den Dämonenrittern.
-	AI_Output(hero, self, "Info_Mod_Whistler_NW_Daemonen_15_01"); //Dort meinte Gomez, er wolle das Lager zurückerobern.
-	AI_Output(self, hero, "Info_Mod_Whistler_NW_Daemonen_11_02"); //Was?! Verdammt, er wird vermutlich schon einen seiner Leute zum Lager geschickt haben, Alissandro muss sofort gewarnt werden!
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_Daemonen_15_00"); //I was with the Demon Knights.
+	AI_Output(hero, self, "Info_Mod_Whistler_NW_Daemonen_15_01"); //There Gomez said he was trying to recapture the camp.
+	AI_Output(self, hero, "Info_Mod_Whistler_NW_Daemonen_11_02"); //What?! Damn, he's probably already sent one of his men to the camp, Alissandro must be warned immediately!
 
-	B_LogEntry	(TOPIC_MOD_AL_MINE, "Whistler sagte, ich sollte so schnell wie möglich Alissandro warnen.");
+	B_LogEntry	(TOPIC_MOD_AL_MINE, "Whistler said I should warn Alissandro as soon as possible.");
 
 	B_GivePlayerXP	(100);
 };

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Attila_Hi (C_INFO)
 	information	= Info_Mod_Attila_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und froh das du aus dem Kerker bist?";
+	description	= "And glad you're out of the dungeon?";
 };
 
 FUNC INT Info_Mod_Attila_Hi_Condition()
@@ -19,19 +19,19 @@ FUNC INT Info_Mod_Attila_Hi_Condition()
 
 FUNC VOID Info_Mod_Attila_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_00"); //Und froh das du aus dem Kerker bist?
-	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_01"); //Die Frage bedarf wohl keiner Antwort, Sohn der Gerissenheit.
-	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_02"); //Du hast deinen Anteil bei meiner Befreiung geleistet und dafür danke ich dir.
-	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_03"); //Was hast du jetzt vor?
-	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_04"); //Nun. Cassia hat mir direkt einen neuen Auftrag gegeben.
-	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_05"); //Da ich aber nach der Zeit im Kerker etwas eingerostet bin, soll ich jemanden zur Unterstützung mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_06"); //Ich habe gehört, dass du während meiner Abwesenheit einige Bandenmitglieder eliminiert hast?
-	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_07"); //Ich hatte keine Wahl ...
-	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_08"); //Würdest du mich mit deiner Erfahrung etwas unterstützen?
-	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_09"); //Und gegen wenn geht es?
-	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_10"); //Es hieß, ein "Möchtegern" hätte sich mit Meldor angelegt und das Sumpfkraut nicht bezahlt.
-	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_11"); //Na gut, aber nur das eine mal!
-	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_12"); //Folge mir.
+	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_00"); //And glad you're out of the dungeon?
+	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_01"); //I don't think the question needs an answer, son of cunning.
+	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_02"); //You played your part in my liberation, and I thank you for that.
+	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_03"); //What are you going to do now?
+	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_04"); //Well. Cassia directly reassigned me.
+	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_05"); //But as I am a bit rusty after the time in the dungeon, I am supposed to take someone with me for support.
+	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_06"); //I heard you eliminated some gang members in my absence?
+	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_07"); //I had no choice....
+	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_08"); //Would you support me with your experience?
+	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_09"); //And against what?
+	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_10"); //They said that a would-be would-be would have messed with Meldor and didn't pay for the bogweed.
+	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_11"); //All right, but just this once!
+	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_12"); //Follow me. Follow me.
 
 	AI_StopProcessInfos	(self);
 
@@ -74,28 +74,28 @@ FUNC VOID Info_Mod_Attila_Moechtegern_Info()
 	AI_TurnToNpc	(Attila, Moechtegern);
 	AI_TurnToNpc	(Moechtegern, Attila);
 
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_09_00"); //Ohh, Sohn des grünen Dunstes ... woher stammt das viele Kraut?
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_09_01"); //Du scheinst mir eigentlich nicht mit dem nötigen Reichtum gesegnet, es auf "ehrlichem" Wege zu erstehen.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_09_00"); //Ohh, son of the green haze... where did you get all that weed?
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_09_01"); //Du scheinst mir eigentlich nicht mit dem nötigen Reichtum gesegnet, es auf "more honest" Wege zu erstehen.
 
 	TRIA_Next(Moechtegern);
 
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_04_02"); //Was zum Teufel laberst du da? Mein Kraut geht dich einen Scheiß an.
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_04_03"); //Mach also, dass du wegkommst, bevor ich meinen Schuh dort versenke, wo keine Sonne scheint.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_04_02"); //What the hell are you talking about? My herb is none of your business.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_04_03"); //So make sure you get out before I sink my shoe where there's no sunshine.
 
 	TRIA_Next(Attila);
 
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_09_04"); //In dem Fall darf ich zu erkennen geben, dass ich gekommen bin das Sumpfkraut und deinen Kopf zu holen.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_09_04"); //In that case, I'm allowed to let you know that I've come to get the swampweed and your head.
 
 	TRIA_Next(Moechtegern);
 
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_04_05"); //Besser du kriechst wieder unter deinen Stein oder du wirst mit deinem Freund den nächsten Tag nicht mehr erleben.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_04_05"); //You better crawl back under your stone or you won't live to see the next day with your friend.
 
 	Moechtegern.guild = GIL_STRF;
 	Npc_SetTrueGuild	(Moechtegern, GIL_STRF);
 
 	TRIA_Next(Attila);
 
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_09_06"); //Richte der ewigen Finsternis meinen Gruß aus. Beliar erwartet dich.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern_09_06"); //Give my regards to the eternal darkness. Beliar is expecting you.
 
 	TRIA_Finish();
 
@@ -132,7 +132,7 @@ FUNC VOID Info_Mod_Attila_Moechtegern2_Info()
 	AI_TurnToNpc	(self, hero);
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern2_09_00"); //Nun sollten wir jedoch von dannen ziehen, ehe die Miliz kommt.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern2_09_00"); //Now, however, we should leave before the militia arrives.
 
 	AI_StopProcessInfos	(self);
 
@@ -173,11 +173,11 @@ FUNC VOID Info_Mod_Attila_Moechtegern3_Info()
 	AI_TurnToNpc	(Attila, Meldor);
 	AI_TurnToNpc	(Meldor, Attila);
 
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern3_09_00"); //Hier hast du dein Sumpfkraut wieder, Vater der Geschäftstüchtigkeit.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern3_09_00"); //Here's your swampweed again, father of business.
 
 	TRIA_Next(Meldor);
 
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern3_04_01"); //Wie auch immer, danke. Auf dich kann man sich verlassen.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern3_04_01"); //Anyway, thank you. You can be counted on.
 
 	TRIA_Next(Attila);
 
@@ -209,14 +209,14 @@ FUNC INT Info_Mod_Attila_Moechtegern4_Condition()
 
 FUNC VOID Info_Mod_Attila_Moechtegern4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern4_09_00"); //Danke für deine Unterstützung. Nimm dieses bescheidene Präsent als Zeichen meines Dankes.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern4_09_00"); //Thanks for your support. Take this humble gift as a token of my gratitude.
 
 	CreateInvItems	(hero, ItMi_Gold, 200);
 	CreateInvItems	(hero, ItPo_Tiergift, 1);
 
-	B_ShowGivenThings	("200 Gold und Tiergift erhalten");
+	B_ShowGivenThings	("200 gold and animal poison received");
 
-	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern4_09_01"); //Ja, du hast zuletzt wahrhaft gezeigt, dass der finstere Gott dich mit Gerissenheit gesegnet hat.
+	AI_Output(self, hero, "Info_Mod_Attila_Moechtegern4_09_01"); //Yes, you have recently shown truly that the dark God has blessed you with wisdom.
 
 	B_GivePlayerXP	(150);
 
@@ -233,7 +233,7 @@ INSTANCE Info_Mod_Attila_Umzug (C_INFO)
 	information	= Info_Mod_Attila_Umzug_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist los? Wo sind alle hin?";
+	description	= "What's going on? Where did everybody go?";
 };
 
 FUNC INT Info_Mod_Attila_Umzug_Condition()
@@ -246,19 +246,19 @@ FUNC INT Info_Mod_Attila_Umzug_Condition()
 
 FUNC VOID Info_Mod_Attila_Umzug_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Attila_Umzug_15_00"); //Was ist los? Wo sind alle hin?
-	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_01"); //Unsere Kellergemeinschaft begibt sich nach Khorata, Sohn der Unwissenheit.
-	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_02"); //Seit den Ereignissen mit den dämonischen Schatten sind die Bürger und Wachen so misstrauisch und vorsichtig, wie nie zuvor.
-	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_03"); //Für mehr, als paar kleine Gaunereien, wird es in dieser Stadt keine Gelegenheit mehr geben.
-	AI_Output(hero, self, "Info_Mod_Attila_Umzug_15_04"); //Das war es also mit uns und Khorinis.
-	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_05"); //Es ist die einzige Möglichkeit einem ehrbaren Beruf zu entgehen ...
-	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_06"); //Cassia hat mich übrigens darum gebeten dir auszurichten, dass du dich in die Taverne Khoratas begeben sollst.
-	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_07"); //Es geht darum dort eine neue Unterkunft für uns zu finden.
-	AI_Output(hero, self, "Info_Mod_Attila_Umzug_15_08"); //Mach ich. Bis bald.
+	AI_Output(hero, self, "Info_Mod_Attila_Umzug_15_00"); //What's going on? Where did everybody go?
+	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_01"); //Our cellar community goes to Khorata, son of ignorance.
+	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_02"); //Since the events of the demonic shadows, citizens and guards have been more suspicious and cautious than ever before.
+	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_03"); //There won't be any more opportunities in this town than a few little tricks.
+	AI_Output(hero, self, "Info_Mod_Attila_Umzug_15_04"); //So that's what happened to us and Khorinis.
+	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_05"); //It's the only way to escape an honest profession...
+	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_06"); //By the way, Cassia asked me to tell you to go to the Khoratas tavern.
+	AI_Output(self, hero, "Info_Mod_Attila_Umzug_09_07"); //It's about finding us a new place to stay.
+	AI_Output(hero, self, "Info_Mod_Attila_Umzug_15_08"); //All right, I will. See you soon.
 
 	Log_CreateTopic	(TOPIC_MOD_DIEB_UMZUG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_UMZUG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DIEB_UMZUG, "Nach der Geschichte mit den Seelenpeinigern kann man in Khorinis dem Diebeshandwerk kaum noch erfolgreich nachgehen, Daher zieht unsere Kellergemeinschaft nach Khorata um. Nun geht es zuerst darum, dort eine neue Unterkunft zu finden. Dazu soll ich in die Taverne Khoratas gehen.");
+	B_LogEntry	(TOPIC_MOD_DIEB_UMZUG, "After the story of the soul tormentors, it's hard to be successful in Khorinis, so our cellar community moves to Khorata. The first step is to find a new accommodation there. I'm supposed to go to the Khoratas tavern for that.");
 };
 
 INSTANCE Info_Mod_Attila_Pickpocket (C_INFO)

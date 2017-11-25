@@ -15,7 +15,7 @@ FUNC INT Info_Mod_HofstaatRaufbold_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Hi_13_00"); //Hallo!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Hi_13_00"); //Hello!
 
 	AI_StopProcessInfos	(self);
 
@@ -44,12 +44,12 @@ FUNC INT Info_Mod_HofstaatRaufbold_KoenigSorge_Condition()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_KoenigSorge_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_00"); //Halt, hier kannst du nicht weiter. Der König ist am Fluss und sorgt sich.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_01"); //Er will dabei nicht gestört werden, schon gar nicht von einem Mädchen für alles.
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_KoenigSorge_15_02"); //Königliches Mädchen für alles, wenn ich bitten darf, und das bin ich nicht mehr. Ich bin mittlerweile königlicher Kehrwisch!
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_03"); //Egal, du kommst hier nicht durch, das ist königlicher Befehl.
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_KoenigSorge_15_04"); //Ich hab dir schon einmal den Hintern versohlt, ich mach es auch gerne nochmal.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_05"); //Pass dir bloß auf, ich habe im Moment nur drei verschiedene Rauschmittel intus.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_00"); //Stop, you can't go any further here. The king's by the river worrying.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_01"); //He doesn't want to be disturbed, especially not by a girl for everything.
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_KoenigSorge_15_02"); //Royal girl for everything, if I may ask, and I am not. I've become a royal sweep!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_03"); //Anyway, you can't get through here. It's a royal order.
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_KoenigSorge_15_04"); //I spanked you once before, and I'm happy to do it again.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_05"); //Look, I've only got three different narcotics in me right now.
 
 	AI_StopProcessInfos	(self);
 
@@ -76,12 +76,12 @@ FUNC INT Info_Mod_HofstaatRaufbold_KoenigHilfe_Condition()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_KoenigHilfe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_00"); //Der König sorgt sich ... Wir müssen was unternehmen.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_01"); //Du solltest das königliche Orakel aufsuchen, es wird dir bestimmt sagen, wie du den König wieder glücklich machen kannst!
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_02"); //Ich werde mir inzwischen den Fluss vorknöpfen der den König traurig macht!
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_03"); //Einer von uns muss Erfolg haben und glaub' mir, dieser Fluss wird sich wünschen, nie geboren worden zu sein.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_00"); //The king worries... We have to do something.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_01"); //You should visit the royal oracle, it will tell you how to make the king happy again!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_02"); //I'm going to take the river that makes the king sad!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_03"); //One of us must succeed and believe me, this river will wish it had never been born.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der Raufbold riet mir, das königliche Orakel aufzusuchen. Wo ich das wohl finde?");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "The roughneck advised me to visit the royal oracle. I wonder where I can find it.");
 
 	AI_StopProcessInfos	(self);
 
@@ -108,26 +108,26 @@ FUNC INT Info_Mod_HofstaatRaufbold_Meer_Condition()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_00"); //Du hast gewonnen ... Hast du die Antwort gefunden?
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_01"); //Moment mal, wie bist du aus dem Fluss gekommen?
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_02"); //Eine Otterfamilie hat mich gerettet! Aber das tut jetzt doch nichts zur Sache. Sprich schon, was hast du gesehen?
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_03"); //Der Sumpf. Im alten Minental. Er behauptete die Antwort zu sein.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_04"); //Natürlich! Es ist alles sonnenklar! Der Sumpf ist die Antwort. Auf was eigentlich?
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_05"); //Der König hat sich ein Meer gewünscht. Vielleicht gibt es eine Möglichkeit, den Sumpf zu einem Teil des Staates zu machen.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_06"); //WIR EROBERN IHN! Wenn das den König wieder glücklich macht dann metzeln wir dort alles nieder was und im Weg ist und nehmen den Sumpf mit hierher.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_00"); //You have won.... Did you find the answer?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_01"); //Wait a minute, how did you get out of the river?
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_02"); //An otter family saved me! But that doesn't matter now. Speak up, what did you see?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_03"); //The swamp. In the old Minental. He claimed to be the answer.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_04"); //Of course! It's clear as daylight! The swamp is the answer. To what, actually?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_05"); //The king wished for a sea. Maybe there's a way to make the swamp part of the state.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_06"); //WE' LL CONQUER HIM! If this makes the king happy again, we will slaughter everything that is in the way and take the swamp with us.
 
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 
-	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Der Fluss hat gesagt du stinkst.", Info_Mod_HofstaatRaufbold_Meer_D);
-	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Was immer du nimmst, nimm weniger ... oder mehr.", Info_Mod_HofstaatRaufbold_Meer_C);
-	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Wie schnell kannst du eigentlich von hier bis zur Stadt rennen?", Info_Mod_HofstaatRaufbold_Meer_B);
-	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Sei still und lass mich das machen.", Info_Mod_HofstaatRaufbold_Meer_A);
+	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "The river said you smelled.", Info_Mod_HofstaatRaufbold_Meer_D);
+	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Whatever you take, take less... or more.", Info_Mod_HofstaatRaufbold_Meer_C);
+	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "How fast can you actually run from here to town?", Info_Mod_HofstaatRaufbold_Meer_B);
+	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Shut up and let me do that.", Info_Mod_HofstaatRaufbold_Meer_A);
 };
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_D()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_D_15_00"); //Der Fluss hat gesagt du stinkst.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_D_13_01"); //Hast du immer noch nicht genug, verdammter Fluss?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_D_15_00"); //The river said you smelled.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_D_13_01"); //You still don't have enough, goddamn river?
 	
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 
@@ -136,8 +136,8 @@ FUNC VOID Info_Mod_HofstaatRaufbold_Meer_D()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_C()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_C_15_00"); //Was immer du nimmst, nimm weniger ... oder mehr.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_C_13_01"); //Ich fang gleich damit an!
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_C_15_00"); //Whatever you take, take less... or more.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_C_13_01"); //I'll start right away!
 	
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 
@@ -148,10 +148,10 @@ FUNC VOID Info_Mod_HofstaatRaufbold_Meer_C()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_B()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_B_15_00"); //Wie schnell kannst du eigentlich von hier bis zur Stadt rennen? Renn' mal rauf, ich stopp deine Zeit!
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_B_13_01"); //Glaubst du ich bin so blöd auf sowas anzuspringen oder was?
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_B_15_02"); //Eins, zwei, drei, vier ...
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_B_13_03"); //Haaalt, ich bin noch gar nicht losgelaufen!
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_B_15_00"); //How fast can you actually run from here to town? Run upstairs, I'll save your time!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_B_13_01"); //You think I'm that stupid jumping at something like this or what?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_B_15_02"); //One, two, three, four...
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_B_13_03"); //I haven't run off yet!
 	
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 
@@ -162,8 +162,8 @@ FUNC VOID Info_Mod_HofstaatRaufbold_Meer_B()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_A()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_A_15_00"); //Sei still und lass mich das machen.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_A_13_01"); //Welche Unverfrorenheit! Zur Strafe musst du auf meine weitere Gesellschaft verzichten!
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_A_15_00"); //Shut up and let me do that.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_A_13_01"); //What impudence! As punishment, you must forego my further company!
 	
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 

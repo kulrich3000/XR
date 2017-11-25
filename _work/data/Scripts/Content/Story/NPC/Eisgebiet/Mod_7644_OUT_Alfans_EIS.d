@@ -1,7 +1,7 @@
 INSTANCE Mod_7644_OUT_Alfans_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Alfans";
+	name 		= "alfans";
 	guild 		= GIL_OUT;
 	id 			= 7644;
 	voice 		= 1;

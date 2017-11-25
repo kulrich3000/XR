@@ -18,17 +18,17 @@ FUNC INT Info_Mod_Kolam_Hi_Condition()
 
 FUNC VOID Info_Mod_Kolam_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_00"); //So, und jetzt zu dir. Ich bin mir sicher du brennst vor Fragen.
-	AI_Output(hero, self, "Info_Mod_Kolam_Hi_15_01"); //Was hast du mit dem Erfinder gemacht?
-	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_02"); //(lacht) Hahahaha. Du Narr hast es immer noch nicht begriffen. ICH bin der Erfinder.
-	AI_Output(hero, self, "Info_Mod_Kolam_Hi_15_03"); //Was? Du bist der Erfinder?
-	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_04"); //Natürlich! Die ganze Sache mit der Entführung war nur ein Trick, um DICH hierher zu locken!
-	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_05"); //Die einzige Magie, die ich beherrsche, ist die Magie der Technik. Das ist aber leider zu hoch für diese Idioten mit ihrem Schläfer, deshalb bin ich als der große Guru Cor Kolam, Cor Kaloms Bruder, aufgetreten.
-	AI_Output(hero, self, "Info_Mod_Kolam_Hi_15_06"); //Mich hierherzulocken? Wozu denn? Damit hast du dir nur die ganze Miliz auf den Hals gehetzt.
-	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_07"); //Das ist alles Teil meines genialen Planes!
-	AI_Output(hero, self, "Info_Mod_Kolam_Hi_15_08"); //Plan? Lass mich raten. Es geht um Geld, Frauen, Macht ... Weltherrschafft?
-	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_09"); //Hast du deine Ideen aus einem Lexikon für Klischees? Für wie primitiv hältst du mich eigentlich? Es geht mir nicht um Macht, sondern nur um die Technik als solche.
-	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_10"); //Ich wollte die perfekte Maschine bauen, und das ist mir ja auch gelungen. ANGRIFF INITIALISIEREN
+	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_00"); //All right, let's get to you. I'm sure you're burning with questions.
+	AI_Output(hero, self, "Info_Mod_Kolam_Hi_15_01"); //What did you do to the inventor?
+	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_02"); //(laughs) Haahahaha. You fool still don't get it. I'm the inventor.
+	AI_Output(hero, self, "Info_Mod_Kolam_Hi_15_03"); //What? You're the inventor?
+	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_04"); //Of course! The whole kidnapping thing was just a trick to lure you here!
+	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_05"); //The only magic I know is the magic of technique. Unfortunately, this is too high for these idiots with their sleeper, so I performed as the great Guru Cor Kolam, Cor Kalom's brother.
+	AI_Output(hero, self, "Info_Mod_Kolam_Hi_15_06"); //To lure me here? What's that for? It's just a way of putting the whole militia on your neck.
+	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_07"); //It's all part of my brilliant plan!
+	AI_Output(hero, self, "Info_Mod_Kolam_Hi_15_08"); //Plan? Let me guess. It's about money, women, power... World domination?
+	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_09"); //Do you have your ideas from a dictionary of clichés? How primitive do you think I am? It is not about power, but only about technology as such.
+	AI_Output(self, hero, "Info_Mod_Kolam_Hi_02_10"); //I wanted to build the perfect machine, and I succeeded in doing so. ATTACK INITIALIZE
 
 	AI_StopProcessInfos	(self);
 };
@@ -55,18 +55,18 @@ FUNC INT Info_Mod_Kolam_SleeperDead_Condition()
 
 FUNC VOID Info_Mod_Kolam_SleeperDead_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_00"); //Wunderbar!
-	AI_Output(hero, self, "Info_Mod_Kolam_SleeperDead_15_01"); //Sind bei dir jetzt alle Sicherungen durchgebrannt? Ich habe deine „Perfekte Maschine“ gerade zu Altschrott gemacht.
-	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_02"); //Was? Perfekte Maschine? Das? Aber nicht doch.
-	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_03"); //Meine perfekte Maschine ist noch nicht mal fertig ... das heißt, sie war noch nicht fertig, da was Entscheidendes fehlte.
-	AI_Output(hero, self, "Info_Mod_Kolam_SleeperDead_15_04"); //Und zwar?
-	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_05"); //Das Gehirn. Natürlich nur im metaphorischen Sinne. Die Konstruktion ist fertig, aber die Programmierung fehlte.
-	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_06"); //Ich konnte ja nicht irgendein Programm schreiben, nicht um die perfekte Maschine zu bauen ... da es eine Kampfmaschine ist, braucht sie den perfekten Kampfstil. Und genau da kommst du ins Spiel.
-	AI_Output(hero, self, "Info_Mod_Kolam_SleeperDead_15_07"); //Und du glaubst, ich helfe dir deine Maschine zu bauen? Ich bin Milizsoldat und hier, um wenigstens ein bisschen Recht und Ordnung zu wahren, nicht um dir zu helfen eine verrückte Killermaschine zu bauen.
-	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_08"); //Oh, ich verstehe deine moralischen Bedenken durchaus, aber es ist nicht so als hätte ich dich um deine Hilfe gebeten. Ich hab sie mir genommen.
-	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_09"); //Deine beeindruckende Vorstellung im Kampf mit dem Schläfer-Bot hat meiner Maschine alle Informationen geliefert, die sie brauchte.
-	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_10"); //Sie hat dich bis jetzt analysiert, doch da sie jetzt alles Nötige weiß, mach dich dazu bereit, das erste Opfer wahrhafter Perfektion zu werden!
-	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_11"); //INPUT BEENDEN. ANGRIFFSMUSTER LADEN, ANGRIFF INTIALISIEREN!
+	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_00"); //Wonderful!
+	AI_Output(hero, self, "Info_Mod_Kolam_SleeperDead_15_01"); //Have all your fuses blown? I just turned your "perfect machine" into scrap metal.
+	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_02"); //What? Perfect machine? This? No, don't do that.
+	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_03"); //My perfect machine is not even finished.... which means it wasn't finished yet, because something decisive was missing.
+	AI_Output(hero, self, "Info_Mod_Kolam_SleeperDead_15_04"); //Namely?
+	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_05"); //The brain. Of course, only in a metaphorical sense. The construction is finished, but the programming was missing.
+	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_06"); //I couldn't write just any program, not to build the perfect machine.... since it's a fighting machine, she needs the perfect fighting style. And that's where you come in.
+	AI_Output(hero, self, "Info_Mod_Kolam_SleeperDead_15_07"); //And you think I'll help you build your machine? I'm a militia soldier, and I'm here to uphold at least a little law and order, not to help you build a crazy killer machine.
+	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_08"); //Oh, I understand your moral concerns, but it's not like I asked for your help. I took them.
+	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_09"); //Your impressive performance in the battle with the sleeper-bot gave my machine all the information it needed.
+	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_10"); //She has analyzed you so far, but now that she knows everything she needs to know, get ready to become the first victim of true perfection!
+	AI_Output(self, hero, "Info_Mod_Kolam_SleeperDead_02_11"); //INPUT BEENDEN. LOAD ATTACK PATTERNS, INITIATE ATTACK!
 
 	AI_StopProcessInfos	(self);
 

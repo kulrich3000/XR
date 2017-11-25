@@ -18,8 +18,8 @@ FUNC INT Info_Mod_Tavor_Hi_Condition()
 
 FUNC VOID Info_Mod_Tavor_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tavor_Hi_12_00"); //Vielen Dank für deine Rettung.
-	AI_Output(self, hero, "Info_Mod_Tavor_Hi_12_01"); //Wir sind geschwächt und werden hier noch etwas verweilen, bis du den Ausgang erreicht hast und sichergestellt ist, dass wir gefahrlos das Freie erreichen können.
+	AI_Output(self, hero, "Info_Mod_Tavor_Hi_12_00"); //Thank you for saving me.
+	AI_Output(self, hero, "Info_Mod_Tavor_Hi_12_01"); //We are weakened and will stay here for a while until you reach the exit and make sure that we can safely reach the free world.
 };
 
 INSTANCE Info_Mod_Tavor_EXIT (C_INFO)

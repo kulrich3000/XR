@@ -18,30 +18,30 @@ FUNC INT Info_Mod_Gellit_Hi_Condition()
 
 FUNC VOID Info_Mod_Gellit_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gellit_Hi_26_00"); //Wer bist du und wo kommst du her?
-	AI_Output(hero, self, "Info_Mod_Gellit_Hi_15_01"); //Ich komme aus dem Minental.
-	AI_Output(self, hero, "Info_Mod_Gellit_Hi_26_02"); //Minental? Nie davon gehört. Was hast du hier zu suchen?
-	AI_Output(hero, self, "Info_Mod_Gellit_Hi_15_03"); //Ich suche einen Verwandlungszauber. Er soll sich hier irgendwo befinden. Ich bin hier doch in Gelato, oder?
-	AI_Output(self, hero, "Info_Mod_Gellit_Hi_26_04"); //Ja. Aber mit Zauberei habe ich nichts am Hut. Sprich mal mit dem Dorfschamanen. Aber keine Tricksereien.
+	AI_Output(self, hero, "Info_Mod_Gellit_Hi_26_00"); //Who are you and where are you from?
+	AI_Output(hero, self, "Info_Mod_Gellit_Hi_15_01"); //I'm from the Minental.
+	AI_Output(self, hero, "Info_Mod_Gellit_Hi_26_02"); //Minental? Never heard of it. What are you doing here?
+	AI_Output(hero, self, "Info_Mod_Gellit_Hi_15_03"); //I'm looking for a metamorphosis spell. I hear he's here somewhere. I'm here in Gelato, aren't I?
+	AI_Output(self, hero, "Info_Mod_Gellit_Hi_26_04"); //Yeah. But I have nothing to do with sorcery. Talk to the village shaman. But no tricks.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ein Mann namens Gellit hat gesagt, ich solle mich bezüglich des Verwandlungszaubers zum Dorfschamanen begeben. Mir bleibt keine andere Wahl.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "A man named Gellit told me to go to the village shaman for the transformation spell. I have no other choice.");
 
 	B_StartOtherRoutine	(self, "START");
 
 	Info_ClearChoices	(Info_Mod_Gellit_Hi);
 
-	Info_AddChoice	(Info_Mod_Gellit_Hi, "Darauf wäre ich auch von allein gekommen.", Info_Mod_Gellit_Hi_A);
-	Info_AddChoice	(Info_Mod_Gellit_Hi, "Danke für den Tipp. Ich werde mich dann mal auf den Weg machen.", Info_Mod_Gellit_Hi_B);
+	Info_AddChoice	(Info_Mod_Gellit_Hi, "I would have thought of that myself.", Info_Mod_Gellit_Hi_A);
+	Info_AddChoice	(Info_Mod_Gellit_Hi, "Thanks for the tip. I'll be on my way, then.", Info_Mod_Gellit_Hi_B);
 };
 
 FUNC VOID Info_Mod_Gellit_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gellit_Hi_B_15_00"); //Danke für den Tipp. Ich werde mich dann mal auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Gellit_Hi_B_26_01"); //Eins noch. Bring ihm ein kleines Geschenk mit, dann wird er freundlicher sein. Am besten du nimmst Fisch.
-	AI_Output(hero, self, "Info_Mod_Gellit_Hi_B_15_02"); //Fisch? Wo bekomme ich denn Fisch her?
-	AI_Output(self, hero, "Info_Mod_Gellit_Hi_B_26_03"); //Ich habe dir schon zu viel gesagt, jetzt mach, dass du wegkommst.
+	AI_Output(hero, self, "Info_Mod_Gellit_Hi_B_15_00"); //Thanks for the tip. I'll be on my way, then.
+	AI_Output(self, hero, "Info_Mod_Gellit_Hi_B_26_01"); //One more thing. Bring him a little present, he'll be friendlier. Best you take fish.
+	AI_Output(hero, self, "Info_Mod_Gellit_Hi_B_15_02"); //Fish? Where do I get fish from?
+	AI_Output(self, hero, "Info_Mod_Gellit_Hi_B_26_03"); //I've told you too much already, now get out of here.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Gellit erwähnte außerdem, dass ich dem Schamanen ein Geschenk, am besten Fisch, mitbringen sollte, da er dann freundlicher zu mir wäre.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Gellit also mentioned that I should bring a present, preferably fish, to the shaman, as he would be friendlier to me.");
 
 	VMG_Second = 6;
 
@@ -50,8 +50,8 @@ FUNC VOID Info_Mod_Gellit_Hi_B()
 
 FUNC VOID Info_Mod_Gellit_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gellit_Hi_A_15_00"); //Darauf wäre ich auch von allein gekommen.
-	AI_Output(self, hero, "Info_Mod_Gellit_Hi_A_26_01"); //Große Klappe, wie? Aber ich bin nicht dumm und lasse mich auf ein Geplänkel ein. Mach, dass du wegkommst.
+	AI_Output(hero, self, "Info_Mod_Gellit_Hi_A_15_00"); //I would have thought of that myself.
+	AI_Output(self, hero, "Info_Mod_Gellit_Hi_A_26_01"); //Big mouth, huh? But I'm not stupid, and I'm getting into a skirmish. Get the hell out of here.
 
 	VMG_Second = 5;
 
@@ -77,11 +77,11 @@ FUNC VOID Info_Mod_Gellit_RaueSchneide_Info()
 {
 	if (Npc_KnowsInfo(hero, Info_Mod_Gellit_Hi))
 	{
-		AI_Output(self, hero, "Info_Mod_Gellit_RaueSchneide_26_00"); //Ach, noch etwas.
+		AI_Output(self, hero, "Info_Mod_Gellit_RaueSchneide_26_00"); //Oh, one more thing.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Gellit_RaueSchneide_26_01"); //Wenn du einen guten Ruf und Ansehen in unserem Land bekommen willst, solltest du dich bei Kommandeur Willingham melden. Er wird dich einzusetzen wissen.
-	AI_Output(self, hero, "Info_Mod_Gellit_RaueSchneide_26_02"); //Die Kaserne ist am anderen Ende der Stadt. Dort sind seine Truppen stationiert.
+	AI_Output(self, hero, "Info_Mod_Gellit_RaueSchneide_26_01"); //If you want to get a good reputation in our country, you should contact Commander Willingham. He'll know how to use you.
+	AI_Output(self, hero, "Info_Mod_Gellit_RaueSchneide_26_02"); //The barracks are on the other side of town. That's where his troops are stationed.
 };
 
 INSTANCE Info_Mod_Gellit_Schneegeister (C_INFO)
@@ -105,24 +105,24 @@ FUNC INT Info_Mod_Gellit_Schneegeister_Condition()
 
 FUNC VOID Info_Mod_Gellit_Schneegeister_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_00"); //Warte. Du bist doch recht viel unterwegs draußen.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_01"); //Sei vorsichtig, denn zur Zeit treiben sich wieder recht viel Schneegeister draußen herum.
-	AI_Output(hero, self, "Info_Mod_Gellit_Schneegeister_15_02"); //Gut, ich werde aufpassen.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_03"); //Ja, da tust du gut daran. Mit denen ist nicht zu spaßen.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_04"); //Wenn ich daran denke, dass es eine Zeit gab, wo das Dorf noch nicht unter ihnen gelitten hat ...
-	AI_Output(hero, self, "Info_Mod_Gellit_Schneegeister_15_05"); //Wieso? Ich dachte, sie waren schon immer da?
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_06"); //Nein, erst seit einigen Jahrzehnten gehören sie zum festen Bild der Landschaft hier.
-	AI_Output(hero, self, "Info_Mod_Gellit_Schneegeister_15_07"); //Wie ist es damals dazu gekommen?
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_08"); //Gute Frage. Das weiß niemand so genau.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_09"); //Einige sehen Beliars Bosheit darin, andere die Strafe Innos für sündiges Verhalten.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_10"); //Manche wiederum machen Dämonen dafür verantwortlich, oder gar die Gestirne ...  unzählige Mutmaßungen gibt es.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_11"); //Was ich auch einmal gehört hatte, ist, dass jemand  wegen dunkler Rituale aus dem Dorf verbannt worden sein soll.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_12"); //Einige der Alten meinen ihrerseits, dass es damit zusammenhängen könnte. Kann aber auch genauso gut Unsinn sein.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_13"); //Frag am besten mal unseren Dorfältesten Thys, wenn du mehr wissen möchtest.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_00"); //Wait. Wait. You're pretty much out on the road.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_01"); //Be careful, because at the moment there are a lot of snow ghosts outside again.
+	AI_Output(hero, self, "Info_Mod_Gellit_Schneegeister_15_02"); //All right, I'll be careful.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_03"); //Yeah, you'd do well to. You can't fool around with them.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_04"); //When I think about the fact that there was a time when the village hasn't suffered from them yet...
+	AI_Output(hero, self, "Info_Mod_Gellit_Schneegeister_15_05"); //Why? I thought they were always there?
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_06"); //No, they have only been part of the landscape here for a few decades.
+	AI_Output(hero, self, "Info_Mod_Gellit_Schneegeister_15_07"); //How did it happen then?
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_08"); //Good question. Nobody really knows.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_09"); //Some see Beliar's malice in this, others see the punishment of Inno for sinful behavior.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_10"); //Some in turn blame demons, or even the stars... there are countless speculations.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_11"); //What I also heard once is that someone was banished from the village because of dark rituals.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_12"); //Some of the old folks, for their part, think it might be related. Might as well be nonsense.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister_26_13"); //Why don't you ask our village elder Thys if you want to know more?
 
 	Log_CreateTopic	(TOPIC_MOD_GELLIT_SCHNEEGEISTER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_GELLIT_SCHNEEGEISTER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_GELLIT_SCHNEEGEISTER, "Gellit berichtete mir, dass die Geister nicht immer die Umgebung des Dorfes unsicher gemacht hätten, wusste aber auch nicht Näheres zu ihrem Ursprung. Vielleicht kann Thys mir mehr dazu berichten.");
+	B_LogEntry	(TOPIC_MOD_GELLIT_SCHNEEGEISTER, "Gellit told me that the ghosts had not always made the surroundings of the village unsafe, but did not know more about their origins. Maybe Thys can tell me more about it.");
 };
 
 INSTANCE Info_Mod_Gellit_Schneegeister2 (C_INFO)
@@ -145,10 +145,10 @@ FUNC INT Info_Mod_Gellit_Schneegeister2_Condition()
 
 FUNC VOID Info_Mod_Gellit_Schneegeister2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister2_26_00"); //He, unglaubliche Neuigkeiten! Fast alle Schneegeister haben sich verflüchtigt.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister2_26_01"); //Ich habe Gerüchte gehört, wonach irgendein Abenteurer angeblich die Wurzel des Übels gefunden und ausgemerzt haben soll.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister2_26_02"); //Mann, dem würde ich die Hand schütteln und erst mal auf einen Drink in der Taverne einladen.
-	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister2_26_03"); //Ich meine, kannst du dir das vorstellen? Endlich keine Schneegeister mehr.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister2_26_00"); //Hey, incredible news! Almost all snow ghosts have vanished.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister2_26_01"); //I have heard rumours that some adventurer allegedly found the root of the evil and eradicated it.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister2_26_02"); //Man, I'd shake hands with him and invite him for a drink in the tavern.
+	AI_Output(self, hero, "Info_Mod_Gellit_Schneegeister2_26_03"); //I mean, can you imagine? Finally no more snow ghosts.
 
 	B_GivePlayerXP	(50);
 };

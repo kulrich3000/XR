@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Podest(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Podest";
+	name							=	"platform";
 	guild							=	GIL_STONEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Blutgolem;
 	level							=	100;

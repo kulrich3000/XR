@@ -1,7 +1,7 @@
 instance Mod_7566_OUT_Pilar_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Pilar"; 
+	name 		= "pilar"; 
 	guild 		= GIL_OUT;
 	id 			= 7566;
 	voice 		= 1;

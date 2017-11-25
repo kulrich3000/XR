@@ -44,7 +44,7 @@ INSTANCE MENUITEM_TEAM_ALBI(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Albi";
-	text[1]		= "Story- und Questwriter";  // Kommentar
+	text[1]		= "Story and Quest Writer";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*0;
@@ -62,7 +62,7 @@ INSTANCE MENUITEM_TEAM_AMPROSIUS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "AmProsius";
-	text[1]		= "Story- und Questwriter und 2D Artist";  // Kommentar
+	text[1]		= "Story and Quest Writer and 2D Artist";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*1;
@@ -80,7 +80,7 @@ INSTANCE MENUITEM_TEAM_AXON(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "axon";
-	text[1]		= "Story- und Questwriter";  // Kommentar
+	text[1]		= "Story and Quest Writer";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*2;
@@ -97,8 +97,8 @@ INSTANCE MENUITEM_TEAM_AXON(C_MENU_ITEM_DEF)
 instance MENUITEM_TEAM_BONNE6(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"Bonne";
-	text[1]		=	"Scripter und Spacerer";  // Kommentar
+	text[0]		=	"bonne";
+	text[1]		=	"Scripter and spacer";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*3;
@@ -115,7 +115,7 @@ INSTANCE MENUITEM_TEAM_HOW4RD(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "how4rd";
-	text[1]		= "2D Artist, Questwriter und Spacerer";  // Kommentar
+	text[1]		= "2D Artist, Quest Writer and Spacer";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*4;
@@ -132,8 +132,8 @@ INSTANCE MENUITEM_TEAM_HOW4RD(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_TEAM_JIMHALWILSON(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Jim Hal Wilson";
-	text[1]		= "Music Artist, Spacerer und Questwriter";  // Kommentar
+	text[0]		= "Jim Hal Wilson.";
+	text[1]		= "Music Artist, Spacer and Quest Writer";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*5;
@@ -150,8 +150,8 @@ INSTANCE MENUITEM_TEAM_JIMHALWILSON(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_TEAM_NATHAN(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Nathan der Weiße";
-	text[1]		= "Story- und Questwriter";  // Kommentar
+	text[0]		= "Nathan the White One";
+	text[1]		= "Story and Quest Writer";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*6;
@@ -169,7 +169,7 @@ INSTANCE MENUITEM_TEAM_PHILIP(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Philip";
-	text[1]		= "Spacerer";  // Kommentar
+	text[1]		= "spacer";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*0;
@@ -186,8 +186,8 @@ INSTANCE MENUITEM_TEAM_PHILIP(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_TEAM_QUANTARIE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "quantarie";
-	text[1]		= "3D Artist und Animator";  // Kommentar
+	text[0]		= "quantum";
+	text[1]		= "3D Artist and Animator";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*1;
@@ -205,7 +205,7 @@ INSTANCE MENUITEM_TEAM_THOMASBAUSB (C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "ThomasBausB";
-	text[1]		= "Spacerer und 3D Artist";  // Kommentar
+	text[1]		= "Spacer and 3D Artist";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*2;
@@ -222,8 +222,8 @@ INSTANCE MENUITEM_TEAM_THOMASBAUSB (C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_TEAM_ZAFIRON(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Zafiron";
-	text[1]		= "Leveldesigner und 3D Artist";  // Kommentar
+	text[0]		= "zafiron";
+	text[1]		= "Level Designer and 3D Artist";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_TEAM_START_Y + MENU_TEAM_DY*3;
@@ -240,7 +240,7 @@ INSTANCE MENUITEM_TEAM_ZAFIRON(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_TEAM_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"Back";
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_TEAM_START_Y + MENU_TEAM_DY*8;
 	dimx		=	8192;		dimy		=	800;

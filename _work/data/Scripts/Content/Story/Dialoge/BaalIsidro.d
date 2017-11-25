@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Isidro_Hi (C_INFO)
 	information	= Info_Mod_Isidro_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es wird langsam Zeit zu gehen.";
+	description	= "It's time to go slowly.";
 };
 
 FUNC INT Info_Mod_Isidro_Hi_Condition()
@@ -19,21 +19,21 @@ FUNC INT Info_Mod_Isidro_Hi_Condition()
 
 FUNC VOID Info_Mod_Isidro_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Isidro_Hi_15_00"); //Es wird langsam Zeit zu gehen.
-	AI_Output(self, hero, "Info_Mod_Isidro_Hi_03_01"); //(betrunken) Was? Wieso?
+	AI_Output(hero, self, "Info_Mod_Isidro_Hi_15_00"); //It's time to go slowly.
+	AI_Output(self, hero, "Info_Mod_Isidro_Hi_03_01"); //(drunk) What? Why?
 
 	B_StartOtherRoutine	(Mod_1117_PSINOV_BaalKagan_MT, "ISIDRO");
 
 	Info_ClearChoices	(Info_Mod_Isidro_Hi);
 
-	Info_AddChoice	(Info_Mod_Isidro_Hi, "Weil ich dir sonst die Fresse poliere.", Info_Mod_Isidro_Hi_B);
-	Info_AddChoice	(Info_Mod_Isidro_Hi, "Weil ich es sage.", Info_Mod_Isidro_Hi_A);
+	Info_AddChoice	(Info_Mod_Isidro_Hi, "Because if you don't, I'll beat your face off.", Info_Mod_Isidro_Hi_B);
+	Info_AddChoice	(Info_Mod_Isidro_Hi, "Because I say so.", Info_Mod_Isidro_Hi_A);
 };
 
 FUNC VOID Info_Mod_Isidro_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Isidro_Hi_B_15_00"); //Weil ich dir sonst die Fresse poliere.
-	AI_Output(self, hero, "Info_Mod_Isidro_Hi_B_03_01"); //Was? Ich habe aber keine Lust auf Stress. Ist gut. Ich komme mit.
+	AI_Output(hero, self, "Info_Mod_Isidro_Hi_B_15_00"); //Because if you don't, I'll beat your face off.
+	AI_Output(self, hero, "Info_Mod_Isidro_Hi_B_03_01"); //What? I don't feel like stress. All right, all right. I'll go with you.
 
 	Info_ClearChoices	(Info_Mod_Isidro_Hi);
 
@@ -44,8 +44,8 @@ FUNC VOID Info_Mod_Isidro_Hi_B()
 
 FUNC VOID Info_Mod_Isidro_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Isidro_Hi_A_15_00"); //Weil ich es sage.
-	AI_Output(self, hero, "Info_Mod_Isidro_Hi_A_03_01"); //Ähhh, klar, machen wir einen Spaziergang.
+	AI_Output(hero, self, "Info_Mod_Isidro_Hi_A_15_00"); //Because I say so.
+	AI_Output(self, hero, "Info_Mod_Isidro_Hi_A_03_01"); //Uh, sure, let's take a walk.
 
 	Info_ClearChoices	(Info_Mod_Isidro_Hi);
 

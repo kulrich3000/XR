@@ -21,7 +21,7 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 			
 			Log_CreateTopic (TOPIC_FireContest,LOG_MISSION);
 			B_SetTopicStatus	(TOPIC_FireContest,LOG_RUNNING);
-			B_LogEntry (TOPIC_FireContest,"Als Novize habe ich das Recht die Prüfung des Feuers zu fordern. Dabei wird mir jeder der drei Magier aus dem hohen Rat eine Prüfung stellen. Wenn ich sie bestehe, werde ich in den Kreis des Feuers aufgenommen.");
+			B_LogEntry (TOPIC_FireContest,"As a novice, I have the right to demand the examination of fire. Each of the three magicians from the High Council will examine me. If I pass, I'll be admitted to the circle of fire.");
 		};
 	
 		var int nDocID;
@@ -35,12 +35,12 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Die Prüfung des Feuers"					);
+					Doc_PrintLine	( nDocID,  0, "Fire test"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "So ein Novize nicht erwählt ist, mag es sein, das er trotzdem die Bereitschaft verspürt sich der Prüfung der Magie zu unterwerfen. Wenn er diesen Entschluß reiflich überlegt hat und er darauf besteht, ist es ihm gewährt, die Prüfung zu verlangen und kein Magier darf sie ihm verweigern. Doch nicht nur die Prüfung der Magie wird ihm auferlegt, sondern er soll durch das Feuer seine Erleuchtung finden. Wenn er vor dem hohen Rat darauf besteht, so soll ihm die PRÜFUNG DES FEUERS gewährt werden.");
+					Doc_PrintLines	( nDocID,  0, "Such a novice is not chosen, it may be that he nevertheless feels the willingness to submit to the examination of magic. If he has carefully considered this decision and insists on it, he is allowed to take the test and no magician may refuse it. But it is not only the testing of magic that is imposed on him, but he is also to find his enlightenment through fire. If he insists on it before the High Council, he should be granted the FIRE EXAMINATION.");
 			
 					
 					
@@ -48,13 +48,13 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "In dieser Prüfung soll gleichermaßen die Klugheit, Stärke und das Geschick des Novizen gefordert werden. So soll er drei Prüfungen erfüllen, jede empfangen durch einen der Magier des hohen Rates, bevor er den Eid der Flamme schwört und den Bund mit dem Feuer eingehen kann. "); 
+					Doc_PrintLines	( nDocID,  1, "In this examination, the prudence, strength and skill of the novice should be equally required. So he shall perform three trials, each received by one of the magicians of the High Council, before he swears the oath of the flame and can make the covenant with the fire. "); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "So ist es Innos Wille und so soll es geschehen. "					);
+					Doc_PrintLines	( nDocID,  1, "This is what Inno's will and this is how it shall be done. "					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Der hohe Rat"					);
+					Doc_PrintLines	( nDocID,  1, "The High Council"					);
 					Doc_Show		( nDocID );
 
 			
@@ -78,12 +78,12 @@ FUNC VOID BOOKSTAND_HEILMAGIER_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLines	( nDocID,  0, "Entstehung des Ordens der Heilmagier"					);
+					Doc_PrintLines	( nDocID,  0, "Origin of the Order of Healing Mages"					);
 					Doc_PrintLine	( nDocID,  0, "-------------------------"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Der Orden der Heilmagier entstand durch die Idee des weniger bekannten Magiers Kamaros. Es ist überliefert, dass er aus Myrthana stammte, wo er längere Zeit die neutrale Magie studierte. Doch eines Tages, so sagt man, schickte Adanos eine Vision zu ihm. Adanos war der Herr des Lebens und er trug Kamaros auf, es zu schützen und zu bewahren.");
+					Doc_PrintLines	( nDocID,  0, "The Order of Healing Magicians was born from the idea of the lesser-known magician Kamaros. It is said that he came from Myrthana, where he studied neutral magic for a long time. But one day, it is said, Adanos sent a vision to him. Adanos was the Lord of life and he instructed Kamaros to protect and preserve it.");
 			
 					
 					
@@ -91,7 +91,7 @@ FUNC VOID BOOKSTAND_HEILMAGIER_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "So lehrte er ihm die Kunst der Heilmagie. So zog er nun aus, um weitere Magier zu finden, die ihm bei seiner Mission helfen sollten. Die Namen dieser Magier sind nicht bekannt, allerdings gelten sie als die Begründer der Heilmagie."); 
+					Doc_PrintLines	( nDocID,  1, "So he taught him the art of healing magic. So he moved out to find more magicians to help him with his mission. The names of these magicians are not known, but they are considered the founders of healing magic."); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_Show		( nDocID );
@@ -122,12 +122,12 @@ FUNC VOID BOOKSTAND_HEILMAGIER_02_S1()		//Buchständer in der Magierbibliothek
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLines	( nDocID,  0, "Die Heilmagie heute"					);
+					Doc_PrintLines	( nDocID,  0, "The healing magic today"					);
 					Doc_PrintLine	( nDocID,  0, "-------------------"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Zu den Aufgaben der heutigen Heilmagier zählen nach wie vor das Heilen und Stärken der Menschen. Allerdings legt man neben der magischen Heilung auch wert auf Heil- und Stärkungstränke. Auch heute sind die Heilmagier nicht sehr weit verbreitet, sondern nur in kleineren Gruppen zusammengeschlossen.");
+					Doc_PrintLines	( nDocID,  0, "The tasks of today's curative mages still include the healing and strengthening of people. However, in addition to magical healing, one also attaches great importance to healing and refreshment potions. Even today the healing mages are not very widespread, but only in smaller groups.");
 			
 					
 					
@@ -135,7 +135,7 @@ FUNC VOID BOOKSTAND_HEILMAGIER_02_S1()		//Buchständer in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Die meisten Heilmagier sind ehemalige Wassermagier, die Adanos mit nicht kriegerischen Mitteln dienen wollen. Im Gegensatz zu den Wassermagiern versuchen sie nicht die stärkere Seite zu schädigen, sondern die schwächere zu unterstützen."); 
+					Doc_PrintLines	( nDocID,  1, "Most of the healing mages are former water magicians who want to serve Adanos with non warlike means. In contrast to the Water Magicians, they do not try to damage the stronger side, but to support the weaker one."); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_Show		( nDocID );
@@ -167,12 +167,12 @@ FUNC VOID BOOKSTAND_HEILMAGIER_03_S1()		//Buchständer in der Magierbibliothek
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLines	( nDocID,  0, "Das Leben des Heilmagiers"					);
+					Doc_PrintLines	( nDocID,  0, "The Life of the Healing Magician"					);
 					Doc_PrintLine	( nDocID,  0, "-------------------------"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Die Heilmagier sind weniger streng gegliedert, als die anderen Magiezweige. Die Heilmagier kümmern sich im Prinzip nicht um politische Belange. Auch pflegen die Heilmagier kaum Kontakt zu den anderen Magierzweigen, da schon im Buch der Grundregeln der Heilmagie, das von Kamaros verfasst wurde steht:");
+					Doc_PrintLines	( nDocID,  0, "The curative mages are less strictly structured than the other magic branches. In principle, the healing mages do not care about political issues. Also, the healing mages hardly have any contact with the other magic branches, as it is written by Kamaros in the book of basic rules of healing magic:");
 			
 					
 					
@@ -180,7 +180,7 @@ FUNC VOID BOOKSTAND_HEILMAGIER_03_S1()		//Buchständer in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "'So ist es einzig die Pflicht des Magiers der Heilung, nicht in die Auseinadersetzung zwischen den Göttern in größerer Weise einzugreifen, sondern den Benachteiligten Hilfe zu gewährleisten und ihnen Unterstützung gegen ihre Gegner zu sichern, die allerdings nicht kriegerischer Natur sein darf.'"); 
+					Doc_PrintLines	( nDocID,  1, "Thus, it is only the duty of the magician of healing not to intervene in a greater way in the intercession between the gods, but to provide help and support for the disadvantaged, but to ensure that they are supported against their opponents, which must not be of a warlike nature. '"); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_Show		( nDocID );
@@ -212,12 +212,12 @@ FUNC VOID BOOKSTAND_HEILMAGIER_04_S1()		//Buchständer in der Magierbibliothek
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLines	( nDocID,  0, "Verteidigung gegen Angreifer"					);
+					Doc_PrintLines	( nDocID,  0, "Defense against attackers"					);
 					Doc_PrintLine	( nDocID,  0, "-------------------------"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Sollte es doch in eine Situation kommen, in der sich der Heilmagier zur Wehr setzen muss, ist er mit einem magischen Kampfstab ausgerüstet, der den Gegner für längere Zeit einschläfert. Auch kann er Magie verwenden, die den Feind bewusstlos macht oder ihn auf andere Art außer Gefecht setzt. Allerdings verstösst es gegen die Gebote des Heilmagiers seinen Feind zu töten.");
+					Doc_PrintLines	( nDocID,  0, "If a situation should arise in which the healing magician has to defend himself, he is equipped with a magic baton that will sleep the enemy for a long time. He can also use magic to make the enemy unconscious or incapacitate him in other ways. However, it is against the commandments of the Healing Magician to kill his enemy.");
 			
 					
 					
@@ -264,7 +264,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 						Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  	
 	
 						Doc_PrintLine	( nDocID,  0, "");
-						Doc_PrintLines	( nDocID,  0, "...Ich hoffe, dass die Kuppel das Erz vor dem Zugriff Beliars zu schützen vermag. Der König ist einfältig genug zu glauben, dass wir die Kuppel zum Schutz vor Ausbrüchen errichten, doch solange wir mit diesen Ratschlagen unsere höheren Zeile erreichen, soll es uns recht sein. Ich hoffe, das uns genug Zeit bleibt uns auf den Kampf vorzubereiten. Sobald die Kuppel um das Minental erschaffen ist, werde ich mit all meiner mir zur Verfügung stehenden Macht versuchen in den bevorstehenden Kampf einzugreifen. ");
+						Doc_PrintLines	( nDocID,  0, "... I hope that the dome will be able to protect the ore from Beliar's access. The King is simple enough to believe that we are building the dome to protect us from eruptions, but as long as we continue to reach our higher line with these advice, it is all right with us. I hope there will be enough time to prepare for the fight. As soon as the dome around the Minental is created, I will try to intervene in the upcoming battle with all my power. ");
 						Doc_PrintLines	( nDocID,  0, "");
 			
 					
@@ -274,15 +274,15 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 		{	
 			PlayerGetsAmulettOfDeath = TRUE;
 			PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] = TRUE; 
-			B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´Heiliges Geschoss´: 1 geweihtes Wasser, aber keine Spruchrolle");
+			B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune? holy bullet?: 1 consecrated water, but no spell roll");
 			
 			
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "...ich habe, genau nach Anleitung einfach Innos geweihtes Wasser auf einen Runenrohling geträufelt und am Runentisch zusammengeführt. Der Runenstein ist zerstört, ich glaube, dieser Spruch ist wirklich nur dem Einen zugänglich."); 
-						Doc_PrintLines	( nDocID,  1, "Die Heilige Aura Innos habe ich dem Klosterschtz übergeben. Sie wird von nun an, vom Klostervorsteher aufbewahrt, bis zu dem Tag, an dem sich der Eine offenbart."	);
-						Doc_PrintLines	( nDocID,  1, "Die Tränen Innos mögen in dem bevorstehenden Kampf eine Rolle spielen. Doch ist es wohl zu gefährlich sie offen aufzubewahren. Ich werde sie hier in der Bibliothek lassen."	);
+						Doc_PrintLines	( nDocID,  1, "... I have, according to the instructions, simply drizzled Inno's consecrated water onto a rune blank and brought it together at the rune table. The rune stone is destroyed, I think this saying is really only accessible to the One."); 
+						Doc_PrintLines	( nDocID,  1, "I have given Saint Aura Innos to the monastic schtz. From now on, it will be kept by the head of the monastery until the day when the One reveals himself."	);
+						Doc_PrintLines	( nDocID,  1, "May Inno's tears play a role in the upcoming battle. But it's probably too dangerous to keep them open. I'll leave them here in the library."	);
 						Doc_Show		( nDocID );
 						
 						
@@ -294,17 +294,17 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 			PrintScreen	(PRINT_LearnPalTeleportSecret, -1, -1, FONT_Screen, 2);
 			
 			Log_CreateTopic (TOPIC_TalentRunes,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentRunes,"Um eine Rune zu erschaffen, benötige ich für jede Rune unterschiedliche Zutaten. Mit diesen Zutaten und einem Runenrohling kann ich dann die gewünschte Rune am Runentisch erschaffen.");
-			B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´Geheimer Teleport´: 1 Geweihtes Wasser");
+			B_LogEntry (TOPIC_TalentRunes,"To create a rune, I need different ingredients for each rune. With these ingredients and a rune blank I can create the desired rune at the rune table.");
+			B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune - Geheimer Teleport: 1 Consecrated Water");
 			
 			
 		
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Um in den geheimen Ort zu gelangen muss man eine Teleportrune bauen. Dazu benötigst du einen Runenrohling und eine kleines Fläschchen geweihtes Wasser. Mit der erstellten Runen kannst du dich in den Raum teleporteiren."); 
+						Doc_PrintLines	( nDocID,  1, "To get to the secret place you have to build a teleportrune. You will need a rune blank and a small bottle of consecrated water. With the created runes you can teleporteir yourself into the room."); 
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Ich bin nun sehr sicher, dass es die Tränen Innos waren, mit den die Paladine aus der vorderen Zeit, die längst vergessene Hohe Schwertweihe abgehalten haben. Es sollte also möglich sein, mit dem von mir entdeckten Fläschchen eine geweihten Waffe zusaätzliche Kraft zu geben."	);
+						Doc_PrintLines	( nDocID,  1, "I am now very sure that it was with the tears of Inno's tears that the paladins from the early days, the long forgotten high consecration of the sword, held. So it should be possible to give a consecrated weapon extra power with the bottle I discovered."	);
 						Doc_PrintLine	( nDocID,  1, "");
 						Doc_Show		( nDocID );
 		}
@@ -316,20 +316,20 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 			PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 			Npc_SetTalentSkill 	(self, NPC_TALENT_SMITH, 1);
 			Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentSmith,"Um eine Waffe zu schmiede, brauche ich zunächst ein Stück Rohstahl. An einem Schmiedefeuer muss ich den Stahl erhitzen und anschließend an einem Amboss in die gewünschte Form bringen. Für hochwertigere Waffe benötigt man häufig noch Substanzen, welche der Waffe besondere Eigenschaften verleihen.");
-			B_LogEntry (TOPIC_TalentSmith,"Wenn ich 4 Erz und 5 Drachenblut hinzugebe, kann ich mir einen ´ERZ-DRACHENTÖTER´ schmieden.");
-			B_LogEntry (TOPIC_TalentSmith,"Wenn ich 5 Erz und 5 Drachenblut hinzugebe, kann ich mir einen ´GROßEN ERZ-DRACHENTÖTER´ schmieden.");
+			B_LogEntry (TOPIC_TalentSmith,"To forge a gun, I need a piece of crude steel first. I have to heat the steel at a forge and then take it to the desired shape on an anvil. For higher quality weapons you often need substances that give the weapon special properties.");
+			B_LogEntry (TOPIC_TalentSmith,"If I add 4 ore and 5 dragon's blood, I can forge a?ERZ-DRACHENTÖTER? for myself.");
+			B_LogEntry (TOPIC_TalentSmith,"If I add 5 ore and 5 dragon's blood, I can forge a? LARGE ERZ DRAGON KILLER? for myself.");
 			PlayerGetsFinalDJGArmor = TRUE;
 		
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Aus den Waffen des Dracheherren."); 
-						Doc_PrintLines	( nDocID,  1, "´Um einem Panzer aus Drachenschuppen die höchste Härte zu verleihen, so kann man die Schuppen mit dem Erz überzeihen, welches in dem Tal der Insel Karynis gefördert wird."					);
+						Doc_PrintLines	( nDocID,  1, "From the dragonfly's weapons."); 
+						Doc_PrintLines	( nDocID,  1, "In order to give a shell made of dragon scales the highest hardness, the scales can be lined with the ore extracted in the valley of the island of Karynis."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Um eine dem Drachenherren würdige Klinge zu erhalten, muss man die Klinge in Drachenblut tränken. Schon die Beigabe einer Menge von 5 kleinen Phiolen verleiht dem Stahl eine Härte und Schärfe, der nichts entgegen zu setzten ist."					);
+						Doc_PrintLines	( nDocID,  1, "To obtain a blade worthy of the Dragon Lord, you must soak the blade in dragon's blood. The addition of just 5 small vials gives the steel a hardness and sharpness that cannot be opposed."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Anmerkung: Mit Karynis ist zeifelsfrei das heutige Khorinis gemeint.");
+						Doc_PrintLines	( nDocID,  1, "Note: Karynis is the khorinis of today.");
 						Doc_Show		( nDocID );
 		};
 		
@@ -359,15 +359,15 @@ FUNC VOID BOOKSTAND_BLUTKULT_01_S1()		//Buchständer in der Magierbibliothek
 				Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 				Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-				Doc_PrintLines	( nDocID,  0, "Verwendung göttlicher Magie für Zwecke der Beschwörung"					);
+				Doc_PrintLines	( nDocID,  0, "Use of Divine Magic for Summoning Purposes"					);
 				Doc_PrintLine	( nDocID,  0, "-------------------------"					);
 				Doc_PrintLine	( nDocID,  0, ""					);
 				
-				Doc_PrintLines	( nDocID,  0, "Wenn ein Magier lernt die Macht Innos’ oder Adanos’ für sich zu nutzen, so kann er, falls er die Grundlagen der sphärischen Manifestation der Magie Beliars’ beherrscht, Diener erzeugen, die aus dem Element geschaffen sind, für welches die jeweilige Gottheit steht.");
+				Doc_PrintLines	( nDocID,  0, "When a magician learns to use the power of Innos' or Adanos's power for himself, he can, if he masters the basics of the spherical manifestation of Beliar's magic, create servants created from the element for which the particular deity stands.");
 			
 				Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 				Doc_PrintLine	( nDocID,  1, ""					);
-				Doc_PrintLines	( nDocID,  1, "Um eine solche Rune zu kreieren, dient als Grundlage eine herkömmliche Golemrune, welche an einem Runentisch mit dem Herzen eines Eis- oder Feuergolems verbunden wird.");
+				Doc_PrintLines	( nDocID,  1, "In order to create such a rune, a traditional golemrune is used as a basis, which is connected to the heart of an ice or fire golem at a rune table.");
 				Doc_PrintLine	( nDocID,  1, ""					);
 				Doc_PrintLine	( nDocID,  1, ""					);
 				Doc_PrintLine	( nDocID,  1, ""					);
@@ -387,7 +387,7 @@ FUNC VOID BOOKSTAND_BLUTKULT_01_S1()		//Buchständer in der Magierbibliothek
 
 					Rune_Eisgolem = 1;
 
-					PrintScreen	("Gelernt: Erschaffung einer Eisgolemrune", -1, -1, FONT_Screen, 2);
+					PrintScreen	("Learned: Creation of an ice-golemune", -1, -1, FONT_Screen, 2);
 				}
 				else
 				{
@@ -414,15 +414,15 @@ FUNC VOID BOOKSTAND_BLUTKULT_02_S1()		//Buchständer in der Magierbibliothek
 				Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 				Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-				Doc_PrintLines	( nDocID,  0, "Grundlagen der sphärischen Manifestation"					);
+				Doc_PrintLines	( nDocID,  0, "Basics of spherical manifestation"					);
 				Doc_PrintLine	( nDocID,  0, "-------------------------"					);
 				Doc_PrintLine	( nDocID,  0, ""					);
 				
-				Doc_PrintLines	( nDocID,  0, "Der Magier richte seine volle Aufmerksamkeit und Konzentration auf die Materie, die zu einem Geschöpf erstehen soll.");
+				Doc_PrintLines	( nDocID,  0, "The magician directs his full attention and concentration on the matter that is to arise into a creature.");
 			
 				Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 				Doc_PrintLine	( nDocID,  1, ""					);
-				Doc_PrintLines	( nDocID,  1, "Nachdem er kurzzeitig eine geistige Verbindung zu dem entstehenden Geschöpf eingeht und ihm einen Teil seiner magischen Energie zukommen lässt, löst er diese Verbindung wieder, sodass das Wesen ausgestattet mit eigenem Teilwillen, aber doch an seinen Schöpfer gebunden, diesem folgt und ihn im Kampf unterstützt.");
+				Doc_PrintLines	( nDocID,  1, "After he briefly establishes a spiritual connection to the emerging creature and gives him a part of his magical energy, he loosens this connection again, so that the being is endowed with his own partial will, but nevertheless bound to his creator, follows him and supports him in the fight.");
 				Doc_PrintLine	( nDocID,  1, ""					);
 				Doc_PrintLine	( nDocID,  1, ""					);
 				Doc_PrintLine	( nDocID,  1, ""					);
@@ -442,7 +442,7 @@ FUNC VOID BOOKSTAND_BLUTKULT_02_S1()		//Buchständer in der Magierbibliothek
 
 					Spheric_Manifestion = 1;
 
-					PrintScreen	("Gelernt: Spährische Manifestation", -1, -1, FONT_Screen, 2);
+					PrintScreen	("Learned: Spährische Manifestation", -1, -1, FONT_Screen, 2);
 				}
 				else
 				{
@@ -467,7 +467,7 @@ FUNC VOID Use_BookstandXardasRaetselOW_S1()		//Buchständer in der Magierbiblioth
 				Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 				Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-				Doc_PrintLines	( nDocID,  0, "Auch ein Würdiger weiß nicht alles."				);
+				Doc_PrintLines	( nDocID,  0, "Even a worthy man doesn't know everything."				);
 				Doc_Show		( nDocID );
 	};
 };

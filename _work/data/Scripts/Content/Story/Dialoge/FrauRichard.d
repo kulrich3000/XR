@@ -6,7 +6,7 @@ INSTANCE Info_Mod_FrauRichard_Hi (C_INFO)
 	information	= Info_Mod_FrauRichard_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles in Ordnung mit dir?";
+	description	= "Are you all right?";
 };
 
 FUNC INT Info_Mod_FrauRichard_Hi_Condition()
@@ -20,10 +20,10 @@ FUNC INT Info_Mod_FrauRichard_Hi_Condition()
 
 FUNC VOID Info_Mod_FrauRichard_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_FrauRichard_Hi_15_00"); //Alles in Ordnung mit dir?
-	AI_Output(self, hero, "Info_Mod_FrauRichard_Hi_17_01"); //Ja, danke! Was ist passiert?
-	AI_Output(hero, self, "Info_Mod_FrauRichard_Hi_15_02"); //Ich hab diesen Richard und seine Rattenbrut getötet. Du brauchst dir keine Sorgen mehr zu machen.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_Hi_17_03"); //Hast du meinen Mann gesehen? Die Ratten haben ihn und mich entführt.
+	AI_Output(hero, self, "Info_Mod_FrauRichard_Hi_15_00"); //Are you all right?
+	AI_Output(self, hero, "Info_Mod_FrauRichard_Hi_17_01"); //Yes, thank you! What's happening?
+	AI_Output(hero, self, "Info_Mod_FrauRichard_Hi_15_02"); //I killed that Richard and his rat breed. You don't have to worry anymore.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_Hi_17_03"); //Have you seen my husband? The rats kidnapped him and me.
 };
 
 INSTANCE Info_Mod_FrauRichard_Notiz (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_FrauRichard_Notiz (C_INFO)
 	information	= Info_Mod_FrauRichard_Notiz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Tut mir leid, aber bei deinem Mann kam ich leider zu spät.";
+	description	= "I'm sorry, but I was late for your husband.";
 };
 
 FUNC INT Info_Mod_FrauRichard_Notiz_Condition()
@@ -67,7 +67,7 @@ FUNC VOID Info_Mod_FrauRichard_Notiz_Info()
 
 	B_StartOtherRoutine	(self, "CITY");
 
-	B_LogEntry	(TOPIC_MOD_RATTENQUEST,"Ich habe die Frau gefunden und gerettet. Damit sollte die Rattenplage beseitigt sein.");
+	B_LogEntry	(TOPIC_MOD_RATTENQUEST,"I found the woman and saved her. That should put an end to the plague of rats.");
 	B_SetTopicStatus	(TOPIC_MOD_RATTENQUEST, LOG_SUCCESS);
 
 	B_GivePlayerXP	(250);
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_FrauRichard_InDorf (C_INFO)
 	information	= Info_Mod_FrauRichard_InDorf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kommst du zurecht?";
+	description	= "Will you be all right?";
 };
 
 FUNC INT Info_Mod_FrauRichard_InDorf_Condition()
@@ -97,10 +97,10 @@ FUNC INT Info_Mod_FrauRichard_InDorf_Condition()
 
 FUNC VOID Info_Mod_FrauRichard_InDorf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_FrauRichard_InDorf_15_00"); //Kommst du zurecht?
-	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf_17_01"); //Mehr oder weniger. Ich fühle mich nicht so recht wohl hier.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf_17_02"); //Die Menschen - sie sind so kalt wie die Luft.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf_17_03"); //Selbst tagsüber ist das Dorf wie ausgestorben.
+	AI_Output(hero, self, "Info_Mod_FrauRichard_InDorf_15_00"); //Will you be all right?
+	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf_17_01"); //More or less. I'm not really comfortable here.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf_17_02"); //The people - they are as cold as the air.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf_17_03"); //Even during the day the village is extinct.
 };
 
 INSTANCE Info_Mod_FrauRichard_InDorf2 (C_INFO)
@@ -111,7 +111,7 @@ INSTANCE Info_Mod_FrauRichard_InDorf2 (C_INFO)
 	information	= Info_Mod_FrauRichard_InDorf2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso kehrst du dann nicht nach Relendel zurück?";
+	description	= "Then why don't you return to Relendel?";
 };
 
 FUNC INT Info_Mod_FrauRichard_InDorf2_Condition()
@@ -124,9 +124,9 @@ FUNC INT Info_Mod_FrauRichard_InDorf2_Condition()
 
 FUNC VOID Info_Mod_FrauRichard_InDorf2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_FrauRichard_InDorf2_15_00"); //Wieso kehrst du dann nicht nach Relendel zurück?
-	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf2_17_01"); //Ich habe es mir schon oft vorgenommen, aber der Weg hoch zum Steinkreis ist so lang und beschwerlich.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf2_17_02"); //In letzter Zeit gab es auch immer mal wieder Meldungen von einer Räuberbande und vermissten Wanderern.
+	AI_Output(hero, self, "Info_Mod_FrauRichard_InDorf2_15_00"); //Then why don't you return to Relendel?
+	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf2_17_01"); //I've done it many times before, but the way up to the stone circle is so long and arduous.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf2_17_02"); //Recently there have been reports of a band of robbers and missing hikers.
 };
 
 INSTANCE Info_Mod_FrauRichard_InDorf3 (C_INFO)
@@ -137,7 +137,7 @@ INSTANCE Info_Mod_FrauRichard_InDorf3 (C_INFO)
 	information	= Info_Mod_FrauRichard_InDorf3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich könnte dich begleiten.";
+	description	= "I could go with you.";
 };
 
 FUNC INT Info_Mod_FrauRichard_InDorf3_Condition()
@@ -150,13 +150,13 @@ FUNC INT Info_Mod_FrauRichard_InDorf3_Condition()
 
 FUNC VOID Info_Mod_FrauRichard_InDorf3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_FrauRichard_InDorf3_15_00"); //Ich könnte dich begleiten.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf3_17_01"); //(erfreut) In dem Fall würde ich gern zurück nach Relendel.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf3_17_02"); //Meinetwegen können wir sofort aufbrechen, ich habe hier nichts, an dem ich hänge.
+	AI_Output(hero, self, "Info_Mod_FrauRichard_InDorf3_15_00"); //I could go with you.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf3_17_01"); //In that case, I'd like to go back to Relendel.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_InDorf3_17_02"); //Because of me, we can leave right away. I don't have anything to hang on to.
 
 	Log_CreateTopic	(TOPIC_MOD_EIS_GELEIT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EIS_GELEIT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EIS_GELEIT, "Ich habe mich dazu bereit erklärt, die ehemalige Frau Richards zum Teleport beim Steinkreis außerhalb des Dorfes zu begleiten.");
+	B_LogEntry	(TOPIC_MOD_EIS_GELEIT, "I have agreed to accompany the former Mrs. Richards to the teleport at the stone circle outside the village.");
 
 	AI_StopProcessInfos	(self);
 
@@ -184,13 +184,13 @@ FUNC INT Info_Mod_FrauRichard_AtSteinkreis_Condition()
 
 FUNC VOID Info_Mod_FrauRichard_AtSteinkreis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_FrauRichard_AtSteinkreis_17_00"); //Wir scheinen Glück gehabt zu haben. Heute ist keine Menschenseele unterwegs.
-	AI_Output(hero, self, "Info_Mod_FrauRichard_AtSteinkreis_15_01"); //Ich bin gar nicht gewohnt, dass Eskorte-Aufträge so unspektakulär verlaufen. Soll mir aber recht sein.
-	AI_Output(self, hero, "Info_Mod_FrauRichard_AtSteinkreis_17_02"); //Und zum zweiten Mal stehe ich in deiner Schuld. Ich danke dir.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_AtSteinkreis_17_00"); //We seem to have been lucky. There's not a soul on the road today.
+	AI_Output(hero, self, "Info_Mod_FrauRichard_AtSteinkreis_15_01"); //I'm not used to escort orders being so unspectacular. That's fine by me, though.
+	AI_Output(self, hero, "Info_Mod_FrauRichard_AtSteinkreis_17_02"); //And for the second time, I'm in your debt. Thank you, thank you.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_FrauRichard_AtSteinkreis_17_03"); //Komm mich doch mal in Khorata besuchen!
+	AI_Output(self, hero, "Info_Mod_FrauRichard_AtSteinkreis_17_03"); //Come visit me in Khorata sometime!
 
 	B_GivePlayerXP	(150);
 

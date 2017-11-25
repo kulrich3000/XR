@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_16_JOIN(C_INFO)
 	condition	= DIA_VLK_16_JOIN_Condition;
 	information	= DIA_VLK_16_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will Bürger dieser Stadt werden!";
+	description = "I want to be a citizen of this town!";
 };                       
 
 FUNC INT DIA_VLK_16_JOIN_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_VLK_16_JOIN_Condition()
 
 FUNC VOID DIA_VLK_16_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_16_JOIN_15_00"); //Ich will Bürger dieser Stadt werden!
-	AI_Output (self, hero, "DIA_VLK_16_JOIN_16_01"); //Willst du uns helfen, die Stadt gegen die Orks zu verteidigen?
-	AI_Output (self, hero, "DIA_VLK_16_JOIN_16_02"); //Wenn du Bürger von Khorinis bist, kannst du der Miliz beitreten - du solltest mit einer der Stadtwachen reden.
+	AI_Output (hero, self, "DIA_VLK_16_JOIN_15_00"); //I want to be a citizen of this town!
+	AI_Output (self, hero, "DIA_VLK_16_JOIN_16_01"); //You want to help us defend the city against the orcs?
+	AI_Output (self, hero, "DIA_VLK_16_JOIN_16_02"); //If you are a citizen of Khorinis, you can join the militia - you should talk to one of the city guards.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_VLK_16_PEOPLE(C_INFO)
 	condition	= DIA_VLK_16_PEOPLE_Condition;
 	information	= DIA_VLK_16_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer sind die wichtigen Persönlichkeiten dieser Stadt?";
+	description = "Who are the important personalities of this city?";
 };                       
 
 FUNC INT DIA_VLK_16_PEOPLE_Condition()
@@ -67,8 +67,8 @@ FUNC INT DIA_VLK_16_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_16_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_16_PEOPLE_15_00"); //Wer sind die wichtigen Persönlichkeiten dieser Stadt?
-	AI_Output (self, hero, "DIA_VLK_16_PEOPLE_16_01"); //Die Paladine im oberen Viertel.
+	AI_Output (hero, self, "DIA_VLK_16_PEOPLE_15_00"); //Who are the important personalities of this city?
+	AI_Output (self, hero, "DIA_VLK_16_PEOPLE_16_01"); //The paladins in the upper quarter.
 };
 
 INSTANCE Info_VLK_16_Flugblaetter (C_INFO) // E1
@@ -77,7 +77,7 @@ INSTANCE Info_VLK_16_Flugblaetter (C_INFO) // E1
 	condition	= Info_VLK_16_Flugblaetter_Condition;
 	information	= Info_VLK_16_Flugblaetter_Info;
 	permanent	= 1;
-	description = "Ich hab hier ein Flugblatt für dich.";
+	description = "I've got a flyer for you.";
 };                       
 
 FUNC INT Info_VLK_16_Flugblaetter_Condition()
@@ -97,11 +97,11 @@ FUNC VOID Info_VLK_16_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_VLK_16_Flugblaetter_16_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_VLK_16_Flugblaetter_16_01"); //Oh, thank you. Thank you. Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_VLK_16_Flugblaetter_16_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_VLK_16_Flugblaetter_16_02"); //Ah yes. Maybe I'll stop by Matteo's.
 
 	self.aivar[AIV_FLUGBLATTVERTEILT] = 1;
 
@@ -114,7 +114,7 @@ INSTANCE Info_VLK_16_Rangar (C_INFO) // E1
 	condition	= Info_VLK_16_Rangar_Condition;
 	information	= Info_VLK_16_Rangar_Info;
 	permanent	= 0;
-	description = "Wusstest du schon ...";
+	description = "Did you already know...";
 };                       
 
 FUNC INT Info_VLK_16_Rangar_Condition()
@@ -133,14 +133,14 @@ FUNC INT Info_VLK_16_Rangar_Condition()
 
 FUNC VOID Info_VLK_16_Rangar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_VLK_16_Rangar_15_00"); //Wusstest du schon, dass Rangar eine Affäre hat?
-	AI_Output(self, hero, "Info_Mod_VLK_16_Rangar_16_01"); //Echt? Mit wem denn?
-	AI_Output(hero, self, "Info_Mod_VLK_16_Rangar_15_02"); //Mit einem von Bromors Mädchen!
-	AI_Output(self, hero, "Info_Mod_VLK_16_Rangar_16_03"); //Bist du sicher? Das muss ich sofort weitererzählen.
+	AI_Output(hero, self, "Info_Mod_VLK_16_Rangar_15_00"); //Did you know Rangar's having an affair?
+	AI_Output(self, hero, "Info_Mod_VLK_16_Rangar_16_01"); //Really? With who?
+	AI_Output(hero, self, "Info_Mod_VLK_16_Rangar_15_02"); //With one of Bromor's girls!
+	AI_Output(self, hero, "Info_Mod_VLK_16_Rangar_16_03"); //Are you sure about this? I'll have to go on with that right away.
 
 	Mod_DensGeruechtVerbreitet = TRUE;
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Ein Gerücht ist im Umlauf, da wird Den zufrieden sein.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "There's a rumor going around, so Den will be satisfied.");
 };
 
 // *************************************************************************
@@ -152,7 +152,7 @@ INSTANCE DIA_VLK_16_LOCATION(C_INFO)
 	condition	= DIA_VLK_16_LOCATION_Condition;
 	information	= DIA_VLK_16_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was gibt hier Interessantes zu sehen?";
+	description = "What is there to see here?";
 };                       
 
 FUNC INT DIA_VLK_16_LOCATION_Condition()
@@ -162,8 +162,8 @@ FUNC INT DIA_VLK_16_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_16_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_16_LOCATION_15_00"); //Was gibt es hier Interessantes zu sehen?
-	AI_Output (self, hero, "DIA_VLK_16_LOCATION_16_01"); //Auf dem Marktplatz kannst du alle möglichen Waren ansehen.
+	AI_Output (hero, self, "DIA_VLK_16_LOCATION_15_00"); //What is there to see here?
+	AI_Output (self, hero, "DIA_VLK_16_LOCATION_16_01"); //In the marketplace you can see all kinds of goods.
 };
 
 INSTANCE Info_Mod_VLK_16_Pickpocket (C_INFO)

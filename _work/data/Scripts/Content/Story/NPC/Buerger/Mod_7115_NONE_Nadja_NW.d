@@ -1,7 +1,7 @@
 instance Mod_7115_NONE_Nadja_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Nadja";	
+	name 		= "Nadya";	
 	guild 		= GIL_PAL;
 	id 			= 7115;
 	voice 		= 16;

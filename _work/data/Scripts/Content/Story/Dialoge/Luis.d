@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Luis_Hi (C_INFO)
 	information	= Info_Mod_Luis_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dein Freund hat ja eine Laune.";
+	description	= "Your friend's in a mood.";
 };
 
 FUNC INT Info_Mod_Luis_Hi_Condition()
@@ -20,30 +20,30 @@ FUNC INT Info_Mod_Luis_Hi_Condition()
 
 FUNC VOID Info_Mod_Luis_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_00"); //Dein Freund hat ja eine Laune. Scheint so, als würde es euch nicht gefallen, den ganzen Tag hier rum zu sitzen.
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_01"); //Das würde wohl jeden Jäger belasten!
-	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_02"); //Aber das kann man doch ändern. Warum geht ihr nicht vor die Stadt und jagt ein wenig?
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_03"); //Du meinst so wie ein Dutzend anderer Jäger?
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_04"); //Der Konkurrenzkampf vor der Stadt ist nicht mehr auszuhalten und viel bekommt man auch nicht für ein einfaches Fell.
-	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_05"); //Das Eisgebiet ist doch recht groß, irgendwo muss da doch was zu holen sein?
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_06"); //Mein Kumpel Randi hat was ähnliches gesagt, bevor er aufgebrochen ist, und bis heute habe ich nichts mehr von ihm gehört.
-	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_07"); //Was hatte er denn vor?
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_08"); //Er wollte den alten Turm am Eissee als ein Lager für die Nacht nutzen.
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_09"); //Eigentlich keine schlechte Idee, nur wer weiß, was sich nach all den Jahren dort eingenistet hat.
-	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_10"); //Na ja, es könnte ja sein, dass er sich dort eine goldene Nase verdient.
-	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_11"); //Ich glaube, dass ich mir den Turm auch mal ansehen werde.
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_12"); //Wenn du unbedingt auch dort sterben willst, bitte!
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_13"); //Aber du solltest vorher noch bei Keith vorbei schauen. Randi wollte ihn von seiner Idee überzeugen.
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_14"); //Vielleicht hast du ja Glück und sie sind noch nicht aufgebrochen.
-	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_15"); //Hier hast du eine Karte, mit ihr solltest du zu seiner Hütte im Wald gelangen, Viel Erfolg.
+	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_00"); //Your friend's in a mood. Seems like you don't like sitting around here all day.
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_01"); //That would be a burden on any hunter!
+	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_02"); //But you can change that. Why don't you go out of town and hunt a little?
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_03"); //You mean like a dozen other hunters?
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_04"); //The competition in front of the city is unbearable and you can't get much for a simple coat.
+	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_05"); //The ice-area is quite big, there must be something to get?
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_06"); //My buddy Randi said something similar before he left, and I haven't heard from him since.
+	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_07"); //What was he up to?
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_08"); //He wanted to use the old tower on the lake as a camp for the night.
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_09"); //Actually not a bad idea, but who knows what has settled there after all these years.
+	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_10"); //Well, he might be earning a golden nose there.
+	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_11"); //I think I'll have a look at the tower too.
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_12"); //If you want to die there too, please!
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_13"); //But you should check in with Keith first. Randi wanted to convince him of his idea.
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_14"); //Maybe you're lucky and they haven't left yet.
+	AI_Output(self, hero, "Info_Mod_Luis_Hi_06_15"); //Here you have a map, with it you should get to his cabin in the forest, good luck.
 
 	B_GiveInvItems	(self, hero, ItWr_Map_Eisgebiet_Keith, 1);
 
-	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_16"); //Danke. Wenn sie noch Leben, geb ich dir Bescheid.
+	AI_Output(hero, self, "Info_Mod_Luis_Hi_15_16"); //Thanks. If they're alive, I'll let you know.
 
 	Log_CreateTopic	(TOPIC_MOD_EIS_ALTERTURM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EIS_ALTERTURM, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Luis' Freund Randi hat sich auf den Weg zum alten Turm am Eissee gemacht, um sich dort nach neuen Jagdgebieten umzusehen. Seitdem hat Luis nichts mehr von ihm gehört. Er hat mir nun eine Karte gegeben, auf der Keiths Hütte markiert ist. Wenn ich Glück habe, sind Randi und Keith noch dort.");
+	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Luis' friend Randi has made his way to the old tower at the Eissee to look for new hunting grounds. Luis hasn't heard from him since. He has now given me a map of Keith's cabin. If I'm lucky, Randi and Keith are still there.");
 
 	Wld_InsertNpc	(Mod_7569_OUT_Randi_EIS,	"EIS_338");
 
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Luis_Vigonza (C_INFO)
 	information	= Info_Mod_Luis_Vigonza_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe eine schlechte Nachricht für dich, dein Kumpel Randi ist tot.";
+	description	= "I have some bad news for you, your buddy Randi is dead.";
 };
 
 FUNC INT Info_Mod_Luis_Vigonza_Condition()
@@ -74,26 +74,26 @@ FUNC INT Info_Mod_Luis_Vigonza_Condition()
 
 FUNC VOID Info_Mod_Luis_Vigonza_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_00"); //Ich habe eine schlechte Nachricht für dich, dein Kumpel Randi ist tot.
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_01"); //Ich hab es ja befürchtet, allerdings hab ich gehofft, dass ich falsch liege.
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_02"); //Jetzt, wo ich die Gewissheit von seinem Tod habe, mache ich mir noch mehr sorgen um Pilar.
-	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_03"); //Jetzt, wo du es sagst: Wo ist er eigentlich?
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_04"); //Er ist vor kurzem abgehauen, meinte, er hält es hier nicht mehr aus.
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_05"); //Er wollte zu seinem Bruder, er wohnt in der Nähe des Goblinfriedhofes, beim zerfallenen Wachturm.
-	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_06"); //Was zu Teufel ist ein Goblinfriedhof? Ich dachte die Viecher haben nicht mal genug Verstand, den sie wegsaufen könnten. Wie kommen die dann auf die Idee einen Friedhof anzulegen?
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_07"); //Bei den normalen Goblins trifft das auch zu, allerding gab es vor ein paar Jahren einen Dämonenbeschwörer unter ihnen.
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_08"); //Der hat anscheinend den anderen beigebracht einen Friedhof anzulegen.
-	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_09"); //Das klingt für mich aber nicht sehr gut.
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_10"); //Keine Panik, die Goblins haben wir vor langer Zeit in einer Schlacht an einem der Wachtürme besiegt.
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_11"); //Als die Goblins versucht haben ihn einzunehmen haben wir fast den ganzen Klan getötet. Und die paar, die überlebt haben, wollten nur ihre Toten beerdigen.
-	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_12"); //Und der Dämonenbeschwörer?
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_13"); //Ist auch tot. Er hat sogar den größten Grabstein auf dem Friedhof.
-	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_14"); //Wenn du willst zeig ich dir den Friedhof. Ich will sowieso zu Pilar und das liegt auf dem Weg.
-	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_15"); //In Ordnung.
+	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_00"); //I have some bad news for you, your buddy Randi is dead.
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_01"); //I was afraid of it, but I was hoping I was wrong.
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_02"); //Now that I have the certainty of his death, I'm even more worried about Pilar.
+	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_03"); //Now that you're saying it, where is he?
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_04"); //He ran away recently, said he can't stand it here anymore.
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_05"); //He wanted to see his brother, he lives near the Goblin cemetery, near the crumbling watchtower.
+	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_06"); //What the hell is a goblin cemetery? I thought the creatures didn't even have the brains to blow them away. How do they get the idea to build a cemetery?
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_07"); //This also applies to the normal goblins, but a few years ago there was a demon summoner among them.
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_08"); //Apparently, he taught the others to build a cemetery.
+	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_09"); //That doesn't sound very good to me.
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_10"); //Don't panic, we defeated the goblins a long time ago in a battle at one of the watchtowers.
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_11"); //When the goblins tried to take him, we almost killed the entire clan. And the few who survived just wanted to bury their dead.
+	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_12"); //And the demon charmer?
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_13"); //He's dead, too. He even has the biggest tombstone in the cemetery.
+	AI_Output(self, hero, "Info_Mod_Luis_Vigonza_06_14"); //If you want, I'll show you the cemetery. I'm going to Pilar's anyway, and it's on the way.
+	AI_Output(hero, self, "Info_Mod_Luis_Vigonza_15_15"); //All right, all right.
 
 	Log_CreateTopic	(TOPIC_MOD_EIS_FRIEDHOF, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EIS_FRIEDHOF, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Pilar ist bei seinem Bruder in der Nähe eines Goblinfriedhofs. Luis will nach ihm sehen und hat mir angeboten, mir den Weg zum Friedhof zu zeigen.");
+	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Pilar is with his brother near a goblin cemetery. Luis wants to see him and offered to show me the way to the cemetery.");
 
 	self.aivar[AIV_Partymember] = TRUE;
 
@@ -121,8 +121,8 @@ FUNC INT Info_Mod_Luis_AtFriedhof_Condition()
 
 FUNC VOID Info_Mod_Luis_AtFriedhof_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof_06_00"); //So, da wären wir. Ist heute ja nicht viel los hier.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof_06_01"); //Komm mit, ich zeig dir das Grab des Dämonenbeschwörers.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof_06_00"); //Well, here we are. There's not much going on here today.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof_06_01"); //Come with me, I'll show you the demon charmer's grave.
 
 	AI_StopProcessInfos	(self);
 
@@ -150,8 +150,8 @@ FUNC INT Info_Mod_Luis_AtFriedhof2_Condition()
 
 FUNC VOID Info_Mod_Luis_AtFriedhof2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof2_06_00"); //Hier ist es. Schon irgendwie eigenartig, wie ein schlauer Goblin die Goblin-Masse zu so etwas wie dem Bau dieses Friedhofs bewegen kann.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof2_06_01"); //Was war das ... hast du das auch gehört?!
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof2_06_00"); //Here it is here. It's kind of strange how a clever goblin can move the goblin mass to something like the construction of this cemetery.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof2_06_01"); //What was that...? Did you hear that, too?!
 
 	AI_StopProcessInfos	(self);
 
@@ -183,13 +183,13 @@ FUNC INT Info_Mod_Luis_AtFriedhof3_Condition()
 
 FUNC VOID Info_Mod_Luis_AtFriedhof3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof3_06_00"); //Verdammt, die haben mich gerade aber erschreckt. Ich hab die wirklich nicht kommen gehört.
-	AI_Output(hero, self, "Info_Mod_Luis_AtFriedhof3_15_01"); //Vielleicht fanden sie es nicht so toll, das wir auf ihrem Friedhof sind.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof3_06_02"); //Ach und wenn schon. Hier liegen doch sowieso nur Leichen.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof3_06_03"); //Die sollten sich besser um ihre Rübenfelder kümmern, als hier den ganzen Tag rumzulungern.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof3_06_04"); //Lass uns jetzt zur Hütte von Pilars Bruder gehen.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof3_06_00"); //Damn, they just scared me. I really didn't hear them coming.
+	AI_Output(hero, self, "Info_Mod_Luis_AtFriedhof3_15_01"); //Maybe they didn't like it so much that we were in their graveyard.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof3_06_02"); //Oh, and if so. There's only corpses here anyway.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof3_06_03"); //They better take care of their turnip fields than hang around here all day.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof3_06_04"); //Let's go to Pilar's brother's cabin now.
 
-	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Auf dem Friedhof haben uns einige Goblins überrascht. Luis wird mich jetzt noch zu Pilars Bruder führen.");
+	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "At the cemetery we were surprised by some goblins. Luis will lead me to Pilar's brother now.");
 
 	AI_StopProcessInfos	(self);
 
@@ -216,13 +216,13 @@ FUNC INT Info_Mod_Luis_AtFriedhof4_Condition()
 
 FUNC VOID Info_Mod_Luis_AtFriedhof4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof4_06_00"); //Lass mich raten, wir kommen gerade zu spät, oder?
-	AI_Output(hero, self, "Info_Mod_Luis_AtFriedhof4_15_01"); //Sieht so aus. Allerdings vermisse ich den Dämonenbeschwörer. Aus seinem Grab kam kein Skelett.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof4_06_02"); //Mhm ... das könnte heißen, das er vielleicht doch nicht tot ist.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof4_06_03"); //Wir sollten mal den zerfallenen Turm unter die Lupe nehmen. Vielleicht gibt es ja da einen Hinweis auf seinen verbleib.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof4_06_04"); //Ich lass die Wachen hier Posten beziehen, falls doch noch ein paar von denen aus der Erde kommen.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof4_06_00"); //Let me guess, we're just gonna be late, aren't we?
+	AI_Output(hero, self, "Info_Mod_Luis_AtFriedhof4_15_01"); //Looks that way. I do miss the demon charmer, though. No skeleton came out of his grave.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof4_06_02"); //Mhm... which could mean he may not be dead after all.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof4_06_03"); //We should have a look at the crumbling tower. Maybe there's a clue to his whereabouts.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof4_06_04"); //I'll have the guards take positions here, in case some of them come out of the ground.
 
-	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Luis ist mit zwei Wachen am Friedhof angekommen. Die Wachen werden noch ein Weilchen hier bleiben, während wir am Turm nach dem Dämonenbeschwörer sehen werden.");
+	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Luis arrived at the cemetery with two guards. The guards will stay here for a while, while we will see the demon summoner at the tower.");
 
 	AI_StopProcessInfos	(self);
 
@@ -258,12 +258,12 @@ FUNC INT Info_Mod_Luis_AtFriedhof5_Condition()
 
 FUNC VOID Info_Mod_Luis_AtFriedhof5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof5_06_00"); //Wollen wir hoffen, dass es von dem wirklich nur einen gab.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof5_06_01"); //Wenn die alle so stark wären, hätten wir ein ganz schönes Problem.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof5_06_02"); //Ich denke für heute haben die Goblins erst mal genug. Ich geh jetzt zurück in die Taverne.
-	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof5_06_03"); //Ach ja, du sollst dich auch bei Thys melden. Ich glaube er will sich bedanken.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof5_06_00"); //Let's hope there was only one of them.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof5_06_01"); //If they were all that strong, we'd have a hell of a problem.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof5_06_02"); //I think the goblins have had enough for today. I'm going back to the tavern now.
+	AI_Output(self, hero, "Info_Mod_Luis_AtFriedhof5_06_03"); //Oh, yeah, I want you to check in with Thys, too. I think he wants to thank you.
 
-	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "Der Dämonenbeschwörer ist Geschichte und Luis kehrt in die Taverne zurück. Ich soll mich nochmal bei Thys melden.");
+	B_LogEntry	(TOPIC_MOD_EIS_FRIEDHOF, "The demon charmer is history and Luis returns to the tavern. I'm supposed to check in with Thys.");
 
 	AI_StopProcessInfos	(self);
 
@@ -280,7 +280,7 @@ INSTANCE Info_Mod_Luis_Heiltrank (C_INFO)
 	information	= Info_Mod_Luis_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Luis_Heiltrank_Condition()
@@ -299,31 +299,31 @@ FUNC VOID Info_Mod_Luis_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Essenz der Heilung", Info_Mod_Luis_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Essence of Healing", Info_Mod_Luis_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Elixier der Heilung", Info_Mod_Luis_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Elixir of Healing", Info_Mod_Luis_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Extrakt der Heilung", Info_Mod_Luis_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Extract of Healing", Info_Mod_Luis_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Essenz der Heilung", Info_Mod_Luis_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Essence of Healing", Info_Mod_Luis_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Trank der leichten Heilung", Info_Mod_Luis_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Drink of light healing", Info_Mod_Luis_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Leichter Heiltrank", Info_Mod_Luis_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Light healing potion", Info_Mod_Luis_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Luis_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Luis_Heiltrank, "Drink of fast healing", Info_Mod_Luis_Heiltrank_Health_05);
 	};
 };
 

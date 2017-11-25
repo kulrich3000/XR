@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Elsbeth_Hi (C_INFO)
 	information	= Info_Mod_Elsbeth_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Eine Frau in dieser Wildnis! Wie kommt's?";
+	description	= "A woman in this wilderness! How come?";
 };
 
 FUNC INT Info_Mod_Elsbeth_Hi_Condition()
@@ -16,14 +16,14 @@ FUNC INT Info_Mod_Elsbeth_Hi_Condition()
 
 FUNC VOID Info_Mod_Elsbeth_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_00"); //Eine Frau in dieser Wildnis! Wie kommt's?
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_01"); //Ich komme vom Alten Lager. Ich wollte nicht so, wie der Baron wollte.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_02"); //Und dann hat er dich vor die Tür gesetzt.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_03"); //Gewissermaßen. Bin bei den Pennern draußen neben dem Tor gelandet.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_04"); //Irgendwann kam dann dieser Baldur vorbei und hat mich hierher mitgenommen.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_05"); //Bist du froh darüber?
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_06"); //Und ob. Hier wird man als Frau repektiert, obwohl das ruppige Kerle sind.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_07"); //Das ist gut. Bis dann.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_00"); //A woman in this wilderness! How come?
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_01"); //I'm from the Old Camp. I didn't want it the way the Baron wanted it.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_02"); //And then he kicked you out.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_03"); //Kind of. Landed with the bums out by the gate.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_04"); //At some point this Baldur came along and took me here.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_05"); //Are you happy about it?
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_06"); //You bet. This is where they repeat you as a woman, even though they're rough guys.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_07"); //That's good news. See you around.
 };
 
 INSTANCE Info_Mod_Elsbeth_Ambi (C_INFO)
@@ -47,19 +47,19 @@ FUNC INT Info_Mod_Elsbeth_Ambi_Condition()
 
 FUNC VOID Info_Mod_Elsbeth_Ambi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_00"); //Ich sehe, du bist dauernd auf Achse.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_01"); //Ich bin ziemlich neu hier und muss mich noch bewähren. Und die Rennerei bin ich mittlerweile gewöhnt.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_02"); //Und doch bist du immer freundlich, wie mir scheint.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_03"); //Na ja. Ich kann auch anders.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_04"); //Ich finde dich jedenfalls sympatisch. Du darfst mich Beth nennen.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_05"); //Das freut mich, Beth. Vielleicht kann ich dir auch einen Gefallen tun?
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_06"); //Das kannst du. Mir geht das Holz für den Herd aus.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_07"); //Neue Äste könnte ich gebrauchen. So ein Dutzend sollten reichen.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_08"); //Ich bring dir welche. Bis später.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_00"); //I see you're always on the move.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_01"); //I'm pretty new here and I still have to prove myself. And I've gotten used to the running.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_02"); //And yet you're always friendly, it seems to me.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_03"); //Well, well. I can do it differently.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_04"); //Anyway, I find you sympathetic. You may call me Beth.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_05"); //Nice to meet you, Beth. Maybe I can do you a favor?
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_06"); //You can do that. I'm running out of wood for the stove.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_07"); //I could use some new branches. A dozen should do it.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_08"); //I'll bring you some. See you later.
 
 	Log_CreateTopic	(TOPIC_MOD_ELSBETH_HOLZ, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ELSBETH_HOLZ, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ELSBETH_HOLZ, "Elsbeth braucht Äste für ihren Küchenofen. Ich soll so zwölf Stück besorgen.");
+	B_LogEntry	(TOPIC_MOD_ELSBETH_HOLZ, "Elsbeth needs branches for her kitchen stove. I'm supposed to get 12 pieces.");
 };
 
 INSTANCE Info_Mod_Elsbeth_Holz (C_INFO)
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Elsbeth_Holz (C_INFO)
 	information	= Info_Mod_Elsbeth_Holz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier dein Holz.";
+	description	= "I got your wood here.";
 };
 
 FUNC INT Info_Mod_Elsbeth_Holz_Condition()
@@ -84,14 +84,14 @@ FUNC INT Info_Mod_Elsbeth_Holz_Condition()
 
 FUNC VOID Info_Mod_Elsbeth_Holz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_00"); //Ich hab hier dein Holz.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_00"); //I got your wood here.
 
 	B_GiveInvItems	(hero, self, ItMi_Ast, 12);
 
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Holz_17_01"); //Das ist lieb. Danke schön.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_02"); //Gern geschehen, aber ich muss jetzt weiter.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Holz_17_03"); //Dann wünsche ich dir Erfolg bei deinen Aufgaben.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_04"); //Das kann ich immer brauchen. Danke.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Holz_17_01"); //That's sweet. Thank you very much.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_02"); //You're welcome, but I have to leave now.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Holz_17_03"); //Then I wish you success in your tasks.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_04"); //I can always use that. Thanks.
 
 	B_SetTopicStatus	(TOPIC_MOD_ELSBETH_HOLZ, LOG_SUCCESS);
 

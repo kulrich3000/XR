@@ -15,134 +15,134 @@ FUNC INT Info_Mod_Trador_Hi_Condition()
 
 FUNC VOID Info_Mod_Trador_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_08_00"); //Da bist du ja, ich habe zwar nicht mit dir gerechnet, freue mich aber, dass du erscheinst.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_08_00"); //There you are, I didn't count on you, but I'm glad you're here.
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Was willst du von mir?", Info_Mod_Trador_Hi_B);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Wer bist du?", Info_Mod_Trador_Hi_A);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "What do you want from me?", Info_Mod_Trador_Hi_B);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "Who are you?", Info_Mod_Trador_Hi_A);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_B_15_00"); //Was willst du von mir?
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_B_08_01"); //Hältst du es nicht für angebracht, erst einmal etwas von dir zu erzählen?
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_B_15_00"); //What do you want from me?
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_B_08_01"); //Don't you think it's appropriate to tell me something about yourself first?
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Nein.", Info_Mod_Trador_Hi_D);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich bin ...", Info_Mod_Trador_Hi_C);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "No.", Info_Mod_Trador_Hi_D);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I am....", Info_Mod_Trador_Hi_C);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_A()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_A_08_00"); //Ich bin Trador, hohes Mitglied im Kreise der Verwandlungsmagier.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_A_08_01"); //Ich hörte bereits von deinem Kommen, so habe ich mich auf den Weg gemacht.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_A_08_00"); //I am Trador, a high member of the circle of transformation mages.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_A_08_01"); //I've already heard of your coming, so I set off on my way.
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Was willst du von mir?", Info_Mod_Trador_Hi_B);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "What do you want from me?", Info_Mod_Trador_Hi_B);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_D_15_00"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_D_08_01"); //Was habe ich dir getan? Sei doch nicht so störrisch.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_D_15_00"); //No.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_D_08_01"); //What have I done to you? Don't be so stubborn.
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich glaube, ich gehe lieber.", Info_Mod_Trador_Hi_E);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich bin ...", Info_Mod_Trador_Hi_C);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I think I'd better go.", Info_Mod_Trador_Hi_E);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I am....", Info_Mod_Trador_Hi_C);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_C_15_00"); //Ich bin ...
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_C_08_01"); //Mich interessiert nicht, wer du bist, sondern eher, was du hier zu suchen hast.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_C_15_00"); //I am....
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_C_08_01"); //I don't care who you are, but rather what you're doing here.
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich bringe Genn giftige Pflanzen, die hier wachsen.", Info_Mod_Trador_Hi_G);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Warum sollte ich dir das erzählen?", Info_Mod_Trador_Hi_F);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I bring Genn poisonous plants that grow here.", Info_Mod_Trador_Hi_G);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "Why would I tell you that?", Info_Mod_Trador_Hi_F);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_E_15_00"); //Ich glaube, ich gehe lieber.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_E_08_01"); //Warte! Was machst du eigentlich hier?
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_E_15_00"); //I think I'd better go.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_E_08_01"); //Wait! What are you doing here?
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich bringe Genn giftige Pflanzen, die hier wachsen.", Info_Mod_Trador_Hi_G);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Warum sollte ich dir das erzählen?", Info_Mod_Trador_Hi_F);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I bring Genn poisonous plants that grow here.", Info_Mod_Trador_Hi_G);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "Why would I tell you that?", Info_Mod_Trador_Hi_F);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_G()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_G_15_00"); //Ich bringe Genn giftige Pflanzen, die hier wachsen.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_G_08_01"); //Kann ich die Pflanzen mal sehen?
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_G_15_00"); //I bring Genn poisonous plants that grow here.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_G_08_01"); //Can I see the plants?
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Nein, die sind für Genn.", Info_Mod_Trador_Hi_I);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ja, nimm.", Info_Mod_Trador_Hi_H);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "No, these are for Genn.", Info_Mod_Trador_Hi_I);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "Yeah, take it.", Info_Mod_Trador_Hi_H);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_F()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_F_15_00"); //Warum sollte ich dir das erzählen?
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_F_08_01"); //Du kannst mir vertrauen. Ich bin schließlich ein Verwandlungsmagier.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_F_15_00"); //Why would I tell you that?
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_F_08_01"); //You can trust me. I'm a transforming magician, after all.
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Dein Gesicht passt mir aber nicht.", Info_Mod_Trador_Hi_J);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich bringe Genn giftige Pflanzen, die hier wachsen.", Info_Mod_Trador_Hi_G);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I don't like your face.", Info_Mod_Trador_Hi_J);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I bring Genn poisonous plants that grow here.", Info_Mod_Trador_Hi_G);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_J()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_J_15_00"); //Dein Gesicht passt mir aber nicht.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_J_08_01"); //Beurteilst du Menschen immer nach ihrem Aussehen? Komm schon.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_J_15_00"); //I don't like your face.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_J_08_01"); //Do you always judge people by their looks? Come on, come on.
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich denke, ich erzähle es dir nicht.", Info_Mod_Trador_Hi_O);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich bringe Genn giftige Pflanzen, die hier wachsen.", Info_Mod_Trador_Hi_G);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I don't think I'm gonna tell you.", Info_Mod_Trador_Hi_O);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I bring Genn poisonous plants that grow here.", Info_Mod_Trador_Hi_G);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_I()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_I_15_00"); //Nein, die sind für Genn.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_I_08_01"); //Ich bitte dich, für Genn kannst du doch neue Pflanzen suchen.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_I_08_02"); //Ich kann dir diese Kräuter anbieten, sie sehen genauso aus wie die giftigen, sind aber vollkommen harmlos. Die kannst du Genn geben.
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_I_15_03"); //Was habe ich davon?
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_I_08_04"); //Sagen wir – 200 Goldmünzen?
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_I_15_00"); //No, these are for Genn.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_I_08_01"); //I beg you, you can look for new plants for Genn.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_I_08_02"); //I can offer you these herbs, they look exactly like the poisonous ones, but they are completely harmless. You can give this to Genn.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_I_15_03"); //What do I get out of it?
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_I_08_04"); //Shall we say - 200 gold coins?
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
 	Info_AddChoice	(Info_Mod_Trador_Hi, "Okay.", Info_Mod_Trador_Hi_L);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Das reicht nicht.", Info_Mod_Trador_Hi_K);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "That's not good enough.", Info_Mod_Trador_Hi_K);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_T()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_T_15_00"); //Was hat Furt mit der Sache zu tun?
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_T_15_00"); //What's Furt got to do with this?
 
 	if (Mod_VMG_FaiceGifty_Gift == 13)
 	{
-		AI_Output(self, hero, "Info_Mod_Trador_Hi_T_08_01"); //Ich war nicht gerade erfreut, dass er gefasst wurde. Aber ich habe mir schon gedacht, dass du etwas damit zu tun hast. Du hast zu viel herum geschnüffelt.
+		AI_Output(self, hero, "Info_Mod_Trador_Hi_T_08_01"); //I wasn't exactly happy he got caught. But I figured you had something to do with it. You've been snooping around too much.
 
-		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Dadurch, dass ich Furt ausgeliefert habe, ist sein Meister, der sich als Trador vorgestellt hat, auf mich aufmerksam geworden. Er sprach in Rätseln zu mir. Ich denke, ich sollte mit Genn darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "By surrendering Furt, his master, who introduced himself as Trador, became aware of me. He spoke to me in riddles. I think I should talk to Genn about this.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Trador_Hi_T_08_02"); //Nachdem du ihn hast laufen lassen, ist er zu mir gekommen. Das war ziemlich leichtsinnig von dir.
+		AI_Output(self, hero, "Info_Mod_Trador_Hi_T_08_02"); //After you let him go, he came to me. That was pretty reckless of you.
 
-		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Nachdem ich Furt habe laufen lassen, ist er wohl zu seinem Meister gerannt, der sich als Trador vorgestellt hat. Vielleicht war das ein Fehler von mir. Er sprach in Rätseln zu mir. Ich denke, ich sollte mit Genn darüber reden.");
+		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "After I let Furt go, he must have run to his master who introduced himself as Trador. Maybe I made a mistake. He spoke to me in riddles. I think I should talk to Genn about this.");
 	};
 
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_T_08_03"); //Aber du wirst wohl nie erfahren, warum Faice sterben sollte. Adieu!
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_T_08_03"); //But you'll probably never know why Faice should die. Adieu!
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
@@ -154,35 +154,35 @@ FUNC VOID Info_Mod_Trador_Hi_T()
 
 FUNC VOID Info_Mod_Trador_Hi_R()
 {
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_R_08_00"); //Danke, du Trottel! Die Pflanzen siehst du nie wieder! (lacht)
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_R_08_00"); //Thank you, you fool! You'll never see the plants again! (laughs)
 
 	if (Mod_VMG_FaiceGifty_Gift == 13)
 	{
-		AI_Output(self, hero, "Info_Mod_Trador_Hi_R_08_01"); //Das hast du jetzt davon, dass du Furt ausgeliefert hast!
+		AI_Output(self, hero, "Info_Mod_Trador_Hi_R_08_01"); //That's what you get for turning Furt over!
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Trador_Hi_R_08_02"); //Furt hatte Recht, du bist wirklich leichtsinnig!
+		AI_Output(self, hero, "Info_Mod_Trador_Hi_R_08_02"); //Furt was right, you're really reckless!
 	};
 
 	Mod_VMG_Giftpflanzen = 5;
 
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_R_15_03"); //Du mieser Hund!
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_R_15_03"); //You son of a bitch!
 
 	Info_Mod_Trador_Hi_T();
 };
 
 FUNC VOID Info_Mod_Trador_Hi_S()
 {
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_S_08_00"); //Du machst mich noch wahnsinnig!
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_S_08_00"); //You're driving me crazy!
 
 	if (Mod_VMG_FaiceGifty_Gift == 13)
 	{
-		AI_Output(self, hero, "Info_Mod_Trador_Hi_S_08_01"); //Aber ich habe schon erwartet, dass du hartnäckig bist, nachdem du Furt überführt hast.
+		AI_Output(self, hero, "Info_Mod_Trador_Hi_S_08_01"); //But I was expecting you to be persistent after you convicted Furt.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Trador_Hi_S_08_02"); //Aber Furt hat schon erzählt, dass du hartnäckig sein könntest.
+		AI_Output(self, hero, "Info_Mod_Trador_Hi_S_08_02"); //But Furt already told me you might be persistent.
 	};
 
 	Mod_VMG_Giftpflanzen = 6;
@@ -192,7 +192,7 @@ FUNC VOID Info_Mod_Trador_Hi_S()
 
 FUNC VOID Info_Mod_Trador_Hi_H()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_H_15_00"); //Ja, nimm.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_H_15_00"); //Yeah, take it.
 
 	Npc_RemoveInvItems	(hero, ItPl_Mushroom_04, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Mithrida, 1);
@@ -200,7 +200,7 @@ FUNC VOID Info_Mod_Trador_Hi_H()
 	Npc_RemoveInvItems	(hero, ItPl_Ponzola, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Venena, 1);
 
-	B_ShowGivenThings	("Pflanzen gegeben");
+	B_ShowGivenThings	("planting");
 
 	Info_Mod_Trador_Hi_R();
 };
@@ -215,65 +215,65 @@ FUNC VOID Info_Mod_Trador_Hi_L()
 	Npc_RemoveInvItems	(hero, ItPl_Ponzola, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Venena, 1);
 
-	B_ShowGivenThings	("Pflanzen gegeben");
+	B_ShowGivenThings	("planting");
 
 	Info_Mod_Trador_Hi_R();
 };
 
 FUNC VOID Info_Mod_Trador_Hi_K()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_K_15_00"); //Das reicht nicht.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_K_08_01"); //500 – Mein letztes Angebot.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_K_15_00"); //That's not good enough.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_K_08_01"); //500 - My final offer.
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
 	Info_AddChoice	(Info_Mod_Trador_Hi, "Okay.", Info_Mod_Trador_Hi_L);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Das reicht nicht.", Info_Mod_Trador_Hi_M);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "That's not good enough.", Info_Mod_Trador_Hi_M);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_M()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_M_15_00"); //Das reicht nicht.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_M_08_01"); //1000. Und keine Münze mehr!
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_M_15_00"); //That's not good enough.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_M_08_01"); //1000. And no more coins!
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
 	Info_AddChoice	(Info_Mod_Trador_Hi, "Okay.", Info_Mod_Trador_Hi_L);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Hm, mehr wäre nicht schlecht.", Info_Mod_Trador_Hi_N);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "Hm, more wouldn't be bad.", Info_Mod_Trador_Hi_N);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_N()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_N_15_00"); //Hm, mehr wäre nicht schlecht.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_N_15_00"); //Hm, more wouldn't be bad.
 
 	Info_Mod_Trador_Hi_S();
 };
 
 FUNC VOID Info_Mod_Trador_Hi_O()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_O_15_00"); //Ich denke, ich erzähle es dir nicht.
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_O_08_01"); //Warum? Habe ich dir etwas getan? Ich muss das für eine wichtige ... Studie wissen.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_O_15_00"); //I don't think I'm gonna tell you.
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_O_08_01"); //Why? Did I do something to you? I have to do this for an important... study know.
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Was für eine Studie?", Info_Mod_Trador_Hi_P);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich bringe Genn giftige Pflanzen, die hier wachsen.", Info_Mod_Trador_Hi_G);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "What kind of study?", Info_Mod_Trador_Hi_P);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I bring Genn poisonous plants that grow here.", Info_Mod_Trador_Hi_G);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_P()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_P_15_00"); //Was für eine Studie?
-	AI_Output(self, hero, "Info_Mod_Trador_Hi_P_08_01"); //Über die ... Gewohnheiten der anderen Mitglieder, ja.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_P_15_00"); //What kind of study?
+	AI_Output(self, hero, "Info_Mod_Trador_Hi_P_08_01"); //About the... Habits of the other members, yes.
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich glaube dir kein Wort.", Info_Mod_Trador_Hi_Q);
-	Info_AddChoice	(Info_Mod_Trador_Hi, "Ich bringe Genn giftige Pflanzen, die hier wachsen.", Info_Mod_Trador_Hi_G);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I don't believe you.", Info_Mod_Trador_Hi_Q);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I bring Genn poisonous plants that grow here.", Info_Mod_Trador_Hi_G);
 };
 
 FUNC VOID Info_Mod_Trador_Hi_Q()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Hi_Q_15_00"); //Ich glaube dir kein Wort.
+	AI_Output(hero, self, "Info_Mod_Trador_Hi_Q_15_00"); //I don't believe you.
 
 	Info_Mod_Trador_Hi_S();
 };
@@ -298,19 +298,19 @@ FUNC INT Info_Mod_Trador_Teleport_Condition()
 
 FUNC VOID Info_Mod_Trador_Teleport_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trador_Teleport_08_00"); //Was, du hier? Du solltest eigentlich ganz woanders sein!
+	AI_Output(self, hero, "Info_Mod_Trador_Teleport_08_00"); //What, you here? You're supposed to be somewhere else!
 
 	Info_ClearChoices	(Info_Mod_Trador_Teleport);
 
-	Info_AddChoice	(Info_Mod_Trador_Teleport, "Ich bringe dich um!", Info_Mod_Trador_Teleport_B);
-	Info_AddChoice	(Info_Mod_Trador_Teleport, "Was ist hier los?", Info_Mod_Trador_Teleport_A);
+	Info_AddChoice	(Info_Mod_Trador_Teleport, "I'm going to kill you!", Info_Mod_Trador_Teleport_B);
+	Info_AddChoice	(Info_Mod_Trador_Teleport, "What's going on here?", Info_Mod_Trador_Teleport_A);
 };
 
 FUNC VOID Info_Mod_Trador_Teleport_C()
 {
-	AI_Output(self, hero, "Info_Mod_Trador_Teleport_C_08_00"); //(lacht) Du hast keine Chance. Ich werde mir einfach ein paar Golems beschwören und sie auf dich hetzen. In der Zeit kann ich seelenruhig abhauen.
-	AI_Output(hero, self, "Info_Mod_Trador_Teleport_C_15_01"); //So weit lasse ich es nicht kommen.
-	AI_Output(self, hero, "Info_Mod_Trador_Teleport_C_08_02"); //Was willst du denn dagegen tun, hm?
+	AI_Output(self, hero, "Info_Mod_Trador_Teleport_C_08_00"); //(laughs) You don't stand a chance. I'm just gonna summon some golems and set them on you. I can run away calmly in that time.
+	AI_Output(hero, self, "Info_Mod_Trador_Teleport_C_15_01"); //I'm not gonna let it get that far.
+	AI_Output(self, hero, "Info_Mod_Trador_Teleport_C_08_02"); //What are you gonna do about it, huh?
 
 	Info_ClearChoices	(Info_Mod_Trador_Teleport);
 
@@ -319,16 +319,16 @@ FUNC VOID Info_Mod_Trador_Teleport_C()
 
 FUNC VOID Info_Mod_Trador_Teleport_B()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Teleport_B_15_00"); //Ich bringe dich um!
+	AI_Output(hero, self, "Info_Mod_Trador_Teleport_B_15_00"); //I'm going to kill you!
 
 	Info_Mod_Trador_Teleport_C();
 };
 
 FUNC VOID Info_Mod_Trador_Teleport_A()
 {
-	AI_Output(hero, self, "Info_Mod_Trador_Teleport_A_15_00"); //Was ist hier los?
-	AI_Output(self, hero, "Info_Mod_Trador_Teleport_A_08_01"); //Ich habe das Portal beschädigt, damit du in diesem einsamen Tal bei den beiden armen Leuten landest, die schon einmal unsere Pläne durchkreuzen wollten.
-	AI_Output(hero, self, "Info_Mod_Trador_Teleport_A_15_02"); //Du mieses Schwein! Das wirst du büßen!
+	AI_Output(hero, self, "Info_Mod_Trador_Teleport_A_15_00"); //What's going on here?
+	AI_Output(self, hero, "Info_Mod_Trador_Teleport_A_08_01"); //I have damaged the portal so that you end up in this lonely valley with the two poor people who have tried to thwart our plans before.
+	AI_Output(hero, self, "Info_Mod_Trador_Teleport_A_15_02"); //You fucking bastard! You'll pay for this!
 
 	Info_Mod_Trador_Teleport_C();
 };
@@ -353,7 +353,7 @@ FUNC INT Info_Mod_Trador_Buff_Condition()
 
 FUNC VOID Info_Mod_Trador_Buff_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trador_Buff_08_00"); //Was ...? Was soll das werden?
+	AI_Output(self, hero, "Info_Mod_Trador_Buff_08_00"); //What...? What are you trying to do?
 
 	AI_StopProcessInfos	(self);
 };
@@ -378,9 +378,9 @@ FUNC INT Info_Mod_Trador_Setta_Condition()
 
 FUNC VOID Info_Mod_Trador_Setta_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trador_Setta_08_00"); //Arghhh ...
-	AI_Output(hero, self, "Info_Mod_Trador_Setta_15_01"); //Jetzt bekommst du volles Pfund aufs Maul!
-	AI_Output(self, hero, "Info_Mod_Trador_Setta_08_02"); //Kampflos werde ich mich nicht ergeben!
+	AI_Output(self, hero, "Info_Mod_Trador_Setta_08_00"); //arghhhh...
+	AI_Output(hero, self, "Info_Mod_Trador_Setta_15_01"); //Now you'll get a full pound on the mouth!
+	AI_Output(self, hero, "Info_Mod_Trador_Setta_08_02"); //I won't surrender without a fight!
 
 	AI_StopProcessInfos	(self);
 

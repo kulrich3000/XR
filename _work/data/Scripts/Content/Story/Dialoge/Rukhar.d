@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rukhar_Hi (C_INFO)
 	information	= Info_Mod_Rukhar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Rukhar_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Rukhar_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Rukhar_Hi_12_01"); //Ich bin Rukhar.
+	AI_Output(self, hero, "Info_Mod_Rukhar_Hi_12_01"); //I'm Rukhar.
 };
 
 INSTANCE Info_Mod_Rukhar_WacholderDieb (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Rukhar_WacholderDieb (C_INFO)
 	information	= Info_Mod_Rukhar_WacholderDieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe ein paar Fragen zu dem Wachholderdiebstahl bei Coragon!";
+	description	= "I have a few questions about the junior thief at Coragon!";
 };
 
 FUNC INT Info_Mod_Rukhar_WacholderDieb_Condition()
@@ -43,10 +43,10 @@ FUNC INT Info_Mod_Rukhar_WacholderDieb_Condition()
 
 FUNC VOID Info_Mod_Rukhar_WacholderDieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rukhar_WacholderDieb_15_00"); //Ich habe ein paar Fragen zu dem Wachholderdiebstahl bei Coragon!
-	AI_Output(self, hero, "Info_Mod_Rukhar_WacholderDieb_12_01"); //Was? Wer hat dir das gesteckt? Ich hatte keine Wahl!
-	AI_Output(hero, self, "Info_Mod_Rukhar_WacholderDieb_15_02"); //Ist ja schon gut, gib mir einfach den Wacholder.
-	AI_Output(self, hero, "Info_Mod_Rukhar_WacholderDieb_12_03"); //Ich habe ihn nicht mehr. Aber ich gebe dir diese Notiz, sie wird dir helfen.
+	AI_Output(hero, self, "Info_Mod_Rukhar_WacholderDieb_15_00"); //I have a few questions about the junior thief at Coragon!
+	AI_Output(self, hero, "Info_Mod_Rukhar_WacholderDieb_12_01"); //What? Who put this in your pocket? I had no choice!
+	AI_Output(hero, self, "Info_Mod_Rukhar_WacholderDieb_15_02"); //It's all right, just give me the juniper.
+	AI_Output(self, hero, "Info_Mod_Rukhar_WacholderDieb_12_03"); //I don't have it anymore. But I'll give you this note, it will help you.
 
 	B_GiveInvItems	(self, hero, ItWr_Rukhar_Wacholder, 1);
 

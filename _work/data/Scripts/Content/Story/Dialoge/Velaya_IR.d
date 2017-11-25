@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Velaya_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Velaya_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_Hi_17_00"); //(unzufrieden) Ach, so hatte ich mir die große weite Welt aber nicht vorgestellt.
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_Hi_17_01"); //Erinnert mich entfernt an die kalten, feuchten Mauern in welche ich so lange gefangen war.
-	AI_Output(hero, self, "Info_Mod_Velaya_IR_Hi_15_02"); //Naja, wir wollen hier auch nicht allzu lange unsere Zelte aufschlagen.
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_Hi_17_03"); //Ja, machen wir das, wofür wir hierher gekommen sind und dann nichts wie unter den freien Himmel so schnell es geht.
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_Hi_17_00"); //(unhappy) Oh, that's not how I imagined the big wide world.
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_Hi_17_01"); //Reminds me of the cold, damp walls I've been trapped in for so long.
+	AI_Output(hero, self, "Info_Mod_Velaya_IR_Hi_15_02"); //Well, we don't want to pitch our tents here too long.
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_Hi_17_03"); //Yes, let's do what we came here for and then let's go under the open skies as fast as we can.
 };
 
 INSTANCE Info_Mod_Velaya_IR_Hebel (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Velaya_IR_Hebel (C_INFO)
 	information	= Info_Mod_Velaya_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Can you use one lever while I move the other?";
 };
 
 FUNC INT Info_Mod_Velaya_IR_Hebel_Condition()
@@ -46,7 +46,7 @@ FUNC VOID Info_Mod_Velaya_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_Hebel_17_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_Hebel_17_00"); //Of course it is. Maybe if it's going to get us somewhere...
 
 	Mod_IR_Hebel = 1;
 
@@ -75,7 +75,7 @@ FUNC INT Info_Mod_Velaya_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Velaya_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_Ambient01_17_00"); //Nein, langweilig wird einem bei so vielen scheußlichen Viechern wirklich nicht.
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_Ambient01_17_00"); //No, with so many horrible creatures, you really don't get bored.
 
 	AI_StopProcessInfos	(self);
 };
@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Velaya_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Velaya_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Let's get going. Will you escort me to the island?";
 };
 
 FUNC INT Info_Mod_Velaya_IR_GehtLos_Condition()
@@ -107,7 +107,7 @@ FUNC VOID Info_Mod_Velaya_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_GehtLos_17_00"); //Naja, besser als mich hier an Bord zu langweilen ... sonst wäre die Reise ja umsonst gewesen.
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_GehtLos_17_00"); //Well, better than boring me on board here... otherwise the trip would have been free.
 
 	Mod_IR_Dabei += 1;
 
@@ -126,7 +126,7 @@ INSTANCE Info_Mod_Velaya_IR_GehBack (C_INFO)
 	information	= Info_Mod_Velaya_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Go back to the ship.";
 };
 
 FUNC INT Info_Mod_Velaya_IR_GehBack_Condition()
@@ -143,7 +143,7 @@ FUNC VOID Info_Mod_Velaya_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_GehBack_17_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_GehBack_17_00"); //Well, if you need me, you know where to find me.
 
 	Mod_IR_Dabei -= 1;
 
@@ -162,7 +162,7 @@ INSTANCE Info_Mod_Velaya_IR_Lehrer (C_INFO)
 	information	= Info_Mod_Velaya_IR_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Velaya_IR_Lehrer_Condition()
@@ -178,8 +178,8 @@ FUNC VOID Info_Mod_Velaya_IR_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_Lehrer_17_01"); //Klar, ich trage den Bogen nicht zum Spaß um meine Schulter und den Degen an der Seite.
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_Lehrer_17_02"); //Ich kann dir zeigen, wie du geschickter wirst und den Bogen richtig spannst.
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_Lehrer_17_01"); //Sure, I don't wear the bow for fun around my shoulder and the epee at the side.
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_Lehrer_17_02"); //I can show you how to become more skillful and how to pull the bow properly.
 };
 
 INSTANCE Info_Mod_Velaya_IR_Lernen_Bogen (C_INFO)
@@ -190,7 +190,7 @@ INSTANCE Info_Mod_Velaya_IR_Lernen_Bogen (C_INFO)
 	information	= Info_Mod_Velaya_IR_Lernen_Bogen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Bogenschießen bei.";
+	description	= "Teach me archery.";
 };
 
 FUNC INT Info_Mod_Velaya_IR_Lernen_Bogen_Condition()
@@ -205,11 +205,11 @@ FUNC INT Info_Mod_Velaya_IR_Lernen_Bogen_Condition()
 
 FUNC VOID Info_Mod_Velaya_IR_Lernen_Bogen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_IR_Lernen_Bogen_15_00"); //Bring mir Bogenschießen bei.
+	AI_Output(hero, self, "Info_Mod_Velaya_IR_Lernen_Bogen_15_00"); //Teach me archery.
 
 	Info_ClearChoices	(Info_Mod_Velaya_IR_Lernen_Bogen);
 	
-	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, "Zurück.", Info_Mod_Velaya_IR_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, "Back off.", Info_Mod_Velaya_IR_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Velaya_IR_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Velaya_IR_Lernen_Bogen_1);
 };
@@ -225,7 +225,7 @@ FUNC VOID Info_Mod_Velaya_IR_Lernen_Bogen_5()
 
 	Info_ClearChoices	(Info_Mod_Velaya_IR_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, "Zurück.", Info_Mod_Velaya_IR_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, "Back off.", Info_Mod_Velaya_IR_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Velaya_IR_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Velaya_IR_Lernen_Bogen_1);
 };
@@ -236,7 +236,7 @@ FUNC VOID Info_Mod_Velaya_IR_Lernen_Bogen_1()
 
 	Info_ClearChoices	(Info_Mod_Velaya_IR_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, "Zurück.", Info_Mod_Velaya_IR_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, "Back off.", Info_Mod_Velaya_IR_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Velaya_IR_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Velaya_IR_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Velaya_IR_Lernen_Bogen_1);
 };
@@ -249,7 +249,7 @@ INSTANCE Info_Mod_Velaya_IR_Lernen_DEX (C_INFO)
 	information	= Info_Mod_Velaya_IR_Lernen_DEX_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeig mir, wie ich geschickter werden kann.";
+	description	= "Show me how to be more skillful.";
 };
 
 FUNC INT Info_Mod_Velaya_IR_Lernen_DEX_Condition()
@@ -262,8 +262,8 @@ FUNC INT Info_Mod_Velaya_IR_Lernen_DEX_Condition()
 
 FUNC VOID Info_Mod_Velaya_IR_Lernen_DEX_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Velaya_IR_Lernen_DEX_15_00"); //Zeig mir, wie ich geschickter werden kann.
-	AI_Output(self, hero, "Info_Mod_Velaya_IR_Lernen_DEX_16_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Velaya_IR_Lernen_DEX_15_00"); //Show me how to be more skillful.
+	AI_Output(self, hero, "Info_Mod_Velaya_IR_Lernen_DEX_16_01"); //What do you want to learn?
 
 	Info_ClearChoices	(Info_Mod_Velaya_IR_Lernen_DEX);
 
@@ -307,7 +307,7 @@ INSTANCE Info_Mod_Velaya_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Velaya_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Velaya_IR_Heiltrank_Condition()
@@ -327,31 +327,31 @@ FUNC VOID Info_Mod_Velaya_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Velaya_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Essence of Healing", Info_Mod_Velaya_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Velaya_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Elixir of Healing", Info_Mod_Velaya_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Velaya_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Extract of Healing", Info_Mod_Velaya_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Velaya_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Essence of Healing", Info_Mod_Velaya_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Velaya_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Drink of light healing", Info_Mod_Velaya_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Velaya_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Light healing potion", Info_Mod_Velaya_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Velaya_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Velaya_IR_Heiltrank, "Drink of fast healing", Info_Mod_Velaya_IR_Heiltrank_Health_05);
 	};
 };
 

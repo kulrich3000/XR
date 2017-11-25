@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Zeki_Hi (C_INFO)
 	information	= Info_Mod_Zeki_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Zeki_Hi_Condition()
@@ -18,12 +18,12 @@ FUNC VOID Info_Mod_Zeki_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_00"); //Mein Name ist Zeki. Ich gehöre zu diesem traurigen Verein von Gaunern.
-	AI_Output(hero, self, "Info_Mod_Zeki_Hi_15_01"); //Wieso trauriger Verein?
-	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_02"); //Sieh dich doch mal um. Würdest du dich wohl fühlen, wenn du nie die Chance bekommst, einen höheren Rang ergreifen?
-	AI_Output(hero, self, "Info_Mod_Zeki_Hi_15_03"); //Das wäre nicht toll. Heißt das, ihr könnt NICHT innerhalb der Gilde auftsiegen?
-	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_04"); //Nein, nicht alle. Manche, wie ich, werden dazu verdonnert als Gauner geringere Dienste, wie zum Beispiel das Jagen, auszuüben.
-	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_05"); //Was willst du eigentlich von mir?
+	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_00"); //My name is Zeki. I'm with this sad club of crooks.
+	AI_Output(hero, self, "Info_Mod_Zeki_Hi_15_01"); //Why sad club?
+	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_02"); //Take a look around. Would you feel comfortable if you never get the chance to take a higher rank?
+	AI_Output(hero, self, "Info_Mod_Zeki_Hi_15_03"); //That wouldn't be great. Does that mean you can't win within the guild?
+	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_04"); //No, not all of them. Some, like me, are condemned as crooks to perform lesser services, such as hunting.
+	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_05"); //What do you want from me?
 };
 
 INSTANCE Info_Mod_Zeki_Aufgabe (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Zeki_Aufgabe (C_INFO)
 	information	= Info_Mod_Zeki_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte mich euch anschließen.";
+	description	= "I'd like to join you.";
 };
 
 FUNC INT Info_Mod_Zeki_Aufgabe_Condition()
@@ -48,25 +48,25 @@ FUNC INT Info_Mod_Zeki_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Zeki_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_00"); //Ich möchte mich euch anschließen. Shakir sagte mir, dass ich euch Gauner dafür überzeugen muss.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_01"); //Und wieder einer, der sich in den Mist hier reiten will und ...
-	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_02"); //Hast du keine Aufgabe für mich?
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_03"); //Doch ich habe da etwas zu tun.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_04"); //Ich spiele leidenschaftlich gerne Laute, aber ich Trottel habe meine alte Laute versehentlich auf den Boden fallen lassen, so dass diese zerbrochen ist.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_05"); //Ich würde gerne eine neue haben, aber ich habe keine Zeit in die Stadt zu gehen und mir eine Anfertigen zu lassen.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_06"); //Bitte geh' für mich zu Thorben, einem der Handwerksmeister.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_07"); //Sage ihm, dass du eine neue Laute haben möchtest.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_08"); //Hier sind 250 Goldmünzen, damit du ihn bezahlen kannst.
+	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_00"); //I'd like to join you. Shakir told me I needed to convince you crooks.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_01"); //And another one who wants to ride himself into the crap here and....
+	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_02"); //Don't you have a job for me?
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_03"); //But I have something to do.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_04"); //I love to play lute, but I've accidentally dropped my old lute on the floor so that it's broken.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_05"); //I'd like to have a new one, but I don't have time to go into town and get one.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_06"); //Please go to Thorben, one of the master craftsmen for me.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_07"); //Tell him you want a new lute.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_08"); //There are 250 gold coins here so you can pay him.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_09"); //Wenn du die Laute hast werde ich dir meine Stimme geben.
-	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_10"); //Alles Klar, dann werde ich Thorben gleich aufsuchen.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_11"); //Vielen dank, ich werde hier auf dich warten.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_09"); //When you have the sounds, I will give you my vote.
+	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_10"); //All right, then I'll see Thorben right away.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_11"); //Thank you so much, I'll wait for you here.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_ZEKI_LAUTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_ZEKI_LAUTE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "Der Gauner Zeki ist ein sehr pessimistischer Mensch. Er spielt sehr gerne Laute, um sich bei Laune zu halten, doch hat er sein altes Instrument versehentlich zerbrochen und bläst seit dem nur Trübsal. Da er keine Zeit hat beim Handwerksmeister Thorben eine neue Laute bauen zu lassen, soll ich zu ihm gehen und diesen Job übernehmen. Wenn ich das erledigt habe, winkt mir vielleicht eine Belohnung und eine Stimme für die Aufnahme bei den Gaunern.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "The crook Zeki is a very pessimistic man. He loves to play the lute to keep himself in good spirits, but he has accidentally broken his old instrument and has only been moping ever since. Since he doesn't have time to let the master craftsman Thorben build a new lute, I shall go to him and take over this job. When I've done that, maybe there'll be a reward and a vote for the rogues to pick me up.");
 };
 
 INSTANCE Info_Mod_Zeki_Laute (C_INFO)
@@ -77,7 +77,7 @@ INSTANCE Info_Mod_Zeki_Laute (C_INFO)
 	information	= Info_Mod_Zeki_Laute_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist deine neue Laute.";
+	description	= "Here's your new lute.";
 };
 
 FUNC INT Info_Mod_Zeki_Laute_Condition()
@@ -91,20 +91,20 @@ FUNC INT Info_Mod_Zeki_Laute_Condition()
 
 FUNC VOID Info_Mod_Zeki_Laute_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_00"); //Hier ist deine neue Laute.
+	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_00"); //Here's your new lute.
 
 	B_GiveInvItems	(hero, self, ItMi_Lute_Zeki, 1);
 
-	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_01"); //(erfreut) Danke, ich bin dir nun etwas schuldig.
-	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_02"); //Wie wäre es mit deiner Stimme für die Aufnahme bei euch?
-	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_03"); //Ja, wie versprochen bekommst du sie.
-	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_04"); //Wenn Shakir nach dir fragt, werde ich ihm nur das Beste über dich berichten.
-	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_05"); //Danke, das wollte ich hören.
-	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_06"); //Nun werde ich mich wieder völlig dem Lautenspiel widmen können.
+	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_01"); //Thank you, I owe you something now.
+	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_02"); //How about your voice for the recording?
+	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_03"); //Yeah, like I promised, you'll get it.
+	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_04"); //If Shakir asks for you, I'll tell him only the best about you.
+	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_05"); //Thanks, that's what I wanted to hear.
+	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_06"); //Now I will be able to dedicate myself completely to the lute playing again.
 
 	B_GivePlayerXP	(150);
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "Ich habe Zeki seine neue Laute gebracht und er war sehr glücklich darüber. Nun ist mir eine Stimme für die Aufnahme sicher und ich kann mich nun weiteren Dingen widmen.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "I brought Zeki his new lute and he was very happy about it. Now I have a voice for the recording and I can now devote myself to more things.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_ZEKI_LAUTE, LOG_SUCCESS);
 };
 

@@ -14,7 +14,7 @@ INSTANCE Info_ReisBau_9_EXIT(C_INFO)
 	condition	= Info_ReisBau_9_EXIT_Condition;
 	information	= Info_ReisBau_9_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_ReisBau_9_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_ReisBau_9_WichtigePersonen(C_INFO)
 	condition	= Info_ReisBau_9_WichtigePersonen_Condition;
 	information	= Info_ReisBau_9_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer kümmert sich darum, daß hier auf den Feldern alles glatt geht?";
+	description = "Who's going to make sure everything goes smoothly in the fields?";
 };                       
 
 FUNC INT Info_ReisBau_9_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_ReisBau_9_WichtigePersonen_Condition()
 
 FUNC VOID Info_ReisBau_9_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_9_WichtigePersonen_15_00"); //Wer kümmert sich darum, dass hier auf den Feldern alles glatt geht?
-	AI_Output(self,hero,"Info_ReisBau_9_WichtigePersonen_09_01"); //Na, wir alle! Der Reislord überwacht zwar alles, aber ich glaube, er sitzt den ganzen Tag in seinem Bunker und zählt die Säcke.
-	AI_Output(self,hero,"Info_ReisBau_9_WichtigePersonen_09_02"); //Na, immerhin hat er zusammen mit Homer die ganze Anlage hier gebaut ...
+	AI_Output(hero,self,"Info_ReisBau_9_WichtigePersonen_15_00"); //Who's going to make sure everything goes smoothly in the fields?
+	AI_Output(self,hero,"Info_ReisBau_9_WichtigePersonen_09_01"); //All of us! The rice lord does monitor everything, but I think he sits in his bunker all day long and counts the bags.
+	AI_Output(self,hero,"Info_ReisBau_9_WichtigePersonen_09_02"); //Well, after all, together with Homer he built the whole complex here...
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_ReisBau_9_DieLage(C_INFO) // E1
 	condition	= Info_ReisBau_9_DieLage_Condition;
 	information	= Info_ReisBau_9_DieLage_Info;
 	permanent	= 1;
-	description = "Wie steht's?";
+	description = "What's the score?";
 };                       
 
 FUNC INT Info_ReisBau_9_DieLage_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_ReisBau_9_DieLage_Condition()
 
 FUNC VOID Info_ReisBau_9_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_9_DieLage_15_00"); //Wie steht's?
-	AI_Output(self,hero,"Info_ReisBau_9_DieLage_09_01"); //Wir arbeiten uns den Arsch ab, damit hier alle was zu futtern kriegen!
+	AI_Output(hero,self,"Info_ReisBau_9_DieLage_15_00"); //What's the score?
+	AI_Output(self,hero,"Info_ReisBau_9_DieLage_09_01"); //We're working our asses off so everybody can get a bite to eat!
 };
 
 INSTANCE Info_Mod_ReisBau_9_Pickpocket (C_INFO)

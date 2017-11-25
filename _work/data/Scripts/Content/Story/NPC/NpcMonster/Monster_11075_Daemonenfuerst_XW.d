@@ -1,7 +1,7 @@
 INSTANCE Monster_11075_Daemonenfuerst_XW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenfürst";	
+	name 		= "demon prince";	
 	guild 		= GIL_DEMON;
 	id 			= 11075;
 	voice 		= 20;

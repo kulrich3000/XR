@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Roka_Hi (C_INFO)
 	information	= Info_Mod_Roka_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Roka_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Roka_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Roka_Hi_11_01"); //Ich bin Roka. Ich verkaufe den Wasserkriegern Rüstungen.
+	AI_Output(self, hero, "Info_Mod_Roka_Hi_11_01"); //I'm Roka. I sell armor to the Water Warriors.
 };
 
 INSTANCE Info_Mod_Roka_Ruestung (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Roka_Ruestung (C_INFO)
 	information	= Info_Mod_Roka_Ruestung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir eine bessere Rüstung bekommen?";
+	description	= "Can I get better armor from you?";
 };
 
 FUNC INT Info_Mod_Roka_Ruestung_Condition()
@@ -44,19 +44,19 @@ FUNC INT Info_Mod_Roka_Ruestung_Condition()
 
 FUNC VOID Info_Mod_Roka_Ruestung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Roka_Ruestung_15_00"); //Kann ich bei dir eine bessere Rüstung bekommen?
+	AI_Output(hero, self, "Info_Mod_Roka_Ruestung_15_00"); //Can I get better armor from you?
 
 	if (Kapitel > 3)
 	&& (Mod_ZweiteVerbesserung == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Roka_Ruestung_11_03"); //Ich hab gehört, dass beim Weg zur Stadt von hier aus ein Wasserläufer sein soll. Mit dessen Fell könnte ich deine Wasserkriegerrüstung sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Roka_Ruestung_11_03"); //I hear there's supposed to be a sandpiper on the way to town. With his fur, I could certainly improve your water-warfare armor a little bit.
 	
 		Mod_ZweiteVerbesserung = TRUE;
 	
 		Wld_InsertNpc	(Wasserlaeufer,	"FP_MAGICGOLEM");
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Auf dem Weg zur Ausgrabungsstätte der Wassermagier soll sich ein Wasserläufer befinden, mit dessen Fell Roka meine Wasserkriegerrüstung verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "On the way to the water magician's excavation site there is a water stranger, whose fur Roka can use to improve my water warrior armor.");
 	};
 
 	Info_ClearChoices	(Info_Mod_Roka_Ruestung);
@@ -65,7 +65,7 @@ FUNC VOID Info_Mod_Roka_Ruestung_Info()
 	if (Mod_ZweiteVerbesserung == TRUE)
 	&& (Mod_Gilde == 17)
 	{
-		Info_AddChoice	(Info_Mod_Roka_Ruestung, "Wasserkriegerrüstung verbessern", Info_Mod_Roka_Ruestung_WKR_S);
+		Info_AddChoice	(Info_Mod_Roka_Ruestung, "Improving water warfare equipment", Info_Mod_Roka_Ruestung_WKR_S);
 	};
 };
 
@@ -76,12 +76,12 @@ FUNC VOID Info_Mod_Roka_Ruestung_BACK ()
 
 FUNC VOID Info_Mod_Roka_Ruestung_WKR_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Roka_Ruestung_WKR_S_15_00"); //Verbessere meine Wasserkriegerrüstung.
+	AI_Output(hero, self, "Info_Mod_Roka_Ruestung_WKR_S_15_00"); //Improve my water warfare.
 
 	if (Npc_HasItems(hero, ItAt_WaterShadowFur) == 1)
 	&& (Npc_HasItems(hero, ItAr_WKR_H) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Roka_Ruestung_WKR_S_11_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Roka_Ruestung_WKR_S_11_01"); //All clear.
 
 		Npc_RemoveInvItems	(hero, ItAt_WaterShadowFur, 1);
 		
@@ -100,11 +100,11 @@ FUNC VOID Info_Mod_Roka_Ruestung_WKR_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_WKR_H) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Roka_Ruestung_WKR_S_11_02"); //Du musst schon eine Wasserkriegerrüstung haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Roka_Ruestung_WKR_S_11_02"); //You must have water warfare equipment, or I won't be able to fix it for you.
 	}
 	else if (Npc_HasItems(hero, ItAt_WaterShadowFur) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Roka_Ruestung_WKR_S_11_03"); //Wenn du nicht das Wasserläuferfell hast, kann ich deine Rüstung nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Roka_Ruestung_WKR_S_11_03"); //If you don't have the bouncing coat, I can't improve your armor.
 	};
 
 	Info_ClearChoices	(Info_Mod_Roka_Ruestung);

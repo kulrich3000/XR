@@ -1,7 +1,7 @@
 INSTANCE Mod_7702_OUT_Moechtegern_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Möchtegern"; 
+	name 		= "wannabe"; 
 	guild 		= GIL_DMT;
 	id 			= 7702;
 	voice 		= 4;

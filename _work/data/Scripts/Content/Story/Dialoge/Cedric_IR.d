@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Cedric_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Cedric_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_00"); //Welch ein finsterer, abscheulicher Ort. Hier scheint Innos ferner, als sonst irgendwo auf der Welt.
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_01"); //Es ist unsere Aufgabe, als seine Stellvertreter die Insel  zu betreten und alle unheilige Brut für immer von diesem gottverlassenen Ort zu bannen.
-	AI_Output(hero, self, "Info_Mod_Cedric_IR_Hi_15_02"); //Ja, mal schauen, wer mitkommt. Ich glaube nicht, dass ein paar kampferprobte Gefährten zur Begleitung verfehlt wären.
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_03"); //Ich werde hier bleiben und über das Schiff wachen.
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_04"); //Zur Seite werden dir drei kampferprobte Paladine stehen, und Milten, wenn es dein Wunsch ist.
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_00"); //What a dark, despicable place. Here Innos seems farther away than anywhere else in the world.
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_01"); //It is our task, as his deputies, to enter the island and banish all unholy brood forever from this godforsaken place.
+	AI_Output(hero, self, "Info_Mod_Cedric_IR_Hi_15_02"); //Yeah, let's see who's coming. I don't think a few battle-hardened companions would be missed for escort.
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_03"); //I'll stay here and watch over the ship.
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_04"); //There will be three battle-hardened paladins at your side, and Milten if you wish.
 
 	if (Mod_DiegoDabei > 0)
 	|| (Mod_LesterDabei > 0)
@@ -29,15 +29,15 @@ FUNC VOID Info_Mod_Cedric_IR_Hi_Info()
 	|| (Mod_EthanDabei > 0)
 	|| (Mod_RandolphDabei > 0)
 	{
-		AI_Output(hero, self, "Info_Mod_Cedric_IR_Hi_15_05"); //Und was ist dem den anderen an Bord?
-		AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_06"); //Ich sagte bereits, es entspricht Innos Willen, dass seine Diener dieses Eiland seinem Segen zuführen.
-		AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_07"); //Niemand anders besitzt den nötigen Glauben und die Stärke.
-		AI_Output(hero, self, "Info_Mod_Cedric_IR_Hi_15_08"); //Aber ...
-		AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_09"); //(energisch) Ich diskutiere nicht darüber.
-		AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_10"); //Nimm die Streiter, die dir zur Seite gestellt wurden und tue das, wofür du herkamst.
+		AI_Output(hero, self, "Info_Mod_Cedric_IR_Hi_15_05"); //And what about the others on board?
+		AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_06"); //I have already said that it is Inno's will that his servants bring this island to his blessing.
+		AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_07"); //No one else has the necessary faith and strength.
+		AI_Output(hero, self, "Info_Mod_Cedric_IR_Hi_15_08"); //But...
+		AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_09"); //I'm not arguing about it.
+		AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_10"); //Take the fighters you've been put on your side and do what you came here for.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_11"); //Was bei Innos ...?!
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Hi_12_11"); //What about Innos...?!
 
 	AI_StopProcessInfos	(self);
 
@@ -74,13 +74,13 @@ FUNC INT Info_Mod_Cedric_IR_Argez_Condition()
 
 FUNC VOID Info_Mod_Cedric_IR_Argez_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_00"); //(außer sich) Dieser Mann erdreistet sich als Blinder Passagier auf das königliche Schiff zu kommen?!
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_01"); //Ein Schiff der Paladine, dass in heiliger Mission unterwegs ist?!
-	AI_Output(hero, self, "Info_Mod_Cedric_IR_Argez_15_02"); //Reg dich nicht auf, er steht auf unserer Seite ...
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_03"); //Achja, wieso sollte ich das annehmen?
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_04"); //Er könnte ein Spion des Feindes sein, der sich auf unser Schiff eingeschlichen hat, unsere heilige Mission zu sabotieren.
-	AI_Output(hero, self, "Info_Mod_Cedric_IR_Argez_15_05"); //Nein, er stand mir und den Magiern bereits hilfreich mit Rat und Tat zur Seite. Wir können ihm vertrauen.
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_06"); //(etwas ruhiger) Wer weiß ... Nun gut, aber ich werde ihn dennoch nicht aus den Augen lassen ... und jetzt geh deiner Aufgabe nach!
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_00"); //This man dares to enter the royal ship as a stowaway passenger?!
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_01"); //A Paladin ship on a holy mission?!
+	AI_Output(hero, self, "Info_Mod_Cedric_IR_Argez_15_02"); //Don't be upset, he's on our side....
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_03"); //Oh, why would I accept that?
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_04"); //He could be a spy of the enemy who snuck on our ship to sabotage our sacred mission.
+	AI_Output(hero, self, "Info_Mod_Cedric_IR_Argez_15_05"); //No, he already helped me and the magicians with help and advice. We can trust him.
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Argez_12_06"); //(slightly calmer) Who knows... All right, but I won't let him out of my sight... and now do your job!
 
 	AI_StopProcessInfos	(self);
 };
@@ -105,11 +105,11 @@ FUNC INT Info_Mod_Cedric_IR_Fertig_Condition()
 
 FUNC VOID Info_Mod_Cedric_IR_Fertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Fertig_12_00"); //Hey, ich habe gehört, dass du alles erledigt hast.
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Fertig_12_01"); //Für Glückwünsche gibt es ja während der Fahrt noch genug Zeit.
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Fertig_12_02"); //Können wir dann endlich wieder in See stechen?
-	AI_Output(hero, self, "Info_Mod_Cedric_IR_Fertig_15_03"); //Ja, ich wüsste keinen Grund warum nicht.
-	AI_Output(self, hero, "Info_Mod_Cedric_IR_Fertig_12_04"); //Gut, hier ist der Schlüssel für die Kajüte, hau dich ein wenig aufs Ohr, während ich die Segel setze.
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Fertig_12_00"); //Hey, I heard you got it all taken care of.
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Fertig_12_01"); //There is still plenty of time for congratulations during the trip.
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Fertig_12_02"); //Can we finally put to sea again?
+	AI_Output(hero, self, "Info_Mod_Cedric_IR_Fertig_15_03"); //Yeah, I wouldn't know why not.
+	AI_Output(self, hero, "Info_Mod_Cedric_IR_Fertig_12_04"); //All right, here's the key to the cabin, hit the stern a little bit while I'm setting the sails.
 
 	B_GiveInvItems	(self, hero, ItKe_Irdorath, 1);
 };

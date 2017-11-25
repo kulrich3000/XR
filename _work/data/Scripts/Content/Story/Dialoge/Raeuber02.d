@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Raeuber02_Hi (C_INFO)
 	information	= Info_Mod_Raeuber02_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht's?";
+	description	= "How are you doing?";
 };
 
 FUNC INT Info_Mod_Raeuber02_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Raeuber02_Hi_Condition()
 
 FUNC VOID Info_Mod_Raeuber02_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raeuber02_Hi_15_00"); //Wie geht's?
-	AI_Output(self, hero, "Info_Mod_Raeuber02_Hi_06_01"); //Verpiss dich bloß.
+	AI_Output(hero, self, "Info_Mod_Raeuber02_Hi_15_00"); //How are you doing?
+	AI_Output(self, hero, "Info_Mod_Raeuber02_Hi_06_01"); //Get the fuck out of here.
 };
 
 INSTANCE Info_Mod_Raeuber02_Frauenkleider (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Raeuber02_Frauenkleider (C_INFO)
 	information	= Info_Mod_Raeuber02_Frauenkleider_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du schon Melvins Kleider gesehen?";
+	description	= "Have you seen Melvin's clothes?";
 };
 
 FUNC INT Info_Mod_Raeuber02_Frauenkleider_Condition()
@@ -42,10 +42,10 @@ FUNC INT Info_Mod_Raeuber02_Frauenkleider_Condition()
 
 FUNC VOID Info_Mod_Raeuber02_Frauenkleider_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raeuber02_Frauenkleider_15_00"); //Hast du schon Melvins ...
-	AI_Output(self, hero, "Info_Mod_Raeuber02_Frauenkleider_06_01"); //... neue Kleidung bemerkt, Witzbold? Hab ich etwa so schlechte Augen wie Hans?
-	AI_Output(hero, self, "Info_Mod_Raeuber02_Frauenkleider_15_02"); //Was meinst du dazu?
-	AI_Output(self, hero, "Info_Mod_Raeuber02_Frauenkleider_06_03"); //Das werd ich ihm gleich mal persönlich sagen.
+	AI_Output(hero, self, "Info_Mod_Raeuber02_Frauenkleider_15_00"); //Have you seen Melvin's?
+	AI_Output(self, hero, "Info_Mod_Raeuber02_Frauenkleider_06_01"); //... new clothes, Joker? Do I have bad eyes like Hans?
+	AI_Output(hero, self, "Info_Mod_Raeuber02_Frauenkleider_15_02"); //What do you think of that?
+	AI_Output(self, hero, "Info_Mod_Raeuber02_Frauenkleider_06_03"); //I'll tell him that in person.
 
 	AI_StandUp	(self);
 
@@ -53,7 +53,7 @@ FUNC VOID Info_Mod_Raeuber02_Frauenkleider_Info()
 
 	AI_TurnToNpc	(self, Mod_7505_BDT_Melvin_REL);
 
-	AI_Output(self, hero, "Info_Mod_Raeuber02_Frauenkleider_06_04"); //Du bist eine Schande für alle Räuber!
+	AI_Output(self, hero, "Info_Mod_Raeuber02_Frauenkleider_06_04"); //You're a disgrace to all robbers!
 
 	Mod_REL_Frauenkleider02 = 1;
 
@@ -61,7 +61,7 @@ FUNC VOID Info_Mod_Raeuber02_Frauenkleider_Info()
 	&& (Mod_REL_Frauenkleider02 == 1)
 	&& (Mod_REL_Frauenkleider03 == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Nun sollte Melvin weichgeklopft sein.");
+		B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Now Melvin should be softened.");
 	};
 
 	AI_StopProcessInfos	(self);

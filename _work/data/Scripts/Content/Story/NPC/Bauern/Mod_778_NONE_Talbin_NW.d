@@ -1,7 +1,7 @@
 instance Mod_778_NONE_Talbin_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Talbin";
+	name 		= "valley valley";
 	guild 		= GIL_NONE;
 	id 			= 778;
 	voice 		= 7;

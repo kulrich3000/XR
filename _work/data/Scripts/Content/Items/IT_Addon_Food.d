@@ -31,7 +31,7 @@ const int HP_Shellflesh		= 20;
 //---------------------------------------------------------------------
 INSTANCE ItFo_Addon_Shellflesh (C_Item)
 {
-	name 				=	"Muschelfleisch";
+	name 				=	"Clam meat";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -47,14 +47,14 @@ INSTANCE ItFo_Addon_Shellflesh (C_Item)
 	
 	if (Mod_ItFo_Addon_Shellflesh_Right == 1)
 	{
-		TEXT[0]			=	"Saftiges Muschelfleisch";
+		TEXT[0]			=	"Juicy clam meat";
 		TEXT[1]				= 	NAME_Bonus_HP;	
 		COUNT[1]			= 	HP_Shellflesh;
-		TEXT[2]			=	"Roh unbedingt genießbar";
+		TEXT[2]			=	"Can be eaten raw";
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	TEXT[3]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -102,7 +102,7 @@ INSTANCE ItFo_Addon_Rum(C_Item)
 	on_state[0]		=	UseRum;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Weißer Rum";
+	description		= 	"White Rum";
 	
 	if (Mod_ItFo_Addon_Rum_Right == 1)
 	{
@@ -111,7 +111,7 @@ INSTANCE ItFo_Addon_Rum(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]			= 	NAME_Value;					
@@ -145,7 +145,7 @@ INSTANCE ItFo_Addon_Rum(C_Item)
 
 INSTANCE ItFo_OnarsSchnaps(C_Item)
 {
-	name 			=	"Schnaps";
+	name 			=	"booze";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI|ITEM_SHOW;
@@ -157,7 +157,7 @@ INSTANCE ItFo_OnarsSchnaps(C_Item)
 
 	description		= 	name;
 	
-	TEXT[1]			= 	"von Onar";	
+	TEXT[1]			= 	"from Onar";	
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_Rum;
@@ -166,7 +166,7 @@ INSTANCE ItFo_OnarsSchnaps(C_Item)
 
 INSTANCE ItFo_OnarsSchnaps2(C_Item)
 {
-	name 			=	"Schnaps";
+	name 			=	"booze";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI|ITEM_SHOW;
@@ -178,7 +178,7 @@ INSTANCE ItFo_OnarsSchnaps2(C_Item)
 
 	description		= 	name;
 	
-	TEXT[1]			= 	"von Onar (von Wasili präpariert)";	
+	TEXT[1]			= 	"by Onar (prepared by Wasili)";	
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_Rum;
@@ -187,7 +187,7 @@ INSTANCE ItFo_OnarsSchnaps2(C_Item)
 
 INSTANCE ItFo_Rumtopf(C_Item)
 {
-	name 			=	"Rumtopf";
+	name 			=	"potty";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -211,7 +211,7 @@ INSTANCE ItFo_Rumtopf(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]			= 	NAME_Value;					
@@ -269,7 +269,7 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 	on_state[0]		=	UseGrog;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Echter Seemanns Grog";
+	description		= 	"Genuine seaman's grog";
 	
 	if (Mod_ItFo_Addon_Grog_Right == 1)
 	{
@@ -278,7 +278,7 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]			= 	NAME_Value;					
@@ -331,7 +331,7 @@ INSTANCE Mod_RealGrog(C_Item)
 	on_state[0]		=	UseRealGrog;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Diesen Grog habe ich selbst gebraut";
+	description		= 	"I brewed this grog myself";
 	
 	if (Mod_Mod_RealGrog_Right == 1)
 	{
@@ -340,7 +340,7 @@ INSTANCE Mod_RealGrog(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 	
 	TEXT[5]			= 	NAME_Value;					
@@ -402,7 +402,7 @@ INSTANCE ItFo_Addon_LousHammer (C_Item)
 
 	description		= 	"Lou's Hammer";
 	
-	TEXT[1]			= 	"Wirkung          ???";				
+	TEXT[1]			= 	"Effect          ???";				
 	
 	
 	
@@ -428,7 +428,7 @@ INSTANCE ItFo_Addon_LousHammer (C_Item)
 //--------------------------------------------------------
 INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 {
-	name 			=	"Doppelter Hammer";
+	name 			=	"Double Hammer";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -442,7 +442,7 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 
 	description		= 	"Doppelter Hammer";
 	
-	TEXT[1]			= 	"Macht den härtesten Trinker müde...";				
+	TEXT[1]			= 	"Makes the toughest drinker sleepy...";				
 
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_SchlafHammer;
@@ -470,7 +470,7 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 	
 INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 {
-	name 			=	"Schneller Hering";
+	name 			=	"Hasty Herring";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -482,10 +482,10 @@ INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 	on_state[0]		=	UseSchnellerHering;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Sieht gefährlich aus!";
+	description		= 	"Looks dangerous!";
 	
-	TEXT[1]			= 	"Wirkung unbekannt";				
-	TEXT[2]			=	"Nebenwirkungen wahrscheinlich";
+	TEXT[1]			= 	"Effects unknown";				
+	TEXT[2]			=	"Probable side-effects";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_SchnellerHering;
@@ -516,7 +516,7 @@ INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 {
-	name 				=	"Pfefferbeutel";
+	name 				=	"Pepper bag";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -527,19 +527,19 @@ INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 
 	material 			=	MAT_LEATHER;
 		
-	description			= 	"Roter Tränen- Pfeffer";
+	description			= 	"Red tear-pepper";
 	
-	TEXT[0]				= 	"Von den südlichen Inseln";
+	TEXT[0]				= 	"From the southern islands";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
-	TEXT[3]				= 	"VORSICHT SCHARF!";
+	TEXT[3]				= 	"CAREFUL, HOT!";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItFo_Addon_Zucker	(C_Item)
 {
-	name 				=	"Zuckerbeutel";
+	name 				=	"sugar sachets";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -562,7 +562,7 @@ INSTANCE ItFo_Addon_Zucker	(C_Item)
 
 INSTANCE ItFo_Addon_VitaminC	(C_Item)
 {
-	name 				=	"Vitamin C Konzentrat";
+	name 				=	"Vitamin C Concentrate";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -587,7 +587,7 @@ INSTANCE ItFo_Addon_VitaminC	(C_Item)
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_FireStew (C_Item)
 {	
-	name 				=	"Feuergeschnetzeltes";
+	name 				=	"Fire strips";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -608,7 +608,7 @@ INSTANCE ItFo_Addon_FireStew (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;			COUNT[5]	= Value_FireStew;
@@ -636,7 +636,7 @@ INSTANCE ItFo_Addon_FireStew (C_Item)
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_Meatsoup (C_Item)
 {	
-	name 				=	"Fleischsuppe";
+	name 				=	"Meat stew";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -648,7 +648,7 @@ INSTANCE ItFo_Addon_Meatsoup (C_Item)
 	scemeName			=	"RICE";
 	on_state[0]			=	Use_MeatSoup;
 
-	description			= 	"Dampfende Fleischsuppe";
+	description			= 	"Steaming meat stew";
 	
 	if (Mod_ItFo_Addon_MeatSoup_Right == 1)
 	{
@@ -657,7 +657,7 @@ INSTANCE ItFo_Addon_Meatsoup (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Unknown effect";
 	};
 
 	TEXT[5]				= 	NAME_Value;			COUNT[5]	= Value_FishSoup;

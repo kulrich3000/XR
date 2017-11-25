@@ -1,7 +1,7 @@
 instance Mod_7316_BK_Bshydal_AW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Bshydal";
+	name 		=		"bshydal";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_OUT;
 	level 		=		60;

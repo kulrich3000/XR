@@ -1,7 +1,7 @@
 instance Mod_7673_MIL_Miliz_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bote";	
+	name 		= "errand boy";	
 	guild 		= GIL_OUT;
 	id 			= 7673;
 	voice 		= 6;

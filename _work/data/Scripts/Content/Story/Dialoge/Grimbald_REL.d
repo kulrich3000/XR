@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Grimbald_REL_Hi_Condition()
 
 FUNC VOID Info_Mod_Grimbald_REL_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Grimbald_REL_Hi_07_00"); //Hier sind wir. Weiter gehe ich ganz bestimmt nicht.
-	AI_Output(self, hero, "Info_Mod_Grimbald_REL_Hi_07_01"); //Bedenke, was ich dir vorher über dieses Gebiet berichtet habe und überlege dann noch einmal, ob du das wirklich machen willst.
+	AI_Output(self, hero, "Info_Mod_Grimbald_REL_Hi_07_00"); //Here we are. That's as far as I go.
+	AI_Output(self, hero, "Info_Mod_Grimbald_REL_Hi_07_01"); //Consider what I told you about this area before and then think again if you really want to do this.
 
 	Mod_NL_Grimbald = 4;
 

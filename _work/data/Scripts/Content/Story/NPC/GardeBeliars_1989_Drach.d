@@ -1,7 +1,7 @@
 INSTANCE GardeBeliars_1989_Drach	(Npc_Default)
 {
 	//----- Monster ----
-	name							=	"Drach";
+	name							=	"dragon";
 	guild							=	GIL_NONE;
 	id			= 	1989;
 	voice			=	14;

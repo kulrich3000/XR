@@ -1,7 +1,7 @@
 instance Mod_7746_OUT_Dubios_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dubiose Gestalt"; 
+	name 		= "Dubious figure"; 
 	guild 		= GIL_OUT;
 	id 			= 7746;
 	voice 		= 8;

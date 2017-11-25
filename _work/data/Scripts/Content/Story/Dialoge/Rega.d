@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rega_Unheil (C_INFO)
 	information	= Info_Mod_Rega_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, schönes Kind.";
+	description	= "Hello, beautiful child.";
 };
 
 FUNC INT Info_Mod_Rega_Unheil_Condition()
@@ -20,11 +20,11 @@ FUNC INT Info_Mod_Rega_Unheil_Condition()
 
 FUNC VOID Info_Mod_Rega_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rega_Unheil_15_00"); //Hallo, schönes Kind.
-	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_01"); //Hallo, Wanderer? Was verschlägt euch an diesen finsteren Tagen hierhin?
-	AI_Output(hero, self, "Info_Mod_Rega_Unheil_15_02"); //Och, ich wollte mich nur etwas umsehen und fragen, ob etwas Ungewohntes in den letzten Tagen und Wochen hier passiert ist.
-	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_03"); //Ach, es ist einfach schrecklich. Dem Hof ist es dieses Jahr mehr als schlecht ergangen. Und jetzt noch diese Untoten auf dem Friedhof.
-	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_04"); //Nimm es dann anderen nicht übel, wenn sie etwas unfreundlich erscheinen sollten. Aber diese Tage ist es sehr schwer.
+	AI_Output(hero, self, "Info_Mod_Rega_Unheil_15_00"); //Hello, beautiful child.
+	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_01"); //Hello, Wanderer? What brings you here on these dark days?
+	AI_Output(hero, self, "Info_Mod_Rega_Unheil_15_02"); //Och, I just wanted to have a look around and ask if something unusual has happened here in the last few days and weeks.
+	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_03"); //Oh, it's just horrible. This year, the Court has been more than badly hit this year. And now these undead in the cemetery.
+	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_04"); //Don't blame others if they seem a little unfriendly. But these days it's very difficult.
 };
 
 INSTANCE Info_Mod_Rega_Pickpocket (C_INFO)

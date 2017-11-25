@@ -2,7 +2,7 @@ instance Mod_7651_OUT_Suchender_REL (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Verdammter";
+	name 		=	"Damn";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_STRF;
 	level 		=	10;

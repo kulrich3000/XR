@@ -43,7 +43,7 @@ func void Spell_Cast_SummonRats()
 	
 	Wld_SpawnNpcRange	(self,	Rat,				5,	300);
 
-	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Ich habe es geschafft, jetzt sollte ich wieder zurück ins Lagerhaus gehen.");
+	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "I made it, now I should go back to the warehouse.");
 
 	Mod_AL_Rattengespawnt = TRUE;
 	

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ethan_IR_Hi (C_INFO)
 	information	= Info_Mod_Ethan_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hüter des Wassers, was meinst du zu unserer bisherigen Exkursion?";
+	description	= "Keeper of the water, what do you think about our excursion so far?";
 };
 
 FUNC INT Info_Mod_Ethan_IR_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Ethan_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Ethan_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ethan_IR_Hi_15_00"); //Hüter des Wassers, was meinst du zu unserer bisherigen Exkursion?
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_01"); //Nun, den ersten Teil unserer Reise haben wir bewältigt, ohne Gefahren, ohne Zwischenfälle.
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_02"); //Dieses finstere Eiland mit seinen dämonischen Bewohnern jedoch, wird sich ohne Zweifel als sehr hartnäckig gegenüber uns erweisen.
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_03"); //Mit Kampf und Magie werden wir unser Möglichstes tun müssen, um hier zu bestehen.
+	AI_Output(hero, self, "Info_Mod_Ethan_IR_Hi_15_00"); //Keeper of the water, what do you think about our excursion so far?
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_01"); //Well, the first part of our journey we have mastered without danger, without incident.
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_02"); //This dark island with its demonic inhabitants, however, will undoubtedly prove to be very stubborn towards us.
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_03"); //With battle and magic, we will have to do our utmost to survive here.
 };
 
 INSTANCE Info_Mod_Ethan_IR_Hebel (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Ethan_IR_Hebel (C_INFO)
 	information	= Info_Mod_Ethan_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Can you use one lever while I move the other?";
 };
 
 FUNC INT Info_Mod_Ethan_IR_Hebel_Condition()
@@ -47,7 +47,7 @@ FUNC VOID Info_Mod_Ethan_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hebel_13_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hebel_13_00"); //Of course it is. Maybe if it's going to get us somewhere...
 
 	Mod_IR_Hebel = 1;
 
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Ethan_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Ethan_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Let's get going. Will you escort me to the island?";
 };
 
 FUNC INT Info_Mod_Ethan_IR_GehtLos_Condition()
@@ -83,7 +83,7 @@ FUNC VOID Info_Mod_Ethan_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_00"); //Selbstverständlich. Meine Erfahrung als Streiter für das Gleichgewicht soll der gerechten Sache zum Sieg verhelfen.
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_00"); //Of course, of course. My experience as a champion of balance will help the just cause to win.
 
 	Mod_IR_Dabei += 1;
 
@@ -102,7 +102,7 @@ INSTANCE Info_Mod_Ethan_IR_GehBack (C_INFO)
 	information	= Info_Mod_Ethan_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Go back to the ship.";
 };
 
 FUNC INT Info_Mod_Ethan_IR_GehBack_Condition()
@@ -119,7 +119,7 @@ FUNC VOID Info_Mod_Ethan_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_GehBack_13_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_GehBack_13_00"); //Well, if you need me, you know where to find me.
 
 	Mod_IR_Dabei -= 1;
 
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Ethan_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Ethan_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Ethan_IR_Heiltrank_Condition()
@@ -158,31 +158,31 @@ FUNC VOID Info_Mod_Ethan_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Essence of Healing", Info_Mod_Ethan_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Elixir of Healing", Info_Mod_Ethan_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Extract of Healing", Info_Mod_Ethan_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Essence of Healing", Info_Mod_Ethan_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Drink of light healing", Info_Mod_Ethan_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Ethan_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Light healing potion", Info_Mod_Ethan_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Drink of fast healing", Info_Mod_Ethan_IR_Heiltrank_Health_05);
 	};
 };
 

@@ -18,10 +18,10 @@ FUNC INT Info_Mod_Wache_Eisgebiet_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Wache_Eisgebiet_01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_00"); //Halt! (schaut ihn musternt an) Warum willst du in die Kaserne?
-	AI_Output(hero, self, "Info_Mod_Wache_Eisgebiet_01_Hi_15_01"); //Gellit schickt mich. Ich will mir euer Ansehen verdienen.
-	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_02"); //In Ordnung, dann bist du hier richtig. Durch deinen Militärdienst bei uns kannst du zeigen wer du bist.
-	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_03"); //Wenn du allerdings denkst, du könntest den Kommander angeifen, soll dir gesagt sein, das er sich gegen Jeden zu verteidigen weiß.
+	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_00"); //Stop! Why do you want to go to the barracks?
+	AI_Output(hero, self, "Info_Mod_Wache_Eisgebiet_01_Hi_15_01"); //Gellit sent me. I want to earn your reputation.
+	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_02"); //All right, then you're in the right place. Through your military service with us, you can show who you are.
+	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_03"); //However, if you think that you could attack the commander, you should be told that he knows how to defend himself against everyone.
 };
 
 INSTANCE Info_Mod_Wache_Eisgebiet_01_EXIT (C_INFO)

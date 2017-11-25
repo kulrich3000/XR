@@ -1,7 +1,7 @@
 instance Mod_1860_HEX_Onara_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Onara";	//Halvors Frau
+	name 		= "onara";	//Halvors Frau
 	guild 		= GIL_out;
 	id 			= 1860;
 	voice 		= 17;

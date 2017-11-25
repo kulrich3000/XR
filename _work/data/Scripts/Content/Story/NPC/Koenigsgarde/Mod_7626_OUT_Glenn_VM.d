@@ -1,7 +1,7 @@
 instance Mod_7626_OUT_Glenn_VM (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Glenn"; 
+	name 		= "glow"; 
 	guild 		= GIL_OUT;
 	id 			= 7626;
 	voice 		= 6;

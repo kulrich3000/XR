@@ -1,7 +1,7 @@
 INSTANCE Monster_11068_Eisriese_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Eisriese";	
+	name 		= "giant ice sheet";	
 	guild 		= GIL_ICEGOLEM;
 	id 			= 11068;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICEGOLEM;

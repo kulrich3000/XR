@@ -18,18 +18,18 @@ FUNC INT Info_Mod_Randolph_Hi_Condition()
 
 FUNC VOID Info_Mod_Randolph_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Randolph_Hi_06_00"); //Hab Dank, aber ich brauche ihn nicht. Ich fühle mich schon so viel besser.
+	AI_Output(self, hero, "Info_Mod_Randolph_Hi_06_00"); //Thanks, but I don't need him. I feel so much better already.
 
 	B_GiveInvItems	(self, hero, ItPo_HealBesessenheit, 1);
 
-	AI_Output(hero, self, "Info_Mod_Randolph_Hi_15_01"); //Bist du sicher, dass du ihn nicht ...
-	AI_Output(self, hero, "Info_Mod_Randolph_Hi_06_02"); //Jaja, wirklich. Ich fühle mich, als könnte ich Bäume ausreißen.
+	AI_Output(hero, self, "Info_Mod_Randolph_Hi_15_01"); //Are you sure you're not...
+	AI_Output(self, hero, "Info_Mod_Randolph_Hi_06_02"); //Yeah, yeah, really. I feel like I can rip out trees.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "START");
 
-	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Randolph wollte den Heiltrank nicht nehmen, weil er wieder gesund zu sein scheint. Nun denn, ich sollte wohl Telbor informieren ...");
+	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Randolph didn't want to take the healing potion because he seems to be well again. Well, then, I suppose I should inform Telbor...");
 };
 
 INSTANCE Info_Mod_Randolph_Hoehle (C_INFO)
@@ -54,22 +54,22 @@ FUNC VOID Info_Mod_Randolph_Hoehle_Info()
 {
 	Wld_PlayEffect("spellFX_Fear",  self, self, 0, 0, 0, FALSE );
 
-	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_00"); //(verstört) Was, wie, wer ist da?
-	AI_Output(hero, self, "Info_Mod_Randolph_Hoehle_15_01"); //Ich bin es nur.
-	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_02"); //(erleichtert) Ach du bist es, der Retter unseres Hofes.
-	AI_Output(hero, self, "Info_Mod_Randolph_Hoehle_15_03"); //Hast du denn jemand anderen erwartet?
-	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_04"); //Ja, diese grässlichen Schatten, die mich verfolgen, quälen und versuchen von mir besitzt zu ergreifen.
-	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_05"); //Zuerst waren sie ganz leise, und wenn sie da waren, schienen sie mir Kraft zu schenken und ich fühlte mich wohl in ihrer Gegenwart.
-	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_06"); //Doch jetzt gewinnen sie zunehmend Macht über mich, reden auf mich ein und verlangen mir ihnen zu folgen.
-	AI_Output(hero, self, "Info_Mod_Randolph_Hoehle_15_07"); //Das musst du nicht. Wenn du mich zum Kloster begleitest, kann dir vielleicht geholfen werden.
-	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_08"); //Zum Kloster? Ja, das will ich, lass uns ... (hält inne) ... ohh nein, sie sind hier.
-	AI_Output(hero, self, "Info_Mod_Randolph_Hoehle_15_09"); //Was ...?
+	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_00"); //What, how, who's there?
+	AI_Output(hero, self, "Info_Mod_Randolph_Hoehle_15_01"); //It's just me.
+	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_02"); //Oh, it is you, the savior of our court.
+	AI_Output(hero, self, "Info_Mod_Randolph_Hoehle_15_03"); //Were you expecting someone else?
+	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_04"); //Yes, these horrible shadows that haunt me, torment and try to seize upon me possessed.
+	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_05"); //At first they were very quiet, and when they were there they seemed to give me strength and I felt comfortable in their presence.
+	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_06"); //But now they are increasingly gaining power over me, talking at me and demanding to follow them.
+	AI_Output(hero, self, "Info_Mod_Randolph_Hoehle_15_07"); //You don't have to. If you'll escort me to the monastery, maybe you can be helped.
+	AI_Output(self, hero, "Info_Mod_Randolph_Hoehle_06_08"); //To the monastery? Yeah, I do, let's-- (pauses).... ohh no, they're here.
+	AI_Output(hero, self, "Info_Mod_Randolph_Hoehle_15_09"); //What...?
 
 	AI_StopProcessInfos	(self);
 
 	AI_StartState	(hero, ZS_MagicSleep, 0, "");
 
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Täuschen mich meine Sinne, oder waren da eben einige dunkle Schatten? Und diese plötzliche Paralyse ... Vielleicht hat sich doch mehr abgespielt, als nur Gespinste in Randolph’s Kopf. Ob ich ihn jetzt noch einholen kann ... ?");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Are my senses deceiving me, or were there just some dark shadows? And this sudden paralysis.... Maybe there was more going on after all, than just spinning in Randolph's head. Whether I can catch up with him now.... ?");
 
 	B_StartOtherRoutine	(self, "FLUCHT");
 };
@@ -94,11 +94,11 @@ FUNC INT Info_Mod_Randolph_NoMoreDemon_Condition()
 
 FUNC VOID Info_Mod_Randolph_NoMoreDemon_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Randolph_NoMoreDemon_06_00"); //(zu sich selbst) Was ist geschehen? Ich fühle mich so befreit. Diese finsteren Kreaturen, Stimmen und Visionen.
-	AI_Output(self, hero, "Info_Mod_Randolph_NoMoreDemon_06_01"); //Waren sie nur Alpträume? Nein, hier stehe ich doch, es war alles wirklich.
-	AI_Output(self, hero, "Info_Mod_Randolph_NoMoreDemon_06_02"); //(zum Helden) Du? Du warst es, der mich davon erlöst hat. Ich weiß nicht, was ich sagen soll.
-	AI_Output(hero, self, "Info_Mod_Randolph_NoMoreDemon_15_03"); //Geh am besten wieder zu Akil und ruhe dich erst mal aus.
-	AI_Output(self, hero, "Info_Mod_Randolph_NoMoreDemon_06_04"); //(verwirrt) Ähh, ja, ja, das werde ich erst mal tun.
+	AI_Output(self, hero, "Info_Mod_Randolph_NoMoreDemon_06_00"); //(to himself) What happened? I feel so liberated. These sinister creatures, voices and visions.
+	AI_Output(self, hero, "Info_Mod_Randolph_NoMoreDemon_06_01"); //Were they just nightmares? No, I'm standing here, it was all real.
+	AI_Output(self, hero, "Info_Mod_Randolph_NoMoreDemon_06_02"); //You? It was you who saved me from it. I don't know what to say.
+	AI_Output(hero, self, "Info_Mod_Randolph_NoMoreDemon_15_03"); //Why don't you go back to Akil and get some rest?
+	AI_Output(self, hero, "Info_Mod_Randolph_NoMoreDemon_06_04"); //Uh, yeah, yeah, yeah, I'll do that first.
 
 	AI_StopProcessInfos	(self);
 
@@ -133,29 +133,29 @@ FUNC INT Info_Mod_Randolph_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Randolph_Irdorath_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_00"); //(gedrückte Freude) Ahh, da ist ja der Erretter unseres Hofes ... und meiner Seele ...
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_01"); //Hallo Randolph. Wie ist es dir seither ergangen?
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_02"); //(etwas bedrückt) Ja, eigentlich ganz in Ordnung, die Arbeit auf dem Hof läuft wieder gut voran und mit den anderen auf dem Hof verstehe ich mich auch hervorragend ...
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_03"); //Aber ...?
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_04"); //Es ist nur ... wie soll ich es sagen ...
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_00"); //Ahh, there's the savior of our court.... and my soul....
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_01"); //Hello, Randolph. How have you been since then?
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_02"); //(slightly depressed) Yes, actually quite all right, the work on the farm is progressing well again and with the others on the farm I get along very well....
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_03"); //But...?
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_04"); //It's just.... how should I put it...
 
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_05"); //(flüstert) Es kommt immer noch vor, dass ich mich für kurze Zeit in diesen dämonischen Abkömmling verwandele ...
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_06"); //Tatsächlich?
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_07"); //Ja, wenn ich schlecht Träume, oder wütend werde. Dann spüre ich wie das dämonische in mir erwacht.
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_08"); //Bislang konnte ich es noch jedes mal verhindern von den anderen dabei gesehen zu werden.
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_09"); //Ich weiß aber nicht, wie lange mir das noch gelingen wird.
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_10"); //Warst du schon bei einem kundigen Magier und hast um Heilung ersucht?
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_11"); //Was?! Ich habe mich schon weit genug damit herausgewagt, als ich es dir anvertraute. Noch mehr Menschen müssen nicht davon wissen ...
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_12"); //(ausweichend) Berichte lieber, was es neues bei dir gibt.
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_13"); //Nun, mich führt es auf das Meer hinaus.
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_14"); //Das Meer?
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_15"); //Ja, ich suche mit dem Schiff der Paladine eine Insel auf. Es gilt einen finsteren Schergen des Xeres zu bannen.
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_16"); //Was Xeres? Dann waren es doch mehr als nur üble Träume und verworrene Erinnerungen ...
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_17"); //Hör zu, ich muss auf diese Insel mitkommen.
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_18"); //Was?! Das ist aber eine nicht ungefährliche Angelegenheit.
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_19"); //Mag sein, aber nur so kann ich endgültige Erlösung finden, wenn der Unhold samt seiner Lakaien gebannt ist. Ich muss mitkommen!
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_05"); //(whispers) It still happens that I turn into this demon descendant for a short time....
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_06"); //Is that so?
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_07"); //Yeah, when I'm having bad dreams or getting angry. Then I feel the demonic awakening in me.
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_08"); //So far I could prevent being seen by the others every time.
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_09"); //But I don't know how much longer I will be able to do that.
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_10"); //Have you ever been with an expert magician and asked for healing?
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_11"); //What?! I've ventured far enough out of it when I entrusted it to you. Even more people don't need to know about it....
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_12"); //You better tell me what's new on your end.
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_13"); //Well, it takes me out to sea.
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_14"); //The sea?
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_15"); //Yes, I'm going to find an island on the Paladin's ship. We must banish a dark minion of the Xeres.
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_16"); //What Xeres? Then it was more than just bad dreams and confusing memories...
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_17"); //Listen, I have to go to this island.
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath_15_18"); //What?! But this is not a harmless matter.
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath_06_19"); //Maybe so, but only in this way can I find definitive salvation if the fiend and his minions are banished. I have to go with you!
 };
 
 INSTANCE Info_Mod_Randolph_Irdorath2 (C_INFO)
@@ -166,7 +166,7 @@ INSTANCE Info_Mod_Randolph_Irdorath2 (C_INFO)
 	information	= Info_Mod_Randolph_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nun gut, dann heiße ich dich an Bord willkommen.";
+	description	= "Very well, then, I welcome you aboard.";
 };
 
 FUNC INT Info_Mod_Randolph_Irdorath2_Condition()
@@ -180,11 +180,11 @@ FUNC INT Info_Mod_Randolph_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Randolph_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath2_15_00"); //Nun gut, dann heiße ich dich an Bord willkommen.
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath2_06_01"); //Vielen dank. Ein weiteres Mal stehe ich in deiner Schuld.
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath2_06_02"); //Ich mache mich sofort auf den Weg zum Hafen.
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath2_15_00"); //Very well, then, I welcome you aboard.
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath2_06_01"); //Thank you very much. Once again, I am in your debt.
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath2_06_02"); //I'll be on my way to the harbour immediately.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Randolph, in dem immer noch ein Teil dämonischen schlummert, wird mich zur Insel begleiten.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Randolph, where there is still a part of demonic slumber, will accompany me to the island.");
 
 	B_GivePlayerXP	(150);
 
@@ -205,7 +205,7 @@ INSTANCE Info_Mod_Randolph_Irdorath3 (C_INFO)
 	information	= Info_Mod_Randolph_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "I'm sorry, but it seems we're too many.";
 };
 
 FUNC INT Info_Mod_Randolph_Irdorath3_Condition()
@@ -222,8 +222,8 @@ FUNC INT Info_Mod_Randolph_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Randolph_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath3_06_01"); //Schade. Ich gehe dann wieder zurück. Du weißt wo du mich findest, wenn doch noch ein Platz frei werden sollte.
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath3_15_00"); //I'm sorry, but it seems we're too many. I can't take you with me.
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath3_06_01"); //Too bad. I'll go back then. You know where to find me if there's ever gonna be a seat left.
 
 	Mod_RandolphDabei = 0;
 
@@ -242,7 +242,7 @@ INSTANCE Info_Mod_Randolph_Irdorath4 (C_INFO)
 	information	= Info_Mod_Randolph_Irdorath4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kann dich doch mitnehmen.";
+	description	= "I can give you a ride.";
 };
 
 FUNC INT Info_Mod_Randolph_Irdorath4_Condition()
@@ -257,8 +257,8 @@ FUNC INT Info_Mod_Randolph_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Randolph_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath4_15_00"); //Ich kann dich doch mitnehmen. Es hat sich noch ein Platz auf dem Schiff gefunden.
-	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath4_06_01"); //Sehr gut, ich bin dann wieder am Hafen.
+	AI_Output(hero, self, "Info_Mod_Randolph_Irdorath4_15_00"); //I can give you a ride. There's room on the ship.
+	AI_Output(self, hero, "Info_Mod_Randolph_Irdorath4_06_01"); //Very well, I'll be back at the harbour.
 
 	Mod_RandolphDabei = 1;
 

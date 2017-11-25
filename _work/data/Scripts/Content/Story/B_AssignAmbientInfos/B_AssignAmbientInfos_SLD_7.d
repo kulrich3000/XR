@@ -29,7 +29,7 @@ INSTANCE DIA_SLD_7_JOIN(C_INFO)
 	condition	= DIA_SLD_7_JOIN_Condition;
 	information	= DIA_SLD_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will mich euch anschließen!";
+	description = "I want to join you!";
 };                       
 
 FUNC INT DIA_SLD_7_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_SLD_7_JOIN_Condition()
 
 FUNC VOID DIA_SLD_7_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_JOIN_15_00"); //Ich will mich euch anschließen!
-	AI_Output(self, hero, "DIA_SLD_7_JOIN_07_01"); //Dann geh zu Lares, er kümmert sich um die Neuen.
+	AI_Output (other, self, "DIA_SLD_7_JOIN_15_00"); //I want to join you!
+	AI_Output(self, hero, "DIA_SLD_7_JOIN_07_01"); //Then go to Lares, he'll take care of the new ones.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_SLD_7_PEOPLE(C_INFO)
 	condition	= DIA_SLD_7_PEOPLE_Condition;
 	information	= DIA_SLD_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT DIA_SLD_7_PEOPLE_Condition()
@@ -65,8 +65,8 @@ FUNC INT DIA_SLD_7_PEOPLE_Condition()
 
 FUNC VOID DIA_SLD_7_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Lee ist unser Anführer. Lares ist seine rechte Hand. Die meisten Männer folgen ihm, denn er hat sie schon damals in der Kolonie angeführt.
+	AI_Output (other, self, "DIA_SLD_7_PEOPLE_15_00"); //Who's in charge here?
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Lee is our leader. Lares is his right hand. Most men follow him, because he already led them in the colony back then.
 };
 
 // *************************************************************************
@@ -78,7 +78,7 @@ INSTANCE DIA_SLD_7_LOCATION(C_INFO)
 	condition	= DIA_SLD_7_LOCATION_Condition;
 	information	= DIA_SLD_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Erzähl mir was über den Hof.";
+	description = "Tell me about the farm.";
 };                       
 
 FUNC INT DIA_SLD_7_LOCATION_Condition()
@@ -88,8 +88,8 @@ FUNC INT DIA_SLD_7_LOCATION_Condition()
 
 FUNC VOID DIA_SLD_7_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_LOCATION_15_00"); //Erzähl mir was über den Hof.
-	AI_Output (self, other, "DIA_SLD_7_LOCATION_07_01"); //Hier gibts ne Menge Bauern, aber mit denen haben wir nicht so viel zu tun. Wir passen zwar auf sie auf solange wir hier sind, aber eigentlich suchen wir nach neuen Mitgliedern.
+	AI_Output (other, self, "DIA_SLD_7_LOCATION_15_00"); //Tell me about the farm.
+	AI_Output (self, other, "DIA_SLD_7_LOCATION_07_01"); //There are a lot of farmers here, but we don't have much to do with them. We look after them while we're here, but we're actually looking for new members.
 };
 
 INSTANCE Info_Mod_SLD_7_Pickpocket (C_INFO)

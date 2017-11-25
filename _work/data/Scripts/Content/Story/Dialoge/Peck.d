@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Peck_Hi (C_INFO)
 	information	= Info_Mod_Peck_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Peck_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Peck_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Peck_Hi_12_01"); //Ich bin Peck. Ich verkaufe den Milizen Rüstungen.
+	AI_Output(self, hero, "Info_Mod_Peck_Hi_12_01"); //I'm Peck. I sell armor to the militias.
 };
 
 INSTANCE Info_Mod_Peck_Ruestung (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Peck_Ruestung (C_INFO)
 	information	= Info_Mod_Peck_Ruestung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir eine bessere Rüstung bekommen?";
+	description	= "Can I get better armor from you?";
 };
 
 FUNC INT Info_Mod_Peck_Ruestung_Condition()
@@ -44,37 +44,37 @@ FUNC INT Info_Mod_Peck_Ruestung_Condition()
 
 FUNC VOID Info_Mod_Peck_Ruestung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Peck_Ruestung_15_00"); //Kann ich bei dir eine bessere Rüstung bekommen?
+	AI_Output(hero, self, "Info_Mod_Peck_Ruestung_15_00"); //Can I get better armor from you?
 
 	if (Mod_HasMILH == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_12_01"); //Ich hab hier eine Schwere Milizrüstung.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_12_01"); //I've got some heavy militia armor here.
 	};
 
 	if (Kapitel > 1)
 	&& (Mod_ErsteVerbesserung == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_12_02"); //Ich hab gehört, dass beim Pass zum Minental ein Feuersnapper sein soll. Mit dessen Haut könnte ich deine Schwere Milizrüstung sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_12_02"); //I hear there's a fire snapper at the Minental pass. With his skin, I could certainly improve your heavy militia armor a little bit.
 	
 		Mod_ErsteVerbesserung = TRUE;
 	
 		Wld_InsertNpc	(Feuersnapper,	"NW_PASS_06");
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Beim Pass zum Minental soll sich ein Feuersnapper befinden, mit dessen Haut Peck meine Schwere Milizrüstung verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "At the Minental pass there should be a fire snapper, whose skin Peck can use to improve my heavy militia armor.");
 	};
 
 	if (Kapitel > 3)
 	&& (Mod_ZweiteVerbesserung == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_12_03"); //Ich hab gehört, dass beim Weg zur Ausgrabungsstätte der Wassermagier ein Feuerläufer sein soll. Mit dessen Fell könnte ich deine Ritterrüstung sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_12_03"); //I've heard that on the way to the excavation site the water magician is said to be a firefighter. With his coat I could improve your knight's armour a little bit.
 	
 		Mod_ZweiteVerbesserung = TRUE;
 	
 		Wld_InsertNpc	(Feuerlaeufer,	"FP_MAGICGOLEM");
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Auf dem Weg zur Ausgrabungsstätte der Wassermagier soll sich ein Feuerläufer befinden, mit dessen Fell Peck meine Ritterrüstung verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "On the way to the water magician's excavation site there is a Firefighter, whose fur Peck can use to improve my knight's armour.");
 	};
 
 	Info_ClearChoices	(Info_Mod_Peck_Ruestung);
@@ -83,19 +83,19 @@ FUNC VOID Info_Mod_Peck_Ruestung_Info()
 	if (Mod_ErsteVerbesserung == TRUE)
 	&& (Mod_Gilde == 1)
 	{
-		Info_AddChoice	(Info_Mod_Peck_Ruestung, "Schwere Milizrüstung verbessern", Info_Mod_Peck_Ruestung_MIL_S);
+		Info_AddChoice	(Info_Mod_Peck_Ruestung, "Improve heavy militia equipment", Info_Mod_Peck_Ruestung_MIL_S);
 	};
 
 	if (Mod_ZweiteVerbesserung == TRUE)
 	&& (Mod_Gilde == 2)
 	{
-		Info_AddChoice	(Info_Mod_Peck_Ruestung, "Ritterrüstung verbessern", Info_Mod_Peck_Ruestung_RIT_S);
+		Info_AddChoice	(Info_Mod_Peck_Ruestung, "Improve knight's armour", Info_Mod_Peck_Ruestung_RIT_S);
 	};
 
 	if (Mod_Gilde == 1)
 	&& (Mod_HasMILH == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Peck_Ruestung, "Schwere Milizrüstung (Kosten: 2500)", Info_Mod_Peck_Ruestung_MIL_M);
+		Info_AddChoice	(Info_Mod_Peck_Ruestung, "Heavy militia equipment (cost: 2500)", Info_Mod_Peck_Ruestung_MIL_M);
 	};
 };
 
@@ -106,12 +106,12 @@ FUNC VOID Info_Mod_Peck_Ruestung_BACK ()
 
 FUNC VOID Info_Mod_Peck_Ruestung_MIL_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Peck_Ruestung_MIL_S_15_00"); //Verbessere meine schwere Milizrüstung.
+	AI_Output(hero, self, "Info_Mod_Peck_Ruestung_MIL_S_15_00"); //Improve my heavy militia armor.
 
 	if (Npc_HasItems(hero, ItAt_FeuersnapperHaut) == 1)
 	&& (Npc_HasItems(hero, ItAr_MIL_M) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_S_12_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_S_12_01"); //All clear.
 
 		Npc_RemoveInvItems	(hero, ItAt_FeuersnapperHaut, 1);
 		
@@ -127,11 +127,11 @@ FUNC VOID Info_Mod_Peck_Ruestung_MIL_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_Mil_M) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_S_12_02"); //Du musst schon eine schwere Milizrüstung haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_S_12_02"); //You must have some heavy militia gear or I won't be able to fix it for you.
 	}
 	else if (Npc_HasItems(hero, ItAt_Feuersnapperhaut) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_S_12_03"); //Wenn du nicht die Snapperhaut hast, kann ich deine Rüstung nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_S_12_03"); //If you don't have snapper skin, I can't improve your armor.
 	};
 
 	Info_ClearChoices	(Info_Mod_Peck_Ruestung);
@@ -139,12 +139,12 @@ FUNC VOID Info_Mod_Peck_Ruestung_MIL_S ()
 
 FUNC VOID Info_Mod_Peck_Ruestung_RIT_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Peck_Ruestung_RIT_S_15_00"); //Verbessere meine Ritterrüstung.
+	AI_Output(hero, self, "Info_Mod_Peck_Ruestung_RIT_S_15_00"); //Improve my knight's armour.
 
 	if (Npc_HasItems(hero, ItAt_FireShadowFur) == 1)
 	&& (Npc_HasItems(hero, ItAr_PAL_M) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_RIT_S_12_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_RIT_S_12_01"); //All clear.
 
 		Npc_RemoveInvItems	(hero, ItAt_FireShadowFur, 1);
 		
@@ -160,11 +160,11 @@ FUNC VOID Info_Mod_Peck_Ruestung_RIT_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_PAL_M) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_RIT_S_12_02"); //Du musst schon eine Ritterrüstung haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_RIT_S_12_02"); //You must have a knight's armour or I won't be able to fix it for you.
 	}
 	else if (Npc_HasItems(hero, ItAt_FireShadowFur) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_RIT_S_12_03"); //Wenn du nicht das Feuerläuferfell hast, kann ich deine Rüstung nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_RIT_S_12_03"); //I can't improve your armor if you don't have the Firefinch skin.
 	};
 
 	Info_ClearChoices	(Info_Mod_Peck_Ruestung);
@@ -172,11 +172,11 @@ FUNC VOID Info_Mod_Peck_Ruestung_RIT_S ()
 
 FUNC VOID Info_Mod_Peck_Ruestung_MIL_M ()
 {
-	AI_Output(hero, self, "Info_Mod_Peck_Ruestung_MIL_M_15_00"); //Ich nehme die schwere Milizrüstung.
+	AI_Output(hero, self, "Info_Mod_Peck_Ruestung_MIL_M_15_00"); //I'll take the heavy militia armor.
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 2500)
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_M_12_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_M_12_01"); //All clear.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 2500);
 
@@ -188,7 +188,7 @@ FUNC VOID Info_Mod_Peck_Ruestung_MIL_M ()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_M_12_02"); //Ohne Gold keine Rüstung.
+		AI_Output(self, hero, "Info_Mod_Peck_Ruestung_MIL_M_12_02"); //No gold, no armor.
 	};
 
 	Info_ClearChoices	(Info_Mod_Peck_Ruestung);

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Scavenger_Demon(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Graslandscavenger";
+	name							=	"Grassland Scavenger";
 	guild							=	GIL_SCAVENGER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SCAVENGER_DEMON;
 	level							=	12;

@@ -19,12 +19,12 @@ FUNC INT Info_Mod_Moorhexe_Hi_Condition()
 
 FUNC VOID Info_Mod_Moorhexe_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_00"); //Was, ein lebender Mensch in dem verfluchten Moor, und er vermag mich zu sehen?!
-	AI_Output(hero, self, "Info_Mod_Moorhexe_Hi_15_01"); //So scheint es ...
-	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_02"); //Was in Beliars Namen hast du hier verloren? Was willst du?
-	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_03"); //Ganz bestimmt nicht die Schätze des Sumpfes, sonst hättest du verblendet von Gier dein Leben in einem morastigen Tümpel gelassen.
-	AI_Output(hero, self, "Info_Mod_Moorhexe_Hi_15_04"); //Ich bin auf der Suche nach einem Gegenstand, den ein Magier vermutlich dir überlassen hat.
-	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_05"); //Was?! Den Kamm von Lich?! Bei meiner Hexenehre habe ich geschworen, ihn zu verteidigen. Nie wirst du ihn bekommen.
+	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_00"); //What, a living person in the damn moor and he can see me?!
+	AI_Output(hero, self, "Info_Mod_Moorhexe_Hi_15_01"); //So it seems....
+	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_02"); //What in Beliar's name are you doing here? What do you want?
+	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_03"); //Certainly not the treasures of the swamp, otherwise you would have been blinded by greed and left your life in a muddy pond.
+	AI_Output(hero, self, "Info_Mod_Moorhexe_Hi_15_04"); //I'm looking for an item that a magician probably gave you.
+	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_05"); //What?! The comb of light?! In my honor, I swore to defend him. You'll never get it.
 
 	AI_StopProcessInfos	(self);
 

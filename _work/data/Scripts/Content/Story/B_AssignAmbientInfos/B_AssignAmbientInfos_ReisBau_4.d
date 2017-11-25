@@ -14,7 +14,7 @@ INSTANCE Info_ReisBau_4_EXIT(C_INFO)
 	condition	= Info_ReisBau_4_EXIT_Condition;
 	information	= Info_ReisBau_4_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_ReisBau_4_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_ReisBau_4_WichtigePersonen(C_INFO)
 	condition	= Info_ReisBau_4_WichtigePersonen_Condition;
 	information	= Info_ReisBau_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Habt ihr einen Anführer?";
+	description = "Do you have a leader?";
 };                       
 
 FUNC INT Info_ReisBau_4_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_ReisBau_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_ReisBau_4_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_4_WichtigePersonen_15_00"); //Habt ihr einen Anführer?
-	AI_Output(self,hero,"Info_ReisBau_4_WichtigePersonen_04_01"); //Der Reislord ist so was wie unser Anführer. Aber die meisten arbeiten nur aus Angst vor ihm und seinen Schlägern.
-	AI_Output(self,hero,"Info_ReisBau_4_WichtigePersonen_04_02"); //Bei mir sieht das anders aus. Ich hab' schon ein paar Jahre auf dem Buckel und keine Lust mehr, mich mit den Söldnern im Lager rumzuschlagen ... Die Reisfelder sind genau das Richtige für mich.
+	AI_Output(hero,self,"Info_ReisBau_4_WichtigePersonen_15_00"); //Do you have a leader?
+	AI_Output(self,hero,"Info_ReisBau_4_WichtigePersonen_04_01"); //The rice lord is like our leader. But most of them work only for fear of him and his thugs.
+	AI_Output(self,hero,"Info_ReisBau_4_WichtigePersonen_04_02"); //It's not the same with me. I've been on my back for a couple of years now and don't feel like fighting with the mercenaries in the camp.... The rice fields are perfect for me.
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_ReisBau_4_DasLager(C_INFO)
 	condition	= Info_ReisBau_4_DasLager_Condition;
 	information	= Info_ReisBau_4_DasLager_Info;
 	permanent	= 1;
-	description = "Was muß ich über diesen Ort wissen?";
+	description = "What do I need to know about this place?";
 };                       
 
 FUNC INT Info_ReisBau_4_DasLager_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_ReisBau_4_DasLager_Condition()
 
 FUNC VOID Info_ReisBau_4_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_4_DasLager_15_00"); //Was muss ich über diesen Ort wissen?
-	AI_Output(self,hero,"Info_ReisBau_4_DasLager_04_01"); //Sei vorsichtig, wenn du ins Lager gehst, Junge! Da laufen so einige Halsabschneider rum, die einem Neuen wie dir an die Kehle wollen.
+	AI_Output(hero,self,"Info_ReisBau_4_DasLager_15_00"); //What do I need to know about this place?
+	AI_Output(self,hero,"Info_ReisBau_4_DasLager_04_01"); //Be careful when you go to the camp, boy! There's a lot of cutthroats running around trying to get a new guy like you down his throat.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_ReisBau_4_DieLage(C_INFO) // E1
 	condition	= Info_ReisBau_4_DieLage_Condition;
 	information	= Info_ReisBau_4_DieLage_Info;
 	permanent	= 1;
-	description = "Wie läuft's denn so?";
+	description = "How's everything going?";
 };                       
 
 FUNC INT Info_ReisBau_4_DieLage_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_ReisBau_4_DieLage_Condition()
 
 FUNC VOID Info_ReisBau_4_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_4_DieLage_15_00"); //Wie läuft's denn so?
-	AI_Output(self,hero,"Info_ReisBau_4_DieLage_04_01"); //Gibt 'ne Menge zu tun. Wir brauchen viel Reis, um die Leute hier alle ernähren zu können.
+	AI_Output(hero,self,"Info_ReisBau_4_DieLage_15_00"); //How's everything going?
+	AI_Output(self,hero,"Info_ReisBau_4_DieLage_04_01"); //There's a lot of work to do. We need a lot of rice to feed the people here.
 };
 
 INSTANCE Info_Mod_ReisBau_4_Pickpocket (C_INFO)

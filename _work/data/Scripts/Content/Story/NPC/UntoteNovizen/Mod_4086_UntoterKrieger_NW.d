@@ -1,7 +1,7 @@
 instance Mod_4086_UntoterKrieger_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Untoter Krieger";
+	name 		=		"Undead Warrior";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_STRF;
 	level 		=		40;

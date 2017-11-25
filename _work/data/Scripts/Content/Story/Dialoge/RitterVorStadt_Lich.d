@@ -18,9 +18,9 @@ FUNC INT Info_Mod_RitterVorStadt_Lich_Hi_Condition()
 
 FUNC VOID Info_Mod_RitterVorStadt_Lich_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_RitterVorStadt_Lich_Hi_12_00"); //Du läufst besser nicht hier draußen rum.
-	AI_Output(self, hero, "Info_Mod_RitterVorStadt_Lich_Hi_12_01"); //Ein finsterer Magier treibt sein Unwesen, entführt Menschen, schändet Gräber und erweckt Leichnahme zu Untotendasein.
-	AI_Output(self, hero, "Info_Mod_RitterVorStadt_Lich_Hi_12_02"); //Drei unserer Brüder sind zur Grabesstätte der Paladine bei Orlan aufgebrochen, um ihn dort zu stellen.
+	AI_Output(self, hero, "Info_Mod_RitterVorStadt_Lich_Hi_12_00"); //You better not be walking around out here.
+	AI_Output(self, hero, "Info_Mod_RitterVorStadt_Lich_Hi_12_01"); //A sinister magician carries out his evil deeds, abducts people, desecrates graves and awakens corpses to being undead.
+	AI_Output(self, hero, "Info_Mod_RitterVorStadt_Lich_Hi_12_02"); //Three of our brothers went to the tomb of the Paladins near Orlan to place him there.
 
 	AI_StopProcessInfos	(self);
 

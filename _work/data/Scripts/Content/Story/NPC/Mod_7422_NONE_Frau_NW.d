@@ -1,7 +1,7 @@
 instance Mod_7422_NONE_Frau_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Frau";
+	name 		= "Mrs.";
 	guild 		= GIL_DMT;
 	id 			= 7422;
 	voice 		= 17;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bibliothekar_Hi (C_INFO)
 	information	= Info_Mod_Bibliothekar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du so für Bücher?";
+	description	= "What books do you have?";
 };
 
 FUNC INT Info_Mod_Bibliothekar_Hi_Condition()
@@ -16,11 +16,11 @@ FUNC INT Info_Mod_Bibliothekar_Hi_Condition()
 
 FUNC VOID Info_Mod_Bibliothekar_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bibliothekar_Hi_15_00"); //Was hast du so für Bücher?
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_01"); //(abwesend) Die Geschichte des Hofstaats Teil 1, Die Geschichte des Hofstaats Teil 2, Die Geschichte des Hofstaats Teil 3, Die Geschichte ...
-	AI_Output(hero, self, "Info_Mod_Bibliothekar_Hi_15_02"); //Ich sehe schon, spannende Bettlektüre.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_03"); //Ja, ja. (murmelt) 101 Kräuterrezepte für die betagte Tagesmutter, wer hatte das gleich noch ausgeliehen? Richtig, Regina.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_04"); //(laut) Kann ich sonst noch etwas für Sie tun?
+	AI_Output(hero, self, "Info_Mod_Bibliothekar_Hi_15_00"); //What books do you have?
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_01"); //(Absent) The History of the Court State Part 1, The History of the Court State Part 2, The History of the Court State Part 3, The History of the Court State...
+	AI_Output(hero, self, "Info_Mod_Bibliothekar_Hi_15_02"); //I see, exciting bedtime reading.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_03"); //Yes, yes, yes. (mumbles) 101 herbal recipes for the elderly mother of the day, who had lent it to her? Right, Regina.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_04"); //Is there anything else I can do for you?
 };
 
 INSTANCE Info_Mod_Bibliothekar_Ausleihen (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Bibliothekar_Ausleihen (C_INFO)
 	information	= Info_Mod_Bibliothekar_Ausleihen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Darf ich mir die Bücher auch ausleihen?";
+	description	= "Can I borrow the books, too?";
 };
 
 FUNC INT Info_Mod_Bibliothekar_Ausleihen_Condition()
@@ -41,8 +41,8 @@ FUNC INT Info_Mod_Bibliothekar_Ausleihen_Condition()
 
 FUNC VOID Info_Mod_Bibliothekar_Ausleihen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bibliothekar_Ausleihen_15_00"); //Darf ich mir die Bücher auch ausleihen?
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Ausleihen_01_01"); //(scharf) Finger weg!
+	AI_Output(hero, self, "Info_Mod_Bibliothekar_Ausleihen_15_00"); //Can I borrow the books, too?
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Ausleihen_01_01"); //Get your hands off me!
 };
 
 INSTANCE Info_Mod_Bibliothekar_Buerger (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Bibliothekar_Buerger (C_INFO)
 	information	= Info_Mod_Bibliothekar_Buerger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du ein Buch über die Anfänge Khoratas?";
+	description	= "Do you have a book about the beginnings of khorata?";
 };
 
 FUNC INT Info_Mod_Bibliothekar_Buerger_Condition()
@@ -66,17 +66,17 @@ FUNC INT Info_Mod_Bibliothekar_Buerger_Condition()
 
 FUNC VOID Info_Mod_Bibliothekar_Buerger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_00"); //Hast du ein Buch über die Anfänge Khoratas?
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_01"); //(genervt) Ja, wirklich sehr schönes Wetter draußen ...
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_02"); //(verdutzt) Wie? Jemand fragt mich nach einem Buch?
-	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_03"); //Allerdings.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_04"); //Da muss ich doch gleich mal nachdenken.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_05"); //(freundlich) Damit solltest du was anfangen können. Ich habe es doppelt, also behalte es ruhig.
+	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_00"); //Do you have a book about the beginnings of khorata?
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_01"); //Yes, really very nice weather outside....
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_02"); //(shredded) How? Somebody ask me for a book?
+	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_03"); //Yes, indeed.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_04"); //I have to think about that.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_05"); //You should be able to work with that. I've got it double, so keep it quiet.
 
 	B_GiveInvItems	(self, hero, ItWr_KhorataGeschichte, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_06"); //Und wenn du dich für mehr interessierst, komm nur vorbei, es ist alles da!
-	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_07"); //Ich werd's mir merken. Danke.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_06"); //And if you're interested in more, just come by, it's all there!
+	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_07"); //I'll keep that in mind. Thanks.
 };
 
 INSTANCE Info_Mod_Bibliothekar_Glorie (C_INFO)
@@ -99,8 +99,8 @@ FUNC INT Info_Mod_Bibliothekar_Glorie_Condition()
 
 FUNC VOID Info_Mod_Bibliothekar_Glorie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_00"); //Wo habe ich bloß das verdammte Ding gelassen ...
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_01"); //(hält inne) Ihr seid es? Ohh, verzeiht vielmals, ich eile.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_00"); //Where the hell did I leave the damn thing...
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_01"); //You're the one? Ohh, pardon me, I'm in a hurry.
 
 	AI_GotoWP	(self, "REL_CITY_150");
 
@@ -110,7 +110,7 @@ FUNC VOID Info_Mod_Bibliothekar_Glorie_Info()
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_02"); //Hier, bitte sehr.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_02"); //Here you are, sir.
 
 	B_GiveInvItems	(self, hero, ItWr_DiebDokumente, 1);
 

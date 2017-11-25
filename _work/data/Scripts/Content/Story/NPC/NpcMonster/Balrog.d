@@ -1,6 +1,6 @@
 INSTANCE Balrog_Plateau	(Mst_Default_Firegolem)
 {
-	name	=	"Balrog";
+	name	=	"balrog";
 	
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_BALROG;

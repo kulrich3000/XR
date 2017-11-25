@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Jarvis_Hi_Condition()
 
 FUNC VOID Info_Mod_Jarvis_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jarvis_Hi_04_00"); //Du kommst mir irgendwie bekannt vor, aber ich bin mir nicht sicher. Du solltest auf jeden Fall bescheid wissen, dass du nun den inneren Teil des Lagers betrittst. Mach nicht zu viele Dummheiten, sonst ...
-	AI_Output(hero, self, "Info_Mod_Jarvis_Hi_15_01"); //Schmeißt du mich eigenhändig wieder raus?
-	AI_Output(self, hero, "Info_Mod_Jarvis_Hi_04_02"); //Nein, sonst kann es passieren, dass dich ein Orkjäger aus Sylvios Gruppe einen Kopf kürzer macht. Ist also zu deinem eigenen Besten.
+	AI_Output(self, hero, "Info_Mod_Jarvis_Hi_04_00"); //You seem kind of familiar, but I'm not sure. You should know that you are now entering the inner part of the camp. Don't do too much foolishness, or else....
+	AI_Output(hero, self, "Info_Mod_Jarvis_Hi_15_01"); //You kicking me out on your own?
+	AI_Output(self, hero, "Info_Mod_Jarvis_Hi_04_02"); //No, otherwise an orc hunter in Sylvio's group might make your head get shorter. So it's for your own good.
 };
 
 INSTANCE Info_Mod_Jarvis_Pickpocket (C_INFO)

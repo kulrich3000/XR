@@ -14,7 +14,7 @@ INSTANCE Info_PsiNov_2_EXIT(C_INFO)
 	condition	= Info_PsiNov_2_EXIT_Condition;
 	information	= Info_PsiNov_2_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_PsiNov_2_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_PsiNov_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_PsiNov_2_EinerVonEuchWerden_Condition;
 	information	= Info_PsiNov_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich will bei euch mitmachen.";
+	description = "I want to join you guys.";
 };                       
 
 FUNC INT Info_PsiNov_2_EinerVonEuchWerden_Condition()
@@ -54,9 +54,9 @@ FUNC INT Info_PsiNov_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_PsiNov_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_2_EinerVonEuchWerden_15_00"); //Ich will bei euch mitmachen.
-	AI_Output(self,hero,"Info_PsiNov_2_EinerVonEuchWerden_02_01"); //Du hast dich entschieden dich uns anzuschließen? Vor dir liegt ein Weg voller Freude und Glück.
-	AI_Output(self,hero,"Info_PsiNov_2_EinerVonEuchWerden_02_02"); //Gehe zu Cor Cadar, er entscheidet, für welche Aufgabe du am besten geeignet bist.
+	AI_Output(hero,self,"Info_PsiNov_2_EinerVonEuchWerden_15_00"); //I want to join you guys.
+	AI_Output(self,hero,"Info_PsiNov_2_EinerVonEuchWerden_02_01"); //You decided to join us? In front of you lies a path of joy and happiness.
+	AI_Output(self,hero,"Info_PsiNov_2_EinerVonEuchWerden_02_02"); //Go to Cor Cadar, he decides which task you are best suited for.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_PsiNov_2_WichtigePersonen(C_INFO)
 	condition	= Info_PsiNov_2_WichtigePersonen_Condition;
 	information	= Info_PsiNov_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer sind eure Anführer?";
+	description = "Who are your leaders?";
 };                       
 
 FUNC INT Info_PsiNov_2_WichtigePersonen_Condition()
@@ -79,9 +79,9 @@ FUNC INT Info_PsiNov_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_PsiNov_2_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_2_WichtigePersonen_15_00"); //Wer sind eure Anführer?
-	AI_Output(self,hero,"Info_PsiNov_2_WichtigePersonen_02_01"); //Cor Cadar und Cor Angar sind unsere geistigen Väter.
-	AI_Output(self,hero,"Info_PsiNov_2_WichtigePersonen_02_02"); //Sie sorgen dafür, dass wir in Sicherheit sind und die Krautproduktion ohne Schwierigkeiten verläuft.
+	AI_Output(hero,self,"Info_PsiNov_2_WichtigePersonen_15_00"); //Who are your leaders?
+	AI_Output(self,hero,"Info_PsiNov_2_WichtigePersonen_02_01"); //Cor Cadar and Cor Angar are our spiritual fathers.
+	AI_Output(self,hero,"Info_PsiNov_2_WichtigePersonen_02_02"); //They ensure that we are safe and that the herb production runs smoothly.
 };
 
 // *************************************************************************
@@ -94,7 +94,7 @@ INSTANCE Info_PsiNov_2_DasLager(C_INFO)
 	condition	= Info_PsiNov_2_DasLager_Condition;
 	information	= Info_PsiNov_2_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es wichtiges über diesen Ort zu wissen?";
+	description = "What's important to know about this place?";
 };                       
 
 FUNC INT Info_PsiNov_2_DasLager_Condition()
@@ -104,9 +104,9 @@ FUNC INT Info_PsiNov_2_DasLager_Condition()
 
 FUNC VOID Info_PsiNov_2_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_2_DasLager_15_00"); //Was gibt es wichtiges über diesen Ort zu wissen?
-	AI_Output(self,hero,"Info_PsiNov_2_DasLager_02_01"); //Es ist ein Ort des Glaubens, Bruder. Wir haben nicht viel, aber was wir haben, teilen wir gerne mit denen, die sich unsere Lehren anhören wollen.
-	AI_Output(self,hero,"Info_PsiNov_2_DasLager_02_02"); //Suche einen der Gurus auf, und lass deine Seele bereichern.
+	AI_Output(hero,self,"Info_PsiNov_2_DasLager_15_00"); //What's important to know about this place?
+	AI_Output(self,hero,"Info_PsiNov_2_DasLager_02_01"); //It's a place of faith, brother. We don't have much, but we like to share what we have with those who want to listen to our teachings.
+	AI_Output(self,hero,"Info_PsiNov_2_DasLager_02_02"); //Find one of the gurus and enrich your soul.
 };
 
 // *************************************************************************
@@ -119,7 +119,7 @@ INSTANCE Info_PsiNov_2_DieLage(C_INFO) // E1
 	condition	= Info_PsiNov_2_DieLage_Condition;
 	information	= Info_PsiNov_2_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_PsiNov_2_DieLage_Condition()
@@ -129,8 +129,8 @@ FUNC INT Info_PsiNov_2_DieLage_Condition()
 
 FUNC VOID Info_PsiNov_2_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_2_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,hero,"Info_PsiNov_2_DieLage_02_01"); //Ich habe wenig Zeit - muss mich um meine Aufgaben kümmern.
+	AI_Output(hero,self,"Info_PsiNov_2_DieLage_15_00"); //How's it looking?
+	AI_Output(self,hero,"Info_PsiNov_2_DieLage_02_01"); //I have little time - have to take care of my tasks.
 };
 
 INSTANCE Info_Mod_PsiNov_2_Pickpocket (C_INFO)

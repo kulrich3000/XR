@@ -1,7 +1,7 @@
 instance Mod_7213_NONE_Schlaeger_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Schläger"; 
+	name 		= "bat"; 
 	guild 		= GIL_OUT;
 	id 			= 7213;
 	voice 		= 8;

@@ -1,7 +1,7 @@
 instance Mod_7348_OUT_Buerger_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bürger";
+	name 		= "townspeople";
 	guild 		= GIL_OUT;
 	id 			= 7348;
 	voice 		= 1;

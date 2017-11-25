@@ -9,7 +9,7 @@ FUNC VOID B_Göttergefallen (var int GefallenArt, var int GefallenCounter)
 	var string GefallenMeldung;
 
 	GefallenMeldung = ConcatStrings("+", IntToString(GefallenCounter));
-	GefallenMeldung = ConcatStrings(GefallenMeldung, " Gesinnung für ");
+	GefallenMeldung = ConcatStrings(GefallenMeldung, " Attitude for ");
 
 	if (GefallenArt == 1)
 	{
@@ -21,7 +21,7 @@ FUNC VOID B_Göttergefallen (var int GefallenArt, var int GefallenCounter)
 	{
 		Adanos_Gefallen += GefallenCounter;
 
-		GefallenMeldung = ConcatStrings(GefallenMeldung, "Adanos");
+		GefallenMeldung = ConcatStrings(GefallenMeldung, "adanos");
 	}
 	else if (GefallenArt == 3)
 	{
@@ -37,8 +37,8 @@ FUNC VOID B_Göttergefallen (var int GefallenArt, var int GefallenCounter)
 		Mod_ErsteGesinnung = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_GESINNUNG, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_GESINNUNG, "Durch meine Taten scheint sich mein Ansehen bei den Göttern zu ändern. Jede der Hauptgilden gehört zu einer Gottheit, nur die Söldner scheinen da recht unanhängig zu sein. Die Nebengilden gehören zum Teil keinem Gott an. Aufträge für die Gilden, die einem Gott angehören, werde mich in dessen Ansehen steigern. Auch meine restlichen Taten wie Diebstähle werden in mein Ansehen einfließen.");
-		B_LogEntry	(TOPIC_MOD_GESINNUNG, "Je nach meiner Gesinnung und den äußeren Umständen, wird mir von der jeweiligen Gottheit ein Segen zuteil, der mich stärken und mir auf meinem Weg helfen wird.");
+		B_LogEntry	(TOPIC_MOD_GESINNUNG, "My actions seem to change my reputation with the gods. Each of the main guilds belongs to a deity, only the mercenaries seem to be quite independent. Some of the subordinate guilds do not belong to any god. Orders for the guilds belonging to a god will increase my reputation. The rest of my actions, such as thefts, will also be reflected in my reputation.");
+		B_LogEntry	(TOPIC_MOD_GESINNUNG, "Depending on my attitude and the external circumstances, a blessing is given to me by the respective deity, which will strengthen me and help me on my way.");
 	};
 
 	if (Innos_Gefallen > Beliar_Gefallen)

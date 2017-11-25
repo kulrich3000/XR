@@ -45,19 +45,19 @@ FUNC INT Info_Mod_Mil_333_Hi_Condition()
 
 FUNC VOID Info_Mod_Mil_333_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_36_00"); //Du willst hier rein, nehme ich an?
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_36_00"); //You want to come in here, I suppose?
 
 	Info_ClearChoices	(Info_Mod_Mil_333_Hi);
 
-	Info_AddChoice	(Info_Mod_Mil_333_Hi, "Ja, und du wirst mich nicht daran hindern.", Info_Mod_Mil_333_Hi_B);
-	Info_AddChoice	(Info_Mod_Mil_333_Hi, "Sieht so aus.", Info_Mod_Mil_333_Hi_A);
+	Info_AddChoice	(Info_Mod_Mil_333_Hi, "Yeah, and you're not gonna stop me.", Info_Mod_Mil_333_Hi_B);
+	Info_AddChoice	(Info_Mod_Mil_333_Hi, "Looks that way.", Info_Mod_Mil_333_Hi_A);
 };
 
 FUNC VOID Info_Mod_Mil_333_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Mil_333_Hi_B_15_00"); //Ja, und du wirst mich nicht daran hindern.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_B_36_00"); //(lacht) Oh, das macht mir ja Angst. Na los, komm doch, wenn du dich traust!
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_B_36_01"); //Und solltest du dir jetzt doch in die Hosen scheißen, dann versuch's lieber auf der anderen Seite bei Garond. Der ist heute für Verbrechergesocks zuständig.
+	AI_Output(hero, self, "Info_Mod_Mil_333_Hi_B_15_00"); //Yeah, and you're not gonna stop me.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_B_36_00"); //(laughs) Oh, that scares me. Come on, if you dare!
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_B_36_01"); //And if you should shit your pants now, then you'd better try it on the other side of Garond. He's in charge of criminal socks today.
 
 	Info_ClearChoices	(Info_Mod_Mil_333_Hi);
 
@@ -69,14 +69,14 @@ FUNC VOID Info_Mod_Mil_333_Hi_B()
 
 FUNC VOID Info_Mod_Mil_333_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Mil_333_Hi_A_15_00"); //Sieht so aus.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_01"); //Du bist wohl einer der Sträflinge, die aus dem Minental ausgebrochen sind?
-	AI_Output(hero, self, "Info_Mod_Mil_333_Hi_A_15_02"); //Kann sein.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_03"); //Bist du. Ich kenne jeden, der in der Stadt ein- und ausgeht. Aber dich habe ich noch nie gesehen.
-	AI_Output(hero, self, "Info_Mod_Mil_333_Hi_A_15_04"); //Darf ich denn jetzt vorbei?
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_05"); //Nicht bei mir. Garond will euch Kuppelbewohner selbst in Augenschein nehmen, bevor er euch reinlässt.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_06"); //Du wirst dich zum anderen Tor bemühen müssen.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_07"); //Aber versuch am besten, Garond gegenüber weniger ... frech zu sein. Er ist ein ziemlicher Kotzbrocken, und er kann euch so gar nicht leiden.
+	AI_Output(hero, self, "Info_Mod_Mil_333_Hi_A_15_00"); //Looks that way.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_01"); //You must be one of those convicts who escaped from the Minental.
+	AI_Output(hero, self, "Info_Mod_Mil_333_Hi_A_15_02"); //Maybe.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_03"); //You are. I know everyone who comes in and out of town. But I've never seen you before.
+	AI_Output(hero, self, "Info_Mod_Mil_333_Hi_A_15_04"); //Can I pass now?
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_05"); //Not with me. Garond wants to see the dome residents himself before he lets you in.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_06"); //You'll have to make an effort to get to the other gate.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi_A_36_07"); //But the best thing to do is to try Garond against less... to be impudent. He's a real piece of puke, and he doesn't like you guys at all.
 
 	Info_ClearChoices	(Info_Mod_Mil_333_Hi);
 
@@ -113,11 +113,11 @@ FUNC INT Info_Mod_Mil_333_Hi2_Condition()
 
 FUNC VOID Info_Mod_Mil_333_Hi2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi2_36_00"); //Du willst hier rein, nehme ich an?
-	AI_Output(hero, self, "Info_Mod_Mil_333_Hi2_15_01"); //Sieht so aus.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi2_36_02"); //Ich habe dich noch nie gesehen.
-	AI_Output(hero, self, "Info_Mod_Mil_333_Hi2_15_03"); //Ich war aber schon beim anderen Stadttor. Frag Garond, wenn du mir nicht glaubst.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Hi2_36_04"); //Nee, lass mal, ich hab heute noch was Besseres vor. Na gut, komm rein.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi2_36_00"); //You want to come in here, I suppose?
+	AI_Output(hero, self, "Info_Mod_Mil_333_Hi2_15_01"); //Looks that way.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi2_36_02"); //I've never seen you before.
+	AI_Output(hero, self, "Info_Mod_Mil_333_Hi2_15_03"); //But I was already at the other gate. Ask Garond if you don't believe me.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Hi2_36_04"); //Nah, let me tell you, I've got something better to do today. All right, come on in.
 };
 
 INSTANCE Info_Mod_Mil_333_TomKraut (C_INFO)
@@ -142,7 +142,7 @@ FUNC INT Info_Mod_Mil_333_TomKraut_Condition()
 
 FUNC VOID Info_Mod_Mil_333_TomKraut_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mil_333_TomKraut_36_00"); //Ohh, mein Kopf ... er fühlt sich an wie leergesaugt.
+	AI_Output(self, hero, "Info_Mod_Mil_333_TomKraut_36_00"); //Ohh, my head... he feels empty-sucked.
 
 	AI_StopProcessInfos	(self);
 };
@@ -167,26 +167,26 @@ FUNC INT Info_Mod_Mil_333_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Mil_333_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_00"); //Ahh, schon wieder einer dieser verrückten Ausflügler.
-	AI_Output(hero, self, "Info_Mod_Mil_333_Daemonisch_15_01"); //Was meinst du mit verrückt? Und welche Ausflügler?
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_02"); //Eben die ganzen Bürger, die immer wieder durchs Stadttor kommen.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_03"); //In letzter Zeit sind es verdammt viele geworden. Und verrückt ist das, was so in letzter Zeit alles in der Nähe der Stadttore passiert.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_00"); //Ahh, one of those crazy excursionists again.
+	AI_Output(hero, self, "Info_Mod_Mil_333_Daemonisch_15_01"); //What do you mean, crazy? And what excursionists?
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_02"); //All the citizens who keep coming through the city gates.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_03"); //There's been a hell of a lot of them lately. And crazy is what's been happening around the city gates lately.
 
 	B_Say	(hero, self, "$WASMEINSTDU");
 
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_04"); //Na ja, zunächst die Banditen in dem kleinen Tal vor der Stadt.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_05"); //Ein Bürger hat sie entdeckt und einige Paladine und Stadtwachen abends dorthin geführt.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_06"); //Tengron, der eigentlich in der Stadt Wache halten sollte, hat es nicht auf seinem Posten ausgehalten und lief später nach.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_07"); //Es dauerte gar nicht lange, da kam er schreiend zurück und berichtete etwas von finsteren Schatten.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_08"); //Ja, ja, haha, Schatten in der Nacht, dem muss sein heiliges Licht zu sehr auf die Rübe geschienen haben.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_09"); //Von den anderen, die einige Zeit später zurückkamen, erfuhren wir, dass er in Tobsucht verfiel und jeden angriff. Seitdem sitzt er in der Arrestzelle ...
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_10"); //Und dann noch Brian. Kam vor gar nicht langer Zeit aus der Stadt gestürmt, stammelte irgendetwas von Bedrohung der Stadt und finsteren Schatten.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_11"); //Ist dann Richtung Orlan zwischen den Bäumen verschwunden.
-	AI_Output(hero, self, "Info_Mod_Mil_333_Daemonisch_15_12"); //Ähh, ist das nicht irgendwie ein Grund für dich, dir Sorgen zu machen?
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_13"); //Wieso? Die Paladine durchforsten so oft abends die dunklen Wälder, dass man sich nicht sicherer fühlen kann.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_14"); //Die beiden Paladine die jedoch vor ein paar Tagen in das kleine Waldstück nördlich von uns gegangen sind, lassen sich aber echt Zeit, alles nach Banditen zu durchsuchen.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_04"); //Well, first of all the bandits in the small valley in front of the city.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_05"); //A citizen has discovered them and led some paladins and city guards to them in the evening.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_06"); //Tengron, who was supposed to be guarding the town, couldn't stand it at his post and ran after him.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_07"); //It didn't take long before he came back screaming and reported something of dark shadows.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_08"); //Yes, yes, haha, shadows in the night, to him his holy light must have shone too much on the turnip.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_09"); //From the others, who came back some time later, we learned that he fell into Tobucht and attacked everyone. He's been in the holding cell ever since...
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_10"); //And then there's Brian. Came out of town not long ago, something was stammering about threat to the city and dark shadows.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_11"); //Then disappeared in the direction of Orlan between the trees.
+	AI_Output(hero, self, "Info_Mod_Mil_333_Daemonisch_15_12"); //Uh, isn't that kind of a reason for you to worry?
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_13"); //Why? The paladins often comb through the dark forests in the evenings so often that one cannot feel safer.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch_36_14"); //The two paladins, who went to the small woodland north of us a few days ago, let themselves however really time to search everything for bandits.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Mann, die Torwache scheint sich ja auch über gar nichts zu wundern. Ein Bürger hatte Paladine und Stadtwachen abends ins kleine Tal geführt, wo sich angeblich Banditen befanden. Tengron, der ihnen etwas später nachging, kam verstört zurückgelaufen und berichtete von finsteren Schatten. Die Begleiter, die später zurückkamen, behaupteten, er hätte sie angegriffen und sei verrückt geworden. Seitdem sitzt er im Gefängnis. Brian kam bei anderer Gelegenheit ebenfalls verängstigt zum Stadttor gelaufen und murmelte von schwarzen Schatten und einer Bedrohung der Stadt. Zuletzt erfuhr ich noch, dass zwei Paladine im nördlichen Waldstück beim Osttor verschwunden sind.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Man, the gatekeeper doesn't seem to be surprised at anything. A citizen had led Paladins and guards into the valley in the evening, where bandits were supposedly standing. Tengron, who followed them a little later, came back disturbed and reported dark shadows. The companions who came back later claimed that he had attacked them and had gone mad. He's been in prison ever since. On another occasion, Brian came running scared to the city gate and muttered of black shadows and a threat to the city. Finally I learned that two paladins in the northern forest near the east gate have disappeared.");
 
 	B_GivePlayerXP	(150);
 };
@@ -215,7 +215,7 @@ FUNC INT Info_Mod_Mil_333_Daemonisch2_Condition()
 
 FUNC VOID Info_Mod_Mil_333_Daemonisch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch2_36_00"); //Halt, erst den Schluck Klosterwein trinken.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Daemonisch2_36_00"); //Stop, first drink a glass of monastery wine.
 
 	B_GiveInvItems	(self, hero, ItFo_KWine, 1);
 
@@ -232,7 +232,7 @@ INSTANCE Info_Mod_Mil_333_Mario (C_INFO)
 	information	= Info_Mod_Mil_333_Mario_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist es erlaubt, über die Stadtmauer zu klettern?";
+	description	= "Is it allowed to climb over the city wall?";
 };
 
 FUNC INT Info_Mod_Mil_333_Mario_Condition()
@@ -245,15 +245,15 @@ FUNC INT Info_Mod_Mil_333_Mario_Condition()
 
 FUNC VOID Info_Mod_Mil_333_Mario_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mil_333_Mario_15_00"); //Ist es erlaubt, über die Stadtmauer zu klettern?
-	AI_Output(self, hero, "Info_Mod_Mil_333_Mario_36_01"); //(lacht) Stadtmauern sind so geplant, dass niemand rüber klettern kann.
-	AI_Output(hero, self, "Info_Mod_Mil_333_Mario_15_02"); //Ach so. Da hinten tun das aber zwei Kerle.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Mario_36_03"); //Was?! Wo?
-	AI_Output(hero, self, "Info_Mod_Mil_333_Mario_15_04"); //Na, Richtung Westen. Ein ganzes Stück.
-	AI_Output(hero, self, "Info_Mod_Mil_333_Mario_15_05"); //Als ich sie gefragt habe, was sie da wollen, sagten sie, ich solle mich verpissen.
-	AI_Output(self, hero, "Info_Mod_Mil_333_Mario_36_06"); //Bei Innos! Immer wenn ICH Dienst habe!
+	AI_Output(hero, self, "Info_Mod_Mil_333_Mario_15_00"); //Is it allowed to climb over the city wall?
+	AI_Output(self, hero, "Info_Mod_Mil_333_Mario_36_01"); //(laughs) City walls are designed so that no one can climb over them.
+	AI_Output(hero, self, "Info_Mod_Mil_333_Mario_15_02"); //Oh, I see. There's two guys back there doing that.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Mario_36_03"); //What?! Where?
+	AI_Output(hero, self, "Info_Mod_Mil_333_Mario_15_04"); //Well, heading west. A whole piece.
+	AI_Output(hero, self, "Info_Mod_Mil_333_Mario_15_05"); //When I asked them what they were doing, they told me to fuck off.
+	AI_Output(self, hero, "Info_Mod_Mil_333_Mario_36_06"); //At Innos! Whenever I'm on duty!
 
-	B_LogEntry	(TOPIC_MOD_MARIO_FLUCHTHILFE, "Die Stadtwachen sind abgelenkt.");
+	B_LogEntry	(TOPIC_MOD_MARIO_FLUCHTHILFE, "The city guards are distracted.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -278,17 +278,17 @@ FUNC INT Info_Mod_Mil_333_HaradLehrling_Condition()
 
 FUNC VOID Info_Mod_Mil_333_HaradLehrling_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mil_333_HaradLehrling_36_00"); //Stopp. Du bist doch der Lehrling von Harad, oder?
-	AI_Output(hero, self, "Info_Mod_Mil_333_HaradLehrling_15_01"); //Ja, schon ...
-	AI_Output(self, hero, "Info_Mod_Mil_333_HaradLehrling_36_02"); //Auf Anweisung Tengrons müssen wir dich durchsuchen. Einen kleinen Moment, bitte ...
+	AI_Output(self, hero, "Info_Mod_Mil_333_HaradLehrling_36_00"); //Stop. You're Harad's apprentice, aren't you?
+	AI_Output(hero, self, "Info_Mod_Mil_333_HaradLehrling_15_01"); //Yes, yes...
+	AI_Output(self, hero, "Info_Mod_Mil_333_HaradLehrling_36_02"); //By order of Tengrons, we have to search you. Just a moment, please....
 
 	AI_PlayAni	(self, "T_PLUNDER");
 
-	AI_Output(self, hero, "Info_Mod_Mil_333_HaradLehrling_36_03"); //Um dieses Waffenbündel ging es. Damit verstößt Harad gegen eine Bestimmung Tengrons. Wir müssen es an uns nehmen.
+	AI_Output(self, hero, "Info_Mod_Mil_333_HaradLehrling_36_03"); //That's what this gun bunch was all about. Harad thus violates a provision of Tengron. We have to take it.
 
 	B_GiveInvItems	(hero, self, ItMi_Waffenbuendel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Mil_333_HaradLehrling_36_04"); //Dass Harad versucht, es durch dich zu den Söldnern zu schmuggeln, wird ernsthafte Konsequenzen für ihn haben.
+	AI_Output(self, hero, "Info_Mod_Mil_333_HaradLehrling_36_04"); //Harad trying to smuggle it through you to the mercenaries will have serious consequences for him.
 
 	AI_StopProcessInfos	(self);
 };
@@ -347,25 +347,25 @@ func void DIA_Mil_333_Stadtwache_FirstWarn_Info()
 	// ------ PETZMASTER LIGHT ------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 	{
-		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //(seufzt) Was denn?
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_02"); //Das weißt du ganz genau!
+		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //(sighs) What is it?
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_02"); //You know very well!
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_03"); //Du wirst in der Stadt als Mörder gesucht!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_03"); //You're wanted in town for murder!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_04"); //Dreckige Diebe brauchen wir hier nicht!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_04"); //We don't need dirty thieves here!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_05"); //Unruhestifter können wir in unserer Stadt nicht gebrauchen!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_05"); //We don't need troublemakers in our town!
 		};
 	
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_06"); //Warum, glaubst du, sollten wir dich reinlassen?
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_06"); //Why do you think we should let you in?
 	}
 	else // ------ normales Reinkommen ------
 	{
@@ -374,13 +374,13 @@ func void DIA_Mil_333_Stadtwache_FirstWarn_Info()
 		// ------ ohne Rüstung ODER als Bauer ------
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		{
-			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //Ja?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_08"); //Du siehst aus wie ein armer Wicht. Leute ohne Geld können wir in der Stadt nicht gebrauchen.
+			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //Yes?
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_08"); //You look like a poor wretch. We can't have people without money in town.
 		}
  	 	else 
 		{
-			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //(ruhig) Was?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_16"); //Wollte dich nur mal ansehen. Na ja, sieht aus, als ob du Geld hättest. Kannst reingehen.
+			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //(quietly) What?
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_36_16"); //Just checking in on you. Well, looks like you have money. You can go in.
 			
 			self.aivar[AIV_PASSGATE] = TRUE;
 			Mil_333_schonmalreingelassen = TRUE;
@@ -420,7 +420,7 @@ FUNC INT DIA_Mil_333_Stadtwache_SecondWarn_Condition()
 
 func void DIA_Mil_333_Stadtwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_36_00"); //Kein Durchgang für dich, habe ich doch schon erwähnt.
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_36_00"); //No passageway for you, I already mentioned.
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,Mil_333_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -458,7 +458,7 @@ func void DIA_Mil_333_Stadtwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_36_00"); //Du hast es so gewollt ...
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_36_00"); //You asked for it...
 	
 	AI_StopProcessInfos	(self);			
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -476,7 +476,7 @@ INSTANCE DIA_Mil_333_Stadtwache_Bribe (C_INFO)
 	condition	= DIA_Mil_333_Stadtwache_Bribe_Condition;
 	information	= DIA_Mil_333_Stadtwache_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Hier sind 100 Goldstücke. Lass mich rein!";
+	description	= "Here's 100 pieces of gold. Let me in!";
 };                       
 
 FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
@@ -489,15 +489,15 @@ FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
 	
 func void DIA_Mil_333_Stadtwache_Bribe_Info()
 {
-	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Hier sind 100 Goldstücke. Lass mich rein!
+	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Here's 100 pieces of gold. Let me in!
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 100))
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_36_01"); //(gierig) 100 Goldstücke klingen gut. Dann mal immer rein mit dir.
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_36_01"); //100 gold pieces sound good. Well, get in there.
 		
 		if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_36_02"); //Und geh direkt zu Andre! Sonst knöpf ich dir beim nächsten Mal wieder 100 Goldstücke ab!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_36_02"); //And go straight to Andre! Or I'll take 100 gold pieces off you next time!
 		};
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
@@ -508,7 +508,7 @@ func void DIA_Mil_333_Stadtwache_Bribe_Info()
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_36_03"); //Was?! Wo?! Ich sehe keine 100 Goldmünzen. Hau ab!
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_36_03"); //What?! Where?! I don't see 100 gold coins. Get out of here!
 	};
 	
 	AI_StopProcessInfos (self);
@@ -540,7 +540,7 @@ FUNC INT DIA_Mil_333_Stadtwache_PERM_Condition()
 	
 func void DIA_Mil_333_Stadtwache_PERM_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_PERM_36_00"); //Weitergehen!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_PERM_36_00"); //Keep moving!
 	
 	AI_StopProcessInfos (self);
 };

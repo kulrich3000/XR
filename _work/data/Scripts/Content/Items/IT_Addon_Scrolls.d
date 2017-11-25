@@ -445,7 +445,7 @@ INSTANCE ItSc_ModifiedZap (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Modifizierter Blitz";
+	description			=	"Modified Flash";
 
 	TEXT	[0]			=	Name_MageScroll	;
 	

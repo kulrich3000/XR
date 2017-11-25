@@ -1,7 +1,7 @@
 instance Mod_7744_OUT_Dieb_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dieb"; 
+	name 		= "thief"; 
 	guild 		= GIL_STRF;
 	id 			= 7744;
 	voice 		= 7;

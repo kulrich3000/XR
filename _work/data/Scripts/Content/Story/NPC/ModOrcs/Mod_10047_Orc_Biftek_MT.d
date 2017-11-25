@@ -1,7 +1,7 @@
 INSTANCE Mod_10047_Orc_Biftek_MT (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Biftek";
+	name							=	"biftek";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	10047;
 	voice							=	18;

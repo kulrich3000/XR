@@ -1,7 +1,7 @@
 instance Mod_576_NONE_Fernando_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fernando"; 
+	name 		= "remote"; 
 	guild 		= GIL_PAL;
 	id 			= 576;
 	voice 		= 14;

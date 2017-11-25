@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Balthasar_Hi (C_INFO)
 	information	= Info_Mod_Balthasar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Balthasar_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Balthasar_Hi_Condition()
 FUNC VOID Info_Mod_Balthasar_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Balthasar_Hi_05_01"); //Ich bin Balthasar und hier der Schafshirte.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Hi_05_01"); //I'm Balthazar and here is the shepherd.
 };
 
 INSTANCE Info_Mod_Balthasar_Untier (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Balthasar_Untier (C_INFO)
 	information	= Info_Mod_Balthasar_Untier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hattest nicht zufällig in letzter Zeit eine Begegnung mit einem Raubtier, welches ...";
+	description	= "You haven't happened to have had an encounter with a predator lately, which....";
 };
 
 FUNC INT Info_Mod_Balthasar_Untier_Condition()
@@ -43,43 +43,43 @@ FUNC INT Info_Mod_Balthasar_Untier_Condition()
 
 FUNC VOID Info_Mod_Balthasar_Untier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Balthasar_Untier_15_00"); //Du hattest nicht zufällig in letzter Zeit eine Begegnung mit einem Raubtier, welches ...
-	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_01"); //(aufgeregt) Ja, das will ich aber meinen. Erst vor zwei Tagen konnte ich mich nur mit Mühe meiner Haut erwähren.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_02"); //Es war früh morgens, ich war gerade aufgestanden und hatte die Schafe auf die Weide getrieben, als ich ein Geräusch hinter der Scheune hörte.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_03"); //Neugierig und beunruhigt zog ich meine Waffe und ging nachsehen.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_04"); //Als ich jedoch hinter die Scheune trat, stockte mir der Atem: Da stand ein mannshohes Untier auf allen Vieren und fauchte mich an.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_05"); //Noch  bevor ich zum Schlag ausholen konnte sprang es mich an und meine Waffe fiel zu Boden.
+	AI_Output(hero, self, "Info_Mod_Balthasar_Untier_15_00"); //You haven't happened to have had an encounter with a predator lately, which....
+	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_01"); //Yeah, that's what I want to say. Only two days ago, I could hardly survive on my skin.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_02"); //It was early in the morning, I had just got up and had driven the sheep to the pasture when I heard a noise behind the barn.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_03"); //Curious and worried, I pulled out my gun and went looking for it.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_04"); //But when I stepped behind the barn, my breath paused: There was a man-sized beast standing on all fours and hissing at me.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_05_05"); //Even before I could catch up to the blow it jumped at me and my weapon fell to the ground.
 
 	Info_ClearChoices	(Info_Mod_Balthasar_Untier);
 
-	Info_AddChoice	(Info_Mod_Balthasar_Untier, "Für ausschweifende Erklärungen habe ich jetzt keine Zeit.", Info_Mod_Balthasar_Untier_B);
-	Info_AddChoice	(Info_Mod_Balthasar_Untier, "(weiter)", Info_Mod_Balthasar_Untier_A);
+	Info_AddChoice	(Info_Mod_Balthasar_Untier, "I don't have time for too much talk now.", Info_Mod_Balthasar_Untier_B);
+	Info_AddChoice	(Info_Mod_Balthasar_Untier, "(more)", Info_Mod_Balthasar_Untier_A);
 };
 
 FUNC VOID Info_Mod_Balthasar_Untier_C()
 {
-	AI_Output(hero, self, "Info_Mod_Balthasar_Untier_C_15_00"); //Danke, das war alles, was ich wissen wollte.
+	AI_Output(hero, self, "Info_Mod_Balthasar_Untier_C_15_00"); //Thank you, that's all I wanted to know.
 	
 	Info_ClearChoices	(Info_Mod_Balthasar_Untier);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Balthasar berichtete, dass er von einer Bestie überfallen worden sei, die dann Richtung Taverne weiterlief.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Balthasar reported that he was attacked by a beast, which then went on towards the tavern.");
 
 	B_GivePlayerXP	(100);
 };
 
 FUNC VOID Info_Mod_Balthasar_Untier_B()
 {
-	AI_Output(hero, self, "Info_Mod_Balthasar_Untier_B_15_00"); //Für ausschweifende Erklärungen habe ich jetzt keine Zeit. Es ist wieder entschwunden? Wenn ja, wohin.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_B_05_01"); //Öhh, ja, zum Schluss lief es Richtung Orlans Taverne.
+	AI_Output(hero, self, "Info_Mod_Balthasar_Untier_B_15_00"); //I don't have time for too much talk now. It's disappeared again? If so, where to.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_B_05_01"); //Uh, yeah, it ended up heading for Orlan's tavern.
 	
 	Info_Mod_Balthasar_Untier_C();
 };
 
 FUNC VOID Info_Mod_Balthasar_Untier_A()
 {
-	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_A_05_00"); //Es stand über mich gebeugt und wollte zum Biss ausholen, als ich schnell seinen Kopf umklammerte und fest zudrückte.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_A_05_01"); //Ja, als Hirte muss man nämlich schnell handeln können, wenn es drauf ankommt.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_A_05_02"); //Mit der anderen Hand erteilte ich ihm Faustschläge und drückte ihm zuletzt mit den Fingern in die Augen, worauf es sich fauchend losriss und in Richtung Orlans Taverne lief.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_A_05_00"); //It stood over me bent over me and wanted to reach out to the bite, when I quickly clutched his head and pressed it tightly.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_A_05_01"); //Yes, as a shepherd you have to be able to act quickly when it matters.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Untier_A_05_02"); //With the other hand I punched him with fists and finally pressed him with my fingers into the eyes, whereupon it teared itself away and ran into the direction of Orlan's tavern.
 	
 	Info_Mod_Balthasar_Untier_C();
 };
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_Balthasar_Unheil (C_INFO)
 	information	= Info_Mod_Balthasar_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist in letzter Zeit etwas Ungewöhnliches passiert?";
+	description	= "Has anything unusual happened lately?";
 };
 
 FUNC INT Info_Mod_Balthasar_Unheil_Condition()
@@ -106,11 +106,11 @@ FUNC INT Info_Mod_Balthasar_Unheil_Condition()
 
 FUNC VOID Info_Mod_Balthasar_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Balthasar_Unheil_15_00"); //Ist in letzter Zeit etwas Ungewöhnliches passiert?
-	AI_Output(self, hero, "Info_Mod_Balthasar_Unheil_05_01"); //(etwas debil) Ja, allerdings. Da laufen ganz üble Untote auf dem Friedhof umher.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Unheil_05_02"); //Und meinen Schafen geht’s auch nicht so gut zur Zeit. Einige haben sogar angefangen zu lahmen.
+	AI_Output(hero, self, "Info_Mod_Balthasar_Unheil_15_00"); //Has anything unusual happened lately?
+	AI_Output(self, hero, "Info_Mod_Balthasar_Unheil_05_01"); //(slightly moronic) Yes, indeed. There are some nasty undead running around the cemetery.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Unheil_05_02"); //And my sheep don't feel so good at the moment. Some have even started to be lame.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Balthasars Schafe lahmen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Balthazar's sheep are lame.");
 
 	Mod_HinweiseDerBauernZuHexen += 1;
 };
@@ -123,7 +123,7 @@ INSTANCE Info_Mod_Balthasar_Hirte (C_INFO)
 	information	= Info_Mod_Balthasar_Hirte_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sekob meint du hättest was für mich zu tun.";
+	description	= "Sekob thinks you have something to do for me.";
 };
 
 FUNC INT Info_Mod_Balthasar_Hirte_Condition()
@@ -137,13 +137,13 @@ FUNC INT Info_Mod_Balthasar_Hirte_Condition()
 
 FUNC VOID Info_Mod_Balthasar_Hirte_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Balthasar_Hirte_15_00"); //Sekob meint du hättest was für mich zu tun.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Hirte_05_01"); //Du könntest mal kurz auf die Schafe aufpassen, ich muss nämlich mal.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Hirte_05_02"); //Sag bescheid wenn du bereit bist.
+	AI_Output(hero, self, "Info_Mod_Balthasar_Hirte_15_00"); //Sekob thinks you have something to do for me.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Hirte_05_01"); //You could watch the sheep for a minute, because I have to go.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Hirte_05_02"); //Let me know when you're ready.
 
 	Log_CreateTopic	(TOPIC_MOD_BALTHASAR_SCHAFE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BALTHASAR_SCHAFE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BALTHASAR_SCHAFE, "Ich soll für Balthasar kurz auf seine Schafe aufpassen während er sich erleichtert.");
+	B_LogEntry	(TOPIC_MOD_BALTHASAR_SCHAFE, "I'm supposed to take care of his sheep for Balthasar while he relieves himself.");
 };
 
 INSTANCE Info_Mod_Balthasar_Bereit (C_INFO)
@@ -154,7 +154,7 @@ INSTANCE Info_Mod_Balthasar_Bereit (C_INFO)
 	information	= Info_Mod_Balthasar_Bereit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ok, ich bin bereit.";
+	description	= "Okay, I'm ready.";
 };
 
 FUNC INT Info_Mod_Balthasar_Bereit_Condition()
@@ -167,8 +167,8 @@ FUNC INT Info_Mod_Balthasar_Bereit_Condition()
 
 FUNC VOID Info_Mod_Balthasar_Bereit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Balthasar_Bereit_15_00"); //Ok, ich bin bereit.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Bereit_05_01"); //Gut, ich bin dann mal weg.
+	AI_Output(hero, self, "Info_Mod_Balthasar_Bereit_15_00"); //Okay, I'm ready.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Bereit_05_01"); //All right, I'm out of here.
 
 	AI_StopProcessInfos	(self);
 
@@ -198,16 +198,16 @@ FUNC INT Info_Mod_Balthasar_Wolf_Condition()
 
 FUNC VOID Info_Mod_Balthasar_Wolf_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Balthasar_Wolf_05_00"); //Was ist denn hier passiert?
-	AI_Output(hero, self, "Info_Mod_Balthasar_Wolf_15_01"); //Kurz nachdem du weg warst hat mich ein Rudel Wölfe angegriffen. Aber ich konnte sie aufhalten.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Wolf_05_02"); //Danke, was hätte ich nur ohne dich gemacht.
-	AI_Output(self, hero, "Info_Mod_Balthasar_Wolf_05_03"); //Nimm diese Münzen als Dank.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Wolf_05_00"); //What the hell happened here?
+	AI_Output(hero, self, "Info_Mod_Balthasar_Wolf_15_01"); //A pack of wolves attacked me right after you left. But I could stop them.
+	AI_Output(self, hero, "Info_Mod_Balthasar_Wolf_05_02"); //Thank you, what would I have done without you?
+	AI_Output(self, hero, "Info_Mod_Balthasar_Wolf_05_03"); //Take these coins as a thank you.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BALTHASAR_SCHAFE, "Balthasar ist zufrieden mit mir.");
+	B_LogEntry	(TOPIC_MOD_BALTHASAR_SCHAFE, "Balthasar is happy with me.");
 	B_SetTopicStatus	(TOPIC_MOD_BALTHASAR_SCHAFE, LOG_SUCCESS);
 
 	Mdl_RemoveOverlayMDS (self,"HUMANS_FLEE.MDS");

@@ -29,7 +29,7 @@ INSTANCE DIA_MIL_6_JOIN(C_INFO)
 	condition	= DIA_MIL_6_JOIN_Condition;
 	information	= DIA_MIL_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Was muß ich tun, um mich der Miliz anzuschließen?";
+	description = "What do I have to do to join the militia?";
 };                       
 
 FUNC INT DIA_MIL_6_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_MIL_6_JOIN_Condition()
 
 FUNC VOID DIA_MIL_6_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_MIL_6_JOIN_15_00"); //Was muss ich tun, um mich der Miliz anzuschließen?
-	AI_Output (self, hero, "DIA_MIL_6_JOIN_06_01"); //Geh zu Lord Andre und rede mit ihm. Er kümmert sich um die Neulinge.
+	AI_Output (hero, self, "DIA_MIL_6_JOIN_15_00"); //What do I have to do to join the militia?
+	AI_Output (self, hero, "DIA_MIL_6_JOIN_06_01"); //Go to Lord Andre and talk to him. He takes care of the newcomers.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_MIL_6_PEOPLE(C_INFO)
 	condition	= DIA_MIL_6_PEOPLE_Condition;
 	information	= DIA_MIL_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Erzähl mir etwas über die Paladine.";
+	description = "Tell me about the paladin.";
 };                       
 
 FUNC INT DIA_MIL_6_PEOPLE_Condition()
@@ -68,10 +68,10 @@ FUNC INT DIA_MIL_6_PEOPLE_Condition()
 
 FUNC VOID DIA_MIL_6_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_MIL_6_PEOPLE_15_00"); //Erzähl mir etwas über die Paladine.
-	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_01"); //Sie kontrollieren die ganze Stadt. Vor allem das obere Viertel wird streng überwacht.
-	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_02"); //Sie lassen da niemanden mehr rein. Außer die Bürger der Stadt und die Miliz natürlich.
-	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_03"); //Es gibt auch noch einige Paladine am Hafen, die das Schiff bewachen. Aber die sind alles andere als gesprächig.
+	AI_Output (hero, self, "DIA_MIL_6_PEOPLE_15_00"); //Tell me about the paladin.
+	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_01"); //They control the whole town. The upper quarter in particular is closely monitored.
+	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_02"); //You're not letting anyone in there anymore. Except the townspeople and the militia, of course.
+	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_03"); //There are also some paladins at the harbour who guard the ship. But they're anything but talkative.
 };
 
 // *************************************************************************
@@ -83,7 +83,7 @@ INSTANCE DIA_MIL_6_LOCATION(C_INFO)
 	condition	= DIA_MIL_6_LOCATION_Condition;
 	information	= DIA_MIL_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was gibt es über diese Stadt zu wissen?";
+	description = "What's there to know about this town?";
 };                       
 
 FUNC INT DIA_MIL_6_LOCATION_Condition()
@@ -93,11 +93,11 @@ FUNC INT DIA_MIL_6_LOCATION_Condition()
 
 FUNC VOID DIA_MIL_6_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_MIL_6_LOCATION_15_00"); //Was gibt es über diese Stadt zu wissen?
-	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_01"); //Die Paladine haben die Kontrolle über die ganze Stadt. Die gesamte Miliz untersteht ihnen.
-	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_02"); //Der Kommandant der Miliz ist Lord Andre, er übt auch gleichzeitig das Amt des Richters aus.
-	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_03"); //Wenn du jemals mit dem Gesetz in Konflikt geraten solltest, wirst du dich vor ihm rechtfertigen müssen.
-	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_04"); //Aber er ist recht gnädig, nach allem, was man hört. Die meisten Fälle lässt er mit einer Geldstrafe davonkommen.
+	AI_Output (hero, self, "DIA_MIL_6_LOCATION_15_00"); //What's there to know about this town?
+	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_01"); //The Paladins are in control of the entire city. The entire militia is subordinate to them.
+	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_02"); //The commander of the militia is Lord Andre, who is also the judge.
+	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_03"); //If you ever get into conflict with the law, you'll have to justify yourself to him.
+	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_04"); //But he's quite gracious, by all accounts. Most of the cases he gets away with a fine.
 	
 };
 

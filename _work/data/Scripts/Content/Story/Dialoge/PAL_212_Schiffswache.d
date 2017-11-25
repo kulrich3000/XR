@@ -29,7 +29,7 @@ instance DIA_Pal_212_Schiffswache_WERSEIDIHR		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Info;
 
-	description	 = 	"Wer seid ihr?";
+	description	 = 	"Who are you people?";
 };
 
 func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
@@ -42,8 +42,8 @@ func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
 
 func void DIA_Pal_212_Schiffswache_WERSEIDIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //Wer seid ihr?
-	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Wir sind die Abgesandten des Königs Rhobar, die Diener Innos', und werden im Volksmund auch Paladine genannt.
+	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //Who are you people?
+	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //We are the ambassadors of King Rhobar, the servants of Innos, and are commonly known as Paladins.
 };
 
 
@@ -56,7 +56,7 @@ instance DIA_Pal_212_Schiffswache_WASMACHSTDU2		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info;
 
-	description	 = 	"Was macht ihr hier?";
+	description	 = 	"What are you guys doing here?";
 };
 
 func int DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition ()
@@ -66,22 +66,22 @@ func int DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition ()
 
 func void DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info ()
 {
-	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_15_00"); //Was macht ihr hier?
+	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_15_00"); //What are you guys doing here?
 
 	if (MIS_ShipIsFree == FALSE)
 	{
 		if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Auf das Schiff kommst du nicht. Das ist alles, was du wissen musst.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //You can't get on the ship. That's all you need to know.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Wir sind hier zur Wache eingeteilt. Kein Unbefugter darf das Schiff betreten. Auch du nicht, tut mir Leid.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //We're on guard duty here. No unauthorized person may enter the ship. Not you either, I'm sorry.
 		};
 	}
 	else
 	{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //Hier meine Zeit verplempern. Ich wäre viel lieber bei unseren Brüdern im Minental.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //I'm wasting my time here. I'd much rather be with our brothers in the Minental.
 	};
 	AI_StopProcessInfos (self);
 };

@@ -1,7 +1,7 @@
 INSTANCE Mod_10044_Orc_Bollok_MT (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Bollok";
+	name							=	"polloc";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	10044;
 	voice							=	18;

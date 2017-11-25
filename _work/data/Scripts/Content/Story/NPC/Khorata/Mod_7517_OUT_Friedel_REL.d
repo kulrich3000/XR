@@ -1,7 +1,7 @@
 instance Mod_7517_OUT_Friedel_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Friedel"; 
+	name 		= "cobble"; 
 	guild 		= GIL_OUT;
 	id 			= 7517;
 	voice 		= 1;

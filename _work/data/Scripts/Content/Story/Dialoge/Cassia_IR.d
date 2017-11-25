@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Cassia_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Cassia_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Hi_16_00"); //Hmm, sehr prunkvoll wirkt dieses Refugium mächtiger Dämonen ja nicht.
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Hi_16_01"); //Ich hoffe die Reise wird sich lohnen ... die wenigen Goldmünzen auf dem Schiff ersetzen noch nicht den Aufwand.
-	AI_Output(hero, self, "Info_Mod_Cassia_IR_Hi_15_02"); //Alles zu seiner Zeit. Wenn wir erst mal weiter ins Inselinnere vorstoßen wird bestimmt das eine oder andere wertvolle Stück abfallen.
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Hi_16_03"); //Wir werden sehen ...
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Hi_16_00"); //Hmm, this sanctuary of mighty demons doesn't look very magnificent.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Hi_16_01"); //I hope the journey will be worthwhile.... the few gold coins on the ship have not yet replaced the effort.
+	AI_Output(hero, self, "Info_Mod_Cassia_IR_Hi_15_02"); //All in good time. If we go further into the interior of the island, one or the other precious piece will surely fall off.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Hi_16_03"); //We'll see...
 };
 
 INSTANCE Info_Mod_Cassia_IR_Bones (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Cassia_IR_Bones (C_INFO)
 	information	= Info_Mod_Cassia_IR_Bones_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sag mal, weißt du, was mit Bones los ist?";
+	description	= "Tell me, do you know what's wrong with Bones?";
 };
 
 FUNC INT Info_Mod_Cassia_IR_Bones_Condition()
@@ -43,12 +43,12 @@ FUNC INT Info_Mod_Cassia_IR_Bones_Condition()
 
 FUNC VOID Info_Mod_Cassia_IR_Bones_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cassia_IR_Bones_15_00"); //Sag mal, weißt du, was mit Bones los ist?
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Bones_16_01"); //Bones? Ach, du meinst diesen ungewaschenen Seeräuber.
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Bones_16_02"); //Nun, ich habe ihn mit meinem Degen ein wenig in die Schranken gewiesen, als er zu aufdringlich werden wollte.
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Bones_16_03"); //Hmm, aber irgendwie kommt es mir doch vor, als hätte ich ihn vor Jahren bereits einmal gesehen ... Ja, mit meinem Vater ...
-	AI_Output(hero, self, "Info_Mod_Cassia_IR_Bones_15_04"); //Dein Vater?
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Bones_16_05"); //Ja, er war Seemann. Ließ damals mich und meine Mutter zurück, als er wieder in See stach. Gregor hieß er ...
+	AI_Output(hero, self, "Info_Mod_Cassia_IR_Bones_15_00"); //Tell me, do you know what's wrong with Bones?
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Bones_16_01"); //Bones? Oh, you mean that unwashed pirate.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Bones_16_02"); //Well, I put him in a little bit of a corner with my sword when he wanted to get too pushy.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Bones_16_03"); //Hmm, but somehow it seems to me that I had seen him years ago... Yes, with my father....
+	AI_Output(hero, self, "Info_Mod_Cassia_IR_Bones_15_04"); //Your father?
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Bones_16_05"); //Yes, he was a sailor. Left me and my mother behind when he set sail again. Gregor was his name....
 };
 
 INSTANCE Info_Mod_Cassia_IR_Hebel (C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Cassia_IR_Hebel (C_INFO)
 	information	= Info_Mod_Cassia_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Can you use one lever while I move the other?";
 };
 
 FUNC INT Info_Mod_Cassia_IR_Hebel_Condition()
@@ -76,7 +76,7 @@ FUNC VOID Info_Mod_Cassia_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Hebel_16_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Hebel_16_00"); //Of course it is. Maybe if it's going to get us somewhere...
 
 	Mod_IR_Hebel = 1;
 
@@ -105,8 +105,8 @@ FUNC INT Info_Mod_Cassia_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Cassia_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Ambient01_16_00"); //Nun, zwar kaum Gold bisher, dafür vielfältige Antiquitäten.
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Ambient01_16_01"); //Diese sollten bei einigen Händlern und Hehlern auch ein hübsches Sümmchen erbringen.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Ambient01_16_00"); //Well, hardly any gold so far, but various antiques.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Ambient01_16_01"); //They should also make a pretty penny for some traders and fences.
 
 	AI_StopProcessInfos	(self);
 };
@@ -119,7 +119,7 @@ INSTANCE Info_Mod_Cassia_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Cassia_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Let's get going. Will you escort me to the island?";
 };
 
 FUNC INT Info_Mod_Cassia_IR_GehtLos_Condition()
@@ -138,7 +138,7 @@ FUNC VOID Info_Mod_Cassia_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_GehtLos_16_00"); //Ja, wohlan. Dann schauen wir mal, welche Schätze sich in diesem Loch verborgen halten.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_GehtLos_16_00"); //Yeah, alright. Let's see what treasures are hidden in this hole.
 
 	Mod_IR_Dabei += 1;
 
@@ -157,7 +157,7 @@ INSTANCE Info_Mod_Cassia_IR_GehBack (C_INFO)
 	information	= Info_Mod_Cassia_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Go back to the ship.";
 };
 
 FUNC INT Info_Mod_Cassia_IR_GehBack_Condition()
@@ -174,7 +174,7 @@ FUNC VOID Info_Mod_Cassia_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_GehBack_16_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_GehBack_16_00"); //Well, if you need me, you know where to find me.
 
 	Mod_IR_Dabei -= 1;
 
@@ -193,7 +193,7 @@ INSTANCE Info_Mod_Cassia_IR_Lehrer (C_INFO)
 	information	= Info_Mod_Cassia_IR_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Cassia_IR_Lehrer_Condition()
@@ -209,7 +209,7 @@ FUNC VOID Info_Mod_Cassia_IR_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Lehrer_16_01"); //Ich kann dich den Umgang mit Einhandwaffen lehren und dein Geschick verbessern.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Lehrer_16_01"); //I can teach you how to use one-handed weapons and improve your skills.
 };
 
 INSTANCE Info_Mod_Cassia_IR_Lernen_Einhand (C_INFO)
@@ -220,7 +220,7 @@ INSTANCE Info_Mod_Cassia_IR_Lernen_Einhand (C_INFO)
 	information	= Info_Mod_Cassia_IR_Lernen_Einhand_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Einhandkampf bei.";
+	description	= "Teach me one-handed combat.";
 };
 
 FUNC INT Info_Mod_Cassia_IR_Lernen_Einhand_Condition()
@@ -235,11 +235,11 @@ FUNC INT Info_Mod_Cassia_IR_Lernen_Einhand_Condition()
 
 FUNC VOID Info_Mod_Cassia_IR_Lernen_Einhand_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cassia_IR_Lernen_Einhand_15_00"); //Bring mir Einhandkampf bei.
+	AI_Output(hero, self, "Info_Mod_Cassia_IR_Lernen_Einhand_15_00"); //Teach me one-handed combat.
 
 	Info_ClearChoices	(Info_Mod_Cassia_IR_Lernen_Einhand);
 	
-	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, "Zurück.", Info_Mod_Cassia_IR_Lernen_Einhand_BACK);
+	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, "Back off.", Info_Mod_Cassia_IR_Lernen_Einhand_BACK);
 	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, B_BuildLearnString(PRINT_Learn1H5, B_GetLearnCostTalent_New(hero, NPC_TALENT_1H)), Info_Mod_Cassia_IR_Lernen_Einhand_5);
 	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, B_BuildLearnString(PRINT_Learn1H1, B_GetLearnCostTalent(hero, NPC_TALENT_1H, 1)), Info_Mod_Cassia_IR_Lernen_Einhand_1);
 };
@@ -255,7 +255,7 @@ FUNC VOID Info_Mod_Cassia_IR_Lernen_Einhand_5()
 
 	Info_ClearChoices	(Info_Mod_Cassia_IR_Lernen_Einhand);
 
-	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, "Zurück.", Info_Mod_Cassia_IR_Lernen_Einhand_BACK);
+	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, "Back off.", Info_Mod_Cassia_IR_Lernen_Einhand_BACK);
 	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, B_BuildLearnString(PRINT_Learn1H5, B_GetLearnCostTalent_New(hero, NPC_TALENT_1H)), Info_Mod_Cassia_IR_Lernen_Einhand_5);
 	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, B_BuildLearnString(PRINT_Learn1H1, B_GetLearnCostTalent(hero, NPC_TALENT_1H, 1)), Info_Mod_Cassia_IR_Lernen_Einhand_1);
 };
@@ -266,7 +266,7 @@ FUNC VOID Info_Mod_Cassia_IR_Lernen_Einhand_1()
 
 	Info_ClearChoices	(Info_Mod_Cassia_IR_Lernen_Einhand);
 
-	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, "Zurück.", Info_Mod_Cassia_IR_Lernen_Einhand_BACK);
+	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, "Back off.", Info_Mod_Cassia_IR_Lernen_Einhand_BACK);
 	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, B_BuildLearnString(PRINT_Learn1H5, B_GetLearnCostTalent_New(hero, NPC_TALENT_1H)), Info_Mod_Cassia_IR_Lernen_Einhand_5);
 	Info_AddChoice	(Info_Mod_Cassia_IR_Lernen_Einhand, B_BuildLearnString(PRINT_Learn1H1, B_GetLearnCostTalent(hero, NPC_TALENT_1H, 1)), Info_Mod_Cassia_IR_Lernen_Einhand_1);
 };
@@ -279,7 +279,7 @@ INSTANCE Info_Mod_Cassia_IR_Lernen_DEX (C_INFO)
 	information	= Info_Mod_Cassia_IR_Lernen_DEX_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeig mir, wie ich geschickter werden kann.";
+	description	= "Show me how to be more skillful.";
 };
 
 FUNC INT Info_Mod_Cassia_IR_Lernen_DEX_Condition()
@@ -293,8 +293,8 @@ FUNC INT Info_Mod_Cassia_IR_Lernen_DEX_Condition()
 
 FUNC VOID Info_Mod_Cassia_IR_Lernen_DEX_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cassia_IR_Lernen_DEX_15_00"); //Zeig mir, wie ich geschickter werden kann.
-	AI_Output(self, hero, "Info_Mod_Cassia_IR_Lernen_DEX_16_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Cassia_IR_Lernen_DEX_15_00"); //Show me how to be more skillful.
+	AI_Output(self, hero, "Info_Mod_Cassia_IR_Lernen_DEX_16_01"); //What do you want to learn?
 
 	Info_ClearChoices	(Info_Mod_Cassia_IR_Lernen_DEX);
 
@@ -338,7 +338,7 @@ INSTANCE Info_Mod_Cassia_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Cassia_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Cassia_IR_Heiltrank_Condition()
@@ -359,37 +359,37 @@ FUNC VOID Info_Mod_Cassia_IR_Heiltrank_Info()
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] < self.attribute[ATR_HITPOINTS_MAX]-HP_Elixier)
 	{
-		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Cassia_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Essence of Healing", Info_Mod_Cassia_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 3)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_Elixier)
 	{
-		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Cassia_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Elixir of Healing", Info_Mod_Cassia_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_Extrakt)
 	{
-		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Cassia_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Extract of Healing", Info_Mod_Cassia_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_Essenz)
 	{
-		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Cassia_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Essence of Healing", Info_Mod_Cassia_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_06)
 	{
-		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Cassia_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Drink of light healing", Info_Mod_Cassia_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_06)
 	{
-		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Cassia_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Light healing potion", Info_Mod_Cassia_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_05)
 	{
-		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Cassia_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Cassia_IR_Heiltrank, "Drink of fast healing", Info_Mod_Cassia_IR_Heiltrank_Health_05);
 	};
 };
 

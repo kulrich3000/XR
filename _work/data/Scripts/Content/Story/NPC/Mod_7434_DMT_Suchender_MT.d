@@ -2,7 +2,7 @@ instance Mod_7434_DMT_Suchender_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Suchender";
+	name 		=	"seeker";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_DMT;
 	level 		=	10;

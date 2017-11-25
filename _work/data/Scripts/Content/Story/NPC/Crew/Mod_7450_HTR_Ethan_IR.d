@@ -1,7 +1,7 @@
 instance Mod_7450_HTR_Ethan_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ethan";	
+	name 		= "ethane";	
 	guild 		= GIL_OUT;
 	id 			= 7450;
 	voice 		= 13;

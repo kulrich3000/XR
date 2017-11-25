@@ -1,7 +1,7 @@
 instance Mod_751_NONE_Salandril_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Salandril"; 
+	name 		= "salandril"; 
 	guild 		= GIL_NONE;
 	id 			= 751;
 	voice 		= 13;

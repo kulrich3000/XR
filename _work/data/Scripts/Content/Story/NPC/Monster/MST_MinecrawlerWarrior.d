@@ -106,7 +106,7 @@ INSTANCE MinecrawlerWarrior	(Mst_Default_MinecrawlerWarrior)
 
 INSTANCE MinecrawlerWarrior_Undead	(Mst_Default_MinecrawlerWarrior)
 {
-	name = "stinkender Minecrawler";
+	name = "smelly minecrawler";
 
 	B_SetVisuals_MinecrawlerWarriorUndead();
 	Npc_SetToFistMode(self);
@@ -114,7 +114,7 @@ INSTANCE MinecrawlerWarrior_Undead	(Mst_Default_MinecrawlerWarrior)
 
 INSTANCE SwampCrawler	(Mst_Default_MinecrawlerWarrior)
 {
-	name = "Sumpfcrawler";
+	name = "Marsh Crawler";
 
 	level							=	26;
 	
@@ -144,7 +144,7 @@ INSTANCE SwampCrawler	(Mst_Default_MinecrawlerWarrior)
 
 instance OTMinecrawler(Mst_Default_MinecrawlerWarrior)			
 {
-	name							=	"Tempel Minecrawler";
+	name							=	"Temple Minecrawler";
 	level							=	25;
 
 	B_SetVisuals_OTMinecrawlerWarrior();
@@ -179,7 +179,7 @@ instance OTMinecrawler(Mst_Default_MinecrawlerWarrior)
 
 instance RedCrab (Mst_Default_MinecrawlerWarrior)			
 {
-	name							=	"Rote Krabbe";
+	name							=	"red crab";
 	level							=	1;
 
 	B_SetVisuals_RedCrab();

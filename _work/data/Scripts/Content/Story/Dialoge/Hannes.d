@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Hannes_Hi_Condition()
 
 FUNC VOID Info_Mod_Hannes_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_00"); //Grandios! Parfait! So etwas kann nur von einem Meister erdacht werden. Sieh Er sich's an, sieh Er sich's an!
-	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_01"); //Dieser Mann spricht wahr, alles passt wie der, Verzeihung, die Faust aufs Auge!
-	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_02"); //Die Einführung der contraction wird das Theaterleben auf Jahrzehnte beeinflussen, was sage ich da, eine neue Phase der Bühnendichtung einläuten.
-	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_03"); //Wir wohnen gewissermaßen einem historischen Moment bei, exactement!
+	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_00"); //Great! Parfait! Such a thing can only be conceived by a master. Look at him, look at him!
+	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_01"); //This man speaks true, everything fits like that, pardon me, the fist on the eye!
+	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_02"); //The introduction of contraction will affect theatre life for decades to come, so what do I say, a new stage poetry phase.
+	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_03"); //We are, in a way, witnessing an historic moment, exactement!
 };
 
 INSTANCE Info_Mod_Hannes_EXIT (C_INFO)

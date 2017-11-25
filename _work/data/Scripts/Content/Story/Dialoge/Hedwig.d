@@ -35,7 +35,7 @@ FUNC VOID Info_Mod_Hedwig_Hi_Info()
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_00"); //(resolut) Hoch die Tassen! Äh, hoch die Humpen!
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_00"); //Raise your cups! Uh, up the hats!
 
 	CreateInvItems	(self, ItFo_Beer, 10);
 
@@ -53,30 +53,30 @@ FUNC VOID Info_Mod_Hedwig_Hi_Info()
 
 	B_UseItem	(self, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_16_01"); //(hickst)
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_16_01"); //(hicky)
 
 	TRIA_Next(Irmgard);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_02"); //(vorwurfsvoll) Meinst du nicht auch, dass wir langsam mal genug getrunken haben?
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_03"); //Die arme Berta kann ja schon fast nicht mehr geradeaus gehen.
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_02"); //Don't you think we've had enough to drink?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_03"); //Poor Berta can hardly walk straight ahead.
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_04"); //Darum geht's doch! Das ist der Sinn bei der ganzen Sache!
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_04"); //That's the point! That's the whole point!
 
 	TRIA_Next(Irmgard);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_05"); //(zweifelnd) Na, ich weiß nicht.
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_05"); //Well, I don't know.
 
 	TRIA_Next(Berta);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_16_01"); //(hickst)
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_16_01"); //(hicky)
 
 	TRIA_Next(Hedwig);
 
 	AI_TurnToNpc	(Hedwig, Salmey);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_06"); //(betont männlich) He, Salmey, bring noch 'ne Runde!
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_06"); //Hey, Salmey, bring another round!
 
 	TRIA_Next(Salmey);
 
@@ -96,64 +96,64 @@ FUNC VOID Info_Mod_Hedwig_Hi_Info()
 
 	B_UseItem	(self, ItFo_Beer);
 
-	AI_Output(hero, self, "Info_Mod_Hedwig_Hi_15_07"); //Darf ich fragen, was das hier für ein Treffen ist?
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_08"); //Na klar doch. Wir besaufen uns, bis wir beinahe besinnungslos sind, torkeln lautstark nach Hause und kotzen vors Bett.
+	AI_Output(hero, self, "Info_Mod_Hedwig_Hi_15_07"); //May I ask what kind of meeting this is?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_08"); //Of course it is. We get drunk until we're almost unconscious, stagger home loudly and throw up in front of the bed.
 
 	TRIA_Next(Irmgard);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_09"); //(pikiert) Ich werde mich nicht ins Haus übergeben!
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_09"); //I'm not gonna throw up in the house!
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_10"); //Oh doch, das wirst du. Das ist dir in dem Moment so was von egal.
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_10"); //Oh, yes, you will. You don't give a damn at that moment.
 
 	TRIA_Next(Irmgard);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_11"); //Na, ich weiß nicht.
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_11"); //Well, I don't know.
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_12"); //Du musst es ja auch nicht wegwischen.
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_13"); //(eindringlich) Du wirst es nicht wegwischen, verstanden? Und du auch, Berta?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_12"); //You don't have to wipe it off.
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_13"); //You're not gonna wipe it off, all right? And you too, Berta?
 
 	TRIA_Next(Berta);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_16_01"); //(hickst)
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_16_01"); //(hicky)
 
 	TRIA_Next(Irmgard);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_14"); //Aber wer dann?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_14"); //But who then?
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_15"); //(poltert) Zum Donnerwetter, das haben wir doch schon tausend Mal besprochen! Dein Mann macht diesmal den Dreck weg!
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_15"); //We've talked about this a thousand times! Your husband's gonna clean up the mess this time!
 
 	TRIA_Next(Irmgard);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_16"); //Na, ich weiß nicht.
-	AI_Output(hero, self, "Info_Mod_Hedwig_Hi_15_17"); //Könnt ihr die Probleme mit euren Männern nicht anders lösen?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_16"); //Well, I don't know.
+	AI_Output(hero, self, "Info_Mod_Hedwig_Hi_15_17"); //Can't you solve the problems with your men any other way?
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_18"); //(streitlustig) Wir haben uns nun mal für diese Lösung entschieden.
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_18"); //We've decided on this solution.
 
 	TRIA_Next(Irmgard);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_19"); //(kleinlaut) Eigentlich hast du das entschieden.
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_19"); //Actually, that's what you decided.
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_20"); //(giftig) Na und? Hast du etwa protestiert?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_26_20"); //(poisonous) So what? Did you protest?
 
 	TRIA_Next(Berta);
 
-	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_16_21"); //(lallt) Is doch lustich hier. Wer trinkt noch einen mit?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Hi_16_21"); //It's funny here. Who's having another drink?
 
 	TRIA_Finish();
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_DITMAR_DICKELUFT, "Die drei sind wirklich hartnäckig. Wobei ... Hedwig scheint die Drahtzieherin zu sein und überzeugt, dass ihr Weg zum Erfolg führt. Mit Berta ist nicht mehr viel anzufangen. Aber Irmgard scheint die Sache langsam leid zu sein.");
+	B_LogEntry	(TOPIC_MOD_DITMAR_DICKELUFT, "The three of them are really persistent. Wherein... Hedwig seems to be the mastermind and convinced that her path to success leads her. There's not much left to do with Berta. But Irmgard seems to be getting tired of it.");
 };
 
 INSTANCE Info_Mod_Hedwig_Kneipe (C_INFO)
@@ -164,7 +164,7 @@ INSTANCE Info_Mod_Hedwig_Kneipe (C_INFO)
 	information	= Info_Mod_Hedwig_Kneipe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie lange habt ihr noch vor zu bleiben?";
+	description	= "How long are you going to stay?";
 };
 
 FUNC INT Info_Mod_Hedwig_Kneipe_Condition()
@@ -178,9 +178,9 @@ FUNC INT Info_Mod_Hedwig_Kneipe_Condition()
 
 FUNC VOID Info_Mod_Hedwig_Kneipe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hedwig_Kneipe_15_00"); //Wie lange habt ihr noch vor zu bleiben?
-	AI_Output(self, hero, "Info_Mod_Hedwig_Kneipe_26_01"); //Netter Versuch, aber du kannst Ditmar sagen, dass wir die Stellung halten.
-	AI_Output(self, hero, "Info_Mod_Hedwig_Kneipe_26_02"); //Solange gewisse Herren der Schöpfung nicht zur Einsicht gelangen, ist unser Auftrag nicht beendet.
+	AI_Output(hero, self, "Info_Mod_Hedwig_Kneipe_15_00"); //How long are you going to stay?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Kneipe_26_01"); //Nice try, but you can tell Ditmar we're holding the fort.
+	AI_Output(self, hero, "Info_Mod_Hedwig_Kneipe_26_02"); //As long as certain masters of creation do not gain insight, our mission is not finished.
 };
 
 INSTANCE Info_Mod_Hedwig_Kneipe2 (C_INFO)
@@ -191,7 +191,7 @@ INSTANCE Info_Mod_Hedwig_Kneipe2 (C_INFO)
 	information	= Info_Mod_Hedwig_Kneipe2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer ist denn überhaupt dein Mann?";
+	description	= "Who's your husband, anyway?";
 };
 
 FUNC INT Info_Mod_Hedwig_Kneipe2_Condition()
@@ -205,9 +205,9 @@ FUNC INT Info_Mod_Hedwig_Kneipe2_Condition()
 
 FUNC VOID Info_Mod_Hedwig_Kneipe2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hedwig_Kneipe2_15_00"); //Wer ist denn überhaupt dein Mann?
-	AI_Output(self, hero, "Info_Mod_Hedwig_Kneipe2_26_01"); //Na, du bist mir ja ein Spaßvogel! Kennst die Frau des Stadthalters nicht!
-	AI_Output(hero, self, "Info_Mod_Hedwig_Kneipe2_15_02"); //Oh. Aber wieso hat Anselm dich ... wieso hast du Anselm ... (überlegt) Obwohl ...
+	AI_Output(hero, self, "Info_Mod_Hedwig_Kneipe2_15_00"); //Who's your husband, anyway?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Kneipe2_26_01"); //Well, you're a joke to me! You don't know the keeper's wife!
+	AI_Output(hero, self, "Info_Mod_Hedwig_Kneipe2_15_02"); //Oh. But why did Anselm ask you... why did you ask Anselm.... (thought) Although...
 };
 
 INSTANCE Info_Mod_Hedwig_Kneipe3 (C_INFO)
@@ -218,7 +218,7 @@ INSTANCE Info_Mod_Hedwig_Kneipe3 (C_INFO)
 	information	= Info_Mod_Hedwig_Kneipe3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso redest du nicht einfach mit Anselm?";
+	description	= "Why don't you just talk to Anselm?";
 };
 
 FUNC INT Info_Mod_Hedwig_Kneipe3_Condition()
@@ -232,8 +232,8 @@ FUNC INT Info_Mod_Hedwig_Kneipe3_Condition()
 
 FUNC VOID Info_Mod_Hedwig_Kneipe3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hedwig_Kneipe3_15_00"); //Wieso redest du nicht einfach mit Anselm?
-	AI_Output(self, hero, "Info_Mod_Hedwig_Kneipe3_26_01"); //Das bringt nichts. Der soll jetzt mal am eigenen Leib spüren, wie es ist, nicht den ganzen Tag bemuttert zu werden.
+	AI_Output(hero, self, "Info_Mod_Hedwig_Kneipe3_15_00"); //Why don't you just talk to Anselm?
+	AI_Output(self, hero, "Info_Mod_Hedwig_Kneipe3_26_01"); //It's useless. I want him to feel for himself, what it's like not to be mothered all day long.
 };
 
 INSTANCE Info_Mod_Hedwig_Pickpocket (C_INFO)
@@ -369,7 +369,7 @@ FUNC INT Info_Mod_Hedwig_EXIT_Condition()
 
 FUNC VOID Info_Mod_Hedwig_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hedwig_EXIT_26_00"); //Wir sehen uns ... hoffentlich.
+	AI_Output(self, hero, "Info_Mod_Hedwig_EXIT_26_00"); //I'll see you.... hopefully.
 
 	AI_StopProcessInfos	(self);
 };

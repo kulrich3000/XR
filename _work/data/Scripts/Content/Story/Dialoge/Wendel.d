@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Wendel_Hi (C_INFO)
 	information	= Info_Mod_Wendel_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Wendel_Hi_Condition()
@@ -18,10 +18,10 @@ FUNC VOID Info_Mod_Wendel_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Wendel_Hi_01_00"); //Wendel. Ich bin zuständig für die Wasserversorgung hier in Khorata.
-	AI_Output(self, hero, "Info_Mod_Wendel_Hi_01_01"); //Wie du siehst, läuft die Wasserverteilung nicht ganz so einfach, sondern mit Hilfe von Pumpen und Schleusen, oberirdisch sowie unterirdisch.
-	AI_Output(self, hero, "Info_Mod_Wendel_Hi_01_02"); //Dafür können wir eine optimale Versorgung der Bevölkerung gewährleisten.
-	AI_Output(self, hero, "Info_Mod_Wendel_Hi_01_03"); //Solch ein kompliziertes System bedarf selbstverständlich ständiger Überwachung und Reparatur.
+	AI_Output(self, hero, "Info_Mod_Wendel_Hi_01_00"); //Spiral. I'm in charge of water supply here in Khorata.
+	AI_Output(self, hero, "Info_Mod_Wendel_Hi_01_01"); //As you can see, the distribution of water is not so easy, but with the help of pumps and locks, above-ground and underground.
+	AI_Output(self, hero, "Info_Mod_Wendel_Hi_01_02"); //To this end, we can guarantee an optimal supply of the population.
+	AI_Output(self, hero, "Info_Mod_Wendel_Hi_01_03"); //Such a complicated system obviously requires constant monitoring and repair.
 };
 
 INSTANCE Info_Mod_Wendel_Endres (C_INFO)
@@ -45,35 +45,35 @@ FUNC INT Info_Mod_Wendel_Endres_Condition()
 
 FUNC VOID Info_Mod_Wendel_Endres_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_00"); //Oh nein! Wir haben ein ernstzunehmendes Problem!
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres_15_01"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_02"); //Das wüsste ich auch gern! Der Wasserkreislauf ist unterbrochen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_03"); //Irgendetwas scheint die Rohre zu verstopfen.
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres_15_04"); //Was kann man dagegen tun?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_05"); //Entweder, wir nehmen alle Rohre auseinander und prüfen sie ... oder wir schmieren sie von innen mit Fett ein, in der Hoffnung, dass sich der Pfropfen von alleine löst.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_06"); //Übernimmst du das Einfetten?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_00"); //Oh, no! We have a serious problem!
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres_15_01"); //What's happening?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_02"); //I'd like to know that, too! The water circulation is interrupted.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_03"); //Something seems to be clogging the pipes.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres_15_04"); //What can be done about it?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_05"); //Either we take all the pipes apart and check them... or we lubricate it from the inside with grease, hoping that the plug will dissolve on its own.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres_01_06"); //Will you do the greasing?
 
 	Info_ClearChoices	(Info_Mod_Wendel_Endres);
 
-	Info_AddChoice	(Info_Mod_Wendel_Endres, "Das kriegt ihr schon ohne mich hin.", Info_Mod_Wendel_Endres_B);
-	Info_AddChoice	(Info_Mod_Wendel_Endres, "Woher bekomme ich das Fett?", Info_Mod_Wendel_Endres_A);
+	Info_AddChoice	(Info_Mod_Wendel_Endres, "You can do it without me.", Info_Mod_Wendel_Endres_B);
+	Info_AddChoice	(Info_Mod_Wendel_Endres, "Where do I get the fat from?", Info_Mod_Wendel_Endres_A);
 };
 
 FUNC VOID Info_Mod_Wendel_Endres_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres_B_15_00"); //Das kriegt ihr schon ohne mich hin.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres_B_15_00"); //You can do it without me.
 
 	Info_ClearChoices	(Info_Mod_Wendel_Endres);
 };
 
 FUNC VOID Info_Mod_Wendel_Endres_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres_A_15_00"); //Woher bekomme ich das Fett?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres_A_01_01"); //Das ist die nächste Fragestellung. Ich glaube, da hilft nur Trollfett, das ist extra schmierig. Und extra selten.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres_A_01_02"); //Du hast aber Glück, es soll ein Troll hier in Relendel gesichtet worden sein.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres_A_01_03"); //Erleg ihn einfach und nimm ihm so viel von seinem Fett ab, wie du tragen kannst!
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres_A_15_04"); //Kleiner habt ihr's nicht?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres_A_01_05"); //Nun beeil dich schon, ehe wir noch in Engpässe geraten!
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres_A_15_00"); //Where do I get the fat from?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres_A_01_01"); //That is the next question. I think the only thing that helps is troll fat, it's extra greasy. And extra rare.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres_A_01_02"); //But you're lucky to have seen a troll here in Relendel.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres_A_01_03"); //Just put him down and take as much of his fat off him as you can carry!
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres_A_15_04"); //That's all you got?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres_A_01_05"); //Now hurry up, before we run into bottlenecks!
 
 	Mod_Wendel_FettNehmer = 1;
 
@@ -83,7 +83,7 @@ FUNC VOID Info_Mod_Wendel_Endres_A()
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_WASSERWERK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_WASSERWERK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_WASSERWERK, "Die Rohre in Khoratas Wasserwerk sind verstopft. Wendel hat mich beauftragt, einen Troll in Relendel zu erlegen und ihm das Fett abzunehmen, damit wir die Rohre einfetten können.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_WASSERWERK, "The pipes in Khorata's waterworks are blocked. Wendel instructed me to shoot a troll in Relendel and remove the grease from it so that we can grease the pipes.");
 };
 
 INSTANCE Info_Mod_Wendel_Endres02 (C_INFO)
@@ -94,7 +94,7 @@ INSTANCE Info_Mod_Wendel_Endres02 (C_INFO)
 	information	= Info_Mod_Wendel_Endres02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Trollfett.";
+	description	= "I got the troll fat.";
 };
 
 FUNC INT Info_Mod_Wendel_Endres02_Condition()
@@ -108,12 +108,12 @@ FUNC INT Info_Mod_Wendel_Endres02_Condition()
 
 FUNC VOID Info_Mod_Wendel_Endres02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres02_15_00"); //Ich habe das Trollfett.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres02_01_01"); //Sehr gut! Und nun gieß es in den Abort im Haus der Feuermagier.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres02_15_00"); //I got the troll fat.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres02_01_01"); //Very good! And now it poured into the abortion at the Fire Magician's House.
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_WASSERWERK, "Ich soll das Trollfett in den Abort des Hauses der Feuermagier kippen ...");
+	B_LogEntry	(TOPIC_MOD_KHORATA_WASSERWERK, "I'm to tip the troll fat into the abortion of the Fire Magic House...");
 };
 
 INSTANCE Info_Mod_Wendel_Endres02_Optional (C_INFO)
@@ -124,7 +124,7 @@ INSTANCE Info_Mod_Wendel_Endres02_Optional (C_INFO)
 	information	= Info_Mod_Wendel_Endres02_Optional_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo ist denn das Haus der Feuermagier?";
+	description	= "Where's the Fire Magic House?";
 };
 
 FUNC INT Info_Mod_Wendel_Endres02_Optional_Condition()
@@ -138,8 +138,8 @@ FUNC INT Info_Mod_Wendel_Endres02_Optional_Condition()
 
 FUNC VOID Info_Mod_Wendel_Endres02_Optional_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres02_Optional_15_00"); //Wo ist denn das Haus der Feuermagier?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres02_Optional_01_01"); //Es liegt in der gleichen Straße wie Peters Gasthaus und die Brauerei. Nun aber los!
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres02_Optional_15_00"); //Where's the Fire Magic House?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres02_Optional_01_01"); //It is located in the same street as Peter's inn and the brewery. All right, let's go!
 };
 
 INSTANCE Info_Mod_Wendel_Endres03 (C_INFO)
@@ -162,12 +162,12 @@ FUNC INT Info_Mod_Wendel_Endres03_Condition()
 
 FUNC VOID Info_Mod_Wendel_Endres03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres03_01_00"); //(verstört) Grundgütiger! Das ... das ist doch Endres!
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres03_15_01"); //Wer?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres03_01_02"); //Endres, der Baumeister! Julianas Mann, der vermisst wurde. Er hat die Rohre verstopft. (würgt)
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres03_01_03"); //(Pause) Ich ... oh, bei Adanos, er wurde ermordet!
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres03_01_00"); //Jesus Christ! That... That's Endres!
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres03_15_01"); //Who?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres03_01_02"); //Endres, the builder! Juliana's missing man. He blocked the pipes. (chokes)
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres03_01_03"); //(pause) I... Oh, by Adanos, he was murdered!
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Die Leiche Endres' ist aufgetaucht, die Todesursache ist jedoch unklar. Vielleicht kann Juliana mehr Licht ins Dunkel bringen?");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "The corpse of Endres has appeared, but the cause of death is unclear. Maybe Juliana can bring more light into the darkness?");
 };
 
 INSTANCE Info_Mod_Wendel_Endres04 (C_INFO)
@@ -178,7 +178,7 @@ INSTANCE Info_Mod_Wendel_Endres04 (C_INFO)
 	information	= Info_Mod_Wendel_Endres04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du über Endres?";
+	description	= "What do you know about Endres?";
 };
 
 FUNC INT Info_Mod_Wendel_Endres04_Condition()
@@ -191,22 +191,22 @@ FUNC INT Info_Mod_Wendel_Endres04_Condition()
 
 FUNC VOID Info_Mod_Wendel_Endres04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres04_15_00"); //Was weißt du über Endres?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_01"); //Er war ein wenig verschroben ... und genial, könnte man sagen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_02"); //Von ihm stammen die rätselhaften Skulpturen in der Stadt, und er half, das Wasserversorgungssystem zu planen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_03"); //Ohne ihn wären wir bedeutend rückständiger.
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres04_15_04"); //Wer könnte ihn umbringen wollen?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_05"); //Woher soll ich das wissen? Er hatte bestimmt Neider, aber mehr weiß ich beim besten Willen nicht. Ich kannte ihn nie gut.
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres04_15_06"); //Dann werde ich mich weiter umhören.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_07"); //Erzähl Juliana von dem Vorfall. Ich fühle mich nicht gut.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_08"); //Ach ... was das Wasserwerk anbelangt: da läuft wieder alles ... wie geschmiert ...
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_09"); //Danke für deine Hilfe.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres04_15_00"); //What do you know about Endres?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_01"); //He was a little weird.... and brilliant, you might say.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_02"); //He created the mysterious sculptures in the city and helped plan the water supply system.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_03"); //Without him, we'd be much more backward.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres04_15_04"); //Who could want to kill him?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_05"); //How should I know? He must have had envy, but that's all I know. I never knew him well.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres04_15_06"); //Then I'll keep asking around.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_07"); //Tell Juliana about the incident. I'm not feeling well.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_08"); //Ah... concerning the waterworks: everything is working again... like clockwork...
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres04_01_09"); //Thanks for your help.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_WASSERWERK, "Die Probleme im Wasserwerk sind gelöst, um anderen Platz zu machen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_WASSERWERK, "The problems in the waterworks are solved to make room for others.");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_WASSERWERK, LOG_SUCCESS);
 
 	CurrentNQ += 1;
@@ -222,7 +222,7 @@ INSTANCE Info_Mod_Wendel_Endres05 (C_INFO)
 	information	= Info_Mod_Wendel_Endres05_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe dir ein paar Fragen zu stellen.";
+	description	= "I have a few questions to ask you.";
 };
 
 FUNC INT Info_Mod_Wendel_Endres05_Condition()
@@ -235,10 +235,10 @@ FUNC INT Info_Mod_Wendel_Endres05_Condition()
 
 FUNC VOID Info_Mod_Wendel_Endres05_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres05_15_00"); //Ich habe dir ein paar Fragen zu stellen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres05_01_01"); //Wieso das?
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres05_15_02"); //Beantworte einfach die Fragen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres05_01_03"); //(nervös) Na schön.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres05_15_00"); //I have a few questions to ask you.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres05_01_01"); //Why is that?
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres05_15_02"); //Just answer the questions.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres05_01_03"); //(nervous) All right.
 };
 
 INSTANCE Info_Mod_Wendel_Endres06 (C_INFO)
@@ -249,7 +249,7 @@ INSTANCE Info_Mod_Wendel_Endres06 (C_INFO)
 	information	= Info_Mod_Wendel_Endres06_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du gemacht, bevor Endres' Leiche (...)";
+	description	= "What did you do before Endres' body (...) )";
 };
 
 FUNC INT Info_Mod_Wendel_Endres06_Condition()
@@ -262,11 +262,11 @@ FUNC INT Info_Mod_Wendel_Endres06_Condition()
 
 FUNC VOID Info_Mod_Wendel_Endres06_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres06_15_00"); //Was hast du gemacht, bevor Endres' Leiche im Wasserversorgungssystem landete?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres06_01_01"); //Ähm ... ich war wie immer mit meinem Assistenten unterwegs, dem Monteur.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres06_01_02"); //Wie immer seit morgens in der Früh.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres06_15_00"); //What did you do before Endres' body landed in the water supply system?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres06_01_01"); //Um... with my assistant, the fitter.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres06_01_02"); //As always since morning in the morning.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Wendel behauptet, am fraglichen Tag die ganze Zeit mit seinem Monteur zusammen gewesen zu sein.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Wendel claims to have been with his mechanic the whole time on the day in question.");
 };
 
 INSTANCE Info_Mod_Wendel_Endres07 (C_INFO)
@@ -277,7 +277,7 @@ INSTANCE Info_Mod_Wendel_Endres07 (C_INFO)
 	information	= Info_Mod_Wendel_Endres07_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was meinst du zu dem Heiler als Verdächtigen?";
+	description	= "What do you think of the healer as a suspect?";
 };
 
 FUNC INT Info_Mod_Wendel_Endres07_Condition()
@@ -290,10 +290,10 @@ FUNC INT Info_Mod_Wendel_Endres07_Condition()
 
 FUNC VOID Info_Mod_Wendel_Endres07_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres07_15_00"); //Was meinst du zu dem Heiler als Verdächtigen?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres07_01_01"); //Ich kann nicht sagen, ob sie sich überhaupt näher gekannt haben. Sicher waren sie keine guten Freunde.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres07_15_00"); //What do you think of the healer as a suspect?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres07_01_01"); //I can't tell if they even knew each other better. Surely they weren't good friends.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Wendel glaubt, der Heiler und Endres hätten sich nicht näher gekannt.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Wendel believes that the healer and Endres did not know each other better.");
 };
 
 INSTANCE Info_Mod_Wendel_Endres08 (C_INFO)
@@ -304,7 +304,7 @@ INSTANCE Info_Mod_Wendel_Endres08 (C_INFO)
 	information	= Info_Mod_Wendel_Endres08_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was meinst du zu Juliana als Verdächtige?";
+	description	= "What do you think of Juliana as a suspect?";
 };
 
 FUNC INT Info_Mod_Wendel_Endres08_Condition()
@@ -317,11 +317,11 @@ FUNC INT Info_Mod_Wendel_Endres08_Condition()
 
 FUNC VOID Info_Mod_Wendel_Endres08_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Endres08_15_00"); //Was meinst du zu Juliana als Verdächtige?
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres08_01_01"); //Das Verhältnis von Juliana zu Endres schien etwas belastet.
-	AI_Output(self, hero, "Info_Mod_Wendel_Endres08_01_02"); //Er war ein Genie, das ist für den Partner nicht immer einfach.
+	AI_Output(hero, self, "Info_Mod_Wendel_Endres08_15_00"); //What do you think of Juliana as a suspect?
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres08_01_01"); //The relationship between Juliana and Endres seemed to be a little strained.
+	AI_Output(self, hero, "Info_Mod_Wendel_Endres08_01_02"); //He was a genius, which is not always easy for the partner.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "In Beziehung von Juliana und Endres soll es gekriselt haben.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "It is said to have been a crisis in Juliana and Endres' relationship.");
 };
 
 INSTANCE Info_Mod_Wendel_Nagelnachschub (C_INFO)
@@ -332,7 +332,7 @@ INSTANCE Info_Mod_Wendel_Nagelnachschub (C_INFO)
 	information	= Info_Mod_Wendel_Nagelnachschub_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich habe hier einen Brief für dich.";
+	description 	= "I have a letter here for you.";
 };                       
 
 FUNC INT Info_Mod_Wendel_Nagelnachschub_Condition()
@@ -345,34 +345,34 @@ FUNC INT Info_Mod_Wendel_Nagelnachschub_Condition()
 
 FUNC VOID Info_Mod_Wendel_Nagelnachschub_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Nagelnachschub_15_00"); //Ich habe hier einen Brief für dich.
+	AI_Output(hero, self, "Info_Mod_Wendel_Nagelnachschub_15_00"); //I have a letter here for you.
 
 	B_GiveInvItems	(hero, self, ItWr_ErikaLiebesbrief, 1);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Ich habe Wendel die Nachricht überbracht. Jetzt sollte ich mir das Nagelpaket abholen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "I gave Wendel the message. Now I was supposed to pick up the nail package.");
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Wendel_Nagelnachschub_01_01"); //(zittrig) Wer hat dir den Brief gegeben?
+	AI_Output(self, hero, "Info_Mod_Wendel_Nagelnachschub_01_01"); //Who gave you the letter?
 
 	Info_ClearChoices	(Info_Mod_Wendel_Nagelnachschub);
 
-	Info_AddChoice	(Info_Mod_Wendel_Nagelnachschub, "Keine Ahnung, den habe ich gefunden.", Info_Mod_Wendel_Nagelnachschub_B);
-	Info_AddChoice	(Info_Mod_Wendel_Nagelnachschub, "Ich habe den Brief von Erika.", Info_Mod_Wendel_Nagelnachschub_A);
+	Info_AddChoice	(Info_Mod_Wendel_Nagelnachschub, "I don't know, I found it.", Info_Mod_Wendel_Nagelnachschub_B);
+	Info_AddChoice	(Info_Mod_Wendel_Nagelnachschub, "I have the letter from Erika.", Info_Mod_Wendel_Nagelnachschub_A);
 };
 
 FUNC VOID Info_Mod_Wendel_Nagelnachschub_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Nagelnachschub_B_15_00"); //Keine Ahnung, den habe ich gefunden.
-	AI_Output(self, hero, "Info_Mod_Wendel_Nagelnachschub_B_01_01"); //Zu schade. Dann kann ich ja gar nicht antworten.
+	AI_Output(hero, self, "Info_Mod_Wendel_Nagelnachschub_B_15_00"); //I don't know, I found it.
+	AI_Output(self, hero, "Info_Mod_Wendel_Nagelnachschub_B_01_01"); //Too bad. Then I can't answer.
 
 	Info_ClearChoices	(Info_Mod_Wendel_Nagelnachschub);
 };
 
 FUNC VOID Info_Mod_Wendel_Nagelnachschub_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Nagelnachschub_A_15_00"); //Ich habe den Brief von Erika.
-	AI_Output(self, hero, "Info_Mod_Wendel_Nagelnachschub_A_01_01"); //Du bist der Überbringer der besten Nachricht meines Lebens! Nimm das als Dank!
+	AI_Output(hero, self, "Info_Mod_Wendel_Nagelnachschub_A_15_00"); //I have the letter from Erika.
+	AI_Output(self, hero, "Info_Mod_Wendel_Nagelnachschub_A_01_01"); //You are the bearer of the best news of my life! Take that as a thank you!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
@@ -387,7 +387,7 @@ INSTANCE Info_Mod_Wendel_Unruhen (C_INFO)
 	information	= Info_Mod_Wendel_Unruhen_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Du wirst als Nachfolger Anselms vorgeschlagen.";
+	description 	= "You are proposed to succeed Anselms.";
 };                       
 
 FUNC INT Info_Mod_Wendel_Unruhen_Condition()
@@ -400,8 +400,8 @@ FUNC INT Info_Mod_Wendel_Unruhen_Condition()
 
 FUNC VOID Info_Mod_Wendel_Unruhen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen_15_00"); //Du wirst als Nachfolger Anselms vorgeschlagen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen_01_01"); //Das ehrt mich sehr. Allerdings bin ich mir nicht sicher, der Richtige zu sein.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen_15_00"); //You are proposed to succeed Anselms.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen_01_01"); //I'm very honored. However, I'm not sure I'm the one.
 };
 
 INSTANCE Info_Mod_Wendel_Unruhen2 (C_INFO)
@@ -412,7 +412,7 @@ INSTANCE Info_Mod_Wendel_Unruhen2 (C_INFO)
 	information	= Info_Mod_Wendel_Unruhen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Was sagst du zu der jetzigen Situation?";
+	description 	= "What do you think of the current situation?";
 };                       
 
 FUNC INT Info_Mod_Wendel_Unruhen2_Condition()
@@ -426,11 +426,11 @@ FUNC INT Info_Mod_Wendel_Unruhen2_Condition()
 
 FUNC VOID Info_Mod_Wendel_Unruhen2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen2_15_00"); //Was sagst du zu der jetzigen Situation?
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen2_01_01"); //Die ist äußerst prekär. Wir dürfen nichts mehr unternehmen, das die Bergleute weiter reizen könnte, sondern sollten die Verständigungsgespräche umgehend wieder aufnehmen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen2_01_02"); //Noch mehr Tote müssen verhindert werden!
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen2_15_00"); //What do you think of the current situation?
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen2_01_01"); //She's very precarious. We must not do anything more that could further provoke the miners, but should resume talks of understanding immediately.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen2_01_02"); //More deaths must be prevented!
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Wenn Wendel neuer Stadthalter wird, will er sich für eine Verständigung mit den Bergleuten einsetzen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "When Wendel becomes a new governor, he wants to work for an understanding with the miners.");
 };
 
 INSTANCE Info_Mod_Wendel_Unruhen3 (C_INFO)
@@ -441,7 +441,7 @@ INSTANCE Info_Mod_Wendel_Unruhen3 (C_INFO)
 	information	= Info_Mod_Wendel_Unruhen3_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Welche Seite hat deine Sympathien?";
+	description 	= "What's your side of sympathy?";
 };                       
 
 FUNC INT Info_Mod_Wendel_Unruhen3_Condition()
@@ -455,9 +455,9 @@ FUNC INT Info_Mod_Wendel_Unruhen3_Condition()
 
 FUNC VOID Info_Mod_Wendel_Unruhen3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen3_15_00"); //Welche Seite hat deine Sympathien?
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen3_01_01"); //Darum geht es nicht. Beide Parteien haben Fehler begangen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen3_01_02"); //Unser Ziel muss es sein, die Bergarbeiter so in unsere Gesellschaft einzugliedern, dass wir alle zufrieden sind.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen3_15_00"); //What's your side of sympathy?
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen3_01_01"); //That's not the point. Both parties have made mistakes.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen3_01_02"); //Our aim must be to integrate miners into our society in such a way that we are all satisfied.
 };
 
 INSTANCE Info_Mod_Wendel_Unruhen4 (C_INFO)
@@ -468,7 +468,7 @@ INSTANCE Info_Mod_Wendel_Unruhen4 (C_INFO)
 	information	= Info_Mod_Wendel_Unruhen4_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Du bist nun der Stadthalter Khoratas.";
+	description 	= "You are now the governor of Khorata.";
 };                       
 
 FUNC INT Info_Mod_Wendel_Unruhen4_Condition()
@@ -481,23 +481,23 @@ FUNC INT Info_Mod_Wendel_Unruhen4_Condition()
 
 FUNC VOID Info_Mod_Wendel_Unruhen4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_00"); //Du bist nun der Stadthalter Khoratas.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_01"); //Ich weiß nicht, ob ich mich darüber freuen soll.
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_02"); //Du machst das schon.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_03"); //Mit deiner Unterstützung. Lass uns sofort loslegen. Es gibt einiges zu tun.
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_04"); //Wo fangen wir an?
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_05"); //Selbstverständlich bei den Bergleuten. Der Konflikt muss unblutig beendet werden.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_06"); //Eigentlich wäre das ein Fall für das Gericht. Aber, unter uns, ich halte nicht viel von dem Richter und den Schöffen.
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_07"); //Verständlich.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_08"); //Ich denke, wir sollten einen Vertreter der Städter und einen der Buddler zusammensetzen;
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_09"); //die beiden würden über die Lösungsmöglichkeiten beratschlagen, überwacht von einem unparteiischen Außenstehenden - dir.
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_10"); //Wer soll die Städter und wer die Buddler repräsentieren?
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_11"); //Da ich nun das Oberhaupt Khoratas bin, maße ich mir an, für die Bürger zu sprechen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_12"); //Was die Buddler betrifft - ich schlage vor, du suchst dir einen Freiwilligen unter ihnen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_13"); //Wir treffen uns anschließend im Rathaus.
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_14"); //Alles klar.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_00"); //You are now the governor of Khorata.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_01"); //I don't know if I should be happy about it.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_02"); //You'll be all right.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_03"); //With your support. Let's get started right now. There's a lot to do.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_04"); //Where do we start?
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_05"); //Of course with the miners. The conflict must end without bloodshed.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_06"); //Actually, that would be a case for the court. But between you and me, I don't think much of the judge and the magistrate.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_07"); //Understandable.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_08"); //I think we should put together a representative of the townspeople and one of the diggers;
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_09"); //the two of them would discuss the possible solutions, supervised by an impartial outsider - you.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_10"); //Who should represent the townspeople and who should represent the Buddlers?
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_11"); //Now that I am the head of Khorata, I presume to speak on behalf of the citizens.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_12"); //As for the diggers, I suggest you find a volunteer among them.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen4_01_13"); //I'll meet you at the Town Hall.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen4_15_14"); //All clear.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Wendel hat mich gebeten, einen Buddler dazu zu überreden, im Haus des Stadthalters mit ihm zusammenzutreffen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Wendel has asked me to persuade a Buddler to meet him in the town keeper's house.");
 
 	B_StartOtherRoutine	(self, "VERHANDLUNG");
 };
@@ -510,7 +510,7 @@ INSTANCE Info_Mod_Wendel_Unruhen5 (C_INFO)
 	information	= Info_Mod_Wendel_Unruhen5_Info;
 	permanent	= 1;
 	important	= 0;
-	description 	= "Ihr zwei könnt loslegen. Ich werde eingreifen, wenn es nötig wird.";
+	description 	= "You two are good to go. I will intervene if necessary.";
 };                       
 
 FUNC INT Info_Mod_Wendel_Unruhen5_Condition()
@@ -524,7 +524,7 @@ FUNC INT Info_Mod_Wendel_Unruhen5_Condition()
 
 FUNC VOID Info_Mod_Wendel_Unruhen5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen5_15_00"); //Ihr zwei könnt loslegen. Ich werde eingreifen, wenn es nötig wird.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen5_15_00"); //You two are good to go. I will intervene if necessary.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Mod_REL_WendelS = 2;
@@ -554,13 +554,13 @@ FUNC VOID Info_Mod_Wendel_Unruhen6_Info()
 {
 	Info_ClearChoices	(Info_Mod_Wendel_Unruhen6);
 
-	Info_AddChoice	(Info_Mod_Wendel_Unruhen6, "Ich sehe da deine deutliche Mitschuld, Wendel.", Info_Mod_Wendel_Unruhen6_B);
-	Info_AddChoice	(Info_Mod_Wendel_Unruhen6, "Genau, Roman, versuch bitte, sachlich zu sein.", Info_Mod_Wendel_Unruhen6_A);
+	Info_AddChoice	(Info_Mod_Wendel_Unruhen6, "I see your obvious complicity, Wendel.", Info_Mod_Wendel_Unruhen6_B);
+	Info_AddChoice	(Info_Mod_Wendel_Unruhen6, "Exactly, roman, please try to be objective.", Info_Mod_Wendel_Unruhen6_A);
 };
 
 FUNC VOID Info_Mod_Wendel_Unruhen6_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen6_B_15_00"); //Ich sehe da deine deutliche Mitschuld, Wendel.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen6_B_15_00"); //I see your obvious complicity, Wendel.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Mod_REL_WendelS = 6;
@@ -572,7 +572,7 @@ FUNC VOID Info_Mod_Wendel_Unruhen6_B()
 
 FUNC VOID Info_Mod_Wendel_Unruhen6_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen6_A_15_00"); //Genau, Roman, versuch bitte, sachlich zu sein.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen6_A_15_00"); //Exactly, roman, please try to be objective.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Mod_REL_WendelS = 5;
@@ -606,13 +606,13 @@ FUNC VOID Info_Mod_Wendel_Unruhen7_Info()
 {
 	Info_ClearChoices	(Info_Mod_Wendel_Unruhen7);
 
-	Info_AddChoice	(Info_Mod_Wendel_Unruhen7, "Wendel, in diesem Punkt solltest du nachgeben.", Info_Mod_Wendel_Unruhen7_B);
-	Info_AddChoice	(Info_Mod_Wendel_Unruhen7, "Halt dich ein wenig zurück, Roman.", Info_Mod_Wendel_Unruhen7_A);
+	Info_AddChoice	(Info_Mod_Wendel_Unruhen7, "Wendel, you should give in on that point.", Info_Mod_Wendel_Unruhen7_B);
+	Info_AddChoice	(Info_Mod_Wendel_Unruhen7, "Keep a low profile, Roman.", Info_Mod_Wendel_Unruhen7_A);
 };
 
 FUNC VOID Info_Mod_Wendel_Unruhen7_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen7_B_15_00"); //Wendel, in diesem Punkt solltest du nachgeben.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen7_B_15_00"); //Wendel, you should give in on that point.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Mod_REL_WendelS = 12;
@@ -624,7 +624,7 @@ FUNC VOID Info_Mod_Wendel_Unruhen7_B()
 
 FUNC VOID Info_Mod_Wendel_Unruhen7_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen7_A_15_00"); //Halt dich ein wenig zurück, Roman.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen7_A_15_00"); //Keep a low profile, Roman.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Mod_REL_WendelS = 11;
@@ -658,25 +658,25 @@ FUNC VOID Info_Mod_Wendel_Unruhen8_Info()
 {
 	Info_ClearChoices	(Info_Mod_Wendel_Unruhen8);
 
-	Info_AddChoice	(Info_Mod_Wendel_Unruhen8, "Romans Forderung ist absolut zulässig.", Info_Mod_Wendel_Unruhen8_B);
-	Info_AddChoice	(Info_Mod_Wendel_Unruhen8, "Eine Entschädigung wäre jetzt doch zu viel des Guten.", Info_Mod_Wendel_Unruhen8_A);
+	Info_AddChoice	(Info_Mod_Wendel_Unruhen8, "Roman's demand is perfectly acceptable.", Info_Mod_Wendel_Unruhen8_B);
+	Info_AddChoice	(Info_Mod_Wendel_Unruhen8, "Compensation would be too much of a good thing now.", Info_Mod_Wendel_Unruhen8_A);
 };
 
 FUNC VOID Info_Mod_Wendel_Unruhen8_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen8_B_15_00"); //Romans Forderung ist absolut zulässig.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen8_B_15_00"); //Roman's demand is perfectly acceptable.
 
 	if (Mod_REL_WendelS_Choice == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Wendel_Unruhen8_B_01_01"); //Es tut mir Leid, dir das sagen zu müssen, aber unter einem Unparteiischen stelle ich mir nicht das vor, was du uns hier gezeigt hast.
-		AI_Output(self, hero, "Info_Mod_Wendel_Unruhen8_B_01_02"); //Ich bin mit dem Verlauf des Gesprächs nicht zufrieden und würde vorschlagen, es später noch einmal zu versuchen.
+		AI_Output(self, hero, "Info_Mod_Wendel_Unruhen8_B_01_01"); //I'm sorry to have to tell you this, but under an impartial one I'm not imagining what you showed us here.
+		AI_Output(self, hero, "Info_Mod_Wendel_Unruhen8_B_01_02"); //I am not satisfied with the outcome of the discussion and would suggest that I try again later.
 
 		Mod_REL_WendelS = 17;
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Wendel_Unruhen8_B_01_03"); //Ja, das ist mir bewusst. Wir werden schon eine Lösung finden.
-		AI_Output(self, hero, "Info_Mod_Wendel_Unruhen8_B_01_04"); //Vielleicht könnten wir die Entschädigungen ein wenig in die Zukunft verschieben, um erst mal den Haushalt zu sanieren. Wäre das in Ordnung?
+		AI_Output(self, hero, "Info_Mod_Wendel_Unruhen8_B_01_03"); //Yes, I'm aware of that. We'll work something out.
+		AI_Output(self, hero, "Info_Mod_Wendel_Unruhen8_B_01_04"); //Perhaps we could postpone compensation for a while in the future, in order to clean up the budget. Would that be all right?
 
 		Mod_REL_WendelS = 18;
 	};
@@ -688,7 +688,7 @@ FUNC VOID Info_Mod_Wendel_Unruhen8_B()
 
 FUNC VOID Info_Mod_Wendel_Unruhen8_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen8_A_15_00"); //Eine Entschädigung wäre jetzt doch zu viel des Guten.
+	AI_Output(hero, self, "Info_Mod_Wendel_Unruhen8_A_15_00"); //Compensation would be too much of a good thing now.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Mod_REL_WendelS = 20;
@@ -720,10 +720,10 @@ FUNC INT Info_Mod_Wendel_Unruhen9_Condition()
 
 FUNC VOID Info_Mod_Wendel_Unruhen9_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen9_01_00"); //Wir scheinen die gröbsten Probleme aus dem Weg geräumt zu haben. Ich hoffe, jetzt wird alles in geregelten Bahnen verlaufen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen9_01_01"); //Danke für deine Hilfe.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen9_01_00"); //We seem to have solved the most serious problems. I hope everything will now run smoothly.
+	AI_Output(self, hero, "Info_Mod_Wendel_Unruhen9_01_01"); //Thanks for your help.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Es gibt immerhin schon eine Grundlage für weitere Verhandlungen. Damit sollten die friedlichen Zeiten in Khorata eingeläutet worden sein.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "After all, there is already a basis for further negotiations. That should be the beginning of the peaceful times in Khorata.");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_UNRUHEN, LOG_SUCCESS);
 
 	B_GivePlayerXP	(800);
@@ -743,7 +743,7 @@ INSTANCE Info_Mod_Wendel_Plagenquest (C_INFO)
 	information	= Info_Mod_Wendel_Plagenquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mir scheint, ihr braucht einen Kammerjäger.";
+	description	= "Seems to me you need an exterminator.";
 };
 
 FUNC INT Info_Mod_Wendel_Plagenquest_Condition()
@@ -758,17 +758,17 @@ FUNC INT Info_Mod_Wendel_Plagenquest_Condition()
 FUNC VOID Info_Mod_Wendel_Plagenquest_Info()
 {
 	B_Say	(hero, self, "$PLAGENQUEST01");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_01"); //Ja, wir hatten schon einen ganzen Trupp Hammerjäger durch die Stadt geschickt.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_02"); //Aber auch mit ihren Hämmern konnten sie dem Ungeziefer keinen Einhalt gebieten.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_03"); //Egal wie oft man drauf schlägt, sie kommen wieder und in Gesellschaft vieler ihrer Artgenossen.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_01"); //Yeah, we've already sent a bunch of hammer-hunters through town.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_02"); //But even with their hammers they could not stop the vermin.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_03"); //No matter how often you hit them, they come back and in the company of many of their kind.
 	B_Say	(hero, self, "$PLAGENQUEST02");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_05"); //In der Tat, ich forsche gerade in den Chroniken der Stadt nach und bin da tatsächlich auf etwas gestoßen ...
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_06"); //Es wird aber noch ein Weilchen dauern, bis ich mir den Text vollständig erschlossen habe.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_05"); //In fact, I'm currently researching the chronicles of the city and I've actually come across something....
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_06"); //However, it will take me a while until I have fully explored the text.
 	B_Say	(hero, self, "$PLAGENQUEST03");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_08"); //Ja, du kannst mal dein Glück als Hammerjäger im Gerichtsgebäude versuchen, wo sich im Moment besonders viele Drecksviecher tummeln.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_09"); //Vielleicht hast du ja mehr Erfolg.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_08"); //Yes, you can try your luck as a hammerfighter in the courthouse, where there are a lot of filthy creatures at the moment.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_01_09"); //Maybe you'll be more successful.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Wendel scheint in den Chroniken der Stadt auf Anhaltspunkte gestoßen zu sein. Bis er sie vollständig ergründet hat, soll ich mich im Gerichtsgebäude im Insektenjagen erproben.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Wendel seems to have found clues in the city's chronicles. Till he's completely fathomed them, I'm supposed to try me out in the courthouse for insect hunting.");
 
 	Wld_InsertNpc	(Insekt_01, "REL_CITY_341");
 	Wld_InsertNpc	(Insekt_01, "REL_CITY_341");
@@ -806,33 +806,33 @@ FUNC INT Info_Mod_Wendel_Plagenquest_02_Condition()
 
 FUNC VOID Info_Mod_Wendel_Plagenquest_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_00"); //Ahh, gut, dass du vorbeikommst, ich habe etwas wichtiges entdeckt.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_01"); //Die Plage, die zurzeit die Stadt heimsucht, hatte es bereits vor vielen Jahrhunderten gegeben – nicht lange, nach der Stadtgründung.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_02"); //Um der Stadt und ihrer Umgebung den Segen der Götter zu sichern, wurde damals den Göttern mit Tieropfern gehuldigt.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_03"); //Jeder hatte die Pflicht eine bestimmte Anzahl an Tieren zu opfern.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_04"); //Einer ihrer Gründerväter war jedoch so geizig, dass er nicht Schafe oder Molerat, sondern Insekten opferte.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_05"); //Die Götter waren darüber so erzürnt, dass sie den Wunsch der Menschen nach reicher Tierpopulation vor allem auf die Insekten der Umgebung übertrugen.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_00"); //Ahh, good to see you, I've discovered something important.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_01"); //The plague that is currently afflicting the city had already existed many centuries ago - not long after the city was founded.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_02"); //In order to secure the blessing of the gods for the city and its surroundings, animal sacrifices were made in homage to the gods at that time.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_03"); //Everyone had the duty to sacrifice a certain number of animals.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_04"); //However, one of their founding fathers was so stingy that he sacrificed insects instead of sheep or molate.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_05"); //The gods were so angry that they transferred the human desire for a rich animal population to the insects of the environment.
 
 	B_Say	(hero, self, "$PLAGENQUEST04");
 
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_07"); //Nun, mit der chemischen Keule.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_07"); //Well, with the chemical club.
 
 	B_Say	(hero, self, "$PLAGENQUEST05");
 
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_09"); //Ja, lange Zeit war man völlig ratlos und es schien so, als müsse man die Stadt aufgeben.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_10"); //Doch dann wurde einem rechtschaffenden und ehrbaren Bürger namens Chemos ein Traum gesandt.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_11"); //Er erhielt die Anleitung zum Bau einer Waffe, welche die Plagegeister bannen konnte.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_12"); //Daher muss auch unser Brauch mit den Stadthämmern zum Kampf gegen die Insekten kommen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_13"); //Damals unterschieden sich Hämmer und Keulen nämlich noch nicht grundlegend.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_14"); //Unser Gesetz dazu stammt erst aus etwas späterer Zeit, als die Hämmer ihre charakteristische Form erhielten und die Keulen aus praktischen Gründen ablösten.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_09"); //Yes, for a long time one was completely helpless and it seemed as if one had to give up the city.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_10"); //But then a righteous and respectable citizen named Chemos was sent a dream.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_11"); //He received instructions on how to build a weapon that could banish the plague.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_12"); //That's why our custom with the town hammers must come to the fight against the insects.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_13"); //At that time hammers and clubs did not differ fundamentally.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_14"); //Our law for this purpose dates back to a little later, when the hammers were given their characteristic shape and the clubs were replaced for practical reasons.
 
 	B_Say	(hero, self, "$PLAGENQUEST06");
 
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_16"); //Nein, leider nicht mehr. Und die Anfertigung einer solchen Waffe ist nicht ganz unkompliziert. Ich habe die Anleitung gefunden ...
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_16"); //No, I'm afraid not anymore. And the production of such a weapon is not uncomplicated. I found the manual....
 
 	B_Say	(hero, self, "$PLAGENQUEST07");
 
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_18"); //Hier hast du eine Abschrift davon.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_18"); //Here's a copy of it.
 
 	B_GiveInvItems	(self, hero, ItWr_Bauplan_ChemischeKeule, 1);
 
@@ -841,11 +841,11 @@ FUNC VOID Info_Mod_Wendel_Plagenquest_02_Info()
 	B_HeroFakeScroll ();
 
 	B_Say	(hero, self, "$PLAGENQUEST09");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_21"); //(erfreut) Wirklich? Du würdest uns allen einen großen Dienst damit erweisen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_22"); //Sobald du alles zusammen hast, begib dich wieder hier her und händige die Materialien unserem Schmied aus.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_23"); //Und eine Keule werden wir schon irgendwo in der Stadt auftreiben. Ich danke dir.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_21"); //(joyous) Really? You would be doing us all a great service.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_22"); //As soon as you have everything together, get back here and hand the materials to our blacksmith.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_02_01_23"); //And we'll find a club somewhere in the city. Thank you, thank you.
 
-	B_LogEntry_More	(TOPIC_MOD_ADANOS_PLAGE, TOPIC_MOD_ADANOS_DRECKSVIECHER, "Aha, die Insektenplage beruht also auf einer Strafe der Götter für einen Frevel, der begangen wurde.", "Ok, ich darf mich jetzt auf die Suche nach dem Material für die chemische Keule begeben, welche die Mistviecher bannen kann. Eine Keule müssten sie in Khorata schon selbst auftreiben können ...");
+	B_LogEntry_More	(TOPIC_MOD_ADANOS_PLAGE, TOPIC_MOD_ADANOS_DRECKSVIECHER, "Aha, the plague of insects is thus based on a punishment of the gods for an outrage committed.", "Ok, I'm now allowed to search for the chemical club material that can banish the cattle. They should be able to find a club themselves in Khorata...");
 
 	B_GivePlayerXP	(200);
 
@@ -873,10 +873,10 @@ FUNC INT Info_Mod_Wendel_Plagenquest_03_Condition()
 
 FUNC VOID Info_Mod_Wendel_Plagenquest_03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_03_01_00"); //Ich habe gehört, du hast die Keule. Jetzt ist es an der Zeit die Plagegeister aus der Stadt zu verjagen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_03_01_01"); //Am Marktplatz haben sich besonders viele von den Viechern gesammelt. Nimm die chemische Keule und vernichte sie.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_03_01_00"); //I hear you got the club. Now it's time to drive the pests out of town.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_03_01_01"); //Many of the animals have gathered in the marketplace. Take the chemical club and destroy it.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Jetzt ist es an der Zeit zu testen, ob die chemische Keule etwas taugt. Ich soll die ganzen Drecksplagen erledigen, die sich am Marktplatz gesammelt haben.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Now it's time to check if the chemical club is working. I'm supposed to deal with all the scumbags that have gathered at the marketplace.");
 
 	Wld_InsertNpc	(Insekt_04, "REL_CITY_102");
 	Wld_InsertNpc	(Insekt_04, "REL_CITY_102");
@@ -901,7 +901,7 @@ INSTANCE Info_Mod_Wendel_Plagenquest_04 (C_INFO)
 	information	= Info_Mod_Wendel_Plagenquest_04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Keule konnte den Insekten Einhalt gebieten. Ich habe sie alle bezwungen.";
+	description	= "The club was able to stop the insects. I defeated them all.";
 };
 
 FUNC INT Info_Mod_Wendel_Plagenquest_04_Condition()
@@ -919,22 +919,22 @@ FUNC INT Info_Mod_Wendel_Plagenquest_04_Condition()
 FUNC VOID Info_Mod_Wendel_Plagenquest_04_Info()
 {
 	B_Say	(hero, self, "$PLAGENQUEST10");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_01"); //Das ist großartig und der erste Schritt um das Übel endgültig zu bannen.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_01"); //That's great and the first step to finally banish the evil.
 	B_Say	(hero, self, "$PLAGENQUEST11");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_03"); //Ja, leider mussten wir feststellen, dass weiterhin neue Parasiten aus den umliegenden Wäldern kommen.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_04"); //Irgendwo dort muss die Wurzel des Übels sein ... der ominöse Riesenbug, von dem die Quellen sprachen.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_03"); //Yes, unfortunately we found out that new parasites continue to come from the surrounding forests.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_04"); //Somewhere there must be the root of the evil.... the ominous giant bug the springs were talking about.
 	B_Say	(hero, self, "$PLAGENQUEST12");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_06"); //Es gibt da aber etwas, besser gesagt jemanden, der dir dabei helfen könnte.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_06"); //There's something, or rather someone who could help you with that.
 	B_Say	(hero, self, "$PLAGENQUEST13");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_08"); //Ein Bürger unserer Stadt. Sein Name ist Axon und er trägt das chemische Blut in sich, wie ich vor ein paar Stunden herausgefunden habe.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_08"); //A citizen of our town. His name is axon and he carries the chemical blood, as I found out a few hours ago.
 	B_Say	(hero, self, "$PLAGENQUEST14");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_10"); //Nun, zum einen geben die Stammbäume klare Hinweise darauf und dann ... nun ...
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_10"); //Well, on the one hand the pedigrees give clear hints and then.... well...
 	B_Say	(hero, self, "$PLAGENQUEST15");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_12"); //... dann haben wir noch die chemische Keule bei ihm gefunden. Sie hing die ganze Zeit im Wohnzimmer seines Hauses.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_12"); //... we found the chemical club with him. She was hanging in the living room of his house all the time.
 	B_Say	(hero, self, "$PLAGENQUEST16");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_14"); //Jedenfalls sollte er dir dabei helfen können das Käfergetier zu erspüren, den Riesenbug zu entdecken und zu vernichten. Er wartet bereits vor der Stadt auf dich.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_04_01_14"); //Anyway, he should be able to help you sense the beetle animal, discover and destroy the giant bug. He's already waiting for you outside the city.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Grmpf, das wird ja immer besser. Die ganze Zeit hing die chemische Keule bei Axon, einem Nachfahren des Chemos ... Nun denn, jetzt darf ich also mit ihm den Riesenbug im Wald erlegen. Axon erwartet mich vor der Stadt.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Grmpf, this is getting better and better. All this time the chemical club was hanging around Axon, a descendant of chemo.... Well then, now I'm allowed to shoot the big bug in the woods with him. Axon's waiting for me outside the city.");
 
 	B_StartOtherRoutine	(Mod_7415_OUT_Axon_REL, "VORSTADT");
 	AI_Teleport	(Mod_7415_OUT_Axon_REL, "REL_CITY_001");
@@ -948,7 +948,7 @@ INSTANCE Info_Mod_Wendel_Plagenquest_05 (C_INFO)
 	information	= Info_Mod_Wendel_Plagenquest_05_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es ist vollbracht. Der Riesenbug ist bezwungen.";
+	description	= "It is done. The giant bow is defeated.";
 };
 
 FUNC INT Info_Mod_Wendel_Plagenquest_05_Condition()
@@ -964,10 +964,10 @@ FUNC INT Info_Mod_Wendel_Plagenquest_05_Condition()
 FUNC VOID Info_Mod_Wendel_Plagenquest_05_Info()
 {
 	B_Say	(hero, self, "$PLAGENQUEST17");
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_05_01_01"); //Das ist großartig. Du hast unserer Stadt einen Dienst von unschätzbarem Wert erwiesen und das Übel gebannt.
-	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_05_01_02"); //Nimm, dieses Gold und den Stadthammer zum Dank. Der Segen der Götter möge dich begleiten.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_05_01_01"); //That's terrific. You have done our city a service of inestimable value and you have dispelled the evil.
+	AI_Output(self, hero, "Info_Mod_Wendel_Plagenquest_05_01_02"); //Take this gold and the town hammer as a thank you. May the blessing of the gods accompany you.
 
-	B_ShowGivenThings	("1000 Gold und Stadthammer erhalten");
+	B_ShowGivenThings	("1000 Gold and town hammer received");
 
 	CreateInvItems	(hero, ItMw_Stadthammer, 1);
 	CreateInvItems	(hero, ItMi_Gold, 1000);
@@ -1006,22 +1006,22 @@ FUNC INT Info_Mod_Wendel_Andre_Condition()
 
 FUNC VOID Info_Mod_Wendel_Andre_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_00"); //Guten Morgen, Soldat. Oder sollte ich dich lieber Hauptmann nennen?
+	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_00"); //Good morning, soldier. Or should I call you captain?
 	B_Say	(hero, self, "$HEROBOTQUEST01");
-	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_02"); //Lord Andre's Plan hat funktioniert, allerdings gab es keine Möglichkeit einen Ausgang in den Hochofen zu implementieren, deshalb hat er dich überwältigt, selbst das Kostüm angezogen und den Roboter in den Hochofen gelockt.
-	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_03"); //Wir haben einen versiegelten Umschlag neben dir gefunden. Darin erklärte Andre die ganze Angelegenheit und hat dich zu seinem Nachfolger ernannt.
-	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_04"); //Aber hier ... die Details kannst du selbst nachlesen.
+	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_02"); //Lord Andre's plan worked, but there was no way to implement an exit into the blast furnace, so he overpowered you, put on the costume and lured the robot into the blast furnace.
+	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_03"); //We found a sealed envelope next to you. In it Andre explained the whole matter and appointed you as his successor.
+	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_04"); //But here... you can read the details for yourself.
 
 	B_GiveInvItems	(self, hero, ItWr_AndreAbschied, 1);
 
-	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_05"); //Und diesen Schlüssel soll ich dir geben. Vermutlich zu seiner Kiste im Hauptmannzimmer.
+	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_05"); //And I'm supposed to give you this key. Probably to his box in the master's room.
 
 	B_GiveInvItems	(self, hero, ItKe_Andre, 1);
 
 	B_Say	(hero, self, "$HEROBOTQUEST02");
-	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_06"); //Genau. Die Trauerfeier hast du verpasst, du haben geschlagene 32 Stunden durchgeschlafen. Der alte Haudegen scheint in ganz guter Form gewesen zu sein.
-	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_07"); //Wenn du dich verabschieden willst, Andre liegt mittlerweile am Friedhof. Zumindest seine Asche. Aber ruh' dich zuerst aus, er läuft dir schon nicht weg.
-	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_08"); //Ach ja, bevor ich's vergesse: Der Betreiber des Hochofens hat nach dir gefragt, schau mal bei ihm vorbei.
+	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_06"); //Exactly. You missed the memorial service, you slept through 32 hours of beaten-up sleep. The old warhorse seems to have been in very good shape.
+	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_07"); //If you want to say goodbye, Andre is now at the cemetery. At least his ashes. But rest first, he won't run away from you.
+	AI_Output(self, hero, "Info_Mod_Wendel_Andre_01_08"); //Oh yes, before I forget: The operator of the blast furnace asked for you, check in on him.
 
 	B_Göttergefallen(1, 5);
 
@@ -1029,10 +1029,10 @@ FUNC VOID Info_Mod_Wendel_Andre_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_PAL_BOT, TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Der Roboter ist besiegt, jedoch musste sich Lord Andre opfern, um dies zu erreichen. Nun hat er mich zu seinem Nachfolger ernannt.", "Andre hat sich tatsächlich geopfert um den Roboter zu vernichten. In einem Schreiben hat er mich zu seinem Nachfolger ernannt und mir einen Schlüssel hinterlegt, der wahrscheinlich zu seiner Truhe in der Kaserne führt.");
+	B_LogEntry_More	(TOPIC_MOD_PAL_BOT, TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "The robot is defeated, but Lord Andre had to sacrifice himself to achieve this. Now he has appointed me as his successor.", "Andre actually sacrificed himself to destroy the robot. In a letter he named me as his successor and gave me a key, which probably leads me to his chest in the barracks.");
 	B_SetTopicStatus	(TOPIC_MOD_PAL_BOT, LOG_SUCCESS);
 
-	B_LogEntry_NS	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Der Betreiber des Hochofens Robert will mich sprechen. Ich sollte dort mal vorbeischauen und fragen, worum es geht.");
+	B_LogEntry_NS	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "The operator of the blast furnace Robert wants to see me. I should stop by there and ask what it's about.");
 };
 
 INSTANCE Info_Mod_Wendel_Freudenspender (C_INFO)
@@ -1043,7 +1043,7 @@ INSTANCE Info_Mod_Wendel_Freudenspender (C_INFO)
 	information	= Info_Mod_Wendel_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Willst du Freudenspender?";
+	description 	= "Do you want to give pleasure?";
 };                       
 
 FUNC INT Info_Mod_Wendel_Freudenspender_Condition()
@@ -1058,10 +1058,10 @@ FUNC INT Info_Mod_Wendel_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Wendel_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wendel_Freudenspender_15_00"); //Willst du Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Wendel_Freudenspender_01_01"); //Was ist das?
-	AI_Output(hero, self, "Info_Mod_Wendel_Freudenspender_15_02"); //Ein Weg zur Spiritualität.
-	AI_Output(self, hero, "Info_Mod_Wendel_Freudenspender_01_03"); //(lacht) Versuch's besser bei den alten Frauen.
+	AI_Output(hero, self, "Info_Mod_Wendel_Freudenspender_15_00"); //Do you want to give pleasure?
+	AI_Output(self, hero, "Info_Mod_Wendel_Freudenspender_01_01"); //What's this?
+	AI_Output(hero, self, "Info_Mod_Wendel_Freudenspender_15_02"); //A way to spirituality.
+	AI_Output(self, hero, "Info_Mod_Wendel_Freudenspender_01_03"); //(laughs) Try the old ladies.
 };
 
 INSTANCE Info_Mod_Wendel_Pickpocket (C_INFO)

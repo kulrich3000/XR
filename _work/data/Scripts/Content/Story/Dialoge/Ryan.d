@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Ryan_Hi_Condition()
 
 FUNC VOID Info_Mod_Ryan_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ryan_Hi_36_00"); //(gefasst) Ich habe gesehen, dass du kommen würdest.
-	AI_Output(hero, self, "Info_Mod_Ryan_Hi_15_01"); //Du hast dein Spielchen übertrieben. Die Dämonenbeschwörer sind mächtig sauer auf dich.
-	AI_Output(self, hero, "Info_Mod_Ryan_Hi_36_02"); //Auch das habe ich vorhergesehen. Und doch spüre ich die Kraft der Götter in mir. Ich weiß, dass ich gegen dich nicht verlieren kann.
-	AI_Output(hero, self, "Info_Mod_Ryan_Hi_15_03"); //Wenn du dich da mal nicht täuschst.
-	AI_Output(self, hero, "Info_Mod_Ryan_Hi_36_04"); //(sich steigernd) Zuerst werde ich dich vernichten, und dann wird meine Anhängerschaft ins Endlose wachsen!
+	AI_Output(self, hero, "Info_Mod_Ryan_Hi_36_00"); //I saw you were coming.
+	AI_Output(hero, self, "Info_Mod_Ryan_Hi_15_01"); //You exaggerated your game. The demon summoners are mighty mad at you.
+	AI_Output(self, hero, "Info_Mod_Ryan_Hi_36_02"); //I foresaw that too. And yet I feel the power of the gods in me. I know I can't lose to you.
+	AI_Output(hero, self, "Info_Mod_Ryan_Hi_15_03"); //If you're not mistaken.
+	AI_Output(self, hero, "Info_Mod_Ryan_Hi_36_04"); //(Increasing) First I will destroy you, and then my following will grow endlessly!
 
 	AI_StopProcessInfos	(self);
 

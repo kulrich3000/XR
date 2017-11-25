@@ -14,7 +14,7 @@ INSTANCE Info_Sld_11_EXIT(C_INFO)
 	condition	= Info_Sld_11_EXIT_Condition;
 	information	= Info_Sld_11_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_Sld_11_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Sld_11_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_11_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_11_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich will ein Söldner werden.";
+	description = "I want to be a mercenary.";
 };                       
 
 FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
@@ -50,12 +50,12 @@ FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_11_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //Ich will ein Söldner werden.
-	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_01"); //Das ist nicht schwer. Wenn du für unsere Sache kämpfen willst, wird Lee dich nehmen.
-	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Aber er nimmt nur Leute, die gut mit dem Schwert umgehen können. Wie sieht's damit bei dir aus?
-	AI_Output(hero,self,"Info_Sld_11_EinerVonEuchWerden_15_03"); //Nun ...
-	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Dachte ich mir. Wenn es dir wirklich ernst ist, rede mit Cord. Er hat schon mal einen Frischling ausgebildet.
-	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Vielleicht hast du ja Glück und er macht sich auch bei dir die Mühe.
+	AI_Output(hero,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //I want to be a mercenary.
+	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_01"); //It's not difficult. If you want to fight for our cause, Lee will take you.
+	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_02"); //But he only takes people who are good with the sword. What about you with that?
+	AI_Output(hero,self,"Info_Sld_11_EinerVonEuchWerden_15_03"); //Well...
+	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_04"); //I thought you might. If you're serious, talk to Cord. He trained a freshman once.
+	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Maybe you're lucky, and he'll bother you too.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Sld_11_WichtigePersonen(C_INFO)
 	condition	= Info_Sld_11_WichtigePersonen_Condition;
 	information	= Info_Sld_11_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_Sld_11_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Sld_11_WichtigePersonen_Condition()
 
 FUNC VOID Info_Sld_11_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Sld_11_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_Sld_11_WichtigePersonen_11_01"); //Im Grunde regelt Lee alles. Er ist unser Anführer.
+	AI_Output(hero,self,"Info_Sld_11_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,hero,"Info_Sld_11_WichtigePersonen_11_01"); //Basically, Lee handles everything. He's our leader.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Sld_11_DasLager(C_INFO)
 	condition	= Info_Sld_11_DasLager_Condition;
 	information	= Info_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "Gibt es Probleme hier im Lager?";
+	description = "Is there a problem here in the camp?";
 };                       
 
 FUNC INT Info_Sld_11_DasLager_Condition()
@@ -102,8 +102,8 @@ FUNC INT Info_Sld_11_DasLager_Condition()
 
 FUNC VOID Info_Sld_11_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Sld_11_DasLager_15_00"); //Gibt es Probleme hier im Lager?
-	AI_Output(self,hero,"Info_Sld_11_DasLager_11_01"); //Junge, hier gibt es immer Probleme.
+	AI_Output(hero,self,"Info_Sld_11_DasLager_15_00"); //Is there a problem here in the camp?
+	AI_Output(self,hero,"Info_Sld_11_DasLager_11_01"); //Boy, there's always trouble here.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ INSTANCE Info_Sld_11_DieLage(C_INFO) // E1
 	condition	= Info_Sld_11_DieLage_Condition;
 	information	= Info_Sld_11_DieLage_Info;
 	permanent	= 1;
-	description = "Alles klar bei dir?";
+	description = "Everything okay with you?";
 };                       
 
 FUNC INT Info_Sld_11_DieLage_Condition()
@@ -126,11 +126,11 @@ FUNC INT Info_Sld_11_DieLage_Condition()
 
 FUNC VOID Info_Sld_11_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Sld_11_DieLage_15_00"); //Alles klar bei dir?
-	AI_Output(self,hero,"Info_Sld_11_DieLage_11_01"); //Noch ist alles ruhig ...
-	AI_Output(hero,self,"Info_Sld_11_DieLage_15_02"); //Noch?
-	AI_Output(self,hero,"Info_Sld_11_DieLage_11_03"); //Wenn die ehemaligen Banditen weiter Artos' Konvois überfallen, steht er irgendwann mit seiner Armee hier vor dem Tor.
-	AI_Output(self,hero,"Info_Sld_11_DieLage_11_04"); //Und das wird bestimmt kein Spaß.
+	AI_Output(hero,self,"Info_Sld_11_DieLage_15_00"); //Everything okay with you?
+	AI_Output(self,hero,"Info_Sld_11_DieLage_11_01"); //Everything is still calm...
+	AI_Output(hero,self,"Info_Sld_11_DieLage_15_02"); //Still?
+	AI_Output(self,hero,"Info_Sld_11_DieLage_11_03"); //If the former bandits keep attacking Artos' convoys, he and his army will stand in front of the gate.
+	AI_Output(self,hero,"Info_Sld_11_DieLage_11_04"); //And it's not gonna be fun.
 };
 
 INSTANCE Info_Mod_SLD_11_Pickpocket (C_INFO)

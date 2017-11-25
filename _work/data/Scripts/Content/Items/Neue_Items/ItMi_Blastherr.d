@@ -1,6 +1,6 @@
 INSTANCE ItMi_Blastherr (C_Item)
 {
-	name 				=	"Blastherr";
+	name 				=	"blast master";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags				=	ITEM_MULTI;

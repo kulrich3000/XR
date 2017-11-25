@@ -6,7 +6,7 @@ FUNC VOID Runensteinbrocken_S1 ()
 	{	
 		if (Npc_HasItems(hero, ItMw_2H_Axe_L_01) == 0)
 		{
-			Print	("Ohne Spitzhacke geht das nicht!");
+			Print	("You can't do that without a pickaxe!");
 
 			AI_UseMob (hero, "ORE", -1);
 			return;
@@ -85,7 +85,7 @@ INSTANCE PC_Runensteinbrocken_Hacken (C_INFO)
 	information	= PC_Runensteinbrocken_Hacken_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Einfach mal hacken.";
+	description	= "Just chop it.";
 };
 
 FUNC INT PC_Runensteinbrocken_Hacken_Condition()
@@ -127,18 +127,18 @@ FUNC VOID PC_Runensteinbrocken_Hacken_Info()
 		if (Erzhackchance >= ErzKriegChance)
 		{
 			CreateInvItems	(hero, ItMi_RuneBlank, 1);
-			PrintScreen	("1 Runenstein gehackt!", -1, -1, FONT_ScreenSmall, 2);
+			PrintScreen	("1 rune stone chopped!", -1, -1, FONT_ScreenSmall, 2);
 			Truemmer_Count = 0;
 		}
 		else
 		{
-			PrintScreen	("Runensteinsplitter fliegen durch die Luft!", -1, -1, FONT_ScreenSmall, 2);			
+			PrintScreen	("Runestone fragments fly through the air!", -1, -1, FONT_ScreenSmall, 2);			
 			Truemmer_Count = (Truemmer_Count +1);
 		};
 	}
 	else
 	{
-		PrintScreen ("Hier gibt's Nichts mehr zu holen.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("There's nothing left to get here.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 	};
 };
@@ -150,7 +150,7 @@ INSTANCE PC_Runensteinbrocken_TSchlag (C_Info)
 	condition		= PC_Runensteinbrocken_TSchlag_Condition;
 	information		= PC_Runensteinbrocken_TSchlag_Info;
 	permanent		= TRUE;
-	description		= "Trümmerschlag ansetzen."; 
+	description		= ""; 
 };
 
 FUNC INT PC_Runensteinbrocken_TSchlag_Condition ()
@@ -169,7 +169,7 @@ FUNC VOID PC_Runensteinbrocken_TSchlag_Info()
 		
 	if (TruemmerChance < 5)
 	{
-			PrintScreen ("Nichts ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Nothing...", -1, -1, FONT_ScreenSmall, 2);	
 	}
 	else
 	{
@@ -180,12 +180,12 @@ FUNC VOID PC_Runensteinbrocken_TSchlag_Info()
 		if (TruemmerChance >= 85)
 		{
 			CreateInvItems (hero, ItMi_Runeblank, 2);	
-			PrintScreen ("2 Runensteine gehackt! ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("2 Runestones chopped! ...", -1, -1, FONT_ScreenSmall, 2);	
 		}
 		else 
 		{
 			CreateInvItems (hero, ItMi_Runeblank, 1);	
-			PrintScreen ("1 Runenstein gehackt! ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("1 rune stone chopped! ...", -1, -1, FONT_ScreenSmall, 2);	
 		};
 	};
 
@@ -199,7 +199,7 @@ INSTANCE PC_Runensteinbrocken_Chance (C_Info)
 	condition		= PC_Runensteinbrocken_Chance_Condition;
 	information		= PC_Runensteinbrocken_Chance_Info;
 	permanent		= TRUE;
-	description		= "(Eigene Fähigkeit prüfen)"; 
+	description		= "(Check own ability)"; 
 };
 
 FUNC INT PC_Runensteinbrocken_Chance_Condition ()
@@ -216,34 +216,34 @@ FUNC VOID PC_Runensteinbrocken_Chance_Info()
 	
 	if (ErzHackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("blutiger Anfänger (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("absolute beginner (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("ganz passabler Schürfer (" , IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("quite reasonable prospector (" , IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("erfahrener Goldschürfer (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("experienced prospector (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 75) 
 	{
-		ConcatText = ConcatStrings ("waschechter Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("genuine Buddler ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 90) 
 	{
-		ConcatText = ConcatStrings ("verdammt guter Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("damn good digger ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 98) 
 	{
-		ConcatText = ConcatStrings ("Meister Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("Master Buddler ( ", IntToString (ErzHackChance));
 	}
 	else
 	{
 		ConcatText = ConcatStrings ("Buddler Guru ( ", IntToString (ErzHackChance));
 	};
 	
-	ConcatText = ConcatStrings (concatText, " Prozent)");
+	ConcatText = ConcatStrings (concatText, " percent)");
 	
 	PrintScreen (concatText, -1, -1, FONT_ScreenSmall,2);
 };

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_RichterKhorinis_Blutkelch (C_INFO)
 	information	= Info_Mod_RichterKhorinis_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Guten Tag, hoher Herr.";
+	description	= "Good day, my lord.";
 };
 
 FUNC INT Info_Mod_RichterKhorinis_Blutkelch_Condition()
@@ -20,20 +20,20 @@ FUNC INT Info_Mod_RichterKhorinis_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_RichterKhorinis_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_00"); //Guten Tag, hoher Herr.
-	AI_Output(self, hero, "Info_Mod_RichterKhorinis_Blutkelch_10_01"); //Ahh. Ein Mensch mit Benehmen. Trifft man nicht oft dieser Tage. Was gibt's?
-	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_02"); //Ein Anliegen, Herr, von dem ich hoffe, dass Ihr ein gerechtes Urteil fällt ...
-	AI_Output(self, hero, "Info_Mod_RichterKhorinis_Blutkelch_10_03"); //Meine Urteile waren noch immer gerecht.
-	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_04"); //Gewiss, Herr. Hört: Ich habe dem Händler Baltram am Marktplatz ein Dutzend feinsten Klosterwein geliefert. Beste Auslese.
-	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_05"); //Er behauptet nun, der Wein sei minderer Qualität, schmecke gar schimmlig. Nun kennt man Euch als Gourmet, Ihr könnt den Wein sicher beurteilen.
-	AI_Output(self, hero, "Info_Mod_RichterKhorinis_Blutkelch_10_06"); //Das will ich meinen. Hast du eine Probe?
-	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_07"); //Ich habe hier die beanstandete Flasche mitgebracht. Wenn Ihr probieren wollt.
+	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_00"); //Good day, my lord.
+	AI_Output(self, hero, "Info_Mod_RichterKhorinis_Blutkelch_10_01"); //Ahh. A man of manners. It's not often these days. What's up?
+	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_02"); //A request, sir, which I hope you will pass a fair verdict on...
+	AI_Output(self, hero, "Info_Mod_RichterKhorinis_Blutkelch_10_03"); //My judgments were still just.
+	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_04"); //Certainly, Lord. Listen: I have delivered a dozen of the finest monastery wines to the merchant Baltram at the marketplace. Best selection.
+	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_05"); //He now claims that the wine is of inferior quality and tastes mouldy. Now they know you as a gourmet, you can judge the wine for sure.
+	AI_Output(self, hero, "Info_Mod_RichterKhorinis_Blutkelch_10_06"); //That's what I mean. Do you have a sample?
+	AI_Output(hero, self, "Info_Mod_RichterKhorinis_Blutkelch_15_07"); //I brought the bottle with me that was rejected. If you want to taste it.
 
 	B_GiveInvItems	(hero, self, ItPo_KamalGift, 1);
 
 	B_UseItem	(self, ItPo_KamalGift);
 
-	AI_Output(self, hero, "Info_Mod_RichterKhorinis_Blutkelch_10_08"); //Ahh ... Wirklich ein guter Tropfen! Feinfruchtig und schmackhaft im Abgang. Könnte ich vielleicht auch ein paar ...
+	AI_Output(self, hero, "Info_Mod_RichterKhorinis_Blutkelch_10_08"); //Ahh... Really a good drop! Finely fruity and tasty in the finish. Maybe if I could have a couple of...
 
 	AI_StopProcessInfos	(self);
 };

@@ -135,7 +135,7 @@ func int B_AssessEnemy()
 			{
 				Mod_HQ_SPGesehen = TRUE;
 
-				B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Scheiße, was sind denn das für schwarze Schattenviecher ...");
+				B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Shit, what kind of black shadowy creatures....");
 			};
 
 			B_Attack	(self, other, AR_GuildEnemy, 0);

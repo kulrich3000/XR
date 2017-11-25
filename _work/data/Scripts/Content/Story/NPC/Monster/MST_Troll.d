@@ -123,7 +123,7 @@ INSTANCE Krauttroll	(Mst_Default_Troll)
 
 INSTANCE SilverTroll	(Mst_Default_Troll)
 {
-	name = "Silbertroll";
+	name = "silver troll";
 
 	Mdl_SetModelScale(self, 1.5, 1.5, 1.5);
 
@@ -149,7 +149,7 @@ INSTANCE Troll_s	(Mst_Default_Troll)
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL_HÖHLE;
 	level							=	250; //30
 
-	name = "Höhlentroll";
+	name = "Cave Troll";
 
 	protection	[PROT_POINT]		=	IMMUNE;	
 	protection	[PROT_FLY]			=	IMMUNE;
@@ -163,7 +163,7 @@ INSTANCE Troll_s_Pat	(Mst_Default_Troll)
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL_HÖHLE;
 	level							=	250; //30
 
-	name = "Höhlentroll";
+	name = "Cave Troll";
 
 	protection	[PROT_POINT]		=	IMMUNE;	
 	protection	[PROT_FLY]			=	IMMUNE;
@@ -185,7 +185,7 @@ INSTANCE Troll_Howy	(Mst_Default_Troll)
 INSTANCE YTroll	(Mst_Default_Troll)
 {
 	level							=	25;
-	name							=	"Junger Troll";
+	name							=	"Young Troll";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	75;	//FlyDamage
 	attribute	[ATR_DEXTERITY]		=	50;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Aabid_Hi (C_INFO)
 	information	= Info_Mod_Aabid_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Aabid_Hi_Condition()
@@ -18,11 +18,11 @@ FUNC VOID Info_Mod_Aabid_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_00"); //Mein Name ist Aabid. Ich bin einer der Gauner hier und gleichzeitig Händler für außergewöhnliche Sorten von Tabak und Sumpfkrautstängeln.
-	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_01"); //Interessant. Kann ich mal dein Angebot sehen?
-	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_02"); //Nein, das geht leider nicht.
-	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_03"); //Wieso nicht?
-	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_04"); //Ich warte schon seit einiger Zeit auf die Lieferung von drei Sumpfkrautpaketen, aber die Kerle haben mich anscheinend vergessen und ich komme einfach nicht aus dem Versteck.
+	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_00"); //My name is Aabid. I'm one of the crooks here and at the same time a trader for extraordinary varieties of tobacco and marsh herb stems.
+	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_01"); //Interesting. Can I see your offer?
+	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_02"); //No, I can't do that.
+	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_03"); //Why not?
+	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_04"); //I've been waiting for some time for the delivery of three bogweed packages, but the guys seem to have forgotten me and I just can't get out of hiding.
 };
 
 INSTANCE Info_Mod_Aabid_Aufgabe (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Aabid_Aufgabe (C_INFO)
 	information	= Info_Mod_Aabid_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Soll ich dir die Sumpfkrautpakete bringen?";
+	description	= "Shall I bring you the bogweed packs?";
 };
 
 FUNC INT Info_Mod_Aabid_Aufgabe_Condition()
@@ -47,21 +47,21 @@ FUNC INT Info_Mod_Aabid_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Aabid_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_00"); //Soll ich dir die Sumpfkrautpakete bringen?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_01"); //Das wäre wirklich gut, wenn du das machen würdest. Aber warum willst du das machen?
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_02"); //Ich möchte mich den Gaunern anschließen. Dazu brauche ich jedoch eure Stimmen.
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_03"); //Würdest du mir nach dieser Aufgabe eventuell deine Stimme geben.
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_04"); //Wenn du alle Pakete bekommen kannst, dann werde ich dir natürlich meine Stimme geben.
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_05"); //Abgemacht. Wo soll ich die Pakete abholen?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_06"); //Alle drei Händler findest du in der Stadt. Ihre Namen sind Meldor, Borka und zuletzt Jason, ein Milizionär.
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_07"); //Jemand von der Miliz handelt mit Sumpfkraut?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_08"); //Meinst du die halten sich alle an ihre Regeln?
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_09"); //Nein. Also gut, ich werde die drei mal aufsuchen.
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_10"); //Gut. Komm wieder, wenn du die Pakete hast.
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_00"); //Shall I bring you the bogweed packs?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_01"); //That would be really good if you did that. But why would you want to do that?
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_02"); //I'd like to join the crooks. I need your voices, though.
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_03"); //Would you possibly give me your vote after this assignment?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_04"); //If you can get all the packages, then of course I'll give you my vote.
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_05"); //Deal. Where should I pick up the parcels?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_06"); //You can find all three dealers in town. Her names are Meldor, Borka and last but not least Jason, a militaman.
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_07"); //Someone from the militia's dealing in swampweed?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_08"); //Do you think they're all following their rules?
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_09"); //No. All right, I'll see them three times.
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_10"); //Good. Come back when you get the packages.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_AABID_PAKET, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_AABID_PAKET, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Ich habe mit Aabid gesprochen, einem er Gauner der Assassinen. Er will mir seine Stimme geben, aber nur, wenn ich ihm drei Pakete voller Sumpfkraut bringe, die eigentlich von verschiedenen 'Händlern' der Stadt hätten geliefert werden müssen. Dieser Personen sind Meldor, Borka und Jason. Wenn ich von ihnen die Pakete erhalten habe, soll ich mich wieder bei Aabid melden.");
+	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "I spoke to Aabid, one of them assassin crooks. He wants to give me his voice, but only if I bring him three packages of bogweed, which should have been delivered by different' traders' in the city. These people are Meldor, Borka and Jason. When I have received the parcels from them, I should contact Aabid again.");
 };
 
 INSTANCE Info_Mod_Aabid_HabPakete (C_INFO)
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Aabid_HabPakete (C_INFO)
 	information	= Info_Mod_Aabid_HabPakete_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe alle Pakete erhalten können.";
+	description	= "I have received all packages.";
 };
 
 FUNC INT Info_Mod_Aabid_HabPakete_Condition()
@@ -86,22 +86,22 @@ FUNC INT Info_Mod_Aabid_HabPakete_Condition()
 
 FUNC VOID Info_Mod_Aabid_HabPakete_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_00"); //Ich habe alle Pakete erhalten können.
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_01"); //(ungläubig) Du verarscht mich!
-	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_02"); //Nein, hier sind sie.
+	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_00"); //I have received all packages.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_01"); //You're kidding me!
+	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_02"); //No, here they are.
 
 	B_GiveInvItems	(hero, self, ItMi_HerbPaket, 3);
 	Npc_RemoveInvItems(self, ItMi_HerbPaket, 3);
 
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_04"); //Das sind tatsächlich alle, wie hast du das nur gemacht?
-	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_05"); //Reine Intuition, würde ich sagen.
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_06"); //Ich kann dir nicht genug danken. Hier, nimm dieses Gold als Zeichen meiner Dankbarkeit.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_04"); //They're all of them, how did you do that?
+	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_05"); //Pure intuition, I'd say.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_06"); //I can't thank you enough. Here, take this gold as a token of my gratitude.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_07"); //Außerdem bekommst du meine Stimme.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_07"); //Besides, you get my vote.
 
-	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Ich habe Aabid alle Pakte gebracht und er war sehr zufrieden mit meiner Leistung. Anscheinend hat er damit nicht gerechnet. Nunja, mir soll's recht sein, denn ich bin nun eine Stimme und 500 Goldmünzen reicher.");
+	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "I brought Aabid all the pacts and he was very happy with my performance. Apparently, he didn't expect it. Well, it's OK with me, because I'm now one vote and 500 gold coins richer.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_AABID_PAKET, LOG_SUCCESS);
 
 	B_GivePlayerXP	(200);

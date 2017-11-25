@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Onar_Hi_Condition()
 
 FUNC VOID Info_Mod_Onar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Onar_Hi_32_00"); //Was hast du hier verloren?
+	AI_Output(self, hero, "Info_Mod_Onar_Hi_32_00"); //What the hell are you doing here?
 };
 
 INSTANCE Info_Mod_Onar_Ahnenkunde (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Onar_Ahnenkunde (C_INFO)
 	information	= Info_Mod_Onar_Ahnenkunde_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du etwas von einem Teil eines Ornamentringes?";
+	description	= "Do you know anything about any part of an ornamental ring?";
 };
 
 FUNC INT Info_Mod_Onar_Ahnenkunde_Condition()
@@ -39,12 +39,12 @@ FUNC INT Info_Mod_Onar_Ahnenkunde_Condition()
 
 FUNC VOID Info_Mod_Onar_Ahnenkunde_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Ahnenkunde_15_00"); //Weißt du etwas von einem Teil eines Ornamentringes?
-	AI_Output(self, hero, "Info_Mod_Onar_Ahnenkunde_32_01"); //Warum sollte ich dir irgendwas verraten?
-	AI_Output(hero, self, "Info_Mod_Onar_Ahnenkunde_15_02"); //Ich weiß, dass dein Urahn Onar, der wohl diesen Hof hier gegründet hat, es bei sich hatte.
-	AI_Output(self, hero, "Info_Mod_Onar_Ahnenkunde_32_03"); //Du weißt von meinem Urahn? Na gut, ich habe dieses Stück Stein, aber ich werde dir sicher nicht sagen, wo es ist.
+	AI_Output(hero, self, "Info_Mod_Onar_Ahnenkunde_15_00"); //Do you know anything about any part of an ornamental ring?
+	AI_Output(self, hero, "Info_Mod_Onar_Ahnenkunde_32_01"); //Why would I tell you anything?
+	AI_Output(hero, self, "Info_Mod_Onar_Ahnenkunde_15_02"); //I know that your ancestor Onar, who probably founded this farm here, had it with him.
+	AI_Output(self, hero, "Info_Mod_Onar_Ahnenkunde_32_03"); //You know about my ancestor? All right, I got this piece of stone, but I'm not gonna tell you where it is.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Onar hat gesagt, er hätte das Ornamentstück, wollte mir aber nicht verraten, wo es ist. Ich muss wohl sein Haus auf den Kopf stellen. Hoffentlich erwischt mich niemand dabei.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Onar said he had the ornament, but wouldn't tell me where it was. I guess I'll have to turn his house upside down. I hope no one catches me doing this.");
 };
 
 INSTANCE Info_Mod_Onar_BelohnungMaria (C_INFO)
@@ -55,7 +55,7 @@ INSTANCE Info_Mod_Onar_BelohnungMaria (C_INFO)
 	information	= Info_Mod_Onar_BelohnungMaria_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Maria meinte, ich würde bei dir eine Belohnung von 400 Goldmünzen erhalten.";
+	description	= "Maria said I'd get you a reward of 400 gold coins.";
 };
 
 FUNC INT Info_Mod_Onar_BelohnungMaria_Condition()
@@ -69,8 +69,8 @@ FUNC INT Info_Mod_Onar_BelohnungMaria_Condition()
 
 FUNC VOID Info_Mod_Onar_BelohnungMaria_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_BelohnungMaria_15_00"); //Maria meinte, ich würde bei dir eine Belohnung von 400 Goldmünzen erhalten, nachdem ich ihr Heilung von ihrem Leiden verschafft habe.
-	AI_Output(self, hero, "Info_Mod_Onar_BelohnungMaria_32_01"); //Was?! 400 Gold?! Soll ich vor die Hunde gehen?! Du kriegst 200 von mir und keine Münze mehr.
+	AI_Output(hero, self, "Info_Mod_Onar_BelohnungMaria_15_00"); //Mary said that I would receive a reward of 400 gold coins from you after I have cured her of her suffering.
+	AI_Output(self, hero, "Info_Mod_Onar_BelohnungMaria_32_01"); //What?! 400 gold?! Shall I go to the dogs?! You'll get 200 from me and no more coins.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 };
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Onar_Wasili_01 (C_INFO)
 	information	= Info_Mod_Onar_Wasili_01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte, dass Wasili wieder auf den Hof zurück kann.";
+	description	= "I want Wasili back on the farm.";
 };
 
 FUNC INT Info_Mod_Onar_Wasili_01_Condition()
@@ -97,32 +97,32 @@ FUNC INT Info_Mod_Onar_Wasili_01_Condition()
 
 FUNC VOID Info_Mod_Onar_Wasili_01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_15_00"); //Ich möchte, dass Wasili wieder auf den Hof zurück kann.
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_32_01"); //(gereizt) Was?! Was willst du überhaupt?! Nenne mir einen Grund, warum ich meine Zustimmung dazu geben sollte.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_15_00"); //I want Wasili back on the farm.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_32_01"); //What?! What do you want anyway?! Give me one reason why I should give my consent.
 
 	Info_ClearChoices	(Info_Mod_Onar_Wasili_01);
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Maria_BelohnungWasili))
 	{
-		Info_AddChoice	(Info_Mod_Onar_Wasili_01, "Weil ich sonst Maria von der Sache mit den Mägden erzähle.", Info_Mod_Onar_Wasili_01_D);
+		Info_AddChoice	(Info_Mod_Onar_Wasili_01, "Because otherwise I'll tell Maria about the maidservants.", Info_Mod_Onar_Wasili_01_D);
 	};
 
-	Info_AddChoice	(Info_Mod_Onar_Wasili_01, "Weil ich dir sonst die Zähne einschlage.", Info_Mod_Onar_Wasili_01_C);
+	Info_AddChoice	(Info_Mod_Onar_Wasili_01, "Because I'm gonna break your teeth.", Info_Mod_Onar_Wasili_01_C);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 400)
 	{
-		Info_AddChoice	(Info_Mod_Onar_Wasili_01, "Weil ich dir 400 Goldmünzen gebe.", Info_Mod_Onar_Wasili_01_B);
+		Info_AddChoice	(Info_Mod_Onar_Wasili_01, "Because I'll give you 400 gold coins.", Info_Mod_Onar_Wasili_01_B);
 	};
 
-	Info_AddChoice	(Info_Mod_Onar_Wasili_01, "Einfach so aus Freundlichkeit.", Info_Mod_Onar_Wasili_01_A);
+	Info_AddChoice	(Info_Mod_Onar_Wasili_01, "Just out of kindness.", Info_Mod_Onar_Wasili_01_A);
 };
 
 FUNC VOID Info_Mod_Onar_Wasili_01_D()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_D_15_00"); //Weil ich sonst Maria von der Sache mit den Mägden erzähle.
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_D_32_01"); //Was?! Du verdammter Mistkerl, woher weißt du davon. Das zahl ich dir irgendwann heim.
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_D_15_02"); //Also, was ist jetzt?
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_D_32_03"); //(wütend) Ja, du lässt mir keine andere Wahl. Der Lump darf zurück auf den Hof.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_D_15_00"); //Because otherwise I'll tell Maria about the maidservants.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_D_32_01"); //What?! You son of a bitch, how do you know about that? I'll pay you back sometime.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_D_15_02"); //So, what now?
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_D_32_03"); //Yeah, you leave me no other choice. The scoundrel is allowed back to the yard.
 
 	B_StartOtherRoutine	(Mod_100_BAU_Wasili_NW, "START");
 
@@ -137,8 +137,8 @@ FUNC VOID Info_Mod_Onar_Wasili_01_D()
 
 FUNC VOID Info_Mod_Onar_Wasili_01_C()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_C_15_00"); //Weil ich dir sonst die Zähne einschlage.
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_C_32_01"); //Was?! Wachen ...!!!
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_C_15_00"); //Because I'm gonna break your teeth.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_C_32_01"); //What?! Guards! Guards!
 
 	Mod_WM_WasiliQuest = 5;
 
@@ -151,8 +151,8 @@ FUNC VOID Info_Mod_Onar_Wasili_01_C()
 
 FUNC VOID Info_Mod_Onar_Wasili_01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_B_15_00"); //Weil ich dir 400 Goldmünzen gebe.
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_B_32_01"); //(etwas beruhigter) Das ist in der Tat ein Grund. In Ordnung, der Lump kann zurück auf den Hof kommen.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_B_15_00"); //Because I'll give you 400 gold coins.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_B_32_01"); //(slightly calmer) That is indeed a reason. All right, the rascal can come back to the yard.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 400);
 
@@ -169,8 +169,8 @@ FUNC VOID Info_Mod_Onar_Wasili_01_B()
 
 FUNC VOID Info_Mod_Onar_Wasili_01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_A_15_00"); //Einfach so aus Freundlichkeit.
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_A_32_01"); //(äußerst gereizt) Freundlichkeit?! Umsonst ist nur der Tod. Und jetzt mach, dass du wegkommst.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_01_A_15_00"); //Just out of kindness.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_01_A_32_01"); //(very irritated) Friendliness?! Free is only death. Now get the hell out of here.
 
 	Info_ClearChoices	(Info_Mod_Onar_Wasili_01);
 };
@@ -200,9 +200,9 @@ FUNC VOID Info_Mod_Onar_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Onar_Umgehauen_32_00"); //Du verdammtes Schwein, dafür wirst du bezahlen ...
-			AI_Output(hero, self, "Info_Mod_Onar_Umgehauen_15_01"); //Also, was ist jetzt?
-			AI_Output(self, hero, "Info_Mod_Onar_Umgehauen_32_02"); //(wütend) Ja, verdammt, er darf zurückkommen, dieser Lump. Und jetzt verschwinde!
+			AI_Output(self, hero, "Info_Mod_Onar_Umgehauen_32_00"); //You son of a bitch, you're gonna pay for this...
+			AI_Output(hero, self, "Info_Mod_Onar_Umgehauen_15_01"); //So, what now?
+			AI_Output(self, hero, "Info_Mod_Onar_Umgehauen_32_02"); //(irred) Yes, damn it, he may come back, that rascal. Now get out of here!
 
 			B_StartOtherRoutine	(Mod_100_BAU_Wasili_NW, "START");
 
@@ -214,7 +214,7 @@ FUNC VOID Info_Mod_Onar_Umgehauen_Info()
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Onar_Umgehauen_32_03"); //Tja, das war wohl nichts.
+			AI_Output(self, hero, "Info_Mod_Onar_Umgehauen_32_03"); //Well, that was nothing.
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -245,27 +245,27 @@ FUNC INT Info_Mod_Onar_Wasili_02_Condition()
 
 FUNC VOID Info_Mod_Onar_Wasili_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_32_00"); //(kläglich) Ohh, verdammt, mein Magen. Diese Schmerzen, dieser Druck und diese Übelkeit.
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_32_01"); //Du bist doch viel unterwegs draußen. Du musst mir helfen und mir ein Heilmittel besorgen, zum Beispiel von der alten Kräuterhexe.
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_15_02"); //Warum sollte ich dir helfen?
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_32_03"); //Ja, sag schon, was du willst.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_32_00"); //Oh, my fucking stomach. That pain, that pressure and that nausea.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_32_01"); //You're out on the road a lot. You have to help me and get me a cure, like the old herb witch.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_15_02"); //Why would I help you?
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_32_03"); //Yeah, say what you want.
 
 	Info_ClearChoices	(Info_Mod_Onar_Wasili_02);
 
 	if (Mod_WM_WasiliQuest == 3)
 	{
-		Info_AddChoice	(Info_Mod_Onar_Wasili_02, "Lass Wasili seine alte Position auf dem Hof einnehmen.", Info_Mod_Onar_Wasili_02_B);
+		Info_AddChoice	(Info_Mod_Onar_Wasili_02, "Let Wasili take his old position on the farm.", Info_Mod_Onar_Wasili_02_B);
 	};
 
-	Info_AddChoice	(Info_Mod_Onar_Wasili_02, "400 Gold.", Info_Mod_Onar_Wasili_02_A);
+	Info_AddChoice	(Info_Mod_Onar_Wasili_02, "400 gold.", Info_Mod_Onar_Wasili_02_A);
 };
 
 FUNC VOID Info_Mod_Onar_Wasili_02_B()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_B_15_00"); //Lass Wasili seine alte Position auf dem Hof einnehmen.
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_B_32_01"); //Was den Lump wieder zurück auf den Hof ...
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_C_15_02"); //Nun gut, dann eben nicht ...
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_B_32_03"); //Ist ja schon gut, er darf zurück. Und jetzt beeil dich.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_B_15_00"); //Let Wasili take his old position on the farm.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_B_32_01"); //What the ragamuffin returned to the yard....
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_C_15_02"); //All right, then, don't--
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_B_32_03"); //It's all right, he can go back. Now hurry up.
 	
 	B_StartOtherRoutine	(Mod_100_BAU_Wasili_NW, "START");
 
@@ -273,7 +273,7 @@ FUNC VOID Info_Mod_Onar_Wasili_02_B()
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Nach dem Genuss des präparierten Schnapses beklagt sich Onar über Magenschmerzen. Ich soll ihm bei Sagitta ein Heilmittel besorgen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "After enjoying the prepared schnapps, Onar complains about stomach pain. I'm supposed to get him a cure at Sagitta's.");
 
 	B_SetTopicStatus	(TOPIC_MOD_ADANOS_WASILI, LOG_SUCCESS);
 
@@ -282,14 +282,14 @@ FUNC VOID Info_Mod_Onar_Wasili_02_B()
 
 FUNC VOID Info_Mod_Onar_Wasili_02_A()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_A_15_00"); //400 Gold.
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_A_32_01"); //Was?! Du Halsabschn ...
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_C_15_02"); //Nun gut, dann eben nicht ...
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_A_32_03"); //Ist ja schon gut. Hier hast du das Gold und jetzt beeil dich.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_A_15_00"); //400 gold.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_A_32_01"); //What?! You throat-sectional....
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_02_C_15_02"); //All right, then, don't--
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_02_A_32_03"); //It's all right, man. Here's the gold, and now hurry up.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 400);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Nach dem Genuss des präparierten Schnapses beklagt sich Onar über Magenschmerzen. Ich soll ihm bei Sagitta ein Heilmittel besorgen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "After enjoying the prepared schnapps, Onar complains about stomach pain. I'm supposed to get him a cure at Sagitta's.");
 
 	Info_ClearChoices	(Info_Mod_Onar_Wasili_02);
 };
@@ -302,7 +302,7 @@ INSTANCE Info_Mod_Onar_Wasili_03 (C_INFO)
 	information	= Info_Mod_Onar_Wasili_03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, das sollte dir helfen.";
+	description	= "Here, this should help you.";
 };
 
 FUNC INT Info_Mod_Onar_Wasili_03_Condition()
@@ -315,18 +315,18 @@ FUNC INT Info_Mod_Onar_Wasili_03_Condition()
 
 FUNC VOID Info_Mod_Onar_Wasili_03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_03_15_00"); //Hier, das sollte dir helfen.
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_03_32_01"); //Ahh, endlich. Her damit.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_03_15_00"); //Here, this should help you.
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_03_32_01"); //Ahh, finally. Give me that.
 
 	B_GiveInvItems	(hero, self, ItPo_OnarsTrank, 1);
 
 	B_UseItem	(self, ItPo_OnarsTrank);
 
-	AI_Output(self, hero, "Info_Mod_Onar_Wasili_03_32_02"); //(entspannt) Ahh, jetzt geht es mir schon viel besser. (zu dem Helden) Was stehst du hier noch rum? Hast du nichts zu tun?
+	AI_Output(self, hero, "Info_Mod_Onar_Wasili_03_32_02"); //Ahh, I'm much better now. What are you standing there for? Don't you have something to do?
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Onar_Wasili_03_15_03"); //(Zu sich selbst) Ja, man merkt, dass es ihm wieder besser geht.
+	AI_Output(hero, self, "Info_Mod_Onar_Wasili_03_15_03"); //Yeah, you can tell he's getting better.
 
 	B_GivePlayerXP	(100);
 };
@@ -352,17 +352,17 @@ FUNC INT Info_Mod_Onar_Dieb_Condition()
 
 FUNC VOID Info_Mod_Onar_Dieb_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Onar_Dieb_32_00"); //Hey du!
-	AI_Output(hero, self, "Info_Mod_Onar_Dieb_15_01"); //Was gibt's?
-	AI_Output(self, hero, "Info_Mod_Onar_Dieb_32_02"); //Ich hab was zu tun für dich.
-	AI_Output(self, hero, "Info_Mod_Onar_Dieb_32_03"); //In letzter Zeit fehlen immer öfter Waren aus dem Lager.
-	AI_Output(self, hero, "Info_Mod_Onar_Dieb_32_04"); //Finde den Dieb und bring mir die Sachen zurück.
+	AI_Output(self, hero, "Info_Mod_Onar_Dieb_32_00"); //Hey you!
+	AI_Output(hero, self, "Info_Mod_Onar_Dieb_15_01"); //What's up?
+	AI_Output(self, hero, "Info_Mod_Onar_Dieb_32_02"); //I've got something to do for you.
+	AI_Output(self, hero, "Info_Mod_Onar_Dieb_32_03"); //More and more goods from the warehouse have been missing lately.
+	AI_Output(self, hero, "Info_Mod_Onar_Dieb_32_04"); //Find the thief and bring it back to me.
 
 	Npc_ExchangeRoutine	(Mod_785_BAU_Gunnar_NW, "DIEB");
 
 	Log_CreateTopic	(TOPIC_MOD_BAUER_DIEB, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BAUER_DIEB, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BAUER_DIEB, "Einer der Bauern stiehlt Waren aus dem Lager von Onar. Ich soll ihn fassen und die Sachen zurückbringen.");
+	B_LogEntry	(TOPIC_MOD_BAUER_DIEB, "One of the farmers steals goods from Onar's warehouse. I'm supposed to grab him and bring the stuff back.");
 };
 
 INSTANCE Info_Mod_Onar_Dieb_Erwischt (C_INFO)
@@ -373,7 +373,7 @@ INSTANCE Info_Mod_Onar_Dieb_Erwischt (C_INFO)
 	information	= Info_Mod_Onar_Dieb_Erwischt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab die Sachen.";
+	description	= "I got the stuff.";
 };
 
 FUNC INT Info_Mod_Onar_Dieb_Erwischt_Condition()
@@ -390,18 +390,18 @@ FUNC INT Info_Mod_Onar_Dieb_Erwischt_Condition()
 
 FUNC VOID Info_Mod_Onar_Dieb_Erwischt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_Dieb_Erwischt_15_00"); //Ich hab die Sachen.
-	AI_Output(self, hero, "Info_Mod_Onar_Dieb_Erwischt_32_01"); //Sehr gut. Gib sie mir.
+	AI_Output(hero, self, "Info_Mod_Onar_Dieb_Erwischt_15_00"); //I got the stuff.
+	AI_Output(self, hero, "Info_Mod_Onar_Dieb_Erwischt_32_01"); //Very good. Very good. Give it to me.
 
 	Npc_RemoveInvItems	(hero, ItFo_MuttonRaw, 20);
 	Npc_RemoveInvItems	(hero, ItFo_Cheese, 6);
 	Npc_RemoveInvItems	(hero, ItFo_Water, 10);
 
-	B_ShowGivenThings	("20 rohes Fleisch, 6 Käse und 10 Wasser gegeben");
+	B_ShowGivenThings	("20 raw meat, 6 cheese and 10 water added");
 
-	B_LogEntry	(TOPIC_MOD_BAUER_DIEB, "Ich hab Onar die Sachen gebracht.");
+	B_LogEntry	(TOPIC_MOD_BAUER_DIEB, "I brought the things to Onar.");
 
-	AI_Output(self, hero, "Info_Mod_Onar_Dieb_Erwischt_32_02"); //Hier ist deine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Onar_Dieb_Erwischt_32_02"); //Here's your reward.
 
 	B_GivePlayerXP	(100);
 
@@ -422,7 +422,7 @@ INSTANCE Info_Mod_Onar_BauernFuerAkil (C_INFO)
 	information	= Info_Mod_Onar_BauernFuerAkil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Bauer Telbor will den Hof von Akil wieder in Betrieb nehmen.";
+	description	= "The farmer Telbor wants to put Akil's farm back into operation.";
 };
 
 FUNC INT Info_Mod_Onar_BauernFuerAkil_Condition()
@@ -436,11 +436,11 @@ FUNC INT Info_Mod_Onar_BauernFuerAkil_Condition()
 
 FUNC VOID Info_Mod_Onar_BauernFuerAkil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Onar_BauernFuerAkil_15_00"); //Der Bauer Telbor will den Hof von Akil wieder in Betrieb nehmen.
-	AI_Output(self, hero, "Info_Mod_Onar_BauernFuerAkil_32_01"); //Und was interessiert mich das?
-	AI_Output(hero, self, "Info_Mod_Onar_BauernFuerAkil_15_02"); //Er braucht noch zwei Landarbeiter und eine Magd, die ihm dort helfen.
-	AI_Output(hero, self, "Info_Mod_Onar_BauernFuerAkil_15_03"); //Du kannst doch sicherlich jemanden für den Hof entbehren.
-	AI_Output(self, hero, "Info_Mod_Onar_BauernFuerAkil_32_04"); //Hmm. Na gut, ich schicke drei meiner Leute zu Akil's Hof. Da gibt es sicherlich was zu holen.
+	AI_Output(hero, self, "Info_Mod_Onar_BauernFuerAkil_15_00"); //The farmer Telbor wants to put Akil's farm back into operation.
+	AI_Output(self, hero, "Info_Mod_Onar_BauernFuerAkil_32_01"); //And what do I care?
+	AI_Output(hero, self, "Info_Mod_Onar_BauernFuerAkil_15_02"); //He needs two more farmhands and a maid to help him there.
+	AI_Output(hero, self, "Info_Mod_Onar_BauernFuerAkil_15_03"); //Surely you can spare someone for the farm.
+	AI_Output(self, hero, "Info_Mod_Onar_BauernFuerAkil_32_04"); //Hmm. All right, I'll send three of my men to Akil's farm. There's certainly something to get.
 };
 
 INSTANCE Info_Mod_Onar_Pickpocket (C_INFO)

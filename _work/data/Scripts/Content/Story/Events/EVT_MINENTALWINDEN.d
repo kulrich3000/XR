@@ -21,7 +21,7 @@ FUNC int MC_OrcCity_Gate ()
 
 		if	!OrcCity_GateOpen
 		{
-			AI_PrintScreen	("Winde kann nicht benutzt werden", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+			AI_PrintScreen	("Winch cannot be used", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 		};
 
 		return 			FALSE;
@@ -65,7 +65,7 @@ FUNC int CANTHARSINSELDOOR ()
 		{
 			Mod_CantharDoor = 1;
 
-			B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Die Tür in die Freiheit ist verschlossen. Aber irgendwer wird schon den Schüssel haben.");
+			B_LogEntry	(TOPIC_MOD_MOE_DEAD, "The door to freedom is locked. But somebody will have the bowl.");
 		};
 
 		return FALSE;
@@ -137,14 +137,14 @@ FUNC int BEL_TRUHE_BAUANLEITUNG ()
 	{
 		if	!BELTruheOpen
 		{
-			AI_PrintScreen	("Truhe ist magisch verschlossen", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+			AI_PrintScreen	("Chest is magically locked", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			if (Npc_KnowsInfo(hero, Info_Mod_Scar_Belagerung))
 			&& (BEL_TruheMage == 0)
 			{
 				BEL_TruheMage = 1;
 
-				B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Die Truhe ist magisch verschlossen. Ich sollte Scar um Rat fragen.");
+				B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "The chest is magically locked. I should ask Scar for advice.");
 			};
 		};
 
@@ -173,7 +173,7 @@ FUNC int ELENASHEXENTRUHE ()
 	}
 	else
 	{
-		AI_PrintScreen	("Lässt sich noch nicht öffnen!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("It's not opening yet!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 		return 			FALSE;
 	};
@@ -199,7 +199,7 @@ FUNC int RITUALINSEL_STEIN ()
 {	
 	if (!Npc_KnowsInfo(hero, Info_Mod_Trimedron_Teleporter))
 	{
-		AI_PrintScreen	("Warum sollte ich?", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("Why would I do that?", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 		return FALSE;
 	}
@@ -217,7 +217,7 @@ FUNC int RITUALINSEL_SOCKEL ()
 {	
 	if (Mod_Ritualinsel_Stein == 0)
 	{
-		AI_PrintScreen	("Das geht nicht, solange noch Steine davor liegen!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("That won't work if there are rocks in front of it!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 		CreateInvItems	(hero, ItMi_Focus, 1);
 
@@ -235,7 +235,7 @@ FUNC INT EVT_CANOPENXARDASTOWERCHEST()
 {
 	if (Mod_XardasOWTower_Truhe == 0)
 	{
-		AI_PrintScreen	("So ist die Truhe nicht zu öffnen ...", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("So the chest cannot be opened...", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 		return FALSE;
 	}
@@ -252,7 +252,7 @@ FUNC VOID EVT_BIBENTDECKT_FUNC()
 	{
 		Mod_BibEntdeckt = 1;
 
-		B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Na, das sieht doch aus, als wäre ich erfolgreich gewesen. Wirklich beeindruckend. Da hat jemand lange gesammelt. Andokai wird es freuen, davon zu erfahren.");
+		B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Well, it looks like I've been successful. Really impressive. Someone's been collecting for a long time. Andokai will be happy to hear about it.");
 	};
 };
 
@@ -317,7 +317,7 @@ FUNC VOID OTGEHEIMKAMMER03()
 	{
 		Mod_OT_Geheimkammer = 2;
 
-		B_LogEntry(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe die Geheimkammer gefunden.");
+		B_LogEntry(TOPIC_MOD_OT_GEHEIMKAMMER, "I found the secret chamber.");
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_SUCCESS);
 		
 		Spine_UnlockAchievement(SPINE_ACHIEVEMENT_16);

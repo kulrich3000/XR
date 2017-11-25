@@ -10,7 +10,7 @@ FUNC VOID B_PrismaAdd(var int damage) {
 	damage = damage / 2;
 
 	if (damage >= hero.attribute[ATR_HITPOINTS]) {
-		Print	("Dazu reicht meine Kraft nicht aus.");
+		Print	("I'm not strong enough.");
 
 		return;
 	};
@@ -31,7 +31,7 @@ FUNC VOID B_PrismaAdd(var int damage) {
 			Mod_Prisma_Start = TRUE;
 
 			Log_CreateTopic	(TOPIC_MOD_PRISMA, LOG_NOTE);
-			B_LogEntry	(TOPIC_MOD_PRISMA, "Ich habe jetzt herausgefunden, was der Nachteil beim Prisma ist: Wenn ich es auflade, fühlt es sich an, als würde ein Teil meines Selbst entrissen, und ich werde schwächer.");
+			B_LogEntry	(TOPIC_MOD_PRISMA, "I have now found out what the disadvantage of the prism is: when I charge it, it feels like a part of my self is being snatched away, and I am getting weaker.");
 		};
 
 		B_MagicHurtNpc	(hero, hero, damage);

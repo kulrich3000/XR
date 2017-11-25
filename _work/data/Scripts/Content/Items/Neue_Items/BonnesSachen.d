@@ -1,6 +1,6 @@
 INSTANCE Bonne_Schwert_01 (C_Item)
 {
-	name 				=	"Bonnes Schwert";
+	name 				=	"Bonn Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -26,7 +26,7 @@ INSTANCE Bonne_Schwert_01 (C_Item)
 
 INSTANCE Bonne_Schwert_02 (C_Item)
 {
-	name 				=	"Bonnes Schwert";
+	name 				=	"Bonn Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;

@@ -2,7 +2,7 @@ instance Bau_989_Riddler (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Riddler";
+	name 		=	"riddler";
 	npctype	 	=	npctype_main;
 	guild 		=	GIL_OUT;      
 	level 		=	8;

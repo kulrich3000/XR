@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Lehmar_Hi (C_INFO)
 	information	= Info_Mod_Lehmar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Lehmar_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Lehmar_Hi_Condition()
 FUNC VOID Info_Mod_Lehmar_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Lehmar_Hi_09_01"); //Ich bin Lehmar, der Geldverleiher.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Hi_09_01"); //I'm Lehmar, the money lender.
 };
 
 INSTANCE Info_Mod_Lehmar_Kleinod (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Lehmar_Kleinod (C_INFO)
 	information	= Info_Mod_Lehmar_Kleinod_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Paket für dich.";
+	description	= "I got a package for you.";
 };
 
 FUNC INT Info_Mod_Lehmar_Kleinod_Condition()
@@ -42,12 +42,12 @@ FUNC INT Info_Mod_Lehmar_Kleinod_Condition()
 
 FUNC VOID Info_Mod_Lehmar_Kleinod_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lehmar_Kleinod_15_00"); //Ich hab hier ein Paket für dich.
+	AI_Output(hero, self, "Info_Mod_Lehmar_Kleinod_15_00"); //I got a package for you.
 	
 	B_GiveInvItems	(hero, self, Mod_KleinodPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lehmar_Kleinod_09_01"); //Wurde aber auch langsam Zeit.
-	AI_Output(self, hero, "Info_Mod_Lehmar_Kleinod_09_02"); //Hier ist dein Gold.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Kleinod_09_01"); //It's about time.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Kleinod_09_02"); //Here's your gold.
 
 	CreateInvItems	(self, ItMi_Gold, 500);
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Lehmar_Statue (C_INFO)
 	information	= Info_Mod_Lehmar_Statue_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Thorben meinte du hättest seine Innos Statue.";
+	description	= "Thorben said you had his statue of Inno.";
 };
 
 FUNC INT Info_Mod_Lehmar_Statue_Condition()
@@ -76,8 +76,8 @@ FUNC INT Info_Mod_Lehmar_Statue_Condition()
 
 FUNC VOID Info_Mod_Lehmar_Statue_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lehmar_Statue_15_00"); //Thorben meinte du hättest seine Innos Statue.
-	AI_Output(self, hero, "Info_Mod_Lehmar_Statue_09_01"); //Wenn du die Statue meinst, die in der Truhe war die ich von ihm bekommen habe, dann hab ich sie.
+	AI_Output(hero, self, "Info_Mod_Lehmar_Statue_15_00"); //Thorben said you had his statue of Inno.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Statue_09_01"); //If you mean the statue that was in the trunk I got from him, then I have it.
 };
 
 INSTANCE Info_Mod_Lehmar_Statue2 (C_INFO)
@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Lehmar_Statue2 (C_INFO)
 	information	= Info_Mod_Lehmar_Statue2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibst du mir die Statue?";
+	description	= "Will you give me the statue?";
 };
 
 FUNC INT Info_Mod_Lehmar_Statue2_Condition()
@@ -102,8 +102,8 @@ FUNC INT Info_Mod_Lehmar_Statue2_Condition()
 
 FUNC VOID Info_Mod_Lehmar_Statue2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lehmar_Statue2_15_00"); //Gibst du mir die Statue?
-	AI_Output(self, hero, "Info_Mod_Lehmar_Statue2_09_01"); //Wenn du mir die 100 Goldmünzen bringst, die Thorben mir noch schuldet.
+	AI_Output(hero, self, "Info_Mod_Lehmar_Statue2_15_00"); //Will you give me the statue?
+	AI_Output(self, hero, "Info_Mod_Lehmar_Statue2_09_01"); //If you bring me the 100 gold coins Thorben still owes me.
 };
 
 INSTANCE Info_Mod_Lehmar_Statue3 (C_INFO)
@@ -114,7 +114,7 @@ INSTANCE Info_Mod_Lehmar_Statue3 (C_INFO)
 	information	= Info_Mod_Lehmar_Statue3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist das Gold.";
+	description	= "Here's the gold.";
 };
 
 FUNC INT Info_Mod_Lehmar_Statue3_Condition()
@@ -129,11 +129,11 @@ FUNC INT Info_Mod_Lehmar_Statue3_Condition()
 
 FUNC VOID Info_Mod_Lehmar_Statue3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lehmar_Statue3_15_00"); //Hier ist das Gold.
+	AI_Output(hero, self, "Info_Mod_Lehmar_Statue3_15_00"); //Here's the gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Lehmar_Statue3_09_01"); //Hier ist die Statue.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Statue3_09_01"); //Here's the statue.
 
 	B_GiveInvItems	(self, hero, ItMi_LostInnosStatue_Daron, 1);
 
@@ -148,7 +148,7 @@ INSTANCE Info_Mod_Lehmar_Leihen (C_INFO)
 	information	= Info_Mod_Lehmar_Leihen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kannst du mir Geld leihen?";
+	description	= "Can you lend me some money?";
 };
 
 FUNC INT Info_Mod_Lehmar_Leihen_Condition()
@@ -162,8 +162,8 @@ FUNC INT Info_Mod_Lehmar_Leihen_Condition()
 
 FUNC VOID Info_Mod_Lehmar_Leihen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lehmar_Leihen_15_00"); //Kannst du mir Geld leihen?
-	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_09_01"); //Wieviel willst du?
+	AI_Output(hero, self, "Info_Mod_Lehmar_Leihen_15_00"); //Can you lend me some money?
+	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_09_01"); //How much do you want?
 
 	Info_ClearChoices	(Info_Mod_Lehmar_Leihen);
 
@@ -183,8 +183,8 @@ FUNC VOID Info_Mod_Lehmar_Leihen_1000()
 {
 	if (Mod_HatGoldGeliehen < 3)
 	{
-		AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_1000_09_00"); //TAUSEND GOLDMÜNZEN!!!
-		AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_1000_09_01"); //Ich werde dir 200 Goldmünzen geben, mehr nicht. Und vergiss nicht es zurückzuzahlen.
+		AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_1000_09_00"); //A THOUSAND GOLD COINS!!!!
+		AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_1000_09_01"); //I'll give you 200 gold coins, that's all. And don't forget to pay it back.
 	
 		B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
@@ -192,8 +192,8 @@ FUNC VOID Info_Mod_Lehmar_Leihen_1000()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_1000_09_02"); //Das ist verdammt viel Gold. Aber du mir mein Gold bisher immer wieder zurückgebracht, deshalb werde ich dir das Gold geben.
-		AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_1000_09_03"); //Hier hast du 1000 Goldmünzen. Und vergiss nicht es zurückzuzahlen.
+		AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_1000_09_02"); //That's a hell of a lot of gold. But you've returned my gold to me so far, so I'll give you the gold.
+		AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_1000_09_03"); //Here's a thousand gold coins. And don't forget to pay it back.
 	
 		B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
@@ -208,8 +208,8 @@ FUNC VOID Info_Mod_Lehmar_Leihen_1000()
 
 FUNC VOID Info_Mod_Lehmar_Leihen_500()
 {
-	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_500_09_00"); //500 Goldmünzen. Ich glaube kaum das du das jemals zurückzahlen kannst, aber ich gebe dir das Geld.
-	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_500_09_01"); //Und vergiss nicht es zurückzuzahlen.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_500_09_00"); //500 gold coins. I don't think you'll ever be able to pay it back, but I'll give you the money.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_500_09_01"); //And don't forget to pay it back.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
@@ -222,7 +222,7 @@ FUNC VOID Info_Mod_Lehmar_Leihen_500()
 
 FUNC VOID Info_Mod_Lehmar_Leihen_200()
 {
-	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_200_09_00"); //200 Goldmünzen sind nicht viel. Und vergiss nicht es zurückzuzahlen.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_200_09_00"); //200 gold coins isn't much. And don't forget to pay it back.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 	
@@ -235,7 +235,7 @@ FUNC VOID Info_Mod_Lehmar_Leihen_200()
 
 FUNC VOID Info_Mod_Lehmar_Leihen_100()
 {
-	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_100_09_00"); //100 Goldmünzen sind nicht grad viel. Vergiss nicht es zurückzuzahlen.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Leihen_100_09_00"); //100 gold coins isn't much. Don't forget to pay it back.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -254,7 +254,7 @@ INSTANCE Info_Mod_Lehmar_Zurueckzahlen (C_INFO)
 	information	= Info_Mod_Lehmar_Zurueckzahlen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will dir dein Gold zurückzahlen.";
+	description	= "I want to pay you back your gold.";
 };
 
 FUNC INT Info_Mod_Lehmar_Zurueckzahlen_Condition()
@@ -267,52 +267,52 @@ FUNC INT Info_Mod_Lehmar_Zurueckzahlen_Condition()
 
 FUNC VOID Info_Mod_Lehmar_Zurueckzahlen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lehmar_Zurueckzahlen_15_00"); //Ich will dir dein Gold zurückzahlen.
-	AI_Output(hero, self, "Info_Mod_Lehmar_Zurueckzahlen_15_01"); //Wieviel muss ich dir zahlen?.
+	AI_Output(hero, self, "Info_Mod_Lehmar_Zurueckzahlen_15_00"); //I want to pay you back your gold.
+	AI_Output(hero, self, "Info_Mod_Lehmar_Zurueckzahlen_15_01"); //How much do I have to pay you?.
 
 	if (Mod_Leihbetrag == 1100)
 	{
-		AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_09_02"); //1100 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_09_02"); //1100 gold coins.
 	}
 	else if (Mod_Leihbetrag == 550)
 	{
-		AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_09_03"); //550 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_09_03"); //550 gold coins.
 	}
 	else if (Mod_Leihbetrag == 220)
 	{
-		AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_09_04"); //220 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_09_04"); //220 gold coins.
 	}
 	else if (Mod_Leihbetrag == 110)
 	{
-		AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_09_05"); //110 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_09_05"); //110 gold coins.
 	};
 
 	Info_ClearChoices	(Info_Mod_Lehmar_Zurueckzahlen);
 
-	Info_AddChoice	(Info_Mod_Lehmar_Zurueckzahlen, "Ich hab nicht genug Gold.", Info_Mod_Lehmar_Zurueckzahlen_Nein);
+	Info_AddChoice	(Info_Mod_Lehmar_Zurueckzahlen, "I don't have enough gold.", Info_Mod_Lehmar_Zurueckzahlen_Nein);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= Mod_Leihbetrag)
 	{
-		Info_AddChoice	(Info_Mod_Lehmar_Zurueckzahlen, "Hier hast du dein Gold.", Info_Mod_Lehmar_Zurueckzahlen_Ja);
+		Info_AddChoice	(Info_Mod_Lehmar_Zurueckzahlen, "Here's your gold.", Info_Mod_Lehmar_Zurueckzahlen_Ja);
 	};
 };
 
 FUNC VOID Info_Mod_Lehmar_Zurueckzahlen_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Lehmar_Zurueckzahlen_Nein_15_00"); //Ich hab nicht genug Gold.
-	AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_Nein_09_01"); //Dann besorg es und belästige mich nicht.
+	AI_Output(hero, self, "Info_Mod_Lehmar_Zurueckzahlen_Nein_15_00"); //I don't have enough gold.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_Nein_09_01"); //Then get it and don't bother me.
 
 	Info_ClearChoices	(Info_Mod_Lehmar_Zurueckzahlen);
 };
 
 FUNC VOID Info_Mod_Lehmar_Zurueckzahlen_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Lehmar_Zurueckzahlen_Ja_15_00"); //Hier hast du dein Gold.
+	AI_Output(hero, self, "Info_Mod_Lehmar_Zurueckzahlen_Ja_15_00"); //Here's your gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, Mod_Leihbetrag);
 	Npc_RemoveInvItems	(self, ItMi_Gold, Mod_Leihbetrag);
 
-	AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_Ja_09_01"); //Gut, wenn du wieder Gold brauchst, dann komm zu mir.
+	AI_Output(self, hero, "Info_Mod_Lehmar_Zurueckzahlen_Ja_09_01"); //Well, if you need gold again, come to me.
 
 	Mod_Geliehen = FALSE;
 

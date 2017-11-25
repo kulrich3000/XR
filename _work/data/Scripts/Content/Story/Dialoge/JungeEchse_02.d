@@ -6,7 +6,7 @@ INSTANCE Info_Mod_JungeEchse_02_ZettelZeigen (C_INFO)
 	information	= Info_Mod_JungeEchse_02_ZettelZeigen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Zettel zeigen)";
+	description	= "(show note)";
 };
 
 FUNC INT Info_Mod_JungeEchse_02_ZettelZeigen_Condition()
@@ -34,7 +34,7 @@ FUNC VOID Info_Mod_JungeEchse_02_ZettelZeigen_Info()
 	{
 		Mod_EchsenQuest_03 = 6;
 
-		B_LogEntry	(TOPIC_MOD_ECHSEN_SUMPFHAIFINDEN, "Die vier Echsen habe ich eingesammelt, jetzt auf in den Sumpf und nach einem weiﬂen Sumphai suchen.");
+		B_LogEntry	(TOPIC_MOD_ECHSEN_SUMPFHAIFINDEN, "I have collected the four lizards, now I go to the swamp and look for a white marsh shark.");
 
 		Wld_InsertNpc	(Swampshark_Weiss, "ADW_SHARK_09");
 	};

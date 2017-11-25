@@ -193,7 +193,7 @@ INSTANCE JaegerSnapper2	(Mst_Default_Snapper)
 
 INSTANCE FeuerSnapper	(Mst_Default_Snapper)
 {
-	name	= "Feuersnapper";
+	name	= "fire snapper";
 
 	level = 45;
 
@@ -222,7 +222,7 @@ INSTANCE FeuerSnapper	(Mst_Default_Snapper)
 
 INSTANCE WasserSnapper	(Mst_Default_Snapper)
 {
-	name	= "Wassersnapper";
+	name	= "water snapper";
 
 	level = 15;
 	effect	= "SPELLFX_ICEARMOR";
@@ -235,7 +235,7 @@ INSTANCE WasserSnapper	(Mst_Default_Snapper)
 
 INSTANCE WasserSnapper_Joe_01	(Mst_Default_Snapper)
 {
-	name	= "Wassersnapper";
+	name	= "water snapper";
 	guild = GIL_SHEEP;
 
 	level = 15;
@@ -251,7 +251,7 @@ INSTANCE WasserSnapper_Joe_01	(Mst_Default_Snapper)
 
 INSTANCE WasserSnapper_Joe_02	(Mst_Default_Snapper)
 {
-	name	= "Wassersnapper";
+	name	= "water snapper";
 	guild = GIL_SHEEP;
 
 	level = 15;
@@ -267,7 +267,7 @@ INSTANCE WasserSnapper_Joe_02	(Mst_Default_Snapper)
 
 INSTANCE WasserSnapper_Joe_03	(Mst_Default_Snapper)
 {
-	name	= "Wassersnapper";
+	name	= "water snapper";
 	guild = GIL_SHEEP;
 
 	level = 15;
@@ -283,7 +283,7 @@ INSTANCE WasserSnapper_Joe_03	(Mst_Default_Snapper)
 
 INSTANCE SchattenSnapper	(Mst_Default_Snapper)
 {
-	name	= "Schattensnapper";
+	name	= "shadow snapper";
 
 	level = 45;
 

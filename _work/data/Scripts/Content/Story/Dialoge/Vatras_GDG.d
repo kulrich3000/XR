@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Vatras_GDG_Lernen (C_INFO)
 	information	= Info_Mod_Vatras_GDG_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Teach me something.";
 };
 
 FUNC INT Info_Mod_Vatras_GDG_Lernen_Condition()
@@ -24,7 +24,7 @@ FUNC INT Info_Mod_Vatras_GDG_Lernen_Condition()
 
 FUNC VOID Info_Mod_Vatras_GDG_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_GDG_Lernen_15_00"); //Bring mir was bei.
+	AI_Output(hero, self, "Info_Mod_Vatras_GDG_Lernen_15_00"); //Teach me something.
 
 	Info_ClearChoices	(Info_Mod_Vatras_GDG_Lernen);
 
@@ -37,7 +37,7 @@ FUNC VOID Info_Mod_Vatras_GDG_Lernen_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX]	>=	300)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_GDG_Lernen_BACK_05_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Vatras_GDG_Lernen_BACK_05_01"); //Your magic skills are so good now, I can't teach you anything.
 	};
 	Info_ClearChoices	(Info_Mod_Vatras_GDG_Lernen);
 };

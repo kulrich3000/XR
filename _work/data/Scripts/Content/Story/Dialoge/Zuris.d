@@ -18,10 +18,10 @@ FUNC INT Info_Mod_Zuris_Hi_Condition()
 
 FUNC VOID Info_Mod_Zuris_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Zuris_Hi_30_00"); //Willkommen in Khorinis, Fremder. Solltest du je den Drang verspüren etwas Magie ausüben zu wollen oder dich der heilenden Wirkung eines Trankes zu unterziehen, dann komm zu mir.
+	AI_Output(self, hero, "Info_Mod_Zuris_Hi_30_00"); //Welcome to Khorinis, stranger. If you ever feel the urge to practise some magic or to undergo the healing effects of a potion, then come to me.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Zuris handelt mit Spruchrollen und Tränken.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Zuris deals in spell rolls and potions.");
 };
 
 INSTANCE Info_Mod_Zuris_Scorpio (C_INFO)
@@ -54,10 +54,10 @@ FUNC INT Info_Mod_Zuris_Scorpio_Condition()
 
 FUNC VOID Info_Mod_Zuris_Scorpio_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Zuris_Scorpio_30_00"); //Heute ist mein Glückstag!
-	AI_Output(hero, self, "Info_Mod_Zuris_Scorpio_15_01"); //Wieso das?
-	AI_Output(self, hero, "Info_Mod_Zuris_Scorpio_30_02"); //Die verdammten Banditen oberhalb der Brücke sind alle tot, und ich kann wieder einigermaßen gefahrlos meine gewohnte Route fahren.
-	AI_Output(self, hero, "Info_Mod_Zuris_Scorpio_30_03"); //Dafür gibt es heute einen erlesenen Heiltrank gratis!
+	AI_Output(self, hero, "Info_Mod_Zuris_Scorpio_30_00"); //Today is my lucky day!
+	AI_Output(hero, self, "Info_Mod_Zuris_Scorpio_15_01"); //Why is that?
+	AI_Output(self, hero, "Info_Mod_Zuris_Scorpio_30_02"); //The damned bandits above the bridge are all dead, and I can drive my usual route safely again.
+	AI_Output(self, hero, "Info_Mod_Zuris_Scorpio_30_03"); //For that you can get an exquisite healing potion for free today!
 	
 	B_GiveInvItems	(self, hero, ItPo_Health_03, 1);
 	
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Zuris_Blutkelch (C_INFO)
 	information	= Info_Mod_Zuris_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier riecht es aber seltsam.";
+	description	= "It smells strange in here.";
 };
 
 FUNC INT Info_Mod_Zuris_Blutkelch_Condition()
@@ -86,14 +86,14 @@ FUNC INT Info_Mod_Zuris_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Zuris_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zuris_Blutkelch_15_00"); //Hier riecht es aber seltsam.
-	AI_Output(self, hero, "Info_Mod_Zuris_Blutkelch_30_01"); //Wohl wahr. Ich habe Knoblauch neu im Angebot.
-	AI_Output(hero, self, "Info_Mod_Zuris_Blutkelch_15_02"); //Knoblauch?
-	AI_Output(self, hero, "Info_Mod_Zuris_Blutkelch_30_03"); //Eine Pflanze zum Würzen von Speisen.
-	AI_Output(hero, self, "Info_Mod_Zuris_Blutkelch_15_04"); //Aha. Ich suche aber keinen Knolbauch ...
-	AI_Output(self, hero, "Info_Mod_Zuris_Blutkelch_30_05"); //(langsam) K n o b l a u ch.
-	AI_Output(hero, self, "Info_Mod_Zuris_Blutkelch_15_06"); //... sondern einen besonderen Kelch, Blutkelch genannt. Für Rituale und so.
-	AI_Output(self, hero, "Info_Mod_Zuris_Blutkelch_30_07"); //Davon weiß ich nichts.
+	AI_Output(hero, self, "Info_Mod_Zuris_Blutkelch_15_00"); //It smells strange in here.
+	AI_Output(self, hero, "Info_Mod_Zuris_Blutkelch_30_01"); //True enough. I've added garlic to my offer.
+	AI_Output(hero, self, "Info_Mod_Zuris_Blutkelch_15_02"); //Garlic?
+	AI_Output(self, hero, "Info_Mod_Zuris_Blutkelch_30_03"); //A plant for seasoning food.
+	AI_Output(hero, self, "Info_Mod_Zuris_Blutkelch_15_04"); //Uh-huh. I'm not looking for a tubercle belly....
+	AI_Output(self, hero, "Info_Mod_Zuris_Blutkelch_30_05"); //(slowly) K n o b l a u ch.
+	AI_Output(hero, self, "Info_Mod_Zuris_Blutkelch_15_06"); //... but a special cup called a blood cup. For rituals and stuff.
+	AI_Output(self, hero, "Info_Mod_Zuris_Blutkelch_30_07"); //I don't know anything about that.
 };
 
 INSTANCE Info_Mod_Zuris_Anschlagtafel (C_INFO)
@@ -104,7 +104,7 @@ INSTANCE Info_Mod_Zuris_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Zuris_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "I saw your poster on the billboard...";
 };
 
 FUNC INT Info_Mod_Zuris_Anschlagtafel_Condition()
@@ -137,12 +137,12 @@ FUNC VOID Info_Mod_Zuris_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItSc_Firebolt, Mod_Anschlagtafel_Khorinis_Zuris_Feuerpfeil);
 		Npc_RemoveInvItems	(hero, ItPo_Health_01, Mod_Anschlagtafel_Khorinis_Zuris_HPEssenz);
 
-		AI_Output(self, hero, "Info_Mod_Zuris_Anschlagtafel_30_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Zuris_Anschlagtafel_30_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Zuris_Anschlagtafel_30_00"); //What? Show me... In fact, all of it. Very well done.
+		AI_Output(self, hero, "Info_Mod_Zuris_Anschlagtafel_30_01"); //Here's your reward.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Zuris_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Zuris_Anschlagtafel_30_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Zuris_Anschlagtafel_30_02"); //Nice doing business with you.
 
 		if (Mod_Anschlagtafel_Khorinis_Zuris_Gold < 200)
 		{

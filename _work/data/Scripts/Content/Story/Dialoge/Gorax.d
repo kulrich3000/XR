@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Gorax_Hi (C_INFO)
 	information	= Info_Mod_Gorax_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Gorax_Hi_Condition()
@@ -17,11 +17,11 @@ FUNC INT Info_Mod_Gorax_Hi_Condition()
 FUNC VOID Info_Mod_Gorax_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Gorax_Hi_14_01"); //Ich bin Gorax und kümmere mich um die Versorgung mit Lebensmitteln hier im Kloster.
-	AI_Output(self, hero, "Info_Mod_Gorax_Hi_14_02"); //Ich verkaufe aber auch andere Sachen.
+	AI_Output(self, hero, "Info_Mod_Gorax_Hi_14_01"); //I am Gorax and I take care of the food supply here in the monastery.
+	AI_Output(self, hero, "Info_Mod_Gorax_Hi_14_02"); //I also sell other things.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KLOSTER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_KLOSTER, "Gorax kann mir ein paar Sachen verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_KLOSTER, "Gorax can sell me a few things.");
 };
 
 INSTANCE Info_Mod_Gorax_Andokai (C_INFO)
@@ -48,15 +48,15 @@ FUNC INT Info_Mod_Gorax_Andokai_Condition()
 
 FUNC VOID Info_Mod_Gorax_Andokai_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_00"); //Huch! Wo kommst du denn her?
-	AI_Output(hero, self, "Info_Mod_Gorax_Andokai_15_01"); //Ich bin ganz neu hier. Hast du eine Aufgabe für mich, Meister?
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_02"); //(gutmütig) Ha, du bist noch motiviert, was? Keine Sorge, das legt sich mit der Zeit.
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_03"); //Am Anfang steckt man voller Tatkraft, aber wenn man es dann erst mal zum Magier gebracht hat, spricht man dem Wein und dem Bier zu - sieh mich nur an!
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_04"); //Irgendwann kriegst du deinen Bauch kaum noch über die Bettkannte.
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_05"); //Ach ja, aber du warst ja wegen der Aufgabe hier. Da muss ich natürlich berücksichtigen, dass du noch unerfahren bist.
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_06"); //Eine Sache fällt mir da ein, die gerade richtig für dich sein dürfte.
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_07"); //Ich habe hier eine ausstehende Weinlieferung für Orlan. Du weißt schon, der Typ, dem die Taverne gehört. Von dem kriege ich dann 250 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_08"); //Kannst du dir das merken? Wein, Orlan, 250 Gold?
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_00"); //Oops! Where did you come from?
+	AI_Output(hero, self, "Info_Mod_Gorax_Andokai_15_01"); //I'm brand-new here. Do you have a task for me, Master?
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_02"); //You're still motivated, aren't you? Don't worry, it'll settle down in time.
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_03"); //At the beginning you are full of energy, but once you have made it to the magician, you talk about wine and beer - just look at me!
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_04"); //At some point, you'll hardly get your belly over the bed.
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_05"); //Oh, yes, but you were here for the assignment. I have to take into account that you're inexperienced.
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_06"); //There's one thing I can think of that might just be right for you.
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_07"); //I have an outstanding wine shipment for Orlan here. You know, the guy who owns the tavern. He'll give me 250 gold coins.
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_14_08"); //Can you remember that? Wine, Orlan, 250 gold?
 
 	B_GiveInvItems	(self, hero, ItFo_KWine, 10);
 
@@ -64,17 +64,17 @@ FUNC VOID Info_Mod_Gorax_Andokai_Info()
 
 	Info_ClearChoices	(Info_Mod_Gorax_Andokai);
 
-	Info_AddChoice	(Info_Mod_Gorax_Andokai, "Kannst du's nicht aufschreiben?", Info_Mod_Gorax_Andokai_B);
-	Info_AddChoice	(Info_Mod_Gorax_Andokai, "Kein Problem.", Info_Mod_Gorax_Andokai_A);
+	Info_AddChoice	(Info_Mod_Gorax_Andokai, "Can't you write it down?", Info_Mod_Gorax_Andokai_B);
+	Info_AddChoice	(Info_Mod_Gorax_Andokai, "No problem.", Info_Mod_Gorax_Andokai_A);
 };
 
 FUNC VOID Info_Mod_Gorax_Andokai_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Andokai_B_15_00"); //Kannst du's nicht aufschreiben?
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_B_14_01"); //Oh, aber sicher doch. (gedankenverloren) Wo hab ich denn meine Schreibfeder?
-	AI_Output(hero, self, "Info_Mod_Gorax_Andokai_B_15_02"); //Hinterm Ohr.
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_B_14_03"); //Was du nicht sagst, tatsächlich! Da siehst du mal, du bist jetzt schon eine Hilfe!
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_B_14_04"); //Hier hast du also den Zettel. Damit solltest du es dir merken können.
+	AI_Output(hero, self, "Info_Mod_Gorax_Andokai_B_15_00"); //Can't you write it down?
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_B_14_01"); //Oh, sure you do. Where did I put my pen?
+	AI_Output(hero, self, "Info_Mod_Gorax_Andokai_B_15_02"); //Behind the ear.
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_B_14_03"); //What you're not saying, really! You see, you're already a helper!
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_B_14_04"); //So here's the note. You should be able to remember it that way.
 
 	B_GiveInvItems	(self, hero, ItWr_GoraxAndokai, 1);
 
@@ -83,8 +83,8 @@ FUNC VOID Info_Mod_Gorax_Andokai_B()
 
 FUNC VOID Info_Mod_Gorax_Andokai_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Andokai_A_15_00"); //Kein Problem.
-	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_A_14_01"); //Dann sehen wir uns bald wieder. Viel Spaß hier im Kloster!
+	AI_Output(hero, self, "Info_Mod_Gorax_Andokai_A_15_00"); //No problem.
+	AI_Output(self, hero, "Info_Mod_Gorax_Andokai_A_14_01"); //I'll see you soon. Have fun here in the monastery!
 
 	Info_ClearChoices	(Info_Mod_Gorax_Andokai);
 };
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Gorax_Weinverkauf (C_INFO)
 	information	= Info_Mod_Gorax_Weinverkauf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Orlan den Wein gebracht.";
+	description	= "I brought Orlan the wine.";
 };
 
 FUNC INT Info_Mod_Gorax_Weinverkauf_Condition()
@@ -112,11 +112,11 @@ FUNC INT Info_Mod_Gorax_Weinverkauf_Condition()
 
 FUNC VOID Info_Mod_Gorax_Weinverkauf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Weinverkauf_15_00"); //Ich habe Orlan den Wein gebracht.
+	AI_Output(hero, self, "Info_Mod_Gorax_Weinverkauf_15_00"); //I brought Orlan the wine.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 250);
 
-	AI_Output(self, hero, "Info_Mod_Gorax_Weinverkauf_14_01"); //Vielen Dank. Einen Boten wie dich können wir gebrauchen. Vielleicht werde ich wieder auf dich zurück kommen.
+	AI_Output(self, hero, "Info_Mod_Gorax_Weinverkauf_14_01"); //Thank you very much. We can use a messenger like you. Maybe I'll come back to you.
 
 	B_GivePlayerXP	(100);
 
@@ -147,9 +147,9 @@ FUNC INT Info_Mod_Gorax_AndokaiBinBack_Condition()
 
 FUNC VOID Info_Mod_Gorax_AndokaiBinBack_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorax_AndokaiBinBack_14_00"); //Hey du! Hast du mein Gold dabei?
-	AI_Output(hero, self, "Info_Mod_Gorax_AndokaiBinBack_15_01"); //Ähm ...
-	AI_Output(self, hero, "Info_Mod_Gorax_AndokaiBinBack_14_02"); //Ah, da ist es ja.
+	AI_Output(self, hero, "Info_Mod_Gorax_AndokaiBinBack_14_00"); //Hey you! Did you bring my gold?
+	AI_Output(hero, self, "Info_Mod_Gorax_AndokaiBinBack_15_01"); //Um...
+	AI_Output(self, hero, "Info_Mod_Gorax_AndokaiBinBack_14_02"); //Ah, there it is.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 250);
 
@@ -164,7 +164,7 @@ INSTANCE Info_Mod_Gorax_Aufgabe (C_INFO)
 	information	= Info_Mod_Gorax_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du was zu tun für mich?";
+	description	= "You got something to do for me?";
 };
 
 FUNC INT Info_Mod_Gorax_Aufgabe_Condition()
@@ -179,24 +179,24 @@ FUNC INT Info_Mod_Gorax_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Gorax_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Aufgabe_15_00"); //Hast du was zu tun für mich?
-	AI_Output(self, hero, "Info_Mod_Gorax_Aufgabe_14_01"); //Du könntest für mich in die Stadt gehen und dort vom Händler Salandril vier Flaschen Alkohol kaufen.
+	AI_Output(hero, self, "Info_Mod_Gorax_Aufgabe_15_00"); //You got something to do for me?
+	AI_Output(self, hero, "Info_Mod_Gorax_Aufgabe_14_01"); //You could go into town for me and buy four bottles of alcohol from Salandril.
 
 	Log_CreateTopic	(TOPIC_MOD_GORAX_ALKOHOL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_GORAX_ALKOHOL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_GORAX_ALKOHOL, "Ich soll für Gorax vier Flaschen Alkohol vom Händler Salandril beschaffen.");
+	B_LogEntry	(TOPIC_MOD_GORAX_ALKOHOL, "I'm supposed to get four bottles of alcohol for Gorax from Salandril.");
 
 	Info_ClearChoices	(Info_Mod_Gorax_Aufgabe);
 
-	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Dann mach ich mich gleich auf den Weg.", Info_Mod_Gorax_Aufgabe_Los);
-	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Wo finde ich Salandril?", Info_Mod_Gorax_Aufgabe_Salandril);
-	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Wozu braucht ihr den Alkohol?", Info_Mod_Gorax_Aufgabe_Alkohol);
+	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Then I'll be right on my way.", Info_Mod_Gorax_Aufgabe_Los);
+	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Where can I find Salandril?", Info_Mod_Gorax_Aufgabe_Salandril);
+	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Why do you need the booze?", Info_Mod_Gorax_Aufgabe_Alkohol);
 };
 
 FUNC VOID Info_Mod_Gorax_Aufgabe_Los()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Aufgabe_Los_15_00"); //Dann mach ich mich gleich auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Gorax_Aufgabe_Los_14_01"); //Hier sind 100 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Gorax_Aufgabe_Los_15_00"); //Then I'll be right on my way.
+	AI_Output(self, hero, "Info_Mod_Gorax_Aufgabe_Los_14_01"); //Here's 100 gold coins.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -205,35 +205,35 @@ FUNC VOID Info_Mod_Gorax_Aufgabe_Los()
 
 FUNC VOID Info_Mod_Gorax_Aufgabe_Salandril()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Aufgabe_Salandril_15_00"); //Wo finde ich Salandril?
-	AI_Output(self, hero, "Info_Mod_Gorax_Aufgabe_Salandril_14_01"); //Er hat sein Geschäft im Oberen Viertel.
+	AI_Output(hero, self, "Info_Mod_Gorax_Aufgabe_Salandril_15_00"); //Where can I find Salandril?
+	AI_Output(self, hero, "Info_Mod_Gorax_Aufgabe_Salandril_14_01"); //He has his business in the upper quarter.
 
 	Mod_DialogGoraxAufgabe2 = TRUE;
 
 	Info_ClearChoices	(Info_Mod_Gorax_Aufgabe);
 
-	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Dann mach ich mich gleich auf den Weg.", Info_Mod_Gorax_Aufgabe_Los);
+	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Then I'll be right on my way.", Info_Mod_Gorax_Aufgabe_Los);
 
 	if (Mod_DialogGoraxAufgabe1 == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Wozu braucht ihr den Alkohol?", Info_Mod_Gorax_Aufgabe_Alkohol);
+		Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Why do you need the booze?", Info_Mod_Gorax_Aufgabe_Alkohol);
 	};
 };
 
 FUNC VOID Info_Mod_Gorax_Aufgabe_Alkohol()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Aufgabe_Alkohol_15_00"); //Wozu braucht ihr den Alkohol?
-	AI_Output(self, hero, "Info_Mod_Gorax_Aufgabe_Alkohol_14_01"); //Wir Magier vertragen eine Menge Alkohol und in unserem Wein ist nicht viel drin, deswegen füllen wir ihn mit reinem Alkohol auf.
+	AI_Output(hero, self, "Info_Mod_Gorax_Aufgabe_Alkohol_15_00"); //Why do you need the booze?
+	AI_Output(self, hero, "Info_Mod_Gorax_Aufgabe_Alkohol_14_01"); //We magicians tolerate a lot of alcohol and there is not much in our wine, so we fill it up with pure alcohol.
 
 	Mod_DialogGoraxAufgabe1 = TRUE;
 	
 	Info_ClearChoices	(Info_Mod_Gorax_Aufgabe);
 
-	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Dann mach ich mich gleich auf den Weg.", Info_Mod_Gorax_Aufgabe_Los);
+	Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Then I'll be right on my way.", Info_Mod_Gorax_Aufgabe_Los);
 
 	if (Mod_DialogGoraxAufgabe2 == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Wo finde ich Salandril?", Info_Mod_Gorax_Aufgabe_Salandril);
+		Info_AddChoice	(Info_Mod_Gorax_Aufgabe, "Where can I find Salandril?", Info_Mod_Gorax_Aufgabe_Salandril);
 	};
 };
 
@@ -245,7 +245,7 @@ INSTANCE Info_Mod_Gorax_HabAlkohol (C_INFO)
 	information	= Info_Mod_Gorax_HabAlkohol_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab den Alkohol.";
+	description	= "I got the booze.";
 };
 
 FUNC INT Info_Mod_Gorax_HabAlkohol_Condition()
@@ -260,21 +260,21 @@ FUNC INT Info_Mod_Gorax_HabAlkohol_Condition()
 
 FUNC VOID Info_Mod_Gorax_HabAlkohol_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_HabAlkohol_15_00"); //Ich hab den Alkohol.
+	AI_Output(hero, self, "Info_Mod_Gorax_HabAlkohol_15_00"); //I got the booze.
 
 	B_GiveInvItems	(hero, self, ItMi_Alchemy_Alcohol_01, 4);
 
-	AI_Output(self, hero, "Info_Mod_Gorax_HabAlkohol_14_01"); //Danke. Du hast uns allen damit sehr geholfen.
+	AI_Output(self, hero, "Info_Mod_Gorax_HabAlkohol_14_01"); //Thanks. You've helped us all a lot.
 
 	Npc_RemoveInvItems	(self, ItMi_Alchemy_Alcohol_01, 4);
 
-	AI_Output(self, hero, "Info_Mod_Gorax_HabAlkohol_14_02"); //Nimm dieses Gold als Belohnung.
+	AI_Output(self, hero, "Info_Mod_Gorax_HabAlkohol_14_02"); //Take this gold as a reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_GORAX_ALKOHOL, "Ich habe Gorax den Alkohol gebracht.", "Ich habe Gorax den Alkohol gebracht.");
+	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_GORAX_ALKOHOL, "I brought Gorax the booze.", "I brought Gorax the booze.");
 	B_SetTopicStatus	(TOPIC_MOD_GORAX_ALKOHOL, LOG_SUCCESS);
 
 	B_Göttergefallen(1, 1);
@@ -288,7 +288,7 @@ INSTANCE Info_Mod_Gorax_Unkraut (C_INFO)
 	information	= Info_Mod_Gorax_Unkraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du etwas für mich zu tun.";
+	description	= "You have something to do for me.";
 };
 
 FUNC INT Info_Mod_Gorax_Unkraut_Condition()
@@ -302,14 +302,14 @@ FUNC INT Info_Mod_Gorax_Unkraut_Condition()
 
 FUNC VOID Info_Mod_Gorax_Unkraut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Unkraut_15_00"); //Hast du etwas für mich zu tun.
-	AI_Output(self, hero, "Info_Mod_Gorax_Unkraut_14_01"); //Ahh, ein fleißiger Novize. An den Trögen gibt es gerade keinen Platz mehr, da die anderen Novizen stampfen, was das Zeug hält.
-	AI_Output(self, hero, "Info_Mod_Gorax_Unkraut_14_02"); //Aber stattdessen könntest du helfen das ganze Unkraut um unsere Reben herum rauszureißen.
-	AI_Output(self, hero, "Info_Mod_Gorax_Unkraut_14_03"); //Nicht, dass die garstigen Pflänzchen unseren guten Weinreben die Nährstoffe klauen und wir bald auf dem Trocknen sitzen. (lacht)
+	AI_Output(hero, self, "Info_Mod_Gorax_Unkraut_15_00"); //You have something to do for me.
+	AI_Output(self, hero, "Info_Mod_Gorax_Unkraut_14_01"); //Ahh, a diligent novice. There is no room in the troughs any more, as the other novices are stomping all the time.
+	AI_Output(self, hero, "Info_Mod_Gorax_Unkraut_14_02"); //But instead, you could help rip out all the weeds around our vines.
+	AI_Output(self, hero, "Info_Mod_Gorax_Unkraut_14_03"); //Not that the nasty little plants steal the nutrients from our good grapevines and we will soon be sitting on the drying table. (laughs)
 
 	Log_CreateTopic	(TOPIC_MOD_GORAX_UNKRAUT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_GORAX_UNKRAUT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_GORAX_UNKRAUT, "Gorax meinte, ich könnte das Unkraut um die Weinreben herum ausreißen.");
+	B_LogEntry	(TOPIC_MOD_GORAX_UNKRAUT, "Gorax said I could rip out the weeds around the vines.");
 
 	Wld_InsertItem	(ItPl_Unkraut_Gorax, "FP_ITEM_GORAX_UNKRAUT_01");
 	Wld_InsertItem	(ItPl_Unkraut_Gorax, "FP_ITEM_GORAX_UNKRAUT_02");
@@ -329,7 +329,7 @@ INSTANCE Info_Mod_Gorax_Unkraut2 (C_INFO)
 	information	= Info_Mod_Gorax_Unkraut2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe alles Unkraut abgeerntet.";
+	description	= "I harvested all the weeds.";
 };
 
 FUNC INT Info_Mod_Gorax_Unkraut2_Condition()
@@ -343,8 +343,8 @@ FUNC INT Info_Mod_Gorax_Unkraut2_Condition()
 
 FUNC VOID Info_Mod_Gorax_Unkraut2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Unkraut2_15_00"); //Ich habe alles Unkraut abgeerntet.
-	AI_Output(self, hero, "Info_Mod_Gorax_Unkraut2_14_01"); //Guter Novize. Hier, lass deinen Arbeitstag mit ein paar guten Fläschchen Wein ausklingen.
+	AI_Output(hero, self, "Info_Mod_Gorax_Unkraut2_15_00"); //I harvested all the weeds.
+	AI_Output(self, hero, "Info_Mod_Gorax_Unkraut2_14_01"); //Good novice. Here, finish your day with some good bottles of wine.
 
 	B_GiveInvItems	(self, hero, ItFo_KWine, 3);
 
@@ -361,7 +361,7 @@ INSTANCE Info_Mod_Gorax_Comeback (C_INFO)
 	information	= Info_Mod_Gorax_Comeback_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Innos zum Gruß. Der Rat hat mir eine der alten Opferschalen zugesagt. Ich will sie abholen.";
+	description	= "Innos, greeting. The council promised me one of the old sacrificial bowls. I want to pick her up.";
 };
 
 FUNC INT Info_Mod_Gorax_Comeback_Condition()
@@ -374,14 +374,14 @@ FUNC INT Info_Mod_Gorax_Comeback_Condition()
 
 FUNC VOID Info_Mod_Gorax_Comeback_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorax_Comeback_15_00"); //Innos zum Gruß. Der Rat hat mir eine der alten Opferschalen zugesagt. Ich will sie abholen.
-	AI_Output(self, hero, "Info_Mod_Gorax_Comeback_14_01"); //Davon haben wir noch ein paar. Aber du wirst sie nicht tragen können. Ist zu schwer.
-	AI_Output(hero, self, "Info_Mod_Gorax_Comeback_15_02"); //Vielleicht kann mir einer der Novizen helfen ...
-	AI_Output(self, hero, "Info_Mod_Gorax_Comeback_14_03"); //Ich sorge dafür, dass dir das Teil gebracht wird. Wo soll es eigentlich hin?
-	AI_Output(hero, self, "Info_Mod_Gorax_Comeback_15_04"); //Das steht noch nicht fest. Am Besten, ihr stellt sie rechts neben dem Osttor auf die Wiese.
-	AI_Output(self, hero, "Info_Mod_Gorax_Comeback_14_05"); //Wird gemacht.
+	AI_Output(hero, self, "Info_Mod_Gorax_Comeback_15_00"); //Innos, greeting. The council promised me one of the old sacrificial bowls. I want to pick her up.
+	AI_Output(self, hero, "Info_Mod_Gorax_Comeback_14_01"); //We have a few more of these. But you won't be able to wear it. It's too heavy.
+	AI_Output(hero, self, "Info_Mod_Gorax_Comeback_15_02"); //Perhaps one of the novices can help me....
+	AI_Output(self, hero, "Info_Mod_Gorax_Comeback_14_03"); //I'll make sure you get that thing. Where is it supposed to go?
+	AI_Output(hero, self, "Info_Mod_Gorax_Comeback_15_04"); //That's not certain yet. It's best to put them to the right of the east gate on the meadow.
+	AI_Output(self, hero, "Info_Mod_Gorax_Comeback_14_05"); //Will do.
 
-	B_LogEntry	(TOPIC_MOD_ASS_COMEBACK, "Gorax wird die Opferschale auf die Wiese nahe des Lagers liefern. Dort können wir sie dann abholen. Ich sollte jetzt zurück zu Norek.");
+	B_LogEntry	(TOPIC_MOD_ASS_COMEBACK, "Gorax will deliver the sacrificial bowl to the meadow near the camp. We can pick them up there. I should get back to Norek now.");
 };
 
 INSTANCE Info_Mod_Gorax_Trade (C_INFO)

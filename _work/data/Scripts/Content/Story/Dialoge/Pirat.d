@@ -24,29 +24,29 @@ FUNC VOID Info_Mod_Pirat_Hi_Info()
 	if (Hlp_IsItem(ar, ItAr_Pir_L_Addon) == TRUE)
 	|| (Hlp_IsItem(ar, ItAr_Pir_M_Addon) == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Pirat_Hi_07_00"); //Hey, Genosse! Welche Strömung treibt dich her?
+		AI_Output(self, hero, "Info_Mod_Pirat_Hi_07_00"); //Hey, comrade! What kind of current brings you here?
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Pirat_Hi_07_01"); //Halt, Bürschchen! Was tust du hier?
+		AI_Output(self, hero, "Info_Mod_Pirat_Hi_07_01"); //Hold it, boy! What are you doing here?
 	};
 
-	AI_Output(hero, self, "Info_Mod_Pirat_Hi_15_02"); //Ich komme im Auftrag Matteos, um mit dir zu handeln.
-	AI_Output(self, hero, "Info_Mod_Pirat_Hi_07_03"); //Is sich der alte Stinker wohl wieder zu fein, was? Also, ich hab hier zwo Kisten mit Grog. Die hat er bei mir bestellt.
-	AI_Output(hero, self, "Info_Mod_Pirat_Hi_15_04"); //Wie viel verlangst du für die Kisten?
-	AI_Output(self, hero, "Info_Mod_Pirat_Hi_07_05"); //700 Blinker sind die schon wert, meinste nich?
+	AI_Output(hero, self, "Info_Mod_Pirat_Hi_15_02"); //I come on behalf of Matteos to trade with you.
+	AI_Output(self, hero, "Info_Mod_Pirat_Hi_07_03"); //I guess that old stink's getting too good again, huh? Well, I've got two boxes of grog. He ordered these from me.
+	AI_Output(hero, self, "Info_Mod_Pirat_Hi_15_04"); //How much do you charge for the crates?
+	AI_Output(self, hero, "Info_Mod_Pirat_Hi_07_05"); //700 indicators are worth it, don't you think?
 
 	Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
-	Info_AddChoice	(Info_Mod_Pirat_Hi, "(Feilschen) Das soll wohl ein Witz sein.", Info_Mod_Pirat_Hi_B);
-	Info_AddChoice	(Info_Mod_Pirat_Hi, "Kein Problem, hier ist das Gold.", Info_Mod_Pirat_Hi_A);
+	Info_AddChoice	(Info_Mod_Pirat_Hi, "You've got to be kidding me.", Info_Mod_Pirat_Hi_B);
+	Info_AddChoice	(Info_Mod_Pirat_Hi, "No problem, here's the gold.", Info_Mod_Pirat_Hi_A);
 };
 
 FUNC VOID Info_Mod_Pirat_Hi_Fertig()
 {
 	B_GiveInvItems	(self, hero, ItMi_GrogPaket_Matteo, 2);
 
-	B_LogEntry	(TOPIC_MOD_LEHRLING_MATTEO_THREE, "Ich habe die zwei Kisten. Jetzt muss ich sie nur noch bei Matteo abliefern.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_MATTEO_THREE, "I got the two boxes. Now all I have to do is drop them off at Matteo's.");
 
 	Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
@@ -55,32 +55,32 @@ FUNC VOID Info_Mod_Pirat_Hi_Fertig()
 
 FUNC VOID Info_Mod_Pirat_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Pirat_Hi_B_15_00"); //Das soll wohl ein Witz sein.
+	AI_Output(hero, self, "Info_Mod_Pirat_Hi_B_15_00"); //You gotta be kidding me.
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Pirat_Hi_B_07_01"); //Hey, is ja gut. Dann sagen wir 500.
+		AI_Output(self, hero, "Info_Mod_Pirat_Hi_B_07_01"); //Hey, it's okay. Then we'll make it 500.
 
 		B_RaiseHandelsgeschick (2);
 
 		Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "(Feilschen) So viel kannst du ja wohl schlecht verlangen!", Info_Mod_Pirat_Hi_D);
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "Alles klar.", Info_Mod_Pirat_Hi_C);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "You can hardly ask that much!", Info_Mod_Pirat_Hi_D);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "All clear.", Info_Mod_Pirat_Hi_C);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Pirat_Hi_B_07_02"); //Hör mal, Matrose: Verscherz es dir nicht mit mir, klar? 700 Mäuse oder es läuft nix.
+		AI_Output(self, hero, "Info_Mod_Pirat_Hi_B_07_02"); //Listen, sailor, don't fuck with me, all right? 700 bucks or nothing.
 
 		Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "Kein Problem, hier ist das Gold.", Info_Mod_Pirat_Hi_A);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "No problem, here's the gold.", Info_Mod_Pirat_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Pirat_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Pirat_Hi_A_15_00"); //Kein Problem, hier ist das Gold.
+	AI_Output(hero, self, "Info_Mod_Pirat_Hi_A_15_00"); //No problem, here's the gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 700);
 
@@ -91,32 +91,32 @@ FUNC VOID Info_Mod_Pirat_Hi_A()
 
 FUNC VOID Info_Mod_Pirat_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Pirat_Hi_D_15_00"); //So viel kannst du ja wohl schlecht verlangen!
+	AI_Output(hero, self, "Info_Mod_Pirat_Hi_D_15_00"); //You can hardly ask that much!
 
 	if (Hlp_Random(100) < Mod_Verhandlungsgeschick)
 	{
-		AI_Output(self, hero, "Info_Mod_Pirat_Hi_D_07_01"); //Okay, okay. 350. Aber drunter geht's nicht.
+		AI_Output(self, hero, "Info_Mod_Pirat_Hi_D_07_01"); //Okay, okay, okay. 350. But it's not going under.
 
 		B_RaiseHandelsgeschick (2);
 
 		Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "(Feilschen) So kommen wir nicht ins Geschäft.", Info_Mod_Pirat_Hi_F);
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "Meinetwegen.", Info_Mod_Pirat_Hi_E);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "That's no way to make a deal.", Info_Mod_Pirat_Hi_F);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "I don't care about him.", Info_Mod_Pirat_Hi_E);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Pirat_Hi_D_07_02"); //Das ist ein verdammt guter Preis. Entweder du zahlst oder du gehst.
+		AI_Output(self, hero, "Info_Mod_Pirat_Hi_D_07_02"); //That's a damn good price. Either you pay or you leave.
 
 		Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "Alles klar.", Info_Mod_Pirat_Hi_C);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "All clear.", Info_Mod_Pirat_Hi_C);
 	};
 };
 
 FUNC VOID Info_Mod_Pirat_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Pirat_Hi_C_15_00"); //Alles klar.
+	AI_Output(hero, self, "Info_Mod_Pirat_Hi_C_15_00"); //All clear.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 500);
 
@@ -127,31 +127,31 @@ FUNC VOID Info_Mod_Pirat_Hi_C()
 
 FUNC VOID Info_Mod_Pirat_Hi_F()
 {
-	AI_Output(hero, self, "Info_Mod_Pirat_Hi_F_15_00"); //So kommen wir nicht ins Geschäft.
+	AI_Output(hero, self, "Info_Mod_Pirat_Hi_F_15_00"); //That's no way to do business.
 
 	if (Hlp_Random(100) < Mod_Verhandlungsgeschick)
 	{
-		AI_Output(self, hero, "Info_Mod_Pirat_Hi_F_07_01"); //(verzweifelt) 200 Gold ist wirklich mein letztes Angebot.
+		AI_Output(self, hero, "Info_Mod_Pirat_Hi_F_07_01"); //200 gold is really my last offer.
 
 		B_RaiseHandelsgeschick (2);
 
 		Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "Abgemacht. Ist doch ein guter Preis jetzt.", Info_Mod_Pirat_Hi_G);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "Deal. It's a good price now.", Info_Mod_Pirat_Hi_G);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Pirat_Hi_F_07_02"); //Hältst du dich für eine Art Jedi oder so, dass du immer so mit der Hand fuchtelst? Solche Tricks funktionieren bei mir nicht!
+		AI_Output(self, hero, "Info_Mod_Pirat_Hi_F_07_02"); //Do you think you're some kind of Jedi or something that makes you wave your hand like that? I can't do tricks like that!
 
 		Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "Meinetwegen.", Info_Mod_Pirat_Hi_E);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "I don't care about him.", Info_Mod_Pirat_Hi_E);
 	};
 };
 
 FUNC VOID Info_Mod_Pirat_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Pirat_Hi_E_15_00"); //Meinetwegen.
+	AI_Output(hero, self, "Info_Mod_Pirat_Hi_E_15_00"); //I don't care about him.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 350);
 
@@ -162,7 +162,7 @@ FUNC VOID Info_Mod_Pirat_Hi_E()
 
 FUNC VOID Info_Mod_Pirat_Hi_G()
 {
-	AI_Output(hero, self, "Info_Mod_Pirat_Hi_G_15_00"); //Abgemacht. Ist doch ein guter Preis jetzt.
+	AI_Output(hero, self, "Info_Mod_Pirat_Hi_G_15_00"); //Deal. It's a good price now.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 

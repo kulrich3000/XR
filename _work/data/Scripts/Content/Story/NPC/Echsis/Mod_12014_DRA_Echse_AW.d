@@ -1,7 +1,7 @@
 INSTANCE Mod_12014_DRA_Echse_AW	(C_NPC)
 {
 	//----- Monster ----
-	name	=	"Junger Echsenmensch";
+	name	=	"young lizard man";
 	guild	=	GIL_DRACONIAN;
 	id	= 	12014;
 	level	=	35;

@@ -15,27 +15,27 @@ FUNC INT Info_Mod_Brunhild_DI_Hi_Condition()
 
 FUNC VOID Info_Mod_Brunhild_DI_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_00"); //Nanu? Träum ich? Wer seid ihr?
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_01"); //Wir sind Piraten. Uns hat eine Flaschenpost hergeführt.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_02"); //Ihr habt meine Nachricht gefunden? Dem Himmel sei Dank!
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_03"); //Übrigens man nennt mich Brunhild. Freunde sagen Bruni zu mir.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_04"); //Angenehm. Wie kommst du hierher?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_05"); //Das ist eine lange Geschichte.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_06"); //Erzähl.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_07"); //Ich bin mit meinem Vater und meinem Bruder losgesegelt. Wir wollten nach Khorinis.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_08"); //Man sagt,  dort sind keine Orks, die einem den Hof verwüsten und alles töten, was nicht nach Ork aussieht.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_09"); //Meine Mutter ist von denen getötet worden.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_10"); //Woher hast du dieses Ammenmärchen?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_11"); //Auf dem Festland sagt man das.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_12"); //Was für ein Witz! Und wo sind deine Leute?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_13"); //Tot. Mein Bruder hat den Schiffsbruch nicht überlebt und mein Vater hat uns dieses Zelt hier gebaut.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_14"); //Dann wurde er von unheimlichen, hinkenden Gestalten erschlagen, die unter uns in den Höhlen hausen.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_15"); //Die kennen wir. Kein Einziger treibt mehr sein Unwesen.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_16"); //Ihr habt die alle getötet?
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_17"); //Wir sind Piraten und fürchten weder Tod noch Beliar!
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_18"); //Könnt ihr mich mitnehmen? Hier überlebe ich nicht lange, auch ohne die Hinker.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_19"); //Das wird unser Kapitän entscheiden. Aber ich denke schon.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_20"); //Lasst uns zum Strand gehen.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_00"); //Huh? Am I dreaming? Who are you people?
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_01"); //We're pirates. We got a message in a bottle.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_02"); //You found my message? Thank heaven!
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_03"); //By the way, they call me Brunhild. Friends call me Bruni.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_04"); //Pleased to meet you. How did you get here?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_05"); //It's a long story.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_06"); //Tell me about it.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_07"); //I sailed away with my father and brother. We were going to Khorinis.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_08"); //It is said that there are no orcs there who devastate the court yard and kill anything that doesn't look like an orc.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_09"); //My mother was killed by them.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_10"); //Where'd you get that old wives' tale?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_11"); //That's what they say on the mainland.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_12"); //What a joke! And where are your people?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_13"); //Dead. My brother didn't survive the shipwreck and my father built us this tent here.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_14"); //Then he was beaten to death by creepy limping creatures who lived among us in the caves.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_15"); //We know them all. Not a single one of them is going through any more trouble.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_16"); //You killed them all?
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_17"); //We are pirates and we fear neither death nor Beliar!
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Hi_17_18"); //Can you give me a lift? I won't survive long here, even without the hinkers.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_19"); //That will be decided by our captain. But I think so.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Hi_15_20"); //Let's go to the beach.
 
 	Mod_DI_InselErkunden = 2;
 
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Brunhild_DI_Gestaendnis (C_INFO)
 	information	= Info_Mod_Brunhild_DI_Gestaendnis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie gefällts dir hier bei uns?";
+	description	= "How do you like it here with us?";
 };
 
 FUNC INT Info_Mod_Brunhild_DI_Gestaendnis_Condition()
@@ -71,27 +71,27 @@ FUNC INT Info_Mod_Brunhild_DI_Gestaendnis_Condition()
 
 FUNC VOID Info_Mod_Brunhild_DI_Gestaendnis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_00"); //Wie gefällts dir hier bei uns?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_01"); //Besser als in meinem elenden Zelt allemal! Willst du einen Teller Suppe?
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_02"); //Später vielleicht. Ich komme von Samuel ...
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_03"); //Ihr habt über mich gesprochen?
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_04"); //Haben wir. Du warst nicht ehrlich zu mir.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_05"); //Verzeih Ich hatte Angst ich müsse auf dieser Insel bleiben.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_06"); //So brutal sind wir Piraten auch wieder nicht. Erzähl was wirklich war.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_07"); //Wir sind nicht ausgewandert, sondern geflohen.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_08"); //Meine Mutter ist nicht ertrunken, sondern sie wurde als Hexe auf dem Scheiterhaufen verbrannt.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_09"); //Und ich wurde auch der Hexerei verdächtigt.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_10"); //War sie eine Hexe? Bist du eine Hexe?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_11"); //Nein. Mein Vater hat früher dem Magierorden der Erde angehört.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_12"); //Als er meine Mutter kennengelernt hatte und sie heiraten wollte, musste er den Orden verlassen.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_13"); //Orden der Erde? Noch nie gehört.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_14"); //Dieser Orden betet zu Adanos wie die Wassermagier auch. Ist nicht so bekannt wie die anderen Orden und ihre Magie ist auch etwas anders.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_15"); //Vater hat nun Mutter und mir einiges von dieser Magie beigebracht.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_16"); //Also keine Hexerei?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_17"); //Nein. Gute, positive Magie, wie andere auch. Mein Wissen entspricht etwa dem ersten Kreis der Magie.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_18"); //Das bedeutet?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_19"); //Ich könnte Bäume entwurzeln, Erdspalten schaffen, Geröllawinen auslösen, Felsen bewegen. Solche Dinge halt.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_20"); //Felsen bewegen ... Hmm ... interessant.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_00"); //How do you like it here with us?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_01"); //Better than in my wretched tent anyway! You want some soup?
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_02"); //Later, maybe. I come from Samuel....
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_03"); //You were talking about me?
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_04"); //We did. You haven't been honest with me.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_05"); //Forgive me, I was afraid I had to stay on this island.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_06"); //We're not that brutal pirates again. Tell me what really happened.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_07"); //We didn't emigrate, we fled.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_08"); //My mother didn't drown, she was burned as a witch at the stake.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_09"); //And I was also suspected of witchcraft.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_10"); //Was she a witch? Are you a witch?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_11"); //No. My father used to be a magician of the Earth.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_12"); //When he met my mother and wanted to marry her, he had to leave the order.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_13"); //Order of the Earth? Never heard of him.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_14"); //This order prays to Adanos like the water magicians. Is not as well-known as the other orders and their magic is also somewhat different.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_15"); //Father has now taught Mother and me some of this magic.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_16"); //So no witchcraft?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_17"); //No. Good, positive magic, like others. My knowledge corresponds approximately to the first circle of magic.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_18"); //Which means?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Gestaendnis_17_19"); //I could uproot trees, create crevasses, cause avalanches of rubble, move rocks. Things like that.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Gestaendnis_15_20"); //Moving rocks.... Hmm... interesting.
 };
 
 INSTANCE Info_Mod_Brunhild_DI_Amulett (C_INFO)
@@ -102,7 +102,7 @@ INSTANCE Info_Mod_Brunhild_DI_Amulett (C_INFO)
 	information	= Info_Mod_Brunhild_DI_Amulett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schau mal hier. Hast du das schon mal gesehen?";
+	description	= "Take a look at this. Have you ever seen this before?";
 };
 
 FUNC INT Info_Mod_Brunhild_DI_Amulett_Condition()
@@ -115,15 +115,15 @@ FUNC INT Info_Mod_Brunhild_DI_Amulett_Condition()
 
 FUNC VOID Info_Mod_Brunhild_DI_Amulett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_00"); //Schau mal hier. Hast du das schon mal gesehen?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Amulett_17_01"); //Oh! Ein Medaillon.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_02"); //Medaillon?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Amulett_17_03"); //Ja. Was ähnliches wie ein Amulett, aber kostbarer und seltener.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_04"); //Und was hat es damit auf sich?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Amulett_17_05"); //Weiß ich nicht genau. Es könnte ein Banner sein, ich bin aber nicht sicher.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_06"); //Ein Banner?
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Amulett_17_07"); //Ja. Ein Gegenstand, mit dem man Bannsprüche aussprechen oder auch rückgängig machen kann.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_08"); //Das hilft uns momentan nicht weiter.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_00"); //Take a look at this. Have you ever seen this before?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Amulett_17_01"); //Oh! A locket.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_02"); //Medallion?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Amulett_17_03"); //Yeah. Something similar to an amulet, but more precious and rare.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_04"); //And what's that all about?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Amulett_17_05"); //I don't really know. It could be a banner, but I'm not sure.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_06"); //A banner?
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Amulett_17_07"); //Yeah. An object with which one can pronounce or revoke bans.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Amulett_15_08"); //That's not helping right now.
 };
 
 INSTANCE Info_Mod_Brunhild_DI_Erdmagie (C_INFO)
@@ -134,7 +134,7 @@ INSTANCE Info_Mod_Brunhild_DI_Erdmagie (C_INFO)
 	information	= Info_Mod_Brunhild_DI_Erdmagie_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du kannst doch Felsen bewegen ...";
+	description	= "You can move rocks...";
 };
 
 FUNC INT Info_Mod_Brunhild_DI_Erdmagie_Condition()
@@ -148,12 +148,12 @@ FUNC INT Info_Mod_Brunhild_DI_Erdmagie_Condition()
 
 FUNC VOID Info_Mod_Brunhild_DI_Erdmagie_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie_15_00"); //Du kannst doch Felsen bewegen ...
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie_17_01"); //Schon, wenn es kein ganzer Berg ist.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie_15_02"); //Wir glauben, den Schatz gefunden zu haben. Aber massive Felswände versperren den Eingang.
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie_15_03"); //Du könntest dich unverzichtbar machen bei uns.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie_17_04"); //Das hat was. Wo ist der Schatz?
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie_15_05"); //In den Höhlen. Ich führ dich hin.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie_15_00"); //You can move rocks...
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie_17_01"); //Even if it's not an entire mountain.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie_15_02"); //We think we found the treasure. But massive rock walls block the entrance.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie_15_03"); //You could make yourself indispensable to us.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie_17_04"); //That's got something. Where's the treasure?
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie_15_05"); //In the caves. I'll take you there.
 
 	B_StartOtherRoutine	(self, "FOLLOW");
 
@@ -182,13 +182,13 @@ FUNC INT Info_Mod_Brunhild_DI_Erdmagie2_Condition()
 FUNC VOID Info_Mod_Brunhild_DI_Erdmagie2_Info()
 {
 	AI_Output(self, hero, "DEFAULT"); //
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie2_15_00"); //Hier ist eine der Höhlen.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie2_17_01"); //Aha. Und diese Wand meinst du? Sollte klappen.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Erdmagie2_15_00"); //Here's one of the caves.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie2_17_01"); //Uh-huh. And you mean this wall? Should work.
 
 	AI_PlayAni	(self, "T_MAGRUN_2_TRFSHOOT");
 
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie2_17_02"); //Hm. Ich schaffe es nicht. Seltsam ... da ist irgend ein Hindernis. Kein reales ... Starke Magie.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie2_17_03"); //Vielleicht kann dieser Jones, der bei deinem Kapitän steht dabei helfen. Meine Kenntnisse über Bannzauber sind zu gering.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie2_17_02"); //Hm. I can't make it. Strange... there's some kind of obstacle. Not a real... Strong magic.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Erdmagie2_17_03"); //Maybe this Jones who's with your captain can help. My knowledge of spells is too low.
 
 	Mod_DI_InselErkunden = 3;
 };
@@ -214,8 +214,8 @@ FUNC INT Info_Mod_Brunhild_DI_Ende_Condition()
 FUNC VOID Info_Mod_Brunhild_DI_Ende_Info()
 {
 	AI_Output(self, hero, "DEFAULT"); //
-	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Ende_15_00"); //Du solltest schon mal zurück aufs Schiff gehen, ich weiß nicht, was mich hinter dieser Wand noch so erwartet.
-	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Ende_17_01"); //Schade, deine Nähe hat so etwas beruhigendes.
+	AI_Output(hero, self, "Info_Mod_Brunhild_DI_Ende_15_00"); //You should go back to the ship, I don't know what else awaits me behind that wall.
+	AI_Output(self, hero, "Info_Mod_Brunhild_DI_Ende_17_01"); //Too bad your closeness has something soothing about it.
 
 	AI_StopProcessInfos	(self);
 

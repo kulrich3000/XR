@@ -18,24 +18,24 @@ FUNC INT Info_Mod_Alkor_Hi_Condition()
 
 FUNC VOID Info_Mod_Alkor_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alkor_Hi_31_00"); //(rau) Was willst du, Hänfling? Die Schätze des Moores bergen? Ha, dass ich nicht lache.
-	AI_Output(hero, self, "Info_Mod_Alkor_Hi_15_01"); //Was ist dein Problem?
-	AI_Output(self, hero, "Info_Mod_Alkor_Hi_31_02"); //Ja, schau dich doch mal an.
-	AI_Output(self, hero, "Info_Mod_Alkor_Hi_31_03"); //So jämmerlich wie du aussiehst, überlebst du keine zehn Sekunden im giftigen Moor.
-	AI_Output(self, hero, "Info_Mod_Alkor_Hi_31_04"); //Ha, wahrscheinlich überlebst du nicht mal einen richtigen Schluck Wacholder.
+	AI_Output(self, hero, "Info_Mod_Alkor_Hi_31_00"); //What do you want, Linnet? The treasures of the moor? Ha, don't make me laugh.
+	AI_Output(hero, self, "Info_Mod_Alkor_Hi_15_01"); //What's your problem?
+	AI_Output(self, hero, "Info_Mod_Alkor_Hi_31_02"); //Yeah, look at yourself.
+	AI_Output(self, hero, "Info_Mod_Alkor_Hi_31_03"); //If you don't survive for ten seconds in the poisonous moor, as pitiful as you look.
+	AI_Output(self, hero, "Info_Mod_Alkor_Hi_31_04"); //Ha, you probably don't even survive a real sip of juniper.
 
 	Info_ClearChoices	(Info_Mod_Alkor_Hi);
 
-	Info_AddChoice	(Info_Mod_Alkor_Hi, "Ich vertrage bestimmt mehr als du.", Info_Mod_Alkor_Hi_B);
-	Info_AddChoice	(Info_Mod_Alkor_Hi, "Fall jemand anderem auf die Nerven. ", Info_Mod_Alkor_Hi_A);
+	Info_AddChoice	(Info_Mod_Alkor_Hi, "I'm sure I can take more than you.", Info_Mod_Alkor_Hi_B);
+	Info_AddChoice	(Info_Mod_Alkor_Hi, "Get on someone else's nerves. ", Info_Mod_Alkor_Hi_A);
 };
 
 FUNC VOID Info_Mod_Alkor_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Alkor_Hi_B_15_00"); //Ich vertrage bestimmt mehr als du.
-	AI_Output(self, hero, "Info_Mod_Alkor_Hi_B_31_01"); //Ha, dass ich nicht lache ... Wenn du es jemals schaffen solltest, mit mir mitzuhalten, würde ich meine ganzen Reserven an Gegengift hergeben.
-	AI_Output(hero, self, "Info_Mod_Alkor_Hi_B_15_02"); //Gegengift kann ich immer brauchen.
-	AI_Output(self, hero, "Info_Mod_Alkor_Hi_B_31_03"); //Wir werden ja sehen. Für jeden Versuch mich unter den Tisch zu trinken, werden 40 Goldstücke für das Gesöff fällig.
+	AI_Output(hero, self, "Info_Mod_Alkor_Hi_B_15_00"); //I'm sure I can take more than you.
+	AI_Output(self, hero, "Info_Mod_Alkor_Hi_B_31_01"); //Ha, don't make me laugh... If you ever managed to keep up with me, I'd give all my reserves of antidote.
+	AI_Output(hero, self, "Info_Mod_Alkor_Hi_B_15_02"); //I can always use an antidote.
+	AI_Output(self, hero, "Info_Mod_Alkor_Hi_B_31_03"); //We'll see about that. For every attempt to drink me under the table, 40 pieces of gold are due for the brew.
 
 	Info_ClearChoices	(Info_Mod_Alkor_Hi);
 
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Alkor_StarteContest (C_INFO)
 	information	= Info_Mod_Alkor_StarteContest_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Hier ist das Gold.";
+	description	= "Here's the gold.";
 };
 
 FUNC INT Info_Mod_Alkor_StarteContest_Condition()
@@ -73,17 +73,17 @@ FUNC INT Info_Mod_Alkor_StarteContest_Condition()
 
 FUNC VOID Info_Mod_Alkor_StarteContest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alkor_StarteContest_15_00"); //Hier ist das Gold.
+	AI_Output(hero, self, "Info_Mod_Alkor_StarteContest_15_00"); //Here's the gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 40);
 
-	AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_31_01"); //Na gut. Dann los zur ersten Runde.
+	AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_31_01"); //All right, all right. Then off to the first round.
 
 	AI_UseMob	(self, "CHAIR", -1);
 
 	Info_ClearChoices	(Info_Mod_Alkor_StarteContest);
 
-	Info_AddChoice	(Info_Mod_Alkor_StarteContest, "(Weiter)", Info_Mod_Alkor_StarteContest_Weiter_01);
+	Info_AddChoice	(Info_Mod_Alkor_StarteContest, "(Continue)", Info_Mod_Alkor_StarteContest_Weiter_01);
 };
 
 FUNC VOID Info_Mod_Alkor_StarteContest_Weiter_01()
@@ -98,11 +98,11 @@ FUNC VOID Info_Mod_Alkor_StarteContest_Weiter_01()
 	B_UseItem	(self, ItFo_Beer);
 	B_UseItem	(hero, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_01_31_00"); //Du stehst noch? Bist vielleicht doch nicht so ein Hosenscheißer, wie ich zuerst gedacht hatte. Auf zur zweiten Runde.
+	AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_01_31_00"); //You're still standing? Maybe you're not the kind of pantshit I thought you were. Let's go to round two.
 
 	Info_ClearChoices	(Info_Mod_Alkor_StarteContest);
 
-	Info_AddChoice	(Info_Mod_Alkor_StarteContest, "(Weiter)", Info_Mod_Alkor_StarteContest_Weiter_02);
+	Info_AddChoice	(Info_Mod_Alkor_StarteContest, "(Continue)", Info_Mod_Alkor_StarteContest_Weiter_02);
 };
 
 FUNC VOID Info_Mod_Alkor_StarteContest_Weiter_02()
@@ -119,19 +119,19 @@ FUNC VOID Info_Mod_Alkor_StarteContest_Weiter_02()
 
 	if (Mod_Betrunken == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_02_31_00"); //(hämisch) Ha, wusste ich’s doch. Beim ersten Schluck von was Stärkerem hält es den Wicht nicht mehr auf den Beinen.
-		AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_02_31_01"); //Hattest wohl noch nie den einen oder anderen richtigen Rausch, hä?!
-		AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_02_31_02"); //Aber danke für das Gold, du Held.
+		AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_02_31_00"); //Ha, I knew it. At the first sip of something stronger, it won't keep the wretch on his feet.
+		AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_02_31_01"); //You've never really been intoxicated before, have you?!
+		AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_02_31_02"); //But thanks for the gold, hero.
 
 		Info_ClearChoices	(Info_Mod_Alkor_StarteContest);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_02_31_03"); //(angetrunken) Was?! Du stehst noch, aber ... aber gleich nicht mehr, wenn wir zur dritt... zur dritten Runde kommen.
+		AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_02_31_03"); //(drunk) What?! You're still standing, but.... but not any more, if we go to the third... to round three.
 
 		Info_ClearChoices	(Info_Mod_Alkor_StarteContest);
 
-		Info_AddChoice	(Info_Mod_Alkor_StarteContest, "(Weiter)", Info_Mod_Alkor_StarteContest_Weiter_03);
+		Info_AddChoice	(Info_Mod_Alkor_StarteContest, "(Continue)", Info_Mod_Alkor_StarteContest_Weiter_03);
 	};
 };
 
@@ -141,10 +141,10 @@ FUNC VOID Info_Mod_Alkor_StarteContest_Weiter_03()
 
 	B_UseItem	(self, ItFo_Addon_Grog);
 
-	AI_Output(hero, self, "Info_Mod_Alkor_StarteContest_Weiter_03_15_00"); //Na, war’s das?
-	AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_03_31_01"); //(benommen) Was?! Ahh, verdammt mein Kopf. Du Mistkerl!
-	AI_Output(hero, self, "Info_Mod_Alkor_StarteContest_Weiter_03_15_02"); //Tja, man sollte den Mund nicht so voll nehmen, wenn man nicht so viel verträgt. Die Tränke?
-	AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_03_31_03"); //Ahh, verfluchter Mist. Hier hast du die Gegengifte. Und jetzt ... verpiss dich!
+	AI_Output(hero, self, "Info_Mod_Alkor_StarteContest_Weiter_03_15_00"); //Well, is that it?
+	AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_03_31_01"); //What?! Ahh, my fucking head. You son of a bitch!
+	AI_Output(hero, self, "Info_Mod_Alkor_StarteContest_Weiter_03_15_02"); //Well, you shouldn't get your mouth so full if you can't take so much. The potions?
+	AI_Output(self, hero, "Info_Mod_Alkor_StarteContest_Weiter_03_31_03"); //Ahh, son of a bitch. Here are the antidotes. And now.... Get the fuck out of here!
 
 	B_GiveInvItems	(self, hero, ItPo_Gegengift, 2);
 
@@ -175,13 +175,13 @@ FUNC INT Info_Mod_Alkor_Wasserleichen_Condition()
 
 FUNC VOID Info_Mod_Alkor_Wasserleichen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alkor_Wasserleichen_31_00"); //Was die Leichen nicht geschafft haben, werde ich zu Ende bringen!
+	AI_Output(self, hero, "Info_Mod_Alkor_Wasserleichen_31_00"); //I'll finish what the bodies didn't accomplish!
 
 	AI_StopProcessInfos	(self);
 
 	B_Attack	(self, hero, AR_GuildEnemy, 0);
 
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, "Die Wasserleichen sind erledigt. Aber was will Alkor? Hat er den Verstand verloren?");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, "The drowned bodies are finished. But what does Alkor want? Has he lost his mind?");
 };
 
 INSTANCE Info_Mod_Alkor_Pickpocket (C_INFO)

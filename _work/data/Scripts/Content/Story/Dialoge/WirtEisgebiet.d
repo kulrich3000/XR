@@ -6,7 +6,7 @@ INSTANCE Info_Mod_WirtEisgebiet_Rattenquest (C_INFO)
 	information	= Info_Mod_WirtEisgebiet_Rattenquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Habt ihr in letzter Zeit vielleicht zufällig ein Rattenproblem?";
+	description	= "Do you guys have a rat problem lately, by any chance?";
 };
 
 FUNC INT Info_Mod_WirtEisgebiet_Rattenquest_Condition()
@@ -19,16 +19,16 @@ FUNC INT Info_Mod_WirtEisgebiet_Rattenquest_Condition()
 
 FUNC VOID Info_Mod_WirtEisgebiet_Rattenquest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_00"); //Habt ihr in letzter Zeit vielleicht zufällig ein Rattenproblem?
-	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_01"); //Wir haben doch kein Problem mit Ratten. Einmal fest Draufgeschlagen und schon ist das Viech tot.
-	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_02"); //Nein, so meinte ich das nicht. Ich meinte, ob sie in letzter Ziet vermehrt auftauchen.
-	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_03"); //Na ja, bei uns hier in der Stadt nicht, aber einer der Jäger, ich glaube Burl war sein Name, hat mal was von Ratten erzählt.
-	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_04"); //Und wo ist dieser Burl?
-	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_05"); //Ich glaube der ist im Hotel, der hat gestern Abend ganz schön gesoffen.
-	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_06"); //Du kannst ja mal schauen, ob er jetzt wieder fit ist.
-	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_07"); //Danke, dann geh ich mal gleich zu ihm.
+	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_00"); //Do you guys have a rat problem lately, by any chance?
+	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_01"); //We don't have a problem with rats. Once you hit it hard and the creature is dead.
+	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_02"); //No, that's not what I meant. I meant, are they gonna show up more often in the last few minutes?
+	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_03"); //but one of the hunters, I think Burl was his name, told me about rats.
+	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_04"); //And where's that burl?
+	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_05"); //I think he's at the hotel. He had a lot of booze last night.
+	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_06"); //You can see if he's fit again.
+	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_07"); //Thanks. I'll see him right away.
 
-	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "In der Stadt hier ist nichts vorgefallen, jedoch hat ein Jäger namens Burl von Ratten gesprochen. Er soll sich zur Zeit im Hotel aufhalten, wo er seinen Rausch ausschläft.");
+	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Nothing has happened in this town, but a hunter named Burl has spoken of rats. He's supposed to be staying at the hotel where he's sleeping it off.");
 
 	Mod_RattenQuest = 5;
 };

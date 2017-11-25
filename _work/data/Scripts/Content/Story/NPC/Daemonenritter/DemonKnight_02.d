@@ -1,7 +1,7 @@
 instance DemonKnight_02 (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenritter";	
+	name 		= "demon knights";	
 	guild 		= GIL_OUT;
 	id 			= 1940;
 	voice 		= 6;

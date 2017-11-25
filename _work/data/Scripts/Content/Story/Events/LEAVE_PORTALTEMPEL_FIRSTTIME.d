@@ -14,7 +14,7 @@ func void LEAVE_PORTALTEMPEL_FIRSTTIME_S1 ()
 		//Wld_PlayEffect	("MFX_SLEEP_TARGET", hero, hero, 0, 0, 0, FALSE);
 		//AI_PlayAni 	(hero,	"T_VICTIM_SLE_2_STAND");
 			
-		PrintScreen ("Einige Stunden später", -1, YPOS_LevelUp, FONT_Screen, 2);			
+		PrintScreen ("A few hours later", -1, YPOS_LevelUp, FONT_Screen, 2);			
 
 		Wld_SetTime	(24,00);
 

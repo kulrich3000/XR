@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Spielleiter_Kardif_Online_RuedigerBesiegt (C_INFO) {
 	information	= Info_Mod_Spielleiter_Online_RuedigerBesiegt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lust auf eine Partie Schagby?";
+	description	= "Fancy a game of shagby?";
 };
 
 FUNC INT Info_Mod_Spielleiter_Kardif_Online_RuedigerBesiegt_Condition() {
@@ -162,7 +162,7 @@ INSTANCE Info_Mod_Spielleiter_Coragon_Online_RuedigerBesiegt (C_INFO) {
 	information	= Info_Mod_Spielleiter_Online_RuedigerBesiegt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lust auf eine Partie Schagby?";
+	description	= "Fancy a game of shagby?";
 };
 
 FUNC INT Info_Mod_Spielleiter_Coragon_Online_RuedigerBesiegt_Condition() {
@@ -178,7 +178,7 @@ INSTANCE Info_Mod_Spielleiter_Thekla_Online_RuedigerBesiegt (C_INFO) {
 	information	= Info_Mod_Spielleiter_Online_RuedigerBesiegt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lust auf eine Partie Schagby?";
+	description	= "Fancy a game of shagby?";
 };
 
 FUNC INT Info_Mod_Spielleiter_Thekla_Online_RuedigerBesiegt_Condition() {
@@ -194,7 +194,7 @@ INSTANCE Info_Mod_Spielleiter_NewCamp_Online_RuedigerBesiegt (C_INFO) {
 	information	= Info_Mod_Spielleiter_Online_RuedigerBesiegt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lust auf eine Partie Schagby?";
+	description	= "Fancy a game of shagby?";
 };
 
 FUNC INT Info_Mod_Spielleiter_NewCamp_Online_RuedigerBesiegt_Condition() {
@@ -210,7 +210,7 @@ INSTANCE Info_Mod_Spielleiter_Gelato_Online_RuedigerBesiegt (C_INFO) {
 	information	= Info_Mod_Spielleiter_Online_RuedigerBesiegt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lust auf eine Partie Schagby?";
+	description	= "Fancy a game of shagby?";
 };
 
 FUNC INT Info_Mod_Spielleiter_Gelato_Online_RuedigerBesiegt_Condition() {

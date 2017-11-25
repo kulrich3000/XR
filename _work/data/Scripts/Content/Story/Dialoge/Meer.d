@@ -15,13 +15,13 @@ FUNC INT Info_Mod_Meer_Hi_Condition()
 
 FUNC VOID Info_Mod_Meer_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Meer_Hi_18_00"); //Du hast mich gefunden.
-	AI_Output(hero, self, "Info_Mod_Meer_Hi_15_01"); //Was habe ich gefunden?
-	AI_Output(self, hero, "Info_Mod_Meer_Hi_18_02"); //Mich! Die Antwort! Das, was den König wieder glücklich machen wird!
-	AI_Output(hero, self, "Info_Mod_Meer_Hi_15_03"); //Du bist die Antwort?
-	AI_Output(self, hero, "Info_Mod_Meer_Hi_18_04"); //Ich bin die Antwort! ICH BIN DIE ANTWORT!
+	AI_Output(self, hero, "Info_Mod_Meer_Hi_18_00"); //You found me.
+	AI_Output(hero, self, "Info_Mod_Meer_Hi_15_01"); //What did I find?
+	AI_Output(self, hero, "Info_Mod_Meer_Hi_18_02"); //Me! The answer! That which will make the King happy again!
+	AI_Output(hero, self, "Info_Mod_Meer_Hi_15_03"); //You're the answer?
+	AI_Output(self, hero, "Info_Mod_Meer_Hi_18_04"); //I am the answer! I AM THE ANSWER!
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich habe das Meer gefunden und es ist die Antwort. Hm ... noch nicht sehr aufschlussreich.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "I have found the sea and it is the answer. Hm... not very revealing yet.");
 };

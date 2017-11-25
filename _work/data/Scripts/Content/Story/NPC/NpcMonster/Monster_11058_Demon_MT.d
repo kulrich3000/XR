@@ -1,7 +1,7 @@
 INSTANCE Monster_11058_Demon_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämon";	
+	name 		= "Demon";	
 	guild 		= GIL_DEMON;
 	id 			= 11058;
 	voice 		= 20;

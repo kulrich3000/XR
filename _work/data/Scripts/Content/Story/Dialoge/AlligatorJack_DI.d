@@ -6,7 +6,7 @@ INSTANCE Info_Mod_AlligatorJack_DI_KommMit (C_INFO)
 	information	= Info_Mod_AlligatorJack_DI_KommMit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Komm mit.";
+	description	= "Come with me.";
 };
 
 FUNC INT Info_Mod_AlligatorJack_DI_KommMit_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_AlligatorJack_DI_KommMit_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_DI_KommMit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_DI_KommMit_15_00"); //Komm mit.
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_KommMit_12_01"); //Ich hoffe hier kann man was jagen. Also los.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_DI_KommMit_15_00"); //Come with me.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_KommMit_12_01"); //I hope you can hunt something here. All right, let's go.
 
 	AI_StopProcessInfos	(self);
 
@@ -50,11 +50,11 @@ FUNC INT Info_Mod_AlligatorJack_DI_Stollen_01_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_DI_Stollen_01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Stollen_01_12_00"); //Hm ... hier geht’s nicht weiter. Aber das müsste man wegräumen können.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Stollen_01_12_00"); //Hm... I can't go any further here. But it should be possible to put that away.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Wir haben einen verschütteten Gang entdeckt.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "We discovered a buried passageway.");
 };
 
 INSTANCE Info_Mod_AlligatorJack_DI_Stollen_02 (C_INFO)
@@ -78,15 +78,15 @@ FUNC INT Info_Mod_AlligatorJack_DI_Stollen_02_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_DI_Stollen_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Stollen_02_12_00"); //Warte mal. Ich glaub, hier ist was ...
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_DI_Stollen_02_15_01"); //Was denn?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Stollen_02_12_02"); //Das könnte ein blockierter Stollen sein.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_DI_Stollen_02_15_03"); //Tatsächlich. Bloß wie kommt man da rein?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Stollen_02_12_04"); //Keine Ahnung. Wir werden es dem Käpt'n erzählen. Weiter.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Stollen_02_12_00"); //Hold on a second. I think there's something here....
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_DI_Stollen_02_15_01"); //What do you mean?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Stollen_02_12_02"); //This could be a blocked tunnel.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_DI_Stollen_02_15_03"); //Actually. How do you get in there?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Stollen_02_12_04"); //I don't know about that. We'll tell the captain. Go on.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Es gibt eine Wand entdeckt, die zu öffnen sein sollte.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "There is a wall discovered that should be openable.");
 };
 
 INSTANCE Info_Mod_AlligatorJack_DI_Vorsicht (C_INFO)
@@ -110,8 +110,8 @@ FUNC INT Info_Mod_AlligatorJack_DI_Vorsicht_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_DI_Vorsicht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Vorsicht_12_00"); //Hier unten scheint es sonst nichts mehr zu geben, wo wir hinkönnen.
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Vorsicht_12_01"); //Wir sollten uns aber das Zelt oben etwas genauer ansehen.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Vorsicht_12_00"); //There seems to be nothing else down here where we can go.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_DI_Vorsicht_12_01"); //But we should have a closer look at the tent upstairs.
 
 	AI_StopProcessInfos	(self);
 };

@@ -21,8 +21,8 @@ FUNC VOID Use_Bookstand_Rune_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Die Runensteine"					);
+					Doc_PrintLine	( nDocID,  0, "Page 1"					);
+					Doc_PrintLine	( nDocID,  0, "The Runestones"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -30,7 +30,7 @@ FUNC VOID Use_Bookstand_Rune_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Page 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -57,8 +57,8 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Die Runen und ihre Ingredenzien"	);
+					Doc_PrintLine	( nDocID,  0, "Page 1"					);
+					Doc_PrintLine	( nDocID,  0, "The Runes and their Ingredients"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -66,7 +66,7 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Page 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -93,8 +93,8 @@ FUNC VOID Use_Bookstand_Innos_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Die Lehren Innos"	);
+					Doc_PrintLine	( nDocID,  0, "Page 1"					);
+					Doc_PrintLine	( nDocID,  0, "The teachings of Inno"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -102,7 +102,7 @@ FUNC VOID Use_Bookstand_Innos_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Page 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -129,8 +129,8 @@ FUNC VOID Use_Bookstand_Innos_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Die Gebote Innos"	);
+					Doc_PrintLine	( nDocID,  0, "Page 1"					);
+					Doc_PrintLine	( nDocID,  0, "The Commandments of Inno"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -138,7 +138,7 @@ FUNC VOID Use_Bookstand_Innos_02_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Page 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -165,22 +165,22 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER ERSTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "THE FIRST CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Die Runen des ersten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the first circle and the ingredients needed to make them ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Licht");
-					Doc_PrintLine	( nDocID,  0, "Goldmünze");
+					Doc_PrintLine	( nDocID,  0, "Light");
+					Doc_PrintLine	( nDocID,  0, "gold coin");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Feuerpfeil");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Leichte Wunden heilen");
+					Doc_PrintLine	( nDocID,  0, "Heal Light Wounds");
 					Doc_PrintLine	( nDocID,  0, "Heilpflanze");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -188,11 +188,11 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
 					Doc_Show		( nDocID );
 	};
 };
@@ -215,10 +215,10 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER ZWEITE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "THE SECOND CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Die Runen des zweiten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the second circle and the ingredients needed to make them ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -230,11 +230,11 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
 					Doc_Show		( nDocID );
 	
 	};
@@ -258,28 +258,28 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER DRITTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "THE THIRD CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des dritten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the third circle and the ingredients needed to make them ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Mittlere Wunden heilen");
+					Doc_PrintLine	( nDocID,  0, "Heal Medium Wounds");
 					Doc_PrintLine	( nDocID,  0, "Heilkraut");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Kleiner Feuersturm");
+					Doc_PrintLine	( nDocID,  0, "Small Fire Storm");
 					Doc_PrintLine	( nDocID,  0, "Pech");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -303,19 +303,19 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER VIERTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "THE FOURTH CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des vierten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the fourth circle and the ingredients needed to make them ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Grosser Feuerball");
+					Doc_PrintLine	( nDocID,  0, "Large Fireball");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "Pech");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Untote vernichten");
+					Doc_PrintLine	( nDocID,  0, "Destroy Undead");
 					Doc_PrintLine	( nDocID,  0, "Geweihtes Wasser");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -327,11 +327,11 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					
 					
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -355,20 +355,20 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER FÜNFTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "THE FIFTH CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des fünften Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the fifth circle and the ingredients needed to make them ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Grosser Feuersturm");
+					Doc_PrintLine	( nDocID,  0, "Large Fire Storm");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "Flammenzunge");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Schwere Wunden heilen");
+					Doc_PrintLine	( nDocID,  0, "Heal Heavy Wounds");
 					Doc_PrintLine	( nDocID,  0, "Heilwurzel");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -376,11 +376,11 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -404,14 +404,14 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER SECHSTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "THE SIXTH CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des sechsten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the sixth circle and the ingredients needed to make them ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Feuerregen");
+					Doc_PrintLine	( nDocID,  0, "Fire Rain");
 					Doc_PrintLine	( nDocID,  0, "Pech");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "Flammenzunge");
@@ -424,17 +424,17 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLine	( nDocID,  1, "Monster schrumpfen");
+					Doc_PrintLine	( nDocID,  1, "Shrink Monster");
 					Doc_PrintLine	( nDocID,  1, "Knochen eines Goblins");
 					Doc_PrintLine	( nDocID,  1, "Trollhauer");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -458,8 +458,8 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Regeln"	);
+					Doc_PrintLine	( nDocID,  0, "Page 1"					);
+					Doc_PrintLine	( nDocID,  0, "rules"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -467,7 +467,7 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Page 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);

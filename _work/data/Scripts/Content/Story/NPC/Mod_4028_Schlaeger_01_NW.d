@@ -1,7 +1,7 @@
 instance Mod_4028_Schlaeger_01_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Schläger";
+	name 		=		"bat";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_STRF;
 	level 		=		20;

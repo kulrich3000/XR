@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Raritaetenhaendler_Hi_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_00"); //Hallo Freund. Tritt näher!
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_01"); //Freund? Kennen wir uns?
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_02"); //Noch nicht. Mein Name ist Finder. Ich handle mit Raritäten.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_03"); //Raritäten. Das sind doch seltene Dinge.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_04"); //Genau. Seltene, wunderliche, gar einmalige Sachen.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_05"); //Dann lass mal sehen.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_00"); //Hello friend. Step closer!
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_01"); //Friend? Do we know each other?
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_02"); //Not yet. My name is Finder. I deal in rarities.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_03"); //Rarities. Those are rare things.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_04"); //Exactly. Rare, strange, even unique things.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_05"); //Let's have a look.
 };
 
 INSTANCE Info_Mod_Raritaetenhaendler_Rune (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich sehe hier 'ne kaputte Rune.";
+	description	= "I see a broken rune here.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune_Condition()
@@ -46,11 +46,11 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_00"); //Ich sehe hier 'ne kaputte Rune. Das Teil interessiert mich.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune_04_01"); //Aber gerne. Für 500 kannst du sie haben.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_02"); //Bist du verrückt? 500 Gold für diesen Klumpen Erz?
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_03"); //Ist doch bestenfalls als Dekoration zu gebrauchen. Ich gebe dir 100.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune_04_04"); //Spinnst du? Das ist eine absolute Rarität. Nicht unter 400 zu haben.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_00"); //I see a broken rune here. That thing interests me.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune_04_01"); //I'd be happy to. You can have it for 500.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_02"); //Are you out of your mind? 500 gold for this lump of ore?
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_03"); //It's at best for decoration. I'll give you 100.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune_04_04"); //Are you out of your mind? This is an absolute rarity. Not to have less than 400.
 };
 
 INSTANCE Info_Mod_Raritaetenhaendler_Rune01 (C_INFO)
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune01 (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Also gut. Hier 400 Münzen. Die pure Abzocke ist das.";
+	description	= "All right, then. Here 400 coins. The pure rip-off is this.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune01_Condition()
@@ -76,11 +76,11 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune01_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune01_15_00"); //Also gut. Hier 400 Münzen. Die pure Abzocke ist das.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune01_15_00"); //All right, then. Here 400 coins. The pure rip-off is this.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 400);
 
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune01_04_01"); //Angebot und Nachfrage ist das. Hier. Viel Vergnügen.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune01_04_01"); //Supply and demand is that. Here. Have a good time.
 
 	B_GiveInvItems	(self, hero, ItMi_BrokenRune02, 1);
 
@@ -88,11 +88,11 @@ FUNC VOID Info_Mod_Raritaetenhaendler_Rune01_Info()
 	
 	if (Npc_HasItems(Mod_7540_OUT_Penner_REL, ItMi_BrokenRune01) == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Habe dem Raritätenhändler 'ne halbe Teleportrune abgeschwatzt. Jetzt brauche ich den Rest vom Penner zurück. Sollte nicht allzu schwer sein.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Swapped half a teleportune with the rarities dealer. Now I need the rest of the bum back. Shouldn't be too hard.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Geschafft! Ich habe beide Teile. Vielleicht kann man die Rune reparieren. Am besten einen Fachmann fragen. Ob's hier einen Magier gibt? Mal fragen. Vielleicht Daniel, der handelt doch mit Magie.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "We did it! I have both parts. Maybe the rune can be repaired. Ask an expert. I wonder if there's a magician here. Let's ask. Maybe Daniel, he's dealing in magic.");
 	};
 };
 
@@ -104,7 +104,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune02 (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Absolute Rarität? Schau mal, was ich hier habe.";
+	description	= "Absolute rarity? Look what I got here.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune02_Condition()
@@ -120,11 +120,11 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune02_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_00"); //Absolute Rarität? Schau mal, was ich hier habe.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune02_04_01"); //Oh. Eine halbe Rune.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_02"); //Genau. Die liegen hier so in der Gegend rum.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune02_04_03"); //Also gut. Ich gehe auf 250 runter.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_04"); //Weil du's bist. Hier 250 Gold.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_00"); //Absolute rarity? Look what I got here.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune02_04_01"); //Oh. Half a rune.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_02"); //Exactly. They're around here somewhere.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune02_04_03"); //All right, then. I'm going down to 250.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_04"); //Because it's you. 250 gold in here.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 250);
 
@@ -134,11 +134,11 @@ FUNC VOID Info_Mod_Raritaetenhaendler_Rune02_Info()
 	
 	if (Npc_HasItems(Mod_7540_OUT_Penner_REL, ItMi_BrokenRune01) == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Habe dem Raritätenhändler 'ne halbe Teleportrune abgeschwatzt. Jetzt brauche ich den Rest vom Penner zurück. Sollte nicht allzu schwer sein.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Swapped half a teleportune with the rarities dealer. Now I need the rest of the bum back. Shouldn't be too hard.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Geschafft! Ich habe beide Teile. Vielleicht kann man die Rune reparieren. Am besten einen Fachmann fragen. Ob's hier einen Magier gibt? Mal fragen. Vielleicht Daniel, der handelt doch mit Magie.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "We did it! I have both parts. Maybe the rune can be repaired. Ask an expert. I wonder if there's a magician here. Let's ask. Maybe Daniel, he's dealing in magic.");
 	};
 };
 
@@ -150,7 +150,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune03 (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab aber nur 200 im Beutel. Mehr geht nicht.";
+	description	= "I only have 200 in my bag. That's all I can do.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune03_Condition()
@@ -166,16 +166,16 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune03_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune03_15_00"); //Ich hab aber nur 200 im Beutel. Mehr geht nicht.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune03_04_01"); //Dann kommen wir nicht ins Geschäft. Tut mir leid.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune03_15_02"); //Ich könnte dir noch einen Aquamarin dazugeben. Erstklassige Qualität.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune03_15_00"); //I only have 200 in my bag. That's all I can do.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune03_04_01"); //Then we can't do business. Sorry about that.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune03_15_02"); //I could add another aquamarine. First-class quality.
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 200);
 	Npc_RemoveInvItems	(hero, ItMi_Aquamarine, 1);
 
-	B_ShowGivenThings	("200 Gold und Aquamarin gegeben");
+	B_ShowGivenThings	("200 Gold and Aquamarine added");
 
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune03_04_03"); //Abgemacht. Hier, die Rune.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune03_04_03"); //Deal. Here, the rune.
 
 	B_GiveInvItems	(self, hero, ItMi_BrokenRune02, 1);
 
@@ -183,11 +183,11 @@ FUNC VOID Info_Mod_Raritaetenhaendler_Rune03_Info()
 	
 	if (Npc_HasItems(Mod_7540_OUT_Penner_REL, ItMi_BrokenRune01) == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Habe dem Raritätenhändler 'ne halbe Teleportrune abgeschwatzt. Jetzt brauche ich den Rest vom Penner zurück. Sollte nicht allzu schwer sein.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Swapped half a teleportune with the rarities dealer. Now I need the rest of the bum back. Shouldn't be too hard.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Geschafft! Ich habe beide Teile. Vielleicht kann man die Rune reparieren. Am besten einen Fachmann fragen. Ob's hier einen Magier gibt? Mal fragen. Vielleicht Daniel, der handelt doch mit Magie.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "We did it! I have both parts. Maybe the rune can be repaired. Ask an expert. I wonder if there's a magician here. Let's ask. Maybe Daniel, he's dealing in magic.");
 	};
 };
 
@@ -199,7 +199,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune04 (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nachfrage! Was heißt hier Nachfrage? Diesen Schrott nimmt dir doch eh keiner ab.";
+	description	= "Demand! What does demand mean? No one's ever gonna take that junk off you anyway.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune04_Condition()
@@ -216,21 +216,21 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune04_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_00"); //Nachfrage! Was heißt hier Nachfrage? Diesen Schrott nimmt dir doch eh keiner ab.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_01"); //Denkst du. Fast jeder fragt mich, was es auf sich hat mit der Rune.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_02"); //Und du sagst natürlich: keine Ahnung. Hier. 200 Gold.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_00"); //Demand! What does demand mean? No one's ever gonna take that junk off you anyway.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_01"); //You think so. Almost everyone asks me what's up with the rune.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_02"); //And of course you say,"I don't know." Here. 200 gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_03"); //Mein letztes Wort. 250. Ich muss auch leben. Und die Frau und die sieben Kinder ...
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_04"); //Hab aber nur 200. Ich geb dir drei Brote und drei Teller Suppe dazu. Für die Familie ...
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_03"); //My final word. 250. I have to live, too. And the wife and seven children...
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_04"); //I only have 200. I'll give you three loaves of bread and three plates of soup. For the family...
 
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 3);
 	Npc_RemoveInvItems	(hero, ItFo_FishSoup, 3);
 
-	B_ShowGivenThings	("3 Brote und 3 Teller Suppe gegeben");
+	B_ShowGivenThings	("3 loaves of bread and 3 plates of soup");
 
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_05"); //Du bist ein Verbrecher. Hier. Die Rune.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_05"); //You're a criminal. Here. The rune.
 
 	B_GiveInvItems	(self, hero, ItMi_BrokenRune02, 1);
 
@@ -238,11 +238,11 @@ FUNC VOID Info_Mod_Raritaetenhaendler_Rune04_Info()
 	
 	if (Npc_HasItems(Mod_7540_OUT_Penner_REL, ItMi_BrokenRune01) == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Habe dem Raritätenhändler 'ne halbe Teleportrune abgeschwatzt. Jetzt brauche ich den Rest vom Penner zurück. Sollte nicht allzu schwer sein.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Swapped half a teleportune with the rarities dealer. Now I need the rest of the bum back. Shouldn't be too hard.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Geschafft! Ich habe beide Teile. Vielleicht kann man die Rune reparieren. Am besten einen Fachmann fragen. Ob's hier einen Magier gibt? Mal fragen. Vielleicht Daniel, der handelt doch mit Magie.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "We did it! I have both parts. Maybe the rune can be repaired. Ask an expert. I wonder if there's a magician here. Let's ask. Maybe Daniel, he's dealing in magic.");
 	};
 };
 
@@ -254,7 +254,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_BrokenRune (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_BrokenRune_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo noch mal.";
+	description	= "Hello again.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_BrokenRune_Condition()
@@ -269,20 +269,20 @@ FUNC INT Info_Mod_Raritaetenhaendler_BrokenRune_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_BrokenRune_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_00"); //Hallo noch mal.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_01"); //Was? Du schon wieder? Was willst Du?
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_02"); //Ich komme von Daniel. Er hat dir eine Adanosfigur verkauft.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_03"); //Das mag sein. Ein schönes Teil. Ganz aus Aquamarin geschnitzt.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_00"); //Hello again.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_01"); //What? You again? What do you want?
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_02"); //I'm from Daniel. He sold you an adanos figure.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_03"); //That may be true. A nice piece of work. Carved entirely in aquamarine.
 
 	B_GiveInvItems	(self, hero, ItMi_AdanosStatue, 1);
 
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_04"); //Genau das möchte ich kaufen. Du weißt ja, als Dekoration ...
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_05"); //Gewiss. 500 Gold ...
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_06"); //Nicht schon wieder. Das ist höchstens 200 wert.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_04"); //That's what I want to buy. You know, as a decoration...
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_05"); //Certainly. 500 gold...
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_06"); //Not again. That's worth a maximum of 200.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
-	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "Ich habe jetzt die Adanosfigur. Muss zum Magier zurück.");
+	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "I have the Adanos figure now. Gotta get back to the magician.");
 };
 
 INSTANCE Info_Mod_Raritaetenhaendler_Pickpocket (C_INFO)

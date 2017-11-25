@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bones_NW_Irdorath3 (C_INFO)
 	information	= Info_Mod_Bones_NW_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "I'm sorry, but it seems we're too many.";
 };
 
 FUNC INT Info_Mod_Bones_NW_Irdorath3_Condition()
@@ -24,8 +24,8 @@ FUNC INT Info_Mod_Bones_NW_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Bones_NW_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bones_NW_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Bones_NW_Irdorath3_01_01"); //Schade. Ich gehe dann wieder zurück zu Greg.
+	AI_Output(hero, self, "Info_Mod_Bones_NW_Irdorath3_15_00"); //I'm sorry, but it seems we're too many. I can't take you with me.
+	AI_Output(self, hero, "Info_Mod_Bones_NW_Irdorath3_01_01"); //Too bad. I'm going back to Greg's.
 
 	Mod_BonesDabei = 3;
 

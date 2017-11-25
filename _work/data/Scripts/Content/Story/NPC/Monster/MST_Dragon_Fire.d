@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Dragon_Fire(C_Npc)			
 {
-	name							= "Feuerdrache";
+	name							= "Fire Dragon";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_DRAGON_FIRE;
 	level							= 500;
@@ -95,7 +95,7 @@ INSTANCE Dragon_Fire_Island	(Mst_Default_Dragon_Fire)
 
 INSTANCE Wyver	(Mst_Default_Dragon_Fire)
 {
-	name				=	"Wyver";
+	name				=	"wyver";
 
 	level	= 100;
 
@@ -110,7 +110,7 @@ INSTANCE Wyver	(Mst_Default_Dragon_Fire)
 
 INSTANCE Kleindrache	(Mst_Default_Dragon_Fire)
 {
-	name				=	"Kleindrache";
+	name				=	"small dragon";
 
 	flags = 2;
 
@@ -148,7 +148,7 @@ INSTANCE Kleindrache	(Mst_Default_Dragon_Fire)
 
 INSTANCE Summoned_DragonFire (Mst_Default_Dragon_Fire)
 {
-	name							= "Beschworener Feuerdrache";
+	name							= "Summoned Fire Dragon";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_FIREDRAGON;
 	level							= 0;

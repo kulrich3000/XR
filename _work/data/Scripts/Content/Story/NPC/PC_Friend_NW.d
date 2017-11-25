@@ -1,7 +1,7 @@
 instance PC_Friend_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Argez"; 
+	name 		= "arge"; 
 	guild 		= GIL_OUT;
 	id 			= 1605;
 	voice 		= 1;

@@ -18,10 +18,10 @@ FUNC INT Info_Mod_Porthos_Hi_Condition()
 
 FUNC VOID Info_Mod_Porthos_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Porthos_Hi_03_00"); //Vermutlich hat er sich jetzt zur anderen Grabeshöhle zwischen schwarzem Troll und Steinkreis begeben.
-	AI_Output(self, hero, "Info_Mod_Porthos_Hi_03_01"); //Schnell, lasst uns die Teleportzauber der Feuermagier anwenden.
+	AI_Output(self, hero, "Info_Mod_Porthos_Hi_03_00"); //Presumably he has now gone to the other burial cave between black troll and stone circle.
+	AI_Output(self, hero, "Info_Mod_Porthos_Hi_03_01"); //Quick, let's use the teleport spells of fire magicians.
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Die drei Paladine, die versuchen einen untoten Magier zu stellen, sind nun zu einer Grabeshöhle zwischen Steinkreis und schwarzem Troll aufgebrochen.");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "The three paladins, who are trying to place an undead mage, have now left for a burial cave between stone circle and black troll.");
 
 	AI_StopProcessInfos	(self);
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Brauer_Hi (C_INFO)
 	information	= Info_Mod_Brauer_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist das hier deine Brauerei?";
+	description	= "Is this your brewery?";
 };
 
 FUNC INT Info_Mod_Brauer_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Brauer_Hi_Condition()
 
 FUNC VOID Info_Mod_Brauer_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Hi_15_00"); //Ist das hier deine Brauerei?
-	AI_Output(self, hero, "Info_Mod_Brauer_Hi_06_01"); //Mittlerweile schon. Bis vor kurzem hat sie noch meinem Onkel gehört, aber der hat sie mir vermacht und ist dann unglücklich in einem der Wasserauffangbecken ertrunken.
+	AI_Output(hero, self, "Info_Mod_Brauer_Hi_15_00"); //Is this your brewery?
+	AI_Output(self, hero, "Info_Mod_Brauer_Hi_06_01"); //In the meantime, yes. Until recently it belonged to my uncle, but he bequeathed it to me and then drowned unhappily in one of the water catchment basins.
 };
 
 INSTANCE Info_Mod_Brauer_Bierhexen (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Brauer_Bierhexen (C_INFO)
 	information	= Info_Mod_Brauer_Bierhexen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du schaust etwas trübtassig drein.";
+	description	= "You're looking a little gloomy.";
 };
 
 FUNC INT Info_Mod_Brauer_Bierhexen_Condition()
@@ -43,25 +43,25 @@ FUNC INT Info_Mod_Brauer_Bierhexen_Condition()
 
 FUNC VOID Info_Mod_Brauer_Bierhexen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen_15_00"); //Du schaust etwas trübtassig drein.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_01"); //Ich wollte, dafür hätte ich keinen Grund.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_02"); //Aber die Bierhexen machen mir immer einen Strich durch die Rechnung!
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen_15_03"); //(ungläubig) Bierhexen?
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_04"); //Genau! Hast du noch nicht von ihnen gehört?
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_05"); //Sie verzaubern das Bier, sodass nichts daraus werden kann.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_06"); //Und auf mich haben sie es besonders abgesehen.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_07"); //Noch nie ist es mir gelungen, ein gutes Bier zu brauen. Es schmeckt immer bitter und streng.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_08"); //Beim letzten Mal habe ich schon einen Kranz aus Wildkräutern um den Sudbottich gelegt, obwohl ich eigentlich nicht abergläubisch bin.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_09"); //Doch nicht mal das hilft!
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen_15_00"); //You're looking a little gloomy.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_01"); //I wish I had no reason to.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_02"); //But the beer witches always spoil my plans!
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen_15_03"); //Beer witches?
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_04"); //Exactly! Haven't you heard of them?
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_05"); //They enchant the beer so that nothing can come of it.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_06"); //And they're especially after me.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_07"); //Never before have I ever managed to brew a good beer. It always tastes bitter and stern.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_08"); //Last time I put a wreath of wild herbs around the brewpot, although I'm not superstitious.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_09"); //Not even that helps!
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen_15_10"); //(zu sich selbst) An den Hexen wird es wohl kaum liegen ...
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen_15_10"); //(to oneself) I don't think it will be the witches...
 
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen_15_11"); //(laut) Wie lange übst du dich schon im Brauen?
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_12"); //Ich bin erst seit ein paar Wochen hier ... und meine ersten Versuche sind alle im Abfluss verschwunden.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen_15_11"); //How long have you been practicing in your brow?
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen_06_12"); //I've only been here a few weeks.... and my first attempts all disappeared in the drain.
 };
 
 INSTANCE Info_Mod_Brauer_Bierhexen2 (C_INFO)
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Brauer_Bierhexen2 (C_INFO)
 	information	= Info_Mod_Brauer_Bierhexen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du noch eine Ahnung, wie du die Hexen vertreiben kannst?";
+	description	= "Do you have any idea how to drive the witches away?";
 };
 
 FUNC INT Info_Mod_Brauer_Bierhexen2_Condition()
@@ -85,10 +85,10 @@ FUNC INT Info_Mod_Brauer_Bierhexen2_Condition()
 
 FUNC VOID Info_Mod_Brauer_Bierhexen2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen2_15_00"); //Hast du noch eine Ahnung, wie du die Hexen vertreiben kannst?
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen2_06_01"); //Ich habe schon alles probiert.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen2_06_02"); //Aber niemand weiß, was sie mit dem Bier machen, also kann ich mich kaum dagegen wehren.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen2_06_03"); //Ich werde versuchen müssen, sie irgendwie zu besänftigen.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen2_15_00"); //Do you have any idea how to drive the witches away?
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen2_06_01"); //I've tried everything.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen2_06_02"); //But no one knows what they're doing with the beer, so I can hardly resist.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen2_06_03"); //I'm gonna have to try and calm her down somehow.
 };
 
 INSTANCE Info_Mod_Brauer_Bierhexen3 (C_INFO)
@@ -99,7 +99,7 @@ INSTANCE Info_Mod_Brauer_Bierhexen3 (C_INFO)
 	information	= Info_Mod_Brauer_Bierhexen3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du sicher, dass du richtig braust?";
+	description	= "Are you sure you're really brewing?";
 };
 
 FUNC INT Info_Mod_Brauer_Bierhexen3_Condition()
@@ -112,19 +112,19 @@ FUNC INT Info_Mod_Brauer_Bierhexen3_Condition()
 
 FUNC VOID Info_Mod_Brauer_Bierhexen3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen3_15_00"); //Bist du sicher, dass du richtig braust?
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_01"); //Ja. Als ich den Laden hier von meinem Onkel übernommen habe, gab er mir eine genaue Einweisung.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_02"); //Und er schien nicht von den Hexen verfolgt zu werden.
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen3_15_03"); //So, jetzt hörst du als Erstes mal auf mit dem Hexenquatsch.
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen3_15_04"); //Hast du wenigstens mal überprüft, ob die Zutaten in Ordnung sind?
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_05"); //Was soll denn mit denen sein? Der Bauer Erhard wird mich schon nicht veräppeln.
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen3_15_06"); //Dann werden wir jetzt mal nachsehen.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_07"); //Kannst du ja tun. Aber die Hexen werden schon keine Spuren hinterlassen haben.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_08"); //Gerste, Hopfen und Hefe findest du in oben im Lager des Brauraums.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen3_15_00"); //Are you sure you're really brewing?
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_01"); //Yeah. When I took over the store from my uncle, he gave me a detailed briefing.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_02"); //And he didn't seem to be haunted by the witches.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen3_15_03"); //All right, now you're gonna stop with the witch bullshit.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen3_15_04"); //Have you at least checked if the ingredients are OK?
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_05"); //What's wrong with them? The farmer Erhard won't fool me.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen3_15_06"); //Let's have a look now.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_07"); //You can do that. But the witches will have left no trace.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen3_06_08"); //Barley, hops and yeast can be found at the top of the brewing room.
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_BIERHEXEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_BIERHEXEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "Der naive Braumeister glaubt, Bierhexen würden dafür sorgen, dass aus seinem Gebräu nichts wird. Aber entweder liegt der Fehler bei ihm, oder er verwendet schlechte Zutaten.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "The naive brewmaster believes that beer witches will make sure that his brew won't turn into anything else. But either the mistake is his fault, or he uses bad ingredients.");
 
 	Wld_InsertItem	(ItMi_Hefe,	"FP_ITEM_BIERHEXEN_HEFE");
 	Wld_InsertItem	(ItMi_Hopfen,	"FP_ITEM_BIERHEXEN_HOPFEN");
@@ -139,7 +139,7 @@ INSTANCE Info_Mod_Brauer_Bierhexen4 (C_INFO)
 	information	= Info_Mod_Brauer_Bierhexen4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Jemand hat auf deine Gerste gepinkelt.";
+	description	= "Someone peed on your barley.";
 };
 
 FUNC INT Info_Mod_Brauer_Bierhexen4_Condition()
@@ -153,28 +153,28 @@ FUNC INT Info_Mod_Brauer_Bierhexen4_Condition()
 
 FUNC VOID Info_Mod_Brauer_Bierhexen4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_15_00"); //Jemand hat auf deine Gerste gepinkelt.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_01"); //(perplex) Was?!
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_15_02"); //Sie schmeckt eindeutig nach Urin.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_03"); //Das gibt es doch nicht!
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_04"); //Und ich habe mich noch vor ein paar Tagen gewundert, woher der penetrante Geruch kommt!
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_15_05"); //Das hat sich dann ja jetzt geklärt.
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_15_06"); //Deine Bierhexen verunreinigen die Gerste auf eine sehr weltliche Art.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_07"); //Ja, lach nur! Ich kann mir schon vorstellen, wie sich Erhard einen ablacht, wenn er auf das Getreide pisst, bevor er es zu mir bringen lässt!
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_08"); //Dem verfluchten Mistkerl werde ich es zeigen!
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_15_00"); //Someone peed on your barley.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_01"); //(perplex) What?!
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_15_02"); //It definitely tastes like urine.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_03"); //There's no such thing!
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_04"); //And I was wondering a few days ago where the penetrating smell came from!
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_15_05"); //That has now been resolved.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_15_06"); //Your beer witches pollute the barley in a very secular way.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_07"); //Yes, laugh! I can imagine how he laughs at you when he pisses on the grain before he has it brought to me!
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_06_08"); //I'll show that son of a bitch!
 
 	B_GivePlayerXP	(100);
 
 	Info_ClearChoices	(Info_Mod_Brauer_Bierhexen4);
 
-	Info_AddChoice	(Info_Mod_Brauer_Bierhexen4, "Das lasse ich mir nicht entgehen.", Info_Mod_Brauer_Bierhexen4_B);
-	Info_AddChoice	(Info_Mod_Brauer_Bierhexen4, "Lass mich das machen und beruhig dich erst mal.", Info_Mod_Brauer_Bierhexen4_A);
+	Info_AddChoice	(Info_Mod_Brauer_Bierhexen4, "I'm not missing this.", Info_Mod_Brauer_Bierhexen4_B);
+	Info_AddChoice	(Info_Mod_Brauer_Bierhexen4, "Let me do that and calm down first.", Info_Mod_Brauer_Bierhexen4_A);
 };
 
 FUNC VOID Info_Mod_Brauer_Bierhexen4_B()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_B_15_00"); //Das lasse ich mir nicht entgehen.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_B_06_01"); //Auf geht's!
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_B_15_00"); //I'm not missing this.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_B_06_01"); //Come on, let's go!
 
 	Info_ClearChoices	(Info_Mod_Brauer_Bierhexen4);
 
@@ -189,13 +189,13 @@ FUNC VOID Info_Mod_Brauer_Bierhexen4_B()
 
 FUNC VOID Info_Mod_Brauer_Bierhexen4_A()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_A_15_00"); //Lass mich das machen und beruhig dich erst mal.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_A_06_01"); //Na schön, kümmer du dich darum. Aber sag ihm ruhig saftig meine Meinung!
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_A_15_02"); //Bin schon auf dem Weg.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_A_15_00"); //Let me do that and calm down first.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen4_A_06_01"); //All right, you take care of it. But just tell him my opinion!
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen4_A_15_02"); //I'm on my way.
 
 	Mod_Bierhexen = 3;
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "Der Braumeister hat Erhard im Verdacht, für die verunreinigte Gerste verantwortlich zu sein. Ich habe mich als Vermittler angeboten.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "The brewer suspects Erhard of being responsible for the contaminated barley. I offered myself as an intermediary.");
 
 	Info_ClearChoices	(Info_Mod_Brauer_Bierhexen4);
 };
@@ -208,7 +208,7 @@ INSTANCE Info_Mod_Brauer_Bierhexen5 (C_INFO)
 	information	= Info_Mod_Brauer_Bierhexen5_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wo finde ich Erhard?";
+	description	= "Where can I find Erhard?";
 };
 
 FUNC INT Info_Mod_Brauer_Bierhexen5_Condition()
@@ -222,9 +222,9 @@ FUNC INT Info_Mod_Brauer_Bierhexen5_Condition()
 
 FUNC VOID Info_Mod_Brauer_Bierhexen5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen5_15_00"); //Wo finde ich Erhard?
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen5_06_01"); //Wenn du von der Stadt aus Richtung Pass nach Khorinis läufst, biegst du vor der Höhle nach links ab und läufst an der Bergwand entlang.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen5_06_02"); //Dann kannst du seinen Hof nicht verfehlen.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen5_15_00"); //Where can I find Erhard?
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen5_06_01"); //If you walk from the city towards the pass to Khorinis, turn left before the cave and walk along the mountain face.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen5_06_02"); //Then you can't miss his farm.
 };
 
 INSTANCE Info_Mod_Brauer_Bierhexen6 (C_INFO)
@@ -235,7 +235,7 @@ INSTANCE Info_Mod_Brauer_Bierhexen6 (C_INFO)
 	information	= Info_Mod_Brauer_Bierhexen6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Leonhard ist der, den wir suchen.";
+	description	= "Leonhard is the one we're looking for.";
 };
 
 FUNC INT Info_Mod_Brauer_Bierhexen6_Condition()
@@ -248,16 +248,16 @@ FUNC INT Info_Mod_Brauer_Bierhexen6_Condition()
 
 FUNC VOID Info_Mod_Brauer_Bierhexen6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen6_15_00"); //Leonhard ist der, den wir suchen.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen6_06_01"); //Ja? Dieses Schwein! Was fällt ihm ein?!
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen6_15_02"); //Die Frage ist: Was fällt uns ein, es ihm heimzuzahlen?
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen6_06_03"); //Anselm zumindest wird es nicht interessieren, so viel hab ich in meiner kurzen Zeit hier schon mitbekommen.
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen6_15_04"); //Einen Versuch ist es wert. Ohne seine Zustimmung würde es schwierig werden, Leonhard zu bestrafen.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen6_06_05"); //Ich lasse dir den Vortritt. Bemerkenswert, was du schon alles herausgefunden hast.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen6_06_06"); //Du scheinst gut mit Menschen umgehen zu können.
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen6_15_07"); //Möglich.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen6_15_00"); //Leonhard is the one we're looking for.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen6_06_01"); //Yes? That bastard! What's he thinking?!
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen6_15_02"); //The question is, what do we have in mind to get back at him?
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen6_06_03"); //Anselm at least won't care, I've noticed so much in my short time here.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen6_15_04"); //It's worth a try. Without his consent, it would be difficult to punish Leonhard.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen6_06_05"); //I'll give you the first chance. Remarkable what you've already figured out.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen6_06_06"); //You seem to be good with people.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen6_15_07"); //Possible.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "Ich soll Anselm dazu bringen, Leonhard zu bestrafen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "I'm supposed to get Anselm to punish Leonhard.");
 };
 
 INSTANCE Info_Mod_Brauer_Bierhexen7 (C_INFO)
@@ -280,14 +280,14 @@ FUNC INT Info_Mod_Brauer_Bierhexen7_Condition()
 
 FUNC VOID Info_Mod_Brauer_Bierhexen7_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_00"); //Leonhard hat gerade schon die erste Fuhre Gerste hergeschafft.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_01"); //Ich will gar nicht wissen, wie du das geschafft hast.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_02"); //Jedenfalls bin ich dir zu Dank verpflichtet. Von nun an wird mir das Bier hoffentlich gelingen.
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen7_15_03"); //Außer die Bierhexen schlagen wieder zu.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_04"); //(erschrocken) Das verhüte Adanos!
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen7_15_05"); //War nur ein Scherz.
-	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_06"); //(gefasst) Wenn du vorbeikommst, gebe ich dir jeden Tag einen Humpen aus.
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen7_15_07"); //Danke für das Angebot.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_00"); //Leonhard has just brought the first load of barley.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_01"); //I don't even want to know how you did it.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_02"); //Anyway, I'm indebted to you. From now on, hopefully I'll succeed.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen7_15_03"); //Unless the beer witches strike again.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_04"); //The guard Adanos!
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen7_15_05"); //Just kidding.
+	AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen7_06_06"); //If you drop by, I'll buy you a stein every day.
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen7_15_07"); //Thanks for the offer.
 };
 
 INSTANCE Info_Mod_Brauer_Bierhexen8 (C_INFO)
@@ -298,7 +298,7 @@ INSTANCE Info_Mod_Brauer_Bierhexen8 (C_INFO)
 	information	= Info_Mod_Brauer_Bierhexen8_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Hast du ein Bier für mich?";
+	description	= "Do you have a beer for me?";
 };
 
 FUNC INT Info_Mod_Brauer_Bierhexen8_Condition()
@@ -311,11 +311,11 @@ FUNC INT Info_Mod_Brauer_Bierhexen8_Condition()
 
 FUNC VOID Info_Mod_Brauer_Bierhexen8_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen8_15_00"); //Hast du ein Bier für mich?
+	AI_Output(hero, self, "Info_Mod_Brauer_Bierhexen8_15_00"); //Do you have a beer for me?
 
 	if (Mod_Bierhexen_Tag < Wld_GetDay())
 	{
-		AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen8_06_01"); //Das geht aufs Haus!
+		AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen8_06_01"); //This is on the house!
 
 		B_GiveInvItems	(self, hero, ItFo_Beer_Khorata, 1);
 
@@ -323,7 +323,7 @@ FUNC VOID Info_Mod_Brauer_Bierhexen8_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen8_06_02"); //Heute nicht mehr. Komm morgen wieder.
+		AI_Output(self, hero, "Info_Mod_Brauer_Bierhexen8_06_02"); //Not any more today. Come back tomorrow.
 	};
 };
 
@@ -336,7 +336,7 @@ INSTANCE Info_Mod_Brauer_August (C_INFO)
 	permanent	= 0;
 	important	= 0;
 	trade		= 1;
-	description	= "Kennst du Dunkelbier?";
+	description	= "Do you know dark beer?";
 };
 
 FUNC INT Info_Mod_Brauer_August_Condition()
@@ -349,17 +349,17 @@ FUNC INT Info_Mod_Brauer_August_Condition()
 
 FUNC VOID Info_Mod_Brauer_August_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brauer_August_15_00"); //Kennst du Dunkelbier?
-	AI_Output(self, hero, "Info_Mod_Brauer_August_06_01"); //Natürlich. Meine eigene neue Kreation. Extra stark. Ich verkaufe sogar welches.
-	AI_Output(hero, self, "Info_Mod_Brauer_August_15_02"); //Kann ich mal probieren?
-	AI_Output(self, hero, "Info_Mod_Brauer_August_06_03"); //Gewiss. Ist die beste Werbung. Hier.
+	AI_Output(hero, self, "Info_Mod_Brauer_August_15_00"); //Do you know dark beer?
+	AI_Output(self, hero, "Info_Mod_Brauer_August_06_01"); //Of course it is. My own new creation. Extra strong. I'll even sell some.
+	AI_Output(hero, self, "Info_Mod_Brauer_August_15_02"); //Can I have a taste?
+	AI_Output(self, hero, "Info_Mod_Brauer_August_06_03"); //Certainly. It's the best publicity. Here.
 
 	B_GiveInvItems	(self, hero, ItFo_Dunkelbier, 1);
 
 	B_UseItem	(hero, ItFo_Dunkelbier);
 
-	AI_Output(hero, self, "Info_Mod_Brauer_August_15_04"); //Nicht übel. Ich will eins mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Brauer_August_06_05"); //Bitte, bedien dich.
+	AI_Output(hero, self, "Info_Mod_Brauer_August_15_04"); //Not bad. I want to take one with me.
+	AI_Output(self, hero, "Info_Mod_Brauer_August_06_05"); //Please, help yourself.
 
 	CreateInvItems	(self, ItFo_Dunkelbier, 20);
 
@@ -386,10 +386,10 @@ FUNC INT Info_Mod_Brauer_August02_Condition()
 
 FUNC VOID Info_Mod_Brauer_August02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brauer_August02_06_00"); //Ach ja. Hast du etwas Zeit?
-	AI_Output(hero, self, "Info_Mod_Brauer_August02_15_01"); //Eigentlich nicht. Um was geht's?
-	AI_Output(self, hero, "Info_Mod_Brauer_August02_06_02"); //Mir ist der Hopfen ausgegangen. Erhard liefert nicht.
-	AI_Output(hero, self, "Info_Mod_Brauer_August02_15_03"); //Also gut. Ich schau mal nach.
+	AI_Output(self, hero, "Info_Mod_Brauer_August02_06_00"); //Oh, yeah. Do you have some time?
+	AI_Output(hero, self, "Info_Mod_Brauer_August02_15_01"); //Actually, I don't. What's this about?
+	AI_Output(self, hero, "Info_Mod_Brauer_August02_06_02"); //I'm out of hops. Erhard doesn't deliver.
+	AI_Output(hero, self, "Info_Mod_Brauer_August02_15_03"); //All right, then. I'll have a look.
 };
 
 INSTANCE Info_Mod_Brauer_August03 (C_INFO)
@@ -413,13 +413,13 @@ FUNC INT Info_Mod_Brauer_August03_Condition()
 
 FUNC VOID Info_Mod_Brauer_August03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brauer_August03_06_00"); //Da bist du ja. Der Wirt hat schon eine Bestellung. Ich muss den Kessel anheizen.
-	AI_Output(hero, self, "Info_Mod_Brauer_August03_15_01"); //Hier der Hopfen. Du schuldest Erhard 150 Gold.
+	AI_Output(self, hero, "Info_Mod_Brauer_August03_06_00"); //Oh, there you are. The landlord already has an order. I have to heat the boiler.
+	AI_Output(hero, self, "Info_Mod_Brauer_August03_15_01"); //Here's the hops. You owe Erhard 150 gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Hopfensack, 3);
 
-	AI_Output(self, hero, "Info_Mod_Brauer_August03_06_02"); //In Ordnung. Er bekommt eh noch das Geld für den Weizen.
-	AI_Output(hero, self, "Info_Mod_Brauer_August03_15_03"); //Wie du meinst ...
+	AI_Output(self, hero, "Info_Mod_Brauer_August03_06_02"); //All right, all right. He'll get the money for the wheat anyway.
+	AI_Output(hero, self, "Info_Mod_Brauer_August03_15_03"); //Whatever you say...
 
 	B_GivePlayerXP	(100);
 };

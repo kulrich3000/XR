@@ -1,7 +1,7 @@
 instance Mod_590_NONE_Kardif_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kardif"; 
+	name 		= "cardif"; 
 	guild 		= GIL_PAL;
 	id 			= 590;
 	voice 		= 14;

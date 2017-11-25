@@ -43,42 +43,42 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	};
 	
 	Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentSmith,"Um eine Waffe zu schmiede, brauche ich zunächst ein Stück Rohstahl. An einem Schmiedefeuer muss ich den Stahl erhitzen und anschließend an einem Amboss in die gewünschte Form bringen. Für hochwertigere Waffe benötigt man häufig noch Substanzen, welche der Waffe besondere Eigenschaften verleihen.");
+	B_LogEntry (TOPIC_TalentSmith,"To forge a gun, I need a piece of crude steel first. I have to heat the steel at a forge and then take it to the desired shape on an anvil. For higher quality weapons you often need substances that give the weapon special properties.");
 	
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Für ein einfaches Schwert benötige ich keine weiteren Zutaten.");};
+	B_LogEntry (TOPIC_TalentSmith,"For a simple sword I don't need any other ingredients.");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 1 Erz hinzugebe, kann ich mir ein ´ERZ-LANGSCHWERT´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 1 ore, I can forge a?ERZ-LONGWERT? for myself.");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 2 Erz hinzugebe, kann ich mir einen ´ERZ-ZWEIHÄNDER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 2 ore, I can forge a? ORE TWO-HANDED? one.");};
 	if (waffe == WEAPON_1H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 2 Erz hinzugebe, kann ich mir ein ´ERZ-BASTARDSCHWERT´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 2 ore, I can forge a?ERZ BASTARDSWERT? for myself.");};
 	if (waffe == WEAPON_2H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 3 Erz hinzugebe, kann ich mir einen ´SCHWEREN ERZ-ZWEIHÄNDER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 3 ore, I can forge a HEAVY ORE TWO-HANDED ORE?");};
 	if (waffe == WEAPON_1H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 20 Erz hinzugebe, kann ich mir eine ´ERZ-SCHLACHTKLINGE´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 20 ore, I can forge a? ORE SLAUGHTER BLADE?");};
 	if (waffe == WEAPON_1H_Special_03_Dex)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 20 Erz hinzugebe, kann ich mir einen ´ERZ-SCHLACHTSTECHER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 20 ore, I can forge a?ERZ-SLAUGHTER?");};
 	if (waffe == WEAPON_2H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 30 Erz hinzugebe, kann ich mir eine ´SCHWERE ERZ-SCHLACHTKLINGE´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 30 ore, I can forge a HEAVY BATTLE BLADE.");};
 	if (waffe == WEAPON_1H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 60 Erz und 5 Drachenblut hinzugebe, kann ich mir einen ´ERZ-DRACHENTÖTER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 60 ore and 5 dragon's blood, I can forge a?ERZ-DRACHENTÖTER? for myself.");};
 	if (waffe == WEAPON_1H_Special_04_Dex)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04_Dex] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 60 Erz und 5 Drachenblut hinzugebe, kann ich mir einen ´ERZ-DRACHENSTECHER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 60 ore and 5 dragon's blood, I can forge a?ERZ-DRACHENSTECHER? for myself.");};
 	if (waffe == WEAPON_2H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 80 Erz und 7 Drachenblut hinzugebe, kann ich mir einen ´GROßEN ERZ-DRACHENTÖTER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"If I add 80 ore and 7 dragon's blood, I can forge a LARGE DRAGON KILLER.");};
 	
 	//Harad - Addon
 	if (waffe == WEAPON_1H_Harad_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Ich kann jetzt ein edles Schwert schmieden."); };
+	B_LogEntry (TOPIC_TalentSmith,"I can forge a noble sword now."); };
 	if (waffe == WEAPON_1H_Harad_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Ich kann jetzt auch ein edles Langschwert schmieden."); };
+	B_LogEntry (TOPIC_TalentSmith,"I can now also forge a noble longsword."); };
 	if (waffe == WEAPON_1H_Harad_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Ich kann jetzt sogar eine Rubinklinge schmieden."); };
+	B_LogEntry (TOPIC_TalentSmith,"I can even forge a ruby blade now."); };
 	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;
-	B_LogEntry (TOPIC_TalentSmith,"Harad hat mir beigebracht, 'El Bastardo' zu schmieden - eine der besten Einhandwaffen, die es gibt!"); };
+	B_LogEntry (TOPIC_TalentSmith,"Harad taught me to forge' El Bastardo' - one of the best one-handed weapons there is!"); };
 	
 	PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 	

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Raven_Irdorath (C_INFO)
 	information	= Info_Mod_Raven_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss mit dem Schiff im Hafen zu einer Insel aufbrechen.";
+	description	= "I have to take the ship to an island in the harbour.";
 };
 
 FUNC INT Info_Mod_Raven_Irdorath_Condition()
@@ -19,19 +19,19 @@ FUNC INT Info_Mod_Raven_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Raven_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_00"); //Ich muss mit dem Schiff im Hafen zu einer Insel aufbrechen.
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_01"); //Und?
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_02"); //Würdest du in meine Mannschaft kommen?
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_03"); //Was?! Warum sollte ich das bitte machen?!
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_04"); //Auf ein Schiff der Paladine und mir dann die ganze Seereise über die Seele aus dem Leib kotzen?!
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_05"); //Keine 10 Trolle kriegen mich da rauf.
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_06"); //Wie kommst du überhaupt auf den absurden Gedanken, ich könne mitkommen?
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_07"); //Tja, ähh, also Xardas meinte ...
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_08"); //Was?! (halblaut) Verdammt, eine Anweisung von Xardas.
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_09"); //(widerwillig zum Helden) Also gut, wir sehen uns dann am Hafen.
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_10"); //Na, das war ein schneller Stimmungswandel.
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_00"); //I have to take the ship to an island in the harbour.
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_01"); //And?
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_02"); //Would you join my crew?
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_03"); //What?! Why would I do that, please?!
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_04"); //On a ship of the Paladins and then puke the whole voyage out of my soul?!
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_05"); //No 10 trolls can get me up there.
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_06"); //How do you even get the absurd idea that I can come with you?
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_07"); //Well, uh, so Xardas said...
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_08"); //What?! Damn, it's an order from Xardas.
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_09"); //(reluctantly to the hero) All right, I'll see you at the harbour.
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_10"); //Well, that was a quick change of mood.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Trotz gewissem Widerstreben konnte ich Raven für die Reise 'gewinnen'.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Despite some resistance I was able to' win' Raven for the trip.");
 
 	B_GivePlayerXP	(100);
 
@@ -52,7 +52,7 @@ INSTANCE Info_Mod_Raven_Irdorath3 (C_INFO)
 	information	= Info_Mod_Raven_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint, dass wir zu viele sind.";
+	description	= "I'm sorry, but it seems there are too many of us.";
 };
 
 FUNC INT Info_Mod_Raven_Irdorath3_Condition()
@@ -70,9 +70,9 @@ FUNC INT Info_Mod_Raven_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Raven_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath3_15_00"); //Tut mir leid, aber es scheint, dass wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath3_10_01"); //Was?! Na dann nichts wie weg hier ...
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath3_10_02"); //(halblaut) Nicht, dass er es sich noch anders überlegt.
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath3_15_00"); //I'm sorry, but it seems there are too many of us. I can't take you with me.
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath3_10_01"); //What?! Well, let's get the hell out of here...
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath3_10_02"); //Not that he'll change his mind.
 
 	Mod_RavenDabei = 0;
 

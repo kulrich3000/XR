@@ -1,6 +1,6 @@
 INSTANCE GigantDerVorzeit	(Mst_Default_Firegolem)
 {
-	name	=	"Gigant der Vorzeit";
+	name	=	"Giant of prehistoric times";
 	
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GIGANTDERVORZEIT;

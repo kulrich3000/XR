@@ -15,18 +15,18 @@ FUNC INT Info_Mod_Gestath_Hi_Condition()
 
 FUNC VOID Info_Mod_Gestath_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_00"); //Na, wieder ein wackerer Jäger, der seine Trophäen in Gold umwanden möchte?
-	AI_Output(hero, self, "Info_Mod_Gestath_Hi_15_01"); //Wieso glaubst du, dass ich Jäger bin?
-	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_02"); //Wieso? (lacht) Weil die ganzen Bauern auf den Reisfeldern festgefroren sind.
-	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_03"); //Nichts für Ungut, mal im Ernst: du scheinst wohl nicht von hier zu kommen?
-	AI_Output(hero, self, "Info_Mod_Gestath_Hi_15_04"); //Ja, ich bin über die Steinkreise hergekommen.
-	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_05"); //Ahh, das bin ich damals auch. War früher mal auf einer Insel beheimatet.
-	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_06"); //Dann hörte ich von dieser Gegend voller Eis und Schnee, wo es nur so von Viechern wimmeln soll.
-	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_07"); //Ich habe alles an Ausrüstung zusammengesammelt und bin auf das Festland. Hatte nämlich von einem Zauberkundigen gehört der dort beheimatet sein soll.
-	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_08"); //Gerüchte besagten, dass er über die Steinkreise in die entlegensten Winkel der ... (unterbricht) aber was erzähle ich dir das, du weißt ja selbst, wie es funktioniert.
-	AI_Output(hero, self, "Info_Mod_Gestath_Hi_15_09"); //Und dann hast du diesen Laden eröffnet?
-	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_10"); //Ja, nach einiger Zeit. Am Anfang war ich selbst noch viel auf der Jagd.
-	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_11"); //Dann bin ich aber nach und nach auf den Trophäenhandel umgestiegen, da ich weiß, an welchen Orten der Erde man gutes Gold dafür bekommt.
+	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_00"); //Well, another brave hunter who wants to turn his trophies into gold?
+	AI_Output(hero, self, "Info_Mod_Gestath_Hi_15_01"); //What makes you think I'm a hunter?
+	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_02"); //Why? (laughs) Because all the farmers in the rice fields are frozen.
+	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_03"); //No offense, seriously: you don't seem to come from here, do you?
+	AI_Output(hero, self, "Info_Mod_Gestath_Hi_15_04"); //Yeah, I came over the stone circles.
+	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_05"); //Ahh, so am I back then. Used to live on an island.
+	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_06"); //Then I heard about this area full of ice and snow, where it should be teeming with animals.
+	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_07"); //I've collected all the equipment I need, and I'm off to the mainland. He had heard of a magician who is said to be at home there.
+	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_08"); //Rumor has it that he was crossing the stone circles into the remotest corners of... (interrupts) but what am I going to tell you, you know how it works.
+	AI_Output(hero, self, "Info_Mod_Gestath_Hi_15_09"); //And then you opened this place?
+	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_10"); //Yeah, after a while. At the beginning I was still hunting a lot myself.
+	AI_Output(self, hero, "Info_Mod_Gestath_Hi_09_11"); //But then I gradually switched to the trophy trade because I know where on earth you can get good gold for it.
 };
 
 INSTANCE Info_Mod_Gestath_Snapperbogen (C_INFO)
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Gestath_Snapperbogen (C_INFO)
 	information	= Info_Mod_Gestath_Snapperbogen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du, woher ich eine Drachensnappersehne bekomme?";
+	description	= "You know where I can get a dragon snapper's tendon?";
 };
 
 FUNC INT Info_Mod_Gestath_Snapperbogen_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mod_Gestath_Snapperbogen_Condition()
 
 FUNC VOID Info_Mod_Gestath_Snapperbogen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gestath_Snapperbogen_15_00"); //Weißt du, woher ich eine Drachensnappersehne bekomme?
-	AI_Output(self, hero, "Info_Mod_Gestath_Snapperbogen_09_01"); //Lass mich nachdenken ... ja, der Jäger Wütar hat sich auf Tiersehnen spezialisiert. Bei ihm wirst du bestimmt welche bekommen.
-	AI_Output(self, hero, "Info_Mod_Gestath_Snapperbogen_09_02"); //Falls er nicht noch auf der Jagd ist, wirst du ihn in seiner Hütte im Dorf oder in der Kneipe finden.
+	AI_Output(hero, self, "Info_Mod_Gestath_Snapperbogen_15_00"); //You know where I can get a dragon snapper's tendon?
+	AI_Output(self, hero, "Info_Mod_Gestath_Snapperbogen_09_01"); //Let me think about it.... Yes, the hunter Wütar has specialized in animal tendons. I'm sure you'll get some from him.
+	AI_Output(self, hero, "Info_Mod_Gestath_Snapperbogen_09_02"); //If he is not still hunting, you will find him in his hut in the village or in the pub.
 };
 
 INSTANCE Info_Mod_Gestath_TrophaenHolen (C_INFO)
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Gestath_TrophaenHolen (C_INFO)
 	information	= Info_Mod_Gestath_TrophaenHolen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Brauchst du bestimmte Trophäen?";
+	description	= "Do you need certain trophies?";
 };
 
 FUNC INT Info_Mod_Gestath_TrophaenHolen_Condition()
@@ -77,11 +77,11 @@ FUNC INT Info_Mod_Gestath_TrophaenHolen_Condition()
 
 FUNC VOID Info_Mod_Gestath_TrophaenHolen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gestath_TrophaenHolen_15_00"); //Brauchst du bestimmte Trophäen?
+	AI_Output(hero, self, "Info_Mod_Gestath_TrophaenHolen_15_00"); //Do you need certain trophies?
 
 	if (Wld_GetDay() > Mod_EIS_Gestath_Day)
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_TrophaenHolen_09_01"); //Ja, ich habe auf dieser Liste festgehalten, was ich mal wieder brauchen könnte.
+		AI_Output(self, hero, "Info_Mod_Gestath_TrophaenHolen_09_01"); //Yeah, I put on that list what I might need again.
 
 		B_GiveInvItems	(self, hero, ItWr_GestathTrophyList, 1);
 
@@ -96,7 +96,7 @@ FUNC VOID Info_Mod_Gestath_TrophaenHolen_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_TrophaenHolen_09_02"); //Nein, im Moment sind schon andere Jäger für mich unterwegs.
+		AI_Output(self, hero, "Info_Mod_Gestath_TrophaenHolen_09_02"); //No, there are other hunters on the way for me right now.
 	};
 };
 
@@ -108,7 +108,7 @@ INSTANCE Info_Mod_Gestath_TrophaenGeben (C_INFO)
 	information	= Info_Mod_Gestath_TrophaenGeben_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deine Trophäen.";
+	description	= "I got your trophies.";
 };
 
 FUNC INT Info_Mod_Gestath_TrophaenGeben_Condition()
@@ -127,9 +127,9 @@ FUNC INT Info_Mod_Gestath_TrophaenGeben_Condition()
 
 FUNC VOID Info_Mod_Gestath_TrophaenGeben_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gestath_TrophaenGeben_15_00"); //Ich habe deine Trophäen.
+	AI_Output(hero, self, "Info_Mod_Gestath_TrophaenGeben_15_00"); //I got your trophies.
 
-	B_ShowGivenThings	("Trophäen gegeben");
+	B_ShowGivenThings	("Trophy given");
 
 	Npc_RemoveInvItems	(hero, ItAt_DrgSnapperHorn, Mod_EIS_Gestath_DragonsnapperHorn);
 	Npc_RemoveInvItems	(hero, ItAt_LurkerClaw, Mod_EIS_Gestath_LurkerClaw);
@@ -139,7 +139,7 @@ FUNC VOID Info_Mod_Gestath_TrophaenGeben_Info()
 	Npc_RemoveInvItems	(hero, ItAt_SharkTeeth, Mod_EIS_Gestath_SharkTeeth);
 	Npc_RemoveInvItems	(hero, ItWr_GestathTrophyList, 1);
 
-	AI_Output(self, hero, "Info_Mod_Gestath_TrophaenGeben_09_01"); //Gut, danke. Hier ist dein Gold.
+	AI_Output(self, hero, "Info_Mod_Gestath_TrophaenGeben_09_01"); //All right, thank you. Here's your gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, (Mod_EIS_Gestath_DragonsnapperHorn * Value_DrgSnapperHorn + Mod_EIS_Gestath_LurkerClaw * Value_LurkerClaw + Mod_EIS_Gestath_Keilerhauer * Value_Keilerhauer + Mod_EIS_Gestath_Flammenzunge * Value_WaranFiretongue + Mod_EIS_Gestath_ShadowHorn * Value_ShadowHorn + Mod_EIS_Gestath_SharkTeeth * Value_SharkTeeth) / 2);
 
@@ -147,7 +147,7 @@ FUNC VOID Info_Mod_Gestath_TrophaenGeben_Info()
 
 	if (Mod_EIS_Gestath_Day == 0) {
 		Log_CreateTopic(TOPIC_MOD_HAENDLER_EISGEBIET, LOG_NOTE);
-		B_LogEntry(TOPIC_MOD_HAENDLER_EISGEBIET, "Gestath handelt jetzt mit mir und verkauft Jagdtrophäen.");
+		B_LogEntry(TOPIC_MOD_HAENDLER_EISGEBIET, "Gestath is now trading with me and selling hunting trophies.");
 	};
 	
 	Mod_EIS_Gestath_Day = Wld_GetDay() + 5;
@@ -161,7 +161,7 @@ INSTANCE Info_Mod_Gestath_Lernen (C_INFO)
 	information	= Info_Mod_Gestath_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was kannst du mir beibringen?";
+	description	= "What can you teach me?";
 };
 
 FUNC INT Info_Mod_Gestath_Lernen_Condition()
@@ -174,7 +174,7 @@ FUNC INT Info_Mod_Gestath_Lernen_Condition()
 
 FUNC VOID Info_Mod_Gestath_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gestath_Lernen_15_00"); //Was kannst du mir beibringen?
+	AI_Output(hero, self, "Info_Mod_Gestath_Lernen_15_00"); //What can you teach me?
 
 	if ((PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DrgSnapperHorn] == FALSE)
@@ -182,7 +182,7 @@ FUNC VOID Info_Mod_Gestath_Lernen_Info()
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] == FALSE)
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE))
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_09_01"); //Kommt darauf an, was du wissen willst.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_09_01"); //Depends on what you want to know.
 
 		Info_ClearChoices	(Info_Mod_Gestath_Lernen);
 
@@ -190,28 +190,28 @@ FUNC VOID Info_Mod_Gestath_Lernen_Info()
 
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("Zähne reissen", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Gestath_Lernen_Teeth);
+			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("Teeth torn", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Gestath_Lernen_Teeth);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("Tiere häuten", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)), Info_Mod_Gestath_Lernen_ReptileSkin);
+			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("skin animals", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)), Info_Mod_Gestath_Lernen_ReptileSkin);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("Klauen hacken", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Gestath_Lernen_Claws);
+			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("Chipping claws", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Gestath_Lernen_Claws);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_FireTongue] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("Feuerzunge", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)), Info_Mod_Gestath_Lernen_FireTongue);
+			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("tongue of fire", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)), Info_Mod_Gestath_Lernen_FireTongue);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DrgSnapperHorn] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("Drachensnapperhorn", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)), Info_Mod_Gestath_Lernen_DrgSnapperHorn);
+			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("dragon snapperhorn", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)), Info_Mod_Gestath_Lernen_DrgSnapperHorn);
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_09_02"); //Ich kann dir im Moment nicht mehr beibringen, als du ohnehin schon weißt. Tut mir Leid.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_09_02"); //I can't teach you any more than you already know. Sorry about that.
 	};
 };
 
@@ -224,9 +224,9 @@ FUNC void Info_Mod_Gestath_Lernen_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Claws))
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Claws_09_00"); //Tiere geben ihre Klauen nicht sehr gerne her. Du musst schon sehr genau den Punkt treffen, an dem du mit deinem Messer ansetzt.
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Claws_09_01"); //Die Haltung deiner Hand sollte etwas verschränkt sein. Mit einem kräftigen Ruck trennst du dann die Klaue ab.
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Claws_09_02"); //Klauen sind immer ein begehrtes Zahlungsmittel bei einem Händler.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Claws_09_00"); //Animals don't like to give their claws away. You have to hit the exact spot where you're going with your knife.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Claws_09_01"); //The posture of your hand should be slightly entangled. With a strong jolt you cut off the claw.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Claws_09_02"); //Claws are always a sought-after means of payment for a trader.
 	};
 
 	Info_ClearChoices	(Info_Mod_Gestath_Lernen);
@@ -239,7 +239,7 @@ FUNC void Info_Mod_Gestath_Lernen_ReptileSkin()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_ReptileSkin))
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_ReptileSkin_09_00"); //Und immer nur am Bauch aufschneiden, sonst verminderst du die Qualität.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_ReptileSkin_09_00"); //And always cut open only on the belly, otherwise you will reduce the quality.
 	};
 
 	Info_ClearChoices	(Info_Mod_Gestath_Lernen);
@@ -251,8 +251,8 @@ FUNC void Info_Mod_Gestath_Lernen_Teeth()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Teeth))
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Teeth_09_00"); //Das einfachste, was du Tieren entnehmen kannst, sind seine Zähne. Du fährst mit deinem Messer in seinem Maul um das Gebiss.
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Teeth_09_01"); //Dann trennst es geschickt mit einem Ruck vom Schädel des Tieres.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Teeth_09_00"); //The easiest thing you can extract from animals is their teeth. You're driving your knife around the dentures in his mouth.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Teeth_09_01"); //Then you skillfully separate it from the animal's skull with a jerk.
 	};
 
 	Info_ClearChoices	(Info_Mod_Gestath_Lernen);
@@ -264,8 +264,8 @@ FUNC void Info_Mod_Gestath_Lernen_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Fur))
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Fur_09_00"); //Felle ziehst du am besten ab, indem du einen tiefen Schnitt an den Hinterläufen des Tieres vornimmst.
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Fur_09_01"); //Dann kannst du das Fell von vorne nach hinten eigentlich immer sehr leicht abziehen.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Fur_09_00"); //The best way to remove fur is to make a deep cut on the animal's hind legs.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_Fur_09_01"); //Then you can always pull the fur from the front to the back very easily.
 	};
 
 	Info_ClearChoices	(Info_Mod_Gestath_Lernen);
@@ -277,7 +277,7 @@ FUNC void Info_Mod_Gestath_Lernen_FireTongue()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_FireTongue))
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_FireTongue_09_00"); //Die Zunge von einem Feuerwaran schlägst du mit einem Messerhieb aus dem Maul, während du sie mit der anderen Hand festhältst.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_FireTongue_09_00"); //You strike the tongue of a fire monitor with a knife cut out of your mouth while holding it with the other hand.
 	};
 
 	Info_ClearChoices	(Info_Mod_Gestath_Lernen);
@@ -289,7 +289,7 @@ FUNC void Info_Mod_Gestath_Lernen_DrgSnapperHorn()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_DrgSnapperHorn))
 	{
-		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_DrgSnapperHorn_09_00"); //Am Stirnansatz des Drachensnappers ist die beste Stelle, ihm das Horn mit einem stabilen Messer aus dem Schädel zu trennen.
+		AI_Output(self, hero, "Info_Mod_Gestath_Lernen_DrgSnapperHorn_09_00"); //At the base of the dragon snapper's forehead is the best place to separate the horn from the skull with a stable knife.
 	};
 
 	Info_ClearChoices	(Info_Mod_Gestath_Lernen);

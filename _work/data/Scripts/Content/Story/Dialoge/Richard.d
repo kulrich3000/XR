@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Richard_Hi_Condition()
 
 FUNC VOID Info_Mod_Richard_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Richard_Hi_12_00"); //Wer zum Teufel bist du und warum tötest du meine ganzen Freunde.
-	AI_Output(hero, self, "Info_Mod_Richard_Hi_15_01"); //Dein Freund Cirio hat den Fehler gemacht, mich als Futter zu sehen, und nun ist ER Futter für die Würmer, lustig nicht wahr?
-	AI_Output(self, hero, "Info_Mod_Richard_Hi_12_02"); //Cirio ist kein großer Verlust, er hat seine Aufgabe erfüllt, und nun, wo du meine ganzen Freunde getötet hast, bleibt mehr von der Frau für mich.
-	AI_Output(hero, self, "Info_Mod_Richard_Hi_15_03"); //Ich wollte dir eigentlich nur den Kopf abschlagen und ihn an die Wand hängen, also lass uns anfangen.
+	AI_Output(self, hero, "Info_Mod_Richard_Hi_12_00"); //Who the hell are you and why are you killing all my friends?
+	AI_Output(hero, self, "Info_Mod_Richard_Hi_15_01"); //Your friend Cirio made the mistake of seeing me as food, and now HE is food for the worms, isn't he funny?
+	AI_Output(self, hero, "Info_Mod_Richard_Hi_12_02"); //Cirio is not a great loss, he has done his job, and now that you've killed all my friends, more of the woman remains for me.
+	AI_Output(hero, self, "Info_Mod_Richard_Hi_15_03"); //I just wanted to cut your head off and hang it on the wall, so let's start.
 
 	AI_StopProcessInfos	(self);
 

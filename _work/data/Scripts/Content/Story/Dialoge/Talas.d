@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Talas_Hi_Condition()
 
 FUNC VOID Info_Mod_Talas_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_Hi_27_00"); //Du lebst noch? Wenn du wieder einen Führer brauchst, du weißt ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Talas_Hi_27_00"); //You're still alive? If you need a guide again, you know where to find me.
 };
 
 INSTANCE Info_Mod_Talas_GurusZuTempel (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Talas_GurusZuTempel (C_INFO)
 	information	= Info_Mod_Talas_GurusZuTempel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich soll die Gurus zum Tempelvorplatz schicken.";
+	description	= "I'm to send the gurus to the temple forecourt.";
 };
 
 FUNC INT Info_Mod_Talas_GurusZuTempel_Condition()
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_Talas_GurusZuTempel_Condition()
 
 FUNC VOID Info_Mod_Talas_GurusZuTempel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Talas_GurusZuTempel_15_00"); //Ich soll die Gurus zum Tempelvorplatz schicken.
-	AI_Output(self, hero, "Info_Mod_Talas_GurusZuTempel_27_01"); //Wen suchst du?
+	AI_Output(hero, self, "Info_Mod_Talas_GurusZuTempel_15_00"); //I'm to send the gurus to the temple forecourt.
+	AI_Output(self, hero, "Info_Mod_Talas_GurusZuTempel_27_01"); //Who are you looking for?
 
 	Info_ClearChoices	(Info_Mod_Talas_GurusZuTempel);
 
@@ -154,7 +154,7 @@ FUNC VOID Info_Mod_Talas_GurusZuTempel_Caine()
 
 FUNC VOID Info_Mod_Talas_GoBack()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_GoBack_27_00"); //Ich geh wieder zurück. Wenn du mich nochmal brauchst, du weißt ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Talas_GoBack_27_00"); //I'm going back. If you need me again, you know where to find me.
 };
 
 INSTANCE Info_Mod_Talas_AtBaalTyon (C_INFO)
@@ -178,7 +178,7 @@ FUNC INT Info_Mod_Talas_AtBaalTyon_Condition()
 
 FUNC VOID Info_Mod_Talas_AtBaalTyon_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_AtBaalTyon_27_00"); //Da ist Baal Tyon.
+	AI_Output(self, hero, "Info_Mod_Talas_AtBaalTyon_27_00"); //There's Baal Tyon.
 
 	Info_Mod_Talas_GoBack();
 
@@ -210,7 +210,7 @@ FUNC INT Info_Mod_Talas_AtBaalTondral_Condition()
 
 FUNC VOID Info_Mod_Talas_AtBaalTondral_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_AtBaalTondral_27_00"); //Da ist Baal Tondral.
+	AI_Output(self, hero, "Info_Mod_Talas_AtBaalTondral_27_00"); //There's Baal Tondral.
 
 	Info_Mod_Talas_GoBack();
 
@@ -242,7 +242,7 @@ FUNC INT Info_Mod_Talas_AtBaalOrun_Condition()
 
 FUNC VOID Info_Mod_Talas_AtBaalOrun_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_AtBaalOrun_27_00"); //Da ist Baal Orun.
+	AI_Output(self, hero, "Info_Mod_Talas_AtBaalOrun_27_00"); //There's Baal Orun.
 
 	Info_Mod_Talas_GoBack();
 
@@ -274,7 +274,7 @@ FUNC INT Info_Mod_Talas_AtBaalJoru_Condition()
 
 FUNC VOID Info_Mod_Talas_AtBaalJoru_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_AtBaalJoru_27_00"); //Da ist Baal Joru.
+	AI_Output(self, hero, "Info_Mod_Talas_AtBaalJoru_27_00"); //There's Baal Joru.
 
 	Info_Mod_Talas_GoBack();
 
@@ -306,7 +306,7 @@ FUNC INT Info_Mod_Talas_AtBaalCaine_Condition()
 
 FUNC VOID Info_Mod_Talas_AtBaalCaine_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_AtBaalCaine_27_00"); //Da ist Baal Caine.
+	AI_Output(self, hero, "Info_Mod_Talas_AtBaalCaine_27_00"); //There's Baal Caine.
 
 	Info_Mod_Talas_GoBack();
 
@@ -338,32 +338,32 @@ FUNC INT Info_Mod_Talas_Ken_Condition()
 
 FUNC VOID Info_Mod_Talas_Ken_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_Ken_27_00"); //Schnell, du musst sofort mitkommen.
+	AI_Output(self, hero, "Info_Mod_Talas_Ken_27_00"); //Hurry, you have to come with me right now.
 
 	Info_ClearChoices	(Info_Mod_Talas_Ken);
 
-	Info_AddChoice	(Info_Mod_Talas_Ken, "Ich habe keine Zeit mich mit so etwas aufzuhalten.", Info_Mod_Talas_Ken_B);
-	Info_AddChoice	(Info_Mod_Talas_Ken, "Atme erst mal ruhig durch. Was ist passiert?", Info_Mod_Talas_Ken_A);
+	Info_AddChoice	(Info_Mod_Talas_Ken, "I don't have time to deal with this.", Info_Mod_Talas_Ken_B);
+	Info_AddChoice	(Info_Mod_Talas_Ken, "Just take a breath for now. What's happening?", Info_Mod_Talas_Ken_A);
 };
 
 FUNC VOID Info_Mod_Talas_Ken_B()
 {
-	AI_Output(hero, self, "Info_Mod_Talas_Ken_B_15_00"); //Ich habe keine Zeit mich mit so etwas aufzuhalten.
-	AI_Output(self, hero, "Info_Mod_Talas_Ken_B_27_01"); //Aber es eilt! Du bist unsere einzige Chance!
+	AI_Output(hero, self, "Info_Mod_Talas_Ken_B_15_00"); //I don't have time to deal with this.
+	AI_Output(self, hero, "Info_Mod_Talas_Ken_B_27_01"); //But it's urgent! You're our only chance!
 
 	Info_ClearChoices	(Info_Mod_Talas_Ken);
 
-	Info_AddChoice	(Info_Mod_Talas_Ken, "Atme erst mal ruhig durch. Was ist passiert?", Info_Mod_Talas_Ken_A);
+	Info_AddChoice	(Info_Mod_Talas_Ken, "Just take a breath for now. What's happening?", Info_Mod_Talas_Ken_A);
 };
 
 FUNC VOID Info_Mod_Talas_Ken_A()
 {
-	AI_Output(hero, self, "Info_Mod_Talas_Ken_A_15_00"); //Atme erst mal ruhig durch. Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Talas_Ken_A_27_01"); //Baal Tondral hat eine unglaubliche Entdeckung gemacht. Eine Spruchrolle hier im Sumpf!
-	AI_Output(self, hero, "Info_Mod_Talas_Ken_A_27_02"); //Er wollte dich rufen lassen, weil er deine Hilfe braucht. Du hast uns schließlich schon einmal geholfen.
-	AI_Output(self, hero, "Info_Mod_Talas_Ken_A_27_03"); //Und ich sollte mal wieder den Boten spielen.
-	AI_Output(hero, self, "Info_Mod_Talas_Ken_A_15_04"); //Du bist aber nicht sehr weit gekommen.
-	AI_Output(self, hero, "Info_Mod_Talas_Ken_A_27_05"); //Denkst du, ich mach mich allein auf, dich zu suchen? Folge mir.
+	AI_Output(hero, self, "Info_Mod_Talas_Ken_A_15_00"); //Just take a breath for now. What's happening?
+	AI_Output(self, hero, "Info_Mod_Talas_Ken_A_27_01"); //Baal Tondral has made an incredible discovery. A spell here in the swamp!
+	AI_Output(self, hero, "Info_Mod_Talas_Ken_A_27_02"); //He wanted to call you because he needs your help. After all, you've helped us before.
+	AI_Output(self, hero, "Info_Mod_Talas_Ken_A_27_03"); //And I should be the messenger again.
+	AI_Output(hero, self, "Info_Mod_Talas_Ken_A_15_04"); //You didn't get very far.
+	AI_Output(self, hero, "Info_Mod_Talas_Ken_A_27_05"); //You think I'd go out alone to look for you? Follow me. Follow me.
 
 	Info_ClearChoices	(Info_Mod_Talas_Ken);
 
@@ -393,8 +393,8 @@ FUNC INT Info_Mod_Talas_AtTondral_Condition()
 
 FUNC VOID Info_Mod_Talas_AtTondral_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_AtTondral_27_00"); //Ich werde wieder zurück zum Tempelvorplatz gehen. Ich hoffe, ihr findet etwas heraus.
-	AI_Output(self, hero, "Info_Mod_Talas_AtTondral_27_01"); //Und jagt uns bloß nicht irgendwelche Monster auf den Hals.
+	AI_Output(self, hero, "Info_Mod_Talas_AtTondral_27_00"); //I will go back to the temple forecourt. I hope you find out something.
+	AI_Output(self, hero, "Info_Mod_Talas_AtTondral_27_01"); //And don't put any monsters on our backs.
 
 	AI_StopProcessInfos	(self);
 
@@ -421,21 +421,21 @@ FUNC INT Info_Mod_Talas_Thys_Condition()
 
 FUNC VOID Info_Mod_Talas_Thys_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_Thys_27_00"); //Da bist du ja wieder. Baal Tondral hat mir aufgetragen auf deine Rückkehr zu warten und dich zu ihm zu schicken, wenn du wieder da bist.
-	AI_Output(self, hero, "Info_Mod_Talas_Thys_27_01"); //Du kennst ja den Weg.
+	AI_Output(self, hero, "Info_Mod_Talas_Thys_27_00"); //There you are again. Baal Tondral told me to wait for your return and send you to him when you get back.
+	AI_Output(self, hero, "Info_Mod_Talas_Thys_27_01"); //You know the way.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ich soll mich sofort zu Baal Tondral begeben.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "I'm to go to Baal Tondral immediately.");
 
 	Info_ClearChoices	(Info_Mod_Talas_Thys);
 
-	Info_AddChoice	(Info_Mod_Talas_Thys, "Nein, zeig mir den Weg.", Info_Mod_Talas_Thys_B);
-	Info_AddChoice	(Info_Mod_Talas_Thys, "Ja. Ich gehe sofort zu ihm.", Info_Mod_Talas_Thys_A);
+	Info_AddChoice	(Info_Mod_Talas_Thys, "No, show me the way.", Info_Mod_Talas_Thys_B);
+	Info_AddChoice	(Info_Mod_Talas_Thys, "Yeah. I'll go straight to him.", Info_Mod_Talas_Thys_A);
 };
 
 FUNC VOID Info_Mod_Talas_Thys_B()
 {
-	AI_Output(hero, self, "Info_Mod_Talas_Thys_B_15_00"); //Nein, zeig mir den Weg.
-	AI_Output(self, hero, "Info_Mod_Talas_Thys_B_27_01"); //Okay. Folge mir.
+	AI_Output(hero, self, "Info_Mod_Talas_Thys_B_15_00"); //No, show me the way.
+	AI_Output(self, hero, "Info_Mod_Talas_Thys_B_27_01"); //Okay. Follow me. Follow me.
 
 	Info_ClearChoices	(Info_Mod_Talas_Thys);
 
@@ -446,7 +446,7 @@ FUNC VOID Info_Mod_Talas_Thys_B()
 
 FUNC VOID Info_Mod_Talas_Thys_A()
 {
-	AI_Output(hero, self, "Info_Mod_Talas_Thys_A_15_00"); //Ja. Ich gehe sofort zu ihm.
+	AI_Output(hero, self, "Info_Mod_Talas_Thys_A_15_00"); //Yeah. I'll go straight to him.
 	AI_Output(self, hero, "Info_Mod_Talas_Thys_A_27_01"); //Okay.
 
 	Info_ClearChoices	(Info_Mod_Talas_Thys);
@@ -462,7 +462,7 @@ INSTANCE Info_Mod_Talas_Cyrco (C_INFO)
 	information	= Info_Mod_Talas_Cyrco_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Rasch. Eine Robe. Und dann muss ich mit Baal Orun reden.";
+	description	= "Quickly. A robe. And then I have to talk to Baal Orun.";
 };
 
 FUNC INT Info_Mod_Talas_Cyrco_Condition()
@@ -478,10 +478,10 @@ FUNC INT Info_Mod_Talas_Cyrco_Condition()
 
 FUNC VOID Info_Mod_Talas_Cyrco_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Talas_Cyrco_15_00"); //Rasch. Eine Robe. Und dann muss ich mit Baal Orun reden.
-	AI_Output(self, hero, "Info_Mod_Talas_Cyrco_27_01"); //Sofort. Stängel gefällig? Nur fünf Äpfel dafür.
-	AI_Output(hero, self, "Info_Mod_Talas_Cyrco_15_02"); //Ich brauche keine Stängel und habe keine Äpfel. Nun mach hin, Bursche!
-	AI_Output(self, hero, "Info_Mod_Talas_Cyrco_27_03"); //Sofort.
+	AI_Output(hero, self, "Info_Mod_Talas_Cyrco_15_00"); //Quickly. A robe. And then I have to talk to Baal Orun.
+	AI_Output(self, hero, "Info_Mod_Talas_Cyrco_27_01"); //Right away. How about some stems? Only five apples for it.
+	AI_Output(hero, self, "Info_Mod_Talas_Cyrco_15_02"); //I don't need any stalks, and I don't have any apples. Hurry up, lad!
+	AI_Output(self, hero, "Info_Mod_Talas_Cyrco_27_03"); //Right away.
 
 	CreateInvItems	(hero, Nov_Armor_L, 1);
 
@@ -513,7 +513,7 @@ FUNC INT Info_Mod_Talas_Cyrco2_Condition()
 
 FUNC VOID Info_Mod_Talas_Cyrco2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talas_Cyrco2_27_00"); //Da ist Baal Orun.
+	AI_Output(self, hero, "Info_Mod_Talas_Cyrco2_27_00"); //There's Baal Orun.
 
 	AI_StopProcessInfos	(self);
 
@@ -528,7 +528,7 @@ INSTANCE Info_Mod_Talas_Woher (C_INFO)
 	information	= Info_Mod_Talas_Woher_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wieso haben sie dich in die Kolonie geworfen?";
+	description	= "Why did they throw you in the colony?";
 };
 
 FUNC INT Info_Mod_Talas_Woher_Condition()
@@ -541,12 +541,12 @@ FUNC INT Info_Mod_Talas_Woher_Condition()
 
 FUNC VOID Info_Mod_Talas_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Talas_Woher_15_00"); //Wieso haben sie dich in die Kolonie geworfen?
-	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_01"); //Früher war ich Wassernovize und hab für die Wassermagier wichtige Botengänge ausgeführt.
-	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_02"); //Mit der Zeit hab ich allerdings die Lust daran verloren und mich vor der Stadt in einer Höhle versteckt und mir gelegentlich was zu Essen geklaut.
-	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_03"); //Natürlich haben sie mich irgendwann erwischt und mich sofort in die Kolonie geworfen.
-	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_04"); //Ich bin zuerst ins Alte Lager, aber da hatten die Gardisten etwas gegen mich.
-	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_05"); //Im Sumpflager haben sie mich aufgenommen, und hier erledige ich wieder Botengänge, wie du ja weißt.
+	AI_Output(hero, self, "Info_Mod_Talas_Woher_15_00"); //Why did they throw you in the colony?
+	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_01"); //I used to be a water novice and ran important errands for the water magicians.
+	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_02"); //Over time, however, I lost interest in it and hid in a cave in front of the city and occasionally stole some food from me.
+	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_03"); //Of course, they caught me one day and threw me into the colony.
+	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_04"); //I went to Old Camp first, but the guards had something against me.
+	AI_Output(self, hero, "Info_Mod_Talas_Woher_27_05"); //In the swamp camp they took me in, and here I'm running errands again, as you know.
 };
 
 INSTANCE Info_Mod_Talas_Pickpocket (C_INFO)

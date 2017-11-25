@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Akil_Hi_Condition()
 
 FUNC VOID Info_Mod_Akil_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Akil_Hi_13_00"); //Wenn dir dein Leben lieb ist, verlasse dieses Haus. Nur Krankheit und Tod kannst du hier finden.
+	AI_Output(self, hero, "Info_Mod_Akil_Hi_13_00"); //If your life is dear to you, leave this house. Only sickness and death can be found here.
 };
 
 INSTANCE Info_Mod_Akil_Blablabla (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Akil_Blablabla (C_INFO)
 	information	= Info_Mod_Akil_Blablabla_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit ...";
+	description	= "What about...?";
 };
 
 FUNC INT Info_Mod_Akil_Blablabla_Condition()
@@ -41,8 +41,8 @@ FUNC INT Info_Mod_Akil_Blablabla_Condition()
 
 FUNC VOID Info_Mod_Akil_Blablabla_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Akil_Blablabla_15_00"); //Was ist mit ...
-	AI_Output(Self, hero, "Info_Mod_Akil_Blablabla_13_01"); //Unglücksseliger! Geh, solange du noch kannst! Wenn du reden willst, geh zu Telbor.
+	AI_Output(hero, self, "Info_Mod_Akil_Blablabla_15_00"); //What about...?
+	AI_Output(Self, hero, "Info_Mod_Akil_Blablabla_13_01"); //Unlucky one! Go while you still can! If you want to talk, go to Telbor.
 	
 	AI_StopProcessInfos	(self);
 };
@@ -55,7 +55,7 @@ INSTANCE Info_Mod_Akil_Heilung (C_INFO)
 	information	= Info_Mod_Akil_Heilung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, das sollte euer Leiden lindern.";
+	description	= "Here, this should ease your suffering.";
 };
 
 FUNC INT Info_Mod_Akil_Heilung_Condition()
@@ -70,13 +70,13 @@ FUNC INT Info_Mod_Akil_Heilung_Condition()
 
 FUNC VOID Info_Mod_Akil_Heilung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Akil_Heilung_15_00"); //Hier, das sollte euer Leiden lindern.
+	AI_Output(hero, self, "Info_Mod_Akil_Heilung_15_00"); //Here, this should ease your suffering.
 
 	B_GiveInvItems	(hero, self, ItPo_HealBesessenheit, 3);
 
 	B_UseItem	(self, ItPo_HealBesessenheit);
 
-	AI_Output(Self, hero, "Info_Mod_Akil_Heilung_13_01"); //Hab vielen Dank, ich weiß nicht, wie ich es gut machen soll.
+	AI_Output(Self, hero, "Info_Mod_Akil_Heilung_13_01"); //Thanks a lot, I don't know how to make it good.
 	
 	AI_StopProcessInfos	(self);
 
@@ -84,7 +84,7 @@ FUNC VOID Info_Mod_Akil_Heilung_Info()
 
 	B_StartOtherRoutine	(Mod_906_BAU_Randolph_NW, "FOLLOWPLAYER");
 
-	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Ich habe Akil das Heilmittel gegeben ...");
+	B_LogEntry	(TOPIC_MOD_AKILSHOF, "I gave Akil the cure....");
 };
 
 INSTANCE Info_Mod_Akil_Randolph (C_INFO)
@@ -110,23 +110,23 @@ FUNC INT Info_Mod_Akil_Randolph_Condition()
 
 FUNC VOID Info_Mod_Akil_Randolph_Info()
 {
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_00"); //Dieser Narr, hätte er doch nur den Trank eingenommen.
-	AI_Output(hero, self, "Info_Mod_Akil_Randolph_15_01"); //Sprichst du von Randolph?
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_02"); //Ja. Nach dem Zwischenfall mit der dunklen Gestalt schien es ihm zuerst sehr gut zu gehen.
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_03"); //Mehr noch, er hatte Kraft und Ausdauer für drei und hat mühelos Arbeiten an einem Tag verrichtet, für welche man sonst eine Woche gebraucht hätte.
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_04"); //Doch mit der Zeit wurde er zunehmend schwermütiger und begann sich von den anderen auf dem Hof zurückzuziehen.
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_05"); //Er schien von Stimmen gepeinigt, die sonst niemand hörte, und wachte nachts häufig schreiend auf.
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_06"); //Und gestern, ja, hat er dann vollkommen den Verstand verloren.
-	AI_Output(hero, self, "Info_Mod_Akil_Randolph_15_07"); //Sprich weiter.
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_08"); //Viel zu erzählen gibt es nicht mehr.
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_09"); //Bei der Feldarbeit fing er auf einmal an, wild mit den Händen um sich zu schlagen, und brüllte, sie sollten ihn doch endlich in Frieden lassen.
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_10"); //Und ehe man sich versah, rannte er in den großen Wald und war verschwunden.
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_11"); //Telbor versuchte noch ihn zu verfolgen, verlor aber nahe dem Steinkreis seine Spur.
-	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_12"); //So sehr ich auch darauf hoffe, schwindet meine Hoffnung doch stündlich, ihn noch mal heil wieder zu sehen.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_00"); //This fool, if only he had taken the potion.
+	AI_Output(hero, self, "Info_Mod_Akil_Randolph_15_01"); //Are you talking about Randolph?
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_02"); //Yeah. After the incident with the dark figure, he seemed to be doing very well at first.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_03"); //What's more, he had strength and stamina for three and worked effortlessly on a day that would otherwise have taken a week.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_04"); //But as time went by, he became more and more melancholy and began to withdraw from the others on the farm.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_05"); //He seemed tormented by voices that no one else heard and often woke up screaming at night.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_06"); //And yesterday, yes, he completely lost his mind.
+	AI_Output(hero, self, "Info_Mod_Akil_Randolph_15_07"); //Keep talking.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_08"); //There's not much more to tell.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_09"); //When working in the fields, he suddenly began to fight wildly with his hands around him and shouted,"I wish they'd leave him alone.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_10"); //And before you knew it, he ran into the big forest and disappeared.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_11"); //Telbor still tried to track him, but lost his trail near the stone circle.
+	AI_Output(Self, hero, "Info_Mod_Akil_Randolph_13_12"); //As much as I hope for it, my hope of seeing him again in one hour's time disappears.
 	
 	Log_CreateTopic	(TOPIC_MOD_AKIL_RANDOLPH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_AKIL_RANDOLPH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Randolph, der den heilenden Trank verschmähte, ist wie besessen in den Wald gerannt. Seine Spur hat sich nahe dem Steinkreis verloren.");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Randolph, who despised the healing potion, ran into the forest as if possessed. His trail's lost near the stone circle.");
 };
 
 INSTANCE Info_Mod_Akil_RandolphWiederFit (C_INFO)
@@ -150,8 +150,8 @@ FUNC INT Info_Mod_Akil_RandolphWiederFit_Condition()
 
 FUNC VOID Info_Mod_Akil_RandolphWiederFit_Info()
 {
-	AI_Output(Self, hero, "Info_Mod_Akil_RandolphWiederFit_13_00"); //Randolph ist zurück und wieder geheilt. Und du scheinst entscheidenden Anteil daran zu haben.
-	AI_Output(Self, hero, "Info_Mod_Akil_RandolphWiederFit_13_01"); //Es ist nicht viel, was ich habe, aber nimm dieses Gold als Dank.
+	AI_Output(Self, hero, "Info_Mod_Akil_RandolphWiederFit_13_00"); //Randolph's back and healed. And you seem to be playing a decisive role.
+	AI_Output(Self, hero, "Info_Mod_Akil_RandolphWiederFit_13_01"); //It's not much I have, but take this gold as a thank you.
 	
 	B_GivePlayerXP	(400);
 
@@ -166,7 +166,7 @@ INSTANCE Info_Mod_Akil_Untier (C_INFO)
 	information	= Info_Mod_Akil_Untier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hattet ihr in den letzten Tagen vielleicht Ärger mit wilden Tieren?";
+	description	= "Have you had any trouble with wild animals these last few days?";
 };
 
 FUNC INT Info_Mod_Akil_Untier_Condition()
@@ -182,30 +182,30 @@ FUNC INT Info_Mod_Akil_Untier_Condition()
 
 FUNC VOID Info_Mod_Akil_Untier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Akil_Untier_15_00"); //Hattet ihr in den letzten Tagen vielleicht Ärger mit wilden Tieren?
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_01"); //Ärger?! Das kann man wohl sagen.
-	AI_Output(self, hero, "Info_Mod_Akil_Untier_13_02"); //Als ich gestern eine Ladung stark gepökelter Schafskeulen zu Orlans Taverne bringen wollte, hat mich das abscheulichste Untier angefallen, das ich je gesehen habe.
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_03"); //Es war hoch wie ein groß gewachsener Mann, lief auf allen Vieren und fauchte bestialisch.
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_04"); //Ich ließ meine wertvolle Fracht fallen und bin zum Hof zurückgelaufen.
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_05"); //Von weitem konnte ich dann sehen, wie dieses Ungetüm sich über das Fleisch hermachte.
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_06"); //Danach hat es sich einige Minuten am Boden gewunden - das viele Salz ist ihm wohl nicht bekommen – und ist dann fauchend an meinem Hof vorbei in den Wald gelaufen.
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_07"); //Möge dieses Scheusal an dem Pökelfleisch verrecken.
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_08"); //(wehmütig) Aber ich weiß jetzt wirklich nicht, wie ich den Verlust ausgleichen soll.
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_09"); //Das Fleisch hätte mir einige Goldmünzen eingebracht und die Zeiten sind so hart ...
+	AI_Output(hero, self, "Info_Mod_Akil_Untier_15_00"); //Have you had any trouble with wild animals these last few days?
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_01"); //Trouble?! That's for sure.
+	AI_Output(self, hero, "Info_Mod_Akil_Untier_13_02"); //Yesterday, when I wanted to bring a load of heavily pickled sheep's legs to Orlan's tavern, I was struck by the most heinous beast I've ever seen.
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_03"); //It was high as a tall man, running on all fours and hissing bestially.
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_04"); //I dropped my valuable cargo and ran back to the yard.
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_05"); //From a distance I could see how this monster was coming over the flesh.
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_06"); //Afterwards it wound up on the ground for a few minutes - he probably didn't get all that salt - and then he ran into the woods hissing past my farm.
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_07"); //May this beast die from the salt meat.
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_08"); //But I really don't know how to make up for the loss.
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_13_09"); //The meat would have brought me some gold coins and times are so hard...
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Akil bedauert den Verlust seines Pökelfleisches nach dem Angriff einer Bestie. Sie ist in den Wald hinter seinem Hof weitergelaufen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Akil regrets the loss of his salt meat after the attack of a beast. She walked into the forest behind his farm.");
 	
 	Info_ClearChoices	(Info_Mod_Akil_Untier);
 
-	Info_AddChoice	(Info_Mod_Akil_Untier, "Vielleicht kann ich dir helfen ...", Info_Mod_Akil_Untier_B);
-	Info_AddChoice	(Info_Mod_Akil_Untier, "Nicht meine Sache.", Info_Mod_Akil_Untier_A);
+	Info_AddChoice	(Info_Mod_Akil_Untier, "Maybe I can help you....", Info_Mod_Akil_Untier_B);
+	Info_AddChoice	(Info_Mod_Akil_Untier, "Not my business.", Info_Mod_Akil_Untier_A);
 };
 
 FUNC VOID Info_Mod_Akil_Untier_F()
 {
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_F_13_00"); //Hab vielen Dank. Ich weiß nicht, wie ich das gutmachen soll.
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_F_13_00"); //Thank you very much. I don't know how to make it up to you.
 
 	B_GivePlayerXP	(100);
 	
@@ -214,14 +214,14 @@ FUNC VOID Info_Mod_Akil_Untier_F()
 
 FUNC VOID Info_Mod_Akil_Untier_E()
 {
-	AI_Output(hero, self, "Info_Mod_Akil_Untier_E_15_00"); //Mir fällt schon etwas ein.
+	AI_Output(hero, self, "Info_Mod_Akil_Untier_E_15_00"); //I'll think of something.
 	
 	Info_ClearChoices	(Info_Mod_Akil_Untier);
 };
 
 FUNC VOID Info_Mod_Akil_Untier_D()
 {
-	AI_Output(hero, self, "Info_Mod_Akil_Untier_D_15_00"); //Hier hast du zehn Keulen.
+	AI_Output(hero, self, "Info_Mod_Akil_Untier_D_15_00"); //Here you have ten clubs.
 
 	B_GiveInvItems	(hero, self, ItFo_MuttonRaw, 10);
 	
@@ -230,7 +230,7 @@ FUNC VOID Info_Mod_Akil_Untier_D()
 
 FUNC VOID Info_Mod_Akil_Untier_C()
 {
-	AI_Output(hero, self, "Info_Mod_Akil_Untier_C_15_00"); //Hier hast du 50 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Akil_Untier_C_15_00"); //Here's 50 gold coins.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 	
@@ -239,25 +239,25 @@ FUNC VOID Info_Mod_Akil_Untier_C()
 
 FUNC VOID Info_Mod_Akil_Untier_B()
 {
-	AI_Output(hero, self, "Info_Mod_Akil_Untier_B_15_00"); //Vielleicht kann ich dir helfen ...
-	AI_Output(Self, hero, "Info_Mod_Akil_Untier_B_13_01"); //(hoffnungsvoll) Ja?
+	AI_Output(hero, self, "Info_Mod_Akil_Untier_B_15_00"); //Maybe I can help you....
+	AI_Output(Self, hero, "Info_Mod_Akil_Untier_B_13_01"); //(hopefully) Yes?
 	
 	Info_ClearChoices	(Info_Mod_Akil_Untier);
 
-	Info_AddChoice	(Info_Mod_Akil_Untier, "Mir fällt schon etwas ein.", Info_Mod_Akil_Untier_E);
+	Info_AddChoice	(Info_Mod_Akil_Untier, "I'll think of something.", Info_Mod_Akil_Untier_E);
 	if (Npc_HasItems(hero, ItFo_MuttonRaw) >= 10)
 	{
-		Info_AddChoice	(Info_Mod_Akil_Untier, "Hier hast du zehn Keulen.", Info_Mod_Akil_Untier_D);
+		Info_AddChoice	(Info_Mod_Akil_Untier, "Here you have ten clubs.", Info_Mod_Akil_Untier_D);
 	};
 	if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 	{
-		Info_AddChoice	(Info_Mod_Akil_Untier, "Hier hast du 50 Goldmünzen.", Info_Mod_Akil_Untier_C);
+		Info_AddChoice	(Info_Mod_Akil_Untier, "Here's 50 gold coins.", Info_Mod_Akil_Untier_C);
 	};
 };
 
 FUNC VOID Info_Mod_Akil_Untier_A()
 {
-	AI_Output(hero, self, "Info_Mod_Akil_Untier_A_15_00"); //Nicht meine Sache.
+	AI_Output(hero, self, "Info_Mod_Akil_Untier_A_15_00"); //Not my business.
 	
 	Info_ClearChoices	(Info_Mod_Akil_Untier);
 };
@@ -282,12 +282,12 @@ FUNC INT Info_Mod_Akil_Lich_Condition()
 
 FUNC VOID Info_Mod_Akil_Lich_Info()
 {
-	AI_Output(Self, hero, "Info_Mod_Akil_Lich_13_00"); //Mach besser, dass du in die Stadt kommst, hier ist es nicht sicher.
-	AI_Output(hero, self, "Info_Mod_Akil_Lich_15_01"); //Was ist geschehen?
-	AI_Output(Self, hero, "Info_Mod_Akil_Lich_13_02"); //Wie aus dem Nichts tauchten diese grässlichen Dämonen auf und peinigten uns bis aufs Blut.
-	AI_Output(self, hero, "Info_Mod_Akil_Lich_13_03"); //Wenn nicht diese drei Paladine aufgetaucht wären, hätte es schlecht um uns gestanden.
-	AI_Output(hero, self, "Info_Mod_Akil_Lich_15_04"); //Wo sind die Paladine jetzt?
-	AI_Output(Self, hero, "Info_Mod_Akil_Lich_13_05"); //Nachdem sie die Unholde erschlagen hatten – Innos sei Dank - sind sie zur Grabeshöhle bei Orlan gelaufen.
+	AI_Output(Self, hero, "Info_Mod_Akil_Lich_13_00"); //Better get to town, it's not safe here.
+	AI_Output(hero, self, "Info_Mod_Akil_Lich_15_01"); //What has happened?
+	AI_Output(Self, hero, "Info_Mod_Akil_Lich_13_02"); //These dreadful demons appeared out of nowhere and tormented us to the bone.
+	AI_Output(self, hero, "Info_Mod_Akil_Lich_13_03"); //If those three paladins hadn't turned up, it would have been bad for us.
+	AI_Output(hero, self, "Info_Mod_Akil_Lich_15_04"); //Where are the paladins now?
+	AI_Output(Self, hero, "Info_Mod_Akil_Lich_13_05"); //After they had killed the fiends - thanks to Innos - they walked to the burial cave near Orlan.
 };
 
 INSTANCE Info_Mod_Akil_Pickpocket (C_INFO)

@@ -5,7 +5,7 @@
 
 INSTANCE ItSe_XardasNotfallBeutel_MIS	(C_Item)
 {
-	name 				=	"Äußerst seltsamer Lederbeutel";
+	name 				=	"Very Strange Leather Satchel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -20,9 +20,9 @@ INSTANCE ItSe_XardasNotfallBeutel_MIS	(C_Item)
 	description			= 	name;
 	
 	TEXT[0]				= 	"";
-	TEXT[1]				= 	"In dem Beutel scheinen";
-	TEXT[2]				= 	"ein harter Gegenstand ";
-	TEXT[3]				= 	"und ein Schriftstück zu sein.";
+	TEXT[1]				= 	"In the bag seem to be";
+	TEXT[2]				= 	"a hard object ";
+	TEXT[3]				= 	"and be a document.";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -44,7 +44,7 @@ FUNC VOID Use_XardasNotfallBeutel ()
 
 INSTANCE ItWr_XardasErmahnungFuerIdioten_MIS	(C_Item)
 {
-	name 				=	"Xardas' Ermahnungsbrief";
+	name 				=	"Xardas' Letter of admonition";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -70,8 +70,8 @@ func void Use_XardasErmahnungFuerIdioten ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Mein junger Schützling, du hast mich bitter enttäuscht. Wie konntest nur mit dem Schiff aufbrechen, ohne das Auge Innos in deinem Gepäck?"					);
-					Doc_PrintLines	( nDocID,  0, "Ich kann nur hoffen, dass deine Nachlässigkeit Grenzen hat. Sonst wirst du niemals die Welt von dem Übel dieser Welt befreien und ich werde dich persönlich töten müssen für deine Dummheit."					);
+					Doc_PrintLines	( nDocID,  0, "My young protégé, you have disappointed me bitterly. How could you leave without the eye Innos in your luggage?"					);
+					Doc_PrintLines	( nDocID,  0, "I can only hope that your negligence has its limits. Otherwise you will never free the world from the evil of this world and I will have to kill you personally for your stupidity."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -88,7 +88,7 @@ func void Use_XardasErmahnungFuerIdioten ()
 
 INSTANCE ItWr_Krypta_Garon		(C_Item)
 {
-	name 				=	"alter Brief";
+	name 				=	"Old letter";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -101,7 +101,7 @@ INSTANCE ItWr_Krypta_Garon		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 
-	TEXT[3]				= 	"mit zittriger Schrift geschrieben";
+	TEXT[3]				= 	"shaky";
 };
 func void Use_Krypta_Garon ()
 {   
@@ -115,14 +115,14 @@ func void Use_Krypta_Garon ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Ich habe versagt. Meine Bemühungen Inubis auf den Pfad der Rechtschaffenen zurück zu bringen waren vergebens "					);
-					Doc_PrintLines	( nDocID,  0, "Erst dachte ich, ich sei tot. Doch es steckt noch Kraft in den alten Knochen Ivans. "					);
-					Doc_PrintLines	( nDocID,  0, "Inubis ist wiederauferstanden von den Toten. Verbannt vom alten Orden der Paladine sinnt er nur noch nach Rache für seinen Fluch."					);
-					Doc_PrintLines	( nDocID,  0, "Viele seiner Anhänger sind ihm gefolgt. Ich weiß nicht, wie es passieren konnte, dass ein Feldherr wie Inubis so dem Bösen verfällt. "					);
-					Doc_PrintLines	( nDocID,  0, "In dieser Krypta habe ich sein Grab gefunden. Doch ob ich jemals einem Menschen davon berichten kann, ist nicht gewiss. Darum schreibe ich diese Zeilen in der Hoffnung, dass sie gefunden werden."					);
-					Doc_PrintLines	( nDocID,  0, "Seid gewarnt. Ein mächtiger Feind streckt seine Klauen nach den Seelen der Rechtschaffenen. Inubis wird nicht der letzte sein."					);
+					Doc_PrintLines	( nDocID,  0, "I failed. My efforts to bring Inubis back to the path of the righteous were in vain. "					);
+					Doc_PrintLines	( nDocID,  0, "At first I thought I was dead. But there is still power in the old bones of Ivan. "					);
+					Doc_PrintLines	( nDocID,  0, "Inubis has risen from the dead. Banished from the old order of the Paladins, he only seeks revenge for his curse."					);
+					Doc_PrintLines	( nDocID,  0, "Many of his followers followed him. I don't know how it could have happened that a commander like Inubis would fall for evil. "					);
+					Doc_PrintLines	( nDocID,  0, "I found his grave in this crypt. But whether I can ever tell a person about it is not certain. Therefore, I write these lines in the hope that they will be found."					);
+					Doc_PrintLines	( nDocID,  0, "Be warned. A mighty enemy stretches its claws to the souls of the righteous. Inubis will not be the last."					);
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "Möge Innos eure Seelen beschützen."					);
+					Doc_PrintLine	( nDocID,  0, "May Innos protect your souls."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "                                 Ivan");
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -144,7 +144,7 @@ func void Use_Krypta_Garon ()
 
 INSTANCE ItKe_OrkKnastDI_MIS(C_Item)
 {
-	name 				=	"Schlüssel des Orkischen Obersts";
+	name 				=	"Key of the Orcish Colonel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -160,7 +160,7 @@ INSTANCE ItKe_OrkKnastDI_MIS(C_Item)
 
 INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//Schlüssel für erste Tür
 {
-	name 				=	"Schlüssel des Archol";
+	name 				=	"Key of Archol";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -182,7 +182,7 @@ INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//Schlüssel für erste Tür
 
 INSTANCE ItKe_EVT_UNDEAD_02	(C_Item)
 {
-	name 				=	"Schlüssel des Schlüsselmeisters";
+	name 				=	"Key of the Key Master";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -203,7 +203,7 @@ INSTANCE ItKe_EVT_UNDEAD_02	(C_Item)
 	
 INSTANCE ItKe_LastDoorToUndeadDrgDI_MIS	(C_Item)
 {
-	name 				=	"Kammerschlüssel des Schwarzmagiers";
+	name 				=	"Black Magician's Room Key";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -222,7 +222,7 @@ INSTANCE ItKe_LastDoorToUndeadDrgDI_MIS	(C_Item)
 	
 INSTANCE ItWr_LastDoorToUndeadDrgDI_MIS	(C_Item)
 {
-	name 				=	"Schriftrolle des Schwarzmagiers";
+	name 				=	"Black Magician's Scroll";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -254,21 +254,21 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS ()
 					Doc_PrintLine	( nDocID,  0, "EMEM KADAR"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Das Auge der Macht erleuchte deinen Weg");
+					Doc_PrintLine	( nDocID,  0, "The Eye of Power enlightens your path");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
 				
 					Doc_Show		( nDocID );
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"In der Schriftrolle des Schwarzmagiers waren die Worte KHADOSH EMEM KADAR zu lesen. Das hört sich an wie eine Beschwörungsformel, aber worauf läßt sich das anwenden und was ist das Auge der Macht?"); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"The words KHADOSH EMEM KADAR were written in the Scroll of the Black Mage. That sounds like an incantation, but what can this be applied to and what is the Eye of Power?"); 
 };
 //**********************************************************************************
 //	Schlüssel zur Truhe in der Kammer des OberDementors.
 //**********************************************************************************
 INSTANCE ItKe_ChestMasterDementor_MIS	(C_Item)
 {
-	name 				=	"Truhenschlüssel des Schwarzmagiers";
+	name 				=	"Black Magician's Chest Key";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -293,7 +293,7 @@ INSTANCE ItKe_ChestMasterDementor_MIS	(C_Item)
 
 INSTANCE ItWr_Rezept_MegaDrink_MIS	(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"Recipe";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -317,14 +317,14 @@ func void Use_RezeptFuerMegaTrank ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Ich habe eine sehr alte Kunst ins Leben zurück rufen können. Ich fürchte, dass Feodaron von meinen Ergebnissen nicht sehr erbaut wäre."					);
-					Doc_PrintLines	( nDocID,  0, "Es hieße schlicht und ergreifend, dass ich seine gesammte Brut in meinem Labor zu einem Trank verarbeiten müsste. Wenn er nicht ständig auf seinen Eiern sitzen würde, wie ein Huhn, hätte ich es schon längst ausprobiert. Aber vor seinem Odem habe ich doch noch ein wenig Respekt."					);
+					Doc_PrintLines	( nDocID,  0, "I was able to bring a very old art back to life. I'm afraid Feodaron wouldn't be very uplifted by my findings."					);
+					Doc_PrintLines	( nDocID,  0, "It would simply mean that I would have to process his entire brood into a potion in my laboratory. If he wasn't sitting on his balls all the time like a chicken, I'd have tried it by now. But I still have a little respect for his breath."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Embarla Firgasto:"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "10 Dracheneier, Eine zerriebene schwarze Perle und eine Prise Schwefel."					);
-					Doc_PrintLines	( nDocID,  0, "Die Emulsion wird zum kochen gebracht und anschließend unter ständigem Rühren durch den Destillator getrieben."					);
-					Doc_PrintLines	( nDocID,  0, "Das Elixier ist mit vorsicht zu verwenden. Es hat schwere Nebenwikungen. Der gesamte Manahaushalt wird durcheinander geraten."					);
+					Doc_PrintLines	( nDocID,  0, "10 dragon eggs, a crushed black pearl and a pinch of sulphur."					);
+					Doc_PrintLines	( nDocID,  0, "The emulsion is brought to the boil and then driven through the distiller under constant stirring."					);
+					Doc_PrintLines	( nDocID,  0, "Use the elixir with caution. It's got heavy side movements. The entire mana budget will be confused."					);
 					
 					Doc_Show		( nDocID );
 		
@@ -337,7 +337,7 @@ func void Use_RezeptFuerMegaTrank ()
 
 INSTANCE ItWr_Diary_BlackNovice_MIS (C_ITEM)
 {	
-	name 					=	"Tagebuch";
+	name 					=	"Diary";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -369,22 +369,22 @@ INSTANCE ItWr_Diary_BlackNovice_MIS (C_ITEM)
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages 
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "Ich warte jetzt schon geschlagene 36 Tage auf meine Einberufung. Ich glaube schon nicht mehr daran, dass sie mich aufnehmen werden. Ich habe doch schon alles getan, was sie mir aufgetragen haben. Alles habe ich ihnen hinterher getragen."					);
+					Doc_PrintLines	( nDocID,  0, "I am already waiting 36 days for my convocation. I don't think they're gonna take me in anymore. I've already done everything they asked me to do. I carried everything after them."					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "Der Schlüsselmeister hat mich angewiesen, die Gitter zu versiegeln. Ich bin bis heute noch nicht dazu gekommen. Wenn das so weiter geht, wird es noch jemand schaffen, einfach so durch das Tor zu marschieren.");
-					Doc_PrintLines	( nDocID,  0, "Nur zu blöde, dass ich mir die Kombinationen nicht merken kann. ");
+					Doc_PrintLines	( nDocID,  0, "The keymaster ordered me to seal the bars. I haven't gotten around to it yet. If it goes on like this, someone else will be able to just walk through the gate.");
+					Doc_PrintLines	( nDocID,  0, "Too bad I can't remember the combinations. ");
 
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Ich wäre schon längst einmal heimlich in der großen Halle gewesen. Ich kann es kaum erwarten, den Meister zu sehen. Ob sie mich zu ihm lassen, wenn ich erst einmal zu ihnen gehöre?"	);
+					Doc_PrintLines	( nDocID,  1, "I would have been secretly in the great hall by now. I can't wait to see the master. Do you think they'll let me join him once I'm one of them?"	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Habe gestern mein Glück versucht. Bin aber schon an den zwei Hebelkammern gescheitert, bevor ich die drei Schalter des Westflügels in der richtigen Reihenfolge drücken konnte. Der Hund hat die Kammern abgeschlossen. Morgen werde ich versuchen, ihm den Schlüssel abzunehmen...");
+					Doc_PrintLines	( nDocID,  1, "Tried my luck last night. But I already failed at the two lever chambers before I could push the three switches of the west wing in the correct order. The dog has locked the chambers. Tomorrow I'll try to take the key from him....");
 					Doc_Show		( nDocID );
 
-	B_LogEntry (TOPIC_HallenVonIrdorath,"In dem Tagebuch des Schwarzmagiernovizen ist von Hebelkammern, Schlüsselmeister, Schalterkombinationen und anderem Krempel die Rede. Sollte ich im Hinterkopf behalten, vielleicht nützt es mir später noch."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"The diary of the black magic novice talks about lever chambers, keymasters, switch combinations and other stuff. Should I keep in mind, maybe it'll help me later."); 
 };
 
 //**********************************************************************************
@@ -393,7 +393,7 @@ INSTANCE ItWr_Diary_BlackNovice_MIS (C_ITEM)
 
 INSTANCE ItWr_ZugBruecke_MIS	(C_Item)
 {
-	name 				=	"alter Brief";
+	name 				=	"Old letter";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -416,17 +416,17 @@ func void Use_ZugBruecke ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "   Letzte Warnung!"					);
+					Doc_PrintLine	( nDocID,  0, "   Last warning!"					);
 					Doc_SetMargins	( nDocID, -1, 50, 50, 70, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Es ist mir völlig egal, ob ihr die Brücke von der anderen Seite überqueren könnt, oder nicht. Wenn es nach mir ginge, würdet ihr sowieso alle in der Hölle schmoren."					);
-					Doc_PrintLines	( nDocID,  0, "Ich werde die Brücke eingezogen lassen, solange ich mich in meiner Residenz befinde. Wenn ich nochmal jemanden dabei erwische, dass er mit Pfeil und Bogen auf die Schalter schießt um herüber zu kommen, dann werde ich den Schützen eigenhändig am nächten Baum aufhängen."	);
+					Doc_PrintLines	( nDocID,  0, "I don't care if you can cross the bridge from the other side or not. If it were up to me, you'd all burn in hell anyway."					);
+					Doc_PrintLines	( nDocID,  0, "I'll have the bridge moved in while I'm in my residence. If I catch someone else shooting bow and arrow at the switches to come over, then I'll hang the shooter on the next tree by my own hand."	);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "                      Archol"					);
+					Doc_PrintLine	( nDocID,  0, "                      archipelago"					);
 					
 					Doc_Show		( nDocID );
 };
@@ -438,7 +438,7 @@ func void Use_ZugBruecke ()
 
 INSTANCE ItMi_PowerEye (C_Item)
 {
-	name 				=	"Auge der Macht";
+	name 				=	"Eye of Power";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;

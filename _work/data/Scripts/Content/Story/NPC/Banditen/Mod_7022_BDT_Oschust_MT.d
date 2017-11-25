@@ -1,7 +1,7 @@
 INSTANCE Mod_7022_BDT_Oschust_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Oschust";
+	name 		= "cough";
 	guild 		= GIL_OUT;
 	id 			= 7022;
 	voice 		= 4;

@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Leonhard_Hi_Condition()
 
 FUNC VOID Info_Mod_Leonhard_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Leonhard_Hi_36_00"); //(erschrocken) Hey! Was schleichst du hier herum? Willst mich wohl erschrecken?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Hi_36_00"); //(shocked) Hey! What are you sneaking around for? You trying to scare me?
 };
 
 INSTANCE Info_Mod_Leonhard_Aufgabe (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Leonhard_Aufgabe (C_INFO)
 	information	= Info_Mod_Leonhard_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "What are you doing here?";
 };
 
 FUNC INT Info_Mod_Leonhard_Aufgabe_Condition()
@@ -41,65 +41,65 @@ FUNC VOID Info_Mod_Leonhard_Aufgabe_Info()
 {
 	B_Say	(hero, self, "$WASMACHSTDUHIER");
 
-	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_36_01"); //Ich warte, um Leuten wie dir ein gutes Angebot zu machen. Ein Angebot zu deinem und meinem Vorteil.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_36_02"); //Bin nur gerade kurz eingenickt. Ich warte ja schon etwas länger.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_36_01"); //I'm waiting to make people like you a good offer. An offer to your and my advantage.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_36_02"); //Just nodded off for a second. I've been waiting a little longer.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Aufgabe);
 
-	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "Damit will ich nichts zu tun haben!", Info_Mod_Leonhard_Aufgabe_B);
-	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "Was ist das für ein Angebot?", Info_Mod_Leonhard_Aufgabe_A);
+	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "I don't want anything to do with that!", Info_Mod_Leonhard_Aufgabe_B);
+	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "What's this offer?", Info_Mod_Leonhard_Aufgabe_A);
 };
 
 FUNC VOID Info_Mod_Leonhard_Aufgabe_B()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_B_15_00"); //Damit will ich nichts zu tun haben!
+	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_B_15_00"); //I don't want anything to do with that!
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Aufgabe);
 };
 
 FUNC VOID Info_Mod_Leonhard_Aufgabe_A()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_A_15_00"); //Was ist das für ein Angebot?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_01"); //Zwei Kumpel von mir sind im Gefängnis gelandet, völlig unrechtmäßig.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_02"); //Und jetzt will ich dem Richter die Gelegenheit geben, seinen Fehler wieder gut zu machen.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_03"); //Dafür sollst du ihm einfach nur eine Nachricht übermitteln, klar?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_04"); //Pass auf, dass niemand anderes sie liest, und guck selbst auch nicht rein. Steht eh nichts Spannendes drin.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_05"); //Eine Aufwandsentschädigung für dich ist natürlich auch drin.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_A_15_00"); //What's this offer?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_01"); //Two of my mates ended up in jail, completely unlawful.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_02"); //And now I want to give the judge the opportunity to make up for his mistake.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_03"); //You're just supposed to give him a message for this, all right?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_04"); //Make sure no one else reads it, and don't look at it yourself. There's nothing exciting about it anyway.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_A_36_05"); //Of course, there's also an expense allowance for you.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Aufgabe);
 
-	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "Ich werde mich darum kümmern.", Info_Mod_Leonhard_Aufgabe_D);
-	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "Warum übergibst du die Botschaft nicht selbst?", Info_Mod_Leonhard_Aufgabe_C);
+	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "I'll take care of it.", Info_Mod_Leonhard_Aufgabe_D);
+	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "Why don't you deliver the message yourself?", Info_Mod_Leonhard_Aufgabe_C);
 };
 
 FUNC VOID Info_Mod_Leonhard_Aufgabe_D()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_D_15_00"); //Ich werde mich darum kümmern.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_D_15_00"); //I'll take care of it.
 
 	B_GiveInvItems	(self, hero, ItWr_LeonhardRichter, 1);
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_UNFRIEDEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_UNFRIEDEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Leonhard hat mich beauftragt, dem Richter in Khorata eine Botschaft zukommen zu lassen ... und nur dem Richter!");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Leonhard instructed me to send a message to the judge in Khorata.... and only to the judge!");
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Aufgabe);
 };
 
 FUNC VOID Info_Mod_Leonhard_Aufgabe_C()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_C_15_00"); //Warum übergibst du die Botschaft nicht selbst?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_C_36_01"); //Der Richter und ich ... wir sind nicht die besten Freunde.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_C_36_02"); //Ich hoffe, das reicht dir an Erklärung. Wie steht's nun?
+	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_C_15_00"); //Why don't you deliver the message yourself?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_C_36_01"); //The judge and I-- we're not best friends.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Aufgabe_C_36_02"); //I hope that's enough explanation for you. What's the score?
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Aufgabe);
 
-	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "Ich werde mich darum kümmern.", Info_Mod_Leonhard_Aufgabe_D);
-	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "Nein, das sieht mir nicht nach sauberer Arbeit aus.", Info_Mod_Leonhard_Aufgabe_E);
+	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "I'll take care of it.", Info_Mod_Leonhard_Aufgabe_D);
+	Info_AddChoice	(Info_Mod_Leonhard_Aufgabe, "No, it doesn't look like clean work to me.", Info_Mod_Leonhard_Aufgabe_E);
 };
 
 FUNC VOID Info_Mod_Leonhard_Aufgabe_E()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_E_15_00"); //Nein, das sieht mir nicht nach sauberer Arbeit aus.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Aufgabe_E_15_00"); //No, it doesn't look like clean work to me.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Aufgabe);
 };
@@ -112,7 +112,7 @@ INSTANCE Info_Mod_Leonhard_Unfrieden (C_INFO)
 	information	= Info_Mod_Leonhard_Unfrieden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte mir meine Belohnung abholen.";
+	description	= "I'd like to collect my reward.";
 };
 
 FUNC INT Info_Mod_Leonhard_Unfrieden_Condition()
@@ -125,46 +125,46 @@ FUNC INT Info_Mod_Leonhard_Unfrieden_Condition()
 
 FUNC VOID Info_Mod_Leonhard_Unfrieden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_15_00"); //Ich möchte mir meine Belohnung abholen.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_36_01"); //Ja, deine Belohnung ... Mit der Belohnung gibt's noch ein kleines Problem.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_36_02"); //Die hat nämlich jemand anderes. Aber wir müssen sie nur noch gemeinsam beschaffen gehen.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_15_00"); //I'd like to collect my reward.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_36_01"); //Yes, your reward... There's a little problem with the reward.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_36_02"); //Someone else does. But we just have to get them together.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Unfrieden);
 
-	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "Du meinst wohl klauen? Da mach ich nicht mit.", Info_Mod_Leonhard_Unfrieden_B);
-	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "Wie kommen wir an das Gold?", Info_Mod_Leonhard_Unfrieden_A);
+	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "You mean steal? I'm not going along with that.", Info_Mod_Leonhard_Unfrieden_B);
+	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "How do we get the gold?", Info_Mod_Leonhard_Unfrieden_A);
 };
 
 FUNC VOID Info_Mod_Leonhard_Unfrieden_B()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_B_15_00"); //Du meinst wohl klauen? Da mach ich nicht mit.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_B_36_01"); //Du solltest es dir wirklich noch mal anders überlegen.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_B_15_00"); //You mean steal? I'm not going along with that.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_B_36_01"); //You really should change your mind.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Unfrieden);
 
-	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "Das ist nichts für mich.", Info_Mod_Leonhard_Unfrieden_D);
-	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "Wie kommen wir an das Gold?", Info_Mod_Leonhard_Unfrieden_A);
+	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "This is not for me.", Info_Mod_Leonhard_Unfrieden_D);
+	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "How do we get the gold?", Info_Mod_Leonhard_Unfrieden_A);
 };
 
 FUNC VOID Info_Mod_Leonhard_Unfrieden_A()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_A_15_00"); //Wie kommen wir an das Gold?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_01"); //In der Gaststätte hat sich Ruprecht, ein ... Verbrecher, eingenistet.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_02"); //Er schläft in einem der Betten im ersten Stock.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_03"); //Neben seinem Bett hortet er sein erbeutetes Gold in einer Truhe.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_04"); //Die musst du tagsüber in einem unbeobachteten Moment ausräumen und uns den Inhalt bringen.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_05"); //Dann erhältst du deinen gerechten Anteil.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_A_15_00"); //How do we get the gold?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_01"); //In the restaurant Ruprecht, a... Criminals, nested.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_02"); //He sleeps in one of the beds on the first floor.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_03"); //Next to his bed he is hoarding his captured gold in a chest.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_04"); //You'll have to clean it out in an unobserved moment during the day and bring the contents to us.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_A_36_05"); //Then you get your fair share.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Unfrieden);
 
-	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "Das ist nichts für mich.", Info_Mod_Leonhard_Unfrieden_D);
-	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "Wird erledigt.", Info_Mod_Leonhard_Unfrieden_C);
+	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "This is not for me.", Info_Mod_Leonhard_Unfrieden_D);
+	Info_AddChoice	(Info_Mod_Leonhard_Unfrieden, "It's done.", Info_Mod_Leonhard_Unfrieden_C);
 };
 
 FUNC VOID Info_Mod_Leonhard_Unfrieden_D()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_D_15_00"); //Das ist nichts für mich.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_D_36_01"); //Dann wird auch nichts aus der Belohnung. Überleg's dir.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_D_15_00"); //This is not for me.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Unfrieden_D_36_01"); //Then nothing will come of the reward. Just think about it.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Unfrieden);
 
@@ -173,9 +173,9 @@ FUNC VOID Info_Mod_Leonhard_Unfrieden_D()
 
 FUNC VOID Info_Mod_Leonhard_Unfrieden_C()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_C_15_00"); //Wird erledigt.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Unfrieden_C_15_00"); //It's done.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Ich soll die Truhe Ruprechts, der momentan in der Gaststätte im ersten Stock schläft, ausrauben, um an meine Belohnung zu kommen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "I am to rob the chest of Ruprecht, who is currently sleeping in the restaurant on the first floor, to get my reward.");
 
 	Mod_LeonhardRuprecht = 1;
 
@@ -190,7 +190,7 @@ INSTANCE Info_Mod_Leonhard_RuprechtsTruhe (C_INFO)
 	information	= Info_Mod_Leonhard_RuprechtsTruhe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist Ruprechts Gold.";
+	description	= "This is Ruprecht's gold.";
 };
 
 FUNC INT Info_Mod_Leonhard_RuprechtsTruhe_Condition()
@@ -205,18 +205,18 @@ FUNC INT Info_Mod_Leonhard_RuprechtsTruhe_Condition()
 
 FUNC VOID Info_Mod_Leonhard_RuprechtsTruhe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_RuprechtsTruhe_15_00"); //Hier ist Ruprechts Gold.
+	AI_Output(hero, self, "Info_Mod_Leonhard_RuprechtsTruhe_15_00"); //This is Ruprecht's gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 1000);
 
-	AI_Output(self, hero, "Info_Mod_Leonhard_RuprechtsTruhe_36_01"); //Das ist nicht so viel, wie ich erwartet habe. (überlegt) Ich glaube, das ziehe ich dir vom Lohn ab. Wir schulden dir nichts.
-	AI_Output(hero, self, "Info_Mod_Leonhard_RuprechtsTruhe_15_02"); //Das ist nicht dein Ernst.
-	AI_Output(self, hero, "Info_Mod_Leonhard_RuprechtsTruhe_36_03"); //Verpiss dich!
-	AI_Output(hero, self, "Info_Mod_Leonhard_RuprechtsTruhe_15_04"); //Dann hole ich es mir eben selbst wieder!
+	AI_Output(self, hero, "Info_Mod_Leonhard_RuprechtsTruhe_36_01"); //That's not as much as I expected. I think I'll take that out of your paycheck. We don't owe you anything.
+	AI_Output(hero, self, "Info_Mod_Leonhard_RuprechtsTruhe_15_02"); //You can't be serious.
+	AI_Output(self, hero, "Info_Mod_Leonhard_RuprechtsTruhe_36_03"); //Get the fuck out of here!
+	AI_Output(hero, self, "Info_Mod_Leonhard_RuprechtsTruhe_15_04"); //I'll just go and get it myself!
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Leonhard wollte mir meine Belohnung nicht geben, weshalb ich ihn 'überreden' musste.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Leonhard didn't want to give me my reward, so I had to' persuade' him.");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_UNFRIEDEN, LOG_SUCCESS);
 
 	AI_StopProcessInfos	(self);
@@ -248,23 +248,23 @@ FUNC INT Info_Mod_Leonhard_Endres_Condition()
 
 FUNC VOID Info_Mod_Leonhard_Endres_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_00"); //Ey, haste mal 'nen Augenblick Zeit?
-	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_01"); //Worum geht's?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_02"); //Hab gehört, du ermittelst in dem komplizierten Fall, wer Endres umgelegt hat.
-	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_03"); //Könnte sein.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_04"); //Da wollt ich dir nur mitteilen, dass einem meiner Informanten ein Erpresserbrief vom Heiler an Juliana ... in die Hände gefallen ist.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_05"); //Wahrscheinlich erpresst er sie mit Endres' Leiche, rückt sie erst gegen Bezahlung raus oder so.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_06"); //Du weißt ja, arm ist Juliana nicht.
-	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_07"); //Wieso hat Juliana die Erpressung nicht gemeldet?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_08"); //Tja, bei einer Erpressung hat man normalerweise was gegen die erpresste Person in der Hand, ne?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_09"); //Das wird sich der Heiler schon genau überlegt haben, ob er ein ausreichendes Druckmittel hat.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_10"); //Na ja, wollt's nur gesagt haben. Also Dreck haben die beide am Stecken, so viel ist sicher.
-	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_11"); //Danke für die Informationen. Aber wieso erzählst du mir davon?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_12"); //Ich bin immerhin ein anständiger Bürger, oder nicht? Und gibt's nicht für solche Hinweise 'ne kleine Belohnung?
-	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_13"); //Wenn du richtig liegst, bestimmt.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_14"); //Dann hören wir noch voneinander.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_00"); //Hey, you got a minute?
+	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_01"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_02"); //Heard you're investigating the complicated case of who killed Endres.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_03"); //Could be.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_04"); //I just wanted to tell you that one of my informants received a blackmail letter from the healer to Juliana.... has fallen into your hands.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_05"); //Probably blackmailing her with Endres' body, putting her out for a fee or something.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_06"); //You know, Juliana's not poor.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_07"); //Why didn't Juliana report the blackmail?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_08"); //Well, when you're blackmailing, you usually have something on the blackmailed person, right?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_09"); //The healer will have already thought about this carefully, whether he has sufficient leverage.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_10"); //Well, I just said so. So they're both dirty, that's for sure.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_11"); //Thanks for the information. But why are you telling me about this?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_12"); //I'm a decent citizen, aren't I? Isn't there a little reward for clues like that?
+	AI_Output(hero, self, "Info_Mod_Leonhard_Endres_15_13"); //If you're right, I'm sure you are.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres_36_14"); //Then we'll hear from each other.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Leonhard will gehört haben, dass der Heiler Juliana mit Endres' Leiche erpresst hat. Mit den beiden habe ich also auch noch Gesprächsbedarf.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Leonhard claims the healer blackmailed Juliana with Endres' body. So I also need to talk to them.");
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -289,49 +289,49 @@ FUNC INT Info_Mod_Leonhard_Endres02_Condition()
 
 FUNC VOID Info_Mod_Leonhard_Endres02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_36_00"); //Na, hab gehört, mein Tipp hat dir 'ne ganze Ecke weitergeholfen.
-	AI_Output(hero, self, "Info_Mod_Leonhard_Endres02_15_01"); //Das lässt sich nicht leugnen.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_36_02"); //Kann ich mit einer Belohnung rechnen?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_36_00"); //Well, I heard my tip helped you a whole lot.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Endres02_15_01"); //There's no denying it.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_36_02"); //Can I expect a reward?
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Endres02);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Leonhard_Endres02, "Da lasse ich mich nicht lumpen. (100 Gold geben)", Info_Mod_Leonhard_Endres02_C);
+		Info_AddChoice	(Info_Mod_Leonhard_Endres02, "I won't let myself get away with it. (100 Gold give)", Info_Mod_Leonhard_Endres02_C);
 	};
 	if (Npc_HasItems(hero, ItMi_Gold) >= 10)
 	{
-		Info_AddChoice	(Info_Mod_Leonhard_Endres02, "Hier hast du eine Kleinigkeit. (10 Gold geben)", Info_Mod_Leonhard_Endres02_B);
+		Info_AddChoice	(Info_Mod_Leonhard_Endres02, "Here's a little something for you. (10 give gold)", Info_Mod_Leonhard_Endres02_B);
 	};
-	Info_AddChoice	(Info_Mod_Leonhard_Endres02, "Vergiss es.", Info_Mod_Leonhard_Endres02_A);
+	Info_AddChoice	(Info_Mod_Leonhard_Endres02, "Forget about it.", Info_Mod_Leonhard_Endres02_A);
 };
 
 FUNC VOID Info_Mod_Leonhard_Endres02_C()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Endres02_C_15_00"); //Da lasse ich mich nicht lumpen.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Endres02_C_15_00"); //I won't let myself get away with it.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_C_36_01"); //Oha, Mann, danke! Weißte was, dafür darfst du in Zukunft Wertsachen bei mir loswerden. Gegen Gold, versteht sich.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_C_36_01"); //Oh, man, thanks! You know what, I'll let you get rid of valuables for this in the future. Against gold, of course.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Endres02);
 };
 
 FUNC VOID Info_Mod_Leonhard_Endres02_B()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Endres02_B_15_00"); //Hier hast du eine Kleinigkeit.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Endres02_B_15_00"); //Here's a little something for you.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 10);
 
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_B_36_01"); //Damit kann ich mich gerade noch zufrieden geben.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_B_36_01"); //I can barely be satisfied with that.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Endres02);
 };
 
 FUNC VOID Info_Mod_Leonhard_Endres02_A()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Endres02_A_15_00"); //Vergiss es.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_A_36_01"); //Puh, das ist ein Genickschlag, du Arsch.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Endres02_A_15_00"); //Forget about it.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Endres02_A_36_01"); //Phew, that's a fuck-up, asshole.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Endres02);
 };
@@ -344,7 +344,7 @@ INSTANCE Info_Mod_Leonhard_Bierhexen (C_INFO)
 	information	= Info_Mod_Leonhard_Bierhexen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast auf die Gerste des Braumeisters uriniert.";
+	description	= "You urinated on the brewmaster's barley.";
 };
 
 FUNC INT Info_Mod_Leonhard_Bierhexen_Condition()
@@ -357,40 +357,40 @@ FUNC INT Info_Mod_Leonhard_Bierhexen_Condition()
 
 FUNC VOID Info_Mod_Leonhard_Bierhexen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_15_00"); //Du hast auf die Gerste des Braumeisters uriniert.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_01"); //Na und?
-	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_15_02"); //Wieso?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_03"); //Weil ich voll war. Wir hatten mitbekommen, dass der Braumeister sein erstes Bier fertig hatte, und haben ihm nachts einen Besuch abgestattet.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_04"); //War echt geil, muss man schon sagen, für das Bier würde ich beinahe was zahlen.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_05"); //Haben ordentlich Spaß gehabt.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_06"); //Aber wie das so ist, macht sich irgendwann die Blase bemerkbar.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_07"); //Wir wollten nicht offensichtlich in die Ecke machen, deshalb hat einer einen Sack aufgehalten und die anderen haben sich erleichtert.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_08"); //An den Rest des Abends kann ich mich nicht erinnern, aber komisch, dass dem Braumeister nie aufgefallen ist, dass wir sein ganzes Bier gesoffen haben, oder? (lacht)
+	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_15_00"); //You urinated on the brewmaster's barley.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_01"); //So what?
+	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_15_02"); //Why?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_03"); //Because I was full. We had noticed that the master brewer had finished his first beer and visited him at night.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_04"); //Was really cool, you have to say, for the beer I would almost pay something.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_05"); //Have had a lot of fun.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_06"); //But as a matter of fact, the bladder becomes apparent at some point.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_07"); //We didn't want to go into the corner obviously, so one of us stopped a bag and the others were relieved.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_36_08"); //I don't remember the rest of the evening, but it's funny how the master brewer never noticed that we had all his beer, right? (laughs)
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "Leonhard hat zugegeben, dass er der Übeltäter ist. Er ist sich aber sicher, dass er ohne Konsequenzen aus der Sache gehen wird.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "Leonhard admitted that he's the culprit. However, he is sure that he will not suffer any consequences.");
 
 	Mod_Bierhexen = 4;
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Bierhexen);
 
-	Info_AddChoice	(Info_Mod_Leonhard_Bierhexen, "Das wird Konsequenzen haben!", Info_Mod_Leonhard_Bierhexen_B);
-	Info_AddChoice	(Info_Mod_Leonhard_Bierhexen, "Was gibst du mir dafür, dass ich es dem Braumeister nicht sage?", Info_Mod_Leonhard_Bierhexen_A);
+	Info_AddChoice	(Info_Mod_Leonhard_Bierhexen, "There will be consequences!", Info_Mod_Leonhard_Bierhexen_B);
+	Info_AddChoice	(Info_Mod_Leonhard_Bierhexen, "What are you giving me for not telling the master brewer?", Info_Mod_Leonhard_Bierhexen_A);
 };
 
 FUNC VOID Info_Mod_Leonhard_Bierhexen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_B_15_00"); //Das wird Konsequenzen haben!
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_B_36_01"); //(höhnisch) Ja, ja, glaub ich aber auch.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_B_15_00"); //There will be consequences!
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_B_36_01"); //Yeah, yeah, yeah, I guess so.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Bierhexen);
 };
 
 FUNC VOID Info_Mod_Leonhard_Bierhexen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_A_15_00"); //Was gibst du mir dafür, dass ich es dem Braumeister nicht erzähle?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_A_36_01"); //Hast du 'nen Knall? Was denkste, warum ich es jedem erzähle?
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_A_36_02"); //Weil es mir schnurz ist, ob der Braumeister davon weiß oder nicht. Der kann mir nichts.
-	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_A_15_03"); //Das werden wir ja sehen.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_A_15_00"); //What are you giving me for not telling the master brewer?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_A_36_01"); //Are you out of your mind? Why do you think I tell everyone?
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen_A_36_02"); //Because I don't give a damn if the master brewer knows or not. He can't touch me.
+	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen_A_15_03"); //We'll see about that.
 
 	Info_ClearChoices	(Info_Mod_Leonhard_Bierhexen);
 };
@@ -415,9 +415,9 @@ FUNC INT Info_Mod_Leonhard_Bierhexen2_Condition()
 
 FUNC VOID Info_Mod_Leonhard_Bierhexen2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen2_36_00"); //Was glotzt du so? Noch nie einen Menschen bei ehrlicher Arbeit gesehen?
-	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen2_15_01"); //Sieht bei dir ein wenig ungewöhnlich aus, ja.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen2_36_02"); //Schnauze halten!
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen2_36_00"); //What are you looking at? Never seen a person at honest work before?
+	AI_Output(hero, self, "Info_Mod_Leonhard_Bierhexen2_15_01"); //Looks a little unusual to you, yeah.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Bierhexen2_36_02"); //Shut the fuck up!
 
 	AI_StopProcessInfos	(self);
 };
@@ -430,7 +430,7 @@ INSTANCE Info_Mod_Leonhard_Freudenspender (C_INFO)
 	information	= Info_Mod_Leonhard_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Du siehst aus, als könntest du Freudenspender gebrauchen.";
+	description 	= "You look like you could use some goodies.";
 };
 
 FUNC INT Info_Mod_Leonhard_Freudenspender_Condition()
@@ -445,10 +445,10 @@ FUNC INT Info_Mod_Leonhard_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Leonhard_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Leonhard_Freudenspender_15_00"); //Du siehst aus, als könntest du Freudenspender gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Freudenspender_36_01"); //Wie teuer?
-	AI_Output(hero, self, "Info_Mod_Leonhard_Freudenspender_15_02"); //10 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Leonhard_Freudenspender_36_03"); //Her damit!
+	AI_Output(hero, self, "Info_Mod_Leonhard_Freudenspender_15_00"); //You look like you could use some goodies.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Freudenspender_36_01"); //How expensive?
+	AI_Output(hero, self, "Info_Mod_Leonhard_Freudenspender_15_02"); //10 gold coins.
+	AI_Output(self, hero, "Info_Mod_Leonhard_Freudenspender_36_03"); //Give me that!
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

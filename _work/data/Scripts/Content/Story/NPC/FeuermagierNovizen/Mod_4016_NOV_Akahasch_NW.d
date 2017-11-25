@@ -1,7 +1,7 @@
 INSTANCE Mod_4016_NOV_Akahasch_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Akahasch";
+	name 		= "akahash";
 	guild 		= GIL_VLK;
 	id 			= 4016;
 	voice 		= 24;

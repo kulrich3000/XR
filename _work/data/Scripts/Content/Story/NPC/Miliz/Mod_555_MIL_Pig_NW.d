@@ -1,6 +1,6 @@
 instance Mod_555_MIL_Pig_NW (Npc_Default)
 {
-	name 		= "Pig";
+	name 		= "pig";
 	guild 		= GIL_PAL;
 	id 		= 555;
 	voice 	        = 12;

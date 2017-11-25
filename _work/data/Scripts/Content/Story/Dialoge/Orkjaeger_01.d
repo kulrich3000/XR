@@ -5,7 +5,7 @@ INSTANCE Info_Mod_Orkjaeger_01 (C_INFO)
 	condition	= Info_Mod_Orkjaeger_01_Condition;
 	information	= Info_Mod_Orkjaeger_01_Info;
 	permanent	= 1;
-	description 	= "Ich könnte etwas Unterstützung bei einem Orkproblem brauchen.";
+	description 	= "I could use some support on an orc problem.";
 };                       
 
 FUNC INT Info_Mod_Orkjaeger_01_Condition()
@@ -24,71 +24,71 @@ FUNC INT Info_Mod_Orkjaeger_01_Condition()
 
 FUNC VOID Info_Mod_Orkjaeger_01_Info()
 {
-	AI_Output(hero,self,"Info_Mod_Orkjaeger_01_15_00"); //Ich könnte etwas Unterstützung bei einem Orkproblem brauchen.
-	AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_01"); //Worum geht’s?
-	AI_Output(hero,self,"Info_Mod_Orkjaeger_01_15_02"); //In einer Höhle im Wald nahe dem Banditenlager kampiert eine Handvoll der haarigen Zeitgenossen.
+	AI_Output(hero,self,"Info_Mod_Orkjaeger_01_15_00"); //I could use some support on an orc problem.
+	AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_01"); //What's this about?
+	AI_Output(hero,self,"Info_Mod_Orkjaeger_01_15_02"); //In a cave in the forest near the bandit camp a handful of hairy contemporaries are camping.
 
 	if (Mod_Gilde == 4)
 	{
-		AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_03"); //Hmm, das klingt nicht ganz leicht. Aber wenn du läppische 200 Goldmünzen springen lässt – du gehörst ja zu unserem Lager - und zumindest einen weiteren Mann für die Aktion findest bin ich dabei.
+		AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_03"); //Hmm, that doesn't sound easy. But if you let some ridiculous 200 gold coins jump - you belong to our camp - and find at least one other man for the action, I'll be there.
 	}
 	else if ((Mod_Gilde == 5)
 	|| (Mod_Gilde == 19))
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Lee_HabPfeife))
 	{
-		AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_04"); //Hmm, das klingt nicht ganz leicht. Aber wenn du läppische 150 Goldmünzen springen lässt – du gehörst ja zu uns - und zumindest einen weiteren Mann für die Aktion findest bin ich dabei.
+		AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_04"); //Hmm, that doesn't sound easy. But if you let 150 gold coins jump - you are one of us - and at least find another man for the action, I'll be there.
 	}
 	else if ((Mod_Gilde == 5)
 	|| (Mod_Gilde == 19))
 	&& (Npc_KnowsInfo(hero, Info_Mod_Lee_HabPfeife))
 	{
-		AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_05"); //Hmm, das klingt nicht ganz leicht. Aber wenn du mir als mein Boss den Sold von 100 Goldmünzen zahlst und zumindest einen weiteren Mann für die Aktion findest bin ich dabei.
+		AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_05"); //Hmm, that doesn't sound easy. But if you, as my boss, pay me 100 gold coins and at least find another man for the action, I'll be there.
 	}
 	else
 	{
-		AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_06"); //Hmm, das klingt nicht ganz leicht. Aber wenn du 250 Goldmünzen springen lässt und und zumindest einen weiteren Mann für die Aktion findest bin ich dabei.
+		AI_Output(self,hero,"Info_Mod_Orkjaeger_01_11_06"); //Hmm, that doesn't sound easy. But if you jump 250 coins and find at least one more man for the action, I'll be there.
 	};
 
 	Info_ClearChoices	(Info_Mod_Orkjaeger_01);
 
-	Info_AddChoice	(Info_Mod_Orkjaeger_01, "Nein, das ist mir zu teuer.", Info_Mod_Orkjaeger_01_B);
+	Info_AddChoice	(Info_Mod_Orkjaeger_01, "No, it's too expensive.", Info_Mod_Orkjaeger_01_B);
 
 	if (Mod_Gilde == 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 200)
 	{
-		Info_AddChoice	(Info_Mod_Orkjaeger_01, "In Ordnung, hier hast du das Gold.", Info_Mod_Orkjaeger_01_A);
+		Info_AddChoice	(Info_Mod_Orkjaeger_01, "All right, here's the gold.", Info_Mod_Orkjaeger_01_A);
 	}
 	else if ((Mod_Gilde == 5)
 	|| (Mod_Gilde == 19))
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Lee_HabPfeife))
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 150)
 	{
-		Info_AddChoice	(Info_Mod_Orkjaeger_01, "In Ordnung, hier hast du das Gold.", Info_Mod_Orkjaeger_01_A);
+		Info_AddChoice	(Info_Mod_Orkjaeger_01, "All right, here's the gold.", Info_Mod_Orkjaeger_01_A);
 	}
 	else if ((Mod_Gilde == 5)
 	|| (Mod_Gilde == 19))
 	&& (Npc_KnowsInfo(hero, Info_Mod_Lee_HabPfeife))
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Orkjaeger_01, "In Ordnung, hier hast du das Gold.", Info_Mod_Orkjaeger_01_A);
+		Info_AddChoice	(Info_Mod_Orkjaeger_01, "All right, here's the gold.", Info_Mod_Orkjaeger_01_A);
 	}
 	else if (Npc_HasItems(hero, ItMi_Gold) >= 250)
 	{
-		Info_AddChoice	(Info_Mod_Orkjaeger_01, "In Ordnung, hier hast du das Gold.", Info_Mod_Orkjaeger_01_A);
+		Info_AddChoice	(Info_Mod_Orkjaeger_01, "All right, here's the gold.", Info_Mod_Orkjaeger_01_A);
 	};
 };
 
 FUNC VOID Info_Mod_Orkjaeger_01_B()
 {
-	AI_Output(hero,self,"Info_Mod_Orkjaeger_01_B_15_00"); //Nein, das ist mir zu teuer.
-	AI_Output(self,hero,"Info_Mod_Orkjaeger_01_B_11_01"); //Falls es dir doch anders überlegst, weißt du, wo du mich findest.
+	AI_Output(hero,self,"Info_Mod_Orkjaeger_01_B_15_00"); //No, it's too expensive.
+	AI_Output(self,hero,"Info_Mod_Orkjaeger_01_B_11_01"); //If you change your mind, you know where to find me.
 	
 	Info_ClearChoices	(Info_Mod_Orkjaeger_01);
 };
 
 FUNC VOID Info_Mod_Orkjaeger_01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Orkjaeger_01_A_15_00"); //In Ordnung, hier hast du das Gold.
+	AI_Output(hero, self, "Info_Mod_Orkjaeger_01_A_15_00"); //All right, here's the gold.
 
 	if (Mod_Gilde == 4)
 	{
@@ -113,7 +113,7 @@ FUNC VOID Info_Mod_Orkjaeger_01_A()
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 250);
 
-	AI_Output(self, hero, "Info_Mod_Orkjaeger_01_A_11_01"); //Gut, wir sehen uns dann beim Durchgang vor dem Wald.
+	AI_Output(self, hero, "Info_Mod_Orkjaeger_01_A_11_01"); //All right, I'll see you at the passage in front of the forest.
 	
 	Info_ClearChoices	(Info_Mod_Orkjaeger_01);
 

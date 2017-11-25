@@ -1,7 +1,7 @@
 INSTANCE Mod_556_NOV_Theodor_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Novize";
+	name 		= "novice";
 	guild 		= GIL_VLK;
 	id 		= 556;
 	voice 		= 13;

@@ -15,16 +15,16 @@ FUNC INT Info_Mod_Gizar_Hi_Condition()
 
 FUNC VOID Info_Mod_Gizar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gizar_Hi_10_00"); //Du sollst zu Nagon, Bruder. Er erwartet dich in der Kapelle.
-	AI_Output(hero, self, "Info_Mod_Gizar_Hi_15_01"); //Wer ist der Magier, der hier eben hochgerannt ist?
-	AI_Output(self, hero, "Info_Mod_Gizar_Hi_10_02"); //Das war Aaron. Er ist erst seit kurzem hier stationiert.
+	AI_Output(self, hero, "Info_Mod_Gizar_Hi_10_00"); //I want you to see Nagon, brother. He's expecting you in the chapel.
+	AI_Output(hero, self, "Info_Mod_Gizar_Hi_15_01"); //Who's the magician who just ran up here?
+	AI_Output(self, hero, "Info_Mod_Gizar_Hi_10_02"); //That was Aaron. He's only recently stationed here.
 
 	Npc_ClearAIQueue	(Mod_1771_KDF_Aaron_PAT);
 	AI_StandUp	(Mod_1771_KDF_Aaron_PAT);
 	B_StartOtherRoutine	(Mod_1771_KDF_Aaron_PAT, "TOT");
 	AI_Teleport	(Mod_1771_KDF_Aaron_PAT, "TOT");
 
-	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Ein Magier names Aaron, welcher erst seit kurzer Zeit hier im Kloster ist, ist nach dem Angriff des Trolls auf den Turm gerannt. Ich sollte der Sache mal auf den Grund gehen.");
+	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "A magician named Aaron, who has only been in the monastery for a short time, ran after the troll attacked the tower. I should get to the bottom of this.");
 };
 
 INSTANCE Info_Mod_Gizar_EXIT (C_INFO)

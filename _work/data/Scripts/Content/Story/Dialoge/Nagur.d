@@ -20,16 +20,16 @@ FUNC INT Info_Mod_Nagur_Hi_Condition()
 
 FUNC VOID Info_Mod_Nagur_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_00"); //(Zu sich selbst) Wenn ich diesen armseligen Hosenscheißer nur zwischen die Finger bekomme ...
-	AI_Output(hero, self, "Info_Mod_Nagur_Hi_15_01"); //Was?!
-	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_02"); //(zum Helden) Ach, so ein feiger Novize hat ordentlich Spielschulden gemacht und sich dann abgesetzt ... ist irgendwo Richtung Leuchtturm abgehauen.
-	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_03"); //(zweideutig) Aber zahlen soll er ... auf die eine oder andere Weise.
-	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_04"); //Wenn ihm nun irgendwas zustieße, würde ich demjenigen, der mir den Inhalt seiner Taschen bringt, großzügig entlohnen.
-	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_05"); //(zu sich selbst) Das wäre den anderen eine Warnung, lieber rechtzeitig ihre Schulden zu begleichen.
+	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_00"); //(To himself) If I can only get this pathetic pantshit between my fingers...
+	AI_Output(hero, self, "Info_Mod_Nagur_Hi_15_01"); //What?!
+	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_02"); //(to the hero) Oh, such a cowardly novice has made a lot of gambling debts and then settled... ran off somewhere towards the lighthouse.
+	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_03"); //But let him pay... one way or another.
+	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_04"); //If something were to happen to him, I would generously reward the person who brings me the contents of his pockets.
+	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_05"); //(to oneself) That would be a warning to the others to settle their debts in time.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Daron_HabTrank))
 	{
-		B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "Vermutlich ist Akahasch rauf in Richtung Leuchtturm. Er scheint Schulden zu haben. Nagur wünscht seinen Tod und bietet für den Inhalt seiner Taschen eine Belohnung.");
+		B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "Probably Akahasch is up towards the lighthouse. He seems to be in debt. Nagur wishes his death and offers a reward for the contents of his bags.");
 	};
 
 	Wld_InsertNpc	(Mod_4016_NOV_Akahasch_NW, "LIGHTHOUSE");
@@ -43,7 +43,7 @@ INSTANCE Info_Mod_Nagur_AkahaschTot (C_INFO)
 	information	= Info_Mod_Nagur_AkahaschTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Akahasch hatte einen kleinen 'Unfall' ...";
+	description	= "Akahasch had a little' accident'...";
 };
 
 FUNC INT Info_Mod_Nagur_AkahaschTot_Condition()
@@ -58,23 +58,23 @@ FUNC INT Info_Mod_Nagur_AkahaschTot_Condition()
 
 FUNC VOID Info_Mod_Nagur_AkahaschTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nagur_AkahaschTot_15_00"); //Akahasch hatte einen kleinen "Unfall" ...
-	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_01"); //(erwartungsvoll) Ja?
-	AI_Output(hero, self, "Info_Mod_Nagur_AkahaschTot_15_02"); //Er wird wohl leider nie wieder jemandem "beklauen" können ...
-	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_03"); //Das hört sich doch schon mal vielversprechend an. Was ist mit dem Zeug, das er bei sich hatte?
-	AI_Output(hero, self, "Info_Mod_Nagur_AkahaschTot_15_04"); //Er hatte zum einen ...
-	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_05"); //Nee, nicht im Detail ... ich will nur den Zettel als Beweis seines Ablebens.
-	AI_Output(hero, self, "Info_Mod_Nagur_AkahaschTot_15_06"); //Hier ist er.
+	AI_Output(hero, self, "Info_Mod_Nagur_AkahaschTot_15_00"); //Akahasch hatte einen kleinen "accident" ...
+	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_01"); //(anticipated) Yes?
+	AI_Output(hero, self, "Info_Mod_Nagur_AkahaschTot_15_02"); //Er wird wohl leider nie wieder jemandem "jack" können ...
+	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_03"); //That sounds promising. What about the stuff he had on him?
+	AI_Output(hero, self, "Info_Mod_Nagur_AkahaschTot_15_04"); //On the one hand, he had....
+	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_05"); //No, not in detail... as proof of his demise.
+	AI_Output(hero, self, "Info_Mod_Nagur_AkahaschTot_15_06"); //Here he is, sir.
 
 	B_GiveInvItems	(hero, self, ItWr_AkahaschNagur, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_07"); //Ja, da gibt es keinen Zweifel. Freiwillig hätte er dir den nicht in die Hand gedrückt.
+	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_07"); //Yeah, there's no doubt about it. He wouldn't have given it to you voluntarily.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 180);
 
-	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_08"); //Bist ein guter Junge. Hier, amüsier dich etwas auf meine Rechnung.
+	AI_Output(self, hero, "Info_Mod_Nagur_AkahaschTot_37_08"); //You're a good boy. Here, have some fun on my tab.
 
 	B_GivePlayerXP	(200);
 };
@@ -100,24 +100,24 @@ FUNC INT Info_Mod_Nagur_Geschaeft_Condition()
 
 FUNC VOID Info_Mod_Nagur_Geschaeft_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_00"); //Gut, dass jetzt hier auftauchst. Ich habe mal wieder einen Job für dich.
-	AI_Output(hero, self, "Info_Mod_Nagur_Geschaeft_15_01"); //Wen soll ich diesmal umbringen?
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_02"); //Den verräterischen Abschaum, der mal für mich gearbeitet hat.
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_03"); //Zwei von meinen Jungs machen nämlich seit kurzem gemeinsame Sache mit dem Schmugglerpack, das sich hier im Hafenviertel breit gemacht hat.
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_04"); //Jetzt glauben sie, mir die Preise diktieren zu können und versuchen mich Stück für Stück aus den Geschäften zu verdrängen.
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_05"); //Das wird aber nicht passieren ... denn du wirst ein Exempel an ihnen statuieren.
-	AI_Output(hero, self, "Info_Mod_Nagur_Geschaeft_15_06"); //Und was springt für mich dabei heraus?
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_07"); //Nun, ich gebe dir zum einen 200 Goldmünzen, zum anderen darfst du alles behalten, was du bei diesen Bastarden findest.
-	AI_Output(hero, self, "Info_Mod_Nagur_Geschaeft_15_08"); //Und wo finde ich sie?
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_09"); //Die Frage lautet in dem Fall wie. Du wirst in den Kisten zwischen Lagerhaus und Lastenkran ein Paket deponieren und anschließend zum Baum über dem Lagerhaus gehen, um von dort aus alles im Blick zu haben.
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_10"); //Einer von den Bastarden sollte kurz danach das Paket holen und in ihr Versteck gehen.
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_11"); //Du wirst ihm folgen und dort den Mistkerlen den Garaus machen. Noch Fragen? Nein? Dann hast du hier das Paket.
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_00"); //Good thing you showed up now. I have another job for you.
+	AI_Output(hero, self, "Info_Mod_Nagur_Geschaeft_15_01"); //Who am I gonna kill this time?
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_02"); //The traitorous scum who once worked for me.
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_03"); //Two of my boys have recently joined forces with the smuggler's pack that has spread in the harbour district.
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_04"); //Now they think they can dictate prices to me and try to squeeze me out of the shops bit by bit.
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_05"); //But that's not going to happen.... because you're gonna make an example of them.
+	AI_Output(hero, self, "Info_Mod_Nagur_Geschaeft_15_06"); //And what's in it for me?
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_07"); //Well, I'll give you 200 gold coins on the one hand, and you can keep everything you find on those bastards.
+	AI_Output(hero, self, "Info_Mod_Nagur_Geschaeft_15_08"); //And where can I find her?
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_09"); //The question in this case is how. You will deposit a package in the boxes between the warehouse and the cargo crane and then walk to the tree above the warehouse to see everything from there.
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_10"); //One of the bastards was supposed to pick up the package and go to her stash.
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft_37_11"); //You're gonna follow him and get rid of the bastards. Any more questions? No? Then you have the package here.
 
 	B_GiveInvItems	(self, hero, ItMi_NagurPaket, 1);
 
 	Log_CreateTopic	(TOPIC_MOD_NAGUR_GESCHAEFT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NAGUR_GESCHAEFT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Nagur hat Ärger mit einigen Konkurrenten im Hafenviertel. Um das Problem zu beheben, soll ich ein Paket in den Kisten zwischen Lagerhaus und Lastenkran deponieren, zu dem Baum über dem Lagerhaus gehen und alles im Blick behalten. Sobald einer von denen das Paket holt, soll ich ihm zum Versteck folgen und sie dort alle erledigen.");
+	B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Nagur's in trouble with some competitors in the port district. To solve the problem, I have to put a package in boxes between the warehouse and the crane, go to the tree above the warehouse and keep an eye on everything. As soon as one of them picks up the package, I'm supposed to follow him to the stash and take them all down there.");
 
 	var int ptr; ptr = MEM_SearchVobByName("KARDIFINFOTRUHE");
 
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Nagur_Geschaeft2 (C_INFO)
 	information	= Info_Mod_Nagur_Geschaeft2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Verräter und Schmuggler werden keinen Ärger mehr machen.";
+	description	= "The traitors and smugglers won't cause any more trouble.";
 };
 
 FUNC INT Info_Mod_Nagur_Geschaeft2_Condition()
@@ -152,15 +152,15 @@ FUNC INT Info_Mod_Nagur_Geschaeft2_Condition()
 
 FUNC VOID Info_Mod_Nagur_Geschaeft2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nagur_Geschaeft2_15_00"); //Die Verräter und Schmuggler werden keinen Ärger mehr machen.
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft2_37_01"); //Ausgezeichnet. Das wird allen anderen eine Warnung sein, sich besser nicht mit mir anzulegen.
-	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft2_37_02"); //Du hast deinen Job wieder mal gut gemacht. Hier ist dein Gold.
+	AI_Output(hero, self, "Info_Mod_Nagur_Geschaeft2_15_00"); //The traitors and smugglers won't cause any more trouble.
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft2_37_01"); //Excellent. This will be a warning to everyone else not to mess with me.
+	AI_Output(self, hero, "Info_Mod_Nagur_Geschaeft2_37_02"); //You did your job well again. Here's your gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
 	if (Mod_Nagur_Geschaeft == 4)
 	{
-		B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Ich habe gegenüber Nagur behauptet, dass ich die Jungs beseitigt hätte. Jetzt muss ich nur noch in den nächsten Tagen in der Hafenkneipe vorbeischauen.");
+		B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "I told Nagur I got rid of the boys. Now all I have to do is stop by the harbour pub in the next few days.");
 
 		B_GivePlayerXP	(150);
 
@@ -196,15 +196,15 @@ FUNC INT Info_Mod_Nagur_Rache_Condition()
 
 FUNC VOID Info_Mod_Nagur_Rache_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_00"); //(höhnisch) Na, hast du gefunden, was du gesucht hast?
+	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_00"); //Did you find what you were looking for?
 	AI_Output(hero, self, "Info_Mod_Nagur_Rache_15_01"); //Nagur?!
-	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_02"); //Überrascht mich zu sehen?
-	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_03"); //Ja, man hat mich eine ganze Weile aus dem Verkehr gezogen, habe lange im Kerker geschmort ... und ich hatte viel Zeit zum Nachdenken, wie ich mich bei demjenigen revanchiere, dem ich das zu verdanken habe.
-	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_04"); //Ich hoffe das Ergebnis gefällt dir ... das nette Wiedersehen mit deinem Kollegen.
+	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_02"); //Surprised to see me?
+	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_03"); //Yes, I've been taken out of circulation for quite a while, I've been stewing in the dungeon for a long time.... and I've had a lot of time to think about how to return the favor with whoever I owe it to.
+	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_04"); //I hope you like the result.... the nice reunion with your colleague.
 
 	AI_TurnToNpc	(self, Mod_7780_SNOV_Novize_NW);
 
-	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_05"); //(zu den beiden anderen) Jungs, dasselbe mit ihm, wie mit Akahasch!
+	AI_Output(self, hero, "Info_Mod_Nagur_Rache_37_05"); //The same to him as with Akahasch!
 
 	AI_TurnToNpc	(self, hero);
 

@@ -22,19 +22,19 @@ FUNC INT Info_Mod_Katar_Daron_Condition()
 
 FUNC VOID Info_Mod_Katar_Daron_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_00"); //Innos kann nicht immer vergeben ... Innos kann mich mal kreuzweise! Verdammter Prediger.
-	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_01"); //Du scheinst ja nicht so gut auf Innos zu sprechen zu sein.
-	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_02"); //Na und? Was geht’s dich an?
-	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_03"); //Ich hätte vielleicht etwas für jemanden zu tun, der Zugang zum Kloster hat.
-	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_04"); //Worum geht’s?
-	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_05"); //Die Feuermagier haben ein Buch im Kloster, das ich brauche.
-	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_06"); //Und das wäre?
-	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_07"); //Das Necronomicum.
-	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_08"); //Necronomi... was? Ist ja auch egal ... was springt für mich dabei raus?
-	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_09"); //Wie wäre es mit einem Paket Sumpfkraut?
-	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_10"); //Ein Paket Sumpfkraut, soso. Na gut, abgemacht. Triff mich morgen unter der Brücke in der Nähe der Taverne.
+	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_00"); //Innos cannot always forgive.... Innos can fuck me! Fucking preacher.
+	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_01"); //You don't seem to speak so well of Innos.
+	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_02"); //So what? What do you care?
+	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_03"); //I might have something to do for someone who has access to the monastery.
+	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_04"); //What's this about?
+	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_05"); //The Fire Magicians have a book in the monastery that I need.
+	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_06"); //And what's that?
+	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_07"); //The necronomic.
+	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_08"); //Necronomy... what? It doesn't matter anyway... what's in it for me?
+	AI_Output(hero, self, "Info_Mod_Katar_Daron_15_09"); //How about a packet of swampweed?
+	AI_Output(self, hero, "Info_Mod_Katar_Daron_03_10"); //A packet of bogweed, soso. All right, it's a deal. Meet me tomorrow under the bridge near the tavern.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Der Feuer Novize Katar wird mir das Buch für das Sumpfkrautpaket besorgen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "The fire Novice Qatar will get me the book for the bogweed package.");
 
 	AI_StopProcessInfos	(self);
 
@@ -68,34 +68,34 @@ FUNC INT Info_Mod_Katar_Necronomicum_Condition()
 
 FUNC VOID Info_Mod_Katar_Necronomicum_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Katar_Necronomicum_03_00"); //Da bist du ja endlich. Hier dein Buch.
+	AI_Output(self, hero, "Info_Mod_Katar_Necronomicum_03_00"); //There you are at last. Here's your book.
 
 	CreateInvItems	(self, ItWr_BeliarBook, 1);
 
-	AI_Output(hero, self, "Info_Mod_Katar_Necronomicum_15_01"); //Hier, dein Sumpfkraut.
+	AI_Output(hero, self, "Info_Mod_Katar_Necronomicum_15_01"); //Here's your swampweed.
 
 	B_GiveInvItems	(hero, self, ItMi_HerbPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Katar_Necronomicum_03_02"); //Ach ja ... wegen des Sumpfkrautes, ich hab's mir anders überlegt. Ich will noch 4.000 Goldstücke.
+	AI_Output(self, hero, "Info_Mod_Katar_Necronomicum_03_02"); //Oh, yes... I've changed my mind. I want four more. 000 gold pieces.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Ich habe das Buch von Katar erhalten und sollte es nun zu Karras bringen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "I have received the book from Qatar and should now take it to Karras.");
 
 	B_StartOtherRoutine	(self, "START");
 
 	Info_ClearChoices	(Info_Mod_Katar_Necronomicum);
 
-	Info_AddChoice	(Info_Mod_Katar_Necronomicum, "Du kriegst ein paar auf's Maul, wenn du mir das Buch nicht sofort gibst.", Info_Mod_Katar_Necronomicum_B);
+	Info_AddChoice	(Info_Mod_Katar_Necronomicum, "You'll get your mouth shut if you don't give me that book right now.", Info_Mod_Katar_Necronomicum_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 4000)
 	{
-		Info_AddChoice	(Info_Mod_Katar_Necronomicum, "Na gut, hier.", Info_Mod_Katar_Necronomicum_A);
+		Info_AddChoice	(Info_Mod_Katar_Necronomicum, "All right, here.", Info_Mod_Katar_Necronomicum_A);
 	};
 };
 
 FUNC VOID Info_Mod_Katar_Necronomicum_B()
 {
-	AI_Output(hero, self, "Info_Mod_Katar_Necronomicum_B_15_00"); //Du kriegst ein paar auf's Maul, wenn du mir das Buch nicht sofort gibst.
-	AI_Output(self, hero, "Info_Mod_Katar_Necronomicum_B_03_01"); //Versuch's doch.
+	AI_Output(hero, self, "Info_Mod_Katar_Necronomicum_B_15_00"); //You'll get your mouth shut if you don't give me that book right now.
+	AI_Output(self, hero, "Info_Mod_Katar_Necronomicum_B_03_01"); //Give it a shot.
 
 	Info_ClearChoices	(Info_Mod_Katar_Necronomicum);
 
@@ -106,11 +106,11 @@ FUNC VOID Info_Mod_Katar_Necronomicum_B()
 
 FUNC VOID Info_Mod_Katar_Necronomicum_A()
 {
-	AI_Output(hero, self, "Info_Mod_Katar_Necronomicum_A_15_00"); //Na gut, hier.
+	AI_Output(hero, self, "Info_Mod_Katar_Necronomicum_A_15_00"); //All right, here.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 4000);
 
-	AI_Output(self, hero, "Info_Mod_Katar_Necronomicum_A_03_01"); //Da, nimm.
+	AI_Output(self, hero, "Info_Mod_Katar_Necronomicum_A_03_01"); //Here, take it.
 
 	B_GiveInvItems	(self, hero, ItWr_BeliarBook, 1);
 

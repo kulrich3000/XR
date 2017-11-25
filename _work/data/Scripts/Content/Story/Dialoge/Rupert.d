@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rupert_Hi (C_INFO)
 	information	= Info_Mod_Rupert_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Handelst du?";
+	description	= "Are you trading?";
 };
 
 FUNC INT Info_Mod_Rupert_Hi_Condition()
@@ -19,50 +19,50 @@ FUNC INT Info_Mod_Rupert_Hi_Condition()
 
 FUNC VOID Info_Mod_Rupert_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rupert_Hi_15_00"); //Handelst du?
-	AI_Output(self, hero, "Info_Mod_Rupert_Hi_03_01"); //(druckst herum) Äh ... na ja ... heute eigentlich nicht.
-	AI_Output(hero, self, "Info_Mod_Rupert_Hi_15_02"); //Dir passt mein Gesicht wohl nicht?
-	AI_Output(self, hero, "Info_Mod_Rupert_Hi_03_03"); //Nein, nein, es ist nur ... (flüstert) Garond sieht es nicht gern, wenn ich euch Sträflingen was verkaufe.
-	AI_Output(self, hero, "Info_Mod_Rupert_Hi_03_04"); //Und ich hab meine Handelslizenz noch nicht lange, verstehst du?
+	AI_Output(hero, self, "Info_Mod_Rupert_Hi_15_00"); //Are you trading?
+	AI_Output(self, hero, "Info_Mod_Rupert_Hi_03_01"); //(pressing around) Uh.... well.... not really today.
+	AI_Output(hero, self, "Info_Mod_Rupert_Hi_15_02"); //You don't like my face, do you?
+	AI_Output(self, hero, "Info_Mod_Rupert_Hi_03_03"); //No, no, it's just... (whispers) Garond doesn't like it when I sell you convicts.
+	AI_Output(self, hero, "Info_Mod_Rupert_Hi_03_04"); //And I don't have my trading license for long, you know?
 
 	Info_ClearChoices	(Info_Mod_Rupert_Hi);
 
-	Info_AddChoice	(Info_Mod_Rupert_Hi, "Rück die Waren raus oder es setzt was!", Info_Mod_Rupert_Hi_C);
-	Info_AddChoice	(Info_Mod_Rupert_Hi, "Ich verstehe vollkommen. Du bist ein Feigling.", Info_Mod_Rupert_Hi_B);
-	Info_AddChoice	(Info_Mod_Rupert_Hi, "In Ordnung, dann nicht.", Info_Mod_Rupert_Hi_A);
+	Info_AddChoice	(Info_Mod_Rupert_Hi, "Give me the goods or I'll spill!", Info_Mod_Rupert_Hi_C);
+	Info_AddChoice	(Info_Mod_Rupert_Hi, "I completely understand. You're a coward.", Info_Mod_Rupert_Hi_B);
+	Info_AddChoice	(Info_Mod_Rupert_Hi, "All right, then, don't.", Info_Mod_Rupert_Hi_A);
 };
 
 FUNC VOID Info_Mod_Rupert_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Rupert_Hi_C_15_00"); //Rück die Waren raus oder es setzt was!
-	AI_Output(self, hero, "Info_Mod_Rupert_Hi_C_03_01"); //(nervös) Mach keinen Unfug!
+	AI_Output(hero, self, "Info_Mod_Rupert_Hi_C_15_00"); //Give me the goods or I'll spill!
+	AI_Output(self, hero, "Info_Mod_Rupert_Hi_C_03_01"); //Don't do anything stupid!
 
 	Info_ClearChoices	(Info_Mod_Rupert_Hi);
 
-	Info_AddChoice	(Info_Mod_Rupert_Hi, "Du hast es so gewollt!", Info_Mod_Rupert_Hi_E);
-	Info_AddChoice	(Info_Mod_Rupert_Hi, "Wir sprechen uns noch.", Info_Mod_Rupert_Hi_D);
+	Info_AddChoice	(Info_Mod_Rupert_Hi, "You asked for it!", Info_Mod_Rupert_Hi_E);
+	Info_AddChoice	(Info_Mod_Rupert_Hi, "I'll talk to you later.", Info_Mod_Rupert_Hi_D);
 };
 
 FUNC VOID Info_Mod_Rupert_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Rupert_Hi_B_15_00"); //Ich verstehe vollkommen. Du bist ein Feigling.
-	AI_Output(self, hero, "Info_Mod_Rupert_Hi_B_03_01"); //Bin ich nicht! Ich muss doch auch sehen, wo ich bleibe.
-	AI_Output(hero, self, "Info_Mod_Rupert_Hi_B_15_02"); //Du kannst bleiben, wo der Pfeffer wächst.
+	AI_Output(hero, self, "Info_Mod_Rupert_Hi_B_15_00"); //I completely understand. You're a coward.
+	AI_Output(self, hero, "Info_Mod_Rupert_Hi_B_03_01"); //I am not! I have to see where I'm staying.
+	AI_Output(hero, self, "Info_Mod_Rupert_Hi_B_15_02"); //You can stay where the pepper grows.
 
 	Info_ClearChoices	(Info_Mod_Rupert_Hi);
 };
 
 FUNC VOID Info_Mod_Rupert_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Rupert_Hi_A_15_00"); //In Ordnung, dann nicht.
-	AI_Output(self, hero, "Info_Mod_Rupert_Hi_A_03_01"); //Danke für dein Verständnis. Später vielleicht.
+	AI_Output(hero, self, "Info_Mod_Rupert_Hi_A_15_00"); //All right, then, don't.
+	AI_Output(self, hero, "Info_Mod_Rupert_Hi_A_03_01"); //Thank you for understanding. Later, maybe.
 
 	Info_ClearChoices	(Info_Mod_Rupert_Hi);
 };
 
 FUNC VOID Info_Mod_Rupert_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Rupert_Hi_E_15_00"); //Du hast es so gewollt!
+	AI_Output(hero, self, "Info_Mod_Rupert_Hi_E_15_00"); //You asked for it!
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Rupert_Hi);
@@ -74,7 +74,7 @@ FUNC VOID Info_Mod_Rupert_Hi_E()
 
 FUNC VOID Info_Mod_Rupert_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Rupert_Hi_D_15_00"); //Wir sprechen uns noch.
+	AI_Output(hero, self, "Info_Mod_Rupert_Hi_D_15_00"); //I'll talk to you later.
 
 	Info_ClearChoices	(Info_Mod_Rupert_Hi);
 };
@@ -99,32 +99,32 @@ FUNC INT Info_Mod_Rupert_Handelt_Condition()
 
 FUNC VOID Info_Mod_Rupert_Handelt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rupert_Handelt_03_00"); //Warte mal, ich würde jetzt mir dir handeln.
+	AI_Output(self, hero, "Info_Mod_Rupert_Handelt_03_00"); //Wait a minute, I'd be dealing with you now.
 
 	Info_ClearChoices	(Info_Mod_Rupert_Handelt);
 
-	Info_AddChoice	(Info_Mod_Rupert_Handelt, "Vergiss es. Mein Gold kriegen andere Händler als du.", Info_Mod_Rupert_Handelt_B);
-	Info_AddChoice	(Info_Mod_Rupert_Handelt, "Dann zeig mal her.", Info_Mod_Rupert_Handelt_A);
+	Info_AddChoice	(Info_Mod_Rupert_Handelt, "Forget about it. My gold goes to dealers other than you.", Info_Mod_Rupert_Handelt_B);
+	Info_AddChoice	(Info_Mod_Rupert_Handelt, "Well, let me see it.", Info_Mod_Rupert_Handelt_A);
 };
 
 FUNC VOID Info_Mod_Rupert_Handelt_B()
 {
-	AI_Output(hero, self, "Info_Mod_Rupert_Handelt_B_15_00"); //Vergiss es. Mein Gold kriegen andere Händler als du.
+	AI_Output(hero, self, "Info_Mod_Rupert_Handelt_B_15_00"); //Forget about it. My gold goes to dealers other than you.
 
 	Info_ClearChoices	(Info_Mod_Rupert_Handelt);
 };
 
 FUNC VOID Info_Mod_Rupert_Handelt_A()
 {
-	AI_Output(hero, self, "Info_Mod_Rupert_Handelt_A_15_00"); //Dann zeig mal her.
-	AI_Output(self, hero, "Info_Mod_Rupert_Handelt_A_03_01"); //Such dir was aus!
+	AI_Output(hero, self, "Info_Mod_Rupert_Handelt_A_15_00"); //Well, let me see it.
+	AI_Output(self, hero, "Info_Mod_Rupert_Handelt_A_03_01"); //Take your pick!
 
 	Info_ClearChoices	(Info_Mod_Rupert_Handelt);
 
 	Mod_RupertHandelt = 1;
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Rupert handelt jetzt mit mir.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Rupert's trading with me now.");
 };
 
 INSTANCE Info_Mod_Rupert_MatteoLehrling1 (C_INFO)
@@ -135,7 +135,7 @@ INSTANCE Info_Mod_Rupert_MatteoLehrling1 (C_INFO)
 	information	= Info_Mod_Rupert_MatteoLehrling1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hat sich da unter deinem Stand gerade etwas bewegt? (Apfel platzieren)";
+	description	= "Did something just move under your feet? (place apple)";
 };
 
 FUNC INT Info_Mod_Rupert_MatteoLehrling1_Condition()
@@ -169,7 +169,7 @@ INSTANCE Info_Mod_Rupert_MatteoLehrling2 (C_INFO)
 	information	= Info_Mod_Rupert_MatteoLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, wird der da drüben nicht gesucht? (Apfel platzieren)";
+	description	= "Hey, ain't they looking for him over there? (place apple)";
 };
 
 FUNC INT Info_Mod_Rupert_MatteoLehrling2_Condition()
@@ -203,7 +203,7 @@ INSTANCE Info_Mod_Rupert_MatteoLehrling3 (C_INFO)
 	information	= Info_Mod_Rupert_MatteoLehrling3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schöne Äpfel hast du da ... (Apfel platzieren)";
+	description	= "Nice apples you have there... (place apple)";
 };
 
 FUNC INT Info_Mod_Rupert_MatteoLehrling3_Condition()
@@ -245,15 +245,15 @@ FUNC INT Info_Mod_Rupert_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Rupert_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_00"); //(leise) Hey, du bewegst dich doch viel in der Umgebung und kennst dich aus.
-	AI_Output(hero, self, "Info_Mod_Rupert_Daemonisch_15_01"); //Ja, wieso?
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_02"); //(leise) Psst, nicht so laut. Ich weiß nicht, ob man uns vielleicht belauscht ...
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_03"); //Ich habe abends merkwürdige Dinge vor der Stadt gesehen und bin mir nicht sicher, was ich davon halten soll.
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_04"); //Im Moment weiß ich nicht so recht, wem ich aus der Stadt trauen kann ...
-	AI_Output(hero, self, "Info_Mod_Rupert_Daemonisch_15_05"); //(leise) Was ist denn vorgefallen?
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_06"); //(leise) Komm am späten Abend einfach hierher. Dann werde ich dir zeigen, wovon ich spreche.
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_00"); //Hey, you move around a lot and you know your way around.
+	AI_Output(hero, self, "Info_Mod_Rupert_Daemonisch_15_01"); //Yeah, why?
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_02"); //Shh, not so loud. I don't know if we're being overheard....
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_03"); //I saw strange things in the evening outside the city and I'm not sure what to think of them.
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_04"); //Right now I don't really know who I can trust from the city....
+	AI_Output(hero, self, "Info_Mod_Rupert_Daemonisch_15_05"); //What the hell happened?
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch_03_06"); //(quietly) Just come over here late at night. Then I'll show you what I'm talking about.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Rupert will sich am späten Abend mit mir am Südtor treffen, um mir etwas zu zeigen. Er war sehr vorsichtig, als müsse er befürchten, belauscht zu werden.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Rupert wants to meet me at the south gate late in the evening to show me something. He was very careful, as if he had to fear being overheard.");
 
 	AI_StopProcessInfos	(self);
 
@@ -281,7 +281,7 @@ FUNC INT Info_Mod_Rupert_Daemonisch2_Condition()
 
 FUNC VOID Info_Mod_Rupert_Daemonisch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch2_03_00"); //Da bist du ja. Begleite mich unauffällig ...
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch2_03_00"); //Oh, there you are. Accompany me unobtrusively....
 
 	AI_StopProcessInfos	(self);
 
@@ -309,12 +309,12 @@ FUNC INT Info_Mod_Rupert_Daemonisch3_Condition()
 
 FUNC VOID Info_Mod_Rupert_Daemonisch3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch3_03_00"); //So, hier sind wir.
-	AI_Output(hero, self, "Info_Mod_Rupert_Daemonisch3_15_01"); //Aber ... hier ist doch gar nichts.
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch3_03_02"); //Noch nicht.
-	AI_Output(hero, self, "Info_Mod_Rupert_Daemonisch3_15_03"); //Hey, was soll das?
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch3_03_04"); //Ich bereite nur alles vor.
-	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch3_03_05"); //Nun bereite dich darauf vor uns beizutreten ... oder zu sterben.
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch3_03_00"); //Well, here we are.
+	AI_Output(hero, self, "Info_Mod_Rupert_Daemonisch3_15_01"); //But... There's nothing here.
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch3_03_02"); //Not yet.
+	AI_Output(hero, self, "Info_Mod_Rupert_Daemonisch3_15_03"); //Hey, what are you doing?
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch3_03_04"); //I'm just preparing everything.
+	AI_Output(self, hero, "Info_Mod_Rupert_Daemonisch3_03_05"); //Now get ready to join us.... or die.
 
 	AI_StopProcessInfos	(self);
 
@@ -327,7 +327,7 @@ FUNC VOID Info_Mod_Rupert_Daemonisch3_Info()
 	Wld_InsertNpc	(Mod_13020_SP_Seelenpeiniger_NW, "NW_FARM1_CITYWALL_02_B");
 	Wld_InsertNpc	(Zombie_Rupert, "NW_FARM1_CITYWALL_02_B");
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Eine Falle! Ich bin mitten im Wald von Lauter schwarzer Schatten umgeben.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "A trap! I'm surrounded by black shadows in the middle of the forest.");
 
 	B_GivePlayerXP	(300);
 };

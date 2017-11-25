@@ -1,7 +1,7 @@
 instance Mod_7358_DMR_Daemonenritter_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Minenwache"; 
+	name 		= "mine guard"; 
 	guild 		= GIL_KDF;
 	id 			= 7358;
 	voice 		= 5;

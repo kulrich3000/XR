@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Talamon_Hi (C_INFO)
 	information	= Info_Mod_Talamon_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Talamon_Hi_Condition()
@@ -20,11 +20,11 @@ FUNC VOID Info_Mod_Talamon_Hi_Info()
 
 	if (Kapitel < 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Talamon_Hi_38_01"); //Ich bin Talamon, Wächter der Bilbiothek.
+		AI_Output(self, hero, "Info_Mod_Talamon_Hi_38_01"); //I'm Talamon, guardian of the library.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Talamon_Hi_38_02"); //Ich bin Talamon, Stellvertreter für Pyrokar.
+		AI_Output(self, hero, "Info_Mod_Talamon_Hi_38_02"); //I'm Talamon, deputy for Pyrokar.
 	};
 };
 
@@ -50,8 +50,8 @@ FUNC INT Info_Mod_Talamon_Patherion_Condition()
 
 FUNC VOID Info_Mod_Talamon_Patherion_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talamon_Patherion_38_00"); //Gut, dass du kommst, Bruder! Garan hat mir einen Boten geschickt. Deine Anwesenheit in Patherion ist erwünscht.
-	AI_Output(hero, self, "Info_Mod_Talamon_Patherion_15_01"); //Ich mache mich sofort auf den Weg.
+	AI_Output(self, hero, "Info_Mod_Talamon_Patherion_38_00"); //Good of you to come, brother! Garan sent me a messenger. Your presence in Patherion is welcome.
+	AI_Output(hero, self, "Info_Mod_Talamon_Patherion_15_01"); //I'll be on my way right away.
 
 	AI_StopProcessInfos	(self);
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Talamon_Befoerderung (C_INFO)
 	information	= Info_Mod_Talamon_Befoerderung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin bereit Ordenspriester zu werden.";
+	description	= "I'm ready to be a priest of the order.";
 };
 
 FUNC INT Info_Mod_Talamon_Befoerderung_Condition()
@@ -78,14 +78,14 @@ FUNC INT Info_Mod_Talamon_Befoerderung_Condition()
 
 FUNC VOID Info_Mod_Talamon_Befoerderung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Talamon_Befoerderung_15_00"); //Ich bin bereit, Ordenspriester zu werden.
-	AI_Output(self, hero, "Info_Mod_Talamon_Befoerderung_38_01"); //Du hast Innos deine Loyalität bewiesen und da Pyrokar mich dazu befugt hat, ernenne ich dich hiermit zum Ordenspriester Innos'.
-	AI_Output(self, hero, "Info_Mod_Talamon_Befoerderung_38_02"); //Ich hoffe, du missbrauchst die Macht nicht, die du durch diesen Rang erlangt hast.
-	AI_Output(self, hero, "Info_Mod_Talamon_Befoerderung_38_03"); //Hier ist deine neue Robe.
+	AI_Output(hero, self, "Info_Mod_Talamon_Befoerderung_15_00"); //I'm ready to be a priest of the order.
+	AI_Output(self, hero, "Info_Mod_Talamon_Befoerderung_38_01"); //You have proved your loyalty to Innos and since Pyrokar has given me the authority to do so, I hereby declare you a priest of the order Innos'.
+	AI_Output(self, hero, "Info_Mod_Talamon_Befoerderung_38_02"); //I hope you don't abuse the power that you have gained through this rank.
+	AI_Output(self, hero, "Info_Mod_Talamon_Befoerderung_38_03"); //Here's your new robe.
 
 	CreateInvItems	(hero, ItAr_Kdf_H, 1);
 
-	B_ShowGivenThings	("Ordenspriesterrobe erhalten");
+	B_ShowGivenThings	("Order priest robe preserved");
 
 	AI_UnequipArmor	(hero);
 	AI_EquipArmor	(hero, ItAr_Kdf_H);
@@ -107,7 +107,7 @@ INSTANCE Info_Mod_Talamon_Ruestung (C_INFO)
 	information	= Info_Mod_Talamon_Ruestung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir eine bessere Robe bekommen?";
+	description	= "Can I get a better robe with you?";
 };
 
 FUNC INT Info_Mod_Talamon_Ruestung_Condition()
@@ -122,32 +122,32 @@ FUNC INT Info_Mod_Talamon_Ruestung_Condition()
 
 FUNC VOID Info_Mod_Talamon_Ruestung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Talamon_Ruestung_15_00"); //Kann ich bei dir eine bessere Robe bekommen?
+	AI_Output(hero, self, "Info_Mod_Talamon_Ruestung_15_00"); //Can I get a better robe with you?
 
 	if (Kapitel > 1)
 	&& (Mod_ErsteVerbesserung == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_38_02"); //Ich habe gehört, dass beim Pass zum Minental ein Feuersnapper sein soll. Mit dessen Haut könnte ich deine Feuernovizenrobe sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_38_02"); //I hear there's a fire snapper at the Minental pass. With his skin, I could certainly improve your fire retreat a little bit.
 	
 		Mod_ErsteVerbesserung = TRUE;
 	
 		Wld_InsertNpc	(Feuersnapper,	"NW_PASS_06");
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Beim Pass zum Minental soll sich ein Feuersnapper befinden, mit dessen Haut Talamon meine Feuer Novizenrobe verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "At the Minental pass there is said to be a fire snapper whose skin Talamon can use to improve my fire novice robe.");
 	};
 
 	if (Kapitel > 3)
 	&& (Mod_ZweiteVerbesserung == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_38_03"); //Ich habe gehört, dass beim Weg zur Ausgrabungsstätte der Wassermagier ein Feuerläufer sein soll. Mit dessen Fell könnte ich deine Feuermagierrobe sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_38_03"); //I have heard that on the way to the excavation site the water magician is said to be a firefighter. With its fur I could certainly improve your fire magic robe a little bit.
 	
 		Mod_ZweiteVerbesserung = TRUE;
 	
 		Wld_InsertNpc	(Feuerlaeufer,	"FP_MAGICGOLEM");
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Auf dem Weg zur Ausgrabungsstätte der Wassermagier soll sich ein Feuerläufer befinden, mit dessen Fell Talamon meine Feuermagierrobe verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "On the way to the water magician's excavation site there is a Firefighter, whose fur Talamon can use to improve my Fire Mage Robe.");
 	};
 
 	Info_ClearChoices	(Info_Mod_Talamon_Ruestung);
@@ -156,13 +156,13 @@ FUNC VOID Info_Mod_Talamon_Ruestung_Info()
 	if (Mod_ErsteVerbesserung == TRUE)
 	&& (Mod_Gilde == 6)
 	{
-		Info_AddChoice	(Info_Mod_Talamon_Ruestung, "Feuer-Novizenrobe verbessern", Info_Mod_Talamon_Ruestung_NOV_S);
+		Info_AddChoice	(Info_Mod_Talamon_Ruestung, "Improve Fire Novice Sample", Info_Mod_Talamon_Ruestung_NOV_S);
 	};
 
 	if (Mod_ZweiteVerbesserung == TRUE)
 	&& (Mod_Gilde == 7)
 	{
-		Info_AddChoice	(Info_Mod_Talamon_Ruestung, "Feuermagierrobe verbessern", Info_Mod_Talamon_Ruestung_KDF_S);
+		Info_AddChoice	(Info_Mod_Talamon_Ruestung, "Improve Fire Mage Robe", Info_Mod_Talamon_Ruestung_KDF_S);
 	};
 };
 
@@ -172,12 +172,12 @@ FUNC VOID Info_Mod_Talamon_Ruestung_BACK ()
 };
 
 FUNC VOID Info_Mod_Talamon_AllesKlar() {
-	AI_Output(self, hero, "Info_Mod_Talamon_AllesKar_38_00"); //Alles klar.
+	AI_Output(self, hero, "Info_Mod_Talamon_AllesKar_38_00"); //All clear.
 };
 
 FUNC VOID Info_Mod_Talamon_Ruestung_NOV_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Talamon_Ruestung_NOV_S_15_00"); //Verbessere meine Feuernovizenrobe.
+	AI_Output(hero, self, "Info_Mod_Talamon_Ruestung_NOV_S_15_00"); //Improve my fire retreat.
 
 	if (Npc_HasItems(hero, ItAt_FeuersnapperHaut) == 1)
 	&& (Npc_HasItems(hero, ItAr_NOV_L) == 1)
@@ -201,11 +201,11 @@ FUNC VOID Info_Mod_Talamon_Ruestung_NOV_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_NOV_L) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_NOV_S_38_02"); //Du musst schon eine Feuernovizenrobe haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_NOV_S_38_02"); //You must have a fire drill or I won't be able to fix it for you.
 	}
 	else if (Npc_HasItems(hero, ItAt_Feuersnapperhaut) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_NOV_S_38_03"); //Wenn du keine Snapperhaut bei dir hast, kann ich deine Robe nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_NOV_S_38_03"); //If you don't have snapper skin on you, I can't improve your robe.
 	};
 
 	Info_ClearChoices	(Info_Mod_Talamon_Ruestung);
@@ -213,7 +213,7 @@ FUNC VOID Info_Mod_Talamon_Ruestung_NOV_S ()
 
 FUNC VOID Info_Mod_Talamon_Ruestung_KDF_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Talamon_Ruestung_KDF_S_15_00"); //Verbessere meine Feuermagierrobe.
+	AI_Output(hero, self, "Info_Mod_Talamon_Ruestung_KDF_S_15_00"); //Improve my fire magic robe.
 
 	if (Npc_HasItems(hero, ItAt_FireShadowFur) == 1)
 	&& (Npc_HasItems(hero, ItAr_KDF_L) == 1)
@@ -237,11 +237,11 @@ FUNC VOID Info_Mod_Talamon_Ruestung_KDF_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_KDF_L_FEUER) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_KDF_S_38_02"); //Du musst schon eine Feuermagierrobe haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_KDF_S_38_02"); //You must have a fire magic robe or I won't be able to fix it for you.
 	}
 	else if (Npc_HasItems(hero, ItAt_FireShadowFur) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_KDF_S_38_03"); //Wenn du nicht das Feuerläuferfell hast, kann ich deine Robe nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Talamon_Ruestung_KDF_S_38_03"); //If you don't have the firecracker fur, I can't improve your robe.
 	};
 
 	Info_ClearChoices	(Info_Mod_Talamon_Ruestung);
@@ -283,7 +283,7 @@ func int Info_Mod_Talamon_FirstWarn_Condition()
 
 func void Info_Mod_Talamon_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Talamon_FirstWarn_38_00"); //Es ist dir nicht gestattet weiterzugehen. Kehr um!
+	AI_Output (self, hero,"Info_Mod_Talamon_FirstWarn_38_00"); //You're not allowed to go any further. Turn back!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Talamon_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -316,7 +316,7 @@ FUNC INT Info_Mod_Talamon_SecondWarn_Condition()
 
 func void Info_Mod_Talamon_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Talamon_SecondWarn_38_00"); //Innos wird seinen Zorn auf dich richten, wenn du nicht umkehrst!
+	AI_Output (self, hero,"Info_Mod_Talamon_SecondWarn_38_00"); //Innos will judge his anger upon you if you do not turn back!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Talamon_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -492,7 +492,7 @@ FUNC INT Info_Mod_Talamon_EXIT_Condition()
 
 FUNC VOID Info_Mod_Talamon_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Talamon_EXIT_38_00"); //Magie zu ehren!
+	AI_Output(self, hero, "Info_Mod_Talamon_EXIT_38_00"); //To honor magic!
 
 	AI_StopProcessInfos	(self);
 };

@@ -1,7 +1,7 @@
 INSTANCE Mod_7424_OUT_Narkomane_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Narkomane";
+	name 		= "narcomaniac";
 	guild 		= GIL_OUT;
 	id 			= 7424;
 	voice 		= 8;

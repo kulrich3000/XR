@@ -15,23 +15,23 @@ FUNC INT Info_Mod_Willingham_Hi_Condition()
 
 FUNC VOID Info_Mod_Willingham_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_00"); //Ah! Ein neues Gesicht und dazu noch ein starker Körper. Sprich mein Freund, weshalb kommst du zu mir?
-	AI_Output(hero, self, "Info_Mod_Willingham_Hi_15_01"); //Ich will mich bei euch nützlich machen, Kommander, um euer Land kennen zu lernen und zu sehen, wie es um euch steht.
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_02"); //Gut! Aber bevor ich dir etwas über uns erzähle, bitte ich dich, mir einen Gefallen zu tun.
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_03"); //Ich habe einen Spähtrupp zum zerfallenen Turm auf dem rauen Berg entsand, um die Lage am Pass auszuspähen und den Wald davor nach Orks zu durchsuchen.
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_04"); //Mittlerweile sind sie allerdings schon zwei Tage überfällig und müssten schon längst wieder hier sein.
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_05"); //Ich kann nicht noch mehr meiner Männer dorthin schicken, aber du weißt wie man einen langen Weg sicher übersteht.
-	AI_Output(hero, self, "Info_Mod_Willingham_Hi_15_06"); //Der Weg wird weniger das Problem sein, als das, was deine Leute aufgehalten hat ...
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_07"); //Ich werde dich natürlich bezahlen und mein Vertrauen ist dir dann auch sicher.
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_08"); //Den rauen Berg siehst du, wenn du aus dem Stadttor gehst, genau vor dir. Auf ihn führt ein Pass, der rechts aus dem Berg mündet.
-	AI_Output(hero, self, "Info_Mod_Willingham_Hi_15_09"); //Wenn ich deine Leute finde, was soll ich ihnen sagen?
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_10"); //Ich will wissen, was sie zu berichten haben. Bring sie dann sicher zu mir.
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_11"); //Ach, und wenn du auf dem Weg bei einem kleinen Holzfällerlager Baro siehst, dann richte ihm aus, er soll sich auch bei mir melden.
-	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_12"); //Nun geh und komm bald mit meinen Männern wieder.
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_00"); //Ah! A new face and a strong body. Speak my friend, why are you coming to me?
+	AI_Output(hero, self, "Info_Mod_Willingham_Hi_15_01"); //I want to make myself useful to you, commander, to get to know your country and to see how you are doing.
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_02"); //Good! But before I tell you anything about us, I'm asking you to do me a favor.
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_03"); //I sent a patrol to the crumbling tower on the rugged mountain to scout the pass and search the forest for orcs in front of it.
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_04"); //In the meantime, however, they are two days overdue and should have been here by now.
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_05"); //I can't send any more of my men there, but you know how to make it through a long road.
+	AI_Output(hero, self, "Info_Mod_Willingham_Hi_15_06"); //The path will be less of a problem than what stopped your people....
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_07"); //I'll pay you, of course, and then you'll have my trust.
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_08"); //You can see the rugged mountain right in front of you when you leave the city gate. A pass leads to it, which flows out of the mountain on the right.
+	AI_Output(hero, self, "Info_Mod_Willingham_Hi_15_09"); //If I find your people, what should I tell them?
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_10"); //I want to know what they have to report. Then bring her to me safely.
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_11"); //Oh, and if you see Baro on the way to a small lumberjack camp, tell him to contact me.
+	AI_Output(self, hero, "Info_Mod_Willingham_Hi_08_12"); //Now go and come back with my men soon.
 
 	Log_CreateTopic	(TOPIC_MOD_EIS_RAUESCHNEIDE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EIS_RAUESCHNEIDE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EIS_RAUESCHNEIDE, "Ich soll für Kommander Willingham beim zerfallen Turm auf dem rauen Berg im Norden nach seinen Männern sehen und sie sicher ins Dorf zurückbringen. Außerdem soll ich unterwegs noch dem Holzfäller Baro Bescheid geben, dass er beim Kommander Bericht abliefern soll.");
+	B_LogEntry	(TOPIC_MOD_EIS_RAUESCHNEIDE, "For Commander Willingham's sake, I shall look after his men at the crumbling tower on the rugged mountain in the north and bring them safely back to the village. On the way I shall also inform the logger Baro that he is to deliver a report to the commander.");
 
 	Wld_InsertNpc	(Mod_7730_OUT_Brendan_EIS, "NORTDGEBIET_93");
 	Wld_InsertNpc	(Mod_7731_OUT_Wache_EIS, "NORTDGEBIET_88");
@@ -75,11 +75,11 @@ FUNC INT Info_Mod_Willingham_RaueSchneide_Condition()
 
 FUNC VOID Info_Mod_Willingham_RaueSchneide_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_00"); //Wenn die Orks den Pass angreifen sind wir mit der Außenwelt nur noch durch den Steinkreis verbunden und sie haben uns in der Zange.
-	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_01"); //Ihre Anzahl könnte fast stark genug sein, um das Dorf anzugreifen.
-	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_02"); //Wir müssen herausfinden, wie sie in so hoher Anzahl auf einmal in unser Tal gelangt sind.
-	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_03"); //Baro meinte er hätte eine Idee wie wir darüber mehr erfahren können. Er wollte mit dir darüber sprechen.
-	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_04"); //Du findest ihn im Haus direkt neber dem des Bürgermeisters. Am besten suchst du ihn jetzt auf und erstattest mir dann was er weiß.
+	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_00"); //When the orcs attack the pass, we are connected to the outside world only through the stone circle and they have us in their pliers.
+	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_01"); //Their numbers could be almost strong enough to attack the village.
+	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_02"); //We need to find out how many of them got into our valley at once.
+	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_03"); //Baro said he had an idea how we could learn more about it. He wanted to talk to you about it.
+	AI_Output(self, hero, "Info_Mod_Willingham_RaueSchneide_08_04"); //You'll find him in the house right next to the mayor's. Why don't you go see him now and refund me what he knows?
 
 	CurrentNQ += 1;
 
@@ -89,7 +89,7 @@ FUNC VOID Info_Mod_Willingham_RaueSchneide_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_EIS_ORKRING, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EIS_ORKRING, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EIS_ORKRING, "Kommander Willingham will wissen, woher die Orks kommen. Ich soll Baro aufsuchen, der mir mit Informationen wird dienen können.");
+	B_LogEntry	(TOPIC_MOD_EIS_ORKRING, "Commander Willingham wants to know where the orcs come from. I'm to see Baro, who will be able to help me with information.");
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -114,19 +114,19 @@ FUNC INT Info_Mod_Willingham_UntoteOrks_Condition()
 
 FUNC VOID Info_Mod_Willingham_UntoteOrks_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_00"); //Und, was wollte Baro? Was weiß er über die Orks?
-	AI_Output(hero, self, "Info_Mod_Willingham_UntoteOrks_15_01"); //Es sind anscheinend mehr, als wir gedacht haben. Außerdem sind sie nicht mehr ganz lebendig.
-	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_02"); //Willst du mir erzählen das sind untote Orks?
-	AI_Output(hero, self, "Info_Mod_Willingham_UntoteOrks_15_03"); //Genau das sind sie. Ein Orkschamane hat ein mächtiges Artefakt in einem Tempel gefunden und fast alle Orks zu Untoten verwandelt.
-	AI_Output(hero, self, "Info_Mod_Willingham_UntoteOrks_15_04"); //Ich muss einen der Ork-Anführer finden und ihn über den Standort des Schamanen befragen.
-	AI_Output(hero, self, "Info_Mod_Willingham_UntoteOrks_15_05"); //Baro meinte, Melchior könnte mir helfen.
-	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_06"); //Wenn wir so an diesen Knaben heran kommen und diese Untoten stoppen können, werde ich Melchior in deine Dienste stellen.
-	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_07"); //Er hat sein Lager am letzten Außenposten vor dem Pass. Marcus soll dir den weg zu ihm zeigen und seinen Platz dort einnehmen.
-	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_08"); //Außerdem will ich dir diese Tränke mit auf den Weg geben. Viel Erfolg.
+	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_00"); //So, what did Baro want? What does he know about the Orcs?
+	AI_Output(hero, self, "Info_Mod_Willingham_UntoteOrks_15_01"); //It seems to be more than we thought. Besides, they're not quite alive anymore.
+	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_02"); //Are you telling me they're dead orcs?
+	AI_Output(hero, self, "Info_Mod_Willingham_UntoteOrks_15_03"); //That's what they are. An orc shaman has found a mighty artifact in a temple and turned almost all orcs into undead.
+	AI_Output(hero, self, "Info_Mod_Willingham_UntoteOrks_15_04"); //I need to find one of the Orc leaders and question him about the shaman's location.
+	AI_Output(hero, self, "Info_Mod_Willingham_UntoteOrks_15_05"); //Baro said Melchior could help me.
+	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_06"); //If we can get to this boy and stop these undead, I will put Melchior at your service.
+	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_07"); //He has his camp at the last outpost outside the pass. Let Marcus show you the way to him and take his place there.
+	AI_Output(self, hero, "Info_Mod_Willingham_UntoteOrks_08_08"); //Besides, I want to give you these potions on the way. Good luck.
 
 	B_GiveInvItems	(self, hero, ItPo_Health_02, 5);
 
-	B_LogEntry	(TOPIC_MOD_EIS_UNTOTEORKS, "Marcus wird mich zu Melchior führen und dort dessen Platz einnehmen.");
+	B_LogEntry	(TOPIC_MOD_EIS_UNTOTEORKS, "Marcus will lead me to Melchior and take his place there.");
 };
 
 INSTANCE Info_Mod_Willingham_Pickpocket (C_INFO)

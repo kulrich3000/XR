@@ -15,8 +15,8 @@ FUNC INT Info_Mod_Lothar_Hi_Condition()
 
 FUNC VOID Info_Mod_Lothar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lothar_Hi_01_00"); //Ein neues Gesicht im oberen Viertel?
-	AI_Output(self, hero, "Info_Mod_Lothar_Hi_01_01"); //Benimm' dich nur, die reichen Leute hier mögen es nicht, wenn man für Unruhe sorgt.
+	AI_Output(self, hero, "Info_Mod_Lothar_Hi_01_00"); //A new face in the upper district?
+	AI_Output(self, hero, "Info_Mod_Lothar_Hi_01_01"); //Behave yourself, the rich people here don't like it when you cause trouble.
 };
 
 INSTANCE Info_Mod_Lothar_News (C_INFO)
@@ -27,7 +27,7 @@ INSTANCE Info_Mod_Lothar_News (C_INFO)
 	information	= Info_Mod_Lothar_News_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist hier irgendetwas Interessantes passiert?";
+	description	= "Did anything interesting happen here?";
 };
 
 FUNC INT Info_Mod_Lothar_News_Condition()
@@ -40,9 +40,9 @@ FUNC INT Info_Mod_Lothar_News_Condition()
 
 FUNC VOID Info_Mod_Lothar_News_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lothar_News_15_00"); //Ist hier irgendetwas Interessantes passiert?
-	AI_Output(self, hero, "Info_Mod_Lothar_News_01_01"); //Nichts, was jemanden wie dich etwas angehen würde. Allerdings, wenn du mir ein Bier bringen würdest, dann ...
-	AI_Output(hero, self, "Info_Mod_Lothar_News_15_02"); //Verstehe.
+	AI_Output(hero, self, "Info_Mod_Lothar_News_15_00"); //Did anything interesting happen here?
+	AI_Output(self, hero, "Info_Mod_Lothar_News_01_01"); //Nothing that would concern anyone like you. However, if you brought me a beer, then....
+	AI_Output(hero, self, "Info_Mod_Lothar_News_15_02"); //I see.
 };
 
 INSTANCE Info_Mod_Lothar_Bier (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Lothar_Bier (C_INFO)
 	information	= Info_Mod_Lothar_Bier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nimm ein Bier (Bier geben)";
+	description	= "Have a beer (give beer)";
 };
 
 FUNC INT Info_Mod_Lothar_Bier_Condition()
@@ -67,28 +67,28 @@ FUNC INT Info_Mod_Lothar_Bier_Condition()
 
 FUNC VOID Info_Mod_Lothar_Bier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lothar_Bier_15_00"); //Nimm ein Bier.
+	AI_Output(hero, self, "Info_Mod_Lothar_Bier_15_00"); //Have a beer.
 	
 	B_GiveInvItems	(hero, self, ItFo_Beer, 1);
 
 	B_UseItem	(self, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Lothar_Bier_01_01"); //Danke.
-	AI_Output(hero, self, "Info_Mod_Lothar_Bier_15_02"); //Gibt es jetzt irgendwelche Neuigkeiten?
-	AI_Output(self, hero, "Info_Mod_Lothar_Bier_01_03"); //Da du mir ein Bier gebracht hast, werde ich dir etwas erzählen.
-	AI_Output(self, hero, "Info_Mod_Lothar_Bier_01_04"); //Vor ein paar Tagen wurde unser wertvollster Besitz, ein Kristall, geklaut. Wir vermuten, dass die Diebe dahinterstecken.
-	AI_Output(self, hero, "Info_Mod_Lothar_Bier_01_05"); //Ein Mitglied der Diebesgilde heißt Diego, doch wir können ihm nichts anhaben, da er unter dem Schutz der Wassermagier steht.
+	AI_Output(self, hero, "Info_Mod_Lothar_Bier_01_01"); //Thanks.
+	AI_Output(hero, self, "Info_Mod_Lothar_Bier_15_02"); //Is there any news now?
+	AI_Output(self, hero, "Info_Mod_Lothar_Bier_01_03"); //Since you brought me a beer, I'll tell you something.
+	AI_Output(self, hero, "Info_Mod_Lothar_Bier_01_04"); //A few days ago, our most valuable possession, a crystal, was stolen. We suspect the thieves are behind it.
+	AI_Output(self, hero, "Info_Mod_Lothar_Bier_01_05"); //A member of the thief guild is called Diego, but we can't harm him because he is under the protection of the Water Magicians.
 
 	Log_CreateTopic	(TOPIC_MOD_DIEGO_KRISTALL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DIEGO_KRISTALL, LOG_RUNNING);
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torlof_Auftrag))
 	{
-		B_LogEntry_More	(TOPIC_MOD_TORLOFSPIONAGE, TOPIC_MOD_DIEGO_KRISTALL, "Der Paladin Lothar hat mir gesagt, dass sie einen wertvollen Kristall vermissen. Dieser Kristall wird mir helfen Söldner zu werden.", "Ein wertvoller Kristall der Paladine wurde gestohlen. Diego soll etwas darüber wissen. Ich sollte ihn aufsuchen.");
+		B_LogEntry_More	(TOPIC_MOD_TORLOFSPIONAGE, TOPIC_MOD_DIEGO_KRISTALL, "Paladin Lothar told me they missed a precious crystal. This crystal will help me become a mercenary.", "A precious crystal of the paladins was stolen. I want Diego to know something about this. I should go see him.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Ein wertvoller Kristall der Paladine wurde gestohlen. Diego soll etwas darüber wissen. Ich sollte ihn aufsuchen.");
+		B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "A precious crystal of the paladins was stolen. I want Diego to know something about this. I should go see him.");
 	};
 
 	B_GivePlayerXP	(150);
@@ -104,7 +104,7 @@ INSTANCE Info_Mod_Lothar_Kristall (C_INFO)
 	information	= Info_Mod_Lothar_Kristall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier euren Kristall.";
+	description	= "I have your crystal here.";
 };
 
 FUNC INT Info_Mod_Lothar_Kristall_Condition()
@@ -119,15 +119,15 @@ FUNC INT Info_Mod_Lothar_Kristall_Condition()
 
 FUNC VOID Info_Mod_Lothar_Kristall_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lothar_Kristall_15_00"); //Ich hab hier euren Kristall.
+	AI_Output(hero, self, "Info_Mod_Lothar_Kristall_15_00"); //I have your crystal here.
 
 	B_GiveInvItems	(hero, self, Mod_PaladinKristall, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lothar_Kristall_01_01"); //Du hast also den Dieben ihre Beute abgenommen. Bring den Kristall zu Lord Andre, er wird dich in die Reihen der Miliz aufnehmen.
+	AI_Output(self, hero, "Info_Mod_Lothar_Kristall_01_01"); //So you took the thieves' booty from them. Take the crystal to Lord Andre, he will take you into the ranks of the militia.
 
 	B_GiveInvItems	(self, hero, Mod_PaladinKristall, 1);
 
-	B_LogEntry	(TOPIC_MOD_MILIZ, "Lothar sagt, dass Lord Andre mich aufnehmen wird, wenn ich ihm den Kristall bringe.");
+	B_LogEntry	(TOPIC_MOD_MILIZ, "Lothar says Lord Andre will take me in if I bring him the crystal.");
 
 	B_Göttergefallen(1, 1);
 
@@ -142,7 +142,7 @@ INSTANCE Info_Mod_Lothar_Ornament (C_INFO)
 	information	= Info_Mod_Lothar_Ornament_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Habt ihr ein Stück eines Steinringes?";
+	description	= "Do you have a piece of a stone ring?";
 };
 
 FUNC INT Info_Mod_Lothar_Ornament_Condition()
@@ -156,10 +156,10 @@ FUNC INT Info_Mod_Lothar_Ornament_Condition()
 
 FUNC VOID Info_Mod_Lothar_Ornament_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lothar_Ornament_15_00"); //Habt ihr ein Stück eines Steinringes?
-	AI_Output(self, hero, "Info_Mod_Lothar_Ornament_01_01"); //Mit alten Relikten der Stadt beschäftigt sich Larius, der Statthalter.
+	AI_Output(hero, self, "Info_Mod_Lothar_Ornament_15_00"); //Do you have a piece of a stone ring?
+	AI_Output(self, hero, "Info_Mod_Lothar_Ornament_01_01"); //Larius, the governor, deals with old relics of the city.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Larius, der Statthalter, soll sich mit alten Relikten der Stadt befassen.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Larius, the governor, is said to deal with old relics of the city.");
 };
 
 INSTANCE Info_Mod_Lothar_Lehrer (C_INFO)
@@ -170,7 +170,7 @@ INSTANCE Info_Mod_Lothar_Lehrer (C_INFO)
 	information	= Info_Mod_Lothar_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Lothar_Lehrer_Condition()
@@ -187,10 +187,10 @@ FUNC VOID Info_Mod_Lothar_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Lothar_Lehrer_01_00"); //Ich kann dir helfen stärker zu werden.
+	AI_Output(self, hero, "Info_Mod_Lothar_Lehrer_01_00"); //I can help you get stronger.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Lothar kann mir helfen Stärker zu werden.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Lothar can help me become stronger.");
 };
 
 INSTANCE Info_Mod_Lothar_Lernen (C_INFO)
@@ -201,7 +201,7 @@ INSTANCE Info_Mod_Lothar_Lernen (C_INFO)
 	information	= Info_Mod_Lothar_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Teach me something.";
 };
 
 FUNC INT Info_Mod_Lothar_Lernen_Condition()
@@ -217,8 +217,8 @@ FUNC INT Info_Mod_Lothar_Lernen_Condition()
 
 FUNC VOID Info_Mod_Lothar_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lothar_Lernen_15_00"); //Bring mir was bei.
-	AI_Output(self, hero, "Info_Mod_Lothar_Lernen_01_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Lothar_Lernen_15_00"); //Teach me something.
+	AI_Output(self, hero, "Info_Mod_Lothar_Lernen_01_01"); //What do you want to learn?
 
 	Info_ClearChoices	(Info_Mod_Lothar_Lernen);
 

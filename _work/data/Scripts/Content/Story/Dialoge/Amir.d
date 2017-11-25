@@ -23,39 +23,39 @@ FUNC INT Info_Mod_Amir_Hi_Condition()
 
 FUNC VOID Info_Mod_Amir_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Amir_Hi_13_00"); //Na was bist denn du für einer? Hast du vielleicht Interesse mir bei einer Sache zu helfen, Kleiner?
+	AI_Output(self, hero, "Info_Mod_Amir_Hi_13_00"); //What kind of guy are you? Are you interested in helping me out with something, kid?
 
 	Info_ClearChoices	(Info_Mod_Amir_Hi);
 
-	Info_AddChoice	(Info_Mod_Amir_Hi, "Nein, kein Interesse!", Info_Mod_Amir_Hi_B);
-	Info_AddChoice	(Info_Mod_Amir_Hi, "Ja, aber immer doch! Um was geht es?", Info_Mod_Amir_Hi_A);
+	Info_AddChoice	(Info_Mod_Amir_Hi, "No, not interested!", Info_Mod_Amir_Hi_B);
+	Info_AddChoice	(Info_Mod_Amir_Hi, "Yes, but always! What's this about?", Info_Mod_Amir_Hi_A);
 };
 
 FUNC VOID Info_Mod_Amir_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Amir_Hi_B_15_00"); //Nein, kein Interesse!
-	AI_Output(self, hero, "Info_Mod_Amir_Hi_B_13_01"); //(wütend) Gut, dann habe ich mich also in dir getäuscht. Verschwinde aus meinen Augen und komme nie wieder!
+	AI_Output(hero, self, "Info_Mod_Amir_Hi_B_15_00"); //No, not interested!
+	AI_Output(self, hero, "Info_Mod_Amir_Hi_B_13_01"); //Well, then I was wrong about you. Get out of my sight and never come back!
 
 	Info_ClearChoices	(Info_Mod_Amir_Hi);
 };
 
 FUNC VOID Info_Mod_Amir_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Amir_Hi_A_15_00"); //Ja, aber immer doch! Um was geht es?
-	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_01"); //(lächelnd) Gut, ich wusste doch, dass ich mich auf einen Mann wie dich verlassen könnte. Dieser Auftrag ist von dringlicher Wichtigkeit, also musst du mir gut zuhören und genau arbeiten.
-	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_02"); //Der Lohn ist hoch und du könntest es dann zu etwas Großem bringen.
-	AI_Output(hero, self, "Info_Mod_Amir_Hi_A_15_03"); //Red' nicht um den heißen Brei herum, sondern erkläre mir, was ich tun soll. Ich hoffe, dass meine Belohnung angemessen sein wird.
-	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_04"); //Mach dir um deine Belohnung keine Sorgen, eher über das, was dich erwarten wird. Ich warne dich vorher schon, es wird kein leichtes Unterfangen.
-	AI_Output(hero, self, "Info_Mod_Amir_Hi_A_15_05"); //Schieß schon endlich los!
-	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_06"); //(flüstert) In der Stadt gibt es im Hafenviertel einen sehr reichen Bürger, der etwas hat, dass ich gerne haben möchte.
-	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_07"); //Einen der drei sogenannten Blutkelche die über geheimnisvolle Kräfte verfügen sollen. Leider rückt er diese Kostbarkeit nicht raus und das stört mich etwas.
-	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_08"); //Ich will, dass du heute Abend diesen Lehmar beseitigst und den Kelch an dich bringst. Doch sei gewarnt: Lehmar hat wegen mir zwei Halsabschneider angeheuert, die nachts patroullieren.
-	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_09"); //Also geh' vorsichtig vor. Ich erwarte dich nach Ende der Aufgabe am östlichen Stadttor.
-	AI_Output(hero, self, "Info_Mod_Amir_Hi_A_15_10"); //Alles klar, ich ziehe los. Ich werde dich dann dort treffen.
+	AI_Output(hero, self, "Info_Mod_Amir_Hi_A_15_00"); //Yes, but always! What's this about?
+	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_01"); //(smiling) Well, I knew I could count on a man like you. This assignment is urgent, so you need to listen to me carefully and work hard.
+	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_02"); //The pay's high and you could make it to something big.
+	AI_Output(hero, self, "Info_Mod_Amir_Hi_A_15_03"); //Don't beat around the bush, just tell me what to do. I hope my reward will be fair.
+	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_04"); //Don't worry about your reward, don't worry about what you'll get. I warn you, it's not going to be an easy task.
+	AI_Output(hero, self, "Info_Mod_Amir_Hi_A_15_05"); //Shoot it already!
+	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_06"); //(whispers) In the city there is a very rich citizen in the harbour district who has something I would like to have.
+	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_07"); //One of the three so-called blood goblets which are said to have mysterious powers. Unfortunately, he doesn't turn this treasure out and that bothers me a bit.
+	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_08"); //I want you to get rid of that clay and bring the cup to you tonight. But be warned: Lehmar hired two cutthroaters to patrol at night because of me.
+	AI_Output(self, hero, "Info_Mod_Amir_Hi_A_13_09"); //So be careful with it. I'll be waiting for you at the east gate of the city when the assignment's over.
+	AI_Output(hero, self, "Info_Mod_Amir_Hi_A_15_10"); //All right, I'm moving out. I'll meet you there.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_LEHMAR, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_LEHMAR, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_LEHMAR, "Ich habe im Tempelviertel der Stadt Khorinis eine merkwürdige Gestalt getroffen. Der Mann, der mir keine Angaben über sich selbst gab, betreute mich mit einer wichtigen Aufgabe. Ich soll bei Nacht dem Geldverleiher Lehmar einen sogenannten Blutkelch abnehmen und ihn töten. Doch warnte mich der Mann davor, dass Lehmar von einigen Wachen umgeben sein wird. Ich muss mir etwas einfallen lassen.");
+	B_LogEntry	(TOPIC_MOD_ASS_LEHMAR, "I met a strange figure in the temple district of the city of Khorinis. The man, who didn't give me any information about himself, cared for me with an important task. I'm supposed to take a so-called blood cup off the money lender Lehmar at night and kill him. But the man warned me that Lehmar would be surrounded by some guards. I have to think of something.");
 
 	Mod_ASS_AmirLehmar = 1;
 
@@ -91,26 +91,26 @@ FUNC INT Info_Mod_Amir_Lehmar_Condition()
 
 FUNC VOID Info_Mod_Amir_Lehmar_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_00"); //(lacht) Das ich dich noch einmal wieder sehe, damit habe ich nicht gerechnet. Ich dachte du hättest Angst bekommen und wirst nicht mehr auftauchen.
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_01"); //Respekt Kleiner, gute Arbeit!
-	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_15_02"); //Es war auch keine leichte Aufgabe, doch ich habe das, was du wolltest.
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_03"); //Hast du den Kelch dabei?
-	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_15_04"); //Ja, und noch andere Dinge waren in der Truhe von Lehmar. Ein Buch und sechs goldene Teller mit einer feinen Runenschrift sowie 500 Goldstücke.
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_05"); //Das Gold sollst du behalten, aber den Rest gibst du mir.
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_00"); //(laughs) I didn't expect to see you again. I thought you got scared and you're not gonna show up.
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_01"); //Respect, little one, good work!
+	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_15_02"); //It wasn't an easy task either, but I have what you asked for.
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_03"); //Did you bring the cup?
+	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_15_04"); //Yes, and there were other things in Lehmar's chest. A book and six golden plates with a fine runic writing and 500 pieces of gold.
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_05"); //I want you to keep the gold, but you can give me the rest.
 
 	Npc_RemoveInvItems	(hero, ItMi_BloodCup_MIS, 1);
 	Npc_RemoveInvItems	(hero, ItWr_BookLehmar, 1);
 	Npc_RemoveInvItems	(hero, ItMi_GoldPlate, 6);
 
-	B_ShowGivenThings	("Blutkelch, Buch und sechs goldene Teller gegeben");
+	B_ShowGivenThings	("Blood cup, book and six golden plates given");
 
-	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_15_06"); //Und was ist mit meiner Belohnung?
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_07"); //Das hätte ich ganz vergessen. Hier sind 100 Goldstücke für deine Mühen und ich habe ein interessantes Angebot für dich.
+	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_15_06"); //And what about my reward?
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_07"); //I forgot all about that. Here's 100 gold pieces for your trouble, and I have an interesting offer for you.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_15_08"); //Um was geht es in deinem Angebot?
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_09"); //Sage mir zuerst, ob du überhaupt darauf eingehen willst.
+	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_15_08"); //What's your offer about?
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_13_09"); //Tell me first, do you want to deal with it at all?
 
 	B_GivePlayerXP	(250);
 
@@ -123,38 +123,38 @@ FUNC VOID Info_Mod_Amir_Lehmar_Info()
 
 	Info_ClearChoices	(Info_Mod_Amir_Lehmar);
 
-	Info_AddChoice	(Info_Mod_Amir_Lehmar, "Nein, doch lieber nicht. Bis dann!", Info_Mod_Amir_Lehmar_B);
+	Info_AddChoice	(Info_Mod_Amir_Lehmar, "No, I'd rather not. See you around!", Info_Mod_Amir_Lehmar_B);
 
 	if (Mod_AnzahlNebengilden < MaxNebengilden)
 	{
-		Info_AddChoice	(Info_Mod_Amir_Lehmar, "Klar!", Info_Mod_Amir_Lehmar_A);
+		Info_AddChoice	(Info_Mod_Amir_Lehmar, "Sure!", Info_Mod_Amir_Lehmar_A);
 	};
 };
 
 FUNC VOID Info_Mod_Amir_Lehmar_B()
 {
-	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_B_15_01"); //Nein, doch lieber nicht. Bis dann!
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_B_13_00"); //(enttäuscht) Schade, da kann man wohl nichts machen. Ich denke wir werden uns dann nie wieder sehen.
+	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_B_15_01"); //No, I'd rather not. See you around!
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_B_13_00"); //What a pity, there's nothing you can do about it. I guess we'll never see each other again.
 
 	Info_ClearChoices	(Info_Mod_Amir_Lehmar);
 };
 
 FUNC VOID Info_Mod_Amir_Lehmar_A()
 {
-	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_A_15_00"); //Klar!
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_01"); //Ich wusste das du der richtige Mann bist, also will ich dir alles genau erklären.
-	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_A_15_02"); //Also was für ein Angebot hast du für mich?
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_03"); //Wie du siehst gehöre ich nicht zu den Menschen, die legal ihr Gold erwerben. Ich bin einer der Assassinen aus Varant, die sich hier auf Khorinis niedergelassen haben.
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_04"); //Wir suchen ständig nach neuen Leuten und du scheinst genau der Mann zu sein, den man sich gut als Assassinen vorstellen könnte.
-	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_A_15_05"); //(erstaunt) Assassinen? Wie seid ihr auf die Insel gekommen?
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_06"); //Unsere mächtigen Anführer haben uns alle hier auf die Insel telepotiert, da wir keine Lust mehr hatten auf dem Festland zu verweilen.
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_07"); //Deshalb sind wir auf die Insel gekommen und verstecken uns seitdem in einer Höhle nahe der Stadt. Dort ist unser Lager und von dort aus agieren wir heimlich.
-	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_A_15_08"); //Ich fühle mich geehrt, dieses Angebot erhalten zu haben, und würde mich euch gerne anschließen.
-	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_09"); //(grinst) Sehr gut. Also dann folge mir mal, ich führe dich zum Versteck unserer Leute. Beeil dich!
+	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_A_15_00"); //Sure!
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_01"); //I knew you were the right man, so I want to explain everything to you.
+	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_A_15_02"); //So what offer do you have for me?
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_03"); //As you can see, I'm not one of those people who legally earns their gold. I'm one of the Assassins from Varant who settled here on Khorinis.
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_04"); //We're always on the lookout for new people and you seem to be the man you could well imagine as an assassin.
+	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_A_15_05"); //Assassins? How did you get to the island?
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_06"); //Our mighty leaders telepont us all here on the island, because we didn't want to stay on the mainland anymore.
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_07"); //That's why we came to the island and have been hiding in a cave near the city ever since. There is our camp and from there we act secretly.
+	AI_Output(hero, self, "Info_Mod_Amir_Lehmar_A_15_08"); //I am honoured to have received this offer and would like to join you.
+	AI_Output(self, hero, "Info_Mod_Amir_Lehmar_A_13_09"); //(grins) Very good. So follow me, I'll lead you to the hideout of our people. Hurry up!
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_VERSTECK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_VERSTECK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_VERSTECK, "Amir wird mich nun zum Versteck der Assassinen führen. Dieses soll in einer Höhle nahe der Stadt sein.");
+	B_LogEntry	(TOPIC_MOD_ASS_VERSTECK, "Amir will now lead me to the hiding place of the Assassins. This is said to be in a cave near the city.");
 
 	Mod_ASS_AmirLehmar = 2;
 
@@ -187,12 +187,12 @@ FUNC INT Info_Mod_Amir_AtVersteck_Condition()
 
 FUNC VOID Info_Mod_Amir_AtVersteck_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Amir_AtVersteck_13_00"); //So, da wären wir auch schon. Hinter dieser Tür befinden sich die Hallen, die wir unser Heim nennen. Ich gebe dir den Schlüssel zur Tür, damit du passieren kannst.
+	AI_Output(self, hero, "Info_Mod_Amir_AtVersteck_13_00"); //Well, there we are. Behind this door are the halls we call our home. I'll give you the key to the door so you can pass.
 
 	B_GiveInvItems	(self, hero, ItKe_XR_NW_HOEHLE_01, 1);
 
-	AI_Output(self, hero, "Info_Mod_Amir_AtVersteck_13_01"); //Wir sehen und sicher wieder, aber ich muss wieder los. Bis dann!
-	AI_Output(hero, self, "Info_Mod_Amir_AtVersteck_15_02"); //Okay. Man sieht sich Amir, mach's gut!
+	AI_Output(self, hero, "Info_Mod_Amir_AtVersteck_13_01"); //We'll see you again, but I have to go. See you around!
+	AI_Output(hero, self, "Info_Mod_Amir_AtVersteck_15_02"); //Okay. See you around Amir, take care!
 	
 	B_GivePlayerXP	(50);
 
@@ -213,7 +213,7 @@ INSTANCE Info_Mod_Amir_Zeremoniendolch (C_INFO)
 	information	= Info_Mod_Amir_Zeremoniendolch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, Amir.";
+	description	= "Hello, Amir.";
 };
 
 FUNC INT Info_Mod_Amir_Zeremoniendolch_Condition()
@@ -226,14 +226,14 @@ FUNC INT Info_Mod_Amir_Zeremoniendolch_Condition()
 
 FUNC VOID Info_Mod_Amir_Zeremoniendolch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch_15_00"); //Hallo, Amir. Du hast im Lager etwas von einem Zeremoniendolch gefaselt. Kannst du mir Näheres erzählen?
-	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch_13_01"); //Nicht wirklich. Aber der Wassertyp da draußen am Tempel hat was von einem Dolch erzählt.
-	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch_15_02"); //Nun gut, dann frag ich den mal. Und sauf nicht so viel, du sollst hier doch beobachten.
-	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch_13_03"); //Hier drin in der Kneipe erfahre ich allemal mehr, als draußen auf dem Platz.
-	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch_13_04"); //Und das Gefasel von diesem senilen Blaukittel kann ich nicht mehr hören. Erzählt immer dasselbe.
-	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch_15_05"); //Wie du meinst. Ich rede mal mit Vatras.
+	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch_15_00"); //Hello, Amir. You were talking about a ceremonial dagger in the camp. Can you tell me more about it?
+	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch_13_01"); //Not really. But that water guy out there at the temple told me about a dagger.
+	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch_15_02"); //All right, I'll ask him. And don't drink so much, you're supposed to be watching.
+	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch_13_03"); //In this pub I get to know more than outside on the square.
+	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch_13_04"); //And I can't hear the drivel from that senile blue coat any more. Always tell the same story.
+	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch_15_05"); //Whatever you say. I'll talk to Vatras.
 	
-	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Amir hat mich zu Vatras geschickt. Sicher weiß der mehr.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Amir sent me to Vatras. Surely he knows more.");
 };
 
 INSTANCE Info_Mod_Amir_Zeremoniendolch2 (C_INFO)
@@ -256,10 +256,10 @@ FUNC INT Info_Mod_Amir_Zeremoniendolch2_Condition()
 
 FUNC VOID Info_Mod_Amir_Zeremoniendolch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch2_13_00"); //He! Hast du mich verpfiffen? Plötzlich muss ich hier Wache schieben.
-	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch2_15_01"); //Nichts mehr mit den ganzen Tag in der Kneipe hocken, was? Aber nein, ich hab nichts gesagt.
-	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch2_13_02"); //Wenn ich da was merke ... Übrigens, der Rat wartet auf dich.
-	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch2_15_03"); //Ich weiß.
+	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch2_13_00"); //Hey! Did you rat me out? Suddenly, I have to guard it.
+	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch2_15_01"); //No more sitting around the pub all day, huh? But no, I didn't say anything.
+	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch2_13_02"); //If I find out... By the way, the council's waiting for you.
+	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch2_15_03"); //I know.
 };
 
 INSTANCE Info_Mod_Amir_Zeremoniendolch3 (C_INFO)
@@ -282,8 +282,8 @@ FUNC INT Info_Mod_Amir_Zeremoniendolch3_Condition()
 
 FUNC VOID Info_Mod_Amir_Zeremoniendolch3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch3_13_00"); //Du hast's gut, ständig auf Achse. Und ich steh mir hier die Beine in den Bauch.
-	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch3_15_01"); //Dem Tüchtigen gehört die Welt.
+	AI_Output(self, hero, "Info_Mod_Amir_Zeremoniendolch3_13_00"); //You're doing good, always on the move. And I'm standing here with my legs in my stomach.
+	AI_Output(hero, self, "Info_Mod_Amir_Zeremoniendolch3_15_01"); //The efficient man owns the world.
 };
 
 INSTANCE Info_Mod_Amir_Blutkelch (C_INFO)
@@ -306,16 +306,16 @@ FUNC INT Info_Mod_Amir_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Amir_Blutkelch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Amir_Blutkelch_13_00"); //Schon wieder unterwegs?
-	AI_Output(hero, self, "Info_Mod_Amir_Blutkelch_15_01"); //Wie du siehst. Sag, ist dir hier irgendwas aufgefallen?
-	AI_Output(self, hero, "Info_Mod_Amir_Blutkelch_13_02"); //Eigentlich nicht. Aber ich stehe ja noch nicht lange hier am Tor.
-	AI_Output(self, hero, "Info_Mod_Amir_Blutkelch_13_03"); //Allerdings meint der Krieger da drüben, dass hier in letzter Zeit reichlich Verkehr herrscht.
-	AI_Output(hero, self, "Info_Mod_Amir_Blutkelch_15_04"); //Aha. Und wer verkehrt dann hier?
-	AI_Output(self, hero, "Info_Mod_Amir_Blutkelch_13_05"); //Tags einige Krieger und nachts, so gegen Mitternacht, Magier.
-	AI_Output(hero, self, "Info_Mod_Amir_Blutkelch_15_06"); //(selbst) Hm ... die Krieger gehen wahrscheinlich trainieren aufs Plateau. Aber die Magier ... Hm ...
-	AI_Output(hero, self, "Info_Mod_Amir_Blutkelch_15_07"); //Dieser Erol hat doch was erzählt von grünem Licht in der Höhle am kleinen See ... Mal sehen.
+	AI_Output(self, hero, "Info_Mod_Amir_Blutkelch_13_00"); //On the road again?
+	AI_Output(hero, self, "Info_Mod_Amir_Blutkelch_15_01"); //As you can see. Say, did you notice anything here?
+	AI_Output(self, hero, "Info_Mod_Amir_Blutkelch_13_02"); //Actually, I don't. But I haven't been standing here for a long time.
+	AI_Output(self, hero, "Info_Mod_Amir_Blutkelch_13_03"); //However, the warrior over there thinks there's been a lot of traffic lately.
+	AI_Output(hero, self, "Info_Mod_Amir_Blutkelch_15_04"); //Uh-huh. Then who goes here?
+	AI_Output(self, hero, "Info_Mod_Amir_Blutkelch_13_05"); //During the day some warriors and at night, around midnight, magician.
+	AI_Output(hero, self, "Info_Mod_Amir_Blutkelch_15_06"); //(even) Hm... the warriors are probably training on the plateau. But the magicians... Hm...
+	AI_Output(hero, self, "Info_Mod_Amir_Blutkelch_15_07"); //This Erol has said something about the green light in the cave at the small lake.... Let's see now.
 
-	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Werde mal der Goblinhöhle bei Erol einen Besuch abstatten. So gegen Mitternacht ...");
+	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Will visit the Goblin cave near Erol. Around midnight...");
 
 	Wld_SendTrigger	("EVT_ASSASSINENREPERTOIRE");
 

@@ -1,7 +1,7 @@
 prototype Mst_Default_Gobbo_Eis (C_NPC)			
 {
 	// ------ Monster -----
-	name							=	"Eisgoblin";
+	name							=	"ice goblin";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_GREEN;
 	level							=	14;
@@ -82,7 +82,7 @@ INSTANCE Gobbo_Eis (Mst_Default_Gobbo_Eis)
 
 INSTANCE Gobbo_Eis_Beschwoerer (Mst_Default_Gobbo_Eis)
 {
-	name		= "Dämonenbeschwörer";
+	name		= "demon charmer";
 	guild							=	GIL_GOBBO_SKELETON;
 
 	B_SetVisuals_Gobbo_Eis_Schamane();
@@ -119,7 +119,7 @@ INSTANCE Eisgoblin (Mst_Default_Gobbo_Eis)
 
 INSTANCE Summoned_Gobbo_Eis (Mst_Default_Gobbo_Eis)
 {
-	name							= "Beschworenes Eisgoblin";
+	name							= "Summoned Ice Goblin";
 	guild							= GIL_SUMMONED_GOBBO_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_GOBBO_EIS;
 	level							= 0;

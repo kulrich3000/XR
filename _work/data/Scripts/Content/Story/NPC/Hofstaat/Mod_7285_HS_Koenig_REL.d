@@ -1,7 +1,7 @@
 instance Mod_7285_HS_Koenig_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "König"; 
+	name 		= "king"; 
 	guild 		= GIL_OUT;
 	id 			= 7285;
 	voice 		= 6;

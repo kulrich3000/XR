@@ -14,7 +14,7 @@ INSTANCE Info_Bud_4_EXIT(C_INFO)
 	condition	= Info_Bud_4_EXIT_Condition;
 	information	= Info_Bud_4_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_Bud_4_EXIT_Condition()
@@ -24,8 +24,8 @@ FUNC INT Info_Bud_4_EXIT_Condition()
 
 FUNC VOID Info_Bud_4_EXIT_Info()
 {	
-	AI_Output(hero,self,"Info_Bud_4_EinerVonEuchWerden_15_00"); //Danke. Mach's gut.
-	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_01"); //Halt die Ohren steif, Junge.
+	AI_Output(hero,self,"Info_Bud_4_EinerVonEuchWerden_15_00"); //Thanks. Take care, now.
+	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_01"); //Keep your chin up, boy.
 	AI_StopProcessInfos	(self);
 };
 
@@ -39,7 +39,7 @@ INSTANCE Info_Bud_4_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Bud_4_EinerVonEuchWerden_Condition;
 	information	= Info_Bud_4_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Was muß ich tun, um in diesem Lager aufgenommen zu werden?";
+	description = "What do I have to do to get into this camp?";
 };                       
 
 FUNC INT Info_Bud_4_EinerVonEuchWerden_Condition()
@@ -54,10 +54,10 @@ FUNC INT Info_Bud_4_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Bud_4_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Bud_4_EinerVonEuchWerden_15_01"); //Was muss ich tun, um in diesem Lager aufgenommen zu werden?
-	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_04"); //Als Schatten oder Gardist meinst du? Das wird nicht leicht, Junge. Du wirst einige Prüfungen bestehen müssen, bevor der alte Thorus dich Thorus vorstellt.
-	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_02"); //Und du musst dich mit den Leuten hier gut stellen. Aber solange du nicht zum Lager gehörst, nimmt dich keiner ernst.
-	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_03"); //Wenn ich du wäre, würde ich mich bei den Schatten umhören. Unter ihnen findest du noch am ehesten einen, der dir hilft. Natürlich nur für eine Gegenleistung.
+	AI_Output(hero,self,"Info_Bud_4_EinerVonEuchWerden_15_01"); //What do I have to do to be admitted to this camp?
+	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_04"); //As a shadow or a guardsman, you mean? It's not gonna be easy, kid. You will have to pass some tests before the old Thorus introduces you to Thorus.
+	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_02"); //And you need to be good with the people here. But as long as you're not part of the camp, nobody takes you seriously.
+	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_03"); //If I were you, I'd ask around in the shadows. Among them, you'll find one who can help you. Of course, just in exchange.
 };
 
 // *************************************************************************
@@ -70,7 +70,7 @@ INSTANCE Info_Bud_4_WichtigePersonen(C_INFO)
 	condition	= Info_Bud_4_WichtigePersonen_Condition;
 	information	= Info_Bud_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Gibt es hier Leute, die ich kennen sollte?";
+	description = "Are there any people here I should know?";
 };                       
 
 FUNC INT Info_Bud_4_WichtigePersonen_Condition()
@@ -80,9 +80,9 @@ FUNC INT Info_Bud_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bud_4_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Bud_4_WichtigePersonen_15_00"); //Gibt es hier Leute, die ich kennen sollte?
-	AI_Output(self,hero,"Info_Bud_4_WichtigePersonen_04_01"); //Als Neuer solltest du's dir nicht mit Gravo verscherzen. Er ist zwar nur ein Buddler, aber er hat Beziehungen bis zu den Erzbaronen.
-	AI_Output(self,hero,"Info_Bud_4_WichtigePersonen_04_02"); //Wenn du mal ein Problem mit Thorus' Leuten hast, kann er dir helfen dich freizukaufen.
+	AI_Output(hero,self,"Info_Bud_4_WichtigePersonen_15_00"); //Are there any people here I should know?
+	AI_Output(self,hero,"Info_Bud_4_WichtigePersonen_04_01"); //As a new guy, you shouldn't mess with Gravo. He's only a digger, but he has connections to the Archbarons.
+	AI_Output(self,hero,"Info_Bud_4_WichtigePersonen_04_02"); //If you ever have a problem with Thorus' people, he can help you buy you out.
 };
 
 // *************************************************************************
@@ -95,7 +95,7 @@ INSTANCE Info_Bud_4_DasLager(C_INFO)
 	condition	= Info_Bud_4_DasLager_Condition;
 	information	= Info_Bud_4_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es hier für wichtige Orte?";
+	description = "What are the places of interest?";
 };                       
 
 FUNC INT Info_Bud_4_DasLager_Condition()
@@ -110,9 +110,9 @@ FUNC INT Info_Bud_4_DasLager_Condition()
 
 FUNC VOID Info_Bud_4_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Bud_4_DasLager_15_00"); //Was gibt es hier für wichtige Orte?
-	AI_Output(self,hero,"Info_Bud_4_DasLager_04_01"); //Du solltest dich am Eingangsplatz zwischen Nordtor und Burgtor rumtreiben.
-	AI_Output(self,hero,"Info_Bud_4_DasLager_04_02"); //Wenn du Glück hast, gibt Thorus dir 'ne Aufgabe - dann kannst du dich bewähren. Ist bestimmt nicht schlecht, zu Thorus' Leuten zu gehören.
+	AI_Output(hero,self,"Info_Bud_4_DasLager_15_00"); //What are the places of interest?
+	AI_Output(self,hero,"Info_Bud_4_DasLager_04_01"); //You should hang around the entrance area between the north gate and the castle gate.
+	AI_Output(self,hero,"Info_Bud_4_DasLager_04_02"); //If you're lucky, Thorus will give you a task - then you can prove yourself. Surely it's not bad to be one of Thorus' people.
 };
 
 // *************************************************************************
@@ -125,7 +125,7 @@ INSTANCE Info_Bud_4_DieLage(C_INFO) // E1
 	condition	= Info_Bud_4_DieLage_Condition;
 	information	= Info_Bud_4_DieLage_Info;
 	permanent	= 1;
-	description = "Alles klar?";
+	description = "You all right?";
 };                       
 
 FUNC INT Info_Bud_4_DieLage_Condition()
@@ -135,8 +135,8 @@ FUNC INT Info_Bud_4_DieLage_Condition()
 
 FUNC VOID Info_Bud_4_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Bud_4_DieLage_15_00"); //Alles klar?
-	AI_Output(self,hero,"Info_Bud_4_DieLage_04_01"); //So klar wie vor 20 Jahren. Und seitdem hat sich hier nicht viel verändert.
+	AI_Output(hero,self,"Info_Bud_4_DieLage_15_00"); //You all right?
+	AI_Output(self,hero,"Info_Bud_4_DieLage_04_01"); //As clear as 20 years ago. And there hasn't been much change since then.
 };
 
 INSTANCE Info_Mod_BUD_4_Pickpocket (C_INFO)

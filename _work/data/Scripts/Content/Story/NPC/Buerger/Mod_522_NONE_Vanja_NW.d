@@ -1,7 +1,7 @@
 INSTANCE Mod_522_NONE_Vanja_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Vanja";
+	name 		= "Vanya";
 	guild 		= GIL_PAL;
 	id 			= 522;
 	voice 		= 17;

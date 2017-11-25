@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Lehrling_Hi_Condition()
 
 FUNC VOID Info_Mod_Lehrling_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_24_00"); //Ey, Opa!
+	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_24_00"); //Hey, Grandpa!
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Hi);
 
-	Info_AddChoice	(Info_Mod_Lehrling_Hi, "(ignorieren)", Info_Mod_Lehrling_Hi_B);
-	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Ja?", Info_Mod_Lehrling_Hi_A);
+	Info_AddChoice	(Info_Mod_Lehrling_Hi, "(ignore)", Info_Mod_Lehrling_Hi_B);
+	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Yes?", Info_Mod_Lehrling_Hi_A);
 };
 
 FUNC VOID Info_Mod_Lehrling_Hi_B()
@@ -30,49 +30,49 @@ FUNC VOID Info_Mod_Lehrling_Hi_B()
 
 FUNC VOID Info_Mod_Lehrling_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_A_15_00"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_A_24_01"); //Du hast doch 'n bisschen Zeit, oder? Könntest 'ne Aufgabe für mich erledigen.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_A_15_00"); //Yes?
+	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_A_24_01"); //You have a little time, don't you? Could do a job for me.
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Hi);
 
-	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Kein Interesse.", Info_Mod_Lehrling_Hi_D);
-	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Was willst du?", Info_Mod_Lehrling_Hi_C);
+	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Not interested.", Info_Mod_Lehrling_Hi_D);
+	Info_AddChoice	(Info_Mod_Lehrling_Hi, "What do you want?", Info_Mod_Lehrling_Hi_C);
 };
 
 FUNC VOID Info_Mod_Lehrling_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_D_15_00"); //Kein Interesse.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_D_15_00"); //Not interested.
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Hi);
 };
 
 FUNC VOID Info_Mod_Lehrling_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_C_15_00"); //Was willst du?
-	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_01"); //Jo, also, letztens hab ich 'nen Haufen ziemlich wichtiger Zettel verloren.
-	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_02"); //Ich war da gerade beim Bauern und hab' denen eine kleine Überdachung vor die Haustür gebaut.
-	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_03"); //Inner Mittagspause habe ich dann die Zettel ... ausprobiert, und zwar hinterm Haus, Richtung Kornfeld.
-	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_04"); //Dann kam der Bauer und hat mich richtig erschreckt ... und da hab ich die Blätter fallen gelassen.
-	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_05"); //War zu aufgeregt, deshalb hab ich sie dort vergessen, verstehste bestimmt.
-	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_06"); //Vielleicht kannst ja mal vorbeigucken, ob du die Seiten findest.
-	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_C_15_07"); //Wie sieht's mit einer Aufwandsentschädigung aus?
-	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_08"); //Das wär mir sicher 'n paar Mäuse wert.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_C_15_00"); //What do you want?
+	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_01"); //Yo, well, I lost a lot of pretty important paper the other day.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_02"); //I just went to the farmer's house and put a little roof over their front door.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_03"); //Within the lunch break I have the notes... in the direction of Kornfeld.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_04"); //Then the farmer came and really scared me.... and I dropped the leaves.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_05"); //It was too excited, so I forgot her there, I guess I understood.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_06"); //Maybe you can check to see if you can find the pages.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_C_15_07"); //How about an expense allowance?
+	AI_Output(self, hero, "Info_Mod_Lehrling_Hi_C_24_08"); //I'm sure it would be worth a few bucks.
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Hi);
 
-	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Kein Interesse.", Info_Mod_Lehrling_Hi_D);
-	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Ich werde mich umsehen.", Info_Mod_Lehrling_Hi_E);
+	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Not interested.", Info_Mod_Lehrling_Hi_D);
+	Info_AddChoice	(Info_Mod_Lehrling_Hi, "I'll take a look around.", Info_Mod_Lehrling_Hi_E);
 };
 
 FUNC VOID Info_Mod_Lehrling_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_E_15_00"); //Ich werde mich umsehen.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Hi_E_15_00"); //I'll take a look around.
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Hi);
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_DOKUMENTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_DOKUMENTE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "Der Lehrling des Handwerkers in Khorata hat einige 'wichtige' Seiten beim Bauernhof von Erhard verloren.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "The apprentice of the craftsman in Khorata has lost some' important' pages at the farm of Erhard.");
 
 	Mod_REL_Dokumente = 1;
 };
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Lehrling_Dokumente (C_INFO)
 	information	= Info_Mod_Lehrling_Dokumente_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du deine Zettel.";
+	description	= "Here are your notes.";
 };
 
 FUNC INT Info_Mod_Lehrling_Dokumente_Condition()
@@ -100,27 +100,27 @@ FUNC INT Info_Mod_Lehrling_Dokumente_Condition()
 
 FUNC VOID Info_Mod_Lehrling_Dokumente_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Dokumente_15_00"); //Hier hast du deine Zettel.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Dokumente_15_00"); //Here are your notes.
 
 	Npc_RemoveInvItems	(hero, ItWr_Lehrling01, 1);
 	Npc_RemoveInvItems	(hero, ItWr_Lehrling02, 1);
 
-	B_ShowGivenThings	("Blätter des Lehrlings gegeben");
+	B_ShowGivenThings	("Sheets given to the apprentice");
 
-	AI_Output(self, hero, "Info_Mod_Lehrling_Dokumente_24_01"); //Danke, Alter! Hier haste 10 Münzen.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Dokumente_24_01"); //Thanks, dude! Here's ten coins.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 10);
 
-	AI_Output(hero, self, "Info_Mod_Lehrling_Dokumente_15_02"); //Bisschen wenig ... Mika hat dafür 200 verlangt.
-	AI_Output(self, hero, "Info_Mod_Lehrling_Dokumente_24_03"); //Wa?! So viel hab ich nicht!
-	AI_Output(hero, self, "Info_Mod_Lehrling_Dokumente_15_04"); //Dann lass dir was einfallen.
-	AI_Output(self, hero, "Info_Mod_Lehrling_Dokumente_24_05"); //Mann, versuch ich doch! (überlegt) Na gut, kriegste halt meine Goldketten, okay?
+	AI_Output(hero, self, "Info_Mod_Lehrling_Dokumente_15_02"); //Little bit little... Mika asked for 200.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Dokumente_24_03"); //What?! I don't have that much!
+	AI_Output(hero, self, "Info_Mod_Lehrling_Dokumente_15_04"); //Then think of something.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Dokumente_24_05"); //Man, I'm trying! All right, you get my gold chains, okay?
 
 	B_GiveInvItems	(self, hero, ItMi_GoldNecklace, 2);
 
-	AI_Output(hero, self, "Info_Mod_Lehrling_Dokumente_15_06"); //Meinetwegen.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Dokumente_15_06"); //I don't care about him.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "Der Lehrling hat seinen Besitz wieder.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "The apprentice has his possessions back.");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_DOKUMENTE, LOG_SUCCESS);
 	
 	B_GivePlayerXP(150);
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Lehrling_Cutter (C_INFO)
 	information	= Info_Mod_Lehrling_Cutter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir die Dokumente geben?";
+	description	= "Can you give me the documents?";
 };
 
 FUNC INT Info_Mod_Lehrling_Cutter_Condition()
@@ -154,59 +154,59 @@ FUNC INT Info_Mod_Lehrling_Cutter_Condition()
 
 FUNC VOID Info_Mod_Lehrling_Cutter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_15_00"); //Kannst du mir die Dokumente geben?
-	AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_24_01"); //Hä? Du hast sie mir doch erst zurückgebracht?
-	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_15_02"); //Ich könnte sie jetzt selbst gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_24_03"); //Für 50 Mäuse kannste sie haben.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_15_00"); //Can you give me the documents?
+	AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_24_01"); //Huh? You just brought her back to me?
+	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_15_02"); //I could use them myself now.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_24_03"); //You can have it for 50 bucks.
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Cutter);
 
-	Info_AddChoice	(Info_Mod_Lehrling_Cutter, "Das ist es mir nicht wert.", Info_Mod_Lehrling_Cutter_C);
+	Info_AddChoice	(Info_Mod_Lehrling_Cutter, "It's not worth it to me.", Info_Mod_Lehrling_Cutter_C);
 	if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 	{
-		Info_AddChoice	(Info_Mod_Lehrling_Cutter, "Gut, hier ist das Gold.", Info_Mod_Lehrling_Cutter_B);
+		Info_AddChoice	(Info_Mod_Lehrling_Cutter, "All right, here's the gold.", Info_Mod_Lehrling_Cutter_B);
 	};
 	if (Mod_Verhandlungsgeschick > 0)
 	{
-		Info_AddChoice	(Info_Mod_Lehrling_Cutter, "(Feilschen) Ich habe dir schon so viel geholfen ...", Info_Mod_Lehrling_Cutter_A);
+		Info_AddChoice	(Info_Mod_Lehrling_Cutter, "I've already helped you so much...", Info_Mod_Lehrling_Cutter_A);
 	};
 };
 
 FUNC VOID Info_Mod_Lehrling_Cutter_C()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_C_15_00"); //Das ist es mir nicht wert.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_C_15_00"); //It's not worth it to me.
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Cutter);
 };
 
 FUNC VOID Info_Mod_Lehrling_Cutter_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_B_15_00"); //Gut, hier ist das Gold.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_B_15_00"); //All right, here's the gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_B_24_01"); //Krass, danke, Mann!
+	AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_B_24_01"); //Great, thanks, man!
 
 	CreateInvItems	(hero, ItWr_Lehrling01, 1);
 	CreateInvItems	(hero, ItWr_Lehrling02, 1);
 
-	B_ShowGivenThings	("Blätter des Lehrlings erhalten");
+	B_ShowGivenThings	("Getting the apprentice's sheets");
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Cutter);
 };
 
 FUNC VOID Info_Mod_Lehrling_Cutter_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_A_15_00"); //Ich habe dir schon so viel geholfen ...
+	AI_Output(hero, self, "Info_Mod_Lehrling_Cutter_A_15_00"); //I've helped you so much already....
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_A_24_01"); //Stimmt schon irgendwie. Na gut, dann nimm's halt.
+		AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_A_24_01"); //That's kind of true. All right, take it.
 
 		CreateInvItems	(hero, ItWr_Lehrling01, 1);
 		CreateInvItems	(hero, ItWr_Lehrling02, 1);
 
-		B_ShowGivenThings	("Blätter des Lehrlings erhalten");
+		B_ShowGivenThings	("Getting the apprentice's sheets");
 	
 		B_GivePlayerXP	(10);
 
@@ -216,15 +216,15 @@ FUNC VOID Info_Mod_Lehrling_Cutter_A()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_A_24_02"); //Jo, Alter, aber ... nee, günstiger geb ich die nicht her.
+		AI_Output(self, hero, "Info_Mod_Lehrling_Cutter_A_24_02"); //Yo, dude, but... No, I don't give them away cheaper.
 
 		Info_ClearChoices	(Info_Mod_Lehrling_Cutter);
 
-		Info_AddChoice	(Info_Mod_Lehrling_Cutter, "Das ist es mir nicht wert.", Info_Mod_Lehrling_Cutter_C);
+		Info_AddChoice	(Info_Mod_Lehrling_Cutter, "It's not worth it to me.", Info_Mod_Lehrling_Cutter_C);
 
 		if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 		{
-			Info_AddChoice	(Info_Mod_Lehrling_Cutter, "Gut, hier ist das Gold.", Info_Mod_Lehrling_Cutter_B);
+			Info_AddChoice	(Info_Mod_Lehrling_Cutter, "All right, here's the gold.", Info_Mod_Lehrling_Cutter_B);
 		};
 	};
 };
@@ -237,7 +237,7 @@ INSTANCE Info_Mod_Lehrling_Freudenspender (C_INFO)
 	information	= Info_Mod_Lehrling_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Meinst du, du verträgst Freudenspender?";
+	description 	= "Do you think you can tolerate giver of joy?";
 };                       
 
 FUNC INT Info_Mod_Lehrling_Freudenspender_Condition()
@@ -252,10 +252,10 @@ FUNC INT Info_Mod_Lehrling_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Lehrling_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lehrling_Freudenspender_15_00"); //Meinst du, du verträgst Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Lehrling_Freudenspender_24_01"); //Was für eine Frage! Hast du was?
-	AI_Output(hero, self, "Info_Mod_Lehrling_Freudenspender_15_02"); //Sicher doch.
-	AI_Output(self, hero, "Info_Mod_Lehrling_Freudenspender_24_03"); //Ich stehe in deiner Schuld.
+	AI_Output(hero, self, "Info_Mod_Lehrling_Freudenspender_15_00"); //Do you think you can tolerate giver of joy?
+	AI_Output(self, hero, "Info_Mod_Lehrling_Freudenspender_24_01"); //What a question! You got something?
+	AI_Output(hero, self, "Info_Mod_Lehrling_Freudenspender_15_02"); //Sure thing.
+	AI_Output(self, hero, "Info_Mod_Lehrling_Freudenspender_24_03"); //I'm in your debt.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

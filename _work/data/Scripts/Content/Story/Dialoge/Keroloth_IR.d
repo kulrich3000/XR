@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Keroloth_IR_Hebel (C_INFO)
 	information	= Info_Mod_Keroloth_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Can you use one lever while I move the other?";
 };
 
 FUNC INT Info_Mod_Keroloth_IR_Hebel_Condition()
@@ -23,7 +23,7 @@ FUNC VOID Info_Mod_Keroloth_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Keroloth_IR_Hebel_07_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Keroloth_IR_Hebel_07_00"); //Of course it is. Maybe if it's going to get us somewhere...
 
 	Mod_IR_Hebel = 1;
 
@@ -40,7 +40,7 @@ INSTANCE Info_Mod_Keroloth_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Keroloth_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Keroloth_IR_Heiltrank_Condition()
@@ -60,31 +60,31 @@ FUNC VOID Info_Mod_Keroloth_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Keroloth_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Essence of Healing", Info_Mod_Keroloth_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Keroloth_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Elixir of Healing", Info_Mod_Keroloth_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Keroloth_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Extract of Healing", Info_Mod_Keroloth_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Keroloth_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Essence of Healing", Info_Mod_Keroloth_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Keroloth_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Drink of light healing", Info_Mod_Keroloth_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Keroloth_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Light healing potion", Info_Mod_Keroloth_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Keroloth_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Keroloth_IR_Heiltrank, "Drink of fast healing", Info_Mod_Keroloth_IR_Heiltrank_Health_05);
 	};
 };
 

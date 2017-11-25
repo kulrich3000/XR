@@ -18,7 +18,7 @@ INSTANCE PC_Kessel_Blutkult (C_INFO)
 	information	= PC_Kessel_Blutkult_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Dämoneneintopf: 1x Dämonenherz + 2x Feuerzunge + 2x Zombiefleisch + 3x Fliegenpilz + 4x Blut";
+	description	= "Demon stew: 1x demon heart + 2x tongue of fire + 2x zombie flesh + 3x toadstool + 4x blood";
 };
 
 FUNC INT PC_Kessel_Blutkult_Condition()
@@ -58,7 +58,7 @@ INSTANCE PC_Kessel_Fangheuschreckensuppe (C_INFO)
 	information	= PC_Kessel_Fangheuschreckensuppe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fangheuschreckensuppe: 1x Fangheuschreckenkopf, 2x Wasser, 1x Fisch";
+	description	= "Catch grasshopper soup: 1x mantis head, 2x water, 1x fish";
 };
 
 FUNC INT PC_Kessel_Fangheuschreckensuppe_Condition()
@@ -95,7 +95,7 @@ INSTANCE PC_Kessel_Fangheuschreckensuppe_Max (C_INFO)
 	information	= PC_Kessel_Fangheuschreckensuppe_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fangheuschreckensuppen";
+	description	= "Max. mantis soups";
 };
 
 FUNC INT PC_Kessel_Fangheuschreckensuppe_Max_Condition()
@@ -149,7 +149,7 @@ INSTANCE PC_Kessel_Fischragout (C_INFO)
 	information	= PC_Kessel_Fischragout_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fischragout: 2x Fisch, 1x Waldbeere";
+	description	= "Fish ragout: 2x fish, 1x forest berry";
 };
 
 FUNC INT PC_Kessel_Fischragout_Condition()
@@ -184,7 +184,7 @@ INSTANCE PC_Kessel_Fischragout_Max (C_INFO)
 	information	= PC_Kessel_Fischragout_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fischragout";
+	description	= "Max. fish stew";
 };
 
 FUNC INT PC_Kessel_Fischragout_Max_Condition()
@@ -230,7 +230,7 @@ INSTANCE PC_Kessel_Fischsuppe (C_INFO)
 	information	= PC_Kessel_Fischsuppe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fischsuppe: 1x Fisch";
+	description	= "Fish soup: 1x fish";
 };
 
 FUNC INT PC_Kessel_Fischsuppe_Condition()
@@ -263,7 +263,7 @@ INSTANCE PC_Kessel_Fischsuppe_Max (C_INFO)
 	information	= PC_Kessel_Fischsuppe_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fischsuppen";
+	description	= "Max. fish soups";
 };
 
 FUNC INT PC_Kessel_Fischsuppe_Max_Condition()
@@ -299,7 +299,7 @@ INSTANCE PC_Kessel_Fleischeintopf (C_INFO)
 	information	= PC_Kessel_Fleischeintopf_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fleischeintopf: 2x rohes Fleisch, 1x Waldbeere, 1x Feldrübe";
+	description	= "Meat stew: 2x raw meat, 1x wild berry, 1x turnip";
 };
 
 FUNC INT PC_Kessel_Fleischeintopf_Condition()
@@ -336,7 +336,7 @@ INSTANCE PC_Kessel_Fleischeintopf_Max (C_INFO)
 	information	= PC_Kessel_Fleischeintopf_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fleischeintöpfe";
+	description	= "Max. stews";
 };
 
 FUNC INT PC_Kessel_Fleischeintopf_Max_Condition()
@@ -390,7 +390,7 @@ INSTANCE PC_Kessel_Fleischwanzenragout (C_INFO)
 	information	= PC_Kessel_Fleischwanzenragout_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fleischwanzenragout: 2x Dunkelpilz, 1x Wanzenfleisch";
+	description	= "Meatbug ragout: 2x dark mushroom, 1x bug meat";
 };
 
 FUNC INT PC_Kessel_Fleischwanzenragout_Condition()
@@ -425,7 +425,7 @@ INSTANCE PC_Kessel_Fleischwanzenragout_Max (C_INFO)
 	information	= PC_Kessel_Fleischwanzenragout_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fleischwanzenragouts";
+	description	= "Max. Meatbugragouts";
 };
 
 FUNC INT PC_Kessel_Fleischwanzenragout_Max_Condition()
@@ -471,7 +471,7 @@ INSTANCE PC_Kessel_Pilzsuppe (C_INFO)
 	information	= PC_Kessel_Pilzsuppe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Pilzsuppe: 2x Dunkelpilz, 1x Buddlerfleisch";
+	description	= "Mushroom soup: 2x dark mushroom, 1x Buddler meat";
 };
 
 FUNC INT PC_Kessel_Pilzsuppe_Condition()
@@ -506,7 +506,7 @@ INSTANCE PC_Kessel_Pilzsuppe_Max (C_INFO)
 	information	= PC_Kessel_Pilzsuppe_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Pilzsuppen";
+	description	= "Max. Mushroom soups";
 };
 
 FUNC INT PC_Kessel_Pilzsuppe_Max_Condition()

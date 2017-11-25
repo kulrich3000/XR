@@ -15,30 +15,30 @@ FUNC INT Info_Mod_Hecta_Hi_Condition()
 
 FUNC VOID Info_Mod_Hecta_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hecta_Hi_03_00"); //Na, wen haben wir denn da.
-	AI_Output(hero, self, "Info_Mod_Hecta_Hi_15_01"); //Ich ...
-	AI_Output(self, hero, "Info_Mod_Hecta_Hi_03_02"); //Ach, egal. Kommst wohl gerade aus dem Neuen Lager, was?
+	AI_Output(self, hero, "Info_Mod_Hecta_Hi_03_00"); //Well, look who's here.
+	AI_Output(hero, self, "Info_Mod_Hecta_Hi_15_01"); //l--
+	AI_Output(self, hero, "Info_Mod_Hecta_Hi_03_02"); //Oh, never mind. You just got out of the New Camp, huh?
 
 	Info_ClearChoices	(Info_Mod_Hecta_Hi);
 
-	Info_AddChoice	(Info_Mod_Hecta_Hi, "Nun ... nein, eigentlich nicht.", Info_Mod_Hecta_Hi_B);
-	Info_AddChoice	(Info_Mod_Hecta_Hi, "Stimmt.", Info_Mod_Hecta_Hi_A);
+	Info_AddChoice	(Info_Mod_Hecta_Hi, "Well... no, not really.", Info_Mod_Hecta_Hi_B);
+	Info_AddChoice	(Info_Mod_Hecta_Hi, "That's right.", Info_Mod_Hecta_Hi_A);
 };
 
 FUNC VOID Info_Mod_Hecta_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Hecta_Hi_B_15_00"); //Nun ... nein, eigentlich nicht.
-	AI_Output(self, hero, "Info_Mod_Hecta_Hi_B_03_01"); //Im Namen des Alten Lagers gibst mir jetzt dein ganzes Gold und Wertsachen.
-	AI_Output(hero, self, "Info_Mod_Hecta_Hi_B_15_02"); //Das hättest du wohl gerne, was?
-	AI_Output(self, hero, "Info_Mod_Hecta_Hi_B_03_03"); //Da hattest deine Chance.
+	AI_Output(hero, self, "Info_Mod_Hecta_Hi_B_15_00"); //Well... no, not really.
+	AI_Output(self, hero, "Info_Mod_Hecta_Hi_B_03_01"); //In the name of Old Camp, give me all your gold and valuables.
+	AI_Output(hero, self, "Info_Mod_Hecta_Hi_B_15_02"); //You'd like that, wouldn't you?
+	AI_Output(self, hero, "Info_Mod_Hecta_Hi_B_03_03"); //There's your chance.
 
 	Info_ClearChoices	(Info_Mod_Hecta_Hi);
 };
 
 FUNC VOID Info_Mod_Hecta_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Hecta_Hi_A_15_00"); //Stimmt.
-	AI_Output(self, hero, "Info_Mod_Hecta_Hi_A_03_01"); //Dann tut es mir echt leid für dich. Und nun stirb.
+	AI_Output(hero, self, "Info_Mod_Hecta_Hi_A_15_00"); //That's right.
+	AI_Output(self, hero, "Info_Mod_Hecta_Hi_A_03_01"); //Then I'm really sorry for you. Now die.
 
 	Info_ClearChoices	(Info_Mod_Hecta_Hi);
 };

@@ -1,7 +1,7 @@
 instance Mod_975_SRF_Grimes_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Grimes";
+	name 		= "grimes";
 	guild 		= GIL_NONE;
 	id 			= 975;
 	voice 		= 5;

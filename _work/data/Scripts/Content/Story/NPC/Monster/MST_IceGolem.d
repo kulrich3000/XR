@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_IceGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Eisgolem";
+	name							=	"Ice Golem";
 	guild							=	GIL_ICEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICEGOLEM;
 	level							=	100;
@@ -155,7 +155,7 @@ INSTANCE IceGolem_FeuerGegenEis_09	(Mst_Default_IceGolem)
 
 INSTANCE Summoned_IceGolem (Mst_Default_IceGolem)
 {
-	name							=	"Beschworener Eisgolem";
+	name							=	"Summoned Ice Golem";
 	guild							=	GIL_SUMMONED_GOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_ICEGOLEM;
 	level							=	0;

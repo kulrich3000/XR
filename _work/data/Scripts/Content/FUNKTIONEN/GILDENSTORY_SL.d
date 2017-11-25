@@ -19,7 +19,7 @@ FUNC VOID GILDENSTORY_SL()
 			{
 				AI_TurnToNpc	(Mod_7011_HS_Alex_REL, hero);
 
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_00"); //Halt!
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_00"); //Stop!
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 5)
@@ -27,29 +27,29 @@ FUNC VOID GILDENSTORY_SL()
 				AI_TurnToNpc	(hero, Mod_7011_HS_Alex_REL);
 				AI_PlayAni	(hero, "T_SEARCH");
 
-				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_01"); //Hm?
+				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_01"); //Huh?
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 10)
 			{
 				AI_TurnToNpc	(Mod_7011_HS_Alex_REL, hero);
 
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_02"); //Hier unten!
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_02"); //Down here!
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 15)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_03"); //Was machst du da unten?
+				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_03"); //What are you doing down there?
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 20)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_04"); //Sieht man das nicht? Ich buddle!
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_04"); //Can't you tell? I'm digging!
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 25)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_05"); //Du ... buddelst?
+				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_05"); //You.... digging?
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 30)
@@ -59,62 +59,62 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 35)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_07"); //Und ... warum buddelst du?
+				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_07"); //And... why are you digging?
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 40)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_08"); //Naja, ich bin der königliche Lochgräber.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_08"); //Well, I'm the royal tomb.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 45)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_09"); //Du bist ein Lochgräber?
+				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_09"); //You're a hole digger?
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 50)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_10"); //Königlicher Lochgräber!
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_10"); //Royal Punch!
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 55)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_11"); //Na gut, aber was willst du von mir?
+				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_11"); //All right, but what do you want from me?
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 60)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_12"); //Wie du siehst ist das Loch hier sehr tief.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_12"); //As you can see, the hole here is very deep.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 65)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_13"); //Und du willst, dass ich dir raus helfe?
+				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_13"); //And you want me to help you out?
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 70)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_14"); //Nein.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_14"); //No.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 75)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_15"); //Achso ...
+				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_15"); //Ah...
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 80)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_16"); //Ich wollte dir nur mein Loch zeigen.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_16"); //I just wanted to show you my hole.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 85)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_17"); //Wenn das so ist ... Bis später.
+				AI_Output(hero, NULL, "Info_Mod_Alex_Hofstaat_Intro_15_17"); //Well, in that case.... See you later.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 90)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_18"); //Bis später.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_18"); //See you later.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 95)
@@ -150,32 +150,32 @@ FUNC VOID GILDENSTORY_SL()
 				AI_TurnToNpc	(hero, Mod_7012_HS_Typ_REL);
 				AI_TurnToNpc	(Mod_7012_HS_Typ_REL, hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Typ_Hofstaat_Intro_15_00"); //Was machst du hier?
+				AI_Output(hero, NULL, "Info_Mod_Typ_Hofstaat_Intro_15_00"); //What are you doing here?
 			};
 
 			if (Mod_Hofstaat_Typ_Intro_Counter == 7)
 			{
-				AI_Output(Mod_7012_HS_Typ_REL, NULL, "Info_Mod_Typ_Hofstaat_Intro_06_01"); //Ich steh' 'rum und bin lecker.
+				AI_Output(Mod_7012_HS_Typ_REL, NULL, "Info_Mod_Typ_Hofstaat_Intro_06_01"); //I'm standing around and tasting good.
 			};
 
 			if (Mod_Hofstaat_Typ_Intro_Counter == 12)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Typ_Hofstaat_Intro_15_02"); //Du ... bist lecker?
+				AI_Output(hero, NULL, "Info_Mod_Typ_Hofstaat_Intro_15_02"); //You.... are yummy?
 			};
 
 			if (Mod_Hofstaat_Typ_Intro_Counter == 17)
 			{
-				AI_Output(Mod_7012_HS_Typ_REL, NULL, "Info_Mod_Typ_Hofstaat_Intro_06_03"); //Ja ... (kurze Pause) verdammt lecker.
+				AI_Output(Mod_7012_HS_Typ_REL, NULL, "Info_Mod_Typ_Hofstaat_Intro_06_03"); //Yes... (short pause) damn delicious.
 			};
 
 			if (Mod_Hofstaat_Typ_Intro_Counter == 22)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Typ_Hofstaat_Intro_15_04"); //Warum?
+				AI_Output(hero, NULL, "Info_Mod_Typ_Hofstaat_Intro_15_04"); //Why?
 			};
 
 			if (Mod_Hofstaat_Typ_Intro_Counter == 27)
 			{
-				AI_Output(Mod_7012_HS_Typ_REL, NULL, "Info_Mod_Typ_Hofstaat_Intro_06_05"); //Ich bin königlich ...
+				AI_Output(Mod_7012_HS_Typ_REL, NULL, "Info_Mod_Typ_Hofstaat_Intro_06_05"); //I am royal...
 			};
 
 			if (Mod_Hofstaat_Typ_Intro_Counter == 30)
@@ -185,7 +185,7 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Typ_Intro_Counter == 32)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Typ_Hofstaat_Intro_15_06"); //Was zum Teufel ...
+				AI_Output(hero, NULL, "Info_Mod_Typ_Hofstaat_Intro_15_06"); //What the hell...?
 			};
 
 			if (Mod_Hofstaat_Typ_Intro_Counter == 50)
@@ -231,9 +231,9 @@ FUNC VOID GILDENSTORY_SL()
 
 			AI_StandUp	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_Meer_15_00"); //Ich sollte im Sumpflager vorbeischauen.
+			AI_Output(hero, NULL, "Info_Mod_Hero_Meer_15_00"); //I should stop by the swamp camp.
 
-			B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich sollte im Sumpflager vorbeischauen.");
+			B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "I should stop by the swamp camp.");
 		};
 
 		if (!Npc_IsInState(Mod_7011_HS_Alex_REL, ZS_Talk))
@@ -271,7 +271,7 @@ FUNC VOID GILDENSTORY_SL()
 
 				Mod_SL_PartFluffy = 1;
 
-				B_LogEntry	(TOPIC_MOD_SL_FLUFFY, "Fluffy hat das Hundefutter verspeist. Ich sollte mich nach dem neuen Hundefutter umsehen.");
+				B_LogEntry	(TOPIC_MOD_SL_FLUFFY, "Fluffy ate the dog food. I should look around for the new dog food.");
 			};
 
 			Mod_SL_PartFluffy_Counter += 1;
@@ -294,7 +294,7 @@ FUNC VOID GILDENSTORY_SL()
 		&& (Mod_SL_PartGeliebte == 5)
 		&& (!Npc_IsInState(Mod_7339_HS_Geliebte_REL, ZS_Talk))
 		{
-			PrintScreen ("Eine heiße Nacht später", -1, YPOS_LevelUp, FONT_Screen, 2);
+			PrintScreen ("A hot night later", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 			Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 
@@ -337,7 +337,7 @@ FUNC VOID GILDENSTORY_SL()
 		&& (Mod_SL_KingAtSwamp == 1)
 		&& (!Npc_IsInState(Mod_7331_HS_Koenig_MT, ZS_Talk))
 		{
-			PrintScreen ("Eine durchzechte Nacht später", -1, YPOS_LevelUp, FONT_Screen, 2);
+			PrintScreen ("A night of drinking later", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 			Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 
@@ -365,9 +365,9 @@ FUNC VOID GILDENSTORY_SL()
 			{
 				if (Mod_IstGolem == TRUE)
 				{
-					Print	("Sumpfhaiprobe erhalten");
+					Print	("Swamp shark sample received");
 
-					B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Ich hab die Sumpfhaiprobe. Jetzt nichts wie zurück zu Baal Caine.");
+					B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "I got the swamp shark sample. Now let's get back to Baal Caine.");
 
 					Mod_Caine_Leichengase = 1;
 
@@ -398,7 +398,7 @@ FUNC VOID GILDENSTORY_SL()
 		{
 			if (Npc_GetDistToWP(hero, "SPAWNOW_PATH_190_MOVMENT") < 500)
 			{
-				B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Ich sollte jetzt die Spruchrolle benutzen, um das Schaf für den Troll zu beschwören.");
+				B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "I should now use the spell roll to summon the sheep for the troll.");
 
 				Mod_Leichengase_Kraut = 4;
 			};
@@ -467,7 +467,7 @@ FUNC VOID GILDENSTORY_SL()
 						{
 							Mod_TPL_HK_Ydran = 1;
 
-							B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Sehr lustig. Offenbar ist Baal Ydran schon ein Weilchen tot. Ich muss wohl nochmal mit Baal Namib sprechen.");
+							B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Very funny. Apparently Baal Ydran has been dead for a while now. I must speak to Baal Namib again.");
 						};
 					};
 				};
@@ -521,7 +521,7 @@ FUNC VOID GILDENSTORY_SL()
 			B_StartOtherRoutine(Mod_2014_PSINOV_Darrion_MT, "KOATHOME");
 			B_StartOtherRoutine(Mod_2013_PSINOV_Joru_MT, "ATDARRION");
 			
-			PrintScreen ("Etwas später...", -1, YPOS_LevelUp, FONT_Screen, 2);
+			PrintScreen ("A little later....", -1, YPOS_LevelUp, FONT_Screen, 2);
 			Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 		};
 		
@@ -550,7 +550,7 @@ FUNC VOID GILDENSTORY_SL()
 			B_StartOtherRoutine(Mod_2014_PSINOV_Darrion_MT, "ATJORU");
 			B_StartOtherRoutine(SwampGolem_100001_MT, "ATJORU");
 			
-			PrintScreen ("Etwas später...", -1, YPOS_LevelUp, FONT_Screen, 2);
+			PrintScreen ("A little later....", -1, YPOS_LevelUp, FONT_Screen, 2);
 			Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 		};
 	};
@@ -569,14 +569,14 @@ FUNC VOID GILDENSTORY_SL()
 
 			CreateInvItems	(hero, ItMi_Sumpfkraeuter_Molerat, 1);
 
-			B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Ich habe den Beutel mit Moleratfett eingerieben. Jetzt sollte ich zur Trollschlucht im Minental gehen, um die Kräuter zu den Trollen zu bringen.");
+			B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "I rubbed the bag with molar fat. Now I should go to the Troll Gorge in the Minental valley to bring the herbs to the trolls.");
 		};
 		if (Npc_KnowsInfo(hero, Info_Mod_Lobart_Leichengase3))
 		&& (Npc_HasItems(hero, ItMi_Schafsmagen) == 1)
 		{
 			Mod_Leichengase_Kraut = 2;
 
-			B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Ich habe einen mit den Kräutern gefüllten Schafsmagen. Jetzt sollte ich zur Trollschlucht im Minental gehen, um die Kräuter zu den Trollen zu bringen.");
+			B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "I have a sheep's stomach filled with herbs. Now I should go to the Troll Gorge in the Minental valley to bring the herbs to the trolls.");
 		};
 	};
 };

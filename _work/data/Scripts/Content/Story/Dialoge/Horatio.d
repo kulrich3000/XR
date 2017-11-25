@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Horatio_Hi_Condition()
 
 FUNC VOID Info_Mod_Horatio_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Horatio_Hi_09_00"); //Ich habe dir damals gezeigt, wie du stärker zuschlägst. Und jetzt verprügelst du uns Bauern. Ich bin schwer enttäuscht.
+	AI_Output(self, hero, "Info_Mod_Horatio_Hi_09_00"); //I showed you how to hit harder back then. And now you're gonna hit us peasants. I'm very disappointed.
 };
 
 INSTANCE Info_Mod_Horatio_DankeProBauern (C_INFO)
@@ -42,10 +42,10 @@ FUNC INT Info_Mod_Horatio_DankeProBauern_Condition()
 
 FUNC VOID Info_Mod_Horatio_DankeProBauern_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_00"); //Mit dem, was du für uns getan hast, hast du bewiesen, dass du ein wahrer Streiter für das Recht bist.
-	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_01"); //Es ist nicht viel, was wir dir zum Dank veräußern können, aber wir haben zusammengelegt.
+	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_00"); //With what you have done for us, you have proved that you are a true champion of justice.
+	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_01"); //It's not much we can sell you for thanks, but we've merged.
 
-	B_ShowGivenThings	("110 Gold, 19 Erz, 8 Äpfel, 10 Reis und 2 Käse erhalten");
+	B_ShowGivenThings	("110 gold, 19 ore, 8 apples, 10 rice and 2 cheese preserved");
 
 	CreateInvItems	(hero, ItMi_Gold, 110);
 	CreateInvItems	(hero, ItMi_Nugget, 19);
@@ -53,15 +53,15 @@ FUNC VOID Info_Mod_Horatio_DankeProBauern_Info()
 	CreateInvItems	(hero, ItPl_Riceplant, 10);
 	CreateInvItems	(hero, ItFo_Cheese, 2);
 
-	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_02"); //Wie du härter zuschlägst hatte ich dir ja bereits gezeigt.
-	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_03"); //Nun werde ich dir erklären, wie du den Stahl in deiner Hand gewandter führen kannst.
-	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_04"); //Wenn du einen Hieb startest, solltest du vor allem versuchen möglichst viel Schwung hineinzubringen.
-	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_05"); //Erst kurz bevor dein Schlag auftrifft, baust du Muskelspannung auf, um dem Schlag auch die entsprechende Härte zu verleihen.
+	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_02"); //I had already shown you how to hit harder.
+	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_03"); //Now I'll explain how you can guide the steel more skilfully in your hand.
+	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_04"); //When you start a stroke, you should try to get as much momentum into it as possible.
+	AI_Output(self, hero, "Info_Mod_Horatio_DankeProBauern_09_05"); //Only shortly before your shot hits, you build up muscle tension to give the shot the appropriate hardness.
 
 	B_RaiseFightTalent (hero, NPC_TALENT_1H, 2);
 	B_RaiseFightTalent (hero, NPC_TALENT_2H, 2);
 
-	AI_PrintScreen	("+2 Ein- und Zweihand", -1, -1, FONT_Screen, 2);
+	AI_PrintScreen	("2 One and two-handed", -1, -1, FONT_Screen, 2);
 
 	B_GivePlayerXP	(200);
 };

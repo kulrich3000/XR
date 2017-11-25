@@ -1,7 +1,7 @@
 INSTANCE Mod_12017_DRA_Wache_AW	(C_NPC)
 {
 	//----- Monster ----
-	name	=	"Echsenmensch";
+	name	=	"Lizard Man";
 	guild	=	GIL_DRACONIAN;
 	id	= 	12017;
 	level	=	35;

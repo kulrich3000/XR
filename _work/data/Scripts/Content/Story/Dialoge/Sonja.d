@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sonja_Hi (C_INFO)
 	information	= Info_Mod_Sonja_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Arbeitest du hier?";
+	description	= "Do you work here?";
 };
 
 FUNC INT Info_Mod_Sonja_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Sonja_Hi_Condition()
 
 FUNC VOID Info_Mod_Sonja_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Hi_15_00"); //Arbeitest du hier?
-	AI_Output(self, hero, "Info_Mod_Sonja_Hi_16_01"); //Na, wonach sieht's denn aus? Kann ich dich irgendwie ... zufrieden stellen?
+	AI_Output(hero, self, "Info_Mod_Sonja_Hi_15_00"); //Do you work here?
+	AI_Output(self, hero, "Info_Mod_Sonja_Hi_16_01"); //Well, what does it look like? Is there any way I can get you...? to satisfy you?
 };
 
 INSTANCE Info_Mod_Sonja_News (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Sonja_News (C_INFO)
 	information	= Info_Mod_Sonja_News_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bekommst doch hier sicher auch einiges an Neuigkeiten mit.";
+	description	= "I'm sure you'll find some news here.";
 };
 
 FUNC INT Info_Mod_Sonja_News_Condition()
@@ -41,14 +41,14 @@ FUNC INT Info_Mod_Sonja_News_Condition()
 
 FUNC VOID Info_Mod_Sonja_News_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_News_15_00"); //Du bekommst doch hier sicher auch einiges an Neuigkeiten mit.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_01"); //In den Armen einer gefühlvollen Frau wird jeder schweigsame Mann zum geschwätzigen Knaben.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_02"); //Ja, ich kenne mich von Matteos Heirat bis zu Constantinos geheimen Vorlieben aus.
-	AI_Output(hero, self, "Info_Mod_Sonja_News_15_03"); //Und was hörst du so von deinen Kunden?
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_04"); //Ich höre viel Ungewissheit und Verzweiflung wegen des Falls der Barriere.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_05"); //Einige meiner Kunden fürchten, dass sich die „wilden und ungehobelten Barbaren“ aus der Kolonie über ihre Besitztümer hermachen.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_06"); //Andererseits beschweren sich auch viele über die strenge Kontrolle durch die Paladine.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_07"); //Aber die meisten krächzen mir nur ins Ohr, wie gut ich denn wäre. (lacht)
+	AI_Output(hero, self, "Info_Mod_Sonja_News_15_00"); //I'm sure you'll find some news here.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_01"); //In the arms of an emotional woman, every silent man becomes a talkative boy.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_02"); //from Matteo's marriage to Constantino's secret tastes.
+	AI_Output(hero, self, "Info_Mod_Sonja_News_15_03"); //And what do you hear from your customers?
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_04"); //I hear a lot of uncertainty and despair about the fall of the barrier.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_05"); //Some of my clients fear that the "wild and rude barbarians" from the colony are coming up against their possessions.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_06"); //On the other hand, many complain about the strict control by the paladins.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_07"); //But most of them just squawk in my ear how good I would be. (laughs)
 };
 
 INSTANCE Info_Mod_Sonja_Sex (C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Sonja_Sex (C_INFO)
 	information	= Info_Mod_Sonja_Sex_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich würde gern deine Dienste in Anspruch nehmen.";
+	description	= "I'd like to use your services.";
 };
 
 FUNC INT Info_Mod_Sonja_Sex_Condition()
@@ -73,29 +73,29 @@ FUNC INT Info_Mod_Sonja_Sex_Condition()
 
 FUNC VOID Info_Mod_Sonja_Sex_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Sex_15_00"); //Ich würde gern deine Dienste in Anspruch nehmen.
-	AI_Output(self, hero, "Info_Mod_Sonja_Sex_16_01"); //Für 100 Goldstücke gehöre ich die ganze Nacht dir, Süßer. Eine ganze aufregende Nacht.
+	AI_Output(hero, self, "Info_Mod_Sonja_Sex_15_00"); //I'd like to use your services.
+	AI_Output(self, hero, "Info_Mod_Sonja_Sex_16_01"); //I'm yours all night for 100 gold pieces, sweetie. A whole exciting night.
 
 	Info_ClearChoices	(Info_Mod_Sonja_Sex);
 
-	Info_AddChoice	(Info_Mod_Sonja_Sex, "Vielleicht später.", Info_Mod_Sonja_Sex_B);
+	Info_AddChoice	(Info_Mod_Sonja_Sex, "Maybe later.", Info_Mod_Sonja_Sex_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Sonja_Sex, "Lass uns nach oben gehen. (100 Gold)", Info_Mod_Sonja_Sex_A);
+		Info_AddChoice	(Info_Mod_Sonja_Sex, "Let's go upstairs. (100 Gold)", Info_Mod_Sonja_Sex_A);
 	};
 };
 
 FUNC VOID Info_Mod_Sonja_Sex_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Sex_B_15_00"); //Vielleicht später.
+	AI_Output(hero, self, "Info_Mod_Sonja_Sex_B_15_00"); //Maybe later.
 
 	Info_ClearChoices	(Info_Mod_Sonja_Sex);
 };
 
 FUNC VOID Info_Mod_Sonja_Sex_A()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Sex_A_15_00"); //Lass uns nach oben gehen.
+	AI_Output(hero, self, "Info_Mod_Sonja_Sex_A_15_00"); //Let's go upstairs.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
@@ -129,7 +129,7 @@ FUNC INT Info_Mod_Sonja_SexLos_Condition()
 
 FUNC VOID Info_Mod_Sonja_SexLos_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sonja_SexLos_16_00"); //Entspann dich, Süßer.
+	AI_Output(self, hero, "Info_Mod_Sonja_SexLos_16_00"); //Relax, sweetie.
 
 	PlayVideo ("LOVESCENE.BIK");
 
@@ -163,11 +163,11 @@ FUNC INT Info_Mod_Sonja_Bartok_Condition()
 
 FUNC VOID Info_Mod_Sonja_Bartok_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_00"); //Hey du! Ich hab gesehen, wie du von Bartok verprügelt wurdest. Vielleicht kann ich dir helfen.
-	AI_Output(hero, self, "Info_Mod_Sonja_Bartok_15_01"); //Wie willst du mir helfen?
-	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_02"); //Nun ja, ich könnte zu Bartok gehen und ein wenig Zeit mit ihm verbringen und dann dafür sorgen, dass er auf dich hört.
-	AI_Output(hero, self, "Info_Mod_Sonja_Bartok_15_03"); //Und was soll ich dafür machen?
-	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_04"); //Noch nichts, aber ich werde schon noch auf dich zurückkommen.
+	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_00"); //Hey you! I saw you get beat up by Bartok. Maybe I can help you.
+	AI_Output(hero, self, "Info_Mod_Sonja_Bartok_15_01"); //How will you help me?
+	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_02"); //Well, I could go to Bartok's and spend some time with him and make sure he listens to you.
+	AI_Output(hero, self, "Info_Mod_Sonja_Bartok_15_03"); //And what am I supposed to do about it?
+	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_04"); //Nothing yet, but I'll get back to you.
 
 	Npc_ExchangeRoutine	(self, "BARTOK");
 
@@ -196,48 +196,48 @@ FUNC INT Info_Mod_Sonja_Freier_Condition()
 
 FUNC VOID Info_Mod_Sonja_Freier_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_16_00"); //Erinnerst du dich an dein kleines Versprechen, Süßer?
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_15_01"); //Ich schulde dir noch einen Gefallen.
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_16_02"); //Nun ist der Zeitpunkt, da ich darauf zurückkommen muss.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_16_00"); //Remember your little promise, sweetheart?
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_15_01"); //I owe you another favor.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_16_02"); //Now is the time for me to come back to that.
 
 	Info_ClearChoices	(Info_Mod_Sonja_Freier);
 
-	Info_AddChoice	(Info_Mod_Sonja_Freier, "Das interessiert mich nicht.", Info_Mod_Sonja_Freier_B);
-	Info_AddChoice	(Info_Mod_Sonja_Freier, "Was gibt es zu tun?", Info_Mod_Sonja_Freier_A);
+	Info_AddChoice	(Info_Mod_Sonja_Freier, "I don't care about that.", Info_Mod_Sonja_Freier_B);
+	Info_AddChoice	(Info_Mod_Sonja_Freier, "What is there to do?", Info_Mod_Sonja_Freier_A);
 };
 
 FUNC VOID Info_Mod_Sonja_Freier_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_B_15_00"); //Das interessiert mich nicht.
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_B_16_01"); //(gekränkt) Ich hatte gehofft, dass ich mich auf dich verlassen kann.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_B_15_00"); //I don't care about that.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_B_16_01"); //I was hoping I could count on you.
 
 	Info_ClearChoices	(Info_Mod_Sonja_Freier);
 };
 
 FUNC VOID Info_Mod_Sonja_Freier_A()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_00"); //Was gibt es zu tun?
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_01"); //Einer meiner häufigsten Freier ist schon seit einer ganzen Weile nicht mehr aufgekreuzt.
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_02"); //Ich habe nichts davon gehört, dass ihm etwas zugestoßen ist, also muss es andere Gründe geben, warum er mich nicht mehr besucht.
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_03"); //Wer ist dieser Freier?
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_04"); //Das darf ich dir nicht sagen. Berufsgeheimnis.
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_05"); //Und warum siehst du dann nicht selbst nach ihm?
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_06"); //Weil er im Oberen Viertel wohnt, Dummchen. Dort habe ich keinen Zutritt.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_00"); //What is there to do?
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_01"); //One of my most frequent clients hasn't shown up in a while.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_02"); //I haven't heard anything about anything happening to him, so there must be other reasons why he's not visiting me anymore.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_03"); //Who is this suitor?
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_04"); //I can't tell you that. Professional secrecy.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_05"); //Then why don't you see him yourself?
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_06"); //Because he lives in the upper district, silly. I don't have access there.
 
 	if (Mil_305_Torwache.aivar[AIV_Passgate] == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_07"); //Aber du bist so ein aufstrebender junger Mann, du wirst sicher bald Gelegenheit haben.
+		AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_07"); //But you're such an aspiring young man, I'm sure you'll have a chance soon.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_08"); //Also soll ich jetzt wohl das ganze Obere Viertel nach deinem Freier absuchen?
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_09"); //Ich kann dir noch verraten, dass es sich nicht um einen der Paladine oder Milizionäre handelt. Da sollte die Auswahl doch nicht mehr allzu groß sein.
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_10"); //Wenn du ihn gefunden hast, bitte ihn, dass er mal wieder bei mir vorbeischauen soll.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_08"); //So now I'm supposed to search the entire upper district for your suitor?
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_09"); //I can still tell you that this is not one of the paladins or militiamen. The selection shouldn't be too big any more.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_10"); //If you found him, ask him to stop by my house again.
 
 	Mod_Sonja_Freier = 1;
 
 	Log_createTopic	(TOPIC_MOD_SONJA_FREIER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SONJA_FREIER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SONJA_FREIER, "Ein Kunde von Sonja besucht sie schon seit einiger Zeit nicht mehr. Sie will mir seinen Namen nicht nennen, aber er wohnt im Oberen Viertel und gehört weder zur Miliz noch zu den Paladinen.");
+	B_LogEntry	(TOPIC_MOD_SONJA_FREIER, "A Sonja customer has not visited her for some time. She does not want to tell me his name, but he lives in the upper quarter and belongs neither to the militia nor to the paladins.");
 
 	Info_ClearChoices	(Info_Mod_Sonja_Freier);
 };
@@ -250,7 +250,7 @@ INSTANCE Info_Mod_Sonja_Freier2 (C_INFO)
 	information	= Info_Mod_Sonja_Freier2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fernando hatte Stress mit seiner Frau.";
+	description	= "Fernando was in trouble with his wife.";
 };
 
 FUNC INT Info_Mod_Sonja_Freier2_Condition()

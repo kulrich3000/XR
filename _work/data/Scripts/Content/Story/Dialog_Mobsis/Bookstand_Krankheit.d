@@ -24,33 +24,33 @@ FUNC VOID Use_Bookstand_Krankheit_01_S1()
 
 			if (KrankheitCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... so schwächen sie den Organismus und zehren ihn aus.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Es gibt leichte Formen, worunter die wohl jedem bekannte Erkältung fällt. Sie tritt auf, wenn der Körper unzureichend geschützt kalter Witterung ausgesetzt ist. Ihr Verlauf ist relativ sanft und gleichmäßig, Vitalität, Körperkraft und die anderen Fähigkeiten lassen über ihre Zeitdauer etwas nach. Hat der Körper jedoch in kurzen Zeitabständen mehrere Erkältungen überstanden, so härtet er sich gegen weitere ab.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... they weaken the organism and consume it.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "There are light forms, including the common cold. It occurs when the body is exposed to cold weather with insufficient protection. Their progression is relatively smooth and even, vitality, physical strength and the other abilities decrease slightly over time. However, if the body has survived several colds at short intervals, it hardens against further colds.");
 			}
 			else if (KrankheitCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Schlimmer sind da schon Krankheiten, die durch das Zufügen von Wunden in Verbindung mit Schmutz und Unrat entstehen. Die Bisse von Fleisch fressenden Tieren und schmutzige, rostige Waffen können das Blut des Betroffenen vergiften.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Dauer der Erkrankung ist zwar etwas kürzer und ihr Ausbruch unscheinbarer. Jedoch wird sie im weiteren Verlauf zunehmend stärker und die Einbußen an Fähigkeiten größer.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Diseases caused by inflicting wounds in connection with dirt and rubbish are even worse. The bites of carnivorous animals and dirty, rusty weapons can poison the blood of the victim.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The duration of the disease is somewhat shorter and its outbreak less noticeable. However, in the further course of time it will become increasingly stronger and the losses in skills will increase.");
 			}
 			else if (KrankheitCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Noch ungleich boshafter sind Krankheiten, welche in verwesenden Kadavern entstehen. Der faulige Biss eines Warans oder der Kontakt mit untotem Fleisch können verheerend sein. Auch hier ist zwar der Beginn noch vergleichsweise sanft, der Übergang zu einem heftigen, langwierigen Verlauf jedoch kurz.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Selbst die Gesundheit eines vitalen, starken Menschen wird schwer leiden. Überflüssig zu erwähnen, dass unbehandelt häufig der Tod den Betroffenen erwartet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even more mischievous are diseases that develop in decaying carcasses. The rotten bite of a monitor or contact with undead flesh can be devastating. Here, too, although the beginning is comparatively soft, the transition to a violent, protracted course is short.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even the health of a vital, strong person will suffer greatly. Needless to say, untreated, deaths often await those affected.");
 			}
 			else if (KrankheitCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Behandlung eines erkrankten Organismus sollte dabei ansetzen, ihn mit Speis und Trank zu kräftigen. Von stark alkoholischen Getränken sollte dabei abgesehen werden, während frisches Obst und Gemüse besonders vorteilhaft wirkt. Die Dauer, besonders der schweren Phasen, kann dadurch erheblich gesenkt werden.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Auch reichlich Schlaf kann dem Körper beim Überwinden einer Erkrankung helfen, da er dem leidenden Körper Erholung verschafft. Dabei sollte jedoch nicht übersehen werden, dass auch während des Schlafes die Erkrankung fortschreitet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The treatment of a diseased organism should begin to strengthen it with food and drink. Strong alcoholic beverages should be avoided, while fresh fruit and vegetables are particularly beneficial. The duration, especially of the difficult phases, can thus be reduced considerably.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Plenty of sleep can also help the body to overcome a disease by providing recovery for the suffering body. However, it should not be overlooked that the disease also progresses during sleep.");
 			}
 			else if (KrankheitCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Der Betroffene kann von einer schweren Phase im Schlaf überrascht werden und sterben, falls die Behandlung nicht mit Mitteln von Außen unterstützt wurde.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Zu den probatesten unter diesen gehören Pflanzen mit heilender Wirkung und die die daraus gebrauten Tränke, welche jeder kundige Alchemist feilbietet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The patient may be surprised by a severe phase of sleep and die if the treatment has not been supported by external means.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Among the most effective of these are plants with healing properties and the potions brewed from them, which every expert alchemist offers for sale.");
 			}
 			else if (KrankheitCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Übersteht ein Mensch mehrere durch Kreaturen übertragene Erkrankungen, so erlangt er zunehmende Resistenz. Der Körper erlernt die spezielle Erkrankung besser zu bekämpfen und somit ihre Folgen zu mindern.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Wahrscheinlichkeit, die selbe Krankheit erneut zu bekommen, sinkt. Da der Körper außerdem auf den Umgang mit Krankheiten trainiert wird, kann er schneller reagieren. Die Dauer aller Erkrankungen sinkt.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "If a human being survives several diseases transmitted by creatures, he becomes increasingly resistant. The body learns to fight the specific disease better and thus to reduce its consequences.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The probability of getting the same disease again decreases. Since the body is also trained to deal with illnesses, it can react more quickly. The duration of all diseases decreases.");
 			};
 		};
 
@@ -77,33 +77,33 @@ FUNC VOID Use_Bookstand_Krankheit_02_S1()
 
 			if (KrankheitCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... so schwächen sie den Organismus und zehren ihn aus.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Es gibt leichte Formen, worunter die wohl jedem bekannte Erkältung fällt. Sie tritt auf, wenn der Körper unzureichend geschützt kalter Witterung ausgesetzt ist. Ihr Verlauf ist relativ sanft und gleichmäßig, Vitalität, Körperkraft und die anderen Fähigkeiten lassen über ihre Zeitdauer etwas nach. Hat der Körper jedoch in kurzen Zeitabständen mehrere Erkältungen überstanden, so härtet er sich gegen weitere ab.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... they weaken the organism and consume it.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "There are light forms, including the common cold. It occurs when the body is exposed to cold weather with insufficient protection. Their progression is relatively smooth and even, vitality, physical strength and the other abilities decrease slightly over time. However, if the body has survived several colds at short intervals, it hardens against further colds.");
 			}
 			else if (KrankheitCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Schlimmer sind da schon Krankheiten, die durch das Zufügen von Wunden in Verbindung mit Schmutz und Unrat entstehen. Die Bisse von Fleisch fressenden Tieren und schmutzige, rostige Waffen können das Blut des Betroffenen vergiften.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Dauer der Erkrankung ist zwar etwas kürzer und ihr Ausbruch unscheinbarer. Jedoch wird sie im weiteren Verlauf zunehmend stärker und die Einbußen an Fähigkeiten größer.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Diseases caused by inflicting wounds in connection with dirt and rubbish are even worse. The bites of carnivorous animals and dirty, rusty weapons can poison the blood of the victim.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The duration of the disease is somewhat shorter and its outbreak less noticeable. However, in the further course of time it will become increasingly stronger and the losses in skills will increase.");
 			}
 			else if (KrankheitCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Noch ungleich boshafter sind Krankheiten, welche in verwesenden Kadavern entstehen. Der faulige Biss eines Warans oder der Kontakt mit untotem Fleisch können verheerend sein. Auch hier ist zwar der Beginn noch vergleichsweise sanft, der Übergang zu einem heftigen, langwierigen Verlauf jedoch kurz.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Selbst die Gesundheit eines vitalen, starken Menschen wird schwer leiden. Überflüssig zu erwähnen, dass unbehandelt häufig der Tod den Betroffenen erwartet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even more mischievous are diseases that develop in decaying carcasses. The rotten bite of a monitor or contact with undead flesh can be devastating. Here, too, although the beginning is comparatively soft, the transition to a violent, protracted course is short.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even the health of a vital, strong person will suffer greatly. Needless to say, untreated, deaths often await those affected.");
 			}
 			else if (KrankheitCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Behandlung eines erkrankten Organismus sollte dabei ansetzen, ihn mit Speis und Trank zu kräftigen. Von stark alkoholischen Getränken sollte dabei abgesehen werden, während frisches Obst und Gemüse besonders vorteilhaft wirkt. Die Dauer, besonders der schweren Phasen, kann dadurch erheblich gesenkt werden.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Auch reichlich Schlaf kann dem Körper beim Überwinden einer Erkrankung helfen, da er dem leidenden Körper Erholung verschafft. Dabei sollte jedoch nicht übersehen werden, dass auch während des Schlafes die Erkrankung fortschreitet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The treatment of a diseased organism should begin to strengthen it with food and drink. Strong alcoholic beverages should be avoided, while fresh fruit and vegetables are particularly beneficial. The duration, especially of the difficult phases, can thus be reduced considerably.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Plenty of sleep can also help the body to overcome a disease by providing recovery for the suffering body. However, it should not be overlooked that the disease also progresses during sleep.");
 			}
 			else if (KrankheitCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Der Betroffene kann von einer schweren Phase im Schlaf überrascht werden und sterben, falls die Behandlung nicht mit Mitteln von Außen unterstützt wurde.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Zu den probatesten unter diesen gehören Pflanzen mit heilender Wirkung und die die daraus gebrauten Tränke, welche jeder kundige Alchemist feilbietet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The patient may be surprised by a severe phase of sleep and die if the treatment has not been supported by external means.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Among the most effective of these are plants with healing properties and the potions brewed from them, which every expert alchemist offers for sale.");
 			}
 			else if (KrankheitCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Übersteht ein Mensch mehrere durch Kreaturen übertragene Erkrankungen, so erlangt er zunehmende Resistenz. Der Körper erlernt die spezielle Erkrankung besser zu bekämpfen und somit ihre Folgen zu mindern.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Wahrscheinlichkeit, die selbe Krankheit erneut zu bekommen, sinkt. Da der Körper außerdem auf den Umgang mit Krankheiten trainiert wird, kann er schneller reagieren. Die Dauer aller Erkrankungen sinkt.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "If a human being survives several diseases transmitted by creatures, he becomes increasingly resistant. The body learns to fight the specific disease better and thus to reduce its consequences.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The probability of getting the same disease again decreases. Since the body is also trained to deal with illnesses, it can react more quickly. The duration of all diseases decreases.");
 			};
 		};
 
@@ -130,33 +130,33 @@ FUNC VOID Use_Bookstand_Krankheit_03_S1()
 
 			if (KrankheitCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... so schwächen sie den Organismus und zehren ihn aus.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Es gibt leichte Formen, worunter die wohl jedem bekannte Erkältung fällt. Sie tritt auf, wenn der Körper unzureichend geschützt kalter Witterung ausgesetzt ist. Ihr Verlauf ist relativ sanft und gleichmäßig, Vitalität, Körperkraft und die anderen Fähigkeiten lassen über ihre Zeitdauer etwas nach. Hat der Körper jedoch in kurzen Zeitabständen mehrere Erkältungen überstanden, so härtet er sich gegen weitere ab.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... they weaken the organism and consume it.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "There are light forms, including the common cold. It occurs when the body is exposed to cold weather with insufficient protection. Their progression is relatively smooth and even, vitality, physical strength and the other abilities decrease slightly over time. However, if the body has survived several colds at short intervals, it hardens against further colds.");
 			}
 			else if (KrankheitCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Schlimmer sind da schon Krankheiten, die durch das Zufügen von Wunden in Verbindung mit Schmutz und Unrat entstehen. Die Bisse von Fleisch fressenden Tieren und schmutzige, rostige Waffen können das Blut des Betroffenen vergiften.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Dauer der Erkrankung ist zwar etwas kürzer und ihr Ausbruch unscheinbarer. Jedoch wird sie im weiteren Verlauf zunehmend stärker und die Einbußen an Fähigkeiten größer.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Diseases caused by inflicting wounds in connection with dirt and rubbish are even worse. The bites of carnivorous animals and dirty, rusty weapons can poison the blood of the victim.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The duration of the disease is somewhat shorter and its outbreak less noticeable. However, in the further course of time it will become increasingly stronger and the losses in skills will increase.");
 			}
 			else if (KrankheitCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Noch ungleich boshafter sind Krankheiten, welche in verwesenden Kadavern entstehen. Der faulige Biss eines Warans oder der Kontakt mit untotem Fleisch können verheerend sein. Auch hier ist zwar der Beginn noch vergleichsweise sanft, der Übergang zu einem heftigen, langwierigen Verlauf jedoch kurz.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Selbst die Gesundheit eines vitalen, starken Menschen wird schwer leiden. Überflüssig zu erwähnen, dass unbehandelt häufig der Tod den Betroffenen erwartet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even more mischievous are diseases that develop in decaying carcasses. The rotten bite of a monitor or contact with undead flesh can be devastating. Here, too, although the beginning is comparatively soft, the transition to a violent, protracted course is short.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even the health of a vital, strong person will suffer greatly. Needless to say, untreated, deaths often await those affected.");
 			}
 			else if (KrankheitCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Behandlung eines erkrankten Organismus sollte dabei ansetzen, ihn mit Speis und Trank zu kräftigen. Von stark alkoholischen Getränken sollte dabei abgesehen werden, während frisches Obst und Gemüse besonders vorteilhaft wirkt. Die Dauer, besonders der schweren Phasen, kann dadurch erheblich gesenkt werden.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Auch reichlich Schlaf kann dem Körper beim Überwinden einer Erkrankung helfen, da er dem leidenden Körper Erholung verschafft. Dabei sollte jedoch nicht übersehen werden, dass auch während des Schlafes die Erkrankung fortschreitet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The treatment of a diseased organism should begin to strengthen it with food and drink. Strong alcoholic beverages should be avoided, while fresh fruit and vegetables are particularly beneficial. The duration, especially of the difficult phases, can thus be reduced considerably.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Plenty of sleep can also help the body to overcome a disease by providing recovery for the suffering body. However, it should not be overlooked that the disease also progresses during sleep.");
 			}
 			else if (KrankheitCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Der Betroffene kann von einer schweren Phase im Schlaf überrascht werden und sterben, falls die Behandlung nicht mit Mitteln von Außen unterstützt wurde.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Zu den probatesten unter diesen gehören Pflanzen mit heilender Wirkung und die die daraus gebrauten Tränke, welche jeder kundige Alchemist feilbietet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The patient may be surprised by a severe phase of sleep and die if the treatment has not been supported by external means.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Among the most effective of these are plants with healing properties and the potions brewed from them, which every expert alchemist offers for sale.");
 			}
 			else if (KrankheitCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Übersteht ein Mensch mehrere durch Kreaturen übertragene Erkrankungen, so erlangt er zunehmende Resistenz. Der Körper erlernt die spezielle Erkrankung besser zu bekämpfen und somit ihre Folgen zu mindern.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Wahrscheinlichkeit, die selbe Krankheit erneut zu bekommen, sinkt. Da der Körper außerdem auf den Umgang mit Krankheiten trainiert wird, kann er schneller reagieren. Die Dauer aller Erkrankungen sinkt.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "If a human being survives several diseases transmitted by creatures, he becomes increasingly resistant. The body learns to fight the specific disease better and thus to reduce its consequences.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The probability of getting the same disease again decreases. Since the body is also trained to deal with illnesses, it can react more quickly. The duration of all diseases decreases.");
 			};
 		};
 
@@ -183,33 +183,33 @@ FUNC VOID Use_Bookstand_Krankheit_04_S1()
 
 			if (KrankheitCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... so schwächen sie den Organismus und zehren ihn aus.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Es gibt leichte Formen, worunter die wohl jedem bekannte Erkältung fällt. Sie tritt auf, wenn der Körper unzureichend geschützt kalter Witterung ausgesetzt ist. Ihr Verlauf ist relativ sanft und gleichmäßig, Vitalität, Körperkraft und die anderen Fähigkeiten lassen über ihre Zeitdauer etwas nach. Hat der Körper jedoch in kurzen Zeitabständen mehrere Erkältungen überstanden, so härtet er sich gegen weitere ab.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... they weaken the organism and consume it.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "There are light forms, including the common cold. It occurs when the body is exposed to cold weather with insufficient protection. Their progression is relatively smooth and even, vitality, physical strength and the other abilities decrease slightly over time. However, if the body has survived several colds at short intervals, it hardens against further colds.");
 			}
 			else if (KrankheitCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Schlimmer sind da schon Krankheiten, die durch das Zufügen von Wunden in Verbindung mit Schmutz und Unrat entstehen. Die Bisse von Fleisch fressenden Tieren und schmutzige, rostige Waffen können das Blut des Betroffenen vergiften.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Dauer der Erkrankung ist zwar etwas kürzer und ihr Ausbruch unscheinbarer. Jedoch wird sie im weiteren Verlauf zunehmend stärker und die Einbußen an Fähigkeiten größer.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Diseases caused by inflicting wounds in connection with dirt and rubbish are even worse. The bites of carnivorous animals and dirty, rusty weapons can poison the blood of the victim.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The duration of the disease is somewhat shorter and its outbreak less noticeable. However, in the further course of time it will become increasingly stronger and the losses in skills will increase.");
 			}
 			else if (KrankheitCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Noch ungleich boshafter sind Krankheiten, welche in verwesenden Kadavern entstehen. Der faulige Biss eines Warans oder der Kontakt mit untotem Fleisch können verheerend sein. Auch hier ist zwar der Beginn noch vergleichsweise sanft, der Übergang zu einem heftigen, langwierigen Verlauf jedoch kurz.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Selbst die Gesundheit eines vitalen, starken Menschen wird schwer leiden. Überflüssig zu erwähnen, dass unbehandelt häufig der Tod den Betroffenen erwartet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even more mischievous are diseases that develop in decaying carcasses. The rotten bite of a monitor or contact with undead flesh can be devastating. Here, too, although the beginning is comparatively soft, the transition to a violent, protracted course is short.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even the health of a vital, strong person will suffer greatly. Needless to say, untreated, deaths often await those affected.");
 			}
 			else if (KrankheitCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Behandlung eines erkrankten Organismus sollte dabei ansetzen, ihn mit Speis und Trank zu kräftigen. Von stark alkoholischen Getränken sollte dabei abgesehen werden, während frisches Obst und Gemüse besonders vorteilhaft wirkt. Die Dauer, besonders der schweren Phasen, kann dadurch erheblich gesenkt werden.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Auch reichlich Schlaf kann dem Körper beim Überwinden einer Erkrankung helfen, da er dem leidenden Körper Erholung verschafft. Dabei sollte jedoch nicht übersehen werden, dass auch während des Schlafes die Erkrankung fortschreitet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The treatment of a diseased organism should begin to strengthen it with food and drink. Strong alcoholic beverages should be avoided, while fresh fruit and vegetables are particularly beneficial. The duration, especially of the difficult phases, can thus be reduced considerably.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Plenty of sleep can also help the body to overcome a disease by providing recovery for the suffering body. However, it should not be overlooked that the disease also progresses during sleep.");
 			}
 			else if (KrankheitCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Der Betroffene kann von einer schweren Phase im Schlaf überrascht werden und sterben, falls die Behandlung nicht mit Mitteln von Außen unterstützt wurde.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Zu den probatesten unter diesen gehören Pflanzen mit heilender Wirkung und die die daraus gebrauten Tränke, welche jeder kundige Alchemist feilbietet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The patient may be surprised by a severe phase of sleep and die if the treatment has not been supported by external means.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Among the most effective of these are plants with healing properties and the potions brewed from them, which every expert alchemist offers for sale.");
 			}
 			else if (KrankheitCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Übersteht ein Mensch mehrere durch Kreaturen übertragene Erkrankungen, so erlangt er zunehmende Resistenz. Der Körper erlernt die spezielle Erkrankung besser zu bekämpfen und somit ihre Folgen zu mindern.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Wahrscheinlichkeit, die selbe Krankheit erneut zu bekommen, sinkt. Da der Körper außerdem auf den Umgang mit Krankheiten trainiert wird, kann er schneller reagieren. Die Dauer aller Erkrankungen sinkt.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "If a human being survives several diseases transmitted by creatures, he becomes increasingly resistant. The body learns to fight the specific disease better and thus to reduce its consequences.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The probability of getting the same disease again decreases. Since the body is also trained to deal with illnesses, it can react more quickly. The duration of all diseases decreases.");
 			};
 		};
 
@@ -236,33 +236,33 @@ FUNC VOID Use_Bookstand_Krankheit_05_S1()
 
 			if (KrankheitCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... so schwächen sie den Organismus und zehren ihn aus.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Es gibt leichte Formen, worunter die wohl jedem bekannte Erkältung fällt. Sie tritt auf, wenn der Körper unzureichend geschützt kalter Witterung ausgesetzt ist. Ihr Verlauf ist relativ sanft und gleichmäßig, Vitalität, Körperkraft und die anderen Fähigkeiten lassen über ihre Zeitdauer etwas nach. Hat der Körper jedoch in kurzen Zeitabständen mehrere Erkältungen überstanden, so härtet er sich gegen weitere ab.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... they weaken the organism and consume it.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "There are light forms, including the common cold. It occurs when the body is exposed to cold weather with insufficient protection. Their progression is relatively smooth and even, vitality, physical strength and the other abilities decrease slightly over time. However, if the body has survived several colds at short intervals, it hardens against further colds.");
 			}
 			else if (KrankheitCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Schlimmer sind da schon Krankheiten, die durch das Zufügen von Wunden in Verbindung mit Schmutz und Unrat entstehen. Die Bisse von Fleisch fressenden Tieren und schmutzige, rostige Waffen können das Blut des Betroffenen vergiften.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Dauer der Erkrankung ist zwar etwas kürzer und ihr Ausbruch unscheinbarer. Jedoch wird sie im weiteren Verlauf zunehmend stärker und die Einbußen an Fähigkeiten größer.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Diseases caused by inflicting wounds in connection with dirt and rubbish are even worse. The bites of carnivorous animals and dirty, rusty weapons can poison the blood of the victim.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The duration of the disease is somewhat shorter and its outbreak less noticeable. However, in the further course of time it will become increasingly stronger and the losses in skills will increase.");
 			}
 			else if (KrankheitCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Noch ungleich boshafter sind Krankheiten, welche in verwesenden Kadavern entstehen. Der faulige Biss eines Warans oder der Kontakt mit untotem Fleisch können verheerend sein. Auch hier ist zwar der Beginn noch vergleichsweise sanft, der Übergang zu einem heftigen, langwierigen Verlauf jedoch kurz.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Selbst die Gesundheit eines vitalen, starken Menschen wird schwer leiden. Überflüssig zu erwähnen, dass unbehandelt häufig der Tod den Betroffenen erwartet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even more mischievous are diseases that develop in decaying carcasses. The rotten bite of a monitor or contact with undead flesh can be devastating. Here, too, although the beginning is comparatively soft, the transition to a violent, protracted course is short.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even the health of a vital, strong person will suffer greatly. Needless to say, untreated, deaths often await those affected.");
 			}
 			else if (KrankheitCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Behandlung eines erkrankten Organismus sollte dabei ansetzen, ihn mit Speis und Trank zu kräftigen. Von stark alkoholischen Getränken sollte dabei abgesehen werden, während frisches Obst und Gemüse besonders vorteilhaft wirkt. Die Dauer, besonders der schweren Phasen, kann dadurch erheblich gesenkt werden.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Auch reichlich Schlaf kann dem Körper beim Überwinden einer Erkrankung helfen, da er dem leidenden Körper Erholung verschafft. Dabei sollte jedoch nicht übersehen werden, dass auch während des Schlafes die Erkrankung fortschreitet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The treatment of a diseased organism should begin to strengthen it with food and drink. Strong alcoholic beverages should be avoided, while fresh fruit and vegetables are particularly beneficial. The duration, especially of the difficult phases, can thus be reduced considerably.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Plenty of sleep can also help the body to overcome a disease by providing recovery for the suffering body. However, it should not be overlooked that the disease also progresses during sleep.");
 			}
 			else if (KrankheitCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Der Betroffene kann von einer schweren Phase im Schlaf überrascht werden und sterben, falls die Behandlung nicht mit Mitteln von Außen unterstützt wurde.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Zu den probatesten unter diesen gehören Pflanzen mit heilender Wirkung und die die daraus gebrauten Tränke, welche jeder kundige Alchemist feilbietet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The patient may be surprised by a severe phase of sleep and die if the treatment has not been supported by external means.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Among the most effective of these are plants with healing properties and the potions brewed from them, which every expert alchemist offers for sale.");
 			}
 			else if (KrankheitCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Übersteht ein Mensch mehrere durch Kreaturen übertragene Erkrankungen, so erlangt er zunehmende Resistenz. Der Körper erlernt die spezielle Erkrankung besser zu bekämpfen und somit ihre Folgen zu mindern.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Wahrscheinlichkeit, die selbe Krankheit erneut zu bekommen, sinkt. Da der Körper außerdem auf den Umgang mit Krankheiten trainiert wird, kann er schneller reagieren. Die Dauer aller Erkrankungen sinkt.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "If a human being survives several diseases transmitted by creatures, he becomes increasingly resistant. The body learns to fight the specific disease better and thus to reduce its consequences.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The probability of getting the same disease again decreases. Since the body is also trained to deal with illnesses, it can react more quickly. The duration of all diseases decreases.");
 			};
 		};
 
@@ -289,33 +289,33 @@ FUNC VOID Use_Bookstand_Krankheit_06_S1()
 
 			if (KrankheitCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... so schwächen sie den Organismus und zehren ihn aus.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Es gibt leichte Formen, worunter die wohl jedem bekannte Erkältung fällt. Sie tritt auf, wenn der Körper unzureichend geschützt kalter Witterung ausgesetzt ist. Ihr Verlauf ist relativ sanft und gleichmäßig, Vitalität, Körperkraft und die anderen Fähigkeiten lassen über ihre Zeitdauer etwas nach. Hat der Körper jedoch in kurzen Zeitabständen mehrere Erkältungen überstanden, so härtet er sich gegen weitere ab.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "... they weaken the organism and consume it.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "There are light forms, including the common cold. It occurs when the body is exposed to cold weather with insufficient protection. Their progression is relatively smooth and even, vitality, physical strength and the other abilities decrease slightly over time. However, if the body has survived several colds at short intervals, it hardens against further colds.");
 			}
 			else if (KrankheitCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Schlimmer sind da schon Krankheiten, die durch das Zufügen von Wunden in Verbindung mit Schmutz und Unrat entstehen. Die Bisse von Fleisch fressenden Tieren und schmutzige, rostige Waffen können das Blut des Betroffenen vergiften.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Dauer der Erkrankung ist zwar etwas kürzer und ihr Ausbruch unscheinbarer. Jedoch wird sie im weiteren Verlauf zunehmend stärker und die Einbußen an Fähigkeiten größer.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Diseases caused by inflicting wounds in connection with dirt and rubbish are even worse. The bites of carnivorous animals and dirty, rusty weapons can poison the blood of the victim.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The duration of the disease is somewhat shorter and its outbreak less noticeable. However, in the further course of time it will become increasingly stronger and the losses in skills will increase.");
 			}
 			else if (KrankheitCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Noch ungleich boshafter sind Krankheiten, welche in verwesenden Kadavern entstehen. Der faulige Biss eines Warans oder der Kontakt mit untotem Fleisch können verheerend sein. Auch hier ist zwar der Beginn noch vergleichsweise sanft, der Übergang zu einem heftigen, langwierigen Verlauf jedoch kurz.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Selbst die Gesundheit eines vitalen, starken Menschen wird schwer leiden. Überflüssig zu erwähnen, dass unbehandelt häufig der Tod den Betroffenen erwartet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even more mischievous are diseases that develop in decaying carcasses. The rotten bite of a monitor or contact with undead flesh can be devastating. Here, too, although the beginning is comparatively soft, the transition to a violent, protracted course is short.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Even the health of a vital, strong person will suffer greatly. Needless to say, untreated, deaths often await those affected.");
 			}
 			else if (KrankheitCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Behandlung eines erkrankten Organismus sollte dabei ansetzen, ihn mit Speis und Trank zu kräftigen. Von stark alkoholischen Getränken sollte dabei abgesehen werden, während frisches Obst und Gemüse besonders vorteilhaft wirkt. Die Dauer, besonders der schweren Phasen, kann dadurch erheblich gesenkt werden.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Auch reichlich Schlaf kann dem Körper beim Überwinden einer Erkrankung helfen, da er dem leidenden Körper Erholung verschafft. Dabei sollte jedoch nicht übersehen werden, dass auch während des Schlafes die Erkrankung fortschreitet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The treatment of a diseased organism should begin to strengthen it with food and drink. Strong alcoholic beverages should be avoided, while fresh fruit and vegetables are particularly beneficial. The duration, especially of the difficult phases, can thus be reduced considerably.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Plenty of sleep can also help the body to overcome a disease by providing recovery for the suffering body. However, it should not be overlooked that the disease also progresses during sleep.");
 			}
 			else if (KrankheitCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Der Betroffene kann von einer schweren Phase im Schlaf überrascht werden und sterben, falls die Behandlung nicht mit Mitteln von Außen unterstützt wurde.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Zu den probatesten unter diesen gehören Pflanzen mit heilender Wirkung und die die daraus gebrauten Tränke, welche jeder kundige Alchemist feilbietet.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The patient may be surprised by a severe phase of sleep and die if the treatment has not been supported by external means.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Among the most effective of these are plants with healing properties and the potions brewed from them, which every expert alchemist offers for sale.");
 			}
 			else if (KrankheitCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Übersteht ein Mensch mehrere durch Kreaturen übertragene Erkrankungen, so erlangt er zunehmende Resistenz. Der Körper erlernt die spezielle Erkrankung besser zu bekämpfen und somit ihre Folgen zu mindern.");
-				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "Die Wahrscheinlichkeit, die selbe Krankheit erneut zu bekommen, sinkt. Da der Körper außerdem auf den Umgang mit Krankheiten trainiert wird, kann er schneller reagieren. Die Dauer aller Erkrankungen sinkt.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "If a human being survives several diseases transmitted by creatures, he becomes increasingly resistant. The body learns to fight the specific disease better and thus to reduce its consequences.");
+				B_LogEntry	(TOPIC_MOD_KRANKHEIT, "The probability of getting the same disease again decreases. Since the body is also trained to deal with illnesses, it can react more quickly. The duration of all diseases decreases.");
 			};
 		};
 

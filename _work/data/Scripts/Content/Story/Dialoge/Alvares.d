@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Alvares_Hi (C_INFO)
 	information	= Info_Mod_Alvares_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Alvares_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Alvares_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Alvares_Hi_11_01"); //Ich bin Alvares.
+	AI_Output(self, hero, "Info_Mod_Alvares_Hi_11_01"); //I'm Alvares.
 };
 
 INSTANCE Info_Mod_Alvares_Knast (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Alvares_Knast (C_INFO)
 	information	= Info_Mod_Alvares_Knast_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum bist du im Gefängnis?";
+	description	= "Why are you in prison?";
 };
 
 FUNC INT Info_Mod_Alvares_Knast_Condition()
@@ -42,8 +42,8 @@ FUNC INT Info_Mod_Alvares_Knast_Condition()
 
 FUNC VOID Info_Mod_Alvares_Knast_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alvares_Knast_15_00"); //Warum bist du im Gefängnis?
-	AI_Output(self, hero, "Info_Mod_Alvares_Knast_11_01"); //Ich hab mich mit einer Miliz rumgeschlagen. Daraufhin haben sie mich hier eingesperrt.
+	AI_Output(hero, self, "Info_Mod_Alvares_Knast_15_00"); //Why are you in prison?
+	AI_Output(self, hero, "Info_Mod_Alvares_Knast_11_01"); //I was dealing with a militia. That's when they locked me in here.
 };
 
 INSTANCE Info_Mod_Alvares_Soeldner (C_INFO)
@@ -54,7 +54,7 @@ INSTANCE Info_Mod_Alvares_Soeldner (C_INFO)
 	information	= Info_Mod_Alvares_Soeldner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du dich den Söldnern anschließen?";
+	description	= "You want to join the mercenaries?";
 };
 
 FUNC INT Info_Mod_Alvares_Soeldner_Condition()
@@ -67,12 +67,12 @@ FUNC INT Info_Mod_Alvares_Soeldner_Condition()
 
 FUNC VOID Info_Mod_Alvares_Soeldner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alvares_Soeldner_15_00"); //Willst du dich den Söldnern anschließen?
-	AI_Output(self, hero, "Info_Mod_Alvares_Soeldner_11_01"); //Mit dem Gedanken hab ich schon mal gespielt, aber wenn ich hier im Knast sitze kann ich mich ihnen wohl kaum anschließen.
-	AI_Output(hero, self, "Info_Mod_Alvares_Soeldner_15_02"); //Ich könnte dich befreien.
-	AI_Output(self, hero, "Info_Mod_Alvares_Soeldner_11_03"); //Das wäre sehr gut.
+	AI_Output(hero, self, "Info_Mod_Alvares_Soeldner_15_00"); //You want to join the mercenaries?
+	AI_Output(self, hero, "Info_Mod_Alvares_Soeldner_11_01"); //I've played with the idea before, but when I'm in jail here I can hardly join them.
+	AI_Output(hero, self, "Info_Mod_Alvares_Soeldner_15_02"); //I could set you free.
+	AI_Output(self, hero, "Info_Mod_Alvares_Soeldner_11_03"); //That would be very good.
 
-	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Alvares würde sich den Söldnern anschließen wenn ich ihn aus dem Gefängnis befreien würde.");
+	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Alvares would join the mercenaries if I got him out of jail.");
 };
 
 INSTANCE Info_Mod_Alvares_Frei (C_INFO)
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Alvares_Frei (C_INFO)
 	information	= Info_Mod_Alvares_Frei_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist jetzt frei.";
+	description	= "You're free now.";
 };
 
 FUNC INT Info_Mod_Alvares_Frei_Condition()
@@ -96,13 +96,13 @@ FUNC INT Info_Mod_Alvares_Frei_Condition()
 
 FUNC VOID Info_Mod_Alvares_Frei_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alvares_Frei_15_00"); //Du bist jetzt frei.
-	AI_Output(self, hero, "Info_Mod_Alvares_Frei_11_01"); //Dann kann ich jetzt zu den Söldner gehen?
-	AI_Output(hero, self, "Info_Mod_Alvares_Frei_15_02"); //Ja, ich werde dich hinbringen.
+	AI_Output(hero, self, "Info_Mod_Alvares_Frei_15_00"); //You're free now.
+	AI_Output(self, hero, "Info_Mod_Alvares_Frei_11_01"); //Then I can go to the mercenaries now?
+	AI_Output(hero, self, "Info_Mod_Alvares_Frei_15_02"); //Yeah, I'll take you there.
 
 	B_StartOtherRoutine	(self, "FOLLOWTOHOF");
 
-	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Ich werde Alvares jetzt zum Hof begleiten.");
+	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "I'll escort Alvares to the yard now.");
 };
 
 INSTANCE Info_Mod_Alvares_Hof (C_INFO)
@@ -126,11 +126,11 @@ FUNC INT Info_Mod_Alvares_Hof_Condition()
 
 FUNC VOID Info_Mod_Alvares_Hof_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alvares_Hof_11_00"); //Ah, das sind also die Söldner?
-	AI_Output(hero, self, "Info_Mod_Alvares_Hof_15_01"); //Ja, das sind sie.
-	AI_Output(self, hero, "Info_Mod_Alvares_Hof_11_02"); //Danke das du mich hergebracht hast.
+	AI_Output(self, hero, "Info_Mod_Alvares_Hof_11_00"); //Ah, so these are the mercenaries?
+	AI_Output(hero, self, "Info_Mod_Alvares_Hof_15_01"); //Yes, they are.
+	AI_Output(self, hero, "Info_Mod_Alvares_Hof_11_02"); //Thanks for bringing me here.
 
-	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Ich habe Alvares jetzt zum Hof gebracht. Jetzt muss ich nur noch mit Torlof sprechen.");
+	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "I've taken Alvares to the yard now. Now all I have to do is talk to Torlof.");
 
 	Npc_ExchangeRoutine	(self, "ATHOF");
 

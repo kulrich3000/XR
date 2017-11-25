@@ -166,7 +166,7 @@ instance MENU_ITEM_LIST_MISSIONS_OLD(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LIST_LOG(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_LISTBOX;	
-	text[0]		= 	"Log";
+	text[0]		= 	"log";
 	
 	posx		=	LOG_ITEM_LIST_X;
 	posy		=   LOG_ITEM_LIST_Y;
@@ -208,7 +208,7 @@ INSTANCE MENU_ITEM_CONTENT_VIEWER(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_DAY_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]		= 	"Tag";
+	text[0]		= 	"day";
 	posx 		= 	1800; // see dimx of MENU_ITEM_DAY!!
 	posy		= 	6000;
 	fontName	=	LOG_FONT_DATETIME;
@@ -217,7 +217,7 @@ INSTANCE MENU_ITEM_DAY_TITLE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_TIME_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]		= 	"Zeit:";
+	text[0]		= 	"Time:";
 	posx 		= 	1500;
 	posy		= 	6300;
 	fontName	=	LOG_FONT_DATETIME;

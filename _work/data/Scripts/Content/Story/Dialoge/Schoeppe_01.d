@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Schoeppe_01_Hi (C_INFO)
 	information	= Info_Mod_Schoeppe_01_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Magst du deinen Beruf?";
+	description	= "Do you like your profession?";
 };
 
 FUNC INT Info_Mod_Schoeppe_01_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Schoeppe_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Schoeppe_01_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Schoeppe_01_Hi_15_00"); //Magst du deinen Beruf?
-	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_01"); //Beruf? Nein, ich mache das ehrenamtlich, um dem größeren Wohl zu dienen.
-	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_02"); //Ich persönlich hasse ja diese stinkenden Menschen, die stinkenden Verbrechen und die stinkenden Ausreden.
-	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_03"); //Aber ich muss dafür sorgen, dass wir in Zukunft von solchem Pack verschont bleiben.
+	AI_Output(hero, self, "Info_Mod_Schoeppe_01_Hi_15_00"); //Do you like your profession?
+	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_01"); //Occupation? No, I'm doing this on a voluntary basis to serve the greater good.
+	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_02"); //Personally, I hate those smelly people, the stinking crimes and the smelly excuses.
+	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_03"); //But I have to make sure that in the future we are spared such a mess.
 };
 
 INSTANCE Info_Mod_Schoeppe_01_Pickpocket (C_INFO)

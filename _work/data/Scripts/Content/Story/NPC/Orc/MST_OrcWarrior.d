@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_OrcWarrior(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Ork Krieger";
+	name							=	"Orc Warrior";
 	guild							=	GIL_ORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCWARRIOR;
 	voice							=	18;
@@ -57,7 +57,7 @@ PROTOTYPE Mst_Default_OrcWarrior(C_Npc)
 PROTOTYPE Mst_Default_OrcScout(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	guild							=	GIL_ORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCWARRIOR;
 	voice							=	18;
@@ -292,7 +292,7 @@ INSTANCE OrcPeasantEatAndDrink (Mst_Default_OrcWarrior)
 {
 	//-------- general data --------
 	guild			=	GIL_ORC;
-	name			=	"Ork";
+	name			=	"orc";
 
 	level = 15;
 
@@ -310,7 +310,7 @@ INSTANCE OrcPeasantEatAndDrink (Mst_Default_OrcWarrior)
 
 INSTANCE WaterOrc (Mst_Default_OrcWarrior)
 {
-	name	= "Wasserork";
+	name	= "waterork";
 
 	//-------- visual --------
 	B_SetVisuals_WaterOrc();
@@ -362,7 +362,7 @@ INSTANCE OrcWarrior_Rest (Mst_Default_OrcWarrior)
 
 INSTANCE OrcHunter_Rest (Mst_Default_OrcWarrior)
 {
-	name = "Ork Jäger";
+	name = "Orc Hunter";
 
 	//-------- visual --------
 	B_SetVisuals_OrcWarrior();
@@ -406,7 +406,7 @@ INSTANCE OrcWarrior_Sit (Mst_Default_OrcWarrior)
 // ------ Ork vor Stadt ------
 INSTANCE OrcWarrior_Harad (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -440,7 +440,7 @@ INSTANCE OrcWarrior_Harad (Mst_Default_OrcWarrior)
 // ------ Ork auf Schiff ------
 INSTANCE SchiffOrk (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Krieger";
+	name							=	"Orc Warrior";
 	
 	level							=	10;
 	
@@ -474,7 +474,7 @@ INSTANCE SchiffOrk (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -507,7 +507,7 @@ INSTANCE OrcScout (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Oschust_01 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -540,7 +540,7 @@ INSTANCE OrcScout_Oschust_01 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Oschust_02 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -573,7 +573,7 @@ INSTANCE OrcScout_Oschust_02 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_01 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -606,7 +606,7 @@ INSTANCE OrcScout_Garond_01 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_02 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -639,7 +639,7 @@ INSTANCE OrcScout_Garond_02 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_03 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -672,7 +672,7 @@ INSTANCE OrcScout_Garond_03 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_04 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -705,7 +705,7 @@ INSTANCE OrcScout_Garond_04 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_05 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -738,7 +738,7 @@ INSTANCE OrcScout_Garond_05 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_06 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -771,7 +771,7 @@ INSTANCE OrcScout_Garond_06 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_07 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -804,7 +804,7 @@ INSTANCE OrcScout_Garond_07 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_08 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -837,7 +837,7 @@ INSTANCE OrcScout_Garond_08 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_09 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -870,7 +870,7 @@ INSTANCE OrcScout_Garond_09 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_10 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -903,7 +903,7 @@ INSTANCE OrcScout_Garond_10 (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Garond_11 (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	
@@ -1093,7 +1093,7 @@ INSTANCE OrcWarrior_Banditenangriff (Mst_Default_OrcWarrior)
 
 INSTANCE OrcScout_Banditenangriff (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	
 	level							=	15;
 	

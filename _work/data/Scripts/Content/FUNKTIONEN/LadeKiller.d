@@ -21,7 +21,7 @@ func void EnforceLoadingPolicy() {
 	
 	if (!talentMenuItemPtr) {
 		//wtf?
-		var string err; err = "EnforceLoadingPolicy: MENU_ITEM_STATUS_HEADING not found!?";
+		var string err; err = "EnforceLoadingPolicy: MENU_ITEM_STATUS_HEADING nicht gefunden!";
 		Print (err); PrintDebug (err);
 		return;
 	};

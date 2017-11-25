@@ -1,7 +1,7 @@
 INSTANCE Mod_4015_SNOV_BesessenerNovize_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Besessener schwarzer Novize";
+	name 		= "Possessed Black Novice";
 	guild 		= GIL_OUT;
 	id 			= 4015;
 	voice 		= 11;

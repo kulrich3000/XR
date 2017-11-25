@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Matteo_Hi_Condition()
 
 FUNC VOID Info_Mod_Matteo_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Matteo_Hi_36_00"); //(eifrig) Ein Kunde, ein Kunde! Tritt ein, Fremder, und stöbere in meinen erlesenen Waren!
-	AI_Output(hero, self, "Info_Mod_Matteo_Hi_15_01"); //Keine Vorurteile gegenüber einem ehemaligen Sträfling?
-	AI_Output(self, hero, "Info_Mod_Matteo_Hi_36_02"); //Ach was! Alles Kundschaft! Interessierte, zahlende Kundschaft!
+	AI_Output(self, hero, "Info_Mod_Matteo_Hi_36_00"); //A customer, a customer! Enter, stranger, and rummage in my exquisite merchandise!
+	AI_Output(hero, self, "Info_Mod_Matteo_Hi_15_01"); //No prejudices against a former convict?
+	AI_Output(self, hero, "Info_Mod_Matteo_Hi_36_02"); //No way! All customers! Interested paying customers!
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Matteo verkauft Lebensmittel.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Matteo sells food.");
 };
 
 INSTANCE Info_Mod_Matteo_Angebot_Kissen (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Matteo_Angebot_Kissen (C_INFO)
 	information	= Info_Mod_Matteo_Angebot_Kissen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche was Weiches für den Kopf.";
+	description	= "I'm looking for something soft for the head.";
 };
 
 FUNC INT Info_Mod_Matteo_Angebot_Kissen_Condition()
@@ -45,15 +45,15 @@ FUNC INT Info_Mod_Matteo_Angebot_Kissen_Condition()
 
 FUNC VOID Info_Mod_Matteo_Angebot_Kissen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kissen_15_00"); //Ich suche was Weiches für den Kopf.
-	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Kissen_36_01"); //Was genau? Vielleicht eine Fellmütze? Ich hätte da ...
-	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kissen_15_02"); //Nein, nein. Was, um den Kopf beim Schlafen drauf abzulegen.
-	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Kissen_36_03"); //Aha. Und was soll das sein?
-	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kissen_15_04"); //Wenn ich das wüsste. Vielleicht ein Sack mit trockenem Gras drin.
-	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Kissen_36_05"); //So was hab ich nicht. Vielleicht die Bauern ...
-	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kissen_15_06"); //Danke trotzdem. Ich suche dann mal weiter.
+	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kissen_15_00"); //I'm looking for something soft for the head.
+	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Kissen_36_01"); //What exactly? Maybe a fur hat? I would have there...
+	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kissen_15_02"); //No, no, no. What, to put your head on it while sleeping.
+	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Kissen_36_03"); //Uh-huh. And what is that supposed to be?
+	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kissen_15_04"); //If I only knew. Maybe a sack of dry grass in it.
+	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Kissen_36_05"); //I don't have that. Maybe the peasants...
+	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kissen_15_06"); //Thanks anyway. I'll keep looking.
 
-	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Matteo konnte mir nicht helfen.");
+	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Matteo couldn't help me.");
 };
 
 INSTANCE Info_Mod_Matteo_ThorbenLehrling (C_INFO)
@@ -78,40 +78,40 @@ FUNC INT Info_Mod_Matteo_ThorbenLehrling_Condition()
 
 FUNC VOID Info_Mod_Matteo_ThorbenLehrling_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_36_00"); //Ach, hallo. Weißt du, wo Thorben ist?
-	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_15_01"); //Ich bin seine Vertretung. Du willst deine Tische abholen?
-	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_36_02"); //Richtig, richtig. Thorben und ich hatten einen Preis von 100 Goldmünzen ausgehandelt.
+	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_36_00"); //Oh, hello. Do you know where Thorben is?
+	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_15_01"); //I'm his replacement. You want to pick up your tables?
+	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_36_02"); //Right, right, right. Thorben and I had negotiated a price of 100 gold coins.
 
 	Info_ClearChoices	(Info_Mod_Matteo_ThorbenLehrling);
 
-	Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Da habe ich aber von einem ganz anderen Preis gehört.", Info_Mod_Matteo_ThorbenLehrling_B);
-	Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Hier sind die Tische.", Info_Mod_Matteo_ThorbenLehrling_A);
+	Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "I've heard of a very different price.", Info_Mod_Matteo_ThorbenLehrling_B);
+	Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Here are the tables.", Info_Mod_Matteo_ThorbenLehrling_A);
 };
 
 FUNC VOID Info_Mod_Matteo_ThorbenLehrling_B()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_B_15_00"); //Da habe ich aber von einem ganz anderen Preis gehört.
-	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_B_36_01"); //Wie ich sehe, kann man dir nicht so einfach etwas vormachen. Na schön, hier hast du die 150 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_B_15_00"); //I've heard of a very different price.
+	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_B_36_01"); //I see you can't be deceived that easily. All right, here's the 150 gold coins.
 
 	Info_ClearChoices	(Info_Mod_Matteo_ThorbenLehrling);
 
 	if (Mod_Verhandlungsgeschick > 0)
 	{
-		Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "(Feilschen) Noch ein kleiner Bonus für den schwer kranken Meister?", Info_Mod_Matteo_ThorbenLehrling_D);
+		Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Another little bonus for the seriously ill master?", Info_Mod_Matteo_ThorbenLehrling_D);
 	};
 
-	Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Abgemacht.", Info_Mod_Matteo_ThorbenLehrling_C);
+	Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Deal.", Info_Mod_Matteo_ThorbenLehrling_C);
 };
 
 FUNC VOID Info_Mod_Matteo_ThorbenLehrling_A()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_A_15_00"); //Hier sind die Tische.
+	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_A_15_00"); //Here are the tables.
 
 	B_GiveInvItems	(hero, self, ItMi_MatteoFesttisch, 2);
 
 	Npc_RemoveInvItems	(self, ItMi_MatteoFesttisch, 2);
 
-	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_A_36_01"); //Na, das nenn ich mal schnellen Service. Einen wunderschönen Tag wünsche ich noch!
+	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_A_36_01"); //Well, that's what I call fast service. Have a wonderful day!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -122,11 +122,11 @@ FUNC VOID Info_Mod_Matteo_ThorbenLehrling_A()
 
 FUNC VOID Info_Mod_Matteo_ThorbenLehrling_D()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_D_15_00"); //Noch ein kleiner Bonus für den schwer kranken Meister?
+	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_D_15_00"); //Another little bonus for the seriously ill master?
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_D_36_01"); //Wieso nicht? Ich bin heute eh in Spenderlaune. Bitteschön, und einen schönen Tag noch.
+		AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_D_36_01"); //Why not? I'm in a donor mood today anyway. Here you go, and have a nice day.
 
 		Npc_RemoveInvItems	(hero, ItMi_MatteoFesttisch, 2);
 
@@ -140,23 +140,23 @@ FUNC VOID Info_Mod_Matteo_ThorbenLehrling_D()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_D_36_02"); //Ich bin zu lange im Geschäft, um auf die Nummer hereinzufallen.
+		AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_D_36_02"); //I've been in business too long to fall for that number.
 
 		Info_ClearChoices	(Info_Mod_Matteo_ThorbenLehrling);
 
-		Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Abgemacht.", Info_Mod_Matteo_ThorbenLehrling_C);
+		Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Deal.", Info_Mod_Matteo_ThorbenLehrling_C);
 	};
 };
 
 FUNC VOID Info_Mod_Matteo_ThorbenLehrling_C()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_C_15_00"); //Abgemacht.
+	AI_Output(hero, self, "Info_Mod_Matteo_ThorbenLehrling_C_15_00"); //Deal.
 
 	B_GiveInvItems	(hero, self, ItMi_MatteoFesttisch, 2);
 
 	Npc_RemoveInvItems	(self, ItMi_MatteoFesttisch, 2);
 
-	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_C_36_01"); //Gut, gut, dann wäre das ja geregelt. Richte Thorben einen Gruß von mir aus!
+	AI_Output(self, hero, "Info_Mod_Matteo_ThorbenLehrling_C_36_01"); //Good, good, that settles it. Say hello to Thorben for me!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
@@ -173,7 +173,7 @@ INSTANCE Info_Mod_Matteo_OberesViertel (C_INFO)
 	information	= Info_Mod_Matteo_OberesViertel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte in das Obere Viertel.";
+	description	= "I want to go to the upper quarter.";
 };
 
 FUNC INT Info_Mod_Matteo_OberesViertel_Condition()
@@ -186,18 +186,18 @@ FUNC INT Info_Mod_Matteo_OberesViertel_Condition()
 
 FUNC VOID Info_Mod_Matteo_OberesViertel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_OberesViertel_15_00"); //Ich möchte in das Obere Viertel.
-	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_01"); //Kein Problem! Warte, vielleicht doch. Ach nein, das kriegen wir schon hin!
-	AI_Output(hero, self, "Info_Mod_Matteo_OberesViertel_15_02"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_03"); //Um in das Obere Viertel zu kommen, musst du entweder Bürger der Stadt sein - oder du schließt dich der Miliz an. (hastig) Wovon ich dir abraten würde.
-	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_04"); //Die einfachste Möglichkeit, den Bürgerstatus zu erreichen, ist, von einem der Meister als Lehrling angenommen zu werden.
-	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_05"); //Vorzugsweise bei mir, ich benötige dringend einen Lehrling!
-	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_06"); //Bevor ich dich anstellen kann, brauche ich aber die Zustimmung aller anderen Handwerksmeister, das wären Bosper, Thorben, Harad und Constantino.
-	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_07"); //Es wird also deine Aufgabe sein, sie zu überzeugen!
+	AI_Output(hero, self, "Info_Mod_Matteo_OberesViertel_15_00"); //I want to go to the upper quarter.
+	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_01"); //No problem! Wait, maybe I will. Oh, no, we'll figure it out!
+	AI_Output(hero, self, "Info_Mod_Matteo_OberesViertel_15_02"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_03"); //To enter the Upper Quarter, you must either be a citizen of the city or join the militia. (hasty) Which I would advise against.
+	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_04"); //The simplest way to achieve civic status is to be accepted as an apprentice by one of the masters.
+	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_05"); //Preferably with me, I urgently need an apprentice!
+	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_06"); //But before I can hire you, I need the approval of all the other master craftsmen: Bosper, Thorben, Harad and Constantino.
+	AI_Output(self, hero, "Info_Mod_Matteo_OberesViertel_36_07"); //So it will be your job to convince them!
 
 	Log_CreateTopic	(TOPIC_MOD_BÜRGER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BÜRGER, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_OBERESVIERTEL, TOPIC_MOD_BÜRGER, "Um ins Obere Viertel zu kommen muss ich ein Bürger der Stadt oder ein Mitglied der Miliz sein.", "Um ein Bürger der Stadt zu werden muss ich der Lehrling von einem der fünf Meister sein.");
+	B_LogEntry_More	(TOPIC_MOD_OBERESVIERTEL, TOPIC_MOD_BÜRGER, "To get to the upper district, I have to be a citizen of the city or a member of the militia.", "To become a citizen of the city, I have to be the apprentice of one of the five masters.");
 };
 
 INSTANCE Info_Mod_Matteo_Miliz (C_INFO)
@@ -208,7 +208,7 @@ INSTANCE Info_Mod_Matteo_Miliz (C_INFO)
 	information	= Info_Mod_Matteo_Miliz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was muss ich tun um mich der Miliz anzuschließen?";
+	description	= "What do I have to do to join the militia?";
 };
 
 FUNC INT Info_Mod_Matteo_Miliz_Condition()
@@ -222,9 +222,9 @@ FUNC INT Info_Mod_Matteo_Miliz_Condition()
 
 FUNC VOID Info_Mod_Matteo_Miliz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Miliz_15_00"); //Was muss ich tun, um mich der Miliz anzuschließen?
-	AI_Output(self, hero, "Info_Mod_Matteo_Miliz_36_01"); //Wenn du dich der Miliz anschließen willst, dann solltest du zu Lord Andre gehen.
-	AI_Output(self, hero, "Info_Mod_Matteo_Miliz_36_02"); //Er entscheidet, wer bei der Miliz aufgenommen wird.
+	AI_Output(hero, self, "Info_Mod_Matteo_Miliz_15_00"); //What do I have to do to join the militia?
+	AI_Output(self, hero, "Info_Mod_Matteo_Miliz_36_01"); //If you want to join the militia, you should go to Lord Andre.
+	AI_Output(self, hero, "Info_Mod_Matteo_Miliz_36_02"); //He decides who will be admitted to the militia.
 };
 
 INSTANCE Info_Mod_Matteo_Andre (C_INFO)
@@ -235,7 +235,7 @@ INSTANCE Info_Mod_Matteo_Andre (C_INFO)
 	information	= Info_Mod_Matteo_Andre_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo finde ich Lord Andre?";
+	description	= "Where can I find Lord Andre?";
 };
 
 FUNC INT Info_Mod_Matteo_Andre_Condition()
@@ -248,9 +248,9 @@ FUNC INT Info_Mod_Matteo_Andre_Condition()
 
 FUNC VOID Info_Mod_Matteo_Andre_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Andre_15_00"); //Wo finde ich Lord Andre?
-	AI_Output(self, hero, "Info_Mod_Matteo_Andre_36_01"); //In der Kaserne in der Nähe des anderen Stadttors.
-	AI_Output(self, hero, "Info_Mod_Matteo_Andre_36_02"); //Ein großer Mann - und ein guter Freund von mir!
+	AI_Output(hero, self, "Info_Mod_Matteo_Andre_15_00"); //Where can I find Lord Andre?
+	AI_Output(self, hero, "Info_Mod_Matteo_Andre_36_01"); //In the barracks near the other gate.
+	AI_Output(self, hero, "Info_Mod_Matteo_Andre_36_02"); //A great man - and a good friend of mine!
 };
 
 INSTANCE Info_Mod_Matteo_Auftrag_2 (C_INFO)
@@ -261,7 +261,7 @@ INSTANCE Info_Mod_Matteo_Auftrag_2 (C_INFO)
 	information	= Info_Mod_Matteo_Auftrag_2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du auch eine Aufgabe für mich?";
+	description	= "Do you have a job for me?";
 };
 
 FUNC INT Info_Mod_Matteo_Auftrag_2_Condition()
@@ -274,18 +274,18 @@ FUNC INT Info_Mod_Matteo_Auftrag_2_Condition()
 
 FUNC VOID Info_Mod_Matteo_Auftrag_2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Auftrag_2_15_00"); //Hast du auch eine Aufgabe für mich?
-	AI_Output(self, hero, "Info_Mod_Matteo_Auftrag_2_36_01"); //Wenn du schon fragst: ja!
-	AI_Output(self, hero, "Info_Mod_Matteo_Auftrag_2_36_02"); //Du musst wissen, ich bin momentan überglücklich und muss mich um gewisse Vorbereitungen kümmern.
-	AI_Output(self, hero, "Info_Mod_Matteo_Auftrag_2_36_03"); //Da bleibt nicht viel Zeit, für mein Geschäft zu werben. Also wirst du diese Aufgabe übernehmen!
+	AI_Output(hero, self, "Info_Mod_Matteo_Auftrag_2_15_00"); //Do you have a job for me?
+	AI_Output(self, hero, "Info_Mod_Matteo_Auftrag_2_36_01"); //If you ask: yes!
+	AI_Output(self, hero, "Info_Mod_Matteo_Auftrag_2_36_02"); //You have to know, I'm overjoyed right now and have to take care of certain preparations.
+	AI_Output(self, hero, "Info_Mod_Matteo_Auftrag_2_36_03"); //There's not much time left to promote my business. So you'll take on that task!
 	
 	B_GiveInvItems	(self, hero, MatteoFlugblaetter, 20);
 
-	AI_Output(self, hero, "Info_Mod_Matteo_Auftrag_2_36_04"); //Verteil die Flugblätter unter den Bürgern dieser Stadt, und dem Herold kannst du auch Bescheid geben. Der hat doch eh nichts Sinnvolles zu quasseln!
+	AI_Output(self, hero, "Info_Mod_Matteo_Auftrag_2_36_04"); //Distribute the leaflets among the citizens of this city, and you can also inform the herald. He's got no sense in yakking anyway!
 
 	Log_CreateTopic	(TOPIC_MOD_MATTEOFLUGBLATT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MATTEOFLUGBLATT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MATTEOFLUGBLATT, "Um Matteos Stimme zu bekommen, soll ich für ihn Flugblätter verteilen.");
+	B_LogEntry	(TOPIC_MOD_MATTEOFLUGBLATT, "To get Matteo's voice, I'm supposed to hand out leaflets for him.");
 };
 
 INSTANCE Info_Mod_Matteo_WieLehrling (C_INFO)
@@ -296,7 +296,7 @@ INSTANCE Info_Mod_Matteo_WieLehrling (C_INFO)
 	information	= Info_Mod_Matteo_WieLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich auch Lehrling eines anderen Meisters werden?";
+	description	= "Can I become an apprentice of another master?";
 };
 
 FUNC INT Info_Mod_Matteo_WieLehrling_Condition()
@@ -309,12 +309,12 @@ FUNC INT Info_Mod_Matteo_WieLehrling_Condition()
 
 FUNC VOID Info_Mod_Matteo_WieLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_WieLehrling_15_00"); //Kann ich auch Lehrling eines anderen Meisters werden?
-	AI_Output(self, hero, "Info_Mod_Matteo_WieLehrling_36_01"); //(druckst herum) Na ja, die brauchen doch gar keine!
-	AI_Output(self, hero, "Info_Mod_Matteo_WieLehrling_36_02"); //Harad und Thorben haben schon welche, Constantino würde am liebsten allein in seinem Haus verrotten, und Bosper ... wird nicht gut auf dich zu sprechen sein.
-	AI_Output(self, hero, "Info_Mod_Matteo_WieLehrling_36_03"); //Glaub mir, bei mir bist du schon am besten aufgehoben!
-	AI_Output(hero, self, "Info_Mod_Matteo_WieLehrling_15_04"); //Aber möglich wäre es schon?
-	AI_Output(self, hero, "Info_Mod_Matteo_WieLehrling_36_05"); //(unglücklich) Theoretisch, ja. Aber bestimmt nicht sinnvoll.
+	AI_Output(hero, self, "Info_Mod_Matteo_WieLehrling_15_00"); //Can I become an apprentice of another master?
+	AI_Output(self, hero, "Info_Mod_Matteo_WieLehrling_36_01"); //(pressing around) Well, they don't need any!
+	AI_Output(self, hero, "Info_Mod_Matteo_WieLehrling_36_02"); //Harad and Thorben already have some, Constantino would prefer to rot in his house alone, and Bosper.... won't be good to talk about you.
+	AI_Output(self, hero, "Info_Mod_Matteo_WieLehrling_36_03"); //Believe me, you're in good hands with me!
+	AI_Output(hero, self, "Info_Mod_Matteo_WieLehrling_15_04"); //But is it possible?
+	AI_Output(self, hero, "Info_Mod_Matteo_WieLehrling_36_05"); //Theoretically, yes. But certainly not useful.
 };
 
 INSTANCE Info_Mod_Matteo_Flugblaetter (C_INFO)
@@ -325,7 +325,7 @@ INSTANCE Info_Mod_Matteo_Flugblaetter (C_INFO)
 	information	= Info_Mod_Matteo_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab die Flugblätter verteilt.";
+	description	= "I handed out the flyers.";
 };
 
 FUNC INT Info_Mod_Matteo_Flugblaetter_Condition()
@@ -339,14 +339,14 @@ FUNC INT Info_Mod_Matteo_Flugblaetter_Condition()
 
 FUNC VOID Info_Mod_Matteo_Flugblaetter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Flugblaetter_15_00"); //Ich hab die Flugblätter verteilt.
-	AI_Output(self, hero, "Info_Mod_Matteo_Flugblaetter_36_01"); //Ich hab's gemerkt, der Laden war heute rammelvoll.
-	AI_Output(self, hero, "Info_Mod_Matteo_Flugblaetter_36_02"); //Ich liebe es, den Menschen dabei zuzusehen, wie sie meine Nahrungsmittel betrachten und abwiegen.
-	AI_Output(self, hero, "Info_Mod_Matteo_Flugblaetter_36_03"); //Damit hast du meinen Teil der Bedingung erfüllt. Komm zurück, wenn du die Zustimmung aller Meister hast.
+	AI_Output(hero, self, "Info_Mod_Matteo_Flugblaetter_15_00"); //I handed out the flyers.
+	AI_Output(self, hero, "Info_Mod_Matteo_Flugblaetter_36_01"); //I noticed, the place was packed today.
+	AI_Output(self, hero, "Info_Mod_Matteo_Flugblaetter_36_02"); //I love to watch people looking at and weighing up my food.
+	AI_Output(self, hero, "Info_Mod_Matteo_Flugblaetter_36_03"); //With that, you have fulfilled my part of the condition. Come back when you have the consent of all the masters.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	B_LogEntry	(TOPIC_MOD_MATTEOFLUGBLATT, "Matteo war sehr zufrieden mit meiner Arbeit. Er wird mir seine Stimme geben.");
+	B_LogEntry	(TOPIC_MOD_MATTEOFLUGBLATT, "Matteo was very satisfied with my work. He'll give me his vote.");
 	B_SetTopicStatus	(TOPIC_MOD_MATTEOFLUGBLATT, LOG_SUCCESS);
 
 	B_GivePlayerXP	(200);
@@ -364,7 +364,7 @@ INSTANCE Info_Mod_Matteo_Aufnahme (C_INFO)
 	information	= Info_Mod_Matteo_Aufnahme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin bereit, ein Lehrling zu werden.";
+	description	= "I'm ready to be an apprentice.";
 };
 
 FUNC INT Info_Mod_Matteo_Aufnahme_Condition()
@@ -379,53 +379,53 @@ FUNC INT Info_Mod_Matteo_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Matteo_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_15_00"); //Ich bin bereit, ein Lehrling zu werden.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_36_01"); //(erfreut) Ich darf dich willkommen heißen?
+	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_15_00"); //I'm ready to be an apprentice.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_36_01"); //Glad to welcome you?
 
 	Info_ClearChoices	(Info_Mod_Matteo_Aufnahme);
 
-	Info_AddChoice	(Info_Mod_Matteo_Aufnahme, "Nein, ich habe einen anderen Meister gewählt.", Info_Mod_Matteo_Aufnahme_B);
-	Info_AddChoice	(Info_Mod_Matteo_Aufnahme, "Ja, ich werde dein Lehrling.", Info_Mod_Matteo_Aufnahme_A);
+	Info_AddChoice	(Info_Mod_Matteo_Aufnahme, "No, I chose another master.", Info_Mod_Matteo_Aufnahme_B);
+	Info_AddChoice	(Info_Mod_Matteo_Aufnahme, "Yeah, I'll be your apprentice.", Info_Mod_Matteo_Aufnahme_A);
 };
 
 FUNC VOID Info_Mod_Matteo_Aufnahme_B()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_B_15_00"); //Nein, ich habe einen anderen Meister gewählt.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_B_36_01"); //(beleidigt) Das ist nun der Dank für mein Entgegenkommen?
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_B_36_02"); //Nein - sag nichts. Ich will nichts hören!
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_B_36_03"); //Sieh zu, dass du rauskommst, und lass dich nicht mehr blicken!
+	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_B_15_00"); //No, I chose another master.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_B_36_01"); //(insulted) That's my gratitude for coming?
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_B_36_02"); //No - don't say anything. I don't want to hear it!
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_B_36_03"); //Just make sure you get out and don't come back!
 
 	Info_ClearChoices	(Info_Mod_Matteo_Aufnahme);
 };
 
 FUNC VOID Info_Mod_Matteo_Aufnahme_A()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_A_15_00"); //Ja, ich werde dein Lehrling.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_01"); //Und das soll nicht zu deinem Schaden sein!
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_02"); //Ich will dir alles sagen, was du als zukünftiger Händler wissen musst.
+	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_A_15_00"); //Yeah, I'll be your apprentice.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_01"); //And that's not to your disadvantage!
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_02"); //I want to tell you everything you need to know as a future merchant.
 
 	CreateInvItems	(hero, ItAr_Vlk_H, 1);
 
-	B_ShowGivenThings	("Bürgerkleidung erhalten");
+	B_ShowGivenThings	("receive civilian clothes");
 
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_03"); //Lass uns die Lehrstunden aufteilen in theoretische und praktische Teile.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_04"); //In den praktischen wirst du mir etwas zur Hand gehen und lernen, dass der Beruf nicht nur aus Vergnügen besteht.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_05"); //Zusätzlich bekommst du nun natürlich das Bürgerrecht verliehen - das war es doch, was du wolltest?
-	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_A_15_06"); //Kann jedenfalls nicht schaden.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_07"); //Fein, fein. Dann beginnen wir gleich hier und jetzt mit unserer ersten Lehrstunde:
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_08"); //Du wirst dich sicher wundern, warum mein Obst immer so frisch und wohlgerundet aussieht.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_09"); //Selbstverständlich sehen nicht alle meine Lieferungen so appetitlich aus - leider!
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_10"); //Deshalb greift der gewiefte Händler zu einem Trick: Die schadhafte Ware wird einfach nicht offen präsentiert!
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_11"); //Vor mir auf dem Warentisch beispielsweise - nimm die oberste Schicht Pilze weg, und die darunter liegende würdest du mit spitzen Fingern nicht mehr anfassen.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_12"); //Trotzdem werden sie gekauft, weil viele Kunden nicht genau nachschauen. Das ist unser Vorteil!
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_13"); //Was lernen wir daraus? Präsentation ist alles! Achte also auch darauf, dass dein Geschäft gepflegt aussieht.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_14"); //Ein Tipp von mir: Schmiere die Auslageflächen mit Fett ein, das lässt sie im Sonnenlicht glänzen und poliert wirken.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_15"); //Geht schneller, als sie tatsächlich zu polieren. (lacht)
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_16"); //An diese Einführung anschließend habe ich gleich die erste Aufgabe für dich.
-	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_A_15_17"); //(stöhnt) Ich soll putzen?
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_18"); //Nein, nein, das kriege ich schon allein hin. Aber ich habe einen Korb mit Äpfeln bekommen.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_19"); //Du wirst die Äpfel sortieren nach Auslegetauglichkeit - am besten in zwei Teile, die tauglichen und die untauglichen.
-	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_20"); //Den Korb findest du dort hinten auf dem Tisch. Sag Bescheid, sobald du fertig bist.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_03"); //Let's divide the lessons into theoretical and practical parts.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_04"); //In the practical ones, you will give me a hand and learn that the job is not just for pleasure.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_05"); //In addition, you will now of course be granted citizenship - that's what you wanted?
+	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_A_15_06"); //Can't hurt, anyway.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_07"); //Fine, fine, fine. Then we start right here and now with our first lesson:
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_08"); //I'm sure you'll wonder why my fruit always looks so fresh and well-rounded.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_09"); //Of course, not all my deliveries look so appetizing - unfortunately!
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_10"); //That's why the cunning retailer uses a trick: the damaged goods are simply not presented openly!
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_11"); //For example, in front of me on the table - take away the top layer of mushrooms and you wouldn't touch the one underneath with your sharp fingers.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_12"); //Nevertheless, they are purchased because many customers do not look closely enough. That is our advantage!
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_13"); //What do we learn from this? Presentation is everything! So make sure that your business looks neat and tidy.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_14"); //A tip from me: Grease the display surfaces with grease, which makes them shine and look polished in the sunlight.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_15"); //It's faster than actually polishing them. (laughs)
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_16"); //After this introduction I have the first task for you.
+	AI_Output(hero, self, "Info_Mod_Matteo_Aufnahme_A_15_17"); //I'm supposed to clean?
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_18"); //No, no, no, I'll manage on my own. But I got a basket of apples.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_19"); //You will sort the apples according to suitability - best in two parts, the fit and the unsuitable.
+	AI_Output(self, hero, "Info_Mod_Matteo_Aufnahme_A_36_20"); //You'll find the basket on the table back there. Let me know as soon as you're done.
 
 	Mod_IstLehrling	= 1;
 
@@ -436,11 +436,11 @@ FUNC VOID Info_Mod_Matteo_Aufnahme_A()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torlof_Auftrag))
 	{
-		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_MATTEO_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Matteo, der Händler, hat mich als seinen Lehrling aufgenommen. Dadurch bin ich jetzt ein Bürger der Stadt.", "Als Erstes hat Matteo mir aufgetragen, den Korb voller Äpfel nach auslegetauglichen und -untauglichen Äpfeln zu sortieren. Ich sollte jeden Apfel einzeln in Augenschein nehmen.", "Da Matteo mich als seinen Lehrling aufgenommen hat ist es mir jetzt möglich das Obere Viertel zu betreten.");
+		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_MATTEO_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Matteo, the merchant, accepted me as his apprentice. That makes me a citizen of the city now.", "The first thing Matteo asked me to do was to sort the basket full of apples according to apples that are not fit for display. I should look at every apple individually.", "Since Matteo accepted me as his apprentice, I am now able to enter the upper quarter.");
 	}
 	else
 	{
-		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_MATTEO_ONE, "Matteo, der Händler, hat mich als seinen Lehrling aufgenommen. Dadurch bin ich jetzt ein Bürger der Stadt.", "Als Erstes hat Matteo mir aufgetragen, den Korb voller Äpfel nach auslegetauglichen und -untauglichen Äpfeln zu sortieren. Ich sollte jeden Apfel einzeln in Augenschein nehmen.");
+		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_MATTEO_ONE, "Matteo, the merchant, accepted me as his apprentice. That makes me a citizen of the city now.", "The first thing Matteo asked me to do was to sort the basket full of apples according to apples that are not fit for display. I should look at every apple individually.");
 	};
 
 	Wld_SendTrigger	("EVT_MATTEO_APFELKORB");
@@ -479,23 +479,23 @@ FUNC VOID Info_Mod_Matteo_GildenZeug_Info()
 {
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_00"); //Sieh mal einer an, zu den Milizionären bist du gegangen!
+		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_00"); //Well, look who's gone to the militia.
 	}
 	else if (hero.guild == GIL_VLK)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_01"); //Dich hat's wohl zu den Innos-Typen verschlagen, wie? (lacht)
+		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_01"); //Guess you've lost your way to the Innos guys, huh? (laughs)
 	}
 	else if (hero.guild == GIL_NOV)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_02"); //Wie ich sehe, hast du bei deiner Fraktion eine gute Wahl getroffen.
+		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_02"); //I see you made a good choice with your faction.
 	}
 	else if (hero.guild == GIL_MIL)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_03"); //Söldner willst du werden? Lass dir bloß nicht einfallen, meine Warentransporte zu überfallen!
+		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_03"); //You want to be a mercenary? Don't you ever think of mugging my merchandise shipments!
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_04"); //Du verehrst Beliar? Da hätte ich dich schon für klüger gehalten ...
+		AI_Output(self, hero, "Info_Mod_Matteo_GildenZeug_36_04"); //You worship Beliar? I would have thought you'd be smarter...
 	};
 };
 
@@ -507,7 +507,7 @@ INSTANCE Info_Mod_Matteo_LehrlingQuest (C_INFO)
 	information	= Info_Mod_Matteo_LehrlingQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind die sortierten Äpfel.";
+	description	= "Here are the sorted apples.";
 };
 
 FUNC INT Info_Mod_Matteo_LehrlingQuest_Condition()
@@ -522,15 +522,15 @@ FUNC INT Info_Mod_Matteo_LehrlingQuest_Condition()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest_15_00"); //Hier sind die sortierten Äpfel.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest_15_00"); //Here are the sorted apples.
 
 	Npc_RemoveInvItems	(hero, Itfo_Apple_Matteo_Gut, 10);
 	Npc_RemoveInvItems	(hero, Itfo_Apple_Matteo_Schlecht, 10);
 
-	B_ShowGivenThings	("10 knackige Äpfel und 10 faule Äpfel gegeben");
+	B_ShowGivenThings	("10 crunchy apples and 10 rotten apples given");
 
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest_36_01"); //(freudig) Das ging ja schnell! Lass mal sehen ... (holt einen Apfel hervor) Ja, saubere Arbeit nenne ich das! Das hilft mir ungemein!
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest_36_02"); //Komm bald mal wieder vorbei, dann können wir unsere Arbeit fortsetzen!
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest_36_01"); //(joyous) That was quick! Let me see... Yes, clean work, I call that! That helps me tremendously!
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest_36_02"); //Come back soon, then we can continue our work!
 
 	B_GivePlayerXP	(100);
 
@@ -547,7 +547,7 @@ INSTANCE Info_Mod_Matteo_LehrlingQuest2 (C_INFO)
 	information	= Info_Mod_Matteo_LehrlingQuest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin mal wieder bereit für etwas Theorie.";
+	description	= "I'm ready for some theory again.";
 };
 
 FUNC INT Info_Mod_Matteo_LehrlingQuest2_Condition()
@@ -561,53 +561,53 @@ FUNC INT Info_Mod_Matteo_LehrlingQuest2_Condition()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_15_00"); //Ich bin mal wieder bereit für etwas Theorie.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_01"); //Ich habe auch gerade etwas Zeit. Lass mich kurz nachdenken ... Dieses Mal wird es um den Konkurrenzkampf gehen.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_02"); //Wie du sicher weißt, gibt es viele Händler hier in der Stadt.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_03"); //Nun kann man sich sicher fragen, warum es diese Vielfalt gibt und der eine den anderen nicht ausstechen kann.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_04"); //Die Antwort darauf ist: die Spezialisierung.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_05"); //Jeder Händler hat ein eigenes Angebot, und bestimmte Waren gibt es nur bei bestimmten Händlern.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_06"); //So hat jeder von uns seine Daseinsberechtigung.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_07"); //Zusätzlich gibt es aber noch andere Möglichkeiten, sich Wettbewerbsvorteile zu verschaffen:
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_08"); //Man kann etwa Waren besonderer Qualität anbieten - wie ich es tue - oder besonders günstig sein.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_09"); //Hauptsache ist, dass dafür Nachfrage besteht.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_10"); //Aufmerksam machst du die Kunden durch Werbung. Darin hast du ja schon deine ersten Erfahrungen gesammelt.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_11"); //In der praktischen Übung soll es heute um das, äh, Abwerben gehen.
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_15_12"); //Abwerben von deinen Konkurrenten?
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_13"); //Richtig! Ich habe mir da schon etwas Feines ausgedacht.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_14"); //Du erinnerst dich an die Äpfel, die du beim letzten Mal sortiert hast?
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_15"); //Eine Menge davon sind wirklich nicht zu gebrauchen.
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_15_16"); //Was soll ich damit tun?
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_17"); //Ich gebe dir, warte mal, fünf der fauligen Äpfel, und du legst sie fünf Lebensmittelhändlern  in Khorinis in ihr Angebot. Jedem einen, ganz gerecht.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_15_00"); //I'm ready for some theory again.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_01"); //I've got a little time, too. Let me think briefly.... This time it will be about the competition.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_02"); //As you probably know, there are a lot of dealers in town.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_03"); //Now one can certainly ask oneself why this diversity exists and why one cannot outdo the other.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_04"); //The answer is: specialisation.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_05"); //Each retailer has its own offer, and certain goods are only available at certain retailers.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_06"); //So each of us has a right to exist.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_07"); //But there are also other ways to gain competitive advantages:
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_08"); //For example, you can offer goods of special quality - as I do - or be particularly cheap.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_09"); //The main thing is that there is demand for it.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_10"); //You make the customers attentive by advertising. You have already gained your first experiences in this.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_11"); //Today's practical exercise is supposed to be about, uh, enticing away.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_15_12"); //Get away from your competitors?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_13"); //Right! I've come up with something nice.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_14"); //You remember the apples you sorted last time?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_15"); //A lot of them are really useless.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_15_16"); //What am I supposed to do with it?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_17"); //I'll give you five of the rotten apples, wait a minute, and you'll put them in their offer to five grocers in khorinis. To each one, fair and just.
 
 	B_GiveInvItems	(self, hero, ItFo_Apple_Matteo_Schlecht, 5);
 
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_18"); //Am besten verwickelst du sie vorher in ein Gespräch, und wenn sie kurz wegschauen - schwupps -, hast du ihren Stand präpariert.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_19"); //Wenn dann jemand an ihren Stand kommt und den Apfel sieht ... habe ich schon gewonnen! (lacht)
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_18"); //It's best to get them involved in a conversation beforehand, and if they look the other way - whoops - you've prepared their booth.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_36_19"); //When someone comes to their booth and sees the apple.... I've already won! (laughs)
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRLING_MATTEO_TWO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_MATTEO_TWO, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LEHRLING_MATTEO_TWO, "Matteo hat mir fünf faule Äpfel mitgegeben, die ich an die Lebensmittelhändler in Khorinis verteilen soll. Um nicht entdeckt zu werden, soll ich die Händler vorher in ein Gespräch verwickeln.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_MATTEO_TWO, "Matteo gave me five rotten apples to distribute to the grocers in Khorinis. In order not to be discovered, I should involve the dealers in a conversation beforehand.");
 
 	B_RaiseHandelsgeschick	(5);
 
 	Info_ClearChoices	(Info_Mod_Matteo_LehrlingQuest2);
 
-	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest2, "Ist das denn in Ordnung?", Info_Mod_Matteo_LehrlingQuest2_B);
-	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest2, "Wird erledigt.", Info_Mod_Matteo_LehrlingQuest2_A);
+	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest2, "Is that all right, then?", Info_Mod_Matteo_LehrlingQuest2_B);
+	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest2, "It's done.", Info_Mod_Matteo_LehrlingQuest2_A);
 };
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_B_15_00"); //Ist das denn in Ordnung?
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_B_36_01"); //Darüber brauchst du dir keine Gedanken zu machen. Wir haben uns schon viel üblere Streiche gespielt.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_B_15_00"); //Is that all right, then?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest2_B_36_01"); //You don't have to worry about that. We've been playing a lot worse tricks on each other.
 
 	Info_ClearChoices	(Info_Mod_Matteo_LehrlingQuest2);
 };
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_A_15_00"); //Wird erledigt.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest2_A_15_00"); //It's done.
 
 	Info_ClearChoices	(Info_Mod_Matteo_LehrlingQuest2);
 };
@@ -633,12 +633,12 @@ FUNC INT Info_Mod_Matteo_LehrlingQuest3_Condition()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_00"); //Sieh an, meine Idee fruchtet! Die Kunden strömen in mein Geschäft wie der Rauch in die Lunge eines Sektenspinners.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_01"); //Ich muss dir wieder für deine Hilfe danken!
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest3_15_02"); //Wann setzen wir den Unterricht fort?
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_03"); //In nächster Zeit sieht es wahrscheinlich schlecht aus.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_04"); //Meine Verlobung mit Valentine steht kurz bevor, und wir haben ... anderes zu tun. Wenn du verstehst, was ich meine ... (lacht)
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_05"); //Du darfst mich natürlich trotzdem gern besuchen kommen. Ich sage dir schon Bescheid, wenn's weitergeht. Lass es dir so lange gutgehen!
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_00"); //My idea is fruitful! Customers pour into my shop like smoke into the lungs of a sectarian spinner.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_01"); //I must thank you again for your help!
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest3_15_02"); //When do we continue the lessons?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_03"); //In the near future, things will probably look bad.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_04"); //My engagement with Valentine is imminent, and we have... to do something else. If you understand what I mean... (laughs)
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest3_36_05"); //Of course, you are welcome to visit me anyway. I'll let you know when it starts. Have a good time!
 
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_MATTEO_TWO, LOG_SUCCESS);
 
@@ -655,7 +655,7 @@ INSTANCE Info_Mod_Matteo_LehrlingQuest4 (C_INFO)
 	information	= Info_Mod_Matteo_LehrlingQuest4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie sieht's aus mit einer weiteren Lehrstunde?";
+	description	= "What about another lesson?";
 };
 
 FUNC INT Info_Mod_Matteo_LehrlingQuest4_Condition()
@@ -669,43 +669,43 @@ FUNC INT Info_Mod_Matteo_LehrlingQuest4_Condition()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_15_00"); //Wie sieht's aus mit einer weiteren Lehrstunde?
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_01"); //Ist mal wieder an der Zeit, was?
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_02"); //Ich muss dich aber vorwarnen: Zum nächsten Thema kann ich dir nur eine kleine praktische Übung anbieten, viel mehr gibt es nicht her.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_03"); //Heute geht es um die Preispolitik.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_04"); //Wir unterscheiden hierbei den Verkäuferpreis vom Käuferpreis.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_05"); //Der Verkäuferpreis ist der, zu dem ich gern verkaufen würde, sodass mir nach Abzug aller Ankaufs- und Nebenkosten ein ordentlicher Gewinn übrig bleibt.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_06"); //Diesen Preis muss ich dann jedoch erstens noch an die Konkurrenten anpassen.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_07"); //Ich kann einfach günstiger verkaufen oder den Preis absichtlich erhören, damit die Käufer denken, bei mir gebe es gute Qualität - was, wie du weißt, bei mir der Fall ist.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_08"); //Die Käufer sind der nächste Faktor. Ich verkaufe meine Waren direkt neben dem Eingang zum Oberen Viertel, habe also auch von dort Kunden.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_09"); //Die sind schon eher bereit, ordentlich was abzudrücken, als die armen Schlucker aus dem Hafenviertel.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_10"); //Letzter Punkt, auf den du achten musst, ist der Umgebungspreis.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_11"); //Das heißt ganz einfach: Verkaufst du nur teure Sachen, kannst den den Preis selbst bei den billigen anheben.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_12"); //Ein teures Produkt neben lauter günstigen anzubieten, hat dagegen wenig Sinn.
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_15_13"); //Ich denke, ich hab's verstanden.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_14"); //Na fein! Dann will ich jetzt mal anhand dreier Fragen prüfen, ob du die Materie beherrschst!
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_15"); //Los geht's! Wer wird das teurere Brot verkaufen - Fenia aus dem Hafenviertel oder ich?
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_15_00"); //What about another lesson?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_01"); //It's about time, isn't it?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_02"); //But I have to warn you: On the next topic I can only offer you a small practical exercise, there is not much more.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_03"); //Today we are talking about pricing policy.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_04"); //We distinguish the seller price from the buyer price.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_05"); //The seller's price is the price I would like to sell at, so that after deducting all purchase and ancillary costs, I have a decent profit.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_06"); //But first of all I have to adjust this price to the competition.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_07"); //I can simply sell cheaper or deliberately listen to the price so that the buyers think that I have good quality - which, as you know, is the case with me.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_08"); //The buyers are the next factor. I sell my goods directly next to the entrance to the Upper Quarter, so I also have customers from there.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_09"); //They're more likely to be willing to pull the trigger than the poor bastards from the docks.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_10"); //Last point to watch out for is the surrounding price.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_11"); //That means quite simply: if you sell only expensive things, you can raise the price even with the cheap ones.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_12"); //On the other hand, offering an expensive product at a lower price is of little use.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_15_13"); //I think I get it.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_14"); //Fine! Then I'd like to check with the help of three questions whether you know the matter!
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_36_15"); //Here we go! Who will sell the more expensive bread - Fenia from the harbour quarter or me?
 
 	Info_ClearChoices	(Info_Mod_Matteo_LehrlingQuest4);
 
-	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "Du.", Info_Mod_Matteo_LehrlingQuest4_B);
+	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "You.", Info_Mod_Matteo_LehrlingQuest4_B);
 	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "Fenia.", Info_Mod_Matteo_LehrlingQuest4_A);
 };
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest4_C()
 {
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_C_36_00"); //Weiter: Ich verkaufe günstig Handwerkerzubehör und habe eine Goldschatulle gefunden.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_C_36_01"); //Werde ich sie neben meinen anderen Produkten nun über oder unter Wert verkaufen?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_C_36_00"); //Next: I sell cheap craftsman accessories and found a gold box.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_C_36_01"); //Will I now sell them above or below the value of my other products?
 
 	Info_ClearChoices	(Info_Mod_Matteo_LehrlingQuest4);
 
-	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "Du verkaufst die Schatulle unter ihrem Wert.", Info_Mod_Matteo_LehrlingQuest4_E);
-	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "Du verkaufst die Schatulle über ihrem Wert.", Info_Mod_Matteo_LehrlingQuest4_D);
+	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "You're selling the box below its value.", Info_Mod_Matteo_LehrlingQuest4_E);
+	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "You're selling the box above its value.", Info_Mod_Matteo_LehrlingQuest4_D);
 };
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest4_B()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_B_15_00"); //Du.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_B_15_00"); //You.
 
 	Mod_Matteo_Fragen += 1;
 
@@ -721,18 +721,18 @@ FUNC VOID Info_Mod_Matteo_LehrlingQuest4_A()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest4_F()
 {
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_F_36_00"); //Und drittens: Ich bekomme meine Waren, schlage auf meinen Einkaufspreis ein paar Goldmünzen drauf und verkaufe sie weiter.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_F_36_01"); //Welchen Preis habe ich dabei außer Acht gelassen?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_F_36_00"); //And thirdly: I get my goods, add a few gold coins to my purchase price and sell them on.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_F_36_01"); //What was the price I disregarded?
 
 	Info_ClearChoices	(Info_Mod_Matteo_LehrlingQuest4);
 
-	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "Den Verkäuferpreis.", Info_Mod_Matteo_LehrlingQuest4_H);
-	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "Den Käuferpreis.", Info_Mod_Matteo_LehrlingQuest4_G);
+	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "The selling price.", Info_Mod_Matteo_LehrlingQuest4_H);
+	Info_AddChoice	(Info_Mod_Matteo_LehrlingQuest4, "The buyer's price.", Info_Mod_Matteo_LehrlingQuest4_G);
 };
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest4_E()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_E_15_00"); //Du verkaufst die Schatulle unter ihrem Wert.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_E_15_00"); //You're selling the box below its value.
 
 	Mod_Matteo_Fragen += 1;
 
@@ -741,7 +741,7 @@ FUNC VOID Info_Mod_Matteo_LehrlingQuest4_E()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest4_D()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_D_15_00"); //Du verkaufst die Schatulle über ihrem Wert.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_D_15_00"); //You're selling the box above its value.
 
 	Info_Mod_Matteo_LehrlingQuest4_F();
 };
@@ -750,42 +750,42 @@ FUNC VOID Info_Mod_Matteo_LehrlingQuest4_I()
 {
 	if (Mod_Matteo_Fragen == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_00"); //(eingeschnappt) Mann, Mann, wofür erzähl ich dir eigentlich was, wenn du eh nichts behältst? Na ja, ist ja dein Problem.
+		AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_00"); //What am I gonna tell you about if you don't keep it anyway? Well, that's your problem.
 	}
 	else if (Mod_Matteo_Fragen == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_01"); //Da ist aber nicht viel bei dir hängen geblieben. Oder du taugst nicht als Händler. Immer schön fleißig lernen!
+		AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_01"); //There's not much stuck with you. Or you don't fit as a merchant. Always a hard work to learn!
 
 		B_GivePlayerXP	(50);
 	}
 	else if (Mod_Matteo_Fragen == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_02"); //Das hört sich doch schon ganz gut an. Noch nicht ganz fehlerfrei, aber aus dir kann noch was werden!
+		AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_02"); //That sounds like a good idea. Not completely error-free yet, but you can become something else!
 
 		B_GivePlayerXP	(100);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_03"); //Sehr gut, tadellose Leistung!
+		AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_03"); //Very good, impeccable performance!
 
 		B_GivePlayerXP	(200);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_04"); //Das war es dann auch schon wieder für dieses Mal. Komm doch bald wieder!
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest4_I_36_04"); //That's it again for this time. Come back soon!
 
 	Info_ClearChoices	(Info_Mod_Matteo_LehrlingQuest4);
 };
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest4_H()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_H_15_00"); //Den Verkäuferpreis.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_H_15_00"); //The selling price.
 
 	Info_Mod_Matteo_LehrlingQuest4_I();
 };
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest4_G()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_G_15_00"); //Den Käuferpreis.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest4_G_15_00"); //The buyer's price.
 
 	Mod_Matteo_Fragen += 1;
 
@@ -813,9 +813,9 @@ FUNC INT Info_Mod_Matteo_LehrlingQuest5_Condition()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest5_36_00"); //Du, sag mal - diese Plakate von dir ...
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest5_15_01"); //... Waren eine Verunglimpfungskampagne.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest5_36_02"); //Na, da bin ich aber erleichtert.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest5_36_00"); //You, say - those posters of yours...
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest5_15_01"); //... It was a smear campaign.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest5_36_02"); //Well, I'm relieved.
 };
 
 INSTANCE Info_Mod_Matteo_LehrlingQuest6 (C_INFO)
@@ -826,7 +826,7 @@ INSTANCE Info_Mod_Matteo_LehrlingQuest6 (C_INFO)
 	information	= Info_Mod_Matteo_LehrlingQuest6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier bin ich mal wieder.";
+	description	= "Here I am again.";
 };
 
 FUNC INT Info_Mod_Matteo_LehrlingQuest6_Condition()
@@ -840,39 +840,39 @@ FUNC INT Info_Mod_Matteo_LehrlingQuest6_Condition()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_00"); //Hier bin ich mal wieder.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_01"); //Und ich bin auch noch hier. (lacht) Hast auf deinen ganzen Wanderungen doch noch mal Zeit für den alten Matteo gefunden?
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_02"); //Ausnahmsweise.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_03"); //Na, da bin ich aber froh! Bist ja schon eine kleine Berühmtheit!
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_04"); //So ist das Leben ...
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_05"); //Klingst fast, als hättest du es eilig. Dann will ich dich nicht allzu lange mit dem heutigen Thema belästigen.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_06"); //Heute werde ich dir erzählen, wie du hier in Khorinis an besondere Ware kommst.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_07"); //Damit meine ich Ware, die andere Händler nicht bekommen, Ware, mit der ich so erfolgreich geworden bin.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_08"); //Mein Geheimnis sozusagen.
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_09"); //Das klingt ja mal spannend.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_10"); //Glaub ich dir! Ein Wort: Geheimnis - damit bekommt man volle Aufmerksamkeit!
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_11"); //Und es ist sogar so geheim, dass es nicht mal die Stadtwache erfahren muss.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_12"); //Der normale Warenaustausch wird von den Paladinen kontrolliert.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_13"); //Durch die zwei Stadttore kommen Nahrungsmittel, Bergbauprodukte und ab und zu Handwerksprodukte.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_14"); //In der Stadt selbst wird hauptsächlich Handwerksbedarf hergestellt, und natürlich Waffen.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_15"); //Aus Myrtana kommen über den Seeweg selten Lieferungen, und wenn, dann werden sie sofort von Lord Hagen eingesackt.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_16"); //Und dann gibt's da noch die Piraten ...
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_17"); //Ich verstehe.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_18"); //Nicht wahr? Jharkendar bietet eine Fülle von exotischen Produkten, und der Grog der Piraten ist auch nicht zu verachten!
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_19"); //Der Umschlagplatz ist ein Strand nördlich von Khorinis. Dort treffe ich mich wöchentlich mit ihnen und kaufe ihnen ihr Gut ab.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_20"); //Gerade heute müsste ich mich wieder mit ihnen treffen.
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_21"); //Arbeit für mich.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_22"); //Hehe, du hast es erkannt. An denen kannst du dann gleich dein Handelsgeschick ausprobieren, knallharte Verhandlungspartner sind das.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_23"); //Hier hast du 300 Goldmünzen für zwei Kisten mit Grog. Alles, was du niedriger raushandeln kannst, gehört dir.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_00"); //Here I am again.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_01"); //And I'm still here, too. (laughs) Didn't you find time for old Matteo on all your hikes?
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_02"); //Exceptionally.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_03"); //Well, I'm glad! You're a little celebrity!
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_04"); //That's life...
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_05"); //Almost sounds like you're in a hurry. Then I don't want to bother you with today's topic for too long.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_06"); //Today I'll tell you how to get special goods here in Khorinis.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_07"); //By this I mean goods that other traders do not get, goods with which I have become so successful.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_08"); //My secret, so to speak.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_09"); //That sounds exciting.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_10"); //I believe you! One word: Mystery - getting full attention!
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_11"); //And it's so secret, it doesn't even need to know the City Watch.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_12"); //The normal exchange of goods is controlled by the paladins.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_13"); //The two gates of the city offer food, mining products and occasionally handicraft products.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_14"); //In the city itself, mainly handicrafts are produced, and of course weapons.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_15"); //Shipments from Myrtana rarely arrive by sea, and if they do, Lord Hagen will immediately bag them.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_16"); //And then there's the pirates...
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_17"); //I understand.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_18"); //Isn't it? Jharkendar offers an abundance of exotic products, and the grog of pirates is not to be disdained either!
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_19"); //The transshipment point is a beach north of Khorinis. I meet them there every week and buy their property.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_20"); //Just today I'd have to see them again.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_21"); //Work for me.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_22"); //Hehe, you saw it. You can then try out your trading skills on them right away, tough negotiating partners.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_23"); //Here's 300 gold coins for two crates of grog. Anything you can negotiate lower is yours.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_24"); //Dann mache ich mich mal auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_25"); //Tu das. Viel Erfolg!
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest6_15_24"); //I'll be on my way, then.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest6_36_25"); //Do that. Good luck!
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRLING_MATTEO_THREE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_MATTEO_THREE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LEHRLING_MATTEO_THREE, "Ich soll zu den Piraten am Strand nördlich von Khorinis und mir zwei Kisten Grog geben lassen. Da ich nur 300 Goldmünzen von Matteo vorgeschossen bekommen habe, sollte ich versuchen, den Preis zu drücken.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_MATTEO_THREE, "I'm supposed to have two boxes of grog delivered to the pirates on the beach north of Khorinis and me. Since I only received 300 gold coins from Matteo, I should try to push the price.");
 
 	B_RaiseHandelsgeschick	(5);
 
@@ -887,7 +887,7 @@ INSTANCE Info_Mod_Matteo_LehrlingQuest7 (C_INFO)
 	information	= Info_Mod_Matteo_LehrlingQuest7_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bitteschön, zwei Kisten Grog.";
+	description	= "Here you go, two boxes of grog.";
 };
 
 FUNC INT Info_Mod_Matteo_LehrlingQuest7_Condition()
@@ -901,21 +901,21 @@ FUNC INT Info_Mod_Matteo_LehrlingQuest7_Condition()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest7_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest7_15_00"); //Bitteschön, zwei Kisten Grog.
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest7_15_00"); //Here you go, two boxes of grog.
 
 	B_GiveInvItems	(hero, self, ItMi_GrogPaket_Matteo, 2);
 
 	Npc_RemoveInvItems	(self, ItMi_GrogPaket_Matteo, 2);
 
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_01"); //Danke, Mann. Ehrlich gesagt mag ich das Piratengesocks nicht. Aber der Grog verkauft sich gut!
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_02"); //Damit ist deine Lehrzeit bei mir nun beendet. Ich habe dir alles erzählt, was du wissen musst, um als Händler bestehen zu können.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_03"); //Und du hast mir gut unter die Arme gegriffen. Das will ich nicht ganz unbelohnt lassen.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_04"); //Du sollst diesen glänzenden Ring haben. Er wird deine Verhandlungspartner ganz schön beeindrucken!
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_01"); //Thanks, man. Frankly, I don't like the pirate socks. But the grog sells well!
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_02"); //That concludes your apprenticeship with me. I've told you everything you need to know to survive as a merchant.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_03"); //And you did a good job of helping me out. I don't want to leave that entirely unrewarded.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_04"); //I want you to have that shiny ring. He's gonna impress your negotiators!
 
 	B_GiveInvItems	(self, hero, ItRi_Verhandlungsring, 1);
 
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest7_15_05"); //Vielen Dank.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_06"); //Keine Ursache. Und nun mach's gut!
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest7_15_05"); //Thank you very much.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest7_36_06"); //Don't mention it. And now take care!
 
 	B_GivePlayerXP	(1000);
 
@@ -932,7 +932,7 @@ INSTANCE Info_Mod_Matteo_LehrlingQuest8 (C_INFO)
 	information	= Info_Mod_Matteo_LehrlingQuest8_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft's bei dir?";
+	description	= "How are things going with you?";
 };
 
 FUNC INT Info_Mod_Matteo_LehrlingQuest8_Condition()
@@ -946,10 +946,10 @@ FUNC INT Info_Mod_Matteo_LehrlingQuest8_Condition()
 
 FUNC VOID Info_Mod_Matteo_LehrlingQuest8_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest8_15_00"); //Wie läuft's bei dir?
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest8_36_01"); //Dass ich dich noch mal wiedersehe! Gut, gut, alles bestens. Und du bist noch fleißig auf Reisen?
-	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest8_15_02"); //Irgendjemand muss ja mal alles in Ordnung bringen.
-	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest8_36_03"); //Na, da hast du dir ja was vorgenommen! (lacht)
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest8_15_00"); //How are things going with you?
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest8_36_01"); //That I'll see you again! Good, good, good, everything's fine. And you're still busy traveling?
+	AI_Output(hero, self, "Info_Mod_Matteo_LehrlingQuest8_15_02"); //Somebody's got to fix everything.
+	AI_Output(self, hero, "Info_Mod_Matteo_LehrlingQuest8_36_03"); //Well, that's where you're going! (laughs)
 };
 
 INSTANCE Info_Mod_Matteo_Einschaetzung (C_INFO)
@@ -960,7 +960,7 @@ INSTANCE Info_Mod_Matteo_Einschaetzung (C_INFO)
 	information	= Info_Mod_Matteo_Einschaetzung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kannst du mein Verhandlungsgeschick einschätzen?";
+	description	= "Can you judge my negotiating skills?";
 };
 
 FUNC INT Info_Mod_Matteo_Einschaetzung_Condition()
@@ -973,28 +973,28 @@ FUNC INT Info_Mod_Matteo_Einschaetzung_Condition()
 
 FUNC VOID Info_Mod_Matteo_Einschaetzung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Einschaetzung_15_00"); //Kannst du mein Verhandlungsgeschick einschätzen?
-	AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_01"); //Klar. Also ich würde sagen ...
+	AI_Output(hero, self, "Info_Mod_Matteo_Einschaetzung_15_00"); //Can you judge my negotiating skills?
+	AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_01"); //Sure. Well, I would say....
 
 	if (Mod_Verhandlungsgeschick	<	30)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_02"); //... Händler-Lehrling.
+		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_02"); //... Trader Apprentice.
 	}
 	else if (Mod_Verhandlungsgeschick	<	50)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_03"); //... Kleiner Händler.
+		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_03"); //... Small trader.
 	}
 	else if (Mod_Verhandlungsgeschick	<	75)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_04"); //... Händler.
+		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_04"); //... Dealer.
 	}
 	else if (Mod_Verhandlungsgeschick	<	100)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_05"); //... Guter Händler.
+		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_05"); //... Good dealer.
 	}
 	else if (Mod_Verhandlungsgeschick	==	100)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_06"); //... Perfekter Händler.
+		AI_Output(self, hero, "Info_Mod_Matteo_Einschaetzung_36_06"); //... Perfect dealer.
 	};
 };
 
@@ -1006,7 +1006,7 @@ INSTANCE Info_Mod_Matteo_Angebot_Kaese (C_INFO)
 	information	= Info_Mod_Matteo_Angebot_Kaese_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab was von deinem Angebot gelesen.";
+	description	= "I read something about your offer.";
 };
 
 FUNC INT Info_Mod_Matteo_Angebot_Kaese_Condition()
@@ -1020,8 +1020,8 @@ FUNC INT Info_Mod_Matteo_Angebot_Kaese_Condition()
 
 FUNC VOID Info_Mod_Matteo_Angebot_Kaese_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kaese_15_00"); //Ich hab was von deinem Angebot gelesen.
-	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Kaese_36_01"); //Du meinst den Käse. Ja, der kostet nur 10 Goldmünzen und ist bei mir auch nur in den nächsten Tagen erhältlich.
+	AI_Output(hero, self, "Info_Mod_Matteo_Angebot_Kaese_15_00"); //I read something about your offer.
+	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Kaese_36_01"); //You mean the cheese. Yes, it costs only 10 gold coins and is only available in the next few days.
 
 	Mod_MatteosKaeseAngebot	= Wld_GetDay();
 };
@@ -1047,7 +1047,7 @@ FUNC INT Info_Mod_Matteo_Angebot_Vorbei_Condition()
 
 FUNC VOID Info_Mod_Matteo_Angebot_Vorbei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Vorbei_36_00"); //Das Angebot ist ab jetzt nicht mehr gültig.
+	AI_Output(self, hero, "Info_Mod_Matteo_Angebot_Vorbei_36_00"); //The offer is no longer valid.
 };
 
 INSTANCE Info_Mod_Matteo_Kaese (C_INFO)
@@ -1058,7 +1058,7 @@ INSTANCE Info_Mod_Matteo_Kaese (C_INFO)
 	information	= Info_Mod_Matteo_Kaese_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gib mir ein Stück Käse.";
+	description	= "Give me a piece of cheese.";
 };
 
 FUNC INT Info_Mod_Matteo_Kaese_Condition()
@@ -1072,11 +1072,11 @@ FUNC INT Info_Mod_Matteo_Kaese_Condition()
 
 FUNC VOID Info_Mod_Matteo_Kaese_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matteo_Kaese_15_00"); //Gib mir ein Stück Käse.
+	AI_Output(hero, self, "Info_Mod_Matteo_Kaese_15_00"); //Give me a piece of cheese.
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 10)
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_Kaese_36_01"); //Hier ist dein Käse.
+		AI_Output(self, hero, "Info_Mod_Matteo_Kaese_36_01"); //Here's your cheese.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 10);
 
@@ -1085,7 +1085,7 @@ FUNC VOID Info_Mod_Matteo_Kaese_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Matteo_Kaese_36_02"); //Komm wieder, wenn du genug Gold hast.
+		AI_Output(self, hero, "Info_Mod_Matteo_Kaese_36_02"); //Come back when you have enough gold.
 	};
 };
 

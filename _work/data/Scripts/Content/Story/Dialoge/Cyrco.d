@@ -19,69 +19,69 @@ FUNC INT Info_Mod_Cyrco_Hi_Condition()
 
 FUNC VOID Info_Mod_Cyrco_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_00"); //Ahh! Ein neues Gesicht. Man hat schon von dir gehört.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_01"); //So? Ich hoffe doch nur Gutes ...
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_02"); //Ei, gewiss doch. Du hast doch drüben dem Dragomir geholfen. Torgan hat mir davon berichtet.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_03"); //Nun ...
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_04"); //Und bist Torgan zur Hand gegangen. Hast die Lager besucht und die Gardisten besiegt.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_05"); //Schon. Doch sagt, ehrwürdiger Mann, bin ich nun bei den Waldläufern aufgenommen?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_06"); //(lacht) Hi, hi, hi. Das Ungestüm der Jugend. Gemach, eine Kleinigkeit wirst du noch erledigen müssen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_07"); //Dann wird deiner Aufnahme nichts mehr im Wege stehen, junger Streiter. Wie ist eigentlich dein Name?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_08"); //Ich habe keinen Namen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_09"); //Keinen Namen? Narr! Jedes Kind bekommt einen Namen.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_10"); //Verzeiht, Ehrwürdiger, ich hatte einen Namen. Jedoch hindert mich ein Schwur, den Namen jemals wieder auszusprechen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_11"); //Ein ungewöhnlicher Schwur ...
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_12"); //Das mag sein. Jedoch veranlassten mich schlimme Ereignisse in der Vergangenheit dazu.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_13"); //Das muss man akzeptieren. Doch sag, du hast sicher was für mich.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_14"); //Ja, hier.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_00"); //Ahh! A new face. You've been heard of.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_01"); //Like this? I only hope for the best...
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_02"); //Oh, sure enough. You helped Dragomir over there. Torgan told me about it.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_03"); //Well...
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_04"); //And you gave Torgan a hand. You visited the camps and defeated the guards.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_05"); //It is. But, venerable man, is it true that I am now accepted into the Rangers?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_06"); //(laughs) Hi, hi, hi. The impetuosity of youth. There's one small thing you're gonna have to do.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_07"); //Then nothing will stand in the way of your recording, young warrior. What's your name, anyway?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_08"); //I don't have a name.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_09"); //No name? Fool! Every child gets a name.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_10"); //Excuse me, my dear, I had a name. However, an oath prevents me from ever saying the name again.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_11"); //An unusual oath...
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_12"); //That may be true. However, bad events in the past have caused me to do so.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_13"); //You have to accept that. Tell me you got something for me.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_14"); //Yes, here.
 
 	B_GiveInvItems	(hero, self, ItWr_MagicPaper, Npc_HasItems(hero, ItWr_MagicPaper));
 
 	if (Npc_HasItems(self, ItWr_MagicPaper) == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_15"); //Diesen Zettel fand ich bei einem der Gardisten. Torgan sagt, ich soll ihn Euch bringen.
+		AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_15"); //I found this note at one of the guardsmen. Torgan says to bring it to you.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_16"); //Diese Zettel fand ich bei einem der Gardisten und bei den Banditen. Torgan sagt, ich soll sie Euch bringen.
+		AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_16"); //I found these notes at one of the guardsmen and the bandits. Torgan said to bring it to you.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_17"); //Aha. Eine Nachricht.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_17"); //Uh-huh. A message.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_18"); //Aber Moment, diese Schrift ...
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_19"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_20"); //Geduld!
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_18"); //But wait, this writing...
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_19"); //Yes?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_20"); //Patience!
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_21"); //Hmm. Das scheint mir keine Tinte zu sein. Ist irgendwie eingebrannt.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_21"); //Hmm. That doesn't seem like ink to me. It's kind of branded.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_22"); //Hm ... Irgendeine Magie. Hm ... Schwarze Magie, würde ich sagen. Und eine ungewisse Aura ...
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_23"); //Schwarze Magie? Aura?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_24"); //Gewiss. Alte schwarze Magie. Aber ich bin mir nicht sicher. Hmm.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_25"); //Kann ich irgendwie helfen? Ich kann mit Spruchrollen und so umgehen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_26"); //Umgehen? Nein. Aber gehen kannst du. Und zwar ins Sumpflager.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_27"); //Ehrwürdiger?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_28"); //Frage da nach Baal Orun. Möglicherweise hilft ihm sein langer Umgang mit dem Schläfer, diese Magie zu erkennen.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_29"); //Soll ich gleich los?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_30"); //Ei, gewiss. Mir scheint, auf Khorinis braut sich neues Unheil zusammen.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_22"); //Hm... Some kind of magic. Hm... Black magic, I'd say. And an uncertain aura...
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_23"); //Black magic? Aura?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_24"); //Certainly. Old black magic. But I'm not sure. Hmm.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_25"); //Is there anything I can do to help? I know how to deal with buffs and stuff.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_26"); //Go around? No. But you can go. To the swamp camp.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_27"); //Venerable?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_28"); //Ask for Baal Orun. Maybe his long contact with the sleeper will help him to recognize this magic.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Hi_15_29"); //You want me to go?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_30"); //Oh, sure enough. It seems to me that new calamities are brewing on khorinis.
 
 	if (Npc_HasItems(self, ItWr_MagicPaper) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_31"); //Hier, das Dokument.
+		AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_31"); //Here's the document.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_32"); //Hier, die Dokumente.
+		AI_Output(self, hero, "Info_Mod_Cyrco_Hi_38_32"); //Here are the documents.
 	};
 
 	B_GiveInvItems	(self, hero, ItWr_MagicPaper, Npc_HasItems(self, ItWr_MagicPaper));
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Noch nicht Waldläufer. Aber ich glaube, ich bin nahe dran. Ich soll nun den Zettel, den ich dem Gardisten abgenommen habe, Baal Orun im Sumpflager zeigen. Vielleicht kennt er die Aura, die um den Zettel liegt.");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Not ranger yet. But I think I'm close. Now I am to show Baal Orun in the swamp camp the note I took from the guardsman. Maybe he knows the aura around the note.");
 
 	AI_StopProcessInfos	(self);
 
@@ -109,33 +109,33 @@ FUNC INT Info_Mod_Cyrco_BaalOrun_Condition()
 
 FUNC VOID Info_Mod_Cyrco_BaalOrun_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_00"); //Gut, dass du kommst. Hast du gesehen, was draußen los ist?
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_01"); //Hallo, Ehrwürdiger! Was los war: Das hat sich erledigt.
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_02"); //Aber ich habe Neuigkeiten für Euch.
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_03"); //Lass hören, Waldläufer.
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_04"); //(erstaunt) Waldläufer?
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_05"); //Gewiss doch. Du bist nunmehr Mitglied des Lagers im Rang eines Waldläufers.
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_06"); //Du kannst hier einkaufen und dich ausbilden lassen, falls du's nötig hast.
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_07"); //Aber erst mal deinen Bericht, bitte.
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_08"); //Diese Rune habe ich draußen bei einem der Angreifer gefunden.
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_00"); //I'm glad you came. Did you see what's going on outside?
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_01"); //Hello, Reverend! What happened was, it's done.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_02"); //But I have news for you.
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_03"); //Let's hear it, Ranger.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_04"); //Ranger?
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_05"); //Of course you do. You are now a member of the camp as a ranger.
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_06"); //You can shop here and get trained if you need it.
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_07"); //But first, your report, please.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_08"); //I found this rune outside with one of the attackers.
 
 	B_GiveInvItems	(hero, self, ItMi_SpezielleRune, 1);
 
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_09"); //Musst du mal schauen, was damit los ist.
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_10"); //Gut. Und der Zettel?
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_11"); //Dieser Guru hatte eine Vision.
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_12"); //Er sah diesen Zettel in der Nähe einer Höhle, umgeben von einer starken Präsenz von schwarzer Magie.
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_13"); //Er warnte davor, allein da hinzugehen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_14"); //Nun gut. Ich werde dir zwei Leute mitgeben.
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_15"); //Mir?
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_16"); //Gewiss. Du findest doch diesen Ort am ehesten, denke ich.
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_17"); //Ja. Ich weiß auch schon, wo diese Höhle ist.
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_18"); //Die Banditen mit dem Zettel saßen vor der alten Mine. Da muss diese Höhle sein.
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_19"); //Gut. Ich will mir mal diese Rune ansehen. Vielleicht ist sie nützlich.
-	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_20"); //Melde dich, wenn ihr bereit seid.
-	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_21"); //Wie Ihr wünscht, Meister.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_09"); //You need to see what's wrong with it.
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_10"); //Good. And the note?
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_11"); //This guru had a vision.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_12"); //He saw this note near a cave surrounded by a strong presence of black magic.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_13"); //He warned against going there alone.
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_14"); //Very well. I'll give you two people.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_15"); //Me?
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_16"); //Certainly. You think you're the closest to this place, I think.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_17"); //Yeah. I already know where this cave is.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_18"); //The bandits with the note were sitting in front of the old mine. There must be this cave.
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_19"); //Good. I want to take a look at this rune. Maybe it's useful.
+	AI_Output(self, hero, "Info_Mod_Cyrco_BaalOrun_38_20"); //Let me know when you're ready.
+	AI_Output(hero, self, "Info_Mod_Cyrco_BaalOrun_15_21"); //As you wish, master.
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Ich habe Cyrco Bericht erstattet und ihm die Rune übergeben. Während er sie untersucht, soll ich mir zwei Begleiter suchen, mit denen ich dann zur Alten Mine aufbrechen werde. Vorher soll ich aber noch mal zu Cyrco kommen.");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "I reported to Cyrco and gave him the rune. While he is examining them, I shall look for two companions with whom I will then set off to the old mine. I'm supposed to come back to Cyrco first.");
 };
 
 INSTANCE Info_Mod_Cyrco_SonorZelar (C_INFO)
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Cyrco_SonorZelar (C_INFO)
 	information	= Info_Mod_Cyrco_SonorZelar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wir sind bereit. Ich nehme zwei Mann mit.";
+	description	= "We are ready. I'll take two men with me.";
 };
 
 FUNC INT Info_Mod_Cyrco_SonorZelar_Condition()
@@ -160,18 +160,18 @@ FUNC INT Info_Mod_Cyrco_SonorZelar_Condition()
 
 FUNC VOID Info_Mod_Cyrco_SonorZelar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_SonorZelar_15_00"); //Wir sind bereit. Ich nehme zwei Mann mit.
-	AI_Output(self, hero, "Info_Mod_Cyrco_SonorZelar_38_01"); //Gut, gut. Hier ich hab noch was für dich. Ein Amulett.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SonorZelar_15_00"); //We are ready. I'll take two men with me.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SonorZelar_38_01"); //Good, good, good. Here's something else for you. An amulet.
 
 	B_GiveInvItems	(self, hero, ItAm_CyrcoMinenAmulett, 1);
 
-	AI_Output(hero, self, "Info_Mod_Cyrco_SonorZelar_15_02"); //Bin ich euch nicht schmuck genug?
-	AI_Output(self, hero, "Info_Mod_Cyrco_SonorZelar_38_03"); //Kasper! Dieses Amulett ermöglicht es dir, Magie aufzuspüren oder deren Illusionen zu durchschauen. Leg es gleich an.
-	AI_Output(hero, self, "Info_Mod_Cyrco_SonorZelar_15_04"); //Wie praktisch. Sehe ich dann das wahre Gesicht der Leute?
-	AI_Output(self, hero, "Info_Mod_Cyrco_SonorZelar_38_05"); //Scher dich!
-	AI_Output(hero, self, "Info_Mod_Cyrco_SonorZelar_15_06"); //Ja doch ...
+	AI_Output(hero, self, "Info_Mod_Cyrco_SonorZelar_15_02"); //Am I not dressed up enough for you?
+	AI_Output(self, hero, "Info_Mod_Cyrco_SonorZelar_38_03"); //Punch! This amulet enables you to track down magic or to see through its illusions. Put it on now.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SonorZelar_15_04"); //How convenient. Do I see the real face of people then?
+	AI_Output(self, hero, "Info_Mod_Cyrco_SonorZelar_38_05"); //Get out of here!
+	AI_Output(hero, self, "Info_Mod_Cyrco_SonorZelar_15_06"); //Yeah, but...
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Cyrco hat mir noch ein Amulett gegeben, welches ich spätestens bei der Mine anlegen sollte. Es wird es mir ermöglichen, Magie aufzuspüren und so die geheime Höhle zu finden.");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Cyrco gave me another amulet, which I should put on at the mine at the latest. It will allow me to track down magic and find the secret cave.");
 };
 
 INSTANCE Info_Mod_Cyrco_MinenPart (C_INFO)
@@ -182,7 +182,7 @@ INSTANCE Info_Mod_Cyrco_MinenPart (C_INFO)
 	information	= Info_Mod_Cyrco_MinenPart_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Auftrag ausgeführt, Gelände sondiert, keine Gefallenen.";
+	description	= "Mission accomplished, site sounded, no casualties.";
 };
 
 FUNC INT Info_Mod_Cyrco_MinenPart_Condition()
@@ -196,22 +196,22 @@ FUNC INT Info_Mod_Cyrco_MinenPart_Condition()
 
 FUNC VOID Info_Mod_Cyrco_MinenPart_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_00"); //Auftrag ausgeführt, Gelände sondiert, keine Gefallenen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_01"); //Und, wer war dieser unbekannte Zettelschreiber?
-	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_02"); //Es war keiner da. Nur ein paar kleine Skelette und ein paar Spruchrollen.
-	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_03"); //Ein Beliarschrein stand an der Wand und da war eine Plattform, die scheint aber nicht zu funktionieren.
-	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_04"); //Ahh, jaa. Das passt zusammen. Die Rune, die du mir vorhin gegeben hast, ist eine Teleportrune, die an einer Beliarstatue aufgeladen werden muss.
-	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_05"); //Dazu muss man bei der Beliarstatue Knochen eines Skelettes, eines Goblins, sowie einen Tropfen eigenen Blutes vereinen.
-	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_06"); //Was du nicht alles weißt.
-	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_07"); //Gewiss. Die Rune scheint auch nur in der Nähe der Plattform zu funktionieren.
+	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_00"); //Mission accomplished, site sounded, no casualties.
+	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_01"); //So, who was that unknown paper-pen?
+	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_02"); //There was no one there. Just a few small skeletons and a couple of spell rolls.
+	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_03"); //A Beliar shrine stood on the wall and there was a platform, but it doesn't seem to work.
+	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_04"); //Ahh, yeah. That fits together. The rune you gave me earlier is a teleportrune that needs to be loaded on a Beliar statue.
+	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_05"); //To do this, the Beliar statue must combine the bones of a skeleton, a goblin and a drop of your own blood.
+	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_06"); //What you don't know.
+	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_07"); //Certainly. The rune seems to work only near the platform.
 
 	B_GiveInvItems	(self, hero, ItMi_SpezielleRune, 1);
 
-	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_08"); //Aha. Und jetzt soll ich ...
-	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_09"); //Ei, gewiss doch.
-	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_10"); //Bin schon unterwegs.
+	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_08"); //Uh-huh. And now I'm supposed to....
+	AI_Output(self, hero, "Info_Mod_Cyrco_MinenPart_38_09"); //Oh, sure enough.
+	AI_Output(hero, self, "Info_Mod_Cyrco_MinenPart_15_10"); //I'm on my way.
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Noch mal zum Mitschreiben: Ich soll je einen großen und einen kleinen Knochen und einen Tropfen eigenes Blut beim Beliarschrein ablegen. Dann funktiniert die Rune wieder und ich kann mit ihr weiter. Das funktioniert aber wohl nur nahe der Plattform. Mal sehen ...");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Let me go back to writing: I should take one large and one small bone and one drop of my own blood at the Beliar shrine. Then the rune functions again and I can continue with it. But this only works near the platform. Let's see....");
 	
 	Npc_RemoveInvItems(hero, ItAm_CyrcoMinenAmulett, 1);
 };
@@ -224,7 +224,7 @@ INSTANCE Info_Mod_Cyrco_SuchenderZettel (C_INFO)
 	information	= Info_Mod_Cyrco_SuchenderZettel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Teleporter erfolgreich benutzt.";
+	description	= "I successfully used the teleporter.";
 };
 
 FUNC INT Info_Mod_Cyrco_SuchenderZettel_Condition()
@@ -239,70 +239,70 @@ FUNC INT Info_Mod_Cyrco_SuchenderZettel_Condition()
 
 FUNC VOID Info_Mod_Cyrco_SuchenderZettel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_00"); //Ich habe den Teleporter erfolgreich benutzt.
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_01"); //Ich bin im versunkenen Turm von Xardas gelandet, wo ich auf einen Suchenden traf.
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_02"); //Er meinte, dass wir uns bald wiedersehen würden und hat sich dann wegteleportiert.
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_03"); //Ich bin mir nicht sicher, ob er wirklich der Mörder ist, der hinter allem steckt.
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_04"); //Desweiteren habe ich noch diesen Zettel hier gefunden.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_00"); //I successfully used the teleporter.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_01"); //I landed in the sunken tower of Xardas, where I met a seeker.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_02"); //He said that we would meet again soon and teleported away.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_03"); //I'm not sure he's really the murderer behind everything.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_04"); //I also found this note here.
 
 	B_GiveInvItems	(hero, self, ItWr_JGSuchenderNotiz, 1);
 
 	B_UseFakeScroll ();
 
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_05"); //Scheint ganz so, als ob der Suchende uns schwächen will, vielleicht sogar zerstören.
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_06"); //Es ist merkwürdig, dass ich an diesem Dokument kaum magische Kraft spüre, während das andere davon geradezu durchtränkt war. Nicht sehr beruhigend.
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_07"); //Ich werde jeden Jäger und Waldläufer nach diesem Kerl suchen lassen. Ich danke dir für deine Hilfe.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_05"); //Seems as if the seeker wants to weaken us, maybe even destroy us.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_06"); //It is strange that I hardly feel any magical power in this document, while the other one was almost imbued with it. Not very reassuring.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_07"); //I'll have every hunter and ranger look for this guy. Thank you for your help.
 
 	B_SetTopicStatus	(TOPIC_MOD_JG_GARDISTEN, LOG_SUCCESS);
 
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_08"); //Ach, noch was.
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_09"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_10"); //Ich habe die Nachricht von Dragomirs Unglück vernommen und gleich einen kleinen Trupp Waldläufer mit Begleitung zusammengestellt, ihn zu unterstützen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_11"); //Wir müssen unseren Posten in Khorinis unbedingt halten, doch scheinen wir starke Gegner zu haben.
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_12"); //Geh los und suche Rangar auf. Er müsste sich in der Nähe des Passes in Khorinis aufhalten.
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_13"); //Sag ihm, dass er sich der Gruppe Waldläufer anschließen soll und Dragomir unterstützen muss.
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_14"); //Rangar? Ich kenne einen Rangar in der Stadt. Der ist dort aber bei der Stadtwache ...
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_15"); //Genau der. Er ist wohl zu den Jägern übergelaufen. So lauten jedenfalls meine Informationen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_16"); //Und dann ist da noch einer von der Sorte. Er nennt sich Ruga.
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_17"); //Das stimmt. Dem bin ich bei Dragomir begegnet. Er ist Armbrustlehrer.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_08"); //Oh, one more thing.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_09"); //Yes?
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_10"); //I heard the news of Dragomir's accident and put together a small troop of Rangers with company to support him.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_11"); //We have to keep our post in Khorinis, but we seem to have strong opponents.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_12"); //Go and see Rangar. He would have to be near the pass in Khorinis.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_13"); //Tell him to join the Ranger group and support Dragomir.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_14"); //Rangar? I know a Rangar in town. But he's there at the city guard....
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_15"); //That's the one. He must have gone over to the hunters. That's what my information is.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_38_16"); //And then there's another one of that kind. He calls himself Ruga.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_15_17"); //That's the truth. I met him at Dragomir. He's a crossbow teacher.
 
 	Info_ClearChoices	(Info_Mod_Cyrco_SuchenderZettel);
 
-	Info_AddChoice	(Info_Mod_Cyrco_SuchenderZettel, "Warum könnt ihr Dragomir nicht einfach zurückkommen lassen?", Info_Mod_Cyrco_SuchenderZettel_B);
-	Info_AddChoice	(Info_Mod_Cyrco_SuchenderZettel, "Hm, gut. Ich werde es tun.", Info_Mod_Cyrco_SuchenderZettel_A);
+	Info_AddChoice	(Info_Mod_Cyrco_SuchenderZettel, "Why can't you just let Dragomir come back?", Info_Mod_Cyrco_SuchenderZettel_B);
+	Info_AddChoice	(Info_Mod_Cyrco_SuchenderZettel, "Hm, good. I'll do it.", Info_Mod_Cyrco_SuchenderZettel_A);
 };
 
 FUNC VOID Info_Mod_Cyrco_SuchenderZettel_B()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_B_15_00"); //Warum könnt ihr Dragomir nicht einfach zurückkommen lassen? Das wäre doch für alle sicherer!
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_B_38_01"); //Weil ... (Pause) Nimm bitte erst einmal hin, dass wir es uns gerade in der jetzigen Situation nicht leisten können.
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_B_38_02"); //Hier hast du ein paar Tränke für ihn. Verteile sie weise.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_B_15_00"); //Why can't you just let Dragomir come back? That would be safer for everyone!
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_B_38_01"); //Because... (Pause) First of all, please accept that we cannot afford it in the current situation.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_B_38_02"); //Here's some potions for him. Distribute them wisely.
 
 	CreateInvItems	(hero, ItPo_Health_01, 10);
 	CreateInvItems	(hero, ItPo_Mana_01, 10);
 
-	B_ShowGivenThings	("20 Tränke erhalten");
+	B_ShowGivenThings	("20 Drinking trough received");
 
 	Log_CreateTopic	(TOPIC_MOD_JG_DRAGOMIRHILFE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_DRAGOMIRHILFE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_DRAGOMIRHILFE, "Ich soll ein paar Tränke zu Dragomir bringen. Rangar, der die Tränke entgegennimmt, soll sich in der Nähe des Passes befinden.");
+	B_LogEntry	(TOPIC_MOD_JG_DRAGOMIRHILFE, "I'm supposed to bring some potions to Dragomir's. Rangar, who receives the potions, should be near the pass.");
 
 	Info_ClearChoices	(Info_Mod_Cyrco_SuchenderZettel);
 };
 
 FUNC VOID Info_Mod_Cyrco_SuchenderZettel_A()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_A_15_00"); //Hm, gut. Ich werde es tun.
-	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_A_38_01"); //Gut. Nimm diese Heil- und Manatränke für ihn mit.
+	AI_Output(hero, self, "Info_Mod_Cyrco_SuchenderZettel_A_15_00"); //Hm, good. I'll do it.
+	AI_Output(self, hero, "Info_Mod_Cyrco_SuchenderZettel_A_38_01"); //Good. Take these healing and mana potions for him.
 
 	CreateInvItems	(hero, ItPo_Health_01, 10);
 	CreateInvItems	(hero, ItPo_Mana_01, 10);
 
-	B_ShowGivenThings	("20 Tränke erhalten");
+	B_ShowGivenThings	("20 Drinking trough received");
 
 	Log_CreateTopic	(TOPIC_MOD_JG_DRAGOMIRHILFE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_DRAGOMIRHILFE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_DRAGOMIRHILFE, "Ich soll ein paar Tränke zu Dragomir bringen. Rangar, der die Tränke entgegennimmt, soll sich in der Nähe des Passes befinden.");
+	B_LogEntry	(TOPIC_MOD_JG_DRAGOMIRHILFE, "I'm supposed to bring some potions to Dragomir's. Rangar, who receives the potions, should be near the pass.");
 
 	Info_ClearChoices	(Info_Mod_Cyrco_SuchenderZettel);
 };
@@ -315,7 +315,7 @@ INSTANCE Info_Mod_Cyrco_NovizePass (C_INFO)
 	information	= Info_Mod_Cyrco_NovizePass_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe einen Magiernovizen getroffen.";
+	description	= "I met a magician-novice.";
 };
 
 FUNC INT Info_Mod_Cyrco_NovizePass_Condition()
@@ -329,20 +329,20 @@ FUNC INT Info_Mod_Cyrco_NovizePass_Condition()
 
 FUNC VOID Info_Mod_Cyrco_NovizePass_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_NovizePass_15_00"); //Ich habe einen Magiernovizen getroffen. Er sah aus wie ein Magier des Feuers.
-	AI_Output(self, hero, "Info_Mod_Cyrco_NovizePass_38_01"); //Schon wieder ein Feuermagier? Das ist merkwürdig. Hat er vielleicht etwas dabei gehabt?
-	AI_Output(hero, self, "Info_Mod_Cyrco_NovizePass_15_02"); //Ja, diese Notiz habe ich ihm abgenommen.
+	AI_Output(hero, self, "Info_Mod_Cyrco_NovizePass_15_00"); //I met a magician-novice. He looked like a magician of fire.
+	AI_Output(self, hero, "Info_Mod_Cyrco_NovizePass_38_01"); //Another fire wizard? That's weird. Did he have anything on him?
+	AI_Output(hero, self, "Info_Mod_Cyrco_NovizePass_15_02"); //Yeah, I took that note from him.
 
 	B_GiveInvItems	(hero, self, ItWr_NovizeJGPass, 1);
 
 	B_UseFakeScroll ();
 
-	AI_Output(self, hero, "Info_Mod_Cyrco_NovizePass_38_03"); //Hm, lass einmal sehen. Der Name kommt mir irgendwoher bekannt vor.
-	AI_Output(self, hero, "Info_Mod_Cyrco_NovizePass_38_04"); //Geh mit der Notiz am besten zu Wulfgar, er ist mit der alten Geschichte von uns am besten vertraut.
+	AI_Output(self, hero, "Info_Mod_Cyrco_NovizePass_38_03"); //Hm, let's have a look. That name sounds familiar to me from somewhere.
+	AI_Output(self, hero, "Info_Mod_Cyrco_NovizePass_38_04"); //Take the note to Wulfgar, he is best acquainted with our old history.
 
 	B_GiveInvItems	(self, hero, ItWr_NovizeJGPass, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cyrco_NovizePass_38_05"); //Du findest ihn weiter hinten in der Höhle, dort hat er sein Alchemielabor.
+	AI_Output(self, hero, "Info_Mod_Cyrco_NovizePass_38_05"); //You'll find him further back in the cave, where he has his alchemy lab.
 };
 
 INSTANCE Info_Mod_Cyrco_Turm (C_INFO)
@@ -366,10 +366,10 @@ FUNC INT Info_Mod_Cyrco_Turm_Condition()
 
 FUNC VOID Info_Mod_Cyrco_Turm_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cyrco_Turm_38_00"); //Wohin so schnell?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Turm_15_01"); //Zum Nebelturm. Wulfgar meint, ich soll da mal nachschauen wegen Khorgor.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Turm_38_02"); //Viel Erfolg! Und Vorsicht.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Turm_15_03"); //Ich weiß ...
+	AI_Output(self, hero, "Info_Mod_Cyrco_Turm_38_00"); //Where to go so fast?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Turm_15_01"); //To the Fog Tower. Wulfgar says I should check it out for Khorgor.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Turm_38_02"); //Good luck! And be careful.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Turm_15_03"); //I know....
 
 	AI_StopProcessInfos	(self);
 };
@@ -394,19 +394,19 @@ FUNC INT Info_Mod_Cyrco_DragoHilfeII_Condition()
 
 FUNC VOID Info_Mod_Cyrco_DragoHilfeII_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII_38_00"); //Stopp! Bleib stehen!
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII_15_01"); //Ja, Ehrwürdiger?
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII_38_02"); //Schlimme Kunde aus Khorinis.
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII_15_03"); //Oh, oh. Erzähl ...
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII_38_04"); //Die Mannen um Dragomir sind stärksten Angriffen ausgesetzt.
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII_38_05"); //Du bist gut in Form. Du musst ihnen helfen. Sofort.
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII_15_06"); //Bin schon unterwegs.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII_38_00"); //Stop! Stop right there!
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII_15_01"); //Yes, Reverend?
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII_38_02"); //Bad news from Khorinis.
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII_15_03"); //Oh, oh, oh. narrative
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII_38_04"); //The men around Dragomir are under heavy attack.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII_38_05"); //You're in good shape. You have to help them. Right away.
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII_15_06"); //I'm on my way.
 
 	AI_StopProcessInfos	(self);
 
 	Log_CreateTopic	(TOPIC_MOD_JG_DRAGOMIRHILFE2, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_DRAGOMIRHILFE2, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_DRAGOMIRHILFE2, "Dragomir braucht Hilfe. Immer ich.");
+	B_LogEntry	(TOPIC_MOD_JG_DRAGOMIRHILFE2, "Dragomir needs help. Always me.");
 };
 
 INSTANCE Info_Mod_Cyrco_DragoHilfeII2 (C_INFO)
@@ -417,7 +417,7 @@ INSTANCE Info_Mod_Cyrco_DragoHilfeII2 (C_INFO)
 	information	= Info_Mod_Cyrco_DragoHilfeII2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bin zurück aus Khorinis.";
+	description	= "Back from Khorinis.";
 };
 
 FUNC INT Info_Mod_Cyrco_DragoHilfeII2_Condition()
@@ -430,35 +430,35 @@ FUNC INT Info_Mod_Cyrco_DragoHilfeII2_Condition()
 
 FUNC VOID Info_Mod_Cyrco_DragoHilfeII2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_00"); //Bin zurück aus Khorinis.
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_01"); //Und? Was gibt's zu berichten?
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_02"); //Die Angriffe auf das neue Lager werden immer heftiger. Wir konnten den Feind mit Mühe zurückschlagen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_03"); //Gab es Tote bei euch?
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_04"); //Leider. Wild ist gefallen, Nandor wurde schwer verletzt.
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_05"); //Habt ihr den Heiler geholt?
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_06"); //Dragomir wird die Kräuterhexe verständigen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_07"); //Sehr gut. Dich kann man schicken. Ich ernenne dich hiermit zum Waldläufer dritten Grades.
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_08"); //Das bedeutet?
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_09"); //Du bekommst diese Rüstung hier.
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_00"); //Back from Khorinis.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_01"); //And? What's the news?
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_02"); //The attacks on the new camp are becoming increasingly violent. We were able to strike back the enemy with difficulty.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_03"); //Were there any casualties?
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_04"); //Unfortunately. Wild fell, Nandor was badly injured.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_05"); //Did you get the healer?
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_06"); //Dragomir will inform the herb witch.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_07"); //Very good. Very good. You can be sent. I hereby designate you a third-degree ranger.
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_15_08"); //Which means?
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_09"); //You get this armor here.
 
 	B_GiveInvItems	(self, hero, ItAr_Waldlaeufer_01, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_10"); //Und wahlweise bekommst du noch einen Knochenbogen oder eine Kriegsarmbrust.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_38_10"); //And you can choose between a bone arch or a war crossbow.
 
 	B_SetTopicStatus	(TOPIC_MOD_JG_DRAGOMIRHILFE2, LOG_SUCCESS);
 
 	Info_ClearChoices	(Info_Mod_Cyrco_DragoHilfeII2);
 
-	Info_AddChoice	(Info_Mod_Cyrco_DragoHilfeII2, "Ich hätte gerne die Armbrust.", Info_Mod_Cyrco_DragoHilfeII2_B);
-	Info_AddChoice	(Info_Mod_Cyrco_DragoHilfeII2, "Ich hätte gerne den Bogen.", Info_Mod_Cyrco_DragoHilfeII2_A);
+	Info_AddChoice	(Info_Mod_Cyrco_DragoHilfeII2, "I'd like the crossbow.", Info_Mod_Cyrco_DragoHilfeII2_B);
+	Info_AddChoice	(Info_Mod_Cyrco_DragoHilfeII2, "I'd like the bow.", Info_Mod_Cyrco_DragoHilfeII2_A);
 };
 
 FUNC VOID Info_Mod_Cyrco_DragoHilfeII2_C()
 {
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_C_38_00"); //Wie du willst.
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_C_15_01"); //Danke, Meister.
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_C_38_02"); //Adanos sei mit dir.
-	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_C_38_03"); //Komm später wieder.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_C_38_00"); //Suit yourself.
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_C_15_01"); //Thank you, master.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_C_38_02"); //Adanos be with you.
+	AI_Output(self, hero, "Info_Mod_Cyrco_DragoHilfeII2_C_38_03"); //Come back later.
 	
 	Info_ClearChoices	(Info_Mod_Cyrco_DragoHilfeII2);
 
@@ -467,7 +467,7 @@ FUNC VOID Info_Mod_Cyrco_DragoHilfeII2_C()
 
 FUNC VOID Info_Mod_Cyrco_DragoHilfeII2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_B_15_00"); //Ich hätte gerne die Armbrust.
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_B_15_00"); //I'd like the crossbow.
 	
 	B_GiveInvItems	(self, hero, ItRw_Crossbow_M_02, 1);
 
@@ -476,7 +476,7 @@ FUNC VOID Info_Mod_Cyrco_DragoHilfeII2_B()
 
 FUNC VOID Info_Mod_Cyrco_DragoHilfeII2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_A_15_00"); //Ich hätte gerne den Bogen.
+	AI_Output(hero, self, "Info_Mod_Cyrco_DragoHilfeII2_A_15_00"); //I'd like the bow.
 	
 	B_GiveInvItems	(self, hero, ItRw_Bow_H_01, 1);
 
@@ -503,26 +503,26 @@ FUNC INT Info_Mod_Cyrco_Opferschale_Condition()
 
 FUNC VOID Info_Mod_Cyrco_Opferschale_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_00"); //Gut, dass du kommst.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_01"); //Was ist jetzt schon wieder?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_02"); //Frag lieber, was nicht ist.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_03"); //Was ist nicht?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_04"); //Unsere Mannstärke.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_05"); //Das heißt, wir brauchen mehr Leute?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_06"); //Gewiss. Wir haben hier zwei Mann verloren, Dragomir drei Mann, soviel ich weiß.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_07"); //Das stimmt. Und an wen hast du dabei gedacht?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_08"); //Nahkämpfer können wir brauchen. Nahkämpfer.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_09"); //Hmm. Ich glaube, bei Onar auf dem Hof lungern immer ein paar Söldner rum. Könnte da mal fragen.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_10"); //Und im neuen Lager?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_11"); //Mal sehen, was sich dort ergibt.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_12"); //Mach das.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_13"); //Hab verstanden. Übrigens, weißt du was über eine Opferschale?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_14"); //Meinst du eine bestimmte Schale?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_15"); //Eigentlich ja. Aber was ist bestimmt? Werde mal Wulfgar fragen.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_00"); //I'm glad you came.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_01"); //What's the matter now?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_02"); //You better ask what isn't.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_03"); //What's not?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_04"); //Our manpower.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_05"); //That means we need more people?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_06"); //Certainly. We've lost two men here, Dragomir three, as far as I know.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_07"); //That's the truth. And who were you thinking of?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_08"); //Melee fighters we can use. Melee.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_09"); //Hmm. I think there's always a couple of mercenaries at Onar's farm. Might ask that.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_10"); //And the new warehouse?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_11"); //Let's see what happens there.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_12"); //Do that.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_13"); //I understand. By the way, do you know anything about a sacrificial bowl?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Opferschale_38_14"); //You mean a certain bowl?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Opferschale_15_15"); //Actually, yes. But what is certain? I'll ask Wulfgar.
 
 	Log_CreateTopic	(TOPIC_MOD_JG_NAHKAMPF, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_NAHKAMPF, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_NAHKAMPF, "Ich soll mindestens zwei Mann für die Waldläufer rekrutieren. Bei Onar lungern welche rum. Und im Neuen Lager kann ich auch mal fragen.");
+	B_LogEntry	(TOPIC_MOD_JG_NAHKAMPF, "They want me to recruit at least two men for the Rangers. There's people hanging around onar. And I can ask in the new warehouse.");
 };
 
 INSTANCE Info_Mod_Cyrco_Nahkampf (C_INFO)
@@ -533,7 +533,7 @@ INSTANCE Info_Mod_Cyrco_Nahkampf (C_INFO)
 	information	= Info_Mod_Cyrco_Nahkampf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Auftrag ausgeführt. Sind die Kämpfer schon da?";
+	description	= "Mission accomplished. Have the fighters arrived yet?";
 };
 
 FUNC INT Info_Mod_Cyrco_Nahkampf_Condition()
@@ -546,16 +546,16 @@ FUNC INT Info_Mod_Cyrco_Nahkampf_Condition()
 
 FUNC VOID Info_Mod_Cyrco_Nahkampf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_Nahkampf_15_00"); //Auftrag ausgeführt. Sind die Kämpfer schon da?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Nahkampf_38_01"); //Einer ja. Er trainiert schon mit den Jägern. Ein fähiger Mann, scheint mir.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Nahkampf_15_02"); //Gut zu hören. Der Zweite kommt von Onars Hof.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Nahkampf_15_03"); //Allerdings musste ich dem Anführer dort versprechen, dass ihr im Austausch einen Jäger nach Khorinis schickt.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Nahkampf_15_04"); //Hoffe, das war in eurem Sinne.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Nahkampf_38_05"); //Ei, gewiss. Ein Nahkämpfer ist hier wichtiger. Ich werde den Sonor schicken, wenn der Neue hier eintrifft.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Nahkampf_15_00"); //Mission accomplished. Have the fighters arrived yet?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Nahkampf_38_01"); //One yes. He's already training with the hunters. A capable man, it seems to me.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Nahkampf_15_02"); //Good to hear. The second comes from Onars Hof.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Nahkampf_15_03"); //However, I had to promise the leader there that you would send a hunter to Khorinis in exchange.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Nahkampf_15_04"); //I hope that was in your mind.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Nahkampf_38_05"); //Oh, sure enough. A melee fighter is more important here. I'll send the sonor when the new guy gets here.
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_JG_NAHKAMPF, "Cyrco wird Sonor als Austausch zu Lares schicken.");
+	B_LogEntry	(TOPIC_MOD_JG_NAHKAMPF, "Cyrco will send Sonor to Lares as an exchange.");
 	B_SetTopicStatus	(TOPIC_MOD_JG_NAHKAMPF, LOG_SUCCESS);
 
 	Wld_InsertNpc	(Mod_7679_SLD_Falin_JL,	"JL_45");
@@ -569,7 +569,7 @@ INSTANCE Info_Mod_Cyrco_Sweetwater (C_INFO)
 	information	= Info_Mod_Cyrco_Sweetwater_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Tag Ehrwürdiger. Ist der Neue da?";
+	description	= "Hello, venerable. Is the new guy here?";
 };
 
 FUNC INT Info_Mod_Cyrco_Sweetwater_Condition()
@@ -583,10 +583,10 @@ FUNC INT Info_Mod_Cyrco_Sweetwater_Condition()
 
 FUNC VOID Info_Mod_Cyrco_Sweetwater_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater_15_00"); //Tag, Ehrwürdiger. Ist der Neue da?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater_38_01"); //Ei, gewiss, dieser Hock ist auch da. Und hat gleich eine Botschaft.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater_15_02"); //Für mich?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater_38_03"); //Genau. Er trainiert hinten.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater_15_00"); //Hello, Reverend. Is the new guy here?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater_38_01"); //Sure enough, that stool's there too. And it's about to send a message.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater_15_02"); //For me?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater_38_03"); //Exactly. He trains in the back.
 };
 
 INSTANCE Info_Mod_Cyrco_Sweetwater2 (C_INFO)
@@ -610,29 +610,29 @@ FUNC INT Info_Mod_Cyrco_Sweetwater2_Condition()
 
 FUNC VOID Info_Mod_Cyrco_Sweetwater2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_00"); //Du bist zurück. Was war los?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_01"); //Die Leute in Jharkendar hatten Wasserprobleme. Hatten!
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_00"); //You're back. What was going on?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_01"); //The people in Jharkendar had water problems. Had!
 	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_02"); //Jharkendar?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_03"); //Gewiss. Ein neues Gebiet jenseits von Khorinis.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_04"); //Könnte westlich von Relendel liegen, ist aber unzugänglich und nur über ein Portal zu erreichen.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_05"); //Die Wassermagier haben es mit meiner Hilfe entdeckt.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_06"); //Interessant. Und wie kommt man da hin?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_07"); //Wie gesagt, südöstlich vom Durchgang nach Relendel ist ein großer alter Tempel, daneben eine Ausgrabungsstätte und darin das Portal.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_08"); //Wo du gerade Relendel erwähnst. Mir kam zu Ohren, die hätten da ein neues Rezept erfunden.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_09"); //Man erzählt sich wahre Wunderdinge darüber. Aber niemand weiß was Genaues. Du solltest ...
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_10"); //... da mal nachschauen. Ich weiß. Übrigens heißt das Zeug Freudenspender.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_11"); //Soll die Wahrnehmung verändern. Die Leute werden seltsam davon.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_12"); //Nun ja, ich bin persönlich daran interessiert. Du würdest es auch nicht umsonst tun.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_13"); //Das heißt?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_14"); //Ich hätte da noch einen Titel zu vergeben ...
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_15"); //Verstehe. Wenn sonst nichts anliegt ...
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_16"); //Nein, im Moment nicht. Wir dürfen aber diesen Khorgor nicht aus den Augen verlieren.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_17"); //Bestimmt nicht. Bis später.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_18"); //Adanos mit dir!
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_03"); //Certainly. A new area beyond Khorinis.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_04"); //Could be located west of Relendel, but is inaccessible and can only be reached via a portal.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_05"); //The Water Magicians discovered it with my help.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_06"); //Interesting. How do you get there?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_07"); //As I said before, southeast of the passage to Relendel is a large old temple, next to it is an excavation site and inside the portal.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_08"); //Speaking of which, Relendel. I heard that they had invented a new recipe.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_09"); //They tell each other true wonders about it. But no one knows exactly what. You should be....
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_10"); //... I'll have a look there. I know. By the way, it's called delights.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_11"); //Shall change the perception. People are getting weird.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_12"); //Well, I'm personally interested. You wouldn't do it for nothing.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_13"); //Which means?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_14"); //I have a title to give away...
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_15"); //I see. If nothing else is on....
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_16"); //No, not at the moment. But we must not lose sight of this Khorgor.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Sweetwater2_15_17"); //Certainly not. See you later.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Sweetwater2_38_18"); //Adanos with you!
 
 	Log_CreateTopic	(TOPIC_MOD_JG_RELENDEL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_RELENDEL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_RELENDEL, "Cyrco will, dass ich mich in Khorata nach etwas Freudenspender umsehe.");
+	B_LogEntry	(TOPIC_MOD_JG_RELENDEL, "Cyrco wants me to go to Khorata and look for some goodies.");
 };
 
 INSTANCE Info_Mod_Cyrco_Drachental (C_INFO)
@@ -643,7 +643,7 @@ INSTANCE Info_Mod_Cyrco_Drachental (C_INFO)
 	information	= Info_Mod_Cyrco_Drachental_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bin zurück, Meister. Hab viel zu berichten.";
+	description	= "I'm back, Master. I got a lot to report.";
 };
 
 FUNC INT Info_Mod_Cyrco_Drachental_Condition()
@@ -656,48 +656,48 @@ FUNC INT Info_Mod_Cyrco_Drachental_Condition()
 
 FUNC VOID Info_Mod_Cyrco_Drachental_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_00"); //Bin zurück, Meister. Hab viel zu berichten.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_01"); //(eifrig) Und? Hast du ...
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_00"); //I'm back, Master. I got a lot to report.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_01"); //(zealous) And? Did you...?
 
 	if (Npc_HasItems(hero, ItMi_Freudenspender) >= 2)
 	{
-		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_02"); //Ei, gewiss. Hier hast du zwei Phiolen.
+		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_02"); //Oh, sure enough. Here's two vials.
 
 		B_GiveInvItems	(hero, self, ItMi_Freudenspender, 2);
 
-		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_03"); //Gut. Und weißt du wie ...
-		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_04"); //Leider nein. Selbst die Bewohner Khoratas wissen nicht, wie das Zeug gebraut wird.
-		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_05"); //Aber woher bekommen die es?
-		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_06"); //Es gibt da irgendwo eine Enklave, die sich Hofstaat nennt. Da kommt es wohl her.
-		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_07"); //Bevor du weiter fragst: Nur wenigen ist es erlaubt, dieses Gebiet zu betreten.
-		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_08"); //Nun gut. Und wie wirkt das Zeug?
-		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_09"); //Ähnlich wie Sumpfkraut. Nur viel intensiver. Und man wird abhängig davon.
+		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_03"); //Good. And do you know how...
+		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_04"); //Unfortunately, no. Even the inhabitants of Khorata don't know how the stuff is brewed.
+		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_05"); //But where do they get it from?
+		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_06"); //There's an enclave somewhere called a court. I guess that's where it's coming from.
+		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_07"); //Before you ask: Only a few people are allowed to enter this area.
+		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_08"); //Very well. And how does this stuff work?
+		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_09"); //Similar to swamp weed. Only much more intense. And you get addicted to it.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_10"); //Leider nein.
-		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_11"); //Hmm ... sehr schade.
+		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_10"); //Unfortunately, no.
+		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_11"); //Hmm... very sad.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_12"); //Aber ist das alles, was du wissen willst?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_13"); //Bei Adanos, nein! Was hast du sonst noch erfahren?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_14"); //Dieser Suchende, der die Überfälle auf die Jäger und das Lager veranlasst hat, ist tot.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_15"); //Sprich weiter. Woher weißt du das?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_16"); //Ich habe ihn endlich erwischt. Er hauste in einem kleinen Tal.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_17"); //Und ich denke, dass dieser Khorgor auch dort zu finden ist.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_18"); //Und warum hast du nicht gleich ...
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_19"); //Mach langsam, alter Herr. Ich wurde zurückgeworfen in die geheime Höhle bei der Alten Mine.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_20"); //Bin nur hier, um Bericht zu erstatten. Und wie war das mit dem Titel, den du zu vergeben hast?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_21"); //Hm ... der Waldläufer erster Klasse. Also gut: Bringe mir Khorgors Kopf und ich verleihe dir den Rang des höchsten Waldläufers.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_22"); //Das ist doch ein Wort. Hast du vielleicht einen Tipp?
-	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_23"); //Hast du noch diesen seltsamen Runenquader?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_24"); //Schon. Aber dafür braucht's die Opferschale.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_25"); //Die wird schon da sein, wenn sie gebraucht wird.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_26"); //Na hoffentlich.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_27"); //Viel Glück, Läufer!
-	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_28"); //Danke, Meister.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_12"); //But is that all you want to know?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_13"); //By Adanos, no! What else did you learn?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_14"); //This seeker who caused the raids on the hunters and the camp is dead.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_15"); //Keep talking. How do you know that?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_16"); //I finally got him. He lived in a small valley.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_17"); //And I think this Khorgor can be found there, too.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_18"); //And why didn't you just...?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_19"); //Slow down, old man. I was thrown back into the secret cave near the Old Mine.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_20"); //Just here to report back. And what about the title you're going to award?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_21"); //Hm... first-class ranger. All right, bring me Khorgor's head and I'll give you the rank of highest ranger.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_22"); //That's a word. Do you have any advice?
+	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_23"); //Do you still have that strange runic cuboid?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_24"); //It is. But it takes the sacrificial bowl.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_25"); //She'll be there when she's needed.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_26"); //Well, hopefully.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_27"); //Good luck, runners!
+	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_28"); //Thank you, master.
 
-	B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Habe Cyrco Bericht erstattet. Er ernennt mich zum Ober-Waldläufer, wenn ich ihm Khorgors Kopf bringe. Und er hat mich an diese seltsame Quaderrune erinnert. Mal sehen.");
+	B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Reported to Cyrco. He appoints me head ranger when I bring him Khorgor's head. And he reminded me of that weird cuboid rune. Let's see now.");
 };
 
 INSTANCE Info_Mod_Cyrco_Khorgor (C_INFO)
@@ -721,10 +721,10 @@ FUNC INT Info_Mod_Cyrco_Khorgor_Condition()
 
 FUNC VOID Info_Mod_Cyrco_Khorgor_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cyrco_Khorgor_38_00"); //Adanos zum Gruß!
-	AI_Output(hero, self, "Info_Mod_Cyrco_Khorgor_15_01"); //Auf das Gleichgewicht, Meister.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Khorgor_38_02"); //Berichte. Was hast du zu melden?
-	AI_Output(hero, self, "Info_Mod_Cyrco_Khorgor_15_03"); //Einen kopflosen irren Magier. Er wollte das absolute Chaos erschaffen. Und es beherrschen.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Khorgor_38_00"); //Adanos to greet you!
+	AI_Output(hero, self, "Info_Mod_Cyrco_Khorgor_15_01"); //Here's to balance, Master.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Khorgor_38_02"); //Reports. What have you got to report?
+	AI_Output(hero, self, "Info_Mod_Cyrco_Khorgor_15_03"); //A headless mad magician. He wanted to create absolute chaos. And master it.
 
 	B_GiveInvItems	(hero, self, ItAt_KhorgorKopf, 1);
 
@@ -751,9 +751,9 @@ FUNC INT Info_Mod_Cyrco_Khorgor2_Condition()
 
 FUNC VOID Info_Mod_Cyrco_Khorgor2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cyrco_Khorgor2_38_00"); //So sollst du die versprochene Weihe erhalten. Ich ernenne dich hiermit zum Waldläufer ersten Grades. Wulfgar ist mein Zeuge.
-	AI_Output(hero, self, "Info_Mod_Cyrco_Khorgor2_15_01"); //Untertänigsten Dank, Meister. Stets zu Diensten. Aber nun muss ich erst mal zurück nach Khorinis.
-	AI_Output(self, hero, "Info_Mod_Cyrco_Khorgor2_38_02"); //Ei, gewiss. Viel Glück noch.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Khorgor2_38_00"); //So you shall receive the promised consecration. I hereby appoint you first degree ranger. Wulfgar is my witness.
+	AI_Output(hero, self, "Info_Mod_Cyrco_Khorgor2_15_01"); //Subservient thanks, Master. Always at your service. But now I have to go back to Khorinis.
+	AI_Output(self, hero, "Info_Mod_Cyrco_Khorgor2_38_02"); //Oh, sure enough. Good luck to you.
 
 	B_SetTopicStatus	(TOPIC_MOD_JG_DRACHENTAL, LOG_SUCCESS);
 

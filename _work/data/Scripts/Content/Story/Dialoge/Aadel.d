@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Aadel_Hi (C_INFO)
 	information	= Info_Mod_Aadel_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist Aadel?";
+	description	= "You're Aadel?";
 };
 
 FUNC INT Info_Mod_Aadel_Hi_Condition()
@@ -19,23 +19,23 @@ FUNC INT Info_Mod_Aadel_Hi_Condition()
 
 FUNC VOID Info_Mod_Aadel_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_00"); //Du bist Aadel?
-	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_01"); //Klar. Was willst du?
-	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_02"); //Ich soll mich bei dir melden.
-	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_03"); //Wer sagt das?
-	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_04"); //Masut sagt das. Ich will Magier werden.
-	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_05"); //Hört, hört! Da könnte ja jeder kommen.
-	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_06"); //Ich bin nicht jeder. Ich habe immerhin einige Gaunereien hinter mir.
-	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_07"); //Hoppla! Ehrlich?
-	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_08"); //Logisch. Sonst wäre ich ja nicht bis hierher gekommen.
-	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_09"); //Auch wahr. Also höre: Du musst auch bei uns Prüfungen ablegen. Nicht jeder dahergelaufene Gauner kann sich uns anschließen.
-	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_10"); //Was also muss ich tun.
-	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_11"); //Novize werden.
-	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_12"); //Das heißt?
-	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_13"); //Paar kleine Aufgaben für die Magier erledigen. Deine Hilfe anbieten. Ihnen Honig ums Maul schmieren, wenn du weißt, was ich meine.
-	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_14"); //Gewiss. Und wo soll ich anfangen?
-	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_15"); //Geh mal zu Kamal da hinten. Das ist der Quacksalber in unserem Verein. Der braucht immer was.
-	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_16"); //Wie ihr wünscht, Meister.
+	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_00"); //You're Aadel?
+	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_01"); //Sure. What do you want?
+	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_02"); //I'm supposed to get in touch with you.
+	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_03"); //Says who?
+	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_04"); //Masut says so. I want to be a magician.
+	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_05"); //Hear, hear, hear! Anybody could come.
+	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_06"); //I'm not everyone. After all, I've been through some trickery.
+	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_07"); //Oops! Honestly?
+	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_08"); //Logical. Otherwise I wouldn't have come all the way here.
+	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_09"); //True enough. So listen: You must also take examinations with us. Not every crook who's run away can join us.
+	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_10"); //So what do I have to do?
+	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_11"); //Become a novice.
+	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_12"); //Which means?
+	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_13"); //Do some small tasks for the magicians. Offer your help. If you know what I mean.
+	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_14"); //Certainly. And where do I start?
+	AI_Output(self, hero, "Info_Mod_Aadel_Hi_02_15"); //Go to Kamal back there. This is the quack in our club. He always needs something.
+	AI_Output(hero, self, "Info_Mod_Aadel_Hi_15_16"); //As you wish, master.
 };
 
 INSTANCE Info_Mod_Aadel_Later (C_INFO)
@@ -46,7 +46,7 @@ INSTANCE Info_Mod_Aadel_Later (C_INFO)
 	information	= Info_Mod_Aadel_Later_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bin zurück. Liegt etwas an?";
+	description	= "I'm back. Anything wrong?";
 };
 
 FUNC INT Info_Mod_Aadel_Later_Condition()
@@ -61,10 +61,10 @@ FUNC INT Info_Mod_Aadel_Later_Condition()
 
 FUNC VOID Info_Mod_Aadel_Later_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aadel_Later_15_00"); //Bin zurück. Liegt etwas an?
-	AI_Output(self, hero, "Info_Mod_Aadel_Later_02_01"); //Man hat dich doch zu Kais geschickt.
-	AI_Output(hero, self, "Info_Mod_Aadel_Later_15_02"); //Der wollte letztens nichts von mir.
-	AI_Output(self, hero, "Info_Mod_Aadel_Later_02_03"); //Quatsch! Der braucht dringend Hilfe. Mach hin!
+	AI_Output(hero, self, "Info_Mod_Aadel_Later_15_00"); //I'm back. Anything wrong?
+	AI_Output(self, hero, "Info_Mod_Aadel_Later_02_01"); //You've been sent to docks.
+	AI_Output(hero, self, "Info_Mod_Aadel_Later_15_02"); //He didn't want anything from me the other day.
+	AI_Output(self, hero, "Info_Mod_Aadel_Later_02_03"); //Bullshit! He needs urgent help. Go for it!
 };
 
 INSTANCE Info_Mod_Aadel_Pickpocket (C_INFO)

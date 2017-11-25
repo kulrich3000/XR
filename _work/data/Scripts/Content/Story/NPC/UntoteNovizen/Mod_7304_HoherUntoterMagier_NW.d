@@ -1,7 +1,7 @@
 instance Mod_7304_HoherUntoterMagier_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Hoher Untoter Magier";
+	name 		=		"High Undead Mage";
 	Npctype 		=		Npctype_UNTOTERMAGIER;
 	guild 		=		GIL_STRF;
 	level 		=		80;

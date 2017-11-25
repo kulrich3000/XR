@@ -1,7 +1,7 @@
 INSTANCE Mod_10037_Orc_Scout_AW (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Ork Späher";
+	name							=	"Orc Scout";
 	guild							=	GIL_ORC;
 	id			= 	10037;
 	voice							=	18;

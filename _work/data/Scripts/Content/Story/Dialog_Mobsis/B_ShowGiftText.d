@@ -11,79 +11,79 @@ FUNC VOID B_ShowGiftText(var int pos)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "... in den Körper gelangen und ihre schädliche Wirkung entfalten. Die Gesundheit erleidet dabei über eine gewisse Zeitdauer konstanten Schaden, bis das Gift vom Organismus neutralisiert oder ausgeschieden wurde.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "... reach the body and develop their harmful effects. Health suffers constant damage over a certain period of time until the poison is neutralized or eliminated by the organism.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Die Gifte unterteilen sich in verschiedene Gruppen. Gewächse kennzeichnen eine davon. Ob giftige Pilze oder Pflanzen wirken sie beim Verzehr mit einer gewissen Verzögerung, da sie erst allmählich aufgenommen werden."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "The toxins are divided into different groups. Waxes identify one of them. Whether they are poisonous mushrooms or plants, they take effect with a certain delay when consumed, as they are only gradually absorbed."		);     
 	}
 	else if (pos == 2)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Gelangen sie jedoch direkt in den Blutkreislauf, ist ihre Wirkung unmittelbar. Sie wirken ungleich stärker, dafür jedoch auch kürzer. Es wird berichtet, dass einige Menschen und andere vernunftbegabte Wesen ihre Waffen bewusst damit benetzen, um Widersacher im Kampf zu vergiften.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "However, if they enter the bloodstream directly, their effect is immediate. They appear to be much stronger but shorter. It is reported that some people and other reasonably gifted creatures deliberately use their weapons to poison opponents in battle.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Übersteht ein Mensch jedoch mehrere Vergiftungen, so erlangt er zunehmende Resistenz. Der Körper erlernt das spezielle Gift schneller abzubauen, bis er nach zahlreichen Vergiftungen völlig immun wird. Zudem reduziert sich die schädliche Wirkung auch anderer Gewächsgifte, da sie ähnlich zusammengesetzt sind."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "However, if a person survives several poisonings, he becomes increasingly resistant. The body learns to break down the special poison more quickly, until it becomes completely immune after numerous poisonings. In addition, the harmful effect of other plant toxins is also reduced, as they are similarly composed."		);     
 	}
 	else if (pos == 3)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Eine andere Gruppe von Giften entstammt dem Tierreich. Meist durch Insekten übertragen, gelangen sie durch Stacheln und Zangen des Getiers sofort in den Blutkreislauf. Die Wirkung ist meist kürzer, dafür etwas intensiver, als bei Gewächsgiften. Auf den Klingen von Waffen finden sich Tiergifte ungleich seltener, da die Beschaffung aufwändiger ist.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "Another group of poisons originates from the animal kingdom. Mostly transmitted by insects, they enter the bloodstream immediately by spikes and pincers of the animal. The effect is usually shorter, but a little more intense than with plant toxins. Animal poisons are much less common on weapon blades, as sourcing is more expensive.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Auch hier können sich mit steigender Anzahl von Vergiftungen wachsende Resistenzen zeigen. Ähnlich, wie bei den Pflanzengiften, nimmt die Wirkungsdauer bei einem bestimmten Tiergift bis zur völligen Immunität ab. Gleichzeitig lässt der schädliche Effekt aller Tiergifte nach, da sie auf ähnliche Mechanismen beruhen und der Organismus ihrer Wirkung besser entgegenzuwirken lernt."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "Here, too, growing resistance can be seen as the number of poisonings increases. Similarly, as with plant toxins, the duration of action decreases with a certain animal poison to complete immunity. At the same time, the harmful effect of all animal toxins is reduced, as they are based on similar mechanisms and the organism learns to better counteract their effects."		);     
 	}
 	else if (pos == 4)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Als letzte wichtige Gruppe zu nennen sind giftige Dämpfe. Ihr Effekt ist äußert unmittelbar und heftig, wenn auch meist nur auf wenige Sekunden beschränkt. Zwar kann auch hier der Körper mit der Zeit Resistenzen erlangen, jedoch haben die Dämpfe zusätzlich eine ätzende Wirkung und rauben dem Betroffenen die Luft zum atmen, sodass man nie völlig schadlos davonkommt.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "The last important group to be mentioned are toxic vapours. Their effect is immediate and intense, even if usually limited to a few seconds. Although the body can also become resistant over time, the vapours have an additional corrosive effect and rob the affected person of air to breathe, so that one never completely harmlessly escapes.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Ganz gleich jedoch, welcher Form von Giften der Körper ausgesetzt war, steigt die Erfahrung darum, die Chance Vergiftungen jeder Art zu entgehen."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "However, no matter what form of toxins the body has been exposed to, the experience increases in order to avoid any kind of poisoning."		);     
 	}
 	else if (pos == 5)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Ist jedoch einmal eine Vergiftung eingetreten, ist es mit einer simplen Heilpflanze nicht getan, da das Gift im Körper verbleibt.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "However, once poisoning has occurred, it is not enough with a simple medicinal plant because the poison remains in the body.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Von einer Pflanze namens Heilknospe wird jedoch berichtet, dass sie den Effekt jeder Vergiftung schlagartig aufzuheben vermag."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "A plant called a healing bud, however, is reported to suddenly cancel out the effect of any poisoning."		);     
 	}
 	else if (pos == 6)
 	{
 		Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Auch kundige Alchemisten sind in der Lage Gegengifte herzustellen, welche bestehende Vergiftungen nicht nur aufheben, sondern auch noch eine kurze Zeit nachwirken und Schutz vor weiteren Vergiftungen bieten.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "Even knowledgeable alchemists are able to produce antipoisons, which not only cancel existing poisonings, but also have a short time after-effect and offer protection against further poisonings.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Stehen jedoch diese Mittel nicht zur Verfügung, so kann zumindest die Zufuhr von reichlich Flüssigkeit dabei helfen, das Gift schneller aus dem Körper zu spülen ..."		);     
+			Doc_PrintLines	( StPl_nDocID,  1, "However, if these remedies are not available, at least the intake of plenty of liquid can help to flush the poison out of the body more quickly..."		);     
 	};
 
 	Doc_Show		( StPl_nDocID );

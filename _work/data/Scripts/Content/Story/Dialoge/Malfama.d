@@ -18,10 +18,10 @@ FUNC INT Info_Mod_Malfama_AtHome_Condition()
 
 FUNC VOID Info_Mod_Malfama_AtHome_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Malfama_AtHome_16_00"); //Ja, unsittlich berührt hat er sie und damit gedroht uns schlimmes anzutun, wenn wir es erzählen.
-	AI_Output(self, hero, "Info_Mod_Malfama_AtHome_16_01"); //Es ist schlimm, wir beide können nichts gegen ihn ausrichten. Wenn uns doch nur jemand helfen könnte ...
-	AI_Output(hero, self, "Info_Mod_Malfama_AtHome_15_02"); //Vielleicht könnte ich euch ja beistehen.
-	AI_Output(self, hero, "Info_Mod_Malfama_AtHome_16_03"); //Wirklich? Ohh, vielen Dank. Einem so gutherzigen und hilfsbereiten Mann sind wir noch nie begegnet.
+	AI_Output(self, hero, "Info_Mod_Malfama_AtHome_16_00"); //Yes, he touched her immorally and threatened to do something bad to us if we told him.
+	AI_Output(self, hero, "Info_Mod_Malfama_AtHome_16_01"); //It's bad, the two of us can't do anything about him. If only someone could help us...
+	AI_Output(hero, self, "Info_Mod_Malfama_AtHome_15_02"); //Maybe I could stand by your side.
+	AI_Output(self, hero, "Info_Mod_Malfama_AtHome_16_03"); //Really? Ohh, thank you very much. Never before have we met such a kind and helpful man.
 
 	AI_StopProcessInfos	(self);
 };
@@ -48,7 +48,7 @@ FUNC VOID Info_Mod_Malfama_Traenenkristall_Info()
 {
 	AI_TurnToNpc	(self, Mod_7559_OUT_Serra_EIS);
 
-	AI_Output(self, hero, "Info_Mod_Malfama_Traenenkristall_16_00"); //(zu Serra) Was hast du getan? Ja, natürlich der Kristall. Das sollt ihr alle mit dem Tode bereuen!
+	AI_Output(self, hero, "Info_Mod_Malfama_Traenenkristall_16_00"); //(to Serra) What have you done? Yes, of course the crystal. I want you all to regret that with death!
 
 	AI_StopProcessInfos	(self);
 

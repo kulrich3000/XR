@@ -17,7 +17,7 @@ INSTANCE ItAm_Xardas_SchutzVorXeres(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Schutzamulett von Xardas";
+	description		= "Protective amulet of Xardas";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -56,7 +56,7 @@ INSTANCE ItAm_Anomalie (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett des Unsichtbaren";
+	description		= "Amulet of the Invisible";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;

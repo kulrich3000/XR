@@ -17,56 +17,56 @@ FUNC INT Info_Mod_Henker_Hi_Condition()
 FUNC VOID Info_Mod_Henker_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Henker_Hi_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Henker_Hi_05_01"); //(brummt) Is' was?
+	AI_Output(self, hero, "Info_Mod_Henker_Hi_05_01"); //(rumbling) Is what?
 
 	Info_ClearChoices	(Info_Mod_Henker_Hi);
 
-	Info_AddChoice	(Info_Mod_Henker_Hi, "Nicht wirklich.", Info_Mod_Henker_Hi_B);
-	Info_AddChoice	(Info_Mod_Henker_Hi, "Magst du deine Arbeit?", Info_Mod_Henker_Hi_A);
+	Info_AddChoice	(Info_Mod_Henker_Hi, "Not really.", Info_Mod_Henker_Hi_B);
+	Info_AddChoice	(Info_Mod_Henker_Hi, "Do you like your work?", Info_Mod_Henker_Hi_A);
 };
 
 FUNC VOID Info_Mod_Henker_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_Hi_B_15_00"); //Nicht wirklich.
+	AI_Output(hero, self, "Info_Mod_Henker_Hi_B_15_00"); //Not really.
 
 	Info_ClearChoices	(Info_Mod_Henker_Hi);
 };
 
 FUNC VOID Info_Mod_Henker_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_Hi_A_15_00"); //Magst du deine Arbeit?
-	AI_Output(self, hero, "Info_Mod_Henker_Hi_A_05_01"); //Nee, nich' immer. Hasse es, wenn die Weiber kreischen.
-	AI_Output(hero, self, "Info_Mod_Henker_Hi_A_15_02"); //(ironisch) Ja, schrecklich.
+	AI_Output(hero, self, "Info_Mod_Henker_Hi_A_15_00"); //Do you like your work?
+	AI_Output(self, hero, "Info_Mod_Henker_Hi_A_05_01"); //No, not always. Hate it when women scream.
+	AI_Output(hero, self, "Info_Mod_Henker_Hi_A_15_02"); //Yes, terrible.
 
 	Info_ClearChoices	(Info_Mod_Henker_Hi);
 
-	Info_AddChoice	(Info_Mod_Henker_Hi, "Ich wünsche deinen Delinquenten einen unblutigen Tag.", Info_Mod_Henker_Hi_D);
-	Info_AddChoice	(Info_Mod_Henker_Hi, "Hast du Lust auf ein Kräftemessen im Faustkampf?", Info_Mod_Henker_Hi_C);
+	Info_AddChoice	(Info_Mod_Henker_Hi, "I wish your delinquents a day without bloodshed.", Info_Mod_Henker_Hi_D);
+	Info_AddChoice	(Info_Mod_Henker_Hi, "Are you up for a showdown in a fistfight?", Info_Mod_Henker_Hi_C);
 };
 
 FUNC VOID Info_Mod_Henker_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_Hi_D_15_00"); //Ich wünsche deinen Delinquenten einen unblutigen Tag.
+	AI_Output(hero, self, "Info_Mod_Henker_Hi_D_15_00"); //I wish your delinquents a day without bloodshed.
 
 	Info_ClearChoices	(Info_Mod_Henker_Hi);
 };
 
 FUNC VOID Info_Mod_Henker_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_Hi_C_15_00"); //Hast du Lust auf ein Kräftemessen im Faustkampf?
-	AI_Output(self, hero, "Info_Mod_Henker_Hi_C_05_01"); //(misstrauisch) Wieso? Willst du verprügelt werden?
-	AI_Output(hero, self, "Info_Mod_Henker_Hi_C_15_02"); //50 Goldmünzen für den Gewinner.
-	AI_Output(self, hero, "Info_Mod_Henker_Hi_C_05_03"); //Hast du ir'ndwelche Tricks oder was? Kannst doch nicht ernsthaft glauben ...
+	AI_Output(hero, self, "Info_Mod_Henker_Hi_C_15_00"); //Are you up for a showdown in a fistfight?
+	AI_Output(self, hero, "Info_Mod_Henker_Hi_C_05_01"); //Why? Why? You want to get beat up?
+	AI_Output(hero, self, "Info_Mod_Henker_Hi_C_15_02"); //50 gold coins for the winner.
+	AI_Output(self, hero, "Info_Mod_Henker_Hi_C_05_03"); //Do you have any tricks or what? You can't seriously believe...
 
 	Info_ClearChoices	(Info_Mod_Henker_Hi);
 
-	Info_AddChoice	(Info_Mod_Henker_Hi, "Ich gehe vorher nochmal trainieren.", Info_Mod_Henker_Hi_F);
-	Info_AddChoice	(Info_Mod_Henker_Hi, "Jetzt sofort?", Info_Mod_Henker_Hi_E);
+	Info_AddChoice	(Info_Mod_Henker_Hi, "I'm going to rehearse first.", Info_Mod_Henker_Hi_F);
+	Info_AddChoice	(Info_Mod_Henker_Hi, "Right now?", Info_Mod_Henker_Hi_E);
 };
 
 FUNC VOID Info_Mod_Henker_Hi_F()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_Hi_F_15_00"); //Ich gehe vorher nochmal trainieren.
+	AI_Output(hero, self, "Info_Mod_Henker_Hi_F_15_00"); //I'm going to rehearse first.
 
 	Mod_REL_HenkerKampf = 1;
 
@@ -75,8 +75,8 @@ FUNC VOID Info_Mod_Henker_Hi_F()
 
 FUNC VOID Info_Mod_Henker_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_Hi_E_15_00"); //Jetzt sofort?
-	AI_Output(self, hero, "Info_Mod_Henker_Hi_E_05_01"); //Hmm, na gut. Kann's losgehen?
+	AI_Output(hero, self, "Info_Mod_Henker_Hi_E_15_00"); //Right now?
+	AI_Output(self, hero, "Info_Mod_Henker_Hi_E_05_01"); //Hmm, all right. Can we get started?
 
 	Mod_REL_HenkerKampf = 1;
 
@@ -91,7 +91,7 @@ INSTANCE Info_Mod_Henker_LetsFight (C_INFO)
 	information	= Info_Mod_Henker_LetsFight_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass uns beginnen!";
+	description	= "Let's begin!";
 };
 
 FUNC INT Info_Mod_Henker_LetsFight_Condition()
@@ -104,7 +104,7 @@ FUNC INT Info_Mod_Henker_LetsFight_Condition()
 
 FUNC VOID Info_Mod_Henker_LetsFight_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_LetsFight_15_00"); //Lass uns beginnen!
+	AI_Output(hero, self, "Info_Mod_Henker_LetsFight_15_00"); //Let's begin!
 
 	AI_UnequipWeapons	(hero);
 	
@@ -125,7 +125,7 @@ INSTANCE Info_Mod_Henker_Umgehauen (C_INFO)
 	information	= Info_Mod_Henker_Umgehauen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gewonnen.";
+	description	= "I've won.";
 };
 
 FUNC INT Info_Mod_Henker_Umgehauen_Condition()
@@ -140,12 +140,12 @@ FUNC INT Info_Mod_Henker_Umgehauen_Condition()
 
 FUNC VOID Info_Mod_Henker_Umgehauen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_Umgehauen_15_00"); //Ich habe gewonnen.
-	AI_Output(self, hero, "Info_Mod_Henker_Umgehauen_05_01"); //Na und?
-	AI_Output(hero, self, "Info_Mod_Henker_Umgehauen_15_02"); //Du schuldest mir ein paar Münzen ...
-	AI_Output(self, hero, "Info_Mod_Henker_Umgehauen_05_03"); //Kann mich nicht erinnern.
-	AI_Output(hero, self, "Info_Mod_Henker_Umgehauen_15_04"); //Soll ich dir meine Erinnerungshilfen vorführen?
-	AI_Output(self, hero, "Info_Mod_Henker_Umgehauen_05_05"); //(wimmert) Mann, das ist ein Wochenlohn.
+	AI_Output(hero, self, "Info_Mod_Henker_Umgehauen_15_00"); //I've won.
+	AI_Output(self, hero, "Info_Mod_Henker_Umgehauen_05_01"); //So what?
+	AI_Output(hero, self, "Info_Mod_Henker_Umgehauen_15_02"); //You owe me a few coins....
+	AI_Output(self, hero, "Info_Mod_Henker_Umgehauen_05_03"); //I don't remember.
+	AI_Output(hero, self, "Info_Mod_Henker_Umgehauen_15_04"); //Do you want me to show you my aides?
+	AI_Output(self, hero, "Info_Mod_Henker_Umgehauen_05_05"); //Man, this is a week's pay.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
@@ -162,7 +162,7 @@ INSTANCE Info_Mod_Henker_Unruhen (C_INFO)
 	information	= Info_Mod_Henker_Unruhen_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich brauche jemanden, der für mich seine Axt schwingt.";
+	description 	= "I need someone to swing my ax for me.";
 };                       
 
 FUNC INT Info_Mod_Henker_Unruhen_Condition()
@@ -176,8 +176,8 @@ FUNC INT Info_Mod_Henker_Unruhen_Condition()
 
 FUNC VOID Info_Mod_Henker_Unruhen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_Unruhen_15_00"); //Ich brauche jemanden, der für mich seine Axt schwingt.
-	AI_Output(self, hero, "Info_Mod_Henker_Unruhen_05_01"); //Mal keine Hexen heut? Kann mal 'n bisschen Abwechslung vertragen.
+	AI_Output(hero, self, "Info_Mod_Henker_Unruhen_15_00"); //I need someone to swing my ax for me.
+	AI_Output(self, hero, "Info_Mod_Henker_Unruhen_05_01"); //No witches today? I could use a little change.
 
 	AI_StopProcessInfos	(self);
 
@@ -194,7 +194,7 @@ INSTANCE Info_Mod_Henker_Freudenspender (C_INFO)
 	information	= Info_Mod_Henker_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Etwas Freudenspender nach einem harten Arbeitstag?";
+	description 	= "Something to give you joy after a hard day's work?";
 };                       
 
 FUNC INT Info_Mod_Henker_Freudenspender_Condition()
@@ -209,8 +209,8 @@ FUNC INT Info_Mod_Henker_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Henker_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henker_Freudenspender_15_00"); //Etwas Freudenspender nach einem harten Arbeitstag?
-	AI_Output(self, hero, "Info_Mod_Henker_Freudenspender_05_01"); //Nee, Mann, das Zeug haut bei mir immer voll rein.
+	AI_Output(hero, self, "Info_Mod_Henker_Freudenspender_15_00"); //Something to give you joy after a hard day's work?
+	AI_Output(self, hero, "Info_Mod_Henker_Freudenspender_05_01"); //Nah, man, I always get that stuff in there.
 };
 
 INSTANCE Info_Mod_Henker_Pickpocket (C_INFO)

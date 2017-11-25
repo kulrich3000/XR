@@ -20,14 +20,14 @@ FUNC INT Info_Mod_FakeMage_Hi_Condition()
 
 FUNC VOID Info_Mod_FakeMage_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_FakeMage_Hi_13_00"); //Bist du hier um Tränke auszuteilen?
-	AI_Output(hero, self, "Info_Mod_FakeMage_Hi_15_01"); //Ja, wieso?
-	AI_Output(self, hero, "Info_Mod_FakeMage_Hi_13_02"); //Hast du einen für mich?
-	AI_Output(hero, self, "Info_Mod_FakeMage_Hi_15_03"); //Hier hast du einen Manatrank.
+	AI_Output(self, hero, "Info_Mod_FakeMage_Hi_13_00"); //Are you here to serve potions?
+	AI_Output(hero, self, "Info_Mod_FakeMage_Hi_15_01"); //Yeah, why?
+	AI_Output(self, hero, "Info_Mod_FakeMage_Hi_13_02"); //Do you have one for me?
+	AI_Output(hero, self, "Info_Mod_FakeMage_Hi_15_03"); //Here's a mana potion.
 
 	B_GiveInvItems	(hero, self, ItPo_Mana_02, 1);
 
-	AI_Output(self, hero, "Info_Mod_FakeMage_Hi_13_04"); //Danke.
+	AI_Output(self, hero, "Info_Mod_FakeMage_Hi_13_04"); //Thanks.
 };
 
 INSTANCE Info_Mod_FakeMage_EXIT (C_INFO)

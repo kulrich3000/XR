@@ -1,7 +1,7 @@
 INSTANCE Mod_724_NOV_Mattheus_NW (Npc_Default) 
 {
 	// ------ NSC ------
-	name 		= "Mattheus";
+	name 		= "Matthew";
 	guild 		= GIL_VLK;
 	id 			= 724;
 	voice 		= 9;

@@ -86,7 +86,7 @@ INSTANCE Minecrawler	(Mst_Default_Minecrawler)
 
 INSTANCE KristallMinecrawler	(Mst_Default_Minecrawler)
 {
-	name	=	"Kristallcrawler";
+	name	=	"crystal crawler";
 	
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	90;
@@ -113,7 +113,7 @@ INSTANCE KristallMinecrawler	(Mst_Default_Minecrawler)
 
 INSTANCE Kristallcrawler	(Mst_Default_Minecrawler)
 {
-        name			=	"Kristallcrawler";
+        name			=	"crystal crawler";
 	
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	90;

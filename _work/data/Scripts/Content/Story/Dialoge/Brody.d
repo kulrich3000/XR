@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Brody_Hi (C_INFO)
 	information	= Info_Mod_Brody_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Brody_Hi_Condition()
@@ -16,22 +16,22 @@ FUNC INT Info_Mod_Brody_Hi_Condition()
 
 FUNC VOID Info_Mod_Brody_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brody_Hi_09_00"); //(schwach krächzend) Hey, Wasser. Bitte Wasser.
+	AI_Output(self, hero, "Info_Mod_Brody_Hi_09_00"); //Hey, water. Water, please.
 
 	Info_ClearChoices	(Info_Mod_Brody_Hi);
 
-	Info_AddChoice	(Info_Mod_Brody_Hi, "Ich hab' keins dabei.", Info_Mod_Brody_Hi_B);
+	Info_AddChoice	(Info_Mod_Brody_Hi, "I don't have one.", Info_Mod_Brody_Hi_B);
 
 	if (Npc_HasItems(hero, ItFo_Water) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Brody_Hi, "Hier hast du welches.", Info_Mod_Brody_Hi_A);
+		Info_AddChoice	(Info_Mod_Brody_Hi, "Here you have some.", Info_Mod_Brody_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Brody_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Brody_Hi_B_15_00"); //Ich hab' keins dabei.
-	AI_Output(self, hero, "Info_Mod_Brody_Hi_B_09_00"); //Macht nix. Ich mach's eh nicht mehr lange. (lacht trocken und haucht dabei sein Leben aus)
+	AI_Output(hero, self, "Info_Mod_Brody_Hi_B_15_00"); //I don't have one.
+	AI_Output(self, hero, "Info_Mod_Brody_Hi_B_09_00"); //It's not working. I won't be doing it much longer anyway. (laughs dryly and breathes out his life)
 
 	Mod_BrodyQuest = 1;
 
@@ -42,13 +42,13 @@ FUNC VOID Info_Mod_Brody_Hi_B()
 
 FUNC VOID Info_Mod_Brody_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Brody_Hi_A_15_00"); //Hier hast du welches.
+	AI_Output(hero, self, "Info_Mod_Brody_Hi_A_15_00"); //Here you have some.
 
 	B_GiveInvItems	(hero, self, ItFo_Water, 1);
 
 	B_UseItem	(self, ItFo_Water);
 
-	AI_Output(self, hero, "Info_Mod_Brody_Hi_A_09_01"); //Ahhhh! Danke, Freundchen.
+	AI_Output(self, hero, "Info_Mod_Brody_Hi_A_09_01"); //Ahhhhh! Thanks, buddy.
 
 	Mod_BrodyQuest = 3;
 
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Brody_WhoAreYou (C_INFO)
 	information	= Info_Mod_Brody_WhoAreYou_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "What are you doing here?";
 };
 
 FUNC INT Info_Mod_Brody_WhoAreYou_Condition()
@@ -79,25 +79,25 @@ FUNC VOID Info_Mod_Brody_WhoAreYou_Info()
 {
 	B_Say	(hero, self, "$WASMACHSTDUHIER");
 
-	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_01"); //Ich bin ein Wüstenpirat.
+	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_01"); //I'm a desert pirate.
 
 	AI_DrawWeapon	(hero);
 
-	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_02"); //(eilig) Nein, nein, ich tue dir nichts. Bin doch viel zu schwach dazu.
+	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_02"); //No, no, no, I'm not gonna hurt you. I'm too weak for that.
 
 	AI_RemoveWeapon	(hero);
 
-	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_03"); //Ich war Mitglied einer ganzen Gruppe. Unser Lager war dort hinten, gegenüber vom Tempel.
-	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_04"); //Unsere Lieblingsbeschäftigung war es, die Piraten zu ärgern.
-	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_05"); //Wir haben ihnen Essen und Plunder geklaut, Boote zerstört, vor Gregs Hütte gespuckt und in ihren Grog gepinkelt.
-	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_06"); //Eines Nachts wurde ich von einem Schrei geweckt.
-	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_07"); //Diese Sumpfratten von Piraten hatten unser Lager entdeckt und meuchelten einen nach dem anderen von uns ab!
-	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_08"); //Ich entkam als Einziger, ohne Ausrüstung, ohne was zu saufen. Und seitdem brate ich hier.
-	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_09"); //Raus aus dem Canyon komme ich nicht. Die Berge sind zu hoch und der Ausgang, den ich kenne, wird ständig bewacht.
+	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_03"); //I was a member of a whole group. Our camp was back there, across from the temple.
+	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_04"); //Our favorite thing we did was to annoy the pirates.
+	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_05"); //We stole food and stuff from them, destroyed boats, spat in front of Greg's hut and peed in her grog.
+	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_06"); //One night, I was awakened by a scream.
+	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_07"); //These swamp rats of pirates had discovered our camp and murdered us one by one!
+	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_08"); //I was the only one who escaped without equipment, without boozing. And I've been frying here ever since.
+	AI_Output(self, hero, "Info_Mod_Brody_WhoAreYou_09_09"); //I can't get out of the canyon. The mountains are too high and the exit I know of is constantly guarded.
 
 	Log_CreateTopic	(TOPIC_MOD_BRODY_CANYON, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BRODY_CANYON, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BRODY_CANYON, "Brody, ein Wüstenpirat, sitzt im Canyon und kennt nur einen Weg hinaus. Gibt es keinen anderen?");
+	B_LogEntry	(TOPIC_MOD_BRODY_CANYON, "Brody, a desert pirate, sits in the canyon and knows only one way out. Isn't there anyone else?");
 };
 
 INSTANCE Info_Mod_Brody_AndererWeg (C_INFO)
@@ -108,7 +108,7 @@ INSTANCE Info_Mod_Brody_AndererWeg (C_INFO)
 	information	= Info_Mod_Brody_AndererWeg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt noch einen anderen Weg aus dem Canyon.";
+	description	= "There's another way out of the canyon.";
 };
 
 FUNC INT Info_Mod_Brody_AndererWeg_Condition()
@@ -121,9 +121,9 @@ FUNC INT Info_Mod_Brody_AndererWeg_Condition()
 
 FUNC VOID Info_Mod_Brody_AndererWeg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brody_AndererWeg_15_00"); //Es gibt noch einen anderen Weg aus dem Canyon.
-	AI_Output(self, hero, "Info_Mod_Brody_AndererWeg_09_01"); //Wirklich? Wo?
-	AI_Output(hero, self, "Info_Mod_Brody_AndererWeg_15_02"); //Es handelt sich um eine Teleport-Plattform. Ich führe dich hin.
+	AI_Output(hero, self, "Info_Mod_Brody_AndererWeg_15_00"); //There's another way out of the canyon.
+	AI_Output(self, hero, "Info_Mod_Brody_AndererWeg_09_01"); //Really? Where?
+	AI_Output(hero, self, "Info_Mod_Brody_AndererWeg_15_02"); //It is a teleport platform. I'll take you there.
 
 	AI_StopProcessInfos	(self);
 
@@ -152,14 +152,14 @@ FUNC INT Info_Mod_Brody_AmZiel_Condition()
 
 FUNC VOID Info_Mod_Brody_AmZiel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brody_AmZiel_09_00"); //Freundchen ... ich weiß gar nicht, wie ich dir danken kann.
-	AI_Output(self, hero, "Info_Mod_Brody_AmZiel_09_01"); //Aber du hast Glück genug, dass ich nicht bei Kräften war, als du mich gefunden hast.
-	AI_Output(self, hero, "Info_Mod_Brody_AmZiel_09_02"); //Dann hätte das Gespräch eine ganz andere Wendung genommen, glaub mir.
-	AI_Output(self, hero, "Info_Mod_Brody_AmZiel_09_03"); //Mach's gut, und sei froh, wenn du nicht mehr von mir hörst!
+	AI_Output(self, hero, "Info_Mod_Brody_AmZiel_09_00"); //friend I don't know how to thank you.
+	AI_Output(self, hero, "Info_Mod_Brody_AmZiel_09_01"); //But you're lucky enough that I wasn't strong enough when you found me.
+	AI_Output(self, hero, "Info_Mod_Brody_AmZiel_09_02"); //Then the conversation would have taken a completely different turn, believe me.
+	AI_Output(self, hero, "Info_Mod_Brody_AmZiel_09_03"); //So long, and be happy when you don't hear from me anymore!
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BRODY_CANYON, "Ich habe Brody geholfen. Zum 'Dank' lässt er mich unbehelligt.");
+	B_LogEntry	(TOPIC_MOD_BRODY_CANYON, "I helped Brody. As a' thank you', he leaves me alone.");
 	B_SetTopicStatus	(TOPIC_MOD_BRODY_CANYON, LOG_SUCCESS);
 
 	AI_StopProcessInfos	(self);
@@ -191,8 +191,8 @@ FUNC INT Info_Mod_Brody_FalscherWeg_Condition()
 
 FUNC VOID Info_Mod_Brody_FalscherWeg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brody_FalscherWeg_09_00"); //Freundchen ... da geht's zum Piratenlager. Du willst mich denen wohl ausliefern.
-	AI_Output(self, hero, "Info_Mod_Brody_FalscherWeg_09_01"); //Entweder du zeigst mir einen anderen Weg oder du wirst mächtig Ärger bekommen.
+	AI_Output(self, hero, "Info_Mod_Brody_FalscherWeg_09_00"); //friend That's the pirate camp. You're going to turn me over to them.
+	AI_Output(self, hero, "Info_Mod_Brody_FalscherWeg_09_01"); //Either you show me another way or you'll get in a lot of trouble.
 
 	AI_StopProcessInfos	(self);
 };
@@ -218,7 +218,7 @@ FUNC INT Info_Mod_Brody_PechGehabt_Condition()
 
 FUNC VOID Info_Mod_Brody_PechGehabt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brody_PechGehabt_09_00"); //Ich hab dich gewarnt.
+	AI_Output(self, hero, "Info_Mod_Brody_PechGehabt_09_00"); //I warned you.
 
 	AI_StopProcessInfos	(self);
 
@@ -236,7 +236,7 @@ INSTANCE Info_Mod_Brody_Heiltrank (C_INFO)
 	information	= Info_Mod_Brody_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Brody_Heiltrank_Condition()
@@ -256,37 +256,37 @@ FUNC VOID Info_Mod_Brody_Heiltrank_Info()
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] < self.attribute[ATR_HITPOINTS_MAX]-HP_Elixier)
 	{
-		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Essenz der Heilung", Info_Mod_Brody_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Essence of Healing", Info_Mod_Brody_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 3)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_Elixier)
 	{
-		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Elixier der Heilung", Info_Mod_Brody_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Elixir of Healing", Info_Mod_Brody_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_Extrakt)
 	{
-		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Extrakt der Heilung", Info_Mod_Brody_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Extract of Healing", Info_Mod_Brody_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_Essenz)
 	{
-		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Essenz der Heilung", Info_Mod_Brody_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Essence of Healing", Info_Mod_Brody_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_06)
 	{
-		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Trank der leichten Heilung", Info_Mod_Brody_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Drink of light healing", Info_Mod_Brody_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_06)
 	{
-		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Leichter Heiltrank", Info_Mod_Brody_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Light healing potion", Info_Mod_Brody_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_05)
 	{
-		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Brody_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Brody_Heiltrank, "Drink of fast healing", Info_Mod_Brody_Heiltrank_Health_05);
 	};
 };
 

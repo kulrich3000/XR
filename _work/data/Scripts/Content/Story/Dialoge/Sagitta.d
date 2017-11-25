@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Sagitta_Hi_Condition()
 
 FUNC VOID Info_Mod_Sagitta_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sagitta_Hi_26_00"); //He, was machst du hier? Willst du meine Dienste als Kräuterkundige nutzen oder willst du einen meiner Tränke kaufen?
+	AI_Output(self, hero, "Info_Mod_Sagitta_Hi_26_00"); //Hey, what are you doing here? Do you want to use my services as a herbalist or do you want to buy one of my potions?
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_OHNELAGER, LOG_NOTE);
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KHORINIS, LOG_NOTE);
-	B_LogEntry_More	(TOPIC_MOD_HAENDLER_OHNELAGER, TOPIC_MOD_LEHRER_KHORINIS, "Sagitta verkauft Tränke.", "Sagitta kann mich in der Alchemie unterweisen.");
+	B_LogEntry_More	(TOPIC_MOD_HAENDLER_OHNELAGER, TOPIC_MOD_LEHRER_KHORINIS, "Sagitta sells potions.", "Sagitta can teach me alchemy.");
 };
 
 INSTANCE Info_Mod_Sagitta_AkilsHof (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Sagitta_AkilsHof (C_INFO)
 	information	= Info_Mod_Sagitta_AkilsHof_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gebieterin über die Kräuterheilkunst, ich benötige eure Unterstützung.";
+	description	= "Mistress of herbal medicine, I need your support.";
 };
 
 FUNC INT Info_Mod_Sagitta_AkilsHof_Condition()
@@ -47,14 +47,14 @@ FUNC INT Info_Mod_Sagitta_AkilsHof_Condition()
 
 FUNC VOID Info_Mod_Sagitta_AkilsHof_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_AkilsHof_15_00"); //Gebieterin über die Kräuterheilkunst, ich benötige eure Unterstützung.
-	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_01"); //Selbstverständlich, sonst wärest du nicht hier. Worum geht es?
-	AI_Output(hero, self, "Info_Mod_Sagitta_AkilsHof_15_02"); //Seit dem Besuch einer finsteren Gestalt sind einige Leute auf Akils Hof erkrankt, leiden unter raschem körperlichen Verfall.
-	AI_Output(hero, self, "Info_Mod_Sagitta_AkilsHof_15_03"); //Die beiden Brüder sind indes wie wild aufeinander losgegangen und Ehnim wurde dabei schwer verwundet.
-	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_04"); //Hmm, die Umstände lassen mich vermuten, dass wir es mit keiner alltäglichen Krankheit zu tun haben.
-	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_05"); //Es scheint sich eher um eine Art Fluch zu handeln, bei welchem meine Heilkunst nichts auszurichten vermag.
-	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_06"); //Am ehesten wirst du wohl im Kloster Hilfe finden, wo du dich auch schleunigst hinbegeben solltest.
-	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_07"); //Hier noch ein heilender Trank für Ehnim. Seine Verletzung sollte dadurch kuriert werden.
+	AI_Output(hero, self, "Info_Mod_Sagitta_AkilsHof_15_00"); //Mistress of herbal medicine, I need your support.
+	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_01"); //Of course, or you wouldn't be here. What's this about?
+	AI_Output(hero, self, "Info_Mod_Sagitta_AkilsHof_15_02"); //Since the visit of a sinister figure, some people on Akil's farm have fallen ill and are suffering from rapid physical deterioration.
+	AI_Output(hero, self, "Info_Mod_Sagitta_AkilsHof_15_03"); //The two brothers went wildly against each other and Ehnim was badly wounded.
+	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_04"); //Hmm, the circumstances make me suspect that we're not dealing with an everyday disease.
+	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_05"); //It seems to be a kind of curse where my art of healing has nothing to do with it.
+	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_06"); //Most likely you will find help in the monastery, where you should go as soon as possible.
+	AI_Output(self, hero, "Info_Mod_Sagitta_AkilsHof_26_07"); //Here's another healing potion for Ehnim. His injury was supposed to be cured.
 
 	B_GiveInvItems	(self, hero, ItPo_Health_06, 1);
 	
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Sagitta_Kraeuter (C_INFO)
 	information	= Info_Mod_Sagitta_Kraeuter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mich auch in der Alchemie unterweisen?";
+	description	= "Can you teach me alchemy?";
 };
 
 FUNC INT Info_Mod_Sagitta_Kraeuter_Condition()
@@ -83,31 +83,31 @@ FUNC INT Info_Mod_Sagitta_Kraeuter_Condition()
 
 FUNC VOID Info_Mod_Sagitta_Kraeuter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter_15_00"); //Kannst du mich auch in der Alchemie unterweisen?
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_01"); //Du möchtest von mir etwas über Alchemie lernen? Wie kommst du denn auf diesen Gedanken?
+	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter_15_00"); //Can you teach me alchemy?
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_01"); //You want to learn about alchemy from me? What makes you think that?
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	|| (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	{
-		AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter_15_02"); //Ich besitze schon Kenntnisse darüber und möchte mein Wissen erweitern.
-		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_03"); //So? Das ist doch schon mal eine gute Voraussetzung.
-		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_04"); //Dann solltest du die kleine Aufgabe, die ich dir stellen werde, auch ohne größere Schwierigkeiten erledigen können.
+		AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter_15_02"); //I already know about it and would like to expand my knowledge.
+		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_03"); //Like this? That's a good premise.
+		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_04"); //Then you should be able to do the little task I'm going to give you without any major difficulties.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter_15_05"); //Na ja, kann ganz nützlich sein, denke ich.
-		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_06"); //So, denkst du ... Klingt ja fast nach einer fixen Idee.
-		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_07"); //Nein, wenn ich meine Zeit opfern soll, dann musst du zuerst eine Kleinigkeit für mich erledigen.
-		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_08"); //So wird sich zeigen, ob dein Interesse auch wirklich aufrichtig ist.
+		AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter_15_05"); //Well, it can be very useful, I guess.
+		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_06"); //So, do you think...? It almost sounds like a fixed idea.
+		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_07"); //No, if you want me to sacrifice my time, you're gonna have to do a little thing for me first.
+		AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_08"); //This will show whether your interest is truly sincere.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter_15_09"); //Ich höre.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_10"); //Besorge mir einen Fliegenpilz, eine Heilknospe und zwei Blauflieder.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_11"); //Wenn du mir die Sachen gebracht hast, darfst du noch einen kleinen Botengang tätigen. Dazu aber später mehr.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter_15_09"); //I'm listening.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_10"); //Get me a fly agaric, a healing bud and two blue songs.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter_26_11"); //When you've brought me the things, I'll let you run an errand. But more about this later.
 
 	Log_CreateTopic	(TOPIC_MOD_SAGITTA_KRAEUTER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SAGITTA_KRAEUTER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SAGITTA_KRAEUTER, "Damit mich Sagitta unterrichtet, muss ich ihr zunächst 1 Fliegenpilz, 1 Heilknospe und 2 Blauflieder bringen.");
+	B_LogEntry	(TOPIC_MOD_SAGITTA_KRAEUTER, "To teach me Sagitta, I have to bring her first 1 fly agaric, 1 healing bud and 2 blue songs.");
 };
 
 INSTANCE Info_Mod_Sagitta_Kraeuter2 (C_INFO)
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Sagitta_Kraeuter2 (C_INFO)
 	information	= Info_Mod_Sagitta_Kraeuter2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Sachen.";
+	description	= "I got the things.";
 };
 
 FUNC INT Info_Mod_Sagitta_Kraeuter2_Condition()
@@ -134,35 +134,35 @@ FUNC INT Info_Mod_Sagitta_Kraeuter2_Condition()
 
 FUNC VOID Info_Mod_Sagitta_Kraeuter2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter2_15_00"); //Ich habe die Sachen.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter2_15_00"); //I got the things.
 
 	Npc_RemoveInvItems	(hero, ItPl_Heilknospe, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Mushroom_03, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Blueplant, 2);
 
-	B_ShowGivenThings	("Heilknospe, Fliegenpilz und zwei Blauflieder gegeben");
+	B_ShowGivenThings	("Healing bud, fly agaric and two blue songs given");
 
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_01"); //Gut. Gib schon her. Ich muss die Gewächse noch am Alchemietisch verarbeiten.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_02"); //Sieh zu und lerne.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_01"); //Good. Give it to me. I have to finish the plants at the alchemy table.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_02"); //Watch and learn.
 
 	AI_UseMob (self, "LAB", 1);
 	AI_UseMob (self, "LAB", -1);
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_03"); //So, hier. Diese Medizin ist für Sekob. Wie immer jeweils zwei Esslöffel am Morgen und Abend.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_03"); //There, here. This medicine is for Sekob. As always, two tablespoons each morning and evening.
 
 	B_GiveInvItems	(self, hero, ItPo_SekobMedizin, 1);
 
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_04"); //Du bekommst etwas Gold und Naturalien dafür.
-	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter2_15_05"); //Medizin? Aus Fliegenpilz?
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_06"); //Du scheinst ungläubig. Das spricht nicht für dich.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_07"); //Jeder erfahrene Alchemist sollte wissen, dass Gifte in geringer Konzentration durchaus heilsame Wirkungen entfalten können.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_08"); //Sekob zum Beispiel leidet unter Herzproblemen, was auch kein Wunder ist, bei dem notorischen Choleriker, der er ist.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_09"); //Das gering dosierte Fliegenpilzgift lindert seine Beschwerden ... und die Wutausbrüche.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_10"); //Und nun geh. Du weißt, was du zu tun hast.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_04"); //I'll give you some gold and some in kind for it.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter2_15_05"); //Medicine? Fly agaric?
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_06"); //You seem unbelieving. That doesn't speak for you.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_07"); //Every experienced alchemist should know that poisons in low concentrations can have healing effects.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_08"); //Sekob, for example, suffers from heart problems, which is no wonder with the notorious choleric person he is.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_09"); //The small dosage of mushroom poison relieves his symptoms.... and the outbursts of rage.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter2_26_10"); //Now go away. You know what you have to do.
 
-	B_LogEntry	(TOPIC_MOD_SAGITTA_KRAEUTER, "Nun soll ich Sekob die Fliegenpilzmedizin bringen.");
+	B_LogEntry	(TOPIC_MOD_SAGITTA_KRAEUTER, "Now I am to bring Sekob the fly agaric medicine.");
 };
 
 INSTANCE Info_Mod_Sagitta_Kraeuter3 (C_INFO)
@@ -173,7 +173,7 @@ INSTANCE Info_Mod_Sagitta_Kraeuter3 (C_INFO)
 	information	= Info_Mod_Sagitta_Kraeuter3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, dein Paket.";
+	description	= "Here's your package.";
 };
 
 FUNC INT Info_Mod_Sagitta_Kraeuter3_Condition()
@@ -187,14 +187,14 @@ FUNC INT Info_Mod_Sagitta_Kraeuter3_Condition()
 
 FUNC VOID Info_Mod_Sagitta_Kraeuter3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter3_15_00"); //Hier, dein Paket.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Kraeuter3_15_00"); //Here's your package.
 
 	B_GiveInvItems	(hero, self, ItMi_SekobSagitta, 1);
 
 	Npc_RemoveInvItems	(self, ItMi_SekobSagitta, 1);
 
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter3_26_01"); //Gut. Du hast deine Aufgabe erfüllt ... auch wenn sie nicht die anspruchsvollste war.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter3_26_02"); //Solltest du noch immer Interesse an der Alchemie haben, werde ich dich nun unterrichten.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter3_26_01"); //Good. You have fulfilled your task.... even if it wasn't the most demanding.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Kraeuter3_26_02"); //If you're still interested in alchemy, I'll teach you now.
 
 	B_GivePlayerXP	(200);
 
@@ -211,7 +211,7 @@ INSTANCE Info_Mod_Sagitta_Irdorath (C_INFO)
 	information	= Info_Mod_Sagitta_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss diese Insel mit einem Schiff verlassen und benötige jemanden mit deinen Fähigkeiten in meiner Mannschaft.";
+	description	= "I have to leave this island with a ship and need someone with your skills on my crew.";
 };
 
 FUNC INT Info_Mod_Sagitta_Irdorath_Condition()
@@ -226,35 +226,35 @@ FUNC INT Info_Mod_Sagitta_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Sagitta_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_00"); //Ich muss diese Insel mit einem Schiff verlassen und benötige jemanden mit deinen Fähigkeiten in meiner Mannschaft.
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_01"); //Es geht um das Wohl von Khorinis ...
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_02"); //Was? Ich, die ich mich doch mein ganzes Leben der Kräuterkunst auf dem Land gewidmet habe, auf einem Schiff? Na, du kommst auf Ideen ...
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_03"); //Aber erzähl doch erst einmal, worum es überhaupt bei dieser Exkursion geht.
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_04"); //Ein finsterer Magier versucht dieses Eiland zu unterwerfen und richtete bereits einigen Schaden im Minental, der Stadt und auf Bauernhöfen an.
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_05"); //Wir müssen eine nahe gelegene Insel aufsuchen, um seinen Machenschaften auf kurz oder lang ein Ende setzen zu können.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_06"); //Was sagst du da?
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_07"); //Ja, in letzter Zeit haben sich die Fälle ungewöhnlicher Erkrankungen gehäuft. Ich wurde so oft aufgesucht, wie niemals zuvor.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_08"); //Kaum ein Tag mehr, da nicht Leute klagend zu mir kommen und um Linderung ihrer Leiden bitten.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_09"); //(halblaut) Allmählich wird mir das zu viel ...
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_10"); //(wieder zum Helden) In Ordnung, wenn nur die Seereise dieses üble Treiben beenden kann, werde ich euch begleiten ...
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_11"); //(überrascht) Was, ja, wirklich?
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_12"); //Ja ... aber vorher musst du mir noch einige Gewächse besorgen ... sie sollten die Seekrankheit deutlich mindern können.
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_13"); //Gut, wohin muss ich laufen?
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_14"); //Nirgendwohin.
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_15"); //Wie? Was dann?
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_16"); //Klettern und schwimmen. Die Harpienkralle – ein Pilz - wächst nur auf kahlen Berggipfeln und zwar – wie der Name schon verrät – in der Nähe von Harpien.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_17"); //Du wirst eines ihrer Nester finden müssen und zwischen ihrem Unrat bestimmt die begehrte Zutat finden.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_18"); //Früher sollen sie vor allem im Minental heimisch gewesen sein, aber mit dem Fall der Barriere könntest du vielleicht auch in der Nähe von Onars Hof in den Bergen Harpien antreffen.
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_19"); //Hmm, na schön, was noch?
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_20"); //Und dann musst du noch den Salzwassersprießling besorgen, der in der Nähe von Seichtwasserbarsten wächst.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_21"); //Der Grund liegt darin ...
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_22"); //Ja, ja, dass die Pflanze in seinem Unrat wächst ...
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_23"); //Was, nein, absolut nicht, wie kommst du auf so etwas?
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_24"); //Der Seichtwasserbarsten ist die bevorzugte Beute seines fünf Meter größeren Vetters, dem Gierschlundleviathan, und wächst in dessen Ausscheidungen.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_25"); //Du könntest an den seichten Stellen des Hafens und der vorgelagerten kleinen Insel fündig werden.
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_26"); //Ähh ... ich mache mich dann mal auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_00"); //I have to leave this island with a ship and need someone with your skills on my crew.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_01"); //It's about the well-being of khorinis...
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_02"); //What? I, who have dedicated my whole life to herbalism in the countryside, on a ship? Well, you come up with ideas...
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_03"); //But first tell us what this excursion is all about.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_04"); //A sinister magician tries to subjugate this island and has already done some damage in the valley of the Mine, the city and on farms.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_05"); //We must visit a nearby island in order to put an end to his machinations sooner or later.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_06"); //What did you say?
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_07"); //Yes, the incidence of unusual illnesses has been increasing lately. I've been visited more than ever before.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_08"); //Hardly a day more, since people do not come to me complaining and ask for relief of their suffering.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_09"); //It's getting to be too much for me...
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_10"); //(again to the hero) All right, if only the voyage can end this evil activity, I will accompany you....
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_11"); //What, yeah, really?
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_12"); //Yes... but first you have to get me some plants... they should be able to significantly reduce seasickness.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_13"); //Well, where do I have to walk?
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_14"); //Nowhere.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_15"); //How? What then?
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_16"); //Climbing and swimming. The Harpienkralle - a mushroom - grows only on bare mountain peaks - as the name suggests - near harpies.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_17"); //You'll have to find one of their nests, and you'll certainly find the sought-after ingredient between their filth.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_18"); //In the past, they are said to have been native to the Minental, but with the fall of the barrier, you might also find harpies near Onars Hof in the mountains.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_19"); //All right, what else?
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_20"); //And then you have to get the salt water spit that grows near shallow water barley.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_21"); //The reason is that...
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_22"); //Yes, yes, that the plant grows in his garbage...
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_23"); //What, no, not at all, why would you think that?
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_24"); //The shallow water barber is the preferred prey of his five-metre larger cousin, Gierschlundleviathan, and grows in its excretions.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath_26_25"); //You could find what you are looking for in the shallow parts of the harbour and the small island off the coast.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath_15_26"); //Uh... I'll be on my way, then.
 
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Schön, Sagitta erklärt sich prinzipiell zu der Reise bereit ... nur muss ich ihr noch zwei Dinge besorgen: die Harpienkralle, die auf Berggipfeln in Harpiennestern wächst – im Minental und in den Bergen um Onars Hof könnte ich welche finden – und den Salzwassersprießling, der irgendwo an seichten Stellen am Hafen und der kleinen Insel sprießen könnte.");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Well, Sagitta declares herself basically ready for the journey.... only I have to get her two more things: the harp claw, which grows on mountain peaks in harp nests - in the valley of the Mine and in the mountains around Onar's farm I could find some - and the salt water spit, which could sprout somewhere in shallow places at the harbour and the small island.");
 
 	Wld_InsertItem	(ItPl_SalzwasserSprießling, "FP_ITEM_SALZWASSERSPRIESSLING_01");
 	Wld_InsertItem	(ItPl_SalzwasserSprießling, "FP_ITEM_SALZWASSERSPRIESSLING_02");
@@ -278,7 +278,7 @@ INSTANCE Info_Mod_Sagitta_Irdorath2 (C_INFO)
 	information	= Info_Mod_Sagitta_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Gewächse.";
+	description	= "I have the plants.";
 };
 
 FUNC INT Info_Mod_Sagitta_Irdorath2_Condition()
@@ -296,19 +296,19 @@ FUNC INT Info_Mod_Sagitta_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Sagitta_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath2_15_00"); //Ich habe die Gewächse.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath2_15_00"); //I have the plants.
 
-	B_ShowGivenThings	("Harpienkralle und Salzwassersprießling gegeben");
+	B_ShowGivenThings	("Harpie claw and salt water spit");
 
 	Npc_RemoveInvItems	(hero, ItPl_SalzwasserSprießling, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Harpienkralle, 1);
 
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath2_26_01"); //Zeig mal ... tatsächlich.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath2_26_02"); //Das hast du vortrefflich gemacht.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath2_26_03"); //Du scheinst es wirklich ernst zu meinen mit der Expedition ... und ich sehe keinen Hinderungsgrund mehr, warum auch ich mich ihr nicht anschließen sollte.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath2_26_04"); //Wir sehen uns beim Hafen.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath2_26_01"); //Let me see.... actually.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath2_26_02"); //You did an excellent job.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath2_26_03"); //You seem really serious about the expedition... and I don't see any obstacle to me not joining her.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath2_26_04"); //See you at the harbour.
 
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Sagitta war sehr zufrieden und wird am Hafen auf den Beginn der Seereise warten.");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Sagitta was very satisfied and will wait at the harbour for the start of the voyage.");
 
 	B_GivePlayerXP	(300);
 
@@ -330,7 +330,7 @@ INSTANCE Info_Mod_Sagitta_Irdorath3 (C_INFO)
 	information	= Info_Mod_Sagitta_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint, dass wir zu viele sind.";
+	description	= "I'm sorry, but it seems there are too many of us.";
 };
 
 FUNC INT Info_Mod_Sagitta_Irdorath3_Condition()
@@ -347,8 +347,8 @@ FUNC INT Info_Mod_Sagitta_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Sagitta_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath3_15_00"); //Tut mir leid, aber es scheint, dass wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath3_26_01"); //Schade. Ich gehe dann wieder zurück.
+	AI_Output(hero, self, "Info_Mod_Sagitta_Irdorath3_15_00"); //I'm sorry, but it seems there are too many of us. I can't take you with me.
+	AI_Output(self, hero, "Info_Mod_Sagitta_Irdorath3_26_01"); //Too bad. I'll go back then.
 
 	Mod_SagittaDabei = 0;
 
@@ -367,7 +367,7 @@ INSTANCE Info_Mod_Sagitta_OnarsSchnaps (C_INFO)
 	information	= Info_Mod_Sagitta_OnarsSchnaps_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Onar hat was Falsches getrunken und jetzt schwere Magenverstimmungen.";
+	description	= "Onar drank something wrong and now he's got a bad stomach upset.";
 };
 
 FUNC INT Info_Mod_Sagitta_OnarsSchnaps_Condition()
@@ -380,8 +380,8 @@ FUNC INT Info_Mod_Sagitta_OnarsSchnaps_Condition()
 
 FUNC VOID Info_Mod_Sagitta_OnarsSchnaps_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_OnarsSchnaps_15_00"); //Onar hat was Falsches getrunken und jetzt schwere Magenverstimmungen. Weißt du Abhilfe?
-	AI_Output(self, hero, "Info_Mod_Sagitta_OnarsSchnaps_26_01"); //Onar, sagst du? Dieser alte Geizkragen? In diesem Fall kostet mein Heilmittel 100 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Sagitta_OnarsSchnaps_15_00"); //Onar drank something wrong and now he's got a bad stomach upset. Do you know what to do?
+	AI_Output(self, hero, "Info_Mod_Sagitta_OnarsSchnaps_26_01"); //Onar, you say? That old cheapskate? In this case, my cure costs 100 gold coins.
 };
 
 INSTANCE Info_Mod_Sagitta_OnarsHeilmittel (C_INFO)
@@ -392,7 +392,7 @@ INSTANCE Info_Mod_Sagitta_OnarsHeilmittel (C_INFO)
 	information	= Info_Mod_Sagitta_OnarsHeilmittel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du das Gold.";
+	description	= "Here's the gold.";
 };
 
 FUNC INT Info_Mod_Sagitta_OnarsHeilmittel_Condition()
@@ -406,11 +406,11 @@ FUNC INT Info_Mod_Sagitta_OnarsHeilmittel_Condition()
 
 FUNC VOID Info_Mod_Sagitta_OnarsHeilmittel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_OnarsHeilmittel_15_00"); //Hier hast du das Gold.
+	AI_Output(hero, self, "Info_Mod_Sagitta_OnarsHeilmittel_15_00"); //Here's the gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Sagitta_OnarsHeilmittel_26_01"); //Er muss diese Kräutermischung einfach trinken. Nach kurzer Zeit sollte es ihm dann besser gehen.
+	AI_Output(self, hero, "Info_Mod_Sagitta_OnarsHeilmittel_26_01"); //He just has to drink this herbal mixture. After a short time he should feel better.
 
 	B_GiveInvItems	(self, hero, ItPo_OnarsTrank, 1);
 };
@@ -423,7 +423,7 @@ INSTANCE Info_Mod_Sagitta_MangelQuest (C_INFO)
 	information	= Info_Mod_Sagitta_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fungizid kaufen (80 Gold)";
+	description	= "Buy fungicide (80 Gold)";
 };
 
 FUNC INT Info_Mod_Sagitta_MangelQuest_Condition()
@@ -452,7 +452,7 @@ INSTANCE Info_Mod_Sagitta_Lehrer (C_INFO)
 	information	= Info_Mod_Sagitta_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir etwas über die Alchemie bei.";
+	description	= "Teach me about alchemy.";
 };
 
 FUNC INT Info_Mod_Sagitta_Lehrer_Condition()
@@ -474,35 +474,35 @@ FUNC VOID Info_Mod_Sagitta_Lehrer_Info()
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_07] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Trank der leichten Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_07)), Info_Mod_Sagitta_Lehrer_Health_07);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Drink of light healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_07)), Info_Mod_Sagitta_Lehrer_Health_07);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_06] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Leichter Heiltrank", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_06)), Info_Mod_Sagitta_Lehrer_Health_06);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Light healing potion", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_06)), Info_Mod_Sagitta_Lehrer_Health_06);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_05] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Trank der schnellen Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Sagitta_Lehrer_Health_05);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Drink of fast healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Sagitta_Lehrer_Health_05);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	&& (Mod_LehrlingBei != 1)
 	{
-		Info_AddChoice 		(Info_Mod_Sagitta_Lehrer,B_BuildLearnString ("Essenz der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Sagitta_Lehrer_HEALTH_01);
+		Info_AddChoice 		(Info_Mod_Sagitta_Lehrer,B_BuildLearnString ("Essence of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Sagitta_Lehrer_HEALTH_01);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Extrakt der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Sagitta_Lehrer_Health_02);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Extract of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Sagitta_Lehrer_Health_02);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Elixier der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Sagitta_Lehrer_Health_03);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Elixir of Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Sagitta_Lehrer_Health_03);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
@@ -510,57 +510,57 @@ FUNC VOID Info_Mod_Sagitta_Lehrer_Info()
 	&& (Mod_LehrlingBei != 1)
 	&& (Kapitel >= 4)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Elixier des Lebens", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Sagitta_Lehrer_Perm_Health);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Elixir of Life", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Sagitta_Lehrer_Perm_Health);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_06] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Trank des leichten Mana", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_06)), Info_Mod_Sagitta_Lehrer_Mana_06);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Drink of light mana", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_06)), Info_Mod_Sagitta_Lehrer_Mana_06);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_05] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Leichte Manatrank", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_05)), Info_Mod_Sagitta_Lehrer_Mana_05);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Light mana potion", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_05)), Info_Mod_Sagitta_Lehrer_Mana_05);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	&& (Mod_LehrlingBei != 1)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Mana Essenz", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Sagitta_Lehrer_Mana_01);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Mana Essence", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Sagitta_Lehrer_Mana_01);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Mana Extrakt", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Sagitta_Lehrer_Mana_02);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Mana Extract", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Sagitta_Lehrer_Mana_02);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Mana Elixier", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Sagitta_Lehrer_Mana_03);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Mana Elixir", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Sagitta_Lehrer_Mana_03);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Trank der Geschwindigkeit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Speed)), Info_Mod_Sagitta_Lehrer_Speed);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Speed Potion", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Speed)), Info_Mod_Sagitta_Lehrer_Speed);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	&& (Kapitel >= 4)
 	{
-		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Elixier des Geistes", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Sagitta_Lehrer_Perm_Mana);
+		Info_AddChoice	  (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Elixir of Spirit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Sagitta_Lehrer_Perm_Mana);
 	};                                                                                                                                                                            
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE) 
 	&& (Kapitel >= 4)
 	{                                                                                                                                                                                     
-		Info_AddChoice (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Elixier der Stärke", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Sagitta_Lehrer_PermSTR);               
+		Info_AddChoice (Info_Mod_Sagitta_Lehrer, B_BuildLearnString ("Elixir of Strength", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Sagitta_Lehrer_PermSTR);               
 	};
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	&& (Kapitel >= 4)
 	{
-		Info_AddChoice (Info_Mod_Sagitta_Lehrer,B_BuildLearnString ("Elixier der Geschicklichkeit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Sagitta_Lehrer_Perm_DEX);
+		Info_AddChoice (Info_Mod_Sagitta_Lehrer,B_BuildLearnString ("Elixir of Dexterity", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Sagitta_Lehrer_Perm_DEX);
 	};
 };
 FUNC VOID Info_Mod_Sagitta_Lehrer_BACK()

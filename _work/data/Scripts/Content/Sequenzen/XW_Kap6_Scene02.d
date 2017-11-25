@@ -18,17 +18,17 @@ FUNC VOID XW_Kap6_Scene02()
 
 	if (Mod_XW_Kap6_Scene02_Counter == 3)
 	{
-		AI_Output(Mod_7766_KDF_Milten_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene02_03_00"); //(ruft) Was machen wir jetzt?
+		AI_Output(Mod_7766_KDF_Milten_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene02_03_00"); //(shouting) What do we do now?
 	};
 
 	if (Mod_XW_Kap6_Scene02_Counter == 9)
 	{
-		AI_Output(Mod_7764_PSINOV_Lester_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene02_13_01"); //Die Zuschauer scheinen noch nicht verstanden zu haben, dass wir nicht zum Programm gehören.
+		AI_Output(Mod_7764_PSINOV_Lester_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene02_13_01"); //The viewers don't seem to have understood that we are not part of the programme.
 	};
 
 	if (Mod_XW_Kap6_Scene02_Counter == 15)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene02_15_02"); //Dann machen wir erst mal weiter und schauen, was als nächstes passiert.
+		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene02_15_02"); //Let's go ahead and see what happens next.
 	};
 
 	if (Mod_XW_Kap6_Scene02_Counter == 21)

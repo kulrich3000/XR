@@ -1,29 +1,29 @@
 FUNC VOID Info_Mod_PennerVater_Gruss()
 {
-	AI_Output(hero, self, "Info_Mod_PennerVater_Gruss_15_00"); //Guten Tag, alter Mann.
-	AI_Output(self, hero, "Info_Mod_PennerVater_Gruss_03_01"); //Im Frieden ist jeder Tag ein guter Tag.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Gruss_15_02"); //Wie? Ach so. Ich habe deinen Sohn getroffen.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Gruss_15_00"); //Good afternoon, old man.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Gruss_03_01"); //In peace, every day is a good day.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Gruss_15_02"); //How? Oh, I see. I met your son.
 };
 
 FUNC VOID Info_Mod_PennerVater_Liste()
 {
-	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_00"); //Da hast du recht. Übrigens, Wie geht's dir hier so?
-	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_01"); //Hunger ist der beste Koch.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_02"); //Mag sein. Ich meine ...
-	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_03"); //Besser eigenes Brot als fremder Braten.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_00"); //You got that right. By the way, how are you doing here?
+	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_01"); //Hunger is the best cook.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_02"); //Maybe so. I mean....
+	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_03"); //Better own bread than roasted meat.
 	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_04"); //Hmm.
-	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_05"); //Der Mensch lebt nicht vom Brot allein. Alles hat ein Ende, nur die Wurst hat zwei.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_06"); //Ah, ich verstehe. Du willst was zum Essen.
-	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_07"); //Der Eintopf ist armer Leute Sonntagsspeise und ein Glas Wein auf die Suppe, ist dem Heiler eine Münze entzogen.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_08"); //Ganz schöne Liste. Noch was?
-	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_09"); //In der Not schmeckt der Käs' auch ohne Brot und auch der Apfel fällt nicht weit vom Stamm.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_10"); //Verstehe. Muss es gleich sein? Ich hätte gern gehört, was es mit der Münze und dem Schatz auf sich hat.
-	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_11"); //Was du heute kannst besorgen, das verschiebe nicht auf morgen.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_05"); //Man does not live on bread alone. Everything has an end, only the sausage has two.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_06"); //Ah, I understand. You want something to eat.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_07"); //The stew is poor people's Sunday meal and a glass of wine on the soup, the healer is deprived of a coin.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_08"); //That's quite a list. Another what?
+	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_09"); //The cheese tastes good even without bread and the apple does not fall far from the tree.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Liste_15_10"); //I see. Does it have to be the same? I'd like to hear about the coin and the treasure.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Liste_03_11"); //Don't put off till tomorrow what you can get today.
 };
 
 FUNC VOID Info_Mod_PennerVater_Abgabe()
 {
-	AI_Output(hero, self, "Info_Mod_PennerVater_Abgabe_15_00"); //Hier. Essen und trinken hält Leib und Seele zusammen.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Abgabe_15_00"); //Here. Eating and drinking keeps body and soul together.
 
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 1);
 	Npc_RemoveInvItems	(hero, ItFo_Sausage, 1);
@@ -32,21 +32,21 @@ FUNC VOID Info_Mod_PennerVater_Abgabe()
 	Npc_RemoveInvItems	(hero, ItFo_Wine, 1);
 	Npc_RemoveInvItems	(hero, ItFo_Cheese, 1);
 
-	B_ShowGivenThings	("Lebensmittel gegeben");
+	B_ShowGivenThings	("given food");
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_PennerVater_Abgabe_15_01"); //(selbst) Ha! Kann ich auch.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Abgabe_15_01"); //(even) Ha! I can do that, too.
 
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_PennerVater_Abgabe_03_02"); //Wes' Brot ich ess, des' Lied ich sing.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Abgabe_15_03"); //Ich höre ...
+	AI_Output(self, hero, "Info_Mod_PennerVater_Abgabe_03_02"); //Wes' bread I eat of the' song I sing.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Abgabe_15_03"); //I hear....
 };
 
 FUNC VOID Info_Mod_PennerVater_Schlusssatz()
 {
-	AI_Output(self, hero, "Info_Mod_PennerVater_Schlusssatz_03_00"); //Frisch gewagt ist halb gewonnen. Reisende soll man nicht aufhalten.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Schlusssatz_03_00"); //Freshly ventured is half the battle. Don't stop travelers.
 };
 
 INSTANCE Info_Mod_PennerVater_Hi (C_INFO)
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_PennerVater_Hi (C_INFO)
 	information	= Info_Mod_PennerVater_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Guten Tag, alter Mann.";
+	description	= "Good afternoon, old man.";
 };
 
 FUNC INT Info_Mod_PennerVater_Hi_Condition()
@@ -73,21 +73,21 @@ FUNC VOID Info_Mod_PennerVater_Hi_Info()
 {
 	Info_Mod_PennerVater_Gruss();
 
-	AI_Output(hero, self, "Info_Mod_PennerVater_Hi_15_00"); //Seine Frau ...
-	AI_Output(self, hero, "Info_Mod_PennerVater_Hi_03_01"); //Früh gefreit hat nie gereut.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Hi_15_02"); //... ist sterbenskrank. Er braucht etwas Geld für die Überfahrt.
-	AI_Output(self, hero, "Info_Mod_PennerVater_Hi_03_03"); //Spare in der Zeit, dann hast du in der Not.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Hi_15_04"); //Wohl wahr! Aber vielleicht hast du doch ein paar Goldstücke ...
+	AI_Output(hero, self, "Info_Mod_PennerVater_Hi_15_00"); //His wife....
+	AI_Output(self, hero, "Info_Mod_PennerVater_Hi_03_01"); //Early morning free never did.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Hi_15_02"); //... is dying. He needs some money for the crossing.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Hi_03_03"); //Save your time and you'll be in trouble.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Hi_15_04"); //True! But maybe you do have some gold pieces...
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 2);
 
-	AI_Output(self, hero, "Info_Mod_PennerVater_Hi_03_05"); //Der Spatz in der Hand ist besser, als die Taube auf dem Dach.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Hi_15_06"); //Sagst du. Ich weiß nicht ...
-	AI_Output(self, hero, "Info_Mod_PennerVater_Hi_03_07"); //Wer die Münze nicht ehrt, ist des Schatzes nicht wert.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Hi_03_05"); //The sparrow in the hand is better than the dove on the roof.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Hi_15_06"); //Says you. I don't know....
+	AI_Output(self, hero, "Info_Mod_PennerVater_Hi_03_07"); //Whoever does not honor the coin is not worthy of the treasure.
 
 	Info_Mod_PennerVater_Liste();
 
-	B_LogEntry	(TOPIC_MOD_JG_PENNERSVATER, "Ist schon ein komischer Kauz, der Alte. Ich möchte wissen, wo der die ganzen Sprichwörter her hat. Mal sehen, ob ich alles dabei habe, was der alte Herr will: Brot, Wurst, Eintopf, Wein, Käse und einen Apfel. Sonst muss ich noch mal zum Händler.");
+	B_LogEntry	(TOPIC_MOD_JG_PENNERSVATER, "It's a funny fellow, the old man. I want to know where he got all those sayings. Let's see if I have everything the old man wants: bread, sausage, stew, wine, cheese and an apple. I'll have to go back to the dealer.");
 };
 
 INSTANCE Info_Mod_PennerVater_Aufgabe (C_INFO)
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_PennerVater_Aufgabe (C_INFO)
 	information	= Info_Mod_PennerVater_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier. Essen und trinken hält Leib und Seele zusammen.";
+	description	= "Here. Eating and drinking keeps body and soul together.";
 };
 
 FUNC INT Info_Mod_PennerVater_Aufgabe_Condition()
@@ -119,16 +119,16 @@ FUNC VOID Info_Mod_PennerVater_Aufgabe_Info()
 {
 	Info_Mod_PennerVater_Abgabe();
 
-	AI_Output(self, hero, "Info_Mod_PennerVater_Aufgabe_03_00"); //Stille Wasser sind tief. Und laute fallen.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Aufgabe_15_01"); //Was meinst du damit?
-	AI_Output(self, hero, "Info_Mod_PennerVater_Aufgabe_03_02"); //Die besten Fische schwimmen am Grund.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Aufgabe_15_03"); //Aha! Aber ich kapiere nicht.
-	AI_Output(self, hero, "Info_Mod_PennerVater_Aufgabe_03_04"); //Es ist noch kein Meister vom Himmel gefallen.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Aufgabe_15_05"); //Aber Wasser, oder?
+	AI_Output(self, hero, "Info_Mod_PennerVater_Aufgabe_03_00"); //Silent waters are deep. And loud falling.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Aufgabe_15_01"); //What do you mean?
+	AI_Output(self, hero, "Info_Mod_PennerVater_Aufgabe_03_02"); //The best fish swim at the bottom.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Aufgabe_15_03"); //Aha! But I don't get it.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Aufgabe_03_04"); //No master has fallen from heaven yet.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Aufgabe_15_05"); //But water, right?
 
 	Info_Mod_PennerVater_Schlusssatz();
 
-	B_LogEntry	(TOPIC_MOD_JG_PENNERSVATER, "Hm ... tiefes Wasser ... laut fallen ... von oben ... das Beste am Grund ... Wasser fallen ... Hm ...");
+	B_LogEntry	(TOPIC_MOD_JG_PENNERSVATER, "Hm... deep water... fall out loud.... top-down the best at the bottom... Falling water.... Hm...");
 	
 	Wld_InsertItem(ItMi_Piratenschatz, "FP_ITEM_PIRATENSCHATZ");
 };
@@ -141,7 +141,7 @@ INSTANCE Info_Mod_PennerVater_Kimon (C_INFO)
 	information	= Info_Mod_PennerVater_Kimon_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Guten Tag, alter Mann.";
+	description	= "Good afternoon, old man.";
 };
 
 FUNC INT Info_Mod_PennerVater_Kimon_Condition()
@@ -156,22 +156,22 @@ FUNC VOID Info_Mod_PennerVater_Kimon_Info()
 {
 	Info_Mod_PennerVater_Gruss();
 
-	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon_15_00"); //Er hat mich hierher geschickt ...
-	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon_03_01"); //Hier ist so gut wie anderswo.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon_15_02"); //... und gesagt ...
-	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon_03_03"); //Lügen haben kurze Beine.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon_15_04"); //(laut) ... er hat gesagt, dass du Freudenspender besitzt.
-	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon_03_05"); //Reich Besitz macht Seele arm.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon_15_00"); //He sent me here...
+	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon_03_01"); //Here is as good as anywhere else.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon_15_02"); //... and said...
+	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon_03_03"); //Lies have short legs.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon_15_04"); //(loudly) he said that you have glee dispensers.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon_03_05"); //Rich possession makes soul poor.
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon_15_06"); //(zu sich selbst) So komme ich nicht weiter. Mal anders fragen.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon_15_06"); //I can't go on like this. Ask differently.
 
 	AI_TurnToNpc	(self, hero);
 
 	Info_Mod_PennerVater_Liste();
 
-	B_LogEntry	(TOPIC_MOD_KIMON_FREUDENSPENDER, "Ist schon ein komischer Kauz, der Alte. Ich möchte wissen, wo der die ganzen Sprichwörter her hat. Mal sehen, ob ich alles dabei habe, was der alte Herr will: Brot, Wurst, Eintopf, Wein, Käse und einen Apfel. Sonst muss ich noch mal zum Händler.");
+	B_LogEntry	(TOPIC_MOD_KIMON_FREUDENSPENDER, "It's a funny fellow, the old man. I want to know where he got all those sayings. Let's see if I have everything the old man wants: bread, sausage, stew, wine, cheese and an apple. I'll have to go back to the dealer.");
 };
 
 INSTANCE Info_Mod_PennerVater_Kimon2 (C_INFO)
@@ -182,7 +182,7 @@ INSTANCE Info_Mod_PennerVater_Kimon2 (C_INFO)
 	information	= Info_Mod_PennerVater_Kimon2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier. Essen und trinken hält Leib und Seele zusammen.";
+	description	= "Here. Eating and drinking keeps body and soul together.";
 };
 
 FUNC INT Info_Mod_PennerVater_Kimon2_Condition()
@@ -203,19 +203,19 @@ FUNC VOID Info_Mod_PennerVater_Kimon2_Info()
 {
 	Info_Mod_PennerVater_Abgabe();
 
-	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon2_03_00"); //Wer Freude spendet hat den Schlüssel zum Glück.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon2_15_01"); //Aha. Du hast also den Schlüssel? Kann ich ihn haben?
-	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon2_03_02"); //Dem Reichen ist die Truhe voll.
-	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon2_15_03"); //Hmm. (laut) Dem Frommem gebührt der Schlüssel ins Himmelreich.
-	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon2_03_04"); //Und nur der Kluge erreicht sein Ziel.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon2_03_00"); //Whoever gives joy has the key to happiness.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon2_15_01"); //Uh-huh. So you have the key? Can I have it?
+	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon2_03_02"); //The rich man's trunk is full.
+	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon2_15_03"); //Hmm. (according to) The good man deserves the key to the kingdom of heaven.
+	AI_Output(self, hero, "Info_Mod_PennerVater_Kimon2_03_04"); //And only the wise man achieves his goal.
 
 	B_GiveInvItems	(self, hero, ItKe_PennerVaterFreudenspender, 1);
 
-	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon2_15_05"); //Kannst du mir noch mehr verraten?
+	AI_Output(hero, self, "Info_Mod_PennerVater_Kimon2_15_05"); //Can you tell me any more?
 
 	Info_Mod_PennerVater_Schlusssatz();
 
-	B_LogEntry	(TOPIC_MOD_KIMON_FREUDENSPENDER, "Hm, ein komplizierter Mensch. Aber die Freudenspender hab ich. Kimon wird Augen machen.");
+	B_LogEntry	(TOPIC_MOD_KIMON_FREUDENSPENDER, "A complicated man. But I've got the bon vivants. Kimon will be surprised.");
 };
 
 INSTANCE Info_Mod_PennerVater_EXIT (C_INFO)

@@ -18,7 +18,7 @@ INSTANCE PC_OpferschaleDT_Schutzzauber (C_INFO)
 	information	= PC_OpferschaleDT_Schutzzauber_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schutzzauber erlangen";
+	description	= "obtain protection spells";
 };
 
 FUNC INT PC_OpferschaleDT_Schutzzauber_Condition()

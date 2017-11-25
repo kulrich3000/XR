@@ -29,68 +29,68 @@ FUNC VOID Info_Mod_Froppi_Hi_Info()
 
 	AI_TurnToNpc	(Ork, hero);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_00"); //Aha, wen haben wir denn da?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_00"); //Well, look who's here.
 
 	TRIA_Next(Ork);
 
 	AI_TurnToNpc	(Ork, Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_01"); //Ich weiß nicht, Boss. Vielleicht der Oberboss?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_01"); //I don't know, boss. Maybe the supremo?
 
 	TRIA_Next(Froppi);
 
 	AI_TurnToNpc	(Froppi, Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_02"); //Nein, der ist dicker. Das ist jemand, der ehrlichen Schatzsuchern in die Arbeit pfuschen will.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_02"); //No, it's thicker. That's someone who wants to toss honest treasure hunters into work.
 
 	TRIA_Next(Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_03"); //Und was machen wir mit dem?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_03"); //And what do we do with him?
 
 	TRIA_Next(Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_04"); //Rate mal.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_04"); //Guess what?
 
 	TRIA_Next(Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_05"); //Ahhhhh, ich verstehe. Wir stellen ihn kalt.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_05"); //Ahhhhhh, I see. We'll put him on ice.
 
 	TRIA_Next(Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_06"); //Das heißt kalt machen, verstanden?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_06"); //It's cold, you understand?
 
 	TRIA_Next(Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_07"); //Mutter hat immer kalt stellen gesagt.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_07"); //Mother always said to cool it.
 
 	TRIA_Next(Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_08"); //Die hat auch nicht vom Töten gesprochen!
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_08"); //She didn't talk about killing, either!
 
 	TRIA_Next(Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_09"); //Du hast natürlich wie immer Recht, Boss. Was machen wir jetzt noch mal?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_09"); //You're right as usual, of course, boss. What are we gonna do again?
 
 	TRIA_Next(Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_10"); //Wir unterziehen den Störer einem Kreuzverhör.
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_11"); //Wenn er uns irgendeinen Grund gibt, ihn nicht zu mögen, machen wir ihn kalt.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_10"); //We'll cross-examine the troublemaker.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_11"); //If he gives us any reason not to like him, we'll kill him.
 
 	AI_TurnToNpc	(Froppi, hero);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_12"); //Hast du gehört, du Held?
-	AI_Output(hero, self, "Info_Mod_Froppi_Hi_15_13"); //Ja.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_09_12"); //You hear that, hero?
+	AI_Output(hero, self, "Info_Mod_Froppi_Hi_15_13"); //Yeah.
 
 	TRIA_Next(Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_14"); //Magst du Käsekuchen?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_18_14"); //Do you like cheesecake?
 
 	TRIA_Finish();
 
 	Info_ClearChoices	(Info_Mod_Froppi_Hi);
 
-	Info_AddChoice	(Info_Mod_Froppi_Hi, "Nein.", Info_Mod_Froppi_Hi_B);
-	Info_AddChoice	(Info_Mod_Froppi_Hi, "Ja.", Info_Mod_Froppi_Hi_A);
+	Info_AddChoice	(Info_Mod_Froppi_Hi, "No.", Info_Mod_Froppi_Hi_B);
+	Info_AddChoice	(Info_Mod_Froppi_Hi, "Yeah.", Info_Mod_Froppi_Hi_A);
 };
 
 FUNC VOID Info_Mod_Froppi_Hi_B()
@@ -106,64 +106,64 @@ FUNC VOID Info_Mod_Froppi_Hi_B()
 	AI_TurnToNpc	(Ork, hero);
 	AI_TurnToNpc	(Froppi, hero);
 
-	AI_Output(hero, self, "Info_Mod_Froppi_Hi_B_15_00"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_01"); //Ich auch nicht. Niemand mag Käsekuchen.
+	AI_Output(hero, self, "Info_Mod_Froppi_Hi_B_15_00"); //No.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_01"); //Me neither. Nobody likes cheesecake.
 
 	TRIA_Next(Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_02"); //Was war das denn für eine bescheuerte Frage?!
-	AI_Output(hero, self, "Info_Mod_Froppi_Hi_B_15_03"); //Darf ich auch mal was sagen?
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_04"); //Kommt nicht in Frage, ich bin hier der Wortführer.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_02"); //What kind of stupid question was that?!
+	AI_Output(hero, self, "Info_Mod_Froppi_Hi_B_15_03"); //Can I say something?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_04"); //No way, I'm the spokesman here.
 
 	TRIA_Next(Ork);
 
 	AI_TurnToNpc	(Ork, Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_05"); //Und ich.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_05"); //And I.
 
 	TRIA_Next(Froppi);
 
 	AI_TurnToNpc	(Froppi, Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_06"); //Nein, du bist nur der Führer der Dummköpfe.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_06"); //No, you're just the leader of the fools.
 
 	TRIA_Next(Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_07"); //Ja, Boss.
-	AI_Output(hero, self, "Info_Mod_Froppi_Hi_B_15_08"); //Wieso lässt du dir das Gehabe von diesem aufgeblasenen Zwerg eigentlich gefallen?
-	AI_Output(hero, self, "Info_Mod_Froppi_Hi_B_15_09"); //Würdest du ihn nicht viel lieber verhauen?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_07"); //Yes, boss.
+	AI_Output(hero, self, "Info_Mod_Froppi_Hi_B_15_08"); //Why do you put up with the attitude of this pompous little dwarf?
+	AI_Output(hero, self, "Info_Mod_Froppi_Hi_B_15_09"); //Wouldn't you rather beat him up?
 
 	AI_TurnToNpc	(Ork, hero);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_10"); //Das stimmt, aber er ist ja mein Vater.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_10"); //That's right, but he's my father.
 
 	TRIA_Next(Froppi);
 
 	AI_TurnToNpc	(Froppi, Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_11"); //Genug gelabert. Jetzt hört ihr wieder auf mich!
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_11"); //Enough babbling. Now you listen to me again!
 
 	TRIA_Next(Ork);
 
 	AI_TurnToNpc	(Ork, Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_12"); //Nein, Boss, jetzt reicht es wirklich.
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_13"); //Ich glaube, diese Person ist nett und ich kann mich mit ihr unterhalten.
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_14"); //Geh doch und such deine blöden Schätze allein.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_12"); //No, boss, that's really enough.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_13"); //I think this person is nice and I can talk to her.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_14"); //Why don't you go find your stupid treasures by yourself?
 
 	TRIA_Next(Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_15"); //Was?! Du wirst aufmüpfig? Das gibt eine Tracht Prügel!
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_15"); //What?! You're getting rebellious? That's a good one!
 
 	TRIA_Next(Ork);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_16"); //Ich glaube nicht, dass du dich das trauen würdest.
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_17"); //Du brauchst mich ja bloß als Leibwache, weil du selbst zu schwach bist.
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_18"); //Du hast wohl gedacht, ich merke das nicht, was?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_16"); //I don't think you'd dare do that.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_17"); //You just need me as a bodyguard because you're too weak yourself.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_18_18"); //You thought I didn't notice, huh?
 
 	TRIA_Next(Froppi);
 
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_19"); //Du ungezogener Bengel! Warte nur!
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_B_09_19"); //You naughty boy! You just wait!
 
 	Froppi.guild = GIL_STRF;
 	Npc_SetTrueGuild (Froppi, GIL_STRF);
@@ -187,10 +187,10 @@ FUNC VOID Info_Mod_Froppi_Hi_A()
 
 	AI_TurnToNpc	(Froppi, hero);
 
-	AI_Output(hero, self, "Info_Mod_Froppi_Hi_A_15_00"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_A_09_01"); //Was war das denn für eine bescheuerte Frage? Wer mag schon Käsekuchen?
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_A_09_02"); //Den Kerl würde ich glatt umbringen!
-	AI_Output(self, hero, "Info_Mod_Froppi_Hi_A_09_03"); //(Pause, ruft) Scheiße, ja!
+	AI_Output(hero, self, "Info_Mod_Froppi_Hi_A_15_00"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_A_09_01"); //What kind of stupid question was that? Who likes cheesecake?
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_A_09_02"); //I'd kill that guy!
+	AI_Output(self, hero, "Info_Mod_Froppi_Hi_A_09_03"); //Shit, yeah!
 
 	TRIA_Finish();
 

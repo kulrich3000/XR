@@ -2,7 +2,7 @@ instance Mod_1013_KGD_Hrungir_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Hrungir";
+	name 		=	"hungir";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_NONE;
 	level 		=	22;

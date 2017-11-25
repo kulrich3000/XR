@@ -15,15 +15,15 @@ FUNC INT Info_Mod_Brendan_Hi_Condition()
 
 FUNC VOID Info_Mod_Brendan_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_00"); //Ich danke dir! Du hast mir mein Leben gerettet. Einen Tag länger und ich wäre all zu gern vom Turm gesprungen.
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_01"); //Aber wo bleiben meine Manieren. Mein Name ist Brendan und ich stehe in deiner schuld.
-	AI_Output(hero, self, "Info_Mod_Brendan_Hi_15_02"); //Scheint eine ziemlich gefährliche Gegend zu sein. Das waren nicht wenige Wölfe.
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_03"); //Ja, stimmt, und am Pass scheint es auch nicht besser zu sein. Nachts kann man die Feuer der Orks unten im Tal vor dem Pass sehen.
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_04"); //Wir dachten die Orks aus dem Gebirge würden nur vereinzelt auftreten, aber mittlerweile sind sie am Pass überall anzutreffen.
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_05"); //Wir müssen den Kommander so bald wie möglich darüber informieren.
-	AI_Output(hero, self, "Info_Mod_Brendan_Hi_15_06"); //Dann lass uns dorthin aufbrechen, bevor noch mehr Wölfe oder Orks hier herkommen.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_00"); //Thank you, thank you! You saved my life. One day longer and I would have loved to have jumped from the tower.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_01"); //But where are my manners? My name is Brendan, and I'm indebted to you.
+	AI_Output(hero, self, "Info_Mod_Brendan_Hi_15_02"); //Seems like a pretty dangerous area. Those weren't just a few wolves.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_03"); //Yeah, that's right, and the pass doesn't seem any better. At night you can see the fire of the orcs down in the valley in front of the pass.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_04"); //We thought the orcs from the mountains would appear only occasionally, but now they can be found everywhere on the pass.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_05"); //We must inform the commander as soon as possible.
+	AI_Output(hero, self, "Info_Mod_Brendan_Hi_15_06"); //Then let's go there before more wolves or orcs get here.
 
-	B_LogEntry	(TOPIC_MOD_EIS_RAUESCHNEIDE, "Am Turm war nur noch Brendan am Leben. Ich muss ihn schleunigst zum Kommander zurückbringen.");
+	B_LogEntry	(TOPIC_MOD_EIS_RAUESCHNEIDE, "Only Brendan was still alive at the tower. I have to get him back to the commander's office as soon as possible.");
 
 	B_StartOtherRoutine	(self, "FOLLOW");
 	
@@ -50,14 +50,14 @@ FUNC INT Info_Mod_Brendan_RaueSchneide_Condition()
 
 FUNC VOID Info_Mod_Brendan_RaueSchneide_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brendan_RaueSchneide_06_00"); //Ich bleibe hier.
+	AI_Output(self, hero, "Info_Mod_Brendan_RaueSchneide_06_00"); //I'm staying here.
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Brendan_RaueSchneide_06_01"); //Wenn du etwas über Einhand- oder Zweihandkampf lernen willst, komm zu mir. Ich halte Wache im Aussichtsturm der Kaserne.
+		AI_Output(self, hero, "Info_Mod_Brendan_RaueSchneide_06_01"); //If you want to learn about one-handed or two-handed combat, come to me. I'll stand guard in the watch tower of the barracks.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_EISGEBIET, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_EISGEBIET, "Brendan kann mir den Umgang mit Ein- und Zweihändern zeigen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_EISGEBIET, "Brendan can show me how to handle one- and two-handed people.");
 	};
 
 	AI_StopProcessInfos	(self);
@@ -75,7 +75,7 @@ INSTANCE Info_Mod_Brendan_Lernen (C_INFO)
 	information	= Info_Mod_Brendan_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "I want to learn.";
 };
 
 FUNC INT Info_Mod_Brendan_Lernen_Condition()
@@ -89,7 +89,7 @@ FUNC INT Info_Mod_Brendan_Lernen_Condition()
 
 FUNC VOID Info_Mod_Brendan_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brendan_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Brendan_Lernen_15_00"); //I want to learn.
 
 	Info_ClearChoices	(Info_Mod_Brendan_Lernen);
 

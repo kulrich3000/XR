@@ -1,7 +1,7 @@
 instance Mod_7335_HS_Typ_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Nächstes Königliches Hunderfutter";
+	name 		= "Next Royal Dog Food";
 	guild 		= GIL_OUT;
 	id 			= 7335;
 	voice 		= 6;

@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Thorus_Hi_Condition()
 
 FUNC VOID Info_Mod_Thorus_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thorus_Hi_12_00"); //(stöhnt) Du?! Ich werde auch von nichts verschont!
-	AI_Output(hero, self, "Info_Mod_Thorus_Hi_15_01"); //Hallo, Thorus. Du hast es weit gebracht, wie ich sehe.
-	AI_Output(self, hero, "Info_Mod_Thorus_Hi_12_02"); //Wie man's nimmt. Innerhalb dieser vier Wände hört jeder auf mich, aber wie es draußen aussieht, weiß ich nicht.
-	AI_Output(hero, self, "Info_Mod_Thorus_Hi_15_03"); //Kannst du nicht raus?
-	AI_Output(self, hero, "Info_Mod_Thorus_Hi_12_04"); //Klar doch, jederzeit. Wenn ich das Risiko eingehen will, angegriffen oder beschossen zu werden.
-	AI_Output(self, hero, "Info_Mod_Thorus_Hi_12_05"); //Und glaub mir, das Risiko ist nicht sehr gering.
+	AI_Output(self, hero, "Info_Mod_Thorus_Hi_12_00"); //You?! I won't be spared!
+	AI_Output(hero, self, "Info_Mod_Thorus_Hi_15_01"); //Hello, Thorus. You've come a long way, I see.
+	AI_Output(self, hero, "Info_Mod_Thorus_Hi_12_02"); //How to take it. Within these four walls, everyone listens to me, but I don't know what it looks like outside.
+	AI_Output(hero, self, "Info_Mod_Thorus_Hi_15_03"); //Can't you get out?
+	AI_Output(self, hero, "Info_Mod_Thorus_Hi_12_04"); //Sure, anytime. If I want to take the risk of being attacked or shot at.
+	AI_Output(self, hero, "Info_Mod_Thorus_Hi_12_05"); //And believe me, the risk is not very small.
 };
 
 INSTANCE Info_Mod_Thorus_Schlecht (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Thorus_Schlecht (C_INFO)
 	information	= Info_Mod_Thorus_Schlecht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab gehört ihr braucht Hilfe.";
+	description	= "I heard you needed help.";
 };
 
 FUNC INT Info_Mod_Thorus_Schlecht_Condition()
@@ -51,22 +51,22 @@ FUNC VOID Info_Mod_Thorus_Schlecht_Info()
 
 	Info_ClearChoices	(Info_Mod_Thorus_Schlecht);
 
-	Info_AddChoice	(Info_Mod_Thorus_Schlecht, "Nein.", Info_Mod_Thorus_Schlecht_Nein);
-	Info_AddChoice	(Info_Mod_Thorus_Schlecht, "Ja.", Info_Mod_Thorus_Schlecht_Ja);
+	Info_AddChoice	(Info_Mod_Thorus_Schlecht, "No.", Info_Mod_Thorus_Schlecht_Nein);
+	Info_AddChoice	(Info_Mod_Thorus_Schlecht, "Yeah.", Info_Mod_Thorus_Schlecht_Ja);
 };
 
 FUNC VOID Info_Mod_Thorus_Schlecht_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Schlecht_Nein_15_00"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Thorus_Schlecht_Nein_12_01"); //Jeder Anwärter muss eine besondere Prüfung bestehen. Diese testet, ob wir dir vertrauen können.
+	AI_Output(hero, self, "Info_Mod_Thorus_Schlecht_Nein_15_00"); //No.
+	AI_Output(self, hero, "Info_Mod_Thorus_Schlecht_Nein_12_01"); //Each candidate must pass a special examination. She's testing whether we can trust you.
 
 	Info_ClearChoices	(Info_Mod_Thorus_Schlecht);
 };
 
 FUNC VOID Info_Mod_Thorus_Schlecht_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Schlecht_Ja_15_00"); //Ja, du meinst die Prüfung des Vetrauens.
-	AI_Output(self, hero, "Info_Mod_Thorus_Schlecht_Ja_12_01"); //Genau.
+	AI_Output(hero, self, "Info_Mod_Thorus_Schlecht_Ja_15_00"); //Yes, you mean the trial of trust.
+	AI_Output(self, hero, "Info_Mod_Thorus_Schlecht_Ja_12_01"); //Exactly.
 
 	Info_ClearChoices	(Info_Mod_Thorus_Schlecht);
 };
@@ -79,7 +79,7 @@ INSTANCE Info_Mod_Thorus_Pruefung (C_INFO)
 	information	= Info_Mod_Thorus_Pruefung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was soll ich für dich tun?";
+	description	= "What do you want me to do?";
 };
 
 FUNC INT Info_Mod_Thorus_Pruefung_Condition()
@@ -92,14 +92,14 @@ FUNC INT Info_Mod_Thorus_Pruefung_Condition()
 
 FUNC VOID Info_Mod_Thorus_Pruefung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Pruefung_15_00"); //Was soll ich für dich tun?
-	AI_Output(self, hero, "Info_Mod_Thorus_Pruefung_12_01"); //Irgendjemand stiehlt Güter aus dem Haus der Erzbarone, und ich will, dass du denjenigen findest und mir einen Beweis gegen ihn vorlegst.
-	AI_Output(hero, self, "Info_Mod_Thorus_Pruefung_15_02"); //Gut, gibt es Informationen über ihn?
-	AI_Output(self, hero, "Info_Mod_Thorus_Pruefung_12_03"); //Frag Alissandro, er hat alle Informationen dazu gesammelt.
+	AI_Output(hero, self, "Info_Mod_Thorus_Pruefung_15_00"); //What do you want me to do?
+	AI_Output(self, hero, "Info_Mod_Thorus_Pruefung_12_01"); //Someone is stealing goods from the House of the Archbarons, and I want you to find them and bring me proof against them.
+	AI_Output(hero, self, "Info_Mod_Thorus_Pruefung_15_02"); //Well, is there any information on him?
+	AI_Output(self, hero, "Info_Mod_Thorus_Pruefung_12_03"); //Ask Alissandro, he's gathered all the necessary information.
 
 	Log_CreateTopic	(TOPIC_MOD_PDV, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PDV, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PDV, "Irgendwer stiehlt von den Erzbaronen und da ich ja ein Vertrauenszeugnis ablegen muss, habe ich die Ehre, den Schuldigen zu finden. Der Erzbaron Alissandro wird mir die nötigen Informationen geben.");
+	B_LogEntry	(TOPIC_MOD_PDV, "Someone steals from the arch barons and since I have to give a certificate of trust, I have the honour of finding the culprit. The baron Alissandro will give me the necessary information.");
 };
 
 INSTANCE Info_Mod_Thorus_Diebe (C_INFO)
@@ -110,7 +110,7 @@ INSTANCE Info_Mod_Thorus_Diebe (C_INFO)
 	information	= Info_Mod_Thorus_Diebe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich weiß wer die Diebe sind.";
+	description	= "I know who the thieves are.";
 };
 
 FUNC INT Info_Mod_Thorus_Diebe_Condition()
@@ -123,14 +123,14 @@ FUNC INT Info_Mod_Thorus_Diebe_Condition()
 
 FUNC VOID Info_Mod_Thorus_Diebe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Diebe_15_00"); //Ich weiß wer die Diebe sind.
-	AI_Output(self, hero, "Info_Mod_Thorus_Diebe_12_01"); //Wer?
-	AI_Output(hero, self, "Info_Mod_Thorus_Diebe_15_02"); //Bloodwyn stiehlt de Sachen und Cutter steht Schmiere. Aber ich glaube, dass Cutter das nicht ganz freiwillig macht, denn er gab mir einen Hinweis, sie zu entlarven.
-	AI_Output(self, hero, "Info_Mod_Thorus_Diebe_12_03"); //Hast du denn auch Beweise?
-	AI_Output(hero, self, "Info_Mod_Thorus_Diebe_15_04"); //Nein, der Händler Fisk wollte mir erst Beweise liefern, wenn er von den Dieben sicher ist.
-	AI_Output(self, hero, "Info_Mod_Thorus_Diebe_12_05"); //Gut, wir lassen beide festhalten.
+	AI_Output(hero, self, "Info_Mod_Thorus_Diebe_15_00"); //I know who the thieves are.
+	AI_Output(self, hero, "Info_Mod_Thorus_Diebe_12_01"); //Who?
+	AI_Output(hero, self, "Info_Mod_Thorus_Diebe_15_02"); //Bloodwyn steals the stuff, and Cutter's on lookout. But I don't think that Cutter is doing it voluntarily, because he gave me a hint to expose them.
+	AI_Output(self, hero, "Info_Mod_Thorus_Diebe_12_03"); //Do you have any proof?
+	AI_Output(hero, self, "Info_Mod_Thorus_Diebe_15_04"); //No, the merchant Fisk wouldn't give me evidence until he was safe from the thieves.
+	AI_Output(self, hero, "Info_Mod_Thorus_Diebe_12_05"); //All right, we'll have them both held.
 
-	B_LogEntry	(TOPIC_MOD_PDV, "Gut, ich habe sie bei Thorus gemeldet. Er wird sie festhalten, bis ich einen Beweis habe.");
+	B_LogEntry	(TOPIC_MOD_PDV, "Well, I've reported them to Thorus. He'll hold her until I have proof.");
 
 	AI_Teleport	(Mod_943_GRD_Bloodwyn_MT, "OCC_CELLAR_BACK_RIGHT_CELL");
 	AI_Teleport	(Mod_1110_GRD_Cutter_MT, "OCC_CELLAR_BACK_LEFT_CELL");
@@ -151,7 +151,7 @@ INSTANCE Info_Mod_Thorus_Zettel (C_INFO)
 	information	= Info_Mod_Thorus_Zettel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe deine Beweise.";
+	description	= "I have your proof.";
 };
 
 FUNC INT Info_Mod_Thorus_Zettel_Condition()
@@ -165,28 +165,28 @@ FUNC INT Info_Mod_Thorus_Zettel_Condition()
 
 FUNC VOID Info_Mod_Thorus_Zettel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Zettel_15_00"); //Ich habe deine Beweise.
+	AI_Output(hero, self, "Info_Mod_Thorus_Zettel_15_00"); //I have your proof.
 	
 	B_GiveInvItems	(hero, self, ItWr_FisksNotiz, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Thorus_Zettel_12_01"); //Gut, Bloodwyn und Cutter sitzen im Kerker. Wir hoffen, wir werde erfahren, wer ihre Kontaktpersonen sind.
+	AI_Output(self, hero, "Info_Mod_Thorus_Zettel_12_01"); //Well, Bloodwyn and Cutter are in the dungeon. We hope we will find out who their contact persons are.
 
 	if (Mod_AnzahlNebengilden < MaxNebengilden)
 	&& (Banditen_Dabei == FALSE)
 	&& (hero.guild != GIL_MIL)
 	&& (KG_Dabei == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Thorus_Zettel_12_02"); //Tja, jetzt ist ja mehr als ein Platz bei den Gardisten für dich freigeworden. Wenn du willst, kannst du uns beitreten.
+		AI_Output(self, hero, "Info_Mod_Thorus_Zettel_12_02"); //Well, there's more than one spot left with the guards for you now. If you want, you can join us.
 
-		B_LogEntry	(TOPIC_MOD_PDV, "Thorus hat Cutter und Bloodwyn eingebuchtet. Ich kann jetzt Gardist werden.");
+		B_LogEntry	(TOPIC_MOD_PDV, "Thorus has locked up Cutter and Bloodwyn. I can become a guardsman now.");
 
 		B_Göttergefallen(2, 1);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Thorus_Zettel_12_03"); //Leider können wir dich nicht mehr aufnehmen.
+		AI_Output(self, hero, "Info_Mod_Thorus_Zettel_12_03"); //Unfortunately, we can't take you in anymore.
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_PDV, LOG_SUCCESS);
@@ -204,7 +204,7 @@ INSTANCE Info_Mod_Thorus_Aufnahme (C_INFO)
 	information	= Info_Mod_Thorus_Aufnahme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will Gardist werden.";
+	description	= "I want to be a guardsman.";
 };
 
 FUNC INT Info_Mod_Thorus_Aufnahme_Condition()
@@ -224,11 +224,11 @@ FUNC VOID Info_Mod_Thorus_Aufnahme_Info()
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_54);
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_65);
 	
-	AI_Output(hero, self, "Info_Mod_Thorus_Aufnahme_15_00"); //Ich will Gardist werden.
-	AI_Output(self, hero, "Info_Mod_Thorus_Aufnahme_12_01"); //Dann willkommen bei der Garde. Hier hast du deine Rüstung.
+	AI_Output(hero, self, "Info_Mod_Thorus_Aufnahme_15_00"); //I want to be a guardsman.
+	AI_Output(self, hero, "Info_Mod_Thorus_Aufnahme_12_01"); //Then welcome to the guard. Here's your armour.
 
 	Log_CreateTopic	(TOPIC_MOD_NEBENGILDEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "Thorus hat mich bei den Gardisten des alten Lagers aufgenommen.");
+	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "Thorus has taken me in with the guards of the old camp.");
 
 	CreateInvItems	(self, GRD_ARMOR_L, 1);
 	B_GiveInvItems	(self, hero, GRD_ARMOR_L, 1);
@@ -248,7 +248,7 @@ INSTANCE Info_Mod_Thorus_Arena (C_INFO)
 	information	= Info_Mod_Thorus_Arena_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du etwas zu tun für mich?";
+	description	= "Do you have something to do for me?";
 };
 
 FUNC INT Info_Mod_Thorus_Arena_Condition()
@@ -262,16 +262,16 @@ FUNC INT Info_Mod_Thorus_Arena_Condition()
 
 FUNC VOID Info_Mod_Thorus_Arena_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Arena_15_00"); //Hast du etwas zu tun für mich?
-	AI_Output(self, hero, "Info_Mod_Thorus_Arena_12_01"); //Ja, es gibt Probleme in der Arena. Ich kann es zwar nicht beweisen, aber einer der Kämpfer kämpft mit unfairen Mitteln.
-	AI_Output(hero, self, "Info_Mod_Thorus_Arena_15_02"); //Was ist denn los mit ihm?
-	AI_Output(self, hero, "Info_Mod_Thorus_Arena_12_03"); //Seit Tagen hat ihn keiner mehr besiegt, und das, obwohl er nicht sehr geschickt kämpft. Ich will, dass du dir das mal ansiehst.
-	AI_Output(hero, self, "Info_Mod_Thorus_Arena_15_04"); //Gut.
-	AI_Output(self, hero, "Info_Mod_Thorus_Arena_12_05"); //Gleich findet einer seiner Kämpfe statt. Das solltest du dir vielleicht ansehen.
+	AI_Output(hero, self, "Info_Mod_Thorus_Arena_15_00"); //Do you have something to do for me?
+	AI_Output(self, hero, "Info_Mod_Thorus_Arena_12_01"); //Yes, there are problems in the arena. I can't prove it, but one of the fighters is fighting with unfair means.
+	AI_Output(hero, self, "Info_Mod_Thorus_Arena_15_02"); //What's the matter with him?
+	AI_Output(self, hero, "Info_Mod_Thorus_Arena_12_03"); //No one has defeated him for days, even though he doesn't fight very skillfully. I want you to take a look at this.
+	AI_Output(hero, self, "Info_Mod_Thorus_Arena_15_04"); //Good.
+	AI_Output(self, hero, "Info_Mod_Thorus_Arena_12_05"); //One of his fights is about to take place. You might want to take a look at this.
 
 	Log_CreateTopic	(TOPIC_MOD_AL_ARENA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_AL_ARENA, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_AL_ARENA, "Thorus meinte, ein Unbekannter, der in der Arena kämpft, wurde trotz seiner Ungeschicklichkeit seit Tagen nicht mehr besiegt. Ich glaube, dass sehe ich mir mal an.");
+	B_LogEntry	(TOPIC_MOD_AL_ARENA, "Thorus said that a stranger who fights in the arena has not been defeated for days, despite his clumsiness. I think I'll take a look at that.");
 
 	B_StartOtherRoutine	(Mod_962_STT_Scatty_MT,	"ARENAFIGHT");
 	B_StartOtherRoutine	(Mod_1871_TPL_GorKaranto_MT, "ARENAFIGHT");
@@ -286,7 +286,7 @@ INSTANCE Info_Mod_Thorus_Verloren (C_INFO)
 	information	= Info_Mod_Thorus_Verloren_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Beim Kampf mit dem Unbekannten ...";
+	description	= "When fighting the unknown...";
 };
 
 FUNC INT Info_Mod_Thorus_Verloren_Condition()
@@ -299,10 +299,10 @@ FUNC INT Info_Mod_Thorus_Verloren_Condition()
 
 FUNC VOID Info_Mod_Thorus_Verloren_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Verloren_15_00"); //Beim Kampf mit dem Unbekannte wurde ich plötzlich schwächer, obwohl er mich nicht angegriffen hat.
-	AI_Output(self, hero, "Info_Mod_Thorus_Verloren_12_01"); //Und was hilft uns das? Ich würde sagen, du beobachtest den Kerl etwas, und wenn er sich verdächtig macht, gehst du ihm auf den Grund.
+	AI_Output(hero, self, "Info_Mod_Thorus_Verloren_15_00"); //In the fight with the unknown I suddenly became weaker, although he did not attack me.
+	AI_Output(self, hero, "Info_Mod_Thorus_Verloren_12_01"); //And what good is that gonna do us? I'd say you're watching this guy, and if he gets suspicious, you're gonna get to the bottom of him.
 
-	B_LogEntry	(TOPIC_MOD_AL_ARENA, "Thorus hat es nicht gerade weitergeholfen.");
+	B_LogEntry	(TOPIC_MOD_AL_ARENA, "Thorus didn't exactly help.");
 
 	B_StartOtherRoutine	(Mod_1870_EBR_Alissandro_MT, "UNBEKANNTER");
 
@@ -318,7 +318,7 @@ INSTANCE Info_Mod_Thorus_Botschaft (C_INFO)
 	information	= Info_Mod_Thorus_Botschaft_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab Informationen gefunden.";
+	description	= "I found some information.";
 };
 
 FUNC INT Info_Mod_Thorus_Botschaft_Condition()
@@ -333,21 +333,21 @@ FUNC INT Info_Mod_Thorus_Botschaft_Condition()
 
 FUNC VOID Info_Mod_Thorus_Botschaft_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Botschaft_15_00"); //Hier, diese Spruchrollen und diese Botschaft habe ich in der Hütte des Unbekannten gefunden.
+	AI_Output(hero, self, "Info_Mod_Thorus_Botschaft_15_00"); //Here, I found these roles and this message in the hut of the unknown.
 
 	Npc_RemoveInvItems	(hero, ItWr_DraganNachricht, 1);
 	Npc_RemoveInvItems	(hero, ItSc_Schwaechen, 15);
 	
-	B_ShowGivenThings	("Botschaft und Schwächenspruchrollen gegeben");
+	B_ShowGivenThings	("Message and weakness roles given");
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Thorus_Botschaft_12_01"); //Aha, also Paran und Dragan sind es. Hätte ich ihnen nicht zugetraut.
-	AI_Output(hero, self, "Info_Mod_Thorus_Botschaft_15_02"); //Wer sind Paran und Dragan?
-	AI_Output(self, hero, "Info_Mod_Thorus_Botschaft_12_03"); //Zwei kleine Trickdiebe, die sich vor einiger Zeit im Lager rumtrieben. Sie wollten die Leute im Lager um ihre Habseligkeiten erleichtern. Dann haben die Gardisten es bemerkt und sie verbannt.
-	AI_Output(self, hero, "Info_Mod_Thorus_Botschaft_12_04"); //Nun, jetzt wo wir die Spruchrollen haben, kannst du ihn noch mal herausfordern.
+	AI_Output(self, hero, "Info_Mod_Thorus_Botschaft_12_01"); //So it's Paran and Dragan. I wouldn't have thought they could.
+	AI_Output(hero, self, "Info_Mod_Thorus_Botschaft_15_02"); //Who are Paran and Dragan?
+	AI_Output(self, hero, "Info_Mod_Thorus_Botschaft_12_03"); //Two little trick thieves hanging around the camp a while ago. They wanted to relieve the camp's people of their belongings. Then the guards noticed it and banished them.
+	AI_Output(self, hero, "Info_Mod_Thorus_Botschaft_12_04"); //Well, now that we have the spell rolls, you can challenge him again.
 
-	B_LogEntry	(TOPIC_MOD_AL_ARENA, "Thorus sagte, dass es sich bei dem Unbekannten um nichts als einen kleinen Tagedieb handelt. Jetzt werde ich keine Probleme mehr haben, ihn zu besiegen.");
+	B_LogEntry	(TOPIC_MOD_AL_ARENA, "Thorus said the stranger was nothing but a petty thief. Now I won't have any more trouble defeating him.");
 };
 
 INSTANCE Info_Mod_Thorus_ParanWeg (C_INFO)
@@ -358,7 +358,7 @@ INSTANCE Info_Mod_Thorus_ParanWeg (C_INFO)
 	information	= Info_Mod_Thorus_ParanWeg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Paran und Dragan werden keinen Ärger mehr machen.";
+	description	= "Paran and Dragan won't cause any more trouble.";
 };
 
 FUNC INT Info_Mod_Thorus_ParanWeg_Condition()
@@ -371,8 +371,8 @@ FUNC INT Info_Mod_Thorus_ParanWeg_Condition()
 
 FUNC VOID Info_Mod_Thorus_ParanWeg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_ParanWeg_15_00"); //Paran und Dragan werden keinen Ärger mehr machen.
-	AI_Output(self, hero, "Info_Mod_Thorus_ParanWeg_12_01"); //Gut, hier, die Spruchrollen kannst du behalten.
+	AI_Output(hero, self, "Info_Mod_Thorus_ParanWeg_15_00"); //Paran and Dragan won't cause any more trouble.
+	AI_Output(self, hero, "Info_Mod_Thorus_ParanWeg_12_01"); //Well, here, you can keep the roles.
 
 	CreateInvItems	(self, ItSc_Schwaechen, 15);
 	B_GiveInvItems	(self, hero, ItSc_Schwaechen, 15);
@@ -404,22 +404,22 @@ FUNC INT Info_Mod_Thorus_FrischeLuft_Condition()
 
 FUNC VOID Info_Mod_Thorus_FrischeLuft_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_00"); //Ich glaube es wird Zeit, dass du mal frische Luft schnappst. Ich hätte eine Aufgabe für dich.
-	AI_Output(hero, self, "Info_Mod_Thorus_FrischeLuft_15_01"); //Um was geht's?
-	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_02"); //Du wirst in das neue Lager gehen und einen von Lees Offizieren entführen. Sein Name ist Orik.
-	AI_Output(hero, self, "Info_Mod_Thorus_FrischeLuft_15_03"); //Was? Es wäre Selbstmord alleine ins neue Lager zu gehen. Und dann auch noch jemanden daraus zu entführen.
-	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_04"); //Schon gut, Arto wird dich begleiten. Er wird auch die Mission leiten.
-	AI_Output(hero, self, "Info_Mod_Thorus_FrischeLuft_15_05"); //Warum wird ausgerechnet er die Mission leiten?
-	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_06"); //Weil er Erzbaron ist und du Gardist.
-	AI_Output(hero, self, "Info_Mod_Thorus_FrischeLuft_15_07"); //Verstehe.
-	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_08"); //Gut, dann wünsche ich dir viel Glück. Hier ist eine Banditenrüstung. Mit der wird man dich nicht erkennen.
+	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_00"); //I think it's time for you to get some fresh air. I have a job for you.
+	AI_Output(hero, self, "Info_Mod_Thorus_FrischeLuft_15_01"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_02"); //You will go to the new camp and kidnap one of Lee's officers. His name is Orik.
+	AI_Output(hero, self, "Info_Mod_Thorus_FrischeLuft_15_03"); //What? It would be suicide to go to the new camp alone. And taking someone out of it.
+	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_04"); //It's all right, Arto will go with you. He will also lead the mission.
+	AI_Output(hero, self, "Info_Mod_Thorus_FrischeLuft_15_05"); //Why is he heading the mission?
+	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_06"); //Because he's Erzbaron and you're a guardsman.
+	AI_Output(hero, self, "Info_Mod_Thorus_FrischeLuft_15_07"); //I see.
+	AI_Output(self, hero, "Info_Mod_Thorus_FrischeLuft_12_08"); //Well, good luck, then I wish you the best of luck. Here's some bandit armor. They won't recognize you with this one.
 
 	CreateInvItems	(self, ItAr_BDT_M_01, 1);
 	B_GiveInvItems	(self, hero, ItAr_BDT_M_01, 1);
 
 	Log_CreateTopic	(TOPIC_MOD_AL_ORIK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_AL_ORIK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_AL_ORIK, "Thorus hat mir den Auftrag gegeben, mit Arto den Söldner Orik zu entführen. Er hat mir zur Tarnung eine Banditenrüstung gegeben.");
+	B_LogEntry	(TOPIC_MOD_AL_ORIK, "Thorus told me to take Orik, the mercenary, with Arto. He gave me a bandit's armor for cover.");
 };
 
 INSTANCE Info_Mod_Thorus_OrikDabei (C_INFO)
@@ -430,7 +430,7 @@ INSTANCE Info_Mod_Thorus_OrikDabei (C_INFO)
 	information	= Info_Mod_Thorus_OrikDabei_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wir haben Orik.";
+	description	= "We have Orik.";
 };
 
 FUNC INT Info_Mod_Thorus_OrikDabei_Condition()
@@ -445,14 +445,14 @@ FUNC INT Info_Mod_Thorus_OrikDabei_Condition()
 
 FUNC VOID Info_Mod_Thorus_OrikDabei_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_OrikDabei_15_00"); //Wir haben Orik, aber ich vermute, dass das Neue Lager nicht erfreut sein wird.
-	AI_Output(self, hero, "Info_Mod_Thorus_OrikDabei_12_01"); //Ja, ich weiß. Damit war zu rechnen. Aber ich habe die Lage unter Kontrolle. Wir werden, im Falle eines Angriffs, das Lager verschliessen.
-	AI_Output(self, hero, "Info_Mod_Thorus_OrikDabei_12_02"); //Hier hast du deine Belohnung.
+	AI_Output(hero, self, "Info_Mod_Thorus_OrikDabei_15_00"); //We have Orik, but I suspect the New Camp will not be pleased.
+	AI_Output(self, hero, "Info_Mod_Thorus_OrikDabei_12_01"); //Yeah, I know. That was to be expected. But I have the situation under control. We're going to lock the camp in case of an attack.
+	AI_Output(self, hero, "Info_Mod_Thorus_OrikDabei_12_02"); //Here's your reward.
 
 	CreateInvItems	(hero, ItMi_Gold, 500);
 	CreateInvItems	(hero, GRD_ARMOR_M, 1);
 
-	B_ShowGivenThings	("500 Gold und Garderüstung erhalten");
+	B_ShowGivenThings	("500 Gold and cloakroom armour received");
 
 	var C_Item itm;
 	
@@ -468,7 +468,7 @@ FUNC VOID Info_Mod_Thorus_OrikDabei_Info()
 
 	Npc_RemoveInvItems	(hero, ItAr_BDT_M_01, 1);
 
-	B_LogEntry	(TOPIC_MOD_AL_ORIK, "Wir haben Orik Thorus übergeben, allerdings könnte es jetzt Probleme mit dem Neuen Lager geben.");
+	B_LogEntry	(TOPIC_MOD_AL_ORIK, "We handed over Orik Thorus, but there may be problems with the new camp now.");
 	B_SetTopicStatus	(TOPIC_MOD_AL_ORIK, LOG_SUCCESS);
 
 	AI_Teleport	(Mod_1266_SLD_Orik_MT, "OCC_CELLAR_FRONT_RIGHT_CELL");
@@ -487,7 +487,7 @@ INSTANCE Info_Mod_Thorus_Templer (C_INFO)
 	information	= Info_Mod_Thorus_Templer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer ist der Templer?";
+	description	= "Who is the Templar?";
 };
 
 FUNC INT Info_Mod_Thorus_Templer_Condition()
@@ -501,15 +501,15 @@ FUNC INT Info_Mod_Thorus_Templer_Condition()
 
 FUNC VOID Info_Mod_Thorus_Templer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Templer_15_00"); //Wer ist der Templer?
-	AI_Output(self, hero, "Info_Mod_Thorus_Templer_12_01"); //Das ist Gor Na Kosh Er meinte, ein Problem mit Diebstählen in seinem Lager zu haben.
-	AI_Output(self, hero, "Info_Mod_Thorus_Templer_12_02"); //Und diese sind den Diebstählen aus unserem Lager erschreckend ähnlich.
-	AI_Output(hero, self, "Info_Mod_Thorus_Templer_15_03"); //Gibt es etwas neues davon?
-	AI_Output(self, hero, "Info_Mod_Thorus_Templer_12_04"); //Ja, Cutter meinte bei einem Verhör, neue Informationen geben zu können, und du wirst sie entgegen nehmen.
+	AI_Output(hero, self, "Info_Mod_Thorus_Templer_15_00"); //Who is the Templar?
+	AI_Output(self, hero, "Info_Mod_Thorus_Templer_12_01"); //This is Gor Na Kosh. He thought he had a problem with thefts in his camp.
+	AI_Output(self, hero, "Info_Mod_Thorus_Templer_12_02"); //And these are frighteningly similar to the thefts from our camp.
+	AI_Output(hero, self, "Info_Mod_Thorus_Templer_15_03"); //Is there anything new about it?
+	AI_Output(self, hero, "Info_Mod_Thorus_Templer_12_04"); //Yes, Cutter said during an interrogation that he could give new information, and you will take it.
 
 	B_Say	(hero, self, "$WOFINDEICHIHN");
 
-	AI_Output(self, hero, "Info_Mod_Thorus_Templer_12_06"); //Er ist im Kerker, du wirst ihn schon finden. Hier ist der Schlüssel.
+	AI_Output(self, hero, "Info_Mod_Thorus_Templer_12_06"); //He's in the dungeon, you'll find him. Here's the key.
 
 	CreateInvItems	(self, DungeonKey, 1);
 	B_GiveInvItems	(self, hero, DungeonKey, 1);
@@ -518,7 +518,7 @@ FUNC VOID Info_Mod_Thorus_Templer_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_AL_SCHMUGGLER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_AL_SCHMUGGLER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Thorus hat mich beauftragt, Informationen von Cutter zu holen. Ich finde ihn im Kerker.");
+	B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Thorus hired me to get information from Cutter. I'll find him in the dungeon.");
 };
 
 INSTANCE Info_Mod_Thorus_CutterTot (C_INFO)
@@ -529,7 +529,7 @@ INSTANCE Info_Mod_Thorus_CutterTot (C_INFO)
 	information	= Info_Mod_Thorus_CutterTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Cutter ist tot.";
+	description	= "Cutter's dead.";
 };
 
 FUNC INT Info_Mod_Thorus_CutterTot_Condition()
@@ -542,14 +542,14 @@ FUNC INT Info_Mod_Thorus_CutterTot_Condition()
 
 FUNC VOID Info_Mod_Thorus_CutterTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_CutterTot_15_00"); //Cutter ist tot.
-	AI_Output(self, hero, "Info_Mod_Thorus_CutterTot_12_01"); //Verdammt, das macht die Sache natürlich komplizierter.
-	AI_Output(hero, self, "Info_Mod_Thorus_CutterTot_15_02"); //Während ich bei ihm im Kerker war hat jemand das Tor geschlossen.
-	AI_Output(self, hero, "Info_Mod_Thorus_CutterTot_12_03"); //Anscheinend will man dich loswerden, sei vorsichtig.
-	AI_Output(hero, self, "Info_Mod_Thorus_CutterTot_15_04"); //Verstehe, ich werde aufpassen. Gibt es schon weitere Hinweise?
-	AI_Output(self, hero, "Info_Mod_Thorus_CutterTot_12_05"); //Nein, ich hatte mir welche von dir erhofft.
+	AI_Output(hero, self, "Info_Mod_Thorus_CutterTot_15_00"); //Cutter's dead.
+	AI_Output(self, hero, "Info_Mod_Thorus_CutterTot_12_01"); //Damn, that makes things more complicated, of course.
+	AI_Output(hero, self, "Info_Mod_Thorus_CutterTot_15_02"); //While I was with him in the dungeon, someone closed the gate.
+	AI_Output(self, hero, "Info_Mod_Thorus_CutterTot_12_03"); //Apparently they want to get rid of you, so be careful.
+	AI_Output(hero, self, "Info_Mod_Thorus_CutterTot_15_04"); //I understand, I'll be careful. Are there any other indications?
+	AI_Output(self, hero, "Info_Mod_Thorus_CutterTot_12_05"); //No, I was hoping for some from you.
 
-	B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Ich habe Thorus berichtet, dass Cutter tot ist.");
+	B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "I told Thorus that Cutter's dead.");
 
 	B_GivePlayerXP	(200);
 };
@@ -562,7 +562,7 @@ INSTANCE Info_Mod_Thorus_WasLos (C_INFO)
 	information	= Info_Mod_Thorus_WasLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist denn los?";
+	description	= "What's going on?";
 };
 
 FUNC INT Info_Mod_Thorus_WasLos_Condition()
@@ -575,9 +575,9 @@ FUNC INT Info_Mod_Thorus_WasLos_Condition()
 
 FUNC VOID Info_Mod_Thorus_WasLos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_WasLos_15_00"); //Was ist denn los?
-	AI_Output(self, hero, "Info_Mod_Thorus_WasLos_12_01"); //Och, einige Gardisten und Buddler sind immer noch sauer, dass ich nach Gomez' Verschwinden die Sache in die Hand genommen habe.
-	AI_Output(self, hero, "Info_Mod_Thorus_WasLos_12_02"); //Scorpio und die treuesten Anhänger sind zwar jetzt abgehauen, aber er hat hier noch immer genug gewaltbereite Sympathisanten, die lieber ihn als neues Oberhaupt gesehen hätten.
+	AI_Output(hero, self, "Info_Mod_Thorus_WasLos_15_00"); //What's going on?
+	AI_Output(self, hero, "Info_Mod_Thorus_WasLos_12_01"); //Oh, some guardsmen and diggers are still angry that I took the matter into my hands after Gomez' disappearance.
+	AI_Output(self, hero, "Info_Mod_Thorus_WasLos_12_02"); //Scorpio and the most loyal followers have left now, but he still has enough violent sympathizers here who would have preferred to see him as the new leader.
 };
 
 INSTANCE Info_Mod_Thorus_Ian (C_INFO)
@@ -588,7 +588,7 @@ INSTANCE Info_Mod_Thorus_Ian (C_INFO)
 	information	= Info_Mod_Thorus_Ian_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ian hat mir die Sache von der Alten Mine erzählt.";
+	description	= "Ian told me about the old mine thing.";
 };
 
 FUNC INT Info_Mod_Thorus_Ian_Condition()
@@ -602,9 +602,9 @@ FUNC INT Info_Mod_Thorus_Ian_Condition()
 
 FUNC VOID Info_Mod_Thorus_Ian_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Ian_15_00"); //Ian hat mir die Sache von der Alten Mine erzählt.
-	AI_Output(self, hero, "Info_Mod_Thorus_Ian_12_01"); //Ja, und? Erwartest du jetzt auch, dass ich das ganze Lager unbewacht zurücklasse und Kopf und Kragen riskiere, um etwas zurückzugewinnen, mit dem wir derzeit nichts anfangen können?
-	AI_Output(self, hero, "Info_Mod_Thorus_Ian_12_02"); //Wir haben nach dem Verlust etlicher guter Männer keine Kapazitäten, den Lagerbetrieb und die Minenarbeit gleichzeitig aufrecht zu erhalten und zu kontrollieren!
+	AI_Output(hero, self, "Info_Mod_Thorus_Ian_15_00"); //Ian told me about the old mine thing.
+	AI_Output(self, hero, "Info_Mod_Thorus_Ian_12_01"); //Yeah, and? Do you now also expect me to leave the whole camp unguarded and risk my head and neck to recover something we can't do anything with at the moment?
+	AI_Output(self, hero, "Info_Mod_Thorus_Ian_12_02"); //After the loss of a number of good men, we have no capacity to maintain and control stockpiling operations and mine work at the same time!
 };
 
 INSTANCE Info_Mod_Thorus_Erzbaron (C_INFO)
@@ -615,7 +615,7 @@ INSTANCE Info_Mod_Thorus_Erzbaron (C_INFO)
 	information	= Info_Mod_Thorus_Erzbaron_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum bist du Erzbaron?";
+	description	= "Why are you an Erzbaron?";
 };
 
 FUNC INT Info_Mod_Thorus_Erzbaron_Condition()
@@ -628,16 +628,16 @@ FUNC INT Info_Mod_Thorus_Erzbaron_Condition()
 
 FUNC VOID Info_Mod_Thorus_Erzbaron_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Erzbaron_15_00"); //Warum bist du Erzbaron?
-	AI_Output(self, hero, "Info_Mod_Thorus_Erzbaron_12_01"); //Gomez ist fort. Wir gehen davon aus, dass er tot ist, aber sein Leichnam wurde nie gefunden.
-	AI_Output(self, hero, "Info_Mod_Thorus_Erzbaron_12_02"); //Scar und Raven sind ebenfalls über Nacht verschwunden, und keiner weiß, ob sie Schiss gekriegt haben oder diskret um die Ecke gebracht wurden.
-	AI_Output(self, hero, "Info_Mod_Thorus_Erzbaron_12_03"); //Für kurze Zeit war es Bartholo, aber der war nicht fähig, länger als eine Woche das Lager zu leiten und hat wieder sein altes Amt als Verwalter eingenommen.
-	AI_Output(self, hero, "Info_Mod_Thorus_Erzbaron_12_04"); //Arto hat auf das Amt dankend verzichtet. Nun hatten wir ein Problem, aber auf Grund einer internen Entscheidung wurde ich Erzbaron.
-	AI_Output(hero, self, "Info_Mod_Thorus_Erzbaron_15_05"); //Verstehe.
+	AI_Output(hero, self, "Info_Mod_Thorus_Erzbaron_15_00"); //Why are you an Erzbaron?
+	AI_Output(self, hero, "Info_Mod_Thorus_Erzbaron_12_01"); //Gomez is gone. We assume he's dead, but his body was never found.
+	AI_Output(self, hero, "Info_Mod_Thorus_Erzbaron_12_02"); //Scar and Raven also disappeared overnight, and no one knows whether they got scared or discreetly out of the corner.
+	AI_Output(self, hero, "Info_Mod_Thorus_Erzbaron_12_03"); //For a short time it was Bartholo, but he was not able to run the camp for more than a week and has taken up his old post as administrator again.
+	AI_Output(self, hero, "Info_Mod_Thorus_Erzbaron_12_04"); //Arto has waived the office thankfully. Now we had a problem, but due to an internal decision I became Erzbaron.
+	AI_Output(hero, self, "Info_Mod_Thorus_Erzbaron_15_05"); //I see.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Thorus_Erzbaron))
 	{
-		B_LogEntry	(TOPIC_MOD_ALTESLAGER, "Thorus hat also Gomez' Platz eingenommen und er gab sich ziemlich wohlwollend. Naja, die können froh sein, Gomez' losgeworden zu sein. Raven und Scar sind auch abgehauen.");
+		B_LogEntry	(TOPIC_MOD_ALTESLAGER, "So Thorus took Gomez' place and he was quite benevolent. Well, they're lucky they got rid of Gomez. Raven and Scar took off, too.");
 	};
 };
 
@@ -666,17 +666,17 @@ FUNC INT Info_Mod_Thorus_PMSchulden_Condition()
 
 FUNC VOID Info_Mod_Thorus_PMSchulden_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_00"); //Bist du gekommen, um deine Strafe zu zahlen?
+	AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_00"); //Did you come to pay your fine?
 
 	if (B_GetTotalPetzCounter(self) > Thorus_LastPetzCounter)
 	{
-		AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_01"); //Ich hatte mich schon gefragt, ob du es überhaupt noch wagst, hierher zu kommen!
-		AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_02"); //Anscheinend ist es nicht bei den letzten Anschuldigungen geblieben!
+		AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_01"); //I was wondering if you'd even dare come here!
+		AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_02"); //Apparently, it's not the latest accusations!
 
 		if (Thorus_Schulden < 1000)
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_03"); //Ich hatte dich gewarnt! Die Strafe, die du jetzt zahlen musst, ist höher!
-			AI_Output (hero, self, "Info_Mod_Thorus_PMAdd_15_00"); //Wieviel?
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_03"); //I warned you! The fine you have to pay now is higher!
+			AI_Output (hero, self, "Info_Mod_Thorus_PMAdd_15_00"); //How much?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Thorus_LastPetzCounter);
 		
@@ -691,42 +691,42 @@ FUNC VOID Info_Mod_Thorus_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_04"); //Du hast mich schwer enttäuscht!
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_04"); //You let me down so badly!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Thorus_LastPetzCrime)
 	{
-		AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_05"); //Es haben sich einige neue Dinge ergeben.
+		AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_05"); //Some new things have come up.
 		
 		if (Thorus_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_06"); //Plötzlich gibt es niemanden mehr, der dich des Mordes bezichtigt.
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_06"); //Suddenly, there's no one left to accuse you of murder.
 		};
 		
 		if (Thorus_LastPetzCrime == CRIME_THEFT)
 		|| ( (Thorus_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_07"); //Niemand erinnert sich mehr, dich bei einem Diebstahl gesehen zu haben.
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_07"); //No one remembers seeing you at a theft.
 		};
 		
 		if (Thorus_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Thorus_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_08"); //Es gibt keine Zeugen mehr dafür, dass du jemals in eine Schlägerei verwickelt warst.
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_08"); //There's no more witnesses to the fact that you've ever been in a fight.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_09"); //Anscheinend haben sich alle Anklagen gegen dich in Wohlgefallen aufgelöst.
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_09"); //Apparently all the charges against you have vanished.
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_10"); //Ich weiß nicht, was da gelaufen ist, aber ich warne dich: Spiel keine Spielchen mit mir.
+		AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_10"); //I don't know what happened, but I warn you: don't play games with me.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_11"); //Ich habe mich jedenfalls entschieden, dir deine Schulden zu erlassen.
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_12"); //Sieh zu, dass du nicht wieder in Schwierigkeiten kommst.
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_11"); //Anyway, I've decided to waive your debt.
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_12"); //Make sure you don't get in trouble again.
 	
 			Thorus_Schulden			= 0;
 			Thorus_LastPetzCounter 	= 0;
@@ -734,9 +734,9 @@ FUNC VOID Info_Mod_Thorus_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_13"); //Damit eins klar ist: Deine Strafe musst du trotzdem in voller Höhe zahlen.
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_13"); //One thing is clear: you still have to pay your penalty in full.
 			B_Say_Gold (self, hero, Thorus_Schulden);
-			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_14"); //Also, was ist?
+			AI_Output (self, hero, "Info_Mod_Thorus_PMSchulden_12_14"); //So, what is it?
 		};
 	};
 	
@@ -745,27 +745,27 @@ FUNC VOID Info_Mod_Thorus_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Thorus_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Thorus_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Thorus_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"I don't have enough gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"How much was it again?",Info_Mod_Thorus_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Thorus_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Thorus_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Thorus_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Thorus_PMSchulden,"I want to pay the fine.",Info_Mod_Thorus_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void Info_Mod_Thorus_PMSchulden_HowMuchAgain()
 {
-	AI_Output (hero, self, "Info_Mod_Thorus_PMSchulden_HowMuchAgain_15_00"); //Wie viel war es noch mal?
+	AI_Output (hero, self, "Info_Mod_Thorus_PMSchulden_HowMuchAgain_15_00"); //How much was it again?
 	B_Say_Gold (self, hero, Thorus_Schulden);
 
 	Info_ClearChoices  	(Info_Mod_Thorus_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Thorus_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Thorus_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"I don't have enough gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"How much was it again?",Info_Mod_Thorus_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Thorus_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Thorus_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Thorus_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Thorus_PMSchulden,"I want to pay the fine.",Info_Mod_Thorus_PETZMASTER_PayNow);
 	};
 };
 
@@ -793,8 +793,8 @@ FUNC VOID Info_Mod_Thorus_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_01"); //Gut, dass du zu mir kommst, bevor alles noch schlimmer für dich wird.
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_02"); //Mord ist ein schweres Vergehen!
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_01"); //I'm glad you came to me before things got worse for you.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_02"); //Murder is a grave offence!
 
 		Thorus_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
 
@@ -802,43 +802,43 @@ FUNC VOID Info_Mod_Thorus_PETZMASTER_Info()
 
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_03"); //Ganz zu schweigen von den anderen Sachen, die du angerichtet hast.
+			AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_03"); //Not to mention the other things you've done.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_04"); //Die Wachen haben Befehl, jeden Mörder auf der Stelle zu richten.
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_05"); //Und auch die meisten Schatten werden einen Mörder im Lager nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_06"); //Ich habe kein Interesse daran, dich an den Galgen zu bringen. Wir sind im Krieg und wir brauchen jeden Mann.
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_07"); //Aber es wird nicht leicht sein, die Leute wieder gnädig zu stimmen.
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_08"); //Du könntest deine Reue zeigen, indem du eine Strafe zahlst - natürlich muss die Strafe angemessen hoch sein.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_04"); //The guards have orders to judge every murderer on the spot.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_05"); //And even most of the shadows won't tolerate a murderer in the camp!
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_06"); //I have no interest in putting you on the gallows. We're at war, and we need every man we can get.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_07"); //But it won't be easy to make people gracious again.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_08"); //You could show your repentance by paying a fine - of course the penalty must be appropriate.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_09"); //Gut, dass du kommst! Du wirst des Diebstahls bezichtigt! Es gibt Zeugen!
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_09"); //Good of you to come! You're accused of stealing! There are witnesses!
 
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_10"); //Von den anderen Dingen, die mir zu Ohren gekommen sind, will ich gar nicht erst reden.
+			AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_10"); //I don't even want to talk about the other things I've heard.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_11"); //Ich werde so ein Verhalten im Lager nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_12"); //Du wirst eine Strafe zahlen müssen, um dein Verbrechen wieder gutzumachen!
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_11"); //I will not tolerate such behaviour in the camp!
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_12"); //You'll have to pay a fine to make up for your crime!
 		
 		Thorus_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_13"); //Wenn du dich mit den Buddlers herumprügelst, ist das eine Sache ...
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_14"); //Aber wenn du Schatten oder Gardisten angreifst, muss ich dich zur Rechenschaft ziehen.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_13"); //If you fight with the Buddlers, that's one thing...
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_14"); //But if you attack Shadows or Guards, I'll have to hold you accountable.
 
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_15"); //Und die Sache mit den Schafen musste wohl auch nicht sein.
+			AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_15"); //And I don't think it had to be the case with the sheep.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_16"); //Wenn ich dir das durchgehen lasse, macht hier bald jeder, was er will.
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_17"); //Also wirst du eine angemessene Strafe zahlen - und die Sache ist vergessen.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_16"); //If I let you get away with this, everybody's gonna do what they want.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_17"); //So you'll pay an appropriate fine - and the whole thing will be forgotten.
 		
 		Thorus_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
@@ -846,14 +846,14 @@ FUNC VOID Info_Mod_Thorus_PETZMASTER_Info()
 	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_18"); //Mir ist zu Ohren gekommen, du hättest dich an unseren Schafen vergriffen.
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_19"); //Dir ist klar, dass ich das nicht durchgehen lassen kann.
-		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_20"); //Du wirst eine Entschädigung zahlen müssen!
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_18"); //I've heard that you've been messing with our sheep.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_19"); //You do realize I can't let this go through.
+		AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_12_20"); //You'll have to pay compensation!
 		
 		Thorus_Schulden = 100;
 	};
 	
-	AI_Output (hero, self, "Info_Mod_Thorus_PETZMASTER_15_21"); //Wie viel?
+	AI_Output (hero, self, "Info_Mod_Thorus_PETZMASTER_15_21"); //How much?
 	
 	if (Thorus_Schulden > 1000)	{	Thorus_Schulden = 1000;	};
 		
@@ -861,18 +861,18 @@ FUNC VOID Info_Mod_Thorus_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Thorus_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Thorus_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Thorus_PETZMASTER,"Ich habe nicht genug Gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Thorus_PETZMASTER,"I don't have enough gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Thorus_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Thorus_PETZMASTER,"Ich will die Strafe zahlen.",Info_Mod_Thorus_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Thorus_PETZMASTER,"I want to pay the fine.",Info_Mod_Thorus_PETZMASTER_PayNow);
 	};
 };
 
 func void Info_Mod_Thorus_PETZMASTER_PayNow()
 {
-	AI_Output (hero, self, "Info_Mod_Thorus_PETZMASTER_PayNow_15_00"); //Ich will die Strafe zahlen!
+	AI_Output (hero, self, "Info_Mod_Thorus_PETZMASTER_PayNow_15_00"); //I want to pay the fine!
 	B_GiveInvItems (hero, self, itmi_gold, Thorus_Schulden);
-	AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_PayNow_12_01"); //Gut! Ich werde dafür sorgen, dass es jeder im Lager erfährt - damit wäre dein Ruf einigermaßen wiederhergestellt.
+	AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_PayNow_12_01"); //Good! I will make sure that everyone in the camp learns about it - this will restore your reputation to some extent.
 
 	B_GrantAbsolution (LOC_OLDCAMP);
 	
@@ -886,9 +886,9 @@ func void Info_Mod_Thorus_PETZMASTER_PayNow()
 
 func void Info_Mod_Thorus_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Thorus_PETZMASTER_PayLater_15_00"); //Ich habe nicht genug Gold!
-	AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_PayLater_12_01"); //Dann sieh zu, dass du das Gold so schnell wie möglich beschaffst.
-	AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_PayLater_12_02"); //Und ich warne dich: Wenn du dir noch was zu schulden kommen lässt, wird die Sache noch schlimmer für dich!
+	AI_Output (hero, self, "Info_Mod_Thorus_PETZMASTER_PayLater_15_00"); //I don't have enough gold!
+	AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_PayLater_12_01"); //Then see that you get the gold as soon as possible.
+	AI_Output (self, hero, "Info_Mod_Thorus_PETZMASTER_PayLater_12_02"); //And I'm warning you, if you owe yourself anything, it's going to get worse for you.
 	
 	Thorus_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Thorus_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -904,7 +904,7 @@ INSTANCE Info_Mod_Thorus_Lehrer (C_INFO)
 	information	= Info_Mod_Thorus_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich von dir lernen?";
+	description	= "Can I learn from you?";
 };
 
 FUNC INT Info_Mod_Thorus_Lehrer_Condition()
@@ -921,11 +921,11 @@ FUNC INT Info_Mod_Thorus_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Thorus_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Lehrer_15_00"); //Kann ich von dir lernen?
-	AI_Output(self, hero, "Info_Mod_Thorus_Lehrer_12_01"); //Da du einer von uns bist werde ich dir beibringen wie du stärker und geschickter wirst.
+	AI_Output(hero, self, "Info_Mod_Thorus_Lehrer_15_00"); //Can I learn from you?
+	AI_Output(self, hero, "Info_Mod_Thorus_Lehrer_12_01"); //Since you are one of us, I will teach you how to become stronger and more skillful.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_OLDCAMP, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_OLDCAMP, "Thorus kann mir beibringen stärker und geschickter zu werden.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_OLDCAMP, "Thorus can teach me to be stronger and more skillful.");
 };
 
 INSTANCE Info_Mod_Thorus_Lernen (C_INFO)
@@ -936,7 +936,7 @@ INSTANCE Info_Mod_Thorus_Lernen (C_INFO)
 	information	= Info_Mod_Thorus_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Teach me something.";
 };
 
 FUNC INT Info_Mod_Thorus_Lernen_Condition()
@@ -950,7 +950,7 @@ FUNC INT Info_Mod_Thorus_Lernen_Condition()
 
 FUNC VOID Info_Mod_Thorus_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorus_Lernen_15_00"); //Bring mir was bei.
+	AI_Output(hero, self, "Info_Mod_Thorus_Lernen_15_00"); //Teach me something.
 
 	Info_ClearChoices	(Info_Mod_Thorus_Lernen);
 

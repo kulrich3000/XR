@@ -37,7 +37,7 @@ INSTANCE Info_grd_7_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_grd_7_EinerVonEuchWerden_Condition;
 	information	= Info_grd_7_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Was muß ich tun, um bei Thorus' Gardisten (...)";
+	description = "What do I have to do to help Thorus' guardsmen (... )";
 };                       
 
 FUNC INT Info_grd_7_EinerVonEuchWerden_Condition()
@@ -52,10 +52,10 @@ FUNC INT Info_grd_7_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_grd_7_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_grd_7_EinerVonEuchWerden_15_00"); //Was muss ich tun, um bei Thorus' Gardisten aufgenommen zu werden?
-	AI_Output(self,hero,"Info_grd_7_EinerVonEuchWerden_07_01"); //Du?! Du machst mir Spaß. Kommst hier rein und willst direkt ganz nach oben, was?
-	AI_Output(self,hero,"Info_grd_7_EinerVonEuchWerden_07_02"); //Thorus macht nur die Besten seiner Leute zu Gardisten.
-	AI_Output(self,hero,"Info_grd_7_EinerVonEuchWerden_07_03"); //Du wirst wie alle anderen anfangen müssen, und deine Loyalität als Schatten unter Beweis stellen.
+	AI_Output(hero,self,"Info_grd_7_EinerVonEuchWerden_15_00"); //What do I have to do to join Thorus' guards?
+	AI_Output(self,hero,"Info_grd_7_EinerVonEuchWerden_07_01"); //You?! You're fun for me. Coming in here and wanting to go straight to the top, huh?
+	AI_Output(self,hero,"Info_grd_7_EinerVonEuchWerden_07_02"); //Thorus only makes the best of his men to be guardsmen.
+	AI_Output(self,hero,"Info_grd_7_EinerVonEuchWerden_07_03"); //You'll have to start like everyone else and prove your loyalty as a shadow.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_grd_7_WichtigePersonen(C_INFO)
 	condition	= Info_grd_7_WichtigePersonen_Condition;
 	information	= Info_grd_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_grd_7_WichtigePersonen_Condition()
@@ -82,9 +82,9 @@ FUNC INT Info_grd_7_WichtigePersonen_Condition()
 };
 FUNC VOID Info_grd_7_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_grd_7_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_grd_7_WichtigePersonen_07_01"); //Thorus kontrolliert alles, was im Lager läuft.
-	AI_Output(self,hero,"Info_grd_7_WichtigePersonen_07_02"); //Wenn du hier aufgenommen werden willst, ist er der Mann, mit dem du reden musst.
+	AI_Output(hero,self,"Info_grd_7_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,hero,"Info_grd_7_WichtigePersonen_07_01"); //Thorus controls everything in the warehouse.
+	AI_Output(self,hero,"Info_grd_7_WichtigePersonen_07_02"); //If you want to be admitted here, he's the man you need to talk to.
 };
 
 // *************************************************************************
@@ -97,7 +97,7 @@ INSTANCE Info_grd_7_DasLager(C_INFO)
 	condition	= Info_grd_7_DasLager_Condition;
 	information	= Info_grd_7_DasLager_Info;
 	permanent	= 1;
-	description = "Arbeiten alle Leute hier für die Erzbarone?";
+	description = "Do all the people here work for the ore barons?";
 };                       
 
 FUNC INT Info_grd_7_DasLager_Condition()
@@ -111,14 +111,14 @@ FUNC INT Info_grd_7_DasLager_Condition()
 };
 FUNC VOID Info_grd_7_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_grd_7_DasLager_15_00"); //Arbeiten alle Leute hier für Thorus?
-	AI_Output(self,hero,"Info_grd_7_DasLager_07_01"); //Nein. Die meisten hier sind einfache Buddler.
-	AI_Output(self,hero,"Info_grd_7_DasLager_07_02"); //Nur wir Gardisten und die Schatten sind Thorus' Leute.
+	AI_Output(hero,self,"Info_grd_7_DasLager_15_00"); //Do all the people here work for Thorus?
+	AI_Output(self,hero,"Info_grd_7_DasLager_07_01"); //No. Most of these are simple diggers.
+	AI_Output(self,hero,"Info_grd_7_DasLager_07_02"); //Only we guardsmen and the shadows are Thorus' people.
 	Info_ClearChoices(Info_grd_7_DasLager);
-	Info_AddChoice(Info_grd_7_DasLager, "ZURÜCK", Info_grd_7_DasLager_Zurueck);
-	Info_AddChoice(Info_grd_7_DasLager, "Was tun die Gardisten?", Info_grd_7_DasLager_Gardisten);
-	Info_AddChoice(Info_grd_7_DasLager, "Was ist die Aufgabe der Schatten?", Info_grd_7_DasLager_Schatten);
-	Info_AddChoice(Info_grd_7_DasLager, "Wofür sind die Buddler da?", Info_grd_7_DasLager_Buddler);
+	Info_AddChoice(Info_grd_7_DasLager, "BACK", Info_grd_7_DasLager_Zurueck);
+	Info_AddChoice(Info_grd_7_DasLager, "What are the guards doing?", Info_grd_7_DasLager_Gardisten);
+	Info_AddChoice(Info_grd_7_DasLager, "What is the task of the shadows?", Info_grd_7_DasLager_Schatten);
+	Info_AddChoice(Info_grd_7_DasLager, "What are the Buddlers for?", Info_grd_7_DasLager_Buddler);
 };
 
 FUNC VOID Info_grd_7_DasLager_ZURUECK()
@@ -128,27 +128,27 @@ FUNC VOID Info_grd_7_DasLager_ZURUECK()
 
 FUNC VOID Info_grd_7_DasLager_Gardisten()
 {
-	AI_Output(hero,self,"Info_grd_7_DasLager_WasIstAerger_15_00"); //Was tun die Gardisten?
-	AI_Output(self,hero,"Info_grd_7_DasLager_WasIstAerger_07_01"); //Wir bewachen das Lager und beschützen die Buddler.
-	AI_Output(self,hero,"Info_grd_7_DasLager_WasIstAerger_07_02"); //Mit Sold, den Thorus uns zahlt und dem Schutzgeld, das wir von den Buddlern bekommen, kann man seine Zeit ganz gut rumkriegen.
+	AI_Output(hero,self,"Info_grd_7_DasLager_WasIstAerger_15_00"); //What are the guards doing?
+	AI_Output(self,hero,"Info_grd_7_DasLager_WasIstAerger_07_01"); //We guard the camp and protect the diggers.
+	AI_Output(self,hero,"Info_grd_7_DasLager_WasIstAerger_07_02"); //With the pay Thorus pays us and the protection money we get from the Buddhists, you can get your time around pretty well.
 };
 
 FUNC VOID Info_grd_7_DasLager_Schatten()
 {
-	AI_Output(hero,self,"Info_grd_7_DasLager_Schatten_15_00"); //Was ist die Aufgabe der Schatten?
-	AI_Output(self,hero,"Info_grd_7_DasLager_Schatten_07_01"); //Die Schatten sorgen dafür, dass Thorus' Befehle ausgeführt werden.
-	AI_Output(self,hero,"Info_grd_7_DasLager_Schatten_07_02"); //Die meisten von ihnen sind Speichellecker, die sich hocharbeiten wollen, aber wenn du hier was werden willst, ist das der einzige Weg.
-	AI_Output(self,hero,"Info_grd_7_DasLager_Schatten_07_03"); //Wenn du lange genug deine Aufgaben erledigt hast, ohne zu versagen, kannst du einer von uns werden.
-	AI_Output(self,hero,"Info_grd_7_DasLager_Schatten_07_04"); //Wenn du erst zu Thorus' Leuten gehörst, kann dir niemand in der ganzen Kolonie mehr was anhaben, Kleiner!
+	AI_Output(hero,self,"Info_grd_7_DasLager_Schatten_15_00"); //What is the task of the shadows?
+	AI_Output(self,hero,"Info_grd_7_DasLager_Schatten_07_01"); //The shadows ensure that Thorus' orders are carried out.
+	AI_Output(self,hero,"Info_grd_7_DasLager_Schatten_07_02"); //Most of them are sycophants who want to work their way up, but if you want to be something here, that's the only way.
+	AI_Output(self,hero,"Info_grd_7_DasLager_Schatten_07_03"); //If you have done your job long enough without failing, you can become one of us.
+	AI_Output(self,hero,"Info_grd_7_DasLager_Schatten_07_04"); //Once you become one of Thorus' men, no one in the colony will be able to hurt you, kid!
 };
 
 FUNC VOID Info_grd_7_DasLager_Buddler()
 {
-	AI_Output(hero,self,"Info_grd_7_DasLager_Buddler_15_00"); //Wofür sind die Buddler da?
-	AI_Output(self,hero,"Info_grd_7_DasLager_Buddler_07_01"); //Gute Frage! Die Dreckfresser sollten eigentlich in der alten Mine sein.
-	AI_Output(self,hero,"Info_grd_7_DasLager_Buddler_07_02"); //Früher sind sie gekommen, wenn sie 'ne Zeit lang in der Mine waren, um ihren Anteil auszugeben.
-	AI_Output(self,hero,"Info_grd_7_DasLager_Buddler_07_03"); //Wenn alles verprasst war, ging's wieder ab in die Mine. Die meisten hier lebten so.
-	AI_Output(self,hero,"Info_grd_7_DasLager_Buddler_07_04"); //Doch da die Mine eingestürzt ist, bleiben die Buddler jetzt die ganze Zeit hier. Du solltest mit Thorus reden, wenn du's nicht schon getan hast.
+	AI_Output(hero,self,"Info_grd_7_DasLager_Buddler_15_00"); //What are the Buddlers for?
+	AI_Output(self,hero,"Info_grd_7_DasLager_Buddler_07_01"); //Good question! The scumbags were supposed to be in the old mine.
+	AI_Output(self,hero,"Info_grd_7_DasLager_Buddler_07_02"); //They used to come when they were in the mine for a while to spend their share.
+	AI_Output(self,hero,"Info_grd_7_DasLager_Buddler_07_03"); //When everything was wasted, we went back to the mine. Most of them lived like this.
+	AI_Output(self,hero,"Info_grd_7_DasLager_Buddler_07_04"); //But now that the mine has collapsed, the diggers stay here all the time. You should talk to Thorus if you haven't already.
 };
 
 // *************************************************************************
@@ -161,7 +161,7 @@ INSTANCE Info_grd_7_DieLage(C_INFO) // E1
 	condition	= Info_grd_7_DieLage_Condition;
 	information	= Info_grd_7_DieLage_Info;
 	permanent	= 1;
-	description = "Wie steht's?";
+	description = "What's the score?";
 };                       
 
 FUNC INT Info_grd_7_DieLage_Condition()
@@ -175,8 +175,8 @@ FUNC INT Info_grd_7_DieLage_Condition()
 };
 FUNC VOID Info_grd_7_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_grd_7_DieLage_15_00"); //Wie steht's?
-	AI_Output(self,hero,"Info_grd_7_DieLage_07_01"); //Für dich? Solange du nicht unserem Lager angehörst, nimmt dich hier keiner ernst, Kleiner!
+	AI_Output(hero,self,"Info_grd_7_DieLage_15_00"); //What's the score?
+	AI_Output(self,hero,"Info_grd_7_DieLage_07_01"); //For you? As long as you're not in our camp, nobody takes you seriously, kid!
 };
 
 INSTANCE Info_Mod_GRD_7_Pickpocket (C_INFO)

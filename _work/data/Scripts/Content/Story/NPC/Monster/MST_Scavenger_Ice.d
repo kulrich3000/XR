@@ -1,7 +1,7 @@
 PROTOTYPE Mst_Default_Scavenger_Ice(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Eisscavenger";
+	name							=	"ice Caverns";
 	guild							=	GIL_SCAVENGER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SCAVENGER;
 	level							=	15;

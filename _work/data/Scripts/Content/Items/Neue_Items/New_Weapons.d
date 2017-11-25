@@ -5,7 +5,7 @@ var C_ITEM CurrentWeapon;
 //---------------------------------------------------------------------
 INSTANCE Weltenspalter (C_Item) 
 {	
-	name 				=	"Weltenspalter";
+	name 				=	"Clefter of Worlds";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;
@@ -20,12 +20,12 @@ INSTANCE Weltenspalter (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Priesters Varrag-Hashor.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"This was the sword of the undead";
+	TEXT[1]				=	"Orc-Priest Varrag Hashor.";
+	TEXT[2]				=	"The weapon has been used over the years";
+	TEXT[3]				=	"become useless!";
+	TEXT[4]				=	"Perhaps the sword is still open";
+	TEXT[5]				=	"in another way.";
 };
 
 //---------------------------------------------------------------------
@@ -33,7 +33,7 @@ INSTANCE Weltenspalter (C_Item)
 //---------------------------------------------------------------------
 INSTANCE Lichtbringer (C_Item) 
 {	
-	name 				=	"Lichtbringer";
+	name 				=	"Blade of Light";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -48,12 +48,12 @@ INSTANCE Lichtbringer (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Priesters Varrag-Kasorg.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"This was the sword of the undead";
+	TEXT[1]				=	"Orc-Priest Varrag-Kasorg.";
+	TEXT[2]				=	"The weapon has been used over the years";
+	TEXT[3]				=	"become useless!";
+	TEXT[4]				=	"Perhaps the sword is still open";
+	TEXT[5]				=	"in another way.";
 };
 
 //---------------------------------------------------------------------
@@ -61,7 +61,7 @@ INSTANCE Lichtbringer (C_Item)
 //---------------------------------------------------------------------
 INSTANCE Zeitenklinge (C_Item) 
 {	
-	name 				=	"Zeitenklinge";
+	name 				=	"Blade of Time";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -80,12 +80,12 @@ INSTANCE Zeitenklinge (C_Item)
 
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Priesters Varrag-Unhilqt.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"This was the sword of the undead";
+	TEXT[1]				=	"Orc-Priest Varrag-Unhilqt.";
+	TEXT[2]				=	"The weapon has been used over the years";
+	TEXT[3]				=	"become useless!";
+	TEXT[4]				=	"Perhaps the sword is still open";
+	TEXT[5]				=	"in another way.";
 };
 
 func void Equip_Zeitenklinge()
@@ -104,7 +104,7 @@ func void UnEquip_Zeitenklinge()
 //---------------------------------------------------------------------
 INSTANCE Daemonenstreich (C_Item) 
 {	
-	name 				=	"Dämonenstreich";
+	name 				=	"Demon Strike";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -119,12 +119,12 @@ INSTANCE Daemonenstreich (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Priesters Varrag-Ruuushk.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"This was the sword of the undead";
+	TEXT[1]				=	"Orc-Priest Varrag-Ruuushk.";
+	TEXT[2]				=	"The weapon has been used over the years";
+	TEXT[3]				=	"become useless!";
+	TEXT[4]				=	"Perhaps the sword is still open";
+	TEXT[5]				=	"in another way.";
 };
 
 //---------------------------------------------------------------------
@@ -132,7 +132,7 @@ INSTANCE Daemonenstreich (C_Item)
 //---------------------------------------------------------------------
 INSTANCE Bannklinge (C_Item) 
 {	
-	name 				=	"Bannklinge";
+	name 				=	"Blade of Banishment";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -147,17 +147,17 @@ INSTANCE Bannklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Hohepriesters Grash-Varrag-Arushat.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"This was the sword of the undead";
+	TEXT[1]				=	"Orc High Priest Grash Varrag Arushat.";
+	TEXT[2]				=	"The weapon has been used over the years";
+	TEXT[3]				=	"become useless!";
+	TEXT[4]				=	"Perhaps the sword is still open";
+	TEXT[5]				=	"in another way.";
 };
 
 INSTANCE ItMw_Ritualdolch_Versengen (C_Item)
 {
-	name 				=	"Ritualdolch des Versengens";
+	name 				=	"Ritual dagger of scorching";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -183,7 +183,7 @@ INSTANCE ItMw_Ritualdolch_Versengen (C_Item)
 
 INSTANCE ItMw_Ritualdolch_Frost (C_Item)
 {
-	name 				=	"Ritualdolch des Frostes";
+	name 				=	"Ritual dagger of the frost";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -209,7 +209,7 @@ INSTANCE ItMw_Ritualdolch_Frost (C_Item)
 
 INSTANCE ItMw_Ritualdolch_Seuche (C_Item)
 {
-	name 				=	"Ritualdolch des Siechtums";
+	name 				=	"Ritual dagger of infirmity";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -235,7 +235,7 @@ INSTANCE ItMw_Ritualdolch_Seuche (C_Item)
 
 INSTANCE ItMw_Ritualdolch_Gift (C_Item)
 {
-	name 				=	"Ritualdolch des Giftes";
+	name 				=	"Ritual dagger of the poison";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -261,7 +261,7 @@ INSTANCE ItMw_Ritualdolch_Gift (C_Item)
 
 INSTANCE ItMw_Ritualdolch_Blut (C_Item)
 {
-	name 				=	"Ritualdolch des Blutes";
+	name 				=	"Ritual dagger of the blood";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -287,7 +287,7 @@ INSTANCE ItMw_Ritualdolch_Blut (C_Item)
 
 instance ITMW_FEUERSCHWERT(C_Item)
 {
-	name = "Feuerschwert";
+	name = "fire sword";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -304,14 +304,14 @@ instance ITMW_FEUERSCHWERT(C_Item)
 	count[2] = damageTotal;
 	text[3] = NAME_Str_needed;
 	count[3] = cond_value[2];
-	text[4] = "Eine magische Waffe";
+	text[4] = "A magic weapon";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
 
 instance ITMW_Feuerschwert_Geschaerft(C_Item)
 {
-	name = "Feuerschwert (geschärft)"; 
+	name = "Fire sword (sharpened)"; 
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -328,14 +328,14 @@ instance ITMW_Feuerschwert_Geschaerft(C_Item)
 	count[2] = damageTotal;
 	text[3] = NAME_Str_needed;
 	count[3] = cond_value[2];
-	text[4] = "Eine magische Waffe";
+	text[4] = "A magic weapon";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
 
 instance ITMW_ICESWORD(C_Item)
 {
-	name = "Eisschwert";
+	name = "ice sword";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -352,14 +352,14 @@ instance ITMW_ICESWORD(C_Item)
 	count[2] = damageTotal;
 	text[3] = NAME_Str_needed;
 	count[3] = cond_value[2];
-	text[4] = "Eine magische Waffe";
+	text[4] = "A magic weapon";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
 
 instance ITMW_ICESWORD_Geschaerft(C_Item)
 {
-	name = "Eisschwert (geschärft)";
+	name = "Ice sword (sharpened)";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -376,14 +376,14 @@ instance ITMW_ICESWORD_Geschaerft(C_Item)
 	count[2] = damageTotal;
 	text[3] = NAME_Str_needed;
 	count[3] = cond_value[2];
-	text[4] = "Eine magische Waffe";
+	text[4] = "A magic weapon";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
 
 INSTANCE ItMW_Sense_02 (C_Item)
 {	
-	name 				=	"Sense";  
+	name 				=	"scythe";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -408,7 +408,7 @@ INSTANCE ItMW_Sense_02 (C_Item)
 };
 INSTANCE ItMW_Sense_02_Geschaerft (C_Item)
 {	
-	name 				=	"Sense (geschärft)";  
+	name 				=	"Scythe (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -434,7 +434,7 @@ INSTANCE ItMW_Sense_02_Geschaerft (C_Item)
 
 INSTANCE ItMW_Sense_03 (C_Item)
 {	
-	name 				=	"Sense";  
+	name 				=	"scythe";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -459,7 +459,7 @@ INSTANCE ItMW_Sense_03 (C_Item)
 };
 INSTANCE ItMW_Sense_03_Geschaerft (C_Item)
 {	
-	name 				=	"Sense (geschärft)";  
+	name 				=	"Scythe (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -485,7 +485,7 @@ INSTANCE ItMW_Sense_03_Geschaerft (C_Item)
 
 INSTANCE ItMW_Adanos_Stab_Magieteil (C_Item)
 {	
-	name 				=	"Adanos Stab (Magieseite)";  
+	name 				=	"Adanos Staff (magic side)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE|ITEM_SHOW;
@@ -511,7 +511,7 @@ INSTANCE ItMW_Adanos_Stab_Magieteil (C_Item)
 
 INSTANCE ItMW_Adanos_Stab_Kampfteil (C_Item)
 {	
-	name 				=	"Adanos Stab (Kampfseite)";  
+	name 				=	"Adano's Staff (Fighting Side)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE|ITEM_SHOW;
@@ -537,7 +537,7 @@ INSTANCE ItMW_Adanos_Stab_Kampfteil (C_Item)
 
 INSTANCE ItMW_Adanos_Stab_Teil1 (C_Item)
 {	
-	name 				=	"Adanos Stab (Bruchstück 1)";  
+	name 				=	"Adanos staff (breakage 1)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE|ITEM_SHOW;
@@ -562,7 +562,7 @@ INSTANCE ItMW_Adanos_Stab_Teil1 (C_Item)
 
 INSTANCE ItMW_Adanos_Stab_Teil2 (C_Item)
 {	
-	name 				=	"Adanos Stab (Bruchstück 2)";  
+	name 				=	"Adanos staff (breakage 2)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE|ITEM_SHOW;
@@ -587,7 +587,7 @@ INSTANCE ItMW_Adanos_Stab_Teil2 (C_Item)
 
 INSTANCE Xeres_Schwert (C_Item)
 {
-	name 				=	"Xeres' Schwert";
+	name 				=	"Xeres' sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -613,7 +613,7 @@ INSTANCE Xeres_Schwert (C_Item)
 
 INSTANCE Xeres_Schwert_Geschaerft (C_Item)
 {
-	name 				=	"Xeres Schwert (geschärft)";
+	name 				=	"Xeres sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -639,7 +639,7 @@ INSTANCE Xeres_Schwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Neok_Zeusschwert_01 (C_Item)
 {	
-	name 				=	"Zeusschwert";
+	name 				=	"zeus sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -663,7 +663,7 @@ INSTANCE ItMw_1H_Neok_Zeusschwert_01 (C_Item)
 };
 INSTANCE ItMw_1H_Neok_Zeusschwert_01_Geschaerft (C_Item)
 {	
-	name 				=	"Zeusschwert (geschärft)";
+	name 				=	"Zeus sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -688,7 +688,7 @@ INSTANCE ItMw_1H_Neok_Zeusschwert_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_Faustklaue (C_Item)
 {	
-	name 				=	"Faustschwert";
+	name 				=	"fist sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -713,7 +713,7 @@ INSTANCE ItMw_Faustklaue (C_Item)
 
 INSTANCE ItMw_Lurkerklaue (C_Item)
 {	
-	name 				=	"Lurkerklaue";
+	name 				=	"Lurker's Claws";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -762,7 +762,7 @@ INSTANCE ItMw_1H_Neok_Athos_01 (C_Item)
 };
 INSTANCE ItMw_1H_Neok_Athos_01_Geschaerft (C_Item)
 {	
-	name 				=	"Athos (geschärft)";
+	name 				=	"Athos (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -812,7 +812,7 @@ INSTANCE ItMw2hOrcMace01 (C_Item)
 
 INSTANCE ItMw_Schmetteraxt (C_Item)
 {	
-	name 				=	"Schmetteraxt";
+	name 				=	"butterfly axe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -836,7 +836,7 @@ INSTANCE ItMw_Schmetteraxt (C_Item)
 };
 INSTANCE ItMw_Schmetteraxt_Geschaerft (C_Item)
 {	
-	name 				=	"Schmetteraxt (geschärft)";
+	name 				=	"Butterfly axes (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -861,7 +861,7 @@ INSTANCE ItMw_Schmetteraxt_Geschaerft (C_Item)
 
 INSTANCE ItMw_Truemmeraxt (C_Item)
 {	
-	name 				=	"Trümmeraxt";
+	name 				=	"wreckage axe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -885,7 +885,7 @@ INSTANCE ItMw_Truemmeraxt (C_Item)
 };
 INSTANCE ItMw_Truemmeraxt_Geschaerft (C_Item)
 {	
-	name 				=	"Trümmeraxt (geschärft)";
+	name 				=	"Debris axe (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -910,7 +910,7 @@ INSTANCE ItMw_Truemmeraxt_Geschaerft (C_Item)
 
 INSTANCE ItMW_Schaedelbrecher (C_Item)
 {	
-	name 				=	"Schädelbrecher";  
+	name 				=	"skull crushers";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -936,7 +936,7 @@ INSTANCE ItMW_Schaedelbrecher (C_Item)
 };
 INSTANCE ItMW_Schaedelbrecher_Geschaerft (C_Item)
 {	
-	name 				=	"Schädelbrecher (geschärft)";  
+	name 				=	"Skull crusher (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -963,7 +963,7 @@ INSTANCE ItMW_Schaedelbrecher_Geschaerft (C_Item)
 
 INSTANCE ItMW_Drachenaxt (C_Item)
 {	
-	name 				=	"Drachenaxt";  
+	name 				=	"dragon axe";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -988,7 +988,7 @@ INSTANCE ItMW_Drachenaxt (C_Item)
 };
 INSTANCE ItMW_Drachenaxt_Geschaerft (C_Item)
 {	
-	name 				=	"Drachenaxt (geschärft)";  
+	name 				=	"Dragon Axe (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -1014,7 +1014,7 @@ INSTANCE ItMW_Drachenaxt_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Eminem_Eisenklinge_02 (C_Item)
 {
-	name 				=	"Eisenklinge";
+	name 				=	"iron blade";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -1039,7 +1039,7 @@ INSTANCE ItMw_1H_Eminem_Eisenklinge_02 (C_Item)
 };
 INSTANCE ItMw_1H_Eminem_Eisenklinge_02_Geschaerft (C_Item)
 {
-	name 				=	"Eisenklinge (geschärft)";
+	name 				=	"Iron blade (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -1065,7 +1065,7 @@ INSTANCE ItMw_1H_Eminem_Eisenklinge_02_Geschaerft (C_Item)
 
 INSTANCE ItMw_Gladius (C_Item)
 {
-	name 				=	"Gladius";
+	name 				=	"gladius";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1090,7 +1090,7 @@ INSTANCE ItMw_Gladius (C_Item)
 };
 INSTANCE ItMw_Gladius_Geschaerft (C_Item)
 {
-	name 				=	"Gladius (geschärft)";
+	name 				=	"Gladius (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1116,7 +1116,7 @@ INSTANCE ItMw_Gladius_Geschaerft (C_Item)
 
 INSTANCE ItMw_Kurzschwert (C_Item)
 {
-	name 				=	"Kurzschwert";
+	name 				=	"Short Sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1141,7 +1141,7 @@ INSTANCE ItMw_Kurzschwert (C_Item)
 };
 INSTANCE ItMw_Kurzschwert_Geschaerft (C_Item)
 {
-	name 				=	"Kurzschwert (geschärft)";
+	name 				=	"Short sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1167,7 +1167,7 @@ INSTANCE ItMw_Kurzschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Klingendolch (C_Item)
 {
-	name 				=	"Klingendolch";
+	name 				=	"dagger knife";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1192,7 +1192,7 @@ INSTANCE ItMw_Klingendolch (C_Item)
 };
 INSTANCE ItMw_Klingendolch_Geschaerft (C_Item)
 {
-	name 				=	"Klingendolch (geschärft)";
+	name 				=	"Blade dagger (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1218,7 +1218,7 @@ INSTANCE ItMw_Klingendolch_Geschaerft (C_Item)
 
 INSTANCE ItMw_Klauenschwert (C_Item)
 {
-	name 				=	"Klauenschwert";
+	name 				=	"hoofed sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1243,7 +1243,7 @@ INSTANCE ItMw_Klauenschwert (C_Item)
 };
 INSTANCE ItMw_Klauenschwert_Geschaerft (C_Item)
 {
-	name 				=	"Klauenschwert (geschärft)";
+	name 				=	"Claw sword (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1269,7 +1269,7 @@ INSTANCE ItMw_Klauenschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Schuetterschwert (C_Item)
 {
-	name 				=	"Schütterschwert";
+	name 				=	"";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1294,7 +1294,7 @@ INSTANCE ItMw_Schuetterschwert (C_Item)
 };
 INSTANCE ItMw_Schuetterschwert_Geschaerft (C_Item)
 {
-	name 				=	"Schütterschwert (geschärft)";
+	name 				=	"Bulkhead (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1320,7 +1320,7 @@ INSTANCE ItMw_Schuetterschwert_Geschaerft (C_Item)
 
 INSTANCE ItMW_AxtDesUntergangs (C_Item)
 {	
-	name 				=	"Axt des Untergangs";  
+	name 				=	"Axe of doom";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -1346,7 +1346,7 @@ INSTANCE ItMW_AxtDesUntergangs (C_Item)
 
 INSTANCE ItMw_BennetGreg (C_Item)
 {	
-	name 				=	"Bennets spezielles Schwert ";
+	name 				=	"Bennet's special sword ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD | ITEM_SHOW;	

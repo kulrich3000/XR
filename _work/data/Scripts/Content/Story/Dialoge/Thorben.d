@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Thorben_Hi (C_INFO)
 	information	= Info_Mod_Thorben_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Thorben_Hi_Condition()
@@ -21,7 +21,7 @@ FUNC VOID Info_Mod_Thorben_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Thorben_Hi_06_01"); //Thorben. Ich stelle alle möglichen Haushaltsgegenstände her.
+	AI_Output(self, hero, "Info_Mod_Thorben_Hi_06_01"); //Thorben. I make all kinds of household items.
 };
 
 INSTANCE Info_Mod_Thorben_HiKneipe (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Thorben_HiKneipe (C_INFO)
 	information	= Info_Mod_Thorben_HiKneipe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Thorben_HiKneipe_Condition()
@@ -48,7 +48,7 @@ FUNC VOID Info_Mod_Thorben_HiKneipe_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Thorben_HiKneipe_06_01"); //(betrunken) Ich bin Tischler, der Meisterthorben. Aber ich arbeite gerade nich.
+	AI_Output(self, hero, "Info_Mod_Thorben_HiKneipe_06_01"); //I'm a carpenter, the master stooge. But I'm not working right now.
 };
 
 INSTANCE Info_Mod_Thorben_Handel (C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Thorben_Handel (C_INFO)
 	information	= Info_Mod_Thorben_Handel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verkaufst du auch was?";
+	description	= "Are you selling, too?";
 };
 
 FUNC INT Info_Mod_Thorben_Handel_Condition()
@@ -73,8 +73,8 @@ FUNC INT Info_Mod_Thorben_Handel_Condition()
 
 FUNC VOID Info_Mod_Thorben_Handel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Handel_15_00"); //Verkaufst du auch was?
-	AI_Output(self, hero, "Info_Mod_Thorben_Handel_06_01"); //Ein bisschen Kleinkram.
+	AI_Output(hero, self, "Info_Mod_Thorben_Handel_15_00"); //Are you selling, too?
+	AI_Output(self, hero, "Info_Mod_Thorben_Handel_06_01"); //A little bit of small stuff.
 };
 
 INSTANCE Info_Mod_Thorben_HandelKneipe (C_INFO)
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Thorben_HandelKneipe (C_INFO)
 	information	= Info_Mod_Thorben_HandelKneipe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verkaufst du Handwerksgegenstände?";
+	description	= "Do you sell craft items?";
 };
 
 FUNC INT Info_Mod_Thorben_HandelKneipe_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Mod_Thorben_HandelKneipe_Condition()
 
 FUNC VOID Info_Mod_Thorben_HandelKneipe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_HandelKneipe_15_00"); //Verkaufst du Handwerksgegenstände?
-	AI_Output(self, hero, "Info_Mod_Thorben_HandelKneipe_06_01"); //Weiß nich. Komm morgen bei mir vorbei, ja? Ich arbeite nämlich gerade nich.
+	AI_Output(hero, self, "Info_Mod_Thorben_HandelKneipe_15_00"); //Do you sell craft items?
+	AI_Output(self, hero, "Info_Mod_Thorben_HandelKneipe_06_01"); //I don't know. Come by my place tomorrow, will you? I'm not working right now.
 };
 
 INSTANCE Info_Mod_Thorben_Job (C_INFO)
@@ -112,7 +112,7 @@ INSTANCE Info_Mod_Thorben_Job (C_INFO)
 	information	= Info_Mod_Thorben_Job_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich bei dir als Lehrling anfangen?";
+	description	= "Can I start with you as an apprentice?";
 };
 
 FUNC INT Info_Mod_Thorben_Job_Condition()
@@ -127,8 +127,8 @@ FUNC INT Info_Mod_Thorben_Job_Condition()
 
 FUNC VOID Info_Mod_Thorben_Job_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Job_15_00"); //Kann ich bei dir als Lehrling anfangen?
-	AI_Output(self, hero, "Info_Mod_Thorben_Job_06_01"); //Du bist ja nicht mal Bürger der Stadt. Und ich verlange von meinen Lehrlingen Eigeninti ... Eigentia ... Eigeninitiave.
+	AI_Output(hero, self, "Info_Mod_Thorben_Job_15_00"); //Can I start with you as an apprentice?
+	AI_Output(self, hero, "Info_Mod_Thorben_Job_06_01"); //You're not even a citizen of the city. And I demand that my apprentices... eigentia Self-initiative.
 };
 
 INSTANCE Info_Mod_Thorben_JobKneipe (C_INFO)
@@ -139,7 +139,7 @@ INSTANCE Info_Mod_Thorben_JobKneipe (C_INFO)
 	information	= Info_Mod_Thorben_JobKneipe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich bei dir als Lehrling anfangen?";
+	description	= "Can I start with you as an apprentice?";
 };
 
 FUNC INT Info_Mod_Thorben_JobKneipe_Condition()
@@ -155,8 +155,8 @@ FUNC INT Info_Mod_Thorben_JobKneipe_Condition()
 
 FUNC VOID Info_Mod_Thorben_JobKneipe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Job_15_00"); //Kann ich bei dir als Lehrling anfangen?
-	AI_Output(self, hero, "Info_Mod_Thorben_JobKneipe_06_01"); //(ungeduldig) Arbeite ich gerade oder nich? Ich versuch mich hier zu entspannen.
+	AI_Output(hero, self, "Info_Mod_Thorben_Job_15_00"); //Can I start with you as an apprentice?
+	AI_Output(self, hero, "Info_Mod_Thorben_JobKneipe_06_01"); //Am I working or not? I'm trying to relax here.
 };
 
 INSTANCE Info_Mod_Thorben_Irdorath (C_INFO)
@@ -167,7 +167,7 @@ INSTANCE Info_Mod_Thorben_Irdorath (C_INFO)
 	information	= Info_Mod_Thorben_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss eine Seereise unternehmen und brauche jemanden (...)";
+	description	= "I have to go on an ocean voyage and need someone (...) )";
 };
 
 FUNC INT Info_Mod_Thorben_Irdorath_Condition()
@@ -181,15 +181,15 @@ FUNC INT Info_Mod_Thorben_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Thorben_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Irdorath_15_00"); //Ich muss eine Seereise unternehmen und brauche jemanden, der über handwerkliches Geschick verfügt ...
-	AI_Output(self, hero, "Info_Mod_Thorben_Irdorath_06_01"); //Bei Innos, was soll ich auf einem Schiff auf dem Meer.
-	AI_Output(hero, self, "Info_Mod_Thorben_Irdorath_15_02"); //Aber ...
-	AI_Output(self, hero, "Info_Mod_Thorben_Irdorath_06_03"); //Nein, also wirklich ... das ist nichts für mich ... und hier warten noch mehr als genug Schränke auf mich, und die haben absoluten Vorrang vor allen anderen Dingen.
-	AI_Output(hero, self, "Info_Mod_Thorben_Irdorath_15_04"); //(halblaut) Auch vor dem Niedergang der Insel ...
-	AI_Output(self, hero, "Info_Mod_Thorben_Irdorath_06_05"); //Was sagst du?
-	AI_Output(hero, self, "Info_Mod_Thorben_Irdorath_15_06"); //Ach, nichts wichtiges.
+	AI_Output(hero, self, "Info_Mod_Thorben_Irdorath_15_00"); //I have to go on a sea voyage and I need someone with manual skills....
+	AI_Output(self, hero, "Info_Mod_Thorben_Irdorath_06_01"); //By Innos, what am I supposed to do on a ship at sea?
+	AI_Output(hero, self, "Info_Mod_Thorben_Irdorath_15_02"); //But...
+	AI_Output(self, hero, "Info_Mod_Thorben_Irdorath_06_03"); //No, really... it's not for me.... and there are more than enough cupboards waiting for me here, and they have absolute priority over all other things.
+	AI_Output(hero, self, "Info_Mod_Thorben_Irdorath_15_04"); //Even before the decline of the island...
+	AI_Output(self, hero, "Info_Mod_Thorben_Irdorath_06_05"); //What do you say?
+	AI_Output(hero, self, "Info_Mod_Thorben_Irdorath_15_06"); //Oh, nothing important.
 
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Nein, es scheint mir nicht, als ließe Thorben sich zu einem Trip über das Meer überreden.");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "No, it doesn't seem to me that Thorben could be persuaded to go on a trip across the sea.");
 };
 
 INSTANCE Info_Mod_Thorben_Lehrling (C_INFO)
@@ -200,7 +200,7 @@ INSTANCE Info_Mod_Thorben_Lehrling (C_INFO)
 	information	= Info_Mod_Thorben_Lehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte Bürger der Stadt werden. (...)";
+	description	= "I want to be a citizen of the city. (... )";
 };
 
 FUNC INT Info_Mod_Thorben_Lehrling_Condition()
@@ -214,27 +214,27 @@ FUNC INT Info_Mod_Thorben_Lehrling_Condition()
 
 FUNC VOID Info_Mod_Thorben_Lehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_00"); //Ich möchte Bürger der Stadt werden. Gibst du mir deine Zustimmung?
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_01"); //Du kommst doch auch aus der Kolonie? Da musst du mir schon einen Gefallen tun, damit wir ins Geschäft kommen.
-	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_02"); //Was wäre das für ein Gefallen?
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_03"); //Ne blöde Sache: Ich habe meine wertvolle Innos-Statue verlegt.
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_04"); //Allerdings habe ich eine Ahnung, wo sie sein könnte.
-	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_05"); //Dann erzähl mal.
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_06"); //Ist schon ein paar Tage her, da hatte ich gerade eine Truhe für Lehmar fertig gestellt.
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_07"); //Ich hab sie offen stehen gelassen, damit das Holz und der Leim atmen können.
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_08"); //In der Nacht hat die Erde gebebt, nicht spektakulär, aber das tut sie in letzter Zeit ja manchmal.
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_09"); //Und da muss die Statue aus dem Regal in die Truhe gefallen sein.
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_10"); //Am nächsten Morgen habe ich sie nur noch zugeklappt und abgeliefert.
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_11"); //Dass die Statue fehlt, ist dann meiner Frau irgendwann beim Putzen aufgefallen.
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_12"); //Der Dreckskerl von Lehmar hat sie wahrscheinlich gefunden und behalten.
-	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_13"); //Wieso fragst du ihn nicht einfach?
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_14"); //Dieses Arschloch behauptet, von nichts zu wissen.
-	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_15"); //Wenn du herausfindest, ob er die Statue hat, und sie mir zurückbringst, geb ich dir einen aus.
-	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_16"); //Mal sehen, was sich da machen lässt.
+	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_00"); //I want to be a citizen of the city. Will you give me your consent?
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_01"); //You're from the colony, aren't you? I need you to do me a favor so we can get into business.
+	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_02"); //What kind of favor would that be?
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_03"); //Stupid thing: I've misplaced my precious statue of Innos.
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_04"); //However, I do have an idea where she might be.
+	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_05"); //So tell me about it.
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_06"); //It's been a few days since I had just finished a chest for Lehmar.
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_07"); //I left them open so the wood and glue could breathe.
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_08"); //At night the earth has been trembling, not spectacular, but it has been doing so lately.
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_09"); //And that's when the statue must have fallen from the shelf into the trunk.
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_10"); //The next morning I just closed it and delivered it.
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_11"); //My wife noticed that the statue was missing when she was cleaning.
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_12"); //Lehmar's son of a bitch probably found it and kept it.
+	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_13"); //Why don't you just ask him?
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_14"); //That asshole claims he doesn't know anything.
+	AI_Output(self, hero, "Info_Mod_Thorben_Lehrling_06_15"); //If you find out if he has the statue and bring it back to me, I'll buy you one.
+	AI_Output(hero, self, "Info_Mod_Thorben_Lehrling_15_16"); //Let's see what we can do about it.
 
 	Log_CreateTopic	(TOPIC_MOD_THORBENSSTATUE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_THORBENSSTATUE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_THORBENSSTATUE, "Thorben hat eine Truhe an Lehmar verkauft, in der sich wahrscheinlich noch seine Innos-Statue befand. Ich soll sie ihm wieder beschaffen.");
+	B_LogEntry	(TOPIC_MOD_THORBENSSTATUE, "Thorben sold a chest to Lehmar, which probably still contained his statue of Innos. I'm supposed to get it back for him.");
 };
 
 INSTANCE Info_Mod_Thorben_Stimme (C_INFO)
@@ -245,7 +245,7 @@ INSTANCE Info_Mod_Thorben_Stimme (C_INFO)
 	information	= Info_Mod_Thorben_Stimme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe deine Statue.";
+	description	= "I have your statue.";
 };
 
 FUNC INT Info_Mod_Thorben_Stimme_Condition()
@@ -259,14 +259,14 @@ FUNC INT Info_Mod_Thorben_Stimme_Condition()
 
 FUNC VOID Info_Mod_Thorben_Stimme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Stimme_15_00"); //Ich habe deine Statue.
+	AI_Output(hero, self, "Info_Mod_Thorben_Stimme_15_00"); //I have your statue.
 
 	B_GiveInvItems	(hero, self, ItMi_LostInnosStatue_Daron, 1);
 
-	AI_Output(self, hero, "Info_Mod_Thorben_Stimme_06_01"); //Ja, verdammt, das ist sie! Wie hast du sie dem Pfennigfuchser abgeluchst?
-	AI_Output(hero, self, "Info_Mod_Thorben_Stimme_15_02"); //Mit genügend Geld.
-	AI_Output(self, hero, "Info_Mod_Thorben_Stimme_06_03"); //Klar, bei Lehmar geht alles übers Geld. Kann's dir aber leider nicht wiedergeben.
-	AI_Output(self, hero, "Info_Mod_Thorben_Stimme_06_04"); //Aber ich hab ja gesagt, dass wir zusammen einen heben. Da!
+	AI_Output(self, hero, "Info_Mod_Thorben_Stimme_06_01"); //Yeah, damn it, that's her! How'd you get her off that penny pinch fox?
+	AI_Output(hero, self, "Info_Mod_Thorben_Stimme_15_02"); //With enough money.
+	AI_Output(self, hero, "Info_Mod_Thorben_Stimme_06_03"); //Sure, Lehmar's all about money. Can't give it back to you, though.
+	AI_Output(self, hero, "Info_Mod_Thorben_Stimme_06_04"); //But I told you we'd have a drink together. There!
 
 	CreateInvItems	(self, ItFo_Beer, 1);
 	CreateInvItems	(hero, ItFo_Beer, 1);
@@ -274,7 +274,7 @@ FUNC VOID Info_Mod_Thorben_Stimme_Info()
 	B_UseItem	(self, ItFo_Beer);
 	B_UseItem	(hero, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Thorben_Stimme_06_05"); //Und meine Zustimmung ist dir auch sicher.
+	AI_Output(self, hero, "Info_Mod_Thorben_Stimme_06_05"); //And you're sure of my approval, too.
 
 	B_GivePlayerXP	(200);
 
@@ -295,7 +295,7 @@ INSTANCE Info_Mod_Thorben_Aufnahme (C_INFO)
 	information	= Info_Mod_Thorben_Aufnahme_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Nimmst du mich als Lehrling auf?";
+	description	= "Are you taking me on as an apprentice?";
 };
 
 FUNC INT Info_Mod_Thorben_Aufnahme_Condition()
@@ -310,65 +310,65 @@ FUNC INT Info_Mod_Thorben_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Thorben_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_15_00"); //Nimmst du mich als Lehrling auf?
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_06_01"); //Hmm, kann ja eigentlich nicht schaden. Allerdings kann ich hier keinen Gammler gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_06_02"); //Wenn du keine Arbeit hast, wirst du dir welche suchen.
+	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_15_00"); //Are you taking me on as an apprentice?
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_06_01"); //Hmm, can't hurt, actually. I don't need a bum here, though.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_06_02"); //If you don't have a job, you'll get one.
 
 	Info_ClearChoices	(Info_Mod_Thorben_Aufnahme);
 
-	Info_AddChoice	(Info_Mod_Thorben_Aufnahme, "Lieber nicht.", Info_Mod_Thorben_Aufnahme_B);
-	Info_AddChoice	(Info_Mod_Thorben_Aufnahme, "So soll es sein.", Info_Mod_Thorben_Aufnahme_A);
+	Info_AddChoice	(Info_Mod_Thorben_Aufnahme, "I'd rather not.", Info_Mod_Thorben_Aufnahme_B);
+	Info_AddChoice	(Info_Mod_Thorben_Aufnahme, "That's the way it should be.", Info_Mod_Thorben_Aufnahme_A);
 };
 
 FUNC VOID Info_Mod_Thorben_Aufnahme_B()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_B_15_00"); //Lieber nicht.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_B_06_01"); //Nicht mein Pech.
+	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_B_15_00"); //I'd rather not.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_B_06_01"); //Not my bad luck.
 
 	Info_ClearChoices	(Info_Mod_Thorben_Aufnahme);
 };
 
 FUNC VOID Info_Mod_Thorben_Aufnahme_A()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_A_15_00"); //So soll es sein.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_01"); //Na, das klingt doch schon mal gut.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_02"); //Damit wirst du auch ein Bürger von Khorinis und so. Solltest also auch wie einer rumlaufen.
+	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_A_15_00"); //That's the way it should be.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_01"); //Well, that sounds good.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_02"); //You'll be a citizen of Khorinis and all that. So you should be walking around like one.
 
 	CreateInvItems	(hero, ItAr_Vlk_H, 1);
-	B_ShowGivenThings	("Bürgerkleidung erhalten");
+	B_ShowGivenThings	("receive civilian clothes");
 
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_03"); //Jetzt werd ich dir erst mal unsere einfachsten Arbeitsabläufe erklären. Aber erst brauch ich 'nen kleinen Schluck.
-
-	CreateInvItems	(self, ItFo_Beer, 1);
-
-	B_UseItem	(self, ItFo_Beer);
-
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_04"); //Bevor du drauf los zimmerst, brauchst du einen genauen Plan von dem, was du herstellen willst.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_05"); //Kannst du gut zeichnen?
-	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_A_15_06"); //Keine Ahnung.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_07"); //Notfalls wirst du es schon lernen. In der Zeichnung markierst du jedes einzelne Stück, das du später brauchst.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_08"); //Da wir meistens Auftragsarbeit leisten, gibt es teilweise schon Zeichnungen oder sehr konkrete Vorstellungen vom Endprodukt.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_09"); //Die solltest du nicht enttäuschen. Kommt nicht gut.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_03"); //Now, I'm going to explain our simplest work processes. But first, I need a little sip.
 
 	CreateInvItems	(self, ItFo_Beer, 1);
 
 	B_UseItem	(self, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_10"); //Wenn du damit fertig bist, geht's an die Muskelarbeit.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_11"); //Mit der Säge an meinem Arbeitsplatz schneidest du dir die Holzstücke zurecht, wie du sie eben brauchst.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_12"); //Verbinden kannst du die Einzelteile durch Leimung oder durch Nägel. Dazu brauchst du auf jedenfall einen Hammer.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_13"); //Was sich in welcher Situation besser eignet, wirst du schon herausfinden.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_14"); //(leicht betrunken) Das war's eigentlich auch schon. Halt, warte!
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_15"); //Wenn du irgendwelche Verzierungen aus Metall oder so brauchst, komm zu mir, dann regeln wir das schon.
-	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_A_15_16"); //Hast du schon eine Aufgabe für mich?
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_17"); //(betrunken) Aufff...? (überlegt) Ja, schon.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_18"); //Coragon hat einen Stuhl bei mir bestellt und die Maße gleich mitgeliefert, damit er in seine Bude passt.
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_19"); //Brauchst also nur noch zu zimmern.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_04"); //Before you get started, you need an exact plan of what you want to make.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_05"); //Can you draw well?
+	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_A_15_06"); //I don't know about that.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_07"); //If necessary, you'll learn. In the drawing you mark every single piece you need later.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_08"); //Since we usually do commissioned work, there are sometimes already drawings or very concrete ideas of the final product.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_09"); //You shouldn't let them down. It's not going well.
+
+	CreateInvItems	(self, ItFo_Beer, 1);
+
+	B_UseItem	(self, ItFo_Beer);
+
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_10"); //When you're done with that, it's muscle work.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_11"); //With the saw in my workplace, you can cut the pieces of wood just as you need them.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_12"); //You can join the items by sizing or by nails. You'll definitely need a hammer.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_13"); //You will find out what is more suitable in which situation.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_14"); //(slightly drunk) That's it, actually. Stop, wait!
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_15"); //If you need any metal ornaments or anything, come to me, we'll take care of it.
+	AI_Output(hero, self, "Info_Mod_Thorben_Aufnahme_A_15_16"); //Do you have a job for me yet?
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_17"); //(drunk) Took...? (considered) Yes, yes.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_18"); //Coragon ordered a chair from me and delivered it with the dimensions so that it fits into his booth.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_19"); //So all you have to do is make rooms.
 
 	CreateInvItems	(hero, ItMi_Brett, 5);
 	CreateInvItems	(hero, ItWr_Zeichnung_Stuhl, 1);
 
-	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_20"); //Und immer schön - hicks - dran denken: Erst an die Säge, dann die Nägel. Hicks.
+	AI_Output(self, hero, "Info_Mod_Thorben_Aufnahme_A_06_20"); //And always nice - hicks - remember: First the saw, then the nails. Hicks.
 
 	Mod_IstLehrling	= 1;
 
@@ -381,11 +381,11 @@ FUNC VOID Info_Mod_Thorben_Aufnahme_A()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torlof_Auftrag))
 	{
-		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_THORBEN_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Thorben, der Tischler, hat mich als seinen Lehrling aufgenommen. Dadurch bin ich jetzt ein Bürger der Stadt.", "Ich soll für Coragon einen Stuhl anfertigen. Die Vorgaben habe ich schon, jetzt muss ich sie nur noch umsetzen.", "Da Thorben mich als seinen Lehrling aufgenommen hat ist es mir jetzt möglich das Obere Viertel zu betreten.");
+		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_THORBEN_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Thorben, the carpenter, accepted me as his apprentice. That makes me a citizen of the city now.", "I'm supposed to make a chair for Coragon. I already have the specifications, now I only have to implement them.", "Since Thorben accepted me as his apprentice it is now possible for me to enter the upper quarter.");
 	}
 	else
 	{
-		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_THORBEN_ONE, "Thorben, der Tischler, hat mich als seinen Lehrling aufgenommen. Dadurch bin ich jetzt ein Bürger der Stadt.", "Ich soll für Coragon einen Stuhl anfertigen. Die Vorgaben habe ich schon, jetzt muss ich sie nur noch umsetzen.");
+		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_THORBEN_ONE, "Thorben, the carpenter, accepted me as his apprentice. That makes me a citizen of the city now.", "I'm supposed to make a chair for Coragon. I already have the specifications, now I only have to implement them.");
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_BÜRGER, LOG_SUCCESS);
@@ -418,20 +418,20 @@ FUNC VOID Info_Mod_Thorben_GildenZeug_Info()
 {
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output(self, hero, "Info_Mod_Thorben_GildenZeug_06_00"); //Packst jetzt auch bei den Milizen ordentlich an? Bring mal Ordnung in den Saustall.
+		AI_Output(self, hero, "Info_Mod_Thorben_GildenZeug_06_00"); //Now you're putting a lot of effort into the militias? Put some order in the pigsty.
 	}
 	else if (hero.guild == GIL_VLK)
 	|| (hero.guild == GIL_NOV)
 	{
-		AI_Output(self, hero, "Info_Mod_Thorben_GildenZeug_06_01"); //Ich glaub ja nicht, dass die Luschenmagier das Richtige für dich sind.
+		AI_Output(self, hero, "Info_Mod_Thorben_GildenZeug_06_01"); //I don't think the noisy magicians are right for you.
 	}
 	else if (hero.guild == GIL_MIL)
 	{
-		AI_Output(self, hero, "Info_Mod_Thorben_GildenZeug_06_02"); //Hast eine gute Wahl getroffen mit den Söldnern. Alle anderen sind doch Weicheier, was?
+		AI_Output(self, hero, "Info_Mod_Thorben_GildenZeug_06_02"); //You made a good choice with the mercenaries. Everybody else is a wimp, aren't they?
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output(self, hero, "Info_Mod_Thorben_GildenZeug_06_03"); //Hör bloß auf mit dieser Beliar-Kacke, ja?
+		AI_Output(self, hero, "Info_Mod_Thorben_GildenZeug_06_03"); //Don't give me that Beliar shit, will you?
 	};
 };
 
@@ -443,7 +443,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier den Stuhl für Coragon.";
+	description	= "I have the chair for Coragon here.";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest_Condition()
@@ -457,16 +457,16 @@ FUNC INT Info_Mod_Thorben_LehrlingQuest_Condition()
 
 FUNC VOID Info_Mod_Thorben_LehrlingQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest_15_00"); //Ich habe hier den Stuhl für Coragon.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest_15_00"); //I have the chair for Coragon here.
 
 	B_GiveInvItems	(hero, self, ItMi_CoragonStuhl, 1);
 
 	Npc_RemoveInvItems	(self, ItMi_CoragonStuhl, 1);
 
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest_06_01"); //Lass sehen. Hicks. (untersuchend) Ja, ganz ordentlich. Denke, da wird Coragon zufrieden sein. Hicks.
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest_06_02"); //Ich meld mich, wenn ich wieder was zu tun für dich habe. So lange bist du frei. In Ordnung?
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest_15_03"); //Geht klar. Man sieht sich. Und trink nicht zu viel.
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest_06_04"); //Das lass mal meine Sorge sein.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest_06_01"); //Let me see. Hicks. Yes, quite respectable. I think Coragon will be satisfied. Hicks.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest_06_02"); //I'll let you know when I have something to do for you again. You'll be free that long. All right?
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest_15_03"); //You got it. See you around. And don't drink too much.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest_06_04"); //Let me worry about that.
 
 	B_GivePlayerXP	(100);
 
@@ -486,7 +486,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest2 (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du was zu tun für mich?";
+	description	= "You got something to do for me?";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest2_Condition()
@@ -500,20 +500,20 @@ FUNC INT Info_Mod_Thorben_LehrlingQuest2_Condition()
 
 FUNC VOID Info_Mod_Thorben_LehrlingQuest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest2_15_00"); //Hast du was zu tun für mich?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_01"); //(mit rauer Stimme) Ich hab so viel zu tun, dass ich gar nicht weiß, wo ich anfangen soll. Verdammte Scheiße. (hustet)
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest2_15_02"); //Bist du krank?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_03"); //Nein, das geht schon. Aber ich komme kaum zum Arbeiten mit diesem Husten.
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest2_15_04"); //Was steht denn an?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_05"); //Am dringendsten sind die zwei Festtische für Matteos Hochzeit. (hustet)
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_06"); //Die sind zwar einfach zu zimmern, aber es gibt noch keine Zeichnung.
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest2_15_07"); //Gibt es jemanden, den wir mit der Zeichnung beauftragen können?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_08"); //(überlegt) Brahim schuldet mir noch einen Gefallen. Hab ihm damals mit seiner Hütte ausgeholfen.
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_09"); //Du solltest ihn mal fragen. Komm dann zurück.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest2_15_00"); //You got something to do for me?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_01"); //I have so much to do, I don't even know where to start. Fucking hell. (coughs)
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest2_15_02"); //Are you sick?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_03"); //No, that's all right. But I hardly ever come to work with this cough.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest2_15_04"); //What's up next?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_05"); //The two most important tables for Matteo's wedding are the two most urgent ones. (coughs)
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_06"); //They're easy to make, but there's no drawing yet.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest2_15_07"); //Is there anyone we can hire to sign the paper?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_08"); //Brahim owes me another favor. Helped him out back then with his cabin.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest2_06_09"); //You should ask him. Come back then.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRLING_THORBEN_TWO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_THORBEN_TWO, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_TWO, "Thorben hat zwei Festtische bei mir in Auftrag gegeben. Für diese muss allerdings erst eine Zeichnung angefertigt werden. Ich soll Brahim, den Kartenverkäufer, um Hilfe bitten.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_TWO, "Thorben ordered two tables for the celebration. For this, however, a drawing has to be made first. I'm supposed to ask Brahim, the ticket vendor, for help.");
 };
 
 INSTANCE Info_Mod_Thorben_LehrlingQuest3 (C_INFO)
@@ -524,7 +524,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest3 (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Brahim hat gezeichnet.";
+	description	= "Brahim drew.";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest3_Condition()
@@ -537,8 +537,8 @@ FUNC INT Info_Mod_Thorben_LehrlingQuest3_Condition()
 
 FUNC VOID Info_Mod_Thorben_LehrlingQuest3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest3_15_00"); //Brahim hat gezeichnet.
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest3_06_01"); //Gut. Mach dich an die Arbeit, die Zeit läuft uns davon.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest3_15_00"); //Brahim drew.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest3_06_01"); //Good. Get to work, we're running out of time.
 
 	B_GiveInvItems	(self, hero, ItMi_Brett, 12);
 };
@@ -551,7 +551,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest4 (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Tische sind bereit zur Auslieferung.";
+	description	= "The tables are ready for delivery.";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest4_Condition()
@@ -565,16 +565,16 @@ FUNC INT Info_Mod_Thorben_LehrlingQuest4_Condition()
 
 FUNC VOID Info_Mod_Thorben_LehrlingQuest4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest4_15_00"); //Die Tische sind bereit zur Auslieferung.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest4_15_00"); //The tables are ready for delivery.
 
 	B_GiveInvItems	(hero, self, ItMi_MatteoFesttisch, 2);
 
 	Npc_RemoveInvItems	(self, ItMi_MatteoFesttisch, 2);
 
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest4_06_01"); //Bist ein guter Mann. Auf dich kann man sich noch verlassen.
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest4_15_02"); //Gibt es weitere dringende Aufträge?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest4_06_03"); //(hustet) Bald bestimmt wieder. Schau also mal wieder bei mir vorbei, klar?
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest4_15_04"); //Alles klar. Bis dann.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest4_06_01"); //You're a good man. You can still be counted on.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest4_15_02"); //Are there any other urgent orders?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest4_06_03"); //(coughs) Soon, no doubt. So come back and see me again, all right?
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest4_15_04"); //All clear. See you around.
 
 	B_GivePlayerXP	(200);
 
@@ -594,7 +594,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest5 (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was gibt es Neues?";
+	description	= "What's the news?";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest5_Condition()
@@ -608,25 +608,25 @@ FUNC INT Info_Mod_Thorben_LehrlingQuest5_Condition()
 
 FUNC VOID Info_Mod_Thorben_LehrlingQuest5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest5_15_00"); //Was gibt es Neues?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_01"); //(schwer atmend) Es läuft schleppend. Die Leute wollen mir keine Aufträge mehr anvertrauen. (hustet) Ich fühle mich schon fast tot.
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest5_15_02"); //Jetzt übertreib mal nicht!
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_03"); //Ich hätte eine kleine Bitte an dich: Könntest du mich morgen früh von 9 bis 12 Uhr ersetzen?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_04"); //Stell dich einfach neben die Säge oder so und nimm Aufträge entgegen.
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest5_15_05"); //Hast du keine Zeit?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_06"); //Ich muss endlich mal aussschlafen, damit ich wieder (hustet) einigermaßen zu Kräften komme.
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_07"); //Springst du also morgen für mich ein?
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest5_15_08"); //Kein Problem. Ruh dich aus.
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_09"); //Es könnte sein, dass Matteo seine Festtische abholen will.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest5_15_00"); //What's the news?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_01"); //(heavy breathing) It's slow. People don't want to give me any more assignments. (coughs) I almost feel dead.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest5_15_02"); //Don't exaggerate!
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_03"); //Could you replace me tomorrow morning from 9:00 to 12:00?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_04"); //Just stand next to the saw or something and take orders.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest5_15_05"); //Don't you have time?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_06"); //I have to get a good night's sleep so that I can cough up some strength again.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_07"); //So will you step in for me tomorrow?
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest5_15_08"); //No problem. Get some rest.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_09"); //Matteo may want to pick up his party tables.
 
 	B_GiveInvItems	(self, hero, ItMi_MatteoFesttisch, 2);
 
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_10"); //Verkauf sie ihm für 150 Gold.
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_11"); //Ich komme dann und löse dich ab.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_10"); //Sell it to him for 150 gold.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest5_06_11"); //I'll come and relieve you.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRLING_THORBEN_THREE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_THORBEN_THREE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_THREE, "Thorben will mal einen Tag ausschlafen und hat mich gebeten, am nächsten Tag von 9 bis 12 auf den Arbeitsplatz aufzupassen und Aufträge entgegen zu nehmen.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_THREE, "Thorben wants to get a good night's sleep and asked me to look after the workplace and take orders the next day from 9 to 12.");
 
 	B_StartOtherRoutine	(self, "TAGPAUSE");
 	B_StartOtherRoutine	(Mod_583_NONE_Hanna_NW, "TAGPAUSE");
@@ -656,31 +656,31 @@ FUNC INT Info_Mod_Thorben_LehrlingQuest6_Condition()
 
 FUNC VOID Info_Mod_Thorben_LehrlingQuest6_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_00"); //Wie ist es gelaufen? War jemand da?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_00"); //How did it go? Was anyone there?
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Matteo_ThorbenLehrling))
 	|| (Npc_KnowsInfo(hero, Info_Mod_Hanna_ThorbenLehrling))
 	{
 		if (Npc_KnowsInfo(hero, Info_Mod_Matteo_ThorbenLehrling))
 		{
-			AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest6_15_01"); //Matteo hat seine Tische abgeholt und bezahlt.
-			AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_02"); //Gut, behalt das Geld. Es war deine Arbeit, und es soll dein Lohn sein.
+			AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest6_15_01"); //Matteo picked up his tables and paid for them.
+			AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_02"); //All right, keep the money. It was your job, and I want it to be your reward.
 		};
 		if (Npc_KnowsInfo(hero, Info_Mod_Hanna_ThorbenLehrling))
 		{
-			AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest6_15_03"); //Hanna war hier und hat eine Reparatur ihrer Kommode in Auftrag gegeben.
-			AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_04"); //Wenigstens ein neuer Auftrag. (hustet) Darum kann ich mich noch allein kümmern.
-			AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_05"); //Ich danke dir für deine Hilfe, ohne dich müsste ich den Laden schließen.
+			AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest6_15_03"); //Hanna was here and ordered a repair of her dresser.
+			AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_04"); //At least a new assignment. (coughs) I can take care of that on my own.
+			AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_05"); //Thank you for helping me close the store without you.
 		};
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest6_15_06"); //Heute war nichts los.
-		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_07"); //Verdammter Mist! Wovon soll ich denn solange leben? Ich kann dir nicht mal eine Bezahlung anbieten.
+		AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest6_15_06"); //Nothing happened today.
+		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_07"); //Fucking hell! What am I supposed to live on? I can't even offer you a payment.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest6_15_08"); //Ich sehe bald mal wieder nach dem Rechten.
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_09"); //Tu das.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest6_15_08"); //I'll check it out soon.
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest6_06_09"); //Do that.
 
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_THORBEN_THREE, LOG_SUCCESS);
 
@@ -698,7 +698,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest7 (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest7_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier was für dich.";
+	description	= "I got something for you.";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest7_Condition()
@@ -714,14 +714,14 @@ FUNC INT Info_Mod_Thorben_LehrlingQuest7_Condition()
 
 FUNC VOID Info_Mod_Thorben_LehrlingQuest7_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest7_15_00"); //Ich habe hier was für dich.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest7_15_00"); //I got something for you.
 
 	if (Npc_HasItems(hero, ItMi_Schmuckkasten) == 1)
 	{
 		B_GiveInvItems	(hero, self, ItMi_Schmuckkasten, 1);
 
-		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_01"); //(rau) Na, wenn das mal nicht von einem Vollprofi kommt. Junge, du bist besser, als ich in meinen besten Zeiten war. (hustet)
-		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_02"); //Ich werd meiner Nichte sagen, dass sie es auf ein Regal stellen soll. Ich danke dir, so viel hätte ich nicht erwartet.
+		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_01"); //Well, if it's not from a real pro. Boy, you're better than I was in my prime. (coughs)
+		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_02"); //I'm gonna tell my niece to put it on a shelf. Thank you, I didn't expect that much.
 
 		B_GivePlayerXP	(1000);
 	}
@@ -729,8 +729,8 @@ FUNC VOID Info_Mod_Thorben_LehrlingQuest7_Info()
 	{
 		B_GiveInvItems	(hero, self, ItMi_Bierkrug, 1);
 
-		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_03"); //Oh, danke. Der wird mich immer an die Vergangenheit erinnern, fürchte ich.
-		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_04"); //Ich werd meiner Frau sagen, dass sie ihn auf ein Regal stellen soll.
+		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_03"); //Oh, thank you. Thank you. It will always remind me of the past, I'm afraid.
+		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_04"); //I'm gonna tell my wife to put it on a shelf.
 
 		B_GivePlayerXP	(800);
 	}
@@ -738,9 +738,9 @@ FUNC VOID Info_Mod_Thorben_LehrlingQuest7_Info()
 	{
 		B_GiveInvItems	(hero, self, ItMi_Karte, 1);
 
-		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_05"); //Oh, danke. Die Idee kommt sicher von Brahim, oder?
-		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_06"); //Der Junge hat eben keine Fantasie, aber damit sieht's wohl bei dir auch nicht so gut aus.
-		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_07"); //Na ja, der Wille zählt, und die Umsetzung ist auch einwandfrei.
+		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_05"); //Oh, thank you. Thank you. The idea must come from Brahim, right?
+		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_06"); //The boy doesn't have a fantasy, but I don't think it looks so good on you.
+		AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest7_06_07"); //Well, it's the will that counts, and the implementation is impeccable.
 
 		B_GivePlayerXP	(600);
 	};
@@ -760,7 +760,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest8 (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest8_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht es dir?";
+	description	= "How are you feeling?";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest8_Condition()
@@ -774,9 +774,9 @@ FUNC INT Info_Mod_Thorben_LehrlingQuest8_Condition()
 
 FUNC VOID Info_Mod_Thorben_LehrlingQuest8_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest8_15_00"); //Wie geht es dir?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest8_06_01"); //Im Moment geht es mir ziemlich beschissen. Aber das wird sich schon wieder legen. Ich lasse mich so schnell nicht kleinkriegen. (hustet)
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest8_06_02"); //Die Arbeit darf auch nicht lange ruhen, sonst haben wir bald nichts mehr zu essen.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest8_15_00"); //How are you feeling?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest8_06_01"); //I'm pretty fucked up right now. But it'll all go away. I won't let you break me in a hurry. (coughs)
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest8_06_02"); //The work must not rest for long, otherwise we will soon have nothing to eat.
 };
 
 INSTANCE Info_Mod_Thorben_LehrlingQuest9 (C_INFO)
@@ -787,7 +787,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest9 (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest9_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie steht's?";
+	description	= "What's the score?";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest9_Condition()
@@ -801,8 +801,8 @@ FUNC INT Info_Mod_Thorben_LehrlingQuest9_Condition()
 
 FUNC VOID Info_Mod_Thorben_LehrlingQuest9_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest9_15_00"); //Wie steht's?
-	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest9_06_01"); //Ich hab's gut überstanden, den Schlaganfall. Gibt nur ein paar Sachen, die ich nicht mehr koordinieren kann. Schnürsenkel zubinden beispielsweise. (hustet) Da hilft mir meine Frau.
+	AI_Output(hero, self, "Info_Mod_Thorben_LehrlingQuest9_15_00"); //What's the score?
+	AI_Output(self, hero, "Info_Mod_Thorben_LehrlingQuest9_06_01"); //I survived the stroke well. Just a few things I can't coordinate anymore. Tying up shoelaces, for example. (coughs) That's my wife helping me.
 };
 
 INSTANCE Info_Mod_Thorben_Laute (C_INFO)
@@ -813,7 +813,7 @@ INSTANCE Info_Mod_Thorben_Laute (C_INFO)
 	information	= Info_Mod_Thorben_Laute_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme wegen einem Auftrag zu dir.";
+	description	= "I'm coming to you for an assignment.";
 };
 
 FUNC INT Info_Mod_Thorben_Laute_Condition()
@@ -828,23 +828,23 @@ FUNC INT Info_Mod_Thorben_Laute_Condition()
 
 FUNC VOID Info_Mod_Thorben_Laute_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_00"); //Ich komme wegen einem Auftrag zu dir.
-	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_01"); //Um was geht es denn?
-	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_02"); //Könntest du mir eine Laute anfertigen?
-	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_03"); //(überlegt) Hmm ... ja das könnte ich.
-	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_04"); //Aber dazu brauche ich spezielle Materialien und außerdem 250 Goldmünzen, um diese Arbeit überhaupt annehmen zu können.
-	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_05"); //Das Geld habe ich schon, hier ist es.
+	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_00"); //I'm coming to you for an assignment.
+	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_01"); //What's this all about?
+	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_02"); //Could you make me a lute?
+	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_03"); //(considered) Hmm... yes, I could.
+	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_04"); //But for this I need special materials and 250 gold coins to be able to accept this work.
+	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_05"); //I already have the money, here it is.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 250);
 
-	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_06"); //Sehr gut. Also um die Laute anfertigen zu können benötige ich zwölf Äste, die du überall in den Wäldern finden kannst.
-	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_07"); //Zudem brauche ich Seide, um das Instrument überhaupt spielen zu können.
-	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_08"); //Woher soll ich denn Seide bekommen?
-	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_09"); //Natürlich bei den Händlern. Seide ist teuer, weshalb ich mir das nicht Leisten kann.
-	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_10"); //Ich brauche drei Striegen voller Seide. Das müsste reichen.
-	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_11"); //Okay, dann werde ich das Zeug mal besorgen.
+	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_06"); //Very good. Very good. So to make the sounds I need twelve branches, which you can find everywhere in the woods.
+	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_07"); //I also need silk to be able to play the instrument at all.
+	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_08"); //Where am I supposed to get silk from?
+	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_09"); //At the dealers, of course. Silk is expensive, so I can't afford it.
+	AI_Output(self, hero, "Info_Mod_Thorben_Laute_06_10"); //I need three rows of silk. That ought to do.
+	AI_Output(hero, self, "Info_Mod_Thorben_Laute_15_11"); //Okay, then I'll get that stuff.
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "Ich bin bei Thorben gewesen, doch diesem fehlen die nötigen Materialien, um eine Laute anfertigen zu können. Ich soll ihm zwölf Äste aus dem Wald bringen und zudem drei Striegen Seide, die es bei den Händlern von Khorinis zu kaufen gibt. Wenn ich den Krempel habe, soll ich mich wieder bei Thorben ankündigen.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "I have been to Thorben's, but he lacks the necessary materials to make a sound. I shall bring him twelve branches from the forest and three silk stairs, which can be bought from the merchants of Khorinis. When I have the stuff, I shall announce myself to Thorben again.");
 };
 
 INSTANCE Info_Mod_Thorben_LauteMaterialien (C_INFO)
@@ -855,7 +855,7 @@ INSTANCE Info_Mod_Thorben_LauteMaterialien (C_INFO)
 	information	= Info_Mod_Thorben_LauteMaterialien_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe alle benötigten Materialien für die Laute (...)";
+	description	= "I have all the necessary materials for the sounds (...) )";
 };
 
 FUNC INT Info_Mod_Thorben_LauteMaterialien_Condition()
@@ -870,20 +870,20 @@ FUNC INT Info_Mod_Thorben_LauteMaterialien_Condition()
 
 FUNC VOID Info_Mod_Thorben_LauteMaterialien_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LauteMaterialien_15_00"); //Ich habe alle benötigten Materialien für die Laute besorgen können.
+	AI_Output(hero, self, "Info_Mod_Thorben_LauteMaterialien_15_00"); //I was able to get all the necessary materials for the sounds.
 
 	Npc_RemoveInvItems	(hero, ItMi_Ast, 12);
 	Npc_RemoveInvItems	(hero, ItMi_Seide, 3);
 
-	B_ShowGivenThings	("12 Äste und 3 Seide gegeben");
+	B_ShowGivenThings	("12 branches and 3 silk given");
 
-	AI_Output(self, hero, "Info_Mod_Thorben_LauteMaterialien_06_01"); //(lächelnd) Gut, dann kann ich mich an die Arbeit machen.
-	AI_Output(hero, self, "Info_Mod_Thorben_LauteMaterialien_15_02"); //Wann kann ich die Laute denn abholen?
-	AI_Output(self, hero, "Info_Mod_Thorben_LauteMaterialien_06_03"); //Komm morgen wieder.
+	AI_Output(self, hero, "Info_Mod_Thorben_LauteMaterialien_06_01"); //All right, then I can get to work.
+	AI_Output(hero, self, "Info_Mod_Thorben_LauteMaterialien_15_02"); //When can I pick up the sounds?
+	AI_Output(self, hero, "Info_Mod_Thorben_LauteMaterialien_06_03"); //Come back tomorrow.
 
 	Mod_ASS_ThorbenLaute = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "Ich habe Thorben alle Materialien gebracht und er war sehr zufrieden. Morgen kann ich die Laute für Zeki endlich abholen und diese seinem neuen Besitzer bringen.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "I brought all the materials to Thorben and he was very satisfied. Tomorrow I can finally pick up the sounds for Zeki and bring them to his new owner.");
 
 	B_GivePlayerXP	(300);
 };
@@ -896,7 +896,7 @@ INSTANCE Info_Mod_Thorben_LauteFertig (C_INFO)
 	information	= Info_Mod_Thorben_LauteFertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist die Laute fertig?";
+	description	= "Is the lute ready?";
 };
 
 FUNC INT Info_Mod_Thorben_LauteFertig_Condition()
@@ -910,17 +910,17 @@ FUNC INT Info_Mod_Thorben_LauteFertig_Condition()
 
 FUNC VOID Info_Mod_Thorben_LauteFertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_LauteFertig_15_00"); //Ist die Laute fertig?
-	AI_Output(self, hero, "Info_Mod_Thorben_LauteFertig_06_01"); //Ja, es war zwar einige Arbeit, aber hier ist sie.
+	AI_Output(hero, self, "Info_Mod_Thorben_LauteFertig_15_00"); //Is the lute ready?
+	AI_Output(self, hero, "Info_Mod_Thorben_LauteFertig_06_01"); //Yes, it was some work, but here she is.
 
 	B_GiveInvItems	(self, hero, ItMi_Lute_Zeki, 1);
 
-	AI_Output(hero, self, "Info_Mod_Thorben_LauteFertig_15_02"); //Danke sehr.
-	AI_Output(self, hero, "Info_Mod_Thorben_LauteFertig_06_03"); //Gib gut auf sie acht, sie ist sehr wertvoll.
-	AI_Output(hero, self, "Info_Mod_Thorben_LauteFertig_15_04"); //Ich werde es mir merken. Bis dann.
-	AI_Output(self, hero, "Info_Mod_Thorben_LauteFertig_06_05"); //Man sieht sich.
+	AI_Output(hero, self, "Info_Mod_Thorben_LauteFertig_15_02"); //Thank you very much.
+	AI_Output(self, hero, "Info_Mod_Thorben_LauteFertig_06_03"); //Take good care of her, she's very valuable.
+	AI_Output(hero, self, "Info_Mod_Thorben_LauteFertig_15_04"); //I'll keep it in mind. See you around.
+	AI_Output(self, hero, "Info_Mod_Thorben_LauteFertig_06_05"); //See you around.
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "Thorben hat die Laute für Zeki fertigstellen können und hat sie mir wie versprochen gegeben. Jetzt muss ich sie nur noch Zeki bringen und dann ist mir eine Stimme bei den gaunern sicher.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "Thorben was able to finish the sounds for Zeki and gave them to me as promised. Now all I have to do is bring her to Zeki and then I'll have a voice with the brats.");
 
 	B_GivePlayerXP	(100);
 
@@ -935,7 +935,7 @@ INSTANCE Info_Mod_Thorben_BDTSchatzkisten (C_INFO)
 	information	= Info_Mod_Thorben_BDTSchatzkisten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir diese zwei Schatzkisten öffnen?";
+	description	= "Can you open these two treasure chests for me?";
 };
 
 FUNC INT Info_Mod_Thorben_BDTSchatzkisten_Condition()
@@ -951,8 +951,8 @@ FUNC INT Info_Mod_Thorben_BDTSchatzkisten_Condition()
 
 FUNC VOID Info_Mod_Thorben_BDTSchatzkisten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_BDTSchatzkisten_15_00"); //Kannst du mir diese zwei Schatzkisten öffnen?
-	AI_Output(self, hero, "Info_Mod_Thorben_BDTSchatzkisten_06_01"); //Natürlich kann ich das. Aber ich kann es leider nicht umsonst machen. Gib mir wenigstens 200 Goldmünzen dafür.
+	AI_Output(hero, self, "Info_Mod_Thorben_BDTSchatzkisten_15_00"); //Can you open these two treasure chests for me?
+	AI_Output(self, hero, "Info_Mod_Thorben_BDTSchatzkisten_06_01"); //Of course I can. But I can't do it for nothing. At least give me 200 gold coins for it.
 };
 
 INSTANCE Info_Mod_Thorben_BDTSchatzkisten_Open (C_INFO)
@@ -963,7 +963,7 @@ INSTANCE Info_Mod_Thorben_BDTSchatzkisten_Open (C_INFO)
 	information	= Info_Mod_Thorben_BDTSchatzkisten_Open_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Öffne mir die Kisten.";
+	description	= "Open the crates.";
 };
 
 FUNC INT Info_Mod_Thorben_BDTSchatzkisten_Open_Condition()
@@ -979,15 +979,15 @@ FUNC INT Info_Mod_Thorben_BDTSchatzkisten_Open_Condition()
 
 FUNC VOID Info_Mod_Thorben_BDTSchatzkisten_Open_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_BDTSchatzkisten_Open_15_00"); //Öffne mir die Kisten.
+	AI_Output(hero, self, "Info_Mod_Thorben_BDTSchatzkisten_Open_15_00"); //Open the crates.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
-	AI_Output(self, hero, "Info_Mod_Thorben_BDTSchatzkisten_Open_06_01"); //Gut, moment ...
+	AI_Output(self, hero, "Info_Mod_Thorben_BDTSchatzkisten_Open_06_01"); //Well, wait a minute...
 
 	AI_PlayAni	(self, "T_PLUNDER");
 
-	AI_Output(self, hero, "Info_Mod_Thorben_BDTSchatzkisten_Open_06_02"); //Da hast du deine Kisten wieder. Du kannst sie jetzt selber öffnen, die Schlösser sind geknackt.
+	AI_Output(self, hero, "Info_Mod_Thorben_BDTSchatzkisten_Open_06_02"); //Here's your boxes back. You can open it yourself now, the locks are cracked.
 };
 
 INSTANCE Info_Mod_Thorben_Paddel (C_INFO)
@@ -998,7 +998,7 @@ INSTANCE Info_Mod_Thorben_Paddel (C_INFO)
 	information	= Info_Mod_Thorben_Paddel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche Paddel.";
+	description	= "I'm looking for paddles.";
 };
 
 FUNC INT Info_Mod_Thorben_Paddel_Condition()
@@ -1013,13 +1013,13 @@ FUNC INT Info_Mod_Thorben_Paddel_Condition()
 
 FUNC VOID Info_Mod_Thorben_Paddel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Paddel_15_00"); //Ich suche Paddel.
-	AI_Output(self, hero, "Info_Mod_Thorben_Paddel_06_01"); //Paddel sagst du? Hm ... Zedernholz wäre wohl das Richtige. Biegsam und wenig wasserempfindlich.
-	AI_Output(self, hero, "Info_Mod_Thorben_Paddel_06_02"); //Aber hier auf der Insel wachsen keine Zedern. Sonst wüsste ich davon. Tut mir leid.
-	AI_Output(hero, self, "Info_Mod_Thorben_Paddel_15_03"); //Kann man nichts machen. Wen könnte ich noch Fragen.
-	AI_Output(self, hero, "Info_Mod_Thorben_Paddel_06_04"); //Frag doch mal Kardif, der hat manchmal so Sonderposten.
+	AI_Output(hero, self, "Info_Mod_Thorben_Paddel_15_00"); //I'm looking for paddles.
+	AI_Output(self, hero, "Info_Mod_Thorben_Paddel_06_01"); //You say paddle? Hm... I think cedar wood would be the right thing to do. Flexible and not sensitive to water.
+	AI_Output(self, hero, "Info_Mod_Thorben_Paddel_06_02"); //But there are no cedars growing on the island. Otherwise I'd know about it. Sorry about that.
+	AI_Output(hero, self, "Info_Mod_Thorben_Paddel_15_03"); //There's nothing you can do. Who else could I ask?
+	AI_Output(self, hero, "Info_Mod_Thorben_Paddel_06_04"); //Why don't you ask Cardif, he's got special offers sometimes.
 
-	B_LogEntry	(TOPIC_MOD_SKIP_PADDEL, "Thorben hat zwar keine Paddel, gab mir aber den Tipp mal bei Kardif nachzufragen.");
+	B_LogEntry	(TOPIC_MOD_SKIP_PADDEL, "Thorben doesn't have a paddle, but gave me the tip to ask Kardif.");
 };
 
 INSTANCE Info_Mod_Thorben_Dietriche (C_INFO)
@@ -1030,7 +1030,7 @@ INSTANCE Info_Mod_Thorben_Dietriche (C_INFO)
 	information	= Info_Mod_Thorben_Dietriche_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Hast du noch Dietriche für mich?";
+	description	= "Do you still have diets for me?";
 };
 
 FUNC INT Info_Mod_Thorben_Dietriche_Condition()
@@ -1045,36 +1045,36 @@ FUNC INT Info_Mod_Thorben_Dietriche_Condition()
 
 FUNC VOID Info_Mod_Thorben_Dietriche_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Dietriche_15_00"); //Hast du noch Dietriche für mich?
-	AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_06_01"); //Hmm, nein, du hast mir alle abgekauft. Ich müsste erst wieder welche machen lassen, aber das dauert seine Zeit.
+	AI_Output(hero, self, "Info_Mod_Thorben_Dietriche_15_00"); //Do you still have diets for me?
+	AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_06_01"); //Hmm, no, you bought them all off me. I'd have to get some done first, but it'll take time.
 
 	Info_ClearChoices	(Info_Mod_Thorben_Dietriche);
 
-	Info_AddChoice	(Info_Mod_Thorben_Dietriche, "Dann warte ich so lange.", Info_Mod_Thorben_Dietriche_B);
-	Info_AddChoice	(Info_Mod_Thorben_Dietriche, "Kann ich die Zeit irgendwie abkürzen?", Info_Mod_Thorben_Dietriche_A);
+	Info_AddChoice	(Info_Mod_Thorben_Dietriche, "I'll wait that long.", Info_Mod_Thorben_Dietriche_B);
+	Info_AddChoice	(Info_Mod_Thorben_Dietriche, "Is there any way I can shorten the time?", Info_Mod_Thorben_Dietriche_A);
 };
 
 FUNC VOID Info_Mod_Thorben_Dietriche_B()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Dietriche_B_15_00"); //Dann warte ich so lange.
+	AI_Output(hero, self, "Info_Mod_Thorben_Dietriche_B_15_00"); //I'll wait that long.
 
 	Info_ClearChoices	(Info_Mod_Thorben_Dietriche);
 };
 
 FUNC VOID Info_Mod_Thorben_Dietriche_A()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Dietriche_A_15_00"); //Kann ich die Zeit irgendwie abkürzen?
+	AI_Output(hero, self, "Info_Mod_Thorben_Dietriche_A_15_00"); //Is there any way I can shorten the time?
 
 	if (!Mod_Thorben_Robert) {
-		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_01"); //Du könntest mir eine Menge Laufarbeit ersparen. Neue Dietriche kann ich nur in Khorata beim Schmied Robert in Auftrag geben.
-		AI_Output(hero, self, "Info_Mod_Thorben_Dietriche_A_15_02"); //Aber hier gibt es doch auch Schmiede.
-		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_03"); //Um Dietriche in größeren Mengen herstellen zu können, muss viel Rohstahl eingeschmolzen werden.
-		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_04"); //Das kann Harad mit seinem kleinen Feuerchen nicht.
-		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_05"); //Wenn du dich darum kümmerst, Robert Bescheid zu sagen, kann ich dir bald wieder Dietriche verkaufen.
+		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_01"); //You could save me a lot of legwork. I can only commission the blacksmith Robert in Khorata to do new diets.
+		AI_Output(hero, self, "Info_Mod_Thorben_Dietriche_A_15_02"); //But there are also blacksmiths here.
+		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_03"); //Much crude steel has to be melted down in order to produce large quantities of die screeds.
+		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_04"); //Harad can't do that with his little fire.
+		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_05"); //If you take care of telling Robert, I can sell you Dietriches again soon.
 
 		Mod_Thorben_Robert = TRUE;
 	} else {
-		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_06"); //Du weißt ja, was zu tun ist ... geh zu Robert in Khorata.
+		AI_Output(self, hero, "Info_Mod_Thorben_Dietriche_A_06_06"); //You know what to do.... go to Robert in Khorata.
 	};
 
 	Mod_Thorben_Dietriche = 1;
@@ -1090,7 +1090,7 @@ INSTANCE Info_Mod_Thorben_Dietriche2 (C_INFO)
 	information	= Info_Mod_Thorben_Dietriche2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich gehe zu Robert.";
+	description	= "I'm going to see Robert.";
 };
 
 FUNC INT Info_Mod_Thorben_Dietriche2_Condition()
@@ -1103,8 +1103,8 @@ FUNC INT Info_Mod_Thorben_Dietriche2_Condition()
 
 FUNC VOID Info_Mod_Thorben_Dietriche2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorben_Dietriche2_15_00"); //Ich gehe zu Robert.
-	AI_Output(self, hero, "Info_Mod_Thorben_Dietriche2_06_01"); //In Ordnung. Bring ihm am besten fünf Stangen Rohstahl und einen Lohn von 100 Goldmünzen mit, dann kann er gleich anfangen.
+	AI_Output(hero, self, "Info_Mod_Thorben_Dietriche2_15_00"); //I'm going to see Robert.
+	AI_Output(self, hero, "Info_Mod_Thorben_Dietriche2_06_01"); //All right, all right. Bring him five bars of crude steel and a wage of 100 gold coins, and he can start right away.
 
 	Mod_Thorben_Dietriche = 2;
 };
@@ -1129,7 +1129,7 @@ FUNC INT Info_Mod_Thorben_Dietriche3_Condition()
 
 FUNC VOID Info_Mod_Thorben_Dietriche3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thorben_Dietriche3_06_00"); //Die Dietriche sind gerade angekommen. Danke für deine Hilfe.
+	AI_Output(self, hero, "Info_Mod_Thorben_Dietriche3_06_00"); //Dietriches just arrived. Thanks for your help.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -1153,7 +1153,7 @@ INSTANCE Info_Mod_Thorben_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Thorben_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "I saw your poster on the billboard...";
 };
 
 FUNC INT Info_Mod_Thorben_Anschlagtafel_Condition()
@@ -1186,12 +1186,12 @@ FUNC VOID Info_Mod_Thorben_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItMi_Brush, Mod_Anschlagtafel_Khorinis_Thorben_Buerste);
 		Npc_RemoveInvItems	(hero, ItMi_Saw, Mod_Anschlagtafel_Khorinis_Thorben_Saege);
 
-		AI_Output(self, hero, "Info_Mod_Thorben_Anschlagtafel_06_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Thorben_Anschlagtafel_06_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Thorben_Anschlagtafel_06_00"); //What? Show me... In fact, all of it. Very well done.
+		AI_Output(self, hero, "Info_Mod_Thorben_Anschlagtafel_06_01"); //Here's your reward.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Thorben_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Thorben_Anschlagtafel_06_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Thorben_Anschlagtafel_06_02"); //Nice doing business with you.
 
 		if (Mod_Anschlagtafel_Khorinis_Thorben_Gold < 200)
 		{
@@ -1246,7 +1246,7 @@ FUNC VOID Info_Mod_Thorben_Trade_Info()
 	if (Mod_ThorbenTrader == FALSE)
 	{
 		Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Thorben verkauft Dietriche.");
+		B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Thorben sells Dietrichche.");
 
 		Mod_ThorbenTrader = 1;
 	};
@@ -1392,9 +1392,9 @@ FUNC VOID Info_Mod_Thorben_EXIT_Info()
 	if (Npc_KnowsInfo(hero, Info_Mod_Thorben_LehrlingQuest7))
 	&& (Mod_Thorben_Lehrling_Weg == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Thorben_EXIT_06_00"); //Ich entlasse dich hiermit als Lehrling. Du hast mir gut gedient und deinen Meister überflügelt. Sei stolz auf dich. Aus dir kann noch was werden.
-		AI_Output(hero, self, "Info_Mod_Thorben_EXIT_15_01"); //Gute Besserung. Vielleicht sieht man sich mal wieder.
-		AI_Output(self, hero, "Info_Mod_Thorben_EXIT_06_02"); //Meine Rede! Gib auf dich Acht!
+		AI_Output(self, hero, "Info_Mod_Thorben_EXIT_06_00"); //I hereby dismiss you as an apprentice. You have served me well and outstripped your master. Be proud of yourself. You can still be something.
+		AI_Output(hero, self, "Info_Mod_Thorben_EXIT_15_01"); //Get well soon. Maybe we'll meet again sometime.
+		AI_Output(self, hero, "Info_Mod_Thorben_EXIT_06_02"); //My speech! Take care of yourself!
 	};
 
 	AI_StopProcessInfos	(self);

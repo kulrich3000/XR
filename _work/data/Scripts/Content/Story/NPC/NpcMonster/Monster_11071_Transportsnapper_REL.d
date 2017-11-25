@@ -1,6 +1,6 @@
 INSTANCE Monster_11071_Transportsnapper_REL	(Npc_Default)
 {
-	name	=	"Transportsnapper";
+	name	=	"transport catch";
 	
 	guild							=	GIL_SHEEP;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SNAPPER;

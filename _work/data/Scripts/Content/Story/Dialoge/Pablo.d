@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Pablo_Mortis (C_INFO)
 	information	= Info_Mod_Pablo_Mortis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mortis schickt mich.";
+	description	= "Mortis sent me.";
 };
 
 FUNC INT Info_Mod_Pablo_Mortis_Condition()
@@ -42,8 +42,8 @@ FUNC INT Info_Mod_Pablo_Mortis_Condition()
 
 FUNC VOID Info_Mod_Pablo_Mortis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Mortis_15_00"); //Mortis schickt mich. Ich soll dich fragen ob alles in Ordnung ist.
-	AI_Output(self, hero, "Info_Mod_Pablo_Mortis_12_01"); //Bring mir erst mal ein Brot, einen Käse und eine Flasche Wasser.
+	AI_Output(hero, self, "Info_Mod_Pablo_Mortis_15_00"); //Mortis sent me. I'm supposed to ask you if everything's okay.
+	AI_Output(self, hero, "Info_Mod_Pablo_Mortis_12_01"); //Bring me some bread, cheese and a bottle of water.
 };
 
 INSTANCE Info_Mod_Pablo_Infos (C_INFO)
@@ -54,7 +54,7 @@ INSTANCE Info_Mod_Pablo_Infos (C_INFO)
 	information	= Info_Mod_Pablo_Infos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab dein Essen.";
+	description	= "Got your food.";
 };
 
 FUNC INT Info_Mod_Pablo_Infos_Condition()
@@ -70,19 +70,19 @@ FUNC INT Info_Mod_Pablo_Infos_Condition()
 
 FUNC VOID Info_Mod_Pablo_Infos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Infos_15_00"); //Ich hab dein Essen.
+	AI_Output(hero, self, "Info_Mod_Pablo_Infos_15_00"); //Got your food.
 
 	Npc_RemoveInvItems	(hero, ItFo_Water, 1);
 	Npc_RemoveInvItems	(hero, ItFo_Cheese, 1);
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 1);
 
-	B_ShowGivenThings	("Wasser, Käse und Brot gegeben");
+	B_ShowGivenThings	("Water, cheese and bread added");
 
-	AI_Output(self, hero, "Info_Mod_Pablo_Infos_12_01"); //Danke.
-	AI_Output(hero, self, "Info_Mod_Pablo_Infos_15_02"); //Sagst du mir jetzt ob alles in Ordnung ist?
-	AI_Output(self, hero, "Info_Mod_Pablo_Infos_12_03"); //Bei mir ist alles in Ordnung.
+	AI_Output(self, hero, "Info_Mod_Pablo_Infos_12_01"); //Thanks.
+	AI_Output(hero, self, "Info_Mod_Pablo_Infos_15_02"); //Are you gonna tell me if everything's okay?
+	AI_Output(self, hero, "Info_Mod_Pablo_Infos_12_03"); //Everything's fine with me.
 
-	B_LogEntry	(TOPIC_MOD_MORTIS_KONTROLLE, "Bei Pablo ist alles in Ordnung.");
+	B_LogEntry	(TOPIC_MOD_MORTIS_KONTROLLE, "There's nothing wrong with Pablo.");
 
 	B_Göttergefallen(1, 1);
 
@@ -109,20 +109,20 @@ FUNC INT Info_Mod_Pablo_RLMord_Condition()
 
 FUNC VOID Info_Mod_Pablo_RLMord_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_12_00"); //Hier haben Unbefugte keine ... Oh, du bist einer von uns.
-	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_12_01"); //Andre hat mir bereits gesagt, dass er dich schicken würde. Wir vernehmen gerade die Anwesenden. Die Leiche ist oben im 2. Zimmer.
+	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_12_00"); //Unauthorized persons have no... Oh, you're one of us.
+	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_12_01"); //Andre already told me he was gonna send you. We're just interrogating those present. Body's upstairs on the second floor. room.
 
 	Info_ClearChoices	(Info_Mod_Pablo_RLMord);
 
-	Info_AddChoice	(Info_Mod_Pablo_RLMord, "Bei welcher der Prostituierten war Jason?", Info_Mod_Pablo_RLMord_C);
-	Info_AddChoice	(Info_Mod_Pablo_RLMord, "Wer war zum Mordzeitpunkt alles anwesend?", Info_Mod_Pablo_RLMord_B);
-	Info_AddChoice	(Info_Mod_Pablo_RLMord, "Wann geschah der Mord?", Info_Mod_Pablo_RLMord_A);
+	Info_AddChoice	(Info_Mod_Pablo_RLMord, "Which one of the prostitutes was Jason with?", Info_Mod_Pablo_RLMord_C);
+	Info_AddChoice	(Info_Mod_Pablo_RLMord, "Who was present at the time of the murder?", Info_Mod_Pablo_RLMord_B);
+	Info_AddChoice	(Info_Mod_Pablo_RLMord, "When did the murder take place?", Info_Mod_Pablo_RLMord_A);
 };
 
 FUNC VOID Info_Mod_Pablo_RLMord_C()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_RLMord_C_15_00"); //Bei welcher der Prostituierten war Jason?
-	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_C_12_01"); //Bei Giselle, der mit dem blauen Kleid.
+	AI_Output(hero, self, "Info_Mod_Pablo_RLMord_C_15_00"); //Which one of the prostitutes was Jason with?
+	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_C_12_01"); //By Giselle, the one with the blue dress.
 
 	Mod_PAL_RLChoices += 1;
 
@@ -134,9 +134,9 @@ FUNC VOID Info_Mod_Pablo_RLMord_C()
 
 FUNC VOID Info_Mod_Pablo_RLMord_B()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_RLMord_B_15_00"); //Wer war zum Mordzeitpunkt alles anwesend?
-	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_B_12_01"); //Naja, zum einen Giselle, die ihn ... bediente, dann noch drei weitere Prostituierte und zwei Freier.
-	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_B_12_02"); //Die beiden anderen Paare werden gerade vernommen, waren aber augenscheinlich in ... einander vertieft, als der Mord begangen wurden.
+	AI_Output(hero, self, "Info_Mod_Pablo_RLMord_B_15_00"); //Who was present at the time of the murder?
+	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_B_12_01"); //Well, on the one hand, Giselle, who... three other prostitutes and two suitors.
+	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_B_12_02"); //The other two couples are being interrogated, but apparently they were in... when the murder was committed.
 
 	Mod_PAL_RLChoices += 1;
 
@@ -148,8 +148,8 @@ FUNC VOID Info_Mod_Pablo_RLMord_B()
 
 FUNC VOID Info_Mod_Pablo_RLMord_A()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_RLMord_A_15_00"); //Wann geschah der Mord?
-	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_A_12_01"); //Heute früh gegen 4 Uhr.
+	AI_Output(hero, self, "Info_Mod_Pablo_RLMord_A_15_00"); //When did the murder take place?
+	AI_Output(self, hero, "Info_Mod_Pablo_RLMord_A_12_01"); //This morning, about 4:00.
 
 	Mod_PAL_RLChoices += 1;
 
@@ -179,36 +179,36 @@ FUNC INT Info_Mod_Pablo_Giselle_Condition()
 
 FUNC VOID Info_Mod_Pablo_Giselle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_12_00"); //Und, schon was herausgefunden?
-	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_15_01"); //Irgendwas ist hier merkwürdig und zwar ...
+	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_12_00"); //Find out anything yet?
+	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_15_01"); //There's something weird about this place that's--
 
 	Info_ClearChoices	(Info_Mod_Pablo_Giselle);
 
-	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... die Waffe des Mörders.", Info_Mod_Pablo_Giselle_E);
-	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... die Waffe des Opfers.", Info_Mod_Pablo_Giselle_D);
-	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... die Wunde.", Info_Mod_Pablo_Giselle_C);
-	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... das Zimmer.", Info_Mod_Pablo_Giselle_B);
-	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... die Lage der Leiche.", Info_Mod_Pablo_Giselle_A);
+	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... the murderer's weapon.", Info_Mod_Pablo_Giselle_E);
+	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... the victim's weapon.", Info_Mod_Pablo_Giselle_D);
+	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... the wound.", Info_Mod_Pablo_Giselle_C);
+	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... the room.", Info_Mod_Pablo_Giselle_B);
+	Info_AddChoice	(Info_Mod_Pablo_Giselle, "... the location of the body.", Info_Mod_Pablo_Giselle_A);
 };
 
 FUNC VOID Info_Mod_Pablo_Giselle_F()
 {
-	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_F_12_00"); //Nein, das scheint mir alles ins Bild zu passen.
+	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_F_12_00"); //No, it all seems to fit the picture.
 
 	Mod_PAL_Pablo_FirstRaetsel += 1;
 };
 
 FUNC VOID Info_Mod_Pablo_Giselle_E()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_E_15_00"); //... die Waffe des Mörders.
+	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_E_15_00"); //... the murderer's weapon.
 
 	Info_Mod_Pablo_Giselle_F();
 };
 
 FUNC VOID Info_Mod_Pablo_Giselle_D()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_D_15_00"); //... die Waffe des Opfers.
-	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_D_12_01"); //Du hast recht ... irgendwas stimmt da nicht ... aber was?
+	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_D_15_00"); //... the victim's weapon.
+	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_D_12_01"); //You're right... something's not right.... but what?
 
 	if (Mod_PAL_Pablo_FirstRaetsel == 0)
 	{
@@ -225,36 +225,36 @@ FUNC VOID Info_Mod_Pablo_Giselle_D()
 
 	Info_ClearChoices	(Info_Mod_Pablo_Giselle);
 
-	Info_AddChoice	(Info_Mod_Pablo_Giselle, "Die Waffe ist gezogen.", Info_Mod_Pablo_Giselle_I);
-	Info_AddChoice	(Info_Mod_Pablo_Giselle, "Die Waffe ist stumpf.", Info_Mod_Pablo_Giselle_H);
-	Info_AddChoice	(Info_Mod_Pablo_Giselle, "Das ist nicht seine Waffe.", Info_Mod_Pablo_Giselle_G);
+	Info_AddChoice	(Info_Mod_Pablo_Giselle, "The gun is drawn.", Info_Mod_Pablo_Giselle_I);
+	Info_AddChoice	(Info_Mod_Pablo_Giselle, "The weapon is blunt.", Info_Mod_Pablo_Giselle_H);
+	Info_AddChoice	(Info_Mod_Pablo_Giselle, "That's not his gun.", Info_Mod_Pablo_Giselle_G);
 };
 
 FUNC VOID Info_Mod_Pablo_Giselle_C()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_C_15_00"); //... die Wunde.
+	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_C_15_00"); //... the wound.
 
 	Info_Mod_Pablo_Giselle_F();
 };
 
 FUNC VOID Info_Mod_Pablo_Giselle_B()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_B_15_00"); //... das Zimmer.
+	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_B_15_00"); //... the room.
 
 	Info_Mod_Pablo_Giselle_F();
 };
 
 FUNC VOID Info_Mod_Pablo_Giselle_A()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_A_15_00"); //... die Lager der Leiche.
+	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_A_15_00"); //... the body's bearings.
 
 	Info_Mod_Pablo_Giselle_F();
 };
 
 FUNC VOID Info_Mod_Pablo_Giselle_I()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_I_15_00"); //Die Waffe ist gezogen.
-	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_I_12_01"); //Du hast recht ... Giselle hat doch gesagt, dass er ohne Vorwarnung getötet wurde.
+	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_I_15_00"); //The gun is drawn.
+	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_I_12_01"); //You're right... Giselle said he was killed without warning.
 
 	if (Mod_PAL_Pablo_SecondRaetsel == 0)
 	{
@@ -265,23 +265,23 @@ FUNC VOID Info_Mod_Pablo_Giselle_I()
 		B_GivePlayerXP	(250);
 	};
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Jason hatte seine Waffe gezogen. Er kann also nicht überraschend gestorben sein. Ich sollte nochmal mit Giselle reden.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Jason had pulled out his gun. So he couldn't have died unexpectedly. I should talk to Giselle again.");
 
 	Info_ClearChoices	(Info_Mod_Pablo_Giselle);
 };
 
 FUNC VOID Info_Mod_Pablo_Giselle_H()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_H_15_00"); //Die Waffe ist stumpf.
-	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_H_12_01"); //Die ist scharf wie ein Rasiermesser.
+	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_H_15_00"); //The weapon is blunt.
+	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_H_12_01"); //She's sharp as a razor.
 
 	Mod_PAL_Pablo_SecondRaetsel += 1;
 };
 
 FUNC VOID Info_Mod_Pablo_Giselle_G()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_G_15_00"); //Das ist nicht seine Waffe.
-	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_G_12_01"); //Doch, die gehört ihm. Dienstwaffe.
+	AI_Output(hero, self, "Info_Mod_Pablo_Giselle_G_15_00"); //That's not his gun.
+	AI_Output(self, hero, "Info_Mod_Pablo_Giselle_G_12_01"); //Yes, it belongs to him. Service weapon.
 
 	Mod_PAL_Pablo_SecondRaetsel += 1;
 };
@@ -294,7 +294,7 @@ INSTANCE Info_Mod_Pablo_GiselleFlucht (C_INFO)
 	information	= Info_Mod_Pablo_GiselleFlucht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Giselle verschweigt uns etwas.";
+	description	= "Giselle's keeping something from us.";
 };
 
 FUNC INT Info_Mod_Pablo_GiselleFlucht_Condition()
@@ -307,12 +307,12 @@ FUNC INT Info_Mod_Pablo_GiselleFlucht_Condition()
 
 FUNC VOID Info_Mod_Pablo_GiselleFlucht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pablo_GiselleFlucht_15_00"); //Giselle verschweigt uns etwas. Sie hat sich in der Kammer des Besitzers eingesperrt und weigert sich raus zu kommen.
-	AI_Output(self, hero, "Info_Mod_Pablo_GiselleFlucht_12_01"); //Immer diese hysterischen Weiber. Als würde sie uns dadurch entkommen. Ich werde Neron anweisen, das Problem zu lösen. Bis dahin kannst du ja noch ein paar Beweise suchen oder was auch immer.
+	AI_Output(hero, self, "Info_Mod_Pablo_GiselleFlucht_15_00"); //Giselle's keeping something from us. She locked herself in the owner's chamber and refuses to come out.
+	AI_Output(self, hero, "Info_Mod_Pablo_GiselleFlucht_12_01"); //Always those hysterical chicks. It's like she's getting away from us. I will instruct Neron to solve the problem. Until then, you can find some more evidence or whatever.
 
 	Wld_InsertNpc	(Mod_7235_NONE_Galf_NW, "NW_CITY_HABOUR_PUFF_NADJA");
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Pablo wird sich darum kümmern, dass Giselle zu vernunft kommt. Ich soll mich derweil noch ein wenig umsehen und nach Beweisen suchen.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Pablo will see to it that Giselle comes to her senses. Meanwhile, I'm supposed to look around a bit and look for evidence.");
 };
 
 INSTANCE Info_Mod_Pablo_GalfKo (C_INFO)
@@ -335,9 +335,9 @@ FUNC INT Info_Mod_Pablo_GalfKo_Condition()
 
 FUNC VOID Info_Mod_Pablo_GalfKo_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pablo_GalfKo_12_00"); //Ich sagte Beweise suchen und nicht Leute in die Eingangshalle schmeißen! Das nennst du Ermittlungsarbeit? Wer ist dieser Typ überhaupt?
-	AI_Output(hero, self, "Info_Mod_Pablo_GalfKo_15_01"); //Sein Name ist Galf. Mehr weiß ich auch nicht.
-	AI_Output(self, hero, "Info_Mod_Pablo_GalfKo_12_02"); //Na schön, ich werde mal versuchen ihn aufzuwecken.
+	AI_Output(self, hero, "Info_Mod_Pablo_GalfKo_12_00"); //I said look for evidence and don't throw people in the lobby! That's what you call investigative work? Who is this guy anyway?
+	AI_Output(hero, self, "Info_Mod_Pablo_GalfKo_15_01"); //His name is Galf. That's all I know.
+	AI_Output(self, hero, "Info_Mod_Pablo_GalfKo_12_02"); //All right, I'll try waking him up.
 
 	AI_StopProcessInfos	(self);
 };
@@ -364,7 +364,7 @@ FUNC VOID Info_Mod_Pablo_GalfCall_Info()
 {
 	AI_TurnToNpc	(self, Mod_7235_NONE_Galf_NW);
 
-	AI_Output(self, hero, "Info_Mod_Pablo_GalfCall_12_00"); //Galf! Aufwachen!
+	AI_Output(self, hero, "Info_Mod_Pablo_GalfCall_12_00"); //Galf! Wake up!
 	
 	AI_StopProcessInfos	(self);
 
@@ -391,7 +391,7 @@ FUNC INT Info_Mod_Pablo_GiselleGeknackt_Condition()
 
 FUNC VOID Info_Mod_Pablo_GiselleGeknackt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pablo_GiselleGeknackt_12_00"); //Gut gemacht. Berichte nun Lord Andre, was hier vorgefallen ist.
+	AI_Output(self, hero, "Info_Mod_Pablo_GiselleGeknackt_12_00"); //Well done. Now report to Lord Andre on what happened here.
 	
 	AI_StopProcessInfos	(self);
 };

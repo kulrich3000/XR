@@ -1,7 +1,7 @@
 INSTANCE Mod_4019_VMG_Faice_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Faice";
+	name 		= "faice";
 	guild 		= GIL_OUT;
 	id 			= 4019;
 	voice 		= 3;

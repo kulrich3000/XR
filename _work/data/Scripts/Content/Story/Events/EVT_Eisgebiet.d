@@ -1,6 +1,6 @@
 //****************************
 // 	Das Eisgebiet, sonst nichts.
-CONST STRING MOBNAME_HEXENBUCHREGAL			= "Bücherregal";
+CONST STRING MOBNAME_HEXENBUCHREGAL			= "bookshelf";
 
 var int NORDMINEMINEERZ_1_Amount;
 var int NORDMINEMINEERZ_2_Amount;
@@ -1060,7 +1060,7 @@ FUNC INT B_NORDMINE_Bestimmung()
 
 INSTANCE Dragon_Ice_EISGEBIT	(Mst_Default_Dragon_Ice)
 {
-	name	=	"Winterdrache";
+	name	=	"winter dragon";
 	B_SetVisuals_Dragon_Ice();
 
 	Npc_SetToFistMode(self);
@@ -1082,7 +1082,7 @@ INSTANCE IcewolfEISGEBIET	(Mst_Default_Icewolf)
 {
 
 	//----- Monster ----
-	name							=	"Eiswolf";
+	name							=	"Ice Wolf";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Icewolf;
 	level							=	10;		
@@ -1130,7 +1130,7 @@ INSTANCE StoneguardianEisbebiet	(Mst_Addon_Stoneguardian)
 INSTANCE OrkScout_Schnee_Ork (Mst_Default_OrcScout)			
 {
 	//----- Monster -----
-	name							=	"Ork Jäger";
+	name							=	"Orc Hunter";
 	guild							=	GIL_ORC;
 	id			= 	10015;
 	voice							=	18;
@@ -1175,7 +1175,7 @@ func void B_SetVisuals_Zombie_Eisschnee()
 
 INSTANCE Zombie_Eisschnee		(Mst_Default_Zombie)
 {
-	name = "Erfrorener";
+	name = "freezer";
 
 	B_SetVisuals_Zombie_Eisschnee();
 	Npc_SetToFistMode(self);
@@ -1208,7 +1208,7 @@ func void B_SetVisuals_Meatbugzwerg()
 INSTANCE Meatbugzwerg	(Mst_Default_Meatbug)
 {
 
-name	= "IbuHexal akut";
+name	= "IbuHexal acute";
 	B_SetVisuals_Meatbugzwerg();
 };
 
@@ -1231,7 +1231,7 @@ INSTANCE Troll_Black_Eis	(Mst_Default_Troll_Black)
 
 
 	//----- Monster ----
-	name							=	"Schwarzer Troll";
+	name							=	"Black Troll";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL_BLACK;
 	level							=	200; //40
@@ -1265,7 +1265,7 @@ INSTANCE Troll_Black_Eis	(Mst_Default_Troll_Black)
 
 INSTANCE Kristallhammer1 (C_Item) 
 {	
-	name 				=	"Kristallhammer";
+	name 				=	"crystal hammer";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1299,7 +1299,7 @@ INSTANCE Kristallhammer1 (C_Item)
 
 instance ItWr_Map_Eiswelt_Thomas (C_Item)
 {
-	name 		= "Eiswelt.";  
+	name 		= "Ice world.";  
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -1369,7 +1369,7 @@ count[5] = value;
 /********************************************************************************/
 INSTANCE ItMw_Nordschwert (C_Item) 
 {	
-	name 				=	"Nordschwert";
+	name 				=	"north sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1394,7 +1394,7 @@ INSTANCE ItMw_Nordschwert (C_Item)
 
 INSTANCE ItMw_Minotaurenhammer (C_Item)
 {	
-	name 				=	"Minotaurenhammer";  
+	name 				=	"Minotaur Hammer";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1428,7 +1428,7 @@ const int Value_TrollCross		            =   2575;
 
 INSTANCE ItRw_TrollCrossbow(C_Item)
 {
-	name 				  =   "Trolljäger-Armbrust";
+	name 				  =   "Troll hunter's crossbow";
 	
 	mainflag 			  =   ITEM_KAT_FF;
 	flags 				  =   ITEM_CROSSBOW;

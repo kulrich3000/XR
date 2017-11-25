@@ -1,7 +1,7 @@
 instance Mod_1180_MIL_Torwache_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Türwache";	
+	name 		= "door guard";	
 	guild 		= GIL_PAL;
 	id 			= 1180;
 	voice 		= 7;

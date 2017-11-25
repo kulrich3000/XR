@@ -14,7 +14,7 @@ INSTANCE Info_Bud_2_EXIT(C_INFO)
 	condition	= Info_Bud_2_EXIT_Condition;
 	information	= Info_Bud_2_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_Bud_2_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Bud_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Bud_2_EinerVonEuchWerden_Condition;
 	information	= Info_Bud_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich will bei euch mitmachen.";
+	description = "I want to join you guys.";
 };                       
 
 FUNC INT Info_Bud_2_EinerVonEuchWerden_Condition()
@@ -52,8 +52,8 @@ FUNC INT Info_Bud_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Bud_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Bud_2_EinerVonEuchWerden_15_00"); //Ich will bei euch mitmachen.
-	AI_Output(self,hero,"Info_Bud_2_EinerVonEuchWerden_02_01"); //Einer wie du kann schon bald in der Burg leben.
+	AI_Output(hero,self,"Info_Bud_2_EinerVonEuchWerden_15_00"); //I want to join you guys.
+	AI_Output(self,hero,"Info_Bud_2_EinerVonEuchWerden_02_01"); //Someone like you can soon live in the castle.
 };
 
 // *************************************************************************
@@ -66,7 +66,7 @@ INSTANCE Info_Bud_2_WichtigePersonen(C_INFO)
 	condition	= Info_Bud_2_WichtigePersonen_Condition;
 	information	= Info_Bud_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_Bud_2_WichtigePersonen_Condition()
@@ -76,9 +76,9 @@ FUNC INT Info_Bud_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bud_2_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Bud_2_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_Bud_2_WichtigePersonen_02_01"); //Hier im äußeren Ring treiben Fletcher und Bloodwyn das Schutzgeld ein. Jedem gehört eine Hälfte.
-	AI_Output(self,hero,"Info_Bud_2_WichtigePersonen_02_02"); //Wenn du dich mit ihnen gut stellst, kann dir nichts passieren.
+	AI_Output(hero,self,"Info_Bud_2_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,hero,"Info_Bud_2_WichtigePersonen_02_01"); //Here in the outer ring, Fletcher and Bloodwyn collect the protection money. Half belongs to everyone.
+	AI_Output(self,hero,"Info_Bud_2_WichtigePersonen_02_02"); //If you're good with them, nothing can happen to you.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Bud_2_DasLager(C_INFO)
 	condition	= Info_Bud_2_DasLager_Condition;
 	information	= Info_Bud_2_DasLager_Info;
 	permanent	= 1;
-	description = "Ich will mehr über dieses Lager erfahren.";
+	description = "I want to know more about this camp.";
 };                       
 
 FUNC INT Info_Bud_2_DasLager_Condition()
@@ -101,8 +101,8 @@ FUNC INT Info_Bud_2_DasLager_Condition()
 
 FUNC VOID Info_Bud_2_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Bud_2_DasLager_15_00"); //Ich will mehr über dieses Lager erfahren.
-	AI_Output(self,hero,"Info_Bud_2_DasLager_02_01"); //Dann solltest du mit den Schatten reden, sie können dir noch am ehesten sagen, was du wissen willst. Aber sei vorsichtig. Den meisten von ihnen kannst du nicht trauen.
+	AI_Output(hero,self,"Info_Bud_2_DasLager_15_00"); //I want to know more about this camp.
+	AI_Output(self,hero,"Info_Bud_2_DasLager_02_01"); //Then you should talk to the shadows, they can tell you what you want to know. But be careful. You can't trust most of them.
 };
 
 // *************************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_Bud_2_DieLage(C_INFO) // E1
 	condition	= Info_Bud_2_DieLage_Condition;
 	information	= Info_Bud_2_DieLage_Info;
 	permanent	= 1;
-	description = "Wie ist das Leben hier?";
+	description = "How's life here?";
 };                       
 
 FUNC INT Info_Bud_2_DieLage_Condition()
@@ -130,11 +130,11 @@ FUNC INT Info_Bud_2_DieLage_Condition()
 
 FUNC VOID Info_Bud_2_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Bud_2_DieLage_15_00"); //Wie ist das Leben hier?
-	AI_Output(self,hero,"Info_Bud_2_DieLage_02_01"); //Wenn die Erzbarone dich schicken, sag ihnen, ich will keinen Ärger. Von mir bekommt keiner was zu hören.
-	AI_Output(self,hero,"Info_Bud_2_DieLage_02_02"); //Ich bin zufrieden mit dem, was sie uns geben.
-	AI_Output(hero,self,"Info_Bud_2_DieLage_15_03"); //Niemand schickt mich. Ich bin neu hier.
-	AI_Output(self,hero,"Info_Bud_2_DieLage_02_04"); //Ein Neuer ... Neue kriegen hier immer schnell Ärger. Ich will in nichts reingezogen werden, klar?
+	AI_Output(hero,self,"Info_Bud_2_DieLage_15_00"); //How's life here?
+	AI_Output(self,hero,"Info_Bud_2_DieLage_02_01"); //If the Er Barons send you, tell them I don't want any trouble. I'm not gonna tell anybody anything.
+	AI_Output(self,hero,"Info_Bud_2_DieLage_02_02"); //I'm satisfied with what they give us.
+	AI_Output(hero,self,"Info_Bud_2_DieLage_15_03"); //No one sent me. I'm new here.
+	AI_Output(self,hero,"Info_Bud_2_DieLage_02_04"); //A new one... New people get in trouble here all the time. I don't want to get involved in anything, all right?
 };	
 
 INSTANCE Info_Mod_BUD_2_Pickpocket (C_INFO)

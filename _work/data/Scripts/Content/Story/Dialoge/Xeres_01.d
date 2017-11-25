@@ -15,18 +15,18 @@ FUNC INT Info_Mod_Xeres_Hi_Condition()
 
 FUNC VOID Info_Mod_Xeres_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_00"); //(höhnisch) Ahh, da ist ja mein "Befreier".
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_01"); //Gekommen um dem neuen Regenten der Welt und des Himmels zu huldigen?
-	AI_Output(hero, self, "Info_Mod_Xeres_Hi_15_02"); //Du glaubst doch nicht wirklich, dass du dich der Macht der drei Götter entgegenstellen kannst.
-	AI_Output(hero, self, "Info_Mod_Xeres_Hi_15_03"); //Ich als ihr Stellvertreter bin hier, um dich von deinem wahnwitzigen Vorhaben abzuhalten.
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_04"); //(sarkastisch) Die himmlischen Götter.
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_05"); //Sitzen da Oben und versuchen die Geschicke der Welt zu bestimmen, während die eigentliche Schlacht doch hier unten stattfindet und entschieden wird ...
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_06"); //(finsterer) Nun aber genug getratscht. Du willst mich aufhalten?
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_07"); //Eitler Narr, glaubst, du könntest auch nur einen Kratzer meiner Rüstung zufügen ...
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_08"); //Wobei ... dir ist es tatsächlich gelungen meinen Diener zu bannen und meine Pläne zu vereiteln.
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_09"); //Damit hast du bewiesen, dass du unter den Sterblichen eine Gefahr für mich darstellen könntest ...
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_10"); //Von daher werde ich kein unnötiges Risiko eingehen und dir einen schnellen Tod bereiten.
-	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_11"); //Bereite dich vor auf ewige Finsternis und Verdammung.
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_00"); //(höhnisch) Ahh, da ist ja mein "emancipators".
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_01"); //Come to pay homage to the new ruler of the world and heaven?
+	AI_Output(hero, self, "Info_Mod_Xeres_Hi_15_02"); //You don't really think you can stand up to the power of the three gods.
+	AI_Output(hero, self, "Info_Mod_Xeres_Hi_15_03"); //I'm her deputy here to keep you from this insane business of yours.
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_04"); //The heavenly gods.
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_05"); //Sit up there and try to determine the fate of the world, while the actual battle takes place and is decided down here...
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_06"); //But enough gossip. You want to stop me?
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_07"); //Vain fool, think you could just scratch my armor...
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_08"); //Wherein... you actually managed to banish my servant and thwart my plans.
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_09"); //You have proven that you could be a danger to me among mortals...
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_10"); //So I'm not going to take any unnecessary risks and give you a quick death.
+	AI_Output(self, hero, "Info_Mod_Xeres_Hi_14_11"); //Prepare yourself for eternal darkness and damnation.
 
 	AI_StopProcessInfos	(self);
 
@@ -61,9 +61,9 @@ FUNC INT Info_Mod_Xeres_Beliar_Condition()
 
 FUNC VOID Info_Mod_Xeres_Beliar_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xeres_Beliar_14_00"); //Da bist du ja wieder. Denkst du du hast diesmal eine größere Chance?
-	AI_Output(hero, self, "Info_Mod_Xeres_Beliar_15_01"); //Das werden wir ja gleich sehen.
-	AI_Output(self, hero, "Info_Mod_Xeres_Beliar_14_02"); //Diesmal wird niemand kommen und dich retten.
+	AI_Output(self, hero, "Info_Mod_Xeres_Beliar_14_00"); //There you are again. You think you have a better chance this time?
+	AI_Output(hero, self, "Info_Mod_Xeres_Beliar_15_01"); //We'll see about that.
+	AI_Output(self, hero, "Info_Mod_Xeres_Beliar_14_02"); //This time, no one will come and save you.
 	
 	AI_StopProcessInfos	(self);
 

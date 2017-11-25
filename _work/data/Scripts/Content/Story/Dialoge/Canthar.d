@@ -18,10 +18,10 @@ FUNC INT Info_Mod_Canthar_Port_Condition()
 
 FUNC VOID Info_Mod_Canthar_Port_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_00"); //Da bist du nun also. Ich hatte schon fast erwartet, dass du den Anschlag überlebst.
-	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_01"); //Und nun bist du gekommen, um mich zur Rechenschaft zu ziehen. Tja, das wird dir leider nicht gelingen.
-	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_02"); //Aber dein Geschick hat mich erstaunt. Du hast ganze Arbeit geleistet. Zur Sicherheit werde ich mich jetzt für einige Zeit zurückziehen, um Gras über die Sache wachsen zu lassen.
-	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_03"); //Du kannst dir sicher sein, dass ich jeden deiner Schritte überwache, so wie ich es gemacht habe, seit du den Koffer hast. Ach ja, wenn du nichts dagegen hast, nehme ich dir das gute Stück ab. Du weißt ja gar nicht, was die Bilder dort drin für einen Wert haben.
+	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_00"); //There you are now. I almost expected you to survive the attack.
+	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_01"); //And now you've come to call me to account. Well, you won't be able to.
+	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_02"); //But your skills amazed me. You've done a great job. To be on the safe side, I'm going to retire for a while now to let the thing grow.
+	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_03"); //You can be sure I've been watching every step of you ever since I've had the suitcase. Well, if you don't mind, I'll take the good stuff from you. You don't know how much the pictures in there are worth.
 
 	if (Npc_HasItems(hero, ItMi_PortsKoffer) == 1)
 	{
@@ -31,17 +31,17 @@ FUNC VOID Info_Mod_Canthar_Port_Info()
 	{
 		Wld_RemoveItem	(ItMi_PortsKoffer);
 
-		AI_Output(self, hero, "Info_Mod_Canthar_Port_09_04"); //Wie ich sehe, versuchst du, das Ding zu verstecken. Dann werde ich eben einen meiner Gehilfen beauftragen müssen, danach zu suchen.
+		AI_Output(self, hero, "Info_Mod_Canthar_Port_09_04"); //I see you're trying to hide this thing. Then I'll just have to hire one of my helpers to look for it.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_05"); //Fast hätte der gute Brahim vereitelt, dass ich den Koffer bekomme, indem er dich zu dem vertrottelten Händler schickte. Dadurch ist es eigentlich seine Schuld, dass er sterben musste. (lacht)
-	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_06"); //Ich habe sowieso das Gefühl, dass er immer gerade so viel gegen mich gearbeitet hat, dass ich nichts davon mitbekommen habe. Aber er wird seine Bestrafung noch früh genug erleben.
-	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_07"); //So, ich habe jetzt genug geredet. Wenn der Tag gekommen ist, werde ich zurückkehren und dich langsam auseinandernehmen.
-	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_08"); //Frag' Moe, er wird davon erfahren, dass ich zurück bin.
+	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_05"); //The good Brahim almost foiled me getting the suitcase by sending you to that stupid merchant. So it's his fault that he had to die. (laughs)
+	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_06"); //I have the feeling that he has always worked so much against me that I didn't notice any of it. But he'll see his punishment soon enough.
+	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_07"); //So, I've talked enough now. When the day comes, I will come back and slowly tear you apart.
+	AI_Output(self, hero, "Info_Mod_Canthar_Port_09_08"); //Ask Moe, he'll find out I'm back.
 	
 	Log_CreateTopic	(TOPIC_MOD_CANTHAR_GESCHAEFTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_CANTHAR_GESCHAEFTE, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_MOE_PORT, TOPIC_MOD_CANTHAR_GESCHAEFTE, "Canthar ist der Drahtzieher. Er hat die Ermordung Ports und Kunos veranlasst. Als ich ihn aufsuchte, entwendete er mir den Koffer und kündigte an, sich vorerst zurückzuziehen, irgendwann jedoch wieder zu kommen. Moe werde davon erfahren.", "Ich habe eines von Canthar' Geschäften gestört und stehe seitdem in seinem Blickfeld. Er hat angekündigt, mich nach seiner Rückkehr 'auseinanderzunehmen'. Mal sehen, was sich daraus entwickelt ...");
+	B_LogEntry_More	(TOPIC_MOD_MOE_PORT, TOPIC_MOD_CANTHAR_GESCHAEFTE, "Canthar is the mastermind. He ordered the assassination of Ports and Kunos. When I went to see him, he stole my suitcase and announced that he would withdraw for the time being, but would come back at some point. Moe will know about this.", "I've interfered with one of Canthar's businesses and have been in his field of vision ever since. He has announced that he will' take me apart' after his return. Let's see what develops from it....");
 	B_SetTopicStatus	(TOPIC_MOD_MOE_PORT, LOG_SUCCESS);
 
 	B_GivePlayerXP	(300);
@@ -75,24 +75,24 @@ FUNC INT Info_Mod_Canthar_AtLager_Condition()
 
 FUNC VOID Info_Mod_Canthar_AtLager_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_09_00"); //Wieder auf den Beinen? Genieß es, denn es wird das letzte Mal sein.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_09_00"); //On your feet again? Enjoy it, because it'll be the last time.
 
-	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Ich bin in Canthar's Falle getappt. Aber so ungelegen kommt mir das gar nicht. Immerhin bin ich jetzt da, wo ich hin wollte: in der Höhle des Löwen.");
+	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "I fell into Canthar's trap. But it doesn't seem so inconvenient to me. After all, I'm where I wanted to be: in the lion's den.");
 
 	Info_ClearChoices	(Info_Mod_Canthar_AtLager);
 
-	Info_AddChoice	(Info_Mod_Canthar_AtLager, "Komm her, du Schwein!", Info_Mod_Canthar_AtLager_D);
-	Info_AddChoice	(Info_Mod_Canthar_AtLager, "Wieso musste Moe sterben?", Info_Mod_Canthar_AtLager_C);
-	Info_AddChoice	(Info_Mod_Canthar_AtLager, "Was hast du mit meiner Ausrüstung gemacht?", Info_Mod_Canthar_AtLager_B);
-	Info_AddChoice	(Info_Mod_Canthar_AtLager, "Warum hast du mich nicht schon lange umgebracht?", Info_Mod_Canthar_AtLager_A);
+	Info_AddChoice	(Info_Mod_Canthar_AtLager, "Come here, you pig!", Info_Mod_Canthar_AtLager_D);
+	Info_AddChoice	(Info_Mod_Canthar_AtLager, "Why did Moe have to die?", Info_Mod_Canthar_AtLager_C);
+	Info_AddChoice	(Info_Mod_Canthar_AtLager, "What did you do with my equipment?", Info_Mod_Canthar_AtLager_B);
+	Info_AddChoice	(Info_Mod_Canthar_AtLager, "Why didn't you kill me long ago?", Info_Mod_Canthar_AtLager_A);
 };
 
 FUNC VOID Info_Mod_Canthar_AtLager_E()
 {
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_E_09_00"); //Ich muss gestehen, ich habe genug von deinen langweiligen Fragen.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_E_09_01"); //Mir juckt es unter den Fingern, dich sterben zu sehen. Also, stell dich dem Kampf!
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_E_15_02"); //Was hält mich davon ab, wegzurennen?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_E_09_03"); //Was?! Das wird dir nicht gelingen!
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_E_09_00"); //I must confess, I've had enough of your boring questions.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_E_09_01"); //I itch under my fingers to watch you die. So, face the fight!
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_E_15_02"); //What's stopping me from running away?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_E_09_03"); //What?! You won't succeed!
 
 	Info_ClearChoices	(Info_Mod_Canthar_AtLager);
 
@@ -103,17 +103,17 @@ FUNC VOID Info_Mod_Canthar_AtLager_E()
 
 FUNC VOID Info_Mod_Canthar_AtLager_D()
 {
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_D_15_00"); //Komm her, du Schwein!
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_D_09_01"); //Na, na, jetzt fang nicht mit den Beleidigungen an.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_D_09_02"); //Aber schön zu sehen, wie einfach du zu provozieren bist. Das wird den Kampf noch genüsslicher machen.
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_D_15_00"); //Come here, you pig!
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_D_09_01"); //Well, now, don't start with the insults.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_D_09_02"); //But nice to see how easy it is to provoke you. This will make the fight even more enjoyable.
 };
 
 FUNC VOID Info_Mod_Canthar_AtLager_C()
 {
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_C_15_00"); //Wieso musste Moe sterben?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_C_09_01"); //(spöttisch) Das verstehst du nicht, was? Ist auch ein bisschen schwierig.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_C_09_02"); //Aber es hatte damit zu tun, dass er dir geholfen hat.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_C_09_03"); //Hätte er nach meiner ersten Warnung damit aufgehört, wäre er wenigstens schnell gestorben ...
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_C_15_00"); //Why did Moe have to die?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_C_09_01"); //You don't understand, do you? It's a bit difficult, too.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_C_09_02"); //But it was because he helped you.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_C_09_03"); //If he had stopped after my first warning, he would at least have died quickly....
 
 	OptionenCanthar += 1;
 
@@ -125,11 +125,11 @@ FUNC VOID Info_Mod_Canthar_AtLager_C()
 
 FUNC VOID Info_Mod_Canthar_AtLager_B()
 {
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_B_15_00"); //Was hast du mit meiner Ausrüstung gemacht?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_B_09_01"); //Oh, die ist an einem sicheren Ort am anderen Ende unseres Verstecks verstaut.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_B_09_02"); //Aber du wirst sie kaum noch brauchen. (lacht)
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_B_15_00"); //What did you do with my equipment?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_B_09_01"); //Oh, it's in a safe place at the other end of our stash.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_B_09_02"); //But you won't need it much longer. (laughs)
 
-	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Laut Canthar ist meine Ausrüstung irgendwo in diesem Unterschlupf versteckt. Ich sollte sie wohl besser finden, bevor ich mich ihm stelle.");
+	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "According to Canthar, my equipment is hidden somewhere in this safe house. I should probably find her before I face him.");
 
 	OptionenCanthar += 1;
 
@@ -142,9 +142,9 @@ FUNC VOID Info_Mod_Canthar_AtLager_B()
 
 FUNC VOID Info_Mod_Canthar_AtLager_A()
 {
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_A_15_00"); //Warum hast du mich nicht schon lange umgebracht?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_A_09_01"); //(hasserfüllt) Weißt du, was du mir angetan hast?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_A_09_02"); //Nein, du wirst durch meine eigene Hand zugrunde gehen!
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager_A_15_00"); //Why didn't you kill me long ago?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_A_09_01"); //Do you know what you've done to me?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager_A_09_02"); //No, you will perish by my own hand!
 
 	OptionenCanthar += 1;
 
@@ -179,50 +179,50 @@ FUNC INT Info_Mod_Canthar_AtLager2_Condition()
 
 FUNC VOID Info_Mod_Canthar_AtLager2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_00"); //(gehässig) Du meinst jetzt vielleicht, am Ende angelangt zu sein.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_01"); //Nur ich stehe noch zwischen dir und deinem unendlichen Ruhm. Doch sei dir sicher, dem ist nicht so!
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_15_02"); //Was willst du mir damit sagen?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_03"); //Nichts, was du verstehen könntest. Aber merk dir meine Worte, du wirst dich noch an sie erinnern!
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_15_04"); //Mal langsam. Jetzt erzählst du mir erstmal, was das ganze mit diesen Gaunereien sollte.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_05"); //Warum mir mein Verdienst in der Diebegilde nicht ausreichte und ich mir eine zweite Existenz aufbaute?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_06"); //Die Diebesgilde hätte zum Überleben gereicht, aber nicht zum Leben.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_07"); //Bei Beliar, soll ich etwa den ganzen Tag lang Sextanten sammeln und alte Furzer um ihre Geldbeutel erleichtern?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_08"); //Wo bleibt da die Herausforderung, der Nervenkitzel?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_09"); //Wir sind uns gar nicht so unähnlich, du und ich.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_10"); //Wenn du mal genau drüber nachdenkst, wirst du auch drauf kommen.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_11"); //Bloß hast du meinen Sohn umgebracht und meine Geschäfte platzen lassen.
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_15_12"); //Da wollen wir Moe und die anderen Toten auf deinem Gewissen mal nicht unterschlagen.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_13"); //Du wagst es, diese Nichtsnutze mit meinem Sohn zu vergleichen?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_00"); //You might think you're at the end of it now.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_01"); //Only I stand between you and your infinite glory. But be sure, it's not like that!
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_15_02"); //What are you trying to tell me?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_03"); //Nothing you could understand. But remember my words, you'll remember them!
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_15_04"); //Let's slow down. Now, you're gonna tell me what all this was up to with all this racket.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_05"); //Why didn't my earnings in the thief guild suffice and why did I build up a second existence for myself?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_06"); //The guild of thieves would have survived, but not come to life.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_07"); //At Beliar, should I be collecting sextants all day long and making old farts easier on their pockets?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_08"); //Where is the challenge, the thrill?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_09"); //We're not so unlike each other, you and I.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_10"); //If you think about it, you'll figure it out.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_11"); //Except you killed my son and broke my business.
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_15_12"); //We don't want to embezzle Moe and the other dead people on your conscience.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_09_13"); //You dare to compare these bums with my son?
 
-	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Canthar meinte in unserem letzten Gespräch, dass er nicht die letzte Instanz auf meinem Weg zum Erfolg sei. Was hat er damit wohl gemeint?");
+	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Canthar said in our last conversation that he was not the last instance on my path to success. What do you think he meant by that?");
 
 	Info_ClearChoices	(Info_Mod_Canthar_AtLager2);
 
-	Info_AddChoice	(Info_Mod_Canthar_AtLager2, "Der Blutzoll war auf allen Seiten zu hoch.", Info_Mod_Canthar_AtLager2_C);
-	Info_AddChoice	(Info_Mod_Canthar_AtLager2, "Als wäre aus dem Sohn was Besseres als sein Vater geworden!", Info_Mod_Canthar_AtLager2_B);
-	Info_AddChoice	(Info_Mod_Canthar_AtLager2, "Jeder Mensch hat den gleichen Wert.", Info_Mod_Canthar_AtLager2_A);
+	Info_AddChoice	(Info_Mod_Canthar_AtLager2, "The toll was too high on all sides.", Info_Mod_Canthar_AtLager2_C);
+	Info_AddChoice	(Info_Mod_Canthar_AtLager2, "As if the son had become something better than his father!", Info_Mod_Canthar_AtLager2_B);
+	Info_AddChoice	(Info_Mod_Canthar_AtLager2, "Every person has the same value.", Info_Mod_Canthar_AtLager2_A);
 };
 
 FUNC VOID Info_Mod_Canthar_AtLager2_D()
 {
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_D_09_00"); //Nun kommt es also zum unausweichlichen Kampf. Unausweichlich?
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_D_15_01"); //Du wirst in dem Duell keine Chancen haben.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_D_09_02"); //Kannst du mir auch etwas sagen, was ich noch nicht weiß?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_D_09_00"); //Now we are inevitably battling. Inevitable?
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_D_15_01"); //You won't stand a chance in this duel.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_D_09_02"); //Can you tell me something I don't know yet?
 
 	Info_ClearChoices	(Info_Mod_Canthar_AtLager2);
 
-	Info_AddChoice	(Info_Mod_Canthar_AtLager2, "Lass uns endlich einen Schlusspunkt setzen!", Info_Mod_Canthar_AtLager2_F);
+	Info_AddChoice	(Info_Mod_Canthar_AtLager2, "Let's close it up!", Info_Mod_Canthar_AtLager2_F);
 
 	if (OptionenCanthar2 == 1)
 	{
-		Info_AddChoice	(Info_Mod_Canthar_AtLager2, "Ich verzeihe dir.", Info_Mod_Canthar_AtLager2_E);
+		Info_AddChoice	(Info_Mod_Canthar_AtLager2, "I forgive you.", Info_Mod_Canthar_AtLager2_E);
 	};
 };
 
 FUNC VOID Info_Mod_Canthar_AtLager2_C()
 {
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_C_15_00"); //Der Blutzoll war auf allen Seiten zu hoch.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_C_09_01"); //(verächtlich) Da hast du Recht. (rhetorisch) Aber was sollen wir daran jetzt ändern?
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_C_15_00"); //The toll was too high on all sides.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_C_09_01"); //You got that right. (rhetorical) But what should we do about it now?
 
 	OptionenCanthar2 = 1;
 
@@ -231,8 +231,8 @@ FUNC VOID Info_Mod_Canthar_AtLager2_C()
 
 FUNC VOID Info_Mod_Canthar_AtLager2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_B_15_00"); //Als wäre aus dem Sohn was Besseres als sein Vater geworden!
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_B_09_01"); //(Totenstille)
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_B_15_00"); //As if the son had become something better than his father!
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_B_09_01"); //(Silence of the dead)
 
 	Info_Mod_Canthar_AtLager2_D();
 
@@ -240,18 +240,18 @@ FUNC VOID Info_Mod_Canthar_AtLager2_B()
 
 FUNC VOID Info_Mod_Canthar_AtLager2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_A_15_00"); //Jeder Mensch hat den gleichen Wert.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_A_09_01"); //Spar dir dein Gesülze, du befolgst es ja selbst nicht. Wie viele sind gestorben durch deine Einwirkung?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_A_09_02"); //Denk darüber nach, bevor du mir mit Moralpredigten kommst!
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_A_15_00"); //Every person has the same value.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_A_09_01"); //Don't fool around, you're not even following it. How many have died because of your influence?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_A_09_02"); //Think about it before you come to me with sermons!
 
 	Info_Mod_Canthar_AtLager2_D();
 };
 
 FUNC VOID Info_Mod_Canthar_AtLager2_F()
 {
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_F_15_00"); //Lass uns endlich einen Schlusspunkt setzen!
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_F_09_01"); //Ja, aber anders als geplant. (Pause) Ich habe mich entschlossen, mich dir nicht zu stellen.
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_F_15_02"); //Was hast du vor?
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_F_15_00"); //Let's close it up!
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_F_09_01"); //Yes, but not as planned. (Pause) I've decided not to face you.
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_F_15_02"); //What are you up to?
 
 	Mod_CantharSelbstmord = 1;
 
@@ -261,28 +261,28 @@ FUNC VOID Info_Mod_Canthar_AtLager2_F()
 
 	B_GivePlayerXP	(400);
 
-	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Canthar ist tot. Hoffentlich habe ich jetzt den ganzen Ärger vom Hals.");
+	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Canthar's dead. I hope I'm out of trouble now.");
 };
 
 FUNC VOID Info_Mod_Canthar_AtLager2_E()
 {
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_00"); //Ich verzeihe dir.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_01"); //Wie? Was? Nein, aber ...
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_02"); //Du bist ein dreckiges Molerat, aber ich will nicht auch dich noch umlegen.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_03"); //Soll ich dich angreifen? Es wäre mein Untergang.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_04"); //Kann ich mit der Schmach leben, die du mir bereiten willst? Ich wäre auf ewig unglücklich.
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_05"); //Fang ein neues Leben an. Weit weg von hier.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_06"); //Dazu soll ich fähig sein? Obwohl ... vielleicht sind dort die Bedingungen besser.
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_07"); //Welche Bedingungen?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_08"); //Was würde ich dort wohl machen? Eine geregelte Existenz leben? Pah!
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_09"); //(atmet tief durch) Na gut, ich nehme dein edles Friedensangebot an.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_10"); //Du musst aber wissen, dass ich nicht das höchste Tier in unserer Organisation bin.
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_11"); //Wer ist es dann?
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_12"); //Das weiß ich nicht. Ich kenne meinen Auftraggeber nicht.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_13"); //Wir haben uns immer in der Dunkelheit im Lagerhaus am Hafen getroffen.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_14"); //Aber wenn du nach Khorinis zurückkehrst, wirst du noch Bekanntschaft mit ihm machen, da bin ich mir sicher.
-	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_15"); //Danke für die Information. Mach's gut.
-	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_16"); //Du bist vernünftiger als ich dachte. Hier hast du noch den Schlüssel für die Tür nach draußen.
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_00"); //I forgive you.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_01"); //How? What? No, but...
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_02"); //You're a filthy molate, but I don't want to kill you too.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_03"); //Shall I attack you? It would be my downfall.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_04"); //Can I live with the shame you want to bring upon me? I'd be miserable forever.
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_05"); //Start a new life. Far away from here.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_06"); //I'm supposed to be capable of that? Although... maybe the conditions there are better.
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_07"); //What conditions?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_08"); //What would I do there? Live a regular existence? Pah!
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_09"); //All right, I accept your noble peace offering.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_10"); //But you must know that I'm not the highest animal in our organization.
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_11"); //Then who is it?
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_12"); //I don't know about that. I don't know my employer.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_13"); //We used to meet in the dark at the dockside warehouse.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_14"); //But when you return to Khorinis, I'm sure you'll get to know him.
+	AI_Output(hero, self, "Info_Mod_Canthar_AtLager2_E_15_15"); //Thanks for the information. Take care, now.
+	AI_Output(self, hero, "Info_Mod_Canthar_AtLager2_E_09_16"); //You're more reasonable than I thought. Here's the key to the outside door.
 
 	B_GiveInvItems	(self, hero, ItKe_Canthar, 1);
 
@@ -292,7 +292,7 @@ FUNC VOID Info_Mod_Canthar_AtLager2_E()
 
 	B_GivePlayerXP	(500);
 
-	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Ich habe Canthar leben lassen. Als Dank hat er mir verraten, dass ich bei meiner Wiederkehr in Khorinis noch Bekanntschaft mit einem Unbekannten machen werde, der Auftraggeber von Canthar war.");
+	B_LogEntry	(TOPIC_MOD_MOE_DEAD, "I let Canthar live. As a thank-you, he told me that when I returned to Khorinis, I would meet an unknown person who was the principal of Canthar.");
 };
 
 INSTANCE Info_Mod_Canthar_Pickpocket (C_INFO)

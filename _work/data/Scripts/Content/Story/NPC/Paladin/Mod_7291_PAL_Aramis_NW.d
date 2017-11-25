@@ -1,7 +1,7 @@
 instance Mod_7291_PAL_Aramis_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Aramis";
+	name 		= "aramid";
 	guild 		= GIL_pal;
 	id 			= 7291;
 	voice 		= 8;

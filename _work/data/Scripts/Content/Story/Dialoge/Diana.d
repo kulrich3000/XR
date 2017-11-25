@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Diana_Hi (C_INFO)
 	information	= Info_Mod_Diana_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles in Ordnung?";
+	description	= "Are you all right?";
 };
 
 FUNC INT Info_Mod_Diana_Hi_Condition()
@@ -16,17 +16,17 @@ FUNC INT Info_Mod_Diana_Hi_Condition()
 
 FUNC VOID Info_Mod_Diana_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diana_Hi_15_00"); //Alles in Ordnung?
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_01"); //Ich hoffe es, aber langsam mache ich mir Sorgen.
-	AI_Output(hero, self, "Info_Mod_Diana_Hi_15_02"); //Vermisst du jemanden?
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_03"); //Unsere Tochter ist heute Morgen zum Pilzesammeln aufgebrochen, aber bisher nicht zurückgekehrt.
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_04"); //Nicht, dass sie nicht alt genug wäre, um selbst auf sich aufpassen zu können, aber es lässt mir doch keine Ruhe, nichts von ihr zu hören.
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_05"); //Wenn du ihr begegnest, sag ihr ruhig Bescheid, dass sie sich langsam mal wieder auf den Rückweg machen könnte.
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_06"); //Du kannst sie an ihrer eigenwilligen roten Mütze erkennen.
+	AI_Output(hero, self, "Info_Mod_Diana_Hi_15_00"); //Are you all right?
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_01"); //I hope so, but I'm starting to worry.
+	AI_Output(hero, self, "Info_Mod_Diana_Hi_15_02"); //You miss someone?
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_03"); //Our daughter left for mushroom picking this morning, but she hasn't returned yet.
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_04"); //Not that she's not old enough to take care of herself, but it doesn't leave me alone not to hear from her.
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_05"); //If you run into her, please let her know that she could slowly make her way back.
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_06"); //You can recognize them by their idiosyncratic red cap.
 	
 	Log_CreateTopic	(TOPIC_MOD_ROTKAEPPCHEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ROTKAEPPCHEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ROTKAEPPCHEN, "Diana vermisst ihre Tochter, die heute morgen zum Pilzesammeln aufgebrochen ist. Ich kann sie an ihrer roten Mütze erkennen.");
+	B_LogEntry	(TOPIC_MOD_ROTKAEPPCHEN, "Diana misses her daughter, who left this morning to pick mushrooms. I can recognize them by their red cap.");
 };
 
 INSTANCE Info_Mod_Diana_Eintopf (C_INFO)
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Diana_Eintopf (C_INFO)
 	information	= Info_Mod_Diana_Eintopf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Machst du auch leckere Eintöpfe?";
+	description	= "Do you make yummy stews, too?";
 };
 
 FUNC INT Info_Mod_Diana_Eintopf_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_Mod_Diana_Eintopf_Condition()
 
 FUNC VOID Info_Mod_Diana_Eintopf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diana_Eintopf_15_00"); //Machst du auch leckere Eintöpfe?
-	AI_Output(self, hero, "Info_Mod_Diana_Eintopf_16_01"); //Sieh dir doch die gutgenährten Buben auf dem Hof an! Das Fleischwanzenragout reißen sie mir förmlich aus den Händen.
-	AI_Output(self, hero, "Info_Mod_Diana_Eintopf_16_02"); //(verschwörerisch) Mein Geheimnis sind kleine Melonenstückchen.
-	AI_Output(hero, self, "Info_Mod_Diana_Eintopf_15_03"); //Aha. Ist ja interessant.
+	AI_Output(hero, self, "Info_Mod_Diana_Eintopf_15_00"); //Do you make yummy stews, too?
+	AI_Output(self, hero, "Info_Mod_Diana_Eintopf_16_01"); //Look at the well-fed boys in the yard! They're literally tearing the meatbug ragout out of my hands.
+	AI_Output(self, hero, "Info_Mod_Diana_Eintopf_16_02"); //My secret is little pieces of melon.
+	AI_Output(hero, self, "Info_Mod_Diana_Eintopf_15_03"); //Uh-huh. That's interesting.
 };
 
 INSTANCE Info_Mod_Diana_Pickpocket (C_INFO)

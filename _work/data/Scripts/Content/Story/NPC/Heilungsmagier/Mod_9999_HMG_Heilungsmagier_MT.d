@@ -1,7 +1,7 @@
 instance Mod_9999_HMG_Heilungsmagier_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Heilungsmagier";
+	name 		= "healing mage";
 	guild 		= GIL_OUT;
 	id 			= 9999;
 	voice 		= 7;

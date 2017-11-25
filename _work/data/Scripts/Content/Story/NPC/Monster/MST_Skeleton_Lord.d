@@ -1,7 +1,7 @@
 PROTOTYPE Mst_Skeleton_Lord	(C_NPC)
 {
 	//----- Monster ----
-	name							=	"Schattenkrieger";
+	name							=	"Shadow Warrior";
 	guild							=	GIL_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SKELETONLORD;
 	level							=	60;
@@ -90,7 +90,7 @@ INSTANCE Skeleton_Lord_Ghost	(Mst_Skeleton_Lord)
 {
 	B_SetVisuals_Skeleton_Lord ();
 
-	name							=	"Geist eines Schattenkriegers";
+	name							=	"Ghost of a Shadow Warrior";
 
 	flags = NPC_FLAG_GHOST;
 	effect							=	"spellfx_undead_skeletonlord";
@@ -125,7 +125,7 @@ INSTANCE Summoned_Skeleton_Lord_Ghost_Xeres	(Mst_Skeleton_Lord)
 {
 	B_SetVisuals_Skeleton_Lord ();
 
-	name							=	"Geist eines Schattenkriegers";
+	name							=	"Ghost of a Shadow Warrior";
 
 	flags = NPC_FLAG_GHOST;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GEISTERKRIEGER;
@@ -155,7 +155,7 @@ INSTANCE Summoned_Skeleton_Lord_Ghost	(Mst_Skeleton_Lord)
 {
 	B_SetVisuals_Skeleton_Lord ();
 
-	name							=	"Geist eines Schattenkriegers";
+	name							=	"Ghost of a Shadow Warrior";
 
 	flags = NPC_FLAG_GHOST;
 	effect							=	"spellfx_undead_skeletonlord";
@@ -205,7 +205,7 @@ INSTANCE Skeleton_Lord_DienerDesBoesen_02_02	(Mst_Skeleton_Lord)
 
 INSTANCE Crypt_Skeleton_Lord	(Mst_Skeleton_Lord)
 {
-	name		=	"Schattenlord Inubis";
+	name		=	"Shadow Lord Inubis";
 
 	B_SetVisuals_Skeleton_Lord ();
 	

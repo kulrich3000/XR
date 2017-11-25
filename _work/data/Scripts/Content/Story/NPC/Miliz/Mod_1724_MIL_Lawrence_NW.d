@@ -1,7 +1,7 @@
 instance Mod_1730_MIL_Lawrence_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lawrence";	
+	name 		= "lawrence";	
 	guild 		= GIL_out;
 	id 			= 1730;
 	voice 		= 6;

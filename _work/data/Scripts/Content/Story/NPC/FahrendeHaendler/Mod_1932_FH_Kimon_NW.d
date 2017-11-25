@@ -1,7 +1,7 @@
 instance Mod_1932_FH_Kimon_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kimon";
+	name 		= "kimon";
 	guild 		= GIL_OUT;
 	id 			= 1932;
 	voice 		= 34;

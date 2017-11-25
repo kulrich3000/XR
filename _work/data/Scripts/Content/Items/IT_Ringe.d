@@ -63,7 +63,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Flammenschutzring";
+	description				= "Flame Protection Ring";
 	
 	TEXT[2]					= NAME_Prot_Fire;
 	COUNT[2]				= Ri_ProtFire;
@@ -104,7 +104,7 @@ instance Mod_Banditenring(C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Banditen";
+	description				= "Bandit Ring";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -132,7 +132,7 @@ instance ItRi_Bandenchef(C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring des Bandenchefs";
+	description				= "Bandleader's ring";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -162,7 +162,7 @@ instance ItRi_WaermeRing(C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Wärme";
+	description				= "Ring of Heat";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -202,7 +202,7 @@ instance ItRi_LinkerRingDerEhre(C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Linker Ring der Ehre";
+	description				= "Left Ring of Honor";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -242,7 +242,7 @@ instance ItRi_RechterRingDerEhre(C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Rechter Ring der Ehre";
+	description				= "Right Ring of Honor";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -282,7 +282,7 @@ instance ItRi_Alchemist(C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring des Alchemisten";
+	description				= "Ring of Alchemists";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -322,7 +322,7 @@ instance ItRi_Verschleierung (C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Verschleierung";
+	description				= "Ring of Veiling";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -374,7 +374,7 @@ instance ItRi_Talentring (C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Talentring";
+	description				= "talent ring";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -420,9 +420,9 @@ instance ItRi_Licht(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring des Lichtes";
+	description				= "Ring of Light";
 	
-	TEXT[3]					= "Spendet Licht";
+	TEXT[3]					= "Provides light";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -462,9 +462,9 @@ instance ItRi_Versengung (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring des Versengung";
+	description				= "ring of scorching";
 	
-	TEXT[3]					= "Verursacht zusätzlichen Feuerschaden";
+	TEXT[3]					= "Causes additional fire damage";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -504,7 +504,7 @@ instance ItRi_SchwarzesErz(C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring aus schwarzem Erz";
+	description				= "Ring in black ore";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -544,7 +544,7 @@ instance ItRi_Verhandlungsring (C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Verhandlung";
+	description				= "Ring of Negotiation";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -584,7 +584,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring aus dem See";
+	description				= "Ring from the lake";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -623,7 +623,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Feuerring";
+	description				= "ring of fire";
 	
 	TEXT[2]					= NAME_Prot_Fire;
 	COUNT[2]				= Ri_ProtFire02;
@@ -667,7 +667,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Holzhaut";
+	description				= "Ring of Wooden Skin";
 	
 	TEXT[2]					= NAME_Prot_Point;
 	COUNT[2]				= Ri_ProtPoint / 1000;
@@ -711,7 +711,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Steinhaut";
+	description				= "Ring of Stone Skin";
 	
 	TEXT[2]					= NAME_Prot_Point;
 	COUNT[2]				= Ri_ProtPoint02 / 1000;
@@ -755,7 +755,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Eisenhaut";
+	description				= "Ring of Iron Skin";
 
 	TEXT[2]					= NAME_Prot_Edge;
 	COUNT[2]				= Ri_ProtEdge / 1000;
@@ -801,7 +801,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Erzhaut";
+	description				= "Ring of Ore Skin";
 	
 	TEXT[2]					= NAME_Prot_Edge;
 	COUNT[2]				= Ri_ProtEdge02 / 1000;
@@ -847,7 +847,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Geisteskraft";
+	description				= "Ring of Spirit";
 	
 	TEXT[2]					= NAME_Prot_Magic;
 	COUNT[2]				= Ri_ProtMage;
@@ -892,7 +892,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Verteidigung";
+	description				= "Ring of Defense";
 	
 	TEXT[2]					= NAME_Prot_Magic;
 	COUNT[2]				= Ri_ProtMage02;
@@ -938,7 +938,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Ring der Unbezwingbarkeit";
+	description		= "Ring of Inconquerability";
 	
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= Ri_TProtMage;
@@ -995,7 +995,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Ring der Unbesiegbarkeit";
+	description		= "Ring of Invincibility";
 	
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= Ri_TProtMage02;
@@ -1052,7 +1052,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Ring der Gewandtheit";
+	description		= "Ring of Skill";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= Ri_Dex;
@@ -1097,7 +1097,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Geschicklichkeit";
+	description				= "Ring of Dexterity";
 
 	TEXT[2]					= 	NAME_Bonus_Dex;
 	COUNT[2]				= 	Ri_Dex02;
@@ -1143,7 +1143,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Lebenskraft";
+	description				= "Ring of Life";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= Ri_Hp;
@@ -1200,7 +1200,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Lebendigkeit";
+	description				= "Ring of Liveliness";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= Ri_Hp02;
@@ -1257,7 +1257,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Lebendsenergie";
+	description				= "Ring of Living Energy";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= Ri_Hp03;
@@ -1314,7 +1314,7 @@ instance ItRi_Seering (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Kraft";
+	description				= "Ring of Force";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= Ri_Strg;
@@ -1358,7 +1358,7 @@ INSTANCE ItRi_Ruprecht (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ruprechts Ring";
+	description				= "Ruprecht's Ring";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= 5;
@@ -1402,7 +1402,7 @@ INSTANCE ItRi_Ruprecht (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Stärke";
+	description				= "Ring of Strength";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= Ri_Strg02;
@@ -1446,7 +1446,7 @@ INSTANCE ItRi_Ruprecht (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Magie";
+	description				= "Ring of Magic";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_Mana;
@@ -1502,7 +1502,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der astralen Kraft";
+	description				= "Ring of Astral Power";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_Mana02;
@@ -1558,7 +1558,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Erleuchtung";
+	description				= "Ring of Enlightenment";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_HpMana_Mana;
@@ -1632,7 +1632,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Macht";
+	description				= "Ring of Power";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= 4;
@@ -1680,9 +1680,9 @@ INSTANCE ItRi_Spheric(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der sphärischen Manifestation";
+	description				= "Ring of spherical manifestation";
 	
-	TEXT[2]					= "Dieser Ring scheint beschworene Wesen länger zu erhalten";
+	TEXT[2]					= "This ring seems to preserve summoned beings longer";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -1722,9 +1722,9 @@ INSTANCE ItRi_Wiederkehr(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Wiederkehr";
+	description				= "Ring of Return";
 	
-	TEXT[2]					= "Beschwört Goblin-Skelette aus getöteten Gegnern";
+	TEXT[2]					= "Summoned Goblin skeletons from slaughtered enemies";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -1764,9 +1764,9 @@ INSTANCE ItRi_Buecherwurm(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring des Bücherwurms";
+	description				= "Ring of the Bookworm";
 	
-	TEXT[1]					= "Theorie und Praxis sind eben nicht das Selbe";
+	TEXT[1]					= "Theory and practice are not the same";
 
 	TEXT[2]		= NAME_Bonus_Str;
 	COUNT[2]	= -20;
@@ -1774,7 +1774,7 @@ INSTANCE ItRi_Buecherwurm(C_Item)
 	TEXT[3]		= NAME_Bonus_Dex;
 	COUNT[3]	= -10;
 
-	TEXT[4]		= "Erfahrungsbonus in %";
+	TEXT[4]		= "Experience bonus in %";
 	COUNT[4]	= 10;
 	
 	TEXT[5]					= NAME_Value;
@@ -1821,9 +1821,9 @@ INSTANCE ItRi_Eber(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring des Ebers";
+	description				= "Ring of the boar";
 	
-	TEXT[0]					= "Beseelt mit roher Körperkraft";
+	TEXT[0]					= "Soul with raw body power";
 
 	TEXT[1]		= NAME_Bonus_Str;
 	COUNT[1]	= 20;
@@ -1889,9 +1889,9 @@ INSTANCE ItRi_Kuenstler(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring des Künstlers";
+	description				= "Ring of the Artist";
 	
-	TEXT[0]					= "Wer Leier spielt und den Bogen spannt nimmt ungern ein Stück Metall in die Hand";
+	TEXT[0]					= "If you play the lyre and bow, you don't like to take a piece of metal in your hand.";
 
 	TEXT[1]		= NAME_Bonus_Str;
 	COUNT[1]	= -17;
@@ -1953,7 +1953,7 @@ INSTANCE ItRi_Troll(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Trollfaust-Schlagring";
+	description				= "Trollfaust striking ring";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -1993,7 +1993,7 @@ INSTANCE ItRi_Heilung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Heilung";
+	description				= "Healing Ring";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -2033,9 +2033,9 @@ INSTANCE ItRi_Willenskraft(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Willenskraft";
+	description				= "Ring of Spirit";
 	
-	TEXT[1]					= "Regeneriert sekündlich 1 Mana";
+	TEXT[1]					= "Regenerates every second 1 mana";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -2075,7 +2075,7 @@ INSTANCE ItRi_KritischerTreffer(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring des kritischen Treffers";
+	description				= "critical strike ring";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -2153,7 +2153,7 @@ INSTANCE ItRi_Siegelring(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "geraubter Siegelring";
+	description				= "stolen signet ring";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;

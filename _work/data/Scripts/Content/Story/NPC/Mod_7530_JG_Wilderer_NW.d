@@ -1,7 +1,7 @@
 instance Mod_7530_JG_Wilderer_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wilderer"; 
+	name 		= "poachers"; 
 	guild 		= GIL_STRF;
 	id 			= 7530;
 	voice 		= 8;

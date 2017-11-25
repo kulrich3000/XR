@@ -234,7 +234,7 @@ INSTANCE PC_PrayShrine_Klosterwein (C_Info)
 	condition		= PC_PrayShrine_Klosterwein_Condition;
 	information		= PC_PrayShrine_Klosterwein_Info;
 	permanent		= TRUE;
-	description		= "Klosterwein herstellen"; 
+	description		= "produce monastery wine"; 
 };
 
 FUNC INT PC_PrayShrine_Klosterwein_Condition ()
@@ -268,7 +268,7 @@ INSTANCE PC_PrayShrine_Pray (C_Info)
 	condition		= PC_PrayShrine_Pray_Condition;
 	information		= PC_PrayShrine_Pray_Info;
 	permanent		= TRUE;
-	description		= "Beten"; 
+	description		= "Pray"; 
 };
 
 FUNC INT PC_PrayShrine_Pray_Condition ()
@@ -284,19 +284,19 @@ FUNC VOID PC_PrayShrine_Pray_Info()
 {
 	Info_ClearChoices (PC_PrayShrine_Pray);
 	Info_AddChoice (PC_PrayShrine_Pray,Dialog_Back,PC_PrayShrine_Pray_Back);
-	Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 0 Goldstücke.",PC_PrayShrine_Pray_NoPay);
+	Info_AddChoice (PC_PrayShrine_Pray,"I want to pray and give 0 gold pieces.",PC_PrayShrine_Pray_NoPay);
 			
 	if (Npc_HasItems (hero,ItMi_Gold) >=10)
 	{
-		Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 10 Goldstücke.",PC_PrayShrine_Pray_SmallPay);
+		Info_AddChoice (PC_PrayShrine_Pray,"I want to pray and donate 10 pieces of gold.",PC_PrayShrine_Pray_SmallPay);
 	};
 	if (Npc_HasItems (hero,ItMi_Gold) >=50)
 	{
-		Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 50 Goldstücke.",PC_PrayShrine_Pray_MediumPay);
+		Info_AddChoice (PC_PrayShrine_Pray,"I want to pray and donate 50 pieces of gold.",PC_PrayShrine_Pray_MediumPay);
 	};
 	if (Npc_HasItems (hero,ItMi_Gold) >=100)
 	{
-		Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 100 Goldstücke.",PC_PrayShrine_Pray_BigPay);
+		Info_AddChoice (PC_PrayShrine_Pray,"I want to pray and donate 100 pieces of gold.",PC_PrayShrine_Pray_BigPay);
 	};
 }; 
 
@@ -312,7 +312,7 @@ INSTANCE PC_PrayShrine_Heilung (C_Info)
 	condition		= PC_PrayShrine_Heilung_Condition;
 	information		= PC_PrayShrine_Heilung_Info;
 	permanent		= TRUE;
-	description		= "Komplette Heilung"; 
+	description		= "Complete healing"; 
 };
 
 FUNC INT PC_PrayShrine_Heilung_Condition ()
@@ -434,7 +434,7 @@ FUNC INT PC_PrayShrine_Heilung_Condition ()
 		HealPrice += 200;
 	};
 
-	PC_PrayShrine_Heilung.description = ConcatStrings("Komplette Heilung (", IntToString(HealPrice));
+	PC_PrayShrine_Heilung.description = ConcatStrings("Complete Healing (", IntToString(HealPrice));
 	PC_PrayShrine_Heilung.description = ConcatStrings(PC_PrayShrine_Heilung.description, " Gold)");
 
 	if (PLAYER_MOBSI_PRODUCTION	==	MOBSI_PRAYSHRINE)
@@ -592,7 +592,7 @@ INSTANCE PC_PrayShrine_Reg (C_Info)
 	condition		= PC_PrayShrine_Reg_Condition;
 	information		= PC_PrayShrine_Reg_Info;
 	permanent		= TRUE;
-	description		= "Regeneration erlangen"; 
+	description		= "recover"; 
 };
 
 FUNC INT PC_PrayShrine_Reg_Condition ()
@@ -614,11 +614,11 @@ FUNC VOID PC_PrayShrine_Reg_Info()
 	{
 		if (Mod_Schwierigkeit == 4)
 		{
-			Info_AddChoice (PC_PrayShrine_Reg,"Lebensregeneration (7000 Gold)",PC_PrayShrine_Reg_HP);
+			Info_AddChoice (PC_PrayShrine_Reg,"Life regeneration (7000 Gold)",PC_PrayShrine_Reg_HP);
 		}
 		else
 		{
-			Info_AddChoice (PC_PrayShrine_Reg,"Lebensregeneration (20 LP und 5000 Gold)",PC_PrayShrine_Reg_HP);
+			Info_AddChoice (PC_PrayShrine_Reg,"Life regeneration (20 LP and 5000 Gold)",PC_PrayShrine_Reg_HP);
 		};
 	};
 }; 
@@ -683,7 +683,7 @@ FUNC VOID B_MardukGebet() {
 
 				Mod_Marduk_Gebetet = TRUE;
 
-				B_LogEntry	(TOPIC_MOD_MARDUK_NACHTSCHICHT, "Ich habe eine Woche lang jeden Tag gebetet. Das sollte meinen Glauben bewiesen haben.");
+				B_LogEntry	(TOPIC_MOD_MARDUK_NACHTSCHICHT, "I prayed every day for a week. That should prove my faith.");
 			};
 		};
 	};
@@ -828,7 +828,7 @@ INSTANCE PC_PrayShrine_Chemo (C_Info)
 	condition		= PC_PrayShrine_Chemo_Condition;
 	information		= PC_PrayShrine_Chemo_Info;
 	permanent		= TRUE;
-	description		= "Chemische Keule weihen"; 
+	description		= "Chemical club consecrate"; 
 };
 
 FUNC INT PC_PrayShrine_Chemo_Condition ()
@@ -904,7 +904,7 @@ FUNC VOID PC_PrayShrine_BlessSword_Info()
 		B_Göttergefallen(1, 5);
 	};
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_INNOSKLINGE, "Das Schwert wurde geweiht.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_INNOSKLINGE, "The sword was consecrated.");
 
 	AI_Teleport	(hero, "HALLE1_ANKUNFT");
 	
@@ -937,8 +937,8 @@ FUNC INT PC_PrayShrine_BlessSword_01_Condition ()
 
 FUNC VOID PC_PrayShrine_BlessSword_01_Info()
 {
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_01_15_00"); //Wir werden seinen Ruhm ernten
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_01_15_01"); //Innos steht bei mir und meinen Brüdern
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_01_15_00"); //We will reap his glory
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_01_15_01"); //Innos stands by me and my brothers
 
 	B_ENDPRODUCTIONDIALOG();
 	Wld_PlayEffect("spellFX_RedTeleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
@@ -975,8 +975,8 @@ FUNC INT PC_PrayShrine_BlessSword_02_Condition ()
 
 FUNC VOID PC_PrayShrine_BlessSword_02_Info()
 {
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_02_15_00"); //Ich werde alle auf meinem Weg wie Schafe schlachten
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_02_15_01"); //denn er ist das Feuer in meinem Herz
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_02_15_00"); //I will slaughter all of them like sheep on my way
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_02_15_01"); //for he is the fire in my heart
 
 	B_ENDPRODUCTIONDIALOG();
 	Wld_PlayEffect("spellFX_RedTeleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
@@ -1013,8 +1013,8 @@ FUNC INT PC_PrayShrine_BlessSword_03_Condition ()
 
 FUNC VOID PC_PrayShrine_BlessSword_03_Info()
 {
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_03_15_00"); //Meine Klinge ist nur ihm geweiht
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_03_15_01"); //an diesem Tag wird sein Name erklingen
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_03_15_00"); //My blade is dedicated only to him
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_03_15_01"); //that day his name will resound
 
 	B_ENDPRODUCTIONDIALOG();
 	Wld_PlayEffect("spellFX_RedTeleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
@@ -1051,8 +1051,8 @@ FUNC INT PC_PrayShrine_BlessSword_04_Condition ()
 
 FUNC VOID PC_PrayShrine_BlessSword_04_Info()
 {
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_04_15_00"); //Jeder der sich in meinen Weg stellt
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_04_15_01"); //wird durch meine Hand sterben
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_04_15_00"); //Anyone who stands in my way
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_04_15_01"); //will die by my hand
 
 	B_ENDPRODUCTIONDIALOG();
 	Wld_PlayEffect("spellFX_RedTeleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
@@ -1089,8 +1089,8 @@ FUNC INT PC_PrayShrine_BlessSword_05_Condition ()
 
 FUNC VOID PC_PrayShrine_BlessSword_05_Info()
 {
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_05_15_00"); //denn ich bin ein Krieger Innos
-	AI_Output(hero, self, "PC_PrayShrine_BlessSword_05_15_01"); //Vollstrecker seines Willens
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_05_15_00"); //for I am a warrior Innos
+	AI_Output(hero, self, "PC_PrayShrine_BlessSword_05_15_01"); //executor of his will
 
 	B_ENDPRODUCTIONDIALOG();
 	Wld_PlayEffect("spellFX_RedTeleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
@@ -1121,5 +1121,5 @@ FUNC VOID PC_PrayShrine_BlessSword_05_Info()
 	
 	B_UsedShrineForWeihe();
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_INNOSKLINGE, "Es ist geschafft. Und das Schwert ist tatsächlich noch mächtiger geworden.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_INNOSKLINGE, "It's done! And the sword has indeed become even more powerful.");
 }; 

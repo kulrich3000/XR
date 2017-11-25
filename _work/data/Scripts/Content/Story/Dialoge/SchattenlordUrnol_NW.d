@@ -28,18 +28,18 @@ FUNC VOID Info_Mod_Urnol_Hi_Info()
 
 	Mod_UrnolBS = TRUE;
 	
-	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_00"); //Ahh, da bist du ja. Ich habe dich bereits erwartet.
-	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_01"); //Was?! Wer bist du?
-	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_02"); //Ich bin Urnol, ein Gesandter meines Meisters, der kommen wird, dich zu töten.
-	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_03"); //Und wer ist dein Meister? Doch nicht etwa der Schläfer?
-	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_04"); //Der Schläfer ist nicht mein Meister, er war nur einer seiner Diener.
-	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_05"); //Aber wer ist dann dein Meister? Der Gott der Finsternis, Beliar?!
-	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_06"); //(lacht) Nein, du irrst Mensch. Aber das wirst du noch früh genug erfahren!
-	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_07"); //Aber warum will dein Meister mich töten?
-	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_08"); //Du hast einen seiner Diener verbannt, wie auch das magische Gefängnis zerstört, in welchem er mit dem Erz unter seiner Kontrolle eine Streitmacht erschaffen wollte, ganz Khorinis zu knechten.
-	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_09"); //Und wieso ist dein Meister nicht hier? Warum hat er dich überhaupt geschickt?
-	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_10"); //(lacht) Viele Fragen hast du, Mensch ... und manche bleiben vorerst unbeantwortet.
-	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_11"); //(lacht gehässig) Hahaha, du wirst sterben, Mensch.
+	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_00"); //Ahh, there you are. I've been expecting you.
+	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_01"); //What?! Who are you?
+	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_02"); //I am Urnol, a messenger of my Master who will come to kill you.
+	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_03"); //And who is your master? Not the sleeper?
+	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_04"); //The sleeper is not my master, he was just one of his servants.
+	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_05"); //But then who is your master? The God of darkness, Beliar?!
+	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_06"); //(laughs) No, you're wrong, man. But you'll find out soon enough!
+	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_07"); //But why does your master want to kill me?
+	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_08"); //You banished one of his servants, as well as destroying the magical prison in which he wanted to use the ore to create an army under his control to enslave all Khorini.
+	AI_Output(hero, self, "Info_Mod_Urnol_Hi_15_09"); //And why isn't your master here? Why did he send you anyway?
+	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_10"); //(laughs) Many questions you have, man... and some of them remain unanswered for the time being.
+	AI_Output(self, hero, "Info_Mod_Urnol_Hi_14_11"); //(laughs spitefully) Hahaha, you will die, man.
 
 	B_StartOtherRoutine	(self, "TOT");
 };
@@ -52,7 +52,7 @@ INSTANCE Info_Mod_Urnol_WerBistDu (C_INFO)
 	information	= Info_Mod_Urnol_WerBistDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "ENDE";
+	description	= "END";
 };
 
 FUNC INT Info_Mod_Urnol_WerBistDu_Condition()
@@ -71,7 +71,7 @@ FUNC VOID Info_Mod_Urnol_WerBistDu_Info()
 
 	Wld_StopEffect	("DEMENTOR_FX");
 
-	B_LogEntry	(TOPIC_MOD_DIEBEDROHUNG, "Ein gewisser Schattenlord Urnol hat mir erzählt, dass sein Meister aus seinem Reich zurückkehren wird, um mich zu töten. Er begründet das damit, dass ich den Schläfer, einen seiner Diener, getötet habe. Ich sollte Xardas davon berichten.");
+	B_LogEntry	(TOPIC_MOD_DIEBEDROHUNG, "A certain shadow lord Urnol told me that his master will return from his kingdom to kill me. He justifies it by saying that I killed the sleeper, one of his servants. I should tell Xardas about it.");
 	B_SetTopicStatus	(TOPIC_MOD_DUNKLERPILGER, LOG_SUCCESS);
 };
 
@@ -95,10 +95,10 @@ FUNC INT Info_Mod_Urnol_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Urnol_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Urnol_Daemonisch_14_00"); //Was, du hier? Verflucht, meine Tarnung aufgeflogen, die Seelenpeiniger fast alle gebannt, die Besessenen geheilt. Das wirst du büssen.
-	AI_Output(hero, self, "Info_Mod_Urnol_Daemonisch_15_01"); //Tja, scheint so, als seien die Pläne deines Meisters wieder nicht aufgegangen.
-	AI_Output(self, hero, "Info_Mod_Urnol_Daemonisch_14_02"); //Ja, spotte nur. Die Eroberung von Khorinis mag aufgeschoben sein ... mehr aber auch nicht.
-	AI_Output(self, hero, "Info_Mod_Urnol_Daemonisch_14_03"); //Xeres besitzt genug Mittel und Wege sein Ziel zu erreichen ... Und ich werde seine Armeen befehligen. Wie sehen uns wieder.
+	AI_Output(self, hero, "Info_Mod_Urnol_Daemonisch_14_00"); //What, you here? Cursed, my camouflage blown up, the soul tormentors almost all banished, the possessed healed. You'll pay for this.
+	AI_Output(hero, self, "Info_Mod_Urnol_Daemonisch_15_01"); //Well, it seems your master's plans have failed again.
+	AI_Output(self, hero, "Info_Mod_Urnol_Daemonisch_14_02"); //Yeah, just mock. The conquest of Khorinis may be postponed.... more than that, but not at all.
+	AI_Output(self, hero, "Info_Mod_Urnol_Daemonisch_14_03"); //Xeres has enough means and ways to reach his goal.... And I will command his armies. We'll see each other again.
 
 	AI_StopProcessInfos	(self);
 
@@ -107,5 +107,5 @@ FUNC VOID Info_Mod_Urnol_Daemonisch_Info()
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Urnols Tarnung ist aufgeflogen ... auch, wenn ich jemand anderen in Verdacht hatte. Er dürfte sich wieder ins Minental verdrückt haben und ich kann Xardas von meinem Erfolg berichten.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Urnol's cover has been blown.... even if I suspected someone else. He must have gone to the Minental again and I can tell Xardas about my success.");
 };

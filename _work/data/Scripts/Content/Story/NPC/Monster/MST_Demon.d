@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Demon(C_Npc)			
 {
 	//---- Monster ----
-	name							=	"Dämon";
+	name							=	"Demon";
 	guild							=	GIL_DEMON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DEMON;
 	level							=	60;
@@ -130,7 +130,7 @@ INSTANCE Demon_GDG (Mst_Default_Demon)
 
 INSTANCE LessDemon (Mst_Default_Demon)
 {
-	name	=	"Niederer Dämon";
+	name	=	"Low Demon";
 
 	level	=	40;
 
@@ -140,7 +140,7 @@ INSTANCE LessDemon (Mst_Default_Demon)
 
 INSTANCE WeakDemon (Mst_Default_Demon)
 {
-	name	=	"Schwacher Dämon";
+	name	=	"Weak Demon";
 
 	level	=	25;
 
@@ -154,7 +154,7 @@ INSTANCE WeakDemon (Mst_Default_Demon)
 
 INSTANCE Summoned_Demon (Mst_Default_Demon)
 {
-	name							= "Beschworener Dämon";
+	name							= "Summoned Demon";
 	guild							= GIL_SUMMONED_DEMON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_DEMON;
 	level							= 0;
@@ -170,7 +170,7 @@ INSTANCE Summoned_Demon (Mst_Default_Demon)
 
 INSTANCE Demon_Faice (Mst_Default_Demon)
 {
-	name							= "Beschworener Dämon";
+	name							= "Summoned Demon";
 	guild							= GIL_SUMMONED_DEMON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_DEMON;
 	level							= 0;

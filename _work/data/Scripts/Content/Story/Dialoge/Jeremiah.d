@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Jeremiah_Hi (C_INFO)
 	information	= Info_Mod_Jeremiah_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, wofür bist du zuständig?";
+	description	= "Hello, what are you in charge of?";
 };
 
 FUNC INT Info_Mod_Jeremiah_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Jeremiah_Hi_Condition()
 
 FUNC VOID Info_Mod_Jeremiah_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jeremiah_Hi_15_00"); //Hallo, wofür bist du zuständig?
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Hi_04_01"); //Ich bin der Alchemist und Schnapsbrenner des Lagers. Im Moment habe ich ziemlich viel zu tun. Vielleicht habe ich in einigen Tagen mehr Zeit für eine Unterhaltung.
+	AI_Output(hero, self, "Info_Mod_Jeremiah_Hi_15_00"); //Hello, what are you in charge of?
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Hi_04_01"); //I'm the alchemist and distiller of the camp. I'm pretty busy right now. Maybe I'll have more time to talk in a few days.
 
 	Mod_NL_JeremiahDay = Wld_GetDay();
 };
@@ -43,18 +43,18 @@ FUNC INT Info_Mod_Jeremiah_Diver_Condition()
 
 FUNC VOID Info_Mod_Jeremiah_Diver_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_00"); //Ahh, du kommst gerade richtig.
-	AI_Output(hero, self, "Info_Mod_Jeremiah_Diver_15_01"); //Was, worum geht es?
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_02"); //Du gehörst nicht zu den besoffenen Tagedieben, die sonst in der Kneipe herumsitzen. Du bist bestimmt dazu in der Lage ausdauernd zu schwimmen und zu tauchen.
-	AI_Output(hero, self, "Info_Mod_Jeremiah_Diver_15_03"); //Ja, wohl möglich. Den einen oder anderen Meter bin ich schon geschwommen ...
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_04"); //Sehr gut. Vor einiger Zeit viel mir nämlich ein Kraut an dem Ufer des Sees unten beim Reislord auf. Ich glaubte mich daran erinnern zu können, es schon mal in einem Buch gesehen zu haben.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_05"); //Jedenfalls experimentierte ich etwas damit herum und fand eine, ähh, sinnvolle Verwendung dafür. Mittlerweile habe ich jedoch alles an den Ufern abgeerntet und da habe ich mich gefragt, ob du ...
-	AI_Output(hero, self, "Info_Mod_Jeremiah_Diver_15_06"); //Ob ich nicht im See danach tauchen könnte.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_07"); //Ja, genau. Die Pflanze hat lange gezackte Blätter, ganz leicht zu erkennen. Bringe mir fünf Exemplare. Das sollte erst mal für einige Zeit reichen.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_00"); //Ahh, you're just in time.
+	AI_Output(hero, self, "Info_Mod_Jeremiah_Diver_15_01"); //What, what's it about?
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_02"); //You're not one of those drunken thieves who usually sit around in the pub. You are destined to be able to swim and dive persistently.
+	AI_Output(hero, self, "Info_Mod_Jeremiah_Diver_15_03"); //Yes, I suppose so. I've already swum a few meters or so...
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_04"); //Very good. Very good. Some time ago a lot of me because of a herb on the shore of the lake down at the rice lord. I thought I remember seeing it in a book before.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_05"); //Anyway, I experimented with it a little bit and found a, uh, reasonable use for it. In the meantime, however, I have harvested everything on the banks and I was wondering if you....
+	AI_Output(hero, self, "Info_Mod_Jeremiah_Diver_15_06"); //If I couldn't dive in the lake afterwards.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Diver_04_07"); //Yeah, that's right. The plant has long jagged leaves, easy to recognize. Bring me five copies. That should last for a while.
 
 	Log_CreateTopic	(TOPIC_MOD_SLD_JEREMIAHKRAUT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SLD_JEREMIAHKRAUT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHKRAUT, "Ich soll im See unten beim Reislord nach einem Kraut mit langen, gezackten Blättern tauchen und Jeremiah fünf davon bringen.");
+	B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHKRAUT, "I'm supposed to dive in the lake down by the rice lord for an herb with long, serrated leaves and bring Jeremiah five of them.");
 };
 
 INSTANCE Info_Mod_Jeremiah_Kraut (C_INFO)
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_Jeremiah_Kraut (C_INFO)
 	information	= Info_Mod_Jeremiah_Kraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Kraut ... denke ich.";
+	description	= "I have the herb.... I think.";
 };
 
 FUNC INT Info_Mod_Jeremiah_Kraut_Condition()
@@ -80,16 +80,16 @@ FUNC INT Info_Mod_Jeremiah_Kraut_Condition()
 
 FUNC VOID Info_Mod_Jeremiah_Kraut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jeremiah_Kraut_15_00"); //Ich habe das Kraut ... denke ich.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_01"); //Ausgezeichnet, gib her ...
+	AI_Output(hero, self, "Info_Mod_Jeremiah_Kraut_15_00"); //I have the herb.... I think.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_01"); //Excellent, give me...
 
 	B_GiveInvItems	(hero, self, ItPl_Herkuleskraut, 5);
 
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_02"); //Als kleines Dankeschön werde ich dir nun erzählen, was man mit den Pflanzen anfangen kann.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_03"); //Erzähle es aber unter keinen Umständen im Lager weiter. (zu sich selbst) Nicht, dass Lee noch davon zu hören bekommt.
-	AI_Output(hero, self, "Info_Mod_Jeremiah_Kraut_15_04"); //Ja, passt schon.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_05"); //Wenn du dir einen Stängel aus diesem Kraut vermischt mit Sumpfkraut drehst, erfährst du eine Wirkung, die dich glatt aus den Socken Haut.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_06"); //Der Schub an Kraft, den du erfährst, ist immens… zumindest solange die Wirkung anhält. Danach braucht man erst wieder etwa Erholung.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_02"); //As a little thank-you, I'll tell you what you can do with the plants.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_03"); //Don't tell anyone else about it in the camp under any circumstances. Not that Lee's gonna hear about it.
+	AI_Output(hero, self, "Info_Mod_Jeremiah_Kraut_15_04"); //Yeah, that's all right.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_05"); //If you turn a stem from this herb mixed with swampweed, you will experience an effect that will skin you smooth out of your socks.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Kraut_04_06"); //The thrust of power you experience is immense... at least as long as the effect lasts. After that, you first need some rest.
 
 	B_SetTopicStatus	(TOPIC_MOD_SLD_JEREMIAHKRAUT, LOG_SUCCESS);
 
@@ -121,19 +121,19 @@ FUNC INT Info_Mod_Jeremiah_Swimmer_Condition()
 
 FUNC VOID Info_Mod_Jeremiah_Swimmer_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_00"); //Dass du schwimmen und tauchen kannst, hast du bereits bewiesen.
-	AI_Output(hero, self, "Info_Mod_Jeremiah_Swimmer_15_01"); //Was soll ich diesmal machen?
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_02"); //Nun, schwimmen und tauchen.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_03"); //Als die Söldner einmal einen Haufen Lurker am See vor dem Lager abgeschlachtet hatten, die sich dort sehr lebhaft vermehrten, fiel mir beim Kräutersammeln auf, dass die anderen Tiere ganz verrückt nach einem bestimmten Organ der Lurker waren.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_04"); //Ich stellte fest, dass es eine Flüssigkeit enthielt, welche die Konzentration und Vitalität steigern kann.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_05"); //Nun gab es bei unserem See im Lager früher einen Dammlurker. Irgend so ein Typ hat ihn irgendwann erledigt.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_06"); //Aber davor könnte das Vieh hier irgendwo Eier gelegt haben. Es war nämlich der einzige Lurker in der Nähe und ich habe mal gehört, dass sie sich von ihren Artgenossen zurückziehen, während sie brüten.
-	AI_Output(hero, self, "Info_Mod_Jeremiah_Swimmer_15_07"); //Und ich soll jetzt tauchen, um nach einem Zugang zu einer Höhle zu suchen, wo sich die Eier befinden könnten?
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_08"); //Ja, ich sehe, du hast verstanden. Wenn du Eier findest, bring sie mir. Normalerweise schlüpfen die Viecher zu dieser Jahreszeit, sodass sie schon weit entwickelt sein müssten ...
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_00"); //You have already proved that you can swim and dive.
+	AI_Output(hero, self, "Info_Mod_Jeremiah_Swimmer_15_01"); //What am I gonna do this time?
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_02"); //Well, swim and dive.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_03"); //When the mercenaries once slaughtered a bunch of Lurkers at the lake in front of the camp, which proliferated there very vividly, I noticed when collecting herbs that the other animals were completely crazy about a certain organ of the Lurkers.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_04"); //I found that it contained a liquid that could increase concentration and vitality.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_05"); //Now there used to be a Dammlurker near our lake in the camp. Some guy killed him sometime.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_06"); //But before that, the cattle could have laid eggs in here somewhere. It was the only Lurker in the area and I heard once that they retreat from their conspecifics while they breed.
+	AI_Output(hero, self, "Info_Mod_Jeremiah_Swimmer_15_07"); //And I'm supposed to dive now to find access to a cave where the eggs might be?
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Swimmer_04_08"); //Yeah, I see you understand. If you find eggs, bring them to me. Normally the creatures hatch at this time of the year, so they should be already well developed....
 
 	Log_CreateTopic	(TOPIC_MOD_SLD_JEREMIAHLURKER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SLD_JEREMIAHLURKER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHLURKER, "Jeremiah will diesmal, dass ich im See des Lagers tauchen gehe, um nach einer Lurkerhöhle zu suchen. Wenn ich Eier finde, soll ich sie ihm bringen.");
+	B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHLURKER, "Jeremiah wants me to go diving in the camp lake to look for a lurker cave. If I find eggs, I should bring them to him.");
 };
 
 INSTANCE Info_Mod_Jeremiah_Lurker (C_INFO)
@@ -144,7 +144,7 @@ INSTANCE Info_Mod_Jeremiah_Lurker (C_INFO)
 	information	= Info_Mod_Jeremiah_Lurker_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, ich habe tatsächlich ein paar Eier gefunden.";
+	description	= "Here, I actually found some eggs.";
 };
 
 FUNC INT Info_Mod_Jeremiah_Lurker_Condition()
@@ -158,16 +158,16 @@ FUNC INT Info_Mod_Jeremiah_Lurker_Condition()
 
 FUNC VOID Info_Mod_Jeremiah_Lurker_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jeremiah_Lurker_15_00"); //Hier, ich habe tatsächlich ein paar Eier gefunden.
+	AI_Output(hero, self, "Info_Mod_Jeremiah_Lurker_15_00"); //Here, I actually found some eggs.
 
 	B_GiveInvItems	(hero, self, ItMi_LurkerEgg, 5);
 
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Lurker_04_01"); //Das hast du gut gemacht, ausgezeichnet. Aus so frischem Ausgangsmaterial sollte ich hoffentlich genug Sekret gewinnen können.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Lurker_04_02"); //Wie dem auch sei, ich habe mal mit einer Pflanze namens Kronstöckel herumexperimentiert. Recht selten, aber du bist ja viel unterwegs.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Lurker_04_03"); //Wenn du mir jetzt noch zwei Exemplare besorgst, werde ich dir einen Trank brauen, der dauerhaft deiner Konzentration und Vitalität steigert.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_Lurker_04_04"); //Währenddessen werde ich mich daran machen, die Lurker aus dem Ei zu pulen ...
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Lurker_04_01"); //You did a good job, excellent. I should hopefully be able to extract enough secretion from such fresh raw material.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Lurker_04_02"); //Anyway, I experimented with a plant called the Kronstöckel once. Rarely, but you travel a lot.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Lurker_04_03"); //If you get me two more copies now, I will brew you a potion that will permanently increase your concentration and vitality.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_Lurker_04_04"); //Meanwhile, I'm going to start pullin' the Lurkers out of the egg...
 
-	B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHLURKER, "Jetzt will mir Jeremiah einen Trank brauen, wenn ich ihm zwei Kronstöckel beschaffe.");
+	B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHLURKER, "Now Jeremiah wants to make me a potion if I get him two crests.");
 
 	B_GivePlayerXP	(250);
 
@@ -183,7 +183,7 @@ INSTANCE Info_Mod_Jeremiah_PermHerb (C_INFO)
 	information	= Info_Mod_Jeremiah_PermHerb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Pflanzen.";
+	description	= "I have the plants.";
 };
 
 FUNC INT Info_Mod_Jeremiah_PermHerb_Condition()
@@ -197,13 +197,13 @@ FUNC INT Info_Mod_Jeremiah_PermHerb_Condition()
 
 FUNC VOID Info_Mod_Jeremiah_PermHerb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jeremiah_PermHerb_15_00"); //Ich habe die Pflanzen.
+	AI_Output(hero, self, "Info_Mod_Jeremiah_PermHerb_15_00"); //I have the plants.
 
 	B_GiveInvItems	(hero, self, ItPl_Perm_Herb, 2);
 
-	AI_Output(self, hero, "Info_Mod_Jeremiah_PermHerb_04_01"); //Hervorragend. Das gibt ein tolles Gebräu, ähh, einen tollen Trank.
-	AI_Output(self, hero, "Info_Mod_Jeremiah_PermHerb_04_02"); //Die kleinen Viecher haben auch mehr und stärkeres Sekret abgegeben, als ich erwartet hatte ...
-	AI_Output(self, hero, "Info_Mod_Jeremiah_PermHerb_04_03"); //Komm morgen wieder. Dann müsste ich fertig sein.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_PermHerb_04_01"); //Outstanding. That'll make a great brew, uh, a great potion.
+	AI_Output(self, hero, "Info_Mod_Jeremiah_PermHerb_04_02"); //The little creatures also gave away more and stronger secretions than I had expected....
+	AI_Output(self, hero, "Info_Mod_Jeremiah_PermHerb_04_03"); //Come back tomorrow. Then I should be done.
 
 	B_SetTopicStatus	(TOPIC_MOD_SLD_JEREMIAHLURKER, LOG_SUCCESS);
 
@@ -235,7 +235,7 @@ FUNC INT Info_Mod_Jeremiah_SpecialTrank_Condition()
 
 FUNC VOID Info_Mod_Jeremiah_SpecialTrank_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jeremiah_SpecialTrank_04_00"); //Da bist du ja. Der Trank für dich ist fertig. Hier ist er. Prost!
+	AI_Output(self, hero, "Info_Mod_Jeremiah_SpecialTrank_04_00"); //Oh, there you are. The potion for you is ready. Here he is, sir. Cheers!
 
 	B_GiveInvItems	(self, hero, ItPo_Health_01, 1);
 
@@ -246,13 +246,13 @@ FUNC VOID Info_Mod_Jeremiah_SpecialTrank_Info()
 	hero.attribute[ATR_HITPOINTS_MAX] += 4;
 	hero.attribute[ATR_HITPOINTS] += 4;
 
-	PrintScreen	("Stärke + 4, Geschicklichkeit + 4, Lebensenergie + 4", -1, -1, FONT_SCREEN, 2);
+	PrintScreen	("Strength + 4, Skill + 4, Life Energy + 4", -1, -1, FONT_SCREEN, 2);
 
-	AI_Output(self, hero, "Info_Mod_Jeremiah_SpecialTrank_04_01"); //Und? Wie geht es dir?
-	AI_Output(hero, self, "Info_Mod_Jeremiah_SpecialTrank_15_02"); //Sehr gut, warum fragst du?
-	AI_Output(self, hero, "Info_Mod_Jeremiah_SpecialTrank_04_03"); //Ach, ähh, nur so, wegen ... wegen des Geschmacks, genau.
-	AI_Output(hero, self, "Info_Mod_Jeremiah_SpecialTrank_15_04"); //Hmm, für jemanden, der vor allem seine Erfahrungen aus dem Schnapsbrennen und aus Beobachtungen der Natur hat, scheinst du aber recht begabt in der Alchemie zu sein. Denke ich doch, oder?
-	AI_Output(self, hero, "Info_Mod_Jeremiah_SpecialTrank_04_05"); //(zögerlich) Öhmm, ja ... ja, ich verstehe mein Handwerk, wie du siehst. (zu sich selbst) Puhh, dann ist ja noch mal alles gut gegangen ...
+	AI_Output(self, hero, "Info_Mod_Jeremiah_SpecialTrank_04_01"); //And? How are you feeling?
+	AI_Output(hero, self, "Info_Mod_Jeremiah_SpecialTrank_15_02"); //Very good, why do you ask?
+	AI_Output(self, hero, "Info_Mod_Jeremiah_SpecialTrank_04_03"); //Oh, uh, just because of.... because of the taste, that's right.
+	AI_Output(hero, self, "Info_Mod_Jeremiah_SpecialTrank_15_04"); //Hmm, for someone who mainly has his experience of distilling liquor and observing nature, you seem to be quite talented in alchemy. I think so, don't I?
+	AI_Output(self, hero, "Info_Mod_Jeremiah_SpecialTrank_04_05"); //Hmm, yeah... Yes, I understand my trade, as you can see. (to itself) Puhh, then everything went well again...
 
 	var oCNpc her;
 	her = Hlp_GetNpc (hero);

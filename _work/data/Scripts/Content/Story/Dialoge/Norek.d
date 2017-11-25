@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Norek_Hi (C_INFO)
 	information	= Info_Mod_Norek_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Blutkelch.";
+	description	= "I have the cup.";
 };
 
 FUNC INT Info_Mod_Norek_Hi_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Norek_Hi_Condition()
 
 FUNC VOID Info_Mod_Norek_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Norek_Hi_15_00"); //Ich habe den Blutkelch.
-	AI_Output(self, hero, "Info_Mod_Norek_Hi_13_01"); //Gib ihn Na'im.
+	AI_Output(hero, self, "Info_Mod_Norek_Hi_15_00"); //I have the cup.
+	AI_Output(self, hero, "Info_Mod_Norek_Hi_13_01"); //Give it to Na' im.
 };
 
 INSTANCE Info_Mod_Norek_Blutkelch (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Norek_Blutkelch (C_INFO)
 	information	= Info_Mod_Norek_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wenn ich deinen Teil dieser seltsamen Botschaft bekomme, will ich versuchen, sie zu entziffern.";
+	description	= "When I get your part of this strange message, I want to try to decipher it.";
 };
 
 FUNC INT Info_Mod_Norek_Blutkelch_Condition()
@@ -44,16 +44,16 @@ FUNC INT Info_Mod_Norek_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Norek_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch_15_00"); //Wenn ich deinen Teil dieser seltsamen Botschaft bekomme, will ich versuchen, sie zu entziffern.
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch_13_01"); //Das hat bis jetzt noch keiner geschafft. Gib mir Bericht, wenn du was rausgefunden hast.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch_15_00"); //When I get your part of this strange message, I want to try to decipher it.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch_13_01"); //No one's ever done that before. Give me a report if you find anything.
 
 	B_GiveInvItems	(self, hero, ItWr_BlutkelchZettel3, 1);
 
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch_15_02"); //Mach ich doch. Woher habt ihr eigentlich diese Blätter?
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch_13_03"); //Amir hat sie uns gebracht. Wahrscheinlich aus der Stadt.
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch_15_04"); //Und woher hat sie Amir?
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch_13_05"); //Das konnte er nicht meht sagen. Er kam schwer verletzt hier an, hat Shakir die Blätter übergeben und ist kurz darauf gestorben.
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch_15_06"); //Hmm. Vielleicht Alkoholvergiftung. Er lümmelt immer vor der Taverne am Tempelplatz rum. Ist auch nicht so wichtig, denke ich.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch_15_02"); //I'm doing it. Where do you actually get these leaves from?
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch_13_03"); //Amir brought it to us. Probably from the city.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch_15_04"); //And how did she get Amir?
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch_13_05"); //He couldn't really say that. He arrived badly injured, handed over the leaves to Shakir and died shortly afterwards.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch_15_06"); //Hmm. Maybe alcohol poisoning. He always looms around the temple square in front of the tavern. It doesn't matter, I guess.
 
 	if (Npc_HasItems(hero, ItWr_BlutkelchZettel1) == 1)
 	&& (Npc_HasItems(hero, ItWr_BlutkelchZettel2) == 1)
@@ -61,7 +61,7 @@ FUNC VOID Info_Mod_Norek_Blutkelch_Info()
 	{
 		Log_CreateTopic	(TOPIC_MOD_ASS_LASTBLUTKELCH, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_ASS_LASTBLUTKELCH, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Habe von Kais, Mahamad und Norek jeweils ein Teil eines alten Pergaments erhalten und soll die Botschaft entziffern. Amir hat sie ins Lager gebracht. Mal sehen ...");
+		B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Received a piece of ancient parchment from Kais, Mahamad and Norek to decipher the message. Amir took them to the camp. Let's see....");
 	};
 };
 
@@ -86,33 +86,33 @@ FUNC INT Info_Mod_Norek_Blutkelch2_Condition()
 
 FUNC VOID Info_Mod_Norek_Blutkelch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_00"); //Da bist du endlich. Ich habe auf dich gewartet.
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_01"); //Entschuldigung, es war nicht einfach, den Kelch zu finden und zu bekommen.
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_02"); //Du hast den Blutkelch bereits?
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_03"); //Natürlich. Hier. Direkt aus seinem versiegeltem Versteck.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_00"); //Here you are at last. I've been waiting for you.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_01"); //Sorry, it wasn't easy to find and get the cup.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_02"); //You already have the cup?
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_03"); //Of course it is. Here. Straight out of his sealed stash.
 
 	B_GiveInvItems	(hero, self, ItMi_Bloodcup_Canyon, 1);
 
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_04"); //(beeindruckt) Teufelskerl! Schon etliche von uns sind bei der Suche nach den Kelchen gescheitert. Und du bringst uns bereits den dritten. (Laut) Respekt, Magier!
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_05"); //Magier?
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_06"); //Gewiss. Ich ernenne dich auf Grund deiner Leistung und Hilfe für unsere Gemeinschaft zum Magier der Assassinen. Herzlichen Glückwunsch.
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_07"); //Ich fühle mich geehrt, habe aber nur getan, was jeder andere auch getan hätte.
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_08"); //Mitnichten! Du hast wahrscheinlich die Weichen für unser aller Zukunft gestellt.
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_09"); //Das verstehe ich nun absolut nicht.
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_10"); //So höre: Wir sind nun schon etliche Monde auf dieser Insel. Du kennst unsere Vergangenheit?
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_11"); //Ja. Zahit hat mir davon erzählt.
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_12"); //Nun gut. Es mehren sich im Lager die Stimmen, dass es keine gute Idee war, auf diese Insel zu kommen. Wir sind einfach zu beengt hier, haben kaum Entfaltungsmöglichkeiten.
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_13"); //Viele vermissen die Sonne und Weite unser südlichen Heimat. Kurz gesagt; Sie wollen am liebsten wieder zurück. Die meisten Magier und viele von Mustafa`s Leuten.
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_14"); //Was nicht so einfach ist.
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_15"); //Genau. Der Zauber, der uns hierher gebracht hat, ist auf dem Festland verblieben.
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_16"); //Die Paladine haben ein grosses Schiff ...
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_17"); //Spassvogel! Die massakrieren uns, wenn sie uns sehen. Nee, nee.
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_18"); //Und was ist mit den Piraten? Denen gehört auch ein Dreimaster.
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_19"); //Das wäre schon eher was. Du kennst die Piraten?
-	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_20"); //Sicher. Habe mit den Leuten schon gesprochen.
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_21"); //Hmm. Ich werde mit den Räten darüber reden. Ach ja. Unser Giftmischer will was von dir.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_04"); //(impressed) Son of a gun! Some of us have already failed to find the cups. And you bring us the third one. (Loud) Respect, magician!
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_05"); //Magician?
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_06"); //Certainly. I appoint you as an Assassin Mage for your performance and help to our fellowship. Congratulations.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_07"); //I feel honoured, but I only did what anyone else would have done.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_08"); //By no means! You probably set the course for the future of all of us.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_09"); //I absolutely don't understand that now.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_10"); //So listen: We are already several moons on this island. You know our past?
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_11"); //Yeah. Zahit told me about it.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_12"); //Very well. There are increasing voices in the camp that it was not a good idea to come to this island. We're just too cramped here, with little room for development.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_13"); //Many people miss the sun and the vastness of our southern homeland. In short; They want to go back. Most magicians and many of Mustafa's people.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_14"); //Which is not easy.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_15"); //Exactly. The magic that brought us here has remained on the mainland.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_16"); //The Paladins have a big ship...
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_17"); //Joker! They'll massacre us when they see us. No, no, no.
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_18"); //And what about the pirates? They also own a three-master.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_19"); //That would be more like it. You know the pirates?
+	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_20"); //Sure. I've already spoken to the people.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_21"); //Hmm. I'll talk to the councils about it. Oh, yeah. Our poisoner wants something from you.
 	AI_Output(hero, self, "Info_Mod_Norek_Blutkelch2_15_22"); //Kamal?
-	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_23"); //Ja. Komm danach zu mir zurück.
+	AI_Output(self, hero, "Info_Mod_Norek_Blutkelch2_13_23"); //Yeah. Come back to me afterwards.
 
 	B_GivePlayerXP	(1000);
 
@@ -120,7 +120,7 @@ FUNC VOID Info_Mod_Norek_Blutkelch2_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_HEIMWEH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_HEIMWEH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_HEIMWEH, "Norek erzählte mir, dass große Teile der Assassinen unzufrieden sind mit den gegebenen Umständen und den gegebenen Umständen. Am liebsten würden sie wieder zurück in ihre Heimat.");
+	B_LogEntry	(TOPIC_MOD_ASS_HEIMWEH, "Norek told me that large parts of the Assassins are dissatisfied with the given circumstances and circumstances. They would love to return to their homeland.");
 };
 
 INSTANCE Info_Mod_Norek_Heimweh (C_INFO)
@@ -131,7 +131,7 @@ INSTANCE Info_Mod_Norek_Heimweh (C_INFO)
 	information	= Info_Mod_Norek_Heimweh_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Rat hat sich beraten?";
+	description	= "The Council has consulted?";
 };
 
 FUNC INT Info_Mod_Norek_Heimweh_Condition()
@@ -144,18 +144,18 @@ FUNC INT Info_Mod_Norek_Heimweh_Condition()
 
 FUNC VOID Info_Mod_Norek_Heimweh_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Norek_Heimweh_15_00"); //Der Rat hat sich beraten?
-	AI_Output(self, hero, "Info_Mod_Norek_Heimweh_13_01"); //Und befunden, dass eine Überfahrt mit den Piraten nur eine Notlösung sein könnte.
-	AI_Output(hero, self, "Info_Mod_Norek_Heimweh_15_02"); //Dann hat sich das erledigt?
-	AI_Output(self, hero, "Info_Mod_Norek_Heimweh_13_03"); //Nein. Es kann nicht schaden, wenn du mal mit dem Kapitän redest. Für alle Fälle ...
-	AI_Output(hero, self, "Info_Mod_Norek_Heimweh_15_04"); //Dann will ich mich mal auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Norek_Heimweh_13_05"); //Tu das. Du kannst auch erwähnen, dass der Preis für die Überfahrt kein Problem ist.
-	AI_Output(hero, self, "Info_Mod_Norek_Heimweh_15_06"); //Das wird der Kapitän gerne hören. Bis dann.
-	AI_Output(self, hero, "Info_Mod_Norek_Heimweh_13_07"); //Wiedersehen.
+	AI_Output(hero, self, "Info_Mod_Norek_Heimweh_15_00"); //The Council has consulted?
+	AI_Output(self, hero, "Info_Mod_Norek_Heimweh_13_01"); //And found that a crossing with the pirates could only be an emergency solution.
+	AI_Output(hero, self, "Info_Mod_Norek_Heimweh_15_02"); //So that settles it?
+	AI_Output(self, hero, "Info_Mod_Norek_Heimweh_13_03"); //No. It wouldn't hurt if you talked to the captain. For all cases...
+	AI_Output(hero, self, "Info_Mod_Norek_Heimweh_15_04"); //I'll be on my way, then.
+	AI_Output(self, hero, "Info_Mod_Norek_Heimweh_13_05"); //Do that. You can also mention that the price for the crossing is no problem.
+	AI_Output(hero, self, "Info_Mod_Norek_Heimweh_15_06"); //The captain will be happy to hear that. See you around.
+	AI_Output(self, hero, "Info_Mod_Norek_Heimweh_13_07"); //Goodbye. Goodbye.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_TODESANGST, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_TODESANGST, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_TODESANGST, "Ich soll bei den Piraten nachfragen, ob sie zu einer Passage auf's Festland bereit wären.");
+	B_LogEntry	(TOPIC_MOD_ASS_TODESANGST, "I'm supposed to check with the pirates to see if they're ready for a passage on the mainland.");
 };
 
 INSTANCE Info_Mod_Norek_Todesangst (C_INFO)
@@ -166,7 +166,7 @@ INSTANCE Info_Mod_Norek_Todesangst (C_INFO)
 	information	= Info_Mod_Norek_Todesangst_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "War bei den Piraten und habe schlechte Nachrichten.";
+	description	= "I've been to the pirates, and I've got some bad news.";
 };
 
 FUNC INT Info_Mod_Norek_Todesangst_Condition()
@@ -179,27 +179,27 @@ FUNC INT Info_Mod_Norek_Todesangst_Condition()
 
 FUNC VOID Info_Mod_Norek_Todesangst_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_00"); //War bei den Piraten und habe schlechte Nachrichten.
-	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_01"); //Berichte.
-	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_02"); //Greg, der Kapitän der Piraten, ist irre geworden. Er wird um alles Gold der Insel nicht auslaufen.
-	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_03"); //Wieso das?
-	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_04"); //Er fürchtet um sein Leben. Ein Scharlatan hat ihm vorausgesagt, er werde in Kürze sterben.
-	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_05"); //Nun traut er sich nicht mehr von seiner Hütte fort. Jedenfalls vorläufig.
-	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_06"); //Wie dem auch sei. Er wäre sowieso nur eine Notlösung gewesen. Was anderes: Kamal sagt, er hätte in deinem Beutel einen Brocken grünes Erz gesehen.
-	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_07"); //Das stimmt. Dieses Erz hab ich gebraucht, um an den Blutkelch zu kommen. Er stand in einer Kammer auf einem Steinsarg. Und der Eingang war durch eine grüne Sperre verschlossen. Mit den Brocken bin ich reingekommen.
-	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_08"); //Phantastisch! Assassinengold. Grüne Magie in konzentrierter Form. Unsere Magie! Sag, hast du mehr von dem Erz?
-	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_09"); //Nein. Das andere hab ich gebraucht, um die Sperre zu beseitigen. Und mit der Sperre sind dann auch die Brocken verschwunden.
-	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_10"); //Das wundert mich nicht. Sag, woher hattest du das Erz?
-	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_11"); //In Jharkendar gibt es ein Wüstengebiet mit Bergwerken. Da drin gab es so grüne Erzadern.
-	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_12"); //Hmm. Ich sehe eine Lösung für unser Problem. Muss mich mit dem Rat und den Magiern beraten.
-	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_13"); //Du könntest dich inzwischen in der Gegend dort umsehen, ob es noch mehr dieser grünen Erzadern gibt.
-	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_14"); //Mach ich doch. Bis später.
+	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_00"); //I've been to the pirates, and I've got some bad news.
+	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_01"); //Reports.
+	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_02"); //Greg, captain of the pirates, has gone mad. He's not leaking for all the gold on the island.
+	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_03"); //Why is that?
+	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_04"); //He fears for his life. A charlatan told him he was about to die.
+	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_05"); //Now he doesn't dare to leave his hut. For the time being, anyway.
+	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_06"); //Anyway, whatever. He would have been just an emergency solution anyway. Something else: Kamal says he saw a lump of green ore in your bag.
+	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_07"); //That's the truth. I needed that ore to get the calyx. He was standing in a chamber on a stone coffin. And the entrance was closed by a green barrier. I came in with the lumps.
+	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_08"); //Fantastic! Assassin gold. Green magic in concentrated form. Our magic! Do you have any more of that ore?
+	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_09"); //No. I needed the other one to unlock it. And the boulders disappeared along with the barrier.
+	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_10"); //I'm not surprised. Say, where did you get the ore from?
+	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_11"); //In Jharkendar there is a desert area with mines. There were green veins of ore in there.
+	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_12"); //Hmm. I see a solution to our problem. Gotta talk to the council and the magicians.
+	AI_Output(self, hero, "Info_Mod_Norek_Todesangst_13_13"); //You could look around the area now, see if there are any more of these green veins.
+	AI_Output(hero, self, "Info_Mod_Norek_Todesangst_15_14"); //I'm doing it. See you later.
 
 	B_GivePlayerXP	(300);
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_ASSASSINENGOLD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_ASSASSINENGOLD, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_ASSASSINENGOLD, "Der Rat sieht wohl eine Möglichkeit, mit dem grünen Erz in die Heimat zurückzukommen. Ich soll nachforschen, wo es dort weitere grüne Erzadern gibt.");
+	B_LogEntry	(TOPIC_MOD_ASS_ASSASSINENGOLD, "The Council seems to see an opportunity to return home with the green ore. They want me to investigate where there are more green veins of ore.");
 };
 
 INSTANCE Info_Mod_Norek_Assassinengold (C_INFO)
@@ -210,7 +210,7 @@ INSTANCE Info_Mod_Norek_Assassinengold (C_INFO)
 	information	= Info_Mod_Norek_Assassinengold_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was für ein Aufsehen um mich. Was ist passiert?";
+	description	= "What a fuss about me. What's happening?";
 };
 
 FUNC INT Info_Mod_Norek_Assassinengold_Condition()
@@ -223,19 +223,19 @@ FUNC INT Info_Mod_Norek_Assassinengold_Condition()
 
 FUNC VOID Info_Mod_Norek_Assassinengold_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_00"); //Was für ein Aufsehen um mich. Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_01"); //Später. Hast du noch magisches Erz gefunden?
-	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_02"); //Ja. Ich war noch mal in der Wüste in Jharkendar.
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_03"); //Und wieviel ...
-	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_04"); //33 Brocken konnte ich nochmal hacken.
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_05"); //33. Eine magische Zahl. Das sieht gut aus.
-	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_06"); //Und was war hier los?
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_07"); //Nun, der Rat hat sich beraten und anschließend die Mitglieder gefragt, wer wieder zurück will in die Heimat.
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_08"); //Wir Magier wollen alle, bei Mustafa und seinen Kriegern die Meisten.
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_09"); //Von den Gaunern vorn will nur Shakir uns begleiten.
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_10"); //Die anderen Gauner werden versuchen, sich der den Dieben in der Stadt anzuschließen.
-	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_11"); //Ist ja gut geplant. Aber wenn´s nicht klappt?
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_12"); //Ich muss mich mit dem Rat beraten. Du wartest hier.
+	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_00"); //What a fuss about me. What's happening?
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_01"); //Later. Have you found any magic ore?
+	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_02"); //Yeah. I went back to the desert in Jharkendar.
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_03"); //And how much...?
+	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_04"); //Thirty-three boulders I could chop again.
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_05"); //33. A magic number. This looks good.
+	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_06"); //And what happened here?
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_07"); //Well, the council has deliberated and then asked the members who wants to go back home again.
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_08"); //We magicians want everyone, Mustafa and his warriors the most.
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_09"); //Of the crooks in front, only Shakir wants to accompany us.
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_10"); //The other crooks will try to join the thieves in town.
+	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold_15_11"); //It's well planned. But if it doesn't work?
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold_13_12"); //I must consult with the Council. You wait here.
 
 	B_GivePlayerXP	(750);
 
@@ -268,16 +268,16 @@ FUNC INT Info_Mod_Norek_Assassinengold2_Condition()
 
 FUNC VOID Info_Mod_Norek_Assassinengold2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold2_13_00"); //Wir sind uns einig. 33 Erz sind genug.
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold2_13_01"); //Was wir aber noch brauchen ist ein irgendwie mystisches Gefäß, das die Magie bündelt und so verstärkt.
-	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold2_15_02"); //Bei dem Blutkelch waren es nur zwei Steinschalen ...
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold2_13_03"); //Wir wollen aber keine Barriere beseitigen, sondern eine weite Reise machen. Du bist viel rumgekommen. Ist dir vielleicht mal was in der Art untergekommen?
-	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold2_15_04"); //Hmm. Ich hab irgendwann mal gehört, dass die Feuermagier früher Opferschalen aufgestellt haben, als es die Innosstatuen noch nicht gab. Vielleicht ...
-	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold2_13_05"); //Das hört sich gut an. Besorg uns so eine Schale. Koste es, was es wolle!
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold2_13_00"); //We're agreed. 33 Ore is enough.
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold2_13_01"); //But what we still need is a somehow mystical vessel that bundles the magic and thus strengthens it.
+	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold2_15_02"); //With the calyx, there were only two stone shells...
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold2_13_03"); //However, we do not want to remove any barriers, but rather make a long journey. You've been around a lot. You ever run into anything like that?
+	AI_Output(hero, self, "Info_Mod_Norek_Assassinengold2_15_04"); //Hmm. I once heard that fire magicians used to put up sacrificial bowls when the statues of the Inno were not yet there. Maybe....
+	AI_Output(self, hero, "Info_Mod_Norek_Assassinengold2_13_05"); //That sounds good to me. Get us a bowl like this. Whatever it takes!
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_COMEBACK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_COMEBACK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_COMEBACK, "Ich soll nun eine Opferschale für das Erz besorgen. Im Kloster der Feuermagier sollte ich fündig werden ...");
+	B_LogEntry	(TOPIC_MOD_ASS_COMEBACK, "I'm supposed to get a sacrificial bowl for the ore. In the monastery of fire magicians I should find it....");
 };
 
 INSTANCE Info_Mod_Norek_Comeback (C_INFO)
@@ -288,7 +288,7 @@ INSTANCE Info_Mod_Norek_Comeback (C_INFO)
 	information	= Info_Mod_Norek_Comeback_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Habe eine Opferschale besorgt. Sie steht beim Stadttor auf der Wiese.";
+	description	= "Got a sacrificial bowl. It's by the city gate on the meadow.";
 };
 
 FUNC INT Info_Mod_Norek_Comeback_Condition()
@@ -301,9 +301,9 @@ FUNC INT Info_Mod_Norek_Comeback_Condition()
 
 FUNC VOID Info_Mod_Norek_Comeback_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Norek_Comeback_15_00"); //Habe eine Opferschale besorgt. Sie steht beim Stadttor auf der Wiese.
-	AI_Output(hero, self, "Info_Mod_Norek_Comeback_15_01"); //Ihr könntet sie am Besten nachts da wegholen. Aber zwei Mann braucht's zum Tragen.
-	AI_Output(self, hero, "Info_Mod_Norek_Comeback_13_02"); //Kein Problem. Da bin ich aber gespannt. Geh nun zu Na'im. Er will dich sprechen.
+	AI_Output(hero, self, "Info_Mod_Norek_Comeback_15_00"); //Got a sacrificial bowl. It's by the city gate on the meadow.
+	AI_Output(hero, self, "Info_Mod_Norek_Comeback_15_01"); //You'd better get her out of there at night. But it takes two men to carry it.
+	AI_Output(self, hero, "Info_Mod_Norek_Comeback_13_02"); //No problem. I can't wait to see. Now go to Na' im. He wants to see you.
 
 	B_SetTopicStatus	(TOPIC_MOD_ASS_HEIMWEH, LOG_SUCCESS);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_COMEBACK, LOG_SUCCESS);

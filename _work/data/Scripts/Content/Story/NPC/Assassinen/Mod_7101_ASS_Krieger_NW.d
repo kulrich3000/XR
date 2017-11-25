@@ -1,7 +1,7 @@
 INSTANCE Mod_7101_ASS_Krieger_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Assassinenkrieger"; 
+	name 		= "Assassin Warrior"; 
 	guild 		= GIL_OUT;
 	id 			= 7101;
 	voice 		= 13;

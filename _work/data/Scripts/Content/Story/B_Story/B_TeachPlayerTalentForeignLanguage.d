@@ -49,9 +49,9 @@ func int B_TeachPlayerTalentForeignLanguage (var C_NPC slf, var C_NPC oth, var i
 	if (Language == LANGUAGE_1) {	PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] = TRUE;	B_LogEntry (TOPIC_Language,LogText_Addon_Language_1); };
 	if (Language == LANGUAGE_2) {	PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_2] = TRUE;	B_LogEntry (TOPIC_Language,LogText_Addon_Language_2); };  
 	if (Language == LANGUAGE_3) {	PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_3] = TRUE;   B_LogEntry (TOPIC_Language,LogText_Addon_Language_3); };  
-	if (Language == LANGUAGE_Orc) {	PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_Orc] = TRUE;   B_LogEntry (TOPIC_Language,"Ich beherrsche die Sprache der Orks"); };  
-	if (Language == LANGUAGE_Draconian) {	PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_Draconian] = TRUE;   B_LogEntry (TOPIC_Language,"Ich beherrsche die Sprache der Echsenmenschen"); };
-	if (Language == LANGUAGE_Tier) {	PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_Tier] = TRUE;   B_LogEntry (TOPIC_Language,"Ich beherrsche die Sprache der Tiere"); };  
+	if (Language == LANGUAGE_Orc) {	PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_Orc] = TRUE;   B_LogEntry (TOPIC_Language,"I speak the language of the orcs"); };  
+	if (Language == LANGUAGE_Draconian) {	PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_Draconian] = TRUE;   B_LogEntry (TOPIC_Language,"I speak the language of the lizard people"); };
+	if (Language == LANGUAGE_Tier) {	PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_Tier] = TRUE;   B_LogEntry (TOPIC_Language,"I speak the language of the animals"); };  
 
 	PrintScreen			(PRINT_LearnForeignLanguage, -1, -1, FONT_Screen, 2);
 	

@@ -1,7 +1,7 @@
 instance Mod_1945_Waechter_03_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Wächter";
+	name 		=		"custodians";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_out;
 	level 		=		20;

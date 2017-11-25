@@ -1,7 +1,7 @@
 instance Mod_7596_HS_Bauer_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hofstaatler"; 
+	name 		= "court statesman"; 
 	guild 		= GIL_OUT;
 	id 			= 7596;
 	voice 		= 9;

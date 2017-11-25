@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Akahasch_MT_Hi (C_INFO)
 	information	= Info_Mod_Akahasch_MT_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warst du nicht mal Novize im Innoskloster?";
+	description	= "Weren't you even a novice in the Innos monastery?";
 };
 
 FUNC INT Info_Mod_Akahasch_MT_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Akahasch_MT_Hi_Condition()
 
 FUNC VOID Info_Mod_Akahasch_MT_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Akahasch_MT_Hi_15_00"); //Warst du nicht mal Novize im Innoskloster?
-	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_01"); //Erinnere mich bloß nicht daran. Nach der Geschichte mit der Stadt haben die mir im Kloster das Leben nur noch zur Hölle gemacht.
-	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_02"); //Irgendjemand muss mich verpfiffen haben. Ich habe diesen Ulf in Verdacht ...
-	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_03"); //Egal, hier geht es mir jetzt tausendmal besser. Als ehemaligen Feuernovizen haben die mich hier mit offenen Armen aufgenommen.
+	AI_Output(hero, self, "Info_Mod_Akahasch_MT_Hi_15_00"); //Weren't you even a novice in the Innos monastery?
+	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_01"); //Don't remind me of that. After the history with the city they made my life in the monastery a living hell.
+	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_02"); //Somebody must have ratted me out. I have suspicion of this Ulf...
+	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_03"); //Anyway, I feel a thousand times better now. As former fire innovators, they welcomed me here with open arms.
 };
 
 INSTANCE Info_Mod_Akahasch_MT_EXIT (C_INFO)

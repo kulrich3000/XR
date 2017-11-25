@@ -9,7 +9,7 @@ INSTANCE Info_Mod_Bartok_Bromor (C_INFO)
 	information	= Info_Mod_Bartok_Bromor_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab gehört du willst nicht zahlen.";
+	description	= "I hear you don't want to pay.";
 };
 
 FUNC INT Info_Mod_Bartok_Bromor_Condition()
@@ -23,13 +23,13 @@ FUNC INT Info_Mod_Bartok_Bromor_Condition()
 
 FUNC VOID Info_Mod_Bartok_Bromor_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Bromor_15_00"); //Ich hab gehört, du willst nicht zahlen.
+	AI_Output(hero, self, "Info_Mod_Bartok_Bromor_15_00"); //I hear you don't want to pay.
 
 	Mod_BartokZufallZahlen = r_max(99);
 
 	if (Mod_BartokZufallZahlen >= 80)
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Bromor_04_01"); //Wieso das denn? Hier ist das Geld.
+		AI_Output(self, hero, "Info_Mod_Bartok_Bromor_04_01"); //Why would you do that? Here's the money.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
@@ -39,9 +39,9 @@ FUNC VOID Info_Mod_Bartok_Bromor_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Bromor_04_02"); //Ja, wieso sollte ich auch zahlen?
-		AI_Output(hero, self, "Info_Mod_Bartok_Bromor_15_03"); //Weil ich dir sonst die Fresse poliere.
-		AI_Output(self, hero, "Info_Mod_Bartok_Bromor_04_04"); //Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Bromor_04_02"); //Yeah, why should I pay?
+		AI_Output(hero, self, "Info_Mod_Bartok_Bromor_15_03"); //Because if you don't, I'll beat your face off.
+		AI_Output(self, hero, "Info_Mod_Bartok_Bromor_04_04"); //Well, wait.
 
 		AI_StopProcessInfos	(self);
 
@@ -74,7 +74,7 @@ FUNC VOID Info_Mod_Bartok_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Bartok_Umgehauen_04_00"); //Mannomann! Du hast ja 'nen ganz schönen Schlag drauf. Hier ist das Gold.
+			AI_Output(self, hero, "Info_Mod_Bartok_Umgehauen_04_00"); //Jesus Christ! You got a hell of a punch on you. Here's the gold.
 
 			Mod_BilgotBromorBartok = 1;
 
@@ -86,7 +86,7 @@ FUNC VOID Info_Mod_Bartok_Umgehauen_Info()
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Bartok_Umgehauen_04_01"); //Tja, das war wohl nichts.
+			AI_Output(self, hero, "Info_Mod_Bartok_Umgehauen_04_01"); //Well, that was nothing.
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -109,7 +109,7 @@ INSTANCE Info_Mod_Bartok_Arbeite (C_INFO)
 	information	= Info_Mod_Bartok_Arbeite_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Scar schickt mich.";
+	description	= "Scar sent me.";
 };
 
 FUNC INT Info_Mod_Bartok_Arbeite_Condition()
@@ -122,20 +122,20 @@ FUNC INT Info_Mod_Bartok_Arbeite_Condition()
 
 FUNC VOID Info_Mod_Bartok_Arbeite_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_15_00"); //Scar schickt mich. Du sollst wieder Jagen gehen.
-	AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_04_01"); //Warum sollte ich?
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_15_02"); //Weil ich ...
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_15_00"); //Scar sent me. I want you to go hunting again.
+	AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_04_01"); //Why would I do that?
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_15_02"); //Because l--
 
 	Info_ClearChoices	(Info_Mod_Bartok_Arbeite);
 
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "... dir sonst die Fresse poliere.", Info_Mod_Bartok_Arbeite_AufsMaul);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "... dir Geld dafür gebe.", Info_Mod_Bartok_Arbeite_Geld);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "... or I'll kick your face in.", Info_Mod_Bartok_Arbeite_AufsMaul);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "... I'll give you money for it.", Info_Mod_Bartok_Arbeite_Geld);
 };
 
 FUNC VOID Info_Mod_Bartok_Arbeite_AufsMaul()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_AufsMaul_15_00"); //... dir sonst die Fresse poliere.
-	AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_AufsMaul_04_01"); //Das will ich sehen.
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_AufsMaul_15_00"); //... or I'll kick your face in.
+	AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_AufsMaul_04_01"); //I want to see that.
 
 	var int MerkLebenspunkteBartok;
 	var int MerkLebenspunkteHeldBartok;
@@ -149,37 +149,37 @@ FUNC VOID Info_Mod_Bartok_Arbeite_AufsMaul()
 
 FUNC VOID Info_Mod_Bartok_Arbeite_Geld()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_15_00"); //... dir Geld dafür gebe.
-	AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_04_01"); //Wie viel Geld willst du mir geben?
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_15_00"); //... I'll give you money for it.
+	AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_04_01"); //How much money are you gonna give me?
 
 	Info_ClearChoices	(Info_Mod_Bartok_Arbeite);
 
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "Gar nichts.", Info_Mod_Bartok_Arbeite_Geld_Nichts);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "1000 Gold.", Info_Mod_Bartok_Arbeite_Geld_1000);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "500 Gold.", Info_Mod_Bartok_Arbeite_Geld_500);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "200 Gold.", Info_Mod_Bartok_Arbeite_Geld_200);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "100 Gold.", Info_Mod_Bartok_Arbeite_Geld_100);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "50 Gold.", Info_Mod_Bartok_Arbeite_Geld_50);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "Nothing at all.", Info_Mod_Bartok_Arbeite_Geld_Nichts);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "1,000 gold.", Info_Mod_Bartok_Arbeite_Geld_1000);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "500 gold.", Info_Mod_Bartok_Arbeite_Geld_500);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "200 gold.", Info_Mod_Bartok_Arbeite_Geld_200);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "100 gold.", Info_Mod_Bartok_Arbeite_Geld_100);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "50 gold.", Info_Mod_Bartok_Arbeite_Geld_50);
 };
 
 FUNC VOID Info_Mod_Bartok_Arbeite_Geld_Nichts()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_Nichts_15_00"); //Gar nichts.
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_Nichts_15_00"); //Nothing at all.
 
 	Info_ClearChoices	(Info_Mod_Bartok_Arbeite);
 
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "... dir sonst die Fresse poliere.", Info_Mod_Bartok_Arbeite_AufsMaul);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "... dir Geld dafür gebe.", Info_Mod_Bartok_Arbeite_Geld);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "... or I'll kick your face in.", Info_Mod_Bartok_Arbeite_AufsMaul);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "... I'll give you money for it.", Info_Mod_Bartok_Arbeite_Geld);
 };
 
 FUNC VOID Info_Mod_Bartok_Arbeite_Geld_1000()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_1000_15_00"); //1000 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_1000_15_00"); //1,000 gold coins.
 	
 	if (Npc_HasItems(hero, ItMi_Gold) >= 1000)
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_1000_04_01"); //Na gut. Gib mir das Gold.
-		AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_1000_15_02"); //Hier ist es.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_1000_04_01"); //All right, all right. Give me the gold.
+		AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_1000_15_02"); //Here it is here.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 1000);
 
@@ -191,7 +191,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_1000()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_1000_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 1000 Goldmünzen. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_1000_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 1,000 gold coins. Na warte.
 
 		MerkLebenspunkteBartok	=	self.attribute[ATR_HITPOINTS];
 		MerkLebenspunkteHeldBartok	=	hero.attribute[ATR_HITPOINTS];
@@ -203,12 +203,12 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_1000()
 
 FUNC VOID Info_Mod_Bartok_Arbeite_Geld_500()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_500_15_00"); //500 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_500_15_00"); //500 gold coins.
 	
 	if (Npc_HasItems(hero, ItMi_Gold) >= 500)
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_500_04_01"); //Na gut. Gib mir das Gold.
-		AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_500_15_02"); //Hier ist es.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_500_04_01"); //All right, all right. Give me the gold.
+		AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_500_15_02"); //Here it is here.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 500);
 
@@ -220,7 +220,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_500()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_500_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 500 Goldmünzen. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_500_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 500 gold coins. Na warte.
 
 		AI_StopProcessInfos	(self);
 		B_Attack	(self, hero, AR_NONE, 1);
@@ -229,12 +229,12 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_500()
 
 FUNC VOID Info_Mod_Bartok_Arbeite_Geld_200()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_200_15_00"); //200 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_200_15_00"); //200 gold coins.
 	
 	if (Npc_HasItems(hero, ItMi_Gold) >= 200)
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_200_04_01"); //Na gut. Aber das ist auch das Minimum. Gib mir das Gold.
-		AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_200_15_02"); //Hier ist es.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_200_04_01"); //All right, all right. But that is also the minimum. Give me the gold.
+		AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_200_15_02"); //Here it is here.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
@@ -246,7 +246,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_200()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_200_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 200 Goldmünzen. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_200_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 200 gold coins. Na warte.
 
 		AI_StopProcessInfos	(self);
 		B_Attack	(self, hero, AR_NONE, 1);
@@ -255,27 +255,27 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_200()
 
 FUNC VOID Info_Mod_Bartok_Arbeite_Geld_100()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_100_15_00"); //100 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_100_15_00"); //100 gold coins.
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_01"); //Gib mir zuerst das Gold.
-		AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_100_15_02"); //Hier ist es.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_01"); //Give me the gold first.
+		AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_100_15_02"); //Here it is here.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 		
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_03"); //Ich hab's mir anders überlegt. Ich werde doch nicht wieder arbeiten.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_03"); //I changed my mind. I'm not going back to work.
 		
 		if (Npc_HasItems(hero, ItMi_Gold) >= 1)
 		{
-			AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_04"); //Ich hole mir jetzt erst mal dein restliches Gold.
+			AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_04"); //I'm going to get the rest of your gold.
 
 			AI_StopProcessInfos	(self);
 			B_Attack	(self, hero, AR_NONE, 1);
 		}
 		else
 		{
-			AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_100_15_05"); //Du mieser Betrüger. Na warte, dir zeig ich's.
+			AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_100_15_05"); //You lousy cheat. Wait, I'll show you.
 
 			AI_StopProcessInfos	(self);
 			B_Attack	(self, hero, AR_NONE, 1);
@@ -283,7 +283,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_100()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_06"); //Du willst mich wohl verarschen. Du hast keine 100 Goldmünzen. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_06"); //Du willst mich wohl verarschen. Du hast keine 100 gold coins. Na warte.
 
 		AI_StopProcessInfos	(self);
 		B_Attack	(self, hero, AR_NONE, 1);
@@ -292,16 +292,16 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_100()
 
 FUNC VOID Info_Mod_Bartok_Arbeite_Geld_50()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_50_15_00"); //50 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_50_04_01"); //Willst du mich verarschen? Ich mach doch nicht für 50 Goldmünzen meine Finger krumm.
+	AI_Output(hero, self, "Info_Mod_Bartok_Arbeite_Geld_50_15_00"); //50 gold coins.
+	AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_50_04_01"); //Are you kidding me? I'm not gonna lift my fingers for 50 gold coins.
 
 	Info_ClearChoices	(Info_Mod_Bartok_Arbeite);
 
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "Gar nichts.", Info_Mod_Bartok_Arbeite_Geld_Nichts);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "1000 Gold.", Info_Mod_Bartok_Arbeite_Geld_1000);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "500 Gold.", Info_Mod_Bartok_Arbeite_Geld_500);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "200 Gold.", Info_Mod_Bartok_Arbeite_Geld_200);
-	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "100 Gold.", Info_Mod_Bartok_Arbeite_Geld_100);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "Nothing at all.", Info_Mod_Bartok_Arbeite_Geld_Nichts);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "1,000 gold.", Info_Mod_Bartok_Arbeite_Geld_1000);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "500 gold.", Info_Mod_Bartok_Arbeite_Geld_500);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "200 gold.", Info_Mod_Bartok_Arbeite_Geld_200);
+	Info_AddChoice	(Info_Mod_Bartok_Arbeite, "100 gold.", Info_Mod_Bartok_Arbeite_Geld_100);
 };
 
 INSTANCE Info_Mod_Bartok_Arbeite_AufsMaul_Gekriegt (C_INFO)
@@ -328,7 +328,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_AufsMaul_Gekriegt_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_AufsMaul_Gekriegt_04_00"); //Mannomann! Du hast ja 'nen ganz schönen Schlag drauf.
+			AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_AufsMaul_Gekriegt_04_00"); //Jesus Christ! You got a hell of a punch on you.
 
 			Mod_BartokUeberzeugt = 1;
 
@@ -336,7 +336,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_AufsMaul_Gekriegt_Info()
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_AufsMaul_Gekriegt_04_01"); //Tja, das war wohl nichts.
+			AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_AufsMaul_Gekriegt_04_01"); //Well, that was nothing.
 
 			Mod_KampfGegenBartokVerloren = 1;
 		};		
@@ -361,7 +361,7 @@ INSTANCE Info_Mod_Bartok_ArbeiteWieder (C_INFO)
 	information	= Info_Mod_Bartok_ArbeiteWieder_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Arbeitest du jetzt wieder?";
+	description	= "Are you working again?";
 };
 
 FUNC INT Info_Mod_Bartok_ArbeiteWieder_Condition()
@@ -377,8 +377,8 @@ FUNC INT Info_Mod_Bartok_ArbeiteWieder_Condition()
 
 FUNC VOID Info_Mod_Bartok_ArbeiteWieder_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_ArbeiteWieder_15_00"); //Arbeitest du jetzt wieder?
-	AI_Output(self, hero, "Info_Mod_Bartok_ArbeiteWieder_04_01"); //Ja. Ich mach mich sofort auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Bartok_ArbeiteWieder_15_00"); //Are you working again?
+	AI_Output(self, hero, "Info_Mod_Bartok_ArbeiteWieder_04_01"); //Yeah. I'll be on my way right away.
 
 	B_StartOtherRoutine	(self,"ERWISCHT");
 	B_StartOtherRoutine	(Mod_7115_NONE_Nadja_NW, "DOWN");
@@ -396,7 +396,7 @@ FUNC VOID Info_Mod_Bartok_ArbeiteWieder_Info()
 
 	self.flags = 2;
 
-	B_LogEntry	(TOPIC_MOD_FAULERJÄGER, "Ich habe es geschafft, Bartok zu überzeugen wieder zu arbeiten.");
+	B_LogEntry	(TOPIC_MOD_FAULERJÄGER, "I managed to convince Bartok to work again.");
 };
 
 INSTANCE Info_Mod_Bartok_Stimme (C_INFO)
@@ -407,7 +407,7 @@ INSTANCE Info_Mod_Bartok_Stimme (C_INFO)
 	information	= Info_Mod_Bartok_Stimme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nach den Frauen also jetzt das Bier.";
+	description	= "So after the women, the beer now.";
 };
 
 FUNC INT Info_Mod_Bartok_Stimme_Condition()
@@ -421,33 +421,33 @@ FUNC INT Info_Mod_Bartok_Stimme_Condition()
 
 FUNC VOID Info_Mod_Bartok_Stimme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_15_00"); //Nach den Frauen also jetzt das Bier.
-	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_01"); //(bekifft) Hab heute schon schwer geschuftet, weißte. Da werd ich mir ja jetzt 'nen Humpen gönnen dürfen.
-	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_15_02"); //Was hast du denn genommen?
-	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_03"); //Hihi. Weißte, was geil wäre? Eine Rüstung aus Sumpfkraut!
-	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_04"); //Muss natürlich so sein, dass sie nicht leicht abfackelt und so.
-	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_05"); //Aber wenn du mal unterwegs bist und nix zu tun hast, kannste dir aus deinem Ärmel einfach 'nen Stängel drehen.
-	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_15_06"); //So ist aber bald von deiner Rüstung nichts mehr übrig.
-	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_07"); //Dann lass ich halt 'ne neue machen. Hihi.
-	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_08"); //Das meine ich ernst, Bruder - besorg mir so eine Rüstung, und du bist ein reicher Mann.
+	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_15_00"); //So after the women, the beer now.
+	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_01"); //Worked hard today, you know. I'm going to get a bump now.
+	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_15_02"); //What did you take?
+	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_03"); //Hihi. Knew what would be cool? A suit of bogweed!
+	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_04"); //Needless to say, it doesn't burn easily and so on.
+	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_05"); //But if you're on the road and you don't have anything to do, you can just twist a stem out of your sleeve.
+	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_15_06"); //Soon there will be nothing left of your armour.
+	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_07"); //I'll have a new one made. Hihi.
+	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_04_08"); //I'm serious, brother - get me some armor, and you're a rich man.
 
 	Info_ClearChoices	(Info_Mod_Bartok_Stimme);
 
-	Info_AddChoice	(Info_Mod_Bartok_Stimme, "Vielleicht schaff ich's ja tatsächlich.", Info_Mod_Bartok_Stimme_B);
-	Info_AddChoice	(Info_Mod_Bartok_Stimme, "Du spinnst ja total.", Info_Mod_Bartok_Stimme_A);
+	Info_AddChoice	(Info_Mod_Bartok_Stimme, "I might actually make it.", Info_Mod_Bartok_Stimme_B);
+	Info_AddChoice	(Info_Mod_Bartok_Stimme, "You're out of your mind.", Info_Mod_Bartok_Stimme_A);
 };
 
 FUNC VOID Info_Mod_Bartok_Stimme_B()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_B_15_00"); //Vielleicht schaff ich's ja tatsächlich.
-	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_B_04_01"); //Sag einfach Harad Bescheid, der soll sich drum kümmern.
-	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_B_04_02"); //Hier haste mein Erspartes. Dafür soll er sich was Anständiges ausdenken.
+	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_B_15_00"); //I might actually make it.
+	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_B_04_01"); //Just tell Harad to take care of it.
+	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_B_04_02"); //Here's my savings. I want him to think of something decent.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 1000);
 
 	Log_CreateTopic	(TOPIC_MOD_BARTOK_SUMPFKRAUTRUESTUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BARTOK_SUMPFKRAUTRUESTUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BARTOK_SUMPFKRAUTRUESTUNG, "Bartok hat mir Reichtum versprochen, wenn ich zu Harad gehe und sein Erspartes in eine Sumpfkrautrüstung anlege.");
+	B_LogEntry	(TOPIC_MOD_BARTOK_SUMPFKRAUTRUESTUNG, "Bartok has promised me wealth when I go to Harad and put his savings into a bog weed armor.");
 
 	Info_ClearChoices	(Info_Mod_Bartok_Stimme);
 
@@ -456,8 +456,8 @@ FUNC VOID Info_Mod_Bartok_Stimme_B()
 
 FUNC VOID Info_Mod_Bartok_Stimme_A()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_A_15_00"); //Du spinnst ja total.
-	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_A_04_01"); //Ich nenn das Philosophieren. (lacht)
+	AI_Output(hero, self, "Info_Mod_Bartok_Stimme_A_15_00"); //You're out of your mind.
+	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_A_04_01"); //I call that philosophy. (laughs)
 
 	Info_ClearChoices	(Info_Mod_Bartok_Stimme);
 };
@@ -470,7 +470,7 @@ INSTANCE Info_Mod_Bartok_Ruestung (C_INFO)
 	information	= Info_Mod_Bartok_Ruestung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Deine Rüstung ist bald fertig.";
+	description	= "Your armour will be ready soon.";
 };
 
 FUNC INT Info_Mod_Bartok_Ruestung_Condition()
@@ -483,11 +483,11 @@ FUNC INT Info_Mod_Bartok_Ruestung_Condition()
 
 FUNC VOID Info_Mod_Bartok_Ruestung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_Ruestung_15_00"); //Deine Rüstung ist bald fertig.
-	AI_Output(self, hero, "Info_Mod_Bartok_Ruestung_04_01"); //(verkatert) Was für 'ne Rüstung?
-	AI_Output(hero, self, "Info_Mod_Bartok_Ruestung_15_02"); //Erinnerst du dich nicht? Die Sumpfkrautrüstung?
-	AI_Output(self, hero, "Info_Mod_Bartok_Ruestung_04_03"); //Hast du was geraucht oder so? Ich hab noch nie was von einer Sumpfkrautrüstung gehört. Und ich will davon auch gar nichts hören.
-	AI_Output(self, hero, "Info_Mod_Bartok_Ruestung_04_04"); //Mein verfluchter Schädel brummt und mein gesamtes Gold ist futsch. Das reicht mir für den Moment.
+	AI_Output(hero, self, "Info_Mod_Bartok_Ruestung_15_00"); //Your armour will be ready soon.
+	AI_Output(self, hero, "Info_Mod_Bartok_Ruestung_04_01"); //What kind of armor?
+	AI_Output(hero, self, "Info_Mod_Bartok_Ruestung_15_02"); //Don't you remember? The weed armor?
+	AI_Output(self, hero, "Info_Mod_Bartok_Ruestung_04_03"); //Have you been smoking or something? I've never heard of swamp herb gear. And I don't want to hear about it.
+	AI_Output(self, hero, "Info_Mod_Bartok_Ruestung_04_04"); //My fucking head is buzzing and all my gold is gone. That's enough for now.
 
 	Mod_Bartok_Ruestung_Day = Wld_GetDay();
 };
@@ -500,7 +500,7 @@ INSTANCE Info_Mod_Bartok_ImPuff (C_INFO)
 	information	= Info_Mod_Bartok_ImPuff_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, was machst du denn hier?";
+	description	= "Well, what are you doing here?";
 };
 
 FUNC INT Info_Mod_Bartok_ImPuff_Condition()
@@ -513,8 +513,8 @@ FUNC INT Info_Mod_Bartok_ImPuff_Condition()
 
 FUNC VOID Info_Mod_Bartok_ImPuff_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_ImPuff_15_00"); //Na, was machst du denn hier?
-	AI_Output(self, hero, "Info_Mod_Bartok_ImPuff_04_01"); //(explodiert) Was macht man wohl im Puff? Noch so eine Frage und ich hau dir die Fresse ein!
+	AI_Output(hero, self, "Info_Mod_Bartok_ImPuff_15_00"); //Well, what are you doing here?
+	AI_Output(self, hero, "Info_Mod_Bartok_ImPuff_04_01"); //What do you think you're doing in a whorehouse? One more question and I'll smash your face in!
 };
 
 INSTANCE Info_Mod_Bartok_Lehrer (C_INFO)
@@ -525,7 +525,7 @@ INSTANCE Info_Mod_Bartok_Lehrer (C_INFO)
 	information	= Info_Mod_Bartok_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Bartok_Lehrer_Condition()
@@ -540,7 +540,7 @@ FUNC VOID Info_Mod_Bartok_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Bartok_Lehrer_04_01"); //Ich kann dir zeigen, wie du Tieren die Haut abziehst.
+	AI_Output(self, hero, "Info_Mod_Bartok_Lehrer_04_01"); //I can show you how to skin animals.
 };
 
 INSTANCE Info_Mod_Bartok_HautAbziehen (C_INFO)
@@ -551,18 +551,18 @@ INSTANCE Info_Mod_Bartok_HautAbziehen (C_INFO)
 	information	= Info_Mod_Bartok_HautAbziehen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Worauf muss ich beim Häuten von Reptilien achten? (4 LP)";
+	description	= "What do I have to pay attention to when skinning reptiles? (4 LP)";
 };
 
 FUNC INT Info_Mod_Bartok_HautAbziehen_Condition()
 {
 	if (Mod_Schwierigkeit == 4)
 	{
-		 Info_Mod_Bartok_HautAbziehen.description = "Worauf muss ich beim Häuten von Reptilien achten? (400 Gold)";
+		 Info_Mod_Bartok_HautAbziehen.description = "What do I have to pay attention to when skinning reptiles? (400 Gold)";
 	}
 	else
 	{
-		 Info_Mod_Bartok_HautAbziehen.description = "Worauf muss ich beim Häuten von Reptilien achten? (4 LP)";
+		 Info_Mod_Bartok_HautAbziehen.description = "What do I have to pay attention to when skinning reptiles? (4 LP)";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Bartok_Lehrer))
@@ -574,11 +574,11 @@ FUNC INT Info_Mod_Bartok_HautAbziehen_Condition()
 
 FUNC VOID Info_Mod_Bartok_HautAbziehen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartok_HautAbziehen_15_00"); //Worauf muss ich beim Häuten von Reptilien achten?
+	AI_Output(hero, self, "Info_Mod_Bartok_HautAbziehen_15_00"); //What do I have to pay attention to when skinning reptiles?
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ReptileSkin))
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_HautAbziehen_04_01"); //Wenn du die Haut an den Seiten anschneidest, löst sie sich wie von selbst. Du solltest ab jetzt kein Problem mehr haben, Echsen zu häuten.
+		AI_Output(self, hero, "Info_Mod_Bartok_HautAbziehen_04_01"); //When you cut the skin on the sides, it will detach itself. You shouldn't have a problem skinning lizards from now on.
 	};
 };
 

@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Schiffskobold_Hi_Condition()
 
 FUNC VOID Info_Mod_Schiffskobold_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Schiffskobold_Hi_20_00"); //Wer Chromanin erringen will, wird mehr benötigen, als die schlichte Kraft der Arme, hehehe.
+	AI_Output(self, hero, "Info_Mod_Schiffskobold_Hi_20_00"); //Whoever wants to obtain chromanin will need more than the simple power of the arms, hehehehe.
 
 	AI_StopProcessInfos	(self);
 };

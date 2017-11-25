@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Hilda_Hi (C_INFO)
 	information	= Info_Mod_Hilda_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, schöne Frau.";
+	description	= "Hello, beautiful woman.";
 };
 
 FUNC INT Info_Mod_Hilda_Hi_Condition()
@@ -16,11 +16,11 @@ FUNC INT Info_Mod_Hilda_Hi_Condition()
 
 FUNC VOID Info_Mod_Hilda_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hilda_Hi_15_00"); //Hallo, schöne Frau.
-	AI_Output(self, hero, "Info_Mod_Hilda_Hi_26_01"); //(misstrauisch) Was willst du?
-	AI_Output(hero, self, "Info_Mod_Hilda_Hi_15_02"); //Warum so feindselig?
-	AI_Output(self, hero, "Info_Mod_Hilda_Hi_26_03"); //(gelöst) Ach, in letzter Zeit kommen hier so viele Fremde vorbei, dass man gar nicht mehr weiß, woran man ist.
-	AI_Output(self, hero, "Info_Mod_Hilda_Hi_26_04"); //Und nicht alle Begegnungen waren erfreulicher Natur.
+	AI_Output(hero, self, "Info_Mod_Hilda_Hi_15_00"); //Hello, beautiful woman.
+	AI_Output(self, hero, "Info_Mod_Hilda_Hi_26_01"); //What do you want?
+	AI_Output(hero, self, "Info_Mod_Hilda_Hi_15_02"); //Why so hostile?
+	AI_Output(self, hero, "Info_Mod_Hilda_Hi_26_03"); //(dissolved) Oh, lately so many strangers pass by here that you don't even know what you're doing.
+	AI_Output(self, hero, "Info_Mod_Hilda_Hi_26_04"); //And not all encounters were of a pleasant nature.
 };
 
 INSTANCE Info_Mod_Hilda_Argez (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Hilda_Argez (C_INFO)
 	information	= Info_Mod_Hilda_Argez_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer war denn hier?";
+	description	= "Who's been here?";
 };
 
 FUNC INT Info_Mod_Hilda_Argez_Condition()
@@ -44,24 +44,24 @@ FUNC INT Info_Mod_Hilda_Argez_Condition()
 
 FUNC VOID Info_Mod_Hilda_Argez_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hilda_Argez_15_00"); //Wer war denn hier?
-	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_01"); //Alle, vom Räuber bis zum Paladin, und man weiß nachher nicht, wer jetzt die Guten und wer die Bösen sind!
-	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_02"); //Eine Räuberbande macht seit Wochen die Gegend unsicher und hat uns über Nacht einige unserer Schafe gestohlen.
-	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_03"); //Wir haben natürlich die Miliz gerufen, ein Trupp ist zu uns ausgerückt und hat sich unsere Probleme angehört - und hinterher ist nichts passiert, das Räuberlager wurde nicht gefunden oder der Angriff war zu gefährlich.
-	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_04"); //Der Höhepunkt war, dass nach dem Besuch der Milizionäre mehr Sachen gefehlt haben, als uns die Räuber gestohlen haben.
-	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_05"); //Richtige Schmutzfinken sind das allesamt, keiner mehr mit irgendwelchen Werten!
-	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_06"); //Und seit dem Fall der Barriere kommen immer mal wieder ehemalige Sträflinge vorbei, verhalten sich aber ruhig, weil Lobart ein großes Herz hat.
-	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_07"); //Zu viel wurde es ihm dann erst bei dem Tätowierten. Der hat ihm richtig Angst gemacht.
-	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_08"); //Er hat zwar nur nach Arbeit gefragt, aber auf eine so komische Weise, als würde er im nächsten Moment durchdrehen.
+	AI_Output(hero, self, "Info_Mod_Hilda_Argez_15_00"); //Who's been here?
+	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_01"); //All of them, from the robber to the paladin, and you don't know who the good guys are now and who the bad guys are!
+	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_02"); //A band of robbers has been robbing the area for weeks and stole some of our sheep overnight.
+	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_03"); //Of course, we called the militia, a troop joined us and listened to our problems - and nothing happened afterwards, the robber camp was not found or the attack was too dangerous.
+	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_04"); //The highlight was that after the visit of the militiamen more things were missing than the robbers stole from us.
+	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_05"); //They're all dirty bastards, none of them with any value.
+	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_06"); //And since the fall of the barrier, former convicts have been passing by again and again, but keep quiet because Lobart has a big heart.
+	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_07"); //Then it became too much for him only with the tattooed. He really scared the shit out of him.
+	AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_08"); //He only asked for work, but in such a funny way, as if he was going crazy at the next moment.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Argez_NW_InCity))
 	{
-		AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_09"); //Ich habe ihm dann eine Suppe gegeben, damit er geht, aber da er wohl nicht in die Stadt eingelassen wurde, steht er noch immer auf dem Weg vor den Feldern.
-		AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_10"); //Wenn du dafür sorgst, dass er von dort verschwindet, könnten wir sicher besser schlafen.
+		AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_09"); //I gave him a soup to go, but since he was probably not allowed into the city, he is still standing on the way in front of the fields.
+		AI_Output(self, hero, "Info_Mod_Hilda_Argez_26_10"); //If you get him out of there, I'm sure we could sleep better.
 
 		Log_CreateTopic	(TOPIC_MOD_HILDA_ARGEZ, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_HILDA_ARGEZ, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_HILDA_ARGEZ, "Auf dem Weg zum Stadttor soll sich ein merkwürdiger Fremder aufhalten, den die Bäuerin Hilda fürchtet. Es wäre ihr am liebsten, er würde von dort verschwinden.");
+		B_LogEntry	(TOPIC_MOD_HILDA_ARGEZ, "On the way to the city gate a strange stranger, whom Hilda the farmer's wife fears, is said to be there. She'd really like him to get out of there.");
 
 		Mod_Hilda_Argez = 1;
 	};
@@ -75,7 +75,7 @@ INSTANCE Info_Mod_Hilda_Argez2 (C_INFO)
 	information	= Info_Mod_Hilda_Argez2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Fremde ist nun in der Stadt.";
+	description	= "The stranger is now in town.";
 };
 
 FUNC INT Info_Mod_Hilda_Argez2_Condition()
@@ -89,8 +89,8 @@ FUNC INT Info_Mod_Hilda_Argez2_Condition()
 
 FUNC VOID Info_Mod_Hilda_Argez2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hilda_Argez2_15_00"); //Der Fremde ist nun in der Stadt.
-	AI_Output(self, hero, "Info_Mod_Hilda_Argez2_26_01"); //Mir fällt ein Stein vom Herzen. Hier, nimm du auch eine warme Suppe.
+	AI_Output(hero, self, "Info_Mod_Hilda_Argez2_15_00"); //The stranger is now in town.
+	AI_Output(self, hero, "Info_Mod_Hilda_Argez2_26_01"); //I'm getting a load off my chest. Here, have some warm soup.
 
 	B_GiveInvItems	(self, hero, ItFo_Fleischeintopf, 1);
 
@@ -98,7 +98,7 @@ FUNC VOID Info_Mod_Hilda_Argez2_Info()
 
 	CurrentNQ += 1;
 
-		B_LogEntry	(TOPIC_MOD_HILDA_ARGEZ, "Ich habe Hilda berichtet, dass Argez nun in der Stadt ist. Sie sollte jetzt beruhigt sein.");
+		B_LogEntry	(TOPIC_MOD_HILDA_ARGEZ, "I told Hilda that Argez is now in town. She should be reassured now.");
 	B_SetTopicStatus	(TOPIC_MOD_HILDA_ARGEZ, LOG_SUCCESS);
 };
 

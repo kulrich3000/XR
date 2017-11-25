@@ -17,9 +17,9 @@ FUNC INT Info_Mod_Cord_NW_Hi_Condition()
 FUNC VOID Info_Mod_Cord_NW_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Cord_NW_Hi_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Hi_14_01"); //Was machst du denn hier? Du kannst froh sein, dass wir nicht mehr für die Wassermagier arbeiten.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Hi_14_02"); //Die waren ziemlich sauer nachdem du ihrem Erzhaufen die magische Energie entzogen hast.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Hi_14_03"); //Aber wie es scheint hast du es geschafft die magische Barriere zu zerstören.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Hi_14_01"); //What are you doing here? You're lucky we don't work for the Water Magicians anymore.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Hi_14_02"); //They were pretty upset after you drained the magical energy from their ore heap.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Hi_14_03"); //But it seems you've managed to destroy the magic barrier.
 };
 
 INSTANCE Info_Mod_Cord_NW_Irdorath (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Cord_NW_Irdorath (C_INFO)
 	information	= Info_Mod_Cord_NW_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will mit dem Schiff der Paladine zu einer Insel aufbrechen.";
+	description	= "I want to take the Paladin's ship to an island.";
 };
 
 FUNC INT Info_Mod_Cord_NW_Irdorath_Condition()
@@ -44,14 +44,14 @@ FUNC INT Info_Mod_Cord_NW_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Cord_NW_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath_15_00"); //Ich will mit dem Schiff der Paladine zu einer Insel aufbrechen, um finsteren Kreaturen die Stirn zu bieten und die Insel zu retten.
-	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath_15_01"); //Es wird ein gefährliches Unterfangen und ich brauche Schlagkräftige Männer ...
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath_14_02"); //Was sagst du?
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath_14_03"); //Klingt nach einer Gelegenheit, dass Schwert auch mal gegen echte Gegner zu schwingen, und nicht nur Löcher in die Luft zu stechen.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath_14_04"); //Ich mach mich sofort auf den Weg in den Hafen.
-	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath_15_05"); //Ähh, klar, wir sehen uns dann dort, wenn es losgeht.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath_15_00"); //I want to take the Paladin's ship to an island to confront dark creatures and save the island.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath_15_01"); //It's going to be a dangerous venture, and I need powerful men...
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath_14_02"); //What do you say?
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath_14_03"); //Sounds like an opportunity to swing the sword against real opponents and not only puncture holes in the air.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath_14_04"); //I'll be on my way to the harbour right away.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath_15_05"); //Uh, sure, I'll see you there when it starts.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "So, Kämpfer Cord lässt es sich nicht nehmen, mich zur Insel zu begleiten.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "So, Fighter Cord won't refuse to accompany me to the island.");
 
 	B_GivePlayerXP	(100);
 
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Cord_NW_Irdorath3 (C_INFO)
 	information	= Info_Mod_Cord_NW_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "I'm sorry, but it seems we're too many.";
 };
 
 FUNC INT Info_Mod_Cord_NW_Irdorath3_Condition()
@@ -90,8 +90,8 @@ FUNC INT Info_Mod_Cord_NW_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Cord_NW_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath3_14_01"); //Schade. Ich gehe dann wieder zurück. Du weißt wo du mich findest, wenn doch noch ein Platz frei werden sollte.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath3_15_00"); //I'm sorry, but it seems we're too many. I can't take you with me.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath3_14_01"); //Too bad. I'll go back then. You know where to find me if there's ever gonna be a seat left.
 
 	Mod_CordDabei = 0;
 
@@ -110,7 +110,7 @@ INSTANCE Info_Mod_Cord_NW_Irdorath4 (C_INFO)
 	information	= Info_Mod_Cord_NW_Irdorath4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kann dich doch mitnehmen.";
+	description	= "I can give you a ride.";
 };
 
 FUNC INT Info_Mod_Cord_NW_Irdorath4_Condition()
@@ -126,8 +126,8 @@ FUNC INT Info_Mod_Cord_NW_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Cord_NW_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath4_15_00"); //Ich kann dich doch mitnehmen. Es hat sich noch ein Platz auf dem Schiff gefunden.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath4_14_01"); //Sehr gut, ich bin dann wieder am Hafen.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_Irdorath4_15_00"); //I can give you a ride. There's room on the ship.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Irdorath4_14_01"); //Very well, I'll be back at the harbour.
 
 	Mod_CordDabei = 1;
 
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Cord_NW_Unheil (C_INFO)
 	information	= Info_Mod_Cord_NW_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Haben sich hier in letzter Zeit seltsame Dinge auf dem Hof ereignet – abgesehen von den Monstern auf den Höfen?";
+	description	= "Have weird things been going on in the yard lately - apart from the monsters in the yards?";
 };
 
 FUNC INT Info_Mod_Cord_NW_Unheil_Condition()
@@ -160,10 +160,10 @@ FUNC INT Info_Mod_Cord_NW_Unheil_Condition()
 
 FUNC VOID Info_Mod_Cord_NW_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cord_NW_Unheil_15_00"); //Haben sich hier in letzter Zeit seltsame Dinge auf dem Hof ereignet – abgesehen von den Monstern auf den Höfen?
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Unheil_14_01"); //Ja, es ist wie verhext. Jeden Abend wenn es dunkel wird überkommt mich plötzlich eine so starke Müdigkeit, dass ich die Augen schließen muss.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Unheil_14_02"); //Und dann erwache ich immer wieder nach kurzer Zeit und kann ohne Schwierigkeiten weitertrainieren.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Unheil_14_03"); //Ich weiß auch nicht, woran es liegen kann.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_Unheil_15_00"); //Have weird things been going on in the yard lately - apart from the monsters in the yards?
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Unheil_14_01"); //Yeah, it's all jinxed. Every night when it gets dark, I suddenly feel so much fatigue that I have to close my eyes.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Unheil_14_02"); //And then I wake up again and again after a short time and can continue training without difficulty.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Unheil_14_03"); //I don't know what could be the reason.
 };
 
 INSTANCE Info_Mod_Cord_NW_WoWassermagier (C_INFO)
@@ -174,7 +174,7 @@ INSTANCE Info_Mod_Cord_NW_WoWassermagier (C_INFO)
 	information	= Info_Mod_Cord_NW_WoWassermagier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist jetzt mit den Wassermagiern?";
+	description	= "What about the Water Magicians?";
 };
 
 FUNC INT Info_Mod_Cord_NW_WoWassermagier_Condition()
@@ -187,8 +187,8 @@ FUNC INT Info_Mod_Cord_NW_WoWassermagier_Condition()
 
 FUNC VOID Info_Mod_Cord_NW_WoWassermagier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cord_NW_WoWassermagier_15_00"); //Was ist jetzt mit den Wassermagiern?
-	AI_Output(self, hero, "Info_Mod_Cord_NW_WoWassermagier_14_01"); //Nachdem die Barriere gefallen ist sind sie erst in die Stadt gegangen. Doch dann haben sie sich auf den Weg zu einer Ausgrabungsstätte gemacht.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_WoWassermagier_15_00"); //What about the Water Magicians?
+	AI_Output(self, hero, "Info_Mod_Cord_NW_WoWassermagier_14_01"); //After the barrier fell, they went into town. But then they made their way to an excavation site.
 };
 
 INSTANCE Info_Mod_Cord_NW_NahkampfJG (C_INFO)
@@ -199,7 +199,7 @@ INSTANCE Info_Mod_Cord_NW_NahkampfJG (C_INFO)
 	information	= Info_Mod_Cord_NW_NahkampfJG_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Waldläufer brauchen noch Nahkämpfer.";
+	description	= "Rangers still need melee fighters.";
 };
 
 FUNC INT Info_Mod_Cord_NW_NahkampfJG_Condition()
@@ -212,23 +212,23 @@ FUNC INT Info_Mod_Cord_NW_NahkampfJG_Condition()
 
 FUNC VOID Info_Mod_Cord_NW_NahkampfJG_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_00"); //Die Waldläufer brauchen noch Nahkämpfer.
-	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_01"); //Die wissen mit dem Schwert nicht allzu viel anzufangen. Und im Minental ist der Bär los.
-	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_02"); //Bei unserem Lager am Dunklen Wald ebenfalls.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_03"); //Was genau liegt an?
-	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_04"); //Irgend ein Schwarzmagier hat es offensichtlich auf die Waldleute abgesehen.
-	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_05"); //Keiner weiß warum. Wir haben schon fünf Mann verloren.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_06"); //Das ist schlecht. Aber wie du selber weißt, ist hier in Khorinis auch einiges Zugange.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_07"); //Man sieht allenthalben dunkle Gestalten umherlaufen.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_08"); //Hmm ... einen Mann könnte ich euch ausleihen. Für 500 Gold.
-	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_09"); //500 Gold? An Gold war eigentlich nicht gedacht. Man wird den Mann selbst schon bezahlen müssen.
-	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_10"); //Aber ich hab eine Idee. Wie wär's, wenn ich dafür sorge, dass ihr einen Jäger im Austausch bekommt. Jagt eigentlich bei euch jemand?
-	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_11"); //Eigentlich nicht. Unsere Verpflegung kommt von Onar. Aber du hast recht. Ein extra Brocken Fleisch wäre nicht verkehrt. Abgemacht.
-	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_12"); //Und wen ...
-	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_13"); //Vorn am Eingang ist eine Erzatzwache. Sitzt meistens links im Gras.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_14"); //Hock heißt er. Der soll Mitgehen.
-	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_15"); //Alles Klar. Bis demnächst.
-	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_16"); //Adanos mit dir.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_00"); //Rangers still need melee fighters.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_01"); //They don't know much about the sword. And in the Minental the bear is loose.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_02"); //At our camp at the Dark Forest also.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_03"); //What exactly is happening?
+	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_04"); //Some black mage is obviously targeting the forest people.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_05"); //Nobody knows why. We've already lost five men.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_06"); //This is bad. But as you yourself know, here in Khorinis there is also some access.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_07"); //You can see dark figures running around everywhere.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_08"); //Hmm... I could lend you a man. For 500 gold.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_09"); //500 gold? Gold wasn't really thought of. You'll have to pay the man yourself.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_10"); //But I have an idea. How about I make sure you get a hunter in exchange for me? Is there anyone hunting with you?
+	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_11"); //Actually, I don't. Our food comes from Onar. But you're right. An extra lump of meat wouldn't be wrong. Deal.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_12"); //And who...?
+	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_13"); //In front of the entrance is a reserve guard. Sits mostly on the left side of the grass.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_14"); //His name is Hock. He should go with you.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_NahkampfJG_15_15"); //All clear. See you soon.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_NahkampfJG_14_16"); //Adanos with you.
 };
 
 INSTANCE Info_Mod_Cord_NW_Lehrer (C_INFO)
@@ -239,7 +239,7 @@ INSTANCE Info_Mod_Cord_NW_Lehrer (C_INFO)
 	information	= Info_Mod_Cord_NW_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Can you teach me something?";
 };
 
 FUNC INT Info_Mod_Cord_NW_Lehrer_Condition()
@@ -258,10 +258,10 @@ FUNC VOID Info_Mod_Cord_NW_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Cord_NW_Lehrer_14_00"); //Ich kann dir den Umgang mit Einhändern und Zweihändern beibringen.
+	AI_Output(self, hero, "Info_Mod_Cord_NW_Lehrer_14_00"); //I can teach you how to handle one-handed and two-handed people.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Cord kann mir den Umgang mit Einhändern und Zweihändern beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Cord can teach me how to handle one-handed and two-handed people.");
 };
 
 INSTANCE Info_Mod_Cord_NW_Lernen (C_INFO)
@@ -272,7 +272,7 @@ INSTANCE Info_Mod_Cord_NW_Lernen (C_INFO)
 	information	= Info_Mod_Cord_NW_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "I want to learn.";
 };
 
 FUNC INT Info_Mod_Cord_NW_Lernen_Condition()
@@ -289,7 +289,7 @@ FUNC INT Info_Mod_Cord_NW_Lernen_Condition()
 
 FUNC VOID Info_Mod_Cord_NW_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cord_NW_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Cord_NW_Lernen_15_00"); //I want to learn.
 
 	Info_ClearChoices	(Info_Mod_Cord_NW_Lernen);
 

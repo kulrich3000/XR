@@ -19,7 +19,7 @@ func void ZS_Dead ()
 	{
 		Wld_SendTrigger	("EVT_DI_SCHATZHOEHLE_01");
 
-		B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Der Geist ist besiegt. Jetzt müssen wir nur noch die übrigen Skelette und Zombies töten und dann kann der Schatz gehoben werden.");
+		B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "The spirit is vanquished. Now we only have to kill the remaining skeletons and zombies and then the treasure can be raised.");
 
 		if (Npc_HasItems(hero, ItMi_Geisterrune) == 1)
 		{
@@ -270,7 +270,7 @@ func void ZS_Dead ()
 
 			B_GivePlayerXP	(500);
 
-			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SIGNALFEUER, "Ich habe vier Signalfeuer entfacht.", "Die Feuer brennen.");
+			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SIGNALFEUER, "I lit four beacons.", "The fires are on fire.");
 			B_SetTopicStatus	(TOPIC_MOD_ECHSEN_SIGNALFEUER, LOG_SUCCESS);
 		};
 	};
@@ -293,7 +293,7 @@ func void ZS_Dead ()
 
 			B_GivePlayerXP	(500);
 
-			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SIGNALFEUER, "Ich habe vier Signalfeuer entfacht.", "Die Feuer brennen.");
+			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SIGNALFEUER, "I lit four beacons.", "The fires are on fire.");
 			B_SetTopicStatus	(TOPIC_MOD_ECHSEN_SIGNALFEUER, LOG_SUCCESS);
 		};
 	};
@@ -316,7 +316,7 @@ func void ZS_Dead ()
 
 			B_GivePlayerXP	(500);
 
-			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SIGNALFEUER, "Ich habe vier Signalfeuer entfacht.", "Die Feuer brennen.");
+			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SIGNALFEUER, "I lit four beacons.", "The fires are on fire.");
 			B_SetTopicStatus	(TOPIC_MOD_ECHSEN_SIGNALFEUER, LOG_SUCCESS);
 		};
 	};
@@ -339,7 +339,7 @@ func void ZS_Dead ()
 
 			B_GivePlayerXP	(500);
 
-			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SIGNALFEUER, "Ich habe vier Signalfeuer entfacht.", "Die Feuer brennen.");
+			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SIGNALFEUER, "I lit four beacons.", "The fires are on fire.");
 			B_SetTopicStatus	(TOPIC_MOD_ECHSEN_SIGNALFEUER, LOG_SUCCESS);
 		};
 	};
@@ -350,18 +350,18 @@ func void ZS_Dead ()
 
 		if (TUG_Matronen < 4)
 		{
-			Print (ConcatStrings(IntToString(4-TUG_Matronen), " Matronen übrig"));
+			Print (ConcatStrings(IntToString(4-TUG_Matronen), " Matrons left"));
 		};
 	};
 
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Fake_Hero))
 	{
-		B_LogEntry	(TOPIC_MOD_URIZIEL, "Der Gestaltwandler in Jharkendar ist besiegt. Ich brauche noch seinen Seelenstein.");
+		B_LogEntry	(TOPIC_MOD_URIZIEL, "The shape-shifter in Jharkendar is defeated. I still need his soul stone.");
 	};
 
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Schattenlord_999_Urnol))
 	{
-		B_LogEntry	(TOPIC_MOD_URIZIEL, "Urnol ist tot. Jetzt nur noch seinen Seelenstein holen ...");
+		B_LogEntry	(TOPIC_MOD_URIZIEL, "Urnol is dead. Now only to get his soul stone....");
 	};
 
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_537_NONE_Lehmar_NW))
@@ -371,7 +371,7 @@ func void ZS_Dead ()
 
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Dragon_Undead))
 	{
-		B_LogEntry	(TOPIC_MOD_URIZIEL, "Ein untoter Drache ... jetzt ist er tot. Nur noch den Seelenstein mitnehmen und es kann weitergehen.");
+		B_LogEntry	(TOPIC_MOD_URIZIEL, "An undead dragon... now he's dead. Just take the soul stone with you and it can go on.");
 	};
 
 	if (Seele_unterwegs == TRUE)
@@ -407,18 +407,18 @@ func void ZS_Dead ()
 
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_1113_GRD_Fletcher_MT))
 	{
-		B_LogEntry	(TOPIC_MOD_AL_KillMission, "Fletcher ist tot.");
+		B_LogEntry	(TOPIC_MOD_AL_KillMission, "Fletcher's dead.");
 	};
 
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_1902_STT_Ian_MT))
 	{
-		B_LogEntry	(TOPIC_MOD_AL_KillMission, "Ian ist tot.");
+		B_LogEntry	(TOPIC_MOD_AL_KillMission, "Ian's dead.");
 	};
 
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_1025_KGD_Cathran_MT))
 	&& (Npc_KnowsInfo(hero, Info_Mod_Alissandro_GotoJackal))
 	{
-		B_LogEntry	(TOPIC_MOD_AL_KillMission, "Cathran ist tot.");
+		B_LogEntry	(TOPIC_MOD_AL_KillMission, "Cathran's dead.");
 	};
 
 	if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Skeleton_Thorge_TUG))
@@ -473,7 +473,7 @@ func void ZS_Dead ()
 
 		if (Mod_PalaStory_Mine_Sektis == 4)
 		{
-			B_LogEntry	(TOPIC_MOD_MILIZ_MINE, "Die 'Banditen' sind erledigt. Ich sollte Lord Andre davon berichten, dass wieder die Sektenspinner anwesend waren.");
+			B_LogEntry	(TOPIC_MOD_MILIZ_MINE, "The bandits are finished. I was told to tell Lord Andre that the sect spinners were back.");
 
 			Mod_PalaStory_Mine_Sektis = 5;
 		};
@@ -496,19 +496,19 @@ func void ZS_Dead ()
 
 		if (Mod_FM_Hexencounter > 1)
 		{
-			Hexentext = ConcatStrings("Noch ", IntToString (Mod_FM_Hexencounter));
-			Hexentext = ConcatStrings(Hexentext, " Hexen übrig!");
+			Hexentext = ConcatStrings("still ", IntToString (Mod_FM_Hexencounter));
+			Hexentext = ConcatStrings(Hexentext, " Witches left!");
 		}
 		else if (Mod_FM_Hexencounter == 1)
 		{
-			Hexentext = ConcatStrings("Noch ", IntToString (Mod_FM_Hexencounter));
-			Hexentext = ConcatStrings(Hexentext, " Hexe übrig!");
+			Hexentext = ConcatStrings("still ", IntToString (Mod_FM_Hexencounter));
+			Hexentext = ConcatStrings(Hexentext, " Witch left!");
 		}
 		else
 		{
-			Hexentext = "Alle Hexen erledigt!";
+			Hexentext = "All witches done!";
 			Mod_FM_Hexencounter = 0;
-			B_LogEntry	(TOPIC_MOD_FM_HEXEN, "Ich sollte jetzt zurück zu Garan gehen und ihm Bericht erstatten.");
+			B_LogEntry	(TOPIC_MOD_FM_HEXEN, "I should go back to Garan now and report to him.");
 		};
 
 		AI_PrintScreen	(Hexentext, -1, YPOS_GOLDGIVEN, FONT_ScreenSmall, 2);
@@ -538,7 +538,7 @@ func void ZS_Dead ()
 	{
 		Mod_Xeres_Ende = 2;
 
-		B_LogEntry	(TOPIC_MOD_ARGEZ, "Argez, der letzte Machtträger von Xeres, ist tot. Damit ist der Weg zu seiner Vernichtung offen.");
+		B_LogEntry	(TOPIC_MOD_ARGEZ, "Argez, the last man in power of Xeres, is dead. This opens the way to its destruction.");
 		B_SetTopicStatus	(TOPIC_MOD_ARGEZ, LOG_SUCCESS);
 	};
 
@@ -547,7 +547,7 @@ func void ZS_Dead ()
 	{
 		Mod_Xeres_Ende = 3;
 
-		B_LogEntry	(TOPIC_MOD_XERES, "Xeres ist besiegt und das Übel damit beseitigt.");
+		B_LogEntry	(TOPIC_MOD_XERES, "Xeres is defeated and the evil is eliminated.");
 		B_SetTopicStatus	(TOPIC_MOD_XERES, LOG_SUCCESS);
 		
 		B_EndGame();
@@ -558,7 +558,7 @@ func void ZS_Dead ()
 	{
 		Mod_Xeres_Ende = 4;
 
-		B_LogEntry	(TOPIC_MOD_XERES, "Xeres ist am Boden und ich werde mich mit Argez zurückziehen.");
+		B_LogEntry	(TOPIC_MOD_XERES, "Xeres is on the ground and I'm going to retire with Argez.");
 		B_SetTopicStatus	(TOPIC_MOD_XERES, LOG_SUCCESS);
 		
 		B_EndGame();

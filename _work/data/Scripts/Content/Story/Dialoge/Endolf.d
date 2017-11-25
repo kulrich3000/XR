@@ -15,22 +15,22 @@ FUNC INT Info_Mod_Endolf_Hi_Condition()
 
 FUNC VOID Info_Mod_Endolf_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_00"); //Na endlich Unterstützung. Beim letzten Angriff der Viecher haben wir wieder einen Mann verloren.
-	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_01"); //Seit wann erfolgen diese beharrlichen Attacken der Crawler?
-	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_02"); //Erst seit kurzem. Es hat wie aus dem Nichts, ganz plötzlich angefangen. Ganz abscheuliche, stinkende Viecher.
-	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_03"); //Jedes mal, wenn wir unsere Jungs losgeschickt haben, um sie abzuschlachten, kamen nach kurzer Zeit genau so viele nach.
-	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_04"); //Vor einigen Stunden kamen nun so viele von ihnen, dass sie uns überrannt haben, einige von unseren Jungs draufgegangen sind.
-	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_05"); //Wir mussten uns zurückziehen und verbarrikadierten uns hier.
-	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_06"); //Tja, dann darf ich wohl alleine nachforschen, was es mit der Bedrohung durch die stinkenden Crawler auf sich hat.
-	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_07"); //Naja, du würdest uns hier unten echt damit helfen. Das immer so viele von den Viechern nachkommen wird wohl bedeuten, dass ...
-	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_08"); //... (ermüdet) sich hier wohl ein Nest befindet.
-	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_09"); //Naja, als die Barriere noch stand hast du in der Mine ...
-	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_10"); //(genervt) Das hat aber weite Kreise gezogen, die Sache mit der Mine des Alten Lagers.
-	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_11"); //Und jetzt soll ich deswegen im Alleingang sämtliche Crawlerköniginnen auf ganz Khorinis ...
-	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_12"); //Und wir halten hier so lange die Stellung. Viel Glück.
-	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_13"); //(halblaut) Grmpf, du mich auch ...
+	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_00"); //Support at last. The last time the creatures attacked, we lost another man.
+	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_01"); //How long have these persistent crawler attacks been going on?
+	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_02"); //Only recently. It started out of nowhere, all of a sudden. Nasty, stinking creatures.
+	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_03"); //Every time we sent our boys out to slaughter them, just as many came after a short time.
+	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_04"); //A few hours ago there were so many of them that they overrun us, some of our boys died.
+	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_05"); //We had to retreat and barricaded ourselves here.
+	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_06"); //Well, I guess I'll have to investigate on my own about the threat posed by the stinking crawlers.
+	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_07"); //Well, you'd really help us with that down here. That always so many of the animals to follow will probably mean that....
+	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_08"); //... There must be a nest here.
+	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_09"); //Well, when the barrier was still standing, you were in the mine...
+	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_10"); //(nervous) But this has drawn wide circles, the thing with the mine of the old camp.
+	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_11"); //And now I'm supposed to go it alone with all the crawler queens on the whole of Khorinis...
+	AI_Output(self, hero, "Info_Mod_Endolf_Hi_09_12"); //And we'll hold here as long as we can. Good luck to you.
+	AI_Output(hero, self, "Info_Mod_Endolf_Hi_15_13"); //Grmpf, you too...
 
-	B_LogEntry	(TOPIC_MOD_NL_CRAWLER, "Na toll. Diesmal darf ich wie immer alleine losziehen, um den Ursprung der stinkenden Crawler zu finden. Dürfte wohl wieder eine Minecrawlerkönigin sein ...");
+	B_LogEntry	(TOPIC_MOD_NL_CRAWLER, "Oh, great. This time I am allowed to go alone as usual to find the origin of the stinking crawlers. Might be a Minecrawler queen again....");
 };
 
 INSTANCE Info_Mod_Endolf_Gormgniez (C_INFO)
@@ -53,10 +53,10 @@ FUNC INT Info_Mod_Endolf_Gormgniez_Condition()
 
 FUNC VOID Info_Mod_Endolf_Gormgniez_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Endolf_Gormgniez_09_00"); //Und, konntest du den Ursprung des ganzen Übels ausfindig machen und vernichten?
-	AI_Output(hero, self, "Info_Mod_Endolf_Gormgniez_15_01"); //Ja, es ist mir gelungen.
-	AI_Output(self, hero, "Info_Mod_Endolf_Gormgniez_09_02"); //Ausgezeichnet, dann kann die Arbeit jetzt in aller Ruhe weitergehen.
-	AI_Output(self, hero, "Info_Mod_Endolf_Gormgniez_09_03"); //Hier, nimm dieses Erz als Dank.
+	AI_Output(self, hero, "Info_Mod_Endolf_Gormgniez_09_00"); //And, could you find the source of all this evil and destroy it?
+	AI_Output(hero, self, "Info_Mod_Endolf_Gormgniez_15_01"); //Yes, I succeeded.
+	AI_Output(self, hero, "Info_Mod_Endolf_Gormgniez_09_02"); //Excellent, then the work can now continue calmly.
+	AI_Output(self, hero, "Info_Mod_Endolf_Gormgniez_09_03"); //Here, take this ore as a thank you.
 	
 	B_GiveInvItems	(self, hero, ItMi_Nugget, 10);
 

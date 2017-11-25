@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Gaan_Dragomir (C_INFO)
 	information	= Info_Mod_Gaan_Dragomir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dragomir schickt mich.";
+	description	= "Dragomir sent me.";
 };
 
 FUNC INT Info_Mod_Gaan_Dragomir_Condition()
@@ -42,15 +42,15 @@ FUNC INT Info_Mod_Gaan_Dragomir_Condition()
 
 FUNC VOID Info_Mod_Gaan_Dragomir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gaan_Dragomir_15_00"); //Dragomir schickt mich.
-	AI_Output(self, hero, "Info_Mod_Gaan_Dragomir_03_01"); //Dann nehme ich an, dass er wissen will, was ich herausgefunden habe?
-	AI_Output(hero, self, "Info_Mod_Gaan_Dragomir_15_02"); //Richtig.
-	AI_Output(self, hero, "Info_Mod_Gaan_Dragomir_03_03"); //Also bisher ist mir nichts auffälliges untergekommen. Außerdem ist es hier ein feines Jagdgebiet und man hat von beinahe jedem Punkt aus einen perfekten Blick auf den Pass.
-	AI_Output(self, hero, "Info_Mod_Gaan_Dragomir_03_04"); //Da fällt mir gerade ein: Letzte Nacht habe ich ein Rudel Snapper dadurch kommen sehen.
-	AI_Output(hero, self, "Info_Mod_Gaan_Dragomir_15_05"); //Und was ist daran besonders?
-	AI_Output(self, hero, "Info_Mod_Gaan_Dragomir_03_06"); //Nichts.
+	AI_Output(hero, self, "Info_Mod_Gaan_Dragomir_15_00"); //Dragomir sent me.
+	AI_Output(self, hero, "Info_Mod_Gaan_Dragomir_03_01"); //Then I suppose he wants to know what I found out?
+	AI_Output(hero, self, "Info_Mod_Gaan_Dragomir_15_02"); //Right.
+	AI_Output(self, hero, "Info_Mod_Gaan_Dragomir_03_03"); //So so far, I haven't seen anything flashy. It is also a fine hunting ground and you have a perfect view of the pass from almost every point.
+	AI_Output(self, hero, "Info_Mod_Gaan_Dragomir_03_04"); //I just remembered: Last night I saw a pack of snapper coming through it.
+	AI_Output(hero, self, "Info_Mod_Gaan_Dragomir_15_05"); //And what's so special about it?
+	AI_Output(self, hero, "Info_Mod_Gaan_Dragomir_03_06"); //Nothing.
 
-	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Gaan sagt, dass beim Pass ein gutes Jagdgebiet ist.");
+	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Gaan says the pass is a good hunting ground.");
 };
 
 INSTANCE Info_Mod_Gaan_Untier (C_INFO)
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Gaan_Untier (C_INFO)
 	information	= Info_Mod_Gaan_Untier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, in den letzten Tagen irgendwelchen ungewöhnlichen Wildtieren begegnet?";
+	description	= "And, in the last few days, encountered any unusual wildlife?";
 };
 
 FUNC INT Info_Mod_Gaan_Untier_Condition()
@@ -76,8 +76,8 @@ FUNC INT Info_Mod_Gaan_Untier_Condition()
 
 FUNC VOID Info_Mod_Gaan_Untier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gaan_Untier_15_00"); //Und, in den letzten Tagen irgendwelchen ungewöhnlichen Wildtieren begegnet?
-	AI_Output(self, hero, "Info_Mod_Gaan_Untier_03_01"); //Nein, nur einige Snapper und das Übliche.
+	AI_Output(hero, self, "Info_Mod_Gaan_Untier_15_00"); //And, in the last few days, encountered any unusual wildlife?
+	AI_Output(self, hero, "Info_Mod_Gaan_Untier_03_01"); //No, just some snapper and the usual.
 };
 
 INSTANCE Info_Mod_Gaan_Ornament (C_INFO)
@@ -100,25 +100,25 @@ FUNC INT Info_Mod_Gaan_Ornament_Condition()
 
 FUNC VOID Info_Mod_Gaan_Ornament_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_00"); //Verdammt, da mach ich mir die ganze Mühe und dann kommt dieses Rudel Snapper ...
-	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_01"); //Was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_02"); //Ach, es ist wirklich zum Mäusemelken.
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_03"); //Erst vor kurzem habe ich einige Scavenger erlegt, um an ihr Fleisch zu kommen, und dann tauchen die Snapper auf ...
-	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_04"); //Der Pass scheint also nicht ganz ungefährlich zu sein, wenn sich so viel Wild herumtreibt.
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_05"); //Ja, das stimmt, so manchem Unvorsichtigen hat er schon das Leben gekostet.
-	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_06"); //Aha ... Nun, wie dem auch sei, ich bin auf der Suche nach einem steinernen Ornament.
-	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_07"); //Es könnte sich irgendwo beim Pass befinden. Hast du zufällig ein solches gesehen?
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_08"); //Na du bist mir ja gut. Der ganze Pass ist voll mit Steinen.
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_09"); //Ist ja auch der Grund, warum die Scavenger immer wieder vorbeikommen ...
-	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_10"); //Wieso das? Was wollen Scavenger mit Steinen.
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_11"); //Sie fressen.
-	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_12"); //Was?!
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_13"); //Für ihre Verdauung, denn mit einem Schnabel kaut es sich schlecht.
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_14"); //Die Steine im Magen helfen ihnen, die Nahrung zu zerreiben.
-	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_15"); //Aha, sehr interessant ...
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_16"); //Jemand der sich für die Fauna interessiert, das ist schön.
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_17"); //Nun denn, du weißt ja jetzt, worauf du am Pass achten musst.
-	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_18"); //(nachdenklich) Ich denke schon ...
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_00"); //Damn it, I'm going to all the trouble and then comes this pack of snappers...
+	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_01"); //What has happened?
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_02"); //Oh, it's a real mouse milking.
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_03"); //Only recently I shot some scavengers to get their meat, and then the snappers appear....
+	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_04"); //The pass doesn't seem to be quite harmless when there's so much game around.
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_05"); //Yes, that's right, some carelessness has already cost him his life.
+	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_06"); //Aha... Well, anyway, I'm looking for a stone ornament.
+	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_07"); //It could be somewhere near the pass. Did you happen to see one of these?
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_08"); //Well, you're good for me. The pass is full of rocks.
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_09"); //It's also the reason why the Scavengers keep coming back over and over....
+	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_10"); //Why is that? What do scavengers want with stones?
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_11"); //They're eating.
+	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_12"); //What?!
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_13"); //For their digestion, because it chews badly with a beak.
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_14"); //The stones in their stomach help them grind the food.
+	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_15"); //Ah, very interesting...
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_16"); //Someone interested in the fauna, that's nice.
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_03_17"); //Well, now you know what to look for in the pass.
+	AI_Output(hero, self, "Info_Mod_Gaan_Ornament_15_18"); //(thinking) I think so...
 
 	Wld_InsertNpc	(Snapper_Gaan, "NW_PASS_06");
 	Wld_InsertNpc	(Snapper_Gaan, "NW_PASS_06");
@@ -156,7 +156,7 @@ FUNC INT Info_Mod_Gaan_Ornament_02_Condition()
 
 FUNC VOID Info_Mod_Gaan_Ornament_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_02_03_00"); //Sauber Leistung. Nun komm ich doch noch an das Fleisch.
+	AI_Output(self, hero, "Info_Mod_Gaan_Ornament_02_03_00"); //Clean performance. I can still get the meat.
 
 	AI_GotoNpc	(self, Scavenger_Gaan);
 
@@ -167,14 +167,14 @@ FUNC VOID Info_Mod_Gaan_Ornament_02_Info()
 	{
 		AI_TurnToNpc	(self, hero);
 
-		AI_Output(self, hero, "Info_Mod_Gaan_Ornament_02_03_01"); //Na sie mal einer an, was ich da im Magen dieses Scavengers gefunden habe. Ein Ornament aus Stein!
-		AI_Output(hero, self, "Info_Mod_Gaan_Ornament_02_15_02"); //Was?! Genau das, wonach ich gesucht hatte ...
-		AI_Output(self, hero, "Info_Mod_Gaan_Ornament_02_03_03"); //Hier, nimm.
+		AI_Output(self, hero, "Info_Mod_Gaan_Ornament_02_03_01"); //Well, what I found in the stomach of this scavenger. A stone ornament!
+		AI_Output(hero, self, "Info_Mod_Gaan_Ornament_02_15_02"); //What?! Exactly what I was looking for...
+		AI_Output(self, hero, "Info_Mod_Gaan_Ornament_02_03_03"); //Here, take this.
 
 		B_GiveInvItems	(self, hero, ItMi_Ornament_Heiler, 1);
 		Npc_RemoveInvItems	(Scavenger_Gaan, ItMi_Ornament_Heiler, 1);
 
-		AI_Output(self, hero, "Info_Mod_Gaan_Ornament_02_03_04"); //Du hast mir ja geholfen an das Fleisch zu kommen und da versteht es sich von selbst, dass ich das Stück Stein an dich abtrete. Man sieht sich.
+		AI_Output(self, hero, "Info_Mod_Gaan_Ornament_02_03_04"); //You helped me to get to the flesh and it goes without saying that I'm ceding the piece of stone to you. See you around.
 	};
 
 	AI_StopProcessInfos	(self);

@@ -55,7 +55,7 @@ FUNC VOID GILDENSTORY_DIEBE()
 		{
 			Mod_Diebe_Brunnen = 1;
 
-			B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "Aha ... im Brunnen landet also das Gold.");
+			B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "Aha... the gold lands in the well.");
 		};
 
 		if (Mod_Diebe_Brunnen == 1)

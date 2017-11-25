@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Black(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Schwarzer Drache";
+	name							=	"Black Dragon";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_Black;
 	level							=	300;
@@ -88,7 +88,7 @@ INSTANCE Dragon_Black	(Mst_Default_Dragon_Black)
 
 INSTANCE Summoned_Dragon_Black (Mst_Default_Dragon_Black)
 {
-	name							= "Beschworener Schwarzer Drache";
+	name							= "Summoned Black Dragon";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_STONEDRAGON;
 	level							= 0;

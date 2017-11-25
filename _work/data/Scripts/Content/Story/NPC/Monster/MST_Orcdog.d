@@ -1,7 +1,7 @@
 PROTOTYPE Mst_Default_Orcdog(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Orkhund";
+	name							=	"Orc Dog";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCDOG;
 	level							=	12;		
@@ -98,7 +98,7 @@ INSTANCE Wally	(Mst_Default_Orcdog)
 
 INSTANCE Orcdog_Big	(Mst_Default_Orcdog)
 {
-	name = "Groﬂer Orkhund";
+	name = "Great Orchound";
 
 	level = 45;
 	

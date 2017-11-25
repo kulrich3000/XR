@@ -1,7 +1,7 @@
 instance Mod_1035_VLK_Gaertner_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gärtner";
+	name 		= "horticulturist";
 	guild 		= GIL_PAL;
 	id 			= 1035;
 	voice 		= 9;

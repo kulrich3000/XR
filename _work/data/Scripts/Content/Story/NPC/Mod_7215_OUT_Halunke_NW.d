@@ -1,7 +1,7 @@
 instance Mod_7215_OUT_Halunke_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Halunke"; 
+	name 		= "Loafer"; 
 	guild 		= GIL_OUT;
 	id 			= 7215;
 	voice 		= 6;

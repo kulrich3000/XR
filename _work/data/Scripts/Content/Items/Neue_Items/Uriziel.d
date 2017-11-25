@@ -17,9 +17,9 @@ instance Uriziel_2H (C_Item)
 	cond_value[2]  		= 	0;
 	visual 				=	"ItMw_2H_Sword_Sleeper_02.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies ist das Schwert Uriziel.";
-	TEXT[1]				= 	"Es wurde aus den 3 Götterschwertern hergestellt.";
-	TEXT[3]				=	"Schaden";			COUNT[3]	=	damage[DAM_INDEX_FIRE];
+	TEXT[0]				=	"This is the sword Uriziel.";
+	TEXT[1]				= 	"It was made of the 3 god swords.";
+	TEXT[3]				=	"Damage";			COUNT[3]	=	damage[DAM_INDEX_FIRE];
 	TEXT[5]				=	NAME_Value;				COUNT[5]	=	value;
 };
 
@@ -42,8 +42,8 @@ instance Uriziel_1H (C_Item)
 	cond_value[2]  		= 	0;
 	visual 				=	"ItMw_1H_Uriziel.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies ist das Schwert Uriziel.";
-	TEXT[1]				= 	"Es wurde aus den 3 Götterschwertern hergestellt.";
-	TEXT[3]				=	"Schaden";			COUNT[3]	=	damage[DAM_INDEX_FIRE];
+	TEXT[0]				=	"This is the sword Uriziel.";
+	TEXT[1]				= 	"It was made of the 3 god swords.";
+	TEXT[3]				=	"Damage";			COUNT[3]	=	damage[DAM_INDEX_FIRE];
 	TEXT[5]				=	NAME_Value;				COUNT[5]	=	value;
 };

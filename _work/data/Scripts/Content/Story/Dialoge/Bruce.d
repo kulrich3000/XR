@@ -18,16 +18,16 @@ FUNC INT Info_Mod_Bruce_KesselProblem_Condition()
 
 FUNC VOID Info_Mod_Bruce_KesselProblem_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_00"); //(zu sich selbst, lalend) Hähä, das habe ich fantastisch hinbekommen.
-	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem_15_01"); //(räuspert sich)
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_02"); //(überrascht) Hmm, hä ...? Hey, was bist du denn für einer?
-	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem_15_03"); //Ich schau mich hier nur mal um.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_04"); //Ja, tu das meinetwegen. Aber mach keinen Ärger. Sonst zieh ich dir das Fell über die Ohren.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_05"); //So wie ... genau, so wie dem Schattenläufer, den ich vor kurzem in den Bergen erledigt habe. Siehst du. Echtes Schattenläuferfell.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_06"); //Das Biest ... ähh, hat einen Schürfer gefressen, hähä. Aber ich war eben einfach zu gerissen.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_07"); //So hat jeder bekommen, was er verdient hat. (lacht dreckig)
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_00"); //(to himself, leaking) Huhä, I did a fantastic job.
+	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem_15_01"); //(clears throat)
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_02"); //(surprised) Hmm, huh...? Hey, what kind of guy are you?
+	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem_15_03"); //I'm just looking around.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_04"); //Yeah, do it for me. But don't make any trouble. If you don't, I'll blow your head off.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_05"); //Like.... just like that shadow runner I took out in the mountains recently. You see? Real shadow runner's fur.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_06"); //The beast... uh, has eaten a scout, huh? But I was just too smart.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_07"); //So everyone got what they deserved. (laughs dirty)
 
-	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Am Eingang zum Talkessel habe ich Söldner Bruce angetroffen. Er scheint ziemlich betrunken zu sein und hat selbstgefällig mit dem Fell des Schattenläufers geprahlt, welcher den Schürfer gefressen haben soll. Er schien sehrt amüsiert.");
+	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "I found mercenary Bruce at the entrance to the basin. He seems to be quite drunk and boasted complacently with the fur of the shadow runner who is said to have eaten the prospector. He seemed very amused.");
 };
 
 INSTANCE Info_Mod_Bruce_KesselProblem2 (C_INFO)
@@ -53,7 +53,7 @@ FUNC INT Info_Mod_Bruce_KesselProblem2_Condition()
 
 FUNC VOID Info_Mod_Bruce_KesselProblem2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem2_06_00"); //Hey, verpiss dich einfach.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem2_06_00"); //Hey, just fuck off.
 };
 
 INSTANCE Info_Mod_Bruce_KesselProblem3 (C_INFO)
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Bruce_KesselProblem3 (C_INFO)
 	information	= Info_Mod_Bruce_KesselProblem3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast da glaube ich paar Sachen, die sich eigentlich nicht in deinem Besitz befinden dürften.";
+	description	= "You've got some things I think you're not supposed to have in your possession.";
 };
 
 FUNC INT Info_Mod_Bruce_KesselProblem3_Condition()
@@ -77,10 +77,10 @@ FUNC INT Info_Mod_Bruce_KesselProblem3_Condition()
 
 FUNC VOID Info_Mod_Bruce_KesselProblem3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem3_15_00"); //Du hast da glaube ich paar Sachen, die sich eigentlich nicht in deinem Besitz befinden dürften.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem3_06_01"); //(verdutzt) Wie, was sagst du da?
-	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem3_15_02"); //Nun, ich meine zum Beispiel das Sumpfkraut und das ...
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem3_06_03"); //Du hast dich gerade mit dem falschen angelegt!!!
+	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem3_15_00"); //You've got some things I think you're not supposed to have in your possession.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem3_06_01"); //What do you mean?
+	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem3_15_02"); //Well, I mean, for example, the swampweed and the...
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem3_06_03"); //You just messed with the wrong guy.
 
 	CreateInvItems	(self, ItWr_KesselProblem, 1);
 

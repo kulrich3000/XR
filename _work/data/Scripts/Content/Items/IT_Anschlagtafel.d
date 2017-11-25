@@ -1,6 +1,6 @@
 INSTANCE ItWr_Anschlagtafel_Baltram		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -11,7 +11,7 @@ INSTANCE ItWr_Anschlagtafel_Baltram		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Baltram;
 	scemeName			=	"MAP";
-	description			= 	"von Baltram";
+	description			= 	"from Baltram";
 };
 func void UseItWr_Anschlagtafel_Baltram ()
 {
@@ -22,7 +22,7 @@ func void UseItWr_Anschlagtafel_Baltram ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -36,7 +36,7 @@ func void UseItWr_Anschlagtafel_Baltram ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Baltram_Brot > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Brot), " Brote"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Brot), " breads"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Baltram_Wasser > 0)
 		{
@@ -56,7 +56,7 @@ func void UseItWr_Anschlagtafel_Baltram ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Baltram_Wurst > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wurst), " Würste"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wurst), " sausages"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Baltram_Grog > 0)
 		{
@@ -68,19 +68,19 @@ func void UseItWr_Anschlagtafel_Baltram ()
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Baltram_Kuerbis > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Kuerbis), " Kürbisse"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Kuerbis), " pumpkins"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Baltram_Melone > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Melone), " Melonen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Melone), " melons"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Baltram_Fleisch > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Fleisch), " rohes Fleisch"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Fleisch), " raw meat"));
 		};	
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Baltram");
@@ -90,7 +90,7 @@ func void UseItWr_Anschlagtafel_Baltram ()
 
 INSTANCE ItWr_Anschlagtafel_Bosper		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -101,7 +101,7 @@ INSTANCE ItWr_Anschlagtafel_Bosper		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Bosper;
 	scemeName			=	"MAP";
-	description			= 	"von Bosper";
+	description			= 	"from Bosper";
 };
 func void UseItWr_Anschlagtafel_Bosper ()
 {
@@ -112,13 +112,13 @@ func void UseItWr_Anschlagtafel_Bosper ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Wolffell > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Wolffell), " Wolffelle"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Wolffell), " wolffels"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Zaehne > 0)
 		{
@@ -130,15 +130,15 @@ func void UseItWr_Anschlagtafel_Bosper ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Wargfell > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Wargfell), " Wargfelle"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Wargfell), " warning furs"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferfell > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferfell), " Schattenläuferfelle"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferfell), " shadow skins"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Reptilienhaut > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Reptilienhaut), " Reptilienhäute"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Reptilienhaut), " reptile skins"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Trollfell > 0)
 		{
@@ -146,19 +146,19 @@ func void UseItWr_Anschlagtafel_Bosper ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Minecrawlerplatte > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Minecrawlerplatte), " Minecrawlerplatten"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Minecrawlerplatte), " Minecrawler plates"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferhorn > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferhorn), " Schattenläuferhörner"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferhorn), " shadow horn"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Ast > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Ast), " Äste"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Ast), " branches"));
 		};
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Bosper");
@@ -169,7 +169,7 @@ func void UseItWr_Anschlagtafel_Bosper ()
 
 INSTANCE ItWr_Anschlagtafel_Constantino		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -180,7 +180,7 @@ INSTANCE ItWr_Anschlagtafel_Constantino		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Constantino;
 	scemeName			=	"MAP";
-	description			= 	"von Constantino";
+	description			= 	"from Constantino";
 };
 func void UseItWr_Anschlagtafel_Constantino ()
 {
@@ -191,7 +191,7 @@ func void UseItWr_Anschlagtafel_Constantino ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -205,15 +205,15 @@ func void UseItWr_Anschlagtafel_Constantino ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Flasche > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Flasche), " Laborwassenflaschen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Flasche), " Laboratory water bottles"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Heilkraut > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilkraut), " Heilkräuter"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilkraut), " medicinal herbs"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Heilwurzel > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilwurzel), " Heilwurzeln"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilwurzel), " healing roots"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Feuerkraut > 0)
 		{
@@ -221,7 +221,7 @@ func void UseItWr_Anschlagtafel_Constantino ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Feuerwurzel > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feuerwurzel), " Feuerwurzeln"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feuerwurzel), " fire roots"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Feldknoeterich > 0)
 		{
@@ -233,11 +233,11 @@ func void UseItWr_Anschlagtafel_Constantino ()
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Dunkelpilz > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Dunkelpilz), " Dunkelpilze"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Dunkelpilz), " dark mushrooms"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Fliegenpilz > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Fliegenpilz), " Fliegenpilze"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Fliegenpilz), " toadstools"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Sumpfkraut > 0)
 		{
@@ -249,15 +249,15 @@ func void UseItWr_Anschlagtafel_Constantino ()
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Unkraut > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Unkraut), " Unkräuter"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Unkraut), " weeds"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Constantino_Heilpflanze > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilpflanze), " Heilpflanzen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilpflanze), " medicinal plants"));
 		};
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Constantino");
@@ -267,7 +267,7 @@ func void UseItWr_Anschlagtafel_Constantino ()
 
 INSTANCE ItWr_Anschlagtafel_Hakon		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -278,7 +278,7 @@ INSTANCE ItWr_Anschlagtafel_Hakon		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Hakon;
 	scemeName			=	"MAP";
-	description			= 	"von Hakon";
+	description			= 	"from Hakon";
 };
 func void UseItWr_Anschlagtafel_Hakon ()
 {
@@ -289,7 +289,7 @@ func void UseItWr_Anschlagtafel_Hakon ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 
@@ -307,15 +307,15 @@ func void UseItWr_Anschlagtafel_Hakon ()
 		};
 		if (Mod_Anschlagtafel_Khorinis_Hakon_AmulettEichenhaut > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Hakon_AmulettEichenhaut), " Amulett der Eichenhaut"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Hakon_AmulettEichenhaut), " Amulet of Oak Skin"));
 		};
 		if (Mod_Anschlagtafel_Khorinis_Hakon_RingEisenhaut > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Hakon_RingEisenhaut), " Ring der Eisenhaut"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Hakon_RingEisenhaut), " Ring of Iron Skin"));
 		};
 		if (Mod_Anschlagtafel_Khorinis_Hakon_RingKraft > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Hakon_RingKraft), " Ring der Kraft"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Hakon_RingKraft), " Ring of Force"));
 		};
 		if (Mod_Anschlagtafel_Khorinis_Hakon_Schwert > 0)
 		{
@@ -323,7 +323,7 @@ func void UseItWr_Anschlagtafel_Hakon ()
 		};
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Hakon_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Hakon_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Hakon");
@@ -334,7 +334,7 @@ func void UseItWr_Anschlagtafel_Hakon ()
 
 INSTANCE ItWr_Anschlagtafel_Harad		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -345,7 +345,7 @@ INSTANCE ItWr_Anschlagtafel_Harad		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Harad;
 	scemeName			=	"MAP";
-	description			= 	"von Harad";
+	description			= 	"from Harad";
 };
 func void UseItWr_Anschlagtafel_Harad ()
 {
@@ -356,17 +356,17 @@ func void UseItWr_Anschlagtafel_Harad ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 		if (Mod_Anschlagtafel_Khorinis_Harad_RostigesSchwert > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Harad_RostigesSchwert), " Rostige Schwerter"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Harad_RostigesSchwert), " Rusty Swords"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Harad_RostigerZweihaender > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Harad_RostigerZweihaender), " Rostige Zweihänder"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Harad_RostigerZweihaender), " Rusty two-handed animals"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Harad_Goldbrocken > 0)
 		{
@@ -394,7 +394,7 @@ func void UseItWr_Anschlagtafel_Harad ()
 		};
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Harad_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Harad_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Harad");
@@ -405,7 +405,7 @@ func void UseItWr_Anschlagtafel_Harad ()
 
 INSTANCE ItWr_Anschlagtafel_Ignaz		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -416,7 +416,7 @@ INSTANCE ItWr_Anschlagtafel_Ignaz		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Ignaz;
 	scemeName			=	"MAP";
-	description			= 	"von Ignaz";
+	description			= 	"from Ignaz";
 };
 func void UseItWr_Anschlagtafel_Ignaz ()
 {
@@ -427,7 +427,7 @@ func void UseItWr_Anschlagtafel_Ignaz ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -437,15 +437,15 @@ func void UseItWr_Anschlagtafel_Ignaz ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Kohle > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Kohle), " Kohlen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Kohle), " coals"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Quartz > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Quartz), " Gletscherquartz"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Quartz), " glacier quartz"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Bergkristall > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Bergkristall), " Bergkristalle"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Bergkristall), " rock crystals"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Papier > 0)
 		{
@@ -453,7 +453,7 @@ func void UseItWr_Anschlagtafel_Ignaz ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel), " Blutfliegenstachel"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel), " Blood fly spine"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Minecrawlerzangen > 0)
 		{
@@ -469,23 +469,23 @@ func void UseItWr_Anschlagtafel_Ignaz ()
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Goblinknochen > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Goblinknochen), " Goblinknochen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Goblinknochen), " goblin bones"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Skelettknochen > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Skelettknochen), " Skelettknochen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Skelettknochen), " skeletal bone"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Schlafzauber > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Schlafzauber), " Schlafzauber"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Schlafzauber), " sleeping spell"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Vergessenszauber > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Vergessenszauber), " Vergessenszauber"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Vergessenszauber), " oblivion spell"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Angstzauber > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Angstzauber), " Angstzauber"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Angstzauber), " fear spell"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Schwefel > 0)
 		{
@@ -493,7 +493,7 @@ func void UseItWr_Anschlagtafel_Ignaz ()
 		};
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Ignaz");
@@ -504,7 +504,7 @@ func void UseItWr_Anschlagtafel_Ignaz ()
 
 INSTANCE ItWr_Anschlagtafel_Jora		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -515,7 +515,7 @@ INSTANCE ItWr_Anschlagtafel_Jora		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Jora;
 	scemeName			=	"MAP";
-	description			= 	"von Jora";
+	description			= 	"by Jora";
 };
 func void UseItWr_Anschlagtafel_Jora ()
 {
@@ -526,7 +526,7 @@ func void UseItWr_Anschlagtafel_Jora ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -536,19 +536,19 @@ func void UseItWr_Anschlagtafel_Jora ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Jora_Kurzbogen > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Kurzbogen), " Kurzbögen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Kurzbogen), " short sheets"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Jora_Weidenbogen > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Weidenbogen), " Weidenbögen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Weidenbogen), " willow arches"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Jora_Fackel > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Fackel), " Fackeln"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Fackel), " flares"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Jora_Spitzhacke > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Spitzhacke), " Spitzhacken"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Spitzhacke), " pickaxes"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Jora_Laute > 0)
 		{
@@ -556,7 +556,7 @@ func void UseItWr_Anschlagtafel_Jora ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Jora_Harnischamulett > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Harnischamulett), " Harnischamulett"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Harnischamulett), " Harness Amulet"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Jora_Klosterwein > 0)
 		{
@@ -564,15 +564,15 @@ func void UseItWr_Anschlagtafel_Jora ()
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Jora_Schafswurst > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Schafswurst), " Schafswürste"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Schafswurst), " sheep sausages"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Jora_Pfeil > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Pfeil), " Pfeile"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Jora_Pfeil), " darts"));
 		};
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Jora_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Jora_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Jora");
@@ -582,7 +582,7 @@ func void UseItWr_Anschlagtafel_Jora ()
 
 INSTANCE ItWr_Anschlagtafel_Lobart		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -593,7 +593,7 @@ INSTANCE ItWr_Anschlagtafel_Lobart		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Lobart;
 	scemeName			=	"MAP";
-	description			= 	"von Lobart";
+	description			= 	"by Lobart";
 };
 func void UseItWr_Anschlagtafel_Lobart ()
 {
@@ -604,7 +604,7 @@ func void UseItWr_Anschlagtafel_Lobart ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -614,7 +614,7 @@ func void UseItWr_Anschlagtafel_Lobart ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lobart_KleineSense > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lobart_KleineSense), " Kleine Sensen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lobart_KleineSense), " Small scythes"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lobart_Rasiermesser > 0)
 		{
@@ -634,7 +634,7 @@ func void UseItWr_Anschlagtafel_Lobart ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lobart_Harke > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Harke), " Harke"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Harke), " rake"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lobart_Kochloeffel > 0)
 		{
@@ -642,11 +642,11 @@ func void UseItWr_Anschlagtafel_Lobart ()
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Lobart_Sichel > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Sichel), " Sicheln"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Sichel), " sickles"));
 		};
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Lobart");
@@ -657,7 +657,7 @@ func void UseItWr_Anschlagtafel_Lobart ()
 
 INSTANCE ItWr_Anschlagtafel_Lutero		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -668,7 +668,7 @@ INSTANCE ItWr_Anschlagtafel_Lutero		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Lutero;
 	scemeName			=	"MAP";
-	description			= 	"von Lutero";
+	description			= 	"from Lutero";
 };
 func void UseItWr_Anschlagtafel_Lutero ()
 {
@@ -679,13 +679,13 @@ func void UseItWr_Anschlagtafel_Lutero ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Silberkelch > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Silberkelch), " Silberkelche"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Silberkelch), " silver goblet"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Silberteller > 0)
 		{
@@ -697,7 +697,7 @@ func void UseItWr_Anschlagtafel_Lutero ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Goldkelch > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Goldkelch), " Goldkelch"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Goldkelch), " goblet"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Trollhauer > 0)
 		{
@@ -705,19 +705,19 @@ func void UseItWr_Anschlagtafel_Lutero ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Drachensnapperhorn > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Drachensnapperhorn), " Drachensnapperhörner"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Drachensnapperhorn), " dragon snapper horns"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaizahn > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaizahn), " Sumpfhaizähne"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaizahn), " swamp shark teeth"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaihaut > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaihaut), " Sumpfhaihäute"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaihaut), " bog sharkskins"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Lutero_FlammenAmulett > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_FlammenAmulett), " Amulett der Flammen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_FlammenAmulett), " Amulet of Fire"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Runenstein > 0)
 		{
@@ -725,19 +725,19 @@ func void UseItWr_Anschlagtafel_Lutero ()
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Steingolemherz > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Steingolemherz), " Steingolemherz"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Steingolemherz), " Stone Golem"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Daemonenherz > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Daemonenherz), " Dämonenherz"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Daemonenherz), " demon heart"));
 		};	
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Goldring > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Goldring), " Goldringe"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Goldring), " gold rings"));
 		};	
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Lutero");
@@ -748,7 +748,7 @@ func void UseItWr_Anschlagtafel_Lutero ()
 
 INSTANCE ItWr_Anschlagtafel_Thorben		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -759,7 +759,7 @@ INSTANCE ItWr_Anschlagtafel_Thorben		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Thorben;
 	scemeName			=	"MAP";
-	description			= 	"von Thorben";
+	description			= 	"from Thorb";
 };
 func void UseItWr_Anschlagtafel_Thorben ()
 {
@@ -770,13 +770,13 @@ func void UseItWr_Anschlagtafel_Thorben ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 		if (Mod_Anschlagtafel_Khorinis_Thorben_Ast > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Ast), " Äste"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Ast), " branches"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Thorben_Beil > 0)
 		{
@@ -788,11 +788,11 @@ func void UseItWr_Anschlagtafel_Thorben ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Thorben_SchwererAst > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_SchwererAst), " schwere Äste"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_SchwererAst), " heavy branches"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Thorben_Dolch > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Dolch), " Dolche"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Dolch), " daggers"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Thorben_Besen > 0)
 		{
@@ -800,15 +800,15 @@ func void UseItWr_Anschlagtafel_Thorben ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Thorben_Buerste > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Buerste), " Bürsten"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Buerste), " brushes"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Thorben_Saege > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Saege), " Sägen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Saege), " saws"));
 		};
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Thorben");
@@ -819,7 +819,7 @@ func void UseItWr_Anschlagtafel_Thorben ()
 
 INSTANCE ItWr_Anschlagtafel_Zuris		(C_Item)
 {
-	name 				=	"Anschlag";
+	name 				=	"fence";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -830,7 +830,7 @@ INSTANCE ItWr_Anschlagtafel_Zuris		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItWr_Anschlagtafel_Zuris;
 	scemeName			=	"MAP";
-	description			= 	"von Zuris";
+	description			= 	"from Zuris";
 };
 func void UseItWr_Anschlagtafel_Zuris ()
 {
@@ -841,45 +841,45 @@ func void UseItWr_Anschlagtafel_Zuris ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_Book  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Benötigt:"					);
+					Doc_PrintLine	( nDocID,  0, "Requires:"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 		if (Mod_Anschlagtafel_Khorinis_Zuris_Manaessenz > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Manaessenz), " Manaessenzen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Manaessenz), " mana essences"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Zuris_ManaExtrakt > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_ManaExtrakt), " Manaextrakte"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_ManaExtrakt), " mana extracts"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Zuris_HPExtrakt > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPExtrakt), " Extrakte der Heilung"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPExtrakt), " Healing extracts"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Zuris_HPElixier > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPElixier), " Elixiere der Heilung"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPElixier), " Elixirs of Healing"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Zuris_ManaElixier > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_ManaElixier), " Manaelixiere"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_ManaElixier), " Manaelixins"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Zuris_Feuerball > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Feuerball), " Feuerball-Spruchrollen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Feuerball), " Fireball Bubble Rollers"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Zuris_Feuerpfeil > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Feuerpfeil), " Feuerpfeil-Spruchrollen"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Feuerpfeil), " Fire-arrow spell rolls"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Zuris_HPEssenz > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPEssenz), " Essenzen der Heilung"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPEssenz), " Essences of Healing"));
 		};
 
 		Doc_PrintLine	(nDocID,  0, "");
-		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("Zahle ", IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Gold)), " Gold dafür"));
+		Doc_PrintLine	(nDocID,  0, ConcatStrings(ConcatStrings("pay ", IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Gold)), " Gold for"));
 
 		Doc_PrintLine	(nDocID,  0, "");
 		Doc_PrintLine	(nDocID,  0, "Zuris");

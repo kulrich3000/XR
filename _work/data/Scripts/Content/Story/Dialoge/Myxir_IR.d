@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Myxir_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Myxir_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Myxir_IR_Hi_28_00"); //(in die Höhle blickend) Ahh, herrlich ... Finsternis, Verdammnis, abscheuliche Geschöpfe sphärischer Manifestation.
-	AI_Output(hero, self, "Info_Mod_Myxir_IR_Hi_15_01"); //Nun, zumindest dir scheint es hier recht gut zu gefallen ...
-	AI_Output(self, hero, "Info_Mod_Myxir_IR_Hi_28_02"); //(zum Helden) Wie sollte es einem Verfechter dunkler Künste denn auch hier anders gehen?
-	AI_Output(self, hero, "Info_Mod_Myxir_IR_Hi_28_03"); //Blick dich um ... Es ist ein einziger Schatz dunkler Magie, den es nur noch zu ergründen gilt.
-	AI_Output(hero, self, "Info_Mod_Myxir_IR_Hi_15_04"); //Ja, dazu wirst du bestimmt noch Gelegenheit bekommen.
+	AI_Output(self, hero, "Info_Mod_Myxir_IR_Hi_28_00"); //Ahh, gorgeous.... Darkness, damnation, despicable creatures of spherical manifestation.
+	AI_Output(hero, self, "Info_Mod_Myxir_IR_Hi_15_01"); //Well, at least you seem to like it here...
+	AI_Output(self, hero, "Info_Mod_Myxir_IR_Hi_28_02"); //(to the hero) How could a defender of dark arts do otherwise?
+	AI_Output(self, hero, "Info_Mod_Myxir_IR_Hi_28_03"); //Look around.... It's a treasure trove of dark magic to explore.
+	AI_Output(hero, self, "Info_Mod_Myxir_IR_Hi_15_04"); //Yeah, I'm sure you'll get a chance to.
 };
 
 INSTANCE Info_Mod_Myxir_IR_Hebel (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Myxir_IR_Hebel (C_INFO)
 	information	= Info_Mod_Myxir_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Can you use one lever while I move the other?";
 };
 
 FUNC INT Info_Mod_Myxir_IR_Hebel_Condition()
@@ -47,7 +47,7 @@ FUNC VOID Info_Mod_Myxir_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Myxir_IR_Hebel_28_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Myxir_IR_Hebel_28_00"); //Of course it is. Maybe if it's going to get us somewhere...
 
 	Mod_IR_Hebel = 1;
 
@@ -76,7 +76,7 @@ FUNC INT Info_Mod_Myxir_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Myxir_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Myxir_IR_Ambient01_28_00"); //(anerkennend) So viele finstere Gestalten auf engstem Raum ... hier muss ein wahrer Meister der dunklen Künste am Werk gewesen sein.
+	AI_Output(self, hero, "Info_Mod_Myxir_IR_Ambient01_28_00"); //(recognizing) So many sinister creatures in a confined space... here must have been a true master of the dark arts at work.
 
 	AI_StopProcessInfos	(self);
 };
@@ -89,7 +89,7 @@ INSTANCE Info_Mod_Myxir_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Myxir_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Let's get going. Will you escort me to the island?";
 };
 
 FUNC INT Info_Mod_Myxir_IR_GehtLos_Condition()
@@ -108,7 +108,7 @@ FUNC VOID Info_Mod_Myxir_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Myxir_IR_GehtLos_28_00"); //Selbstverständlich. Nichts sehnlicher wünsche ich, als das finstere Gut dieser Insel zu bergen und zu ergründen.
+	AI_Output(self, hero, "Info_Mod_Myxir_IR_GehtLos_28_00"); //Of course, of course. I wish nothing more than to recover and fathom the dark good of this island.
 
 	Mod_IR_Dabei += 1;
 
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Myxir_IR_GehBack (C_INFO)
 	information	= Info_Mod_Myxir_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Go back to the ship.";
 };
 
 FUNC INT Info_Mod_Myxir_IR_GehBack_Condition()
@@ -144,7 +144,7 @@ FUNC VOID Info_Mod_Myxir_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Myxir_IR_GehBack_28_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Myxir_IR_GehBack_28_00"); //Well, if you need me, you know where to find me.
 
 	Mod_IR_Dabei -= 1;
 
@@ -163,7 +163,7 @@ INSTANCE Info_Mod_Myxir_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Myxir_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Myxir_IR_Heiltrank_Condition()
@@ -183,31 +183,31 @@ FUNC VOID Info_Mod_Myxir_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Myxir_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Essence of Healing", Info_Mod_Myxir_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Myxir_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Elixir of Healing", Info_Mod_Myxir_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Myxir_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Extract of Healing", Info_Mod_Myxir_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Myxir_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Essence of Healing", Info_Mod_Myxir_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Myxir_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Drink of light healing", Info_Mod_Myxir_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Myxir_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Light healing potion", Info_Mod_Myxir_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Myxir_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Myxir_IR_Heiltrank, "Drink of fast healing", Info_Mod_Myxir_IR_Heiltrank_Health_05);
 	};
 };
 

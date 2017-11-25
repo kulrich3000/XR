@@ -1,7 +1,7 @@
 INSTANCE Mod_7538_OUT_Trimedron_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Trimedron";
+	name 		= "trimedron";
 	guild 		= GIL_out;
 	id 			= 7538;
 	voice 		= 7;

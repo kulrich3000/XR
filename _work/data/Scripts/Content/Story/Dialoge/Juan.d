@@ -22,56 +22,56 @@ FUNC INT Info_Mod_Juan_Quest_Condition()
 
 FUNC VOID Info_Mod_Juan_Quest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Juan_Quest_13_00"); //Hey, du bist doch ein zäher Bursche ...? Natürlich bist du das, das hast du mehr als bewiesen.
-	AI_Output(self, hero, "Info_Mod_Juan_Quest_13_01"); //Und du magst bestimmt Herausforderungen. Dann habe ich die richtige Aufgabe für dich, bei welcher noch gut was für dich rausspringen wird.
-	AI_Output(hero, self, "Info_Mod_Juan_Quest_15_02"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Juan_Quest_13_03"); //Es gibt da einen Händler, der etwas besitzt, was ich gerne hätte. Und da du so ein smarter Bursche bist, wirst du es mir besorgen.
-	AI_Output(self, hero, "Info_Mod_Juan_Quest_13_04"); //Dafür lasse ich auch 300 Goldmünzen springen. Was sagst du?
+	AI_Output(self, hero, "Info_Mod_Juan_Quest_13_00"); //Hey, aren't you a tough guy? Of course you are, you've proven it.
+	AI_Output(self, hero, "Info_Mod_Juan_Quest_13_01"); //And you like challenges. Then I've got the right job for you, where you'll get a good deal.
+	AI_Output(hero, self, "Info_Mod_Juan_Quest_15_02"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Juan_Quest_13_03"); //There's a trader who owns something I'd like to have. And since you're such a smart guy, you'll get it for me.
+	AI_Output(self, hero, "Info_Mod_Juan_Quest_13_04"); //I'll have 300 gold coins jumped for that. What do you say?
 
 	Info_ClearChoices	(Info_Mod_Juan_Quest);
 
-	Info_AddChoice	(Info_Mod_Juan_Quest, "Nein, da solltest du dir jemand anderen suchen.", Info_Mod_Juan_Quest_B);
-	Info_AddChoice	(Info_Mod_Juan_Quest, "Ja, ich bin dabei.", Info_Mod_Juan_Quest_A);
+	Info_AddChoice	(Info_Mod_Juan_Quest, "No, you should find someone else.", Info_Mod_Juan_Quest_B);
+	Info_AddChoice	(Info_Mod_Juan_Quest, "Yeah, I'm in.", Info_Mod_Juan_Quest_A);
 };
 
 FUNC VOID Info_Mod_Juan_Quest_B()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Quest_B_15_00"); //Nein, da solltest du dir jemand anderen suchen.
-	AI_Output(self, hero, "Info_Mod_Juan_Quest_B_13_01"); //(ärgerlich) Pah, dann eben nicht.
+	AI_Output(hero, self, "Info_Mod_Juan_Quest_B_15_00"); //No, you should find someone else.
+	AI_Output(self, hero, "Info_Mod_Juan_Quest_B_13_01"); //Pah, then don't.
 	
 	Info_ClearChoices	(Info_Mod_Juan_Quest);
 };
 
 FUNC VOID Info_Mod_Juan_Quest_A()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Quest_A_15_00"); //Ja, ich bin dabei.
-	AI_Output(self, hero, "Info_Mod_Juan_Quest_A_13_01"); //Großartig! Der Händler heißt Antonius. Er müsste zurzeit vor dem Alten Lager herumgammeln. Schlag ihn nieder und bring mir einfach alles, was er bei sich hat, ok?
+	AI_Output(hero, self, "Info_Mod_Juan_Quest_A_15_00"); //Yeah, I'm in.
+	AI_Output(self, hero, "Info_Mod_Juan_Quest_A_13_01"); //Great! The merchant's name is Antony. He'd have to be loafing around the Old Camp these days. Hit him down and just bring me everything he's got, okay?
 
 	Mod_JuanQuest = 1;
 
 	Log_CreateTopic	(TOPIC_MOD_BDT_JUAN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_JUAN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BDT_JUAN, "Ich soll für Juan den Händler Antonius ausrauben, welcher vor dem Alten Lager steht.");
+	B_LogEntry	(TOPIC_MOD_BDT_JUAN, "I am to rob the merchant Antonius for Juan, who stands in front of the old camp.");
 
 	Wld_InsertNpc	(Mod_7189_OUT_Antonius_MT, "OC1");
 	
 	Info_ClearChoices	(Info_Mod_Juan_Quest);
 
-	Info_AddChoice	(Info_Mod_Juan_Quest, "Was genau soll ich denn beschaffen?", Info_Mod_Juan_Quest_D);
-	Info_AddChoice	(Info_Mod_Juan_Quest, "Das sollte ich wohl hinbekommen.", Info_Mod_Juan_Quest_C);
+	Info_AddChoice	(Info_Mod_Juan_Quest, "What exactly am I supposed to get?", Info_Mod_Juan_Quest_D);
+	Info_AddChoice	(Info_Mod_Juan_Quest, "I should probably be able to do that.", Info_Mod_Juan_Quest_C);
 };
 
 FUNC VOID Info_Mod_Juan_Quest_D()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Quest_D_15_00"); //Was genau soll ich denn beschaffen?
-	AI_Output(self, hero, "Info_Mod_Juan_Quest_D_13_01"); //Bring mir einfach alles, was er bei sich hat. Er wird es bei sich haben.
+	AI_Output(hero, self, "Info_Mod_Juan_Quest_D_15_00"); //What exactly am I supposed to get?
+	AI_Output(self, hero, "Info_Mod_Juan_Quest_D_13_01"); //Just bring me everything he's got. He'll have it with him.
 	
 	Info_ClearChoices	(Info_Mod_Juan_Quest);
 };
 
 FUNC VOID Info_Mod_Juan_Quest_C()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Quest_C_15_00"); //Das sollte ich wohl hinbekommen.
+	AI_Output(hero, self, "Info_Mod_Juan_Quest_C_15_00"); //I should probably be able to do that.
 	
 	Info_ClearChoices	(Info_Mod_Juan_Quest);
 };
@@ -84,7 +84,7 @@ INSTANCE Info_Mod_Juan_Antonius (C_INFO)
 	information	= Info_Mod_Juan_Antonius_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ähh, ich habe alles, was der Händler bei sich hatte.";
+	description	= "Uh, I've got everything the dealer had on me.";
 };
 
 FUNC INT Info_Mod_Juan_Antonius_Condition()
@@ -105,61 +105,61 @@ FUNC INT Info_Mod_Juan_Antonius_Condition()
 
 FUNC VOID Info_Mod_Juan_Antonius_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Antonius_15_00"); //Ähh, ich habe alles, was der Händler bei sich hatte.
-	AI_Output(self, hero, "Info_Mod_Juan_Antonius_13_01"); //Ja, zeig her.
-	AI_Output(hero, self, "Info_Mod_Juan_Antonius_15_02"); //Da wären Rasiermesser, Pfannen, als Wegzehrung einige Flaschen Grog, 1 Stück Käse ...
-	AI_Output(self, hero, "Info_Mod_Juan_Antonius_13_03"); //Ach, verdammt, behalt den Dreck. Obwohl ... den Grog nehm ich an mich.
+	AI_Output(hero, self, "Info_Mod_Juan_Antonius_15_00"); //Uh, I've got everything the dealer had on me.
+	AI_Output(self, hero, "Info_Mod_Juan_Antonius_13_01"); //Yeah, show me.
+	AI_Output(hero, self, "Info_Mod_Juan_Antonius_15_02"); //There are razors, pans, some bottles of grog, 1 piece of cheese....
+	AI_Output(self, hero, "Info_Mod_Juan_Antonius_13_03"); //Oh, damn it, keep the crap. Although... I'll take the grog.
 
 	B_GiveInvItems	(hero, self, ItFo_Addon_Grog, 10);
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Juan_Antonius_13_04"); //(zu sich selbst) Dann muss er es schon an Hortensius weiterverkauft haben ...
-	AI_Output(hero, self, "Info_Mod_Juan_Antonius_15_05"); //Was ist jetzt mit meinem Gold?
+	AI_Output(self, hero, "Info_Mod_Juan_Antonius_13_04"); //(to himself) Then he must have already resold it to Hortensius...
+	AI_Output(hero, self, "Info_Mod_Juan_Antonius_15_05"); //What about my gold now?
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Juan_Antonius_13_06"); //Sehr witzig. Ich mach dir ein Angebot. Wenn du einen weiteren Händler beraubst, der die Ware bei sich haben muss, lege ich noch 50 Gold drauf.
+	AI_Output(self, hero, "Info_Mod_Juan_Antonius_13_06"); //Very funny. I'll make you an offer. If you rob another merchant who has to have the goods with him, I add 50 gold.
 
 	B_GivePlayerXP	(100);
 
 	Info_ClearChoices	(Info_Mod_Juan_Antonius);
 
-	Info_AddChoice	(Info_Mod_Juan_Antonius, "Vergiss es. Gib mir einfach mein Gold.", Info_Mod_Juan_Antonius_C);
-	Info_AddChoice	(Info_Mod_Juan_Antonius, "Ich will erst wissen, was ich dir überhaupt besorgen soll.", Info_Mod_Juan_Antonius_B);
-	Info_AddChoice	(Info_Mod_Juan_Antonius, "Na gut, ich machs.", Info_Mod_Juan_Antonius_A);
+	Info_AddChoice	(Info_Mod_Juan_Antonius, "Forget about it. Just give me my gold.", Info_Mod_Juan_Antonius_C);
+	Info_AddChoice	(Info_Mod_Juan_Antonius, "I want to know what I'm gonna get you first.", Info_Mod_Juan_Antonius_B);
+	Info_AddChoice	(Info_Mod_Juan_Antonius, "All right, I'll do it.", Info_Mod_Juan_Antonius_A);
 };
 
 FUNC VOID Info_Mod_Juan_Antonius_C()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Antonius_C_15_00"); //Vergiss es. Gib mir einfach mein Gold.
-	AI_Output(self, hero, "Info_Mod_Juan_Antonius_C_13_01"); //Ich geb dir 100 Gold und keine Münze mehr.
+	AI_Output(hero, self, "Info_Mod_Juan_Antonius_C_15_00"); //Forget about it. Just give me my gold.
+	AI_Output(self, hero, "Info_Mod_Juan_Antonius_C_13_01"); //I'll give you 100 gold and no more coins.
 	
 	Info_ClearChoices	(Info_Mod_Juan_Antonius);
 
-	Info_AddChoice	(Info_Mod_Juan_Antonius, "Du gibst mir die vereinbarte Summe oder ich hol sie mir!", Info_Mod_Juan_Antonius_E);
-	Info_AddChoice	(Info_Mod_Juan_Antonius, "Ok, dann eben nur 100 ...", Info_Mod_Juan_Antonius_D);
+	Info_AddChoice	(Info_Mod_Juan_Antonius, "You give me the agreed sum, or I'll get it!", Info_Mod_Juan_Antonius_E);
+	Info_AddChoice	(Info_Mod_Juan_Antonius, "Okay, just 100 then...", Info_Mod_Juan_Antonius_D);
 };
 
 FUNC VOID Info_Mod_Juan_Antonius_B()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Antonius_B_15_00"); //Ich will erst wissen, was ich dir überhaupt besorgen soll.
-	AI_Output(self, hero, "Info_Mod_Juan_Antonius_B_13_01"); //Ok, es ist ein Buch. Der Händler heißt Hortensius. Er muss sich irgendwo bei den Sumpfspinnern aufhalten. Wie gehabt, niederschlagen und mir alles bringen.
+	AI_Output(hero, self, "Info_Mod_Juan_Antonius_B_15_00"); //I want to know what I'm gonna get you first.
+	AI_Output(self, hero, "Info_Mod_Juan_Antonius_B_13_01"); //Okay, it's a book. The dealer is called Hortensius. He's got to be somewhere near the marsh mothers. As usual, knock down and bring me everything.
 	
 	Info_ClearChoices	(Info_Mod_Juan_Antonius);
 
-	Info_AddChoice	(Info_Mod_Juan_Antonius, "Vergiss es. Gib mir einfach mein Gold.", Info_Mod_Juan_Antonius_C);
-	Info_AddChoice	(Info_Mod_Juan_Antonius, "Na gut, ich breche auf.", Info_Mod_Juan_Antonius_F);
+	Info_AddChoice	(Info_Mod_Juan_Antonius, "Forget about it. Just give me my gold.", Info_Mod_Juan_Antonius_C);
+	Info_AddChoice	(Info_Mod_Juan_Antonius, "All right, I'm leaving.", Info_Mod_Juan_Antonius_F);
 };
 
 FUNC VOID Info_Mod_Juan_Antonius_A()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Antonius_A_15_00"); //Na gut, ich machs.
-	AI_Output(self, hero, "Info_Mod_Juan_Antonius_A_13_01"); //Ok, der Händler heißt Hortensius. Er muss sich irgendwo bei den Sumpfspinnern aufhalten. Wie gehabt, niederschlagen und mir alles bringen.
+	AI_Output(hero, self, "Info_Mod_Juan_Antonius_A_15_00"); //All right, I'll do it.
+	AI_Output(self, hero, "Info_Mod_Juan_Antonius_A_13_01"); //Okay, the dealer's name is Hortensius. He's got to be somewhere near the marsh mothers. As usual, knock down and bring me everything.
 
 	Mod_JuanQuest = 2;
 
-	B_LogEntry	(TOPIC_MOD_BDT_JUAN, "Verdammt! Antonius hatte nicht den Gegenstand bei sich, den Juan haben wollte. Jetzt darf ich zum Sumpflager rennen und Hortensius zu berauben.");
+	B_LogEntry	(TOPIC_MOD_BDT_JUAN, "Damn it! Antony didn't have the item Juan wanted with him. Now I can run to the swamp camp and rob Hortensius.");
 
 	Wld_InsertNpc	(Mod_7190_OUT_Hortensius_MT, "OC1");
 	
@@ -168,8 +168,8 @@ FUNC VOID Info_Mod_Juan_Antonius_A()
 
 FUNC VOID Info_Mod_Juan_Antonius_E()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Antonius_E_15_00"); //Du gibst mir die vereinbarte Summe oder ich hol sie mir!
-	AI_Output(self, hero, "Info_Mod_Juan_Antonius_E_13_01"); //Du willst mir drohen?
+	AI_Output(hero, self, "Info_Mod_Juan_Antonius_E_15_00"); //You give me the agreed sum, or I'll get it!
+	AI_Output(self, hero, "Info_Mod_Juan_Antonius_E_13_01"); //You're threatening me?
 	
 	Info_ClearChoices	(Info_Mod_Juan_Antonius);
 
@@ -182,7 +182,7 @@ FUNC VOID Info_Mod_Juan_Antonius_E()
 
 FUNC VOID Info_Mod_Juan_Antonius_D()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Antonius_D_15_00"); //Ok, dann eben nur 100 ...
+	AI_Output(hero, self, "Info_Mod_Juan_Antonius_D_15_00"); //Okay, just 100 then...
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -193,11 +193,11 @@ FUNC VOID Info_Mod_Juan_Antonius_D()
 
 FUNC VOID Info_Mod_Juan_Antonius_F()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Antonius_F_15_00"); //Na gut, ich breche auf.
+	AI_Output(hero, self, "Info_Mod_Juan_Antonius_F_15_00"); //All right, I'm leaving.
 	
 	Mod_JuanQuest = 2;
 
-	B_LogEntry	(TOPIC_MOD_BDT_JUAN, "Verdammt! Antonius hatte nicht den Gegenstand bei sich, den Juan haben wollte. Jetzt darf ich zum Sumpflager rennen und Hortensius zu berauben.");
+	B_LogEntry	(TOPIC_MOD_BDT_JUAN, "Damn it! Antony didn't have the item Juan wanted with him. Now I can run to the swamp camp and rob Hortensius.");
 
 	Wld_InsertNpc	(Mod_7190_OUT_Hortensius_MT, "OC1");
 	
@@ -212,7 +212,7 @@ INSTANCE Info_Mod_Juan_Hortensius (C_INFO)
 	information	= Info_Mod_Juan_Hortensius_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So, hier ist der Krempel.";
+	description	= "Here's the stuff.";
 };
 
 FUNC INT Info_Mod_Juan_Hortensius_Condition()
@@ -233,17 +233,17 @@ FUNC INT Info_Mod_Juan_Hortensius_Condition()
 
 FUNC VOID Info_Mod_Juan_Hortensius_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_15_00"); //So, hier ist der Krempel.
-	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_13_01"); //Verflucht, das kann nicht sein ... es sei denn ...
+	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_15_00"); //Here's the stuff.
+	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_13_01"); //Damn, it can't be... unless...
 	
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_13_02"); //(zu sich selbst) dann muss es Florentius haben.
+	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_13_02"); //(to himself) then Florentius must have it.
 	
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_13_03"); //Ich schlage noch mal 50 Gold drauf, wenn du zum Neuen Lager gehst und mir das Buch bringst, was Florentius bei sich haben MUSS.
-	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_13_04"); //Ach, und den Wacholder behalte ich mal.
+	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_13_03"); //I'll add another 50 gold to it if you go to the New Camp and bring me the book that Florentius MUST have.
+	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_13_04"); //Oh, and I'll keep the juniper.
 
 	B_GiveInvItems	(hero, self, ItFo_Booze, 12);
 
@@ -251,28 +251,28 @@ FUNC VOID Info_Mod_Juan_Hortensius_Info()
 
 	Info_ClearChoices	(Info_Mod_Juan_Hortensius);
 
-	Info_AddChoice	(Info_Mod_Juan_Hortensius, "Jetzt ist aber mal genug! Gib mir einfach mein Gold.", Info_Mod_Juan_Hortensius_B);
-	Info_AddChoice	(Info_Mod_Juan_Hortensius, "(leicht resignativ) Ok, dann eben auf ein Drittes.", Info_Mod_Juan_Hortensius_A);
+	Info_AddChoice	(Info_Mod_Juan_Hortensius, "Now, that's enough! Just give me my gold.", Info_Mod_Juan_Hortensius_B);
+	Info_AddChoice	(Info_Mod_Juan_Hortensius, "(slightly resignative) Okay, then to a third.", Info_Mod_Juan_Hortensius_A);
 };
 
 FUNC VOID Info_Mod_Juan_Hortensius_B()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_B_15_00"); //Jetzt ist aber mal genug! Gib mir einfach mein Gold.
-	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_B_13_01"); //(trotzig) Dann geb dir eben 150.
+	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_B_15_00"); //Now, that's enough! Just give me my gold.
+	AI_Output(self, hero, "Info_Mod_Juan_Hortensius_B_13_01"); //Give yourself 150.
 	
 	Info_ClearChoices	(Info_Mod_Juan_Hortensius);
 
-	Info_AddChoice	(Info_Mod_Juan_Hortensius, "Willst du mich verarschen?! Gib mir die vereinbarte Summe oder ich hol sie mir.", Info_Mod_Juan_Hortensius_D);
-	Info_AddChoice	(Info_Mod_Juan_Hortensius, "Na gut, das lässt sich wohl nicht ändern.", Info_Mod_Juan_Hortensius_c);
+	Info_AddChoice	(Info_Mod_Juan_Hortensius, "Are you kidding me?! Give me the agreed sum or I'll get it.", Info_Mod_Juan_Hortensius_D);
+	Info_AddChoice	(Info_Mod_Juan_Hortensius, "All right, that can't be helped.", Info_Mod_Juan_Hortensius_c);
 };
 
 FUNC VOID Info_Mod_Juan_Hortensius_A()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_A_15_00"); //(leicht resignativ) Ok, dann eben auf ein Drittes.
+	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_A_15_00"); //(slightly resignative) Okay, then to a third.
 	
 	Mod_JuanQuest = 3;
 
-	B_LogEntry	(TOPIC_MOD_BDT_JUAN, "Langsam recht es mir aber! Da Hortensius ebenfalls nicht im Besitzt des Artefaktes war, soll ich diesmal ins Neue Lager rennen, um Florentius auszunehmen.");
+	B_LogEntry	(TOPIC_MOD_BDT_JUAN, "I'm starting to like it! Since Hortensius was also not in possession of the artifact, this time I am to run to the New Camp to exclude Florentius.");
 
 	Wld_InsertNpc	(Mod_7191_OUT_Florentius_MT, "OC1");
 	
@@ -281,8 +281,8 @@ FUNC VOID Info_Mod_Juan_Hortensius_A()
 
 FUNC VOID Info_Mod_Juan_Hortensius_D()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_D_15_00"); //Willst du mich verarschen?! Gib mir die vereinbarte Summe, oder ich hol sie mir.
-	AI_Output(self, hero, "Info_Mod_Juan_Antonius_E_13_01"); //Du willst mir drohen?
+	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_D_15_00"); //Are you kidding me?! Give me the agreed sum, or I'll get it.
+	AI_Output(self, hero, "Info_Mod_Juan_Antonius_E_13_01"); //You're threatening me?
 
 	AI_StopProcessInfos	(self);
 
@@ -293,7 +293,7 @@ FUNC VOID Info_Mod_Juan_Hortensius_D()
 
 FUNC VOID Info_Mod_Juan_Hortensius_C()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_C_15_00"); //Na gut, das lässt sich wohl nicht ändern.
+	AI_Output(hero, self, "Info_Mod_Juan_Hortensius_C_15_00"); //All right, that can't be helped.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
@@ -310,7 +310,7 @@ INSTANCE Info_Mod_Juan_Florentius (C_INFO)
 	information	= Info_Mod_Juan_Florentius_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Buch.";
+	description	= "I have the book.";
 };
 
 FUNC INT Info_Mod_Juan_Florentius_Condition()
@@ -327,8 +327,8 @@ FUNC INT Info_Mod_Juan_Florentius_Condition()
 
 FUNC VOID Info_Mod_Juan_Florentius_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Florentius_15_00"); //Ich habe das Buch.
-	AI_Output(self, hero, "Info_Mod_Juan_Florentius_13_01"); //Ja?! Gib schon her.
+	AI_Output(hero, self, "Info_Mod_Juan_Florentius_15_00"); //I have the book.
+	AI_Output(self, hero, "Info_Mod_Juan_Florentius_13_01"); //Yes?! Give it to me.
 	
 	B_GivePlayerXP	(500);
 
@@ -338,32 +338,32 @@ FUNC VOID Info_Mod_Juan_Florentius_Info()
 
 	if (Mod_JuanQuest == 4)
 	{
-		Info_AddChoice	(Info_Mod_Juan_Florentius, "Der Preis ist gestiegen.", Info_Mod_Juan_Florentius_B);
+		Info_AddChoice	(Info_Mod_Juan_Florentius, "The price went up.", Info_Mod_Juan_Florentius_B);
 	};
-	Info_AddChoice	(Info_Mod_Juan_Florentius, "Hier hast du es.", Info_Mod_Juan_Florentius_A);
+	Info_AddChoice	(Info_Mod_Juan_Florentius, "Here you have it.", Info_Mod_Juan_Florentius_A);
 };
 
 FUNC VOID Info_Mod_Juan_Florentius_B()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Florentius_B_15_00"); //Der Preis ist gestiegen.
-	AI_Output(self, hero, "Info_Mod_Juan_Florentius_B_13_01"); //Was soll das heißen?!
-	AI_Output(hero, self, "Info_Mod_Juan_Florentius_B_15_02"); //Dass es jetzt mehr kostet. Die Händler würde es bestimmt interessieren zu erfahren, dass ich sie in deinem Auftrag überfallen habe.
-	AI_Output(self, hero, "Info_Mod_Juan_Florentius_B_13_03"); //Du dreckiger Bastard ... Wie viel willst du?
+	AI_Output(hero, self, "Info_Mod_Juan_Florentius_B_15_00"); //The price went up.
+	AI_Output(self, hero, "Info_Mod_Juan_Florentius_B_13_01"); //What do you mean?!
+	AI_Output(hero, self, "Info_Mod_Juan_Florentius_B_15_02"); //That it costs more now. The merchants would probably be interested to know that I robbed them on your behalf.
+	AI_Output(self, hero, "Info_Mod_Juan_Florentius_B_13_03"); //You dirty bastard.... How much do you want?
 	
 	Info_ClearChoices	(Info_Mod_Juan_Florentius);
 
-	Info_AddChoice	(Info_Mod_Juan_Florentius, "1000 Gold.", Info_Mod_Juan_Florentius_E);
-	Info_AddChoice	(Info_Mod_Juan_Florentius, "700 Gold.", Info_Mod_Juan_Florentius_D);
-	Info_AddChoice	(Info_Mod_Juan_Florentius, "500 Gold.", Info_Mod_Juan_Florentius_c);
+	Info_AddChoice	(Info_Mod_Juan_Florentius, "1,000 gold.", Info_Mod_Juan_Florentius_E);
+	Info_AddChoice	(Info_Mod_Juan_Florentius, "700 gold.", Info_Mod_Juan_Florentius_D);
+	Info_AddChoice	(Info_Mod_Juan_Florentius, "500 gold.", Info_Mod_Juan_Florentius_c);
 };
 
 FUNC VOID Info_Mod_Juan_Florentius_A()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Florentius_A_15_00"); //Hier hast du es.
+	AI_Output(hero, self, "Info_Mod_Juan_Florentius_A_15_00"); //Here you have it.
 
 	B_GiveInvItems	(hero, self, ItWr_JuanBook, 1);
 
-	AI_Output(self, hero, "Info_Mod_Juan_Florentius_A_13_01"); //Sehr gut. Hier hast du dein Gold.
+	AI_Output(self, hero, "Info_Mod_Juan_Florentius_A_13_01"); //Very good. Very good. Here's your gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 400);
 
@@ -380,8 +380,8 @@ FUNC VOID Info_Mod_Juan_Florentius_A()
 
 FUNC VOID Info_Mod_Juan_Florentius_E()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Florentius_E_15_00"); //1000 Gold.
-	AI_Output(self, hero, "Info_Mod_Juan_Florentius_E_13_01"); //Halt mal kurz still. Auf deiner Schulter sitzt ein großes, hässliches Vieh.
+	AI_Output(hero, self, "Info_Mod_Juan_Florentius_E_15_00"); //1,000 gold.
+	AI_Output(self, hero, "Info_Mod_Juan_Florentius_E_13_01"); //Hold still for a second. There's a big, ugly beast on your shoulder.
 	
 	Info_ClearChoices	(Info_Mod_Juan_Florentius);
 
@@ -396,11 +396,11 @@ FUNC VOID Info_Mod_Juan_Florentius_E()
 
 FUNC VOID Info_Mod_Juan_Florentius_F(var int Goldi)
 {
-	AI_Output(self, hero, "Info_Mod_Juan_Florentius_F_13_00"); //Na gut. Hier hast du dein Gold.
+	AI_Output(self, hero, "Info_Mod_Juan_Florentius_F_13_00"); //All right, all right. Here's your gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, Goldi);
 
-	AI_Output(self, hero, "Info_Mod_Juan_Florentius_F_13_01"); //Und jetzt her mit dem Buch.
+	AI_Output(self, hero, "Info_Mod_Juan_Florentius_F_13_01"); //Now, give me the book.
 
 	B_GiveInvItems	(hero, self, ItWr_JuanBook, 1);
 
@@ -417,14 +417,14 @@ FUNC VOID Info_Mod_Juan_Florentius_F(var int Goldi)
 
 FUNC VOID Info_Mod_Juan_Florentius_D()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Florentius_D_15_00"); //700 Gold.
+	AI_Output(hero, self, "Info_Mod_Juan_Florentius_D_15_00"); //700 gold.
 
 	Info_Mod_Juan_Florentius_F(700);
 };
 
 FUNC VOID Info_Mod_Juan_Florentius_C()
 {
-	AI_Output(hero, self, "Info_Mod_Juan_Florentius_C_15_00"); //500 Gold.
+	AI_Output(hero, self, "Info_Mod_Juan_Florentius_C_15_00"); //500 gold.
 
 	Info_Mod_Juan_Florentius_F(500);
 };

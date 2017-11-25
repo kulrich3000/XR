@@ -2,7 +2,7 @@ instance Mod_1016_KGD_Hymir_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Hymir";
+	name 		=	"hymir";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_OUT;
 	voice 		=	8;

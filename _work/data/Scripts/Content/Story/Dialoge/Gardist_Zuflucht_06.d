@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Gardist_Zuflucht_06_Hi (C_INFO)
 	information	= Info_Mod_Gardist_Zuflucht_06_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du sollst ins Sektenlager gehen.";
+	description	= "I want you to go to the cult camp.";
 };
 
 FUNC INT Info_Mod_Gardist_Zuflucht_06_Hi_Condition()
@@ -19,17 +19,17 @@ FUNC INT Info_Mod_Gardist_Zuflucht_06_Hi_Condition()
 
 FUNC VOID Info_Mod_Gardist_Zuflucht_06_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gardist_Zuflucht_06_Hi_15_00"); //Du sollst ins Sektenlager gehen.
-	AI_Output(self, hero, "Info_Mod_Gardist_Zuflucht_06_Hi_04_01"); //In Ordnung, ich mach mich sofort auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Gardist_Zuflucht_06_Hi_15_00"); //I want you to go to the cult camp.
+	AI_Output(self, hero, "Info_Mod_Gardist_Zuflucht_06_Hi_04_01"); //All right, I'll be on my way right away.
 
 	B_StartOtherRoutine	(self, "PSICAMP");
 
 	Mod_AL_ZufluchtCounter += 1;
 
 	if (Mod_AL_ZufluchtCounter == 7) {
-		B_LogEntry	(TOPIC_MOD_AL_EROBERUNG, "Ich hab' alle Gardisten informiert. Jetzt sollte ich zum Sumpflager aufbrechen.");
+		B_LogEntry	(TOPIC_MOD_AL_EROBERUNG, "I've informed all the guards. Now I should go to the swamp camp.");
 	} else {
-		B_LogEntry	(TOPIC_MOD_AL_EROBERUNG, "Ich habe eine Zuflucht informiert. Auf zur nächsten.");
+		B_LogEntry	(TOPIC_MOD_AL_EROBERUNG, "I've informed a sanctuary. Let's move on to the next one.");
 	};
 };
 

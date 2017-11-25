@@ -19,12 +19,12 @@ FUNC INT Info_Mod_Lester_MT_Drogenminister_Condition()
 
 FUNC VOID Info_Mod_Lester_MT_Drogenminister_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_MT_Drogenminister_13_00"); //Ah, du bringst das Paket. Vielen Dank!
+	AI_Output(self, hero, "Info_Mod_Lester_MT_Drogenminister_13_00"); //Ah, you bring the package. Thank you very much!
 
 	B_GiveInvItems	(hero, self, ItMi_PaketFuerLester, 1);
 
-	AI_Output(hero, self, "Info_Mod_Lester_MT_Drogenminister_15_01"); //Was hat es damit auf sich?
-	AI_Output(self, hero, "Info_Mod_Lester_MT_Drogenminister_13_02"); //Falls es funktioniert wirst du das noch früh genug erfahren. Entschuldige mich jetzt.
+	AI_Output(hero, self, "Info_Mod_Lester_MT_Drogenminister_15_01"); //What's that all about?
+	AI_Output(self, hero, "Info_Mod_Lester_MT_Drogenminister_13_02"); //If it works, you'll find out soon enough. Now, if you'll excuse me.
 
 	B_GivePlayerXP	(250);
 
@@ -49,7 +49,7 @@ FUNC INT Info_Mod_Lester_MT_EXIT_Condition()
 
 FUNC VOID Info_Mod_Lester_MT_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_MT_EXIT_13_01"); //Dem Ziel entgegen!
+	AI_Output(self, hero, "Info_Mod_Lester_MT_EXIT_13_01"); //Towards the goal!
 
 	AI_StopProcessInfos	(self);
 };

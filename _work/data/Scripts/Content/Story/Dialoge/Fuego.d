@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Fuego_Lehrer (C_INFO)
 	information	= Info_Mod_Fuego_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mich unterweisen?";
+	description	= "Can you teach me?";
 };
 
 FUNC INT Info_Mod_Fuego_Lehrer_Condition()
@@ -19,35 +19,35 @@ FUNC INT Info_Mod_Fuego_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Fuego_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_Lehrer_15_00"); //Kannst du mich unterweisen?
+	AI_Output(hero, self, "Info_Mod_Fuego_Lehrer_15_00"); //Can you teach me?
 
 	if ((Mod_Gottstatus == 9)
 	|| (Mod_Gottstatus == 10)
 	|| (Mod_Gottstatus == 11)
 	|| (Mod_Gottstatus == 12))
 	{
-		AI_Output(self, hero, "Info_Mod_Fuego_Lehrer_32_01"); //Oh ja. Ich kann dir zeigen, wie du deine magische Kraft erweitern kannst.
+		AI_Output(self, hero, "Info_Mod_Fuego_Lehrer_32_01"); //Oh, yeah. I can show you how to expand your magical power.
 
 		Mod_FuegoLehrer = 1;
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_KHORATA, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_KHORATA, "Fuego kann mir helfen mein MANA zu steigern.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_KHORATA, "Fuego can help me increase my MANA.");
 	}
 	else if ((Mod_Gottstatus == 1)
 	|| (Mod_Gottstatus == 2)
 	|| (Mod_Gottstatus == 3)
 	|| (Mod_Gottstatus == 4))
 	{
-		AI_Output(self, hero, "Info_Mod_Fuego_Lehrer_32_02"); //(nasal) Ich unterrichte nur ehrenwerte Schüler. Du bist auf dem falschen Weg.
+		AI_Output(self, hero, "Info_Mod_Fuego_Lehrer_32_02"); //I teach only honorable students. You're on the wrong track.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Fuego_Lehrer_32_03"); //Gegen eine Spende für meinen Orden werde ich dich lehren, deine magische Kraft zu steigern.
+		AI_Output(self, hero, "Info_Mod_Fuego_Lehrer_32_03"); //For a donation to my order, I will teach you to increase your magical power.
 
 		Mod_FuegoLehrer = 2;
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_KHORATA, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_KHORATA, "Fuego kann mir helfen mein MANA zu steigern.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_KHORATA, "Fuego can help me increase my MANA.");
 	};
 };
 
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Fuego_AdanosLernen (C_INFO)
 	information	= Info_Mod_Fuego_AdanosLernen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Unterrichte mich! (100 Gold bezahlen)";
+	description	= "Teach me! Pay (100 Gold)";
 };
 
 FUNC INT Info_Mod_Fuego_AdanosLernen_Condition()
@@ -75,7 +75,7 @@ FUNC INT Info_Mod_Fuego_AdanosLernen_Condition()
 
 FUNC VOID Info_Mod_Fuego_AdanosLernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_AdanosLernen_15_00"); //Unterrichte mich!
+	AI_Output(hero, self, "Info_Mod_Fuego_AdanosLernen_15_00"); //Teach me!
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Fuego_BrokenRune (C_INFO)
 	information	= Info_Mod_Fuego_BrokenRune_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Innos zum Gruße, Bewahrer des Feuers.";
+	description 	= "Innos, keeper of the fire.";
 };                       
 
 FUNC INT Info_Mod_Fuego_BrokenRune_Condition()
@@ -104,15 +104,15 @@ FUNC INT Info_Mod_Fuego_BrokenRune_Condition()
 
 FUNC VOID Info_Mod_Fuego_BrokenRune_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_BrokenRune_15_00"); //Innos zum Gruße, Bewahrer des Feuers.
-	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_01"); //Das Licht sei mit dir. Was führt dich zu mir?
-	AI_Output(hero, self, "Info_Mod_Fuego_BrokenRune_15_02"); //Ich habe hier eine zerbrochene Rune. Kann eure Magie sie wieder richten?
-	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_03"); //Zeig her. Hm ... sauberer Bruch. Würde sagen ein Teleportzauber.
-	AI_Output(hero, self, "Info_Mod_Fuego_BrokenRune_15_04"); //Und? Kannst du mir helfen?
-	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_05"); //Nein. Das ist nicht unser Zauber. Das sollte ein Wassermagier besser können.
-	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_06"); //Im Armenviertel lebt ein Wassermagier. Dem Alter nach sollte er alle Weihen haben.
-	AI_Output(hero, self, "Info_Mod_Fuego_BrokenRune_15_07"); //Ich hab von ihm gehört. Ich werde ihn fragen.
-	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_08"); //Tu das. Und Innos sei mit dir.
+	AI_Output(hero, self, "Info_Mod_Fuego_BrokenRune_15_00"); //Innos, keeper of the fire.
+	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_01"); //The light is with you. What brings you to me?
+	AI_Output(hero, self, "Info_Mod_Fuego_BrokenRune_15_02"); //I have a broken rune here. Can your magic fix them?
+	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_03"); //Let me see that. Hm... clean break. Would say a teleport spell.
+	AI_Output(hero, self, "Info_Mod_Fuego_BrokenRune_15_04"); //And? Can you help me?
+	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_05"); //No. It's not our magic. A water magician should be able to do better.
+	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_06"); //A water magician lives in the slum. According to his age, he should have all consecrations.
+	AI_Output(hero, self, "Info_Mod_Fuego_BrokenRune_15_07"); //I've heard of him. I'll ask him.
+	AI_Output(self, hero, "Info_Mod_Fuego_BrokenRune_32_08"); //Do that. And Innos be with you.
 };
 
 INSTANCE Info_Mod_Fuego_Unruhen (C_INFO)
@@ -135,11 +135,11 @@ FUNC INT Info_Mod_Fuego_Unruhen_Condition()
 
 FUNC VOID Info_Mod_Fuego_Unruhen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fuego_Unruhen_32_00"); //(sarkastisch) Ja, vielen Dank auch, dass du uns Lukas beschert hast.
-	AI_Output(hero, self, "Info_Mod_Fuego_Unruhen_15_01"); //Gibt's ein Problem damit?
-	AI_Output(self, hero, "Info_Mod_Fuego_Unruhen_32_02"); //Allerdings. Er hat Elvira und mich vor die Wahl gestellt, Khorata zu verlassen oder den Glauben zu wechseln.
-	AI_Output(self, hero, "Info_Mod_Fuego_Unruhen_32_03"); //Was für eine Entscheidung! Wir werden noch heute unsere Sachen packen und abreisen.
-	AI_Output(self, hero, "Info_Mod_Fuego_Unruhen_32_04"); //Lass dich bloß nicht mehr bei uns blicken!
+	AI_Output(self, hero, "Info_Mod_Fuego_Unruhen_32_00"); //Yes, thank you very much for giving us Luke.
+	AI_Output(hero, self, "Info_Mod_Fuego_Unruhen_15_01"); //Is there a problem with that?
+	AI_Output(self, hero, "Info_Mod_Fuego_Unruhen_32_02"); //Yes, indeed. He gave Elvira and I the choice to leave Khorata or change faith.
+	AI_Output(self, hero, "Info_Mod_Fuego_Unruhen_32_03"); //What a decision! We'll pack up and leave today.
+	AI_Output(self, hero, "Info_Mod_Fuego_Unruhen_32_04"); //Don't you ever come back to us again!
 
 	Mod_REL_FuegoDay = Wld_GetDay();
 };
@@ -152,7 +152,7 @@ INSTANCE Info_Mod_Fuego_Blutkelch (C_INFO)
 	information	= Info_Mod_Fuego_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche einen Kelch. Einen Blutkelch.";
+	description	= "I'm looking for a cup. A cup of blood.";
 };                       
 
 FUNC INT Info_Mod_Fuego_Blutkelch_Condition()
@@ -165,10 +165,10 @@ FUNC INT Info_Mod_Fuego_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Fuego_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_Blutkelch_15_00"); //Ich suche einen Kelch. Einen Blutkelch.
-	AI_Output(self, hero, "Info_Mod_Fuego_Blutkelch_32_01"); //Nie gesehen, nie davon gehört.
-	AI_Output(self, hero, "Info_Mod_Fuego_Blutkelch_32_02"); //Aber ich könnte Innos um eine Eingebung bitten. Für eine kleine Spende ...
-	AI_Output(hero, self, "Info_Mod_Fuego_Blutkelch_15_03"); //Schon gut. Bis dann.
+	AI_Output(hero, self, "Info_Mod_Fuego_Blutkelch_15_00"); //I'm looking for a cup. A cup of blood.
+	AI_Output(self, hero, "Info_Mod_Fuego_Blutkelch_32_01"); //Never seen, never heard of it.
+	AI_Output(self, hero, "Info_Mod_Fuego_Blutkelch_32_02"); //But I could ask Innos for an inspiration. For a small donation....
+	AI_Output(hero, self, "Info_Mod_Fuego_Blutkelch_15_03"); //All right, all right. See you around.
 };
 
 INSTANCE Info_Mod_Fuego_ElviraKey (C_INFO)
@@ -179,7 +179,7 @@ INSTANCE Info_Mod_Fuego_ElviraKey (C_INFO)
 	information	= Info_Mod_Fuego_ElviraKey_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir etwas über Elvira erzählen?";
+	description	= "Can you tell me something about Elvira?";
 };                       
 
 FUNC INT Info_Mod_Fuego_ElviraKey_Condition()
@@ -193,25 +193,25 @@ FUNC INT Info_Mod_Fuego_ElviraKey_Condition()
 
 FUNC VOID Info_Mod_Fuego_ElviraKey_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_ElviraKey_15_00"); //Kannst du mir etwas über Elvira erzählen?
+	AI_Output(hero, self, "Info_Mod_Fuego_ElviraKey_15_00"); //Can you tell me something about Elvira?
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Fuego_ElviraKey2))
 	{
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_01"); //Ahh, es erscheint einem Gläubigen Innos natürlich ungewöhnlich, eine Frau in dieser Rolle zu sehen.
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_02"); //Ich kann dir aber versichern, dass sie ihren Pflichten als eine Auserwählte Innos mit äußerster Gewissenhaftigkeit nachgeht.
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_03"); //Einzig ... nun ...
-		AI_Output(hero, self, "Info_Mod_Fuego_ElviraKey_15_04"); //Ja?
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_05"); //Sie trinkt den Klosterwein stets alkoholfrei. Hat extra eine Flasche davon in ihrer Truhe.
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_06"); //Das ist natürlich nicht wirklich verwerflich, eher eine Angewohnheit die schmunzeln lässt.
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_07"); //Aber ich habe schon zu viel geredet. Innos begleite dich auf deinen Wegen.
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_01"); //Of course, it seems unusual to a believer Innos to see a woman in this role.
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_02"); //But I can assure you that she is carrying out her duties as an Elect Inno with the utmost conscientiousness.
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_03"); //Only... well...
+		AI_Output(hero, self, "Info_Mod_Fuego_ElviraKey_15_04"); //Yes?
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_05"); //She always drinks the monastery wine alcohol-free. Extra bottle of it in her trunk.
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_06"); //Of course, this is not really reprehensible, but rather a habit that makes people smile.
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_07"); //But I've already talked too much. Innos accompany you on your way.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_08"); //Sie ist eine wahre Auserwählte Innos, rechtschaffend und stets ihrer Pflicht ergeben.
-		AI_Output(hero, self, "Info_Mod_Fuego_ElviraKey_15_09"); //Kannst du mir noch etwas mehr über sie erzählen?
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_10"); //(argwöhnisch) Wie, was meinst du? Worauf willst du hinaus?
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_11"); //Was es auch immer sein mag… ich würde dir raten besser nicht respektlos zu werden.
-		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_12"); //Und jetzt geh! Ich habe zu tun.
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_08"); //She is a true Chosen Inno, righteous and always faithful to her duty.
+		AI_Output(hero, self, "Info_Mod_Fuego_ElviraKey_15_09"); //Can you tell me anything more about her?
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_10"); //What do you mean? What's your point?
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_11"); //Whatever it is, I'd advise you not to get disrespectful.
+		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_12"); //Now go away! I've got work to do.
 	};
 };
 
@@ -223,7 +223,7 @@ INSTANCE Info_Mod_Fuego_ElviraKey2 (C_INFO)
 	information	= Info_Mod_Fuego_ElviraKey2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte Innos spenden. (100 Gold)";
+	description	= "I want to donate Innos. (100 Gold)";
 };                       
 
 FUNC INT Info_Mod_Fuego_ElviraKey2_Condition()
@@ -239,8 +239,8 @@ FUNC INT Info_Mod_Fuego_ElviraKey2_Condition()
 
 FUNC VOID Info_Mod_Fuego_ElviraKey2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_ElviraKey2_15_00"); //Ich möchte Innos spenden.
-	AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey2_32_01"); //Ich nehme deine großzügige Gabe für Innos und seine Kirche dankbar entgegen.
+	AI_Output(hero, self, "Info_Mod_Fuego_ElviraKey2_15_00"); //I want to donate Innos.
+	AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey2_32_01"); //I gratefully accept your generous gift for Innos and his church.
 
 	B_Göttergefallen(1, 3);
 };
@@ -253,7 +253,7 @@ INSTANCE Info_Mod_Fuego_DickeLuft (C_INFO)
 	information	= Info_Mod_Fuego_DickeLuft_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Verwandlungsspruchrollen?";
+	description	= "Do you have conversion rolls?";
 };                       
 
 FUNC INT Info_Mod_Fuego_DickeLuft_Condition()
@@ -267,14 +267,14 @@ FUNC INT Info_Mod_Fuego_DickeLuft_Condition()
 
 FUNC VOID Info_Mod_Fuego_DickeLuft_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_DickeLuft_15_00"); //Hast du Verwandlungsspruchrollen?
-	AI_Output(self, hero, "Info_Mod_Fuego_DickeLuft_32_01"); //Ein paar habe ich noch übrig. Was darf's sein?
-	AI_Output(hero, self, "Info_Mod_Fuego_DickeLuft_15_02"); //In ein Schaf.
-	AI_Output(self, hero, "Info_Mod_Fuego_DickeLuft_32_03"); //(lacht auf) In ein Schaf? Wieso sollte man sich in so was verwandeln?
-	AI_Output(self, hero, "Info_Mod_Fuego_DickeLuft_32_04"); //Das ist ja fast so beknackt wie eine Verwandlung in eine Fleischwanze!
-	AI_Output(hero, self, "Info_Mod_Fuego_DickeLuft_15_05"); //Mag ja sein.
-	AI_Output(self, hero, "Info_Mod_Fuego_DickeLuft_32_06"); //Da kann ich dir wirklich nicht behilflich sein. Ich habe nur nützliche Zauber.
-	AI_Output(hero, self, "Info_Mod_Fuego_DickeLuft_15_07"); //Alles klar.
+	AI_Output(hero, self, "Info_Mod_Fuego_DickeLuft_15_00"); //Do you have conversion rolls?
+	AI_Output(self, hero, "Info_Mod_Fuego_DickeLuft_32_01"); //I still have a few left. What can I get you?
+	AI_Output(hero, self, "Info_Mod_Fuego_DickeLuft_15_02"); //Into a sheep.
+	AI_Output(self, hero, "Info_Mod_Fuego_DickeLuft_32_03"); //Into a sheep? Why would you turn into something like that?
+	AI_Output(self, hero, "Info_Mod_Fuego_DickeLuft_32_04"); //It's almost as stupid as a metamorphosis into a meat bug!
+	AI_Output(hero, self, "Info_Mod_Fuego_DickeLuft_15_05"); //I suppose so.
+	AI_Output(self, hero, "Info_Mod_Fuego_DickeLuft_32_06"); //I really can't help you there. I only have useful spells.
+	AI_Output(hero, self, "Info_Mod_Fuego_DickeLuft_15_07"); //All clear.
 };
 
 INSTANCE Info_Mod_Fuego_Freudenspender (C_INFO)
@@ -285,7 +285,7 @@ INSTANCE Info_Mod_Fuego_Freudenspender (C_INFO)
 	information	= Info_Mod_Fuego_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Brauchst du Freudenspender?";
+	description 	= "Do you need joy dispensers?";
 };                       
 
 FUNC INT Info_Mod_Fuego_Freudenspender_Condition()
@@ -300,9 +300,9 @@ FUNC INT Info_Mod_Fuego_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Fuego_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_Freudenspender_15_00"); //Brauchst du Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Fuego_Freudenspender_32_01"); //Hmm, eigentlich ist es mir untersagt, aber wenn du's für dich behältst ...
-	AI_Output(hero, self, "Info_Mod_Fuego_Freudenspender_15_02"); //Selbstverständlich.
+	AI_Output(hero, self, "Info_Mod_Fuego_Freudenspender_15_00"); //Do you need joy dispensers?
+	AI_Output(self, hero, "Info_Mod_Fuego_Freudenspender_32_01"); //Well, I'm actually forbidden to, but if you keep it to yourself...
+	AI_Output(hero, self, "Info_Mod_Fuego_Freudenspender_15_02"); //Of course, of course.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 
@@ -331,29 +331,29 @@ FUNC INT Info_Mod_Fuego_FireMage_Condition()
 
 FUNC VOID Info_Mod_Fuego_FireMage_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fuego_FireMage_32_00"); //Schön, mal auf einen Gleichgesinnten zu treffen. Kommst du aus Khorinis?
-	AI_Output(hero, self, "Info_Mod_Fuego_FireMage_15_01"); //Nicht direkt. Aber tun wir mal so, als ob. Ihr habt wohl einen schweren Stand in Khorata?
-	AI_Output(self, hero, "Info_Mod_Fuego_FireMage_32_02"); //Das kann man so sagen. Innos verzeihe mir, aber dies ist ein gottloses Fleckchen Erde. Die Menschen glauben hier an ihren Besitz und Reichtum, sonst nichts.
-	AI_Output(hero, self, "Info_Mod_Fuego_FireMage_15_03"); //Klingt nach einem Haufen Arbeit ...
-	AI_Output(self, hero, "Info_Mod_Fuego_FireMage_32_04"); //Wo immer du die Möglichkeit siehst, hier den rechten Glauben oder zumindest etwas Anstand zu lehren, bitte ich dich, tätig zu werden. Du würdest unsere schwere Prüfung von Innos etwas leichter machen.
+	AI_Output(self, hero, "Info_Mod_Fuego_FireMage_32_00"); //It's nice to meet like-minded people. Are you from Khorinis?
+	AI_Output(hero, self, "Info_Mod_Fuego_FireMage_15_01"); //Not exactly. But let's pretend. You guys have a tough time in Khorata?
+	AI_Output(self, hero, "Info_Mod_Fuego_FireMage_32_02"); //You could say that. Innos forgive me, but this is a godless place. The people here believe in their possessions and wealth, nothing else.
+	AI_Output(hero, self, "Info_Mod_Fuego_FireMage_15_03"); //Sounds like a lot of work....
+	AI_Output(self, hero, "Info_Mod_Fuego_FireMage_32_04"); //Wherever you see the possibility of teaching the right faith or at least some decency, I ask you to take action. You'd make our hard test of Innos a little easier.
 	
 	Info_ClearChoices(Info_Mod_Fuego_FireMage);
 	
-	Info_AddChoice(Info_Mod_Fuego_FireMage, "Mal schauen. Eigentlich gefällt es mir gut, wie es ist.", Info_Mod_Fuego_FireMage_B);
-	Info_AddChoice(Info_Mod_Fuego_FireMage, "Ich gebe mir Mühe. Versprochen.", Info_Mod_Fuego_FireMage_A);
+	Info_AddChoice(Info_Mod_Fuego_FireMage, "Let's have a look. Actually, I like the way it is.", Info_Mod_Fuego_FireMage_B);
+	Info_AddChoice(Info_Mod_Fuego_FireMage, "I'm trying hard. I promise.", Info_Mod_Fuego_FireMage_A);
 };
 
 FUNC VOID Info_Mod_Fuego_FireMage_B()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_FireMage_B_15_00"); //Mal schauen. Eigentlich gefällt es mir gut, wie es ist.
+	AI_Output(hero, self, "Info_Mod_Fuego_FireMage_B_15_00"); //Let's have a look. Actually, I like the way it is.
 	
 	Info_ClearChoices(Info_Mod_Fuego_FireMage);
 };
 
 FUNC VOID Info_Mod_Fuego_FireMage_A()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_FireMage_A_15_00"); //Ich gebe mir Mühe. Versprochen.
-	AI_Output(self, hero, "Info_Mod_Fuego_FireMage_A_32_01"); //Dann nimm das mit auf deine Reisen, in Innos' Namen!
+	AI_Output(hero, self, "Info_Mod_Fuego_FireMage_A_15_00"); //I'm trying hard. I promise.
+	AI_Output(self, hero, "Info_Mod_Fuego_FireMage_A_32_01"); //Then take this with you on your travels, in Innos' name!
 	
 	B_GiveInvItems(self, hero, ItPo_Mana_02, 1);
 	
@@ -368,7 +368,7 @@ INSTANCE Info_Mod_Fuego_Lernen (C_INFO)
 	information	= Info_Mod_Fuego_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich möchte meine magische Kraft erweitern.";
+	description	= "I want to expand my magical power.";
 };
 
 FUNC INT Info_Mod_Fuego_Lernen_Condition()
@@ -384,7 +384,7 @@ FUNC INT Info_Mod_Fuego_Lernen_Condition()
 
 FUNC VOID Info_Mod_Fuego_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fuego_Lernen_15_00"); //Ich möchte meine magische Kraft erweitern.
+	AI_Output(hero, self, "Info_Mod_Fuego_Lernen_15_00"); //I want to expand my magical power.
 
 	Info_ClearChoices	(Info_Mod_Fuego_Lernen);
 
@@ -397,7 +397,7 @@ FUNC VOID Info_Mod_Fuego_Lernen_BACK()
 {
 	if (Mod_RealMana	>=	200)
 	{
-		AI_Output(self, hero, "Info_Mod_Fuego_Lernen_BACK_05_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Fuego_Lernen_BACK_05_01"); //Your magic skills are so good now, I can't teach you anything.
 	};
 	Info_ClearChoices	(Info_Mod_Fuego_Lernen);
 };

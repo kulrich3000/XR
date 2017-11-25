@@ -15,26 +15,26 @@ FUNC INT Info_Mod_Lukor_Hi_Condition()
 
 FUNC VOID Info_Mod_Lukor_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_00"); //Da ist ja der ungläubige Narr, der meinen Meister verbannt hat.
-	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_01"); //Was, du lebst auch noch?
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_02"); //(irre) Verbannt magst du ihn haben. Aber vorher wurde mir noch ein Teil seiner Macht übertragen.
-	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_03"); //Was, wovon sprichst du?
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_04"); //(durchgeknallt) Lauter ungläubige Narren, alle folgen sie fremden Götzen, Göttern oder dem schlichten Mammon. Sie alle werden büßen, mit ihrem Blute.
-	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_05"); //(leise zu sich selbst) Kommt mir irgendwie bekannt vor.
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_06"); //(wie besessen) Ich währenddessen habe meditiert, Tage und Wochen, unaufhörlich, und gelernt, Mächte freizusetzen und zu nutzen, die weit über die eines gewöhnlichen Magiers oder gar Kämpfers hinausgehen.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_00"); //There's the infidel fool who banished my master.
+	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_01"); //What, are you still alive?
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_02"); //You may have banished him. But before that, I was given some of his power.
+	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_03"); //What, what are you talking about?
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_04"); //All of them follow foreign idols, gods or the simple mammon. They will all pay with their blood.
+	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_05"); //Seems kind of familiar.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_06"); //(as possessed) Meanwhile, I have meditated days and weeks, incessantly, and learned to release and use powers that go far beyond those of an ordinary magician or even fighter.
 
 	Info_ClearChoices	(Info_Mod_Lukor_Hi);
 
-	Info_AddChoice	(Info_Mod_Lukor_Hi, "Na und, der Schläfer war ja sowieso nur ein mickriger Diener eben eines Magiers.", Info_Mod_Lukor_Hi_C);
-	Info_AddChoice	(Info_Mod_Lukor_Hi, "Hmm, ich glaube, meine Waffe zwischen deinen Schulterblättern (...)", Info_Mod_Lukor_Hi_B);
-	Info_AddChoice	(Info_Mod_Lukor_Hi, "Ja, ja, ich lass dich dann mal weiter meditieren.", Info_Mod_Lukor_Hi_A);
+	Info_AddChoice	(Info_Mod_Lukor_Hi, "So what, the sleeper was just a puny servant of a magician anyway.", Info_Mod_Lukor_Hi_C);
+	Info_AddChoice	(Info_Mod_Lukor_Hi, "Hmm, I think my gun was placed between your shoulder blades (... )", Info_Mod_Lukor_Hi_B);
+	Info_AddChoice	(Info_Mod_Lukor_Hi, "Yeah, yeah, I'll let you meditate a little bit more.", Info_Mod_Lukor_Hi_A);
 };
 
 FUNC VOID Info_Mod_Lukor_Hi_D()
 {
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_00"); //(ohne die Worte zu beachten) Und nun traf ich endlich auf Verbündete, Diener, die ihrem Meister und Schöpfer auch weiterhin treu ergeben sind.
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_01"); //(verwirrt) Ja, mein Meister ... (überrascht feststellend) Und hier der Ungläubige, der ihn verbannte ...
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_02"); //(im Wahn) Mit deinem Blute werde ich den Altar nun tränken. Stirb!
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_00"); //And now I finally met allies, servants who are loyal to their Master and Creator.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_01"); //Yes, my master.... And here is the unbeliever who banished him....
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_02"); //With your blood I will water the altar now. Die!
 	
 	Info_ClearChoices	(Info_Mod_Lukor_Hi);
 
@@ -45,21 +45,21 @@ FUNC VOID Info_Mod_Lukor_Hi_D()
 
 FUNC VOID Info_Mod_Lukor_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Lukor_Hi_C_15_00"); //Na und, der Schläfer war ja sowieso nur ein mickriger Diener eben eines Magiers.
+	AI_Output(hero, self, "Info_Mod_Lukor_Hi_C_15_00"); //So what, the sleeper was just a puny servant of a magician anyway.
 	
 	Info_Mod_Lukor_Hi_D();
 };
 
 FUNC VOID Info_Mod_Lukor_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lukor_Hi_B_15_00"); //Hmm, ich glaube, meine Waffe zwischen deinen Schulterblättern könnte dich wieder schnell auf den Boden zurückholen.
+	AI_Output(hero, self, "Info_Mod_Lukor_Hi_B_15_00"); //Hmm, I think my gun between your shoulder blades might bring you back to the ground quickly.
 
 	Info_Mod_Lukor_Hi_D();
 };
 
 FUNC VOID Info_Mod_Lukor_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lukor_Hi_A_15_00"); //Ja, ja, ich lass dich dann mal weiter meditieren. Manch einer hat Jahrzehnte gebraucht, bis er die Erleuchtung fand ...
+	AI_Output(hero, self, "Info_Mod_Lukor_Hi_A_15_00"); //Yeah, yeah, I'll let you meditate a little bit more. It took many a man decades to find enlightenment...
 
 	Info_Mod_Lukor_Hi_D();
 };

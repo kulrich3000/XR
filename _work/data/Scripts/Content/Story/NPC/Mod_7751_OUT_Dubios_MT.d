@@ -1,7 +1,7 @@
 instance Mod_7751_OUT_Dubios_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dubiose Gestalt"; 
+	name 		= "Dubious figure"; 
 	guild 		= GIL_OUT;
 	id 			= 7751;
 	voice 		= 6;

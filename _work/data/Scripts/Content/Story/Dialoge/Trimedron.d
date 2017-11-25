@@ -51,58 +51,58 @@ FUNC INT Info_Mod_Trimedron_Formel_Condition()
 FUNC VOID Info_Mod_Trimedron_Formel_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_00"); //Pod audmeau athuk.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_01"); //Ich vernahm deine Worte und schenke dir mein Gehör.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_02"); //Obgleich es mich in tiefes Erstaunen versetzt, nach so langer Zeit hier wieder einen Menschen anzutreffen.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_03"); //Sprich also, woher stammst du und was ist dein Begehr?
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_04"); //Ich stamme vom Festland und bin über Teleportmagie hierher gekommen ... auf gleiche Weise, wie die Vorväter der Kultur dieser Insel.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_05"); //Diese "Kultur" ist seit langem erloschen, die Insel von Menschen unbewohnt.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_06"); //Den Eindruck hatte ich auch gewonnen. Was ist mit den Bewohnern geschehen?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_07"); //Vor vielen Jahrhunderten begann das Land und Meer zu wüten.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_08"); //Es war die Zeit, als Innos und Beliar Krieg auf dem Lande Adanos führten.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_09"); //Feuer, Giftschwaden und Beben verheerten die Insel und bedrohten alle Bewohner.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_10"); //Da unsere Teleportmechansimen durch die Beben beschädigt worden waren, erschufen eilends die Priester und Gelehrten Portale, welche sie allein mit Hilfe ihrer geistigen Kräfte aufrechterhielten.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_11"); //Man begann die Evakuierung, doch ehe alle Bewohner entkommen konnten, riss eine gewaltige Explosion das Erdreich auf.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_12"); //Heiße, giftige Dämpfe entströmten schlagartig und bedeckten alles unterhalb dieses Platzes.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_13"); //Jedem brachten sie den sofortigen Tot, der sich noch auf der Insel befand – nicht zuletzt auch den Priestern und Gelehrten.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_14"); //... und somit dem Kopf der hiesigen Kultur. Erst Xeres, dann Naturkatastrophen. Das ist also der Grund für ihr erlöschen.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_15"); //Xeres?! Du sprichst den Namen dieses abscheulichen Frevlers aus?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_16"); //Dann berichtest du vom endgültigen erlöschen der Kultur und bist doch dazu in der Lage ihre Texte zu lesen, ihre Sprache zu verstehen.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_17"); //Wer bist du, was hat es mit deinem Erscheinen hier auf sich? Erkläre dich endlich!
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_18"); //Ich stamme von demselben Eiland, wo einst eure Kultur heimisch war, jedoch von einem anderen Teil der Insel.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_19"); //Mit einigen Magiern Adanos entdeckte und erkundete ich vor kurzem die Ruinen dessen, was einst eure Heimat war.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_20"); //Wir forschten eifrig, erfuhren vieles über die alte Kultur und lernten so manches hinzu.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_21"); //Im Verlaufe unserer Nachforschungen reaktivierten wir jedoch einige Portale ... welche - wie soll ich sagen - Xeres die Rückkehr in die diesseitige Welt ermöglichten.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_22"); //Bei Adanos, das ist nicht möglich. Xeres wurde doch vernichtet.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_23"); //(überrascht) Du weißt davon?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_24"); //Selbstverständlich! Wir blieben über Teleportmechanismen mit den anderen Erbauern in Kontakt, welche sich teils woanders niedergelassen hatten, teils auch in Jharkendar zurückgeblieben waren.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_25"); //Das tut jetzt aber nichts zu Sache. Wie kommst du zu der Behauptung, er sei zurückgekehrt? Willst du mich etwas täuschen?!
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_26"); //Nein, ich versichere, dass ich die Wahrheit sage.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_27"); //Mit Hilfe seiner Machtträger und der Orks ist er im Begriff ganz Khorinis zu unterwerfen.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_28"); //Nur wenn wir Uriziel wiederherstellen, können wir ihn aufhalten.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_29"); //Dies alles ist dir bekannt? Sogar der Name des Schwertes, mit dem Xeres einst vernichtet wurde?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_30"); //Für wahr, es lässt mich grübeln, ob sich nicht doch was Wahres in deinen Worten verbergen mag.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_31"); //Auch verspürte ich vor kurzem in den Sphären alles Magischem starke Erschütterungen.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_32"); //Und doch ... wie sollte ich mir sicher sein, dass du jener bist, welcher du vorgibst zu sein?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_33"); //Wer sagt mir, dass du die Macht des Schwertes, nicht dazu nutzen willst andere Pläne zu verfolgen?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_34"); //Nein, ich kann dir unmöglich einfach Zugang zu der Ritualstätte gewähren.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_35"); //Dies wird ja wohl dein Anliegen sein, welches dich herführt ...
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_36"); //Ja, es ist der einzige Weg! Was kann ich tun, um dich zu überzeugen?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_37"); //Nun, lass mich nachdenken ...
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_38"); //Zu allererst sollst du mir verraten, auf welche Weise das Schwert zerstört wurde und wie du es gedenkst wiederherzustellen.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_39"); //Ein orkischer Schamane des Xeres zerstörte es bei einem Ritual.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_40"); //Mit Hilfe der drei Götterwaffen möchten die Priester der drei Götter das Schwert hier wiederherstellen.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_41"); //Orkisch ... Ork ... (nachdenklich) Es klingt nach einer Abwandlung des Wortes "Urak".
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_42"); //Und du sprichst von den Waffen der neuen drei Gottheiten. Für wahr, alles, was du mir erzählst scheint schlüssig. Und doch ...
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_43"); //(zu sich selbst) Na toll, er zweifelt noch.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_44"); //Warte ... wirst du Xeres wirklich vernichten wollen, so musst du dich auch seiner Machtträger entledigen, wie einst der Mann, der ihn bannte.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_45"); //Du solltest diese auf Khorinis oder umliegenden Inseln finden und sie mit den Götterwaffen stellen können.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_46"); //Die Magier sollten dir zweifelsfrei nähere Angaben über ihre Aufenthaltsorte machen können.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_47"); //Sobald du dies vollbracht hast und mir ihre Seelensteine als Zeugnis deines Erfolges bringst, werde ich den Zugang zu der heiligen Stätte offen legen.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_48"); //Und du wirst ihre Herzen vermutlich ohnehin für das Ritual benötigen.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_49"); //In Ordnung, wenn es notwendig ist, werde ich mich auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_50"); //Gut. Die Dreifaltigkeit des Radanos soll dich behüten.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_01"); //I listened to your words and gave you my hearing.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_02"); //Even though it amazes me to find a human being here again after such a long time.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_03"); //So say, where do you come from and what is your desire?
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_04"); //I come from the mainland and came here by teleport magic.... as the forefathers of the culture of this island.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_05"); //Diese "civilization" ist seit langem erloschen, die Insel von Menschen unbewohnt.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_06"); //I had the same impression. What happened to the residents?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_07"); //Many centuries ago, the land and sea began to rage.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_08"); //It was the time when Innos and Beliar were at war in the land of Adano.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_09"); //Fire, toxic fumes and earthquakes devastated the island and threatened all its inhabitants.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_10"); //Since our teleport mechansimens had been damaged by the earthquakes, the priests and scholars hurriedly created portals which they maintained solely with the help of their spiritual powers.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_11"); //Evacuation began, but before all the inhabitants were able to escape, a massive explosion opened up the ground.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_12"); //Hot, poisonous vapours escaped abruptly and covered everything below this place.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_13"); //They brought to everyone the immediate death that was still on the island - not least to the priests and scholars.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_14"); //... and thus the head of the local culture. First Xeres, then natural disasters. So that's why they're going out.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_15"); //Xeres?! You're pronouncing the name of this abominable wrong-doer?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_16"); //Then you report on the final extinction of culture and yet you are able to read their texts, understand their language.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_17"); //Who are you, what's the deal with your appearance here? Explain yourself!
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_18"); //I come from the same island where your culture was once at home, but from another part of the island.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_19"); //With some of Adano's magicians, I recently discovered and explored the ruins of what was once your home.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_20"); //We did a lot of research, learned a lot about the old culture and learned a lot.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_21"); //In the course of our investigations, however, we have reactivated some portals.... which - how should I put it - enabled Xeres to return to this world.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_22"); //With Adanos, that's not possible. Xeres was destroyed.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_23"); //You know about this?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_24"); //Of course, of course! We stayed in contact with the other builders via teleport mechanisms, some of whom had settled somewhere else and some of whom had stayed behind in Jharkendar.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_25"); //That doesn't matter now. How do you know he'd come back? Are you kidding me?!
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_26"); //No, I assure you I'm telling the truth.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_27"); //With the help of his powerbearers and orcs, he is about to subjugate all of Khorinis.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_28"); //Only if we restore Uriziel, we can stop him.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_29"); //You know all this? Even the name of the sword with which Xeres was destroyed?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_30"); //For true, it makes me wonder whether there may be something true in your words.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_31"); //I also recently felt all the strong magical shocks in the spheres.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_32"); //And yet... how can I be sure that you are who you pretend to be?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_33"); //Who says you don't want to use the power of the sword to pursue other plans?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_34"); //No, I can't possibly just give you access to the ritual site.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_35"); //This will be your concern, which leads you here...
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_36"); //Yes, it's the only way! What can I do to convince you?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_37"); //Well, let me think about it....
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_38"); //First of all, tell me how the sword was destroyed and how you intend to restore it.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_39"); //An orcish shaman of the Xeres destroyed it in a ritual.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_40"); //The priests of the three gods want to restore the sword with the help of the three weapons of the gods.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_41"); //Orkisch ... Ork ... (nachdenklich) Es klingt nach einer Abwandlung des Wortes "primordial ura".
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_42"); //And you're talking about the weapons of the new three deities. For true, everything you tell me seems conclusive. And yet...
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_43"); //Great, he still has doubts.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_44"); //Wait... if you really want to destroy Xeres, you must also get rid of him as the man who banished him.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_45"); //You should be able to find them on Khorinis or surrounding islands and place them with the gods' weapons.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_46"); //The magicians should be able to give you clear information about their whereabouts.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_47"); //Once you have done this and brought me their soul stones as a testimony of your success, I will reveal the entrance to the holy place.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_48"); //And you'll probably need their hearts anyway for the ritual.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Formel_15_49"); //All right, if necessary, I'll be on my way.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Formel_07_50"); //Good. The Trinity of the Radano shall guard you.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Bevor Trimedron die Zeremoniestätte freigibt, verlangt er, dass ich die Machtträger des Xeres vernichte und ihm die Seelensteine der Bastarde bringe. Die Magier können mir vermutlich nähere Auskunft über die gegenwärtigen Aufenthaltsorte der Kreaturen geben.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Before Trimedron releases the ceremonial site, he asks me to destroy the Xeriah's powerbearers and bring him the bastard's soul stones. The mages can probably give me more information about the creatures' current whereabouts.");
 };
 
 FUNC VOID B_Say_Antwort_Seelenstein()
@@ -134,7 +134,7 @@ FUNC VOID B_Say_Antwort_Seelenstein()
 		AI_Output(self, hero, "Info_Mod_Trimedron_Antwort_Seelenstein_07_13"); //Was?! Das muss ein Zufall sein ... aber vielleicht ... Ach Unsinn ...
 		AI_Output(self, hero, "Info_Mod_Trimedron_Antwort_Seelenstein_07_14"); //Geh jetzt deinen Aufgaben weiter nach und hole die Magier herbei.
 
-		B_LogEntry	(TOPIC_MOD_URIZIEL, "Trimedron hat mir einen Zettel mit der magischen Formel gegeben, die mir den Weg zur Ritualstätte öffnen wird, gegeben. Sie wird sich auf dem Hügel hier befinden. Ich sollte die Höhle öffnen und dann zu Xardas gehen.");
+		B_LogEntry	(TOPIC_MOD_URIZIEL, "Trimedron gave me a note with the magic formula that will open the way to the ritual site. It will be on the hill here. I should open the cave and then go to Xardas.");
 	};
 };
 
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Trimedron_SeelensteinUrnol (C_INFO)
 	information	= Info_Mod_Trimedron_SeelensteinUrnol_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier den Seelenstein von Urnol, dem Schattenlord.";
+	description	= "I have here the soul stone of Urnol, the shadow lord.";
 };
 
 FUNC INT Info_Mod_Trimedron_SeelensteinUrnol_Condition()
@@ -160,7 +160,7 @@ FUNC INT Info_Mod_Trimedron_SeelensteinUrnol_Condition()
 
 FUNC VOID Info_Mod_Trimedron_SeelensteinUrnol_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trimedron_SeelensteinUrnol_15_00"); //Ich habe hier den Seelenstein von Urnol, dem Schattenlord.
+	AI_Output(hero, self, "Info_Mod_Trimedron_SeelensteinUrnol_15_00"); //I have here the soul stone of Urnol, the shadow lord.
 
 	Npc_RemoveInvItems	(hero, ItAt_SoulStone_Urnol, 1);
 	CreateInvItems	(hero, ItAt_SoulStone, 1);
@@ -176,7 +176,7 @@ INSTANCE Info_Mod_Trimedron_SeelensteinFormwandler (C_INFO)
 	information	= Info_Mod_Trimedron_SeelensteinFormwandler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die wandelbare Gestalt des Formenwandlers ...";
+	description	= "The changeable shape of the shape-shifter....";
 };
 
 FUNC INT Info_Mod_Trimedron_SeelensteinFormwandler_Condition()
@@ -190,7 +190,7 @@ FUNC INT Info_Mod_Trimedron_SeelensteinFormwandler_Condition()
 
 FUNC VOID Info_Mod_Trimedron_SeelensteinFormwandler_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trimedron_SeelensteinFormwandler_15_00"); //Die wandelbare Gestalt des Formenwandlers vermochte ihn nicht zu vor seiner Vernichtung zu bewahren. Hier sein Seelenstein.
+	AI_Output(hero, self, "Info_Mod_Trimedron_SeelensteinFormwandler_15_00"); //The changeable shape of the shape-shifter was not able to save him from destruction. Here's his soul stone.
 
 	Npc_RemoveInvItems	(hero, ItAt_SoulStone_Formwandler, 1);
 	CreateInvItems	(hero, ItAt_SoulStone, 1);
@@ -206,7 +206,7 @@ INSTANCE Info_Mod_Trimedron_SeelensteinUD (C_INFO)
 	information	= Info_Mod_Trimedron_SeelensteinUD_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Diesen Seelenstein entriss ich dem Leib des untoten Drachen.";
+	description	= "I snatched this soul stone from the body of the undead dragon.";
 };
 
 FUNC INT Info_Mod_Trimedron_SeelensteinUD_Condition()
@@ -220,7 +220,7 @@ FUNC INT Info_Mod_Trimedron_SeelensteinUD_Condition()
 
 FUNC VOID Info_Mod_Trimedron_SeelensteinUD_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trimedron_SeelensteinUD_15_00"); //Diesen Seelenstein entriss ich dem Leib des untoten Drachen.
+	AI_Output(hero, self, "Info_Mod_Trimedron_SeelensteinUD_15_00"); //I snatched this soul stone from the body of the undead dragon.
 
 	Npc_RemoveInvItems	(hero, ItAt_SoulStone_UD, 1);
 	CreateInvItems	(hero, ItAt_SoulStone, 1);
@@ -236,7 +236,7 @@ INSTANCE Info_Mod_Trimedron_Fragen (C_INFO)
 	information	= Info_Mod_Trimedron_Fragen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hätte da noch eine Frage ...";
+	description	= "I have one more question...";
 };
 
 FUNC INT Info_Mod_Trimedron_Fragen_Condition()
@@ -249,8 +249,8 @@ FUNC INT Info_Mod_Trimedron_Fragen_Condition()
 
 FUNC VOID Info_Mod_Trimedron_Fragen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trimedron_Fragen_15_00"); //Ich hätte da noch eine Frage ...
-	AI_Output(self, hero, "Info_Mod_Trimedron_Fragen_07_01"); //Ja, so weit es mir vertretbar erscheint und möglich ist, werde ich dir Auskunft erteilen.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Fragen_15_00"); //I have one more question...
+	AI_Output(self, hero, "Info_Mod_Trimedron_Fragen_07_01"); //Yes, as far as it seems reasonable and possible, I will give you information.
 };
 
 INSTANCE Info_Mod_Trimedron_Teleporter (C_INFO)
@@ -261,7 +261,7 @@ INSTANCE Info_Mod_Trimedron_Teleporter (C_INFO)
 	information	= Info_Mod_Trimedron_Teleporter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Für meine Rückkehr nach Khorinis muss ich einen Teleporter finden.";
+	description	= "For my return to Khorinis, I have to find a teleporter.";
 };
 
 FUNC INT Info_Mod_Trimedron_Teleporter_Condition()
@@ -274,12 +274,12 @@ FUNC INT Info_Mod_Trimedron_Teleporter_Condition()
 
 FUNC VOID Info_Mod_Trimedron_Teleporter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trimedron_Teleporter_15_00"); //Für meine Rückkehr nach Khorinis muss ich einen Teleporter finden und ihn mit meinem magischen Fokus aktivieren. Weißt du, wo ich einen solchen finde?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Teleporter_07_01"); //Ja, in der Nähe der Siedlung.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Teleporter_07_02"); //Der dazugehörige Sockel befand sich bei einem Turm, wurde jedoch bei einem der Beben unter Trümmern begraben.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Teleporter_07_03"); //Du wirst also eine Spitzhacke heranziehen müssen, um den Sockel wieder freizulegen.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Teleporter_15_00"); //For my return to Khorinis I have to find a teleporter and activate it with my magical focus. Do you know where I can find one?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Teleporter_07_01"); //Yes, near the settlement.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Teleporter_07_02"); //The corresponding pedestal was located near a tower, but was buried under rubble during one of the earthquakes.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Teleporter_07_03"); //So you'll have to pull up a pickaxe to uncover the plinth.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Der Sockel befindet sich also bei einem maroden Turm unter Trümmern. Ich werde buddeln müssen.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "The plinth is located under rubble near a dilapidated tower. I'm gonna have to dig.");
 };
 
 INSTANCE Info_Mod_Trimedron_Xeres (C_INFO)
@@ -290,7 +290,7 @@ INSTANCE Info_Mod_Trimedron_Xeres (C_INFO)
 	information	= Info_Mod_Trimedron_Xeres_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wenn ihr doch von der scheinbaren Vernichtung Xeres wusstet (...)";
+	description	= "But if you knew about the apparent extermination of Xeres (...) )";
 };
 
 FUNC INT Info_Mod_Trimedron_Xeres_Condition()
@@ -303,11 +303,11 @@ FUNC INT Info_Mod_Trimedron_Xeres_Condition()
 
 FUNC VOID Info_Mod_Trimedron_Xeres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trimedron_Xeres_15_00"); //Wenn ihr doch von der scheinbaren Vernichtung Xeres wusstet, warum seid ihr dann nie zurückgekehrt?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Xeres_07_01"); //Zurückkehren? Fast alle Siedlungen und die meisten Ritualplätze waren zerstört.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Xeres_07_02"); //Und Xeres als solcher mochte zwar vom Antlitz der Erde verschwunden sein ... dies galt jedoch nicht für seine Lakaienschaft des Bösen.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Xeres_07_03"); //Die Priesterschaft des Blutkults, die abtrünnigen und verräterischen Uraks, dämonische Geschöpfe ... sie alle hätten eine neue Besiedlung nur zum Preis eines erneuten Blutvergießens möglich gemacht.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Xeres_07_04"); //Auf dieser Insel hatten wir unsere neue Heimat gefunden und waren – so schien es zumindest die längste Zeit – sicher vor allen Übeln.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Xeres_15_00"); //If you knew about the apparent annihilation of Xeres, why did you never return?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Xeres_07_01"); //Return? Almost all settlements and most of the ritual sites were destroyed.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Xeres_07_02"); //And Xeres as such may have disappeared from the face of the earth... but this did not apply to his lackeyship of evil.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Xeres_07_03"); //The priesthood of the blood cult, the renegade and treacherous Uraks, demonic creatures.... they all would have made a new settlement possible only at the cost of another bloodshed.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Xeres_07_04"); //On this island we had found our new home and were - at least for the longest time - safe from all evils.
 };
 
 INSTANCE Info_Mod_Trimedron_Urak (C_INFO)
@@ -318,7 +318,7 @@ INSTANCE Info_Mod_Trimedron_Urak (C_INFO)
 	information	= Info_Mod_Trimedron_Urak_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du erwähntest vorher in Zusammenhang mit den Orks das Wort 'Urak'.";
+	description	= "You mentioned the word' Urak' earlier in connection with the orcs.";
 };
 
 FUNC INT Info_Mod_Trimedron_Urak_Condition()
@@ -331,13 +331,13 @@ FUNC INT Info_Mod_Trimedron_Urak_Condition()
 
 FUNC VOID Info_Mod_Trimedron_Urak_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trimedron_Urak_15_00"); //Du erwähntest vorher in Zusammenhang mit den Orks das Wort "Urak". Was hat es damit auf sich?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_01"); //Die Uraks waren einst Bewohner Jahrkendars, wie jeder andere auch.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_02"); //Doch nachdem Xeres die macht errungen hatte, schlugen sie sich heimtückisch auf seine Seite und verrieten alles, wofür unser Glaube, unsere Kultur stand.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_03"); //Viel Leid brachten sie über die standhaften und treuen Erbauer und zahlreiche unschuldige Menschen wurden durch ihre mordende Hand hinweggerafft.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_04"); //Nachdem Xeres verbannt war und die drei neuen Götter aus der Macht und dem Willen des Radanos hervorgegangen waren, straften die Himmlischen die Uraks für ihre abscheulichen Frevel.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_05"); //Sie hatten gewütet wie eine Horde Warg im Blutrausch und sollten dies auch durch ihr Erscheinungsbild zum Ausdruck bringen.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_06"); //Für alle Zeiten sollte die animalische Gestalt sie entstellen, welche die Orks auch heute noch zeichnet.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Urak_15_00"); //Du erwähntest vorher in Zusammenhang mit den Orks das Wort "primordial ura". Was hat es damit auf sich?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_01"); //The Uraks were once the inhabitants of yearendar, like everyone else.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_02"); //But after Xeres had won it, they sneak into his side and betrayed everything that our faith, our culture stood for.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_03"); //Much suffering was inflicted upon the steadfast and faithful builders, and many innocent people were taken away by their murdering hands.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_04"); //After Xeres had been banished and the three new gods had emerged from the power and will of Radano, the Celestials punished the Uraks for their despicable iniquity.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_05"); //They had raged like a horde of warg in blood frenzy and were supposed to express this through their appearance.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Urak_07_06"); //For all time the animal figure was to disfigure it, which still draws the orcs today.
 };
 
 INSTANCE Info_Mod_Trimedron_Argez (C_INFO)
@@ -348,7 +348,7 @@ INSTANCE Info_Mod_Trimedron_Argez (C_INFO)
 	information	= Info_Mod_Trimedron_Argez_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du sprachst von einem jungen Mann.";
+	description	= "You were talking about a young man.";
 };
 
 FUNC INT Info_Mod_Trimedron_Argez_Condition()
@@ -361,17 +361,17 @@ FUNC INT Info_Mod_Trimedron_Argez_Condition()
 
 FUNC VOID Info_Mod_Trimedron_Argez_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trimedron_Argez_15_00"); //Du sprachst von einem jungen Mann, der Xeres durch Uriziel in den Schoß der Erde zurückschickte. Was weißt du über ihn?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_01"); //Nun, dieses Kapitel unserer Geschichte, ist eines der mysteriösesten und konnte nie völlig aufgeklärt werden.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_02"); //Niemand weiß, woher dieser Mann ursprünglich gekommen war und wohin er nach der Verbannung von Xeres ging.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Argez_15_03"); //Wie ist das möglich?! Irgendwas muss doch über ihn bekannt sein ...
-	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_04"); //Es ist, wie ich sage.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_05"); //Er schien wie aus dem nichts gekommen ... und er verschwand ohne jede Spur ... als hätte er niemals wirklich existiert.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_06"); //Aber warte ... angeblich soll jemand einmal seinen Namen vernommen haben ...
-	AI_Output(hero, self, "Info_Mod_Trimedron_Argez_15_07"); //(Erwartungsvoll) Ja?
-	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_08"); //Er ... er fällt mir beim besten Willen nicht mehr ein.
-	AI_Output(hero, self, "Info_Mod_Trimedron_Argez_15_09"); //Na toll! Ein Geist mit Amnesie.
-	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_10"); //Es ist Jahrhunderte her ... ich brauche einfach etwas Zeit zum Nachdenken.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Argez_15_00"); //You spoke of a young man who sent Xeres back into the womb of the earth through Uriziel. What do you know about him?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_01"); //Well, this chapter of our history is one of the most mysterious and could never be fully elucidated.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_02"); //No one knows where this man came from and where he went after the banishment of Xeres.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Argez_15_03"); //How is that possible?! There must be something about him....
+	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_04"); //It's like I said.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_05"); //He seemed to have come out of nowhere... and he disappeared without a trace.... as if he never really existed.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_06"); //But wait... allegedly someone once heard his name...
+	AI_Output(hero, self, "Info_Mod_Trimedron_Argez_15_07"); //(Expected) Yes?
+	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_08"); //He... I can't even think of him.
+	AI_Output(hero, self, "Info_Mod_Trimedron_Argez_15_09"); //Great! A ghost with amnesia.
+	AI_Output(self, hero, "Info_Mod_Trimedron_Argez_07_10"); //It's been centuries... I just need some time to think.
 };
 
 INSTANCE Info_Mod_Trimedron_EXIT (C_INFO)

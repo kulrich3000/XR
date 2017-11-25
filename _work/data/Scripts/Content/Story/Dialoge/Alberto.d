@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Alberto_Hi (C_INFO)
 	information	= Info_Mod_Alberto_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bei dir kann ich tauschen?";
+	description	= "I can trade with you?";
 };
 
 FUNC INT Info_Mod_Alberto_Hi_Condition()
@@ -16,14 +16,14 @@ FUNC INT Info_Mod_Alberto_Hi_Condition()
 
 FUNC VOID Info_Mod_Alberto_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alberto_Hi_15_00"); //Bei dir kann ich tauschen?
-	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_01"); //Juuup, alles was du willst, wenn du Erz hast. Und für eine Hand voll Crawlerzangen, würde ich dir einen besonders guten Preis zahlen.
-	AI_Output(hero, self, "Info_Mod_Alberto_Hi_15_02"); //Wieso?
-	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_03"); //Das Sekret der Zangen kann die magische Kraft steigern und ist daher bei den Dämonenmagiern sehr bliebt.
-	AI_Output(hero, self, "Info_Mod_Alberto_Hi_15_04"); //Und wieso jagt ihr die Crawler dann nicht einfach selbst?
-	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_05"); //Naja, sehen wir aus wie Templer? Wir wissen doch nicht mal, die man die Viecher ausnimmt.
-	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_06"); //Von den Sektenspinnern von damals ist nur Na Kosh übrig, und der verkauft mittlerweile nur noch Sumpfkraut und kifft wie ein blöder.
-	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_07"); //Gor Na Bar und sein Kollege, die waren immer gut bei der Jagd dabei. Aber bei dem Beben wurden sie in der Höhle weiter unten verschüttet ...
+	AI_Output(hero, self, "Info_Mod_Alberto_Hi_15_00"); //I can trade with you?
+	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_01"); //Juuup, anything you want when you have ore. And for a handful of crawler pliers, I'd pay you a particularly good price.
+	AI_Output(hero, self, "Info_Mod_Alberto_Hi_15_02"); //Why?
+	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_03"); //The secretion of the forceps can increase the magical power and is therefore very much retained by the demon magicians.
+	AI_Output(hero, self, "Info_Mod_Alberto_Hi_15_04"); //Then why don't you just hunt the crawlers yourself?
+	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_05"); //Well, do we look like Templars? We don't even know how to gut the animals.
+	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_06"); //Of the cult spinners of that time, only Na Kosh is left, and he only sells bog cabbage nowadays and smokes like an idiot.
+	AI_Output(self, hero, "Info_Mod_Alberto_Hi_12_07"); //Gor Na Bar and his colleague, they were always good at hunting. But during the quake, they were buried in the cave below...
 };
 
 INSTANCE Info_Mod_Alberto_Crawlerzangen (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Alberto_Crawlerzangen (C_INFO)
 	information	= Info_Mod_Alberto_Crawlerzangen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe einige Crawlerzangen.";
+	description	= "I have some crawler tongs.";
 };
 
 FUNC INT Info_Mod_Alberto_Crawlerzangen_Condition()
@@ -48,52 +48,52 @@ FUNC INT Info_Mod_Alberto_Crawlerzangen_Condition()
 
 FUNC VOID Info_Mod_Alberto_Crawlerzangen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_15_00"); //Ich habe einige Crawlerzangen.
-	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_12_01"); //Echt? Spitze! Ich geb dir dafür ... 10 Erz und 200 Gold.
+	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_15_00"); //I have some crawler tongs.
+	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_12_01"); //Really? Great! I'll give you one for that... 10 ore and 200 gold.
 
 	Info_ClearChoices	(Info_Mod_Alberto_Crawlerzangen);
 
-	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Ist mir zu wenig.", Info_Mod_Alberto_Crawlerzangen_B);
-	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Gekauft.", Info_Mod_Alberto_Crawlerzangen_A);
+	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "It's not enough for me.", Info_Mod_Alberto_Crawlerzangen_B);
+	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Bought.", Info_Mod_Alberto_Crawlerzangen_A);
 };
 
 FUNC VOID Info_Mod_Alberto_Crawlerzangen_Gekauft()
 {
-	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_Gekauft_15_00"); //Gekauft.
+	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_Gekauft_15_00"); //Bought.
 };
 
 FUNC VOID Info_Mod_Alberto_Crawlerzangen_Gekauft2()
 {
-	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_Gekauft2_12_00"); //Hat mich gefreut mit dir Geschäfte gemacht zu haben.
+	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_Gekauft2_12_00"); //Nice doing business with you.
 };
 
 FUNC VOID Info_Mod_Alberto_Crawlerzangen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_B_15_00"); //Ist mir zu wenig.
-	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_B_12_01"); //Okey ... ich lege noch diese antiken Steintafeln drauf. Bei dem Erdbeben wurde ein uralter Stollen freigelegt, wo wir sie fanden. Sind bestimmt ne Menge wert ...
+	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_B_15_00"); //It's not enough for me.
+	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_B_12_01"); //Okey-- I'll put these ancient stone tablets on top of it. The earthquake uncovered an ancient tunnel where we found it. Must be worth a lot...
 
 	Info_ClearChoices	(Info_Mod_Alberto_Crawlerzangen);
 
-	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Immer noch zu wenig.", Info_Mod_Alberto_Crawlerzangen_D);
-	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Gekauft.", Info_Mod_Alberto_Crawlerzangen_C);
+	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Still not enough.", Info_Mod_Alberto_Crawlerzangen_D);
+	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Bought.", Info_Mod_Alberto_Crawlerzangen_C);
 };
 
 FUNC VOID Info_Mod_Alberto_Crawlerzangen_D()
 {
-	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_D_15_00"); //Immer noch zu wenig.
-	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_D_12_01"); //Hör mal, willst du, dass ich vor die Hunde gehe? (mahnend) Ich leg noch drei gute Heiltränke drauf ... und das ist mein letztes Angebot.
+	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_D_15_00"); //Still not enough.
+	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_D_12_01"); //Listen, do you want me to go to the dogs? I'll add three more good healing potions... and this is my final offer.
 
 	Info_ClearChoices	(Info_Mod_Alberto_Crawlerzangen);
 
-	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Ich will noch mehr.", Info_Mod_Alberto_Crawlerzangen_F);
-	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Gekauft.", Info_Mod_Alberto_Crawlerzangen_E);
+	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "I want more.", Info_Mod_Alberto_Crawlerzangen_F);
+	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Bought.", Info_Mod_Alberto_Crawlerzangen_E);
 };
 
 FUNC VOID Info_Mod_Alberto_Crawlerzangen_F()
 {
-	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_F_15_00"); //Ich will noch mehr.
-	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_F_12_01"); //(wütend) Weißt du was?! Dann behalt deine dreckigen Zangen eben!
-	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_F_12_02"); //Und such dir von jetzt an gefälligst einen anderen Idioten, der mit dir handelt!
+	AI_Output(hero, self, "Info_Mod_Alberto_Crawlerzangen_F_15_00"); //I want more.
+	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_F_12_01"); //You know what?! So keep your dirty tongs!
+	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_F_12_02"); //And from now on, find another idiot to deal with you!
 
 	Info_ClearChoices	(Info_Mod_Alberto_Crawlerzangen);
 };
@@ -104,9 +104,9 @@ FUNC VOID Info_Mod_Alberto_Crawlerzangen_E()
 
 	B_GiveInvItems	(hero, self, ItAt_CrawlerMandibles, 5);
 
-	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_E_12_00"); //(erleichtert) Ok, dann hätten wir das über die Bühne gebracht.
+	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_E_12_00"); //Okay, then we would have put it on stage.
 
-	B_ShowGivenThings	("200 Gold, 10 Erz, 3 Steintafeln und 3 Heiltränke erhalten");
+	B_ShowGivenThings	("200 gold, 10 ore, 3 stone tablets and 3 healing potions preserved");
 
 	CreateInvItems	(hero, ItMi_Gold, 200);
 	CreateInvItems	(hero, ItMi_Nugget, 10);
@@ -118,7 +118,7 @@ FUNC VOID Info_Mod_Alberto_Crawlerzangen_E()
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_E_12_01"); //(zu sich selbst) So ein Halsabschneider.
+	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_E_12_01"); //He's a cutthroat.
 
 	AI_TurnToNpc	(self, hero);
 
@@ -135,7 +135,7 @@ FUNC VOID Info_Mod_Alberto_Crawlerzangen_C()
 
 	Info_Mod_Alberto_Crawlerzangen_Gekauft2();
 
-	B_ShowGivenThings	("200 Gold, 10 Erz und 3 Steintafeln erhalten");
+	B_ShowGivenThings	("200 gold, 10 ore and 3 stone tablets preserved");
 
 	CreateInvItems	(hero, ItMi_Gold, 200);
 	CreateInvItems	(hero, ItMi_Nugget, 10);
@@ -145,7 +145,7 @@ FUNC VOID Info_Mod_Alberto_Crawlerzangen_C()
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_C_12_00"); //(leise zu sich selbst) Zum Glück konnte ich ihm die alten Dinger unterjubeln.
+	AI_Output(self, hero, "Info_Mod_Alberto_Crawlerzangen_C_12_00"); //Fortunately, I was able to shove the old things under him.
 
 	AI_TurnToNpc	(self, hero);
 
@@ -162,7 +162,7 @@ FUNC VOID Info_Mod_Alberto_Crawlerzangen_A()
 
 	Info_Mod_Alberto_Crawlerzangen_Gekauft2();
 
-	B_ShowGivenThings	("200 Gold und 10 Erz erhalten");
+	B_ShowGivenThings	("200 gold and 10 ore obtained");
 
 	CreateInvItems	(hero, ItMi_Gold, 200);
 	CreateInvItems	(hero, ItMi_Nugget, 10);

@@ -21,21 +21,21 @@ FUNC INT Info_Mod_Joseppe_Hi_Condition()
 
 FUNC VOID Info_Mod_Joseppe_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Joseppe_Hi_08_00"); //Hilfe!!! Ich benötige dringend exekutive Hilfe! Seid ihr bei der Miliz, guter Mann?
+	AI_Output(self, hero, "Info_Mod_Joseppe_Hi_08_00"); //Help!!!! I need urgent executive help! Are you militia, my good man?
 
 	Info_ClearChoices	(Info_Mod_Joseppe_Hi);
 
-	Info_AddChoice	(Info_Mod_Joseppe_Hi, "Nein.", Info_Mod_Joseppe_Hi_B);
-	Info_AddChoice	(Info_Mod_Joseppe_Hi, "Ja.", Info_Mod_Joseppe_Hi_A);
+	Info_AddChoice	(Info_Mod_Joseppe_Hi, "No.", Info_Mod_Joseppe_Hi_B);
+	Info_AddChoice	(Info_Mod_Joseppe_Hi, "Yeah.", Info_Mod_Joseppe_Hi_A);
 };
 
 FUNC VOID Info_Mod_Joseppe_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Joseppe_Hi_B_15_00"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Joseppe_Hi_B_08_01"); //Wunderbar. Gestatten, mein Name ist Joseppe. Ich bin der Mann, für spezielle Aufgaben.
-	AI_Output(self, hero, "Info_Mod_Joseppe_Hi_B_08_02"); //Falls du meine Dienste in Anspruch nehmen willst, ich stehe jeden Abend vor dem Adanosschrein. Gehabt euch wohl.
+	AI_Output(hero, self, "Info_Mod_Joseppe_Hi_B_15_00"); //No.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Hi_B_08_01"); //Wonderful. Excuse me, my name is Joseppe. I'm the man for special tasks.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Hi_B_08_02"); //If you want to use my services, I'll be standing in front of the Adanos shrine every night. Have a good life.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Ein Mann namens Joseppe hat mir irgendwelche Dienste angeboten. Abends steht er beim Adanosschrein. Ich sollte ihn dort mal besuchen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "A man named Joseppe offered me some sort of service. In the evening he stands at the Adanos shrine. I should visit him there sometime.");
 
 	Mod_Sekte_Joseppe = 1;
 
@@ -44,8 +44,8 @@ FUNC VOID Info_Mod_Joseppe_Hi_B()
 
 FUNC VOID Info_Mod_Joseppe_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Joseppe_Hi_A_15_00"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Joseppe_Hi_A_08_01"); //Verzeih, ich hab mich wohl geirrt, ich dachte jemand hätte mein Portmonee gestohlen. Ich wünsche dir noch einen schönen Tag.
+	AI_Output(hero, self, "Info_Mod_Joseppe_Hi_A_15_00"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Hi_A_08_01"); //Sorry, I must have been wrong. I thought someone stole my wallet. Have a nice day.
 
 	Info_ClearChoices	(Info_Mod_Joseppe_Hi);
 };
@@ -75,19 +75,19 @@ FUNC INT Info_Mod_Joseppe_Auftrag_Condition()
 
 FUNC VOID Info_Mod_Joseppe_Auftrag_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_00"); //Du bist gekommen, wie überaus erfreulich. Was hast du für mich zu tun? Massenmord, Meuchelmord, Rufmord, ich bin Spezialist für alles.
-	AI_Output(hero, self, "Info_Mod_Joseppe_Auftrag_15_01"); //Kannst du mir ein Buch beschaffen?
-	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_02"); //Du scheinst mein Potential nicht zu erkennen ... aber in der Not frisst der Teufel fliegen.
-	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_03"); //Welches Buch wollt ihr und wo ist es?
-	AI_Output(hero, self, "Info_Mod_Joseppe_Auftrag_15_04"); //Das Necronomicum. Die Feuermagier verbergen es im Kloster.
-	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_05"); //Ein Buch der schwarzen Magie? Euer Auftrag scheint doch recht interessant zu sein.
-	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_06"); //Kommen wir zur Bezahlung. Das Basispaket kostet 10.000 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_07"); //Ihr würdet einen Rabatt bekommen, wenn ihr mir Ausrüstung besorgt.
-	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_08"); //Je nachdem wie nützlich sie ist, werde ich mit dem Preis runter gehen.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_00"); //You've come, how very pleasant. What do you have to do for me? Mass murder, assassination, slander, character murder, I'm a specialist in everything.
+	AI_Output(hero, self, "Info_Mod_Joseppe_Auftrag_15_01"); //Can you get me a book?
+	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_02"); //You don't seem to recognize my potential... but in need, the devil eats to fly.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_03"); //Which book do you want, and where is it?
+	AI_Output(hero, self, "Info_Mod_Joseppe_Auftrag_15_04"); //The necronomic. Fire magicians hide it in the monastery.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_05"); //A book of black magic? Your assignment seems pretty interesting.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_06"); //Let's get paid. The basic package costs 10. 000 gold coins.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_07"); //You'd get a discount if you got me equipment.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Auftrag_08_08"); //Depending on how useful it is, I'll go down with the price.
 
 	Mod_Sekte_JoseppePreis = 10000;
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Joseppe ist ein Spezialist für alle Arten von Verbrechen. Für den Diebstahl des Buches verlangt er allerdings 10.000 Goldmünzen. Er hat mir jedoch einen Rabatt angeboten, wenn ich ihm nützliche Ausrüstung bringe.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Joseppe is a specialist in all types of crime. For the theft of the book, however, he demands 10. 000 gold coins. But he offered me a discount when I brought him some useful equipment.");
 };
 
 INSTANCE Info_Mod_Joseppe_Equipment_Keule (C_INFO)
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Joseppe_Equipment_Keule (C_INFO)
 	information	= Info_Mod_Joseppe_Equipment_Keule_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier einen magischen Knüppel.";
+	description	= "I've got a magic club here.";
 };
 
 FUNC INT Info_Mod_Joseppe_Equipment_Keule_Condition()
@@ -116,12 +116,12 @@ FUNC INT Info_Mod_Joseppe_Equipment_Keule_Condition()
 
 FUNC VOID Info_Mod_Joseppe_Equipment_Keule_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Joseppe_Equipment_Keule_15_00"); //Ich habe hier einen magischen Knüppel. Wer damit geschlagen wird, wird sofort bewusstlos.
+	AI_Output(hero, self, "Info_Mod_Joseppe_Equipment_Keule_15_00"); //I've got a magic club here. Whoever is beaten with it will immediately become unconscious.
 
 	B_GiveInvItems	(hero, self, ItMw_UnconsciousKnueppel, 1);
 
-	AI_Output(hero, self, "Info_Mod_Joseppe_Equipment_Keule_15_01"); //Leider klappt das nur einmal, danach ist er wertlos.
-	AI_Output(self, hero, "Info_Mod_Joseppe_Equipment_Keule_08_02"); //Interessant, das dürfte ziemlich hilfreich sein. Dafür gewähre ich dir einen Rabatt von 2.500 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Joseppe_Equipment_Keule_15_01"); //Unfortunately, this only works once, after that it is worthless.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Equipment_Keule_08_02"); //Interesting, that should be pretty helpful. I'll give you a discount of two for this. 500 gold coins.
 
 	Mod_Sekte_JoseppePreis -= 2500;
 };
@@ -134,7 +134,7 @@ INSTANCE Info_Mod_Joseppe_Equipment_FakeNove (C_INFO)
 	information	= Info_Mod_Joseppe_Equipment_FakeNove_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe noch eine gefälschte Feuer Novizenrobe.";
+	description	= "I still have a fake fire novice rehearsal.";
 };
 
 FUNC INT Info_Mod_Joseppe_Equipment_FakeNove_Condition()
@@ -152,11 +152,11 @@ FUNC INT Info_Mod_Joseppe_Equipment_FakeNove_Condition()
 
 FUNC VOID Info_Mod_Joseppe_Equipment_FakeNove_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Joseppe_Equipment_FakeNove_15_00"); //Ich habe noch eine gefälschte Feuer Novizenrobe.
+	AI_Output(hero, self, "Info_Mod_Joseppe_Equipment_FakeNove_15_00"); //I still have a fake fire novice rehearsal.
 
 	B_GiveInvItems	(hero, self, ITAR_FAKE_NOV_L, 1);
 
-	AI_Output(self, hero, "Info_Mod_Joseppe_Equipment_FakeNove_08_01"); //Damit sollte ich leicht unbeschadet ins Kloster kommen. Das ist mir glatt 2.500 Goldmünzen wert.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Equipment_FakeNove_08_01"); //I should come to the monastery lightly unharmed. That's two. Worth 500 gold coins.
 
 	Mod_Sekte_JoseppePreis -= 2500;
 };
@@ -169,7 +169,7 @@ INSTANCE Info_Mod_Joseppe_Equipment_Sumpfkraut (C_INFO)
 	information	= Info_Mod_Joseppe_Equipment_Sumpfkraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hälst du von diesem Sumpfkrautpaket?";
+	description	= "What do you think of this bog weed package?";
 };
 
 FUNC INT Info_Mod_Joseppe_Equipment_Sumpfkraut_Condition()
@@ -187,11 +187,11 @@ FUNC INT Info_Mod_Joseppe_Equipment_Sumpfkraut_Condition()
 
 FUNC VOID Info_Mod_Joseppe_Equipment_Sumpfkraut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Joseppe_Equipment_Sumpfkraut_15_00"); //Was hälst du von diesem Sumpfkrautpaket?
+	AI_Output(hero, self, "Info_Mod_Joseppe_Equipment_Sumpfkraut_15_00"); //What do you think of this bog weed package?
 
 	B_GiveInvItems	(hero, self, ItMi_HerbPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Joseppe_Equipment_Sumpfkraut_08_01"); //Sumpfkraut ist immer gut, her damit. Dafür erlasse ich dir 2.500 Goldmünzen.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Equipment_Sumpfkraut_08_01"); //Swampweed's always good, give it to me. I'll give you two. 500 gold coins.
 
 	Mod_Sekte_JoseppePreis -= 2500;
 };
@@ -204,7 +204,7 @@ INSTANCE Info_Mod_Joseppe_StartAuftrag (C_INFO)
 	information	= Info_Mod_Joseppe_StartAuftrag_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ok, du hast den Auftrag.";
+	description	= "Okay, you have the assignment.";
 };
 
 FUNC INT Info_Mod_Joseppe_StartAuftrag_Condition()
@@ -221,52 +221,52 @@ FUNC INT Info_Mod_Joseppe_StartAuftrag_Condition()
 
 FUNC VOID Info_Mod_Joseppe_StartAuftrag_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Joseppe_StartAuftrag_15_00"); //Ok, du hast den Auftrag.
+	AI_Output(hero, self, "Info_Mod_Joseppe_StartAuftrag_15_00"); //Okay, you have the assignment.
 
 	if (Mod_Sekte_JoseppePreis == 10000)
 	{
-		AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_08_01"); //Das macht dann 10.000 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_08_01"); //That'll be 10. 000 gold coins.
 	}
 	else if (Mod_Sekte_JoseppePreis == 7500)
 	{
-		AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_08_02"); //Das macht dann 7.500 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_08_02"); //That's seven. 500 gold coins.
 	}
 	else if (Mod_Sekte_JoseppePreis == 5000)
 	{
-		AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_08_03"); //Das macht dann 5.000 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_08_03"); //That's five. 000 gold coins.
 	}
 	else if (Mod_Sekte_JoseppePreis == 2500)
 	{
-		AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_08_04"); //Das macht dann 2.500 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_08_04"); //That makes two. 500 gold coins.
 	};
 
 	Info_ClearChoices	(Info_Mod_Joseppe_StartAuftrag);
 
-	Info_AddChoice	(Info_Mod_Joseppe_StartAuftrag, "So viel Gold habe ich nicht.", Info_Mod_Joseppe_StartAuftrag_B);
+	Info_AddChoice	(Info_Mod_Joseppe_StartAuftrag, "I don't have that much gold.", Info_Mod_Joseppe_StartAuftrag_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= Mod_Sekte_JoseppePreis)
 	{
-		Info_AddChoice	(Info_Mod_Joseppe_StartAuftrag, "Hier hast du das Gold.", Info_Mod_Joseppe_StartAuftrag_A);
+		Info_AddChoice	(Info_Mod_Joseppe_StartAuftrag, "Here's the gold.", Info_Mod_Joseppe_StartAuftrag_A);
 	};
 };
 
 FUNC VOID Info_Mod_Joseppe_StartAuftrag_B()
 {
-	AI_Output(hero, self, "Info_Mod_Joseppe_StartAuftrag_B_15_00"); //So viel Gold habe ich nicht.
-	AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_B_08_01"); //Dann komm wieder, wenn du es hast.
+	AI_Output(hero, self, "Info_Mod_Joseppe_StartAuftrag_B_15_00"); //I don't have that much gold.
+	AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_B_08_01"); //Then come back when you get it.
 	
 	Info_ClearChoices	(Info_Mod_Joseppe_StartAuftrag);
 };
 
 FUNC VOID Info_Mod_Joseppe_StartAuftrag_A()
 {
-	AI_Output(hero, self, "Info_Mod_Joseppe_StartAuftrag_A_15_00"); //Hier hast du das Gold.
+	AI_Output(hero, self, "Info_Mod_Joseppe_StartAuftrag_A_15_00"); //Here's the gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, Mod_Sekte_JoseppePreis);
 
-	AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_A_08_01"); //Gut, komm morgen wieder, dann sollte ich dein Buch haben.
+	AI_Output(self, hero, "Info_Mod_Joseppe_StartAuftrag_A_08_01"); //Well, come back tomorrow, then I should have your book.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Joseppe hat den Auftrag übernommen. Morgen wird er mir das Buch geben.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Joseppe has taken over the job. Tomorrow he'll give me the book.");
 
 	Mod_Sekte_Joseppe = 2;
 
@@ -298,13 +298,13 @@ FUNC INT Info_Mod_Joseppe_Necronomicum_Condition()
 
 FUNC VOID Info_Mod_Joseppe_Necronomicum_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Joseppe_Necronomicum_08_00"); //Da bist du ja wieder. Ich habe dein Buch bekommen. Hier hast du es.
+	AI_Output(self, hero, "Info_Mod_Joseppe_Necronomicum_08_00"); //There you are again. I got your book. Here you have it.
 
 	B_GiveInvItems	(self, hero, ItWr_BeliarBook, 1);
 
-	AI_Output(hero, self, "Info_Mod_Joseppe_Necronomicum_15_01"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Joseppe_Necronomicum_15_01"); //Thanks.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Ich habe das Neconomicum von Joseppe erhalten. Ich sollte nun zu Karras zurückkehren.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "I have received the Neconomicum from Joseppe. I should now return to Karras.");
 };
 
 INSTANCE Info_Mod_Joseppe_Pickpocket (C_INFO)

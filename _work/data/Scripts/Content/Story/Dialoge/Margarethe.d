@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Margarethe_Hi (C_INFO)
 	information	= Info_Mod_Margarethe_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst nicht glücklich aus.";
+	description	= "You don't look happy.";
 };
 
 FUNC INT Info_Mod_Margarethe_Hi_Condition()
@@ -18,31 +18,31 @@ FUNC INT Info_Mod_Margarethe_Hi_Condition()
 
 FUNC VOID Info_Mod_Margarethe_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_15_00"); //Du siehst nicht glücklich aus.
-	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_17_01"); //(zittrig) Sie haben sie mitgenommen! Eingesperrt! In Ketten gelegt! (schluchzt)
-	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_15_02"); //Jetzt mal ganz ruhig.
-	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_17_03"); //(atmet tief durch) Anna ... sie ist meine Schwester ... es wurde viel gemunkelt, dass sie eine Hexe sei ... sich Beliar verschrieben habe.
-	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_17_04"); //Es trifft immer die Kräuterkundigen! Irgendjemand muss sie denunziert haben ...
-	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_17_05"); //Ich war gerade bei ihr, als sie kamen. (schluchzt)
+	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_15_00"); //You don't look happy.
+	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_17_01"); //They've taken her away! Locked up! Chained! (sobbing)
+	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_15_02"); //Take it easy now.
+	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_17_03"); //(breathes deeply) Anna.... she's my sister.... There was a lot of rumor that she was a witch... Beliar's dedication.
+	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_17_04"); //It always hits the herbalists! Someone must have denounced her...
+	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_17_05"); //I was just with her when they came. (sobbing)
 
 	Info_ClearChoices	(Info_Mod_Margarethe_Hi);
 
-	Info_AddChoice	(Info_Mod_Margarethe_Hi, "Weißt du, wer Anna denunziert hat?", Info_Mod_Margarethe_Hi_B);
-	Info_AddChoice	(Info_Mod_Margarethe_Hi, "Wer ist gekommen?", Info_Mod_Margarethe_Hi_A);
+	Info_AddChoice	(Info_Mod_Margarethe_Hi, "Do you know who denounced Anna?", Info_Mod_Margarethe_Hi_B);
+	Info_AddChoice	(Info_Mod_Margarethe_Hi, "Who came?", Info_Mod_Margarethe_Hi_A);
 };
 
 FUNC VOID Info_Mod_Margarethe_Hi_C()
 {
 	Info_ClearChoices	(Info_Mod_Margarethe_Hi);
 
-	Info_AddChoice	(Info_Mod_Margarethe_Hi, "Anna wird nicht ohne Grund abgeführt worden sein.", Info_Mod_Margarethe_Hi_E);
-	Info_AddChoice	(Info_Mod_Margarethe_Hi, "Was können wir tun?", Info_Mod_Margarethe_Hi_D);
+	Info_AddChoice	(Info_Mod_Margarethe_Hi, "Anna will not have been taken away without reason.", Info_Mod_Margarethe_Hi_E);
+	Info_AddChoice	(Info_Mod_Margarethe_Hi, "What can we do?", Info_Mod_Margarethe_Hi_D);
 };
 
 FUNC VOID Info_Mod_Margarethe_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_E_15_00"); //Anna wird nicht ohne Grund abgeführt worden sein. Ich werde mich hüten, gegen das Gesetz vorzugehen.
-	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_E_17_01"); //(ruft) Du bist genauso dumm wie die anderen auch! Lass mich in Ruhe!
+	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_E_15_00"); //Anna will not have been taken away without reason. I will be careful not to go against the law.
+	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_E_17_01"); //You're as stupid as the others! Get away from me!
 	
 	Info_ClearChoices	(Info_Mod_Margarethe_Hi);
 
@@ -51,14 +51,14 @@ FUNC VOID Info_Mod_Margarethe_Hi_E()
 
 FUNC VOID Info_Mod_Margarethe_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_D_15_00"); //Was können wir tun?
-	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_D_17_01"); //Erzähl Ulrich davon. Er ist Annas und mein Bruder ... er wohnt nur ein paar Häuser weiter.
-	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_D_17_02"); //Ich, ich weiß nicht mehr weiter ... Sie wird jetzt sicher gefoltert, Anna, wir müssen irgendwie helfen!
-	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_D_15_03"); //Das kriegen wir schon wieder hin.
+	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_D_15_00"); //What can we do?
+	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_D_17_01"); //Tell Ulrich about it. He's Anna and my brother... he lives a few blocks away.
+	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_D_17_02"); //I, I don't know what else to do.... She's probably being tortured now, Anna, we have to do something about it!
+	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_D_15_03"); //We'll be all right.
 	
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Marias Schwester Anna ist bei den Bewohnern Khoratas als Hexe verschrien und deswegen gefänglich eingezogen worden. Maria hat mich gebeten, ihren Bruder Ulrich, der in der Nähe von Anna wohnt, davon zu berichten und einen Weg zu suchen, Anna zu helfen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Maria's sister Anna has been called a witch by the inhabitants of Khorata and has been confiscated for this reason. Mary asked me to tell her brother Ulrich, who lives near Anna, about it and to find a way to help Anna.");
 
 	Info_ClearChoices	(Info_Mod_Margarethe_Hi);
 
@@ -67,8 +67,8 @@ FUNC VOID Info_Mod_Margarethe_Hi_D()
 
 FUNC VOID Info_Mod_Margarethe_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_B_15_00"); //Weißt du, wer Anna denunziert hat?
-	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_B_17_01"); //Nein, weiß ich nicht. (bitter) Es wäre fast jedem Einfältigen hier zuzutrauen, dass er die Ammenmärchen von Hexen glaubt.
+	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_B_15_00"); //Do you know who denounced Anna?
+	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_B_17_01"); //No, I don't know. (bitter) It would be unbelievable for almost every simple-minded man here to believe the fairy tales of witches.
 
 	Mod_AnnaQuest += 1;
 	
@@ -76,7 +76,7 @@ FUNC VOID Info_Mod_Margarethe_Hi_B()
 	{
 		Info_ClearChoices	(Info_Mod_Margarethe_Hi);
 
-		Info_AddChoice	(Info_Mod_Margarethe_Hi, "Wer ist gekommen?", Info_Mod_Margarethe_Hi_A);
+		Info_AddChoice	(Info_Mod_Margarethe_Hi, "Who came?", Info_Mod_Margarethe_Hi_A);
 	}
 	else
 	{
@@ -86,8 +86,8 @@ FUNC VOID Info_Mod_Margarethe_Hi_B()
 
 FUNC VOID Info_Mod_Margarethe_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_A_15_00"); //Wer ist gekommen?
-	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_A_17_01"); //Die Schöppen! Haben sie herumgestoßen und begrapscht, und dann wurde sie ins Gefängnis abgeführt. Ich habe versucht zu helfen ...
+	AI_Output(hero, self, "Info_Mod_Margarethe_Hi_A_15_00"); //Who came?
+	AI_Output(self, hero, "Info_Mod_Margarethe_Hi_A_17_01"); //The sons of bitches! and then she was taken to prison. I was trying to help....
 
 	Mod_AnnaQuest += 1;
 	
@@ -95,7 +95,7 @@ FUNC VOID Info_Mod_Margarethe_Hi_A()
 	{
 		Info_ClearChoices	(Info_Mod_Margarethe_Hi);
 
-		Info_AddChoice	(Info_Mod_Margarethe_Hi, "Weißt du, wer Anna denunziert hat?", Info_Mod_Margarethe_Hi_B);
+		Info_AddChoice	(Info_Mod_Margarethe_Hi, "Do you know who denounced Anna?", Info_Mod_Margarethe_Hi_B);
 	}
 	else
 	{
@@ -123,9 +123,9 @@ FUNC INT Info_Mod_Margarethe_AnnaBefreit_Condition()
 
 FUNC VOID Info_Mod_Margarethe_AnnaBefreit_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Margarethe_AnnaBefreit_17_00"); //Das Gerücht verbreitet sich schon in der ganzen Stadt! Habt ihr wirklich alle getötet?
-	AI_Output(hero, self, "Info_Mod_Margarethe_AnnaBefreit_15_01"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Margarethe_AnnaBefreit_17_02"); //Oh Adanos, uns steht noch Schreckliches bevor!
+	AI_Output(self, hero, "Info_Mod_Margarethe_AnnaBefreit_17_00"); //The rumor is spreading all over town! Did you really kill them all?
+	AI_Output(hero, self, "Info_Mod_Margarethe_AnnaBefreit_15_01"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_Margarethe_AnnaBefreit_17_02"); //Oh Adanos, we still have terrible things to do!
 };
 
 INSTANCE Info_Mod_Margarethe_UlrichKO (C_INFO)
@@ -148,9 +148,9 @@ FUNC INT Info_Mod_Margarethe_UlrichKO_Condition()
 
 FUNC VOID Info_Mod_Margarethe_UlrichKO_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Margarethe_UlrichKO_17_00"); //Das Gerücht verbreitet sich schon in der ganzen Stadt! Ulrich wollte wirklich alle töten?
-	AI_Output(hero, self, "Info_Mod_Margarethe_UlrichKO_15_01"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Margarethe_UlrichKO_17_02"); //Ich kann dir deine Entscheidung nicht verübeln, aber ich heiße sie nicht gut.
+	AI_Output(self, hero, "Info_Mod_Margarethe_UlrichKO_17_00"); //The rumor is spreading all over town! Ulrich really wanted to kill them all?
+	AI_Output(hero, self, "Info_Mod_Margarethe_UlrichKO_15_01"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_Margarethe_UlrichKO_17_02"); //I can't blame you for your decision, but I don't approve of it.
 };
 
 INSTANCE Info_Mod_Margarethe_Freudenspender (C_INFO)
@@ -161,7 +161,7 @@ INSTANCE Info_Mod_Margarethe_Freudenspender (C_INFO)
 	information	= Info_Mod_Margarethe_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Magst du mir etwas Freudenspender abnehmen?";
+	description 	= "Would you like to buy me some delights?";
 };                       
 
 FUNC INT Info_Mod_Margarethe_Freudenspender_Condition()
@@ -176,8 +176,8 @@ FUNC INT Info_Mod_Margarethe_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Margarethe_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Margarethe_Freudenspender_15_00"); //Magst du mir etwas Freudenspender abnehmen?
-	AI_Output(self, hero, "Info_Mod_Margarethe_Freudenspender_17_01"); //Mein Rat ist: Vernichte es. Es richtet nichts Gutes an.
+	AI_Output(hero, self, "Info_Mod_Margarethe_Freudenspender_15_00"); //Would you like to buy me some delights?
+	AI_Output(self, hero, "Info_Mod_Margarethe_Freudenspender_17_01"); //My advice is destroy it. It doesn't do any good.
 };
 
 INSTANCE Info_Mod_Margarethe_Pickpocket (C_INFO)

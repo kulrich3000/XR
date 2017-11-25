@@ -1,7 +1,7 @@
 instance Mod_7574_OUT_Lehrling_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bäckerlehrling"; 
+	name 		= "apprentice baker"; 
 	guild 		= GIL_OUT;
 	id 			= 7574;
 	voice 		= 13;

@@ -1,7 +1,7 @@
 INSTANCE Mod_1190_NOV_Katar_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Katar";
+	name 		= "Qatar";
 	guild 		= GIL_vlk;
 	id 			= 1190;
 	voice 		= 3;

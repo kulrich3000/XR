@@ -1,7 +1,7 @@
 instance Mod_7339_HS_Geliebte_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königliche Geliebte"; 
+	name 		= "Royal Beloved"; 
 	guild 		= GIL_OUT;
 	id 			= 7339;
 	voice 		= 17;

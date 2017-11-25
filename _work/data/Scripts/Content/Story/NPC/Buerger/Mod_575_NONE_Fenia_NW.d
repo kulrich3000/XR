@@ -1,7 +1,7 @@
 instance Mod_575_NONE_Fenia_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fenia";	//Halvors Frau
+	name 		= "fenia";	//Halvors Frau
 	guild 		= GIL_PAL;
 	id 			= 575;
 	voice 		= 17;

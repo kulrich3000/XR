@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Moe_Hi_Condition()
 
 FUNC VOID Info_Mod_Moe_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_00"); //Ein Fremder auf Erkundungstour durch das Hafenviertel?
-	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_01"); //Dann solltest du hier nicht einfach vorbei gehen.
-	AI_Output(hero, self, "Info_Mod_Moe_Hi_15_02"); //Was für ein Gebäude ist das da hinter dir?
-	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_03"); //Das ist Kardifs Kneipe, der Mittelpunkt des Hafenviertels. Neben der Roten Laterne. (lacht) Wenn du was trinken oder wissen willst, komm hierher.
+	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_00"); //A stranger exploring the harbour district?
+	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_01"); //Then you shouldn't just walk by here.
+	AI_Output(hero, self, "Info_Mod_Moe_Hi_15_02"); //What kind of building is that behind you?
+	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_03"); //This is Kardif's pub, the centre of the harbour district. Next to the red lantern. (laughs) If you want something to drink or know, come here.
 };
 
 INSTANCE Info_Mod_Moe_Geruechte (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Moe_Geruechte (C_INFO)
 	information	= Info_Mod_Moe_Geruechte_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gibt es zur Zeit interessante Gerüchte?";
+	description	= "Are there any interesting rumors at the moment?";
 };
 
 FUNC INT Info_Mod_Moe_Geruechte_Condition()
@@ -44,72 +44,72 @@ FUNC INT Info_Mod_Moe_Geruechte_Condition()
 
 FUNC VOID Info_Mod_Moe_Geruechte_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_15_00"); //Gibt es zur Zeit interessante Gerüchte?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_29_01"); //Etliches, etliches. Man muss nur wissen, das Seemannsgarn von den Fakten zu trennen, dann lässt sich mit den Informationen sogar was anfangen ...
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_29_02"); //Hast du zum Beispiel schon von dem Schicksal des bedauernswerten Malers Johannes Port gehört?
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_15_00"); //Are there any interesting rumors at the moment?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_29_01"); //Quite a few, quite a few. You just have to know how to separate the sailor's yarn from the facts, and then the information can even make a difference?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_29_02"); //Have you heard about the fate of the unfortunate painter Johannes Port, for example?
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Nein, das interessiert mich aber auch nicht.", Info_Mod_Moe_Geruechte_B);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Nein, erzähl mehr.", Info_Mod_Moe_Geruechte_A);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "No, I don't care about that either.", Info_Mod_Moe_Geruechte_B);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "No, tell me more.", Info_Mod_Moe_Geruechte_A);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte_B()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_B_15_00"); //Nein, das interessiert mich aber auch nicht.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_B_29_01"); //Schade, vielleicht später.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_B_15_00"); //No, I don't care about that either.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_B_29_01"); //Too bad, maybe later.
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte_A()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_A_15_00"); //Nein, erzähl mehr.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_01"); //(schwärmerisch) Johannes Port ... ah, das war ein Maler. Weltberühmt für seine Landschaftsmalereien. Es gibt nicht viele Künstler, die schon im Leben so viel Ruhm erlangt haben wie er.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_02"); //Eigentlich lebte er in Myrtana, aber die Suche nach Motiven trieb ihn in der ganzen Welt 'rum. Tja, und darunter war eben die, die seine letzte werden sollte.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_03"); //Die Küstengegend von Khorinis interessierte ihn anscheinend sehr, jedenfalls brach er vor kurzer Zeit auf einem Schiffskutter hierher auf.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_04"); //Die Besatzung wollte im Hafen ihre Netze auswerfen und Port seine Bilder malen, aber das ging nicht lange gut. Das Schiff kenterte und ging unweit der großen Insel vor dem Hafen unter.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_05"); //Niemand konnte nachher sagen, wieso, außer man glaubt den Geschichten vom rachsüchtigen Meeresgott.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_06"); //'N Teil der Besatzung konnte gerettet werden, aber Port war nicht darunter. Einer der Seeleute, die mit ihm unterwegs gewesen waren, sprach zu mir davon, dass Port 'nen großen Teil seiner Ausrüstung sowie einige bereits fertig gestellte Gemälde dabei hatte.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_07"); //Nun, diese Wertstücke dürften noch in dem Schiffswrack zu finden sein, denn bisher sind noch keine Trupps zur Überprüfung dorthin geschickt worden und der Kreis der Personen, die von der Sache wissen, ist sehr begrenzt.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_A_15_00"); //No, tell me more.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_01"); //Johannes Port... ah, that was a painter. World famous for his landscape paintings. There are not many artists who have achieved as much fame as he has in life.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_02"); //He actually lived in Myrtana, but the search for motifs drove him all over the world. Well, and underneath was the one who was supposed to be his last.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_03"); //He seemed to be very interested in the coastal area of Khorinis, but he recently left here on a ship's cutter.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_04"); //The crew wanted to eject their nets in the harbour and Port wanted to paint his pictures, but that didn't go well for long. The ship capsized and sank not far from the big island in front of the harbour.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_05"); //No one could later tell why, unless you believe the stories of the vengeful sea god.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_06"); //Part of the crew could be rescued, but Port was not among them. One of the seafarers who had been with him spoke to me about the fact that Port' nen had a large part of his equipment and some finished paintings with him.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_07"); //Well, these treasures may still be in the shipwreck, because so far no troops have been sent there for inspection and the circle of people who know about the matter is very limited.
 
 	Log_CreateTopic	(TOPIC_MOD_MOE_PORT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MOE_PORT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Vor wenigen Tagen ist aus unerklärlichen Gründen ein Schiffskutter vor dem Hafen von Khorinis gesunken. Wenn man Moe glauben darf, befand sich der bekannte Maler Johannes Port mit einem Teil seiner Ausrüstung an Bord. Wohin Port verschwunden ist, weiß niemand, aber sein 'Schatz' könnte sich noch an Bord des Schiffswracks befinden.");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "A few days ago, for some inexplicable reasons, a ship's cutter sank in front of the port of Khorinis. If you can believe Moe, the famous painter Johannes Port was on board with some of his equipment. No one knows where Port has disappeared to, but his' treasure' could still be on board the shipwreck.");
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Du meinst, da ist was zu holen ...", Info_Mod_Moe_Geruechte_D);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Was ist nun mit Port passiert?", Info_Mod_Moe_Geruechte_C);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "You mean there's something to get....", Info_Mod_Moe_Geruechte_D);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "So what happened to Port?", Info_Mod_Moe_Geruechte_C);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte_D()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_00"); //Du meinst, da ist was zu holen ...
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_01"); //(geheimnisvoll) Das könnte schon sein...
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_02"); //Aber warum erzählst du gerade mir davon?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_03"); //Du siehst mir nicht wie einer dieser Banditen aus, die die Bilder gleich beim nächsten Hehler zu Gold machen würden.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_04"); //Ich fände es besser, sie bei einem Kunstverständigen abzugeben. Der sicher auch 'ne Menge zahlen würde.
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_05"); //An welchen "Kunstverständigen" hast du dabei gedacht?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_06"); //Brahim, den Kartenverkäufer. Du findest ihn hier gleich um die Ecke in Richtung des Lagerhauses.
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_07"); //Wieso holst du dir den Schatz nicht selbst?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_08"); //Meine abenteuerlustigen Jahre sind vorbei, Junge. Ich habe genug Geld, um mir das zu kaufen, was ich brauche. Was soll ich da mit zusätzlicher Aufregung?
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_00"); //You mean there's something to get....
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_01"); //That could be...
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_02"); //But why are you telling me about this?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_03"); //You don't look like one of those bandits who would turn the pictures into gold at the next fence.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_04"); //I'd rather hand it in to an art expert. I bet he'd pay a lot of money.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_05"); //An welchen "art experts" hast du dabei gedacht?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_06"); //Brahim, the ticket vendor. You'll find him right around the corner towards the warehouse.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_07"); //Why don't you go get the treasure yourself?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_08"); //My adventurous years are over, boy. I have enough money to buy what I need. What am I supposed to do with extra excitement?
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Brahim, der Kartenverkäufer im Hafenviertel, ist meine erste Ansprechperson, wenn ich den Schatz gefunden haben sollte.");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Brahim, the ticket seller in the harbour district, is my first point of contact when I should have found the treasure.");
 
 	Moe_KnowsPort = 1;
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte_C()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_C_15_00"); //Was ist nun mit Port passiert?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_C_29_01"); //Das weiß keiner. Entweder ist seine Leiche im Wrack oder am Meeresboden, oder er hat sich ans Festland retten können. Aber das ist unwahrscheinlich, dann hätte man wohl schon von ihm gehört.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_C_15_00"); //So what happened to Port?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_C_29_01"); //No one knows. Either his body's in the wreck or on the seabed, or he's been able to save himself on the mainland. But that's unlikely, and you would have heard of him by now.
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Du meinst, da ist was zu holen ...", Info_Mod_Moe_Geruechte_D);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "You mean there's something to get....", Info_Mod_Moe_Geruechte_D);
 };
 
 INSTANCE Info_Mod_Moe_Geruechte2 (C_INFO)
@@ -133,7 +133,7 @@ FUNC INT Info_Mod_Moe_Geruechte2_Condition()
 
 FUNC VOID Info_Mod_Moe_Geruechte2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte2_29_00"); //Hey! Ich hab' Neuigkeiten, die dich interessieren könnten.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte2_29_00"); //Hey! I've got news you might be interested in.
 };
 
 INSTANCE Info_Mod_Moe_Geruechte3 (C_INFO)
@@ -144,7 +144,7 @@ INSTANCE Info_Mod_Moe_Geruechte3 (C_INFO)
 	information	= Info_Mod_Moe_Geruechte3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du Neues?";
+	description	= "What do you know of anything new?";
 };
 
 FUNC INT Info_Mod_Moe_Geruechte3_Condition()
@@ -158,12 +158,12 @@ FUNC INT Info_Mod_Moe_Geruechte3_Condition()
 
 FUNC VOID Info_Mod_Moe_Geruechte3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_15_00"); //Was weißt du Neues?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_29_01"); //Canthar ist wieder in der Stadt. Er hat Valentino entführt, den wohlhabenden Arschkriecher.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_15_00"); //What do you know of anything new?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_29_01"); //Canthar's back in town. He kidnapped Valentino, the wealthy ass-kisser.
 
 	Log_CreateTopic	(TOPIC_MOD_MOE_VALENTINO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MOE_VALENTINO, LOG_RUNNING);
-	B_LogEntry_More	( TOPIC_MOD_CANTHAR_GESCHAEFTE, TOPIC_MOD_MOE_VALENTINO, "Canthar ist, wie angekündigt, zurückgekehrt, um Rache an mir zu nehmen.", "Valentino wurde entführt, und zwar von Canthar, der ihn gegen mich eintauschen möchte. Lord Andre traut sich jedoch nicht, irgendetwas zu unternehmen, also liegt es an mir, den Fall zu beenden.");
+	B_LogEntry_More	( TOPIC_MOD_CANTHAR_GESCHAEFTE, TOPIC_MOD_MOE_VALENTINO, "Canthar has returned, as announced, to take revenge on me.", "Valentino was kidnapped by Canthar, who wants to trade him for me. Lord Andre doesn't dare to do anything, so it's up to me to end the case.");
 
 	B_StartOtherRoutine	(Mod_754_NONE_Valentino_NW, "TOT");
 
@@ -174,79 +174,79 @@ FUNC VOID Info_Mod_Moe_Geruechte3_Info()
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Valentino?! Den kann er behalten!", Info_Mod_Moe_Geruechte3_B);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Und woher weißt du, dass Canthar der Entführer ist?", Info_Mod_Moe_Geruechte3_A);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Valentino?! He can keep that!", Info_Mod_Moe_Geruechte3_B);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "And how do you know that Canthar is the kidnapper?", Info_Mod_Moe_Geruechte3_A);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_D()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_D_15_00"); //Das war ja zu erwarten ...
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_01"); //Valentino ist 'n beliebter Mann, vor allem beim weiblichen Volk und bei den Wirten.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_02"); //Sollte sich Canthars Forderung 'rumsprechen, würden die meisten einen Tausch fordern - ihn gegen dich.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_03"); //Lord Andre kann nichts dagegen unternehmen: Was er auch macht, Menschenleben stehen auf dem Spiel.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_04"); //Er wird seine korrupten Stadtwachen nicht gegen Canthar einsetzen, weil er dessen Stärke kennt.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_05"); //Es bleibt also an dir hängen. Du musst versuchen, Valentino zu befreien, damit Canthar kein Druckmittel mehr in der Hand hat.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_06"); //Denk aber daran, dass ihn das nur kurzfristig aufhalten wird. Du hast ihm seinen Coup versaut, und er will sich rächen.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_D_15_00"); //That was to be expected....
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_01"); //Valentino is a popular man, especially with the female people and landlords.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_02"); //If Canthar's demand gets around, most people would ask for an exchange - him for you.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_03"); //Lord Andre can't do anything about it: Whatever he does, lives are at stake.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_04"); //He won't use his corrupt city guards against Canthar because he knows his strength.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_05"); //So it's up to you. You have to try to free Valentino so Canthar doesn't have leverage in his hands anymore.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_06"); //But remember, this will only stop him for a short time. You fucked up his score, and he wants revenge.
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Soll Canthar doch kommen, für Valentino setze ich mein Leben (...)", Info_Mod_Moe_Geruechte3_F);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Wo wird Valentino festgehalten?", Info_Mod_Moe_Geruechte3_E);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Let Canthar come after all, for Valentino I put my life (.... )", Info_Mod_Moe_Geruechte3_F);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Where is Valentino being held?", Info_Mod_Moe_Geruechte3_E);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_B()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_B_15_00"); //Valentino?! Den kann er behalten!
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_B_29_01"); //Ihm geht es nicht um Valentino... er will dich!
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_B_15_00"); //Valentino?! He can keep that!
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_B_29_01"); //He's not about Valentino... he wants you!
 
 	Info_Mod_Moe_Geruechte3_D();
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_A()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_A_15_00"); //Und woher weißt du, dass Canthar der Entführer ist?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_A_29_01"); //Er hat kein Lösegeld gefordert ...
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_A_15_02"); //Was denn sonst?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_A_29_03"); //Na, dich.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_A_15_00"); //And how do you know that Canthar is the kidnapper?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_A_29_01"); //He didn't ask for a ransom...
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_A_15_02"); //What else is there to it?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_A_29_03"); //Well, you.
 
 	Info_Mod_Moe_Geruechte3_D();
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_F()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_F_15_00"); //Soll Canthar doch kommen, für Valentino setze ich mein Leben nicht aufs Spiel.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_F_29_01"); //In dem Fall weichst du nur dem Unabwendbaren aus. Wenn du deine Entscheidung geändert ist, geh ins Obere Viertel und suche nach Valentine, Valentinos Schwester.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_F_15_00"); //I don't want Canthar to come, but I'm not risking my life for Valentino.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_F_29_01"); //In that case, you're just evading the inevitable. If you've changed your mind, go to the Upper Quarter and look for Valentine, Valentino's sister.
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 
-	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Ich soll zu Valentinos Schwester Valentine im Oberviertel gehen; sie weiß möglicherweise, wo ihr Bruder festgehalten wird.");
+	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "I'm supposed to go to Valentino's sister Valentine in the upper quarter; she may know where her brother's being held.");
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_E()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_E_15_00"); //Wo wird Valentino festgehalten?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_E_29_01"); //Das kann ich dir nicht sagen, aber seine Schwester Valentine weiß darüber Bescheid. Du findest sie im Oberen Viertel.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_E_15_00"); //Where is Valentino being held?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_E_29_01"); //I can't tell you that, but his sister Valentine knows about it. You'll find them in the upper district.
 
-	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Ich soll zu Valentinos Schwester Valentine im Oberviertel gehen; sie weiß möglicherweise, wo ihr Bruder festgehalten wird.");
+	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "I'm supposed to go to Valentino's sister Valentine in the upper quarter; she may know where her brother's being held.");
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Woher weißt du das alles über Canthar (...)", Info_Mod_Moe_Geruechte3_H);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Danke für die Informationen. Du bist eine echte Hilfe.", Info_Mod_Moe_Geruechte3_G);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "How do you know all this about Canthar? )", Info_Mod_Moe_Geruechte3_H);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Thanks for the information. You're a real help.", Info_Mod_Moe_Geruechte3_G);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_G()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_G_15_00"); //Danke für die Informationen. Du bist eine echte Hilfe.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_G_29_01"); //(nachdrücklich) Diese Scheiße sollte endlich gestoppt werden. Wer geht schon noch bei uns in die Kneipe, wenn ihm seine ganzen Mäuse gestohlen wurden?
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_G_15_00"); //Thanks for the information. You're a real help.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_G_29_01"); //This shit should finally be stopped. Who goes to the pub when all his mice have been stolen?
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_H()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_H_15_00"); //Woher weißt du das alles über Canthar und sein Verhältnis zu mir?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_H_29_01"); //Brahim hält mir gegenüber nicht dicht. Zumindest nicht nach ein paar Humpen. (lacht) Den Rest erfahre ich von Reisenden.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_H_15_00"); //How do you know all this stuff about Canthar and his relationship with me?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_H_29_01"); //Brahim won't hold me back. At least not after a few rags. (laughs) I hear the rest from travellers.
 	
 	Info_Mod_Moe_Geruechte3_G();
 };
@@ -259,7 +259,7 @@ INSTANCE Info_Mod_Moe_Geruechte4 (C_INFO)
 	information	= Info_Mod_Moe_Geruechte4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Später vielleicht ...";
+	description	= "Later maybe...";
 };
 
 FUNC INT Info_Mod_Moe_Geruechte4_Condition()
@@ -273,7 +273,7 @@ FUNC INT Info_Mod_Moe_Geruechte4_Condition()
 
 FUNC VOID Info_Mod_Moe_Geruechte4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte4_15_00"); //Später vielleicht...
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte4_15_00"); //Later maybe...
 	
 	AI_StopProcessInfos	(self);
 };
@@ -286,7 +286,7 @@ INSTANCE Info_Mod_Moe_AllievoTot (C_INFO)
 	information	= Info_Mod_Moe_AllievoTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich konnte Valentino befreien und einen Schüler von Canthar erledigen.";
+	description	= "I was able to free Valentino and take out a student of Canthar's.";
 };
 
 FUNC INT Info_Mod_Moe_AllievoTot_Condition()
@@ -299,17 +299,17 @@ FUNC INT Info_Mod_Moe_AllievoTot_Condition()
 
 FUNC VOID Info_Mod_Moe_AllievoTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_00"); //Ich konnte Valentino befreien und einen Schüler von Canthar erledigen.
-	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_01"); //Das mit Valentino hab ich schon gehört, aber was für ein Schüler soll das gewesen sein?
-	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_02"); //Sein Name war Allievo.
-	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_03"); //Allievo? Verflucht, wenn dir das keinen Ärger einbringt ...
-	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_04"); //Wieso sollte es das?
-	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_05"); //Es heißt, Allievo sei Canthars Sohn gewesen. Du stehst jetzt wahrscheinlich noch höher auf seiner Abschussliste, wenn das noch geht.
-	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_06"); //Also, pass auf deinen Arsch auf. Ich sag dir Bescheid, wenn ich Neues in Erfahrung bringe.
+	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_00"); //I was able to free Valentino and take out a student of Canthar's.
+	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_01"); //I've heard about Valentino, but what kind of student was that?
+	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_02"); //His name was Allievo.
+	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_03"); //Allievo? Damn it, if that won't bring you any trouble...
+	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_04"); //Why would it do that?
+	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_05"); //They say Allievo was Canthar's son. You're probably on his hit list now, if that's still possible.
+	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_06"); //So, watch your ass. I'll let you know when I get something new.
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Oh ... Wenn Allievo wirklich der Sohn von Canthar war, dürfte das auf noch mehr Ärger hinauslaufen ... Ich sollte von nun an wirklich vorsichtig sein.");
+	B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Oh... If Allievo really was the son of Canthar, it would be even more trouble.... I should be really careful from now on.");
 	
 	AI_StopProcessInfos	(self);
 };
@@ -322,7 +322,7 @@ INSTANCE Info_Mod_Moe_AufgebrachteFrau (C_INFO)
 	information	= Info_Mod_Moe_AufgebrachteFrau_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du zufällig, warum ich auf einmal auf offener Straße als Schlächter bezeichnet werde?";
+	description	= "Do you happen to know why I'm suddenly being called a butcher on the open road?";
 };
 
 FUNC INT Info_Mod_Moe_AufgebrachteFrau_Condition()
@@ -335,16 +335,16 @@ FUNC INT Info_Mod_Moe_AufgebrachteFrau_Condition()
 
 FUNC VOID Info_Mod_Moe_AufgebrachteFrau_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_00"); //Weißt du zufällig, warum ich auf einmal auf offener Straße als Schlächter bezeichnet werde?
-	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_01"); //Ja, das kann ich mir zumindest denken. Ich hatte ja bereits angekündigt, dass Canthar jetzt nicht mehr von dir lassen wird, Kumpel.
-	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_02"); //Keine Ahnung, was er sich diesmal einfallen lassen hat, aber es sieht ganz nach Verleumdung aus. (Pause) Die schmutzige Sache mit Allievo hättest du dir halt sparen sollen.
-	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_03"); //Was soll ich denn jetzt machen?
-	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_04"); //Heul nicht gleich rum und lass dich überraschen. Wenn du die Scheiße nicht abwenden kannst, bevor sie über dich hineinbricht, musst du dich eben durchwühlen.
-	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_05"); //Danke für die schlauen Sprüche.
-	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_06"); //Du wirst es schon überstehen.
-	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_07"); //Wir werden sehen.
+	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_00"); //Do you happen to know why I'm suddenly being called a butcher on the open road?
+	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_01"); //Yeah, I can at least guess so. I've already announced Canthar's not gonna let you go, buddy.
+	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_02"); //I don't know what he came up with this time, but it looks like slander. You should've saved yourself the filthy business with Allievo.
+	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_03"); //What am I supposed to do now?
+	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_04"); //Don't cry now and let me surprise you. If you can't avert that shit before it breaks into you, you're gonna have to go through it.
+	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_05"); //Thanks for the smart stuff.
+	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_06"); //You'll be all right.
+	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_07"); //We'll see about that.
 
-	B_LogEntry_More	(TOPIC_MOD_CANTHAR_GESCHAEFTE, TOPIC_MOD_MOE_TALK, "Canthar will weiterhin seine Rache und fordert erneut mein Geschick heraus.", "Die aufgebrachte Frau deutet darauf hin, dass Canthar es nun mit Verleumdung versucht. Moe meint, es sei am besten, wenn ich das Unglück erst bekämpfe, sobald ich konkrete Hinweise habe.");
+	B_LogEntry_More	(TOPIC_MOD_CANTHAR_GESCHAEFTE, TOPIC_MOD_MOE_TALK, "Canthar still wants his revenge and once again challenges my skill.", "The angry woman suggests that Canthar is now trying to slander him. Moe thinks it's best if I don't fight the misfortune until I have specific clues.");
 
 	Mod_MoeTalkedAboutNoTalk = Wld_GetDay();
 };
@@ -370,9 +370,9 @@ FUNC INT Info_Mod_Moe_DontTalk_Condition()
 
 FUNC VOID Info_Mod_Moe_DontTalk_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Moe_DontTalk_29_00"); //Stimmt es? Stimmt es, was die Anschläge sagen?
-	AI_Output(hero, self, "Info_Mod_Moe_DontTalk_15_01"); //Was sagen die Anschläge denn?
-	AI_Output(self, hero, "Info_Mod_Moe_DontTalk_29_02"); //Hier. Du solltest es dir wirklich ansehen.
+	AI_Output(self, hero, "Info_Mod_Moe_DontTalk_29_00"); //Is it true? Is it true what the attacks say?
+	AI_Output(hero, self, "Info_Mod_Moe_DontTalk_15_01"); //What do the attacks say?
+	AI_Output(self, hero, "Info_Mod_Moe_DontTalk_29_02"); //Here. You really should see it.
 
 	B_GiveInvItems	(self, hero, ItWr_Anschlag, 1);
 
@@ -402,24 +402,24 @@ FUNC VOID Info_Mod_Moe_ErsterAnschlag_Info()
 {
 	Info_ClearChoices	(Info_Mod_Moe_ErsterAnschlag);
 
-	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Der Bastard hat es verdient, so zu enden!", Info_Mod_Moe_ErsterAnschlag_C);
-	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Ich habe Allievo im Kampf getötet, aber nicht hingerichtet.", Info_Mod_Moe_ErsterAnschlag_B);
-	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Siehst du nicht, dass das Canthars Blendwerk ist?", Info_Mod_Moe_ErsterAnschlag_A);
+	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Bastard deserves to end up like this!", Info_Mod_Moe_ErsterAnschlag_C);
+	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "I killed Allievo in battle, but I didn't execute him.", Info_Mod_Moe_ErsterAnschlag_B);
+	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Can't you see that this is Canthar's fantasy?", Info_Mod_Moe_ErsterAnschlag_A);
 };
 
 FUNC VOID Info_Mod_Moe_ErsterAnschlag_D()
 {
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_00"); //Scheiße, Mann, ich hatte gehofft, dass du so etwas sagst.
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_01"); //Überall auf Khorinis hängen diese Plakate jetzt rum. Alle haben davon erfahren, keiner will noch mit dir zu tun haben.
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_02"); //Ich weiß allerdings, wie viele Plakate es gibt: eines findest du im Kloster, eins jeweils auf dem Hof von Bengar, Onar und Lobart, und drei hängen hier in der Stadt aus, an sehr zugänglichen Stellen, habe ich mir sagen lassen.
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_03"); //Das heißt, ich muss alle Plakate abnehmen?
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_04"); //Ich würde solche Bilder von mir nicht sehen wollen.
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_05"); //Findest du nicht, dass die Nase schlecht getroffen ist? Deine sieht aus wie eine Rübe, aber auf dem Anschlag ist sie eher birnenförmig.
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_06"); //Ich habe bisher selten in einen Spiegel geschaut.
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_07"); //Ist ja gut, Kumpel. Also, wenn du die verdammten Plakate in einer Siedlung entfernt hast, sollte es nicht lange dauern, bis die Bewohner dort wieder mit dir plaudern wie eh und je. Du weißt ja, wie sie sind. (lacht)
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_08"); //Ich mache mich gleich auf den Weg.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_00"); //Shit, man, I was hoping you'd say something like that.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_01"); //These posters are all over Khorinis now. No one wants to have anything to do with you.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_02"); //I do know, however, how many posters there are: one in the monastery, one each in the courtyard of Bengar, Onar and Lobart, and three in the city, in very accessible places, I let myself be told.
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_03"); //Does that mean I have to take off all the posters?
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_04"); //I wouldn't want to see those pictures of me.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_05"); //Don't you think the nose is badly shot? Yours looks like a turnip, but it's more like a pear on the line.
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_06"); //I've rarely looked in a mirror before.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_07"); //It's all right, buddy. So, if you've removed the damn posters in a settlement, it shouldn't be long before the people there chatting with you again as they have always been. You know how they are. (laughs)
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_08"); //I'll be right on my way.
 
-	B_LogEntry	(TOPIC_MOD_MOE_TALK, "Die Gründe für das fortlaufende Schweigen hängen in ganz Khorinis aus: Es sind Plakate mit Verunglimpfungen meiner Person. Diese Anschläge an Orten des öffentlichen Lebens, drei Stück in Khorinis und jeweils eins im Kloster und an den Höfen von Bengar, Onar und Lobart, sollte ich schnellstmöglich entfernen, damit die dort ansässige Bevölkerung wieder mit mir spricht.");
+	B_LogEntry	(TOPIC_MOD_MOE_TALK, "The reasons for the continuing silence are all over Khorinis: they are posters with disparagement of my person. These attacks in places of public life, three plays in Khorinis and one each in the monastery and at the courtyards of Bengar, Onar and Lobart, I should remove as soon as possible so that the local population can talk to me again.");
 
 	Wld_InsertItem	(ItWr_Anschlag_City, "FP_ITEM_ANSCHLAG_CITY_01");
 	Wld_InsertItem	(ItWr_Anschlag_City, "FP_ITEM_ANSCHLAG_CITY_02");
@@ -436,22 +436,22 @@ FUNC VOID Info_Mod_Moe_ErsterAnschlag_D()
 
 FUNC VOID Info_Mod_Moe_ErsterAnschlag_B()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_B_15_00"); //Ich habe Allievo im Kampf getötet, aber nicht hingerichtet.
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_B_15_00"); //I killed Allievo in battle, but I didn't execute him.
 
 	Info_Mod_Moe_ErsterAnschlag_D();
 };
 
 FUNC VOID Info_Mod_Moe_ErsterAnschlag_A()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_A_15_00"); //Siehst du nicht, dass das Canthars Blendwerk ist?
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_A_15_00"); //Can't you see that this is Canthar's fantasy?
 
 	Info_Mod_Moe_ErsterAnschlag_D();
 };
 
 FUNC VOID Info_Mod_Moe_ErsterAnschlag_C()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_C_15_00"); //Der Bastard hat es verdient, so zu enden!
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_C_29_01"); //Es tut mir Leid, ich dachte, wir stehen auf einer Seite. Jetzt muss ich aber sehen, dass du auch nicht besser bist als Canthar. Geh mir aus den Augen.
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_C_15_00"); //Bastard deserves to end up like this!
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_C_29_01"); //I'm sorry, I thought we were on one side. Now I have to see that you're no better than Canthar. Get out of my sight.
 	
 	Info_ClearChoices	(Info_Mod_Moe_ErsterAnschlag);
 
@@ -471,7 +471,7 @@ INSTANCE Info_Mod_Moe_Anschlaege (C_INFO)
 	information	= Info_Mod_Moe_Anschlaege_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du die Anschläge, du kannst sie entsorgen.";
+	description	= "Here you have the attacks, you can dump them.";
 };
 
 FUNC INT Info_Mod_Moe_Anschlaege_Condition()
@@ -485,23 +485,23 @@ FUNC INT Info_Mod_Moe_Anschlaege_Condition()
 
 FUNC VOID Info_Mod_Moe_Anschlaege_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_00"); //Hier hast du die Anschläge, du kannst sie entsorgen.
+	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_00"); //Here you have the attacks, you can dump them.
 
 	B_GiveInvItems	(hero, self, ItWr_Anschlag, Npc_HasItems(hero, ItWr_Anschlag));
 
-	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_01"); //(mürrisch) Sind das alle?
-	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_02"); //Ja.
+	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_01"); //Is that everyone?
+	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_02"); //Yeah.
 	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_03"); //...
-	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_04"); //Was ist denn mit dir los?
-	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_05"); //Ich habe heute einen Zettel zugesteckt bekommen.
-	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_06"); //Und?
-	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_07"); //Hier.
+	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_04"); //What's the matter with you?
+	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_05"); //I got stuck with a note today.
+	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_06"); //And?
+	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_07"); //Here.
 
 	B_GiveInvItems	(self, hero, ItWr_MoesZettel, 1);
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry	(TOPIC_MOD_MOE_TALK, "Ich habe die Anschläge abgeliefert.");
+	B_LogEntry	(TOPIC_MOD_MOE_TALK, "I delivered the attacks.");
 	B_SetTopicStatus	(TOPIC_MOD_MOE_TALK, LOG_SUCCESS);
 
 	AI_StopProcessInfos	(self);
@@ -517,7 +517,7 @@ INSTANCE Info_Mod_Moe_Zettel (C_INFO)
 	information	= Info_Mod_Moe_Zettel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verstehe.";
+	description	= "I see.";
 };
 
 FUNC INT Info_Mod_Moe_Zettel_Condition()
@@ -531,14 +531,14 @@ FUNC INT Info_Mod_Moe_Zettel_Condition()
 
 FUNC VOID Info_Mod_Moe_Zettel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_00"); //Verstehe.
-	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_01"); //Mach den Fall allein weiter, ja, Kumpel?
-	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_02"); //Willst du dich etwa unterkriegen lassen?
-	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_03"); //Nein ... ja, ist in Ordnung. Ich helfe dir weiterhin. (Pause) Aber such mich so selten auf wie möglich.
-	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_04"); //Geht klar. Pass auf deinen Rücken auf.
-	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_05"); //Ich weiß schon gar nicht mehr, wo er ist ...
+	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_00"); //I see.
+	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_01"); //Go on with the case alone, will you, mate?
+	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_02"); //Are you trying to get yourself killed?
+	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_03"); //No... Yeah, it's all right. I'll keep helping you. (pause) But don't come to see me often enough.
+	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_04"); //You got it. Watch your back.
+	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_05"); //I don't even know where he is anymore...
 
-	B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Moe hat eine kryptische Drohung erhalten, er will mir jedoch weiterhin helfen.");
+	B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Moe received a cryptic threat, but he still wants to help me.");
 };
 
 INSTANCE Info_Mod_Moe_Shakir (C_INFO)
@@ -549,7 +549,7 @@ INSTANCE Info_Mod_Moe_Shakir (C_INFO)
 	information	= Info_Mod_Moe_Shakir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Moe. Ich brauche eine Frau.";
+	description	= "Hello, Moe. I need a woman.";
 };
 
 FUNC INT Info_Mod_Moe_Shakir_Condition()
@@ -562,19 +562,19 @@ FUNC INT Info_Mod_Moe_Shakir_Condition()
 
 FUNC VOID Info_Mod_Moe_Shakir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_00"); //Hallo, Moe. Ich brauche eine Frau.
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_01"); //Du willst heiraten?
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_02"); //Nein. Nur mal eben so.
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_03"); //Aha. Wieso gehst du nicht zu Bromor? Er hat die Auswahl.
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_04"); //Der will mir keine mitgeben.
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_05"); //Schäferstündchen im trauten Heim? Im Kerzenlicht und so?
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_06"); //Genau.
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_07"); //Dann frag mal Edda. Die kennt alle Frauen im Viertel.
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_00"); //Hello, Moe. I need a woman.
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_01"); //You want to get married?
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_02"); //No. Just like that.
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_03"); //Uh-huh. Why don't you go to Bromor? He has a choice.
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_04"); //He won't give me one.
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_05"); //Shepherd's hour in the home? In candlelight and all that?
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_06"); //Exactly.
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_07"); //Well, ask Edda. She knows all the women in the neighborhood.
 	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_08"); //Edda?
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_09"); //Die macht die Suppenküche. Hinter dem Haus vom Fischverkäufer.
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_10"); //Danke erst mal.
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_09"); //She's in the soup kitchen. Behind the fish vendor's house.
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_10"); //Thank you first.
 
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Moe schickt mich zur Suppen-Edda. Die kennt alle Frauen im Viertel.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Moe sent me to the soup edda. She knows all the women in the neighborhood.");
 };
 
 INSTANCE Info_Mod_Moe_Sumpfkraut (C_INFO)
@@ -585,7 +585,7 @@ INSTANCE Info_Mod_Moe_Sumpfkraut (C_INFO)
 	information	= Info_Mod_Moe_Sumpfkraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mal angenommen ich wollte Sumpfkraut kaufen ...";
+	description	= "Suppose I wanted to buy swampweed...";
 };
 
 FUNC INT Info_Mod_Moe_Sumpfkraut_Condition()
@@ -598,10 +598,10 @@ FUNC INT Info_Mod_Moe_Sumpfkraut_Condition()
 
 FUNC VOID Info_Mod_Moe_Sumpfkraut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Sumpfkraut_15_00"); //Mal angenommen ich wollte Sumpfkraut kaufen ...
-	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_01"); //He, Mann, wir sind hier im Hafenviertel. Hier gibt es alles Verruchte, was Spaß macht ... (grinsend) und was die feinen Herren vom Orden nicht so gerne sehen.
-	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_02"); //Freudenmädchen, Glückspiel, Schlägereien für Geld ... und natürlich auch den einen oder anderen harzigen Stängel.
-	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_03"); //Du musst dich nur bei den Leuten im Hafenviertel etwas umhören.
+	AI_Output(hero, self, "Info_Mod_Moe_Sumpfkraut_15_00"); //Suppose I wanted to buy swampweed...
+	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_01"); //Hey, man, we're in the waterfront. Here you'll find everything that's fun... (smiling) and what the fine gentlemen of the order do not like to see.
+	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_02"); //Girl of joy, gambling, fights for money.... and of course also some resinous stems.
+	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_03"); //All you have to do is ask the people in the waterfront a few questions.
 };
 
 INSTANCE Info_Mod_Moe_Flugblaetter (C_INFO)
@@ -612,7 +612,7 @@ INSTANCE Info_Mod_Moe_Flugblaetter (C_INFO)
 	information	= Info_Mod_Moe_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "I've got a flyer for you.";
 };
 
 FUNC INT Info_Mod_Moe_Flugblaetter_Condition()
@@ -633,11 +633,11 @@ FUNC VOID Info_Mod_Moe_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Moe_Flugblaetter_29_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Moe_Flugblaetter_29_01"); //Oh, thank you. Thank you. Let's see....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Moe_Flugblaetter_29_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Moe_Flugblaetter_29_02"); //Ah yes. Maybe I'll stop by Matteo's.
 
 	Mod_Flugblaetter += 1;
 };

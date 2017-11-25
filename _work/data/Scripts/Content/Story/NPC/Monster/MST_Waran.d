@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Waran(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Waran";
+	name							=	"Lizard";
 	guild							=	GIL_WARAN;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WARAN;
 	level							=	12;
@@ -89,7 +89,7 @@ INSTANCE Waran_William	(Mst_Default_Waran)
 
 INSTANCE BrandonWaran	(Mst_Default_Waran)
 {
-	name							=	"Strandwaran";
+	name							=	"beach monitor";
 
 	B_SetVisuals_Waran();
 	Npc_SetToFistMode(self);

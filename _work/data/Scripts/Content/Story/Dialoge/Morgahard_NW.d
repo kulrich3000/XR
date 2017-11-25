@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Morgahard_NW_Hi (C_INFO)
 	information	= Info_Mod_Morgahard_NW_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Könntest du uns etwas organisieren?";
+	description	= "Could you organize something for us?";
 };
 
 FUNC INT Info_Mod_Morgahard_NW_Hi_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Morgahard_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Morgahard_NW_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgahard_NW_Hi_15_00"); //Könntest du uns etwas organisieren?
-	AI_Output(self, hero, "Info_Mod_Morgahard_NW_Hi_31_01"); //Ja, ich habe uns ein Lagerhaus im Hafen besorgt. Komm, ich kann es dir zeigen.
+	AI_Output(hero, self, "Info_Mod_Morgahard_NW_Hi_15_00"); //Could you organize something for us?
+	AI_Output(self, hero, "Info_Mod_Morgahard_NW_Hi_31_01"); //Yeah, I got us a warehouse in the harbour. Come on, I can show you.
 
 	B_StartOtherRoutine	(self, "GUIDETOLAGERHAUS");
 	B_StartOtherRoutine	(Mod_1926_BDT_Esteban_NW, "TOT");
@@ -50,9 +50,9 @@ FUNC INT Info_Mod_Morgahard_NW_AtLagerhaus_Condition()
 
 FUNC VOID Info_Mod_Morgahard_NW_AtLagerhaus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Morgahard_NW_AtLagerhaus_31_00"); //Whistler hat seine Leute gleich hierher geschickt.
-	AI_Output(hero, self, "Info_Mod_Morgahard_NW_AtLagerhaus_15_01"); //Und was habe ich jetzt zu tun?
-	AI_Output(self, hero, "Info_Mod_Morgahard_NW_AtLagerhaus_31_02"); //Frag einmal Whistler, er verwaltet das ganze.
+	AI_Output(self, hero, "Info_Mod_Morgahard_NW_AtLagerhaus_31_00"); //Whistler sent his people right here.
+	AI_Output(hero, self, "Info_Mod_Morgahard_NW_AtLagerhaus_15_01"); //And what do I have to do now?
+	AI_Output(self, hero, "Info_Mod_Morgahard_NW_AtLagerhaus_31_02"); //Ask Whistler, he's running the whole thing.
 
 	B_StartOtherRoutine	(self, "ATLAGERHAUS");
 	B_StartOtherRoutine	(Mod_1927_STT_Whistler_NW, "STADT");

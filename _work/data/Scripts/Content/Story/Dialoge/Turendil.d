@@ -19,58 +19,58 @@ FUNC INT Info_Mod_Turendil_Hi_Condition()
 
 FUNC VOID Info_Mod_Turendil_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_05_00"); //Da bist du ja endlich, ich habe schon auf dich gewartet.
-	AI_Output(hero, self, "Info_Mod_Turendil_Hi_15_01"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_05_02"); //Wie du vielleicht schon gehört hast, kommen wir aus Tugettso, einem grünen Tal sehr weit im Westen.
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_05_03"); //Überall wachsen armlange Pflanzen, du hörst das Summen der Honigbienen, das Fiepen einiger leckerer Fleischwanzen ... verdammt, ich schweife ab.
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_05_04"); //Also seit kurzem wird Tugettso von einer Plage heimgesucht.
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_05_00"); //There you are at last, I've been waiting for you.
+	AI_Output(hero, self, "Info_Mod_Turendil_Hi_15_01"); //What's this about?
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_05_02"); //As you may have heard, we come from Tugettso, a green valley very far to the west.
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_05_03"); //There are arm-length plants growing everywhere, you hear the buzzing of honey bees, the whispering of some delicious meat bugs... damn it, I wander.
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_05_04"); //So Tugettso has recently been plagued by a plague.
 
 	Info_ClearChoices	(Info_Mod_Turendil_Hi);
 
-	Info_AddChoice	(Info_Mod_Turendil_Hi, "Interessiert mich nicht.", Info_Mod_Turendil_Hi_B);
-	Info_AddChoice	(Info_Mod_Turendil_Hi, "Was für eine Plage?", Info_Mod_Turendil_Hi_A);
+	Info_AddChoice	(Info_Mod_Turendil_Hi, "I'm not interested.", Info_Mod_Turendil_Hi_B);
+	Info_AddChoice	(Info_Mod_Turendil_Hi, "What plague?", Info_Mod_Turendil_Hi_A);
 };
 
 FUNC VOID Info_Mod_Turendil_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Hi_B_15_00"); //Interessiert mich nicht.
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_B_05_01"); //Bitte! Du bist unsere letzte Hoffnung!
+	AI_Output(hero, self, "Info_Mod_Turendil_Hi_B_15_00"); //I'm not interested.
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_B_05_01"); //Please! You are our last hope!
 
 	Info_ClearChoices	(Info_Mod_Turendil_Hi);
 
-	Info_AddChoice	(Info_Mod_Turendil_Hi, "Wie viel springt denn für mich dabei raus?", Info_Mod_Turendil_Hi_C);
+	Info_AddChoice	(Info_Mod_Turendil_Hi, "How much does it cost me?", Info_Mod_Turendil_Hi_C);
 };
 
 FUNC VOID Info_Mod_Turendil_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Hi_C_15_00"); //Wie viel springt denn für mich dabei raus?
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_C_05_01"); //Es soll dein Schaden nicht sein.
+	AI_Output(hero, self, "Info_Mod_Turendil_Hi_C_15_00"); //How much does it cost me?
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_C_05_01"); //It's not supposed to be your damage.
 
 	Info_ClearChoices	(Info_Mod_Turendil_Hi);
 
-	Info_AddChoice	(Info_Mod_Turendil_Hi, "Was für eine Plage?", Info_Mod_Turendil_Hi_A);
+	Info_AddChoice	(Info_Mod_Turendil_Hi, "What plague?", Info_Mod_Turendil_Hi_A);
 };
 
 FUNC VOID Info_Mod_Turendil_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_00"); //Was für eine Plage?
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_01"); //Eine Goblinplage. Sie fallen in unser Tal ein und knicken unsere Zweige um, machen Feuerholz aus den Bäumen, zerklatschen die Bienen, zertreten die leckeren Fleischwanzen ... ähm, sie sind eben eine Bedrohung.
-	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_02"); //Und ich soll sie alle umbringen? Alleine?
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_03"); //Wir können dir Verstärkung geben. Einen Kämpfer und einen Magier. Außerdem kann ich dir einige Heiltränke zur Verfügung stellen.
-	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_04"); //Hm, na gut.
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_05"); //Vielen Dank! Ich bin dir so unendlich dankbar!
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_06"); //Jetzt wird unser geliebtes Tal gerettet, die Pflanzen werden wieder wachsen, die Bienen werden wieder summen, die Fleischwanzen wieder fiepen und ... ähm, danke.
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_07"); //Hier sind die versprochenen Heiltränke.
-	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_08"); //Danke, aber was ist mit der Verstärkung?
-	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_09"); //Du kannst den Kämpfer Struk und den Magier Thorge mitnehmen. Sie werden am Tor auf dich warten.
-	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_10"); //Gut, dann sehen wir uns später.
+	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_00"); //What plague?
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_01"); //A goblin plague. They fall into our valley and bend our branches, make firewood out of the trees, smash the bees, crush the delicious meat bugs.... um, you're just a threat.
+	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_02"); //And you want me to kill them all? Alone?
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_03"); //We can give you backup. A fighter and a magician. I can also provide you with some healing potions.
+	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_04"); //Hm, all right.
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_05"); //Thank you very much! I am so indefinitely grateful to you!
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_06"); //Now our beloved valley is being saved, the plants will grow again, the bees will be humming again, the meat bugs will be squeaking again and.... um, thanks.
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_07"); //Here are the promised healing potions.
+	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_08"); //Thank you, but what about the backup?
+	AI_Output(self, hero, "Info_Mod_Turendil_Hi_A_05_09"); //You can take Struk the fighter and Thorge the magician with you. They'll be waiting for you at the gate.
+	AI_Output(hero, self, "Info_Mod_Turendil_Hi_A_15_10"); //Good, then I'll see you later.
 
 	B_GiveInvItems	(self, hero, ItPo_Health_01, 3);
 
 	B_StartOtherRoutine	(Mod_1956_VMK_Struk_MT, "ATGATE");
 	B_StartOtherRoutine	(Mod_1957_VMG_Thorge_MT, "ATGATE");
 
-	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Anscheinend leiden die Bewohner von diesem Ort, Tugettso, an einer Goblinplage. Ich habe mich bereit erklärt, ihnen zu helfen, sie zu beseitigen.");
+	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Apparently the inhabitants of this place, Tugettso, suffer from a goblin plague. I've agreed to help them get rid of them.");
 
 	Info_ClearChoices	(Info_Mod_Turendil_Hi);
 };
@@ -95,12 +95,12 @@ FUNC INT Info_Mod_Turendil_Wohin_Condition()
 
 FUNC VOID Info_Mod_Turendil_Wohin_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_Wohin_05_00"); //Warte! Du weißt doch gar nicht, wie man dort hin kommt. Die Plattform, auf der der Fokus damals lag, haben wir zu einem Teleporter umfunktioniert.
-	AI_Output(self, hero, "Info_Mod_Turendil_Wohin_05_01"); //Dort oben steht Albert, er erklärt dir, wie du ihn nutzen kannst.
-	AI_Output(hero, self, "Info_Mod_Turendil_Wohin_15_02"); //Danke für den Tipp.
-	AI_Output(self, hero, "Info_Mod_Turendil_Wohin_05_03"); //Pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Turendil_Wohin_05_00"); //Wait! You don't know how to get there. The platform on which the focus was placed at that time was converted into a teleporter.
+	AI_Output(self, hero, "Info_Mod_Turendil_Wohin_05_01"); //Up there is Albert, he tells you how to use it.
+	AI_Output(hero, self, "Info_Mod_Turendil_Wohin_15_02"); //Thanks for the tip.
+	AI_Output(self, hero, "Info_Mod_Turendil_Wohin_05_03"); //Take care of yourself.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Die alte Fokusplattform ist nun ein Teleporter. Ich sollte zu diesem Albert gehen und ihn fragen, wie er funktioniert. Vorher sollte ich jedoch Struk und Thorge beim Tor abholen, damit ich nicht alleine kämpfen muss.");
+	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "The old focus platform is now a teleporter. I should go to this Albert guy and ask him how it works. But before that I had to pick up Thorge and Struk at the goalkeeper's so that I don't have to fight alone.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -125,17 +125,17 @@ FUNC INT Info_Mod_Turendil_Matronen_Condition()
 
 FUNC VOID Info_Mod_Turendil_Matronen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_Matronen_05_00"); //Ich sehe, du bist zurück. Dann erzähl doch mal. Summen die Bienen wieder ...?
-	AI_Output(hero, self, "Info_Mod_Turendil_Matronen_15_01"); //(unterbricht) Ja, das tun sie. Ein von Menschenhand verursachter Erdrutsch hat das Tunnelsystem zusammenbrechen lassen.
-	AI_Output(hero, self, "Info_Mod_Turendil_Matronen_15_02"); //Ich habe den Nachwuchs gestoppt und den Verantwortlichen zur Rechenschaft gezogen. Den Rest erledigen Genn und die anderen vor Ort.
-	AI_Output(self, hero, "Info_Mod_Turendil_Matronen_05_03"); //Das freut mich zu hören. Hier hast du deine Entlohnung.
+	AI_Output(self, hero, "Info_Mod_Turendil_Matronen_05_00"); //I see you're back. So tell me about it. Are the bees humming again...?
+	AI_Output(hero, self, "Info_Mod_Turendil_Matronen_15_01"); //(interrupts) Yes, they do. A man-made landslide caused the tunnel system to collapse.
+	AI_Output(hero, self, "Info_Mod_Turendil_Matronen_15_02"); //I stopped the offspring and brought them to justice. Genn and the others will do the rest on site.
+	AI_Output(self, hero, "Info_Mod_Turendil_Matronen_05_03"); //I'm glad to hear that. Here's your reward.
 
 	CreateInvItems	(self, ItMi_Gold, 500);
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Turendil_Matronen_05_04"); //Faice sucht schon wieder nach dir. Geh am besten gleich zu ihm.
+	AI_Output(self, hero, "Info_Mod_Turendil_Matronen_05_04"); //Faice's looking for you again. Why don't you go straight to him?
 
-	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Ich habe meine Entlohnung erhalten.");
+	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "I got my reward.");
 	B_SetTopicStatus	(TOPIC_MOD_FERCO_GOBLIN, LOG_SUCCESS);
 
 	AI_StopProcessInfos	(self);
@@ -169,7 +169,7 @@ FUNC VOID Info_Mod_Turendil_Faice_Info()
 	AI_TurnToNpc	(self, hero);
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Turendil_Faice_05_00"); //Es ist schrecklich!
+	AI_Output(self, hero, "Info_Mod_Turendil_Faice_05_00"); //It's horrible!
 
 	B_StartOtherRoutine	(Mod_4020_VMG_Hermy_MT, "START");
 	B_StartOtherRoutine	(Mod_1626_VMG_Furt_MT, "START");
@@ -178,26 +178,26 @@ FUNC VOID Info_Mod_Turendil_Faice_Info()
 	
 	Info_ClearChoices	(Info_Mod_Turendil_Faice);
 
-	Info_AddChoice	(Info_Mod_Turendil_Faice, "Er war sowieso hinfällig.", Info_Mod_Turendil_Faice_B);
-	Info_AddChoice	(Info_Mod_Turendil_Faice, "Wie kann das sein?", Info_Mod_Turendil_Faice_A);
+	Info_AddChoice	(Info_Mod_Turendil_Faice, "He was fragile anyway.", Info_Mod_Turendil_Faice_B);
+	Info_AddChoice	(Info_Mod_Turendil_Faice, "How could that be?", Info_Mod_Turendil_Faice_A);
 };
 
 FUNC VOID Info_Mod_Turendil_Faice_B()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Faice_B_15_00"); //Er war sowieso hinfällig.
-	AI_Output(self, hero, "Info_Mod_Turendil_Faice_B_05_01"); //Er ist vielleicht senil, aber kein alter Greis! Wie kannst du nur so etwas sagen?
+	AI_Output(hero, self, "Info_Mod_Turendil_Faice_B_15_00"); //He was fragile anyway.
+	AI_Output(self, hero, "Info_Mod_Turendil_Faice_B_05_01"); //He may be senile, but he's not an old man! How can you say such a thing?
 	
 	Info_ClearChoices	(Info_Mod_Turendil_Faice);
 
-	Info_AddChoice	(Info_Mod_Turendil_Faice, "Ist doch wahr.", Info_Mod_Turendil_Faice_D);
-	Info_AddChoice	(Info_Mod_Turendil_Faice, "Es tut mir Leid.", Info_Mod_Turendil_Faice_C);
+	Info_AddChoice	(Info_Mod_Turendil_Faice, "That's the truth.", Info_Mod_Turendil_Faice_D);
+	Info_AddChoice	(Info_Mod_Turendil_Faice, "I'm sorry about that.", Info_Mod_Turendil_Faice_C);
 };
 
 FUNC VOID Info_Mod_Turendil_Faice_E()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_Faice_E_05_00"); //Vielleicht war seine Schriftrolle mit der Rede vergiftet und das Gift ist so an seine Finger gelangt. Oder seine Beschwörungsspruchrollen wurden fehlerhaft beschrieben.
-	AI_Output(hero, self, "Info_Mod_Turendil_Faice_E_15_01"); //Wie können wir das herausfinden?
-	AI_Output(self, hero, "Info_Mod_Turendil_Faice_E_05_02"); //Komm morgen wieder, dann wissen wir wahrscheinlich genaueres.
+	AI_Output(self, hero, "Info_Mod_Turendil_Faice_E_05_00"); //Maybe his scroll was poisoned with speech and the poison got to his fingers. Or his summoning spell rolls were incorrectly described.
+	AI_Output(hero, self, "Info_Mod_Turendil_Faice_E_15_01"); //How can we find out?
+	AI_Output(self, hero, "Info_Mod_Turendil_Faice_E_05_02"); //Come back tomorrow, then we'll probably know more.
 	
 	Info_ClearChoices	(Info_Mod_Turendil_Faice);
 
@@ -205,20 +205,20 @@ FUNC VOID Info_Mod_Turendil_Faice_E()
 
 	Mod_VMG_Faice_Gift = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Morgen werde ich erfahren, was genau mit Faice geschehen ist, als er beim Ritual zusammengebrochen ist.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Tomorrow I'll find out exactly what happened to Faice when he collapsed during the ritual.");
 };
 
 FUNC VOID Info_Mod_Turendil_Faice_A()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Faice_A_15_00"); //Wie kann das sein?
+	AI_Output(hero, self, "Info_Mod_Turendil_Faice_A_15_00"); //How could that be?
 
 	Info_Mod_Turendil_Faice_E();
 };
 
 FUNC VOID Info_Mod_Turendil_Faice_D()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Faice_D_15_00"); //Ist doch wahr.
-	AI_Output(self, hero, "Info_Mod_Turendil_Faice_D_05_01"); //Verschwinde, Unwürdiger, und lass dich hier nicht mehr blicken!
+	AI_Output(hero, self, "Info_Mod_Turendil_Faice_D_15_00"); //That's the truth.
+	AI_Output(self, hero, "Info_Mod_Turendil_Faice_D_05_01"); //Get out of here, wretched man, and don't you ever come back here again!
 	
 	Info_ClearChoices	(Info_Mod_Turendil_Faice);
 
@@ -227,9 +227,9 @@ FUNC VOID Info_Mod_Turendil_Faice_D()
 
 FUNC VOID Info_Mod_Turendil_Faice_C()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Faice_C_15_00"); //Es tut mir Leid.
-	AI_Output(self, hero, "Info_Mod_Turendil_Faice_C_05_01"); //Das will ich meinen.
-	AI_Output(hero, self, "Info_Mod_Turendil_Faice_C_15_02"); //Aber was ist denn jetzt passiert?
+	AI_Output(hero, self, "Info_Mod_Turendil_Faice_C_15_00"); //I'm sorry about that.
+	AI_Output(self, hero, "Info_Mod_Turendil_Faice_C_05_01"); //That's what I mean.
+	AI_Output(hero, self, "Info_Mod_Turendil_Faice_C_15_02"); //But what happened now?
 
 	Info_Mod_Turendil_Faice_E();
 };
@@ -256,33 +256,33 @@ FUNC INT Info_Mod_Turendil_FaiceGifty_Condition()
 
 FUNC VOID Info_Mod_Turendil_FaiceGifty_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_05_00"); //Da bist du ja endlich. Wir haben schon auf dich gewartet.
-	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_15_01"); //Was habt ihr herausgefunden?
-	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_05_02"); //Scheinbar wurde Faice vergiftet. Es ist allerdings kein alltägliches Gift, sondern ein besonderes.
-	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_05_03"); //Ich schätze, du wirst dich noch einmal nach Tugettso begeben müssen, denn ich weiß nur von dort, dass da die Pflanze wächst, die wir für das Gegenmittel benötigen.
-	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_05_04"); //So eine schöne, große Pflanze. Sie hat lila Streben, weißt du. Ich ... ähm ... wo war ich stehen geblieben? Ach ja. Wir müssen außerdem noch den Schuldigen finden.
+	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_05_00"); //There you are at last. We've been waiting for you.
+	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_15_01"); //What did you find out?
+	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_05_02"); //Apparently, Faice was poisoned. However, it is not an everyday poison, but a special poison.
+	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_05_03"); //I guess you'll have to go to Tugettso again, because I only know from there that the plant we need for the antidote is growing.
+	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_05_04"); //Such a beautiful, big plant. She's got purple streaks, you know. l-- er... where was I? Oh, yeah. We also have to find the culprit.
 	
 	Info_ClearChoices	(Info_Mod_Turendil_FaiceGifty);
 
-	Info_AddChoice	(Info_Mod_Turendil_FaiceGifty, "Nicht schon wieder.", Info_Mod_Turendil_FaiceGifty_B);
-	Info_AddChoice	(Info_Mod_Turendil_FaiceGifty, "Es wäre mir eine Ehre zu helfen.", Info_Mod_Turendil_FaiceGifty_A);
+	Info_AddChoice	(Info_Mod_Turendil_FaiceGifty, "Not again.", Info_Mod_Turendil_FaiceGifty_B);
+	Info_AddChoice	(Info_Mod_Turendil_FaiceGifty, "It would be an honor to help.", Info_Mod_Turendil_FaiceGifty_A);
 };
 
 FUNC VOID Info_Mod_Turendil_FaiceGifty_B()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_B_15_00"); //Nicht schon wieder.
-	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_B_05_01"); //Bitte! Du musst uns helfen!
+	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_B_15_00"); //Not again.
+	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_B_05_01"); //Please! You have to help us!
 	
 	Info_ClearChoices	(Info_Mod_Turendil_FaiceGifty);
 
-	Info_AddChoice	(Info_Mod_Turendil_FaiceGifty, "Nein, nicht schon wieder.", Info_Mod_Turendil_FaiceGifty_D);
-	Info_AddChoice	(Info_Mod_Turendil_FaiceGifty, "Okay, was soll ich tun?", Info_Mod_Turendil_FaiceGifty_C);
+	Info_AddChoice	(Info_Mod_Turendil_FaiceGifty, "No, not again.", Info_Mod_Turendil_FaiceGifty_D);
+	Info_AddChoice	(Info_Mod_Turendil_FaiceGifty, "Okay, what do I do?", Info_Mod_Turendil_FaiceGifty_C);
 };
 
 FUNC VOID Info_Mod_Turendil_FaiceGifty_E()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_E_05_00"); //Gut, begib dich gleich zu Albert. Er wird dir einen Aufladestein geben.
-	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_E_15_01"); //Das werde ich, danke.
+	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_E_05_00"); //All right, get ready to see Albert. He'll give you a recharge stone.
+	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_E_15_01"); //I will, thank you.
 	
 	Info_ClearChoices	(Info_Mod_Turendil_FaiceGifty);
 
@@ -290,20 +290,20 @@ FUNC VOID Info_Mod_Turendil_FaiceGifty_E()
 
 	Mod_VMG_FaiceGifty_Gift = 1;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Faice ist vergiftet worden und ich soll in Tugettso das Gegengift suchen. Dazu soll ich mir von Albert einen weiteren Aufladestein besorgen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Faice has been poisoned, and I'm to find the antidote in Tugettso. I'm supposed to get another recharging stone from Albert.");
 };
 
 FUNC VOID Info_Mod_Turendil_FaiceGifty_A()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_A_15_00"); //Es wäre mir eine Ehre zu helfen.
+	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_A_15_00"); //It would be an honor to help.
 
 	Info_Mod_Turendil_FaiceGifty_E();
 };
 
 FUNC VOID Info_Mod_Turendil_FaiceGifty_D()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_D_15_00"); //Nein, nicht schon wieder.
-	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_D_05_01"); //Dann geh, aber überlege es dir. Unser Schicksal hängt vielleicht davon ab.
+	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_D_15_00"); //No, not again.
+	AI_Output(self, hero, "Info_Mod_Turendil_FaiceGifty_D_05_01"); //Then go, but think about it. Our fate may depend on it.
 	
 	Info_ClearChoices	(Info_Mod_Turendil_FaiceGifty);
 
@@ -312,7 +312,7 @@ FUNC VOID Info_Mod_Turendil_FaiceGifty_D()
 
 FUNC VOID Info_Mod_Turendil_FaiceGifty_C()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_C_15_00"); //Okay, was soll ich tun?
+	AI_Output(hero, self, "Info_Mod_Turendil_FaiceGifty_C_15_00"); //Okay, what do I do?
 
 	Info_Mod_Turendil_FaiceGifty_E();
 };
@@ -340,30 +340,30 @@ FUNC INT Info_Mod_Turendil_Mendulus_Condition()
 
 FUNC VOID Info_Mod_Turendil_Mendulus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_05_00"); //Hast du das Kraut?
+	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_05_00"); //You got the weed?
 		
 	Info_ClearChoices	(Info_Mod_Turendil_Mendulus);
 
-	Info_AddChoice	(Info_Mod_Turendil_Mendulus, "Nein, ich konnte leider nichts finden.", Info_Mod_Turendil_Mendulus_B);
-	Info_AddChoice	(Info_Mod_Turendil_Mendulus, "Ja hier ist die Pflanze.", Info_Mod_Turendil_Mendulus_A);
+	Info_AddChoice	(Info_Mod_Turendil_Mendulus, "No, I couldn't find anything.", Info_Mod_Turendil_Mendulus_B);
+	Info_AddChoice	(Info_Mod_Turendil_Mendulus, "Yes, here is the plant.", Info_Mod_Turendil_Mendulus_A);
 };
 
 FUNC VOID Info_Mod_Turendil_Mendulus_B()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_B_15_00"); //Nein, ich konnte leider nichts finden.
-	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_B_05_01"); //Ist das dein Ernst? Das kann nicht dein Ernst sein!
+	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_B_15_00"); //No, I couldn't find anything.
+	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_B_05_01"); //Are you serious? You can't be serious!
 	
 	Info_ClearChoices	(Info_Mod_Turendil_Mendulus);
 
-	Info_AddChoice	(Info_Mod_Turendil_Mendulus, "Das ist mein voller Ernst.", Info_Mod_Turendil_Mendulus_D);
-	Info_AddChoice	(Info_Mod_Turendil_Mendulus, "Nein, das war nur ein Scherz. Hier ist die Pflanze.", Info_Mod_Turendil_Mendulus_C);
+	Info_AddChoice	(Info_Mod_Turendil_Mendulus, "I'm completely serious.", Info_Mod_Turendil_Mendulus_D);
+	Info_AddChoice	(Info_Mod_Turendil_Mendulus, "No, it was just a joke. Here's the plant.", Info_Mod_Turendil_Mendulus_C);
 };
 
 FUNC VOID Info_Mod_Turendil_Mendulus_E()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_E_05_00"); //Danke. Du bist unser Held. Ich werde alles Nötige für seine Heilung veranlassen. Du könntest solange nach dem Schuldigen suchen. Sprich einfach mal mit den anderen.
-	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_E_15_01"); //Das werde ich.
-	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_E_05_02"); //Pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_E_05_00"); //Thanks. You're our hero. I'll do whatever it takes to heal him. You could search for the culprit as long as you want. Just talk to the others.
+	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_E_15_01"); //I will, I will.
+	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_E_05_02"); //Take care of yourself.
 	
 	Info_ClearChoices	(Info_Mod_Turendil_Mendulus);
 
@@ -371,12 +371,12 @@ FUNC VOID Info_Mod_Turendil_Mendulus_E()
 
 	Mod_VMG_FaiceGifty_Gift = 10;
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich habe Turendil das Mendulus-Kraut übergeben. Er sagte, ich solle mich umhören, wer der Schuldige sein könnte.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "I gave Turendil the Mendulus herb. He told me to ask around who might be guilty.");
 };
 
 FUNC VOID Info_Mod_Turendil_Mendulus_A()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_A_15_00"); //Ja hier ist die Pflanze.
+	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_A_15_00"); //Yes, here is the plant.
 
 	B_GiveInvItems	(hero, self, ItPl_Mendulus, 1);
 
@@ -385,20 +385,20 @@ FUNC VOID Info_Mod_Turendil_Mendulus_A()
 
 FUNC VOID Info_Mod_Turendil_Mendulus_D()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_D_15_00"); //Das ist mein voller Ernst.
-	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_D_05_01"); //Du warst unsere letzte Hoffnung. Ich fürchte, das ist das Ende der Verwandlungsmagier.
-	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_D_15_02"); //Da fällt mir ein ... brauchst du vielleicht diese Pflanze?
+	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_D_15_00"); //I'm completely serious.
+	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_D_05_01"); //You were our last hope. I'm afraid that's the end of transformation mages.
+	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_D_15_02"); //That reminds me.... do you need this plant?
 
 	B_GiveInvItems	(hero, self, ItPl_Mendulus, 1);
 
-	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_D_05_03"); //Ja genau!
+	AI_Output(self, hero, "Info_Mod_Turendil_Mendulus_D_05_03"); //Yes, exactly!
 
 	Info_Mod_Turendil_Mendulus_E();
 };
 
 FUNC VOID Info_Mod_Turendil_Mendulus_C()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_C_15_00"); //Nein, das war nur ein Scherz. Hier ist die Pflanze.
+	AI_Output(hero, self, "Info_Mod_Turendil_Mendulus_C_15_00"); //No, it was just a joke. Here's the plant.
 
 	B_GiveInvItems	(hero, self, ItPl_Mendulus, 1);
 
@@ -426,33 +426,33 @@ FUNC INT Info_Mod_Turendil_Furt_Condition()
 
 FUNC VOID Info_Mod_Turendil_Furt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_00"); //Und? Was hast du herausgefunden?
+	AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_00"); //And? What did you find out?
 
 	if (Mod_VMG_FaiceGifty_Gift == 12)
 	{
-		AI_Output(hero, self, "Info_Mod_Turendil_Furt_15_01"); //Furt hat die Spruchrolle von Faice vergiftet. Ich habe ihn weggeschickt.
-		AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_02"); //Das hättest du vielleicht nicht tun sollen. Aber es ist gut zu wissen, wer es war, und, dass er nun nicht mehr unter uns ist.
-		AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_03"); //Hier ist deine Belohnung.
+		AI_Output(hero, self, "Info_Mod_Turendil_Furt_15_01"); //Furt poisoned Faice's spell. I sent him away.
+		AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_02"); //Maybe you shouldn't have done that. But it's good to know who it was and that he's no longer with us.
+		AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_03"); //Here's your reward.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Turendil_Furt_15_04"); //Furt hat die Spruchrolle von Faice vergiftet. Ich überlasse sein Schicksal deinen Händen.
-		AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_05"); //Gut gemacht. Wir werden über sein Schicksal entscheiden. Hier, deine Belohnung und einige Spruchrollen.
+		AI_Output(hero, self, "Info_Mod_Turendil_Furt_15_04"); //Furt poisoned Faice's spell. I leave his fate to your hands.
+		AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_05"); //Well done. We will decide his fate. Here's your reward and some spell rolls.
 
 		CreateInvItems	(hero, ItMi_Gold, 1000);
 		CreateInvItems	(hero, ItSc_TrfBloodfly, 3);
 
-		B_ShowGivenThings	("1000 Gold und 3 Spruchrollen erhalten");
+		B_ShowGivenThings	("1000 gold and 3 spell rolls preserved");
 	};
 
 	B_GivePlayerXP	(500);
 
-	AI_Output(hero, self, "Info_Mod_Turendil_Furt_15_06"); //Danke.
-	AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_07"); //Ich glaube Anor hat noch etwas zu tun für dich. Komm dann in ein paar Tagen wieder zu mir.
+	AI_Output(hero, self, "Info_Mod_Turendil_Furt_15_06"); //Thanks.
+	AI_Output(self, hero, "Info_Mod_Turendil_Furt_05_07"); //I think Anor has something else to do for you. Then come back to me in a few days.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich habe meine Belohnung von Turendil erhalten. Der Fall liegt nun nicht mehr in meiner Hand.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "I received my reward from Turendil. The case is no longer in my hands.");
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_HEILUNG, LOG_SUCCESS);
 };
 
@@ -479,44 +479,44 @@ FUNC INT Info_Mod_Turendil_FurtNextDay_Condition()
 
 FUNC VOID Info_Mod_Turendil_FurtNextDay_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_00"); //Da bist du ja, ich habe dich schon gesucht.
-	AI_Output(hero, self, "Info_Mod_Turendil_FurtNextDay_15_01"); //Was gibt’s?
+	AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_00"); //There you are, I've been looking for you.
+	AI_Output(hero, self, "Info_Mod_Turendil_FurtNextDay_15_01"); //What's up?
 
 	if (Mod_VMG_FaiceGifty_Gift == 12)
 	{
-		AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_02"); //Ich will, dass du nach Tugettso gehst und herausfindest, mit welchem Gift Faice vergiftet wurde, damit wir schnellstmöglich ein Gegenmittel herstellen können.
+		AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_02"); //I want you to go to Tugettso and find out what poison Faice was poisoned with so that we can make an antidote as soon as possible.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_03"); //Wir haben Furt verhört und er hat uns verraten, dass wir seinen Meister in Tugettso finden. Er meinte, es wäre einer von uns! Unglaublich!
-		AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_04"); //Ich will, dass du dieser Sache nachgehst und wenn möglich auch das Gift findest, mit dem Faice vergiftet wurde.
-		AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_05"); //So könnten wir seine Heilung beschleunigen, indem wir ein Gegenmittel herstellen.
+		AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_03"); //We interrogated Furt and he told us that we would find his master in Tugettso. He said it was one of us! Incredible!
+		AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_04"); //I want you to follow up on this and, if possible, find the poison Faice was poisoned with.
+		AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_05_05"); //So we could speed up his healing by making an antidote.
 	};
 
 	Info_ClearChoices	(Info_Mod_Turendil_FurtNextDay);
 
-	Info_AddChoice	(Info_Mod_Turendil_FurtNextDay, "Ich werde mich sofort auf den Weg machen.", Info_Mod_Turendil_FurtNextDay_B);
-	Info_AddChoice	(Info_Mod_Turendil_FurtNextDay, "Was passiert jetzt mit Furt?", Info_Mod_Turendil_FurtNextDay_A);
+	Info_AddChoice	(Info_Mod_Turendil_FurtNextDay, "I'll be on my way right away.", Info_Mod_Turendil_FurtNextDay_B);
+	Info_AddChoice	(Info_Mod_Turendil_FurtNextDay, "What happens to Furt now?", Info_Mod_Turendil_FurtNextDay_A);
 };
 
 FUNC VOID Info_Mod_Turendil_FurtNextDay_B()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_FurtNextDay_B_15_00"); //Ich werde mich sofort auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_B_05_01"); //Vielen Dank. Falls du in einen Hinterhalt gerätst, was ich nicht hoffe, hast du hier ein paar Tränke.
+	AI_Output(hero, self, "Info_Mod_Turendil_FurtNextDay_B_15_00"); //I'll be on my way right away.
+	AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_B_05_01"); //Thank you very much. If you get ambushed, which I hope you don't, you've got a few potions here.
 
 	B_GiveInvItems	(self, hero, ItPo_Health_01, 5);
 
 	Log_CreateTopic	(TOPIC_MOD_FAICE_GIFT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_GIFT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Mir wurde aufgetragen, mich erneut nach Tugettso zu begeben und das Gift zu finden, mit dem Faice vergiftet wurde. Auf zu Albert.");
+	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "I was ordered to go back to Tugettso and find the poison with which Faice was poisoned. Off to Albert's.");
 
 	Info_ClearChoices	(Info_Mod_Turendil_FurtNextDay);
 };
 
 FUNC VOID Info_Mod_Turendil_FurtNextDay_A()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_FurtNextDay_A_15_00"); //Was passiert jetzt mit Furt?
-	AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_A_05_01"); //Wir sind uns noch nicht einig, aber du wirst schon noch früh genug erfahren, wie es mit ihm weitergeht.
+	AI_Output(hero, self, "Info_Mod_Turendil_FurtNextDay_A_15_00"); //What happens to Furt now?
+	AI_Output(self, hero, "Info_Mod_Turendil_FurtNextDay_A_05_01"); //We do not yet agree, but you will soon enough find out how he will continue.
 
 	Info_Mod_Turendil_FurtNextDay_B();
 };
@@ -542,28 +542,28 @@ FUNC INT Info_Mod_Turendil_Trador_Condition()
 
 FUNC VOID Info_Mod_Turendil_Trador_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Turendil_Trador_05_00"); //Da bist du ja endlich wieder. Was kannst du mir berichten?
-	AI_Output(hero, self, "Info_Mod_Turendil_Trador_15_01"); //Wo soll ich anfangen?
-	AI_Output(self, hero, "Info_Mod_Turendil_Trador_05_02"); //Das Gift. Hast du herausfinden können, woher es stammt?
-	AI_Output(hero, self, "Info_Mod_Turendil_Trador_15_03"); //Ja, das Gift stammt aus der Venena-Pflanze. Hier hast du ein Exemplar.
+	AI_Output(self, hero, "Info_Mod_Turendil_Trador_05_00"); //Here you are again, at last. What can you tell me?
+	AI_Output(hero, self, "Info_Mod_Turendil_Trador_15_01"); //Where do you want me to start?
+	AI_Output(self, hero, "Info_Mod_Turendil_Trador_05_02"); //The poison. Did you find out where it came from?
+	AI_Output(hero, self, "Info_Mod_Turendil_Trador_15_03"); //Yes, the poison comes from the Venena plant. Here's a copy.
 
 	B_GiveInvItems	(hero, self, ItPl_Venena, 1);
 
-	AI_Output(self, hero, "Info_Mod_Turendil_Trador_05_04"); //Danke. Und hast du herausgefunden, wer von den Magiern dahinter steckt?
-	AI_Output(hero, self, "Info_Mod_Turendil_Trador_15_05"); //Kein Magier. Es war ein Mann namens Trador, ein Komplize von Furt.
-	AI_Output(hero, self, "Info_Mod_Turendil_Trador_15_06"); //Er hat den Magier Dean umbringen lassen und sich seine Robe übergezogen.
-	AI_Output(self, hero, "Info_Mod_Turendil_Trador_05_07"); //Das ist schrecklich! Vielen Dank für deine Mühen. Darf ich noch erfahren, wie er ihn hat unmrbinge lassen?
+	AI_Output(self, hero, "Info_Mod_Turendil_Trador_05_04"); //Thanks. And did you find out who of the mages is behind it?
+	AI_Output(hero, self, "Info_Mod_Turendil_Trador_15_05"); //Not a magician. It was a man named Trador, an accomplice of Furt.
+	AI_Output(hero, self, "Info_Mod_Turendil_Trador_15_06"); //He had the magician kill Dean and put on his robe.
+	AI_Output(self, hero, "Info_Mod_Turendil_Trador_05_07"); //That's terrible! Thank you for your trouble. Can I just find out how he kept him from dead?
 
 	Info_ClearChoices	(Info_Mod_Turendil_Trador);
 
-	Info_AddChoice	(Info_Mod_Turendil_Trador, "Er hat einen beschworenen Golem damit beauftragt.", Info_Mod_Turendil_Trador_B);
-	Info_AddChoice	(Info_Mod_Turendil_Trador, "Ich möchte nicht darüber sprechen.", Info_Mod_Turendil_Trador_A);
+	Info_AddChoice	(Info_Mod_Turendil_Trador, "He hired a summoned Golem to do it.", Info_Mod_Turendil_Trador_B);
+	Info_AddChoice	(Info_Mod_Turendil_Trador, "I don't want to talk about it.", Info_Mod_Turendil_Trador_A);
 };
 
 FUNC VOID Info_Mod_Turendil_Trador_C()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Trador_C_15_00"); //Wie geht es jetzt weiter?
-	AI_Output(self, hero, "Info_Mod_Turendil_Trador_C_05_01"); //Wir werden uns besprechen. Komm morgen wieder.
+	AI_Output(hero, self, "Info_Mod_Turendil_Trador_C_15_00"); //What happens now?
+	AI_Output(self, hero, "Info_Mod_Turendil_Trador_C_05_01"); //We'll talk about it. Come back tomorrow.
 
 	B_GivePlayerXP	(500);
 
@@ -571,7 +571,7 @@ FUNC VOID Info_Mod_Turendil_Trador_C()
 
 	Info_ClearChoices	(Info_Mod_Turendil_Trador);
 
-	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Ich habe Turendil Bericht erstattet und meine Belohnung erhalten. Ich soll einen Tag warten, damit sich die Magier besprechen können.");
+	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "I reported to Turendil and received my reward. I'm supposed to wait a day for the magicians to discuss.");
 	B_SetTopicStatus	(TOPIC_MOD_FAICE_GIFT, LOG_SUCCESS);
 
 	B_StartOtherRoutine	(Mod_1626_VMG_Furt_MT, "INSEL");
@@ -579,21 +579,21 @@ FUNC VOID Info_Mod_Turendil_Trador_C()
 
 FUNC VOID Info_Mod_Turendil_Trador_B()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Trador_B_15_00"); //Er hat einen beschworenen Golem damit beauftragt.
-	AI_Output(self, hero, "Info_Mod_Turendil_Trador_B_05_01"); //Ah, er kennt unsere Magie. Das ist schlecht. Hier, das ist für deine Mühen.
+	AI_Output(hero, self, "Info_Mod_Turendil_Trador_B_15_00"); //He hired a summoned Golem to do it.
+	AI_Output(self, hero, "Info_Mod_Turendil_Trador_B_05_01"); //Ah, he knows our magic. This is bad. Here, this is for your trouble.
 
 	CreateInvItems	(hero, ItMi_Gold, 300);
 	CreateInvItems	(hero, ItSc_TrfBloodfly, 1);
 
-	B_ShowGivenThings	("300 Gold und Spruchrolle erhalten");
+	B_ShowGivenThings	("300 Gold and scroll received");
 
 	Info_Mod_Turendil_Trador_C();
 };
 
 FUNC VOID Info_Mod_Turendil_Trador_A()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Trador_A_15_00"); //Ich möchte nicht darüber sprechen.
-	AI_Output(self, hero, "Info_Mod_Turendil_Trador_A_05_01"); //Okay. Hier ist dein Lohn.
+	AI_Output(hero, self, "Info_Mod_Turendil_Trador_A_15_00"); //I don't want to talk about it.
+	AI_Output(self, hero, "Info_Mod_Turendil_Trador_A_05_01"); //Okay. Here's your paycheck.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
@@ -608,7 +608,7 @@ INSTANCE Info_Mod_Turendil_TradorBesprochen (C_INFO)
 	information	= Info_Mod_Turendil_TradorBesprochen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibt's was Neues?";
+	description	= "Anything new?";
 };
 
 FUNC INT Info_Mod_Turendil_TradorBesprochen_Condition()
@@ -622,28 +622,28 @@ FUNC INT Info_Mod_Turendil_TradorBesprochen_Condition()
 
 FUNC VOID Info_Mod_Turendil_TradorBesprochen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorBesprochen_15_00"); //Gibt's was Neues?
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_01"); //Du musst unbedingt zurück nach Tugettso! Sämtliche Runen "Golem beschwören" wurden dort entwendet!
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_02"); //Wir vermuten, dass Trador dahinter steckt.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorBesprochen_15_00"); //Anything new?
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_01"); //Du musst unbedingt zurück nach Tugettso! Sämtliche Runen "Summon Golem" wurden dort entwendet!
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_02"); //We suspect Trador is behind this.
 
 	if (Mod_VMG_FaiceGifty_Gift == 13)
 	{
-		AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_03"); //Außerdem ist Furt uns durch eine List entkommen.
+		AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_03"); //Besides, Furt escaped us by trickery.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorBesprochen_15_04"); //Ich werde mich sofort auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_05"); //Ach ja, eins noch. Der Teleporter hatte in letzter Zeit hin und wieder Aussetzer.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_06"); //Falls du nicht in Tugettso ankommen solltest, was ich natürlich nicht hoffe, gebe ich dir zur Sicherheit einige Verwandlungsrollen mit.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorBesprochen_15_04"); //I'll be on my way right away.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_05"); //Oh, one more thing. The teleporter's had occasional dropouts lately.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_06"); //If you don't arrive in Tugettso, which I hope you don't, I will give you some transformational roles for sure.
 
 	B_GiveInvItems	(self, hero, ItSc_TrfBloodfly, 3);
 
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_07"); //So wirst du von Monstern, die eine Nummer zu groß für dich sind, ignoriert.
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorBesprochen_15_08"); //Ich glaube nicht, dass ich das nötig habe, aber trotzdem danke.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_09"); //Pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_07"); //So you're ignored by monsters that are too big for you.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorBesprochen_15_08"); //I don't think I need this, but thanks anyway.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorBesprochen_05_09"); //Take care of yourself.
 
 	Log_CreateTopic	(TOPIC_MOD_TURENDIL_GOLEM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_TURENDIL_GOLEM, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Ich habe den neuen Auftrag, zurück nach Tugettso zu reisen und herauszufinden, wohin die Golem-Runen verschwunden sind.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "I have a new assignment to go back to Tugettso and find out where the Golem runes have gone.");
 };
 
 INSTANCE Info_Mod_Turendil_TradorTot (C_INFO)
@@ -654,7 +654,7 @@ INSTANCE Info_Mod_Turendil_TradorTot (C_INFO)
 	information	= Info_Mod_Turendil_TradorTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Da bin ich wieder.";
+	description	= "Here I am again.";
 };
 
 FUNC INT Info_Mod_Turendil_TradorTot_Condition()
@@ -667,103 +667,103 @@ FUNC INT Info_Mod_Turendil_TradorTot_Condition()
 
 FUNC VOID Info_Mod_Turendil_TradorTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_00"); //Da bin ich wieder.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_05_01"); //Und ich sehe, du lebst. Wie ist es dir ergangen?
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_02"); //Zuerst bin ich in einem abgelegenen Tal herausgekommen, da Trador den Teleporter manipuliert hatte.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_05_03"); //Also steckt er doch dahinter!
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_04"); //Ja, danach habe ich mit Hilfe zweier Einsiedler den Teleporter im Tal aktiviert und bin endlich in Tugettso herausgekommen.
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_05"); //Dort traf ich dann auf Trador. Er hat mich nicht erwartet, aber war trotzdem eine harte Nuss.
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_06"); //Mit vereinten Kräften haben wir ihn besiegt und ich habe ihn getötet.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_05_07"); //Das sind gute Neuigkeiten. Hatte er die Runen dabei?
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_00"); //Here I am again.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_05_01"); //And I see you're alive. How have you been?
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_02"); //First I came out in a remote valley because Trador had manipulated the teleporter.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_05_03"); //So he's behind it!
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_04"); //Yes, after that I activated the teleporter in the valley with the help of two hermits and finally got out in Tugettso.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_05"); //There I met Trador. He wasn't expecting me, but he was still a tough nut to crack.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_15_06"); //Together we have defeated him and I have killed him.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_05_07"); //That's good news. Did he have the runes with him?
 
 	Info_ClearChoices	(Info_Mod_Turendil_TradorTot);
 
-	Info_AddChoice	(Info_Mod_Turendil_TradorTot, "[Lügen] Nein, leider nicht.", Info_Mod_Turendil_TradorTot_B);
+	Info_AddChoice	(Info_Mod_Turendil_TradorTot, "[Lies] No, I'm afraid not.", Info_Mod_Turendil_TradorTot_B);
 
 	if (Npc_HasItems(hero, ItRu_SumGol) >= 2)
 	&& (Npc_HasItems(hero, ItSc_SumGol) >= 5)
 	{
-		Info_AddChoice	(Info_Mod_Turendil_TradorTot, "Ja, hier sind sie.", Info_Mod_Turendil_TradorTot_A);
+		Info_AddChoice	(Info_Mod_Turendil_TradorTot, "Yes, here they are.", Info_Mod_Turendil_TradorTot_A);
 	};
 };
 
 FUNC VOID Info_Mod_Turendil_TradorTot_B()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_B_15_00"); //Nein, leider nicht.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_B_05_01"); //Wie schade. Wir werden weiterhin danach suchen.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_B_15_00"); //No, I'm afraid not.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_B_05_01"); //What a pity. We'll keep looking for it.
 
 	Info_ClearChoices	(Info_Mod_Turendil_TradorTot);
 
-	Info_AddChoice	(Info_Mod_Turendil_TradorTot, "Viel Glück dabei.", Info_Mod_Turendil_TradorTot_D);
+	Info_AddChoice	(Info_Mod_Turendil_TradorTot, "Good luck with that.", Info_Mod_Turendil_TradorTot_D);
 	
 	if (Npc_HasItems(hero, ItRu_SumGol) >= 2)
 	&& (Npc_HasItems(hero, ItSc_SumGol) >= 5)
 	{
-		Info_AddChoice	(Info_Mod_Turendil_TradorTot, "Das war nur ein Scherz. Hier sind die Runen.", Info_Mod_Turendil_TradorTot_C);
+		Info_AddChoice	(Info_Mod_Turendil_TradorTot, "It was just a joke. Here are the runes.", Info_Mod_Turendil_TradorTot_C);
 	};
 };
 
 FUNC VOID Info_Mod_Turendil_TradorTot_A()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_A_15_00"); //Ja, hier sind sie.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_A_15_00"); //Yes, here they are.
 
 	Npc_RemoveInvItems	(hero, ItSc_SumGol, 5);
 	Npc_RemoveInvItems	(hero, ItRu_SumGol, 2);
 
-	B_ShowGivenThings	("2 Runen und 5 Spruchrolle gegeben");
+	B_ShowGivenThings	("2 runes and 5 scroll given");
 
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_A_05_01"); //Vielen Dank. Hier ist deine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_A_05_01"); //Thank you very much. Here's your reward.
 
 	CreateInvItems	(hero, ItSc_TrfBloodfly, 1);
 	CreateInvItems	(hero, ItMi_Gold, 500);
 
-	B_ShowGivenThings	("500 Gold und Spruchrolle erhalten");
+	B_ShowGivenThings	("500 Gold and scroll received");
 
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_A_15_02"); //Danke. Ich werde mich nun auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_A_05_03"); //Tu das. Sprich beizeiten noch mal mit Faice. Er wollte irgendwas von dir.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_A_15_02"); //Thanks. I'll be on my way now.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_A_05_03"); //Do that. Talk to Faice in good time. He wanted something from you.
 
 	B_GivePlayerXP	(750);
 
 	Info_ClearChoices	(Info_Mod_Turendil_TradorTot);
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Der Auftrag ist beendet. Turendil sagte mir, dass Faice etwas von mir wollte.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "The assignment's over. Turendil told me Faice wanted something from me.");
 	B_SetTopicStatus	(TOPIC_MOD_TURENDIL_GOLEM, LOG_SUCCESS);
 };
 
 FUNC VOID Info_Mod_Turendil_TradorTot_D()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_D_15_00"); //Viel Glück dabei.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_D_05_01"); //Sprich beizeiten noch mal mit Faice. Er wollte irgendwas von dir.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_D_15_00"); //Good luck with that.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_D_05_01"); //Talk to Faice in good time. He wanted something from you.
 
 	B_GivePlayerXP	(250);
 
 	Info_ClearChoices	(Info_Mod_Turendil_TradorTot);
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Der Auftrag ist beendet. Turendil sagte mir, dass Faice etwas von mir wollte.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "The assignment's over. Turendil told me Faice wanted something from me.");
 	B_SetTopicStatus	(TOPIC_MOD_TURENDIL_GOLEM, LOG_SUCCESS);
 };
 
 FUNC VOID Info_Mod_Turendil_TradorTot_C()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_C_15_00"); //Das war nur ein Scherz. Hier sind die Runen.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_C_15_00"); //It was just a joke. Here are the runes.
 
 	Npc_RemoveInvItems	(hero, ItSc_SumGol, 5);
 	Npc_RemoveInvItems	(hero, ItRu_SumGol, 2);
 
-	B_ShowGivenThings	("2 Runen und 5 Spruchrolle gegeben");
+	B_ShowGivenThings	("2 runes and 5 scroll given");
 
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_C_05_01"); //Mach das nicht noch mal! Trotzdem danke. Hier hast du eine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_C_05_01"); //Don't do that again! Thanks anyway. Here's a reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 350);
 
-	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_C_15_02"); //Danke. Ich werde mich nun auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_C_05_03"); //Tu das. Sprich beizeiten noch mal mit Faice. Er wollte irgendwas von dir.
+	AI_Output(hero, self, "Info_Mod_Turendil_TradorTot_C_15_02"); //Thanks. I'll be on my way now.
+	AI_Output(self, hero, "Info_Mod_Turendil_TradorTot_C_05_03"); //Do that. Talk to Faice in good time. He wanted something from you.
 
 	B_GivePlayerXP	(500);
 
 	Info_ClearChoices	(Info_Mod_Turendil_TradorTot);
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Der Auftrag ist beendet. Turendil sagte mir, dass Faice etwas von mir wollte.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "The assignment's over. Turendil told me Faice wanted something from me.");
 	B_SetTopicStatus	(TOPIC_MOD_TURENDIL_GOLEM, LOG_SUCCESS);
 };
 
@@ -775,7 +775,7 @@ INSTANCE Info_Mod_Turendil_WerBistDu (C_INFO)
 	information	= Info_Mod_Turendil_WerBistDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Turendil_WerBistDu_Condition()
@@ -787,8 +787,8 @@ FUNC VOID Info_Mod_Turendil_WerBistDu_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Turendil_WerBistDu_05_00"); //Mein Name ist Turendil. Ich bin der Stellvertreter von Faice, unserem Oberhaupt. Er ist zur Zeit sehr beschäftigt.
-	AI_Output(self, hero, "Info_Mod_Turendil_WerBistDu_05_01"); //Wie kann ich dir helfen?
+	AI_Output(self, hero, "Info_Mod_Turendil_WerBistDu_05_00"); //My name is Turendil. I'm the deputy head of Faice, our chief. He's very busy right now.
+	AI_Output(self, hero, "Info_Mod_Turendil_WerBistDu_05_01"); //How can I help you?
 };
 
 INSTANCE Info_Mod_Turendil_Woher (C_INFO)
@@ -799,7 +799,7 @@ INSTANCE Info_Mod_Turendil_Woher (C_INFO)
 	information	= Info_Mod_Turendil_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo kommt ihr her?";
+	description	= "Where are you from?";
 };
 
 FUNC INT Info_Mod_Turendil_Woher_Condition()
@@ -812,9 +812,9 @@ FUNC INT Info_Mod_Turendil_Woher_Condition()
 
 FUNC VOID Info_Mod_Turendil_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_Woher_15_00"); //Wo kommt ihr her?
-	AI_Output(self, hero, "Info_Mod_Turendil_Woher_05_01"); //Wir kommen aus einem kleinen Tal namens Tugettso. Dieses Tal ist Natur pur.
-	AI_Output(self, hero, "Info_Mod_Turendil_Woher_05_02"); //Wenn es soweit ist, wirst du vielleicht mal dort hin gelangen.
+	AI_Output(hero, self, "Info_Mod_Turendil_Woher_15_00"); //Where are you from?
+	AI_Output(self, hero, "Info_Mod_Turendil_Woher_05_01"); //We come from a small valley called Tugettso. This valley is pure nature.
+	AI_Output(self, hero, "Info_Mod_Turendil_Woher_05_02"); //When the time comes, maybe you'll get there sometime.
 };
 
 INSTANCE Info_Mod_Turendil_WasHier (C_INFO)
@@ -825,7 +825,7 @@ INSTANCE Info_Mod_Turendil_WasHier (C_INFO)
 	information	= Info_Mod_Turendil_WasHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was macht ihr hier?";
+	description	= "What are you guys doing here?";
 };
 
 FUNC INT Info_Mod_Turendil_WasHier_Condition()
@@ -838,8 +838,8 @@ FUNC INT Info_Mod_Turendil_WasHier_Condition()
 
 FUNC VOID Info_Mod_Turendil_WasHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Turendil_WasHier_15_00"); //Was macht ihr hier?
-	AI_Output(self, hero, "Info_Mod_Turendil_WasHier_05_01"); //Wir erforschen dieses Tal und das alte Wissen, das sich hier finden lässt.
+	AI_Output(hero, self, "Info_Mod_Turendil_WasHier_15_00"); //What are you guys doing here?
+	AI_Output(self, hero, "Info_Mod_Turendil_WasHier_05_01"); //We explore this valley and the ancient knowledge that can be found here.
 };
 
 INSTANCE Info_Mod_Turendil_BACK (C_INFO)
@@ -850,7 +850,7 @@ INSTANCE Info_Mod_Turendil_BACK (C_INFO)
 	information	= Info_Mod_Turendil_BACK_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Raum verlassen)";
+	description	= "(room leaving)";
 };
 
 FUNC INT Info_Mod_Turendil_BACK_Condition()

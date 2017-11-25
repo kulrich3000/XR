@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Echsenhaendler_HeilkrautM (C_INFO)
 	information	= Info_Mod_Echsenhaendler_HeilkrautM_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Heilkraut kaufen (5 merkw¸rdige kleine Dinger)";
+	description	= "Buy medicinal herb (5 strange little things)";
 };
 
 FUNC INT Info_Mod_Echsenhaendler_HeilkrautM_Condition()
@@ -22,7 +22,7 @@ FUNC VOID Info_Mod_Echsenhaendler_HeilkrautM_Info()
 	Npc_RemoveInvItems	(hero, ItMi_MerkwuerdigeDinger, 5);
 	CreateInvItems	(hero, ItPl_Heilknospe, 1);
 
-	B_ShowGivenThings	("5 merkw¸rdige kleine Dinger gegeben und Heilknospe erhalten");
+	B_ShowGivenThings	("5 strange little things given and healing bud preserved");
 };
 
 INSTANCE Info_Mod_Echsenhaendler_Heilkraut (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Echsenhaendler_Heilkraut (C_INFO)
 	information	= Info_Mod_Echsenhaendler_Heilkraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Heilkraut kaufen (5 Golemherzfragmente)";
+	description	= "Buy medicinal herb (5 fragments of Golem hearts)";
 };
 
 FUNC INT Info_Mod_Echsenhaendler_Heilkraut_Condition()
@@ -49,7 +49,7 @@ FUNC VOID Info_Mod_Echsenhaendler_Heilkraut_Info()
 	Npc_RemoveInvItems	(hero, ItMi_HerzFragment, 5);
 	CreateInvItems	(hero, ItPl_Heilknospe, 1);
 
-	B_ShowGivenThings	("5 Golemherzfragmente gegeben und Heilknospe erhalten");
+	B_ShowGivenThings	("5 Golem heart fragments given and healing bud preserved");
 };
 
 INSTANCE Info_Mod_Echsenhaendler_Waffe (C_INFO)
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_Echsenhaendler_Waffe (C_INFO)
 	information	= Info_Mod_Echsenhaendler_Waffe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Waffe kaufen (10 Golemherzfragmente)";
+	description	= "Buy a weapon (10 Golemheart fragments)";
 };
 
 FUNC INT Info_Mod_Echsenhaendler_Waffe_Condition()
@@ -82,7 +82,7 @@ FUNC VOID Info_Mod_Echsenhaendler_Waffe_Info()
 		CreateInvItems	(hero, ItRw_EchsenBogen, 1);
 		CreateInvItems	(hero, ItRw_Arrow, 50);
 
-		B_ShowGivenThings	("10 Golemherzfragmente gegeben und Echsenbogen und Pfeile erhalten");
+		B_ShowGivenThings	("10 Golem heart fragments given and lizard arch and arrows preserved");
 	}
 	else if (hero.HitChance[NPC_TALENT_CROSSBOW] > hero.HitChance[NPC_TALENT_2H])
 	&& (hero.HitChance[NPC_TALENT_CROSSBOW] > hero.HitChance[NPC_TALENT_1H])
@@ -91,7 +91,7 @@ FUNC VOID Info_Mod_Echsenhaendler_Waffe_Info()
 		CreateInvItems	(hero, ItRw_EchsenArmbrust, 1);
 		CreateInvItems	(hero, ItRw_Bolt, 50);
 
-		B_ShowGivenThings	("10 Golemherzfragmente gegeben und Echsenarmbrust und Bolzen erhalten");
+		B_ShowGivenThings	("10 Golemheart fragments given and receive lizard crossbow and bolt");
 	}
 	else if (hero.HitChance[NPC_TALENT_1H] > hero.HitChance[NPC_TALENT_2H])
 	&& (hero.HitChance[NPC_TALENT_1H] > hero.HitChance[NPC_TALENT_BOW])
@@ -100,20 +100,20 @@ FUNC VOID Info_Mod_Echsenhaendler_Waffe_Info()
 		{
 			CreateInvItems	(hero, ItMw_EchsenSchwertStr, 1);
 
-			B_ShowGivenThings	("10 Golemherzfragmente gegeben und Echsenschwert erhalten");
+			B_ShowGivenThings	("10 Golemheart fragments given and lizard sword preserved");
 		}
 		else
 		{
 			CreateInvItems	(hero, ItMw_EchsenSchwertDex, 1);
 
-			B_ShowGivenThings	("10 Golemherzfragmente gegeben und Echsenschwert erhalten");
+			B_ShowGivenThings	("10 Golemheart fragments given and lizard sword preserved");
 		};
 	}
 	else
 	{
 		CreateInvItems	(hero, ItMw_EchsenZweihaender, 1);
 
-		B_ShowGivenThings	("10 Golemherzfragmente gegeben und groﬂes Echsenschwert erhalten");
+		B_ShowGivenThings	("10 golem heart fragments given and large lizard sword preserved");
 	};
 };
 

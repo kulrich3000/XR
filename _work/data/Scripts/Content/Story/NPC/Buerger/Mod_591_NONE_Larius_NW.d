@@ -1,7 +1,7 @@
 instance Mod_591_NONE_Larius_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Larius";
+	name 		= "larius";
 	guild 		= GIL_OUT;
 	id 			= 591;
 	voice 		= 1;

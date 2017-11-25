@@ -20,9 +20,9 @@ FUNC INT Info_Mod_Templer01_Hi_Condition()
 
 FUNC VOID Info_Mod_Templer01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Templer01_Hi_13_00"); //Du bist also unser Truppführer?
-	AI_Output(hero, self, "Info_Mod_Templer01_Hi_15_01"); //Sieht so aus.
-	AI_Output(self, hero, "Info_Mod_Templer01_Hi_13_02"); //Gut, ich vermute es geht gleich los. Bleib hier!
+	AI_Output(self, hero, "Info_Mod_Templer01_Hi_13_00"); //So you're our squad leader?
+	AI_Output(hero, self, "Info_Mod_Templer01_Hi_15_01"); //Looks that way.
+	AI_Output(self, hero, "Info_Mod_Templer01_Hi_13_02"); //All right, I guess it's about to start. Stay here!
 
 	Mod_Sekte_SH_Kampf = 1;
 
@@ -49,10 +49,10 @@ FUNC INT Info_Mod_Templer01_Befehle_Condition()
 
 FUNC VOID Info_Mod_Templer01_Befehle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Templer01_Befehle_13_00"); //Damit haben wir nicht gerechnet. Was sollen wir jetzt tun?
-	AI_Output(self, hero, "Info_Mod_Templer01_Befehle_13_01"); //Wir müssen auch Cor Angar helfen gehen, wenn wir hier fertig sind.
+	AI_Output(self, hero, "Info_Mod_Templer01_Befehle_13_00"); //We didn't expect that. What should we do now?
+	AI_Output(self, hero, "Info_Mod_Templer01_Befehle_13_01"); //We also have to go help Cor Angar when we're done here.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Statt normaler Untoten sind untote Sumpfhaie erschienen. Das ist nicht gut. Wenn wir hier fertig sind, dann sollten wir mal bei Cor Angars Truppe bei Virans Sumpfkrautfeld vorbei sehen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Instead of normal undead, undead swamp sharks have appeared. That's not good. When we're done here, we should stop by Cor Angar's troop at Viran's swamp weed field.");
 
 	Mod_Sekte_SH_Kampf = 4;
 
@@ -61,16 +61,16 @@ FUNC VOID Info_Mod_Templer01_Befehle_Info()
 
 	Info_ClearChoices	(Info_Mod_Templer01_Befehle);
 
-	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Hm, das ist ja nicht so toll gelaufen. Rauchen wir zuerst mal Eine und sehen dann weiter.", Info_Mod_Templer01_Befehle_Joint);
-	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Verdammt! Haut ab, das sind Sumpfhaie!", Info_Mod_Templer01_Befehle_Flucht);
-	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Beschützt die Gurus!", Info_Mod_Templer01_Befehle_Gurus);
-	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Holt euch die Biester!", Info_Mod_Templer01_Befehle_Angriff);
-	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Alle mir nach!", Info_Mod_Templer01_Befehle_Follow);
+	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Hm, that didn't go so well. Let's have a smoke first, then we'll see what happens.", Info_Mod_Templer01_Befehle_Joint);
+	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Damn it! Get out of here, they're swamp sharks!", Info_Mod_Templer01_Befehle_Flucht);
+	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Protect the gurus!", Info_Mod_Templer01_Befehle_Gurus);
+	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Get the beasts!", Info_Mod_Templer01_Befehle_Angriff);
+	Info_AddChoice	(Info_Mod_Templer01_Befehle, "Follow me, everyone!", Info_Mod_Templer01_Befehle_Follow);
 };
 
 FUNC VOID Info_Mod_Templer01_Befehle_Joint()
 {
-	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Joint_15_00"); //Hm, das ist ja nicht so toll gelaufen. Rauchen wir zuerst mal Eine und sehen dann weiter.
+	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Joint_15_00"); //Hm, that didn't go so well. Let's have a smoke first, then we'll see what happens.
 
 	CreateInvItems	(hero, ItMi_Joint, 1);
 	CreateInvItems	(self, ItMi_Joint, 1);
@@ -83,7 +83,7 @@ FUNC VOID Info_Mod_Templer01_Befehle_Joint()
 
 FUNC VOID Info_Mod_Templer01_Befehle_Flucht()
 {
-	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Flucht_15_00"); //Verdammt! Haut ab, das sind Sumpfhaie!
+	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Flucht_15_00"); //Damn it! Get out of here, they're swamp sharks!
 
 	Info_ClearChoices	(Info_Mod_Templer01_Befehle);
 
@@ -95,7 +95,7 @@ FUNC VOID Info_Mod_Templer01_Befehle_Flucht()
 
 FUNC VOID Info_Mod_Templer01_Befehle_Gurus()
 {
-	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Gurus_15_00"); //Beschützt die Gurus!
+	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Gurus_15_00"); //Protect the gurus!
 
 	Info_ClearChoices	(Info_Mod_Templer01_Befehle);
 
@@ -107,7 +107,7 @@ FUNC VOID Info_Mod_Templer01_Befehle_Gurus()
 
 FUNC VOID Info_Mod_Templer01_Befehle_Angriff()
 {
-	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Angriff_15_00"); //Holt euch die Biester!
+	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Angriff_15_00"); //Get the beasts!
 
 	Info_ClearChoices	(Info_Mod_Templer01_Befehle);
 
@@ -119,7 +119,7 @@ FUNC VOID Info_Mod_Templer01_Befehle_Angriff()
 
 FUNC VOID Info_Mod_Templer01_Befehle_Follow()
 {
-	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Follow_15_00"); //Alle mir nach!
+	AI_Output(hero, self, "Info_Mod_Templer01_Befehle_Follow_15_00"); //Follow me, everyone!
 
 	Info_ClearChoices	(Info_Mod_Templer01_Befehle);
 

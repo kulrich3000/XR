@@ -1,7 +1,7 @@
 instance Mod_7720_OUT_Chad_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Chad"; 
+	name 		= "chad"; 
 	guild 		= GIL_OUT;
 	id 			= 7720;
 	voice 		= 8;

@@ -18,30 +18,30 @@ FUNC INT Info_Mod_Alex_Trunkenbold_Condition()
 
 FUNC VOID Info_Mod_Alex_Trunkenbold_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_00"); //Der ist weg!
-	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_01"); //Wie weg, der ist doch da?
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_02"); //Eben nicht, der ist WEG!!! Vollkommen WEG!
-	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_03"); //Und ... wann kommt er wieder?
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_04"); //Ich würde sagen ... in etwa vier Monaten.
-	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_05"); //Was?!
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_06"); //Ja, der hält sowas wie Winterschlaf. Sobald die Zeit des großen Feierns beginnt, wacht er auf.
-	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_07"); //Wie lange ist er denn schon weg?
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_08"); //Seit ungefähr acht Monaten.
-	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_09"); //Naja, egal. Ich brauche Alkohol.
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_10"); //Du braucht was?
-	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_11"); //Naja, Alkohol, Schnaps oder Bier oder so was. Der Weiberheld hat gesagt, das bekomme ich vom Trunkenbold.
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_12"); //Achso, ihr meint Trunken!
-	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_13"); //Was?
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_14"); //Trunken! Das ist das Zeug, weswegen der Trunkenbold weg ist.
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_15"); //Wie, glaubt ihr, ist er wohl zu seinem Namen gekommen?
-	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_16"); //Und wie komme ich daran?
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_17"); //Am besten ihr fragt ihn danach.
-	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_18"); //Aber er ist doch weg.
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_19"); //Weg? Er ist doch genau hier. Ihr seid mir einer ...
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_00"); //It's gone!
+	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_01"); //He's gone, isn't he?
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_02"); //No, he's AWAY! Completely WAY!
+	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_03"); //And... when will he be back?
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_04"); //I would say.... in about four months.
+	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_05"); //What?!
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_06"); //Yeah, it kind of hibernates. As soon as the time of great celebration begins, he wakes up.
+	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_07"); //How long has he been gone?
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_08"); //About eight months.
+	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_09"); //Well, never mind. I need alcohol.
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_10"); //You need what?
+	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_11"); //Well, alcohol, booze or beer or something. The womanizer said I get it from the drunkard.
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_12"); //Oh, you mean drunk!
+	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_13"); //What?
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_14"); //Drunk! That's the stuff that got the drunk away.
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_15"); //How do you think he got his name?
+	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_16"); //And how do I get it?
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_17"); //Why don't you ask him?
+	AI_Output(hero, self, "Info_Mod_Alex_Trunkenbold_15_18"); //But he's gone.
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_19"); //Gone? He's right here. You're a--
 
 	AI_TurnToNpc	(self, Mod_7272_HS_Trunkenbold_REL);
 
-	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_20"); //Trunkenbold, würdest du dem Herrn etwas Trunken geben?
+	AI_Output(self, hero, "Info_Mod_Alex_Trunkenbold_08_20"); //Drunkard, would you give the gentleman a drink?
 
 	AI_StopProcessInfos	(self);
 
@@ -68,31 +68,31 @@ FUNC INT Info_Mod_Alex_Magier_Condition()
 
 FUNC VOID Info_Mod_Alex_Magier_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_00"); //Ahh, ihr müsst das neue königliche Mädchen für alles sein!
-	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_01"); //Warst du nicht vor ein paar Tagen noch der königliche Lochgräber?
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_02"); //Natürlich, was denket ihr denn?
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_00"); //Ahh, you must be the new royal girl for everything!
+	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_01"); //Weren't you the royal tomb a few days ago?
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_02"); //Of course, what do you think?
 	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_03"); //...
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_04"); //Machet kein so verzagtes Gesicht! Es gibt Arbeit für euch! Gehet zum königlichen Eremiten!
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_04"); //Don't make such a despondent face! There's work for you! Go to the royal hermit!
 
 	B_Say	(hero, self, "$WOFINDEICHIHN");
 
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_06"); //Das herauszufinden wirdet eure erste königliche Aufgabe sein.
-	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_07"); //Was?
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_08"); //Mein Geist vermaget sich nicht mehr daran zu erinnern, wo er lebt. Doch bin ich mir sicher, ihn unlängst gesehen zu haben!
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_09"); //Suchet einfach die Orte auf, an denen ich in letzter Zeit war!
-	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_10"); //Und wo warst du in letzter Zeit ...?
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_11"); //Wenn ich dies wüsste, würde ich doch nicht eure Hilfe brauchen, ihn zu finden! Und nun gehet!
-	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_12"); //Und ... was soll ich dann bei ihm machen?
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_13"); //Bei wem?
-	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_14"); //Bei dem Eremiten.
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_15"); //Ihr habet Kunde vom Verbleib des Eremiten?
-	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_16"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_17"); //Achso ... Könntet ihr ihn bitte suchen und ihn um die Übliche Lieferung Pilze bitten?
-	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_18"); //Na gut.
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_06"); //Finding out that will be your first royal task.
+	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_07"); //What?
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_08"); //My mind will not remember where he lives. But I'm sure I've seen him recently!
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_09"); //Just go to the places I've been lately!
+	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_10"); //And where have you been lately?
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_11"); //If I knew that, I wouldn't need your help finding him! Now go!
+	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_12"); //And... what am I supposed to do with him?
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_13"); //With whom?
+	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_14"); //At the hermit's house.
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_15"); //You have news of the hermit's whereabouts?
+	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_16"); //No.
+	AI_Output(self, hero, "Info_Mod_Alex_Magier_08_17"); //Ah... Could you please find him and ask him for the usual delivery mushrooms?
+	AI_Output(hero, self, "Info_Mod_Alex_Magier_15_18"); //All right, all right.
 
 	Wld_InsertNpc	(Mod_7286_HS_Eremit_REL, "REL_247");
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Der Hofmagier, bei welchem es sich um den ehemaligen Lochgräber handelt, will, dass ich vom Eremiten die übliche Lieferung Pilze besorge. Er weiß jedoch nicht mehr, wo er zu finden ist. Ich soll deshalb an den Orten suchen, wo der Magier zuletzt war.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "The court magician, who is the former pit grave, wants me to get the usual supply of mushrooms from the hermit. However, he no longer knows where to find him. I'm supposed to search the places where the magician was last.");
 };
 
 INSTANCE Info_Mod_Alex_GeheimnisFreudenspender (C_INFO)
@@ -103,7 +103,7 @@ INSTANCE Info_Mod_Alex_GeheimnisFreudenspender (C_INFO)
 	information	= Info_Mod_Alex_GeheimnisFreudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe noch eine Frage bezüglich der hiesigen Rauschmittel.";
+	description	= "I have a question about the narcotics here.";
 };
 
 FUNC INT Info_Mod_Alex_GeheimnisFreudenspender_Condition()
@@ -116,8 +116,8 @@ FUNC INT Info_Mod_Alex_GeheimnisFreudenspender_Condition()
 
 FUNC VOID Info_Mod_Alex_GeheimnisFreudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alex_GeheimnisFreudenspender_15_00"); //Ich habe noch eine Frage bezüglich der hiesigen Rauschmittel.
-	AI_Output(self, hero, "Info_Mod_Alex_GeheimnisFreudenspender_08_01"); //Hinfort! Ihr seid noch nicht bereit, dieses Geheimnis zu erfahren!
+	AI_Output(hero, self, "Info_Mod_Alex_GeheimnisFreudenspender_15_00"); //I have a question about the narcotics here.
+	AI_Output(self, hero, "Info_Mod_Alex_GeheimnisFreudenspender_08_01"); //Away! You are not yet ready to know this secret!
 };
 
 INSTANCE Info_Mod_Alex_Pilzsporen (C_INFO)
@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Alex_Pilzsporen (C_INFO)
 	information	= Info_Mod_Alex_Pilzsporen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, deine Sporen!";
+	description	= "Here's your spurs!";
 };
 
 FUNC INT Info_Mod_Alex_Pilzsporen_Condition()
@@ -142,14 +142,14 @@ FUNC INT Info_Mod_Alex_Pilzsporen_Condition()
 
 FUNC VOID Info_Mod_Alex_Pilzsporen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alex_Pilzsporen_15_00"); //Hier, deine Sporen!
-	AI_Output(self, hero, "Info_Mod_Alex_Pilzsporen_08_01"); //Ihr habt den Eremiten gefunden? Wunderbar. So bringet diese Sporen zu dem königlichen Drogenminister!
+	AI_Output(hero, self, "Info_Mod_Alex_Pilzsporen_15_00"); //Here's your spurs!
+	AI_Output(self, hero, "Info_Mod_Alex_Pilzsporen_08_01"); //You found the hermit? Wonderful. Take these spurs to the king's secretary of drugs!
 
 	B_Say	(hero, self, "$WOFINDEICHIHN");
 
-	AI_Output(self, hero, "Info_Mod_Alex_Pilzsporen_08_03"); //Suchet in den Unweiten des Lagers nach dem königlichen Jäger. Er wirdet euch den Weg weisen!
+	AI_Output(self, hero, "Info_Mod_Alex_Pilzsporen_08_03"); //Search for the royal hunter in the vicinity of the camp. He will show you the way!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Die Sporen soll ich nun zum Drogenminister bringen, welchen ich mithilfe des königlichen Jägers finden soll. Ich denke, dass diese Sporen das Geheimnis der Freudenspender sind.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "The spores are to be taken to the secretary of drugs, whom I am to find with the help of the royal hunter. I think these spores are the secret of the glee dispensers.");
 };
 
 INSTANCE Info_Mod_Alex_Transportsystem (C_INFO)
@@ -160,7 +160,7 @@ INSTANCE Info_Mod_Alex_Transportsystem (C_INFO)
 	information	= Info_Mod_Alex_Transportsystem_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin auf der Suche nach einem unbeschwerlichen Weg in die Sümpfe.";
+	description	= "I'm looking for an easy way into the swamps.";
 };
 
 FUNC INT Info_Mod_Alex_Transportsystem_Condition()
@@ -173,16 +173,16 @@ FUNC INT Info_Mod_Alex_Transportsystem_Condition()
 
 FUNC VOID Info_Mod_Alex_Transportsystem_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alex_Transportsystem_15_00"); //Ich bin auf der Suche nach einem unbeschwerlichen Weg in die Sümpfe.
-	AI_Output(self, hero, "Info_Mod_Alex_Transportsystem_08_01"); //Und da kommet ihr zu mir?
-	AI_Output(hero, self, "Info_Mod_Alex_Transportsystem_15_02"); //Ich dachte, vielleicht kannst du einen Teleporter erschaffen oder sonst irgendwie deine Magie spielen lassen ...
-	AI_Output(self, hero, "Info_Mod_Alex_Transportsystem_08_03"); //Oh ja ... Meine Magie. Nun gut, euer Wunsch sei euch gewährt! Treffet mich in zwei Tagen vor den Toren der Burg!
+	AI_Output(hero, self, "Info_Mod_Alex_Transportsystem_15_00"); //I'm looking for an easy way into the swamps.
+	AI_Output(self, hero, "Info_Mod_Alex_Transportsystem_08_01"); //And you come to me?
+	AI_Output(hero, self, "Info_Mod_Alex_Transportsystem_15_02"); //I thought maybe you could create a teleporter or let your magic play somewhere else...
+	AI_Output(self, hero, "Info_Mod_Alex_Transportsystem_08_03"); //Oh, yes.... My magic. All right, your wish is yours! Meet me at the gates of the castle in two days!
 
 	Mod_SL_Meer = 6;
 
 	Mod_SL_AlexGraben = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Alex wird sich mit seiner Magie um ein Transportsystem kümmern. Ich soll ihn in zwei Tagen vor dem Tor treffen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Alex will use his magic to take care of a transport system. I'm supposed to meet him outside the gate in two days.");
 };
 
 INSTANCE Info_Mod_Alex_TeleporterFertig (C_INFO)
@@ -205,7 +205,7 @@ FUNC INT Info_Mod_Alex_TeleporterFertig_Condition()
 
 FUNC VOID Info_Mod_Alex_TeleporterFertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alex_TeleporterFertig_08_00"); //Ah, da seid ihr ja. Kommet nur mit, kommet nur mit!
+	AI_Output(self, hero, "Info_Mod_Alex_TeleporterFertig_08_00"); //Ah, there you are. Just come with me, just come with me!
 
 	AI_StopProcessInfos	(self);
 
@@ -233,17 +233,17 @@ FUNC INT Info_Mod_Alex_AtLoch_Condition()
 
 FUNC VOID Info_Mod_Alex_AtLoch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_00"); //Hier, mein Transport-System.
-	AI_Output(hero, self, "Info_Mod_Alex_AtLoch_15_01"); //Ein ... Loch?
-	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_02"); //In gewissem Sinne ... ja, aber es ist auch ein Teleporter.
-	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_03"); //Man tritt hier rein, fällt und kommt im Sumpf wieder raus. Ist das nicht großartig?
-	AI_Output(hero, self, "Info_Mod_Alex_AtLoch_15_04"); //Du hast in zwei Tagen ein Loch von hier bis zum Sumpf gegraben?
-	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_05"); //Ja.
-	AI_Output(hero, self, "Info_Mod_Alex_AtLoch_15_06"); //Ich hatte etwas mit mehr ... Magie erwartet ...
-	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_07"); //Naja ... Also ... Ich meine ...
-	AI_Output(hero, self, "Info_Mod_Alex_AtLoch_15_08"); //Okay, es wird seinen Zweck erfüllen ... hoffe ich.
+	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_00"); //Here, my transport system.
+	AI_Output(hero, self, "Info_Mod_Alex_AtLoch_15_01"); //A... Hole?
+	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_02"); //In a sense... Yes, but it's also a teleporter.
+	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_03"); //You step in here, fall and get out of the swamp. Isn't that great?
+	AI_Output(hero, self, "Info_Mod_Alex_AtLoch_15_04"); //You dug a hole from here to the swamp in two days?
+	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_05"); //Yeah.
+	AI_Output(hero, self, "Info_Mod_Alex_AtLoch_15_06"); //I had something with more.... Magic awaits...
+	AI_Output(self, hero, "Info_Mod_Alex_AtLoch_08_07"); //Well... So... I mean....
+	AI_Output(hero, self, "Info_Mod_Alex_AtLoch_15_08"); //Okay, it will serve its purpose... I hope.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Ein Loch? Naja, jedenfalls ist das Transportproblem wohl gelöst. Ich sollte es dem König zeigen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "A hole? Well, anyway, the transport problem is probably solved. I should show it to the king.");
 
 	AI_StopProcessInfos	(self);
 
@@ -272,16 +272,16 @@ FUNC INT Info_Mod_Alex_Lochgraben_Condition()
 
 FUNC VOID Info_Mod_Alex_Lochgraben_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_00"); //Oh, hallo. Na, bist du auch beeindruckt von meinem Loch?
-	AI_Output(hero, self, "Info_Mod_Alex_Lochgraben_15_01"); //Natürlich. Es gibt bestimmt nichts und niemanden, das sich im Löchergraben mit dir messen kann!
-	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_02"); //Hehe, da hast du recht. Ich bin fleißig wie ein Buddler.
-	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_03"); //Es gibt niemanden und nichts, das schneller gräbt als ich ... außer.
-	AI_Output(hero, self, "Info_Mod_Alex_Lochgraben_15_04"); //Außer was?
-	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_05"); //Außer einem Crawler. Crawler sind unglaublich, wenn es ums Graben geht.
-	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_06"); //So ein Crawler könnte da drüben, im Boden auf der anderne Seite von Fluffys Berg, innerhalb einer Nacht ein Loch graben, das so tief wäre, dass man den Boden nicht sehen würde!
-	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_07"); //Aber zum Glück gibt’s hier keine Crawler ... nur mich.
+	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_00"); //Oh, hello. Well, are you impressed with my hole?
+	AI_Output(hero, self, "Info_Mod_Alex_Lochgraben_15_01"); //Of course it is. There is certainly nothing and no one who can compete with you in digging holes!
+	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_02"); //Hey, you got that right. I'm busy as a digger.
+	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_03"); //There's no one and nothing that digs faster than me... except.
+	AI_Output(hero, self, "Info_Mod_Alex_Lochgraben_15_04"); //Except what?
+	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_05"); //Except for a crawler. Crawlers are incredible when it comes to digging.
+	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_06"); //Such a crawler could dig a hole over there, in the ground on the other side of Fluffy's mountain, within a night, that would be so deep that you wouldn't see the ground!
+	AI_Output(self, hero, "Info_Mod_Alex_Lochgraben_08_07"); //But luckily there are no crawlers here... just me.
 
-	B_LogEntry	(TOPIC_MOD_SL_LOCHGRAEBER, "Minecrawler sind bessere Buddler als der Lochgräber. Wenn ich einen beschwören würde, könnte er ein tieferes Loch als das des Lochgräbers graben und ihn schlagen.");
+	B_LogEntry	(TOPIC_MOD_SL_LOCHGRAEBER, "Minecrawlers are better diggers than the hole graves. If I summoned one, he could dig a deeper hole than the pitcher's and hit him.");
 
 	Wld_InsertItem	(ItSc_SumCrawler, "FP_ITEM_CRAWLERSCROLL");
 };
@@ -306,21 +306,21 @@ FUNC INT Info_Mod_Alex_LochGegraben_Condition()
 
 FUNC VOID Info_Mod_Alex_LochGegraben_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_00"); //Ah, guten Morgen. Du willst wohl wieder meine Grabkünste bewundern, was?
-	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_01"); //Willst wohl selbst mal ein Loch graben. Oh, da ist ja schon eines.
-	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_02"); //Lass mich das mal ansehen. Da hast du wohl mit dem Löffel gegraben, was?
+	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_00"); //Ah, good morning. You want to admire my funeral arts again, don't you?
+	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_01"); //I guess you want to dig a hole yourself. Oh, there's one already.
+	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_02"); //Let me take a look at that. You dug with a spoon, didn't you?
 
 	AI_GotoWP	(self, "REL_HS_007");
 
-	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_03"); //Das Loch ist ja grade mal ... grad ... gra ... grade maal ... DAS IST DAS TIEFSTE LOCH, DAS ICH JE GESEHEN HABE!!!
-	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_04"); //Wie hast du das gemacht, du Grünschnabel? Da muss ein Trick dabei sein.
+	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_03"); //The hole is barely empty.... just... gram... just maal.... THIS IS THE DEEPEST HOLE I' VE EVER SEEN!!!!
+	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_04"); //How did you do that, you greenhorn? There must be a trick to it.
 
 	AI_GotoWP	(self, "REL_HS_008");
 	AI_GotoWP	(self, "REL_HS_007");
 
-	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_05"); //Das ... Das ... Aaaaaaaaaaaaaaaaaaaahhhhh ...
+	AI_Output(self, hero, "Info_Mod_Alex_LochGegraben_08_05"); //That... That... Aaaaaaaaaaaaaaaaaaaaaaaahhhhhhh...
 
-	B_LogEntry	(TOPIC_MOD_SL_LOCHGRAEBER, "Dem Lochgräber hab ich es aber ganz schön gegeben ...");
+	B_LogEntry	(TOPIC_MOD_SL_LOCHGRAEBER, "I gave it to the hole digger, though...");
 
 	Mod_SL_PartLochgraeber = 2;
 

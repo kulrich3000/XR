@@ -1,7 +1,7 @@
 instance Mod_7013_HS_Fluffy_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fluffy";
+	name 		= "fluffy";
 	guild 		= GIL_SHEEP;
 	id 			= 7013;
 	voice 		= 6;

@@ -91,7 +91,7 @@ func void B_AssessDamage ()
 			{
 				B_Say_Overlay (hero, NULL, "$XERESISTIMMORTAL");
 
-				B_LogEntry	(TOPIC_MOD_XERES, "Ich kann Xeres' keinen Schaden zufügen. Ich sollte lieber verschwinden und Xardas aufsuchen.");
+				B_LogEntry	(TOPIC_MOD_XERES, "I can't harm Xeres's body. I better get out of here and see Xardas.");
 			};
 		};
 

@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Wesen_05_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_05_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_18_00"); //Was du auch sehen magst, was du auch hören, fühlen oder schmecken magst, nichts davon ist wahr.
-	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_18_01"); //Es gibt keine Wahrheit, es gibt nur Wahrnehmung.
-	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_18_02"); //Das, was du wahrnimmst, ist das, was du Wahrheit nennst.
+	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_18_00"); //Whatever you see, whatever you hear, feel or taste, none of it is true.
+	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_18_01"); //There is no truth, there is only perception.
+	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_18_02"); //What you perceive is what you call truth.
 
 	AI_StopProcessInfos	(self);
 };

@@ -11,7 +11,7 @@ FUNC VOID XW_Startscene()
 
 	if (Mod_XW_Startscene_Counter == 3)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Startscene_15_00"); //Bei den Göttern!
+		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Startscene_15_00"); //Oh, my gods!
 	};
 
 	if (Mod_XW_Startscene_Counter == 51)

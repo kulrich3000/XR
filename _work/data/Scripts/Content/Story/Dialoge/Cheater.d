@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Cheater_Kapitel3 (C_INFO)
 	information	= Info_Mod_Cheater_Kapitel3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kapitel 2 Ende";
+	description	= "Chapter 2 End";
 };
 
 FUNC INT Info_Mod_Cheater_Kapitel3_Condition()
@@ -36,7 +36,7 @@ INSTANCE Info_Mod_Cheater_Riddlerquest (C_INFO)
 	information	= Info_Mod_Cheater_Riddlerquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Riddlerquest";
+	description	= "riding quest";
 };
 
 FUNC INT Info_Mod_Cheater_Riddlerquest_Condition()
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Cheater_Kapitel4 (C_INFO)
 	information	= Info_Mod_Cheater_Kapitel4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kapitel 4";
+	description	= "Chapter 4";
 };
 
 FUNC INT Info_Mod_Cheater_Kapitel4_Condition()
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Cheater_Gildenwahl (C_INFO)
 	information	= Info_Mod_Cheater_Gildenwahl_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gilde";
+	description	= "fraternity";
 };
 
 FUNC INT Info_Mod_Cheater_Gildenwahl_Condition()
@@ -105,11 +105,11 @@ FUNC VOID Info_Mod_Cheater_Gildenwahl_Info()
 {
 	Info_ClearChoices	(Info_Mod_Cheater_Gildenwahl);
 
-	Info_AddChoice	(Info_Mod_Cheater_Gildenwahl, "Wasser Novize", Info_Mod_Cheater_Gildenwahl_WNOV);
-	Info_AddChoice	(Info_Mod_Cheater_Gildenwahl, "Söldner", Info_Mod_Cheater_Gildenwahl_SLD);
-	Info_AddChoice	(Info_Mod_Cheater_Gildenwahl, "Schwarzer Novize", Info_Mod_Cheater_Gildenwahl_SNOV);
+	Info_AddChoice	(Info_Mod_Cheater_Gildenwahl, "Water Novice", Info_Mod_Cheater_Gildenwahl_WNOV);
+	Info_AddChoice	(Info_Mod_Cheater_Gildenwahl, "Mercenary", Info_Mod_Cheater_Gildenwahl_SLD);
+	Info_AddChoice	(Info_Mod_Cheater_Gildenwahl, "Black novice", Info_Mod_Cheater_Gildenwahl_SNOV);
 	Info_AddChoice	(Info_Mod_Cheater_Gildenwahl, "Miliz", Info_Mod_Cheater_Gildenwahl_MIL);
-	Info_AddChoice	(Info_Mod_Cheater_Gildenwahl, "Feuer Novize", Info_Mod_Cheater_Gildenwahl_FNOV);
+	Info_AddChoice	(Info_Mod_Cheater_Gildenwahl, "Fire Novice", Info_Mod_Cheater_Gildenwahl_FNOV);
 };
 
 FUNC VOID Info_Mod_Cheater_Gildenwahl_SLD()
@@ -175,7 +175,7 @@ INSTANCE Info_Mod_Cheater_Perks (C_INFO)
 	information	= Info_Mod_Cheater_Perks_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Perks freischalten";
+	description	= "Unlock Perks";
 };
 
 FUNC INT Info_Mod_Cheater_Perks_Condition()
@@ -187,43 +187,43 @@ FUNC VOID Info_Mod_Cheater_Perks_Info()
 {
 	Info_ClearChoices	(Info_Mod_Cheater_Perks);
 
-	Info_AddChoice	(Info_Mod_Cheater_Perks, "Zurück", Info_Mod_Cheater_Perks_BACK);
+	Info_AddChoice	(Info_Mod_Cheater_Perks, "Back", Info_Mod_Cheater_Perks_BACK);
 
 	if (ZweihandAlsEinhand_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Zweihand als Einhand", Info_Mod_Cheater_Perks_ZweihandAlsEinhand);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "Two-handed as one hand", Info_Mod_Cheater_Perks_ZweihandAlsEinhand);
 	};
 	if (Werwolf_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Werwolf", Info_Mod_Cheater_Perks_Werwolf);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "werewolf", Info_Mod_Cheater_Perks_Werwolf);
 	};
 	if (WaffenSchmelzen_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Waffen einschmelzen", Info_Mod_Cheater_Perks_Schmelzen);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "Melting down weapons", Info_Mod_Cheater_Perks_Schmelzen);
 	};
 	if (DefenseBreak_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Verteidigung brechen", Info_Mod_Cheater_Perks_DefenseBreak);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "break defense", Info_Mod_Cheater_Perks_DefenseBreak);
 	};
 	if (Unsichtbarkeit_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Unsichtbarkeit", Info_Mod_Cheater_Perks_Unsichtbarkeit);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "invisibility", Info_Mod_Cheater_Perks_Unsichtbarkeit);
 	};
 	if (Standfest_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Standfest", Info_Mod_Cheater_Perks_Standfest);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "steadfast", Info_Mod_Cheater_Perks_Standfest);
 	};
 	if (Sprinten_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Sprinten", Info_Mod_Cheater_Perks_Sprinten);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "sprint", Info_Mod_Cheater_Perks_Sprinten);
 	};
 	if (Slowmotion_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Slowmotion", Info_Mod_Cheater_Perks_Slowmotion);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "slow motion", Info_Mod_Cheater_Perks_Slowmotion);
 	};
 	if (SchnellesLernen_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Schnelles Lernen", Info_Mod_Cheater_Perks_SchnellesLernen);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "Fast learning", Info_Mod_Cheater_Perks_SchnellesLernen);
 	};
 	if (Schattenlaeufer_Perk == FALSE)
 	{
@@ -231,31 +231,31 @@ FUNC VOID Info_Mod_Cheater_Perks_Info()
 	};
 	if (Orktoeter_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Orktöter", Info_Mod_Cheater_Perks_Orktoeter);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "orc killer", Info_Mod_Cheater_Perks_Orktoeter);
 	};
 	if (Knockout_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Niederschlagen", Info_Mod_Cheater_Perks_Knockout);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "knocking down", Info_Mod_Cheater_Perks_Knockout);
 	};
 	if (Menschtoeter_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Menschentöter", Info_Mod_Cheater_Perks_Menschtoeter);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "human killers", Info_Mod_Cheater_Perks_Menschtoeter);
 	};
 	if (Konter_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Kontern", Info_Mod_Cheater_Perks_Konter);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "retaliation", Info_Mod_Cheater_Perks_Konter);
 	};
 	if (Schaerfen_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Klingen schärfen", Info_Mod_Cheater_Perks_Schaerfen);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "Sharpening blades", Info_Mod_Cheater_Perks_Schaerfen);
 	};
 	if (EwigeNacht_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Ewige Nacht", Info_Mod_Cheater_Perks_EwigeNacht);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "Eternal Night", Info_Mod_Cheater_Perks_EwigeNacht);
 	};
 	if (Delirium_Perk == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Cheater_Perks, "Delirium", Info_Mod_Cheater_Perks_Delirium);
+		Info_AddChoice	(Info_Mod_Cheater_Perks, "delirium", Info_Mod_Cheater_Perks_Delirium);
 	};
 };
 

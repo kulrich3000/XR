@@ -14,7 +14,7 @@ INSTANCE Info_Stt_10_EXIT(C_INFO)
 	condition	= Info_Stt_10_EXIT_Condition;
 	information	= Info_Stt_10_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_Stt_10_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Stt_10_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_10_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_10_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich will ein Gardist werden.";
+	description = "I want to be a guardsman.";
 };                       
 
 FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
@@ -52,25 +52,25 @@ FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //Ich will ein Gardist werden.
-	AI_Output(self,hero,"Info_Stt_10_EinerVonEuchWerden_10_01"); //So? Hast du schon mit Thorus geredet?
+	AI_Output(hero,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //I want to be a guardsman.
+	AI_Output(self,hero,"Info_Stt_10_EinerVonEuchWerden_10_01"); //Like this? Have you talked to Thorus yet?
 	
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
-	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden, "Nein.", Info_Stt_10_EinerVonEuchWerden_Nein);
-	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden, "Ja.", Info_Stt_10_EinerVonEuchWerden_Ja);
+	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden, "No.", Info_Stt_10_EinerVonEuchWerden_Nein);
+	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden, "Yeah.", Info_Stt_10_EinerVonEuchWerden_Ja);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Nein()
 {
-	AI_Output(hero,self,"Info_Stt_10_EinerVonEuchWerden_Nein_15_00"); //Bis jetzt noch nicht.
-	AI_Output(self,hero,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //Dann mach das, du findest ihn am Eingang der Burg.
+	AI_Output(hero,self,"Info_Stt_10_EinerVonEuchWerden_Nein_15_00"); //Not yet, so far.
+	AI_Output(self,hero,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //Then do it, you'll find him at the entrance to the castle.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Ja()
 {
-	AI_Output(hero,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //Ja, habe ich.
-	AI_Output(self,hero,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //Gut. Tu einfach, was er sagt. Das hat mir auch nicht geschadet. Jedenfalls nicht wirklich.
+	AI_Output(hero,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //Yes, I have.
+	AI_Output(self,hero,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //Good. Just do what he says. That didn't hurt me either. Not really, anyway.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
@@ -84,7 +84,7 @@ INSTANCE Info_Stt_10_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_10_WichtigePersonen_Condition;
 	information	= Info_Stt_10_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wen von den Leuten hier sollte ich kennen?";
+	description = "Which of these people should I know?";
 };                       
 
 FUNC INT Info_Stt_10_WichtigePersonen_Condition()
@@ -94,8 +94,8 @@ FUNC INT Info_Stt_10_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_10_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Stt_10_WichtigePersonen_15_00"); //Wen von den Leuten hier sollte ich kennen?
-	AI_Output(self,hero,"Info_Stt_10_WichtigePersonen_10_01"); //Wenn du mal Probleme mit den Gardisten hast, geh zu Gravo. Du findest ihn am Waschplatz beim Burgtor. Er kümmert sich um Leute, die Ärger haben. Besonders bei Neuen passiert das hier schneller, als du denkst.
+	AI_Output(hero,self,"Info_Stt_10_WichtigePersonen_15_00"); //Which of these people should I know?
+	AI_Output(self,hero,"Info_Stt_10_WichtigePersonen_10_01"); //If you ever have any problems with the guards, go to Gravo. You'll find him at the wash place near the castle gate. He cares about people in trouble. Especially for newcomers, this happens faster than you think.
 };
 
 // *************************************************************************
@@ -108,7 +108,7 @@ INSTANCE Info_Stt_10_DasLager(C_INFO)
 	condition	= Info_Stt_10_DasLager_Condition;
 	information	= Info_Stt_10_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über das Lager sagen?";
+	description = "What can you tell me about the camp?";
 };                       
 
 FUNC INT Info_Stt_10_DasLager_Condition()
@@ -118,9 +118,9 @@ FUNC INT Info_Stt_10_DasLager_Condition()
 
 FUNC VOID Info_Stt_10_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Stt_10_DasLager_15_00"); //Was kannst du mir über das Lager sagen?
-	AI_Output(self,hero,"Info_Stt_10_DasLager_10_01"); //Am interessantesten hier ist wohl der Marktplatz. Wenn du mal was Bestimmtes suchst - da kriegst du fast alles.
-	AI_Output(self,hero,"Info_Stt_10_DasLager_10_02"); //Es ist der Platz unter dem großen Dach im Süden des äußeren Rings.
+	AI_Output(hero,self,"Info_Stt_10_DasLager_15_00"); //What can you tell me about the camp?
+	AI_Output(self,hero,"Info_Stt_10_DasLager_10_01"); //The marketplace is probably the most interesting one here. If you're looking for something special, you'll get almost everything.
+	AI_Output(self,hero,"Info_Stt_10_DasLager_10_02"); //It is the place under the big roof in the south of the outer ring.
 };
 
 // *************************************************************************
@@ -144,7 +144,7 @@ FUNC INT Info_Stt_10_DieLage_Condition()
 FUNC VOID Info_Stt_10_DieLage_Info()
 {
 	AI_Output(hero,self,"Info_Stt_10_DieLage_15_00"); //Hi!
-	AI_Output(self,hero,"Info_Stt_10_DieLage_10_01"); //Was willst du?
+	AI_Output(self,hero,"Info_Stt_10_DieLage_10_01"); //What do you want?
 };
 
 INSTANCE Info_Mod_STT_10_Pickpocket (C_INFO)

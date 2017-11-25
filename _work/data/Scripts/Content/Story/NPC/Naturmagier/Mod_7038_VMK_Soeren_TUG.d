@@ -1,7 +1,7 @@
 instance Mod_7038_VMK_Soeren_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Sören";
+	name 		= "soren";
 	guild 		= GIL_OUT;
 	id 			= 7038;
 	voice 		= 8;

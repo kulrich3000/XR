@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Schwarzkrieger_PAT_Heiltrank (C_INFO)
 	information	= Info_Mod_Schwarzkrieger_PAT_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(healing potion)";
 };
 
 FUNC INT Info_Mod_Schwarzkrieger_PAT_Heiltrank_Condition()
@@ -25,31 +25,31 @@ FUNC VOID Info_Mod_Schwarzkrieger_PAT_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Essenz der Heilung", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Essence of Healing", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Elixier der Heilung", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Elixir of Healing", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Extrakt der Heilung", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Extract of Healing", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Essenz der Heilung", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Essence of Healing", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Trank der leichten Heilung", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Drink of light healing", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Leichter Heiltrank", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Light healing potion", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Schwarzkrieger_PAT_Heiltrank, "Drink of fast healing", Info_Mod_Schwarzkrieger_PAT_Heiltrank_Health_05);
 	};
 };
 

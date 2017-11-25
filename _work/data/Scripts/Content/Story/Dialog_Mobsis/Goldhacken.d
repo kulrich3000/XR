@@ -113,7 +113,7 @@ FUNC VOID Goldhacken_S1 ()
 	{	
 		if (Npc_HasItems(hero, ItMw_2H_Axe_L_01) == 0)
 		{
-			Print	("Ohne Spitzhacke geht das nicht!");
+			Print	("You can't do that without a pickaxe!");
 
 			AI_UseMob (hero, "ORE", -1);
 			return;
@@ -161,7 +161,7 @@ INSTANCE PC_Goldhacken_Addon_Hour (C_Info)
 	condition		= PC_Goldhacken_Addon_Hour_Condition;
 	information		= PC_Goldhacken_Addon_Hour_Info;
 	permanent		= TRUE;
-	description		= "Einfach mal hacken. "; 
+	description		= "Just chop it. "; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Hour_Condition ()
@@ -212,7 +212,7 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 8)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-				PrintScreen ("3 Goldbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Three lumps of gold, chopped!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				
 			}
@@ -220,27 +220,27 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 5)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-				PrintScreen ("2 Goldbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Two pieces of gold, chopped!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			}
 			else
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-				PrintScreen ("1 Goldbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("1 lump of gold, chopped!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			};
 		}
 		else
 		{
-			PrintScreen ("Goldsplitter fliegen durch die Gegend ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Gold splinters fly through the area....", -1, -1, FONT_ScreenSmall, 2);	
 			Truemmer_Count = (Truemmer_Count +1);
 		};
 	}
 	else
 	{
-		PrintScreen ("Hier gibt's Nichts mehr zu holen.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("There's nothing left to get here.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 	};
 };
@@ -254,7 +254,7 @@ INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 	condition		= PC_Goldhacken_Addon_TSchlag_Condition;
 	information		= PC_Goldhacken_Addon_TSchlag_Info;
 	permanent		= TRUE;
-	description		= "Trümmerschlag ansetzen."; 
+	description		= ""; 
 };
 
 FUNC INT PC_Goldhacken_Addon_TSchlag_Condition ()
@@ -273,7 +273,7 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		
 	if (TruemmerChance < 5)
 	{
-			PrintScreen ("Nichts ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Nothing...", -1, -1, FONT_ScreenSmall, 2);	
 	}
 	else
 	{
@@ -285,19 +285,19 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		{
 			//----Gold verteilen-----------------------
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-			PrintScreen ("3 Goldbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Three lumps of gold, chopped!", -1, -1, FONT_ScreenSmall, 2);	
 			
 		}
 		else if (TruemmerChance >= 50)
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-			PrintScreen ("2 Goldbrocken gehackt! ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Two pieces of gold, chopped! ...", -1, -1, FONT_ScreenSmall, 2);	
 		
 		}
 		else 
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-			PrintScreen ("1 Goldbrocken gehackt! ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("1 lump of gold, chopped! ...", -1, -1, FONT_ScreenSmall, 2);	
 		};
 	};
 	Truemmer_Count = 0;
@@ -314,7 +314,7 @@ INSTANCE PC_Goldhacken_Addon_Chance (C_Info)
 	condition		= PC_Goldhacken_Addon_Chance_Condition;
 	information		= PC_Goldhacken_Addon_Chance_Info;
 	permanent		= TRUE;
-	description		= "(Eigene Fähigkeit prüfen)"; 
+	description		= "(Check own ability)"; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Chance_Condition ()
@@ -331,34 +331,34 @@ FUNC VOID PC_Goldhacken_Addon_Chance_Info()
 	
 	if (ErzHackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("blutiger Anfänger (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("absolute beginner (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("ganz passabler Schürfer (" , IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("quite reasonable prospector (" , IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("erfahrener Goldschürfer (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("experienced prospector (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 75) 
 	{
-		ConcatText = ConcatStrings ("waschechter Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("genuine Buddler ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 90) 
 	{
-		ConcatText = ConcatStrings ("verdammt guter Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("damn good digger ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 98) 
 	{
-		ConcatText = ConcatStrings ("Meister Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("Master Buddler ( ", IntToString (ErzHackChance));
 	}
 	else
 	{
 		ConcatText = ConcatStrings ("Buddler Guru ( ", IntToString (ErzHackChance));
 	};
 	
-	ConcatText = ConcatStrings (concatText, " Prozent)");
+	ConcatText = ConcatStrings (concatText, " percent)");
 	
 	PrintScreen (concatText, -1, -1, FONT_ScreenSmall,2);
 };

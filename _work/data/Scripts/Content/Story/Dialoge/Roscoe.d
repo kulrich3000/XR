@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Roscoe_Hi (C_INFO)
 	information	= Info_Mod_Roscoe_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie mir scheint hast du jetzt Lares Platz eingenommen.";
+	description	= "It seems to me you've taken Lares' place now.";
 };
 
 FUNC INT Info_Mod_Roscoe_Hi_Condition()
@@ -16,11 +16,11 @@ FUNC INT Info_Mod_Roscoe_Hi_Condition()
 
 FUNC VOID Info_Mod_Roscoe_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Roscoe_Hi_15_00"); //Wie mir scheint hast du jetzt Lares Platz eingenommen.
-	AI_Output(self, hero, "Info_Mod_Roscoe_Hi_10_01"); //Richtig, solange er in Khorinis ist, bin ich für die Dinge zuständig, die etwas Finesse benötigen.
-	AI_Output(hero, self, "Info_Mod_Roscoe_Hi_15_02"); //Was heißt ...?
-	AI_Output(self, hero, "Info_Mod_Roscoe_Hi_10_03"); //Nun, das Sammeln nützlicher Informationen und das planen etwas diskreter Einsätze, wenn du verstehst.
-	AI_Output(self, hero, "Info_Mod_Roscoe_Hi_10_04"); //Und Lernwillige, die unserem Lager angehören, kann ich sicherlich das eine oder andere Diebstalent lehren.
+	AI_Output(hero, self, "Info_Mod_Roscoe_Hi_15_00"); //It seems to me you've taken Lares' place now.
+	AI_Output(self, hero, "Info_Mod_Roscoe_Hi_10_01"); //Right, as long as he's in Khorinis, I'm in charge of the things that need some finesse.
+	AI_Output(hero, self, "Info_Mod_Roscoe_Hi_15_02"); //What do you mean...?
+	AI_Output(self, hero, "Info_Mod_Roscoe_Hi_10_03"); //Well, gathering useful information and planning some discreet missions, if you understand.
+	AI_Output(self, hero, "Info_Mod_Roscoe_Hi_10_04"); //And those willing to learn who belong to our camp, I can certainly teach one or two talented thieves.
 };
 
 INSTANCE Info_Mod_Roscoe_SentenzaSchwert (C_INFO)
@@ -45,7 +45,7 @@ FUNC INT Info_Mod_Roscoe_SentenzaSchwert_Condition()
 
 FUNC VOID Info_Mod_Roscoe_SentenzaSchwert_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Roscoe_SentenzaSchwert_10_00"); //Tja, unauffällig vor der Taverne saufen war nicht unauffällig genug.
+	AI_Output(self, hero, "Info_Mod_Roscoe_SentenzaSchwert_10_00"); //Well, drinking inconspicuously in front of the tavern wasn't inconspicuous enough.
 
 	AI_StopProcessInfos	(self);
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Roscoe_Lernen (C_INFO)
 	information	= Info_Mod_Roscoe_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Teach me something.";
 };
 
 FUNC INT Info_Mod_Roscoe_Lernen_Condition()
@@ -76,8 +76,8 @@ FUNC INT Info_Mod_Roscoe_Lernen_Condition()
 
 FUNC VOID Info_Mod_Roscoe_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Roscoe_Lernen_15_00"); //Bring mir was bei.
-	AI_Output(self, hero, "Info_Mod_Roscoe_Lernen_10_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Roscoe_Lernen_15_00"); //Teach me something.
+	AI_Output(self, hero, "Info_Mod_Roscoe_Lernen_10_01"); //What do you want to learn?
 
 	Info_ClearChoices	(Info_Mod_Roscoe_Lernen);
 
@@ -85,15 +85,15 @@ FUNC VOID Info_Mod_Roscoe_Lernen_Info()
 
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKPOCKET) == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Roscoe_Lernen, B_BuildLearnString("Taschendiebstahl", B_GetLearnCostTalent(hero, NPC_TALENT_PICKPOCKET, 1)), Info_Mod_Roscoe_Lernen_Pickpocket);
+		Info_AddChoice		(Info_Mod_Roscoe_Lernen, B_BuildLearnString("Pickpocket", B_GetLearnCostTalent(hero, NPC_TALENT_PICKPOCKET, 1)), Info_Mod_Roscoe_Lernen_Pickpocket);
 	};
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Roscoe_Lernen, B_BuildLearnString("Schlösser knacken", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1)), Info_Mod_Roscoe_Lernen_Picklock);
+		Info_AddChoice		(Info_Mod_Roscoe_Lernen, B_BuildLearnString("pick locks", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1)), Info_Mod_Roscoe_Lernen_Picklock);
 	};
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Roscoe_Lernen, B_BuildLearnString("Schleichen", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1)), Info_Mod_Roscoe_Lernen_Sneak);
+		Info_AddChoice		(Info_Mod_Roscoe_Lernen, B_BuildLearnString("Sneak", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1)), Info_Mod_Roscoe_Lernen_Sneak);
 	};
 };
 

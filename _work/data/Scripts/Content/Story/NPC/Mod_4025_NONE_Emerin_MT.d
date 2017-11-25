@@ -1,7 +1,7 @@
 instance Mod_4025_NONE_Emerin_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Emerin";
+	name 		= "emerging market";
 	guild 		= GIL_OUT;
 	id 			= 4025;
 	voice 		= 12;

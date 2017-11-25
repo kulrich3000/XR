@@ -6,7 +6,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_LobartNW (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_LobartNW_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zu Lobart's Hof in Khorinis";
+	description	= "to Lobart's farm in Khorinis";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_LobartNW_Condition()
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_SekobNW (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_SekobNW_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zu Sekob's Hof in Khorinis";
+	description	= "to Sekob's farm in Khorinis";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_SekobNW_Condition()
@@ -78,7 +78,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_DunklerWaldNW (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_DunklerWaldNW_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum dunklen Wald in Khorinis";
+	description	= "to the dark forest in Khorinis";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_DunklerWaldNW_Condition()
@@ -114,7 +114,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_EisgebietEIS (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_EisgebietEIS_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Eisgebiet";
+	description	= "to the ice rink";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_EisgebietEIS_Condition()
@@ -150,7 +150,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_GreatSeaREL (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_GreatSeaREL_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum großen See in Relendel";
+	description	= "to the big lake in Relendel";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_GreatSeaREL_Condition()
@@ -186,7 +186,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_NLMT (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_NLMT_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Neuen Lager";
+	description	= "to the new warehouse";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_NLMT_Condition()
@@ -222,7 +222,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_PassREL (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_PassREL_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Pass nach Khorinis in Relendel";
+	description	= "to the pass to Khorinis in Relendel";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_PassREL_Condition()
@@ -258,7 +258,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_SonnenkreisNW (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_SonnenkreisNW_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Sonnenkreis in Khorinis";
+	description	= "to the Solar Circle in Khorinis";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_SonnenkreisNW_Condition()
@@ -294,7 +294,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_StonehengeMT (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_StonehengeMT_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Stonehenge im Minental";
+	description	= "Stonehenge in the Minental valley";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_StonehengeMT_Condition()
@@ -330,7 +330,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_NebelturmMT (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_NebelturmMT_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zum Wald beim alten Lager im Minental";
+	description	= "to the forest near the old camp in the Minental valley";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_NebelturmMT_Condition()
@@ -366,7 +366,7 @@ INSTANCE Info_Mod_TeleportSteinkreisTafel_SuedmineEIS (C_INFO)
 	information	= Info_Mod_TeleportSteinkreisTafel_SuedmineEIS_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "zur Südmine in Gelato";
+	description	= "to the south mine in Gelato";
 };
 
 FUNC INT Info_Mod_TeleportSteinkreisTafel_SuedmineEIS_Condition()

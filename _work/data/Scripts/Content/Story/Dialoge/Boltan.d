@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Boltan_Hi (C_INFO)
 	information	= Info_Mod_Boltan_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was gibt es denn hier zu bewachen?";
+	description	= "What's there to guard here?";
 };
 
 FUNC INT Info_Mod_Boltan_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Boltan_Hi_Condition()
 
 FUNC VOID Info_Mod_Boltan_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Boltan_Hi_15_00"); //Was gibt es denn hier zu bewachen?
-	AI_Output(self, hero, "Info_Mod_Boltan_Hi_30_01"); //Hauptsächlich mein Pausenbrot.
-	AI_Output(hero, self, "Info_Mod_Boltan_Hi_15_02"); //Klingt nach einer entspannten Arbeit.
-	AI_Output(self, hero, "Info_Mod_Boltan_Hi_30_03"); //Ist der beliebteste Job hier. Wenn man nicht so richtig Bock aufs Trainieren hat.
-	AI_Output(hero, self, "Info_Mod_Boltan_Hi_15_04"); //Dann bist du ja ein richtiger Glückspilz.
-	AI_Output(self, hero, "Info_Mod_Boltan_Hi_30_05"); //Ja, Mann. Ein Glückspilz.
+	AI_Output(hero, self, "Info_Mod_Boltan_Hi_15_00"); //What's there to guard here?
+	AI_Output(self, hero, "Info_Mod_Boltan_Hi_30_01"); //Mostly my lunch.
+	AI_Output(hero, self, "Info_Mod_Boltan_Hi_15_02"); //Sounds like a relaxed job.
+	AI_Output(self, hero, "Info_Mod_Boltan_Hi_30_03"); //Is the most popular job here. If you don't feel like training.
+	AI_Output(hero, self, "Info_Mod_Boltan_Hi_15_04"); //Then you're a lucky guy.
+	AI_Output(self, hero, "Info_Mod_Boltan_Hi_30_05"); //Yeah, man. Lucky bastard.
 };
 
 INSTANCE Info_Mod_Boltan_ZellenBelegt (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Boltan_ZellenBelegt (C_INFO)
 	information	= Info_Mod_Boltan_ZellenBelegt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie oft sind die Zellen denn belegt?";
+	description	= "How often are the cells occupied?";
 };
 
 FUNC INT Info_Mod_Boltan_ZellenBelegt_Condition()
@@ -44,11 +44,11 @@ FUNC INT Info_Mod_Boltan_ZellenBelegt_Condition()
 
 FUNC VOID Info_Mod_Boltan_ZellenBelegt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Boltan_ZellenBelegt_15_00"); //Wie oft sind die Zellen denn belegt?
-	AI_Output(self, hero, "Info_Mod_Boltan_ZellenBelegt_30_01"); //Ab und zu kommt mal einer für ein paar Tage vorbei. Matteo war drin, hat seine Kunden beschissen, Valentino war drin, hat besoffen Coragon verhauen.
-	AI_Output(self, hero, "Info_Mod_Boltan_ZellenBelegt_30_02"); //Aber was Ernstes war schon lange nicht mehr dabei. Vielleicht ändert sich das jetzt.
-	AI_Output(hero, self, "Info_Mod_Boltan_ZellenBelegt_15_03"); //Wieso sollte sich da was ändern?
-	AI_Output(self, hero, "Info_Mod_Boltan_ZellenBelegt_30_04"); //Keine Ahnung, da kommen doch die ganzen Verbrecher aus dem Minental. Die kann man doch gut einsperren.
+	AI_Output(hero, self, "Info_Mod_Boltan_ZellenBelegt_15_00"); //How often are the cells occupied?
+	AI_Output(self, hero, "Info_Mod_Boltan_ZellenBelegt_30_01"); //Every now and then, someone comes by for a few days. Matteo was in there, shit his customers, Valentino was in there, beat up Coragon drunk.
+	AI_Output(self, hero, "Info_Mod_Boltan_ZellenBelegt_30_02"); //But there hasn't been anything serious for a long time. Maybe this will change now.
+	AI_Output(hero, self, "Info_Mod_Boltan_ZellenBelegt_15_03"); //Why would anything change?
+	AI_Output(self, hero, "Info_Mod_Boltan_ZellenBelegt_30_04"); //I don't know, all the criminals are from the Mental. They're easy to lock up.
 };
 
 INSTANCE Info_Mod_Boltan_WasGeht (C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Boltan_WasGeht (C_INFO)
 	information	= Info_Mod_Boltan_WasGeht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du denn die ganze Zeit über?";
+	description	= "What are you doing all the time?";
 };
 
 FUNC INT Info_Mod_Boltan_WasGeht_Condition()
@@ -71,13 +71,13 @@ FUNC INT Info_Mod_Boltan_WasGeht_Condition()
 
 FUNC VOID Info_Mod_Boltan_WasGeht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Boltan_WasGeht_15_00"); //Was machst du denn die ganze Zeit über?
-	AI_Output(self, hero, "Info_Mod_Boltan_WasGeht_30_01"); //Na ja, ich denk mir so Geschichten aus.
-	AI_Output(hero, self, "Info_Mod_Boltan_WasGeht_15_02"); //Geschichten?
-	AI_Output(self, hero, "Info_Mod_Boltan_WasGeht_30_03"); //Ja, Mann, Geschichten. Wenn ich ein Held wär, was ich dann so erleben würde. Ritter Boltan im Kampf gegen den Feuerdrachen, Ritter Boltan vernichtet das Beliargesindel...
-	AI_Output(hero, self, "Info_Mod_Boltan_WasGeht_15_04"); //Und das schreibst du dann auf?
-	AI_Output(self, hero, "Info_Mod_Boltan_WasGeht_30_05"); //Nee, schreiben kann ich nicht.
-	AI_Output(hero, self, "Info_Mod_Boltan_WasGeht_15_06"); //Ist vielleicht auch besser so...
+	AI_Output(hero, self, "Info_Mod_Boltan_WasGeht_15_00"); //What are you doing all the time?
+	AI_Output(self, hero, "Info_Mod_Boltan_WasGeht_30_01"); //Well, I make up stories.
+	AI_Output(hero, self, "Info_Mod_Boltan_WasGeht_15_02"); //Stories?
+	AI_Output(self, hero, "Info_Mod_Boltan_WasGeht_30_03"); //Yeah, man, stories. If I were a hero, what I'd live to see. Knight Boltan in the fight against the fire dragon, Knight Boltan destroys the Beliar rabble....
+	AI_Output(hero, self, "Info_Mod_Boltan_WasGeht_15_04"); //And you'll write that down?
+	AI_Output(self, hero, "Info_Mod_Boltan_WasGeht_30_05"); //Nah, I can't write.
+	AI_Output(hero, self, "Info_Mod_Boltan_WasGeht_15_06"); //Maybe it's better that way...
 };
 
 INSTANCE Info_Mod_Boltan_Daemonisch (C_INFO)
@@ -100,13 +100,13 @@ FUNC INT Info_Mod_Boltan_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Boltan_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Boltan_Daemonisch_30_00"); //He, es ist verboten, mit dem Gefangenen zu sprechen ...
-	AI_Output(hero, self, "Info_Mod_Boltan_Daemonisch_15_01"); //Was? Aber ...
-	AI_Output(self, hero, "Info_Mod_Boltan_Daemonisch_30_02"); //Haben einige Paladine angeordnet. Also, damit ist das Gespräch beendet.
+	AI_Output(self, hero, "Info_Mod_Boltan_Daemonisch_30_00"); //Hey, it's forbidden to speak to the prisoner...
+	AI_Output(hero, self, "Info_Mod_Boltan_Daemonisch_15_01"); //What? But...
+	AI_Output(self, hero, "Info_Mod_Boltan_Daemonisch_30_02"); //Arranged some paladins. Well, that concludes the conversation.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Recht unheimlich, was Tengron mir da berichtet. Er hat demnach die Paladine und Stadtwachen leblos im Tal vorgefunden und sah sich plötzlich von Dutzenden schwarzer Schatten umgeben, die sich unter seinem Paladinlicht zerstreuten. Leider wurde ich durch einen Erlass einiger Paladine daran gehindert, noch mehr zu erfahren ...");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Pretty creepy what Tengron tells me. He found the paladins and guards lifeless in the valley and suddenly saw himself surrounded by dozens of black shadows scattered under his paladin light. Unfortunately, a decree of some paladins prevented me from learning more....");
 
 	B_GivePlayerXP	(250);
 };
@@ -132,8 +132,8 @@ FUNC INT Info_Mod_Boltan_Hilfe_Condition()
 
 FUNC VOID Info_Mod_Boltan_Hilfe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Boltan_Hilfe_30_00"); //So, du wirst mich also ablösen? Pass bloß auf, die Mistkerle sind hinterhältig.
-	AI_Output(hero, self, "Info_Mod_Boltan_Hilfe_15_01"); //Ich werd's mir merken.
+	AI_Output(self, hero, "Info_Mod_Boltan_Hilfe_30_00"); //So you're gonna relieve me? Watch out, those bastards are sneaky.
+	AI_Output(hero, self, "Info_Mod_Boltan_Hilfe_15_01"); //I'll keep that in mind.
 
 	AI_StopProcessInfos	(self);
 
@@ -160,13 +160,13 @@ FUNC INT Info_Mod_Boltan_TomKraut_Condition()
 
 FUNC VOID Info_Mod_Boltan_TomKraut_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Boltan_TomKraut_30_00"); //(unterbricht) He, du. Lord Andre hat angeordnet, dass vorerst nicht mit dem Gefangenen gesprochen wird.
-	AI_Output(hero, self, "Info_Mod_Boltan_TomKraut_15_01"); //Aber ...
-	AI_Output(self, hero, "Info_Mod_Boltan_TomKraut_30_02"); //Kein Aber.
+	AI_Output(self, hero, "Info_Mod_Boltan_TomKraut_30_00"); //(interrupts) Hey, you. Lord Andre has ordered us not to speak to the prisoner for the time being.
+	AI_Output(hero, self, "Info_Mod_Boltan_TomKraut_15_01"); //But...
+	AI_Output(self, hero, "Info_Mod_Boltan_TomKraut_30_02"); //No but.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Das Kraut liegt vermutlich in der Asservatentruhe hinter Andre. Es zu stehlen, wird aber wohl nichts bringen. Die Torwachen am Osttor, einschließlich Mika, können bezeugen, wie sie es ihm abgenommen haben. Tom erwähnte noch ein Kraut, das Sumpfkraut sehr ähnlich sehen soll, ehe uns Boltan die weitere Unterhaltung verbot ...");
+	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "The herb is probably in the evidence chest behind Andre. Stealing it won't do any good, though. The gatekeepers at the East Gate, including Mika, can testify how they took it from him. Tom mentioned another herb, which should look very similar to swampweed, before Boltan forbade us to continue the conversation....");
 };
 
 INSTANCE Info_Mod_Boltan_HaradLehrling (C_INFO)
@@ -177,7 +177,7 @@ INSTANCE Info_Mod_Boltan_HaradLehrling (C_INFO)
 	information	= Info_Mod_Boltan_HaradLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Einer der Gefangenen ist tot!";
+	description	= "One of the prisoners is dead!";
 };
 
 FUNC INT Info_Mod_Boltan_HaradLehrling_Condition()
@@ -190,11 +190,11 @@ FUNC INT Info_Mod_Boltan_HaradLehrling_Condition()
 
 FUNC VOID Info_Mod_Boltan_HaradLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling_15_00"); //Einer der Gefangenen ist tot!
-	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling_30_01"); //Ja, stimmt. Gut beobachtet.
-	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling_15_02"); //Wollt ihr ihn nicht herausholen?
-	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling_30_03"); //Solange er nicht stinkt oder wir den Platz brauchen, kann er in seiner Zelle bleiben.
-	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling_30_04"); //Hauptsache, ich muss ihn nicht anfassen.
+	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling_15_00"); //One of the prisoners is dead!
+	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling_30_01"); //Yeah, that's right. Well observed.
+	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling_15_02"); //Don't you want to get him out?
+	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling_30_03"); //As long as he doesn't stink or we need the space, he can stay in his cell.
+	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling_30_04"); //As long as I don't have to touch him.
 };
 
 INSTANCE Info_Mod_Boltan_HaradLehrling2 (C_INFO)
@@ -205,7 +205,7 @@ INSTANCE Info_Mod_Boltan_HaradLehrling2 (C_INFO)
 	information	= Info_Mod_Boltan_HaradLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie ist Harad gestorben?";
+	description	= "How did Harad die?";
 };
 
 FUNC INT Info_Mod_Boltan_HaradLehrling2_Condition()
@@ -218,10 +218,10 @@ FUNC INT Info_Mod_Boltan_HaradLehrling2_Condition()
 
 FUNC VOID Info_Mod_Boltan_HaradLehrling2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling2_15_00"); //Wie ist Harad gestorben?
-	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling2_30_01"); //Er hatte einen Dolch dabei. Damit hat er schon wieder gegen eine Regel verstoßen.
-	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling2_30_02"); //Es ist nämlich verboten, spitze Gegenstände mit in die Zelle zu nehmen.
-	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling2_30_03"); //Na ja, er wäre so oder so in Beliars Reich gelandet.
+	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling2_15_00"); //How did Harad die?
+	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling2_30_01"); //He had a dagger with him. He's already broken another rule.
+	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling2_30_02"); //It is forbidden to take pointed objects into the cell.
+	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling2_30_03"); //Well, he would have ended up in Beliar's kingdom anyway.
 };
 
 INSTANCE Info_Mod_Boltan_HaradLehrling3 (C_INFO)
@@ -232,7 +232,7 @@ INSTANCE Info_Mod_Boltan_HaradLehrling3 (C_INFO)
 	information	= Info_Mod_Boltan_HaradLehrling3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll Harad aus dem Gefängnis holen!";
+	description	= "I'm supposed to get Harad out of jail!";
 };
 
 FUNC INT Info_Mod_Boltan_HaradLehrling3_Condition()
@@ -247,15 +247,15 @@ FUNC INT Info_Mod_Boltan_HaradLehrling3_Condition()
 
 FUNC VOID Info_Mod_Boltan_HaradLehrling3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling3_15_00"); //Ich soll Harad aus dem Gefängnis holen!
-	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling3_30_01"); //Ja? Wer hat dir das erlaubt? Tengron? Oder Lord Andre?
-	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling3_15_02"); //Bisher niemand ...
+	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling3_15_00"); //I'm supposed to get Harad out of jail!
+	AI_Output(self, hero, "Info_Mod_Boltan_HaradLehrling3_30_01"); //Yes? Who gave you permission? Tengron? Lord Andre?
+	AI_Output(hero, self, "Info_Mod_Boltan_HaradLehrling3_15_02"); //No one so far...
 
 	if (Mod_HaradLehrling_Boltan == 0)
 	{
 		Mod_HaradLehrling_Boltan = 1;
 
-		B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Ich brauche die Erlaubnis von Lord Andre oder Tengron, dass ich Harad aus dem Gefängnis holen kann.");
+		B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "I need permission from Lord Andre or Tengron to get Harad out of jail.");
 	};
 };
 

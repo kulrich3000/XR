@@ -2,7 +2,7 @@ instance Mod_1937_JGR_Nandor_NW (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Nandor";
+	name =							"panda";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							2;

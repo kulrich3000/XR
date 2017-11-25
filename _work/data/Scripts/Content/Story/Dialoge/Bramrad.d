@@ -17,13 +17,13 @@ FUNC INT Info_Mod_Bramrad_Hi_Condition()
 FUNC VOID Info_Mod_Bramrad_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bramrad_Hi_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_01"); //Hi, was gibt's?
-	AI_Output(hero, self, "Info_Mod_Bramrad_Hi_15_02"); //Du bist doch Jäger. Ist das Minental nicht ziehmlich gefährlich zum Jagen?
-	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_03"); //Wenn man weiß, wo man jagen kann, ist das Minental auch nicht gefährlicher, als der Rest von Khorinis.
-	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_04"); //Außerdem haben wir Glück. Auf dem Weg ins Minental tummeln sich genug Scavenger, so dass wir nur selten tiefer ins Tal gehen müssen.
-	AI_Output(hero, self, "Info_Mod_Bramrad_Hi_15_05"); //Also ernährt ihr euch fast nur von Scavengern?
-	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_06"); //Sie sind nun mal leicht zu töten, aber ab und zu finden wir am Pass auch ein paar Molerats, die sind noch leichter zu töten, weil sie so langsam sind, so dass sie meistens schon tot sind bevor sie einen erreichen.
-	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_07"); //Tja, wenn Mutter Natur ein Tier benachteiligt hat, dann die!
+	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_01"); //Hi, what's up?
+	AI_Output(hero, self, "Info_Mod_Bramrad_Hi_15_02"); //You're a hunter. Isn't the Minental a dangerous place to hunt?
+	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_03"); //If you know where to hunt, the Minental is no more dangerous than the rest of Khorinis.
+	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_04"); //Besides, we're lucky. On the way to the Minental there are enough scavengers, so that we rarely have to go deeper into the valley.
+	AI_Output(hero, self, "Info_Mod_Bramrad_Hi_15_05"); //So do you almost all eat cavengers?
+	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_06"); //They are easy to kill, but now and then we also find a few molerats at the pass, which are even easier to kill because they are so slow so that they are usually dead before they reach you.
+	AI_Output(self, hero, "Info_Mod_Bramrad_Hi_07_07"); //Well, if Mother Nature disadvantaged an animal, it's them!
 };
 
 INSTANCE Info_Mod_Bramrad_Nahrungsversorgung (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Bramrad_Nahrungsversorgung (C_INFO)
 	information	= Info_Mod_Bramrad_Nahrungsversorgung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ole hat mir gesagt, dass ich dir bei deiner Aufgabe helfen soll. ";
+	description	= "Ole told me to help you with your job. ";
 };
 
 FUNC INT Info_Mod_Bramrad_Nahrungsversorgung_Condition()
@@ -56,7 +56,7 @@ FUNC VOID Info_Mod_Bramrad_Nahrungsversorgung_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "Bramrad ist für die Nahrungsversorgung eingeteilt. Er braucht noch 25 Keulen. Außerdem soll ich noch einen Koch für das Lager organisieren. Bramrad meint ich solle mal im Hafen von Khorinis nachschauen ...");
+	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "Bramrad is assigned for the food supply. He needs another 25 clubs. Besides, I'm supposed to organize a cook for the camp. Bramrad thinks I should have a look at the harbour of Khorinis...");
 };
 
 INSTANCE Info_Mod_Bramrad_Nahrungsversorgung2 (C_INFO)
@@ -67,7 +67,7 @@ INSTANCE Info_Mod_Bramrad_Nahrungsversorgung2 (C_INFO)
 	information	= Info_Mod_Bramrad_Nahrungsversorgung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, ich hab das nötige Fleisch aufgetrieben.";
+	description	= "Here, I found the meat I needed.";
 };
 
 FUNC INT Info_Mod_Bramrad_Nahrungsversorgung2_Condition()
@@ -81,27 +81,27 @@ FUNC INT Info_Mod_Bramrad_Nahrungsversorgung2_Condition()
 
 FUNC VOID Info_Mod_Bramrad_Nahrungsversorgung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bramrad_Nahrungsversorgung2_15_00"); //Hier, ich hab das nötige Fleisch aufgetrieben.
+	AI_Output(hero, self, "Info_Mod_Bramrad_Nahrungsversorgung2_15_00"); //Here, I found the meat I needed.
 
 	B_GiveInvItems	(hero, self, ItFo_MuttonRaw, 25);
 
-	AI_Output(self, hero, "Info_Mod_Bramrad_Nahrungsversorgung2_07_01"); //Danke, jetzt hab ich eine Sorge weniger.
+	AI_Output(self, hero, "Info_Mod_Bramrad_Nahrungsversorgung2_07_01"); //Thank you, now I have one less worry.
 	
-	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "Ich habe Bramrad das Fleisch gegeben.");
+	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "I gave Bramrad the meat.");
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Bramrad_Nahrungsversorgung3))
 	{
 		B_SetTopicStatus	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, LOG_SUCCESS);
 
-		AI_Output(hero, self, "Info_Mod_Bramrad_Nahrungsversorgung4_15_02"); //Ich habe alles, was du wolltest, erledigt.
-		AI_Output(self, hero, "Info_Mod_Bramrad_Nahrungsversorgung4_07_03"); //Endlich macht mal wieder jemand was im Lager. Hier nimm das als Entschädigung für denen Mühen.
+		AI_Output(hero, self, "Info_Mod_Bramrad_Nahrungsversorgung4_15_02"); //I've done everything you wanted.
+		AI_Output(self, hero, "Info_Mod_Bramrad_Nahrungsversorgung4_07_03"); //Finally somebody's doing something in the warehouse again. Here, take this as compensation for their efforts.
 
 		CreateInvItems	(hero, ItRw_Bolt, 25);
 		CreateInvItems	(hero, ItRw_Arrow, 25);
 
-		B_ShowGivenThings	("25 Bolzen und Pfeile erhalten");
+		B_ShowGivenThings	("25 bolts and arrows preserved");
 
-		B_LogEntry_NS (TOPIC_MOD_KG_VORBEREITUNGEN, "Bramrad ist geholfen und die Versorgungsprobleme gelöst.");
+		B_LogEntry_NS (TOPIC_MOD_KG_VORBEREITUNGEN, "Bramrad is helped and the supply problems are solved.");
 	};
 
 	B_GivePlayerXP	(100);
@@ -115,7 +115,7 @@ INSTANCE Info_Mod_Bramrad_Nahrungsversorgung3 (C_INFO)
 	information	= Info_Mod_Bramrad_Nahrungsversorgung3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab dir einen Koch besorgt.";
+	description	= "I got you a cook.";
 };
 
 FUNC INT Info_Mod_Bramrad_Nahrungsversorgung3_Condition()
@@ -129,24 +129,24 @@ FUNC INT Info_Mod_Bramrad_Nahrungsversorgung3_Condition()
 
 FUNC VOID Info_Mod_Bramrad_Nahrungsversorgung3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bramrad_Nahrungsversorgung3_15_00"); //Ich hab dir einen Koch besorgt. Er wartet vor der Mine auf seinen Einsatz.
-	AI_Output(self, hero, "Info_Mod_Bramrad_Nahrungsversorgung3_07_01"); //Sehr schön, ich hoffe er beherrscht das kochen.
+	AI_Output(hero, self, "Info_Mod_Bramrad_Nahrungsversorgung3_15_00"); //I got you a cook. He waits in front of the mine for his mission.
+	AI_Output(self, hero, "Info_Mod_Bramrad_Nahrungsversorgung3_07_01"); //Very nice, I hope he knows how to cook.
 	
-	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "Ich habe Bramrad wegen Glenn informiert");
+	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "I informed Bramrad about Glenn.");
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Bramrad_Nahrungsversorgung2))
 	{
 		B_SetTopicStatus	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, LOG_SUCCESS);
 
-		AI_Output(hero, self, "Info_Mod_Bramrad_Nahrungsversorgung4_15_02"); //Ich habe alles, was du wolltest, erledigt.
-		AI_Output(self, hero, "Info_Mod_Bramrad_Nahrungsversorgung4_07_03"); //Endlich macht mal wieder jemand was im Lager. Hier nimm das als Entschädigung für denen Mühen.
+		AI_Output(hero, self, "Info_Mod_Bramrad_Nahrungsversorgung4_15_02"); //I've done everything you wanted.
+		AI_Output(self, hero, "Info_Mod_Bramrad_Nahrungsversorgung4_07_03"); //Finally somebody's doing something in the warehouse again. Here, take this as compensation for their efforts.
 
 		CreateInvItems	(hero, ItRw_Bolt, 25);
 		CreateInvItems	(hero, ItRw_Arrow, 25);
 
-		B_ShowGivenThings	("25 Bolzen und Pfeile erhalten");
+		B_ShowGivenThings	("25 bolts and arrows preserved");
 
-		B_LogEntry_NS (TOPIC_MOD_KG_VORBEREITUNGEN, "Bramrad ist geholfen und die Versorgungsprobleme gelöst.");
+		B_LogEntry_NS (TOPIC_MOD_KG_VORBEREITUNGEN, "Bramrad is helped and the supply problems are solved.");
 	};
 
 	B_GivePlayerXP	(150);

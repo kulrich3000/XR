@@ -15,31 +15,31 @@ FUNC INT Info_Mod_Flaemar_Hi_Condition()
 
 FUNC VOID Info_Mod_Flaemar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Flaemar_Hi_02_00"); //(gleichgültig) He, hab dich hier noch nie gesehen. Kommst du vielleicht von draußen?
-	AI_Output(hero, self, "Info_Mod_Flaemar_Hi_15_01"); //Ja, wieso?
-	AI_Output(self, hero, "Info_Mod_Flaemar_Hi_02_02"); //(aufhorchend) Hast du vielleicht paar Krautstängel dabei, oder einen guten Schluck Bier und Waholder?
-	AI_Output(self, hero, "Info_Mod_Flaemar_Hi_02_03"); //(missmutig) Meine, hier im Kloster ist seit der Belagerung echt alles für den Arsch – keine Händler da, oder sonst was los - und das einzige was die hier haben, um die Zeit irgendwie totzuschlagen, ist dieser Klosterwein ... und auch damit werden sie immer geiziger ...
+	AI_Output(self, hero, "Info_Mod_Flaemar_Hi_02_00"); //Hey, I've never seen you around here before. Are you from outside?
+	AI_Output(hero, self, "Info_Mod_Flaemar_Hi_15_01"); //Yeah, why?
+	AI_Output(self, hero, "Info_Mod_Flaemar_Hi_02_02"); //(hearing) Have you brought some stems of cabbage or a good sip of beer and Waholder?
+	AI_Output(self, hero, "Info_Mod_Flaemar_Hi_02_03"); //(discontent) Mine, here in the monastery is really everything for the ass since the siege really everything - no traders there, or something else going on - and the only thing that they have here, in order to beat the time somehow dead, is this monastery wine.... and they are becoming more and more stingy....
 
 	B_StartMangel();
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Flämar und seine Schürferkollegen sind verzweifelt auf der Suche nach etwas Kraut und Alkohol, um sich abzulenken.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Flämar and his explorer colleagues are desperately looking for some herbs and alcohol to distract themselves.");
 };
 
 FUNC VOID Info_Mod_Flaemar_MangelQuest_Fertig()
 {
-	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest_Fertig_02_00"); //Jedenfalls haben wir jetzt alles, was man sich nur wünschen kann.
-	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest_Fertig_02_01"); //Hier, Mann, nimm unser Gold und das Erz.
+	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest_Fertig_02_00"); //Anyway, now we have everything you could possibly want.
+	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest_Fertig_02_01"); //Here, man, take our gold and the ore.
 
-	B_ShowGivenThings	("752 Gold und 2 Erzbrocken erhalten");
+	B_ShowGivenThings	("752 gold and 2 pieces of ore preserved");
 
-	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest_Fertig_02_02"); //Hier können wir im Moment eh nichts damit anfangen.
+	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest_Fertig_02_02"); //There's nothing we can do with it right now anyway.
 
 	B_GivePlayerXP	(300);
 
 	CreateInvItems	(hero, ItMi_Gold, 752);
 	CreateInvItems	(hero, ItMi_Nugget, 2);
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Flämar und die Schürfer sind mit allem versorgt.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Flämar and the prospectors are provided with everything.");
 
 	B_StopMangel();
 };
@@ -52,7 +52,7 @@ INSTANCE Info_Mod_Flaemar_MangelQuest (C_INFO)
 	information	= Info_Mod_Flaemar_MangelQuest_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Kraut geben)";
+	description	= "(weed give)";
 };
 
 FUNC INT Info_Mod_Flaemar_MangelQuest_Condition()
@@ -72,7 +72,7 @@ FUNC VOID Info_Mod_Flaemar_MangelQuest_F()
 
 	if (Npc_HasItems(hero, ItMi_Traumruf) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Flaemar_MangelQuest, "Traumruf", Info_Mod_Flaemar_MangelQuest_D);
+		Info_AddChoice	(Info_Mod_Flaemar_MangelQuest, "dream call", Info_Mod_Flaemar_MangelQuest_D);
 	};
 	if (Npc_HasItems(hero, ItMi_Addon_Joint_02) >= 1)
 	{
@@ -84,7 +84,7 @@ FUNC VOID Info_Mod_Flaemar_MangelQuest_F()
 	};
 	if (Npc_HasItems(hero, ItMi_Joint) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Flaemar_MangelQuest, "Sumpfkrautstängel", Info_Mod_Flaemar_MangelQuest_A);
+		Info_AddChoice	(Info_Mod_Flaemar_MangelQuest, "marsh herb stems", Info_Mod_Flaemar_MangelQuest_A);
 	};
 };
 
@@ -100,7 +100,7 @@ FUNC VOID Info_Mod_Flaemar_MangelQuest_BACK()
 
 FUNC VOID Info_Mod_Flaemar_MangelQuest_E()
 {
-	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest_E_02_00"); //Ich glaub’s nicht ... so viel Kraut. Das reicht erst mal für einige Zeit.
+	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest_E_02_00"); //I don't believe it... so much herb. That's enough for a while.
 
 	if (Mod_PAT_FlaemarAlkohol >= 15)
 	{
@@ -182,7 +182,7 @@ INSTANCE Info_Mod_Flaemar_MangelQuest2 (C_INFO)
 	information	= Info_Mod_Flaemar_MangelQuest2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Alkohol geben)";
+	description	= "(Give alcohol)";
 };
 
 FUNC INT Info_Mod_Flaemar_MangelQuest2_Condition()
@@ -230,7 +230,7 @@ FUNC VOID Info_Mod_Flaemar_MangelQuest2_BACK()
 
 FUNC VOID Info_Mod_Flaemar_MangelQuest2_E()
 {
-	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest2_E_02_00"); //Hey, Mann, danke. Damit können wir es uns erst mal die nächsten Tage richtig gut gehen lassen.
+	AI_Output(self, hero, "Info_Mod_Flaemar_MangelQuest2_E_02_00"); //Hey, man, thanks. So we can let it go for the next few days really well.
 
 	if (Mod_PAT_FlaemarKraut >= 15)
 	{

@@ -1,6 +1,6 @@
 INSTANCE Erzrüstung(C_Item)
 {
-	name 					=	"Magische Erzrüstung";
+	name 					=	"Magic Armour";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -33,7 +33,7 @@ INSTANCE Erzrüstung(C_Item)
 
 INSTANCE ORG_ARMOR_H(C_Item)
 {
-	name 					=	"Kettenrüstung";
+	name 					=	"chain armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -64,7 +64,7 @@ INSTANCE ORG_ARMOR_H(C_Item)
 
 INSTANCE ItAr_Leather_F (C_Item)
 {
-	name 					=	"Lederrüstung";
+	name 					=	"Leather Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -95,7 +95,7 @@ INSTANCE ItAr_Leather_F (C_Item)
 
 INSTANCE ItAr_Echsi_01 (C_Item)
 {
-	name 					=	"Echsenrüstung";
+	name 					=	"lizard scaffolding";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -126,7 +126,7 @@ INSTANCE ItAr_Echsi_01 (C_Item)
 
 INSTANCE ItAr_Echsi_02 (C_Item)
 {
-	name 					=	"Echsenrüstung";
+	name 					=	"lizard scaffolding";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -157,7 +157,7 @@ INSTANCE ItAr_Echsi_02 (C_Item)
 
 INSTANCE ItAr_BDT_XL (C_Item)
 {
-	name 					=	"robuste Banditenrüstung";
+	name 					=	"robust bandit armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -188,7 +188,7 @@ INSTANCE ItAr_BDT_XL (C_Item)
 
 INSTANCE ItAr_Hum_Dht2S_Armor (C_Item)
 {
-	name 					=	"Abenteurerrüstung";
+	name 					=	"adventurer's gear";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -219,7 +219,7 @@ INSTANCE ItAr_Hum_Dht2S_Armor (C_Item)
 
 INSTANCE ItAr_Gangster (C_Item)
 {
-	name 					=	"Kostüm";
+	name 					=	"suit";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -262,7 +262,7 @@ FUNC VOID UnEquip_Gangster ()
 
 INSTANCE Itar_Maxim(C_Item)
 {
-	name 					=	"Geisterrüstung";
+	name 					=	"ghost armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -286,7 +286,7 @@ INSTANCE Itar_Maxim(C_Item)
 	on_unequip		=	UnEquip_ItAr_Maxim;
 
 	description				=	name;
-	TEXT[0]					=	"Diese Rüstung strahlt eine unheimliche Aura aus";
+	TEXT[0]					=	"This armor exudes an uncanny aura";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE]/1000;
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT]/1000;
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -306,7 +306,7 @@ FUNC VOID UnEquip_ItAr_Maxim()
 
 INSTANCE Itar_Maxim_Fake (C_Item)
 {
-	name 					=	"Geisterrüstung";
+	name 					=	"ghost armor";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_SHOW|ITEM_MISSION;
@@ -327,7 +327,7 @@ INSTANCE Itar_Maxim_Fake (C_Item)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"Diese Rüstung strahlt eine unheimliche Aura aus";
+	TEXT[0]					=	"This armor exudes an uncanny aura";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE]/1000;
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT]/1000;
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -368,7 +368,7 @@ INSTANCE Itar_Zuben (C_Item)
 
 INSTANCE Itar_MaximMaske(C_Item)
 {
-	name 					=	"Maxims Maske";
+	name 					=	"Maxims mask";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -398,7 +398,7 @@ INSTANCE Itar_MaximMaske(C_Item)
 
 INSTANCE ItAr_KingHofstaat(C_Item)
 {
-	name 					=	"Wams des Königs";
+	name 					=	"King's doublet";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -429,7 +429,7 @@ INSTANCE ItAr_KingHofstaat(C_Item)
 
 INSTANCE ItAr_GardeInnos(C_Item)
 {
-	name 					=	"Rüstung der Garde Innos'";
+	name 					=	"Armor of the Innos Guard'.";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -460,7 +460,7 @@ INSTANCE ItAr_GardeInnos(C_Item)
 
 INSTANCE ItAr_Eisgebiet_Miliz(C_Item)
 {
-	name 					=	"Rüstung der Stadtwache";
+	name 					=	"City Guard Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -491,7 +491,7 @@ INSTANCE ItAr_Eisgebiet_Miliz(C_Item)
 
 INSTANCE ItAr_Eisgebiet_01(C_Item)
 {
-	name 					=	"Fellrüstung";
+	name 					=	"fur equipment";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -522,7 +522,7 @@ INSTANCE ItAr_Eisgebiet_01(C_Item)
 
 INSTANCE ItAr_Eisgebiet_02(C_Item)
 {
-	name 					=	"Fellrüstung";
+	name 					=	"fur equipment";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -553,7 +553,7 @@ INSTANCE ItAr_Eisgebiet_02(C_Item)
 
 INSTANCE ItAr_Eisgebiet_03(C_Item)
 {
-	name 					=	"Fellrüstung";
+	name 					=	"fur equipment";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -584,7 +584,7 @@ INSTANCE ItAr_Eisgebiet_03(C_Item)
 
 INSTANCE ItAr_Eisgebiet_04(C_Item)
 {
-	name 					=	"Fellrüstung";
+	name 					=	"fur equipment";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -615,7 +615,7 @@ INSTANCE ItAr_Eisgebiet_04(C_Item)
 
 INSTANCE ItAr_UntoterMagier(C_Item)
 {
-	name 					=	"Verwitterte Feuerrobe";
+	name 					=	"Weathered fire robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -646,7 +646,7 @@ INSTANCE ItAr_UntoterMagier(C_Item)
 
 INSTANCE ItAr_UntoterNovize(C_Item)
 {
-	name 					=	"Alte Novizenrobe";
+	name 					=	"Old Novice robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -677,7 +677,7 @@ INSTANCE ItAr_UntoterNovize(C_Item)
 
 INSTANCE ItAr_UntoterKrieger(C_Item)
 {
-	name 					=	"Alte Kriegerkleidung";
+	name 					=	"Old War Clothes";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -708,7 +708,7 @@ INSTANCE ItAr_UntoterKrieger(C_Item)
 
 INSTANCE ItAr_Gauner(C_Item)
 {
-	name 					=	"Gaunerrüstung";
+	name 					=	"trickery";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -739,7 +739,7 @@ INSTANCE ItAr_Gauner(C_Item)
 
 INSTANCE ItAr_Assassine_01(C_Item)
 {
-	name 					=	"Assassinenrüstung";
+	name 					=	"assassin gear";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -770,7 +770,7 @@ INSTANCE ItAr_Assassine_01(C_Item)
 
 INSTANCE ItAr_Assassine_02(C_Item)
 {
-	name 					=	"Assassinenumhang";
+	name 					=	"assassin's cape";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -801,7 +801,7 @@ INSTANCE ItAr_Assassine_02(C_Item)
 
 INSTANCE ItAr_Eisschamane(C_Item)
 {
-	name 					=	"Schamanenrobe";
+	name 					=	"shaman robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -832,7 +832,7 @@ INSTANCE ItAr_Eisschamane(C_Item)
 
 INSTANCE ITAR_Verwandlungskrieger (C_Item)
 {
-	name 					=	"Rüstung der Beschützer";
+	name 					=	"Armor of the Protectors";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -863,7 +863,7 @@ INSTANCE ITAR_Verwandlungskrieger (C_Item)
 
 INSTANCE KhorataWache_01 (C_Item)
 {
-	name 					=	"Rüstung der Wachen von Khorata";
+	name 					=	"Armor of the guards of Khorata";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -894,7 +894,7 @@ INSTANCE KhorataWache_01 (C_Item)
 
 INSTANCE KhorataWache_02 (C_Item)
 {
-	name 					=	"Rüstung der Wachen von Khorata";
+	name 					=	"Armor of the guards of Khorata";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -925,7 +925,7 @@ INSTANCE KhorataWache_02 (C_Item)
 
 INSTANCE KhorataWache_03 (C_Item)
 {
-	name 					=	"Rüstung der Wachen von Khorata";
+	name 					=	"Armor of the guards of Khorata";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -956,7 +956,7 @@ INSTANCE KhorataWache_03 (C_Item)
 
 INSTANCE KhorataHaendler_01 (C_Item)
 {
-	name 					=	"Rüstung der Händler von Khorata";
+	name 					=	"Armor of the merchants of Khorata";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -987,7 +987,7 @@ INSTANCE KhorataHaendler_01 (C_Item)
 
 INSTANCE KhorataMagier_01 (C_Item)
 {
-	name 					=	"Robe der Gelehrten von Khorata";
+	name 					=	"Robe of the scholars of Khorata";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1018,7 +1018,7 @@ INSTANCE KhorataMagier_01 (C_Item)
 
 INSTANCE Ritual_Krieger (C_Item)
 {
-	name 					=	"Blutrüstung";
+	name 					=	"blood armament";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1049,7 +1049,7 @@ INSTANCE Ritual_Krieger (C_Item)
 
 INSTANCE Ritual_Magier (C_Item)
 {
-	name 					=	"Blutkult-Kutte";
+	name 					=	"blood cult cowl";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1080,7 +1080,7 @@ INSTANCE Ritual_Magier (C_Item)
 
 INSTANCE SLD_ARMOR_L(C_Item)
 {
-	name 					=	"sehr leichte Söldnerrüstung";
+	name 					=	"very light mercenary armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1111,7 +1111,7 @@ INSTANCE SLD_ARMOR_L(C_Item)
 
 INSTANCE ITAR_FAKE_NOV_L (C_Item)
 {
-	name 					=	"Gefälschte Feuer Novizenrobe";
+	name 					=	"Fake Fire Novice Sample";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1165,7 +1165,7 @@ FUNC VOID UnEquip_FAKE_NOV_L()
 
 INSTANCE ITAR_BDT_M_01 (C_Item)
 {
-	name 					=	"Mittlere Banditenrüstung";
+	name 					=	"Medium Bandit's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1206,7 +1206,7 @@ INSTANCE ITAR_BDT_M_01 (C_Item)
 
 INSTANCE ITAR_BDT_L_01 (C_Item)
 {
-	name 					=	"Mittlere Banditenrüstung";
+	name 					=	"Medium Bandit's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1247,7 +1247,7 @@ INSTANCE ITAR_BDT_L_01 (C_Item)
 // ******************************************************
 INSTANCE ITAR_BDT_H_01 (C_Item)
 {
-	name 					=	"Schwere Banditenrüstung";
+	name 					=	"Heavy Bandit's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1288,7 +1288,7 @@ INSTANCE ITAR_BDT_H_01 (C_Item)
 
 INSTANCE ITAR_KDF_L_Feuer (C_Item)
 {
-	name 					=	"Verbesserte Feuerrobe";
+	name 					=	"Improved fire robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1341,7 +1341,7 @@ FUNC VOID UnEquip_KDF_L_Feuer()
 
 INSTANCE ITAR_NOV_DMB_01 (C_Item)
 {
-	name 					=	"Schwarze Novizenrobe";
+	name 					=	"Black novice rehearsal";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1418,7 +1418,7 @@ FUNC VOID UnEquip_ITAR_SNOV_L()
 
 INSTANCE ITAR_SNOV_S (C_Item)
 {
-	name 					=	"Verbesserte schwarze Novizenrobe";
+	name 					=	"Improved black novice sample";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1459,7 +1459,7 @@ INSTANCE ITAR_SNOV_S (C_Item)
 
 INSTANCE ITAR_MIL_s2 (C_Item)
 {
-	name 					=	"Verbesserte Milizrüstung";
+	name 					=	"Improved militia equipment";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1530,7 +1530,7 @@ FUNC VOID UnEquip_ITAR_MIL_S2()
 
 INSTANCE ITAR_Schattenläufer (C_Item)
 {
-	name 					=	"Schattenläuferfellrüstung";
+	name 					=	"shadow runner scaffolding";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1566,7 +1566,7 @@ INSTANCE ITAR_Schattenläufer (C_Item)
 
 INSTANCE ITAR_Sumpfkraut (C_Item)
 {
-	name 					=	"Sumpfkrautrüstung";
+	name 					=	"marshy equipment";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1602,7 +1602,7 @@ INSTANCE ITAR_Sumpfkraut (C_Item)
 
 INSTANCE ITAR_Schaf (C_Item)
 {
-	name 					=	"Schaffellrüstung";
+	name 					=	"sheepskin armament";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1638,7 +1638,7 @@ INSTANCE ITAR_Schaf (C_Item)
 
 INSTANCE ITAR_SNOV_L (C_Item)
 {
-	name 					=	"Schwarze Novizenrobe";
+	name 					=	"Black novice rehearsal";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1678,7 +1678,7 @@ INSTANCE ITAR_SNOV_L (C_Item)
 
 INSTANCE ITAR_KDF_VeryHigh (C_Item)
 {
-	name 					=	"Hohe Ordenspriesterrobe";
+	name 					=	"High priest robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1727,7 +1727,7 @@ FUNC VOID UnEquip_KDF_VH()
 
 INSTANCE ITAR_DruideWaldmagier (C_Item)
 {
-	name 					=	"Druidenrobe";
+	name 					=	"druid sample";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1764,7 +1764,7 @@ INSTANCE ITAR_DruideWaldmagier (C_Item)
 
 INSTANCE ITAR_Naturmagier2 (C_Item)
 {
-	name 					=	"Verwandlungsmagierrobe";
+	name 					=	"transformation magic robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1804,7 +1804,7 @@ INSTANCE ITAR_Naturmagier2 (C_Item)
 
 INSTANCE ITAR_Waldlaeufer_01 (C_Item)
 {
-	name 					=	"Waldläuferrüstung";
+	name 					=	"ranger armament";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1843,7 +1843,7 @@ INSTANCE ITAR_Waldlaeufer_01 (C_Item)
 
 INSTANCE ITAR_Lurker (C_Item)
 {
-	name 					=	"Rüstung aus gehärteter Lurkerhaut";
+	name 					=	"Armor made of hardened Lurker skin";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1882,7 +1882,7 @@ INSTANCE ITAR_Lurker (C_Item)
 
 INSTANCE ITAR_Swampshark (C_Item)
 {
-	name 					=	"Rüstung aus gehärteter Sumpfhaihaut";
+	name 					=	"Armour from hardened swamp shark skin";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1921,7 +1921,7 @@ INSTANCE ITAR_Swampshark (C_Item)
 
 INSTANCE ITAR_Naturmagier (C_Item)
 {
-	name 					=	"Hohe Naturmagierrobe";
+	name 					=	"High natural magic robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1961,7 +1961,7 @@ INSTANCE ITAR_Naturmagier (C_Item)
 
 INSTANCE SSLD_ARMOR(C_Item) // standart SOLDAT Uniform
 {
-	name 					=	"Königliche Garderüstung";
+	name 					=	"Royal Guard Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1991,7 +1991,7 @@ INSTANCE SSLD_ARMOR(C_Item) // standart SOLDAT Uniform
 
 INSTANCE ItAr_KG_01 (C_Item) // standart SOLDAT Uniform
 {
-	name 					=	"Leichte königliche Garderüstung";
+	name 					=	"Light royal cloakroom armour";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2021,7 +2021,7 @@ INSTANCE ItAr_KG_01 (C_Item) // standart SOLDAT Uniform
 
 INSTANCE NOV_ARMOR_H(C_Item)
 {
-	name 					=	"Sumpf-Novizenrüstung";
+	name 					=	"Swamp-novice equipment";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2052,7 +2052,7 @@ INSTANCE NOV_ARMOR_H(C_Item)
 
 INSTANCE NOV_ARMOR_M(C_Item)
 {
-	name 					=	"Leichte Sumpf-Novizenrüstung";
+	name 					=	"Lightweight swamp novice equipment";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2083,7 +2083,7 @@ INSTANCE NOV_ARMOR_M(C_Item)
 
 INSTANCE NOV_ARMOR_L(C_Item)
 {
-	name 					=	"Sumpf-Novizenrock";
+	name 					=	"Swamp-novice skirt";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2114,7 +2114,7 @@ INSTANCE NOV_ARMOR_L(C_Item)
 
 INSTANCE ItAr_ZombieNovize (C_Item)
 {
-	name 					=	"Sumpf-Novizenrock";
+	name 					=	"Swamp-novice skirt";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2145,7 +2145,7 @@ INSTANCE ItAr_ZombieNovize (C_Item)
 
 INSTANCE TPL_ARMOR_L(C_Item)
 {
-	name 					=	"Leichte Templerrüstung";
+	name 					=	"Light Templar's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2176,7 +2176,7 @@ INSTANCE TPL_ARMOR_L(C_Item)
 
 INSTANCE Itar_ZombieTempler (C_Item)
 {
-	name 					=	"Leichte Templerrüstung";
+	name 					=	"Light Templar's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2208,7 +2208,7 @@ INSTANCE Itar_ZombieTempler (C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_M(C_Item)
 {
-	name 					=	"Templerrüstung";
+	name 					=	"Templar's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2240,7 +2240,7 @@ INSTANCE TPL_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_H(C_Item)
 {
-	name 					=	"Schwere Templerrüstung";
+	name 					=	"Heavy Templar's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2272,7 +2272,7 @@ INSTANCE TPL_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE ItAr_Zombie_Templer (C_Item)
 {
-	name 					=	"Templerrüstung";
+	name 					=	"Templar's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2304,7 +2304,7 @@ INSTANCE ItAr_Zombie_Templer (C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_TemplerFanatiker(C_Item)
 {
-	name 					=	"Templerfanatikerrüstung";
+	name 					=	"Templar fanatic gear";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2336,7 +2336,7 @@ INSTANCE ITAR_TemplerFanatiker(C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_NovizeFanatiker(C_Item)
 {
-	name 					=	"Novizenfanatikerrobe";
+	name 					=	"novice fanatic robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2368,7 +2368,7 @@ INSTANCE ITAR_NovizeFanatiker(C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_GuruFanatiker(C_Item)
 {
-	name 					=	"Gurufanatikerrobe";
+	name 					=	"gurufanatic robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2400,7 +2400,7 @@ INSTANCE ITAR_GuruFanatiker(C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_Kolam(C_Item)
 {
-	name 					=	"Kolams Robe";
+	name 					=	"Kolam's Robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2434,7 +2434,7 @@ INSTANCE ITAR_Kolam(C_Item)
 
 INSTANCE GUR_ARMOR_M(C_Item)
 {
-	name 					=	"Gururobe";
+	name 					=	"Guru's Robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2465,7 +2465,7 @@ INSTANCE GUR_ARMOR_M(C_Item)
 
 INSTANCE ItAr_LariusRobe(C_Item)
 {
-	name 					=	"Larius' Robe";
+	name 					=	"Larius' robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2497,7 +2497,7 @@ INSTANCE ItAr_LariusRobe(C_Item)
 /******************************************************************************************/
 INSTANCE GUR_ARMOR_H(C_Item)
 {
-	name 					=	"Hohe Gururobe";
+	name 					=	"High Robe of the Gurus";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2528,7 +2528,7 @@ INSTANCE GUR_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE ItAr_GewandDerMacht (C_Item)
 {
-	name 					=	"Gewand der Macht";
+	name 					=	"robe of power";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	ITEM_SHOW;
@@ -2558,7 +2558,7 @@ INSTANCE ItAr_GewandDerMacht (C_Item)
 
 INSTANCE VLK_ARMOR_L(C_Item)
 {
-	name 					=	"Leichte Buddlerhose";
+	name 					=	"Light Digger's Trousers";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2589,7 +2589,7 @@ INSTANCE VLK_ARMOR_L(C_Item)
 
 INSTANCE VLK_ARMOR_M(C_Item)
 {
-	name 					=	"Buddlerhose";
+	name 					=	"Digger's Trousers";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2620,7 +2620,7 @@ INSTANCE VLK_ARMOR_M(C_Item)
 
 INSTANCE STT_ARMOR_M(C_Item)
 {
-	name 					=	"Schattenkluft";
+	name 					=	"Shadow's Dress";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2651,7 +2651,7 @@ INSTANCE STT_ARMOR_M(C_Item)
 
 INSTANCE STT_ARMOR_H(C_Item)
 {
-	name 					=	"Schattenrüstung";
+	name 					=	"Shadow's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2682,7 +2682,7 @@ INSTANCE STT_ARMOR_H(C_Item)
 
 INSTANCE ItAr_STT_Mordrag (C_Item)
 {
-	name 					=	"Schattenrüstung";
+	name 					=	"Shadow's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2725,7 +2725,7 @@ FUNC VOID UnEquip_STT_Mordrag ()
 
 INSTANCE GRD_ARMOR_L(C_Item)
 {
-	name 					=	"Leichte Garderüstung";
+	name 					=	"Light Guard's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2756,7 +2756,7 @@ INSTANCE GRD_ARMOR_L(C_Item)
 
 INSTANCE ITAR_SMK_L(C_Item)
 {
-	name 					=	"Schwarze Kriegerrüstung";
+	name 					=	"Black War Armour";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2787,7 +2787,7 @@ INSTANCE ITAR_SMK_L(C_Item)
 
 INSTANCE ITAR_SKR_s(C_Item)
 {
-	name 					=	"Verbesserte schwarze Kriegerrüstung";
+	name 					=	"Improved Black War Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2818,7 +2818,7 @@ INSTANCE ITAR_SKR_s(C_Item)
 
 INSTANCE GRD_ARMOR_M(C_Item)
 {
-	name 					=	"Garderüstung";
+	name 					=	"Guard's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2849,7 +2849,7 @@ INSTANCE GRD_ARMOR_M(C_Item)
 
 INSTANCE GRD_ARMOR_H(C_Item)
 {
-	name 					=	"Schwere Garderüstung";
+	name 					=	"Heavy Guard's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2880,7 +2880,7 @@ INSTANCE GRD_ARMOR_H(C_Item)
 
 INSTANCE EBR_ARMOR_M(C_Item)
 {
-	name 					=	"Prunkgewand";
+	name 					=	"Robe of State";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2911,7 +2911,7 @@ INSTANCE EBR_ARMOR_M(C_Item)
 
 INSTANCE EBR_ARMOR_H2(C_Item)
 {
-	name 					=	"Schwere Erzbaronrüstung";
+	name 					=	"Heavy Ore Baron's Armor";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2942,7 +2942,7 @@ INSTANCE EBR_ARMOR_H2(C_Item)
 
 INSTANCE ItAr_Nordmann(C_Item)
 {
-	name 					=	"Nordmannrüstung";
+	name 					=	"northman armament";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2973,7 +2973,7 @@ INSTANCE ItAr_Nordmann(C_Item)
 
 INSTANCE ItAr_Nordmann02(C_Item)
 {
-	name 					=	"Nordmannrüstung";
+	name 					=	"northman armament";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3004,7 +3004,7 @@ INSTANCE ItAr_Nordmann02(C_Item)
 
 instance SFB_ARMOR_L(C_Item)
 {
-	name 					=	"Schürferklamotten";
+	name 					=	"Digger's Dress";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3035,7 +3035,7 @@ instance SFB_ARMOR_L(C_Item)
 
 INSTANCE ITAR_Erzbaron_Blau (C_Item)
 {
-	name 					=	"Königliche Erzfürstenrüstung";
+	name 					=	"Royal Armour of the Ore Princes";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3078,7 +3078,7 @@ INSTANCE ITAR_Erzbaron_Blau (C_Item)
 *******************************************************************************************/
 INSTANCE BAB_ARMOR_NUDE (C_Item)
 {
-	name 					=	"Nacktes Babe";
+	name 					=	"Nude Babe";
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 	value 					=	1;

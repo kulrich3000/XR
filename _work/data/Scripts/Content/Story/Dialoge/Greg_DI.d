@@ -15,21 +15,21 @@ FUNC INT Info_Mod_Greg_DI_Hi_Condition()
 
 FUNC VOID Info_Mod_Greg_DI_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_00"); //Hab nicht gedacht, dass du überhaupt nochmal aufwachst. Das war letzte Nacht wohl 'ne Flasche Grog zu viel.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_01"); //Jetzt wirst du mal für deinen Grog arbeiten.
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Hi_15_02"); //Was soll ich machen?
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_03"); //Nun, wir sind hier auf Schatzsuche, also such den Schatz. Geh mal in die Höhlen und sieh dich dort um.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_04"); //Vorher bekommst du aber noch 'ne neue Rüstung.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_00"); //I didn't think you'd wake up at all. I guess that was a little too much last night.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_01"); //Now you're gonna work for your grog.
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Hi_15_02"); //What am I supposed to do?
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_03"); //Well, we're on a treasure hunt here, so find the treasure. Go to the caves and take a look around.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_04"); //You'll get some new armor first.
 
 	CreateInvItems	(self, ITAR_PIR_M_Addon, 1);
 	B_GiveInvItems	(self, hero, ITAR_PIR_M_Addon, 1);
 
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_07"); //Und jetzt mal los!
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Hi_15_06"); //Aye, aye Käpt'n!
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Hi_01_07"); //Let's get going!
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Hi_15_06"); //Aye, aye Captain!
 
 	Log_CreateTopic	(TOPIC_MOD_PIRATEN_DI,	LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PIRATEN_DI, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Greg hat mich damit beauftragt, die Höhlen nach dem Schatz zu durchsuchen.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Greg hired me to search the caves for the treasure.");
 };
 
 INSTANCE Info_Mod_Greg_DI_Skelett (C_INFO)
@@ -40,7 +40,7 @@ INSTANCE Info_Mod_Greg_DI_Skelett (C_INFO)
 	information	= Info_Mod_Greg_DI_Skelett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt Schwierigkeiten.";
+	description	= "There are difficulties.";
 };
 
 FUNC INT Info_Mod_Greg_DI_Skelett_Condition()
@@ -54,31 +54,31 @@ FUNC INT Info_Mod_Greg_DI_Skelett_Condition()
 
 FUNC VOID Info_Mod_Greg_DI_SKelett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_00"); //Es gibt Schwierigkeiten.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_01"); //Schwierigkeiten? Was für Schwierigkeiten?!
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_02"); //In einer der Höhlen wurde ich von einem toten Piraten angegriffen.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_03"); //Hast wohl zuviel Rum getrunken? Wie will dich 'n toter Pirat denn angreifen?
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_04"); //Dieses Buch hatte er dabei. Darin steht dass sie einen Eid auf Adanos gebrochen haben, mit dem sie ihrem Käptn treue schworen.
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_00"); //There are difficulties.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_01"); //Trouble? What kind of trouble?!
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_02"); //In one of the caves I was attacked by a dead pirate.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_03"); //Have you been drinking too much rum? How's a dead pirate going to attack you?
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_04"); //He had this book with him. It says that they broke an oath on Adanos, with which they swore faithfully to their captain.
 
 	B_GiveInvItems	(hero, self, ItWr_BookFromSkeleton, 1);
 
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_05"); //Daraufhin wurden sie dazu verflucht auf Ewig den Schatz auf dieser Insel zu bewachen.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_06"); //Geisterpiraten? Na das is doch ma ein Abenteuer!
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_05"); //As a result, they were cursed to guard the treasure of this island forever.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_06"); //Pirate spirits? Well, that's an adventure!
 
 	B_UseItem	(self, ItWr_BookFromSkeleton);
 
-	AI_Output(self, hero, "Info_Mod_Greg_DI_SKelett_01_07"); //Nach dem was in dem Logbuch steht muss der Schatz riesig sein!
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_08"); //Ich werde einige Dinge veranlassen. Soviel ich weiß, war ein Freund von Bones Novize bei den Wassermagiern.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_09"); //Ich werde Skip schicken ihn zu holen, der wird uns da besser helfen können.
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_10"); //Und was soll ich solange machen?
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_11"); //Na du schnappst dir Alligator Jack und gehst mit ihm die Insel erkunden.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_SKelett_01_07"); //According to what is written in the logbook, the treasure must be huge!
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_08"); //I'll make some arrangements. As far as I know, a friend of Bonne's novice was a water magician.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_09"); //I'll send Skip to get him, he'll be better able to help us.
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Skelett_15_10"); //And what am I supposed to do for so long?
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Skelett_01_11"); //Well, you grab Alligator Jack and go explore the island with him.
 
 	Npc_ExchangeRoutine	(Mod_1540_PIR_Skip_DI, "UNTERWEGS");
 	AI_Teleport	(Mod_1540_PIR_Skip_DI, "WP_DI_SKIP_WAITFORPLAYER");
 
 	Mod_DI_InselErkunden = 1;
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Ich habe Greg von dem Skelett berichtet. Er scheint keineswegs beunruhigt, sondern sieht dies als großartiges Abenteuer an. Er schickt Skip nach einem Wassermagier aus. Bis Skip zurück ist soll ich mit Alligator Jack die Insel erkunden.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "I told Greg about the skeleton. He doesn't seem to be worried at all, but regards this as a great adventure. He sends Skip out for a water magician. Until Skip gets back, I'm supposed to explore the island with Alligator Jack.");
 
 	Wld_InsertNpc	(Mod_7642_OUT_Brunhild_DI,	"WP_DI_BRUNHILD_02");
 };
@@ -103,17 +103,17 @@ FUNC INT Info_Mod_Greg_DI_Brunhild_Condition()
 
 FUNC VOID Info_Mod_Greg_DI_Brunhild_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_00"); //Nanu. Was habt ihr denn da mitgebracht?
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Brunhild_15_01"); //Gold und Silber ist es nicht. Kann sich aber vielleicht als Schatz in der Küche erweisen.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_02"); //Und woher ...?
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Brunhild_15_03"); //Eine Schiffbrüchige. Sie hat die Flaschenpost geschrieben. Ihre Leute sind alle tot. Sie hat gefragt, ob sie mit uns mitfahren kann.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_04"); //Weiß sie, wo der Schatz verborgen ist? Oder habt ihr ihn schon gefunden?
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Brunhild_15_05"); //Weder noch. Aber wir haben ein paar blockierte Gänge gesehen. Einen davon sollte man freilegen können. Scheint nur verschüttet zu sein.
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Brunhild_15_06"); //Die anderen sind mit massivem Fels verschlossen.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_07"); //Nun dann. Ich werde zwei Mann zum Gang räumen schicken.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_08"); //Du sprichst mit Skip. Er soll die Maid aufs Schiff bringen. Sie wird Samuel in der Küche ablösen.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_00"); //Well, well. What did you bring with you?
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Brunhild_15_01"); //It's not gold and silver. But it may prove to be a treasure in the kitchen.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_02"); //And how did...?
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Brunhild_15_03"); //A castaway. She wrote the message in a bottle. Your people are all dead. She asked if she could ride with us.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_04"); //Does she know where the treasure's hidden? Or have you found him yet?
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Brunhild_15_05"); //Neither nor. But we've seen some blocked corridors. One of them should be exposed. Seems to have spilled it.
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Brunhild_15_06"); //The others are closed with solid rock.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_07"); //Well, then. I'll send two men out to the hallway.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Brunhild_01_08"); //You're talking to Skip. Tell him to take the maid to the ship. She'll replace Samuel in the kitchen.
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Während ich Brunhild von Skip aufs Schiff bringen lasse, will Greg zwei seiner Jungs losschicken, um den Stollen freizulegen.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "While I have Brunhild bring Brunhild from Skip to the ship, Greg wants to send two of his boys to uncover the tunnel.");
 
 	B_StartOtherRoutine	(Mod_1546_PIR_Francis_DI, "STOLLEN");
 	B_StartOtherRoutine	(Mod_1549_PIR_Malcom_DI, "STOLLEN");
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Greg_DI_StollenFrei (C_INFO)
 	information	= Info_Mod_Greg_DI_StollenFrei_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht’s weiter?";
+	description	= "What's the next step?";
 };
 
 FUNC INT Info_Mod_Greg_DI_StollenFrei_Condition()
@@ -140,12 +140,12 @@ FUNC INT Info_Mod_Greg_DI_StollenFrei_Condition()
 
 FUNC VOID Info_Mod_Greg_DI_StollenFrei_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_DI_StollenFrei_15_01"); //Wie geht’s weiter?
-	AI_Output(self, hero, "Info_Mod_Greg_DI_StollenFrei_01_02"); //Malcom ist zurück und sagt, dass der Gang frei ist. Francis ist noch dort und sichert die Stelle.
-	AI_Output(hero, self, "Info_Mod_Greg_DI_StollenFrei_15_03"); //Und jetzt soll ich ...?
-	AI_Output(self, hero, "Info_Mod_Greg_DI_StollenFrei_01_04"); //Genau Bursche. Du bist am zuverlässigsten vom ganzen Haufen. Spute dich!
+	AI_Output(hero, self, "Info_Mod_Greg_DI_StollenFrei_15_01"); //What's the next step?
+	AI_Output(self, hero, "Info_Mod_Greg_DI_StollenFrei_01_02"); //Malcom is back and says the corridor's clear. Francis is still there, securing the spot.
+	AI_Output(hero, self, "Info_Mod_Greg_DI_StollenFrei_15_03"); //And now I'm supposed to...?
+	AI_Output(self, hero, "Info_Mod_Greg_DI_StollenFrei_01_04"); //That's right, lad. You're the most reliable of them all. Spute yourself!
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Der Gang ist frei und ich soll nun sehen, ob ich den Schatz finden kann.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "The corridor is free and I'm supposed to see if I can find the treasure.");
 
 	Wld_SendTrigger	("EVT_STOLLEN_01");
 
@@ -172,12 +172,12 @@ FUNC INT Info_Mod_Greg_DI_Amulett_Condition()
 
 FUNC VOID Info_Mod_Greg_DI_Amulett_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Amulett_01_00"); //Ihr seid zurück? Berichte vom Schatz.
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Amulett_15_01"); //Nichts mit Schatz. Dieses Alumett und ein paar Kelche, Erzbrocken und so weiter hab ich in dem Stollen gefunden. Sonst nichts.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Amulett_01_02"); //Hmm. Dann bleiben die blockieren Gänge. Aber wie ...?
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Amulett_15_03"); //Ich werde mir etwas einfallen lassen.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Amulett_01_00"); //You're back? Reports from the treasure.
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Amulett_15_01"); //Nothing with treasure. I found this aluminum and some chalices, ore chunks and so on in the tunnel. Nothing else.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Amulett_01_02"); //Hmm. Then remain the blocked corridors. But how...?
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Amulett_15_03"); //I'll think of something.
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Wir müssen eine Möglichkeit finden, die verschlossenen Gänge zu öffnen.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "We need to find a way to open the locked hallways.");
 };
 
 INSTANCE Info_Mod_Greg_DI_Los (C_INFO)
@@ -200,7 +200,7 @@ FUNC INT Info_Mod_Greg_DI_Los_Condition()
 
 FUNC VOID Info_Mod_Greg_DI_Los_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Los_01_00"); //Warte, Junge, ich komm auch mit. Das will ich nicht verpassen.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Los_01_00"); //Wait, boy, I'm coming too. I don't want to miss it.
 
 	AI_StopProcessInfos	(self);
 
@@ -229,10 +229,10 @@ FUNC INT Info_Mod_Greg_DI_Ende_Condition()
 
 FUNC VOID Info_Mod_Greg_DI_Ende_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Ende_01_00"); //Großartig! Jetzt können wir endlich den Schatz heben. Und den Gang, den Jones eben erwähnt hat, solltest du dir vor der Abreise auch noch genauer ansehen.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Ende_01_01"); //Ich geh zurück zum Strand und bereite die Abreise vor, geh du in die Höhlen und hol die Schätze.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Ende_01_00"); //Great! Now we can finally lift the treasure. And you should take a closer look at the passage Jones has just mentioned before you leave.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Ende_01_01"); //I'll go back to the beach and prepare the departure, you go to the caves and get the treasures.
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Greg hat mich damit beauftragt die Schätze aus den Höhlen zu bergen.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Greg hired me to recover the treasures from the caves.");
 
 	AI_StopProcessInfos	(self);
 
@@ -255,7 +255,7 @@ INSTANCE Info_Mod_Greg_DI_Alles (C_INFO)
 	information	= Info_Mod_Greg_DI_Alles_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den wahren Schatz der Insel gefunden.";
+	description	= "I found the true treasure of the island.";
 };
 
 FUNC INT Info_Mod_Greg_DI_Alles_Condition()
@@ -269,14 +269,14 @@ FUNC INT Info_Mod_Greg_DI_Alles_Condition()
 
 FUNC VOID Info_Mod_Greg_DI_Alles_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Alles_15_00"); //Ich habe den wahren Schatz der Insel gefunden.
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Alles_15_01"); //Durch die Wand bin ich in ein großes Höhlensystem gekommen und in einer riesigen Halle war alles voller Gold.
-	AI_Output(hero, self, "Info_Mod_Greg_DI_Alles_15_02"); //Du solltest noch ein paar von den Jungs runterschicken, um das Gold hochzuschaffen.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Alles_01_03"); //Gut, min jung, ich werde das veranlassen!
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Alles_01_04"); //Ich werde währenddessen die Abreise vorbereiten. Die Beute wird im Lager aufgeteilt, wenn wir zurück sind.
-	AI_Output(self, hero, "Info_Mod_Greg_DI_Alles_01_05"); //Sprich mit Skip, wenn du hier alles erledigt hast. Er wird uns zum Schiff bringen und dann fahren wir gleich los.
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Alles_15_00"); //I found the true treasure of the island.
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Alles_15_01"); //Through the wall I got into a big cave system and in a huge hall everything was full of gold.
+	AI_Output(hero, self, "Info_Mod_Greg_DI_Alles_15_02"); //You should send some more of these guys down to get the gold up.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Alles_01_03"); //Well, min young, I'll see to it!
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Alles_01_04"); //Meanwhile, I'll be preparing to leave. The loot will be divided up in the camp when we get back.
+	AI_Output(self, hero, "Info_Mod_Greg_DI_Alles_01_05"); //Talk to Skip when you've done everything here. He's gonna take us to the ship, and then we're gonna leave.
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Ich hab Greg über die Höhle informiert und er wird ein paar der Jungs hinunter schicken. Er bereitet solange die Abreise vor. Wenn ich bereit bin, soll ich mit Skip reden und wir werden alle zum Schiff übergesetzt.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "I told Greg about the cave, and he's gonna send down some of the boys. He's preparing to leave. When I'm ready, I should talk to Skip and we'll all be transferred to the ship.");
 	B_SetTopicStatus	(TOPIC_MOD_PIRATEN_DI, LOG_SUCCESS);
 
 	B_Göttergefallen(2, 2);

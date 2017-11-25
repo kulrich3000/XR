@@ -1,7 +1,7 @@
 INSTANCE Mod_6004_PAL_Andre_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lord Andre";	
+	name 		= "Lord Andrew";	
 	guild 		= GIL_OUT;
 	id 			= 6004;
 	voice 		= 8;

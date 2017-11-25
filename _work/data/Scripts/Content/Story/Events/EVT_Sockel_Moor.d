@@ -4,7 +4,7 @@ FUNC VOID EVT_SOCKEL_MOOR_S1()
 
 	B_GivePlayerXP	(1000);
 
-	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Es ist getan. Der Fokus ist eingesetzt und die Barriere schützt die Umgebung erneut.");
+	B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "It is done. The focus is set and the barrier protects the environment again.");
 
 	Mod_Botschek_Wasserleichen = 14;
 };

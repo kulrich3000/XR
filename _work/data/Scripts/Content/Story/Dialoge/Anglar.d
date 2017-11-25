@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Anglar_Hi_Condition()
 
 FUNC VOID Info_Mod_Anglar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anglar_Hi_06_00"); //Sei gegrüßt Fremder. Wenn du feinen und frischen Fisch suchst, bist du hier genau richtig.
-	AI_Output(hero, self, "Info_Mod_Anglar_Hi_15_01"); //Was hast du sonst noch?
-	AI_Output(self, hero, "Info_Mod_Anglar_Hi_06_02"); //Nur feinsten Fisch. Was braucht man mehr? Kein Tag ohne Fisch, pflegte mein Großvater zu sagen, und so wurde er auch über 100 Jahre alt ...
+	AI_Output(self, hero, "Info_Mod_Anglar_Hi_06_00"); //Greetings, stranger. If you are looking for fine and fresh fish, you've come to the right place.
+	AI_Output(hero, self, "Info_Mod_Anglar_Hi_15_01"); //What else you got?
+	AI_Output(self, hero, "Info_Mod_Anglar_Hi_06_02"); //Only the finest fish. What more do you need? No day without fish, my grandfather used to say, and so he became over 100 years old...
 };
 
 INSTANCE Info_Mod_Anglar_Feuersbrunst (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Anglar_Feuersbrunst (C_INFO)
 	information	= Info_Mod_Anglar_Feuersbrunst_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So groß ist dein Angebot aber nicht ...";
+	description	= "But your offer isn't that big...";
 };
 
 FUNC INT Info_Mod_Anglar_Feuersbrunst_Condition()
@@ -42,30 +42,30 @@ FUNC INT Info_Mod_Anglar_Feuersbrunst_Condition()
 
 FUNC VOID Info_Mod_Anglar_Feuersbrunst_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_00"); //So groß ist dein Angebot aber nicht ...
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_01"); //Ja, das stimmt Zurzeit leider. Es ist auch schon einige Wochen her, dass ich am großen See angeln war.
+	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_00"); //But your offer isn't that big...
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_01"); //Yes, I'm afraid that's true at the moment. It's also been a few weeks since I went fishing at the big lake.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_02"); //(halblaut, zu sich selbst) Das nennt sich also frisch ...
+	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_02"); //That's what they call fresh.
 
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_03"); //Aber nach den letzten Vorkommnissen trau ich mich nicht mehr auch nur in die Nähe ...
-	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_04"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_05"); //Als ich vor einigen Tagen gerade das Loch in das Eis gehauen hatte und meine Angel auswarf, schien zunächst alles ganz normal. Es war nur recht bewölkt und dunkel ... als plötzlich ...
-	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_06"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_07"); //Als plötzlich im Südosten eine Spirale aus Feuer alles erhellte. Wie gebannt starrte ich weiter in die Richtung, wo sich das Schauspiel ereignet hatte. Aber es passierte nichts mehr weiter.
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_08"); //Also nahm ich meinen Mut zusammen, holte die Angel ein und begab mich auf Schusters Rappen in die Richtung, an der das Schauspiel stattgefunden hatte.
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_09"); //Nach einigen hundert Metern Fußmarsch erkannte ich in der Ferne eine Horde Eissnapper ... und wie aus dem Nichts fielen plötzlich Flammen auf diese herab und verbrannten sie in einem Augenblick.
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_10"); //Der Anblick genügte mir, um die Beine in die Hand zu nehmen und rasch zum Dorf zu flüchten.
-	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_11"); //Und was glaubst du, was sich da ereignet hatte?
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_12"); //Ich weiß es nicht genau ... aber vermutlich wird irgendein Feuerdämon dort sein Unwesen treiben.
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_13"); //Und da ich vernünftig bin und keine Lust habe ebenfalls als Grillfleisch zu enden, bleibe ich vorerst hinter den sicheren Palisaden des Dorfes.
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_03"); //But after the last few incidents I don't dare to go near...
+	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_04"); //What's happening?
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_05"); //A few days ago, when I had just cut the hole in the ice and threw out my fishing rod, everything seemed quite normal at first. It was only quite cloudy and dark.... than suddenly...
+	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_06"); //Yes?
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_07"); //When suddenly a spiral of fire lit everything up in the southeast. As if spellbound, I continued to stare in the direction where the spectacle had taken place. But nothing more happened.
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_08"); //So I took my courage, caught up with the fishing rod and went in the direction Schuster's Rappen had taken the spectacle.
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_09"); //After a few hundred meters of walking, I discovered a horde of icecream snappers in the distance.... and out of nowhere flames suddenly fell on them and burned them in an instant.
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_10"); //The sight was enough for me to take my legs in my hand and flee quickly to the village.
+	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst_15_11"); //And what do you think had happened?
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_12"); //I don't know exactly.... but there's probably some fire demon out there somewhere.
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst_06_13"); //And since I am reasonable and don't want to end up as a barbecue, I stay behind the safe palisades of the village for the time being.
 
 	Log_CreateTopic	(TOPIC_MOD_FM_FEUERSBRUNST, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FM_FEUERSBRUNST, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FM_FEUERSBRUNST, "Der Fischverkäufer Anglar erzählte mir eine Geschichte, die sich am Südosten hinter dem gefrorenen Sees zugetragen hatte. Irgendeine unbekannte Macht – womöglich ein Dämon - scheint dort die Gegend mit Flammen unsicher zu machen und alles zu verbrennen, was sich ihr nährt.");
+	B_LogEntry	(TOPIC_MOD_FM_FEUERSBRUNST, "The fish seller Anglar told me a story that had taken place in the southeast behind the frozen lake. Some unknown power - possibly a demon - seems to make the area unstable with flames and burn everything that feeds it.");
 
 	Wld_InsertNpc	(Mod_7793_KDF_Hyglas_EIS, "EINSIEDLER_1");
 };
@@ -78,7 +78,7 @@ INSTANCE Info_Mod_Anglar_Feuersbrunst2 (C_INFO)
 	information	= Info_Mod_Anglar_Feuersbrunst2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dein Dämon wird die Gegend nicht mehr verheeren.";
+	description	= "Your demon won't destroy the area.";
 };
 
 FUNC INT Info_Mod_Anglar_Feuersbrunst2_Condition()
@@ -91,11 +91,11 @@ FUNC INT Info_Mod_Anglar_Feuersbrunst2_Condition()
 
 FUNC VOID Info_Mod_Anglar_Feuersbrunst2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst2_15_00"); //Dein Dämon wird die Gegend nicht mehr verheeren.
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst2_06_01"); //Was? Bist du sicher?
-	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst2_15_02"); //Ja, er ist weiter gezogen in eine andere Region der Erde.
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst2_06_03"); //Da bin ich aber erleichtert, das zu hören. Dann werde ich mich sofort wieder auf Fischfang begeben.
-	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst2_06_04"); //Achja, hier zum Dank für die Information der restliche Fisch den ich noch habe.
+	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst2_15_00"); //Your demon won't destroy the area.
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst2_06_01"); //What? Are you sure about this?
+	AI_Output(hero, self, "Info_Mod_Anglar_Feuersbrunst2_15_02"); //Yeah, he moved on to another region of the world.
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst2_06_03"); //I'm relieved to hear that. Then I will immediately go fishing again.
+	AI_Output(self, hero, "Info_Mod_Anglar_Feuersbrunst2_06_04"); //Well, here to thank you for the information of the remaining fish I have left.
 
 	B_GiveInvItems	(self, hero, ItFo_Fish, 17);
 

@@ -14,7 +14,7 @@ INSTANCE Info_OM_BUD_3_EXIT(C_INFO)
 	condition	= Info_OM_BUD_3_EXIT_Condition;
 	information	= Info_OM_BUD_3_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_OM_BUD_3_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_OM_BUD_3_Mine (C_INFO) // E1
 	condition	= Info_OM_BUD_3_Mine_Condition;
 	information	= Info_OM_BUD_3_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir was von der Mine";
+	description = "Tell me about the mine";
 };                       
 
 FUNC INT Info_OM_BUD_3_Mine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_OM_BUD_3_Mine_Condition()
 
 FUNC VOID Info_OM_BUD_3_Mine_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_3_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_OM_BUD_3_Mine_01_01"); //Wir müssen alle arbeiten. Wochenlang ohne Tageslicht. Es gibt kein Entkommen. Die einzige Freiheit ist der Tod.
+	AI_Output(other,self,"Info_OM_BUD_3_Mine_15_00"); //Tell me about the mine
+	AI_Output(self,other,"Info_OM_BUD_3_Mine_01_01"); //We all have to work. For weeks without daylight. There is no escape. The only freedom is death.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_OM_BUD_3_WichtigePersonen(C_INFO)
 	condition	= Info_OM_BUD_3_WichtigePersonen_Condition;
 	information	= Info_OM_BUD_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu Sagen?";
+	description = "Who's got a say in this?";
 };                       
 
 FUNC INT Info_OM_BUD_3_WichtigePersonen_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_OM_BUD_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_OM_BUD_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_3_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_OM_BUD_3_WichtigePersonen_01_01"); //Kurgan ist der Chef der Mine. Er hat die Kontrolle über die Mine und befehligt alle Wachen.
+	AI_Output(other,self,"Info_OM_BUD_3_WichtigePersonen_15_00"); //Who's got something to say?
+	AI_Output(self,other,"Info_OM_BUD_3_WichtigePersonen_01_01"); //Kurgan's the boss of the mine. He's in control of the mine and commands all the guards.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_OM_BUD_3_DieLage(C_INFO) // E1
 	condition	= Info_OM_BUD_3_DieLage_Condition;
 	information	= Info_OM_BUD_3_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_OM_BUD_3_DieLage_Condition()
@@ -96,9 +96,9 @@ FUNC INT Info_OM_BUD_3_DieLage_Condition()
 
 FUNC VOID Info_OM_BUD_3_DieLage_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_3_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_OM_BUD_3_DieLage_01_01"); //Tja, also mein Rücken schmerzt, meine Arme fallen mir ab, meine Kehle ist trocken und ich bin müde.
-	AI_Output(self,other,"Info_OM_BUD_3_DieLage_01_02"); //Und das ständige Geräusch der Spitzhacken. Ich werde noch wahnsinnig.
+	AI_Output(other,self,"Info_OM_BUD_3_DieLage_15_00"); //How's it looking?
+	AI_Output(self,other,"Info_OM_BUD_3_DieLage_01_01"); //Well, my back hurts, my arms fall off, my throat is dry and I'm tired.
+	AI_Output(self,other,"Info_OM_BUD_3_DieLage_01_02"); //And the constant sound of pickaxes. I'm going insane.
 };
 
 INSTANCE Info_Mod_OM_BUD_3_Pickpocket (C_INFO)

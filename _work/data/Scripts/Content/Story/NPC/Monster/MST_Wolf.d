@@ -115,7 +115,7 @@ INSTANCE Wolf	(Mst_Default_Wolf)
 INSTANCE Riesenwolf	(Mst_Default_Wolf)
 {
 	level							=	30;
-	name							=	"Riesenwolf";
+	name							=	"great wolf";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	150;
 	attribute	[ATR_DEXTERITY]		=	150;
@@ -229,7 +229,7 @@ INSTANCE Wolf_Seltsam_05	(Mst_Default_Wolf)
 
 INSTANCE Wolf_Rotkaeppchen	(Mst_Default_Wolf)
 {
-	name		= "Großer böser Wolf";
+	name		= "Big Bad Wolf";
 
 	B_SetVisuals_Riesenwolf();
 	Npc_SetToFistMode(self);
@@ -238,7 +238,7 @@ INSTANCE Wolf_Rotkaeppchen	(Mst_Default_Wolf)
 
 INSTANCE Schaeferhund_Pepe	(Mst_Default_Wolf)
 {
-	name	=	"Schäferhund";
+	name	=	"Alsatian dog";
 	B_SetVisuals_Schaeferhund();
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SCHAEFERHUND;
@@ -249,7 +249,7 @@ INSTANCE Schaeferhund_Pepe	(Mst_Default_Wolf)
 
 INSTANCE Schaeferhund_Maleth	(Mst_Default_Wolf)
 {
-	name	=	"Schäferhund";
+	name	=	"Alsatian dog";
 	B_SetVisuals_Schaeferhund();
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SCHAEFERHUND;
@@ -260,7 +260,7 @@ INSTANCE Schaeferhund_Maleth	(Mst_Default_Wolf)
 
 INSTANCE Schaeferhund_Malak	(Mst_Default_Wolf)
 {
-	name	=	"Schäferhund";
+	name	=	"Alsatian dog";
 	B_SetVisuals_Schaeferhund();
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SCHAEFERHUND;
@@ -271,7 +271,7 @@ INSTANCE Schaeferhund_Malak	(Mst_Default_Wolf)
 
 INSTANCE Schaeferhund_Balthasar	(Mst_Default_Wolf)
 {
-	name	=	"Schäferhund";
+	name	=	"Alsatian dog";
 	B_SetVisuals_Schaeferhund();
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SCHAEFERHUND;
@@ -309,7 +309,7 @@ FUNC VOID Rtn_Farm_7173()
 
 INSTANCE AdanosDog	(Mst_Default_Wolf)
 {
-	name	=	"Blauer Hund";
+	name	=	"Blue dog";
 	B_SetVisuals_Schaeferhund();
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SCHAEFERHUND;
@@ -341,7 +341,7 @@ FUNC VOID Rtn_Tot_7204()
 
 INSTANCE Summoned_Wolf	(Mst_Default_Wolf)
 {
-	name							=	"Beschworener Wolf";
+	name							=	"Summoned Wolf";
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_WOLF;
 	level							=	0; //10
@@ -375,7 +375,7 @@ INSTANCE Summoned_Wolf	(Mst_Default_Wolf)
 
 INSTANCE BegleiterWolf	(Mst_Default_Wolf)
 {
-	name							=	"Beschworener Wolf";
+	name							=	"Summoned Wolf";
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_WOLF;
 	level							=	0; //10
@@ -412,7 +412,7 @@ INSTANCE BegleiterWolf	(Mst_Default_Wolf)
 INSTANCE YWolf	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"Junger Wolf";
+	name							=	"Young Wolf";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	10;
 	attribute	[ATR_DEXTERITY]		=	5;
@@ -445,7 +445,7 @@ INSTANCE YWolf	(Mst_Default_Wolf)
 INSTANCE YWolf_Weg	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"Junger Wolf";
+	name							=	"Young Wolf";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;
 	attribute	[ATR_DEXTERITY]		=	10;
@@ -477,7 +477,7 @@ INSTANCE YWolf_Weg	(Mst_Default_Wolf)
 
 INSTANCE Balthi_YWolf1	(Mst_Default_Wolf)
 {
-	name							=	"Junger Wolf";
+	name							=	"Young Wolf";
 	level							=	3;
 	
 	//----- Attribute ----
@@ -507,7 +507,7 @@ INSTANCE Balthi_YWolf1	(Mst_Default_Wolf)
 
 INSTANCE Balthi_YWolf2	(Mst_Default_Wolf)
 {
-	name							=	"Junger Wolf";
+	name							=	"Young Wolf";
 	level							=	3;
 	
 	//----- Attribute ----
@@ -537,7 +537,7 @@ INSTANCE Balthi_YWolf2	(Mst_Default_Wolf)
 
 INSTANCE Balthi_YWolf3	(Mst_Default_Wolf)
 {
-	name							=	"Junger Wolf";
+	name							=	"Young Wolf";
 	level							=	3;
 	
 	//----- Attribute ----

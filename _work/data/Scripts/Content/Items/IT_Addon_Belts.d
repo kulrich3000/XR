@@ -87,7 +87,7 @@ INSTANCE  ItBE_Addon_Leather_01 (C_Item)  //Bosper(Kap1)/Hakon(1)/Khaled(1)/Orla
 	on_equip		=	Equip_ItBE_Addon_Leather_01;
 	on_unequip		=	UnEquip_ItBE_Addon_Leather_01;
 
-	description		=  "Ledergürtel";
+	description		=  "Leather belt";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -161,7 +161,7 @@ FUNC VOID UnEquip_ItBE_Addon_Leather_01()
 	on_equip		=	Equip_ItBE_Addon_SLD_01;
 	on_unequip		=	UnEquip_ItBE_Addon_SLD_01;
 
-	description		=  "Söldnergürtel";
+	description		=  "Mercenary's belt";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -230,7 +230,7 @@ INSTANCE  ItBE_Addon_NOV_01 (C_Item)  //Gorax (Kap1)
 	on_equip		=	Equip_ItBE_Addon_NOV_01;
 	on_unequip		=	UnEquip_ItBE_Addon_NOV_01;
 
-	description		=  "Feuer Novizengürtel";
+	description		=  "Fire Novice Belt";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -299,7 +299,7 @@ INSTANCE  ItBE_Addon_WNOV_01 (C_Item)  //Gorax (Kap1)
 	on_equip		=	Equip_ItBE_Addon_WNOV_01;
 	on_unequip		=	UnEquip_ItBE_Addon_WNOV_01;
 
-	description		=  "Wasser Novizengürtel";
+	description		=  "Water Novice Belt";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -368,7 +368,7 @@ INSTANCE  ItBE_Addon_SNOV_01 (C_Item)  //Gorax (Kap1)
 	on_equip		=	Equip_ItBE_Addon_SNOV_01;
 	on_unequip		=	UnEquip_ItBE_Addon_SNOV_01;
 
-	description		=  "Schwarzer Novizengürtel";
+	description		=  "Black novice belt";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -438,7 +438,7 @@ FUNC VOID UnEquip_ItBE_Addon_SNOV_01()
 	on_equip		=	Equip_ItBE_Addon_MIL_01;
 	on_unequip		=	UnEquip_ItBE_Addon_MIL_01;
 
-	description		=  "Milizgürtel";
+	description		=  "Militia belt";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -507,7 +507,7 @@ FUNC VOID UnEquip_ItBE_Addon_MIL_01()
 	on_equip		=	Equip_ItBE_Addon_KDF_01;
 	on_unequip		=	UnEquip_ItBE_Addon_KDF_01;
 
-	description		=  "Schärpe des Feuers";
+	description		=  "Sash of Fire";
 
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -577,7 +577,7 @@ FUNC VOID UnEquip_ItBE_Addon_KDF_01()
 	on_equip		=	Equip_ItBE_Addon_MC;
 	on_unequip		=	UnEquip_ItBE_Addon_MC;
 
-	description		=  "Minecrawler Gürtel";
+	description		=  "Minecrawler belt";
 	
 	TEXT[1]			=	NAME_Prot_Edge;			
 	COUNT[1]		= 	Belt_Prot_01;
@@ -651,7 +651,7 @@ INSTANCE  ItBe_Addon_STR_5 (C_Item)		//Spielstart Xardas(Kap1)
 	on_equip		=	Equip_ItBe_Addon_STR_5;
 	on_unequip		=	UnEquip_ItBe_Addon_STR_5;
 
-	description		=  "Gürtel der Kraft";
+	description		=  "Belt of Force";
 	
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= BeltBonus_STR01;
@@ -691,7 +691,7 @@ INSTANCE  ItBe_Addon_STR_10 (C_Item)  	//Jora(Kap4)/Sengrath(4)
 	on_equip		=	Equip_ItBe_Addon_STR_10;
 	on_unequip		=	UnEquip_ItBe_Addon_STR_10;
 
-	description		=  "Gürtel der Stärke";
+	description		=  "Belt of Strength";
 	
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= BeltBonus_STR02;
@@ -731,7 +731,7 @@ INSTANCE  ItBe_Addon_DEX_5 (C_Item)  //Bosper(Kap2)/Orlan(2)
 	on_equip		=	Equip_ItBe_Addon_DEX_5;
 	on_unequip		=	UnEquip_ItBe_Addon_DEX_5;
 
-	description		=  "Gürtel der Gewandtheit";
+	description		=  "Belt of Skill";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= BeltBonus_DEX01;
@@ -771,7 +771,7 @@ INSTANCE  ItBe_Addon_DEX_10 (C_Item)  //Bosper(Kap3)/Lutero(3)
 	on_equip		=	Equip_ItBe_Addon_DEX_10;
 	on_unequip		=	UnEquip_ItBe_Addon_DEX_10;
 
-	description		=  "Gürtel der Geschicklichkeit";
+	description		=  "Belt of Dexterity";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= BeltBonus_DEX02;
@@ -812,7 +812,7 @@ INSTANCE  ItBe_Addon_Prot_EDGE (C_Item)  //Hakon(Kap4)/Khaled(4)
 	on_equip		=	Equip_ItBe_Addon_Prot_EDGE;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_EDGE;
 
-	description		=  "Gürtel des Schutzes";
+	description		=  "Belt of Protection";
 	
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= BeltBonus_ProtEdge;
@@ -853,7 +853,7 @@ INSTANCE  ItBe_Addon_Prot_Point (C_Item)  //Hakon(Kap3)/Khaled(3)
 	on_equip		=	Equip_ItBe_Addon_Prot_Point;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_Point;
 
-	description		=  "Gürtel der Abwehr";
+	description		=  "Belt of Defense";
 	
 	TEXT[2]			= NAME_Prot_Point;
 	COUNT[2]		= BeltBonus_ProtPoint;
@@ -892,7 +892,7 @@ INSTANCE  ItBe_Addon_Prot_MAGIC (C_Item)  //Gorax(Kap3)/Zuris(3)
 	on_equip		=	Equip_ItBe_Addon_Prot_MAGIC;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_MAGIC;
 
-	description		=  "Gürtel der magischen Abwehr";
+	description		=  "Belt of Magic Defense";
 	
 	TEXT[2]			= NAME_Prot_MAGIC;
 	COUNT[2]		= BeltBonus_ProtMAGIC;
@@ -931,7 +931,7 @@ INSTANCE  ItBe_Addon_Prot_FIRE (C_Item)  //Constantino(Kap3)/Sengrath(4)
 	on_equip		=	Equip_ItBe_Addon_Prot_FIRE;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_FIRE;
 
-	description		=  "Gürtel des Feuerläufers";
+	description		=  "Belt of the Firewalker";
 	
 	TEXT[2]			= NAME_Prot_FIRE;
 	COUNT[2]		= BeltBonus_ProtFIRE;
@@ -970,7 +970,7 @@ INSTANCE  ItBe_Addon_Prot_EdgPoi (C_Item)  //Khaled(Kap4)/Orlan(3)	Missionbelohn
 	on_equip		=	Equip_ItBe_Addon_Prot_EdgPoi;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_EdgPoi;
 
-	description		=  "Gürtel des Schutzes";
+	description		=  "Belt of Protection";
 	
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= BeltBonus_ProtEdgPoi;
@@ -1015,7 +1015,7 @@ INSTANCE  ItBe_Addon_Prot_TOTAL (C_Item)  //Hakon(Kap4)
 	on_equip		=	Equip_ItBe_Addon_Prot_TOTAL;
 	on_unequip		=	UnEquip_ItBe_Addon_Prot_TOTAL;
 
-	description		=  "Beschützer-Gürtel";
+	description		=  "Protector's belt";
 	
 	TEXT[1]			= NAME_Prot_Edge;
 	COUNT[1]		= BeltBonus_ProtTOTAL;
@@ -1053,7 +1053,7 @@ FUNC VOID UnEquip_ItBe_Addon_Prot_TOTAL()
 
 INSTANCE  ItBE_Kettenhemd (C_Item)  //Bosper(Kap1)/Hakon(1)/Khaled(1)/Orlan(1)
 {
-	name 			=	"Kettenhemd";
+	name 			=	"mail shirt";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_BELT|ITEM_MULTI;
@@ -1109,9 +1109,9 @@ INSTANCE  ItBe_Bewaehrung (C_Item)  //Hakon(Kap4)
 	on_equip		=	Equip_ItBe_Bewaehrung;
 	on_unequip		=	UnEquip_ItBe_Bewaehrung;
 
-	description		=  "Gürtel der Bewährung";
+	description		=  "probation belt";
 	
-	TEXT[0]			= "Schützt vor Einfrierung";
+	TEXT[0]			= "Protects against freezing";
 	TEXT[1]			= NAME_Prot_Edge;
 	COUNT[1]		= 20;
 	TEXT[2] 		= NAME_Prot_Point;
@@ -1164,16 +1164,16 @@ INSTANCE  ItBe_GolemBand (C_Item)
 	on_equip		=	Equip_ItBe_GolemBand;
 	on_unequip		=	UnEquip_ItBe_GolemBand;
 
-	description		=  "Massives Band des Golems";
+	description		=  "Solid ribbon of the golem";
 	
-	TEXT[0]			= "Verhindert Wegschleudern";
+	TEXT[0]			= "Prevents throws away";
 	TEXT[1] 		= NAME_Prot_Edge;
 	COUNT[1]		= 25;
 	TEXT[2] 		= NAME_Prot_Point;
 	COUNT[2]		= 25;
 	TEXT[3]			= NAME_Bonus_Str;
 	COUNT[3]		= 20;
-	TEXT[4]			= "Verkürzte Tauchzeit";
+	TEXT[4]			= "Shorter diving time";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -1226,9 +1226,9 @@ INSTANCE  ItBe_GuertelDerEhre (C_Item)
 	on_equip		=	Equip_ItBe_GuertelDerEhre;
 	on_unequip		=	UnEquip_ItBe_GuertelDerEhre;
 
-	description		=  "Gürtel der Ehre";
+	description		=  "Belt of Honor";
 
-	TEXT[1]			= "+2% Erfahrung";
+	TEXT[1]			= "2% experience";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -1261,10 +1261,10 @@ INSTANCE  ItBe_Dornenguertel (C_Item)
 	on_equip		=	Equip_ItBe_Dornenguertel;
 	on_unequip		=	UnEquip_ItBe_Dornenguertel;
 
-	description		=  "Dornengürtel";
+	description		=  "thorn belt";
 
-	TEXT[1]			= "Angreifer bekommen die scharfen Dornen zuspüren.";
-	TEXT[2]			= "Aber auch der Träger erleidet manchen Kratzer.";
+	TEXT[1]			= "Attackers get to feel the sharp thorns.";
+	TEXT[2]			= "But even the wearer suffers some scratches.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;

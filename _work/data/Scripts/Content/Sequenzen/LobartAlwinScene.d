@@ -21,34 +21,34 @@ FUNC VOID LobartAlwinScene()
 	{
 		AI_TurnToNpc	(hero, Mod_910_BAU_Lobart_NW);
 
-		AI_Output(hero, NULL, "Info_Mod_LobartAlwinScene_15_00"); //Was ist hier los?
+		AI_Output(hero, NULL, "Info_Mod_LobartAlwinScene_15_00"); //What's going on here?
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 7)
 	{
-		AI_Output(Mod_910_BAU_Lobart_NW, NULL, "Info_Mod_LobartAlwinScene_26_01"); //(entrüstet) Der Kerl hat meine Schafe geschlachtet! Was fällt dem ein?!
+		AI_Output(Mod_910_BAU_Lobart_NW, NULL, "Info_Mod_LobartAlwinScene_26_01"); //The guy slaughtered my sheep! What does he think of?!
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 12)
 	{
 		AI_TurnToNpc	(Mod_597_NONE_Meldor_NW, Mod_910_BAU_Lobart_NW);
 
-		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_02"); //Ist ja gut, Mann. Kannst du auch noch was anderes sagen?
+		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_02"); //It's all right, man. Can you say anything else?
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 17)
 	{
-		AI_Output(hero, NULL, "Info_Mod_LobartAlwinScene_15_03"); //Kann mir mal jemand antworten?
+		AI_Output(hero, NULL, "Info_Mod_LobartAlwinScene_15_03"); //Can somebody give me an answer?
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 22)
 	{
-		AI_Output(Mod_910_BAU_Lobart_NW, NULL, "Info_Mod_LobartAlwinScene_26_04"); //Ich habe ihn niedergeschlagen! Oh, Innos! Lebt er noch?
+		AI_Output(Mod_910_BAU_Lobart_NW, NULL, "Info_Mod_LobartAlwinScene_26_04"); //I beat him down! Oh, Innos! Is he still alive?
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 27)
 	{
-		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_05"); //Der ist noch kreuzfidel. Schlimmer als nach 'nem Besäufnis wird er sich schon nicht fühlen.
+		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_05"); //He's still very happy. He won't feel worse than after a piss upset.
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 32)
@@ -56,27 +56,27 @@ FUNC VOID LobartAlwinScene()
 		AI_TurnToNpc	(Mod_597_NONE_Meldor_NW, hero);
 		AI_TurnToNpc	(hero, Mod_597_NONE_Meldor_NW);
 
-		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_06"); //(zum Helden) Lobart ist ein wenig ausgerastet, als er gesehen hat, dass sich jemand an seinen Schafen vergriffen hat.
+		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_06"); //(to the hero) Lobart went a little crazy when he saw someone attacking his sheep.
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 37)
 	{
-		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_07"); //Er ist sofort in die Stadt und zu Alwin, und der hatte das Pech, gerade frisch Schafe geschlachtet zu haben.
+		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_07"); //He went straight to town and to Alwin, and he was unlucky to have just slaughtered fresh sheep.
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 42)
 	{
-		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_08"); //Und dann ist Lobart schon auf ihn los, er rannte weg, jo, und wir sehen ja noch, wie weit er gekommen ist.
+		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_08"); //And then Lobart has already got to him, he ran away, yo, and we can still see how far he has come.
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 47)
 	{
-		AI_Output(hero, NULL, "Info_Mod_LobartAlwinScene_15_09"); //Waren es Lobarts Schafe, die Alwin getötet hat?
+		AI_Output(hero, NULL, "Info_Mod_LobartAlwinScene_15_09"); //Was it Lobart's sheep that killed Alwin?
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 52)
 	{
-		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_10"); //Keine Ahnung. So weit habe ich noch nicht gedacht.
+		AI_Output(Mod_597_NONE_Meldor_NW, NULL, "Info_Mod_LobartAlwinScene_07_10"); //I don't know about that. I haven't thought about it that far.
 	};
 
 	if (Mod_LobartAlwinScene_Counter == 57)

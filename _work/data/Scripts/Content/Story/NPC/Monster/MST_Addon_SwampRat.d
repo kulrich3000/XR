@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Swamprat (C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Sumpfratte";
+	name							=	"Swamp Rat";
 	guild							=	GIL_MOLERAT;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SWAMPRAT;
 	level							=	12;

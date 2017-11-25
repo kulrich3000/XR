@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Bosper_Hi_Condition()
 
 FUNC VOID Info_Mod_Bosper_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bosper_Hi_11_00"); //(unfreundlich) Hey! Was willst du hier?
+	AI_Output(self, hero, "Info_Mod_Bosper_Hi_11_00"); //(unfriendly) Hey! What are you doing here?
 };
 
 INSTANCE Info_Mod_Bosper_HandelstDu (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Bosper_HandelstDu (C_INFO)
 	information	= Info_Mod_Bosper_HandelstDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Handelst du?";
+	description	= "Are you trading?";
 };
 
 FUNC INT Info_Mod_Bosper_HandelstDu_Condition()
@@ -36,8 +36,8 @@ FUNC INT Info_Mod_Bosper_HandelstDu_Condition()
 
 FUNC VOID Info_Mod_Bosper_HandelstDu_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_HandelstDu_15_00"); //Handelst du?
-	AI_Output(self, hero, "Info_Mod_Bosper_HandelstDu_11_01"); //Ja, aber nicht mit dir. Du bist einer dieser Kolonietypen. Ich vertraue euch nicht.
+	AI_Output(hero, self, "Info_Mod_Bosper_HandelstDu_15_00"); //Are you trading?
+	AI_Output(self, hero, "Info_Mod_Bosper_HandelstDu_11_01"); //Yeah, but not with you. You're one of those colony types. I don't trust you.
 };
 
 INSTANCE Info_Mod_Bosper_WiesoMisstrauen (C_INFO)
@@ -48,7 +48,7 @@ INSTANCE Info_Mod_Bosper_WiesoMisstrauen (C_INFO)
 	information	= Info_Mod_Bosper_WiesoMisstrauen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso traust du mir nicht?";
+	description	= "Why don't you trust me?";
 };
 
 FUNC INT Info_Mod_Bosper_WiesoMisstrauen_Condition()
@@ -61,9 +61,9 @@ FUNC INT Info_Mod_Bosper_WiesoMisstrauen_Condition()
 
 FUNC VOID Info_Mod_Bosper_WiesoMisstrauen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_WiesoMisstrauen_15_00"); //Wieso traust du mir nicht?
-	AI_Output(self, hero, "Info_Mod_Bosper_WiesoMisstrauen_11_01"); //Na, du wirst doch nicht ganz grundlos in die Barriere geworfen worden sein.
-	AI_Output(self, hero, "Info_Mod_Bosper_WiesoMisstrauen_11_02"); //Mein Geschäft läuft gut genug, dass ich mich nicht mit Gesindel abgeben muss.
+	AI_Output(hero, self, "Info_Mod_Bosper_WiesoMisstrauen_15_00"); //Why don't you trust me?
+	AI_Output(self, hero, "Info_Mod_Bosper_WiesoMisstrauen_11_01"); //Well, you wouldn't have been thrown into the barrier for nothing.
+	AI_Output(self, hero, "Info_Mod_Bosper_WiesoMisstrauen_11_02"); //My business is good enough so I don't have to deal with riffraff.
 };
 
 INSTANCE Info_Mod_Bosper_Lehrling (C_INFO)
@@ -74,7 +74,7 @@ INSTANCE Info_Mod_Bosper_Lehrling (C_INFO)
 	information	= Info_Mod_Bosper_Lehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte Bürger der Stadt werden.";
+	description	= "I want to be a citizen of the city.";
 };
 
 FUNC INT Info_Mod_Bosper_Lehrling_Condition()
@@ -88,21 +88,21 @@ FUNC INT Info_Mod_Bosper_Lehrling_Condition()
 
 FUNC VOID Info_Mod_Bosper_Lehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_Lehrling_15_00"); //Ich möchte Bürger der Stadt werden.
-	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_01"); //Das kann ich mir vorstellen. Aber ich kann mir nicht vorstellen, dass du dazu würdig bist.
-	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_02"); //Dazu müsste ich dir vertrauen.
-	AI_Output(hero, self, "Info_Mod_Bosper_Lehrling_15_03"); //Was kann ich tun, damit du mir vertraust?
-	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_04"); //Bring mir acht Wolfsfelle.
-	AI_Output(hero, self, "Info_Mod_Bosper_Lehrling_15_05"); //(lacht) Vertraust du allen Leuten, die dir acht Wolfsfelle geben?
-	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_06"); //Nein, das soll dich nur eine Weile von mir fern halten.
-	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_07"); //Ich werde mich so lange umhören, was die anderen Meister zu dir zu sagen haben.
-	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_08"); //Abgesehen davon kann ich die Felle momentan gut gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_09"); //Der Söldner Wolf hat mir gerade erst meinen ganzen Bestand abgekauft.
-	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_10"); //Wahrscheinlich brauchen die Tagediebe auf Onars Hof eine Beschäftigung, bevor sie noch anfangen, auf dumme Ideen zu kommen ...
+	AI_Output(hero, self, "Info_Mod_Bosper_Lehrling_15_00"); //I want to be a citizen of the city.
+	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_01"); //I can only imagine. But I can't imagine you're worthy of it.
+	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_02"); //I'd have to trust you to do that.
+	AI_Output(hero, self, "Info_Mod_Bosper_Lehrling_15_03"); //What can I do to make you trust me?
+	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_04"); //Bring me eight wolf skins.
+	AI_Output(hero, self, "Info_Mod_Bosper_Lehrling_15_05"); //(laughs) Do you trust all the people who give you eight wolf skins?
+	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_06"); //No, that's just to keep you away from me for a while.
+	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_07"); //I'll keep asking around for so long what the other masters have to say to you.
+	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_08"); //Besides, I can use the skins right now.
+	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_09"); //The mercenary Wolf has just bought my entire stock.
+	AI_Output(self, hero, "Info_Mod_Bosper_Lehrling_11_10"); //Probably the day thieves on Onar's farm need an occupation before they start to come up with stupid ideas....
 
 	Log_CreateTopic	(TOPIC_MOD_BOSPERSFELLE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BOSPERSFELLE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BOSPERSFELLE, "Um Bospers Zustimmung zu erhalten soll ich ihm acht Wolfsfelle bringen.");
+	B_LogEntry	(TOPIC_MOD_BOSPERSFELLE, "To get Bospers approval, I'm supposed to bring him eight wolf skins.");
 };
 
 INSTANCE Info_Mod_Bosper_DeinLehrling (C_INFO)
@@ -113,7 +113,7 @@ INSTANCE Info_Mod_Bosper_DeinLehrling (C_INFO)
 	information	= Info_Mod_Bosper_DeinLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Würdest du mich als Lehrling aufnehmen?";
+	description	= "Would you take me on as an apprentice?";
 };
 
 FUNC INT Info_Mod_Bosper_DeinLehrling_Condition()
@@ -127,8 +127,8 @@ FUNC INT Info_Mod_Bosper_DeinLehrling_Condition()
 
 FUNC VOID Info_Mod_Bosper_DeinLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_DeinLehrling_15_00"); //Würdest du mich als Lehrling aufnehmen?
-	AI_Output(self, hero, "Info_Mod_Bosper_DeinLehrling_11_01"); //Nein. Abgesehen davon müsstest du erst Bürger der Stadt sein, um als Lehrling aufgenommen werden zu können.
+	AI_Output(hero, self, "Info_Mod_Bosper_DeinLehrling_15_00"); //Would you take me on as an apprentice?
+	AI_Output(self, hero, "Info_Mod_Bosper_DeinLehrling_11_01"); //No. Apart from that, you would have to be a citizen of the city before you could be accepted as an apprentice.
 };
 
 INSTANCE Info_Mod_Bosper_Fell (C_INFO)
@@ -139,7 +139,7 @@ INSTANCE Info_Mod_Bosper_Fell (C_INFO)
 	information	= Info_Mod_Bosper_Fell_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer kann mir beibringen wie ich Tieren das Fell abziehe?";
+	description	= "Who can teach me how to skin animals?";
 };
 
 FUNC INT Info_Mod_Bosper_Fell_Condition()
@@ -153,8 +153,8 @@ FUNC INT Info_Mod_Bosper_Fell_Condition()
 
 FUNC VOID Info_Mod_Bosper_Fell_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_Fell_15_00"); //Wer kann mir beibringen wie ich Tieren das Fell abziehe?
-	AI_Output(self, hero, "Info_Mod_Bosper_Fell_11_01"); //Ich kann dir beibringen wie man das Tieren das Fell abzieht.
+	AI_Output(hero, self, "Info_Mod_Bosper_Fell_15_00"); //Who can teach me how to skin animals?
+	AI_Output(self, hero, "Info_Mod_Bosper_Fell_11_01"); //I can teach you how to skin the animals.
 };
 
 INSTANCE Info_Mod_Bosper_FellLernen (C_INFO)
@@ -165,12 +165,12 @@ INSTANCE Info_Mod_Bosper_FellLernen (C_INFO)
 	information	= Info_Mod_Bosper_FellLernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString("Felle abziehen", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur));
+	description	= B_BuildLearnString("Remove the skins", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur));
 };
 
 FUNC INT Info_Mod_Bosper_FellLernen_Condition()
 {
-	Info_Mod_Bosper_FellLernen.description = B_BuildLearnString("Felle abziehen", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur));
+	Info_Mod_Bosper_FellLernen.description = B_BuildLearnString("Remove the skins", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Bosper_Fell))
 	&& (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
@@ -181,12 +181,12 @@ FUNC INT Info_Mod_Bosper_FellLernen_Condition()
 
 FUNC VOID Info_Mod_Bosper_FellLernen_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Bosper_FellLernen_15_00"); //Bring mir bei, wie man Tieren das Fell abzieht!
+	AI_Output (hero, self, "Info_Mod_Bosper_FellLernen_15_00"); //Teach me how to skin animals!
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_Fur))
 	{
-		AI_Output (self, other, "Info_Mod_Bosper_FellLernen_11_01"); //Gut. Hör zu. Es ist im Grunde ganz einfach.
-		AI_Output (self, other, "Info_Mod_Bosper_FellLernen_11_02"); //Du nimmst eine scharfe Klinge und schneidest dem Vieh den Bauch auf. Noch ein paar kleine Schnitte an den Innenseiten der Beine und dann kannst du's abziehen.
+		AI_Output (self, other, "Info_Mod_Bosper_FellLernen_11_01"); //Good. Listen. It's basically quite simple.
+		AI_Output (self, other, "Info_Mod_Bosper_FellLernen_11_02"); //You take a sharp blade and cut open the belly of the cattle. A few more small cuts on the inside of the legs and then you can pull it off.
 	};
 };
 
@@ -198,7 +198,7 @@ INSTANCE Info_Mod_Bosper_Felle (C_INFO)
 	information	= Info_Mod_Bosper_Felle_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier acht Wolfsfelle.";
+	description	= "I got eight wolf skins here.";
 };
 
 FUNC INT Info_Mod_Bosper_Felle_Condition()
@@ -212,7 +212,7 @@ FUNC INT Info_Mod_Bosper_Felle_Condition()
 
 FUNC VOID Info_Mod_Bosper_Felle_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_Felle_15_00"); //Ich habe hier acht Wolfsfelle.
+	AI_Output(hero, self, "Info_Mod_Bosper_Felle_15_00"); //I got eight wolf skins here.
 
 	var int rein; rein = Npc_HasItems(hero, ItAt_WolfFur_Rein);
 
@@ -230,11 +230,11 @@ FUNC VOID Info_Mod_Bosper_Felle_Info()
 		B_GiveInvItems	(hero, self, ItAt_WolfFur, rein);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Bosper_Felle_11_01"); //Sieh an, du scheinst ja wenigstens ein geschickter Jäger zu sein.
+	AI_Output(self, hero, "Info_Mod_Bosper_Felle_11_01"); //Well, at least you seem to be a skilled hunter.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 80);
 
-	B_LogEntry	(TOPIC_MOD_BOSPERSFELLE, "Ich habe Bosper die Felle gegeben.");
+	B_LogEntry	(TOPIC_MOD_BOSPERSFELLE, "I gave Bosper the skins.");
 	B_SetTopicStatus	(TOPIC_MOD_BOSPERSFELLE, LOG_SUCCESS);
 
 	B_GivePlayerXP	(200);
@@ -250,7 +250,7 @@ INSTANCE Info_Mod_Bosper_BereitFuerLehrling (C_INFO)
 	information	= Info_Mod_Bosper_BereitFuerLehrling_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bin ich jetzt deiner Meinung nach würdig, ein Bürger der Stadt zu werden?";
+	description	= "Do you think I'm worthy to be a citizen of the city now?";
 };
 
 FUNC INT Info_Mod_Bosper_BereitFuerLehrling_Condition()
@@ -264,18 +264,18 @@ FUNC INT Info_Mod_Bosper_BereitFuerLehrling_Condition()
 
 FUNC VOID Info_Mod_Bosper_BereitFuerLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_BereitFuerLehrling_15_00"); //Bin ich jetzt deiner Meinung nach würdig, ein Bürger der Stadt zu werden?
+	AI_Output(hero, self, "Info_Mod_Bosper_BereitFuerLehrling_15_00"); //Do you think I'm worthy to be a citizen of the city now?
 
 	if (Mod_LehrlingsStimmen == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Bosper_BereitFuerLehrling_11_01"); //Die anderen Meister haben mir versichert, dass du zuverlässig bist.
-		AI_Output(self, hero, "Info_Mod_Bosper_BereitFuerLehrling_11_02"); //Ich habe zwar noch Bedenken, aber ... in Ordnung, du bekommst meine Stimme.
+		AI_Output(self, hero, "Info_Mod_Bosper_BereitFuerLehrling_11_01"); //The other masters have assured me that you are reliable.
+		AI_Output(self, hero, "Info_Mod_Bosper_BereitFuerLehrling_11_02"); //I still have concerns, but.... All right, you get my vote.
 
 		Mod_LehrlingsStimmen += 1;
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bosper_BereitFuerLehrling_11_03"); //Ich werde warten, was die anderen Meister von dir zu berichten haben, und erst dann mein Urteil fällen.
+		AI_Output(self, hero, "Info_Mod_Bosper_BereitFuerLehrling_11_03"); //I will wait to see what the other masters have to say about you, and only then will I judge you.
 	};
 };
 
@@ -287,7 +287,7 @@ INSTANCE Info_Mod_Bosper_DeinLehrling2 (C_INFO)
 	information	= Info_Mod_Bosper_DeinLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte dein Lehrling werden.";
+	description	= "I want to be your apprentice.";
 };
 
 FUNC INT Info_Mod_Bosper_DeinLehrling2_Condition()
@@ -302,9 +302,9 @@ FUNC INT Info_Mod_Bosper_DeinLehrling2_Condition()
 
 FUNC VOID Info_Mod_Bosper_DeinLehrling2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_DeinLehrling2_15_00"); //Ich möchte dein Lehrling werden.
-	AI_Output(self, hero, "Info_Mod_Bosper_DeinLehrling2_11_01"); //Eigentlich nehme ich keine Lehrlinge.
-	AI_Output(self, hero, "Info_Mod_Bosper_DeinLehrling2_11_02"); //Wenn du Jäger werden willst, geh zu den Waldläufern.
+	AI_Output(hero, self, "Info_Mod_Bosper_DeinLehrling2_15_00"); //I want to be your apprentice.
+	AI_Output(self, hero, "Info_Mod_Bosper_DeinLehrling2_11_01"); //Actually, I don't take apprentices.
+	AI_Output(self, hero, "Info_Mod_Bosper_DeinLehrling2_11_02"); //If you want to be a hunter, go to the Rangers.
 };
 
 INSTANCE Info_Mod_Bosper_Aufnahme (C_INFO)
@@ -315,7 +315,7 @@ INSTANCE Info_Mod_Bosper_Aufnahme (C_INFO)
 	information	= Info_Mod_Bosper_Aufnahme_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich würde aber lieber bei dir lernen.";
+	description	= "I'd rather study with you.";
 };
 
 FUNC INT Info_Mod_Bosper_Aufnahme_Condition()
@@ -330,48 +330,48 @@ FUNC INT Info_Mod_Bosper_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Bosper_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_15_00"); //Ich würde aber lieber bei dir lernen.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_11_01"); //Herrje ... Na ja, dann lass es uns ausprobieren.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_11_02"); //Aber wenn ich merke, dass du faul wirst oder mich bestiehlst, ist deine Ausbildung sofort abgebrochen. Klar?
+	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_15_00"); //I'd rather study with you.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_11_01"); //Jesus Christ... Well, let's give it a try.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_11_02"); //But if I find out you're going to be lazy or stealing from me, your training will be canceled immediately. All right?
 
 	Info_ClearChoices	(Info_Mod_Bosper_Aufnahme);
 
-	Info_AddChoice	(Info_Mod_Bosper_Aufnahme, "Dann lieber nicht.", Info_Mod_Bosper_Aufnahme_B);
-	Info_AddChoice	(Info_Mod_Bosper_Aufnahme, "Wann geht's los?", Info_Mod_Bosper_Aufnahme_A);
+	Info_AddChoice	(Info_Mod_Bosper_Aufnahme, "I'd rather not.", Info_Mod_Bosper_Aufnahme_B);
+	Info_AddChoice	(Info_Mod_Bosper_Aufnahme, "When do we start?", Info_Mod_Bosper_Aufnahme_A);
 };
 
 FUNC VOID Info_Mod_Bosper_Aufnahme_B()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_B_15_00"); //Dann lieber nicht.
+	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_B_15_00"); //I'd rather not.
 
 	Info_ClearChoices	(Info_Mod_Bosper_Aufnahme);
 };
 
 FUNC VOID Info_Mod_Bosper_Aufnahme_A()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_A_15_00"); //Wann geht's los?
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_01"); //In diesem Augenblick.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_02"); //Indem ich dir diese Bürgerkleidung überreiche, bist du nun ein Bürger von Khorinis.
+	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_A_15_00"); //When do we start?
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_01"); //At this very moment.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_02"); //By presenting you with these civic clothes, you are now a citizen of Khorinis.
 
 	CreateInvItems	(hero, ItAr_Vlk_H, 1);
-	B_ShowGivenThings	("Bürgerkleidung erhalten");
+	B_ShowGivenThings	("receive civilian clothes");
 
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_03"); //Als Jäger solltest du zuerst wissen, mit dem Bogen umzugehen.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_04"); //Ein Schwert wird dir nur wenig behilflich sein, es sei denn, du kämpfst gegen aggressive Gegner, die nicht vor dir fliehen.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_05"); //Von einem Hochsitz oder einer anderen erhöhten Position aus beobachtet ein Jäger die Umgebung.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_06"); //Wenn sich ihm ein Tier nähert, spannt er den Bogen oder die Armbrust möglichst lautlos und zielt auf das verwundbarste Körperteil des Tiers.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_07"); //In den meisten Fällen ist dies der Kopf, bei einigen Monstern können aber auch Körper und Extremitäten besonders anfällig sein.
-	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_A_15_08"); //Einleuchtend.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_09"); //Deine erste Aufgabe wird darin bestehen, mir Keilerfelle zu beschaffen.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_10"); //Achte aber darauf, dass die Felle möglichst unbeschädigt bleiben, soll heißen: ziele auf die Beine.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_11"); //Beschädigte Felle bringen weniger Gold, und man wird sie schlechter los.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_12"); //Natürlich kannst du auch versuchen unbeschädigte Felle über das Totkloppen der Viecher mit stumpfen Waffen zu bekommen.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_13"); //Das ist aber eigentlich eher was für rohe Schläger die auf pure Gewalt setzen und nicht für geschickte Jäger.
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_14"); //Außerdem wird es dabei in etwa der Hälfte der Fälle passieren, dass die Haut der Tiere und damit ihr Fell durch die wuchtigen Schläge aufplatzt oder reißt.
-	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_A_15_15"); //Wo finde ich Keiler?
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_16"); //Eigentlich sind sie überall zu finden. Schau dich um, das gehört zu einer erfolgreichen Jagd dazu.
-	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_A_15_18"); //Und wie viele Felle brauchst du?
-	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_19"); //Bringe mir fünf unbeschädigte Felle, und ich will dir zeigen, wie du bessere Pfeile herstellen kannst.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_03"); //As a hunter, you should know how to use the bow first.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_04"); //A sword will be of little help to you unless you fight against aggressive opponents who do not flee from you.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_05"); //A hunter observes the surroundings from a high seat or other elevated position.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_06"); //When an animal approaches him, he clamps the bow or crossbow as silently as possible and aims at the most vulnerable part of the animal's body.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_07"); //In most cases this is the head, but in some monsters, body and extremities can be particularly vulnerable.
+	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_A_15_08"); //Obviously.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_09"); //Your first task will be to get boar hides for me.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_10"); //But make sure that the skins remain as undamaged as possible, i. e. aim at the legs.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_11"); //Damaged skins bring less gold and it is difficult to get rid of them.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_12"); //Of course you can also try to get undamaged skins over the dead bludgeoning of the creatures with blunt weapons.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_13"); //But that's actually something for raw bats who rely on pure violence and not for skillful hunters.
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_14"); //In addition, in about half of the cases it will happen that the skin of the animals and thus their fur will crack or tear due to the massive blows.
+	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_A_15_15"); //Where can I find Keiler?
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_16"); //Actually, they can be found everywhere. Look around, it's part of a successful hunt.
+	AI_Output(hero, self, "Info_Mod_Bosper_Aufnahme_A_15_18"); //And how many hides do you need?
+	AI_Output(self, hero, "Info_Mod_Bosper_Aufnahme_A_11_19"); //Bring me five undamaged skins, and I'll show you how to make better arrows.
 
 	Mod_IstLehrling	= 1;
 
@@ -382,11 +382,11 @@ FUNC VOID Info_Mod_Bosper_Aufnahme_A()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torlof_Auftrag))
 	{
-		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_BOSPER_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Bosper, der Bogner, hat mich als seinen Lehrling aufgenommen. Dadurch bin ich jetzt ein Bürger der Stadt.", "Mein erster Auftrag für Bosper besteht darin, dass ich ihm fünf unbeschädigte Keilerfelle liefere. Die erhalte ich, indem ich den Keilern in die Beine schieße.", "Da Bosper mich als seinen Lehrling aufgenommen hat ist es mir jetzt möglich das Obere Viertel zu betreten.");
+		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_BOSPER_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Bosper, the Bogner, accepted me as his apprentice. That makes me a citizen of the city now.", "My first assignment for Bosper is to supply him with five undamaged boar hides. I get it by shooting the wedges in the legs.", "Since Bosper accepted me as his apprentice it is now possible for me to enter the upper quarter.");
 	}
 	else
 	{
-		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_BOSPER_ONE, "Bosper, der Bogner, hat mich als seinen Lehrling aufgenommen. Dadurch bin ich jetzt ein Bürger der Stadt.", "Mein erster Auftrag für Bosper besteht darin, dass ich ihm fünf unbeschädigte Keilerfelle liefere. Die erhalte ich, indem ich den Keilern in die Beine schieße.");
+		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_BOSPER_ONE, "Bosper, the Bogner, accepted me as his apprentice. That makes me a citizen of the city now.", "My first assignment for Bosper is to supply him with five undamaged boar hides. I get it by shooting the wedges in the legs.");
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_BÜRGER, LOG_SUCCESS);
@@ -419,23 +419,23 @@ FUNC VOID Info_Mod_Bosper_GildenZeug_Info()
 {
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_00"); //Das hätte ich ja nicht gedacht. Vom Halunken zum Gesetzeshüter.
+		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_00"); //I didn't think so. From scoundrel to lawman.
 	}
 	else if (hero.guild == GIL_VLK)
 	{
-		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_01"); //Was willst du bei den Magiern? Über das Bogenschießen können die dir nichts sagen!
+		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_01"); //What do you want with the magicians? They can't tell you anything about archery!
 	}
 	else if (hero.guild == GIL_NOV)
 	{
-		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_02"); //Was willst du bei den Magiern? Über das Bogenschießen können die dir nichts sagen!
+		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_02"); //What do you want with the magicians? They can't tell you anything about archery!
 	}
 	else if (hero.guild == GIL_MIL)
 	{
-		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_03"); //War ja abzusehen, dass es dich zu den Söldnern zieht. Haben aber gute Bogenschützen, die Jungs.
+		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_03"); //I could tell you'd be attracted to the mercenaries. But they have good archers, the boys.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_04"); //Lass dir bloß nicht einfallen, hier deinem Gott zu huldigen!
+		AI_Output(self, hero, "Info_Mod_Bosper_GildenZeug_11_04"); //Don't even think of paying homage to your god!
 	};
 };
 
@@ -447,7 +447,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die fünf Keilerfelle, unbeschädigt.";
+	description	= "The five boar hides, undamaged.";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest_Condition()
@@ -461,38 +461,38 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest_15_00"); //Die fünf Keilerfelle, unbeschädigt.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest_15_00"); //The five boar hides, undamaged.
 
 	B_GiveInvItems	(hero, self, ItAt_Addon_KeilerFur_Rein, 5);
 
 	Npc_RemoveInvItems	(self, ItAt_Addon_KeilerFur_Rein, 5);
 
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_01"); //(prüfend) Ja, die sind zu gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_02"); //Hier hast du etwas Geld. Aber gib es nicht für Bier und leichte Mädchen aus!
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_01"); //(checking) Yes, they are to be used.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_02"); //Here's some money. But don't spend it on beer and light girls!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, (5 * Value_KeilerFur_Rein) / 2);
 
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_03"); //Da du dich als einigermaßen geschickt erwiesen hast, will ich dich nun in die Kunst der Pfeilherstellung einführen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_04"); //Einen normalen Pfeil zu schnitzen, ist selbst für den blutigen Anfänger kein Problem.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_05"); //Allerdings gibt es bestimmte Kniffe, wie du spezialisierte oder verbesserte Pfeile erhältst.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_06"); //Lass uns mit den Widerhaken beginnen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_07"); //Alles, was du zusätzlich brauchst, ist ein leichtes gebogenes Stück Eisen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_08"); //Das kannst du bei fast jedem Schmied kaufen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_09"); //Vorn in den Pfeil ritzt du im gleichen Abstand vier Kerben, die du mit einer klebrigen Flüssigkeit ausfüllst und in die du dann die Eisenstücke steckst.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_10"); //Achte immer darauf, die Balance des Pfeils zu wahren.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_11"); //Unter dem Eisen leidet die Genauigkeit des Pfeils, allerdings kannst du mit ein wenig Glück deinem Gegner damit schwer blutende Wunden zufügen, die ihn immer weiter schwächen.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest_15_12"); //Kann ich damit auch meine schon fertigen Pfeile aufbessern?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_13"); //Natürlich. Ich empfehle dir, das an Thorbens Stand zu erledigen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_14"); //Als Handwerker hat er dort alle nötigen Gerätschaften versammelt.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_15"); //Jetzt solltest du dich erst einmal für eine Weile mit dem vertraut machen, was ich dir erzählt habe.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_16"); //Komm danach wieder, und wir werden an dieser Stelle weitermachen.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_03"); //Now that you have proven yourself to be reasonably skillful, I want to introduce you to the art of making arrows.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_04"); //Carving a normal arrow is no problem even for the beginner.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_05"); //However, there are certain tricks how to get specialized or improved arrows.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_06"); //Let's start with the barbs.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_07"); //All you need is a light piece of bent iron.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_08"); //You can buy it from almost any blacksmith.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_09"); //In the front of the arrow you scratch four notches at the same distance, which you fill with a sticky liquid and then put the pieces of iron into.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_10"); //Always pay attention to the balance of the arrow.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_11"); //Under the iron the accuracy of the arrow suffers, but with a little luck you can inflict heavy bleeding wounds on your opponent, which weaken him further and further.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest_15_12"); //Can I also use it to improve my already finished arrows?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_13"); //Of course it is. I recommend that you do this at Thorben's booth.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_14"); //As a craftsman, he has assembled all the necessary equipment there.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_15"); //Now you should get acquainted with what I've told you for a while.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest_11_16"); //Come back after that, and we'll move on.
 
 	B_GivePlayerXP	(100);
 
 	CurrentNQ += 1;
 
 	Log_CreateTopic	(TOPIC_MOD_PFEILE, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_PFEILE, "Ich kann jetzt aus einer Pfeilspitze und einem Pfeilschaft einen Pfeil mit Widerhaken herstellen. Dieser Pfeil trifft nicht so häufig, reißt aber dafür tiefere Wunden.");
+	B_LogEntry	(TOPIC_MOD_PFEILE, "I can now make a barbed arrow from an arrow tip and an arrow shaft. This arrow does not hit so often, but it tears deeper wounds.");
 
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_BOSPER_ONE, LOG_SUCCESS);
 };
@@ -505,7 +505,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest2 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass uns mit meiner Ausbildung fortfahren.";
+	description	= "Let's continue my training.";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest2_Condition()
@@ -519,25 +519,25 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest2_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_00"); //Lass uns mit meiner Ausbildung fortfahren.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_01"); //(argwöhnisch) Wo treibst du dich überhaupt rum? In der Stadt bist du ja kaum noch.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_02"); //Ich rette die Welt und so.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_03"); //Verarschen kann ich mich alleine.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_04"); //Ich brauche aber deine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_05"); //Abuyin hat vier Schattenläuferfelle bei mir bestellt, aber die Jäger haben mir erst eines gebracht.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_06"); //Fehlen also noch drei.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_07"); //Wofür braucht Abuyin Schattenläuferfelle?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_08"); //Er sagt, dass Schattenläufer magische Wesen seien und ihre Felle demnach irgendwelche positiven Schwingungen auf ihn ausüben würden.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_09"); //Vielleicht hat er aber auch einfach nur zu viel geraucht.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_10"); //Jedenfalls zahlt er gut für unbeschädigte Felle. Du erinnerst dich daran, worauf du achten musst?
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_11"); //Immer schön auf die Pranken schießen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_12"); //Schattenläufer sind hart im Nehmen. Also pass auf dich auf.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_13"); //Wenn du mir die Felle gebracht hast, bringe ich dir was Neues bei.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_14"); //Alles klar. Dann werd ich mich mal auf die Suche machen.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_00"); //Let's continue my training.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_01"); //Where are you hanging out, anyway? You're barely in town.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_02"); //I'm saving the world and stuff.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_03"); //I can fuck with myself.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_04"); //I need your help, though.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_05"); //Abuyin has ordered four shadow-running skins from me, but the hunters have only brought me one.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_06"); //That leaves three more to go.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_07"); //What does Abuyin need shadow skins for?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_08"); //He says that Shadow Runners are magical beings and their skins therefore exert any positive vibrations on him.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_09"); //Maybe he just smoked too much, though.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_10"); //Anyway, he pays well for undamaged skins. You remember what you have to watch out for?
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_11"); //Keep shooting at the paws.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_12"); //Shadow runners are tough. So take care of yourself.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest2_11_13"); //If you brought me the skins, I'll teach you something new.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest2_15_14"); //All clear. I'm gonna go look for it.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRLING_BOSPER_TWO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_BOSPER_TWO, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_TWO, "Bosper will, dass ich ihm drei unbeschädigte Schattenläuferfelle bringe, bevor er mich weiter unterweist.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_TWO, "Bosper wants me to bring him three undamaged shadow runners' skins before he teaches me any more.");
 
 	Wld_InsertNpc	(Shadowbeast,	"FP_ROAM_FARM1_FORREST_SHADOW_02");
 	Wld_InsertNpc	(Shadowbeast,	"NW_FARM4_WOOD_MONSTER_06");
@@ -553,7 +553,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest3 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du die Felle.";
+	description	= "Here's the skins.";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest3_Condition()
@@ -567,36 +567,36 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest3_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest3_15_00"); //Hier hast du die Felle.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest3_15_00"); //Here's the skins.
 
 	B_GiveInvItems	(hero, self, ItAt_ShadowFur_Rein, 3);
 
 	Npc_RemoveInvItems	(self, ItAt_ShadowFur_Rein, 3);
 
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_01"); //Gute Qualität. Damit wird Abuyin zufrieden sein.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_01"); //Good quality. Abuyin will be satisfied with that.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest3_15_02"); //Dann können wir uns ja endlich meiner Lehre zuwenden.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_03"); //In Ordnung, dann hör mir mal gut zu.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_04"); //Mit herkömmlichen Pfeilen hast du gegen starke Gegner häufig keine Chance, weil deine Reichweite zu gering ist.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_05"); //Du musst bei der Produktion nur ein paar Feinheiten ändern, und schon erhältst du einen wahrhaften Präzisionspfeil.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_06"); //Die Befiederung am Ende des Pfeils muss etwa ein Fünftel des Pfeils bedecken. Nimm also mehr Federn als üblich.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_07"); //Außerdem darf die Spitze etwas kleiner sein, um die Balance des Pfeils zu erhöhen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_08"); //Als Alternative bringst du am Ende des Schafts ein Gegengewicht an, das für eine gleichmäßige Verteilung des Gewichts sorgt.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_09"); //Diese Maßnahmen sorgen zwar dafür, dass der Pfeil etwas an Durchschlagskraft verliert, aber das macht er durch eine deutlich erhöhte Reichweite und eine bessere Handhabbarkeit wieder wett.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest3_15_10"); //Klingt so, als wäre der Pfeil zu gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_11"); //Sonst würde ich mir auch nicht die Mühe machen, es dir zu erklären.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest3_15_12"); //Warum hattest du eigentlich keinen Lehrling vor mir? Du machst das doch ganz gut.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_13"); //Meinen letzten Lehrling hatte ich vor mehreren Jahren. Ich werde ihn immer in Erinnerung behalten - aber nicht in positiver.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_14"); //Jetzt ist es aber Zeit für dich zu gehen. Komm bald wieder.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest3_15_02"); //Then we can finally turn to my teaching.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_03"); //All right, listen to me.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_04"); //With conventional arrows you often have no chance against strong opponents because your range is too small.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_05"); //All you have to do is change a few subtleties during production and you'll get a true precision arrow.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_06"); //The feathering at the end of the arrow must cover about one fifth of the arrow. So use more feathers than usual.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_07"); //The tip may also be slightly smaller to increase the balance of the arrow.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_08"); //Alternatively, place a counterweight at the end of the shaft to distribute the weight evenly.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_09"); //Although these measures ensure that the arrow loses some of its penetrating power, they make up for this with a significantly increased range and better manageability.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest3_15_10"); //Sounds like you could use the arrow.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_11"); //Otherwise I wouldn't bother explaining it to you.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest3_15_12"); //Why didn't you have an apprentice before me? You're doing all right.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_13"); //I had my last apprentice several years ago. I will always remember him - but not in a more positive way.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest3_11_14"); //Now it's time for you to go. Come back soon.
 
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_BOSPER_TWO, LOG_SUCCESS);
 
 	B_GivePlayerXP	(200);
 
 	Log_CreateTopic	(TOPIC_MOD_PFEILE, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_PFEILE, "Ich kann jetzt aus einer Pfeilspitze und einem Pfeilstab einen Präzisionspfeil herstellen. Dieser Pfeil trifft häufiger und auf größere Entfernung, macht dafür aber etwas weniger Schaden.");
+	B_LogEntry	(TOPIC_MOD_PFEILE, "I can now create a precision arrow from an arrowhead and an arrow rod. This arrow hits more often and at a greater distance, but does less damage.");
 
 	CurrentNQ += 1;
 };
@@ -609,7 +609,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest4 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht es mit meiner Ausbildung weiter?";
+	description	= "What is the next step in my training?";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest4_Condition()
@@ -623,20 +623,20 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest4_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_00"); //Wie geht es mit meiner Ausbildung weiter?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_01"); //Du kennst jetzt die für Jäger wichtigsten Pfeil-Modifikationen, bis auf eine.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_02"); //Und die wäre?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_03"); //Na ja ... (stockt) Das sollte ich dir vielleicht gar nicht sagen.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_04"); //Aha.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_05"); //Ich wurde schon ein Mal betrogen, und ich will es nicht zu einem zweiten Mal kommen lassen.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_06"); //Wer hat dich betrogen?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_07"); //Mein letzter Lehrling.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_08"); //Ich habe ihm alles beigebracht, was ist wusste, und als Dank feuerte er drei Explosionspfeile auf mein ehemaliges Haus und setzte es in Brand.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_09"); //Damals wohnte ich nur unweit der Taverne, an einem Rastplatz der Jäger.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_10"); //Seitdem habe ich keine Lehrlinge mehr aufgenommen.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_11"); //Was ist aus deinem Lehrling geworden?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_12"); //(bitter) Ich weiß es nicht. Es war eine junge Frau - sehr talentiert, sehr ehrgeizig.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_13"); //Ich habe nie wieder von ihr gehört, und ich will es auch nicht.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_00"); //What is the next step in my training?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_01"); //You now know the most important arrow modifications for hunters, except one.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_02"); //And what's that?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_03"); //Well... I might not even tell you.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_04"); //Uh-huh.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_05"); //I've been deceived once before, and I don't want to make it come back for a second time.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_06"); //Who betrayed you?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_07"); //My last apprentice.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_08"); //I taught him everything he knew, and as a reward he fired three explosive arrows at my former house and set it on fire.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_09"); //At that time I only lived near the tavern, at a resting place of the hunters.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_10"); //I haven't taken on any apprentices since then.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest4_15_11"); //What happened to your apprentice?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_12"); //(bitter) I don't know. It was a young woman - very talented, very ambitious.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest4_11_13"); //I never heard from her again, and I don't want to.
 };
 
 INSTANCE Info_Mod_Bosper_LehrlingQuest5 (C_INFO)
@@ -647,7 +647,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest5 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Aber ich werde dich nicht verraten.";
+	description	= "But I won't betray you.";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest5_Condition()
@@ -660,26 +660,26 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest5_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest5_15_00"); //Aber ich werde dich nicht verraten.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_01"); //Weswegen wurdest du eigentlich in die Barriere geworfen?
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest5_15_02"); //Ich -
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_03"); //Halt! Sag's nicht. Ich will es gar nicht wissen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_04"); //Du hast mich bisher nicht enttäuscht, bist bescheiden und zuverlässig.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_05"); //Wenn ich jemandem trauen kann, dann dir. Deine Vergangenheit spielt keine Rolle.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_06"); //Also schön, ich will dir die mächtigsten Geschosse zeigen: die Explosionspfeile.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_07"); //Diese richten selbst bei Gegnern, die gegen herkömmliche Pfeile weitgehend immun sind, verheerenden Schaden an.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest5_15_08"); //Und wie stelle ich diese Pfeile her?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_09"); //Die Spitze dieser Pfeile besteht aus einem Säckchen mit einem explosiven Gemisch.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_10"); //Du brauchst ein Stück Kohle, Schwefel und einen Beutel Salpeter.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_11"); //An einem Alchemietisch stellst du daraus eine Mischung her, verpackst sie sorgfältig und befestigst sie vorn am Pfeil.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest5_15_12"); //Hört sich gut an.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_13"); //Probier's aus. Bring mir zwei Trollfelle, dann sehe ich die Prüfung als abgeschlossen an.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_14"); //Aber ich will die Brandflecken sehen!
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest5_15_00"); //But I won't betray you.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_01"); //What were you actually thrown into the barrier for?
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest5_15_02"); //I -
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_03"); //Stop! Don't tell me. I don't want to know.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_04"); //You haven't disappointed me yet, you're humble and reliable.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_05"); //If I can trust anyone, it's you. Your past doesn't matter.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_06"); //All right, I want to show you the most powerful projectiles: the explosion arrows.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_07"); //They can also wreak havoc on enemies who are largely immune to conventional arrows.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest5_15_08"); //And how do I make these arrows?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_09"); //The tip of these arrows consists of a bag with an explosive mixture.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_10"); //You need a piece of coal, sulphur and a bag of saltpeter.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_11"); //At an alchemy table you make a mixture from it, pack it carefully and attach it to the front of the arrow.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest5_15_12"); //Sounds good to me.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_13"); //Try it out. Bring me two troll skins, then I'll consider the exam completed.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest5_11_14"); //But I want to see the burn marks!
 
 	Log_CreateTopic	(TOPIC_MOD_PFEILE, LOG_NOTE);
 	Log_CreateTopic	(TOPIC_MOD_LEHRLING_BOSPER_THREE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_BOSPER_THREE, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_LEHRLING_BOSPER_THREE, TOPIC_MOD_PFEILE, "Mit Explosionspfeilen soll ich zwei Trolle töten und Bosper ihre Felle bringen.", "Ich kann jetzt aus einer Pfeilspitze, Sprengstoff und einem Pfeilstab einen Explosionspfeil herstellen. Dieser Pfeil trifft häufiger und macht viel mehr Schaden, hat aber eine sehr geringe Reichweite. Für den Sprengstoff benötige ich Kohle, Schwefel und Salpeter, welche ich an einem Alchemietisch vermengen muss.");
+	B_LogEntry_More	(TOPIC_MOD_LEHRLING_BOSPER_THREE, TOPIC_MOD_PFEILE, "I'm supposed to kill two trolls with explosion arrows and bring Bosper her skins.", "I can now make an explosion arrow from an arrowhead, explosives and an arrow rod. This arrow hits more frequently and does much more damage, but has a very small range. For the explosives I need coal, sulphur and saltpeter, which I have to mix at an alchemy table.");
 };
 
 INSTANCE Info_Mod_Bosper_LehrlingQuest6 (C_INFO)
@@ -690,7 +690,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest6 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du die beiden Trollfelle.";
+	description	= "Here you have the two troll skins.";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest6_Condition()
@@ -704,20 +704,20 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest6_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest6_15_00"); //Hier hast du die beiden Trollfelle.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest6_15_00"); //Here you have the two troll skins.
 
 	B_GiveInvItems	(hero, self, ItAt_TrollFur_Feuer, 2);
 
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_01"); //Dafür hast du hier einen kleinen Lohn.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_01"); //You got a little paycheck for that.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_02"); //Deine Ausbildung bei mir ist hiermit beendet. Alles, was du wissen musst, habe ich dir erzählt.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_03"); //Nun wird die Praxis erweisen, ob du mit der Jagd deinen Lebensunterhalt bestreiten können wirst.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_04"); //Schau doch irgendwann noch mal bei mir vorbei, vielleicht habe ich etwas zu tun für dich.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_05"); //Ansonsten bleibt mir nur übrig, dich zu deinen Leistungen zu beglückwünschen und dir ein angenehmes Leben zu wünschen.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest6_15_06"); //Danke. Bis demnächst mal.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_07"); //Möge deine Sehne immer gespannt bleiben!
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_02"); //Your training with me is now complete. Everything you need to know, I told you.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_03"); //Now the practice will show whether you will be able to earn a living by hunting.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_04"); //Why don't you drop by my place sometime, maybe I'll have something to do for you.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_05"); //Otherwise, all I can do is congratulate you on your accomplishments and wish you a pleasant life.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest6_15_06"); //Thanks. See you soon.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest6_11_07"); //May your longing always remain taut!
 
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_BOSPER_THREE, LOG_SUCCESS);
 
@@ -734,7 +734,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest7 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest7_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft's?";
+	description	= "How's it going?";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest7_Condition()
@@ -748,9 +748,9 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest7_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest7_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest7_15_00"); //Wie läuft's?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest7_11_01"); //Das Gespräch mit dir über meinen letzten Lehrling hat mir keine Ruhe gelassen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest7_11_02"); //Ich hatte ihn schon erfolgreich verdrängt, aber seit ich dir von ihm erzählt habe, habe ich Alpträume und schlafe schlecht.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest7_15_00"); //How's it going?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest7_11_01"); //Talking to you about my last apprentice has left me no peace of mind.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest7_11_02"); //I had already successfully suppressed him, but since I told you about him, I have nightmares and sleep badly.
 };
 
 INSTANCE Info_Mod_Bosper_LehrlingQuest8 (C_INFO)
@@ -761,7 +761,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest8 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest8_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso geht dir euer Zerwürfnis so nahe?";
+	description	= "Why are you so close to your quarrels?";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest8_Condition()
@@ -774,15 +774,15 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest8_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest8_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest8_15_00"); //Wieso geht dir euer Zerwürfnis so nahe?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_01"); //Ich ... ich bin nicht ganz schuldlos daran. Damals habe ich nicht die richtigen Worte gefunden.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest8_15_02"); //Was ist vorgefallen?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_03"); //Ich hatte zu ihr eine ... besondere Verbindung.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_04"); //Am Abend, bevor sie mein Haus in Brand setzte, klärte ich sie darüber auf.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_05"); //Aber sie wollte nichts davon wissen und schrie mich an.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_06"); //Daraufhin habe ich ihr weh getan. Ich wusste sofort, dass es falsch war, aber konnte es nicht mehr rückgängig machen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_07"); //Dann rannte sie davon. In der Nacht wurde ich schließlich vom Prasseln des Feuers und dem Brandgeruch geweckt.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_08"); //Ich möchte, dass du sie findest.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest8_15_00"); //Why are you so close to your quarrels?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_01"); //l-- I'm not entirely innocent. I didn't find the right words back then.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest8_15_02"); //What has happened?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_03"); //I had one for her.... special connection.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_04"); //The night before she set fire to my house, I told her about it.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_05"); //But she didn't want to know about it and yelled at me.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_06"); //I hurt her after that. I immediately knew it was wrong, but I couldn't undo it.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_07"); //Then she ran away. At night I was finally awakened by the crackling of the fire and the smell of burning.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest8_11_08"); //I want you to find her.
 };
 
 INSTANCE Info_Mod_Bosper_LehrlingQuest9 (C_INFO)
@@ -793,7 +793,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest9 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest9_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich dachte, du wolltest sie nicht wiedersehen?";
+	description	= "I thought you didn't want to see her again?";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest9_Condition()
@@ -806,9 +806,9 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest9_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest9_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest9_15_00"); //Ich dachte, du wolltest sie nicht wiedersehen?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest9_11_01"); //Das stimmte auch lange Zeit. Die Erinnerung an sie bereitet mir noch immer Schmerzen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest9_11_02"); //Aber gleichzeitig steigt die Sehnsucht in mir, mich mit ihr zu versöhnen.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest9_15_00"); //I thought you didn't want to see her again?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest9_11_01"); //That was true for a long time. The memory of her still hurts me.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest9_11_02"); //But at the same time, I have a longing to reconcile myself with her.
 };
 
 INSTANCE Info_Mod_Bosper_LehrlingQuest10 (C_INFO)
@@ -819,7 +819,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest10 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest10_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo könnte sie sich aufhalten?";
+	description	= "Where could she be?";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest10_Condition()
@@ -832,21 +832,21 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest10_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest10_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest10_15_00"); //Wo könnte sie sich aufhalten?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_01"); //Als ich dir sagte, dass ich nicht wüsste, wo sie sei, habe ich nicht vollkommen die Wahrheit gesagt.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_02"); //Aus verschiedenen Quellen habe ich erfahren, dass sie sich noch immer in dem großen Wald nördlich der Stadt aufhält.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_03"); //Allerdings scheint sie nicht gewillt, dass sich jemand ihr nähert.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_04"); //Mehrere Jäger haben mir berichtet, dass sie sich, wenn sie gestört wurde, in ein Tier verwandelt hat.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_05"); //Ich weiß nicht, wo sie die Kunst des Verwandelns gelernt hat, aber ihr bevorzugtes Tier scheint ein Warg zu sein.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest10_15_06"); //Bedeutet das etwa, ich soll alle Warge fangen, die ich finde, und warten, ob sie sich zurückverwandeln?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_07"); //Natürlich nicht.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_08"); //Lass dir von einem Magier, Vatras vielleicht, eine Tinktur geben, die bei Berührung zurückverwandelt.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_09"); //Damit bestreichst du an einem Alchemietisch deine Pfeile.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_10"); //Schon beim ersten Schuss wird sich dann zeigen, ob es sich um Atalante handelt, meinen letzten Lehrling.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest10_15_00"); //Where could she be?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_01"); //When I told you I didn't know where she was, I didn't tell you the truth completely.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_02"); //I have learned from various sources that she is still living in the large forest north of the city.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_03"); //However, she doesn't seem willing to let anyone approach her.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_04"); //Several hunters told me that if she was disturbed, she turned into an animal.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_05"); //I don't know where she learned the art of transformation, but her favorite animal seems to be a warg.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest10_15_06"); //Does that mean I should catch all the Warge I find and wait to see if they change back?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_07"); //Of course not, of course.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_08"); //Let a magician, Vatras perhaps, give you a tincture that transforms back when touched.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_09"); //You're painting your arrows on an alchemy table.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest10_11_10"); //Even the first shot will show whether it is Atalante, my last apprentice.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, "Bosper sehnt sich danach, sich mit Atalante, die früher sein Lehrling war, auszusöhnen. Da sie jedoch anscheinend menschenscheu geworden ist und als Warg in dem Wald nördlich von Khorinis herumstreift, soll ich mir von einem Magier eine Tinktur besorgen, mit der ich sie zurückverwandeln kann, um ihr dann von Bospers Versöhnungswunsch zu erzählen. Meine erste Anlaufstelle für die Tinktur ist Vatras.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, "Bosper longs to reconcile with Atalante, who used to be his apprentice. However, since she seems to have become shy of humans and roams around as a warg in the forest north of Khorinis, I am told to get a tincture from a magician, with which I can transform her back and then tell her about Bosper's desire for reconciliation. My first port of call for the tincture is Vatras.");
 };
 
 INSTANCE Info_Mod_Bosper_LehrlingQuest11 (C_INFO)
@@ -857,7 +857,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest11 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest11_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was mache ich, sobald ich sie zurückverwandelt habe?";
+	description	= "What do I do once I turn them back?";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest11_Condition()
@@ -871,8 +871,8 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest11_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest11_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest11_15_00"); //Was mache ich, sobald ich sie zurückverwandelt habe?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest11_11_01"); //Erzähl ihr, dass ich gewillt bin, ihr zu verzeihen, und dass ich sie treffen will.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest11_15_00"); //What do I do once I turn them back?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest11_11_01"); //Tell her I'm willing to forgive her and that I want to meet her.
 };
 
 INSTANCE Info_Mod_Bosper_LehrlingQuest12 (C_INFO)
@@ -883,7 +883,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest12 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest12_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Atalante ist tot. Es tut mir Leid.";
+	description	= "Atalante is dead. I'm sorry about that.";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest12_Condition()
@@ -897,21 +897,21 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest12_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest12_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_00"); //Atalante ist tot. Es tut mir Leid.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_01"); //Nein! Sag, dass das nicht wahr ist!
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_02"); //Sie griff mich an, als ich ihr von dir erzählte.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_03"); //Meine Tochter! Was hast du mir angetan?!
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_04"); //Deine Tochter? Aber wie ...?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_05"); //(wahnsinnig) Du lügst! Sie ist nicht tot. Sie will mich nur nicht wiedersehen, stimmt's?
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_06"); //Sie will ihren Tod bloß vortäuschen, weil ich sie so gedemütigt habe!
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_07"); //Atalante, ich konnte dir doch nichts sagen!
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_08"); //Als ich von dir erfuhr, ließ ich dir alles zukommen, was ich geben konnte.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_09"); //Und doch wolltest du mir nicht glauben an jenem verhängnisvollen Tag.
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_10"); //So langsam durchschaue ich die Angelegenheit.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_11"); //Nein, gar nichts durchschaust du. Niemand, niemand will mich verstehen!
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_12"); //Und nun - hinfort mit dir, dass du dich mit meiner eigenen Tochter gegen mich verbündest!
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_13"); //Ist ja schon gut. Du wirst schon darüber hinwegkommen.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_14"); //Niemals!
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_00"); //Atalante is dead. I'm sorry about that.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_01"); //No! Say that's not true!
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_02"); //She attacked me when I told her about you.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_03"); //My daughter! What have you done to me?!
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_04"); //Your daughter? But how...?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_05"); //You're lying! She's not dead. She just doesn't want to see me again, does she?
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_06"); //She just wants to fake her death because I humiliated her so much!
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_07"); //Atalante, I couldn't tell you anything!
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_08"); //When I found out about you, I sent you everything I could.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_09"); //Yet thou wouldst not believe me on that fateful day.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_10"); //I'm starting to see through the whole thing.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_11"); //No, you don't see through anything. Nobody, nobody wants to understand me!
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_12"); //And now - henceforth, thou hast joined forces with my own daughter against me!
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest12_15_13"); //It's all right, man. You'll get over it.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest12_11_14"); //Never ever!
 
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, LOG_SUCCESS);
 
@@ -930,7 +930,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest13 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest13_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich konnte Atalante nicht finden.";
+	description	= "I couldn't find Atalante.";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest13_Condition()
@@ -945,9 +945,9 @@ FUNC INT Info_Mod_Bosper_LehrlingQuest13_Condition()
 
 FUNC VOID Info_Mod_Bosper_LehrlingQuest13_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest13_15_00"); //Ich konnte Atalante nicht finden.
-	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest13_11_01"); //(niedergeschlagen) Dann ist sie vielleicht doch nicht mehr im Wald. Was mache ich jetzt bloß?
-	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest13_15_02"); //Es tut mir Leid.
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest13_15_00"); //I couldn't find Atalante.
+	AI_Output(self, hero, "Info_Mod_Bosper_LehrlingQuest13_11_01"); //Then maybe she won't be in the woods after all. What am I doing now?
+	AI_Output(hero, self, "Info_Mod_Bosper_LehrlingQuest13_15_02"); //I'm sorry about that.
 
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, LOG_FAILED);
 };
@@ -960,7 +960,7 @@ INSTANCE Info_Mod_Bosper_DragomirFelle (C_INFO)
 	information	= Info_Mod_Bosper_DragomirFelle_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Felle sind von Dragomir. Nicht von mir.";
+	description	= "The skins are Dragomir's. Not from me.";
 };
 
 FUNC INT Info_Mod_Bosper_DragomirFelle_Condition()
@@ -974,19 +974,19 @@ FUNC INT Info_Mod_Bosper_DragomirFelle_Condition()
 
 FUNC VOID Info_Mod_Bosper_DragomirFelle_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_DragomirFelle_15_00"); //Die Felle sind von Dragomir. Nicht von mir.
+	AI_Output(hero, self, "Info_Mod_Bosper_DragomirFelle_15_00"); //The skins are Dragomir's. Not from me.
 
 	B_GiveInvItems	(hero, self, ItMi_Wolfsfelle, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bosper_DragomirFelle_11_01"); //Gut. Wieviel will er?
-	AI_Output(hero, self, "Info_Mod_Bosper_DragomirFelle_15_02"); //Er kassiert, wenn er vorbeikommt.
-	AI_Output(self, hero, "Info_Mod_Bosper_DragomirFelle_11_03"); //Auch gut. Hier, etwas Gold.
+	AI_Output(self, hero, "Info_Mod_Bosper_DragomirFelle_11_01"); //Good. How much does he want?
+	AI_Output(hero, self, "Info_Mod_Bosper_DragomirFelle_15_02"); //He collects when he comes by.
+	AI_Output(self, hero, "Info_Mod_Bosper_DragomirFelle_11_03"); //Good too. Here, some gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_BOSPER_FELLLIEFERUNG, "Habe die Felle abgeliefert.");
+	B_LogEntry	(TOPIC_MOD_BOSPER_FELLLIEFERUNG, "Delivered the skins.");
 	B_SetTopicStatus	(TOPIC_MOD_BOSPER_FELLLIEFERUNG, LOG_SUCCESS);
 
 	CurrentNQ += 1;
@@ -1000,7 +1000,7 @@ INSTANCE Info_Mod_Bosper_Job (C_INFO)
 	information	= Info_Mod_Bosper_Job_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was sind meine Aufgaben als dein Lehrling?";
+	description	= "What are my tasks as your apprentice?";
 };
 
 FUNC INT Info_Mod_Bosper_Job_Condition()
@@ -1013,9 +1013,9 @@ FUNC INT Info_Mod_Bosper_Job_Condition()
 
 FUNC VOID Info_Mod_Bosper_Job_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_Job_15_00"); //Was sind meine Aufgaben als dein Lehrling?
-	AI_Output(self, hero, "Info_Mod_Bosper_Job_11_01"); //Bring mir alle Tierfelle die du findest. Ich Zahl dir für jedes Fell einen guten Preis.
-	AI_Output(self, hero, "Info_Mod_Bosper_Job_11_02"); //Außerdem kann ich dir beibringen wie du Pfeile, Bögen und Armbrüste herstellst.
+	AI_Output(hero, self, "Info_Mod_Bosper_Job_15_00"); //What are my tasks as your apprentice?
+	AI_Output(self, hero, "Info_Mod_Bosper_Job_11_01"); //Bring me all the animal skins you can find. I'll pay you a good price for each coat.
+	AI_Output(self, hero, "Info_Mod_Bosper_Job_11_02"); //I can also teach you how to make arrows, bows and crossbows.
 
 	Mod_PfeileSpitzen	=	0;
 	Mod_PfeileSchnitzen	=	0;
@@ -1029,18 +1029,18 @@ INSTANCE Info_Mod_Bosper_Schnitzen (C_INFO)
 	information	= Info_Mod_Bosper_Schnitzen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir bei Pfeile zu schnitzen (2 LP)";
+	description	= "Bring me arrows to carve (2 LP)";
 };
 
 FUNC INT Info_Mod_Bosper_Schnitzen_Condition()
 {
 	if (Mod_Schwierigkeit == 4)
 	{
-		Info_Mod_Bosper_Schnitzen.description = "Bring mir bei Pfeile zu schnitzen (200 Gold)";
+		Info_Mod_Bosper_Schnitzen.description = "Bring me arrows to carve (200 gold)";
 	}
 	else
 	{
-		Info_Mod_Bosper_Schnitzen.description = "Bring mir bei Pfeile zu schnitzen (2 LP)";
+		Info_Mod_Bosper_Schnitzen.description = "Bring me arrows to carve (2 LP)";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Bosper_Job))
@@ -1053,9 +1053,9 @@ FUNC INT Info_Mod_Bosper_Schnitzen_Condition()
 
 FUNC VOID Info_Mod_Bosper_Schnitzen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_Schnitzen_15_00"); //Bring mir bei Pfeile zu schnitzen.
-	AI_Output(self, hero, "Info_Mod_Bosper_Schnitzen_11_01"); //Ok. Zuerst solltest du dir ein Holzstück bei Thorben kaufen. Dieses nimmst du dann mit an eine Baumsäge und schnitzt es zu etwa 10 Pfeilen.
-	AI_Output(self, hero, "Info_Mod_Bosper_Schnitzen_11_02"); //Dann fügst du den Pfeil mit einer Pfeilspitze an einem Amboss zusammen und fertig ist dein Pfeil.
+	AI_Output(hero, self, "Info_Mod_Bosper_Schnitzen_15_00"); //Teach me to carve arrows.
+	AI_Output(self, hero, "Info_Mod_Bosper_Schnitzen_11_01"); //Okay. First you should buy a piece of wood from Thorben. Then take this to a tree saw and carve it to about 10 arrows.
+	AI_Output(self, hero, "Info_Mod_Bosper_Schnitzen_11_02"); //Then you join the arrow with an arrowhead on an anvil and your arrow is ready.
 
 	if (Mod_Schwierigkeit != 4)
 	{
@@ -1069,7 +1069,7 @@ FUNC VOID Info_Mod_Bosper_Schnitzen_Info()
 	Mod_PfeileSchnitzen	=	1;
 
 	Log_CreateTopic	(TOPIC_MOD_PFEILE, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_PFEILE, "Um Pfeile herzustellen benötige ich Pfeilschäfte. Diese kann ich mir aus Ästen zurechtsägen. Danach muss ich sie am Amboss mit Pfeilspitzen kombinieren. Selbes gilt für Bolzen.");
+	B_LogEntry	(TOPIC_MOD_PFEILE, "To make arrows I need arrow shafts. I can cut them out of branches. Then I have to combine them with arrowheads at the anvil. The same applies to bolts.");
 };
 
 INSTANCE Info_Mod_Bosper_Spitzen (C_INFO)
@@ -1080,7 +1080,7 @@ INSTANCE Info_Mod_Bosper_Spitzen (C_INFO)
 	information	= Info_Mod_Bosper_Spitzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo kann ich lernen Pfeilspitzen zu schmieden?";
+	description	= "Where can I learn to forge arrowheads?";
 };
 
 FUNC INT Info_Mod_Bosper_Spitzen_Condition()
@@ -1093,8 +1093,8 @@ FUNC INT Info_Mod_Bosper_Spitzen_Condition()
 
 FUNC VOID Info_Mod_Bosper_Spitzen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_Spitzen_15_00"); //Wo kann ich lernen Pfeilspitzen zu schmieden?
-	AI_Output(self, hero, "Info_Mod_Bosper_Spitzen_11_01"); //Geh zu Harad. Wenn er dich fragt, wieso er dich unterrichten solle, dann sage ihm, dass ich dich schicke.
+	AI_Output(hero, self, "Info_Mod_Bosper_Spitzen_15_00"); //Where can I learn to forge arrowheads?
+	AI_Output(self, hero, "Info_Mod_Bosper_Spitzen_11_01"); //Go to Harad. If he asks you why he should teach you, tell him I'm sending you.
 };
 
 INSTANCE Info_Mod_Bosper_OtherHunters (C_INFO)
@@ -1105,7 +1105,7 @@ INSTANCE Info_Mod_Bosper_OtherHunters (C_INFO)
 	information	= Info_Mod_Bosper_OtherHunters_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo finde ich hier andere Jäger?";
+	description	= "Where can I find other hunters here?";
 };
 
 FUNC INT Info_Mod_Bosper_OtherHunters_Condition()
@@ -1119,15 +1119,15 @@ FUNC INT Info_Mod_Bosper_OtherHunters_Condition()
 
 FUNC VOID Info_Mod_Bosper_OtherHunters_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_OtherHunters_15_00"); //Wo finde ich hier andere Jäger?
-	AI_Output(self, hero, "Info_Mod_Bosper_OtherHunters_11_01"); //Wenn du aus dem Osttor gehst, kommst du zu Orlans Taverne.
-	AI_Output(self, hero, "Info_Mod_Bosper_OtherHunters_11_02"); //Da in der Nähe ist das Jägerlager. Der Anführer heißt Dragomir.
-	AI_Output(self, hero, "Info_Mod_Bosper_OtherHunters_11_03"); //Ihm kannst du einen schönen Gruß ausrichten, ich brauche wieder Felle. Jetzt zum Winter hin steigt die Nachfrage.
-	AI_Output(hero, self, "Info_Mod_Bosper_OtherHunters_15_04"); //Mach ich doch.
+	AI_Output(hero, self, "Info_Mod_Bosper_OtherHunters_15_00"); //Where can I find other hunters here?
+	AI_Output(self, hero, "Info_Mod_Bosper_OtherHunters_11_01"); //If you leave the east gate, you'll come to Orlan's tavern.
+	AI_Output(self, hero, "Info_Mod_Bosper_OtherHunters_11_02"); //There's the hunting camp nearby. The leader's name is Dragomir.
+	AI_Output(self, hero, "Info_Mod_Bosper_OtherHunters_11_03"); //Give him a nice greeting, I need some fur again. Now, as winter approaches, demand is rising.
+	AI_Output(hero, self, "Info_Mod_Bosper_OtherHunters_15_04"); //I'm doing it.
 	
 	Log_CreateTopic	(TOPIC_MOD_BOSPER_FELLLIEFERUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BOSPER_FELLLIEFERUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BOSPER_FELLLIEFERUNG, "Sollte ich beim Jägerlager in der Nähe von Orlans Taverne vorbeikommen und Dragomir ausrichten, dass Bosper wieder eine Felllieferung gebrauchen könnte.");
+	B_LogEntry	(TOPIC_MOD_BOSPER_FELLLIEFERUNG, "Should I stop by the hunting camp near Orlans Tavern and tell Dragomir that Bosper could use another coat delivery.");
 };
 
 INSTANCE Info_Mod_Bosper_Anschlagtafel (C_INFO)
@@ -1138,7 +1138,7 @@ INSTANCE Info_Mod_Bosper_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Bosper_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "I saw your poster on the billboard...";
 };
 
 FUNC INT Info_Mod_Bosper_Anschlagtafel_Condition()
@@ -1175,12 +1175,12 @@ FUNC VOID Info_Mod_Bosper_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItAt_ShadowHorn, Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferhorn);
 		Npc_RemoveInvItems	(hero, ItMi_Ast, Mod_Anschlagtafel_Khorinis_Bosper_Ast);
 
-		AI_Output(self, hero, "Info_Mod_Bosper_Anschlagtafel_11_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Bosper_Anschlagtafel_11_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Bosper_Anschlagtafel_11_00"); //What? Show me... In fact, all of it. Very well done.
+		AI_Output(self, hero, "Info_Mod_Bosper_Anschlagtafel_11_01"); //Here's your reward.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Bosper_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Bosper_Anschlagtafel_11_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Bosper_Anschlagtafel_11_02"); //Nice doing business with you.
 
 		if (Mod_Anschlagtafel_Khorinis_Bosper_Gold < 200)
 		{
@@ -1220,7 +1220,7 @@ INSTANCE Info_Mod_Bosper_MehrFelle (C_INFO)
 	information	= Info_Mod_Bosper_MehrFelle_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich hab hier ein paar Felle für dich ...";
+	description	= "I got some skins here for you....";
 };
 
 FUNC INT Info_Mod_Bosper_MehrFelle_Condition()
@@ -1233,7 +1233,7 @@ FUNC INT Info_Mod_Bosper_MehrFelle_Condition()
 
 FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_MehrFelle_15_00"); //Ich hab hier ein paar Felle für dich.
+	AI_Output(hero, self, "Info_Mod_Bosper_MehrFelle_15_00"); //I got some skins for you.
 
 	CreateInvItems	(self, ItMi_Gold, 1000000);
 
@@ -1279,7 +1279,7 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		|| (Npc_HasItems(hero, ItAt_Addon_KeilerFur_Rein) > 0)
 		|| (Npc_HasItems(hero, ItAt_Addon_KeilerFur_Feuer) > 0)
 		{
-			AI_Output(self, hero, "Info_Mod_Bosper_MehrFelle_11_01"); //Das Fell von Keilern. Starke Biester sind das.
+			AI_Output(self, hero, "Info_Mod_Bosper_MehrFelle_11_01"); //The fur of wedges. They're strong beasts.
 
 			FellCounter = Npc_HasItems(hero, ItAt_Addon_KeilerFur);
 
@@ -1301,8 +1301,8 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		|| (Npc_HasItems(hero, ItAt_SheepFur_Rein) > 0)
 		|| (Npc_HasItems(hero, ItAt_SheepFur_Feuer) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_02"); //Schafsfell? Du hast doch nicht etwa bei irgendeinem Bauern die Schafe auf der Weide abgeschlachtet?
-			AI_Output (hero, self, "Info_Mod_Bosper_MehrFelle_15_03"); //Würde mir nie im Traum einfallen ...
+			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_02"); //Sheepskin? You didn't slaughter the sheep in the fields at some farmer's, did you?
+			AI_Output (hero, self, "Info_Mod_Bosper_MehrFelle_15_03"); //I'd never dream of it....
 
 			B_GiveInvItems(self, hero, ItMi_Gold, (Npc_HasItems(hero, ItAt_SheepFur) * Value_SheepFur) );
 			B_GiveInvItems(hero, self, ItAt_SheepFur, Npc_HasItems(hero, ItAt_SheepFur));
@@ -1318,7 +1318,7 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		|| (Npc_HasItems(hero, ItAt_ZiegenFur_Rein) > 0)
 		|| (Npc_HasItems(hero, ItAt_ZiegenFur_Feuer) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_04"); //Ziegenfelle, gute Ware ...
+			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_04"); //Goatskins, good quality...
 
 			B_GiveInvItems(self, hero, ItMi_Gold, (Npc_HasItems(hero, ItAt_ZiegenFur) * Value_ZiegenFur) );
 			B_GiveInvItems(hero, self, ItAt_ZiegenFur, Npc_HasItems(hero, ItAt_ZiegenFur));
@@ -1334,7 +1334,7 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		|| (Npc_HasItems(hero, ItAt_WolfFur_Rein) > 0)
 		|| (Npc_HasItems(hero, ItAt_WolfFur_Feuer) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_05"); //Wolfsfell, das ist gut...
+			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_05"); //Wolf fur, that's good...
 
 			B_GiveInvItems(self, hero, ItMi_Gold, (Npc_HasItems(other, ItAt_WolfFur) * Value_WolfFur) );
 			B_GiveInvItems(hero, self, ItAt_WolfFur, Npc_HasItems(other, ItAt_WolfFur));
@@ -1350,7 +1350,7 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		|| (Npc_HasItems(hero, ItAt_BlackwolfFur_Rein) > 0)
 		|| (Npc_HasItems(hero, ItAt_BlackwolfFur_Feuer) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_06"); //Schwarze Wolfsfelle, sehr schön...
+			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_06"); //Black wolf skins, very beautiful...
 
 			B_GiveInvItems(self, hero, ItMi_Gold, (Npc_HasItems(other, ItAt_BlackwolfFur) * Value_BlackwolfFur) );
 			B_GiveInvItems(hero, self, ItAt_BlackwolfFur, Npc_HasItems(other, ItAt_BlackwolfFur));
@@ -1366,7 +1366,7 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		|| (Npc_HasItems(hero, ItAt_WargFur_Rein) > 0)
 		|| (Npc_HasItems(hero, ItAt_WargFur_Feuer) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_07"); //Fell von Wargen? Zähe Biester sind das ...
+			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_07"); //Wargen's fur? Tough beasts are those...
 
 			B_GiveInvItems(self, hero, ItMi_Gold, (Npc_HasItems(other, ItAt_WargFur) * Value_WargFur) );
 			B_GiveInvItems(hero, self, ItAt_WargFur, Npc_HasItems(other, ItAt_WargFur));
@@ -1385,7 +1385,7 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		|| (Npc_HasItems(hero, ItAt_StonePumaFur_Rein) > 0)
 		|| (Npc_HasItems(hero, ItAt_StonePumaFur_Feuer) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_08"); //Pumafell? Feine Sache ...
+			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_08"); //Puma fur? Fine thing...
 
 			FellCounter = Npc_HasItems(hero, ItAt_PumaFur);
 			FellCounter += Npc_HasItems(hero, ItAt_StonePumaFur);
@@ -1413,7 +1413,7 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		|| (Npc_HasItems(hero, ItAt_OrcdogFur_Rein) > 0)
 		|| (Npc_HasItems(hero, ItAt_OrcdogFur_Feuer) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_09"); //Fell von Orkhunden? Zähe Biester sind das ...
+			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_09"); //Fur of hurricanes? Tough beasts are those...
 
 			B_GiveInvItems(self, hero, ItMi_Gold, (Npc_HasItems(other, ItAt_OrcdogFur) * Value_WargFur) );
 			B_GiveInvItems(hero, self, ItAt_OrcdogFur, Npc_HasItems(other, ItAt_OrcdogFur));
@@ -1430,7 +1430,7 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		|| (Npc_HasItems(hero, ItAt_ShadowFur_Rein) > 0)
 		|| (Npc_HasItems(hero, ItAt_ShadowFur_Feuer) > 0))
 		{
-			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_10"); //Ah, sogar das Fell eines Schattenläufers - ist 'ne Menge wert.
+			AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_10"); //Ah, even the fur of a shadow-runner - is worth a lot.
 
 			FellCounter = Npc_HasItems(hero, ItAt_ShadowFur);
 
@@ -1457,16 +1457,16 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 		{
 			if (Mod_TrollfellBosper == FALSE)
 			{
-				AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_11"); //Was zur Hölle ist DAS für ein Fell?
-				AI_Output (hero, self, "Info_Mod_Bosper_MehrFelle_15_12"); //Das hab ich einem Troll über die Ohren gezogen.
-				AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_13"); //Das ... das ist ein halbes Vermögen wert ...
+				AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_11"); //What the hell is that for fur?
+				AI_Output (hero, self, "Info_Mod_Bosper_MehrFelle_15_12"); //That's what I put it on a troll.
+				AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_13"); //That... that's worth half a fortune....
 
 				Mod_TrollfellBosper == TRUE;
 			}
 			else //TRUE
 			{
-				AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_14"); //Schon wieder so ein riesiges Trollfell ... machst du Jagd auf die Viecher?
-				AI_Output (hero, self, "Info_Mod_Bosper_MehrFelle_15_15"); //Wenn mir mal einer begegnet, nutze ich die Gelegenheit ...
+				AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_14"); //Again such a huge troll fur... do you hunt the creatures?
+				AI_Output (hero, self, "Info_Mod_Bosper_MehrFelle_15_15"); //If I meet anyone, I'll take the opportunity...
 			};
 			
 			if (Npc_HasItems(hero, ItAt_TrollFur) > 0)
@@ -1487,7 +1487,7 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 			|| (Npc_HasItems(hero, ItAt_TrollBlackFur_Rein) > 0)
 			|| (Npc_HasItems(hero, ItAt_TrollBlackFur_Feuer) > 0)
 			{
-				AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_16"); //Sogar das Fell eines schwarzen Trolls!
+				AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_16"); //Even the fur of a black troll!
 
 				B_GiveInvItems(self, hero, ItMi_Gold, (Npc_HasItems(other, ItAt_TrollBlackFur) * Value_TrollBlackFur) );
 				B_GiveInvItems(hero, self, ItAt_TrollBlackFur, Npc_HasItems(other, ItAt_TrollBlackFur));
@@ -1500,11 +1500,11 @@ FUNC VOID Info_Mod_Bosper_MehrFelle_Info()
 			};
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_17"); //Gute Arbeit. Wenn du mehr hast, komm zu mir zurück ...
+		AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_17"); //Good work. If you have more, come back to me...
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_18"); //Du weißt doch - ich bin nur an Fellen von Wölfen, Schattenläufern und dergleichen interessiert ...
+		AI_Output (self, hero, "Info_Mod_Bosper_MehrFelle_11_18"); //You know - I'm only interested in skins of wolves, shadow runners and the like...
 	};
 };
 
@@ -1516,7 +1516,7 @@ INSTANCE Info_Mod_Bosper_HandelstJetzt (C_INFO)
 	information	= Info_Mod_Bosper_HandelstJetzt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Handelst du jetzt mit mir?";
+	description	= "Are you trading with me now?";
 };
 
 FUNC INT Info_Mod_Bosper_HandelstJetzt_Condition()
@@ -1529,11 +1529,11 @@ FUNC INT Info_Mod_Bosper_HandelstJetzt_Condition()
 
 FUNC VOID Info_Mod_Bosper_HandelstJetzt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bosper_HandelstJetzt_15_00"); //Handelst du jetzt mit mir?
-	AI_Output(self, hero, "Info_Mod_Bosper_HandelstJetzt_11_01"); //Meinetwegen.
+	AI_Output(hero, self, "Info_Mod_Bosper_HandelstJetzt_15_00"); //Are you trading with me now?
+	AI_Output(self, hero, "Info_Mod_Bosper_HandelstJetzt_11_01"); //I don't care about him.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Bosper verkauft Bögen und Armbrüste.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Bosper sells arches and crossbows.");
 };
 
 INSTANCE Info_Mod_Bosper_Trade (C_INFO)

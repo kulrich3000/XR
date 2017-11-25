@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Fantrek_Hi_Condition()
 
 FUNC VOID Info_Mod_Fantrek_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fantrek_Hi_14_00"); //(lacht) Du bist zu spät, die anderen sind bereits weiter gezogen, und ich besitze den Almanach. Du bist weit gekommen, doch an mir wirst du scheitern!
-	AI_Output(hero, self, "Info_Mod_Fantrek_Hi_15_01"); //Kommen wir zur Sache!
-	AI_Output(self, hero, "Info_Mod_Fantrek_Hi_14_02"); //Wie du willst!
+	AI_Output(self, hero, "Info_Mod_Fantrek_Hi_14_00"); //(laughs) You're too late, the others have already moved on, and I own the almanac. You have come far, but you will fail because of me!
+	AI_Output(hero, self, "Info_Mod_Fantrek_Hi_15_01"); //Let's get down to brass tacks!
+	AI_Output(self, hero, "Info_Mod_Fantrek_Hi_14_02"); //Suit yourself!
 
 	CreateInvItems	(self, ItWr_AxtAlmanach_03, 1);
 

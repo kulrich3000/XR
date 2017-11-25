@@ -1,7 +1,7 @@
 instance Mod_7807_OUT_Aerwak_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ärwak"; 
+	name 		= "jungle"; 
 	guild 		= GIL_OUT;
 	id 			= 7807;
 	voice 		= 1;

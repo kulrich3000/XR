@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HSBauer_01_Hi (C_INFO)
 	information	= Info_Mod_HSBauer_01_Hi_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was baut ihr da an?";
+	description	= "What are you growing?";
 };
 
 FUNC INT Info_Mod_HSBauer_01_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_HSBauer_01_Hi_Condition()
 
 FUNC VOID Info_Mod_HSBauer_01_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_01_Hi_15_00"); //Was baut ihr da an?
-	AI_Output(self, hero, "Info_Mod_HSBauer_01_Hi_05_01"); //Oma?
-	AI_Output(hero, self, "Info_Mod_HSBauer_01_Hi_15_02"); //War das eine Antwort oder eine Frage?
-	AI_Output(self, hero, "Info_Mod_HSBauer_01_Hi_05_03"); //Zu fuﬂ ...
+	AI_Output(hero, self, "Info_Mod_HSBauer_01_Hi_15_00"); //What are you growing?
+	AI_Output(self, hero, "Info_Mod_HSBauer_01_Hi_05_01"); //Granny?
+	AI_Output(hero, self, "Info_Mod_HSBauer_01_Hi_15_02"); //Was that an answer or a question?
+	AI_Output(self, hero, "Info_Mod_HSBauer_01_Hi_05_03"); //On foot...
 	AI_Output(hero, self, "Info_Mod_HSBauer_01_Hi_15_04"); //...
 };
 

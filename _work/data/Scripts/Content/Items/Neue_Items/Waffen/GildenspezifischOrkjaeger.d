@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_Orkschlaechter (C_Item)
 {	
-	name 				=	"Orkschlächter";  
+	name 				=	"Orc Slayer";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -26,7 +26,7 @@ INSTANCE ItMw_Orkschlaechter (C_Item)
 };
 INSTANCE ItMw_Orkschlaechter_Geschaerft (C_Item)
 {	
-	name 				=	"Orkschlächter (geschärft)";  
+	name 				=	"Orcslaughterers (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -52,7 +52,7 @@ INSTANCE ItMw_Orkschlaechter_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03 (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge";
+	name 				=	"Ore Battle Blade";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -80,7 +80,7 @@ INSTANCE ItMw_1H_Special_03 (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge (geschärft)";
+	name 				=	"Ore Battle Blade (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -108,7 +108,7 @@ INSTANCE ItMw_1H_Special_03_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Special_03 (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge";
+	name 				=	"Heavy Ore Battle Blade";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -138,7 +138,7 @@ INSTANCE ItMw_2H_Special_03 (C_Item)
 
 INSTANCE ItMw_2H_Special_03_Geschaerft (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge (geschärft)";
+	name 				=	"Heavy Ore Battle Blade (Sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -170,7 +170,7 @@ INSTANCE ItMw_2H_Special_03_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkpickser (C_Item)
 {	
-	name 				=	"Orkpiekser";  
+	name 				=	"orcish piper";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -197,7 +197,7 @@ INSTANCE ItMw_Orkpickser (C_Item)
 };
 INSTANCE ItMw_Orkpickser_Geschaerft (C_Item)
 {	
-	name 				=	"Orkpiekser (geschärft)";  
+	name 				=	"Orcpiekser (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -228,7 +228,7 @@ INSTANCE ItMw_Orkpickser_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher";
+	name 				=	"Ore butcher";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -256,7 +256,7 @@ INSTANCE ItMw_1H_Special_03_Dex (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher (geschärft)";
+	name 				=	"Ore butcher's knife (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -286,7 +286,7 @@ INSTANCE ItMw_1H_Special_03_Dex_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkschlaechter_Wasser (C_Item)
 {	
-	name 				=	"Orkschlächter des Wasserhiebes";  
+	name 				=	"Orcslaughterer of the Water Slash";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -310,7 +310,7 @@ INSTANCE ItMw_Orkschlaechter_Wasser (C_Item)
 };
 INSTANCE ItMw_Orkschlaechter_Wasser_Geschaerft (C_Item)
 {	
-	name 				=	"Orkschlächter des Wasserhiebes (geschärft)";  
+	name 				=	"Orcslaughterers of the Water Slash (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -336,7 +336,7 @@ INSTANCE ItMw_Orkschlaechter_Wasser_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Wasser (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge des Wasserhiebes";
+	name 				=	"Water Slash Ore Battle Blade";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -364,7 +364,7 @@ INSTANCE ItMw_1H_Special_03_Wasser (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Wasser_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge des Wasserhiebes (geschärft)";
+	name 				=	"Water Blade Ore Battle Blade (Sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -392,7 +392,7 @@ INSTANCE ItMw_1H_Special_03_Wasser_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Special_03_Wasser (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge des Wasserhiebes";
+	name 				=	"Heavy Ore Battle Blade of Water Slash";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -422,7 +422,7 @@ INSTANCE ItMw_2H_Special_03_Wasser (C_Item)
 
 INSTANCE ItMw_2H_Special_03_Wasser_Geschaerft (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge des Wasserhiebes (geschärft)";
+	name 				=	"Heavy Ore Battle Blade of Water Slash (Sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -452,7 +452,7 @@ INSTANCE ItMw_2H_Special_03_Wasser_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkpickser_Wasser (C_Item)
 {	
-	name 				=	"Orkpiekser des Wasserhiebes";  
+	name 				=	"Orkpiekser of the Water Slash";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -479,7 +479,7 @@ INSTANCE ItMw_Orkpickser_Wasser (C_Item)
 };
 INSTANCE ItMw_Orkpickser_Wasser_Geschaerft (C_Item)
 {	
-	name 				=	"Orkpiekser des Wasserhiebes (geschärft)";  
+	name 				=	"Orkpiekser of the water stroke (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -507,7 +507,7 @@ INSTANCE ItMw_Orkpickser_Wasser_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Wasser (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher des Wasserhiebes";
+	name 				=	"Ore butcher's knife of the water cut";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -535,7 +535,7 @@ INSTANCE ItMw_1H_Special_03_Dex_Wasser (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Wasser_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher des Wasserhiebes (geschärft)";
+	name 				=	"Ore butcher's knife of the water cut (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -565,7 +565,7 @@ INSTANCE ItMw_1H_Special_03_Dex_Wasser_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkschlaechter_Feuer (C_Item)
 {	
-	name 				=	"Orkschlächter des Versengens";  
+	name 				=	"scorching orc butcher";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -589,7 +589,7 @@ INSTANCE ItMw_Orkschlaechter_Feuer (C_Item)
 };
 INSTANCE ItMw_Orkschlaechter_Feuer_Geschaerft (C_Item)
 {	
-	name 				=	"Orkschlächter des Versengens (geschärft)";  
+	name 				=	"Orcslaughterer of scorching (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -615,7 +615,7 @@ INSTANCE ItMw_Orkschlaechter_Feuer_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Feuer (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge des Versengens";
+	name 				=	"Searing Ore Battle Blade";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -643,7 +643,7 @@ INSTANCE ItMw_1H_Special_03_Feuer (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Feuer_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge des Versengens (geschärft)";
+	name 				=	"Battle ore blade of scorching (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -671,7 +671,7 @@ INSTANCE ItMw_1H_Special_03_Feuer_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Special_03_Feuer (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge des Versengens";
+	name 				=	"Heavy Ore Battle Blade of Searing";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -701,7 +701,7 @@ INSTANCE ItMw_2H_Special_03_Feuer (C_Item)
 
 INSTANCE ItMw_2H_Special_03_Feuer_Geschaerft (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge des Versengens (geschärft)";
+	name 				=	"Heavy Searing Ore Battle Blade (Sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -731,7 +731,7 @@ INSTANCE ItMw_2H_Special_03_Feuer_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkpickser_Feuer (C_Item)
 {	
-	name 				=	"Orkpiekser des Versengens";  
+	name 				=	"scorchers";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -758,7 +758,7 @@ INSTANCE ItMw_Orkpickser_Feuer (C_Item)
 };
 INSTANCE ItMw_Orkpickser_Feuer_Geschaerft (C_Item)
 {	
-	name 				=	"Orkpiekser des Versengens (geschärft)";  
+	name 				=	"Orcpiekser of scorching (sharpened)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -786,7 +786,7 @@ INSTANCE ItMw_Orkpickser_Feuer_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Feuer (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher des Versengens";
+	name 				=	"Scorching ore butcher's knife";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -814,7 +814,7 @@ INSTANCE ItMw_1H_Special_03_Dex_Feuer (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Feuer_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher des Versengens (geschärft)";
+	name 				=	"Ore butcher's knife of scorching (sharpened)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

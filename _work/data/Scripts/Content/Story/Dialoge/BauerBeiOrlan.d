@@ -18,7 +18,7 @@ FUNC INT Info_Mod_BauerBeiOrlan_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_BauerBeiOrlan_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_BauerBeiOrlan_Daemonisch_07_00"); //Ja, dort setze ich nie mehr einen Fuﬂ hinein.
+	AI_Output(self, hero, "Info_Mod_BauerBeiOrlan_Daemonisch_07_00"); //Yeah, I'll never set foot in there again.
 
 	AI_StopProcessInfos	(self);
 

@@ -38,7 +38,7 @@ FUNC VOID B_Say_Smalltalk_Fremdgang ()
 
 		Mod_Smalltalk_Fremdgang = 6;
 
-		B_LogEntry	(TOPIC_MOD_ASS_FELICITA, "Felicitas' Verdacht hat sich bestätigt. Ob sie das wohl freuen wird?");
+		B_LogEntry	(TOPIC_MOD_ASS_FELICITA, "Felicitas' suspicion has been confirmed. I wonder if she'll like that.");
 
 		Mod_ASS_Felicita = 1;
 	};

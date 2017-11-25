@@ -30,7 +30,7 @@ func int Info_Mod_TemplerTempelwache_FirstWarn_Condition()
 
 func void Info_Mod_TemplerTempelwache_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_TemplerTempelwache_FirstWarn_13_00"); //HALT! Nur Angehörige des Lagers dürfen den Tempel betreten.
+	AI_Output (self, hero,"Info_Mod_TemplerTempelwache_FirstWarn_13_00"); //HALT! Only members of the camp may enter the temple.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, TemplerTempelwache_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -63,7 +63,7 @@ FUNC INT Info_Mod_TemplerTempelwache_SecondWarn_Condition()
 
 func void Info_Mod_TemplerTempelwache_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_TemplerTempelwache_SecondWarn_13_00"); //Ich sag's dir zum letzten Mal. Einen Schritt weiter und du begibst dich in die Welt des Schmerzes!
+	AI_Output (self, hero,"Info_Mod_TemplerTempelwache_SecondWarn_13_00"); //I'll tell you one last time. One more step and you'll enter the world of pain!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,TemplerTempelwache_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -101,7 +101,7 @@ func void Info_Mod_TemplerTempelwache_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_TemplerTempelwache_Attack_13_00"); //Du hast es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_TemplerTempelwache_Attack_13_00"); //You asked for it...
 
 	AI_StopProcessInfos	(self);	
 

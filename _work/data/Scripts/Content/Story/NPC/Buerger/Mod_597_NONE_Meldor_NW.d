@@ -1,7 +1,7 @@
 instance Mod_597_NONE_Meldor_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Meldor";
+	name 		= "notifier";
 	guild 		= GIL_PAL;
 	id 			= 597;
 	voice 		= 7;

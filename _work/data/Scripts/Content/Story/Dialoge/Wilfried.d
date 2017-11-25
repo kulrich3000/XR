@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wilfried_Hi_Condition()
 
 FUNC VOID Info_Mod_Wilfried_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hi_08_00"); //(aufgebracht) Es ist zum Verzweifeln! Ich suche schon den ganzen Tag!
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hi_08_00"); //It's desperate! I've been looking all day!
 };
 
 INSTANCE Info_Mod_Wilfried_WhatHappened (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Wilfried_WhatHappened (C_INFO)
 	information	= Info_Mod_Wilfried_WhatHappened_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was suchst du?";
+	description	= "What are you looking for?";
 };
 
 FUNC INT Info_Mod_Wilfried_WhatHappened_Condition()
@@ -39,12 +39,12 @@ FUNC INT Info_Mod_Wilfried_WhatHappened_Condition()
 
 FUNC VOID Info_Mod_Wilfried_WhatHappened_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_WhatHappened_15_00"); //Was suchst du?
-	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_01"); //Meinen Geldbeutel! Ich bin mir sicher, dass ich ihn gestern noch bei mir hatte ...
-	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_02"); //Ja, ich habe schließlich für das Bier bezahlt, bevor ich von der Kneipe nach Hause ging.
-	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_03"); //Aber dann... ich muss ihn verloren haben, anders kann ich es mir nicht erklären.
-	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_04"); //Das ganze Haus habe ich danach abgesucht - nichts!
-	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_05"); //Auf dem Heimweg, ja, auf dem Heimweg muss er aus meiner Tasche gefallen sein...
+	AI_Output(hero, self, "Info_Mod_Wilfried_WhatHappened_15_00"); //What are you looking for?
+	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_01"); //My wallet! I'm sure I had him with me yesterday....
+	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_02"); //Yeah, I finally paid for the beer before I went home from the pub.
+	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_03"); //But then... I must have lost him, otherwise I can't explain it.
+	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_04"); //I searched the whole house for it - nothing!
+	AI_Output(self, hero, "Info_Mod_Wilfried_WhatHappened_08_05"); //On the way home, yes, on the way home he must have fallen out of my pocket....
 };
 
 INSTANCE Info_Mod_Wilfried_Hilfe (C_INFO)
@@ -55,7 +55,7 @@ INSTANCE Info_Mod_Wilfried_Hilfe (C_INFO)
 	information	= Info_Mod_Wilfried_Hilfe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich dir bei der Suche helfen?";
+	description	= "Can I help you find it?";
 };
 
 FUNC INT Info_Mod_Wilfried_Hilfe_Condition()
@@ -68,12 +68,12 @@ FUNC INT Info_Mod_Wilfried_Hilfe_Condition()
 
 FUNC VOID Info_Mod_Wilfried_Hilfe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_Hilfe_15_00"); //Kann ich dir bei der Suche helfen?
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hilfe_08_01"); //Jeden Tag eine gute Tat, was? Klar würde es mich freuen, wenn du mir zur Hand gehen könntest. Du weißt ja ... die Knochen im Alter. (lacht)
-	AI_Output(hero, self, "Info_Mod_Wilfried_Hilfe_15_02"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hilfe_08_03"); //Also, das Haus habe ich schon auf den Kopf gestellt, hier ist der Beutel nicht. Darauf würde ich alles verwetten, was ich noch habe. (lacht)
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hilfe_08_04"); //Aber draußen war ich heute noch nicht. Du kennst die Kneipe?
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hilfe_08_05"); //Am besten, du suchst den Weg auf beiden Seiten ab, man weiß ja nie, wo er gelandet sein kann ... hoffentlich hat ihn noch niemand anderes gefunden.
+	AI_Output(hero, self, "Info_Mod_Wilfried_Hilfe_15_00"); //Can I help you find it?
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hilfe_08_01"); //A good deed every day, huh? Of course, I'd appreciate it if you could give me a hand. You know.... the bones in old age. (laughs)
+	AI_Output(hero, self, "Info_Mod_Wilfried_Hilfe_15_02"); //What do you want me to do?
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hilfe_08_03"); //Well, I've already turned the house upside down, there's no bag here. I'll bet you anything I have left. (laughs)
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hilfe_08_04"); //But I haven't been outside today. You know the pub?
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hilfe_08_05"); //The best thing to do is to look for the way on both sides, you never know where he might have landed... I hope no one else has found him yet.
 };
 
 INSTANCE Info_Mod_Wilfried_Ok (C_INFO)
@@ -84,7 +84,7 @@ INSTANCE Info_Mod_Wilfried_Ok (C_INFO)
 	information	= Info_Mod_Wilfried_Ok_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mal sehen, was sich so finden lässt.";
+	description	= "Let's see what we can find.";
 };
 
 FUNC INT Info_Mod_Wilfried_Ok_Condition()
@@ -98,15 +98,15 @@ FUNC INT Info_Mod_Wilfried_Ok_Condition()
 
 FUNC VOID Info_Mod_Wilfried_Ok_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_Ok_15_00"); //Mal sehen, was sich so finden lässt.
-	AI_Output(self, hero, "Info_Mod_Wilfried_Ok_08_01"); //Nett von dir. (verschwörerisch) Ach, bevor ich es vergesse: Du musst ja nicht jedem von meinem Dilemma erzählen, reicht doch, wenn wir beide davon wissen, oder?
-	AI_Output(hero, self, "Info_Mod_Wilfried_Ok_15_02"); //Was springt für mich als Belohnung heraus?
-	AI_Output(self, hero, "Info_Mod_Wilfried_Ok_08_03"); //Als Belohnung könnte ich dir ein Zehntel des Goldes anbieten, das du in dem Beutel findest.
-	AI_Output(self, hero, "Info_Mod_Wilfried_Ok_08_04"); //(schelmisch) Ehrlichkeit wird bei mir belohnt, das wirst du schon noch merken.
+	AI_Output(hero, self, "Info_Mod_Wilfried_Ok_15_00"); //Let's see what we can find.
+	AI_Output(self, hero, "Info_Mod_Wilfried_Ok_08_01"); //Nice of you. (Conspiratorial) Oh, before I forget: You don't have to tell everyone about my dilemma, is it enough if we both know about it, right?
+	AI_Output(hero, self, "Info_Mod_Wilfried_Ok_15_02"); //What's in it for me as a reward?
+	AI_Output(self, hero, "Info_Mod_Wilfried_Ok_08_03"); //As a reward, I could offer you a tenth of the gold you'll find in that bag.
+	AI_Output(self, hero, "Info_Mod_Wilfried_Ok_08_04"); //I'm rewarded for honesty, you'll find out.
 
 	Log_CreateTopic	(TOPIC_MOD_WILFRIED_GOLD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_WILFRIED_GOLD, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Der alte Wilfried hat mich gebeten, für ihn auf dem Weg von seinem Haus zur Kneipe nach seinem verlorenen Geldbeutel zu suchen. Als Belohnung winken ein Zehntel des Betrags, der in dem Geldbeutel verblieben ist. Eine Bedingung ist jedoch, dass ich niemandem von dem Vorfall erzähle.");
+	B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Old Wilfried asked me to look for his lost purse on the way from his house to the pub. The reward is a tenth of the amount left in the purse. One condition, however, is that I do not tell anyone about the incident.");
 
 	Wld_InsertItem	(ItSe_WilfriedsBeutel, "FP_ITEM_WILFRIED");
 };
@@ -119,7 +119,7 @@ INSTANCE Info_Mod_Wilfried_No (C_INFO)
 	information	= Info_Mod_Wilfried_No_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Drecksarbeit kannst du anderen aufhalsen.";
+	description	= "You can give the dirty work to others.";
 };
 
 FUNC INT Info_Mod_Wilfried_No_Condition()
@@ -133,8 +133,8 @@ FUNC INT Info_Mod_Wilfried_No_Condition()
 
 FUNC VOID Info_Mod_Wilfried_No_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_No_15_00"); //Die Drecksarbeit kannst du anderen aufhalsen.
-	AI_Output(self, hero, "Info_Mod_Wilfried_No_08_01"); //Hey, ich hab' dich zu nichts gezwungen. Aber lass' mich wenigstens in Ruhe mit deiner schlechten Laune!
+	AI_Output(hero, self, "Info_Mod_Wilfried_No_15_00"); //You can give the dirty work to others.
+	AI_Output(self, hero, "Info_Mod_Wilfried_No_08_01"); //Hey, I didn't make you do anything. But at least leave me alone with your bad mood!
 };
 
 INSTANCE Info_Mod_Wilfried_HabBeutel (C_INFO)
@@ -159,24 +159,24 @@ FUNC INT Info_Mod_Wilfried_HabBeutel_Condition()
 
 FUNC VOID Info_Mod_Wilfried_HabBeutel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_08_00"); //Da bist du ja wieder! Ist deine Suche erfolgreich verlaufen?
-	AI_Output(hero, self, "Info_Mod_Wilfried_HabBeutel_15_01"); //Wie man's nimmt. Den Geldbeutel habe ich gefunden, aber ... sieh selbst.
+	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_08_00"); //There you are again! Has your search been successful?
+	AI_Output(hero, self, "Info_Mod_Wilfried_HabBeutel_15_01"); //How to take it. I found the purse, but.... see for yourself.
 
 	B_GiveInvItems	(hero, self, ItSe_WilfriedsBeutel, 1);
 	Npc_RemoveInvItems(self, ItSe_WilfriedsBeutel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_08_02"); //(entsetzt) Nein! Das kann nicht dein Ernst sein... du hast es gestohlen!
+	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_08_02"); //(displaced) No! You can't be serious.... you stole it!
 
 	Info_ClearChoices	(Info_Mod_Wilfried_HabBeutel);
 
-	Info_AddChoice	(Info_Mod_Wilfried_HabBeutel, "Das stimmt... das Geld habe ich an mich genommen (...)", Info_Mod_Wilfried_HabBeutel_Ja);
-	Info_AddChoice	(Info_Mod_Wilfried_HabBeutel, "Wieso hätte ich dann zu dir zurückkehren sollen?", Info_Mod_Wilfried_HabBeutel_Nein);
+	Info_AddChoice	(Info_Mod_Wilfried_HabBeutel, "That's right... I took the money to myself (.... )", Info_Mod_Wilfried_HabBeutel_Ja);
+	Info_AddChoice	(Info_Mod_Wilfried_HabBeutel, "Then why would I go back to you?", Info_Mod_Wilfried_HabBeutel_Nein);
 };
 
 FUNC VOID Info_Mod_Wilfried_HabBeutel_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_HabBeutel_Ja_15_00"); //Das stimmt... das Geld habe ich an mich genommen, und du wirst nichts mehr davon wiedersehen!
-	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Ja_08_01"); //Na warte, du Dreckskerl!
+	AI_Output(hero, self, "Info_Mod_Wilfried_HabBeutel_Ja_15_00"); //That's right... I took the money, and you won't see any of it again!
+	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Ja_08_01"); //Wait, you son of a bitch!
 
 	Info_ClearChoices	(Info_Mod_Wilfried_HabBeutel);
 
@@ -191,15 +191,15 @@ FUNC VOID Info_Mod_Wilfried_HabBeutel_Ja()
 
 FUNC VOID Info_Mod_Wilfried_HabBeutel_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_HabBeutel_Nein_15_00"); //Wieso hätte ich dann zu dir zurückkehren sollen?
-	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_01"); //(zweifelnd) Ja, du magst Recht haben. Es gibt Personen, denen ich so etwas weitaus mehr zutrauen würde.
-	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_02"); //(murmelt) Thilo, dieser verdammte Bursche...
-	AI_Output(hero, self, "Info_Mod_Wilfried_HabBeutel_Nein_15_03"); //Ich könnte den Stadtwachen von dem Vorfall berichten...
-	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_04"); //Nein! Äh, ich würde es bevorzugen, wenn du der Stadtwache nichts erzählen würdest.
-	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_05"); //Die hat schon genug zu tun, da muss man sie ja nicht wegen solcher Lappalien belästigen. (lacht unsicher)
-	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_06"); //Sei schön brav und behalte es für dich... als ein Geheimnis.
+	AI_Output(hero, self, "Info_Mod_Wilfried_HabBeutel_Nein_15_00"); //Then why would I go back to you?
+	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_01"); //Yeah, you may be right. There are people I would trust to do so much more.
+	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_02"); //Thilo, this bloody fellow...
+	AI_Output(hero, self, "Info_Mod_Wilfried_HabBeutel_Nein_15_03"); //I could report the incident to the city guards...
+	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_04"); //No! Uh, I'd prefer if you didn't tell the city guard.
+	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_05"); //She's busy enough already, you don't have to bother her about such trifles. (laughs insecurely)
+	AI_Output(self, hero, "Info_Mod_Wilfried_HabBeutel_Nein_08_06"); //Be a good boy and keep it to yourself... than a secret.
 
-	B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Das Gespräch mit Wilfried hat mehr Fragen aufgeworfen als beantwortet. Irgendetwas scheint er mir zu verheimlichen. Und wer ist dieser mögliche Dieb Thilo? Vielleicht kennt der Antworten...");
+	B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "The conversation with Wilfried raised more questions than answered. He seems to be hiding something from me. And who is this possible thief Thilo? Maybe he knows the answers...");
 
 	B_GivePlayerXP	(50);
 
@@ -216,7 +216,7 @@ INSTANCE Info_Mod_Wilfried_Belohnung (C_INFO)
 	information	= Info_Mod_Wilfried_Belohnung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit meiner Belohnung?";
+	description	= "What about my reward?";
 };
 
 FUNC INT Info_Mod_Wilfried_Belohnung_Condition()
@@ -230,11 +230,11 @@ FUNC INT Info_Mod_Wilfried_Belohnung_Condition()
 
 FUNC VOID Info_Mod_Wilfried_Belohnung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_Belohnung_15_00"); //Was ist mit meiner Belohnung?
-	AI_Output(self, hero, "Info_Mod_Wilfried_Belohnung_08_01"); //Daraus wird wohl nichts, mein Freund. Ein Zehntel des Goldes aus dem Beutel ist in diesem Fall kein Gold.
-	AI_Output(self, hero, "Info_Mod_Wilfried_Belohnung_08_02"); //Es tut mir Leid. Wenn ich ein wohlhabender Mann wäre, könnte ich dir mehr anbieten.
-	AI_Output(hero, self, "Info_Mod_Wilfried_Belohnung_15_03"); //Rück dein Gold raus oder ich prügle es aus dir heraus!
-	AI_Output(self, hero, "Info_Mod_Wilfried_Belohnung_08_04"); //(wütend) Schluss mit dem Gefasel! Hast du nichts Besseres zu tun?
+	AI_Output(hero, self, "Info_Mod_Wilfried_Belohnung_15_00"); //What about my reward?
+	AI_Output(self, hero, "Info_Mod_Wilfried_Belohnung_08_01"); //I don't think so, my friend. One tenth of the gold from the bag is not gold in this case.
+	AI_Output(self, hero, "Info_Mod_Wilfried_Belohnung_08_02"); //I'm sorry about that. If I were a wealthy man, I could offer you more.
+	AI_Output(hero, self, "Info_Mod_Wilfried_Belohnung_15_03"); //Give me your gold or I'll beat it out of you!
+	AI_Output(self, hero, "Info_Mod_Wilfried_Belohnung_08_04"); //Enough of this bullshit! Don't you have anything better to do?
 
 	AI_StopProcessInfos	(self);
 };
@@ -261,21 +261,21 @@ FUNC INT Info_Mod_Wilfried_Thilo_Condition()
 
 FUNC VOID Info_Mod_Wilfried_Thilo_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_08_00"); //Was willst du noch von mir?
+	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_08_00"); //What more do you want from me?
 
 	Info_ClearChoices	(Info_Mod_Wilfried_Thilo);
 
-	Info_AddChoice	(Info_Mod_Wilfried_Thilo, "Thilo ist der Dieb, er hat mir gestanden!", Info_Mod_Wilfried_Thilo_Dieb);
-	Info_AddChoice	(Info_Mod_Wilfried_Thilo, "Wie lautet die ganze Geschichte hinter dem Diebstahl?", Info_Mod_Wilfried_Thilo_Wahrheit);
+	Info_AddChoice	(Info_Mod_Wilfried_Thilo, "Thilo is the thief, he confessed to me!", Info_Mod_Wilfried_Thilo_Dieb);
+	Info_AddChoice	(Info_Mod_Wilfried_Thilo, "What's the whole story behind the theft?", Info_Mod_Wilfried_Thilo_Wahrheit);
 };
 
 FUNC VOID Info_Mod_Wilfried_Thilo_Dieb()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_Thilo_Dieb_15_00"); //Thilo ist der Dieb, er hat mir gestanden!
-	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Dieb_08_01"); //Ich habe dir doch befohlen, über den Vorfall zu schweigen!
-	AI_Output(hero, self, "Info_Mod_Wilfried_Thilo_Dieb_15_02"); //Aber ...
-	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Dieb_08_03"); //(böse) Es hat dich auch gar nicht zu interessieren. Verschwinde endlich!
-	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Dieb_08_04"); //Raus!
+	AI_Output(hero, self, "Info_Mod_Wilfried_Thilo_Dieb_15_00"); //Thilo is the thief, he confessed to me!
+	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Dieb_08_01"); //I told you to keep quiet about the incident!
+	AI_Output(hero, self, "Info_Mod_Wilfried_Thilo_Dieb_15_02"); //But...
+	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Dieb_08_03"); //It doesn't interest you at all. Get out of here!
+	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Dieb_08_04"); //Get out!
 
 	Info_ClearChoices	(Info_Mod_Wilfried_Thilo);
 
@@ -284,11 +284,11 @@ FUNC VOID Info_Mod_Wilfried_Thilo_Dieb()
 
 FUNC VOID Info_Mod_Wilfried_Thilo_Wahrheit()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_Thilo_Wahrheit_15_00"); //Wie lautet die ganze Geschichte hinter dem Diebstahl deines Beutels?
-	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Wahrheit_08_01"); //(wenig überzeugend) Ich habe dir alles gesagt, was ich weiß!
-	AI_Output(hero, self, "Info_Mod_Wilfried_Thilo_Wahrheit_15_02"); //Das glaube ich kaum.
-	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Wahrheit_08_03"); //(böse) Es hat dich auch gar nicht zu interessieren. Verschwinde endlich!
-	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Wahrheit_08_04"); //Raus!
+	AI_Output(hero, self, "Info_Mod_Wilfried_Thilo_Wahrheit_15_00"); //What's the whole story behind the theft of your purse?
+	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Wahrheit_08_01"); //I've told you everything I know!
+	AI_Output(hero, self, "Info_Mod_Wilfried_Thilo_Wahrheit_15_02"); //I don't think so.
+	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Wahrheit_08_03"); //It doesn't interest you at all. Get out of here!
+	AI_Output(self, hero, "Info_Mod_Wilfried_Thilo_Wahrheit_08_04"); //Get out!
 
 	Info_ClearChoices	(Info_Mod_Wilfried_Thilo);
 
@@ -316,41 +316,41 @@ FUNC INT Info_Mod_Wilfried_Hoehle_Condition()
 
 FUNC VOID Info_Mod_Wilfried_Hoehle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_08_00"); //(ruhig) Warum kommst du mich besuchen?
-	AI_Output(hero, self, "Info_Mod_Wilfried_Hoehle_15_01"); //Ich habe Fragen.
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_08_02"); //Nur zu, ich habe nichts zu verbergen.
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_08_00"); //Why are you coming to see me?
+	AI_Output(hero, self, "Info_Mod_Wilfried_Hoehle_15_01"); //I have questions.
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_08_02"); //Go ahead, I have nothing to hide.
 
 	Info_ClearChoices	(Info_Mod_Wilfried_Hoehle);
 
-	Info_AddChoice	(Info_Mod_Wilfried_Hoehle, "Du wirst in der Stadt gesucht.", Info_Mod_Wilfried_Hoehle_Stadt);
-	Info_AddChoice	(Info_Mod_Wilfried_Hoehle, "Wieso bist du in diese Höhle geflüchtet?", Info_Mod_Wilfried_Hoehle_Weg);
+	Info_AddChoice	(Info_Mod_Wilfried_Hoehle, "They're looking for you in town.", Info_Mod_Wilfried_Hoehle_Stadt);
+	Info_AddChoice	(Info_Mod_Wilfried_Hoehle, "Why did you run to that cave?", Info_Mod_Wilfried_Hoehle_Weg);
 };
 
 FUNC VOID Info_Mod_Wilfried_Hoehle_Stadt()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_Hoehle_Stadt_15_00"); //Du wirst in der Stadt gesucht. Es gibt einige, die noch etwas mit dir zu bereden haben.
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_Stadt_08_01"); //(sinniert) Findest du es nicht herrlich ruhig hier?
+	AI_Output(hero, self, "Info_Mod_Wilfried_Hoehle_Stadt_15_00"); //They're looking for you in town. There are some people who still have something to talk to you about.
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_Stadt_08_01"); //Don't you think it's wonderfully quiet here?
 
 	Info_ClearChoices	(Info_Mod_Wilfried_Hoehle);
 
-	Info_AddChoice	(Info_Mod_Wilfried_Hoehle, "Ruhig?", Info_Mod_Wilfried_Hoehle_Ruhe);
+	Info_AddChoice	(Info_Mod_Wilfried_Hoehle, "Quiet?", Info_Mod_Wilfried_Hoehle_Ruhe);
 };
 
 FUNC VOID Info_Mod_Wilfried_Hoehle_Weg()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_Hoehle_Weg_15_00"); //Wieso bist du in diese Höhle geflüchtet?
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_Weg_08_01"); //Ich suche meine Höhle häufig auf, um mich von der Stadt zu erholen. Findest du es nicht herrlich ruhig hier?
+	AI_Output(hero, self, "Info_Mod_Wilfried_Hoehle_Weg_15_00"); //Why did you run to that cave?
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_Weg_08_01"); //I often visit my cave to recover from the city. Don't you think it's wonderfully quiet here?
 
 	Info_ClearChoices	(Info_Mod_Wilfried_Hoehle);
 
-	Info_AddChoice	(Info_Mod_Wilfried_Hoehle, "Ruhig?", Info_Mod_Wilfried_Hoehle_Ruhe);
+	Info_AddChoice	(Info_Mod_Wilfried_Hoehle, "Quiet?", Info_Mod_Wilfried_Hoehle_Ruhe);
 };
 
 FUNC VOID Info_Mod_Wilfried_Hoehle_Ruhe()
 {
-	AI_Output(hero, self, "Info_Mod_Wilfried_Hoehle_Ruhe_15_00"); //Ruhig?
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_Ruhe_08_01"); //(entspannt) Ich höre niemanden... niemand hört mich... (Pause/ zischt plötzlich) Und niemand wird dich hören, wenn du jämmerlich um Gnade winseln wirst!
-	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_Ruhe_08_02"); //(bricht aus) Du wirst mir mein Gold nicht nehmen!
+	AI_Output(hero, self, "Info_Mod_Wilfried_Hoehle_Ruhe_15_00"); //Quiet?
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_Ruhe_08_01"); //I don't hear anyone... no one can hear me... (Pause/ hissing suddenly) And no one will hear you when you will be wailing for mercy!
+	AI_Output(self, hero, "Info_Mod_Wilfried_Hoehle_Ruhe_08_02"); //You're not gonna take my gold!
 
 	Info_ClearChoices	(Info_Mod_Wilfried_Hoehle);
 

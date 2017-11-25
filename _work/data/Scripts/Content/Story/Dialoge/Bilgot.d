@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Bilgot_Mortis (C_INFO)
 	information	= Info_Mod_Bilgot_Mortis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mortis schickt mich.";
+	description	= "Mortis sent me.";
 };
 
 FUNC INT Info_Mod_Bilgot_Mortis_Condition()
@@ -42,15 +42,15 @@ FUNC INT Info_Mod_Bilgot_Mortis_Condition()
 
 FUNC VOID Info_Mod_Bilgot_Mortis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bilgot_Mortis_15_00"); //Mortis schickt mich. Ist bei dir alles in Ordnung?
+	AI_Output(hero, self, "Info_Mod_Bilgot_Mortis_15_00"); //Mortis sent me. Are you all right?
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Bartok_ArbeiteWieder))
 	{
-		AI_Output(self, hero, "Info_Mod_Bilgot_Mortis_05_01"); //Geh mal zu Bromor, ich glaube bei ihm gibt es Probleme.
+		AI_Output(self, hero, "Info_Mod_Bilgot_Mortis_05_01"); //Go to Bromor, I think he's in trouble.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Bilgot_Mortis_05_02"); //Bei mir ist alles in Ordnung.
+		AI_Output(hero, self, "Info_Mod_Bilgot_Mortis_05_02"); //Everything's fine with me.
 
 		Mod_BilgotOK = 1;
 
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Bilgot_OK (C_INFO)
 	information	= Info_Mod_Bilgot_OK_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Sache ist erledigt.";
+	description	= "The matter is settled.";
 };
 
 FUNC INT Info_Mod_Bilgot_OK_Condition()
@@ -81,12 +81,12 @@ FUNC INT Info_Mod_Bilgot_OK_Condition()
 
 FUNC VOID Info_Mod_Bilgot_OK_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bilgot_OK_15_00"); //Die Sache ist erledigt.
-	AI_Output(self, hero, "Info_Mod_Bilgot_OK_05_01"); //Gut, dann ist bei mir jetzt alles in Ordnung.
+	AI_Output(hero, self, "Info_Mod_Bilgot_OK_15_00"); //The matter is settled.
+	AI_Output(self, hero, "Info_Mod_Bilgot_OK_05_01"); //Well, then everything's all right with me now.
 
 	Mod_BilgotOK = 1;
 
-	B_LogEntry	(TOPIC_MOD_MORTIS_KONTROLLE, "Bei Bilgot ist alles in Ordnung.");
+	B_LogEntry	(TOPIC_MOD_MORTIS_KONTROLLE, "There's nothing wrong with Bilgot.");
 
 	B_Göttergefallen(1, 1);
 
@@ -115,14 +115,14 @@ FUNC VOID Info_Mod_Bilgot_AndreVermaechtnis_Info()
 {
 	AI_TurnToNpc	(self, Mod_583_NONE_Hanna_NW);
 
-	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_00"); //Warte nur, dass wird ein Nachspiel für dich haben.
-	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_01"); //Leute, die mit Verbrechern zusammenarbeiten, bekommen die volle Härte des Gesetzes zu spüren.
+	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_00"); //Just wait, there's gonna be an episode for you.
+	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_01"); //People working with criminals get to feel the full force of the law.
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_02"); //(bemerkt den Helden) Ohh, da bist du ja. Diese Türe hier führt zu der Diebesbande.
-	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_03"); //Den Rest hat dir Lord Hagen vermutlich schon erklärt.
-	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_04"); //Ich werde hier oben bleiben und aufpassen, dass ja keiner entkommt.
+	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_02"); //Ohh, there you are. This door here leads to the gang of thieves.
+	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_03"); //Lord Hagen probably already explained the rest to you.
+	AI_Output(self, hero, "Info_Mod_Bilgot_AndreVermaechtnis_05_04"); //I'll stay up here and make sure no one escapes.
 
 	AI_StopProcessInfos	(self);
 };

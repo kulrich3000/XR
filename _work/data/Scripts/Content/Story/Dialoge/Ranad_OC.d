@@ -15,15 +15,15 @@ FUNC INT Info_Mod_Ranad_OC_Hi_Condition()
 
 FUNC VOID Info_Mod_Ranad_OC_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ranad_OC_Hi_18_00"); //Freund sein da. Gehen in großes Raum weit hinten in Stadt.
-	AI_Output(hero, self, "Info_Mod_Ranad_OC_Hi_15_01"); //Wie komme ich dorthin?
-	AI_Output(self, hero, "Info_Mod_Ranad_OC_Hi_18_02"); //Werden führen Freund.
+	AI_Output(self, hero, "Info_Mod_Ranad_OC_Hi_18_00"); //Be a friend. Going into big room way back in town.
+	AI_Output(hero, self, "Info_Mod_Ranad_OC_Hi_15_01"); //How do I get there?
+	AI_Output(self, hero, "Info_Mod_Ranad_OC_Hi_18_02"); //Become a friend.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "GUIDE");
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ranad hat am Eingang der Orkstadt auf mich gewartet und wird mich nun zu Hosh Pak führen.");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ranad waited for me at the entrance of the Orc City and will lead me to Hosh Pak.");
 };
 
 INSTANCE Info_Mod_Ranad_OC_AtHoshPak (C_INFO)
@@ -47,17 +47,17 @@ FUNC INT Info_Mod_Ranad_OC_AtHoshPak_Condition()
 
 FUNC VOID Info_Mod_Ranad_OC_AtHoshPak_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ranad_OC_AtHoshPak_18_00"); //Gleich Freund sein an Ziel. Ranad werden warten hier.
-	AI_Output(hero, self, "Info_Mod_Ranad_OC_AtHoshPak_15_01"); //Wo soll ich hin?
-	AI_Output(self, hero, "Info_Mod_Ranad_OC_AtHoshPak_18_02"); //Dort vorne sein Raum. Hosh Pak halten Ritual dort. Mensch müssen gehen und töten Hosh Pak.
-	AI_Output(hero, self, "Info_Mod_Ranad_OC_AtHoshPak_15_03"); //Bin schon unterwegs.
-	AI_Output(self, hero, "Info_Mod_Ranad_OC_AtHoshPak_18_04"); //Gut.
+	AI_Output(self, hero, "Info_Mod_Ranad_OC_AtHoshPak_18_00"); //Like friend to goal. Ranad will be waiting here.
+	AI_Output(hero, self, "Info_Mod_Ranad_OC_AtHoshPak_15_01"); //Where should I go?
+	AI_Output(self, hero, "Info_Mod_Ranad_OC_AtHoshPak_18_02"); //His room ahead. Hosh Pak hold ritual there. Man must go and kill Hosh Pak.
+	AI_Output(hero, self, "Info_Mod_Ranad_OC_AtHoshPak_15_03"); //I'm on my way.
+	AI_Output(self, hero, "Info_Mod_Ranad_OC_AtHoshPak_18_04"); //Good.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "WAITING");
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Weiter kann Ranad mich nicht bringen. Aber der Weg ist nicht mehr weit.");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ranad can't get me any further. But the road is not that far.");
 };
 
 INSTANCE Info_Mod_Ranad_OC_HoshPakTot (C_INFO)
@@ -82,10 +82,10 @@ FUNC INT Info_Mod_Ranad_OC_HoshPakTot_Condition()
 
 FUNC VOID Info_Mod_Ranad_OC_HoshPakTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ranad_OC_HoshPakTot_18_00"); //Freund haben gut gemacht. Hosh Pak sein tot.
-	AI_Output(hero, self, "Info_Mod_Ranad_OC_HoshPakTot_15_01"); //Was passiert jetzt?
-	AI_Output(self, hero, "Info_Mod_Ranad_OC_HoshPakTot_18_02"); //Freund müssen suchen restliche Fokusse und erfüllen seine Aufgabe.
-	AI_Output(self, hero, "Info_Mod_Ranad_OC_HoshPakTot_18_03"); //Ranad werden bleiben hier und versuchen zu erlangen Bündnis zwischen Orks in Stadt und uns.
+	AI_Output(self, hero, "Info_Mod_Ranad_OC_HoshPakTot_18_00"); //Friends have done well. Hosh Pak be dead.
+	AI_Output(hero, self, "Info_Mod_Ranad_OC_HoshPakTot_15_01"); //What happens now?
+	AI_Output(self, hero, "Info_Mod_Ranad_OC_HoshPakTot_18_02"); //Friend must look for residual focus and fulfill his task.
+	AI_Output(self, hero, "Info_Mod_Ranad_OC_HoshPakTot_18_03"); //Ranad will stay here and try to gain alliance between orcs in town and us.
 
 	AI_StopProcessInfos	(self);
 };

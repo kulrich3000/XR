@@ -1,7 +1,7 @@
 INSTANCE Mod_7299_OUT_Hel_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hel";
+	name 		= "helicopter";
 	guild 		= GIL_DMT;
 	id 			= 7299;
 	voice 		= 26;

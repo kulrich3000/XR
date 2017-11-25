@@ -1,7 +1,7 @@
 INSTANCE Kakos_11006_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kakos";	
+	name 		= "coconuts";	
 	guild 		= GIL_OUT;
 	id 			= 11006;
 	voice 		= 10;

@@ -19,24 +19,24 @@ FUNC VOID Bookstand_Milten_03_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Es ist spät geworden."					);
-					Doc_PrintLines	( nDocID,  0, "Mit dem Zusammenbruch der alten Mine ist auch die Stimmung der Erzbarone zusammmengebrochen."	);
-					Doc_PrintLines	( nDocID,  0, "Gomez ist wie ein Pulverfaß, das kurz vor dem explodieren steht.  "					);
+					Doc_PrintLines	( nDocID,  0, "It's getting late."					);
+					Doc_PrintLines	( nDocID,  0, "With the collapse of the old mine, the mood of the ore barons also collapsed."	);
+					Doc_PrintLines	( nDocID,  0, "Gomez is like a powder keg about to explode.  "					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Corristo");
+					Doc_PrintLine	( nDocID,  0, "corristo");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Er glaubt das dieser neue Kerl schuld am Zusammenbruch der Mine ist. Dieser Mann ist in der Tat ungewöhnlich. Aber er sollte sich hier besser nicht mehr blicken lassen.");
+					Doc_PrintLines	( nDocID,  0, "He thinks this new guy is responsible for the mine crash. This man is indeed unusual. But he better not come back here.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Corristo");
+					Doc_PrintLine	( nDocID,  0, "corristo");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Gomez ist jähzorniger denn je zuvor und ich glaube zu wissen was er vorhat. Wir müssen unbedingt die Wassermagier unterrichten, bevor es zu spät ist. "					);
+					Doc_PrintLines	( nDocID,  1, "Gomez is more violent than ever and I think I know what he's up to. We have to teach the Water Magicians before it's too late. "					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLine	( nDocID,  1, "Corristo"					);
+					Doc_PrintLine	( nDocID,  1, "corristo"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Vielleicht gelingt es uns eine Katastrophe zu verhindern. Nicht auszudenken was passieren würde, wenn er die freie Mine, "					);
+					Doc_PrintLines	( nDocID,  1, "Maybe we can prevent a catastrophe. Imagine what would happen if he had the free mine, "					);
 					Doc_Show		( nDocID );
 
 	};
@@ -62,9 +62,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Ich war so frei, mich hier ein wenig einzurichten. Wer hätte gedacht, das ich einmal der einzige Magier des Lagers sein werde?"					);
-					Doc_PrintLines	( nDocID,  0, "Nun ja, ich kann mich nicht wirklich darüber freuen, das ich wieder hier bin. Eigentlich sollte ich zusehen, das ich hier wegkomme."	);
-					Doc_PrintLines	( nDocID,  0, "Diese Expedition ist einfach nicht erfolgreich."					);
+					Doc_PrintLines	( nDocID,  0, "I was so free to settle in here for a while. Who would have thought that I would be the camp's only magician?"					);
+					Doc_PrintLines	( nDocID,  0, "Well, I can't really be happy that I'm back here. Actually, I was supposed to get out of here."	);
+					Doc_PrintLines	( nDocID,  0, "This expedition is simply not successful."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");
 			
@@ -74,9 +74,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Die Schürfer sind gestern aufgebrochen. Sie haben Diego mitgenommen - würde mich nicht wundern, wenn er abhaut. "					);
-					Doc_PrintLines	( nDocID,  1, "Denn er wird garantiert keine Spitzhacke schwingen. "					);
-					Doc_PrintLines	( nDocID,  1, "Nun, ich werde die Zeit nutzen, um mich in die Kunst der Alchemie einzuarbeiten. "					);
+					Doc_PrintLines	( nDocID,  1, "The prospectors left yesterday. They took Diego - wouldn't surprise me if he left. "					);
+					Doc_PrintLines	( nDocID,  1, "Because he will definitely not swing a pickaxe. "					);
+					Doc_PrintLines	( nDocID,  1, "Well, I'll use the time to familiarize myself with the art of alchemy. "					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Milten"					);
 					Doc_Show		( nDocID );
@@ -128,36 +128,36 @@ FUNC VOID Bookstand_Engor_01_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Bestand");
+					Doc_PrintLine	( nDocID,  0, "population");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Haben einigen Kram vorgefunden - kaum noch verwertbares Material, darunter wie folgt"					);
+					Doc_PrintLines	( nDocID,  0, "Have found some stuff - hardly any usable material left, including the following"					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "3 Kisten alte Stoffe"	);
+					Doc_PrintLines	( nDocID,  0, "3 boxes of old fabrics"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "8 Kisten rostige Eisenware"					);
+					Doc_PrintLines	( nDocID,  0, "8 boxes of rusty ironware"					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "4 Kisten kaputte Rüstungsteile ");
+					Doc_PrintLines	( nDocID,  0, "4 boxes of broken armor parts ");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "5 Kisten Leder und Fellwaren (stinken schon!)");
+					Doc_PrintLines	( nDocID,  0, "5 boxes of leather and fur products (stink already! )");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "2 Kisten Spitzhacken"					);
+					Doc_PrintLines	( nDocID,  1, "2 boxes pickaxes"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "3 Kisten Werkzeuge"					);
+					Doc_PrintLines	( nDocID,  1, "3 boxes of tools"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "16 Kisten Gesteinsbrocken (kaum Erzgehalt)"					);
+					Doc_PrintLines	( nDocID,  1, "16 boxes of boulders (hardly any ore)"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 Kiste mit rostigen Rasiermessern"					);
+					Doc_PrintLines	( nDocID,  1, "1 box with rusty razors"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "4 Kisten kaputtes Geschirr "					);
+					Doc_PrintLines	( nDocID,  1, "4 boxes of broken dishes "					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "56 Fässer Wasser"					);
+					Doc_PrintLines	( nDocID,  1, "56 Drums of water"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 Kiste Sumpf...- (was auch immer es war, es ist verdorben.)"					);
+					Doc_PrintLines	( nDocID,  1, "1 box of swamp... (whatever it was, it's tainted. )"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Engor"					);
 					Doc_Show		( nDocID );

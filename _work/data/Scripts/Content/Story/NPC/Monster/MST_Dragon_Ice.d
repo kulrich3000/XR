@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Ice(C_Npc)			
 {
 	//----- Monster ----
-	name							= "Eisdrache";
+	name							= "Ice Dragon";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_DRAGON_ICE;
 	level							= 600;
@@ -88,7 +88,7 @@ INSTANCE Dragon_Ice	(Mst_Default_Dragon_Ice)
 
 INSTANCE Summoned_DragonIce (Mst_Default_Dragon_Ice)
 {
-	name							= "Beschworener Eisdrache";
+	name							= "Summoned Ice Dragon";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_ICEDRAGON;
 	level							= 0;

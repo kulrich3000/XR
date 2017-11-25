@@ -1,7 +1,7 @@
 instance Mod_7379_OUT_Vincent_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Vincent";
+	name 		= "vincent";
 	guild 		= GIL_OUT;
 	id 			= 7379;
 	voice 		= 36;

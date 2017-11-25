@@ -2,7 +2,7 @@ instance Mod_1022_KGD_Turmwache_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Turmwache";
+	name 		=	"watch";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_NONE;
 	level 		=	20;

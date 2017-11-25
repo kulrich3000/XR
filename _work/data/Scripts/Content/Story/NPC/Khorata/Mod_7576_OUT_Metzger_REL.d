@@ -1,7 +1,7 @@
 instance Mod_7576_OUT_Metzger_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Metzger"; 
+	name 		= "butcher"; 
 	guild 		= GIL_OUT;
 	id 			= 7576;
 	voice 		= 8;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bill_Hi (C_INFO)
 	information	= Info_Mod_Bill_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Bill_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Bill_Hi_Condition()
 FUNC VOID Info_Mod_Bill_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Bill_Hi_03_01"); //Ich bin Bill.
+	AI_Output(self, hero, "Info_Mod_Bill_Hi_03_01"); //I'm Bill.
 };
 
 INSTANCE Info_Mod_Bill_Rezept (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Bill_Rezept (C_INFO)
 	information	= Info_Mod_Bill_Rezept_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier was von dir.";
+	description	= "I got something of yours.";
 };
 
 FUNC INT Info_Mod_Bill_Rezept_Condition()
@@ -44,35 +44,35 @@ FUNC INT Info_Mod_Bill_Rezept_Condition()
 
 FUNC VOID Info_Mod_Bill_Rezept_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_00"); //Ich hab hier was von dir.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_01"); //Was denn?
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_02"); //Diesen Zettel hab ich bei Alvro gefunden. Es ist ein Schreiben von dir.
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_00"); //I got something of yours.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_01"); //What do you mean?
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_02"); //I found this note at Alvro's. It's a letter from you.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_03"); //Ähm, nunja, es ist nicht so wie es aussieht. Ich wollte nur nicht wieder auf Schatzsuche gehen.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_04"); //Wir wären beim letzten Mal fast draufgegangen.
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_05"); //Ich sollte das Greg melden.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_06"); //Nein, tu das nicht. Ich könnte dir vielleicht auch irgendwann mal helfen.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_03"); //Um, well, it's not what it looks like. I just didn't want to go treasure hunting again.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_04"); //We almost got killed last time.
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_05"); //I should report Greg.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_06"); //No, don't do that. I might be able to help you sometime.
 
 	Info_ClearChoices	(Info_Mod_Bill_Rezept);
 
-	Info_AddChoice	(Info_Mod_Bill_Rezept, "Na gut, ich verpetze dich nicht und du hilfst mir dafür.", Info_Mod_Bill_Rezept_JA);
-	Info_AddChoice	(Info_Mod_Bill_Rezept, "Nein, ich werde zu Greg gehen.", Info_Mod_Bill_Rezept_NEIN);
+	Info_AddChoice	(Info_Mod_Bill_Rezept, "All right, I won't tell on you and you'll help me.", Info_Mod_Bill_Rezept_JA);
+	Info_AddChoice	(Info_Mod_Bill_Rezept, "No, I'm gonna go see Greg.", Info_Mod_Bill_Rezept_NEIN);
 };
 
 FUNC VOID Info_Mod_Bill_Rezept_JA()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_JA_15_00"); //Na gut, ich verpetze dich nicht und du hilfst mir dafür.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_JA_03_01"); //Danke. Wenn du ein Problem hast, dann komm gleich zu mir, ich werde dir helfen.
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_JA_15_00"); //All right, I won't tell on you and you'll help me.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_JA_03_01"); //Thanks. If you have a problem, come to me right now, I'll help you.
 
 	Info_ClearChoices	(Info_Mod_Bill_Rezept);
 };
 
 FUNC VOID Info_Mod_Bill_Rezept_NEIN()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_NEIN_15_00"); //Nein, ich werde zu Greg gehen.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_NEIN_03_01"); //Wie du meinst, aber ich hätte nützlich für dich sein können.
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_NEIN_15_00"); //No, I'm gonna go see Greg.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_NEIN_03_01"); //Whatever you say, but I could have been useful to you.
 
 	Mod_BillsVerbrechenPetzen = 1;
 	
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Bill_Befreiung (C_INFO)
 	information	= Info_Mod_Bill_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du ziehst so eine lange Schnute, ist etwas passiert?";
+	description	= "You pull a long snout like that, did something happen?";
 };
 
 FUNC INT Info_Mod_Bill_Befreiung_Condition()
@@ -100,24 +100,24 @@ FUNC INT Info_Mod_Bill_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Bill_Befreiung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_00"); //Du ziehst so eine lange Schnute, ist etwas passiert?
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_01"); //(traurig) Das kann man wohl sagen. Mein Freund, Owen, ist nicht mehr da.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_02"); //Seit wir von den Untoten und diesem Kult angegriffen wurden, ist er spurlos verschwunden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_03"); //Ich glaube, dass er vor lauter Angst abgehauen ist, doch ich frage mich, wie er das angestellt hat, da das Lager verschlossen ist.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_04"); //Ich weiß nicht mehr weiter.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_05"); //Wo hast du Owen denn zuletzt gesehen. Ich meine, er kann nicht einfach verschwinden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_06"); //(nachdenklich) Zuletzt war er vor dem Angriff auf Wache hinter dem See bei Gregs Haus, da dort ein Weg in das Gebirge führt und wir von dort eventuellen Angriffen der Untoten ausgeliefert sind.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_07"); //Ich denke, dass er dort verschwunden ist.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_08"); //Seltsam ist das, ich werde versuchen deinen Freund zu finden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_09"); //(hellt auf) Wirklich? Ich kann dir nicht genug danken.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_10"); //Was ich noch sagen wollte: Alligator Jack ist ebenfalls aufgebrochen, um Bill zu finden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_11"); //Vielleicht holst du ihn noch ein.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_12"); //Gut, danke für die Infos. Ich werde mich auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_13"); //Viel Glück!
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_00"); //You pull a long snout like that, did something happen?
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_01"); //I guess you could say that. My friend, Owen, is no longer here.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_02"); //Since we were attacked by the undead and this cult, he has disappeared without a trace.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_03"); //I think he ran away with fear, but I wonder how he did it because the camp was closed.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_04"); //I don't know what to do.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_05"); //Where did you last see Owen? I mean, he can't just disappear.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_06"); //(thoughtfully) Lastly, before the attack on Guard behind the lake near Greg's house, because there is a path leading into the mountains and from there we are at the mercy of possible attacks of the undead.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_07"); //I think he disappeared there.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_08"); //Strange is that, I'll try to find your friend.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_09"); //(brightens) Really? I can't thank you enough.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_10"); //What I wanted to say is that Alligator Jack has also left to find Bill.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_11"); //Maybe you can catch up with him.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_12"); //Well, thanks for the info. I'll be on my way.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_13"); //Good luck to you!
 	
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRBILL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRBILL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_PIRBILL, "Bill's Freund Owen ist seit dem Angriff der Untoten verschwunden. Zuletzt wurde er in der Nähe von Greg's Hütte beim Weg ins Gebirge gesehen. Ich sollte meine Suche dort beginnen.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRBILL, "Bill's friend Owen has disappeared since the undead attack. He was last seen near Greg's hut on his way into the mountains. I should start my search there.");
 };
 
 INSTANCE Info_Mod_Bill_Befreiung2 (C_INFO)
@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Bill_Befreiung2 (C_INFO)
 	information	= Info_Mod_Bill_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bringe dir Owen wieder.";
+	description	= "I'll bring Owen back to you.";
 };
 
 FUNC INT Info_Mod_Bill_Befreiung2_Condition()
@@ -142,19 +142,19 @@ FUNC INT Info_Mod_Bill_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Bill_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_00"); //Ich bringe dir Owen wieder.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_01"); //(hell erfreut) Ich danke dir. Ich kann dir nicht genug danken. Du hast Owen gerettet. Hier, nimm das!
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_00"); //I'll bring Owen back to you.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_01"); //Thank you, thank you. I can't thank you enough. You saved Owen. Here, take this!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_02"); //Danke. Aber ich habe dir noch eine schlimme Nachricht zu überbringen.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_03"); //(überrascht) Achja? Um was geht es?
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_04"); //Um Alligator Jack. Ich habe seine Leiche im Gebirge gefunden. Er wurde von den Banditen getötet, die auch Owen entführt hatten.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_05"); //(stottert) Das kann ... kann nicht sein. Alligator Jack war einer der Besten.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_06"); //Ich kann es auch nicht verstehen. Aber ich habe seine Leiche gefunden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_07"); //Er ist gestorben, um seinen Kameraden zu helfen. Wir werden auf sein Wohl trinken und ihm ein anständiges Begräbnis machen.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_08"); //Jedenfalls danke ich dir für deine Hilfe. Wenn du mich jetzt entschuldigst, ich werde mich nun um Owen kümmern.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_09"); //Alles klar.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_02"); //Thanks. But I have some bad news for you.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_03"); //(surprised) Oh, yeah? What's this about?
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_04"); //Alligator Jack. I found his body in the mountains. He was killed by the bandits who had also kidnapped Owen.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_05"); //(stuttering) This can... can't be. Alligator Jack was one of the best.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_06"); //I can't understand it either. But I found his body.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_07"); //He died to help his comrades. We'll drink to his well-being and make him a decent funeral.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_08"); //Anyway, thank you for your help. Now, if you'll excuse me, I'm going to take care of Owen.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_09"); //All clear.
 
 	B_GivePlayerXP	(600);
 
@@ -164,7 +164,7 @@ FUNC VOID Info_Mod_Bill_Befreiung2_Info()
 
 	Mod_Piratenbefreiung += 1;
 	
-	B_LogEntry_More	(TOPIC_MOD_BEL_PIRBILL, TOPIC_MOD_BEL_PIRATENLAGER, "Ich habe Owen zu Bill gebracht und diesem von Alligator Jack erzählt.", "Ich habe für Bill Owen gefunden. Leider ist Alligator Jack auf der Suche nach Owen getötet worden.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_PIRBILL, TOPIC_MOD_BEL_PIRATENLAGER, "I brought Owen to Bill and told him about Alligator Jack.", "I found it for Bill Owen. Unfortunately, alligator jack was killed looking for owen.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRBILL, LOG_SUCCESS);
 };
 

@@ -14,7 +14,7 @@ INSTANCE Info_Sld_8_EXIT(C_INFO)
 	condition	= Info_Sld_8_EXIT_Condition;
 	information	= Info_Sld_8_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_Sld_8_EXIT_Condition()
@@ -24,7 +24,7 @@ FUNC INT Info_Sld_8_EXIT_Condition()
 
 FUNC VOID Info_Sld_8_EXIT_Info()
 {	
-	AI_Output(self, hero, "DIA_SLD_8_EXIT_08_00"); //Stirb uns nicht weg!
+	AI_Output(self, hero, "DIA_SLD_8_EXIT_08_00"); //Don't die on us!
 
 	AI_StopProcessInfos	(self);
 };
@@ -39,7 +39,7 @@ INSTANCE Info_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Könnt ihr noch einen guten Mann brauchen?";
+	description = "Can you guys use another good man?";
 };                       
 
 FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
@@ -52,9 +52,9 @@ FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //Könnt ihr noch einen guten Mann brauchen?
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee wird keine Leute bei den Söldnern zulassen, die nicht schon 'ne Zeit lang hier waren und Erfahrung gesammelt haben.
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Wenn du hier im Lager bleiben willst, musst du dich zuerst mit Lares in Khorinis rumschlagen.
+	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //Can you guys use another good man?
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee's not gonna let any of the mercenaries who haven't been here for a while and gained experience.
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //If you want to stay here in the camp, you'll have to deal with Lares in Khorinis first.
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_Sld_8_WichtigePersonen(C_INFO)
 	condition	= Info_Sld_8_WichtigePersonen_Condition;
 	information	= Info_Sld_8_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_Sld_8_WichtigePersonen_Condition()
@@ -77,9 +77,9 @@ FUNC INT Info_Sld_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Sld_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //Wir Söldner folgen alle Lee. Die meisten hier sind einfach Männer, die im Alten Lager nicht bleiben konnten oder wollten.
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_02"); //Hier kocht jeder sein eigenes Süppchen. Die Jungs sind sich nur in einem einig: Wir sammeln hier das ganze Erz aus der Mine. Damit können wir später den König ganz schön unter Druck setzen.
+	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Who's in charge here?
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //We mercenaries all follow Lee. Most of the men here are simply men who couldn't or didn't want to stay in the old camp.
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_02"); //Here everyone cooks his own soup. The boys only agree on one thing: we're here to collect all the ore from the mine. We can put a lot of pressure on the king later.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Sld_8_DasLager(C_INFO)
 	condition	= Info_Sld_8_DasLager_Condition;
 	information	= Info_Sld_8_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über dieses Lager erzählen?";
+	description = "What can you tell me about this camp?";
 };                       
 
 FUNC INT Info_Sld_8_DasLager_Condition()
@@ -105,11 +105,11 @@ FUNC INT Info_Sld_8_DasLager_Condition()
 
 FUNC VOID Info_Sld_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Was kannst du mir über dieses Lager erzählen?
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Pass auf dich auf, während du hier bist. Im Lager sind 'ne Menge Halsabschneider unterwegs.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Es gibt 'ne Reihe ungeschriebener Gesetze hier. Erstens: Nur die Söldner kommen in den Bereich der Magier.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Zweitens: Wer versucht, an den Erzhaufen ranzukommen, ist ein toter Mann. Drittens: Ich würde nicht versuchen, in die Kneipe auf dem See zu gehen.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Die gehört nämlich den ehemaligen Banditen und die sehen es nicht gerne, wenn grüne Jungs wie du da aufkreuzen.
+	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //What can you tell me about this camp?
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Watch your back while you're here. There's a lot of cutthroats out in camp.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //There's a series of unwritten laws here. First, only the mercenaries come into the realm of mages.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Secondly, anyone who tries to get to the ore heap is a dead man. Thirdly, I would not try to go to the pub on the lake.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //It belongs to the former bandits and they don't like it when green guys like you show up.
 };
 
 // *************************************************************************
@@ -122,7 +122,7 @@ INSTANCE Info_Sld_8_DieLage(C_INFO) // E1
 	condition	= Info_Sld_8_DieLage_Condition;
 	information	= Info_Sld_8_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_Sld_8_DieLage_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Sld_8_DieLage_Condition()
 
 FUNC VOID Info_Sld_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Sld_8_DieLage_08_01"); //Wie immer - wir passen auf, dass keiner dem Erz zu nahe kommt.
+	AI_Output(other,self,"Info_Sld_8_DieLage_15_00"); //How's it looking?
+	AI_Output(self,other,"Info_Sld_8_DieLage_08_01"); //As always - we make sure that no one gets too close to the ore.
 };
 
 INSTANCE Info_Mod_SLD_8_Pickpocket (C_INFO)

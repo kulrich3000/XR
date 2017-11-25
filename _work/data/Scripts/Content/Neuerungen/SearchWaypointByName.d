@@ -44,7 +44,7 @@ FUNC int SearchWaypointByName(VAR string wp)
     //###// Zurück an den "Schleifen"-Anfang
     MEM_StackPos.position = label;   
     
-    MEM_Warn("SearchWaypointByName: Schleifenfehler");
+    MEM_Warn("SearchWaypointByName: Loop error");
     RETURN 0;    //Zur Sicherheit
         
 };

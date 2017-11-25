@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Erhard_NeuHier (C_INFO)
 	information	= Info_Mod_Erhard_NeuHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin neu hier. Wie komme ich am schnellsten nach Khorata?";
+	description	= "I'm new here. How do I get to Khorata fastest?";
 };
 
 FUNC INT Info_Mod_Erhard_NeuHier_Condition()
@@ -19,10 +19,10 @@ FUNC INT Info_Mod_Erhard_NeuHier_Condition()
 
 FUNC VOID Info_Mod_Erhard_NeuHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_NeuHier_15_00"); //Ich bin neu hier. Wie komme ich am schnellsten nach Khorata?
-	AI_Output(self, hero, "Info_Mod_Erhard_NeuHier_06_01"); //Ein Neuer? Und kein Händler? Ist noch nicht häufig vorgekommen, dass wir Besuch kriegen.
-	AI_Output(self, hero, "Info_Mod_Erhard_NeuHier_06_02"); //Der kürzeste Weg führt hinter meinem Haus durch einen schmalen Felspass.
-	AI_Output(self, hero, "Info_Mod_Erhard_NeuHier_06_03"); //Danach triffst du auf eine Straße, die links zum Stadttor führt.
+	AI_Output(hero, self, "Info_Mod_Erhard_NeuHier_15_00"); //I'm new here. How do I get to Khorata fastest?
+	AI_Output(self, hero, "Info_Mod_Erhard_NeuHier_06_01"); //A new one? And no dealer? It's not often that we get visitors.
+	AI_Output(self, hero, "Info_Mod_Erhard_NeuHier_06_02"); //The shortest way leads behind my house through a narrow rocky pass.
+	AI_Output(self, hero, "Info_Mod_Erhard_NeuHier_06_03"); //Then you will find a road leading left to the city gate.
 };
 
 INSTANCE Info_Mod_Erhard_Arbeit (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Erhard_Arbeit (C_INFO)
 	information	= Info_Mod_Erhard_Arbeit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Arbeit für mich?";
+	description	= "Do you have a job for me?";
 };
 
 FUNC INT Info_Mod_Erhard_Arbeit_Condition()
@@ -43,9 +43,9 @@ FUNC INT Info_Mod_Erhard_Arbeit_Condition()
 
 FUNC VOID Info_Mod_Erhard_Arbeit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Arbeit_15_00"); //Hast du Arbeit für mich?
-	AI_Output(self, hero, "Info_Mod_Erhard_Arbeit_06_01"); //Nö, Mann. Wir kommen schon gut zurecht.
-	AI_Output(self, hero, "Info_Mod_Erhard_Arbeit_06_02"); //In der Stadt gibt es aber sicherlich jemanden, der was zu tun hat für dich.
+	AI_Output(hero, self, "Info_Mod_Erhard_Arbeit_15_00"); //Do you have a job for me?
+	AI_Output(self, hero, "Info_Mod_Erhard_Arbeit_06_01"); //Nah, man. We'll be all right.
+	AI_Output(self, hero, "Info_Mod_Erhard_Arbeit_06_02"); //In the city there is certainly someone who has something to do for you.
 };
 
 INSTANCE Info_Mod_Erhard_Moor (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Erhard_Moor (C_INFO)
 	information	= Info_Mod_Erhard_Moor_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir etwas über das Moor erzählen?";
+	description	= "Can you tell me something about the moor?";
 };
 
 FUNC INT Info_Mod_Erhard_Moor_Condition()
@@ -66,18 +66,18 @@ FUNC INT Info_Mod_Erhard_Moor_Condition()
 
 FUNC VOID Info_Mod_Erhard_Moor_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Moor_15_00"); //Kannst du mir etwas über das Moor erzählen?
-	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_01"); //Ja, das könnte ich machen. Es würde aber nicht dafür sorgen, dass du heute Nacht angenehme Träume hast.
-	AI_Output(hero, self, "Info_Mod_Erhard_Moor_15_02"); //Ich geh das Risiko ein.
-	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_03"); //Dort leben einige Ausgestoßene unter der Fuchtel einer alten Hexe.
-	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_04"); //Es ist schon einige Generationen her, dass ihre Vorfahren Khorata verlassen mussten, aufgrund irgendwelcher Rituale.
-	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_05"); //Tja, und jetzt sind sie noch durchgeknallter als der durchschnittliche Hofstaatler.
-	AI_Output(hero, self, "Info_Mod_Erhard_Moor_15_06"); //Hofstaatler?
-	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_07"); //Herrje, du hast noch nicht von ihnen gehört?
-	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_08"); //Sie haben eine sehr wirkungsvolle Droge entdeckt, die sie Freudenspender nennen.
-	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_09"); //Und jetzt laufen sie den ganzen Tag völlig zugedröhnt rum.
-	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_10"); //Frag mich nicht, wie sie es noch schaffen, mit dem Zeug zu handeln.
-	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_11"); //Aber es erfreut sich auch in Khorata großer Beliebtheit. So viel ist mal sicher ...
+	AI_Output(hero, self, "Info_Mod_Erhard_Moor_15_00"); //Can you tell me something about the moor?
+	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_01"); //Yeah, I could do that. It wouldn't make you have pleasant dreams tonight.
+	AI_Output(hero, self, "Info_Mod_Erhard_Moor_15_02"); //I'll take my chances.
+	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_03"); //Some of the outcasts live there under the thumb of an old witch.
+	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_04"); //It's been several generations since her ancestors had to leave Khorata because of some rituals.
+	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_05"); //Well, now they're even crazier than the average court bailiff.
+	AI_Output(hero, self, "Info_Mod_Erhard_Moor_15_06"); //Court farmer?
+	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_07"); //Jesus Christ, you haven't heard of them?
+	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_08"); //They have discovered a very effective drug they call a giver of joy.
+	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_09"); //And now they're walking around all stoned up all day.
+	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_10"); //Don't ask me how they still manage to trade that stuff.
+	AI_Output(self, hero, "Info_Mod_Erhard_Moor_06_11"); //But it is also very popular in Khorata. I'm sure that's how much...
 };
 
 INSTANCE Info_Mod_Erhard_Hofstaat (C_INFO)
@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Erhard_Hofstaat (C_INFO)
 	information	= Info_Mod_Erhard_Hofstaat_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und wie komme ich zum Hofstaat?";
+	description	= "And how do I get to the court?";
 };
 
 FUNC INT Info_Mod_Erhard_Hofstaat_Condition()
@@ -101,10 +101,10 @@ FUNC INT Info_Mod_Erhard_Hofstaat_Condition()
 
 FUNC VOID Info_Mod_Erhard_Hofstaat_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Hofstaat_15_00"); //Und wie komme ich zum Hofstaat?
-	AI_Output(self, hero, "Info_Mod_Erhard_Hofstaat_06_01"); //Das ist noch ein ganzes Stück.
-	AI_Output(self, hero, "Info_Mod_Erhard_Hofstaat_06_02"); //Wenn du diesen Weg vor meinem Haus weiterläufst und dich außer beim Eingang zum Sumpf bei den Abzweigungen immer rechts hältst, kommst du irgendwann zu einer langgezogenen Höhle, hinter der der Hofstaat liegt.
-	AI_Output(self, hero, "Info_Mod_Erhard_Hofstaat_06_03"); //Allen, die noch einigermaßen klar in der Birne sind, ist der Hofstaat allerdings nicht zu empfehlen.
+	AI_Output(hero, self, "Info_Mod_Erhard_Hofstaat_15_00"); //And how do I get to the court?
+	AI_Output(self, hero, "Info_Mod_Erhard_Hofstaat_06_01"); //That's a long way to go.
+	AI_Output(self, hero, "Info_Mod_Erhard_Hofstaat_06_02"); //If you continue along this path in front of my house and keep to the right at the turn-offs beside the entrance to the swamp, you will eventually come to a long cave behind which the royal court is situated.
+	AI_Output(self, hero, "Info_Mod_Erhard_Hofstaat_06_03"); //However, the court is not recommended to all those who are still fairly clear in their minds.
 };
 
 INSTANCE Info_Mod_Erhard_Korndiebe (C_INFO)
@@ -115,7 +115,7 @@ INSTANCE Info_Mod_Erhard_Korndiebe (C_INFO)
 	information	= Info_Mod_Erhard_Korndiebe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt da etwas, das ich dir erzählen muss ...";
+	description	= "There's something I have to tell you...";
 };
 
 FUNC INT Info_Mod_Erhard_Korndiebe_Condition()
@@ -129,16 +129,16 @@ FUNC INT Info_Mod_Erhard_Korndiebe_Condition()
 
 FUNC VOID Info_Mod_Erhard_Korndiebe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Korndiebe_15_00"); //Es gibt da etwas, das ich dir erzählen muss ...
-	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_01"); //Was denn?
-	AI_Output(hero, self, "Info_Mod_Erhard_Korndiebe_15_02"); //Eine Räuberbande hat mich geschickt, damit ich ihnen dein Korn bringe.
-	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_03"); //(lacht) Ach, das ist ja nichts Neues, dass sie versuchen, meine Ernte zu stehlen.
-	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_04"); //Einmal ist einer in der Mittagszeit in mein Haus geschlichen.
-	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_05"); //Alle haben ihn beobachtet, aber es ist ihm erst aufgefallen, als er mit dem Korn auf dem Arm rauskam.
-	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_06"); //Mach dir um die Jungs keine Sorge, ich habe schon in der Stadt Bescheid gegeben.
-	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_07"); //Ihr Lager wird nicht mehr lange bestehen.
+	AI_Output(hero, self, "Info_Mod_Erhard_Korndiebe_15_00"); //There's something I have to tell you...
+	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_01"); //What do you mean?
+	AI_Output(hero, self, "Info_Mod_Erhard_Korndiebe_15_02"); //A band of robbers sent me to bring them your grain.
+	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_03"); //(laughs) Oh, it's nothing new that they're trying to steal my crops.
+	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_04"); //One time someone snuck into my house at noon.
+	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_05"); //Everyone was watching him, but he didn't realize it until he came out with the grain on his arm.
+	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_06"); //Don't worry about the boys, I already told you in town.
+	AI_Output(self, hero, "Info_Mod_Erhard_Korndiebe_06_07"); //Your camp won't last much longer.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_KORNDIEBE, "Ich habe die Korndiebe verraten. Sie sollten ihre Dumme-Jungen-Spielchen bleiben lassen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_KORNDIEBE, "I betrayed the corn thieves. You should keep your stupid boy games.");
 
 	B_GivePlayerXP	(100);
 
@@ -155,7 +155,7 @@ INSTANCE Info_Mod_Erhard_Dokumente (C_INFO)
 	information	= Info_Mod_Erhard_Dokumente_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du hier zufällig ein paar verirrte Zettel gefunden?";
+	description	= "Did you happen to find some lost notes here?";
 };
 
 FUNC INT Info_Mod_Erhard_Dokumente_Condition()
@@ -168,18 +168,18 @@ FUNC INT Info_Mod_Erhard_Dokumente_Condition()
 
 FUNC VOID Info_Mod_Erhard_Dokumente_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Dokumente_15_00"); //Hast du hier zufällig ein paar verirrte Zettel gefunden?
-	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_01"); //Und ob! Vor ein paar Tagen, hinter dem Haus.
-	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_02"); //Ich muss sagen, davon konnten meine Frau und ich noch eine Menge lernen!
-	AI_Output(hero, self, "Info_Mod_Erhard_Dokumente_15_03"); //Darf ich die Seiten haben?
-	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_04"); //Kann ich gut verstehen, dass du auch mal einen Blick hineinwerfen willst.
-	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_05"); //Ich muss dich aber leider enttäuschen; kurz danach habe ich die Aufzeichnungen an einen befreundeten Händler weitergegeben.
-	AI_Output(hero, self, "Info_Mod_Erhard_Dokumente_15_06"); //Wo finde ich den Händler?
-	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_07"); //Nicht immer am gleichen Ort! Aber zur Zeit hält er sich in Khorinis auf, wenn ich recht informiert bin.
-	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_08"); //Baltram ist sein Name.
-	AI_Output(hero, self, "Info_Mod_Erhard_Dokumente_15_09"); //Danke für die Informationen.
+	AI_Output(hero, self, "Info_Mod_Erhard_Dokumente_15_00"); //Did you happen to find some lost notes here?
+	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_01"); //You bet! A few days ago, behind the house.
+	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_02"); //I have to say, my wife and I could learn a lot from it!
+	AI_Output(hero, self, "Info_Mod_Erhard_Dokumente_15_03"); //May I have the pages?
+	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_04"); //I don't blame you for wanting to take a look.
+	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_05"); //But I'm sorry to disappoint you; shortly after that, I passed the records on to a friend of mine.
+	AI_Output(hero, self, "Info_Mod_Erhard_Dokumente_15_06"); //Where can I find the dealer?
+	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_07"); //Not always in the same place! But he's in Khorinis right now, if I'm not mistaken.
+	AI_Output(self, hero, "Info_Mod_Erhard_Dokumente_06_08"); //Baltram is his name.
+	AI_Output(hero, self, "Info_Mod_Erhard_Dokumente_15_09"); //Thanks for the information.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "Erhard hatte die Dokumente kurzzeitig, hat sie aber an Baltram weitergegeben, den ich in der Stadt Khorinis finde.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "Erhard had the documents for a short time, but passed them on to Baltram, whom I find in the city of Khorini.");
 
 	Mod_REL_Dokumente = 2;
 };
@@ -192,7 +192,7 @@ INSTANCE Info_Mod_Erhard_Hopfensack (C_INFO)
 	information	= Info_Mod_Erhard_Hopfensack_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dem Brauer geht das Bier aus, weil du keinen Hopfen lieferst.";
+	description	= "The brewer's running out of beer because you're not delivering hops.";
 };
 
 FUNC INT Info_Mod_Erhard_Hopfensack_Condition()
@@ -205,18 +205,18 @@ FUNC INT Info_Mod_Erhard_Hopfensack_Condition()
 
 FUNC VOID Info_Mod_Erhard_Hopfensack_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Hopfensack_15_00"); //Dem Brauer geht das Bier aus, weil du keinen Hopfen lieferst.
-	AI_Output(self, hero, "Info_Mod_Erhard_Hopfensack_06_01"); //Na und? Sollen die doch kiffen oder diesen Freudenspender schlucken ...
-	AI_Output(self, hero, "Info_Mod_Erhard_Hopfensack_06_02"); //Im Ernst. Ich hab drei Sack Hopfen. Der Knecht sollte es zum Brauer bringen. Aber der ist abgängig.
-	AI_Output(hero, self, "Info_Mod_Erhard_Hopfensack_15_03"); //Das kann nicht sein. Ich komme gerade vom Brauer.
-	AI_Output(self, hero, "Info_Mod_Erhard_Hopfensack_06_04"); //Den Knecht meine ich. Er sollte die Säcke in die Stadt bringen. Nun ist er schon zwei Tagen weg. Wenn's eilt, könntest du vielleicht ...
-	AI_Output(hero, self, "Info_Mod_Erhard_Hopfensack_15_06"); //Verstehe. Ich nehme die Säcke mit.
-	AI_Output(self, hero, "Info_Mod_Erhard_Hopfensack_06_07"); //Prima. Hier, etwas Trägerlohn. Und sag dem Brauer, er schuldet mit 150 Gold.
+	AI_Output(hero, self, "Info_Mod_Erhard_Hopfensack_15_00"); //The brewer's running out of beer because you're not delivering hops.
+	AI_Output(self, hero, "Info_Mod_Erhard_Hopfensack_06_01"); //So what? Should they smoke weed or swallow this delicacy?
+	AI_Output(self, hero, "Info_Mod_Erhard_Hopfensack_06_02"); //Seriously. I got three bags of hops. The servant should take it to the brewer. But he's missing.
+	AI_Output(hero, self, "Info_Mod_Erhard_Hopfensack_15_03"); //This can't be happening. I just got back from the brewer.
+	AI_Output(self, hero, "Info_Mod_Erhard_Hopfensack_06_04"); //The servant, I mean. He was supposed to take the bags into town. He's been gone for two days now. If it's urgent, maybe you could...
+	AI_Output(hero, self, "Info_Mod_Erhard_Hopfensack_15_06"); //I see. I'll take the bags with me.
+	AI_Output(self, hero, "Info_Mod_Erhard_Hopfensack_06_07"); //That's swell. Here, some porterage. And tell the brewer he owes 150 gold.
 
 	CreateInvItems	(hero, ItMi_Gold, 30);
 	CreateInvItems	(hero, ItMi_Hopfensack, 3);
 
-	B_ShowGivenThings	("30 Gold und 3 Hopfensäcke erhalten");
+	B_ShowGivenThings	("30 Gold and 3 hop sacks received");
 };
 
 INSTANCE Info_Mod_Erhard_RebellischesSchaf (C_INFO)
@@ -227,7 +227,7 @@ INSTANCE Info_Mod_Erhard_RebellischesSchaf (C_INFO)
 	information	= Info_Mod_Erhard_RebellischesSchaf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll eines deiner Schafe zum Metzger führen.";
+	description	= "I'm supposed to lead one of your sheep to the butcher.";
 };
 
 FUNC INT Info_Mod_Erhard_RebellischesSchaf_Condition()
@@ -241,28 +241,28 @@ FUNC INT Info_Mod_Erhard_RebellischesSchaf_Condition()
 
 FUNC VOID Info_Mod_Erhard_RebellischesSchaf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_00"); //Ich soll eines deiner Schafe zum Metzger führen.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_01"); //(erleichtert) Na endlich kommt mal jemand!
-	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_02"); //Warum bist du darüber so glücklich?
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_03"); //Ich habe ein ganz junges Schaf, das mir die ganze Zeit Probleme bereitet.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_04"); //Vor ein paar Jahren hat einer meiner Erntehelfer ein paar Lämmchen gestohlen und später freigelassen.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_05"); //Diese Lämmer haben durch Zufall überlebt und sind mittlerweile auf eine kleine Herde angewachsen.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_06"); //Seit Vincent dem Freudenspender verfallen ist, kümmert er sich nicht mehr um die Regulation der Tierbestände.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_07"); //Und so wird die wilde Schafpopulation immer größer.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_08"); //Mein Lamm Emma ist mir vor einiger Zeit davongelaufen und wohl in Kontakt mit dieser Gruppe gekommen.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_09"); //Seitdem nutzt es jede Ablenkung für einen Fluchtversuch.
-	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_10"); //Warum lässt du Emma nicht einfach ziehen?
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_11"); //Weißt du, wie viel Gold ein Lamm bringt? Natürlich nicht, sonst hättest du nicht gefragt.
-	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_12"); //Fang doch ein paar Exemplare aus der wilden Herde als Ausgleich. Vielleicht sind die genügsamer.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_13"); //Nein. Deren Fleisch bringt auf dem Markt kaum Ertrag.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_14"); //In der freien Natur sammeln Schafe kaum Fettreserven, und ihr mageres Fleisch ist zäh und sehnig.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_15"); //Damit gibt sich heutzutage doch niemand zufrieden.
-	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_16"); //Also gut. Dann nehme ich Emma mit zum Metzger.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_17"); //Genau das wollte ich auch vorschlagen. Aber lass dich von dem Vieh bloß nicht austricksen!
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_18"); //Die wilde Herde grast auf der Wiese mit dem verlassenen Haus, gegenüber vom Wasserfall.
-	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_19"); //Du solltest sie weiträumig umgehen.
+	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_00"); //I'm supposed to lead one of your sheep to the butcher.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_01"); //Somebody's finally coming!
+	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_02"); //Why are you so happy about this?
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_03"); //I have a very young sheep, which causes me problems all the time.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_04"); //A few years ago, one of my harvesters stole a few lambs and released them later.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_05"); //These lambs have survived by chance and have now grown into a small herd.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_06"); //Since Vincent has fallen for the bon vivant, he no longer cares about the regulation of animal populations.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_07"); //And so the wild sheep population continues to grow.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_08"); //My lamb Emma ran away from me some time ago and probably came into contact with this group.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_09"); //Since then, it's been using every diversion to try to escape.
+	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_10"); //Why don't you just let Emma go?
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_11"); //Do you know how much gold a lamb brings? Of course not, or you wouldn't have asked.
+	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_12"); //Why don't you catch some specimens from the wild herd in return? Maybe they're more frugal.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_13"); //No. Their meat hardly yields any profit on the market.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_14"); //In the wild, sheep hardly collect fat reserves and their lean flesh is tough and sinewy.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_15"); //No one is satisfied with that these days.
+	AI_Output(hero, self, "Info_Mod_Erhard_RebellischesSchaf_15_16"); //All right, then. Then I'll take Emma with me to the butcher's.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_17"); //That's exactly what I was going to suggest. But don't let that animal fool you!
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_18"); //The wild herd grazes on the meadow with the abandoned house, opposite the waterfall.
+	AI_Output(self, hero, "Info_Mod_Erhard_RebellischesSchaf_06_19"); //You should go around them a lot.
 
-	B_LogEntry	(TOPIC_MOD_METZGER_SCHAF, "Das Lamm Emma hat Erhard in letzter Zeit immer wieder Probleme bereitet, weil es zu einer wilden Schafherde überlaufen wollte. Dem soll ich ein Ende setzen, indem ich Emma zum Metzger führe. Dabei darf ich nicht in Sichtkontakt zur Schafsherde geraten, um Emma nicht zu verlieren.");
+	B_LogEntry	(TOPIC_MOD_METZGER_SCHAF, "The lamb Emma has been causing Erhard problems lately because she wanted to overflow into a wild flock of sheep. I'm supposed to put an end to it by taking Emma to the butcher. I can't get in sight of the sheep herd so I don't lose Emma.");
 
 	Wld_InsertNpc	(Hammel_Emma_01,	"REL_SURFACE_225");
 	Wld_InsertNpc	(Hammel_Emma_02,	"REL_SURFACE_225");
@@ -282,7 +282,7 @@ INSTANCE Info_Mod_Erhard_Bierhexen (C_INFO)
 	information	= Info_Mod_Erhard_Bierhexen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Gerste des Braumeisters ist durch Urin verunreinigt.";
+	description	= "The brewmaster's barley is contaminated by urine.";
 };
 
 FUNC INT Info_Mod_Erhard_Bierhexen_Condition()
@@ -296,17 +296,17 @@ FUNC INT Info_Mod_Erhard_Bierhexen_Condition()
 
 FUNC VOID Info_Mod_Erhard_Bierhexen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen_15_00"); //Die Gerste des Braumeisters ist durch Urin verunreinigt. Was weißt du darüber?
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_01"); //Dass wohl jemand seine Blase darüber entleert hat. (kriegt einen Lachanfall)
-	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen_15_02"); //Hast du damit was zu tun?
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_03"); //(erheitert) Wird das ein Verhör oder so? Natürlich piss ich ihm auf die Gerste, bevor ich sie losschicke. (lacht)
-	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen_15_04"); //Krieg dich mal wieder ein. Mir ist es durchaus ernst.
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_05"); //Na gut, auch wenn's schwer fällt.
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_06"); //Also, was soll ich denn damit zu tun haben?
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_07"); //Die Gerste wird nach dem Mahlen im Lagerhaus verwahrt. Wenn mir jemand einen Streich spielen wollte, könnte er es dort machen.
-	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen_15_08"); //Und wer könnte dir einen Streich spielen wollen?
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_09"); //Melvin und seine Bande von Hohlbirnen, ganz klar.
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_10"); //Obwohl die bestimmt nicht unbemerkt geblieben wären. Haben einfach kein Talent.
+	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen_15_00"); //The brewmaster's barley is contaminated by urine. What do you know about it?
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_01"); //That someone must have voided his bladder about it. (laughing)
+	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen_15_02"); //Do you have anything to do with this?
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_03"); //Is this gonna be an interrogation or something? Of course, I'll piss on the barley before I send them out. (laughs)
+	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen_15_04"); //Calm down, will you? I am quite serious.
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_05"); //All right, even if it's hard.
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_06"); //So what do you want me to do with it?
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_07"); //The barley is stored in the warehouse after grinding. If someone wanted to play a joke on me, he could do it there.
+	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen_15_08"); //And who would want to play a trick on you?
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_09"); //Melvin and his gang of hollow bulbs, that's for sure.
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen_06_10"); //Although I'm sure they wouldn't have gone unnoticed. Just don't have any talent.
 };
 
 INSTANCE Info_Mod_Erhard_Bierhexen2 (C_INFO)
@@ -317,7 +317,7 @@ INSTANCE Info_Mod_Erhard_Bierhexen2 (C_INFO)
 	information	= Info_Mod_Erhard_Bierhexen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Den Melvin werde ich mir mal vorknöpfen.";
+	description	= "I'm gonna take Melvin.";
 };
 
 FUNC INT Info_Mod_Erhard_Bierhexen2_Condition()
@@ -330,10 +330,10 @@ FUNC INT Info_Mod_Erhard_Bierhexen2_Condition()
 
 FUNC VOID Info_Mod_Erhard_Bierhexen2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen2_15_00"); //Den Melvin werde ich mir mal vorknöpfen.
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen2_06_01"); //Meinetwegen kannst du ihn auch windelweich prügeln. Verdient hat er es auf jeden Fall.
+	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen2_15_00"); //I'm gonna take Melvin.
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen2_06_01"); //I don't mind if you beat the shit out of him. He certainly deserves it.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "Erhard hat den Verdacht auf Melvin und seine Bande umgelenkt, die für derartige Späße anscheinend zu haben sind.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_BIERHEXEN, "Erhard has redirected suspicion to Melvin and his gang, who are apparently available for such jokes.");
 };
 
 INSTANCE Info_Mod_Erhard_Bierhexen3 (C_INFO)
@@ -344,7 +344,7 @@ INSTANCE Info_Mod_Erhard_Bierhexen3 (C_INFO)
 	information	= Info_Mod_Erhard_Bierhexen3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wo hält er sich mit seiner Truppe auf?";
+	description	= "Where is he and his troop at?";
 };
 
 FUNC INT Info_Mod_Erhard_Bierhexen3_Condition()
@@ -358,9 +358,9 @@ FUNC INT Info_Mod_Erhard_Bierhexen3_Condition()
 
 FUNC VOID Info_Mod_Erhard_Bierhexen3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen3_15_00"); //Wo hält er sich mit seiner Truppe auf?
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen3_06_01"); //Im Nordosten Relendels. Du läufst von hier aus Richtung Moor, folgst aber nicht dem Weg hinein, sondern schlägst dich geradeaus durch einen kleinen Wald.
-	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen3_06_02"); //Dahinter auf einer kleinen Lichtung stehen ihre kümmerlichen Zelte.
+	AI_Output(hero, self, "Info_Mod_Erhard_Bierhexen3_15_00"); //Where is he and his troop at?
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen3_06_01"); //In northeastern Relendel. You walk from here towards the moor, but don't follow the path into it, but you go straight through a small forest.
+	AI_Output(self, hero, "Info_Mod_Erhard_Bierhexen3_06_02"); //Behind them on a small clearing stand their meagre tents.
 };
 
 INSTANCE Info_Mod_Erhard_Freudenspender (C_INFO)
@@ -371,7 +371,7 @@ INSTANCE Info_Mod_Erhard_Freudenspender (C_INFO)
 	information	= Info_Mod_Erhard_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Willst du Freudenspender?";
+	description 	= "Do you want to give pleasure?";
 };                       
 
 FUNC INT Info_Mod_Erhard_Freudenspender_Condition()
@@ -386,8 +386,8 @@ FUNC INT Info_Mod_Erhard_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Erhard_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erhard_Freudenspender_15_00"); //Willst du Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Erhard_Freudenspender_06_01"); //Junge, dafür bin ich zu alt. In meinem Alter ist man über jeden Tag glücklich, an dem man seinen klaren Geist behalten kann.
+	AI_Output(hero, self, "Info_Mod_Erhard_Freudenspender_15_00"); //Do you want to give pleasure?
+	AI_Output(self, hero, "Info_Mod_Erhard_Freudenspender_06_01"); //Boy, I'm too old for that. At my age, you're happy about every day you can keep your clear mind.
 };
 
 INSTANCE Info_Mod_Erhard_Pickpocket (C_INFO)

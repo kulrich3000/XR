@@ -18,7 +18,7 @@ INSTANCE PC_Schmelze_Rohstahl (C_INFO)
 	information	= PC_Schmelze_Rohstahl_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Rohstahl erhitzen";
+	description	= "Heating crude steel";
 };
 
 FUNC INT PC_Schmelze_Rohstahl_Condition()
@@ -34,7 +34,7 @@ FUNC VOID PC_Schmelze_Rohstahl_Info()
 {
 	CreateInvItems	(hero, ItMiSwordRawHot, Npc_HasItems(hero, ItMiSwordRaw)+1);
 	
-	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMiSwordRaw) + 1), " Rohstahl erhitzt"));
+	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMiSwordRaw) + 1), " Crude steel heated"));
 
 	Npc_RemoveInvItems	(hero, ItMiSwordRaw, Npc_HasItems(hero, ItMiSwordRaw));
 };
@@ -47,7 +47,7 @@ INSTANCE PC_Schmelze_Metallblock (C_INFO)
 	information	= PC_Schmelze_Metallblock_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Metallblöcke herstellen (1x Rohstahl)";
+	description	= "Production of metal blocks (1x crude steel)";
 };
 
 FUNC INT PC_Schmelze_Metallblock_Condition()
@@ -65,7 +65,7 @@ FUNC VOID PC_Schmelze_Metallblock_Info()
 
 	CreateInvItems	(hero, ItMi_Metallblock, 4);
 	
-	Print ("4x Metallblock gewonnen");
+	Print ("4x metal block won");
 };
 
 INSTANCE PC_Schmelze_LichKamm (C_INFO)
@@ -76,7 +76,7 @@ INSTANCE PC_Schmelze_LichKamm (C_INFO)
 	information	= PC_Schmelze_LichKamm_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kamm zerstören";
+	description	= "Destroy comb";
 };
 
 FUNC INT PC_Schmelze_LichKamm_Condition()
@@ -95,7 +95,7 @@ FUNC VOID PC_Schmelze_LichKamm_Info()
 	Mod_NL_HasKamm = 2;
 
 	B_SetTopicStatus	(TOPIC_MOD_NL_MOORHEXE, LOG_SUCCESS);
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Der Kamm ist vernichtet und Lich seiner Unsterblichkeit beraubt. Auch den Drachen sollte jetzt nichts mehr den Zutritt zum Reich der Toten versperren.");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "The comb has been destroyed and light has been robbed of its immortality. Even the dragons should no longer be denied access to the realm of the dead.");
 };
 
 INSTANCE PC_Schmelze_MerkwuerdigesDing (C_INFO)
@@ -106,7 +106,7 @@ INSTANCE PC_Schmelze_MerkwuerdigesDing (C_INFO)
 	information	= PC_Schmelze_MerkwuerdigesDing_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Merkwürdiges Ding ins Feuer legen";
+	description	= "Putting strange thing in the fire";
 };
 
 FUNC INT PC_Schmelze_MerkwuerdigesDing_Condition()
@@ -124,7 +124,7 @@ FUNC VOID PC_Schmelze_MerkwuerdigesDing_Info()
 	
 	Npc_RemoveInvItems	(hero, ItMi_MerkwuerdigesDing, 1);
 
-	Print	("10 merkwürdige kleine Dinger erhalten!");
+	Print	("10 strange little things gotten!");
 };
 
 INSTANCE PC_Schmelze_Golemherz (C_INFO)
@@ -135,7 +135,7 @@ INSTANCE PC_Schmelze_Golemherz (C_INFO)
 	information	= PC_Schmelze_Golemherz_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Sumpfgolemherzen ins Feuer legen";
+	description	= "Putting swamp golem hearts on fire";
 };
 
 FUNC INT PC_Schmelze_Golemherz_Condition()
@@ -153,7 +153,7 @@ FUNC VOID PC_Schmelze_Golemherz_Info()
 	
 	Npc_RemoveInvItems	(hero, ItAt_SwampGolemHeart, Npc_HasItems(hero, ItAt_SwampGolemHeart));
 
-	Print	("Golemherzfragmente erhalten!");
+	Print	("Get Golem heart fragments!");
 };
 
 INSTANCE PC_Schmelze_Waffen (C_INFO)
@@ -164,7 +164,7 @@ INSTANCE PC_Schmelze_Waffen (C_INFO)
 	information	= PC_Schmelze_Waffen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Waffen einschmelzen";
+	description	= "Melting down weapons";
 };
 
 FUNC INT PC_Schmelze_Waffen_Condition()
@@ -222,7 +222,7 @@ FUNC VOID PC_Schmelze_Waffen_RostigesSchwert_G()
 {
 	CreateInvItems	(hero, ItMiSwordraw, Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft));
 	
-	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft)), " Rohstahl erhalten"));
+	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft)), " Raw steel received"));
 
 	Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Sword_Geschaerft, Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft));
 };
@@ -231,7 +231,7 @@ FUNC VOID PC_Schmelze_Waffen_RostigesSchwert()
 {
 	CreateInvItems	(hero, ItMiSwordraw, Npc_HasItems(hero, ItMw_1h_MISC_Sword));
 	
-	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Sword)), " Rohstahl erhalten"));
+	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Sword)), " Raw steel received"));
 
 	Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Sword, Npc_HasItems(hero, ItMw_1h_MISC_Sword));
 };
@@ -240,7 +240,7 @@ FUNC VOID PC_Schmelze_Waffen_RostigerZweihaender_G()
 {
 	CreateInvItems	(hero, ItMiSwordraw, Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft));
 	
-	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft)), " Rohstahl erhalten"));
+	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft)), " Raw steel received"));
 
 	Npc_RemoveInvItems	(hero, ItMw_2H_Sword_M_01_Geschaerft, Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft));
 };
@@ -249,7 +249,7 @@ FUNC VOID PC_Schmelze_Waffen_RostigerZweihaender()
 {
 	CreateInvItems	(hero, ItMiSwordraw, Npc_HasItems(hero, ItMw_2H_Sword_M_01));
 	
-	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_2H_Sword_M_01)), " Rohstahl erhalten"));
+	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_2H_Sword_M_01)), " Raw steel received"));
 
 	Npc_RemoveInvItems	(hero, ItMw_2H_Sword_M_01, Npc_HasItems(hero, ItMw_2H_Sword_M_01));
 };
@@ -258,7 +258,7 @@ FUNC VOID PC_Schmelze_Waffen_RostigeAxt_G()
 {
 	CreateInvItems	(hero, ItMiSwordraw, Npc_HasItems(hero, ItMw_1h_MISC_Axe_Geschaerft));
 	
-	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Axe_Geschaerft)), " Rohstahl erhalten"));
+	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Axe_Geschaerft)), " Raw steel received"));
 
 	Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Axe_Geschaerft, Npc_HasItems(hero, ItMw_1h_MISC_Axe_Geschaerft));
 };
@@ -267,7 +267,7 @@ FUNC VOID PC_Schmelze_Waffen_RostigeAxt()
 {
 	CreateInvItems	(hero, ItMiSwordraw, Npc_HasItems(hero, ItMw_1h_MISC_Axe));
 	
-	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Axe)), " Rohstahl erhalten"));
+	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Axe)), " Raw steel received"));
 
 	Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Axe, Npc_HasItems(hero, ItMw_1h_MISC_Axe));
 };

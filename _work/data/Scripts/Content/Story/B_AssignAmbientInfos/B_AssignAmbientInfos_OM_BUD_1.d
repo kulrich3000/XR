@@ -14,7 +14,7 @@ INSTANCE Info_OM_BUD_1_EXIT(C_INFO)
 	condition	= Info_OM_BUD_1_EXIT_Condition;
 	information	= Info_OM_BUD_1_EXIT_Info;
 	permanent	= 1;
-	description = "ENDE";
+	description = "END";
 };                       
 
 FUNC INT Info_OM_BUD_1_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_OM_BUD_1_Mine (C_INFO) // E1
 	condition	= Info_OM_BUD_1_Mine_Condition;
 	information	= Info_OM_BUD_1_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir was von der Mine";
+	description = "Tell me about the mine";
 };                       
 
 FUNC INT Info_OM_BUD_1_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_OM_BUD_1_Mine_Condition()
 
 FUNC VOID Info_OM_BUD_1_Mine_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_1_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_OM_BUD_1_Mine_01_01"); //In Höhlen wachsen Pilze und Kraut. Das Zeug ist ganz gut verträglich. Macht aber nicht so satt wie ein anständiges Stück Fleisch.
-	AI_Output(self,other,"Info_OM_BUD_1_Mine_01_02"); //Die Crawler sind auch ungenießbar. Was für ein Mist.
+	AI_Output(other,self,"Info_OM_BUD_1_Mine_15_00"); //Tell me about the mine
+	AI_Output(self,other,"Info_OM_BUD_1_Mine_01_01"); //Mushrooms and cabbage grow in caves. This stuff's pretty well tolerated. But don't fill it up like a decent piece of meat.
+	AI_Output(self,other,"Info_OM_BUD_1_Mine_01_02"); //The crawlers are also inedible. What a mess.
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_OM_BUD_1_WichtigePersonen(C_INFO)
 	condition	= Info_OM_BUD_1_WichtigePersonen_Condition;
 	information	= Info_OM_BUD_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu Sagen?";
+	description = "Who's got a say in this?";
 };                       
 
 FUNC INT Info_OM_BUD_1_WichtigePersonen_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_OM_BUD_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_OM_BUD_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_1_WichtigePersonen_15_00"); //Wer hat hier was zu Sagen?
-	AI_Output(self,other,"Info_OM_BUD_1_WichtigePersonen_01_01"); //Kurgan ist der Chef der Mine. Er organisiert die Arbeit und den Warenaustausch mit dem Lager. Wenn du also irgendwas willst, wende dich an ihn.
+	AI_Output(other,self,"Info_OM_BUD_1_WichtigePersonen_15_00"); //Who's got a say in this?
+	AI_Output(self,other,"Info_OM_BUD_1_WichtigePersonen_01_01"); //Kurgan's the boss of the mine. He organizes the work and the exchange of goods with the warehouse. So if you want anything, just get in touch with him.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_OM_BUD_1_DieLage(C_INFO) // E1
 	condition	= Info_OM_BUD_1_DieLage_Condition;
 	information	= Info_OM_BUD_1_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "How's it looking?";
 };                       
 
 FUNC INT Info_OM_BUD_1_DieLage_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_OM_BUD_1_DieLage_Condition()
 
 FUNC VOID Info_OM_BUD_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_1_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_OM_BUD_1_DieLage_01_01"); //Viel Arbeit, wenig Ruhe. Also stell deine Fragen schnell. Ich hab' zu tun.
+	AI_Output(other,self,"Info_OM_BUD_1_DieLage_15_00"); //How's it looking?
+	AI_Output(self,other,"Info_OM_BUD_1_DieLage_01_01"); //A lot of work, little rest. So ask your questions quickly. I'm busy.
 };
 
 INSTANCE Info_Mod_OM_BUD_1_Pickpocket (C_INFO)
